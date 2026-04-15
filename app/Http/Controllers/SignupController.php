@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Materia;
+use App\Support\SignupFlow;
 use Illuminate\Http\Request;
 
 class SignupController extends Controller
@@ -10,6 +11,7 @@ class SignupController extends Controller
     public function selecionarMaterias()
     {
         $materias = Materia::all();
+
         return view('signup.select-materias', compact('materias'));
     }
 
@@ -33,7 +35,7 @@ class SignupController extends Controller
         }
 
         $materiasInfo = Materia::whereIn('id', $materias)->get();
-        $plans = config('signup.plans');
+        $plans = SignupFlow::signupPlansForDisplay();
 
         return view('signup.select-plano', compact('materiasInfo', 'plans', 'materias'));
     }

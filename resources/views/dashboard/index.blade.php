@@ -4,7 +4,6 @@
 @section('mobile_title', trim(explode('|', __('dashboard.title'))[0]))
 
 @section('topbar_title', trim(explode('|', __('dashboard.title'))[0]))
-@section('topbar_subtitle', sprintf(__('dashboard.greeting'), explode(' ', $usuario->nome)[0]))
 
 @section('content')
     {{-- Greeting --}}
@@ -12,6 +11,9 @@
         <div>
             <h2 class="fw-bold mb-1">{{ sprintf(__('dashboard.greeting'), explode(' ', $usuario->nome)[0]) }}</h2>
             <p class="text-muted mb-0">{{ __('dashboard.greeting_sub') }}</p>
+            <p class="text-muted small mt-2 mb-0">
+                <a href="{{ route('addon.materias') }}" class="text-primary fw-semibold text-decoration-none">{{ __('dashboard.buy_more_cta') }}</a>
+            </p>
         </div>
         <div class="d-none d-md-block">
             <span class="badge bg-primary-soft text-primary p-2 px-3 rounded-pill">

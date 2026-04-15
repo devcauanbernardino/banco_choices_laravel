@@ -5,7 +5,6 @@
 @push('styles')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-<link rel="stylesheet" href="{{ asset('css/top-bar-brand.css') }}">
 <style>
     :root {
         --accent-purple: #6a0392;
@@ -131,22 +130,27 @@
 <main class="container-custom">
     {{-- Top bar --}}
     <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
-        <a href="{{ route('home') }}" class="brand-mark" aria-label="Banco de Choices">
-            <img src="{{ asset('img/logo-bd-transparente.png') }}" alt="Banco de Choices" width="180" height="40">
+        <a href="{{ route('home') }}" class="back-link">
+            <i class="bi bi-arrow-left-short" aria-hidden="true"></i>
+            {{ __('signup.back_home') }}
         </a>
-        <div class="d-flex align-items-center gap-2">
-            @include('components.language-selector')
-            <a href="{{ route('home') }}" class="back-link">
-                <i class="bi bi-arrow-left-short" aria-hidden="true"></i>
-                {{ __('signup.back_home') }}
-            </a>
+        <div class="signup-flow-topbar flex-shrink-0 ms-auto">
+            <div class="navbar-actions navbar-actions--landing">
+                <div class="navbar-actions__inner">
+                    @include('components.language-selector')
+                </div>
+            </div>
         </div>
     </div>
 
     {{-- Header --}}
     <div class="header-section">
         <h1>{{ __('signup.materias.h1') }}</h1>
-        <p class="opacity-90">{{ __('signup.materias.lead') }}</p>
+        <p class="opacity-90 mb-0">
+            {{ __('signup.materias.lead_before') }}
+            <strong>{{ __('signup.materias.lead_strong') }}</strong>
+            {{ __('signup.materias.lead_after') }}
+        </p>
     </div>
 
     {{-- Step indicator --}}
@@ -198,7 +202,7 @@
 
         <div class="text-center">
             <button type="submit" class="btn btn-light btn-lg fw-bold px-5 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2">
-                {{ __('signup.materias.continue') }}
+                {{ __('signup.btn.continue_plan') }}
                 <i class="bi bi-arrow-right" aria-hidden="true"></i>
             </button>
         </div>

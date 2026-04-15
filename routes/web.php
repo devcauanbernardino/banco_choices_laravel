@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AddonController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CheckoutController;
@@ -35,6 +36,7 @@ Route::post('/selecionar-plano', [SignupController::class, 'storePlano']);
 // ── Checkout / Payment ──────────────────────────────────────
 Route::get('/checkout-mercadopago', [CheckoutController::class, 'show'])->name('checkout.show');
 Route::post('/process-payment-mp', [CheckoutController::class, 'processPayment'])->name('checkout.process');
+Route::post('/process-payment-addon', [CheckoutController::class, 'processPayment'])->name('checkout.process.addon');
 Route::get('/payment-success', [CheckoutController::class, 'success'])->name('checkout.success');
 
 // ── Webhook (no CSRF) ───────────────────────────────────────
@@ -42,6 +44,10 @@ Route::post('/webhook-mercadopago', [WebhookController::class, 'mercadoPago'])->
 
 // ── Authenticated ───────────────────────────────────────────
 Route::middleware('auth')->group(function () {
+    Route::match(['get', 'post'], '/comprar-materias', [AddonController::class, 'materias'])->name('addon.materias');
+    Route::get('/comprar-plano', [AddonController::class, 'planoRedirect'])->name('addon.plano');
+    Route::get('/checkout-addon', [AddonController::class, 'checkout'])->name('addon.checkout');
+
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::get('/bancoperguntas', [QuestionBankController::class, 'index'])->name('questionbank');

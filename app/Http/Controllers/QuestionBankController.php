@@ -9,7 +9,7 @@ class QuestionBankController extends Controller
     public function index()
     {
         $usuario = Auth::user();
-        $materias = $usuario->materias()->get();
+        $materias = $usuario->materiasUnicas();
 
         return view('questionbank.index', compact('usuario', 'materias'));
     }

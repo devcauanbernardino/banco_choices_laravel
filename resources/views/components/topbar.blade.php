@@ -7,9 +7,6 @@
 <header class="bc-topbar d-none d-lg-flex justify-content-between align-items-center">
     <div class="bc-topbar-title-block min-w-0">
         <h1 class="bc-topbar-title">{{ $topbarTitle ?? '' }}</h1>
-        @if (!empty($topbarSubtitle))
-            <p class="bc-topbar-sub">{{ $topbarSubtitle }}</p>
-        @endif
     </div>
 
     <div class="bc-topbar-actions d-flex align-items-center gap-2">

@@ -10,7 +10,6 @@
         --accent-purple: #6a0392;
         --accent-purple-lighter: rgba(106,3,146,0.12);
         --navy-primary: #002147;
-        --success-green: #10b981;
     }
     body {
         font-family: 'Inter', system-ui, sans-serif;
@@ -40,29 +39,45 @@
     .order-summary-total { border-top: 2px solid var(--accent-purple); padding-top: 0.75rem; margin-top: 0.5rem; }
     .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: white; text-decoration: none; font-weight: 600; }
     .back-link:hover { color: rgba(255,255,255,0.8); }
+    /* Foco: uma única indicação (evita borda + anel azul duplo do Bootstrap) */
+    .checkout-card .form-control:focus,
+    .checkout-card .form-control:focus-visible,
+    .checkout-card .form-select:focus,
+    .checkout-card .form-select:focus-visible {
+        outline: none;
+        border-color: var(--accent-purple);
+        box-shadow: none;
+    }
+    .checkout-card .form-check-input:focus,
+    .checkout-card .form-check-input:focus-visible {
+        outline: none;
+        border-color: var(--accent-purple);
+        box-shadow: 0 0 0 0.2rem var(--accent-purple-lighter);
+    }
 </style>
 @endpush
 
 @section('content')
 <main class="container-custom">
-    {{-- Top bar --}}
     <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
-        <a href="{{ route('home') }}" class="brand-mark" aria-label="Banco de Choices">
-            <img src="{{ asset('img/logo-bd-transparente.png') }}" alt="Banco de Choices" width="180" height="40">
-        </a>
         <a href="{{ route('signup.plano') }}" class="back-link">
             <i class="bi bi-arrow-left-short" aria-hidden="true"></i>
-            {{ __('signup.back_plan') }}
+            {{ __('signup.back_materias') }}
         </a>
+        <div class="signup-flow-topbar flex-shrink-0 ms-auto">
+            <div class="navbar-actions navbar-actions--landing">
+                <div class="navbar-actions__inner">
+                    @include('components.language-selector')
+                </div>
+            </div>
+        </div>
     </div>
 
-    {{-- Header --}}
     <div class="header-section">
-        <h1>{{ __('checkout.heading') }}</h1>
-        <p class="opacity-90">{{ __('checkout.subheading') }}</p>
+        <h1>{{ __('signup.page_title.checkout') }}</h1>
+        <p class="opacity-90 mb-0">{{ __('signup.checkout.mp_info') }}</p>
     </div>
 
-    {{-- Step indicator --}}
     <div class="step-indicator" aria-label="{{ __('signup.steps.aria') }}">
         <div class="step">
             <div class="step-number">1</div>
@@ -82,12 +97,14 @@
         </div>
     </div>
 
-    {{-- Checkout card --}}
     <div class="checkout-card">
         <div class="row g-4">
-            {{-- Form --}}
             <div class="col-lg-7">
-                <h5 class="fw-bold mb-4">{{ __('checkout.your_data') }}</h5>
+                <h5 class="fw-bold mb-3">{{ __('signup.checkout.contact_title') }}</h5>
+
+                @if (session('error'))
+                    <div class="alert alert-warning">{{ session('error') }}</div>
+                @endif
 
                 @if ($errors->any())
                     <div class="alert alert-danger mb-3">
@@ -99,45 +116,60 @@
 
                 <form action="{{ route('checkout.process') }}" method="POST" id="checkoutForm">
                     @csrf
+                    <input type="hidden" name="checkout_kind" value="signup">
                     <input type="hidden" name="order_id" value="{{ $orderId }}">
                     <input type="hidden" name="plan_id" value="{{ $planId }}">
-                    <input type="hidden" name="plan_duration_days" value="{{ $plan['duration_days'] ?? 30 }}">
-                    <input type="hidden" name="materias" value="{{ is_array($materias) ? implode(',', $materias) : $materias }}">
+                    <input type="hidden" name="plan_duration_days" value="{{ (int) ($plan['durationDays'] ?? 30) }}">
+                    <input type="hidden" name="materias" value="{{ implode(',', $materias) }}">
+                    <input type="hidden" name="total_price" value="{{ number_format($totalPrice, 2, '.', '') }}">
 
                     <div class="mb-3">
-                        <label class="form-label fw-semibold small">{{ __('checkout.label_email') }}</label>
+                        <label class="form-label fw-semibold small">{{ __('signup.checkout.email') }}</label>
                         <input type="email" class="form-control form-control-lg" name="email" required
-                               value="{{ old('email') }}" placeholder="{{ __('checkout.placeholder_email') }}">
+                               value="{{ old('email') }}" placeholder="{{ __('signup.checkout.email_hint') }}" autocomplete="email">
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label fw-semibold small">{{ __('checkout.label_name') }}</label>
-                        <input type="text" class="form-control form-control-lg" name="nome" required
-                               value="{{ old('nome') }}" placeholder="{{ __('checkout.placeholder_name') }}">
+                        <label class="form-label fw-semibold small">{{ __('signup.checkout.name') }}</label>
+                        <input type="text" class="form-control form-control-lg" name="name" required
+                               value="{{ old('name') }}" autocomplete="name">
                     </div>
 
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <label class="form-label fw-semibold small">{{ __('checkout.label_country') }}</label>
-                            <input type="text" class="form-control" name="country" value="{{ old('country', 'AR') }}">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label fw-semibold small">{{ __('checkout.label_postal') }}</label>
-                            <input type="text" class="form-control" name="postal_code" value="{{ old('postal_code') }}"
-                                   placeholder="{{ __('checkout.placeholder_postal') }}">
-                        </div>
+                    @include('partials.checkout-country-postal-fields', [
+                        'countries' => $countries,
+                        'countryId' => 'checkout-country',
+                        'postalId' => 'checkout-postal',
+                        'countryDefault' => 'AR',
+                        'requiredPostal' => false,
+                    ])
+
+                    <p class="small text-muted">{{ __('signup.checkout.after_pay_note') }}</p>
+
+                    @php
+                        $mpPrefBase = rtrim((string) (config('mercadopago.checkout_base_url') ?: config('mercadopago.site_url')), '/');
+                        $mpHttpsReturn = str_starts_with(strtolower($mpPrefBase), 'https://');
+                    @endphp
+                    @if (! $mpHttpsReturn)
+                        <p class="small text-body-secondary border-start border-3 border-secondary ps-2 mb-3">{{ __('signup.checkout.mp_redirect_hint') }}</p>
+                    @endif
+
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" name="terms" id="signup-terms" value="1" required>
+                        <label class="form-check-label small" for="signup-terms">
+                            {{ __('signup.checkout.terms_before') }}
+                            <a href="{{ route('home') }}#terminos" target="_blank" rel="noopener noreferrer">{{ __('signup.checkout.terms_link') }}</a>{{ __('signup.checkout.terms_after') }}
+                        </label>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-lg py-3 fw-bold shadow-sm w-100 d-inline-flex align-items-center justify-content-center gap-2 mt-3">
+                    <button type="submit" class="btn btn-primary btn-lg py-3 fw-bold shadow-sm w-100 d-inline-flex align-items-center justify-content-center gap-2 mt-2">
                         <i class="bi bi-lock-fill" aria-hidden="true"></i>
-                        {{ __('checkout.pay_btn') }}
+                        {{ sprintf(__('signup.checkout.submit_mp'), number_format($totalPrice, 2, ',', '.')) }}
                     </button>
                 </form>
             </div>
 
-            {{-- Order summary --}}
             <div class="col-lg-5">
-                <h5 class="fw-bold mb-4">{{ __('checkout.summary_title') }}</h5>
+                <h5 class="fw-bold mb-3">{{ __('signup.checkout.summary_title') }}</h5>
                 <div class="order-summary">
                     <div class="order-summary-row">
                         <span class="fw-bold">{{ $plan['name'] ?? '' }}</span>
@@ -148,26 +180,32 @@
                         <div class="order-summary-row">
                             <span class="small">
                                 <i class="bi bi-book me-1" aria-hidden="true"></i>
-                                {{ $m['nome'] }}
+                                {{ $m->nome }}
                             </span>
                             <span class="small">$ {{ number_format($plan['price'] ?? 0, 2, ',', '.') }}</span>
                         </div>
                     @endforeach
 
                     <div class="order-summary-row order-summary-total">
-                        <span class="fw-bold fs-5">Total</span>
+                        <span class="fw-bold fs-5">{{ __('signup.checkout.total') }}</span>
                         <span class="fw-bold fs-5" style="color: var(--accent-purple);">$ {{ number_format($totalPrice, 2, ',', '.') }} ARS</span>
                     </div>
                 </div>
 
-                <div class="text-center mt-3">
-                    <small class="text-muted">
-                        <i class="bi bi-shield-check me-1" aria-hidden="true"></i>
-                        {{ __('checkout.secure_note') }}
-                    </small>
-                </div>
+                <p class="small text-muted mt-2 mb-2">{{ sprintf(__('signup.checkout.access_note'), $plan['duration'] ?? '') }}</p>
+                <p class="small text-muted mb-0">
+                    <i class="bi bi-shield-check me-1" aria-hidden="true"></i>
+                    {{ __('signup.checkout.secure') }}
+                </p>
             </div>
         </div>
     </div>
 </main>
 @endsection
+
+@push('scripts')
+    @include('partials.checkout-country-postal-script', [
+        'countryId' => 'checkout-country',
+        'postalId' => 'checkout-postal',
+    ])
+@endpush

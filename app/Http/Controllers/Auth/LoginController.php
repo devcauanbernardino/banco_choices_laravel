@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -33,9 +32,11 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            // Garantir matérias padrão (1 e 2)
             $user = Auth::user();
-            $user->garantirMaterias([1, 2]);
+            $skipEmails = array_map('strtolower', config('test_users.skip_default_materias_emails', []));
+            if (! in_array(strtolower((string) $user->email), $skipEmails, true)) {
+                $user->garantirMaterias([1, 2]);
+            }
 
             return redirect()->intended(route('dashboard'));
         }

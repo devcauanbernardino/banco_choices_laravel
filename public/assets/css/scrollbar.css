@@ -1,0 +1,89 @@
+/**
+ * Scrollbars — WebKit (Chrome, Edge, Safari) + Firefox
+ * Alinhado à marca; tema escuro no painel via [data-theme="dark"].
+ */
+:root {
+  --bc-scrollbar-size: 10px;
+  --bc-scrollbar-track: #e8edf4;
+  --bc-scrollbar-thumb: rgba(106, 3, 146, 0.4);
+  --bc-scrollbar-thumb-hover: rgba(106, 3, 146, 0.62);
+  --bc-scrollbar-thumb-active: rgba(106, 3, 146, 0.82);
+  --bc-scrollbar-corner: #e8edf4;
+}
+
+[data-theme="dark"],
+[data-bs-theme="dark"] {
+  --bc-scrollbar-track: #1c1c24;
+  --bc-scrollbar-thumb: rgba(167, 139, 250, 0.38);
+  --bc-scrollbar-thumb-hover: rgba(192, 181, 253, 0.55);
+  --bc-scrollbar-thumb-active: rgba(216, 209, 254, 0.72);
+  --bc-scrollbar-corner: #14141a;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bc-scrollbar-thumb) var(--bc-scrollbar-track);
+}
+
+html::-webkit-scrollbar {
+  width: var(--bc-scrollbar-size);
+  height: var(--bc-scrollbar-size);
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--bc-scrollbar-track);
+  border-radius: 999px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    var(--bc-scrollbar-thumb) 0%,
+    rgba(106, 3, 146, 0.28) 100%
+  );
+  border-radius: 999px;
+  border: 2px solid var(--bc-scrollbar-track);
+  background-clip: padding-box;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    var(--bc-scrollbar-thumb-hover) 0%,
+    rgba(106, 3, 146, 0.45) 100%
+  );
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: var(--bc-scrollbar-thumb-active);
+}
+
+html::-webkit-scrollbar-corner {
+  background: var(--bc-scrollbar-corner);
+}
+
+/* Login: gradiente no fundo — thumb clara (scroll no documento = html) */
+html:has(body.login-page) {
+  scrollbar-color: rgba(255, 255, 255, 0.45) rgba(0, 0, 0, 0.18);
+}
+
+html:has(body.login-page)::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.52) 0%,
+    rgba(255, 255, 255, 0.28) 100%
+  );
+  border: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+html:has(body.login-page)::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.65);
+}
+
+html:has(body.login-page)::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.14);
+}
+
+html:has(body.login-page)::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.1);
+}

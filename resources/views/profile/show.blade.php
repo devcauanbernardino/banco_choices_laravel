@@ -15,6 +15,12 @@
             </div>
         @endif
 
+        @if (session('error'))
+            <div class="alert alert-danger border-0 shadow-sm rounded-3 mb-4" role="alert">
+                {{ session('error') }}
+            </div>
+        @endif
+
         @if ($errors->any())
             <div class="alert alert-danger border-0 shadow-sm rounded-3 mb-4" role="alert">
                 @foreach ($errors->all() as $error)
@@ -72,13 +78,6 @@
                         </div>
                     </div>
                 </div>
-
-                {{-- Theme toggle --}}
-                <div class="bc-card p-4">
-                    <h2 class="h6 fw-bold mb-3">{{ __('perfil.appearance') }}</h2>
-                    @include('components.theme-toggle')
-                    <p class="small text-muted mt-3 mb-0">{{ __('perfil.preference_note') }}</p>
-                </div>
             </div>
 
             {{-- Right column --}}
@@ -108,12 +107,28 @@
                         <p class="small text-muted">{{ __('perfil.security_hint') }}</p>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-muted">{{ __('perfil.label_cur_pass') }}</label>
-                                <input type="password" class="form-control" name="senha_atual" placeholder="--------" autocomplete="current-password">
+                                <label class="form-label small fw-semibold text-muted" for="senhaAtualInput">{{ __('perfil.label_cur_pass') }}</label>
+                                <div class="input-group rounded-3 overflow-hidden">
+                                    <input type="password" class="form-control" id="senhaAtualInput" name="senha_atual" placeholder="{{ __('perfil.placeholder_current') }}" autocomplete="current-password">
+                                    <button type="button" class="btn btn-outline-secondary bc-pw-toggle d-inline-flex align-items-center justify-content-center px-3" id="toggleSenhaAtual" data-bc-pw-target="senhaAtualInput" aria-controls="senhaAtualInput" aria-label="{{ __('login.show_pwd') }}" aria-pressed="false">
+                                        <span class="material-icons fs-6 bc-pw-toggle-icon" aria-hidden="true">visibility</span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-muted">{{ __('perfil.label_new_pass') }}</label>
-                                <input type="password" class="form-control" name="nova_senha" placeholder="{{ __('perfil.placeholder_new') }}" autocomplete="new-password">
+                                <label class="form-label small fw-semibold text-muted" for="novaSenhaInput">{{ __('perfil.label_new_pass') }}</label>
+                                <div class="input-group rounded-3 overflow-hidden">
+                                    <input type="password" class="form-control" id="novaSenhaInput" name="nova_senha" placeholder="{{ __('perfil.placeholder_new') }}" autocomplete="new-password">
+                                    <button type="button" class="btn btn-outline-secondary bc-pw-toggle d-inline-flex align-items-center justify-content-center px-3" id="toggleNovaSenha" data-bc-pw-target="novaSenhaInput" aria-controls="novaSenhaInput" aria-label="{{ __('login.show_pwd') }}" aria-pressed="false">
+                                        <span class="material-icons fs-6 bc-pw-toggle-icon" aria-hidden="true">visibility</span>
+                                    </button>
+                                </div>
+                                <div id="novaSenhaStrengthMeter" class="bc-pw-strength mt-2" hidden>
+                                    <div class="bc-pw-strength-track">
+                                        <div class="bc-pw-strength-bar" id="novaSenhaStrengthBar"></div>
+                                    </div>
+                                    <span class="bc-pw-strength-label small" id="novaSenhaStrengthLabel" role="status" aria-live="polite"></span>
+                                </div>
                             </div>
                         </div>
 
@@ -146,3 +161,72 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script>
+(function () {
+    var showPwd = @json(__('login.show_pwd'));
+    var hidePwd = @json(__('login.hide_pwd'));
+    document.querySelectorAll('[data-bc-pw-target]').forEach(function (btn) {
+        var inputId = btn.getAttribute('data-bc-pw-target');
+        var inp = document.getElementById(inputId);
+        if (!inp) return;
+        var icon = btn.querySelector('.bc-pw-toggle-icon');
+        btn.addEventListener('click', function () {
+            var reveal = inp.type === 'password';
+            inp.type = reveal ? 'text' : 'password';
+            if (icon) {
+                icon.textContent = reveal ? 'visibility_off' : 'visibility';
+            }
+            btn.setAttribute('aria-label', reveal ? hidePwd : showPwd);
+            btn.setAttribute('aria-pressed', reveal ? 'true' : 'false');
+        });
+    });
+})();
+
+(function () {
+    var input = document.getElementById('novaSenhaInput');
+    var meter = document.getElementById('novaSenhaStrengthMeter');
+    var bar = document.getElementById('novaSenhaStrengthBar');
+    var label = document.getElementById('novaSenhaStrengthLabel');
+    if (!input || !meter || !bar || !label) return;
+
+    var t = {
+        weak: @json(__('perfil.pw_strength_weak')),
+        medium: @json(__('perfil.pw_strength_medium')),
+        strong: @json(__('perfil.pw_strength_strong'))
+    };
+
+    function classify(pw) {
+        if (!pw.length) return null;
+        var lower = /[a-z]/.test(pw);
+        var upper = /[A-Z]/.test(pw);
+        var digit = /[0-9]/.test(pw);
+        var special = /[^a-zA-Z0-9]/.test(pw);
+        var classes = (lower ? 1 : 0) + (upper ? 1 : 0) + (digit ? 1 : 0) + (special ? 1 : 0);
+        if (pw.length < 8 || classes <= 1) return 'weak';
+        if (classes === 4 || (pw.length >= 12 && classes >= 3)) return 'strong';
+        return 'medium';
+    }
+
+    function update() {
+        var pw = input.value;
+        var level = classify(pw);
+        if (!level) {
+            meter.hidden = true;
+            bar.className = 'bc-pw-strength-bar';
+            bar.style.width = '0%';
+            label.textContent = '';
+            return;
+        }
+        meter.hidden = false;
+        bar.className = 'bc-pw-strength-bar bc-pw-strength-bar--' + level;
+        bar.style.width = level === 'weak' ? '33%' : (level === 'medium' ? '66%' : '100%');
+        label.textContent = t[level];
+    }
+
+    input.addEventListener('input', update);
+    input.addEventListener('change', update);
+})();
+</script>
+@endpush

@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'addon_price_per_materia' => 29.90,
+    'addon_fallback_plan_id' => 'semester',
     'plans' => [
         'monthly' => [
             'id' => 'monthly',

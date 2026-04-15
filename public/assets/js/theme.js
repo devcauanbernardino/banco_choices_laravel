@@ -79,5 +79,25 @@
         }
       });
     });
+
+    /* Fecha o dropdown de idiomas ao clicar fora (Popper fixed + sidebar às vezes não dispara o auto-close nativo). */
+    document.addEventListener(
+      'click',
+      function (e) {
+        if (typeof bootstrap === 'undefined' || !bootstrap.Dropdown) {
+          return;
+        }
+        if (e.target.closest && e.target.closest('.bc-lang-selector')) {
+          return;
+        }
+        document.querySelectorAll('.bc-lang-selector .dropdown-toggle.show').forEach(function (btn) {
+          var inst = bootstrap.Dropdown.getInstance(btn);
+          if (inst) {
+            inst.hide();
+          }
+        });
+      },
+      false
+    );
   });
 })();

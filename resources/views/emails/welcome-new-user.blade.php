@@ -8,7 +8,7 @@
 
         {{-- Header --}}
         <div style="background: linear-gradient(135deg, #002147, #6a0392); color: white; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 20px;">
-            <h1 style="margin: 0 0 5px 0;">Banco de Choices</h1>
+            <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" width="180" height="44" style="display:block;margin:0 auto 12px auto;max-width:100%;height:auto;">
             <p style="margin: 0;">&iexcl;Bienvenido! / Bem-vindo!</p>
         </div>
 
@@ -39,7 +39,7 @@
 
         {{-- Footer --}}
         <div style="text-align: center; color: #9ca3af; font-size: 12px; margin-top: 20px;">
-            <p>&copy; {{ date('Y') }} Banco de Choices.</p>
+            <p>&copy; {{ date('Y') }}</p>
         </div>
     </div>
 </body>

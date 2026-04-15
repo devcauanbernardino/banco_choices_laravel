@@ -3,7 +3,7 @@
 @section('title', __('result.page_title'))
 
 @push('styles')
-<link rel="stylesheet" href="{{ asset('css/private-app.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/private-app.css') }}">
 <style>
     body {
         background: var(--app-surface-1, #f5f6fa);
@@ -85,7 +85,7 @@
                     @foreach ($detalhes as $i => $d)
                         <tr>
                             <td class="fw-bold">{{ $i + 1 }}</td>
-                            <td>{{ Str::limit($d['enunciado'] ?? '', 80) }}</td>
+                            <td>{{ Str::limit($d['pergunta'] ?? '', 80) }}</td>
                             <td>
                                 <span class="fw-bold">{{ $d['resposta_usuario'] ?? '-' }}</span>
                             </td>
@@ -93,17 +93,17 @@
                                 <span class="fw-bold text-success">{{ $d['resposta_correta'] ?? '-' }}</span>
                             </td>
                             <td>
-                                @if ($d['correta'] ?? false)
-                                    <span class="badge bg-success rounded-pill">{{ __('result.correct') }}</span>
+                                @if (!empty($d['acertou']))
+                                    <span class="badge bg-success rounded-pill">{{ __('quiz.correct') }}</span>
                                 @else
-                                    <span class="badge bg-danger rounded-pill">{{ __('result.wrong') }}</span>
+                                    <span class="badge bg-danger rounded-pill">{{ __('quiz.incorrect') }}</span>
                                 @endif
                             </td>
                         </tr>
-                        @if (!empty($d['explicacao']))
+                        @if (!empty($d['feedback']))
                             <tr>
                                 <td></td>
-                                <td colspan="4" class="small text-muted fst-italic">{{ $d['explicacao'] }}</td>
+                                <td colspan="4" class="small text-muted fst-italic">{{ $d['feedback'] }}</td>
                             </tr>
                         @endif
                     @endforeach

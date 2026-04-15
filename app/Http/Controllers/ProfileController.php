@@ -12,7 +12,7 @@ class ProfileController extends Controller
     public function show()
     {
         $user = Auth::user();
-        $materias = $user->materias()->get();
+        $materias = $user->materiasUnicas();
 
         $stats = DB::table('historico_simulados')
             ->where('usuario_id', $user->id)
@@ -35,30 +35,35 @@ class ProfileController extends Controller
     public function update(Request $request)
     {
         $user = Auth::user();
-        $nome = trim($request->input('nome', ''));
+        $nome = trim((string) $request->input('nome', ''));
 
         if ($nome === '') {
-            return redirect()->route('profile.show')->with('error', 'nome_vazio');
+            return redirect()->route('profile.show')->with('error', __('perfil.err.nome_vazio'));
         }
 
-        $senhaAtual = $request->input('senha_atual', '');
-        $novaSenha = $request->input('nova_senha', '');
+        $user->nome = $nome;
+
+        $senhaAtual = trim((string) $request->input('senha_atual', ''));
+        $novaSenha = (string) $request->input('nova_senha', '');
 
         if ($senhaAtual !== '' && $novaSenha !== '') {
             if (!Hash::check($senhaAtual, $user->getAuthPassword())) {
-                return redirect()->route('profile.show')->with('error', 'senha_incorreta');
+                $user->save();
+
+                return redirect()->route('profile.show')->with('error', __('perfil.err.senha_incorreta'));
             }
 
             if (strlen($novaSenha) < 8) {
-                return redirect()->route('profile.show')->with('error', 'senha_curta');
+                $user->save();
+
+                return redirect()->route('profile.show')->with('error', __('perfil.err.senha_curta'));
             }
 
             $user->senha = Hash::make($novaSenha);
         }
 
-        $user->nome = $nome;
         $user->save();
 
-        return redirect()->route('profile.show')->with('success', true);
+        return redirect()->route('profile.show')->with('success', __('perfil.flash_ok'));
     }
 }

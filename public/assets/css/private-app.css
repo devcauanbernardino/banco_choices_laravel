@@ -47,6 +47,7 @@
 /* ---------- Page Header ---------- */
 .bc-page-header {
   background: var(--app-surface);
+  border: 1px solid var(--app-border);
   padding: 1.5rem 2rem;
   border-radius: 16px;
   margin-bottom: 1.5rem;
@@ -248,6 +249,48 @@
   border-color: var(--app-border);
 }
 
+/* Password strength meter (perfil) */
+.bc-pw-strength {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.bc-pw-strength-track {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--app-border);
+  overflow: hidden;
+}
+
+.bc-pw-strength-bar {
+  height: 100%;
+  width: 0;
+  border-radius: 4px;
+  transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.bc-pw-strength-bar--weak {
+  background: #dc3545;
+}
+
+.bc-pw-strength-bar--medium {
+  background: #ffc107;
+}
+
+.bc-pw-strength-bar--strong {
+  background: #198754;
+}
+
+.bc-pw-strength-label {
+  color: var(--app-muted);
+}
+
+.bc-pw-toggle {
+  flex-shrink: 0;
+  min-width: 2.75rem;
+}
+
 /* ---------- Action Button (table row) ---------- */
 .bc-btn-action {
   width: 36px;
@@ -292,6 +335,14 @@
   color: var(--app-muted);
   margin-bottom: 1rem;
   display: block;
+}
+
+.bc-empty-state .material-icons.text-success {
+  color: var(--bs-success, #198754) !important;
+}
+
+[data-theme="dark"] .bc-empty-state .material-icons.text-success {
+  color: #4ade80 !important;
 }
 
 /* ---------- Progress Bars ---------- */

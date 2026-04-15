@@ -23,7 +23,7 @@
                 </div>
                 <div>
                     <p class="bc-stat-label mb-1">{{ __('stats.kpi_total') }}</p>
-                    <h4 class="fw-bold mb-0">{{ number_format($kpi['questoes_respondidas'] ?? $totalResp, 0, ',', '.') }}</h4>
+                    <h4 class="fw-bold mb-0">{{ number_format($totalResp, 0, ',', '.') }}</h4>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
                 </div>
                 <div>
                     <p class="bc-stat-label mb-1">{{ __('stats.kpi_sims') }}</p>
-                    <h4 class="fw-bold mb-0">{{ $kpi['total_simulados'] ?? 0 }}</h4>
+                    <h4 class="fw-bold mb-0">{{ number_format($totalSimulados, 0, ',', '.') }}</h4>
                 </div>
             </div>
         </div>

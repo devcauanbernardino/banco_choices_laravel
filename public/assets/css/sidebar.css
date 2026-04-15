@@ -1,6 +1,29 @@
 @import url("./buttons-global.css");
 @import url("./theme-app.css");
 
+/* Shell do painel: evita overflow horizontal e encosta o conteúdo na coluna principal */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  background: var(--app-bg);
+}
+
+.app-content-wrap {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 100%;
+}
+
+.app-content-wrap .app-main {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
 /* Layout principal (painel autenticado) */
 body.app-private-body {
   min-height: 100vh;
@@ -21,6 +44,20 @@ body.app-private-body {
   :root {
     /* Altura real da barra (ícone + label + safe area base) */
     --app-mobile-nav-h: 80px;
+  }
+
+  .app-layout {
+    overflow-x: clip;
+  }
+
+  .app-content-wrap > .app-main {
+    padding: 1rem !important;
+  }
+
+  .app-mobile-topbar {
+    padding-top: calc(0.65rem + env(safe-area-inset-top, 0px));
+    padding-left: calc(1rem + env(safe-area-inset-left, 0px));
+    padding-right: calc(1rem + env(safe-area-inset-right, 0px));
   }
 
   .app-main,
@@ -70,9 +107,47 @@ body.app-private-body {
   left: 0;
   top: 0;
   bottom: 0;
+  /* Coluna não rola inteira: só a área .app-sidebar-nav (links) rola em viewports baixos/zoom. */
+  display: flex;
+  flex-direction: column;
+  max-height: 100dvh;
+  /* visible: dropdown de idioma não pode ser cortado pelo aside (scroll fica só no .app-sidebar-nav). */
+  overflow: visible;
+}
+
+.app-sidebar:not(.app-sidebar--embedded) .app-sidebar-brand {
+  flex-shrink: 0;
+}
+
+.app-sidebar:not(.app-sidebar--embedded) .app-sidebar-nav {
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+}
+
+/* Viewports baixos ou zoom alto: menos padding para caber sem sensação de “coluna quebrada”. */
+@media (max-height: 720px) {
+  .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-brand {
+    padding: 0.85rem 1rem 0.7rem;
+  }
+
+  .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-nav {
+    padding-top: 0.55rem;
+    padding-bottom: 0.6rem;
+    gap: 0.1rem;
+  }
+
+  .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-link {
+    padding: 0.52rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-footer {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
 }
 
 .app-main {
@@ -119,6 +194,21 @@ body.app-private-body {
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.app-sidebar-logo-wrap--brand {
+  width: auto;
+  min-width: 0;
+  max-width: min(100%, 168px);
+  height: 44px;
+  padding: 4px 8px;
+}
+
+.app-sidebar-logo--brand {
+  width: auto;
+  height: 36px;
+  max-width: 160px;
+  object-fit: contain;
 }
 
 .app-sidebar-title {
@@ -324,8 +414,15 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   box-shadow: none;
 }
 
+.app-sidebar-end {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  /* Respiro em relação à borda inferior da coluna fixa (evita botão “grudado”) */
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
 .app-sidebar-footer {
-  margin-top: auto;
   padding: 1rem 0.75rem 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
@@ -342,10 +439,10 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   color: #fecaca !important;
 }
 
-/* Recolher painel — integrado ao rodapé (desktop) */
+/* Recolher painel — abaixo de idioma/região (desktop). Horizontal alinhado ao .app-sidebar-section--lang (px-3 = 1rem). */
 .app-sidebar-collapse-wrap {
-  margin-top: 0.65rem;
-  padding-top: 0.75rem;
+  margin-top: 0;
+  padding: 0.65rem 1rem 1.15rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -506,6 +603,26 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   white-space: nowrap;
 }
 
+@media (max-width: 420px) {
+  :root {
+    --app-mobile-nav-h: 76px;
+  }
+
+  .app-mobile-bottom-item {
+    padding-left: 0.12rem;
+    padding-right: 0.12rem;
+  }
+
+  .app-mobile-bottom-item .material-icons {
+    font-size: 1.2rem !important;
+  }
+
+  .app-mobile-bottom-label {
+    font-size: 0.55rem;
+    letter-spacing: 0;
+  }
+}
+
 /* Painel "Mais" (inferior) */
 .app-offcanvas-more {
   --bs-offcanvas-height: auto;
@@ -646,6 +763,14 @@ html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-sec
   padding-right: 0.35rem;
 }
 
+/* Idioma: um pouco mais de ar no fundo do “balão” (0.35rem grudava na borda da coluna) */
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang {
+  padding-left: 0.55rem !important;
+  padding-right: 0.55rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.55rem !important;
+}
+
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-theme-row {
   flex-direction: column;
   align-items: stretch;
@@ -682,19 +807,125 @@ html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-col
   padding: 0.65rem 0.45rem;
 }
 
+/* Mesmo recuo horizontal que .app-sidebar-section--lang (0.55rem) para alinhar ao seletor de idioma */
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-collapse-wrap {
-  margin-top: 0.5rem;
-  padding-top: 0.65rem;
-  border-top-color: rgba(255, 255, 255, 0.05);
+  margin-top: 0;
+  padding: 0.5rem 0.55rem 1rem;
+  border-top-color: rgba(255, 255, 255, 0.08);
 }
 
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang {
   width: 100%;
   justify-content: center;
-  --bs-btn-padding-x: 0.5rem;
-  gap: 0 !important;
+  --bs-btn-padding-x: 0.85rem;
+  --bs-btn-padding-y: 0.55rem;
+  gap: 0.5rem !important;
+  padding: 0.55rem 0.85rem !important;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .bc-lang-btn-inner {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0.12rem 0.2rem;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .bc-lang-icon-svg {
+  flex-shrink: 0;
 }
 
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang .d-none.d-sm-inline {
   display: none !important;
+}
+
+/* Código ISO ao lado do globo (desktop: d-sm-none escondia o código) */
+@media (min-width: 576px) {
+  html.sidebar-collapsed .app-sidebar .bc-lang-btn-code {
+    display: inline !important;
+    font-size: 0.75rem !important;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Balões cinza (expandir + idioma) — sidebar recolhida */
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) {
+  --app-sidebar-balloon-bg: rgba(255, 255, 255, 0.07);
+  --app-sidebar-balloon-border: rgba(255, 255, 255, 0.1);
+  --app-sidebar-balloon-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --app-sidebar-balloon-radius: 14px;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-collapse-btn {
+  background: var(--app-sidebar-balloon-bg) !important;
+  border: 1px solid var(--app-sidebar-balloon-border) !important;
+  border-radius: var(--app-sidebar-balloon-radius) !important;
+  box-shadow: var(--app-sidebar-balloon-shadow);
+  min-height: 44px;
+  color: rgba(255, 255, 255, 0.72) !important;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-collapse-btn:hover {
+  background: rgba(255, 255, 255, 0.11) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-collapse-ico {
+  color: rgba(255, 255, 255, 0.72) !important;
+  opacity: 1;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang {
+  background: var(--app-sidebar-balloon-bg) !important;
+  border: 1px solid var(--app-sidebar-balloon-border) !important;
+  border-radius: var(--app-sidebar-balloon-radius) !important;
+  box-shadow: var(--app-sidebar-balloon-shadow) !important;
+  min-height: 44px;
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang:hover,
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang:focus,
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang.show {
+  background: rgba(255, 255, 255, 0.11) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  color: #fff !important;
+}
+
+/* Sem caret do Bootstrap (só globo + código ISO) */
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang.dropdown-toggle::after {
+  display: none !important;
+  border: 0 !important;
+  margin: 0 !important;
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-link:not(.active):not(.app-sidebar-link-logout) .material-icons {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-link.active .material-icons {
+  color: #fff;
+}
+
+/* Balões ao passar o rato (sidebar recolhida — Bootstrap Tooltip, container body + fixed) */
+.tooltip.app-sidebar-tooltip {
+  --bs-tooltip-bg: #1e293b;
+  --bs-tooltip-color: #f8fafc;
+  --bs-tooltip-max-width: min(280px, 92vw);
+  z-index: 1090;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+}
+
+.tooltip.app-sidebar-tooltip .tooltip-inner {
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);
+  text-align: left;
 }

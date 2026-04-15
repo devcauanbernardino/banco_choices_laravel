@@ -2,10 +2,14 @@
 
 @section('title', __('login.title_page'))
 
+@section('body_attr')
+ class="login-page"
+@endsection
+
 @push('styles')
-<link rel="stylesheet" href="{{ asset('css/login.css') }}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
 @endpush
 
 @section('content')
@@ -18,13 +22,23 @@
             <div class="sidebar-content mw-100" style="max-width: 600px;">
                 <div class="mb-4">
                     <div class="login-sidebar-logo-wrap">
-                        <img class="login-sidebar-logo" src="{{ asset('img/logo-bd-transparente.png') }}"
-                             alt="Banco de Choices" width="200" height="56">
+                        <img class="login-sidebar-logo" src="{{ \App\Support\Branding::logoUrl() }}"
+                             alt="" width="200" height="56">
                     </div>
                 </div>
                 <h1 class="display-4 fw-bold mb-4">{{ __('login.sidebar_heading') }}</h1>
                 <p class="lead mb-5 opacity-75">{{ __('login.sidebar_lead') }}</p>
                 <div class="d-flex align-items-center">
+                    <div class="d-flex me-3">
+                        <img alt="" class="rounded-circle border border-2 border-white" height="40" width="40"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxe1tbaTNqG25ZU6ZcY-9ufHepww8gfgPl-ieHIqH07iZB3YuZK8N451KZArbv127uTUpgUurDmQVTT0_Gwsm0cHMch9Fb25sT-VdWBH-2xHBxIeaOjCk2RyqvsxG3glSqIbhTrM_LcJNEfHOpYgBIZdihw9q5sBwxdj-Eg6vTjhpwIQlzn0Ocl4yaaj8SP9ut6MpDtYu5DrJ3WNf6uCWZZRExD-kw2fr26OB5tlssXQ1bISDWOAO9bqJITIItAaZbYIfkY5CpMP0F">
+                        <img alt="" class="rounded-circle border border-2 border-white" height="40" width="40"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgkPqA_zdy-qAo6UZSAQ8EOr3IEyzLX32nn8c0RGU9O0b75-UcMj1npe9KvD7UsZPdDzIFDsOx1_ax3LSKXc6wEyqr2lci9B02u5_ujCLITqp8MGix6Y_BfMerXX4zLuI3I1wF-OpsjorT__zm8cEoU9z9HBaRk_9aT6nwy8BqKfPZ4g94ocU_l4mqYfNjh0nKz0wislXhAd6TlPcML-Cmy18BY1y90HzMzQ1coutgMPgnLXqlBrG8OxFDIiy2ETMb-V9_3p93N8n_"
+                             style="margin-left: -12px;">
+                        <img alt="" class="rounded-circle border border-2 border-white" height="40" width="40"
+                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyUl43p5wt4ZdqUPkBPODkwqpYX6zRlz8eMHICsBbbCF0q_Oi88jfQvvLCyBB7r9IZbt403sH96XQan5fCryqR1lz8a-xrRTlhnIXNUbPQGevGUpumP-JdhnaEFHGG3WeGVeZykzrGCpASks--pM8pnWTzj-CDFnK7_rBOK7zZ07LomQB2oWpOEMdLi5hBK71bNfwtlBCNJ6ycwZMhlRgYcKLXKUKtySeoB1pGJMGZOArpd6AkXgaVkJkVOjUqAI-8AhcRDs2w78Ez"
+                             style="margin-left: -12px;">
+                    </div>
                     <span class="small opacity-75">{{ __('login.sidebar_social_proof') }}</span>
                 </div>
             </div>
@@ -36,9 +50,9 @@
                 <div class="login-form-container">
                     {{-- Mobile logo --}}
                     <div class="d-lg-none login-mobile-brand text-center">
-                        <a href="{{ route('home') }}" class="login-mobile-logo-link d-inline-block text-decoration-none" aria-label="Banco de Choices">
-                            <img class="login-mobile-logo" src="{{ asset('img/logo-bd-transparente.png') }}"
-                                 alt="Banco de Choices" width="280" height="78" decoding="async">
+                        <a href="{{ route('home') }}" class="login-mobile-logo-link d-inline-block text-decoration-none" aria-label="{{ __('index.page_title') }}">
+                            <img class="login-mobile-logo" src="{{ \App\Support\Branding::logoUrl() }}"
+                                 alt="" width="280" height="78" decoding="async">
                         </a>
                     </div>
 
@@ -68,7 +82,7 @@
                     {{-- Error message --}}
                     @if (session('error'))
                         <div class="alert alert-warning login-alert alert-dismissible fade show" role="alert">
-                            {{ session('error') }}
+                            {{ __('login.err.' . session('error')) }}
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
                         </div>
                     @endif
@@ -107,7 +121,7 @@
                                 <span class="input-group-text" aria-hidden="true"><i class="bi bi-lock"></i></span>
                                 <input class="form-control" id="passwordInput" name="senha" type="password"
                                        autocomplete="current-password" required
-                                       placeholder="--------" minlength="1"
+                                       placeholder="{{ __('login.password_placeholder') }}" minlength="1"
                                        aria-required="true">
                                 <button type="button" class="btn login-password-toggle" id="togglePassword"
                                         aria-label="{{ __('login.show_pwd') }}" aria-controls="passwordInput" aria-pressed="false">
@@ -118,7 +132,7 @@
 
                         <div class="d-flex justify-content-between align-items-center login-row-extras">
                             <div class="form-check">
-                                <input class="form-check-input" id="rememberMe" type="checkbox" name="remember">
+                                <input class="form-check-input" id="rememberMe" type="checkbox">
                                 <label class="form-check-label small" for="rememberMe">
                                     {{ __('login.remember') }}
                                 </label>
@@ -158,6 +172,7 @@
 @endsection
 
 @push('scripts')
+<script src="{{ asset('assets/js/reload.js') }}"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const form = document.getElementById('loginForm');

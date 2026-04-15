@@ -14,11 +14,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     {{-- Custom CSS --}}
-    <link rel="stylesheet" href="{{ asset('css/theme-tokens.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/theme-app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/private-app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/public-language-selector.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/sidebar.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/private-app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}">
 
     {{-- Theme initialization (must run before first paint) --}}
     <script>
@@ -35,7 +37,7 @@
 
     @stack('styles')
 </head>
-<body>
+<body class="app-private-body">
     <div class="app-layout">
         {{-- Desktop sidebar --}}
         @include('components.sidebar')
@@ -46,8 +48,13 @@
                 <span class="fw-bold">@yield('mobile_title')</span>
             </header>
 
-            {{-- Desktop topbar --}}
-            @include('components.topbar')
+            {{-- Desktop topbar: título vem de @section('topbar_title') em cada página --}}
+            @php
+                $topbarTitleResolved = trim($__env->yieldContent('topbar_title', ''));
+            @endphp
+            @include('components.topbar', [
+                'topbarTitle' => $topbarTitleResolved !== '' ? $topbarTitleResolved : __('nav.dashboard'),
+            ])
 
             {{-- Main content --}}
             <main class="app-main p-4">
@@ -59,8 +66,8 @@
     {{-- Bootstrap 5.3.2 JS Bundle --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     {{-- Theme & sidebar scripts --}}
-    <script src="{{ asset('js/theme.js') }}"></script>
-    <script src="{{ asset('js/sidebar-collapse.js') }}"></script>
+    <script src="{{ asset('assets/js/theme.js') }}"></script>
+    <script src="{{ asset('assets/js/sidebar-collapse.js') }}"></script>
 
     @stack('scripts')
 </body>

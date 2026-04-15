@@ -50,6 +50,9 @@ class HistoryController extends Controller
         $materias = DB::table('materias as m')
             ->join('usuarios_materias as um', 'um.materia_id', '=', 'm.id')
             ->where('um.usuario_id', $uid)
+            ->select('m.nome')
+            ->distinct()
+            ->orderBy('m.nome')
             ->pluck('m.nome');
 
         $totalSimulados = count($historico);

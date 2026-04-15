@@ -1,6 +1,6 @@
 @extends('layouts.public')
 
-@section('title', __('checkout.success_title'))
+@section('title', __('signup.page_title.payment_ok'))
 
 @push('styles')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
@@ -9,7 +9,6 @@
     :root {
         --accent-purple: #6a0392;
         --accent-purple-lighter: rgba(106,3,146,0.12);
-        --navy-primary: #002147;
         --success-green: #10b981;
     }
     body {
@@ -47,19 +46,32 @@
     .step.active .step-label { color: white; }
     .next-steps { text-align: left; background: #f8f9fa; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; }
     .next-steps li { padding: 0.3rem 0; font-size: 0.9rem; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: white; text-decoration: none; font-weight: 600; }
+    .back-link:hover { color: rgba(255,255,255,0.85); }
 </style>
 @endpush
 
+@php
+    $checkoutKind = $pendingOrder['checkout_kind'] ?? 'signup';
+    $isAddon = $checkoutKind === 'addon' && auth()->check();
+@endphp
+
 @section('content')
 <main class="container-custom">
-    {{-- Top bar --}}
-    <div class="text-center mb-3">
-        <a href="{{ route('home') }}" aria-label="Banco de Choices">
-            <img src="{{ asset('img/logo-bd-transparente.png') }}" alt="Banco de Choices" width="180" height="40">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
+        <a href="{{ route('home') }}" class="back-link">
+            <i class="bi bi-arrow-left-short" aria-hidden="true"></i>
+            {{ __('signup.back_home') }}
         </a>
+        <div class="signup-flow-topbar flex-shrink-0 ms-auto">
+            <div class="navbar-actions navbar-actions--landing">
+                <div class="navbar-actions__inner">
+                    @include('components.language-selector')
+                </div>
+            </div>
+        </div>
     </div>
 
-    {{-- Step indicator --}}
     <div class="step-indicator" aria-label="{{ __('signup.steps.aria') }}">
         <div class="step">
             <div class="step-number">1</div>
@@ -79,56 +91,64 @@
         </div>
     </div>
 
-    {{-- Success card --}}
     <div class="success-card">
         @if ($status === 'approved')
             <div class="success-icon success-icon--approved">
                 <i class="bi bi-check-circle-fill" style="font-size: 2.5rem;"></i>
             </div>
-            <h2 class="fw-bold mb-2" style="color: var(--success-green);">{{ __('checkout.status_approved_title') }}</h2>
-            <p class="text-muted mb-0">{{ __('checkout.status_approved_text') }}</p>
+            <h2 class="fw-bold mb-2" style="color: var(--success-green);">{{ __('signup.payment.confirmed_h1') }}</h2>
+            <p class="text-muted mb-0">{{ __('signup.payment.success_p') }}</p>
         @elseif ($status === 'pending')
             <div class="success-icon success-icon--pending">
                 <i class="bi bi-hourglass-split" style="font-size: 2.5rem;"></i>
             </div>
-            <h2 class="fw-bold mb-2" style="color: #f59e0b;">{{ __('checkout.status_pending_title') }}</h2>
-            <p class="text-muted mb-0">{{ __('checkout.status_pending_text') }}</p>
+            <h2 class="fw-bold mb-2" style="color: #f59e0b;">{{ __('signup.payment.received_h1') }}</h2>
+            <p class="text-muted mb-0">{{ __('signup.payment.processing_p') }}</p>
         @else
             <div class="success-icon success-icon--failed">
                 <i class="bi bi-x-circle-fill" style="font-size: 2.5rem;"></i>
             </div>
-            <h2 class="fw-bold mb-2" style="color: #ef4444;">{{ __('checkout.status_failed_title') }}</h2>
-            <p class="text-muted mb-0">{{ __('checkout.status_failed_text') }}</p>
+            <h2 class="fw-bold mb-2" style="color: #ef4444;">{{ __('signup.payment.error_h1') }}</h2>
+            <p class="text-muted mb-0">{{ __('signup.payment.error_sub') }}</p>
         @endif
 
         @if (!empty($pendingOrder['email']))
-            <div class="mt-3 p-3 rounded-3" style="background: var(--accent-purple-lighter);">
-                <small class="text-muted">{{ __('checkout.order_email') }}</small>
+            <div class="mt-3 p-3 rounded-3 text-start" style="background: var(--accent-purple-lighter);">
+                <small class="text-muted">{{ __('signup.payment.order_email') }}</small>
                 <div class="fw-bold">{{ $pendingOrder['email'] }}</div>
             </div>
         @endif
 
         @if (!empty($orderId))
-            <div class="mt-2">
-                <small class="text-muted">{{ __('checkout.order_id') }}: <strong>{{ $orderId }}</strong></small>
+            <div class="mt-2 text-start">
+                <small class="text-muted">{{ __('signup.payment.order_id') }} <strong>{{ $orderId }}</strong></small>
             </div>
         @endif
 
-        {{-- Next steps --}}
-        <div class="next-steps">
-            <h6 class="fw-bold mb-2">{{ __('checkout.next_steps_title') }}</h6>
-            <ol class="mb-0 ps-3">
-                <li>{{ __('checkout.next_step_1') }}</li>
-                <li>{{ __('checkout.next_step_2') }}</li>
-                <li>{{ __('checkout.next_step_3') }}</li>
-            </ol>
-        </div>
+        @if ($isAddon)
+            <div class="next-steps text-start mt-3">
+                <p class="fw-bold mb-1"><i class="bi bi-info-circle me-2"></i>{{ __('addon.payment.next_title') }}</p>
+                <p class="mb-3 small">{{ __('addon.payment.next_p') }}</p>
+                <a href="{{ route('dashboard') }}" class="btn btn-primary btn-lg w-100 py-3 fw-bold shadow-sm d-inline-flex align-items-center justify-content-center gap-2">
+                    <i class="bi bi-speedometer2" aria-hidden="true"></i>
+                    {{ __('addon.payment.btn_panel') }}
+                </a>
+            </div>
+        @else
+            <div class="next-steps">
+                <h6 class="fw-bold mb-2">{{ __('signup.payment.next_title') }}</h6>
+                <ol class="mb-0 ps-3">
+                    <li>{{ __('signup.payment.next1') }}</li>
+                    <li>{{ __('signup.payment.next2') }}</li>
+                    <li>{{ __('signup.payment.next3') }}</li>
+                </ol>
+            </div>
 
-        {{-- Login link --}}
-        <a href="{{ route('login') }}" class="btn btn-primary btn-lg py-3 fw-bold shadow-sm w-100 d-inline-flex align-items-center justify-content-center gap-2 mt-2">
-            <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
-            {{ __('checkout.go_login') }}
-        </a>
+            <a href="{{ route('login') }}" class="btn btn-primary btn-lg py-3 fw-bold shadow-sm w-100 d-inline-flex align-items-center justify-content-center gap-2 mt-2">
+                <i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>
+                {{ __('signup.payment.btn_login') }}
+            </a>
+        @endif
     </div>
 </main>
 @endsection

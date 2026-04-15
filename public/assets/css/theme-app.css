@@ -3,6 +3,14 @@
  */
 @import url("./theme-tokens.css");
 
+/* Foco em campos (evita anel azul padrão do Bootstrap no painel) */
+.app-main .form-control:focus,
+.app-main .form-select:focus {
+  border-color: var(--bc-purple);
+  box-shadow: 0 0 0 0.2rem rgba(106, 3, 146, 0.22);
+  outline: none;
+}
+
 /* ——— Bootstrap / utilitários ——— */
 [data-theme="dark"] .bg-white {
   background-color: var(--app-surface) !important;
@@ -42,6 +50,32 @@
 
 [data-theme="dark"] .shadow-sm {
   box-shadow: var(--app-shadow) !important;
+}
+
+/*
+ * Primário no escuro: [data-bs-theme="dark"] .btn-primary do Bootstrap vence a especificidade
+ * de .btn-primary em buttons-global.css e ficava fundo claro + texto roxo.
+ */
+[data-theme="dark"] .btn-primary,
+[data-bs-theme="dark"] .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bc-purple);
+  --bs-btn-border-color: var(--bc-purple);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #7c3aed;
+  --bs-btn-hover-border-color: #8b5cf6;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #550275;
+  --bs-btn-active-border-color: #550275;
+  --bs-btn-disabled-color: rgba(255, 255, 255, 0.7);
+  --bs-btn-disabled-bg: rgba(106, 3, 146, 0.4);
+  --bs-btn-disabled-border-color: rgba(106, 3, 146, 0.4);
+  --bs-btn-focus-shadow-rgb: 124, 58, 237;
+}
+
+[data-theme="dark"] .btn-primary .material-icons,
+[data-bs-theme="dark"] .btn-primary .material-icons {
+  color: inherit;
 }
 
 [data-theme="dark"] .card {
@@ -90,6 +124,8 @@
   background-color: var(--app-surface);
   border-color: var(--bc-purple);
   color: var(--app-text);
+  box-shadow: 0 0 0 0.2rem rgba(106, 3, 146, 0.28);
+  outline: none;
 }
 
 [data-theme="dark"] .form-control::placeholder {
@@ -301,16 +337,17 @@
   color: #fff !important;
 }
 
-[data-theme="dark"] .app-sidebar-theme-row--sheet .app-sidebar-theme-seg,
-[data-bs-theme="dark"] .app-sidebar-theme-row--sheet .app-sidebar-theme-seg {
+[data-theme="dark"] .app-sidebar-theme-row--sheet .app-theme-toggle-single--wide,
+[data-bs-theme="dark"] .app-sidebar-theme-row--sheet .app-theme-toggle-single--wide {
   background: var(--app-surface-2);
   border-color: var(--app-border);
+  color: var(--app-muted);
 }
 
-[data-theme="dark"] .app-sidebar-theme-row--sheet .app-sidebar-theme-opt.is-active,
-[data-bs-theme="dark"] .app-sidebar-theme-row--sheet .app-sidebar-theme-opt.is-active {
-  background: rgba(106, 3, 146, 0.28);
+[data-theme="dark"] .app-sidebar-theme-row--sheet .app-theme-toggle-single--wide:hover,
+[data-bs-theme="dark"] .app-sidebar-theme-row--sheet .app-theme-toggle-single--wide:hover {
   color: #e9d5ff;
+  background: rgba(124, 58, 237, 0.18);
 }
 
 [data-theme="dark"] .modal-content {
@@ -343,37 +380,59 @@
   border-color: var(--app-border) !important;
 }
 
-/* ——— Dashboard (.content) ——— */
-[data-theme="dark"] .content > header {
-  background: rgba(20, 20, 26, 0.92) !important;
-  backdrop-filter: blur(12px);
-  border-color: var(--app-border) !important;
-}
-
-[data-theme="dark"] .content .table thead th {
-  color: var(--app-muted) !important;
-  border-bottom-color: var(--app-border) !important;
-}
-
-[data-theme="dark"] .content .table tbody td {
-  border-bottom-color: var(--app-border) !important;
-}
-
-[data-theme="dark"] .content .table .text-dark {
-  color: var(--app-text) !important;
-}
-
-[data-theme="dark"] .content .card:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4) !important;
-}
-
-/* ——— Simulados ——— */
-[data-theme="dark"] .page-header {
+/* ——— Dashboard / páginas com .app-main ——— */
+[data-theme="dark"] .bc-page-header {
   background: var(--app-surface) !important;
+  border: 1px solid var(--app-border);
   color: var(--app-text);
   box-shadow: var(--app-shadow);
 }
 
+[data-theme="dark"] .bc-page-header .text-dark {
+  color: var(--app-text) !important;
+}
+
+/* Links no conteúdo do painel: roxo da marca, não azul do link padrão */
+.app-main .link-primary {
+  color: rgb(var(--bs-primary-rgb)) !important;
+}
+
+.app-main .link-primary:hover,
+.app-main .link-primary:focus-visible {
+  color: var(--bc-purple-dark, #550275) !important;
+}
+
+[data-theme="dark"] .app-main .link-primary {
+  color: #c4b5fd !important;
+}
+
+[data-theme="dark"] .app-main .link-primary:hover,
+[data-theme="dark"] .app-main .link-primary:focus-visible {
+  color: #e9d5ff !important;
+}
+
+[data-theme="dark"] .content .table thead th,
+[data-theme="dark"] .app-main .table thead th {
+  color: var(--app-muted) !important;
+  border-bottom-color: var(--app-border) !important;
+}
+
+[data-theme="dark"] .content .table tbody td,
+[data-theme="dark"] .app-main .table tbody td {
+  border-bottom-color: var(--app-border) !important;
+}
+
+[data-theme="dark"] .content .table .text-dark,
+[data-theme="dark"] .app-main .table .text-dark {
+  color: var(--app-text) !important;
+}
+
+[data-theme="dark"] .content .card:hover,
+[data-theme="dark"] .app-main .card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ——— Simulados ——— */
 [data-theme="dark"] .page-header h3.text-dark {
   color: var(--app-text) !important;
 }

@@ -65,6 +65,20 @@
     }
 }
 
+/* Conteúdo do botão (ícone + texto): wrapper interno — padding aqui não compete com .btn */
+.bc-lang-btn-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.app-sidebar .btn-navbar-lang--sidebar-desktop .bc-lang-btn-inner {
+    width: 100%;
+    justify-content: center;
+}
+
 .navbar-actions--landing .btn-navbar-lang .bc-lang-icon-svg,
 .app-sidebar .btn-navbar-lang .bc-lang-icon-svg,
 .app-offcanvas-more .btn-navbar-lang .bc-lang-icon-svg {
@@ -163,10 +177,25 @@
     line-height: 1.25;
 }
 
+/* Barra superior signup/checkout: mesmo pill da landing, largura ao conteúdo (não full-bleed) */
+.signup-flow-topbar .navbar-actions--landing {
+    width: auto;
+    flex: 0 0 auto;
+    margin-left: 0;
+}
+
+.signup-flow-topbar .navbar-actions--landing .navbar-actions__inner {
+    width: auto;
+}
+
+.signup-flow-topbar .navbar-actions--landing .btn-navbar-lang {
+    width: auto !important;
+}
+
 /* Dropdown de idioma — landing / público: cartão claro */
 .navbar-actions--landing .bc-lang-menu--landing {
     min-width: 268px;
-    padding: 0.25rem 0;
+    padding: 0.35rem 0.4rem;
     margin-top: 0.4rem !important;
     border-radius: 14px;
     border: 1px solid rgba(15, 23, 42, 0.08);
@@ -181,7 +210,7 @@
 .app-sidebar .bc-lang-menu--landing,
 .app-offcanvas-more .bc-lang-menu--landing {
     min-width: 268px;
-    padding: 0.25rem 0;
+    padding: 0.35rem 0.4rem;
     margin-top: 0.4rem !important;
     border-radius: 14px;
     border: 1px solid var(--app-border);
@@ -211,17 +240,29 @@
     margin-bottom: 0;
 }
 
+.bc-lang-menu__form {
+    display: block;
+}
+
+.bc-lang-menu--landing > li {
+    width: 100%;
+    min-width: 0;
+}
+
 .navbar-actions--landing .bc-lang-menu__item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.65rem;
     padding: 0.65rem 1rem !important;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--bc-lang-item-text);
     border: none;
     border-left: 4px solid transparent;
-    margin: 0 0.35rem;
+    margin: 0.1rem 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     border-radius: 10px;
     transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
 }
@@ -230,14 +271,17 @@
 .app-offcanvas-more .bc-lang-menu__item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.65rem;
     padding: 0.65rem 1rem !important;
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--app-text);
     border: none;
     border-left: 4px solid transparent;
-    margin: 0 0.35rem;
+    margin: 0.1rem 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     border-radius: 10px;
     transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
 }
@@ -325,6 +369,8 @@
     flex: 1 1 auto;
     min-width: 0;
     line-height: 1.35;
+    overflow-wrap: anywhere;
+    padding-right: 0.25rem;
 }
 
 .navbar-actions--landing .bc-lang-menu__tick,
@@ -370,10 +416,10 @@ html[data-bs-theme="light"] {
     z-index: 1080;
 }
 
-/* App autenticado: menu acima do conteúdo (Popper fixed + sidebar com overflow) */
+/* App autenticado: acima do rodapé da sidebar (1030) e do conteúdo principal */
 .app-sidebar .bc-lang-menu--landing,
 .app-offcanvas-more .bc-lang-menu--landing {
-    z-index: 1056;
+    z-index: 1080;
 }
 
 /**
@@ -404,6 +450,12 @@ html[data-bs-theme="light"] {
     border-top-color: rgba(255, 255, 255, 0.78) !important;
 }
 
+/* Aberto: secção de idioma fica acima de .app-sidebar-footer (irmão seguinte no DOM). */
+.app-sidebar .app-sidebar-section--lang:has(.bc-lang-selector.show) {
+    position: relative;
+    z-index: 1080;
+}
+
 .app-sidebar .bc-lang-menu--landing {
     background: #161018 !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -421,27 +473,15 @@ html[data-bs-theme="light"] {
     color: rgba(236, 236, 241, 0.88) !important;
 }
 
-.app-sidebar .bc-lang-menu__code {
-    color: rgba(255, 255, 255, 0.38) !important;
-}
-
 .app-sidebar .bc-lang-menu__item:hover {
     background: rgba(255, 255, 255, 0.07) !important;
     color: #f5e9ff !important;
-}
-
-.app-sidebar .bc-lang-menu__item:hover .bc-lang-menu__code {
-    color: #e2e8f0 !important;
 }
 
 .app-sidebar .bc-lang-menu__item--active {
     color: #e9d5ff !important;
     background: rgba(124, 58, 237, 0.22) !important;
     border-left-color: #a855f7 !important;
-}
-
-.app-sidebar .bc-lang-menu__item--active .bc-lang-menu__code {
-    color: #e9d5ff !important;
 }
 
 .app-sidebar .bc-lang-menu__check {
