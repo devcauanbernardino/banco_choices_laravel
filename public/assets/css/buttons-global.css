@@ -1,0 +1,90 @@
+/**
+ * Padrão global de botões — alinhado ao CTA do login
+ * (roxo #6a0392, hover fundo branco + texto roxo, peso 700, sombra leve nos grandes)
+ * Carregar depois do bootstrap.min.css
+ */
+
+:root {
+  --bc-purple: #6a0392;
+  --bc-purple-dark: #550275;
+  --bc-purple-rgb: 106, 3, 146;
+}
+
+/* Primário sólido (submit, CTA) */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bc-purple);
+  --bs-btn-border-color: var(--bc-purple);
+  --bs-btn-hover-color: var(--bc-purple);
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: var(--bc-purple);
+  --bs-btn-focus-shadow-rgb: var(--bc-purple-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bc-purple-dark);
+  --bs-btn-active-border-color: var(--bc-purple-dark);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #b07ab8;
+  --bs-btn-disabled-border-color: #b07ab8;
+  font-weight: 700;
+}
+
+a.btn-primary {
+  text-decoration: none;
+}
+
+/* Tamanho / sombra como o botão “Ingresar” */
+.btn-primary.btn-lg,
+.btn.btn-lg.btn-primary {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn-primary.shadow-sm,
+.btn.shadow-sm.btn-primary {
+  box-shadow: 0 0.125rem 0.35rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Contorno roxo (secundários) */
+.btn-outline-primary {
+  --bs-btn-color: var(--bc-purple);
+  --bs-btn-border-color: var(--bc-purple);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bc-purple);
+  --bs-btn-hover-border-color: var(--bc-purple);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bc-purple-dark);
+  --bs-btn-active-border-color: var(--bc-purple-dark);
+  font-weight: 600;
+}
+
+/* Home: botões roxo preenchido (hero / pricing) */
+.btn-reverse {
+  background-color: var(--bc-purple) !important;
+  color: #fff !important;
+  border-color: var(--bc-purple) !important;
+  font-weight: 700;
+}
+
+.btn-reverse:hover {
+  background-color: #fff !important;
+  color: var(--bc-purple) !important;
+  border-color: var(--bc-purple) !important;
+}
+
+/* Não alterar utilitários do Bootstrap */
+.btn-close,
+.btn-link {
+  --bs-btn-color: inherit;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  font-weight: inherit;
+}
+
+.btn-close:hover,
+.btn-link:hover {
+  color: inherit;
+}
+
+.btn.loading {
+  pointer-events: none;
+}

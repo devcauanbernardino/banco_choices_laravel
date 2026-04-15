@@ -1,0 +1,522 @@
+/* =============================================
+   Banco de Choices — CSS Unificado (Páginas Privadas)
+   Depende de: theme-tokens.css, theme-app.css, sidebar.css
+   ============================================= */
+
+/* ---------- Base ---------- */
+.app-private-body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+/* ---------- Layout ---------- */
+.app-main {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Utilitários ---------- */
+.text-primary   { color: var(--bc-purple) !important; }
+.bg-primary-soft { background-color: rgba(106, 3, 146, 0.1); }
+
+/* ---------- Cards ---------- */
+.bc-card {
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="dark"] .bc-card {
+  box-shadow: var(--app-shadow);
+}
+
+.bc-card--flat {
+  box-shadow: none;
+}
+
+.bc-card-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--app-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---------- Page Header ---------- */
+.bc-page-header {
+  background: var(--app-surface);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-theme="dark"] .bc-page-header {
+  box-shadow: var(--app-shadow);
+}
+
+@media (max-width: 991.98px) {
+  .bc-page-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  .bc-page-header .btn { width: 100%; }
+}
+
+/* ---------- Icon Box (stat cards) ---------- */
+.bc-icon-box {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.bc-icon-box .material-icons {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* ---------- Stat Card ---------- */
+.bc-stat-card {
+  background: var(--app-surface);
+  border: 1px solid var(--app-border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+.bc-stat-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--app-muted);
+}
+
+/* ---------- CTA Banner ---------- */
+.bc-cta-banner {
+  background: linear-gradient(135deg, #6a0392 0%, #a342cd 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bc-cta-banner::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ---------- Hero (perfil) ---------- */
+.bc-hero {
+  background: linear-gradient(135deg, #4c0d6b 0%, #7c3aed 45%, #a78bfa 100%);
+  border-radius: 20px;
+  padding: 2rem 2rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bc-hero::after {
+  content: '';
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+.bc-hero-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  object-fit: cover;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.bc-materia-chip {
+  font-size: 0.8rem;
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.96);
+  color: #4a0d5c !important;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] .bc-materia-chip {
+  background: rgba(22, 22, 30, 0.92);
+  color: #ede9fe !important;
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- Tables ---------- */
+.bc-table thead {
+  background-color: var(--app-surface-2);
+  border-bottom: 2px solid var(--app-border);
+}
+
+.bc-table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--app-muted);
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  border: none;
+}
+
+.bc-table tbody td {
+  padding: 1rem 1.25rem;
+  vertical-align: middle;
+  color: var(--app-text);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--app-border);
+}
+
+.bc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- Badges ---------- */
+.bc-badge {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  display: inline-block;
+}
+
+.bc-badge--success { background-color: #e8f5e9; color: #2e7d32; }
+.bc-badge--danger  { background-color: #ffebee; color: #c62828; }
+
+[data-theme="dark"] .bc-badge--success { background-color: rgba(40, 167, 69, 0.15); color: #66bb6a; }
+[data-theme="dark"] .bc-badge--danger  { background-color: rgba(220, 53, 69, 0.15); color: #ef5350; }
+
+/* ---------- Filter Card ---------- */
+.bc-filter-card {
+  background: var(--app-surface);
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--app-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="dark"] .bc-filter-card {
+  box-shadow: var(--app-shadow);
+}
+
+/* ---------- Forms ---------- */
+.bc-form-control {
+  border-radius: 12px;
+  border: 1px solid var(--app-border);
+  padding: 0.7rem 1rem;
+  background: var(--app-surface);
+  color: var(--app-text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.bc-form-control:focus {
+  border-color: var(--bc-purple);
+  box-shadow: 0 0 0 4px rgba(106, 3, 146, 0.1);
+  outline: none;
+}
+
+[data-theme="dark"] .bc-form-control {
+  background: var(--app-surface-2);
+  border-color: var(--app-border);
+}
+
+/* ---------- Action Button (table row) ---------- */
+.bc-btn-action {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  border: 1px solid var(--app-border);
+  color: var(--app-muted);
+  text-decoration: none;
+  background: transparent;
+}
+
+.bc-btn-action:hover {
+  background-color: var(--bc-purple);
+  color: white;
+  border-color: var(--bc-purple);
+}
+
+/* ---------- Form Actions Footer ---------- */
+.bc-form-actions {
+  border-top: 1px solid var(--app-border);
+  margin-top: 1.75rem;
+  padding-top: 1.35rem;
+}
+
+.bc-form-actions .btn {
+  min-height: 48px;
+  font-weight: 600;
+}
+
+/* ---------- Empty State ---------- */
+.bc-empty-state {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.bc-empty-state .material-icons {
+  font-size: 3rem;
+  color: var(--app-muted);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* ---------- Progress Bars ---------- */
+.bc-progress {
+  height: 8px;
+  border-radius: 10px;
+  background-color: var(--app-surface-2);
+  overflow: hidden;
+}
+
+.bc-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6a0392, #a855f7);
+  transition: width 0.4s ease;
+}
+
+/* ---------- Desktop Topbar ---------- */
+.bc-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  margin-left: var(--sidebar-w);
+  padding: 1rem 2rem;
+  min-height: 76px;
+  background: var(--app-surface);
+  border-bottom: 1px solid var(--app-border);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  transition: margin 0.25s ease;
+  gap: 1rem;
+}
+
+[data-theme="dark"] .bc-topbar {
+  background: rgba(20, 20, 26, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+.bc-topbar-title-block {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.bc-topbar-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--app-text);
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bc-topbar-sub {
+  font-size: 0.82rem;
+  color: var(--app-muted);
+  margin: 0.15rem 0 0 0;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bc-topbar-actions {
+  flex-shrink: 0;
+}
+
+/* Botão circular (toggle de tema) */
+.bc-topbar-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--app-surface-2);
+  border: 1px solid var(--app-border);
+  color: var(--app-text);
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.15s ease;
+  padding: 0;
+}
+
+.bc-topbar-btn:hover {
+  background: var(--bc-purple, #6a0392);
+  color: #fff;
+  border-color: var(--bc-purple, #6a0392);
+  transform: translateY(-1px);
+}
+
+.bc-topbar-btn .material-icons {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.bc-topbar-btn-icon { display: none; }
+.bc-topbar-btn-icon--light { display: inline-block; }
+[data-theme="dark"] .bc-topbar-btn-icon--light { display: none; }
+[data-theme="dark"] .bc-topbar-btn-icon--dark { display: inline-block; }
+
+/* Avatar */
+.bc-topbar-avatar-link {
+  display: inline-flex;
+  border-radius: 50%;
+  text-decoration: none;
+  line-height: 0;
+}
+
+.bc-topbar-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--app-border);
+  object-fit: cover;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  display: block;
+  background: var(--bc-purple, #6a0392);
+}
+
+.bc-topbar-avatar-link:hover .bc-topbar-avatar {
+  transform: scale(1.05);
+  border-color: var(--bc-purple, #6a0392);
+}
+
+@media (max-width: 991.98px) {
+  .bc-topbar { margin-left: 0; }
+}
+
+/* ---------- Chart ---------- */
+.bc-chart-wrap {
+  max-height: 300px;
+  position: relative;
+}
+
+/* ---------- Form focus (global purple ring) ---------- */
+.app-private-body .form-select:focus,
+.app-private-body .form-control:focus {
+  border-color: var(--bc-purple, #6a0392);
+  box-shadow: 0 0 0 4px rgba(106, 3, 146, 0.1);
+  outline: none;
+}
+
+[data-theme="dark"] .app-private-body .form-select:focus,
+[data-theme="dark"] .app-private-body .form-control:focus {
+  box-shadow: 0 0 0 4px rgba(106, 3, 146, 0.22);
+}
+
+/* ---------- Setup Card header (bancoperguntas) ---------- */
+.bc-setup-header {
+  background: linear-gradient(135deg, #6a0392 0%, #a342cd 100%);
+  padding: 2.5rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* ---------- Setup Card body ---------- */
+.bc-setup-body {
+  padding: 2.5rem;
+  background: var(--app-surface);
+}
+
+@media (max-width: 767.98px) {
+  .bc-setup-body { padding: 1.5rem 1.25rem; }
+}
+
+/* ---------- Mode Option (radio card) ---------- */
+.bc-mode-option {
+  border: 2px solid var(--app-border);
+  border-radius: 14px;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+  display: block;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.bc-mode-option:hover {
+  border-color: rgba(106, 3, 146, 0.4);
+  background-color: rgba(106, 3, 146, 0.04);
+}
+
+.form-check-input:checked + .bc-mode-option {
+  border-color: #6a0392;
+  background-color: rgba(106, 3, 146, 0.08);
+}
+
+[data-theme="dark"] .form-check-input:checked + .bc-mode-option {
+  background-color: rgba(106, 3, 146, 0.18);
+}
+
+.bc-mode-option__title {
+  display: block;
+  font-weight: 700;
+  color: var(--app-text);
+  margin-bottom: 0.25rem;
+}
+
+.bc-mode-option__desc {
+  font-size: 0.85rem;
+  color: var(--app-muted);
+  display: block;
+}
+
+/* ---------- Exam Warning ---------- */
+.bc-exam-warning {
+  background-color: #fff4e5;
+  border-left: 4px solid #ffa000;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+[data-theme="dark"] .bc-exam-warning {
+  background-color: rgba(255, 160, 0, 0.08);
+  border-left-color: #ffb74d;
+}
+
+/* ---------- Badges (extra variants) ---------- */
+.bc-badge--warning { background-color: #fff3cd; color: #856404; }
+[data-theme="dark"] .bc-badge--warning { background-color: rgba(255, 193, 7, 0.15); color: #ffc107; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px) {
+  .bc-filter-card { padding: 1.1rem; }
+
+  .bc-empty-state { padding: 2rem 1rem; }
+}

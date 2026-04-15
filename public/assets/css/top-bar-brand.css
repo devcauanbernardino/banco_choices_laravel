@@ -1,0 +1,20 @@
+/* Logo no topo sobre fundo escuro/gradiente — fundo branco arredondado (igual ideia do login) */
+.brand-mark-img-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 0.45rem 0.75rem;
+  box-shadow:
+    0 8px 26px rgba(0, 0, 0, 0.14),
+    0 0 0 1px rgba(255, 255, 255, 0.55) inset;
+}
+
+.brand-mark-img-wrap img {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
