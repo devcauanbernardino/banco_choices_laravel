@@ -3,119 +3,97 @@
 @section('title', __('password.title_forgot_page'))
 
 @section('body_attr')
- class="login-page"
+ class="auth-recuperar-page"
 @endsection
 
 @push('styles')
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/css/auth-recuperar-senha.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/auth-footer-shared.css') }}">
 @endpush
 
 @section('content')
-<div class="container-fluid p-0">
-    <div class="row g-0 login-wrapper">
-        <div class="col-lg-7 d-none d-lg-flex login-sidebar align-items-center justify-content-center p-5 text-white"
-             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC445AKHSVeDzgOnDg89cqG-J45BnnX0jlKJqEDVoAqDa9PF3GuM8AV8eTUyanRvwnfvHSOOc9cPkyCbrND0UX4AnWDqxH2GdbLBAi9kTxBbiKYwhJwpp4McWRaQzKp14-JLsiLfjttFhj-vIaYBR95BlK0Z6arvuWAXGmsEtoBH76JvcIP81a7sjWaeBwLZayIcGfCms3TkEBhVMG3vnN2NFTTcLzxwCoLuoIZokjnUni0LZX0MQe68-QmFcZSHglB4zvHEoKo4mBK');">
-            <div class="login-sidebar-overlay"></div>
-            <div class="sidebar-content mw-100" style="max-width: 600px;">
-                <div class="mb-4">
-                    <div class="login-sidebar-logo-wrap">
-                        <img class="login-sidebar-logo" src="{{ \App\Support\Branding::logoUrl() }}"
-                             alt="" width="200" height="56">
-                    </div>
-                </div>
-                <h1 class="display-4 fw-bold mb-4">{{ __('login.sidebar_heading') }}</h1>
-                <p class="lead mb-5 opacity-75">{{ __('login.sidebar_lead') }}</p>
-            </div>
-        </div>
-
-        <div class="col-12 col-lg-5 login-form-column">
-            <div class="login-form-inner">
-                <div class="login-form-container">
-                    <div class="d-lg-none login-mobile-brand text-center">
-                        <a href="{{ route('home') }}" class="login-mobile-logo-link d-inline-block text-decoration-none" aria-label="{{ __('index.page_title') }}">
-                            <img class="login-mobile-logo" src="{{ \App\Support\Branding::logoUrl() }}"
-                                 alt="" width="280" height="78" decoding="async">
-                        </a>
-                    </div>
-
-                    <header class="login-form-header">
-                        <div class="d-flex flex-wrap align-items-start justify-content-between gap-3 mb-2">
-                            <a href="{{ route('login') }}" class="login-back-link mb-0 align-self-center">
-                                <i class="bi bi-arrow-left" aria-hidden="true"></i>
-                                <span>{{ __('password.back_login') }}</span>
-                            </a>
-                            <div class="navbar-actions navbar-actions--landing login-lang-toolbar flex-shrink-0 ms-auto">
-                                <div class="navbar-actions__inner">
-                                    @include('components.language-selector')
-                                </div>
-                            </div>
-                        </div>
-                        <h2 class="login-title">{{ __('password.heading_forgot') }}</h2>
-                        <p class="text-muted small mb-0 mt-2">{{ __('password.lead_forgot') }}</p>
-                    </header>
-
-                    @if (session('status'))
-                        <div class="alert alert-success login-alert alert-dismissible fade show" role="alert">
-                            {{ session('status') }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
-                        </div>
-                    @endif
-
-                    @if ($errors->any())
-                        <div class="alert alert-danger login-alert alert-dismissible fade show" role="alert">
-                            @foreach ($errors->all() as $error)
-                                <div>{{ $error }}</div>
-                            @endforeach
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
-                        </div>
-                    @endif
-
-                    <form action="{{ route('password.email') }}" method="post" id="forgotForm" class="login-form">
-                        @csrf
-                        <div class="login-field">
-                            <label class="login-field-label" for="emailInput">
-                                {{ __('login.email') }}
-                            </label>
-                            <div class="input-group input-group-lg login-input-group">
-                                <span class="input-group-text" aria-hidden="true"><i class="bi bi-envelope"></i></span>
-                                <input class="form-control" id="emailInput" name="email" type="email"
-                                       inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false"
-                                       placeholder="{{ __('login.email_placeholder') }}" required
-                                       value="{{ old('email') }}"
-                                       aria-required="true">
-                            </div>
-                            <p class="small text-muted mt-2 mb-0">{{ __('password.email_hint') }}</p>
-                        </div>
-
-                        <div class="d-grid login-submit-wrap mt-4">
-                            <button class="btn btn-primary btn-lg py-3 fw-bold shadow-sm w-100" type="submit" id="submitBtn">
-                                {{ __('password.send_link') }} <i class="bi bi-send ms-2" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </form>
-
-                    <div class="login-signup-cta">
-                        <p class="login-signup-text mb-0">
-                            <a class="login-signup-link" href="{{ route('login') }}">{{ __('password.back_login') }}</a>
-                        </p>
-                    </div>
-
-                    <footer class="login-footer">
-                        <nav class="login-footer-nav" aria-label="Legal">
-                            <a href="{{ route('home') }}#privacidad">{{ __('login.footer_privacy') }}</a>
-                            <span class="login-footer-dot" aria-hidden="true"></span>
-                            <a href="{{ route('home') }}#terminos">{{ __('login.footer_terms') }}</a>
-                            <span class="login-footer-dot" aria-hidden="true"></span>
-                            <a href="mailto:contato@bancodechoices.com">{{ __('login.footer_contact') }}</a>
-                        </nav>
-                        <p class="login-footer-copy">{{ __('login.footer_copy') }}</p>
-                    </footer>
-                </div>
-            </div>
-        </div>
+<div class="auth-recuperar-wrap">
+    <div class="auth-recuperar-blobs" aria-hidden="true">
+        <div class="auth-recuperar-blobs__one"></div>
+        <div class="auth-recuperar-blobs__two"></div>
     </div>
+
+    <header class="auth-recuperar-topbar">
+        <a href="{{ route('login') }}" class="auth-recuperar-back">
+            <span class="material-symbols-outlined" style="font-size: 1.125rem;">arrow_back</span>
+            <span>{{ __('password.back_login') }}</span>
+        </a>
+        <div class="navbar-actions navbar-actions--landing login-lang-toolbar flex-shrink-0">
+            <div class="navbar-actions__inner">
+                @include('components.language-selector')
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-recuperar-main">
+        <div class="auth-recuperar-inner">
+            <div class="auth-recuperar-brand">
+                <div class="auth-recuperar-brand-logo">
+                    <a href="{{ route('home') }}" class="text-decoration-none d-inline-block" aria-label="{{ __('index.page_title') }}">
+                        <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" width="280" height="90" decoding="async">
+                    </a>
+                </div>
+            </div>
+
+            <div class="auth-recuperar-card">
+            <header class="auth-recuperar-card-head">
+                <h2>{{ __('password.heading_forgot') }}</h2>
+                <p>{{ __('password.lead_forgot') }}</p>
+            </header>
+
+            @if (session('status'))
+                <div class="alert alert-success auth-recuperar-alert alert-dismissible fade show" role="alert">
+                    {{ session('status') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
+                </div>
+            @endif
+
+            @if ($errors->any())
+                <div class="alert alert-danger auth-recuperar-alert alert-dismissible fade show" role="alert">
+                    @foreach ($errors->all() as $error)
+                        <div>{{ $error }}</div>
+                    @endforeach
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
+                </div>
+            @endif
+
+            <form action="{{ route('password.email') }}" method="post" id="forgotForm" class="auth-recuperar-form">
+                @csrf
+                <div class="auth-recuperar-field">
+                    <label for="emailInput">{{ __('login.email') }}</label>
+                    <div class="auth-recuperar-input-wrap">
+                        <input class="auth-recuperar-input" id="emailInput" name="email" type="email"
+                               inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false"
+                               placeholder="{{ __('login.email_placeholder') }}" required
+                               value="{{ old('email') }}"
+                               aria-required="true">
+                        <span class="auth-recuperar-input-icon" aria-hidden="true">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                        </span>
+                    </div>
+                    <p class="auth-recuperar-hint">{{ __('password.email_hint') }}</p>
+                </div>
+
+                <button class="auth-recuperar-submit" type="submit" id="submitBtn">
+                    <span>{{ __('password.send_link') }}</span>
+                    <span class="material-symbols-outlined" aria-hidden="true">send</span>
+                </button>
+            </form>
+
+            <div class="auth-login-divider">
+                <p>{{ __('login.signup_prompt') }}</p>
+                <a href="{{ route('signup.materias') }}">{{ __('login.signup_link') }}</a>
+            </div>
+            </div>
+        </div>
+    </main>
 </div>
 @endsection
 
@@ -128,7 +106,8 @@
         if (form && btn) {
             form.addEventListener('submit', function () {
                 btn.classList.add('btn-loading');
-                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> ' + @json(__('password.submitting_forgot'));
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>' + @json(__('password.submitting_forgot'));
             });
         }
     });

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Banco de Choices | Dashboard</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#5a00c6",
+                      "on-secondary-fixed-variant": "#66288d",
+                      "surface-dim": "#d8dadf",
+                      "secondary-fixed": "#f4d9ff",
+                      "on-error-container": "#93000a",
+                      "outline": "#807382",
+                      "tertiary-fixed-dim": "#d2bbff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#602187",
+                      "background": "#f7f9fe",
+                      "on-background": "#181c20",
+                      "secondary-fixed-dim": "#e4b5ff",
+                      "error": "#ba1a1a",
+                      "secondary": "#8042a7",
+                      "tertiary-fixed": "#eaddff",
+                      "outline-variant": "#d2c1d3",
+                      "on-surface-variant": "#4e4351",
+                      "inverse-primary": "#ebb2ff",
+                      "surface": "#f7f9fe",
+                      "surface-tint": "#8c34b3",
+                      "on-tertiary-fixed": "#25005a",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#f8d8ff",
+                      "inverse-on-surface": "#eff1f6",
+                      "on-surface": "#181c20",
+                      "on-secondary-fixed": "#2f004b",
+                      "surface-bright": "#f7f9fe",
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#5200b6",
+                      "on-primary-fixed": "#320047",
+                      "error-container": "#ffdad6",
+                      "surface-container-low": "#f2f4f9",
+                      "on-tertiary-container": "#bc9bff",
+                      "surface-variant": "#e0e2e7",
+                      "primary-container": "#6a0392",
+                      "primary": "#490066",
+                      "surface-container-high": "#e6e8ed",
+                      "surface-container-highest": "#e0e2e7",
+                      "primary-fixed-dim": "#ebb2ff",
+                      "on-primary-fixed-variant": "#711299",
+                      "on-primary-container": "#dd8cff",
+                      "inverse-surface": "#2d3135",
+                      "surface-container": "#eceef3",
+                      "secondary-container": "#d593fe",
+                      "tertiary": "#37007f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex">
+<!-- SideNavBar (Authority: JSON & Design System) -->
+<aside class="h-screen w-64 fixed left-0 top-0 bg-slate-50 flex flex-col p-6 space-y-4 z-50">
+<div class="flex items-center gap-3 mb-8 px-2">
+<img alt="Banco de Choices Logo" class="h-10 w-10 rounded-lg" data-alt="clean minimalist medical logo featuring abstract geometric shapes in purple and violet on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqKQuy0q6ryyxQFHTVx-q1WST3hX_v-g3SSPSziPiKjaKq9BnxWpj9ubbxqPzHxjVhDH-9qDwiCyPiTQ03f9jaPNgihnzdmahwusNUPyZJN_zO5kWqtsu8NGoURRXeAcHlUoGX8u4MKAObpJJWa3Sn0BQF7ueJCbBJ0_hoLiV99PiasDXmdCw4arNTFNKGQtvJeSldNuzAXpzLz9QjlvoKL7LaSkpBkeXr6r4axc5wE5aqy2md9X0zBJcfgFTwxxZmDVb9hIw9Khg"/>
+<div>
+<h1 class="text-xl font-bold text-purple-800 tracking-tighter leading-none">Banco de Choices</h1>
+<p class="text-[10px] uppercase tracking-widest text-slate-500 font-bold mt-1">Área do Estudante</p>
+</div>
+</div>
+<button class="w-full py-3 px-4 bg-primary-container text-white rounded-xl flex items-center justify-center gap-2 font-semibold shadow-lg shadow-purple-200 transition-all hover:scale-[1.02] active:scale-[0.98]">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+<span>Nuevo Simulacro</span>
+</button>
+<nav class="flex-1 space-y-1 pt-4">
+<!-- Active State: Dashboard -->
+<a class="flex items-center gap-3 px-4 py-3 text-purple-900 font-semibold bg-purple-100/50 rounded-lg transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">database</span>
+<span>Banco de Preguntas</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">clinical_notes</span>
+<span>Simulacros</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>Historial</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span>Estadísticas</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>Mi Perfil</span>
+</a>
+</nav>
+<div class="border-t border-slate-200 pt-4 space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-500 hover:bg-slate-200/50 transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Configuración</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-error hover:bg-red-50 transition-all rounded-lg" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Cerrar Sesión</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-64 p-10 max-w-[1600px]">
+<!-- Welcome Header: Editorial Asymmetry -->
+<header class="flex justify-between items-end mb-12">
+<div class="max-w-2xl">
+<h2 class="text-5xl font-extrabold text-on-background tracking-tight mb-2">Olá, Dr. Ricardo</h2>
+<p class="text-on-surface-variant text-lg font-medium">Sua jornada para a residência médica continua aqui. Você está no topo 5% da sua turma esta semana.</p>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low p-2 rounded-full pr-6">
+<img alt="Avatar Usuario" class="w-12 h-12 rounded-full object-cover" data-alt="professional portrait of a young male doctor in a white coat with a friendly smile, clean clinical background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZVlZkhvNBwbj5_Vzl_e79BI_b8UeBaTMKBlSkvEIW7BRwLFCOOP6ulfMxrlSvQyuOlUKVRu50_CSkq_Z3RrAIQSvhIPtyKw_6SR7ZkvpEfQbBgv5ANx7Xf2CucQBPTD8u3H4K3aXww0vjQOgM7zhFOxf_pEpcsVQXhAoSA0ewkAku5a-wTezWbI1qWWzqicvxASpsWdeJWV6_ZJ3HOyG66vYcyn1JOypUhWDU1gFsUbXtniO4PBok8t0KIJ6qHkizxtc0MNYGZMQ"/>
+<div class="flex flex-col">
+<span class="text-sm font-bold text-primary">Nível 14</span>
+<div class="w-24 h-1.5 bg-outline-variant rounded-full mt-1">
+<div class="w-[75%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-12 gap-8">
+<!-- Primary Action Cards -->
+<div class="col-span-12 md:col-span-8 grid grid-cols-2 gap-6">
+<!-- Criar Novo Simulado -->
+<div class="relative overflow-hidden bg-primary-container p-8 rounded-3xl group cursor-pointer shadow-xl shadow-purple-900/20">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-on-primary-container mb-4">edit_square</span>
+<h3 class="text-2xl font-bold text-white mb-2 leading-tight">Criar novo simulado</h3>
+<p class="text-on-primary-container/80 text-sm">Personalize por especialidade, ano ou banca examinadora.</p>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10 transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[160px]">clinical_notes</span>
+</div>
+</div>
+<!-- Continuar Estudo -->
+<div class="relative overflow-hidden bg-secondary-container p-8 rounded-3xl group cursor-pointer shadow-xl shadow-purple-900/10">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container mb-4">play_circle</span>
+<h3 class="text-2xl font-bold text-on-secondary-fixed-variant mb-2 leading-tight">Continuar pendente</h3>
+<p class="text-on-secondary-container/80 text-sm">Ginecologia e Obstetrícia: 12/50 questões concluídas.</p>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10 transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[160px]">schedule</span>
+</div>
+</div>
+<!-- Accuracy Rate Chart: Tonal Layering -->
+<div class="col-span-2 bg-surface-container-low p-8 rounded-3xl">
+<div class="flex justify-between items-start mb-8">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Taxa de Acerto Semanal</h3>
+<p class="text-on-surface-variant text-sm">Comparativo com a média nacional (62%)</p>
+</div>
+<div class="flex items-center gap-2 bg-white px-3 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-xs font-bold text-primary">VOCÊ: 78.4%</span>
+</div>
+</div>
+<div class="flex items-end justify-between h-48 gap-4 px-4">
+<div class="flex-1 bg-surface-container-highest rounded-t-xl relative group h-[40%]">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-bold text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">SEG</div>
+</div>
+<div class="flex-1 bg-surface-container-highest rounded-t-xl relative group h-[65%]">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-bold text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">TER</div>
+</div>
+<div class="flex-1 bg-primary rounded-t-xl relative group h-[85%] shadow-lg shadow-purple-200">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 text-[10px] font-bold text-primary opacity-100">HOJE</div>
+</div>
+<div class="flex-1 bg-surface-container-highest rounded-t-xl relative group h-[55%]"></div>
+<div class="flex-1 bg-surface-container-highest rounded-t-xl relative group h-[72%]"></div>
+<div class="flex-1 bg-surface-container-highest rounded-t-xl relative group h-[48%]"></div>
+<div class="flex-1 bg-surface-container-highest rounded-t-xl relative group h-[60%]"></div>
+</div>
+</div>
+<!-- Recent Activity -->
+<div class="col-span-2 space-y-6">
+<h3 class="text-xl font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">history</span>
+                        Atividades Recentes
+                    </h3>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-5 bg-white rounded-2xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">cardiology</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Cardiologia: Valvopatias</p>
+<p class="text-xs text-on-surface-variant">Simulado Rápido • Há 2 horas</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-black text-primary">18/20</p>
+<p class="text-[10px] font-bold text-green-600 uppercase">Excelente</p>
+</div>
+</div>
+<div class="flex items-center justify-between p-5 bg-white rounded-2xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">child_care</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Pediatria: Neonatologia</p>
+<p class="text-xs text-on-surface-variant">Banco de Questões • Ontem</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-black text-on-surface-variant">42/50</p>
+<p class="text-[10px] font-bold text-primary uppercase">Acima da média</p>
+</div>
+</div>
+<div class="flex items-center justify-between p-5 bg-white rounded-2xl hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">neurology</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Neurologia: AVC</p>
+<p class="text-xs text-on-surface-variant">Flashcards • Ontem</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-black text-on-surface-variant">15/20</p>
+<p class="text-[10px] font-bold text-secondary uppercase">Bom progresso</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Exams Sidebar -->
+<div class="col-span-12 md:col-span-4 space-y-8">
+<div class="bg-surface-container-highest p-8 rounded-[32px] min-h-[400px] border border-white/20">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-bold text-on-surface tracking-tight">Próximas Provas</h3>
+<span class="material-symbols-outlined text-primary">event</span>
+</div>
+<div class="space-y-8">
+<div class="relative pl-8 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-primary/20">
+<div class="absolute left-[-4px] top-1.5 w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-purple-100"></div>
+<p class="text-xs font-bold text-primary tracking-widest uppercase mb-1">EM 12 DIAS</p>
+<h4 class="text-lg font-bold text-on-surface leading-tight mb-1">USP - São Paulo</h4>
+<p class="text-sm text-on-surface-variant">Residência Médica 2024</p>
+</div>
+<div class="relative pl-8 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-primary/20">
+<div class="absolute left-[-4px] top-1.5 w-2.5 h-2.5 rounded-full bg-outline-variant"></div>
+<p class="text-xs font-bold text-on-surface-variant tracking-widest uppercase mb-1">EM 28 DIAS</p>
+<h4 class="text-lg font-bold text-on-surface leading-tight mb-1">Unicamp</h4>
+<p class="text-sm text-on-surface-variant">Primeira Fase</p>
+</div>
+<div class="relative pl-8">
+<div class="absolute left-[-4px] top-1.5 w-2.5 h-2.5 rounded-full bg-outline-variant"></div>
+<p class="text-xs font-bold text-on-surface-variant tracking-widest uppercase mb-1">EM 45 DIAS</p>
+<h4 class="text-lg font-bold text-on-surface leading-tight mb-1">SUS-SP</h4>
+<p class="text-sm text-on-surface-variant">Exame Unificado</p>
+</div>
+</div>
+<div class="mt-12 p-6 bg-white/40 backdrop-blur-md rounded-2xl border border-white/60">
+<p class="text-sm font-bold text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">tips_and_updates</span>
+                            Dica do Dia
+                        </p>
+<p class="text-xs text-on-surface-variant leading-relaxed italic">
+                            "Foque em questões de Obstetrícia hoje. Historicamente, a banca da USP tem 15% das questões voltadas para Pré-natal de alto risco."
+                        </p>
+</div>
+</div>
+<!-- Study Pulse Chip Style Promo -->
+<div class="bg-gradient-to-br from-primary to-primary-container p-8 rounded-[32px] text-white shadow-2xl shadow-purple-900/30">
+<div class="flex items-center gap-2 mb-4">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary-container"></span>
+</span>
+<span class="text-[10px] font-bold tracking-widest uppercase">Live Study Group</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Revisão de Cirurgia Geral acontecendo agora</h3>
+<button class="w-full py-3 bg-white text-primary rounded-xl font-bold text-sm hover:bg-purple-50 transition-colors">Participar Agora</button>
+</div>
+</div>
+</div>
+<!-- Footer (Authority: JSON) -->
+<footer class="mt-20 py-12 border-t border-slate-100">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl">
+<div class="col-span-1 md:col-span-2">
+<h4 class="text-lg font-bold text-purple-900 mb-2">Banco de Choices</h4>
+<p class="text-slate-500 text-sm max-w-xs">© 2024 Banco de Choices. Formação médica de precisão.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Suporte</h5>
+<a class="text-slate-500 text-sm hover:text-purple-800 transition-colors" href="#">Ayuda</a>
+<a class="text-slate-500 text-sm hover:text-purple-800 transition-colors" href="#">Contacto</a>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Legal</h5>
+<a class="text-slate-500 text-sm hover:text-purple-800 transition-colors" href="#">Privacidad</a>
+<a class="text-slate-500 text-sm hover:text-purple-800 transition-colors" href="#">Términos</a>
+</div>
+</div>
+</footer>
+</main>
+</body></html>

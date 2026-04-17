@@ -17,10 +17,19 @@ class SignupController extends Controller
 
     public function storeMaterias(Request $request)
     {
-        $request->validate([
-            'materias' => 'required|array|min:1',
-            'materias.*' => 'integer|exists:materias,id',
-        ]);
+        $request->validate(
+            [
+                'materias' => 'required|array|min:1',
+                'materias.*' => 'integer|exists:materias,id',
+            ],
+            [
+                'materias.required' => __('signup.err.min_materias'),
+                'materias.array' => __('signup.err.min_materias'),
+                'materias.min' => __('signup.err.min_materias'),
+                'materias.*.integer' => __('signup.err.checkout_materias_invalid'),
+                'materias.*.exists' => __('signup.err.checkout_materias_invalid'),
+            ]
+        );
 
         $request->session()->put('signup_materias', $request->input('materias'));
 
@@ -42,9 +51,15 @@ class SignupController extends Controller
 
     public function storePlano(Request $request)
     {
-        $request->validate([
-            'plan_id' => 'required|in:monthly,semester,annual',
-        ]);
+        $request->validate(
+            [
+                'plan_id' => 'required|in:monthly,semester,annual',
+            ],
+            [
+                'plan_id.required' => __('signup.err.plan_required'),
+                'plan_id.in' => __('signup.err.checkout_invalid_plan'),
+            ]
+        );
 
         $request->session()->put('signup_plan', $request->input('plan_id'));
 

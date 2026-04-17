@@ -1,0 +1,164 @@
+/**
+ * Rodapé + divisor final do cartão — telas auth (login, recuperar, redefinir).
+ * Shell viewport (html/body flex, scripts fora do fluxo) também em cadastro — matérias.
+ */
+
+/*
+ * Shell em altura de viewport: o body só tinha um filho com min-height no wrap,
+ * mas sem flex-basis 0 o wrap não “puxa” o espaço livre — o footer ficava logo abaixo do main.
+ */
+/*
+ * 100dvh costuma ser maior que a janela visível (UI do browser), gerando rolagem
+ * extra e faixa “branca” (fundo padrão do html). 100svh segue o viewport pequeno.
+ */
+html:has(body.auth-login-exemplo),
+html:has(body.auth-recuperar-page),
+html:has(body.auth-redefinir-page),
+html:has(body.signup-materias-page) {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/* Mesmo fundo que login / recuperar / selecionar matérias (theme-tokens — auth shell) */
+html:has(body.auth-login-exemplo),
+html:has(body.auth-recuperar-page),
+html:has(body.signup-materias-page) {
+  background-color: var(--auth-public-shell-bg, #f0f2f7);
+  background-image: var(
+    --auth-public-shell-image,
+    linear-gradient(165deg, #faf8ff 0%, #f0f2f7 50%, #ebe8f5 100%)
+  );
+}
+
+html:has(body.auth-redefinir-page) {
+  background-color: #f7f9fe;
+}
+
+body.auth-login-exemplo,
+body.auth-recuperar-page,
+body.auth-redefinir-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /*
+   * Qualquer texto em branco entre filhos do body (ex.: newline antes de <script>)
+   * vira item flex anônimo com altura de linha — faixa clara abaixo do último bloco.
+   */
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Cadastro matérias: não usar font-size 0 no body (dropdown de idioma / UI no body quebram). */
+body.signup-materias-page {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body.auth-login-exemplo > .auth-login-wrap,
+body.auth-recuperar-page > .auth-recuperar-wrap,
+body.auth-redefinir-page > .auth-redefinir-wrap,
+body.signup-materias-page > .signup-materias-wrap {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Scripts no body continuam a executar; fora do fluxo flex (evita “slot” vazio). */
+body.auth-login-exemplo > script,
+body.auth-recuperar-page > script,
+body.auth-redefinir-page > script,
+body.signup-materias-page > script {
+  display: none !important;
+}
+
+.auth-login-divider {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(210, 193, 211, 0.35);
+  text-align: center;
+}
+
+.auth-login-divider p {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  color: #4e4351;
+}
+
+.auth-login-divider a {
+  font-weight: 800;
+  color: #490066;
+  text-decoration: none;
+}
+
+.auth-login-divider a:hover {
+  text-decoration: underline;
+}
+
+.auth-login-footer {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  padding: 1.5rem 1.25rem;
+  margin-top: auto;
+  box-sizing: border-box;
+}
+
+.auth-login-footer-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+/* Mesma altura em todas as colunas (stretch); conteúdo centrado na vertical dentro de cada coluna */
+.auth-login-footer-row {
+  align-items: stretch;
+}
+
+.auth-login-footer-logo-link {
+  text-decoration: none;
+}
+
+.auth-login-footer-logo {
+  display: block;
+  height: clamp(2rem, 5vw, 2.75rem);
+  width: auto;
+  max-width: min(200px, 85vw);
+  object-fit: contain;
+}
+
+.auth-login-footer a {
+  font-size: 0.875rem;
+  color: #64748b;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.auth-login-footer a:hover {
+  color: #5b21b6;
+}
+
+.auth-login-footer-copy {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0;
+  text-align: right;
+}
+
+@media (max-width: 767.98px) {
+  .auth-login-footer-copy {
+    text-align: left;
+  }
+}

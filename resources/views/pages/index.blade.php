@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link lp-nav-link js-scroll-anchor" href="{{ route('home') }}"
-                           data-scroll-target="contacto">{{ __('index.nav.faq') }}</a>
+                           data-scroll-target="listo">{{ __('index.nav.faq') }}</a>
                     </li>
                 </ul>
                 <div class="navbar-actions navbar-actions--landing ms-lg-3">
@@ -260,39 +260,26 @@
     <footer class="lp-footer">
         <div class="container">
             <div class="row g-4 g-lg-5">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="lp-footer-brand-row">
                         <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" width="120" height="32" decoding="async">
                         <span class="lp-headline fw-bold text-purple-900" style="color: #3b0764;">{{ __('index.page_title') }}</span>
                     </div>
                     <p class="text-secondary small mb-0">&copy; {{ date('Y') }} {{ __('index.page_title') }}. {{ __('index.footer.brand') }}</p>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
+                <div class="col-6 col-md-4 col-lg-3">
                     <h4>{{ __('index.footer.platform') }}</h4>
                     <ul class="list-unstyled mb-0">
                         <li class="mb-2"><a class="js-scroll-anchor" href="{{ route('home') }}" data-scroll-target="privacidad">{{ __('index.footer.l2') }}</a></li>
                         <li class="mb-2"><a class="js-scroll-anchor" href="{{ route('home') }}" data-scroll-target="terminos">{{ __('index.footer.l1') }}</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
+                <div class="col-6 col-md-4 col-lg-3">
                     <h4>{{ __('index.footer.support') }}</h4>
                     <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a class="js-scroll-anchor" href="{{ route('home') }}" data-scroll-target="contacto">{{ __('index.footer.s2') }}</a></li>
+                        <li class="mb-2"><a class="js-scroll-anchor" href="{{ route('home') }}" data-scroll-target="listo">{{ __('index.footer.s2') }}</a></li>
                         <li class="mb-2"><a href="{{ route('login') }}">{{ __('index.footer.s1') }}</a></li>
                     </ul>
-                </div>
-                <div class="col-md-4 col-lg-3" id="contacto">
-                    <h4>{{ __('index.newsletter.title') }}</h4>
-                    <p class="small text-secondary mb-2">{{ __('index.newsletter.hint') }}</p>
-                    <div class="lp-newsletter">
-                        <input type="email" name="newsletter_email" readonly
-                               placeholder="{{ __('index.newsletter.placeholder') }}"
-                               aria-label="{{ __('index.newsletter.placeholder') }}">
-                        <button type="button" class="rounded-3" id="lpNewsletterBtn"
-                                aria-label="{{ __('index.newsletter.title') }}">
-                            <span class="material-symbols-outlined">send</span>
-                        </button>
-                    </div>
                 </div>
             </div>
 
@@ -387,12 +374,6 @@
             });
         }
 
-        var nlBtn = document.getElementById('lpNewsletterBtn');
-        if (nlBtn) {
-            nlBtn.addEventListener('click', function () {
-                window.location.href = 'mailto:contato@bancodechoices.com?subject=' + encodeURIComponent('Newsletter — Banco de Choices');
-            });
-        }
     })();
 </script>
 @endpush

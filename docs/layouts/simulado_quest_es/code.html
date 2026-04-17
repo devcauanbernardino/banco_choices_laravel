@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Simulacro | Banco de Choices</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5a00c6",
+                    "on-secondary-fixed-variant": "#66288d",
+                    "surface-dim": "#d8dadf",
+                    "secondary-fixed": "#f4d9ff",
+                    "on-error-container": "#93000a",
+                    "outline": "#807382",
+                    "tertiary-fixed-dim": "#d2bbff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#602187",
+                    "background": "#f7f9fe",
+                    "on-background": "#181c20",
+                    "secondary-fixed-dim": "#e4b5ff",
+                    "error": "#ba1a1a",
+                    "secondary": "#8042a7",
+                    "tertiary-fixed": "#eaddff",
+                    "outline-variant": "#d2c1d3",
+                    "on-surface-variant": "#4e4351",
+                    "inverse-primary": "#ebb2ff",
+                    "surface": "#f7f9fe",
+                    "surface-tint": "#8c34b3",
+                    "on-tertiary-fixed": "#25005a",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#f8d8ff",
+                    "inverse-on-surface": "#eff1f6",
+                    "on-surface": "#181c20",
+                    "on-secondary-fixed": "#2f004b",
+                    "surface-bright": "#f7f9fe",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#5200b6",
+                    "on-primary-fixed": "#320047",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f2f4f9",
+                    "on-tertiary-container": "#bc9bff",
+                    "surface-variant": "#e0e2e7",
+                    "primary-container": "#6a0392",
+                    "primary": "#490066",
+                    "surface-container-high": "#e6e8ed",
+                    "surface-container-highest": "#e0e2e7",
+                    "primary-fixed-dim": "#ebb2ff",
+                    "on-primary-fixed-variant": "#711299",
+                    "on-primary-container": "#dd8cff",
+                    "inverse-surface": "#2d3135",
+                    "surface-container": "#eceef3",
+                    "secondary-container": "#d593fe",
+                    "tertiary": "#37007f"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- Top Navigation (Shell Implementation) -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm h-20 flex justify-between items-center px-8 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Logo Banco de Choices" class="h-10 w-10 object-contain" data-alt="minimalist professional medical logo with purple geometric elements and clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD--U2YDA0DEfmXkA5Rw9GKy4OoN5_7K3qxXCPzHTO2PKxtR5Z_F0iBS3NcsiMZftgiOR5oE-LlMvPz-i0QHPupS_PMZIArEBJDf0XRXh8P_xdeLi9U-4TyOWpYDwMCaqs7Gphl-TcfODkk2nM3-NBhdkfGUxSDYl3SP2Vfxt4TK63YzEvAqTHTKXbrOivlpKBQcM4vs_ZcfJedJONPOz91056UuAJ4I97MDqa0WjKjfAbPTC-vuRMgUO5w7WdNH1exDUxLyzXIv1w"/>
+<span class="text-xl font-bold text-purple-800 tracking-tighter">Banco de Choices</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<div class="flex flex-col items-end">
+<span class="text-xs uppercase tracking-widest text-slate-500 font-bold">Tiempo Restante</span>
+<span class="text-2xl font-mono font-bold text-primary">01:42:15</span>
+</div>
+<div class="h-10 w-[1px] bg-outline-variant/30"></div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-sm font-bold text-on-surface">Simulacro Nacional</p>
+<p class="text-xs text-on-surface-variant">Neurología Clínica</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="mt-20 flex-1 flex flex-col md:flex-row max-w-[1600px] mx-auto w-full p-4 md:p-8 gap-8 overflow-hidden">
+<!-- Question Section -->
+<section class="flex-1 flex flex-col space-y-8 animate-fade-in">
+<!-- Breadcrumbs & Progress -->
+<div class="flex items-center justify-between">
+<nav class="flex items-center gap-2 text-sm font-medium text-slate-500">
+<span>Examen</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>Pregunta 42 de 100</span>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-sm font-medium">
+<span class="material-symbols-outlined text-sm">flag</span>
+<span>Marcar</span>
+</button>
+</div>
+</div>
+<!-- Question Area -->
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-3xl shadow-[0_32px_64px_rgba(73,0,102,0.04)]">
+<div class="inline-block px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">
+                    Caso Clínico • Media
+                </div>
+<h2 class="text-2xl md:text-3xl font-bold text-on-surface leading-tight tracking-tight mb-8">
+                    Un paciente de 64 años con antecedentes de fibrilación auricular presenta un cuadro súbito de hemiparesia izquierda, desviación de la mirada hacia la derecha y negligencia hemiespacial. ¿Cuál es el vaso sanguíneo más probablemente afectado?
+                </h2>
+<!-- Options List -->
+<div class="space-y-4">
+<!-- Option A -->
+<label class="group relative flex items-center p-5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-primary-fixed/30 border border-transparent hover:border-primary-fixed-dim transition-all duration-300">
+<input class="hidden peer" name="question-42" type="radio"/>
+<div class="w-8 h-8 flex items-center justify-center rounded-lg bg-white border border-outline-variant text-sm font-bold text-on-surface-variant peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">
+                            A
+                        </div>
+<span class="ml-4 text-lg font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Arteria cerebral anterior derecha</span>
+</label>
+<!-- Option B -->
+<label class="group relative flex items-center p-5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-primary-fixed/30 border border-transparent hover:border-primary-fixed-dim transition-all duration-300">
+<input class="hidden peer" name="question-42" type="radio"/>
+<div class="w-8 h-8 flex items-center justify-center rounded-lg bg-white border border-outline-variant text-sm font-bold text-on-surface-variant peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">
+                            B
+                        </div>
+<span class="ml-4 text-lg font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Arteria cerebral media derecha, segmento M1</span>
+</label>
+<!-- Option C -->
+<label class="group relative flex items-center p-5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-primary-fixed/30 border border-transparent hover:border-primary-fixed-dim transition-all duration-300">
+<input class="hidden peer" name="question-42" type="radio"/>
+<div class="w-8 h-8 flex items-center justify-center rounded-lg bg-white border border-outline-variant text-sm font-bold text-on-surface-variant peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">
+                            C
+                        </div>
+<span class="ml-4 text-lg font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Arteria coroidea anterior izquierda</span>
+</label>
+<!-- Option D -->
+<label class="group relative flex items-center p-5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-primary-fixed/30 border border-transparent hover:border-primary-fixed-dim transition-all duration-300">
+<input class="hidden peer" name="question-42" type="radio"/>
+<div class="w-8 h-8 flex items-center justify-center rounded-lg bg-white border border-outline-variant text-sm font-bold text-on-surface-variant peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">
+                            D
+                        </div>
+<span class="ml-4 text-lg font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Arteria basilar, bifurcación superior</span>
+</label>
+<!-- Option E -->
+<label class="group relative flex items-center p-5 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-primary-fixed/30 border border-transparent hover:border-primary-fixed-dim transition-all duration-300">
+<input class="hidden peer" name="question-42" type="radio"/>
+<div class="w-8 h-8 flex items-center justify-center rounded-lg bg-white border border-outline-variant text-sm font-bold text-on-surface-variant peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-colors">
+                            E
+                        </div>
+<span class="ml-4 text-lg font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Arteria cerebral posterior derecha</span>
+</label>
+</div>
+</div>
+</section>
+<!-- Right Sidebar (Data Grid & Notes) -->
+<aside class="w-full md:w-80 flex flex-col gap-6">
+<!-- Question Matrix -->
+<div class="bg-surface-container-low rounded-3xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Matriz de Preguntas</h3>
+<span class="text-xs font-bold text-primary">42 / 100</span>
+</div>
+<div class="grid grid-cols-5 gap-2 max-h-[300px] overflow-y-auto no-scrollbar">
+<!-- Generation of matrix items -->
+<div class="aspect-square flex items-center justify-center rounded-lg bg-primary text-white text-xs font-bold">01</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-primary text-white text-xs font-bold">02</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-primary text-white text-xs font-bold">03</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-primary-fixed text-on-primary-fixed-variant text-xs font-bold">...</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-white border-2 border-primary text-primary text-xs font-black">42</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">43</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">44</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">45</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">46</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">47</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">48</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">49</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">50</div>
+<!-- Filler -->
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">51</div>
+<div class="aspect-square flex items-center justify-center rounded-lg bg-surface-container-high text-on-surface-variant text-xs font-medium">52</div>
+</div>
+</div>
+<!-- Quick Notes -->
+<div class="bg-surface-container-low rounded-3xl p-6 flex-1 flex flex-col">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-xl">edit_note</span>
+<h3 class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Notas Rápidas</h3>
+</div>
+<textarea class="flex-1 w-full bg-white/50 rounded-2xl border-none focus:ring-2 focus:ring-primary/20 text-sm p-4 resize-none placeholder:text-slate-400" placeholder="Escribe aquí tus apuntes para esta pregunta..."></textarea>
+</div>
+<!-- Stats Chip Bento -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-primary-container p-4 rounded-2xl flex flex-col">
+<span class="text-[10px] text-on-primary-container/70 font-bold uppercase tracking-widest">Aciertos</span>
+<span class="text-xl font-bold text-on-primary-container">34</span>
+</div>
+<div class="bg-on-tertiary-fixed-variant p-4 rounded-2xl flex flex-col">
+<span class="text-[10px] text-on-tertiary-container/70 font-bold uppercase tracking-widest">Promedio</span>
+<span class="text-xl font-bold text-white">82%</span>
+</div>
+</div>
+</aside>
+</main>
+<!-- Bottom Navigation Bar (Transactional Focus) -->
+<footer class="sticky bottom-0 w-full bg-white border-t border-slate-100 px-8 py-5 flex items-center justify-between z-50">
+<button class="flex items-center gap-2 px-6 py-3 rounded-xl border border-outline-variant text-slate-600 font-bold hover:bg-slate-50 transition-all active:scale-95">
+<span class="material-symbols-outlined">arrow_back</span>
+<span>Anterior</span>
+</button>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex flex-col items-center">
+<div class="h-1.5 w-48 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[42%]"></div>
+</div>
+<span class="text-[10px] mt-1 text-slate-500 font-medium">PROGRESO DEL EXAMEN</span>
+</div>
+</div>
+<button class="flex items-center gap-2 px-8 py-3 rounded-xl bg-primary text-white font-bold shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all active:scale-95">
+<span>Siguiente Pregunta</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</footer>
+</body></html>

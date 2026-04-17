@@ -4,11 +4,15 @@
  */
 body.auth-login-exemplo {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
-  background: #f7f9fe;
+  background-color: var(--auth-public-shell-bg, #f0f2f7);
+  background-image: var(
+    --auth-public-shell-image,
+    linear-gradient(165deg, #faf8ff 0%, #f0f2f7 50%, #ebe8f5 100%)
+  );
   color: #181c20;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -37,13 +41,18 @@ body.auth-login-exemplo {
   overflow: hidden;
   pointer-events: none;
   z-index: 0;
+  background-color: var(--auth-public-shell-bg, #f0f2f7);
+  background-image: var(
+    --auth-public-shell-image,
+    linear-gradient(165deg, #faf8ff 0%, #f0f2f7 50%, #ebe8f5 100%)
+  );
 }
 
 .auth-login-bg-blob {
   position: absolute;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.55;
+  opacity: 0.48;
 }
 
 .auth-login-bg-blob--1 {
@@ -51,7 +60,7 @@ body.auth-login-exemplo {
   left: -10%;
   width: 40%;
   height: 40%;
-  background: rgba(235, 178, 255, 0.45);
+  background: rgba(106, 3, 146, 0.28);
 }
 
 .auth-login-bg-blob--2 {
@@ -59,7 +68,7 @@ body.auth-login-exemplo {
   right: -5%;
   width: 30%;
   height: 30%;
-  background: rgba(244, 217, 255, 0.5);
+  background: rgba(124, 58, 237, 0.24);
   filter: blur(100px);
 }
 
@@ -154,6 +163,16 @@ body.auth-login-exemplo {
   .auth-login-card {
     padding: 2.5rem 2.25rem;
   }
+}
+
+.auth-login-card-title {
+  font-family: "Poppins", "Inter", system-ui, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #181c20;
+  margin: 0 0 1.5rem;
+  text-align: center;
+  line-height: 1.25;
 }
 
 .auth-login-alert {
@@ -290,6 +309,17 @@ body.auth-login-exemplo {
   box-shadow: 0 0 0 2px #6a0392;
 }
 
+.auth-login-input[readonly] {
+  background: #eceef3;
+  color: #4e4351;
+  cursor: default;
+}
+
+.auth-login-input[readonly]:focus {
+  background: #eceef3;
+  box-shadow: none;
+}
+
 .auth-login-check {
   display: flex;
   align-items: center;
@@ -359,68 +389,9 @@ body.auth-login-exemplo {
   color: #fff;
 }
 
-.auth-login-divider {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(210, 193, 211, 0.35);
-  text-align: center;
-}
+/* .auth-login-divider: ver auth-footer-shared.css */
 
-.auth-login-divider p {
-  margin: 0 0 0.5rem;
-  font-size: 0.875rem;
-  color: #4e4351;
-}
-
-.auth-login-divider a {
-  font-weight: 800;
-  color: #490066;
-  text-decoration: none;
-}
-
-.auth-login-divider a:hover {
-  text-decoration: underline;
-}
-
-/* Rodapé */
-.auth-login-footer {
-  position: relative;
-  z-index: 1;
-  background: #f8fafc;
-  border-top: 1px solid #e2e8f0;
-  padding: 2.5rem 1.25rem;
-  margin-top: auto;
-}
-
-.auth-login-footer-inner {
-  max-width: 72rem;
-  margin: 0 auto;
-}
-
-.auth-login-footer a {
-  font-size: 0.875rem;
-  color: #64748b;
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-.auth-login-footer a:hover {
-  color: #5b21b6;
-}
-
-.auth-login-footer-copy {
-  font-size: 0.75rem;
-  color: #94a3b8;
-  margin: 0;
-  text-align: right;
-}
-
-@media (max-width: 767.98px) {
-  .auth-login-footer-copy {
-    text-align: left;
-    margin-top: 1rem;
-  }
-}
+/* Rodapé auth: ver auth-footer-shared.css */
 
 /* Seletor de idioma: não herdar regras agressivas de outras páginas */
 .auth-login-topbar .navbar-actions--landing {

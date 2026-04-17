@@ -12,7 +12,7 @@ class TestUserSeeder extends Seeder
      * Usuário para login manual / QA (mesmas regras de senha do cadastro).
      *
      * E-mail: teste@bancodechoices.local
-     * Senha: Teste123!
+     * Senha: ChoicesLocal2026!
      */
     public function run(): void
     {
@@ -22,7 +22,7 @@ class TestUserSeeder extends Seeder
             ['email' => $email],
             [
                 'nome' => 'Usuário Teste',
-                'senha' => Hash::make('Teste123!'),
+                'senha' => Hash::make('ChoicesLocal2026!'),
             ]
         );
 

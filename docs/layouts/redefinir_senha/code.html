@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Redefinir Senha - Banco de Choices</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#5a00c6",
+                        "on-secondary-fixed-variant": "#66288d",
+                        "surface-dim": "#d8dadf",
+                        "secondary-fixed": "#f4d9ff",
+                        "on-error-container": "#93000a",
+                        "outline": "#807382",
+                        "tertiary-fixed-dim": "#d2bbff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#602187",
+                        "background": "#f7f9fe",
+                        "on-background": "#181c20",
+                        "secondary-fixed-dim": "#e4b5ff",
+                        "error": "#ba1a1a",
+                        "secondary": "#8042a7",
+                        "tertiary-fixed": "#eaddff",
+                        "outline-variant": "#d2c1d3",
+                        "on-surface-variant": "#4e4351",
+                        "inverse-primary": "#ebb2ff",
+                        "surface": "#f7f9fe",
+                        "surface-tint": "#8c34b3",
+                        "on-tertiary-fixed": "#25005a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#f8d8ff",
+                        "inverse-on-surface": "#eff1f6",
+                        "on-surface": "#181c20",
+                        "on-secondary-fixed": "#2f004b",
+                        "surface-bright": "#f7f9fe",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#5200b6",
+                        "on-primary-fixed": "#320047",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f9",
+                        "on-tertiary-container": "#bc9bff",
+                        "surface-variant": "#e0e2e7",
+                        "primary-container": "#6a0392",
+                        "primary": "#490066",
+                        "surface-container-high": "#e6e8ed",
+                        "surface-container-highest": "#e0e2e7",
+                        "primary-fixed-dim": "#ebb2ff",
+                        "on-primary-fixed-variant": "#711299",
+                        "on-primary-container": "#dd8cff",
+                        "inverse-surface": "#2d3135",
+                        "surface-container": "#eceef3",
+                        "secondary-container": "#d593fe",
+                        "tertiary": "#37007f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .bg-mesh {
+            background-color: #f7f9fe;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(106, 3, 146, 0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(106, 3, 146, 0.08) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-mesh min-h-screen flex items-center justify-center p-4">
+<!-- Main Container - Focused Transactional View (Shell Suppressed per Rules) -->
+<main class="w-full max-w-[480px]">
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_32px_64px_-12px_rgba(24,28,32,0.06)] overflow-hidden">
+<!-- Header Section with Logo -->
+<div class="px-8 pt-10 pb-6 text-center">
+<div class="inline-flex items-center justify-center mb-8">
+<img alt="Logo" class="h-16 w-auto" data-alt="Minimalist modern medical shield logo with stylized DNA helix in deep purple and violet tones on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6L1Aj_rnocRTW2_OsK0NbxievICKPJWxnUVMhPzkErw5F1MYzuowrqv-lplYNXyxzREW75SV2bUQQDLJ2ic591OeW9icXeyfzQ2sgtR7UY7jvHI7vqYDa_Xs-ZuP0XxUOnlboVGB-Y3R8eUQX9NR-MdybPMDgPLcXMHenXTZVuaneF_CB68tpOxomXsPNA1F7anSq72J3HLzFc34nqvdxx_HBIua_yov_mF8Jq25bqu34kxEEJpr9r5PfcOFXNPPBjPzLqC18fEU"/>
+</div>
+<h1 class="text-3xl font-extrabold tracking-tight text-primary mb-2">Redefinir Senha</h1>
+<p class="text-on-surface-variant text-sm font-medium">Crie uma senha forte para proteger seu acesso acadêmico.</p>
+</div>
+<!-- Form Section -->
+<form class="px-8 pb-10 space-y-6">
+<!-- Password Fields -->
+<div class="space-y-4">
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-on-surface ml-1" for="new-password">Nova Senha</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">lock</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-highest rounded-xl border-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline-variant outline-none" id="new-password" placeholder="Digite sua nova senha" type="password"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-on-surface ml-1" for="confirm-password">Confirmar Nova Senha</label>
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">verified_user</span>
+<input class="w-full pl-12 pr-4 py-3.5 bg-surface-container-highest rounded-xl border-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all text-on-surface placeholder:text-outline-variant outline-none" id="confirm-password" placeholder="Repita a nova senha" type="password"/>
+</div>
+</div>
+</div>
+<!-- Security Checklist (Editorial Layout) -->
+<div class="bg-surface-container-low p-5 rounded-xl space-y-3">
+<h3 class="text-xs font-bold uppercase tracking-widest text-outline mb-1">Requisitos de Segurança</h3>
+<div class="grid grid-cols-1 gap-y-2.5">
+<div class="flex items-center gap-3">
+<div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-highest text-outline-variant">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">Mínimo de 8 caracteres</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-secondary-container/20 text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="text-xs font-semibold text-on-surface">Uma letra maiúscula</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-highest text-outline-variant">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">Um caractere especial (@, #, $)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-surface-container-highest text-outline-variant">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-xs font-medium text-on-surface-variant">Ao menos um número</span>
+</div>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="pt-2">
+<button class="w-full bg-primary-container text-white font-bold py-4 rounded-xl shadow-lg shadow-primary-container/20 hover:scale-[0.99] active:scale-[0.97] transition-all flex items-center justify-center gap-2 group" type="submit">
+<span>Redefinir Senha</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="mt-6 text-center">
+<a class="text-sm font-semibold text-primary hover:text-on-primary-fixed-variant transition-colors" href="#">Voltar ao Login</a>
+</div>
+</div>
+</form>
+</div>
+<!-- Footer Micro-copy (Suppressed Shell) -->
+<footer class="mt-8 text-center px-4">
+<p class="text-xs text-outline leading-relaxed">
+                © 2024 Banco de Choices. Formação médica de precisão.<br/>
+                Sua segurança é nossa prioridade. Todos os dados são criptografados.
+            </p>
+</footer>
+</main>
+<!-- Visual Polish: Atmospheric Depth Elements -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
+<div class="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-primary-container/5 blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-secondary-container/10 blur-[120px]"></div>
+</div>
+</body></html>

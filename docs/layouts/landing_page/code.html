@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5a00c6",
+                    "on-secondary-fixed-variant": "#66288d",
+                    "surface-dim": "#d8dadf",
+                    "secondary-fixed": "#f4d9ff",
+                    "on-error-container": "#93000a",
+                    "outline": "#807382",
+                    "tertiary-fixed-dim": "#d2bbff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#602187",
+                    "background": "#f7f9fe",
+                    "on-background": "#181c20",
+                    "secondary-fixed-dim": "#e4b5ff",
+                    "error": "#ba1a1a",
+                    "secondary": "#8042a7",
+                    "tertiary-fixed": "#eaddff",
+                    "outline-variant": "#d2c1d3",
+                    "on-surface-variant": "#4e4351",
+                    "inverse-primary": "#ebb2ff",
+                    "surface": "#f7f9fe",
+                    "surface-tint": "#8c34b3",
+                    "on-tertiary-fixed": "#25005a",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#f8d8ff",
+                    "inverse-on-surface": "#eff1f6",
+                    "on-surface": "#181c20",
+                    "on-secondary-fixed": "#2f004b",
+                    "surface-bright": "#f7f9fe",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#5200b6",
+                    "on-primary-fixed": "#320047",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f2f4f9",
+                    "on-tertiary-container": "#bc9bff",
+                    "surface-variant": "#e0e2e7",
+                    "primary-container": "#6a0392",
+                    "primary": "#490066",
+                    "surface-container-high": "#e6e8ed",
+                    "surface-container-highest": "#e0e2e7",
+                    "primary-fixed-dim": "#ebb2ff",
+                    "on-primary-fixed-variant": "#711299",
+                    "on-primary-container": "#dd8cff",
+                    "inverse-surface": "#2d3135",
+                    "surface-container": "#eceef3",
+                    "secondary-container": "#d593fe",
+                    "tertiary": "#37007f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Poppins", "Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none flex justify-between items-center px-8 h-20 max-w-full mx-auto">
+<div class="flex items-center gap-2">
+<img alt="Logo Banco de Choices" class="h-10 w-auto" data-alt="minimalist and elegant logo for a medical education platform featuring a stylized heartbeat and a book icon in purple tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBidhEO86l06g6mqtyYsoKeeI44iBG-7sHPrRfL3C82wPv-GHzx-bi_Bqx9hD9pZYomk6aYCAHU2eGstZbEEPqCSxgQoblwbeGNy-uAxvmPfBwK_KFGnCnCwy0--T9BTBjpVWH6vVKZcTaJfiyTFVApt_1uVey0qK3OOGgRSNex2tk2payiLhh3Vv-HKt50gJao3lHE9BQuT_Zn9dzQzGHf6C0Iyz64qV3YZbPFKolsAqPIFrkd5dNoVUhj8f1AoV_1zdS82AZ940M"/>
+<span class="text-2xl font-black tracking-tighter text-purple-900 dark:text-purple-100 font-headline">Banco de Choices</span>
+</div>
+<div class="hidden md:flex items-center space-y-0 space-x-8">
+<a class="text-purple-700 dark:text-purple-400 font-bold border-b-2 border-purple-600 transition-all duration-300" href="#">Beneficios</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-500 dark:hover:text-purple-300 transition-colors" href="#">Planes</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-purple-500 dark:hover:text-purple-300 transition-colors" href="#">Preguntas Frecuentes</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-purple-700 dark:text-purple-400 font-medium hover:text-purple-500 transition-colors px-4 py-2">Ingresar</button>
+<button class="bg-primary-container text-white px-6 py-2.5 rounded-lg font-bold shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all">Registrarse</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Editorial Authority -->
+<section class="relative min-h-[921px] flex items-center px-8 lg:px-24 overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<div class="w-full h-full bg-gradient-to-l from-primary/30 to-transparent"></div>
+</div>
+<div class="grid lg:grid-cols-2 gap-16 items-center w-full max-w-7xl mx-auto">
+<div class="z-10 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Padrão Ouro em Residência
+                    </div>
+<h1 class="font-headline text-5xl lg:text-7xl font-black text-primary leading-[1.1] tracking-tight">
+                        Domine a Medicina com Questões Comentadas
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed">
+                        Prepare-se com a plataforma que une precisão clínica e análise de dados. Milhares de questões comentadas pelos melhores especialistas do país.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-primary/40 transition-all transform active:scale-95">
+                            Começar agora
+                        </button>
+<button class="border border-outline-variant text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-low transition-all">
+                            Ver Planos
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/10 blur-3xl rounded-full group-hover:bg-primary-container/20 transition-all duration-700"></div>
+<div class="relative glass-card p-4 rounded-[2rem] shadow-2xl">
+<img alt="Abstract Medical Visualization" class="rounded-[1.5rem] w-full h-[500px] object-cover" data-alt="abstract artistic 3D visualization of neural networks and glowing medical data points in deep purple and soft blue cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeUnabwx_oacvn4bzAIMgJBvkp2ILXbgLxOY-gn6rjd-M27uBE4xgqaAfUW-Z3aiawzVG3yDkI4OsmDmMTsIIQ-TdsR3CB2-vINdhEClQqLEG9BT4fNl6D9fVpK7AznbbNGcarGY5cQrYbsBETosWT_bHmThe3dpONXfBgxtmVMkJMuJL5z2CFM8QuIcfXhjmuopX4bv6oICqiRyk4ezRMf6-uTyyodiCYz94whqKB9gRKxd--YfGgR95_HYiaZceZaRiw7MsiQ5w"/>
+<!-- Floating Glass Metric -->
+<div class="absolute -bottom-6 -left-6 glass-card p-6 rounded-2xl shadow-xl border border-white/20">
+<div class="flex items-center gap-4">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">query_stats</span>
+</div>
+<div>
+<p class="text-xs text-on-surface-variant font-bold uppercase tracking-tighter">Taxa de Aprovação</p>
+<p class="text-2xl font-black text-primary">89.4%</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ferramentas de Precisão: Bento Grid Layout -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Ferramentas de Precisão</h2>
+<div class="h-1 w-24 bg-primary-container rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature 1 -->
+<div class="md:col-span-2 glass-card p-8 rounded-3xl group hover:bg-white transition-all duration-500">
+<div class="flex flex-col md:flex-row gap-8 items-center">
+<div class="space-y-4 flex-1">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="database">database</span>
+<h3 class="text-2xl font-bold text-on-surface">Banco de Questões</h3>
+<p class="text-on-surface-variant leading-relaxed">Acesso ilimitado a mais de 50.000 questões atualizadas, com filtros avançados por especialidade, instituição e nível de dificuldade.</p>
+<ul class="space-y-2">
+<li class="flex items-center gap-2 text-sm font-medium text-primary">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                                        Comentários em Vídeo e Texto
+                                    </li>
+<li class="flex items-center gap-2 text-sm font-medium text-primary">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                                        Referências Bibliográficas Atualizadas
+                                    </li>
+</ul>
+</div>
+<div class="w-full md:w-1/2 aspect-video bg-surface-container-highest rounded-2xl overflow-hidden">
+<img alt="Dashboard Interface" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="high-tech digital dashboard interface showing medical charts and progress bars in a clean professional layout with purple accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIQI4Xpr5gWlyJF1IU2cGGES6TAr5WSw-XtFak7Ld63byMQVU101nfxBNojrZ_Ex3wH7FBDWBsEcDhLO4Y8eJ0WPE8RLFbA9V35-HVcKUyH60XFy9wlAu9s2ymCPZ9XF5NIUzNVZy_Am3TKbLjWKKW43KXfTTnVVy_1kBJYJ8lELSq19XQMLkmvlYfvR220CD0_k-E_OHHan7ogD2GwZxIjFTxu4czBOMBuLhmLfX1CwFFkazGivwVXexWFz3odqDrsbq6GFacPLU"/>
+</div>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-primary text-on-primary p-8 rounded-3xl flex flex-col justify-between group overflow-hidden relative">
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-primary-container/20 rounded-full blur-3xl group-hover:bg-primary-container/40 transition-all"></div>
+<span class="material-symbols-outlined text-4xl mb-6" data-icon="clinical_notes">clinical_notes</span>
+<div>
+<h3 class="text-2xl font-bold mb-2">Simulacros Personalizados</h3>
+<p class="text-on-primary-container leading-relaxed">Crie simulados baseados no seu tempo disponível e focados nas suas maiores dificuldades.</p>
+</div>
+<button class="mt-8 flex items-center gap-2 text-sm font-bold group-hover:translate-x-2 transition-transform">
+                            EXPLORAR AGORA <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Feature 3 -->
+<div class="md:col-span-3 glass-card p-8 rounded-3xl flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/3">
+<img alt="Data Analytics" class="rounded-2xl shadow-lg" data-alt="close-up of complex data visualization charts on a modern tablet screen with shallow depth of field and professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwJLuBEb6Yk6CC3oPFOBIbdawEzLGs3NhxWJhSZuQUagxV55YSst9UAkcHY0el9lIRKyKceX8aUs8jfCqAtZO8c898Ih5lzDtJgUBSQZqSr8_bDmSlN6K3r_MBEKZYxlfCRK1vByzxXjR-ULlVcJ2YvPnVM7aCs8FOl9O--o0cgxGkaDllaQ7c9Qtr5aqiGbZO3DMqrJW6vAzqiYFfasQb772o-Wti9F6QB_bwikh-WT2J7ZUakOQmpydCkdO6FmNaBvj3rs7O8ls"/>
+</div>
+<div class="flex-1 space-y-6">
+<div class="inline-flex p-3 bg-secondary-fixed rounded-xl">
+<span class="material-symbols-outlined text-on-secondary-fixed-variant" data-icon="analytics">analytics</span>
+</div>
+<h3 class="text-3xl font-bold text-on-surface">Estadísticas de Performance</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">Identifique exatamente onde você precisa melhorar. Nossa IA analisa seu histórico e sugere os temas que mais caem nas provas que você deseja prestar.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-4 bg-surface-container rounded-xl">
+<p class="text-2xl font-black text-primary">95%</p>
+<p class="text-xs font-bold text-outline uppercase tracking-tighter">Precisão</p>
+</div>
+<div class="p-4 bg-surface-container rounded-xl">
+<p class="text-2xl font-black text-primary">24/7</p>
+<p class="text-xs font-bold text-outline uppercase tracking-tighter">Monitoramento</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Investimento no seu Futuro: Pricing -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto text-center mb-20">
+<h2 class="font-headline text-4xl lg:text-5xl font-black text-primary mb-6">Investimento no seu Futuro</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Escolha o plano que melhor se adapta à sua jornada rumo à residência médica dos seus sonhos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+<!-- Monthly -->
+<div class="surface-container-low p-10 rounded-[2.5rem] flex flex-col items-center group hover:scale-[1.02] transition-all duration-500">
+<span class="text-on-surface-variant font-bold uppercase tracking-widest text-sm mb-4">Mensal</span>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-2xl font-bold text-on-surface">R$</span>
+<span class="text-6xl font-black text-primary">297</span>
+<span class="text-on-surface-variant font-medium">/mês</span>
+</div>
+<ul class="w-full space-y-4 mb-10">
+<li class="flex items-center gap-3 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-primary text-xl">check</span> Banco completo
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-primary text-xl">check</span> Simulados ilimitados
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-primary text-xl">check</span> Suporte Premium
+                        </li>
+</ul>
+<button class="w-full py-4 border-2 border-primary-container text-primary font-black rounded-2xl hover:bg-primary-container hover:text-white transition-all">
+                        Selecionar Plano
+                    </button>
+</div>
+<!-- Annual (Featured) -->
+<div class="relative bg-primary p-10 rounded-[2.5rem] flex flex-col items-center shadow-2xl shadow-primary/30 transform scale-110 z-10">
+<div class="absolute -top-5 bg-secondary-container text-on-secondary-container px-6 py-1.5 rounded-full font-black text-xs uppercase tracking-widest shadow-xl">
+                        MAIS POPULAR
+                    </div>
+<span class="text-on-primary-container font-bold uppercase tracking-widest text-sm mb-4">Anual</span>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-2xl font-bold text-white">R$</span>
+<span class="text-6xl font-black text-white">197</span>
+<span class="text-on-primary-container font-medium">/mês</span>
+</div>
+<ul class="w-full space-y-4 mb-10">
+<li class="flex items-center gap-3 text-white font-medium">
+<span class="material-symbols-outlined text-on-primary-container text-xl" style="font-variation-settings: 'FILL' 1;">star</span> Tudo do Mensal
+                        </li>
+<li class="flex items-center gap-3 text-white font-medium">
+<span class="material-symbols-outlined text-on-primary-container text-xl">check</span> Mentoria Individual
+                        </li>
+<li class="flex items-center gap-3 text-white font-medium">
+<span class="material-symbols-outlined text-on-primary-container text-xl">check</span> Apostilas Digitais
+                        </li>
+<li class="flex items-center gap-3 text-white font-medium">
+<span class="material-symbols-outlined text-on-primary-container text-xl">check</span> 35% de Economia
+                        </li>
+</ul>
+<button class="w-full py-4 bg-white text-primary font-black rounded-2xl hover:bg-secondary-fixed transition-all shadow-lg">
+                        Começar Agora
+                    </button>
+</div>
+<!-- Semestral -->
+<div class="surface-container-low p-10 rounded-[2.5rem] flex flex-col items-center group hover:scale-[1.02] transition-all duration-500">
+<span class="text-on-surface-variant font-bold uppercase tracking-widest text-sm mb-4">Semestral</span>
+<div class="flex items-baseline gap-1 mb-8">
+<span class="text-2xl font-bold text-on-surface">R$</span>
+<span class="text-6xl font-black text-primary">247</span>
+<span class="text-on-surface-variant font-medium">/mês</span>
+</div>
+<ul class="w-full space-y-4 mb-10">
+<li class="flex items-center gap-3 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-primary text-xl">check</span> Banco completo
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-primary text-xl">check</span> Simulados ilimitados
+                        </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-primary text-xl">check</span> 15% de Economia
+                        </li>
+</ul>
+<button class="w-full py-4 border-2 border-primary-container text-primary font-black rounded-2xl hover:bg-primary-container hover:text-white transition-all">
+                        Selecionar Plano
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 px-8 border-t border-slate-100 dark:border-slate-900 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<img alt="Logo" class="h-8" data-alt="simplified corporate logo icon for medical software in purple colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpJBCMq9ku4VR6jjl7f-l9yekFqAPAgl6IDWZqf243MAByzGB5ILdvOhnei-afU7oEnWYyCelc-5m0Qn-iE68bzOVd7GwmAFwD9YZQC4mvQ-bLwy6FZhWQde8cthjHOfXXPuyC6rudqnCsOhNkExg68MwsbwRgsjqvifgebs1dmWT1I1eh6kPzfl7jeEndSKPJMpvc4KR6qTZSjgq9fwXfvhnHStiMxaEk1qL2vCp24KVNYDaNTbWkNvEbmDNlpbDOaQmy8XEVFNo"/>
+<span class="text-lg font-bold text-purple-900 dark:text-purple-100">Banco de Choices</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                    © 2024 Banco de Choices. Formación médica de precisión.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-purple-900 dark:text-purple-100 mb-4">Plataforma</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors text-sm" href="#">Privacidad</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors text-sm" href="#">Términos</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-purple-900 dark:text-purple-100 mb-4">Suporte</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors text-sm" href="#">Contacto</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-purple-800 dark:hover:text-purple-200 transition-colors text-sm" href="#">Ayuda</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-purple-900 dark:text-purple-100 mb-4">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-white dark:bg-slate-900 border-none rounded-lg px-4 py-2 text-sm w-full focus:ring-2 focus:ring-primary" placeholder="Seu e-mail" type="email"/>
+<button class="bg-primary text-white p-2 rounded-lg">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

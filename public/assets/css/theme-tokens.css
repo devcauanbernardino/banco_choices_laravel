@@ -18,6 +18,15 @@
   --sidebar-active: #7c3aed;
   --sidebar-active-glow: rgba(124, 58, 237, 0.35);
   --bc-purple: #6a0392;
+  /*
+   * Fundo telas auth públicas (login, esqueci senha): alinhado a --app-bg + primário/violeta.
+   * Camadas: radiais suaves por cima do degradê linear (último = base).
+   */
+  --auth-public-shell-bg: #f0f2f7;
+  --auth-public-shell-image:
+    radial-gradient(ellipse 115% 78% at 8% -5%, rgba(106, 3, 146, 0.13) 0%, transparent 56%),
+    radial-gradient(ellipse 100% 72% at 96% 102%, rgba(124, 58, 237, 0.1) 0%, transparent 52%),
+    linear-gradient(165deg, #faf8ff 0%, #f0f2f7 40%, #ebe8f5 75%, #e6e1f4 100%);
 }
 
 [data-theme="dark"] {

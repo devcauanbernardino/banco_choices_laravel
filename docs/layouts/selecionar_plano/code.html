@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Banco de Choices - Seleccionar Plano</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#5a00c6",
+                        "on-secondary-fixed-variant": "#66288d",
+                        "surface-dim": "#d8dadf",
+                        "secondary-fixed": "#f4d9ff",
+                        "on-error-container": "#93000a",
+                        "outline": "#807382",
+                        "tertiary-fixed-dim": "#d2bbff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#602187",
+                        "background": "#f7f9fe",
+                        "on-background": "#181c20",
+                        "secondary-fixed-dim": "#e4b5ff",
+                        "error": "#ba1a1a",
+                        "secondary": "#8042a7",
+                        "tertiary-fixed": "#eaddff",
+                        "outline-variant": "#d2c1d3",
+                        "on-surface-variant": "#4e4351",
+                        "inverse-primary": "#ebb2ff",
+                        "surface": "#f7f9fe",
+                        "surface-tint": "#8c34b3",
+                        "on-tertiary-fixed": "#25005a",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#f8d8ff",
+                        "inverse-on-surface": "#eff1f6",
+                        "on-surface": "#181c20",
+                        "on-secondary-fixed": "#2f004b",
+                        "surface-bright": "#f7f9fe",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#5200b6",
+                        "on-primary-fixed": "#320047",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f9",
+                        "on-tertiary-container": "#bc9bff",
+                        "surface-variant": "#e0e2e7",
+                        "primary-container": "#6a0392",
+                        "primary": "#490066",
+                        "surface-container-high": "#e6e8ed",
+                        "surface-container-highest": "#e0e2e7",
+                        "primary-fixed-dim": "#ebb2ff",
+                        "on-primary-fixed-variant": "#711299",
+                        "on-primary-container": "#dd8cff",
+                        "inverse-surface": "#2d3135",
+                        "surface-container": "#eceef3",
+                        "secondary-container": "#d593fe",
+                        "tertiary": "#37007f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(73, 0, 102, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Suppressed for focused Signup flow as per UX Goal - prioritizing content canvas) -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm h-20 flex justify-between items-center px-8">
+<div class="flex items-center gap-3">
+<img alt="Logo" class="h-10 w-10 object-contain" data-alt="Abstract medical logo with geometric shapes in deep purple and soft violet tones, clean and professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACRobzuQBzsv62VAMqtrtYJUjvR5tPRmkx_74CtaZysnkiAUX0A66HmosQUKGGI1RaK-pfmc7S-tsdRK1-QBonVLGz3E5c1-Bd95cm_HEJuqtGRAcjpAVZOeJqdJJuedmN42666j-tuMr6dbqCZLDhv20vXYcyn8RUwcwqpxjrZbHhU6DXe2nfTeF22oRkqrnCB1KCK5OxG5hS7lREXZ_UDx0S1HZNYu8ZQvGcvkDINi_0xA0Ys-Wn_Tir-fXdbVvMXCvx2DPej-4"/>
+<span class="text-2xl font-black tracking-tighter text-purple-900">Banco de Choices</span>
+</div>
+<div class="hidden md:flex gap-8">
+<span class="text-slate-400 font-medium">Paso 01: Perfil</span>
+<span class="text-purple-700 font-bold border-b-2 border-purple-600">Paso 02: Plan</span>
+<span class="text-slate-400 font-medium">Paso 03: Pago</span>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<div class="text-center mb-20">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-primary tracking-tight mb-6">
+                Invest in <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Clinical Excellence</span>
+</h1>
+<p class="text-on-surface-variant text-xl max-w-2xl mx-auto leading-relaxed">
+                Únete a la plataforma líder de formación médica de precisión. Elige el plan que mejor se adapte a tu ritmo de estudio.
+            </p>
+</div>
+<!-- Pricing Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+<!-- Monthly Plan -->
+<div class="surface-container-low p-8 rounded-xl flex flex-col h-full hover:bg-surface-container-high transition-all duration-300">
+<div class="mb-8">
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-2">Mensual</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-extrabold text-on-surface">$149</span>
+<span class="text-on-surface-variant">/mo</span>
+</div>
+</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-on-surface-variant">Acceso total a Banco de Preguntas</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-on-surface-variant">Simulacros ilimitados</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-on-surface-variant">Estadísticas básicas</span>
+</li>
+</ul>
+<button class="w-full py-4 rounded-lg bg-surface-container-highest text-primary font-bold hover:bg-outline-variant transition-colors">
+                    Seleccionar Plan
+                </button>
+</div>
+<!-- Annual Plan (Most Popular) -->
+<div class="relative group">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest z-10">
+                    Most Popular
+                </div>
+<div class="bg-primary text-on-primary p-10 rounded-xl flex flex-col h-full editorial-shadow transform md:scale-105 relative overflow-hidden">
+<!-- Subtle Glow Texture -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full blur-[100px] opacity-40 -mr-32 -mt-32"></div>
+<div class="mb-8 relative z-10">
+<h3 class="font-headline text-2xl font-bold mb-2">Anual</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-5xl font-extrabold">$99</span>
+<span class="opacity-80">/mo</span>
+</div>
+<p class="mt-2 text-primary-fixed-dim text-sm font-medium">Facturado anualmente ($1,188)</p>
+</div>
+<ul class="space-y-4 mb-12 flex-grow relative z-10">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Todo lo del Plan Semestral</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Mentoría 1-a-1 mensual</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Predictor de Examen IA</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Acceso Offline</span>
+</li>
+</ul>
+<button class="w-full py-5 rounded-lg bg-white text-primary font-bold text-lg hover:scale-[0.98] transition-all relative z-10">
+                        Comenzar Ahora
+                    </button>
+</div>
+</div>
+<!-- Semester Plan -->
+<div class="surface-container-low p-8 rounded-xl flex flex-col h-full hover:bg-surface-container-high transition-all duration-300">
+<div class="mb-8">
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-2">Semestral</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-extrabold text-on-surface">$125</span>
+<span class="text-on-surface-variant">/mo</span>
+</div>
+</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-on-surface-variant">Todo lo del Plan Mensual</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-on-surface-variant">Análisis de rendimiento avanzado</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-on-surface-variant">Prioridad en soporte 24/7</span>
+</li>
+</ul>
+<button class="w-full py-4 rounded-lg bg-surface-container-highest text-primary font-bold hover:bg-outline-variant transition-colors">
+                    Seleccionar Plan
+                </button>
+</div>
+</div>
+<!-- Trust & Social Proof Section -->
+<div class="mb-24">
+<div class="text-center mb-12">
+<h2 class="font-headline text-3xl font-bold text-on-surface">Validado por la Comunidad Médica</h2>
+</div>
+<!-- Testimonials Asymmetric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+<div class="surface-container-highest p-8 rounded-xl editorial-shadow">
+<p class="text-lg italic text-on-surface mb-6 leading-relaxed">
+                        "La precisión de los simulacros y el análisis de datos me permitieron identificar mis debilidades en farmacología antes del examen real. Banco de Choices fue clave en mi residencia."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-slate-200">
+<img alt="Dr. Mateo" data-alt="Professional portrait of a young male doctor in a white coat with a friendly expression, soft hospital lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1EPJuURZ535N1C51sJClCZUBSzx0cB7NtcNLVH-XOKHddFPh0CqsTq1yZkmjXhoX_54-yXPQ1wifHL9YdFUGB71pITEd5fYI0md1Zy7PYyZ0z8KhUzlhuyWhTgDuM2h7QMIl9zJOb-IknGLDEcPqOvhgN8KnYgp6t_dDLHcQdl5v7uUXoMWNt2kdi1JN6fsbVmp4mMt5VNxdiiVYFhznybhQFirizX-uKGNWqGE-mmEiJlyUlHUX7ZlxTF6oMn4B4bJWv4J5QxdA"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Dr. Mateo Rodríguez</p>
+<p class="text-sm text-on-surface-variant">Residente de Cardiología</p>
+</div>
+</div>
+</div>
+<div class="surface-container-low p-8 rounded-xl mt-8">
+<p class="text-lg italic text-on-surface mb-6 leading-relaxed">
+                        "El plan anual no solo me ahorró dinero, sino que la mentoría personalizada cambió por completo mi forma de estudiar casos clínicos complejos."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-slate-200">
+<img alt="Dra. Elena" data-alt="Portrait of a female medical professional in scrubs with a stethoscope, bright natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt4Po4-nt65q5mG-VjBsxjjzA-Ym8vDabSKmwLaOsA867Qlq1-UDmJNGZogHXthUz3i5EQNzEbkKKThKx0M9YK1HXal5pdGlq7IU-xXyWmb3Z4fwlQ9IgR2OzmJSbBsLNz8lZRC4kpSRpPtjziUymqpRbKBfJMrgUzfpcSQzV-le4lRnGFWgZYTSPNEUbAGVQJGgkLAkzL9Ws6UUck-EC_YbmsZ_YBGftF2YM_0RZiQ0olWsesGxKTxdUND4HhRU8UcUKoAUPDZUg"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Dra. Elena Gómez</p>
+<p class="text-sm text-on-surface-variant">Estudiante de Medicina, Año Final</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+<span class="font-bold text-xl tracking-tight">HIPAA COMPLIANT</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-4xl">security</span>
+<span class="font-bold text-xl tracking-tight">GDPR READY</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-4xl">encrypted</span>
+<span class="font-bold text-xl tracking-tight">SSL SECURE</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-4xl">medical_services</span>
+<span class="font-bold text-xl tracking-tight">ISO 27001</span>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 border-t border-slate-100 bg-slate-50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<img alt="Logo" class="h-8 w-8" data-alt="Minimalist logo icon for a medical platform in shades of deep purple" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAMKa3RLhP8shuYv8eBDgj12Yg4Ogq9O0Vqg8_GmUfIwo78F4UGhNBH9ZXwORqmweoLfnWrZDlMeTZvSBaOWyvkYOPz31e7t7a-sNeEUhdkezT7iHHiRdkW3A_S2G-RCugRXpNwWLYd9Tn4PgApHC9mmNSwC3TEKC-1XgQRK-ucd0aOWympM9Z514ZO04qoWAglgG0k6WHo8kf0qpsc1pHvf8TWPpRYoY9nYc1Ou6LrqYrBp2L-QAatToDcV58ZKh5rU8wtWcJ2GU"/>
+<span class="text-lg font-bold text-purple-900">Banco de Choices</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-4">
+                    © 2024 Banco de Choices. Formación médica de precisión.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-purple-900 mb-4">Planes</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm" href="#">Mensual</a></li>
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm" href="#">Semestral</a></li>
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm underline text-purple-600 font-medium" href="#">Anual (Popular)</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-purple-900 mb-4">Soporte</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm" href="#">Ayuda</a></li>
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm" href="#">Contacto</a></li>
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm" href="#">Preguntas Frecuentes</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-purple-900 mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm" href="#">Privacidad</a></li>
+<li><a class="text-slate-500 hover:text-purple-800 transition-colors text-sm" href="#">Términos</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

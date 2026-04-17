@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#5a00c6",
+                      "on-secondary-fixed-variant": "#66288d",
+                      "surface-dim": "#d8dadf",
+                      "secondary-fixed": "#f4d9ff",
+                      "on-error-container": "#93000a",
+                      "outline": "#807382",
+                      "tertiary-fixed-dim": "#d2bbff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#602187",
+                      "background": "#f7f9fe",
+                      "on-background": "#181c20",
+                      "secondary-fixed-dim": "#e4b5ff",
+                      "error": "#ba1a1a",
+                      "secondary": "#8042a7",
+                      "tertiary-fixed": "#eaddff",
+                      "outline-variant": "#d2c1d3",
+                      "on-surface-variant": "#4e4351",
+                      "inverse-primary": "#ebb2ff",
+                      "surface": "#f7f9fe",
+                      "surface-tint": "#8c34b3",
+                      "on-tertiary-fixed": "#25005a",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#f8d8ff",
+                      "inverse-on-surface": "#eff1f6",
+                      "on-surface": "#181c20",
+                      "on-secondary-fixed": "#2f004b",
+                      "surface-bright": "#f7f9fe",
+                      "on-secondary": "#ffffff",
+                      "tertiary-container": "#5200b6",
+                      "on-primary-fixed": "#320047",
+                      "error-container": "#ffdad6",
+                      "surface-container-low": "#f2f4f9",
+                      "on-tertiary-container": "#bc9bff",
+                      "surface-variant": "#e0e2e7",
+                      "primary-container": "#6a0392",
+                      "primary": "#490066",
+                      "surface-container-high": "#e6e8ed",
+                      "surface-container-highest": "#e0e2e7",
+                      "primary-fixed-dim": "#ebb2ff",
+                      "on-primary-fixed-variant": "#711299",
+                      "on-primary-container": "#dd8cff",
+                      "inverse-surface": "#2d3135",
+                      "surface-container": "#eceef3",
+                      "secondary-container": "#d593fe",
+                      "tertiary": "#37007f"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<main class="flex min-h-screen">
+<!-- Left Side: Branding & Hero -->
+<section class="hidden lg:flex lg:w-5/12 bg-primary relative overflow-hidden flex-col justify-between p-16">
+<!-- Decorative atmospheric background elements -->
+<div class="absolute top-[-10%] right-[-10%] w-96 h-96 bg-primary-container rounded-full blur-[120px] opacity-40"></div>
+<div class="absolute bottom-[-5%] left-[-5%] w-64 h-64 bg-secondary-container rounded-full blur-[100px] opacity-30"></div>
+<div class="relative z-10">
+<img alt="Banco de Choices Logo" class="h-12 w-auto brightness-0 invert" data-alt="high-end minimalist medical brand logo with geometric clean lines, white on purple background, professional pharmaceutical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsmZV3-p1TrqpF-jFaa09_NibPEi6vnfqL0RKoPugZJmnAUAOxnhC9ygkoQNWOV5j76FzJD_kDhjrDILJiQKOv0CaUsEhb-4rUWPtclayvgLPo2quHfBhMUEItYuP8llzc1eL98X5y2GD_GdUDcKN2eVqnNx93VZqtoeuKkfz-9wMJ9_ZDVEbpwQz0dW-OZQwmdpk_zJqVK7VY-XURBihNaoNfMELg5gdztGrbNGIi52Mx6tfJjOT4kTEQtMWuDop-zNsnIW-qwvc"/>
+<div class="mt-32 space-y-6">
+<h1 class="text-white text-6xl font-extrabold tracking-tighter leading-[1.1]">
+                        Precision Medicine.<br/>
+<span class="text-on-primary-container">Human Insight.</span>
+</h1>
+<p class="text-primary-fixed-dim text-xl max-w-md font-medium leading-relaxed">
+                        Join the next generation of medical professionals using data-driven insights to master their specialty exams.
+                    </p>
+</div>
+</div>
+<div class="relative z-10 flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-primary bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img alt="Doctor profile" data-alt="portrait of a confident professional male doctor in clinical attire, soft studio lighting, medical professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5BzLI6RBQ9acDnPPhhb8C5u9-kWWJKYtpZk08M12WY3Z7MDFI4KxK7BNImDofnYoko7a6TAIr7FnpthdTdpVh0R9SZ3E49MqOSieV2RdzJjW9073RVh-ujnS26UZLTotvuqV875aFdmU47z89IGDblnX66FmJptJkmIYAzJg2vEXBNbuCYRCOETl3xPLwQfygNd4Nm44aAuEkT0WWonWjA9Or7pCSf09QageLy4zIt66itmTurDPayqCeHg53WQkzudd-MPGrKDM"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-primary bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img alt="Doctor profile" data-alt="portrait of a focused professional female physician, modern clinical setting, soft warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmmsbEmURSDvKF9fMlYZIUzycK6gKhgIkGp4dIdQNvKcg8yUKnILq4rTbFmh0yRXBkZ5Ozm_8kJ5Xuue2IJxkh9IWIwWL0B-QJBaILKJ7D1XpYxmap5m-cTbfDvaL1kOqIdV1rjtwNrdD3_1IKqsD2a9yNUfMXVlyj7Z9PO9ESi3wfQFarurEADmHMnrszyHfHCHFLvQxcFX5sUI5229xW3g74hAtntZqxCg18m9PIpz_U6AcIEb8hBZ1Ed3nBSNlNwY7YLdQhAZU"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-primary bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img alt="Doctor profile" data-alt="portrait of a young medical resident smiling, clean professional background, bright airy lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYiUhXP3muYJD-89eNtBsgCqR_rLZuOhrOvXAoAjmeEUkpPEU5KNXmtkULI27s7rbvQxaY4JDSxC1rsHdk-YO61XhgX6SbTRW1U5jNlSgG45rfj2rdIb9PoIkptxx3drBxuNAoDOSdw_CvYLPWsjuotd6cF4AMY4VVA1eWNv9ZXFDZ-pzghkYZQwW6oJ1HEvDYbHFkoaZ_2RMKek1m26AEAPA3xs1zOdtyGsFDXYRujZfEsv_kdPKky4Q9-5YVWMJGqVj1dDc-uUo"/>
+</div>
+</div>
+<p class="text-primary-fixed text-sm font-medium">+15,000 médicos se preparan con nosotros</p>
+</div>
+</section>
+<!-- Right Side: Interaction Area -->
+<section class="w-full lg:w-7/12 flex flex-col bg-surface relative">
+<!-- Progress Header -->
+<header class="p-8 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="text-sm font-bold text-primary tracking-widest uppercase">Paso 01 de 03</span>
+<span class="text-sm font-medium text-outline">Seleccionar Especialidades</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="w-1/3 h-full bg-primary-container rounded-full transition-all duration-700 ease-out"></div>
+</div>
+</header>
+<!-- Main Scrollable Selection Area -->
+<div class="flex-grow overflow-y-auto px-8 md:px-16 pb-32">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-extrabold text-on-surface tracking-tight mb-4">Seleccionar Matérias</h2>
+<p class="text-on-surface-variant text-lg mb-10 leading-relaxed">
+                        Elige las áreas de estudio que deseas incluir en tu plan de formación personalizado. Puedes agregar o quitar materias más tarde.
+                    </p>
+<!-- Specialty Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Cardiology: Active State Example -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 ring-2 ring-primary bg-primary-fixed/30 border-none">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary text-white flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="cardiology" style="font-variation-settings: 'FILL' 1;">cardiology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-primary text-lg">Cardiología</span>
+<span class="text-on-surface-variant text-sm">Hipertensión, Arritmias, Valvulopatías</span>
+</div>
+<div class="absolute top-4 right-4">
+<div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px] text-white font-bold" data-icon="check">check</span>
+</div>
+</div>
+</button>
+<!-- Neurology -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 bg-surface-container-low hover:bg-surface-container hover:shadow-sm">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="neurology">neurology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface text-lg">Neurología</span>
+<span class="text-on-surface-variant text-sm">ACV, Epilepsia, Neuroanatomía</span>
+</div>
+</button>
+<!-- Pediatrics -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 bg-surface-container-low hover:bg-surface-container">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="child_care">child_care</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface text-lg">Pediatría</span>
+<span class="text-on-surface-variant text-sm">Crecimiento, Desarrollo, Neonatología</span>
+</div>
+</button>
+<!-- Gynaecology -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 bg-surface-container-low hover:bg-surface-container">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="female">female</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface text-lg">Ginecología</span>
+<span class="text-on-surface-variant text-sm">Obstetricia, Endocrinología, Oncología</span>
+</div>
+</button>
+<!-- Traumatology -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 bg-surface-container-low hover:bg-surface-container">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="orthopedics">orthopedics</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface text-lg">Traumatología</span>
+<span class="text-on-surface-variant text-sm">Fracturas, Lesiones deportivas, Columna</span>
+</div>
+</button>
+<!-- Nephrology -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 bg-surface-container-low hover:bg-surface-container">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="nephrology">nephrology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface text-lg">Nefrología</span>
+<span class="text-on-surface-variant text-sm">ERC, Trastornos hidroelectrolíticos</span>
+</div>
+</button>
+<!-- Psychiatry -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 bg-surface-container-low hover:bg-surface-container">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="psychiatry">psychiatry</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface text-lg">Psiquiatría</span>
+<span class="text-on-surface-variant text-sm">Psicosis, Depresión, Trastornos de ansiedad</span>
+</div>
+</button>
+<!-- Infectious Diseases -->
+<button class="group relative flex items-start gap-4 p-6 rounded-xl text-left transition-all duration-300 bg-surface-container-low hover:bg-surface-container">
+<div class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="microbiology">microbiology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-on-surface text-lg">Infectología</span>
+<span class="text-on-surface-variant text-sm">Antibióticos, VIH, Enfermedades tropicales</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Sticky Footer Action -->
+<footer class="absolute bottom-0 left-0 w-full p-8 bg-surface/90 backdrop-blur-md flex justify-between items-center shadow-[0_-4px_24px_rgba(0,0,0,0.03)]">
+<button class="px-6 py-3 text-on-surface-variant font-medium hover:text-primary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+                    Atrás
+                </button>
+<button class="px-8 py-4 bg-primary-container text-white rounded-xl font-bold flex items-center gap-3 hover:bg-primary transition-all active:scale-[0.98] shadow-lg shadow-primary-container/20">
+                    Continue to Professional Credentials
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</footer>
+</section>
+</main>
+</body></html>

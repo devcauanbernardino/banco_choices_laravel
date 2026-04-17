@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('assets/css/login-exemplo.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/auth-footer-shared.css') }}">
 @endpush
 
 @section('content')
@@ -123,27 +124,6 @@
             </div>
         </div>
     </main>
-
-    <footer class="auth-login-footer">
-        <div class="auth-login-footer-inner">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-4">
-                    <strong class="auth-login-headline d-block text-purple-900 mb-1" style="color: #3b0764;">{{ __('index.page_title') }}</strong>
-                    <p class="small text-secondary mb-0">{{ __('login.footer_tagline') }}</p>
-                </div>
-                <div class="col-md-5">
-                    <nav class="d-flex flex-wrap gap-3 justify-content-md-center" aria-label="Legal">
-                        <a href="{{ route('home') }}#privacidad">{{ __('login.footer_privacy') }}</a>
-                        <a href="{{ route('home') }}#terminos">{{ __('login.footer_terms') }}</a>
-                        <a href="mailto:contato@bancodechoices.com">{{ __('login.footer_contact') }}</a>
-                    </nav>
-                </div>
-                <div class="col-md-3">
-                    <p class="auth-login-footer-copy">{{ __('login.footer_copy') }}</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
 @endsection
 

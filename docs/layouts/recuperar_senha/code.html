@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5a00c6",
+                    "on-secondary-fixed-variant": "#66288d",
+                    "surface-dim": "#d8dadf",
+                    "secondary-fixed": "#f4d9ff",
+                    "on-error-container": "#93000a",
+                    "outline": "#807382",
+                    "tertiary-fixed-dim": "#d2bbff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-secondary-container": "#602187",
+                    "background": "#f7f9fe",
+                    "on-background": "#181c20",
+                    "secondary-fixed-dim": "#e4b5ff",
+                    "error": "#ba1a1a",
+                    "secondary": "#8042a7",
+                    "tertiary-fixed": "#eaddff",
+                    "outline-variant": "#d2c1d3",
+                    "on-surface-variant": "#4e4351",
+                    "inverse-primary": "#ebb2ff",
+                    "surface": "#f7f9fe",
+                    "surface-tint": "#8c34b3",
+                    "on-tertiary-fixed": "#25005a",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed": "#f8d8ff",
+                    "inverse-on-surface": "#eff1f6",
+                    "on-surface": "#181c20",
+                    "on-secondary-fixed": "#2f004b",
+                    "surface-bright": "#f7f9fe",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#5200b6",
+                    "on-primary-fixed": "#320047",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f2f4f9",
+                    "on-tertiary-container": "#bc9bff",
+                    "surface-variant": "#e0e2e7",
+                    "primary-container": "#6a0392",
+                    "primary": "#490066",
+                    "surface-container-high": "#e6e8ed",
+                    "surface-container-highest": "#e0e2e7",
+                    "primary-fixed-dim": "#ebb2ff",
+                    "on-primary-fixed-variant": "#711299",
+                    "on-primary-container": "#dd8cff",
+                    "inverse-surface": "#2d3135",
+                    "surface-container": "#eceef3",
+                    "secondary-container": "#d593fe",
+                    "tertiary": "#37007f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .clinical-gradient {
+            background: radial-gradient(circle at top left, #6a0392, #490066);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex items-center justify-center relative overflow-hidden">
+<!-- Decorative Atmospheric Elements (The Clinical Curator Aesthetic) -->
+<div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-primary-fixed opacity-20 blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] rounded-full bg-secondary-fixed opacity-30 blur-[100px] pointer-events-none"></div>
+<!-- Forgot Password Container -->
+<main class="w-full max-w-md px-6 z-10">
+<!-- Brand Section (Based on TopNavBar style_brand_logo) -->
+<div class="flex flex-col items-center mb-10">
+<div class="mb-6">
+<img alt="Banco de Choices Logo" class="h-16 w-auto" data-alt="minimalist professional medical logo featuring abstract geometric shapes and a stylized stethoscope in deep purple and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm9Md0W5KUevdrdo5HuHJQlW_qNvK0XzVnQx6kjl1oBroEDl2BXeyzImGL9g7Ahmf9J1Nj_3nAeU8l9SW9DcoKdfMybTlGe4opaziQu-LpUM5f3bahpEUA1Kr38UFOUZgeVuQa3VNBEikbewid1DiuLKSZ0-IvOhQUvoLoefG8lTTC813F3ptLdMdXirWvpSCE1Hf4kvCxjCzqKiZR0V34jFb-2AHY5eeel7bBDJ5MwnaK9Q86p3YWpm4HPU2LSAoHU1f8X5eN1LU"/>
+</div>
+<h1 class="text-2xl font-black tracking-tighter text-primary font-headline">
+                Banco de Choices
+            </h1>
+</div>
+<!-- Recovery Card -->
+<div class="surface-container-lowest glass-effect rounded-xl p-8 shadow-[0_32px_64px_-12px_rgba(73,0,102,0.06)] border border-white/40">
+<header class="mb-8">
+<h2 class="text-xl font-bold text-on-surface font-headline tracking-tight mb-2">Recuperar Senha</h2>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                    Insira seu e-mail para receber um link de recuperação
+                </p>
+</header>
+<form class="space-y-6">
+<!-- Input Field (Following Design System Input Field logic) -->
+<div class="space-y-2">
+<label class="block text-xs font-semibold text-on-surface uppercase tracking-wider ml-1" for="email">
+                        E-mail Institucional
+                    </label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-lg px-4 py-3 text-on-surface placeholder:text-outline focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all duration-300 outline-none" id="email" placeholder="exemplo@hospital.com" type="email"/>
+<div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-outline-variant">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+</div>
+</div>
+<!-- Primary Button (Following style_primary_color and Button Primitive logic) -->
+<button class="w-full clinical-gradient text-on-primary font-semibold py-3.5 rounded-lg shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 group" type="submit">
+<span>Enviar Link</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">send</span>
+</button>
+</form>
+<!-- Navigation Links -->
+<footer class="mt-8 pt-6 border-t border-outline-variant/15 flex flex-col items-center space-y-4">
+<a class="text-primary font-medium text-sm hover:text-on-primary-fixed-variant transition-colors flex items-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+                    Voltar para o login
+                </a>
+</footer>
+</div>
+<!-- Support Message -->
+<p class="mt-8 text-center text-xs text-on-surface-variant leading-relaxed px-4">
+            Precisa de ajuda imediata? Entre em contato com o suporte da <span class="font-semibold text-primary">Banco de Choices</span> ou consulte nossa seção de Ajuda.
+        </p>
+</main>
+<!-- Visual Anchor: Clinical Curator Editorial Element -->
+<div class="fixed bottom-8 right-8 hidden lg:block opacity-40">
+<div class="text-right">
+<span class="block text-[8px] font-black uppercase tracking-[0.4em] text-primary mb-1">Medical Authority</span>
+<div class="h-[1px] w-12 bg-primary ml-auto"></div>
+</div>
+</div>
+</body></html>

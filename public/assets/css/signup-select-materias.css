@@ -1,0 +1,336 @@
+/**
+ * Selecionar matérias — layout em coluna única (mesmo padrão do fluxo auth-recuperar).
+ * Sem duas colunas flex: evita overflow e scrollbar horizontal.
+ */
+
+body.signup-materias-page {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #181c20;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.signup-materias-page h1,
+.signup-materias-page h2 {
+  font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+}
+
+.signup-materias-page .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.signup-materias-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.signup-materias-blobs {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  background-color: var(--auth-public-shell-bg, #f0f2f7);
+  background-image: var(
+    --auth-public-shell-image,
+    linear-gradient(165deg, #faf8ff 0%, #f0f2f7 50%, #ebe8f5 100%)
+  );
+}
+
+.signup-materias-blobs__one {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: min(500px, 90vw);
+  height: min(500px, 90vw);
+  border-radius: 50%;
+  background: rgba(106, 3, 146, 0.22);
+  filter: blur(120px);
+}
+
+.signup-materias-blobs__two {
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: min(400px, 80vw);
+  height: min(400px, 80vw);
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.18);
+  filter: blur(100px);
+}
+
+.signup-materias-wrap .bc-lang-menu--landing {
+  z-index: 1080;
+}
+
+.signup-materias-topbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1.25rem 0;
+  padding-top: calc(1rem + env(safe-area-inset-top, 0));
+}
+
+.signup-materias-topbar .navbar-actions--landing {
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.signup-materias-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #64748b;
+  text-decoration: none;
+  padding: 0.4rem 0.65rem;
+  border-radius: 999px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.signup-materias-back:hover {
+  color: var(--bs-primary, #6a0392);
+  background: rgba(var(--bs-primary-rgb, 106, 3, 146), 0.08);
+}
+
+.signup-materias-main {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1.25rem 2.5rem;
+  padding-bottom: calc(2.5rem + env(safe-area-inset-bottom, 0));
+  box-sizing: border-box;
+}
+
+.signup-materias-inner {
+  width: 100%;
+  max-width: min(68rem, 100%);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.signup-materias-lead {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signup-materias-lead__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #490066;
+}
+
+.signup-materias-lead__text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #4e4351;
+}
+
+.signup-materias-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.signup-materias-steps::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(var(--bs-primary-rgb, 106, 3, 146), 0.12);
+}
+
+.signup-materias-steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.signup-materias-steps__num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.signup-materias-steps__item.is-active .signup-materias-steps__num {
+  background: var(--bs-primary, #6a0392);
+  border-color: var(--bs-primary, #6a0392);
+  color: #fff;
+  box-shadow: 0 0 0 0.3rem rgba(var(--bs-primary-rgb, 106, 3, 146), 0.12);
+}
+
+.signup-materias-steps__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.signup-materias-steps__item.is-active .signup-materias-steps__label {
+  color: #490066;
+}
+
+/* Grelha CSS (sem .row do Bootstrap → sem margem negativa / scrollbar horizontal) */
+.signup-materias-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 576px) {
+  .signup-materias-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .signup-materias-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.signup-materias-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  background: rgba(255, 255, 255, 0.96);
+  border: 2px solid #e5e7eb;
+  box-sizing: border-box;
+  min-width: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.signup-materias-card:hover {
+  border-color: var(--bs-primary, #6a0392);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(var(--bs-primary-rgb, 106, 3, 146), 0.12);
+}
+
+.signup-materias-card.is-selected {
+  border-color: var(--bs-primary, #6a0392);
+  background: rgba(var(--bs-primary-rgb, 106, 3, 146), 0.1);
+  box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb, 106, 3, 146), 0.15);
+}
+
+.signup-materias-card__icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: #e0e2e7;
+  color: var(--bs-primary, #6a0392);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.signup-materias-card:hover .signup-materias-card__icon,
+.signup-materias-card.is-selected .signup-materias-card__icon {
+  background: var(--bs-primary, #6a0392);
+  color: #fff;
+}
+
+.signup-materias-card__icon .material-symbols-outlined {
+  font-size: 1.35rem;
+}
+
+.signup-materias-card.is-selected .signup-materias-card__icon .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.signup-materias-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.signup-materias-card__name {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #181c20;
+}
+
+.signup-materias-card__hint {
+  font-size: 0.8125rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.signup-materias-card__check {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: var(--bs-primary, #6a0392);
+  color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-materias-card.is-selected .signup-materias-card__check {
+  display: flex;
+}
+
+.signup-materias-card__check .material-symbols-outlined {
+  font-size: 14px;
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
+}
+
+.signup-materias-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
