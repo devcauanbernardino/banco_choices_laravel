@@ -54,6 +54,7 @@
 @php
     $checkoutKind = $pendingOrder['checkout_kind'] ?? 'signup';
     $isAddon = $checkoutKind === 'addon' && auth()->check();
+    $syncedFromMercadoPago = $syncedFromMercadoPago ?? false;
 @endphp
 
 @section('content')
@@ -98,12 +99,30 @@
             </div>
             <h2 class="fw-bold mb-2" style="color: var(--success-green);">{{ __('signup.payment.confirmed_h1') }}</h2>
             <p class="text-muted mb-0">{{ __('signup.payment.success_p') }}</p>
+            @if ($syncedFromMercadoPago)
+                <p class="small text-muted mt-2 mb-0">{{ __('signup.payment.synced_note') }}</p>
+            @endif
         @elseif ($status === 'pending')
             <div class="success-icon success-icon--pending">
                 <i class="bi bi-hourglass-split" style="font-size: 2.5rem;"></i>
             </div>
             <h2 class="fw-bold mb-2" style="color: #f59e0b;">{{ __('signup.payment.received_h1') }}</h2>
             <p class="text-muted mb-0">{{ __('signup.payment.processing_p') }}</p>
+            @if ($syncedFromMercadoPago)
+                <p class="small text-muted mt-2 mb-0">{{ __('signup.payment.synced_note') }}</p>
+            @endif
+        @elseif ($status === 'unknown')
+            <div class="success-icon success-icon--pending">
+                <i class="bi bi-question-circle-fill" style="font-size: 2.5rem;"></i>
+            </div>
+            <h2 class="fw-bold mb-2" style="color: #64748b;">{{ __('signup.payment.unknown_h1') }}</h2>
+            <p class="text-muted mb-0">{{ __('signup.payment.unknown_p') }}</p>
+            @if (!empty($pendingOrder['order_id']))
+                <div class="alert alert-info text-start mt-3 mb-0 small">
+                    {{ __('signup.payment.after_mp_screen') }}
+                    <a href="{{ route('checkout.success') }}" class="fw-semibold">{{ __('signup.payment.refresh_try') }}</a>
+                </div>
+            @endif
         @else
             <div class="success-icon success-icon--failed">
                 <i class="bi bi-x-circle-fill" style="font-size: 2.5rem;"></i>

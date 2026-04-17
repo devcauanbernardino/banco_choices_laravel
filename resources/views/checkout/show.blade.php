@@ -54,6 +54,35 @@
         border-color: var(--accent-purple);
         box-shadow: 0 0 0 0.2rem var(--accent-purple-lighter);
     }
+    /* Termos: à esquerda; checkbox e texto na mesma linha (eixo vertical centralizado) */
+    #checkoutForm .checkout-terms-wrap {
+        text-align: left;
+        line-height: normal;
+    }
+    #checkoutForm .checkout-terms-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        width: 100%;
+    }
+    #checkoutForm .checkout-terms-row .form-check-input[type="checkbox"] {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-top: 0;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+    #checkoutForm .checkout-terms-row .form-check-label {
+        cursor: pointer;
+        line-height: 1.45;
+    }
+    #checkoutForm .checkout-terms-row .form-check-label a {
+        word-break: break-word;
+    }
+    #checkoutForm .checkout-terms-row .form-check-input:checked {
+        background-color: var(--accent-purple);
+        border-color: var(--accent-purple);
+    }
 </style>
 @endpush
 
@@ -153,12 +182,14 @@
                         <p class="small text-body-secondary border-start border-3 border-secondary ps-2 mb-3">{{ __('signup.checkout.mp_redirect_hint') }}</p>
                     @endif
 
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" name="terms" id="signup-terms" value="1" required>
-                        <label class="form-check-label small" for="signup-terms">
-                            {{ __('signup.checkout.terms_before') }}
-                            <a href="{{ route('home') }}#terminos" target="_blank" rel="noopener noreferrer">{{ __('signup.checkout.terms_link') }}</a>{{ __('signup.checkout.terms_after') }}
-                        </label>
+                    <div class="checkout-terms-wrap mb-3">
+                        <div class="checkout-terms-row">
+                            <input type="checkbox" class="form-check-input" name="terms" id="signup-terms" value="1" required
+                                   aria-required="true">
+                            <label class="form-check-label small mb-0" for="signup-terms">
+                                {!! __('signup.checkout.terms_label', ['url' => route('home').'#terminos']) !!}
+                            </label>
+                        </div>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-lg py-3 fw-bold shadow-sm w-100 d-inline-flex align-items-center justify-content-center gap-2 mt-2">

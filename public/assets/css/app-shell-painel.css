@@ -1,0 +1,733 @@
+/**
+ * Shell do app autenticado — sidebar + topbar alinhados ao mockup dashboard_painel
+ * (fundo claro na barra lateral, CTA roxo, links estilo “estudante”, header editorial).
+ */
+body.app-shell-painel {
+  --shell-painel-primary: #490066;
+  --shell-painel-primary-ctn: #6a0392;
+  --shell-painel-accent-bar: #6b21a8;
+  --shell-painel-sidebar-bg: #f8fafc;
+  --shell-painel-sidebar-border: #e2e8f0;
+  --shell-painel-link: #64748b;
+  --shell-painel-link-active-bg: rgba(107, 33, 168, 0.08);
+  --shell-painel-link-active-text: #5b21b6;
+}
+
+[data-theme="dark"] body.app-shell-painel {
+  --shell-painel-accent-bar: #c4b5fd;
+  --shell-painel-sidebar-bg: #14141a;
+  --shell-painel-sidebar-border: rgba(255, 255, 255, 0.08);
+  --shell-painel-link: rgba(255, 255, 255, 0.62);
+  --shell-painel-link-active-bg: rgba(106, 3, 146, 0.28);
+  --shell-painel-link-active-text: #f5f3ff;
+}
+
+body.app-shell-painel .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+}
+
+body.app-shell-painel .material-symbols-outlined.is-fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* ——— Sidebar ——— */
+body.app-shell-painel .app-sidebar.app-sidebar--painel {
+  background: var(--shell-painel-sidebar-bg);
+  color: var(--app-text, #181c20);
+  border-right: 1px solid var(--shell-painel-sidebar-border);
+  box-shadow: 4px 0 24px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar.app-sidebar--painel {
+  box-shadow: 4px 0 32px rgba(0, 0, 0, 0.35);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-brand {
+  padding: 1.5rem 1.25rem 1rem;
+  border-bottom: 1px solid var(--shell-painel-sidebar-border);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-link {
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-logo-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 1px solid var(--shell-painel-sidebar-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-logo-box {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.2rem;
+  display: block;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--shell-painel-primary-ctn);
+  margin: 0;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-title {
+  color: #e9d5ff;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-brand .app-sidebar-sub {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--shell-painel-link);
+  margin-top: 0.35rem;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-bottom {
+  flex-shrink: 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--shell-painel-sidebar-border);
+  margin-top: auto;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0 1rem 0.75rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--shell-painel-accent-bar) 0%, var(--shell-painel-primary-ctn) 100%);
+  border: none;
+  box-shadow: 0 10px 28px rgba(106, 3, 146, 0.28);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-plus {
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.95;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-cta:hover {
+  color: #fff !important;
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(106, 3, 146, 0.35);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-nav {
+  padding: 0.75rem 0.65rem 0.5rem;
+  gap: 0.2rem;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-link {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--shell-painel-link);
+  background: transparent;
+  box-shadow: none;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-link .material-symbols-outlined {
+  font-size: 1.35rem;
+  opacity: 0.92;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-link:hover {
+  color: var(--app-text, #181c20);
+  background: rgba(148, 163, 184, 0.2);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-link.active {
+  color: var(--shell-painel-link-active-text);
+  background: var(--shell-painel-link-active-bg);
+  box-shadow: inset -4px 0 0 var(--shell-painel-accent-bar);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-link.active {
+  color: #fff;
+  box-shadow: inset -4px 0 0 var(--shell-painel-accent-bar);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-link-logout {
+  color: #b91c1c !important;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-link-logout:hover {
+  background: rgba(248, 113, 113, 0.15) !important;
+  color: #991b1b !important;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-link-logout {
+  color: #fca5a5 !important;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-link-logout:hover {
+  color: #fecaca !important;
+  background: rgba(248, 113, 113, 0.12) !important;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0.75rem 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--shell-painel-sidebar-border);
+  background: var(--app-surface, #fff);
+  color: inherit;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard:hover {
+  background: rgba(106, 3, 146, 0.06);
+  border-color: rgba(106, 3, 146, 0.22);
+  color: inherit;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard:hover {
+  background: rgba(106, 3, 146, 0.2);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(106, 3, 146, 0.2);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-name {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--app-text, #181c20);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-name {
+  color: #f3f4f6;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-meta {
+  font-size: 0.7rem;
+  color: var(--shell-painel-link);
+  margin-top: 0.1rem;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-form {
+  margin: 0 0.75rem 0.5rem;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--shell-painel-link);
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn:hover {
+  background: rgba(148, 163, 184, 0.2);
+  color: #b91c1c;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn:hover {
+  color: #fca5a5;
+  background: rgba(248, 113, 113, 0.1);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn .material-symbols-outlined {
+  font-size: 1.1rem;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-tools {
+  border-top: 1px solid var(--shell-painel-sidebar-border);
+  margin: 0 0.5rem;
+  padding-top: 0.5rem;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-btn {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 2.5rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(107, 33, 168, 0.22);
+  background: rgba(106, 3, 146, 0.06);
+  color: var(--shell-painel-primary-ctn);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-btn:hover {
+  background: rgba(106, 3, 146, 0.11);
+  border-color: rgba(107, 33, 168, 0.32);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-btn {
+  background: rgba(196, 181, 253, 0.1);
+  border-color: rgba(196, 181, 253, 0.22);
+  color: #e9d5ff;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-btn .material-symbols-outlined {
+  font-size: 1.2rem;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-link {
+  flex: 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.65rem;
+  border: 1px solid var(--shell-painel-sidebar-border);
+  color: var(--shell-painel-link);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-link:hover {
+  background: rgba(106, 3, 146, 0.08);
+  color: var(--shell-painel-primary-ctn);
+  border-color: rgba(106, 3, 146, 0.22);
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-tools {
+  flex-direction: column;
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+  gap: 0.35rem !important;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-btn,
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-tool-link {
+  width: 100%;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-section-label {
+  color: var(--shell-painel-link);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-section-label {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar .app-sidebar-section--lang {
+  border-top-color: var(--shell-painel-sidebar-border);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-collapse-wrap {
+  border-top-color: var(--shell-painel-sidebar-border);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-collapse-btn {
+  background: rgba(148, 163, 184, 0.15);
+  border-color: var(--shell-painel-sidebar-border);
+  color: var(--shell-painel-link);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-collapse-btn:hover {
+  background: rgba(148, 163, 184, 0.25);
+  color: var(--app-text);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-collapse-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-section--lang .btn-navbar-lang {
+  background: #fff;
+  border-color: var(--shell-painel-sidebar-border);
+  color: var(--shell-painel-primary-ctn);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-section--lang .btn-navbar-lang {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #e9d5ff;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-section--lang .btn-navbar-lang:hover,
+body.app-shell-painel .app-sidebar--painel .app-sidebar-section--lang .btn-navbar-lang:focus,
+body.app-shell-painel .app-sidebar--painel .app-sidebar-section--lang .btn-navbar-lang.show {
+  background: rgba(106, 3, 146, 0.08);
+  border-color: rgba(106, 3, 146, 0.35);
+}
+
+/* Sidebar recolhida — ícones Material Symbols */
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-link:not(.active):not(.app-sidebar-link-logout) .material-symbols-outlined {
+  color: var(--shell-painel-link);
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-link.active .material-symbols-outlined {
+  color: var(--shell-painel-link-active-text);
+}
+
+[data-theme="dark"] html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-link.active .material-symbols-outlined {
+  color: #fff;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-label {
+  display: none;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-text {
+  display: none;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard {
+  justify-content: center;
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+  padding: 0.5rem;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-text {
+  display: none;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn {
+  justify-content: center;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-cta {
+  padding: 0.75rem;
+  justify-content: center;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-title,
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-brand .app-sidebar-sub {
+  display: none;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-link {
+  justify-content: center;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-brand {
+  padding-left: 0.65rem;
+  padding-right: 0.65rem;
+}
+
+/* ——— Topbar ——— */
+body.app-shell-painel .bc-topbar.bc-topbar--painel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+  margin-left: var(--sidebar-w);
+  padding: 0.5rem 1.25rem 0.5rem 1.5rem;
+  /* Sobrescreve .bc-topbar { min-height: 76px } — uma única linha, altura ao conteúdo */
+  min-height: 0 !important;
+  max-height: none;
+  background: var(--app-bg, #f7f9fe);
+  border-bottom: 1px solid var(--app-border);
+  box-shadow: none;
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar.bc-topbar--painel {
+  background: rgba(20, 20, 26, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+body.app-shell-painel .bc-topbar--painel .bc-topbar-title-block {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: min(34%, 16rem);
+}
+
+body.app-shell-painel .bc-topbar--painel .bc-topbar-title {
+  font-size: clamp(1rem, 1vw + 0.7rem, 1.35rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--app-text, #181c20);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  margin: 0;
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar--painel .bc-topbar-title {
+  color: #f3f4f6;
+}
+
+body.app-shell-painel .bc-topbar--painel .bc-topbar-kicker {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--app-muted);
+  margin: 0 0 0.2rem;
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar--painel .bc-topbar-kicker {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body.app-shell-painel .bc-topbar--painel .bc-topbar-center {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+}
+
+body.app-shell-painel .bc-topbar-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+body.app-shell-painel .bc-topbar-search-icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: var(--app-muted);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-search-icon {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+body.app-shell-painel .bc-topbar-search-input {
+  border-radius: 999px;
+  padding-left: 2.65rem;
+  padding-right: 1rem;
+  height: 2.5rem;
+  min-height: 0;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  border: 1px solid var(--app-border);
+  background: var(--app-surface, #fff);
+  color: var(--app-text);
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-search-input {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+body.app-shell-painel .bc-topbar-search-input:focus {
+  border-color: rgba(106, 3, 146, 0.45);
+  box-shadow: 0 0 0 3px rgba(106, 3, 146, 0.12);
+  outline: none;
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-search-input:focus {
+  box-shadow: 0 0 0 3px rgba(106, 3, 146, 0.25);
+}
+
+body.app-shell-painel .bc-topbar-toolbar {
+  flex: 0 0 auto;
+  min-width: fit-content;
+  padding-left: 0;
+}
+
+body.app-shell-painel .bc-topbar-utility-pill {
+  padding: 0.2rem 0.35rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--app-border);
+  background: var(--app-surface, #fff);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-utility-pill {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+body.app-shell-painel .bc-topbar-btn.bc-topbar-btn--theme {
+  width: 2.65rem;
+  height: 2.65rem;
+  border-radius: 0.55rem;
+  background: rgba(106, 3, 146, 0.08);
+  border: 1px solid rgba(106, 3, 146, 0.2);
+  color: var(--shell-painel-primary-ctn);
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-btn.bc-topbar-btn--theme {
+  background: rgba(196, 181, 253, 0.12);
+  border-color: rgba(196, 181, 253, 0.25);
+  color: #e9d5ff;
+}
+
+body.app-shell-painel .bc-topbar-btn.bc-topbar-btn--theme:hover {
+  background: rgba(106, 3, 146, 0.16);
+  color: var(--shell-painel-primary-ctn);
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-btn.bc-topbar-btn--theme:hover {
+  background: rgba(196, 181, 253, 0.2);
+  color: #fff;
+}
+
+body.app-shell-painel .bc-topbar-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--app-muted);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+body.app-shell-painel .bc-topbar-icon-btn:hover:not(:disabled) {
+  background: rgba(106, 3, 146, 0.08);
+  color: var(--shell-painel-primary-ctn);
+}
+
+[data-theme="dark"] body.app-shell-painel .bc-topbar-icon-btn:hover:not(:disabled) {
+  color: #e9d5ff;
+}
+
+body.app-shell-painel .bc-topbar-icon-btn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+body.app-shell-painel .bc-topbar-icon-btn .material-symbols-outlined {
+  font-size: 1.25rem;
+}
+
+body.app-shell-painel .bc-topbar-icon-btn--avatar {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--app-border);
+}
+
+body.app-shell-painel .bc-topbar-avatar-tiny {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.45rem;
+}
+
+body.app-shell-painel .app-mobile-topbar {
+  background: var(--app-surface);
+  border-bottom: 1px solid var(--app-border);
+  color: var(--app-text);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-mobile-topbar {
+  background: rgba(20, 20, 26, 0.96);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  color: #f3f4f6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.app-shell-painel .app-sidebar--painel .app-sidebar-cta:hover {
+    transform: none;
+  }
+}
+
+/* Sidebar recolhida — botões “balão” herdados do tema escuro antigo; reequilibrar no shell claro */
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-btn {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid var(--shell-painel-sidebar-border) !important;
+  color: var(--shell-painel-link) !important;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.08);
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-btn:hover {
+  background: #fff !important;
+  color: var(--app-text) !important;
+  border-color: rgba(106, 3, 146, 0.25) !important;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-ico {
+  color: var(--shell-painel-link) !important;
+}
+
+[data-theme="dark"] html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-btn {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang {
+  background: #fff !important;
+  border: 1px solid var(--shell-painel-sidebar-border) !important;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06) !important;
+  color: var(--shell-painel-primary-ctn) !important;
+}
+
+[data-theme="dark"] html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #e9d5ff !important;
+}

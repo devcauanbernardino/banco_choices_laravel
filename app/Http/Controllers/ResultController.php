@@ -9,11 +9,45 @@ use Illuminate\Support\Facades\Auth;
 
 class ResultController extends Controller
 {
+    /**
+     * Revisão de um simulado já guardado em histórico (ícone “ver” em /simulados).
+     */
+    public function showHistory(HistoricoSimulado $historico)
+    {
+        if ((int) $historico->usuario_id !== (int) Auth::id()) {
+            abort(403);
+        }
+
+        $historico->load('materia');
+
+        $payload = $historico->detalhes_json;
+        if (! is_array($payload)) {
+            $payload = [];
+        }
+
+        $detalhes = $payload['detalhes'] ?? [];
+
+        $acertos = (int) $historico->acertos;
+        $total = (int) $historico->total_questoes;
+        $porcentagem = $total > 0 ? round(($acertos / $total) * 100, 1) : 0;
+        $modo = (string) ($payload['modo'] ?? 'estudo');
+        $materiaNome = $historico->materia?->nome ?? '';
+        $tempoSegundos = $payload['tempo_segundos'] ?? null;
+        if ($tempoSegundos !== null) {
+            $tempoSegundos = (int) $tempoSegundos;
+        }
+
+        return view('simulation.result', compact(
+            'acertos', 'total', 'porcentagem', 'detalhes', 'modo',
+            'materiaNome', 'tempoSegundos'
+        ));
+    }
+
     public function show()
     {
-        $sim = new SimulationSession();
+        $sim = new SimulationSession;
 
-        if (!$sim->isActive()) {
+        if (! $sim->isActive()) {
             return redirect()->route('dashboard');
         }
 
@@ -31,7 +65,9 @@ class ResultController extends Controller
             $q = new Question($qData);
             $userAnswer = $respostas[$i] ?? null;
             $correct = $q->isCorrect($userAnswer);
-            if ($correct) $acertos++;
+            if ($correct) {
+                $acertos++;
+            }
 
             $detalhes[] = [
                 'pergunta' => $q->getPergunta(),
@@ -55,6 +91,7 @@ class ResultController extends Controller
             'total_questoes' => $total,
             'detalhes_json' => [
                 'v' => 1,
+                'modo' => $modo,
                 'detalhes' => $detalhes,
                 'tempo_segundos' => $tempoSegundos,
             ],

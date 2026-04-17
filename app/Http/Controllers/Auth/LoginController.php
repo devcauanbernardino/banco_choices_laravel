@@ -29,7 +29,7 @@ class LoginController extends Controller
             'password' => $request->input('senha'),
         ];
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, $request->boolean('remember'))) {
             $request->session()->regenerate();
 
             $user = Auth::user();

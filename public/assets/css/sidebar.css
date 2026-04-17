@@ -37,7 +37,15 @@ body.app-private-body {
 .content {
   margin-left: var(--sidebar-w);
   min-height: 100vh;
-  transition: margin 0.25s ease;
+  transition: margin 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-main,
+  .sidebar-space,
+  .content {
+    transition: none;
+  }
 }
 
 @media (max-width: 991.98px) {

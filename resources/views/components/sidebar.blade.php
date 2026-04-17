@@ -1,66 +1,87 @@
 @php
     $navLinks = [
-        ['route' => 'dashboard',     'icon' => 'dashboard',  'label' => __('nav.dashboard'),  'short' => __('nav.dashboard')],
-        ['route' => 'stats',         'icon' => 'bar_chart',  'label' => __('nav.stats'),      'short' => __('nav.stats')],
-        ['route' => 'questionbank',  'icon' => 'quiz',       'label' => __('nav.bank'),       'short' => __('nav.bank')],
-        ['route' => 'history',       'icon' => 'assignment',  'label' => __('nav.simulados'),  'short' => __('nav.simulados')],
-        ['route' => 'addon.materias', 'icon' => 'add_shopping_cart', 'label' => __('nav.buy_subjects'), 'short' => __('nav.buy_subjects_short')],
+        ['route' => 'dashboard', 'symbol' => 'dashboard', 'mobile_icon' => 'dashboard', 'label' => __('nav.dashboard'), 'short' => __('nav.dashboard')],
+        ['route' => 'questionbank', 'symbol' => 'menu_book', 'mobile_icon' => 'quiz', 'label' => __('nav.studies'), 'short' => __('nav.studies_short')],
+        ['route' => 'history', 'symbol' => 'folder_open', 'mobile_icon' => 'folder', 'label' => __('nav.files'), 'short' => __('nav.files_short')],
+        ['route' => 'stats', 'symbol' => 'analytics', 'mobile_icon' => 'bar_chart', 'label' => __('nav.stats'), 'short' => __('nav.stats')],
+        ['route' => 'addon.materias', 'symbol' => 'shopping_cart', 'mobile_icon' => 'add_shopping_cart', 'label' => __('nav.buy_subjects'), 'short' => __('nav.buy_subjects_short')],
+        ['route' => 'profile.show', 'symbol' => 'settings', 'mobile_icon' => 'settings', 'label' => __('sidebar.settings'), 'short' => __('sidebar.settings')],
     ];
+    $sidebarUser = auth()->user();
+    $sidebarName = trim((string) ($sidebarUser->nome ?? ''));
+    $sidebarEmail = trim((string) ($sidebarUser->email ?? ''));
+    $sidebarAvatarUrl = 'https://ui-avatars.com/api/?name=' . urlencode($sidebarName !== '' ? $sidebarName : '?') . '&background=6a0392&color=fff&size=128&bold=true';
 @endphp
 
-{{-- Desktop sidebar --}}
-<aside class="app-sidebar d-none d-lg-flex flex-column" id="appSidebarDesktop"
+{{-- Desktop sidebar — referência visual: stats curadoria (nav + CTA + utilizador) --}}
+<aside class="app-sidebar app-sidebar--painel d-none d-lg-flex flex-column" id="appSidebarDesktop"
        aria-label="{{ __('nav.menu_aria') }}">
 
-    {{-- Brand --}}
     <div class="app-sidebar-brand">
         <a class="app-sidebar-brand-link text-decoration-none" href="{{ route('dashboard') }}"
            aria-label="{{ __('index.page_title') }}"
            data-sidebar-tooltip="{{ __('index.page_title') }}">
-            <span class="app-sidebar-logo-wrap app-sidebar-logo-wrap--brand" aria-hidden="true">
-                <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" width="160" height="40"
-                     class="app-sidebar-logo app-sidebar-logo--brand">
+            <span class="app-sidebar-brand-logo-box" aria-hidden="true">
+                <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" class="app-sidebar-brand-logo-img" width="40" height="40">
             </span>
-            <div class="app-sidebar-brand-text">
-                <div class="app-sidebar-sub">{{ __('sidebar.subtitle') }}</div>
+            <div class="app-sidebar-brand-text min-w-0">
+                <p class="app-sidebar-brand-title">{{ __('index.page_title') }}</p>
+                <div class="app-sidebar-sub">{{ __('sidebar.brand_tagline') }}</div>
             </div>
         </a>
     </div>
 
-    {{-- Navegação principal: única zona que rola (altura curta / zoom) --}}
     <nav class="app-sidebar-nav flex-grow-1" aria-label="{{ __('nav.menu_aria') }}">
         @foreach ($navLinks as $link)
             <a class="app-sidebar-link{{ request()->routeIs($link['route']) ? ' active' : '' }}"
                href="{{ route($link['route']) }}"
                data-sidebar-tooltip="{{ $link['label'] }}"
                @if(request()->routeIs($link['route'])) aria-current="page" @endif>
-                <span class="material-icons" aria-hidden="true">{{ $link['icon'] }}</span>
+                <span class="material-symbols-outlined{{ request()->routeIs($link['route']) ? ' is-fill' : '' }}" aria-hidden="true">{{ $link['symbol'] }}</span>
                 <span class="app-sidebar-link-text">{{ $link['label'] }}</span>
             </a>
         @endforeach
     </nav>
 
-    {{-- Rodapé fixo: conta → idioma/região → recolher painel (scroll só no .app-sidebar-nav) --}}
-    <div class="app-sidebar-end">
-        <div class="app-sidebar-footer">
-            <span class="app-sidebar-section-label">{{ __('sidebar.account') }}</span>
+    <div class="app-sidebar-bottom">
+        <a href="{{ route('questionbank') }}" class="app-sidebar-cta"
+           data-sidebar-tooltip="{{ __('sidebar.new_sim') }}">
+            <span class="app-sidebar-cta-plus" aria-hidden="true">+</span>
+            <span class="app-sidebar-cta-label">{{ __('sidebar.new_sim') }}</span>
+        </a>
 
-            <a class="app-sidebar-link{{ request()->routeIs('profile.show') ? ' active' : '' }}"
-               href="{{ route('profile.show') }}"
-               data-sidebar-tooltip="{{ __('sidebar.profile') }}">
-                <span class="material-icons" aria-hidden="true">person</span>
-                <span class="app-sidebar-link-text">{{ __('sidebar.profile') }}</span>
+        <a href="{{ route('profile.show') }}" class="app-sidebar-usercard text-decoration-none"
+           data-sidebar-tooltip="{{ __('sidebar.profile') }}">
+            <img src="{{ $sidebarAvatarUrl }}" alt="" class="app-sidebar-usercard-avatar" width="40" height="40">
+            <div class="app-sidebar-usercard-text min-w-0">
+                <div class="app-sidebar-usercard-name text-truncate">{{ $sidebarName !== '' ? $sidebarName : __('nav.profile') }}</div>
+                @if ($sidebarEmail !== '')
+                    <div class="app-sidebar-usercard-meta text-truncate">{{ $sidebarEmail }}</div>
+                @endif
+            </div>
+        </a>
+
+        <form method="POST" action="{{ route('logout') }}" class="app-sidebar-logout-form">
+            @csrf
+            <button type="submit" class="app-sidebar-logout-btn"
+                    data-sidebar-tooltip="{{ __('sidebar.logout') }}">
+                <span class="material-symbols-outlined" aria-hidden="true">logout</span>
+                <span class="app-sidebar-logout-text">{{ __('sidebar.logout') }}</span>
+            </button>
+        </form>
+
+        <div class="app-sidebar-tools d-none d-lg-flex align-items-center gap-2 px-3 pb-2">
+            <button type="button"
+                    class="app-sidebar-tool-btn js-theme-toggle-btn"
+                    aria-label="{{ __('sidebar.appearance') }}"
+                    aria-pressed="false"
+                    data-sidebar-tooltip="{{ __('sidebar.appearance') }}">
+                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--light" aria-hidden="true">light_mode</span>
+                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--dark" aria-hidden="true">dark_mode</span>
+            </button>
+            <a href="{{ route('home') }}" class="app-sidebar-tool-link" title="{{ __('topbar.help_aria') }}" data-sidebar-tooltip="{{ __('topbar.help_aria') }}">
+                <span class="material-symbols-outlined" aria-hidden="true">help</span>
             </a>
-
-            <form method="POST" action="{{ route('logout') }}">
-                @csrf
-                <button type="submit"
-                        class="app-sidebar-link app-sidebar-link-logout w-100 border-0 bg-transparent text-start"
-                        data-sidebar-tooltip="{{ __('sidebar.logout') }}">
-                    <span class="material-icons" aria-hidden="true">logout</span>
-                    <span class="app-sidebar-link-text">{{ __('sidebar.logout') }}</span>
-                </button>
-            </form>
         </div>
 
         <div class="app-sidebar-section px-3 pb-2 pt-2 app-sidebar-section--lang">
@@ -78,7 +99,7 @@
                     data-label-expanded="{{ __('sidebar.collapse') }}"
                     data-label-collapsed="{{ __('sidebar.expand') }}"
                     data-sidebar-tooltip="{{ __('sidebar.collapse_aria') }}">
-                <span class="material-icons app-sidebar-collapse-ico" aria-hidden="true">keyboard_double_arrow_left</span>
+                <span class="material-symbols-outlined app-sidebar-collapse-ico" aria-hidden="true">keyboard_double_arrow_left</span>
                 <span class="app-sidebar-collapse-label">{{ __('sidebar.collapse') }}</span>
             </button>
         </div>
@@ -97,6 +118,15 @@
                 aria-label="{{ __('sidebar.close') }}"></button>
     </div>
     <div class="offcanvas-body pb-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+            <button type="button" class="btn btn-outline-secondary flex-grow-1 js-theme-toggle-btn d-flex align-items-center justify-content-center gap-2"
+                    aria-label="{{ __('sidebar.appearance') }}">
+                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--light" aria-hidden="true">light_mode</span>
+                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--dark" aria-hidden="true">dark_mode</span>
+                <span class="small">{{ __('sidebar.appearance') }}</span>
+            </button>
+        </div>
+        <a href="{{ route('profile.show') }}" class="btn btn-outline-primary w-100 mb-3">{{ __('sidebar.profile') }}</a>
         <div class="app-sidebar-section px-0">
             <span class="app-sidebar-section-label">{{ __('lang.selector_label') }}</span>
             <div class="mt-2">
@@ -123,17 +153,10 @@
             <a class="app-mobile-bottom-item{{ $active ? ' active' : '' }}"
                href="{{ route($link['route']) }}"
                @if($active) aria-current="page" @endif>
-                <span class="material-icons" aria-hidden="true">{{ $link['icon'] }}</span>
+                <span class="material-icons" aria-hidden="true">{{ $link['mobile_icon'] }}</span>
                 <span class="app-mobile-bottom-label">{{ $link['short'] }}</span>
             </a>
         @endforeach
-
-        <a class="app-mobile-bottom-item{{ request()->routeIs('profile.show') ? ' active' : '' }}"
-           href="{{ route('profile.show') }}"
-           @if(request()->routeIs('profile.show')) aria-current="page" @endif>
-            <span class="material-icons" aria-hidden="true">person</span>
-            <span class="app-mobile-bottom-label">{{ __('nav.profile') }}</span>
-        </a>
 
         <button type="button" class="app-mobile-bottom-item app-mobile-bottom-item--btn"
                 data-bs-toggle="offcanvas" data-bs-target="#sidebarMobile"

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Materia;
 use App\Models\Pedido;
+use App\Services\MercadoPago\PaymentFulfillmentService;
 use App\Support\CheckoutDraftSession;
 use App\Support\CheckoutErrorMessages;
 use App\Support\Countries;
@@ -11,9 +12,12 @@ use App\Support\SignupFlow;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
+use MercadoPago\Client\Payment\PaymentClient;
 use MercadoPago\Client\Preference\PreferenceClient;
 use MercadoPago\Exceptions\MPApiException;
 use MercadoPago\MercadoPagoConfig;
@@ -228,9 +232,9 @@ class CheckoutController extends Controller
                 'name' => $name,
             ],
             'back_urls' => [
-                'success' => $pBase.'/payment-success?status=approved&order_id='.rawurlencode($request->input('order_id')),
+                'success' => $pBase.'/payment-success',
                 'failure' => $failureUrl,
-                'pending' => $pBase.'/payment-success?status=pending&order_id='.rawurlencode($request->input('order_id')),
+                'pending' => $pBase.'/payment-success',
             ],
             'external_reference' => $request->input('order_id'),
             'metadata' => [
@@ -279,6 +283,8 @@ class CheckoutController extends Controller
             'name' => $name,
             'total_price' => $totalPrice,
             'plan_id' => $request->input('plan_id'),
+            'plan_duration_days' => (int) $request->input('plan_duration_days'),
+            'materias_csv' => implode(',', $materiasIds),
             'checkout_kind' => $checkoutKind,
         ]);
 
@@ -287,11 +293,174 @@ class CheckoutController extends Controller
 
     public function success(Request $request)
     {
-        $status = $request->query('status', '');
-        $orderId = $request->query('order_id', '');
+        $paymentIdRaw = $request->query('payment_id') ?: $request->query('collection_id');
+        $orderId = (string) ($request->query('order_id') ?: $request->query('external_reference', ''));
         $pendingOrder = $request->session()->get('pending_order', []);
 
-        return view('checkout.success', compact('status', 'orderId', 'pendingOrder'));
+        if ($orderId === '' && ! empty($pendingOrder['order_id'])) {
+            $orderId = (string) $pendingOrder['order_id'];
+        }
+
+        $queryStatus = strtolower((string) ($request->query('status') ?: $request->query('collection_status', '')));
+        $displayStatus = $this->normalizeMercadoPagoStatusForView($queryStatus);
+
+        if (! $paymentIdRaw && $orderId !== '' && config('mercadopago.access_token')) {
+            $paymentIdRaw = $this->searchMercadoPagoPaymentIdByExternalReference($orderId);
+        }
+
+        $metaFallback = $this->buildMetaFallbackFromPendingOrder($pendingOrder);
+
+        $syncedFromMercadoPago = false;
+        if ($paymentIdRaw && config('mercadopago.access_token')) {
+            MercadoPagoConfig::setAccessToken((string) config('mercadopago.access_token'));
+            try {
+                $payment = (new PaymentClient)->get((int) $paymentIdRaw);
+                PaymentFulfillmentService::processPaymentNotification(
+                    DB::connection()->getPdo(),
+                    $payment,
+                    $metaFallback
+                );
+                $syncedFromMercadoPago = true;
+                $apiStatus = strtolower((string) ($payment->status ?? ''));
+                if ($apiStatus !== '') {
+                    $displayStatus = $this->normalizeMercadoPagoStatusForView($apiStatus) ?: $displayStatus;
+                }
+            } catch (\Throwable $e) {
+                Log::warning('MP payment sync on success page failed', [
+                    'payment_id' => $paymentIdRaw,
+                    'message' => $e->getMessage(),
+                ]);
+            }
+        }
+
+        if ($displayStatus === '' && $queryStatus !== '') {
+            $displayStatus = $this->normalizeMercadoPagoStatusForView($queryStatus);
+        }
+
+        if ($displayStatus === '') {
+            $displayStatus = 'unknown';
+        }
+
+        $status = $displayStatus;
+
+        return view('checkout.success', compact('status', 'orderId', 'pendingOrder', 'syncedFromMercadoPago'));
+    }
+
+    /**
+     * Completa plano/matérias quando a API do MP não devolve metadata no Payment (comum em sandbox / carteira).
+     *
+     * @param  array<string, mixed>  $pending
+     * @return array<string, string>
+     */
+    private function buildMetaFallbackFromPendingOrder(array $pending): array
+    {
+        if ($pending === []) {
+            return [];
+        }
+
+        $orderId = trim((string) ($pending['order_id'] ?? ''));
+        $planId = strtolower(trim((string) ($pending['plan_id'] ?? '')));
+        $email = trim((string) ($pending['email'] ?? ''));
+        $name = trim((string) ($pending['name'] ?? ''));
+        $materiasCsv = trim((string) ($pending['materias_csv'] ?? ''));
+
+        if ($planId === '' || $materiasCsv === '') {
+            return [];
+        }
+
+        $plan = SignupFlow::signupPlanForDisplayById($planId);
+        $days = $plan !== null
+            ? (int) $plan['durationDays']
+            : (int) ($pending['plan_duration_days'] ?? 0);
+
+        if ($days <= 0) {
+            return [];
+        }
+
+        $out = [
+            'plan_id' => $planId,
+            'plan_duration_days' => (string) $days,
+            'materias' => $materiasCsv,
+        ];
+
+        if ($email !== '') {
+            $out['email'] = $email;
+        }
+        if ($name !== '') {
+            $out['name'] = $name;
+        }
+        if ($orderId !== '') {
+            $out['external_reference'] = $orderId;
+        }
+
+        return $out;
+    }
+
+    /**
+     * Quando o retorno do MP não traz payment_id na query, tenta localizar o pagamento pelo external_reference (ORDER-…).
+     */
+    private function searchMercadoPagoPaymentIdByExternalReference(string $externalReference): ?string
+    {
+        $token = (string) config('mercadopago.access_token');
+        if ($token === '' || $externalReference === '') {
+            return null;
+        }
+
+        try {
+            $response = Http::withToken($token)
+                ->timeout(20)
+                ->acceptJson()
+                ->get('https://api.mercadopago.com/v1/payments/search', [
+                    'external_reference' => $externalReference,
+                    'sort' => 'date_created',
+                    'criteria' => 'desc',
+                    'limit' => 20,
+                ]);
+
+            if (! $response->successful()) {
+                Log::warning('MP payments/search failed', ['status' => $response->status(), 'body' => $response->body()]);
+
+                return null;
+            }
+
+            $results = $response->json('results', []);
+            if (! is_array($results)) {
+                return null;
+            }
+
+            foreach ($results as $row) {
+                if (! is_array($row)) {
+                    continue;
+                }
+                if (($row['status'] ?? '') === 'approved' && isset($row['id'])) {
+                    return (string) (int) $row['id'];
+                }
+            }
+
+            if (isset($results[0]['id'])) {
+                return (string) (int) $results[0]['id'];
+            }
+        } catch (\Throwable $e) {
+            Log::warning('MP payments/search exception', ['message' => $e->getMessage()]);
+        }
+
+        return null;
+    }
+
+    private function normalizeMercadoPagoStatusForView(string $status): string
+    {
+        $s = strtolower(trim($status));
+        if ($s === 'approved') {
+            return 'approved';
+        }
+        if (in_array($s, ['pending', 'in_process', 'authorized'], true)) {
+            return 'pending';
+        }
+        if (in_array($s, ['rejected', 'cancelled', 'refunded', 'charged_back', 'in_mediation'], true)) {
+            return 'failed';
+        }
+
+        return '';
     }
 
     /**

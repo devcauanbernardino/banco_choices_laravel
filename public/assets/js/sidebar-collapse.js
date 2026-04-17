@@ -1,4 +1,5 @@
 (function () {
+  /** @see resources/views/layouts/app.blade.php (inline script before first paint) */
   var KEY = 'bancochoices-sidebar-collapsed';
   var html = document.documentElement;
 

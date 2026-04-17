@@ -3,171 +3,147 @@
 @section('title', __('login.title_page'))
 
 @section('body_attr')
- class="login-page"
+ class="auth-login-exemplo"
 @endsection
 
 @push('styles')
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-<link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/css/login-exemplo.css') }}">
 @endpush
 
 @section('content')
-<div class="container-fluid p-0">
-    <div class="row g-0 login-wrapper">
-        {{-- Left sidebar --}}
-        <div class="col-lg-7 d-none d-lg-flex login-sidebar align-items-center justify-content-center p-5 text-white"
-             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC445AKHSVeDzgOnDg89cqG-J45BnnX0jlKJqEDVoAqDa9PF3GuM8AV8eTUyanRvwnfvHSOOc9cPkyCbrND0UX4AnWDqxH2GdbLBAi9kTxBbiKYwhJwpp4McWRaQzKp14-JLsiLfjttFhj-vIaYBR95BlK0Z6arvuWAXGmsEtoBH76JvcIP81a7sjWaeBwLZayIcGfCms3TkEBhVMG3vnN2NFTTcLzxwCoLuoIZokjnUni0LZX0MQe68-QmFcZSHglB4zvHEoKo4mBK');">
-            <div class="login-sidebar-overlay"></div>
-            <div class="sidebar-content mw-100" style="max-width: 600px;">
-                <div class="mb-4">
-                    <div class="login-sidebar-logo-wrap">
-                        <img class="login-sidebar-logo" src="{{ \App\Support\Branding::logoUrl() }}"
-                             alt="" width="200" height="56">
-                    </div>
-                </div>
-                <h1 class="display-4 fw-bold mb-4">{{ __('login.sidebar_heading') }}</h1>
-                <p class="lead mb-5 opacity-75">{{ __('login.sidebar_lead') }}</p>
-                <div class="d-flex align-items-center">
-                    <div class="d-flex me-3">
-                        <img alt="" class="rounded-circle border border-2 border-white" height="40" width="40"
-                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxe1tbaTNqG25ZU6ZcY-9ufHepww8gfgPl-ieHIqH07iZB3YuZK8N451KZArbv127uTUpgUurDmQVTT0_Gwsm0cHMch9Fb25sT-VdWBH-2xHBxIeaOjCk2RyqvsxG3glSqIbhTrM_LcJNEfHOpYgBIZdihw9q5sBwxdj-Eg6vTjhpwIQlzn0Ocl4yaaj8SP9ut6MpDtYu5DrJ3WNf6uCWZZRExD-kw2fr26OB5tlssXQ1bISDWOAO9bqJITIItAaZbYIfkY5CpMP0F">
-                        <img alt="" class="rounded-circle border border-2 border-white" height="40" width="40"
-                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgkPqA_zdy-qAo6UZSAQ8EOr3IEyzLX32nn8c0RGU9O0b75-UcMj1npe9KvD7UsZPdDzIFDsOx1_ax3LSKXc6wEyqr2lci9B02u5_ujCLITqp8MGix6Y_BfMerXX4zLuI3I1wF-OpsjorT__zm8cEoU9z9HBaRk_9aT6nwy8BqKfPZ4g94ocU_l4mqYfNjh0nKz0wislXhAd6TlPcML-Cmy18BY1y90HzMzQ1coutgMPgnLXqlBrG8OxFDIiy2ETMb-V9_3p93N8n_"
-                             style="margin-left: -12px;">
-                        <img alt="" class="rounded-circle border border-2 border-white" height="40" width="40"
-                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyUl43p5wt4ZdqUPkBPODkwqpYX6zRlz8eMHICsBbbCF0q_Oi88jfQvvLCyBB7r9IZbt403sH96XQan5fCryqR1lz8a-xrRTlhnIXNUbPQGevGUpumP-JdhnaEFHGG3WeGVeZykzrGCpASks--pM8pnWTzj-CDFnK7_rBOK7zZ07LomQB2oWpOEMdLi5hBK71bNfwtlBCNJ6ycwZMhlRgYcKLXKUKtySeoB1pGJMGZOArpd6AkXgaVkJkVOjUqAI-8AhcRDs2w78Ez"
-                             style="margin-left: -12px;">
-                    </div>
-                    <span class="small opacity-75">{{ __('login.sidebar_social_proof') }}</span>
-                </div>
+<div class="auth-login-wrap">
+    <div class="auth-login-bg" aria-hidden="true">
+        <div class="auth-login-bg-blob auth-login-bg-blob--1"></div>
+        <div class="auth-login-bg-blob auth-login-bg-blob--2"></div>
+    </div>
+
+    <header class="auth-login-topbar">
+        <a href="{{ route('home') }}" class="auth-login-back">
+            <span class="material-symbols-outlined" style="font-size: 1.125rem;">arrow_back</span>
+            <span>{{ __('login.back_home') }}</span>
+        </a>
+        <div class="navbar-actions navbar-actions--landing login-lang-toolbar flex-shrink-0">
+            <div class="navbar-actions__inner">
+                @include('components.language-selector')
             </div>
         </div>
+    </header>
 
-        {{-- Right form column --}}
-        <div class="col-12 col-lg-5 login-form-column">
-            <div class="login-form-inner">
-                <div class="login-form-container">
-                    {{-- Mobile logo --}}
-                    <div class="d-lg-none login-mobile-brand text-center">
-                        <a href="{{ route('home') }}" class="login-mobile-logo-link d-inline-block text-decoration-none" aria-label="{{ __('index.page_title') }}">
-                            <img class="login-mobile-logo" src="{{ \App\Support\Branding::logoUrl() }}"
-                                 alt="" width="280" height="78" decoding="async">
-                        </a>
+    <main class="auth-login-main">
+        <div class="auth-login-inner">
+            <div class="auth-login-brand">
+                <div class="auth-login-brand-logo">
+                    <a href="{{ route('home') }}" class="text-decoration-none d-inline-block" aria-label="{{ __('index.page_title') }}">
+                        <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" width="280" height="90" decoding="async">
+                    </a>
+                </div>
+                <p class="auth-login-tagline">{{ __('login.portal_tagline') }}</p>
+            </div>
+
+            <div class="auth-login-card">
+                @if (session('registered'))
+                    <div class="alert alert-success auth-login-alert alert-dismissible fade show" role="alert">
+                        {{ __('login.success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
+                    </div>
+                @endif
+
+                @if (session('status'))
+                    <div class="alert alert-success auth-login-alert alert-dismissible fade show" role="alert">
+                        {{ session('status') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
+                    </div>
+                @endif
+
+                @if (session('error'))
+                    <div class="alert alert-warning auth-login-alert alert-dismissible fade show" role="alert">
+                        {{ __('login.err.' . session('error')) }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
+                    </div>
+                @endif
+
+                @if ($errors->any())
+                    <div class="alert alert-danger auth-login-alert alert-dismissible fade show" role="alert">
+                        @foreach ($errors->all() as $error)
+                            <div>{{ $error }}</div>
+                        @endforeach
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
+                    </div>
+                @endif
+
+                <form action="{{ route('login') }}" method="post" id="loginForm" class="auth-login-form">
+                    @csrf
+                    <div class="auth-login-field">
+                        <label for="emailInput">{{ __('login.email') }}</label>
+                        <div class="auth-login-input-wrap">
+                            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                            <input class="auth-login-input" id="emailInput" name="email" type="email"
+                                   inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false"
+                                   placeholder="{{ __('login.email_placeholder') }}" required
+                                   value="{{ old('email') }}"
+                                   aria-required="true">
+                        </div>
                     </div>
 
-                    <header class="login-form-header">
-                        <div class="d-flex flex-wrap align-items-start justify-content-between gap-3 mb-2">
-                            <a href="{{ route('home') }}" class="login-back-link mb-0 align-self-center">
-                                <i class="bi bi-arrow-left" aria-hidden="true"></i>
-                                <span>{{ __('login.back_home') }}</span>
-                            </a>
-                            <div class="navbar-actions navbar-actions--landing login-lang-toolbar flex-shrink-0 ms-auto">
-                                <div class="navbar-actions__inner">
-                                    @include('components.language-selector')
-                                </div>
-                            </div>
+                    <div class="auth-login-field">
+                        <div class="auth-login-field-head">
+                            <label for="passwordInput">{{ __('login.password') }}</label>
+                            <a class="auth-login-forgot" href="{{ route('password.request') }}">{{ __('login.forgot') }}</a>
                         </div>
-                        <h2 class="login-title">{{ __('login.heading') }}</h2>
-                    </header>
-
-                    {{-- Success message --}}
-                    @if (session('registered'))
-                        <div class="alert alert-success login-alert alert-dismissible fade show" role="alert">
-                            {{ __('login.success') }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
-                        </div>
-                    @endif
-
-                    {{-- Error message --}}
-                    @if (session('error'))
-                        <div class="alert alert-warning login-alert alert-dismissible fade show" role="alert">
-                            {{ __('login.err.' . session('error')) }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
-                        </div>
-                    @endif
-
-                    @if ($errors->any())
-                        <div class="alert alert-danger login-alert alert-dismissible fade show" role="alert">
-                            @foreach ($errors->all() as $error)
-                                <div>{{ $error }}</div>
-                            @endforeach
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('login.close') }}"></button>
-                        </div>
-                    @endif
-
-                    {{-- Login form --}}
-                    <form action="{{ route('login') }}" method="post" id="loginForm" class="login-form">
-                        @csrf
-                        <div class="login-field">
-                            <label class="login-field-label" for="emailInput">
-                                {{ __('login.email') }}
-                            </label>
-                            <div class="input-group input-group-lg login-input-group">
-                                <span class="input-group-text" aria-hidden="true"><i class="bi bi-envelope"></i></span>
-                                <input class="form-control" id="emailInput" name="email" type="email"
-                                       inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false"
-                                       placeholder="{{ __('login.email_placeholder') }}" required
-                                       value="{{ old('email') }}"
-                                       aria-required="true">
-                            </div>
-                        </div>
-
-                        <div class="login-field">
-                            <label class="login-field-label" for="passwordInput">
-                                {{ __('login.password') }}
-                            </label>
-                            <div class="input-group input-group-lg login-input-group">
-                                <span class="input-group-text" aria-hidden="true"><i class="bi bi-lock"></i></span>
-                                <input class="form-control" id="passwordInput" name="senha" type="password"
-                                       autocomplete="current-password" required
-                                       placeholder="{{ __('login.password_placeholder') }}" minlength="1"
-                                       aria-required="true">
-                                <button type="button" class="btn login-password-toggle" id="togglePassword"
-                                        aria-label="{{ __('login.show_pwd') }}" aria-controls="passwordInput" aria-pressed="false">
-                                    <i class="bi bi-eye" id="togglePasswordIcon" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center login-row-extras">
-                            <div class="form-check">
-                                <input class="form-check-input" id="rememberMe" type="checkbox">
-                                <label class="form-check-label small" for="rememberMe">
-                                    {{ __('login.remember') }}
-                                </label>
-                            </div>
-                            <a class="text-navy text-decoration-none small fw-bold" href="mailto:contato@bancodechoices.com">{{ __('login.forgot') }}</a>
-                        </div>
-
-                        <div class="d-grid login-submit-wrap">
-                            <button class="btn btn-primary btn-lg py-3 fw-bold shadow-sm w-100" type="submit" id="submitBtn">
-                                {{ __('login.submit') }} <i class="bi bi-box-arrow-in-right ms-2" aria-hidden="true"></i>
+                        <div class="auth-login-input-wrap auth-login-input-wrap--pwd">
+                            <span class="material-symbols-outlined" aria-hidden="true">lock</span>
+                            <input class="auth-login-input" id="passwordInput" name="senha" type="password"
+                                   autocomplete="current-password" required
+                                   placeholder="{{ __('login.password_placeholder') }}" minlength="1"
+                                   aria-required="true">
+                            <button type="button" class="auth-login-pwd-toggle" id="togglePassword"
+                                    aria-label="{{ __('login.show_pwd') }}" aria-controls="passwordInput" aria-pressed="false">
+                                <span class="material-symbols-outlined" id="togglePasswordIcon" aria-hidden="true">visibility</span>
                             </button>
                         </div>
-                    </form>
-
-                    <div class="login-signup-cta">
-                        <p class="login-signup-text mb-0">
-                            {{ __('login.signup') }}
-                            <a class="login-signup-link" href="{{ route('signup.materias') }}">{{ __('login.signup_link') }}</a>
-                        </p>
                     </div>
 
-                    <footer class="login-footer">
-                        <nav class="login-footer-nav" aria-label="Legal">
-                            <a href="{{ route('home') }}#privacidad">{{ __('login.footer_privacy') }}</a>
-                            <span class="login-footer-dot" aria-hidden="true"></span>
-                            <a href="{{ route('home') }}#terminos">{{ __('login.footer_terms') }}</a>
-                            <span class="login-footer-dot" aria-hidden="true"></span>
-                            <a href="mailto:contato@bancodechoices.com">{{ __('login.footer_contact') }}</a>
-                        </nav>
-                        <p class="login-footer-copy">{{ __('login.footer_copy') }}</p>
-                    </footer>
+                    <div class="auth-login-check">
+                        <input class="form-check-input" id="rememberMe" type="checkbox" name="remember" value="1">
+                        <label class="form-check-label" for="rememberMe">{{ __('login.remember') }}</label>
+                    </div>
+
+                    <button class="auth-login-submit" type="submit" id="submitBtn">
+                        <span data-login-submit-label>{{ __('login.submit_long') }}</span>
+                        <span class="material-symbols-outlined" aria-hidden="true">login</span>
+                    </button>
+                </form>
+
+                <div class="auth-login-divider">
+                    <p>{{ __('login.signup_prompt') }}</p>
+                    <a href="{{ route('signup.materias') }}">{{ __('login.signup_link') }}</a>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="auth-login-footer">
+        <div class="auth-login-footer-inner">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                    <strong class="auth-login-headline d-block text-purple-900 mb-1" style="color: #3b0764;">{{ __('index.page_title') }}</strong>
+                    <p class="small text-secondary mb-0">{{ __('login.footer_tagline') }}</p>
+                </div>
+                <div class="col-md-5">
+                    <nav class="d-flex flex-wrap gap-3 justify-content-md-center" aria-label="Legal">
+                        <a href="{{ route('home') }}#privacidad">{{ __('login.footer_privacy') }}</a>
+                        <a href="{{ route('home') }}#terminos">{{ __('login.footer_terms') }}</a>
+                        <a href="mailto:contato@bancodechoices.com">{{ __('login.footer_contact') }}</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <p class="auth-login-footer-copy">{{ __('login.footer_copy') }}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 @endsection
 
@@ -180,21 +156,23 @@
         const pwd = document.getElementById('passwordInput');
         const toggle = document.getElementById('togglePassword');
         const icon = document.getElementById('togglePasswordIcon');
-
         if (toggle && pwd && icon) {
             toggle.addEventListener('click', function () {
                 const show = pwd.type === 'password';
                 pwd.type = show ? 'text' : 'password';
-                icon.className = show ? 'bi bi-eye-slash' : 'bi bi-eye';
+                icon.textContent = show ? 'visibility_off' : 'visibility';
                 toggle.setAttribute('aria-label', show ? @json(__('login.hide_pwd')) : @json(__('login.show_pwd')));
                 toggle.setAttribute('aria-pressed', show ? 'true' : 'false');
             });
         }
 
-        form.addEventListener('submit', function () {
-            btn.classList.add('btn-loading');
-            btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> ' + @json(__('login.submitting'));
-        });
+        if (form && btn) {
+            form.addEventListener('submit', function () {
+                btn.classList.add('btn-loading');
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>' + @json(__('login.submitting'));
+            });
+        }
     });
 </script>
 @endpush

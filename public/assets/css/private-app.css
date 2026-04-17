@@ -16,6 +16,23 @@
   z-index: 1;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes app-main-enter {
+    from {
+      opacity: 0.94;
+      transform: translateY(3px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .app-content-wrap > .app-main {
+    animation: app-main-enter 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 /* ---------- Utilitários ---------- */
 .text-primary   { color: var(--bc-purple) !important; }
 .bg-primary-soft { background-color: rgba(106, 3, 146, 0.1); }
@@ -434,7 +451,8 @@
   transform: translateY(-1px);
 }
 
-.bc-topbar-btn .material-icons {
+.bc-topbar-btn .material-icons,
+.bc-topbar-btn .material-symbols-outlined {
   font-size: 20px;
   line-height: 1;
 }

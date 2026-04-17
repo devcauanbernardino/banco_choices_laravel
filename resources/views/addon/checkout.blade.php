@@ -23,6 +23,30 @@
         border-bottom: 1px solid var(--app-border, #e5e7eb);
         font-size: 0.9rem;
     }
+    #addon-pay-form .checkout-terms-wrap {
+        text-align: left;
+        line-height: normal;
+    }
+    #addon-pay-form .checkout-terms-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        width: 100%;
+    }
+    #addon-pay-form .checkout-terms-row .form-check-input[type="checkbox"] {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-top: 0;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+    #addon-pay-form .checkout-terms-row .form-check-label {
+        cursor: pointer;
+        line-height: 1.45;
+    }
+    #addon-pay-form .checkout-terms-row .form-check-label a {
+        word-break: break-word;
+    }
 </style>
 @endpush
 
@@ -82,12 +106,14 @@
                         <p class="small text-body-secondary border-start border-3 border-secondary ps-2 mb-3">{{ __('signup.checkout.mp_redirect_hint') }}</p>
                     @endif
 
-                    <div class="form-check mb-3">
-                        <input type="checkbox" id="addon-terms" name="terms" class="form-check-input" value="1" required>
-                        <label class="form-check-label small" for="addon-terms">
-                            {{ __('signup.checkout.terms_before') }}
-                            <a href="{{ route('home') }}#terminos" target="_blank" rel="noopener noreferrer">{{ __('signup.checkout.terms_link') }}</a>{{ __('signup.checkout.terms_after') }}
-                        </label>
+                    <div class="checkout-terms-wrap mb-3">
+                        <div class="checkout-terms-row">
+                            <input type="checkbox" id="addon-terms" name="terms" class="form-check-input" value="1" required
+                                   aria-required="true">
+                            <label class="form-check-label small mb-0" for="addon-terms">
+                                {!! __('signup.checkout.terms_label', ['url' => route('home').'#terminos']) !!}
+                            </label>
+                        </div>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fw-bold" id="addon-submit">
                         <i class="bi bi-lock-fill me-2"></i>

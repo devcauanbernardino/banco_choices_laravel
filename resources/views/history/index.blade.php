@@ -86,7 +86,7 @@
                                 </span>
                             </td>
                             <td class="text-center">
-                                <a href="{{ route('simulation.result', ['id' => $item['id']]) }}" class="bc-btn-action" title="{{ __('simulados.review_aria') }}">
+                                <a href="{{ route('simulation.result', ['historico' => $item['id']]) }}" class="bc-btn-action" title="{{ __('simulados.review_aria') }}">
                                     <span class="material-icons fs-5">visibility</span>
                                 </a>
                             </td>
