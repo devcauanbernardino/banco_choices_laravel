@@ -81,7 +81,8 @@
 
 .navbar-actions--landing .btn-navbar-lang .bc-lang-icon-svg,
 .app-sidebar .btn-navbar-lang .bc-lang-icon-svg,
-.app-offcanvas-more .btn-navbar-lang .bc-lang-icon-svg {
+.app-offcanvas-more .btn-navbar-lang .bc-lang-icon-svg,
+.app-content-topbar .btn-navbar-lang .bc-lang-icon-svg {
     flex-shrink: 0;
     color: var(--bs-primary);
     opacity: 0.9;
@@ -102,7 +103,8 @@
 }
 
 .app-sidebar .btn-navbar-lang,
-.app-offcanvas-more .btn-navbar-lang {
+.app-offcanvas-more .btn-navbar-lang,
+.app-content-topbar .btn-navbar-lang {
     --bs-btn-padding-x: 1rem;
     --bs-btn-padding-y: 0.5rem;
     min-height: 2.625rem;
@@ -130,7 +132,10 @@
 .app-sidebar .btn-navbar-lang.show,
 .app-offcanvas-more .btn-navbar-lang:hover,
 .app-offcanvas-more .btn-navbar-lang:focus,
-.app-offcanvas-more .btn-navbar-lang.show {
+.app-offcanvas-more .btn-navbar-lang.show,
+.app-content-topbar .btn-navbar-lang:hover,
+.app-content-topbar .btn-navbar-lang:focus,
+.app-content-topbar .btn-navbar-lang.show {
     border-color: rgba(106, 3, 146, 0.45);
     color: var(--bs-primary);
     background: var(--app-surface);
@@ -206,9 +211,11 @@
     overflow: hidden;
 }
 
-/* Sidebar / offcanvas: acompanha tema (no escuro fica escuro como o painel) */
+/* Sidebar / offcanvas / topbar painel: acompanha tema */
 .app-sidebar .bc-lang-menu--landing,
-.app-offcanvas-more .bc-lang-menu--landing {
+.app-offcanvas-more .bc-lang-menu--landing,
+.app-content-topbar .bc-lang-menu--landing {
+    z-index: 1080;
     min-width: 268px;
     padding: 0.35rem 0.4rem;
     margin-top: 0.4rem !important;
@@ -230,7 +237,8 @@
 }
 
 .app-sidebar .bc-lang-menu__heading,
-.app-offcanvas-more .bc-lang-menu__heading {
+.app-offcanvas-more .bc-lang-menu__heading,
+.app-content-topbar .bc-lang-menu__heading {
     font-size: 0.6875rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -268,7 +276,8 @@
 }
 
 .app-sidebar .bc-lang-menu__item,
-.app-offcanvas-more .bc-lang-menu__item {
+.app-offcanvas-more .bc-lang-menu__item,
+.app-content-topbar .bc-lang-menu__item {
     display: flex;
     align-items: center;
     gap: 0.65rem;
@@ -296,7 +305,8 @@
 }
 
 .app-sidebar .bc-lang-menu__code,
-.app-offcanvas-more .bc-lang-menu__code {
+.app-offcanvas-more .bc-lang-menu__code,
+.app-content-topbar .bc-lang-menu__code {
     font-size: 0.6875rem;
     font-weight: 800;
     letter-spacing: 0.06em;
@@ -315,7 +325,8 @@
 }
 
 .app-sidebar .bc-lang-menu__item:hover,
-.app-offcanvas-more .bc-lang-menu__item:hover {
+.app-offcanvas-more .bc-lang-menu__item:hover,
+.app-content-topbar .bc-lang-menu__item:hover {
     background: rgba(106, 3, 146, 0.1);
     color: var(--bc-lang-accent);
 }
@@ -339,7 +350,8 @@
 }
 
 .app-sidebar .bc-lang-menu__item--active,
-.app-offcanvas-more .bc-lang-menu__item--active {
+.app-offcanvas-more .bc-lang-menu__item--active,
+.app-content-topbar .bc-lang-menu__item--active {
     background: var(--bc-lang-accent-soft);
     border-left-color: var(--bc-lang-accent);
     color: var(--bc-lang-accent);
@@ -349,13 +361,15 @@
 }
 
 .app-sidebar .bc-lang-menu__item--active .bc-lang-menu__code,
-.app-offcanvas-more .bc-lang-menu__item--active .bc-lang-menu__code {
+.app-offcanvas-more .bc-lang-menu__item--active .bc-lang-menu__code,
+.app-content-topbar .bc-lang-menu__item--active .bc-lang-menu__code {
     color: var(--bc-lang-accent);
 }
 
 .navbar-actions--landing .bc-lang-menu__flag,
 .app-sidebar .bc-lang-menu__flag,
-.app-offcanvas-more .bc-lang-menu__flag {
+.app-offcanvas-more .bc-lang-menu__flag,
+.app-content-topbar .bc-lang-menu__flag {
     font-size: 1.2rem;
     line-height: 1;
     width: 1.75rem;
@@ -365,7 +379,8 @@
 
 .navbar-actions--landing .bc-lang-menu__label,
 .app-sidebar .bc-lang-menu__label,
-.app-offcanvas-more .bc-lang-menu__label {
+.app-offcanvas-more .bc-lang-menu__label,
+.app-content-topbar .bc-lang-menu__label {
     flex: 1 1 auto;
     min-width: 0;
     line-height: 1.35;
@@ -375,7 +390,8 @@
 
 .navbar-actions--landing .bc-lang-menu__tick,
 .app-sidebar .bc-lang-menu__tick,
-.app-offcanvas-more .bc-lang-menu__tick {
+.app-offcanvas-more .bc-lang-menu__tick,
+.app-content-topbar .bc-lang-menu__tick {
     width: 1.35rem;
     height: 1.35rem;
     flex-shrink: 0;
@@ -386,7 +402,8 @@
 
 .navbar-actions--landing .bc-lang-menu__check,
 .app-sidebar .bc-lang-menu__check,
-.app-offcanvas-more .bc-lang-menu__check {
+.app-offcanvas-more .bc-lang-menu__check,
+.app-content-topbar .bc-lang-menu__check {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -416,75 +433,8 @@ html[data-bs-theme="light"] {
     z-index: 1080;
 }
 
-/* App autenticado: acima do rodapé da sidebar (1030) e do conteúdo principal */
-.app-sidebar .bc-lang-menu--landing,
-.app-offcanvas-more .bc-lang-menu--landing {
-    z-index: 1080;
-}
-
-/**
- * Sidebar desktop: a coluna é sempre escura. O seletor de idioma fica escuro
- * também quando o app está em modo claro (evita pill/menu brancos no gradiente).
- */
-.app-sidebar .btn-navbar-lang {
-    background: rgba(255, 255, 255, 0.08) !important;
-    border-color: rgba(255, 255, 255, 0.18) !important;
-    color: rgba(255, 255, 255, 0.92) !important;
-    box-shadow: none !important;
-}
-
-.app-sidebar .btn-navbar-lang .bc-lang-icon-svg {
-    color: rgba(255, 255, 255, 0.9) !important;
-    opacity: 1;
-}
-
-.app-sidebar .btn-navbar-lang:hover,
-.app-sidebar .btn-navbar-lang:focus,
-.app-sidebar .btn-navbar-lang.show {
-    background: rgba(255, 255, 255, 0.14) !important;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-    color: #fff !important;
-}
-
-.app-sidebar .btn-navbar-lang.dropdown-toggle::after {
-    border-top-color: rgba(255, 255, 255, 0.78) !important;
-}
-
-/* Aberto: secção de idioma fica acima de .app-sidebar-footer (irmão seguinte no DOM). */
-.app-sidebar .app-sidebar-section--lang:has(.bc-lang-selector.show) {
+/* Aberto: evita recorte do menu na barra sticky */
+.app-content-topbar-lang:has(.bc-lang-selector.show) {
     position: relative;
-    z-index: 1080;
-}
-
-.app-sidebar .bc-lang-menu--landing {
-    background: #161018 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    box-shadow:
-        0 16px 48px rgba(0, 0, 0, 0.55),
-        0 2px 10px rgba(0, 0, 0, 0.35) !important;
-    --bs-dropdown-bg: #161018;
-}
-
-.app-sidebar .bc-lang-menu__heading {
-    color: rgba(255, 255, 255, 0.42) !important;
-}
-
-.app-sidebar .bc-lang-menu__item:not(.bc-lang-menu__item--active) {
-    color: rgba(236, 236, 241, 0.88) !important;
-}
-
-.app-sidebar .bc-lang-menu__item:hover {
-    background: rgba(255, 255, 255, 0.07) !important;
-    color: #f5e9ff !important;
-}
-
-.app-sidebar .bc-lang-menu__item--active {
-    color: #e9d5ff !important;
-    background: rgba(124, 58, 237, 0.22) !important;
-    border-left-color: #a855f7 !important;
-}
-
-.app-sidebar .bc-lang-menu__check {
-    background: #9333ea !important;
-    color: #fff !important;
+    z-index: 1085;
 }

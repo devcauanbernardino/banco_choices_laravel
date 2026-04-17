@@ -50,6 +50,19 @@
             <span class="app-sidebar-cta-label">{{ __('sidebar.new_sim') }}</span>
         </a>
 
+        <div class="app-sidebar-collapse-wrap d-none d-lg-flex">
+            <button type="button" class="app-sidebar-collapse-btn js-sidebar-toggle"
+                    aria-expanded="true" aria-controls="appSidebarDesktop"
+                    data-tooltip-expanded="{{ __('sidebar.collapse_aria') }}"
+                    data-tooltip-collapsed="{{ __('sidebar.expand_aria') }}"
+                    data-label-expanded="{{ __('sidebar.collapse') }}"
+                    data-label-collapsed="{{ __('sidebar.expand') }}"
+                    data-sidebar-tooltip="{{ __('sidebar.collapse_aria') }}">
+                <span class="material-symbols-outlined app-sidebar-collapse-ico" aria-hidden="true">keyboard_double_arrow_left</span>
+                <span class="app-sidebar-collapse-label">{{ __('sidebar.collapse') }}</span>
+            </button>
+        </div>
+
         <a href="{{ route('profile.show') }}" class="app-sidebar-usercard text-decoration-none"
            data-sidebar-tooltip="{{ __('sidebar.profile') }}">
             <img src="{{ $sidebarAvatarUrl }}" alt="" class="app-sidebar-usercard-avatar" width="40" height="40">
@@ -69,40 +82,6 @@
                 <span class="app-sidebar-logout-text">{{ __('sidebar.logout') }}</span>
             </button>
         </form>
-
-        <div class="app-sidebar-tools d-none d-lg-flex align-items-center gap-2 px-3 pb-2">
-            <button type="button"
-                    class="app-sidebar-tool-btn js-theme-toggle-btn"
-                    aria-label="{{ __('sidebar.appearance') }}"
-                    aria-pressed="false"
-                    data-sidebar-tooltip="{{ __('sidebar.appearance') }}">
-                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--light" aria-hidden="true">light_mode</span>
-                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--dark" aria-hidden="true">dark_mode</span>
-            </button>
-            <a href="{{ route('home') }}" class="app-sidebar-tool-link" title="{{ __('topbar.help_aria') }}" data-sidebar-tooltip="{{ __('topbar.help_aria') }}">
-                <span class="material-symbols-outlined" aria-hidden="true">help</span>
-            </a>
-        </div>
-
-        <div class="app-sidebar-section px-3 pb-2 pt-2 app-sidebar-section--lang">
-            <span class="app-sidebar-section-label">{{ __('lang.selector_label') }}</span>
-            <div class="mt-2">
-                @include('components.language-selector', ['sidebarCollapsedTooltip' => __('lang.selector_label')])
-            </div>
-        </div>
-
-        <div class="app-sidebar-collapse-wrap d-none d-lg-flex">
-            <button type="button" class="app-sidebar-collapse-btn js-sidebar-toggle"
-                    aria-expanded="true" aria-controls="appSidebarDesktop"
-                    data-tooltip-expanded="{{ __('sidebar.collapse_aria') }}"
-                    data-tooltip-collapsed="{{ __('sidebar.expand_aria') }}"
-                    data-label-expanded="{{ __('sidebar.collapse') }}"
-                    data-label-collapsed="{{ __('sidebar.expand') }}"
-                    data-sidebar-tooltip="{{ __('sidebar.collapse_aria') }}">
-                <span class="material-symbols-outlined app-sidebar-collapse-ico" aria-hidden="true">keyboard_double_arrow_left</span>
-                <span class="app-sidebar-collapse-label">{{ __('sidebar.collapse') }}</span>
-            </button>
-        </div>
     </div>
 </aside>
 
@@ -117,31 +96,29 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                 aria-label="{{ __('sidebar.close') }}"></button>
     </div>
-    <div class="offcanvas-body pb-4">
-        <div class="d-flex align-items-center gap-2 mb-3">
-            <button type="button" class="btn btn-outline-secondary flex-grow-1 js-theme-toggle-btn d-flex align-items-center justify-content-center gap-2"
-                    aria-label="{{ __('sidebar.appearance') }}">
-                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--light" aria-hidden="true">light_mode</span>
-                <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--dark" aria-hidden="true">dark_mode</span>
-                <span class="small">{{ __('sidebar.appearance') }}</span>
-            </button>
+    <div class="offcanvas-body app-offcanvas-more-body d-flex flex-column pb-4">
+        <div class="flex-grow-1 min-h-0" aria-hidden="true"></div>
+
+        <div class="app-offcanvas-account flex-shrink-0 pt-1">
+            <a href="{{ route('profile.show') }}" class="app-sidebar-usercard app-sidebar-usercard--sheet text-decoration-none d-flex">
+                <img src="{{ $sidebarAvatarUrl }}" alt="" class="app-sidebar-usercard-avatar" width="40" height="40">
+                <div class="app-sidebar-usercard-text min-w-0">
+                    <div class="app-sidebar-usercard-name text-truncate">{{ $sidebarName !== '' ? $sidebarName : __('nav.profile') }}</div>
+                    @if ($sidebarEmail !== '')
+                        <div class="app-sidebar-usercard-meta text-truncate">{{ $sidebarEmail }}</div>
+                    @endif
+                </div>
+            </a>
+            <form method="POST" action="{{ route('logout') }}" class="app-sidebar-logout-form mt-2 mb-0">
+                @csrf
+                <button type="submit"
+                        class="app-sidebar-link app-sidebar-link-logout d-flex rounded-3 w-100 border-0 bg-transparent text-start align-items-center"
+                        title="{{ __('sidebar.logout') }}">
+                    <span class="material-icons" aria-hidden="true">logout</span>
+                    <span class="app-sidebar-link-text">{{ __('sidebar.logout') }}</span>
+                </button>
+            </form>
         </div>
-        <a href="{{ route('profile.show') }}" class="btn btn-outline-primary w-100 mb-3">{{ __('sidebar.profile') }}</a>
-        <div class="app-sidebar-section px-0">
-            <span class="app-sidebar-section-label">{{ __('lang.selector_label') }}</span>
-            <div class="mt-2">
-                @include('components.language-selector')
-            </div>
-        </div>
-        <form method="POST" action="{{ route('logout') }}">
-            @csrf
-            <button type="submit"
-                    class="app-sidebar-link app-sidebar-link-logout mt-3 d-flex rounded-3 w-100 border-0 bg-transparent text-start"
-                    title="{{ __('sidebar.logout') }}">
-                <span class="material-icons" aria-hidden="true">logout</span>
-                <span class="app-sidebar-link-text">{{ __('sidebar.logout') }}</span>
-            </button>
-        </form>
     </div>
 </div>
 

@@ -153,9 +153,13 @@
                 <div class="bc-card p-4 border-danger border-opacity-25">
                     <h2 class="h6 fw-bold mb-2 text-danger">{{ __('perfil.logout_section') }}</h2>
                     <p class="small text-muted mb-3">{{ __('perfil.logout_hint') }}</p>
-                    <a href="{{ route('logout') }}" class="btn btn-outline-danger w-100 d-inline-flex align-items-center justify-content-center gap-2">
-                        <span class="material-icons fs-6">logout</span> {{ __('perfil.logout_btn') }}
-                    </a>
+                    <form method="POST" action="{{ route('logout') }}" class="m-0">
+                        @csrf
+                        <button type="submit"
+                                class="btn btn-outline-danger w-100 d-inline-flex align-items-center justify-content-center gap-2">
+                            <span class="material-icons fs-6" aria-hidden="true">logout</span> {{ __('perfil.logout_btn') }}
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

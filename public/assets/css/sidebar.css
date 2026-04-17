@@ -62,7 +62,7 @@ body.app-private-body {
     padding: 1rem !important;
   }
 
-  .app-mobile-topbar {
+  .app-content-topbar {
     padding-top: calc(0.65rem + env(safe-area-inset-top, 0px));
     padding-left: calc(1rem + env(safe-area-inset-left, 0px));
     padding-right: calc(1rem + env(safe-area-inset-right, 0px));
@@ -286,11 +286,6 @@ body.app-private-body {
   padding: 0 0.35rem 0.5rem;
 }
 
-/* Divisor discreto na sidebar escura (evita .border-top do Bootstrap, que no tema claro fica cinza claro) */
-.app-sidebar .app-sidebar-section--lang {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
 .app-sidebar-theme-row {
   display: flex;
   align-items: stretch;
@@ -447,7 +442,7 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   color: #fecaca !important;
 }
 
-/* Recolher painel — abaixo de idioma/região (desktop). Horizontal alinhado ao .app-sidebar-section--lang (px-3 = 1rem). */
+/* Recolher painel — desktop (px-3 = 1rem, alinhado ao CTA) */
 .app-sidebar-collapse-wrap {
   margin-top: 0;
   padding: 0.65rem 1rem 1.15rem;
@@ -697,22 +692,128 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   color: #fecaca !important;
 }
 
-/* Barra superior mobile (opcional) */
-.app-mobile-topbar {
+/* Corpo do sheet “Mais”: empurra conta + sair para o fundo */
+.app-offcanvas-more-body {
+  min-height: min(36vh, 16rem);
+}
+
+.app-offcanvas-account {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--app-border);
+}
+
+.app-offcanvas-more .app-sidebar-usercard--sheet {
+  margin: 0;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--app-border);
+  background: var(--app-surface-2);
+  color: var(--app-text);
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.app-offcanvas-more .app-sidebar-usercard--sheet:hover {
+  border-color: rgba(106, 3, 146, 0.28);
+  background: rgba(106, 3, 146, 0.06);
+  color: inherit;
+}
+
+[data-theme="dark"] .app-offcanvas-more .app-sidebar-usercard--sheet {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .app-offcanvas-more .app-sidebar-usercard--sheet:hover {
+  background: rgba(106, 3, 146, 0.22);
+}
+
+.app-offcanvas-more .app-sidebar-usercard--sheet .app-sidebar-usercard-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(106, 3, 146, 0.2);
+}
+
+.app-offcanvas-more .app-sidebar-usercard--sheet .app-sidebar-usercard-name {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--app-text);
+}
+
+.app-offcanvas-more .app-sidebar-usercard--sheet .app-sidebar-usercard-meta {
+  font-size: 0.7rem;
+  color: var(--app-muted);
+  margin-top: 0.1rem;
+}
+
+.app-offcanvas-more .app-offcanvas-account .app-sidebar-logout-form {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Barra acima do conteúdo: título + ajuda / tema / idioma (fora da sidebar) */
+.app-content-topbar {
   position: sticky;
   top: 0;
   z-index: 1020;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
   padding: 0.65rem 1rem;
   background: var(--app-surface);
   border-bottom: 1px solid var(--app-border);
   box-shadow: var(--app-shadow);
 }
 
-[data-theme="dark"] .app-mobile-topbar {
-  background: rgba(20, 20, 26, 0.92);
+.app-content-topbar-titles {
+  line-height: 1.25;
+}
+
+.app-content-topbar-heading {
+  font-size: 0.95rem;
+}
+
+@media (min-width: 992px) {
+  .app-content-topbar-heading {
+    font-size: 1rem;
+  }
+}
+
+.app-content-topbar-lang {
+  max-width: min(42vw, 10.5rem);
+}
+
+@media (min-width: 992px) {
+  .app-content-topbar-lang {
+    max-width: 12rem;
+  }
+}
+
+.app-content-topbar-lang .bc-lang-selector {
+  width: 100%;
+}
+
+.app-content-topbar-lang .btn-navbar-lang {
+  --bs-btn-padding-x: 0.65rem;
+  --bs-btn-padding-y: 0.35rem;
+  min-height: 2.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid var(--app-border);
+  color: var(--bs-primary, #6a0392);
+  background: var(--app-surface-2, #fff);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="dark"] .app-content-topbar-lang .btn-navbar-lang {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .app-content-topbar {
+  background: rgba(20, 20, 26, 0.96);
   backdrop-filter: blur(10px);
 }
 
@@ -771,14 +872,6 @@ html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-sec
   padding-right: 0.35rem;
 }
 
-/* Idioma: um pouco mais de ar no fundo do “balão” (0.35rem grudava na borda da coluna) */
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang {
-  padding-left: 0.55rem !important;
-  padding-right: 0.55rem !important;
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.55rem !important;
-}
-
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-theme-row {
   flex-direction: column;
   align-items: stretch;
@@ -815,50 +908,13 @@ html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-col
   padding: 0.65rem 0.45rem;
 }
 
-/* Mesmo recuo horizontal que .app-sidebar-section--lang (0.55rem) para alinhar ao seletor de idioma */
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-collapse-wrap {
   margin-top: 0;
   padding: 0.5rem 0.55rem 1rem;
   border-top-color: rgba(255, 255, 255, 0.08);
 }
 
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang {
-  width: 100%;
-  justify-content: center;
-  --bs-btn-padding-x: 0.85rem;
-  --bs-btn-padding-y: 0.55rem;
-  gap: 0.5rem !important;
-  padding: 0.55rem 0.85rem !important;
-}
-
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .bc-lang-btn-inner {
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  width: 100%;
-  min-width: 0;
-  padding: 0.12rem 0.2rem;
-}
-
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .bc-lang-icon-svg {
-  flex-shrink: 0;
-}
-
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang .d-none.d-sm-inline {
-  display: none !important;
-}
-
-/* Código ISO ao lado do globo (desktop: d-sm-none escondia o código) */
-@media (min-width: 576px) {
-  html.sidebar-collapsed .app-sidebar .bc-lang-btn-code {
-    display: inline !important;
-    font-size: 0.75rem !important;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-  }
-}
-
-/* Balões cinza (expandir + idioma) — sidebar recolhida */
+/* Balões cinza (expandir) — sidebar recolhida */
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) {
   --app-sidebar-balloon-bg: rgba(255, 255, 255, 0.07);
   --app-sidebar-balloon-border: rgba(255, 255, 255, 0.1);
@@ -884,32 +940,6 @@ html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-col
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-collapse-ico {
   color: rgba(255, 255, 255, 0.72) !important;
   opacity: 1;
-}
-
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang {
-  background: var(--app-sidebar-balloon-bg) !important;
-  border: 1px solid var(--app-sidebar-balloon-border) !important;
-  border-radius: var(--app-sidebar-balloon-radius) !important;
-  box-shadow: var(--app-sidebar-balloon-shadow) !important;
-  min-height: 44px;
-  color: #fff !important;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang:hover,
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang:focus,
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang.show {
-  background: rgba(255, 255, 255, 0.11) !important;
-  border-color: rgba(255, 255, 255, 0.16) !important;
-  color: #fff !important;
-}
-
-/* Sem caret do Bootstrap (só globo + código ISO) */
-html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section--lang .bc-lang-selector .btn-navbar-lang.dropdown-toggle::after {
-  display: none !important;
-  border: 0 !important;
-  margin: 0 !important;
 }
 
 html.sidebar-collapsed .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-link:not(.active):not(.app-sidebar-link-logout) .material-icons {
