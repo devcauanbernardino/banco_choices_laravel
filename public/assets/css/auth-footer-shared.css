@@ -1,6 +1,6 @@
 /**
  * Rodapé + divisor final do cartão — telas auth (login, recuperar, redefinir).
- * Shell viewport (html/body flex, scripts fora do fluxo) também em cadastro — matérias.
+ * Shell viewport (html/body flex, scripts fora do fluxo) também em cadastro — matérias / plano.
  */
 
 /*
@@ -14,7 +14,8 @@
 html:has(body.auth-login-exemplo),
 html:has(body.auth-recuperar-page),
 html:has(body.auth-redefinir-page),
-html:has(body.signup-materias-page) {
+html:has(body.signup-materias-page),
+html:has(body.signup-plano-page) {
   min-height: 100vh;
   min-height: 100svh;
 }
@@ -22,7 +23,8 @@ html:has(body.signup-materias-page) {
 /* Mesmo fundo que login / recuperar / selecionar matérias (theme-tokens — auth shell) */
 html:has(body.auth-login-exemplo),
 html:has(body.auth-recuperar-page),
-html:has(body.signup-materias-page) {
+html:has(body.signup-materias-page),
+html:has(body.signup-plano-page) {
   background-color: var(--auth-public-shell-bg, #f0f2f7);
   background-image: var(
     --auth-public-shell-image,
@@ -50,8 +52,9 @@ body.auth-redefinir-page {
   line-height: 0;
 }
 
-/* Cadastro matérias: não usar font-size 0 no body (dropdown de idioma / UI no body quebram). */
-body.signup-materias-page {
+/* Cadastro matérias / plano: não usar font-size 0 no body (dropdown de idioma / UI no body quebram). */
+body.signup-materias-page,
+body.signup-plano-page {
   min-height: 100vh;
   min-height: 100svh;
   margin: 0;
@@ -64,7 +67,8 @@ body.signup-materias-page {
 body.auth-login-exemplo > .auth-login-wrap,
 body.auth-recuperar-page > .auth-recuperar-wrap,
 body.auth-redefinir-page > .auth-redefinir-wrap,
-body.signup-materias-page > .signup-materias-wrap {
+body.signup-materias-page > .signup-materias-wrap,
+body.signup-plano-page > .signup-plano-wrap {
   flex: 1 1 0;
   min-height: 0;
   display: flex;
@@ -79,7 +83,8 @@ body.signup-materias-page > .signup-materias-wrap {
 body.auth-login-exemplo > script,
 body.auth-recuperar-page > script,
 body.auth-redefinir-page > script,
-body.signup-materias-page > script {
+body.signup-materias-page > script,
+body.signup-plano-page > script {
   display: none !important;
 }
 

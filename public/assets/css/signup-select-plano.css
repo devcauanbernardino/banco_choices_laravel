@@ -1,0 +1,538 @@
+/**
+ * Selecionar plano — layout alinhado a docs/layouts/selecionar_plano/code.html.
+ * Cores: theme-tokens (--bs-primary, --auth-public-shell-*).
+ */
+
+body.signup-plano-page {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #181c20;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.signup-plano-page h1,
+.signup-plano-page h2,
+.signup-plano-page h3 {
+  font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+}
+
+.signup-plano-page .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.signup-plano-page .signup-plano-icon--fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.signup-plano-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.signup-plano-blobs {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  background-color: var(--auth-public-shell-bg, #f0f2f7);
+  background-image: var(
+    --auth-public-shell-image,
+    linear-gradient(165deg, #faf8ff 0%, #f0f2f7 50%, #ebe8f5 100%)
+  );
+}
+
+.signup-plano-blobs__one {
+  position: absolute;
+  top: -8%;
+  right: -4%;
+  width: min(520px, 92vw);
+  height: min(520px, 92vw);
+  border-radius: 50%;
+  background: rgba(106, 3, 146, 0.2);
+  filter: blur(120px);
+}
+
+.signup-plano-blobs__two {
+  position: absolute;
+  bottom: -12%;
+  left: -6%;
+  width: min(420px, 85vw);
+  height: min(420px, 85vw);
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.16);
+  filter: blur(100px);
+}
+
+.signup-plano-wrap .bc-lang-menu--landing {
+  z-index: 1080;
+}
+
+/* Topbar e passos: mesmas classes que signup/select-materias (signup-select-materias.css). */
+
+.signup-plano-inner {
+  width: 100%;
+  max-width: min(80rem, 100%);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Hero */
+.signup-plano-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signup-plano-hero__title {
+  margin: 0 0 1rem;
+  font-size: clamp(1.75rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #490066;
+}
+
+.signup-plano-hero__gradient {
+  background: linear-gradient(90deg, #490066 0%, #8042a7 55%, #6a0392 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.signup-plano-hero__lead {
+  margin: 0 auto;
+  max-width: 42rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: #4e4351;
+}
+
+/* Matérias selecionadas — glass */
+.signup-plano-selected {
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 32px 64px -12px rgba(73, 0, 102, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.signup-plano-selected__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #181c20;
+}
+
+.signup-plano-selected__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.65rem;
+}
+
+.signup-plano-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #2f004b;
+  background: rgba(106, 3, 146, 0.1);
+  border: 1px solid rgba(106, 3, 146, 0.22);
+}
+
+/* Grid de planos */
+.signup-plano-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-bottom: clamp(2.5rem, 6vw, 4rem);
+}
+
+@media (min-width: 900px) {
+  .signup-plano-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 2rem;
+  }
+}
+
+.signup-plano-form {
+  display: flex;
+  min-height: 100%;
+}
+
+.signup-plano-card {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  padding: 2rem 1.75rem;
+  box-sizing: border-box;
+  transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.signup-plano-card--surface {
+  background: #f2f4f9;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.signup-plano-card--surface:hover {
+  background: #e6e8ed;
+  box-shadow: 0 18px 40px rgba(73, 0, 102, 0.07);
+}
+
+.signup-plano-card--featured {
+  padding-top: 2.5rem;
+  background: var(--bs-primary, #490066);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 32px 64px -12px rgba(73, 0, 102, 0.18);
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .signup-plano-card--featured {
+    transform: scale(1.04);
+    z-index: 2;
+  }
+}
+
+.signup-plano-card--featured::before {
+  content: "";
+  position: absolute;
+  top: -4rem;
+  right: -4rem;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: #6a0392;
+  filter: blur(80px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.signup-plano-card__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.signup-plano-card__ribbon {
+  position: absolute;
+  top: -0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--bs-primary, #490066);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.signup-plano-card--featured .signup-plano-card__ribbon {
+  background: #fff;
+  color: #490066;
+}
+
+.signup-plano-card__head {
+  margin-bottom: 1.25rem;
+}
+
+.signup-plano-card__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.signup-plano-card--surface .signup-plano-card__title {
+  color: #181c20;
+}
+
+.signup-plano-card__desc {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: #4e4351;
+}
+
+.signup-plano-card--featured .signup-plano-card__desc {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.signup-plano-card__pricing {
+  margin-bottom: 1.15rem;
+}
+
+.signup-plano-card__price-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.35rem;
+}
+
+.signup-plano-card__currency {
+  font-size: 1.125rem;
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+.signup-plano-card--surface .signup-plano-card__currency {
+  color: var(--bs-primary, #6a0392);
+}
+
+.signup-plano-card__amount {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.signup-plano-card--featured .signup-plano-card__amount {
+  font-size: clamp(2.35rem, 4vw, 3rem);
+}
+
+.signup-plano-card__ars {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-left: 0.15rem;
+  opacity: 0.9;
+}
+
+.signup-plano-card__period {
+  margin: 0.35rem 0 0;
+  font-size: 0.8125rem;
+  color: #64748b;
+}
+
+.signup-plano-card--featured .signup-plano-card__period {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.signup-plano-card__badge-inline {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.signup-plano-card--surface .signup-plano-card__badge-inline {
+  background: rgba(106, 3, 146, 0.12);
+  color: #490066;
+}
+
+.signup-plano-card__features {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.signup-plano-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: #4e4351;
+}
+
+.signup-plano-card--featured .signup-plano-card__feature {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+}
+
+.signup-plano-card__feature .material-symbols-outlined {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  font-size: 1.25rem;
+  color: var(--bs-primary, #6a0392);
+}
+
+.signup-plano-card--featured .signup-plano-card__feature .material-symbols-outlined {
+  color: #e9d5ff;
+}
+
+.signup-plano-card__cta {
+  width: 100%;
+  margin-top: auto;
+  padding: 0.85rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.signup-plano-card__cta--surface {
+  background: #e0e2e7;
+  color: #490066;
+}
+
+.signup-plano-card__cta--surface:hover {
+  background: #d2c1d3;
+}
+
+.signup-plano-card__cta--featured {
+  background: #fff;
+  color: #490066;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+}
+
+.signup-plano-card__cta--featured:hover {
+  transform: scale(0.98);
+}
+
+/* Social proof */
+.signup-plano-social {
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.signup-plano-social__title {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #181c20;
+}
+
+.signup-plano-testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .signup-plano-testimonials {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .signup-plano-testimonials__card:nth-child(2) {
+    margin-top: 2rem;
+  }
+}
+
+.signup-plano-testimonials__card {
+  padding: 1.75rem 1.5rem;
+  border-radius: 0.75rem;
+  background: #e0e2e7;
+  box-shadow: 0 32px 64px -12px rgba(73, 0, 102, 0.06);
+}
+
+.signup-plano-testimonials__card--alt {
+  background: #f2f4f9;
+  box-shadow: none;
+}
+
+.signup-plano-testimonials__quote {
+  margin: 0 0 1.25rem;
+  font-size: 1.0625rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: #181c20;
+}
+
+.signup-plano-testimonials__person {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.signup-plano-testimonials__avatar {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #e4b5ff, #d2bbff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #490066;
+}
+
+.signup-plano-testimonials__avatar .material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+.signup-plano-testimonials__name {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #181c20;
+}
+
+.signup-plano-testimonials__role {
+  margin: 0.1rem 0 0;
+  font-size: 0.8125rem;
+  color: #4e4351;
+}
+
+/* Trust badges */
+.signup-plano-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 2.5rem;
+  opacity: 0.72;
+  filter: grayscale(1);
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.signup-plano-trust:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.signup-plano-trust__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.signup-plano-trust__item .material-symbols-outlined {
+  font-size: 2rem;
+  color: #490066;
+}
+
+.signup-plano-trust__label {
+  font-size: 0.9375rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #181c20;
+}
