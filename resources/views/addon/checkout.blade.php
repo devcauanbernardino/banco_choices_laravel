@@ -5,55 +5,13 @@
 @section('topbar_title', __('nav.buy_subjects'))
 
 @push('styles')
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<style>
-    .addon-checkout-grid {
-        display: grid;
-        grid-template-columns: 1fr 320px;
-        gap: 1.5rem;
-        align-items: start;
-    }
-    @media (max-width: 991.98px) {
-        .addon-checkout-grid { grid-template-columns: 1fr; }
-    }
-    .addon-sum-row {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem 0;
-        border-bottom: 1px solid var(--app-border, #e5e7eb);
-        font-size: 0.9rem;
-    }
-    #addon-pay-form .checkout-terms-wrap {
-        text-align: left;
-        line-height: normal;
-    }
-    #addon-pay-form .checkout-terms-row {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        width: 100%;
-    }
-    #addon-pay-form .checkout-terms-row .form-check-input[type="checkbox"] {
-        width: 1.25rem;
-        height: 1.25rem;
-        margin-top: 0;
-        cursor: pointer;
-        flex-shrink: 0;
-    }
-    #addon-pay-form .checkout-terms-row .form-check-label {
-        cursor: pointer;
-        line-height: 1.45;
-    }
-    #addon-pay-form .checkout-terms-row .form-check-label a {
-        word-break: break-word;
-    }
-</style>
+<link rel="stylesheet" href="{{ asset('assets/css/addon-checkout-painel.css') }}">
 @endpush
 
 @section('content')
     <p class="mb-3">
         <a href="{{ route('addon.materias') }}" class="link-primary text-decoration-none d-inline-flex align-items-center gap-1">
-            <i class="bi bi-chevron-left" aria-hidden="true"></i>{{ __('addon.back_materias') }}
+            <span class="material-symbols-outlined addon-checkout-back-ico" aria-hidden="true">chevron_left</span>{{ __('addon.back_materias') }}
         </a>
     </p>
 
@@ -71,7 +29,7 @@
     <div class="addon-checkout-grid">
         <div class="card shadow-sm border-0">
             <div class="card-body p-4">
-                <h3 class="h6 fw-bold mb-3"><i class="bi bi-credit-card me-2"></i>{{ __('signup.checkout.contact_title') }}</h3>
+                <h3 class="h6 fw-bold mb-3 d-inline-flex align-items-center gap-2"><span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">credit_card</span>{{ __('signup.checkout.contact_title') }}</h3>
                 <form method="post" action="{{ route('checkout.process') }}" id="addon-pay-form">
                     @csrf
                     <input type="hidden" name="checkout_kind" value="addon">
@@ -115,8 +73,8 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fw-bold" id="addon-submit">
-                        <i class="bi bi-lock-fill me-2"></i>
+                    <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fw-bold d-inline-flex align-items-center justify-content-center gap-2" id="addon-submit">
+                        <span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">lock</span>
                         {{ sprintf(__('signup.checkout.submit_mp'), $totalPriceFormatted) }}
                     </button>
                 </form>
@@ -125,10 +83,10 @@
 
         <div class="card shadow-sm border-0">
             <div class="card-body p-4">
-                <h3 class="h6 fw-bold mb-3"><i class="bi bi-receipt me-2"></i>{{ __('addon.summary') }}</h3>
+                <h3 class="h6 fw-bold mb-3 d-inline-flex align-items-center gap-2"><span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">receipt_long</span>{{ __('addon.summary') }}</h3>
                 @foreach ($materiasInfo as $mat)
                     <div class="addon-sum-row">
-                        <span><i class="bi bi-book me-1"></i>{{ $mat->nome }}</span>
+                        <span class="d-inline-flex align-items-center gap-1"><span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">menu_book</span>{{ $mat->nome }}</span>
                         <span class="text-muted">$ {{ $unitPriceFormatted }} ARS</span>
                     </div>
                 @endforeach

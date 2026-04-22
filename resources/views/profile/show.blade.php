@@ -6,7 +6,7 @@
 @section('topbar_title', __('perfil.mobile_title'))
 
 @section('content')
-    <div class="container-fluid" style="max-width: 1100px;">
+    <div class="container-fluid bc-private-wrap--profile">
 
         {{-- Flash messages --}}
         @if (session('success'))
@@ -31,7 +31,7 @@
 
         {{-- Hero banner --}}
         <div class="bc-hero mb-4">
-            <div class="row align-items-end g-4 position-relative" style="z-index: 1;">
+            <div class="row align-items-end g-4 position-relative bc-profile-hero-row">
                 <div class="col-md-auto text-center text-md-start">
                     <img class="bc-hero-avatar"
                          src="https://ui-avatars.com/api/?name={{ urlencode($usuario->nome) }}&size=224&background=ffffff&color=6a0392"
@@ -136,12 +136,12 @@
                             <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-end align-items-center">
                                 <a href="{{ route('dashboard') }}"
                                    class="btn btn-outline-secondary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2">
-                                    <span class="material-icons" style="font-size: 1.15rem;" aria-hidden="true">arrow_back</span>
+                                    <span class="material-icons bc-perfil-icon-btn" aria-hidden="true">arrow_back</span>
                                     {{ __('perfil.back') }}
                                 </a>
                                 <button type="submit"
                                         class="btn btn-primary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 shadow-sm">
-                                    <span class="material-icons" style="font-size: 1.15rem;" aria-hidden="true">save</span>
+                                    <span class="material-icons bc-perfil-icon-btn" aria-hidden="true">save</span>
                                     {{ __('perfil.save') }}
                                 </button>
                             </div>

@@ -589,3 +589,51 @@
 
   .bc-empty-state { padding: 2rem 1rem; }
 }
+
+/* ---------- Wrappers (painel — sem max-width inline nas blades) ---------- */
+.bc-private-wrap--narrow {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bc-private-wrap--profile {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bc-profile-hero-row {
+  position: relative;
+  z-index: 1;
+}
+
+/* Banco de questões (setup) */
+.bc-qbank-input-group-text {
+  background: var(--app-surface-2);
+}
+
+.bc-qbank-input-quantity {
+  border-radius: 0 12px 12px 0;
+}
+
+.bc-qbank-time-readout {
+  min-height: 48px;
+  height: 48px;
+  background: var(--app-surface-2);
+}
+
+.bc-qbank-card-footer {
+  background: var(--app-surface-2);
+}
+
+/* Perfil — ícones em botões de ação */
+.bc-perfil-icon-btn {
+  font-size: 1.15rem;
+}
+
+/* Estatísticas — barra com largura fixa na tabela (largura dinâmica da barra continua no Blade) */
+.bc-stats-progress-inline {
+  width: 100px;
+  flex: 0 0 100px;
+}

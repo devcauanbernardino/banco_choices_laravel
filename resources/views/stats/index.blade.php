@@ -5,85 +5,74 @@
 
 @section('topbar_title', __('stats.mobile_title'))
 
+@push('styles')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/css/page-estatisticas-mock.css') }}">
+@endpush
+
 @section('content')
-    {{-- Header --}}
-    <div class="bc-page-header mb-4">
-        <div>
-            <h5 class="mb-0 fw-bold">{{ __('stats.heading') }}</h5>
-            <small class="text-muted">{{ __('stats.subhead') }}</small>
-        </div>
-    </div>
-
-    {{-- KPI Cards --}}
-    <div class="row g-4 mb-4">
-        <div class="col-md-6 col-lg-3">
-            <div class="bc-stat-card d-flex align-items-center gap-3">
-                <div class="bc-icon-box bg-primary bg-opacity-10 text-primary">
-                    <span class="material-icons">quiz</span>
-                </div>
-                <div>
-                    <p class="bc-stat-label mb-1">{{ __('stats.kpi_total') }}</p>
-                    <h4 class="fw-bold mb-0">{{ number_format($totalResp, 0, ',', '.') }}</h4>
-                </div>
+    <div class="bc-mock-stats py-4 px-3 px-md-4">
+        <header class="bc-mock-stats__header">
+            <div>
+                <h1 class="bc-mock-stats__title">{{ __('stats.heading') }}</h1>
+                <p class="bc-mock-stats__sub">{{ __('stats.subhead') }}</p>
             </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-            <div class="bc-stat-card d-flex align-items-center gap-3">
-                <div class="bc-icon-box bg-success bg-opacity-10 text-success">
-                    <span class="material-icons">trending_up</span>
-                </div>
-                <div>
-                    <p class="bc-stat-label mb-1">{{ __('stats.kpi_avg') }}</p>
-                    <h4 class="fw-bold text-success mb-0">{{ $mediaAcertos }}%</h4>
-                </div>
+            <div class="bc-mock-stats__actions">
+                <button type="button" class="bc-mock-stats__btn-ghost" disabled aria-disabled="true">
+                    <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>
+                    {{ __('stats.period_short') }}
+                </button>
+                <button type="button" class="bc-mock-stats__btn-primary" disabled title="{{ __('stats.export_soon') }}" aria-label="{{ __('stats.export_soon') }}">
+                    <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                    {{ __('stats.export_report') }}
+                </button>
             </div>
-        </div>
+        </header>
 
-        <div class="col-md-6 col-lg-3">
-            <div class="bc-stat-card d-flex align-items-center gap-3">
-                <div class="bc-icon-box bg-warning bg-opacity-10 text-warning">
-                    <span class="material-icons">stars</span>
+        <section class="bc-mock-stats__kpi-grid" aria-label="{{ __('stats.heading') }}">
+            <article class="bc-mock-stats__kpi">
+                <div class="bc-mock-stats__kpi-top">
+                    <span class="material-symbols-outlined bc-mock-stats__kpi-ico bc-mock-stats__kpi-ico--primary" aria-hidden="true">quiz</span>
                 </div>
-                <div class="min-w-0 flex-grow-1">
-                    <p class="bc-stat-label mb-1">{{ __('stats.kpi_best') }}</p>
-                    <h5 class="fw-bold mb-0 text-break">{{ $melhorMateria }}</h5>
+                <p class="bc-mock-stats__kpi-label">{{ __('stats.kpi_total') }}</p>
+                <p class="bc-mock-stats__kpi-value">{{ number_format($totalResp, 0, ',', '.') }}</p>
+            </article>
+            <article class="bc-mock-stats__kpi">
+                <div class="bc-mock-stats__kpi-top">
+                    <span class="material-symbols-outlined bc-mock-stats__kpi-ico bc-mock-stats__kpi-ico--success" aria-hidden="true">target</span>
                 </div>
-            </div>
-        </div>
+                <p class="bc-mock-stats__kpi-label">{{ __('stats.kpi_avg') }}</p>
+                <p class="bc-mock-stats__kpi-value">{{ $mediaAcertos }}%</p>
+            </article>
+            <article class="bc-mock-stats__kpi">
+                <div class="bc-mock-stats__kpi-top">
+                    <span class="material-symbols-outlined bc-mock-stats__kpi-ico bc-mock-stats__kpi-ico--amber" aria-hidden="true">history_edu</span>
+                </div>
+                <p class="bc-mock-stats__kpi-label">{{ __('stats.kpi_sims') }}</p>
+                <p class="bc-mock-stats__kpi-value">{{ number_format($totalSimulados, 0, ',', '.') }}</p>
+            </article>
+            <article class="bc-mock-stats__kpi">
+                <div class="bc-mock-stats__kpi-top">
+                    <span class="material-symbols-outlined bc-mock-stats__kpi-ico bc-mock-stats__kpi-ico--info" aria-hidden="true">rewarded_ads</span>
+                </div>
+                <p class="bc-mock-stats__kpi-label">{{ __('stats.kpi_best') }}</p>
+                <p class="bc-mock-stats__kpi-value text-break fs-5">{{ $melhorMateria }}</p>
+            </article>
+        </section>
 
-        <div class="col-md-6 col-lg-3">
-            <div class="bc-stat-card d-flex align-items-center gap-3">
-                <div class="bc-icon-box bg-info bg-opacity-10 text-info">
-                    <span class="material-icons">history</span>
-                </div>
-                <div>
-                    <p class="bc-stat-label mb-1">{{ __('stats.kpi_sims') }}</p>
-                    <h4 class="fw-bold mb-0">{{ number_format($totalSimulados, 0, ',', '.') }}</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Chart & Subject bars --}}
-    <div class="row g-4 mb-4">
-        {{-- Line chart --}}
-        <div class="col-lg-8">
-            <div class="bc-card p-4 h-100">
-                <h6 class="fw-bold mb-4">{{ __('stats.chart_title') }}</h6>
-                <div class="bc-chart-wrap">
+        <div class="bc-mock-stats__charts">
+            <section class="bc-mock-stats__chart-panel">
+                <h3>{{ __('stats.chart_title') }}</h3>
+                <div class="bc-mock-stats__chart-inner">
                     <canvas id="chartEvolucao"></canvas>
                 </div>
-            </div>
-        </div>
-
-        {{-- Subject bars --}}
-        <div class="col-lg-4">
-            <div class="bc-card p-4 h-100">
-                <h6 class="fw-bold mb-4">{{ __('stats.bar_title') }}</h6>
-
+            </section>
+            <section class="bc-mock-stats__chart-panel">
+                <h3>{{ __('stats.bar_title') }}</h3>
                 @forelse (collect($porMateria)->take(5) as $m)
-                    <div class="mb-4">
+                    <div class="bc-mock-stats__bar-block">
                         <div class="d-flex justify-content-between mb-1">
                             <span class="small fw-bold text-secondary">{{ ucfirst($m['nome']) }}</span>
                             <span class="small fw-bold text-primary">{{ $m['porcentagem'] }}%</span>
@@ -93,55 +82,54 @@
                         </div>
                     </div>
                 @empty
-                    <p class="text-muted text-center py-5">{{ __('stats.no_data') }}</p>
+                    <p class="text-muted text-center py-5 mb-0">{{ __('stats.no_data') }}</p>
                 @endforelse
-            </div>
+            </section>
         </div>
-    </div>
 
-    {{-- Weekly summary table --}}
-    <div class="bc-card overflow-hidden">
-        <div class="bc-card-header">
-            <h6 class="fw-bold mb-0">{{ __('stats.week_title') }}</h6>
-        </div>
-        <div class="table-responsive">
-            <table class="bc-table w-100 mb-0">
-                <thead>
-                    <tr>
-                        <th>{{ __('stats.th_week_start') }}</th>
-                        <th>{{ __('stats.th_questions') }}</th>
-                        <th>{{ __('stats.th_hits') }}</th>
-                        <th>{{ __('stats.th_performance') }}</th>
-                        <th class="text-end">{{ __('stats.th_status') }}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($semanal as $sem)
-                        @php
-                            $aprov = $sem['total'] > 0 ? round(($sem['acertos'] / $sem['total']) * 100, 1) : 0;
-                        @endphp
+        <section class="bc-mock-stats__table-panel overflow-hidden">
+            <div class="bc-mock-stats__table-head">
+                <h3>{{ __('stats.week_title') }}</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="bc-table w-100 mb-0">
+                    <thead>
                         <tr>
-                            <td class="fw-bold">{{ \Carbon\Carbon::parse($sem['inicio_semana'])->format('d/m/Y') }}</td>
-                            <td>{{ (int) $sem['total'] }}</td>
-                            <td>{{ (int) $sem['acertos'] }}</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                    <div class="bc-progress flex-grow-1" style="width: 100px;">
-                                        <div class="bc-progress-bar" style="width: {{ $aprov }}%"></div>
-                                    </div>
-                                    <small class="fw-bold">{{ $aprov }}%</small>
-                                </div>
-                            </td>
-                            <td class="text-end">
-                                <span class="badge bg-{{ $aprov >= 70 ? 'success' : 'warning' }} rounded-pill">
-                                    {{ $aprov >= 70 ? __('stats.badge_goal') : __('stats.badge_evolving') }}
-                                </span>
-                            </td>
+                            <th>{{ __('stats.th_week_start') }}</th>
+                            <th>{{ __('stats.th_questions') }}</th>
+                            <th>{{ __('stats.th_hits') }}</th>
+                            <th>{{ __('stats.th_performance') }}</th>
+                            <th class="text-end">{{ __('stats.th_status') }}</th>
                         </tr>
-                    @endforeach
-                </tbody>
-            </table>
-        </div>
+                    </thead>
+                    <tbody>
+                        @foreach ($semanal as $sem)
+                            @php
+                                $aprov = $sem['total'] > 0 ? round(($sem['acertos'] / $sem['total']) * 100, 1) : 0;
+                            @endphp
+                            <tr>
+                                <td class="fw-bold">{{ \Carbon\Carbon::parse($sem['inicio_semana'])->format('d/m/Y') }}</td>
+                                <td>{{ (int) $sem['total'] }}</td>
+                                <td>{{ (int) $sem['acertos'] }}</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="bc-progress bc-stats-progress-inline">
+                                            <div class="bc-progress-bar" style="width: {{ $aprov }}%"></div>
+                                        </div>
+                                        <small class="fw-bold">{{ $aprov }}%</small>
+                                    </div>
+                                </td>
+                                <td class="text-end">
+                                    <span class="badge bg-{{ $aprov >= 70 ? 'success' : 'warning' }} rounded-pill">
+                                        {{ $aprov >= 70 ? __('stats.badge_goal') : __('stats.badge_evolving') }}
+                                    </span>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </div>
 @endsection
 

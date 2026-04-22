@@ -13,6 +13,7 @@ class HistoryController extends Controller
         $uid = Auth::id();
         $filtroMateria = $request->query('materia', '');
         $filtroStatus = $request->query('status', '');
+        $filtroQ = trim((string) $request->query('q', ''));
 
         $query = DB::table('historico_simulados as h')
             ->join('materias as m', 'm.id', '=', 'h.materia_id')
@@ -21,6 +22,11 @@ class HistoryController extends Controller
 
         if ($filtroMateria !== '') {
             $query->where('m.nome', $filtroMateria);
+        }
+
+        if ($filtroQ !== '') {
+            $like = '%'.$filtroQ.'%';
+            $query->where('m.nome', 'like', $like);
         }
 
         $resultados = $query->orderByDesc('h.data_realizacao')->get();
@@ -56,9 +62,17 @@ class HistoryController extends Controller
             ->pluck('m.nome');
 
         $totalSimulados = count($historico);
+        $mediaPct = 0.0;
+        if ($totalSimulados > 0) {
+            $sum = 0;
+            foreach ($historico as $h) {
+                $sum += (int) preg_replace('/\D+/', '', (string) ($h['porcentagem'] ?? '0'));
+            }
+            $mediaPct = round($sum / $totalSimulados, 1);
+        }
 
         return view('history.index', compact(
-            'historico', 'materias', 'totalSimulados', 'filtroMateria', 'filtroStatus'
+            'historico', 'materias', 'totalSimulados', 'filtroMateria', 'filtroStatus', 'filtroQ', 'mediaPct'
         ));
     }
 }

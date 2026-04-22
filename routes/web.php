@@ -52,6 +52,12 @@ Route::get('/payment-success', [CheckoutController::class, 'success'])->name('ch
 // ── Webhook (no CSRF) ───────────────────────────────────────
 Route::post('/webhook-mercadopago', [WebhookController::class, 'mercadoPago'])->name('webhook.mp');
 
+// ── Legacy .php (app PHP antigo) → URLs Laravel (favoritos / links antigos) ──
+Route::redirect('/bancoperguntas.php', '/bancoperguntas', 301);
+Route::redirect('/simulados.php', '/simulados', 301);
+Route::redirect('/estatisticas.php', '/estatisticas', 301);
+Route::redirect('/comprar-materias.php', '/comprar-materias', 301);
+
 // ── Authenticated ───────────────────────────────────────────
 Route::middleware('auth')->group(function () {
     Route::match(['get', 'post'], '/comprar-materias', [AddonController::class, 'materias'])->name('addon.materias');

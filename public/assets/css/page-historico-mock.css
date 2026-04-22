@@ -1,0 +1,265 @@
+/**
+ * Histórico de simulados — mock docs/layouts/hist_rico_de_simulados
+ */
+.bc-mock-historico {
+  --bc-h-on: #181c20;
+  --bc-h-variant: #4e4351;
+  --bc-h-low: #f2f4f9;
+  --bc-h-lowest: #ffffff;
+  --bc-h-divider: #eceef3;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-theme="dark"] .bc-mock-historico {
+  --bc-h-on: #ececf1;
+  --bc-h-variant: #b4b4c0;
+  --bc-h-low: #1a1a22;
+  --bc-h-lowest: #14141a;
+  --bc-h-divider: rgba(255, 255, 255, 0.08);
+}
+
+.bc-mock-historico__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .bc-mock-historico__hero {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.bc-mock-historico__title {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  letter-spacing: -0.03em;
+  color: var(--bc-mock-primary-ct, #6a0392);
+  margin: 0 0 0.75rem;
+  line-height: 1.1;
+}
+
+.bc-mock-historico__lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--bc-h-variant);
+  max-width: 36rem;
+  margin: 0;
+}
+
+.bc-mock-historico__kpis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bc-mock-historico__kpi {
+  background: var(--bc-h-low);
+  border-radius: 0.875rem;
+  padding: 1.25rem 1.5rem;
+  min-width: 9.5rem;
+}
+
+.bc-mock-historico__kpi-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--bc-mock-primary-ct, #8042a7);
+  margin-bottom: 0.35rem;
+}
+
+.bc-mock-historico__kpi-value {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--bc-h-on);
+  line-height: 1.2;
+}
+
+.bc-mock-historico__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: stretch;
+  margin-bottom: 1.75rem;
+}
+
+.bc-mock-historico__search-wrap {
+  position: relative;
+  flex: 1 1 16rem;
+  min-width: 12rem;
+}
+
+.bc-mock-historico__search-wrap .material-symbols-outlined {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bc-h-variant);
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+.bc-mock-historico__search {
+  width: 100%;
+  border: none;
+  border-radius: 0.875rem;
+  padding: 0.95rem 1rem 0.95rem 2.85rem;
+  font-size: 0.95rem;
+  background: var(--bc-h-low);
+  color: var(--bc-h-on);
+}
+
+.bc-mock-historico__search:focus {
+  outline: 2px solid var(--bc-mock-primary-ct, #6a0392);
+  outline-offset: 2px;
+}
+
+.bc-mock-historico__selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.bc-mock-historico__select {
+  border: none;
+  border-radius: 0.875rem;
+  padding: 0.95rem 1.15rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--bc-h-low);
+  color: var(--bc-h-variant);
+  min-width: 10rem;
+}
+
+.bc-mock-historico__select:focus {
+  outline: 2px solid rgba(106, 3, 146, 0.35);
+}
+
+.bc-mock-historico__btn-filter {
+  border: none;
+  border-radius: 0.875rem;
+  padding: 0.95rem 1.25rem;
+  font-weight: 700;
+  background: var(--bc-h-on);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bc-mock-historico__btn-filter:hover {
+  opacity: 0.92;
+}
+
+.bc-mock-historico__btn-filter .material-symbols-outlined {
+  font-size: 1.1rem;
+}
+
+.bc-mock-historico__table td.bc-mock-historico__empty {
+  text-align: center;
+}
+
+.bc-mock-historico__table-wrap {
+  background: var(--bc-h-lowest);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="dark"] .bc-mock-historico__table-wrap {
+  box-shadow: none;
+}
+
+.bc-mock-historico__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.bc-mock-historico__table thead {
+  background: var(--bc-h-low);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: var(--bc-h-variant);
+}
+
+.bc-mock-historico__table th {
+  padding: 1.1rem 1.25rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.bc-mock-historico__table th:last-child,
+.bc-mock-historico__table td:last-child {
+  text-align: center;
+  width: 4.5rem;
+}
+
+.bc-mock-historico__table tbody tr {
+  border-top: 1px solid var(--bc-h-divider);
+  transition: background 0.15s;
+}
+
+.bc-mock-historico__table tbody tr:hover {
+  background: var(--bc-h-low);
+}
+
+.bc-mock-historico__table td {
+  padding: 1.15rem 1.25rem;
+  vertical-align: middle;
+}
+
+.bc-mock-historico__cell-date strong {
+  display: block;
+  color: var(--bc-h-on);
+  font-weight: 600;
+}
+
+.bc-mock-historico__cell-date small {
+  font-size: 0.75rem;
+  color: var(--bc-h-variant);
+}
+
+.bc-mock-historico__subject-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.65rem;
+  background: var(--bc-mock-primary-fixed, #eaddff);
+  color: var(--bc-mock-primary-ct, #5a00c6);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.bc-mock-historico__subject-pill .material-symbols-outlined {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.bc-mock-historico__empty {
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.bc-mock-historico__empty .material-symbols-outlined {
+  font-size: 2.5rem;
+  color: var(--bc-h-variant);
+  margin-bottom: 0.75rem;
+}
+
+.bc-mock-historico__cta {
+  border-radius: 999px;
+  padding: 0.85rem 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}

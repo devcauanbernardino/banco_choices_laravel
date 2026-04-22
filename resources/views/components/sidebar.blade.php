@@ -5,7 +5,6 @@
         ['route' => 'history', 'symbol' => 'folder_open', 'mobile_icon' => 'folder', 'label' => __('nav.files'), 'short' => __('nav.files_short')],
         ['route' => 'stats', 'symbol' => 'analytics', 'mobile_icon' => 'bar_chart', 'label' => __('nav.stats'), 'short' => __('nav.stats')],
         ['route' => 'addon.materias', 'symbol' => 'shopping_cart', 'mobile_icon' => 'add_shopping_cart', 'label' => __('nav.buy_subjects'), 'short' => __('nav.buy_subjects_short')],
-        ['route' => 'profile.show', 'symbol' => 'settings', 'mobile_icon' => 'settings', 'label' => __('sidebar.settings'), 'short' => __('sidebar.settings')],
     ];
     $sidebarUser = auth()->user();
     $sidebarName = trim((string) ($sidebarUser->nome ?? ''));

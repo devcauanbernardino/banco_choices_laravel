@@ -193,7 +193,7 @@
 
                 <div class="dash-painel-tip mt-3">
                     <strong>
-                        <span class="material-symbols-outlined" style="font-size: 1rem; font-variation-settings: 'FILL' 1;" aria-hidden="true">tips_and_updates</span>
+                        <span class="material-symbols-outlined dash-home-tip-ico" aria-hidden="true">tips_and_updates</span>
                         {{ __('dashboard.panel.tip_title') }}
                     </strong>
                     <p class="mb-0">

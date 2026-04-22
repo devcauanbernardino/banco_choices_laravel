@@ -1,0 +1,153 @@
+/**
+ * Comprar matérias — grelha tipo mock banco / selecionar matérias
+ */
+.bc-mock-addon {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bc-mock-addon__hero {
+  margin-bottom: 1.75rem;
+}
+
+.bc-mock-addon__title {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: -0.03em;
+  color: var(--app-text);
+  margin: 0 0 0.5rem;
+}
+
+.bc-mock-addon__lead {
+  font-size: 0.95rem;
+  color: var(--app-muted);
+  margin: 0;
+  max-width: 36rem;
+  line-height: 1.55;
+}
+
+.bc-mock-addon__section-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--app-muted);
+  margin-bottom: 0.75rem;
+}
+
+.bc-mock-addon__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+}
+
+@media (min-width: 576px) {
+  .bc-mock-addon__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.bc-mock-addon__card {
+  cursor: pointer;
+  margin: 0;
+}
+
+.bc-mock-addon__card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bc-mock-addon__card-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1.1rem 1.15rem;
+  border-radius: 0.875rem;
+  border: 2px solid var(--app-border);
+  background: var(--app-surface);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  min-height: 4.5rem;
+}
+
+.bc-mock-addon__card:hover .bc-mock-addon__card-box {
+  box-shadow: 0 6px 20px rgba(106, 3, 146, 0.08);
+}
+
+.bc-mock-addon__card input:focus-visible + .bc-mock-addon__card-box {
+  outline: 2px solid #6a0392;
+  outline-offset: 2px;
+}
+
+.bc-mock-addon__card input:checked + .bc-mock-addon__card-box {
+  border-color: #6a0392;
+  background: rgba(106, 3, 146, 0.06);
+  box-shadow: 0 8px 28px rgba(106, 3, 146, 0.12);
+}
+
+[data-theme="dark"] .bc-mock-addon__card input:checked + .bc-mock-addon__card-box {
+  background: rgba(168, 85, 247, 0.12);
+}
+
+.bc-mock-addon__check {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.35rem;
+  border: 2px solid var(--app-muted);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.bc-mock-addon__card input:checked + .bc-mock-addon__card-box .bc-mock-addon__check {
+  border-color: #6a0392;
+  background: #6a0392;
+  color: #fff;
+}
+
+.bc-mock-addon__check .material-symbols-outlined {
+  font-size: 0.95rem;
+  opacity: 0;
+  font-variation-settings: "FILL" 1;
+}
+
+.bc-mock-addon__card input:checked + .bc-mock-addon__card-box .bc-mock-addon__check .material-symbols-outlined {
+  opacity: 1;
+}
+
+.bc-mock-addon__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.bc-mock-addon__name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--app-text);
+  display: block;
+}
+
+.bc-mock-addon__actions {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .bc-mock-addon__actions {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.bc-mock-addon__btn-primary {
+  font-weight: 700;
+  border-radius: 0.75rem;
+  padding: 0.85rem 1.5rem;
+}

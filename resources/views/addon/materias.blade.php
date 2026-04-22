@@ -4,47 +4,59 @@
 @section('mobile_title', trim(explode('|', __('addon.page_title_materias'))[0]))
 @section('topbar_title', __('nav.buy_subjects'))
 
+@push('styles')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/css/page-comprar-materias-mock.css') }}">
+@endpush
+
 @section('content')
-    <div class="bc-page-header mb-4">
-        <div>
-            <h5 class="mb-0 fw-bold">{{ __('nav.buy_subjects') }}</h5>
-            <small class="text-muted d-block mt-2">{{ __('addon.intro') }}</small>
-        </div>
-    </div>
+    <div class="bc-mock-addon py-4 px-3 px-md-4">
+        <header class="bc-mock-addon__hero">
+            <h1 class="bc-mock-addon__title">{{ __('nav.buy_subjects') }}</h1>
+            <p class="bc-mock-addon__lead">{{ __('addon.intro') }}</p>
+        </header>
 
-    @if (session('error'))
-        <div class="alert alert-warning">{{ session('error') }}</div>
-    @endif
+        @if (session('error'))
+            <div class="alert alert-warning border-0 rounded-3 shadow-sm mb-4">{{ session('error') }}</div>
+        @endif
 
-    @if ($disponiveis->isEmpty())
-        <div class="bc-card overflow-hidden">
-            <div class="bc-empty-state">
-                <span class="material-icons text-success" aria-hidden="true">check_circle</span>
-                <h5 class="fw-bold mb-2">{{ __('addon.empty') }}</h5>
-                <p class="text-muted mb-0">{{ __('addon.empty_hint') }}</p>
-                <a href="{{ route('dashboard') }}" class="btn btn-primary btn-lg mt-4 px-4 rounded-3">
-                    {{ __('nav.dashboard') }}
-                </a>
+        @if ($disponiveis->isEmpty())
+            <div class="bc-card overflow-hidden">
+                <div class="bc-empty-state">
+                    <span class="material-icons text-success" aria-hidden="true">check_circle</span>
+                    <h5 class="fw-bold mb-2">{{ __('addon.empty') }}</h5>
+                    <p class="text-muted mb-0">{{ __('addon.empty_hint') }}</p>
+                    <a href="{{ route('dashboard') }}" class="btn btn-primary btn-lg mt-4 px-4 rounded-3">
+                        {{ __('nav.dashboard') }}
+                    </a>
+                </div>
             </div>
-        </div>
-    @else
-        <form method="post" action="{{ route('addon.materias') }}">
-            @csrf
-            <div class="bc-card p-4 mb-4">
-                <div class="list-group list-group-flush rounded-3 border">
+        @else
+            <form method="post" action="{{ route('addon.materias') }}">
+                @csrf
+                <h2 class="bc-mock-addon__section-label">{{ __('addon.pick_section') }}</h2>
+                <div class="bc-mock-addon__grid">
                     @foreach ($disponiveis as $m)
-                        <label class="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3">
-                            <input class="form-check-input flex-shrink-0 mt-0" type="checkbox" name="materias[]" value="{{ $m->id }}">
-                            <span class="material-icons text-primary flex-shrink-0">menu_book</span>
-                            <span class="fw-semibold">{{ $m->nome }}</span>
+                        <label class="bc-mock-addon__card">
+                            <input type="checkbox" name="materias[]" value="{{ $m->id }}">
+                            <span class="bc-mock-addon__card-box">
+                                <span class="bc-mock-addon__check" aria-hidden="true">
+                                    <span class="material-symbols-outlined">check</span>
+                                </span>
+                                <span class="bc-mock-addon__body">
+                                    <span class="bc-mock-addon__name">{{ $m->nome }}</span>
+                                </span>
+                            </span>
                         </label>
                     @endforeach
                 </div>
-            </div>
-            <div class="d-flex flex-column-reverse flex-sm-row gap-2 justify-content-sm-end align-items-stretch align-items-sm-center">
-                <a href="{{ route('dashboard') }}" class="btn btn-outline-primary btn-lg w-100 w-sm-auto">{{ __('nav.dashboard') }}</a>
-                <button type="submit" class="btn btn-primary btn-lg w-100 w-sm-auto">{{ __('addon.continue_checkout') }}</button>
-            </div>
-        </form>
-    @endif
+                <div class="bc-mock-addon__actions">
+                    <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary btn-lg bc-mock-addon__btn-primary w-100 w-sm-auto">{{ __('nav.dashboard') }}</a>
+                    <button type="submit" class="btn btn-primary btn-lg bc-mock-addon__btn-primary w-100 w-sm-auto">{{ __('addon.continue_checkout') }}</button>
+                </div>
+            </form>
+        @endif
+    </div>
 @endsection
