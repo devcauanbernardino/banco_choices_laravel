@@ -24,10 +24,11 @@
                     <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>
                     {{ __('stats.period_short') }}
                 </button>
-                <button type="button" class="bc-mock-stats__btn-primary" disabled title="{{ __('stats.export_soon') }}" aria-label="{{ __('stats.export_soon') }}">
-                    <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                <a href="{{ route('stats.export-pdf') }}" class="bc-mock-stats__btn-primary text-decoration-none d-inline-flex align-items-center justify-content-center gap-2"
+                   title="{{ __('stats.export_pdf_title') }}" aria-label="{{ __('stats.export_pdf_title') }}">
+                    <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
                     {{ __('stats.export_report') }}
-                </button>
+                </a>
             </div>
         </header>
 

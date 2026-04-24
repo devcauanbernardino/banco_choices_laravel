@@ -77,6 +77,11 @@
   cursor: not-allowed;
 }
 
+a.bc-mock-stats__btn-primary:hover {
+  color: #f4e4ff;
+  opacity: 0.95;
+}
+
 .bc-mock-stats__kpi-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -97,7 +102,9 @@
 }
 
 .bc-mock-stats__kpi {
-  background: #f2f4f9;
+  background: var(--app-surface, #fff);
+  border: 1px solid var(--app-border);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
   border-radius: 0.875rem;
   padding: 1.35rem 1.25rem;
   transition: background 0.2s, box-shadow 0.2s;
@@ -105,6 +112,8 @@
 
 [data-theme="dark"] .bc-mock-stats__kpi {
   background: #1a1a22;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
 }
 
 .bc-mock-stats__kpi:hover {
@@ -184,7 +193,9 @@
 }
 
 .bc-mock-stats__chart-panel {
-  background: #f2f4f9;
+  background: var(--app-surface, #fff);
+  border: 1px solid var(--app-border);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
   border-radius: 1.25rem;
   padding: 1.75rem 1.25rem;
   min-height: 18rem;
@@ -192,6 +203,8 @@
 
 [data-theme="dark"] .bc-mock-stats__chart-panel {
   background: #1a1a22;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
 }
 
 .bc-mock-stats__chart-panel h3 {

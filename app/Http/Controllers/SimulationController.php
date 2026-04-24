@@ -87,15 +87,34 @@ class SimulationController extends Controller
             }
         }
 
+        $respostas = (array) ($this->sim->get('respostas') ?? []);
+        $feedbacksAll = (array) ($this->sim->get('feedback') ?? []);
+        $modo = (string) ($this->sim->get('modo') ?? 'estudo');
+
+        $mapaStatus = [];
+        for ($i = 0, $n = count($questoes); $i < $n; $i++) {
+            $isAnswered = array_key_exists($i, $respostas) && $respostas[$i] !== null && $respostas[$i] !== '';
+            $status = 'pendente';
+            if ($isAnswered) {
+                if ($modo === 'estudo' && isset($feedbacksAll[$i]['acertou'])) {
+                    $status = ! empty($feedbacksAll[$i]['acertou']) ? 'correta' : 'incorreta';
+                } else {
+                    $status = 'respondida';
+                }
+            }
+            $mapaStatus[$i] = $status;
+        }
+
         $viewData = [
             'questao' => $questao,
             'indiceAtual' => $indiceAtual,
             'totalQuestoes' => count($questoes),
-            'respostas' => $this->sim->get('respostas') ?? [],
-            'modo' => $this->sim->get('modo') ?? 'estudo',
-            'feedback' => ($this->sim->get('feedback') ?? [])[$indiceAtual] ?? null,
+            'respostas' => $respostas,
+            'modo' => $modo,
+            'feedback' => $feedbacksAll[$indiceAtual] ?? null,
             'tempoRestante' => $tempoRestante,
             'materiaNome' => $this->sim->get('materia_nome') ?? '',
+            'mapaStatus' => $mapaStatus,
         ];
 
         return view('simulation.show', $viewData);

@@ -75,6 +75,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/simulados', [HistoryController::class, 'index'])->name('history');
     Route::get('/estatisticas', [StatsController::class, 'index'])->name('stats');
+    Route::get('/estatisticas/relatorio.pdf', [StatsController::class, 'exportPdf'])->name('stats.export-pdf');
 
     Route::get('/perfil', [ProfileController::class, 'show'])->name('profile.show');
     Route::post('/perfil', [ProfileController::class, 'update'])->name('profile.update');

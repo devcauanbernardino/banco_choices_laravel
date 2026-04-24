@@ -3,6 +3,9 @@
  * (fundo claro na barra lateral, CTA roxo, links estilo “estudante”, header editorial).
  */
 body.app-shell-painel {
+  /* Altura compartilhada entre o bloco de marca da sidebar e o header,
+     para que as bordas inferiores fiquem na mesma linha. */
+  --shell-painel-header-h: 4.5rem;
   --shell-painel-primary: #490066;
   --shell-painel-primary-ctn: #6a0392;
   --shell-painel-accent-bar: #6b21a8;
@@ -44,8 +47,13 @@ body.app-shell-painel .app-sidebar.app-sidebar--painel {
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-brand {
-  padding: 1.5rem 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  height: var(--shell-painel-header-h);
+  min-height: var(--shell-painel-header-h);
+  padding: 0 1.25rem;
   border-bottom: 1px solid var(--shell-painel-sidebar-border);
+  box-sizing: border-box;
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-link {
@@ -108,6 +116,10 @@ body.app-shell-painel .app-sidebar--painel .app-sidebar-bottom {
   padding-top: 0.75rem;
   border-top: 1px solid var(--shell-painel-sidebar-border);
   margin-top: auto;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-wrap {
+  padding: 0.85rem 0 0.25rem;
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-cta {
@@ -331,7 +343,7 @@ html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-l
   color: var(--shell-painel-link-active-text);
 }
 
-[data-theme="dark"] html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-link.active .material-symbols-outlined {
+html.sidebar-collapsed[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-link.active .material-symbols-outlined {
   color: #fff;
 }
 
@@ -363,6 +375,10 @@ html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-c
   justify-content: center;
 }
 
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-cta:hover {
+  transform: none;
+}
+
 html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-title,
 html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-brand .app-sidebar-sub {
   display: none;
@@ -385,10 +401,12 @@ body.app-shell-painel .bc-topbar.bc-topbar--painel {
   flex-wrap: nowrap;
   gap: 0.75rem;
   margin-left: var(--sidebar-w);
-  padding: 0.5rem 1.25rem 0.5rem 1.5rem;
-  /* Sobrescreve .bc-topbar { min-height: 76px } — uma única linha, altura ao conteúdo */
-  min-height: 0 !important;
-  max-height: none;
+  padding: 0 1.25rem 0 1.5rem;
+  /* Alinha a linha inferior do header com a borda inferior do bloco "marca" da sidebar. */
+  height: var(--shell-painel-header-h);
+  min-height: var(--shell-painel-header-h) !important;
+  max-height: var(--shell-painel-header-h);
+  box-sizing: border-box;
   background: var(--app-bg, #f7f9fe);
   border-bottom: 1px solid var(--app-border);
   box-shadow: none;
@@ -573,6 +591,25 @@ body.app-shell-painel .bc-topbar-icon-btn .material-symbols-outlined {
   font-size: 1.25rem;
 }
 
+/* Toggle de tema na topbar móvel: um ícone visível (especificidade acima do .material-symbols-outlined global) */
+body.app-shell-painel .app-content-topbar .js-theme-toggle-btn .bc-topbar-btn-icon {
+  display: none;
+}
+
+body.app-shell-painel .app-content-topbar .js-theme-toggle-btn .bc-topbar-btn-icon--light {
+  display: inline-block;
+}
+
+html[data-theme="dark"] body.app-shell-painel .app-content-topbar .js-theme-toggle-btn .bc-topbar-btn-icon--light,
+html[data-bs-theme="dark"] body.app-shell-painel .app-content-topbar .js-theme-toggle-btn .bc-topbar-btn-icon--light {
+  display: none;
+}
+
+html[data-theme="dark"] body.app-shell-painel .app-content-topbar .js-theme-toggle-btn .bc-topbar-btn-icon--dark,
+html[data-bs-theme="dark"] body.app-shell-painel .app-content-topbar .js-theme-toggle-btn .bc-topbar-btn-icon--dark {
+  display: inline-block;
+}
+
 body.app-shell-painel .bc-topbar-icon-btn--avatar {
   padding: 0;
   overflow: hidden;
@@ -587,10 +624,52 @@ body.app-shell-painel .bc-topbar-avatar-tiny {
   border-radius: 0.45rem;
 }
 
+/* Sidebar é position:fixed; em desktop (lg+) o conteúdo precisa ceder espaço
+   à sua largura para não ficar por baixo dela. Em mobile a sidebar é d-none,
+   então o margin-left precisa voltar a zero. */
+@media (min-width: 992px) {
+  body.app-shell-painel .app-content-wrap {
+    margin-left: var(--sidebar-w);
+    width: auto;
+    max-width: calc(100vw - var(--sidebar-w));
+    transition: margin-left 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+                max-width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* sidebar.css (legado) aplica margin-left: var(--sidebar-w) em .app-main.
+   Como o .app-content-wrap já cuida desse offset, o .app-main interno
+   precisa ficar sem margem para não somar duas vezes (overflow à direita). */
+body.app-shell-painel .app-content-wrap .app-main {
+  margin-left: 0;
+  min-height: 0;
+}
+
+/* O título do header (desktop) só aparece quando a sidebar está colapsada,
+   pra não duplicar o "branding/nav" da sidebar quando ela está expandida. */
+@media (min-width: 992px) {
+  body.app-shell-painel .app-content-topbar .app-content-topbar-heading.d-lg-block {
+    display: none !important;
+  }
+
+  html.sidebar-collapsed body.app-shell-painel .app-content-topbar .app-content-topbar-heading.d-lg-block {
+    display: block !important;
+  }
+}
+
 body.app-shell-painel .app-content-topbar {
   background: var(--app-surface);
   border-bottom: 1px solid var(--app-border);
   color: var(--app-text);
+  /* Alinha a borda inferior do header com a borda inferior do bloco "marca" da sidebar. */
+  height: var(--shell-painel-header-h);
+  min-height: var(--shell-painel-header-h);
+  max-height: var(--shell-painel-header-h);
+  padding-top: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  /* Evita "linha dupla" causada pelo box-shadow herdado do sidebar.css somado ao border-bottom */
+  box-shadow: none !important;
 }
 
 [data-theme="dark"] body.app-shell-painel .app-content-topbar {
@@ -623,10 +702,20 @@ html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sideb
   color: var(--shell-painel-link) !important;
 }
 
-[data-theme="dark"] html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-btn {
+html.sidebar-collapsed[data-theme="dark"] body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-btn {
   background: rgba(255, 255, 255, 0.07) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
   color: rgba(255, 255, 255, 0.72) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+html.sidebar-collapsed[data-theme="dark"] body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-btn:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  color: #fff !important;
+}
+
+html.sidebar-collapsed[data-theme="dark"] body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-ico {
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\Branding;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -10,7 +12,34 @@ class StatsController extends Controller
 {
     public function index()
     {
-        $uid = Auth::id();
+        $stats = $this->statsPayloadForUser(Auth::id());
+
+        return view('stats.index', $stats);
+    }
+
+    public function exportPdf()
+    {
+        $user = Auth::user();
+        $stats = $this->statsPayloadForUser($user->id);
+        $stats['userName'] = trim((string) ($user->nome ?? '')) ?: __('stats.pdf_user_fallback');
+        $stats['generatedAt'] = Carbon::now()->timezone(config('app.timezone'))->isoFormat('L LT');
+        $stats['brandName'] = __('index.page_title');
+        $stats['reportYear'] = (int) Carbon::now()->year;
+        $stats['logoDataUri'] = $this->logoDataUriForPdf();
+
+        $filename = 'relatorio-estatisticas-'.Carbon::now()->format('Y-m-d').'.pdf';
+
+        return Pdf::loadView('stats.pdf', $stats)
+            ->setPaper('a4', 'portrait')
+            ->download($filename);
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function statsPayloadForUser(?int $uid): array
+    {
+        $uid = $uid ?? 0;
 
         $kpiRow = DB::table('historico_simulados')
             ->where('usuario_id', $uid)
@@ -49,6 +78,14 @@ class StatsController extends Controller
             'data' => $evolucaoRows->map(fn ($r) => round((float) ($r->desempenho ?? 0), 1))->values()->all(),
         ];
 
+        $evolucaoLinhas = [];
+        foreach ($evolucao['labels'] as $i => $label) {
+            $evolucaoLinhas[] = [
+                'data' => $label,
+                'pct' => $evolucao['data'][$i] ?? 0,
+            ];
+        }
+
         $semanal = DB::table('historico_simulados')
             ->where('usuario_id', $uid)
             ->selectRaw('YEARWEEK(data_realizacao, 1) as semana, MIN(DATE(data_realizacao)) as inicio_semana, SUM(total_questoes) as total, SUM(acertos) as acertos')
@@ -62,7 +99,7 @@ class StatsController extends Controller
                 'acertos' => (int) ($r->acertos ?? 0),
             ])->all();
 
-        return view('stats.index', compact(
+        return compact(
             'totalResp',
             'totalAcertos',
             'totalSimulados',
@@ -70,7 +107,43 @@ class StatsController extends Controller
             'melhorMateria',
             'porMateria',
             'evolucao',
+            'evolucaoLinhas',
             'semanal'
-        ));
+        );
+    }
+
+    private function logoDataUriForPdf(): ?string
+    {
+        // Dompdf incorpora PNG/JPEG (e alguns fluxos de imagem) via GD — sem ext-gd o PDF ainda gera, só sem logo.
+        if (! extension_loaded('gd') || ! function_exists('imagecreatefrompng')) {
+            return null;
+        }
+
+        $rel = Branding::logoPublicPath();
+        $full = public_path($rel);
+        if (! is_readable($full)) {
+            return null;
+        }
+
+        $ext = strtolower(pathinfo($full, PATHINFO_EXTENSION));
+        $mime = match ($ext) {
+            'png' => 'image/png',
+            'jpg', 'jpeg' => 'image/jpeg',
+            'webp' => 'image/webp',
+            'gif' => 'image/gif',
+            'svg' => 'image/svg+xml',
+            default => null,
+        };
+
+        if ($mime === null) {
+            return null;
+        }
+
+        $raw = @file_get_contents($full);
+        if ($raw === false || $raw === '') {
+            return null;
+        }
+
+        return 'data:'.$mime.';base64,'.base64_encode($raw);
     }
 }

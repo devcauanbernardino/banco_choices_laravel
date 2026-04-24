@@ -3,6 +3,18 @@
 @section('title', __('result.page_title'))
 
 @push('styles')
+<script>
+    (function () {
+        try {
+            var stored = localStorage.getItem('bancochoices-theme');
+            if (stored === 'dark' || stored === 'light') {
+                document.documentElement.setAttribute('data-theme', stored);
+                document.documentElement.setAttribute('data-bs-theme', stored);
+                document.documentElement.style.colorScheme = stored;
+            }
+        } catch (e) {}
+    })();
+</script>
 <link rel="stylesheet" href="{{ asset('assets/css/private-app.css') }}">
 <style>
     body {

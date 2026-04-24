@@ -101,7 +101,7 @@
                                         <span class="bc-mock-mode-card__check" aria-hidden="true">
                                             <span class="material-symbols-outlined">check_circle</span>
                                         </span>
-                                        <div class="bc-mock-mode-card__row pe-5">
+                                        <div class="bc-mock-mode-card__row">
                                             <span class="material-symbols-outlined" aria-hidden="true">school</span>
                                             <span class="bc-mock-mode-card__title">{{ __('bank.mode_study.title') }}</span>
                                         </div>
@@ -114,7 +114,7 @@
                                         <span class="bc-mock-mode-card__check" aria-hidden="true">
                                             <span class="material-symbols-outlined">check_circle</span>
                                         </span>
-                                        <div class="bc-mock-mode-card__row pe-5">
+                                        <div class="bc-mock-mode-card__row">
                                             <span class="material-symbols-outlined" aria-hidden="true">timer</span>
                                             <span class="bc-mock-mode-card__title">{{ __('bank.mode_exam.title') }}</span>
                                         </div>

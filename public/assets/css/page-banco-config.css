@@ -20,7 +20,8 @@
   padding-bottom: 2.5rem;
 }
 
-[data-theme="dark"] .bc-mock-banco-page {
+[data-theme="dark"] .bc-mock-banco-page,
+[data-bs-theme="dark"] .bc-mock-banco-page {
   --bc-mock-surface-low: #1a1a22;
   --bc-mock-surface: #14141a;
   --bc-mock-surface-highest: #2a2a34;
@@ -29,6 +30,11 @@
   --bc-mock-outline: #8b8794;
   --bc-mock-glass: rgba(30, 28, 38, 0.85);
   --bc-mock-glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* Colunas em .row são flex: min-width:auto estoura o painel — permite encolher dentro do main */
+.bc-mock-banco-page .row > [class*="col-"] {
+  min-width: 0;
 }
 
 .bc-mock-banco-page__glow {
@@ -96,10 +102,20 @@
 }
 
 .bc-mock-panel {
-  background: var(--bc-mock-surface-low);
+  min-width: 0;
+  background: var(--app-surface, #fff);
+  border: 1px solid var(--app-border);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
   border-radius: 0.875rem;
   padding: 1.75rem 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .bc-mock-panel,
+[data-bs-theme="dark"] .bc-mock-panel {
+  background: var(--bc-mock-surface-low);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
 }
 
 @media (min-width: 768px) {
@@ -134,7 +150,8 @@
   border-radius: 999px;
 }
 
-[data-theme="dark"] .bc-mock-pill {
+[data-theme="dark"] .bc-mock-pill,
+[data-bs-theme="dark"] .bc-mock-pill {
   background: rgba(106, 3, 146, 0.35);
   color: #e9d5ff;
 }
@@ -176,7 +193,8 @@
   min-height: 3.25rem;
 }
 
-[data-theme="dark"] .bc-mock-subject-card__box {
+[data-theme="dark"] .bc-mock-subject-card__box,
+[data-bs-theme="dark"] .bc-mock-subject-card__box {
   background: var(--app-surface-2, #1a1a22);
 }
 
@@ -218,6 +236,7 @@
   grid-template-columns: 1fr;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
+  min-width: 0;
 }
 
 @media (min-width: 768px) {
@@ -275,6 +294,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  min-width: 0;
 }
 
 @media (min-width: 768px) {
@@ -295,16 +315,23 @@
 }
 
 .bc-mock-mode-card__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   height: 100%;
+  min-width: 0;
   padding: 1.35rem 1.25rem;
+  padding-inline-end: 2.75rem;
   border-radius: 0.875rem;
   border: 2px solid transparent;
   background: var(--app-surface, #fff);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-[data-theme="dark"] .bc-mock-mode-card__box {
-  background: var(--app-surface-2);
+[data-theme="dark"] .bc-mock-mode-card__box,
+[data-bs-theme="dark"] .bc-mock-mode-card__box {
+  background: var(--app-surface-2, #1a1a22);
 }
 
 .bc-mock-mode-card input:checked + .bc-mock-mode-card__box {
@@ -319,8 +346,9 @@
 
 .bc-mock-mode-card__check {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.85rem;
+  right: 0.85rem;
+  z-index: 1;
   color: var(--bc-mock-primary-ct);
   opacity: 0;
   transition: opacity 0.2s;
@@ -332,25 +360,36 @@
 }
 
 .bc-mock-mode-card__check .material-symbols-outlined {
-  font-variation-settings: "FILL" 1;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Painel autenticado: regra global do shell força FILL 0 — manter ícone de seleção preenchido */
+body.app-shell-painel .bc-mock-banco-page .bc-mock-mode-card__check .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
 .bc-mock-mode-card__row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
+  min-width: 0;
 }
 
 .bc-mock-mode-card__row .material-symbols-outlined {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
   color: var(--bc-mock-primary-ct);
 }
 
 .bc-mock-mode-card__title {
+  flex: 1 1 auto;
+  min-width: 0;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--bc-mock-on-surface);
   margin: 0;
+  line-height: 1.3;
 }
 
 .bc-mock-mode-card__desc {
@@ -358,6 +397,7 @@
   color: var(--bc-mock-on-variant);
   line-height: 1.5;
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .bc-mock-summary-col {

@@ -53,23 +53,15 @@
         @include('components.sidebar')
 
         <div class="app-content-wrap">
-            {{-- Idioma + tema + ajuda: fora da sidebar (todas as larguras) --}}
+            {{-- Idioma + tema: fora da sidebar (todas as larguras) --}}
             <header class="app-content-topbar d-flex align-items-center gap-3">
                 <div class="app-content-topbar-titles min-w-0 flex-grow-1">
                     <span class="app-content-topbar-heading fw-bold text-truncate d-lg-none d-block">@yield('mobile_title')</span>
-                    <span class="app-content-topbar-heading fw-semibold text-truncate d-none d-lg-block">
-                        @hasSection('topbar_title')
-                            @yield('topbar_title')
-                        @else
-                            @yield('mobile_title')
-                        @endif
-                    </span>
+                    @hasSection('topbar_title')
+                        <span class="app-content-topbar-heading fw-semibold text-truncate d-none d-lg-block">@yield('topbar_title')</span>
+                    @endif
                 </div>
                 <div class="app-content-topbar-actions d-flex align-items-center gap-2 flex-shrink-0">
-                    <a href="{{ route('home') }}" class="bc-topbar-icon-btn" title="{{ __('topbar.help_aria') }}"
-                       aria-label="{{ __('topbar.help_aria') }}">
-                        <span class="material-symbols-outlined" aria-hidden="true">help</span>
-                    </a>
                     <button type="button" class="bc-topbar-icon-btn js-theme-toggle-btn position-relative"
                             aria-label="{{ __('sidebar.appearance') }}" aria-pressed="false">
                         <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--light" aria-hidden="true">light_mode</span>

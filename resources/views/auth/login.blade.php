@@ -22,10 +22,10 @@
 
     <header class="auth-login-topbar">
         <a href="{{ route('home') }}" class="auth-login-back">
-            <span class="material-symbols-outlined" style="font-size: 1.125rem;">arrow_back</span>
+            <span class="material-symbols-outlined" style="font-size: 1.125rem;" aria-hidden="true">arrow_back</span>
             <span>{{ __('login.back_home') }}</span>
         </a>
-        <div class="navbar-actions navbar-actions--landing login-lang-toolbar flex-shrink-0">
+        <div class="navbar-actions navbar-actions--landing login-lang-toolbar flex-shrink-0 ms-auto">
             <div class="navbar-actions__inner">
                 @include('components.language-selector')
             </div>

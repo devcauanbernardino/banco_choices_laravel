@@ -30,6 +30,14 @@
         </a>
     </div>
 
+    <div class="app-sidebar-cta-wrap">
+        <a href="{{ route('questionbank') }}" class="app-sidebar-cta"
+           data-sidebar-tooltip="{{ __('sidebar.new_sim') }}">
+            <span class="app-sidebar-cta-plus" aria-hidden="true">+</span>
+            <span class="app-sidebar-cta-label">{{ __('sidebar.new_sim') }}</span>
+        </a>
+    </div>
+
     <nav class="app-sidebar-nav flex-grow-1" aria-label="{{ __('nav.menu_aria') }}">
         @foreach ($navLinks as $link)
             <a class="app-sidebar-link{{ request()->routeIs($link['route']) ? ' active' : '' }}"
@@ -43,12 +51,6 @@
     </nav>
 
     <div class="app-sidebar-bottom">
-        <a href="{{ route('questionbank') }}" class="app-sidebar-cta"
-           data-sidebar-tooltip="{{ __('sidebar.new_sim') }}">
-            <span class="app-sidebar-cta-plus" aria-hidden="true">+</span>
-            <span class="app-sidebar-cta-label">{{ __('sidebar.new_sim') }}</span>
-        </a>
-
         <div class="app-sidebar-collapse-wrap d-none d-lg-flex">
             <button type="button" class="app-sidebar-collapse-btn js-sidebar-toggle"
                     aria-expanded="true" aria-controls="appSidebarDesktop"

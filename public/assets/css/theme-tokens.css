@@ -34,8 +34,44 @@
   --app-surface: #14141a;
   --app-surface-2: #1a1a22;
   --app-text: #ececf1;
-  --app-muted: #9ca3af;
+  --app-muted: #b9bcc7;
   --app-border: rgba(255, 255, 255, 0.08);
   --app-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   color-scheme: dark;
+}
+
+/* ===========================================================================
+   Overrides globais para legibilidade em modo escuro
+   Aplica-se a todas as páginas que usem estas classes/variáveis.
+   =========================================================================== */
+[data-theme="dark"] .text-muted,
+[data-bs-theme="dark"] .text-muted {
+  color: var(--app-muted, #b9bcc7) !important;
+}
+
+[data-theme="dark"] .text-secondary,
+[data-bs-theme="dark"] .text-secondary {
+  color: #c7c9d1 !important;
+}
+
+[data-theme="dark"] .text-body-secondary,
+[data-bs-theme="dark"] .text-body-secondary {
+  color: var(--app-muted, #b9bcc7) !important;
+}
+
+[data-theme="dark"] small,
+[data-theme="dark"] .small,
+[data-bs-theme="dark"] small,
+[data-bs-theme="dark"] .small {
+  color: inherit;
+}
+
+[data-theme="dark"] .form-text,
+[data-bs-theme="dark"] .form-text {
+  color: var(--app-muted, #b9bcc7);
+}
+
+[data-theme="dark"] .form-label,
+[data-bs-theme="dark"] .form-label {
+  color: var(--app-text, #ececf1);
 }

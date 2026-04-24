@@ -59,7 +59,7 @@
             </div>
         </header>
 
-        <div class="row g-4 mb-4 align-items-stretch">
+        <div class="row g-4 mb-3 align-items-stretch">
             <div class="col-lg-7">
                 @if ($hasRecent)
                     <a href="{{ route('history') }}" class="dash-home-mega text-decoration-none">
@@ -117,9 +117,9 @@
             </div>
         </div>
 
-        <div class="row g-4 align-items-start">
-            <div class="col-lg-7">
-                <div class="dash-home-activities">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-7 d-flex">
+                <div class="dash-home-activities w-100 d-flex flex-column">
                     <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
                         <h3 class="dash-painel-section-title mb-0">
                             <span class="material-symbols-outlined" aria-hidden="true">history</span>
@@ -156,7 +156,7 @@
                     @endforelse
                 </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 d-flex flex-column">
                 <div class="row g-3">
                     <div class="col-6">
                         <div class="dash-home-mini">
@@ -207,7 +207,7 @@
             </div>
         </div>
 
-        <div class="row g-3 g-md-4 mt-2">
+        <div class="row g-3 g-md-4 mt-3">
             <div class="col-md-4">
                 <a href="{{ route('questionbank') }}" class="dash-home-quick">
                     <span class="material-symbols-outlined dash-home-quick-ico" aria-hidden="true">psychology</span>
@@ -230,27 +230,5 @@
                 </a>
             </div>
         </div>
-
-        <footer class="dash-home-footer">
-            <div class="row g-4 align-items-start">
-                <div class="col-md-5">
-                    <div class="fw-bold text-primary mb-1">{{ __('index.page_title') }}</div>
-                    <p class="small text-muted mb-0">{{ __('dashboard.home.footer_copy') }}</p>
-                </div>
-                <div class="col-md-2">
-                    <div class="dash-home-footer-col">{{ __('dashboard.home.footer_col_support') }}</div>
-                    <a href="{{ route('home') }}" class="dash-home-footer-link">{{ __('dashboard.home.footer_help') }}</a>
-                </div>
-                <div class="col-md-2">
-                    <div class="dash-home-footer-col">{{ __('dashboard.home.footer_col_legal') }}</div>
-                    <a href="{{ route('home') }}" class="dash-home-footer-link">{{ __('dashboard.home.footer_privacy') }}</a>
-                </div>
-                <div class="col-md-3">
-                    <div class="dash-home-footer-col">{{ __('dashboard.home.footer_col_resources') }}</div>
-                    <a href="{{ route('questionbank') }}" class="dash-home-footer-link d-block">{{ __('nav.bank') }}</a>
-                    <a href="{{ route('stats') }}" class="dash-home-footer-link d-block">{{ __('nav.stats') }}</a>
-                </div>
-            </div>
-        </footer>
     </div>
 @endsection

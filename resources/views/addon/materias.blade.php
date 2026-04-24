@@ -2,7 +2,6 @@
 
 @section('title', __('addon.page_title_materias'))
 @section('mobile_title', trim(explode('|', __('addon.page_title_materias'))[0]))
-@section('topbar_title', __('nav.buy_subjects'))
 
 @push('styles')
 <link rel="preconnect" href="https://fonts.googleapis.com">
