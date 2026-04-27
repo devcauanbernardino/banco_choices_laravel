@@ -9,28 +9,83 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('assets/css/page-estatisticas-mock.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ @filemtime(public_path('assets/css/shared-select.css')) }}">
+<link rel="stylesheet" href="{{ asset('assets/css/page-estatisticas-mock.css') }}?v={{ @filemtime(public_path('assets/css/page-estatisticas-mock.css')) }}">
 @endpush
 
 @section('content')
+    @php
+        $currentPeriod = $period ?? '90';
+        $periodOptions = [
+            '7' => __('stats.period_7'),
+            '30' => __('stats.period_30'),
+            '90' => __('stats.period_90'),
+            'all' => __('stats.period_all'),
+            'custom' => __('stats.period_custom'),
+        ];
+        $currentPeriodLabel = $periodOptions[$currentPeriod] ?? $periodOptions['90'];
+        $customFromValue = $customFrom ?? '';
+        $customToValue = $customTo ?? '';
+        $exportParams = [];
+        if ($currentPeriod !== '90') {
+            $exportParams['period'] = $currentPeriod;
+        }
+        if ($currentPeriod === 'custom') {
+            if ($customFromValue) $exportParams['from'] = $customFromValue;
+            if ($customToValue) $exportParams['to'] = $customToValue;
+        }
+        $exportUrl = route('stats.export-pdf', $exportParams);
+    @endphp
     <div class="bc-mock-stats py-4 px-3 px-md-4">
         <header class="bc-mock-stats__header">
-            <div>
+            <div class="bc-mock-stats__header-text">
                 <h1 class="bc-mock-stats__title">{{ __('stats.heading') }}</h1>
                 <p class="bc-mock-stats__sub">{{ __('stats.subhead') }}</p>
             </div>
-            <div class="bc-mock-stats__actions">
-                <button type="button" class="bc-mock-stats__btn-ghost" disabled aria-disabled="true">
-                    <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>
-                    {{ __('stats.period_short') }}
-                </button>
-                <a href="{{ route('stats.export-pdf') }}" class="bc-mock-stats__btn-primary text-decoration-none d-inline-flex align-items-center justify-content-center gap-2"
-                   title="{{ __('stats.export_pdf_title') }}" aria-label="{{ __('stats.export_pdf_title') }}">
-                    <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
-                    {{ __('stats.export_report') }}
-                </a>
-            </div>
         </header>
+
+        <div class="bc-mock-stats__filter-panel">
+            <form action="{{ route('stats') }}" method="GET" class="bc-mock-stats__period-form" id="bc-stats-period-form">
+                <div class="bc-mock-stats__filter-toolbar {{ $currentPeriod === 'custom' ? 'is-custom' : 'is-not-custom' }}" id="bc-stats-filter-toolbar" role="group" aria-label="{{ __('stats.period_aria') }}">
+                    <div class="bc-mock-stats__field-col bc-mock-stats__field-col--period">
+                        <span class="bc-mock-stats__field-label" id="bc-stats-period-lbl">{{ __('stats.period_label') }}</span>
+                        <div class="bc-mock-stats__field-control">
+                            <select id="bc-stats-period"
+                                    name="period"
+                                    class="bc-styled-select bc-mock-stats__select"
+                                    aria-labelledby="bc-stats-period-lbl">
+                                @foreach ($periodOptions as $value => $label)
+                                    <option value="{{ $value }}" {{ $currentPeriod === $value ? 'selected' : '' }}>{{ $label }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bc-mock-stats__custom-block" id="bc-stats-range" data-active="{{ $currentPeriod === 'custom' ? '1' : '0' }}">
+                        <label class="bc-mock-stats__field-col" for="bc-stats-from">
+                            <span class="bc-mock-stats__field-label">{{ __('stats.range_from') }}</span>
+                            <input type="date" name="from" value="{{ $customFromValue }}" class="bc-mock-stats__range-input" id="bc-stats-from" autocomplete="off" @if($currentPeriod !== 'custom') disabled @endif>
+                        </label>
+                        <label class="bc-mock-stats__field-col" for="bc-stats-to">
+                            <span class="bc-mock-stats__field-label">{{ __('stats.range_to') }}</span>
+                            <input type="date" name="to" value="{{ $customToValue }}" class="bc-mock-stats__range-input" id="bc-stats-to" autocomplete="off" @if($currentPeriod !== 'custom') disabled @endif>
+                        </label>
+                        <div class="bc-mock-stats__field-col bc-mock-stats__field-col--action">
+                            <span class="bc-mock-stats__field-label bc-mock-stats__field-label--spacer" aria-hidden="true">&nbsp;</span>
+                            <button type="submit" class="bc-mock-stats__range-btn">{{ __('stats.range_apply') }}</button>
+                        </div>
+                    </div>
+                </div>
+                <noscript>
+                    <button type="submit" class="bc-mock-stats__btn-ghost">{{ __('simulados.filter_btn') }}</button>
+                </noscript>
+            </form>
+            <span class="bc-mock-stats__filter-sep" aria-hidden="true"></span>
+            <a href="{{ $exportUrl }}" class="bc-mock-stats__btn-primary bc-mock-stats__btn-export text-decoration-none d-inline-flex align-items-center justify-content-center gap-2"
+               title="{{ __('stats.export_pdf_title') }}" aria-label="{{ __('stats.export_pdf_title') }}">
+                <span class="material-symbols-outlined" aria-hidden="true">picture_as_pdf</span>
+                <span>{{ __('stats.export_report') }}</span>
+            </a>
+        </div>
 
         <section class="bc-mock-stats__kpi-grid" aria-label="{{ __('stats.heading') }}">
             <article class="bc-mock-stats__kpi">
@@ -135,6 +190,73 @@
 @endsection
 
 @push('scripts')
+<script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}" defer></script>
+<script>
+    (function () {
+        var form = document.getElementById('bc-stats-period-form');
+        var range = document.getElementById('bc-stats-range');
+        var fromInput = document.getElementById('bc-stats-from');
+        var toInput = document.getElementById('bc-stats-to');
+        if (!form || !range) return;
+
+        var toolbar = document.getElementById('bc-stats-filter-toolbar');
+        var selectEl = document.getElementById('bc-stats-period');
+
+        function setToolbarMode(isCustom) {
+            if (!toolbar) return;
+            toolbar.classList.toggle('is-custom', isCustom);
+            toolbar.classList.toggle('is-not-custom', !isCustom);
+            range.setAttribute('data-active', isCustom ? '1' : '0');
+        }
+
+        function maybeSubmitCustom() {
+            if (fromInput && toInput && fromInput.value && toInput.value) {
+                form.submit();
+            }
+        }
+
+        function onPeriodChange(select) {
+            var isCustom = select.value === 'custom';
+            setToolbarMode(isCustom);
+            if (fromInput) {
+                if (isCustom) fromInput.removeAttribute('disabled');
+                else { fromInput.setAttribute('disabled', 'disabled'); fromInput.value = ''; }
+            }
+            if (toInput) {
+                if (isCustom) toInput.removeAttribute('disabled');
+                else { toInput.setAttribute('disabled', 'disabled'); toInput.value = ''; }
+            }
+            if (isCustom) {
+                if (fromInput.value && toInput.value) {
+                    form.submit();
+                } else {
+                    setTimeout(function () { (fromInput.value ? toInput : fromInput).focus(); }, 50);
+                }
+                return;
+            }
+            form.submit();
+        }
+
+        window.bcStatsOnPeriodChange = onPeriodChange;
+
+        function bind() {
+            if (selectEl) {
+                selectEl.addEventListener('change', function () {
+                    onPeriodChange(this);
+                });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', bind);
+        } else {
+            bind();
+        }
+
+        fromInput && fromInput.addEventListener('change', maybeSubmitCustom);
+        toInput && toInput.addEventListener('change', maybeSubmitCustom);
+    })();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     (function () {

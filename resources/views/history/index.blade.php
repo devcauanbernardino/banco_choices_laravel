@@ -9,7 +9,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('assets/css/page-historico-mock.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ @filemtime(public_path('assets/css/shared-select.css')) }}">
+<link rel="stylesheet" href="{{ asset('assets/css/page-historico-mock.css') }}?v={{ @filemtime(public_path('assets/css/page-historico-mock.css')) }}">
 @endpush
 
 @section('content')
@@ -45,7 +46,7 @@
                        placeholder="{{ __('simulados.search_placeholder') }}" autocomplete="off">
             </div>
             <div class="bc-mock-historico__selects">
-                <select name="materia" class="bc-mock-historico__select" aria-label="{{ __('simulados.filter_subject') }}">
+                <select name="materia" class="bc-styled-select bc-mock-historico__select" aria-label="{{ __('simulados.filter_subject') }}" onchange="this.form.submit()">
                     <option value="">{{ __('simulados.all_subjects') }}</option>
                     @foreach ($materias as $m)
                         <option value="{{ $m }}" {{ ($filtroMateria ?? '') === $m ? 'selected' : '' }}>
@@ -53,7 +54,7 @@
                         </option>
                     @endforeach
                 </select>
-                <select name="status" class="bc-mock-historico__select" aria-label="{{ __('simulados.filter_status') }}">
+                <select name="status" class="bc-styled-select bc-mock-historico__select" aria-label="{{ __('simulados.filter_status') }}" onchange="this.form.submit()">
                     <option value="">{{ __('simulados.all_status') }}</option>
                     <option value="aprovado" {{ ($filtroStatus ?? '') === 'aprovado' ? 'selected' : '' }}>{{ __('simulados.status_ok') }}</option>
                     <option value="reprovado" {{ ($filtroStatus ?? '') === 'reprovado' ? 'selected' : '' }}>{{ __('simulados.status_fail') }}</option>
@@ -130,3 +131,7 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}" defer></script>
+@endpush

@@ -5,21 +5,17 @@
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
+  min-width: 0;
 }
 
+/* Só título + subtítulo; filtros ficam no painel abaixo (não “em cima” do conteúdo nem ao lado do título) */
 .bc-mock-stats__header {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
-@media (min-width: 768px) {
-  .bc-mock-stats__header {
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
+.bc-mock-stats__header-text {
+  min-width: 0;
+  max-width: 42rem;
 }
 
 .bc-mock-stats__title {
@@ -39,29 +35,262 @@
   margin: 0;
 }
 
-.bc-mock-stats__actions {
+/* Barra de filtros: conteúdo alinhado à esquerda (sem vão vazio no meio); export logo após os filtros */
+.bc-mock-stats__filter-panel {
+  position: relative;
+  z-index: 1; /* dropdown sobre os KPIs abaixo, mas fica abaixo da topbar (1020) */
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-content: flex-end;
+  gap: 0.6rem 0.5rem;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 1.75rem;
+  padding: 0.9rem 1.1rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--app-border, rgba(15, 23, 42, 0.1));
+  background: var(--app-surface, #fff);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+[data-theme="dark"] .bc-mock-stats__filter-panel {
+  background: #16161c;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.bc-mock-stats__period-form {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Filtro: colunas com rótulo alinhado (Período / De / Até) + largura de export abaixo */
+.bc-mock-stats__filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem 0.75rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.bc-mock-stats__field-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.bc-mock-stats__field-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--app-muted, #6b6370);
+  line-height: 1.2;
+  min-height: 1.1rem;
+}
+
+.bc-mock-stats__field-label--spacer {
+  visibility: hidden;
+}
+
+.bc-mock-stats__field-control {
+  min-width: 0;
+}
+
+.bc-mock-stats__field-col--period {
+  flex: 0 1 auto;
+  min-width: min(100%, 12rem);
+}
+
+.bc-mock-stats__custom-block {
+  display: none;
+  flex: 1 1 16rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem 0.75rem;
+  min-width: 0;
+}
+
+.bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__custom-block {
+  display: flex;
+}
+
+.bc-mock-stats__custom-block > .bc-mock-stats__field-col {
+  flex: 1 1 8rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.bc-mock-stats__field-col--action {
+  flex: 0 0 auto;
+  justify-content: flex-end;
+}
+
+/* Altura e borda alinhadas ao bloco de datas (o toggle do select é mais “alto” no CSS global) */
+.bc-mock-stats__filter-toolbar .bc-styled-select__toggle {
+  min-height: 2.5rem;
+  padding: 0.45rem 2.4rem 0.45rem 0.7rem;
+  border-radius: 0.65rem;
+  font-size: 0.875rem;
+}
+
+/* Sobre o restante da página; z-index do shared-select (1080) fica contido no painel (z-index 1) */
+.bc-mock-stats__filter-panel .bc-styled-select__list {
+  z-index: 2;
+}
+
+.bc-mock-stats__range-input {
+  appearance: auto;
+  -webkit-appearance: auto;
+  border: 1px solid var(--app-border);
+  background: var(--app-surface, #fff);
+  color: var(--app-text);
+  border-radius: 0.65rem;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-family: inherit;
+  min-height: 2.5rem;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.bc-mock-stats__range-input:focus {
+  outline: 2px solid rgba(168, 85, 247, 0.4);
+  outline-offset: 1px;
+  border-color: rgba(106, 3, 146, 0.45);
+}
+
+.bc-mock-stats__filter-toolbar .bc-mock-stats__range-input {
+  max-width: 100%;
+}
+
+body[data-theme="dark"] .bc-mock-stats__range-input,
+body[data-bs-theme="dark"] .bc-mock-stats__range-input,
+html[data-theme="dark"] .bc-mock-stats__range-input,
+[data-theme="dark"] .bc-mock-stats__range-input {
+  background: #1a1a22;
+  border-color: rgba(255, 255, 255, 0.14);
+  color-scheme: dark;
+}
+
+.bc-mock-stats__range-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 0.65rem;
+  border: none;
+  background: #6a0392;
+  color: #f4e4ff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.bc-mock-stats__range-btn:hover {
+  opacity: 0.92;
+}
+
+@media (max-width: 639.98px) {
+  .bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__field-col--action {
+    flex: 1 1 100%;
+  }
+
+  .bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__range-btn {
+    width: 100%;
+  }
+}
+
+/* Separador entre filtros e ação (só em linha) */
+.bc-mock-stats__filter-sep {
+  flex: 0 0 auto;
+  width: 1px;
+  align-self: stretch;
+  min-height: 2.5rem;
+  margin: 0 0.15rem 0 0.35rem;
+  background: var(--app-border, rgba(15, 23, 42, 0.12));
+  border-radius: 1px;
+  opacity: 0.75;
+}
+
+[data-theme="dark"] .bc-mock-stats__filter-sep {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.bc-mock-stats__filter-panel .bc-mock-stats__btn-export {
+  flex: 0 0 auto;
+  min-width: 0;
+  width: auto;
+}
+
+/* Sobrescreve .bc-mock-stats__btn-primary { width:100% } nesta barra compacta */
+.bc-mock-stats__filter-panel .bc-mock-stats__btn-primary {
+  width: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .bc-mock-stats__filter-sep {
+    display: none;
+  }
+
+  .bc-mock-stats__filter-panel .bc-mock-stats__btn-export {
+    flex: 1 1 100%;
+  }
+
+  .bc-mock-stats__filter-panel .bc-mock-stats__btn-primary {
+    width: 100%;
+  }
+}
+
+/* Estilo visual movido para shared-select.css (.bc-styled-select).
+   Mantemos apenas o ajuste responsivo da página. */
+.bc-mock-stats__select {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bc-mock-stats__select {
+    width: auto;
+    min-width: 12rem;
+  }
 }
 
 .bc-mock-stats__btn-ghost {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   padding: 0.55rem 1rem;
   border-radius: 0.65rem;
   font-size: 0.85rem;
   font-weight: 600;
-  border: none;
+  border: 1px solid transparent;
   background: var(--app-surface-2, #e0e2e7);
   color: var(--app-text);
+  white-space: nowrap;
 }
 
 .bc-mock-stats__btn-primary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
+  width: 100%;
   padding: 0.55rem 1rem;
   border-radius: 0.65rem;
   font-size: 0.85rem;
@@ -70,6 +299,13 @@
   background: #6a0392;
   color: #f4e4ff;
   box-shadow: 0 4px 14px rgba(106, 3, 146, 0.25);
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .bc-mock-stats__btn-primary {
+    width: auto;
+  }
 }
 
 .bc-mock-stats__btn-primary:disabled {
@@ -107,7 +343,12 @@ a.bc-mock-stats__btn-primary:hover {
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
   border-radius: 0.875rem;
   padding: 1.35rem 1.25rem;
+  min-width: 0;
   transition: background 0.2s, box-shadow 0.2s;
+}
+
+.bc-mock-stats__kpi-value {
+  word-break: break-word;
 }
 
 [data-theme="dark"] .bc-mock-stats__kpi {
@@ -197,8 +438,15 @@ a.bc-mock-stats__btn-primary:hover {
   border: 1px solid var(--app-border);
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
   border-radius: 1.25rem;
-  padding: 1.75rem 1.25rem;
+  padding: 1.5rem 1rem;
   min-height: 18rem;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .bc-mock-stats__chart-panel {
+    padding: 1.75rem 1.25rem;
+  }
 }
 
 [data-theme="dark"] .bc-mock-stats__chart-panel {

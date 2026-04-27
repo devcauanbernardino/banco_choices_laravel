@@ -165,33 +165,10 @@
   }
 }
 
+/* Estilo visual movido para shared-select.css (.bc-styled-select).
+   Mantemos a classe legada apenas para tamanho. */
 .bc-mock-historico__select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 1px solid var(--app-border);
-  border-radius: 0.875rem;
-  padding: 0.95rem 2.85rem 0.95rem 1.15rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  background-color: var(--app-surface, #fff);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 1.15rem center;
-  color: var(--bc-h-variant);
   min-width: 10rem;
-  cursor: pointer;
-}
-
-.bc-mock-historico__select:focus {
-  outline: 2px solid rgba(106, 3, 146, 0.35);
-}
-
-[data-theme="dark"] .bc-mock-historico__select {
-  background-color: var(--bc-h-low);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23b4b4c0' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
-  border-color: rgba(255, 255, 255, 0.08);
-  color: var(--bc-h-on);
 }
 
 .bc-mock-historico__btn-filter {

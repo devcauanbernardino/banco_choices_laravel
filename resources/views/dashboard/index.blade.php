@@ -98,16 +98,37 @@
                         </span>
                     </div>
                     @if ($evoCount > 0)
-                        <div class="dash-painel-chart-bars flex-grow-1 mt-auto" role="img" aria-label="{{ __('dashboard.panel.chart_weekly_title') }}">
+                        @php
+                            $evoAvg = array_sum($evoData) / max(1, $evoCount);
+                            $avgPct = max(0, min(100, $evoAvg / $maxEvo * 100));
+                        @endphp
+                        <div class="dash-painel-chart-readout" aria-live="polite">
+                            <span class="dash-painel-chart-readout-label" data-default="{{ __('dashboard.panel.chart_hint') }}">{{ __('dashboard.panel.chart_hint') }}</span>
+                            <span class="dash-painel-chart-readout-value" hidden></span>
+                        </div>
+                        <div class="dash-painel-chart-bars flex-grow-1 mt-auto js-dash-chart"
+                             role="img"
+                             aria-label="{{ __('dashboard.panel.chart_weekly_title') }}">
                             @foreach ($evoData as $i => $valor)
                                 @php
                                     $h = (float) $valor / $maxEvo * 100;
                                     $h = max($valor > 0 ? 12.0 : 6.0, min(100.0, $h));
+                                    $isToday = $i === $lastEvoIndex;
                                 @endphp
-                                <div class="dash-painel-chart-bar-wrap {{ $i === $lastEvoIndex ? 'is-today' : '' }}">
-                                    <div class="dash-painel-chart-bar" style="height: {{ $h }}%"></div>
+                                <button type="button"
+                                        class="dash-painel-chart-bar-wrap {{ $isToday ? 'is-today' : '' }}"
+                                        style="--bar-height: {{ $h }}%"
+                                        data-value="{{ $valor }}"
+                                        data-label="{{ $evoLabels[$i] ?? '' }}"
+                                        data-height="{{ $h }}"
+                                        aria-label="{{ __('dashboard.panel.chart_value', ['pct' => (int) round($valor), 'date' => $evoLabels[$i] ?? '']) }}">
+                                    <span class="dash-painel-chart-tooltip" role="tooltip">
+                                        <strong class="dash-painel-chart-tooltip-value">{{ (int) round($valor) }}%</strong>
+                                        <span class="dash-painel-chart-tooltip-label">{{ $evoLabels[$i] ?? '' }}</span>
+                                    </span>
+                                    <span class="dash-painel-chart-bar"></span>
                                     <span class="dash-painel-chart-label">{{ $evoLabels[$i] ?? '' }}</span>
-                                </div>
+                                </button>
                             @endforeach
                         </div>
                     @else
@@ -232,3 +253,7 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('assets/js/dashboard-chart.js') }}" defer></script>
+@endpush

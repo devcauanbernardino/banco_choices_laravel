@@ -492,27 +492,61 @@ body.app-shell-painel .bc-mock-banco-page .bc-mock-mode-card__check .material-sy
 }
 
 .bc-mock-badge-mini {
-  background: var(--bc-mock-surface-low);
-  border-radius: 0.5rem;
-  padding: 0.85rem 0.5rem;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 0.75rem;
+  padding: 1rem 0.65rem 0.85rem;
   text-align: center;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.bc-mock-badge-mini:hover {
+  transform: translateY(-2px);
+  border-color: rgba(106, 3, 146, 0.35);
+  box-shadow: 0 8px 20px rgba(106, 3, 146, 0.12);
 }
 
 .bc-mock-badge-mini .material-symbols-outlined {
-  display: block;
-  margin: 0 auto 0.35rem;
-  font-size: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 auto 0.5rem;
+  border-radius: 50%;
+  background: rgba(106, 3, 146, 0.1);
+  font-size: 1.25rem;
   color: var(--bc-mock-primary-ct);
 }
 
 .bc-mock-badge-mini p {
-  font-size: 0.62rem;
+  font-size: 0.65rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--bc-mock-on-surface);
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.3;
+}
+
+[data-theme="dark"] .bc-mock-badge-mini,
+[data-bs-theme="dark"] .bc-mock-badge-mini {
+  background: var(--bc-mock-surface-low);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .bc-mock-badge-mini:hover,
+[data-bs-theme="dark"] .bc-mock-badge-mini:hover {
+  border-color: rgba(244, 228, 255, 0.35);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .bc-mock-badge-mini .material-symbols-outlined,
+[data-bs-theme="dark"] .bc-mock-badge-mini .material-symbols-outlined {
+  background: rgba(244, 228, 255, 0.12);
+  color: var(--bc-mock-on-primary-ct);
 }
 
 .bc-mock-footer-note {

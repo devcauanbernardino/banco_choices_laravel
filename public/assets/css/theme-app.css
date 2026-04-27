@@ -277,6 +277,37 @@
   color: var(--app-text) !important;
 }
 
+/* Topbar do painel: botão de idioma no tema escuro */
+[data-theme="dark"] .app-content-topbar .btn-navbar-lang,
+[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  box-shadow: none;
+}
+
+[data-theme="dark"] .app-content-topbar .btn-navbar-lang .bc-lang-icon-svg,
+[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang .bc-lang-icon-svg {
+  color: rgba(255, 255, 255, 0.88) !important;
+  opacity: 1;
+}
+
+[data-theme="dark"] .app-content-topbar .btn-navbar-lang:hover,
+[data-theme="dark"] .app-content-topbar .btn-navbar-lang:focus,
+[data-theme="dark"] .app-content-topbar .btn-navbar-lang.show,
+[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang:hover,
+[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang:focus,
+[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang.show {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .app-content-topbar .btn-navbar-lang.dropdown-toggle::after,
+[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang.dropdown-toggle::after {
+  border-top-color: rgba(255, 255, 255, 0.75);
+}
+
 [data-theme="dark"] .app-sidebar .bc-lang-menu__heading,
 [data-bs-theme="dark"] .app-sidebar .bc-lang-menu__heading,
 [data-theme="dark"] .app-offcanvas-more .bc-lang-menu__heading,
