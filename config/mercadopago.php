@@ -1,10 +1,23 @@
 <?php
 
+$defaultRequireWebhookSig = env('MP_REQUIRE_WEBHOOK_SIGNATURE');
+if ($defaultRequireWebhookSig === null || $defaultRequireWebhookSig === '') {
+    $requireWebhookSignature = env('APP_ENV') === 'production';
+} else {
+    $requireWebhookSignature = filter_var($defaultRequireWebhookSig, FILTER_VALIDATE_BOOLEAN);
+}
+
 return [
     'access_token' => env('MP_ACCESS_TOKEN', ''),
     'public_key' => env('MP_PUBLIC_KEY', ''),
     'webhook_secret' => env('MP_WEBHOOK_SECRET', ''),
     'currency_id' => env('MP_CURRENCY_ID', 'ARS'),
+
+    /*
+    | Em produção o webhook deve validar assinatura (MP_WEBHOOK_SECRET obrigatório).
+    | Sobrescrever: MP_REQUIRE_WEBHOOK_SIGNATURE=false (ex.: diagnóstico temporário).
+    */
+    'require_webhook_signature' => $requireWebhookSignature,
 
     /*
     | Base pública do site (sem barra final), usada se MP_CHECKOUT_BASE_URL estiver vazio.

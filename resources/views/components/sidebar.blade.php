@@ -4,12 +4,9 @@
         ['route' => 'questionbank', 'symbol' => 'menu_book', 'mobile_icon' => 'quiz', 'label' => __('nav.studies'), 'short' => __('nav.studies_short')],
         ['route' => 'history', 'symbol' => 'folder_open', 'mobile_icon' => 'folder', 'label' => __('nav.files'), 'short' => __('nav.files_short')],
         ['route' => 'stats', 'symbol' => 'analytics', 'mobile_icon' => 'bar_chart', 'label' => __('nav.stats'), 'short' => __('nav.stats')],
+        ['route' => 'referral.show', 'symbol' => 'redeem', 'mobile_icon' => 'redeem', 'label' => __('nav.referrals'), 'short' => __('nav.referrals_short')],
         ['route' => 'addon.materias', 'symbol' => 'shopping_cart', 'mobile_icon' => 'add_shopping_cart', 'label' => __('nav.buy_subjects'), 'short' => __('nav.buy_subjects_short')],
     ];
-    $sidebarUser = auth()->user();
-    $sidebarName = trim((string) ($sidebarUser->nome ?? ''));
-    $sidebarEmail = trim((string) ($sidebarUser->email ?? ''));
-    $sidebarAvatarUrl = 'https://ui-avatars.com/api/?name=' . urlencode($sidebarName !== '' ? $sidebarName : '?') . '&background=6a0392&color=fff&size=128&bold=true';
 @endphp
 
 {{-- Desktop sidebar — referência visual: stats curadoria (nav + CTA + utilizador) --}}
@@ -63,26 +60,6 @@
                 <span class="app-sidebar-collapse-label">{{ __('sidebar.collapse') }}</span>
             </button>
         </div>
-
-        <a href="{{ route('profile.show') }}" class="app-sidebar-usercard text-decoration-none"
-           data-sidebar-tooltip="{{ __('sidebar.profile') }}">
-            <img src="{{ $sidebarAvatarUrl }}" alt="" class="app-sidebar-usercard-avatar" width="40" height="40">
-            <div class="app-sidebar-usercard-text min-w-0">
-                <div class="app-sidebar-usercard-name text-truncate">{{ $sidebarName !== '' ? $sidebarName : __('nav.profile') }}</div>
-                @if ($sidebarEmail !== '')
-                    <div class="app-sidebar-usercard-meta text-truncate">{{ $sidebarEmail }}</div>
-                @endif
-            </div>
-        </a>
-
-        <form method="POST" action="{{ route('logout') }}" class="app-sidebar-logout-form">
-            @csrf
-            <button type="submit" class="app-sidebar-logout-btn"
-                    data-sidebar-tooltip="{{ __('sidebar.logout') }}">
-                <span class="material-symbols-outlined" aria-hidden="true">logout</span>
-                <span class="app-sidebar-logout-text">{{ __('sidebar.logout') }}</span>
-            </button>
-        </form>
     </div>
 </aside>
 
@@ -101,14 +78,9 @@
         <div class="flex-grow-1 min-h-0" aria-hidden="true"></div>
 
         <div class="app-offcanvas-account flex-shrink-0 pt-1">
-            <a href="{{ route('profile.show') }}" class="app-sidebar-usercard app-sidebar-usercard--sheet text-decoration-none d-flex">
-                <img src="{{ $sidebarAvatarUrl }}" alt="" class="app-sidebar-usercard-avatar" width="40" height="40">
-                <div class="app-sidebar-usercard-text min-w-0">
-                    <div class="app-sidebar-usercard-name text-truncate">{{ $sidebarName !== '' ? $sidebarName : __('nav.profile') }}</div>
-                    @if ($sidebarEmail !== '')
-                        <div class="app-sidebar-usercard-meta text-truncate">{{ $sidebarEmail }}</div>
-                    @endif
-                </div>
+            <a href="{{ route('profile.show') }}" class="btn btn-outline-primary w-100 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 py-2 mb-2">
+                <span class="material-icons" aria-hidden="true">person</span>
+                {{ __('sidebar.profile') }}
             </a>
             <form method="POST" action="{{ route('logout') }}" class="app-sidebar-logout-form mt-2 mb-0">
                 @csrf

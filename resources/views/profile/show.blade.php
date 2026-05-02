@@ -55,8 +55,8 @@
             {{-- Left column --}}
             <div class="col-lg-4">
                 {{-- Stats summary --}}
-                <div class="bc-card p-4 mb-4">
-                    <h2 class="h6 fw-bold mb-3">{{ __('perfil.summary') }}</h2>
+                <div class="bc-card bc-card--p-fluid mb-4">
+                    <h2 class="bc-profile-section-title mb-3">{{ __('perfil.summary') }}</h2>
                     <div class="row g-2">
                         <div class="col-12">
                             <div class="bc-stat-card d-flex justify-content-between align-items-center">
@@ -82,45 +82,50 @@
 
             {{-- Right column --}}
             <div class="col-lg-8">
-                {{-- Account data form --}}
-                <div class="bc-card p-4 mb-4">
-                    <h2 class="h6 fw-bold mb-4">{{ __('perfil.account_data') }}</h2>
-                    <form action="{{ route('profile.update') }}" method="post" autocomplete="off">
-                        @csrf
+                <form action="{{ route('profile.update') }}" method="post" autocomplete="off" class="bc-profile-form">
+                    @csrf
+
+                    {{-- Dados da conta --}}
+                    <div class="bc-card bc-card--p-fluid mb-4">
+                        <header class="bc-profile-section-head">
+                            <h2 class="bc-profile-section-title">{{ __('perfil.account_data') }}</h2>
+                        </header>
                         <div class="row g-3">
                             <div class="col-md-12">
-                                <label class="form-label small fw-semibold text-muted">{{ __('perfil.label_name') }}</label>
-                                <input type="text" class="form-control form-control-lg" name="nome" required
+                                <label class="bc-profile-label" for="profileNomeInput">{{ __('perfil.label_name') }}</label>
+                                <input type="text" class="form-control bc-profile-input" id="profileNomeInput" name="nome" required
                                        value="{{ old('nome', $usuario->nome) }}">
                             </div>
                             <div class="col-md-12">
-                                <label class="form-label small fw-semibold text-muted">{{ __('perfil.label_email') }}</label>
-                                <input type="email" class="form-control" value="{{ $usuario->email }}" readonly disabled>
-                                <div class="form-text">{{ __('perfil.email_help') }}</div>
+                                <label class="bc-profile-label" for="profileEmailDisplay">{{ __('perfil.label_email') }}</label>
+                                <input type="email" class="form-control bc-profile-input" id="profileEmailDisplay" value="{{ $usuario->email }}" readonly disabled>
+                                <div class="form-text mt-1">{{ __('perfil.email_help') }}</div>
                             </div>
                         </div>
+                    </div>
 
-                        <hr class="my-4 opacity-25">
-
-                        {{-- Password change --}}
-                        <h3 class="h6 fw-bold mb-3">{{ __('perfil.security') }}</h3>
-                        <p class="small text-muted">{{ __('perfil.security_hint') }}</p>
+                    {{-- Segurança --}}
+                    <div class="bc-card bc-card--p-fluid mb-4">
+                        <header class="bc-profile-section-head bc-profile-section-head--security">
+                            <h2 class="bc-profile-section-title">{{ __('perfil.security') }}</h2>
+                            <p class="bc-profile-section-lead mb-0">{{ __('perfil.security_hint') }}</p>
+                        </header>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-muted" for="senhaAtualInput">{{ __('perfil.label_cur_pass') }}</label>
-                                <div class="input-group rounded-3 overflow-hidden">
+                                <label class="bc-profile-label" for="senhaAtualInput">{{ __('perfil.label_cur_pass') }}</label>
+                                <div class="input-group bc-profile-password-group">
                                     <input type="password" class="form-control" id="senhaAtualInput" name="senha_atual" placeholder="{{ __('perfil.placeholder_current') }}" autocomplete="current-password">
-                                    <button type="button" class="btn btn-outline-secondary bc-pw-toggle d-inline-flex align-items-center justify-content-center px-3" id="toggleSenhaAtual" data-bc-pw-target="senhaAtualInput" aria-controls="senhaAtualInput" aria-label="{{ __('login.show_pwd') }}" aria-pressed="false">
-                                        <span class="material-icons fs-6 bc-pw-toggle-icon" aria-hidden="true">visibility</span>
+                                    <button type="button" class="btn bc-pw-toggle d-inline-flex align-items-center justify-content-center" id="toggleSenhaAtual" data-bc-pw-target="senhaAtualInput" aria-controls="senhaAtualInput" aria-label="{{ __('login.show_pwd') }}" aria-pressed="false">
+                                        <span class="material-symbols-outlined bc-pw-toggle-icon" aria-hidden="true">visibility</span>
                                     </button>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label small fw-semibold text-muted" for="novaSenhaInput">{{ __('perfil.label_new_pass') }}</label>
-                                <div class="input-group rounded-3 overflow-hidden">
+                                <label class="bc-profile-label" for="novaSenhaInput">{{ __('perfil.label_new_pass') }}</label>
+                                <div class="input-group bc-profile-password-group">
                                     <input type="password" class="form-control" id="novaSenhaInput" name="nova_senha" placeholder="{{ __('perfil.placeholder_new') }}" autocomplete="new-password">
-                                    <button type="button" class="btn btn-outline-secondary bc-pw-toggle d-inline-flex align-items-center justify-content-center px-3" id="toggleNovaSenha" data-bc-pw-target="novaSenhaInput" aria-controls="novaSenhaInput" aria-label="{{ __('login.show_pwd') }}" aria-pressed="false">
-                                        <span class="material-icons fs-6 bc-pw-toggle-icon" aria-hidden="true">visibility</span>
+                                    <button type="button" class="btn bc-pw-toggle d-inline-flex align-items-center justify-content-center" id="toggleNovaSenha" data-bc-pw-target="novaSenhaInput" aria-controls="novaSenhaInput" aria-label="{{ __('login.show_pwd') }}" aria-pressed="false">
+                                        <span class="material-symbols-outlined bc-pw-toggle-icon" aria-hidden="true">visibility</span>
                                     </button>
                                 </div>
                                 <div id="novaSenhaStrengthMeter" class="bc-pw-strength mt-2" hidden>
@@ -132,25 +137,25 @@
                             </div>
                         </div>
 
-                        <div class="bc-form-actions">
-                            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-end align-items-center">
+                        <div class="bc-form-actions bc-form-actions--profile">
+                            <div class="d-flex flex-wrap gap-2 justify-content-stretch justify-content-md-end align-items-center">
                                 <a href="{{ route('dashboard') }}"
-                                   class="btn btn-outline-secondary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2">
-                                    <span class="material-icons bc-perfil-icon-btn" aria-hidden="true">arrow_back</span>
+                                   class="btn btn-outline-primary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 flex-grow-1 flex-md-grow-0">
+                                    <span class="material-symbols-outlined bc-perfil-symbol-btn" aria-hidden="true">arrow_back</span>
                                     {{ __('perfil.back') }}
                                 </a>
                                 <button type="submit"
-                                        class="btn btn-primary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 shadow-sm">
-                                    <span class="material-icons bc-perfil-icon-btn" aria-hidden="true">save</span>
+                                        class="btn btn-primary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 flex-grow-1 flex-md-grow-0">
+                                    <span class="material-symbols-outlined bc-perfil-symbol-btn" aria-hidden="true">save</span>
                                     {{ __('perfil.save') }}
                                 </button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
 
                 {{-- Logout section --}}
-                <div class="bc-card p-4 border-danger border-opacity-25">
+                <div class="bc-card bc-card--p-fluid border-danger border-opacity-25">
                     <h2 class="h6 fw-bold mb-2 text-danger">{{ __('perfil.logout_section') }}</h2>
                     <p class="small text-muted mb-3">{{ __('perfil.logout_hint') }}</p>
                     <form method="POST" action="{{ route('logout') }}" class="m-0">

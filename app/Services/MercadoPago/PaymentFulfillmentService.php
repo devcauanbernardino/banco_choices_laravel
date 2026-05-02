@@ -158,10 +158,13 @@ class PaymentFulfillmentService
                 }
             } else {
                 $plainPassword = self::generateRandomPassword();
+                $cupUsadoMeta = trim((string) ($meta['codigo_cupom_usado'] ?? ''));
+
                 $user = User::create([
                     'nome' => $nome,
                     'email' => $email,
                     'senha' => password_hash($plainPassword, PASSWORD_DEFAULT),
+                    'referido_por_codigo' => $cupUsadoMeta !== '' ? strtoupper($cupUsadoMeta) : null,
                 ]);
                 $user->materias()->attach($materias);
 
@@ -187,6 +190,21 @@ class PaymentFulfillmentService
 
             $pdo->commit();
             Log::info("MP approved_fulfilled mp_id={$mpId} pedido_id={$pedidoId}");
+
+            try {
+                \App\Services\Referral\ReferralService::processarFulfillmentPorPedidoId($pedidoId);
+            } catch (\Throwable $e) {
+                Log::warning('Referral fulfilment skipped: '.$e->getMessage());
+            }
+
+            try {
+                $cred = isset($meta['valor_credito_utilizado_addon']) ? (float) $meta['valor_credito_utilizado_addon'] : 0.0;
+                if ($cred > 0) {
+                    \App\Services\Referral\CreditoFulfillmentDebit::debitarCreditoUtilizadoAddon((string) $email, $cred, $pedidoId);
+                }
+            } catch (\Throwable $e) {
+                Log::warning('Crédito debit skipped: '.$e->getMessage());
+            }
 
             return ['handled' => true, 'detail' => 'fulfilled'];
         } catch (\Throwable $e) {

@@ -72,29 +72,11 @@
 
             <form id="materiasForm" action="{{ route('signup.materias') }}" method="POST">
                 @csrf
-                <div class="signup-materias-grid">
-                    @foreach ($materias as $materia)
-                        @php
-                            $icon = \App\Support\MateriaLayout::materialIcon($materia->nome);
-                            $hintKey = \App\Support\MateriaLayout::hintKey($materia->nome);
-                        @endphp
-                        <label class="signup-materias-card" id="card-{{ $materia->id }}">
-                            <input type="checkbox" name="materias[]" value="{{ $materia->id }}"
-                                   class="visually-hidden"
-                                   @checked(in_array($materia->id, (array) old('materias', []), false))>
-                            <span class="signup-materias-card__icon" aria-hidden="true">
-                                <span class="material-symbols-outlined">{{ $icon }}</span>
-                            </span>
-                            <span class="signup-materias-card__body">
-                                <span class="signup-materias-card__name">{{ $materia->nome }}</span>
-                                <span class="signup-materias-card__hint">{{ __('signup.materia.hint.' . $hintKey) }}</span>
-                            </span>
-                            <span class="signup-materias-card__check" aria-hidden="true">
-                                <span class="material-symbols-outlined">check</span>
-                            </span>
-                        </label>
-                    @endforeach
-                </div>
+
+                @include('partials.catalog-materias-flow', [
+                    'excludeIdsCsv' => '',
+                    'presetMateriaId' => $presetMateriaId ?? (int) request('materia_id', 0),
+                ])
 
                 <div class="signup-materias-actions">
                     <button type="submit" class="btn btn-primary btn-lg fw-bold px-4 px-md-5 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2">

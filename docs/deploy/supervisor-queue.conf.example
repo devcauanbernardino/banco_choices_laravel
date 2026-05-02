@@ -1,0 +1,16 @@
+; Exemplo Supervisor — worker da fila Laravel (ajuste paths e utilizador).
+; Instalar: sudo cp docs/deploy/supervisor-queue.conf.example /etc/supervisor/conf.d/laravel-worker.conf
+; Depois: sudo supervisorctl reread && sudo supervisorctl update
+
+[program:banco-choices-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/banco_choices_laravel/artisan queue:work database --sleep=3 --tries=3 --max-time=3600
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
+user=www-data
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/var/www/banco_choices_laravel/storage/logs/worker.log
+stopwaitsecs=3600

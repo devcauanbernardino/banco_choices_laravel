@@ -2,7 +2,8 @@
  * Estatísticas — mock docs/layouts/estat_sticas_de_desempenho
  */
 .bc-mock-stats {
-  max-width: 80rem;
+  --bc-stats-filter-ctrl-h: 2.75rem;
+  max-width: min(80rem, 100%);
   margin-left: auto;
   margin-right: auto;
   min-width: 0;
@@ -10,12 +11,12 @@
 
 /* Só título + subtítulo; filtros ficam no painel abaixo (não “em cima” do conteúdo nem ao lado do título) */
 .bc-mock-stats__header {
-  margin-bottom: 1.25rem;
+  margin-bottom: var(--app-section-gap, 1.25rem);
 }
 
 .bc-mock-stats__header-text {
   min-width: 0;
-  max-width: 42rem;
+  max-width: min(42rem, 100%);
 }
 
 .bc-mock-stats__title {
@@ -31,28 +32,26 @@
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--app-muted, #4e4351);
-  max-width: 26rem;
+  max-width: min(26rem, 100%);
   margin: 0;
 }
 
-/* Barra de filtros: conteúdo alinhado à esquerda (sem vão vazio no meio); export logo após os filtros */
+/* Barra de filtros: clusters alinhados | separador | export */
 .bc-mock-stats__filter-panel {
   position: relative;
-  z-index: 1; /* dropdown sobre os KPIs abaixo, mas fica abaixo da topbar (1020) */
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: flex-start;
-  align-content: flex-end;
-  gap: 0.6rem 0.5rem;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1px auto;
+  align-items: center;
+  gap: 0.85rem 1rem;
   width: 100%;
   min-width: 0;
-  margin-bottom: 1.75rem;
-  padding: 0.9rem 1.1rem 1rem;
-  border-radius: 1rem;
+  margin-bottom: var(--app-section-gap, 1.5rem);
+  padding: 1rem 1.15rem;
+  border-radius: var(--app-radius-panel, 1rem);
   border: 1px solid var(--app-border, rgba(15, 23, 42, 0.1));
   background: var(--app-surface, #fff);
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
 }
 
 [data-theme="dark"] .bc-mock-stats__filter-panel {
@@ -62,85 +61,262 @@
 }
 
 .bc-mock-stats__period-form {
-  flex: 0 1 auto;
+  justify-self: start;
   min-width: 0;
+  width: max-content;
   max-width: 100%;
 }
 
-/* Filtro: colunas com rótulo alinhado (Período / De / Até) + largura de export abaixo */
+.bc-mock-stats__filter-body {
+  min-width: 0;
+  width: 100%;
+}
+
+/* Uma linha de rótulos por cluster; controlos com mesma altura */
 .bc-mock-stats__filter-toolbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 0.5rem 0.75rem;
+  align-items: flex-end;
+  gap: 1rem 1.75rem;
   width: 100%;
   min-width: 0;
 }
 
-.bc-mock-stats__field-col {
+.bc-mock-stats__filter-cluster {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  align-items: stretch;
+  gap: 0.5rem;
   min-width: 0;
 }
 
-.bc-mock-stats__field-label {
-  display: block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--app-muted, #6b6370);
-  line-height: 1.2;
-  min-height: 1.1rem;
+.bc-mock-stats__filter-cluster--period {
+  flex: 0 1 auto;
+  min-width: min(100%, 11.5rem);
 }
 
-.bc-mock-stats__field-label--spacer {
-  visibility: hidden;
+.bc-mock-stats__filter-cluster--interval {
+  flex: 1 1 auto;
+  min-width: min(100%, 28rem);
+  padding-left: 1.35rem;
+  margin-left: 0.15rem;
+  border-left: 1px solid var(--app-border, rgba(15, 23, 42, 0.12));
+}
+
+[data-theme="dark"] .bc-mock-stats__filter-cluster--interval,
+[data-bs-theme="dark"] .bc-mock-stats__filter-cluster--interval {
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+.bc-mock-stats__filter-heading {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--app-muted, #64748b);
+  line-height: 1.2;
+  min-height: 1rem;
+}
+
+[data-theme="dark"] .bc-mock-stats__filter-heading,
+[data-bs-theme="dark"] .bc-mock-stats__filter-heading {
+  color: var(--app-muted, #94a3b8);
 }
 
 .bc-mock-stats__field-control {
   min-width: 0;
 }
 
-.bc-mock-stats__field-col--period {
-  flex: 0 1 auto;
-  min-width: min(100%, 12rem);
-}
-
-.bc-mock-stats__custom-block {
-  display: none;
-  flex: 1 1 16rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 0.5rem 0.75rem;
+.bc-mock-stats__filter-group--range {
   min-width: 0;
 }
 
-.bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__custom-block {
+.bc-mock-stats__filter-toolbar.is-not-custom .bc-mock-stats__filter-group--range {
+  pointer-events: none;
+}
+
+.bc-mock-stats__filter-toolbar.is-not-custom .bc-mock-stats__filter-group--range .bc-mock-stats__range-input:disabled {
+  opacity: 0.65;
+}
+
+.bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__filter-group--range {
+  pointer-events: auto;
+}
+
+.bc-mock-stats__interval-controls {
   display: flex;
-}
-
-.bc-mock-stats__custom-block > .bc-mock-stats__field-col {
-  flex: 1 1 8rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 0.75rem;
   min-width: 0;
-  max-width: 100%;
 }
 
-.bc-mock-stats__field-col--action {
+.bc-mock-stats__interval-field {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.bc-mock-stats__interval-field-lbl {
   flex: 0 0 auto;
-  justify-content: flex-end;
+  margin: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--app-muted, #64748b);
+  line-height: 1;
+  white-space: nowrap;
 }
 
-/* Altura e borda alinhadas ao bloco de datas (o toggle do select é mais “alto” no CSS global) */
+[data-theme="dark"] .bc-mock-stats__interval-field-lbl,
+[data-bs-theme="dark"] .bc-mock-stats__interval-field-lbl {
+  color: var(--app-muted, #94a3b8);
+}
+
+.bc-mock-stats__interval-field .bc-mock-stats__range-input {
+  flex: 1 1 8.5rem;
+  min-width: min(100%, 7.5rem);
+  max-width: 12rem;
+}
+
+.bc-mock-stats__interval-actions {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 991.98px) {
+  .bc-mock-stats__filter-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.1rem;
+    width: 100%;
+    max-width: none;
+  }
+
+  .bc-mock-stats__filter-cluster--period {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .bc-mock-stats__filter-cluster--interval {
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
+    padding-top: 1rem;
+    margin-top: 0.15rem;
+    border-top: 1px solid var(--app-border, rgba(15, 23, 42, 0.1));
+    min-width: 0;
+    width: 100%;
+  }
+
+  [data-theme="dark"] .bc-mock-stats__filter-cluster--interval,
+  [data-bs-theme="dark"] .bc-mock-stats__filter-cluster--interval {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .bc-mock-stats__filter-body {
+    max-width: none;
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 576px) {
+  .bc-mock-stats__interval-controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.65rem 0.85rem;
+    align-items: center;
+  }
+
+  .bc-mock-stats__interval-controls > .bc-mock-stats__interval-field {
+    flex: unset;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .bc-mock-stats__interval-controls > .bc-mock-stats__interval-field .bc-mock-stats__range-input {
+    max-width: none;
+  }
+
+  .bc-mock-stats__interval-controls > .bc-mock-stats__interval-actions {
+    grid-column: 1 / -1;
+  }
+
+  .bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__range-btn {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .bc-mock-stats__filter-panel {
+    padding: 0.85rem 0.85rem 1rem;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    row-gap: 0.65rem;
+  }
+
+  .bc-mock-stats__filter-sep {
+    display: none;
+  }
+
+  .bc-mock-stats__filter-panel .bc-mock-stats__btn-export {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .bc-mock-stats__filter-panel .bc-mock-stats__btn-primary {
+    width: 100%;
+  }
+
+  .bc-mock-stats__interval-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .bc-mock-stats__interval-field {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  .bc-mock-stats__interval-field .bc-mock-stats__range-input {
+    max-width: none;
+    width: 100%;
+  }
+
+  .bc-mock-stats__interval-actions {
+    width: 100%;
+  }
+
+  .bc-mock-stats__filter-toolbar .bc-mock-stats__range-btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  .bc-mock-stats__period-form {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Toggle período: mesma altura que datas + botão */
 .bc-mock-stats__filter-toolbar .bc-styled-select__toggle {
-  min-height: 2.5rem;
-  padding: 0.45rem 2.4rem 0.45rem 0.7rem;
+  min-height: var(--bc-stats-filter-ctrl-h);
+  height: var(--bc-stats-filter-ctrl-h);
+  padding: 0 2.4rem 0 0.85rem;
   border-radius: 0.65rem;
   font-size: 0.875rem;
+  font-weight: 600;
 }
 
-/* Sobre o restante da página; z-index do shared-select (1080) fica contido no painel (z-index 1) */
 .bc-mock-stats__filter-panel .bc-styled-select__list {
   z-index: 2;
 }
@@ -148,27 +324,30 @@
 .bc-mock-stats__range-input {
   appearance: auto;
   -webkit-appearance: auto;
-  border: 1px solid var(--app-border);
+  border: 1px solid var(--app-border, rgba(15, 23, 42, 0.12));
   background: var(--app-surface, #fff);
-  color: var(--app-text);
+  color: var(--app-text, #181c20);
   border-radius: 0.65rem;
-  padding: 0.45rem 0.65rem;
+  padding: 0 0.65rem;
   font-size: 0.875rem;
+  font-weight: 600;
   line-height: 1.5;
   font-family: inherit;
-  min-height: 2.5rem;
+  height: var(--bc-stats-filter-ctrl-h);
+  min-height: var(--bc-stats-filter-ctrl-h);
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  accent-color: #6a0392;
 }
 
 .bc-mock-stats__range-input:focus {
-  outline: 2px solid rgba(168, 85, 247, 0.4);
+  outline: 2px solid rgba(106, 3, 146, 0.3);
   outline-offset: 1px;
-  border-color: rgba(106, 3, 146, 0.45);
+  border-color: rgba(106, 3, 146, 0.4);
 }
 
 .bc-mock-stats__filter-toolbar .bc-mock-stats__range-input {
@@ -179,49 +358,88 @@ body[data-theme="dark"] .bc-mock-stats__range-input,
 body[data-bs-theme="dark"] .bc-mock-stats__range-input,
 html[data-theme="dark"] .bc-mock-stats__range-input,
 [data-theme="dark"] .bc-mock-stats__range-input {
+  /* Mesmo tom do toggle do select (.bc-styled-select no tema escuro) */
+  --bc-date-accent: #c084fc;
   background: #1a1a22;
-  border-color: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #ececf1;
   color-scheme: dark;
+  accent-color: var(--bc-date-accent, #c084fc);
+}
+
+body[data-theme="dark"] .bc-mock-stats__range-input:focus,
+body[data-bs-theme="dark"] .bc-mock-stats__range-input:focus,
+html[data-theme="dark"] .bc-mock-stats__range-input:focus,
+[data-theme="dark"] .bc-mock-stats__range-input:focus {
+  outline: 2px solid rgba(192, 132, 252, 0.45);
+  outline-offset: 1px;
+  border-color: rgba(244, 228, 255, 0.45);
+  box-shadow: 0 0 0 1px rgba(192, 132, 252, 0.12);
+}
+
+body[data-theme="dark"] .bc-mock-stats__range-input:hover:not(:disabled),
+body[data-bs-theme="dark"] .bc-mock-stats__range-input:hover:not(:disabled),
+html[data-theme="dark"] .bc-mock-stats__range-input:hover:not(:disabled),
+[data-theme="dark"] .bc-mock-stats__range-input:hover:not(:disabled) {
+  border-color: rgba(244, 228, 255, 0.28);
+}
+
+/* Ícone do calendário (WebKit) — contraste no tema escuro */
+body[data-theme="dark"] .bc-mock-stats__range-input::-webkit-calendar-picker-indicator,
+body[data-bs-theme="dark"] .bc-mock-stats__range-input::-webkit-calendar-picker-indicator,
+html[data-theme="dark"] .bc-mock-stats__range-input::-webkit-calendar-picker-indicator,
+[data-theme="dark"] .bc-mock-stats__range-input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.9;
+  filter: invert(0.85) brightness(1.1);
 }
 
 .bc-mock-stats__range-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.5rem;
-  padding: 0.45rem 1.1rem;
+  min-height: var(--bc-stats-filter-ctrl-h, 2.75rem);
+  height: var(--bc-stats-filter-ctrl-h, 2.75rem);
+  padding: 0 1.2rem;
   border-radius: 0.65rem;
-  border: none;
+  border: 1px solid transparent;
   background: #6a0392;
   color: #f4e4ff;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 600;
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
 }
 
-.bc-mock-stats__range-btn:hover {
-  opacity: 0.92;
+.bc-mock-stats__range-btn:hover:not(:disabled) {
+  filter: brightness(1.06);
 }
 
-@media (max-width: 639.98px) {
-  .bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__field-col--action {
-    flex: 1 1 100%;
-  }
+.bc-mock-stats__range-btn:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background: rgba(15, 23, 42, 0.06);
+  color: rgba(30, 41, 59, 0.72);
+  border-color: rgba(15, 23, 42, 0.14);
+  box-shadow: none;
+  opacity: 1;
+}
 
-  .bc-mock-stats__filter-toolbar.is-custom .bc-mock-stats__range-btn {
-    width: 100%;
-  }
+[data-theme="dark"] .bc-mock-stats__range-btn:disabled,
+[data-bs-theme="dark"] .bc-mock-stats__range-btn:disabled {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(236, 236, 241, 0.88);
+  border-color: rgba(255, 255, 255, 0.16);
 }
 
 /* Separador entre filtros e ação (só em linha) */
 .bc-mock-stats__filter-sep {
-  flex: 0 0 auto;
   width: 1px;
+  justify-self: center;
   align-self: stretch;
   min-height: 2.5rem;
-  margin: 0 0.15rem 0 0.35rem;
+  margin: 0;
   background: var(--app-border, rgba(15, 23, 42, 0.12));
   border-radius: 1px;
   opacity: 0.75;
@@ -232,29 +450,21 @@ html[data-theme="dark"] .bc-mock-stats__range-input,
 }
 
 .bc-mock-stats__filter-panel .bc-mock-stats__btn-export {
-  flex: 0 0 auto;
   min-width: 0;
   width: auto;
+  justify-self: end;
 }
 
 /* Sobrescreve .bc-mock-stats__btn-primary { width:100% } nesta barra compacta */
 .bc-mock-stats__filter-panel .bc-mock-stats__btn-primary {
   width: auto;
   max-width: 100%;
-}
-
-@media (max-width: 575.98px) {
-  .bc-mock-stats__filter-sep {
-    display: none;
-  }
-
-  .bc-mock-stats__filter-panel .bc-mock-stats__btn-export {
-    flex: 1 1 100%;
-  }
-
-  .bc-mock-stats__filter-panel .bc-mock-stats__btn-primary {
-    width: 100%;
-  }
+  min-height: var(--bc-stats-filter-ctrl-h, 2.75rem);
+  padding: 0 1.15rem;
+  border-radius: 0.65rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  align-self: center;
 }
 
 /* Estilo visual movido para shared-select.css (.bc-styled-select).
@@ -267,6 +477,14 @@ html[data-theme="dark"] .bc-mock-stats__range-input,
   .bc-mock-stats__select {
     width: auto;
     min-width: 12rem;
+  }
+}
+
+/* Com toolbar empilhado, o select de período acompanha a largura da coluna */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bc-mock-stats__select {
+    width: 100%;
+    min-width: 0;
   }
 }
 

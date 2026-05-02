@@ -10,12 +10,15 @@
 
     {{-- Bootstrap 5.3.2 CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    {{-- Material Icons + Symbols (painel / sidebar) --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    {{-- Material Icons + Symbols (painel / sidebar). display=block reduz texto-ligadura visível antes da fonte. --}}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
 
     {{-- Custom CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">
@@ -46,6 +49,22 @@
     </script>
 
     @stack('styles')
+
+    {{-- Evita flash dos nomes dos glifos ("dashboard", …) antes das fontes de ícone carregarem --}}
+    <script>
+        (function () {
+            function markIconsReady() {
+                document.documentElement.classList.add('bc-icons-font-ready');
+            }
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(markIconsReady);
+            } else {
+                markIconsReady();
+            }
+            window.addEventListener('load', markIconsReady);
+            setTimeout(markIconsReady, 6000);
+        })();
+    </script>
 </head>
 <body class="app-private-body app-shell-painel">
     <div class="app-layout">
@@ -53,7 +72,7 @@
         @include('components.sidebar')
 
         <div class="app-content-wrap">
-            {{-- Idioma + tema: fora da sidebar (todas as larguras) --}}
+            {{-- Tema | idioma | conta (perfil à direita) --}}
             <header class="app-content-topbar d-flex align-items-center gap-3">
                 <div class="app-content-topbar-titles min-w-0 flex-grow-1">
                     <span class="app-content-topbar-heading fw-bold text-truncate d-lg-none d-block">@yield('mobile_title')</span>
@@ -68,17 +87,21 @@
                         <span class="material-symbols-outlined bc-topbar-btn-icon bc-topbar-btn-icon--dark" aria-hidden="true">dark_mode</span>
                     </button>
                     <div class="app-content-topbar-lang">
-                        @include('components.language-selector')
+                        @include('components.language-selector', ['compactTopbar' => true])
                     </div>
+                    @include('components.topbar-account')
                 </div>
             </header>
 
             {{-- Main content (título desktop integrado em cada página / sidebar) --}}
-            <main class="app-main p-4">
+            <main class="app-main">
                 @yield('content')
             </main>
         </div>
     </div>
+
+    {{-- Modais ao nível do body: evita backdrop sobrepor o diálogo (stacking vs .app-main / sidebar). --}}
+    @stack('modals')
 
     {{-- Bootstrap 5.3.2 JS Bundle --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

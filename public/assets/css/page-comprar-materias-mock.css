@@ -2,7 +2,7 @@
  * Comprar matérias — grelha tipo mock banco / selecionar matérias
  */
 .bc-mock-addon {
-  max-width: 48rem;
+  max-width: min(48rem, 100%);
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,7 +24,7 @@
   font-size: 0.95rem;
   color: var(--app-muted);
   margin: 0;
-  max-width: 36rem;
+  max-width: min(36rem, 100%);
   line-height: 1.55;
 }
 
@@ -62,7 +62,7 @@
 
 .bc-mock-addon__card-box {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.85rem;
   padding: 1.1rem 1.15rem;
   border-radius: 0.875rem;
@@ -97,7 +97,6 @@
   border-radius: 0.35rem;
   border: 2px solid var(--app-muted);
   flex-shrink: 0;
-  margin-top: 0.1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +129,7 @@
   font-size: 0.95rem;
   color: var(--app-text);
   display: block;
+  line-height: 1.25;
 }
 
 .bc-mock-addon__actions {

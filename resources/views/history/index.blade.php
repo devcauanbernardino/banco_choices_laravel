@@ -14,7 +14,7 @@
 @endpush
 
 @section('content')
-    <div class="bc-mock-historico py-4 px-3 px-md-4">
+    <div class="bc-mock-historico bc-mock-page-shell">
         <header class="bc-mock-historico__hero">
             <div>
                 <h1 class="bc-mock-historico__title">{{ __('simulados.heading') }}</h1>

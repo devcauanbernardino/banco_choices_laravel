@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Materia;
 use App\Models\Pedido;
 use App\Services\MercadoPago\PaymentFulfillmentService;
+use App\Services\Referral\ReferralService;
 use App\Support\CheckoutDraftSession;
 use App\Support\CheckoutErrorMessages;
 use App\Support\Countries;
+use App\Support\PaidAccessGrant;
 use App\Support\SignupFlow;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -76,6 +78,8 @@ class CheckoutController extends Controller
             'plan_duration_days' => 'required|integer|min:1',
             'materias' => 'required|string',
             'total_price' => 'required|numeric|min:0',
+            'codigo_cupom_usado' => 'nullable|string|max:64',
+            'usar_credito_addon' => 'nullable|accepted',
             'terms' => 'accepted',
         ]);
 
@@ -109,7 +113,19 @@ class CheckoutController extends Controller
         }
 
         $materiasIds = array_values(array_filter(array_map('intval', explode(',', $request->input('materias')))));
-        $totalPrice = (float) $plan['price'] * count($materiasIds);
+
+        $baseTotal = (float) $plan['price'] * count($materiasIds);
+        $cupRaw = trim((string) $request->input('codigo_cupom_usado', ''));
+        $totalPagar = $baseTotal;
+        $normalizedCupom = null;
+        if ($cupRaw !== '') {
+            $v = ReferralService::validarCodigo($cupRaw, trim((string) $request->input('email')), null);
+            if (! $v['ok']) {
+                return redirect()->route('checkout.show')->with('error', __('referral.checkout_codigo_invalido'));
+            }
+            $normalizedCupom = strtoupper(trim($cupRaw));
+            $totalPagar = ReferralService::aplicarDescontoSubtotal($baseTotal);
+        }
 
         $accessToken = config('mercadopago.access_token');
         if (empty($accessToken)) {
@@ -119,18 +135,21 @@ class CheckoutController extends Controller
         Pedido::create([
             'email' => $request->input('email'),
             'nome' => $request->input('name'),
-            'valor_total' => $totalPrice,
+            'valor_total' => round($totalPagar, 2),
             'status' => 'awaiting_payment',
             'stripe_payment_id' => $request->input('order_id'),
+            'codigo_cupom_usado' => $normalizedCupom,
         ]);
 
         $redirect = $this->createMercadoPagoPreference(
             $request,
             $materiasIds,
-            $totalPrice,
+            $totalPagar,
             'signup',
             $request->input('email'),
-            $request->input('name')
+            $request->input('name'),
+            0.0,
+            $normalizedCupom ?? '',
         );
 
         if ($redirect === null) {
@@ -162,8 +181,52 @@ class CheckoutController extends Controller
             'postal_code' => 'required|string|max:32',
         ]);
 
+        /** @var \App\Models\User $userFresh */
+        $userFresh = $user->fresh() ?? $user;
+
         $materiasIds = array_values(array_filter(array_map('intval', explode(',', $request->input('materias')))));
-        $totalPrice = SignupFlow::addonPricePerMateria() * count($materiasIds);
+        $baseTotal = SignupFlow::addonPricePerMateria() * count($materiasIds);
+
+        $cupRaw = trim((string) $request->input('codigo_cupom_usado', ''));
+        $totalDepoisCupom = $baseTotal;
+        $normalizedCupom = null;
+        if ($cupRaw !== '') {
+            $v = ReferralService::validarCodigo($cupRaw, trim((string) $userFresh->email), (int) $userFresh->id);
+            if (! $v['ok']) {
+                return redirect()->route('addon.checkout')->with('error', __('referral.checkout_codigo_invalido'));
+            }
+            $normalizedCupom = strtoupper(trim($cupRaw));
+            $totalDepoisCupom = ReferralService::aplicarDescontoSubtotal($baseTotal);
+        }
+
+        $credMax = round(max(0, (float) $userFresh->saldo_credito), 2);
+        $usarCred = $request->boolean('usar_credito_addon') && $credMax > 0;
+        $credUtil = $usarCred ? round(min($credMax, $totalDepoisCupom), 2) : 0.0;
+
+        $valorMp = round(max(0, $totalDepoisCupom - $credUtil), 2);
+
+        $planRow = SignupFlow::signupPlanForDisplayById((string) $request->input('plan_id'));
+        $planDaysAddon = $planRow !== null ? (int) ($planRow['durationDays'] ?? 0) : 0;
+        if ($planDaysAddon <= 0) {
+            return redirect()->route('addon.checkout')->with('error', CheckoutErrorMessages::planNotFound());
+        }
+
+        if ($valorMp <= 0.02) {
+            PaidAccessGrant::addonComCreditoOuGratuito(
+                $userFresh,
+                round($totalDepoisCupom, 2),
+                (string) $request->input('plan_id'),
+                $planDaysAddon,
+                $materiasIds,
+                $request->input('order_id'),
+                round($credUtil, 2),
+                $normalizedCupom,
+            );
+
+            CheckoutDraftSession::clearAddonDraft();
+
+            return redirect()->route('dashboard')->with('success', __('referral.checkout_gratuito_ok'));
+        }
 
         $accessToken = config('mercadopago.access_token');
         if (empty($accessToken)) {
@@ -171,20 +234,23 @@ class CheckoutController extends Controller
         }
 
         Pedido::create([
-            'email' => $user->email,
-            'nome' => $user->nome,
-            'valor_total' => $totalPrice,
+            'email' => $userFresh->email,
+            'nome' => $userFresh->nome,
+            'valor_total' => round($totalDepoisCupom, 2),
             'status' => 'awaiting_payment',
             'stripe_payment_id' => $request->input('order_id'),
+            'codigo_cupom_usado' => $normalizedCupom,
         ]);
 
         $redirect = $this->createMercadoPagoPreference(
             $request,
             $materiasIds,
-            $totalPrice,
+            $valorMp,
             'addon',
-            $user->email,
-            $user->nome
+            $userFresh->email,
+            $userFresh->nome,
+            $credUtil,
+            $normalizedCupom ?? '',
         );
 
         if ($redirect === null) {
@@ -205,7 +271,9 @@ class CheckoutController extends Controller
         float $totalPrice,
         string $checkoutKind,
         string $email,
-        string $name
+        string $name,
+        float $addonCreditoReservadoMeta = 0.0,
+        string $cupomCodigoParaMeta = '',
     ): ?RedirectResponse {
         $accessToken = config('mercadopago.access_token');
         MercadoPagoConfig::setAccessToken($accessToken);
@@ -243,6 +311,10 @@ class CheckoutController extends Controller
                 'plan_id' => $request->input('plan_id'),
                 'plan_duration_days' => (string) $request->input('plan_duration_days'),
                 'materias' => implode(',', $materiasIds),
+                'codigo_cupom_usado' => strtoupper(trim($cupomCodigoParaMeta)),
+                'valor_credito_utilizado_addon' => ($checkoutKind === 'addon' && $addonCreditoReservadoMeta > 0.005)
+                    ? (string) round($addonCreditoReservadoMeta, 2)
+                    : '0',
             ],
         ];
 

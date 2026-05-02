@@ -27,7 +27,99 @@ class Question
 
     public function getFeedback(): string
     {
-        return $this->data['feedback'] ?? 'Sem explicação disponível';
+        $raw = $this->data['feedback'] ?? '';
+
+        if (self::editorialFeedbackPresent(is_string($raw) ? $raw : null)) {
+            return trim((string) $raw);
+        }
+
+        return self::synthesizeFeedbackEs($this->data);
+    }
+
+    /**
+     * Indica se o campo feedback existe e não é só placeholder genérico.
+     */
+    public static function editorialFeedbackPresent(?string $feedback): bool
+    {
+        $trim = trim((string) $feedback);
+        if ($trim === '') {
+            return false;
+        }
+
+        $placeholders = [
+            'Sem explicação disponível',
+            'Sem explicacao disponivel',
+            'Sin explicación disponible',
+            'Sin explicacion disponible',
+            'No explanation available',
+            'Feedback não disponível devido a erro na geração.',
+            'Feedback nao disponivel devido a erro na geracao.',
+        ];
+
+        foreach ($placeholders as $p) {
+            if (strcasecmp($trim, $p) === 0) {
+                return false;
+            }
+        }
+
+        // Mensagens de falha de geração automática nos JSON (PT), várias redações
+        $tlower = mb_strtolower($trim);
+        if (str_starts_with($tlower, 'feedback ')
+            && str_contains($tlower, 'erro')
+            && preg_match('/gera[cç][aão]|geracao/u', $tlower)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Feedback editorial ausente ou só placeholder — gera texto útil a partir da opção correta (espanhol, idioma do banco).
+     */
+    public static function synthesizeFeedbackEs(array $data): string
+    {
+        $q = new self($data);
+        $opts = $q->getOpcoes();
+        $idxStr = $q->getCorrectAnswer();
+
+        if ($opts === []) {
+            return 'Esta pregunta no tiene alternativas válidas en el banco de datos.';
+        }
+
+        if ($idxStr === '' || $idxStr === null) {
+            return 'Falta definir la respuesta correcta (gabarito) para esta pregunta en el banco.';
+        }
+
+        $idx = is_numeric($idxStr) ? (int) $idxStr : -1;
+        if ($idx < 0 || $idx >= count($opts)) {
+            return 'Hay un problema con el marcado de la respuesta correcta en el banco; revisá esta pregunta con el equipo editorial.';
+        }
+
+        $letter = chr(ord('A') + $idx);
+        $text = trim((string) ($opts[$idx] ?? ''));
+        if ($text === '') {
+            return "Según el banco, la opción marcada como correcta es {$letter}.";
+        }
+
+        $snippet = mb_strlen($text) > 380 ? mb_substr($text, 0, 377).'…' : $text;
+
+        $notaRaw = isset($data['nota']) ? mb_strtolower((string) $data['nota']) : '';
+        $asksIncorrect = str_contains($notaRaw, 'incorreta') || str_contains($notaRaw, 'incorrecta');
+        $asksCorrect = str_contains($notaRaw, 'correta') || str_contains($notaRaw, 'correcta');
+
+        if ($asksIncorrect) {
+            return 'En esta consigna debías señalar la opción INCORRECTA. '
+                ."Esa es {$letter}: {$snippet} "
+                .'Las demás alternativas son válidas respecto del tema planteado; '
+                .'revisá el enunciado y contrastá conceptos con tu bibliografía.';
+        }
+
+        if ($asksCorrect) {
+            return 'La opción CORRECTA es '.$letter.': '.$snippet.' '
+                .'Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.';
+        }
+
+        return 'Según el banco de preguntas, la respuesta esperada es la opción '.$letter.': '.$snippet;
     }
 
     public function isCorrect(?string $answer): bool

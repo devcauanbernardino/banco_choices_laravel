@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\QuestionLocale;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
@@ -13,12 +14,13 @@ class LocaleController extends Controller
     {
         $locale = $request->input('locale', 'es_AR');
 
-        if (!in_array($locale, self::SUPPORTED, true)) {
+        if (! in_array($locale, self::SUPPORTED, true)) {
             $locale = 'es_AR';
         }
 
         $request->session()->put('locale', $locale);
         App::setLocale($locale);
+        QuestionLocale::clearCache();
 
         $cookie = cookie('bclocale', $locale, 525600, '/'); // 1 year
 

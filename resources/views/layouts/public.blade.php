@@ -25,6 +25,7 @@
 
     {{-- Custom CSS — mesma ordem de prioridade que o projeto PHP (tokens → botões → app → idioma) --}}
     <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">

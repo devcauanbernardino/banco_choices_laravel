@@ -37,7 +37,7 @@ body.app-private-body {
 .content {
   margin-left: var(--sidebar-w);
   min-height: 100vh;
-  transition: margin 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: margin-left 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -45,6 +45,11 @@ body.app-private-body {
   .sidebar-space,
   .content {
     transition: none;
+  }
+
+  .app-sidebar:not(.app-sidebar--embedded),
+  .sidebar {
+    transition: none !important;
   }
 }
 
@@ -59,13 +64,13 @@ body.app-private-body {
   }
 
   .app-content-wrap > .app-main {
-    padding: 1rem !important;
+    padding: var(--app-main-pad-y) var(--app-main-pad-x) !important;
   }
 
   .app-content-topbar {
     padding-top: calc(0.65rem + env(safe-area-inset-top, 0px));
-    padding-left: calc(1rem + env(safe-area-inset-left, 0px));
-    padding-right: calc(1rem + env(safe-area-inset-right, 0px));
+    padding-left: calc(var(--app-main-pad-x) + env(safe-area-inset-left, 0px));
+    padding-right: calc(var(--app-main-pad-x) + env(safe-area-inset-right, 0px));
   }
 
   .app-main,
@@ -121,6 +126,15 @@ body.app-private-body {
   max-height: 100dvh;
   /* visible: dropdown de idioma não pode ser cortado pelo aside (scroll fica só no .app-sidebar-nav). */
   overflow: visible;
+}
+
+@media (min-width: 992px) {
+  @media (prefers-reduced-motion: no-preference) {
+    .app-sidebar:not(.app-sidebar--embedded),
+    .sidebar {
+      transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
 
 .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-brand {
@@ -227,6 +241,7 @@ body.app-private-body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
 
 .app-sidebar-sub {
@@ -760,7 +775,7 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   position: sticky;
   top: 0;
   z-index: 1020;
-  padding: 0.65rem 1rem;
+  padding: 0.65rem var(--app-main-pad-x);
   background: var(--app-surface);
   border-bottom: 1px solid var(--app-border);
   box-shadow: var(--app-shadow);
@@ -822,6 +837,20 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   width: var(--sidebar-w);
   min-height: 100vh;
   background: var(--sidebar-bg);
+}
+
+/* Ao expandir: largura anima mas rótulos só reaparecem no fim (evita texto cortado pelo overflow-x da nav). */
+@media (min-width: 992px) {
+  html.sidebar-width-animating:not(.sidebar-collapsed) .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-brand-text,
+  html.sidebar-width-animating:not(.sidebar-collapsed) .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-link-text,
+  html.sidebar-width-animating:not(.sidebar-collapsed) .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-section-label,
+  html.sidebar-width-animating:not(.sidebar-collapsed) .app-sidebar:not(.app-sidebar--embedded) .app-sidebar-collapse-label {
+    display: none !important;
+  }
+
+  html.sidebar-width-animating:not(.sidebar-collapsed) body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-label {
+    display: none !important;
+  }
 }
 
 /* ========== Sidebar recolhida (só ícones — desktop) ========== */

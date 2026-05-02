@@ -15,6 +15,7 @@ class Pedido extends Model
         'valor_total',
         'status',
         'stripe_payment_id',
+        'codigo_cupom_usado',
     ];
 
     protected function casts(): array

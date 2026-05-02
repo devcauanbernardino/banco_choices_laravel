@@ -34,6 +34,59 @@ body.app-shell-painel .material-symbols-outlined.is-fill {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
+/*
+ * FOUC das fontes Material: antes de carregar, o texto da ligadura ("dashboard", "menu_book")
+ * aparecia e quebrava o layout. Escondemos até html.bc-icons-font-ready (via layouts/app).
+ */
+html:not(.bc-icons-font-ready) body.app-shell-painel .app-sidebar .material-symbols-outlined,
+html:not(.bc-icons-font-ready) body.app-shell-painel .app-sidebar .material-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  overflow: hidden;
+  font-size: 1.35rem !important;
+  line-height: 1;
+  color: transparent !important;
+  user-select: none;
+}
+
+html:not(.bc-icons-font-ready) body.app-shell-painel .app-sidebar .app-sidebar-collapse-btn .material-symbols-outlined {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+}
+
+html:not(.bc-icons-font-ready) body.app-shell-painel .app-content-topbar .material-symbols-outlined {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  overflow: hidden;
+  font-size: 1.25rem !important;
+  line-height: 1;
+  color: transparent !important;
+  user-select: none;
+}
+
+html:not(.bc-icons-font-ready) body.app-shell-painel .app-mobile-bottom .material-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  overflow: hidden;
+  font-size: 1.35rem !important;
+  line-height: 1;
+  color: transparent !important;
+  user-select: none;
+}
+
 /* ——— Sidebar ——— */
 body.app-shell-painel .app-sidebar.app-sidebar--painel {
   background: var(--shell-painel-sidebar-bg);
@@ -77,8 +130,12 @@ body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-logo-box {
 }
 
 [data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-logo-box {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.1);
+  /* Logo em tons escuros/roxo some sobre fundo escuro — cartão claro garante contraste */
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-brand-logo-img {
@@ -114,8 +171,16 @@ body.app-shell-painel .app-sidebar--painel .app-sidebar-brand .app-sidebar-sub {
 body.app-shell-painel .app-sidebar--painel .app-sidebar-bottom {
   flex-shrink: 0;
   padding-top: 0.75rem;
+  padding-bottom: 0.85rem;
   border-top: 1px solid var(--shell-painel-sidebar-border);
   margin-top: auto;
+}
+
+/* Evita linha duplicada: .app-sidebar-bottom já separa a nave; o wrap do “Recolher”
+   reaproveitava o border-top global de sidebar.css. */
+body.app-shell-painel .app-sidebar--painel .app-sidebar-bottom .app-sidebar-collapse-wrap {
+  border-top: none;
+  padding-top: 0;
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-wrap {
@@ -213,98 +278,6 @@ body.app-shell-painel .app-sidebar--painel .app-sidebar-link-logout:hover {
   background: rgba(248, 113, 113, 0.12) !important;
 }
 
-body.app-shell-painel .app-sidebar--painel .app-sidebar-collapse-wrap + .app-sidebar-usercard {
-  margin-top: 0.65rem;
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 0 0.75rem 0.65rem;
-  padding: 0.65rem 0.75rem;
-  border-radius: 0.75rem;
-  border: 1px solid var(--shell-painel-sidebar-border);
-  background: var(--app-surface, #fff);
-  color: inherit;
-  transition: background 0.15s ease, border-color 0.15s ease;
-}
-
-[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard:hover {
-  background: rgba(106, 3, 146, 0.06);
-  border-color: rgba(106, 3, 146, 0.22);
-  color: inherit;
-}
-
-[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard:hover {
-  background: rgba(106, 3, 146, 0.2);
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-avatar {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  border: 2px solid rgba(106, 3, 146, 0.2);
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-name {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--app-text, #181c20);
-}
-
-[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-name {
-  color: #f3f4f6;
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-meta {
-  font-size: 0.7rem;
-  color: var(--shell-painel-link);
-  margin-top: 0.1rem;
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-form {
-  margin: 0 0.75rem 0.5rem;
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  width: 100%;
-  padding: 0.45rem 0.5rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--shell-painel-link);
-  background: transparent;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn:hover {
-  background: rgba(148, 163, 184, 0.2);
-  color: #b91c1c;
-}
-
-[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn:hover {
-  color: #fca5a5;
-  background: rgba(248, 113, 113, 0.1);
-}
-
-body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn .material-symbols-outlined {
-  font-size: 1.1rem;
-}
-
 body.app-shell-painel .app-sidebar--painel .app-sidebar-section-label {
   color: var(--shell-painel-link);
 }
@@ -349,25 +322,6 @@ html.sidebar-collapsed[data-theme="dark"] body.app-shell-painel .app-sidebar--pa
 
 html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-label {
   display: none;
-}
-
-html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard-text {
-  display: none;
-}
-
-html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-usercard {
-  justify-content: center;
-  margin-left: 0.35rem;
-  margin-right: 0.35rem;
-  padding: 0.5rem;
-}
-
-html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-text {
-  display: none;
-}
-
-html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-logout-btn {
-  justify-content: center;
 }
 
 html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel .app-sidebar-cta {
@@ -632,8 +586,13 @@ body.app-shell-painel .bc-topbar-avatar-tiny {
     margin-left: var(--sidebar-w);
     width: auto;
     max-width: calc(100vw - var(--sidebar-w));
-    transition: margin-left 0.22s cubic-bezier(0.4, 0, 0.2, 1),
-                max-width 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    body.app-shell-painel .app-content-wrap {
+      transition: margin-left 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+                  max-width 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 
@@ -676,6 +635,133 @@ body.app-shell-painel .app-content-topbar {
   background: rgba(20, 20, 26, 0.96);
   border-bottom-color: rgba(255, 255, 255, 0.08);
   color: #f3f4f6;
+}
+
+/* Conta no topo: só avatar — minimalista (sem moldura; halo suave no hover) */
+body.app-shell-painel .app-content-topbar-account-btn {
+  --bs-btn-padding-x: 0;
+  --bs-btn-padding-y: 0;
+  width: 2.45rem;
+  height: 2.45rem;
+  min-height: 2.45rem;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: var(--app-text);
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+  transition: background 0.15s ease;
+}
+
+body.app-shell-painel .app-content-topbar-account-btn.dropdown-toggle::after {
+  display: none;
+}
+
+body.app-shell-painel .app-content-topbar-account-btn:hover,
+body.app-shell-painel .app-content-topbar-account-btn:focus,
+body.app-shell-painel .app-content-topbar-account-btn.show {
+  border-color: transparent;
+  background: rgba(106, 3, 146, 0.08);
+  box-shadow: none;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-content-topbar-account-btn {
+  border-color: transparent;
+  background: transparent;
+}
+
+[data-theme="dark"] body.app-shell-painel .app-content-topbar-account-btn:hover,
+[data-theme="dark"] body.app-shell-painel .app-content-topbar-account-btn:focus,
+[data-theme="dark"] body.app-shell-painel .app-content-topbar-account-btn.show {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+body.app-shell-painel .app-content-topbar-account-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Largura máx. para e-mail longo; shell visual herdado de .bc-lang-menu--landing */
+body.app-shell-painel .app-content-topbar-account-menu.bc-lang-menu--landing {
+  max-width: min(22rem, calc(100vw - 2rem));
+}
+
+/* Topbar minimalista: controles como ícones (bandeira + avatar), sem pills nem sombras */
+body.app-shell-painel .app-content-topbar-actions {
+  gap: 0.35rem !important;
+}
+
+body.app-shell-painel .app-content-topbar-lang {
+  max-width: none;
+  width: auto;
+}
+
+body.app-shell-painel .app-content-topbar-lang .bc-lang-selector {
+  width: auto;
+}
+
+body.app-shell-painel .btn-navbar-lang--compact-topbar {
+  --bs-btn-padding-x: 0;
+  --bs-btn-padding-y: 0;
+  width: 2.45rem;
+  height: 2.45rem;
+  min-height: 2.45rem;
+  border-radius: 50%;
+  border: 1px solid transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  justify-content: center;
+}
+
+body.app-shell-painel .btn-navbar-lang--compact-topbar .bc-lang-btn-inner {
+  gap: 0;
+  justify-content: center;
+}
+
+body.app-shell-painel .btn-navbar-lang--compact-topbar.dropdown-toggle::after {
+  display: none;
+}
+
+body.app-shell-painel .btn-navbar-lang--compact-topbar .bc-lang-icon-flag {
+  width: 1.35rem;
+  box-shadow: none !important;
+}
+
+body.app-shell-painel .btn-navbar-lang--compact-topbar:hover,
+body.app-shell-painel .btn-navbar-lang--compact-topbar:focus,
+body.app-shell-painel .btn-navbar-lang--compact-topbar.show {
+  background: rgba(106, 3, 146, 0.08) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar,
+html[data-bs-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar {
+  background: transparent !important;
+  border-color: transparent !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+html[data-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar .bc-lang-icon-flag,
+html[data-bs-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar .bc-lang-icon-flag {
+  box-shadow: none !important;
+}
+
+html[data-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar:hover,
+html[data-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar:focus,
+html[data-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar.show,
+html[data-bs-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar:hover,
+html[data-bs-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar:focus,
+html[data-bs-theme="dark"] body.app-shell-painel .btn-navbar-lang--compact-topbar.show {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: transparent !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

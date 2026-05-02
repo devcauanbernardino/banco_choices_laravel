@@ -10,12 +10,12 @@ class MateriaSeeder extends Seeder
     public function run(): void
     {
         $materias = [
-            ['id' => 1, 'nome' => 'Microbiología'],
-            ['id' => 2, 'nome' => 'Biología'],
+            ['id' => 1, 'nome' => 'Microbiologia'],
+            ['id' => 2, 'nome' => 'Biología celular'],
         ];
 
         foreach ($materias as $m) {
-            Materia::firstOrCreate(['id' => $m['id']], $m);
+            Materia::updateOrCreate(['id' => $m['id']], $m);
         }
     }
 }

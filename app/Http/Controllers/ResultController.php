@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\HistoricoSimulado;
 use App\Support\Question;
+use App\Support\QuestionLocale;
 use App\Support\SimulationSession;
 use Illuminate\Support\Facades\Auth;
 
@@ -60,8 +61,11 @@ class ResultController extends Controller
         $acertos = 0;
         $total = count($questoes);
         $detalhes = [];
+        $banco = (string) ($sim->get('banco_questoes') ?? '');
+        $locale = (string) app()->getLocale();
 
         foreach ($questoes as $i => $qData) {
+            $qData = QuestionLocale::apply($qData, $locale, $banco);
             $q = new Question($qData);
             $userAnswer = $respostas[$i] ?? null;
             $correct = $q->isCorrect($userAnswer);
@@ -75,6 +79,7 @@ class ResultController extends Controller
                 'resposta_correta' => $q->getCorrectAnswer(),
                 'acertou' => $correct,
                 'feedback' => $q->getFeedback(),
+                'parcial' => isset($questoes[$i]['_parcial']) ? $questoes[$i]['_parcial'] : null,
             ];
         }
 

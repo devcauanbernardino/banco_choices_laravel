@@ -13,10 +13,7 @@
 @endpush
 
 @section('content')
-    @php
-        $subjectIcons = ['science', 'biotech', 'genetics', 'microbiology', 'menu_book', 'school', 'psychology'];
-    @endphp
-    <div class="bc-mock-banco-page py-4 px-3 px-md-4">
+    <div class="bc-mock-banco-page bc-mock-page-shell">
         <div class="bc-mock-banco-page__glow" aria-hidden="true"></div>
         <div class="bc-mock-banco-page__inner">
             <header class="bc-mock-editorial">
@@ -50,19 +47,7 @@
                                 <h2 class="bc-mock-panel__title">{{ __('bank.section_subjects') }}</h2>
                                 <span class="bc-mock-pill">{{ __('bank.select_subject') }}</span>
                             </div>
-                                <div class="bc-mock-subject-grid">
-                                    @foreach ($materias as $idx => $materia)
-                                        @php $ico = $subjectIcons[$idx % count($subjectIcons)]; @endphp
-                                        <label class="bc-mock-subject-card">
-                                            <input type="radio" name="materia" value="{{ $materia->id }}" required
-                                                   @checked($loop->first)>
-                                            <span class="bc-mock-subject-card__box">
-                                                <span class="material-symbols-outlined bc-mock-subject-card__ico" aria-hidden="true">{{ $ico }}</span>
-                                                <span class="bc-mock-subject-card__label">{{ $materia->nome }}</span>
-                                            </span>
-                                        </label>
-                                    @endforeach
-                                </div>
+                                @include('partials.catalog-banco-flow')
                         </section>
 
                         <div class="bc-mock-two-col">
@@ -187,6 +172,39 @@
     </div>
 @endsection
 
+@if (!$materias->isEmpty())
+@push('modals')
+<div class="modal fade bc-app-shell-modal bc-exam-confirm-modal" id="bcExamConfirmModal" tabindex="-1"
+     aria-labelledby="bcExamConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bc-exam-confirm-modal__surface border-0 shadow-lg">
+            <button type="button" class="btn-close bc-exam-confirm-modal__dismiss" data-bs-dismiss="modal"
+                    aria-label="{{ __('bank.exam_confirm.cancel') }}"></button>
+            <div class="modal-body p-4 p-md-5">
+                <div class="d-flex gap-3 mb-3">
+                    <div class="bc-exam-confirm-modal__icon" aria-hidden="true">
+                        <span class="material-symbols-outlined">timer</span>
+                    </div>
+                    <div class="min-w-0 flex-grow-1 pt-1">
+                        <h2 class="bc-exam-confirm-modal__title" id="bcExamConfirmModalLabel">{{ __('bank.exam_confirm.title') }}</h2>
+                        <p class="bc-exam-confirm-modal__lead mb-0">{{ __('bank.exam_confirm.body') }}</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-2 justify-content-sm-end mt-4 pt-1">
+                    <button type="button" class="btn bc-exam-confirm-modal__btn-cancel" data-bs-dismiss="modal">
+                        {{ __('bank.exam_confirm.cancel') }}
+                    </button>
+                    <button type="button" class="btn bc-exam-confirm-modal__btn-confirm" id="bcExamConfirmBtn">
+                        {{ __('bank.exam_confirm.confirm') }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endpush
+@endif
+
 @push('scripts')
 <script>
 (function () {
@@ -194,16 +212,17 @@
     const hidden = document.getElementById('qbankQtyHidden');
     const display = document.getElementById('qbankQtyDisplay');
     const summary = document.getElementById('qbankSummaryQty');
-    if (!range || !hidden || !display) return;
-    function sync() {
-        var v = range.value;
-        hidden.value = v;
-        display.textContent = v;
-        if (summary) summary.textContent = v;
-        range.setAttribute('aria-valuenow', v);
+    if (range && hidden && display) {
+        function sync() {
+            var v = range.value;
+            hidden.value = v;
+            display.textContent = v;
+            if (summary) summary.textContent = v;
+            range.setAttribute('aria-valuenow', v);
+        }
+        range.addEventListener('input', sync);
+        sync();
     }
-    range.addEventListener('input', sync);
-    sync();
 
     const radioEstudo = document.getElementById('radioEstudo');
     const radioExame = document.getElementById('radioExame');
@@ -213,6 +232,50 @@
     }
     if (radioEstudo) radioEstudo.addEventListener('change', toggleWarning);
     if (radioExame) radioExame.addEventListener('change', toggleWarning);
+
+    const qbankForm = document.getElementById('bc-qbank-form');
+    const examModalEl = document.getElementById('bcExamConfirmModal');
+    const examConfirmBtn = document.getElementById('bcExamConfirmBtn');
+    if (qbankForm && examModalEl && radioExame && typeof bootstrap !== 'undefined') {
+        var skipExamConfirmModal = false;
+        var pendingExamConfirmSubmit = false;
+
+        qbankForm.addEventListener('submit', function (ev) {
+            if (skipExamConfirmModal) return;
+            if (!radioExame.checked) return;
+            ev.preventDefault();
+            bootstrap.Modal.getOrCreateInstance(examModalEl).show();
+        });
+
+        examModalEl.addEventListener('hidden.bs.modal', function () {
+            if (!pendingExamConfirmSubmit) return;
+            pendingExamConfirmSubmit = false;
+            skipExamConfirmModal = true;
+            if (typeof qbankForm.requestSubmit === 'function') {
+                qbankForm.requestSubmit();
+            } else {
+                qbankForm.submit();
+            }
+        });
+
+        if (examConfirmBtn) {
+            examConfirmBtn.addEventListener('click', function () {
+                pendingExamConfirmSubmit = true;
+                var inst = bootstrap.Modal.getInstance(examModalEl);
+                if (inst) {
+                    inst.hide();
+                } else {
+                    pendingExamConfirmSubmit = false;
+                    skipExamConfirmModal = true;
+                    if (typeof qbankForm.requestSubmit === 'function') {
+                        qbankForm.requestSubmit();
+                    } else {
+                        qbankForm.submit();
+                    }
+                }
+            });
+        }
+    }
 })();
 </script>
 @endpush

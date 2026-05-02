@@ -5,15 +5,31 @@
 
 /* ---------- Base ---------- */
 .app-private-body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   background: var(--app-bg);
   color: var(--app-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* ---------- Layout ---------- */
 .app-main {
   position: relative;
   z-index: 1;
+}
+
+/* Padding fluido da área de trabalho (substitui utilitários Bootstrap tipo p-4) */
+.app-content-wrap > .app-main {
+  padding: var(--app-main-pad-y) var(--app-main-pad-x);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Colunas Bootstrap: permite encolher dentro da grelha sem overflow horizontal */
+.app-content-wrap .row > [class*="col-"] {
+  min-width: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -41,7 +57,7 @@
 .bc-card {
   background: var(--app-surface);
   border: 1px solid var(--app-border);
-  border-radius: 16px;
+  border-radius: var(--app-radius-card, 16px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
@@ -65,9 +81,9 @@
 .bc-page-header {
   background: var(--app-surface);
   border: 1px solid var(--app-border);
-  padding: 1.5rem 2rem;
-  border-radius: 16px;
-  margin-bottom: 1.5rem;
+  padding: clamp(1.1rem, 2.8vw, 1.5rem) clamp(1.15rem, 3vw, 2rem);
+  border-radius: var(--app-radius-panel, 16px);
+  margin-bottom: var(--app-section-gap, 1.5rem);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
   display: flex;
   justify-content: space-between;
@@ -108,7 +124,7 @@
 .bc-stat-card {
   background: var(--app-surface);
   border: 1px solid var(--app-border);
-  border-radius: 14px;
+  border-radius: var(--app-radius-card, 14px);
   padding: 1rem 1.1rem;
 }
 
@@ -234,9 +250,9 @@
 /* ---------- Filter Card ---------- */
 .bc-filter-card {
   background: var(--app-surface);
-  padding: 1.5rem;
-  border-radius: 16px;
-  margin-bottom: 1.5rem;
+  padding: clamp(1.1rem, 2.5vw, 1.5rem);
+  border-radius: var(--app-radius-panel, 16px);
+  margin-bottom: var(--app-section-gap, 1.5rem);
   border: 1px solid var(--app-border);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
@@ -388,8 +404,13 @@
   background: var(--app-surface);
   border-bottom: 1px solid var(--app-border);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
-  transition: margin 0.25s ease;
   gap: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bc-topbar {
+    transition: margin-left 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 [data-theme="dark"] .bc-topbar {
@@ -608,6 +629,112 @@
   z-index: 1;
 }
 
+/* Perfil — cartões de formulário (alinhado ao painel: tokens + roxo da marca) */
+.bc-profile-section-head {
+  margin-bottom: 1.25rem;
+}
+
+.bc-profile-section-head--security .bc-profile-section-lead {
+  margin-top: 0.35rem;
+}
+
+.bc-profile-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--app-text);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.bc-profile-section-lead {
+  font-size: 0.875rem;
+  color: var(--app-muted);
+  line-height: 1.55;
+}
+
+.bc-profile-label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--app-muted);
+  margin-bottom: 0.35rem;
+}
+
+.bc-profile-form .bc-profile-input {
+  min-height: 3rem;
+  border-radius: var(--app-radius-md, 12px);
+}
+
+.bc-profile-password-group {
+  border-radius: var(--app-radius-md, 12px);
+  border: 1px solid var(--app-border);
+  background: var(--app-surface);
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bc-profile-password-group:focus-within {
+  border-color: var(--bc-purple);
+  box-shadow: 0 0 0 0.2rem rgba(106, 3, 146, 0.18);
+}
+
+.bc-profile-password-group .form-control {
+  min-height: 3rem;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 1rem;
+}
+
+.bc-profile-password-group .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.bc-profile-password-group .bc-pw-toggle {
+  min-width: 3rem;
+  padding-inline: 0.65rem;
+  border: none;
+  border-left: 1px solid var(--app-border);
+  border-radius: 0 !important;
+  background: var(--app-surface-2);
+  color: var(--app-muted);
+}
+
+.bc-profile-password-group .bc-pw-toggle:hover {
+  background: rgba(106, 3, 146, 0.08);
+  color: var(--bc-purple);
+}
+
+[data-theme="dark"] .bc-profile-password-group .bc-pw-toggle {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+[data-theme="dark"] .bc-profile-password-group .bc-pw-toggle:hover {
+  background: rgba(106, 3, 146, 0.22);
+  color: #e9d5ff;
+}
+
+.bc-profile-password-group .bc-pw-toggle-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.bc-form-actions--profile {
+  margin-top: 1.5rem;
+}
+
+.bc-perfil-symbol-btn {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+
+.btn-primary .bc-perfil-symbol-btn {
+  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 24;
+}
+
 /* Banco de questões (setup) */
 .bc-qbank-input-group-text {
   background: var(--app-surface-2);
@@ -636,4 +763,128 @@
 .bc-stats-progress-inline {
   width: 100px;
   flex: 0 0 100px;
+}
+
+/*
+ * Modais renderizados em @stack('modals') ao nível do <body>:
+ * o backdrop do Bootstrap fica acima de .app-layout; o diálogo dentro de .app-main (z-index:1)
+ * ficava por baixo do backdrop e não recebia cliques. Subimos backdrop + .bc-app-shell-modal.
+ */
+body.app-private-body.modal-open .modal-backdrop {
+  z-index: 12100;
+}
+
+body.app-private-body .modal.bc-app-shell-modal {
+  z-index: 12200;
+}
+
+body.app-private-body .modal.bc-app-shell-modal .modal-dialog {
+  max-width: min(440px, calc(100vw - 2rem));
+}
+
+.bc-exam-confirm-modal__surface {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow:
+    0 24px 60px rgba(73, 0, 102, 0.12),
+    0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="dark"] .bc-exam-confirm-modal__surface,
+[data-bs-theme="dark"] .bc-exam-confirm-modal__surface {
+  background: rgba(22, 22, 30, 0.94);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55);
+}
+
+.bc-exam-confirm-modal__dismiss {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  opacity: 0.72;
+}
+
+[data-theme="dark"] .bc-exam-confirm-modal__dismiss,
+[data-bs-theme="dark"] .bc-exam-confirm-modal__dismiss {
+  filter: invert(1);
+  opacity: 0.55;
+}
+
+.bc-exam-confirm-modal__icon {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(106, 3, 146, 0.12);
+  color: var(--bc-purple, #6a0392);
+}
+
+[data-theme="dark"] .bc-exam-confirm-modal__icon,
+[data-bs-theme="dark"] .bc-exam-confirm-modal__icon {
+  background: rgba(167, 139, 250, 0.18);
+  color: #e9d5ff;
+}
+
+.bc-exam-confirm-modal__icon .material-symbols-outlined {
+  font-size: 1.75rem;
+}
+
+.bc-exam-confirm-modal__title {
+  font-family:
+    "Plus Jakarta Sans",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--app-text);
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+  padding-right: 2.25rem;
+}
+
+.bc-exam-confirm-modal__lead {
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: var(--app-muted);
+}
+
+.bc-exam-confirm-modal__btn-cancel {
+  border-radius: 0.875rem;
+  padding: 0.65rem 1.15rem;
+  font-weight: 700;
+  border: 1px solid var(--app-border);
+  background: var(--app-surface-2);
+  color: var(--app-text);
+}
+
+.bc-exam-confirm-modal__btn-cancel:hover {
+  border-color: rgba(106, 3, 146, 0.35);
+  background: rgba(106, 3, 146, 0.06);
+  color: var(--app-text);
+}
+
+.bc-exam-confirm-modal__btn-confirm {
+  border-radius: 0.875rem;
+  padding: 0.65rem 1.15rem;
+  font-weight: 700;
+  border: none;
+  color: #f4e4ff;
+  background: linear-gradient(135deg, #6a0392 0%, #9333ea 100%);
+  box-shadow: 0 10px 28px rgba(106, 3, 146, 0.38);
+}
+
+.bc-exam-confirm-modal__btn-confirm:hover {
+  filter: brightness(1.05);
+  color: #f4e4ff;
 }

@@ -123,6 +123,11 @@ button.bc-styled-select__toggle {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+  min-height: 2.375rem;
+  box-sizing: border-box;
 }
 
 .bc-styled-select__item.is-focus {

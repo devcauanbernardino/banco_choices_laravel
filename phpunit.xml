@@ -18,6 +18,8 @@
         </include>
     </source>
     <php>
+        <!-- Evita 404 nos testes quando o .env local usa APP_URL com subpasta (/public, XAMPP, etc.). -->
+        <env name="APP_URL" value="http://127.0.0.1"/>
         <env name="APP_ENV" value="testing"/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>
         <env name="BCRYPT_ROUNDS" value="4"/>

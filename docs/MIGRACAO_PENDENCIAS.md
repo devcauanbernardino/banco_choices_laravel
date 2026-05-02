@@ -7,6 +7,12 @@
 
 ---
 
+## Triagem 2026-04-28 (produção / código atual)
+
+Vários itens deste documento **já foram cobertos no código** desde a auditoria original (rotas de addon, `AddonController`, fluxo checkout addon, chaves `result.*` em `pt_BR.json`, etc.). Use este ficheiro sobretudo para **UX/conteúdo** e comparação com o PHP antigo; para checklist operacional ver [`PRODUCAO_PENDENCIAS.md`](PRODUCAO_PENDENCIAS.md).
+
+---
+
 ## 1. Resumo executivo
 
 | Métrica | Valor |

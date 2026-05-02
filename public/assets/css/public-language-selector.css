@@ -79,13 +79,17 @@
     justify-content: center;
 }
 
-.navbar-actions--landing .btn-navbar-lang .bc-lang-icon-svg,
-.app-sidebar .btn-navbar-lang .bc-lang-icon-svg,
-.app-offcanvas-more .btn-navbar-lang .bc-lang-icon-svg,
-.app-content-topbar .btn-navbar-lang .bc-lang-icon-svg {
+.navbar-actions--landing .btn-navbar-lang .bc-lang-icon-flag,
+.app-sidebar .btn-navbar-lang .bc-lang-icon-flag,
+.app-offcanvas-more .btn-navbar-lang .bc-lang-icon-flag,
+.app-content-topbar .btn-navbar-lang .bc-lang-icon-flag {
     flex-shrink: 0;
-    color: var(--bs-primary);
-    opacity: 0.9;
+    width: 1.375rem;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.1);
 }
 
 .navbar-actions--landing .btn-navbar-lang {
@@ -258,12 +262,13 @@
 }
 
 .navbar-actions--landing .bc-lang-menu__item {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     gap: 0.65rem;
     padding: 0.65rem 1rem !important;
     font-size: 0.875rem;
     font-weight: 500;
+    line-height: 1.2;
     color: var(--bc-lang-item-text);
     border: none;
     border-left: 4px solid transparent;
@@ -278,12 +283,13 @@
 .app-sidebar .bc-lang-menu__item,
 .app-offcanvas-more .bc-lang-menu__item,
 .app-content-topbar .bc-lang-menu__item {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     gap: 0.65rem;
     padding: 0.65rem 1rem !important;
     font-size: 0.875rem;
     font-weight: 500;
+    line-height: 1.2;
     color: var(--app-text);
     border: none;
     border-left: 4px solid transparent;
@@ -370,11 +376,27 @@
 .app-sidebar .bc-lang-menu__flag,
 .app-offcanvas-more .bc-lang-menu__flag,
 .app-content-topbar .bc-lang-menu__flag {
-    font-size: 1.2rem;
-    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     width: 1.75rem;
-    text-align: center;
+    min-width: 1.75rem;
     flex-shrink: 0;
+    line-height: 0;
+}
+
+.navbar-actions--landing .bc-lang-flag-img,
+.app-sidebar .bc-lang-flag-img,
+.app-offcanvas-more .bc-lang-flag-img,
+.app-content-topbar .bc-lang-flag-img {
+    width: 1.75rem;
+    height: 1.3125rem;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.08);
+    display: block;
 }
 
 .navbar-actions--landing .bc-lang-menu__label,
@@ -383,7 +405,9 @@
 .app-content-topbar .bc-lang-menu__label {
     flex: 1 1 auto;
     min-width: 0;
-    line-height: 1.35;
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
     overflow-wrap: anywhere;
     padding-right: 0.25rem;
 }
@@ -398,6 +422,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
+    line-height: 0;
 }
 
 .navbar-actions--landing .bc-lang-menu__check,
@@ -437,4 +463,142 @@ html[data-bs-theme="light"] {
 .app-content-topbar-lang:has(.bc-lang-selector.show) {
     position: relative;
     z-index: 1085;
+}
+
+.app-content-topbar-account:has(.dropdown-menu.show) {
+    position: relative;
+    z-index: 1085;
+}
+
+/* Dropdown da conta (topbar): mesmo cartão e linhas que o menu de idioma */
+.app-content-topbar .bc-account-menu__meta {
+    padding: 0.35rem 1rem 0.65rem;
+    margin: 0;
+    border-bottom: 1px solid var(--app-border);
+}
+
+.app-content-topbar .bc-account-menu__meta-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--app-text);
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.app-content-topbar .bc-account-menu__meta-email {
+    font-size: 0.8125rem;
+    color: var(--app-muted);
+    margin-top: 0.2rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.app-content-topbar .bc-account-menu__ico-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 1.75rem;
+    min-width: 1.75rem;
+    flex-shrink: 0;
+    line-height: 0;
+}
+
+.app-content-topbar .bc-account-menu__ico-wrap .material-symbols-outlined {
+    font-size: 1.25rem;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    line-height: 1;
+    color: inherit;
+    opacity: 0.92;
+}
+
+.app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger {
+    color: #dc2626;
+}
+
+.app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger:hover,
+.app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger:focus {
+    background: rgba(220, 38, 38, 0.12);
+    color: #b91c1c;
+}
+
+/*
+ * Topbar (painel autenticado) — modo escuro: mesmo “vocabulário” dos dropdowns de filtro
+ * (fundo grafite, texto branco semibold, faixa de hover arredondada roxo/violeta).
+ */
+[data-theme="dark"] .app-content-topbar .bc-lang-menu.bc-lang-menu--landing,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu.bc-lang-menu--landing {
+    background-color: #16161a !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.55),
+        0 2px 12px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__heading,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__heading {
+    color: rgba(255, 255, 255, 0.42) !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item:not(.bc-account-menu__item--danger),
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item:not(.bc-account-menu__item--danger) {
+    color: rgba(255, 255, 255, 0.94) !important;
+    font-weight: 600;
+    border-left-color: transparent !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item:not(.bc-account-menu__item--danger):hover,
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item:not(.bc-account-menu__item--danger):focus,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item:not(.bc-account-menu__item--danger):hover,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item:not(.bc-account-menu__item--danger):focus {
+    background: rgba(124, 58, 237, 0.26) !important;
+    color: #e9d5ff !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item--active,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item--active {
+    background: rgba(124, 58, 237, 0.32) !important;
+    border-left-color: transparent !important;
+    color: #f5f3ff !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item--active .bc-lang-menu__label,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item--active .bc-lang-menu__label {
+    color: inherit !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-account-menu__meta,
+[data-bs-theme="dark"] .app-content-topbar .bc-account-menu__meta {
+    border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-account-menu__meta-name,
+[data-bs-theme="dark"] .app-content-topbar .bc-account-menu__meta-name {
+    color: #fafafa !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-account-menu__meta-email,
+[data-bs-theme="dark"] .app-content-topbar .bc-account-menu__meta-email {
+    color: rgba(255, 255, 255, 0.52) !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger {
+    color: #fca5a5 !important;
+    font-weight: 600;
+    border-left-color: transparent !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger:hover,
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger:focus,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger:hover,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__item.bc-account-menu__item--danger:focus {
+    background: rgba(239, 68, 68, 0.22) !important;
+    color: #fecaca !important;
+}
+
+[data-theme="dark"] .app-content-topbar .bc-lang-menu__check,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-menu__check {
+    background: #a855f7 !important;
+    color: #fff !important;
 }

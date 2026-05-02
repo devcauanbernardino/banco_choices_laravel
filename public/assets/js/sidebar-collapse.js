@@ -2,6 +2,50 @@
   /** @see resources/views/layouts/app.blade.php (inline script before first paint) */
   var KEY = 'bancochoices-sidebar-collapsed';
   var html = document.documentElement;
+  var expandRevealSession = null;
+
+  function clearSidebarExpandReveal() {
+    if (!expandRevealSession) {
+      html.classList.remove('sidebar-width-animating');
+      return;
+    }
+    var s = expandRevealSession;
+    window.clearTimeout(s.tid);
+    s.aside.removeEventListener('transitionend', s.onEnd);
+    expandRevealSession = null;
+    html.classList.remove('sidebar-width-animating');
+  }
+
+  /** Mantém rótulos ocultos até a largura da sidebar terminar de animar (expandir). */
+  function scheduleSidebarExpandReveal(aside) {
+    clearSidebarExpandReveal();
+    var desktop = window.matchMedia('(min-width: 992px)').matches;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!desktop || reduced || aside.classList.contains('app-sidebar--embedded')) {
+      return;
+    }
+
+    html.classList.add('sidebar-width-animating');
+    var done = false;
+    function finish() {
+      if (done) {
+        return;
+      }
+      done = true;
+      clearSidebarExpandReveal();
+    }
+
+    function onEnd(e) {
+      if (e.target !== aside || e.propertyName !== 'width') {
+        return;
+      }
+      finish();
+    }
+
+    aside.addEventListener('transitionend', onEnd);
+    var tid = window.setTimeout(finish, 450);
+    expandRevealSession = { aside: aside, tid: tid, onEnd: onEnd };
+  }
 
   function refreshSidebarTooltips() {
     if (typeof bootstrap === 'undefined' || !bootstrap.Tooltip) {
@@ -31,7 +75,18 @@
   }
 
   function apply(collapsed) {
+    var wasCollapsed = html.classList.contains('sidebar-collapsed');
     html.classList.toggle('sidebar-collapsed', collapsed);
+
+    var aside = document.querySelector('#appSidebarDesktop');
+    if (wasCollapsed && !collapsed && aside) {
+      window.requestAnimationFrame(function () {
+        scheduleSidebarExpandReveal(aside);
+      });
+    } else {
+      clearSidebarExpandReveal();
+    }
+
     try {
       localStorage.setItem(KEY, collapsed ? '1' : '0');
     } catch (e) {

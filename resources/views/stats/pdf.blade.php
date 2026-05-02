@@ -226,6 +226,34 @@
         </tbody>
     </table>
 
+    @if(!empty($desempenhoParcialPorMateria))
+    <h2>{{ __('stats.partial_section_title') }}</h2>
+    <p style="margin: 0 0 8px 0; font-size: 9px; color:#4b5563;">{{ __('stats.partial_section_help') }}</p>
+    @foreach ($desempenhoParcialPorMateria as $bloque)
+        <p style="font-weight:bold;margin:12px 0 4px;font-size:10.5px;">{{ ucfirst((string) $bloque['materia_nome']) }}</p>
+        <table class="data-table" style="margin-bottom:10px;">
+            <thead>
+                <tr>
+                    <th>{{ __('stats.partial_col_parcial') }}</th>
+                    <th class="num">{{ __('stats.partial_col_hits') }}</th>
+                    <th class="num">{{ __('stats.partial_col_total') }}</th>
+                    <th class="num">{{ __('stats.pdf_th_pct') }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($bloque['parciais'] as $pRow)
+                    <tr>
+                        <td>{{ $pRow['label'] }}</td>
+                        <td class="num">{{ (int) $pRow['acertos'] }}</td>
+                        <td class="num">{{ (int) $pRow['total'] }}</td>
+                        <td class="num">{{ $pRow['pct'] }}%</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    @endforeach
+    @endif
+
     <h2>{{ __('stats.week_title') }}</h2>
     <table class="data-table">
         <thead>

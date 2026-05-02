@@ -11,7 +11,7 @@
 @endpush
 
 @section('content')
-    <div class="bc-mock-addon py-4 px-3 px-md-4">
+    <div class="bc-mock-addon bc-mock-page-shell">
         <header class="bc-mock-addon__hero">
             <h1 class="bc-mock-addon__title">{{ __('nav.buy_subjects') }}</h1>
             <p class="bc-mock-addon__lead">{{ __('addon.intro') }}</p>
@@ -21,7 +21,7 @@
             <div class="alert alert-warning border-0 rounded-3 shadow-sm mb-4">{{ session('error') }}</div>
         @endif
 
-        @if ($disponiveis->isEmpty())
+        @if (!$temMateriasCompraveis)
             <div class="bc-card overflow-hidden">
                 <div class="bc-empty-state">
                     <span class="material-icons text-success" aria-hidden="true">check_circle</span>
@@ -36,21 +36,10 @@
             <form method="post" action="{{ route('addon.materias') }}">
                 @csrf
                 <h2 class="bc-mock-addon__section-label">{{ __('addon.pick_section') }}</h2>
-                <div class="bc-mock-addon__grid">
-                    @foreach ($disponiveis as $m)
-                        <label class="bc-mock-addon__card">
-                            <input type="checkbox" name="materias[]" value="{{ $m->id }}">
-                            <span class="bc-mock-addon__card-box">
-                                <span class="bc-mock-addon__check" aria-hidden="true">
-                                    <span class="material-symbols-outlined">check</span>
-                                </span>
-                                <span class="bc-mock-addon__body">
-                                    <span class="bc-mock-addon__name">{{ $m->nome }}</span>
-                                </span>
-                            </span>
-                        </label>
-                    @endforeach
-                </div>
+                @include('partials.catalog-materias-flow', [
+                    'excludeIdsCsv' => $excludeOwnedCsv ?? '',
+                    'presetMateriaId' => 0,
+                ])
                 <div class="bc-mock-addon__actions">
                     <a href="{{ route('dashboard') }}" class="btn btn-outline-secondary btn-lg bc-mock-addon__btn-primary w-100 w-sm-auto">{{ __('nav.dashboard') }}</a>
                     <button type="submit" class="btn btn-primary btn-lg bc-mock-addon__btn-primary w-100 w-sm-auto">{{ __('addon.continue_checkout') }}</button>

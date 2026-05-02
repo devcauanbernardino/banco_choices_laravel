@@ -5,8 +5,13 @@
  * Útil para fluxos E2E sem poluir o vínculo de matérias.
  */
 return [
-    'skip_default_materias_emails' => array_values(array_filter(array_map(
-        'trim',
-        explode(',', (string) env('TEST_USER_SKIP_DEFAULT_MATERIAS', ''))
-    ))),
+    'skip_default_materias_emails' => array_values(array_unique(array_filter(array_merge(
+        array_map(
+            'trim',
+            explode(',', (string) env('TEST_USER_SKIP_DEFAULT_MATERIAS', ''))
+        ),
+        [
+            'microbiologia.solo@bancodechoices.local',
+        ]
+    )))),
 ];

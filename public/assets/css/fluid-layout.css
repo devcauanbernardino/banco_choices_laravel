@@ -1,0 +1,37 @@
+/**
+ * Layout fluido — utilitários partilhados (painel + público quando ligado).
+ * Requer theme-tokens.css antes: --app-main-pad-*, --app-section-gap, --app-radius-*.
+ */
+
+/* Conteúdo fora do painel autenticado (landing, login, quiz público): legibilidade */
+body:not(.app-private-body) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+/**
+ * Páginas mock dentro do painel: ritmo vertical extra.
+ * O .app-main já aplica padding global; isto evita dupla calha horizontal (antes py-4 px-3).
+ */
+.bc-mock-page-shell {
+  padding-top: clamp(0.35rem, 1.25vw, 0.9rem);
+  padding-bottom: clamp(0.65rem, 2vw, 1.35rem);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Cards / formulários: substitui utilitário Bootstrap p-4 em conteúdos densos */
+.bc-card.bc-card--p-fluid {
+  padding: clamp(1rem, 2.8vw, 1.5rem);
+}
+
+.card-body.bc-card-body--fluid {
+  padding: clamp(1rem, 2.8vw, 1.5rem);
+}
+
+/* Último bloco principal: não “cola” no fundo em viewports altas */
+.app-main > .dash-painel:last-child {
+  margin-bottom: var(--app-section-gap);
+}

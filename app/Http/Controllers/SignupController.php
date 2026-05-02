@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Materia;
 use App\Support\SignupFlow;
 use Illuminate\Http\Request;
 
@@ -10,9 +9,9 @@ class SignupController extends Controller
 {
     public function selecionarMaterias()
     {
-        $materias = Materia::all();
+        $presetMateriaId = (int) request()->query('materia_id', 0);
 
-        return view('signup.select-materias', compact('materias'));
+        return view('signup.select-materias', compact('presetMateriaId'));
     }
 
     public function storeMaterias(Request $request)

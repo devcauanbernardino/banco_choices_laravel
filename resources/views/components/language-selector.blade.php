@@ -1,11 +1,11 @@
 @php
     $currentLocale = app()->getLocale();
     $locales = [
-        'es_AR' => ['label' => __('lang.name_es_AR'), 'code' => 'AR', 'flag' => "\u{1F1E6}\u{1F1F7}"],
-        'pt_BR' => ['label' => __('lang.name_pt_BR'), 'code' => 'BR', 'flag' => "\u{1F1E7}\u{1F1F7}"],
-        'en_US' => ['label' => __('lang.name_en_US'), 'code' => 'US', 'flag' => "\u{1F1FA}\u{1F1F8}"],
+        'es_AR' => ['label' => __('lang.name_es_AR'), 'flag_id' => 'ar'],
+        'pt_BR' => ['label' => __('lang.name_pt_BR'), 'flag_id' => 'br'],
+        'en_US' => ['label' => __('lang.name_en_US'), 'flag_id' => 'us'],
     ];
-    $currentCode = $locales[$currentLocale]['code'] ?? '';
+    $currentFlagId = $locales[$currentLocale]['flag_id'] ?? 'ar';
     /* Sidebar: menu ao lado do botão (direita). Sem isso, dropdown-menu-end + fixed faz o Popper mandar o menu para o canto oposto da viewport. */
     $langInSidebar = isset($sidebarCollapsedTooltip);
     $langPopperConfig = $langInSidebar
@@ -19,25 +19,24 @@
         : [
             'strategy' => 'fixed',
         ];
+    $compactTopbar = ! empty($compactTopbar ?? false);
 @endphp
 
 <div class="dropdown bc-lang-selector">
-    <button class="btn btn-navbar-lang dropdown-toggle d-inline-flex align-items-center gap-2 w-100"
+    <button class="btn btn-navbar-lang dropdown-toggle d-inline-flex align-items-center gap-2{{ $compactTopbar ? ' btn-navbar-lang--compact-topbar' : ' w-100' }}"
             type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"
             data-bs-popper-config='@json($langPopperConfig)'
             aria-expanded="false" aria-label="{{ __('lang.selector_aria') }}"
             @isset($sidebarCollapsedTooltip) data-sidebar-tooltip="{{ $sidebarCollapsedTooltip }}" @endisset>
         <div class="bc-lang-btn-inner">
-            <svg class="bc-lang-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                      stroke="currentColor" stroke-width="1.5"/>
-                <path d="M2 12H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z"
-                      stroke="currentColor" stroke-width="1.5"/>
-            </svg>
-            <span class="bc-lang-btn-code d-inline d-sm-none fw-semibold" aria-hidden="true">{{ $currentCode }}</span>
-            <span class="d-none d-sm-inline">{{ __('lang.selector_label') }}</span>
+            <img class="bc-lang-icon-flag"
+                 src="{{ asset('assets/img/flags/'.$currentFlagId.'.svg') }}"
+                 width="22" height="17"
+                 alt=""
+                 decoding="async">
+            @unless ($compactTopbar)
+                <span class="d-none d-sm-inline">{{ __('lang.selector_label') }}</span>
+            @endunless
         </div>
     </button>
 
@@ -49,8 +48,9 @@
             <li>
                 @if ($code === $currentLocale)
                     <span class="dropdown-item bc-lang-menu__item bc-lang-menu__item--active" aria-current="true">
-                        {{-- Só bandeira + rótulo: em Windows o "emoji" de bandeira vira letras (ex. AR) — não repetir o código ISO ao lado. --}}
-                        <span class="bc-lang-menu__flag" aria-hidden="true">{{ $info['flag'] }}</span>
+                        <span class="bc-lang-menu__flag" aria-hidden="true">
+                            <img class="bc-lang-flag-img" src="{{ asset('assets/img/flags/'.$info['flag_id'].'.svg') }}" width="28" height="21" alt="" decoding="async">
+                        </span>
                         <span class="bc-lang-menu__label">{{ $info['label'] }}</span>
                         <span class="bc-lang-menu__tick" aria-hidden="true"><span class="bc-lang-menu__check">&check;</span></span>
                     </span>
@@ -59,7 +59,9 @@
                         @csrf
                         <input type="hidden" name="locale" value="{{ $code }}">
                         <button type="submit" class="dropdown-item bc-lang-menu__item w-100 text-start border-0 bg-transparent">
-                            <span class="bc-lang-menu__flag" aria-hidden="true">{{ $info['flag'] }}</span>
+                            <span class="bc-lang-menu__flag" aria-hidden="true">
+                                <img class="bc-lang-flag-img" src="{{ asset('assets/img/flags/'.$info['flag_id'].'.svg') }}" width="28" height="21" alt="" decoding="async">
+                            </span>
                             <span class="bc-lang-menu__label">{{ $info['label'] }}</span>
                             <span class="bc-lang-menu__tick" aria-hidden="true"></span>
                         </button>

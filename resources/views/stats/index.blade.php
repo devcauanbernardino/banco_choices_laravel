@@ -36,7 +36,7 @@
         }
         $exportUrl = route('stats.export-pdf', $exportParams);
     @endphp
-    <div class="bc-mock-stats py-4 px-3 px-md-4">
+    <div class="bc-mock-stats bc-mock-page-shell">
         <header class="bc-mock-stats__header">
             <div class="bc-mock-stats__header-text">
                 <h1 class="bc-mock-stats__title">{{ __('stats.heading') }}</h1>
@@ -46,32 +46,36 @@
 
         <div class="bc-mock-stats__filter-panel">
             <form action="{{ route('stats') }}" method="GET" class="bc-mock-stats__period-form" id="bc-stats-period-form">
-                <div class="bc-mock-stats__filter-toolbar {{ $currentPeriod === 'custom' ? 'is-custom' : 'is-not-custom' }}" id="bc-stats-filter-toolbar" role="group" aria-label="{{ __('stats.period_aria') }}">
-                    <div class="bc-mock-stats__field-col bc-mock-stats__field-col--period">
-                        <span class="bc-mock-stats__field-label" id="bc-stats-period-lbl">{{ __('stats.period_label') }}</span>
-                        <div class="bc-mock-stats__field-control">
-                            <select id="bc-stats-period"
-                                    name="period"
-                                    class="bc-styled-select bc-mock-stats__select"
-                                    aria-labelledby="bc-stats-period-lbl">
-                                @foreach ($periodOptions as $value => $label)
-                                    <option value="{{ $value }}" {{ $currentPeriod === $value ? 'selected' : '' }}>{{ $label }}</option>
-                                @endforeach
-                            </select>
+                <div class="bc-mock-stats__filter-body">
+                    <div class="bc-mock-stats__filter-toolbar {{ $currentPeriod === 'custom' ? 'is-custom' : 'is-not-custom' }}" id="bc-stats-filter-toolbar" role="group" aria-label="{{ __('stats.period_aria') }}">
+                        <div class="bc-mock-stats__filter-cluster bc-mock-stats__filter-cluster--period">
+                            <span class="bc-mock-stats__filter-heading" id="bc-stats-period-lbl">{{ __('stats.period_label') }}</span>
+                            <div class="bc-mock-stats__field-control">
+                                <select id="bc-stats-period"
+                                        name="period"
+                                        class="bc-styled-select bc-mock-stats__select"
+                                        aria-labelledby="bc-stats-period-lbl">
+                                    @foreach ($periodOptions as $value => $label)
+                                        <option value="{{ $value }}" {{ $currentPeriod === $value ? 'selected' : '' }}>{{ $label }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bc-mock-stats__custom-block" id="bc-stats-range" data-active="{{ $currentPeriod === 'custom' ? '1' : '0' }}">
-                        <label class="bc-mock-stats__field-col" for="bc-stats-from">
-                            <span class="bc-mock-stats__field-label">{{ __('stats.range_from') }}</span>
-                            <input type="date" name="from" value="{{ $customFromValue }}" class="bc-mock-stats__range-input" id="bc-stats-from" autocomplete="off" @if($currentPeriod !== 'custom') disabled @endif>
-                        </label>
-                        <label class="bc-mock-stats__field-col" for="bc-stats-to">
-                            <span class="bc-mock-stats__field-label">{{ __('stats.range_to') }}</span>
-                            <input type="date" name="to" value="{{ $customToValue }}" class="bc-mock-stats__range-input" id="bc-stats-to" autocomplete="off" @if($currentPeriod !== 'custom') disabled @endif>
-                        </label>
-                        <div class="bc-mock-stats__field-col bc-mock-stats__field-col--action">
-                            <span class="bc-mock-stats__field-label bc-mock-stats__field-label--spacer" aria-hidden="true">&nbsp;</span>
-                            <button type="submit" class="bc-mock-stats__range-btn">{{ __('stats.range_apply') }}</button>
+                        <div class="bc-mock-stats__filter-cluster bc-mock-stats__filter-cluster--interval bc-mock-stats__filter-group--range" id="bc-stats-range" data-active="{{ $currentPeriod === 'custom' ? '1' : '0' }}" role="group" aria-labelledby="bc-stats-interval-lbl">
+                            <span class="bc-mock-stats__filter-heading" id="bc-stats-interval-lbl">{{ __('stats.filter_range_label') }}</span>
+                            <div class="bc-mock-stats__interval-controls">
+                                <div class="bc-mock-stats__interval-field">
+                                    <label class="bc-mock-stats__interval-field-lbl" for="bc-stats-from">{{ __('stats.range_from') }}</label>
+                                    <input type="date" name="from" value="{{ $customFromValue }}" class="bc-mock-stats__range-input" id="bc-stats-from" autocomplete="off" @if($currentPeriod !== 'custom') disabled @endif>
+                                </div>
+                                <div class="bc-mock-stats__interval-field">
+                                    <label class="bc-mock-stats__interval-field-lbl" for="bc-stats-to">{{ __('stats.range_to') }}</label>
+                                    <input type="date" name="to" value="{{ $customToValue }}" class="bc-mock-stats__range-input" id="bc-stats-to" autocomplete="off" @if($currentPeriod !== 'custom') disabled @endif>
+                                </div>
+                                <div class="bc-mock-stats__interval-actions">
+                                    <button type="submit" class="bc-mock-stats__range-btn" @if($currentPeriod !== 'custom') disabled @endif>{{ __('stats.range_apply') }}</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,6 +146,38 @@
                 @endforelse
             </section>
         </div>
+
+        @if(!empty($desempenhoParcialPorMateria))
+        <section class="bc-mock-stats__parc-panel px-3 px-md-4 py-4 mb-3 rounded-4 border shadow-sm bg-body-tertiary/30 border-opacity-50" aria-label="{{ __('stats.partial_section_title') }}">
+            <h3 class="h5 fw-bold mb-1">{{ __('stats.partial_section_title') }}</h3>
+            <p class="small text-secondary mb-4">{{ __('stats.partial_section_help') }}</p>
+            <div class="row g-4">
+                @foreach ($desempenhoParcialPorMateria as $bloque)
+                    <div class="col-12">
+                        <h4 class="h6 fw-semibold mb-3 text-secondary">{{ ucfirst((string) $bloque['materia_nome']) }}</h4>
+                        <div class="row g-3">
+                            @foreach ($bloque['parciais'] as $pRow)
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="p-3 rounded-3 border bg-body h-100">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <span class="small fw-semibold">{{ $pRow['label'] }}</span>
+                                            <span class="small fw-bold text-primary">{{ $pRow['pct'] }}%</span>
+                                        </div>
+                                        <div class="bc-progress mb-2">
+                                            <div class="bc-progress-bar" style="width: {{ min(100, max(0, (float) $pRow['pct'])) }}%;"></div>
+                                        </div>
+                                        <p class="small text-muted mb-0">
+                                            {{ __('stats.partial_hits_vs_total', ['acertos' => $pRow['acertos'], 'total' => $pRow['total']]) }}
+                                        </p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+        @endif
 
         <section class="bc-mock-stats__table-panel overflow-hidden">
             <div class="bc-mock-stats__table-head">
@@ -215,6 +251,8 @@
             }
         }
 
+        var applyBtn = form.querySelector('.bc-mock-stats__range-btn');
+
         function onPeriodChange(select) {
             var isCustom = select.value === 'custom';
             setToolbarMode(isCustom);
@@ -226,11 +264,15 @@
                 if (isCustom) toInput.removeAttribute('disabled');
                 else { toInput.setAttribute('disabled', 'disabled'); toInput.value = ''; }
             }
+            if (applyBtn) {
+                if (isCustom) applyBtn.removeAttribute('disabled');
+                else applyBtn.setAttribute('disabled', 'disabled');
+            }
             if (isCustom) {
-                if (fromInput.value && toInput.value) {
+                if (fromInput && toInput && fromInput.value && toInput.value) {
                     form.submit();
                 } else {
-                    setTimeout(function () { (fromInput.value ? toInput : fromInput).focus(); }, 50);
+                    setTimeout(function () { if (fromInput && toInput) (fromInput.value ? toInput : fromInput).focus(); }, 50);
                 }
                 return;
             }

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Materia;
+use App\Services\Questions\QuestionExamBuilder;
 use App\Support\Question;
+use App\Support\QuestionBankLocator;
+use App\Support\QuestionLocale;
 use App\Support\SimulationSession;
 use App\Support\SimulationTimer;
 use Illuminate\Http\Request;
@@ -22,27 +25,70 @@ class SimulationController extends Controller
     {
         $request->validate([
             'materia' => 'required|integer|exists:materias,id',
+            'catedra_id' => 'nullable|integer|exists:catedras,id',
             'quantidade' => 'required|integer|min:1|max:200',
             'modo' => 'required|in:estudo,exame',
+            'parcial' => 'nullable|array',
+            'parcial.*' => 'nullable|string|max:16',
+            'tema' => 'nullable|array',
+            'tema.*' => 'nullable|string|max:190',
         ]);
 
         $user = Auth::user();
         $materiaId = (int) $request->input('materia');
 
         if (! $user->possuiMateria($materiaId)) {
-            return redirect()->route('questionbank')->with('error', 'Matéria não autorizada.');
+            return redirect()->route('questionbank')->with('error', __('bank.err.unauthorized_subject'));
         }
 
-        $materia = Materia::findOrFail($materiaId);
-        $questoes = $this->loadQuestions($materiaId, (int) $request->input('quantidade'));
+        /** @var Materia $materia */
+        $materia = Materia::query()->withCount('catedras')->findOrFail($materiaId);
+
+        $catIdRaw = $request->input('catedra_id');
+        $catId = ($catIdRaw !== null && $catIdRaw !== '') ? (int) $catIdRaw : null;
+        if ((int) $materia->catedras_count > 0) {
+            if ($catId === null || $catId <= 0) {
+                return redirect()->route('questionbank')->with('error', __('bank.err.catedra_required'));
+            }
+            $ok = $materia->catedras()->whereKey($catId)->exists();
+            if (! $ok) {
+                return redirect()->route('questionbank')->with('error', __('bank.err.catedra_invalid'));
+            }
+        }
+
+        $bancoQuestoes = QuestionBankLocator::filenameFor($materiaId);
+        $parciais = QuestionExamBuilder::normalizedFilterTokens((array) $request->input('parcial', []));
+        $temas = QuestionExamBuilder::normalizedFilterTokens((array) $request->input('tema', []));
+
+        $filterErrKey = $this->questionFilterViolationKey($materiaId, $catId, $parciais, $temas);
+        if ($filterErrKey !== null) {
+            return redirect()->route('questionbank')->with('error', __($filterErrKey));
+        }
+
+        $parciais = array_values(array_unique(array_map(static function ($p): string {
+            $t = trim((string) $p);
+
+            return strcasecmp($t, 'final') === 0 ? 'final' : $t;
+        }, $parciais)));
+
+        $questoes = QuestionExamBuilder::buildPack(
+            $materiaId,
+            $catId,
+            $parciais,
+            $temas,
+            (int) $request->input('quantidade'),
+            false,
+        );
 
         if (empty($questoes)) {
-            return redirect()->route('questionbank')->with('error', 'Nenhuma questão encontrada.');
+            return redirect()->route('questionbank')->with('error', __('bank.err.no_questions_filters'));
         }
 
         $data = [
             'materia' => $materiaId,
             'materia_nome' => $materia->nome,
+            'catedra_id' => $catId,
+            'banco_questoes' => $bancoQuestoes,
             'modo' => $request->input('modo'),
             'questoes' => $questoes,
             'atual' => 0,
@@ -58,6 +104,67 @@ class SimulationController extends Controller
         $this->sim->init($data);
 
         return redirect()->route('simulation.show');
+    }
+
+    /**
+     * @param  list<string>  $parciaisSubmitted
+     * @param  list<string>  $temasSubmitted
+     */
+    private function questionFilterViolationKey(int $materiaId, ?int $catedraId, array $parciaisSubmitted, array $temasSubmitted): ?string
+    {
+        $allowedParc = QuestionExamBuilder::parciaisDisponiveis($materiaId, $catedraId);
+        $hayFinal = QuestionExamBuilder::hayFinalPool($materiaId, $catedraId);
+
+        foreach ($parciaisSubmitted as $p) {
+            $pTrim = trim((string) $p);
+            if ($pTrim === '') {
+                continue;
+            }
+
+            $isFinalToken = strtolower($pTrim) === 'final';
+
+            if ($isFinalToken) {
+                if (! $hayFinal['hay']) {
+                    return 'bank.err.invalid_filters_parciais';
+                }
+
+                continue;
+            }
+
+            $ok = false;
+            foreach ($allowedParc as $a) {
+                if (strcasecmp(trim((string) $a), $pTrim) === 0) {
+                    $ok = true;
+                    break;
+                }
+            }
+            if (! $ok) {
+                return 'bank.err.invalid_filters_parciais';
+            }
+        }
+
+        if ($temasSubmitted !== []) {
+            $allowedTemas = QuestionExamBuilder::temasDisponiveis($materiaId, $catedraId);
+            foreach ($temasSubmitted as $tRaw) {
+                $tStr = trim((string) $tRaw);
+                if ($tStr === '') {
+                    continue;
+                }
+
+                $okTem = false;
+                foreach ($allowedTemas as $a) {
+                    if (trim((string) $a) === $tStr) {
+                        $okTem = true;
+                        break;
+                    }
+                }
+                if (! $okTem) {
+                    return 'bank.err.invalid_filters_temas';
+                }
+            }
+        }
+
+        return null;
     }
 
     public function show()
@@ -76,7 +183,9 @@ class SimulationController extends Controller
             $this->sim->set('atual', 0);
         }
 
-        $questao = new Question($questoes[$indiceAtual]);
+        $banco = (string) ($this->sim->get('banco_questoes') ?? '');
+        $qRaw = QuestionLocale::apply($questoes[$indiceAtual], (string) app()->getLocale(), $banco);
+        $questao = new Question($qRaw);
 
         $tempoRestante = null;
         if ($this->sim->get('modo') === 'exame' && $this->sim->get('inicio') !== null) {
@@ -115,6 +224,7 @@ class SimulationController extends Controller
             'tempoRestante' => $tempoRestante,
             'materiaNome' => $this->sim->get('materia_nome') ?? '',
             'mapaStatus' => $mapaStatus,
+            'quiz_translation_overlay_missing' => ! QuestionLocale::hasTranslationOverlay((string) app()->getLocale(), $banco),
         ];
 
         return view('simulation.show', $viewData);
@@ -178,7 +288,9 @@ class SimulationController extends Controller
         $this->sim->set('respostas', $respostas);
 
         if ($modo === 'estudo' && isset($questoes[$currentIndex])) {
-            $questao = new Question($questoes[$currentIndex]);
+            $banco = (string) ($this->sim->get('banco_questoes') ?? '');
+            $qRaw = QuestionLocale::apply($questoes[$currentIndex], (string) app()->getLocale(), $banco);
+            $questao = new Question($qRaw);
 
             $feedbacks = (array) ($this->sim->get('feedback') ?? []);
             $feedbacks[$currentIndex] = [
@@ -186,50 +298,10 @@ class SimulationController extends Controller
                 'resposta_usuario' => $answerStr,
                 'resposta_correta' => $questao->getCorrectAnswer(),
                 'feedback' => $questao->getFeedback(),
+                'parcial' => $questoes[$currentIndex]['_parcial'] ?? null,
             ];
             $this->sim->set('feedback', $feedbacks);
         }
-    }
-
-    private function loadQuestions(int $materiaId, int $quantidade): array
-    {
-        $map = [
-            1 => 'questoes_microbiologia_refinado.json',
-            2 => 'questoes_biologia_final_v2.json',
-        ];
-
-        $filename = $map[$materiaId] ?? null;
-        if (! $filename) {
-            $filename = "questoes_materia_{$materiaId}.json";
-        }
-
-        $path = storage_path('app/data/'.$filename);
-        if (! file_exists($path)) {
-            return [];
-        }
-
-        $data = json_decode(file_get_contents($path), true);
-        if (! is_array($data)) {
-            return [];
-        }
-
-        // Formato oficial (PHP legado): { "titulo": "...", "questoes": [ { "pergunta", "opcoes": [...] } ] }
-        if (isset($data['questoes']) && is_array($data['questoes'])) {
-            $lista = $data['questoes'];
-        } elseif (array_is_list($data)) {
-            $lista = $data;
-        } else {
-            return [];
-        }
-
-        if ($lista === []) {
-            return [];
-        }
-
-        shuffle($lista);
-        $quantidade = max(1, min($quantidade, count($lista)));
-
-        return array_slice($lista, 0, $quantidade);
     }
 
     private function ensureAuthorized(): void

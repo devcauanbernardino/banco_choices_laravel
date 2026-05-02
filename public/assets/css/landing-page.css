@@ -517,5 +517,12 @@ body {
 }
 
 .container {
-    max-width: 1320px;
+    max-width: min(1320px, 100%);
+}
+
+/* Ritmo horizontal alinhado aos tokens do produto (theme-tokens.css) */
+.lp-shell .container,
+.lp-shell .container-fluid {
+    padding-left: var(--app-main-pad-x, clamp(0.75rem, 2.8vw, 1.75rem));
+    padding-right: var(--app-main-pad-x, clamp(0.75rem, 2.8vw, 1.75rem));
 }

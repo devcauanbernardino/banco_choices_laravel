@@ -148,6 +148,14 @@
 
                             <p class="small text-muted">{{ __('signup.checkout.after_pay_note') }}</p>
 
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold small" for="codigoCupomSignup">{{ __('referral.codigo_opcional_label') }}</label>
+                                <input type="text" class="form-control form-control-lg" name="codigo_cupom_usado" id="codigoCupomSignup"
+                                       value="{{ old('codigo_cupom_usado') }}" maxlength="40" autocomplete="off"
+                                       placeholder="{{ __('referral.codigo_placeholder') }}">
+                                <div class="form-text">{{ __('referral.codigo_hint_signup') }}</div>
+                            </div>
+
                             @php
                                 $mpPrefBase = rtrim((string) (config('mercadopago.checkout_base_url') ?: config('mercadopago.site_url')), '/');
                                 $mpHttpsReturn = str_starts_with(strtolower($mpPrefBase), 'https://');

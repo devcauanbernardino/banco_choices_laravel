@@ -50,9 +50,13 @@
                 <span class="material-symbols-outlined quiz-mock-theme-ico-dark" aria-hidden="true">dark_mode</span>
             </button>
             @if ($tempoRestante !== null)
+                @php
+                    $__seg = max(0, (int) $tempoRestante);
+                    $__timerFmt = sprintf('%02d:%02d:%02d', intdiv($__seg, 3600), intdiv($__seg % 3600, 60), $__seg % 60);
+                @endphp
                 <div class="quiz-mock-timer-block">
                     <span class="quiz-mock-timer-label">{{ __('quiz.timer_label') }}</span>
-                    <span class="quiz-mock-timer-value" id="timerDisplay">{{ gmdate('H:i:s', $tempoRestante) }}</span>
+                    <span class="quiz-mock-timer-value" id="timerDisplay">{{ $__timerFmt }}</span>
                 </div>
                 <div class="quiz-mock-divider" aria-hidden="true"></div>
             @endif
@@ -75,6 +79,13 @@
                 </nav>
                 <span class="quiz-mock-tag">{{ $materiaNome }}</span>
             </div>
+
+            @if (! empty($quiz_translation_overlay_missing))
+                <div class="quiz-mock-i18n-note" role="status">
+                    <span class="material-symbols-outlined quiz-mock-i18n-note__ico" aria-hidden="true">translate</span>
+                    <p class="quiz-mock-i18n-note__text">{{ __('quiz.bank_original_language_notice') }}</p>
+                </div>
+            @endif
 
             <article class="quiz-mock-question-card">
                 <h2 class="quiz-mock-question-text">{{ $textoPergunta }}</h2>
@@ -203,27 +214,6 @@
                     <span class="quiz-mock-legend-item"><span class="quiz-mock-dot quiz-mock-dot--current"></span>{{ __('quiz.legend_current') }}</span>
                 </div>
             </div>
-
-            <div class="quiz-mock-card quiz-mock-card--stats">
-                @php
-                    $totalRespondidas = 0; $totalCorretas = 0;
-                    foreach ($mapaStatus as $st) {
-                        if ($st !== 'pendente') $totalRespondidas++;
-                        if ($st === 'correta') $totalCorretas++;
-                    }
-                    $taxa = $totalRespondidas > 0 ? round($totalCorretas / $totalRespondidas * 100) : 0;
-                @endphp
-                <div class="quiz-mock-stat">
-                    <span class="quiz-mock-stat-label">{{ __('quiz.stat_answered') }}</span>
-                    <span class="quiz-mock-stat-value">{{ $totalRespondidas }}/{{ $totalQuestoes }}</span>
-                </div>
-                @if ($isStudy)
-                    <div class="quiz-mock-stat quiz-mock-stat--accent">
-                        <span class="quiz-mock-stat-label">{{ __('quiz.stat_hits') }}</span>
-                        <span class="quiz-mock-stat-value">{{ $taxa }}%</span>
-                    </div>
-                @endif
-            </div>
         </aside>
     </main>
 </div>
@@ -257,25 +247,37 @@
 
     @if ($tempoRestante !== null)
     (function() {
-        let remaining = {{ (int) $tempoRestante }};
-        const display = document.getElementById('timerDisplay');
-        const interval = setInterval(function() {
+        function pad2(n) {
+            n = Math.floor(n);
+            return (n < 10 ? '0' : '') + n;
+        }
+        function formatRemaining(sec) {
+            sec = Math.max(0, sec);
+            var h = Math.floor(sec / 3600);
+            var m = Math.floor((sec % 3600) / 60);
+            var s = sec % 60;
+            return pad2(h) + ':' + pad2(m) + ':' + pad2(s);
+        }
+        var remaining = {{ (int) $tempoRestante }};
+        var display = document.getElementById('timerDisplay');
+        var quizForm = document.getElementById('quizForm');
+        if (!display || !quizForm) return;
+
+        display.textContent = formatRemaining(remaining);
+
+        var interval = setInterval(function() {
             remaining--;
             if (remaining <= 0) {
                 clearInterval(interval);
-                var f = document.getElementById('quizForm');
-                var h = document.createElement('input');
-                h.type = 'hidden';
-                h.name = 'timeout';
-                h.value = '1';
-                f.appendChild(h);
-                f.submit();
+                var hid = document.createElement('input');
+                hid.type = 'hidden';
+                hid.name = 'timeout';
+                hid.value = '1';
+                quizForm.appendChild(hid);
+                quizForm.submit();
                 return;
             }
-            const h = Math.floor(remaining / 3600);
-            const m = Math.floor((remaining % 3600) / 60);
-            const s = remaining % 60;
-            display.textContent = String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+            display.textContent = formatRemaining(remaining);
         }, 1000);
     })();
     @endif

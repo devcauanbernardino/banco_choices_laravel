@@ -229,10 +229,9 @@
   box-shadow: none;
 }
 
-[data-theme="dark"] .app-sidebar .btn-navbar-lang .bc-lang-icon-svg,
-[data-bs-theme="dark"] .app-sidebar .btn-navbar-lang .bc-lang-icon-svg {
-  color: rgba(255, 255, 255, 0.88) !important;
-  opacity: 1;
+[data-theme="dark"] .app-sidebar .btn-navbar-lang .bc-lang-icon-flag,
+[data-bs-theme="dark"] .app-sidebar .btn-navbar-lang .bc-lang-icon-flag {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22);
 }
 
 [data-theme="dark"] .app-sidebar .btn-navbar-lang:hover,
@@ -260,10 +259,9 @@
   box-shadow: none;
 }
 
-[data-theme="dark"] .app-offcanvas-more .btn-navbar-lang .bc-lang-icon-svg,
-[data-bs-theme="dark"] .app-offcanvas-more .btn-navbar-lang .bc-lang-icon-svg {
-  color: var(--bc-purple, #6a0392) !important;
-  opacity: 0.95;
+[data-theme="dark"] .app-offcanvas-more .btn-navbar-lang .bc-lang-icon-flag,
+[data-bs-theme="dark"] .app-offcanvas-more .btn-navbar-lang .bc-lang-icon-flag {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14);
 }
 
 [data-theme="dark"] .app-offcanvas-more .btn-navbar-lang:hover,
@@ -286,10 +284,9 @@
   box-shadow: none;
 }
 
-[data-theme="dark"] .app-content-topbar .btn-navbar-lang .bc-lang-icon-svg,
-[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang .bc-lang-icon-svg {
-  color: rgba(255, 255, 255, 0.88) !important;
-  opacity: 1;
+[data-theme="dark"] .app-content-topbar .btn-navbar-lang .bc-lang-icon-flag,
+[data-bs-theme="dark"] .app-content-topbar .btn-navbar-lang .bc-lang-icon-flag {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22);
 }
 
 [data-theme="dark"] .app-content-topbar .btn-navbar-lang:hover,
@@ -358,6 +355,15 @@
 [data-theme="dark"] .app-offcanvas-more .bc-lang-menu__item--active .bc-lang-menu__code,
 [data-bs-theme="dark"] .app-offcanvas-more .bc-lang-menu__item--active .bc-lang-menu__code {
   color: #e9d5ff !important;
+}
+
+[data-theme="dark"] .app-sidebar .bc-lang-flag-img,
+[data-bs-theme="dark"] .app-sidebar .bc-lang-flag-img,
+[data-theme="dark"] .app-offcanvas-more .bc-lang-flag-img,
+[data-bs-theme="dark"] .app-offcanvas-more .bc-lang-flag-img,
+[data-theme="dark"] .app-content-topbar .bc-lang-flag-img,
+[data-bs-theme="dark"] .app-content-topbar .bc-lang-flag-img {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14);
 }
 
 [data-theme="dark"] .app-sidebar .bc-lang-menu__check,

@@ -28,7 +28,7 @@
 
     <div class="addon-checkout-grid">
         <div class="card shadow-sm border-0">
-            <div class="card-body p-4">
+            <div class="card-body bc-card-body--fluid">
                 <h3 class="h6 fw-bold mb-3 d-inline-flex align-items-center gap-2"><span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">credit_card</span>{{ __('signup.checkout.contact_title') }}</h3>
                 <form method="post" action="{{ route('checkout.process') }}" id="addon-pay-form">
                     @csrf
@@ -64,6 +64,25 @@
                         <p class="small text-body-secondary border-start border-3 border-secondary ps-2 mb-3">{{ __('signup.checkout.mp_redirect_hint') }}</p>
                     @endif
 
+                    <div class="mb-3">
+                        <label class="form-label small text-muted" for="codigoCupomAddon">{{ __('referral.codigo_opcional_label') }}</label>
+                        <input type="text" class="form-control" name="codigo_cupom_usado" id="codigoCupomAddon"
+                               value="{{ old('codigo_cupom_usado') }}" maxlength="40" autocomplete="off"
+                               placeholder="{{ __('referral.codigo_placeholder') }}">
+                    </div>
+                    @if ((float) ($user->saldo_credito ?? 0) > 0)
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" name="usar_credito_addon" id="addonUsarCredito"
+                                       @checked(old('usar_credito_addon'))>
+                                <label class="form-check-label" for="addonUsarCredito">
+                                    {{ __('referral.usar_saldo_checkbox', ['saldo' => number_format((float) $user->saldo_credito, 2, ',', '.')]) }}
+                                </label>
+                            </div>
+                            <div class="form-text">{{ __('referral.usar_saldo_hint') }}</div>
+                        </div>
+                    @endif
+
                     <div class="checkout-terms-wrap mb-3">
                         <div class="checkout-terms-row">
                             <input type="checkbox" id="addon-terms" name="terms" class="form-check-input" value="1" required
@@ -82,7 +101,7 @@
         </div>
 
         <div class="card shadow-sm border-0">
-            <div class="card-body p-4">
+            <div class="card-body bc-card-body--fluid">
                 <h3 class="h6 fw-bold mb-3 d-inline-flex align-items-center gap-2"><span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">receipt_long</span>{{ __('addon.summary') }}</h3>
                 @foreach ($materiasInfo as $mat)
                     <div class="addon-sum-row">

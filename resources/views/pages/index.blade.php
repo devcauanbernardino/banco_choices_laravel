@@ -87,6 +87,8 @@
                             <a class="lp-btn lp-btn--primary" href="{{ route('signup.materias') }}">{{ __('index.hero.cta1') }}</a>
                             <a class="lp-btn lp-btn--ghost js-scroll-anchor" href="{{ route('home') }}"
                                data-scroll-target="pricing">{{ __('index.hero.cta2') }}</a>
+                            <a class="btn btn-outline-primary rounded-3 px-4 py-2 text-decoration-none"
+                               href="{{ route('demo.show') }}">{{ __('index.hero.cta_demo') }}</a>
                         </div>
                     </div>
                     <div class="col-lg-6">

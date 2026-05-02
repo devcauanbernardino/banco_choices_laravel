@@ -61,6 +61,14 @@
     object-fit: contain;
 }
 
+[data-theme="dark"] .quiz-mock-logo {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
 .quiz-mock-brand-name {
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
     font-weight: 800;
@@ -192,9 +200,9 @@
 .quiz-mock-canvas {
     flex: 1;
     width: 100%;
-    max-width: 1600px;
+    max-width: min(1600px, 100%);
     margin: 0 auto;
-    padding: 2rem;
+    padding: clamp(1rem, 3vw, 2rem);
     display: grid;
     grid-template-columns: 1fr 20rem;
     gap: 2rem;
@@ -246,6 +254,45 @@
 [data-theme="dark"] .quiz-mock-tag {
     background: rgba(221, 140, 255, 0.18);
     color: #ebb2ff;
+}
+
+/* Aviso: banco sem overlay i18n (perguntas em espanhol com UI em pt/en) */
+.quiz-mock-i18n-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin: -0.35rem 0 1.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(106, 3, 146, 0.22);
+    background: rgba(106, 3, 146, 0.06);
+    color: var(--app-text, #181c20);
+}
+
+[data-theme="dark"] .quiz-mock-i18n-note {
+    border-color: rgba(196, 181, 253, 0.35);
+    background: rgba(106, 3, 146, 0.14);
+    color: #e6e8ed;
+}
+
+.quiz-mock-i18n-note__ico {
+    flex-shrink: 0;
+    font-size: 1.35rem;
+    color: var(--bc-purple, #6a0392);
+    margin-top: 0.1rem;
+}
+
+[data-theme="dark"] .quiz-mock-i18n-note__ico {
+    color: #d8b4fe;
+}
+
+.quiz-mock-i18n-note__text {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: inherit;
+    opacity: 0.92;
 }
 
 /* ---------- Question card -------------------------------------------------- */
@@ -725,55 +772,6 @@
 [data-theme="dark"] .quiz-mock-dot--respondida { background: rgba(221, 140, 255, 0.35); }
 [data-theme="dark"] .quiz-mock-dot--pendente   { background: #3a3d49; }
 [data-theme="dark"] .quiz-mock-dot--current    { border-color: #ebb2ff; }
-
-/* Stats card */
-.quiz-mock-card--stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-    padding: 1rem;
-}
-
-.quiz-mock-stat {
-    background: var(--app-surface-2, #f2f4f9);
-    padding: 0.85rem 1rem;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    min-height: 4.5rem;
-    justify-content: center;
-}
-
-[data-theme="dark"] .quiz-mock-stat {
-    background: #232633;
-}
-
-.quiz-mock-stat--accent {
-    background: #6a0392;
-    color: #fff;
-}
-
-.quiz-mock-stat--accent .quiz-mock-stat-label { color: rgba(255, 255, 255, 0.75); }
-.quiz-mock-stat--accent .quiz-mock-stat-value { color: #fff; }
-
-.quiz-mock-stat-label {
-    font-size: 0.62rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--app-text-muted, #64748b);
-}
-
-[data-theme="dark"] .quiz-mock-stat-label { color: #9da0ac; }
-
-.quiz-mock-stat-value {
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: var(--app-text, #181c20);
-}
-
-[data-theme="dark"] .quiz-mock-stat-value { color: #f7f9fe; }
 
 /* Mobile: stack sidebar under question */
 @media (max-width: 1199px) {

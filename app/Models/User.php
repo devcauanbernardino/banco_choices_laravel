@@ -19,11 +19,21 @@ class User extends Authenticatable
         'nome',
         'email',
         'senha',
+        'codigo_cupom',
+        'saldo_credito',
+        'referido_por_codigo',
     ];
 
     protected $hidden = [
         'senha',
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'saldo_credito' => 'decimal:2',
+        ];
+    }
 
     public function getAuthPassword(): string
     {
@@ -52,6 +62,11 @@ class User extends Authenticatable
     public function historicos(): HasMany
     {
         return $this->hasMany(HistoricoSimulado::class, 'usuario_id');
+    }
+
+    public function creditoMovimentos(): HasMany
+    {
+        return $this->hasMany(CreditoMovimento::class, 'user_id');
     }
 
     public function possuiMateria(int $materiaId): bool

@@ -18,6 +18,12 @@
   --sidebar-active: #7c3aed;
   --sidebar-active-glow: rgba(124, 58, 237, 0.35);
   --bc-purple: #6a0392;
+  /* Ritmo fluido (painel + páginas mock): substitui paddings fixos por viewport */
+  --app-main-pad-x: clamp(0.75rem, 2.8vw, 1.75rem);
+  --app-main-pad-y: clamp(0.85rem, 2.4vw, 1.65rem);
+  --app-section-gap: clamp(1rem, 2.5vw, 1.75rem);
+  --app-radius-card: clamp(0.8125rem, 1.1vw, 1rem);
+  --app-radius-panel: clamp(0.875rem, 1.25vw, 1.125rem);
   /*
    * Fundo telas auth públicas (login, esqueci senha): alinhado a --app-bg + primário/violeta.
    * Camadas: radiais suaves por cima do degradê linear (último = base).
@@ -38,6 +44,11 @@
   --app-border: rgba(255, 255, 255, 0.08);
   --app-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   color-scheme: dark;
+}
+
+html {
+  /* Evita barra horizontal por filhos com min-width:auto na grelha Bootstrap */
+  overflow-x: clip;
 }
 
 /* ===========================================================================

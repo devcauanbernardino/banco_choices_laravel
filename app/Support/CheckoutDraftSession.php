@@ -83,18 +83,6 @@ class CheckoutDraftSession
             return ['ok' => false, 'reason' => 'materias_mismatch'];
         }
 
-        $unit = (float) $def['price'];
-        $expectedTotal = $unit * count($materiasIds);
-        $postedTotal = (float) $request->input('total_price', 0);
-        if (abs($expectedTotal - $postedTotal) > 0.02) {
-            return ['ok' => false, 'reason' => 'price_mismatch'];
-        }
-
-        $draftTotal = (float) ($draft['expected_total'] ?? 0);
-        if (abs($draftTotal - $postedTotal) > 0.02) {
-            return ['ok' => false, 'reason' => 'draft_total_mismatch'];
-        }
-
         if ((string) ($draft['plan_id'] ?? '') !== $planId) {
             return ['ok' => false, 'reason' => 'plan_draft_mismatch'];
         }
@@ -190,17 +178,6 @@ class CheckoutDraftSession
         $draftUnit = (float) ($draft['unit_price'] ?? 0);
         if (abs($draftUnit - $unit) > 0.02) {
             return ['ok' => false, 'reason' => 'unit_price_mismatch'];
-        }
-
-        $expectedTotal = $unit * count($materiasIds);
-        $postedTotal = (float) $request->input('total_price', 0);
-        if (abs($expectedTotal - $postedTotal) > 0.02) {
-            return ['ok' => false, 'reason' => 'price_mismatch'];
-        }
-
-        $draftTotal = (float) ($draft['expected_total'] ?? 0);
-        if (abs($draftTotal - $postedTotal) > 0.02) {
-            return ['ok' => false, 'reason' => 'draft_total_mismatch'];
         }
 
         if ((string) ($draft['plan_id'] ?? '') !== $planId) {

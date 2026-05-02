@@ -16,7 +16,11 @@ class AddonController extends Controller
     {
         $user = Auth::user();
         $ownedIds = array_values(array_unique($user->materias()->pluck('materias.id')->all()));
-        $disponiveis = Materia::orderBy('nome')->get()->filter(fn ($m) => ! in_array($m->id, $ownedIds, true));
+
+        $idsNaoPossuidos = Materia::query()
+            ->when($ownedIds !== [], fn ($q) => $q->whereNotIn('id', $ownedIds))
+            ->pluck('id')
+            ->all();
 
         if ($request->isMethod('post')) {
             $request->validate([
@@ -24,7 +28,7 @@ class AddonController extends Controller
                 'materias.*' => 'integer|exists:materias,id',
             ]);
 
-            $allowed = $disponiveis->pluck('id')->all();
+            $allowed = array_map('intval', $idsNaoPossuidos);
             $picked = array_values(array_unique(array_filter(
                 array_map('intval', $request->input('materias', [])),
                 fn (int $id) => $id > 0 && in_array($id, $allowed, true)
@@ -43,8 +47,11 @@ class AddonController extends Controller
             return redirect()->route('addon.checkout');
         }
 
+        $excludeOwnedCsv = implode(',', $ownedIds);
+
         return view('addon.materias', [
-            'disponiveis' => $disponiveis,
+            'excludeOwnedCsv' => $excludeOwnedCsv,
+            'temMateriasCompraveis' => count($idsNaoPossuidos) > 0,
         ]);
     }
 

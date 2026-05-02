@@ -15,7 +15,13 @@ class WebhookController extends Controller
     public function mercadoPago(Request $request)
     {
         $rawBody = $request->getContent();
-        $secret = config('mercadopago.webhook_secret', '');
+        $secret = (string) config('mercadopago.webhook_secret', '');
+
+        if (config('mercadopago.require_webhook_signature') && trim($secret) === '') {
+            Log::warning('Mercado Pago webhook rejected: MP_WEBHOOK_SECRET missing while signature is required');
+
+            return response()->json(['status' => 'webhook_secret_required'], 503);
+        }
 
         if ($secret !== '') {
             $valid = WebhookSignatureValidator::validate(
@@ -25,8 +31,9 @@ class WebhookController extends Controller
                 $secret
             );
 
-            if (!$valid) {
+            if (! $valid) {
                 Log::warning('MP webhook signature invalid');
+
                 return response()->json(['status' => 'signature_invalid'], 401);
             }
         }
@@ -35,17 +42,18 @@ class WebhookController extends Controller
         $type = $data['type'] ?? ($request->query('type') ?? '');
         $dataId = $data['data']['id'] ?? ($request->query('data_id') ?? $request->query('id'));
 
-        if ($type !== 'payment' || !$dataId) {
+        if ($type !== 'payment' || ! $dataId) {
             return response()->json(['status' => 'ignored']);
         }
 
         MercadoPagoConfig::setAccessToken(config('mercadopago.access_token'));
-        $paymentClient = new PaymentClient();
+        $paymentClient = new PaymentClient;
 
         try {
             $payment = $paymentClient->get((int) $dataId);
         } catch (\Throwable $e) {
-            Log::error('MP payment get error: ' . $e->getMessage());
+            Log::error('MP payment get error: '.$e->getMessage());
+
             return response()->json(['status' => 'error'], 500);
         }
 
