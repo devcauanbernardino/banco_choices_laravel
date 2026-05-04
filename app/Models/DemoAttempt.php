@@ -21,6 +21,7 @@ class DemoAttempt extends Model
     protected $fillable = [
         'session_uuid',
         'ip',
+        'user_agent_hash',
         'materia_id',
         'questao_id',
         'acertou',

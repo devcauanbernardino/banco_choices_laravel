@@ -17,6 +17,7 @@ class QuestoesMetadataSync
             return 0;
         }
 
+        $inserted = 0;
         foreach (array_keys($lista) as $k) {
             $overlayKey = (int) $k;
             $existing = Questao::query()->where('materia_id', $materiaId)
@@ -27,7 +28,7 @@ class QuestoesMetadataSync
             }
             Questao::query()->create([
                 'materia_id' => $materiaId,
-                'catedra_id' => $hasCathedrals ? null : null,
+                'catedra_id' => null,
                 'overlay_key' => $overlayKey,
                 'parcial' => null,
                 'tema' => null,

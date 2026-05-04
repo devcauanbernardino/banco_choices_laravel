@@ -51,9 +51,12 @@ Route::middleware(['throttle:120,1'])->prefix('catalogo-publico')->group(functio
 // ── Demo gratuito ─────────────────────────────────────────────
 Route::middleware(['throttle:60,1'])->group(function () {
     Route::get('/probar-gratis', [DemoController::class, 'show'])->name('demo.show');
+    Route::get('/probar-gratis/configurar', [DemoController::class, 'configurar'])->name('demo.configurar');
     Route::post('/demo/iniciar', [DemoController::class, 'iniciar'])->name('demo.iniciar');
     Route::get('/demo/pregunta', [DemoController::class, 'questao'])->name('demo.questao');
     Route::post('/demo/responder', [DemoController::class, 'responder'])->name('demo.responder');
+    Route::get('/demo/resultado', [DemoController::class, 'resultado'])->name('demo.resultado');
+    // Alias retrocompatível: rotas antigas que apontavam para paywall continuam funcionando.
     Route::get('/demo/paywall', [DemoController::class, 'paywall'])->name('demo.paywall');
 });
 

@@ -15,6 +15,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
 use Symfony\Component\HttpFoundation\Cookie;
@@ -32,9 +33,66 @@ class DemoController extends Controller
 
     public function show()
     {
-        $faculdades = Faculdade::query()->where('ativo', true)->orderBy('ordem')->get();
+        $faculdades = Faculdade::query()
+            ->where('ativo', true)
+            ->orderBy('ordem')
+            ->with(['agrupamentos' => fn ($q) => $q->orderBy('ordem')])
+            ->get();
 
         return view('demo.show', compact('faculdades'));
+    }
+
+    public function configurar(Request $request)
+    {
+        $faculdades = Faculdade::query()
+            ->where('ativo', true)
+            ->orderBy('ordem')
+            ->get();
+
+        $facSlug = trim((string) $request->query('faculdade', ''));
+        $facultadAtiva = $facSlug !== ''
+            ? $faculdades->firstWhere('slug', $facSlug)
+            : $faculdades->first();
+
+        $combinacoes = collect();
+        $temasDisponiveis = collect();
+
+        if ($facultadAtiva) {
+            $combinacoes = DB::table('questoes as q')
+                ->leftJoin('materias as m', 'm.id', '=', 'q.materia_id')
+                ->leftJoin('agrupamentos as a', 'a.id', '=', 'm.agrupamento_id')
+                ->leftJoin('catedras as c', 'c.id', '=', 'q.catedra_id')
+                ->where('a.faculdade_id', $facultadAtiva->id)
+                ->where('q.is_demo', true)
+                ->select(
+                    'q.materia_id', 'q.catedra_id', 'q.parcial', 'q.plano',
+                    'm.nome as materia_nome', 'c.nome as catedra_nome'
+                )
+                ->groupBy('q.materia_id', 'q.catedra_id', 'q.parcial', 'q.plano', 'm.nome', 'c.nome')
+                ->orderBy('m.nome')
+                ->orderBy('c.nome')
+                ->orderBy('q.parcial')
+                ->get();
+
+            $temasDisponiveis = DB::table('questoes as q')
+                ->leftJoin('materias as m', 'm.id', '=', 'q.materia_id')
+                ->leftJoin('agrupamentos as a', 'a.id', '=', 'm.agrupamento_id')
+                ->where('a.faculdade_id', $facultadAtiva->id)
+                ->where('q.is_demo', true)
+                ->whereNotNull('q.tema')
+                ->where('q.tema', '!=', '')
+                ->distinct()
+                ->orderBy('q.tema')
+                ->pluck('q.tema');
+        }
+
+        return view('demo.configurar', [
+            'faculdades' => $faculdades,
+            'facultadAtiva' => $facultadAtiva,
+            'combinacoes' => $combinacoes,
+            'temasDisponiveis' => $temasDisponiveis,
+            'demoMax' => 5,
+        ]);
     }
 
     public function iniciar(Request $request): RedirectResponse|Response
@@ -42,6 +100,9 @@ class DemoController extends Controller
         $validated = $request->validate([
             'materia_id' => 'required|integer|exists:materias,id',
             'catedra_id' => 'nullable|integer|exists:catedras,id',
+            'parcial' => 'nullable|string|max:50',
+            'temas' => 'nullable|array',
+            'temas.*' => 'string|max:200',
         ]);
 
         $materiaId = (int) $validated['materia_id'];
@@ -61,17 +122,37 @@ class DemoController extends Controller
             $uuid = Str::uuid()->toString();
         }
 
-        if ($newSession && RateLimiter::tooManyAttempts('demo_ip_day:'.today()->format('Y-m-d').':'.sha1((string) $request->ip()), 3)) {
-            return redirect()->route('demo.paywall')->with('error', __('demo.err.ip_limit'));
+        $ipDayLimit = (int) config('landing.demo.limite_sessoes_por_ip_dia', 3);
+        if ($newSession && RateLimiter::tooManyAttempts('demo_ip_day:'.today()->format('Y-m-d').':'.sha1((string) $request->ip()), $ipDayLimit)) {
+            return redirect()->route('demo.resultado')->with('error', __('demo.err.ip_limit'));
+        }
+
+        // Limite IP+UA: máx N sessões em 7 dias (default 5)
+        $uaHash = sha1((string) $request->userAgent());
+        $ipUa7dLimit = (int) config('landing.demo.limite_sessoes_ip_ua_7d', 5);
+        if ($newSession) {
+            $sessions7d = (int) DemoAttempt::query()
+                ->where('ip', (string) $request->ip())
+                ->where('user_agent_hash', $uaHash)
+                ->where('created_at', '>=', now()->subDays(7))
+                ->distinct('session_uuid')
+                ->count('session_uuid');
+            if ($sessions7d >= $ipUa7dLimit) {
+                return redirect()->route('demo.resultado')->with('error', __('demo.err.ip_limit'));
+            }
         }
 
         if ($this->overLimit24hPerMateria($uuid, (string) $request->ip(), $materiaId)) {
             return redirect()->route('demo.paywall')->withCookie($this->wrapCookie($uuid));
         }
 
-        $pack = QuestionExamBuilder::buildPack($materiaId, $catId, [], [], 5, true);
+        $parciais = isset($validated['parcial']) && $validated['parcial'] !== '' ? [(string) $validated['parcial']] : [];
+        $temas = array_values(array_filter(array_map('strval', (array) ($validated['temas'] ?? []))));
+
+        $pack = QuestionExamBuilder::buildPack($materiaId, $catId, $parciais, $temas, 5, true);
         if (count($pack) < 1) {
-            return redirect()->route('demo.show')->with('error', __('demo.err.no_demo_questions'));
+            return redirect()->route('demo.configurar', ['faculdade' => $request->query('faculdade')])
+                ->with('error', __('demo.err.no_demo_questions'));
         }
 
         if ($newSession) {
@@ -172,18 +253,32 @@ class DemoController extends Controller
         DemoAttempt::query()->create([
             'session_uuid' => $uuid,
             'ip' => $ip !== '' ? $ip : null,
+            'user_agent_hash' => sha1((string) $request->userAgent()),
             'materia_id' => $materiaId,
             'questao_id' => $qmeta?->id,
             'acertou' => $acertou,
         ]);
 
         if ($idx + 1 >= count($questoes)) {
+            $totalQuestoes = count($questoes);
+            $acertosCount = (int) DemoAttempt::query()
+                ->where('session_uuid', $uuid)
+                ->where('materia_id', $materiaId)
+                ->where('created_at', '>=', now()->subMinutes(30))
+                ->where('acertou', true)
+                ->count();
+            $acertosCount = min($acertosCount, $totalQuestoes);
+
             $this->demo->clear();
 
             return response()->json([
                 'ok' => true,
                 'done' => true,
-                'paywall_url' => route('demo.paywall', ['materia_id' => $materiaId]),
+                'paywall_url' => route('demo.resultado', [
+                    'materia_id' => $materiaId,
+                    'acertos' => $acertosCount,
+                    'total' => $totalQuestoes,
+                ]),
                 'acertou' => $acertou,
                 'feedback' => $question->getFeedback(),
                 'resposta_correta' => $question->getCorrectAnswer(),
@@ -206,9 +301,22 @@ class DemoController extends Controller
 
     public function paywall(Request $request)
     {
-        $materiaId = $request->query('materia_id');
+        return $this->resultado($request);
+    }
 
-        return view('demo.paywall', ['materiaPreId' => $materiaId ? (int) $materiaId : null]);
+    public function resultado(Request $request)
+    {
+        $materiaId = $request->query('materia_id');
+        $acertos = (int) $request->query('acertos', 0);
+        $total = max(1, (int) $request->query('total', 5));
+        $pct = (int) round(($acertos / $total) * 100);
+
+        return view('demo.resultado', [
+            'materiaPreId' => $materiaId ? (int) $materiaId : null,
+            'acertos' => $acertos,
+            'total' => $total,
+            'pct' => $pct,
+        ]);
     }
 
     private function overLimit24hPerMateria(string $uuid, string $ip, int $materiaId): bool

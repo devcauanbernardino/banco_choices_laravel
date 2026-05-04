@@ -11,21 +11,26 @@ class CatalogoSeeder extends Seeder
     public function run(): void
     {
         // Faculdades
+        $hasDescricaoCurta = Schema::hasColumn('faculdades', 'descricao_curta');
         foreach ([
-            ['nome' => 'UBA', 'slug' => 'uba', 'ordem' => 1],
-            ['nome' => 'La Plata', 'slug' => 'la-plata', 'ordem' => 2],
-            ['nome' => 'Barceló', 'slug' => 'barcelo', 'ordem' => 3],
-            ['nome' => 'CBC', 'slug' => 'cbc', 'ordem' => 4],
+            ['nome' => 'Medicina UBA', 'slug' => 'uba', 'ordem' => 1, 'descricao_curta' => 'Universidad de Buenos Aires · Ciclo Biomédico y Clínico'],
+            ['nome' => 'Medicina UNLP', 'slug' => 'la-plata', 'ordem' => 2, 'descricao_curta' => 'Universidad Nacional de La Plata'],
+            ['nome' => 'Medicina Barceló', 'slug' => 'barcelo', 'ordem' => 3, 'descricao_curta' => 'Universidad Barceló'],
+            ['nome' => 'CBC / UBA XXI', 'slug' => 'cbc', 'ordem' => 4, 'descricao_curta' => 'Ciclo Básico Común · UBA XXI'],
         ] as $f) {
+            $payload = [
+                'nome' => $f['nome'],
+                'ordem' => $f['ordem'],
+                'ativo' => true,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+            if ($hasDescricaoCurta) {
+                $payload['descricao_curta'] = $f['descricao_curta'];
+            }
             DB::table('faculdades')->updateOrInsert(
                 ['slug' => $f['slug']],
-                [
-                    'nome' => $f['nome'],
-                    'ordem' => $f['ordem'],
-                    'ativo' => true,
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ]
+                $payload
             );
         }
 

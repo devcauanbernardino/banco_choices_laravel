@@ -16,6 +16,9 @@ class Questao extends Model
         'parcial',
         'tema',
         'is_demo',
+        'justificativa',
+        'fonte',
+        'plano',
     ];
 
     protected function casts(): array

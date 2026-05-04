@@ -54,6 +54,10 @@ class QuestionExamBuilder
             /** @var Questao|null $meta */
             $meta = $overlayMeta->get((int) $i);
 
+            if ($demoOnly && $meta === null) {
+                continue;
+            }
+
             if ($catedraId !== null) {
                 if ($meta === null) {
                     continue;
