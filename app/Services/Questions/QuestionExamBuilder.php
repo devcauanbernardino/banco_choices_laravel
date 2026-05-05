@@ -18,7 +18,8 @@ class QuestionExamBuilder
         array $parciaisRaw,
         array $temasRaw,
         int $quantidade,
-        bool $demoOnly = false
+        bool $demoOnly = false,
+        bool $shufflePack = true
     ): array {
         $lista = QuestionBankLocator::loadCanonicalList($materiaId);
         if ($lista === []) {
@@ -113,7 +114,9 @@ class QuestionExamBuilder
             return [];
         }
 
-        shuffle($pack);
+        if ($shufflePack) {
+            shuffle($pack);
+        }
         $quantidade = max(1, min($quantidade, count($pack)));
 
         return array_slice($pack, 0, $quantidade);

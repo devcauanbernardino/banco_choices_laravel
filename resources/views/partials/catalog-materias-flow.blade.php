@@ -56,7 +56,7 @@
     }
 
     fetchJson(urls.fac).then(function (j) {
-        setOptions(selFac, (j.data || []), '{{ __('signup.catalog.pick_faculdade') }}');
+        setOptions(selFac, (j.data || []), '{{ __('catalog.placeholder') }}');
     }).catch(function () {
         showErr('{{ __('signup.catalog.err_load') }}');
     });
@@ -66,12 +66,12 @@
         selAgr.disabled = !selFac.value;
         selMat.disabled = true;
         selCat.disabled = true;
-        setOptions(selAgr, [], '{{ __('signup.catalog.pick_agrupamiento') }}');
-        setOptions(selMat, [], '{{ __('signup.catalog.pick_materia') }}');
+        setOptions(selAgr, [], '{{ __('catalog.placeholder') }}');
+        setOptions(selMat, [], '{{ __('catalog.placeholder') }}');
         selCat.innerHTML = '';
         if (!selFac.value) return;
         fetchJson(urls.agr + '?faculdade_id=' + encodeURIComponent(selFac.value)).then(function (j) {
-            setOptions(selAgr, (j.data || []), '{{ __('signup.catalog.pick_agrupamiento') }}');
+            setOptions(selAgr, (j.data || []), '{{ __('catalog.placeholder') }}');
             selAgr.disabled = false;
         });
     });
@@ -81,13 +81,13 @@
         selMat.disabled = !selAgr.value;
         selCat.disabled = true;
         selCat.innerHTML = '';
-        setOptions(selMat, [], '{{ __('signup.catalog.pick_materia') }}');
+        setOptions(selMat, [], '{{ __('catalog.placeholder') }}');
         if (!selAgr.value) return;
         var q = '?agrupamento_id=' + encodeURIComponent(selAgr.value);
         if (exclude.size) q += '&exclude_ids=' + encodeURIComponent(Array.from(exclude).join(','));
         fetchJson(urls.mat + q).then(function (j) {
             var rows = j.data || [];
-            setOptions(selMat, rows, '{{ __('signup.catalog.pick_materia') }}');
+            setOptions(selMat, rows, '{{ __('catalog.placeholder') }}');
             selMat.disabled = false;
         });
     });
@@ -104,7 +104,7 @@
             selCat.disabled = false;
             var opt0 = document.createElement('option');
             opt0.value = '';
-            opt0.textContent = '{{ __('signup.catalog.pick_catedra_req') }}';
+            opt0.textContent = '{{ __('catalog.placeholder') }}';
             selCat.appendChild(opt0);
             rows.forEach(function (it) {
                 var o = document.createElement('option');

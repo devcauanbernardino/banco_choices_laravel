@@ -55,7 +55,8 @@ class DemoController extends Controller
             : $faculdades->first();
 
         $combinacoes = collect();
-        $temasDisponiveis = collect();
+
+        $comboMeta = [];
 
         if ($facultadAtiva) {
             $combinacoes = DB::table('questoes as q')
@@ -66,54 +67,87 @@ class DemoController extends Controller
                 ->where('q.is_demo', true)
                 ->select(
                     'q.materia_id', 'q.catedra_id', 'q.parcial', 'q.plano',
-                    'm.nome as materia_nome', 'c.nome as catedra_nome'
+                    'm.nome as materia_nome',
+                    'a.nome as agrupamento_nome',
+                    'c.nome as catedra_nome'
                 )
-                ->groupBy('q.materia_id', 'q.catedra_id', 'q.parcial', 'q.plano', 'm.nome', 'c.nome')
+                ->groupBy('q.materia_id', 'q.catedra_id', 'q.parcial', 'q.plano', 'm.nome', 'a.nome', 'c.nome')
                 ->orderBy('m.nome')
                 ->orderBy('c.nome')
                 ->orderBy('q.parcial')
                 ->get();
 
-            $temasDisponiveis = DB::table('questoes as q')
-                ->leftJoin('materias as m', 'm.id', '=', 'q.materia_id')
-                ->leftJoin('agrupamentos as a', 'a.id', '=', 'm.agrupamento_id')
-                ->where('a.faculdade_id', $facultadAtiva->id)
-                ->where('q.is_demo', true)
-                ->whereNotNull('q.tema')
-                ->where('q.tema', '!=', '')
-                ->distinct()
-                ->orderBy('q.tema')
-                ->pluck('q.tema');
+            foreach ($combinacoes as $idx => $row) {
+                $stats = $this->demoComboStats(
+                    (int) $row->materia_id,
+                    $row->catedra_id !== null ? (int) $row->catedra_id : null,
+                    trim((string) ($row->parcial ?? ''))
+                );
+                $metaParts = [];
+                if (! empty($row->catedra_nome)) {
+                    $metaParts[] = (string) $row->catedra_nome;
+                }
+                if (! empty($row->plano)) {
+                    $metaParts[] = (string) $row->plano;
+                }
+                $p = trim((string) ($row->parcial ?? ''));
+                if ($p !== '') {
+                    $metaParts[] = __('demo.configurar.parcial_label', ['n' => $p]);
+                }
+                $comboMeta[] = [
+                    'index' => $idx,
+                    'materia_id' => (int) $row->materia_id,
+                    'catedra_id' => $row->catedra_id !== null ? (int) $row->catedra_id : null,
+                    'parcial' => $p,
+                    'label' => (string) $row->materia_nome,
+                    'agrupamento' => trim((string) ($row->agrupamento_nome ?? '')),
+                    'subtitle' => implode(' · ', $metaParts),
+                    'total' => $stats['total'],
+                    'temas' => $stats['temas'],
+                ];
+            }
         }
 
         return view('demo.configurar', [
             'faculdades' => $faculdades,
             'facultadAtiva' => $facultadAtiva,
             'combinacoes' => $combinacoes,
-            'temasDisponiveis' => $temasDisponiveis,
+            'comboMeta' => $comboMeta,
             'demoMax' => 5,
         ]);
     }
 
     public function iniciar(Request $request): RedirectResponse|Response
     {
+        $request->merge([
+            'catedra_id' => (($v = $request->input('catedra_id')) === '' || $v === null) ? null : $v,
+        ]);
+
         $validated = $request->validate([
             'materia_id' => 'required|integer|exists:materias,id',
             'catedra_id' => 'nullable|integer|exists:catedras,id',
             'parcial' => 'nullable|string|max:50',
             'temas' => 'nullable|array',
             'temas.*' => 'string|max:200',
+            'orden' => 'nullable|string|in:random,banco',
+            'faculdade_slug' => 'nullable|string|max:80',
         ]);
 
         $materiaId = (int) $validated['materia_id'];
         /** @var Materia $mat */
         $mat = Materia::query()->withCount('catedras')->findOrFail($materiaId);
         $catId = isset($validated['catedra_id']) ? (int) $validated['catedra_id'] : null;
+        $facSlugRedirect = trim((string) $request->input('faculdade_slug', ''));
+
         if ($mat->catedras_count > 0 && ($catId === null || $catId <= 0)) {
-            return redirect()->route('demo.show')->with('error', __('demo.err.catedra'));
+            return redirect()->route('demo.configurar', array_filter([
+                'faculdade' => $facSlugRedirect !== '' ? $facSlugRedirect : null,
+            ]))->with('error', __('demo.err.catedra'));
         }
         if ($catId !== null && ! $mat->catedras()->whereKey($catId)->exists()) {
-            return redirect()->route('demo.show')->with('error', __('demo.err.catedra_invalid'));
+            return redirect()->route('demo.configurar', array_filter([
+                'faculdade' => $facSlugRedirect !== '' ? $facSlugRedirect : null,
+            ]))->with('error', __('demo.err.catedra_invalid'));
         }
 
         $uuid = trim((string) $request->cookie(self::SESSION_COOKIE, ''));
@@ -143,16 +177,23 @@ class DemoController extends Controller
         }
 
         if ($this->overLimit24hPerMateria($uuid, (string) $request->ip(), $materiaId)) {
-            return redirect()->route('demo.paywall')->withCookie($this->wrapCookie($uuid));
+            return redirect()->route('demo.paywall', [
+                'motivo' => 'limite_materia',
+                'materia_id' => $materiaId,
+            ])->withCookie($this->wrapCookie($uuid));
         }
 
         $parciais = isset($validated['parcial']) && $validated['parcial'] !== '' ? [(string) $validated['parcial']] : [];
         $temas = array_values(array_filter(array_map('strval', (array) ($validated['temas'] ?? []))));
 
-        $pack = QuestionExamBuilder::buildPack($materiaId, $catId, $parciais, $temas, 5, true);
+        $shufflePack = (($validated['orden'] ?? 'random') !== 'banco');
+        $facSlug = trim((string) ($validated['faculdade_slug'] ?? ''));
+
+        $pack = QuestionExamBuilder::buildPack($materiaId, $catId, $parciais, $temas, 5, true, $shufflePack);
         if (count($pack) < 1) {
-            return redirect()->route('demo.configurar', ['faculdade' => $request->query('faculdade')])
-                ->with('error', __('demo.err.no_demo_questions'));
+            return redirect()->route('demo.configurar', array_filter([
+                'faculdade' => $facSlug !== '' ? $facSlug : null,
+            ]))->with('error', __('demo.err.no_demo_questions'));
         }
 
         if ($newSession) {
@@ -189,7 +230,10 @@ class DemoController extends Controller
         if ($this->overLimit24hPerMateria($uuid, (string) $request->ip(), $materiaId)) {
             $this->demo->clear();
 
-            return redirect()->route('demo.paywall');
+            return redirect()->route('demo.paywall', [
+                'motivo' => 'limite_materia',
+                'materia_id' => $materiaId,
+            ]);
         }
 
         $questoes = (array) $this->demo->get('questoes');
@@ -229,7 +273,10 @@ class DemoController extends Controller
         if ($this->overLimit24hPerMateria($uuid, $ip, $materiaId)) {
             $this->demo->clear();
 
-            return response()->json(['ok' => false, 'paywall' => true, 'paywall_url' => route('demo.paywall')], 403);
+            return response()->json(['ok' => false, 'paywall' => true, 'paywall_url' => route('demo.paywall', [
+                'motivo' => 'limite_materia',
+                'materia_id' => $materiaId,
+            ])], 403);
         }
 
         $questoes = (array) $this->demo->get('questoes');
@@ -307,6 +354,8 @@ class DemoController extends Controller
     public function resultado(Request $request)
     {
         $materiaId = $request->query('materia_id');
+        $motivo = trim((string) $request->query('motivo', ''));
+
         $acertos = (int) $request->query('acertos', 0);
         $total = max(1, (int) $request->query('total', 5));
         $pct = (int) round(($acertos / $total) * 100);
@@ -316,6 +365,7 @@ class DemoController extends Controller
             'acertos' => $acertos,
             'total' => $total,
             'pct' => $pct,
+            'motivoPaywall' => $motivo,
         ]);
     }
 
@@ -333,6 +383,41 @@ class DemoController extends Controller
         });
 
         return (int) $q->count() >= 5;
+    }
+
+    /**
+     * Contagens de questões demo por combinação (matéria + opcional cátedra + parcial), alinhadas ao QuestionExamBuilder.
+     *
+     * @return array{total: int, temas: list<array{tema: string, count: int}>}
+     */
+    private function demoComboStats(int $materiaId, ?int $catedraId, string $parcial): array
+    {
+        $q = Questao::query()->where('materia_id', $materiaId)->where('is_demo', true);
+
+        if ($parcial !== '') {
+            $q->where('parcial', $parcial);
+        }
+
+        if ($catedraId !== null && $catedraId > 0) {
+            $q->where(function ($w) use ($catedraId) {
+                $w->whereNull('catedra_id')->orWhere('catedra_id', $catedraId);
+            });
+        }
+
+        $total = (int) (clone $q)->count();
+
+        $temasRows = (clone $q)->whereNotNull('tema')->where('tema', '!=', '')
+            ->selectRaw('tema, count(*) as c')
+            ->groupBy('tema')
+            ->orderBy('tema')
+            ->get();
+
+        $temas = $temasRows->map(fn ($r) => [
+            'tema' => (string) $r->tema,
+            'count' => (int) $r->c,
+        ])->all();
+
+        return ['total' => $total, 'temas' => $temas];
     }
 
     private function wrapCookie(string $uuid): Cookie

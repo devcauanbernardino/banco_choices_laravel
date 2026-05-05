@@ -202,7 +202,8 @@
 }
 
 /* Dropdown de idioma — landing / público: cartão claro */
-.navbar-actions--landing .bc-lang-menu--landing {
+.navbar-actions--landing .bc-lang-menu--landing,
+.lp-offcanvas .bc-lang-menu--landing {
     min-width: 268px;
     padding: 0.35rem 0.4rem;
     margin-top: 0.4rem !important;
@@ -230,7 +231,8 @@
     overflow: hidden;
 }
 
-.navbar-actions--landing .bc-lang-menu__heading {
+.navbar-actions--landing .bc-lang-menu__heading,
+.lp-offcanvas .bc-lang-menu__heading {
     font-size: 0.6875rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -261,7 +263,8 @@
     min-width: 0;
 }
 
-.navbar-actions--landing .bc-lang-menu__item {
+.navbar-actions--landing .bc-lang-menu__item,
+.lp-offcanvas .bc-lang-menu__item {
     display: flex !important;
     align-items: center !important;
     gap: 0.65rem;
@@ -301,7 +304,8 @@
     transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
 }
 
-.navbar-actions--landing .bc-lang-menu__code {
+.navbar-actions--landing .bc-lang-menu__code,
+.lp-offcanvas .bc-lang-menu__code {
     font-size: 0.6875rem;
     font-weight: 800;
     letter-spacing: 0.06em;
@@ -321,12 +325,14 @@
     flex-shrink: 0;
 }
 
-.navbar-actions--landing .bc-lang-menu__item:hover {
+.navbar-actions--landing .bc-lang-menu__item:hover,
+.lp-offcanvas .bc-lang-menu__item:hover {
     background: var(--bc-lang-accent-hover);
     color: var(--bc-lang-accent);
 }
 
-.navbar-actions--landing .bc-lang-menu__item:hover .bc-lang-menu__code {
+.navbar-actions--landing .bc-lang-menu__item:hover .bc-lang-menu__code,
+.lp-offcanvas .bc-lang-menu__item:hover .bc-lang-menu__code {
     color: var(--bc-lang-accent);
 }
 
@@ -342,7 +348,8 @@
     color: var(--bc-lang-accent);
 }
 
-.navbar-actions--landing .bc-lang-menu__item--active {
+.navbar-actions--landing .bc-lang-menu__item--active,
+.lp-offcanvas .bc-lang-menu__item--active {
     background: var(--bc-lang-accent-soft);
     border-left-color: var(--bc-lang-accent);
     color: var(--bc-lang-accent);
@@ -351,7 +358,8 @@
     pointer-events: none;
 }
 
-.navbar-actions--landing .bc-lang-menu__item--active .bc-lang-menu__code {
+.navbar-actions--landing .bc-lang-menu__item--active .bc-lang-menu__code,
+.lp-offcanvas .bc-lang-menu__item--active .bc-lang-menu__code {
     color: var(--bc-lang-accent);
 }
 
@@ -373,6 +381,7 @@
 }
 
 .navbar-actions--landing .bc-lang-menu__flag,
+.lp-offcanvas .bc-lang-menu__flag,
 .app-sidebar .bc-lang-menu__flag,
 .app-offcanvas-more .bc-lang-menu__flag,
 .app-content-topbar .bc-lang-menu__flag {
@@ -387,6 +396,7 @@
 }
 
 .navbar-actions--landing .bc-lang-flag-img,
+.lp-offcanvas .bc-lang-flag-img,
 .app-sidebar .bc-lang-flag-img,
 .app-offcanvas-more .bc-lang-flag-img,
 .app-content-topbar .bc-lang-flag-img {
@@ -400,6 +410,7 @@
 }
 
 .navbar-actions--landing .bc-lang-menu__label,
+.lp-offcanvas .bc-lang-menu__label,
 .app-sidebar .bc-lang-menu__label,
 .app-offcanvas-more .bc-lang-menu__label,
 .app-content-topbar .bc-lang-menu__label {
@@ -413,6 +424,7 @@
 }
 
 .navbar-actions--landing .bc-lang-menu__tick,
+.lp-offcanvas .bc-lang-menu__tick,
 .app-sidebar .bc-lang-menu__tick,
 .app-offcanvas-more .bc-lang-menu__tick,
 .app-content-topbar .bc-lang-menu__tick {
@@ -427,6 +439,7 @@
 }
 
 .navbar-actions--landing .bc-lang-menu__check,
+.lp-offcanvas .bc-lang-menu__check,
 .app-sidebar .bc-lang-menu__check,
 .app-offcanvas-more .bc-lang-menu__check,
 .app-content-topbar .bc-lang-menu__check {

@@ -123,6 +123,45 @@ class CatalogoSeeder extends Seeder
             ]);
         }
 
+        $agrLpPrimerAnId = (int) DB::table('agrupamentos')->where('slug', 'la-plata-primer-an')->value('id');
+        $agrCbcPrimerAnId = (int) DB::table('agrupamentos')->where('slug', 'cbc-primer-an')->value('id');
+
+        if (! DB::table('materias')->where('id', 3)->exists()) {
+            DB::table('materias')->insert([
+                'id' => 3,
+                'nome' => 'Biología',
+                'slug' => 'biologia-la-plata',
+                'agrupamento_id' => $agrLpPrimerAnId,
+                'ordem' => 1,
+            ]);
+            $this->fixSqliteSequence('materias');
+        } else {
+            DB::table('materias')->where('id', 3)->update([
+                'nome' => 'Biología',
+                'slug' => 'biologia-la-plata',
+                'agrupamento_id' => $agrLpPrimerAnId,
+                'ordem' => 1,
+            ]);
+        }
+
+        if (! DB::table('materias')->where('id', 4)->exists()) {
+            DB::table('materias')->insert([
+                'id' => 4,
+                'nome' => 'Biología',
+                'slug' => 'biologia-cbc',
+                'agrupamento_id' => $agrCbcPrimerAnId,
+                'ordem' => 1,
+            ]);
+            $this->fixSqliteSequence('materias');
+        } else {
+            DB::table('materias')->where('id', 4)->update([
+                'nome' => 'Biología',
+                'slug' => 'biologia-cbc',
+                'agrupamento_id' => $agrCbcPrimerAnId,
+                'ordem' => 1,
+            ]);
+        }
+
         $ubiomedMaterias = [
             ['slug' => 'histologia', 'nome' => 'Histología', 'ordem' => 1],
             ['slug' => 'embriologia', 'nome' => 'Embriología', 'ordem' => 2],

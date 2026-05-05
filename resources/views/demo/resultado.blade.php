@@ -26,19 +26,35 @@
     if (!empty($materiaPreId)) {
         $signupUrl .= '&materia_id='.(int) $materiaPreId;
     }
+    $limiteMateria = (($motivoPaywall ?? '') === 'limite_materia');
 @endphp
 <section class="demo-section">
     <div class="lp-container">
+        @if(session('error'))
+            <div class="alert alert-warning mb-4" role="alert">{{ session('error') }}</div>
+        @endif
+
         <div class="demo-result">
             <div class="demo-result__hero">
-                <div class="demo-result__trophy" aria-hidden="true">
-                    <i class="bi bi-trophy-fill"></i>
-                </div>
-                <h1 class="demo-result__title">{{ __('demo.resultado.heading') }}</h1>
-                <p class="demo-result__score">
-                    {{ __('demo.resultado.score', ['acertos' => $acertos, 'total' => $total]) }}
-                    <span class="demo-result__pct">· {{ __('demo.resultado.percent', ['pct' => $pct]) }}</span>
-                </p>
+                @if($limiteMateria)
+                    <div class="demo-result__icon-wrap demo-result__icon-wrap--soft" aria-hidden="true">
+                        <i class="bi bi-clock-history demo-result__icon-soft"></i>
+                    </div>
+                    <h1 class="demo-result__title">{{ __('demo.resultado.heading_limite_materia') }}</h1>
+                    <p class="demo-result__lead text-muted">{{ __('demo.resultado.lead_limite_materia') }}</p>
+                    <p class="demo-result__aux mb-0">
+                        <a href="{{ route('demo.show') }}" class="demo-result__aux-link">{{ __('demo.resultado.link_novo_demo') }}</a>
+                    </p>
+                @else
+                    <div class="demo-result__trophy" aria-hidden="true">
+                        <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <h1 class="demo-result__title">{{ __('demo.resultado.heading') }}</h1>
+                    <p class="demo-result__score">
+                        {{ __('demo.resultado.score', ['acertos' => $acertos, 'total' => $total]) }}
+                        <span class="demo-result__pct">· {{ __('demo.resultado.percent', ['pct' => $pct]) }}</span>
+                    </p>
+                @endif
             </div>
 
             <article class="demo-result__paywall">

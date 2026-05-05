@@ -27,8 +27,8 @@
     };
 
     function resetDown(from) {
-        if (from <= 1) { setSel($('qb_agr'), [], '{{ __('bank.catalog.pick_agr') }}'); $('qb_agr').disabled = true; }
-        if (from <= 2) { setSel($('qb_mat'), [], '{{ __('bank.catalog.pick_mat') }}'); $('qb_mat').disabled = true; }
+        if (from <= 1) { setSel($('qb_agr'), [], '{{ __('catalog.placeholder') }}'); $('qb_agr').disabled = true; }
+        if (from <= 2) { setSel($('qb_mat'), [], '{{ __('catalog.placeholder') }}'); $('qb_mat').disabled = true; }
         if (from <= 3) {
             var qc = $('qb_cat');
             if (qc) { qc.innerHTML = ''; qc.onchange = null; qc.disabled = true; }
@@ -39,14 +39,14 @@
         $('qb_catedra_hidden').value = '';
     }
 
-    u(URLs.fac, '').then(function (j) { setSel($('qb_fac'), j.data || [], '{{ __('bank.catalog.pick_fac') }}'); });
+    u(URLs.fac, '').then(function (j) { setSel($('qb_fac'), j.data || [], '{{ __('catalog.placeholder') }}'); });
 
     $('qb_fac').addEventListener('change', function () {
         resetDown(1);
         if (!this.value) return;
         $('qb_agr').disabled = false;
         u(URLs.agr, '?faculdade_id=' + encodeURIComponent(this.value)).then(function (j) {
-            setSel($('qb_agr'), j.data || [], '{{ __('bank.catalog.pick_agr') }}');
+            setSel($('qb_agr'), j.data || [], '{{ __('catalog.placeholder') }}');
         });
     });
 
@@ -55,7 +55,7 @@
         if (!this.value) return;
         $('qb_mat').disabled = false;
         u(URLs.mat, '?agrupamento_id=' + encodeURIComponent(this.value)).then(function (j) {
-            setSel($('qb_mat'), j.data || [], '{{ __('bank.catalog.pick_mat') }}');
+            setSel($('qb_mat'), j.data || [], '{{ __('catalog.placeholder') }}');
         });
     });
 
@@ -182,7 +182,7 @@
             }
             if (qh) qh.classList.remove('d-none');
             catSel.disabled = false;
-            setSel(catSel, rows, '{{ __('bank.catalog.pick_cat_req') }}');
+            setSel(catSel, rows, '{{ __('catalog.placeholder') }}');
             catSel.onchange = function () {
                 $('qb_catedra_hidden').value = this.value || '';
                 $('qb_parciais').innerHTML = '';

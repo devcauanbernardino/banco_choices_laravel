@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Materia;
 use App\Support\SignupFlow;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SignupController extends Controller
 {
@@ -11,26 +13,37 @@ class SignupController extends Controller
     {
         $presetMateriaId = (int) request()->query('materia_id', 0);
 
+        if ($presetMateriaId > 0 && ! DB::table('materias')->where('id', $presetMateriaId)->exists()) {
+            $presetMateriaId = 0;
+        }
+
         return view('signup.select-materias', compact('presetMateriaId'));
     }
 
     public function storeMaterias(Request $request)
     {
-        $request->validate(
-            [
-                'materias' => 'required|array|min:1',
-                'materias.*' => 'integer|exists:materias,id',
-            ],
-            [
-                'materias.required' => __('signup.err.min_materias'),
-                'materias.array' => __('signup.err.min_materias'),
-                'materias.min' => __('signup.err.min_materias'),
-                'materias.*.integer' => __('signup.err.checkout_materias_invalid'),
-                'materias.*.exists' => __('signup.err.checkout_materias_invalid'),
-            ]
-        );
+        $raw = (array) $request->input('materias', []);
+        $ids = [];
+        foreach ($raw as $value) {
+            $id = (int) $value;
+            if ($id > 0) {
+                $ids[] = $id;
+            }
+        }
+        $ids = array_values(array_unique($ids));
 
-        $request->session()->put('signup_materias', $request->input('materias'));
+        if ($ids !== []) {
+            $valid = DB::table('materias')->whereIn('id', $ids)->pluck('id')->all();
+            $ids = array_values(array_intersect($ids, array_map('intval', $valid)));
+        }
+
+        if ($ids === []) {
+            return redirect()->back()->withErrors([
+                'materias' => __('signup.err.min_materias'),
+            ])->withInput();
+        }
+
+        $request->session()->put('signup_materias', $ids);
 
         return redirect()->route('signup.plano');
     }

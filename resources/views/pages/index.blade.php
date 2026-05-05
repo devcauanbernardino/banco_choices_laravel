@@ -42,10 +42,47 @@
                     </div>
                 </div>
                 <div>
-                    {{-- TODO: substituir por screenshot real do app quando disponível --}}
                     <div class="lp-hero__visual lp-hero__visual-anim">
-                        <div class="lp-hero__mock" aria-hidden="true">
-                            <div class="lp-hero__mock-tag"></div>
+                        <div class="lp-hero-scene" aria-hidden="true">
+                            <div class="lp-hero-scene__glow"></div>
+                            <aside class="lp-hero-scene__panel lp-hero-scene__panel--back">
+                                <span class="lp-hero-panel__label">{{ __('landing.hero.mock_stats_title') }}</span>
+                                <div class="lp-hero-panel__bars" role="presentation">
+                                    <span style="--lp-bar-h: 42%"></span>
+                                    <span style="--lp-bar-h: 68%"></span>
+                                    <span style="--lp-bar-h: 55%"></span>
+                                    <span style="--lp-bar-h: 88%"></span>
+                                </div>
+                                <div class="lp-hero-panel__spark"></div>
+                            </aside>
+                            <div class="lp-hero-scene__panel lp-hero-scene__panel--main">
+                                <header class="lp-hero-q__head">
+                                    <span class="lp-hero-q__pill">{{ __('landing.hero.mock_pill') }}</span>
+                                    <span class="lp-hero-q__progress">{{ __('landing.hero.mock_progress') }}</span>
+                                </header>
+                                <p class="lp-hero-q__stem">{{ __('landing.hero.mock_question') }}</p>
+                                <ul class="lp-hero-q__opts">
+                                    <li class="lp-hero-q__opt lp-hero-q__opt--a">
+                                        <span class="lp-hero-q__letter" aria-hidden="true">A</span>
+                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_a') }}</span>
+                                    </li>
+                                    <li class="lp-hero-q__opt lp-hero-q__opt--b">
+                                        <span class="lp-hero-q__letter" aria-hidden="true">B</span>
+                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_b') }}</span>
+                                    </li>
+                                    <li class="lp-hero-q__opt lp-hero-q__opt--c lp-hero-q__opt--correct">
+                                        <span class="lp-hero-q__letter" aria-hidden="true">C</span>
+                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_c') }}</span>
+                                        <span class="lp-hero-q__tick" aria-hidden="true">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </span>
+                                    </li>
+                                    <li class="lp-hero-q__opt lp-hero-q__opt--d">
+                                        <span class="lp-hero-q__letter" aria-hidden="true">D</span>
+                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_d') }}</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

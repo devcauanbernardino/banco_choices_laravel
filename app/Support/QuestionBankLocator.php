@@ -9,6 +9,8 @@ final class QuestionBankLocator
         return match ($materiaId) {
             1 => 'questoes_microbiologia_refinado.json',
             2 => 'questoes_biologia_final_v2.json',
+            3 => 'biologia_alumed_1parcial.json',
+            4 => 'biologia_cbc_1parcial_2022.json',
             default => 'questoes_materia_'.$materiaId.'.json',
         };
     }
