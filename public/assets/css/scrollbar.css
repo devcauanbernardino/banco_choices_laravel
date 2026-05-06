@@ -87,3 +87,22 @@ html:has(body.login-page)::-webkit-scrollbar-track {
 html:has(body.login-page)::-webkit-scrollbar-corner {
   background: rgba(0, 0, 0, 0.1);
 }
+
+/*
+ * Shell do painel: ao abrir modal, Bootstrap esconde o scroll no documento e aplica
+ * padding-inline-end no body. A sidebar é position:fixed na viewport — não absorve esse
+ * padding — e a barra sticky do conteúdo “salta” ou encosta aos ícones.
+ * scrollbar-gutter: stable no elemento que faz scroll (+ retirar o padding-extra do BS).
+ */
+@supports (scrollbar-gutter: stable) {
+  html:has(body.app-private-body.app-shell-painel) {
+    scrollbar-gutter: stable;
+  }
+
+  body.app-private-body.app-shell-painel.modal-open {
+    padding-inline-end: 0 !important;
+    margin-inline-end: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+}

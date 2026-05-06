@@ -5,11 +5,11 @@
 
     function nextId() { ID += 1; return 'bc-ss-' + ID; }
 
-    function buildOption(option, listId) {
+    function buildOption(option, listId, optIndex) {
         var item = document.createElement('li');
         item.className = 'bc-styled-select__item';
         item.setAttribute('role', 'option');
-        item.id = listId + '-opt-' + (option.value || 'empty');
+        item.id = listId + '-opt-' + optIndex;
         item.dataset.value = option.value;
         if (option.disabled) {
             item.setAttribute('aria-disabled', 'true');
@@ -51,14 +51,12 @@
         button.setAttribute('aria-controls', listId);
 
         var items = [];
-        Array.prototype.forEach.call(select.options, function (opt) {
-            var item = buildOption(opt, listId);
-            list.appendChild(item);
-            items.push(item);
-        });
 
         function syncFromSelect() {
-            var current = select.options[select.selectedIndex];
+            var ix = select.selectedIndex;
+            var current = (ix >= 0 && select.options[ix])
+                ? select.options[ix]
+                : (select.options[0] || null);
             labelSpan.textContent = current ? current.textContent.trim() : '';
             items.forEach(function (it) {
                 var active = it.dataset.value === (current ? current.value : '');
@@ -67,11 +65,20 @@
             });
         }
 
+        function syncToggleDisabled() {
+            var dis = !!(select.disabled);
+            button.disabled = dis;
+            wrap.classList.toggle('is-disabled', dis);
+            if (dis && wrap.classList.contains('is-open')) {
+                setOpen(false);
+            }
+        }
+
         function setOpen(open) {
             wrap.classList.toggle('is-open', open);
             button.setAttribute('aria-expanded', open ? 'true' : 'false');
             if (open) {
-                var activeIdx = Math.max(0, select.selectedIndex);
+                var activeIdx = Math.max(0, Math.min(select.selectedIndex, Math.max(0, items.length - 1)));
                 focusItem(activeIdx);
                 document.addEventListener('mousedown', onDocClick, true);
                 document.addEventListener('keydown', onDocKey);
@@ -82,9 +89,14 @@
         }
 
         function focusItem(idx) {
+            if (! items.length) {
+                list.removeAttribute('aria-activedescendant');
+                return;
+            }
+            var safe = Math.max(0, Math.min(items.length - 1, idx));
             items.forEach(function (it, i) {
-                it.classList.toggle('is-focus', i === idx);
-                if (i === idx) {
+                it.classList.toggle('is-focus', i === safe);
+                if (i === safe) {
                     it.scrollIntoView({ block: 'nearest' });
                     list.setAttribute('aria-activedescendant', it.id);
                 }
@@ -108,7 +120,8 @@
 
         function onDocKey(e) {
             var current = items.findIndex(function (it) { return it.classList.contains('is-focus'); });
-            if (current < 0) current = Math.max(0, select.selectedIndex);
+            var si = Math.max(0, select.selectedIndex);
+            if (current < 0) current = items.length ? Math.min(si, items.length - 1) : 0;
             if (e.key === 'Escape') {
                 e.preventDefault();
                 setOpen(false);
@@ -132,19 +145,38 @@
         }
 
         button.addEventListener('click', function () {
+            if (button.disabled) return;
             setOpen(!wrap.classList.contains('is-open'));
         });
         button.addEventListener('keydown', function (e) {
             if (e.key === 'ArrowDown' || e.key === 'ArrowUp' || e.key === 'Enter' || e.key === ' ') {
+                if (button.disabled) return;
                 e.preventDefault();
                 setOpen(true);
             }
         });
 
-        items.forEach(function (item, idx) {
-            item.addEventListener('mouseenter', function () { focusItem(idx); });
-            item.addEventListener('click', function () { pick(idx); });
-        });
+        function rebuildList() {
+            if (wrap.classList.contains('is-open')) setOpen(false);
+            list.innerHTML = '';
+            items = [];
+            Array.prototype.forEach.call(select.options, function (opt, idx) {
+                var item = buildOption(opt, listId, idx);
+                item.addEventListener('mouseenter', function () { focusItem(idx); });
+                item.addEventListener('click', function () { pick(idx); });
+                list.appendChild(item);
+                items.push(item);
+            });
+            syncToggleDisabled();
+            syncFromSelect();
+        }
+
+        wrap._bcSsRebuild = rebuildList;
+
+        try {
+            var mo = new MutationObserver(function () { syncToggleDisabled(); });
+            mo.observe(select, { attributes: true, attributeFilter: ['disabled'] });
+        } catch (e) { /* ignore */ }
 
         select.parentNode.insertBefore(wrap, select);
         wrap.appendChild(button);
@@ -152,13 +184,26 @@
         wrap.appendChild(select);
         select.classList.add('bc-styled-select__native');
 
-        syncFromSelect();
         select.addEventListener('change', syncFromSelect);
+        rebuildList();
     }
 
     function boot() {
         document.querySelectorAll('select.bc-styled-select').forEach(enhance);
     }
+
+    /**
+     * Chama isto quando as <option> são recriadas (innerHTML/setOptions AJAX).
+     * Mantém `.bc-styled-select` antes do primeiro boot; só funciona já wrapped.
+     */
+    window.bcRefreshStyledSelect = function (selectEl) {
+        if (! selectEl || ! selectEl.parentElement) return;
+        var wp = selectEl.parentElement;
+        if (! wp.classList.contains('bc-styled-select-wrap')) return;
+        if (typeof wp._bcSsRebuild === 'function') {
+            wp._bcSsRebuild();
+        }
+    };
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', boot);

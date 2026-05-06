@@ -112,20 +112,23 @@
         </div>
     </section>
 </div>
+@endsection
 
-{{-- Histórico (modal, mesmas linhas da tabela) --}}
+@push('modals')
+{{-- Fora do <main>: evita overflow/transform do shell cortar centrado do modal (backdrop fixo ao viewport). --}}
+{{-- Histórico --}}
 <div class="modal fade" id="refHistoryModal" tabindex="-1" aria-labelledby="refHistoryModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header border-0 pb-0">
                 <h2 class="modal-title h5 mb-0" id="refHistoryModalLabel">{{ __('referral.history_title') }}</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('referral.modal_close') }}"></button>
             </div>
-            <div class="modal-body p-0">
+            <div class="modal-body p-0 pt-3 px-3">
                 @if ($movimentos->isEmpty())
-                    <p class="text-muted p-4 mb-0">{{ __('referral.history_empty') }}</p>
+                    <p class="text-muted py-4 mb-0">{{ __('referral.history_empty') }}</p>
                 @else
-                    <div class="table-responsive">
+                    <div class="table-responsive rounded-3 border">
                         <table class="table table-sm mb-0 align-middle">
                             <thead class="table-light">
                                 <tr>
@@ -147,49 +150,95 @@
                     </div>
                 @endif
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('referral.modal_close') }}</button>
+            <div class="modal-footer border-0 pt-3">
+                <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">{{ __('referral.modal_close') }}</button>
             </div>
         </div>
     </div>
 </div>
 
-{{-- Instagram — copiar texto e colar nos stories --}}
+{{-- Instagram / redes: copiar texto --}}
 <div class="modal fade" id="refIgModal" tabindex="-1" aria-labelledby="refIgModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title h5 mb-0" id="refIgModalLabel">{{ __('referral.insta_modal_title') }}</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('referral.modal_close') }}"></button>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header align-items-start border-0 pb-0 gap-3">
+                <h2 class="modal-title h5 mb-0 pe-2 lh-base" id="refIgModalLabel">{{ __('referral.insta_modal_title') }}</h2>
+                <button type="button" class="btn-close mt-1" data-bs-dismiss="modal" aria-label="{{ __('referral.modal_close') }}"></button>
             </div>
-            <div class="modal-body">
-                <p class="small text-muted mb-3">{{ __('referral.insta_modal_intro') }}</p>
-                <pre class="small bg-body-secondary p-3 rounded-3 mb-3 user-select-all" id="refIgCopyBlock" style="white-space:pre-wrap;">{{ $shareMsg }}</pre>
-                <button type="button" class="btn btn-primary" id="refIgCopyBtn">{{ __('referral.copy_full_message') }}</button>
+            <div class="modal-body pt-3">
+                <p class="small text-muted mb-3 mb-md-4">{{ __('referral.insta_modal_intro') }}</p>
+                <pre class="small bg-body-secondary p-3 rounded-3 mb-0 font-monospace user-select-all overflow-auto mw-100" id="refIgCopyBlock"
+                     style="max-height: 14rem; white-space: pre-wrap;">{{ $shareMsg }}</pre>
+            </div>
+            <div class="modal-footer flex-column gap-2 border-0 pt-3">
+                <button type="button" class="btn btn-primary w-100" id="refIgCopyBtn">{{ __('referral.copy_full_message') }}</button>
             </div>
         </div>
     </div>
 </div>
-@endsection
+@endpush
 
 @push('scripts')
 <script>
 (function () {
     var btn = document.getElementById('refCopy');
     var codeEl = document.getElementById('refCode');
-    function copyTxt(text, btnEl, doneLbl) {
-        if (!navigator.clipboard || !navigator.clipboard.writeText) return;
-        navigator.clipboard.writeText(text).then(function () {
-            if (btnEl) btnEl.textContent = doneLbl;
-        });
+    var errMsg = {{ json_encode(__('referral.copy_failed')) }};
+
+    function copyWithExec(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        ta.style.left = '-9999px';
+        ta.style.top = '0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        var ok = false;
+        try {
+            ok = document.execCommand('copy');
+        } catch (e) { /* ignore */ }
+        document.body.removeChild(ta);
+        return ok;
     }
+
+    function copyTxt(text, btnEl, doneLbl, origLbl) {
+        text = String(text || '').trim();
+        if (!text) return;
+        var prev = btnEl ? btnEl.textContent : '';
+        var restore = function () {
+            if (btnEl && origLbl !== undefined) btnEl.textContent = origLbl;
+        };
+        var onOk = function () {
+            if (btnEl && doneLbl) btnEl.textContent = doneLbl;
+            if (btnEl && doneLbl && origLbl !== undefined) {
+                window.setTimeout(restore, 1800);
+            }
+        };
+
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+            navigator.clipboard.writeText(text).then(onOk).catch(function () {
+                if (copyWithExec(text)) onOk();
+                else { restore(); alert(errMsg); }
+            });
+            return;
+        }
+
+        if (copyWithExec(text)) onOk();
+        else alert(errMsg);
+    }
+
     if (btn && codeEl) btn.addEventListener('click', function () {
-        copyTxt((codeEl.textContent || '').trim(), btn, {{ json_encode(__('referral.copied')) }});
+        var orig = btn.textContent;
+        copyTxt((codeEl.textContent || '').trim(), btn, {{ json_encode(__('referral.copied')) }}, orig);
     });
     var igBtn = document.getElementById('refIgCopyBtn');
     var igBlock = document.getElementById('refIgCopyBlock');
     if (igBtn && igBlock) igBtn.addEventListener('click', function () {
-        copyTxt(igBlock.textContent || '', igBtn, {{ json_encode(__('referral.copied')) }});
+        var orig = igBtn.textContent;
+        copyTxt(igBlock.textContent || '', igBtn, {{ json_encode(__('referral.copied')) }}, orig);
     });
 })();
 </script>

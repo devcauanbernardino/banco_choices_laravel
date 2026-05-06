@@ -13,7 +13,7 @@ class MarcarDemoCommand extends Command
 {
     protected $signature = 'banco:marcar-demo {--por-materia=5}';
 
-    protected $description = 'Marca N questões aleatórias como demo por matéria';
+    protected $description = 'Marca N questões aleatórias como demo por matéria (com 2+ cátedras: N por cátedra)';
 
     public function handle(): int
     {
@@ -21,7 +21,8 @@ class MarcarDemoCommand extends Command
 
         foreach (Materia::query()->orderBy('id')->cursor() as $materia) {
             QuestoesMetadataSync::syncMateria((int) $materia->id);
-            if ($materia->catedras()->count() >= 2) {
+            $cats = $materia->catedras()->orderBy('ordem')->orderBy('id')->get();
+            if ($cats->count() >= 2) {
                 QuestoesMetadataSync::assignCatedrasEvenSplit((int) $materia->id);
             }
 
@@ -32,46 +33,96 @@ class MarcarDemoCommand extends Command
                 continue;
             }
 
+            $lista = QuestionBankLocator::loadCanonicalList((int) $materia->id);
+
+            if ($cats->count() >= 2) {
+                foreach ($cats as $cat) {
+                    $marked = self::markAdditionalDemos($materia, $lista, $n, $cat->id);
+                    if ($marked > 0) {
+                        $this->info('Matéria '.$materia->id.' · '.$cat->nome.' — marcadas '.$marked.'.');
+
+                        continue;
+                    }
+                    $atualCat = Questao::query()
+                        ->where('materia_id', $materia->id)
+                        ->where('catedra_id', $cat->id)
+                        ->where('is_demo', true)
+                        ->count();
+                    if ($atualCat >= $n) {
+                        $this->line("Skip matéria {$materia->id} · {$cat->nome}: já há {$atualCat} demo.");
+
+                        continue;
+                    }
+                    $this->line("Skip matéria {$materia->id} · {$cat->nome}: sem questões válidas para demo.");
+                }
+
+                continue;
+            }
+
+            $marked = self::markAdditionalDemos($materia, $lista, $n, null);
+            if ($marked > 0) {
+                $this->info('Matéria '.$materia->id.' — marcadas '.$marked.' questões.');
+
+                continue;
+            }
             $atual = Questao::query()->where('materia_id', $materia->id)->where('is_demo', true)->count();
             if ($atual >= $n) {
                 $this->line("Skip matéria {$materia->id} {$materia->nome}: já há {$atual} demo.");
 
                 continue;
             }
-
-            $lista = QuestionBankLocator::loadCanonicalList((int) $materia->id);
-
-            $candidates = Questao::query()
-                ->where('materia_id', $materia->id)
-                ->where('is_demo', false)
-                ->inRandomOrder()
-                ->get(['id', 'overlay_key']);
-
-            $ids = [];
-            $needed = $n - $atual;
-            foreach ($candidates as $cand) {
-                if (count($ids) >= $needed) {
-                    break;
-                }
-                $blob = $lista[(int) $cand->overlay_key] ?? null;
-                if (! is_array($blob) || ! self::looksUsable($blob)) {
-                    continue;
-                }
-                $ids[] = $cand->id;
-            }
-
-            if ($ids === []) {
-                $this->line("Skip matéria {$materia->id} {$materia->nome}: sem questões válidas para demo.");
-
-                continue;
-            }
-
-            Questao::query()->whereIn('id', $ids)->update(['is_demo' => true]);
-
-            $this->info('Matéria '.(string) $materia->id.' — marcadas '.count($ids).' questões.');
+            $this->line("Skip matéria {$materia->id} {$materia->nome}: sem questões válidas para demo.");
         }
 
         return self::SUCCESS;
+    }
+
+    /**
+     * @return int Número de linhas recém marcadas como demo
+     */
+    private static function markAdditionalDemos(Materia $materia, array $lista, int $n, ?int $catedraId): int
+    {
+        $atualQ = Questao::query()
+            ->where('materia_id', $materia->id)
+            ->where('is_demo', true);
+        if ($catedraId !== null) {
+            $atualQ->where('catedra_id', $catedraId);
+        }
+        $atual = (int) $atualQ->count();
+        if ($atual >= $n) {
+            return 0;
+        }
+
+        $needed = $n - $atual;
+
+        $candQ = Questao::query()
+            ->where('materia_id', $materia->id)
+            ->where('is_demo', false);
+        if ($catedraId !== null) {
+            $candQ->where('catedra_id', $catedraId);
+        }
+
+        $candidates = $candQ->inRandomOrder()->get(['id', 'overlay_key']);
+
+        $ids = [];
+        foreach ($candidates as $cand) {
+            if (count($ids) >= $needed) {
+                break;
+            }
+            $blob = $lista[(int) $cand->overlay_key] ?? null;
+            if (! is_array($blob) || ! self::looksUsable($blob)) {
+                continue;
+            }
+            $ids[] = $cand->id;
+        }
+
+        if ($ids === []) {
+            return 0;
+        }
+
+        Questao::query()->whereIn('id', $ids)->update(['is_demo' => true]);
+
+        return count($ids);
     }
 
     /**

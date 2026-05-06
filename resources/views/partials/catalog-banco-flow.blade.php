@@ -1,10 +1,16 @@
 @push('scripts')
+<script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}"></script>
 <script>
 (function () {
     var $ = function (id) { return document.getElementById(id); };
 
     function u(url, q) {
         return fetch(url + q, { headers: { Accept: 'application/json', 'X-Requested-With': 'XMLHttpRequest' }}).then(function (r) { return r.json(); });
+    }
+
+    function refreshSel(sel) {
+        if (!sel || typeof window.bcRefreshStyledSelect !== 'function') return;
+        window.bcRefreshStyledSelect(sel);
     }
 
     function setSel(sel, rows, placeholder) {
@@ -15,6 +21,7 @@
             var o = document.createElement('option');
             o.value = row.id; o.textContent = row.nome; sel.appendChild(o);
         });
+        refreshSel(sel);
     }
 
     var URLs = {
@@ -31,7 +38,12 @@
         if (from <= 2) { setSel($('qb_mat'), [], '{{ __('catalog.placeholder') }}'); $('qb_mat').disabled = true; }
         if (from <= 3) {
             var qc = $('qb_cat');
-            if (qc) { qc.innerHTML = ''; qc.onchange = null; qc.disabled = true; }
+            if (qc) {
+                qc.innerHTML = '';
+                qc.onchange = null;
+                qc.disabled = true;
+                refreshSel(qc);
+            }
             if ($('qb_cat_hint')) { $('qb_cat_hint').classList.add('d-none'); }
         }
         if (from <= 4) { $('qb_parciais').innerHTML = ''; $('qb_temas').innerHTML = ''; }
@@ -169,6 +181,7 @@
             catSel.innerHTML = '';
             catSel.onchange = null;
             catSel.disabled = true;
+            refreshSel(catSel);
         }
         var qh = $('qb_cat_hint');
         if (qh) qh.classList.add('d-none');
@@ -203,19 +216,19 @@
 
 <div class="mb-4">
     <label class="form-label" for="qb_fac">{{ __('bank.catalog.pick_fac') }}</label>
-    <select class="form-select" id="qb_fac"></select>
+    <select class="bc-styled-select bc-styled-select--fluid" id="qb_fac"></select>
 </div>
 <div class="mb-4">
     <label class="form-label" for="qb_agr">{{ __('bank.catalog.pick_agr') }}</label>
-    <select class="form-select" id="qb_agr" disabled></select>
+    <select class="bc-styled-select bc-styled-select--fluid" id="qb_agr" disabled></select>
 </div>
 <div class="mb-4">
     <label class="form-label" for="qb_mat">{{ __('bank.catalog.pick_mat') }}</label>
-    <select class="form-select" id="qb_mat" disabled></select>
+    <select class="bc-styled-select bc-styled-select--fluid" id="qb_mat" disabled></select>
 </div>
 <div class="mb-4">
     <label class="form-label" for="qb_cat">{{ __('bank.catalog.pick_cat_opt') }}</label>
-    <select class="form-select" id="qb_cat" disabled></select>
+    <select class="bc-styled-select bc-styled-select--fluid" id="qb_cat" disabled></select>
     <div id="qb_cat_hint" class="form-text small d-none">{{ __('bank.catalog.catedra_obrig') }}</div>
 </div>
 <div class="mb-3">

@@ -766,15 +766,14 @@
 }
 
 /*
- * Modais renderizados em @stack('modals') ao nível do <body>:
- * o backdrop do Bootstrap fica acima de .app-layout; o diálogo dentro de .app-main (z-index:1)
- * ficava por baixo do backdrop e não recebia cliques. Subimos backdrop + .bc-app-shell-modal.
+ * Modais ao nível do <body>: backdrop sobre .app-layout; qualquer diálogo .modal deve ficar
+ * acima do backdrop (Bootstrap default ~1055 ficaria por baixo de backdrop 12100 — sem cliques).
  */
 body.app-private-body.modal-open .modal-backdrop {
   z-index: 12100;
 }
 
-body.app-private-body .modal.bc-app-shell-modal {
+body.app-private-body .modal.show {
   z-index: 12200;
 }
 

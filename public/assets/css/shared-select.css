@@ -73,6 +73,20 @@ button.bc-styled-select__toggle {
   line-height: 1.5;
 }
 
+.bc-styled-select-wrap.is-disabled .bc-styled-select__toggle {
+  opacity: 0.52;
+}
+
+/* Ocupa 100% da coluna (cadastro, banco configurar, etc.) */
+.bc-styled-select-wrap.bc-styled-select--fluid {
+  display: block;
+  width: 100%;
+}
+
+.bc-styled-select-wrap.bc-styled-select--fluid .bc-styled-select__toggle {
+  width: 100%;
+}
+
 .bc-styled-select__label {
   flex: 1 1 auto;
   min-width: 0;

@@ -3,7 +3,12 @@
     'presetMateriaId' => 0,
 ])
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ @filemtime(public_path('assets/css/shared-select.css')) }}">
+@endpush
+
 @push('scripts')
+<script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}"></script>
 <script>
 (function () {
     var exclude = new Set(String(@json($excludeIdsCsv)).split(',').map(function (x) {
@@ -19,6 +24,12 @@
     var preMateria = {{ (int) $presetMateriaId }};
 
     function el(id) { return document.getElementById(id); }
+
+    function refreshSel(select) {
+        if (!select || typeof window.bcRefreshStyledSelect !== 'function') return;
+        window.bcRefreshStyledSelect(select);
+    }
+
     function setOptions(select, items, placeholder) {
         if (!select) return;
         select.innerHTML = '';
@@ -32,6 +43,7 @@
             o.textContent = it.nome;
             select.appendChild(o);
         });
+        refreshSel(select);
     }
 
     var selFac = el('catalog_sel_faculdade');
@@ -69,6 +81,8 @@
         setOptions(selAgr, [], '{{ __('catalog.placeholder') }}');
         setOptions(selMat, [], '{{ __('catalog.placeholder') }}');
         selCat.innerHTML = '';
+        selCat.disabled = true;
+        refreshSel(selCat);
         if (!selFac.value) return;
         fetchJson(urls.agr + '?faculdade_id=' + encodeURIComponent(selFac.value)).then(function (j) {
             setOptions(selAgr, (j.data || []), '{{ __('catalog.placeholder') }}');
@@ -81,6 +95,8 @@
         selMat.disabled = !selAgr.value;
         selCat.disabled = true;
         selCat.innerHTML = '';
+        selCat.disabled = true;
+        refreshSel(selCat);
         setOptions(selMat, [], '{{ __('catalog.placeholder') }}');
         if (!selAgr.value) return;
         var q = '?agrupamento_id=' + encodeURIComponent(selAgr.value);
@@ -95,11 +111,15 @@
     function syncCatedra() {
         selCat.innerHTML = '';
         selCat.disabled = true;
+        refreshSel(selCat);
         if (hintCat) hintCat.classList.add('d-none');
         if (!selMat || !selMat.value) return;
         fetchJson(urls.cat + '?materia_id=' + encodeURIComponent(selMat.value)).then(function (j) {
             var rows = j.data || [];
-            if (!rows.length) return;
+            if (!rows.length) {
+                refreshSel(selCat);
+                return;
+            }
             if (hintCat) hintCat.classList.remove('d-none');
             selCat.disabled = false;
             var opt0 = document.createElement('option');
@@ -112,6 +132,7 @@
                 o.textContent = it.nome;
                 selCat.appendChild(o);
             });
+            refreshSel(selCat);
         });
     }
 
@@ -195,19 +216,19 @@
     <div class="row g-2 mb-2">
         <div class="col-md-6">
             <label class="form-label small" for="catalog_sel_faculdade">{{ __('signup.catalog.label_faculdade') }}</label>
-            <select class="form-select" id="catalog_sel_faculdade"></select>
+            <select class="bc-styled-select bc-styled-select--fluid" id="catalog_sel_faculdade"></select>
         </div>
         <div class="col-md-6">
             <label class="form-label small" for="catalog_sel_agrupamiento">{{ __('signup.catalog.label_agrupamiento') }}</label>
-            <select class="form-select" id="catalog_sel_agrupamiento" disabled></select>
+            <select class="bc-styled-select bc-styled-select--fluid" id="catalog_sel_agrupamiento" disabled></select>
         </div>
         <div class="col-md-6">
             <label class="form-label small" for="catalog_sel_materia">{{ __('signup.catalog.label_materia') }}</label>
-            <select class="form-select" id="catalog_sel_materia" disabled></select>
+            <select class="bc-styled-select bc-styled-select--fluid" id="catalog_sel_materia" disabled></select>
         </div>
         <div class="col-md-6">
             <label class="form-label small" for="catalog_sel_catedra">{{ __('signup.catalog.label_catedra') }}</label>
-            <select class="form-select" id="catalog_sel_catedra" disabled></select>
+            <select class="bc-styled-select bc-styled-select--fluid" id="catalog_sel_catedra" disabled></select>
             <div id="catalog_catedra_hint" class="form-text small d-none">{{ __('signup.catalog.catedra_obrigatoria') }}</div>
         </div>
     </div>
