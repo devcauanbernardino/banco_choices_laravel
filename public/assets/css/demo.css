@@ -709,29 +709,6 @@
     color: var(--lp-text, #1c1c1f);
 }
 
-.demo-funnel__fac-select {
-    background-color: var(--lp-surface, #fff);
-    border: 1px solid var(--lp-border-strong, rgba(15, 23, 42, 0.16));
-    color: var(--lp-text, #1c1c1f);
-    border-radius: var(--lp-radius-sm, 10px);
-    padding: 9px 38px 9px 14px;
-    font-size: 0.88rem;
-    font-weight: 600;
-    cursor: pointer;
-    appearance: none;
-    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%236a0392' stroke-width='2'%3e%3cpolyline points='4 6 8 10 12 6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 14px;
-}
-
-.demo-funnel__fac-select:focus {
-    outline: none;
-    border-color: rgba(106, 3, 146, 0.45);
-    box-shadow: 0 0 0 3px rgba(106, 3, 146, 0.15);
-}
-
 .demo-funnel__alert {
     max-width: 980px;
     margin: 0 auto 20px;
@@ -1019,35 +996,6 @@
     accent-color: var(--lp-purple, #6a0392);
 }
 
-.demo-select--funnel {
-    width: 100%;
-    border-radius: var(--lp-radius-sm, 12px);
-    border: 1px solid var(--lp-border-strong, rgba(15, 23, 42, 0.16));
-    background-color: var(--lp-bg-2, #f8f9fc);
-    color: var(--lp-text, #1c1c1f);
-    padding: 11px 42px 11px 14px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    appearance: none;
-    cursor: pointer;
-    transition: border-color .15s ease, box-shadow .15s ease;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%236a0392' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='4 6 8 10 12 6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    background-size: 16px;
-}
-
-.demo-select--funnel:focus {
-    outline: none;
-    border-color: rgba(106, 3, 146, 0.45);
-    box-shadow: 0 0 0 3px rgba(106, 3, 146, 0.12);
-}
-
-.demo-select--funnel option {
-    background-color: var(--lp-surface, #fff);
-    color: var(--lp-text, #1c1c1f);
-}
-
 .demo-filter-card__footer {
     display: flex;
     flex-wrap: wrap;
@@ -1069,4 +1017,188 @@
 .demo-filter-card__footer .lp-btn-primary:disabled {
     opacity: 0.45;
     pointer-events: none;
+}
+
+/* Busca com ícone (alinhado ao painel de temas / referência UX) */
+.demo-dd__search-wrap {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.demo-dd__search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: var(--lp-muted, #6b7280);
+    pointer-events: none;
+    opacity: 0.88;
+}
+
+.demo-dd__search--prefixed {
+    padding-left: 2.35rem;
+}
+
+/* Matérias agrupadas por tema (títulos de secção) */
+.demo-dd__group-header {
+    list-style: none;
+    padding: 10px 10px 6px;
+    margin: 6px 0 0;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--lp-muted, #6b7280);
+    border-bottom: 1px solid var(--lp-border, rgba(15, 23, 42, 0.08));
+}
+
+.demo-dd__group-header:first-child {
+    margin-top: 0;
+    padding-top: 4px;
+}
+
+.demo-dd__group-header.is-hidden {
+    display: none !important;
+}
+
+.demo-dd__option.demo-dd__option--materia {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+}
+
+/* Demo funnel — modo escuro (painéis como no exemplo: fundo escuro, acento roxo) */
+[data-theme="dark"] .demo-body--funnel,
+[data-bs-theme="dark"] .demo-body--funnel {
+    background:
+        radial-gradient(ellipse 85% 65% at 12% -8%, rgba(124, 58, 237, 0.14), transparent 52%),
+        radial-gradient(ellipse 72% 58% at 94% 102%, rgba(106, 3, 146, 0.12), transparent 48%),
+        linear-gradient(165deg, #0f0f14 0%, #14141c 45%, #101018 100%);
+    background-attachment: fixed;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-filter-card,
+[data-bs-theme="dark"] .demo-body--funnel .demo-filter-card {
+    background: rgba(22, 22, 30, 0.94);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 56px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-filter-card__title,
+[data-bs-theme="dark"] .demo-body--funnel .demo-filter-card__title,
+[data-theme="dark"] .demo-body--funnel .demo-funnel__context-label,
+[data-bs-theme="dark"] .demo-body--funnel .demo-funnel__context-label {
+    color: #ececf1;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-filter-card__hint,
+[data-bs-theme="dark"] .demo-body--funnel .demo-filter-card__hint {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-filter-field__lab,
+[data-bs-theme="dark"] .demo-body--funnel .demo-filter-field__lab {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__btn,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__btn {
+    background: #1a1a22;
+    border-color: rgba(255, 255, 255, 0.12);
+    color: #ececf1;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__btn:hover:not(:disabled),
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__btn:hover:not(:disabled) {
+    border-color: rgba(192, 132, 252, 0.35);
+    background: #1f1f29;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__btn:focus,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__btn:focus {
+    border-color: rgba(192, 132, 252, 0.55);
+    box-shadow: 0 0 0 3px rgba(106, 3, 146, 0.38);
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__picked-meta,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__picked-meta {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__panel,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__panel {
+    background: #16161e;
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 22px 52px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__search,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__search {
+    background: #1a1a22;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #ececf1;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__search:focus,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__search:focus {
+    border-color: rgba(192, 132, 252, 0.45);
+    box-shadow: 0 0 0 3px rgba(106, 3, 146, 0.28);
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__search-icon,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__search-icon {
+    color: #a1a1b0;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__group-header,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__group-header {
+    color: #9ca3af;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__opt-title,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__opt-title {
+    color: #ececf1;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__opt-sub,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__opt-sub {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__opt-n,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__opt-n {
+    color: #a1a1b0;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-dd__option:hover,
+[data-bs-theme="dark"] .demo-body--funnel .demo-dd__option:hover {
+    background: rgba(192, 132, 252, 0.1);
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-tema-row__name,
+[data-bs-theme="dark"] .demo-body--funnel .demo-tema-row__name {
+    color: #ececf1;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-tema-row__count,
+[data-bs-theme="dark"] .demo-body--funnel .demo-tema-row__count {
+    color: #9ca3af;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-tema-row:hover,
+[data-bs-theme="dark"] .demo-body--funnel .demo-tema-row:hover {
+    background: rgba(192, 132, 252, 0.08);
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-tema-row .form-check-input,
+[data-bs-theme="dark"] .demo-body--funnel .demo-tema-row .form-check-input {
+    accent-color: #a855f7;
+    border-color: rgba(255, 255, 255, 0.22);
+    background-color: #1a1a22;
+}
+
+[data-theme="dark"] .demo-body--funnel .demo-filter-card__footer,
+[data-bs-theme="dark"] .demo-body--funnel .demo-filter-card__footer {
+    border-top-color: rgba(255, 255, 255, 0.08);
 }

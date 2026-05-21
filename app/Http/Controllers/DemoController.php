@@ -417,6 +417,18 @@ class DemoController extends Controller
             'count' => (int) $r->c,
         ])->all();
 
+        $blankCount = (int) (clone $q)->where(function ($w) {
+            $w->whereNull('tema')->orWhere('tema', '');
+        })->count();
+
+        if ($blankCount > 0) {
+            $temas[] = [
+                'tema' => QuestionExamBuilder::TEMA_FILTRO_SEM_ETIQUETA,
+                'label' => __('demo.configurar.tema_sem_etiqueta'),
+                'count' => $blankCount,
+            ];
+        }
+
         return ['total' => $total, 'temas' => $temas];
     }
 

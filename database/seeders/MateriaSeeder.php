@@ -12,6 +12,7 @@ class MateriaSeeder extends Seeder
         $materias = [
             ['id' => 1, 'nome' => 'Microbiologia'],
             ['id' => 2, 'nome' => 'Biología celular'],
+            ['id' => 5, 'nome' => 'Farmacología II — Cátedra III'],
         ];
 
         foreach ($materias as $m) {

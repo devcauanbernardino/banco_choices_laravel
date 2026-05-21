@@ -1,6 +1,14 @@
 <div class="offcanvas offcanvas-end lp-offcanvas" tabindex="-1" id="lpOffcanvas" aria-labelledby="lpOffcanvasLabel">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="lpOffcanvasLabel">{{ config('branding.brand_name', 'Banco de Choices') }}</h5>
+        <a href="{{ route('home') }}" class="lp-offcanvas__brand" id="lpOffcanvasLabel">
+            <span class="lp-offcanvas__brand-logo-box" aria-hidden="true">
+                <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" class="lp-offcanvas__brand-logo" width="40" height="40" decoding="async">
+            </span>
+            <span class="lp-offcanvas__brand-text">
+                <span class="lp-offcanvas__brand-title">{{ __('index.page_title') }}</span>
+                <span class="lp-offcanvas__brand-tagline">{{ __('sidebar.brand_tagline') }}</span>
+            </span>
+        </a>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">

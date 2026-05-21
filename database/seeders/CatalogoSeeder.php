@@ -162,6 +162,29 @@ class CatalogoSeeder extends Seeder
             ]);
         }
 
+        if (! DB::table('materias')->where('id', 5)->exists()) {
+            DB::table('materias')->insert([
+                'id' => 5,
+                'nome' => 'Farmacología II — Cátedra III',
+                'slug' => 'farmacologia-ii-catedra-3',
+                'agrupamento_id' => $agrClinicoId,
+                'ordem' => 3,
+            ]);
+            $this->fixSqliteSequence('materias');
+        } else {
+            DB::table('materias')->where('id', 5)->update([
+                'nome' => 'Farmacología II — Cátedra III',
+                'slug' => 'farmacologia-ii-catedra-3',
+                'agrupamento_id' => $agrClinicoId,
+                'ordem' => 3,
+            ]);
+        }
+
+        DB::table('catedras')->updateOrInsert(
+            ['materia_id' => 5, 'slug' => 'catedra-iii'],
+            ['nome' => 'Cátedra III', 'ordem' => 1, 'created_at' => now(), 'updated_at' => now()]
+        );
+
         $ubiomedMaterias = [
             ['slug' => 'histologia', 'nome' => 'Histología', 'ordem' => 1],
             ['slug' => 'embriologia', 'nome' => 'Embriología', 'ordem' => 2],

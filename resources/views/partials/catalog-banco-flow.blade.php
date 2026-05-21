@@ -4,6 +4,9 @@
 (function () {
     var $ = function (id) { return document.getElementById(id); };
 
+    var BC_TEMA_SENT = @json(\App\Services\Questions\QuestionExamBuilder::TEMA_FILTRO_SEM_ETIQUETA);
+    var BC_TEMA_SENT_LBL = @json(__('bank.tema_sem_etiqueta'));
+
     function u(url, q) {
         return fetch(url + q, { headers: { Accept: 'application/json', 'X-Requested-With': 'XMLHttpRequest' }}).then(function (r) { return r.json(); });
     }
@@ -81,7 +84,7 @@
         u(URLs.parc, '?materia_id=' + encodeURIComponent(mid) + qc).then(function (r) {
             var ps = r.data || [];
             var finals = !!r.hay_final_pool;
-            var mapLbl = {'1':'{{ __('bank.parc.label_1') }}','2':'{{ __('bank.parc.label_2') }}','3':'{{ __('bank.parc.label_3') }}','final':'{{ __('bank.parc.final') }}'};
+            var mapLbl = {'1':'{{ __('bank.parc.label_1') }}','2':'{{ __('bank.parc.label_2') }}','3':'{{ __('bank.parc.label_3') }}','final':'{{ __('bank.parc.final') }}','libre':'{{ __('bank.parc.libre') }}'};
             ps.forEach(function (p) {
                 if (!p) return;
                 var id = 'parc_' + String(p).replace(/\W+/g,'_');
@@ -129,9 +132,10 @@
             wrap.appendChild(listBox);
 
             rows.forEach(function (tm) {
+                var display = (tm === BC_TEMA_SENT) ? BC_TEMA_SENT_LBL : tm;
                 var row = document.createElement('div');
                 row.className = 'qb-tema-row py-2 border-bottom border-opacity-10';
-                row.setAttribute('data-tema-match', normKey(tm));
+                row.setAttribute('data-tema-match', normKey(display + ' ' + tm));
 
                 var lab = document.createElement('label');
                 lab.className = 'small d-flex align-items-start gap-2 mb-0';
@@ -147,7 +151,7 @@
                 var tx = document.createElement('span');
                 tx.className = 'flex-grow-1';
 
-                tx.textContent = tm;
+                tx.textContent = display;
 
                 lab.appendChild(cb);
                 lab.appendChild(tx);

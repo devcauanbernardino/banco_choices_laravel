@@ -345,6 +345,7 @@ class StatsController extends Controller
             '2' => __('bank.parc.label_2'),
             '3' => __('bank.parc.label_3'),
             'final' => __('bank.parc.final'),
+            'libre' => __('bank.parc.libre'),
             '_sem' => __('stats.parc_sem'),
             default => __('stats.parc_other', ['code' => $codigo]),
         };

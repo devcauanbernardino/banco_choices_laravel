@@ -7,6 +7,9 @@ use App\Support\QuestionBankLocator;
 
 class QuestionExamBuilder
 {
+    /** Token enviado nos filtros quando o usuário restringe a questões sem coluna `tema` preenchida. */
+    public const TEMA_FILTRO_SEM_ETIQUETA = '__bc_sem_tema__';
+
     /**
      * @param  list<string>  $parciaisRaw
      * @param  list<string>  $temasRaw
@@ -87,7 +90,17 @@ class QuestionExamBuilder
 
             if ($temas !== []) {
                 $t = trim((string) ($meta->tema ?? ''));
-                if ($t === '' || ! in_array($t, $temas, true)) {
+                $sentinel = self::TEMA_FILTRO_SEM_ETIQUETA;
+                $querSemEtiqueta = in_array($sentinel, $temas, true);
+                $temasNomeados = array_values(array_filter(
+                    $temas,
+                    static fn ($x) => trim((string) $x) !== $sentinel
+                ));
+
+                $bateNomeado = $temasNomeados !== [] && $t !== '' && in_array($t, $temasNomeados, true);
+                $bateSemEtiqueta = $querSemEtiqueta && $t === '';
+
+                if (! $bateNomeado && ! $bateSemEtiqueta) {
                     continue;
                 }
             }
@@ -140,14 +153,47 @@ class QuestionExamBuilder
     /** @return list<string> */
     public static function temasDisponiveis(int $materiaId, ?int $catedraId = null): array
     {
-        $q = Questao::query()->where('materia_id', $materiaId)->whereNotNull('tema');
+        $q = Questao::query()
+            ->where('materia_id', $materiaId)
+            ->whereNotNull('tema')
+            ->where('tema', '!=', '');
         if ($catedraId !== null) {
             $q->where(function ($w) use ($catedraId) {
                 $w->whereNull('catedra_id')->orWhere('catedra_id', $catedraId);
             });
         }
 
-        return $q->distinct()->orderBy('tema')->pluck('tema')->map(fn ($t) => (string) $t)->all();
+        $out = $q->distinct()->orderBy('tema')->pluck('tema')->map(fn ($t) => (string) $t)->values()->all();
+
+        if (self::hayQuestoesSemTemaEtiqueta($materiaId, $catedraId, false)) {
+            $out[] = self::TEMA_FILTRO_SEM_ETIQUETA;
+        }
+
+        return $out;
+    }
+
+    /**
+     * Há pelo menos uma questão no escopo (matéria / cátedra / só demo) com `tema` vazio.
+     */
+    public static function hayQuestoesSemTemaEtiqueta(int $materiaId, ?int $catedraId, bool $demoOnly): bool
+    {
+        $q = Questao::query()
+            ->where('materia_id', $materiaId)
+            ->where(function ($w) {
+                $w->whereNull('tema')->orWhere('tema', '');
+            });
+
+        if ($demoOnly) {
+            $q->where('is_demo', true);
+        }
+
+        if ($catedraId !== null) {
+            $q->where(function ($w) use ($catedraId) {
+                $w->whereNull('catedra_id')->orWhere('catedra_id', $catedraId);
+            });
+        }
+
+        return $q->exists();
     }
 
     /**

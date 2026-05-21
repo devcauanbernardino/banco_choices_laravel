@@ -135,7 +135,7 @@
                     btn.textContent = @json(__('demo.questao.see_result'));
                     nextUrl = j.paywall_url;
                 } else {
-                    btn.textContent = (idx + 1 >= total) ? @json(__('demo.questao.see_result')) : @json(__('demo.questao.next'));
+                    btn.textContent = @json(__('demo.questao.next'));
                     nextUrl = j.next_url;
                 }
             })
@@ -144,9 +144,22 @@
             });
     }
 
+    function letterFromAnswer(raw, numOpts) {
+        var s = String(raw == null ? '' : raw).trim();
+        if (s === '') return '';
+        var up = s.toUpperCase();
+        if (/^[A-Z]$/.test(up)) return up;
+        var i = parseInt(s, 10);
+        if (!isNaN(i) && i >= 0 && i < numOpts) {
+            return String.fromCharCode(65 + i);
+        }
+        return up;
+    }
+
     function renderFeedback(j) {
-        var correct = String(j.resposta_correta || '').toUpperCase();
-        var user = String(j.resposta_usuario || '').toUpperCase();
+        var numOpts = document.querySelectorAll('.demo-quiz__opt').length;
+        var correct = letterFromAnswer(j.resposta_correta, numOpts);
+        var user = letterFromAnswer(j.resposta_usuario, numOpts);
         document.querySelectorAll('.demo-quiz__opt').forEach(function (lbl) {
             var letter = String(lbl.getAttribute('data-letter') || '').toUpperCase();
             lbl.classList.add('is-locked');
@@ -154,11 +167,22 @@
             if (letter === user && letter !== correct) lbl.classList.add('is-wrong');
         });
         document.querySelectorAll('.demo-quiz__opt-input').forEach(function (i) { i.disabled = true; });
-        var fb = j.feedback || '';
-        if (fb) {
-            feedbackText.innerHTML = String(fb).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
-            feedback.hidden = false;
+        var fb = String(j.feedback || '').trim();
+        var showedPanel = false;
+        if (!fb && correct) {
+            fb = @json(__('demo.questao.correct_was')) + ': ' + correct;
+            if (typeof j.acertou === 'boolean') {
+                fb += j.acertou ? ' ✓' : ' ✗';
+            }
+            feedbackText.textContent = fb;
+            showedPanel = true;
+        } else if (fb) {
+            feedbackText.innerHTML = String(j.feedback).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br>');
+            showedPanel = true;
+        } else {
+            feedbackText.textContent = '';
         }
+        feedback.hidden = !showedPanel;
     }
 })();
 </script>

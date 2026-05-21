@@ -10,7 +10,7 @@
 <div class="row g-3 mb-3">
     <div class="col-md-6">
         <label class="{{ $labelClass }}" for="{{ $countryId }}">{{ __('signup.checkout.country') }}</label>
-        <select class="form-select" name="{{ $countryName }}" id="{{ $countryId }}" required autocomplete="country">
+        <select class="bc-styled-select bc-styled-select--fluid" name="{{ $countryName }}" id="{{ $countryId }}" required autocomplete="country">
             @foreach ($countries as $code => $label)
                 <option value="{{ $code }}" @selected(old($countryName, $countryDefault) === $code)>{{ $label }}</option>
             @endforeach

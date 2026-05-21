@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Banco de Choices')</title>
+    @include('partials.favicon')
 
     {{-- Bootstrap 5.3.2 CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +30,7 @@
     {{-- Custom CSS — mesma ordem de prioridade que o projeto PHP (tokens → botões → app → idioma) --}}
     <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}?v={{ filemtime(public_path('assets/css/scrollbar.css')) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}">
@@ -52,6 +53,7 @@
     @endif
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/js/public-scroll-lock.js') }}?v={{ filemtime(public_path('assets/js/public-scroll-lock.js')) }}"></script>
     @stack('scripts')
 </body>
 </html>

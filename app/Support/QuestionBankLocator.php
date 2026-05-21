@@ -11,6 +11,7 @@ final class QuestionBankLocator
             2 => 'questoes_biologia_final_v2.json',
             3 => 'biologia_alumed_1parcial.json',
             4 => 'biologia_cbc_1parcial_2022.json',
+            5 => 'questoes_farmaco2_cat3.json',
             default => 'questoes_materia_'.$materiaId.'.json',
         };
     }

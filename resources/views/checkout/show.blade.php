@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/signup-select-materias.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/signup-select-plano.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/checkout-mercadopago.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ filemtime(public_path('assets/css/shared-select.css')) }}">
 <link rel="stylesheet" href="{{ asset('assets/css/auth-footer-shared.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}">
 @endpush
@@ -232,6 +233,7 @@
 @endsection
 
 @push('scripts')
+    <script src="{{ asset('assets/js/styled-select.js') }}?v={{ filemtime(public_path('assets/js/styled-select.js')) }}"></script>
     @include('partials.checkout-country-postal-script', [
         'countryId' => 'checkout-country',
         'postalId' => 'checkout-postal',

@@ -171,16 +171,20 @@ body.app-shell-painel .app-sidebar--painel .app-sidebar-brand .app-sidebar-sub {
 body.app-shell-painel .app-sidebar--painel .app-sidebar-bottom {
   flex-shrink: 0;
   padding-top: 0.75rem;
-  padding-bottom: 0.85rem;
+  padding-bottom: 0.65rem;
   border-top: 1px solid var(--shell-painel-sidebar-border);
   margin-top: auto;
 }
 
 /* Evita linha duplicada: .app-sidebar-bottom já separa a nave; o wrap do “Recolher”
-   reaproveitava o border-top global de sidebar.css. */
+   reaproveitava o border-top global de sidebar.css. Padding inferior só no .app-sidebar-bottom. */
 body.app-shell-painel .app-sidebar--painel .app-sidebar-bottom .app-sidebar-collapse-wrap {
   border-top: none;
-  padding-top: 0;
+  padding: 0 1rem;
+}
+
+html.sidebar-collapsed body.app-shell-painel .app-sidebar--painel:not(.app-sidebar--embedded) .app-sidebar-collapse-wrap {
+  padding: 0 0.55rem;
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-wrap {

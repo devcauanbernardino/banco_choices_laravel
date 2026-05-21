@@ -410,7 +410,9 @@ body.checkout-mp-page {
 .checkout-mp-card .form-control:focus,
 .checkout-mp-card .form-control:focus-visible,
 .checkout-mp-card .form-select:focus,
-.checkout-mp-card .form-select:focus-visible {
+.checkout-mp-card .form-select:focus-visible,
+.checkout-mp-card .bc-styled-select:focus,
+.checkout-mp-card .bc-styled-select:focus-visible {
   outline: none;
   border-color: #6a0392;
   box-shadow: 0 0 0 0.15rem rgba(106, 3, 146, 0.2);

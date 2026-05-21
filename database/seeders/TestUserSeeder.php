@@ -26,6 +26,6 @@ class TestUserSeeder extends Seeder
             ]
         );
 
-        $user->materias()->syncWithoutDetaching([1, 2]);
+        $user->materias()->syncWithoutDetaching([1, 2, 5]);
     }
 }
