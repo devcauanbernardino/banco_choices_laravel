@@ -45,11 +45,13 @@ Configure no servidor `* * * * * php artisan schedule:run` (quando existirem tar
 | `APP_KEY` | `php artisan key:generate` |
 | `DB_*` | Em produção usar MySQL/MariaDB/PostgreSQL com backups |
 | `MP_*` | Credenciais Mercado Pago; em produção `MP_WEBHOOK_SECRET` obrigatório (assinatura do webhook) |
-| `MAIL_*` | SMTP ou serviço transacional (não usar só `log` em produção) |
+| `MAIL_*` | SMTP com `contato@bancodechoices.com` (remetente e, em geral, `MAIL_USERNAME`) |
 | `TRUSTED_PROXIES` | Atrás de load balancer: típico `*` ou IPs dos proxies |
 | `QUEUE_CONNECTION` | `database` ou `redis`; garantir worker |
 
-Copie `.env.example` e ajuste comentários por ambiente.
+Copie `.env.example` (dev) ou `.env.production.example` (servidor com `https://bancodechoices.com`) e ajuste credenciais.
+
+Traduções das questões (espanhol → pt/en): `php artisan questions:build-i18n-all` (só o que falta) ou por banco com `questions:build-i18n`. Cobertura: `php artisan questions:analyse --i18n`.
 
 ## Deploy (resumo)
 

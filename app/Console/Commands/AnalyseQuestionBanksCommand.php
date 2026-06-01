@@ -3,11 +3,14 @@
 namespace App\Console\Commands;
 
 use App\Support\Question;
+use App\Support\QuestionBankLocator;
 use Illuminate\Console\Command;
 
 class AnalyseQuestionBanksCommand extends Command
 {
-    protected $signature = 'questions:analyse {file? : Um ficheiro em storage/app/data (omite para os dois bancos por defeito)}';
+    protected $signature = 'questions:analyse
+        {file? : Um ficheiro em storage/app/data (omite para todos os bancos conhecidos)}
+        {--i18n : Mostrar cobertura das traduções pt_BR e en_US}';
 
     protected $description = 'Estatísticas dos JSONs de questões (feedback editorial, opções curtas, gabarito/opções inválidos). Ver também: questions:repair';
 
@@ -15,7 +18,7 @@ class AnalyseQuestionBanksCommand extends Command
     {
         $files = $this->argument('file')
             ? [$this->argument('file')]
-            : ['questoes_microbiologia_refinado.json', 'questoes_biologia_final_v2.json'];
+            : QuestionBankLocator::allKnownFilenames();
 
         foreach ($files as $name) {
             $path = storage_path('app/data/'.$name);
@@ -109,6 +112,16 @@ class AnalyseQuestionBanksCommand extends Command
             }
 
             $this->comment('  Corrigir no JSON: php artisan questions:repair (pré-visualização) ou questions:repair --force');
+
+            if ($this->option('i18n')) {
+                foreach (['pt_BR', 'en_US'] as $loc) {
+                    $ip = storage_path('app/data/i18n/'.$loc.'/'.$name);
+                    $cnt = is_file($ip) ? count(json_decode((string) file_get_contents($ip), true) ?: []) : 0;
+                    $pct = $n > 0 ? round(100 * $cnt / $n, 1) : 0;
+                    $status = $cnt >= $n ? 'completo' : 'pendente';
+                    $this->line("  i18n {$loc}: {$cnt}/{$n} ({$pct}%) — {$status}");
+                }
+            }
         }
 
         return self::SUCCESS;

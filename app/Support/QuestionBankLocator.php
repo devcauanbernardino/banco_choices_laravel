@@ -4,6 +4,18 @@ namespace App\Support;
 
 final class QuestionBankLocator
 {
+    /** @return list<string> */
+    public static function allKnownFilenames(): array
+    {
+        return [
+            'questoes_microbiologia_refinado.json',
+            'questoes_biologia_final_v2.json',
+            'biologia_alumed_1parcial.json',
+            'biologia_cbc_1parcial_2022.json',
+            'questoes_farmaco2_cat3.json',
+        ];
+    }
+
     public static function filenameFor(int $materiaId): string
     {
         return match ($materiaId) {
