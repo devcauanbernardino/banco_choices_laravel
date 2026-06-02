@@ -7,8 +7,11 @@ cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git fetc
 # 1) Utilizador de teste (login)
 cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=TestUserSeeder --force >> /home2/cauanb36/seed-teste.log 2>&1
 
-# 2) Catálogo landing (faculdades)
-cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=CatalogoSeeder --force >> /home2/cauanb36/seed-catalogo.log 2>&1
+# 2) Catálogo + questões demo (landing e /probar-gratis)
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=CatalogoSeeder --force && /usr/local/bin/ea-php83 artisan bancodechoices:setup-demo-questions >> /home2/cauanb36/seed-catalogo.log 2>&1
+
+# 2b) Só questões demo (se catálogo já existir)
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan bancodechoices:setup-demo-questions >> /home2/cauanb36/demo-questoes.log 2>&1
 
 # 3) Limpar cache
 cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan route:clear && /usr/local/bin/ea-php83 artisan view:clear && /usr/local/bin/ea-php83 artisan config:clear >> /home2/cauanb36/cache.log 2>&1

@@ -41,6 +41,23 @@ cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git fetc
 
 Abre o site sempre em **https://bancodechoices.com** (mesmo domínio do `APP_URL`, sem `www` diferente).
 
+---
+
+## Demo sem questões (“Esta faculdade ainda não tem questões demo carregadas”)
+
+Precisas de **duas coisas** no servidor:
+
+1. **Ficheiros JSON** em `repositories/banco_choices_laravel/storage/app/data/`  
+   (ex.: `questoes_microbiologia_refinado.json` — envia o `data.zip` e extrai aqui)
+
+2. **Cron uma vez** (ou Deploy):
+
+```text
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=CatalogoSeeder --force && /usr/local/bin/ea-php83 artisan bancodechoices:setup-demo-questions >> /home2/cauanb36/demo-questoes.log 2>&1
+```
+
+Lê `demo-questoes.log` — deve listar `uba: N demo`. Depois abre `/probar-gratis/configurar?faculdade=uba`.
+
 ## .env no servidor (confere no File Manager)
 
 ```env
