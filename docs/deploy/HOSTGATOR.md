@@ -150,7 +150,7 @@ Abre `seed-teste.log` no File Manager — deve aparecer algo como `Database seed
 
 Login:
 
-- E-mail: `teste@bancodechoices.local`
+- E-mail: `teste@bancodechoices.com`
 - Senha: `BancoTeste2026#Local`
 - URL: `https://bancodechoices.com/login`
 

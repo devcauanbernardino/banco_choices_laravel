@@ -11,12 +11,12 @@ class TestUserSeeder extends Seeder
     /**
      * Usuário para login manual / QA (mesmas regras de senha do cadastro).
      *
-     * E-mail: teste@bancodechoices.local
+     * E-mail: teste@bancodechoices.com (domínio real — evita bloqueio em alguns validadores)
      * Senha: BancoTeste2026#Local
      */
     public function run(): void
     {
-        $email = 'teste@bancodechoices.local';
+        $email = 'teste@bancodechoices.com';
 
         $user = User::updateOrCreate(
             ['email' => $email],

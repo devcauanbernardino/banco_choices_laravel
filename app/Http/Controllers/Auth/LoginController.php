@@ -20,7 +20,7 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            'email' => 'required|email',
+            'email' => ['required', 'string', 'max:255', 'email:filter'],
             'senha' => 'required',
         ]);
 

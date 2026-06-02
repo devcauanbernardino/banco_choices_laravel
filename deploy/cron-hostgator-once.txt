@@ -1,9 +1,8 @@
 # Colar em cPanel → Cron Jobs (ajusta usuário cauanb36 se diferente).
 # Apaga cada cron depois de ver o .log correspondente.
 
-# 0) Destravar "Deploy HEAD Commit" (uncommitted changes) + puxar GitHub + login + cache
-#    Rode UMA VEZ, espere 2 min, leia fix-all.log, apague o cron.
-cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git fetch origin main && /usr/local/bin/git reset --hard origin/main && /usr/local/bin/ea-php83 artisan db:seed --class=TestUserSeeder --force && /usr/local/bin/ea-php83 artisan route:clear && /usr/local/bin/ea-php83 artisan view:clear && /usr/local/bin/ea-php83 artisan config:clear && /bin/rm -f /home2/cauanb36/bancodechoices.com/favicon.ico && /bin/mkdir -p /home2/cauanb36/bancodechoices.com/assets/img && /bin/cp -f /home2/cauanb36/repositories/banco_choices_laravel/public/assets/img/favicon.svg /home2/cauanb36/bancodechoices.com/assets/img/favicon.svg >> /home2/cauanb36/fix-all.log 2>&1
+# 0) ÚNICO cron de correção — após APAGAR os outros (ver deploy/CRON-APAGAR-AGORA.md)
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git fetch origin main && /usr/local/bin/git reset --hard origin/main && /usr/local/bin/ea-php83 artisan config:clear && /usr/local/bin/ea-php83 artisan route:clear && /usr/local/bin/ea-php83 artisan view:clear && /usr/local/bin/ea-php83 artisan db:seed --class=TestUserSeeder --force && /bin/rm -f /home2/cauanb36/bancodechoices.com/favicon.ico >> /home2/cauanb36/ultimo-fix.log 2>&1
 
 # 1) Utilizador de teste (login)
 cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=TestUserSeeder --force >> /home2/cauanb36/seed-teste.log 2>&1
