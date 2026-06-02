@@ -131,3 +131,80 @@ php artisan view:clear
 # Plano B: sincronizar img/assets/favicon para bancodechoices.com
 bash deploy/sync-public-docroot.sh
 ```
+
+---
+
+## 8. Sem Terminal do cPanel (só Cron + File Manager)
+
+Na HostGator partilhada muitas vezes **não há Terminal**. Usa **Cron Jobs** (Avançado → Cron Jobs) com PHP 8.3 (`ea-php83`).
+
+### A) Criar utilizador de teste (login)
+
+Cron **uma vez** (ex.: daqui a 2 minutos), depois **apaga** o cron:
+
+```text
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=TestUserSeeder --force >> /home2/cauanb36/seed-teste.log 2>&1
+```
+
+Abre `seed-teste.log` no File Manager — deve aparecer algo como `Database seeding completed successfully`.
+
+Login:
+
+- E-mail: `teste@bancodechoices.local`
+- Senha: `BancoTeste2026#Local`
+- URL: `https://bancodechoices.com/login`
+
+### B) Atualizar código do GitHub (sem terminal)
+
+**Opção 1 — Git™ Version Control (cPanel)**  
+Menu **Git™ Version Control** → repositório em `repositories/banco_choices_laravel`.
+
+| Botão | O que faz |
+|--------|-----------|
+| **Update from Remote** | Só `git pull`. Se o HEAD já for o último commit do GitHub, **não parece mudar nada** — é normal. |
+| **Deploy HEAD Commit** | Corre o `.cpanel.yml` (migrate, seed teste, limpar cache, copiar `img/`/`assets/` para `bancodechoices.com/`). Só fica ativo com `.cpanel.yml` no repo e **sem alterações locais não commitadas** no servidor. |
+
+Fluxo recomendado: **Update from Remote** → **Deploy HEAD Commit**.
+
+Remote: `https://github.com/devcauanbernardino/banco_choices_laravel.git` — branch `main`.
+
+Se aparecer *"uncommitted changes"*: no File Manager não edites ficheiros dentro do clone; o `.env` deve estar no servidor e **não** ser sobrescrito pelo deploy (o `.cpanel.yml` atual não copia `.env`).
+
+**Opção 2 — Cron com git pull** (se o Git existir no servidor; testa 1×):
+
+```text
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git pull origin main >> /home2/cauanb36/git-pull.log 2>&1
+```
+
+Lê `git-pull.log`. Se der erro de autenticação, o repo é privado — usa a Opção 1 ou ZIP.
+
+**Opção 3 — ZIP no PC**  
+`git pull` local → `.\scripts\build-hostgator-deploy.ps1` → upload ZIP → extrair por cima de `repositories/banco_choices_laravel` (não apagues `.env`).
+
+### C) Limpar cache após atualizar
+
+Cron **uma vez**:
+
+```text
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan route:clear && /usr/local/bin/ea-php83 artisan view:clear && /usr/local/bin/ea-php83 artisan config:clear >> /home2/cauanb36/cache.log 2>&1
+```
+
+### D) Catálogo da landing (faculdades nos cards)
+
+Cron **uma vez** (se a home ainda estiver vazia):
+
+```text
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=CatalogoSeeder --force >> /home2/cauanb36/seed-catalogo.log 2>&1
+```
+
+### E) Favicon (Plano B)
+
+1. File Manager: **apaga** `bancodechoices.com/favicon.ico` se existir.
+2. Cron C) acima (precisa da rota `FaviconController` no código — confirma no File Manager que existe `app/Http/Controllers/FaviconController.php`; se não, faz B antes).
+
+### F) Copiar CSS/imagens para `bancodechoices.com` (sem bash)
+
+Se `deploy/sync-public-docroot.sh` não correr no cron, no **File Manager**:
+
+- Copia `repositories/banco_choices_laravel/public/img` → `bancodechoices.com/img`
+- Copia `repositories/banco_choices_laravel/public/assets` → `bancodechoices.com/assets`

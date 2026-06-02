@@ -1,0 +1,15 @@
+---
+# cPanel → Git → Pull or Deploy → "Deploy HEAD Commit"
+# Plano B: código em repositories/; site em bancodechoices.com/
+deployment:
+  tasks:
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan migrate --force
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=CatalogoSeeder --force
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=TestUserSeeder --force
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan route:clear
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan view:clear
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan config:clear
+    - /bin/mkdir -p /home2/cauanb36/bancodechoices.com/img /home2/cauanb36/bancodechoices.com/assets
+    - /bin/cp -R /home2/cauanb36/repositories/banco_choices_laravel/public/img/. /home2/cauanb36/bancodechoices.com/img/
+    - /bin/cp -R /home2/cauanb36/repositories/banco_choices_laravel/public/assets/. /home2/cauanb36/bancodechoices.com/assets/
+    - /bin/rm -f /home2/cauanb36/bancodechoices.com/favicon.ico
