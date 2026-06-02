@@ -3,6 +3,7 @@
 # Plano B: código em repositories/; site em bancodechoices.com/
 deployment:
   tasks:
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git reset --hard HEAD
     - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan migrate --force
     - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=CatalogoSeeder --force
     - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=TestUserSeeder --force

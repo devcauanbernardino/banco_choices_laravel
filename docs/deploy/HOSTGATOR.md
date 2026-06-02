@@ -168,7 +168,13 @@ Fluxo recomendado: **Update from Remote** → **Deploy HEAD Commit**.
 
 Remote: `https://github.com/devcauanbernardino/banco_choices_laravel.git` — branch `main`.
 
-Se aparecer *"uncommitted changes"*: no File Manager não edites ficheiros dentro do clone; o `.env` deve estar no servidor e **não** ser sobrescrito pelo deploy (o `.cpanel.yml` atual não copia `.env`).
+Se aparecer *"The system cannot deploy"* / *"uncommitted changes"*:
+
+1. **Não uses só "Update from Remote"** — isso **não** cria o utilizador de teste nem corrige o favicon.
+2. Cron **uma vez** (copia a linha `0)` de [`deploy/cron-hostgator-once.txt`](../../deploy/cron-hostgator-once.txt)) ou no File Manager apaga ficheiros alterados dentro do clone (ex. `bootstrap/cache/config.php` se existir e não for o `.env`).
+3. Volta ao Git → **Deploy HEAD Commit** (deve ficar azul).
+
+O `.env` no servidor **não** deve estar dentro do clone editado pelo Git; mantém-o só em `repositories/.../.env`.
 
 **Opção 2 — Cron com git pull** (se o Git existir no servidor; testa 1×):
 
