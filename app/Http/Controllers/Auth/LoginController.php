@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -25,14 +27,15 @@ class LoginController extends Controller
         ]);
 
         $email = strtolower(trim((string) $request->input('email')));
+        $password = (string) $request->input('senha');
 
-        if (Auth::attempt(
-            ['email' => $email, 'password' => $request->input('senha')],
-            $request->boolean('remember')
-        )) {
+        $user = User::query()
+            ->whereRaw('LOWER(TRIM(email)) = ?', [$email])
+            ->first();
+
+        if ($user && Hash::check($password, $user->getAuthPassword())) {
+            Auth::login($user, $request->boolean('remember'));
             $request->session()->regenerate();
-
-            $user = Auth::user();
             $skipEmails = array_map('strtolower', config('test_users.skip_default_materias_emails', []));
             if (! in_array(strtolower((string) $user->email), $skipEmails, true)) {
                 try {

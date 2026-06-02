@@ -35,7 +35,7 @@ cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git fetc
 
 | O que vês | Causa | O que fazer |
 |-----------|--------|-------------|
-| **“E-mail ou senha incorretos”** | Utilizador não existe ou senha errada | Cron do `TestUserSeeder` de novo; confere em phpMyAdmin tabela `users` |
+| **“E-mail ou senha incorretos”** | Utilizador não existe na BD deste `.env` | Cron `bancodechoices:ensure-test-user` **ou** SQL em [`phpmyadmin-test-user.sql`](phpmyadmin-test-user.sql) |
 | **Volta ao login sem mensagem** | Sessão/cookie | `.env`: `SESSION_DRIVER=file`; apaga `bootstrap/cache/config.php`; `config:clear` |
 | **Erro 500** | BD/catálogo | Cron `CatalogoSeeder` uma vez |
 

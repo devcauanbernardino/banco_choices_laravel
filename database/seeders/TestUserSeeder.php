@@ -27,7 +27,12 @@ class TestUserSeeder extends Seeder
                 ['email' => $email],
                 $payload
             );
-            $user->materias()->syncWithoutDetaching([1, 2, 5]);
+
+            try {
+                $user->materias()->syncWithoutDetaching([1, 2, 5]);
+            } catch (\Throwable) {
+                // Catálogo ainda não migrado — utilizador continua válido para login
+            }
         }
     }
 }
