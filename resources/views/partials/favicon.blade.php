@@ -1,4 +1,4 @@
-@php
-    $faviconPath = \App\Support\Branding::faviconPublicPath();
-@endphp
-<link rel="icon" href="{{ asset($faviconPath) }}?v={{ filemtime(public_path($faviconPath)) }}" type="{{ \App\Support\Branding::faviconMimeType() }}">
+<link rel="icon" href="{{ \App\Support\Branding::faviconUrl() }}" type="{{ \App\Support\Branding::faviconMimeType() }}">
+@if ($ico = \App\Support\Branding::faviconIcoUrl())
+    <link rel="shortcut icon" href="{{ $ico }}">
+@endif

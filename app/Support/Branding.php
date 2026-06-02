@@ -47,8 +47,10 @@ final class Branding
     public static function faviconPublicPath(): string
     {
         $candidates = [
+            'favicon.ico',
             'img/logo-bd-favicon.png',
             'assets/img/logo-bd-favicon.png',
+            'assets/img/favicon.svg',
             'img/logo-bd.png',
             'img/logo-bd.webp',
             'img/logo-bd.jpg',
@@ -73,10 +75,42 @@ final class Branding
     public static function faviconMimeType(): string
     {
         return match (strtolower(pathinfo(self::faviconPublicPath(), PATHINFO_EXTENSION))) {
+            'ico' => 'image/x-icon',
             'svg' => 'image/svg+xml',
             'webp' => 'image/webp',
             'jpg', 'jpeg' => 'image/jpeg',
             default => 'image/png',
         };
+    }
+
+    /**
+     * Favicon URL with cache-bust query only when the file exists on disk.
+     */
+    public static function faviconUrl(): string
+    {
+        $rel = self::faviconPublicPath();
+        $url = asset($rel);
+        $full = public_path($rel);
+
+        if (is_file($full)) {
+            return $url.'?v='.filemtime($full);
+        }
+
+        return $url;
+    }
+
+    /**
+     * Root /favicon.ico for browsers that request it without parsing HTML.
+     */
+    public static function faviconIcoUrl(): ?string
+    {
+        if (! is_file(public_path('favicon.ico'))) {
+            return null;
+        }
+
+        $url = asset('favicon.ico');
+        $full = public_path('favicon.ico');
+
+        return $url.'?v='.filemtime($full);
     }
 }
