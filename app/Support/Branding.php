@@ -44,73 +44,98 @@ final class Branding
     /**
      * Logo with solid background — better legibility as browser tab icon.
      */
-    public static function faviconPublicPath(): string
+    /**
+     * Relative paths to try (docroot Plan B and repo public/).
+     *
+     * @return list<string>
+     */
+    public static function faviconRelativeCandidates(): array
     {
-        $candidates = [
-            'favicon.ico',
+        $configured = config('branding.favicon');
+        $list = is_string($configured) && $configured !== ''
+            ? [$configured]
+            : [];
+
+        return array_values(array_unique([
+            ...$list,
             'img/logo-bd-favicon.png',
             'assets/img/logo-bd-favicon.png',
             'assets/img/favicon.svg',
-            'img/logo-bd.png',
-            'img/logo-bd.webp',
-            'img/logo-bd.jpg',
-            'img/logo-bd.jpeg',
-            'assets/img/logo-bd.png',
-            'assets/img/logo-bd.webp',
-            'assets/img/logo-bd.jpg',
-            'assets/img/logo-bd.jpeg',
-            'img/logo-bd.svg',
-            'assets/img/logo-bd.svg',
-        ];
+        ]));
+    }
 
-        foreach ($candidates as $rel) {
-            if (is_file(public_path($rel))) {
-                return $rel;
+    /**
+     * @return array{path: string, mime: string, rel: string}|null
+     */
+    public static function resolveFaviconFile(): ?array
+    {
+        foreach (self::faviconRelativeCandidates() as $rel) {
+            foreach (self::absolutePathsForPublicFile($rel) as $full) {
+                if (! is_file($full)) {
+                    continue;
+                }
+
+                return [
+                    'path' => $full,
+                    'mime' => self::mimeForPublicFile($rel),
+                    'rel' => $rel,
+                ];
             }
         }
 
-        return self::logoPublicPath();
+        return null;
     }
 
-    public static function faviconMimeType(): string
+    /**
+     * @return list<string>
+     */
+    private static function absolutePathsForPublicFile(string $rel): array
     {
-        return match (strtolower(pathinfo(self::faviconPublicPath(), PATHINFO_EXTENSION))) {
-            'ico' => 'image/x-icon',
+        $rel = ltrim($rel, '/');
+
+        return array_values(array_unique([
+            public_path($rel),
+            base_path('public/'.$rel),
+        ]));
+    }
+
+    private static function mimeForPublicFile(string $rel): string
+    {
+        return match (strtolower(pathinfo($rel, PATHINFO_EXTENSION))) {
             'svg' => 'image/svg+xml',
             'webp' => 'image/webp',
             'jpg', 'jpeg' => 'image/jpeg',
+            'ico' => 'image/x-icon',
             default => 'image/png',
         };
     }
 
-    /**
-     * Favicon URL with cache-bust query only when the file exists on disk.
-     */
-    public static function faviconUrl(): string
+    public static function faviconPublicPath(): string
     {
-        $rel = self::faviconPublicPath();
-        $url = asset($rel);
-        $full = public_path($rel);
+        return self::resolveFaviconFile()['rel'] ?? 'img/logo-bd-favicon.png';
+    }
 
-        if (is_file($full)) {
-            return $url.'?v='.filemtime($full);
-        }
+    public static function faviconMimeType(): string
+    {
+        $resolved = self::resolveFaviconFile();
 
-        return $url;
+        return $resolved['mime'] ?? 'image/png';
     }
 
     /**
-     * Root /favicon.ico for browsers that request it without parsing HTML.
+     * Prefer the named route so Plan B works even when static files are only in the repo public/.
      */
-    public static function faviconIcoUrl(): ?string
+    public static function faviconUrl(): string
     {
-        if (! is_file(public_path('favicon.ico'))) {
-            return null;
+        if (\Illuminate\Support\Facades\Route::has('favicon')) {
+            return route('favicon');
         }
 
-        $url = asset('favicon.ico');
-        $full = public_path('favicon.ico');
+        $resolved = self::resolveFaviconFile();
+        if ($resolved === null) {
+            return asset('img/logo-bd-favicon.png');
+        }
 
-        return $url.'?v='.filemtime($full);
+        return asset($resolved['rel']);
     }
 }

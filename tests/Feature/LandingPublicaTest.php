@@ -27,6 +27,22 @@ class LandingPublicaTest extends TestCase
         $response->assertSee('id="faq"', false);
     }
 
+    public function test_favicon_route_serves_png(): void
+    {
+        $response = $this->get('/favicon.ico');
+
+        $response->assertOk();
+        $response->assertHeader('Content-Type', 'image/png');
+    }
+
+    public function test_home_includes_favicon_link(): void
+    {
+        $response = $this->get('/');
+
+        $response->assertOk();
+        $response->assertSee('/favicon.ico', false);
+    }
+
     public function test_demo_show_renders(): void
     {
         $response = $this->get('/probar-gratis');

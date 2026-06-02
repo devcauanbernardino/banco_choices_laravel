@@ -71,7 +71,9 @@ Quando a HostGator **bloqueia** o document root dentro de `repositories/`:
 2. Ficheiros web: `/home/SEU_USUARIO/bancodechoices.com/` (cópia de `public/`)
 3. `bancodechoices.com/index.php` — usar o modelo em [`deploy/bancodechoices.index.php`](../../deploy/bancodechoices.index.php) (inclui `$app->usePublicPath(__DIR__);`)
 
-**Favicon / CSS / imagens quebrados:** o `git pull` atualiza o repo, mas **não** copia sozinho `public/img` nem `public/assets` para `bancodechoices.com/`. Depois de cada deploy com ficheiros estáticos novos:
+**Favicon:** o ícone é servido por `GET /favicon.ico` (Laravel), com fallback para `repositories/.../public/img/`. Apaga **`bancodechoices.com/favicon.ico`** se existir (ficheiro antigo PNG renomeado bloqueia a rota).
+
+**CSS / imagens quebrados:** o `git pull` atualiza o repo, mas **não** copia sozinho `public/img` nem `public/assets` para `bancodechoices.com/`. Depois de cada deploy com ficheiros estáticos novos:
 
 ```bash
 cd ~/repositories/banco_choices_laravel

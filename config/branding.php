@@ -13,4 +13,6 @@ return [
     */
     'logo' => env('BRAND_LOGO'),
 
+    'favicon' => env('BRAND_FAVICON', 'img/logo-bd-favicon.png'),
+
 ];

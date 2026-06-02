@@ -25,9 +25,7 @@ for dir in img assets; do
     fi
 done
 
-if [[ -f "$REPO/public/favicon.ico" ]]; then
-    cp -f "$REPO/public/favicon.ico" "$DOCROOT/favicon.ico"
-    echo "OK: favicon.ico"
-fi
+# favicon.ico antigo (PNG renomeado) faz o Apache servir lixo antes do Laravel
+rm -f "$DOCROOT/favicon.ico"
 
-echo "Sync concluído."
+echo "Sync concluído. Favicon: https://bancodechoices.com/favicon.ico (rota Laravel)"
