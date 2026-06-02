@@ -28,8 +28,18 @@ cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git fetc
 
 ## Login após o cron
 
-- E-mail: `teste@bancodechoices.com`
+- E-mail: `teste@bancodechoices.com` (ou `teste@bancodechoices.local`)
 - Senha: `BancoTeste2026#Local`
+
+### Não entra?
+
+| O que vês | Causa | O que fazer |
+|-----------|--------|-------------|
+| **“E-mail ou senha incorretos”** | Utilizador não existe ou senha errada | Cron do `TestUserSeeder` de novo; confere em phpMyAdmin tabela `users` |
+| **Volta ao login sem mensagem** | Sessão/cookie | `.env`: `SESSION_DRIVER=file`; apaga `bootstrap/cache/config.php`; `config:clear` |
+| **Erro 500** | BD/catálogo | Cron `CatalogoSeeder` uma vez |
+
+Abre o site sempre em **https://bancodechoices.com** (mesmo domínio do `APP_URL`, sem `www` diferente).
 
 ## .env no servidor (confere no File Manager)
 

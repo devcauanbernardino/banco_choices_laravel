@@ -16,16 +16,18 @@ class TestUserSeeder extends Seeder
      */
     public function run(): void
     {
-        $email = 'teste@bancodechoices.com';
+        $password = Hash::make('BancoTeste2026#Local');
+        $payload = [
+            'nome' => 'Usuário Teste',
+            'senha' => $password,
+        ];
 
-        $user = User::updateOrCreate(
-            ['email' => $email],
-            [
-                'nome' => 'Usuário Teste',
-                'senha' => Hash::make('BancoTeste2026#Local'),
-            ]
-        );
-
-        $user->materias()->syncWithoutDetaching([1, 2, 5]);
+        foreach (['teste@bancodechoices.com', 'teste@bancodechoices.local'] as $email) {
+            $user = User::updateOrCreate(
+                ['email' => $email],
+                $payload
+            );
+            $user->materias()->syncWithoutDetaching([1, 2, 5]);
+        }
     }
 }

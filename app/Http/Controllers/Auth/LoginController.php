@@ -24,18 +24,22 @@ class LoginController extends Controller
             'senha' => 'required',
         ]);
 
-        $credentials = [
-            'email' => $request->input('email'),
-            'password' => $request->input('senha'),
-        ];
+        $email = strtolower(trim((string) $request->input('email')));
 
-        if (Auth::attempt($credentials, $request->boolean('remember'))) {
+        if (Auth::attempt(
+            ['email' => $email, 'password' => $request->input('senha')],
+            $request->boolean('remember')
+        )) {
             $request->session()->regenerate();
 
             $user = Auth::user();
             $skipEmails = array_map('strtolower', config('test_users.skip_default_materias_emails', []));
             if (! in_array(strtolower((string) $user->email), $skipEmails, true)) {
-                $user->garantirMaterias([1, 2]);
+                try {
+                    $user->garantirMaterias([1, 2]);
+                } catch (\Throwable $e) {
+                    report($e);
+                }
             }
 
             return redirect()->intended(route('dashboard'));
