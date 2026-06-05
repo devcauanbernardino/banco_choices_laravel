@@ -746,8 +746,13 @@
 }
 
 @media (max-width: 991.98px) {
+    html:has(.lp-body),
+    .lp-body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
     .lp-hero {
-        overflow: visible;
         padding-bottom: clamp(48px, 8vw, 72px);
     }
 
@@ -763,7 +768,7 @@
         aspect-ratio: auto;
         min-height: 0;
         height: auto;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .lp-hero__visual-anim {
@@ -781,8 +786,9 @@
     }
 
     .lp-hero-scene__glow {
-        inset: 0;
-        filter: blur(20px);
+        inset: 6px;
+        filter: blur(16px);
+        opacity: 0.65;
     }
 
     .lp-hero-scene__panel {
@@ -797,6 +803,9 @@
         max-height: none;
         transform: none;
         animation: none;
+        box-shadow:
+            0 12px 28px rgba(106, 3, 146, 0.12),
+            0 4px 12px rgba(15, 23, 42, 0.05);
     }
 
     .lp-hero-scene__panel--back {
@@ -839,6 +848,10 @@
     .lp-hero__visual {
         max-width: 100%;
         margin-top: 20px;
+    }
+
+    .lp-hero-scene__glow {
+        display: none;
     }
 
     .lp-hero-scene__panel--back {
