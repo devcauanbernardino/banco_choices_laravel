@@ -116,7 +116,7 @@ final class Branding
 
     public static function faviconPublicPath(): string
     {
-        return self::resolveFaviconFile()['rel'] ?? 'img/logo-bd-favicon.png';
+        return self::resolveFaviconFile()['rel'] ?? 'img/favicon-logo.svg';
     }
 
     public static function faviconMimeType(): string
@@ -127,19 +127,39 @@ final class Branding
     }
 
     /**
-     * Prefer the named route so Plan B works even when static files are only in the repo public/.
+     * Public URL with cache-bust (Plan B: rota Laravel ou asset no docroot).
      */
     public static function faviconUrl(): string
     {
-        if (\Illuminate\Support\Facades\Route::has('favicon')) {
-            return route('favicon');
-        }
-
         $resolved = self::resolveFaviconFile();
-        if ($resolved === null) {
-            return asset('img/logo-bd-favicon.png');
+        $rel = $resolved['rel'] ?? 'img/favicon-logo.svg';
+
+        $base = \Illuminate\Support\Facades\Route::has('favicon')
+            ? route('favicon')
+            : asset($rel);
+
+        if ($resolved !== null && is_file($resolved['path'])) {
+            return $base.'?v='.filemtime($resolved['path']);
         }
 
-        return asset($resolved['rel']);
+        return $base;
+    }
+
+    /**
+     * Inline data-URI for SVG — evita cache agressivo de /favicon.ico no browser.
+     */
+    public static function faviconInlineDataUri(): ?string
+    {
+        $resolved = self::resolveFaviconFile();
+        if ($resolved === null || $resolved['mime'] !== 'image/svg+xml') {
+            return null;
+        }
+
+        $svg = @file_get_contents($resolved['path']);
+        if (! is_string($svg) || trim($svg) === '') {
+            return null;
+        }
+
+        return 'data:image/svg+xml,'.rawurlencode($svg);
     }
 }

@@ -43,7 +43,7 @@ class LandingPublicaTest extends TestCase
         $response = $this->get('/');
 
         $response->assertOk();
-        $response->assertSee('/favicon.ico', false);
+        $response->assertSee('rel="icon"', false);
     }
 
     public function test_demo_show_renders(): void
