@@ -746,6 +746,11 @@
 }
 
 @media (max-width: 991.98px) {
+    .lp-hero {
+        overflow: visible;
+        padding-bottom: clamp(48px, 8vw, 72px);
+    }
+
     .lp-hero__grid > div:last-child {
         width: 100%;
         min-width: 0;
@@ -755,8 +760,10 @@
         max-width: min(400px, 100%);
         width: 100%;
         margin: clamp(20px, 5vw, 32px) auto 0;
-        aspect-ratio: 1 / 1.02;
-        min-height: clamp(260px, 72vw, 380px);
+        aspect-ratio: auto;
+        min-height: 0;
+        height: auto;
+        overflow: visible;
     }
 
     .lp-hero__visual-anim {
@@ -764,31 +771,53 @@
     }
 
     .lp-hero-scene {
+        position: relative;
+        inset: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
         perspective: none;
+        min-height: 0;
     }
 
     .lp-hero-scene__glow {
-        inset: 4% 0;
+        inset: 0;
         filter: blur(20px);
     }
 
-    .lp-hero-scene__panel--back {
-        width: 54%;
-        height: 42%;
-        top: 8%;
-        right: 4%;
-        transform: translateY(0) translateX(4px);
+    .lp-hero-scene__panel {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        transform: none;
         animation: none;
     }
 
+    .lp-hero-scene__panel--back {
+        align-self: flex-end;
+        width: min(52%, 220px);
+        padding: 0.85rem 0.95rem;
+        order: -1;
+    }
+
     .lp-hero-scene__panel--main {
-        left: 0;
-        right: 0;
+        left: auto;
+        bottom: auto;
         width: 100%;
-        max-width: 100%;
+        max-height: none;
         padding: 0.95rem 1rem 1.05rem;
         transform: none;
         animation: none;
+    }
+
+    .lp-hero-panel__spark {
+        display: none;
     }
 
     .lp-hero-q__head {
@@ -809,25 +838,15 @@
 @media (max-width: 575.98px) {
     .lp-hero__visual {
         max-width: 100%;
-        aspect-ratio: auto;
-        min-height: 300px;
         margin-top: 20px;
     }
 
     .lp-hero-scene__panel--back {
-        width: 50%;
-        height: 38%;
-        top: 6%;
-        right: 2%;
+        display: none;
     }
 
     .lp-hero-scene__panel--main {
-        bottom: 0;
         padding: 0.85rem 0.9rem 0.95rem;
-    }
-
-    .lp-hero-panel__bars {
-        height: 72px;
     }
 
     .lp-hero-q__letter {
