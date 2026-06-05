@@ -17,6 +17,11 @@ if [[ ! -d "$DOCROOT" ]]; then
     exit 1
 fi
 
+if [[ -f "$REPO/public/.htaccess" ]]; then
+    cp -f "$REPO/public/.htaccess" "$DOCROOT/.htaccess"
+    echo "OK: .htaccess -> $DOCROOT/.htaccess"
+fi
+
 for dir in img assets; do
     if [[ -d "$REPO/public/$dir" ]]; then
         mkdir -p "$DOCROOT/$dir"
