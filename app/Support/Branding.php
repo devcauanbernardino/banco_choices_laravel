@@ -58,9 +58,11 @@ final class Branding
 
         return array_values(array_unique([
             ...$list,
-            'assets/img/favicon.svg',
             'img/logo-bd-favicon.png',
             'assets/img/logo-bd-favicon.png',
+            'img/logo-bd-transparente.png',
+            'assets/img/logo-bd-transparente.png',
+            'assets/img/favicon.svg',
         ]));
     }
 
