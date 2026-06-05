@@ -63,18 +63,17 @@
                     <p class="demo-filter-card__empty">{{ __('demo.configurar.no_faculty') }}</p>
                 @elseif(empty($comboMeta))
                     <div class="demo-filter-card__empty">
-                        <p>{{ __('demo.configurar.empty_materias') }}</p>
+                        <p class="demo-filter-card__empty-msg">{{ __('demo.configurar.empty_materias') }}</p>
                         @if(($faculdadesComDemo ?? collect())->isNotEmpty())
                             <p class="demo-filter-card__empty-hint">{{ __('demo.configurar.empty_materias_hint') }}</p>
-                            <ul class="demo-filter-card__empty-links">
+                            <div class="demo-filter-card__empty-links">
                                 @foreach($faculdadesComDemo as $fDemo)
-                                    <li>
-                                        <a href="{{ route('demo.configurar', ['faculdade' => $fDemo->slug]) }}">
-                                            {{ $fDemo->nome }}
-                                        </a>
-                                    </li>
+                                    <a href="{{ route('demo.configurar', ['faculdade' => $fDemo->slug]) }}" class="demo-filter-card__empty-link">
+                                        <span>{{ $fDemo->nome }}</span>
+                                        <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
+                                    </a>
                                 @endforeach
-                            </ul>
+                            </div>
                         @endif
                     </div>
                 @else
