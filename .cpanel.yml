@@ -3,13 +3,4 @@
 # Plano B: código em repositories/; site em bancodechoices.com/
 deployment:
   tasks:
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git reset --hard HEAD
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan bancodechoices:bootstrap-db
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan route:clear
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan view:clear
-    - /bin/rm -f /home2/cauanb36/repositories/banco_choices_laravel/bootstrap/cache/config.php
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan config:clear
-    - /bin/mkdir -p /home2/cauanb36/bancodechoices.com/img /home2/cauanb36/bancodechoices.com/assets
-    - /bin/cp -R /home2/cauanb36/repositories/banco_choices_laravel/public/img/. /home2/cauanb36/bancodechoices.com/img/
-    - /bin/cp -R /home2/cauanb36/repositories/banco_choices_laravel/public/assets/. /home2/cauanb36/bancodechoices.com/assets/
-    - /bin/rm -f /home2/cauanb36/bancodechoices.com/favicon.ico
+    - /bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh >> /home2/cauanb36/deploy-auto.log 2>&1

@@ -1,0 +1,7 @@
+# cPanel → Cron Jobs → Common Settings: Every 15 minutes (ou cola */15 * * * *)
+
+/bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh >> /home2/cauanb36/deploy-auto.log 2>&1
+
+# Log: /home2/cauanb36/deploy-auto.log
+# "Sem atualizações" = normal, nada novo no GitHub
+# "Deploy concluído" = site atualizado

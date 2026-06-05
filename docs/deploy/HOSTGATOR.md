@@ -115,11 +115,27 @@ php artisan view:clear
 
 ## 7. Atualizar depois
 
-**Push no GitHub não faz deploy automático** neste projeto (o CI só corre testes). Escolhe um fluxo:
+### Deploy automático (recomendado)
+
+Cron **a cada 15 minutos** — verifica o GitHub e só aplica se `main` mudou:
+
+```text
+*/15 * * * * /bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh >> /home2/cauanb36/deploy-auto.log 2>&1
+```
+
+Log: `/home2/cauanb36/deploy-auto.log`  
+Script: [`deploy/hostgator-auto-deploy.sh`](../../deploy/hostgator-auto-deploy.sh)
+
+O que faz quando há commit novo: `git fetch` → `reset --hard` → `migrate` → limpar cache de views/rotas → copiar `img/`/`assets/` para `bancodechoices.com/`.  
+**Não** volta a correr seeders nem `config:cache`.
+
+**Primeira vez:** Git → **Update from Remote** (para o script existir no servidor), depois ativa o cron.
+
+### Manual
 
 | Fluxo | O que fazer |
 |--------|-------------|
-| **Git no servidor** | `git pull` em `repositories/banco_choices_laravel` + `bash deploy/sync-public-docroot.sh` (Plano B) + `php artisan migrate --force` + `view:clear` |
+| **Git no servidor** | **Update from Remote** ou `bash deploy/hostgator-auto-deploy.sh` |
 | **ZIP manual** | No PC: `.\scripts\build-hostgator-deploy.ps1`, upload, extrair |
 
 Comandos típicos no servidor após atualizar código:
