@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faculdade;
+use App\Support\DemoAvailability;
 
 class PageController extends Controller
 {
@@ -19,6 +20,7 @@ class PageController extends Controller
         return view('pages.index', [
             'faculdades' => $faculdades,
             'stats' => $stats,
+            'demoCounts' => DemoAvailability::demoCountByFaculdadeSlug(),
         ]);
     }
 }

@@ -32,7 +32,6 @@
                 @if($facultadAtiva)
                     <div class="demo-funnel__context">
                         <span class="demo-funnel__context-dot" aria-hidden="true"></span>
-                        <span class="demo-funnel__context-label">{{ $facultadAtiva->nome }}</span>
                         <label class="visually-hidden" for="cfg_faculdade">{{ __('demo.configurar.switch_faculty') }}</label>
                         <select id="cfg_faculdade" class="bc-styled-select" name="fac_nav">
                             @foreach($faculdades as $f)
@@ -63,7 +62,21 @@
                 @if(!$facultadAtiva)
                     <p class="demo-filter-card__empty">{{ __('demo.configurar.no_faculty') }}</p>
                 @elseif(empty($comboMeta))
-                    <p class="demo-filter-card__empty">{{ __('demo.configurar.empty_materias') }}</p>
+                    <div class="demo-filter-card__empty">
+                        <p>{{ __('demo.configurar.empty_materias') }}</p>
+                        @if(($faculdadesComDemo ?? collect())->isNotEmpty())
+                            <p class="demo-filter-card__empty-hint">{{ __('demo.configurar.empty_materias_hint') }}</p>
+                            <ul class="demo-filter-card__empty-links">
+                                @foreach($faculdadesComDemo as $fDemo)
+                                    <li>
+                                        <a href="{{ route('demo.configurar', ['faculdade' => $fDemo->slug]) }}">
+                                            {{ $fDemo->nome }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @endif
+                    </div>
                 @else
                     <form method="post" action="{{ route('demo.iniciar') }}" id="demoFilterForm" novalidate>
                         @csrf
@@ -148,6 +161,20 @@
 @if($facultadAtiva)
 @push('scripts')
 <script src="{{ asset('assets/js/styled-select.js') }}?v={{ filemtime(public_path('assets/js/styled-select.js')) }}"></script>
+<script>
+(function () {
+    var selFac = document.getElementById('cfg_faculdade');
+    if (!selFac) return;
+    selFac.addEventListener('change', function () {
+        var slug = String(selFac.value || '').trim();
+        if (slug === '') return;
+        var url = new URL(window.location.href);
+        if (url.searchParams.get('faculdade') === slug) return;
+        url.searchParams.set('faculdade', slug);
+        window.location.assign(url.toString());
+    });
+})();
+</script>
 @endpush
 @endif
 
@@ -481,15 +508,6 @@
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') closeAllDd(null);
     });
-
-    var selFac = document.getElementById('cfg_faculdade');
-    if (selFac) {
-        selFac.addEventListener('change', function () {
-            var url = new URL(window.location.href);
-            url.searchParams.set('faculdade', selFac.value);
-            window.location.href = url.toString();
-        });
-    }
 
     renderMateriaOptions();
     countEl.textContent = tplCount.replace(':n', '0').replace(':pack', '0');

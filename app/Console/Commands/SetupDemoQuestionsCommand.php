@@ -71,6 +71,11 @@ class SetupDemoQuestionsCommand extends Command
             $this->warn('Medicina UBA (slug uba) sem demo — microbiologia (matéria 1) precisa de questoes_microbiologia_refinado.json.');
         }
 
+        $cbc = $rows->firstWhere('slug', 'cbc');
+        if ($cbc === null || (int) $cbc->total < 1) {
+            $this->warn('CBC / UBA XXI (slug cbc) sem demo — matéria 4 precisa de biologia_cbc_1parcial_2022.json em storage/app/data.');
+        }
+
         return self::SUCCESS;
     }
 }

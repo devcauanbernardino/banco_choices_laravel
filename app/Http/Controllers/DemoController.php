@@ -7,6 +7,7 @@ use App\Models\Faculdade;
 use App\Models\Materia;
 use App\Models\Questao;
 use App\Services\Questions\QuestionExamBuilder;
+use App\Support\DemoAvailability;
 use App\Support\DemoSession;
 use App\Support\Question;
 use App\Support\QuestionBankLocator;
@@ -39,7 +40,9 @@ class DemoController extends Controller
             ->with(['agrupamentos' => fn ($q) => $q->orderBy('ordem')])
             ->get();
 
-        return view('demo.show', compact('faculdades'));
+        $demoCounts = DemoAvailability::demoCountByFaculdadeSlug();
+
+        return view('demo.show', compact('faculdades', 'demoCounts'));
     }
 
     public function configurar(Request $request)
@@ -50,9 +53,8 @@ class DemoController extends Controller
             ->get();
 
         $facSlug = trim((string) $request->query('faculdade', ''));
-        $facultadAtiva = $facSlug !== ''
-            ? $faculdades->firstWhere('slug', $facSlug)
-            : $faculdades->first();
+        $requested = $facSlug !== '' ? $faculdades->firstWhere('slug', $facSlug) : null;
+        $facultadAtiva = $requested ?? DemoAvailability::firstWithDemo($faculdades) ?? $faculdades->first();
 
         $combinacoes = collect();
 
@@ -108,12 +110,20 @@ class DemoController extends Controller
             }
         }
 
+        $demoCounts = DemoAvailability::demoCountByFaculdadeSlug();
+        $faculdadesComDemo = DemoAvailability::filterWithDemo($faculdades);
+
         return view('demo.configurar', [
             'faculdades' => $faculdades,
             'facultadAtiva' => $facultadAtiva,
             'combinacoes' => $combinacoes,
             'comboMeta' => $comboMeta,
             'demoMax' => 5,
+            'demoCounts' => $demoCounts,
+            'faculdadesComDemo' => $faculdadesComDemo,
+            'faculdadeSolicitadaSemDemo' => $requested !== null
+                && $comboMeta === []
+                && ! DemoAvailability::hasDemo($requested->slug),
         ]);
     }
 

@@ -1,8 +1,12 @@
 @php
     /** @var \App\Models\Faculdade $faculdade */
     $faculdade = $faculdade ?? null;
-    $href = $href ?? ($faculdade ? route('demo.configurar', ['faculdade' => $faculdade->slug]) : '#');
-    $proximamente = $proximamente ?? false;
+    $demoCounts = $demoCounts ?? [];
+    $temDemo = $faculdade && (($demoCounts[$faculdade->slug] ?? 0) > 0);
+    $href = $href ?? ($faculdade && $temDemo
+        ? route('demo.configurar', ['faculdade' => $faculdade->slug])
+        : ($faculdade ? route('demo.show') : '#'));
+    $proximamente = $proximamente ?? ($faculdade && ! $temDemo);
     $titulo = $titulo ?? ($faculdade->nome ?? '');
     $descricao = $descricao ?? ($faculdade->descricao_curta ?? '');
     $agrupamentos = collect();

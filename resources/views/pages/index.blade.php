@@ -115,7 +115,7 @@
             <div class="lp-fac-grid">
                 @forelse($faculdades as $i => $faculdade)
                     <div class="lp-reveal" data-delay="{{ ($i % 4) + 1 }}">
-                        @include('pages.partials.faculdade-card', ['faculdade' => $faculdade])
+                        @include('pages.partials.faculdade-card', ['faculdade' => $faculdade, 'demoCounts' => $demoCounts ?? []])
                     </div>
                 @empty
                     <div class="lp-fac-card lp-fac-card--soon lp-reveal">

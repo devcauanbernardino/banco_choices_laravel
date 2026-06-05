@@ -642,6 +642,37 @@
     color: var(--lp-purple, #6a0392);
 }
 
+.demo-pick-card--soon {
+    opacity: 0.78;
+    cursor: not-allowed;
+}
+
+.demo-pick-card--soon .demo-pick-card__stripe {
+    background: linear-gradient(180deg, #9ca3af, #6b7280);
+}
+
+.demo-pick-card__soon {
+    margin: 0;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--lp-muted, #6b7280);
+}
+
+.demo-filter-card__empty-hint {
+    margin: 12px 0 8px;
+    color: var(--lp-muted, #6b7280);
+}
+
+.demo-filter-card__empty-links {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.demo-filter-card__empty-links a {
+    font-weight: 600;
+    color: var(--lp-purple, #6a0392);
+}
+
 .demo-pick-section__foot {
     padding-top: 8px;
 }
