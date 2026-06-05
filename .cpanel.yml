@@ -4,10 +4,7 @@
 deployment:
   tasks:
     - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git reset --hard HEAD
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan migrate --force
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan db:seed --class=CatalogoSeeder --force
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan bancodechoices:setup-demo-questions
-    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan bancodechoices:ensure-test-user
+    - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan bancodechoices:bootstrap-db
     - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan route:clear
     - cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan view:clear
     - /bin/rm -f /home2/cauanb36/repositories/banco_choices_laravel/bootstrap/cache/config.php

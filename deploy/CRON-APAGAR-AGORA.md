@@ -43,12 +43,28 @@ Abre o site sempre em **https://bancodechoices.com** (mesmo domínio do `APP_URL
 
 ---
 
+## BD completamente vazia (phpMyAdmin sem tabelas/dados)
+
+1. Confere `.env`: `DB_DATABASE=cauanb36_bancodechoices`, `DB_HOST=127.0.0.1`
+2. Apaga `bootstrap/cache/config.php`
+3. Cron **uma vez**:
+
+```text
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/git fetch origin main && /usr/local/bin/git reset --hard origin/main && /usr/local/bin/ea-php83 artisan config:clear && /usr/local/bin/ea-php83 artisan bancodechoices:bootstrap-db >> /home2/cauanb36/bootstrap-db.log 2>&1
+```
+
+4. Lê `bootstrap-db.log` — deve mostrar `faculdades: 4`, `questoes: …`, `questoes (is_demo=1): …`
+
+---
+
 ## Demo sem questões (“Esta faculdade ainda não tem questões demo carregadas”)
 
 Precisas de **duas coisas** no servidor:
 
 1. **Ficheiros JSON** em `repositories/banco_choices_laravel/storage/app/data/`  
    (ex.: `questoes_microbiologia_refinado.json` — envia o `data.zip` e extrai aqui)
+
+   **Atenção:** se `questoes_microbiologia_refinado.json` tiver **~1 KB**, está vazio/corrupto. No File Manager, **renomeia** o backup grande (ex. `questoes_microbiologia_refinado.json.bak.20260430_212451`) para `questoes_microbiologia_refinado.json`.
 
 2. **Cron uma vez** (ou Deploy):
 
