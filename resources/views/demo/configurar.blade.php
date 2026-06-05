@@ -62,16 +62,25 @@
                 @if(!$facultadAtiva)
                     <p class="demo-filter-card__empty">{{ __('demo.configurar.no_faculty') }}</p>
                 @elseif(empty($comboMeta))
-                    <div class="demo-filter-card__empty">
-                        <p class="demo-filter-card__empty-msg">{{ __('demo.configurar.empty_materias') }}</p>
+                    <div class="demo-filter-card__empty-state">
+                        <div class="demo-empty-callout" role="status">
+                            <span class="demo-empty-callout__icon" aria-hidden="true">
+                                <i class="bi bi-journal-x"></i>
+                            </span>
+                            <div class="demo-empty-callout__body">
+                                <p class="demo-empty-callout__title">{{ __('demo.configurar.empty_materias') }}</p>
+                                @if(($faculdadesComDemo ?? collect())->isNotEmpty())
+                                    <p class="demo-empty-callout__hint">{{ __('demo.configurar.empty_materias_hint') }}</p>
+                                @endif
+                            </div>
+                        </div>
                         @if(($faculdadesComDemo ?? collect())->isNotEmpty())
-                            <p class="demo-filter-card__empty-hint">{{ __('demo.configurar.empty_materias_hint') }}</p>
-                            <div class="demo-filter-card__empty-links">
+                            <div class="demo-pick-grid demo-pick-grid--inset">
                                 @foreach($faculdadesComDemo as $fDemo)
-                                    <a href="{{ route('demo.configurar', ['faculdade' => $fDemo->slug]) }}" class="demo-filter-card__empty-link">
-                                        <span>{{ $fDemo->nome }}</span>
-                                        <i class="bi bi-arrow-right-short" aria-hidden="true"></i>
-                                    </a>
+                                    @include('demo.partials.objetivo-card', [
+                                        'faculdade' => $fDemo,
+                                        'demoCounts' => $demoCounts ?? [],
+                                    ])
                                 @endforeach
                             </div>
                         @endif
