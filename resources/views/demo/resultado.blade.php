@@ -4,7 +4,7 @@
 @section('body_attr', ' class="lp-body demo-body"')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('assets/css/landing-v2.css') }}?v={{ filemtime(public_path('assets/css/landing-v2.css')) }}">
+    @include('pages.partials.landing-styles')
     <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}?v={{ filemtime(public_path('assets/css/demo.css')) }}">
 @endpush
 

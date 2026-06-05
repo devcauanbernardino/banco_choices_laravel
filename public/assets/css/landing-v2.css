@@ -500,6 +500,12 @@
     isolation: isolate;
 }
 
+.lp-hero__mock-mobile {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
 /* ---------- Hero: mock do quiz (mobile = card plano; desktop = cena 3D) ---------- */
 .lp-hero-scene {
     position: relative;

@@ -11,6 +11,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\FaviconController;
+use App\Http\Controllers\LandingCssController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\PageController;
@@ -27,6 +28,10 @@ use Illuminate\Support\Facades\Route;
 // ── Public ──────────────────────────────────────────────────
 Route::get('/favicon.ico', FaviconController::class)
     ->name('favicon')
+    ->withoutMiddleware([\App\Http\Middleware\SetLocale::class]);
+
+Route::get('/css/landing-v2.css', LandingCssController::class)
+    ->name('landing.css')
     ->withoutMiddleware([\App\Http\Middleware\SetLocale::class]);
 
 Route::get('/', [PageController::class, 'index'])->name('home');

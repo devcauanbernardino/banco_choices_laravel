@@ -4,7 +4,30 @@
 @section('body_attr', ' class="lp-body"')
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('assets/css/landing-v2.css') }}?v={{ filemtime(public_path('assets/css/landing-v2.css')) }}">
+    @include('pages.partials.landing-styles')
+    <style>
+        /* Garantia mobile: independe de cache no docroot /assets */
+        @media (max-width: 991.98px) {
+            html { scrollbar-gutter: auto !important; }
+            .lp-hero__grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+            .lp-hero__grid > div { width: 100% !important; min-width: 0 !important; max-width: 100% !important; }
+            .lp-hero__visual { width: 100% !important; max-width: 100% !important; margin: 20px 0 0 !important; aspect-ratio: auto !important; height: auto !important; }
+            .lp-hero__mock-mobile { width: 100%; max-width: 100%; min-width: 0; }
+            .lp-hero__mock-mobile .lp-hero-scene__panel--main {
+                position: relative !important;
+                left: auto !important;
+                bottom: auto !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                max-height: none !important;
+                transform: none !important;
+                animation: none !important;
+            }
+            .lp-stats__grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; width: 100% !important; }
+            .lp-stats__cell { min-width: 0 !important; overflow-wrap: anywhere; }
+            .lp-container, .lp-topbar__inner { max-width: 100% !important; box-sizing: border-box !important; }
+        }
+    </style>
 @endpush
 
 @section('public_topbar')
@@ -43,7 +66,12 @@
                 </div>
                 <div>
                     <div class="lp-hero__visual lp-hero__visual-anim">
-                        <div class="lp-hero-scene" aria-hidden="true">
+                        <div class="lp-hero__mock-mobile d-lg-none">
+                            <div class="lp-hero-scene__panel lp-hero-scene__panel--main">
+                                @include('pages.partials.hero-mock-card')
+                            </div>
+                        </div>
+                        <div class="lp-hero-scene d-none d-lg-block" aria-hidden="true">
                             <div class="lp-hero-scene__glow"></div>
                             <aside class="lp-hero-scene__panel lp-hero-scene__panel--back">
                                 <span class="lp-hero-panel__label">{{ __('landing.hero.mock_stats_title') }}</span>
@@ -56,32 +84,7 @@
                                 <div class="lp-hero-panel__spark"></div>
                             </aside>
                             <div class="lp-hero-scene__panel lp-hero-scene__panel--main">
-                                <header class="lp-hero-q__head">
-                                    <span class="lp-hero-q__pill">{{ __('landing.hero.mock_pill') }}</span>
-                                    <span class="lp-hero-q__progress">{{ __('landing.hero.mock_progress') }}</span>
-                                </header>
-                                <p class="lp-hero-q__stem">{{ __('landing.hero.mock_question') }}</p>
-                                <ul class="lp-hero-q__opts">
-                                    <li class="lp-hero-q__opt lp-hero-q__opt--a">
-                                        <span class="lp-hero-q__letter" aria-hidden="true">A</span>
-                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_a') }}</span>
-                                    </li>
-                                    <li class="lp-hero-q__opt lp-hero-q__opt--b">
-                                        <span class="lp-hero-q__letter" aria-hidden="true">B</span>
-                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_b') }}</span>
-                                    </li>
-                                    <li class="lp-hero-q__opt lp-hero-q__opt--c lp-hero-q__opt--correct">
-                                        <span class="lp-hero-q__letter" aria-hidden="true">C</span>
-                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_c') }}</span>
-                                        <span class="lp-hero-q__tick" aria-hidden="true">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </span>
-                                    </li>
-                                    <li class="lp-hero-q__opt lp-hero-q__opt--d">
-                                        <span class="lp-hero-q__letter" aria-hidden="true">D</span>
-                                        <span class="lp-hero-q__txt">{{ __('landing.hero.mock_opt_d') }}</span>
-                                    </li>
-                                </ul>
+                                @include('pages.partials.hero-mock-card')
                             </div>
                         </div>
                     </div>
