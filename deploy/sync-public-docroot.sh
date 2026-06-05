@@ -33,7 +33,7 @@ done
 # favicon.ico antigo (PNG) bloqueia a rota Laravel e fica em cache no browser
 rm -f "$DOCROOT/favicon.ico"
 
-for favicon in img/favicon-logo.svg assets/img/favicon-logo.svg; do
+for favicon in img/favicon-bd-round.svg img/favicon-bd-round.png img/logo-bd.png; do
     if [[ -f "$REPO/public/$favicon" ]]; then
         mkdir -p "$DOCROOT/$(dirname "$favicon")"
         cp -f "$REPO/public/$favicon" "$DOCROOT/$favicon"

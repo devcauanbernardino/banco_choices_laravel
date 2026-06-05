@@ -58,10 +58,18 @@ final class Branding
 
         return array_values(array_unique([
             ...$list,
-            'img/favicon-logo.svg',
-            'assets/img/favicon-logo.svg',
+            'img/favicon-bd-round.svg',
+            'img/favicon-bd-round.png',
+            'assets/img/favicon-bd-round.svg',
+            'assets/img/favicon-bd-round.png',
+            'img/logo-bd.png',
+            'assets/img/logo-bd.png',
+            'img/logo-bd-transparente.png',
+            'assets/img/logo-bd-transparente.png',
             'img/logo-bd-transparente.svg',
             'assets/img/logo-bd-transparente.svg',
+            'img/favicon-logo.svg',
+            'assets/img/favicon-logo.svg',
             'assets/img/favicon.svg',
             'img/logo-bd-favicon.png',
             'assets/img/logo-bd-favicon.png',
@@ -116,7 +124,7 @@ final class Branding
 
     public static function faviconPublicPath(): string
     {
-        return self::resolveFaviconFile()['rel'] ?? 'img/favicon-logo.svg';
+        return self::resolveFaviconFile()['rel'] ?? 'img/favicon-bd-round.svg';
     }
 
     public static function faviconMimeType(): string
@@ -132,7 +140,7 @@ final class Branding
     public static function faviconUrl(): string
     {
         $resolved = self::resolveFaviconFile();
-        $rel = $resolved['rel'] ?? 'img/favicon-logo.svg';
+        $rel = $resolved['rel'] ?? 'img/favicon-bd-round.svg';
 
         $base = \Illuminate\Support\Facades\Route::has('favicon')
             ? route('favicon')

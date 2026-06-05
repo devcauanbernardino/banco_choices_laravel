@@ -13,6 +13,6 @@ return [
     */
     'logo' => env('BRAND_LOGO'),
 
-    'favicon' => env('BRAND_FAVICON', 'img/favicon-logo.svg'),
+    'favicon' => env('BRAND_FAVICON', 'img/favicon-bd-round.svg'),
 
 ];

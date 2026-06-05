@@ -1,60 +1,89 @@
 <?php
 
-$root = dirname(__DIR__);
-$srcPath = $root . '/public/img/logo-bd.png';
-$outSize = 256;
+$src = __DIR__.'/../public/img/logo-bd.png';
+$outSvg = __DIR__.'/../public/img/favicon-bd-round.svg';
+$outPng = __DIR__.'/../public/img/favicon-bd-round.png';
+$size = 128;
 
-if (! is_file($srcPath)) {
-    fwrite(STDERR, "Source not found: {$srcPath}\n");
+if (! is_file($src)) {
+    fwrite(STDERR, "Source not found: $src\n");
     exit(1);
 }
 
-$src = imagecreatefrompng($srcPath);
-$w = imagesx($src);
-$h = imagesy($src);
-$cropSize = min($w, $h);
-$srcX = (int) (($w - $cropSize) / 2);
-$srcY = (int) (($h - $cropSize) / 2);
+if (! extension_loaded('gd')) {
+    fwrite(STDERR, "GD extension required\n");
+    exit(1);
+}
 
-$cropped = imagecreatetruecolor($cropSize, $cropSize);
-imagealphablending($cropped, false);
-imagesavealpha($cropped, true);
-imagecopy($cropped, $src, 0, 0, $srcX, $srcY, $cropSize, $cropSize);
+$source = imagecreatefrompng($src);
+if ($source === false) {
+    fwrite(STDERR, "Failed to load PNG\n");
+    exit(1);
+}
 
-$scaled = imagecreatetruecolor($outSize, $outSize);
-imagealphablending($scaled, true);
-imagesavealpha($scaled, true);
-imagecopyresampled($scaled, $cropped, 0, 0, 0, 0, $outSize, $outSize, $cropSize, $cropSize);
+$srcW = imagesx($source);
+$srcH = imagesy($source);
 
-$out = imagecreatetruecolor($outSize, $outSize);
-imagealphablending($out, false);
-imagesavealpha($out, true);
-$transparent = imagecolorallocatealpha($out, 0, 0, 0, 127);
-imagefill($out, 0, 0, $transparent);
+$canvas = imagecreatetruecolor($size, $size);
+imagealphablending($canvas, false);
+imagesavealpha($canvas, true);
+$transparent = imagecolorallocatealpha($canvas, 0, 0, 0, 127);
+imagefill($canvas, 0, 0, $transparent);
 
-$cx = $outSize / 2;
-$cy = $outSize / 2;
-$r = $outSize / 2;
+$scale = $size / max($srcW, $srcH);
+$dstW = (int) round($srcW * $scale);
+$dstH = (int) round($srcH * $scale);
+$dstX = (int) round(($size - $dstW) / 2);
+$dstY = (int) round(($size - $dstH) / 2);
 
-for ($x = 0; $x < $outSize; $x++) {
-    for ($y = 0; $y < $outSize; $y++) {
-        $dx = $x - $cx + 0.5;
-        $dy = $y - $cy + 0.5;
-        if (($dx * $dx + $dy * $dy) <= ($r * $r)) {
-            imagesetpixel($out, $x, $y, imagecolorat($scaled, $x, $y));
+$resized = imagecreatetruecolor($dstW, $dstH);
+imagealphablending($resized, false);
+imagesavealpha($resized, true);
+imagefill($resized, 0, 0, $transparent);
+imagecopyresampled($resized, $source, 0, 0, 0, 0, $dstW, $dstH, $srcW, $srcH);
+
+$radius = $size / 2;
+for ($y = 0; $y < $size; $y++) {
+    for ($x = 0; $x < $size; $x++) {
+        $dx = $x - $radius + 0.5;
+        $dy = $y - $radius + 0.5;
+        if (($dx * $dx + $dy * $dy) > ($radius * $radius)) {
+            imagesetpixel($canvas, $x, $y, $transparent);
+            continue;
         }
+
+        $sx = $x - $dstX;
+        $sy = $y - $dstY;
+        if ($sx < 0 || $sy < 0 || $sx >= $dstW || $sy >= $dstH) {
+            imagesetpixel($canvas, $x, $y, $transparent);
+            continue;
+        }
+
+        $color = imagecolorat($resized, $sx, $sy);
+        imagesetpixel($canvas, $x, $y, $color);
     }
 }
 
-foreach ([
-    $root . '/public/img/logo-bd-favicon.png',
-    $root . '/public/assets/img/logo-bd-favicon.png',
-] as $dest) {
-    imagepng($out, $dest);
-    echo "Wrote {$dest}\n";
+imagepng($canvas, $outPng);
+
+$pngData = file_get_contents($outPng);
+if ($pngData === false) {
+    fwrite(STDERR, "Failed to read generated PNG\n");
+    exit(1);
 }
 
-imagedestroy($src);
-imagedestroy($cropped);
-imagedestroy($scaled);
-imagedestroy($out);
+$b64 = base64_encode($pngData);
+$svg = <<<SVG
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {$size} {$size}" width="{$size}" height="{$size}" role="img" aria-hidden="true">
+  <image href="data:image/png;base64,{$b64}" width="{$size}" height="{$size}" preserveAspectRatio="xMidYMid meet"/>
+</svg>
+SVG;
+
+file_put_contents($outSvg, $svg);
+
+imagedestroy($source);
+imagedestroy($resized);
+imagedestroy($canvas);
+
+echo "OK: $outPng\n";
+echo "OK: $outSvg\n";
