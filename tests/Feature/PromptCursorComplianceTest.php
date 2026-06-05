@@ -80,7 +80,10 @@ class PromptCursorComplianceTest extends TestCase
         $this->withCookie('bc_demo_session', $uuid)->post(route('demo.iniciar'), [
             'materia_id' => $mat->id,
         ])
-            ->assertRedirect(route('demo.paywall'));
+            ->assertRedirect(route('demo.paywall', [
+                'motivo' => 'limite_materia',
+                'materia_id' => $mat->id,
+            ]));
 
         $paywallResp = $this->get(route('demo.paywall'));
         $paywallResp->assertOk();

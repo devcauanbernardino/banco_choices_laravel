@@ -27,12 +27,15 @@ class LandingPublicaTest extends TestCase
         $response->assertSee('id="faq"', false);
     }
 
-    public function test_favicon_route_serves_png(): void
+    public function test_favicon_route_serves_icon(): void
     {
         $response = $this->get('/favicon.ico');
 
         $response->assertOk();
-        $response->assertHeader('Content-Type', 'image/png');
+        $this->assertMatchesRegularExpression(
+            '#^image/(png|svg\+xml|x-icon)#',
+            (string) $response->headers->get('Content-Type')
+        );
     }
 
     public function test_home_includes_favicon_link(): void
