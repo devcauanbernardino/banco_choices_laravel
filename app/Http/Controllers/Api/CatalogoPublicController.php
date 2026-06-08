@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Faculdade;
 use App\Models\Materia;
+use App\Support\QuestionBankLocator;
 use Illuminate\Http\Request;
 
 /** Catálogo completo para fluxos públicos (signup / demo / addons via filtro próprio no blade). */
@@ -58,13 +59,16 @@ class CatalogoPublicController extends Controller
             $q->whereNotIn('id', array_unique($exclude));
         }
 
-        $rows = $q->get()->map(fn (Materia $m) => [
-            'id' => $m->id,
-            'nome' => $m->nome,
-            'slug' => $m->slug,
-            'ordem' => $m->ordem,
-            'catedras_count' => (int) ($m->catedras_count ?? 0),
-        ]);
+        $rows = $q->get()
+            ->filter(fn (Materia $m) => QuestionBankLocator::hasBank((int) $m->id))
+            ->map(fn (Materia $m) => [
+                'id' => $m->id,
+                'nome' => $m->nome,
+                'slug' => $m->slug,
+                'ordem' => $m->ordem,
+                'catedras_count' => (int) ($m->catedras_count ?? 0),
+            ])
+            ->values();
 
         return response()->json(['data' => $rows]);
     }

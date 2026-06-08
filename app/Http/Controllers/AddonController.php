@@ -6,6 +6,7 @@ use App\Models\Materia;
 use App\Support\CheckoutDraftSession;
 use App\Support\Countries;
 use App\Support\PricingDisplay;
+use App\Support\QuestionBankLocator;
 use App\Support\SignupFlow;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,10 +18,13 @@ class AddonController extends Controller
         $user = Auth::user();
         $ownedIds = array_values(array_unique($user->materias()->pluck('materias.id')->all()));
 
-        $idsNaoPossuidos = Materia::query()
-            ->when($ownedIds !== [], fn ($q) => $q->whereNotIn('id', $ownedIds))
-            ->pluck('id')
-            ->all();
+        $idsNaoPossuidos = QuestionBankLocator::filterIdsWithBank(
+            Materia::query()
+                ->when($ownedIds !== [], fn ($q) => $q->whereNotIn('id', $ownedIds))
+                ->pluck('id')
+                ->map(fn ($id) => (int) $id)
+                ->all()
+        );
 
         if ($request->isMethod('post')) {
             $request->validate([
@@ -33,6 +37,7 @@ class AddonController extends Controller
                 array_map('intval', $request->input('materias', [])),
                 fn (int $id) => $id > 0 && in_array($id, $allowed, true)
             )));
+            $picked = QuestionBankLocator::filterIdsWithBank($picked);
 
             if ($picked === []) {
                 return redirect()->route('addon.materias')->with('error', __('addon.select_min'));

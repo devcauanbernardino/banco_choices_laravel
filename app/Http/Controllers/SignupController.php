@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Materia;
+use App\Support\QuestionBankLocator;
 use App\Support\SignupFlow;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -13,7 +14,10 @@ class SignupController extends Controller
     {
         $presetMateriaId = (int) request()->query('materia_id', 0);
 
-        if ($presetMateriaId > 0 && ! DB::table('materias')->where('id', $presetMateriaId)->exists()) {
+        if ($presetMateriaId > 0 && (
+            ! DB::table('materias')->where('id', $presetMateriaId)->exists()
+            || ! QuestionBankLocator::hasBank($presetMateriaId)
+        )) {
             $presetMateriaId = 0;
         }
 
@@ -42,6 +46,19 @@ class SignupController extends Controller
                 'materias' => __('signup.err.min_materias'),
             ])->withInput();
         }
+
+        $withBank = QuestionBankLocator::filterIdsWithBank($ids);
+        if ($withBank === []) {
+            return redirect()->back()->withErrors([
+                'materias' => __('signup.err.materia_sem_banco'),
+            ])->withInput();
+        }
+        if (count($withBank) < count($ids)) {
+            return redirect()->back()->withErrors([
+                'materias' => __('signup.err.materia_sem_banco'),
+            ])->withInput();
+        }
+        $ids = $withBank;
 
         $request->session()->put('signup_materias', $ids);
 

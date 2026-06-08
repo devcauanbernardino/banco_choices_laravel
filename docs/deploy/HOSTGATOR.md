@@ -117,10 +117,16 @@ php artisan view:clear
 
 ### Deploy automático (recomendado)
 
-Cron **a cada 15 minutos** — verifica o GitHub e só aplica se `main` mudou:
+Cron — verifica o GitHub e só aplica se `main` mudou. **Recomendado: a cada 5 minutos** (podes usar 2 ou 1 min se quiseres deploy mais rápido):
+
+| Intervalo | Expressão cron |
+|-----------|----------------|
+| 5 min (recomendado) | `*/5 * * * *` |
+| 2 min | `*/2 * * * *` |
+| 1 min (máximo) | `* * * * *` |
 
 ```text
-*/15 * * * * /bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh >> /home2/cauanb36/deploy-auto.log 2>&1
+*/5 * * * * /bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh >> /home2/cauanb36/deploy-auto.log 2>&1
 ```
 
 Log: `/home2/cauanb36/deploy-auto.log`  

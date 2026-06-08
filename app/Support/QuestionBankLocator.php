@@ -33,6 +33,23 @@ final class QuestionBankLocator
         return storage_path('app/data/'.self::filenameFor($materiaId));
     }
 
+    public static function hasBank(int $materiaId): bool
+    {
+        return self::loadCanonicalList($materiaId) !== [];
+    }
+
+    /**
+     * @param  list<int>  $ids
+     * @return list<int>
+     */
+    public static function filterIdsWithBank(array $ids): array
+    {
+        return array_values(array_filter(
+            $ids,
+            fn (int $id) => $id > 0 && self::hasBank($id)
+        ));
+    }
+
     /**
      * Lista canónica ordenada pela posição original no JSON (para overlay_key).
      *

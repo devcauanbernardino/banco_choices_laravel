@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Deploy automático Plano B — corre via cron; só aplica se origin/main mudou.
 #
-# Cron (cPanel, a cada 15 min):
+# Cron (cPanel — recomendado a cada 5 min: */5 * * * *):
 #   /bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh >> /home2/cauanb36/deploy-auto.log 2>&1
 
 set -euo pipefail
