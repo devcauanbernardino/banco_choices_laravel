@@ -10,7 +10,7 @@
 @push('scripts')
 <script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}"></script>
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
     var exclude = new Set(String(@json($excludeIdsCsv)).split(',').map(function (x) {
         var n = parseInt(String(x).trim(), 10);
         return Number.isFinite(n) && n > 0 ? n : null;
@@ -54,6 +54,9 @@
     var boxSelected = el('catalog_selected_ids');
     var btnAdd = el('catalog_btn_add');
     var errBox = el('catalog_err');
+    var materiasForm = document.getElementById('materiasForm');
+    var btnContinue = materiasForm ? materiasForm.querySelector('button[type="submit"]') : null;
+    var storageKey = 'bc_signup_materias_cart';
 
     function showErr(msg) {
         if (!errBox) return;
@@ -150,36 +153,97 @@
         });
     }
 
+    function syncContinueButton() {
+        if (!btnContinue) return;
+        var hasItems = selected.size > 0;
+        btnContinue.disabled = !hasItems;
+        btnContinue.setAttribute('aria-disabled', hasItems ? 'false' : 'true');
+    }
+
+    function persistCart() {
+        try {
+            var payload = [];
+            selected.forEach(function (label, mid) {
+                payload.push({ id: mid, label: label });
+            });
+            sessionStorage.setItem(storageKey, JSON.stringify(payload));
+        } catch (e) { /* ignore */ }
+    }
+
+    function restoreCartFromStorage() {
+        try {
+            var raw = sessionStorage.getItem(storageKey);
+            if (!raw) return;
+            var rows = JSON.parse(raw);
+            if (!Array.isArray(rows)) return;
+            rows.forEach(function (row) {
+                var mid = parseInt(row && row.id, 10);
+                if (!(mid > 0) || exclude.has(mid) || selected.has(mid)) return;
+                selected.set(mid, String(row.label || ('#' + mid)));
+                var list = el('catalog_chips');
+                if (list) {
+                    var li = document.createElement('li');
+                    li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                    li.dataset.mid = String(mid);
+                    li.innerHTML = '<span>' + selected.get(mid) +
+                        '</span><button type="button" class="btn btn-sm btn-outline-danger" data-rm="'+mid+'">{{ __('signup.catalog.remove') }}</button>';
+                    list.appendChild(li);
+                }
+            });
+            renderHidden(selected);
+            syncContinueButton();
+        } catch (e) { /* ignore */ }
+    }
+
+    function addCurrentSelection() {
+        return new Promise(function (resolve, reject) {
+            showErr('');
+            var mid = parseInt(selMat && selMat.value, 10);
+            if (!(mid > 0)) {
+                reject(new Error('{{ __('signup.catalog.err_pick_materia') }}'));
+                return;
+            }
+            if (selected.has(mid)) {
+                resolve(false);
+                return;
+            }
+            fetchJson(urls.cat + '?materia_id=' + encodeURIComponent(mid)).then(function (j) {
+                var cats = j.data || [];
+                if (cats.length && (!selCat || !selCat.value)) {
+                    reject(new Error('{{ __('signup.catalog.err_pick_catedra') }}'));
+                    return;
+                }
+                var labelParts = [];
+                if (selFac && selFac.options[selFac.selectedIndex]) labelParts.push(selFac.options[selFac.selectedIndex].text);
+                if (selAgr && selAgr.options[selAgr.selectedIndex]) labelParts.push(selAgr.options[selAgr.selectedIndex].text);
+                if (selMat && selMat.options[selMat.selectedIndex]) labelParts.push(selMat.options[selMat.selectedIndex].text);
+                if (cats.length && selCat && selCat.options[selCat.selectedIndex]) labelParts.push(selCat.options[selCat.selectedIndex].text);
+                selected.set(mid, labelParts.join(' — '));
+                var list = el('catalog_chips');
+                if (list) {
+                    var li = document.createElement('li');
+                    li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                    li.dataset.mid = String(mid);
+                    li.innerHTML = '<span>' + labelParts.join(' — ') +
+                        '</span><button type="button" class="btn btn-sm btn-outline-danger" data-rm="'+mid+'">{{ __('signup.catalog.remove') }}</button>';
+                    list.appendChild(li);
+                }
+                renderHidden(selected);
+                persistCart();
+                syncContinueButton();
+                resolve(true);
+            }).catch(function () {
+                reject(new Error('{{ __('signup.catalog.err_load') }}'));
+            });
+        });
+    }
+
     var selected = new Map();
 
     if (btnAdd) btnAdd.addEventListener('click', function (ev) {
         ev.preventDefault();
-        showErr('');
-        var mid = parseInt(selMat && selMat.value, 10);
-        if (!(mid > 0)) {
-            showErr('{{ __('signup.catalog.err_pick_materia') }}'); return;
-        }
-        fetchJson(urls.cat + '?materia_id=' + encodeURIComponent(mid)).then(function (j) {
-            var cats = j.data || [];
-            if (cats.length && (!selCat || !selCat.value)) {
-                showErr('{{ __('signup.catalog.err_pick_catedra') }}'); return;
-            }
-            var labelParts = [];
-            if (selFac && selFac.options[selFac.selectedIndex]) labelParts.push(selFac.options[selFac.selectedIndex].text);
-            if (selMat && selMat.options[selMat.selectedIndex]) labelParts.push(selMat.options[selMat.selectedIndex].text);
-            if (cats.length && selCat && selCat.options[selCat.selectedIndex]) labelParts.push(selCat.options[selCat.selectedIndex].text);
-            if (selected.has(mid)) return;
-            selected.set(mid, labelParts.join(' — '));
-            var list = el('catalog_chips');
-            if (list) {
-                var li = document.createElement('li');
-                li.className = 'list-group-item d-flex justify-content-between align-items-center';
-                li.dataset.mid = String(mid);
-                li.innerHTML = '<span>' + labelParts.join(' — ') +
-                    '</span><button type="button" class="btn btn-sm btn-outline-danger" data-rm="'+mid+'">{{ __('signup.catalog.remove') }}</button>';
-                list.appendChild(li);
-            }
-            renderHidden(selected);
+        addCurrentSelection().catch(function (err) {
+            showErr(err && err.message ? err.message : '{{ __('signup.catalog.err_load') }}');
         });
     });
 
@@ -191,11 +255,33 @@
             var row = document.querySelector('#catalog_chips li[data-mid="'+id+'"]');
             if (row) row.remove();
             renderHidden(selected);
+            persistCart();
+            syncContinueButton();
         }
     });
 
+    if (materiasForm) {
+        materiasForm.addEventListener('submit', function (ev) {
+            if (selected.size > 0) {
+                try { sessionStorage.removeItem(storageKey); } catch (e) { /* ignore */ }
+                return;
+            }
+            ev.preventDefault();
+            addCurrentSelection().then(function (added) {
+                if (added || selected.size > 0) {
+                    try { sessionStorage.removeItem(storageKey); } catch (e) { /* ignore */ }
+                    materiasForm.submit();
+                    return;
+                }
+                showErr('{{ __('signup.catalog.err_add_before_continue') }}');
+            }).catch(function (err) {
+                showErr(err && err.message ? err.message : '{{ __('signup.catalog.err_add_before_continue') }}');
+            });
+        });
+    }
+
     if (preMateria > 0 && !exclude.has(preMateria)) {
-        selected.set(preMateria, '#'+preMateria);
+        selected.set(preMateria, '{{ __('signup.catalog.preloaded_materia') }}');
         var list = el('catalog_chips');
         if (list) {
             var li = document.createElement('li');
@@ -206,8 +292,12 @@
             list.appendChild(li);
         }
         renderHidden(selected);
+    } else {
+        restoreCartFromStorage();
     }
-})();
+
+    syncContinueButton();
+});
 </script>
 @endpush
 
@@ -232,10 +322,11 @@
             <div id="catalog_catedra_hint" class="form-text small d-none">{{ __('signup.catalog.catedra_obrigatoria') }}</div>
         </div>
     </div>
-    <button type="button" class="btn btn-outline-primary mb-3" id="catalog_btn_add">{{ __('signup.catalog.btn_add') }}</button>
+    <button type="button" class="btn btn-outline-primary mb-2" id="catalog_btn_add">{{ __('signup.catalog.btn_add') }}</button>
+    <p class="small text-muted mb-3">{{ __('signup.catalog.hint_add_then_continue') }}</p>
     <div class="catalog-selected-summary">
         <p class="small text-muted mb-1">{{ __('signup.catalog.selected_heading') }}</p>
-        <ul class="list-group list-group-flush border rounded mb-2" id="catalog_chips"></ul>
+        <ul class="list-group list-group-flush border rounded mb-2" id="catalog_chips" data-empty-label="{{ __('signup.catalog.empty_selected') }}"></ul>
         <div id="catalog_selected_ids"></div>
     </div>
 </div>

@@ -19,6 +19,19 @@ body.signup-materias-page {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
+.signup-materias-actions .btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+#catalog_chips:empty::after {
+  content: attr(data-empty-label);
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
 .signup-materias-wrap {
   position: relative;
   display: flex;

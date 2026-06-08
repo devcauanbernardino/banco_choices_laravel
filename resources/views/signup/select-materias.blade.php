@@ -79,7 +79,7 @@
                 ])
 
                 <div class="signup-materias-actions">
-                    <button type="submit" class="btn btn-primary btn-lg fw-bold px-4 px-md-5 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg fw-bold px-4 px-md-5 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2" disabled aria-disabled="true">
                         {{ __('signup.btn.continue_plan') }}
                         <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
                     </button>
