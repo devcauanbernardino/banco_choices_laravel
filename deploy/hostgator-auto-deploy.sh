@@ -50,6 +50,7 @@ log "Atualizando $LOCAL -> $REMOTE_HASH"
 rm -f "$REPO/bootstrap/cache/config.php"
 "$PHP" artisan config:clear
 "$PHP" artisan migrate --force
+"$PHP" artisan db:seed --class=CatalogoSeeder --force
 "$PHP" artisan bancodechoices:ensure-test-user
 "$PHP" artisan route:clear
 "$PHP" artisan view:clear
