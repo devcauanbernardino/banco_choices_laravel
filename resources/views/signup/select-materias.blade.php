@@ -68,6 +68,9 @@
                         <div>{{ $error }}</div>
                     @endforeach
                 </div>
+                @push('scripts')
+                <script>try { sessionStorage.removeItem('bc_signup_materias_cart'); } catch (e) { /* ignore */ }</script>
+                @endpush
             @endif
 
             <form id="materiasForm" action="{{ route('signup.materias') }}" method="POST">
@@ -79,7 +82,7 @@
                 ])
 
                 <div class="signup-materias-actions">
-                    <button type="submit" class="btn btn-primary btn-lg fw-bold px-4 px-md-5 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2" disabled aria-disabled="true">
+                    <button type="submit" class="btn btn-primary btn-lg fw-bold px-4 px-md-5 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2">
                         {{ __('signup.btn.continue_plan') }}
                         <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
                     </button>

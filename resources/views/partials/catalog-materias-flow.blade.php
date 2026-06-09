@@ -139,12 +139,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (selMat) selMat.addEventListener('change', syncCatedra);
+    if (selMat) selMat.addEventListener('change', function () {
+        syncCatedra();
+        syncContinueButton();
+    });
 
     function renderHidden(selectedSet) {
         if (!boxSelected) return;
         boxSelected.innerHTML = '';
-        selectedSet.forEach(function (mid) {
+        selectedSet.forEach(function (label, mid) {
             var inp = document.createElement('input');
             inp.type = 'hidden';
             inp.name = 'materias[]';
@@ -153,11 +156,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function selectionReadyForContinue() {
+        var mid = parseInt(selMat && selMat.value, 10);
+        return mid > 0;
+    }
+
     function syncContinueButton() {
         if (!btnContinue) return;
-        var hasItems = selected.size > 0;
-        btnContinue.disabled = !hasItems;
-        btnContinue.setAttribute('aria-disabled', hasItems ? 'false' : 'true');
+        var canContinue = selected.size > 0 || selectionReadyForContinue();
+        btnContinue.disabled = !canContinue;
+        btnContinue.setAttribute('aria-disabled', canContinue ? 'false' : 'true');
     }
 
     function persistCart() {
@@ -209,10 +217,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             fetchJson(urls.cat + '?materia_id=' + encodeURIComponent(mid)).then(function (j) {
                 var cats = j.data || [];
-                if (cats.length && (!selCat || !selCat.value)) {
-                    reject(new Error('{{ __('signup.catalog.err_pick_catedra') }}'));
-                    return;
-                }
                 var labelParts = [];
                 if (selFac && selFac.options[selFac.selectedIndex]) labelParts.push(selFac.options[selFac.selectedIndex].text);
                 if (selAgr && selAgr.options[selAgr.selectedIndex]) labelParts.push(selAgr.options[selAgr.selectedIndex].text);
