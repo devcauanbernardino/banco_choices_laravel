@@ -124,24 +124,3 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/referidos', [ReferralController::class, 'show'])->name('referral.show');
 });
-
-// ROTA TEMPORÁRIA DE SETUP — remover após usar
-Route::get('/bc-setup-run', function () {
-    if (request('token') !== 'bc2026setup') {
-        abort(403);
-    }
-    $results = [];
-    $commands = [
-        'config:clear',
-        'migrate --force',
-        'db:seed --class=CatalogoSeeder --force',
-        'bancodechoices:ensure-test-user',
-        'route:clear',
-        'view:clear',
-    ];
-    foreach ($commands as $cmd) {
-        \Illuminate\Support\Facades\Artisan::call($cmd);
-        $results[$cmd] = \Illuminate\Support\Facades\Artisan::output();
-    }
-    return response('<pre>' . htmlspecialchars(print_r($results, true)) . "\n\nPRONTO. Apague esta rota!</pre>");
-});
