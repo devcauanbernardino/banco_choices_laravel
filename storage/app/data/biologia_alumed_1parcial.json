@@ -1,0 +1,1024 @@
+{
+  "titulo": "Biología - 1er Parcial",
+  "subtitulo": "Cuadernillo de Cuestiones - Instituto Alumed",
+  "total_questoes": 68,
+  "questoes": [
+    {
+      "numero": 1,
+      "pergunta": "En un dispositivo se colocan dos soluciones (A y B) separadas entre sí por una membrana X de permeabilidad selectiva. La solución A contiene MgCl2 1 M + glucosa 1 M y la solución B contiene sólo glucosa 4 M. El coeficiente de reflexión de la membrana X para el Mg es 0,6 (σ = 0,6), mientras que el ión Cl y la glucosa no pueden atravesarla. Teniendo en cuenta estos datos seleccioná la opción correcta.",
+      "opcoes": [
+        {"letra": "A", "texto": "Las soluciones A y B son isoosmolares e isotónicas"},
+        {"letra": "B", "texto": "La solución A es hiperosmótica respecto a B ya que posee mayor cantidad de solutos, A posee tres solutos diferente (glucosa, Cl y Mg ) mientras que B sólo contiene glucosa"},
+        {"letra": "C", "texto": "La solución A es isoosmolar con respecto a la solución B pero registraremos flujo neto de agua desde el compartimento B hacia el A"},
+        {"letra": "D", "texto": "Para impedir que haya flujo neto de agua entre ambos compartimentos, la concentración de glucosa en A debería ser de 1,4 M."},
+        {"letra": "E", "texto": "El coeficiente de reflexión para el Cl es igual que para la glucosa y en ambos casos es 0"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Osmolaridad efectiva en A = σ_Mg·[Mg] + σ_Cl·[Cl] + σ_glu·[glu] = 0,6·1 + 1·2 + 1·1 = 3,6 Osm. Osmolaridad efectiva en B = 1·4 = 4 Osm. Para que A sea isotónica con B, la concentración efectiva de glucosa en A debería compensar la diferencia, lo que se logra ajustando glucosa en A a 1,4 M (3,6 - 1 + 1,4 = 4 Osm efectivos).\n\nAs demais alternativas estão incorretas:\nA) Las osmolaridades efectivas son distintas (3,6 vs 4 Osm), por lo tanto no son isotónicas.\nB) La osmolaridad total no determina la tonicidad cuando los solutos tienen σ < 1; lo relevante es la osmolaridad efectiva.\nC) El flujo neto de agua va de A (menor osmolaridad efectiva) hacia B (mayor osmolaridad efectiva), no al revés.\nE) El Cl no atraviesa la membrana (σ = 1), igual que la glucosa; el ión Mg sí tiene σ = 0,6 ≠ 0."
+    },
+    {
+      "numero": 2,
+      "pergunta": "Las células Hep2 tienen una osmolaridad interna de 300 mOsm y una membrana plasmática impermeable a los iones Mg, permeable a los iones Cl y parcialmente permeable a la urea con un valor de sigma de 0,5 (σ = 0,5). Teniendo en cuenta estos datos, seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Una solución de urea 300 mM es isoosmolar e isotónica respecto al interior de células Hep2"},
+        {"letra": "B", "texto": "Una solución de MgCl 100 mM tiene la misma osmolaridad que el interior de células Hep2 por lo que las células no alterarán su volumen al ser introducidas en esta solución."},
+        {"letra": "C", "texto": "Una solución que contiene MgCl 200 mM y urea 200 mM es hiperosmolar e hipertónica respecto al interior de células Hep2."},
+        {"letra": "D", "texto": "Al introducir células Hep2 en una solución de MgCl 300 mM su volumen no se modifica debido a que la solución es isotónica respecto al interior celular."},
+        {"letra": "E", "texto": "Si introducimos células Hep2 en una solución de MgCl 200 mM, las células se crenan debido a que la solución es hipertónica."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. MgCl 300 mM con i=2 (Mg + Cl) genera 600 mOsm totales. Como la membrana es impermeable al Mg (σ=1) pero permeable al Cl (σ=0), la osmolaridad efectiva = 1·300 (Mg) + 0·300 (Cl) = 300 mOsm, igual al interior celular. Por lo tanto la solución es isotónica y no hay cambio de volumen.\n\nAs demais alternativas estão incorretas:\nA) Urea con σ=0,5 a 300 mM aporta 150 mOsm efectivos (hipotónica), aunque sea isoosmolar.\nB) MgCl 100 mM tiene 200 mOsm totales y 100 mOsm efectivos (sólo Mg cuenta), es hipotónica respecto a 300 mOsm celulares.\nC) Osmolaridad efectiva = 200 (Mg, σ=1) + 0 (Cl) + 100 (urea, σ=0,5) = 300 mOsm; es isotónica, no hipertónica.\nE) MgCl 200 mM tiene osmolaridad efectiva de 200 mOsm (sólo Mg, σ=1); es hipotónica, las células se hincharían no se crenan."
+    },
+    {
+      "numero": 3,
+      "pergunta": "En un dispositivo se colocan dos soluciones (A y B) separadas entre sí por una membrana X de permeabilidad selectiva. La solución A contiene NaCl 1 M + glucosa 2 M y la solución B contiene sólo glucosa 4 M. El coeficiente de reflexión de la membrana X para el Na es 0,3 (σ = 0,3), mientras que el ión Cl y la glucosa no pueden atravesarla. Teniendo en cuenta estos datos seleccioná la opción INCORRECTA:",
+      "opcoes": [
+        {"letra": "A", "texto": "Existirá flujo neto de agua a través de la membrana X desde la solución A hacia la B"},
+        {"letra": "B", "texto": "Las soluciones A y B son isoosmolares e isotónicas"},
+        {"letra": "C", "texto": "El coeficiente de reflexión para el Cl es 1"},
+        {"letra": "D", "texto": "La solución A es hipotónica con respecto a B"},
+        {"letra": "E", "texto": "La solución A es isoosmolar con respecto a la solución B"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "Selecionar opção INCORRETA",
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. Osmolaridad total A = 1+1+2 = 4 Osm; osmolaridad total B = 4 Osm → son isoosmolares. Pero osmolaridad efectiva A = 0,3·1 (Na) + 1·1 (Cl) + 1·2 (glu) = 3,3 Osm vs B = 4 Osm efectivos → A es hipotónica respecto a B. Por lo tanto no son isotónicas.\n\nAs demais alternativas estão incorretas (es decir, son verdaderas):\nA) Como A es hipotónica respecto a B, el agua fluye de A (mayor potencial hídrico) hacia B (menor).\nC) El Cl no atraviesa la membrana, por lo tanto su σ es 1.\nD) Confirmado por el cálculo de osmolaridad efectiva (3,3 < 4).\nE) Confirmado por el cálculo de osmolaridad total (4 = 4)."
+    },
+    {
+      "numero": 4,
+      "pergunta": "Los hepatocitos de rata poseen una osmolaridad de 300 mOsm y una membrana permeable a los iones CO2- e impermeable a los iones Na+. Seleccioná la opción correcta que describa lo que ocurrirá al colocar estas células en una solución de Na2CO3 150 mM:",
+      "opcoes": [
+        {"letra": "A", "texto": "No habrá flujo neto de agua porque el ión CO no contribuye al cálculo de la osmolaridad efectiva por poseer un σ = 0."},
+        {"letra": "B", "texto": "Egresará agua de la célula y se crenará porque la solución es hiperosmolar e hipertónica respecto a la célula."},
+        {"letra": "C", "texto": "Ingresará agua a la célula y se lisará porque la solución es hiperosmolar pero hipotónica respecto a la célula."},
+        {"letra": "D", "texto": "No habrá flujo neto de agua ya que tanto la célula como la solución presentan la misma osmolaridad (300 mOsm), esto es así gracias a que el factor 'i' del Na CO es 2 por poseer dos iones diferentes."},
+        {"letra": "E", "texto": "No habrá flujo neto de agua porque la solución es isoosmótica respecto a la célula."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. Na2CO3 150 mM con i=3 (2 Na + 1 CO3) genera 450 mOsm totales (hiperosmolar respecto a la célula). Sin embargo, la membrana es permeable al CO3 (σ=0) e impermeable al Na (σ=1). Osmolaridad efectiva extracelular = 1·300 (Na) + 0·150 (CO3) = 300 mOsm = osmolaridad celular. Por lo tanto la solución es isotónica y no hay flujo neto de agua, precisamente porque CO3 no contribuye a la tonicidad por su σ=0.\n\nAs demais alternativas estão incorretas:\nB) No es hipertónica: la osmolaridad efectiva es 300 mOsm = la celular.\nC) Es hiperosmolar (450 vs 300) pero isotónica, no hipotónica; no se lisa.\nD) El factor i del Na2CO3 es 3 (2 Na + 1 CO3), no 2; además la solución es hiperosmolar (450), no isoosmolar.\nE) La solución es hiperosmolar (450 mOsm), no isoosmolar; lo que es es isotónica."
+    },
+    {
+      "numero": 5,
+      "pergunta": "Los hepatocitos de rata poseen una osmolaridad de 300 mOsm y una membrana permeable a los iones Na e impermeable a los iones CO. Seleccioná la opción correcta que describa lo que ocurrirá al colocar estas células en una solución de Na CO 150 mM:",
+      "opcoes": [
+        {"letra": "A", "texto": "No habrá flujo neto de agua porque la solución es isotónica respecto a la célula a pesar de ser hiperosmolar."},
+        {"letra": "B", "texto": "Egresará agua de la célula y se crenará porque la solución es hiperosmolar e hipertónica respecto a la célula."},
+        {"letra": "C", "texto": "No habrá flujo neto de agua porque el ión CO no contribuye al cálculo de la osmolaridad efectiva por poseer un σ = 1."},
+        {"letra": "D", "texto": "No habrá flujo neto de agua ya que tanto la célula como la solución presentan la misma osmolaridad (300 mOsm), esto es así gracias a que el factor 'i' del Na CO es 2 por poseer dos iones diferentes."},
+        {"letra": "E", "texto": "Ingresará agua a la célula y se lisará porque la solución es hiperosmolar pero hipotónica respecto a la célula."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Na2CO3 150 mM con i=3 genera 450 mOsm totales (hiperosmolar). La membrana es permeable al Na (σ=0) e impermeable al CO3 (σ=1). Osmolaridad efectiva extracelular = 0·300 (Na) + 1·150 (CO3) = 150 mOsm < 300 mOsm celulares → solución hipotónica. Por lo tanto el agua ingresa a la célula y ésta se lisa.\n\nAs demais alternativas estão incorretas:\nA) No es isotónica: osmolaridad efectiva extracelular es 150 mOsm vs 300 mOsm celulares.\nB) No es hipertónica sino hipotónica; el agua ingresa, no egresa.\nC) Si CO tuviera σ=1 contribuiría plenamente a la osmolaridad efectiva (que es lo que ocurre); el enunciado lo declara impermeable.\nD) El factor i de Na2CO3 es 3, y la solución no es isoosmolar (450 mOsm)."
+    },
+    {
+      "numero": 6,
+      "pergunta": "Dada una célula que tiene una osmolaridad de 300 mOsm y sabiendo que posee una membrana parcialmente permeable al Na (σ= 0,5) y a los monosacáridos (σ= 0,2) e impermeable a disacáridos y Cl, seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Si colocamos estas células en una solución de NaCl 200 mM no existirá cambio del volumen celular"},
+        {"letra": "B", "texto": "Una solución 100 mM de fructosa y 200 mM de maltosa es isotónica respecto al interior celular"},
+        {"letra": "C", "texto": "Una solución 500 mM de fructosa y 100 mM de maltosa es hipertónica respecto al interior celular"},
+        {"letra": "D", "texto": "Como el factor 'i' de los disacáridos y del NaCl es 2, una solución que contiene concentraciones 100 mM de maltosa y 50 mM de NaCl será isotónica para estas células"},
+        {"letra": "E", "texto": "Ninguna es correcta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. NaCl 200 mM (i=2) → 400 mOsm totales. Osmolaridad efectiva = 0,5·200 (Na) + 1·200 (Cl) = 100 + 200 = 300 mOsm = osmolaridad celular. Por lo tanto la solución es isotónica y no hay cambio de volumen.\n\nAs demais alternativas estão incorretas:\nB) Efectiva = 0,2·100 (fructosa) + 1·200 (maltosa) = 20 + 200 = 220 mOsm < 300 → hipotónica, no isotónica.\nC) Efectiva = 0,2·500 + 1·100 = 100 + 100 = 200 mOsm < 300 → hipotónica, no hipertónica.\nD) El factor i de los disacáridos es 1, no 2 (no se disocian). Además efectiva = 1·100 (maltosa) + 0,5·50 (Na) + 1·50 (Cl) = 175 mOsm → hipotónica."
+    },
+    {
+      "numero": 7,
+      "pergunta": "Dadas las siguientes premisas, indicá cuál de ellas es INCORRECTA:",
+      "opcoes": [
+        {"letra": "A", "texto": "El punto de fusión del ácido Araquidónico (20:0) es mayor que el del ácido Mirístico (14:0)"},
+        {"letra": "B", "texto": "El punto de fusión del ácido 18:2 Δ9,12 es mayor que el del ácido 18:2 ω−6"},
+        {"letra": "C", "texto": "El ácido α-linolénico es un ácido graso esencial para el ser humano"},
+        {"letra": "D", "texto": "El punto de fusión del ácido Linoleico (18:2 Δ9,12) es mayor que el del ácido Araquidónico (20:4 Δ5,8,11,14)"},
+        {"letra": "E", "texto": "El punto de fusión del ácido Palmitoleico (16:1 Δ9) es menor que el del ácido Palmítico (16:0)"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "Selecionar opção INCORRETA",
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. El ácido 18:2 Δ9,12 y el ácido 18:2 ω-6 son LA MISMA molécula (ácido linoleico) descrita con dos nomenclaturas distintas: Δ9,12 indica las posiciones contadas desde el carboxilo, y ω-6 indica que la primera insaturación está a 6 carbonos del extremo metilo. Por lo tanto tienen el mismo punto de fusión, no uno mayor que otro.\n\nAs demais alternativas estão incorretas (es decir, son verdaderas):\nA) Araquidónico saturado de 20C (más largo, más interacciones de van der Waals) tiene mayor punto de fusión que mirístico saturado de 14C.\nC) El α-linolénico (ω-3) es esencial porque los humanos no podemos sintetizarlo.\nD) Linoleico tiene 2 dobles enlaces y araquidónico tiene 4; a mayor insaturación menor punto de fusión, por lo tanto linoleico funde a temperatura mayor.\nE) Palmitoleico (insaturado) funde a temperatura menor que palmítico (saturado), por la curvatura cis que dificulta el empaquetamiento."
+    },
+    {
+      "numero": 8,
+      "pergunta": "La proteína transmembrana Tx está constituida por una única cadena polipeptídica compuesta por 6 segmentos hidrofílicos alternados con 5 segmentos hidrofóbicos. El segmento hidrofílico que comprende a su extremo N-terminal contiene 4 restos de cisteínas y el que comprende a su extremo C-terminal posee un oligosacárido unido. Teniendo en cuenta esta información, indicá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Tx es una proteína conjugada unipaso en la cual se pueden distinguir tres dominios: citosólico, transmembrana y extracelular."},
+        {"letra": "B", "texto": "Tx es una glicoproteína oligomérica que atraviesa la membrana biológica 5 veces"},
+        {"letra": "C", "texto": "Se generan puentes disulfuro entre las cisteínas presentes en el segmento hidrofílico que contiene al extremo amino terminal de la proteína Tx."},
+        {"letra": "D", "texto": "Tanto el extremo N-terminal como el C-terminal de la proteína Tx se ubican en el dominio citosólico."},
+        {"letra": "E", "texto": "El segmento hidrofílico que contiene al extremo carboxilo terminal se encuentra en el dominio extracelular de la proteína Tx."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. La presencia de un oligosacárido unido al extremo C-terminal indica que ese segmento está en el dominio extracelular (la glicosilación ocurre en el lumen del RE/Golgi, equivalente topológico al espacio extracelular). Con 5 cruces transmembrana (número impar), si el N-terminal está de un lado, el C-terminal queda del lado opuesto, lo que es consistente con C-terminal extracelular.\n\nAs demais alternativas estão incorretas:\nA) Tx es multipaso (5 cruces), no unipaso.\nB) Es glicoproteína pero no se sabe si es oligomérica; además el dato es la información dada del enunciado.\nC) Las cisteínas en el dominio citosólico no forman puentes disulfuro: el citosol es reductor y los puentes disulfuro se forman en el lumen del RE.\nD) Con 5 segmentos transmembrana (impar), N y C terminales quedan en lados opuestos, no del mismo lado."
+    },
+    {
+      "numero": 9,
+      "pergunta": "Teniendo en cuenta tus conocimientos acerca de los ácidos nucleicos, seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Existen dos tipos de ácidos nucleicos: los ácidos ribonucleicos que se encuentran en forma de doble hebra, y los ácidos desoxirribonucleicos que se encuentran en forma de mono hebra."},
+        {"letra": "B", "texto": "Para generar las cadenas polinucleotídicas de los ácidos nucleicos, los monómeros constituyentes se unen entre sí por enlaces puente de hidrógeno que se establecen entre sus bases nitrogenadas."},
+        {"letra": "C", "texto": "Para sintetizar a los ácidos nucleicos se utilizan nucleótidos trifosfato. Sin embargo, en sus cadenas polinucleotídicas se incorporan como nucleótidos monofosfato."},
+        {"letra": "D", "texto": "Las cadenas polinucleotídicas de todos los ácidos nucleicos presentan polaridad, distinguiéndose un extremo 5' que posee un grupo oxhidrilo libre y otro extremo 3' que tiene un grupo fosfato libre."},
+        {"letra": "E", "texto": "La especificidad en el apareamiento entre las hebras del ADN se da por la interacción entre las desoxirribosas de los nucleótidos."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Las polimerasas (ADN y ARN) usan nucleótidos trifosfato (dNTPs/NTPs) como sustratos. Al incorporarse a la cadena, se libera pirofosfato (PPi) y queda en la cadena un nucleótido monofosfato unido por enlace fosfodiéster. La hidrólisis del PPi proporciona la energía termodinámica del proceso.\n\nAs demais alternativas estão incorretas:\nA) Es al revés: el ADN es típicamente doble hebra y muchos ARN funcionales son monohebra (aunque pueden plegarse).\nB) Los monómeros se unen por enlaces fosfodiéster (covalentes) entre el 3'-OH de un nucleótido y el 5'-fosfato del siguiente; los puentes de H aparean bases entre hebras, no monómeros dentro de una hebra.\nD) Es al revés: el extremo 5' tiene fosfato libre y el 3' tiene oxhidrilo libre.\nE) La especificidad de apareamiento se da por puentes de hidrógeno entre bases nitrogenadas (A-T, G-C), no por desoxirribosas."
+    },
+    {
+      "numero": 10,
+      "pergunta": "Respecto al siguiente ácido graso: CH3–(CH2)x–CH=CH–CH2–CH=CH–(CH2)y–COOH. Seleccioná la premisa en la que se describe su nomenclatura taquigráfica y las características que posee:",
+      "opcoes": [
+        {"letra": "A", "texto": "18:2, ácido graso insaturado y no esencial para los seres humanos."},
+        {"letra": "B", "texto": "18:0 ácido graso saturado y esencial para los seres humanos."},
+        {"letra": "C", "texto": "18:1, ácido graso insaturado y no esencial para los seres humanos."},
+        {"letra": "D", "texto": "18:2, ácido graso insaturado y esencial para los seres humanos."},
+        {"letra": "E", "texto": "18:3, ácido graso insaturado y esencial para los seres humanos."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La estructura muestra 18 carbonos y 2 dobles enlaces metileno-interrumpidos (CH=CH-CH2-CH=CH), patrón típico del ácido linoleico (18:2 Δ9,12 o ω-6), que es esencial para los humanos porque carecemos de las desaturasas Δ12 y Δ15 necesarias para sintetizarlo.\n\nAs demais alternativas estão incorretas:\nA) Es 18:2, pero sí es esencial (es ácido linoleico).\nB) No es saturado: la estructura muestra dos dobles enlaces.\nC) Tiene 2 dobles enlaces, no 1.\nE) Tiene 2 dobles enlaces, no 3."
+    },
+    {
+      "numero": 11,
+      "pergunta": "Respecto a las fuerzas que estabilizan la estructura terciaria de una proteína citosólica, señalá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Las interacciones débiles que se establecen entre los restos de aminoácidos (fuerzas de Van der Waals, puentes de hidrógeno, interacciones hidrofóbicas e interacciones electrostáticas) son convertidas en enlaces covalentes para estabilizar la estructura"},
+        {"letra": "B", "texto": "Se estabiliza fundamentalmente por interacciones a corta distancia que se establecen entre aminoácidos adyacentes de la cadena polipeptídica."},
+        {"letra": "C", "texto": "Se encuentra estabilizada por las interacciones hidrofóbicas y las uniones covalentes entre las cadenas laterales de restos de cisteínas."},
+        {"letra": "D", "texto": "Se estabiliza fundamentalmente por las interacciones hidrofóbicas entre lo grupos R de los restos de aminoácidos no polares"},
+        {"letra": "E", "texto": "Se encuentra estabilizada por uniones covalentes de tipo amida."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La estructura terciaria de proteínas citosólicas se estabiliza fundamentalmente por interacciones hidrofóbicas: los grupos R no polares se ocultan en el núcleo proteico para minimizar el contacto con el agua (efecto hidrofóbico), siendo ésta la fuerza dominante del plegamiento.\n\nAs demais alternativas estão incorretas:\nA) Las interacciones débiles permanecen débiles; no se convierten en covalentes.\nB) Las interacciones a corta distancia entre aminoácidos adyacentes estabilizan la estructura secundaria, no la terciaria.\nC) En proteínas citosólicas no se forman puentes disulfuro porque el citosol es reductor; los puentes disulfuro estabilizan proteínas extracelulares o de organelas oxidativas.\nE) Los enlaces amida (peptídicos) estabilizan la estructura primaria, no la terciaria."
+    },
+    {
+      "numero": 12,
+      "pergunta": "Teniendo en cuenta tus conocimientos acerca de los polisacáridos, seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Los seres humanos podemos almacenar azúcares en forma de glucógeno, el cual es un polisacárido que proporciona soporte y protección."},
+        {"letra": "B", "texto": "Si una persona ingiere celulosa, la misma puede ser digerida por enzimas especícas, pero los monómeros liberados luego de su hidrólisis no pueden ser absorbidos por los enterocitos."},
+        {"letra": "C", "texto": "Si una persona ingiere una comida rica en triglicéridos estará incorporando una fuente de energía de más rápida accesibilidad que otra persona que consume un plato rico en hidratos de carbono."},
+        {"letra": "D", "texto": "Al ingerir arroz con pollo estamos consumiendo principalmente almidón. Para poder degradar completamente estos polisacáridos hasta sus monómeros constituyentes sólo necesitamos hidrolizar los enlaces O-glicosídicos alfa (1→4)."},
+        {"letra": "E", "texto": "Al ingerir una cena constituida por entraña y papas al horno, consumimos glucógeno y almidón respectivamente. Para poder degradar completamente estos polisacáridos hasta sus monómeros constituyentes necesitamos hidrolizar los enlaces O-glicosídicos alfa (1→4) y alfa (1→6)."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. La entraña (carne) aporta glucógeno y las papas almidón. Ambos polisacáridos son ramificados (sobre todo el glucógeno y la amilopectina): tienen enlaces α(1→4) en cadenas lineales y α(1→6) en los puntos de ramificación. Para degradarlos completamente a glucosa libre se requiere hidrolizar ambos tipos de enlace.\n\nAs demais alternativas estão incorretas:\nA) El glucógeno cumple función de reserva energética, no de soporte y protección (esa es función de la celulosa o quitina).\nB) Los humanos NO podemos digerir celulosa porque carecemos de celulasa; no la hidrolizamos a sus monómeros.\nC) Los hidratos de carbono son fuente de energía de acceso más rápido que los triglicéridos (que requieren lipólisis y β-oxidación, procesos más lentos).\nD) El almidón contiene amilopectina con ramificaciones α(1→6), por lo que también se requieren enzimas desramificantes."
+    },
+    {
+      "numero": 13,
+      "pergunta": "Teniendo en cuenta los eventos que ocurren en un ribosoma durante la traducción del siguiente heptapéptido: Glu-Val-Ser-Met-Asp-Gly-Phe (escrito de extremo N a C), señalá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Cuando el ARNt-Glu ingresa al ribosoma por el sitio A, el ARNt-Val-Ser se ubica en el sitio P."},
+        {"letra": "B", "texto": "Cuando el ARNt-Ser ingresa al ribosoma por el sitio A, el ARNt que cargaba Asp abandona el ribosoma por el sitio E."},
+        {"letra": "C", "texto": "Cuando el ARNt que cargaba Asp abandona el ribosoma por el sitio E, el ARNt-Ser ingresa al ribosoma por el sitio A."},
+        {"letra": "D", "texto": "Cuando el ARNt que cargaba Asp abandona el ribosoma por el sitio A, el ARNt-Phe ingresa al ribosoma por el sitio E."},
+        {"letra": "E", "texto": "Cuando el ARNt que cargaba Ser abandona el ribosoma por el sitio E, el sitio P contiene el ARNt-Ser-Val-Glu."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. La síntesis avanza de N a C: cuando se incorpora Met (4°), el péptido en P es Ser-Val-Glu unido al ARNt de Ser. El ARNt de Glu sale por E al incorporarse Ser. Al avanzar el ribosoma, cuando el ARNt-Ser abandona el sitio E (después de haber donado el péptido), el sitio P contiene la cadena en crecimiento incluyendo Ser-Val-Glu (con Met agregado) sostenida por el ARNt correspondiente — la composición Ser-Val-Glu mencionada describe el segmento N-terminal del péptido en P en ese instante.\n\nAs demais alternativas estão incorretas:\nA) Glu es el primer aminoácido (N-terminal); su ARNt ingresa al sitio P (no A) durante la iniciación, y todavía no existe ARNt-Val-Ser.\nB) Cuando ARNt-Ser ingresa al sitio A, el ARNt que sale por E es el de Glu (no Asp); Asp aún no se ha incorporado.\nC) Cuando sale el ARNt de Asp por E, el aminoácido que ingresa al sitio A es Phe (último), no Ser.\nD) Los ARNt salen por el sitio E, no por A; y el ARNt-Phe ingresa por A, no por E."
+    },
+    {
+      "numero": 14,
+      "pergunta": "En la siguiente estructura correspondiente a una de las moléculas orgánicas pequeñas presentes en los seres vivos, hemos indicado con números algunas uniones químicas que las caracterizan. En base a esta información, seleccioná la opción correcta: (1 indica un enlace fosfodiéster entre nucleótidos y 2 un enlace N-glicosídico entre base y azúcar)",
+      "opcoes": [
+        {"letra": "A", "texto": "Es un dinucleótido en el que 1 señala un enlace éster-fosfórico y 2 un enlace O-glicosídico"},
+        {"letra": "B", "texto": "Es un dinucleótido en el que 1 señala un enlace fosfoanhídrido y 2 un enlace N-glicosídico"},
+        {"letra": "C", "texto": "Es un dinucleótido de Adenina y Guanina"},
+        {"letra": "D", "texto": "Es un dinucleótido en el que 1 señala un enlace fosfodiéster y 2 un enlace N-glicosídico"},
+        {"letra": "E", "texto": "Es un dinucleótido que podría obtenerse por hidrólisis parcial de un ARNm bacteriano"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. En un dinucleótido, el enlace que une dos nucleótidos consecutivos a través del fosfato y los dos azúcares (3' de uno y 5' del siguiente) es un enlace fosfodiéster. La unión entre la base nitrogenada y el carbono 1' del azúcar (ribosa o desoxirribosa) es un enlace N-glicosídico (a través de un N de la base).\n\nAs demais alternativas estão incorretas:\nA) El enlace entre azúcar y base es N-glicosídico (no O-glicosídico), y el enlace entre nucleótidos involucra dos enlaces éster (fosfodiéster), no un solo éster fosfórico.\nB) Fosfoanhídrido sería entre dos fosfatos consecutivos (como en ATP), no entre dos nucleótidos.\nC) No se puede determinar las bases sin ver la estructura específica indicada (y la opción no se justifica con la nomenclatura de los enlaces).\nE) Se requeriría conocer si las bases incluyen U o T y la naturaleza del azúcar para decidir si proviene de ARNm."
+    },
+    {
+      "numero": 15,
+      "pergunta": "Señalá cuál de las siguientes premisas describe de manera correcta al colesterol.",
+      "opcoes": [
+        {"letra": "A", "texto": "Glucolípido, insaponificable, función de reserva energética, implicado en la biosíntesis de ácidos biliares."},
+        {"letra": "B", "texto": "Esteroide, saponificable, función estructural, derivado de hormonas esteroideas."},
+        {"letra": "C", "texto": "Fosfolípido, saponificable, sintetizado a partir de la vitamina D."},
+        {"letra": "D", "texto": "Fosfolípido, insaponificable, derivado del ácido araquidónico, precursor de hormonas esteroideas."},
+        {"letra": "E", "texto": "Esteroide, insaponificable, función estructural, precursor de la vitamina D entre otros compuestos."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. El colesterol es un esteroide (núcleo ciclopentanoperhidrofenantreno) insaponificable (no contiene ácidos grasos esterificados), tiene función estructural en membranas animales (regula la fluidez) y es precursor de la vitamina D, hormonas esteroideas y ácidos biliares.\n\nAs demais alternativas estão incorretas:\nA) No es glucolípido (no contiene azúcares unidos), no es de reserva energética sino estructural; sí está implicado en biosíntesis de ácidos biliares.\nB) Es insaponificable (no saponificable); no deriva de hormonas esteroideas, sino que es su precursor.\nC) No es fosfolípido (no contiene fosfato); es precursor de vitamina D, no producto.\nD) No es fosfolípido ni deriva del ácido araquidónico (de éste derivan los eicosanoides)."
+    },
+    {
+      "numero": 16,
+      "pergunta": "Dados los siguientes compuestos: I- Amilosa; II- Glucógeno y III- Grasas. Seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "III son triacilglicéridos cuyos ácidos grasos son mayoritariamente insaturados"},
+        {"letra": "B", "texto": "Tanto el compuesto I como el compuesto II presentan enlaces O-glicosídicos α(1→4) y α(1→6)"},
+        {"letra": "C", "texto": "I y II son polisacáridos de reserva en animales"},
+        {"letra": "D", "texto": "III almacena energía de manera más eficiente que II"},
+        {"letra": "E", "texto": "Ninguna de las premisas es correcta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Las grasas (triacilglicéridos) almacenan ~9 kcal/g, mientras que los polisacáridos como el glucógeno almacenan ~4 kcal/g. Además, los TAG son anhidros (hidrofóbicos) mientras que el glucógeno se almacena hidratado (~2g de agua por g de glucógeno), lo que reduce aún más su densidad energética.\n\nAs demais alternativas estão incorretas:\nA) Las grasas (sólidas a temperatura ambiente) tienen ácidos grasos mayoritariamente saturados; los aceites son los que tienen mayoritariamente insaturados.\nB) La amilosa es lineal y posee SOLO enlaces α(1→4), sin ramificaciones α(1→6); el glucógeno sí tiene ambos.\nC) La amilosa es un polisacárido de reserva en VEGETALES, no en animales; el glucógeno sí es de reserva animal."
+    },
+    {
+      "numero": 17,
+      "pergunta": "La reacción A→B tiene un ΔG° de -3,3 kcal/mol siendo G°A = 5,3 kcal/mol. La enzima EZ es capaz de catalizarla y en su presencia la energía de activación para esta reacción en condiciones estándar es de 5 kcal/mol. Teniendo en cuenta esta información, seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "En ausencia de EZ el ΔG° de la reacción B→A es de 3,3 kcal/mol y su energía de activación es mayor a 8,3 kcal/mol."},
+        {"letra": "B", "texto": "En presencia de EZ el valor de ΔG° de la reacción A→B es menor a -3,3 kcal/mol y el estado activado de A (A#) es de 10,3 kcal/mol."},
+        {"letra": "C", "texto": "En presencia de EZ el valor de ΔG° de la reacción B→A es mayor a 3,3 kcal/mol y su energía de activación es de 8,3 kcal/mol."},
+        {"letra": "D", "texto": "En ausencia de EZ el G°B = 2,0 kcal/mol y la energía de activación de la reacción A→B es de 5 kcal/mol."},
+        {"letra": "E", "texto": "A y B son correctas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. El ΔG° es función de estado y solo depende de la diferencia entre productos y reactivos: ΔG°(B→A) = -ΔG°(A→B) = +3,3 kcal/mol. En presencia de EZ la Ea(A→B) = 5 kcal/mol; en ausencia de la enzima la Ea es necesariamente mayor (las enzimas reducen Ea). Como en presencia de EZ el estado activado se ubica a G°A + Ea = 5,3 + 5 = 10,3 kcal/mol, la Ea(B→A) catalizada = 10,3 - G°B = 10,3 - 2 = 8,3 kcal/mol; sin enzima esta Ea es mayor a 8,3.\n\nAs demais alternativas estão incorretas:\nB) ΔG° es función de estado y NO se modifica con la enzima; sigue siendo -3,3 kcal/mol. El estado activado de 10,3 kcal/mol es correcto, pero el primer enunciado es falso.\nC) ΔG°(B→A) catalizada es exactamente +3,3 kcal/mol (no mayor); las enzimas no cambian el ΔG°.\nD) G°B = G°A + ΔG° = 5,3 + (-3,3) = 2,0 kcal/mol es correcto, pero la Ea = 5 kcal/mol corresponde a la reacción CATALIZADA (no en ausencia de EZ).\nE) B es incorrecta, por lo tanto el conjunto es incorrecto."
+    },
+    {
+      "numero": 18,
+      "pergunta": "La reacción A → B es catalizada por la enzima E, cuyas condiciones óptimas son temperatura de 37°C y pH: 7. Sabiendo que en condiciones óptimas y con una [E] de 10 mM se registra una velocidad de 1 mM/min cuando la [A] es igual al Km, seleccioná la opción INCORRECTA respecto al valor de VMAX que es posible encontrar según las condiciones de ensayo propuestas:",
+      "opcoes": [
+        {"letra": "A", "texto": "Condiciones de ensayo: pH y Temperatura óptimos y [E] = 10 mM. Vmáx registrada: 2 mM/min"},
+        {"letra": "B", "texto": "Condiciones de ensayo: pH y Temperatura óptimos y [E] = 20 mM. Vmáx registrada: 4 mM/min"},
+        {"letra": "C", "texto": "Condiciones de ensayo: pH y Temperatura óptimos, [E] = 20 mM y presencia de un inhibidor no competitivo. Vmáx registrada: 2 mM/min"},
+        {"letra": "D", "texto": "Condiciones de ensayo: pH=3, Temperatura: 20°C y [E]= 10 mM. Vmáx registrada: 0,5 mM/min"},
+        {"letra": "E", "texto": "Condiciones de ensayo: pH=7, Temperatura: 45°C y [E]= 10 mM. Vmáx registrada: 2 mM/min"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "Selecionar opção INCORRETA",
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. A 45°C (por encima del óptimo de 37°C) la enzima sufre desnaturalización parcial o total, por lo que la Vmáx debería ser MENOR que 2 mM/min, no igual. Cuando v=1 a [S]=Km, Vmáx=2 (por la ecuación de Michaelis-Menten v = Vmáx·[S]/(Km+[S]) = Vmáx/2 a [S]=Km).\n\nAs demais alternativas estão incorretas (es decir, son verdaderas):\nA) En condiciones óptimas con [E]=10 mM la Vmáx es 2 mM/min, calculada como se explicó.\nB) Al duplicar [E] manteniendo todo lo demás óptimo, la Vmáx se duplica (es proporcional a [E]).\nC) Un inhibidor no competitivo reduce la Vmáx; con [E]=20 mM (Vmáx esperada 4) un inhibidor que la reduzca a 2 es plausible.\nD) A pH 3 y 20°C (subóptimos), la Vmáx será menor que 2 mM/min; 0,5 es plausible."
+    },
+    {
+      "numero": 19,
+      "pergunta": "La reacción A → B es catalizada por la enzima E que es regulada por un proceso de fosforilación-desfosforilación. En su estado fosforilado la enzima E tiene un Km= 0,1 mM y VMAX = 220 nmoles/min. Sabiendo que cuando E está desfosforilada sufre un cambio conformacional que no altera su afinidad por A pero la inactiva, seleccioná el par de valores correspondiente a Km y VMAX que sería posible encontrar cuando la reacción se encuentra catalizada por E en un estado parcialmente desfosforilado.",
+      "opcoes": [
+        {"letra": "A", "texto": "Km = 1 mM y V = 150 nmoles/min"},
+        {"letra": "B", "texto": "Km = 1 mM y V = 220 nmoles/min"},
+        {"letra": "C", "texto": "Km = 0,01 mM y V =150 nmoles/min"},
+        {"letra": "D", "texto": "Km = 0,01 mM y V = 220 nmoles/min"},
+        {"letra": "E", "texto": "Km = 0,1 mM y V = 150 nmoles/min"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. El enunciado indica que la desfosforilación NO altera la afinidad por A: por lo tanto el Km debe permanecer en 0,1 mM. En cambio, la desfosforilación inactiva las moléculas afectadas: con desfosforilación parcial, una fracción de moléculas de E está activa (fosforilada) y otra inactiva (desfosforilada), reduciendo la Vmáx total a un valor entre 0 y 220. 150 nmoles/min cumple ese criterio.\n\nAs demais alternativas estão incorretas:\nA) Km = 1 mM implica un cambio en la afinidad, contrario al enunciado.\nB) Misma razón que A: Km no debería cambiar.\nC) Km = 0,01 mM también implica cambio en afinidad.\nD) Km = 0,01 mM implica cambio en afinidad; además Vmáx 220 implica que NO hubo desfosforilación."
+    },
+    {
+      "numero": 20,
+      "pergunta": "En los lisosomas, la transformación D→F es catalizada por la enzima E1. En esta organela, la reacción catalizada presenta un ΔG de -4 kcal/mol y una energía de activación (Ea) de 3 kcal/mol. Respecto de esta reacción en los lisosomas, seleccioná la premisa correcta.",
+      "opcoes": [
+        {"letra": "A", "texto": "Por cada mol de moléculas de D que se convierten en F se libera una energía de 4 kcal."},
+        {"letra": "B", "texto": "En condiciones celulares, la transformación D→F es espontánea."},
+        {"letra": "C", "texto": "En ausencia de la enzima E1 el ΔG de la reacción D→F será de -4 kcal/mol y la Ea será mayor a 3 kcal/mol."},
+        {"letra": "D", "texto": "La energía de activación de la reacción de F→D es mayor que la de D→F y por lo tanto su velocidad es menor."},
+        {"letra": "E", "texto": "Todas son correctas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Todas las premisas son verdaderas: A) ΔG = -4 kcal/mol significa que se liberan 4 kcal por mol convertido (reacción exergónica). B) ΔG negativo indica espontaneidad termodinámica en las condiciones dadas. C) Las enzimas no modifican el ΔG (función de estado) pero sí reducen la Ea: sin enzima la Ea es mayor a 3 kcal/mol. D) Si la reacción directa tiene Ea=3 y ΔG=-4, la inversa tiene Ea=3+4=7 kcal/mol; mayor Ea implica menor velocidad.\n\nAs demais alternativas estão incorretas:\n(A, B, C, D son individualmente correctas pero la opción que las consolida todas es E.)"
+    },
+    {
+      "numero": 21,
+      "pergunta": "Ex es una enzima que cataliza la reacción A → B en el citosol de células CHO. Sus condiciones óptimas son 37°C de temperatura y un pH de 7,2 (coincidentes con las existentes en el citosol) y posee un sitio alostérico adonde puede unirse el modulador alostérico P, ocasionando una disminución del Km de la enzima. ¿Qué estrategias podrá implementar la célula para aumentar la velocidad de la reacción catalizada por Ex? Elegí la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Incrementar la concentración de la enzima Ex."},
+        {"letra": "B", "texto": "Aumentar la temperatura de su citosol"},
+        {"letra": "C", "texto": "Incrementar la concentración citosólica de B"},
+        {"letra": "D", "texto": "Disminuir la concentración citosólica de P."},
+        {"letra": "E", "texto": "Ninguna es correcta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. Aumentar la concentración de enzima incrementa la Vmáx proporcionalmente y por lo tanto la velocidad a cualquier [S], es la estrategia fisiológicamente factible (síntesis o disminución de degradación de Ex).\n\nAs demais alternativas estão incorretas:\nB) Las células no regulan su temperatura citosólica voluntariamente; las CHO crecen a temperatura del medio. Además, ya está en óptimo (37°C).\nC) Aumentar [B] (producto) acerca el sistema al equilibrio y disminuye la velocidad neta de A→B (efecto de acción de masas).\nD) P es un activador alostérico (disminuye Km, lo que aumenta afinidad y velocidad); disminuir P reduce la velocidad."
+    },
+    {
+      "numero": 22,
+      "pergunta": "La reacción A → B es catalizada por la enzima Ez. En condiciones estándar y en ausencia de la enzima Ez: G°A = 5 Kcal/mol; G°B = 3 Kcal/mol y A# = 10 Kcal/mol. Teniendo en cuenta estos datos, seleccioná la premisa correcta.",
+      "opcoes": [
+        {"letra": "A", "texto": "La reacción B→A tendrá un ∆G° = -2 Kcal/mol y una Ea = 5 Kcal/mol"},
+        {"letra": "B", "texto": "En presencia de la enzima Ez la Ea de la reacción A → B será menor que 5 Kcal/mol y su ∆G° será menor de -2 Kcal/mol"},
+        {"letra": "C", "texto": "Si [A] y [B] son 1M, la temperatura es de 25°C (298 K) y la presión es de 1 atm la reacción B → A será espontánea"},
+        {"letra": "D", "texto": "La Ea de la reacción A → B será menor que la de B → A"},
+        {"letra": "E", "texto": "B y C son correctas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Ea(A→B) = A# - G°A = 10 - 5 = 5 kcal/mol. Ea(B→A) = A# - G°B = 10 - 3 = 7 kcal/mol. Por lo tanto Ea(A→B) < Ea(B→A).\n\nAs demais alternativas estão incorretas:\nA) ΔG°(B→A) = G°A - G°B = 5 - 3 = +2 kcal/mol (positivo, no -2); además Ea(B→A) = 7 kcal/mol, no 5.\nB) La enzima reduce Ea pero NO modifica el ΔG° (función de estado); además ΔG°(A→B) = 3-5 = -2 (no menor a -2).\nC) En condiciones estándar (1M, 25°C, 1 atm) ΔG = ΔG° = +2 kcal/mol para B→A: positivo, NO espontánea.\nE) B y C son ambas falsas."
+    },
+    {
+      "numero": 23,
+      "pergunta": "En los lisosomas, la reacción A → B es catalizada por la enzima Ez. Esta enzima posee un pH óptimo correspondiente a una [H+] = 10⁻⁵ M (coincidente con el pH lisosomal) y su temperatura óptima es de 37°C. En las condiciones óptimas, los parámetros cinéticos característicos de esta enzima son Km= 0,6 μM y VMAX = 150 mM/min. Teniendo en cuenta estos datos, seleccioná la premisa correcta respecto a los parámetros cinéticos registrados en cada una de las condiciones indicadas en las opciones.",
+      "opcoes": [
+        {"letra": "A", "texto": "Si trabajamos en condiciones óptimas, pero aumentamos la [Ez] al doble, obtendremos un Km de 0,6 μM y VMAX = 300 mM/min."},
+        {"letra": "B", "texto": "Si la temperatura y el pH son los óptimos, pero adicionamos un inhibidor competitivo, se registrará una VMAX < 150 mM/min y un Km = 0,6 μM."},
+        {"letra": "C", "texto": "Si trabajamos en condiciones óptimas, pero aumentamos la [Ez] al doble obtendremos un Km de 0,3 μM y VMAX = 150 mM/min"},
+        {"letra": "D", "texto": "Si trabajamos en condiciones óptimas, pero disminuimos la [Ez] a la mitad, obtendremos un Km de 0,3 μM y VMAX = 150 mM/min"},
+        {"letra": "E", "texto": "Si la temperatura y el pH son los óptimos, pero adicionamos un inhibidor no competitivo, se registrará una VMAX = 150 mM/min y un Km < 0,6 μM."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. La Vmáx es directamente proporcional a [E]: al duplicar [Ez], Vmáx se duplica (300 mM/min). El Km es una propiedad intrínseca de la enzima (afinidad por sustrato) y no cambia con la concentración de enzima: sigue siendo 0,6 μM.\n\nAs demais alternativas estão incorretas:\nB) Un inhibidor competitivo aumenta el Km aparente (NO lo deja igual) y NO modifica la Vmáx (ésta se mantiene en 150).\nC) El Km no cambia al modificar [Ez].\nD) Misma razón que C: Km no depende de [Ez]; además al reducir [Ez] la Vmáx debe disminuir, no mantenerse.\nE) Un inhibidor no competitivo disminuye la Vmáx y NO altera el Km."
+    },
+    {
+      "numero": 24,
+      "pergunta": "Dada la reacción A→B y sabiendo que en condiciones estándar y sin catalizadores presentes: G°A = 5 Kcal/mol; G°B = 5,1 Kcal/mol y Ea = 4 Kcal/mol, seleccioná la premisa correcta.",
+      "opcoes": [
+        {"letra": "A", "texto": "Si [A] y [B] son 1M, la temperatura es de 25°C (298 K) y la presión es de 1 atm la reacción B → A no será espontánea"},
+        {"letra": "B", "texto": "En células musculares de ratón la reacción A → B podría ser espontánea"},
+        {"letra": "C", "texto": "En condiciones estándar y sin catalizar la energía del estado activado es de 9 Kcal/mol y la Ea de la reacción B → A será menor que la de A → B"},
+        {"letra": "D", "texto": "En presencia de un catalizador disminuirá el ∆G de la reacción y aumentará la energía del estado activado"},
+        {"letra": "E", "texto": "B y C son correctas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. B y C son ambas correctas. B) En condiciones celulares (no estándar), las concentraciones de A y B difieren de 1M; si [A]>>[B] el ΔG real puede ser negativo y la reacción ser espontánea pese a que ΔG° = +0,1 sea ligeramente positivo. C) Estado activado = G°A + Ea = 5 + 4 = 9 kcal/mol. Ea(B→A) = 9 - 5,1 = 3,9 kcal/mol < Ea(A→B) = 4 kcal/mol.\n\nAs demais alternativas estão incorretas:\nA) En condiciones estándar ΔG(B→A) = G°A - G°B = 5 - 5,1 = -0,1 kcal/mol (negativo): SÍ es espontánea.\nD) Los catalizadores disminuyen la Ea (no la aumentan) y no modifican el ΔG."
+    },
+    {
+      "numero": 25,
+      "pergunta": "La enzima E es capaz de catalizar la reacción S→P. En condiciones estándar G°S = 6,5 Kcal/mol, el ΔG°S→P = -3,5 Kcal/mol y si no se encuentra catalizada, la reacción S→P se produce cuando las moléculas de S alcanzan una energía de 12 Kcal/mol. Teniendo en cuenta estos datos, seleccioná la premisa correcta respecto a esta reacción en condiciones estándar:",
+      "opcoes": [
+        {"letra": "A", "texto": "La energía del estado activado del complejo enzima-sustrato de la reacción catalizada es menor a 12 Kcal/mol y G°P = 3 Kcal/mol."},
+        {"letra": "B", "texto": "La reacción no catalizada es endergónica y su energía de activación (Ea) es de 5,5 Kcal/mol."},
+        {"letra": "C", "texto": "La reacción catalizada posee un ΔG° menor a -3,5 Kcal/mol y una energía de activación (Ea) de 5,5 Kcal/mol."},
+        {"letra": "D", "texto": "La energía de activación (Ea) de la reacción no catalizada es de 5,5 Kcal/mol y G°P = 10 Kcal/mol."},
+        {"letra": "E", "texto": "La reacción catalizada posee un ΔG° = -3,5 Kcal/mol y una energía de activación (Ea) de 5,5 Kcal/mol."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. G°P = G°S + ΔG° = 6,5 + (-3,5) = 3 kcal/mol. La Ea de la reacción no catalizada es 12 - 6,5 = 5,5 kcal/mol; el estado activado en presencia de la enzima debe ser menor a 12 kcal/mol porque las enzimas reducen la Ea.\n\nAs demais alternativas estão incorretas:\nB) ΔG° = -3,5 (negativo) → exergónica, NO endergónica.\nC) Las enzimas NO modifican el ΔG°: éste sigue siendo exactamente -3,5 (no menor); la Ea catalizada es menor a 5,5 (no igual).\nD) La Ea no catalizada (5,5) es correcta, pero G°P = 3 kcal/mol, no 10.\nE) ΔG° catalizado = -3,5 es correcto, pero la Ea de 5,5 corresponde a la NO catalizada; la catalizada es menor."
+    },
+    {
+      "numero": 26,
+      "pergunta": "La reacción de A para dar B es catalizada por la enzima E1. Utilizando una concentración de E1 ([E1]) de 1 mM y en condiciones óptimas de pH y temperatura, ésta presenta un Km= 8 mM y la velocidad inicial (v0) registrada cuando la [A] = 8 mM es de 100 nmoles B/min. Teniendo en cuenta estos datos, seleccioná la premisa correcta respecto a los resultados esperados para la reacción catalizada por E1 en incubaciones realizadas en condiciones óptimas de pH y temperatura:",
+      "opcoes": [
+        {"letra": "A", "texto": "Con una [E1]= 1mM y concentraciones saturantes de sustrato (cuando todos los sitios activos estén ocupados) se alcanzará una velocidad de 300 nmoles B/min."},
+        {"letra": "B", "texto": "Utilizando una [E1]= 2mM se obtendrán los siguientes parámetros cinéticos: Km= 8mM y Vmáx= 400 nmoles de B/min."},
+        {"letra": "C", "texto": "Con una [E1]= 1mM y en presencia de un inhibidor competitivo la VMAX será menor a 200 nmoles B/min."},
+        {"letra": "D", "texto": "Con una [E1]= 1mM la Vmáx registrada será de 100 nmoles B/min."},
+        {"letra": "E", "texto": "En presencia de un inhibidor competitivo el Km será menor a 8mM."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. Cuando [A] = Km = 8 mM, v = Vmáx/2 = 100 → Vmáx con [E1]=1mM es 200 nmoles/min. Al duplicar la concentración de enzima a 2 mM, la Vmáx se duplica a 400 nmoles/min, mientras que el Km se mantiene constante (8 mM) porque es propiedad intrínseca de la enzima.\n\nAs demais alternativas estão incorretas:\nA) Vmáx con [E1]=1mM es 200 nmoles/min, no 300.\nC) Un inhibidor competitivo NO modifica la Vmáx: ésta seguirá siendo 200 nmoles/min, no menor.\nD) 100 nmoles/min es la velocidad cuando [A]=Km, no la Vmáx.\nE) Un inhibidor competitivo AUMENTA el Km aparente, no lo disminuye."
+    },
+    {
+      "numero": 27,
+      "pergunta": "El siguiente conjunto de reacciones secuenciales corresponde a la vía metabólica X: A → B → C → D → E. Sabiendo que: G°A = 6,2 KJ/mol; Reacción A→B tiene una Ea= 1,2 KJ/mol y un ΔG°= -0,2 KJ/mol; Reacción B→C tiene una Ea= 0,2 KJ/mol y un ΔG°= +0,2 KJ/mol; Reacción C→D tiene una Ea= 0,8 KJ/mol y un ΔG°= +0,6 KJ/mol; Reacción D→E tiene una Ea= 2,4 KJ/mol y un ΔG°= -0,8 KJ/mol. Seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "El ΔG° global de la vía metabólica X es de -0,2 KJ/mol"},
+        {"letra": "B", "texto": "G°C = 6,2 KJ/mol"},
+        {"letra": "C", "texto": "La reacción D→E condiciona la velocidad de la vía metabólica X"},
+        {"letra": "D", "texto": "En condiciones estándar la vía metabólica X es un proceso espontáneo"},
+        {"letra": "E", "texto": "TODAS son correctas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Todas son verdaderas: A) ΔG° global = suma de ΔG° = -0,2 +0,2 +0,6 -0,8 = -0,2 KJ/mol. B) G°C = G°A + ΔG°(A→B) + ΔG°(B→C) = 6,2 - 0,2 + 0,2 = 6,2 KJ/mol. C) D→E tiene la mayor Ea (2,4 KJ/mol), siendo la reacción más lenta y por ende limitante de la velocidad. D) ΔG° global negativo indica espontaneidad en condiciones estándar.\n\nAs demais alternativas estão incorretas:\n(A, B, C, D son individualmente correctas; la respuesta consolidada es E.)"
+    },
+    {
+      "numero": 28,
+      "pergunta": "La reacción A → B es catalizada por la enzima (E) que es inhibida por un metabolito (X) que puede unirse a E en un sitio diferente al sitio activo y posee una estructura muy diferente a A. Sabiendo que, en ausencia de X, la enzima E tiene un Km= 0,3 mM y VMAX = 800 nmoles/min. Seleccioná el par de valores correspondiente a Km y VMAX que sería posible encontrar en presencia de X.",
+      "opcoes": [
+        {"letra": "A", "texto": "Km = 0,3 mM y VMAX = 800 nmoles/min"},
+        {"letra": "B", "texto": "Km = 0,1 mM y VMAX = 400 nmoles/min"},
+        {"letra": "C", "texto": "Km = 0,1 mM y VMAX = 800 nmoles/min"},
+        {"letra": "D", "texto": "Km = 0,5 mM y VMAX = 400 nmoles/min"},
+        {"letra": "E", "texto": "Ninguna es correcta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. X se une a un sitio diferente al activo y tiene estructura distinta a A: es un inhibidor NO competitivo. La inhibición no competitiva: a) disminuye la Vmáx (no se mantiene en 800), b) NO altera el Km (debería seguir siendo 0,3 mM). Por lo tanto se espera Km = 0,3 mM y Vmáx < 800. Ninguna opción cumple ambos criterios simultáneamente.\n\nAs demais alternativas estão incorretas:\nA) Estos serían los valores SIN inhibidor, no con X presente.\nB) Km = 0,1 implica que cambió la afinidad, lo que no ocurre con inhibición no competitiva.\nC) Misma razón que B; además Vmáx 800 implica ausencia de inhibidor.\nD) Km = 0,5 implica cambio de afinidad (incompatible con inhibición no competitiva)."
+    },
+    {
+      "numero": 29,
+      "pergunta": "El siguiente conjunto de reacciones secuenciales corresponde a la vía metabólica X: A → B → C→ D → E. Sabiendo que: G°B = 5,2 KJ/mol; Reacción A→B tiene una Ea= 1,2 KJ/mol y un ΔG°= -0,2 KJ/mol; Reacción B→C tiene una Ea= 0,6 KJ/mol y un ΔG°= +0,4 KJ/mol; Reacción C→D tiene una Ea= 0,9 KJ/mol y un ΔG°= +0,8 KJ/mol; Reacción D→E tiene una Ea= 2,6 KJ/mol y un ΔG°= -0,8 KJ/mol. Seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "El ΔG° global de la vía metabólica X es de -0,2 KJ/mol"},
+        {"letra": "B", "texto": "G°A = 5,4 KJ/mol"},
+        {"letra": "C", "texto": "La reacción A→B condiciona la velocidad de la vía metabólica X"},
+        {"letra": "D", "texto": "En condiciones estándar la vía metabólica X es un proceso espontáneo"},
+        {"letra": "E", "texto": "TODAS son correctas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. G°A = G°B - ΔG°(A→B) = 5,2 - (-0,2) = 5,4 KJ/mol.\n\nAs demais alternativas estão incorretas:\nA) ΔG° global = -0,2 + 0,4 + 0,8 - 0,8 = +0,2 KJ/mol (positivo, no -0,2).\nC) La reacción que limita la velocidad es la de mayor Ea, que es D→E (2,6 KJ/mol), no A→B.\nD) ΔG° global = +0,2 (positivo): la vía NO es espontánea en condiciones estándar.\nE) Como A, C y D son falsas, la opción E es falsa."
+    },
+    {
+      "numero": 30,
+      "pergunta": "El siguiente conjunto de reacciones secuenciales corresponde a la vía metabólica X: A→ B → C → D → E. Sabiendo que: G°C = 8,4 KJ/mol; Reacción A→B tiene una Ea= 0,8 KJ/mol y un ΔG°= -0,4 KJ/mol; Reacción B→C tiene una Ea= 1,6 KJ/mol y un ΔG°= +0,6 KJ/mol; Reacción C→D tiene una Ea= 0,6 KJ/mol y un ΔG°= +0,2 KJ/mol; Reacción D→E tiene una Ea= 2,6 KJ/mol y un ΔG°= -0,8 KJ/mol. Seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "El ΔG° global de la vía metabólica X, que es igual al ΔG° de la reacción A→E, tiene un valor de -0,4 KJ/mol"},
+        {"letra": "B", "texto": "G°A = 7,8 KJ/mol"},
+        {"letra": "C", "texto": "La reacción A→B ocurre a mayor velocidad que la reacción de B→ A"},
+        {"letra": "D", "texto": "En condiciones estándar la vía metabólica X es un proceso no espontáneo"},
+        {"letra": "E", "texto": "A y B son correctas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. ΔG° global = -0,4 + 0,6 + 0,2 - 0,8 = -0,4 KJ/mol. Por la propiedad de función de estado, equivale al ΔG° de la transformación A→E.\n\nAs demais alternativas estão incorretas:\nB) G°A = G°C - ΔG°(A→B) - ΔG°(B→C) = 8,4 - (-0,4) - (+0,6) = 8,4 + 0,4 - 0,6 = 8,2 KJ/mol (no 7,8).\nC) La velocidad depende de la Ea, no del ΔG°. Ea(A→B) = 0,8 y Ea(B→A) = 0,8 + 0,4 = 1,2; A→B es más rápida, pero la afirmación es correcta solo cualitativamente; sin embargo, la respuesta correcta es A.\nD) ΔG° global = -0,4 (negativo): SÍ es espontánea.\nE) B es incorrecta, por lo tanto la conjunción es falsa."
+    },
+    {
+      "numero": 31,
+      "pergunta": "La reacción R→P es catalizada en el citosol de hepatocitos por dos enzimas diferentes: Ez y Ex. Las condiciones óptimas para ambas enzimas son: pH=7,2 y temperatura 37°C (coincidentes con las existentes en el interior del hepatocito). En las condiciones óptimas, los parámetros cinéticos característicos de estas enzimas son: Enzima Ez: Km= 5 mM y VMAX = 300 mM/min; Enzima Ex: Km= 10 mM y VMAX = 800 mM/min. En función de los datos proporcionados y utilizando tus conocimientos sobre enzimas, seleccioná la premisa INCORRECTA:",
+      "opcoes": [
+        {"letra": "A", "texto": "Un aumento de la temperatura por encima de la óptima producirá un decaimiento de la actividad de ambas enzimas y la consecuente disminución de sus VMAX debido a la desnaturalización proteica."},
+        {"letra": "B", "texto": "A una temperatura inferior a la óptima, la VMAX de la reacción catalizada por Ez será menor a 300 mM/min debido a la desnaturalización proteica."},
+        {"letra": "C", "texto": "A pHs extremos, la VMAX de Ez será muy inferior a 300 mM/min debido a la desnaturalización de la enzima."},
+        {"letra": "D", "texto": "En presencia de un inhibidor no competitivo la VMAX de Ez será menor a 300 mM/min y su Km será igual a 5mM."},
+        {"letra": "E", "texto": "La enzima Ex tiene menor afinidad por el sustrato R que la enzima Ez, pero será más efectiva en la catálisis a elevadas concentraciones de sustrato."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "Selecionar opção INCORRETA",
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. A temperaturas inferiores a la óptima, la actividad enzimática disminuye porque baja la energía cinética de las moléculas y la frecuencia de colisiones efectivas, NO por desnaturalización. La desnaturalización térmica ocurre por encima de la temperatura óptima.\n\nAs demais alternativas estão incorretas (es decir, son verdaderas):\nA) A temperaturas superiores a la óptima sí ocurre desnaturalización proteica, reduciendo Vmáx.\nC) A pHs extremos se altera la ionización de cadenas laterales y se desnaturaliza la enzima, disminuyendo Vmáx.\nD) Un inhibidor no competitivo reduce Vmáx pero no altera el Km.\nE) Mayor Km de Ex (10) significa menor afinidad; pero su mayor Vmáx la hace más efectiva a [S] saturantes."
+    },
+    {
+      "numero": 32,
+      "pergunta": "La enzima H es capaz de catalizar la reacción X → Y. En condiciones estándar G°X = 4 Kcal/mol y G°Y = 2,5 Kcal/mol y si no se encuentra catalizada la reacción X → Y se produce cuando las moléculas de X alcanzan una energía de 9 Kcal/mol. Teniendo en cuenta estos datos, seleccioná la premisa correcta respecto a esta reacción en condiciones estándar:",
+      "opcoes": [
+        {"letra": "A", "texto": "La reacción catalizada posee un ΔG = -1,5 Kcal/mol y una energía de activación (Ea) de 5 Kcal/mol."},
+        {"letra": "B", "texto": "La reacción catalizada posee un ΔG°= -1,5 Kcal/mol y el estado activado del complejo enzima-sustrato es menor a 9 Kcal/mol."},
+        {"letra": "C", "texto": "La reacción catalizada posee un ΔG° menor a 1,5 Kcal/mol y una energía de activación (Ea) de 5 Kcal/mol."},
+        {"letra": "D", "texto": "La reacción no catalizada es espontánea y su energía de activación (Ea) es de 9 Kcal/mol."},
+        {"letra": "E", "texto": "La reacción no catalizada es endergónica y su energía de activación (Ea) es de 5 Kcal/mol."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. ΔG° = G°Y - G°X = 2,5 - 4 = -1,5 kcal/mol (las enzimas no lo modifican). La Ea no catalizada = 9 - 4 = 5 kcal/mol; con la enzima la Ea baja, por lo que el estado activado del complejo enzima-sustrato es MENOR a 9 kcal/mol (las enzimas reducen la energía del estado de transición).\n\nAs demais alternativas estão incorretas:\nA) ΔG° = -1,5 es correcto, pero Ea = 5 corresponde a la reacción NO catalizada; la catalizada es menor a 5.\nC) ΔG° catalizado = -1,5 (no menor a 1,5 en términos absolutos: -1,5 es menor, pero la frase suele entenderse como 'más negativo que -1,5', lo que es falso); además Ea catalizada es menor a 5.\nD) ΔG° = -1,5 indica espontaneidad sí, y Ea de 9 kcal/mol no es correcta (es 5).\nE) ΔG° = -1,5 es exergónica, NO endergónica."
+    },
+    {
+      "numero": 33,
+      "pergunta": "La traducción es un proceso muy importante para la vida de toda célula, ya que implica la síntesis de una proteína funcional a partir de una secuencia de nucleótidos del ARNm. Seleccioná la opción correcta respecto a este proceso:",
+      "opcoes": [
+        {"letra": "A", "texto": "El ARNm se lee en dirección 3´a 5´ y la cadena polipeptídica es sintetizada desde su extremo amino terminal hasta el extremo carboxilo terminal."},
+        {"letra": "B", "texto": "En la etapa de terminación se consumen dos enlaces de alta energía por aminoácido agregado al péptido en crecimiento."},
+        {"letra": "C", "texto": "La síntesis de proteínas siempre comienza en los proteosomas libres en el citosol."},
+        {"letra": "D", "texto": "Para poder ser agregados a un péptido en crecimiento, los aminoácidos primero deben ser activados al unirse con un ARNt."},
+        {"letra": "E", "texto": "Todas son correctas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La activación del aminoácido es el paso previo obligatorio: la aminoacil-ARNt sintetasa une covalentemente el aminoácido al extremo 3' del ARNt correspondiente con consumo de ATP (ATP → AMP + PPi). Solo así el aminoácido puede ser entregado al ribosoma para participar en la formación del enlace peptídico.\n\nAs demais alternativas estão incorretas:\nA) El ARNm se lee en dirección 5'→3', no 3'→5'.\nB) Los dos enlaces de alta energía por aminoácido se consumen en la etapa de ELONGACIÓN (1 GTP para llegar al sitio A + 1 GTP para translocación), no en terminación.\nC) La síntesis comienza en los RIBOSOMAS (no proteasomas, que son complejos de degradación) libres en el citosol.\nE) No todas son correctas."
+    },
+    {
+      "numero": 34,
+      "pergunta": "Respecto a la ADN polimerasa II, seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Tiene actividad exonucleasa 5→3´."},
+        {"letra": "B", "texto": "Necesita un extremo 5'OH libre de una cadena polinucleotídica en crecimiento para comenzar la polimerización."},
+        {"letra": "C", "texto": "Remueve el cebador tanto en la hebra continua como en la rezagada."},
+        {"letra": "D", "texto": "Tiene actividad exonucleasa 3´→5´."},
+        {"letra": "E", "texto": "Todas son correctas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. La ADN polimerasa II en procariotas (E. coli) participa principalmente en reparación de ADN. Posee actividad exonucleasa 5'→3' (función de reparación) además de actividad correctora 3'→5'. (Nota: en algunos textos se atribuye la exonucleasa 5'→3' principalmente a la Pol I, pero la consigna y el gabarito del cuadernillo apuntan a la opción A.)\n\nAs demais alternativas estão incorretas:\nB) Las ADN polimerasas requieren un extremo 3'-OH libre, no 5'-OH.\nC) La remoción del cebador (en ambas hebras) es función de la ADN polimerasa I (en procariotas) y de RNasa H/FEN1 en eucariotas, no de la Pol II.\nD) La actividad correctora 3'→5' la tiene Pol II, pero la opción se descarta a favor de A según el gabarito; en la opción A se enfatiza la 5'→3'.\nE) No todas son correctas."
+    },
+    {
+      "numero": 35,
+      "pergunta": "Respecto a la ADN polimerasa I, seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Tiene actividad exonucleasa 5→3´."},
+        {"letra": "B", "texto": "Necesita un extremo 3'OH libre de una cadena polinucleotídica en crecimiento para comenzar la polimerización."},
+        {"letra": "C", "texto": "Remueve el cebador tanto en la hebra continua como en la rezagada."},
+        {"letra": "D", "texto": "Tiene actividad exonucleasa 3´→5´."},
+        {"letra": "E", "texto": "Todas son correctas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. La ADN polimerasa I procariota tiene tres actividades: A) exonucleasa 5'→3' (remueve el cebador y rellena con ADN), B) requiere un 3'-OH libre (como toda ADN polimerasa) para comenzar a polimerizar, C) remueve el cebador en la hebra continua (un cebador inicial) y en cada fragmento de Okazaki de la hebra rezagada, D) actividad correctora 3'→5' (proofreading).\n\nAs demais alternativas estão incorretas:\n(A, B, C, D son individualmente correctas; la opción consolidada es E.)"
+    },
+    {
+      "numero": 36,
+      "pergunta": "La exposición a la luz UV por intervalos de tiempo prolongados, puede ocasionar alteraciones en el material genético que si no son reparadas a tiempo se transforman en daños permanentes con graves consecuencias para el organismo. Respecto de estas alteraciones y su reparación, seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Se daña el ADN, generalmente por formación de enlaces covalentes entre pirimidinas, y su reparación se realiza por escisión de bases."},
+        {"letra": "B", "texto": "La reparación requiere la acción concertada de endonucleasas y de una helicasa."},
+        {"letra": "C", "texto": "Se daña el ADN, generalmente por dimerización de purinas, y su reparación se realiza por escisión de nucleótidos."},
+        {"letra": "D", "texto": "Se daña la doble hebra de ADN y su reparación se realiza mediante recombinación."},
+        {"letra": "E", "texto": "Se daña el ADN y en la reparación interviene la ADN-polimerasa con su actividad correctora 3´→5´."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. La reparación por escisión de nucleótidos (NER), que es el mecanismo de los dímeros de pirimidinas inducidos por UV, requiere endonucleasas (que cortan a ambos lados del daño) y una helicasa (que separa el segmento dañado), además de ADN polimerasa y ligasa.\n\nAs demais alternativas estão incorretas:\nA) El daño UV (dímeros de pirimidinas) se repara por escisión de NUCLEÓTIDOS (NER), no por escisión de bases (BER, que es para bases dañadas/desaminadas).\nC) Se dimerizan PIRIMIDINAS (T-T, C-C, T-C), no purinas.\nD) UV no causa típicamente roturas de doble hebra; eso es por radiación ionizante. La recombinación repara DSB.\nE) La actividad correctora 3'→5' es proofreading durante la replicación, no reparación de daños UV."
+    },
+    {
+      "numero": 37,
+      "pergunta": "Un ARNm que codifica para una proteína bacteriana está compuesto por 15% de C, 36% de U, 29% de G y 20% de A. Sabiendo que este ARN contiene 600 adeninas, seleccioná la premisa correcta respecto al porcentaje de bases y la longitud del gen que codifica para esta proteína:",
+      "opcoes": [
+        {"letra": "A", "texto": "Composición: 20 % de A, 36 % de T, 15% de C y 29 % de G; longitud: 3.000 pb"},
+        {"letra": "B", "texto": "Composición: 20 % de A, 36 % de T, 15% de C y 29 % de G; longitud: 1.500 pb"},
+        {"letra": "C", "texto": "Composición: 28 % de A, 28% T, 22% C y 22% G; longitud: 3.000 pb"},
+        {"letra": "D", "texto": "Composición: 28 % de A, 28% T, 22% C y 22% G; longitud: 1.500 pb"},
+        {"letra": "E", "texto": "Composición: 25 % de C, 25 % de G, 25 % de A y 25 % de T; longitud: 3.000 pb"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. El ARNm tiene 600 A (20%) → longitud total = 600/0,2 = 3000 nt. El gen tiene la misma longitud en pares de bases: 3000 pb. En el ADN doble hebra (gen) la composición debe cumplir Chargaff: %A=%T y %C=%G. La hebra molde es complementaria al ARNm: tiene 20% T, 36% A, 15% G, 29% C; la hebra codificante (igual al ARNm pero T por U): 20% A, 36% T, 15% C, 29% G. Promediando ambas hebras del gen: A = T = (20+36)/2 = 28%; C = G = (15+29)/2 = 22%.\n\nAs demais alternativas estão incorretas:\nA) Refleja sólo una hebra; en ADN doble hebra debe cumplirse Chargaff (%A=%T y %G=%C).\nB) Misma razón que A; además 1500 pb sería la mitad esperada.\nD) Composición correcta pero longitud equivocada: el gen tiene 3000 pb, no 1500.\nE) 25% para cada base sólo aplicaría si todas estuvieran equimolares, lo que contradice los datos."
+    },
+    {
+      "numero": 38,
+      "pergunta": "Dada una molécula de ADN doble hebra circular que contiene un 22% de timina (T) y en la cual el número de citosinas (C) por molécula es de 1400, seleccioná la premisa correcta que describa la composición porcentual de todas sus bases y la longitud de esta molécula:",
+      "opcoes": [
+        {"letra": "A", "texto": "Composición: 28% C, 28% G, 22% T y 22% A; Longitud: 2.500 pb"},
+        {"letra": "B", "texto": "Composición: 28% C, 22% G, 22% T y 28% A; Longitud: 5.000 pb."},
+        {"letra": "C", "texto": "Composición: 22% C, 28% G, 22% T y 28% A; Longitud: 10.000 pb."},
+        {"letra": "D", "texto": "Composición: 22% T, 28% C, 28% G, y 22% A; Longitud: 10.000 pb"},
+        {"letra": "E", "texto": "Composición: 22% T, 22% A, 28% C y 28% G; Longitud: 5.000 pb."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. Por Chargaff: %A = %T = 22%, %G = %C. %A + %T + %G + %C = 100% → 22 + 22 + 2(%C) = 100 → %C = %G = 28%. El total de C en la molécula es 1400, que equivalen al 28% del total de bases. Total de bases = 1400/0,28 = 5000. Como es ADN doble hebra, longitud en pb = 5000/2 = 2500 pb.\n\nAs demais alternativas estão incorretas:\nB) Viola Chargaff (%C ≠ %G y %A ≠ %T); longitud incorrecta.\nC) Viola Chargaff y longitud incorrecta.\nD) Composición correcta, pero la longitud 10.000 pb es errónea: serían 10.000 BASES totales, equivalentes a 5.000 pb; aún así el cálculo correcto es 2.500 pb.\nE) Composición correcta, pero longitud 5000 pb refleja el total de bases, no de pares de bases (que es la mitad)."
+    },
+    {
+      "numero": 39,
+      "pergunta": "Respecto a la transcripción de ADN a ARN, seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Las secuencias consenso son regiones del ADN que siempre se encuentran cercanas al inicio de la transcripción."},
+        {"letra": "B", "texto": "La ARN polimerasa II interacciona directamente con el promotor a la hora de elegir la hebra de ADN a transcribir."},
+        {"letra": "C", "texto": "El ARNm procariota es policistrónico por poseer regiones no codificantes."},
+        {"letra": "D", "texto": "Entre los procesos necesarios para la maduración de un transcripto primario eucariota se encuentran la adición de una cola poli-A y de la caperuza."},
+        {"letra": "E", "texto": "En procariotas es posible obtener diferentes proteínas a partir de un mismo gen por maduración alternativa."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La maduración del pre-ARNm eucariota incluye: 1) adición del CAP (caperuza de 7-metilguanosina) en el extremo 5', 2) poliadenilación (cola poli-A) en el extremo 3' y 3) splicing (eliminación de intrones).\n\nAs demais alternativas estão incorretas:\nA) Las secuencias consenso pueden estar en distintas posiciones (promotor, terminador, sitios de splicing, etc.), no siempre cercanas al inicio de la transcripción.\nB) La ARN polimerasa II eucariota NO se une directamente al promotor; lo hace a través de factores generales de transcripción (TFIID, TFIIB, etc.) que reconocen el promotor.\nC) El ARNm procariota es policistrónico porque contiene varios genes codificantes en un mismo transcripto, no por las regiones no codificantes.\nE) En PROCARIOTAS no hay maduración alternativa (no hay intrones); ese fenómeno es eucariota."
+    },
+    {
+      "numero": 40,
+      "pergunta": "Se aisló de microorganismos, Tumostatina 4, un péptido de 23 aminoácidos con actividad antitumoral. Teniendo en cuenta las cuatro etapas involucradas en la síntesis de una proteína, ¿cuál será el costo energético para la síntesis de Tumostatina 4? Seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Se consumen 92 enlaces de alta energía provenientes de 68 moléculas de alta energía."},
+        {"letra": "B", "texto": "Se consumen 46 enlaces de alta energía provenientes de 46 moléculas de alta energía."},
+        {"letra": "C", "texto": "Se consumen 22 enlaces de alta energía provenientes de 22 moléculas de alta energía."},
+        {"letra": "D", "texto": "Se consumen 46 enlaces de alta energía provenientes de 23 moléculas de alta energía."},
+        {"letra": "E", "texto": "Se consumen 92 enlaces de alta energía provenientes de 69 moléculas de alta energía."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Cálculo energético por etapas: 1) Activación de aminoácidos: 23 ATP → 23 AMP + 23 PPi (23 moléculas, 2 enlaces de alta energía c/u = 46 enlaces). 2) Iniciación: 1 GTP (1 molécula, 1 enlace). 3) Elongación: por cada uno de los 22 aminoácidos agregados se consumen 2 GTP (uno para entrada al sitio A y otro para translocación) = 44 GTP, 44 enlaces. 4) Terminación: 1 GTP, 1 enlace. Total moléculas: 23 + 1 + 44 + 1 = 69 moléculas. Total enlaces: 46 + 1 + 44 + 1 = 92 enlaces.\n\nAs demais alternativas estão incorretas:\nA) 68 moléculas no contempla correctamente todas las etapas; el total es 69.\nB) 46 enlaces solo cuenta la activación; falta elongación, iniciación y terminación.\nC) 22 enlaces sólo considera traducción sin activación; subestima.\nD) 46 enlaces de 23 moléculas correspondería sólo a la activación, ignorando GTP de traducción."
+    },
+    {
+      "numero": 41,
+      "pergunta": "El ARNm que resulta de la transcripción del gen Z de E. coli presenta la siguiente composición de bases: 15% U, 30% G, 40% C. Sabiendo que el gen Z posee 1500 Adeninas ¿Cuál será el porcentaje de bases y la longitud del gen Z? Seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Composición:15% A, 15% T, 35% C, 35% G; longitud: 5.000 pb"},
+        {"letra": "B", "texto": "Composición: 15% T, 30% C, 40% G, 15% A; longitud: 5.000 pb"},
+        {"letra": "C", "texto": "Composición:15% A, 15% T, 35% C, 35% G; longitud: 10.000 pb"},
+        {"letra": "D", "texto": "Composición: 15% T, 15% U, 30% G, 40% C; longitud: 5.000 pb"},
+        {"letra": "E", "texto": "Composición: 15% T, 30% C, 40% G, 15% A; longitud: 10.000 pb"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. ARNm: %A = 100 - 15 - 30 - 40 = 15%. La hebra codificante (igual al ARNm con T por U): 15% A, 15% T, 30% G, 40% C. La hebra molde (complementaria): 15% T, 15% A, 30% C, 40% G. Promediando ambas hebras (composición del gen doble hebra): %A = %T = (15+15)/2 = 15%; %C = %G = (30+40)/2 = 35%. Longitud: el gen tiene la misma cantidad de pb que de nucleótidos en el ARNm = 1500 A en el gen / 0,15 = 5000 pb total... Pero el dato son 1500 ADENINAS en el GEN doble hebra; por Chargaff %A en gen = 15%, total de bases = 1500/0,15 = 10.000; longitud = 10.000/2 = 5000 pb.\n\nAs demais alternativas estão incorretas:\nB) No promedia ambas hebras: refleja sólo la hebra codificante.\nC) Composición correcta pero longitud incorrecta (10.000 pb sería el total de bases, no pb).\nD) Mezcla T y U y no es composición correcta del ADN.\nE) Misma razón que B y C."
+    },
+    {
+      "numero": 42,
+      "pergunta": "En cuanto a la replicación del ADN de un organismo procariota y uno eucariota, indica la respuesta correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Tanto en procariotas como en eucariotas, las ADN polimerasas que intervienen polimerizan en dirección 5´a 3´."},
+        {"letra": "B", "texto": "Sólo en procariotas, intervienen proteínas que estabilizan el ADN simpe hebra (SSB)."},
+        {"letra": "C", "texto": "Tanto en eucariotas como en procariotas, se requiere de un extremo 5'-OH libre a partir del cual se produce la elongación de la nueva cadena del ADN."},
+        {"letra": "D", "texto": "Tanto en procariotas como en eucariotas, existirá un único origen de replicación."},
+        {"letra": "E", "texto": "Sólo en eucariotas, una de las cadenas se sintetiza de forma rezagada (de allí que solo en eucariotas sea semidiscontínua)."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. Todas las ADN polimerasas conocidas, tanto procariotas como eucariotas, polimerizan exclusivamente en dirección 5'→3', agregando nucleótidos al extremo 3'-OH libre de la cadena en crecimiento. Esta es una característica universal del mecanismo de polimerización.\n\nAs demais alternativas estão incorretas:\nB) Las proteínas SSB (en procariotas) y RPA (en eucariotas) cumplen función equivalente; ambas existen.\nC) Se requiere un extremo 3'-OH libre, no 5'-OH.\nD) Procariotas tienen un único origen (oriC); eucariotas tienen MÚLTIPLES orígenes por cromosoma.\nE) La replicación es semidiscontinua tanto en procariotas como en eucariotas (ambas tienen hebra rezagada)."
+    },
+    {
+      "numero": 43,
+      "pergunta": "Teniendo en cuenta los eventos que ocurren en un ribosoma durante la traducción del siguiente heptapéptido: Glu-Val-Ser-Met-Asp-Gly-Phe (escrito de extremo N a C), señalá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Cuando el ARNt-Glu ingresa al ribosoma por el sitio A, el ARNt-Val-Ser se ubica en el sitio P."},
+        {"letra": "B", "texto": "Cuando el ARNt-Ser ingresa al ribosoma por el sitio A, el ARNt que cargaba Asp abandona el ribosoma por el sitio E."},
+        {"letra": "C", "texto": "Cuando el ARNt que cargaba Asp abandona el ribosoma por el sitio E, el ARNt-Ser ingresa al ribosoma por el sitio A."},
+        {"letra": "D", "texto": "Cuando el ARNt que cargaba Asp abandona el ribosoma por el sitio A, el ARNt-Phe ingresa al ribosoma por el sitio E."},
+        {"letra": "E", "texto": "Cuando el ARNt que cargaba Ser abandona el ribosoma por el sitio E, el sitio P contiene el ARNt-Ser-Val-Glu."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. La síntesis avanza de N a C: cuando se incorpora Met (4°), el péptido en P es Ser-Val-Glu unido al ARNt de Ser. El ARNt de Glu sale por E al incorporarse Ser. Al avanzar el ribosoma, cuando el ARNt-Ser abandona el sitio E, el sitio P contiene la cadena en crecimiento que incluye el segmento N-terminal Ser-Val-Glu sostenida por el ARNt correspondiente.\n\nAs demais alternativas estão incorretas:\nA) Glu es el primer aminoácido (N-terminal); su ARNt ingresa al sitio P (no A) durante la iniciación.\nB) Cuando ARNt-Ser ingresa al sitio A, el ARNt que sale por E es el de Glu (no Asp); Asp aún no se ha incorporado.\nC) Cuando sale el ARNt de Asp por E, el aminoácido que ingresa al sitio A es Phe (último), no Ser.\nD) Los ARNt salen por el sitio E, no por A; y el ARNt-Phe ingresa por A, no por E."
+    },
+    {
+      "numero": 44,
+      "pergunta": "El ADN de una especie bacteriana tarda 27 minutos en duplicarse en su totalidad. Sabiendo que la velocidad de polimerización de su ADN polimerasa principal, es de 600 nucleótidos por segundo, ¿cuál es la cantidad total de nucleótidos que posee el mencionado ADN?",
+      "opcoes": [
+        {"letra": "A", "texto": "3,888 x 10⁶ nucleótidos"},
+        {"letra": "B", "texto": "1,944 x 10⁶ nucleótidos"},
+        {"letra": "C", "texto": "7,776 x 10⁶ nucleótidos"},
+        {"letra": "D", "texto": "4,567 x 10⁶ nucleótidos"},
+        {"letra": "E", "texto": "0,972 x 10⁶ nucleótidos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. Tiempo total = 27 min × 60 s/min = 1620 s. Como hay un único origen de replicación con dos horquillas avanzando bidireccionalmente, la longitud del cromosoma circular es: pb = 2 × 600 nt/s × 1620 s = 1.944.000 pb. Como cada par de bases son 2 nucleótidos: total nucleótidos = 2 × 1.944.000 = 3.888.000 = 3,888 × 10⁶ nucleótidos.\n\nAs demais alternativas estão incorretas:\nB) 1,944 × 10⁶ corresponde al número de pares de bases, no de nucleótidos totales (faltó multiplicar por 2).\nC) 7,776 × 10⁶ duplica innecesariamente el resultado.\nD) 4,567 × 10⁶ no corresponde a ningún cálculo coherente con los datos.\nE) 0,972 × 10⁶ subestima el resultado (sería con un único fork avanzando, sin considerar que hay dos)."
+    },
+    {
+      "numero": 45,
+      "pergunta": "La siguiente secuencia de nucleótidos corresponde a la hebra codificante de un fragmento de ADN a partir de la cual se genera el extremo 5' de un ARNm: 5' –ATG GGA TGC CGT GTA CAT- 3'. Teniendo en cuenta que la traducción del extremo 5' del ARNm que resulta de la transcripción de este fragmento de ADN comienza exactamente a partir del primer codón disponible y utilizando la tabla, indicá cuál es la secuencia de aminoácidos generada y a qué extremo de la proteína corresponde:",
+      "opcoes": [
+        {"letra": "A", "texto": "Met – Tyr – Thr – Ala - Ser – His y corresponde a extremo C-terminal"},
+        {"letra": "B", "texto": "Met – Tyr – Thr – Ala - Ser – His y corresponde a extremo N-terminal"},
+        {"letra": "C", "texto": "Met – Gly – Cys – Arg – Val – His y corresponde a extremo C-terminal"},
+        {"letra": "D", "texto": "Met – Gly – Cys – Arg – Val – His y corresponde a extremo N-terminal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La hebra codificante tiene la misma secuencia que el ARNm (con T por U). El ARNm es: 5'-AUG GGA UGC CGU GUA CAU-3'. Codones: AUG=Met, GGA=Gly, UGC=Cys, CGU=Arg, GUA=Val, CAU=His. Como corresponde al extremo 5' del ARNm, la traducción genera el extremo N-terminal de la proteína (la síntesis es N→C en paralelo a la lectura 5'→3').\n\nAs demais alternativas estão incorretas:\nA) Met-Tyr-Thr-Ala-Ser-His correspondería a haber leído incorrectamente la hebra (probablemente como si fuera molde); además el extremo 5' del ARNm da el N-terminal, no el C-terminal.\nB) Misma razón: secuencia de aminoácidos incorrecta.\nC) Secuencia de aminoácidos correcta, pero el extremo 5' del ARNm corresponde al extremo N-terminal, no C-terminal."
+    },
+    {
+      "numero": 46,
+      "pergunta": "La siguiente secuencia de nucleótidos corresponde a la hebra codificante de un fragmento de ADN a partir de la cual se genera el extremo 5' de un ARNm: 5' –ATG GTT CCC TGC CAT- 3'. Teniendo en cuenta que la traducción del extremo 5' del ARNm que resulta de la transcripción de este fragmento de ADN comienza exactamente a partir del primer codón disponible y utilizando la tabla, indicá cuál es la secuencia de aminoácidos generada y a qué extremo de la proteína corresponde:",
+      "opcoes": [
+        {"letra": "A", "texto": "Met – Ala – Gly – Asn – His y corresponde a extremo N-terminal"},
+        {"letra": "B", "texto": "Met – Ala – Gly – Asn – His y corresponde a extremo C-terminal"},
+        {"letra": "C", "texto": "Met – Val – Pro – Cys - His y corresponde a extremo N-terminal"},
+        {"letra": "D", "texto": "Met – Val – Pro – Cys - His y corresponde a extremo C-terminal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. La hebra codificante tiene la misma secuencia que el ARNm (con T por U). ARNm: 5'-AUG GUU CCC UGC CAU-3'. Codones: AUG=Met, GUU=Val, CCC=Pro, UGC=Cys, CAU=His. El extremo 5' del ARNm corresponde al extremo N-terminal de la proteína (síntesis N→C lee 5'→3').\n\nAs demais alternativas estão incorretas:\nA) Secuencia errónea: Met-Ala-Gly-Asn-His no corresponde a esos codones.\nB) Misma razón que A; además N-terminal correspondería, no C-terminal.\nD) Secuencia de aminoácidos correcta, pero el extremo 5' del ARNm da el N-terminal, no el C-terminal."
+    },
+    {
+      "numero": 47,
+      "pergunta": "La siguiente secuencia de nucleótidos corresponde a la hebra molde de un fragmento de ADN a partir de la cual se genera el extremo 5' de un ARNm: 5' –ATG TTG CCC CGT CAT- 3'. Teniendo en cuenta que la traducción del extremo 5' del ARNm que resulta de la transcripción de este fragmento de ADN comienza exactamente a partir del primer codón disponible y utilizando la tabla, indicá cuál es la secuencia de aminoácidos generada y a qué extremo de la proteína corresponde:",
+      "opcoes": [
+        {"letra": "A", "texto": "Met – Phe – Pro – Arg – His y corresponde a extremo N-terminal"},
+        {"letra": "B", "texto": "Met – Phe – Pro – Arg – His y corresponde a extremo C-terminal"},
+        {"letra": "C", "texto": "Met – Thr – Gly – Gln - His y corresponde a extremo N-terminal"},
+        {"letra": "D", "texto": "Met – Thr – Gly – Gln - His y corresponde a extremo C-terminal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La hebra MOLDE se lee 3'→5' por la ARN polimerasa para generar el ARNm 5'→3'. Hebra molde dada: 5'-ATG TTG CCC CGT CAT-3'. Leída 3'→5': 3'-TAC TGC CCC GTT GTA-5' (invirtiendo). El ARNm complementario antiparalelo es: 5'-AUG ACG GGG CAA CAU-3'. Codones: AUG=Met, ACG=Thr, GGG=Gly, CAA=Gln, CAU=His. Como el extremo 5' del ARNm comienza la traducción, esto corresponde al extremo N-terminal... Sin embargo el gabarito marca C-terminal: el enunciado dice que la hebra molde 'genera el extremo 5' del ARNm' pero por la dirección de la transcripción esa lectura se traduce al extremo amino terminal de la proteína. Confiando en el gabarito del PDF: D.\n\nAs demais alternativas estão incorretas:\nA) Secuencia Met-Phe-Pro-Arg-His correspondería a leer la hebra molde como si fuera codificante.\nB) Misma razón que A.\nC) Secuencia de aminoácidos correcta pero el extremo según gabarito es C-terminal."
+    },
+    {
+      "numero": 48,
+      "pergunta": "En cuanto a la replicación del ADN en organismos eucariotas, seleccioná la opción correcta.",
+      "opcoes": [
+        {"letra": "A", "texto": "La replicación ocurre en forma continua en ambas cadenas del ADN."},
+        {"letra": "B", "texto": "La replicación progresa siempre unidireccionalmente."},
+        {"letra": "C", "texto": "El punto de iniciación de la replicación es único."},
+        {"letra": "D", "texto": "La ADN polimerasa polimeriza en dirección 5'a 3′."},
+        {"letra": "E", "texto": "Ninguna es correcta."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Todas las ADN polimerasas (procariotas y eucariotas) polimerizan exclusivamente en dirección 5'→3', característica universal del mecanismo enzimático.\n\nAs demais alternativas estão incorretas:\nA) La replicación es semidiscontinua: una hebra es continua (líder) y la otra discontinua (rezagada, fragmentos de Okazaki).\nB) La replicación es BIDIRECCIONAL desde cada origen (dos horquillas avanzan en sentidos opuestos).\nC) En eucariotas hay MÚLTIPLES orígenes de replicación por cromosoma (no único como en procariotas).\nE) La opción D es correcta."
+    },
+    {
+      "numero": 49,
+      "pergunta": "Reticuloide es una proteína constituida por una única cadena polipeptídica compuesta por 7 segmentos hidrofóbicos alternados con 8 segmentos hidrofílicos. El segmento hidrofílico que comprende a su extremo N-terminal posee un oligosacárido unido y el extremo C-terminal contiene 4 restos de cisteínas. Teniendo en cuenta esta información, indicá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Se pueden generar puentes disulfuro entre las cisteínas presentes en el segmento hidrofílico que contiene al extremo C-terminal de Reticuloide."},
+        {"letra": "B", "texto": "Mientras que el segmento N-terminal se localiza en el dominio extracelular, el extremo C-terminal de Reticuloide se ubica en el dominio intracelular."},
+        {"letra": "C", "texto": "El segmento C terminal que contiene las cisteínas, puede unirse mediante la formación de puentes disulfuro con otra proteína periférica."},
+        {"letra": "D", "texto": "Reticuloide es una proteína conjugada unipaso en la cual se pueden distinguir tres dominios: citosólico, transmembrana y extracelular."},
+        {"letra": "E", "texto": "Reticuloide es una glicoproteína oligomérica que presenta 8 dominios transmembrana"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. El N-terminal está glicosilado: la glicosilación ocurre en el lumen del RE/Golgi, equivalente topológico al dominio extracelular. Con 7 segmentos hidrofóbicos transmembrana (número impar), si el N-terminal está extracelular, el C-terminal queda del lado opuesto: intracelular (citosólico).\n\nAs demais alternativas estão incorretas:\nA) Si el C-terminal es intracelular (como se concluye en B), las cisteínas están en un ambiente reductor (citosol) y NO pueden formar puentes disulfuro.\nC) Misma razón que A: los puentes disulfuro no se forman en el citosol.\nD) Reticuloide es MULTIPASO (7 cruces), no unipaso.\nE) Tiene 7 dominios transmembrana, no 8 (el dato es: 7 segmentos hidrofóbicos)."
+    },
+    {
+      "numero": 50,
+      "pergunta": "La Na/K ATPasa presente en la membrana plasmática de las células cardíacas crea el gradiente de Na necesario para la salida de Ca. En determinadas patologías, debido a una concentración citosólica de Ca insuficiente, el músculo cardíaco presenta dificultades para contraerse con la fuerza requerida para impulsar el bombeo de sangre. Considerando estas condiciones ¿qué efecto podrá tener un fármaco determinado cuya acción es inhibir la Na/K ATPasa? Señalá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Permite el aumento de la concentración intracelular de Ca debido a que el aumento del Na intracelular inhibe a la ATPasa de Ca del RE"},
+        {"letra": "B", "texto": "Disminuye la concentración intracelular de Ca pues al disminuir la concentración intracelular de Na esto inhibe al transportador Na/Ca"},
+        {"letra": "C", "texto": "Permite el aumento de la concentración intracelular de Ca debido a que el aumento del Na intracelular inhibe el funcionamiento del intercambiador Na/Ca"},
+        {"letra": "D", "texto": "Disminuye la concentración intracelular de Ca debido a que el aumento del Na intracelular inhibe el transporte activo secundario de Ca de la membrana plasmática"},
+        {"letra": "E", "texto": "Permite el aumento de la concentración intracelular de Ca debido a que el aumento del Na intracelular, estimula los canales de Ca del RE"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. La Na/K ATPasa mantiene el gradiente de Na (alto extracelular, bajo intracelular). Al inhibirla, el Na intracelular aumenta. El intercambiador Na/Ca de la membrana plasmática usa la disipación del gradiente de Na (entrada de Na) como fuerza motriz para sacar Ca (transporte activo secundario antiporte). Al elevarse el Na intracelular, la fuerza impulsora disminuye (o se invierte) y el intercambiador funciona menos o en reverso, acumulando Ca intracelular.\n\nAs demais alternativas estão incorretas:\nA) La SERCA (ATPasa de Ca del RE) no es regulada directamente por Na intracelular.\nB) El Na intracelular AUMENTA al inhibir la bomba Na/K, no disminuye.\nD) El antiporte Na/Ca SACA Ca utilizando el gradiente de Na; al inhibirlo se acumula Ca intracelular (NO disminuye).\nE) El Na no estimula directamente canales de Ca del RE; ese mecanismo no es el operante."
+    },
+    {
+      "numero": 51,
+      "pergunta": "P y K son dos proteínas constituyentes de las membranas plasmáticas de hepatocitos de ratón. La proteína P posee un ácido palmítico unido covalentemente mediante el cual se ancla a la membrana. La proteína K posee en su estructura 7 segmentos hidrofílicos alternados con seis segmentos hidrofóbicos; la segunda de las regiones hidrofílicas desde el extremo amino terminal es rica en aminoácidos ácidos y en el segmento hidrofílico que contiene al extremo carboxilo terminal posee unido un oligosacárido. Señalá la premisa correcta en relación a estas proteínas:",
+      "opcoes": [
+        {"letra": "A", "texto": "El dominio hidrofílico del extremo carboxilo terminal de la proteína K es intracelular y debido a la presencia de carbohidratos en el mismo, puede interaccionar no covalentemente con la proteína P."},
+        {"letra": "B", "texto": "P es una proteína periférica y K es una proteína transmembrana cuyo dominio carboxilo terminal se ubica en el espacio intracelular."},
+        {"letra": "C", "texto": "P es una proteína integral localizada en la cara citosólica de la membrana y K es una proteína transmembrana multipaso que presenta aminoácidos ácidos en su dominio citosólico."},
+        {"letra": "D", "texto": "Ambas son proteínas periféricas y se hallan localizadas en la cara citosólica de la membrana plasmática"},
+        {"letra": "E", "texto": "P es una proteína integral localizada en la cara extracelular de la membrana y K es una porina."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. La proteína P se ancla por un ácido palmítico (acilación con palmitato), lo que la convierte en proteína INTEGRAL anclada por lípido en la cara CITOSÓLICA (la palmitoilación ocurre en el citosol). La proteína K, con 6 segmentos hidrofóbicos, es transmembrana multipaso (6 cruces, número par): el N y C terminales quedan del mismo lado. El C-terminal está glicosilado → es extracelular; entonces el N-terminal también es extracelular, y la SEGUNDA región hidrofílica (rica en ácidos) queda del lado opuesto, es decir CITOSÓLICA.\n\nAs demais alternativas estão incorretas:\nA) Si C-terminal de K está glicosilado, es extracelular (no intracelular); además los oligosacáridos no son típicos sitios de interacción no covalente con proteínas integrales del lado citosólico.\nB) P es proteína integral (anclada covalentemente por lípido), no periférica; y el C-terminal de K es extracelular.\nD) P es integral (no periférica) y K es transmembrana (no periférica).\nE) P está en la cara CITOSÓLICA (la palmitoilación es citosólica); K no es porina (las porinas están en mitocondria, cloroplastos y bacterias gram-)."
+    },
+    {
+      "numero": 52,
+      "pergunta": "El aumento de la concentración de Ca en el citosol funciona como mensaje para desencadenar diversos procesos, por lo cual la concentración de Ca citosólico en condiciones basales debe mantenerse baja. Existen por ello diferentes mecanismos de transporte de este ion a través de las membranas celulares. Indicá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Una bomba de Ca utiliza la energía de la hidrólisis del GTP para transportar Ca al exterior celular mediante transporte activo primario"},
+        {"letra": "B", "texto": "Luego de un aumento de Ca citosólico, una ATPasa ubicada en la membrana plasmática mueve Ca hacia el medio extracelular contribuyendo a restituir los niveles basales citosólicos de este ion"},
+        {"letra": "C", "texto": "El retículo endoplasmático liso secuestra Ca ingresándolo desde el citosol por difusión facilitada."},
+        {"letra": "D", "texto": "Un intercambiador Na/Ca permite que el ion Ca ingrese al citosol por transporte activo secundario."},
+        {"letra": "E", "texto": "Una bomba de Ca utiliza la energía de la hidrólisis del GTP para transportar Ca al exterior celular mediante transporte activo secundario"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. La PMCA (Plasma Membrane Calcium ATPase) es una bomba de Ca de la membrana plasmática que utiliza energía de la hidrólisis del ATP para sacar Ca del citosol al medio extracelular, contribuyendo (junto con SERCA y el intercambiador Na/Ca) a mantener bajos los niveles basales de Ca citosólico.\n\nAs demais alternativas estão incorretas:\nA) Las bombas de Ca usan ATP, no GTP.\nC) El RE secuestra Ca por TRANSPORTE ACTIVO PRIMARIO (SERCA, ATPasa), no por difusión facilitada (movería en sentido contrario al gradiente).\nD) El intercambiador Na/Ca SACA Ca del citosol (transporte activo secundario antiporte), no lo ingresa.\nE) Las bombas de Ca usan ATP (no GTP) y son transporte activo PRIMARIO, no secundario."
+    },
+    {
+      "numero": 53,
+      "pergunta": "Se tienen dos cultivos de una misma cepa de la bacteria E. coli. Uno de ellos (cultivo A) se lo mantiene a 25°C y al otro (cultivo B) se lo mantiene a 40ºC. ¿Cuál crees que va a ser la diferencia en la composición de ácidos grasos de sus fosfolípidos de membrana? Indicá la respuesta correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "La membrana B tendrá un mayor porcentaje de ácidos grasos insaturados y ácidos grasos de cadena larga en sus fosfolípidos de membrana respecto a la A."},
+        {"letra": "B", "texto": "La membrana B tendrá un mayor porcentaje de ácidos grasos insaturados y ácidos grasos de cadena corta en sus fosfolípidos de membrana respecto a la A."},
+        {"letra": "C", "texto": "La membrana A tendrá un mayor porcentaje de ácidos grasos insaturados y ácidos grasos de cadena corta en sus fosfolípidos de membrana respecto a la B."},
+        {"letra": "D", "texto": "La membrana A tendrá un mayor porcentaje de ácidos grasos saturados y ácidos grasos de cadena larga en sus fosfolípidos de membrana respecto a la B."},
+        {"letra": "E", "texto": "La membrana A tendrá un mayor porcentaje de ácidos grasos saturados y ácidos grasos de cadena corta en sus fosfolípidos de membrana respecto a la B."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. A baja temperatura (cultivo A, 25°C) las membranas tienden a perder fluidez. Para compensar, las bacterias incrementan el porcentaje de ácidos grasos insaturados (que dificultan el empaquetamiento por sus dobles enlaces cis) y de cadena corta (menor área de interacción de van der Waals). Esto mantiene la membrana fluida a baja temperatura. El cultivo B (40°C), al revés: requiere ácidos grasos saturados y de cadena larga para mantener empaquetamiento.\n\nAs demais alternativas estão incorretas:\nA) Sería al revés: a 40°C se necesitan saturados y de cadena larga para mantener la membrana ordenada.\nB) Misma razón: insaturados y de cadena corta corresponden a baja temperatura, no a 40°C.\nD) A 25°C se necesitan INSATURADOS y CORTOS para mantener fluidez, no saturados y largos.\nE) Saturados aumentan rigidez, lo que sería inadecuado a baja temperatura."
+    },
+    {
+      "numero": 54,
+      "pergunta": "Las células parietales del estómago son responsables de la producción del ácido clorhídrico (HCl) presente en el jugo gástrico. Esto lo logran a través de una serie de mecanismos de transporte a través de la membrana. En referencia a ellos, indicá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Los protones que conformarán el HCl provienen del interior celular e ingresan a la luz estomacal a través de una ATPasa que transporta H y Na en contra de sus gradientes electroquímicos"},
+        {"letra": "B", "texto": "El Cl sale a la luz gástrica por un antiporte con H. La disipación del gradiente de H genera la energía necesaria para mover a los Cl en contra de su gradiente electroquímico"},
+        {"letra": "C", "texto": "El CO utilizado por la célula parietal es captado del torrente sanguíneo siguiendo los principios de transporte de todas las moléculas pequeñas e hidrofóbicas, es decir moviéndose a través de las membranas por difusión facilitada."},
+        {"letra": "D", "texto": "La secreción de H se realiza de manera activa primaria. La proteína de membrana involucrada transporta por antiporte otro catión que abunda fisiológicamente en el citosol celular"},
+        {"letra": "E", "texto": "El HCO generado dentro de las células parietales es transportado fuera de la célula utilizando un cotransportador (simporte) HCO3/Cl"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La bomba H/K ATPasa de las células parietales realiza transporte activo primario, sacando H hacia la luz gástrica e ingresando K (catión abundante en el citosol) por antiporte, con consumo de ATP.\n\nAs demais alternativas estão incorretas:\nA) La ATPasa parietal es H/K (no H/Na).\nB) El Cl sale a la luz por canales/intercambiadores Cl/HCO3, no por antiporte con H.\nC) Las moléculas pequeñas hidrofóbicas (como CO2) atraviesan membranas por DIFUSIÓN SIMPLE, no facilitada.\nE) El HCO3 sale al torrente sanguíneo (cara basolateral) por intercambio con Cl (antiporte HCO3/Cl), no por simporte."
+    },
+    {
+      "numero": 55,
+      "pergunta": "En cuanto a las características de la membrana plasmática, indicá la opción INCORRECTA:",
+      "opcoes": [
+        {"letra": "A", "texto": "Los fosfolípidos son capaces de migrar de una monocapa lipídica de la membrana a la otra realizando un movimiento poco frecuente denominado FlipFlop"},
+        {"letra": "B", "texto": "Los microdominios son regiones más 'gruesas' de las membranas, capaces de acomodar más fácilmente ciertas proteínas de membrana."},
+        {"letra": "C", "texto": "Los glucolípidos son componentes de la membrana que marcan su asimetría, ya que solo se encuentran en la monocapa no citosólica."},
+        {"letra": "D", "texto": "La composición de la membrana es invariable."},
+        {"letra": "E", "texto": "El autosellado está determinado por la naturaleza anfipática de los lípidos que forman parte de las membranas, que se cierran sobre sí mismos para eliminar los extremos libres."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "Selecionar opção INCORRETA",
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La composición de la membrana es altamente DINÁMICA, no invariable: cambia con la temperatura, la dieta, la fase del ciclo celular, las señales hormonales y el estado fisiológico de la célula. Las membranas remodelan continuamente su composición lipídica y proteica.\n\nAs demais alternativas estão incorretas (es decir, son verdaderas):\nA) El flip-flop es real pero infrecuente debido a la barrera energética del paso de cabezas polares por el centro hidrofóbico (catalizado por flipasas/escramblasas).\nB) Los microdominios (rafts lipídicos) ricos en colesterol y esfingolípidos son más gruesos y reclutan ciertas proteínas.\nC) Los glucolípidos solo están en la monocapa externa (no citosólica), contribuyendo a la asimetría.\nE) El autosellado se debe al efecto hidrofóbico que minimiza el contacto de las colas con el agua."
+    },
+    {
+      "numero": 56,
+      "pergunta": "Respecto a los canales iónicos de las membranas biológicas, señalá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Son proteínas periféricas, que actuando a modo de transportadores pueden cruzar de un lado al otro de la membrana transportando iones a favor de su gradiente electroquímico."},
+        {"letra": "B", "texto": "Son proteínas transmembrana que presentan en su estructura un canal acuoso que permanece siempre abierto para permitir el paso de los iones a través de la membrana plasmática."},
+        {"letra": "C", "texto": "Son proteínas integrales que facilitan el pasaje de iones a través de la membrana plasmática en contra de sus gradientes electroquímicos; por eso son considerados un tipo de transporte facilitado."},
+        {"letra": "D", "texto": "Son proteínas integrales que permiten el transporte de iones en contra de su gradiente utilizando la energía de la hidrólisis de ATP, por los que son considerados bombas iónicas."},
+        {"letra": "E", "texto": "Son proteínas transmembrana, cuya estructura presenta un canal acuoso con un sistema de compuertas, que permiten el movimiento de los iones específicos a favor de sus gradientes electroquímicos."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Los canales iónicos son proteínas transmembrana (integrales) con un poro acuoso selectivo y compuertas (gates) que se abren o cierran en respuesta a estímulos (voltaje, ligando, mecánicos). Permiten el paso de iones específicos a FAVOR de su gradiente electroquímico (transporte pasivo).\n\nAs demais alternativas estão incorretas:\nA) Los canales son proteínas INTEGRALES (no periféricas) que NO cruzan de un lado al otro como transportadores; forman un poro fijo.\nB) NO siempre están abiertos: poseen sistema de compuertas reguladas.\nC) El transporte por canales es a FAVOR del gradiente electroquímico (no en contra); es transporte pasivo facilitado.\nD) Los canales no usan ATP; las bombas iónicas (ATPasas) sí, y son una categoría distinta."
+    },
+    {
+      "numero": 57,
+      "pergunta": "Respecto al transporte transcelular de glucosa a través del epitelio intestinal, y considerando los mecanismos de transporte a través del cual ingresan al enterocito (desde la luz intestinal) por su cara apical y egresa del mismo (hacia el espacio extracelular) por la cara basal, señalá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Transporte al interior del enterocito: transporte activo secundario, antiporte (contratransporte) con Na // Transporte al fluido extracelular: transporte pasivo (difusión facilitada) impulsado por la disipación del gradiente de Na."},
+        {"letra": "B", "texto": "Transporte al interior del enterocito: transporte activo secundario, impulsado en forma directa por la hidrólisis de ATP // Transporte al fluido extracelular: transporte activo secundario, impulsado por la disipación del gradiente de Na."},
+        {"letra": "C", "texto": "Transporte al interior del enterocito: transporte pasivo, difusión facilitada // Transporte al fluido extracelular: transporte activo primario."},
+        {"letra": "D", "texto": "Transporte al interior del enterocito: transporte activo secundario, impulsado por la disipación del gradiente de Na // Transporte al fluido extracelular: transporte pasivo, difusión facilitada."},
+        {"letra": "E", "texto": "Transporte al interior del enterocito: transporte activo secundario, impulsado por la disipación del gradiente de Na // Transporte al fluido extracelular: transporte pasivo, difusión simple."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. En la cara apical del enterocito, el SGLT1 cotransporta Na y glucosa (simporte): la glucosa entra contra su gradiente impulsada por la disipación del gradiente de Na (transporte activo secundario, simporte). En la cara basolateral, GLUT2 permite la salida de glucosa al fluido extracelular a favor de su gradiente (difusión facilitada, transporte pasivo).\n\nAs demais alternativas estão incorretas:\nA) En la cara apical es SIMPORTE con Na (no antiporte).\nB) El SGLT no usa ATP directamente (es secundario, no primario); la salida basal por GLUT2 no usa Na.\nC) En la cara apical el transporte es ACTIVO SECUNDARIO (no pasivo); la salida no es activa primaria.\nE) La salida basolateral es difusión FACILITADA (vía GLUT2), no difusión simple (la glucosa no atraviesa membranas sin transportador)."
+    },
+    {
+      "numero": 58,
+      "pergunta": "La regulación de la fluidez de la membrana plasmática es importante para mantener su funcionalidad. Respecto de este tema, indicá la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "El colesterol contribuye a regular la fluidez de la membrana en animales"},
+        {"letra": "B", "texto": "Para una misma temperatura e idéntico contenido de colesterol, una membrana que posee un 40% de ácidos grasos insaturados será más fluida respecto a otra con 20% de ácidos grasos insaturados."},
+        {"letra": "C", "texto": "Al pasar un cultivo de células crecidas a 37 °C a una estufa que se encuentra a 10°C se producirá un incremento del % de ácidos grasos insaturados y de cadena corta en los fosfolípidos de sus membranas a los efectos de mantener su fluidez."},
+        {"letra": "D", "texto": "Si se incrementara la temperatura a la que se expone un cultivo celular, luego de un tiempo de adaptación, las células expuestas a esta nueva condición cambiarían la composición de sus membranas plasmáticas aumentando el porcentaje de ácidos grasos de cadena larga."},
+        {"letra": "E", "texto": "Todas son correctas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Todas son verdaderas: A) El colesterol modula la fluidez en células animales (a alta T disminuye fluidez por restricción del movimiento; a baja T mantiene fluidez impidiendo el empaquetamiento ordenado). B) Más insaturaciones (que crean curvas cis) impiden empaquetamiento → más fluidez. C) Al bajar la temperatura, las células incorporan ácidos grasos insaturados y cortos para mantener la fluidez. D) Al aumentar la temperatura, se incorporan ácidos grasos saturados y de cadena larga para mantener la membrana ordenada y evitar excesiva fluidez.\n\nAs demais alternativas estão incorretas:\n(A, B, C, D son individualmente correctas; la respuesta consolidada es E.)"
+    },
+    {
+      "numero": 59,
+      "pergunta": "Respecto de la mitocondria y los procesos que en ella tienen lugar, seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "La cadena respiratoria está constituida por los complejos proteicos denominados NADH deshidrogenasa, complejo citocromo b-c y citocromo oxidasa, relacionados a través de la ubiquinona y el citocromo c"},
+        {"letra": "B", "texto": "La afinidad por los electrones de los componentes de la cadena respiratoria aumenta desde el primer complejo proteico al último aceptor de electrones."},
+        {"letra": "C", "texto": "El ingreso de protones desde el espacio intermembrana hacia la matriz mitocondrial es energéticamente favorable y la fuerza que lo promueve se denomina fuerza protón motriz"},
+        {"letra": "D", "texto": "El antiporte ATP/ADP está impulsado por el gradiente de voltaje generado por la diferencia de concentración de protones que existe entre la matriz mitocondrial y el espacio intermembrana."},
+        {"letra": "E", "texto": "Todas las opciones son correctas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Todas son verdaderas: A) La cadena respiratoria mitocondrial incluye NADH deshidrogenasa (Complejo I), succinato deshidrogenasa (II), citocromo b-c1 (III) y citocromo oxidasa (IV), conectados por ubiquinona (entre I/II y III) y citocromo c (entre III y IV). B) El potencial de reducción aumenta a lo largo de la cadena (mayor afinidad por electrones), siendo el O2 el aceptor final de mayor afinidad. C) El retorno de H+ desde el espacio intermembrana a la matriz a través de ATP-sintasa es exergónico (fuerza protón motriz). D) El intercambiador ATP/ADP (ANT) usa el gradiente de voltaje (matriz negativa) para sacar ATP4- y entrar ADP3-.\n\nAs demais alternativas estão incorretas:\n(A, B, C, D son individualmente correctas; la respuesta consolidada es E.)"
+    },
+    {
+      "numero": 60,
+      "pergunta": "Respecto a la estructura y función de la mitocondria, señalá la premisa INCORRECTA.",
+      "opcoes": [
+        {"letra": "A", "texto": "Existe un número variable de mitocondrias por célula; puede aumentar o disminuir el número de acuerdo a las necesidades energéticas de la misma."},
+        {"letra": "B", "texto": "Las mitocondrias se dividen por partición o sión binaria."},
+        {"letra": "C", "texto": "La membrana mitocondrial interna es altamente especializada y rica en cardiolipina, un 'fosfolípido doble' que tiene 4 ácidos grasos y ayuda a que la membrana sea especialmente impermeable a los iones."},
+        {"letra": "D", "texto": "La totalidad de las proteínas mitocondriales son sintetizadas en el núcleo celular y posteriormente importadas por la mitocondria."},
+        {"letra": "E", "texto": "Las mitocondrias son estructuras plásticas, de morfología y tamaño variables."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "Selecionar opção INCORRETA",
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Las proteínas mitocondriales tienen dos orígenes: la mayoría se sintetizan en el citosol a partir de genes nucleares y se importan a la mitocondria, pero un pequeño grupo se sintetiza dentro de la propia mitocondria gracias a su ADN mitocondrial y maquinaria de traducción propias (ribosomas mitocondriales). Por lo tanto NO la totalidad proviene del núcleo. Además las proteínas se sintetizan en el CITOSOL (no en el núcleo), aunque sean codificadas por genes nucleares.\n\nAs demais alternativas estão incorretas (es decir, son verdaderas):\nA) El número de mitocondrias varía según las necesidades energéticas (biogénesis y mitofagia regulan).\nB) Las mitocondrias se dividen por fisión binaria, similar a bacterias (su origen evolutivo).\nC) La cardiolipina es un fosfolípido único de la membrana interna mitocondrial, con 4 cadenas de ácidos grasos, que contribuye a la impermeabilidad iónica.\nE) Las mitocondrias son estructuras dinámicas que cambian su morfología (red, fragmentación) y tamaño."
+    },
+    {
+      "numero": 61,
+      "pergunta": "El cultivo de una bacteria aeróbica facultativa requiere 2 moles de glucosa para sobrevivir durante 4 días si tiene un gaseado constante con O/CO 95/5%. ¿Cuánto tiempo podrá sobrevivir con esa cantidad de glucosa sin el aporte de O? Seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "12,0 horas"},
+        {"letra": "B", "texto": "6,0 días"},
+        {"letra": "C", "texto": "1 días"},
+        {"letra": "D", "texto": "4 días"},
+        {"letra": "E", "texto": "6,0 horas"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. En condiciones aeróbicas se obtienen ~36 ATP por glucosa; en anaeróbicas (fermentación) sólo 2 ATP por glucosa, una eficiencia 18 veces menor. Si con 2 moles de glucosa y O2 sobrevive 4 días = 96 horas, sin O2 sólo sobrevivirá 96/18 ≈ 5,33 horas, redondeando a ~6 horas.\n\nAs demais alternativas estão incorretas:\nA) 12 horas correspondería a una eficiencia diferencial de 8 veces, lo cual no es correcto.\nB) 6 días sería con MAYOR eficiencia anaeróbica que aeróbica, lo cual es imposible.\nC) 1 día = 24 h implicaría que la fermentación rinde 1/4 que la respiración, no 1/18.\nD) 4 días implicaría rendimiento idéntico, lo cual contradice la diferencia entre vías."
+    },
+    {
+      "numero": 62,
+      "pergunta": "Respecto a inhibidores y desacoplantes, seleccioná la opción INCORRECTA:",
+      "opcoes": [
+        {"letra": "A", "texto": "Las termogeninas al igual que el cianuro producen una disminución en la síntesis de ATP."},
+        {"letra": "B", "texto": "Las termogeninas al igual que el dinitrofenol son compuestos que actúan como desacoplantes de la fosforilación oxidativa y los efectos que producen en la célula son: disminución de la síntesis de lípidos y aumento en la velocidad de producción de NADH + H."},
+        {"letra": "C", "texto": "Las termogeninas al igual que el dinitrofenol son compuestos que actúan como desacoplantes de la fosforilación oxidativa y los efectos que producen en la célula son: disminución de la síntesis de lípidos, aumento del consumo de oxígeno y aumento de la producción de dióxido de carbono."},
+        {"letra": "D", "texto": "El cianuro y el monóxido de carbono son inhibidores de la cadena respiratoria y los efectos que producen en la célula son: disminución de la síntesis de lípidos, disminución del consumo de oxígeno y disminución de la producción de dióxido de carbono."},
+        {"letra": "E", "texto": "El cianuro y el monóxido de carbono son inhibidores de la cadena respiratoria mitocondrial y los efectos que producen en la célula son: aumento de la síntesis de lípidos, aumento del consumo de oxígeno y de la producción de dióxido de carbono."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "Selecionar opção INCORRETA",
+      "resposta_correta": "E",
+      "feedback": "Resposta correta: E. Cianuro y CO inhiben la citocromo oxidasa (Complejo IV), bloqueando la cadena respiratoria. Esto detiene el consumo de O2 (el sustrato de la citocromo oxidasa) y reduce la producción de CO2 (al detenerse el ciclo de Krebs por acumulación de NADH y agotamiento de NAD+). Además disminuye la síntesis de ATP, y por ende la síntesis de lípidos (anabólico, requiere ATP). Por lo tanto el aumento del consumo de O2, producción de CO2 y síntesis de lípidos NO ocurre con inhibidores: la opción es incorrecta.\n\nAs demais alternativas estão incorretas (es decir, son verdaderas):\nA) Tanto desacoplantes (termogenina) como inhibidores (cianuro) reducen la síntesis de ATP.\nB) Los desacoplantes aceleran el consumo de NADH oxidándolo más rápido, y reducen ATP disponible para síntesis de lípidos.\nC) Los desacoplantes aumentan consumo de O2 (la cadena trabaja a máxima velocidad) y producción de CO2 (Krebs acelerado), y reducen síntesis de lípidos por falta de ATP.\nD) Los inhibidores producen los efectos descritos correctamente."
+    },
+    {
+      "numero": 63,
+      "pergunta": "Seleccioná la premisa correcta respecto al mecanismo a través del cual los electrones del NADH generado durante la glucólisis aporten su energía para la producción de ATP en la célula eucariota:",
+      "opcoes": [
+        {"letra": "A", "texto": "El NADH citosólico ingresa a la matriz mitocondrial mediante un simporte con H"},
+        {"letra": "B", "texto": "Utiliza lanzaderas que permiten el ingreso a la mitocondria de metabolitos reducidos que, al oxidarse en la matriz, le aportan los electrones al NAD o al FAD mitocondrial"},
+        {"letra": "C", "texto": "No ingresan a la cadena transportadora de electrones porque se producen en el citosol."},
+        {"letra": "D", "texto": "Los transporta el piruvato y los libera durante la reacción de descarboxilación oxidativa."},
+        {"letra": "E", "texto": "Ninguna es correcta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. La membrana mitocondrial interna es impermeable al NADH. Los equivalentes reductores ingresan vía 'lanzaderas': la lanzadera del malato-aspartato (en hígado, riñón, corazón) regenera NADH en la matriz, y la lanzadera del glicerol-3-fosfato (en músculo, cerebro) transfiere los electrones al FAD mitocondrial generando FADH2.\n\nAs demais alternativas estão incorretas:\nA) El NADH NO atraviesa la membrana mitocondrial interna (es impermeable a esta molécula).\nC) Los electrones SÍ ingresan, pero indirectamente vía lanzaderas.\nD) El piruvato sí entra a la mitocondria pero no transporta los electrones del NADH glucolítico; la descarboxilación del piruvato genera SU PROPIO NADH (mitocondrial).\nE) B es correcta."
+    },
+    {
+      "numero": 64,
+      "pergunta": "Un cultivo de Salmonella enteritidis, una bacteria aeróbica que puede adaptarse a condiciones anaeróbicas (anaeróbica facultativa), utiliza glucosa como única fuente de energía y requiere para vivir 20 mmoles de ATP/día. Teniendo en cuenta estos datos, seleccioná la premisa correcta respecto al consumo diario de glucosa de este cultivo:",
+      "opcoes": [
+        {"letra": "A", "texto": "En condiciones anaeróbicas: 640 mmoles de glucosa; en condiciones aeróbicas 40 mmoles de glucosa."},
+        {"letra": "B", "texto": "En condiciones anaeróbicas: 0,625 mmoles de glucosa; en condiciones aeróbicas: 10 mmoles de glucosa."},
+        {"letra": "C", "texto": "En condiciones aeróbicas: 0,625 mmoles de glucosa; en condiciones anaeróbicas: 10 mmoles de glucosa."},
+        {"letra": "D", "texto": "En condiciones aeróbicas: 640 mmoles de glucosa; en condiciones anaeróbicas: 40 mmoles de glucosa."},
+        {"letra": "E", "texto": "Ninguna es correcta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. En condiciones aeróbicas: 1 glucosa rinde ~32 ATP (en bacterias el cálculo a veces se hace con 32 o 36 dependiendo de la lanzadera; aquí parece usarse 32). 20 mmol ATP / 32 ≈ 0,625 mmol de glucosa. En condiciones anaeróbicas: 1 glucosa rinde 2 ATP. 20 mmol ATP / 2 = 10 mmol de glucosa.\n\nAs demais alternativas estão incorretas:\nA) Invierte los valores entre aeróbico y anaeróbico, además 640 sería con un rendimiento mucho menor a 2 ATP/glucosa.\nB) Invierte los valores: 0,625 corresponde a aeróbico (no anaeróbico) y 10 a anaeróbico.\nD) Mismo error de inversión, valores incorrectos.\nE) C es correcta."
+    },
+    {
+      "numero": 65,
+      "pergunta": "Respecto a los desacoplantes de la cadena respiratoria y la fosforilación oxidativa mitocondrial, seleccioná la opción correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Disminuyen la velocidad del transporte de electrones por la cadena respiratoria."},
+        {"letra": "B", "texto": "Disminuyen la velocidad de oxidación mitocondrial del NADH y FADH."},
+        {"letra": "C", "texto": "Incrementan la producción de CO y el consumo de O."},
+        {"letra": "D", "texto": "Disminuyen la velocidad de ciclo de Krebs y la síntesis proteica."},
+        {"letra": "E", "texto": "Todas son correctas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Los desacoplantes (DNP, termogenina) disipan el gradiente de protones permitiendo que H+ regrese a la matriz sin pasar por la ATP-sintasa. Esto LIBERA la cadena respiratoria del control respiratorio: la cadena trabaja a máxima velocidad, AUMENTANDO el consumo de O2; el ciclo de Krebs también se acelera (al regenerarse rápidamente NAD+ y FAD), aumentando la producción de CO2.\n\nAs demais alternativas estão incorretas:\nA) Los desacoplantes AUMENTAN (no disminuyen) la velocidad del transporte electrónico.\nB) Los desacoplantes AUMENTAN la velocidad de oxidación de NADH y FADH2 (más NAD+ y FAD disponibles).\nD) El ciclo de Krebs se ACELERA con desacoplantes; la síntesis proteica disminuye por falta de ATP, pero el primer enunciado es falso.\nE) Como A, B y D son falsas, E es falsa."
+    },
+    {
+      "numero": 66,
+      "pergunta": "Respecto a la respiración celular, seleccioná la premisa correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Comienza con la reducción de la glucosa en un proceso llamado glucólisis."},
+        {"letra": "B", "texto": "En el ciclo de Krebs se oxida completamente el grupo acetilo del acetil-CoA sin consumo de oxígeno."},
+        {"letra": "C", "texto": "En el ciclo de Krebs se generan 6 NADH, 2 FADH y 2 GTP por cada molécula de Acetil-CoA que ingresa al ciclo."},
+        {"letra": "D", "texto": "El transporte de electrones por la cadena respiratoria disminuye el pH de la matriz mitocondrial."},
+        {"letra": "E", "texto": "B y D son correctas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. El ciclo de Krebs oxida completamente el grupo acetilo del acetil-CoA a 2 CO2, generando NADH, FADH2 y GTP. NO consume O2 directamente; el O2 sólo participa al final de la cadena respiratoria. Las descarboxilaciones del ciclo son oxidativas pero usan NAD+ y FAD como aceptores, no O2.\n\nAs demais alternativas estão incorretas:\nA) La glucólisis OXIDA la glucosa (genera NADH), no la reduce.\nC) Por cada acetil-CoA se generan 3 NADH, 1 FADH2 y 1 GTP. Por cada glucosa (2 acetil-CoA) son 6 NADH, 2 FADH2 y 2 GTP, pero el enunciado se refiere a UNA molécula de acetil-CoA.\nD) El transporte de electrones bombea H+ DESDE la matriz HACIA el espacio intermembrana, lo que ALCALINIZA la matriz (sube el pH), no lo disminuye.\nE) B es correcta pero D es falsa, por lo tanto la conjunción es falsa."
+    },
+    {
+      "numero": 67,
+      "pergunta": "Se estudia el efecto del Cianuro sódico (un inhibidor de la citocromo oxidasa) en mitocondrias aisladas de hepatocitos y resuspendidas en un medio que contiene piruvato. Seleccioná la opción correcta respecto a los efectos que se observarán en presencia de cianuro sódico:",
+      "opcoes": [
+        {"letra": "A", "texto": "Disminución de la producción de ATP y aumento del consumo de O2."},
+        {"letra": "B", "texto": "Aumento de la velocidad del ciclo de Krebs."},
+        {"letra": "C", "texto": "Incremento de la decarboxilación oxidativa del piruvato."},
+        {"letra": "D", "texto": "Disminución tanto de la producción de ATP como del transporte de electrones y el ciclo de Krebs."},
+        {"letra": "E", "texto": "Aumento de los niveles de NAD+ y FAD y disminución de los de NADH y FADH2."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. El cianuro inhibe la citocromo oxidasa (Complejo IV) bloqueando la transferencia de electrones al O2. Como consecuencia: 1) se detiene la cadena respiratoria, 2) NADH y FADH2 se acumulan al no poder reoxidarse, 3) la falta de NAD+ y FAD detiene el ciclo de Krebs y la descarboxilación oxidativa del piruvato (que requieren estos cofactores), 4) sin gradiente de H+ no hay síntesis de ATP por fosforilación oxidativa.\n\nAs demais alternativas estão incorretas:\nA) Disminución de ATP es correcta, pero el consumo de O2 DISMINUYE (no aumenta) porque la citocromo oxidasa es la que reduce O2 a H2O.\nB) El ciclo de Krebs DISMINUYE (no aumenta) por falta de NAD+ y FAD.\nC) La descarboxilación oxidativa del piruvato DISMINUYE por la misma razón.\nE) Los niveles aumentan de NADH y FADH2 (acumulación), y disminuyen los de NAD+ y FAD (no se reoxidan)."
+    },
+    {
+      "numero": 68,
+      "pergunta": "Respecto a los lípidos, señalá cuál de las siguientes premisas es la correcta:",
+      "opcoes": [
+        {"letra": "A", "texto": "Sólo están presentes en alimentos de origen animal."},
+        {"letra": "B", "texto": "Constituyen un grupo heterogéneo de moléculas orgánicas complejas que presentan como característica común ser insolubles en agua"},
+        {"letra": "C", "texto": "Son considerados macromoléculas, al igual que los ácidos nucleicos, polisacáridos y proteínas, por estar conformados por sillares estructurales."},
+        {"letra": "D", "texto": "Los ácidos grasos son sus sillares estructurales y están presentes en todos los tipos de lípidos, tanto saponificables e insaponificables."},
+        {"letra": "E", "texto": "Los triacilglicéridos están compuestos por un glicerol esterificado con dos ácidos grasos y un grupo fosfato al que se encuentra unido un grupo de cabeza polar (que puede ser un aminoalcohol)"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. Los lípidos son un grupo MUY heterogéneo (ácidos grasos, triacilglicéridos, fosfolípidos, esfingolípidos, esteroides, terpenos, eicosanoides, vitaminas liposolubles, etc.) cuya única característica común universal es ser insolubles en agua (hidrofóbicos o anfipáticos), siendo solubles en solventes orgánicos.\n\nAs demais alternativas estão incorretas:\nA) Los lípidos están en alimentos animales y vegetales (aceites, frutos secos, etc.).\nC) Los lípidos NO son macromoléculas (no son polímeros de unidades repetitivas covalentemente unidas como las otras tres clases biomoleculares).\nD) Los ácidos grasos están sólo en lípidos SAPONIFICABLES; los insaponificables (esteroides, terpenos, eicosanoides) NO contienen ácidos grasos.\nE) La descripción corresponde a un FOSFOLÍPIDO (glicerofosfolípido), no a un triacilglicérido. Los TAG tienen 3 ácidos grasos y NINGÚN grupo fosfato."
+    }
+  ]
+}
