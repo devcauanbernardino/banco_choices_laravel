@@ -79,7 +79,7 @@ class CheckoutController extends Controller
             'materias' => 'required|string',
             'total_price' => 'required|numeric|min:0',
             'codigo_cupom_usado' => 'nullable|string|max:64',
-            'usar_credito_addon' => 'nullable|accepted',
+            'usar_credito_addon' => 'nullable|boolean',
             'terms' => 'accepted',
         ]);
 
