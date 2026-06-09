@@ -50,6 +50,12 @@ final class QuestionBankLocator
         ));
     }
 
+    /** @return list<int> */
+    public static function allMateriaIdsWithBank(): array
+    {
+        return self::filterIdsWithBank([1, 2, 3, 4, 5]);
+    }
+
     /**
      * Lista canónica ordenada pela posição original no JSON (para overlay_key).
      *

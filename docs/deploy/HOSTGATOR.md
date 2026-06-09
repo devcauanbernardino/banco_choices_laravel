@@ -174,7 +174,14 @@ Login:
 
 - E-mail: `teste@bancodechoices.com`
 - Senha: `BancoTeste2026#Local`
+- Acesso: **todas as matérias com banco de questões** (Microbiología, Biología celular, Biología UNLP, Biología CBC, Farmacología II)
 - URL: `https://bancodechoices.com/login`
+
+O deploy automático corre `php artisan bancodechoices:ensure-test-user` após cada migrate. Manual no Terminal:
+
+```bash
+cd /home2/cauanb36/repositories/banco_choices_laravel && /usr/local/bin/ea-php83 artisan bancodechoices:ensure-test-user
+```
 
 ### B) Atualizar código do GitHub (sem terminal)
 
