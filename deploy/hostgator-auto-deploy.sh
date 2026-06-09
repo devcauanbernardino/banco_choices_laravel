@@ -9,10 +9,30 @@ set -euo pipefail
 REPO="${REPO_ROOT:-/home2/cauanb36/repositories/banco_choices_laravel}"
 DOCROOT="${DOCROOT:-/home2/cauanb36/bancodechoices.com}"
 PHP="${PHP_BIN:-/usr/local/bin/ea-php83}"
-GIT="${GIT_BIN:-/usr/local/bin/git}"
 BRANCH="${GIT_BRANCH:-main}"
 REMOTE="${GIT_REMOTE:-origin}"
 LOCK="${DEPLOY_LOCK:-/home2/cauanb36/.bancodechoices-deploy.lock}"
+
+# Localiza o binário git em múltiplos caminhos comuns (Hostgator varia por servidor)
+if [[ -n "${GIT_BIN:-}" && -x "$GIT_BIN" ]]; then
+    GIT="$GIT_BIN"
+else
+    GIT=""
+    for _candidate in /usr/bin/git /usr/local/bin/git /usr/local/cpanel/3rdparty/bin/git; do
+        if [[ -x "$_candidate" ]]; then
+            GIT="$_candidate"
+            break
+        fi
+    done
+    if [[ -z "$GIT" ]]; then
+        GIT="$(command -v git 2>/dev/null || true)"
+    fi
+fi
+
+if [[ -z "$GIT" ]]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERRO: git não encontrado. Defina GIT_BIN no cron."
+    exit 1
+fi
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"
