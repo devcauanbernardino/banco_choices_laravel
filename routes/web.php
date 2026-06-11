@@ -92,6 +92,12 @@ Route::get('/bc-debug-mail', function () {
     }
 
     $config = [
+        'APP_URL' => config('app.url'),
+        'SITE_URL' => config('mercadopago.site_url'),
+        'MP_CHECKOUT_BASE_URL' => config('mercadopago.checkout_base_url'),
+        'MP_ACCESS_TOKEN_set' => config('mercadopago.access_token') !== '' ? 'sim' : 'NAO',
+        'MP_REQUIRE_WEBHOOK_SIGNATURE' => config('mercadopago.require_webhook_signature') ? 'true' : 'false',
+        'MP_WEBHOOK_SECRET_set' => config('mercadopago.webhook_secret') !== '' ? 'sim' : 'NAO',
         'MAIL_MAILER' => config('mail.default'),
         'MAIL_HOST' => config('mail.mailers.smtp.host'),
         'MAIL_PORT' => config('mail.mailers.smtp.port'),
