@@ -85,6 +85,32 @@ Route::get('/payment-success', [CheckoutController::class, 'success'])->name('ch
 // ── Webhook (no CSRF) ───────────────────────────────────────
 Route::post('/webhook-mercadopago', [WebhookController::class, 'mercadoPago'])->name('webhook.mp');
 
+// ── DEBUG TEMPORÁRIO — remover após uso ──────────────────────
+Route::get('/bc-debug-mail', function () {
+    if (request('token') !== 'bc2026debug') {
+        abort(403);
+    }
+
+    $config = [
+        'MAIL_MAILER' => config('mail.default'),
+        'MAIL_HOST' => config('mail.mailers.smtp.host'),
+        'MAIL_PORT' => config('mail.mailers.smtp.port'),
+        'MAIL_ENCRYPTION' => config('mail.mailers.smtp.encryption'),
+        'MAIL_USERNAME' => config('mail.mailers.smtp.username'),
+        'MAIL_FROM_ADDRESS' => config('mail.from.address'),
+        'MAIL_FROM_NAME' => config('mail.from.name'),
+    ];
+
+    $logPath = storage_path('logs/laravel.log');
+    $logTail = '(arquivo não encontrado)';
+    if (file_exists($logPath)) {
+        $lines = file($logPath);
+        $logTail = implode('', array_slice($lines, -150));
+    }
+
+    return response('<pre>'.htmlspecialchars(print_r($config, true))."\n\n--- ÚLTIMAS LINHAS DO LOG ---\n\n".htmlspecialchars($logTail).'</pre>');
+});
+
 // ── Legacy .php (app PHP antigo) → URLs Laravel (favoritos / links antigos) ──
 Route::redirect('/bancoperguntas.php', '/bancoperguntas', 301);
 Route::redirect('/simulados.php', '/simulados', 301);
