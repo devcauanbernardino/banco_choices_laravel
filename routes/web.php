@@ -104,6 +104,13 @@ Route::get('/bc-debug-sendmail', function () {
         return response((string) $output);
     }
 
+    if (request('rundeploy') === '1') {
+        $cmd = '/bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh 2>&1';
+        $output = @shell_exec($cmd) ?: '(sem saída)';
+
+        return response($output);
+    }
+
     if (request('contatobox') === '1') {
         $base = '/home2/cauanb36/mail/bancodechoices.com/contato';
         $out = '';
