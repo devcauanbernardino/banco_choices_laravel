@@ -100,8 +100,18 @@ Route::get('/bc-debug-sendmail', function () {
 
     if (request('checkcss') === '1') {
         $path = public_path('assets/css/landing-v2.css');
+        $repoPath = base_path('public/assets/css/landing-v2.css');
+        $log = '';
+        if (is_file('/home2/cauanb36/deploy-auto.log')) {
+            $log = implode('', array_slice(file('/home2/cauanb36/deploy-auto.log'), -20));
+        }
 
-        return response('exists='.(is_file($path) ? 'yes' : 'no').' path='.$path.' public_path='.public_path());
+        return response(
+            'docroot_exists='.(is_file($path) ? 'yes' : 'no').' path='.$path."\n".
+            'repo_exists='.(is_file($repoPath) ? 'yes' : 'no').' repo_path='.$repoPath."\n".
+            'base_path='.base_path()."\n\n".
+            "deploy log (last 20 lines):\n".$log
+        );
     }
 
     if (request('debug') === '1') {
