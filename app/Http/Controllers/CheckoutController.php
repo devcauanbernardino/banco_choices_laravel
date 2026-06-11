@@ -387,10 +387,14 @@ class CheckoutController extends Controller
             MercadoPagoConfig::setAccessToken((string) config('mercadopago.access_token'));
             try {
                 $payment = (new PaymentClient)->get((int) $paymentIdRaw);
+                $apiMetadata = PaymentFulfillmentService::fetchMetadataViaApi(
+                    (int) $paymentIdRaw,
+                    (string) config('mercadopago.access_token')
+                );
                 PaymentFulfillmentService::processPaymentNotification(
                     DB::connection()->getPdo(),
                     $payment,
-                    $metaFallback
+                    $apiMetadata + $metaFallback
                 );
                 $syncedFromMercadoPago = true;
                 $apiStatus = strtolower((string) ($payment->status ?? ''));

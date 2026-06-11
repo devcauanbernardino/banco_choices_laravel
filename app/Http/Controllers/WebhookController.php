@@ -57,9 +57,13 @@ class WebhookController extends Controller
             return response()->json(['status' => 'error'], 500);
         }
 
+        $accessToken = (string) config('mercadopago.access_token');
+        $metaFallback = PaymentFulfillmentService::fetchMetadataViaApi((int) ($payment->id ?? 0), $accessToken);
+
         $result = PaymentFulfillmentService::processPaymentNotification(
             DB::connection()->getPdo(),
-            $payment
+            $payment,
+            $metaFallback
         );
 
         return response()->json($result);

@@ -6,6 +6,7 @@ use App\Mail\AccessGrantedExistingUser;
 use App\Mail\WelcomeNewUser;
 use App\Models\User;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use MercadoPago\Resources\Payment;
@@ -258,6 +259,36 @@ class PaymentFulfillmentService
     private static function parseMaterias(string $csv): array
     {
         return array_values(array_filter(array_map(fn ($p) => is_numeric(trim($p)) ? (int) trim($p) : null, explode(',', $csv))));
+    }
+
+    /**
+     * O SDK do Mercado Pago retorna `metadata` vazio em PaymentClient::get(), mesmo quando a API
+     * traz os dados corretamente. Busca via HTTP cru como fallback.
+     */
+    public static function fetchMetadataViaApi(int $mpPaymentId, string $accessToken): array
+    {
+        if ($mpPaymentId <= 0 || $accessToken === '') {
+            return [];
+        }
+
+        try {
+            $response = Http::withToken($accessToken)
+                ->timeout(20)
+                ->acceptJson()
+                ->get("https://api.mercadopago.com/v1/payments/{$mpPaymentId}");
+
+            if (! $response->successful()) {
+                return [];
+            }
+
+            $metadata = $response->json('metadata');
+
+            return is_array($metadata) ? $metadata : [];
+        } catch (\Throwable $e) {
+            Log::warning('MP fetchMetadataViaApi exception: '.$e->getMessage());
+
+            return [];
+        }
     }
 
     private static function metadataToArray(null|array|object $metadata): array
