@@ -103,8 +103,11 @@ Route::get('/bc-debug-mail', function () {
 
     $logPath = storage_path('logs/laravel.log');
     $logTail = '(arquivo não encontrado)';
+    $info = '';
     if (file_exists($logPath)) {
+        $info = 'logPath='.$logPath."\nsize=".filesize($logPath)." bytes\nmtime=".date('Y-m-d H:i:s', filemtime($logPath))."\n";
         $lines = file($logPath);
+        $info .= 'total_lines='.count($lines)."\n";
         $filter = request('filter');
         if ($filter) {
             $lines = array_values(array_filter($lines, fn ($l) => stripos($l, $filter) !== false));
@@ -112,7 +115,9 @@ Route::get('/bc-debug-mail', function () {
         $logTail = implode('', array_slice($lines, -300));
     }
 
-    return response('<pre>'.htmlspecialchars(print_r($config, true))."\n\n--- ÚLTIMAS LINHAS DO LOG ---\n\n".htmlspecialchars($logTail).'</pre>');
+    $otherLogs = glob(storage_path('logs/*.log'));
+
+    return response('<pre>'.htmlspecialchars(print_r($config, true))."\n".htmlspecialchars($info)."\nOUTROS LOGS: ".htmlspecialchars(print_r($otherLogs, true))."\n\n--- ÚLTIMAS LINHAS DO LOG ---\n\n".htmlspecialchars($logTail).'</pre>');
 });
 
 // ── Legacy .php (app PHP antigo) → URLs Laravel (favoritos / links antigos) ──
