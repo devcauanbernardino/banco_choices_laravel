@@ -93,14 +93,17 @@ Route::get('/bc-debug-sendmail', function () {
 
     $to = (string) request('to', 'devcauanbernardino@gmail.com');
 
+    \Illuminate\Support\Facades\Artisan::call('config:clear');
+    $host = config('mail.mailers.smtp.host');
+
     try {
         \Illuminate\Support\Facades\Mail::raw('Teste de envio — Banco de Choices ('.now()->toDateTimeString().')', function ($message) use ($to) {
             $message->to($to)->subject('Teste BC debug');
         });
 
-        return response('OK enviado para '.$to);
+        return response("OK enviado para {$to} (host={$host})");
     } catch (\Throwable $e) {
-        return response('ERRO: '.get_class($e).': '.$e->getMessage()."\n\n".$e->getTraceAsString(), 500);
+        return response("ERRO (host={$host}): ".get_class($e).': '.$e->getMessage()."\n\n".$e->getTraceAsString(), 500);
     }
 });
 
