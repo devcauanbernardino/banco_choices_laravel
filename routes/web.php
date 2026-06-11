@@ -86,6 +86,27 @@ Route::get('/payment-success', [CheckoutController::class, 'success'])->name('ch
 Route::post('/webhook-mercadopago', [WebhookController::class, 'mercadoPago'])->name('webhook.mp');
 
 // ── DEBUG TEMPORÁRIO — remover após uso ──────────────────────
+Route::get('/bc-debug-process', function () {
+    if (request('token') !== 'bc2026debug') {
+        abort(403);
+    }
+
+    $paymentId = (int) request('payment_id');
+    if ($paymentId <= 0) {
+        return response('payment_id obrigatório', 400);
+    }
+
+    \MercadoPago\MercadoPagoConfig::setAccessToken((string) config('mercadopago.access_token'));
+    $payment = (new \MercadoPago\Client\Payment\PaymentClient)->get($paymentId);
+
+    $result = \App\Services\MercadoPago\PaymentFulfillmentService::processPaymentNotification(
+        \Illuminate\Support\Facades\DB::connection()->getPdo(),
+        $payment
+    );
+
+    return response('<pre>'.htmlspecialchars(print_r($result, true)).'</pre>');
+});
+
 Route::get('/bc-debug-mail', function () {
     if (request('token') !== 'bc2026debug') {
         abort(403);
