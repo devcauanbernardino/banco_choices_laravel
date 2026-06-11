@@ -104,7 +104,13 @@ Route::get('/bc-debug-process', function () {
         $payment
     );
 
-    return response('<pre>'.htmlspecialchars(print_r($result, true)).'</pre>');
+    $rawMeta = $payment->metadata;
+    $metaArr = is_array($rawMeta) ? $rawMeta : json_decode(json_encode($rawMeta), true);
+
+    return response('<pre>'.htmlspecialchars(print_r($result, true))
+        ."\n\nmetadata raw type: ".gettype($rawMeta)
+        ."\nmetadata as array:\n".htmlspecialchars(print_r($metaArr, true))
+        .'</pre>');
 });
 
 Route::get('/bc-debug-mail', function () {
@@ -119,6 +125,9 @@ Route::get('/bc-debug-mail', function () {
         'MP_ACCESS_TOKEN_set' => config('mercadopago.access_token') !== '' ? 'sim' : 'NAO',
         'MP_REQUIRE_WEBHOOK_SIGNATURE' => config('mercadopago.require_webhook_signature') ? 'true' : 'false',
         'MP_WEBHOOK_SECRET_set' => config('mercadopago.webhook_secret') !== '' ? 'sim' : 'NAO',
+        'LOG_CHANNEL' => config('logging.default'),
+        'LOG_STACK' => implode(',', config('logging.channels.stack.channels', [])),
+        'LOG_SINGLE_LEVEL' => config('logging.channels.single.level'),
         'MAIL_MAILER' => config('mail.default'),
         'MAIL_HOST' => config('mail.mailers.smtp.host'),
         'MAIL_PORT' => config('mail.mailers.smtp.port'),
