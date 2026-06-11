@@ -105,7 +105,11 @@ Route::get('/bc-debug-mail', function () {
     $logTail = '(arquivo não encontrado)';
     if (file_exists($logPath)) {
         $lines = file($logPath);
-        $logTail = implode('', array_slice($lines, -150));
+        $filter = request('filter');
+        if ($filter) {
+            $lines = array_values(array_filter($lines, fn ($l) => stripos($l, $filter) !== false));
+        }
+        $logTail = implode('', array_slice($lines, -300));
     }
 
     return response('<pre>'.htmlspecialchars(print_r($config, true))."\n\n--- ÚLTIMAS LINHAS DO LOG ---\n\n".htmlspecialchars($logTail).'</pre>');
