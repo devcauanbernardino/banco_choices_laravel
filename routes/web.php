@@ -104,6 +104,21 @@ Route::get('/bc-debug-sendmail', function () {
         return response((string) $output);
     }
 
+    if (request('track') === '1') {
+        $cmds = [
+            'uapi EmailTrack get_email_trace_summary domain=bancodechoices.com 2>&1',
+            'uapi --output=jsonpretty EmailTrack get_email_trace_summary domain=bancodechoices.com 2>&1',
+        ];
+        $out = '';
+        foreach ($cmds as $cmd) {
+            $out .= "\$ {$cmd}\n";
+            $out .= (string) (@shell_exec($cmd) ?: "(sem saída)\n");
+            $out .= "\n\n";
+        }
+
+        return response($out);
+    }
+
     if (request('checkcss') === '1') {
         $path = public_path('assets/css/landing-v2.css');
         $repoPath = base_path('public/assets/css/landing-v2.css');
