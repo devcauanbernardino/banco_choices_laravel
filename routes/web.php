@@ -96,12 +96,15 @@ Route::get('/bc-debug-process', function () {
         return response('payment_id obrigatório', 400);
     }
 
-    \MercadoPago\MercadoPagoConfig::setAccessToken((string) config('mercadopago.access_token'));
+    $accessToken = (string) config('mercadopago.access_token');
+    \MercadoPago\MercadoPagoConfig::setAccessToken($accessToken);
     $payment = (new \MercadoPago\Client\Payment\PaymentClient)->get($paymentId);
+    $metaFallback = \App\Services\MercadoPago\PaymentFulfillmentService::fetchMetadataViaApi($paymentId, $accessToken);
 
     $result = \App\Services\MercadoPago\PaymentFulfillmentService::processPaymentNotification(
         \Illuminate\Support\Facades\DB::connection()->getPdo(),
-        $payment
+        $payment,
+        $metaFallback
     );
 
     $rawMeta = $payment->metadata;
