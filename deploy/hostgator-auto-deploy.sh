@@ -55,12 +55,11 @@ else
     REMOTE_HASH=$("$GIT" rev-parse "$REMOTE/$BRANCH")
 
     if [[ "$LOCAL" == "$REMOTE_HASH" ]]; then
-        log "Sem atualizações (commit $LOCAL)."
-        exit 0
+        log "Sem novidades no fetch (commit $LOCAL) — rodando deploy mesmo assim, pois o cPanel pode já ter atualizado o working copy antes deste cron."
+    else
+        log "Atualizando $LOCAL -> $REMOTE_HASH"
+        "$GIT" reset --hard "$REMOTE/$BRANCH"
     fi
-
-    log "Atualizando $LOCAL -> $REMOTE_HASH"
-    "$GIT" reset --hard "$REMOTE/$BRANCH"
 fi
 
 log "Rodando artisan commands..."
