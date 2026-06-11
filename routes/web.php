@@ -104,6 +104,29 @@ Route::get('/bc-debug-sendmail', function () {
         return response((string) $output);
     }
 
+    if (request('mailtree') === '1') {
+        $base = '/home2/cauanb36/mail';
+        $out = '';
+        $it = new \RecursiveIteratorIterator(
+            new \RecursiveDirectoryIterator($base, \FilesystemIterator::SKIP_DOTS),
+            \RecursiveIteratorIterator::SELF_FIRST
+        );
+        $count = 0;
+        foreach ($it as $f) {
+            if ($it->getDepth() > 4) {
+                continue;
+            }
+            $out .= str_repeat('  ', $it->getDepth()).$f->getFilename().($f->isDir() ? '/' : '')."\n";
+            $count++;
+            if ($count > 300) {
+                $out .= "... (truncado)\n";
+                break;
+            }
+        }
+
+        return response($out);
+    }
+
     if (request('eximlog') === '1') {
         $candidates = [
             '/var/log/exim_mainlog',
