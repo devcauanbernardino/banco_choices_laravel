@@ -117,7 +117,15 @@ Route::get('/bc-debug-mail', function () {
 
     $otherLogs = glob(storage_path('logs/*.log'));
 
-    return response('<pre>'.htmlspecialchars(print_r($config, true))."\n".htmlspecialchars($info)."\nOUTROS LOGS: ".htmlspecialchars(print_r($otherLogs, true))."\n\n--- ÚLTIMAS LINHAS DO LOG ---\n\n".htmlspecialchars($logTail).'</pre>');
+    $pedidos = \Illuminate\Support\Facades\DB::table('pedidos')->orderByDesc('id')->limit(5)->get();
+    $users = \Illuminate\Support\Facades\DB::table('users')->orderByDesc('id')->limit(5)->get(['id', 'nome', 'email', 'created_at']);
+    $processed = \Illuminate\Support\Facades\DB::table('mp_payment_processed')->orderByDesc('mp_payment_id')->limit(5)->get();
+
+    $extra = "\nPEDIDOS:\n".print_r($pedidos->toArray(), true)
+        ."\nUSERS:\n".print_r($users->toArray(), true)
+        ."\nMP_PAYMENT_PROCESSED:\n".print_r($processed->toArray(), true);
+
+    return response('<pre>'.htmlspecialchars(print_r($config, true))."\n".htmlspecialchars($info)."\nOUTROS LOGS: ".htmlspecialchars(print_r($otherLogs, true)).htmlspecialchars($extra)."\n\n--- ÚLTIMAS LINHAS DO LOG ---\n\n".htmlspecialchars($logTail).'</pre>');
 });
 
 // ── Legacy .php (app PHP antigo) → URLs Laravel (favoritos / links antigos) ──
