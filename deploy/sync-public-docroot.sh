@@ -41,8 +41,5 @@ for favicon in img/favicon-bd-round.svg img/favicon-bd-round.png img/logo-bd.png
     fi
 done
 
-# CSS da landing é servido por /css/landing-v2.css (Laravel). Remove cópia estática antiga.
-rm -f "$DOCROOT/assets/css/landing-v2.css"
-
 echo "Sync concluído. Favicon: https://bancodechoices.com/favicon.ico (rota Laravel)"
 echo "Landing CSS: https://bancodechoices.com/css/landing-v2.css (rota Laravel)"
