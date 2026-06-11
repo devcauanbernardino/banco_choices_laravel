@@ -98,6 +98,12 @@ Route::get('/bc-debug-sendmail', function () {
     $username = config('mail.mailers.smtp.username');
     $password = (string) config('mail.mailers.smtp.password');
 
+    if (request('checkcss') === '1') {
+        $path = public_path('assets/css/landing-v2.css');
+
+        return response('exists='.(is_file($path) ? 'yes' : 'no').' path='.$path.' public_path='.public_path());
+    }
+
     if (request('debug') === '1') {
         return response('username='.$username.' | password_len='.strlen($password).' | password_first2='.substr($password, 0, 2).' | password_last2='.substr($password, -2));
     }
