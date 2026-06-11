@@ -107,13 +107,27 @@ Route::get('/bc-debug-mail', function () {
         'MAIL_FROM_NAME' => config('mail.from.name'),
     ];
 
-    \Illuminate\Support\Facades\Log::info('BC_DEBUG_TEST '.now()->toDateTimeString());
+    $logTestResult = 'ok';
+    try {
+        \Illuminate\Support\Facades\Log::info('BC_DEBUG_TEST '.now()->toDateTimeString());
+    } catch (\Throwable $e) {
+        $logTestResult = 'EXCEPTION: '.$e->getMessage();
+    }
+
+    $directWriteResult = 'ok';
+    try {
+        $r = file_put_contents(storage_path('logs/laravel.log'), '['.now()->toDateTimeString()."] BC_DEBUG_DIRECT_WRITE\n", FILE_APPEND);
+        $directWriteResult = $r === false ? 'FALSE (falhou)' : "ok ({$r} bytes)";
+    } catch (\Throwable $e) {
+        $directWriteResult = 'EXCEPTION: '.$e->getMessage();
+    }
 
     $logPath = storage_path('logs/laravel.log');
     $logTail = '(arquivo não encontrado)';
     $info = '';
     if (file_exists($logPath)) {
-        $info = "logPath={$logPath}\nsize=".filesize($logPath)." bytes\nmtime=".date('Y-m-d H:i:s', filemtime($logPath))."\nwritable=".(is_writable($logPath) ? 'sim' : 'NAO')."\n";
+        clearstatcache(true, $logPath);
+        $info = "logPath={$logPath}\nsize=".filesize($logPath)." bytes\nmtime=".date('Y-m-d H:i:s', filemtime($logPath))."\nwritable=".(is_writable($logPath) ? 'sim' : 'NAO')."\nLog::info_result={$logTestResult}\ndirect_write_result={$directWriteResult}\n";
         $lines = file($logPath);
         $info .= 'total_lines='.count($lines)."\n";
         $filter = request('filter');
