@@ -85,6 +85,25 @@ Route::get('/payment-success', [CheckoutController::class, 'success'])->name('ch
 // ── Webhook (no CSRF) ───────────────────────────────────────
 Route::post('/webhook-mercadopago', [WebhookController::class, 'mercadoPago'])->name('webhook.mp');
 
+// ── DEBUG TEMPORÁRIO — remover após uso ──────────────────────
+Route::get('/bc-debug-sendmail', function () {
+    if (request('token') !== 'bc2026debug') {
+        abort(403);
+    }
+
+    $to = (string) request('to', 'devcauanbernardino@gmail.com');
+
+    try {
+        \Illuminate\Support\Facades\Mail::raw('Teste de envio — Banco de Choices ('.now()->toDateTimeString().')', function ($message) use ($to) {
+            $message->to($to)->subject('Teste BC debug');
+        });
+
+        return response('OK enviado para '.$to);
+    } catch (\Throwable $e) {
+        return response('ERRO: '.get_class($e).': '.$e->getMessage()."\n\n".$e->getTraceAsString(), 500);
+    }
+});
+
 // ── Legacy .php (app PHP antigo) → URLs Laravel (favoritos / links antigos) ──
 Route::redirect('/bancoperguntas.php', '/bancoperguntas', 301);
 Route::redirect('/simulados.php', '/simulados', 301);
