@@ -690,16 +690,9 @@
     animation: none;
 }
 
-.lp-hero-q__opt--correct {
-    border-color: rgba(106, 3, 146, 0.45);
-    background: linear-gradient(135deg, rgba(106, 3, 146, 0.11), rgba(106, 3, 146, 0.03));
-    box-shadow: 0 8px 26px rgba(106, 3, 146, 0.18);
-    color: var(--lp-text);
-}
-
 .lp-hero-q__opt--correct .lp-hero-q__tick {
-    opacity: 1;
-    transform: none;
+    opacity: 0;
+    transform: scale(0.5);
     animation: none;
 }
 
@@ -901,21 +894,7 @@
 
     .lp-hero-q__opt--a { animation: lpHeroPickSlot 12s ease-in-out infinite; }
     .lp-hero-q__opt--b { animation: lpHeroPickSlot 12s ease-in-out infinite -3s; }
-    .lp-hero-q__opt--c { animation: lpHeroPickCorrect 12s ease-in-out infinite -6s; }
     .lp-hero-q__opt--d { animation: lpHeroPickSlot 12s ease-in-out infinite -9s; }
-
-    .lp-hero-q__opt--correct {
-        border-color: rgba(15, 23, 42, 0.1);
-        background: rgba(255, 255, 255, 0.92);
-        box-shadow: none;
-        color: var(--lp-muted);
-    }
-
-    .lp-hero-q__opt--correct .lp-hero-q__tick {
-        opacity: 0;
-        transform: scale(0.5);
-        animation: lpHeroTickPop 12s ease-in-out infinite -6s;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -941,14 +920,6 @@
         }
     }
 
-    .lp-hero-q__opt--correct {
-        border-color: rgba(106, 3, 146, 0.45);
-        background: rgba(106, 3, 146, 0.06);
-    }
-    .lp-hero-q__opt--correct .lp-hero-q__tick {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 /* ---------- Stats banner ---------- */
