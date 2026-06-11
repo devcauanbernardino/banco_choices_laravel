@@ -527,10 +527,8 @@
     margin: 0;
     border-radius: 22px;
     background: linear-gradient(165deg, #ffffff 0%, #f5f6fb 100%);
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow:
-        0 12px 28px rgba(106, 3, 146, 0.12),
-        0 4px 12px rgba(15, 23, 42, 0.05);
+    border: none;
+    box-shadow: none;
     transform: none;
     animation: none;
 }
@@ -859,9 +857,7 @@
     .lp-hero-scene__panel {
         position: absolute;
         width: auto;
-        box-shadow:
-            0 28px 64px rgba(106, 3, 146, 0.14),
-            0 8px 20px rgba(15, 23, 42, 0.06);
+        box-shadow: none;
         transform-style: preserve-3d;
         backface-visibility: hidden;
     }
