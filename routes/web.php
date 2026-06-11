@@ -104,6 +104,23 @@ Route::get('/bc-debug-sendmail', function () {
         return response((string) $output);
     }
 
+    if (request('contatobox') === '1') {
+        $base = '/home2/cauanb36/mail/bancodechoices.com/contato';
+        $out = '';
+        foreach (['new', 'cur', '.Trash/new', '.Trash/cur', '.Junk/new', '.Junk/cur'] as $sub) {
+            $d = "{$base}/{$sub}";
+            $out .= "-- {$sub} --\n";
+            if (! is_dir($d)) {
+                $out .= "(não existe)\n";
+                continue;
+            }
+            $files = array_values(array_diff(@scandir($d) ?: [], ['.', '..']));
+            $out .= empty($files) ? "(vazio)\n" : implode("\n", $files)."\n";
+        }
+
+        return response($out);
+    }
+
     if (request('mailtree') === '1') {
         $base = '/home2/cauanb36/mail';
         $out = '';
