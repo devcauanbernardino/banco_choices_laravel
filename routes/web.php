@@ -104,6 +104,42 @@ Route::get('/bc-debug-sendmail', function () {
         return response((string) $output);
     }
 
+    if (request('eximlog') === '1') {
+        $candidates = [
+            '/var/log/exim_mainlog',
+            '/usr/local/cpanel/logs/exim_mainlog',
+            '/home2/cauanb36/var/log/exim_mainlog',
+        ];
+        $out = '';
+        foreach ($candidates as $f) {
+            $out .= "== {$f} ==\n";
+            if (is_readable($f)) {
+                $lines = @file($f);
+                $out .= $lines ? implode('', array_slice($lines, -40)) : '(vazio)';
+            } else {
+                $out .= "(sem acesso ou não existe)\n";
+            }
+            $out .= "\n\n";
+        }
+
+        $maildir = '/home2/cauanb36/mail/bancodechoices.com/contato';
+        $out .= "== {$maildir} ==\n";
+        if (is_dir($maildir)) {
+            foreach (['new', 'cur'] as $sub) {
+                $d = "{$maildir}/{$sub}";
+                $out .= "-- {$sub} --\n";
+                $files = @scandir($d) ?: [];
+                $files = array_values(array_diff($files, ['.', '..']));
+                rsort($files);
+                $out .= implode("\n", array_slice($files, 0, 10))."\n";
+            }
+        } else {
+            $out .= "(diretório não existe)\n";
+        }
+
+        return response($out);
+    }
+
     if (request('track') === '1') {
         $cmds = [
             'uapi EmailTrack get_email_trace_summary domain=bancodechoices.com 2>&1',
