@@ -143,7 +143,25 @@ Route::get('/bc-debug-mail', function () {
     $users = \Illuminate\Support\Facades\DB::table('users')->orderByDesc('id')->limit(5)->get(['id', 'nome', 'email', 'created_at']);
     $processed = \Illuminate\Support\Facades\DB::table('mp_payment_processed')->orderByDesc('mp_payment_id')->limit(5)->get();
 
-    $extra = "\nPEDIDOS:\n".print_r($pedidos->toArray(), true)
+    $mpSearch = '(nao consultado)';
+    if (config('mercadopago.access_token')) {
+        try {
+            $resp = \Illuminate\Support\Facades\Http::withToken((string) config('mercadopago.access_token'))
+                ->timeout(20)
+                ->acceptJson()
+                ->get('https://api.mercadopago.com/v1/payments/search', [
+                    'sort' => 'date_created',
+                    'criteria' => 'desc',
+                    'limit' => 10,
+                ]);
+            $mpSearch = 'status='.$resp->status()."\n".print_r($resp->json(), true);
+        } catch (\Throwable $e) {
+            $mpSearch = 'EXCEPTION: '.$e->getMessage();
+        }
+    }
+
+    $extra = "\nMP_PAYMENTS_SEARCH:\n".$mpSearch
+        ."\nPEDIDOS:\n".print_r($pedidos->toArray(), true)
         ."\nUSERS:\n".print_r($users->toArray(), true)
         ."\nMP_PAYMENT_PROCESSED:\n".print_r($processed->toArray(), true);
 
