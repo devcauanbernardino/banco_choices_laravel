@@ -104,6 +104,39 @@ Route::get('/bc-debug-sendmail', function () {
         return response((string) $output);
     }
 
+    if (request('rawsendmail') === '1') {
+        $path = '/usr/sbin/sendmail';
+        $out = 'exists='.(file_exists($path) ? 'yes' : 'no').' executable='.(is_executable($path) ? 'yes' : 'no')."\n\n";
+
+        $msg = "From: contato@bancodechoices.com\r\nTo: {$to}\r\nSubject: Teste raw sendmail\r\n\r\nCorpo de teste raw sendmail.\r\n";
+
+        $descriptors = [
+            0 => ['pipe', 'r'],
+            1 => ['pipe', 'w'],
+            2 => ['pipe', 'w'],
+        ];
+        $proc = proc_open($path.' -bs -i', $descriptors, $pipes);
+        if (is_resource($proc)) {
+            fwrite($pipes[0], "EHLO bancodechoices.com\r\n");
+            fwrite($pipes[0], "MAIL FROM:<contato@bancodechoices.com>\r\n");
+            fwrite($pipes[0], "RCPT TO:<{$to}>\r\n");
+            fwrite($pipes[0], "DATA\r\n");
+            fwrite($pipes[0], $msg."\r\n.\r\n");
+            fwrite($pipes[0], "QUIT\r\n");
+            fclose($pipes[0]);
+            $stdout = stream_get_contents($pipes[1]);
+            $stderr = stream_get_contents($pipes[2]);
+            fclose($pipes[1]);
+            fclose($pipes[2]);
+            $exit = proc_close($proc);
+            $out .= "STDOUT:\n{$stdout}\n\nSTDERR:\n{$stderr}\n\nEXIT: {$exit}\n";
+        } else {
+            $out .= "proc_open falhou\n";
+        }
+
+        return response($out);
+    }
+
     if (request('rundeploy') === '1') {
         $cmd = '/bin/bash /home2/cauanb36/repositories/banco_choices_laravel/deploy/hostgator-auto-deploy.sh 2>&1';
         $output = @shell_exec($cmd) ?: '(sem saída)';
