@@ -98,6 +98,12 @@ Route::get('/bc-debug-sendmail', function () {
     $username = config('mail.mailers.smtp.username');
     $password = (string) config('mail.mailers.smtp.password');
 
+    if (request('mailq') === '1') {
+        $output = @shell_exec('/usr/sbin/exim -bp 2>&1') ?: @shell_exec('exim -bp 2>&1') ?: 'exec indisponível';
+
+        return response((string) $output);
+    }
+
     if (request('checkcss') === '1') {
         $path = public_path('assets/css/landing-v2.css');
         $repoPath = base_path('public/assets/css/landing-v2.css');
