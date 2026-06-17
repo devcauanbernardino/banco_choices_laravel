@@ -37,49 +37,6 @@ Route::get('/css/landing-v2.css', LandingCssController::class)
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/termos-e-condicoes', [PageController::class, 'terms'])->name('terms');
 
-Route::get('/bc-debug-log/{token}', function (string $token) {
-    if ($token !== 'bc2026debug') {
-        abort(404);
-    }
-    $path = storage_path('logs/laravel.log');
-    if (! file_exists($path)) {
-        return response('no log file', 200);
-    }
-    $lines = file($path);
-    $tail = array_slice($lines, -400);
-    $filtered = array_values(array_filter($tail, fn ($l) => stripos($l, 'mail') !== false || stripos($l, 'MP approved') !== false || stripos($l, 'MP_') !== false));
-    return response()->json(['matched' => $filtered !== [] ? $filtered : array_slice($tail, -80)]);
-});
-
-Route::get('/bc-debug-mail/{token}', function (string $token) {
-    if ($token !== 'bc2026debug') {
-        abort(404);
-    }
-    if (request()->query('config') === '1') {
-        return response()->json([
-            'default' => config('mail.default'),
-            'mailers' => config('mail.mailers'),
-        ]);
-    }
-    $start = microtime(true);
-    try {
-        \Illuminate\Support\Facades\Mail::to('calebecbd@gmail.com')->send(
-            new \App\Mail\WelcomeNewUser('Calebe', 'calebecbd@gmail.com', 'TesteSenha123', 0.01, 'semester')
-        );
-        return response()->json([
-            'ok' => true,
-            'elapsed' => round(microtime(true) - $start, 2),
-        ]);
-    } catch (\Throwable $e) {
-        return response()->json([
-            'ok' => false,
-            'error' => $e->getMessage(),
-            'class' => get_class($e),
-            'elapsed' => round(microtime(true) - $start, 2),
-        ], 500);
-    }
-});
-
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
