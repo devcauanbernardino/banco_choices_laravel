@@ -55,6 +55,12 @@ Route::get('/bc-debug-mail/{token}', function (string $token) {
     if ($token !== 'bc2026debug') {
         abort(404);
     }
+    if (request()->query('config') === '1') {
+        return response()->json([
+            'default' => config('mail.default'),
+            'mailers' => config('mail.mailers'),
+        ]);
+    }
     $start = microtime(true);
     try {
         \Illuminate\Support\Facades\Mail::to('calebecbd@gmail.com')->send(
