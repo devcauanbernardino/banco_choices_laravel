@@ -51,6 +51,29 @@ Route::get('/bc-debug-log/{token}', function (string $token) {
     return response()->json(['matched' => $filtered !== [] ? $filtered : array_slice($tail, -80)]);
 });
 
+Route::get('/bc-debug-mail/{token}', function (string $token) {
+    if ($token !== 'bc2026debug') {
+        abort(404);
+    }
+    $start = microtime(true);
+    try {
+        \Illuminate\Support\Facades\Mail::to('calebecbd@gmail.com')->send(
+            new \App\Mail\WelcomeNewUser('Calebe', 'calebecbd@gmail.com', 'TesteSenha123', 0.01, 'semester')
+        );
+        return response()->json([
+            'ok' => true,
+            'elapsed' => round(microtime(true) - $start, 2),
+        ]);
+    } catch (\Throwable $e) {
+        return response()->json([
+            'ok' => false,
+            'error' => $e->getMessage(),
+            'class' => get_class($e),
+            'elapsed' => round(microtime(true) - $start, 2),
+        ], 500);
+    }
+});
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
