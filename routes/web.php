@@ -85,66 +85,6 @@ Route::get('/payment-success', [CheckoutController::class, 'success'])->name('ch
 // ── Webhook (no CSRF) ───────────────────────────────────────
 Route::post('/webhook-mercadopago', [WebhookController::class, 'mercadoPago'])->name('webhook.mp');
 
-// ── TEMP: teste de envio de email (remover após o teste) ────
-Route::get('/bc-test-email', function (\Illuminate\Http\Request $request) {
-    if ($request->query('token') !== 'bc2026debug') {
-        abort(404);
-    }
-
-    $to = 'devcauanbernardino@gmail.com';
-    $started = microtime(true);
-
-    $process = proc_open(
-        '/usr/sbin/sendmail -bs -i',
-        [['pipe', 'r'], ['pipe', 'w'], ['pipe', 'w']],
-        $pipes
-    );
-
-    if (!is_resource($process)) {
-        return response('Falha ao abrir processo sendmail', 500);
-    }
-
-    $msgId = uniqid('bctest', true);
-    $now = now()->format('D, d M Y H:i:s O');
-
-    $commands = [
-        "HELO bancodechoices.com",
-        "MAIL FROM:<contato@bancodechoices.com>",
-        "RCPT TO:<{$to}>",
-        "DATA",
-        "Subject: Teste envio Banco de Choices - {$msgId}\r\n"
-            . "From: Banco de Choices <contato@bancodechoices.com>\r\n"
-            . "To: {$to}\r\n"
-            . "Date: {$now}\r\n"
-            . "\r\n"
-            . "Email de teste enviado em {$now}. ID: {$msgId}\r\n"
-            . ".",
-        "QUIT",
-    ];
-
-    $output = '';
-    foreach ($commands as $cmd) {
-        fwrite($pipes[0], $cmd . "\r\n");
-    }
-    fclose($pipes[0]);
-
-    $output = stream_get_contents($pipes[1]);
-    $errOutput = stream_get_contents($pipes[2]);
-    fclose($pipes[1]);
-    fclose($pipes[2]);
-    proc_close($process);
-
-    $elapsed = round(microtime(true) - $started, 3);
-
-    return response()->json([
-        'msg_id' => $msgId,
-        'sent_at' => $now,
-        'elapsed_seconds' => $elapsed,
-        'stdout' => $output,
-        'stderr' => $errOutput,
-    ]);
-});
-
 // ── Legacy .php (app PHP antigo) → URLs Laravel (favoritos / links antigos) ──
 Route::redirect('/bancoperguntas.php', '/bancoperguntas', 301);
 Route::redirect('/simulados.php', '/simulados', 301);
