@@ -14,6 +14,26 @@ return [
     'currency_id' => env('MP_CURRENCY_ID', 'ARS'),
 
     /*
+    | Contas por país: locale 'pt_BR' usa a conta BR (cobra em BRL, com Pix nativo do Checkout Pro);
+    | qualquer outro locale (es_AR, en_US) usa a conta AR (cobra em ARS). Se as credenciais *_AR
+    | não estiverem definidas, cai para a conta padrão acima.
+    */
+    'accounts' => [
+        'br' => [
+            'access_token' => env('MP_ACCESS_TOKEN_BR', env('MP_ACCESS_TOKEN', '')),
+            'public_key' => env('MP_PUBLIC_KEY_BR', env('MP_PUBLIC_KEY', '')),
+            'currency_id' => env('MP_CURRENCY_ID_BR', 'BRL'),
+            'webhook_secret' => env('MP_WEBHOOK_SECRET_BR', env('MP_WEBHOOK_SECRET', '')),
+        ],
+        'ar' => [
+            'access_token' => env('MP_ACCESS_TOKEN_AR', env('MP_ACCESS_TOKEN', '')),
+            'public_key' => env('MP_PUBLIC_KEY_AR', env('MP_PUBLIC_KEY', '')),
+            'currency_id' => env('MP_CURRENCY_ID_AR', 'ARS'),
+            'webhook_secret' => env('MP_WEBHOOK_SECRET_AR', env('MP_WEBHOOK_SECRET', '')),
+        ],
+    ],
+
+    /*
     | Em produção o webhook deve validar assinatura (MP_WEBHOOK_SECRET obrigatório).
     | Sobrescrever: MP_REQUIRE_WEBHOOK_SIGNATURE=false (ex.: diagnóstico temporário).
     */

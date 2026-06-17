@@ -9,6 +9,7 @@ use App\Services\Referral\ReferralService;
 use App\Support\CheckoutDraftSession;
 use App\Support\CheckoutErrorMessages;
 use App\Support\Countries;
+use App\Support\MercadoPagoAccount;
 use App\Support\PaidAccessGrant;
 use App\Support\SignupFlow;
 use Illuminate\Http\RedirectResponse;
@@ -127,8 +128,8 @@ class CheckoutController extends Controller
             $totalPagar = ReferralService::aplicarDescontoSubtotal($baseTotal);
         }
 
-        $accessToken = config('mercadopago.access_token');
-        if (empty($accessToken)) {
+        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
+        if (empty($mpAccount['access_token'])) {
             return redirect()->route('checkout.show')->with('error', CheckoutErrorMessages::mercadopagoNotConfigured());
         }
 
@@ -228,8 +229,8 @@ class CheckoutController extends Controller
             return redirect()->route('dashboard')->with('success', __('referral.checkout_gratuito_ok'));
         }
 
-        $accessToken = config('mercadopago.access_token');
-        if (empty($accessToken)) {
+        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
+        if (empty($mpAccount['access_token'])) {
             return redirect()->route('addon.checkout')->with('error', CheckoutErrorMessages::mercadopagoNotConfigured());
         }
 
@@ -275,8 +276,8 @@ class CheckoutController extends Controller
         float $addonCreditoReservadoMeta = 0.0,
         string $cupomCodigoParaMeta = '',
     ): ?RedirectResponse {
-        $accessToken = config('mercadopago.access_token');
-        MercadoPagoConfig::setAccessToken($accessToken);
+        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
+        MercadoPagoConfig::setAccessToken($mpAccount['access_token']);
 
         $nomesMaterias = Materia::whereIn('id', $materiasIds)->pluck('nome')->toArray();
         $itemTitle = 'Banco de Choices — '.(count($nomesMaterias) ? implode(', ', $nomesMaterias) : 'Materias');
@@ -293,7 +294,7 @@ class CheckoutController extends Controller
                 'title' => Str::limit($itemTitle, 240, ''),
                 'quantity' => 1,
                 'unit_price' => $unitPrice,
-                'currency_id' => config('mercadopago.currency_id'),
+                'currency_id' => $mpAccount['currency_id'],
             ]],
             'payer' => [
                 'email' => $email,
@@ -376,20 +377,22 @@ class CheckoutController extends Controller
         $queryStatus = strtolower((string) ($request->query('status') ?: $request->query('collection_status', '')));
         $displayStatus = $this->normalizeMercadoPagoStatusForView($queryStatus);
 
-        if (! $paymentIdRaw && $orderId !== '' && config('mercadopago.access_token')) {
-            $paymentIdRaw = $this->searchMercadoPagoPaymentIdByExternalReference($orderId);
+        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
+
+        if (! $paymentIdRaw && $orderId !== '' && $mpAccount['access_token']) {
+            $paymentIdRaw = $this->searchMercadoPagoPaymentIdByExternalReference($orderId, $mpAccount['access_token']);
         }
 
         $metaFallback = $this->buildMetaFallbackFromPendingOrder($pendingOrder);
 
         $syncedFromMercadoPago = false;
-        if ($paymentIdRaw && config('mercadopago.access_token')) {
-            MercadoPagoConfig::setAccessToken((string) config('mercadopago.access_token'));
+        if ($paymentIdRaw && $mpAccount['access_token']) {
+            MercadoPagoConfig::setAccessToken($mpAccount['access_token']);
             try {
                 $payment = (new PaymentClient)->get((int) $paymentIdRaw);
                 $apiMetadata = PaymentFulfillmentService::fetchMetadataViaApi(
                     (int) $paymentIdRaw,
-                    (string) config('mercadopago.access_token')
+                    $mpAccount['access_token']
                 );
                 PaymentFulfillmentService::processPaymentNotification(
                     DB::connection()->getPdo(),
@@ -475,9 +478,8 @@ class CheckoutController extends Controller
     /**
      * Quando o retorno do MP não traz payment_id na query, tenta localizar o pagamento pelo external_reference (ORDER-…).
      */
-    private function searchMercadoPagoPaymentIdByExternalReference(string $externalReference): ?string
+    private function searchMercadoPagoPaymentIdByExternalReference(string $externalReference, string $token): ?string
     {
-        $token = (string) config('mercadopago.access_token');
         if ($token === '' || $externalReference === '') {
             return null;
         }
