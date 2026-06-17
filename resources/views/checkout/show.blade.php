@@ -186,7 +186,7 @@
                                     <input type="checkbox" class="form-check-input" name="terms" id="signup-terms" value="1" required
                                            aria-required="true">
                                     <label class="form-check-label small mb-0" for="signup-terms">
-                                        {!! __('signup.checkout.terms_label', ['url' => route('home').'#terminos']) !!}
+                                        {!! __('signup.checkout.terms_label', ['url' => route('terms')]) !!}
                                     </label>
                                 </div>
                             </div>

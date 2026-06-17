@@ -23,4 +23,9 @@ class PageController extends Controller
             'demoCounts' => DemoAvailability::demoCountByFaculdadeSlug(),
         ]);
     }
+
+    public function terms()
+    {
+        return view('pages.terms');
+    }
 }

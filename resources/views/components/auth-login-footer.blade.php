@@ -11,7 +11,7 @@
             <div class="col-md-5 d-flex flex-column justify-content-center">
                 <nav class="d-flex flex-wrap gap-3 justify-content-md-center" aria-label="Legal">
                     <a href="{{ route('home') }}#privacidad">{{ __('login.footer_privacy') }}</a>
-                    <a href="{{ route('home') }}#terminos">{{ __('login.footer_terms') }}</a>
+                    <a href="{{ route('terms') }}">{{ __('login.footer_terms') }}</a>
                     <a href="mailto:{{ config('mail.from.address') }}">{{ __('login.footer_contact') }}</a>
                 </nav>
             </div>

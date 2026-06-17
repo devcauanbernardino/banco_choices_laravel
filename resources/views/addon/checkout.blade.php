@@ -105,7 +105,7 @@
                             <input type="checkbox" id="addon-terms" name="terms" class="form-check-input" value="1" required
                                    aria-required="true">
                             <label class="form-check-label small mb-0" for="addon-terms">
-                                {!! __('signup.checkout.terms_label', ['url' => route('home').'#terminos']) !!}
+                                {!! __('signup.checkout.terms_label', ['url' => route('terms')]) !!}
                             </label>
                         </div>
                     </div>

@@ -35,6 +35,7 @@ Route::get('/css/landing-v2.css', LandingCssController::class)
     ->withoutMiddleware([\App\Http\Middleware\SetLocale::class]);
 
 Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/termos-e-condicoes', [PageController::class, 'terms'])->name('terms');
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:login');
