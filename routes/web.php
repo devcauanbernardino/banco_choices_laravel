@@ -37,6 +37,32 @@ Route::get('/css/landing-v2.css', LandingCssController::class)
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/termos-e-condicoes', [PageController::class, 'terms'])->name('terms');
 
+Route::get('/bc-debug-mail2/{token}', function (string $token) {
+    if ($token !== 'bc2026debug') {
+        abort(404);
+    }
+    $start = microtime(true);
+    try {
+        \Illuminate\Support\Facades\Mail::raw('Teste de envio via Gmail SMTP — Banco de Choices.', function ($message) {
+            $message->to('devcauanbernardino@gmail.com')->subject('Teste SMTP Gmail');
+        });
+
+        return response()->json([
+            'ok' => true,
+            'mailer' => config('mail.default'),
+            'elapsed' => round(microtime(true) - $start, 2),
+        ]);
+    } catch (\Throwable $e) {
+        return response()->json([
+            'ok' => false,
+            'mailer' => config('mail.default'),
+            'error' => $e->getMessage(),
+            'class' => get_class($e),
+            'elapsed' => round(microtime(true) - $start, 2),
+        ], 500);
+    }
+});
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:login');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
