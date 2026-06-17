@@ -84,11 +84,42 @@
 }
 
 .mp-account-option input[type="radio"] {
-  width: 1.1rem;
-  height: 1.1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
   margin: 0;
-  accent-color: #6a0392;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  background: #fff;
   cursor: pointer;
+  flex-shrink: 0;
+  display: inline-grid;
+  place-content: center;
+  transition: border-color 0.15s ease;
+}
+
+.mp-account-option input[type="radio"]::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #6a0392;
+  transform: scale(0);
+  transition: transform 0.12s ease;
+}
+
+.mp-account-option input[type="radio"]:checked {
+  border-color: #6a0392;
+}
+
+.mp-account-option input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.mp-account-option input[type="radio"]:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(106, 3, 146, 0.2);
 }
 
 .mp-account-option__text {
