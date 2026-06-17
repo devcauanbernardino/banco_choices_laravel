@@ -41,6 +41,22 @@
                     <input type="hidden" name="materias" value="{{ implode(',', $materiasIds) }}">
 
                     <div class="mb-3">
+                        <label class="form-label small text-muted d-block">{{ __('signup.checkout.mp_account_label') }}</label>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="mp_account" id="addonMpAccountAr" value="ar"
+                                       {{ ($mpAccountDefault ?? 'ar') === 'ar' ? 'checked' : '' }}>
+                                <label class="form-check-label" for="addonMpAccountAr">{{ __('signup.checkout.mp_account_ar') }}</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="mp_account" id="addonMpAccountBr" value="br"
+                                       {{ ($mpAccountDefault ?? 'ar') === 'br' ? 'checked' : '' }}>
+                                <label class="form-check-label" for="addonMpAccountBr">{{ __('signup.checkout.mp_account_br') }}</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
                         <label class="form-label small text-muted">{{ __('signup.checkout.email') }}</label>
                         <input type="email" class="form-control" value="{{ $user->email }}" readonly disabled>
                         <div class="form-text">{{ __('addon.email_note') }}</div>

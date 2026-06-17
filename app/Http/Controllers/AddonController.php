@@ -147,6 +147,7 @@ class AddonController extends Controller
             'settlementFormatted' => PricingDisplay::formatArsSettlement($totalPrice),
             'user' => $user,
             'countries' => Countries::forSelect(),
+            'mpAccountDefault' => \App\Support\MercadoPagoAccount::defaultKeyForCurrentLocale(),
         ]);
     }
 }

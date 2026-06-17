@@ -23,9 +23,25 @@ class MercadoPagoAccount
      */
     public static function resolveForLocale(string $locale): array
     {
-        $key = $locale === 'pt_BR' ? 'br' : 'ar';
+        return self::resolveForKey($locale === 'pt_BR' ? 'br' : 'ar');
+    }
+
+    /**
+     * @return array{access_token: string, public_key: string, currency_id: string, webhook_secret: string}
+     */
+    public static function resolveForKey(string $key): array
+    {
+        $key = $key === 'br' ? 'br' : 'ar';
 
         return config("mercadopago.accounts.{$key}");
+    }
+
+    /**
+     * Conta sugerida como padrão no checkout, com base no idioma atual (o usuário pode trocar manualmente).
+     */
+    public static function defaultKeyForCurrentLocale(): string
+    {
+        return App::getLocale() === 'pt_BR' ? 'br' : 'ar';
     }
 
     /**

@@ -65,6 +65,7 @@ class CheckoutController extends Controller
             'orderId' => $orderId,
             'materias' => $materias,
             'countries' => Countries::forSelect(),
+            'mpAccountDefault' => MercadoPagoAccount::defaultKeyForCurrentLocale(),
         ]);
     }
 
@@ -81,6 +82,7 @@ class CheckoutController extends Controller
             'total_price' => 'required|numeric|min:0',
             'codigo_cupom_usado' => 'nullable|string|max:64',
             'usar_credito_addon' => 'nullable|boolean',
+            'mp_account' => 'required|in:ar,br',
             'terms' => 'accepted',
         ]);
 
@@ -128,7 +130,7 @@ class CheckoutController extends Controller
             $totalPagar = ReferralService::aplicarDescontoSubtotal($baseTotal);
         }
 
-        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
+        $mpAccount = MercadoPagoAccount::resolveForKey((string) $request->input('mp_account'));
         if (empty($mpAccount['access_token'])) {
             return redirect()->route('checkout.show')->with('error', CheckoutErrorMessages::mercadopagoNotConfigured());
         }
@@ -149,6 +151,7 @@ class CheckoutController extends Controller
             'signup',
             $request->input('email'),
             $request->input('name'),
+            $mpAccount,
             0.0,
             $normalizedCupom ?? '',
         );
@@ -229,7 +232,7 @@ class CheckoutController extends Controller
             return redirect()->route('dashboard')->with('success', __('referral.checkout_gratuito_ok'));
         }
 
-        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
+        $mpAccount = MercadoPagoAccount::resolveForKey((string) $request->input('mp_account'));
         if (empty($mpAccount['access_token'])) {
             return redirect()->route('addon.checkout')->with('error', CheckoutErrorMessages::mercadopagoNotConfigured());
         }
@@ -250,6 +253,7 @@ class CheckoutController extends Controller
             'addon',
             $userFresh->email,
             $userFresh->nome,
+            $mpAccount,
             $credUtil,
             $normalizedCupom ?? '',
         );
@@ -273,10 +277,10 @@ class CheckoutController extends Controller
         string $checkoutKind,
         string $email,
         string $name,
+        array $mpAccount,
         float $addonCreditoReservadoMeta = 0.0,
         string $cupomCodigoParaMeta = '',
     ): ?RedirectResponse {
-        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
         MercadoPagoConfig::setAccessToken($mpAccount['access_token']);
 
         $nomesMaterias = Materia::whereIn('id', $materiasIds)->pluck('nome')->toArray();
@@ -359,6 +363,7 @@ class CheckoutController extends Controller
             'plan_duration_days' => (int) $request->input('plan_duration_days'),
             'materias_csv' => implode(',', $materiasIds),
             'checkout_kind' => $checkoutKind,
+            'mp_account' => $request->input('mp_account', 'ar'),
         ]);
 
         return redirect()->away($initPoint);
@@ -377,7 +382,7 @@ class CheckoutController extends Controller
         $queryStatus = strtolower((string) ($request->query('status') ?: $request->query('collection_status', '')));
         $displayStatus = $this->normalizeMercadoPagoStatusForView($queryStatus);
 
-        $mpAccount = MercadoPagoAccount::resolveForCurrentLocale();
+        $mpAccount = MercadoPagoAccount::resolveForKey((string) ($pendingOrder['mp_account'] ?? 'ar'));
 
         if (! $paymentIdRaw && $orderId !== '' && $mpAccount['access_token']) {
             $paymentIdRaw = $this->searchMercadoPagoPaymentIdByExternalReference($orderId, $mpAccount['access_token']);

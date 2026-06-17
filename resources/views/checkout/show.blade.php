@@ -128,6 +128,22 @@
                             <input type="hidden" name="total_price" value="{{ number_format($totalPrice, 2, '.', '') }}">
 
                             <div class="mb-3">
+                                <label class="form-label fw-semibold small d-block">{{ __('signup.checkout.mp_account_label') }}</label>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="mp_account" id="mpAccountAr" value="ar"
+                                               {{ ($mpAccountDefault ?? 'ar') === 'ar' ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="mpAccountAr">{{ __('signup.checkout.mp_account_ar') }}</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="mp_account" id="mpAccountBr" value="br"
+                                               {{ ($mpAccountDefault ?? 'ar') === 'br' ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="mpAccountBr">{{ __('signup.checkout.mp_account_br') }}</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
                                 <label class="form-label fw-semibold small">{{ __('signup.checkout.email') }}</label>
                                 <input type="email" class="form-control form-control-lg" name="email" required
                                        value="{{ old('email') }}" placeholder="{{ __('signup.checkout.email_hint') }}" autocomplete="email">
