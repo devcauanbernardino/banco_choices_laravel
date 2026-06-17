@@ -42,17 +42,17 @@
 
                     <div class="mb-3">
                         <label class="form-label small text-muted d-block">{{ __('signup.checkout.mp_account_label') }}</label>
-                        <div class="d-flex gap-3 flex-wrap">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="mp_account" id="addonMpAccountAr" value="ar"
+                        <div class="mp-account-options">
+                            <label class="mp-account-option">
+                                <input type="radio" name="mp_account" value="ar"
                                        {{ ($mpAccountDefault ?? 'ar') === 'ar' ? 'checked' : '' }}>
-                                <label class="form-check-label" for="addonMpAccountAr">{{ __('signup.checkout.mp_account_ar') }}</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="mp_account" id="addonMpAccountBr" value="br"
+                                <span class="mp-account-option__text">{{ __('signup.checkout.mp_account_ar') }}</span>
+                            </label>
+                            <label class="mp-account-option">
+                                <input type="radio" name="mp_account" value="br"
                                        {{ ($mpAccountDefault ?? 'ar') === 'br' ? 'checked' : '' }}>
-                                <label class="form-check-label" for="addonMpAccountBr">{{ __('signup.checkout.mp_account_br') }}</label>
-                            </div>
+                                <span class="mp-account-option__text">{{ __('signup.checkout.mp_account_br') }}</span>
+                            </label>
                         </div>
                     </div>
 

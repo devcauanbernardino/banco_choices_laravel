@@ -60,3 +60,50 @@
 #addon-pay-form .checkout-terms-row .form-check-label a {
   word-break: break-word;
 }
+
+.mp-account-options {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.mp-account-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.65rem;
+  border: 1.5px solid #e2e8f0;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mp-account-option:hover {
+  border-color: #6a0392;
+}
+
+.mp-account-option input[type="radio"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+  accent-color: #6a0392;
+  cursor: pointer;
+}
+
+.mp-account-option__text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+}
+
+.mp-account-option:has(input:checked) {
+  border-color: #6a0392;
+  background: #f3e8f9;
+  box-shadow: 0 0 0 3px rgba(106, 3, 146, 0.08);
+}
+
+.mp-account-option:has(input:checked) .mp-account-option__text {
+  color: #6a0392;
+}
