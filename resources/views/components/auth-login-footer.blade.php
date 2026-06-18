@@ -12,6 +12,7 @@
                 <nav class="d-flex flex-wrap gap-3 justify-content-md-center" aria-label="Legal">
                     <a href="{{ route('home') }}#privacidad">{{ __('login.footer_privacy') }}</a>
                     <a href="{{ route('terms') }}">{{ __('login.footer_terms') }}</a>
+                    <a href="{{ route('payment.status') }}">{{ __('payment_status.title') }}</a>
                     <a href="mailto:{{ config('mail.from.address') }}">{{ __('login.footer_contact') }}</a>
                 </nav>
             </div>

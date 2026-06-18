@@ -123,6 +123,9 @@
                     <a href="{{ route('checkout.success') }}" class="fw-semibold">{{ __('signup.payment.refresh_try') }}</a>
                 </div>
             @endif
+            <a href="{{ route('payment.status') }}{{ !empty($pendingOrder['email']) ? '?email='.urlencode($pendingOrder['email']) : '' }}" class="small d-block mt-3">
+                {{ __('payment_status.title') }}
+            </a>
         @else
             <div class="success-icon success-icon--failed">
                 <i class="bi bi-x-circle-fill" style="font-size: 2.5rem;"></i>

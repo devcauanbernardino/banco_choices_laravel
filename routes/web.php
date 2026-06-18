@@ -36,6 +36,9 @@ Route::get('/css/landing-v2.css', LandingCssController::class)
 
 Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('/termos-e-condicoes', [PageController::class, 'terms'])->name('terms');
+Route::get('/verificar-pagamento', [\App\Http\Controllers\PaymentStatusController::class, 'show'])
+    ->middleware('throttle:20,1')
+    ->name('payment.status');
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:login');
