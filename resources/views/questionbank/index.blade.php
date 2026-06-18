@@ -48,7 +48,7 @@
                                 <h2 class="bc-mock-panel__title">{{ __('bank.section_subjects') }}</h2>
                                 <span class="bc-mock-pill">{{ __('bank.select_subject') }}</span>
                             </div>
-                                @include('partials.catalog-banco-flow')
+                                @include('partials.catalog-banco-flow', ['materias' => $materias])
                         </section>
 
                         <div class="bc-mock-two-col">

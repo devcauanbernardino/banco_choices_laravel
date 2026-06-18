@@ -28,51 +28,10 @@
     }
 
     var URLs = {
-        fac: '{{ route('api.catalogo.faculdades') }}',
-        agr: '{{ route('api.catalogo.agrupamentos') }}',
-        mat: '{{ route('api.catalogo.materias') }}',
         cat: '{{ route('api.catalogo.catedras') }}',
         parc: '{{ route('api.catalogo.parciais') }}',
         tem: '{{ route('api.catalogo.temas') }}',
     };
-
-    function resetDown(from) {
-        if (from <= 1) { setSel($('qb_agr'), [], '{{ __('catalog.placeholder') }}'); $('qb_agr').disabled = true; }
-        if (from <= 2) { setSel($('qb_mat'), [], '{{ __('catalog.placeholder') }}'); $('qb_mat').disabled = true; }
-        if (from <= 3) {
-            var qc = $('qb_cat');
-            if (qc) {
-                qc.innerHTML = '';
-                qc.onchange = null;
-                qc.disabled = true;
-                refreshSel(qc);
-            }
-            if ($('qb_cat_hint')) { $('qb_cat_hint').classList.add('d-none'); }
-        }
-        if (from <= 4) { $('qb_parciais').innerHTML = ''; $('qb_temas').innerHTML = ''; }
-        $('qb_materia_hidden').value = '';
-        $('qb_catedra_hidden').value = '';
-    }
-
-    u(URLs.fac, '').then(function (j) { setSel($('qb_fac'), j.data || [], '{{ __('catalog.placeholder') }}'); });
-
-    $('qb_fac').addEventListener('change', function () {
-        resetDown(1);
-        if (!this.value) return;
-        $('qb_agr').disabled = false;
-        u(URLs.agr, '?faculdade_id=' + encodeURIComponent(this.value)).then(function (j) {
-            setSel($('qb_agr'), j.data || [], '{{ __('catalog.placeholder') }}');
-        });
-    });
-
-    $('qb_agr').addEventListener('change', function () {
-        resetDown(2);
-        if (!this.value) return;
-        $('qb_mat').disabled = false;
-        u(URLs.mat, '?agrupamento_id=' + encodeURIComponent(this.value)).then(function (j) {
-            setSel($('qb_mat'), j.data || [], '{{ __('catalog.placeholder') }}');
-        });
-    });
 
     function loadFiltros() {
         $('qb_parciais').innerHTML = '';
@@ -106,7 +65,10 @@
             var rows = t.data || [];
             if (!rows.length) return;
             function normKey(s) {
-                return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                return String(s).toLowerCase().normalize('NFD').split('').filter(function (ch) {
+                    var code = ch.codePointAt(0);
+                    return code < 0x300 || code > 0x36f;
+                }).join('');
             }
 
             var wrap = $('qb_temas');
@@ -174,9 +136,8 @@
         });
     }
 
-    $('qb_mat').addEventListener('change', function () {
-        var mid = this.value || '';
-        $('qb_materia_hidden').value = mid;
+    function onMateriaChange(mid) {
+        $('qb_materia_hidden').value = mid || '';
         $('qb_catedra_hidden').value = '';
         $('qb_parciais').innerHTML = '';
         $('qb_temas').innerHTML = '';
@@ -210,7 +171,13 @@
                 loadFiltros();
             };
         });
-    });
+    }
+
+    var matSel = $('qb_mat');
+    if (matSel) {
+        matSel.addEventListener('change', function () { onMateriaChange(this.value); });
+        if (matSel.value) { onMateriaChange(matSel.value); }
+    }
 })();
 </script>
 @endpush
@@ -218,18 +185,29 @@
 <input type="hidden" name="materia" id="qb_materia_hidden" value="" required form="bc-qbank-form">
 <input type="hidden" name="catedra_id" id="qb_catedra_hidden" value="" form="bc-qbank-form">
 
-<div class="mb-4">
-    <label class="form-label" for="qb_fac">{{ __('bank.catalog.pick_fac') }}</label>
-    <select class="bc-styled-select bc-styled-select--fluid" id="qb_fac"></select>
-</div>
-<div class="mb-4">
-    <label class="form-label" for="qb_agr">{{ __('bank.catalog.pick_agr') }}</label>
-    <select class="bc-styled-select bc-styled-select--fluid" id="qb_agr" disabled></select>
-</div>
-<div class="mb-4">
-    <label class="form-label" for="qb_mat">{{ __('bank.catalog.pick_mat') }}</label>
-    <select class="bc-styled-select bc-styled-select--fluid" id="qb_mat" disabled></select>
-</div>
+@if ($materias->count() === 1)
+    @php $unicaMateria = $materias->first(); @endphp
+    <div class="mb-4">
+        <span class="form-label d-block">{{ __('bank.catalog.pick_mat') }}</span>
+        <div class="bc-mock-single-materia">
+            <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
+            <span class="fw-semibold">{{ $unicaMateria->nome }}</span>
+        </div>
+    </div>
+    <select id="qb_mat" hidden>
+        <option value="{{ $unicaMateria->id }}" selected>{{ $unicaMateria->nome }}</option>
+    </select>
+@else
+    <div class="mb-4">
+        <label class="form-label" for="qb_mat">{{ __('bank.catalog.pick_mat') }}</label>
+        <select class="bc-styled-select bc-styled-select--fluid" id="qb_mat">
+            <option value="">{{ __('catalog.placeholder') }}</option>
+            @foreach ($materias as $m)
+                <option value="{{ $m->id }}">{{ $m->nome }}</option>
+            @endforeach
+        </select>
+    </div>
+@endif
 <div class="mb-4">
     <label class="form-label" for="qb_cat">{{ __('bank.catalog.pick_cat_opt') }}</label>
     <select class="bc-styled-select bc-styled-select--fluid" id="qb_cat" disabled></select>

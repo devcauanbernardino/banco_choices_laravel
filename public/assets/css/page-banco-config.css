@@ -631,3 +631,20 @@ body.app-shell-painel .bc-mock-banco-page .bc-mock-mode-card__check .material-sy
 .bc-mock-exam-warn {
   margin-bottom: 1.25rem;
 }
+
+.bc-mock-single-materia {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.65rem;
+  border: 1.5px solid var(--bc-mock-outline);
+  background: var(--bc-mock-surface-low);
+  color: var(--bc-mock-on-surface);
+}
+
+.bc-mock-single-materia .material-symbols-outlined {
+  color: var(--bc-mock-primary-ct);
+  flex-shrink: 0;
+}
