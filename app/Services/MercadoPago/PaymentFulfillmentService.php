@@ -166,6 +166,7 @@ class PaymentFulfillmentService
                     'email' => $email,
                     'senha' => password_hash($plainPassword, PASSWORD_DEFAULT),
                     'referido_por_codigo' => $cupUsadoMeta !== '' ? strtoupper($cupUsadoMeta) : null,
+                    'must_change_password' => true,
                 ]);
                 $user->materias()->attach($materias);
 

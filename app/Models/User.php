@@ -22,6 +22,7 @@ class User extends Authenticatable
         'codigo_cupom',
         'saldo_credito',
         'referido_por_codigo',
+        'must_change_password',
     ];
 
     protected $hidden = [
@@ -32,6 +33,7 @@ class User extends Authenticatable
     {
         return [
             'saldo_credito' => 'decimal:2',
+            'must_change_password' => 'boolean',
         ];
     }
 

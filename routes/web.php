@@ -95,8 +95,13 @@ Route::redirect('/simulados.php', '/simulados', 301);
 Route::redirect('/estatisticas.php', '/estatisticas', 301);
 Route::redirect('/comprar-materias.php', '/comprar-materias', 301);
 
-// ── Authenticated ───────────────────────────────────────────
 Route::middleware('auth')->group(function () {
+    Route::get('/trocar-senha-obrigatorio', [\App\Http\Controllers\Auth\ForcePasswordChangeController::class, 'show'])->name('password.force-change');
+    Route::post('/trocar-senha-obrigatorio', [\App\Http\Controllers\Auth\ForcePasswordChangeController::class, 'update'])->name('password.force-change.store');
+});
+
+// ── Authenticated ───────────────────────────────────────────
+Route::middleware(['auth', 'force.password.change'])->group(function () {
     Route::prefix('api/catalogo')->group(function () {
         Route::get('/agrupamentos', [CatalogoAjaxController::class, 'agrupamentos'])->name('api.catalogo.agrupamentos');
         Route::get('/faculdades', [CatalogoAjaxController::class, 'faculdades'])->name('api.catalogo.faculdades');
