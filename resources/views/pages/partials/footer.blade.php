@@ -33,6 +33,13 @@
             <h6 class="lp-footer__title">{{ __('landing.footer.objetivo_title') }}</h6>
             <p class="lp-footer__objetivo">{{ __('landing.footer.objetivo') }}</p>
         </div>
+
+        <div class="lp-footer__col">
+            <h6 class="lp-footer__title">{{ __('landing.footer.contact_title') }}</h6>
+            <ul class="lp-footer__links" role="list">
+                <li><a href="mailto:{{ config('mail.from.address') }}">{{ config('mail.from.address') }}</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="lp-footer__bottom">
