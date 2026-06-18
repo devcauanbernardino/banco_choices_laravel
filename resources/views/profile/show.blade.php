@@ -78,6 +78,18 @@
                         </div>
                     </div>
                 </div>
+
+                {{-- Contato/suporte --}}
+                <div class="bc-card bc-card--p-fluid mb-4">
+                    <h2 class="bc-profile-section-title mb-3">{{ __('perfil.contact_title') }}</h2>
+                    <a href="mailto:{{ config('mail.from.address') }}" class="bc-stat-card d-flex justify-content-between align-items-center text-decoration-none">
+                        <span class="d-inline-flex align-items-center gap-2">
+                            <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                            <span class="text-muted small">{{ __('perfil.contact_hint') }}</span>
+                        </span>
+                        <span class="fw-bold text-primary">{{ config('mail.from.address') }}</span>
+                    </a>
+                </div>
             </div>
 
             {{-- Right column --}}
