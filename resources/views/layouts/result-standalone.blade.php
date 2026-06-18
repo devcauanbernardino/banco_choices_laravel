@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}?v={{ @filemtime(public_path('assets/css/theme-tokens.css')) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">

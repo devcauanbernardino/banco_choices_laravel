@@ -86,3 +86,65 @@ html {
 [data-bs-theme="dark"] .form-label {
   color: var(--app-text, #ececf1);
 }
+
+/* ===========================================================================
+   Checkbox global — alinhado à marca (substitui o azul nativo do navegador)
+   Desenhado com appearance:none para ficar consistente em todo navegador/SO
+   e também no estado :disabled (o nativo costuma ignorar accent-color aí).
+   =========================================================================== */
+input[type="checkbox"].form-check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.15em;
+  height: 1.15em;
+  margin-top: 0;
+  border: 1.5px solid var(--app-border, rgba(15, 23, 42, 0.25));
+  border-radius: 0.3em;
+  background-color: var(--app-surface, #fff);
+  display: inline-grid;
+  place-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+input[type="checkbox"].form-check-input::before {
+  content: "";
+  width: 0.62em;
+  height: 0.62em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background-color: var(--app-surface, #fff);
+  transform: scale(0);
+  transition: transform 0.1s ease-in-out;
+}
+
+input[type="checkbox"].form-check-input:checked {
+  background-color: var(--bc-purple);
+  border-color: var(--bc-purple);
+}
+
+input[type="checkbox"].form-check-input:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"].form-check-input:disabled {
+  opacity: 0.85;
+  cursor: default;
+}
+
+input[type="checkbox"].form-check-input:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--bc-purple) 45%, transparent);
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] input[type="checkbox"].form-check-input,
+[data-bs-theme="dark"] input[type="checkbox"].form-check-input {
+  background-color: var(--app-surface, #1a1a22);
+  border-color: var(--app-border, rgba(255, 255, 255, 0.18));
+}
+
+[data-theme="dark"] input[type="checkbox"].form-check-input:checked,
+[data-bs-theme="dark"] input[type="checkbox"].form-check-input:checked {
+  background-color: var(--bc-purple);
+  border-color: var(--bc-purple);
+}
