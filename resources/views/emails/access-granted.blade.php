@@ -27,6 +27,13 @@
                    style="display: inline-block; background-color: #6a0392; background: linear-gradient(135deg, #002147, #6a0392); padding: 12px 24px; text-decoration: none; border-radius: 6px; margin: 20px 0;">
                     <span style="color: #ffffff !important; font-weight: bold;">Iniciar sesi&oacute;n / Fazer login</span>
                 </a>
+                @if ($email !== '')
+                <br>
+                <a href="{{ config('app.url') }}/verificar-pagamento?email={{ urlencode($email) }}"
+                   style="display: inline-block; color: #6a0392; text-decoration: underline; font-size: 13px; margin-top: 4px;">
+                    Verificar estado de mi pago / Verificar status do meu pagamento
+                </a>
+                @endif
             </center>
         </div>
 

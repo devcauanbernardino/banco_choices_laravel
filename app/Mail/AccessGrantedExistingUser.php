@@ -15,6 +15,7 @@ class AccessGrantedExistingUser extends Mailable
     public function __construct(
         public string $nome,
         public string $planId,
+        public string $email = '',
     ) {}
 
     public function envelope(): Envelope

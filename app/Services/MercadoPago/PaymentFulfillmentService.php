@@ -153,7 +153,7 @@ class PaymentFulfillmentService
             if ($existing) {
                 $existing->garantirMaterias($materias);
                 try {
-                    Mail::to($email)->send(new AccessGrantedExistingUser($nome, $planId));
+                    Mail::to($email)->send(new AccessGrantedExistingUser($nome, $planId, $email));
                 } catch (\Throwable $e) {
                     Log::warning('Mail error: '.$e->getMessage());
                 }
