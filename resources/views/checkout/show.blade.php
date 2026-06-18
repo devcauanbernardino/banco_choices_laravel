@@ -149,6 +149,14 @@
                                        value="{{ old('email') }}" placeholder="{{ __('signup.checkout.email_hint') }}" autocomplete="email">
                             </div>
 
+                            <div class="checkout-mp-email-callout mb-3">
+                                <span class="material-symbols-outlined" aria-hidden="true">mark_email_read</span>
+                                <div>
+                                    <p class="mb-1 fw-semibold">{{ __('signup.checkout.after_pay_note') }}</p>
+                                    <p class="mb-0 small">{{ __('signup.checkout.check_spam_note') }}</p>
+                                </div>
+                            </div>
+
                             <div class="mb-3">
                                 <label class="form-label fw-semibold small">{{ __('signup.checkout.name') }}</label>
                                 <input type="text" class="form-control form-control-lg" name="name" required
@@ -162,8 +170,6 @@
                                 'countryDefault' => 'AR',
                                 'requiredPostal' => false,
                             ])
-
-                            <p class="small text-muted">{{ __('signup.checkout.after_pay_note') }}</p>
 
                             <div class="mb-3">
                                 <label class="form-label fw-semibold small" for="codigoCupomSignup">{{ __('referral.codigo_opcional_label') }}</label>
