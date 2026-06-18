@@ -6,7 +6,8 @@
         'weekly' => 'landing.planes.duration_weekly',
         'monthly' => 'landing.planes.duration_monthly',
     ];
-    $currency = config('branding.currency_symbol', 'AR$ ');
+    $isBr = app()->getLocale() === 'pt_BR';
+    $currency = $isBr ? 'R$ ' : 'AR$ ';
     $fmt = fn ($v) => \App\Support\PricingDisplay::formatArsForCheckout((float) $v);
 
     $rendered = [];
@@ -18,7 +19,7 @@
         $rendered[] = [
             'key' => $key,
             'plan' => $p,
-            'price' => (float) ($p['price'] ?? 0),
+            'price' => $isBr ? (float) ($p['price_brl'] ?? 0) : (float) ($p['price'] ?? 0),
             'isHighlight' => $key === 'monthly',
             'isPopular' => (bool) ($p['popular'] ?? false),
         ];
