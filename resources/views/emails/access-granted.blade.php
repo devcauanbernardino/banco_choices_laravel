@@ -2,12 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="color-scheme" content="light only">
+    <meta name="supported-color-schemes" content="light only">
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0;">
     <div style="max-width: 600px; margin: 0 auto; background: #f9fafb; padding: 20px; border-radius: 8px;">
 
         {{-- Header --}}
-        <div style="background: linear-gradient(135deg, #002147, #6a0392); color: white; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 20px;">
+        <div style="background-color: #002147; background: linear-gradient(135deg, #002147, #6a0392); color: #ffffff; padding: 20px; border-radius: 8px; text-align: center; margin-bottom: 20px;">
             <img src="{{ \App\Support\Branding::logoUrl() }}" alt="" width="180" height="44" style="display:block;margin:0 auto;max-width:100%;height:auto;">
         </div>
 
@@ -22,8 +24,8 @@
 
             <center>
                 <a href="{{ config('app.url') }}/login"
-                   style="display: inline-block; background: linear-gradient(135deg, #002147, #6a0392); color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; margin: 20px 0;">
-                    Iniciar sesi&oacute;n / Fazer login
+                   style="display: inline-block; background-color: #6a0392; background: linear-gradient(135deg, #002147, #6a0392); padding: 12px 24px; text-decoration: none; border-radius: 6px; margin: 20px 0;">
+                    <span style="color: #ffffff !important; font-weight: bold;">Iniciar sesi&oacute;n / Fazer login</span>
                 </a>
             </center>
         </div>
