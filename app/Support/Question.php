@@ -131,6 +131,67 @@ class Question
         return $this->getCorrectAnswer() === (string) $answer;
     }
 
+    /**
+     * Questões "assinale todas as corretas" (checkbox): tipo = 'multipla_resposta'.
+     */
+    public function isMultiResposta(): bool
+    {
+        return (string) ($this->data['tipo'] ?? '') === 'multipla_resposta';
+    }
+
+    /**
+     * Índices (string numérica, 0-based) das opções corretas, ordenados.
+     * Aceita resposta_correta como letras separadas por vírgula ("D,E,G,H") ou índices.
+     *
+     * @return list<string>
+     */
+    public function getCorrectAnswerIndices(): array
+    {
+        $raw = $this->data['resposta_correta'] ?? $this->data['gabarito'] ?? '';
+        if (! is_string($raw) || trim($raw) === '') {
+            return [];
+        }
+
+        $totalOpcoes = count($this->getOpcoes());
+        $indices = [];
+        foreach (explode(',', $raw) as $token) {
+            $t = trim($token);
+            if ($t === '') {
+                continue;
+            }
+            if (preg_match('/^[A-Z]$/i', $t)) {
+                $idx = ord(strtoupper($t)) - ord('A');
+            } elseif (is_numeric($t)) {
+                $idx = (int) $t;
+            } else {
+                continue;
+            }
+            if ($idx >= 0 && $idx < $totalOpcoes) {
+                $indices[] = (string) $idx;
+            }
+        }
+
+        $indices = array_values(array_unique($indices));
+        sort($indices, SORT_STRING);
+
+        return $indices;
+    }
+
+    /**
+     * Compara o conjunto de respostas marcadas pelo usuário com o gabarito (acerto exige conjunto idêntico).
+     *
+     * @param  list<string|int>  $answers
+     */
+    public function isCorrectMultiple(array $answers): bool
+    {
+        $given = array_values(array_unique(array_map('strval', $answers)));
+        sort($given, SORT_STRING);
+
+        $correct = $this->getCorrectAnswerIndices();
+
+        return $correct !== [] && $given === $correct;
+    }
+
     public function getPergunta(): string
     {
         $t = $this->data['pergunta']

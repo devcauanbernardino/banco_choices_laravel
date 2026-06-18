@@ -25,13 +25,16 @@
 @section('content')
 @php
     $opcoes = $questao->getOpcoes();
-    $letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+    $letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
     $respostaAtual = $respostas[$indiceAtual] ?? null;
     $textoPergunta = $questao->getPergunta();
     $isStudy = $modo === 'estudo';
     $hasFeedback = $isStudy && !empty($feedback);
     $isAnswered = $respostaAtual !== null && $respostaAtual !== '';
     $modoLabel = $isStudy ? __('quiz.mode_study') : __('quiz.mode_exam');
+    $isMulti = $questao->isMultiResposta();
+    $selecionadasAtuais = $isMulti ? array_filter(explode(',', (string) $respostaAtual), fn ($v) => $v !== '') : [];
+    $corretasMulti = $isMulti && $hasFeedback ? array_filter(explode(',', (string) ($feedback['resposta_correta'] ?? '')), fn ($v) => $v !== '') : [];
 @endphp
 
 <div class="quiz-mock">
@@ -98,18 +101,28 @@
                     @csrf
                     <input type="hidden" name="indice" value="{{ $indiceAtual }}">
 
-                    <div class="quiz-mock-options" role="radiogroup" aria-label="{{ __('quiz.options_aria') }}">
+                    @if ($isMulti)
+                        <input type="hidden" name="resposta_multi_submit" value="1">
+                        <p class="quiz-mock-multi-hint small text-muted mb-2">{{ __('quiz.multi_hint') }}</p>
+                    @endif
+
+                    <div class="quiz-mock-options" role="{{ $isMulti ? 'group' : 'radiogroup' }}" aria-label="{{ __('quiz.options_aria') }}">
                         @foreach ($opcoes as $i => $opcao)
                             @php
-                                $isSelected = (string) $respostaAtual === (string) $i;
-                                $isCorrect = $hasFeedback && (string) ($feedback['resposta_correta'] ?? '') === (string) $i;
-                                $isWrongPick = $hasFeedback && $isSelected && empty($feedback['acertou']);
+                                $isSelected = $isMulti
+                                    ? in_array((string) $i, $selecionadasAtuais, true)
+                                    : (string) $respostaAtual === (string) $i;
+                                $isCorrect = $hasFeedback && ($isMulti
+                                    ? in_array((string) $i, $corretasMulti, true)
+                                    : (string) ($feedback['resposta_correta'] ?? '') === (string) $i);
+                                $isWrongPick = $hasFeedback && $isSelected && ! $isCorrect;
                             @endphp
                             <label class="quiz-mock-option
                                 {{ $isSelected ? 'is-selected' : '' }}
                                 {{ $isCorrect ? 'is-correct' : '' }}
                                 {{ $isWrongPick ? 'is-wrong' : '' }}">
-                                <input type="radio" name="resposta" value="{{ $i }}"
+                                <input type="{{ $isMulti ? 'checkbox' : 'radio' }}"
+                                       name="{{ $isMulti ? 'resposta[]' : 'resposta' }}" value="{{ $i }}"
                                        {{ $isSelected ? 'checked' : '' }}
                                        @if ($hasFeedback) disabled @endif>
                                 <span class="quiz-mock-option-letter" aria-hidden="true">{{ $letras[$i] ?? ($i + 1) }}</span>
@@ -122,6 +135,14 @@
                             </label>
                         @endforeach
                     </div>
+
+                    @if ($isMulti && ! $hasFeedback)
+                        <div class="quiz-mock-multi-actions">
+                            <button type="submit" name="resposta_multi_submit" value="1" class="quiz-mock-btn quiz-mock-btn-primary quiz-mock-btn--sm">
+                                {{ __('quiz.multi_confirm') }}
+                            </button>
+                        </div>
+                    @endif
 
                     {{-- Feedback (modo estudo) --}}
                     @if ($hasFeedback)
@@ -225,12 +246,18 @@
     (function() {
         const isStudy = {{ $isStudy ? 'true' : 'false' }};
         const alreadyFeedback = {{ $hasFeedback ? 'true' : 'false' }};
+        const isMulti = {{ $isMulti ? 'true' : 'false' }};
         const form = document.getElementById('quizForm');
 
         document.querySelectorAll('.quiz-mock-option').forEach(function(opt) {
             opt.addEventListener('click', function(e) {
-                const input = opt.querySelector('input[type="radio"]');
+                const input = opt.querySelector('input[type="radio"], input[type="checkbox"]');
                 if (!input || input.disabled) return;
+
+                if (isMulti) {
+                    opt.classList.toggle('is-selected', input.checked);
+                    return; // múltiplas opções: aguarda botão "Confirmar"
+                }
 
                 document.querySelectorAll('.quiz-mock-option').forEach(function(o) { o.classList.remove('is-selected'); });
                 opt.classList.add('is-selected');

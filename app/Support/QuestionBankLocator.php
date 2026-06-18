@@ -14,6 +14,8 @@ final class QuestionBankLocator
             'biologia_cbc_1parcial_2022.json',
             'questoes_farmaco2_cat3.json',
             'questoes_fisiologia_2022.json',
+            'questoes_imunologia_2024_2025.json',
+            'questoes_patologia_2024.json',
         ];
     }
 
@@ -26,6 +28,8 @@ final class QuestionBankLocator
             4 => 'biologia_cbc_1parcial_2022.json',
             5 => 'questoes_farmaco2_cat3.json',
             9 => 'questoes_fisiologia_2022.json',
+            11 => 'questoes_imunologia_2024_2025.json',
+            12 => 'questoes_patologia_2024.json',
             default => 'questoes_materia_'.$materiaId.'.json',
         };
     }
@@ -55,7 +59,7 @@ final class QuestionBankLocator
     /** @return list<int> */
     public static function allMateriaIdsWithBank(): array
     {
-        return self::filterIdsWithBank([1, 2, 3, 4, 5, 9]);
+        return self::filterIdsWithBank([1, 2, 3, 4, 5, 9, 11, 12]);
     }
 
     /**

@@ -171,6 +171,12 @@ class MarcarDemoCommand extends Command
     private static function looksUsable(array $blob): bool
     {
         $q = new Question($blob);
+
+        // O demo público (UI de radio button) ainda não suporta questões "assinale todas as corretas".
+        if ($q->isMultiResposta()) {
+            return false;
+        }
+
         $perg = trim($q->getPergunta());
         if ($perg === '' || $perg === 'Questão sem título') {
             return false;

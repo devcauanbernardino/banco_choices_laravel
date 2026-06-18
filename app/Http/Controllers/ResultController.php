@@ -68,15 +68,29 @@ class ResultController extends Controller
             $qData = QuestionLocale::apply($qData, $locale, $banco);
             $q = new Question($qData);
             $userAnswer = $respostas[$i] ?? null;
-            $correct = $q->isCorrect($userAnswer);
+            $indicesToLetters = fn (array $idx): string => implode(', ', array_map(
+                fn ($n) => chr(ord('A') + (int) $n),
+                $idx
+            ));
+
+            if ($q->isMultiResposta()) {
+                $given = $userAnswer === null || $userAnswer === '' ? [] : explode(',', (string) $userAnswer);
+                $correct = $q->isCorrectMultiple($given);
+                $respostaUsuarioFmt = $given === [] ? null : $indicesToLetters($given);
+                $respostaCorretaFmt = $indicesToLetters($q->getCorrectAnswerIndices());
+            } else {
+                $correct = $q->isCorrect($userAnswer);
+                $respostaUsuarioFmt = $userAnswer;
+                $respostaCorretaFmt = $q->getCorrectAnswer();
+            }
             if ($correct) {
                 $acertos++;
             }
 
             $detalhes[] = [
                 'pergunta' => $q->getPergunta(),
-                'resposta_usuario' => $userAnswer,
-                'resposta_correta' => $q->getCorrectAnswer(),
+                'resposta_usuario' => $respostaUsuarioFmt,
+                'resposta_correta' => $respostaCorretaFmt,
                 'acertou' => $correct,
                 'feedback' => $q->getFeedback(),
                 'parcial' => isset($questoes[$i]['_parcial']) ? $questoes[$i]['_parcial'] : null,

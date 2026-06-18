@@ -242,8 +242,9 @@ class SimulationController extends Controller
             return redirect()->route('result.show');
         }
 
-        if ($request->has('resposta')) {
-            $this->saveAnswer($request->input('resposta'));
+        if ($request->has('resposta') || $request->has('resposta_multi_submit')) {
+            $resposta = $request->input('resposta', []);
+            $this->saveAnswer(is_array($resposta) ? $resposta : (string) $resposta);
         }
 
         if ($request->has('ir')) {
@@ -276,12 +277,19 @@ class SimulationController extends Controller
         return redirect()->route('simulation.show');
     }
 
-    private function saveAnswer(string|int $userAnswer): void
+    private function saveAnswer(array|string|int $userAnswer): void
     {
         $currentIndex = (int) $this->sim->get('atual');
         $questoes = (array) ($this->sim->get('questoes') ?? []);
         $modo = (string) ($this->sim->get('modo') ?? 'estudo');
-        $answerStr = is_int($userAnswer) ? (string) $userAnswer : $userAnswer;
+
+        if (is_array($userAnswer)) {
+            $indices = array_values(array_unique(array_map('strval', $userAnswer)));
+            sort($indices, SORT_STRING);
+            $answerStr = implode(',', $indices);
+        } else {
+            $answerStr = is_int($userAnswer) ? (string) $userAnswer : $userAnswer;
+        }
 
         $respostas = (array) ($this->sim->get('respostas') ?? []);
         $respostas[$currentIndex] = $answerStr;
@@ -292,11 +300,19 @@ class SimulationController extends Controller
             $qRaw = QuestionLocale::apply($questoes[$currentIndex], (string) app()->getLocale(), $banco);
             $questao = new Question($qRaw);
 
+            if ($questao->isMultiResposta()) {
+                $acertou = $questao->isCorrectMultiple($answerStr === '' ? [] : explode(',', $answerStr));
+                $respostaCorreta = implode(',', $questao->getCorrectAnswerIndices());
+            } else {
+                $acertou = $questao->isCorrect($answerStr);
+                $respostaCorreta = $questao->getCorrectAnswer();
+            }
+
             $feedbacks = (array) ($this->sim->get('feedback') ?? []);
             $feedbacks[$currentIndex] = [
-                'acertou' => $questao->isCorrect($answerStr),
+                'acertou' => $acertou,
                 'resposta_usuario' => $answerStr,
-                'resposta_correta' => $questao->getCorrectAnswer(),
+                'resposta_correta' => $respostaCorreta,
                 'feedback' => $questao->getFeedback(),
                 'parcial' => $questoes[$currentIndex]['_parcial'] ?? null,
             ];
