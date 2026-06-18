@@ -1,0 +1,622 @@
+{
+  "titulo": "Fisiología y Biofísica",
+  "subtitulo": "Examen 2022",
+  "total_questoes": 44,
+  "questoes": [
+    {
+      "numero": 1,
+      "pergunta": "En un experimento, se estimula una neurona con 2 pulsos de corriente. Teniendo en cuenta el protocolo de estimulación representado en la figura ¿Cómo podría explicar el hecho de que el segundo estimulo no genera una respuesta?",
+      "opcoes": [
+        {"letra": "A", "texto": "Los canales de potasio dependientes de voltaje estaban inactivados"},
+        {"letra": "B", "texto": "El experimento se realizó en presencia de bajas dosis de bloqueantes de canales de calcio dependientes de voltaje"},
+        {"letra": "C", "texto": "La neurona se encontraba en el periodo refractario relativo"},
+        {"letra": "D", "texto": "El experimento se realizo en presencia de bajas dosis de bloqueantes de canales de potasio dependientes de voltaje"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Durante el periodo refractario relativo, una porción de los canales de Na+ dependientes de voltaje aún está inactivada y los canales de K+ siguen abiertos, por lo que se necesita un estímulo de mayor intensidad para generar un nuevo potencial de acción; un estímulo de la misma magnitud puede no alcanzar el umbral.\n\nAs demais incorretas: A) la inactivación de canales de K+ no es el fenómeno limitante en este intervalo. B) bloquear canales de Ca2+ no es lo que explica la ausencia de un segundo potencial de acción axonal. D) bloquear canales de K+ facilitaría la excitabilidad, no la disminuiría."
+    },
+    {
+      "numero": 2,
+      "pergunta": "Frente a una lesión que abarca toda la mitad izquierda de la medula en L2 ¿Cómo se vera afectada la sensibilidad cutánea en los dermatomas L2?",
+      "opcoes": [
+        {"letra": "A", "texto": "Perdida de la termoalgesia y del tacto epicrítico en el lado izquierdo"},
+        {"letra": "B", "texto": "Perdida de la termoalgesia y del tacto epicrítico en el lado derecho"},
+        {"letra": "C", "texto": "Perdida de la termoalgesia y del tacto epicrítico en ambos lados"},
+        {"letra": "D", "texto": "Termoalgesia conservada y perdida del tacto epicrítico en el lado izquierdo"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. En el segmento de la lesión (síndrome de Brown-Séquard), las fibras del tacto epicrítico (cordones posteriores, aún no decusadas) y las fibras espinotalámicas que entran y cruzan a ese mismo nivel se ven afectadas del lado de la lesión, generando pérdida de ambas sensibilidades en el dermatoma ipsilateral a la lesión.\n\nPor debajo del nivel de la lesión el patrón cambia (termoalgesia contralateral, tacto epicrítico ipsilateral), pero en el propio dermatoma L2 ambas vías se pierden del lado izquierdo."
+    },
+    {
+      "numero": 3,
+      "pergunta": "Al examen físico, un paciente presenta una prueba de Rinne positiva en ambos oídos y una prueba de Weber sin lateralización ¿Cuál de los siguientes audiogramas podría corresponder a este paciente?",
+      "opcoes": [
+        {"letra": "A", "texto": "Audiograma A"},
+        {"letra": "B", "texto": "Audiograma B"},
+        {"letra": "C", "texto": "Audiograma C"},
+        {"letra": "D", "texto": "Audiograma D"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Rinne positivo bilateral (vía aérea mejor que ósea, como es normal) y Weber sin lateralización indican que no hay hipoacusia conductiva ni una asimetría sensorial significativa entre ambos oídos; corresponde a un audiograma simétrico, compatible con audición normal o una hipoacusia neurosensorial simétrica leve."
+    },
+    {
+      "numero": 4,
+      "pergunta": "Una persona sana es sentada en una silla giratoria, con la cabeza inclinada 30° hacia adelante. La silla comienza a girar hacia la derecha a una velocidad constante ¿Cuál de las siguientes figuras representa lo que ocurre con el potencial de membrana (Vm) en las células ciliadas de los canales semicirculares horizontales justo al frenar la silla?",
+      "opcoes": [
+        {"letra": "A", "texto": "Figura 1"},
+        {"letra": "B", "texto": "Figura 2"},
+        {"letra": "C", "texto": "Figura 3"},
+        {"letra": "D", "texto": "Figura 4"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Al frenar bruscamente tras una rotación sostenida, la endolinfa por inercia continúa moviéndose en la dirección del giro previo, generando una deflexión de los cilios en sentido inverso a la que ocurrió al iniciar el giro. Esto produce una respuesta (hiperpolarización o despolarización) opuesta a la observada en el arranque, fenómeno característico del reflejo vestíbulo-ocular post-rotatorio."
+    },
+    {
+      "numero": 5,
+      "pergunta": "¿Cómo se encuentra la actividad neuronal del globo pálido interno y externo en un paciente con enfermedad de Parkinson?",
+      "opcoes": [
+        {"letra": "A", "texto": "El globo pálido interno se encuentra hiperactivo y el externo inhibido"},
+        {"letra": "B", "texto": "Ambos se encuentran inhibidos"},
+        {"letra": "C", "texto": "El globo pálido interno se encuentra inhibido y el externo hiperactivo"},
+        {"letra": "D", "texto": "Ambos se encuentran hiperactivos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. La pérdida dopaminérgica nigroestriatal del Parkinson desinhibe la vía indirecta: el globo pálido externo queda inhibido (menos GABA hacia el subtalámico), el núcleo subtalámico se activa en exceso y excita al globo pálido interno, que termina hiperactivo, aumentando la inhibición talámica y generando bradicinesia."
+    },
+    {
+      "numero": 6,
+      "pergunta": "¿Qué síntomas provocara a nivel del sistema nervioso autónomo la administración sistémica de un agonista de receptores muscarínicos?",
+      "opcoes": [
+        {"letra": "A", "texto": "Taquicardia, aumento de secreción gastrointestinal y calambres abdominales"},
+        {"letra": "B", "texto": "Saliva espesa, miosis e hipertensión"},
+        {"letra": "C", "texto": "Bradicardia, miosis y sudoración elevada"},
+        {"letra": "D", "texto": "Piel caliente y seca, incontinencia de esfínteres y vómitos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Un agonista muscarínico reproduce el efecto parasimpático generalizado: bradicardia (M2 cardíaco), miosis (M3 en esfínter pupilar) y sudoración elevada (las glándulas sudoríparas, aunque simpáticas, usan acetilcolina como neurotransmisor sobre receptores muscarínicos).\n\nA) describe efectos simpáticos (taquicardia). B) la saliva sería abundante y acuosa, no espesa, y habría hipotensión, no hipertensión. D) la piel estaría húmeda, no seca."
+    },
+    {
+      "numero": 7,
+      "pergunta": "Si bien es poco frecuente, la encefalitis por virus Herpes simplex en un cuadro potencialmente grave en el cual se pueden ver comprometidas las estructuras del lóbulo temporal. ¿Qué alteración clínica podrían presentar los pacientes con lesiones en esta región?",
+      "opcoes": [
+        {"letra": "A", "texto": "Incapacidad para formar nuevas memorias explicitas"},
+        {"letra": "B", "texto": "Dificultad en la producción del lenguaje, con repetición conservada"},
+        {"letra": "C", "texto": "Incapacidad para formar nuevas memorias implícitas"},
+        {"letra": "D", "texto": "Dificultad en la producción del lenguaje, con repetición alterada"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. El virus Herpes simplex tiene tropismo por el lóbulo temporal medial, incluyendo el hipocampo, estructura clave para la consolidación de la memoria declarativa (explícita). Su daño bilateral genera amnesia anterógrada para hechos y eventos, como en el clásico caso H.M."
+    },
+    {
+      "numero": 8,
+      "pergunta": "Un paciente posee una alteración funcional de canales de calcio dependientes de voltajes en las terminaciones axonales de las motoneuronas alfa ¿Cuál sería el cuadro clínico que espera encontrar y que fármaco podría mejorar el mismo?",
+      "opcoes": [
+        {"letra": "A", "texto": "Parálisis rígida- antitoxina tetánica"},
+        {"letra": "B", "texto": "Parálisis rígida- antagonista de los receptores glicinergicos"},
+        {"letra": "C", "texto": "Debilidad muscular – inhibidor de la acetilcolinesterasa"},
+        {"letra": "D", "texto": "Debilidad muscular – agonista de los receptores muscarínicos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Si los canales de Ca2+ de la terminal motora fallan, disminuye la liberación de acetilcolina en la unión neuromuscular, generando debilidad muscular (cuadro miasteniforme, como el síndrome de Lambert-Eaton). Un inhibidor de la acetilcolinesterasa prolonga la acción de la ACh disponible y mejora la transmisión neuromuscular."
+    },
+    {
+      "numero": 9,
+      "pergunta": "Un paciente llega la consulta mostrando los siguientes signos unilaterales: miosis, ptosis palpebral, y enrojecimiento de la piel del rostro que esta completamente seca de ese lado. Los reflejos fotomotor y de acomodación son normales ¿Qué estructura ipsilateral a dichos signos estará lesionada?",
+      "opcoes": [
+        {"letra": "A", "texto": "Ganglio cervical superior"},
+        {"letra": "B", "texto": "Núcleo de III par craneal"},
+        {"letra": "C", "texto": "Núcleo de Edinger-Westphal"},
+        {"letra": "D", "texto": "Núcleo supraquiasmático"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. El cuadro corresponde a un síndrome de Horner (miosis, ptosis, anhidrosis facial con enrojecimiento) por interrupción de la vía simpática oculosimpática. Como los reflejos pupilares parasimpáticos (fotomotor y acomodación) están conservados, la lesión no afecta al III par ni al núcleo de Edinger-Westphal, sino a la cadena simpática, siendo el ganglio cervical superior la estructura típicamente comprometida."
+    },
+    {
+      "numero": 10,
+      "pergunta": "El tono muscular es modulado por estructuras supraespinales que inervan neuronas motoras de la medula ¿Qué ocurre con el tono muscular frente a la hiperestimulación de la formación reticular bulbar?",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumenta el tono flexor por hiperactividad de motoneuronas alfa que activan en forma directa la contracción muscular"},
+        {"letra": "B", "texto": "Disminuye el tono extensor y aumenta el tono flexor por aumento de la actividad del núcleo rojo"},
+        {"letra": "C", "texto": "Aumenta el tono flexor por hiperactividad de motoneuronas gamma, las cuales aumentan la contracción muscular en forma indirecta"},
+        {"letra": "D", "texto": "Aumenta el tono extensor porque se bloquea la inhibición de las motoneuronas alfa mediada por interneuronas medulares"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. La formación reticular bulbar inhibitoria actúa normalmente modulando el tono mediante el sistema gamma (motoneuronas gamma que regulan la sensibilidad del huso muscular y, por vía refleja, la actividad de las motoneuronas alfa). Su hiperestimulación incrementa la actividad gamma, aumentando el tono flexor de forma indirecta a través del reflejo miotático."
+    },
+    {
+      "numero": 11,
+      "pergunta": "El siguiente grafico muestra 3 curvas de presión intracraneana en función del volumen craneoespinal. ¿Cómo es la relación entre ellas en términos de compliancia?",
+      "opcoes": [
+        {"letra": "A", "texto": "a>b>c"},
+        {"letra": "B", "texto": "a<b<c"},
+        {"letra": "C", "texto": "a<b>c"},
+        {"letra": "D", "texto": "a>b<c"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. La compliancia es inversamente proporcional a la pendiente de la curva presión-volumen; cuanto más temprano y abrupto es el ascenso de presión ante pequeños incrementos de volumen, menor es la compliancia. Por eso la curva que sube primero (a) tiene la menor compliancia y la que sube más tarde (c) tiene la mayor: a < b < c."
+    },
+    {
+      "numero": 12,
+      "pergunta": "¿Qué cambio se puede esperar en la resistencia vascular (RV) de los vasos sanguíneos frente a un aumento de la presión arterial media (PAM) y a que se debería?",
+      "opcoes": [
+        {"letra": "A", "texto": "Disminución de la RV por vasoconstricción"},
+        {"letra": "B", "texto": "Disminución de la RV por vasodilatación"},
+        {"letra": "C", "texto": "Aumento de la RV por vasodilatación"},
+        {"letra": "D", "texto": "Aumento de la RV por vasoconstricción"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. Frente a un aumento de la PAM, el músculo liso vascular responde con autorregulación miogénica: el estiramiento de la pared dispara vasoconstricción para mantener el flujo tisular constante, lo que aumenta la resistencia vascular local."
+    },
+    {
+      "numero": 13,
+      "pergunta": "En un experimento de electrofisiología en el que se utiliza una rodaja de hipocampo ex vivo, se estudia la respuesta evocada de las neuronas piramidales del área CA3 frente a la estimulación de las fibras glutamatérgicas aferentes provenientes del giro dentado ¿Qué cambio espera observar en las sinapsis estudiadas al restringir el suministro de oxígeno a la rodaja durante 45 minutos?",
+      "opcoes": [
+        {"letra": "A", "texto": "Una elevada acumulación de Glutamato extracelular, activación de los receptores NMDA, entrada masiva de calcio e inducción de muerte celular"},
+        {"letra": "B", "texto": "Una elevada recaptación neuronal del glutamato, una menor activación de los receptores AMPA y una desensibilización de los receptores NMDA postsinápticos"},
+        {"letra": "C", "texto": "La inducción de un mecanismo de LTP temprano, por activación de los receptores NMDA, que aumenta la eficiencia sináptica"},
+        {"letra": "D", "texto": "Una elevada concentración de potasio intracelular, activación de canales de calcio dependientes de voltaje, exocitosis de glutamato y activación de los receptores NMDA"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. La hipoxia/isquemia prolongada deteriora las bombas dependientes de ATP, impidiendo la recaptación de glutamato; éste se acumula en el espacio extracelular, sobreactiva receptores NMDA, provoca una entrada masiva de Ca2+ intracelular y desencadena excitotoxicidad y muerte neuronal, mecanismo central del daño isquémico (no se trata de LTP fisiológico ni de recaptación aumentada)."
+    },
+    {
+      "numero": 14,
+      "pergunta": "¿En qué proceso fisiológico relacionado con el dolor cobra relevancia la convergencia del circuito representado en la siguiente figura (fibras nociceptivas cutáneas e intestinales convergiendo sobre la misma vía espinal)?",
+      "opcoes": [
+        {"letra": "A", "texto": "La termoalgesia"},
+        {"letra": "B", "texto": "La alodinia"},
+        {"letra": "C", "texto": "El dolor neuropático"},
+        {"letra": "D", "texto": "El dolor referido"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. El dolor referido se explica por la convergencia de aferentes viscerales y cutáneas sobre las mismas neuronas espinotalámicas de segundo orden: el cerebro interpreta erróneamente el dolor visceral como proveniente del territorio cutáneo que comparte esa vía."
+    },
+    {
+      "numero": 15,
+      "pergunta": "¿Qué patología refractiva posee un paciente de 50 años si la mínima distancia a la que puede leer un texto es a 50 cm? El paciente refiere ver muy bien de lejos y que antes de los 45 años no usaba lentes.",
+      "opcoes": [
+        {"letra": "A", "texto": "Presbicia"},
+        {"letra": "B", "texto": "Miopía"},
+        {"letra": "C", "texto": "Hipermetropía"},
+        {"letra": "D", "texto": "Astigmatismo"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. La presbicia es la pérdida de la capacidad de acomodación del cristalino asociada a la edad, que se manifiesta típicamente después de los 40-45 años como dificultad para enfocar objetos cercanos, mientras la visión lejana se conserva normal, exactamente el cuadro descrito."
+    },
+    {
+      "numero": 16,
+      "pergunta": "¿Qué estructura de los circuitos de los ganglios de la base integra información de la amígdala, el hipocampo y la corteza prefrontal regulando conductas motivadas por estímulos apetitivos?",
+      "opcoes": [
+        {"letra": "A", "texto": "La sustancia nigra compacta"},
+        {"letra": "B", "texto": "El globo pálido interno"},
+        {"letra": "C", "texto": "El núcleo accumbens"},
+        {"letra": "D", "texto": "El putamen"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. El núcleo accumbens, parte del estriado ventral, es el principal nodo del circuito límbico de los ganglios de la base; recibe proyecciones de amígdala, hipocampo y corteza prefrontal, integrando información motivacional y emocional con la conducta orientada a recompensas."
+    },
+    {
+      "numero": 17,
+      "pergunta": "¿Qué relación existe entre la intensidad de un estimulo y el potencial receptor?",
+      "opcoes": [
+        {"letra": "A", "texto": "Al aumentar la intensidad del estimulo disminuye la amplitud del potencial receptor"},
+        {"letra": "B", "texto": "Al aumentar la intensidad del estimulo se reduce la duración del potencial receptor"},
+        {"letra": "C", "texto": "Al aumentar la intensidad del estimulo aumenta la amplitud del potencial receptor"},
+        {"letra": "D", "texto": "La amplitud del potencial receptor no depende de la intensidad sino de la duración del estimulo"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Los potenciales receptores son graduados: a mayor intensidad del estímulo, mayor es la apertura de canales y la corriente generadora, por lo que aumenta la amplitud del potencial receptor (codificación de intensidad por amplitud, no todo-o-nada)."
+    },
+    {
+      "numero": 18,
+      "pergunta": "En el grafico las flechas indican 4 momentos durante el curso de un potencial de acción ¿En cual de ellos la fuerza impulsora para el sodio es mayor?",
+      "opcoes": [
+        {"letra": "A", "texto": "1"},
+        {"letra": "B", "texto": "2"},
+        {"letra": "C", "texto": "3"},
+        {"letra": "D", "texto": "4"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. La fuerza impulsora de un ion es la diferencia entre el potencial de membrana y su potencial de equilibrio (Vm - ENa). Cuanto más negativo está el Vm respecto al ENa (es decir, en reposo, antes del ascenso del potencial de acción), mayor es esa diferencia y mayor la fuerza impulsora para el ingreso de Na+."
+    },
+    {
+      "numero": 19,
+      "pergunta": "¿Qué tipo de movimientos se verán mas afectados ante una inactivación de la corteza parietal posterior?",
+      "opcoes": [
+        {"letra": "A", "texto": "Automáticos como la marcha tranquila"},
+        {"letra": "B", "texto": "Automáticos como tocarse la oreja con un dedo"},
+        {"letra": "C", "texto": "Los movimientos que involucran coordenadas espaciales externas, como presionar un timbre"},
+        {"letra": "D", "texto": "Movimientos reflejos, como el reflejo de sobresalto"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. La corteza parietal posterior integra información sensorial y construye mapas espaciales del cuerpo y el entorno, siendo crítica para planificar movimientos dirigidos a objetivos externos definidos en coordenadas espaciales (por ejemplo, alcanzar y presionar un botón en una ubicación precisa); su lesión causa apraxia/ataxia óptica para este tipo de movimientos, no afecta tanto los automáticos o reflejos."
+    },
+    {
+      "numero": 20,
+      "pergunta": "Un paciente de 66 años con antecedentes de hipertensión arterial y diabetes tipo 2 llega a la guardia con hemiparesia braquial derecha. Responde al interrogatorio de manera coherente, aunque de forma lenta y con pronunciación deficiente ¿Qué alteración del lenguaje presenta y donde estará probablemente la lesión?",
+      "opcoes": [
+        {"letra": "A", "texto": "Afasia de Broca, lesión en el lóbulo temporal"},
+        {"letra": "B", "texto": "Afasia de Wernicke, lesión en el lóbulo temporal"},
+        {"letra": "C", "texto": "Afasia de Broca, lesión en el lóbulo frontal"},
+        {"letra": "D", "texto": "Afasia de Wernicke, lesión en el lóbulo frontal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. El paciente comprende bien (coherente al interrogatorio) pero tiene habla lenta y disártrica/no fluente: típico de afasia de Broca, cuya área se localiza en el lóbulo frontal (giro frontal inferior); además la hemiparesia braquial derecha es consistente con una lesión frontal izquierda (cercana a la corteza motora)."
+    },
+    {
+      "numero": 21,
+      "pergunta": "Un paciente presenta somnolencia diurna y luego de la evaluación polisomnográfica se evidencian varios periodos, de más de 10 seg cada uno, con cese del flujo aéreo en ausencia de esfuerzo voluntario ¿Qué tipo de apnea presenta este paciente?",
+      "opcoes": [
+        {"letra": "A", "texto": "Central"},
+        {"letra": "B", "texto": "Obstructiva"},
+        {"letra": "C", "texto": "Mixta"},
+        {"letra": "D", "texto": "Neurológica"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. En la apnea central hay un cese del flujo aéreo por ausencia de esfuerzo respiratorio (el centro respiratorio no genera la orden), a diferencia de la apnea obstructiva, donde el esfuerzo respiratorio persiste pero la vía aérea está colapsada."
+    },
+    {
+      "numero": 22,
+      "pergunta": "¿Qué tipo de actividad neuronal esperaría encontrar en el electroencefalograma (EEG) durante la realización de un registro sobre ritmos corticales en un voluntario sano durante la vigilia tranquila con ojos cerrados?",
+      "opcoes": [
+        {"letra": "A", "texto": "Oscilaciones theta"},
+        {"letra": "B", "texto": "Complejos K y oscilaciones beta"},
+        {"letra": "C", "texto": "Oscilaciones alfa"},
+        {"letra": "D", "texto": "Oscilaciones delta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. El ritmo alfa (8-13 Hz), predominante en regiones occipitales, es característico de la vigilia tranquila con ojos cerrados; desaparece (se bloquea) al abrir los ojos o ante actividad mental, siendo sustituido por ritmo beta."
+    },
+    {
+      "numero": 23,
+      "pergunta": "Si se administra a un paciente un agonista total de receptores adrenérgicos señale que ocurriría respecto a la densidad de dichos receptores y cual seria el mecanismo responsable de dicha alteración.",
+      "opcoes": [
+        {"letra": "A", "texto": "Up regulation heterólogo, resultando en un aumento en la densidad de receptores adrenérgicos"},
+        {"letra": "B", "texto": "Down regulation heterólogo, resultando en una disminución en la densidad de receptores adrenérgicos"},
+        {"letra": "C", "texto": "Up regulation homólogo, resultando en un aumento en la densidad de receptores adrenérgicos"},
+        {"letra": "D", "texto": "Down regulation homólogo, resultando en una disminución en la densidad de receptores adrenérgicos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La estimulación sostenida de un receptor por su propio agonista (en este caso, adrenérgico sobre receptores adrenérgicos) produce desensibilización homóloga: internalización y disminución del número de receptores en superficie (down regulation homólogo), un mecanismo de retroalimentación negativa que limita la respuesta a la sobreestimulación crónica."
+    },
+    {
+      "numero": 24,
+      "pergunta": "En un paciente que presenta una hemorragia aguda ¿Cuál sería la respuesta diurética y que relación guardaría con la ADH?",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumento de la diuresis por aumento de ADH a través de receptores V2 en endotelio"},
+        {"letra": "B", "texto": "Disminución de la diuresis por disminución de ADH a través de receptores V2 en endotelio"},
+        {"letra": "C", "texto": "Aumento de la diuresis por aumento de ADH a través de receptores V2 en túbulo colector"},
+        {"letra": "D", "texto": "Disminución de la diuresis por aumento de ADH a través de receptores V2 en túbulo colector"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La hipovolemia por hemorragia aguda estimula barorreceptores que activan la liberación de ADH; ésta actúa sobre receptores V2 en el túbulo colector renal, insertando acuaporinas y aumentando la reabsorción de agua, lo que disminuye la diuresis para conservar volumen circulante."
+    },
+    {
+      "numero": 25,
+      "pergunta": "Un paciente de 30 años presenta voz gruesa, cefaleas frecuentes y dolores articulares. Relata que en el ultimo año noto que su calzado habitual le resulta pequeño. Usted sospecha de acromegalia (exceso de hormona de crecimiento, GH). El paciente adjunta un análisis de sangre ¿Cómo espera encontrar la glucemia del paciente?",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumentada ya que la GH aumenta la expresión de GLUT 1 que transporta glucosa hacia el torrente sanguíneo"},
+        {"letra": "B", "texto": "Disminuida ya que es una hormona contrarreguladora por lo cual potencia la acción de la insulina"},
+        {"letra": "C", "texto": "Disminuida ya que, al ser una condición crónica, la GH favorecerá la gluconeogénesis"},
+        {"letra": "D", "texto": "Aumentada ya que la GH estimula la gluconeogénesis hepática"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La GH es una hormona contrarreguladora de la insulina (antagoniza su acción periférica) y estimula la gluconeogénesis hepática y la lipólisis, generando hiperglucemia crónica en estados de exceso de GH como la acromegalia, pudiendo llevar a una diabetes secundaria."
+    },
+    {
+      "numero": 26,
+      "pergunta": "Ante una sección de la comunicación o tallo hipotálamo-hipofisario ¿Qué consecuencia se produce en la liberación de los factores hipofisarios?",
+      "opcoes": [
+        {"letra": "A", "texto": "Se produce el descenso de todos los factores hipofisarios"},
+        {"letra": "B", "texto": "Se produce el ascenso de todos los factores hipofisarios, salvo la prolactina que disminuye"},
+        {"letra": "C", "texto": "Se produce el ascenso de todos los factores hipofisarios"},
+        {"letra": "D", "texto": "Se produce el descenso de todos los factores hipofisarios, salvo la prolactina que aumenta"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. El hipotálamo regula la hipófisis anterior mayoritariamente mediante factores liberadores estimulatorios (TRH, GnRH, CRH, GHRH); al interrumpirse el tallo, se pierde ese estímulo y caen las hormonas tróficas. La excepción es la prolactina, regulada principalmente por inhibición tónica (dopamina); al cortarse esa vía inhibitoria, la prolactina aumenta."
+    },
+    {
+      "numero": 27,
+      "pergunta": "Una paciente de 60 años se encuentra en seguimiento médico por presentar disminución en la densidad ósea a nivel de las vertebras lumbares con diagnostico de osteoporosis. Le pide explicaciones a su médico quien contesta:",
+      "opcoes": [
+        {"letra": "A", "texto": "que a causa del déficit de estradiol en la menopausia hay menor estímulo para la síntesis de OPG, por lo que predomina la resorción ósea, produciendo fragilidad ósea"},
+        {"letra": "B", "texto": "que a causa de su edad aumenta el cortisol que actúa estimulando la síntesis de OPG, por lo que predomina la acreción ósea, produciendo fragilidad ósea"},
+        {"letra": "C", "texto": "que a causa del exceso de estradiol en la menopausia hay mayor estímulo para la síntesis de RANK-L, por lo que predomina la resorción ósea, produciendo fragilidad ósea"},
+        {"letra": "D", "texto": "que a causa del efecto del exceso de estradiol en la menopausia hay mayor estímulo para la síntesis de OPG, por lo que predomina la acreción ósea, fortaleciendo los huesos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. El estradiol estimula la producción de osteoprotegerina (OPG), que bloquea al RANK-L y frena la osteoclastogénesis. En la menopausia, el déficit de estradiol reduce la OPG, predominando la señal de RANK-L sobre los osteoclastos y aumentando la resorción ósea, lo que produce la fragilidad típica de la osteoporosis posmenopáusica."
+    },
+    {
+      "numero": 28,
+      "pergunta": "¿Qué sucede con la captación de iodo y la producción de hormonas tiroideas si se administran altas concentraciones de iodo a un individuo normal?",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumenta la captación de iodo, disminuye la producción de hormonas tiroideas por el fenómeno de autorregulación de Wolff-Chaikoff"},
+        {"letra": "B", "texto": "Disminuye la captación de iodo, disminuye la producción de hormonas tiroideas por el fenómeno de autorregulación de Wolff-Chaikoff"},
+        {"letra": "C", "texto": "Aumenta la captación de iodo, aumenta la producción de hormonas tiroideas ya que no existe ningún tipo de mecanismo de autorregulación"},
+        {"letra": "D", "texto": "Disminuye la captación de iodo, aumenta la producción de hormonas tiroideas ya que no existe ningún tipo de mecanismo de autorregulación"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. El efecto Wolff-Chaikoff es un mecanismo de autorregulación tiroidea: dosis altas de iodo inhiben transitoriamente la organificación y la captación de iodo, disminuyendo la síntesis de hormonas tiroideas, como protección frente a la sobrecarga de sustrato."
+    },
+    {
+      "numero": 29,
+      "pergunta": "¿Cuál de estas hormonas o condiciones estimula la liberación de insulina?",
+      "opcoes": [
+        {"letra": "A", "texto": "Péptido insulinotrópico dependiente de glucosa (GIP)"},
+        {"letra": "B", "texto": "Hipoglucemia"},
+        {"letra": "C", "texto": "Somatostatina"},
+        {"letra": "D", "texto": "Disminución en la concentración de aminoácidos en sangre"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. El GIP, secretado por células K del intestino delgado ante la llegada de nutrientes, es una incretina que potencia la liberación de insulina por las células beta pancreáticas (efecto incretínico). La hipoglucemia, la somatostatina y la baja disponibilidad de aminoácidos, en cambio, inhiben o no estimulan la secreción de insulina."
+    },
+    {
+      "numero": 30,
+      "pergunta": "Un paciente con enfermedad oncológica debe recibir glucocorticoides para su tratamiento. Al presentarse a la consulta, le comenta que los efectos adversos de esta medicación le generan mucho malestar y le manifiesta el deseo de suspender el tratamiento repentinamente. Usted, que ha estudiado fisiología del eje suprarrenal, le sugiere:",
+      "opcoes": [
+        {"letra": "A", "texto": "que los suspenda en ese mismo momento, ya que no debería suceder nada"},
+        {"letra": "B", "texto": "que no los suspenda de manera repentina, ya que su eje suprarrenal esta inhibido y padecería de una insuficiencia suprarrenal"},
+        {"letra": "C", "texto": "que suspenda la medicación hasta que se le pasen los efectos adversos y luego la vuelva a tomar"},
+        {"letra": "D", "texto": "que tome la medicación de manera intermitente"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. El uso prolongado de glucocorticoides exógenos suprime el eje hipotálamo-hipófiso-suprarrenal por retroalimentación negativa (menos CRH/ACTH), atrofiando la producción endógena de cortisol. Su suspensión brusca no permite que el eje se reactive a tiempo, generando una insuficiencia suprarrenal aguda; por eso el descenso debe ser gradual."
+    },
+    {
+      "numero": 31,
+      "pergunta": "Con respecto a FSH (Hormona folículo estimulante) y sus características bioquímicas podemos asegurar que:",
+      "opcoes": [
+        {"letra": "A", "texto": "Es una amina ya que deriva de un aminoácido. Es glucoproteína"},
+        {"letra": "B", "texto": "Tiene similitudes estructurales con GH, PRL y FSH"},
+        {"letra": "C", "texto": "Es una hormona peptídica. Es glucoproteína"},
+        {"letra": "D", "texto": "Tiene similitudes con HCG (gonadotrofina coriónica humana) y TSH, y también con LH. Comparten la subunidad alfa"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. FSH, LH, TSH y HCG son glucoproteínas heterodiméricas que comparten una subunidad alfa idéntica, diferenciándose por su subunidad beta específica, que les da especificidad biológica y de unión al receptor."
+    },
+    {
+      "numero": 32,
+      "pergunta": "¿Cuáles de los siguientes trastornos endocrinos considera Ud. que puede ser responsable de hiperglucemia?",
+      "opcoes": [
+        {"letra": "A", "texto": "Hipotiroidismo, Hiperprolactinemia"},
+        {"letra": "B", "texto": "Déficit de insulina, exceso de hormona de crecimiento"},
+        {"letra": "C", "texto": "Hipertiroidismo, Hiperparatiroidismo"},
+        {"letra": "D", "texto": "Déficit de glucocorticoides con hiperinsulinemia"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. El déficit de insulina elimina el principal mecanismo de captación de glucosa periférica, y el exceso de GH antagoniza la acción insulínica y estimula la gluconeogénesis: ambos elevan la glucemia. Las combinaciones de las otras opciones no son, en conjunto, causas clásicas de hiperglucemia (por ejemplo, la hiperinsulinemia tiende a la hipoglucemia)."
+    },
+    {
+      "numero": 33,
+      "pergunta": "El cortisol como otras hormonas presenta ritmo circadiano. ¿En qué momento del ciclo se encuentran los niveles máximos (picos) y los mínimos (valles o nadir)?",
+      "opcoes": [
+        {"letra": "A", "texto": "Los niveles son máximos por la mañana y mínimos por la noche"},
+        {"letra": "B", "texto": "Los niveles son mínimos por la mañana y máximos por la noche"},
+        {"letra": "C", "texto": "El pico máximo ocurre a la tarde, con niveles oscilantes el resto del día"},
+        {"letra": "D", "texto": "El pico máximo ocurre a la mañana, con una disminución progresiva durante el día y un nuevo pico de secreción alta por la noche"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. El cortisol presenta un ritmo circadiano clásico con pico máximo en las primeras horas de la mañana (alrededor del despertar) y un descenso progresivo durante el día hasta alcanzar su valor mínimo (nadir) durante la noche, en relación con el ciclo sueño-vigilia."
+    },
+    {
+      "numero": 34,
+      "pergunta": "El síndrome de Turner es una enfermedad cromosómica que se caracteriza por ausencia del segundo cromosoma sexual con un cariotipo 45 X0. Dichas mujeres presentan atrofia de los ovarios ¿Cómo espera encontrar los niveles de Estradiol, Inhibina y FSH en estas pacientes?",
+      "opcoes": [
+        {"letra": "A", "texto": "Estradiol e Inhibina bajos con FSH alta"},
+        {"letra": "B", "texto": "Estradiol e Inhibina altos con FSH baja"},
+        {"letra": "C", "texto": "Estradiol, Inhibina y FSH bajos"},
+        {"letra": "D", "texto": "Estradiol bajo e Inhibina y FSH altos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. La disgenesia gonadal del síndrome de Turner provoca insuficiencia ovárica primaria: los ovarios atróficos producen poco estradiol e inhibina; al faltar la retroalimentación negativa que estas hormonas ejercen sobre el eje, la FSH se eleva de forma compensatoria (hipogonadismo hipergonadotrófico)."
+    },
+    {
+      "numero": 35,
+      "pergunta": "¿Cuál es la función y la regulación de las células de Sertoli?",
+      "opcoes": [
+        {"letra": "A", "texto": "Sintetiza androstenediona, estrógenos e inhibina. Es regulada por FSH"},
+        {"letra": "B", "texto": "Produce inhibina y transforma la testosterona en estradiol. Es regulada por FSH"},
+        {"letra": "C", "texto": "Es fundamental para la espermatogénesis. Es regulada por LH y FSH"},
+        {"letra": "D", "texto": "Produce testosterona a partir de LDL colesterol. Es regulada por LH"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. Las células de Sertoli, reguladas por FSH, dan soporte estructural y nutricional a la espermatogénesis, producen inhibina (retroalimentación negativa sobre FSH) y aromatizan testosterona a estradiol. La producción de testosterona a partir de colesterol y regulada por LH corresponde a las células de Leydig, no a las de Sertoli."
+    },
+    {
+      "numero": 36,
+      "pergunta": "¿Qué efectos tendría sobre la secreción gástrica el uso de un fármaco que bloquee los receptores H2 de histamina?",
+      "opcoes": [
+        {"letra": "A", "texto": "Disminución de la secreción de HCl, afectando la fase cefálica"},
+        {"letra": "B", "texto": "Disminución de la secreción de HCl, afectando la fase gástrica"},
+        {"letra": "C", "texto": "Aumento de la secreción de HCl, afectando la fase intestinal"},
+        {"letra": "D", "texto": "No hay acción de receptores H2 en la secreción de HCl por lo que no se alteraría ninguna fase"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. La histamina actúa sobre receptores H2 de la célula parietal potenciando la secreción de HCl, particularmente durante la fase gástrica (estimulada por distensión gástrica y gastrina, que liberan histamina paracrina de células ECL). Bloquear H2 disminuye marcadamente esa secreción ácida."
+    },
+    {
+      "numero": 37,
+      "pergunta": "Un paciente con diagnóstico de insuficiencia hepática presenta sangrados espontáneos y formación de hematomas con facilidad ¿Cuál es la causa subyacente más probable de estos síntomas?",
+      "opcoes": [
+        {"letra": "A", "texto": "Una alteración en la síntesis de los factores de coagulación"},
+        {"letra": "B", "texto": "Una alteración en la metabolización de la vitamina A"},
+        {"letra": "C", "texto": "Una alteración en la producción de plaquetas"},
+        {"letra": "D", "texto": "Una alteración en la señalización de las células de Kupffer"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Resposta correta: A. El hígado sintetiza la mayoría de los factores de la coagulación (entre ellos los dependientes de vitamina K). En la insuficiencia hepática, esta síntesis disminuye, prolongando los tiempos de coagulación y favoreciendo sangrados y hematomas espontáneos.\n\nB) sería relevante la vitamina K, no la A. C) las plaquetas se producen en médula ósea, no en el hígado. D) las células de Kupffer son macrófagos hepáticos sin rol directo en la coagulación."
+    },
+    {
+      "numero": 38,
+      "pergunta": "¿Qué tipo de nutriente puede sufrir digestión luminal, de membrana y también intracitoplasmática?",
+      "opcoes": [
+        {"letra": "A", "texto": "Los lípidos"},
+        {"letra": "B", "texto": "Los hidratos de carbono"},
+        {"letra": "C", "texto": "Las proteínas"},
+        {"letra": "D", "texto": "Los ácidos nucleicos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Las proteínas sufren digestión luminal (pepsina, proteasas pancreáticas), digestión de membrana (peptidasas del borde en cepillo) y, además, digestión intracitoplasmática de pequeños péptidos absorbidos hacia dipeptidasas/tripeptidasas dentro del enterocito, algo que no ocurre con la misma extensión en los otros nutrientes listados."
+    },
+    {
+      "numero": 39,
+      "pergunta": "Julia se encuentra en seguimiento por una gastritis crónica y en una biopsia de la mucosa gástrica notaron un déficit de células parietales en la evaluación de su patología ¿Qué nutriente se vería afectado por esta lesión y por qué?",
+      "opcoes": [
+        {"letra": "A", "texto": "Vitamina K, por déficit de ácidos biliares que imposibilita su absorción"},
+        {"letra": "B", "texto": "Vitamina A, por aumento de pepsina que aumenta la degradación"},
+        {"letra": "C", "texto": "Vitamina B12, por déficit de Factor intrínseco que imposibilita su absorción"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. Las células parietales gástricas secretan tanto HCl como factor intrínseco, indispensable para la absorción de vitamina B12 en el íleon. Su déficit (por ejemplo en gastritis atrófica autoinmune) provoca malabsorción de B12 y anemia perniciosa."
+    },
+    {
+      "numero": 40,
+      "pergunta": "En un paciente con una resección quirúrgica del antro debido a un tumor localizado ¿Qué modificaciones esperaría encontrar en la secreción acida gástrica?",
+      "opcoes": [
+        {"letra": "A", "texto": "Disminución por perdida de células parietales disponibles del antro gástrico"},
+        {"letra": "B", "texto": "Aumenta por perdida de inhibición inducida por somatostatina"},
+        {"letra": "C", "texto": "Disminuida por disminución de células G productoras de gastrina"},
+        {"letra": "D", "texto": "Aumentada por disminución de células G productoras de gastrina"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Resposta correta: C. El antro gástrico contiene las células G productoras de gastrina, principal estimulante de la secreción ácida por las células parietales (ubicadas mayormente en cuerpo y fondo, no en el antro). Al resecar el antro, disminuyen las células G, cae la gastrina circulante y, en consecuencia, disminuye la secreción ácida."
+    },
+    {
+      "numero": 41,
+      "pergunta": "¿Cuál de los siguientes NO es un mecanismo de protección para evitar que las enzimas pancreáticas se activen antes de tiempo?",
+      "opcoes": [
+        {"letra": "A", "texto": "Liberación de enzimas inactivas"},
+        {"letra": "B", "texto": "Liberación en conjunto con inhibidor de la tripsina"},
+        {"letra": "C", "texto": "Activación en el intestino por una enzima secretada allí (enteropeptidasa)"},
+        {"letra": "D", "texto": "pH alcalino en el ducto pancreático"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. El pH alcalino del jugo pancreático (por el bicarbonato ductal) tiene como función principal neutralizar el quimo ácido proveniente del estómago para optimizar la actividad enzimática en el duodeno, no es en sí un mecanismo que impida la activación prematura de las enzimas; en cambio, la secreción en forma de zimógenos inactivos, el inhibidor de tripsina pancreático y la activación exclusiva por enteropeptidasa intestinal sí son mecanismos de protección directos."
+    },
+    {
+      "numero": 42,
+      "pergunta": "Una señora mayor con antecedentes de demencia es traída a la guardia de su hospital porque hoy, mientras se encontraba desayunando, ingirió inadvertidamente una moneda de 10 pesos. Desde ese momento siente una molestia retroesternal. En la radiografía de tórax se observa la moneda en el tercio medio del esófago. Desde el punto de vista fisiológico ¿Qué tipo de onda peristáltica podría propulsar hacia el estomago la moneda en el esófago?",
+      "opcoes": [
+        {"letra": "A", "texto": "Ondas peristálticas primarias efectivas ya que la moneda induce una deglución"},
+        {"letra": "B", "texto": "Ondas peristálticas secundarias ya que la moneda estimula mecanorreceptores en la pared esofágica"},
+        {"letra": "C", "texto": "Ondas peristálticas secundarias ya que es patológica"},
+        {"letra": "D", "texto": "Ondas peristálticas primarias inefectivas ya que no llega a completarse la onda peristáltica"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. Las ondas peristálticas secundarias se originan localmente en el esófago en respuesta a la distensión de su pared por un bolo (en este caso, la moneda) que no fue removido por la onda primaria, activando mecanorreceptores esofágicos. No requieren un nuevo acto deglutorio, a diferencia de las ondas primarias."
+    },
+    {
+      "numero": 43,
+      "pergunta": "A una paciente le acaban de diagnosticar una Colangitis Biliar Primaria. Se trata de una enfermedad autoinmune que compromete los colangiocitos ¿Qué parámetro de hepatograma espera encontrar alterados principalmente?",
+      "opcoes": [
+        {"letra": "A", "texto": "AST (GOT) y ALT (GPT)"},
+        {"letra": "B", "texto": "AST (GOT) exclusivamente"},
+        {"letra": "C", "texto": "FAL (fosfatasa alcalina) ósea y hepática"},
+        {"letra": "D", "texto": "FAL y GGT (gamma glutamil transpeptidasa)"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Resposta correta: D. La Colangitis Biliar Primaria es una enfermedad colestásica que afecta a los colangiocitos (epitelio de los conductos biliares), por lo que el patrón de daño es de colestasis: predominan FAL y GGT elevadas, marcadores específicos de daño biliar/colestático, más que las transaminasas (AST/ALT), que reflejan daño hepatocelular."
+    },
+    {
+      "numero": 44,
+      "pergunta": "En el siguiente grafico ¿A que corresponde el aumento de presión que se evidencia a lo largo del esófago a medida que transcurre el tiempo?",
+      "opcoes": [
+        {"letra": "A", "texto": "A la presión que ejerce el bolo alimentario contra las paredes del esófago"},
+        {"letra": "B", "texto": "A la contracción del musculo esofágico que permite la propulsión del bolo hacia el esfínter esofágico inferior"},
+        {"letra": "C", "texto": "A las ondas lentas del ritmo eléctrico de base del esófago"},
+        {"letra": "D", "texto": "Al peristaltismo terciario esofágico"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Resposta correta: B. El registro manométrico esofágico capta el aumento secuencial de presión a lo largo del órgano causado por la onda de contracción peristáltica primaria del músculo liso/estriado esofágico, que avanza progresivamente impulsando el bolo hacia el esfínter esofágico inferior."
+    }
+  ]
+}
