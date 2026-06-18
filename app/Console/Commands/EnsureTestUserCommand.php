@@ -17,10 +17,6 @@ class EnsureTestUserCommand extends Command
     public function handle(): int
     {
         $hash = Hash::make('BancoTeste2026#Local');
-        $payload = [
-            'nome' => 'Usuário Teste',
-            'senha' => $hash,
-        ];
 
         $materiaIds = QuestionBankLocator::filterIdsWithBank(
             Materia::query()->pluck('id')->map(fn ($id) => (int) $id)->all()
@@ -30,7 +26,12 @@ class EnsureTestUserCommand extends Command
         }
 
         foreach (['teste@bancodechoices.com', 'teste@bancodechoices.local'] as $email) {
-            $user = User::updateOrCreate(['email' => $email], $payload);
+            // Só define o nome ao criar a conta — preserva edições feitas depois pelo perfil.
+            $user = User::firstOrCreate(['email' => $email], ['nome' => 'Usuário Teste', 'senha' => $hash]);
+            if (! $user->wasRecentlyCreated) {
+                $user->senha = $hash;
+                $user->save();
+            }
 
             try {
                 $user->materias()->sync($materiaIds);
