@@ -40,7 +40,7 @@ class SetupDemoQuestionsCommand extends Command
         }
 
         $this->info('A marcar questões demo (banco:marcar-demo)…');
-        Artisan::call('banco:marcar-demo', ['--por-materia' => 5]);
+        Artisan::call('banco:marcar-demo', ['--por-materia' => 12]);
         $this->line(trim(Artisan::output()));
 
         $this->newLine();

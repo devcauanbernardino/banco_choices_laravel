@@ -72,7 +72,7 @@ class QuestionsSetupFarmaco2Cat3Command extends Command
 
         $this->newLine();
         $this->info('A marcar questões para o funil demo (is_demo)…');
-        $demoCode = $this->call('banco:marcar-demo', ['--por-materia' => 5]);
+        $demoCode = $this->call('banco:marcar-demo', ['--por-materia' => 12]);
         if ($demoCode !== self::SUCCESS) {
             return $demoCode;
         }

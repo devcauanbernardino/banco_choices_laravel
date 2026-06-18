@@ -11,7 +11,7 @@ use Illuminate\Console\Command;
 
 class MarcarDemoCommand extends Command
 {
-    protected $signature = 'banco:marcar-demo {--por-materia=5}';
+    protected $signature = 'banco:marcar-demo {--por-materia=12}';
 
     protected $description = 'Marca N questões aleatórias como demo por matéria (2+ cátedras: N por cátedra; 2+ parciais: N por parcial)';
 
