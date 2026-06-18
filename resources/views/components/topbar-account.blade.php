@@ -40,15 +40,6 @@
                 </a>
             </li>
             <li>
-                <a class="dropdown-item bc-lang-menu__item" href="mailto:{{ config('mail.from.address') }}">
-                    <span class="bc-account-menu__ico-wrap" aria-hidden="true">
-                        <span class="material-symbols-outlined">mail</span>
-                    </span>
-                    <span class="bc-lang-menu__label">{{ config('mail.from.address') }}</span>
-                    <span class="bc-lang-menu__tick" aria-hidden="true"></span>
-                </a>
-            </li>
-            <li>
                 <form method="POST" action="{{ route('logout') }}" class="bc-lang-menu__form w-100 m-0 p-0">
                     @csrf
                     <button type="submit" class="dropdown-item bc-lang-menu__item bc-account-menu__item--danger w-100 text-start border-0 bg-transparent">
