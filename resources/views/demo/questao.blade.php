@@ -38,7 +38,7 @@
                     @php $letra = $letras[$i] ?? ''; @endphp
                     <li>
                         <label class="demo-quiz__opt" data-letter="{{ $letra }}">
-                            <input type="radio" name="resposta" value="{{ $letra }}" class="demo-quiz__opt-input">
+                            <input type="radio" name="resposta" value="{{ $i }}" class="demo-quiz__opt-input">
                             <span class="demo-quiz__opt-letter">{{ $letra }}</span>
                             <span class="demo-quiz__opt-text">{!! nl2br(e($opt)) !!}</span>
                         </label>
