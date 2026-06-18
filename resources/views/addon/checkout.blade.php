@@ -109,9 +109,11 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fw-bold d-inline-flex align-items-center justify-content-center gap-2" id="addon-submit">
+                    <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fw-bold d-inline-flex align-items-center justify-content-center gap-2" id="addon-submit"
+                            data-text-ar="{{ sprintf(__('signup.checkout.submit_mp'), $totalPriceFormatted) }}"
+                            data-text-br="{{ sprintf(__('signup.checkout.submit_mp_brl'), $totalPriceBrlFormatted) }}">
                         <span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">lock</span>
-                        {{ sprintf(__('signup.checkout.submit_mp'), $totalPriceFormatted) }}
+                        <span id="addon-submit-text">{{ sprintf(__('signup.checkout.submit_mp'), $totalPriceFormatted) }}</span>
                     </button>
                 </form>
             </div>
@@ -123,12 +125,16 @@
                 @foreach ($materiasInfo as $mat)
                     <div class="addon-sum-row">
                         <span class="d-inline-flex align-items-center gap-1"><span class="material-symbols-outlined addon-checkout-heading-ico" aria-hidden="true">menu_book</span>{{ $mat->nome }}</span>
-                        <span class="text-muted">$ {{ $unitPriceFormatted }} ARS</span>
+                        <span class="text-muted addon-price-amount"
+                              data-ars="$ {{ $unitPriceFormatted }} ARS"
+                              data-brl="R$ {{ $unitPriceBrlFormatted }} BRL">$ {{ $unitPriceFormatted }} ARS</span>
                     </div>
                 @endforeach
                 <div class="d-flex justify-content-between align-items-center pt-3 mt-2">
                     <span class="fw-bold">{{ __('signup.checkout.total') }}</span>
-                    <span class="fs-5 fw-bold text-primary">$ {{ $totalPriceFormatted }} ARS</span>
+                    <span class="fs-5 fw-bold text-primary addon-price-amount"
+                          data-ars="$ {{ $totalPriceFormatted }} ARS"
+                          data-brl="R$ {{ $totalPriceBrlFormatted }} BRL">$ {{ $totalPriceFormatted }} ARS</span>
                 </div>
             </div>
         </div>
@@ -147,5 +153,27 @@
             btn.disabled = true;
             btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> …';
         });
+
+        (function () {
+            var radios = document.querySelectorAll('input[name="mp_account"]');
+            var submitBtn = document.getElementById('addon-submit');
+            var submitBtnText = document.getElementById('addon-submit-text');
+            var amounts = document.querySelectorAll('.addon-price-amount');
+
+            function applyAccount(account) {
+                var isBr = account === 'br';
+                amounts.forEach(function (el) {
+                    el.textContent = isBr ? el.dataset.brl : el.dataset.ars;
+                });
+                if (submitBtn && submitBtnText) {
+                    submitBtnText.textContent = isBr ? submitBtn.dataset.textBr : submitBtn.dataset.textAr;
+                }
+            }
+
+            radios.forEach(function (r) {
+                r.addEventListener('change', function () { applyAccount(this.value); });
+                if (r.checked) { applyAccount(r.value); }
+            });
+        })();
     </script>
 @endpush

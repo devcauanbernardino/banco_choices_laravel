@@ -191,9 +191,11 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="checkout-mp-submit">
+                            <button type="submit" class="checkout-mp-submit" id="checkoutSubmitBtn"
+                                    data-text-ar="{{ sprintf(__('signup.checkout.submit_mp'), number_format($totalPrice, 2, ',', '.')) }}"
+                                    data-text-br="{{ sprintf(__('signup.checkout.submit_mp_brl'), number_format($totalPriceBrl, 2, ',', '.')) }}">
                                 <span class="material-symbols-outlined" aria-hidden="true">lock</span>
-                                {{ sprintf(__('signup.checkout.submit_mp'), number_format($totalPrice, 2, ',', '.')) }}
+                                <span id="checkoutSubmitBtnText">{{ sprintf(__('signup.checkout.submit_mp'), number_format($totalPrice, 2, ',', '.')) }}</span>
                             </button>
                             <p class="checkout-mp-submit-note">{{ __('signup.checkout.submit_note') }}</p>
                         </form>
@@ -222,15 +224,19 @@
                                         <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
                                         {{ $m->nome }}
                                     </span>
-                                    <span>$ {{ number_format($plan['price'] ?? 0, 2, ',', '.') }}</span>
+                                    <span class="checkout-mp-price-amount"
+                                          data-ars="$ {{ number_format($plan['price'] ?? 0, 2, ',', '.') }}"
+                                          data-brl="R$ {{ number_format($plan['priceBrl'] ?? 0, 2, ',', '.') }}">$ {{ number_format($plan['price'] ?? 0, 2, ',', '.') }}</span>
                                 </div>
                             @endforeach
 
                             <div class="checkout-mp-row checkout-mp-row--total">
                                 <span class="checkout-mp-total-label">{{ __('signup.checkout.total_due') }}</span>
                                 <div class="text-end">
-                                    <div class="checkout-mp-total-value">$ {{ number_format($totalPrice, 2, ',', '.') }}</div>
-                                    <div class="small text-muted">ARS</div>
+                                    <div class="checkout-mp-total-value checkout-mp-price-amount"
+                                         data-ars="$ {{ number_format($totalPrice, 2, ',', '.') }}"
+                                         data-brl="R$ {{ number_format($totalPriceBrl, 2, ',', '.') }}">$ {{ number_format($totalPrice, 2, ',', '.') }}</div>
+                                    <div class="small text-muted checkout-mp-currency-label">ARS</div>
                                 </div>
                             </div>
                         </div>
@@ -254,4 +260,31 @@
         'countryId' => 'checkout-country',
         'postalId' => 'checkout-postal',
     ])
+    <script>
+        (function () {
+            var radios = document.querySelectorAll('input[name="mp_account"]');
+            var submitBtn = document.getElementById('checkoutSubmitBtn');
+            var submitBtnText = document.getElementById('checkoutSubmitBtnText');
+            var amounts = document.querySelectorAll('.checkout-mp-price-amount');
+            var currencyLabel = document.querySelector('.checkout-mp-currency-label');
+
+            function applyAccount(account) {
+                var isBr = account === 'br';
+                amounts.forEach(function (el) {
+                    el.textContent = isBr ? el.dataset.brl : el.dataset.ars;
+                });
+                if (currencyLabel) {
+                    currencyLabel.textContent = isBr ? 'BRL' : 'ARS';
+                }
+                if (submitBtn && submitBtnText) {
+                    submitBtnText.textContent = isBr ? submitBtn.dataset.textBr : submitBtn.dataset.textAr;
+                }
+            }
+
+            radios.forEach(function (r) {
+                r.addEventListener('change', function () { applyAccount(this.value); });
+                if (r.checked) { applyAccount(r.value); }
+            });
+        })();
+    </script>
 @endpush

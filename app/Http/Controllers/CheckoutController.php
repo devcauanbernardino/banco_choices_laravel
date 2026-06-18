@@ -44,6 +44,7 @@ class CheckoutController extends Controller
         }
 
         $totalPrice = (float) $planDisplay['price'] * count($materias);
+        $totalPriceBrl = (float) $planDisplay['priceBrl'] * count($materias);
         $orderId = 'ORDER-'.strtoupper(uniqid());
 
         $request->session()->put('checkout_order_id', $orderId);
@@ -62,6 +63,7 @@ class CheckoutController extends Controller
             'plan' => $planDisplay,
             'planId' => $planId,
             'totalPrice' => $totalPrice,
+            'totalPriceBrl' => $totalPriceBrl,
             'orderId' => $orderId,
             'materias' => $materias,
             'countries' => Countries::forSelect(),
@@ -76,7 +78,7 @@ class CheckoutController extends Controller
         $request->validate([
             'checkout_kind' => 'nullable|in:signup,addon',
             'order_id' => 'required|string',
-            'plan_id' => 'required|in:monthly,semester,annual',
+            'plan_id' => 'required|in:daily,weekly,monthly',
             'plan_duration_days' => 'required|integer|min:1',
             'materias' => 'required|string',
             'total_price' => 'required|numeric|min:0',
@@ -292,6 +294,23 @@ class CheckoutController extends Controller
             : $pBase.'/checkout-mercadopago?error=payment_failed';
 
         $unitPrice = round($totalPrice, 2);
+
+        // O totalPrice chega sempre calculado em pesos ARS; se a conta escolhida for BRL,
+        // convertemos pelo câmbio fixo configurado por plano (price_brl / price), preservando
+        // descontos de cupom/crédito já aplicados ao valor original.
+        if (strtoupper((string) ($mpAccount['currency_id'] ?? '')) !== 'ARS') {
+            $ratio = 1.0;
+            if ($checkoutKind === 'addon') {
+                $arsBase = SignupFlow::addonPricePerMateria();
+                $ratio = $arsBase > 0 ? SignupFlow::addonPricePerMateriaBrl() / $arsBase : 1.0;
+            } else {
+                $planRow = SignupFlow::signupPlanForDisplayById((string) $request->input('plan_id'));
+                if ($planRow !== null && (float) $planRow['price'] > 0) {
+                    $ratio = (float) $planRow['priceBrl'] / (float) $planRow['price'];
+                }
+            }
+            $unitPrice = round($unitPrice * $ratio, 2);
+        }
 
         $preferenceData = [
             'items' => [[

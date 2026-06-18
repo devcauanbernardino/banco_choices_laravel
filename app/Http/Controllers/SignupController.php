@@ -82,7 +82,7 @@ class SignupController extends Controller
     {
         $request->validate(
             [
-                'plan_id' => 'required|in:monthly,semester,annual',
+                'plan_id' => 'required|in:daily,weekly,monthly',
             ],
             [
                 'plan_id.required' => __('signup.err.plan_required'),

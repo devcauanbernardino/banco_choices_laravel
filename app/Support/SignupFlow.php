@@ -9,7 +9,7 @@ class SignupFlow
 {
     public static function addonPlanFallbackId(): string
     {
-        return (string) config('signup.addon_fallback_plan_id', 'semester');
+        return (string) config('signup.addon_fallback_plan_id', 'weekly');
     }
 
     public static function addonPricePerMateria(): float
@@ -28,6 +28,11 @@ class SignupFlow
         return (float) config('signup.addon_price_per_materia', 29.90);
     }
 
+    public static function addonPricePerMateriaBrl(): float
+    {
+        return (float) config('signup.addon_price_per_materia_brl', 5.90);
+    }
+
     /**
      * @return array<string, mixed>|null
      */
@@ -43,33 +48,30 @@ class SignupFlow
         $days = (int) ($def['days'] ?? 0);
 
         $featureKeys = match ($id) {
+            'daily' => [
+                'signup.plan.daily.f1',
+                'signup.plan.daily.f2',
+                'signup.plan.daily.f3',
+            ],
+            'weekly' => [
+                'signup.plan.weekly.f1',
+                'signup.plan.weekly.f2',
+                'signup.plan.weekly.f3',
+                'signup.plan.weekly.f4',
+            ],
             'monthly' => [
                 'signup.plan.monthly.f1',
                 'signup.plan.monthly.f2',
                 'signup.plan.monthly.f3',
                 'signup.plan.monthly.f4',
-            ],
-            'semester' => [
-                'signup.plan.semester.f1',
-                'signup.plan.semester.f2',
-                'signup.plan.semester.f3',
-                'signup.plan.semester.f4',
-                'signup.plan.semester.f5',
-            ],
-            'annual' => [
-                'signup.plan.annual.f1',
-                'signup.plan.annual.f2',
-                'signup.plan.annual.f3',
-                'signup.plan.annual.f4',
-                'signup.plan.annual.f5',
-                'signup.plan.annual.f6',
+                'signup.plan.monthly.f5',
             ],
             default => [],
         };
 
         $badge = match ($id) {
-            'semester' => __('signup.plan.semester.badge'),
-            'annual' => __('signup.plan.annual.badge'),
+            'weekly' => __('signup.plan.weekly.badge'),
+            'monthly' => __('signup.plan.monthly.badge'),
             default => null,
         };
 
@@ -79,6 +81,7 @@ class SignupFlow
             'duration' => __("signup.plan.{$id}.duration"),
             'durationDays' => $days,
             'price' => (float) $def['price'],
+            'priceBrl' => (float) ($def['price_brl'] ?? $def['price']),
             'description' => __("signup.plan.{$id}.desc"),
             'features' => array_map(static fn (string $k) => __($k), $featureKeys),
             'badge' => $badge,
@@ -91,7 +94,7 @@ class SignupFlow
      */
     public static function signupPlansForDisplay(): array
     {
-        $order = ['monthly', 'semester', 'annual'];
+        $order = ['daily', 'weekly', 'monthly'];
         $out = [];
         foreach ($order as $id) {
             $p = self::signupPlanForDisplayById($id);

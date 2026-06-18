@@ -120,6 +120,7 @@ class AddonController extends Controller
 
         $unitPrice = SignupFlow::addonPricePerMateria();
         $totalPrice = $unitPrice * count($materiasIds);
+        $totalPriceBrl = SignupFlow::addonPricePerMateriaBrl() * count($materiasIds);
         $orderId = 'ADDON-'.time().'-'.random_int(1000, 9999);
 
         CheckoutDraftSession::saveAddonDraft(
@@ -142,8 +143,11 @@ class AddonController extends Controller
             'orderId' => $orderId,
             'unitPrice' => $unitPrice,
             'totalPrice' => $totalPrice,
+            'totalPriceBrl' => $totalPriceBrl,
             'totalPriceFormatted' => PricingDisplay::formatArsForCheckout($totalPrice),
+            'totalPriceBrlFormatted' => PricingDisplay::formatArsForCheckout($totalPriceBrl),
             'unitPriceFormatted' => PricingDisplay::formatArsForCheckout($unitPrice),
+            'unitPriceBrlFormatted' => PricingDisplay::formatArsForCheckout(SignupFlow::addonPricePerMateriaBrl()),
             'settlementFormatted' => PricingDisplay::formatArsSettlement($totalPrice),
             'user' => $user,
             'countries' => Countries::forSelect(),

@@ -1,25 +1,29 @@
 <?php
 
 return [
-    'addon_price_per_materia' => 0.01,
-    'addon_fallback_plan_id' => 'semester',
+    'addon_price_per_materia' => 29.90,
+    'addon_price_per_materia_brl' => 5.90,
+    'addon_fallback_plan_id' => 'weekly',
     'plans' => [
+        'daily' => [
+            'id' => 'daily',
+            'days' => 1,
+            'price' => 4000,
+            'price_brl' => 14.90,
+            'popular' => false,
+        ],
+        'weekly' => [
+            'id' => 'weekly',
+            'days' => 7,
+            'price' => 10000,
+            'price_brl' => 35.90,
+            'popular' => true,
+        ],
         'monthly' => [
             'id' => 'monthly',
             'days' => 30,
-            'price' => 0.01,
-            'popular' => false,
-        ],
-        'semester' => [
-            'id' => 'semester',
-            'days' => 180,
-            'price' => 0.01,
-            'popular' => true,
-        ],
-        'annual' => [
-            'id' => 'annual',
-            'days' => 365,
-            'price' => 0.01,
+            'price' => 15000,
+            'price_brl' => 54.90,
             'popular' => false,
         ],
     ],
