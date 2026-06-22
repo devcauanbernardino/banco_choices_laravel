@@ -1,7 +1,7 @@
 {
   "titulo": "Patología II",
-  "subtitulo": "2º Parcial · 2024 · Tema A · Facultad de Medicina UBA",
-  "total_questoes": 8,
+  "subtitulo": "2º Parcial 2024 (Tema A) + Examen Final 21/07/2025 (Tema A) · Facultad de Medicina UBA",
+  "total_questoes": 48,
   "questoes": [
     {
       "numero": 1,
@@ -114,6 +114,566 @@
       "nota": null,
       "resposta_correta": "B",
       "feedback": "Resposta correta: B. A NASH compartilha o padrão histológico clássico da doença hepática alcoólica: esteatose, balonização hepatocitária e corpos de Mallory-Denk (agregados de filamentos intermediários e proteínas), acompanhados de inflamação lobular, mesmo na ausência de consumo significativo de álcool."
+    },
+    {
+      "numero": 9,
+      "pergunta": "¿Cuál es una función normal de la proteína alterada en el síndrome de Marfan?",
+      "opcoes": [
+        {"letra": "A", "texto": "Hidroxilación de residuos de lisina en síntesis de colágeno"},
+        {"letra": "B", "texto": "Regulación del clivaje de los extremos del procolágeno"},
+        {"letra": "C", "texto": "Organización de la lámina en la membrana basal"},
+        {"letra": "D", "texto": "Regulación de la biodisponibilidad y actividad del TGF-β"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original — resposta determinada por conhecimento de patologia.] Resposta correta: D. A fibrilina-1, proteína alterada no Marfan, forma microfibrilas na matriz extracelular que sequestram TGF-β em forma latente; sua disfunção libera excesso de TGF-β ativo, contribuindo para as manifestações vasculares e esqueléticas da síndrome."
+    },
+    {
+      "numero": 10,
+      "pergunta": "¿Cuál es la afección estructural en el síndrome de Ehlers-Danlos tipo vascular?",
+      "opcoes": [
+        {"letra": "A", "texto": "Mutación en la fibrilina-2"},
+        {"letra": "B", "texto": "Déficit de espectrina"},
+        {"letra": "C", "texto": "Defecto del colágeno tipo III"},
+        {"letra": "D", "texto": "Deficiencia de lisil hidroxilasa"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: C. O Ehlers-Danlos tipo vascular é causado por mutações no gene COL3A1, que codifica o colágeno tipo III, componente estrutural fundamental de vasos e órgãos ocos, explicando o alto risco de ruptura arterial e visceral nesse subtipo."
+    },
+    {
+      "numero": 11,
+      "pergunta": "¿Qué lesión es más probable hallar en la enfermedad de Wilson?",
+      "opcoes": [
+        {"letra": "A", "texto": "Desprendimiento de retina"},
+        {"letra": "B", "texto": "Pérdida neuronal en el putamen"},
+        {"letra": "C", "texto": "Nódulos de Kimmelstiel-Wilson"},
+        {"letra": "D", "texto": "Fibrosis de acinos pancreáticos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. O acúmulo de cobre na doença de Wilson lesiona preferencialmente os núcleos da base, sobretudo o putamen, causando perda neuronal e manifestações extrapiramidais; os nódulos de Kimmelstiel-Wilson são da nefropatia diabética (nome semelhante, mas doença distinta)."
+    },
+    {
+      "numero": 12,
+      "pergunta": "¿Cuál de las siguientes opciones es una de las principales manifestaciones de la hemocromatosis?",
+      "opcoes": [
+        {"letra": "A", "texto": "Anemia hemolítica"},
+        {"letra": "B", "texto": "Miocardiopatía"},
+        {"letra": "C", "texto": "Parkinsonismo"},
+        {"letra": "D", "texto": "Diabetes insípida"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. O depósito de ferro no miocárdio na hemocromatose causa miocardiopatia restritiva/dilatada, parte da tríade clássica junto à cirrose e ao diabetes mellitus (\"diabetes bronzeada\") — não diabetes insípida, parkinsonismo nem anemia hemolítica."
+    },
+    {
+      "numero": 13,
+      "pergunta": "¿Cuál es un mecanismo fisiopatogénico de la esteatosis en la malnutrición proteica?",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumento compensatorio de síntesis lipídica"},
+        {"letra": "B", "texto": "Acumulación intrahepatocitaria de toxinas"},
+        {"letra": "C", "texto": "Disminución de síntesis de lipoproteínas"},
+        {"letra": "D", "texto": "Incremento de la beta oxidación de triglicéridos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: C. Na malnutrição proteica (kwashiorkor), a síntese reduzida de apolipoproteínas compromete a formação de VLDL, impedindo a exportação hepática de triglicerídeos e causando seu acúmulo intra-hepatocitário (esteatose)."
+    },
+    {
+      "numero": 14,
+      "pergunta": "¿Cuál de las siguientes opciones es una manifestación más probable de insuficiencia cardíaca izquierda pura?",
+      "opcoes": [
+        {"letra": "A", "texto": "Ascitis y edema pulmonar"},
+        {"letra": "B", "texto": "Esplenomegalia congestiva"},
+        {"letra": "C", "texto": "Hígado de nuez moscada"},
+        {"letra": "D", "texto": "Esputo con trazas de sangre"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. A insuficiência cardíaca esquerda pura causa congestão pulmonar (edema, hemorragias alveolares e escarro hemoptoico); ascite, esplenomegalia congestiva e fígado em noz-moscada são manifestações de congestão sistêmica/insuficiência cardíaca direita."
+    },
+    {
+      "numero": 15,
+      "pergunta": "Paciente con tuberculosis presenta fiebre, pérdida de peso y sudoración nocturna. ¿Cuál es la lesión pulmonar más probable asociada a su patología?",
+      "opcoes": [
+        {"letra": "A", "texto": "Múltiples abscesos en el ápice"},
+        {"letra": "B", "texto": "Complejo de Ranke en campo medio"},
+        {"letra": "C", "texto": "Trasudado intraalveolar afectado"},
+        {"letra": "D", "texto": "Cavitaciones en lóbulo superior"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. O quadro sistêmico (febre, perda de peso, sudoração noturna) sugere tuberculose secundária/de reativação, cuja lesão característica são cavitações nos lobos superiores (zonas de maior tensão de O2), distinta do complexo de Ranke (cicatriz da TB primária, geralmente em campos médios/inferiores)."
+    },
+    {
+      "numero": 16,
+      "pergunta": "¿Cuál de los siguientes mecanismos etiopatogénicos es MENOS probable en la neumoconiosis de los trabajadores del carbón?",
+      "opcoes": [
+        {"letra": "A", "texto": "Activación de macrófagos a células epitelioides"},
+        {"letra": "B", "texto": "Ruptura de tabiques alveolares y capilares"},
+        {"letra": "C", "texto": "Depósito de partículas en linfáticos regionales"},
+        {"letra": "D", "texto": "Proliferación fibroblástica y síntesis de colágeno"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B (menos provável). A fibrogênese da neumoconiose dos trabalhadores do carvão envolve ativação macrofágica, depósito de partículas em linfáticos e fibrose progressiva por proliferação fibroblástica; a ruptura direta de septos alveolares e capilares não é um mecanismo central dessa doença."
+    },
+    {
+      "numero": 17,
+      "pergunta": "¿Qué sustancia se asocia MENOS probablemente al cáncer de pulmón?",
+      "opcoes": [
+        {"letra": "A", "texto": "Asbesto"},
+        {"letra": "B", "texto": "Carbón"},
+        {"letra": "C", "texto": "Sílice"},
+        {"letra": "D", "texto": "Berilio"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. Embora a poeira de carvão cause pneumoconiose/fibrose, sua associação com câncer de pulmão é bem mais fraca do que a do asbesto, sílice e berílio, todos carcinógenos pulmonares reconhecidos."
+    },
+    {
+      "numero": 18,
+      "pergunta": "¿Cuál de las siguientes opciones es una de las complicaciones principales del déficit de vitamina C?",
+      "opcoes": [
+        {"letra": "A", "texto": "Anemia hemolítica"},
+        {"letra": "B", "texto": "Desgarro vascular"},
+        {"letra": "C", "texto": "Trombosis sistémica"},
+        {"letra": "D", "texto": "Plaquetopenia sintomática"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. A vitamina C é cofator da hidroxilação do colágeno; sua deficiência (escorbuto) fragiliza a parede vascular, causando sangramentos e desgarro vascular, e não trombose, plaquetopenia ou hemólise."
+    },
+    {
+      "numero": 19,
+      "pergunta": "¿Cuál de las siguientes complicaciones es un criterio diagnóstico de lupus eritematoso sistémico?",
+      "opcoes": [
+        {"letra": "A", "texto": "Malnutrición por déficit"},
+        {"letra": "B", "texto": "Convulsiones"},
+        {"letra": "C", "texto": "Artritis erosiva"},
+        {"letra": "D", "texto": "Estenosis mitral"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. As convulsões integram os critérios neurológicos de classificação do LES; a artrite do lúpus é caracteristicamente não erosiva (diferente da artrite reumatoide), e a estenose mitral não é um critério diagnóstico de lúpus."
+    },
+    {
+      "numero": 20,
+      "pergunta": "¿Cuál de las siguientes opciones es más probable como causa de derrame pleural transudado?",
+      "opcoes": [
+        {"letra": "A", "texto": "Empiema tuberculoso"},
+        {"letra": "B", "texto": "Insuficiencia cardíaca"},
+        {"letra": "C", "texto": "Neumonía bacteriana"},
+        {"letra": "D", "texto": "Fiebre reumática"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. A insuficiência cardíaca causa derrame transudativo por aumento da pressão hidrostática capilar; empiema e neumonia bacteriana geram exsudatos (processo inflamatório/infeccioso com aumento de permeabilidade capilar)."
+    },
+    {
+      "numero": 21,
+      "pergunta": "Habiendo utilizado H&E y PAS, ¿qué técnica diagnóstica es más importante para evaluar el grado de lesión renal en paciente con sospecha de lupus eritematoso sistémico?",
+      "opcoes": [
+        {"letra": "A", "texto": "Hibridación in situ fluorescente (FISH)"},
+        {"letra": "B", "texto": "Citometría de flujo"},
+        {"letra": "C", "texto": "Inmunofluorescencia"},
+        {"letra": "D", "texto": "Secuenciación genómica"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: C. A imunofluorescência direta detecta o padrão de depósito de imunocomplexos (IgG, IgA, IgM, C3, C1q — \"full house\") na nefrite lúpica, sendo essencial junto à microscopia óptica e eletrônica para classificar o grau de lesão renal."
+    },
+    {
+      "numero": 22,
+      "pergunta": "¿Qué lesión es más probable hallarse en fibrosis quística?",
+      "opcoes": [
+        {"letra": "A", "texto": "Atrofia de glándulas sudoríparas"},
+        {"letra": "B", "texto": "Infiltración linfocítica de glándulas salivales"},
+        {"letra": "C", "texto": "Inflamación de mucosa de senos paranasales"},
+        {"letra": "D", "texto": "Obstrucción de conductos deferentes"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. Na fibrose cística, secreções espessas obstruem os conductos deferentes, causando azoospermia obstrutiva e infertilidade masculina em praticamente todos os pacientes — um achado característico e quase universal da doença."
+    },
+    {
+      "numero": 23,
+      "pergunta": "¿Qué característica distingue fundamentalmente a un tumor maligno de uno benigno?",
+      "opcoes": [
+        {"letra": "A", "texto": "Velocidad de crecimiento"},
+        {"letra": "B", "texto": "Tamaño de la masa"},
+        {"letra": "C", "texto": "Ausencia de la cápsula fibrosa"},
+        {"letra": "D", "texto": "Capacidad de invasión local"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. A capacidade de invasão local (e à distância/metástase) é a característica definidora e fundamental da malignidade; velocidade de crescimento, tamanho e presença/ausência de cápsula são achados frequentes, porém não definidores nem universais."
+    },
+    {
+      "numero": 24,
+      "pergunta": "En una ampolla cutánea secundaria a quemadura reciente de evolución ¿qué patrón inflamatorio es más probable observar?",
+      "opcoes": [
+        {"letra": "A", "texto": "Acumulación de líquido entre epidermis y dermis"},
+        {"letra": "B", "texto": "Infiltrado denso de neutrófilos en la dermis"},
+        {"letra": "C", "texto": "Depósito de fibrina sobre la epidermis lesionada"},
+        {"letra": "D", "texto": "Migración de monocitos en los bordes de la lesión"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. A bolha (ampolla) de uma queimadura recente corresponde ao acúmulo de exsudato seroso entre a epiderme lesionada e a derme, formando a clivagem subepidérmica característica dessa fase inflamatória aguda."
+    },
+    {
+      "numero": 25,
+      "pergunta": "¿Cuál de las siguientes neoplasias es más frecuente en niños de 10 a 14 años?",
+      "opcoes": [
+        {"letra": "A", "texto": "Tumor de Wilms"},
+        {"letra": "B", "texto": "Hepatoblastoma"},
+        {"letra": "C", "texto": "Linfoma"},
+        {"letra": "D", "texto": "Neuroblastoma"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "[Sem gabarito no PDF original; o enunciado do PDF menciona \"tejido tiroideo\", mas nenhuma das alternativas é uma neoplasia tireoidiana — possível erro de transcrição na fonte. Mantive a pergunta como uma questão geral sobre neoplasias mais frequentes nessa faixa etária.] Resposta correta: C. Tumor de Wilms, hepatoblastoma e neuroblastoma são tipicamente diagnosticados em crianças pequenas (geralmente <5 anos); já o linfoma (sobretudo Hodgkin) tem incidência crescente justamente na pré-adolescência/adolescência (10-14 anos), tornando-se a opção mais compatível com essa faixa etária."
+    },
+    {
+      "numero": 26,
+      "pergunta": "¿Qué mecanismo inmunológico se observa típicamente en la lepra lepromatosa?",
+      "opcoes": [
+        {"letra": "A", "texto": "Activación de linfocitos T CD8+"},
+        {"letra": "B", "texto": "Débil activación de perfil Th1"},
+        {"letra": "C", "texto": "Predominio de respuesta de Th1"},
+        {"letra": "D", "texto": "Hipersensibilidad tipo II"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original; a opção B no PDF dizia \"Th2\", o que pareceu erro de transcrição — corrigi para \"Th1\", que é a leitura clinicamente coerente.] Resposta correta: B. Na lepra lepromatosa há anergia/fraca resposta celular Th1 (imunidade celular ineficaz contra o M. leprae), com resposta humoral (Th2) relativamente preservada mas ineficaz para controlar a infecção intracelular — o oposto ocorre na forma tuberculoide, onde predomina Th1 (opção C, que descreve a forma tuberculoide, não a lepromatosa)."
+    },
+    {
+      "numero": 27,
+      "pergunta": "¿Cuál es una causa de atrofia celular?",
+      "opcoes": [
+        {"letra": "A", "texto": "Oclusión aguda de la vasculatura"},
+        {"letra": "B", "texto": "Presencia de inflamación aguda"},
+        {"letra": "C", "texto": "Compresión por tumor benigno"},
+        {"letra": "D", "texto": "Exceso de estimulación endocrina"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: C. A compressão crônica por um tumor benigno (ou qualquer massa) reduz progressivamente o aporte sanguíneo/espaço ao tecido adjacente, causando atrofia por desuso/isquemia crônica; oclusão vascular aguda e inflamação aguda causam necrose, não atrofia, e excesso de estímulo endócrino causa hipertrofia/hiperplasia."
+    },
+    {
+      "numero": 28,
+      "pergunta": "¿Cuál de las siguientes complicaciones es más probable en un paciente con enfermedad de Graves?",
+      "opcoes": [
+        {"letra": "A", "texto": "Lesión de la córnea"},
+        {"letra": "B", "texto": "Sequedad cutánea"},
+        {"letra": "C", "texto": "Bradicardia en reposo"},
+        {"letra": "D", "texto": "Aumento de peso"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. A oftalmopatia de Graves causa proptose/exoftalmia, que pode impedir o fechamento palpebral completo, expondo a córnea a ressecamento e lesão (queratopatia de exposição); o hipertireoidismo causa pele quente e úmida, taquicardia e perda de peso — o oposto das demais opções."
+    },
+    {
+      "numero": 29,
+      "pergunta": "¿Qué patrón morfológico es más probable observar en un pulmón de una persona con tabaquismo?",
+      "opcoes": [
+        {"letra": "A", "texto": "Eritrocitos extravasados a alvéolos"},
+        {"letra": "B", "texto": "Nódulos de colágeno denso"},
+        {"letra": "C", "texto": "Calcificación distrófica de la pleura"},
+        {"letra": "D", "texto": "Ruptura de tabiques alveolares"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. O tabagismo é a principal causa de enfisema centroacinar, caracterizado pela destruição/ruptura de septos alveolares e aumento dos espaços aéreos distais aos bronquíolos terminais."
+    },
+    {
+      "numero": 30,
+      "pergunta": "Una persona con sangre A– recibe transfusión de sangre B+. Desarrolla hemólisis intravascular. ¿Cuál es el mecanismo inmunológico involucrado en el evento?",
+      "opcoes": [
+        {"letra": "A", "texto": "Inflamación mediada por el complemento"},
+        {"letra": "B", "texto": "Citotoxicidad mediada por linfocitos T CD8+"},
+        {"letra": "C", "texto": "Formación de inmunocomplejos circulantes"},
+        {"letra": "D", "texto": "Fagocitosis mediada por receptor Fc"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. A incompatibilidade ABO desencadeia hemólise intravascular aguda mediada por anticorpos IgM naturais anti-A/anti-B que ativam o complemento pela via clássica, formando o complexo de ataque à membrana e lisando diretamente as hemácias transfundidas."
+    },
+    {
+      "numero": 31,
+      "pergunta": "¿Cuál de los siguientes mecanismos es responsable de las lesiones en la enfermedad de Tay-Sachs?",
+      "opcoes": [
+        {"letra": "A", "texto": "Alteración de la pauta de lectura genética"},
+        {"letra": "B", "texto": "Pérdida de la tolerancia inmunitaria"},
+        {"letra": "C", "texto": "Mutación de repetición de tripletes"},
+        {"letra": "D", "texto": "Déficit crónico de oligoelementos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. A mutação mais comum no gene HEXA (doença de Tay-Sachs) é uma inserção que causa alteração do quadro de leitura (frameshift), gerando uma hexosaminidase A não funcional e acúmulo lisossomal de GM2 gangliosídeo nos neurônios; mutações por repetição de trinucleotídeos são características de outras doenças (ex.: Huntington), não do Tay-Sachs."
+    },
+    {
+      "numero": 32,
+      "pergunta": "¿Qué característica macroscópica se observa con mayor probabilidad en un órgano con amiloidosis avanzada?",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumento de tamaño y céreo al corte"},
+        {"letra": "B", "texto": "Consistencia blanda y aspecto friable"},
+        {"letra": "C", "texto": "Pérdida de tejido y presencia de pseudoquistes"},
+        {"letra": "D", "texto": "Calcificación distrófica y cápsula rugosa"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. Órgãos com amiloidose avançada (ex.: fígado, rim, baço) tipicamente aumentam de tamanho e adquirem um aspecto cor de cera (\"céreo\") e firme à superfície de corte, pelo depósito extracelular maciço de material amiloide."
+    },
+    {
+      "numero": 33,
+      "pergunta": "¿Cuál de las siguientes es una causa frecuente de lesión irreversible del miocardio?",
+      "opcoes": [
+        {"letra": "A", "texto": "Trombosis mural"},
+        {"letra": "B", "texto": "Pericarditis fibrinosa"},
+        {"letra": "C", "texto": "Endocarditis aséptica"},
+        {"letra": "D", "texto": "Reperfusión por infarto"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. A lesão por reperfusão (entrada abrupta de oxigênio e cálcio, geração de radicais livres após restabelecimento do fluxo sanguíneo pós-infarto) é uma causa reconhecida de dano miocárdico irreversível adicional, distinta da isquemia inicial."
+    },
+    {
+      "numero": 34,
+      "pergunta": "¿Cuál es el factor de riesgo ambiental más importante para el desarrollo de diabetes tipo 2?",
+      "opcoes": [
+        {"letra": "A", "texto": "Obesidad central"},
+        {"letra": "B", "texto": "Trastorno del sueño"},
+        {"letra": "C", "texto": "Sedentarismo"},
+        {"letra": "D", "texto": "Alteración circulatoria"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. A obesidade central (visceral) é o fator de risco ambiental mais fortemente associado à resistência insulínica e ao desenvolvimento de diabetes mellitus tipo 2, mais relevante que sedentarismo e distúrbios do sono isoladamente."
+    },
+    {
+      "numero": 35,
+      "pergunta": "¿Cuáles son los componentes celulares predominantes en un absceso?",
+      "opcoes": [
+        {"letra": "A", "texto": "Neutrófilos con detritos celulares"},
+        {"letra": "B", "texto": "Células epitelioides rodeadas de leucocitos"},
+        {"letra": "C", "texto": "Linfocitos B organizados en folículos"},
+        {"letra": "D", "texto": "Linfocitos T y polvillo nuclear"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. O abscesso é definido por uma coleção localizada de neutrófilos necróticos (pus) com detritos celulares e tecido liquefeito, achado central da inflamação supurativa; células epitelioides organizadas caracterizam granulomas, não abscessos."
+    },
+    {
+      "numero": 36,
+      "pergunta": "¿Qué característica microscópica es más probable observar en un infarto pulmonar?",
+      "opcoes": [
+        {"letra": "A", "texto": "Fibrosis difusa"},
+        {"letra": "B", "texto": "Hematíes extravasados"},
+        {"letra": "C", "texto": "Macrófagos activados"},
+        {"letra": "D", "texto": "Necrosis fibrinoide"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. Devido à circulação dupla (bronquial e pulmonar) do pulmão, seus infartos são tipicamente hemorrágicos (vermelhos), com extensa extravasação de hemácias para o parênquima necrótico, diferente do infarto pálido típico de órgãos com circulação única (como rim e coração)."
+    },
+    {
+      "numero": 37,
+      "pergunta": "¿Cuál de las siguientes afecciones patológicas está mayormente asociada al desarrollo de linfoma?",
+      "opcoes": [
+        {"letra": "A", "texto": "Síndrome de Sjögren"},
+        {"letra": "B", "texto": "Esófago de Barrett"},
+        {"letra": "C", "texto": "Hepatitis viral"},
+        {"letra": "D", "texto": "Liquen escleroso"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. A inflamação crônica autoimune das glândulas salivares/lacrimais no Sjögren está classicamente associada a maior risco de linfoma tipo MALT (e linfoma B em geral), de forma mais direta do que as demais condições listadas, que se associam principalmente a adenocarcinoma (Barrett), carcinoma hepatocelular (hepatite viral) ou carcinoma escamoso (liquen escleroso)."
+    },
+    {
+      "numero": 38,
+      "pergunta": "Teniendo en cuenta la tríada de Virchow: ¿qué afección tiene MENOS relevancia en el desarrollo de un trombo mural tras un IAM?",
+      "opcoes": [
+        {"letra": "A", "texto": "Hipercoagulabilidad sistémica"},
+        {"letra": "B", "texto": "Disquinesia cardíaca"},
+        {"letra": "C", "texto": "Lesión endocárdica"},
+        {"letra": "D", "texto": "Hipomotilidad ventricular"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original; reordenei as alternativas para destacar a comparação.] Resposta correta: A (menos relevante). No trombo mural pós-IAM, os fatores dominantes da tríade de Virchow são mecânicos e locais: lesão endocárdica sobre a área infartada e estase por hipomotilidade/disquinesia do segmento acinético; a hipercoagulabilidade sistêmica, embora presente como fator geral de risco trombótico, é menos diretamente determinante nesse cenário específico do que os fatores mecânicos locais."
+    },
+    {
+      "numero": 39,
+      "pergunta": "¿Cuál de las siguientes opciones describe de forma más adecuada el tumor epitelial benigno que forma proyecciones digitiformes revestidas por epitelio escamoso?",
+      "opcoes": [
+        {"letra": "A", "texto": "Papiloma"},
+        {"letra": "B", "texto": "Fibrina"},
+        {"letra": "C", "texto": "Adenocarcinoma"},
+        {"letra": "D", "texto": "Cistoadenoma"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. O papiloma é, por definição, um tumor epitelial benigno que forma projeções digitiformes (papilas) revestidas por epitélio (frequentemente escamoso), como nos papilomas cutâneos ou laríngeos."
+    },
+    {
+      "numero": 40,
+      "pergunta": "En la respuesta de fase aguda de la inflamación ¿cuál es el principal efecto sistémico inducido por IL-1 y TNF?",
+      "opcoes": [
+        {"letra": "A", "texto": "Hipocalcemia"},
+        {"letra": "B", "texto": "Fiebre"},
+        {"letra": "C", "texto": "Hipoglucemia"},
+        {"letra": "D", "texto": "Anemia"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. IL-1 e TNF atuam no hipotálamo estimulando a síntese de prostaglandinas que elevam o ponto de ajuste térmico, sendo os principais responsáveis pela febre na resposta de fase aguda."
+    },
+    {
+      "numero": 41,
+      "pergunta": "¿Qué bacteria es más relevante como causa de neumonía adquirida en la comunidad en adultos?",
+      "opcoes": [
+        {"letra": "A", "texto": "Streptococcus pneumoniae"},
+        {"letra": "B", "texto": "Klebsiella pneumoniae"},
+        {"letra": "C", "texto": "Pseudomonas aeruginosa"},
+        {"letra": "D", "texto": "Staphylococcus saprophyticus"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original; uma alternativa do PDF original ficou ilegível/cortada e foi omitida.] Resposta correta: A. Streptococcus pneumoniae continua sendo, de forma destacada, a causa bacteriana mais comum de pneumonia adquirida na comunidade em adultos imunocompetentes."
+    },
+    {
+      "numero": 42,
+      "pergunta": "¿Qué opción describe mejor el \"efecto Warburg\"?",
+      "opcoes": [
+        {"letra": "A", "texto": "Activación de oncogenes que promueven la inflamación"},
+        {"letra": "B", "texto": "Incremento de la apoptosis celular por estrés oxidativo"},
+        {"letra": "C", "texto": "Captación aumentada de ácidos grasos para síntesis de membrana"},
+        {"letra": "D", "texto": "Preferencia de las células tumorales por glucólisis aeróbica"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. O efeito Warburg descreve a tendência das células tumorais de utilizar predominantemente a glicólise aeróbica (produção de lactato mesmo em presença de oxigênio) como fonte de energia e de intermediários biossintéticos, em vez da fosforilação oxidativa mitocondrial completa."
+    },
+    {
+      "numero": 43,
+      "pergunta": "¿Qué patrón morfológico es más probable hallar en el hígado tras la exposición prolongada a arsénico?",
+      "opcoes": [
+        {"letra": "A", "texto": "Trombosis portal"},
+        {"letra": "B", "texto": "Hepatomegalia"},
+        {"letra": "C", "texto": "Hepatoblastoma"},
+        {"letra": "D", "texto": "Infartos hemorrágicos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. A exposição crônica ao arsênico está associada a hepatomegalia e hipertensão portal não cirrótica, além de risco aumentado de angiossarcoma hepático a longo prazo — diferente de hepatoblastoma (tumor predominantemente pediátrico sem essa associação)."
+    },
+    {
+      "numero": 44,
+      "pergunta": "¿Cuál de las siguientes complicaciones es más probable encontrar en un paciente expuesto al cadmio?",
+      "opcoes": [
+        {"letra": "A", "texto": "Osteoporosis"},
+        {"letra": "B", "texto": "Sinovitis gotosa"},
+        {"letra": "C", "texto": "Artritis reumatoide"},
+        {"letra": "D", "texto": "Condrosarcoma"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: A. A intoxicação crônica por cádmio (doença de Itai-itai) causa disfunção tubular renal com perda de cálcio e fosfato, levando a osteomalácia/osteoporose e fraturas, além de nefropatia — não é causa reconhecida de gota, artrite reumatoide ou condrossarcoma."
+    },
+    {
+      "numero": 45,
+      "pergunta": "Un niño de 10 años es llevado a la guardia por fiebre y artralgia. Al examen se constatan inflamación articular y nódulos subcutáneos. Refiere antecedente de infección en vía respiratoria superior. ¿Qué otra lesión es probable hallar en el paciente según la sospecha diagnóstica?",
+      "opcoes": [
+        {"letra": "A", "texto": "Hipertrofia ventricular izquierda por estenosis mitral"},
+        {"letra": "B", "texto": "Movimientos involuntarios que alteran la marcha"},
+        {"letra": "C", "texto": "Úlcera nasal húmeda y perforante de déficit de cicatrización"},
+        {"letra": "D", "texto": "Máculas hiperpigmentadas en tronco y miembros"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: B. O quadro (febre, poliartrite migratória, nódulos subcutâneos após faringite estreptocócica) é compatível com febre reumática aguda; a coreia de Sydenham, manifestada por movimentos involuntários que alteram a marcha, é um dos critérios maiores de Jones, junto à cardite, poliartrite, nódulos subcutâneos e eritema marginado. A estenose mitral é complicação tardia/crônica, não achado agudo concomitante."
+    },
+    {
+      "numero": 46,
+      "pergunta": "¿Qué característica microscópica es más probable hallar en un tejido con calcificación metastásica, coloreado con H&E?",
+      "opcoes": [
+        {"letra": "A", "texto": "Proliferación tisular de osteoblastos"},
+        {"letra": "B", "texto": "Cristales de oxalato en líquido sinovial"},
+        {"letra": "C", "texto": "Síntesis de matriz osteoide en áreas de necrosis"},
+        {"letra": "D", "texto": "Depósitos de gránulos amorfos basófilos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. A calcificação metastásica (depósito de cálcio em tecido normal, por hipercalcemia sistêmica) aparece à H&E como depósitos granulares amorfos de coloração basófila (roxo-azulada), sem relação com proliferação osteoblástica ou matriz osteoide, que são achados de ossificação verdadeira."
+    },
+    {
+      "numero": 47,
+      "pergunta": "¿Qué tinción especializada permite confirmar la presencia de hongos en un corte histológico?",
+      "opcoes": [
+        {"letra": "A", "texto": "Rojo congo"},
+        {"letra": "B", "texto": "Azul de metileno"},
+        {"letra": "C", "texto": "Tricrómico de Masson"},
+        {"letra": "D", "texto": "Ácido peryódico de Schiff"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: D. O PAS (ácido periódico de Schiff) cora os polissacarídeos da parede celular fúngica, sendo uma das colorações especiais clássicas para confirmar a presença de fungos em cortes histológicos (junto à prata-metenamina de Grocott); rojo congo é específico para amiloide e tricrômico de Masson para colágeno/fibrose."
+    },
+    {
+      "numero": 48,
+      "pergunta": "¿Cuál de las siguientes causas se asocia a una mayor probabilidad de generar un déficit de vitaminas liposolubles?",
+      "opcoes": [
+        {"letra": "A", "texto": "Ingesta disminuida de cítricos"},
+        {"letra": "B", "texto": "Diátesis hemorrágica"},
+        {"letra": "C", "texto": "Trastorno multisistémico (ej. fibrosis quística)"},
+        {"letra": "D", "texto": "Malnutrición por exceso"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "[Sem gabarito no PDF original.] Resposta correta: C. Doenças multissistêmicas com má absorção de gorduras (como a fibrose quística, por insuficiência pancreática exócrina) comprometem a absorção das vitaminas liposolúveis (A, D, E, K); ingestão reduzida de cítricos afeta a vitamina C (hidrossolúvel), e a diátese hemorrágica é consequência (não causa) do déficit de vitamina K."
     }
   ]
 }
