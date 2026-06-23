@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Faculdade;
 use App\Models\Materia;
 use App\Services\Questions\QuestionExamBuilder;
+use App\Support\QuestionBankLocator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,7 +17,7 @@ class CatalogoAjaxController extends Controller
     {
         /** @var \App\Models\User $user */
         $user = Auth::user();
-        $owned = collect($user->materias()->pluck('materias.id')->all())->unique()->filter(fn ($id) => (int) $id > 0)->values();
+        $owned = collect(QuestionBankLocator::filterIdsWithBank($user->materias()->pluck('materias.id')->all()))->unique()->values();
 
         $q = Faculdade::query()->where('ativo', true)->orderBy('ordem');
         $q->whereHas('agrupamentos.materias', function ($wq) use ($owned) {
@@ -32,7 +33,7 @@ class CatalogoAjaxController extends Controller
     {
         /** @var \App\Models\User $user */
         $user = Auth::user();
-        $owned = collect($user->materias()->pluck('materias.id')->all())->unique()->values();
+        $owned = collect(QuestionBankLocator::filterIdsWithBank($user->materias()->pluck('materias.id')->all()))->unique()->values();
 
         $fid = (int) $request->query('faculdade_id');
         if ($fid <= 0) {
@@ -65,7 +66,7 @@ class CatalogoAjaxController extends Controller
             return response()->json(['data' => []], 401);
         }
 
-        $owned = $user->materias()->pluck('materias.id')->all();
+        $owned = QuestionBankLocator::filterIdsWithBank($user->materias()->pluck('materias.id')->all());
 
         $q = Materia::query()
             ->where('agrupamento_id', $aid)
