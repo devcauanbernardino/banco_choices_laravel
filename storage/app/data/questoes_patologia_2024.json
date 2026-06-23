@@ -1,7 +1,7 @@
 {
     "titulo": "Patología II",
     "subtitulo": "2º Parcial 2024 (Tema A) + Examen Final 21\/07\/2025 (Tema A) + Compilado de Choices 2020 (varias comisiones) · Facultad de Medicina UBA",
-    "total_questoes": 116,
+    "total_questoes": 126,
     "questoes": [
         {
             "numero": 1,
@@ -3018,6 +3018,266 @@
             "nota": null,
             "resposta_correta": "D",
             "feedback": "Resposta correta: D. A insulite (infiltração de linfócitos T nas ilhotas), mediada por citocinas como o interferon-gama, ocorre anos antes da manifestação clínica do diabetes tipo 1, junto à presença de autoanticorpos anti-ilhota e associação com HLA-DR3\/DR4 — fase pré-clínica autoimune típica do DM1."
+        },
+        {
+            "numero": 117,
+            "pergunta": "Em que se baseia a principal diferença entre calcificação distrófica e calcificação metastásica?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Níveis séricos de cálcio"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Idade do paciente"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Atividade metabólica do tecido"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Velocidade do depósito"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "A",
+            "feedback": "Resposta correta: A. Na calcificação distrófica, o cálcio sérico é normal e o depósito ocorre em tecido lesado\/necrótico; na metastásica, há hipercalcemia sistêmica que leva ao depósito de cálcio mesmo em tecido normal."
+        },
+        {
+            "numero": 118,
+            "pergunta": "Qual das seguintes é uma causa de atrofia celular?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Diminuição da autofagia"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Diminuição da irrigação sanguínea"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Defeitos na permeabilidade de membrana"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Hiperprodução crônica de TGF-β"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "B",
+            "feedback": "Resposta correta: B. A redução gradual do aporte sanguíneo (isquemia crônica) é causa clássica de atrofia tecidual; a autofagia, ao contrário, geralmente está aumentada na atrofia (não diminuída), como mecanismo adaptativo."
+        },
+        {
+            "numero": 119,
+            "pergunta": "O que é a colesterolose da vesícula biliar?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Acúmulo de células espumosas na lâmina própria da vesícula biliar"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Acúmulo de macrófagos carregados de colesterol em áreas de lesão celular e inflamação, por fagocitose do colesterol de membranas danificadas"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Acúmulo de macrófagos carregados de colesterol em pele e tendões, característico de estados hiperlipidêmicos"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Acúmulo de células espumosas em placas de ateroma"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "A",
+            "feedback": "Resposta correta: A. A colesterolose é o acúmulo focal de macrófagos espumosos (carregados de colesterol) na lâmina própria da vesícula biliar, gerando o aspecto característico de \"vesícula em morango\" à macroscopia."
+        },
+        {
+            "numero": 120,
+            "pergunta": "O que são os corpos de Russell, grandes inclusões eosinofílicas e homogêneas?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Depósitos de glicogênio"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Hialina intracelular"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Achados típicos em hepatócitos"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Hialina extracelular"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "B",
+            "feedback": "Resposta correta: B. Os corpos de Russell são acúmulos de imunoglobulina no retículo endoplasmático de plasmócitos, constituindo um exemplo clássico de alteração hialina intracelular."
+        },
+        {
+            "numero": 121,
+            "pergunta": "O que é a coagulação intravascular disseminada (CID)?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Distúrbio trombótico de urgência obstétrica, com formação de coágulos em todo o leito intravascular"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Distúrbio hemorrágico secundário a diversas doenças, com formação de microhemorragias em múltiplos órgãos"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Distúrbio trombo-hemorrágico secundário a diversas doenças, com formação de microtrombos na microcirculação"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Distúrbio trombo-hemorrágico primário, com formação de coágulos em todo o leito intravascular"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "C",
+            "feedback": "Resposta correta: C. A CID é uma complicação trombo-hemorrágica secundária a diversas doenças de base, caracterizada pela ativação difusa da cascata de coagulação formando microtrombos na microcirculação — consumindo plaquetas e fatores de coagulação e gerando sangramento concomitante (coagulopatia de consumo)."
+        },
+        {
+            "numero": 122,
+            "pergunta": "Homem de 53 anos com insuficiência cardíaca congestiva desenvolve pneumonia por S. pneumoniae após gripe; duas semanas depois, apresenta dor pleurítica associada a lesão hemorrágica negruzca que se estende até a pleura, compatível com tromboembolismo de ramo periférico da artéria pulmonar. Qual evento mais provavelmente ocorreu?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Congestão pulmonar aguda"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Congestão pulmonar crônica"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Edema de pulmão"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Infarto de pulmão"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "D",
+            "feedback": "Resposta correta: D. A lesão hemorrágica localizada com extensão pleural, decorrente de tromboembolismo em ramo arterial pulmonar periférico, é o quadro clássico do infarto pulmonar — hemorrágico devido à perfusão residual pela circulação bronquial colateral."
+        },
+        {
+            "numero": 123,
+            "pergunta": "Homem com cardiomiopatia dilatada e trombo em átrio esquerdo falece; a necropsia mostra no rim uma área pálida, bem delimitada, em forma de cunha, com vértice apontando para o hilo. Qual termo melhor define esse achado renal?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Abscesso"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Infarto isquêmico"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Falência multiorgânica"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Trombose venosa"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "B",
+            "feedback": "Resposta correta: B. A forma de cunha (vértice no hilo, base na periferia) é típica de infarto isquêmico em órgãos com circulação colateral mínima, aqui por embolização de trombo atrial esquerdo para a artéria renal."
+        },
+        {
+            "numero": 124,
+            "pergunta": "Lesão ulcerada crônica da mucosa duodenal: qual padrão histológico é esperado?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Superfície com infiltrado mononuclear e fibrose; base com infiltrado polimorfonuclear\/misto e necrose fibrinoide"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Superfície com infiltrado polimorfonuclear e fragmentos necróticos; base com infiltrado mononuclear, fibroblastos, neovascularização e colágeno"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Superfície com infiltrado polimorfonuclear, vasos hemorrágicos e H. pylori; base com infiltrado mononuclear e proliferação de filetes nervosos"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Superfície com infiltrado mononuclear e fibrina; base com infiltrado polimorfonuclear, vasos de neoformação e hiperplasia glandular"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "B",
+            "feedback": "Resposta correta: B. Nas úlceras crônicas, a superfície reflete inflamação aguda (polimorfonucleares, detritos necróticos), enquanto a base mostra inflamação crônica em reparo (mononucleares, fibroblastos, neovascularização e depósito de colágeno) — um padrão estratificado típico."
+        },
+        {
+            "numero": 125,
+            "pergunta": "Após apendicectomia, um corte da cicatriz corado com tricrômico de Masson mostra colágeno denso com poucos vasos sanguíneos dilatados residuais. Quanto tempo após a cirurgia esse aspecto é esperado?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "2 a 3 dias"
+                },
+                {
+                    "letra": "B",
+                    "texto": "4 a 5 dias"
+                },
+                {
+                    "letra": "C",
+                    "texto": "2 semanas"
+                },
+                {
+                    "letra": "D",
+                    "texto": "1 mês"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "D",
+            "feedback": "Resposta correta: D. Colágeno denso com escassos vasos residuais é o aspecto da fase final da cicatrização, observado por volta de 1 mês; macrófagos e tecido de granulação predominam nos primeiros dias, e neovascularização proeminente entre o 4º-5º dia."
+        },
+        {
+            "numero": 126,
+            "pergunta": "Mulher de 33 anos com letargia crescente e oligúria, creatinina 5,3 mg\/dL. Biópsia renal avaliada por microscopia óptica e eletrônica. Qual alteração morfológica celular sugere necrose tubular aguda (lesão irreversível), e não apenas lesão reversível?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Desagregação de ribossomos"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Tumefação mitocondrial"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Fragmentação nuclear"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Bolhas (blebs) na membrana plasmática"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "C",
+            "feedback": "Resposta correta: C. A fragmentação e perda do núcleo definem a morte celular (necrose); as demais alterações — desagregação ribossomal, tumefação mitocondrial e blebs de membrana — são formas de lesão celular ainda reversível, desde que a integridade de membrana seja mantida."
         }
     ]
 }
