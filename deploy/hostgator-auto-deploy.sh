@@ -67,7 +67,6 @@ rm -f "$REPO/bootstrap/cache/config.php"
 "$PHP" artisan config:clear
 "$PHP" artisan migrate --force
 "$PHP" artisan db:seed --class=CatalogoSeeder --force
-"$PHP" artisan questions:setup-farmaco1cat3 || true # TEMP: remover após confirmar import (Farmacología I Cát. III, 1er Parcial)
 "$PHP" artisan bancodechoices:ensure-test-user
 "$PHP" artisan route:clear
 "$PHP" artisan view:clear
