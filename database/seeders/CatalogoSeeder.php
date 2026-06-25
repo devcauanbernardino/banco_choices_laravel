@@ -218,6 +218,7 @@ class CatalogoSeeder extends Seeder
             ['slug' => 'farmacologia-i', 'nome' => 'Farmacología I'],
             ['slug' => 'farmacologia-ii', 'nome' => 'Farmacología II'],
             ['slug' => 'medicina-i', 'nome' => 'Medicina I'],
+            ['slug' => 'neurocirugia', 'nome' => 'Neurocirugía'],
         ] as $i => $row) {
             DB::table('materias')->updateOrInsert(
                 ['slug' => $row['slug']],

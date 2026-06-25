@@ -2,6 +2,8 @@
 
 namespace App\Support;
 
+use Illuminate\Support\Facades\DB;
+
 final class QuestionBankLocator
 {
     /** @return list<string> */
@@ -18,6 +20,7 @@ final class QuestionBankLocator
             'questoes_patologia_2024.json',
             'questoes_bioetica_2024_2025.json',
             'questoes_farmaco1_cat3.json',
+            'questoes_neurocirugia.json',
         ];
     }
 
@@ -34,8 +37,24 @@ final class QuestionBankLocator
             12 => 'questoes_patologia_2024.json',
             13 => 'questoes_farmaco1_cat3.json',
             16 => 'questoes_bioetica_2024_2025.json',
-            default => 'questoes_materia_'.$materiaId.'.json',
+            default => self::filenameFromSlug($materiaId) ?? 'questoes_materia_'.$materiaId.'.json',
         };
+    }
+
+    /**
+     * Resolve um ficheiro pelo slug da matéria (questoes_<slug-com-underscores>.json),
+     * para que matérias novas não dependam do id auto-incremental coincidir entre ambientes.
+     */
+    private static function filenameFromSlug(int $materiaId): ?string
+    {
+        $slug = DB::table('materias')->where('id', $materiaId)->value('slug');
+        if (! is_string($slug) || trim($slug) === '') {
+            return null;
+        }
+
+        $candidate = 'questoes_'.str_replace('-', '_', $slug).'.json';
+
+        return is_file(storage_path('app/data/'.$candidate)) ? $candidate : null;
     }
 
     public static function resolvePath(int $materiaId): string
@@ -63,7 +82,9 @@ final class QuestionBankLocator
     /** @return list<int> */
     public static function allMateriaIdsWithBank(): array
     {
-        return self::filterIdsWithBank([1, 2, 3, 4, 5, 9, 11, 12, 13, 16]);
+        $ids = DB::table('materias')->pluck('id')->map(fn ($v) => (int) $v)->all();
+
+        return self::filterIdsWithBank($ids);
     }
 
     /**
