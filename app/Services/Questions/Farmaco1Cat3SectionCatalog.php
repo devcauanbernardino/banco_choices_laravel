@@ -7,8 +7,6 @@ namespace App\Services\Questions;
  */
 final class Farmaco1Cat3SectionCatalog
 {
-    public const MATERIA_ID = 10;
-
     public const MATERIA_SLUG = 'farmacologia-i';
 
     public const CATEDRA_SLUG = 'catedra-iii';

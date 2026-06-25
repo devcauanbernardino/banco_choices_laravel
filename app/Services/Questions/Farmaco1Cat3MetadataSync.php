@@ -4,16 +4,29 @@ namespace App\Services\Questions;
 
 use App\Models\Questao;
 use App\Support\QuestionBankLocator;
+use Illuminate\Support\Facades\DB;
 
 final class Farmaco1Cat3MetadataSync
 {
     /**
      * Cria linhas em questoes (se faltarem) e preenche parcial, tema, cátedra e fonte a partir de origem_seccion no JSON.
+     * O id da matéria é resolvido pelo slug (varia entre ambientes — nunca hardcoded).
      *
      * @return array{inserted: int, updated: int, sem_seccion: int, por_parcial: array<string, int>}
      */
-    public static function sync(int $materiaId = Farmaco1Cat3SectionCatalog::MATERIA_ID): array
+    public static function sync(?int $materiaId = null): array
     {
+        $materiaId ??= (int) DB::table('materias')->where('slug', Farmaco1Cat3SectionCatalog::MATERIA_SLUG)->value('id');
+        if ($materiaId <= 0) {
+            throw new \RuntimeException('Matéria farmacologia-i não encontrada. Execute php artisan db:seed --class=CatalogoSeeder.');
+        }
+
+        // Corrige linhas gravadas por engano sob outro materia_id em execuções anteriores (bug de id hardcoded).
+        Questao::query()
+            ->where('fonte', Farmaco1Cat3SectionCatalog::FONTE)
+            ->where('materia_id', '!=', $materiaId)
+            ->update(['materia_id' => $materiaId]);
+
         $lista = QuestionBankLocator::loadCanonicalList($materiaId);
         if ($lista === []) {
             throw new \RuntimeException(

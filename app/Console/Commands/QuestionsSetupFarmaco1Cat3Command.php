@@ -4,8 +4,10 @@ namespace App\Console\Commands;
 
 use App\Services\Questions\Farmaco1Cat3CatalogInstaller;
 use App\Services\Questions\Farmaco1Cat3MetadataSync;
+use App\Services\Questions\Farmaco1Cat3SectionCatalog;
 use App\Support\QuestionBankLocator;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
 
 class QuestionsSetupFarmaco1Cat3Command extends Command
 {
@@ -15,13 +17,6 @@ class QuestionsSetupFarmaco1Cat3Command extends Command
 
     public function handle(): int
     {
-        $jsonPath = QuestionBankLocator::resolvePath(10);
-        if (! is_file($jsonPath)) {
-            $this->error('JSON ausente: '.$jsonPath);
-
-            return self::FAILURE;
-        }
-
         try {
             Farmaco1Cat3CatalogInstaller::ensureCatalog();
         } catch (\Throwable $e) {
@@ -31,10 +26,19 @@ class QuestionsSetupFarmaco1Cat3Command extends Command
             return self::FAILURE;
         }
 
+        $materiaId = (int) DB::table('materias')->where('slug', Farmaco1Cat3SectionCatalog::MATERIA_SLUG)->value('id');
+
+        $jsonPath = QuestionBankLocator::resolvePath($materiaId);
+        if (! is_file($jsonPath)) {
+            $this->error('JSON ausente: '.$jsonPath);
+
+            return self::FAILURE;
+        }
+
         $this->info('Catálogo: matéria farmacologia-i · Cátedra III');
 
         try {
-            $stats = Farmaco1Cat3MetadataSync::sync();
+            $stats = Farmaco1Cat3MetadataSync::sync($materiaId);
         } catch (\Throwable $e) {
             $this->error($e->getMessage());
 
