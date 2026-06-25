@@ -17,6 +17,7 @@ final class QuestionBankLocator
             'questoes_imunologia_2024_2025.json',
             'questoes_patologia_2024.json',
             'questoes_bioetica_2024_2025.json',
+            'questoes_farmaco1_cat3.json',
         ];
     }
 
@@ -29,6 +30,7 @@ final class QuestionBankLocator
             4 => 'biologia_cbc_1parcial_2022.json',
             5 => 'questoes_farmaco2_cat3.json',
             9 => 'questoes_fisiologia_2022.json',
+            10 => 'questoes_farmaco1_cat3.json',
             11 => 'questoes_imunologia_2024_2025.json',
             12 => 'questoes_patologia_2024.json',
             16 => 'questoes_bioetica_2024_2025.json',
@@ -61,7 +63,7 @@ final class QuestionBankLocator
     /** @return list<int> */
     public static function allMateriaIdsWithBank(): array
     {
-        return self::filterIdsWithBank([1, 2, 3, 4, 5, 9, 11, 12, 16]);
+        return self::filterIdsWithBank([1, 2, 3, 4, 5, 9, 10, 11, 12, 16]);
     }
 
     /**

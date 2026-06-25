@@ -236,6 +236,7 @@ class CatalogoSeeder extends Seeder
             ['inmunologia-humana', 'catedra-ii', 'Cátedra II', 2],
             ['microbiologia-y-parasitologia', 'catedra-i', 'Cátedra I', 1],
             ['microbiologia-y-parasitologia', 'catedra-ii', 'Cátedra II', 2],
+            ['farmacologia-i', 'catedra-iii', 'Cátedra III', 1],
         ] as [$mSlug, $cSlug, $cNome, $ord]) {
             $mid = (int) DB::table('materias')->where('slug', $mSlug)->value('id');
             if ($mid <= 0) {
