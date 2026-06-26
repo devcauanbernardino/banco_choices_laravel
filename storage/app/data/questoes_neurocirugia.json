@@ -1,7 +1,7 @@
 {
     "titulo": "Neurocirugía",
     "subtitulo": "Examen Mauri (50 preguntas) + Banco temático de Neurocirugía · Facultad de Medicina UBA",
-    "total_questoes": 200,
+    "total_questoes": 201,
     "questoes": [
         {
             "numero": 1,
@@ -5021,22 +5021,6 @@
                 {
                     "letra": "D",
                     "texto": "Dolor pulsátil generalizado sin signos autonómicos"
-                },
-                {
-                    "letra": "E",
-                    "texto": "Oxígeno a alto flujo"
-                },
-                {
-                    "letra": "F",
-                    "texto": "Paracetamol oral"
-                },
-                {
-                    "letra": "G",
-                    "texto": "Ibuprofeno oral"
-                },
-                {
-                    "letra": "H",
-                    "texto": "Reposo exclusivamente"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -5422,6 +5406,33 @@
             "resposta_correta": "A",
             "feedback": null,
             "tema": "ACV"
+        },
+        {
+            "numero": 201,
+            "pergunta": "¿Cuál es el tratamiento agudo de elección en la cefalea en racimos?",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Oxígeno a alto flujo"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Paracetamol oral"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Ibuprofeno oral"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Reposo exclusivamente"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "A",
+            "feedback": null,
+            "tema": "Cefaleas y Neuralgias"
         }
     ]
 }
