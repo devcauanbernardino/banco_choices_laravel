@@ -49,15 +49,15 @@ class User extends Authenticatable
     }
 
     /**
-     * Matérias para listagem (evita repetir por linhas duplicadas na pivot ou nomes iguais em IDs diferentes).
+     * Matérias para listagem (evita repetir por linhas duplicadas na pivot).
      */
     public function materiasUnicas(): Collection
     {
         return $this->materias()
+            ->with('agrupamento.faculdade')
             ->orderBy('materias.nome')
             ->get()
             ->unique('id')
-            ->unique('nome')
             ->values();
     }
 

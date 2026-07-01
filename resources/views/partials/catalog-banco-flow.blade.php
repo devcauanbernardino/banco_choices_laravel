@@ -198,17 +198,27 @@
 <input type="hidden" name="materia" id="qb_materia_hidden" value="" required form="bc-qbank-form">
 <input type="hidden" name="catedra_id" id="qb_catedra_hidden" value="" form="bc-qbank-form">
 
+@php
+    $multiplasFaculdades = $materias->pluck('agrupamento.faculdade.id')->filter()->unique()->count() > 1;
+    $materiaLabel = function ($m) use ($multiplasFaculdades) {
+        if (! $multiplasFaculdades || ! $m->agrupamento?->faculdade) {
+            return $m->nome;
+        }
+
+        return $m->nome.' ('.$m->agrupamento->faculdade->nome.')';
+    };
+@endphp
 @if ($materias->count() === 1)
     @php $unicaMateria = $materias->first(); @endphp
     <div class="mb-4">
         <span class="form-label d-block">{{ __('bank.catalog.pick_mat') }}</span>
         <div class="bc-mock-single-materia">
             <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
-            <span class="fw-semibold">{{ $unicaMateria->nome }}</span>
+            <span class="fw-semibold">{{ $materiaLabel($unicaMateria) }}</span>
         </div>
     </div>
     <select id="qb_mat" hidden>
-        <option value="{{ $unicaMateria->id }}" selected>{{ $unicaMateria->nome }}</option>
+        <option value="{{ $unicaMateria->id }}" selected>{{ $materiaLabel($unicaMateria) }}</option>
     </select>
 @else
     <div class="mb-4">
@@ -216,7 +226,7 @@
         <select class="bc-styled-select bc-styled-select--fluid" id="qb_mat">
             <option value="">{{ __('catalog.placeholder') }}</option>
             @foreach ($materias as $m)
-                <option value="{{ $m->id }}">{{ $m->nome }}</option>
+                <option value="{{ $m->id }}">{{ $materiaLabel($m) }}</option>
             @endforeach
         </select>
     </div>
