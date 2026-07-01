@@ -95,33 +95,30 @@ html:not(.bc-icons-font-ready) .result-standalone-body .material-symbols-outline
 }
 
 .result-standalone__theme-ico {
-  display: none !important;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.125rem !important;
-  line-height: 1;
+  display: none;
+  flex-shrink: 0;
   width: 1.125rem;
   height: 1.125rem;
 }
 
 html[data-theme="light"] .result-standalone__theme-ico--light,
 html[data-bs-theme="light"] .result-standalone__theme-ico--light {
-  display: inline-flex !important;
+  display: inline-flex;
 }
 
 html[data-theme="dark"] .result-standalone__theme-ico--dark,
 html[data-bs-theme="dark"] .result-standalone__theme-ico--dark {
-  display: inline-flex !important;
+  display: inline-flex;
 }
 
 html[data-theme="dark"] .result-standalone__theme-ico--light,
 html[data-bs-theme="dark"] .result-standalone__theme-ico--light {
-  display: none !important;
+  display: none;
 }
 
 html[data-theme="light"] .result-standalone__theme-ico--dark,
 html[data-bs-theme="light"] .result-standalone__theme-ico--dark {
-  display: none !important;
+  display: none;
 }
 
 .result-standalone__main {
