@@ -104,6 +104,10 @@
     {{-- Modais ao nível do body: evita backdrop sobrepor o diálogo (stacking vs .app-main / sidebar). --}}
     @stack('modals')
 
+    @auth
+        @include('partials.ai-chat-widget')
+    @endauth
+
     {{-- Bootstrap 5.3.2 JS Bundle --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('assets/js/public-scroll-lock.js') }}?v={{ filemtime(public_path('assets/js/public-scroll-lock.js')) }}"></script>

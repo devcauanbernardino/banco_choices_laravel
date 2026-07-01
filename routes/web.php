@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AddonController;
+use App\Http\Controllers\AiChatController;
 use App\Http\Controllers\Api\CatalogoAjaxController;
 use App\Http\Controllers\Api\CatalogoPublicController;
 use App\Http\Controllers\Auth\LoginController;
@@ -124,6 +125,12 @@ Route::middleware(['auth', 'force.password.change'])->group(function () {
     Route::post('/questionario/explicar-ia', [SimulationController::class, 'explainWithAi'])
         ->middleware('throttle:20,1')
         ->name('simulation.explainAi');
+
+    Route::prefix('api/ia-chat')->group(function () {
+        Route::get('/historico', [AiChatController::class, 'history'])->name('ai.chat.history');
+        Route::post('/enviar', [AiChatController::class, 'send'])->middleware('throttle:20,1')->name('ai.chat.send');
+        Route::post('/limpar', [AiChatController::class, 'clear'])->name('ai.chat.clear');
+    });
     Route::get('/resultado/historico/{historico}', [ResultController::class, 'showHistory'])->name('simulation.result');
     Route::get('/resultado', [ResultController::class, 'show'])->name('result.show');
 

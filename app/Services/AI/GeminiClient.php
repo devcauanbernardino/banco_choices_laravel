@@ -9,6 +9,29 @@ class GeminiClient
 {
     public function generate(string $prompt, ?string $systemInstruction = null): string
     {
+        return $this->call([
+            ['role' => 'user', 'parts' => [['text' => $prompt]]],
+        ], $systemInstruction);
+    }
+
+    /**
+     * @param  list<array{role: string, texto: string}>  $turns  histórico em ordem cronológica (role: 'user'|'model')
+     */
+    public function chat(array $turns, ?string $systemInstruction = null): string
+    {
+        $contents = array_map(fn (array $t) => [
+            'role' => $t['role'] === 'user' ? 'user' : 'model',
+            'parts' => [['text' => $t['texto']]],
+        ], $turns);
+
+        return $this->call($contents, $systemInstruction);
+    }
+
+    /**
+     * @param  list<array{role: string, parts: list<array{text: string}>}>  $contents
+     */
+    private function call(array $contents, ?string $systemInstruction = null): string
+    {
         $key = (string) config('services.gemini.key');
         $model = (string) config('services.gemini.model', 'gemini-2.5-flash');
 
@@ -17,9 +40,7 @@ class GeminiClient
         }
 
         $payload = [
-            'contents' => [
-                ['role' => 'user', 'parts' => [['text' => $prompt]]],
-            ],
+            'contents' => $contents,
             'generationConfig' => [
                 'temperature' => 0.4,
                 'maxOutputTokens' => 700,
