@@ -21,6 +21,8 @@ final class QuestionBankLocator
             'questoes_bioetica_2024_2025.json',
             'questoes_farmaco1_cat3.json',
             'questoes_neurocirugia.json',
+            'questoes_ciencias_sociales_y_medicina.json',
+            'questoes_farmacologia_general_barcelo.json',
         ];
     }
 

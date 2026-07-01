@@ -1,9 +1,8 @@
 @php
     $currentLocale = app()->getLocale();
     $locales = [
-        'es_AR' => ['label' => __('lang.name_es_AR'), 'flag_id' => 'ar'],
-        'pt_BR' => ['label' => __('lang.name_pt_BR'), 'flag_id' => 'br'],
-        'en_US' => ['label' => __('lang.name_en_US'), 'flag_id' => 'us'],
+        'es_AR' => ['label' => __('lang.name_es_AR'), 'short' => 'Español', 'flag_id' => 'ar'],
+        'pt_BR' => ['label' => __('lang.name_pt_BR'), 'short' => 'Português', 'flag_id' => 'br'],
     ];
     $currentFlagId = $locales[$currentLocale]['flag_id'] ?? 'ar';
     /* Sidebar: menu ao lado do botão (direita). Sem isso, dropdown-menu-end + fixed faz o Popper mandar o menu para o canto oposto da viewport. */
@@ -41,29 +40,20 @@
     </button>
 
     <ul class="dropdown-menu bc-lang-menu bc-lang-menu--landing shadow{{ $langInSidebar ? '' : ' dropdown-menu-end' }}">
-        <li>
-            <h6 class="dropdown-header bc-lang-menu__heading mb-0">{{ __('lang.selector_label') }}</h6>
-        </li>
         @foreach ($locales as $code => $info)
             <li>
                 @if ($code === $currentLocale)
                     <span class="dropdown-item bc-lang-menu__item bc-lang-menu__item--active" aria-current="true">
-                        <span class="bc-lang-menu__flag" aria-hidden="true">
-                            <img class="bc-lang-flag-img" src="{{ asset('assets/img/flags/'.$info['flag_id'].'.svg') }}" width="28" height="21" alt="" decoding="async">
-                        </span>
-                        <span class="bc-lang-menu__label">{{ $info['label'] }}</span>
-                        <span class="bc-lang-menu__tick" aria-hidden="true"><span class="bc-lang-menu__check">&check;</span></span>
+                        <span class="bc-lang-menu__code" aria-hidden="true">{{ strtoupper($info['flag_id']) }}</span>
+                        <span class="bc-lang-menu__label">{{ $info['short'] }}</span>
                     </span>
                 @else
                     <form method="POST" action="{{ route('set-locale') }}" class="bc-lang-menu__form w-100 m-0 p-0">
                         @csrf
                         <input type="hidden" name="locale" value="{{ $code }}">
                         <button type="submit" class="dropdown-item bc-lang-menu__item w-100 text-start border-0 bg-transparent">
-                            <span class="bc-lang-menu__flag" aria-hidden="true">
-                                <img class="bc-lang-flag-img" src="{{ asset('assets/img/flags/'.$info['flag_id'].'.svg') }}" width="28" height="21" alt="" decoding="async">
-                            </span>
-                            <span class="bc-lang-menu__label">{{ $info['label'] }}</span>
-                            <span class="bc-lang-menu__tick" aria-hidden="true"></span>
+                            <span class="bc-lang-menu__code" aria-hidden="true">{{ strtoupper($info['flag_id']) }}</span>
+                            <span class="bc-lang-menu__label">{{ $info['short'] }}</span>
                         </button>
                     </form>
                 @endif

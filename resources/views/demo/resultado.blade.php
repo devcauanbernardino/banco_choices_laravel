@@ -1,7 +1,9 @@
 @extends('layouts.public')
 
 @section('title', __('demo.resultado.page_title'))
-@section('body_attr', ' class="lp-body demo-body"')
+@section('body_attr')
+ class="lp-body demo-body"
+@endsection
 
 @push('styles')
     @include('pages.partials.landing-styles')

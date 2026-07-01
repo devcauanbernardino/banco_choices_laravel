@@ -28,6 +28,7 @@ class SimulationController extends Controller
             'catedra_id' => 'nullable|integer|exists:catedras,id',
             'quantidade' => 'required|integer|min:1|max:200',
             'modo' => 'required|in:estudo,exame',
+            'tempo_minutos' => 'nullable|integer|min:'.SimulationTimer::MIN_MINUTES.'|max:'.SimulationTimer::MAX_MINUTES,
             'parcial' => 'nullable|array',
             'parcial.*' => 'nullable|string|max:16',
             'tema' => 'nullable|array',
@@ -97,8 +98,11 @@ class SimulationController extends Controller
         ];
 
         if ($request->input('modo') === 'exame') {
+            $tempoMinutosRaw = $request->input('tempo_minutos');
+            $tempoMinutos = ($tempoMinutosRaw !== null && $tempoMinutosRaw !== '') ? (int) $tempoMinutosRaw : null;
+
             $data['inicio'] = time();
-            $data['tempo_total'] = SimulationTimer::DEFAULT_SECONDS;
+            $data['tempo_total'] = SimulationTimer::secondsFromMinutes($tempoMinutos);
         }
 
         $this->sim->init($data);

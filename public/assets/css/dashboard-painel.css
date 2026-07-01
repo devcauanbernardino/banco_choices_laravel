@@ -3,8 +3,8 @@
  * Escopo: apenas dentro de .dash-painel (área @section content).
  */
 .dash-painel {
-  --dash-primary: #5b21b6;
-  --dash-primary-container: #6b21a8;
+  --dash-primary: #4a0072;
+  --dash-primary-container: #6a0392;
   --dash-on-primary: #f8d8ff;
   --dash-surface-low: #f2f4f9;
   --dash-surface-hi: #e0e2e7;
@@ -886,15 +886,32 @@
   border-radius: 1.75rem;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(145deg, var(--dash-primary-container) 0%, #4c0d75 100%);
-  box-shadow: 0 20px 48px rgba(73, 0, 102, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #0c0712;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
+  transition: filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dash-home-mega::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 70% 60% at 15% -10%, rgba(124, 41, 168, 0.55), transparent 65%);
+}
+
+.dash-home-mega-tag,
+.dash-home-mega-title,
+.dash-home-mega-desc,
+.dash-home-mega-btn {
+  position: relative;
+  z-index: 1;
 }
 
 .dash-home-mega:hover {
   color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 24px 52px rgba(73, 0, 102, 0.42);
+  filter: brightness(1.08);
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.45);
 }
 
 .dash-home-mega-tag {

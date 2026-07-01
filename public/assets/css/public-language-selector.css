@@ -263,6 +263,12 @@
     min-width: 0;
 }
 
+.bc-lang-menu--landing > li:not(:last-child) .bc-lang-menu__item {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
 .navbar-actions--landing .bc-lang-menu__item,
 .lp-offcanvas .bc-lang-menu__item {
     display: flex !important;
@@ -350,9 +356,9 @@
 
 .navbar-actions--landing .bc-lang-menu__item--active,
 .lp-offcanvas .bc-lang-menu__item--active {
-    background: var(--bc-lang-accent-soft);
-    border-left-color: var(--bc-lang-accent);
-    color: var(--bc-lang-accent);
+    background: transparent;
+    border-left-color: transparent;
+    color: var(--bc-lang-item-text);
     font-weight: 600;
     cursor: default;
     pointer-events: none;

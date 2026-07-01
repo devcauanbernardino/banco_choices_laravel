@@ -103,10 +103,16 @@
                                 </header>
 
                                 <section class="signup-plano-card__pricing" aria-label="{{ $plan['name'] }}">
+                                    @php
+                                        $isBr       = app()->getLocale() === 'pt_BR';
+                                        $planPrice  = $isBr ? $plan['priceBrl'] : $plan['price'];
+                                        $planSymbol = $isBr ? 'R$' : '$';
+                                        $planCcy    = $isBr ? 'BRL' : 'ARS';
+                                    @endphp
                                     <div class="signup-plano-card__price-row">
-                                        <span class="signup-plano-card__currency">$</span>
-                                        <span class="signup-plano-card__amount">{{ number_format($plan['price'] * count($materiasInfo), 2, ',', '.') }}</span>
-                                        <span class="signup-plano-card__ars">ARS</span>
+                                        <span class="signup-plano-card__currency">{{ $planSymbol }}</span>
+                                        <span class="signup-plano-card__amount">{{ number_format($planPrice * count($materiasInfo), 2, ',', '.') }}</span>
+                                        <span class="signup-plano-card__ars">{{ $planCcy }}</span>
                                     </div>
                                     <p class="signup-plano-card__period">{{ __('signup.plano.period_total', ['duration' => $plan['duration']]) }}</p>
                                     @if (!empty($plan['badge']))

@@ -37,7 +37,7 @@
 
     @stack('styles')
 </head>
-<body@yield('body_attr')>
+<body @yield('body_attr')>
     @hasSection('public_topbar')
         @yield('public_topbar')
     @endif

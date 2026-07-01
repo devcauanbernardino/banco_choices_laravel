@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\App;
 
 class LocaleController extends Controller
 {
-    private const SUPPORTED = ['es_AR', 'pt_BR', 'en_US'];
+    private const SUPPORTED = ['es_AR', 'pt_BR'];
 
     public function setLocale(Request $request)
     {

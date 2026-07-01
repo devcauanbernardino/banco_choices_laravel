@@ -68,13 +68,24 @@
                                 <input type="hidden" name="quantidade" id="qbankQtyHidden" value="20">
                                 <p class="small text-muted mt-3 mb-0">{{ __('bank.num_questions_hint') }}</p>
                             </section>
-                            <section class="bc-mock-panel mb-0">
+                            <section class="bc-mock-panel mb-0" id="qbankTimePanel">
                                 <h2 class="bc-mock-panel__title mb-4">{{ __('bank.time_label') }}</h2>
-                                <div class="bc-mock-time-row">
-                                    <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
-                                    <span class="fw-bold">{{ __('bank.time_value') }}</span>
+                                <div class="d-flex justify-content-between align-items-end mb-2">
+                                    <span class="bc-mock-range-display" id="qbankTimeDisplay">60</span>
+                                    <span class="bc-mock-range-meta">{{ __('bank.time_unit_minutes') }}</span>
                                 </div>
-                                <p class="small text-muted mt-3 mb-0">{{ __('bank.time_hint') }}</p>
+                                <input type="range" class="bc-mock-range-input" id="qbankTimeRange"
+                                       min="{{ \App\Support\SimulationTimer::MIN_MINUTES }}"
+                                       max="{{ \App\Support\SimulationTimer::MAX_MINUTES }}" step="5" value="60"
+                                       aria-valuemin="{{ \App\Support\SimulationTimer::MIN_MINUTES }}"
+                                       aria-valuemax="{{ \App\Support\SimulationTimer::MAX_MINUTES }}" aria-valuenow="60"
+                                       aria-labelledby="qbankTimeDisplay">
+                                <div class="bc-mock-range-ticks">
+                                    <span>{{ \App\Support\SimulationTimer::MIN_MINUTES }}</span>
+                                    <span>{{ \App\Support\SimulationTimer::MAX_MINUTES }}</span>
+                                </div>
+                                <input type="hidden" name="tempo_minutos" id="qbankTimeHidden" value="60">
+                                <p class="small text-muted mt-3 mb-0" id="qbankTimeHint">{{ __('bank.time_hint') }}</p>
                             </section>
                         </div>
 
@@ -137,31 +148,13 @@
                                 </li>
                                 <li>
                                     <span>{{ __('bank.summary_time') }}</span>
-                                    <span>{{ __('bank.time_value') }}</span>
+                                    <span id="qbankSummaryTime">{{ __('bank.time_estudo_value') }}</span>
                                 </li>
                             </ul>
                             <button type="submit" form="bc-qbank-form" class="bc-mock-btn-start">
                                 <span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
                                 {{ __('bank.submit') }}
                             </button>
-                        </div>
-                        <div class="bc-mock-badges-grid">
-                            <div class="bc-mock-badge-mini">
-                                <span class="material-symbols-outlined" aria-hidden="true">history_edu</span>
-                                <p>{{ __('bank.badge_reviewed') }}</p>
-                            </div>
-                            <div class="bc-mock-badge-mini">
-                                <span class="material-symbols-outlined" aria-hidden="true">bolt</span>
-                                <p>{{ __('bank.badge_focus') }}</p>
-                            </div>
-                            <div class="bc-mock-badge-mini">
-                                <span class="material-symbols-outlined" aria-hidden="true">verified</span>
-                                <p>{{ __('bank.badge_sources') }}</p>
-                            </div>
-                            <div class="bc-mock-badge-mini">
-                                <span class="material-symbols-outlined" aria-hidden="true">leaderboard</span>
-                                <p>{{ __('bank.badge_track') }}</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,11 +221,45 @@
     const radioEstudo = document.getElementById('radioEstudo');
     const radioExame = document.getElementById('radioExame');
     const examWarning = document.getElementById('examWarning');
+
+    const timeRange = document.getElementById('qbankTimeRange');
+    const timeHidden = document.getElementById('qbankTimeHidden');
+    const timeDisplay = document.getElementById('qbankTimeDisplay');
+    const timePanel = document.getElementById('qbankTimePanel');
+    const summaryTime = document.getElementById('qbankSummaryTime');
+    const estudoValueLabel = @json(__('bank.time_estudo_value'));
+    const minutesSuffix = @json(__('bank.time_unit_minutes'));
+
+    function syncTimeSummary() {
+        const isExame = !!(radioExame && radioExame.checked);
+        if (timePanel) timePanel.classList.toggle('bc-mock-panel--disabled', !isExame);
+        if (timeRange) timeRange.disabled = !isExame;
+        if (summaryTime) {
+            summaryTime.textContent = isExame
+                ? (timeHidden ? timeHidden.value : '60') + ' ' + minutesSuffix
+                : estudoValueLabel;
+        }
+    }
+
+    if (timeRange && timeHidden && timeDisplay) {
+        function syncTime() {
+            var v = timeRange.value;
+            timeHidden.value = v;
+            timeDisplay.textContent = v;
+            timeRange.setAttribute('aria-valuenow', v);
+            syncTimeSummary();
+        }
+        timeRange.addEventListener('input', syncTime);
+        syncTime();
+    }
+
     function toggleWarning() {
         if (examWarning) examWarning.classList.toggle('d-none', !radioExame.checked);
+        syncTimeSummary();
     }
     if (radioEstudo) radioEstudo.addEventListener('change', toggleWarning);
     if (radioExame) radioExame.addEventListener('change', toggleWarning);
+    syncTimeSummary();
 
     const qbankForm = document.getElementById('bc-qbank-form');
     const examModalEl = document.getElementById('bcExamConfirmModal');

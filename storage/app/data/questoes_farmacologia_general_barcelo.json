@@ -1,0 +1,564 @@
+{
+  "questoes": [
+    {
+      "numero": 1,
+      "pergunta": "Los potenciales subumbrales son producidos gracias a:",
+      "opcoes": [
+        {"letra": "A", "texto": "La bomba iónica ATPasa"},
+        {"letra": "B", "texto": "Los canales iónicos activados por ligandos"},
+        {"letra": "C", "texto": "Los canales iónicos activados por voltaje"},
+        {"letra": "D", "texto": "El transportador de iones"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los potenciales subumbrales (o postsinápticos) son producidos por canales iónicos activados por ligandos (neurotransmisores): cuando el NT se une al receptor, el canal se abre y genera corrientes iónicas locales. Los canales activados por voltaje (opción C) participan en el potencial de acción una vez superado el umbral."
+    },
+    {
+      "numero": 2,
+      "pergunta": "El potencial de acción depende:",
+      "opcoes": [
+        {"letra": "A", "texto": "De la conductancia al Cl"},
+        {"letra": "B", "texto": "De la conductancia al Ca"},
+        {"letra": "C", "texto": "De la conductancia al Na"},
+        {"letra": "D", "texto": "De la conductancia al K"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La fase de despolarización del potencial de acción (la \"subida\") depende del aumento masivo de la conductancia al Na⁺ por apertura de canales de sodio voltaje-dependientes. La fase de repolarización depende del K⁺, pero la generación del potencial de acción en sí depende principalmente del Na⁺."
+    },
+    {
+      "numero": 3,
+      "pergunta": "El modelo \"sopa química\" supone una de las siguientes consecuencias:",
+      "opcoes": [
+        {"letra": "A", "texto": "Alta especificidad"},
+        {"letra": "B", "texto": "Interacción punto a punto"},
+        {"letra": "C", "texto": "Interacción en varios tractos neuronales simultáneamente"},
+        {"letra": "D", "texto": "Ausencia de efectos colaterales"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. El modelo de \"sopa química\" (Dale) describe una transmisión química difusa, donde el NT liberado puede actuar sobre múltiples tractos neuronales simultáneamente. Esto implica baja especificidad (contrario a la opción A), no interacción punto a punto (opción B es el modelo eléctrico/cableado), y explica los efectos colaterales (descarta D)."
+    },
+    {
+      "numero": 4,
+      "pergunta": "Si un NT favorece la entrada de Cloro en la postsinapsis:",
+      "opcoes": [
+        {"letra": "A", "texto": "Produce un potencial de acción"},
+        {"letra": "B", "texto": "Evoca potenciales postsinápticos excitatorios"},
+        {"letra": "C", "texto": "Aleja el potencial intracelular del umbral"},
+        {"letra": "D", "texto": "Despolariza la célula"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La entrada de Cl⁻ hiperpolariza la célula postsináptica (el interior se hace más negativo), alejando el potencial de membrana del umbral de disparo. Esto genera un potencial postsináptico inhibitorio (PPSI), no excitatorio. No produce potencial de acción ni despolarización."
+    },
+    {
+      "numero": 5,
+      "pergunta": "Los autoreceptores presinápticos generalmente…",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumentan el almacenamiento del NT"},
+        {"letra": "B", "texto": "Aumentan la síntesis del NT"},
+        {"letra": "C", "texto": "Favorecen la degradación del NT"},
+        {"letra": "D", "texto": "Alejan del umbral a la presinapsis"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los autorreceptores presinápticos son receptores que se activan por el propio NT liberado y, en general, funcionan como un mecanismo de retroalimentación. Sin embargo, en este contexto clásico, se refieren a los autoreceptores de síntesis que la estimulación del propio NT aumenta la síntesis. Nota: la función más conocida de los autoreceptores es la inhibición por retroalimentación (disminuyen síntesis/liberación), pero en este gabarito la respuesta correcta es B (aumentan síntesis), que corresponde a un subgrupo específico o al planteo del examen."
+    },
+    {
+      "numero": 6,
+      "pergunta": "Las Aminas Biógenas se sintetizan:",
+      "opcoes": [
+        {"letra": "A", "texto": "En el retículo endoplásmico"},
+        {"letra": "B", "texto": "En el soma neuronal"},
+        {"letra": "C", "texto": "En las mitocondrias presinápticas"},
+        {"letra": "D", "texto": "En el citoplasma presináptico"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Las aminas biógenas (dopamina, noradrenalina, adrenalina, serotonina, histamina) son sintetizadas en el citoplasma presináptico a partir de aminoácidos precursores mediante enzimas citoplasmáticas (ej.: tirosina → DOPA → dopamina). Luego son captadas y almacenadas en vesículas sinápticas."
+    },
+    {
+      "numero": 7,
+      "pergunta": "Los receptores adrenérgicos que median el aumento del humor acuoso son:",
+      "opcoes": [
+        {"letra": "A", "texto": "Alfa 1"},
+        {"letra": "B", "texto": "Beta 2"},
+        {"letra": "C", "texto": "Beta 1"},
+        {"letra": "D", "texto": "Beta 3"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los receptores beta-2 adrenérgicos en el epitelio ciliar del ojo median el aumento de la producción de humor acuoso. Por eso los betabloqueantes (ej.: timolol) se usan en el tratamiento del glaucoma: al bloquear receptores beta-2, disminuyen la producción de humor acuoso y reducen la presión intraocular."
+    },
+    {
+      "numero": 8,
+      "pergunta": "Marque la correcta con respecto al Isoproterenol (agonista beta 1 y 2):",
+      "opcoes": [
+        {"letra": "A", "texto": "Disminuye la frecuencia cardíaca"},
+        {"letra": "B", "texto": "Disminuye la TA sistólica"},
+        {"letra": "C", "texto": "Produce vasoconstricción"},
+        {"letra": "D", "texto": "Disminuye la resistencia periférica"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. El isoproterenol es agonista beta-1 y beta-2. La estimulación beta-2 vascular produce vasodilatación, disminuyendo la resistencia periférica. A la vez, el efecto beta-1 cardíaco aumenta la frecuencia y fuerza cardíaca, aumentando la TA sistólica. Por eso: la TA sistólica puede aumentar, la diastólica baja, y la resistencia periférica disminuye."
+    },
+    {
+      "numero": 9,
+      "pergunta": "Son agonistas adrenérgicos directos sólo una opción de las siguientes:",
+      "opcoes": [
+        {"letra": "A", "texto": "Anfetamina y Cocaína"},
+        {"letra": "B", "texto": "Reserpina"},
+        {"letra": "C", "texto": "Clonidina y Salbutamol"},
+        {"letra": "D", "texto": "Ninguna de las anteriores"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Los agonistas adrenérgicos directos son aquellos que se unen directamente al receptor adrenérgico. Clonidina (agonista alfa-2) y Salbutamol (agonista beta-2) son agonistas directos. La anfetamina y cocaína son indirectos (actúan sobre la recaptación o liberación del NT). La reserpina es un bloqueante del almacenamiento vesicular."
+    },
+    {
+      "numero": 10,
+      "pergunta": "En la neurotransmisión adrenérgica la correcta es:",
+      "opcoes": [
+        {"letra": "A", "texto": "La NA termina su acción por hidrólisis"},
+        {"letra": "B", "texto": "El Bretilio inhibe la Liberación calcio independiente"},
+        {"letra": "C", "texto": "La Cocaína inhibe la recaptación"},
+        {"letra": "D", "texto": "Los Corticoides inhiben la captación neuronal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La cocaína inhibe el transportador de recaptación de noradrenalina (y dopamina) en la presinapsis, prolongando y potenciando la acción del NT en la sinapsis. La NA no termina su acción por hidrólisis (opción A incorrecta: la acetilcolina sí), sino principalmente por recaptación. El bretilio inhibe la liberación calcio-dependiente (no independiente, opción B incorrecta). Los corticoides inhiben la captación extraneuronal (no neuronal, opción D incorrecta)."
+    },
+    {
+      "numero": 11,
+      "pergunta": "La Atropina produce uno de los siguientes efectos:",
+      "opcoes": [
+        {"letra": "A", "texto": "Sialorrea"},
+        {"letra": "B", "texto": "Aumento de la sudoración"},
+        {"letra": "C", "texto": "Retención urinaria"},
+        {"letra": "D", "texto": "Aumento del peristaltismo intestinal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La atropina es un antagonista muscarínico (anticolinérgico). Bloquea el tono parasimpático del músculo detrusor vesical, produciendo retención urinaria. Los efectos anticolinérgicos incluyen: sequedad de boca (no sialorrea, A incorrecta), disminución de la sudoración (no aumento, B incorrecta), y disminución del peristaltismo (no aumento, D incorrecta)."
+    },
+    {
+      "numero": 12,
+      "pergunta": "Una droga parasimpaticomimética podría usarse para:",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumentar la presión ocular"},
+        {"letra": "B", "texto": "Reducir la frecuencia cardíaca"},
+        {"letra": "C", "texto": "Aumentar la conducción sinoauricular"},
+        {"letra": "D", "texto": "Broncodilatador"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los parasimpaticomiméticos (colinérgicos muscarínicos) simulan la activación del nervio vago: reducen la frecuencia cardíaca (efecto cronotrópico negativo) y la conducción aurículo-ventricular. También producen miosis (disminuyen la presión ocular, no la aumentan: A incorrecta), broncoconstricción (no dilatación: D incorrecta), y disminuyen la conducción sinoauricular (C incorrecta)."
+    },
+    {
+      "numero": 13,
+      "pergunta": "La 5 HT en el SNC se encuentra en:",
+      "opcoes": [
+        {"letra": "A", "texto": "Núcleo accumbens"},
+        {"letra": "B", "texto": "Núcleos del Rafe del tallo"},
+        {"letra": "C", "texto": "Núcleo caudado"},
+        {"letra": "D", "texto": "Locus coeruleus"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los cuerpos neuronales serotoninérgicos del SNC se concentran en los núcleos del Rafe, ubicados en el tallo cerebral (mesencéfalo, protuberancia y bulbo). Desde allí proyectan a prácticamente todo el SNC. El locus coeruleus contiene neuronas noradrenérgicas. El núcleo accumbens y el caudado reciben proyecciones dopaminérgicas."
+    },
+    {
+      "numero": 14,
+      "pergunta": "Un agonista del receptor 5HT1D puede usarse como:",
+      "opcoes": [
+        {"letra": "A", "texto": "Antisicótico"},
+        {"letra": "B", "texto": "Antiemético"},
+        {"letra": "C", "texto": "Antimigrañoso"},
+        {"letra": "D", "texto": "Procinético"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Los agonistas del receptor 5HT1D (como los triptanes: sumatriptán) son el tratamiento de elección en las crisis agudas de migraña. Producen vasoconstricción de vasos craneales dilatados y bloquean la liberación de neuropéptidos proinflamatorios en el trigémino. No tienen acción antipsicótica, antiemética ni procinética relevante."
+    },
+    {
+      "numero": 15,
+      "pergunta": "Encontramos neuronas dopaminérgicas en el siguiente núcleo:",
+      "opcoes": [
+        {"letra": "A", "texto": "Sustancia nigra"},
+        {"letra": "B", "texto": "Locus coeruleus"},
+        {"letra": "C", "texto": "Basal de Meiner"},
+        {"letra": "D", "texto": "Estriado"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Las neuronas dopaminérgicas del SNC se localizan principalmente en la sustancia nigra (vía nigroestriatal) y en el área tegmental ventral (vías mesolímbica y mesocortical). El locus coeruleus contiene neuronas noradrenérgicas. El núcleo basal de Meynert contiene neuronas colinérgicas. El estriado recibe proyecciones dopaminérgicas pero no los produce."
+    },
+    {
+      "numero": 16,
+      "pergunta": "La emesis puede producirse:",
+      "opcoes": [
+        {"letra": "A", "texto": "Bloqueando al receptor 5HT4"},
+        {"letra": "B", "texto": "Activando al receptor 5HT2"},
+        {"letra": "C", "texto": "Estimulando al receptor 5HT3"},
+        {"letra": "D", "texto": "Bloqueando al receptor D2"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La estimulación del receptor 5HT3 (en el área postrema y nervio vago) produce emesis. Por eso los antagonistas 5HT3 (ondansetrón, granisetrón) son potentes antieméticos. El bloqueo del receptor D2 (opción D) produce efecto antiemético, no emesis. La activación 5HT4 es procinética (no emética). El bloqueo 5HT4 no produce emesis."
+    },
+    {
+      "numero": 17,
+      "pergunta": "Un efecto simil parkinsoniano se lograría:",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumentando la Dopamina en el estriado"},
+        {"letra": "B", "texto": "Con una droga antipsicótica típica"},
+        {"letra": "C", "texto": "Estimulando la síntesis de Dopamina en la Sustancia nigra"},
+        {"letra": "D", "texto": "Favoreciendo la liberación de DA en la vía mesocortical"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los antipsicóticos típicos (haloperidol, clorpromazina) bloquean los receptores D2 en el estriado, mimetizando el déficit dopaminérgico nigroestriatal del Parkinson. Esto genera síntomas extrapiramidales (parkinsonismo farmacológico). Aumentar la dopamina en el estriado (A) mejoraría el parkinsonismo, no lo causaría."
+    },
+    {
+      "numero": 18,
+      "pergunta": "Un efecto adverso Colateral:",
+      "opcoes": [
+        {"letra": "A", "texto": "Depende del mecanismo y acción de la droga"},
+        {"letra": "B", "texto": "Ocurre solo en los predispuestos"},
+        {"letra": "C", "texto": "No depende de la dosis"},
+        {"letra": "D", "texto": "Es consecuencia del efecto terapéutico"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. El efecto adverso colateral depende del mecanismo de acción de la droga: es un efecto previsible, dosis-dependiente, derivado de la acción farmacológica del fármaco sobre otros sitios u órganos además del objetivo terapéutico. No es idiosincrático ni requiere predisposición (opción B). Sí depende de la dosis (C incorrecta). No es consecuencia del efecto terapéutico per se (el secundario sí)."
+    },
+    {
+      "numero": 19,
+      "pergunta": "Los Barbitúricos son depresores no selectivos y peligrosos por:",
+      "opcoes": [
+        {"letra": "A", "texto": "Depender del GABA para su acción"},
+        {"letra": "B", "texto": "Ser drogas de acción no específica"},
+        {"letra": "C", "texto": "Inhibir a los activadores, como el glutamato"},
+        {"letra": "D", "texto": "Poder aumentar la conductancia al Cloro sin GABA"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Los barbitúricos son peligrosos porque, a dosis altas, pueden abrir directamente el canal de cloruro del receptor GABA-A sin necesitar la presencia de GABA. Esto produce una depresión ilimitada del SNC, a diferencia de las benzodiazepinas que solo potencian la acción del GABA (y tienen un techo de efecto). Esta propiedad explica su mayor riesgo de sobredosis letal."
+    },
+    {
+      "numero": 20,
+      "pergunta": "Inhibiendo algún paso de la NT glutamatérgica podríamos…",
+      "opcoes": [
+        {"letra": "A", "texto": "Empeorar el daño neuronal isquémico"},
+        {"letra": "B", "texto": "Favorecer las convulsiones"},
+        {"letra": "C", "texto": "Disminuir la memoria"},
+        {"letra": "D", "texto": "Aumentar la activación neuronal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Inhibir la neurotransmisión glutamatérgica podría empeorar el daño neuronal isquémico. Aunque paradójicamente en la isquemia aguda el exceso de glutamato causa excitotoxicidad, inhibir el glutamato podría interferir con mecanismos neuroprotectores y funciones vitales. Además, la inhibición glutamatérgica produciría anticonvulsivante (no convulsiones, B incorrecta), deterioro cognitivo (no exactamente referido como \"disminuir la memoria\" en este contexto), y disminución de la activación neuronal (no aumento, D incorrecta)."
+    },
+    {
+      "numero": 21,
+      "pergunta": "Si un NT disminuye la salida de K en la postsinapsis:",
+      "opcoes": [
+        {"letra": "A", "texto": "Dificulta la conducción"},
+        {"letra": "B", "texto": "Produce inhibición postsináptica"},
+        {"letra": "C", "texto": "Dificulta la liberación de sí mismo"},
+        {"letra": "D", "texto": "Induce la despolarización postsináptica"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Si el NT disminuye la salida de K⁺ (bloquea canales de K⁺), el interior celular se torna más positivo (el K⁺ no sale para repolarizar), lo que produce despolarización postsináptica. Esta despolarización acerca el potencial de membrana al umbral de disparo, generando un efecto excitatorio."
+    },
+    {
+      "numero": 22,
+      "pergunta": "Si un NT favorece o inhibe la génesis de un potencial de acción en otra neurona se denomina:",
+      "opcoes": [
+        {"letra": "A", "texto": "Reforzador"},
+        {"letra": "B", "texto": "NT retrógrado"},
+        {"letra": "C", "texto": "Neuromodulador"},
+        {"letra": "D", "texto": "Cotransmisor"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Un neuromodulador es una sustancia que modifica la probabilidad de generación de potenciales de acción en otra neurona, sin necesariamente producir directamente un potencial postsináptico excitatorio o inhibitorio. Actúa modulando la respuesta a otros neurotransmisores, afectando la excitabilidad neuronal. Un cotransmisor se libera junto con el NT principal."
+    },
+    {
+      "numero": 23,
+      "pergunta": "Se consideran NT rápidos a sólo uno de los siguientes: ¿cuál?",
+      "opcoes": [
+        {"letra": "A", "texto": "Serotonina"},
+        {"letra": "B", "texto": "Noradrenalina"},
+        {"letra": "C", "texto": "Dopamina"},
+        {"letra": "D", "texto": "Glicina"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Los NT rápidos son los aminoácidos: glutamato (excitatorio), GABA y glicina (inhibitorios). Actúan directamente sobre canales iónicos ionotrópicos, generando respuestas en milisegundos. La serotonina, noradrenalina y dopamina son aminas biógenas, consideradas NT lentos o moduladores, que actúan principalmente a través de receptores metabotrópicos acoplados a proteínas G."
+    },
+    {
+      "numero": 24,
+      "pergunta": "La Acetilcolina se sintetiza:",
+      "opcoes": [
+        {"letra": "A", "texto": "En los ribosomas presinápticos"},
+        {"letra": "B", "texto": "En el soma neuronal"},
+        {"letra": "C", "texto": "En las mitocondrias presinápticas"},
+        {"letra": "D", "texto": "En el citoplasma presináptico"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. La acetilcolina se sintetiza en el citoplasma presináptico por acción de la colina acetiltransferasa (ChAT), que une colina + acetil-CoA. Las mitocondrias proveen el acetil-CoA pero la síntesis ocurre en el citoplasma. Los ribosomas sintetizan proteínas (no NT de bajo peso molecular). La síntesis ocurre en el terminal presináptico, no en el soma."
+    },
+    {
+      "numero": 25,
+      "pergunta": "Los heterorreceptores presinápticos estimulatorios producen, en una sinapsis excitatoria:",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumento de la inhibición"},
+        {"letra": "B", "texto": "Disminución de la estimulación"},
+        {"letra": "C", "texto": "Disminución de la inhibición"},
+        {"letra": "D", "texto": "Aumento de la estimulación"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Los heterorreceptores presinápticos son receptores en la presinapsis que responden a NT de otra neurona (no al propio NT). Si son estimulatorios y están en una sinapsis excitatoria, al activarse facilitan la liberación del NT excitatorio, produciendo mayor estimulación en la postsinapsis. En una sinapsis inhibitoria, lo mismo aumentaría la inhibición."
+    },
+    {
+      "numero": 26,
+      "pergunta": "En la neurotransmisión adrenérgica:",
+      "opcoes": [
+        {"letra": "A", "texto": "La NA se sintetiza en el citoplasma"},
+        {"letra": "B", "texto": "La Cocaína inhibe la liberación calcio independiente"},
+        {"letra": "C", "texto": "El Bretilio inhibe la liberación calcio dependiente"},
+        {"letra": "D", "texto": "Los Corticoides aumentan la captación extraneuronal"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. El bretilio bloquea la liberación calcio-dependiente de noradrenalina en el terminal presináptico (la que ocurre por exocitosis). La NA sí se sintetiza en el citoplasma presináptico (pero la última etapa —DA→NA— ocurre dentro de la vesícula, A parcialmente incorrecta). La cocaína inhibe la recaptación (no la liberación). Los corticoides inhiben la captación extraneuronal (no la aumentan, D incorrecta)."
+    },
+    {
+      "numero": 27,
+      "pergunta": "Un efecto antihipertensivo se lograría con:",
+      "opcoes": [
+        {"letra": "A", "texto": "Activación del alfa 2 central"},
+        {"letra": "B", "texto": "Estimulación del alfa 1 vascular"},
+        {"letra": "C", "texto": "Activación del beta 2 central"},
+        {"letra": "D", "texto": "Estimulación del beta 1 cardíaco"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La activación de receptores alfa-2 centrales (en el tronco encefálico) reduce la actividad simpática, disminuyendo la liberación de NA periférica. Esto produce vasodilatación y disminución de la frecuencia cardíaca, con efecto antihipertensivo. Es el mecanismo de la clonidina y metildopa. La estimulación alfa-1 vascular (B) y beta-1 cardíaco (D) producen hipertensión."
+    },
+    {
+      "numero": 28,
+      "pergunta": "Marque la correcta con respecto a un antagonista beta no selectivo:",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumenta la fuerza de contracción cardíaca"},
+        {"letra": "B", "texto": "Aumenta la TA sistólica"},
+        {"letra": "C", "texto": "Puede causar taquicardia"},
+        {"letra": "D", "texto": "Aumenta la resistencia periférica"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Un antagonista beta no selectivo (como el propranolol) bloquea receptores beta-1 y beta-2. Al bloquear beta-2 vasculares, impide la vasodilatación mediada por beta-2, dejando predominar la vasoconstricción alfa, aumentando la resistencia periférica. También disminuye la fuerza de contracción y frecuencia cardíaca (A y C incorrectas), y disminuye la TA sistólica (B incorrecta)."
+    },
+    {
+      "numero": 29,
+      "pergunta": "Los alfa bloqueantes producen uno de los siguientes efectos o acciones:",
+      "opcoes": [
+        {"letra": "A", "texto": "Aumento de la resistencia periférica"},
+        {"letra": "B", "texto": "Bronco constricción"},
+        {"letra": "C", "texto": "Hipotensión"},
+        {"letra": "D", "texto": "Bradicardia"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Los alfa bloqueantes (prazosina, doxazosina) bloquean los receptores alfa-1 vasculares, impidiendo la vasoconstricción mediada por NA. Esto produce vasodilatación y reducción de la resistencia periférica, con hipotensión (su principal efecto y uso clínico). No producen broncoconstricción ni bradicardia (que son efectos beta-bloqueantes)."
+    },
+    {
+      "numero": 30,
+      "pergunta": "Uno de los siguientes es un efecto anticolinérgico:",
+      "opcoes": [
+        {"letra": "A", "texto": "Miosis"},
+        {"letra": "B", "texto": "Disminución del ritmo cardíaco"},
+        {"letra": "C", "texto": "Aumento de la actividad peristáltica"},
+        {"letra": "D", "texto": "Disminución de la secreción salival"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Los efectos anticolinérgicos (bloqueo muscarínico) incluyen: xerostomía (sequedad bucal = disminución de la secreción salival), midriasis (no miosis, A incorrecta), taquicardia (no bradicardia, B incorrecta), y disminución del peristaltismo/estreñimiento (no aumento, C incorrecta). Regla mnemotécnica: \"Seco como un hueso, ciego como un murciélago, rojo como una remolacha, loco como un sombrero, caliente como una liebre\"."
+    },
+    {
+      "numero": 31,
+      "pergunta": "Las drogas parasimpaticolíticas podrían usarse para:",
+      "opcoes": [
+        {"letra": "A", "texto": "Tratamiento del glaucoma"},
+        {"letra": "B", "texto": "Combatir la constipación"},
+        {"letra": "C", "texto": "Disminuir la urgencia miccional"},
+        {"letra": "D", "texto": "Mejorar la xerostomía"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Las drogas parasimpaticolíticas (anticolinérgicos) como la oxibutinina o tolterodina se usan para disminuir la urgencia miccional en la vejiga hiperactiva: bloquean los receptores muscarínicos M3 del detrusor, reduciendo las contracciones involuntarias. El glaucoma se trata con miméticos (parasimpaticomiméticos), no se beneficia de anticolinérgicos (A incorrecta). La constipación y xerostomía son efectos adversos anticolinérgicos, no indicaciones."
+    },
+    {
+      "numero": 32,
+      "pergunta": "Los receptores nicotínicos presentan una de las siguientes características:",
+      "opcoes": [
+        {"letra": "A", "texto": "Generan PIPS"},
+        {"letra": "B", "texto": "Solo se encuentran en el SNC"},
+        {"letra": "C", "texto": "Estimulan las glándulas"},
+        {"letra": "D", "texto": "Son canales iónicos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Los receptores nicotínicos son receptores ionotrópicos: son canales iónicos activados por ligandos (ACh o nicotina) que permiten la entrada de Na⁺ y Ca²⁺, generando despolarización (PEPS excitatorios, no PIPS inhibitorios, A incorrecta). Se encuentran en la placa neuromuscular, ganglios autónomos y SNC (no solo en SNC, B incorrecta). Las glándulas son estimuladas principalmente por receptores muscarínicos (C incorrecta)."
+    },
+    {
+      "numero": 33,
+      "pergunta": "Con respecto a las plaquetas y la serotonina, es correcto que:",
+      "opcoes": [
+        {"letra": "A", "texto": "La modulan"},
+        {"letra": "B", "texto": "La almacenan"},
+        {"letra": "C", "texto": "La sintetizan"},
+        {"letra": "D", "texto": "La hidrolizan"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Las plaquetas almacenan serotonina (5-HT) en gránulos densos pero NO la sintetizan: la captan del intestino (donde sí es sintetizada por células enterocromafines) mediante el transportador SERT. Al activarse, las plaquetas la liberan, contribuyendo a la vasoconstricción y agregación plaquetaria. La hidrólisis de 5-HT la realiza la MAO, no las plaquetas."
+    },
+    {
+      "numero": 34,
+      "pergunta": "Un agonista 5HT4 podría usarse como:",
+      "opcoes": [
+        {"letra": "A", "texto": "Antiparkinsoniano"},
+        {"letra": "B", "texto": "Gastrocinético"},
+        {"letra": "C", "texto": "Antimigrañoso"},
+        {"letra": "D", "texto": "Antipsicótico"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los agonistas del receptor 5HT4 (como la metoclopramida y cisaprida, aunque ésta con efectos 5HT4 predominantes) son gastrocinéticos: estimulan el peristaltismo gastrointestinal y aceleran el vaciamiento gástrico. El receptor 5HT4 se encuentra en el plexo mientérico intestinal. No tienen acción antiparkinsoniana, antimigrañosa ni antipsicótica directa relevante."
+    },
+    {
+      "numero": 35,
+      "pergunta": "El defecto de DA en la vía mesocortical provocaría:",
+      "opcoes": [
+        {"letra": "A", "texto": "Hiperprolactinemia"},
+        {"letra": "B", "texto": "Ataques de pánico"},
+        {"letra": "C", "texto": "Apatía"},
+        {"letra": "D", "texto": "Vómitos"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La vía mesocortical proyecta del área tegmental ventral a la corteza prefrontal. El déficit de dopamina en esta vía produce síntomas negativos de la esquizofrenia: apatía, anhedonia, abulia, aplanamiento afectivo y deterioro cognitivo. La hiperprolactinemia es por déficit en la vía tuberoinfundibular. Los vómitos son por la vía quimiorreceptora del área postrema."
+    },
+    {
+      "numero": 36,
+      "pergunta": "La DA estimula el circuito de recompensa en:",
+      "opcoes": [
+        {"letra": "A", "texto": "Fascículo solitario"},
+        {"letra": "B", "texto": "Núcleo accumbens"},
+        {"letra": "C", "texto": "Área tegmental ventral"},
+        {"letra": "D", "texto": "Área postrema"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. La dopamina libera en el núcleo accumbens (sistema mesolímbico) es el sustrato del circuito de recompensa: genera sensación de placer y refuerzo. El área tegmental ventral es el ORIGEN de las neuronas dopaminérgicas que proyectan al accumbens, no el sitio donde se estimula el circuito. El área postrema es el centro del vómito."
+    },
+    {
+      "numero": 37,
+      "pergunta": "Con respecto al receptor NMDA:",
+      "opcoes": [
+        {"letra": "A", "texto": "No permite la entrada de calcio"},
+        {"letra": "B", "texto": "Requiere la despolarización para su activación"},
+        {"letra": "C", "texto": "Es un receptor inhibitorio"},
+        {"letra": "D", "texto": "Es activado por el GABA"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. El receptor NMDA es un canal iónico especial que requiere DOS condiciones para abrirse: (1) unión de glutamato (y glicina como co-agonista), Y (2) despolarización previa de la membrana postsináptica para desalojar el bloqueo por Mg²⁺. Permite entrada de Ca²⁺ (A incorrecta), es excitatorio (C incorrecta), y es activado por glutamato, no GABA (D incorrecta)."
+    },
+    {
+      "numero": 38,
+      "pergunta": "Antagonizando al receptor 5HT2 se puede lograr:",
+      "opcoes": [
+        {"letra": "A", "texto": "Efecto antipsicótico"},
+        {"letra": "B", "texto": "Emesis"},
+        {"letra": "C", "texto": "Efecto procinético digestivo"},
+        {"letra": "D", "texto": "Efecto antimigrañoso"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. El antagonismo del receptor 5HT2A contribuye al efecto antipsicótico de los antipsicóticos atípicos (clozapina, olanzapina, risperidona). El bloqueo 5HT2A reduce los efectos extrapiramidales del bloqueo D2 y puede mejorar síntomas negativos y cognitivos. El efecto antimigrañoso se logra con agonistas 5HT1D. El efecto procinético es por agonismo 5HT4."
+    },
+    {
+      "numero": 39,
+      "pergunta": "El receptor GABAa es:",
+      "opcoes": [
+        {"letra": "A", "texto": "Un canal de cationes operado por ligandos"},
+        {"letra": "B", "texto": "Un receptor estimulatório"},
+        {"letra": "C", "texto": "Un receptor acoplado a proteína Gi"},
+        {"letra": "D", "texto": "Un ionóforo de Cloro"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. El receptor GABA-A es un ionóforo de cloro: un canal iónico operado por ligando que, al activarse por GABA, permite la entrada de Cl⁻ al interior celular, hiperpolarizando la membrana (efecto inhibitorio). Es un canal de aniones (no cationes, A incorrecta), es inhibitorio (B incorrecta), y es ionotrópico (no acoplado a proteína G, C que correspondería al GABA-B)."
+    },
+    {
+      "numero": 40,
+      "pergunta": "Un efecto adverso Secundario:",
+      "opcoes": [
+        {"letra": "A", "texto": "Requiere contacto previo con la droga"},
+        {"letra": "B", "texto": "Ocurre luego de administración prolongada"},
+        {"letra": "C", "texto": "Depende del efecto terapéutico de la droga"},
+        {"letra": "D", "texto": "También se llama colateral"}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": "",
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. El efecto adverso secundario (también llamado colateral) depende del mecanismo y acción de la droga, es previsible y dosis-dependiente. Ejemplo: la somnolencia con antihistamínicos. No requiere contacto previo (eso es el alérgico/idiosincrático, opción A). No ocurre solo con administración prolongada (opción B). No depende del efecto terapéutico en sí (los secundarios son consecuencia de la farmacología de la droga en otros sitios)."
+    }
+  ]
+}

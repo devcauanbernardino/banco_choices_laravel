@@ -1,7 +1,9 @@
 @extends('layouts.public')
 
 @section('title', __('demo.page_title'))
-@section('body_attr', ' class="lp-body demo-body demo-body--funnel"')
+@section('body_attr')
+ class="lp-body demo-body demo-body--funnel"
+@endsection
 
 @push('styles')
     @include('pages.partials.landing-styles')

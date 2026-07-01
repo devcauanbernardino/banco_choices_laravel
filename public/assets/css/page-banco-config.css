@@ -118,6 +118,11 @@
   box-shadow: none;
 }
 
+.bc-mock-panel--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 @media (min-width: 768px) {
   .bc-mock-panel {
     padding: 2rem;

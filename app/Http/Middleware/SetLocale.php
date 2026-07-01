@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\App;
 
 class SetLocale
 {
-    private const SUPPORTED = ['es_AR', 'pt_BR', 'en_US'];
+    private const SUPPORTED = ['es_AR', 'pt_BR'];
     private const DEFAULT_LOCALE = 'es_AR';
 
     public function handle(Request $request, Closure $next)
