@@ -33,7 +33,7 @@ class GeminiClient
     private function call(array $contents, ?string $systemInstruction = null): string
     {
         $key = (string) config('services.gemini.key');
-        $model = (string) config('services.gemini.model', 'gemini-2.5-flash');
+        $model = (string) config('services.gemini.model', 'gemini-2.5-flash-lite');
 
         if ($key === '') {
             throw new RuntimeException('GEMINI_API_KEY não configurada.');
