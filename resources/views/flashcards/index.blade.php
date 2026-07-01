@@ -7,33 +7,49 @@
 @push('styles')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
+.fc-page { position: relative; isolation: isolate; }
+.fc-page::before, .fc-page::after { content: ''; position: fixed; width: 380px; height: 380px; border-radius: 50%; filter: blur(90px); z-index: -1; pointer-events: none; opacity: .5; }
+.fc-page::before { background: #8b1fb8; top: 8%; left: 8%; }
+.fc-page::after { background: #38bdf8; bottom: 4%; right: 6%; }
+[data-theme="dark"] .fc-page::before, [data-theme="dark"] .fc-page::after { opacity: .35; }
+
 .fc-header { margin-bottom: 24px; }
 .fc-header h1 { font-size: clamp(1.4rem,2.2vw,1.7rem); font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
 .fc-header p { color: var(--app-muted); font-size: .9rem; margin: 0; }
 
 .fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
 
-.fc-card { background: var(--app-surface); border: 1px solid var(--app-border); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.fc-glass { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.4); box-shadow: 0 8px 32px rgba(31,10,60,.1); }
+[data-theme="dark"] .fc-glass { background: rgba(255,255,255,.055); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
+
+.fc-card { border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
 .fc-card__title { font-size: 1rem; font-weight: 700; color: var(--app-text); margin: 0; }
 .fc-card__badges { display: flex; gap: 8px; flex-wrap: wrap; }
 .fc-badge { font-size: .74rem; font-weight: 700; padding: 4px 10px; border-radius: 99px; }
-.fc-badge--due { background: rgba(139,31,184,.12); color: #8b1fb8; }
-.fc-badge--new { background: rgba(34,197,94,.12); color: #16a34a; }
-.fc-badge--empty { background: var(--app-border); color: var(--app-muted); }
+.fc-badge--due { background: rgba(139,31,184,.16); color: #a855f7; }
+.fc-badge--new { background: rgba(34,197,94,.16); color: #22c55e; }
+.fc-badge--empty { background: rgba(120,120,140,.16); color: var(--app-muted); }
 .fc-card__actions { margin-top: auto; display: flex; align-items: center; gap: 10px; }
-.fc-card__input { width: 72px; border: 1px solid var(--app-border); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: var(--app-bg); color: var(--app-text); }
-.fc-card__btn { flex: 1; padding: 9px 14px; border-radius: 10px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; font-size: .84rem; cursor: pointer; }
-.fc-card__btn:disabled { opacity: .45; cursor: default; }
+.fc-card__input { width: 72px; border: 1px solid rgba(255,255,255,.4); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: rgba(255,255,255,.3); color: var(--app-text); }
+[data-theme="dark"] .fc-card__input { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); }
+.fc-card__btn { flex: 1; padding: 9px 14px; border-radius: 10px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; font-size: .84rem; cursor: pointer; box-shadow: 0 6px 18px rgba(106,3,146,.3); }
+.fc-card__btn:disabled { opacity: .4; cursor: default; box-shadow: none; }
 
 /* Modal de revisão */
-.fc-review-modal .modal-content { border-radius: 20px; border: none; background: var(--app-surface); color: var(--app-text); font-family: 'Inter', system-ui, sans-serif; }
+.fc-review-modal .modal-content { border-radius: 24px; border: 1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.55); backdrop-filter: blur(28px) saturate(190%); -webkit-backdrop-filter: blur(28px) saturate(190%); color: var(--app-text); font-family: 'Inter', system-ui, sans-serif; box-shadow: 0 30px 80px rgba(106,3,146,.28); position: relative; overflow: hidden; }
+[data-theme="dark"] .fc-review-modal .modal-content { background: rgba(20,20,26,.6); border-color: rgba(255,255,255,.1); box-shadow: 0 30px 80px rgba(0,0,0,.55); }
+.fc-review-modal .modal-content::before, .fc-review-modal .modal-content::after { content: ''; position: absolute; width: 240px; height: 240px; border-radius: 50%; filter: blur(70px); z-index: 0; pointer-events: none; opacity: .5; }
+.fc-review-modal .modal-content::before { background: #8b1fb8; top: -70px; left: -70px; }
+.fc-review-modal .modal-content::after { background: #38bdf8; bottom: -70px; right: -70px; }
+.fc-review-modal .modal-header, .fc-review-modal .modal-body { position: relative; z-index: 1; }
 .fc-review-modal__materia { font-size: .8rem; font-weight: 700; color: var(--app-muted); }
 .fc-review-modal__progress { font-size: .78rem; font-weight: 700; color: #a855f7; }
 
 .fc-flip { perspective: 1400px; margin-bottom: 4px; }
 .fc-flip-inner { position: relative; width: 100%; min-height: 220px; transition: transform .55s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
 .fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); }
-.fc-flip-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 18px; padding: clamp(20px,4vw,32px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 14px; background: var(--app-bg); border: 1px solid var(--app-border); }
+.fc-flip-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 18px; padding: clamp(20px,4vw,32px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 14px; background: rgba(255,255,255,.4); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.45); box-shadow: 0 10px 30px rgba(31,10,60,.1), inset 0 1px 0 rgba(255,255,255,.5); }
+[data-theme="dark"] .fc-flip-face { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 10px 30px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.05); }
 .fc-flip-face--front { cursor: pointer; }
 .fc-flip-face--front:disabled { cursor: default; }
 .fc-flip-back { transform: rotateY(180deg); }
@@ -42,23 +58,27 @@
 .fc-flip-hint { font-size: .76rem; color: var(--app-muted); }
 
 .fc-rate-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 16px; }
-.fc-rate-btn { padding: 10px 6px; border-radius: 10px; border: 1.5px solid var(--app-border); background: var(--app-surface); font-size: .76rem; font-weight: 700; cursor: pointer; color: var(--app-text); }
-.fc-rate-btn--again { color: #f87171; border-color: rgba(239,68,68,.35); }
-.fc-rate-btn--hard { color: #f97316; border-color: rgba(249,115,22,.35); }
-.fc-rate-btn--good { color: #22c55e; border-color: rgba(34,197,94,.35); }
-.fc-rate-btn--easy { color: #38bdf8; border-color: rgba(56,189,248,.35); }
+.fc-rate-btn { padding: 10px 6px; border-radius: 12px; border: 1px solid rgba(255,255,255,.4); background: rgba(255,255,255,.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-size: .76rem; font-weight: 700; cursor: pointer; color: var(--app-text); transition: transform .15s ease, background .15s ease; }
+.fc-rate-btn:hover { transform: translateY(-2px); }
+[data-theme="dark"] .fc-rate-btn { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.12); }
+.fc-rate-btn--again { color: #f87171; border-color: rgba(239,68,68,.4); }
+.fc-rate-btn--hard { color: #f97316; border-color: rgba(249,115,22,.4); }
+.fc-rate-btn--good { color: #22c55e; border-color: rgba(34,197,94,.4); }
+.fc-rate-btn--easy { color: #38bdf8; border-color: rgba(56,189,248,.4); }
 
 .fc-warn { margin-top: 12px; font-size: .76rem; color: #f97316; text-align: center; }
 
 .fc-sum { text-align: center; padding: 8px 0; }
 .fc-sum__total { font-size: 2rem; font-weight: 800; color: #a855f7; margin: 10px 0; }
 .fc-sum__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin: 16px 0; }
-.fc-sum__cell { background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 10px; padding: 12px 6px; }
+.fc-sum__cell { background: rgba(255,255,255,.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.4); border-radius: 12px; padding: 12px 6px; }
+[data-theme="dark"] .fc-sum__cell { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); }
 .fc-sum__cell strong { display: block; font-size: 1.1rem; }
 </style>
 @endpush
 
 @section('content')
+<div class="fc-page">
 <div class="fc-header">
     <h1>{{ __('flashcards.header.title') }}</h1>
     <p>{{ __('flashcards.header.sub') }}</p>
@@ -70,7 +90,7 @@
     <div class="fc-grid">
         @foreach ($materias as $m)
             @php $resumo = $resumoPorMateria[$m->id] ?? ['due_count' => 0, 'new_count' => 0, 'new_available_count' => 0]; @endphp
-            <div class="fc-card">
+            <div class="fc-card fc-glass">
                 <h3 class="fc-card__title">{{ $m->nome }}</h3>
                 <div class="fc-card__badges">
                     @if ($resumo['due_count'] > 0)
@@ -96,6 +116,7 @@
         @endforeach
     </div>
 @endif
+</div>
 @endsection
 
 @push('modals')
