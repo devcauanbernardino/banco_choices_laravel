@@ -306,26 +306,39 @@
         const tickColor = isDark ? '#9ca3af' : '#6b7280';
         const gridColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
         const ctx = document.getElementById('chartEvolucao').getContext('2d');
+        const palette = ['#a855f7', '#22c55e', '#f97316', '#38bdf8', '#f43f5e'];
+        const series = @json($evolucaoPorMateria['series'] ?? []);
+        const datasets = series.map(function (s, i) {
+            const color = palette[i % palette.length];
+            return {
+                label: s.nome,
+                data: s.data,
+                borderColor: color,
+                backgroundColor: color,
+                borderWidth: 2.5,
+                tension: 0,
+                fill: false,
+                spanGaps: true,
+                pointBackgroundColor: color,
+                pointRadius: 3
+            };
+        });
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: @json($evolucao['labels'] ?? []),
-                datasets: [{
-                    label: @json(__('stats.chart_dataset')),
-                    data: @json($evolucao['data'] ?? []),
-                    borderColor: '#a855f7',
-                    backgroundColor: isDark ? 'rgba(168, 85, 247, 0.12)' : 'rgba(106, 3, 146, 0.08)',
-                    borderWidth: 3,
-                    tension: 0.4,
-                    fill: true,
-                    pointBackgroundColor: '#c084fc',
-                    pointRadius: 4
-                }]
+                labels: @json($evolucaoPorMateria['labels'] ?? []),
+                datasets: datasets
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
+                plugins: {
+                    legend: {
+                        display: datasets.length > 1,
+                        position: 'bottom',
+                        labels: { color: tickColor, boxWidth: 12, boxHeight: 12 }
+                    }
+                },
                 scales: {
                     y: {
                         beginAtZero: true,

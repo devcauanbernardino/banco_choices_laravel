@@ -170,6 +170,39 @@ class StatsController extends Controller
             ];
         }
 
+        $evolucaoPorMateriaRows = $this->applyPeriod(
+            DB::table('historico_simulados as h')
+                ->join('materias as m', 'm.id', '=', 'h.materia_id')
+                ->where('h.usuario_id', $uid),
+            $period,
+            'h.data_realizacao',
+            $customFrom,
+            $customTo
+        )
+            ->selectRaw('m.nome as materia, DATE(h.data_realizacao) as data, (SUM(h.acertos)/SUM(h.total_questoes))*100 as desempenho')
+            ->groupByRaw('h.materia_id, m.nome, DATE(h.data_realizacao)')
+            ->orderBy('data')
+            ->get();
+
+        $materiasNoGrafico = collect($porMateria)->take(5)->pluck('nome')->all();
+        $datasLabelsRaw = $evolucaoPorMateriaRows->pluck('data')->unique()->sort()->values();
+
+        $evolucaoPorMateria = [
+            'labels' => $datasLabelsRaw->map(fn ($d) => Carbon::parse($d)->format('d/m'))->all(),
+            'series' => collect($materiasNoGrafico)->map(function ($nome) use ($evolucaoPorMateriaRows, $datasLabelsRaw) {
+                $porData = $evolucaoPorMateriaRows->where('materia', $nome)->keyBy('data');
+
+                return [
+                    'nome' => $nome,
+                    'data' => $datasLabelsRaw->map(function ($d) use ($porData) {
+                        $r = $porData->get($d);
+
+                        return $r ? round((float) $r->desempenho, 1) : null;
+                    })->values()->all(),
+                ];
+            })->values()->all(),
+        ];
+
         $semanal = $this->applyPeriod(
             DB::table('historico_simulados')->where('usuario_id', $uid),
             $period,
@@ -199,6 +232,7 @@ class StatsController extends Controller
             'porMateria',
             'evolucao',
             'evolucaoLinhas',
+            'evolucaoPorMateria',
             'semanal',
             'desempenhoParcialPorMateria'
         );
