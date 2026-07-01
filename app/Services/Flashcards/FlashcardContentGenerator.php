@@ -45,16 +45,21 @@ class FlashcardContentGenerator
             default => 'português',
         };
 
+        $system = 'Você transforma questões de múltipla escolha de medicina em flashcards de estudo (frente/verso), estilo Anki. '
+            ."REGRA OBRIGATÓRIA E INEGOCIÁVEL: sua resposta (frente e verso) deve ser escrita 100% em {$nomeIdioma}, "
+            .'independentemente do idioma do conteúdo de entrada que você receber. Nunca responda em outro idioma.';
+
         $opcoesTexto = implode("\n", $questao->getOpcoes());
         $prompt = "Questão de múltipla escolha (prova de medicina):\n{$questao->getPergunta()}\n\n"
             ."Alternativas:\n{$opcoesTexto}\n\n"
             .'Feedback/explicação: '.$questao->getFeedback()."\n\n"
             .'Transforme isso em UM flashcard de estudo simples (estilo Anki): uma "frente" objetiva '
             .'(pergunta curta ou termo-chave, sem listar alternativas) e um "verso" com a resposta direta e concisa '
-            ."(pode incluir uma explicação breve de 1-2 frases). Responda em {$nomeIdioma}. "
+            .'(pode incluir uma explicação breve de 1-2 frases). '
+            ."Lembrete final: responda em {$nomeIdioma}, mesmo que o conteúdo acima esteja em outro idioma. "
             .'Responda SOMENTE com um JSON válido no formato {"frente": "...", "verso": "..."}, sem markdown, sem texto extra.';
 
-        $resposta = app(GeminiClient::class)->generate($prompt);
+        $resposta = app(GeminiClient::class)->generate($prompt, $system);
         $json = self::extrairJson($resposta);
 
         $frente = trim((string) ($json['frente'] ?? ''));
