@@ -12,6 +12,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\FaviconController;
+use App\Http\Controllers\FlashcardController;
 use App\Http\Controllers\LandingCssController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\LocaleController;
@@ -133,6 +134,12 @@ Route::middleware(['auth', 'force.password.change'])->group(function () {
     });
     Route::get('/resultado/historico/{historico}', [ResultController::class, 'showHistory'])->name('simulation.result');
     Route::get('/resultado', [ResultController::class, 'show'])->name('result.show');
+
+    Route::get('/flashcards', [FlashcardController::class, 'index'])->name('flashcards.index');
+    Route::post('/flashcards/iniciar', [FlashcardController::class, 'create'])->name('flashcards.create');
+    Route::get('/flashcards/revisar', [FlashcardController::class, 'show'])->name('flashcards.show');
+    Route::post('/flashcards/revisar', [FlashcardController::class, 'process'])->name('flashcards.process');
+    Route::get('/flashcards/resumo', [FlashcardController::class, 'summary'])->name('flashcards.summary');
 
     Route::get('/simulados', [HistoryController::class, 'index'])->name('history');
     Route::get('/estatisticas', [StatsController::class, 'index'])->name('stats');

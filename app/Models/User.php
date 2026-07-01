@@ -66,6 +66,11 @@ class User extends Authenticatable
         return $this->hasMany(HistoricoSimulado::class, 'usuario_id');
     }
 
+    public function flashcardProgressos(): HasMany
+    {
+        return $this->hasMany(FlashcardProgresso::class, 'usuario_id');
+    }
+
     public function creditoMovimentos(): HasMany
     {
         return $this->hasMany(CreditoMovimento::class, 'user_id');
