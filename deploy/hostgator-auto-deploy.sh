@@ -49,17 +49,19 @@ if [[ -z "$GIT" ]]; then
     log "AVISO: git não encontrado — pulando verificação de commits, rodando artisan commands."
 else
     log "git fetch $REMOTE $BRANCH"
-    "$GIT" fetch "$REMOTE" "$BRANCH"
+    "$GIT" fetch "$REMOTE" "$BRANCH" || log "AVISO: git fetch falhou — continuando com HEAD local"
 
     LOCAL=$("$GIT" rev-parse HEAD)
-    REMOTE_HASH=$("$GIT" rev-parse "$REMOTE/$BRANCH")
+    REMOTE_HASH=$("$GIT" rev-parse "$REMOTE/$BRANCH" 2>/dev/null || echo "$LOCAL")
 
-    if [[ "$LOCAL" == "$REMOTE_HASH" ]]; then
-        log "Sem novidades no fetch (commit $LOCAL) — rodando deploy mesmo assim, pois o cPanel pode já ter atualizado o working copy antes deste cron."
-    else
+    # Sempre limpa working tree (arquivos não rastreados e modificações locais)
+    "$GIT" clean -fd
+    if [[ "$LOCAL" != "$REMOTE_HASH" ]]; then
         log "Atualizando $LOCAL -> $REMOTE_HASH"
-        "$GIT" clean -fd
         "$GIT" reset --hard "$REMOTE/$BRANCH"
+    else
+        log "Sem novidades (commit $LOCAL) — limpando working tree"
+        "$GIT" reset --hard HEAD
     fi
 fi
 
