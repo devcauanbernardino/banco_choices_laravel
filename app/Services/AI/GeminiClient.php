@@ -43,7 +43,10 @@ class GeminiClient
             'contents' => $contents,
             'generationConfig' => [
                 'temperature' => 0.4,
-                'maxOutputTokens' => 700,
+                'maxOutputTokens' => 1536,
+                // gemini-2.5-flash gasta tokens de "pensamento" antes da resposta visível;
+                // desligar evita que respostas simples sejam cortadas antes de terminar.
+                'thinkingConfig' => ['thinkingBudget' => 0],
             ],
         ];
 
@@ -61,10 +64,15 @@ class GeminiClient
             throw new RuntimeException('Falha ao consultar IA (Gemini): '.$response->status().' '.$response->body());
         }
 
+        $finishReason = data_get($response->json(), 'candidates.0.finishReason');
         $text = data_get($response->json(), 'candidates.0.content.parts.0.text');
 
         if (! is_string($text) || trim($text) === '') {
-            throw new RuntimeException('IA não retornou conteúdo.');
+            throw new RuntimeException('IA não retornou conteúdo (finishReason: '.($finishReason ?? 'desconhecido').').');
+        }
+
+        if ($finishReason === 'MAX_TOKENS') {
+            throw new RuntimeException('Resposta da IA foi cortada por limite de tokens.');
         }
 
         return trim($text);

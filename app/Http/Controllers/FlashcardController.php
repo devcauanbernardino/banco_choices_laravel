@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\FlashcardProgresso;
 use App\Models\Materia;
+use App\Services\Flashcards\FlashcardContentGenerator;
 use App\Services\Flashcards\FlashcardQueueBuilder;
 use App\Support\FlashcardSession;
 use App\Support\Question;
@@ -95,9 +96,24 @@ class FlashcardController extends Controller
 
         $qRaw = QuestionLocale::apply($lista[$overlayKey] ?? [], (string) app()->getLocale(), $banco);
         $questao = new Question($qRaw);
+        $questaoId = (int) $fila[$atual]['questao_id'];
+
+        try {
+            $conteudo = FlashcardContentGenerator::getOrGenerate($questaoId, $questao, (string) app()->getLocale());
+            $frente = $conteudo->frente;
+            $verso = $conteudo->verso;
+            $erroGeracao = null;
+        } catch (\Throwable $e) {
+            report($e);
+            $frente = $questao->getPergunta();
+            $verso = $questao->getFeedback();
+            $erroGeracao = __('flashcards.err.ai_generation_failed');
+        }
 
         $viewData = [
-            'questao' => $questao,
+            'frente' => $frente,
+            'verso' => $verso,
+            'erroGeracao' => $erroGeracao,
             'materiaNome' => $this->sessao->get('materia_nome') ?? '',
             'revelado' => (bool) $this->sessao->get('revelado'),
             'atual' => $atual,
