@@ -84,7 +84,6 @@
             search.setAttribute('placeholder', '{{ __("bank.temas.search_placeholder") }}');
             search.setAttribute('aria-label', '{{ __("bank.temas.search_aria") }}');
             search.id = 'qb_tema_search';
-
             wrap.appendChild(search);
 
             var listBox = document.createElement('div');
@@ -93,15 +92,18 @@
             listBox.style.overflow = 'auto';
             wrap.appendChild(listBox);
 
-            rows.forEach(function (tm) {
+            rows.forEach(function (item) {
+                var tm = item.tema !== undefined ? item.tema : item;
+                var tmParciais = item.parciais || [];
                 var display = (tm === BC_TEMA_SENT) ? BC_TEMA_SENT_LBL : tm;
+
                 var row = document.createElement('div');
                 row.className = 'qb-tema-row py-2 border-bottom border-opacity-10';
                 row.setAttribute('data-tema-match', normKey(display + ' ' + tm));
+                row.setAttribute('data-tema-parciais', JSON.stringify(tmParciais));
 
                 var lab = document.createElement('label');
                 lab.className = 'small d-flex align-items-start gap-2 mb-0';
-
                 lab.style.cursor = 'pointer';
 
                 var cb = document.createElement('input');
@@ -110,29 +112,40 @@
                 cb.name = 'tema[]';
                 cb.value = tm;
 
+                cb.addEventListener('change', function () {
+                    if (!this.checked) return;
+                    tmParciais.forEach(function (p) {
+                        var parcCb = document.querySelector('#qb_parciais input[value="' + p + '"]');
+                        if (parcCb && !parcCb.checked) {
+                            parcCb.checked = true;
+                        }
+                    });
+                });
+
                 var tx = document.createElement('span');
                 tx.className = 'flex-grow-1';
-
                 tx.textContent = display;
 
                 lab.appendChild(cb);
                 lab.appendChild(tx);
-
                 row.appendChild(lab);
                 listBox.appendChild(row);
-
             });
 
-            search.addEventListener('input', function () {
-                var q = normKey(search.value.trim());
+            function filterTemasByParciais() {
+                var checked = Array.from($('qb_parciais').querySelectorAll('input[type=checkbox]:checked')).map(function (el) { return el.value; });
+                var searchQ = normKey(search.value.trim());
                 listBox.querySelectorAll('.qb-tema-row').forEach(function (rw) {
-
-                    var m = rw.getAttribute('data-tema-match') || '';
-                    rw.classList.toggle('d-none', q !== '' && m.indexOf(q) === -1);
+                    var matchSearch = searchQ === '' || (rw.getAttribute('data-tema-match') || '').indexOf(searchQ) !== -1;
+                    var tmParcs = JSON.parse(rw.getAttribute('data-tema-parciais') || '[]');
+                    var matchParc = checked.length === 0 || tmParcs.length === 0 || tmParcs.some(function (p) { return checked.indexOf(p) !== -1; });
+                    rw.classList.toggle('d-none', !matchSearch || !matchParc);
                 });
+            }
 
-            });
+            $('qb_parciais').addEventListener('change', filterTemasByParciais);
 
+            search.addEventListener('input', filterTemasByParciais);
         });
     }
 

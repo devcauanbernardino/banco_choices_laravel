@@ -52,3 +52,7 @@ FROM (
   UNION ALL SELECT 38, 'Tema 2'
   UNION ALL SELECT 39, 'Tema 2'
 ) AS v;
+
+-- Vincular temas aos parciais para filtragem hierárquica
+UPDATE questoes SET parcial = '1' WHERE materia_id = @materia_id AND tema = 'Tema 1';
+UPDATE questoes SET parcial = '2' WHERE materia_id = @materia_id AND tema = 'Tema 2';

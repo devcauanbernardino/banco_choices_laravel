@@ -58,6 +58,7 @@ else
         log "Sem novidades no fetch (commit $LOCAL) — rodando deploy mesmo assim, pois o cPanel pode já ter atualizado o working copy antes deste cron."
     else
         log "Atualizando $LOCAL -> $REMOTE_HASH"
+        "$GIT" clean -fd
         "$GIT" reset --hard "$REMOTE/$BRANCH"
     fi
 fi

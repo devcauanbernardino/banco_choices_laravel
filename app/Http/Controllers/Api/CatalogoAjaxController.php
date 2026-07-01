@@ -114,7 +114,7 @@ class CatalogoAjaxController extends Controller
             return response()->json(['data' => []], 403);
         }
 
-        $temas = QuestionExamBuilder::temasDisponiveis($mid, $cid);
+        $temas = QuestionExamBuilder::temasDisponiveisComParciais($mid, $cid);
 
         return response()->json(['data' => $temas]);
     }

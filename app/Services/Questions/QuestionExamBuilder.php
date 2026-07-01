@@ -153,20 +153,47 @@ class QuestionExamBuilder
     /** @return list<string> */
     public static function temasDisponiveis(int $materiaId, ?int $catedraId = null): array
     {
+        return array_column(self::temasDisponiveisComParciais($materiaId, $catedraId), 'tema');
+    }
+
+    /**
+     * @return list<array{tema: string, parciais: list<string>}>
+     */
+    public static function temasDisponiveisComParciais(int $materiaId, ?int $catedraId = null): array
+    {
         $q = Questao::query()
             ->where('materia_id', $materiaId)
             ->whereNotNull('tema')
-            ->where('tema', '!=', '');
+            ->where('tema', '!=', '')
+            ->select('tema', 'parcial');
+
         if ($catedraId !== null) {
             $q->where(function ($w) use ($catedraId) {
                 $w->whereNull('catedra_id')->orWhere('catedra_id', $catedraId);
             });
         }
 
-        $out = $q->distinct()->orderBy('tema')->pluck('tema')->map(fn ($t) => (string) $t)->values()->all();
+        $byTema = [];
+        foreach ($q->distinct()->orderBy('tema')->get() as $row) {
+            $tema = (string) $row->tema;
+            if (! isset($byTema[$tema])) {
+                $byTema[$tema] = [];
+            }
+            if ($row->parcial !== null && $row->parcial !== '') {
+                $p = (string) $row->parcial;
+                if (! in_array($p, $byTema[$tema], true)) {
+                    $byTema[$tema][] = $p;
+                }
+            }
+        }
+
+        $out = [];
+        foreach ($byTema as $tema => $parciais) {
+            $out[] = ['tema' => $tema, 'parciais' => array_values($parciais)];
+        }
 
         if (self::hayQuestoesSemTemaEtiqueta($materiaId, $catedraId, false)) {
-            $out[] = self::TEMA_FILTRO_SEM_ETIQUETA;
+            $out[] = ['tema' => self::TEMA_FILTRO_SEM_ETIQUETA, 'parciais' => []];
         }
 
         return $out;
