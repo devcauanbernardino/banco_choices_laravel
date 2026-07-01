@@ -313,18 +313,13 @@
             return {
                 label: s.nome,
                 data: s.data,
-                borderColor: color,
                 backgroundColor: color,
-                borderWidth: 2.5,
-                tension: 0,
-                fill: false,
-                spanGaps: true,
-                pointBackgroundColor: color,
-                pointRadius: 3
+                borderRadius: 4,
+                maxBarThickness: 28
             };
         });
         new Chart(ctx, {
-            type: 'line',
+            type: 'bar',
             data: {
                 labels: @json($evolucaoPorMateria['labels'] ?? []),
                 datasets: datasets
@@ -348,7 +343,7 @@
                     },
                     x: {
                         ticks: { color: tickColor },
-                        grid: isDark ? { color: gridColor } : { display: false }
+                        grid: { display: false }
                     }
                 }
             }
