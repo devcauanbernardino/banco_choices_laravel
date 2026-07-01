@@ -241,20 +241,13 @@
     {{-- Quick actions --}}
     <div style="animation: fadeUp .6s .18s ease both;">
         <h3 style="font-size:.82rem; font-weight:700; color:var(--app-muted); text-transform:uppercase; letter-spacing:.1em; margin-bottom:12px;">{{ __('dashboard.home.quick_actions_title') }}</h3>
-        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:14px;">
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px;">
             <a class="bc-quick" href="{{ route('questionbank') }}">
                 <div style="width:40px; height:40px; border-radius:12px; background:rgba(106,3,146,.14); display:inline-flex; align-items:center; justify-content:center;">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="color:#a855f7;"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
                 </div>
                 <div style="font-size:.9rem; font-weight:700; color:var(--app-text);">{{ __('dashboard.home.quick_1_title') }}</div>
                 <p style="font-size:.78rem; color:var(--app-muted); line-height:1.5; margin:0;">{{ __('dashboard.home.quick_1_desc') }}</p>
-            </a>
-            <a class="bc-quick" href="{{ route('home') }}">
-                <div style="width:40px; height:40px; border-radius:12px; background:rgba(106,3,146,.14); display:inline-flex; align-items:center; justify-content:center;">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="color:#a855f7;"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-                </div>
-                <div style="font-size:.9rem; font-weight:700; color:var(--app-text);">{{ __('dashboard.home.quick_2_title') }}</div>
-                <p style="font-size:.78rem; color:var(--app-muted); line-height:1.5; margin:0;">{{ __('dashboard.home.quick_2_desc') }}</p>
             </a>
             <a class="bc-quick" href="{{ route('profile.show') }}">
                 <div style="width:40px; height:40px; border-radius:12px; background:rgba(106,3,146,.14); display:inline-flex; align-items:center; justify-content:center;">
