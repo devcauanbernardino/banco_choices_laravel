@@ -5,6 +5,7 @@
 @section('topbar_title', __('flashcards.mobile_title'))
 
 @push('styles')
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 .fc-header { margin-bottom: 24px; }
 .fc-header h1 { font-size: clamp(1.4rem,2.2vw,1.7rem); font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
@@ -23,6 +24,37 @@
 .fc-card__input { width: 72px; border: 1px solid var(--app-border); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: var(--app-bg); color: var(--app-text); }
 .fc-card__btn { flex: 1; padding: 9px 14px; border-radius: 10px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; font-size: .84rem; cursor: pointer; }
 .fc-card__btn:disabled { opacity: .45; cursor: default; }
+
+/* Modal de revisão */
+.fc-review-modal .modal-content { border-radius: 20px; border: none; background: var(--app-surface); color: var(--app-text); font-family: 'Inter', system-ui, sans-serif; }
+.fc-review-modal__materia { font-size: .8rem; font-weight: 700; color: var(--app-muted); }
+.fc-review-modal__progress { font-size: .78rem; font-weight: 700; color: #a855f7; }
+
+.fc-flip { perspective: 1400px; margin-bottom: 4px; }
+.fc-flip-inner { position: relative; width: 100%; min-height: 220px; transition: transform .55s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
+.fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); }
+.fc-flip-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 18px; padding: clamp(20px,4vw,32px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 14px; background: var(--app-bg); border: 1px solid var(--app-border); }
+.fc-flip-face--front { cursor: pointer; }
+.fc-flip-face--front:disabled { cursor: default; }
+.fc-flip-back { transform: rotateY(180deg); }
+.fc-flip-tag { font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #a855f7; }
+.fc-flip-text { font-size: 1.02rem; color: var(--app-text); line-height: 1.6; margin: 0; }
+.fc-flip-hint { font-size: .76rem; color: var(--app-muted); }
+
+.fc-rate-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 16px; }
+.fc-rate-btn { padding: 10px 6px; border-radius: 10px; border: 1.5px solid var(--app-border); background: var(--app-surface); font-size: .76rem; font-weight: 700; cursor: pointer; color: var(--app-text); }
+.fc-rate-btn--again { color: #f87171; border-color: rgba(239,68,68,.35); }
+.fc-rate-btn--hard { color: #f97316; border-color: rgba(249,115,22,.35); }
+.fc-rate-btn--good { color: #22c55e; border-color: rgba(34,197,94,.35); }
+.fc-rate-btn--easy { color: #38bdf8; border-color: rgba(56,189,248,.35); }
+
+.fc-warn { margin-top: 12px; font-size: .76rem; color: #f97316; text-align: center; }
+
+.fc-sum { text-align: center; padding: 8px 0; }
+.fc-sum__total { font-size: 2rem; font-weight: 800; color: #a855f7; margin: 10px 0; }
+.fc-sum__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin: 16px 0; }
+.fc-sum__cell { background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 10px; padding: 12px 6px; }
+.fc-sum__cell strong { display: block; font-size: 1.1rem; }
 </style>
 @endpush
 
@@ -31,13 +63,6 @@
     <h1>{{ __('flashcards.header.title') }}</h1>
     <p>{{ __('flashcards.header.sub') }}</p>
 </div>
-
-@if (session('error'))
-    <div class="alert alert-danger">{{ session('error') }}</div>
-@endif
-@if (session('info'))
-    <div class="alert alert-info">{{ session('info') }}</div>
-@endif
 
 @if ($materias->isEmpty())
     <p class="text-muted">{{ __('flashcards.no_subjects') }}</p>
@@ -58,8 +83,7 @@
                         <span class="fc-badge fc-badge--empty">{{ __('flashcards.card.all_caught_up') }}</span>
                     @endif
                 </div>
-                <form action="{{ route('flashcards.create') }}" method="post" class="fc-card__actions">
-                    @csrf
+                <form class="fc-card__actions" data-fc-start>
                     <input type="hidden" name="materia" value="{{ $m->id }}">
                     <input type="number" name="novos_por_dia" class="fc-card__input" min="0" max="200" value="20"
                            aria-label="{{ __('flashcards.form.new_per_day_label') }}">
@@ -73,3 +97,204 @@
     </div>
 @endif
 @endsection
+
+@push('modals')
+<div class="modal fade fc-review-modal" id="fcReviewModal" tabindex="-1" aria-labelledby="fcReviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <div>
+                    <div class="fc-review-modal__materia" id="fcModalMateria"></div>
+                    <div class="fc-review-modal__progress" id="fcModalProgress"></div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-2">
+                <div id="fcErrorBox" class="alert alert-danger d-none"></div>
+
+                <div id="fcModalCardView">
+                    <div class="fc-flip" id="fcFlip">
+                        <div class="fc-flip-inner">
+                            <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
+                                <span class="fc-flip-tag">{{ __('flashcards.review.due_badge') }}</span>
+                                <p class="fc-flip-text" id="fcFrenteText"></p>
+                                <span class="fc-flip-hint" id="fcRevealHint">{{ __('flashcards.review.reveal_button') }}</span>
+                            </button>
+                            <div class="fc-flip-face fc-flip-back">
+                                <span class="fc-flip-tag">{{ __('flashcards.summary.breakdown_good') }}</span>
+                                <p class="fc-flip-text" id="fcVersoText"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="fc-warn d-none" id="fcErroGeracao"></p>
+
+                    <div class="fc-rate-grid d-none" id="fcRateGrid">
+                        <button type="button" class="fc-rate-btn fc-rate-btn--again" data-avaliacao="again">{{ __('flashcards.review.rate_again') }}</button>
+                        <button type="button" class="fc-rate-btn fc-rate-btn--hard" data-avaliacao="hard">{{ __('flashcards.review.rate_hard') }}</button>
+                        <button type="button" class="fc-rate-btn fc-rate-btn--good" data-avaliacao="good">{{ __('flashcards.review.rate_good') }}</button>
+                        <button type="button" class="fc-rate-btn fc-rate-btn--easy" data-avaliacao="easy">{{ __('flashcards.review.rate_easy') }}</button>
+                    </div>
+                </div>
+
+                <div id="fcModalSummaryView" class="d-none fc-sum">
+                    <h2 class="h5 fw-bold mb-0">{{ __('flashcards.summary.title') }}</h2>
+                    <div class="fc-sum__total" id="fcSumTotal"></div>
+                    <div class="fc-sum__grid">
+                        <div class="fc-sum__cell"><strong style="color:#f87171;" id="fcSumAgain">0</strong>{{ __('flashcards.summary.breakdown_again') }}</div>
+                        <div class="fc-sum__cell"><strong style="color:#f97316;" id="fcSumHard">0</strong>{{ __('flashcards.summary.breakdown_hard') }}</div>
+                        <div class="fc-sum__cell"><strong style="color:#22c55e;" id="fcSumGood">0</strong>{{ __('flashcards.summary.breakdown_good') }}</div>
+                        <div class="fc-sum__cell"><strong style="color:#38bdf8;" id="fcSumEasy">0</strong>{{ __('flashcards.summary.breakdown_easy') }}</div>
+                    </div>
+                    <button type="button" class="fc-card__btn" data-bs-dismiss="modal">{{ __('flashcards.summary.cta_back') }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endpush
+
+@push('scripts')
+<script>
+(function () {
+    var modalEl = document.getElementById('fcReviewModal');
+    if (!modalEl) return;
+    var modal = null;
+    var csrf = document.querySelector('meta[name="csrf-token"]');
+    var reviewedAny = false;
+
+    var cardView = document.getElementById('fcModalCardView');
+    var summaryView = document.getElementById('fcModalSummaryView');
+    var flip = document.getElementById('fcFlip');
+    var frontBtn = document.getElementById('fcFrontBtn');
+    var revealHint = document.getElementById('fcRevealHint');
+    var frenteText = document.getElementById('fcFrenteText');
+    var versoText = document.getElementById('fcVersoText');
+    var rateGrid = document.getElementById('fcRateGrid');
+    var erroGeracaoBox = document.getElementById('fcErroGeracao');
+    var errorBox = document.getElementById('fcErrorBox');
+    var materiaLbl = document.getElementById('fcModalMateria');
+    var progressLbl = document.getElementById('fcModalProgress');
+    var progressTpl = @json(__('flashcards.review.progress', ['current' => '__C__', 'total' => '__T__']));
+
+    function headers() {
+        return {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-TOKEN': csrf ? csrf.content : ''
+        };
+    }
+
+    function showError(msg) {
+        errorBox.textContent = msg;
+        errorBox.classList.remove('d-none');
+    }
+
+    function renderCard(data) {
+        errorBox.classList.add('d-none');
+        cardView.classList.remove('d-none');
+        summaryView.classList.add('d-none');
+        materiaLbl.textContent = data.materia_nome;
+        progressLbl.textContent = progressTpl.replace('__C__', data.atual + 1).replace('__T__', data.total);
+        frenteText.textContent = data.frente;
+
+        if (data.revelado) {
+            versoText.textContent = data.verso;
+            flip.classList.add('is-flipped');
+            rateGrid.classList.remove('d-none');
+            frontBtn.disabled = true;
+            revealHint.style.visibility = 'hidden';
+        } else {
+            flip.classList.remove('is-flipped');
+            rateGrid.classList.add('d-none');
+            frontBtn.disabled = false;
+            revealHint.style.visibility = 'visible';
+        }
+
+        if (data.erro_geracao) {
+            erroGeracaoBox.textContent = data.erro_geracao;
+            erroGeracaoBox.classList.remove('d-none');
+        } else {
+            erroGeracaoBox.classList.add('d-none');
+        }
+    }
+
+    function renderSummary(data) {
+        cardView.classList.add('d-none');
+        summaryView.classList.remove('d-none');
+        document.getElementById('fcSumTotal').textContent = @json(__('flashcards.summary.total_reviewed', ['n' => '__N__'])).replace('__N__', data.total);
+        document.getElementById('fcSumAgain').textContent = data.contagem.again;
+        document.getElementById('fcSumHard').textContent = data.contagem.hard;
+        document.getElementById('fcSumGood').textContent = data.contagem.good;
+        document.getElementById('fcSumEasy').textContent = data.contagem.easy;
+    }
+
+    function startReview(materiaId, novosPorDia) {
+        fetch('{{ route('flashcards.create') }}', {
+            method: 'POST',
+            headers: headers(),
+            body: JSON.stringify({ materia: materiaId, novos_por_dia: novosPorDia })
+        }).then(function (r) {
+            return r.json().then(function (body) { return { ok: r.ok, body: body }; });
+        }).then(function (res) {
+            if (!modal) modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+            modal.show();
+            if (!res.ok) {
+                cardView.classList.add('d-none');
+                summaryView.classList.add('d-none');
+                showError((res.body && res.body.error) || '');
+                return;
+            }
+            reviewedAny = false;
+            renderCard(res.body);
+        });
+    }
+
+    frontBtn.addEventListener('click', function () {
+        if (frontBtn.disabled) return;
+        fetch('{{ route('flashcards.process') }}', {
+            method: 'POST',
+            headers: headers(),
+            body: JSON.stringify({ revelar: 1 })
+        }).then(function (r) { return r.json(); }).then(function (data) {
+            if (data.error) { showError(data.error); return; }
+            renderCard(data);
+        });
+    });
+
+    rateGrid.querySelectorAll('button[data-avaliacao]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            reviewedAny = true;
+            fetch('{{ route('flashcards.process') }}', {
+                method: 'POST',
+                headers: headers(),
+                body: JSON.stringify({ avaliar: btn.dataset.avaliacao })
+            }).then(function (r) { return r.json(); }).then(function (data) {
+                if (data.error) { showError(data.error); return; }
+                if (data.finished) {
+                    renderSummary(data);
+                } else {
+                    renderCard(data);
+                }
+            });
+        });
+    });
+
+    document.querySelectorAll('[data-fc-start]').forEach(function (form) {
+        form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            var materiaId = form.querySelector('[name="materia"]').value;
+            var novos = form.querySelector('[name="novos_por_dia"]').value;
+            startReview(materiaId, novos);
+        });
+    });
+
+    modalEl.addEventListener('hidden.bs.modal', function () {
+        if (reviewedAny) {
+            location.reload();
+        }
+    });
+})();
+</script>
+@endpush

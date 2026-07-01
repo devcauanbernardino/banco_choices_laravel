@@ -137,9 +137,7 @@ Route::middleware(['auth', 'force.password.change'])->group(function () {
 
     Route::get('/flashcards', [FlashcardController::class, 'index'])->name('flashcards.index');
     Route::post('/flashcards/iniciar', [FlashcardController::class, 'create'])->name('flashcards.create');
-    Route::get('/flashcards/revisar', [FlashcardController::class, 'show'])->name('flashcards.show');
     Route::post('/flashcards/revisar', [FlashcardController::class, 'process'])->name('flashcards.process');
-    Route::get('/flashcards/resumo', [FlashcardController::class, 'summary'])->name('flashcards.summary');
 
     Route::get('/simulados', [HistoryController::class, 'index'])->name('history');
     Route::get('/estatisticas', [StatsController::class, 'index'])->name('stats');

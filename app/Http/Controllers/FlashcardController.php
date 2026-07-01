@@ -11,6 +11,7 @@ use App\Support\Question;
 use App\Support\QuestionBankLocator;
 use App\Support\QuestionLocale;
 use App\Support\Sm2Scheduler;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -36,7 +37,7 @@ class FlashcardController extends Controller
         return view('flashcards.index', compact('materias', 'resumoPorMateria'));
     }
 
-    public function create(Request $request)
+    public function create(Request $request): JsonResponse
     {
         $request->validate([
             'materia' => 'required|integer|exists:materias,id',
@@ -48,7 +49,7 @@ class FlashcardController extends Controller
         $materiaId = (int) $request->input('materia');
 
         if (! $user->possuiMateria($materiaId)) {
-            return redirect()->route('flashcards.index')->with('error', __('flashcards.err.unauthorized_subject'));
+            return response()->json(['error' => __('flashcards.err.unauthorized_subject')], 403);
         }
 
         $materia = Materia::query()->findOrFail($materiaId);
@@ -58,7 +59,7 @@ class FlashcardController extends Controller
         $refs = array_merge($fila['due'], $fila['new']);
 
         if ($refs === []) {
-            return redirect()->route('flashcards.index')->with('info', __('flashcards.err.nothing_to_review'));
+            return response()->json(['error' => __('flashcards.err.nothing_to_review')], 422);
         }
 
         $this->sessao->init([
@@ -71,62 +72,13 @@ class FlashcardController extends Controller
             'resultados' => [],
         ]);
 
-        return redirect()->route('flashcards.show');
+        return response()->json($this->cardPayload());
     }
 
-    public function show()
+    public function process(Request $request): JsonResponse
     {
         if (! $this->sessao->isActive()) {
-            return redirect()->route('flashcards.index');
-        }
-
-        $this->ensureAuthorized();
-
-        $fila = (array) ($this->sessao->get('fila') ?? []);
-        $atual = (int) ($this->sessao->get('atual') ?? 0);
-
-        if (! isset($fila[$atual])) {
-            return redirect()->route('flashcards.summary');
-        }
-
-        $banco = (string) ($this->sessao->get('banco_questoes') ?? '');
-        $materiaId = (int) $this->sessao->get('materia');
-        $lista = QuestionBankLocator::loadCanonicalList($materiaId);
-        $overlayKey = (int) $fila[$atual]['overlay_key'];
-
-        $qRaw = QuestionLocale::apply($lista[$overlayKey] ?? [], (string) app()->getLocale(), $banco);
-        $questao = new Question($qRaw);
-        $questaoId = (int) $fila[$atual]['questao_id'];
-
-        try {
-            $conteudo = FlashcardContentGenerator::getOrGenerate($questaoId, $questao, (string) app()->getLocale());
-            $frente = $conteudo->frente;
-            $verso = $conteudo->verso;
-            $erroGeracao = null;
-        } catch (\Throwable $e) {
-            report($e);
-            $frente = $questao->getPergunta();
-            $verso = $questao->getFeedback();
-            $erroGeracao = __('flashcards.err.ai_generation_failed');
-        }
-
-        $viewData = [
-            'frente' => $frente,
-            'verso' => $verso,
-            'erroGeracao' => $erroGeracao,
-            'materiaNome' => $this->sessao->get('materia_nome') ?? '',
-            'revelado' => (bool) $this->sessao->get('revelado'),
-            'atual' => $atual,
-            'total' => count($fila),
-        ];
-
-        return view('flashcards.show', $viewData);
-    }
-
-    public function process(Request $request)
-    {
-        if (! $this->sessao->isActive()) {
-            return redirect()->route('flashcards.index');
+            return response()->json(['error' => __('flashcards.err.session_expired')], 409);
         }
 
         $this->ensureAuthorized();
@@ -134,12 +86,12 @@ class FlashcardController extends Controller
         if ($request->has('revelar')) {
             $this->sessao->set('revelado', true);
 
-            return redirect()->route('flashcards.show');
+            return response()->json($this->cardPayload());
         }
 
         if ($request->has('avaliar')) {
             if (! $this->sessao->get('revelado')) {
-                return redirect()->route('flashcards.show');
+                return response()->json(['error' => __('flashcards.err.reveal_first')], 409);
             }
 
             $request->validate([
@@ -154,16 +106,61 @@ class FlashcardController extends Controller
 
             $fila = (array) ($this->sessao->get('fila') ?? []);
             if (! isset($fila[$atual])) {
-                return redirect()->route('flashcards.summary');
+                return response()->json($this->summaryPayload());
             }
 
-            return redirect()->route('flashcards.show');
+            return response()->json($this->cardPayload());
         }
 
-        return redirect()->route('flashcards.show');
+        return response()->json(['error' => __('flashcards.err.invalid_action')], 422);
     }
 
-    public function summary()
+    /**
+     * @return array<string, mixed>
+     */
+    private function cardPayload(): array
+    {
+        $fila = (array) ($this->sessao->get('fila') ?? []);
+        $atual = (int) ($this->sessao->get('atual') ?? 0);
+
+        $banco = (string) ($this->sessao->get('banco_questoes') ?? '');
+        $materiaId = (int) $this->sessao->get('materia');
+        $lista = QuestionBankLocator::loadCanonicalList($materiaId);
+        $overlayKey = (int) $fila[$atual]['overlay_key'];
+
+        $qRaw = QuestionLocale::apply($lista[$overlayKey] ?? [], (string) app()->getLocale(), $banco);
+        $questao = new Question($qRaw);
+        $questaoId = (int) $fila[$atual]['questao_id'];
+        $revelado = (bool) $this->sessao->get('revelado');
+
+        try {
+            $conteudo = FlashcardContentGenerator::getOrGenerate($questaoId, $questao, (string) app()->getLocale());
+            $frente = $conteudo->frente;
+            $verso = $conteudo->verso;
+            $erroGeracao = null;
+        } catch (\Throwable $e) {
+            report($e);
+            $frente = $questao->getPergunta();
+            $verso = $questao->getFeedback();
+            $erroGeracao = __('flashcards.err.ai_generation_failed');
+        }
+
+        return [
+            'finished' => false,
+            'materia_nome' => $this->sessao->get('materia_nome') ?? '',
+            'frente' => $frente,
+            'verso' => $revelado ? $verso : null,
+            'erro_geracao' => $revelado ? $erroGeracao : null,
+            'revelado' => $revelado,
+            'atual' => $atual,
+            'total' => count($fila),
+        ];
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function summaryPayload(): array
     {
         $resultados = (array) ($this->sessao->get('resultados') ?? []);
         $materiaNome = (string) ($this->sessao->get('materia_nome') ?? '');
@@ -178,11 +175,12 @@ class FlashcardController extends Controller
 
         $this->sessao->clear();
 
-        return view('flashcards.summary', [
-            'materiaNome' => $materiaNome,
+        return [
+            'finished' => true,
+            'materia_nome' => $materiaNome,
             'total' => count($resultados),
             'contagem' => $contagem,
-        ]);
+        ];
     }
 
     private function registrarAvaliacao(string $avaliacao): void
