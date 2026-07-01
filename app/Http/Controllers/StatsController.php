@@ -222,6 +222,7 @@ class StatsController extends Controller
             ])->all();
 
         $desempenhoParcialPorMateria = $this->aggregateDesempenhoPorParcial($uid, $period, $customFrom, $customTo);
+        $desempenhoPorTema = $this->aggregateDesempenhoPorTema($uid, $period, $customFrom, $customTo);
 
         return compact(
             'totalResp',
@@ -234,7 +235,8 @@ class StatsController extends Controller
             'evolucaoLinhas',
             'evolucaoPorMateria',
             'semanal',
-            'desempenhoParcialPorMateria'
+            'desempenhoParcialPorMateria',
+            'desempenhoPorTema'
         );
     }
 
@@ -328,6 +330,102 @@ class StatsController extends Controller
                 'materia_id' => $mid,
                 'materia_nome' => $nome !== '' ? $nome : '—',
                 'parciais' => $parciais,
+            ];
+        }
+
+        usort($out, fn ($a, $b) => strcmp((string) $a['materia_nome'], (string) $b['materia_nome']));
+
+        return $out;
+    }
+
+    /**
+     * @return list<array{materia_id:int, materia_nome:string, temas:list<array{tema:string, acertos:int, total:int, pct:float}>}>
+     */
+    private function aggregateDesempenhoPorTema(int $uid, string $period, ?Carbon $customFrom, ?Carbon $customTo): array
+    {
+        $query = HistoricoSimulado::query()->with('materia')->where('usuario_id', $uid);
+        $this->applyPeriod($query, $period, 'data_realizacao', $customFrom, $customTo);
+        /** @var \Illuminate\Support\Collection<int,HistoricoSimulado> $rows */
+        $rows = $query->get(['materia_id', 'detalhes_json']);
+
+        /** @var array<int, array<string, array{acertos:int, total:int}>> $byMid */
+        $byMid = [];
+
+        /** @var array<int, string> $nomesPorMid */
+        $nomesPorMid = [];
+
+        foreach ($rows as $row) {
+            $mid = (int) $row->materia_id;
+            if ($mid <= 0) {
+                continue;
+            }
+            if (($nomesPorMid[$mid] ?? '') === '') {
+                $nomesPorMid[$mid] = trim((string) ($row->materia?->nome ?? ''));
+            }
+            $payload = $row->detalhes_json ?? [];
+            if (! is_array($payload)) {
+                continue;
+            }
+            $detalhes = $payload['detalhes'] ?? [];
+            if (! is_array($detalhes)) {
+                continue;
+            }
+
+            foreach ($detalhes as $d) {
+                if (! is_array($d)) {
+                    continue;
+                }
+                $tema = trim((string) ($d['tema'] ?? ''));
+                if ($tema === '') {
+                    continue;
+                }
+                $acertou = ! empty($d['acertou']);
+                if (! isset($byMid[$mid])) {
+                    $byMid[$mid] = [];
+                }
+                if (! isset($byMid[$mid][$tema])) {
+                    $byMid[$mid][$tema] = ['acertos' => 0, 'total' => 0];
+                }
+                $byMid[$mid][$tema]['total']++;
+                if ($acertou) {
+                    $byMid[$mid][$tema]['acertos']++;
+                }
+            }
+        }
+
+        $out = [];
+
+        foreach ($byMid as $mid => $buckets) {
+            $nome = $nomesPorMid[(int) $mid] ?? '';
+            if ($nome === '') {
+                $nome = (string) (DB::table('materias')->whereKey($mid)->value('nome') ?? '');
+            }
+
+            $temas = [];
+            foreach ($buckets as $tema => $b) {
+                $tot = (int) ($b['total'] ?? 0);
+                if ($tot <= 0) {
+                    continue;
+                }
+                $ac = (int) ($b['acertos'] ?? 0);
+                $temas[] = [
+                    'tema' => (string) $tema,
+                    'acertos' => $ac,
+                    'total' => $tot,
+                    'pct' => round(($ac / $tot) * 100, 1),
+                ];
+            }
+
+            if ($temas === []) {
+                continue;
+            }
+
+            usort($temas, fn ($a, $b) => strnatcasecmp((string) $a['tema'], (string) $b['tema']));
+
+            $out[] = [
+                'materia_id' => $mid,
+                'materia_nome' => $nome !== '' ? $nome : '—',
+                'temas' => $temas,
             ];
         }
 

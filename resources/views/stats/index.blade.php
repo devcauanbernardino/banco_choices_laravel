@@ -179,6 +179,23 @@
         </section>
         @endif
 
+        @if(!empty($desempenhoPorTema))
+        <section class="bc-mock-stats__parc-panel px-3 px-md-4 py-4 mb-3 rounded-4 border shadow-sm bg-body-tertiary/30 border-opacity-50" aria-label="{{ __('stats.tema_section_title') }}">
+            <h3 class="h5 fw-bold mb-1">{{ __('stats.tema_section_title') }}</h3>
+            <p class="small text-secondary mb-4">{{ __('stats.tema_section_help') }}</p>
+            <div class="row g-4">
+                @foreach ($desempenhoPorTema as $bloque)
+                    <div class="col-12 col-xl-6">
+                        <h4 class="h6 fw-semibold mb-3 text-secondary">{{ ucfirst((string) $bloque['materia_nome']) }}</h4>
+                        <div style="position:relative; height: {{ max(160, count($bloque['temas']) * 34) }}px;">
+                            <canvas id="chartTema{{ $bloque['materia_id'] }}"></canvas>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+        @endif
+
         <section class="bc-mock-stats__table-panel overflow-hidden">
             <div class="bc-mock-stats__table-head">
                 <h3>{{ __('stats.week_title') }}</h3>
@@ -347,6 +364,43 @@
                     }
                 }
             }
+        });
+
+        const temaBlocos = @json($desempenhoPorTema ?? []);
+        temaBlocos.forEach(function (bloco) {
+            const el = document.getElementById('chartTema' + bloco.materia_id);
+            if (!el) return;
+            new Chart(el.getContext('2d'), {
+                type: 'bar',
+                data: {
+                    labels: bloco.temas.map(function (t) { return t.tema; }),
+                    datasets: [{
+                        label: @json(__('stats.tema_dataset')),
+                        data: bloco.temas.map(function (t) { return t.pct; }),
+                        backgroundColor: '#a855f7',
+                        borderRadius: 4,
+                        maxBarThickness: 22
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: { color: tickColor },
+                            grid: isDark ? { color: gridColor } : { display: false }
+                        },
+                        y: {
+                            ticks: { color: tickColor },
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
         });
     })();
 </script>

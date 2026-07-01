@@ -94,6 +94,7 @@ class ResultController extends Controller
                 'acertou' => $correct,
                 'feedback' => $q->getFeedback(),
                 'parcial' => isset($questoes[$i]['_parcial']) ? $questoes[$i]['_parcial'] : null,
+                'tema' => isset($questoes[$i]['_tema']) ? $questoes[$i]['_tema'] : null,
             ];
         }
 
