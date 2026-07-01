@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/private-app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/simulation-result.css') }}?v={{ @filemtime(public_path('assets/css/simulation-result.css')) }}">
     <script>
         (function () {
             var saved = localStorage.getItem('bancochoices-theme') || 'light';
