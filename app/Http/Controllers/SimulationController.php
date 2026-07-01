@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Materia;
+use App\Services\AI\GeminiClient;
 use App\Services\Questions\QuestionExamBuilder;
 use App\Support\Question;
 use App\Support\QuestionBankLocator;
@@ -322,6 +323,75 @@ class SimulationController extends Controller
             ];
             $this->sim->set('feedback', $feedbacks);
         }
+    }
+
+    public function explainWithAi(): \Illuminate\Http\JsonResponse
+    {
+        if (! $this->sim->isActive()) {
+            return response()->json(['error' => __('quiz.ai.session_expired')], 409);
+        }
+
+        $this->ensureAuthorized();
+
+        $modo = (string) ($this->sim->get('modo') ?? 'estudo');
+        if ($modo !== 'estudo') {
+            return response()->json(['error' => __('quiz.ai.only_study_mode')], 403);
+        }
+
+        $indiceAtual = (int) ($this->sim->get('atual') ?? 0);
+        $questoes = (array) ($this->sim->get('questoes') ?? []);
+        $feedbacksAll = (array) ($this->sim->get('feedback') ?? []);
+
+        if (! isset($questoes[$indiceAtual]) || ! isset($feedbacksAll[$indiceAtual])) {
+            return response()->json(['error' => __('quiz.ai.answer_first')], 409);
+        }
+
+        $banco = (string) ($this->sim->get('banco_questoes') ?? '');
+        $qRaw = QuestionLocale::apply($questoes[$indiceAtual], (string) app()->getLocale(), $banco);
+        $questao = new Question($qRaw);
+
+        $letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+        $opcoes = $questao->getOpcoes();
+        $opcoesTexto = [];
+        foreach ($opcoes as $i => $texto) {
+            $opcoesTexto[] = ($letras[$i] ?? $i).') '.$texto;
+        }
+
+        $corretaIdx = $questao->isMultiResposta()
+            ? $questao->getCorrectAnswerIndices()
+            : array_filter([$questao->getCorrectAnswer()], fn ($v) => $v !== '');
+        $corretaLetras = array_map(fn ($i) => $letras[(int) $i] ?? $i, $corretaIdx);
+
+        $respostaUsuario = (string) ($feedbacksAll[$indiceAtual]['resposta_usuario'] ?? '');
+        $usuarioIdx = array_filter(explode(',', $respostaUsuario), fn ($v) => $v !== '');
+        $usuarioLetras = array_map(fn ($i) => $letras[(int) $i] ?? $i, $usuarioIdx);
+
+        $idioma = match (substr((string) app()->getLocale(), 0, 2)) {
+            'es' => 'espanhol',
+            'en' => 'inglês',
+            default => 'português',
+        };
+
+        $prompt = "Questão de prova de medicina:\n{$questao->getPergunta()}\n\n"
+            ."Alternativas:\n".implode("\n", $opcoesTexto)."\n\n"
+            .'Resposta correta: '.(implode(', ', $corretaLetras) ?: 'não definida')."\n"
+            .'Resposta do aluno: '.($usuarioLetras !== [] ? implode(', ', $usuarioLetras) : 'não respondeu')."\n\n"
+            .'Explique de forma clara e didática por que a resposta correta está certa e, se o aluno errou, '
+            .'por que a alternativa escolhida por ele está incorreta. '
+            ."Responda em {$idioma}, em até 5 frases, sem repetir literalmente o enunciado.";
+
+        $system = 'Você é um tutor de medicina que explica questões de prova de forma clara, direta e didática '
+            .'para estudantes de graduação.';
+
+        try {
+            $explicacao = app(GeminiClient::class)->generate($prompt, $system);
+        } catch (\Throwable $e) {
+            report($e);
+
+            return response()->json(['error' => __('quiz.ai.error')], 502);
+        }
+
+        return response()->json(['explicacao' => $explicacao]);
     }
 
     private function ensureAuthorized(): void

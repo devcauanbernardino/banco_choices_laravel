@@ -188,6 +188,16 @@
                             @if (!empty($feedback['feedback']))
                                 <p style="font-size:.86rem; color:var(--app-text); line-height:1.65; margin:0;">{{ $feedback['feedback'] }}</p>
                             @endif
+
+                            <div style="margin-top:14px;">
+                                <button type="button" id="qzAiExplainBtn" style="display:inline-flex; align-items:center; gap:7px; padding:8px 16px; border-radius:10px; border:1.5px solid rgba(139,31,184,.35); background:rgba(139,31,184,.06); color:#8b1fb8; font-size:.8rem; font-weight:700; cursor:pointer;">
+                                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem;">auto_awesome</span>
+                                    {{ __('quiz.ai.explain_btn') }}
+                                </button>
+                                <div id="qzAiExplainBox" class="d-none" style="margin-top:10px; padding:13px 16px; border-radius:12px; background:rgba(139,31,184,.06); border:1px solid rgba(139,31,184,.2);">
+                                    <p id="qzAiExplainText" style="font-size:.85rem; color:var(--app-text); line-height:1.65; margin:0;"></p>
+                                </div>
+                            </div>
                         </div>
                     @endif
 
@@ -371,5 +381,46 @@
         }, 1000);
     })();
     @endif
+
+    (function () {
+        var btn = document.getElementById('qzAiExplainBtn');
+        if (!btn) return;
+        var box = document.getElementById('qzAiExplainBox');
+        var text = document.getElementById('qzAiExplainText');
+        var originalHtml = btn.innerHTML;
+        var csrf = document.querySelector('meta[name="csrf-token"]');
+
+        btn.addEventListener('click', function () {
+            btn.disabled = true;
+            btn.style.opacity = '.6';
+            btn.style.cursor = 'default';
+            btn.innerHTML = '{{ __('quiz.ai.loading') }}';
+
+            fetch('{{ route('simulation.explainAi') }}', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'X-CSRF-TOKEN': csrf ? csrf.content : '',
+                },
+            }).then(function (r) {
+                return r.json().then(function (body) { return { ok: r.ok, body: body }; });
+            }).then(function (res) {
+                if (!res.ok) {
+                    throw new Error((res.body && res.body.error) || '{{ __('quiz.ai.error') }}');
+                }
+                text.textContent = res.body.explicacao;
+                box.classList.remove('d-none');
+                btn.remove();
+            }).catch(function (err) {
+                text.textContent = err.message;
+                box.classList.remove('d-none');
+                btn.disabled = false;
+                btn.style.opacity = '';
+                btn.style.cursor = 'pointer';
+                btn.innerHTML = originalHtml;
+            });
+        });
+    })();
 </script>
 @endpush

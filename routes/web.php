@@ -121,6 +121,9 @@ Route::middleware(['auth', 'force.password.change'])->group(function () {
     Route::post('/criar-simulado', [SimulationController::class, 'create'])->name('simulation.create');
     Route::get('/questionario', [SimulationController::class, 'show'])->name('simulation.show');
     Route::post('/processa', [SimulationController::class, 'process'])->name('simulation.process');
+    Route::post('/questionario/explicar-ia', [SimulationController::class, 'explainWithAi'])
+        ->middleware('throttle:20,1')
+        ->name('simulation.explainAi');
     Route::get('/resultado/historico/{historico}', [ResultController::class, 'showHistory'])->name('simulation.result');
     Route::get('/resultado', [ResultController::class, 'show'])->name('result.show');
 
