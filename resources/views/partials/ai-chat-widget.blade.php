@@ -1,7 +1,20 @@
+@php
+    $bcChatMascoteFiles = [
+        'robo' => 'robo-choice.png',
+        'fantasma' => 'fantasma-choice.png',
+        'gato' => 'gato-choice.png',
+    ];
+    $bcChatMascoteFile = $bcChatMascoteFiles[auth()->user()->mascote ?? null] ?? null;
+@endphp
 <div id="bcAiChatWidget" style="position:fixed; right:20px; bottom:20px; z-index:1050; font-family:'Inter',system-ui,sans-serif;">
     <button type="button" id="bcAiChatToggle" aria-label="{{ __('ia_chat.open_aria') }}"
-            style="width:56px; height:56px; border-radius:50%; border:none; background:linear-gradient(135deg,#8b1fb8,#6a0392); box-shadow:0 8px 24px rgba(106,3,146,.35); display:flex; align-items:center; justify-content:center; cursor:pointer;">
-        <svg id="bcAiChatIconOpen" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            style="width:56px; height:56px; border-radius:50%; border:none; background:linear-gradient(135deg,#8b1fb8,#6a0392); box-shadow:0 8px 24px rgba(106,3,146,.35); display:flex; align-items:center; justify-content:center; cursor:pointer; overflow:hidden;">
+        @if($bcChatMascoteFile)
+            <img id="bcAiChatIconClosed" src="{{ asset('assets/img/mascots/'.$bcChatMascoteFile) }}" alt=""
+                 width="56" height="56" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+        @else
+            <svg id="bcAiChatIconClosed" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        @endif
         <svg id="bcAiChatIconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none;"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
 
@@ -36,7 +49,7 @@
     if (!widget) return;
     var toggle = document.getElementById('bcAiChatToggle');
     var panel = document.getElementById('bcAiChatPanel');
-    var iconOpen = document.getElementById('bcAiChatIconOpen');
+    var iconOpen = document.getElementById('bcAiChatIconClosed');
     var iconClose = document.getElementById('bcAiChatIconClose');
     var messagesBox = document.getElementById('bcAiChatMessages');
     var input = document.getElementById('bcAiChatInput');
