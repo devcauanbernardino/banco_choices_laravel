@@ -8,20 +8,28 @@
 @endphp
 <div id="bcAiChatWidget" style="position:fixed; right:20px; bottom:20px; z-index:1050; font-family:'Inter',system-ui,sans-serif;">
     <button type="button" id="bcAiChatToggle" aria-label="{{ __('ia_chat.open_aria') }}"
-            style="width:56px; height:56px; border-radius:50%; border:none; background:linear-gradient(135deg,#8b1fb8,#6a0392); box-shadow:0 8px 24px rgba(106,3,146,.35); display:flex; align-items:center; justify-content:center; cursor:pointer; overflow:hidden;">
+            style="width:76px; height:76px; border-radius:50%; border:none; background:transparent; padding:0; display:flex; align-items:center; justify-content:center; cursor:pointer;">
         @if($bcChatMascoteFile)
             <img id="bcAiChatIconClosed" src="{{ asset('assets/img/mascots/'.$bcChatMascoteFile) }}" alt=""
-                 width="56" height="56" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                 width="76" height="76" style="width:100%; height:100%; object-fit:cover; border-radius:50%; box-shadow:0 8px 24px rgba(106,3,146,.35);">
         @else
-            <svg id="bcAiChatIconClosed" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            <span id="bcAiChatIconClosed" style="width:100%; height:100%; border-radius:50%; background:linear-gradient(135deg,#8b1fb8,#6a0392); box-shadow:0 8px 24px rgba(106,3,146,.35); display:flex; align-items:center; justify-content:center;">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </span>
         @endif
-        <svg id="bcAiChatIconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none;"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        <span id="bcAiChatIconClose" style="display:none; width:100%; height:100%; border-radius:50%; background:linear-gradient(135deg,#8b1fb8,#6a0392); box-shadow:0 8px 24px rgba(106,3,146,.35); align-items:center; justify-content:center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </span>
     </button>
 
-    <div id="bcAiChatPanel" class="d-none" style="position:absolute; bottom:68px; right:0; width:340px; max-width:calc(100vw - 40px); height:460px; max-height:calc(100vh - 120px); background:var(--app-surface); border:1px solid var(--app-border); border-radius:16px; box-shadow:0 20px 50px rgba(0,0,0,.25); display:flex; flex-direction:column; overflow:hidden;">
+    <div id="bcAiChatPanel" class="d-none" style="position:absolute; bottom:88px; right:0; width:340px; max-width:calc(100vw - 40px); height:460px; max-height:calc(100vh - 120px); background:var(--app-surface); border:1px solid var(--app-border); border-radius:16px; box-shadow:0 20px 50px rgba(0,0,0,.25); display:flex; flex-direction:column; overflow:hidden;">
         <div style="padding:14px 16px; background:linear-gradient(135deg,#8b1fb8,#6a0392); display:flex; align-items:center; justify-content:space-between; flex-shrink:0;">
             <div style="display:flex; align-items:center; gap:8px; color:#fff; font-weight:700; font-size:.92rem;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 00-4 4v1.05A5 5 0 004 12v5a2 2 0 002 2h1l1 3 1-3h6l1 3 1-3h1a2 2 0 002-2v-5a5 5 0 00-4-4.9V6a4 4 0 00-4-4z"/></svg>
+                @if($bcChatMascoteFile)
+                    <img src="{{ asset('assets/img/mascots/'.$bcChatMascoteFile) }}" alt="" width="26" height="26" style="width:26px; height:26px; border-radius:50%; object-fit:cover; background:#fff;">
+                @else
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 00-4 4v1.05A5 5 0 004 12v5a2 2 0 002 2h1l1 3 1-3h6l1 3 1-3h1a2 2 0 002-2v-5a5 5 0 00-4-4.9V6a4 4 0 00-4-4z"/></svg>
+                @endif
                 {{ __('ia_chat.title') }}
             </div>
             <button type="button" id="bcAiChatClear" title="{{ __('ia_chat.clear') }}" aria-label="{{ __('ia_chat.clear') }}"
@@ -95,7 +103,7 @@
     function openPanel() {
         panel.classList.remove('d-none');
         iconOpen.style.display = 'none';
-        iconClose.style.display = '';
+        iconClose.style.display = 'flex';
         toggle.setAttribute('aria-label', @json(__('ia_chat.close_aria')));
         if (!loaded) {
             loaded = true;
@@ -113,7 +121,7 @@
 
     function closePanel() {
         panel.classList.add('d-none');
-        iconOpen.style.display = '';
+        iconOpen.style.display = 'flex';
         iconClose.style.display = 'none';
         toggle.setAttribute('aria-label', @json(__('ia_chat.open_aria')));
     }
