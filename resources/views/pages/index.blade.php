@@ -540,6 +540,65 @@
         })();
     </script>
     <script>
+        (function () {
+            var nums = document.querySelectorAll('.lp-stats__num');
+            if (!nums.length) return;
+
+            function parseTarget(text) {
+                var match = text.trim().match(/^([\d.,]+)(.*)$/);
+                if (!match) return null;
+                var value = parseInt(match[1].replace(/[.,]/g, ''), 10);
+                if (isNaN(value)) return null;
+                return { value: value, suffix: match[2] || '' };
+            }
+
+            function format(n) {
+                return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+            }
+
+            function animate(el, target, suffix) {
+                var duration = 1400;
+                var start = null;
+                function step(ts) {
+                    if (!start) start = ts;
+                    var progress = Math.min((ts - start) / duration, 1);
+                    var eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = format(Math.round(target * eased)) + suffix;
+                    if (progress < 1) requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+            }
+
+            var parsedList = [];
+            nums.forEach(function (el) {
+                var parsed = parseTarget(el.textContent);
+                parsedList.push(parsed);
+                if (parsed) el.textContent = '0' + parsed.suffix;
+            });
+
+            if (!('IntersectionObserver' in window)) {
+                nums.forEach(function (el, i) {
+                    if (parsedList[i]) animate(el, parsedList[i].value, parsedList[i].suffix);
+                });
+                return;
+            }
+
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    var idx = Array.prototype.indexOf.call(nums, entry.target);
+                    if (entry.isIntersecting && parsedList[idx]) {
+                        animate(entry.target, parsedList[idx].value, parsedList[idx].suffix);
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            nums.forEach(function (el) {
+                io.observe(el);
+            });
+        })();
+    </script>
+    <script>
         (function() {
             var topbar = document.getElementById('lpTopbar');
             var backToTop = document.getElementById('lpBackToTop');
