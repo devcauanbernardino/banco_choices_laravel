@@ -180,6 +180,7 @@
            — soure o degradê de saída e parece "subir" por cima). */
         .lp-body--dark-hero {
             padding-top: 1px;
+            background: #2a1238;
         }
         .lp-body--dark-hero .lp-hero {
             margin-top: -90px !important;
