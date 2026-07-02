@@ -6,13 +6,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 <style>
     html, body { overflow-x: hidden; }
-    body { font-family: 'Inter', system-ui, sans-serif; background: var(--app-bg); min-height: 100vh; position: relative; isolation: isolate; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--app-bg); min-height: 100vh; position: relative; isolation: isolate; display: flex; flex-direction: column; }
     body::before, body::after { content: ''; position: fixed; width: 420px; height: 420px; border-radius: 50%; filter: blur(100px); z-index: -1; pointer-events: none; opacity: .35; }
     body::before { background: #8b1fb8; top: 6%; left: 6%; }
     body::after { background: #38bdf8; bottom: 4%; right: 8%; }
     [data-theme="dark"] body::before, [data-theme="dark"] body::after { opacity: .3; }
 
-    .mascote-wrap { max-width: 880px; margin: 2.5rem auto; padding: 0 1rem; position: relative; z-index: 1; }
+    main.container-fluid { flex: 1; display: flex; align-items: center; justify-content: center; padding-top: 2.5rem; padding-bottom: 2.5rem; }
+
+    .mascote-wrap { max-width: 880px; width: 100%; margin: 0 auto; padding: 0 1rem; position: relative; z-index: 1; }
     .mascote-header { text-align: center; color: var(--app-text); margin-bottom: 2rem; }
     .mascote-header h1 { font-family: 'Poppins', sans-serif; font-weight: 800; }
     .mascote-header p { color: var(--app-muted); }
