@@ -140,11 +140,23 @@
         .lp-glass { background: rgba(255,255,255,.55) !important; backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); border: 1px solid rgba(255,255,255,.5) !important; box-shadow: 0 8px 28px rgba(31,10,60,.08); }
         [data-theme="dark"] .lp-glass { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; box-shadow: 0 8px 28px rgba(0,0,0,.3); }
 
-        .lp-stats { position: relative; z-index: 1; }
-        .lp-stats__cell.lp-glass { border-radius: 14px; }
+        #stats { position: relative; z-index: 1; }
+        #stats .lp-stats__cell {
+            background: #fff;
+            border: 1px solid rgba(15,23,42,.06);
+            border-radius: 16px;
+            box-shadow: 0 4px 18px rgba(15,23,42,.06);
+            padding: 24px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        [data-theme="dark"] #stats .lp-stats__cell { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 4px 18px rgba(0,0,0,.3); }
+        .lp-stats__icon { width: 48px; height: 48px; border-radius: 12px; background: rgba(139,31,184,.1); color: #8b1fb8; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 12px; }
+        [data-theme="dark"] .lp-stats__icon { background: rgba(139,31,184,.25); color: #d9a8ef; }
         @media (min-width: 768px) {
-            .lp-stats__grid { gap: 12px !important; }
-            .lp-stats__cell.lp-glass { border-right: 0 !important; }
+            #stats .lp-stats__grid { gap: 16px !important; }
+            #stats .lp-stats__cell { border-right: 0 !important; }
         }
 
         #funcionalidades, #modalidades, #planes, #faq { position: relative; z-index: 1; }
@@ -334,6 +346,21 @@
         </div>
     </section>
 
+    {{-- 1.3 Stats banner --}}
+    <section class="lp-stats" id="stats" aria-label="Estadísticas">
+        <div class="lp-container">
+            <div class="lp-stats__grid">
+                @foreach ($stats as $i => $s)
+                    <div class="lp-stats__cell lp-reveal" data-delay="{{ $i + 1 }}">
+                        <div class="lp-stats__icon"><i class="bi {{ $s['icon'] }}"></i></div>
+                        <div class="lp-stats__num">{{ $s['numero'] }}</div>
+                        <div class="lp-stats__label">{{ __($s['label_key']) }}</div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     {{-- 1.3.6 Mascotes / Tutor IA --}}
     <section class="lp-section" id="mascotes">
         <div class="lp-container">
@@ -354,20 +381,6 @@
                         <h3 class="lp-feature-card__title">{{ __('mascote.'.$masc['key'].'.nome') }}</h3>
                         <p class="lp-feature-card__desc">{{ __('mascote.'.$masc['key'].'.desc') }}</p>
                     </article>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    {{-- 1.3 Stats banner --}}
-    <section class="lp-stats" aria-label="Estadísticas">
-        <div class="lp-container">
-            <div class="lp-stats__grid">
-                @foreach ($stats as $i => $s)
-                    <div class="lp-stats__cell lp-glass lp-reveal" data-delay="{{ $i + 1 }}">
-                        <div class="lp-stats__num">{{ $s['numero'] }}</div>
-                        <div class="lp-stats__label">{{ __($s['label_key']) }}</div>
-                    </div>
                 @endforeach
             </div>
         </div>

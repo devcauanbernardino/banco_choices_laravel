@@ -2,10 +2,10 @@
 
 return [
     'stats' => [
-        ['numero' => '47.000+', 'label_key' => 'landing.stats.preguntas'],
-        ['numero' => 'Excelencia', 'label_key' => 'landing.stats.fuentes'],
-        ['numero' => 'Seguimiento', 'label_key' => 'landing.stats.seguimiento'],
-        ['numero' => '2.000+', 'label_key' => 'landing.stats.alumnos'],
+        ['icon' => 'bi-clipboard2-pulse', 'numero' => '47.000+', 'label_key' => 'landing.stats.preguntas'],
+        ['icon' => 'bi-layers', 'numero' => '12.000+', 'label_key' => 'landing.stats.flashcards'],
+        ['icon' => 'bi-award', 'numero' => '98%', 'label_key' => 'landing.stats.aprobacion'],
+        ['icon' => 'bi-people', 'numero' => '2.000+', 'label_key' => 'landing.stats.alumnos'],
     ],
 
     'footer' => [
