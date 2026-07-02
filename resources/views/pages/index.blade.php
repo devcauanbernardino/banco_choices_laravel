@@ -140,6 +140,18 @@
         .lp-glass { background: rgba(255,255,255,.55) !important; backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); border: 1px solid rgba(255,255,255,.5) !important; box-shadow: 0 8px 28px rgba(31,10,60,.08); }
         [data-theme="dark"] .lp-glass { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; box-shadow: 0 8px 28px rgba(0,0,0,.3); }
 
+        .lp-body--dark-hero .lp-topbar {
+            background: rgba(255,255,255,.08) !important;
+            backdrop-filter: blur(16px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+            border-bottom: 1px solid rgba(255,255,255,.14) !important;
+        }
+        .lp-body--dark-hero .lp-topbar.is-scrolled {
+            background: rgba(255,255,255,.55) !important;
+            border-bottom: 1px solid rgba(255,255,255,.5) !important;
+            box-shadow: 0 8px 28px rgba(31,10,60,.08) !important;
+        }
+
         #stats { position: relative; z-index: 1; }
         #stats .lp-stats__cell {
             background: #fff;
