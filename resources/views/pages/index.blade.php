@@ -141,6 +141,10 @@
         [data-theme="dark"] .lp-glass { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; box-shadow: 0 8px 28px rgba(0,0,0,.3); }
 
         .lp-body--dark-hero .lp-topbar {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
             background: transparent !important;
             backdrop-filter: none !important;
             -webkit-backdrop-filter: none !important;
@@ -175,25 +179,12 @@
             background: rgba(106,3,146,.1);
         }
 
-        /* A nav agora é transparente e flutua sobre o hero; antes de rolar, o sticky
-           ainda reserva seu próprio espaço no fluxo (não sobrepõe nada), o que deixava
-           um vão em branco entre ela e o degradê escuro do hero. Puxamos o hero pra
-           cima desse espaço reservado (com padding equivalente por dentro) pra ele
-           ficar visível por trás da nav, igual ao efeito de "flutuar sobre o conteúdo".
-           A margin-top negativa aqui colapsaria com a margem do body (deixando uma
-           linha branca do html aparecer no topo) se não fosse o padding-top de 1px
-           no body, abaixo. E somamos os mesmos 90px de volta na min-height pra não
-           espremer o espaço interno do hero (senão o conteúdo do fim — badges/mascotes
-           — soure o degradê de saída e parece "subir" por cima). */
-        .lp-body--dark-hero {
-            padding-top: 1px;
-            background: #2a1238;
-        }
+        /* A nav agora é fixed (fora do fluxo) e flutua sobre o hero, então o hero
+           passa a começar exatamente no topo da página — sem vão, sem precisar
+           escurecer o body inteiro. Só precisamos de um respiro extra no topo do
+           hero pra seu conteúdo não ficar embaixo do pill flutuante. */
         .lp-body--dark-hero .lp-hero {
-            margin-top: -90px !important;
             padding-top: calc(clamp(24px, 4vw, 40px) + 90px) !important;
-            min-height: calc(100vh - 66px + 90px) !important;
-            min-height: calc(100svh - 66px + 90px) !important;
         }
 
         #stats { position: relative; z-index: 1; }
