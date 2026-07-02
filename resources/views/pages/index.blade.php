@@ -168,6 +168,16 @@
             box-shadow: 0 8px 28px rgba(31,10,60,.12);
         }
 
+        /* A nav agora é transparente e flutua sobre o hero; antes de rolar, o sticky
+           ainda reserva seu próprio espaço no fluxo (não sobrepõe nada), o que deixava
+           um vão em branco entre ela e o degradê escuro do hero. Puxamos o hero pra
+           cima desse espaço reservado (com padding equivalente por dentro) pra ele
+           ficar visível por trás da nav, igual ao efeito de "flutuar sobre o conteúdo". */
+        .lp-body--dark-hero .lp-hero {
+            margin-top: -90px !important;
+            padding-top: calc(clamp(24px, 4vw, 40px) + 90px) !important;
+        }
+
         #stats { position: relative; z-index: 1; }
         #stats .lp-stats__cell {
             background: #fff;
