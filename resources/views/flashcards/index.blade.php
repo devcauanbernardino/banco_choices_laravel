@@ -7,31 +7,29 @@
 @push('styles')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-.fc-page { position: relative; isolation: isolate; }
-.fc-page::before, .fc-page::after { content: ''; position: fixed; width: 380px; height: 380px; border-radius: 50%; filter: blur(90px); z-index: -1; pointer-events: none; opacity: .5; }
-.fc-page::before { background: #8b1fb8; top: 8%; left: 8%; }
-.fc-page::after { background: #38bdf8; bottom: 4%; right: 6%; }
-[data-theme="dark"] .fc-page::before, [data-theme="dark"] .fc-page::after { opacity: .35; }
-
 .fc-header { margin-bottom: 24px; }
 .fc-header h1 { font-size: clamp(1.4rem,2.2vw,1.7rem); font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
 .fc-header p { color: var(--app-muted); font-size: .9rem; margin: 0; }
 
-.fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; }
 
-.fc-glass { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.4); box-shadow: 0 8px 32px rgba(31,10,60,.1); }
-[data-theme="dark"] .fc-glass { background: rgba(255,255,255,.055); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
+/* Efeito de pilha: 2 cartões espiando atrás do card principal */
+.fc-deck-card { position: relative; padding-bottom: 10px; }
+.fc-deck-card::before, .fc-deck-card::after { content: ''; position: absolute; left: 12px; right: 12px; border-radius: 18px; background: var(--app-surface); border: 1px solid var(--app-border); }
+.fc-deck-card::before { bottom: 2px; height: 14px; left: 16px; right: 16px; opacity: .75; }
+.fc-deck-card::after { bottom: -4px; height: 10px; left: 24px; right: 24px; opacity: .45; }
 
-.fc-card { border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.fc-card { position: relative; z-index: 1; background: var(--app-surface); border: 1px solid var(--app-border); box-shadow: 0 10px 26px rgba(15,23,42,.08); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+[data-theme="dark"] .fc-card { box-shadow: 0 10px 26px rgba(0,0,0,.4); }
 .fc-card__title { font-size: 1rem; font-weight: 700; color: var(--app-text); margin: 0; }
 .fc-card__badges { display: flex; gap: 8px; flex-wrap: wrap; }
 .fc-badge { font-size: .74rem; font-weight: 700; padding: 4px 10px; border-radius: 99px; }
-.fc-badge--due { background: rgba(139,31,184,.16); color: #a855f7; }
+.fc-badge--due { background: rgba(13,148,136,.14); color: #0d9488; }
+[data-theme="dark"] .fc-badge--due { background: rgba(45,212,191,.16); color: #2dd4bf; }
 .fc-badge--new { background: rgba(34,197,94,.16); color: #22c55e; }
 .fc-badge--empty { background: rgba(120,120,140,.16); color: var(--app-muted); }
 .fc-card__actions { margin-top: auto; display: flex; align-items: center; gap: 10px; }
-.fc-card__input { width: 72px; border: 1px solid rgba(255,255,255,.4); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: rgba(255,255,255,.3); color: var(--app-text); }
-[data-theme="dark"] .fc-card__input { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); }
+.fc-card__input { width: 72px; border: 1px solid var(--app-border); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: var(--app-bg); color: var(--app-text); }
 .fc-card__btn { flex: 1; padding: 9px 14px; border-radius: 10px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; font-size: .84rem; cursor: pointer; box-shadow: 0 6px 18px rgba(106,3,146,.3); }
 .fc-card__btn:disabled { opacity: .4; cursor: default; box-shadow: none; }
 
@@ -48,7 +46,11 @@
 .fc-pill--streak { background: rgba(249,115,22,.14); color: #ea580c; }
 [data-theme="dark"] .fc-pill--streak { background: rgba(251,146,60,.18); color: #fb923c; }
 
-.fc-panel { background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 16px; overflow: hidden; }
+.fc-panel-deck { position: relative; padding-bottom: 8px; }
+.fc-panel-deck::before, .fc-panel-deck::after { content: ''; position: absolute; left: 10px; right: 10px; border-radius: 16px; background: var(--app-surface); border: 1px solid var(--app-border); }
+.fc-panel-deck::before { bottom: 1px; height: 12px; left: 14px; right: 14px; opacity: .75; }
+.fc-panel-deck::after { bottom: -3px; height: 8px; left: 22px; right: 22px; opacity: .45; }
+.fc-panel { position: relative; z-index: 1; background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 16px; overflow: hidden; }
 
 .fc-flip { perspective: 1400px; }
 .fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .55s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
@@ -88,7 +90,6 @@
 @endpush
 
 @section('content')
-<div class="fc-page">
 <div class="fc-header">
     <h1>{{ __('flashcards.header.title') }}</h1>
     <p>{{ __('flashcards.header.sub') }}</p>
@@ -100,33 +101,34 @@
     <div class="fc-grid">
         @foreach ($materias as $m)
             @php $resumo = $resumoPorMateria[$m->id] ?? ['due_count' => 0, 'new_count' => 0, 'new_available_count' => 0]; @endphp
-            <div class="fc-card fc-glass">
-                <h3 class="fc-card__title">{{ $m->nome }}</h3>
-                <div class="fc-card__badges">
-                    @if ($resumo['due_count'] > 0)
-                        <span class="fc-badge fc-badge--due">{{ __('flashcards.card.due_count', ['n' => $resumo['due_count']]) }}</span>
-                    @endif
-                    @if ($resumo['new_available_count'] > 0)
-                        <span class="fc-badge fc-badge--new">{{ __('flashcards.card.new_count', ['n' => $resumo['new_available_count']]) }}</span>
-                    @endif
-                    @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0)
-                        <span class="fc-badge fc-badge--empty">{{ __('flashcards.card.all_caught_up') }}</span>
-                    @endif
+            <div class="fc-deck-card">
+                <div class="fc-card">
+                    <h3 class="fc-card__title">{{ $m->nome }}</h3>
+                    <div class="fc-card__badges">
+                        @if ($resumo['due_count'] > 0)
+                            <span class="fc-badge fc-badge--due">{{ __('flashcards.card.due_count', ['n' => $resumo['due_count']]) }}</span>
+                        @endif
+                        @if ($resumo['new_available_count'] > 0)
+                            <span class="fc-badge fc-badge--new">{{ __('flashcards.card.new_count', ['n' => $resumo['new_available_count']]) }}</span>
+                        @endif
+                        @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0)
+                            <span class="fc-badge fc-badge--empty">{{ __('flashcards.card.all_caught_up') }}</span>
+                        @endif
+                    </div>
+                    <form class="fc-card__actions" data-fc-start>
+                        <input type="hidden" name="materia" value="{{ $m->id }}">
+                        <input type="number" name="novos_por_dia" class="fc-card__input" min="0" max="200" value="20"
+                               aria-label="{{ __('flashcards.form.new_per_day_label') }}">
+                        <button type="submit" class="fc-card__btn"
+                                @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0) disabled @endif>
+                            {{ __('flashcards.form.start') }}
+                        </button>
+                    </form>
                 </div>
-                <form class="fc-card__actions" data-fc-start>
-                    <input type="hidden" name="materia" value="{{ $m->id }}">
-                    <input type="number" name="novos_por_dia" class="fc-card__input" min="0" max="200" value="20"
-                           aria-label="{{ __('flashcards.form.new_per_day_label') }}">
-                    <button type="submit" class="fc-card__btn"
-                            @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0) disabled @endif>
-                        {{ __('flashcards.form.start') }}
-                    </button>
-                </form>
             </div>
         @endforeach
     </div>
 @endif
-</div>
 @endsection
 
 @push('modals')
@@ -148,20 +150,22 @@
                         </span>
                     </div>
 
-                    <div class="fc-panel">
-                        <div class="fc-flip" id="fcFlip">
-                            <div class="fc-flip-inner">
-                                <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
-                                    <span class="fc-flip-tag" id="fcFrenteTag"></span>
-                                    <p class="fc-flip-text" id="fcFrenteText"></p>
-                                    <div class="fc-flip-bottom">
-                                        <span class="fc-flip-timer"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">schedule</span><span id="fcTimer">0s</span></span>
-                                        <span class="fc-flip-hint" id="fcRevealHint"></span>
+                    <div class="fc-panel-deck">
+                        <div class="fc-panel">
+                            <div class="fc-flip" id="fcFlip">
+                                <div class="fc-flip-inner">
+                                    <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
+                                        <span class="fc-flip-tag" id="fcFrenteTag"></span>
+                                        <p class="fc-flip-text" id="fcFrenteText"></p>
+                                        <div class="fc-flip-bottom">
+                                            <span class="fc-flip-timer"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">schedule</span><span id="fcTimer">0s</span></span>
+                                            <span class="fc-flip-hint" id="fcRevealHint"></span>
+                                        </div>
+                                    </button>
+                                    <div class="fc-flip-face fc-flip-back">
+                                        <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
+                                        <p class="fc-flip-text" id="fcVersoText"></p>
                                     </div>
-                                </button>
-                                <div class="fc-flip-face fc-flip-back">
-                                    <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
-                                    <p class="fc-flip-text" id="fcVersoText"></p>
                                 </div>
                             </div>
                         </div>
