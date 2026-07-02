@@ -149,13 +149,19 @@ button.bc-styled-select__toggle {
 }
 
 .bc-styled-select__item.is-focus {
-  background: rgba(106, 3, 146, 0.1);
-  color: #6a0392;
+  background: rgba(106, 3, 146, 0.08);
 }
 
 .bc-styled-select__item.is-selected {
   background: rgba(106, 3, 146, 0.14);
   color: #6a0392;
+  font-weight: 700;
+  border-left: 3px solid #6a0392;
+  padding-left: calc(0.85rem - 3px);
+}
+
+.bc-styled-select__item.is-focus.is-selected {
+  background: rgba(106, 3, 146, 0.2);
 }
 
 .bc-styled-select__item.is-disabled {
@@ -177,12 +183,19 @@ button.bc-styled-select__toggle {
 
 [data-theme="dark"] .bc-styled-select__item.is-focus,
 [data-bs-theme="dark"] .bc-styled-select__item.is-focus {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="dark"] .bc-styled-select__item.is-selected,
 [data-bs-theme="dark"] .bc-styled-select__item.is-selected {
   background: rgba(244, 228, 255, 0.14);
   color: #f4e4ff;
+  font-weight: 700;
+  border-left: 3px solid #f4e4ff;
+  padding-left: calc(0.85rem - 3px);
+}
+
+[data-theme="dark"] .bc-styled-select__item.is-focus.is-selected,
+[data-bs-theme="dark"] .bc-styled-select__item.is-focus.is-selected {
+  background: rgba(244, 228, 255, 0.22);
 }
