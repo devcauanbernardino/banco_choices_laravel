@@ -506,8 +506,24 @@
 
 /* ---------- Escolha da faculdade (grade + cartão próprio) ---------- */
 .demo-pick-section {
+    position: relative;
+    isolation: isolate;
     padding: var(--lp-section-py, clamp(64px, 10vw, 120px)) 0;
 }
+.demo-pick-section::before,
+.demo-pick-section::after {
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    filter: blur(90px);
+    z-index: -1;
+    pointer-events: none;
+    opacity: .14;
+}
+.demo-pick-section::before { background: #8b1fb8; top: -40px; left: -60px; }
+.demo-pick-section::after { background: #38bdf8; bottom: -40px; right: -60px; }
 
 .demo-pick-section__head {
     margin-bottom: clamp(28px, 4vw, 40px);
@@ -562,13 +578,21 @@
     align-items: stretch;
     min-height: 100%;
     border-radius: var(--lp-radius, 16px);
-    border: 1px solid var(--lp-border, rgba(15, 23, 42, 0.1));
-    background: var(--lp-surface, #fff);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
     text-decoration: none;
     color: inherit;
     overflow: hidden;
-    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 8px 28px rgba(31, 10, 60, 0.08);
     transition: border-color .18s ease, box-shadow .22s ease, transform .18s ease;
+}
+[data-theme="dark"] .demo-pick-card,
+[data-bs-theme="dark"] .demo-pick-card {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.3);
 }
 
 .demo-pick-card:hover {

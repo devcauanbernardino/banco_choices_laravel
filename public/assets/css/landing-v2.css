@@ -635,6 +635,100 @@
     border-color: rgba(106, 3, 146, 0.45);
     background: rgba(106, 3, 146, 0.06);
 }
+
+/* Navbar flutuante (mesmo visual novo da home) nas telas públicas do demo
+   (show/configurar/resultado, que reaproveitam pages.partials.topbar). Sem
+   hero escuro aqui, então já nasce direto no acabamento "vidro claro".
+   O blur vai num ::before (não direto no elemento que envolve o botão do
+   idioma) pelo mesmo motivo da home: backdrop-filter num ancestral quebra
+   o cálculo de posição do Popper (strategy:"fixed") do dropdown. */
+.demo-body .lp-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 0;
+    box-shadow: none;
+    padding: 14px clamp(12px, 3vw, 24px) 0;
+    box-sizing: border-box;
+}
+.demo-body .lp-topbar__inner {
+    position: relative;
+    isolation: isolate;
+    max-width: 1160px;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 8px 28px rgba(31, 10, 60, 0.1);
+}
+.demo-body .lp-topbar__inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+}
+.demo-body:has(> .lp-topbar) {
+    padding-top: 90px;
+}
+
+/* Idem à home: sem ancestral "navbar-actions--landing", o seletor de idioma
+   cai no visual cru do Bootstrap (caixa branca quadrada, setinha sem cor). */
+.demo-body .lp-topbar .btn-navbar-lang {
+    color: var(--lp-purple);
+    border: 1px solid rgba(106, 3, 146, 0.3);
+    background: #fff;
+}
+.demo-body .lp-topbar .btn-navbar-lang:hover,
+.demo-body .lp-topbar .btn-navbar-lang:focus,
+.demo-body .lp-topbar .btn-navbar-lang.show {
+    border-color: var(--lp-purple);
+    background: #fff;
+}
+.demo-body .lp-topbar .bc-lang-menu {
+    min-width: 200px;
+    padding: .35rem;
+    margin-top: .5rem !important;
+    border-radius: 14px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: #fff;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.15), 0 2px 8px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+}
+.demo-body .lp-topbar .bc-lang-menu__item {
+    display: flex !important;
+    align-items: center !important;
+    gap: .65rem;
+    padding: .6rem .75rem !important;
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--bc-lang-item-text, #475569);
+    border: none;
+    border-radius: 8px;
+}
+.demo-body .lp-topbar .bc-lang-menu__item:hover {
+    background: var(--bc-lang-accent-hover, rgba(106, 3, 146, 0.08));
+    color: var(--bc-lang-accent, #6a0392);
+}
+.demo-body .lp-topbar .bc-lang-menu__item--active {
+    background: var(--bc-lang-accent-soft, rgba(106, 3, 146, 0.12));
+    color: var(--bc-lang-accent, #6a0392);
+    font-weight: 600;
+}
+.demo-body .lp-topbar .bc-lang-menu__code {
+    font-size: .6875rem;
+    font-weight: 800;
+    letter-spacing: .06em;
+    color: #94a3b8;
+    min-width: 1.35rem;
+}
+
 .lp-hero__grid {
     position: relative;
     z-index: 1;
