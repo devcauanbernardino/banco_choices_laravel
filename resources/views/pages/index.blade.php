@@ -158,9 +158,9 @@
         .lp-hero__mascots-avatars { display: flex; }
         .lp-hero__mascot-ico { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; background: #fff; border: 2px solid #0c0712; margin-right: -10px; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
         .lp-hero__mascot-ico:last-child { margin-right: 0; }
-        .lp-hero__mascots-text { font-size: .82rem; color: rgba(255,255,255,.68); font-weight: 500; transition: color .15s ease; }
+        .lp-hero__mascots-text { font-size: .82rem; color: rgba(255,255,255,.68); font-weight: 500; transition: color .15s ease; overflow: hidden; }
         .lp-hero__mascots:hover .lp-hero__mascots-text { color: rgba(255,255,255,.92); }
-        .lp-hero__mascots-text strong { color: rgba(255,255,255,.92); font-weight: 700; }
+        .lp-hero__mascots-rotator { display: inline-block; color: rgba(255,255,255,.92); font-weight: 700; }
     </style>
 @endpush
 
@@ -218,7 +218,10 @@
                             <img src="{{ asset('assets/img/mascots/fantasma-choice.png') }}" alt="{{ __('mascote.fantasma.nome') }}" class="lp-hero__mascot-ico">
                             <img src="{{ asset('assets/img/mascots/gato-choice.png') }}" alt="{{ __('mascote.gato.nome') }}" class="lp-hero__mascot-ico">
                         </span>
-                        <span class="lp-hero__mascots-text">{!! __('landing.mascotes.hero_teaser') !!}</span>
+                        <span class="lp-hero__mascots-text">
+                            {{ __('landing.mascotes.hero_teaser_prefix') }}
+                            <span class="lp-hero__mascots-rotator" id="lpMascotRotator">{{ __('landing.mascotes.hero_teaser_word') }}</span>
+                        </span>
                     </a>
                 </div>
                 <div>
@@ -493,6 +496,36 @@
 @endsection
 
 @push('scripts')
+    <script>
+        (function () {
+            var el = document.getElementById('lpMascotRotator');
+            if (!el) return;
+            var words = [
+                @json(__('landing.mascotes.hero_teaser_word')),
+                @json(__('mascote.gato.nome')),
+                @json(__('mascote.robo.nome')),
+                @json(__('mascote.fantasma.nome'))
+            ];
+            var idx = 0;
+            function swap() {
+                el.style.transition = 'transform .35s cubic-bezier(.4,0,.2,1), opacity .3s ease';
+                el.style.transform = 'translateY(-14px)';
+                el.style.opacity = '0';
+                setTimeout(function () {
+                    idx = (idx + 1) % words.length;
+                    el.textContent = words[idx];
+                    el.style.transition = 'none';
+                    el.style.transform = 'translateY(14px)';
+                    el.style.opacity = '0';
+                    void el.offsetWidth;
+                    el.style.transition = 'transform .35s cubic-bezier(.4,0,.2,1), opacity .3s ease';
+                    el.style.transform = 'translateY(0)';
+                    el.style.opacity = '1';
+                }, 350);
+            }
+            setInterval(swap, 2400);
+        })();
+    </script>
     <script>
         (function() {
             var topbar = document.getElementById('lpTopbar');
