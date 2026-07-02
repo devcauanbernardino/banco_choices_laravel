@@ -14,10 +14,10 @@
 .fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; }
 
 /* Efeito de pilha: 2 cartões espiando atrás do card principal */
-.fc-deck-card { position: relative; padding-bottom: 10px; }
-.fc-deck-card::before, .fc-deck-card::after { content: ''; position: absolute; left: 12px; right: 12px; border-radius: 18px; background: var(--app-surface); border: 1px solid var(--app-border); }
-.fc-deck-card::before { bottom: 2px; height: 14px; left: 16px; right: 16px; opacity: .75; }
-.fc-deck-card::after { bottom: -4px; height: 10px; left: 24px; right: 24px; opacity: .45; }
+.fc-deck-card { position: relative; margin: 0 12px 12px 0; }
+.fc-deck-card::before, .fc-deck-card::after { content: ''; position: absolute; inset: 0; border-radius: 18px; background: var(--app-surface); border: 1px solid var(--app-border); }
+.fc-deck-card::before { transform: translate(6px, 6px); opacity: .8; z-index: 0; }
+.fc-deck-card::after { transform: translate(12px, 12px); opacity: .5; z-index: -1; }
 
 .fc-card { position: relative; z-index: 1; background: var(--app-surface); border: 1px solid var(--app-border); box-shadow: 0 10px 26px rgba(15,23,42,.08); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
 [data-theme="dark"] .fc-card { box-shadow: 0 10px 26px rgba(0,0,0,.4); }
@@ -46,10 +46,10 @@
 .fc-pill--streak { background: rgba(249,115,22,.14); color: #ea580c; }
 [data-theme="dark"] .fc-pill--streak { background: rgba(251,146,60,.18); color: #fb923c; }
 
-.fc-panel-deck { position: relative; padding-bottom: 8px; }
-.fc-panel-deck::before, .fc-panel-deck::after { content: ''; position: absolute; left: 10px; right: 10px; border-radius: 16px; background: var(--app-surface); border: 1px solid var(--app-border); }
-.fc-panel-deck::before { bottom: 1px; height: 12px; left: 14px; right: 14px; opacity: .75; }
-.fc-panel-deck::after { bottom: -3px; height: 8px; left: 22px; right: 22px; opacity: .45; }
+.fc-panel-deck { position: relative; margin: 0 14px 14px 0; }
+.fc-panel-deck::before, .fc-panel-deck::after { content: ''; position: absolute; inset: 0; border-radius: 16px; background: var(--app-surface); border: 1px solid var(--app-border); }
+.fc-panel-deck::before { transform: translate(7px, 7px); opacity: .85; z-index: 0; }
+.fc-panel-deck::after { transform: translate(14px, 14px); opacity: .55; z-index: -1; }
 .fc-panel { position: relative; z-index: 1; background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 16px; overflow: hidden; }
 
 .fc-flip { perspective: 1400px; }
