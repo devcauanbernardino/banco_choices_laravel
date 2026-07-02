@@ -153,6 +153,14 @@
         #planes .lp-plan-card.lp-glass,
         #faq .lp-faq__item.lp-glass { border-radius: var(--lp-radius, 16px); }
         #faq .lp-faq__item.lp-glass { overflow: hidden; }
+
+        .lp-hero__mascots { display: flex; align-items: center; gap: 10px; margin-top: 16px; text-decoration: none; width: fit-content; }
+        .lp-hero__mascots-avatars { display: flex; }
+        .lp-hero__mascot-ico { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; background: #fff; border: 2px solid #0c0712; margin-right: -10px; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+        .lp-hero__mascot-ico:last-child { margin-right: 0; }
+        .lp-hero__mascots-text { font-size: .82rem; color: rgba(255,255,255,.68); font-weight: 500; transition: color .15s ease; }
+        .lp-hero__mascots:hover .lp-hero__mascots-text { color: rgba(255,255,255,.92); }
+        .lp-hero__mascots-text strong { color: rgba(255,255,255,.92); font-weight: 700; }
     </style>
 @endpush
 
@@ -203,6 +211,15 @@
                             {{ __('landing.hero.trust_rating') }}
                         </span>
                     </div>
+
+                    <a href="#mascotes" class="lp-hero__mascots lp-hero__ctas-anim">
+                        <span class="lp-hero__mascots-avatars">
+                            <img src="{{ asset('assets/img/mascots/robo-choice.png') }}" alt="{{ __('mascote.robo.nome') }}" class="lp-hero__mascot-ico">
+                            <img src="{{ asset('assets/img/mascots/fantasma-choice.png') }}" alt="{{ __('mascote.fantasma.nome') }}" class="lp-hero__mascot-ico">
+                            <img src="{{ asset('assets/img/mascots/gato-choice.png') }}" alt="{{ __('mascote.gato.nome') }}" class="lp-hero__mascot-ico">
+                        </span>
+                        <span class="lp-hero__mascots-text">{!! __('landing.mascotes.hero_teaser') !!}</span>
+                    </a>
                 </div>
                 <div>
                     <div class="lp-hero__visual lp-hero__visual-anim">
@@ -314,6 +331,31 @@
         </div>
     </section>
 
+    {{-- 1.3.6 Mascotes / Tutor IA --}}
+    <section class="lp-section" id="mascotes">
+        <div class="lp-container">
+            <div class="lp-section__header lp-reveal">
+                <span class="lp-badge">{{ __('landing.mascotes.badge') }}</span>
+                <h2 class="lp-h-section">{!! __('landing.mascotes.title') !!}</h2>
+                <p class="lp-section__subtitle">{!! __('landing.mascotes.subtitle') !!}</p>
+            </div>
+
+            <div class="lp-features__grid">
+                @foreach ([
+                    ['key' => 'robo', 'img' => 'robo-choice.png'],
+                    ['key' => 'fantasma', 'img' => 'fantasma-choice.png'],
+                    ['key' => 'gato', 'img' => 'gato-choice.png'],
+                ] as $i => $masc)
+                    <article class="lp-feature-card lp-mascote-card lp-reveal text-center" data-delay="{{ $i + 1 }}">
+                        <img src="{{ asset('assets/img/mascots/'.$masc['img']) }}" alt="{{ __('mascote.'.$masc['key'].'.nome') }}" style="width:110px; height:110px; object-fit:contain; margin:0 auto 14px;">
+                        <h3 class="lp-feature-card__title">{{ __('mascote.'.$masc['key'].'.nome') }}</h3>
+                        <p class="lp-feature-card__desc">{{ __('mascote.'.$masc['key'].'.desc') }}</p>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     {{-- 1.3 Stats banner --}}
     <section class="lp-stats" aria-label="Estadísticas">
         <div class="lp-container">
@@ -358,31 +400,6 @@
                         <h3 class="lp-feature-card__title">{{ __('landing.features.'.$feat['key'].'.title') }}</h3>
                         <p class="lp-feature-card__desc">{{ __('landing.features.'.$feat['key'].'.desc') }}</p>
                         <span class="lp-feature-card__arrow" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span>
-                    </article>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    {{-- 1.3.6 Mascotes / Tutor IA --}}
-    <section class="lp-section" id="mascotes">
-        <div class="lp-container">
-            <div class="lp-section__header lp-reveal">
-                <span class="lp-badge">{{ __('landing.mascotes.badge') }}</span>
-                <h2 class="lp-h-section">{!! __('landing.mascotes.title') !!}</h2>
-                <p class="lp-section__subtitle">{!! __('landing.mascotes.subtitle') !!}</p>
-            </div>
-
-            <div class="lp-features__grid">
-                @foreach ([
-                    ['key' => 'robo', 'img' => 'robo-choice.png'],
-                    ['key' => 'fantasma', 'img' => 'fantasma-choice.png'],
-                    ['key' => 'gato', 'img' => 'gato-choice.png'],
-                ] as $i => $masc)
-                    <article class="lp-feature-card lp-mascote-card lp-reveal text-center" data-delay="{{ $i + 1 }}">
-                        <img src="{{ asset('assets/img/mascots/'.$masc['img']) }}" alt="{{ __('mascote.'.$masc['key'].'.nome') }}" style="width:110px; height:110px; object-fit:contain; margin:0 auto 14px;">
-                        <h3 class="lp-feature-card__title">{{ __('mascote.'.$masc['key'].'.nome') }}</h3>
-                        <p class="lp-feature-card__desc">{{ __('mascote.'.$masc['key'].'.desc') }}</p>
                     </article>
                 @endforeach
             </div>
