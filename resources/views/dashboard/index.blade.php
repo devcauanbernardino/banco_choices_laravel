@@ -16,7 +16,7 @@
 
 .dash-home2-card { background: var(--app-surface); border: 1px solid var(--app-border); }
 
-.chart-bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; min-width: 0; }
+.chart-bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 6px; cursor: pointer; min-width: 0; }
 .chart-bar-wrap:hover .chart-bar { filter: brightness(1.18); }
 .chart-bar { border-radius: 5px 5px 2px 2px; background: linear-gradient(180deg, rgba(192,132,252,.75), rgba(106,3,146,.25)); width: 100%; transform-origin: bottom; animation: barGrow .6s ease both; }
 .chart-bar.today { background: linear-gradient(180deg, #c084fc, #8b1fb8); box-shadow: 0 4px 14px rgba(139,31,184,.3); }
@@ -127,7 +127,7 @@
                 </span>
             </div>
             @if ($evoCount > 0)
-                <div style="display:flex; align-items:flex-end; gap:6px; flex:1; padding-top:12px; min-height:90px;" role="img" aria-label="{{ __('dashboard.panel.chart_weekly_title') }}">
+                <div style="display:flex; align-items:stretch; gap:6px; flex:1; padding-top:12px; height:90px;" role="img" aria-label="{{ __('dashboard.panel.chart_weekly_title') }}">
                     @foreach ($evoData as $i => $valor)
                         @php
                             $h = (float) $valor / $maxEvo * 100;
