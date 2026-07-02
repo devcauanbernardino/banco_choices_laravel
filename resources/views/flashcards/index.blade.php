@@ -36,30 +36,25 @@
 .fc-card__btn:disabled { opacity: .4; cursor: default; box-shadow: none; }
 
 /* Modal de revisão */
-.fc-review-modal .modal-content { border-radius: 22px; border: none; background: transparent; box-shadow: none; }
+.fc-review-modal .modal-content { border-radius: 22px; border: 1px solid var(--app-border); background: var(--app-surface); box-shadow: 0 25px 60px rgba(15,23,42,.25); }
+[data-theme="dark"] .fc-review-modal .modal-content { box-shadow: 0 25px 60px rgba(0,0,0,.5); }
 .fc-review-modal .modal-header { display: none; }
-.fc-review-modal .modal-body { padding: 0; }
+.fc-review-modal .modal-body { padding: 18px; }
 
-.fc-deck { position: relative; padding: 8px 6px 0; }
-.fc-deck::before, .fc-deck::after { content: ''; position: absolute; left: 10px; right: 10px; border-radius: 22px; background: var(--app-surface); border: 1px solid var(--app-border); }
-.fc-deck::before { top: -4px; height: 16px; opacity: .7; transform: scale(.98); }
-.fc-deck::after { top: -8px; height: 12px; opacity: .4; transform: scale(.95); }
-
-.fc-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 4px 12px; position: relative; z-index: 2; }
-.fc-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: .76rem; font-weight: 700; }
+.fc-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.fc-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: .76rem; font-weight: 700; white-space: nowrap; }
 .fc-pill--materia { background: rgba(13,148,136,.14); color: #0d9488; }
 [data-theme="dark"] .fc-pill--materia { background: rgba(45,212,191,.16); color: #2dd4bf; }
 .fc-pill--streak { background: rgba(249,115,22,.14); color: #ea580c; }
 [data-theme="dark"] .fc-pill--streak { background: rgba(251,146,60,.18); color: #fb923c; }
 
-.fc-panel { position: relative; z-index: 2; background: var(--app-surface); border: 1px solid var(--app-border); border-radius: 20px; box-shadow: 0 20px 45px rgba(15,23,42,.12); overflow: hidden; }
-[data-theme="dark"] .fc-panel { box-shadow: 0 20px 45px rgba(0,0,0,.45); }
+.fc-panel { background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 16px; overflow: hidden; }
 
 .fc-flip { perspective: 1400px; }
 .fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .55s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
 .fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); }
-.fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; padding: clamp(18px,4vw,26px); background: var(--app-surface); }
-.fc-flip-face--front { cursor: pointer; }
+.fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; padding: clamp(18px,4vw,26px); background: var(--app-bg); }
+.fc-flip-face--front { cursor: pointer; border: none; text-align: inherit; width: 100%; }
 .fc-flip-face--front:disabled { cursor: default; }
 .fc-flip-back { transform: rotateY(180deg); }
 
@@ -71,8 +66,8 @@
 .fc-flip-hint { color: #0d9488; font-weight: 700; }
 [data-theme="dark"] .fc-flip-hint { color: #2dd4bf; }
 
-.fc-rate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 14px; position: relative; z-index: 2; }
-.fc-rate-btn { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 6px; border-radius: 12px; border: 1px solid var(--app-border); background: var(--app-surface); font-size: .82rem; font-weight: 700; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+.fc-rate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
+.fc-rate-btn { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 6px; border-radius: 12px; border: 1px solid var(--app-border); background: var(--app-bg); font-size: .82rem; font-weight: 700; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
 .fc-rate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(15,23,42,.12); }
 .fc-rate-btn__num { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; font-size: .68rem; font-weight: 800; flex-shrink: 0; }
 .fc-rate-btn--dificil { color: #dc2626; }
@@ -82,9 +77,9 @@
 .fc-rate-btn--facil { color: #0d9488; }
 .fc-rate-btn--facil .fc-rate-btn__num { background: rgba(13,148,136,.15); }
 
-.fc-warn { margin-top: 10px; font-size: .74rem; color: #f97316; text-align: center; position: relative; z-index: 2; }
+.fc-warn { margin-top: 10px; font-size: .74rem; color: #f97316; text-align: center; }
 
-.fc-sum { text-align: center; padding: 24px 8px 8px; position: relative; z-index: 2; }
+.fc-sum { text-align: center; padding: 8px; }
 .fc-sum__total { font-size: 2rem; font-weight: 800; color: #0d9488; margin: 10px 0; }
 .fc-sum__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin: 16px 0; }
 .fc-sum__cell { background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 12px; padding: 12px 6px; }
@@ -153,31 +148,29 @@
                         </span>
                     </div>
 
-                    <div class="fc-deck">
-                        <div class="fc-panel">
-                            <div class="fc-flip" id="fcFlip">
-                                <div class="fc-flip-inner">
-                                    <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
-                                        <span class="fc-flip-tag" id="fcFrenteTag"></span>
-                                        <p class="fc-flip-text" id="fcFrenteText"></p>
-                                        <div class="fc-flip-bottom">
-                                            <span class="fc-flip-timer"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">schedule</span><span id="fcTimer">0s</span></span>
-                                            <span class="fc-flip-hint" id="fcRevealHint"></span>
-                                        </div>
-                                    </button>
-                                    <div class="fc-flip-face fc-flip-back">
-                                        <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
-                                        <p class="fc-flip-text" id="fcVersoText"></p>
+                    <div class="fc-panel">
+                        <div class="fc-flip" id="fcFlip">
+                            <div class="fc-flip-inner">
+                                <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
+                                    <span class="fc-flip-tag" id="fcFrenteTag"></span>
+                                    <p class="fc-flip-text" id="fcFrenteText"></p>
+                                    <div class="fc-flip-bottom">
+                                        <span class="fc-flip-timer"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">schedule</span><span id="fcTimer">0s</span></span>
+                                        <span class="fc-flip-hint" id="fcRevealHint"></span>
                                     </div>
+                                </button>
+                                <div class="fc-flip-face fc-flip-back">
+                                    <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
+                                    <p class="fc-flip-text" id="fcVersoText"></p>
                                 </div>
                             </div>
-
-                            <div class="fc-rate-grid d-none" id="fcRateGrid">
-                                <button type="button" class="fc-rate-btn fc-rate-btn--dificil" data-avaliacao="dificil"><span class="fc-rate-btn__num">1</span>{{ __('flashcards.review.rate_dificil') }}</button>
-                                <button type="button" class="fc-rate-btn fc-rate-btn--medio" data-avaliacao="medio"><span class="fc-rate-btn__num">2</span>{{ __('flashcards.review.rate_medio') }}</button>
-                                <button type="button" class="fc-rate-btn fc-rate-btn--facil" data-avaliacao="facil"><span class="fc-rate-btn__num">3</span>{{ __('flashcards.review.rate_facil') }}</button>
-                            </div>
                         </div>
+                    </div>
+
+                    <div class="fc-rate-grid d-none" id="fcRateGrid">
+                        <button type="button" class="fc-rate-btn fc-rate-btn--dificil" data-avaliacao="dificil"><span class="fc-rate-btn__num">1</span>{{ __('flashcards.review.rate_dificil') }}</button>
+                        <button type="button" class="fc-rate-btn fc-rate-btn--medio" data-avaliacao="medio"><span class="fc-rate-btn__num">2</span>{{ __('flashcards.review.rate_medio') }}</button>
+                        <button type="button" class="fc-rate-btn fc-rate-btn--facil" data-avaliacao="facil"><span class="fc-rate-btn__num">3</span>{{ __('flashcards.review.rate_facil') }}</button>
                     </div>
 
                     <p class="fc-warn d-none" id="fcErroGeracao"></p>
