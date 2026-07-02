@@ -275,9 +275,9 @@
            conteúdo do final (badges/mascotes) fica espremido contra o degradê
            de saída. */
         .lp-body--dark-hero .lp-hero {
-            padding-top: calc(clamp(24px, 4vw, 40px) + 60px) !important;
-            min-height: calc(100vh + 60px) !important;
-            min-height: calc(100svh + 60px) !important;
+            padding-top: calc(clamp(24px, 4vw, 40px) + 55px) !important;
+            min-height: calc(100vh + 55px) !important;
+            min-height: calc(100svh + 55px) !important;
         }
 
         #stats { position: relative; z-index: 1; }
