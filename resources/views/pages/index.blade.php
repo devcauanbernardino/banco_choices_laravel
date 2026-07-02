@@ -331,6 +331,31 @@
         </div>
     </section>
 
+    {{-- 1.3.6 Mascotes / Tutor IA --}}
+    <section class="lp-section" id="mascotes">
+        <div class="lp-container">
+            <div class="lp-section__header lp-reveal">
+                <span class="lp-badge">{{ __('landing.mascotes.badge') }}</span>
+                <h2 class="lp-h-section">{!! __('landing.mascotes.title') !!}</h2>
+                <p class="lp-section__subtitle">{!! __('landing.mascotes.subtitle') !!}</p>
+            </div>
+
+            <div class="lp-features__grid">
+                @foreach ([
+                    ['key' => 'robo', 'img' => 'robo-choice.png'],
+                    ['key' => 'fantasma', 'img' => 'fantasma-choice.png'],
+                    ['key' => 'gato', 'img' => 'gato-choice.png'],
+                ] as $i => $masc)
+                    <article class="lp-feature-card lp-reveal text-center" data-delay="{{ $i + 1 }}">
+                        <img src="{{ asset('assets/img/mascots/'.$masc['img']) }}" alt="{{ __('mascote.'.$masc['key'].'.nome') }}" style="width:110px; height:110px; object-fit:contain; margin:0 auto 14px;">
+                        <h3 class="lp-feature-card__title">{{ __('mascote.'.$masc['key'].'.nome') }}</h3>
+                        <p class="lp-feature-card__desc">{{ __('mascote.'.$masc['key'].'.desc') }}</p>
+                    </article>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     {{-- 1.4 Modalidades --}}
     <section class="lp-section" id="modalidades">
         <div class="lp-container">

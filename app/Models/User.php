@@ -23,6 +23,7 @@ class User extends Authenticatable
         'saldo_credito',
         'referido_por_codigo',
         'must_change_password',
+        'mascote',
     ];
 
     protected $hidden = [

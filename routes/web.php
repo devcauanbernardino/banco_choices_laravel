@@ -100,10 +100,12 @@ Route::redirect('/comprar-materias.php', '/comprar-materias', 301);
 Route::middleware('auth')->group(function () {
     Route::get('/trocar-senha-obrigatorio', [\App\Http\Controllers\Auth\ForcePasswordChangeController::class, 'show'])->name('password.force-change');
     Route::post('/trocar-senha-obrigatorio', [\App\Http\Controllers\Auth\ForcePasswordChangeController::class, 'update'])->name('password.force-change.store');
+    Route::get('/escolher-mascote', [\App\Http\Controllers\Auth\MascoteController::class, 'show'])->name('mascote.choose');
+    Route::post('/escolher-mascote', [\App\Http\Controllers\Auth\MascoteController::class, 'store'])->name('mascote.store');
 });
 
 // ── Authenticated ───────────────────────────────────────────
-Route::middleware(['auth', 'force.password.change'])->group(function () {
+Route::middleware(['auth', 'force.password.change', 'force.mascote.choice'])->group(function () {
     Route::prefix('api/catalogo')->group(function () {
         Route::get('/agrupamentos', [CatalogoAjaxController::class, 'agrupamentos'])->name('api.catalogo.agrupamentos');
         Route::get('/faculdades', [CatalogoAjaxController::class, 'faculdades'])->name('api.catalogo.faculdades');

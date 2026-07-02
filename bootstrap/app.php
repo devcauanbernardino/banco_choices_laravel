@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\ForceMascoteChoice;
 use App\Http\Middleware\ForcePasswordChange;
 use App\Http\Middleware\SecurityHeaders;
 use App\Http\Middleware\SetLocale;
@@ -26,6 +27,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->alias([
             'force.password.change' => ForcePasswordChange::class,
+            'force.mascote.choice' => ForceMascoteChoice::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
