@@ -1,10 +1,12 @@
 @php
+    $bcChatMascoteKey = auth()->user()->mascote ?? null;
     $bcChatMascoteFiles = [
         'robo' => 'robo-choice.png',
         'fantasma' => 'fantasma-choice.png',
         'gato' => 'gato-choice.png',
     ];
-    $bcChatMascoteFile = $bcChatMascoteFiles[auth()->user()->mascote ?? null] ?? null;
+    $bcChatMascoteFile = $bcChatMascoteFiles[$bcChatMascoteKey] ?? null;
+    $bcChatTitle = $bcChatMascoteKey ? __('mascote.'.$bcChatMascoteKey.'.nome') : __('ia_chat.title');
 @endphp
 <div id="bcAiChatWidget" style="position:fixed; right:20px; bottom:20px; z-index:1050; font-family:'Inter',system-ui,sans-serif;">
     <button type="button" id="bcAiChatToggle" aria-label="{{ __('ia_chat.open_aria') }}"
@@ -30,7 +32,7 @@
                 @else
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 00-4 4v1.05A5 5 0 004 12v5a2 2 0 002 2h1l1 3 1-3h6l1 3 1-3h1a2 2 0 002-2v-5a5 5 0 00-4-4.9V6a4 4 0 00-4-4z"/></svg>
                 @endif
-                {{ __('ia_chat.title') }}
+                {{ $bcChatTitle }}
             </div>
             <button type="button" id="bcAiChatClear" title="{{ __('ia_chat.clear') }}" aria-label="{{ __('ia_chat.clear') }}"
                     style="background:transparent; border:none; color:rgba(255,255,255,.8); cursor:pointer; padding:4px; display:flex;">
