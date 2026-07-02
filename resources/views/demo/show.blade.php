@@ -38,13 +38,6 @@
                     <p class="demo-pick-grid__empty">{{ __('demo.questao.no_questions') }}</p>
                 @endforelse
             </div>
-
-            <p class="demo-pick-section__foot text-center mb-0">
-                <a href="{{ route('home') }}" class="demo-pick-section__back">
-                    <i class="bi bi-arrow-left" aria-hidden="true"></i>
-                    {{ __('demo.show.back_home') }}
-                </a>
-            </p>
         </div>
     </section>
 @endsection

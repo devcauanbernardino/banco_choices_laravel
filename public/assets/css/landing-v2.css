@@ -39,7 +39,25 @@
     line-height: 1.55;
     width: 100%;
     max-width: 100%;
+    position: relative;
 }
+
+/* Blobs de fundo fixos: dão contexto colorido pro blur do glassmorphism em
+   qualquer página que use .lp-body (home, funil de demo, etc). */
+.lp-body::before, .lp-body::after {
+    content: '';
+    position: fixed;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    filter: blur(110px);
+    z-index: 0;
+    pointer-events: none;
+    opacity: .12;
+}
+.lp-body::before { background: #8b1fb8; top: 10%; left: -80px; }
+.lp-body::after { background: #38bdf8; bottom: 10%; right: -80px; }
+[data-theme="dark"] .lp-body::before, [data-theme="dark"] .lp-body::after { opacity: .16; }
 
 .lp-body a,
 .lp-body a:hover,

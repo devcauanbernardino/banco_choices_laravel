@@ -136,12 +136,6 @@
         .lp-mascote-card .lp-feature-card__desc { width: 100%; text-align: center; }
         [data-theme="dark"] .lp-mascote-card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
 
-        /* Blobs de fundo fixos: dão contexto colorido pro blur do glassmorphism em toda a página */
-        .lp-body::before, .lp-body::after { content: ''; position: fixed; width: 440px; height: 440px; border-radius: 50%; filter: blur(110px); z-index: 0; pointer-events: none; opacity: .12; }
-        .lp-body::before { background: #8b1fb8; top: 10%; left: -80px; }
-        .lp-body::after { background: #38bdf8; bottom: 10%; right: -80px; }
-        [data-theme="dark"] .lp-body::before, [data-theme="dark"] .lp-body::after { opacity: .16; }
-
         .lp-glass { background: rgba(255,255,255,.55) !important; backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); border: 1px solid rgba(255,255,255,.5) !important; box-shadow: 0 8px 28px rgba(31,10,60,.08); }
         [data-theme="dark"] .lp-glass { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; box-shadow: 0 8px 28px rgba(0,0,0,.3); }
 
