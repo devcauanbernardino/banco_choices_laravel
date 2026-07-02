@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\FlashcardProgresso;
 use App\Models\Materia;
 use App\Models\Questao;
-use App\Services\Flashcards\FlashcardContentGenerator;
 use App\Services\Flashcards\FlashcardQueueBuilder;
 use App\Support\FlashcardSession;
 use App\Support\Question;
@@ -137,17 +136,8 @@ class FlashcardController extends Controller
         $questaoId = (int) $fila[$atual]['questao_id'];
         $revelado = (bool) $this->sessao->get('revelado');
 
-        try {
-            $conteudo = FlashcardContentGenerator::getOrGenerate($questaoId, $questao, (string) app()->getLocale());
-            $frente = $conteudo->frente;
-            $verso = $conteudo->verso;
-            $erroGeracao = null;
-        } catch (\Throwable $e) {
-            report($e);
-            $frente = $questao->getPergunta();
-            $verso = $questao->getFeedback();
-            $erroGeracao = __('flashcards.err.ai_generation_failed');
-        }
+        $frente = $questao->getPergunta();
+        $verso = $questao->getFeedback();
 
         $tema = Questao::query()->whereKey($questaoId)->value('tema');
         $progresso = FlashcardProgresso::query()
@@ -164,7 +154,6 @@ class FlashcardController extends Controller
             'intervalo_atual' => $progresso ? (int) $progresso->intervalo_dias : null,
             'frente' => $frente,
             'verso' => $revelado ? $verso : null,
-            'erro_geracao' => $revelado ? $erroGeracao : null,
             'revelado' => $revelado,
             'atual' => $atual,
             'total' => count($fila),

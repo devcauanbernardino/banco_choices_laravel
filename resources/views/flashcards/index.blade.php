@@ -79,8 +79,6 @@
 .fc-rate-btn--facil { color: #0d9488; }
 .fc-rate-btn--facil .fc-rate-btn__num { background: rgba(13,148,136,.15); }
 
-.fc-warn { margin-top: 10px; font-size: .74rem; color: #f97316; text-align: center; }
-
 .fc-sum { text-align: center; padding: 8px; }
 .fc-sum__total { font-size: 2rem; font-weight: 800; color: #0d9488; margin: 10px 0; }
 .fc-sum__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin: 16px 0; }
@@ -176,8 +174,6 @@
                         <button type="button" class="fc-rate-btn fc-rate-btn--medio" data-avaliacao="medio"><span class="fc-rate-btn__num">2</span>{{ __('flashcards.review.rate_medio') }}</button>
                         <button type="button" class="fc-rate-btn fc-rate-btn--facil" data-avaliacao="facil"><span class="fc-rate-btn__num">3</span>{{ __('flashcards.review.rate_facil') }}</button>
                     </div>
-
-                    <p class="fc-warn d-none" id="fcErroGeracao"></p>
                 </div>
 
                 <div id="fcModalSummaryView" class="d-none fc-sum">
@@ -215,7 +211,6 @@
     var versoText = document.getElementById('fcVersoText');
     var timerEl = document.getElementById('fcTimer');
     var rateGrid = document.getElementById('fcRateGrid');
-    var erroGeracaoBox = document.getElementById('fcErroGeracao');
     var errorBox = document.getElementById('fcErrorBox');
     var materiaLbl = document.getElementById('fcModalMateria');
     var streakLbl = document.getElementById('fcModalStreak');
@@ -276,13 +271,6 @@
             flip.classList.remove('is-flipped');
             rateGrid.classList.add('d-none');
             frontBtn.disabled = false;
-        }
-
-        if (data.erro_geracao) {
-            erroGeracaoBox.textContent = data.erro_geracao;
-            erroGeracaoBox.classList.remove('d-none');
-        } else {
-            erroGeracaoBox.classList.add('d-none');
         }
     }
 
