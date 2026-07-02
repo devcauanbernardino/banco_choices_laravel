@@ -314,6 +314,10 @@
         </aside>
     </div>
 </div>
+
+@auth
+    @include('partials.ai-chat-widget')
+@endauth
 @endsection
 
 @push('scripts')
