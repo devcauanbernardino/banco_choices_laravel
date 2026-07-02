@@ -6,6 +6,7 @@
 
         <ul class="lp-topbar__nav d-none d-lg-flex" role="list">
             <li><a href="{{ route('home') }}#funcionalidades">{{ __('landing.topbar.funcionalidades') }}</a></li>
+            <li><a href="{{ route('home') }}#mascotes">{{ __('landing.topbar.mascotes') }}</a></li>
             <li><a href="{{ route('home') }}#modalidades">{{ __('landing.topbar.modalidades') }}</a></li>
             <li><a href="{{ route('home') }}#planes">{{ __('landing.topbar.planes') }}</a></li>
         </ul>

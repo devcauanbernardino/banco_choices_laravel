@@ -163,9 +163,16 @@
             background: transparent !important;
         }
         .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__inner {
-            background: rgba(255,255,255,.55);
-            border-color: rgba(255,255,255,.5);
+            background: rgba(255,255,255,.82);
+            border-color: rgba(255,255,255,.6);
             box-shadow: 0 8px 28px rgba(31,10,60,.12);
+        }
+        .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__nav a {
+            color: #3d2450;
+        }
+        .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__nav a:hover {
+            color: var(--lp-purple);
+            background: rgba(106,3,146,.1);
         }
 
         /* A nav agora é transparente e flutua sobre o hero; antes de rolar, o sticky
