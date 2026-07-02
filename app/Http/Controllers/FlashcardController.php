@@ -6,6 +6,7 @@ use App\Models\FlashcardProgresso;
 use App\Models\Materia;
 use App\Models\Questao;
 use App\Services\Flashcards\FlashcardQueueBuilder;
+use App\Support\FlashcardAnswerFormatter;
 use App\Support\FlashcardSession;
 use App\Support\Question;
 use App\Support\QuestionBankLocator;
@@ -137,7 +138,7 @@ class FlashcardController extends Controller
         $revelado = (bool) $this->sessao->get('revelado');
 
         $frente = $questao->getPergunta();
-        $verso = $questao->getFeedback();
+        $verso = FlashcardAnswerFormatter::format($questao->getFeedback());
 
         $tema = Questao::query()->whereKey($questaoId)->value('tema');
         $progresso = FlashcardProgresso::query()
