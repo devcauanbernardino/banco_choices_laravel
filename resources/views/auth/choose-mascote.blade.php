@@ -22,8 +22,8 @@
     .mascote-card { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.4); box-shadow: 0 8px 32px rgba(31,10,60,.1); border-radius: 20px; padding: 24px 18px; text-align: center; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; height: 100%; min-height: 270px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; }
     [data-theme="dark"] .mascote-card { background: rgba(255,255,255,.055); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
     .mascote-card img { width: 140px; height: 140px; object-fit: contain; margin-bottom: 12px; }
-    .mascote-card h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; color: var(--app-text); }
-    .mascote-card p { font-size: .82rem; color: var(--app-muted); margin: 0; }
+    .mascote-card h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; color: var(--app-text); width: 100%; text-align: center; }
+    .mascote-card p { font-size: .82rem; color: var(--app-muted); margin: 0; width: 100%; text-align: center; }
     .mascote-option:hover .mascote-card { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,0,0,.18); }
     .mascote-option input:checked + .mascote-card { border-color: #8b1fb8; box-shadow: 0 0 0 4px rgba(139,31,184,.18); }
     .mascote-submit-wrap { text-align: center; margin-top: 28px; }

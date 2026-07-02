@@ -129,6 +129,11 @@
         #mascotes .lp-mascote-card { flex: 0 1 260px; }
         .lp-mascote-card { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.5); box-shadow: 0 8px 32px rgba(31,10,60,.1); height: 100%; min-height: 270px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; }
         .lp-mascote-card .lp-feature-card__desc { margin-bottom: 0; }
+        /* .lp-feature-card__title tem padding-right pra abrir espaço pra seta
+           decorativa dos cards normais — nos mascotes não tem seta, e essa
+           sobra assimétrica descentralizava o nome/descrição. */
+        .lp-mascote-card .lp-feature-card__title { padding-right: 0; width: 100%; text-align: center; }
+        .lp-mascote-card .lp-feature-card__desc { width: 100%; text-align: center; }
         [data-theme="dark"] .lp-mascote-card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
 
         /* Blobs de fundo fixos: dão contexto colorido pro blur do glassmorphism em toda a página */
