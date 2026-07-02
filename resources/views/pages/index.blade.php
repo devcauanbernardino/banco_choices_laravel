@@ -179,6 +179,72 @@
             background: rgba(106,3,146,.1);
         }
 
+        /* Seletor de idioma: sem ancestral com a classe "navbar-actions--landing"
+           (usada em outras telas), o botão e o dropdown ficavam com o visual cru
+           do Bootstrap. Dá o mesmo tratamento (cartão branco arredondado) no menu
+           e ajusta a cor do botão — incluindo a setinha, que herda "color" — pro
+           contraste do fundo escuro/claro da nav. */
+        .lp-body--dark-hero .lp-topbar .btn-navbar-lang {
+            color: rgba(255,255,255,.85);
+            border: 1px solid rgba(255,255,255,.3);
+            background: rgba(255,255,255,.08);
+        }
+        .lp-body--dark-hero .lp-topbar .btn-navbar-lang:hover,
+        .lp-body--dark-hero .lp-topbar .btn-navbar-lang:focus,
+        .lp-body--dark-hero .lp-topbar .btn-navbar-lang.show {
+            color: #fff;
+            border-color: rgba(255,255,255,.5);
+            background: rgba(255,255,255,.16);
+        }
+        .lp-body--dark-hero .lp-topbar.is-scrolled .btn-navbar-lang {
+            color: var(--lp-purple);
+            border-color: rgba(106,3,146,.3);
+            background: #fff;
+        }
+        .lp-body--dark-hero .lp-topbar.is-scrolled .btn-navbar-lang:hover,
+        .lp-body--dark-hero .lp-topbar.is-scrolled .btn-navbar-lang:focus,
+        .lp-body--dark-hero .lp-topbar.is-scrolled .btn-navbar-lang.show {
+            border-color: var(--lp-purple);
+            background: #fff;
+        }
+        .lp-body--dark-hero .lp-topbar .bc-lang-menu {
+            min-width: 200px;
+            padding: .35rem;
+            margin-top: .5rem !important;
+            border-radius: 14px;
+            border: 1px solid rgba(15,23,42,.08);
+            background: #fff;
+            box-shadow: 0 12px 40px rgba(15,23,42,.15), 0 2px 8px rgba(15,23,42,.08);
+            overflow: hidden;
+        }
+        .lp-body--dark-hero .lp-topbar .bc-lang-menu__item {
+            display: flex !important;
+            align-items: center !important;
+            gap: .65rem;
+            padding: .6rem .75rem !important;
+            font-size: .875rem;
+            font-weight: 500;
+            color: var(--bc-lang-item-text, #475569);
+            border: none;
+            border-radius: 8px;
+        }
+        .lp-body--dark-hero .lp-topbar .bc-lang-menu__item:hover {
+            background: var(--bc-lang-accent-hover, rgba(106,3,146,.08));
+            color: var(--bc-lang-accent, #6a0392);
+        }
+        .lp-body--dark-hero .lp-topbar .bc-lang-menu__item--active {
+            background: var(--bc-lang-accent-soft, rgba(106,3,146,.12));
+            color: var(--bc-lang-accent, #6a0392);
+            font-weight: 600;
+        }
+        .lp-body--dark-hero .lp-topbar .bc-lang-menu__code {
+            font-size: .6875rem;
+            font-weight: 800;
+            letter-spacing: .06em;
+            color: #94a3b8;
+            min-width: 1.35rem;
+        }
+
         /* A nav agora é fixed (fora do fluxo) e flutua sobre o hero, então o hero
            passa a começar exatamente no topo da página — sem vão, sem precisar
            escurecer o body inteiro. Só precisamos de um respiro extra no topo do
