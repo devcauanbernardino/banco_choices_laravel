@@ -5,20 +5,21 @@
 @push('styles')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
 <style>
+    html, body { overflow-x: hidden; }
     body { font-family: 'Inter', system-ui, sans-serif; background: var(--app-bg); min-height: 100vh; position: relative; isolation: isolate; }
     body::before, body::after { content: ''; position: fixed; width: 420px; height: 420px; border-radius: 50%; filter: blur(100px); z-index: -1; pointer-events: none; opacity: .35; }
     body::before { background: #8b1fb8; top: 6%; left: 6%; }
     body::after { background: #38bdf8; bottom: 4%; right: 8%; }
     [data-theme="dark"] body::before, [data-theme="dark"] body::after { opacity: .3; }
 
-    .mascote-wrap { max-width: 880px; margin: 3rem auto; padding: 0 1rem; position: relative; z-index: 1; }
+    .mascote-wrap { max-width: 880px; margin: 2.5rem auto; padding: 0 1rem; position: relative; z-index: 1; }
     .mascote-header { text-align: center; color: var(--app-text); margin-bottom: 2rem; }
     .mascote-header h1 { font-family: 'Poppins', sans-serif; font-weight: 800; }
     .mascote-header p { color: var(--app-muted); }
-    .mascote-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .mascote-option { display: block; cursor: pointer; }
+    .mascote-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); align-items: stretch; gap: 20px; }
+    .mascote-option { display: block; cursor: pointer; height: 100%; }
     .mascote-option input { position: absolute; opacity: 0; pointer-events: none; }
-    .mascote-card { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.4); box-shadow: 0 8px 32px rgba(31,10,60,.1); border-radius: 20px; padding: 24px 18px; text-align: center; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+    .mascote-card { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.4); box-shadow: 0 8px 32px rgba(31,10,60,.1); border-radius: 20px; padding: 24px 18px; text-align: center; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; height: 100%; min-height: 270px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; }
     [data-theme="dark"] .mascote-card { background: rgba(255,255,255,.055); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
     .mascote-card img { width: 140px; height: 140px; object-fit: contain; margin-bottom: 12px; }
     .mascote-card h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; color: var(--app-text); }
