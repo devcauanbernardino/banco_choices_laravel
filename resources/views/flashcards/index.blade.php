@@ -148,7 +148,7 @@
                             <span id="fcModalMateria"></span>
                         </span>
                         <span class="fc-pill fc-pill--streak">
-                            <span aria-hidden="true">🔥</span>
+                            <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">local_fire_department</span>
                             <span id="fcModalStreak"></span>
                         </span>
                     </div>
