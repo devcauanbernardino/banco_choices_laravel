@@ -320,7 +320,6 @@
                     ['icon' => 'bi-layers', 'key' => 'f2'],
                     ['icon' => 'bi-boxes', 'key' => 'f3'],
                     ['icon' => 'bi-mic', 'key' => 'f4'],
-                    ['icon' => 'bi-robot', 'key' => 'f5'],
                     ['icon' => 'bi-map', 'key' => 'f6'],
                     ['icon' => 'bi-controller', 'key' => 'f7'],
                     ['icon' => 'bi-camera-video', 'key' => 'f8'],
