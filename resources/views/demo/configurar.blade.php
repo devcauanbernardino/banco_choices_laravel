@@ -372,7 +372,6 @@
             cb.className = 'form-check-input demo-tema-check';
             cb.name = 'temas[]';
             cb.value = valueToken;
-            cb.disabled = temaAll.checked;
 
             var nm = document.createElement('span');
             nm.className = 'demo-tema-row__name';
@@ -449,7 +448,6 @@
         renderTemaRows(c);
         temaRows.querySelectorAll('input[name="temas[]"]').forEach(function (cb) {
             cb.checked = false;
-            cb.disabled = true;
         });
         refreshCount();
     }
@@ -476,10 +474,11 @@
     });
 
     temaAll.addEventListener('change', function () {
-        temaRows.querySelectorAll('input[name="temas[]"]').forEach(function (cb) {
-            cb.disabled = temaAll.checked;
-            if (temaAll.checked) cb.checked = false;
-        });
+        if (temaAll.checked) {
+            temaRows.querySelectorAll('input[name="temas[]"]').forEach(function (cb) {
+                cb.checked = false;
+            });
+        }
         temaBtnLabel.textContent = temaAll.checked ? STR_TEMA_TODOS : STR_TEMA_CUSTOM;
         refreshCount();
     });
@@ -493,9 +492,6 @@
             if (cb.checked) any = true;
         });
         if (!any) temaAll.checked = true;
-        temaRows.querySelectorAll('input[name="temas[]"]').forEach(function (cb) {
-            cb.disabled = temaAll.checked;
-        });
         temaBtnLabel.textContent = temaAll.checked ? STR_TEMA_TODOS : STR_TEMA_CUSTOM;
         refreshCount();
     });
