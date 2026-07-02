@@ -348,20 +348,18 @@
 .demo-quiz__actions { display: flex; justify-content: flex-end; }
 .demo-quiz__btn { min-width: 200px; }
 
-.demo-quiz__exitbar {
-    padding: 18px 20px;
-    border-top: 1px solid var(--lp-border, rgba(255, 255, 255, 0.04));
-    text-align: center;
-}
 .demo-quiz__exit-link {
+    flex-shrink: 0;
     color: var(--lp-muted, #94a3b8);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 600;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
+    white-space: nowrap;
 }
-.demo-quiz__exit-link:hover { color: var(--lp-text, #f3f4f6); }
+.demo-quiz__exit-link:hover { color: var(--lp-text, #1c1c1f); }
 
 /* ---------- Resultado (paywall) ---------- */
 .demo-result {

@@ -28,6 +28,9 @@
         <span class="demo-quiz__progress-label">
             {{ __('demo.questao.progress', ['n' => $indice, 'total' => $total]) }}
         </span>
+        <a href="{{ route('demo.show') }}" class="demo-quiz__exit-link">
+            <i class="bi bi-x-lg"></i> {{ __('demo.questao.exit') }}
+        </a>
     </header>
 
     <main class="demo-quiz__canvas">
@@ -66,12 +69,6 @@
             </div>
         </article>
     </main>
-
-    <footer class="demo-quiz__exitbar">
-        <a href="{{ route('demo.show') }}" class="demo-quiz__exit-link">
-            <i class="bi bi-x-lg"></i> {{ __('demo.questao.exit') }}
-        </a>
-    </footer>
 </div>
 @endsection
 
