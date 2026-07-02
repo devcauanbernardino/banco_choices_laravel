@@ -119,6 +119,14 @@
                 box-sizing: border-box !important;
             }
         }
+
+        #mascotes { position: relative; isolation: isolate; }
+        #mascotes::before, #mascotes::after { content: ''; position: absolute; width: 360px; height: 360px; border-radius: 50%; filter: blur(90px); z-index: -1; pointer-events: none; opacity: .18; }
+        #mascotes::before { background: #8b1fb8; top: 0; left: -60px; }
+        #mascotes::after { background: #38bdf8; bottom: 0; right: -60px; }
+
+        .lp-mascote-card { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.5); box-shadow: 0 8px 32px rgba(31,10,60,.1); }
+        [data-theme="dark"] .lp-mascote-card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
     </style>
 @endpush
 
@@ -346,7 +354,7 @@
                     ['key' => 'fantasma', 'img' => 'fantasma-choice.png'],
                     ['key' => 'gato', 'img' => 'gato-choice.png'],
                 ] as $i => $masc)
-                    <article class="lp-feature-card lp-reveal text-center" data-delay="{{ $i + 1 }}">
+                    <article class="lp-feature-card lp-mascote-card lp-reveal text-center" data-delay="{{ $i + 1 }}">
                         <img src="{{ asset('assets/img/mascots/'.$masc['img']) }}" alt="{{ __('mascote.'.$masc['key'].'.nome') }}" style="width:110px; height:110px; object-fit:contain; margin:0 auto 14px;">
                         <h3 class="lp-feature-card__title">{{ __('mascote.'.$masc['key'].'.nome') }}</h3>
                         <p class="lp-feature-card__desc">{{ __('mascote.'.$masc['key'].'.desc') }}</p>
