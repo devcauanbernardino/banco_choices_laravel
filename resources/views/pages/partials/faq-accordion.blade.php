@@ -10,7 +10,7 @@
 <div class="accordion lp-faq__accordion" id="lpFaqAccordion">
     @foreach($faqs as $i => $f)
         @php $idx = $i + 1; @endphp
-        <div class="accordion-item lp-faq__item">
+        <div class="accordion-item lp-faq__item lp-glass">
             <h3 class="accordion-header" id="lpFaqHeading{{ $idx }}">
                 <button class="accordion-button collapsed lp-faq__button" type="button"
                         data-bs-toggle="collapse" data-bs-target="#lpFaqCollapse{{ $idx }}"

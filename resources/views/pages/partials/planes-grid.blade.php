@@ -28,7 +28,7 @@
 
 <div class="lp-planes-grid">
     @foreach($rendered as $r)
-        <article class="lp-plan-card @if($r['isHighlight']) lp-plan-card--highlight @endif">
+        <article class="lp-plan-card lp-glass @if($r['isHighlight']) lp-plan-card--highlight @endif">
             @if($r['isHighlight'])
                 <span class="lp-plan-card__ribbon">{{ __('landing.planes.recomendado') }}</span>
             @endif

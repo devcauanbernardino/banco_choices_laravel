@@ -130,6 +130,29 @@
         .lp-mascote-card { background: rgba(255,255,255,.5); backdrop-filter: blur(18px) saturate(180%); -webkit-backdrop-filter: blur(18px) saturate(180%); border: 1px solid rgba(255,255,255,.5); box-shadow: 0 8px 32px rgba(31,10,60,.1); height: 100%; min-height: 270px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; }
         .lp-mascote-card .lp-feature-card__desc { margin-bottom: 0; }
         [data-theme="dark"] .lp-mascote-card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); box-shadow: 0 8px 32px rgba(0,0,0,.35); }
+
+        /* Blobs de fundo fixos: dão contexto colorido pro blur do glassmorphism em toda a página */
+        .lp-body::before, .lp-body::after { content: ''; position: fixed; width: 440px; height: 440px; border-radius: 50%; filter: blur(110px); z-index: 0; pointer-events: none; opacity: .12; }
+        .lp-body::before { background: #8b1fb8; top: 10%; left: -80px; }
+        .lp-body::after { background: #38bdf8; bottom: 10%; right: -80px; }
+        [data-theme="dark"] .lp-body::before, [data-theme="dark"] .lp-body::after { opacity: .16; }
+
+        .lp-glass { background: rgba(255,255,255,.55) !important; backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); border: 1px solid rgba(255,255,255,.5) !important; box-shadow: 0 8px 28px rgba(31,10,60,.08); }
+        [data-theme="dark"] .lp-glass { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; box-shadow: 0 8px 28px rgba(0,0,0,.3); }
+
+        .lp-stats { position: relative; z-index: 1; }
+        .lp-stats__cell.lp-glass { border-radius: 14px; }
+        @media (min-width: 768px) {
+            .lp-stats__grid { gap: 12px !important; }
+            .lp-stats__cell.lp-glass { border-right: 0 !important; }
+        }
+
+        #funcionalidades, #modalidades, #planes, #faq { position: relative; z-index: 1; }
+        #funcionalidades .lp-feature-card.lp-glass,
+        #modalidades .lp-fac-card.lp-glass,
+        #planes .lp-plan-card.lp-glass,
+        #faq .lp-faq__item.lp-glass { border-radius: var(--lp-radius, 16px); }
+        #faq .lp-faq__item.lp-glass { overflow: hidden; }
     </style>
 @endpush
 
@@ -296,7 +319,7 @@
         <div class="lp-container">
             <div class="lp-stats__grid">
                 @foreach ($stats as $i => $s)
-                    <div class="lp-stats__cell lp-reveal" data-delay="{{ $i + 1 }}">
+                    <div class="lp-stats__cell lp-glass lp-reveal" data-delay="{{ $i + 1 }}">
                         <div class="lp-stats__num">{{ $s['numero'] }}</div>
                         <div class="lp-stats__label">{{ __($s['label_key']) }}</div>
                     </div>
@@ -330,7 +353,7 @@
                     ['icon' => 'bi-people', 'key' => 'f13'],
                     ['icon' => 'bi-chat-dots', 'key' => 'f14'],
                 ] as $i => $feat)
-                    <article class="lp-feature-card lp-reveal" data-delay="{{ ($i % 4) + 1 }}">
+                    <article class="lp-feature-card lp-glass lp-reveal" data-delay="{{ ($i % 4) + 1 }}">
                         <span class="lp-feature-card__icon"><i class="bi {{ $feat['icon'] }}"></i></span>
                         <h3 class="lp-feature-card__title">{{ __('landing.features.'.$feat['key'].'.title') }}</h3>
                         <p class="lp-feature-card__desc">{{ __('landing.features.'.$feat['key'].'.desc') }}</p>

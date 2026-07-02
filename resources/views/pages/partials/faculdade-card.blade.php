@@ -18,7 +18,7 @@
 @endphp
 
 @if($proximamente)
-    <div class="lp-fac-card lp-fac-card--soon" aria-disabled="true">
+    <div class="lp-fac-card lp-fac-card--soon lp-glass" aria-disabled="true">
         <div class="lp-fac-card__body">
             <div class="lp-fac-card__head">
                 <h3 class="lp-fac-card__title">{{ $titulo }}</h3>
@@ -28,7 +28,7 @@
         </div>
     </div>
 @else
-    <a href="{{ $href }}" class="lp-fac-card">
+    <a href="{{ $href }}" class="lp-fac-card lp-glass">
         <div class="lp-fac-card__body">
             <div class="lp-fac-card__head">
                 <h3 class="lp-fac-card__title">{{ $titulo }}</h3>
