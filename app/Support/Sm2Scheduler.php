@@ -7,13 +7,11 @@ namespace App\Support;
  */
 final class Sm2Scheduler
 {
-    public const QUALITY_AGAIN = 0;
+    public const QUALITY_DIFICIL = 2;
 
-    public const QUALITY_HARD = 3;
+    public const QUALITY_MEDIO = 4;
 
-    public const QUALITY_GOOD = 4;
-
-    public const QUALITY_EASY = 5;
+    public const QUALITY_FACIL = 5;
 
     public const MIN_EASE_FACTOR = 1.3;
 
@@ -46,10 +44,9 @@ final class Sm2Scheduler
     public static function buttonToQuality(string $button): int
     {
         return match ($button) {
-            'again' => self::QUALITY_AGAIN,
-            'hard' => self::QUALITY_HARD,
-            'good' => self::QUALITY_GOOD,
-            'easy' => self::QUALITY_EASY,
+            'dificil' => self::QUALITY_DIFICIL,
+            'medio' => self::QUALITY_MEDIO,
+            'facil' => self::QUALITY_FACIL,
             default => throw new \InvalidArgumentException("Avaliação inválida: {$button}"),
         };
     }

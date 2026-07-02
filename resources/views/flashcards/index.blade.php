@@ -36,44 +36,58 @@
 .fc-card__btn:disabled { opacity: .4; cursor: default; box-shadow: none; }
 
 /* Modal de revisão */
-.fc-review-modal .modal-content { border-radius: 24px; border: 1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.55); backdrop-filter: blur(28px) saturate(190%); -webkit-backdrop-filter: blur(28px) saturate(190%); color: var(--app-text); font-family: 'Inter', system-ui, sans-serif; box-shadow: 0 30px 80px rgba(106,3,146,.28); position: relative; overflow: hidden; }
-[data-theme="dark"] .fc-review-modal .modal-content { background: rgba(20,20,26,.6); border-color: rgba(255,255,255,.1); box-shadow: 0 30px 80px rgba(0,0,0,.55); }
-.fc-review-modal .modal-content::before, .fc-review-modal .modal-content::after { content: ''; position: absolute; width: 240px; height: 240px; border-radius: 50%; filter: blur(70px); z-index: 0; pointer-events: none; opacity: .5; }
-.fc-review-modal .modal-content::before { background: #8b1fb8; top: -70px; left: -70px; }
-.fc-review-modal .modal-content::after { background: #38bdf8; bottom: -70px; right: -70px; }
-.fc-review-modal .modal-header, .fc-review-modal .modal-body { position: relative; z-index: 1; }
-.fc-review-modal__materia { font-size: .8rem; font-weight: 700; color: var(--app-muted); }
-.fc-review-modal__progress { font-size: .78rem; font-weight: 700; color: #a855f7; }
+.fc-review-modal .modal-content { border-radius: 22px; border: none; background: transparent; box-shadow: none; }
+.fc-review-modal .modal-header { display: none; }
+.fc-review-modal .modal-body { padding: 0; }
 
-.fc-flip { perspective: 1400px; margin-bottom: 4px; }
-.fc-flip-inner { position: relative; width: 100%; height: min(60vh, 320px); transition: transform .55s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
+.fc-deck { position: relative; padding: 8px 6px 0; }
+.fc-deck::before, .fc-deck::after { content: ''; position: absolute; left: 10px; right: 10px; border-radius: 22px; background: var(--app-surface); border: 1px solid var(--app-border); }
+.fc-deck::before { top: -4px; height: 16px; opacity: .7; transform: scale(.98); }
+.fc-deck::after { top: -8px; height: 12px; opacity: .4; transform: scale(.95); }
+
+.fc-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 4px 12px; position: relative; z-index: 2; }
+.fc-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: .76rem; font-weight: 700; }
+.fc-pill--materia { background: rgba(13,148,136,.14); color: #0d9488; }
+[data-theme="dark"] .fc-pill--materia { background: rgba(45,212,191,.16); color: #2dd4bf; }
+.fc-pill--streak { background: rgba(249,115,22,.14); color: #ea580c; }
+[data-theme="dark"] .fc-pill--streak { background: rgba(251,146,60,.18); color: #fb923c; }
+
+.fc-panel { position: relative; z-index: 2; background: var(--app-surface); border: 1px solid var(--app-border); border-radius: 20px; box-shadow: 0 20px 45px rgba(15,23,42,.12); overflow: hidden; }
+[data-theme="dark"] .fc-panel { box-shadow: 0 20px 45px rgba(0,0,0,.45); }
+
+.fc-flip { perspective: 1400px; }
+.fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .55s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
 .fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); }
-.fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 18px; padding: clamp(20px,4vw,32px); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; gap: 14px; background: rgba(255,255,255,.4); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.45); box-shadow: 0 10px 30px rgba(31,10,60,.1), inset 0 1px 0 rgba(255,255,255,.5); }
-.fc-flip-face--front { justify-content: center; }
-[data-theme="dark"] .fc-flip-face { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 10px 30px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.05); }
+.fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; padding: clamp(18px,4vw,26px); background: var(--app-surface); }
 .fc-flip-face--front { cursor: pointer; }
 .fc-flip-face--front:disabled { cursor: default; }
 .fc-flip-back { transform: rotateY(180deg); }
-.fc-flip-tag { font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #a855f7; }
-.fc-flip-text { font-size: 1.02rem; color: var(--app-text); line-height: 1.6; margin: 0; }
-.fc-flip-hint { font-size: .76rem; color: var(--app-muted); }
 
-.fc-rate-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 16px; }
-.fc-rate-btn { padding: 10px 6px; border-radius: 12px; border: 1px solid rgba(255,255,255,.4); background: rgba(255,255,255,.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); font-size: .76rem; font-weight: 700; cursor: pointer; color: var(--app-text); transition: transform .15s ease, background .15s ease; }
-.fc-rate-btn:hover { transform: translateY(-2px); }
-[data-theme="dark"] .fc-rate-btn { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.12); }
-.fc-rate-btn--again { color: #f87171; border-color: rgba(239,68,68,.4); }
-.fc-rate-btn--hard { color: #f97316; border-color: rgba(249,115,22,.4); }
-.fc-rate-btn--good { color: #22c55e; border-color: rgba(34,197,94,.4); }
-.fc-rate-btn--easy { color: #38bdf8; border-color: rgba(56,189,248,.4); }
+.fc-flip-tag { align-self: flex-start; font-size: .66rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #0d9488; margin-bottom: 12px; }
+[data-theme="dark"] .fc-flip-tag { color: #2dd4bf; }
+.fc-flip-text { flex: 1; font-size: 1.05rem; color: var(--app-text); line-height: 1.55; margin: 0; text-align: left; }
+.fc-flip-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--app-border); font-size: .78rem; }
+.fc-flip-timer { display: inline-flex; align-items: center; gap: 5px; color: var(--app-muted); font-weight: 600; }
+.fc-flip-hint { color: #0d9488; font-weight: 700; }
+[data-theme="dark"] .fc-flip-hint { color: #2dd4bf; }
 
-.fc-warn { margin-top: 12px; font-size: .76rem; color: #f97316; text-align: center; }
+.fc-rate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 14px; position: relative; z-index: 2; }
+.fc-rate-btn { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 6px; border-radius: 12px; border: 1px solid var(--app-border); background: var(--app-surface); font-size: .82rem; font-weight: 700; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+.fc-rate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(15,23,42,.12); }
+.fc-rate-btn__num { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; font-size: .68rem; font-weight: 800; flex-shrink: 0; }
+.fc-rate-btn--dificil { color: #dc2626; }
+.fc-rate-btn--dificil .fc-rate-btn__num { background: rgba(220,38,38,.15); }
+.fc-rate-btn--medio { color: #d97706; }
+.fc-rate-btn--medio .fc-rate-btn__num { background: rgba(217,119,6,.15); }
+.fc-rate-btn--facil { color: #0d9488; }
+.fc-rate-btn--facil .fc-rate-btn__num { background: rgba(13,148,136,.15); }
 
-.fc-sum { text-align: center; padding: 8px 0; }
-.fc-sum__total { font-size: 2rem; font-weight: 800; color: #a855f7; margin: 10px 0; }
-.fc-sum__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin: 16px 0; }
-.fc-sum__cell { background: rgba(255,255,255,.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.4); border-radius: 12px; padding: 12px 6px; }
-[data-theme="dark"] .fc-sum__cell { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); }
+.fc-warn { margin-top: 10px; font-size: .74rem; color: #f97316; text-align: center; position: relative; z-index: 2; }
+
+.fc-sum { text-align: center; padding: 24px 8px 8px; position: relative; z-index: 2; }
+.fc-sum__total { font-size: 2rem; font-weight: 800; color: #0d9488; margin: 10px 0; }
+.fc-sum__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin: 16px 0; }
+.fc-sum__cell { background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 12px; padding: 12px 6px; }
 .fc-sum__cell strong { display: block; font-size: 1.1rem; }
 </style>
 @endpush
@@ -124,49 +138,58 @@
 <div class="modal fade fc-review-modal" id="fcReviewModal" tabindex="-1" aria-labelledby="fcReviewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header border-0 pb-0">
-                <div>
-                    <div class="fc-review-modal__materia" id="fcModalMateria"></div>
-                    <div class="fc-review-modal__progress" id="fcModalProgress"></div>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body pt-2">
+            <div class="modal-body">
                 <div id="fcErrorBox" class="alert alert-danger d-none"></div>
 
                 <div id="fcModalCardView">
-                    <div class="fc-flip" id="fcFlip">
-                        <div class="fc-flip-inner">
-                            <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
-                                <span class="fc-flip-tag">{{ __('flashcards.review.due_badge') }}</span>
-                                <p class="fc-flip-text" id="fcFrenteText"></p>
-                                <span class="fc-flip-hint" id="fcRevealHint">{{ __('flashcards.review.reveal_button') }}</span>
-                            </button>
-                            <div class="fc-flip-face fc-flip-back">
-                                <span class="fc-flip-tag">{{ __('flashcards.summary.breakdown_good') }}</span>
-                                <p class="fc-flip-text" id="fcVersoText"></p>
+                    <div class="fc-toprow">
+                        <span class="fc-pill fc-pill--materia">
+                            <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">layers</span>
+                            <span id="fcModalMateria"></span>
+                        </span>
+                        <span class="fc-pill fc-pill--streak">
+                            <span aria-hidden="true">🔥</span>
+                            <span id="fcModalStreak"></span>
+                        </span>
+                    </div>
+
+                    <div class="fc-deck">
+                        <div class="fc-panel">
+                            <div class="fc-flip" id="fcFlip">
+                                <div class="fc-flip-inner">
+                                    <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
+                                        <span class="fc-flip-tag" id="fcFrenteTag"></span>
+                                        <p class="fc-flip-text" id="fcFrenteText"></p>
+                                        <div class="fc-flip-bottom">
+                                            <span class="fc-flip-timer"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">schedule</span><span id="fcTimer">0s</span></span>
+                                            <span class="fc-flip-hint" id="fcRevealHint"></span>
+                                        </div>
+                                    </button>
+                                    <div class="fc-flip-face fc-flip-back">
+                                        <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
+                                        <p class="fc-flip-text" id="fcVersoText"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fc-rate-grid d-none" id="fcRateGrid">
+                                <button type="button" class="fc-rate-btn fc-rate-btn--dificil" data-avaliacao="dificil"><span class="fc-rate-btn__num">1</span>{{ __('flashcards.review.rate_dificil') }}</button>
+                                <button type="button" class="fc-rate-btn fc-rate-btn--medio" data-avaliacao="medio"><span class="fc-rate-btn__num">2</span>{{ __('flashcards.review.rate_medio') }}</button>
+                                <button type="button" class="fc-rate-btn fc-rate-btn--facil" data-avaliacao="facil"><span class="fc-rate-btn__num">3</span>{{ __('flashcards.review.rate_facil') }}</button>
                             </div>
                         </div>
                     </div>
 
                     <p class="fc-warn d-none" id="fcErroGeracao"></p>
-
-                    <div class="fc-rate-grid d-none" id="fcRateGrid">
-                        <button type="button" class="fc-rate-btn fc-rate-btn--again" data-avaliacao="again">{{ __('flashcards.review.rate_again') }}</button>
-                        <button type="button" class="fc-rate-btn fc-rate-btn--hard" data-avaliacao="hard">{{ __('flashcards.review.rate_hard') }}</button>
-                        <button type="button" class="fc-rate-btn fc-rate-btn--good" data-avaliacao="good">{{ __('flashcards.review.rate_good') }}</button>
-                        <button type="button" class="fc-rate-btn fc-rate-btn--easy" data-avaliacao="easy">{{ __('flashcards.review.rate_easy') }}</button>
-                    </div>
                 </div>
 
                 <div id="fcModalSummaryView" class="d-none fc-sum">
                     <h2 class="h5 fw-bold mb-0">{{ __('flashcards.summary.title') }}</h2>
                     <div class="fc-sum__total" id="fcSumTotal"></div>
                     <div class="fc-sum__grid">
-                        <div class="fc-sum__cell"><strong style="color:#f87171;" id="fcSumAgain">0</strong>{{ __('flashcards.summary.breakdown_again') }}</div>
-                        <div class="fc-sum__cell"><strong style="color:#f97316;" id="fcSumHard">0</strong>{{ __('flashcards.summary.breakdown_hard') }}</div>
-                        <div class="fc-sum__cell"><strong style="color:#22c55e;" id="fcSumGood">0</strong>{{ __('flashcards.summary.breakdown_good') }}</div>
-                        <div class="fc-sum__cell"><strong style="color:#38bdf8;" id="fcSumEasy">0</strong>{{ __('flashcards.summary.breakdown_easy') }}</div>
+                        <div class="fc-sum__cell"><strong style="color:#dc2626;" id="fcSumDificil">0</strong>{{ __('flashcards.summary.breakdown_dificil') }}</div>
+                        <div class="fc-sum__cell"><strong style="color:#d97706;" id="fcSumMedio">0</strong>{{ __('flashcards.summary.breakdown_medio') }}</div>
+                        <div class="fc-sum__cell"><strong style="color:#0d9488;" id="fcSumFacil">0</strong>{{ __('flashcards.summary.breakdown_facil') }}</div>
                     </div>
                     <button type="button" class="fc-card__btn" data-bs-dismiss="modal">{{ __('flashcards.summary.cta_back') }}</button>
                 </div>
@@ -190,14 +213,23 @@
     var flip = document.getElementById('fcFlip');
     var frontBtn = document.getElementById('fcFrontBtn');
     var revealHint = document.getElementById('fcRevealHint');
+    var frenteTag = document.getElementById('fcFrenteTag');
     var frenteText = document.getElementById('fcFrenteText');
     var versoText = document.getElementById('fcVersoText');
+    var timerEl = document.getElementById('fcTimer');
     var rateGrid = document.getElementById('fcRateGrid');
     var erroGeracaoBox = document.getElementById('fcErroGeracao');
     var errorBox = document.getElementById('fcErrorBox');
     var materiaLbl = document.getElementById('fcModalMateria');
-    var progressLbl = document.getElementById('fcModalProgress');
-    var progressTpl = @json(__('flashcards.review.progress', ['current' => '__C__', 'total' => '__T__']));
+    var streakLbl = document.getElementById('fcModalStreak');
+    var defaultTag = @json(__('flashcards.review.default_tag'));
+    var revealBtnLabel = @json(__('flashcards.review.reveal_button'));
+    var intervalNewLabel = @json(__('flashcards.review.interval_new'));
+    var intervalDaysTpl = @json(__('flashcards.review.interval_days', ['n' => '__N__']));
+    var streakTpl = @json(__('flashcards.review.streak_days', ['n' => '__N__']));
+
+    var timerHandle = null;
+    var timerStart = 0;
 
     function headers() {
         return {
@@ -213,25 +245,40 @@
         errorBox.classList.remove('d-none');
     }
 
+    function stopTimer() {
+        if (timerHandle) { clearInterval(timerHandle); timerHandle = null; }
+    }
+
+    function startTimer() {
+        stopTimer();
+        timerStart = Date.now();
+        timerEl.textContent = '0s';
+        timerHandle = setInterval(function () {
+            timerEl.textContent = Math.floor((Date.now() - timerStart) / 1000) + 's';
+        }, 1000);
+    }
+
     function renderCard(data) {
         errorBox.classList.add('d-none');
         cardView.classList.remove('d-none');
         summaryView.classList.add('d-none');
-        materiaLbl.textContent = data.materia_nome;
-        progressLbl.textContent = progressTpl.replace('__C__', data.atual + 1).replace('__T__', data.total);
+        materiaLbl.textContent = data.materia_nome + ' · Q' + data.numero;
+        streakLbl.textContent = streakTpl.replace('__N__', data.streak_dias);
+        frenteTag.textContent = data.tema || defaultTag;
         frenteText.textContent = data.frente;
+        revealHint.textContent = (data.intervalo_atual ? intervalDaysTpl.replace('__N__', data.intervalo_atual) : intervalNewLabel) + ' · ' + revealBtnLabel;
 
         if (data.revelado) {
+            stopTimer();
             versoText.textContent = data.verso;
             flip.classList.add('is-flipped');
             rateGrid.classList.remove('d-none');
             frontBtn.disabled = true;
-            revealHint.style.visibility = 'hidden';
         } else {
+            startTimer();
             flip.classList.remove('is-flipped');
             rateGrid.classList.add('d-none');
             frontBtn.disabled = false;
-            revealHint.style.visibility = 'visible';
         }
 
         if (data.erro_geracao) {
@@ -243,13 +290,13 @@
     }
 
     function renderSummary(data) {
+        stopTimer();
         cardView.classList.add('d-none');
         summaryView.classList.remove('d-none');
         document.getElementById('fcSumTotal').textContent = @json(__('flashcards.summary.total_reviewed', ['n' => '__N__'])).replace('__N__', data.total);
-        document.getElementById('fcSumAgain').textContent = data.contagem.again;
-        document.getElementById('fcSumHard').textContent = data.contagem.hard;
-        document.getElementById('fcSumGood').textContent = data.contagem.good;
-        document.getElementById('fcSumEasy').textContent = data.contagem.easy;
+        document.getElementById('fcSumDificil').textContent = data.contagem.dificil;
+        document.getElementById('fcSumMedio').textContent = data.contagem.medio;
+        document.getElementById('fcSumFacil').textContent = data.contagem.facil;
     }
 
     function startReview(materiaId, novosPorDia) {
@@ -313,6 +360,7 @@
     });
 
     modalEl.addEventListener('hidden.bs.modal', function () {
+        stopTimer();
         if (reviewedAny) {
             location.reload();
         }

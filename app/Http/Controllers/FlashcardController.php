@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\FlashcardProgresso;
 use App\Models\Materia;
+use App\Models\Questao;
 use App\Services\Flashcards\FlashcardContentGenerator;
 use App\Services\Flashcards\FlashcardQueueBuilder;
 use App\Support\FlashcardSession;
@@ -14,6 +15,7 @@ use App\Support\Sm2Scheduler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class FlashcardController extends Controller
 {
@@ -95,7 +97,7 @@ class FlashcardController extends Controller
             }
 
             $request->validate([
-                'avaliar' => 'required|in:again,hard,good,easy',
+                'avaliar' => 'required|in:dificil,medio,facil',
             ]);
 
             $this->registrarAvaliacao((string) $request->input('avaliar'));
@@ -120,6 +122,8 @@ class FlashcardController extends Controller
      */
     private function cardPayload(): array
     {
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
         $fila = (array) ($this->sessao->get('fila') ?? []);
         $atual = (int) ($this->sessao->get('atual') ?? 0);
 
@@ -145,9 +149,19 @@ class FlashcardController extends Controller
             $erroGeracao = __('flashcards.err.ai_generation_failed');
         }
 
+        $tema = Questao::query()->whereKey($questaoId)->value('tema');
+        $progresso = FlashcardProgresso::query()
+            ->where('usuario_id', $user->id)
+            ->where('questao_id', $questaoId)
+            ->first();
+
         return [
             'finished' => false,
             'materia_nome' => $this->sessao->get('materia_nome') ?? '',
+            'tema' => $tema ?: null,
+            'numero' => $atual + 1,
+            'streak_dias' => $this->calcularStreakDias((int) $user->id),
+            'intervalo_atual' => $progresso ? (int) $progresso->intervalo_dias : null,
             'frente' => $frente,
             'verso' => $revelado ? $verso : null,
             'erro_geracao' => $revelado ? $erroGeracao : null,
@@ -155,6 +169,42 @@ class FlashcardController extends Controller
             'atual' => $atual,
             'total' => count($fila),
         ];
+    }
+
+    private function calcularStreakDias(int $uid): int
+    {
+        $datas = DB::table('flashcard_progresso')
+            ->where('usuario_id', $uid)
+            ->whereNotNull('ultima_revisao_em')
+            ->selectRaw('DISTINCT DATE(ultima_revisao_em) as data')
+            ->orderByDesc('data')
+            ->pluck('data')
+            ->toArray();
+
+        if (empty($datas)) {
+            return 0;
+        }
+
+        $hoje = new \DateTime('today');
+        $ultimaData = new \DateTime($datas[0]);
+
+        if ($hoje->diff($ultimaData)->days > 1) {
+            return 0;
+        }
+
+        $sequencia = 1;
+        $dataComparacao = $ultimaData;
+        foreach (array_slice($datas, 1) as $dataStr) {
+            $dataAtual = new \DateTime($dataStr);
+            if ($dataComparacao->diff($dataAtual)->days === 1) {
+                $sequencia++;
+                $dataComparacao = $dataAtual;
+            } else {
+                break;
+            }
+        }
+
+        return $sequencia;
     }
 
     /**
@@ -165,7 +215,7 @@ class FlashcardController extends Controller
         $resultados = (array) ($this->sessao->get('resultados') ?? []);
         $materiaNome = (string) ($this->sessao->get('materia_nome') ?? '');
 
-        $contagem = ['again' => 0, 'hard' => 0, 'good' => 0, 'easy' => 0];
+        $contagem = ['dificil' => 0, 'medio' => 0, 'facil' => 0];
         foreach ($resultados as $r) {
             $b = (string) ($r['avaliacao'] ?? '');
             if (isset($contagem[$b])) {
