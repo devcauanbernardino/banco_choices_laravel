@@ -19,10 +19,6 @@
     @include('pages.partials.offcanvas-public')
 @endsection
 
-@section('public_footer')
-    @include('pages.partials.footer')
-@endsection
-
 @section('content')
     <section class="demo-funnel">
         <div class="lp-container">
