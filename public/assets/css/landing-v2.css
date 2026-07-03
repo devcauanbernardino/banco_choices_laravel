@@ -1926,7 +1926,12 @@ html:has(.lp-body), html:has(.demo-body) {
 
 /* ---------- Offcanvas (público) ---------- */
 .lp-offcanvas {
-    position: relative;
+    /* NÃO define position aqui: o Bootstrap já aplica position:fixed no
+       .offcanvas base (é o que o mantém fora da tela via transform até
+       abrir). Sobrescrever pra "relative" tirava o painel do overlay e
+       jogava ele pro fluxo normal do documento — a barra escura/vão branco
+       reportados no celular eram esse offcanvas "fechado" ainda ocupando
+       390px de largura real ao lado do conteúdo, estourando a página. */
     isolation: isolate;
     background: rgba(255, 255, 255, .68);
     backdrop-filter: blur(22px) saturate(180%);
