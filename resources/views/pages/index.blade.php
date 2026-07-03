@@ -281,6 +281,14 @@
             #stats .lp-stats__grid { gap: 16px !important; }
             #stats .lp-stats__cell { border-right: 0 !important; }
         }
+        @media (max-width: 767.98px) {
+            /* No mobile o grid ainda usava o desenho antigo (gap de 1px +
+               fundo cinza aparecendo nesse vão, pra imitar uma linha
+               divisória fina entre células). Isso não combina com os cards
+               novos, que têm sombra e cantos próprios — o resultado era as
+               sombras de cards vizinhos quase se tocando/cortando. */
+            #stats .lp-stats__grid { gap: 12px !important; background: transparent !important; }
+        }
         @media (max-width: 575.98px) {
             #stats .lp-stats__cell { padding: 18px 10px; }
             .lp-stats__icon { width: 40px; height: 40px; font-size: 1.1rem; margin-bottom: 8px; }
