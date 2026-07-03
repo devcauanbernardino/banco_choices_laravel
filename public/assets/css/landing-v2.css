@@ -2093,6 +2093,13 @@ html:has(.lp-body), html:has(.demo-body) {
     border-radius: 10px;
     padding: 10px 14px;
     justify-content: flex-start;
+    font-weight: 600;
+}
+/* O botão some o texto do idioma em telas XS (d-none d-sm-inline) — faz
+   sentido numa navbar compacta, mas aqui ele tem a linha inteira só pra
+   ele e ficava um botão quase vazio, só bandeira + seta. */
+.lp-offcanvas .bc-lang-selector .btn-navbar-lang .bc-lang-btn-inner span.d-none {
+    display: inline !important;
 }
 [data-theme="dark"] .lp-offcanvas .bc-lang-selector .btn-navbar-lang {
     background: rgba(255, 255, 255, .05);
