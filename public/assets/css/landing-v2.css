@@ -30,6 +30,9 @@
 }
 
 /* ---------- Reset / base ---------- */
+html:has(.lp-body), html:has(.demo-body) {
+    overflow-x: hidden;
+}
 .lp-body {
     background: var(--lp-bg);
     color: var(--lp-text);
@@ -39,7 +42,9 @@
     line-height: 1.55;
     width: 100%;
     max-width: 100%;
+    min-width: 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* Blobs de fundo fixos: dão contexto colorido pro blur do glassmorphism em
