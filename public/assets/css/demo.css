@@ -17,7 +17,10 @@
 }
 
 .demo-section {
-    padding: clamp(48px, 8vw, 100px) 0;
+    padding-bottom: clamp(48px, 8vw, 100px);
+    /* Ver .demo-pick-section: a nav é fixed (flutua, não reserva espaço),
+       então a folga do topo é responsabilidade da própria seção. */
+    padding-top: max(clamp(48px, 8vw, 100px), 92px);
 }
 .demo-section__lead {
     color: var(--lp-muted, #94a3b8);
@@ -507,7 +510,11 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    padding: var(--lp-section-py, clamp(64px, 10vw, 120px)) 0;
+    padding-bottom: var(--lp-section-py, clamp(64px, 10vw, 120px));
+    /* No mobile a nav é fixed e flutua sobre o conteúdo (não reserva
+       espaço no fluxo), então essa seção precisa da própria folga pra
+       não ficar embaixo do pill — daí o "max" com um piso fixo. */
+    padding-top: max(var(--lp-section-py, clamp(64px, 10vw, 120px)), 92px);
 }
 .demo-pick-section::before,
 .demo-pick-section::after {
@@ -734,7 +741,10 @@
 
 /* ---------- Filtro ---------- */
 .demo-funnel {
-    padding: clamp(36px, 6vw, 72px) 0;
+    padding-bottom: clamp(36px, 6vw, 72px);
+    /* Ver .demo-pick-section: a nav é fixed (flutua, não reserva espaço),
+       então a folga do topo é responsabilidade da própria seção. */
+    padding-top: max(clamp(36px, 6vw, 72px), 92px);
 }
 
 .demo-funnel__toolbar {

@@ -696,13 +696,11 @@ html:has(.lp-body), html:has(.demo-body) {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
-/* Só o suficiente pra desencostar do pill (que termina por volta de 86px);
-   o respiro "de design" vem do padding-top que cada seção já tem por
-   conta própria (.demo-pick-section, .demo-funnel, .demo-section). Usar
-   90px aqui somava com esse padding e dobrava o espaço vazio no topo. */
-.demo-body:has(> .lp-topbar) {
-    padding-top: 60px;
-}
+/* Sem padding-top aqui: diferente da home (onde o hero tem cor de fundo
+   própria e por isso ganha compensação pra ficar atrás do pill), aqui a
+   primeira seção só mostra o fundo comum do body de qualquer jeito — então
+   empurrar o body inteiro só criava um "degrau" (fundo branco simples)
+   entre a nav e a seção. A folga fica dentro de cada seção (ver abaixo). */
 
 /* Idem à home: sem ancestral "navbar-actions--landing", o seletor de idioma
    cai no visual cru do Bootstrap (caixa branca quadrada, setinha sem cor). */
