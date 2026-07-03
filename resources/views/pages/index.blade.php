@@ -120,55 +120,36 @@
         .lp-glass { background: rgba(255,255,255,.55) !important; backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); border: 1px solid rgba(255,255,255,.5) !important; box-shadow: 0 8px 28px rgba(31,10,60,.08); }
         [data-theme="dark"] .lp-glass { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.1) !important; box-shadow: 0 8px 28px rgba(0,0,0,.3); }
 
+        /* Nav normal (sticky, ocupa seu próprio espaço no fluxo, encostada
+           nas bordas) com efeito de vidro — sem pílula flutuante, sem
+           position:fixed. O blur vai num ::before próprio (não direto no
+           .lp-topbar__inner) porque backdrop-filter num ancestral cria um
+           novo "containing block" pra descendentes position:fixed (regra da
+           spec), o que quebrava o cálculo de posição do Popper do dropdown
+           de idioma (strategy:"fixed"). */
         .lp-body--dark-hero .lp-topbar {
-            position: fixed !important;
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
+            isolation: isolate;
             background: transparent !important;
             backdrop-filter: none !important;
             -webkit-backdrop-filter: none !important;
-            border-bottom: 0 !important;
-            box-shadow: none !important;
-            padding: 14px clamp(12px, 3vw, 24px) 0;
-            box-sizing: border-box;
         }
-        /* backdrop-filter num ancestral cria um novo "containing block" pra
-           descendentes position:fixed (regra da spec, junto com filter/transform/
-           perspective/will-change) — isso quebrava o cálculo de posição do Popper
-           do dropdown de idioma (strategy:"fixed"), fazendo o menu abrir em
-           qualquer lugar da tela. Por isso o blur/glass vai num ::before próprio
-           (irmão do conteúdo, não ancestral dele), e o .lp-topbar__inner em si
-           fica sem backdrop-filter direto. */
-        .lp-body--dark-hero .lp-topbar__inner {
-            position: relative;
-            isolation: isolate;
-            max-width: 1160px;
-            border-radius: 999px;
-            border: 1px solid rgba(255,255,255,.14);
-            box-shadow: 0 8px 28px rgba(0,0,0,.25);
-            transition: border-color .2s ease, box-shadow .2s ease;
-        }
-        .lp-body--dark-hero .lp-topbar__inner::before {
+        .lp-body--dark-hero .lp-topbar::before {
             content: '';
             position: absolute;
             inset: 0;
             z-index: -1;
-            border-radius: inherit;
             background: rgba(255,255,255,.08);
             backdrop-filter: blur(16px) saturate(180%);
             -webkit-backdrop-filter: blur(16px) saturate(180%);
-            transition: background .2s ease;
+            border-bottom: 1px solid rgba(255,255,255,.14);
+            transition: background .2s ease, border-color .2s ease;
         }
-        .lp-body--dark-hero .lp-topbar.is-scrolled {
-            background: transparent !important;
-        }
-        .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__inner {
-            border-color: rgba(255,255,255,.6);
-            box-shadow: 0 8px 28px rgba(31,10,60,.12);
-        }
-        .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__inner::before {
+        .lp-body--dark-hero .lp-topbar.is-scrolled::before {
             background: rgba(255,255,255,.82);
+            border-bottom-color: rgba(255,255,255,.5);
+            box-shadow: 0 8px 28px rgba(31,10,60,.12);
         }
         .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__nav a {
             color: #3d2450;
@@ -242,22 +223,6 @@
             letter-spacing: .06em;
             color: #94a3b8;
             min-width: 1.35rem;
-        }
-
-        /* A nav agora é fixed (fora do fluxo) e flutua sobre o hero, então o hero
-           passa a começar exatamente no topo da página — sem vão, sem precisar
-           escurecer o body inteiro. Só precisamos de um respiro extra no topo do
-           hero pra seu conteúdo não ficar embaixo do pill flutuante. A regra
-           original (min-height: 100vh - 66px) descontava a altura da nav de
-           quando ela ainda reservava espaço no fluxo (sticky) — como ela não
-           reserva mais nada (fixed), isso não faz mais sentido: precisamos do
-           100vh inteiro de volta, mais o respiro extra do padding, senão o
-           conteúdo do final (badges/mascotes) fica espremido contra o degradê
-           de saída. */
-        .lp-body--dark-hero .lp-hero {
-            padding-top: calc(clamp(24px, 4vw, 40px) + 55px) !important;
-            min-height: calc(100vh + 55px) !important;
-            min-height: calc(100svh + 55px) !important;
         }
 
         #stats { position: relative; z-index: 1; }
