@@ -52,9 +52,11 @@
 .fc-panel-deck::after { transform: translate(14px, 14px); opacity: .55; z-index: -1; }
 .fc-panel { position: relative; z-index: 1; background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 16px; overflow: hidden; }
 
-.fc-flip { perspective: 1400px; }
-.fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .55s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; }
-.fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); }
+.fc-flip { perspective: 800px; }
+.fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .6s cubic-bezier(.4,.15,.2,1), box-shadow .6s ease; transform-style: preserve-3d; will-change: transform; box-shadow: 0 4px 14px rgba(15,23,42,.06); }
+.fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); box-shadow: 0 18px 40px rgba(15,23,42,.22); }
+[data-theme="dark"] .fc-flip-inner { box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+[data-theme="dark"] .fc-flip.is-flipped .fc-flip-inner { box-shadow: 0 18px 40px rgba(0,0,0,.55); }
 .fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; padding: clamp(18px,4vw,26px); background: var(--app-bg); }
 .fc-flip-face--front { cursor: pointer; border: none; text-align: inherit; width: 100%; }
 .fc-flip-face--front:disabled { cursor: default; }
