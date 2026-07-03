@@ -5,7 +5,7 @@
 @endphp
 <footer style="background: #f8f9fc; border-top: 1px solid rgba(15,23,42,.08); padding: 64px 0 28px;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(16px,4vw,28px); box-sizing: border-box;">
-    <div style="display: grid; grid-template-columns: 1fr 1fr 1.5fr; gap: 44px; margin-bottom: 48px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 44px; margin-bottom: 48px;">
 
       <!-- Brand column -->
       <div>
