@@ -11,6 +11,41 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  position: relative;
+  isolation: isolate;
+}
+
+/* Blobs de fundo fixos: dão contexto colorido pro blur do glassmorphism
+   nas páginas privadas (dashboard, painel, etc). */
+.app-private-body::before,
+.app-private-body::after {
+  content: '';
+  position: fixed;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  filter: blur(110px);
+  z-index: -1;
+  pointer-events: none;
+  opacity: .10;
+}
+.app-private-body::before { background: #8b1fb8; top: 10%; left: -80px; }
+.app-private-body::after { background: #38bdf8; bottom: 10%; right: -80px; }
+[data-theme="dark"] .app-private-body::before,
+[data-theme="dark"] .app-private-body::after { opacity: .16; }
+
+/* Utilitário de vidro reutilizável nas páginas privadas. */
+.app-glass {
+  background: rgba(255, 255, 255, .55) !important;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5) !important;
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
+}
+[data-theme="dark"] .app-glass {
+  background: rgba(255, 255, 255, .05) !important;
+  border-color: rgba(255, 255, 255, .1) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .3);
 }
 
 /* ---------- Layout ---------- */

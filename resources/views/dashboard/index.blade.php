@@ -14,7 +14,14 @@
 .dash-home2 h1, .dash-home2 h2, .dash-home2 h3 { font-family: 'Poppins', system-ui, sans-serif; }
 .dash-home2 .material-symbols-outlined { font-family: 'Material Symbols Outlined'; }
 
-.dash-home2-card { background: var(--app-surface); border: 1px solid var(--app-border); }
+.dash-home2-card {
+    background: rgba(255,255,255,.55);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255,255,255,.5);
+    box-shadow: 0 8px 28px rgba(31,10,60,.06);
+}
+[data-theme="dark"] .dash-home2-card { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 28px rgba(0,0,0,.3); }
 
 .chart-bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 6px; cursor: pointer; min-width: 0; }
 .chart-bar-wrap:hover .chart-bar { filter: brightness(1.18); }
@@ -22,11 +29,27 @@
 .chart-bar.today { background: linear-gradient(180deg, #c084fc, #8b1fb8); box-shadow: 0 4px 14px rgba(139,31,184,.3); }
 .chart-label { font-size: .65rem; color: var(--app-muted); font-weight: 500; white-space: nowrap; }
 
-.bc-activity { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-radius: 12px; background: var(--app-surface); border: 1px solid var(--app-border); text-decoration: none; color: inherit; transition: border-color .18s ease, box-shadow .18s ease; }
+.bc-activity {
+    display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-radius: 12px;
+    background: rgba(255,255,255,.55);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255,255,255,.5);
+    text-decoration: none; color: inherit; transition: border-color .18s ease, box-shadow .18s ease;
+}
 .bc-activity:hover { border-color: rgba(106,3,146,.4); box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+[data-theme="dark"] .bc-activity { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); }
 
-.bc-quick { display: flex; flex-direction: column; gap: 8px; padding: 20px; border-radius: 14px; background: var(--app-surface); border: 1px solid var(--app-border); text-decoration: none; color: inherit; transition: transform .28s cubic-bezier(.2,.9,.2,1), border-color .2s ease, box-shadow .2s ease; }
+.bc-quick {
+    display: flex; flex-direction: column; gap: 8px; padding: 20px; border-radius: 14px;
+    background: rgba(255,255,255,.55);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255,255,255,.5);
+    text-decoration: none; color: inherit; transition: transform .28s cubic-bezier(.2,.9,.2,1), border-color .2s ease, box-shadow .2s ease;
+}
 .bc-quick:hover { transform: translateY(-3px); border-color: rgba(106,3,146,.4); box-shadow: 0 12px 30px rgba(0,0,0,.18); }
+[data-theme="dark"] .bc-quick { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); }
 </style>
 @endpush
 
@@ -83,7 +106,7 @@
             <a href="{{ route('history') }}" style="display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg, #18002e 0%, #2d0050 60%, #0d0a1a 100%); border-radius:18px; padding:clamp(20px,3vw,28px); text-decoration:none; position:relative; overflow:hidden; min-height:168px; transition:filter .2s ease;">
                 <div style="position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px); background-size:24px 24px; pointer-events:none;"></div>
                 <div style="position:absolute; top:-20%; right:-5%; width:55%; height:70%; background:radial-gradient(ellipse at 60% 30%, rgba(139,31,184,.45), transparent 65%); pointer-events:none;"></div>
-                <div style="position:relative; z-index:1;">
+                <div style="position:relative; z-index:1; margin-bottom:14px;">
                     <span style="display:inline-block; padding:4px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.07); color:rgba(255,255,255,.65); font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; backdrop-filter:blur(8px);">{{ __('dashboard.home.hero_tag') }}</span>
                 </div>
                 <div style="position:relative; z-index:1;">
@@ -100,7 +123,7 @@
             <a href="{{ route('questionbank') }}" style="display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg, #18002e 0%, #2d0050 60%, #0d0a1a 100%); border-radius:18px; padding:clamp(20px,3vw,28px); text-decoration:none; position:relative; overflow:hidden; min-height:168px; transition:filter .2s ease;">
                 <div style="position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px); background-size:24px 24px; pointer-events:none;"></div>
                 <div style="position:absolute; top:-20%; right:-5%; width:55%; height:70%; background:radial-gradient(ellipse at 60% 30%, rgba(139,31,184,.45), transparent 65%); pointer-events:none;"></div>
-                <div style="position:relative; z-index:1;">
+                <div style="position:relative; z-index:1; margin-bottom:14px;">
                     <span style="display:inline-block; padding:4px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.07); color:rgba(255,255,255,.65); font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; backdrop-filter:blur(8px);">{{ __('dashboard.home.hero_tag') }}</span>
                 </div>
                 <div style="position:relative; z-index:1;">
