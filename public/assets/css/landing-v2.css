@@ -1939,7 +1939,14 @@ html:has(.lp-body), html:has(.demo-body) {
     color: var(--lp-text);
     border-left: 1px solid rgba(255, 255, 255, .5);
     box-shadow: -8px 0 32px rgba(31, 10, 60, .12);
-    width: min(360px, 90vw);
+    /* !important porque o Bootstrap define a largura via o seletor
+       composto .offcanvas.offcanvas-end (mais específico que .lp-offcanvas
+       sozinho), então sem isso essa regra nunca vencia. */
+    width: min(360px, 90vw) !important;
+    /* Trava qualquer conteúdo interno que tente ficar mais largo que o
+       próprio painel — mesmo fixed, isso vazava alguns px pro scroll
+       horizontal da página em navegadores móveis reais. */
+    overflow-x: hidden;
 }
 [data-theme="dark"] .lp-offcanvas {
     background: rgba(20, 16, 28, .78);

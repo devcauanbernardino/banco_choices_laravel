@@ -101,7 +101,10 @@
             }
         }
 
-        #mascotes { position: relative; isolation: isolate; }
+        /* overflow:hidden é essencial aqui: os blobs decorativos abaixo têm
+           offset negativo (left/right:-60px) e, sem cortar, esticavam a
+           largura real da página além do viewport no mobile. */
+        #mascotes { position: relative; isolation: isolate; overflow: hidden; }
         #mascotes::before, #mascotes::after { content: ''; position: absolute; width: 360px; height: 360px; border-radius: 50%; filter: blur(90px); z-index: -1; pointer-events: none; opacity: .18; }
         #mascotes::before { background: #8b1fb8; top: 0; left: -60px; }
         #mascotes::after { background: #38bdf8; bottom: 0; right: -60px; }
