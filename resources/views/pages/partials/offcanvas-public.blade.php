@@ -14,15 +14,18 @@
     <div class="offcanvas-body">
         <ul class="lp-offcanvas__nav" role="list">
             <li><a href="{{ route('home') }}"><i class="bi bi-house-door"></i> <span>{{ __('landing.offcanvas.inicio') }}</span></a></li>
-            <li><a href="{{ route('home') }}#modalidades"><i class="bi bi-mortarboard"></i> <span>{{ __('landing.offcanvas.simulacros') }}</span></a></li>
             <li><a href="{{ route('home') }}#funcionalidades"><i class="bi bi-list-check"></i> <span>{{ __('landing.topbar.funcionalidades') }}</span></a></li>
             <li><a href="{{ route('home') }}#mascotes"><i class="bi bi-robot"></i> <span>{{ __('landing.topbar.mascotes') }}</span></a></li>
+            <li><a href="{{ route('home') }}#modalidades"><i class="bi bi-mortarboard"></i> <span>{{ __('landing.offcanvas.simulacros') }}</span></a></li>
             <li><a href="{{ route('home') }}#planes"><i class="bi bi-tag"></i> <span>{{ __('landing.offcanvas.planes') }}</span></a></li>
             <li><a href="{{ route('home') }}#faq"><i class="bi bi-question-circle"></i> <span>{{ __('landing.offcanvas.ayuda') }}</span></a></li>
-            <li><a href="{{ route('demo.show') }}"><i class="bi bi-play-circle"></i> <span>{{ __('landing.offcanvas.practicar') }}</span></a></li>
         </ul>
 
         <hr class="lp-offcanvas__sep">
+
+        <a href="{{ route('demo.show') }}" class="btn lp-btn-primary lp-offcanvas__practicar">
+            <i class="bi bi-play-circle"></i> {{ __('landing.offcanvas.practicar') }}
+        </a>
 
         <div class="lp-offcanvas__cta">
             <a href="{{ route('login') }}" class="btn lp-btn-outline">
