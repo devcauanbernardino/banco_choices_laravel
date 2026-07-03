@@ -696,8 +696,12 @@ html:has(.lp-body), html:has(.demo-body) {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 }
+/* Só o suficiente pra desencostar do pill (que termina por volta de 86px);
+   o respiro "de design" vem do padding-top que cada seção já tem por
+   conta própria (.demo-pick-section, .demo-funnel, .demo-section). Usar
+   90px aqui somava com esse padding e dobrava o espaço vazio no topo. */
 .demo-body:has(> .lp-topbar) {
-    padding-top: 90px;
+    padding-top: 60px;
 }
 
 /* Idem à home: sem ancestral "navbar-actions--landing", o seletor de idioma
