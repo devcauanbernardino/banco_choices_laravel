@@ -148,6 +148,9 @@
             border: 1px solid rgba(255,255,255,.14);
             box-shadow: 0 8px 28px rgba(0,0,0,.25);
             transition: border-color .2s ease, box-shadow .2s ease;
+            /* Se o conteúdo (logo + nav + ações) não couber, corta aqui em vez
+               de empurrar a pílula/página inteira pra um scroll horizontal. */
+            overflow: hidden;
         }
         .lp-body--dark-hero .lp-topbar__inner::before {
             content: '';

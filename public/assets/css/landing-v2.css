@@ -1166,6 +1166,20 @@ html:has(.lp-body), html:has(.demo-body) {
     }
     .lp-body--dark-hero .lp-topbar__actions {
         gap: 6px !important;
+        min-width: 0;
+    }
+
+    /* Logo e botão de menu nunca podem encolher/sumir; se faltar espaço,
+       quem cede é o texto do CTA (trunca com "..." em vez de empurrar o
+       hambúrguer pra fora da pílula). */
+    .lp-body--dark-hero .lp-topbar__brand,
+    .lp-body--dark-hero .lp-topbar__burger {
+        flex-shrink: 0;
+    }
+    .lp-body--dark-hero .lp-topbar__actions .lp-btn-primary {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .lp-hero__title {
