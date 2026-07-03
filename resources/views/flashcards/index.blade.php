@@ -11,15 +11,15 @@
 .fc-header h1 { font-size: clamp(1.4rem,2.2vw,1.7rem); font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
 .fc-header p { color: var(--app-muted); font-size: .9rem; margin: 0; }
 
-.fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; }
+.fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); grid-auto-rows: 1fr; gap: 22px; }
 
 /* Efeito de pilha: 2 cartões espiando atrás do card principal */
-.fc-deck-card { position: relative; margin: 0 12px 12px 0; }
+.fc-deck-card { position: relative; height: 100%; margin: 0 12px 12px 0; }
 .fc-deck-card::before, .fc-deck-card::after { content: ''; position: absolute; inset: 0; border-radius: 18px; background: var(--app-surface); border: 1px solid var(--app-border); }
 .fc-deck-card::before { transform: translate(6px, 6px); opacity: .8; z-index: 0; }
 .fc-deck-card::after { transform: translate(12px, 12px); opacity: .5; z-index: -1; }
 
-.fc-card { position: relative; z-index: 1; background: var(--app-surface); border: 1px solid var(--app-border); box-shadow: 0 10px 26px rgba(15,23,42,.08); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.fc-card { position: relative; z-index: 1; height: 100%; box-sizing: border-box; background: var(--app-surface); border: 1px solid var(--app-border); box-shadow: 0 10px 26px rgba(15,23,42,.08); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
 [data-theme="dark"] .fc-card { box-shadow: 0 10px 26px rgba(0,0,0,.4); }
 .fc-card__title { font-size: 1rem; font-weight: 700; color: var(--app-text); margin: 0; }
 .fc-card__badges { display: flex; gap: 8px; flex-wrap: wrap; }
