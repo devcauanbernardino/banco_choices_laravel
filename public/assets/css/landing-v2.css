@@ -1152,26 +1152,15 @@ html:has(.lp-body), html:has(.demo-body) {
         white-space: nowrap;
     }
 
-    /* A pílula flutuante é ótima com espaço de sobra (desktop), mas no
-       celular seu padding + bordas arredondadas comiam espaço demais e
-       chegavam a empurrar o botão de menu pra fora da tela. No mobile ela
-       vira uma barra normal, encostada nas bordas, sem padding extra. */
+    /* A pílula flutuante continua no mobile, só com padding/gaps mais
+       enxutos pra sobrar espaço de verdade pro conteúdo. */
     .lp-body--dark-hero .lp-topbar {
-        padding: 0 !important;
+        padding: 10px 8px 0 !important;
     }
     .lp-body--dark-hero .lp-topbar__inner {
-        max-width: 100% !important;
-        border-radius: 0 !important;
-        border: none !important;
-        border-bottom: 1px solid rgba(255,255,255,.14) !important;
-        box-shadow: none !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
         gap: 8px !important;
-    }
-    .lp-body--dark-hero .lp-topbar__inner::before {
-        border-radius: 0 !important;
-    }
-    .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__inner {
-        border-bottom-color: rgba(255,255,255,.5) !important;
     }
     .lp-body--dark-hero .lp-topbar__actions {
         gap: 6px !important;
@@ -1180,7 +1169,7 @@ html:has(.lp-body), html:has(.demo-body) {
 
     /* Logo e botão de menu nunca podem encolher/sumir; se faltar espaço,
        quem cede é o texto do CTA (trunca com "..." em vez de empurrar o
-       hambúrguer pra fora da tela). */
+       hambúrguer pra fora da pílula). */
     .lp-body--dark-hero .lp-topbar__brand,
     .lp-body--dark-hero .lp-topbar__burger {
         flex-shrink: 0;
@@ -1189,6 +1178,23 @@ html:has(.lp-body), html:has(.demo-body) {
         min-width: 0;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    /* Telas bem estreitas (celulares menores): aperta mais um pouco o
+       espaço reservado pra pílula; o CTA (com min-width:0 + ellipsis
+       acima) já trunca sozinho se ainda faltar espaço. */
+    @media (max-width: 420px) {
+        .lp-body--dark-hero .lp-topbar {
+            padding: 8px 6px 0 !important;
+        }
+        .lp-body--dark-hero .lp-topbar__inner {
+            padding-left: 8px !important;
+            padding-right: 8px !important;
+        }
+        .lp-body--dark-hero .lp-topbar__actions .lp-btn-primary {
+            padding: 0.45rem 0.65rem !important;
+            font-size: 0.75rem !important;
+        }
     }
 
     .lp-hero__title {
