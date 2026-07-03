@@ -33,32 +33,28 @@ class GeminiClient
     private function call(array $contents, ?string $systemInstruction = null): string
     {
         $key = (string) config('services.gemini.key');
-        $model = (string) config('services.gemini.model', 'gemini-2.5-flash-lite');
 
         if ($key === '') {
             throw new RuntimeException('GEMINI_API_KEY não configurada.');
         }
 
-        $payload = [
-            'contents' => $contents,
-            'generationConfig' => [
-                'temperature' => 0.4,
-                'maxOutputTokens' => 1536,
-                // gemini-2.5-flash gasta tokens de "pensamento" antes da resposta visível;
-                // desligar evita que respostas simples sejam cortadas antes de terminar.
-                'thinkingConfig' => ['thinkingBudget' => 0],
-            ],
-        ];
+        $primary = (string) config('services.gemini.model', 'gemini-2.5-flash-lite');
+        $fallback = (string) config('services.gemini.fallback_model', '');
 
-        if ($systemInstruction !== null && $systemInstruction !== '') {
-            $payload['systemInstruction'] = [
-                'parts' => [['text' => $systemInstruction]],
-            ];
+        $models = $fallback !== '' && $fallback !== $primary ? [$primary, $fallback] : [$primary];
+
+        $lastResponse = null;
+        foreach ($models as $model) {
+            $lastResponse = $this->request($key, $model, $contents, $systemInstruction);
+
+            // Cota do free tier é isolada por modelo: só vale tentar o próximo
+            // se o motivo for especificamente limite de requisições (429).
+            if ($lastResponse->status() !== 429) {
+                break;
+            }
         }
 
-        $response = Http::timeout(25)
-            ->withHeaders(['x-goog-api-key' => $key])
-            ->post("https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent", $payload);
+        $response = $lastResponse;
 
         if ($response->failed()) {
             throw new RuntimeException('Falha ao consultar IA (Gemini): '.$response->status().' '.$response->body());
@@ -76,5 +72,32 @@ class GeminiClient
         }
 
         return trim($text);
+    }
+
+    /**
+     * @param  list<array{role: string, parts: list<array{text: string}>}>  $contents
+     */
+    private function request(string $key, string $model, array $contents, ?string $systemInstruction): \Illuminate\Http\Client\Response
+    {
+        $payload = [
+            'contents' => $contents,
+            'generationConfig' => [
+                'temperature' => 0.4,
+                'maxOutputTokens' => 1536,
+                // gemini-2.5-flash gasta tokens de "pensamento" antes da resposta visível;
+                // desligar evita que respostas simples sejam cortadas antes de terminar.
+                'thinkingConfig' => ['thinkingBudget' => 0],
+            ],
+        ];
+
+        if ($systemInstruction !== null && $systemInstruction !== '') {
+            $payload['systemInstruction'] = [
+                'parts' => [['text' => $systemInstruction]],
+            ];
+        }
+
+        return Http::timeout(25)
+            ->withHeaders(['x-goog-api-key' => $key])
+            ->post("https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent", $payload);
     }
 }

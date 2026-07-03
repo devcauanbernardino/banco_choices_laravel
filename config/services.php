@@ -38,6 +38,9 @@ return [
     'gemini' => [
         'key' => env('GEMINI_API_KEY'),
         'model' => env('GEMINI_MODEL', 'gemini-2.5-flash-lite'),
+        // Cota diária do free tier é por modelo (bucket separado); ao esgotar o
+        // principal, tenta este antes de desistir.
+        'fallback_model' => env('GEMINI_FALLBACK_MODEL', 'gemini-2.5-flash'),
     ],
 
 ];
