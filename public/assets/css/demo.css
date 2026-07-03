@@ -506,6 +506,7 @@
 .demo-pick-section {
     position: relative;
     isolation: isolate;
+    overflow: hidden;
     padding: var(--lp-section-py, clamp(64px, 10vw, 120px)) 0;
 }
 .demo-pick-section::before,
