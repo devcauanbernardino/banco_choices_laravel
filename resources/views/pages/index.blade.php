@@ -78,29 +78,10 @@
                 max-width: 100% !important;
             }
 
+            /* Card do mockup (desktop 3D e a versão achatada de mobile) fica
+               fora do celular: some espaço vertical e simplifica o hero. */
             .lp-hero__visual {
-                width: 100% !important;
-                max-width: 100% !important;
-                margin: 20px 0 0 !important;
-                aspect-ratio: auto !important;
-                height: auto !important;
-            }
-
-            .lp-hero__mock-mobile {
-                width: 100%;
-                max-width: 100%;
-                min-width: 0;
-            }
-
-            .lp-hero__mock-mobile .lp-hero-scene__panel--main {
-                position: relative !important;
-                left: auto !important;
-                bottom: auto !important;
-                width: 100% !important;
-                max-width: 100% !important;
-                max-height: none !important;
-                transform: none !important;
-                animation: none !important;
+                display: none !important;
             }
 
             .lp-stats__grid {
@@ -377,11 +358,6 @@
                 </div>
                 <div>
                     <div class="lp-hero__visual lp-hero__visual-anim">
-                        <div class="lp-hero__mock-mobile d-lg-none">
-                            <div class="lp-hero-scene__panel lp-hero-scene__panel--main">
-                                @include('pages.partials.hero-mock-card')
-                            </div>
-                        </div>
                         <!-- RIGHT: Visual -->
                         <div>
                             <!-- Desktop 3D scene -->
