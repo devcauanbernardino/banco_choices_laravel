@@ -1152,17 +1152,26 @@ html:has(.lp-body), html:has(.demo-body) {
         white-space: nowrap;
     }
 
-    /* A nav flutuante (pill) da home soma padding próprio ao redor do
-       conteúdo; em telas bem estreitas isso apertava demais e o botão de
-       menu (hambúrguer) chegava a vazar pra fora da pílula. */
+    /* A pílula flutuante é ótima com espaço de sobra (desktop), mas no
+       celular seu padding + bordas arredondadas comiam espaço demais e
+       chegavam a empurrar o botão de menu pra fora da tela. No mobile ela
+       vira uma barra normal, encostada nas bordas, sem padding extra. */
     .lp-body--dark-hero .lp-topbar {
-        padding-left: 8px !important;
-        padding-right: 8px !important;
+        padding: 0 !important;
     }
     .lp-body--dark-hero .lp-topbar__inner {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
+        max-width: 100% !important;
+        border-radius: 0 !important;
+        border: none !important;
+        border-bottom: 1px solid rgba(255,255,255,.14) !important;
+        box-shadow: none !important;
         gap: 8px !important;
+    }
+    .lp-body--dark-hero .lp-topbar__inner::before {
+        border-radius: 0 !important;
+    }
+    .lp-body--dark-hero .lp-topbar.is-scrolled .lp-topbar__inner {
+        border-bottom-color: rgba(255,255,255,.5) !important;
     }
     .lp-body--dark-hero .lp-topbar__actions {
         gap: 6px !important;
@@ -1171,7 +1180,7 @@ html:has(.lp-body), html:has(.demo-body) {
 
     /* Logo e botão de menu nunca podem encolher/sumir; se faltar espaço,
        quem cede é o texto do CTA (trunca com "..." em vez de empurrar o
-       hambúrguer pra fora da pílula). */
+       hambúrguer pra fora da tela). */
     .lp-body--dark-hero .lp-topbar__brand,
     .lp-body--dark-hero .lp-topbar__burger {
         flex-shrink: 0;
