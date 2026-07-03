@@ -278,6 +278,12 @@
             #stats .lp-stats__grid { gap: 16px !important; }
             #stats .lp-stats__cell { border-right: 0 !important; }
         }
+        @media (max-width: 575.98px) {
+            #stats .lp-stats__cell { padding: 18px 10px; }
+            .lp-stats__icon { width: 40px; height: 40px; font-size: 1.1rem; margin-bottom: 8px; }
+            .lp-stats__num { font-size: clamp(1.15rem, 5vw, 1.5rem) !important; overflow-wrap: anywhere; }
+            .lp-stats__label { font-size: .72rem; }
+        }
 
         #funcionalidades, #modalidades, #planes, #faq { position: relative; z-index: 1; }
         #funcionalidades .lp-feature-card.lp-glass,
