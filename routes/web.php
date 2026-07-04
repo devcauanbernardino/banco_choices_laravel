@@ -7,7 +7,6 @@ use App\Http\Controllers\Api\CatalogoPublicController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
-use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DemoController;
@@ -53,7 +52,6 @@ Route::middleware('guest')->group(function () {
     Route::post('/redefinir-senha', [NewPasswordController::class, 'store'])->name('password.update');
 });
 
-Route::post('/cadastro', [RegisterController::class, 'register'])->middleware('throttle:cadastro')->name('register');
 Route::match(['get', 'post'], '/set-locale', [LocaleController::class, 'setLocale'])->name('set-locale');
 
 // ── Catálogo público (signup / addons UI) ───────────────────

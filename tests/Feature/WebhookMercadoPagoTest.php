@@ -10,6 +10,8 @@ class WebhookMercadoPagoTest extends TestCase
     {
         config(['mercadopago.require_webhook_signature' => true]);
         config(['mercadopago.webhook_secret' => '']);
+        config(['mercadopago.accounts.br.webhook_secret' => '']);
+        config(['mercadopago.accounts.ar.webhook_secret' => '']);
 
         $response = $this->postJson('/webhook-mercadopago', []);
 
