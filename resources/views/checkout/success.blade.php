@@ -24,7 +24,7 @@
         100% { background-position: 0% 0%; }
     }
     .container-custom { max-width: 700px; margin: 0 auto; padding: 2rem 1rem; }
-    .success-card { background: rgba(255,255,255,0.98); border-radius: 20px; padding: 2.5rem 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+    .success-card { background: rgba(255,255,255,0.68); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border: 1px solid rgba(255,255,255,0.5); border-radius: 20px; padding: 2.5rem 2rem; box-shadow: 0 20px 50px rgba(0,0,0,0.18); text-align: center; }
     .success-icon {
         display: inline-flex;
         align-items: center;
@@ -40,11 +40,11 @@
     .step-indicator { display: flex; justify-content: space-between; margin-bottom: 2.5rem; position: relative; }
     .step-indicator::before { content: ''; position: absolute; top: 20px; left: 0; right: 0; height: 2px; background: rgba(255,255,255,0.2); }
     .step { display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1; flex: 1; }
-    .step-number { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.2); border: 2px solid white; display: flex; align-items: center; justify-content: center; font-weight: 700; color: white; margin-bottom: 0.5rem; }
+    .step-number { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.2); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 2px solid white; display: flex; align-items: center; justify-content: center; font-weight: 700; color: white; margin-bottom: 0.5rem; }
     .step.active .step-number { background: var(--accent-purple); box-shadow: 0 0 0 0.3rem var(--accent-purple-lighter); }
     .step-label { font-size: 0.75rem; font-weight: 600; color: rgba(255,255,255,0.7); text-transform: uppercase; }
     .step.active .step-label { color: white; }
-    .next-steps { text-align: left; background: #f8f9fa; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; }
+    .next-steps { text-align: left; background: rgba(106,3,146,0.06); border: 1px solid rgba(106,3,146,0.14); border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; }
     .next-steps li { padding: 0.3rem 0; font-size: 0.9rem; }
     .back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: white; text-decoration: none; font-weight: 600; }
     .back-link:hover { color: rgba(255,255,255,0.85); }

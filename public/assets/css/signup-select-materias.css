@@ -190,8 +190,11 @@ body.signup-materias-page {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
-  border: 2px solid #e2e8f0;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 14px rgba(31, 10, 60, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,9 +252,10 @@ body.signup-materias-page {
   border-radius: 0.75rem;
   text-align: left;
   cursor: pointer;
-  border: none;
-  background: rgba(255, 255, 255, 0.96);
-  border: 2px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   min-width: 0;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;

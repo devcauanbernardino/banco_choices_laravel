@@ -14,13 +14,13 @@
 <style>
 .signup-materias-cols { display: grid; grid-template-columns: 1fr 300px; gap: 22px; align-items: start; }
 @media (max-width: 900px) { .signup-materias-cols { grid-template-columns: 1fr; } }
-.signup-materias-panel { background: #fff; border: 1px solid rgba(15,23,42,.08); border-radius: 18px; padding: 20px 22px; margin-bottom: 14px; }
+.signup-materias-panel { background: rgba(255,255,255,.55); backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); border: 1px solid rgba(255,255,255,.5); box-shadow: 0 8px 28px rgba(31,10,60,.08); border-radius: 18px; padding: 20px 22px; margin-bottom: 14px; }
 .signup-materias-panel__title { font-size: .9rem; font-weight: 700; color: #1c1c1f; margin-bottom: 14px; }
-.signup-materias-tip { display: flex; gap: 10px; background: rgba(106,3,146,.06); border: 1px solid rgba(106,3,146,.16); border-radius: 14px; padding: 14px 16px; }
+.signup-materias-tip { display: flex; gap: 10px; background: rgba(106,3,146,.08); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(106,3,146,.16); border-radius: 14px; padding: 14px 16px; }
 .signup-materias-tip .material-symbols-outlined { color: #6a0392; flex-shrink: 0; }
 .signup-materias-tip p { font-size: .82rem; color: #374151; line-height: 1.6; margin: 0; }
 .signup-materias-side { position: sticky; top: 80px; }
-.signup-materias-side__card { background: #fff; border: 1px solid rgba(15,23,42,.08); border-radius: 20px; padding: 22px; box-shadow: 0 4px 20px rgba(15,23,42,.05); }
+.signup-materias-side__card { background: rgba(255,255,255,.55); backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); border: 1px solid rgba(255,255,255,.5); box-shadow: 0 8px 28px rgba(31,10,60,.08); border-radius: 20px; padding: 22px; }
 .signup-materias-side__title { font-size: .9rem; font-weight: 700; color: #1c1c1f; margin-bottom: 16px; }
 .signup-materias-side__text { font-size: .84rem; color: #6b7280; line-height: 1.65; margin-bottom: 18px; }
 .signup-materias-side__btn { width: 100%; padding: 13px; border-radius: 13px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-family: 'Plus Jakarta Sans','Inter',sans-serif; font-weight: 700; font-size: .95rem; cursor: pointer; box-shadow: 0 6px 20px rgba(106,3,146,.28); display: inline-flex; align-items: center; justify-content: center; gap: 9px; transition: filter .2s ease, box-shadow .2s ease; }

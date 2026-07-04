@@ -186,21 +186,26 @@ body.signup-plano-page {
 }
 
 .signup-plano-card--surface {
-  background: #f2f4f9;
-  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, 0.08);
 }
 
 .signup-plano-card--surface:hover {
-  background: #e6e8ed;
-  box-shadow: 0 18px 40px rgba(73, 0, 102, 0.07);
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 18px 40px rgba(73, 0, 102, 0.1);
 }
 
 .signup-plano-card--featured {
   padding-top: 2.5rem;
-  background: var(--bs-primary, #490066);
+  background: rgba(106, 3, 146, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 32px 64px -12px rgba(73, 0, 102, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 32px 64px -12px rgba(73, 0, 102, 0.28);
   overflow: hidden;
 }
 
@@ -451,12 +456,15 @@ body.signup-plano-page {
 .signup-plano-testimonials__card {
   padding: 1.75rem 1.5rem;
   border-radius: 0.75rem;
-  background: #e0e2e7;
-  box-shadow: 0 32px 64px -12px rgba(73, 0, 102, 0.06);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, 0.08);
 }
 
 .signup-plano-testimonials__card--alt {
-  background: #f2f4f9;
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: none;
 }
 
