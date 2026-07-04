@@ -78,19 +78,9 @@
 }
 @media (max-width: 900px) {
     .login-page { grid-template-columns: 1fr; height: auto; min-height: 100svh; }
-    .login-hero { padding: 32px 24px; }
-    /* No mobile o formulário (a tarefa principal de quem abre essa página)
-       vem antes da cópia de marketing, que fica depois pra quem rolar. */
-    .login-form-side { order: -1; }
-    .login-hero__stats { gap: 20px; }
-    /* !important: essa regra de base vem depois no arquivo (.login-hero__features
-       lá embaixo), então sem isso ela ganhava do empate de especificidade. */
-    .login-hero__features { display: none !important; }
-}
-@media (max-width: 480px) {
-    .login-hero__title { font-size: clamp(1.6rem, 7vw, 2rem); }
-    .login-hero__stats { gap: 16px; }
-    .login-hero__stat-num { font-size: 1.3rem; }
+    /* No mobile é só o formulário — a coluna de marketing (hero) some
+       inteira, sem precisar rolar por ela pra chegar no login. */
+    .login-hero { display: none !important; }
 }
 .login-card {
     width: 100%;
