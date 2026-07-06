@@ -9,6 +9,7 @@ use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DeckController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\FaviconController;
 use App\Http\Controllers\FlashcardController;
@@ -138,6 +139,17 @@ Route::middleware(['auth', 'force.password.change', 'force.mascote.choice'])->gr
     Route::get('/flashcards', [FlashcardController::class, 'index'])->name('flashcards.index');
     Route::post('/flashcards/iniciar', [FlashcardController::class, 'create'])->name('flashcards.create');
     Route::post('/flashcards/revisar', [FlashcardController::class, 'process'])->name('flashcards.process');
+
+    Route::get('/decks', [DeckController::class, 'index'])->name('decks.index');
+    Route::post('/decks', [DeckController::class, 'store'])->name('decks.store');
+    Route::get('/decks/{deck}', [DeckController::class, 'show'])->name('decks.show');
+    Route::put('/decks/{deck}', [DeckController::class, 'update'])->name('decks.update');
+    Route::delete('/decks/{deck}', [DeckController::class, 'destroy'])->name('decks.destroy');
+    Route::post('/decks/{deck}/cartas', [DeckController::class, 'storeCarta'])->name('decks.cartas.store');
+    Route::put('/decks/{deck}/cartas/{carta}', [DeckController::class, 'updateCarta'])->name('decks.cartas.update');
+    Route::delete('/decks/{deck}/cartas/{carta}', [DeckController::class, 'destroyCarta'])->name('decks.cartas.destroy');
+    Route::post('/decks/revisar/iniciar', [DeckController::class, 'create'])->name('decks.revisar.iniciar');
+    Route::post('/decks/revisar', [DeckController::class, 'process'])->name('decks.revisar.process');
 
     Route::get('/simulados', [HistoryController::class, 'index'])->name('history');
     Route::get('/estatisticas', [StatsController::class, 'index'])->name('stats');
