@@ -7,75 +7,100 @@
 @push('styles')
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-.fc-header { margin-bottom: 24px; }
+.fc-header { margin-bottom: 26px; }
 .fc-header h1 { font-size: clamp(1.4rem,2.2vw,1.7rem); font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
 .fc-header p { color: var(--app-muted); font-size: .9rem; margin: 0; }
 
-.fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); grid-auto-rows: 1fr; gap: 22px; }
+.fc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px; }
 
-/* Efeito de pilha: 2 cartões espiando atrás do card principal */
-.fc-deck-card { position: relative; height: 100%; margin: 0 12px 12px 0; }
-.fc-deck-card::before, .fc-deck-card::after { content: ''; position: absolute; inset: 0; border-radius: 18px; background: var(--app-surface); border: 1px solid var(--app-border); }
-.fc-deck-card::before { transform: translate(6px, 6px); opacity: .8; z-index: 0; }
-.fc-deck-card::after { transform: translate(12px, 12px); opacity: .5; z-index: -1; }
+.fc-card {
+    position: relative;
+    border-radius: 18px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: rgba(255,255,255,.55);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255,255,255,.5);
+    box-shadow: 0 8px 28px rgba(31,10,60,.08);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+.fc-card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(31,10,60,.13); }
+[data-theme="dark"] .fc-card { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 28px rgba(0,0,0,.35); }
+[data-theme="dark"] .fc-card:hover { box-shadow: 0 14px 34px rgba(0,0,0,.5); }
 
-.fc-card { position: relative; z-index: 1; height: 100%; box-sizing: border-box; background: var(--app-surface); border: 1px solid var(--app-border); box-shadow: 0 10px 26px rgba(15,23,42,.08); border-radius: 18px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
-[data-theme="dark"] .fc-card { box-shadow: 0 10px 26px rgba(0,0,0,.4); }
+.fc-card__icon { width: 42px; height: 42px; border-radius: 12px; background: linear-gradient(135deg,#8b1fb8,#6a0392); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 6px 16px rgba(106,3,146,.28); }
+.fc-card__icon .material-symbols-outlined { color: #fff; font-size: 1.3rem; }
 .fc-card__title { font-size: 1rem; font-weight: 700; color: var(--app-text); margin: 0; }
+
 .fc-card__badges { display: flex; gap: 8px; flex-wrap: wrap; }
 .fc-badge { font-size: .74rem; font-weight: 700; padding: 4px 10px; border-radius: 99px; }
 .fc-badge--due { background: rgba(13,148,136,.14); color: #0d9488; }
 [data-theme="dark"] .fc-badge--due { background: rgba(45,212,191,.16); color: #2dd4bf; }
 .fc-badge--new { background: rgba(34,197,94,.16); color: #22c55e; }
 .fc-badge--empty { background: rgba(120,120,140,.16); color: var(--app-muted); }
+
 .fc-card__actions { margin-top: auto; display: flex; align-items: center; gap: 10px; }
-.fc-card__input { width: 72px; border: 1px solid var(--app-border); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: var(--app-bg); color: var(--app-text); accent-color: #8b1fb8; }
-.fc-card__input::-webkit-inner-spin-button,
-.fc-card__input::-webkit-outer-spin-button { opacity: 1; }
-.fc-card__input::-webkit-inner-spin-button { filter: invert(20%) sepia(80%) saturate(2000%) hue-rotate(260deg); cursor: pointer; }
-[data-theme="dark"] .fc-card__input::-webkit-inner-spin-button { filter: invert(60%) sepia(60%) saturate(3000%) hue-rotate(250deg); }
+
+.fc-stepper { display: flex; align-items: center; border: 1px solid rgba(255,255,255,.5); border-radius: 10px; background: rgba(255,255,255,.5); overflow: hidden; flex-shrink: 0; }
+[data-theme="dark"] .fc-stepper { border-color: rgba(255,255,255,.12); background: rgba(255,255,255,.04); }
+.fc-stepper__btn { width: 30px; height: 34px; border: none; background: transparent; color: #8b1fb8; font-size: 1.05rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1; }
+.fc-stepper__btn:hover { background: rgba(139,31,184,.12); }
+[data-theme="dark"] .fc-stepper__btn { color: #c77dfd; }
+.fc-stepper__val { width: 34px; text-align: center; font-size: .86rem; font-weight: 700; color: var(--app-text); user-select: none; }
+
 .fc-card__btn { flex: 1; padding: 9px 14px; border-radius: 10px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; font-size: .84rem; cursor: pointer; box-shadow: 0 6px 18px rgba(106,3,146,.3); }
 .fc-card__btn:disabled { opacity: .4; cursor: default; box-shadow: none; }
 
 /* Modal de revisão */
-.fc-review-modal .modal-content { border-radius: 22px; border: 1px solid var(--app-border); background: var(--app-surface); box-shadow: 0 25px 60px rgba(15,23,42,.25); }
-[data-theme="dark"] .fc-review-modal .modal-content { box-shadow: 0 25px 60px rgba(0,0,0,.5); }
+.fc-review-modal .modal-content {
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,.5);
+    background: rgba(255,255,255,.75);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 25px 60px rgba(31,10,60,.18);
+}
+[data-theme="dark"] .fc-review-modal .modal-content { background: rgba(30,20,40,.85); border-color: rgba(255,255,255,.1); box-shadow: 0 25px 60px rgba(0,0,0,.55); }
 .fc-review-modal .modal-header { display: none; }
-.fc-review-modal .modal-body { padding: 18px; }
+.fc-review-modal .modal-body { padding: 20px; }
 
-.fc-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.fc-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; }
 .fc-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: .76rem; font-weight: 700; white-space: nowrap; }
-.fc-pill--materia { background: rgba(13,148,136,.14); color: #0d9488; }
-[data-theme="dark"] .fc-pill--materia { background: rgba(45,212,191,.16); color: #2dd4bf; }
+.fc-pill--materia { background: rgba(139,31,184,.14); color: #8b1fb8; }
+[data-theme="dark"] .fc-pill--materia { background: rgba(199,125,253,.16); color: #c77dfd; }
 .fc-pill--streak { background: rgba(249,115,22,.14); color: #ea580c; }
 [data-theme="dark"] .fc-pill--streak { background: rgba(251,146,60,.18); color: #fb923c; }
 
-.fc-panel-deck { position: relative; margin: 0 14px 14px 0; }
-.fc-panel-deck::before, .fc-panel-deck::after { content: ''; position: absolute; inset: 0; border-radius: 16px; background: var(--app-surface); border: 1px solid var(--app-border); }
-.fc-panel-deck::before { transform: translate(7px, 7px); opacity: .85; z-index: 0; }
-.fc-panel-deck::after { transform: translate(14px, 14px); opacity: .55; z-index: -1; }
-.fc-panel { position: relative; z-index: 1; background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 16px; overflow: hidden; }
+.fc-panel {
+    border-radius: 18px;
+    overflow: hidden;
+    background: rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.55);
+}
+[data-theme="dark"] .fc-panel { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.1); }
 
-.fc-flip { perspective: 800px; }
-.fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .6s cubic-bezier(.4,.15,.2,1), box-shadow .6s ease; transform-style: preserve-3d; will-change: transform; box-shadow: 0 4px 14px rgba(15,23,42,.06); }
-.fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); box-shadow: 0 18px 40px rgba(15,23,42,.22); }
-[data-theme="dark"] .fc-flip-inner { box-shadow: 0 4px 14px rgba(0,0,0,.3); }
-[data-theme="dark"] .fc-flip.is-flipped .fc-flip-inner { box-shadow: 0 18px 40px rgba(0,0,0,.55); }
-.fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; padding: clamp(18px,4vw,26px); background: var(--app-bg); }
-.fc-flip-face--front { cursor: pointer; border: none; text-align: inherit; width: 100%; }
+.fc-flip { perspective: 1000px; }
+.fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .6s cubic-bezier(.4,.15,.2,1), box-shadow .6s ease; transform-style: preserve-3d; will-change: transform; }
+.fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); }
+.fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; padding: clamp(18px,4vw,26px); background: transparent; }
+.fc-flip-face--front { cursor: pointer; border: none; text-align: inherit; width: 100%; color: inherit; }
 .fc-flip-face--front:disabled { cursor: default; }
 .fc-flip-back { transform: rotateY(180deg); }
 
-.fc-flip-tag { align-self: flex-start; font-size: .66rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #0d9488; margin-bottom: 12px; }
-[data-theme="dark"] .fc-flip-tag { color: #2dd4bf; }
+.fc-flip-tag { align-self: flex-start; font-size: .66rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #8b1fb8; margin-bottom: 12px; }
+[data-theme="dark"] .fc-flip-tag { color: #c77dfd; }
 .fc-flip-text { flex: 1; font-size: 1.05rem; color: var(--app-text); line-height: 1.55; margin: 0; text-align: left; }
-.fc-flip-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--app-border); font-size: .78rem; }
+.fc-flip-bottom { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(120,120,140,.18); font-size: .78rem; }
 .fc-flip-timer { display: inline-flex; align-items: center; gap: 5px; color: var(--app-muted); font-weight: 600; }
-.fc-flip-hint { color: #0d9488; font-weight: 700; }
-[data-theme="dark"] .fc-flip-hint { color: #2dd4bf; }
+.fc-flip-hint { color: #8b1fb8; font-weight: 700; }
+[data-theme="dark"] .fc-flip-hint { color: #c77dfd; }
 
-.fc-rate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
-.fc-rate-btn { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 6px; border-radius: 12px; border: 1px solid var(--app-border); background: var(--app-bg); font-size: .82rem; font-weight: 700; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+.fc-rate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 16px; }
+.fc-rate-btn { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 6px; border-radius: 12px; border: 1px solid rgba(120,120,140,.2); background: rgba(255,255,255,.4); font-size: .82rem; font-weight: 700; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+[data-theme="dark"] .fc-rate-btn { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.12); }
 .fc-rate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(15,23,42,.12); }
 .fc-rate-btn__num { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; font-size: .68rem; font-weight: 800; flex-shrink: 0; }
 .fc-rate-btn--dificil { color: #dc2626; }
@@ -86,9 +111,11 @@
 .fc-rate-btn--facil .fc-rate-btn__num { background: rgba(13,148,136,.15); }
 
 .fc-sum { text-align: center; padding: 8px; }
-.fc-sum__total { font-size: 2rem; font-weight: 800; color: #0d9488; margin: 10px 0; }
+.fc-sum__total { font-size: 2rem; font-weight: 800; color: #8b1fb8; margin: 10px 0; }
+[data-theme="dark"] .fc-sum__total { color: #c77dfd; }
 .fc-sum__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin: 16px 0; }
-.fc-sum__cell { background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 12px; padding: 12px 6px; }
+.fc-sum__cell { background: rgba(255,255,255,.4); border: 1px solid rgba(120,120,140,.18); border-radius: 12px; padding: 12px 6px; }
+[data-theme="dark"] .fc-sum__cell { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.1); }
 .fc-sum__cell strong { display: block; font-size: 1.1rem; }
 </style>
 @endpush
@@ -105,30 +132,33 @@
     <div class="fc-grid">
         @foreach ($materias as $m)
             @php $resumo = $resumoPorMateria[$m->id] ?? ['due_count' => 0, 'new_count' => 0, 'new_available_count' => 0]; @endphp
-            <div class="fc-deck-card">
-                <div class="fc-card">
-                    <h3 class="fc-card__title">{{ $m->nome }}</h3>
-                    <div class="fc-card__badges">
-                        @if ($resumo['due_count'] > 0)
-                            <span class="fc-badge fc-badge--due">{{ __('flashcards.card.due_count', ['n' => $resumo['due_count']]) }}</span>
-                        @endif
-                        @if ($resumo['new_available_count'] > 0)
-                            <span class="fc-badge fc-badge--new">{{ __('flashcards.card.new_count', ['n' => $resumo['new_available_count']]) }}</span>
-                        @endif
-                        @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0)
-                            <span class="fc-badge fc-badge--empty">{{ __('flashcards.card.all_caught_up') }}</span>
-                        @endif
-                    </div>
-                    <form class="fc-card__actions" data-fc-start>
-                        <input type="hidden" name="materia" value="{{ $m->id }}">
-                        <input type="number" name="novos_por_dia" class="fc-card__input" min="0" max="200" value="20"
-                               aria-label="{{ __('flashcards.form.new_per_day_label') }}">
-                        <button type="submit" class="fc-card__btn"
-                                @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0) disabled @endif>
-                            {{ __('flashcards.form.start') }}
-                        </button>
-                    </form>
+            <div class="fc-card">
+                <div class="fc-card__icon"><span class="material-symbols-outlined" aria-hidden="true">style</span></div>
+                <h3 class="fc-card__title">{{ $m->nome }}</h3>
+                <div class="fc-card__badges">
+                    @if ($resumo['due_count'] > 0)
+                        <span class="fc-badge fc-badge--due">{{ __('flashcards.card.due_count', ['n' => $resumo['due_count']]) }}</span>
+                    @endif
+                    @if ($resumo['new_available_count'] > 0)
+                        <span class="fc-badge fc-badge--new">{{ __('flashcards.card.new_count', ['n' => $resumo['new_available_count']]) }}</span>
+                    @endif
+                    @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0)
+                        <span class="fc-badge fc-badge--empty">{{ __('flashcards.card.all_caught_up') }}</span>
+                    @endif
                 </div>
+                <form class="fc-card__actions" data-fc-start>
+                    <input type="hidden" name="materia" value="{{ $m->id }}">
+                    <div class="fc-stepper">
+                        <button type="button" class="fc-stepper__btn" data-fc-step="-1" aria-label="{{ __('flashcards.form.new_per_day_label') }} -">−</button>
+                        <span class="fc-stepper__val" data-fc-val>20</span>
+                        <button type="button" class="fc-stepper__btn" data-fc-step="1" aria-label="{{ __('flashcards.form.new_per_day_label') }} +">+</button>
+                    </div>
+                    <input type="hidden" name="novos_por_dia" value="20" data-fc-hidden>
+                    <button type="submit" class="fc-card__btn"
+                            @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0) disabled @endif>
+                        {{ __('flashcards.form.start') }}
+                    </button>
+                </form>
             </div>
         @endforeach
     </div>
@@ -154,22 +184,20 @@
                         </span>
                     </div>
 
-                    <div class="fc-panel-deck">
-                        <div class="fc-panel">
-                            <div class="fc-flip" id="fcFlip">
-                                <div class="fc-flip-inner">
-                                    <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
-                                        <span class="fc-flip-tag" id="fcFrenteTag"></span>
-                                        <p class="fc-flip-text" id="fcFrenteText"></p>
-                                        <div class="fc-flip-bottom">
-                                            <span class="fc-flip-timer"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">schedule</span><span id="fcTimer">0s</span></span>
-                                            <span class="fc-flip-hint" id="fcRevealHint"></span>
-                                        </div>
-                                    </button>
-                                    <div class="fc-flip-face fc-flip-back">
-                                        <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
-                                        <p class="fc-flip-text" id="fcVersoText"></p>
+                    <div class="fc-panel">
+                        <div class="fc-flip" id="fcFlip">
+                            <div class="fc-flip-inner">
+                                <button type="button" class="fc-flip-face fc-flip-face--front" id="fcFrontBtn">
+                                    <span class="fc-flip-tag" id="fcFrenteTag"></span>
+                                    <p class="fc-flip-text" id="fcFrenteText"></p>
+                                    <div class="fc-flip-bottom">
+                                        <span class="fc-flip-timer"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">schedule</span><span id="fcTimer">0s</span></span>
+                                        <span class="fc-flip-hint" id="fcRevealHint"></span>
                                     </div>
+                                </button>
+                                <div class="fc-flip-face fc-flip-back">
+                                    <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
+                                    <p class="fc-flip-text" id="fcVersoText"></p>
                                 </div>
                             </div>
                         </div>
@@ -200,6 +228,24 @@
 
 @push('scripts')
 <script>
+(function () {
+    document.querySelectorAll('.fc-stepper').forEach(function (stepper) {
+        var form = stepper.closest('form');
+        var valEl = stepper.querySelector('[data-fc-val]');
+        var hidden = form.querySelector('[data-fc-hidden]');
+        var min = 0, max = 200;
+        stepper.querySelectorAll('[data-fc-step]').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var current = parseInt(hidden.value, 10) || 0;
+                var next = current + parseInt(btn.dataset.fcStep, 10);
+                next = Math.max(min, Math.min(max, next));
+                hidden.value = next;
+                valEl.textContent = next;
+            });
+        });
+    });
+})();
+
 (function () {
     var modalEl = document.getElementById('fcReviewModal');
     if (!modalEl) return;
