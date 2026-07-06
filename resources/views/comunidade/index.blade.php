@@ -134,7 +134,7 @@
 .cm-action-btn .material-symbols-outlined { font-size: 1.1rem; }
 .cm-action-btn--danger:hover { color: #dc3545; background: rgba(220,53,69,.06); }
 
-.cm-comments { margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(120,120,140,.15); }
+.cm-comments { padding-top: 14px; border-top: 1px solid rgba(120,120,140,.15); }
 [data-theme="dark"] .cm-comments { border-top-color: rgba(255,255,255,.1); }
 .cm-comment { display: flex; gap: 8px; margin-bottom: 8px; }
 .cm-comment__avatar { width: 26px; height: 26px; font-size: .7rem; }
