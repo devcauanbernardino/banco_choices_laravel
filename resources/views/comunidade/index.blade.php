@@ -42,7 +42,7 @@
 .cm-banner p { position: relative; opacity: .92; font-size: .92rem; margin: 0; max-width: 540px; }
 
 .cm-layout { display: grid; grid-template-columns: minmax(0,1fr) 290px; gap: 22px; align-items: start; }
-.cm-sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 20px; }
+.cm-sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 88px; }
 @media (max-width: 991px) {
     .cm-layout { grid-template-columns: 1fr; }
     .cm-feed { order: 1; }
@@ -121,7 +121,7 @@
     background: none;
     border: none;
     outline-offset: -2px;
-    padding: 7px 6px;
+    padding: 4px 6px;
     color: var(--app-muted);
     font-size: .8rem;
     font-weight: 600;
