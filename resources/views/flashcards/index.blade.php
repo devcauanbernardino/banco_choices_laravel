@@ -29,7 +29,11 @@
 .fc-badge--new { background: rgba(34,197,94,.16); color: #22c55e; }
 .fc-badge--empty { background: rgba(120,120,140,.16); color: var(--app-muted); }
 .fc-card__actions { margin-top: auto; display: flex; align-items: center; gap: 10px; }
-.fc-card__input { width: 72px; border: 1px solid var(--app-border); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: var(--app-bg); color: var(--app-text); }
+.fc-card__input { width: 72px; border: 1px solid var(--app-border); border-radius: 8px; padding: 6px 8px; font-size: .82rem; background: var(--app-bg); color: var(--app-text); accent-color: #8b1fb8; }
+.fc-card__input::-webkit-inner-spin-button,
+.fc-card__input::-webkit-outer-spin-button { opacity: 1; }
+.fc-card__input::-webkit-inner-spin-button { filter: invert(20%) sepia(80%) saturate(2000%) hue-rotate(260deg); cursor: pointer; }
+[data-theme="dark"] .fc-card__input::-webkit-inner-spin-button { filter: invert(60%) sepia(60%) saturate(3000%) hue-rotate(250deg); }
 .fc-card__btn { flex: 1; padding: 9px 14px; border-radius: 10px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; font-size: .84rem; cursor: pointer; box-shadow: 0 6px 18px rgba(106,3,146,.3); }
 .fc-card__btn:disabled { opacity: .4; cursor: default; box-shadow: none; }
 
