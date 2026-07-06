@@ -5,6 +5,7 @@
 @section('topbar_title', __('decks.mobile_title'))
 
 @push('styles')
+<link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ @filemtime(public_path('assets/css/shared-select.css')) }}">
 <style>
 .dk-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; }
 .dk-header h1 { font-size: clamp(1.4rem,2.2vw,1.7rem); font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
@@ -177,7 +178,7 @@ a.dk-new-btn:hover { text-decoration: none; }
                     </div>
                     <div class="mb-4">
                         <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
-                        <select name="materia_id" class="form-select">
+                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid form-select">
                             <option value="">{{ __('decks.form.subject_none') }}</option>
                             @foreach ($materiasUsuario as $m)
                                 <option value="{{ $m->id }}">{{ $m->nome }}</option>
@@ -205,7 +206,7 @@ a.dk-new-btn:hover { text-decoration: none; }
                     </div>
                     <div class="mb-3">
                         <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
-                        <select name="materia_id" class="form-select">
+                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid form-select">
                             <option value="">{{ __('decks.form.subject_none') }}</option>
                             @foreach ($materiasUsuario as $m)
                                 <option value="{{ $m->id }}">{{ $m->nome }}</option>
@@ -225,6 +226,7 @@ a.dk-new-btn:hover { text-decoration: none; }
 @endpush
 
 @push('scripts')
+<script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}" defer></script>
 <script>
 document.querySelectorAll('.dk-stepper').forEach(function (stepper) {
     var form = stepper.closest('form');

@@ -5,6 +5,7 @@
 @section('topbar_title', $deck->nome)
 
 @push('styles')
+<link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ @filemtime(public_path('assets/css/shared-select.css')) }}">
 <style>
 .dks-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
 .dks-header h1 { font-size: clamp(1.3rem,2vw,1.6rem); font-weight: 700; color: var(--app-text); margin-bottom: 4px; }
@@ -223,7 +224,7 @@
                     @csrf
                     <div class="mb-3">
                         <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
-                        <select name="materia_id" class="form-select" required>
+                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid form-select" required>
                             <option value="" disabled {{ $deck->materia_id ? '' : 'selected' }}>{{ __('decks.form.subject_choose') }}</option>
                             @foreach (auth()->user()->materiasUnicas() as $m)
                                 <option value="{{ $m->id }}" {{ (int) $deck->materia_id === (int) $m->id ? 'selected' : '' }}>{{ $m->nome }}</option>
@@ -297,6 +298,7 @@
 @endpush
 
 @push('scripts')
+<script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}" defer></script>
 <script>
 (function () {
     var modalEl = document.getElementById('dkReviewModal');
