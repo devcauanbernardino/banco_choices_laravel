@@ -178,7 +178,7 @@ a.dk-new-btn:hover { text-decoration: none; }
                     </div>
                     <div class="mb-4">
                         <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
-                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid form-select">
+                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid">
                             <option value="">{{ __('decks.form.subject_none') }}</option>
                             @foreach ($materiasUsuario as $m)
                                 <option value="{{ $m->id }}">{{ $m->nome }}</option>
@@ -206,7 +206,7 @@ a.dk-new-btn:hover { text-decoration: none; }
                     </div>
                     <div class="mb-3">
                         <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
-                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid form-select">
+                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid">
                             <option value="">{{ __('decks.form.subject_none') }}</option>
                             @foreach ($materiasUsuario as $m)
                                 <option value="{{ $m->id }}">{{ $m->nome }}</option>

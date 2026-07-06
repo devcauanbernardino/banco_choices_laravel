@@ -224,7 +224,7 @@
                     @csrf
                     <div class="mb-3">
                         <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
-                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid form-select" required>
+                        <select name="materia_id" class="bc-styled-select bc-styled-select--fluid" required>
                             <option value="" disabled {{ $deck->materia_id ? '' : 'selected' }}>{{ __('decks.form.subject_choose') }}</option>
                             @foreach (auth()->user()->materiasUnicas() as $m)
                                 <option value="{{ $m->id }}" {{ (int) $deck->materia_id === (int) $m->id ? 'selected' : '' }}>{{ $m->nome }}</option>
