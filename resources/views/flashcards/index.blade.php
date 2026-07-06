@@ -74,19 +74,28 @@
 .fc-pill--streak { background: rgba(249,115,22,.14); color: #ea580c; }
 [data-theme="dark"] .fc-pill--streak { background: rgba(251,146,60,.18); color: #fb923c; }
 
-.fc-panel {
-    border-radius: 18px;
-    overflow: hidden;
-    background: rgba(255,255,255,.5);
-    border: 1px solid rgba(255,255,255,.55);
-}
-[data-theme="dark"] .fc-panel { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.1); }
+.fc-panel { }
 
 .fc-flip { perspective: 1000px; }
-.fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .6s cubic-bezier(.4,.15,.2,1), box-shadow .6s ease; transform-style: preserve-3d; will-change: transform; }
+.fc-flip-inner { position: relative; width: 100%; height: min(52vh, 300px); transition: transform .6s cubic-bezier(.4,.15,.2,1); transform-style: preserve-3d; will-change: transform; }
 .fc-flip.is-flipped .fc-flip-inner { transform: rotateY(180deg); }
-.fc-flip-face { position: absolute; inset: 0; overflow-y: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; padding: clamp(18px,4vw,26px); background: transparent; }
-.fc-flip-face--front { cursor: pointer; border: none; text-align: inherit; width: 100%; color: inherit; }
+.fc-flip-face {
+    position: absolute;
+    inset: 0;
+    overflow-y: auto;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(18px,4vw,26px);
+    border-radius: 18px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid rgba(255,255,255,.55);
+    box-shadow: 0 8px 22px rgba(31,10,60,.08);
+}
+[data-theme="dark"] .fc-flip-face { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 22px rgba(0,0,0,.35); }
+.fc-flip.is-flipped .fc-flip-inner { box-shadow: none; }
+.fc-flip-face--front { cursor: pointer; border-color: rgba(255,255,255,.55); text-align: inherit; width: 100%; color: inherit; }
 .fc-flip-face--front:disabled { cursor: default; }
 .fc-flip-back { transform: rotateY(180deg); }
 
