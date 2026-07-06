@@ -76,11 +76,40 @@
 .cm-preview-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cm-preview-item__remove { position: absolute; top: 2px; right: 2px; width: 20px; height: 20px; border-radius: 50%; border: none; background: rgba(0,0,0,.6); color: #fff; font-size: .7rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 
-.cm-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-bottom: 12px; }
-.cm-gallery a { display: block; border-radius: 12px; overflow: hidden; aspect-ratio: 1 / 1; border: 1px solid rgba(120,120,140,.15); }
-[data-theme="dark"] .cm-gallery a { border-color: rgba(255,255,255,.1); }
+.cm-gallery {
+    display: grid;
+    gap: 3px;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(120,120,140,.15);
+}
+[data-theme="dark"] .cm-gallery { border-color: rgba(255,255,255,.1); }
+.cm-gallery a { display: block; overflow: hidden; position: relative; }
 .cm-gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .18s ease; }
-.cm-gallery a:hover img { transform: scale(1.04); }
+.cm-gallery a:hover img { transform: scale(1.03); }
+
+.cm-gallery[data-count="1"] { grid-template-columns: 1fr; aspect-ratio: 16 / 10; }
+
+.cm-gallery[data-count="2"] { grid-template-columns: 1fr 1fr; aspect-ratio: 16 / 8; }
+
+.cm-gallery[data-count="3"] { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; aspect-ratio: 4 / 3; }
+.cm-gallery[data-count="3"] a:first-child { grid-row: span 2; }
+
+.cm-gallery[data-count="4"] { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; aspect-ratio: 1 / 1; }
+
+.cm-gallery__more::after {
+    content: attr(data-extra);
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 </style>
 @endpush
 
@@ -134,9 +163,15 @@
             </div>
             <p class="cm-post__content">{{ $post->conteudo }}</p>
             @if ($post->imagens->isNotEmpty())
-                <div class="cm-gallery">
-                    @foreach ($post->imagens as $imagem)
-                        <a href="{{ $imagem->url }}" target="_blank" rel="noopener">
+                @php
+                    $imagensVisiveis = $post->imagens->take(4);
+                    $imagensExtras = max(0, $post->imagens->count() - 4);
+                @endphp
+                <div class="cm-gallery" data-count="{{ $imagensVisiveis->count() }}">
+                    @foreach ($imagensVisiveis as $i => $imagem)
+                        <a href="{{ $imagem->url }}" target="_blank" rel="noopener"
+                           class="{{ $i === 3 && $imagensExtras > 0 ? 'cm-gallery__more' : '' }}"
+                           @if ($i === 3 && $imagensExtras > 0) data-extra="+{{ $imagensExtras }}" @endif>
                             <img src="{{ $imagem->url }}" alt="" loading="lazy">
                         </a>
                     @endforeach
