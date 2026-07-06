@@ -51,6 +51,19 @@
 [data-theme="dark"] .dk-review-modal .modal-content { background: rgba(30,20,40,.85); border-color: rgba(255,255,255,.1); box-shadow: 0 25px 60px rgba(0,0,0,.55); }
 .dk-review-modal .modal-header { display: none; }
 .dk-review-modal .modal-body { padding: 20px; }
+
+/* Modais de editar/compartilhar deck */
+.modal .modal-content { border-radius: 22px; border: 1px solid rgba(255,255,255,.5); background: rgba(255,255,255,.85); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); box-shadow: 0 25px 60px rgba(31,10,60,.18); }
+[data-theme="dark"] .modal .modal-content { background: rgba(30,20,40,.9); border-color: rgba(255,255,255,.1); box-shadow: 0 25px 60px rgba(0,0,0,.55); }
+.modal .form-control,
+.modal .form-select { background: rgba(255,255,255,.5); border: 1px solid rgba(120,120,140,.25); color: var(--app-text); }
+[data-theme="dark"] .modal .form-control,
+[data-theme="dark"] .modal .form-select { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); color: var(--app-text); }
+.modal .form-select:focus,
+.modal .form-control:focus { border-color: #8b1fb8; box-shadow: 0 0 0 .2rem rgba(139,31,184,.2); }
+.modal .form-select option { background: #fff; color: #15131a; }
+[data-theme="dark"] .modal .form-select option { background: #241a30; color: #f1eaf7; }
+.modal .form-check-input:checked { background-color: #8b1fb8; border-color: #8b1fb8; }
 .dk-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; }
 .dk-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: .76rem; font-weight: 700; white-space: nowrap; background: rgba(139,31,184,.14); color: #8b1fb8; }
 [data-theme="dark"] .dk-pill { background: rgba(199,125,253,.16); color: #c77dfd; }
