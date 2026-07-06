@@ -23,7 +23,14 @@ class ComunidadeController extends Controller
             ->orderByDesc('created_at')
             ->paginate(15);
 
-        return view('comunidade.index', compact('posts'));
+        $totalPosts = ComunidadePost::query()->count();
+        $totalComentarios = ComunidadeComentario::query()->count();
+        $totalParticipantes = ComunidadePost::query()->pluck('usuario_id')
+            ->merge(ComunidadeComentario::query()->pluck('usuario_id'))
+            ->unique()
+            ->count();
+
+        return view('comunidade.index', compact('posts', 'totalPosts', 'totalComentarios', 'totalParticipantes'));
     }
 
     public function store(Request $request): RedirectResponse
