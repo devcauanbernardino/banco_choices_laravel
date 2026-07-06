@@ -73,11 +73,25 @@
         <h1>{{ __('decks.header.title') }}</h1>
         <p>{{ __('decks.header.sub') }}</p>
     </div>
-    <button type="button" class="dk-new-btn" data-bs-toggle="modal" data-bs-target="#dkCreateModal">
-        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">add</span>
-        {{ __('decks.form.new_deck') }}
-    </button>
+    <div class="d-flex gap-2 flex-wrap">
+        <a href="{{ route('decks.descobrir') }}" class="dk-new-btn" style="background:rgba(139,31,184,.12); color:#8b1fb8; box-shadow:none;">
+            <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">explore</span>
+            {{ __('decks.form.discover') }}
+        </a>
+        <button type="button" class="dk-new-btn" style="background:rgba(139,31,184,.12); color:#8b1fb8; box-shadow:none;" data-bs-toggle="modal" data-bs-target="#dkImportModal">
+            <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">upload_file</span>
+            {{ __('decks.form.import_anki') }}
+        </button>
+        <button type="button" class="dk-new-btn" data-bs-toggle="modal" data-bs-target="#dkCreateModal">
+            <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">add</span>
+            {{ __('decks.form.new_deck') }}
+        </button>
+    </div>
 </div>
+
+@if (session('error'))
+    <div class="alert alert-danger">{{ session('error') }}</div>
+@endif
 
 @if ($decks->isEmpty())
     <div class="dk-empty">
@@ -144,11 +158,52 @@
                         <label class="form-label small fw-semibold">{{ __('decks.form.name_label') }}</label>
                         <input type="text" name="nome" class="form-control" maxlength="120" required autofocus>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label class="form-label small fw-semibold">{{ __('decks.form.desc_label') }}</label>
                         <textarea name="descricao" class="form-control" rows="2" maxlength="255"></textarea>
                     </div>
+                    <div class="mb-4">
+                        <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
+                        <select name="materia_id" class="form-select">
+                            <option value="">{{ __('decks.form.subject_none') }}</option>
+                            @foreach ($materiasUsuario as $m)
+                                <option value="{{ $m->id }}">{{ $m->nome }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     <button type="submit" class="dk-card__btn w-100">{{ __('decks.form.create') }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade dk-modal" id="dkImportModal" tabindex="-1" aria-labelledby="dkImportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <h2 class="h5 fw-bold mb-2">{{ __('decks.form.import_anki') }}</h2>
+                <p class="small text-muted mb-3">{{ __('decks.form.import_anki_hint') }}</p>
+                <form method="POST" action="{{ route('decks.import.anki') }}" enctype="multipart/form-data">
+                    @csrf
+                    <div class="mb-3">
+                        <label class="form-label small fw-semibold">{{ __('decks.form.name_label') }}</label>
+                        <input type="text" name="nome" class="form-control" maxlength="120" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
+                        <select name="materia_id" class="form-select">
+                            <option value="">{{ __('decks.form.subject_none') }}</option>
+                            @foreach ($materiasUsuario as $m)
+                                <option value="{{ $m->id }}">{{ $m->nome }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label small fw-semibold">{{ __('decks.form.apkg_label') }}</label>
+                        <input type="file" name="arquivo" class="form-control" accept=".apkg,.zip" required>
+                    </div>
+                    <button type="submit" class="dk-card__btn w-100">{{ __('decks.form.import') }}</button>
                 </form>
             </div>
         </div>

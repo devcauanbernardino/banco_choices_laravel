@@ -105,6 +105,22 @@
         @endif
     </div>
     <div class="dks-header__actions">
+        @if ($deck->compartilhado)
+            <span class="dk-pill" style="align-self:center;">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">share</span>
+                {{ __('decks.form.shared_badge') }}
+            </span>
+            <form method="POST" action="{{ route('decks.unshare', $deck) }}">
+                @csrf
+                <button type="submit" class="dks-icon-btn" aria-label="{{ __('decks.form.unshare') }}">
+                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">link_off</span>
+                </button>
+            </form>
+        @else
+            <button type="button" class="dks-icon-btn" data-bs-toggle="modal" data-bs-target="#dksShareModal" aria-label="{{ __('decks.form.share') }}">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">share</span>
+            </button>
+        @endif
         <button type="button" class="dks-icon-btn" data-bs-toggle="modal" data-bs-target="#dksEditModal" aria-label="{{ __('decks.form.edit_deck') }}">
             <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">edit</span>
         </button>
@@ -182,6 +198,36 @@
         </div>
     </div>
 </div>
+
+@if (! $deck->compartilhado)
+<div class="modal fade" id="dksShareModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <h2 class="h5 fw-bold mb-2">{{ __('decks.form.share') }}</h2>
+                <p class="small text-muted mb-3">{{ __('decks.form.share_hint') }}</p>
+                <form method="POST" action="{{ route('decks.share', $deck) }}">
+                    @csrf
+                    <div class="mb-3">
+                        <label class="form-label small fw-semibold">{{ __('decks.form.subject_label') }}</label>
+                        <select name="materia_id" class="form-select" required>
+                            <option value="" disabled {{ $deck->materia_id ? '' : 'selected' }}>{{ __('decks.form.subject_choose') }}</option>
+                            @foreach (auth()->user()->materiasUnicas() as $m)
+                                <option value="{{ $m->id }}" {{ (int) $deck->materia_id === (int) $m->id ? 'selected' : '' }}>{{ $m->nome }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input type="checkbox" class="form-check-input" id="dksConfirmaDireitos" name="confirma_direitos" required>
+                        <label class="form-check-label small" for="dksConfirmaDireitos">{{ __('decks.form.confirm_rights') }}</label>
+                    </div>
+                    <button type="submit" class="dks-add-btn w-100">{{ __('decks.form.share_confirm') }}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
 
 <div class="modal fade dk-review-modal" id="dkReviewModal" tabindex="-1" aria-labelledby="dkReviewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

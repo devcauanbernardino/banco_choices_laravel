@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Deck;
 use App\Models\DeckCarta;
 use App\Models\DeckProgresso;
+use App\Services\Decks\AnkiApkgImporter;
 use App\Services\Decks\DeckQueueBuilder;
 use App\Support\DeckSession;
 use App\Support\Sm2Scheduler;
@@ -12,6 +13,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
 
 class DeckController extends Controller
 {
@@ -36,25 +38,75 @@ class DeckController extends Controller
             return [$d->id => DeckQueueBuilder::counts((int) $user->id, (int) $d->id)];
         });
 
-        return view('decks.index', compact('decks', 'resumoPorDeck'));
+        $materiasUsuario = $user->materiasUnicas();
+
+        return view('decks.index', compact('decks', 'resumoPorDeck', 'materiasUsuario'));
     }
 
     public function store(Request $request): RedirectResponse
     {
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
+        $materiaIds = $user->materias()->pluck('materias.id')->all();
+
         $data = $request->validate([
             'nome' => 'required|string|max:120',
             'descricao' => 'nullable|string|max:255',
+            'materia_id' => ['nullable', 'integer', Rule::in($materiaIds)],
         ]);
 
-        /** @var \App\Models\User $user */
-        $user = Auth::user();
         $deck = Deck::create([
             'usuario_id' => $user->id,
+            'materia_id' => $data['materia_id'] ?? null,
             'nome' => $data['nome'],
             'descricao' => $data['descricao'] ?? null,
         ]);
 
         return redirect()->route('decks.show', $deck)->with('success', __('decks.flash.created'));
+    }
+
+    public function storeAnki(Request $request): RedirectResponse
+    {
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
+        $materiaIds = $user->materias()->pluck('materias.id')->all();
+
+        $data = $request->validate([
+            'nome' => 'required|string|max:120',
+            'materia_id' => ['nullable', 'integer', Rule::in($materiaIds)],
+            'arquivo' => 'required|file|max:51200|mimes:apkg,zip',
+        ]);
+
+        try {
+            $cartas = AnkiApkgImporter::extrairCartas($request->file('arquivo')->getRealPath());
+        } catch (\RuntimeException $e) {
+            return redirect()->route('decks.index')->with('error', __('decks.err.import_'.$e->getMessage()) !== 'decks.err.import_'.$e->getMessage()
+                ? __('decks.err.import_'.$e->getMessage())
+                : __('decks.err.import_generic'));
+        }
+
+        if ($cartas === []) {
+            return redirect()->route('decks.index')->with('error', __('decks.err.import_empty'));
+        }
+
+        $deck = Deck::create([
+            'usuario_id' => $user->id,
+            'materia_id' => $data['materia_id'] ?? null,
+            'nome' => $data['nome'],
+            'descricao' => __('decks.form.imported_from_anki'),
+        ]);
+
+        $ordem = 1;
+        foreach ($cartas as $c) {
+            DeckCarta::create([
+                'deck_id' => $deck->id,
+                'frente' => $c['frente'],
+                'verso' => $c['verso'],
+                'ordem' => $ordem++,
+            ]);
+        }
+
+        return redirect()->route('decks.show', $deck)->with('success', __('decks.flash.imported', ['n' => count($cartas)]));
     }
 
     public function show(Deck $deck)
@@ -85,6 +137,94 @@ class DeckController extends Controller
         $deck->delete();
 
         return redirect()->route('decks.index')->with('success', __('decks.flash.deleted'));
+    }
+
+    public function share(Request $request, Deck $deck): RedirectResponse
+    {
+        $this->ensureOwner($deck);
+
+        $request->validate([
+            'materia_id' => 'required|integer|exists:materias,id',
+            'confirma_direitos' => 'accepted',
+        ]);
+
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
+        if (! $user->possuiMateria((int) $request->input('materia_id'))) {
+            abort(403);
+        }
+
+        $deck->update([
+            'materia_id' => $request->input('materia_id'),
+            'compartilhado' => true,
+            'compartilhado_em' => now(),
+        ]);
+
+        return redirect()->route('decks.show', $deck)->with('success', __('decks.flash.shared'));
+    }
+
+    public function unshare(Deck $deck): RedirectResponse
+    {
+        $this->ensureOwner($deck);
+        $deck->update(['compartilhado' => false]);
+
+        return redirect()->route('decks.show', $deck)->with('success', __('decks.flash.unshared'));
+    }
+
+    public function descobrir(Request $request)
+    {
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
+        $materiaIds = $user->materias()->pluck('materias.id')->all();
+
+        $decks = Deck::query()
+            ->where('compartilhado', true)
+            ->where('usuario_id', '!=', $user->id)
+            ->whereIn('materia_id', $materiaIds)
+            ->withCount('cartas')
+            ->with(['usuario:id,nome', 'materia:id,nome'])
+            ->orderByDesc('compartilhado_em')
+            ->get();
+
+        $jaClonados = Deck::query()
+            ->where('usuario_id', $user->id)
+            ->whereNotNull('deck_origem_id')
+            ->pluck('deck_origem_id')
+            ->all();
+
+        return view('decks.descobrir', compact('decks', 'jaClonados'));
+    }
+
+    public function clonar(Deck $deck): RedirectResponse
+    {
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
+
+        if (! $deck->compartilhado || (int) $deck->usuario_id === (int) $user->id) {
+            abort(403);
+        }
+        if (! $deck->materia_id || ! $user->possuiMateria((int) $deck->materia_id)) {
+            abort(403);
+        }
+
+        $novoDeck = Deck::create([
+            'usuario_id' => $user->id,
+            'materia_id' => $deck->materia_id,
+            'nome' => $deck->nome,
+            'descricao' => $deck->descricao,
+            'deck_origem_id' => $deck->id,
+        ]);
+
+        foreach ($deck->cartas as $c) {
+            DeckCarta::create([
+                'deck_id' => $novoDeck->id,
+                'frente' => $c->frente,
+                'verso' => $c->verso,
+                'ordem' => $c->ordem,
+            ]);
+        }
+
+        return redirect()->route('decks.show', $novoDeck)->with('success', __('decks.flash.cloned'));
     }
 
     public function storeCarta(Request $request, Deck $deck): RedirectResponse
