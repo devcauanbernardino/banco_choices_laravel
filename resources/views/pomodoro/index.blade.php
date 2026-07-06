@@ -54,6 +54,10 @@
 [data-theme="dark"] .pm-ring.is-break .pm-ring__state { color: #2dd4bf; }
 .pm-cycle-count { font-size: .78rem; color: var(--app-muted); margin-top: 10px; }
 
+.pm-summary { text-align: center; margin-top: 22px; }
+.pm-summary__title { font-size: 1.05rem; font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
+.pm-summary__body { font-size: .88rem; color: var(--app-muted); margin-bottom: 18px; }
+
 .pm-controls { display: flex; gap: 10px; margin-top: 22px; justify-content: center; flex-wrap: wrap; }
 .pm-btn { padding: 11px 22px; border-radius: 12px; border: none; font-weight: 700; font-size: .88rem; cursor: pointer; }
 .pm-btn--primary { background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; box-shadow: 0 6px 18px rgba(106,3,146,.3); }
@@ -134,11 +138,17 @@
                 <p class="pm-cycle-count" id="pmCycleCount"></p>
             </div>
 
-            <div class="pm-controls">
+            <div class="pm-controls" id="pmControls">
                 <button type="button" class="pm-btn pm-btn--primary" id="pmStartBtn">{{ __('pomodoro.form.start') }}</button>
                 <button type="button" class="pm-btn pm-btn--ghost d-none" id="pmPauseBtn">{{ __('pomodoro.form.pause') }}</button>
                 <button type="button" class="pm-btn pm-btn--ghost d-none" id="pmSkipBtn">{{ __('pomodoro.form.skip') }}</button>
-                <button type="button" class="pm-btn pm-btn--ghost d-none" id="pmResetBtn">{{ __('pomodoro.form.reset') }}</button>
+                <button type="button" class="pm-btn pm-btn--ghost d-none" id="pmFinishBtn">{{ __('pomodoro.form.finish') }}</button>
+            </div>
+
+            <div class="pm-summary d-none" id="pmSummary">
+                <p class="pm-summary__title">{{ __('pomodoro.summary.title') }}</p>
+                <p class="pm-summary__body" id="pmSummaryBody"></p>
+                <button type="button" class="pm-btn pm-btn--primary" id="pmSummaryOkBtn">{{ __('pomodoro.summary.cta_ok') }}</button>
             </div>
         </div>
 
@@ -207,7 +217,11 @@
     var startBtn = document.getElementById('pmStartBtn');
     var pauseBtn = document.getElementById('pmPauseBtn');
     var skipBtn = document.getElementById('pmSkipBtn');
-    var resetBtn = document.getElementById('pmResetBtn');
+    var finishBtn = document.getElementById('pmFinishBtn');
+    var controlsEl = document.getElementById('pmControls');
+    var summaryEl = document.getElementById('pmSummary');
+    var summaryBodyEl = document.getElementById('pmSummaryBody');
+    var summaryOkBtn = document.getElementById('pmSummaryOkBtn');
     var csrf = document.querySelector('meta[name="csrf-token"]');
 
     var LABELS = {
@@ -220,6 +234,8 @@
         todayMinutes: @json(__('pomodoro.stats.today_minutes', ['n' => '__N__'])),
         todayCycles: @json(__('pomodoro.stats.today_cycles', ['n' => '__N__'])),
         streakDays: @json(__('pomodoro.stats.streak_days', ['n' => '__N__'])),
+        summaryBody: @json(__('pomodoro.summary.body', ['ciclos' => '__C__', 'min' => '__M__'])),
+        summaryEmpty: @json(__('pomodoro.summary.body_empty')),
     };
 
     var RADIUS = 100;
@@ -356,10 +372,12 @@
         running = true;
         startTimer();
         renderTime();
+        summaryEl.classList.add('d-none');
+        controlsEl.classList.remove('d-none');
         startBtn.classList.add('d-none');
         pauseBtn.classList.remove('d-none');
         skipBtn.classList.remove('d-none');
-        resetBtn.classList.remove('d-none');
+        finishBtn.classList.remove('d-none');
         pauseBtn.textContent = LABELS.pause;
     });
 
@@ -380,9 +398,7 @@
         tick();
     });
 
-    resetBtn.addEventListener('click', function () {
-        stopTimer();
-        running = false;
+    function backToIdle() {
         mode = 'idle';
         cycles = 0;
         sessaoUid = null;
@@ -391,11 +407,26 @@
         focusStepper.classList.remove('is-disabled');
         breakStepper.classList.remove('is-disabled');
         renderTime();
+        summaryEl.classList.add('d-none');
+        controlsEl.classList.remove('d-none');
         startBtn.classList.remove('d-none');
         pauseBtn.classList.add('d-none');
         skipBtn.classList.add('d-none');
-        resetBtn.classList.add('d-none');
+        finishBtn.classList.add('d-none');
+    }
+
+    finishBtn.addEventListener('click', function () {
+        stopTimer();
+        running = false;
+        var totalMin = cycles * focusMin;
+        summaryBodyEl.textContent = cycles > 0
+            ? LABELS.summaryBody.replace('__C__', cycles).replace('__M__', totalMin)
+            : LABELS.summaryEmpty;
+        controlsEl.classList.add('d-none');
+        summaryEl.classList.remove('d-none');
     });
+
+    summaryOkBtn.addEventListener('click', backToIdle);
 
     renderTime();
 })();
