@@ -27,10 +27,6 @@
                 <p class="demo-pick-section__lead">{{ __('demo.show.subtitle_objetivo') }}</p>
             </header>
 
-            @if(session('error'))
-                <div class="alert alert-danger demo-pick-section__alert" role="alert">{{ session('error') }}</div>
-            @endif
-
             <div class="demo-pick-grid">
                 @forelse($faculdades as $fac)
                     @include('demo.partials.objetivo-card', ['faculdade' => $fac])

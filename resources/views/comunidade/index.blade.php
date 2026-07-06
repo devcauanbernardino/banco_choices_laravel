@@ -64,6 +64,23 @@
 [data-theme="dark"] .cm-modal .modal-content { background: rgba(30,20,40,.92); border-color: rgba(255,255,255,.1); box-shadow: 0 25px 60px rgba(0,0,0,.55); }
 
 .cm-pagination { display: flex; justify-content: center; margin-top: 8px; }
+
+.cm-composer__toolbar { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+.cm-image-btn { display: inline-flex; align-items: center; gap: 6px; background: none; border: none; padding: 6px 4px; color: #8b1fb8; font-size: .82rem; font-weight: 600; cursor: pointer; }
+[data-theme="dark"] .cm-image-btn { color: #c77dfd; }
+.cm-image-btn:hover { text-decoration: underline; }
+
+.cm-preview-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.cm-preview-item { position: relative; width: 72px; height: 72px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(120,120,140,.2); }
+[data-theme="dark"] .cm-preview-item { border-color: rgba(255,255,255,.14); }
+.cm-preview-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cm-preview-item__remove { position: absolute; top: 2px; right: 2px; width: 20px; height: 20px; border-radius: 50%; border: none; background: rgba(0,0,0,.6); color: #fff; font-size: .7rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+
+.cm-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-bottom: 12px; }
+.cm-gallery a { display: block; border-radius: 12px; overflow: hidden; aspect-ratio: 1 / 1; border: 1px solid rgba(120,120,140,.15); }
+[data-theme="dark"] .cm-gallery a { border-color: rgba(255,255,255,.1); }
+.cm-gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .18s ease; }
+.cm-gallery a:hover img { transform: scale(1.04); }
 </style>
 @endpush
 
@@ -73,18 +90,25 @@
     <p>{{ __('comunidade.header.sub') }}</p>
 </div>
 
-@if (session('success'))
-    <div class="alert alert-success border-0 shadow-sm rounded-3 mb-4">{{ session('success') }}</div>
-@endif
-@if (session('error'))
-    <div class="alert alert-danger border-0 shadow-sm rounded-3 mb-4">{{ session('error') }}</div>
+@if ($errors->any())
+    <div class="alert alert-danger border-0 shadow-sm rounded-3 mb-3">
+        @foreach ($errors->all() as $error)
+            <div>{{ $error }}</div>
+        @endforeach
+    </div>
 @endif
 
 <div class="cm-card cm-composer">
-    <form method="POST" action="{{ route('comunidade.store') }}">
+    <form method="POST" action="{{ route('comunidade.store') }}" enctype="multipart/form-data" id="cmComposerForm">
         @csrf
         <textarea name="conteudo" class="form-control" rows="3" maxlength="2000" placeholder="{{ __('comunidade.form.placeholder') }}" required></textarea>
-        <div class="cm-submit-row">
+        <input type="file" name="imagens[]" id="cmComposerFile" accept="image/png,image/jpeg,image/webp,image/gif" multiple hidden>
+        <div class="cm-preview-grid" id="cmComposerPreview"></div>
+        <div class="cm-composer__toolbar">
+            <button type="button" class="cm-image-btn" id="cmComposerImageBtn">
+                <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">image</span>
+                {{ __('comunidade.form.add_image') }}
+            </button>
             <button type="submit" class="cm-btn">{{ __('comunidade.form.submit') }}</button>
         </div>
     </form>
@@ -109,6 +133,15 @@
                 </div>
             </div>
             <p class="cm-post__content">{{ $post->conteudo }}</p>
+            @if ($post->imagens->isNotEmpty())
+                <div class="cm-gallery">
+                    @foreach ($post->imagens as $imagem)
+                        <a href="{{ $imagem->url }}" target="_blank" rel="noopener">
+                            <img src="{{ $imagem->url }}" alt="" loading="lazy">
+                        </a>
+                    @endforeach
+                </div>
+            @endif
             <div class="cm-post__actions">
                 <button type="button" class="cm-action-link" data-bs-toggle="collapse" data-bs-target="#cmComments{{ $post->id }}">
                     <span class="material-symbols-outlined" aria-hidden="true">chat_bubble</span>
@@ -209,5 +242,64 @@ document.addEventListener('DOMContentLoaded', function () {
         if (action && form) form.setAttribute('action', action);
     });
 });
+
+(function () {
+    var MAX_IMAGES = {{ \App\Http\Controllers\ComunidadeController::MAX_IMAGENS_POR_POST }};
+    var fileInput = document.getElementById('cmComposerFile');
+    var imageBtn = document.getElementById('cmComposerImageBtn');
+    var preview = document.getElementById('cmComposerPreview');
+    if (!fileInput || !imageBtn || !preview) return;
+
+    imageBtn.addEventListener('click', function () { fileInput.click(); });
+
+    fileInput.addEventListener('change', function () {
+        if (fileInput.files.length > MAX_IMAGES) {
+            var dt = new DataTransfer();
+            Array.from(fileInput.files).slice(0, MAX_IMAGES).forEach(function (f) { dt.items.add(f); });
+            fileInput.files = dt.files;
+        }
+        renderPreview();
+    });
+
+    function renderPreview() {
+        preview.innerHTML = '';
+        Array.from(fileInput.files).forEach(function (file, idx) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var item = document.createElement('div');
+                item.className = 'cm-preview-item';
+
+                var img = document.createElement('img');
+                img.src = e.target.result;
+
+                var removeBtn = document.createElement('button');
+                removeBtn.type = 'button';
+                removeBtn.className = 'cm-preview-item__remove';
+                removeBtn.setAttribute('aria-label', 'x');
+                removeBtn.textContent = '×';
+                removeBtn.addEventListener('click', function () { removeFile(idx); });
+
+                item.appendChild(img);
+                item.appendChild(removeBtn);
+                preview.appendChild(item);
+            };
+            reader.readAsDataURL(file);
+        });
+    }
+
+    function removeFile(index) {
+        var dt = new DataTransfer();
+        Array.from(fileInput.files).forEach(function (file, i) {
+            if (i !== index) dt.items.add(file);
+        });
+        fileInput.files = dt.files;
+        renderPreview();
+    }
+
+    var form = document.getElementById('cmComposerForm');
+    if (form) {
+        form.addEventListener('submit', function () { imageBtn.disabled = true; });
+    }
+})();
 </script>
 @endpush

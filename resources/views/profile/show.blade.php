@@ -8,19 +8,6 @@
 @section('content')
     <div class="container-fluid bc-private-wrap--profile">
 
-        {{-- Flash messages --}}
-        @if (session('success'))
-            <div class="alert alert-success border-0 shadow-sm rounded-3 mb-4" role="alert">
-                {{ session('success') }}
-            </div>
-        @endif
-
-        @if (session('error'))
-            <div class="alert alert-danger border-0 shadow-sm rounded-3 mb-4" role="alert">
-                {{ session('error') }}
-            </div>
-        @endif
-
         @if ($errors->any())
             <div class="alert alert-danger border-0 shadow-sm rounded-3 mb-4" role="alert">
                 @foreach ($errors->all() as $error)

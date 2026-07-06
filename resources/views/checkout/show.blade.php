@@ -62,10 +62,6 @@
                 <p>{{ __('signup.checkout.mp_info') }}</p>
             </div>
 
-            @if (session('error'))
-                <div class="alert alert-warning mb-3">{{ session('error') }}</div>
-            @endif
-
             @if ($errors->any())
                 <div class="alert alert-danger mb-3">
                     @foreach ($errors->all() as $error)

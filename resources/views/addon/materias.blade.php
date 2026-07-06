@@ -17,10 +17,6 @@
             <p class="bc-mock-addon__lead">{{ __('addon.intro') }}</p>
         </header>
 
-        @if (session('error'))
-            <div class="alert alert-warning border-0 rounded-3 shadow-sm mb-4">{{ session('error') }}</div>
-        @endif
-
         @if (!$temMateriasCompraveis)
             <div class="bc-card overflow-hidden">
                 <div class="bc-empty-state">

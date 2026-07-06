@@ -101,10 +101,6 @@ a.dk-new-btn:hover { text-decoration: none; }
     </div>
 </div>
 
-@if (session('error'))
-    <div class="alert alert-danger">{{ session('error') }}</div>
-@endif
-
 @if ($decks->isEmpty())
     <div class="dk-empty">
         <span class="material-symbols-outlined" aria-hidden="true">workspaces</span>

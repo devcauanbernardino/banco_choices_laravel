@@ -32,10 +32,6 @@
 @endphp
 <section class="demo-section">
     <div class="lp-container">
-        @if(session('error'))
-            <div class="alert alert-warning mb-4" role="alert">{{ session('error') }}</div>
-        @endif
-
         <div class="demo-result">
             <div class="demo-result__hero">
                 @if($limiteMateria)

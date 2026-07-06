@@ -16,10 +16,6 @@
         </a>
     </p>
 
-    @if (session('error'))
-        <div class="alert alert-warning">{{ session('error') }}</div>
-    @endif
-
     <div class="bc-page-header mb-4">
         <div>
             <h5 class="mb-0 fw-bold">{{ __('addon.page_title_checkout') }}</h5>

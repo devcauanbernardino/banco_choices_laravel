@@ -13,10 +13,6 @@
 
 @section('content')
 <div class="container py-5" style="max-width: 640px;">
-    @if (session('error'))
-        <div class="alert alert-danger" role="alert">{{ session('error') }}</div>
-    @endif
-
     <div class="text-center mb-4">
         <span class="material-symbols-outlined text-primary mb-2" style="font-size: 3rem;">lock_clock</span>
         <h1 class="h3 fw-bold">{{ __('demo.paywall.heading') }}</h1>

@@ -24,4 +24,9 @@ class ComunidadePost extends Model
     {
         return $this->hasMany(ComunidadeComentario::class, 'post_id')->orderBy('created_at');
     }
+
+    public function imagens(): HasMany
+    {
+        return $this->hasMany(ComunidadePostImagem::class, 'post_id')->orderBy('ordem');
+    }
 }

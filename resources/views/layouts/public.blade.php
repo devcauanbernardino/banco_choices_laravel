@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/toast.css') }}?v={{ @filemtime(public_path('assets/css/toast.css')) }}">
 
     @stack('styles')
 </head>
@@ -52,8 +53,13 @@
         @yield('public_offcanvas')
     @endif
 
+    @unless (request()->routeIs('login'))
+        @include('partials.flash-toast')
+    @endunless
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('assets/js/public-scroll-lock.js') }}?v={{ filemtime(public_path('assets/js/public-scroll-lock.js')) }}"></script>
+    <script src="{{ asset('assets/js/toast.js') }}?v={{ @filemtime(public_path('assets/js/toast.js')) }}"></script>
     @stack('scripts')
 </body>
 </html>

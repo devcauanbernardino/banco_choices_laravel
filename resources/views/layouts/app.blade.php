@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/private-app.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/app-shell-painel.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/toast.css') }}?v={{ @filemtime(public_path('assets/css/toast.css')) }}">
 
     {{-- Theme + sidebar state (must run before first paint; sidebar key must match KEY in public/assets/js/sidebar-collapse.js) --}}
     <script>
@@ -104,6 +105,8 @@
     {{-- Modais ao nível do body: evita backdrop sobrepor o diálogo (stacking vs .app-main / sidebar). --}}
     @stack('modals')
 
+    @include('partials.flash-toast')
+
     @auth
         @include('partials.ai-chat-widget')
     @endauth
@@ -114,6 +117,7 @@
     {{-- Theme & sidebar scripts --}}
     <script src="{{ asset('assets/js/theme.js') }}"></script>
     <script src="{{ asset('assets/js/sidebar-collapse.js') }}"></script>
+    <script src="{{ asset('assets/js/toast.js') }}?v={{ @filemtime(public_path('assets/js/toast.js')) }}"></script>
 
     @stack('scripts')
 </body>

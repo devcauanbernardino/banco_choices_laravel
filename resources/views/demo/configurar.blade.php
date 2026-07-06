@@ -40,10 +40,6 @@
                 @endif
             </div>
 
-            @if(session('error'))
-                <div class="alert alert-danger demo-funnel__alert" role="alert">{{ session('error') }}</div>
-            @endif
-
             <article class="demo-filter-card">
                 <header class="demo-filter-card__head">
                     <div>

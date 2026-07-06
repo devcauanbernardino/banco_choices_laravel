@@ -5,16 +5,20 @@ namespace App\Http\Controllers;
 use App\Models\ComunidadeComentario;
 use App\Models\ComunidadeDenuncia;
 use App\Models\ComunidadePost;
+use App\Models\ComunidadePostImagem;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class ComunidadeController extends Controller
 {
+    public const MAX_IMAGENS_POR_POST = 6;
+
     public function index()
     {
         $posts = ComunidadePost::query()
-            ->with(['usuario:id,nome', 'comentarios.usuario:id,nome'])
+            ->with(['usuario:id,nome', 'imagens', 'comentarios.usuario:id,nome'])
             ->withCount('comentarios')
             ->orderByDesc('created_at')
             ->paginate(15);
@@ -26,15 +30,26 @@ class ComunidadeController extends Controller
     {
         $data = $request->validate([
             'conteudo' => 'required|string|max:2000',
+            'imagens' => 'nullable|array|max:'.self::MAX_IMAGENS_POR_POST,
+            'imagens.*' => 'image|mimes:jpg,jpeg,png,webp,gif|max:4096',
         ]);
 
         /** @var \App\Models\User $user */
         $user = Auth::user();
 
-        ComunidadePost::create([
+        $post = ComunidadePost::create([
             'usuario_id' => $user->id,
             'conteudo' => $data['conteudo'],
         ]);
+
+        foreach ($request->file('imagens', []) as $ordem => $arquivo) {
+            $caminho = $arquivo->store('comunidade', 'public');
+            ComunidadePostImagem::create([
+                'post_id' => $post->id,
+                'caminho' => $caminho,
+                'ordem' => $ordem,
+            ]);
+        }
 
         return redirect()->route('comunidade.index')->with('success', __('comunidade.flash.post_created'));
     }
@@ -42,6 +57,10 @@ class ComunidadeController extends Controller
     public function destroy(ComunidadePost $post): RedirectResponse
     {
         $this->ensureOwner($post->usuario_id);
+
+        foreach ($post->imagens as $imagem) {
+            Storage::disk('public')->delete($imagem->caminho);
+        }
         $post->delete();
 
         return redirect()->route('comunidade.index')->with('success', __('comunidade.flash.post_deleted'));
