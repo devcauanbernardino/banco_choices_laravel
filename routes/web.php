@@ -10,6 +10,7 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DeckController;
+use App\Http\Controllers\PomodoroController;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\FaviconController;
 use App\Http\Controllers\FlashcardController;
@@ -148,6 +149,11 @@ Route::middleware(['auth', 'force.password.change', 'force.mascote.choice'])->gr
     Route::get('/decks/descobrir', [DeckController::class, 'descobrir'])->name('decks.descobrir');
     Route::post('/decks/revisar/iniciar', [DeckController::class, 'create'])->name('decks.revisar.iniciar');
     Route::post('/decks/revisar', [DeckController::class, 'process'])->name('decks.revisar.process');
+
+    Route::get('/pomodoro', [PomodoroController::class, 'index'])->name('pomodoro.index');
+    Route::post('/pomodoro/ciclo', [PomodoroController::class, 'store'])
+        ->middleware('throttle:30,1')
+        ->name('pomodoro.ciclo.store');
     Route::get('/decks/{deck}', [DeckController::class, 'show'])->name('decks.show');
     Route::put('/decks/{deck}', [DeckController::class, 'update'])->name('decks.update');
     Route::delete('/decks/{deck}', [DeckController::class, 'destroy'])->name('decks.destroy');
