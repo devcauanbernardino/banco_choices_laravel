@@ -106,7 +106,7 @@
 .cm-post__time { color: var(--app-muted); font-size: .74rem; margin: 0; }
 .cm-post__content { color: var(--app-text); font-size: .88rem; line-height: 1.5; white-space: pre-line; margin-bottom: 10px; }
 
-.cm-post__actions { display: flex; border-top: 1px solid rgba(120,120,140,.12); margin-top: 2px; }
+.cm-post__actions { display: flex; border-top: 1px solid rgba(120,120,140,.12); margin-top: 10px; }
 [data-theme="dark"] .cm-post__actions { border-top-color: rgba(255,255,255,.08); }
 .cm-action-slot { flex: 1; display: flex; }
 .cm-action-slot + .cm-action-slot { border-left: 1px solid rgba(120,120,140,.12); }
