@@ -73,8 +73,6 @@
 [data-theme="dark"] .dk-modal .bc-styled-select.bc-styled-select__toggle { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.14) !important; color: var(--app-text) !important; }
 .dk-modal .bc-styled-select.bc-styled-select__toggle:focus,
 .dk-modal .form-control:focus { border-color: #8b1fb8 !important; box-shadow: 0 0 0 .2rem rgba(139,31,184,.2); }
-.dk-modal .bc-styled-select__item { background: #fff; color: #15131a; }
-[data-theme="dark"] .dk-modal .bc-styled-select__item { background: #241a30; color: #f1eaf7; }
 
 a.dk-new-btn { text-decoration: none; }
 a.dk-new-btn:hover { text-decoration: none; }

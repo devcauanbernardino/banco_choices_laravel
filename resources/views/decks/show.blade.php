@@ -62,8 +62,6 @@
 [data-theme="dark"] .modal .bc-styled-select.bc-styled-select__toggle { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.14) !important; color: var(--app-text) !important; }
 .modal .bc-styled-select.bc-styled-select__toggle:focus,
 .modal .form-control:focus { border-color: #8b1fb8 !important; box-shadow: 0 0 0 .2rem rgba(139,31,184,.2); }
-.modal .bc-styled-select__item { background: #fff; color: #15131a; }
-[data-theme="dark"] .modal .bc-styled-select__item { background: #241a30; color: #f1eaf7; }
 .modal .form-check-input:checked { background-color: #8b1fb8; border-color: #8b1fb8; }
 .dk-toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 16px; }
 .dk-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: .76rem; font-weight: 700; white-space: nowrap; background: rgba(139,31,184,.14); color: #8b1fb8; }
