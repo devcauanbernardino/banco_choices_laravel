@@ -10,6 +10,10 @@
 .dk-header h1 { font-size: clamp(1.4rem,2.2vw,1.7rem); font-weight: 700; color: var(--app-text); margin-bottom: 6px; }
 .dk-header p { color: var(--app-muted); font-size: .9rem; margin: 0; }
 .dk-new-btn { padding: 10px 18px; border-radius: 10px; border: none; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; font-size: .86rem; cursor: pointer; box-shadow: 0 6px 18px rgba(106,3,146,.3); white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.dk-new-btn--ghost { background: rgba(139,31,184,.1); color: #6a0392; box-shadow: none; border: 1px solid rgba(139,31,184,.25); }
+.dk-new-btn--ghost:hover { background: rgba(139,31,184,.16); }
+[data-theme="dark"] .dk-new-btn--ghost { background: rgba(199,125,253,.14); color: #e0bbfd; border-color: rgba(199,125,253,.3); }
+[data-theme="dark"] .dk-new-btn--ghost:hover { background: rgba(199,125,253,.22); }
 
 .dk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 18px; }
 
@@ -83,11 +87,11 @@ a.dk-new-btn:hover { text-decoration: none; }
         <p>{{ __('decks.header.sub') }}</p>
     </div>
     <div class="d-flex gap-2 flex-wrap">
-        <a href="{{ route('decks.descobrir') }}" class="dk-new-btn" style="background:rgba(139,31,184,.12); color:#8b1fb8; box-shadow:none;">
+        <a href="{{ route('decks.descobrir') }}" class="dk-new-btn dk-new-btn--ghost">
             <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">explore</span>
             {{ __('decks.form.discover') }}
         </a>
-        <button type="button" class="dk-new-btn" style="background:rgba(139,31,184,.12); color:#8b1fb8; box-shadow:none;" data-bs-toggle="modal" data-bs-target="#dkImportModal">
+        <button type="button" class="dk-new-btn dk-new-btn--ghost" data-bs-toggle="modal" data-bs-target="#dkImportModal">
             <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">upload_file</span>
             {{ __('decks.form.import_anki') }}
         </button>

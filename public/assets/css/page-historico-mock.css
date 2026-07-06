@@ -281,6 +281,11 @@
   font-size: 0.875rem;
 }
 
+[data-theme="dark"] .bc-mock-historico__subject-pill {
+  background: rgba(199, 125, 253, 0.16);
+  color: #e0bbfd;
+}
+
 .bc-mock-historico__subject-pill .material-symbols-outlined {
   font-size: 1.1rem;
   opacity: 0.85;
