@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\ComunidadeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DeckController;
 use App\Http\Controllers\PomodoroController;
@@ -167,6 +168,14 @@ Route::middleware(['auth', 'force.password.change', 'force.mascote.choice'])->gr
     Route::get('/simulados', [HistoryController::class, 'index'])->name('history');
     Route::get('/estatisticas', [StatsController::class, 'index'])->name('stats');
     Route::get('/estatisticas/relatorio.pdf', [StatsController::class, 'exportPdf'])->name('stats.export-pdf');
+
+    Route::get('/comunidade', [ComunidadeController::class, 'index'])->name('comunidade.index');
+    Route::post('/comunidade', [ComunidadeController::class, 'store'])->middleware('throttle:20,1')->name('comunidade.store');
+    Route::delete('/comunidade/{post}', [ComunidadeController::class, 'destroy'])->name('comunidade.destroy');
+    Route::post('/comunidade/{post}/comentarios', [ComunidadeController::class, 'comentar'])->middleware('throttle:30,1')->name('comunidade.comentar');
+    Route::delete('/comunidade/{post}/comentarios/{comentario}', [ComunidadeController::class, 'destroyComentario'])->name('comunidade.comentarios.destroy');
+    Route::post('/comunidade/{post}/denunciar', [ComunidadeController::class, 'denunciarPost'])->middleware('throttle:20,1')->name('comunidade.denunciar');
+    Route::post('/comunidade/{post}/comentarios/{comentario}/denunciar', [ComunidadeController::class, 'denunciarComentario'])->middleware('throttle:20,1')->name('comunidade.comentarios.denunciar');
 
     Route::get('/perfil', [ProfileController::class, 'show'])->name('profile.show');
     Route::post('/perfil', [ProfileController::class, 'update'])->name('profile.update');
