@@ -20,8 +20,9 @@ class PomodoroController extends Controller
         $streak = $this->calcularStreakDias((int) $user->id);
         $porMateria = $this->totalPorMateria((int) $user->id);
         $sessoesRecentes = $this->sessoesRecentes((int) $user->id);
+        $ultimosDias = $this->minutosUltimosDias((int) $user->id);
 
-        return view('pomodoro.index', compact('materias', 'hoje', 'streak', 'porMateria', 'sessoesRecentes'));
+        return view('pomodoro.index', compact('materias', 'hoje', 'streak', 'porMateria', 'sessoesRecentes', 'ultimosDias'));
     }
 
     public function store(Request $request): JsonResponse
@@ -51,6 +52,9 @@ class PomodoroController extends Controller
         return response()->json([
             'hoje' => $this->statsHoje((int) $user->id),
             'streak' => $this->calcularStreakDias((int) $user->id),
+            'porMateria' => $this->totalPorMateria((int) $user->id),
+            'sessoesRecentes' => $this->sessoesRecentes((int) $user->id),
+            'ultimosDias' => $this->minutosUltimosDias((int) $user->id),
         ]);
     }
 
@@ -124,6 +128,32 @@ class PomodoroController extends Controller
                 'total_ciclos' => (int) $r->total_ciclos,
             ])
             ->all();
+    }
+
+    /**
+     * @return array{labels: list<string>, minutos: list<int>}
+     */
+    private function minutosUltimosDias(int $userId, int $dias = 14): array
+    {
+        $inicio = now()->copy()->subDays($dias - 1)->startOfDay();
+
+        $porData = DB::table('pomodoro_ciclos')
+            ->where('usuario_id', $userId)
+            ->where('concluido_em', '>=', $inicio)
+            ->selectRaw('DATE(concluido_em) as data, SUM(duracao_minutos) as minutos')
+            ->groupBy('data')
+            ->pluck('minutos', 'data');
+
+        $labels = [];
+        $minutos = [];
+        for ($i = $dias - 1; $i >= 0; $i--) {
+            $dia = now()->copy()->subDays($i);
+            $chave = $dia->toDateString();
+            $labels[] = $dia->translatedFormat('d/m');
+            $minutos[] = (int) ($porData[$chave] ?? 0);
+        }
+
+        return ['labels' => $labels, 'minutos' => $minutos];
     }
 
     /**

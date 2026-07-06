@@ -83,6 +83,7 @@
 .pm-session-row:last-child { border-bottom: none; }
 .pm-session-row__meta { color: var(--app-muted); font-size: .76rem; }
 .pm-empty { text-align: center; color: var(--app-muted); font-size: .85rem; padding: 20px 0; }
+.pm-chart-wrap { position: relative; height: 200px; }
 </style>
 @endpush
 
@@ -166,31 +167,42 @@
             </div>
 
             <div class="pm-card mb-3">
+                <h2 class="pm-section-title">{{ __('pomodoro.stats.chart_title') }}</h2>
+                <div class="pm-chart-wrap">
+                    <canvas id="pmChart"></canvas>
+                </div>
+            </div>
+
+            <div class="pm-card mb-3">
                 <h2 class="pm-section-title">{{ __('pomodoro.stats.by_subject_title') }}</h2>
-                @if (empty($porMateria))
-                    <p class="pm-empty">{{ __('pomodoro.stats.no_data') }}</p>
-                @else
-                    @foreach ($porMateria as $pm)
-                        <div class="pm-subject-row">
-                            <span class="pm-subject-row__name">{{ $pm['materia_nome'] }}</span>
-                            <span class="pm-subject-row__time">{{ __('pomodoro.stats.today_minutes', ['n' => $pm['total_minutos']]) }}</span>
-                        </div>
-                    @endforeach
-                @endif
+                <div id="pmPorMateria">
+                    @if (empty($porMateria))
+                        <p class="pm-empty">{{ __('pomodoro.stats.no_data') }}</p>
+                    @else
+                        @foreach ($porMateria as $pm)
+                            <div class="pm-subject-row">
+                                <span class="pm-subject-row__name">{{ $pm['materia_nome'] }}</span>
+                                <span class="pm-subject-row__time">{{ __('pomodoro.stats.today_minutes', ['n' => $pm['total_minutos']]) }}</span>
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
             </div>
 
             <div class="pm-card">
                 <h2 class="pm-section-title">{{ __('pomodoro.stats.recent_title') }}</h2>
-                @if (empty($sessoesRecentes))
-                    <p class="pm-empty">{{ __('pomodoro.stats.no_data') }}</p>
-                @else
-                    @foreach ($sessoesRecentes as $s)
-                        <div class="pm-session-row">
-                            <span>{{ __('pomodoro.stats.session_summary', ['materia' => $s['materia_nome'], 'ciclos' => $s['total_ciclos'], 'min' => $s['total_minutos']]) }}</span>
-                            <span class="pm-session-row__meta">{{ \Illuminate\Support\Carbon::parse($s['data'])->diffForHumans() }}</span>
-                        </div>
-                    @endforeach
-                @endif
+                <div id="pmSessoesRecentes">
+                    @if (empty($sessoesRecentes))
+                        <p class="pm-empty">{{ __('pomodoro.stats.no_data') }}</p>
+                    @else
+                        @foreach ($sessoesRecentes as $s)
+                            <div class="pm-session-row">
+                                <span>{{ __('pomodoro.stats.session_summary', ['materia' => $s['materia_nome'], 'ciclos' => $s['total_ciclos'], 'min' => $s['total_minutos']]) }}</span>
+                                <span class="pm-session-row__meta">{{ \Illuminate\Support\Carbon::parse($s['data'])->diffForHumans() }}</span>
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
             </div>
         </div>
     </div>
@@ -199,10 +211,41 @@
 
 @push('scripts')
 <script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 (function () {
     var materiaSelect = document.getElementById('pmMateria');
     if (!materiaSelect) return;
+
+    var pmChartInstance = null;
+    var chartEl = document.getElementById('pmChart');
+    if (chartEl && window.Chart) {
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        var tickColor = isDark ? '#9ca3af' : '#6b7280';
+        var gridColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+        pmChartInstance = new Chart(chartEl.getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: @json($ultimosDias['labels'] ?? []),
+                datasets: [{
+                    label: @json(__('pomodoro.stats.chart_title')),
+                    data: @json($ultimosDias['minutos'] ?? []),
+                    backgroundColor: '#8b1fb8',
+                    borderRadius: 4,
+                    maxBarThickness: 22
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { color: tickColor, precision: 0 }, grid: isDark ? { color: gridColor } : { display: false } },
+                    x: { ticks: { color: tickColor }, grid: { display: false } }
+                }
+            }
+        });
+    }
 
     var errorEl = document.getElementById('pmError');
     var focusVal = document.getElementById('pmFocusVal');
@@ -236,6 +279,9 @@
         streakDays: @json(__('pomodoro.stats.streak_days', ['n' => '__N__'])),
         summaryBody: @json(__('pomodoro.summary.body', ['ciclos' => '__C__', 'min' => '__M__'])),
         summaryEmpty: @json(__('pomodoro.summary.body_empty')),
+        noData: @json(__('pomodoro.stats.no_data')),
+        justNow: @json(__('pomodoro.stats.just_now')),
+        sessionSummary: {!! json_encode(__('pomodoro.stats.session_summary', ['materia' => '__MATERIA__', 'ciclos' => '__CICLOS__', 'min' => '__MIN__'])) !!},
     };
 
     var RADIUS = 100;
@@ -307,6 +353,48 @@
         };
     }
 
+    function escapeHtml(str) {
+        var d = document.createElement('div');
+        d.textContent = str;
+        return d.innerHTML;
+    }
+
+    function renderPorMateria(lista) {
+        var el = document.getElementById('pmPorMateria');
+        if (!el) return;
+        if (!lista || !lista.length) {
+            el.innerHTML = '<p class="pm-empty">' + escapeHtml(LABELS.noData) + '</p>';
+            return;
+        }
+        el.innerHTML = lista.map(function (pm) {
+            return '<div class="pm-subject-row"><span class="pm-subject-row__name">' + escapeHtml(pm.materia_nome) +
+                '</span><span class="pm-subject-row__time">' + LABELS.todayMinutes.replace('__N__', pm.total_minutos) + '</span></div>';
+        }).join('');
+    }
+
+    function renderSessoesRecentes(lista) {
+        var el = document.getElementById('pmSessoesRecentes');
+        if (!el) return;
+        if (!lista || !lista.length) {
+            el.innerHTML = '<p class="pm-empty">' + escapeHtml(LABELS.noData) + '</p>';
+            return;
+        }
+        el.innerHTML = lista.map(function (s) {
+            var resumo = LABELS.sessionSummary
+                .replace('__MATERIA__', escapeHtml(s.materia_nome))
+                .replace('__CICLOS__', s.total_ciclos)
+                .replace('__MIN__', s.total_minutos);
+            return '<div class="pm-session-row"><span>' + resumo + '</span><span class="pm-session-row__meta">' + escapeHtml(LABELS.justNow) + '</span></div>';
+        }).join('');
+    }
+
+    function updateChart(ultimosDias) {
+        if (!pmChartInstance || !ultimosDias) return;
+        pmChartInstance.data.labels = ultimosDias.labels;
+        pmChartInstance.data.datasets[0].data = ultimosDias.minutos;
+        pmChartInstance.update();
+    }
+
     function logCycle() {
         fetch('{{ route('pomodoro.ciclo.store') }}', {
             method: 'POST',
@@ -324,6 +412,9 @@
             if (typeof data.streak === 'number') {
                 document.getElementById('pmStreak').textContent = LABELS.streakDays.replace('__N__', data.streak);
             }
+            renderPorMateria(data.porMateria);
+            renderSessoesRecentes(data.sessoesRecentes);
+            updateChart(data.ultimosDias);
         }).catch(function () { /* silencioso: nao interrompe o timer local */ });
     }
 
