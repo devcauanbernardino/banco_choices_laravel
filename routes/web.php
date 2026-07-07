@@ -171,9 +171,13 @@ Route::middleware(['auth', 'force.password.change', 'force.mascote.choice'])->gr
 
     Route::get('/comunidade', [ComunidadeController::class, 'index'])->name('comunidade.index');
     Route::post('/comunidade', [ComunidadeController::class, 'store'])->middleware('throttle:20,1')->name('comunidade.store');
+    Route::put('/comunidade/{post}', [ComunidadeController::class, 'update'])->middleware('throttle:20,1')->name('comunidade.update');
     Route::delete('/comunidade/{post}', [ComunidadeController::class, 'destroy'])->name('comunidade.destroy');
+    Route::post('/comunidade/{post}/curtir', [ComunidadeController::class, 'toggleCurtidaPost'])->middleware('throttle:60,1')->name('comunidade.curtir');
     Route::post('/comunidade/{post}/comentarios', [ComunidadeController::class, 'comentar'])->middleware('throttle:30,1')->name('comunidade.comentar');
+    Route::put('/comunidade/{post}/comentarios/{comentario}', [ComunidadeController::class, 'updateComentario'])->middleware('throttle:30,1')->name('comunidade.comentarios.update');
     Route::delete('/comunidade/{post}/comentarios/{comentario}', [ComunidadeController::class, 'destroyComentario'])->name('comunidade.comentarios.destroy');
+    Route::post('/comunidade/{post}/comentarios/{comentario}/curtir', [ComunidadeController::class, 'toggleCurtidaComentario'])->middleware('throttle:60,1')->name('comunidade.comentarios.curtir');
     Route::post('/comunidade/{post}/denunciar', [ComunidadeController::class, 'denunciarPost'])->middleware('throttle:20,1')->name('comunidade.denunciar');
     Route::post('/comunidade/{post}/comentarios/{comentario}/denunciar', [ComunidadeController::class, 'denunciarComentario'])->middleware('throttle:20,1')->name('comunidade.comentarios.denunciar');
 

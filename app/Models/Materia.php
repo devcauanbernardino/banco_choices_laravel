@@ -11,7 +11,24 @@ class Materia extends Model
 {
     public $timestamps = false;
 
-    protected $fillable = ['nome', 'slug', 'agrupamento_id', 'ordem'];
+    protected $fillable = ['nome', 'cor', 'slug', 'agrupamento_id', 'ordem'];
+
+    /**
+     * Paleta usada quando a matéria não tem uma cor definida manualmente.
+     * Escolhida por hash do id para ser estável entre requisições.
+     */
+    private const PALETA_PADRAO = [
+        '#2F4B8F', '#1F7A6C', '#B5541A', '#6B4C9A', '#B5305A', '#5C6B3A', '#2E7D8A', '#8A4A2E',
+    ];
+
+    public function corExibicao(): string
+    {
+        if (!empty($this->cor)) {
+            return $this->cor;
+        }
+
+        return self::PALETA_PADRAO[$this->id % count(self::PALETA_PADRAO)];
+    }
 
     protected function casts(): array
     {
@@ -40,5 +57,10 @@ class Materia extends Model
     public function questoes(): HasMany
     {
         return $this->hasMany(Questao::class);
+    }
+
+    public function posts(): HasMany
+    {
+        return $this->hasMany(ComunidadePost::class, 'materia_id');
     }
 }
