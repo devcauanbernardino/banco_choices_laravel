@@ -98,7 +98,7 @@
 .cm-btn--ghost:hover { background: rgba(139,31,184,.16); }
 [data-theme="dark"] .cm-btn--ghost { background: rgba(199,125,253,.14); color: #e0bbfd; border-color: rgba(199,125,253,.3); }
 
-.cm-avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .88rem; }
+.cm-avatar { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .8rem; }
 
 .cm-post {
     border-radius: 16px;
@@ -107,17 +107,17 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border: 1px solid rgba(255,255,255,.5);
     box-shadow: 0 8px 28px rgba(31,10,60,.08);
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     overflow: hidden;
 }
 [data-theme="dark"] .cm-post { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 28px rgba(0,0,0,.35); }
-.cm-post__body { padding: 14px 16px; }
+.cm-post__body { padding: 10px 14px; }
 
-.cm-post__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
-.cm-post__author { display: flex; align-items: center; gap: 10px; }
-.cm-post__name { font-weight: 700; color: var(--app-text); font-size: .88rem; margin: 0; }
-.cm-post__time { color: var(--app-muted); font-size: .74rem; margin: 0; }
-.cm-post__content { color: var(--app-text); font-size: .88rem; line-height: 1.5; white-space: pre-line; margin-bottom: 10px; }
+.cm-post__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.cm-post__author { display: flex; align-items: center; gap: 8px; }
+.cm-post__name { font-weight: 700; color: var(--app-text); font-size: .84rem; margin: 0; }
+.cm-post__time { color: var(--app-muted); font-size: .72rem; margin: 0; }
+.cm-post__content { color: var(--app-text); font-size: .85rem; line-height: 1.45; white-space: pre-line; margin-bottom: 8px; }
 
 .cm-post__actions {
     display: flex;
