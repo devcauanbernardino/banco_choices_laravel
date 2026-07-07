@@ -173,6 +173,26 @@
 .cm-modal .modal-content { border-radius: 22px; border: 1px solid rgba(255,255,255,.5); background: rgba(255,255,255,.9); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); box-shadow: 0 25px 60px rgba(31,10,60,.18); }
 [data-theme="dark"] .cm-modal .modal-content { background: rgba(30,20,40,.92); border-color: rgba(255,255,255,.1); box-shadow: 0 25px 60px rgba(0,0,0,.55); }
 
+.cm-image-modal .modal-dialog { display: flex; align-items: center; justify-content: center; height: 100%; max-width: min(90vw, 900px); }
+.cm-image-modal .modal-content { background: none; border: none; box-shadow: none; position: relative; }
+.cm-image-modal img { width: 100%; max-height: 85vh; object-fit: contain; border-radius: 12px; display: block; }
+.cm-image-modal__close {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.cm-image-modal__close:hover { background: rgba(0,0,0,.7); }
+
 .cm-pagination { display: flex; justify-content: center; margin-top: 8px; }
 
 .cm-composer__toolbar { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
@@ -198,11 +218,11 @@
     border: 1px solid rgba(120,120,140,.15);
 }
 [data-theme="dark"] .cm-gallery { border-color: rgba(255,255,255,.1); }
-.cm-gallery a { display: block; overflow: hidden; position: relative; }
+.cm-gallery button { display: block; overflow: hidden; position: relative; width: 100%; padding: 0; border: none; background: none; cursor: pointer; }
 .cm-gallery img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .18s ease; }
-.cm-gallery a:hover img { transform: scale(1.03); }
+.cm-gallery button:hover img { transform: scale(1.03); }
 
-.cm-gallery[data-count="1"] { grid-template-columns: 1fr; aspect-ratio: 3 / 1; }
+.cm-gallery[data-count="1"] { grid-template-columns: 1fr; aspect-ratio: 3 / 1; max-width: 320px; }
 
 .cm-gallery[data-count="2"] { grid-template-columns: 1fr 1fr; aspect-ratio: 16 / 8; }
 
@@ -288,11 +308,11 @@
                             @endphp
                             <div class="cm-gallery" data-count="{{ $imagensVisiveis->count() }}">
                                 @foreach ($imagensVisiveis as $i => $imagem)
-                                    <a href="{{ $imagem->url }}" target="_blank" rel="noopener"
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#cmImageModal" data-image-url="{{ $imagem->url }}"
                                        class="{{ $i === 3 && $imagensExtras > 0 ? 'cm-gallery__more' : '' }}"
                                        @if ($i === 3 && $imagensExtras > 0) data-extra="+{{ $imagensExtras }}" @endif>
                                         <img src="{{ $imagem->url }}" alt="" loading="lazy">
-                                    </a>
+                                    </button>
                                 @endforeach
                             </div>
                         @endif
@@ -419,6 +439,17 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade cm-image-modal" id="cmImageModal" tabindex="-1" aria-labelledby="cmImageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <button type="button" class="cm-image-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <span class="material-symbols-outlined" aria-hidden="true">close</span>
+            </button>
+            <img src="" alt="" id="cmImageModalImg">
+        </div>
+    </div>
+</div>
 @endpush
 
 @push('scripts')
@@ -431,6 +462,20 @@ document.addEventListener('DOMContentLoaded', function () {
         var action = trigger ? trigger.getAttribute('data-cm-report-action') : null;
         var form = document.getElementById('cmReportForm');
         if (action && form) form.setAttribute('action', action);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var imageModal = document.getElementById('cmImageModal');
+    if (!imageModal) return;
+    var img = document.getElementById('cmImageModalImg');
+    imageModal.addEventListener('show.bs.modal', function (ev) {
+        var trigger = ev.relatedTarget;
+        var url = trigger ? trigger.getAttribute('data-image-url') : null;
+        if (url && img) img.src = url;
+    });
+    imageModal.addEventListener('hidden.bs.modal', function () {
+        if (img) img.src = '';
     });
 });
 
