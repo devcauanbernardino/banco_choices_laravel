@@ -100,6 +100,12 @@
 
 .cm-avatar { width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .75rem; }
 
+.cm-feed .cm-card,
+.cm-post,
+.cm-empty {
+    max-width: 600px;
+}
+
 .cm-post {
     border-radius: 14px;
     background: rgba(255,255,255,.55);
