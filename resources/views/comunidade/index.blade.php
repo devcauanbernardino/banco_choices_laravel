@@ -498,11 +498,11 @@
                     <div class="cm-post__actions">
                         @auth
                             <div class="cm-action-slot">
-                                <form method="POST" action="{{ route('comunidade.curtir', $post) }}">
+                                <form method="POST" action="{{ route('comunidade.curtir', $post) }}" class="cm-like-form">
                                     @csrf
-                                    <button type="submit" class="cm-action-btn @if ($postCurtido) cm-action-btn--liked @endif" aria-label="{{ __('comunidade.post.likes_aria') }}">
+                                    <button type="submit" class="cm-action-btn @if ($postCurtido) cm-action-btn--liked @endif" aria-label="{{ __('comunidade.post.likes_aria') }}" data-liked-class="cm-action-btn--liked">
                                         <span class="material-symbols-outlined" aria-hidden="true">{{ $postCurtido ? 'favorite' : 'favorite_border' }}</span>
-                                        {{ $post->curtidas_count }}
+                                        <span class="cm-like-count">{{ $post->curtidas_count }}</span>
                                     </button>
                                 </form>
                             </div>
@@ -657,6 +657,35 @@
 
 @push('scripts')
 <script>
+document.addEventListener('submit', function (e) {
+    var form = e.target.closest('.cm-like-form');
+    if (!form) return;
+    e.preventDefault();
+
+    var btn = form.querySelector('button[type="submit"]');
+    if (!btn || btn.disabled) return;
+    btn.disabled = true;
+
+    var token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    fetch(form.getAttribute('action'), {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'X-CSRF-TOKEN': token,
+        },
+    })
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+            var icon = btn.querySelector('.material-symbols-outlined');
+            var countEl = btn.querySelector('.cm-like-count');
+            var likedClass = btn.getAttribute('data-liked-class');
+            if (likedClass) btn.classList.toggle(likedClass, data.curtido);
+            if (icon) icon.textContent = data.curtido ? 'favorite' : 'favorite_border';
+            if (countEl) countEl.textContent = data.count;
+        })
+        .finally(function () { btn.disabled = false; });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     var modal = document.getElementById('cmReportModal');
     if (!modal) return;

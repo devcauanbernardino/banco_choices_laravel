@@ -12,11 +12,11 @@
         <div class="cm-comment__actions">
             <span class="cm-post__time">{{ $comentario->created_at->diffForHumans() }}</span>
             @auth
-                <form method="POST" action="{{ route('comunidade.comentarios.curtir', [$post, $comentario]) }}" class="cm-inline-form">
+                <form method="POST" action="{{ route('comunidade.comentarios.curtir', [$post, $comentario]) }}" class="cm-inline-form cm-like-form">
                     @csrf
-                    <button type="submit" class="cm-action-link @if ($comentarioCurtido) cm-action-link--liked @endif" aria-label="{{ __('comunidade.comment.likes_aria') }}">
+                    <button type="submit" class="cm-action-link @if ($comentarioCurtido) cm-action-link--liked @endif" aria-label="{{ __('comunidade.comment.likes_aria') }}" data-liked-class="cm-action-link--liked">
                         <span class="material-symbols-outlined" aria-hidden="true" style="font-size:.95rem;">{{ $comentarioCurtido ? 'favorite' : 'favorite_border' }}</span>
-                        {{ $comentario->curtidas_count }}
+                        <span class="cm-like-count">{{ $comentario->curtidas_count }}</span>
                     </button>
                 </form>
                 @if (!$isReply)

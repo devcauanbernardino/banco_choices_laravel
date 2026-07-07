@@ -7,6 +7,7 @@ use App\Models\ComunidadeDenuncia;
 use App\Models\ComunidadePost;
 use App\Models\ComunidadePostImagem;
 use App\Models\Materia;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -160,15 +161,21 @@ class ComunidadeController extends Controller
         return back()->with('success', __('comunidade.flash.post_deleted'));
     }
 
-    public function toggleCurtidaPost(ComunidadePost $post): RedirectResponse
+    public function toggleCurtidaPost(Request $request, ComunidadePost $post): RedirectResponse|JsonResponse
     {
         /** @var \App\Models\User $user */
         $user = Auth::user();
 
         if ($post->curtidas()->where('users.id', $user->id)->exists()) {
             $post->curtidas()->detach($user->id);
+            $curtido = false;
         } else {
             $post->curtidas()->attach($user->id);
+            $curtido = true;
+        }
+
+        if ($request->wantsJson()) {
+            return response()->json(['curtido' => $curtido, 'count' => $post->curtidas()->count()]);
         }
 
         return back();
@@ -230,7 +237,7 @@ class ComunidadeController extends Controller
         return back()->with('success', __('comunidade.flash.comment_deleted'));
     }
 
-    public function toggleCurtidaComentario(ComunidadePost $post, ComunidadeComentario $comentario): RedirectResponse
+    public function toggleCurtidaComentario(Request $request, ComunidadePost $post, ComunidadeComentario $comentario): RedirectResponse|JsonResponse
     {
         if ((int) $comentario->post_id !== (int) $post->id) {
             abort(404);
@@ -241,8 +248,14 @@ class ComunidadeController extends Controller
 
         if ($comentario->curtidas()->where('users.id', $user->id)->exists()) {
             $comentario->curtidas()->detach($user->id);
+            $curtido = false;
         } else {
             $comentario->curtidas()->attach($user->id);
+            $curtido = true;
+        }
+
+        if ($request->wantsJson()) {
+            return response()->json(['curtido' => $curtido, 'count' => $comentario->curtidas()->count()]);
         }
 
         return back();
