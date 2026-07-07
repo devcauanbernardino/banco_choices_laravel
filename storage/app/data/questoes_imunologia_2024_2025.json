@@ -1,7 +1,7 @@
 {
   "titulo": "Imunología Humana",
   "subtitulo": "Cuestionarios para Tutorías 2024/2025 e 1º Parcial 2025 · Cátedra I · Facultad de Medicina UBA",
-  "total_questoes": 9,
+  "total_questoes": 56,
   "questoes": [
     {
       "numero": 1,
@@ -157,6 +157,664 @@
       "nota": null,
       "resposta_correta": "A,C,D,F",
       "feedback": "Corretas: A, C, D, F.\n\nA) FoxP3 é o fator de transcrição mestre que define a linhagem e a função supressora das Tregs. C) as Tregs suprimem por contato direto (CTLA-4 competindo por CD80/86, citólise via perforina/granzima) além de mecanismos solúveis. D) IL-10 e TGF-beta são as principais citocinas imunossupressoras secretadas pelas Tregs. F) modelos de depleção de Tregs (ex.: camundongos scurfy, deficientes em FoxP3) desenvolvem doença autoimune/inflamatória sistêmica grave e fatal, demonstrando seu papel essencial no controle da autoimunidade.\n\nIncorretas: B) IL-12 e TNF são citocinas pró-inflamatórias (associadas a Th1/ativação, não à supressão); as Tregs usam IL-10/TGF-beta/IL-35, não IL-12/TNF. E) as Tregs naturais (tTregs) se desenvolvem no timo a partir de timócitos com alta afinidade por autoantígenos; existe também uma população de Tregs induzidas (iTregs) na periferia, mas a opção generaliza erroneamente o desenvolvimento exclusivo na periferia."
+    },
+    {
+      "numero": 2,
+      "pergunta": "En relación a la citocina IFN-γ:",
+      "opcoes": [
+        {"letra": "A", "texto": "Ejerce un efecto quimiotáctico sobre los neutrófilos."},
+        {"letra": "B", "texto": "Es producida en altas concentraciones por las células dendríticas plasmacitoides en respuesta a la activación de TLR-9 por ADN viral."},
+        {"letra": "C", "texto": "Es producida por células TH1, células T CD8+ y células NK con alta expresión de CD56."},
+        {"letra": "D", "texto": "Promueve el desarrollo de respuestas de memoria mediadas por linfocitos B2."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. El IFN-γ (interferón de tipo II) es producido principalmente por células TH1, linfocitos T CD8+ activados y células NK, particularmente el subset CD56bright (con alta expresión de CD56), que es el principal productor de citocinas dentro del compartimento NK.\n\nA) El efecto quimiotáctico sobre neutrófilos es típico de quimiocinas como IL-8 (CXCL8) y del componente C5a del complemento, no del IFN-γ. B) Las plasmacitoides producen masivamente IFN de tipo I (alfa/beta) en respuesta a TLR-9/TLR-7, no IFN-γ. D) El desarrollo de memoria B es promovido por citocinas como IL-21 (de células TFH) y por la colaboración T-B en el centro germinal, no específicamente por el IFN-γ."
+    },
+    {
+      "numero": 3,
+      "pergunta": "En relación al receptor CCR7:",
+      "opcoes": [
+        {"letra": "A", "texto": "Se expresa en altos niveles en la mayoría de las células NK circulantes."},
+        {"letra": "B", "texto": "Se expresa en la superficie de los conductos reticulares fibroblásticos."},
+        {"letra": "C", "texto": "Se expresa en la superficie luminal de las vénulas de endotelio alto."},
+        {"letra": "D", "texto": "Las opciones a, b y c son incorrectas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. CCR7 es un receptor de quimiocinas expresado por linfocitos T y B naive, células dendríticas maduras y algunas células T de memoria central; permite su migración hacia los órganos linfáticos secundarios en respuesta a CCL19/CCL21.\n\na) La mayoría de las NK circulantes (subset CD56dim, predominante en sangre) no expresa CCR7 en niveles altos; es el subset minoritario CD56bright el que lo expresa. b) Los conductos reticulares fibroblásticos transportan quimiocinas y antígenos solubles; no son ellos los que expresan CCR7, sino que exhiben CCL19/CCL21 en su superficie para guiar a las células CCR7+. c) CCR7 es expresado por los leucocitos que migran, no por las HEV; las HEV expresan las quimiocinas (CCL21) y moléculas de adhesión (PNAd, ICAM-1) reconocidas por los receptores del leucocito (CCR7, L-selectina)."
+    },
+    {
+      "numero": 4,
+      "pergunta": "En relación a los neutrófilos:",
+      "opcoes": [
+        {"letra": "A", "texto": "Promueven el desarrollo de respuestas TH1."},
+        {"letra": "B", "texto": "Los neutrófilos circulantes presentan una vida media de 1 a 2 hs."},
+        {"letra": "C", "texto": "Son activados por IL-22."},
+        {"letra": "D", "texto": "Juegan un papel crítico en la defensa frente a infecciones por bacterias capsuladas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Los neutrófilos son efectores clave en la defensa frente a bacterias capsuladas, actuando junto con la opsonización por C3b y anticuerpos para lograr una fagocitosis eficaz. Su ausencia o disfunción (neutropenia, defectos de adhesión) predispone marcadamente a este tipo de infecciones.\n\na) No promueven diferenciación TH1 (función más asociada a la IL-12 producida por células dendríticas/macrófagos). b) Su vida media circulante real suele describirse en el orden de varias horas, mayor que la indicada. c) La IL-22 actúa principalmente sobre células epiteliales, no es un activador característico del neutrófilo."
+    },
+    {
+      "numero": 5,
+      "pergunta": "En relación al inflamasoma:",
+      "opcoes": [
+        {"letra": "A", "texto": "Induce la activación de la vía clásica del sistema del complemento."},
+        {"letra": "B", "texto": "Puede integrar en su estructura al receptor TLR4."},
+        {"letra": "C", "texto": "La ingestión de neutrófilos apoptóticos por el macrófago induce el ensamblado y activación del inflamasoma en el propio macrófago."},
+        {"letra": "D", "texto": "Integra en su estructura a la caspasa 1."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. El inflamasoma es un complejo multiproteico citosólico que integra un receptor sensor (p. ej. NLRP3), la proteína adaptadora ASC y la caspasa-1, cuya activación proteolítica permite el procesamiento de IL-1β e IL-18 a sus formas activas.\n\na) El inflamasoma no participa en la vía clásica del complemento (activada por C1q sobre complejos antígeno-anticuerpo). b) Los sensores típicos del inflamasoma son receptores citosólicos tipo NLR (como NLRP3) o AIM2, no TLR4, que señaliza por una vía distinta (MyD88/TRIF) desde la membrana/endosoma. c) La fagocitosis de neutrófilos apoptóticos (eferocitosis) tiene, en general, un efecto antiinflamatorio/resolutivo sobre el macrófago, no activador del inflamasoma."
+    },
+    {
+      "numero": 6,
+      "pergunta": "En relación a las siguientes afirmaciones:",
+      "opcoes": [
+        {"letra": "A", "texto": "El componente C5a del sistema de complemento activa al mastocito y ejerce un efecto quimiotáctico sobre los neutrófilos."},
+        {"letra": "B", "texto": "El co-receptor B reconoce antígenos opsonizados por anticuerpos IgG."},
+        {"letra": "C", "texto": "El receptor neonatal para IgG se expresa en el epitelio respiratorio."},
+        {"letra": "D", "texto": "El receptor de tipo II para IgE (FcεRII) interactúa con LFA-1."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. C5a es una potente anafilotoxina: activa mastocitos (induciendo su degranulación) y ejerce un fuerte efecto quimiotáctico sobre neutrófilos, reclutándolos al foco inflamatorio.\n\nb) El co-receptor B (CD19/CD21/CD81) reconoce antígenos opsonizados por el complemento a través de CD21 (que liga C3d), no por IgG. c) El receptor neonatal para IgG (FcRn) se expresa clásicamente en el epitelio intestinal/placentario y endotelio, permitiendo el reciclado de IgG y su transporte transplacentario; no es su localización característica el epitelio respiratorio. d) El FcεRII (CD23) interactúa con CD21, no con LFA-1."
+    },
+    {
+      "numero": 7,
+      "pergunta": "En relación al sistema del complemento:",
+      "opcoes": [
+        {"letra": "A", "texto": "El complejo de ataque a la membrana juega un papel relevante en las reacciones de hipersensibilidad de tipo III."},
+        {"letra": "B", "texto": "El factor H se une a la superficie de bacterias capsuladas."},
+        {"letra": "C", "texto": "C3b media un efecto quimiotáctico sobre los neutrófilos."},
+        {"letra": "D", "texto": "La activación de la vía de las lectinas del sistema del complemento no requiere de los componentes C4 y C2."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Algunas bacterias capsuladas (por ejemplo, Neisseria meningitidis serogrupo B o cepas de E. coli con cápsula rica en ácido siálico) mimetizan estructuras propias del huésped y reclutan al factor H en su superficie, inhibiendo la formación de la convertasa de C3 de la vía alterna y evadiendo así la opsonización y lisis mediada por complemento.\n\na) El complejo de ataque a la membrana no es el mecanismo central en las reacciones de hipersensibilidad de tipo III (mediada por inmunocomplejos), donde predominan la generación de anafilotoxinas (C3a/C5a) y el reclutamiento de neutrófilos. c) La actividad quimiotáctica sobre neutrófilos corresponde a C5a (y C3a en menor medida), no a C3b, cuya función principal es la opsonización. d) La vía de las lectinas sí requiere de C4 y C2 para formar su convertasa de C3 (C4b2a), de manera análoga a la vía clásica."
+    },
+    {
+      "numero": 8,
+      "pergunta": "En relación a la molécula CD25:",
+      "opcoes": [
+        {"letra": "A", "texto": "Integra el co-receptor T."},
+        {"letra": "B", "texto": "Es requerida para la expansión de las células TH1."},
+        {"letra": "C", "texto": "El homotrímero de CD25 representa el receptor de alta afinidad para IL-2."},
+        {"letra": "D", "texto": "Las opciones a, b y c son incorrectas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. CD25 es la cadena alfa del receptor de IL-2; su expresión inducida en linfocitos T activados (incluyendo el perfil TH1) permite responder eficazmente a la IL-2 autocrina/paracrina, promoviendo su expansión clonal.\n\na) CD25 no integra el co-receptor T (formado por CD3 junto al TCR); tampoco es parte del complejo CD3. c) El receptor de alta afinidad para IL-2 es un heterotrímero (CD25 + CD122 + CD132), no un homotrímero de CD25; CD25 sola forma un receptor de baja afinidad."
+    },
+    {
+      "numero": 9,
+      "pergunta": "En relación a la citocina IL-23:",
+      "opcoes": [
+        {"letra": "A", "texto": "Es producida por las células TH17."},
+        {"letra": "B", "texto": "Induce la quimiotaxis de los neutrófilos."},
+        {"letra": "C", "texto": "Es producida por macrófagos y células dendríticas convencionales."},
+        {"letra": "D", "texto": "Es producida por las células B2 en el escenario de la colaboración T-B."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La IL-23 es producida principalmente por macrófagos y células dendríticas convencionales activadas, y actúa sobre células TH17 ya diferenciadas promoviendo su expansión/mantenimiento (no es producida por las propias TH17).\n\na) Son las células TH17 las que responden a la IL-23 (expresan el receptor IL-23R), no las que la producen. b) La quimiotaxis de neutrófilos es mediada por quimiocinas como IL-8/CXCL8 y por C5a, no por IL-23. d) Las células B2 no son productoras características de IL-23 en el escenario de colaboración T-B (donde predominan citocinas como IL-21, producida por las TFH)."
+    },
+    {
+      "numero": 10,
+      "pergunta": "¿Cuál de los siguientes elementos NO cumple un papel relevante en la defensa frente a infecciones por bacterias capsuladas?",
+      "opcoes": [
+        {"letra": "A", "texto": "Neutrófilos."},
+        {"letra": "B", "texto": "C3b."},
+        {"letra": "C", "texto": "Células TH1."},
+        {"letra": "D", "texto": "Células B marginales del bazo."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Las células TH1 orquestan la respuesta frente a patógenos intracelulares (activación de macrófagos vía IFN-γ); no son el mecanismo central de defensa frente a bacterias capsuladas extracelulares, cuya eliminación depende sobre todo de la opsonización (C3b, anticuerpos) y la fagocitosis.\n\na) Los neutrófilos son efectores fagocíticos centrales frente a estas bacterias. b) C3b opsoniza eficazmente las bacterias capsuladas, facilitando su fagocitosis. d) Las células B de la zona marginal del bazo generan rápidamente IgM contra antígenos polisacáridos capsulares, siendo cruciales en la respuesta T-independiente frente a estos patógenos (de ahí el riesgo de sepsis por capsulados tras esplenectomía)."
+    },
+    {
+      "numero": 11,
+      "pergunta": "¿Cuál de los siguientes elementos NO cumple un papel relevante en la defensa frente a la infección por M. tuberculosis?",
+      "opcoes": [
+        {"letra": "A", "texto": "Células TH1."},
+        {"letra": "B", "texto": "CXCL12."},
+        {"letra": "C", "texto": "IL-12."},
+        {"letra": "D", "texto": "IFN-γ."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. CXCL12 (SDF-1) es una quimiocina homeostática, implicada principalmente en la retención/movilización de progenitores hematopoyéticos en la médula ósea, sin un papel característico descrito en la defensa frente a M. tuberculosis.\n\na), c) y d) conforman el eje central de la inmunidad frente a M. tuberculosis: la IL-12 (de macrófagos/DCs infectados) promueve la diferenciación TH1, que produce IFN-γ, activando a los macrófagos y potenciando la formación de granulomas."
+    },
+    {
+      "numero": 12,
+      "pergunta": "En relación a las moléculas clásicas del CMH de tipo I.",
+      "opcoes": [
+        {"letra": "A", "texto": "Todas ellas integran en su estructura una cadena alfa y una cadena beta 2 microglobulina."},
+        {"letra": "B", "texto": "Son reconocidas por MICA y MICB."},
+        {"letra": "C", "texto": "En el escenario del procesamiento antigénico se cargan con el péptido antigénico en el citosol."},
+        {"letra": "D", "texto": "Los receptores KIR inhibitorios, pero no los receptores KIR estimulatorios, reconocen moléculas clásicas del CMH de clase I."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Las moléculas clásicas de clase I (HLA-A, -B, -C) están formadas por una cadena pesada alfa (que forma el surco de unión al péptido) asociada de forma no covalente a la beta-2 microglobulina.\n\nb) MICA y MICB son ligandos de estrés reconocidos por el receptor activador NKG2D, no moléculas clásicas de clase I. c) La carga del péptido sobre las moléculas de clase I ocurre en el retículo endoplásmico (tras la degradación citosólica por el proteasoma y el transporte vía TAP), no directamente en el citosol. d) Tanto los KIR inhibitorios como algunos KIR activadores reconocen moléculas clásicas de clase I; no es exclusivo de los inhibitorios."
+    },
+    {
+      "numero": 13,
+      "pergunta": "En relación a las moléculas del CMH de clase II:",
+      "opcoes": [
+        {"letra": "A", "texto": "Está integradas por dos cadenas, contribuyendo ambas al surco que albergará el péptido antigénico."},
+        {"letra": "B", "texto": "Son reconocidas por receptores KIR."},
+        {"letra": "C", "texto": "En el escenario del procesamiento antigénico se cargan con el péptido antigénico en el lumen del retículo endoplásmico."},
+        {"letra": "D", "texto": "Reconocen C3b."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Las moléculas de clase II (HLA-DP, -DQ, -DR) están formadas por dos cadenas (alfa y beta), y ambas contribuyen con sus dominios N-terminales a formar el surco de unión al péptido (a diferencia de clase I, donde el surco lo forma solo la cadena alfa).\n\nb) Los receptores KIR reconocen moléculas de clase I, no de clase II. c) Las moléculas de clase II se cargan con el péptido en un compartimento endo-lisosomal especializado (MIIC), no en el retículo endoplásmico (donde están protegidas de cargarse prematuramente por la cadena invariante). d) Las moléculas del CMH no son receptores de C3b; ese rol corresponde a receptores de complemento como el CR1."
+    },
+    {
+      "numero": 14,
+      "pergunta": "En relación a las siguientes afirmaciones:",
+      "opcoes": [
+        {"letra": "A", "texto": "El receptor Toll de tipo 9 (TLR9) se expresa en endosomas y reconoce ADN viral."},
+        {"letra": "B", "texto": "El receptor Toll de tipo 7 (TLR7) se expresa en el citosol y reconoce ARN viral."},
+        {"letra": "C", "texto": "Los receptores lectina tipo C se expresan en la membrana celular de los macrófagos y reconocen eficazmente polisacáridos presentes en las cápsulas bacterianas."},
+        {"letra": "D", "texto": "Las opciones a, b y c son incorrectas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. TLR9 es un receptor endosomal que reconoce motivos CpG no metilados del ADN, tanto bacteriano como viral.\n\nb) TLR7 se expresa en endosomas (no en el citosol) y reconoce ARN monocatenario viral. c) Los receptores tipo lectina C reconocen preferentemente residuos de manosa/glucano de la pared de hongos y algunos patógenos; las cápsulas polisacarídicas bacterianas (ricas en ácido siálico u otros polímeros) suelen constituir, más bien, un mecanismo de evasión que dificulta su reconocimiento eficaz por estos receptores."
+    },
+    {
+      "numero": 15,
+      "pergunta": "En relación a los macrófagos activados en un perfil clásico o inflamatorio:",
+      "opcoes": [
+        {"letra": "A", "texto": "Producen IL-9."},
+        {"letra": "B", "texto": "Producen IFN-γ."},
+        {"letra": "C", "texto": "Producen IL-12 e IL-23."},
+        {"letra": "D", "texto": "Expresan CD40L."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Los macrófagos activados por la vía clásica (M1, perfil inflamatorio, inducido por IFN-γ + PAMPs) producen IL-12 e IL-23, citocinas que polarizan y sostienen respuestas TH1/TH17, respectivamente.\n\na) La IL-9 es producida por células TH9/mastocitos, no por macrófagos M1. b) El IFN-γ es producido por células TH1, NK y T CD8+, y actúa activando al macrófago (no es producido por el propio macrófago). d) CD40L es expresado por linfocitos T activados (y plaquetas), no por macrófagos, que expresan más bien CD40 (el receptor, no el ligando)."
+    },
+    {
+      "numero": 16,
+      "pergunta": "En relación a la quimiocina IL-8:",
+      "opcoes": [
+        {"letra": "A", "texto": "Induce la diferenciación de las células T CD4+ en un perfil TH17."},
+        {"letra": "B", "texto": "Es producida por los enterocitos activados por IL-17A o IL-22."},
+        {"letra": "C", "texto": "Induce la diferenciación de las células T CD4+ en un perfil TH17."},
+        {"letra": "D", "texto": "Es producida por las células TH17."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. La IL-8 (CXCL8) es producida por células epiteliales, incluidos los enterocitos, en respuesta a citocinas como IL-17A e IL-22 (producidas por células TH17), amplificando el reclutamiento de neutrófilos al sitio de infección/inflamación.\n\na/c) La IL-8 no induce diferenciación TH17; es una quimiocina reclutadora de neutrófilos corriente abajo de la respuesta TH17, no un inductor de su diferenciación (rol de citocinas como IL-6, IL-23, TGF-β). d) La IL-8 es producida principalmente por células epiteliales, endoteliales y macrófagos activados, no característicamente por las TH17."
+    },
+    {
+      "numero": 17,
+      "pergunta": "En relación a las moléculas clásicas del CMH de clase I:",
+      "opcoes": [
+        {"letra": "A", "texto": "Pueden presentar péptidos antigénicos a los linfocitos B2."},
+        {"letra": "B", "texto": "Se cargan con el péptido antigénico en el citosol."},
+        {"letra": "C", "texto": "No interactúan con la cadena invariante."},
+        {"letra": "D", "texto": "Un hepatocito puede expresar hasta 12 moléculas de clase I diferentes en su superficie."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La cadena invariante (Ii) es una chaperona que se asocia a las moléculas de clase II (no a las de clase I) en el retículo endoplásmico, ocupando su surco y evitando que se carguen prematuramente con péptidos endógenos; las moléculas de clase I no interactúan con ella.\n\na) Las moléculas de clase I presentan a linfocitos T CD8+, no a linfocitos B (que reconocen antígeno nativo vía BCR, no restringido por CMH). b) La carga peptídica de clase I ocurre en el retículo endoplásmico (tras el transporte del péptido citosólico vía TAP), no directamente en el citosol. d) Un individuo heterocigota expresa como máximo 6 alelos clásicos de clase I (HLA-A, -B, -C, uno materno y uno paterno de cada uno) por célula, no 12."
+    },
+    {
+      "numero": 18,
+      "pergunta": "En relación a las moléculas del CMH de clase II:",
+      "opcoes": [
+        {"letra": "A", "texto": "Las moléculas DP, DQ y DR representan diferentes alelos de clase II."},
+        {"letra": "B", "texto": "Las cadenas α de origen materno pueden asociarse con las cadenas β de origen paterno."},
+        {"letra": "C", "texto": "Se expresan en el epitelio tímico cortical, pero no en el epitelio tímico medular."},
+        {"letra": "D", "texto": "No son expresadas por linfocitos B2 naive."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Dado que clase II está formada por dos cadenas distintas (alfa y beta) codificadas por loci separados, en un individuo heterocigota pueden generarse combinaciones \"en trans\" (cadena alfa materna con cadena beta paterna, y viceversa), ampliando la diversidad de moléculas de clase II expresadas.\n\na) DP, DQ y DR son loci (genes) distintos de clase II, no simplemente \"alelos\" entre sí. c) Las moléculas de clase II se expresan tanto en el epitelio tímico cortical como en el medular, siendo clave en la selección positiva (cortical) y negativa (medular) de linfocitos T CD4+. d) Los linfocitos B2, incluidos los naive, expresan constitutivamente moléculas de clase II, que utilizan para presentar antígeno a células T colaboradoras."
+    },
+    {
+      "numero": 19,
+      "pergunta": "En relación a las células TFH:",
+      "opcoes": [
+        {"letra": "A", "texto": "Producen CXCL13."},
+        {"letra": "B", "texto": "Expresan CCR7."},
+        {"letra": "C", "texto": "Producen IL-23."},
+        {"letra": "D", "texto": "Expresan CD3, CD4 y CXCR5."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. Las células TFH son linfocitos T CD4+ (por lo tanto CD3+CD4+) que expresan CXCR5, receptor que las guía hacia los folículos linfoides (siguiendo el gradiente de CXCL13) para colaborar con los linfocitos B en el centro germinal.\n\na) CXCL13 es producida por las células reticulares foliculares (y células dendríticas foliculares) para atraer células CXCR5+, no por las propias TFH. b) Las TFH característicamente disminuyen CCR7 (que las retendría en la zona T) para poder migrar al folículo. c) Las TFH producen predominantemente IL-21 (y IL-4 en algunos contextos), no IL-23, más bien producida por células mieloides."
+    },
+    {
+      "numero": 20,
+      "pergunta": "Un individuo sufre una infección por virus influenza, agente etiológico de la gripe:",
+      "opcoes": [
+        {"letra": "A", "texto": "Las células NK migrarán a la mucosa infectada desde sangre periférica a través de las HEV."},
+        {"letra": "B", "texto": "Los IFN de tipo I mediarán un efecto estimulatorio sobre las células NK y activarán, en células parenquimatosas, infectadas, o no, la producción de centenares de proteínas con actividad anti-viral."},
+        {"letra": "C", "texto": "La autofagia en las células infectadas promoverá la presentación de péptidos virales por moléculas del CMH clase I."},
+        {"letra": "D", "texto": "Las células dendríticas convencionales activarán a linfocitos T específicos para antígenos virales a partir del día 7 u 8, luego de iniciada la infección viral."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Los interferones de tipo I (alfa/beta), producidos tempranamente frente a la infección viral, activan a las células NK (potenciando su citotoxicidad) e inducen en las células parenquimatosas -estén o no infectadas- la expresión de cientos de genes estimulados por interferón (ISGs) con actividad antiviral, estableciendo un estado de resistencia generalizado en el tejido.\n\na) Las HEV son estructuras propias de ganglios linfáticos; el reclutamiento de leucocitos a una mucosa infectada ocurre por vénulas activadas localmente, no por HEV. c) La presentación por CMH-I de péptidos virales depende fundamentalmente de la degradación proteosomal en el citosol (vía clásica), no de la autofagia. d) La activación de linfocitos T naive específicos ocurre de forma más temprana (días 3-5 aproximadamente), no recién en el día 7-8."
+    },
+    {
+      "numero": 21,
+      "pergunta": "Un individuo sufre una infección respiratoria bacteriana.",
+      "opcoes": [
+        {"letra": "A", "texto": "La opsonización de las bacterias capsuladas es necesaria para su efectiva fagocitosis por neutrófilos y macrófagos."},
+        {"letra": "B", "texto": "Los ácidos nucleicos bacterianos representan los PAMPs más importantes que reconocerán los RRPs expresados por macrófagos y células dendríticas."},
+        {"letra": "C", "texto": "Las células dendríticas plasmacitoides jugarán un papel relevante en la resolución de la infección."},
+        {"letra": "D", "texto": "Las moléculas del CMH de clase I clásicas pueden presentar hidratos de carbono presentes en la cápsula bacteriana."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La cápsula bacteriana dificulta la fagocitosis directa; su opsonización por anticuerpos y/o C3b es necesaria para que los receptores Fc y de complemento en neutrófilos y macrófagos medien una fagocitosis eficaz.\n\nb) Para bacterias extracelulares, los PAMPs más relevantes suelen ser componentes de pared (LPS, peptidoglicano, ácido lipoteicoico), más que ácidos nucleicos (centrales en el reconocimiento antiviral). c) Las células dendríticas plasmacitoides están especializadas en la respuesta antiviral (IFN tipo I), con un rol secundario frente a infecciones bacterianas extracelulares. d) Las moléculas clásicas de clase I presentan péptidos, no hidratos de carbono."
+    },
+    {
+      "numero": 22,
+      "pergunta": "En relación al proceso de colaboración establecido entre las células TFH y los linfocitos B2:",
+      "opcoes": [
+        {"letra": "A", "texto": "La célula B2 activada puede presentar péptidos antigénicos a los linfocitos TFH a través de moléculas del CMH de clases I o II."},
+        {"letra": "B", "texto": "En el escenario de la colaboración T-B las células TFH producen IL-21."},
+        {"letra": "C", "texto": "Una vez que reconocieron al antígeno, las células B2 migran a los sitios de colaboración T-B por los conductos reticulares fibroblásticos."},
+        {"letra": "D", "texto": "Los centroblastos emigran desde los ganglios linfáticos a la médula ósea atraídos por la quimiocina CXCL13."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. En la colaboración T-B, las células TFH producen IL-21, citocina crucial para la proliferación de los centroblastos, el class switching y la diferenciación a células plasmáticas/B de memoria en el centro germinal.\n\na) La célula B presenta antígeno a las TFH exclusivamente a través de moléculas de clase II (las TFH son CD4+, restringidas a clase II), no de clase I. c) Los conductos reticulares fibroblásticos transportan antígenos solubles de bajo peso molecular; la migración del linfocito B activado hacia la interfase T-B ocurre por quimiotaxis (CCR7/CXCR5), no \"por\" los conductos en sí. d) Los centroblastos permanecen y proliferan dentro del centro germinal; no emigran a la médula ósea atraídos por CXCL13 (que, de hecho, los mantiene dentro del folículo)."
+    },
+    {
+      "numero": 24,
+      "pergunta": "Las células T regulatorias naturales y las células T regulatorias inducibles de tipo III comparten las siguientes características:",
+      "opcoes": [
+        {"letra": "A", "texto": "Expresan FOXP3."},
+        {"letra": "B", "texto": "Producen TGF-β."},
+        {"letra": "C", "texto": "Expresan CTLA-4 en forma constitutiva."},
+        {"letra": "D", "texto": "Producen IL-4."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Tanto las células T regulatorias naturales (nTreg, FOXP3+) como las regulatorias inducibles de tipo III comparten la producción de TGF-β como mecanismo efector común de supresión.\n\na) FOXP3 es el marcador característico de las Tregs naturales, pero las poblaciones inducibles de tipo III no necesariamente lo expresan de forma estable. c) La expresión constitutiva de CTLA-4 es un rasgo distintivo de las nTreg, no necesariamente de las poblaciones inducibles. d) La IL-4 es una citocina de perfil TH2, no una citocina reguladora característica de estas poblaciones."
+    },
+    {
+      "numero": 25,
+      "pergunta": "En relación al sistema del complemento:",
+      "opcoes": [
+        {"letra": "A", "texto": "El factor H es reconocido por el CR1 (receptor de complemento de tipo 1)."},
+        {"letra": "B", "texto": "La generación de C3b, a consecuencia de la activación de la vía clásica del sistema del complemento, promueve la formación de la convertasa de C3 de la vía alterna."},
+        {"letra": "C", "texto": "El CR1 promueve la formación de la convertasa de C3 de la vía alterna."},
+        {"letra": "D", "texto": "Cumple un papel relevante en la defensa frente a infecciones por bacterias no capsuladas, pero no frente a infecciones por bacterias capsuladas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. El C3b generado por la convertasa de la vía clásica (C4b2a3b) puede unirse al factor B, iniciando la formación de la convertasa de C3 de la vía alterna (C3bBb); este fenómeno constituye un bucle de amplificación entre vías.\n\na) El factor H compite con el factor B por unirse a C3b sobre la superficie celular; no es \"reconocido\" por el CR1, siendo ambos reguladores/receptores distintos. c) El CR1 es un regulador negativo del complemento (favorece la disociación de las convertasas), no promueve la formación de la convertasa alterna. d) El complemento (vía opsonización con C3b) es especialmente relevante en la defensa frente a bacterias capsuladas, no lo contrario."
+    },
+    {
+      "numero": 26,
+      "pergunta": "En relación a la ontogenia T:",
+      "opcoes": [
+        {"letra": "A", "texto": "La generación del TCR en los timocitos precede el proceso de selección positiva."},
+        {"letra": "B", "texto": "El epitelio tímico medular expresa alelos de clase I diferentes, respecto de aquellos expresados por las células presentadoras profesionales de antígeno, en el mismo individuo."},
+        {"letra": "C", "texto": "Aquellos clones T que reconocen autoantígenos en el escenario de la selección negativa, pueden reordenar nuevamente la cadena beta del TCR a fin de evitar su deleción."},
+        {"letra": "D", "texto": "Aquellos timocitos que, en el escenario de la selección positiva, reconozcan péptidos presentados por moléculas de clase I del CMH, disminuirán la expresión de CD8, manteniendo la expresión de CD4."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. El reordenamiento génico que genera un TCR funcional (primero cadena beta, luego alfa) ocurre en los timocitos antes de que puedan ser sometidos a los procesos de selección positiva y negativa, que requieren un TCR ya expresado en superficie.\n\nb) El epitelio tímico expresa los mismos alelos de clase I (y II) del individuo, iguales a los de sus células presentadoras profesionales; no expresa alelos \"diferentes\". c) El reordenamiento adicional (\"receptor editing\") para evitar la deleción es un fenómeno característico de linfocitos B, no de la cadena beta del TCR de los timocitos T durante la selección negativa. d) El reconocimiento de clase I durante la selección positiva conduce al compromiso hacia el linaje CD8+ (con disminución de CD4, no al revés)."
+    },
+    {
+      "numero": 28,
+      "pergunta": "¿Cuál de las siguientes asociaciones es correcta?",
+      "opcoes": [
+        {"letra": "A", "texto": "Mutaciones en ICOS….Síndrome de hiper-IgM."},
+        {"letra": "B", "texto": "Mutaciones en la cadena pesada µ…..Agamaglobulinemia no ligada al X."},
+        {"letra": "C", "texto": "Mutaciones en CD40L……Inmunodeficiencia común variable."},
+        {"letra": "D", "texto": "Mutaciones en TAP-1 o TAP-2……Inmunodeficiencia severa combinada."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Las mutaciones en el gen de la cadena pesada µ (necesaria para formar el pre-BCR y el BCR) bloquean la maduración de los linfocitos B en un estadio temprano, produciendo agamaglobulinemia autosómica recesiva (no ligada al X, a diferencia de la producida por mutación en BTK).\n\na) Las mutaciones en ICOS se asocian a inmunodeficiencia común variable (por fallo en la colaboración T-B), no a hiper-IgM. c) Las mutaciones en CD40L causan el síndrome de hiper-IgM ligado al X, no la inmunodeficiencia común variable. d) Las mutaciones en TAP-1/TAP-2 afectan la carga peptídica de clase I, produciendo el síndrome de linfocito desnudo tipo I, no una inmunodeficiencia combinada severa."
+    },
+    {
+      "numero": 29,
+      "pergunta": "En relación a los antígenos menores de histocompatibilidad:",
+      "opcoes": [
+        {"letra": "A", "texto": "Proteínas codificadas en el cromosoma Y del hombre pueden ser reconocidas como antígenos menores de histocompatibilidad por la mujer receptora del trasplante."},
+        {"letra": "B", "texto": "Pueden estar representados por moléculas del CMH de clase I clásicas."},
+        {"letra": "C", "texto": "Pueden estar representados por alelos del CMH de clase I que se expresan en una muy baja frecuencia poblacional."},
+        {"letra": "D", "texto": "Suelen estar representados por proteínas no polimórficas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Proteínas codificadas por genes del cromosoma Y (ausentes en la mujer) pueden ser presentadas como péptidos por moléculas del CMH y reconocidas como antígenos menores de histocompatibilidad (antígenos H-Y) por el sistema inmune de una receptora mujer, generando rechazo en trasplantes entre donante hombre y receptora mujer HLA-idénticos.\n\nb) Los antígenos menores son péptidos derivados de proteínas polimórficas presentados en el surco del CMH (que actúa solo como \"vehículo\"), no las propias moléculas de clase I. c) Los alelos infrecuentes del CMH generan variabilidad en los antígenos \"mayores\", un concepto distinto. d) Por definición derivan de proteínas polimórficas (que difieren entre donante y receptor), no de proteínas no polimórficas."
+    },
+    {
+      "numero": 30,
+      "pergunta": "En relación a la presentación cruzada de antígenos:",
+      "opcoes": [
+        {"letra": "A", "texto": "Permite la activación de células T CD8+ por antígenos endocitados por las células dendríticas convencionales."},
+        {"letra": "B", "texto": "Permite la presentación a células T CD4+ de antígenos endocitados por las células dendríticas."},
+        {"letra": "C", "texto": "Permite la degradación de antígenos presentes en el citosol por el proteosoma."},
+        {"letra": "D", "texto": "Permite la presentación de antígenos presentes en endosomas a través de moléculas del CMH de clase II."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La presentación cruzada (cross-presentation) es la capacidad de ciertas células dendríticas de tomar antígenos exógenos endocitados y dirigirlos hacia la vía de clase I, permitiendo activar linfocitos T CD8+ vírgenes frente a antígenos que la célula dendrítica no sintetizó endógenamente.\n\nb) La presentación de antígenos exógenos vía clase II a células CD4+ es la vía \"clásica\" de presentación exógena, no la definición de presentación cruzada. c) La degradación citosólica por proteasoma corresponde a la vía endógena clásica de clase I. d) Esa descripción corresponde a la vía clásica de clase II, no a la presentación cruzada."
+    },
+    {
+      "numero": 31,
+      "pergunta": "En relación a la molécula CD40:",
+      "opcoes": [
+        {"letra": "A", "texto": "Es expresada por linfocitos T activados."},
+        {"letra": "B", "texto": "Mutaciones en el gen que codifica a CD40 conducen a un cuadro de agamaglobulinemia."},
+        {"letra": "C", "texto": "Es expresada por los enterocitos."},
+        {"letra": "D", "texto": "Es expresada por macrófagos, células dendríticas convencionales y linfocitos B."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. CD40 es expresado constitutivamente por células presentadoras de antígeno (linfocitos B, células dendríticas convencionales, macrófagos), donde su ligadura por CD40L (del T colaborador activado) provee señales cruciales de activación/maduración.\n\na) Es CD40L (CD154), no CD40, el que se expresa en linfocitos T activados. b) Las mutaciones en CD40 (o en CD40L) producen el síndrome de hiper-IgM, no agamaglobulinemia. c) La expresión de CD40 no es una característica distintiva descrita para enterocitos en este contexto."
+    },
+    {
+      "numero": 32,
+      "pergunta": "En relación a las siguientes afirmaciones:",
+      "opcoes": [
+        {"letra": "A", "texto": "Un niño sano, al nacer, presenta decenas de millones de clones T y B con diferentes especificidades."},
+        {"letra": "B", "texto": "No hay selección negativa en el transcurso de la ontogenia B, a nivel de los órganos linfáticos secundarios."},
+        {"letra": "C", "texto": "La última etapa de la ontogenia T transcurre en el bazo."},
+        {"letra": "D", "texto": "El factor de transcripción AIRE se expresa en el epitelio tímico cortical."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La recombinación V(D)J genera, ya al nacer, un repertorio enorme de clones T y B (del orden de decenas de millones de especificidades diferentes), permitiendo reconocer virtualmente cualquier antígeno posible.\n\nb) También existen mecanismos de tolerancia/selección de linfocitos B autorreactivos en la periferia (órganos linfáticos secundarios), además de la selección central en médula ósea. c) La etapa final de maduración T ocurre en el timo, no en el bazo. d) AIRE se expresa característicamente en el epitelio tímico medular, no en el cortical, permitiendo la expresión de antígenos periféricos tejido-específicos para la selección negativa."
+    },
+    {
+      "numero": 33,
+      "pergunta": "En relación a las células dendríticas convencionales o mieloides:",
+      "opcoes": [
+        {"letra": "A", "texto": "En ausencia de procesos infecciosos las células dendríticas convencionales inmaduras expresan una alta capacidad para mediar macropinocitosis."},
+        {"letra": "B", "texto": "Al madurar incrementan su capacidad de procesar antígenos por vía cruzada."},
+        {"letra": "C", "texto": "Las células dendríticas maduras interactúan con los linfocitos T naive en el área paracortical de los ganglios linfáticos a través de interacciones homofílicas establecidas entre moléculas pertenecientes a la superfamilia de inmunoglobulinas."},
+        {"letra": "D", "texto": "Al madurar incrementan su expresión de receptores de reconocimiento de patrones."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Las células dendríticas convencionales inmaduras, en tejidos periféricos y en ausencia de infección, tienen una alta capacidad de captación antigénica, incluyendo macropinocitosis constitutiva de gran volumen de líquido extracelular, como parte de su función de \"centinela\".\n\nb) Al madurar, las DC disminuyen su capacidad de captación/procesamiento antigénico (incluida la vía cruzada) en favor de una mayor capacidad de presentación y coestimulación. c) La interacción DC madura-T naive involucra TCR/CMH-péptido y moléculas de adhesión/coestimulación (LFA-1/ICAM-1, CD28/B7), no específicamente interacciones homofílicas entre moléculas de la superfamilia de inmunoglobulinas como mecanismo central. d) Al madurar, las DC disminuyen la expresión de receptores de reconocimiento de patrones, mientras aumentan moléculas de clase II y coestimulación."
+    },
+    {
+      "numero": 34,
+      "pergunta": "En relación a la quimiocina IL-8:",
+      "opcoes": [
+        {"letra": "A", "texto": "Al activar al neutrófilo, incrementa la afinidad de la integrina MAC-1 por sus ligandos ICAM-1 e ICAM-2 expresados en la cara luminal del endotelio."},
+        {"letra": "B", "texto": "Induce la apoptosis del neutrófilo."},
+        {"letra": "C", "texto": "Es producida por células TH2."},
+        {"letra": "D", "texto": "Interactúa con ICAM-1 e ICAM-2."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La IL-8 (CXCL8), al unirse a su receptor en el neutrófilo, dispara señalización interna que incrementa la afinidad de la integrina MAC-1 (CD11b/CD18) por sus ligandos ICAM-1/ICAM-2 en el endotelio activado, promoviendo la adhesión firme, paso previo a la diapédesis.\n\nb) La IL-8 tiende a prolongar la sobrevida del neutrófilo (efecto antiapoptótico), no a inducir su apoptosis. c) La IL-8 es producida principalmente por macrófagos, células epiteliales y endoteliales activadas, no característicamente por células TH2. d) La IL-8 (quimiocina soluble) no interactúa directamente con ICAM-1/ICAM-2; es la integrina MAC-1 del neutrófilo (cuya afinidad la IL-8 modula) la que se une a esos ligandos."
+    },
+    {
+      "numero": 35,
+      "pergunta": "Al afirmar que un gen particular se asocia al desarrollo de atopía se está indicando que:",
+      "opcoes": [
+        {"letra": "A", "texto": "El gen en cuestión se expresa en individuos atópicos, pero no en individuos no atópicos."},
+        {"letra": "B", "texto": "La transcripción del gen en cuestión es más eficiente en los individuos atópicos."},
+        {"letra": "C", "texto": "Ciertos alelos del gen predisponen a la atopía."},
+        {"letra": "D", "texto": "El gen es capaz de regular la producción de IL-4 por células TH2."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. Que un gen se \"asocie\" a atopía significa que determinados polimorfismos/alelos incrementan estadísticamente el riesgo (predisposición) de desarrollar el fenotipo atópico, sin ser deterministas ni la única causa.\n\na) La asociación genética no implica ausencia total de expresión en no atópicos; ambos grupos suelen expresar el gen, difiriendo en variantes alélicas. b) La asociación no se limita a diferencias de \"eficiencia transcripcional\"; puede involucrar variantes funcionales de diverso tipo. d) Esta opción describe un mecanismo hipotético específico, mucho más restrictivo que el concepto general de asociación genética."
+    },
+    {
+      "numero": 36,
+      "pergunta": "En relación a las siguientes afirmaciones:",
+      "opcoes": [
+        {"letra": "A", "texto": "La concentración de IgE no puede ser medida por inmunodifusión radial ya que la técnica no es suficientemente específica."},
+        {"letra": "B", "texto": "La condición de atopía se hereda con un patrón ligado al sexo."},
+        {"letra": "C", "texto": "Los receptores de alta afinidad para IgE (FcεRI) son capaces de mediar la degranulación de mastocitos y neutrófilos."},
+        {"letra": "D", "texto": "El receptor de baja afinidad para la IgE (FcεRII), al interactuar con CD21 expresado en la superficie del linfocito B2, promueve el switch conducente a la producción de IgE."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. El FcεRII (CD23), receptor de baja afinidad para IgE, puede interactuar con CD21 en la superficie del linfocito B2; esta interacción participa en la regulación de la producción de IgE, favoreciendo el class switching hacia este isotipo en determinados contextos.\n\na) La IgE circula en concentraciones muy bajas, por lo que la inmunodifusión radial (de sensibilidad limitada) no es adecuada para su cuantificación por motivos de sensibilidad, no estrictamente de \"especificidad\"; se prefieren técnicas más sensibles (ELISA, quimioluminiscencia). b) La atopía tiene un patrón de herencia poligénico/complejo, no ligado al sexo. c) El FcεRI de alta afinidad se expresa en mastocitos y basófilos (no en neutrófilos), siendo el receptor central en la degranulación mediada por IgE."
+    },
+    {
+      "numero": 37,
+      "pergunta": "¿Cuál de los siguientes fenómenos NO ocurre en el transcurso de la ontogenia B?",
+      "opcoes": [
+        {"letra": "A", "texto": "Selección negativa."},
+        {"letra": "B", "texto": "Expresión de un pre-BCR."},
+        {"letra": "C", "texto": "Hipermutación en los dominios variables de las inmunoglobulinas."},
+        {"letra": "D", "texto": "Edición del receptor B."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "C",
+      "feedback": "Respuesta correcta: C. La hipermutación somática ocurre en los centros germinales, durante la respuesta inmune (tras el encuentro con antígeno), y no forma parte de la ontogenia B temprana (generación del repertorio en médula ósea).\n\na) La selección negativa (deleción/edición de clones autorreactivos) sí ocurre durante la ontogenia B en médula ósea. b) La expresión de un pre-BCR (cadena pesada + cadena liviana subrogada) es un checkpoint clave de la ontogenia B temprana. d) La edición del receptor, mecanismo para \"rescatar\" clones autorreactivos reordenando una nueva cadena liviana, también ocurre durante la ontogenia B en médula ósea."
+    },
+    {
+      "numero": 38,
+      "pergunta": "En relación a los linfocitos B1:",
+      "opcoes": [
+        {"letra": "A", "texto": "Presentan una proliferación homeostática en ausencia de procesos infecciosos."},
+        {"letra": "B", "texto": "Median la citotoxicidad celular dependiente de anticuerpos (CCDA)."},
+        {"letra": "C", "texto": "Su ontogenia transcurre, en primer lugar, en la médula ósea, completándose en el bazo."},
+        {"letra": "D", "texto": "No expresan CD21."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Los linfocitos B1 son una población autorrenovable que mantiene su número mediante proliferación homeostática en las cavidades peritoneal/pleural, independientemente de estímulos infecciosos, siendo la principal fuente de anticuerpos naturales (IgM).\n\nb) La CCDA es mediada típicamente por células NK (y otras células con FcR), no es una función característica de los linfocitos B1. c) Los linfocitos B1 derivan predominantemente de progenitores fetales/hígado fetal, a diferencia de los B2 convencionales, generados continuamente en médula ósea a lo largo de la vida. d) Los linfocitos B1 sí expresan CD21 (con un fenotipo particular, CD5+ en el subset B1a)."
+    },
+    {
+      "numero": 39,
+      "pergunta": "En relación a los receptores para el fragmento Fc de la IgG (FcR):",
+      "opcoes": [
+        {"letra": "A", "texto": "Los macrófagos expresan FcR estimulatorios e inhibitorios."},
+        {"letra": "B", "texto": "Células que no expresen FcR pueden mediar la citotoxicidad celular dependiente de anticuerpos (CCDA)."},
+        {"letra": "C", "texto": "Cumplen un papel destacado en las reacciones de hipersensibilidad de tipo III, pero no en las reacciones de hipersensibilidad de tipo II."},
+        {"letra": "D", "texto": "Cumplen un papel crítico en las reacciones de hipersensibilidad de tipo I."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Los macrófagos expresan tanto FcγR activadores (FcγRI, FcγRIIA, FcγRIIIA, que inician señales de activación/fagocitosis) como el FcγRIIB inhibitorio, cuyo balance regula la magnitud de la respuesta efectora frente a inmunocomplejos.\n\nb) La CCDA requiere, por definición, el reconocimiento del Fc del anticuerpo unido al blanco a través de un FcR en la célula efectora (típicamente FcγRIIIA en NK); sin FcR no puede mediarse este mecanismo. c) Los FcγR participan tanto en hipersensibilidad tipo II como en tipo III, no exclusivamente en tipo III. d) La hipersensibilidad tipo I está mediada centralmente por FcεRI (receptor de IgE), no por los FcγR (de IgG)."
+    },
+    {
+      "numero": 40,
+      "pergunta": "En relación al TCR (receptor antigénico del linfocito T):",
+      "opcoes": [
+        {"letra": "A", "texto": "El heterodímero α/β reconoce el péptido antigénico presentado por moléculas del CMH y transduce la señal 1 de activación en el linfocito T, sin requerir la participación de otras moléculas."},
+        {"letra": "B", "texto": "La secuencia aminoacídica propia a los dominios variables del TCR es la misma en los linfocitos T naive y en los linfocitos T efectores que derivan de los primeros."},
+        {"letra": "C", "texto": "Los timocitos comienzan a expresar el TCR en su superficie, en el transcurso de la ontogenia, en forma previa a su ingreso al timo."},
+        {"letra": "D", "texto": "El TCR puede ser activado por péptidos cortos, no presentados por moléculas del CMH."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. La especificidad del TCR (determinada por la secuencia de sus dominios variables, fijada tras el reordenamiento V(D)J) se mantiene idéntica a lo largo de la diferenciación de un linfocito T naive a efector/memoria; el clon conserva su especificidad antigénica.\n\na) El TCR reconoce el complejo péptido-CMH, pero requiere obligatoriamente al complejo CD3 (y las moléculas correceptoras CD4/CD8) para transducir la señal de activación, ya que carece de dominios citoplasmáticos con motivos de señalización propios (ITAMs). c) La expresión del TCR en superficie ocurre dentro del timo, luego del reordenamiento génico que también sucede intratímicamente. d) El TCR reconoce péptidos presentados en el surco de moléculas del CMH; no reconoce péptidos libres no presentados."
+    },
+    {
+      "numero": 41,
+      "pergunta": "En relación al CMH:",
+      "opcoes": [
+        {"letra": "A", "texto": "El retículo endoplásmico del macrófago en reposo contiene tanto moléculas de clase I como de clase II del CMH."},
+        {"letra": "B", "texto": "Las moléculas de clase I expresan un mayor polimorfismo respecto de las moléculas del CMH de clase II."},
+        {"letra": "C", "texto": "Un hijo puede no expresar alelos maternos o paternos del CMH."},
+        {"letra": "D", "texto": "El haplotipo de un individuo condiciona su susceptibilidad a padecer inmunodeficiencias primarias."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. El macrófago, como célula presentadora profesional, expresa constitutivamente tanto moléculas de clase I (como toda célula nucleada) como de clase II, y ambas transitan por el retículo endoplásmico durante su síntesis, incluso en reposo.\n\nb) El polimorfismo del CMH es muy elevado tanto en clase I como en clase II; no se describe como sustancialmente mayor en clase I de forma categórica. c) Al ser codominante, un hijo expresa obligatoriamente los alelos heredados de ambos progenitores; no puede \"no expresar\" alelos parentales. d) El haplotipo del CMH se asocia con susceptibilidad a enfermedades autoinmunes e infecciosas, pero no es el vínculo característico con las inmunodeficiencias primarias (generalmente monogénicas, no ligadas al CMH)."
+    },
+    {
+      "numero": 42,
+      "pergunta": "La anergia y posterior apoptosis de los linfocitos B2 maduros en periferia puede ser producida a consecuencia de:",
+      "opcoes": [
+        {"letra": "A", "texto": "Reconocer hidratos de carbono microbianos."},
+        {"letra": "B", "texto": "Reconocer haptenos."},
+        {"letra": "C", "texto": "Reconocer péptidos microbianos presentados por células dendríticas convencionales inmaduras a través de moléculas del CMH."},
+        {"letra": "D", "texto": "Reconocer antígenos proteicos opsonizados por anticuerpos IgG."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Los linfocitos B2 foliculares maduros son dependientes de T: para activarse productivamente requieren, además de la señal por el BCR, la colaboración de un linfocito T (señal 2, vía CD40L/citocinas). Al reconocer antígenos que no generan esa colaboración T -como hidratos de carbono microbianos, antígenos T-independientes-, la señalización aislada y sostenida por el BCR sin la segunda señal puede conducir a anergia y, eventualmente, apoptosis del clon B2.\n\nb) El reconocimiento de haptenos, en el contexto clásico hapteno-carrier, sigue permitiendo obtener ayuda T específica para el carrier acoplado. c) El reconocimiento de péptidos microbianos presentados por DC inmaduras a linfocitos T se relaciona más con la tolerancia periférica de linfocitos T, no con la anergia B2. d) El reconocimiento de antígenos proteicos opsonizados por IgG suele darse en un contexto normalmente inmunogénico, no anérgico."
+    },
+    {
+      "numero": 43,
+      "pergunta": "En relación a las citoquinas IL-1, IL-6 y TNF-α producidas por el macrófago activado:",
+      "opcoes": [
+        {"letra": "A", "texto": "Inducen la producción de la proteína C reactiva por los macrófagos."},
+        {"letra": "B", "texto": "Promueven un cuadro de neutropenia."},
+        {"letra": "C", "texto": "Inducen linfocitosis."},
+        {"letra": "D", "texto": "Incrementan la expresión de selectinas en la cara luminal del endotelio."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "D",
+      "feedback": "Respuesta correcta: D. IL-1, IL-6 y TNF-α (citocinas pro-inflamatorias del macrófago activado) inducen la expresión de selectinas (P- y E-selectina) en la superficie luminal del endotelio activado, iniciando el reclutamiento leucocitario (rolling) en el sitio de inflamación.\n\na) La proteína C reactiva es producida por los hepatocitos en respuesta a IL-6 (respuesta de fase aguda), no por los propios macrófagos. b) Estas citocinas promueven neutrofilia (liberación medular y reclutamiento de neutrófilos), no neutropenia. c) La respuesta sistémica típica incluye leucocitosis con predominio neutrofílico, no específicamente linfocitosis."
+    },
+    {
+      "numero": 44,
+      "pergunta": "En la respuesta inmune inducida por la vacuna conjugada frente a Haemophilus influenzae de tipo B:",
+      "opcoes": [
+        {"letra": "A", "texto": "Se generarán plasmocitos de vida media corta y plasmocitos de vida media larga contra los polisacáridos capsulares."},
+        {"letra": "B", "texto": "La vacuna no inducirá la formación de centros germinales."},
+        {"letra": "C", "texto": "No es recomendada su administración a niños menores de 2 años."},
+        {"letra": "D", "texto": "No se administra a pacientes inmunocomprometidos."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Las vacunas conjugadas (polisacárido capsular unido covalentemente a una proteína carrier) transforman un antígeno T-independiente en uno T-dependiente, permitiendo la colaboración T-B, la formación de centros germinales y la generación tanto de plasmocitos de vida corta como de plasmocitos de vida larga y células B de memoria específicas contra el polisacárido.\n\nb) Justamente la ventaja de la conjugación es inducir centros germinales, algo que el polisacárido solo (T-independiente) no logra eficazmente. c) Una de las principales ventajas de las vacunas conjugadas es poder recomendarse en lactantes/niños pequeños (menores de 2 años), a diferencia de las vacunas polisacáridas no conjugadas. d) No hay contraindicación absoluta en inmunocomprometidos; de hecho, suelen priorizarse en estos grupos de riesgo."
+    },
+    {
+      "numero": 45,
+      "pergunta": "En relación a las siguientes afirmaciones:",
+      "opcoes": [
+        {"letra": "A", "texto": "La inmunodifusión radial es una técnica cuantitativa, aplicable a la determinación de la concentración sérica de anticuerpos IgG, IgA e IgM y el componente C3 del complemento."},
+        {"letra": "B", "texto": "La intradermorreacción de Mantoux es una herramienta adecuada para la evaluación de la respuesta inmune humoral."},
+        {"letra": "C", "texto": "La citometría de flujo es aplicable a la determinación de la concentración de antígenos presentes en fluidos coroporales."},
+        {"letra": "D", "texto": "En un estudio de citometría de flujo, el control de isotipo refiere a un anticuerpo de la misma especificidad respecto del anticuerpo de interés, marcado con un fluorocromo diferente."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La inmunodifusión radial (técnica de Mancini) es un método cuantitativo que permite determinar la concentración de proteínas séricas (IgG, IgA, IgM, componentes del complemento como C3) midiendo el diámetro del anillo de precipitación en un gel con anticuerpo específico.\n\nb) La reacción de Mantoux (PPD) evalúa la hipersensibilidad retardada (respuesta celular T), no la respuesta humoral. c) La citometría de flujo cuantifica células en suspensión, no está diseñada para determinar concentración de antígenos solubles en fluidos corporales (para eso se usan técnicas como ELISA). d) El control de isotipo tiene especificidad irrelevante (no dirigida contra el antígeno de interés), del mismo isotipo y marcado con el mismo fluorocromo que el anticuerpo de interés; no comparte su especificidad."
+    },
+    {
+      "numero": 46,
+      "pergunta": "En relación a la inmunodeficiencia común variable:",
+      "opcoes": [
+        {"letra": "A", "texto": "Puede ser inducida por mutaciones en el gen que codifica a ICOS."},
+        {"letra": "B", "texto": "Suele cursar con agamaglubulinemia."},
+        {"letra": "C", "texto": "Suele diagnosticarse en el primer año de vida."},
+        {"letra": "D", "texto": "Puede ser inducida por mutaciones en el gen que codifica a la enzima ADA."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Se han descrito mutaciones en genes involucrados en la colaboración/activación de linfocitos B, incluyendo ICOS, como una de las causas (minoritarias pero reconocidas) de inmunodeficiencia común variable.\n\nb) Cursa típicamente con hipogammaglobulinemia (niveles bajos, no ausentes), no con agamaglobulinemia completa (más característica de la ligada al X por mutación en BTK). c) Suele diagnosticarse más tardíamente, en la adolescencia o adultez. d) Las mutaciones en el gen de la ADA producen inmunodeficiencia combinada severa, no inmunodeficiencia común variable."
+    },
+    {
+      "numero": 47,
+      "pergunta": "En relación a las células B de memoria:",
+      "opcoes": [
+        {"letra": "A", "texto": "Expresan CD40, CD27, HLA-DR y CCR7."},
+        {"letra": "B", "texto": "Representan del 1 al 2% del total de las células B2 circulantes en el individuo adulto."},
+        {"letra": "C", "texto": "Pueden ser activadas al reconocer el antígeno, pero no a través de receptores de reconocimiento de patrones."},
+        {"letra": "D", "texto": "Expresan un número menor de BCR en su superficie, respecto de los linfocitos B2 naive de los cuales derivan."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. Las células B de memoria expresan marcadores característicos como CD27 (marcador clásico de memoria B humana), CD40 (para recibir señales de colaboración T) y HLA-DR, además de moléculas de tráfico como CCR7 en ciertos subsets.\n\nb) Representan una proporción bastante mayor del compartimento B2 circulante (habitualmente 20-40% en adultos), no 1-2%. c) También pueden ser coactivadas a través de receptores de reconocimiento de patrones (TLRs), además del reconocimiento antigénico específico por el BCR. d) Suelen expresar niveles de BCR similares o mayores (con mayor afinidad, tras la maduración) respecto a las B2 naive, no un número menor."
+    },
+    {
+      "numero": 48,
+      "pergunta": "En relación a las siguientes afirmaciones:",
+      "opcoes": [
+        {"letra": "A", "texto": "La inmunodeficiencia severa combinada puede producirse a consecuencia de mutaciones en los genes que codifican a la cadena gama común, JAK3 y RAG-1/RAG-2,"},
+        {"letra": "B", "texto": "El síndrome de hiper-IgM producido a consecuencia de mutaciones en los genes que codifican para CD40 y CD40L comparten un similar patrón de herencia."},
+        {"letra": "C", "texto": "LAD-1 se produce a consecuencia de mutaciones en los genes que codifican para β2 integrinas y afecta tanto el fenómeno de rolling como la adherencia estable."},
+        {"letra": "D", "texto": "Las opciones a, b y c son incorrectas."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La inmunodeficiencia combinada severa (SCID) es genéticamente heterogénea; entre sus causas se incluyen mutaciones en la cadena gama común del receptor de citocinas (ligada al X), en JAK3 (corriente abajo de la cadena gama común) y en RAG-1/RAG-2 (necesarias para la recombinación V(D)J), todas comprometiendo el desarrollo linfocitario.\n\nb) CD40L está en el cromosoma X (herencia ligada al X), mientras que CD40 está en un autosoma (herencia autosómica recesiva); ambas formas de hiper-IgM NO comparten el mismo patrón de herencia. c) LAD-1 afecta específicamente la adherencia firme mediada por β2-integrinas (paso posterior al rolling, dependiente de selectinas); el rolling en sí no está primariamente afectado."
+    },
+    {
+      "numero": 49,
+      "pergunta": "En relación a las células T de memoria:",
+      "opcoes": [
+        {"letra": "A", "texto": "Al activarse expresarán CD80."},
+        {"letra": "B", "texto": "La frecuencia de células T de memoria frente a un epitope antigénico particular es de 100 a 1000 veces mayor respecto de la frecuencia de células T naive específicas para el mismo epitope."},
+        {"letra": "C", "texto": "Las células T de memoria centrales expresan CCR7, CCR9 y E-selectina."},
+        {"letra": "D", "texto": "Actúan como células presentadoras profesionales de antígeno."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "B",
+      "feedback": "Respuesta correcta: B. Tras una respuesta inmune primaria, la frecuencia de clones de memoria específicos para un epítope dado se expande considerablemente respecto a la frecuencia basal de precursores naive (del orden de 100 a 1000 veces mayor), lo que explica la rapidez y magnitud de la respuesta secundaria.\n\na) CD80 es una molécula coestimuladora de células presentadoras de antígeno activadas, no característica de linfocitos T tras su activación (que expresan CD40L, CD25, entre otros). c) Las células T de memoria central se caracterizan por expresar CCR7 y L-selectina (CD62L); CCR9 y E-selectina no son marcadores característicos de esta subpoblación. d) Los linfocitos T no son células presentadoras profesionales de antígeno (rol de células dendríticas, macrófagos y linfocitos B)."
+    },
+    {
+      "numero": 50,
+      "pergunta": "En relación a la IL-33:",
+      "opcoes": [
+        {"letra": "A", "texto": "Es producida por células epiteliales."},
+        {"letra": "B", "texto": "Promueve el desarrollo de reacciones de hipersensibilidad de tipos I, II y III."},
+        {"letra": "C", "texto": "Promueve la sobrevida de las células T de memoria."},
+        {"letra": "D", "texto": "Media un efecto quimiotáctico sobre los neutrófilos."}
+      ],
+      "tipo": "multipla_escolha",
+      "nota": null,
+      "resposta_correta": "A",
+      "feedback": "Respuesta correcta: A. La IL-33 es una alarmina producida y liberada por células epiteliales (y endoteliales) ante daño o estrés tisular, actuando como señal de peligro que favorece la polarización de respuestas tipo 2 (TH2, ILC2).\n\nb) La IL-33 promueve característicamente reacciones de hipersensibilidad de tipo I (alérgicas), no las de tipo II o III, de mecanismos distintos. c) No es su función característica descrita el sostener la sobrevida de células T de memoria (rol más asociado a IL-7/IL-15). d) La quimiotaxis de neutrófilos es mediada por IL-8/C5a, no por la IL-33, cuyo efecto es predominantemente sobre células del tipo 2."
     }
   ]
 }
