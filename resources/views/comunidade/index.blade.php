@@ -5,6 +5,7 @@
 @section('topbar_title', __('comunidade.mobile_title'))
 
 @push('styles')
+<link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ @filemtime(public_path('assets/css/shared-select.css')) }}">
 <style>
 .cm-banner {
     position: relative;
@@ -129,18 +130,16 @@
 .cm-composer { display: flex; gap: 12px; align-items: flex-start; }
 .cm-composer form { flex: 1; min-width: 0; }
 .cm-composer textarea,
-.cm-title-input,
-.cm-category-select {
+.cm-title-input {
     border-radius: 16px;
     border: 1px solid rgba(120,120,140,.2);
     background: rgba(255,255,255,.6);
 }
 .cm-title-input { border-radius: 12px; margin-bottom: 8px; font-weight: 700; }
-.cm-category-select { border-radius: 12px; margin-bottom: 8px; }
+.cm-category-select { margin-bottom: 8px; }
 .cm-composer textarea { resize: vertical; }
 [data-theme="dark"] .cm-composer textarea,
-[data-theme="dark"] .cm-title-input,
-[data-theme="dark"] .cm-category-select { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.14); color: var(--app-text); }
+[data-theme="dark"] .cm-title-input { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.14); color: var(--app-text); }
 .cm-composer .cm-submit-row { display: flex; justify-content: flex-end; margin-top: 10px; }
 .cm-composer-locked { text-align: center; padding: 26px 20px; }
 .cm-composer-locked .material-symbols-outlined { font-size: 2.2rem; color: #8b1fb8; opacity: .6; margin-bottom: 8px; display: block; }
@@ -389,7 +388,7 @@
                 <form method="POST" action="{{ route('comunidade.store') }}" enctype="multipart/form-data" id="cmComposerForm">
                     @csrf
                     <input type="text" name="titulo" class="form-control cm-title-input" maxlength="180" placeholder="{{ __('comunidade.form.title_placeholder') }}" value="{{ old('titulo') }}" required>
-                    <select name="materia_id" class="form-select cm-category-select" required>
+                    <select name="materia_id" class="bc-styled-select bc-styled-select--fluid cm-category-select" required>
                         <option value="" disabled @selected(old('materia_id') === null)>{{ __('comunidade.form.category_placeholder') }}</option>
                         @foreach ($materiasDoUsuario as $materia)
                             <option value="{{ $materia->id }}" @selected((string) old('materia_id') === (string) $materia->id)>{{ $materia->nome }}</option>
@@ -468,7 +467,7 @@
                                     @csrf
                                     @method('PUT')
                                     <input type="text" name="titulo" class="form-control cm-title-input" maxlength="180" value="{{ $post->titulo }}" required>
-                                    <select name="materia_id" class="form-select cm-category-select" required>
+                                    <select name="materia_id" class="bc-styled-select bc-styled-select--fluid cm-category-select" required>
                                         @foreach ($materiasDoUsuario as $materia)
                                             <option value="{{ $materia->id }}" @selected((int) $post->materia_id === (int) $materia->id)>{{ $materia->nome }}</option>
                                         @endforeach
@@ -656,6 +655,7 @@
 @endpush
 
 @push('scripts')
+<script src="{{ asset('assets/js/styled-select.js') }}?v={{ @filemtime(public_path('assets/js/styled-select.js')) }}" defer></script>
 <script>
 document.addEventListener('submit', function (e) {
     var form = e.target.closest('.cm-like-form');
