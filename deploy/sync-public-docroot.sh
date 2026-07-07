@@ -42,11 +42,16 @@ for favicon in img/favicon-bd-round.svg img/favicon-bd-round.png img/logo-bd.png
 done
 
 # Uploads (ex.: imagens da Comunidade) ficam em storage/app/public via disco 'public'.
-# `php artisan storage:link` cria $REPO/public/storage, mas quem serve o site é
-# $DOCROOT, não $REPO/public — sem este link, todo upload fica inacessível (404).
+# Tentamos symlink primeiro, mas a HostGator bloqueia o Apache de seguir link
+# simbólico pra fora do docroot (403 Forbidden), então copiamos os arquivos de
+# verdade — igual ao "Plano B" já usado acima pra img/assets.
 if [[ -d "$REPO/storage/app/public" ]]; then
-    ln -sfn "$REPO/storage/app/public" "$DOCROOT/storage"
-    echo "OK: storage symlink -> $DOCROOT/storage"
+    if [[ -L "$DOCROOT/storage" ]]; then
+        rm -f "$DOCROOT/storage"
+    fi
+    mkdir -p "$DOCROOT/storage"
+    cp -R "$REPO/storage/app/public/." "$DOCROOT/storage/"
+    echo "OK: storage -> $DOCROOT/storage (copiado)"
 fi
 
 echo "Sync concluído. Favicon: https://bancodechoices.com/favicon.ico (rota Laravel)"
