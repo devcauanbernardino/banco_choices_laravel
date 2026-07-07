@@ -28,10 +28,7 @@
                     <button type="button" class="cm-action-link" data-bs-toggle="collapse" data-bs-target="#cmEditComment{{ $comentario->id }}">
                         {{ __('comunidade.comment.edit') }}
                     </button>
-                    <form method="POST" action="{{ route('comunidade.comentarios.destroy', [$post, $comentario]) }}" class="cm-inline-form" onsubmit="return confirm(@json(__('comunidade.comment.delete_confirm')));">
-                        @csrf @method('DELETE')
-                        <button type="submit" class="cm-action-link cm-action-link--danger">{{ __('comunidade.post.delete') }}</button>
-                    </form>
+                    <button type="button" class="cm-action-link cm-action-link--danger" data-bs-toggle="collapse" data-bs-target="#cmDeleteComment{{ $comentario->id }}">{{ __('comunidade.post.delete') }}</button>
                 @else
                     <button type="button" class="cm-action-link" data-bs-toggle="modal" data-bs-target="#cmReportModal" data-cm-report-action="{{ route('comunidade.comentarios.denunciar', [$post, $comentario]) }}">
                         {{ __('comunidade.post.report') }}
@@ -51,6 +48,21 @@
                         <button type="submit" class="cm-btn">{{ __('comunidade.form.save') }}</button>
                     </div>
                 </form>
+            </div>
+        @endif
+
+        @if ($souDonoComentario)
+            <div class="collapse cm-confirm-banner" id="cmDeleteComment{{ $comentario->id }}">
+                <div class="cm-confirm-banner__inner">
+                    <span>{{ __('comunidade.comment.delete_confirm') }}</span>
+                    <div class="cm-confirm-banner__actions">
+                        <button type="button" class="cm-btn cm-btn--ghost" data-bs-toggle="collapse" data-bs-target="#cmDeleteComment{{ $comentario->id }}">{{ __('comunidade.form.cancel') }}</button>
+                        <form method="POST" action="{{ route('comunidade.comentarios.destroy', [$post, $comentario]) }}">
+                            @csrf @method('DELETE')
+                            <button type="submit" class="cm-btn cm-btn--danger">{{ __('comunidade.post.delete') }}</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         @endif
 

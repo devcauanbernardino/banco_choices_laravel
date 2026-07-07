@@ -15,6 +15,8 @@
     color: #fff;
     overflow: hidden;
     box-shadow: 0 14px 34px rgba(106,3,146,.25);
+    max-width: 1040px;
+    margin-inline: auto;
 }
 .cm-banner::before {
     content: '';
@@ -41,13 +43,16 @@
 .cm-banner h1 { position: relative; font-size: clamp(1.4rem,2.4vw,1.85rem); font-weight: 800; margin-bottom: 6px; }
 .cm-banner p { position: relative; opacity: .92; font-size: .92rem; margin: 0; max-width: 540px; }
 
-.cm-layout { display: grid; grid-template-columns: minmax(0,1fr) 290px; gap: 22px; align-items: start; }
+.cm-layout { display: grid; grid-template-columns: minmax(0,1fr) 290px; gap: 22px; align-items: start; max-width: 1040px; margin-inline: auto; }
 .cm-sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 88px; }
 @media (max-width: 991px) {
     .cm-layout { grid-template-columns: 1fr; }
     .cm-feed { order: 1; }
     .cm-sidebar { order: 2; position: static; }
 }
+
+.cm-topbar-row { max-width: 1040px; margin: 0 auto 14px; }
+.cm-topbar-row .cm-search-form input { padding: 11px 14px 11px 38px; font-size: .88rem; }
 
 .cm-card {
     border-radius: 16px;
@@ -146,16 +151,28 @@
 .cm-btn--ghost { background: rgba(139,31,184,.1); color: #6a0392; box-shadow: none; border: 1px solid rgba(139,31,184,.25); }
 .cm-btn--ghost:hover { background: rgba(139,31,184,.16); }
 [data-theme="dark"] .cm-btn--ghost { background: rgba(199,125,253,.14); color: #e0bbfd; border-color: rgba(199,125,253,.3); }
+.cm-btn--danger { background: linear-gradient(135deg,#dc3545,#a11729); box-shadow: 0 6px 18px rgba(220,53,69,.3); }
+[data-theme="dark"] .cm-btn--danger { background: linear-gradient(135deg,#f87171,#b91c2c); }
+
+.cm-confirm-banner { margin-top: 8px; }
+.cm-confirm-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: rgba(220,53,69,.08);
+    border: 1px solid rgba(220,53,69,.25);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: .82rem;
+    color: var(--app-text);
+}
+[data-theme="dark"] .cm-confirm-banner__inner { background: rgba(248,113,113,.1); border-color: rgba(248,113,113,.3); }
+.cm-confirm-banner__actions { display: flex; gap: 8px; flex-shrink: 0; }
+.cm-confirm-banner__actions form { display: inline-flex; }
 
 .cm-avatar { width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .75rem; }
-
-.cm-feed .cm-card,
-.cm-post,
-.cm-empty,
-.cm-results-count {
-    max-width: 720px;
-    margin-inline: auto;
-}
 
 .cm-results-count { font-size: .78rem; color: var(--app-muted); margin: 0 0 10px; font-weight: 600; }
 
@@ -344,6 +361,19 @@
     </div>
 @endif
 
+<div class="cm-card cm-topbar-row">
+    <form method="GET" action="{{ route('comunidade.index') }}" class="cm-search-form">
+        @if ($materiaFiltro)
+            <input type="hidden" name="materia" value="{{ $materiaFiltro }}">
+        @endif
+        @if ($ordenacao !== 'recent')
+            <input type="hidden" name="sort" value="{{ $ordenacao }}">
+        @endif
+        <span class="material-symbols-outlined" aria-hidden="true">search</span>
+        <input type="search" name="busca" class="form-control" value="{{ $busca }}" placeholder="{{ __('comunidade.search.placeholder') }}">
+    </form>
+</div>
+
 <div class="cm-layout">
     <div class="cm-feed">
         @php $euIniciais = mb_strtoupper(mb_substr(auth()->user()->nome ?? '?', 0, 1)); @endphp
@@ -450,6 +480,18 @@
                                     </div>
                                 </form>
                             </div>
+                            <div class="collapse cm-confirm-banner" id="cmDeletePost{{ $post->id }}">
+                                <div class="cm-confirm-banner__inner">
+                                    <span>{{ __('comunidade.post.delete_confirm') }}</span>
+                                    <div class="cm-confirm-banner__actions">
+                                        <button type="button" class="cm-btn cm-btn--ghost" data-bs-toggle="collapse" data-bs-target="#cmDeletePost{{ $post->id }}">{{ __('comunidade.form.cancel') }}</button>
+                                        <form method="POST" action="{{ route('comunidade.destroy', $post) }}">
+                                            @csrf @method('DELETE')
+                                            <button type="submit" class="cm-btn cm-btn--danger">{{ __('comunidade.post.delete') }}</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         @endif
                     </div>
 
@@ -480,13 +522,10 @@
                                     </button>
                                 </div>
                                 <div class="cm-action-slot">
-                                    <form method="POST" action="{{ route('comunidade.destroy', $post) }}" onsubmit="return confirm(@json(__('comunidade.post.delete_confirm')));">
-                                        @csrf @method('DELETE')
-                                        <button type="submit" class="cm-action-btn cm-action-btn--danger">
-                                            <span class="material-symbols-outlined" aria-hidden="true">delete</span>
-                                            {{ __('comunidade.post.delete') }}
-                                        </button>
-                                    </form>
+                                    <button type="button" class="cm-action-btn cm-action-btn--danger" data-bs-toggle="collapse" data-bs-target="#cmDeletePost{{ $post->id }}">
+                                        <span class="material-symbols-outlined" aria-hidden="true">delete</span>
+                                        {{ __('comunidade.post.delete') }}
+                                    </button>
                                 </div>
                             @else
                                 <div class="cm-action-slot">
@@ -520,19 +559,6 @@
     </div>
 
     <div class="cm-sidebar">
-        <div class="cm-card">
-            <form method="GET" action="{{ route('comunidade.index') }}" class="cm-search-form">
-                @if ($materiaFiltro)
-                    <input type="hidden" name="materia" value="{{ $materiaFiltro }}">
-                @endif
-                @if ($ordenacao !== 'recent')
-                    <input type="hidden" name="sort" value="{{ $ordenacao }}">
-                @endif
-                <span class="material-symbols-outlined" aria-hidden="true">search</span>
-                <input type="search" name="busca" class="form-control" value="{{ $busca }}" placeholder="{{ __('comunidade.search.placeholder') }}">
-            </form>
-        </div>
-
         <div class="cm-card cm-filter-card">
             <h3>{{ __('comunidade.sidebar.categories_title') }}</h3>
             <ul class="cm-filter-list">
