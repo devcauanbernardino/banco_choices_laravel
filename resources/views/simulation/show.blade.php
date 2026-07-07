@@ -177,6 +177,13 @@
                                 {{ __('quiz.multi_confirm') }}
                             </button>
                         </div>
+                    @elseif ($isStudy && ! $isMulti && ! $hasFeedback)
+                        <div style="margin-top:14px;">
+                            <button type="submit" name="resposta_confirm" value="1" id="qzConfirmBtn" {{ $respostaAtual === null ? 'disabled' : '' }}
+                                    style="padding:9px 18px; border-radius:10px; border:none; background:linear-gradient(135deg,#8b1fb8,#6a0392); color:#fff; font-weight:700; font-size:.84rem; cursor:pointer; opacity:{{ $respostaAtual === null ? '.5' : '1' }};">
+                                {{ __('quiz.multi_confirm') }}
+                            </button>
+                        </div>
                     @endif
 
                     @if ($hasFeedback)
@@ -324,10 +331,7 @@
 <script src="{{ asset('assets/js/theme.js') }}" defer></script>
 <script>
     (function () {
-        var isStudy = {{ $isStudy ? 'true' : 'false' }};
-        var alreadyFeedback = {{ $hasFeedback ? 'true' : 'false' }};
         var isMulti = {{ $isMulti ? 'true' : 'false' }};
-        var form = document.getElementById('quizForm');
 
         document.querySelectorAll('.qz-opt').forEach(function (opt) {
             opt.addEventListener('click', function (e) {
@@ -344,9 +348,10 @@
                 opt.classList.add('is-selected');
                 input.checked = true;
 
-                if (isStudy && !alreadyFeedback && form) {
-                    e.preventDefault();
-                    setTimeout(function () { form.submit(); }, 120);
+                var confirmBtn = document.getElementById('qzConfirmBtn');
+                if (confirmBtn) {
+                    confirmBtn.disabled = false;
+                    confirmBtn.style.opacity = '1';
                 }
             });
         });

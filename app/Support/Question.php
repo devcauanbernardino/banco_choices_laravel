@@ -119,7 +119,9 @@ class Question
                 .'Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.';
         }
 
-        return 'Según el banco de preguntas, la respuesta esperada es la opción '.$letter.': '.$snippet;
+        // Sem feedback editorial nem "nota" especial: o destaque visual da opção correta
+        // e o botão "Explicar com IA" já cobrem isso — não repetir a resposta em texto.
+        return '';
     }
 
     public function isCorrect(?string $answer): bool
