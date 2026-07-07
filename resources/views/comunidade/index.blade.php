@@ -103,7 +103,7 @@
 .cm-feed .cm-card,
 .cm-post,
 .cm-empty {
-    max-width: 600px;
+    max-width: 720px;
     margin-inline: auto;
 }
 
