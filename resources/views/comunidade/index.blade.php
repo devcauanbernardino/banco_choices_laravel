@@ -100,13 +100,29 @@
 
 .cm-avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .88rem; }
 
+.cm-post {
+    border-radius: 16px;
+    background: rgba(255,255,255,.55);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255,255,255,.5);
+    box-shadow: 0 8px 28px rgba(31,10,60,.08);
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+[data-theme="dark"] .cm-post { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 28px rgba(0,0,0,.35); }
+.cm-post__body { padding: 14px 16px; }
+
 .cm-post__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
 .cm-post__author { display: flex; align-items: center; gap: 10px; }
 .cm-post__name { font-weight: 700; color: var(--app-text); font-size: .88rem; margin: 0; }
 .cm-post__time { color: var(--app-muted); font-size: .74rem; margin: 0; }
 .cm-post__content { color: var(--app-text); font-size: .88rem; line-height: 1.5; white-space: pre-line; margin-bottom: 10px; }
 
-.cm-post__actions { display: flex; border-top: 1px solid rgba(120,120,140,.12); margin-top: 10px; }
+.cm-post__actions {
+    display: flex;
+    border-top: 1px solid rgba(120,120,140,.12);
+}
 [data-theme="dark"] .cm-post__actions { border-top-color: rgba(255,255,255,.08); }
 .cm-action-slot { flex: 1; display: flex; }
 .cm-action-slot + .cm-action-slot { border-left: 1px solid rgba(120,120,140,.12); }
@@ -121,7 +137,7 @@
     background: none;
     border: none;
     outline-offset: -2px;
-    padding: 4px 6px;
+    padding: 10px 16px;
     color: var(--app-muted);
     font-size: .8rem;
     font-weight: 600;
@@ -134,7 +150,7 @@
 .cm-action-btn .material-symbols-outlined { font-size: 1.1rem; }
 .cm-action-btn--danger:hover { color: #dc3545; background: rgba(220,53,69,.06); }
 
-.cm-comments { padding-top: 14px; border-top: 1px solid rgba(120,120,140,.15); }
+.cm-comments { padding: 14px 16px 16px; border-top: 1px solid rgba(120,120,140,.15); }
 [data-theme="dark"] .cm-comments { border-top-color: rgba(255,255,255,.1); }
 .cm-comment { display: flex; gap: 8px; margin-bottom: 8px; }
 .cm-comment__avatar { width: 26px; height: 26px; font-size: .7rem; }
@@ -252,32 +268,34 @@
         @else
             @foreach ($posts as $post)
                 @php $iniciais = mb_strtoupper(mb_substr($post->usuario->nome ?? '?', 0, 1)); @endphp
-                <div class="cm-card">
-                    <div class="cm-post__head">
-                        <div class="cm-post__author">
-                            <div class="cm-avatar" aria-hidden="true">{{ $iniciais }}</div>
-                            <div>
-                                <p class="cm-post__name">{{ $post->usuario->nome ?? '—' }}</p>
-                                <p class="cm-post__time">{{ $post->created_at->diffForHumans() }}</p>
+                <div class="cm-post">
+                    <div class="cm-post__body">
+                        <div class="cm-post__head">
+                            <div class="cm-post__author">
+                                <div class="cm-avatar" aria-hidden="true">{{ $iniciais }}</div>
+                                <div>
+                                    <p class="cm-post__name">{{ $post->usuario->nome ?? '—' }}</p>
+                                    <p class="cm-post__time">{{ $post->created_at->diffForHumans() }}</p>
+                                </div>
                             </div>
                         </div>
+                        <p class="cm-post__content">{{ $post->conteudo }}</p>
+                        @if ($post->imagens->isNotEmpty())
+                            @php
+                                $imagensVisiveis = $post->imagens->take(4);
+                                $imagensExtras = max(0, $post->imagens->count() - 4);
+                            @endphp
+                            <div class="cm-gallery" data-count="{{ $imagensVisiveis->count() }}">
+                                @foreach ($imagensVisiveis as $i => $imagem)
+                                    <a href="{{ $imagem->url }}" target="_blank" rel="noopener"
+                                       class="{{ $i === 3 && $imagensExtras > 0 ? 'cm-gallery__more' : '' }}"
+                                       @if ($i === 3 && $imagensExtras > 0) data-extra="+{{ $imagensExtras }}" @endif>
+                                        <img src="{{ $imagem->url }}" alt="" loading="lazy">
+                                    </a>
+                                @endforeach
+                            </div>
+                        @endif
                     </div>
-                    <p class="cm-post__content">{{ $post->conteudo }}</p>
-                    @if ($post->imagens->isNotEmpty())
-                        @php
-                            $imagensVisiveis = $post->imagens->take(4);
-                            $imagensExtras = max(0, $post->imagens->count() - 4);
-                        @endphp
-                        <div class="cm-gallery" data-count="{{ $imagensVisiveis->count() }}">
-                            @foreach ($imagensVisiveis as $i => $imagem)
-                                <a href="{{ $imagem->url }}" target="_blank" rel="noopener"
-                                   class="{{ $i === 3 && $imagensExtras > 0 ? 'cm-gallery__more' : '' }}"
-                                   @if ($i === 3 && $imagensExtras > 0) data-extra="+{{ $imagensExtras }}" @endif>
-                                    <img src="{{ $imagem->url }}" alt="" loading="lazy">
-                                </a>
-                            @endforeach
-                        </div>
-                    @endif
 
                     <div class="cm-post__actions">
                         <div class="cm-action-slot">
