@@ -149,6 +149,7 @@
 .cm-action-btn:focus-visible { outline: 2px solid rgba(139,31,184,.45); }
 .cm-action-btn .material-symbols-outlined { font-size: 1.1rem; }
 .cm-action-btn--danger:hover { color: #dc3545; background: rgba(220,53,69,.06); }
+[data-theme="dark"] .cm-action-btn--danger:hover { color: #f87171; background: rgba(248,113,113,.1); }
 
 .cm-comments { padding: 14px 16px 16px; border-top: 1px solid rgba(120,120,140,.15); }
 [data-theme="dark"] .cm-comments { border-top-color: rgba(255,255,255,.1); }
