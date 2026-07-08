@@ -129,7 +129,7 @@ class CatalogoSeeder extends Seeder
         if (! DB::table('materias')->where('id', 3)->exists()) {
             DB::table('materias')->insert([
                 'id' => 3,
-                'nome' => 'Biología',
+                'nome' => 'Biología (UNLP)',
                 'slug' => 'biologia-la-plata',
                 'agrupamento_id' => $agrLpPrimerAnId,
                 'ordem' => 1,
@@ -137,7 +137,7 @@ class CatalogoSeeder extends Seeder
             $this->fixSqliteSequence('materias');
         } else {
             DB::table('materias')->where('id', 3)->update([
-                'nome' => 'Biología',
+                'nome' => 'Biología (UNLP)',
                 'slug' => 'biologia-la-plata',
                 'agrupamento_id' => $agrLpPrimerAnId,
                 'ordem' => 1,
@@ -147,7 +147,7 @@ class CatalogoSeeder extends Seeder
         if (! DB::table('materias')->where('id', 4)->exists()) {
             DB::table('materias')->insert([
                 'id' => 4,
-                'nome' => 'Biología',
+                'nome' => 'Biología (CBC)',
                 'slug' => 'biologia-cbc',
                 'agrupamento_id' => $agrCbcPrimerAnId,
                 'ordem' => 1,
@@ -155,7 +155,7 @@ class CatalogoSeeder extends Seeder
             $this->fixSqliteSequence('materias');
         } else {
             DB::table('materias')->where('id', 4)->update([
-                'nome' => 'Biología',
+                'nome' => 'Biología (CBC)',
                 'slug' => 'biologia-cbc',
                 'agrupamento_id' => $agrCbcPrimerAnId,
                 'ordem' => 1,

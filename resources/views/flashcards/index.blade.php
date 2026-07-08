@@ -143,7 +143,7 @@
             @php $resumo = $resumoPorMateria[$m->id] ?? ['due_count' => 0, 'new_count' => 0, 'new_available_count' => 0]; @endphp
             <div class="fc-card">
                 <div class="fc-card__icon"><span class="material-symbols-outlined" aria-hidden="true">style</span></div>
-                <h3 class="fc-card__title">{{ $m->nome }}</h3>
+                <h3 class="fc-card__title">{{ \App\Support\MateriaLocale::nome($m) }}</h3>
                 <div class="fc-card__badges">
                     @if ($resumo['due_count'] > 0)
                         <span class="fc-badge fc-badge--due">{{ __('flashcards.card.due_count', ['n' => $resumo['due_count']]) }}</span>

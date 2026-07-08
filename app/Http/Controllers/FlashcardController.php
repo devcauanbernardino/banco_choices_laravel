@@ -8,6 +8,7 @@ use App\Services\Flashcards\FlashcardQueueBuilder;
 use App\Support\FlashcardBankLocator;
 use App\Support\FlashcardLocale;
 use App\Support\FlashcardSession;
+use App\Support\MateriaLocale;
 use App\Support\Sm2Scheduler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -63,7 +64,7 @@ class FlashcardController extends Controller
 
         $this->sessao->init([
             'materia' => $materiaId,
-            'materia_nome' => $materia->nome,
+            'materia_nome' => MateriaLocale::nome($materia),
             'fila' => $refs,
             'atual' => 0,
             'revelado' => false,
