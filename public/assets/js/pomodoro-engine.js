@@ -124,42 +124,20 @@ window.PomodoroEngine = (function () {
         return audioCtx;
     }
 
-    function makeNoiseBuffer(ctx, kind, seconds) {
+    /**
+     * Aproximacao sintetizada de chuva - usada so como fallback enquanto
+     * nao ha um chuva.mp3 real enviado (ver App\Support\AmbientSoundLocator).
+     */
+    function makeRainBuffer(ctx, seconds) {
         var length = Math.floor(ctx.sampleRate * seconds);
         var buffer = ctx.createBuffer(1, length, ctx.sampleRate);
         var data = buffer.getChannelData(0);
-        var i, white;
-
-        if (kind === 'pink') {
-            var b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
-            for (i = 0; i < length; i++) {
-                white = Math.random() * 2 - 1;
-                b0 = 0.99886 * b0 + white * 0.0555179;
-                b1 = 0.99332 * b1 + white * 0.0750759;
-                b2 = 0.96900 * b2 + white * 0.1538520;
-                b3 = 0.86650 * b3 + white * 0.3104856;
-                b4 = 0.55000 * b4 + white * 0.5329522;
-                b5 = -0.7616 * b5 - white * 0.0168980;
-                data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.11;
-                b6 = white * 0.115926;
-            }
-        } else if (kind === 'brown') {
-            var last = 0;
-            for (i = 0; i < length; i++) {
-                white = Math.random() * 2 - 1;
-                last = (last + 0.02 * white) / 1.02;
-                data[i] = last * 3.5;
-            }
-        } else if (kind === 'rain') {
-            var lastR = 0;
-            for (i = 0; i < length; i++) {
-                white = Math.random() * 2 - 1;
-                lastR = (lastR + 0.08 * white) / 1.08;
-                var drop = (Math.random() < 0.02) ? (Math.random() * 2 - 1) * 0.35 : 0;
-                data[i] = lastR * 2.2 + drop;
-            }
-        } else {
-            for (i = 0; i < length; i++) data[i] = Math.random() * 2 - 1;
+        var last = 0;
+        for (var i = 0; i < length; i++) {
+            var white = Math.random() * 2 - 1;
+            last = (last + 0.08 * white) / 1.08;
+            var drop = (Math.random() < 0.02) ? (Math.random() * 2 - 1) * 0.35 : 0;
+            data[i] = last * 2.2 + drop;
         }
 
         return buffer;
@@ -204,28 +182,24 @@ window.PomodoroEngine = (function () {
             return;
         }
 
-        // Sem arquivo real enviado ainda: aproximacao sintetizada (Web Audio).
-        // So existe fallback pra 'white'/'pink'/'brown'/'rain' - qualquer outro
-        // slug sem arquivo simplesmente nao toca nada (botao so aparece na UI
-        // quando o arquivo existe, exceto 'rain' que sempre tem este fallback).
-        if (['white', 'pink', 'brown', 'rain'].indexOf(kind) === -1) return;
+        // Sem arquivo real enviado ainda: so 'rain' tem aproximacao sintetizada
+        // (Web Audio) como fallback - qualquer outro slug sem arquivo
+        // simplesmente nao toca nada (botao so aparece na UI quando o arquivo
+        // existe, exceto 'rain' que sempre tem este fallback).
+        if (kind !== 'rain') return;
 
         var ctx = ensureAudioCtx();
         noiseNode = ctx.createBufferSource();
-        noiseNode.buffer = makeNoiseBuffer(ctx, kind, kind === 'rain' ? 6 : 3);
+        noiseNode.buffer = makeRainBuffer(ctx, 6);
         noiseNode.loop = true;
         noiseGain = ctx.createGain();
         noiseGain.gain.value = typeof volume === 'number' ? volume : 0.4;
 
-        if (kind === 'rain') {
-            noiseFilter = ctx.createBiquadFilter();
-            noiseFilter.type = 'lowpass';
-            noiseFilter.frequency.value = 3200;
-            noiseNode.connect(noiseFilter);
-            noiseFilter.connect(noiseGain);
-        } else {
-            noiseNode.connect(noiseGain);
-        }
+        noiseFilter = ctx.createBiquadFilter();
+        noiseFilter.type = 'lowpass';
+        noiseFilter.frequency.value = 3200;
+        noiseNode.connect(noiseFilter);
+        noiseFilter.connect(noiseGain);
         noiseGain.connect(ctx.destination);
         noiseNode.start();
     }

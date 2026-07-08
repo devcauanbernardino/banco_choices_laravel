@@ -239,9 +239,6 @@
                 <span class="pm-subject-label">{{ __('pomodoro.ambient.title') }}</span>
                 <div class="pm-ambient__options" id="pmAmbientOptions">
                     <button type="button" class="pm-ambient__btn is-active" data-pm-ambient="none">{{ __('pomodoro.ambient.none') }}</button>
-                    <button type="button" class="pm-ambient__btn" data-pm-ambient="white">{{ __('pomodoro.ambient.white') }}</button>
-                    <button type="button" class="pm-ambient__btn" data-pm-ambient="pink">{{ __('pomodoro.ambient.pink') }}</button>
-                    <button type="button" class="pm-ambient__btn" data-pm-ambient="brown">{{ __('pomodoro.ambient.brown') }}</button>
                     <button type="button" class="pm-ambient__btn" data-pm-ambient="rain">{{ __('pomodoro.ambient.rain') }}</button>
                     @foreach ($pmExtraAmbientSlugs as $slug)
                         <button type="button" class="pm-ambient__btn" data-pm-ambient="{{ $slug }}">{{ $pmAmbientLabel($slug) }}</button>
