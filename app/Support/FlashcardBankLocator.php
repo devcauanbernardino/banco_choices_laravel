@@ -16,7 +16,17 @@ final class FlashcardBankLocator
         return match ($materiaId) {
             1 => 'flashcards_microbiologia.json',
             2 => 'flashcards_biologia_celular.json',
+            3 => 'flashcards_biologia_unlp.json',
+            4 => 'flashcards_biologia_cbc.json',
+            5 => 'flashcards_farmaco2_cat3.json',
+            9 => 'flashcards_fisiologia.json',
             11 => 'flashcards_imunologia.json',
+            12 => 'flashcards_patologia.json',
+            13 => 'flashcards_farmaco1.json',
+            16 => 'flashcards_bioetica.json',
+            // Neurocirugia, Ciencias Sociales y Medicina e Farmacologia General: o id
+            // difere entre local e producao, por isso resolvem via slug (abaixo) em vez
+            // de id fixo — os arquivos ja tem o nome esperado pelo slug de cada um.
             default => self::filenameFromSlug($materiaId) ?? 'flashcards_materia_'.$materiaId.'.json',
         };
     }
