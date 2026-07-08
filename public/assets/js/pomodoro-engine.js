@@ -8,6 +8,7 @@
  */
 window.PomodoroEngine = (function () {
     var STORAGE_KEY = 'bancochoices-pomodoro-session';
+    var AMBIENT_KEY = 'bancochoices-pomodoro-ambient';
     var ABANDON_MS = 3 * 60 * 60 * 1000;
 
     var state = null;
@@ -16,6 +17,27 @@ window.PomodoroEngine = (function () {
     var noiseNode = null;
     var noiseFilter = null;
     var noiseGain = null;
+
+    // Preferencia de som ambiente e independente da sessao do cronometro (existe
+    // mesmo com o timer parado/idle), pra dar pra ouvir/trocar o som mesmo antes
+    // de iniciar um foco.
+    var ambientPrefs = { kind: 'none', volume: 0.4 };
+
+    function loadAmbientPrefs() {
+        try {
+            var raw = localStorage.getItem(AMBIENT_KEY);
+            if (!raw) return;
+            var parsed = JSON.parse(raw);
+            if (parsed && typeof parsed === 'object') {
+                if (typeof parsed.kind === 'string') ambientPrefs.kind = parsed.kind;
+                if (typeof parsed.volume === 'number') ambientPrefs.volume = parsed.volume;
+            }
+        } catch (e) { /* ignore */ }
+    }
+
+    function persistAmbientPrefs() {
+        try { localStorage.setItem(AMBIENT_KEY, JSON.stringify(ambientPrefs)); } catch (e) { /* ignore */ }
+    }
 
     function nowMs() { return Date.now(); }
 
@@ -172,17 +194,19 @@ window.PomodoroEngine = (function () {
     }
 
     function setAmbient(kind) {
-        if (!state) return;
-        state.ambient = kind;
-        persist();
-        if (state.mode !== 'idle') startAmbient(kind, state.ambientVolume);
-        else stopAmbient();
+        ambientPrefs.kind = kind || 'none';
+        persistAmbientPrefs();
+        if (ambientPrefs.kind === 'none') {
+            stopAmbient();
+        } else {
+            startAmbient(ambientPrefs.kind, ambientPrefs.volume);
+        }
+        emitUpdate();
     }
 
     function setAmbientVolume(v) {
-        if (!state) return;
-        state.ambientVolume = v;
-        persist();
+        ambientPrefs.volume = v;
+        persistAmbientPrefs();
         if (noiseGain) noiseGain.gain.value = v;
     }
 
@@ -194,7 +218,13 @@ window.PomodoroEngine = (function () {
     }
 
     function publicState() {
-        if (!state) return { mode: 'idle', running: false, remainingSec: 0, totalSec: 0, cycles: 0, ambient: 'none', ambientVolume: 0.4 };
+        if (!state) {
+            return {
+                mode: 'idle', running: false, remainingSec: 0, totalSec: 0, cycles: 0,
+                ambient: ambientPrefs.kind, ambientVolume: ambientPrefs.volume,
+                audioState: audioCtx ? audioCtx.state : 'none'
+            };
+        }
         var totalSec = (state.mode === 'focus' ? state.focusMin : state.breakMin) * 60;
         return {
             mode: state.mode,
@@ -206,8 +236,8 @@ window.PomodoroEngine = (function () {
             materiaNome: state.materiaNome,
             focusMin: state.focusMin,
             breakMin: state.breakMin,
-            ambient: state.ambient,
-            ambientVolume: state.ambientVolume,
+            ambient: ambientPrefs.kind,
+            ambientVolume: ambientPrefs.volume,
             audioState: audioCtx ? audioCtx.state : 'none'
         };
     }
@@ -257,13 +287,11 @@ window.PomodoroEngine = (function () {
             focusMin: opts.focusMin,
             breakMin: opts.breakMin,
             cycles: 0,
-            sessaoUid: 'pm-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10),
-            ambient: (state && state.ambient) || 'none',
-            ambientVolume: (state && typeof state.ambientVolume === 'number') ? state.ambientVolume : 0.4
+            sessaoUid: 'pm-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10)
         };
         persist();
         startTickLoop();
-        if (state.ambient !== 'none') startAmbient(state.ambient, state.ambientVolume);
+        if (ambientPrefs.kind !== 'none' && !noiseNode) startAmbient(ambientPrefs.kind, ambientPrefs.volume);
         emitUpdate();
     }
 
@@ -286,7 +314,7 @@ window.PomodoroEngine = (function () {
         state.running = true;
         persist();
         startTickLoop();
-        if (state.ambient !== 'none') startAmbient(state.ambient, state.ambientVolume);
+        if (ambientPrefs.kind !== 'none') startAmbient(ambientPrefs.kind, ambientPrefs.volume);
         emitUpdate();
     }
 
@@ -310,6 +338,8 @@ window.PomodoroEngine = (function () {
     }
 
     function init() {
+        loadAmbientPrefs();
+
         var loaded = loadState();
         var currentUserId = window.POMODORO_USER_ID || null;
         if (loaded && loaded.mode && loaded.mode !== 'idle' && loaded.userId === currentUserId) {
@@ -323,7 +353,7 @@ window.PomodoroEngine = (function () {
                 } else {
                     if (overdueMs > 0) handlePhaseEnd();
                     startTickLoop();
-                    if (state.ambient !== 'none') startAmbient(state.ambient, state.ambientVolume);
+                    if (ambientPrefs.kind !== 'none') startAmbient(ambientPrefs.kind, ambientPrefs.volume);
                 }
             }
         }
