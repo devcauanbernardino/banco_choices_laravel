@@ -12,6 +12,16 @@
         'gato' => 'gato.gif',
     ];
     $pmMascoteGif = $pmMascoteKey ? ($pmMascoteGifs[$pmMascoteKey] ?? null) : null;
+
+    // 'rain' sempre aparece (tem fallback sintetizado); as demais so aparecem
+    // quando o arquivo real foi enviado (ver App\Support\AmbientSoundLocator).
+    $pmAmbientFiles = \App\Support\AmbientSoundLocator::available();
+    $pmExtraAmbientSlugs = array_keys(array_diff_key($pmAmbientFiles, ['rain' => true]));
+    $pmAmbientLabel = function (string $slug) {
+        $key = 'pomodoro.ambient.'.$slug;
+
+        return \Illuminate\Support\Facades\Lang::has($key) ? __($key) : \Illuminate\Support\Str::title(str_replace(['_', '-'], ' ', $slug));
+    };
 @endphp
 
 @push('styles')
@@ -233,6 +243,9 @@
                     <button type="button" class="pm-ambient__btn" data-pm-ambient="pink">{{ __('pomodoro.ambient.pink') }}</button>
                     <button type="button" class="pm-ambient__btn" data-pm-ambient="brown">{{ __('pomodoro.ambient.brown') }}</button>
                     <button type="button" class="pm-ambient__btn" data-pm-ambient="rain">{{ __('pomodoro.ambient.rain') }}</button>
+                    @foreach ($pmExtraAmbientSlugs as $slug)
+                        <button type="button" class="pm-ambient__btn" data-pm-ambient="{{ $slug }}">{{ $pmAmbientLabel($slug) }}</button>
+                    @endforeach
                 </div>
                 <div class="pm-ambient__volume">
                     <span class="material-symbols-outlined" aria-hidden="true">volume_down</span>

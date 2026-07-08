@@ -17,6 +17,7 @@ window.PomodoroEngine = (function () {
     var noiseNode = null;
     var noiseFilter = null;
     var noiseGain = null;
+    var ambientAudioEl = null;
 
     // Preferencia de som ambiente e independente da sessao do cronometro (existe
     // mesmo com o timer parado/idle), pra dar pra ouvir/trocar o som mesmo antes
@@ -165,14 +166,50 @@ window.PomodoroEngine = (function () {
     }
 
     function stopAmbient() {
+        if (ambientAudioEl) { ambientAudioEl.pause(); ambientAudioEl.src = ''; ambientAudioEl = null; }
         if (noiseNode) { try { noiseNode.stop(); } catch (e) { /* ignore */ } noiseNode.disconnect(); noiseNode = null; }
         if (noiseFilter) { noiseFilter.disconnect(); noiseFilter = null; }
         if (noiseGain) { noiseGain.disconnect(); noiseGain = null; }
     }
 
+    /**
+     * Arquivo de audio real (mp3/ogg) enviado pelo usuario tem prioridade sobre
+     * o ruido sintetizado - ver App\Support\AmbientSoundLocator, exposto via
+     * window.POMODORO_AMBIENT_FILES (slug => URL publica).
+     */
+    function startRealAudio(url, volume) {
+        ambientAudioEl = new Audio(url);
+        ambientAudioEl.loop = true;
+        ambientAudioEl.volume = typeof volume === 'number' ? volume : 0.4;
+        var attempt = function () { return ambientAudioEl && ambientAudioEl.play().catch(function () { /* ignore */ }); };
+        attempt();
+        var retry = function () {
+            attempt();
+            document.removeEventListener('click', retry);
+            document.removeEventListener('touchstart', retry);
+            document.removeEventListener('keydown', retry);
+        };
+        document.addEventListener('click', retry);
+        document.addEventListener('touchstart', retry);
+        document.addEventListener('keydown', retry);
+    }
+
     function startAmbient(kind, volume) {
         stopAmbient();
         if (!kind || kind === 'none') return;
+
+        var fileUrl = (window.POMODORO_AMBIENT_FILES || {})[kind];
+        if (fileUrl) {
+            startRealAudio(fileUrl, volume);
+            return;
+        }
+
+        // Sem arquivo real enviado ainda: aproximacao sintetizada (Web Audio).
+        // So existe fallback pra 'white'/'pink'/'brown'/'rain' - qualquer outro
+        // slug sem arquivo simplesmente nao toca nada (botao so aparece na UI
+        // quando o arquivo existe, exceto 'rain' que sempre tem este fallback).
+        if (['white', 'pink', 'brown', 'rain'].indexOf(kind) === -1) return;
+
         var ctx = ensureAudioCtx();
         noiseNode = ctx.createBufferSource();
         noiseNode.buffer = makeNoiseBuffer(ctx, kind, kind === 'rain' ? 6 : 3);
@@ -208,6 +245,7 @@ window.PomodoroEngine = (function () {
         ambientPrefs.volume = v;
         persistAmbientPrefs();
         if (noiseGain) noiseGain.gain.value = v;
+        if (ambientAudioEl) ambientAudioEl.volume = v;
     }
 
     // ---- Cronometro ----
@@ -217,12 +255,17 @@ window.PomodoroEngine = (function () {
         return Math.max(0, (state.phaseEndsAt || 0) - nowMs());
     }
 
+    function ambientAudioState() {
+        if (ambientAudioEl) return ambientAudioEl.paused ? 'suspended' : 'running';
+        return audioCtx ? audioCtx.state : 'none';
+    }
+
     function publicState() {
         if (!state) {
             return {
                 mode: 'idle', running: false, remainingSec: 0, totalSec: 0, cycles: 0,
                 ambient: ambientPrefs.kind, ambientVolume: ambientPrefs.volume,
-                audioState: audioCtx ? audioCtx.state : 'none'
+                audioState: ambientAudioState()
             };
         }
         var totalSec = (state.mode === 'focus' ? state.focusMin : state.breakMin) * 60;
@@ -238,7 +281,7 @@ window.PomodoroEngine = (function () {
             breakMin: state.breakMin,
             ambient: ambientPrefs.kind,
             ambientVolume: ambientPrefs.volume,
-            audioState: audioCtx ? audioCtx.state : 'none'
+            audioState: ambientAudioState()
         };
     }
 
@@ -291,7 +334,7 @@ window.PomodoroEngine = (function () {
         };
         persist();
         startTickLoop();
-        if (ambientPrefs.kind !== 'none' && !noiseNode) startAmbient(ambientPrefs.kind, ambientPrefs.volume);
+        if (ambientPrefs.kind !== 'none' && !noiseNode && !ambientAudioEl) startAmbient(ambientPrefs.kind, ambientPrefs.volume);
         emitUpdate();
     }
 

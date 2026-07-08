@@ -10,6 +10,7 @@
 <script>
 window.POMODORO_LOG_URL = @json(route('pomodoro.ciclo.store'));
 window.POMODORO_USER_ID = @json((string) auth()->id());
+window.POMODORO_AMBIENT_FILES = @json(\App\Support\AmbientSoundLocator::availableUrls());
 </script>
 <script src="{{ asset('assets/js/pomodoro-engine.js') }}?v={{ @filemtime(public_path('assets/js/pomodoro-engine.js')) }}"></script>
 
