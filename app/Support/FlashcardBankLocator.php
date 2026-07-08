@@ -15,6 +15,7 @@ final class FlashcardBankLocator
     {
         return match ($materiaId) {
             1 => 'flashcards_microbiologia.json',
+            2 => 'flashcards_biologia_celular.json',
             11 => 'flashcards_imunologia.json',
             default => self::filenameFromSlug($materiaId) ?? 'flashcards_materia_'.$materiaId.'.json',
         };
