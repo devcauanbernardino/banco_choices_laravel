@@ -67,6 +67,15 @@
     $totalRespondidas = count(array_filter($mapaStatus, fn ($s) => $s !== 'pendente'));
     $totalCorretas = count(array_filter($mapaStatus, fn ($s) => $s === 'correta'));
     $pctAcertos = $totalRespondidas > 0 ? round(($totalCorretas / $totalRespondidas) * 100) : 0;
+
+    $mascoteKey = auth()->user()->mascote ?? null;
+    $mascoteFiles = [
+        'robo' => 'robo-choice.png',
+        'fantasma' => 'fantasma-choice.png',
+        'gato' => 'gato-choice.png',
+    ];
+    $mascoteFile = $mascoteFiles[$mascoteKey] ?? null;
+    $mascoteNome = $mascoteKey ? __('mascote.'.$mascoteKey.'.nome') : null;
 @endphp
 
 <div style="display:flex; min-height:100svh; background:var(--app-bg);">
@@ -198,8 +207,12 @@
 
                             <div style="margin-top:14px;">
                                 <button type="button" id="qzAiExplainBtn" style="display:inline-flex; align-items:center; gap:7px; padding:8px 16px; border-radius:10px; border:1.5px solid rgba(139,31,184,.35); background:rgba(139,31,184,.06); color:#8b1fb8; font-size:.8rem; font-weight:700; cursor:pointer;">
-                                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem;">auto_awesome</span>
-                                    {{ __('quiz.ai.explain_btn') }}
+                                    @if ($mascoteFile)
+                                        <img src="{{ asset('assets/img/mascots/'.$mascoteFile) }}" alt="" style="width:22px; height:22px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+                                    @else
+                                        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem;">auto_awesome</span>
+                                    @endif
+                                    {{ $mascoteNome ? __('quiz.ai.explain_btn_mascote', ['mascote' => $mascoteNome]) : __('quiz.ai.explain_btn') }}
                                 </button>
                                 <div id="qzAiExplainBox" class="d-none" style="margin-top:10px; padding:13px 16px; border-radius:12px; background:rgba(139,31,184,.06); border:1px solid rgba(139,31,184,.2);">
                                     <p id="qzAiExplainText" style="font-size:.85rem; color:var(--app-text); line-height:1.65; margin:0;"></p>
