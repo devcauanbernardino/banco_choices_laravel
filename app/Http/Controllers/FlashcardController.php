@@ -6,6 +6,7 @@ use App\Models\FlashcardProgresso;
 use App\Models\Materia;
 use App\Services\Flashcards\FlashcardQueueBuilder;
 use App\Support\FlashcardBankLocator;
+use App\Support\FlashcardLocale;
 use App\Support\FlashcardSession;
 use App\Support\Sm2Scheduler;
 use Illuminate\Http\JsonResponse;
@@ -126,6 +127,7 @@ class FlashcardController extends Controller
         $lista = FlashcardBankLocator::loadList($materiaId);
         $overlayKey = (int) $fila[$atual]['overlay_key'];
         $carta = $lista[$overlayKey] ?? [];
+        $carta = FlashcardLocale::apply($carta, $overlayKey, app()->getLocale(), FlashcardBankLocator::filenameFor($materiaId));
         $revelado = (bool) $this->sessao->get('revelado');
 
         $frente = (string) ($carta['frente'] ?? '');
