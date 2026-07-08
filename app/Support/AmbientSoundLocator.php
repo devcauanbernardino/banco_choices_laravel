@@ -4,12 +4,15 @@ namespace App\Support;
 
 /**
  * Sons ambiente reais que o usuario envia manualmente (upload direto na
- * pasta, sem passar por deploy/git). Convencao: cada som e uma subpasta em
- * public/assets/audio/<slug>/ contendo um arquivo de audio (mp3/ogg/wav/
- * flac/m4a) - o nome do arquivo em si nao importa, pega o primeiro audio
- * encontrado dentro da pasta. O botao na UI so aparece quando a pasta/arquivo
- * existir. 'rain' e especial: tem fallback sintetizado no motor JS
- * (public/assets/js/pomodoro-engine.js) quando nao ha arquivo real ainda.
+ * pasta, sem passar por deploy/git). Aceita duas convencoes em
+ * public/assets/audio/: (a) uma subpasta <slug>/ contendo um arquivo de
+ * audio (mp3/ogg/wav/flac/m4a) - o nome do arquivo dentro nao importa; ou
+ * (b) o arquivo solto direto na raiz (upload "achatado", comum em
+ * ferramentas de upload de pasta do cPanel que nao preservam subpastas) -
+ * nesse caso o slug vem do nome do arquivo sem extensao. O botao na UI so
+ * aparece quando o arquivo existir. 'rain'/'chuva' e especial: tem
+ * fallback sintetizado no motor JS (public/assets/js/pomodoro-engine.js)
+ * quando nao ha arquivo real ainda.
  */
 final class AmbientSoundLocator
 {
@@ -38,14 +41,30 @@ final class AmbientSoundLocator
             if ($entry === '.' || $entry === '..') {
                 continue;
             }
-            $dir = $root.DIRECTORY_SEPARATOR.$entry;
-            if (! is_dir($dir)) {
+            $path = $root.DIRECTORY_SEPARATOR.$entry;
+
+            if (is_dir($path)) {
+                // Convencao esperada: public/assets/audio/<slug>/<arquivo>.
+                $file = self::findAudioFile($path, $entry);
+                if ($file !== null) {
+                    $slug = self::SLUG_ALIASES[$entry] ?? $entry;
+                    $out[$slug] = $entry.'/'.$file;
+                }
+
                 continue;
             }
-            $file = self::findAudioFile($dir, $entry);
-            if ($file !== null) {
-                $slug = self::SLUG_ALIASES[$entry] ?? $entry;
-                $out[$slug] = $entry.'/'.$file;
+
+            // Tolerante a upload "achatado" (ferramentas de upload de pasta do
+            // cPanel as vezes nao preservam subpastas): mp3/wav/etc. soltos
+            // direto em public/assets/audio/ tambem contam, usando o nome do
+            // arquivo (sem extensao) como slug.
+            $ext = strtolower(pathinfo($entry, PATHINFO_EXTENSION));
+            if (in_array($ext, self::EXTENSIONS, true)) {
+                $slugFromFile = pathinfo($entry, PATHINFO_FILENAME);
+                $slug = self::SLUG_ALIASES[$slugFromFile] ?? $slugFromFile;
+                if (! isset($out[$slug])) {
+                    $out[$slug] = $entry;
+                }
             }
         }
 
