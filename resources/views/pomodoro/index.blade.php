@@ -4,6 +4,16 @@
 @section('mobile_title', __('pomodoro.mobile_title'))
 @section('topbar_title', __('pomodoro.mobile_title'))
 
+@php
+    $pmMascoteKey = auth()->user()->mascote ?? null;
+    $pmMascoteGifs = [
+        'robo' => 'robo.gif',
+        'fantasma' => 'fantasminha.gif',
+        'gato' => 'gato.gif',
+    ];
+    $pmMascoteGif = $pmMascoteKey ? ($pmMascoteGifs[$pmMascoteKey] ?? null) : null;
+@endphp
+
 @push('styles')
 <link rel="stylesheet" href="{{ asset('assets/css/shared-select.css') }}?v={{ @filemtime(public_path('assets/css/shared-select.css')) }}">
 <style>
@@ -84,6 +94,32 @@
 .pm-session-row__meta { color: var(--app-muted); font-size: .76rem; }
 .pm-empty { text-align: center; color: var(--app-muted); font-size: .85rem; padding: 20px 0; }
 .pm-chart-wrap { position: relative; height: 200px; }
+
+.pm-card { position: relative; }
+.pm-fullscreen-btn { position: absolute; top: 16px; right: 16px; background: transparent; border: none; color: var(--app-muted); cursor: pointer; display: flex; padding: 4px; border-radius: 8px; }
+.pm-fullscreen-btn:hover { background: rgba(139,31,184,.1); color: #8b1fb8; }
+.pm-fullscreen-btn .material-symbols-outlined { font-size: 1.3rem; }
+
+.pm-mascote { display: flex; justify-content: center; margin-top: 12px; }
+.pm-mascote img { width: 64px; height: 64px; object-fit: contain; }
+
+.pm-ambient { margin-top: 26px; padding-top: 20px; border-top: 1px solid rgba(120,120,140,.14); }
+.pm-ambient__options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.pm-ambient__btn { padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(120,120,140,.25); background: rgba(255,255,255,.5); color: var(--app-text); font-size: .78rem; font-weight: 600; cursor: pointer; }
+[data-theme="dark"] .pm-ambient__btn { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
+.pm-ambient__btn.is-active { background: linear-gradient(135deg,#8b1fb8,#6a0392); color: #fff; border-color: transparent; }
+.pm-ambient__volume { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.pm-ambient__volume input[type="range"] { flex: 1; accent-color: #8b1fb8; }
+.pm-ambient__volume .material-symbols-outlined { color: var(--app-muted); font-size: 1.1rem; }
+
+.pm-fs-overlay { position: fixed; inset: 0; z-index: 2000; background: #0b0416; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; }
+.pm-fs-overlay.d-none { display: none; }
+.pm-fs-overlay img.pm-fs-mascote { width: 120px; height: 120px; object-fit: contain; margin-bottom: 18px; }
+.pm-fs-time { font-size: clamp(3rem,14vw,7rem); font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1; }
+.pm-fs-state { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #c77dfd; margin-top: 10px; }
+.pm-fs-subject { font-size: .9rem; color: rgba(255,255,255,.6); margin-top: 6px; }
+.pm-fs-controls { display: flex; gap: 12px; margin-top: 34px; }
+.pm-fs-controls .pm-btn--ghost { background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.25); }
 </style>
 @endpush
 
@@ -98,6 +134,9 @@
 @else
     <div class="pm-layout">
         <div class="pm-card">
+            <button type="button" class="pm-fullscreen-btn" id="pmFullscreenBtn" aria-label="{{ __('pomodoro.form.fullscreen') }}" title="{{ __('pomodoro.form.fullscreen') }}">
+                <span class="material-symbols-outlined" aria-hidden="true">fullscreen</span>
+            </button>
             <label class="pm-subject-label" for="pmMateria">{{ __('pomodoro.form.subject_label') }}</label>
             <select id="pmMateria" class="bc-styled-select bc-styled-select--fluid">
                 @foreach ($materias as $m)
@@ -139,6 +178,12 @@
                 <p class="pm-cycle-count" id="pmCycleCount"></p>
             </div>
 
+            @if ($pmMascoteGif)
+                <div class="pm-mascote">
+                    <img src="{{ asset('assets/img/mascots/mascots-gifs/'.$pmMascoteGif) }}" alt="" id="pmMascoteImg">
+                </div>
+            @endif
+
             <div class="pm-controls" id="pmControls">
                 <button type="button" class="pm-btn pm-btn--primary" id="pmStartBtn">{{ __('pomodoro.form.start') }}</button>
                 <button type="button" class="pm-btn pm-btn--ghost d-none" id="pmPauseBtn">{{ __('pomodoro.form.pause') }}</button>
@@ -150,6 +195,22 @@
                 <p class="pm-summary__title">{{ __('pomodoro.summary.title') }}</p>
                 <p class="pm-summary__body" id="pmSummaryBody"></p>
                 <button type="button" class="pm-btn pm-btn--primary" id="pmSummaryOkBtn">{{ __('pomodoro.summary.cta_ok') }}</button>
+            </div>
+
+            <div class="pm-ambient">
+                <span class="pm-subject-label">{{ __('pomodoro.ambient.title') }}</span>
+                <div class="pm-ambient__options" id="pmAmbientOptions">
+                    <button type="button" class="pm-ambient__btn is-active" data-pm-ambient="none">{{ __('pomodoro.ambient.none') }}</button>
+                    <button type="button" class="pm-ambient__btn" data-pm-ambient="white">{{ __('pomodoro.ambient.white') }}</button>
+                    <button type="button" class="pm-ambient__btn" data-pm-ambient="pink">{{ __('pomodoro.ambient.pink') }}</button>
+                    <button type="button" class="pm-ambient__btn" data-pm-ambient="brown">{{ __('pomodoro.ambient.brown') }}</button>
+                    <button type="button" class="pm-ambient__btn" data-pm-ambient="rain">{{ __('pomodoro.ambient.rain') }}</button>
+                </div>
+                <div class="pm-ambient__volume">
+                    <span class="material-symbols-outlined" aria-hidden="true">volume_down</span>
+                    <input type="range" id="pmAmbientVolume" min="0" max="1" step="0.05" value="0.4" aria-label="{{ __('pomodoro.ambient.volume') }}">
+                    <span class="material-symbols-outlined" aria-hidden="true">volume_up</span>
+                </div>
             </div>
         </div>
 
@@ -204,6 +265,20 @@
                     @endif
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="pm-fs-overlay d-none" id="pmFsOverlay">
+        @if ($pmMascoteGif)
+            <img src="{{ asset('assets/img/mascots/mascots-gifs/'.$pmMascoteGif) }}" alt="" class="pm-fs-mascote">
+        @endif
+        <div class="pm-fs-time" id="pmFsTime">25:00</div>
+        <div class="pm-fs-state" id="pmFsState">{{ __('pomodoro.state.idle') }}</div>
+        <div class="pm-fs-subject" id="pmFsSubject"></div>
+        <div class="pm-fs-controls">
+            <button type="button" class="pm-btn pm-btn--ghost" id="pmFsPauseBtn">{{ __('pomodoro.form.pause') }}</button>
+            <button type="button" class="pm-btn pm-btn--ghost" id="pmFsSkipBtn">{{ __('pomodoro.form.skip') }}</button>
+            <button type="button" class="pm-btn pm-btn--ghost" id="pmFsExitBtn">{{ __('pomodoro.fullscreen.exit') }}</button>
         </div>
     </div>
 @endif
@@ -265,7 +340,18 @@
     var summaryEl = document.getElementById('pmSummary');
     var summaryBodyEl = document.getElementById('pmSummaryBody');
     var summaryOkBtn = document.getElementById('pmSummaryOkBtn');
-    var csrf = document.querySelector('meta[name="csrf-token"]');
+
+    var fsOverlay = document.getElementById('pmFsOverlay');
+    var fsTimeEl = document.getElementById('pmFsTime');
+    var fsStateEl = document.getElementById('pmFsState');
+    var fsSubjectEl = document.getElementById('pmFsSubject');
+    var fsPauseBtn = document.getElementById('pmFsPauseBtn');
+    var fsSkipBtn = document.getElementById('pmFsSkipBtn');
+    var fsExitBtn = document.getElementById('pmFsExitBtn');
+    var fullscreenBtn = document.getElementById('pmFullscreenBtn');
+
+    var ambientButtons = document.querySelectorAll('#pmAmbientOptions [data-pm-ambient]');
+    var ambientVolumeInput = document.getElementById('pmAmbientVolume');
 
     var LABELS = {
         focus: @json(__('pomodoro.state.focus')),
@@ -290,14 +376,6 @@
     ringFg.style.strokeDashoffset = 0;
 
     var focusMin = 25, breakMin = 5;
-    var mode = 'idle'; // idle | focus | break
-    var running = false;
-    var remaining = focusMin * 60;
-    var total = focusMin * 60;
-    var timerHandle = null;
-    var cycles = 0;
-    var sessaoUid = null;
-    var audioCtx = null;
 
     function updateStepperVal(el, delta, min, max) {
         var current = parseInt(el.textContent, 10);
@@ -306,10 +384,20 @@
         return next;
     }
 
+    function renderIdlePreview() {
+        var label = (focusMin < 10 ? '0' : '') + focusMin + ':00';
+        timeEl.textContent = label;
+        ringFg.style.strokeDashoffset = 0;
+        stateEl.textContent = LABELS.idle;
+        ring.classList.remove('is-break');
+        cycleCountEl.textContent = '';
+        if (fsTimeEl) { fsTimeEl.textContent = label; fsStateEl.textContent = LABELS.idle; fsSubjectEl.textContent = ''; }
+    }
+
     focusStepper.querySelectorAll('[data-pm-step]').forEach(function (btn) {
         btn.addEventListener('click', function () {
             focusMin = updateStepperVal(focusVal, parseInt(btn.dataset.pmStep, 10), 1, 90);
-            if (mode === 'idle') { remaining = focusMin * 60; total = remaining; renderTime(); }
+            if (window.PomodoroEngine.getState().mode === 'idle') renderIdlePreview();
         });
     });
     breakStepper.querySelectorAll('[data-pm-step]').forEach(function (btn) {
@@ -317,41 +405,6 @@
             breakMin = updateStepperVal(breakVal, parseInt(btn.dataset.pmStep, 10), 1, 30);
         });
     });
-
-    function beep() {
-        try {
-            if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            var o = audioCtx.createOscillator();
-            var g = audioCtx.createGain();
-            o.connect(g); g.connect(audioCtx.destination);
-            o.frequency.value = 660;
-            g.gain.setValueAtTime(0.0001, audioCtx.currentTime);
-            g.gain.exponentialRampToValueAtTime(0.2, audioCtx.currentTime + 0.02);
-            g.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.4);
-            o.start();
-            o.stop(audioCtx.currentTime + 0.4);
-        } catch (e) { /* ignore */ }
-    }
-
-    function renderTime() {
-        var m = Math.floor(remaining / 60);
-        var s = remaining % 60;
-        timeEl.textContent = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
-        var frac = total > 0 ? remaining / total : 0;
-        ringFg.style.strokeDashoffset = CIRC * frac;
-        stateEl.textContent = mode === 'focus' ? LABELS.focus : (mode === 'break' ? LABELS.brk : LABELS.idle);
-        ring.classList.toggle('is-break', mode === 'break');
-        cycleCountEl.textContent = cycles > 0 ? LABELS.cycle.replace('__N__', cycles) : '';
-    }
-
-    function headers() {
-        return {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-            'X-Requested-With': 'XMLHttpRequest',
-            'X-CSRF-TOKEN': csrf ? csrf.content : ''
-        };
-    }
 
     function escapeHtml(str) {
         var d = document.createElement('div');
@@ -395,55 +448,59 @@
         pmChartInstance.update();
     }
 
-    function logCycle() {
-        fetch('{{ route('pomodoro.ciclo.store') }}', {
-            method: 'POST',
-            headers: headers(),
-            body: JSON.stringify({
-                materia_id: materiaSelect.value,
-                sessao_uid: sessaoUid,
-                duracao_minutos: focusMin
-            })
-        }).then(function (r) { return r.json(); }).then(function (data) {
-            if (data.hoje) {
-                document.getElementById('pmTodayMinutes').textContent = LABELS.todayMinutes.replace('__N__', data.hoje.minutos);
-                document.getElementById('pmTodayCycles').textContent = LABELS.todayCycles.replace('__N__', data.hoje.ciclos);
-            }
-            if (typeof data.streak === 'number') {
-                document.getElementById('pmStreak').textContent = LABELS.streakDays.replace('__N__', data.streak);
-            }
-            renderPorMateria(data.porMateria);
-            renderSessoesRecentes(data.sessoesRecentes);
-            updateChart(data.ultimosDias);
-        }).catch(function () { /* silencioso: nao interrompe o timer local */ });
-    }
-
-    function tick() {
-        remaining -= 1;
-        if (remaining < 0) {
-            beep();
-            if (mode === 'focus') {
-                cycles += 1;
-                logCycle();
-                mode = 'break';
-                remaining = breakMin * 60;
-                total = remaining;
-            } else {
-                mode = 'focus';
-                remaining = focusMin * 60;
-                total = remaining;
-            }
+    window.addEventListener('pomodoro:cycle-logged', function (e) {
+        var data = e.detail;
+        if (!data) return;
+        if (data.hoje) {
+            document.getElementById('pmTodayMinutes').textContent = LABELS.todayMinutes.replace('__N__', data.hoje.minutos);
+            document.getElementById('pmTodayCycles').textContent = LABELS.todayCycles.replace('__N__', data.hoje.ciclos);
         }
-        renderTime();
+        if (typeof data.streak === 'number') {
+            document.getElementById('pmStreak').textContent = LABELS.streakDays.replace('__N__', data.streak);
+        }
+        renderPorMateria(data.porMateria);
+        renderSessoesRecentes(data.sessoesRecentes);
+        updateChart(data.ultimosDias);
+    });
+
+    function renderFromEngine(st) {
+        var active = st.mode !== 'idle';
+
+        if (!active) {
+            renderIdlePreview();
+        } else {
+            var m = Math.floor(st.remainingSec / 60);
+            var s = st.remainingSec % 60;
+            var timeStr = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+            var frac = st.totalSec > 0 ? st.remainingSec / st.totalSec : 0;
+            timeEl.textContent = timeStr;
+            ringFg.style.strokeDashoffset = CIRC * frac;
+            stateEl.textContent = st.mode === 'focus' ? LABELS.focus : LABELS.brk;
+            ring.classList.toggle('is-break', st.mode === 'break');
+            cycleCountEl.textContent = st.cycles > 0 ? LABELS.cycle.replace('__N__', st.cycles) : '';
+            if (fsTimeEl) { fsTimeEl.textContent = timeStr; fsStateEl.textContent = stateEl.textContent; fsSubjectEl.textContent = st.materiaNome || ''; }
+            focusMin = st.focusMin; breakMin = st.breakMin;
+            focusVal.textContent = focusMin; breakVal.textContent = breakMin;
+        }
+
+        summaryEl.classList.add('d-none');
+        controlsEl.classList.remove('d-none');
+        startBtn.classList.toggle('d-none', active);
+        pauseBtn.classList.toggle('d-none', !active);
+        skipBtn.classList.toggle('d-none', !active);
+        finishBtn.classList.toggle('d-none', !active);
+        focusStepper.classList.toggle('is-disabled', active);
+        breakStepper.classList.toggle('is-disabled', active);
+        pauseBtn.textContent = st.running ? LABELS.pause : LABELS.resume;
+        if (fsPauseBtn) fsPauseBtn.textContent = pauseBtn.textContent;
+
+        if (active && st.materiaId && String(materiaSelect.value) !== String(st.materiaId)) {
+            materiaSelect.value = st.materiaId;
+            materiaSelect.dispatchEvent(new Event('change', { bubbles: true }));
+        }
     }
 
-    function startTimer() {
-        if (timerHandle) return;
-        timerHandle = setInterval(tick, 1000);
-    }
-    function stopTimer() {
-        if (timerHandle) { clearInterval(timerHandle); timerHandle = null; }
-    }
+    window.addEventListener('pomodoro:update', function (e) { renderFromEngine(e.detail); });
 
     startBtn.addEventListener('click', function () {
         if (!materiaSelect.value) {
@@ -451,75 +508,92 @@
             return;
         }
         errorEl.classList.remove('is-visible');
-        if (mode === 'idle') {
-            mode = 'focus';
-            remaining = focusMin * 60;
-            total = remaining;
-            cycles = 0;
-            sessaoUid = 'pm-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
-            focusStepper.classList.add('is-disabled');
-            breakStepper.classList.add('is-disabled');
-        }
-        running = true;
-        startTimer();
-        renderTime();
-        summaryEl.classList.add('d-none');
-        controlsEl.classList.remove('d-none');
-        startBtn.classList.add('d-none');
-        pauseBtn.classList.remove('d-none');
-        skipBtn.classList.remove('d-none');
-        finishBtn.classList.remove('d-none');
-        pauseBtn.textContent = LABELS.pause;
+        var materiaNome = materiaSelect.options[materiaSelect.selectedIndex]
+            ? materiaSelect.options[materiaSelect.selectedIndex].textContent
+            : '';
+        window.PomodoroEngine.start({
+            materiaId: materiaSelect.value,
+            materiaNome: materiaNome,
+            focusMin: focusMin,
+            breakMin: breakMin
+        });
     });
 
     pauseBtn.addEventListener('click', function () {
-        if (running) {
-            running = false;
-            stopTimer();
-            pauseBtn.textContent = LABELS.resume;
-        } else {
-            running = true;
-            startTimer();
-            pauseBtn.textContent = LABELS.pause;
-        }
+        var st = window.PomodoroEngine.getState();
+        if (st.running) { window.PomodoroEngine.pause(); } else { window.PomodoroEngine.resume(); }
     });
 
-    skipBtn.addEventListener('click', function () {
-        remaining = 0;
-        tick();
+    skipBtn.addEventListener('click', function () { window.PomodoroEngine.skip(); });
+
+    finishBtn.addEventListener('click', function () {
+        var result = window.PomodoroEngine.finish();
+        summaryBodyEl.textContent = result.cycles > 0
+            ? LABELS.summaryBody.replace('__C__', result.cycles).replace('__M__', result.totalMin)
+            : LABELS.summaryEmpty;
+        controlsEl.classList.add('d-none');
+        summaryEl.classList.remove('d-none');
     });
 
-    function backToIdle() {
-        mode = 'idle';
-        cycles = 0;
-        sessaoUid = null;
-        remaining = focusMin * 60;
-        total = remaining;
-        focusStepper.classList.remove('is-disabled');
-        breakStepper.classList.remove('is-disabled');
-        renderTime();
+    summaryOkBtn.addEventListener('click', function () {
         summaryEl.classList.add('d-none');
         controlsEl.classList.remove('d-none');
         startBtn.classList.remove('d-none');
         pauseBtn.classList.add('d-none');
         skipBtn.classList.add('d-none');
         finishBtn.classList.add('d-none');
-    }
-
-    finishBtn.addEventListener('click', function () {
-        stopTimer();
-        running = false;
-        var totalMin = cycles * focusMin;
-        summaryBodyEl.textContent = cycles > 0
-            ? LABELS.summaryBody.replace('__C__', cycles).replace('__M__', totalMin)
-            : LABELS.summaryEmpty;
-        controlsEl.classList.add('d-none');
-        summaryEl.classList.remove('d-none');
+        focusStepper.classList.remove('is-disabled');
+        breakStepper.classList.remove('is-disabled');
+        renderIdlePreview();
     });
 
-    summaryOkBtn.addEventListener('click', backToIdle);
+    // --- som ambiente ---
+    function syncAmbientUi(st) {
+        var kind = st.ambient || 'none';
+        ambientButtons.forEach(function (b) { b.classList.toggle('is-active', b.dataset.pmAmbient === kind); });
+        ambientVolumeInput.value = typeof st.ambientVolume === 'number' ? st.ambientVolume : 0.4;
+    }
 
-    renderTime();
+    ambientButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            ambientButtons.forEach(function (b) { b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            window.PomodoroEngine.setAmbient(btn.dataset.pmAmbient);
+        });
+    });
+    ambientVolumeInput.addEventListener('input', function () {
+        window.PomodoroEngine.setAmbientVolume(parseFloat(ambientVolumeInput.value));
+    });
+
+    // --- tela cheia ---
+    fullscreenBtn.addEventListener('click', function () {
+        fsOverlay.classList.remove('d-none');
+        var req = fsOverlay.requestFullscreen || fsOverlay.webkitRequestFullscreen;
+        if (req) req.call(fsOverlay);
+    });
+
+    function exitFullscreen() {
+        if (document.fullscreenElement || document.webkitFullscreenElement) {
+            var exit = document.exitFullscreen || document.webkitExitFullscreen;
+            if (exit) exit.call(document);
+        }
+        fsOverlay.classList.add('d-none');
+    }
+
+    fsExitBtn.addEventListener('click', exitFullscreen);
+    document.addEventListener('fullscreenchange', function () { if (!document.fullscreenElement) fsOverlay.classList.add('d-none'); });
+    document.addEventListener('webkitfullscreenchange', function () { if (!document.webkitFullscreenElement) fsOverlay.classList.add('d-none'); });
+
+    fsPauseBtn.addEventListener('click', function () {
+        var st = window.PomodoroEngine.getState();
+        if (st.running) { window.PomodoroEngine.pause(); } else { window.PomodoroEngine.resume(); }
+    });
+    fsSkipBtn.addEventListener('click', function () { window.PomodoroEngine.skip(); });
+
+    // --- estado inicial: retoma sessao ja em andamento (localStorage), se houver ---
+    var initialState = window.PomodoroEngine.getState();
+    syncAmbientUi(initialState);
+    renderFromEngine(initialState);
 })();
 </script>
 @endpush

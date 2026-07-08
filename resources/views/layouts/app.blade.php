@@ -109,6 +109,7 @@
 
     @auth
         @include('partials.ai-chat-widget')
+        @include('partials.pomodoro-widget')
     @endauth
 
     {{-- Bootstrap 5.3.2 JS Bundle --}}
