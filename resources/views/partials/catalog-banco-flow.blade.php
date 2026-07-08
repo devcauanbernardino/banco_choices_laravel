@@ -191,6 +191,62 @@
         matSel.addEventListener('change', function () { onMateriaChange(this.value); });
         if (matSel.value) { onMateriaChange(matSel.value); }
     }
+
+    function selectFaculdade(fi) {
+        document.querySelectorAll('.qb-pick-anos').forEach(function (el) {
+            el.classList.toggle('d-none', el.getAttribute('data-fi') !== String(fi));
+        });
+        document.querySelectorAll('.qb-pick-materias').forEach(function (el) {
+            el.classList.add('d-none');
+        });
+        onMateriaChange('');
+        maybeAutoAno(fi);
+    }
+
+    function maybeAutoAno(fi) {
+        var wrap = document.getElementById('qb_anos_' + fi);
+        if (!wrap) return;
+        var radios = wrap.querySelectorAll('input[type="radio"]');
+        if (radios.length === 1) {
+            radios[0].checked = true;
+            selectAno(fi, radios[0].value);
+        }
+    }
+
+    function selectAno(fi, ai) {
+        document.querySelectorAll('.qb-pick-materias').forEach(function (el) {
+            var match = el.getAttribute('data-fi') === String(fi) && el.getAttribute('data-ai') === String(ai);
+            el.classList.toggle('d-none', !match);
+        });
+        onMateriaChange('');
+        maybeAutoMateria(fi, ai);
+    }
+
+    function maybeAutoMateria(fi, ai) {
+        var wrap = $('qb_materias_' + fi + '_' + ai);
+        if (!wrap) return;
+        var radios = wrap.querySelectorAll('input[type="radio"]');
+        if (radios.length === 1) {
+            radios[0].checked = true;
+            onMateriaChange(radios[0].value);
+        }
+    }
+
+    document.querySelectorAll('#qb_pick_faculdade input[type="radio"]').forEach(function (r) {
+        r.addEventListener('change', function () { selectFaculdade(this.value); });
+    });
+    document.querySelectorAll('.qb-pick-anos input[type="radio"]').forEach(function (r) {
+        r.addEventListener('change', function () { selectAno(this.getAttribute('data-fi'), this.value); });
+    });
+    document.querySelectorAll('.qb-pick-materias input[type="radio"]').forEach(function (r) {
+        r.addEventListener('change', function () { onMateriaChange(this.value); });
+    });
+
+    var facRadios = document.querySelectorAll('#qb_pick_faculdade input[type="radio"]');
+    if (facRadios.length === 1) {
+        facRadios[0].checked = true;
+        selectFaculdade(facRadios[0].value);
+    }
 })();
 </script>
 @endpush
@@ -221,15 +277,78 @@
         <option value="{{ $unicaMateria->id }}" selected>{{ $materiaLabel($unicaMateria) }}</option>
     </select>
 @else
+    @php
+        $arvoreBanco = $materias
+            ->groupBy(fn ($m) => $m->agrupamento?->faculdade?->id ?? 0)
+            ->map(function ($porFaculdade) {
+                $faculdade = $porFaculdade->first()->agrupamento?->faculdade;
+                $anos = $porFaculdade
+                    ->groupBy(fn ($m) => $m->agrupamento?->id ?? 0)
+                    ->map(fn ($porAno) => [
+                        'agrupamento' => $porAno->first()->agrupamento,
+                        'materias' => $porAno->sortBy('nome')->values(),
+                    ])
+                    ->sortBy(fn ($a) => $a['agrupamento']->ordem ?? 0)
+                    ->values();
+
+                return ['faculdade' => $faculdade, 'anos' => $anos];
+            })
+            ->sortBy(fn ($f) => $f['faculdade']->ordem ?? 0)
+            ->values();
+    @endphp
+
     <div class="mb-4">
-        <label class="form-label" for="qb_mat">{{ __('bank.catalog.pick_mat') }}</label>
-        <select class="bc-styled-select bc-styled-select--fluid" id="qb_mat">
-            <option value="">{{ __('catalog.placeholder') }}</option>
-            @foreach ($materias as $m)
-                <option value="{{ $m->id }}">{{ $materiaLabel($m) }}</option>
+        <label class="form-label">{{ __('bank.catalog.pick_fac') }}</label>
+        <div class="bc-mock-subject-grid" id="qb_pick_faculdade">
+            @foreach ($arvoreBanco as $fi => $grupo)
+                <label class="bc-mock-subject-card">
+                    <input type="radio" name="_qb_pick_fac" value="{{ $fi }}">
+                    <span class="bc-mock-subject-card__box">
+                        <span class="material-symbols-outlined bc-mock-subject-card__ico" aria-hidden="true">account_balance</span>
+                        <span class="bc-mock-subject-card__label">{{ $grupo['faculdade']->nome ?? __('bank.catalog.pick_mat') }}</span>
+                    </span>
+                </label>
             @endforeach
-        </select>
+        </div>
     </div>
+
+    @foreach ($arvoreBanco as $fi => $grupo)
+        <div class="mb-4 qb-pick-anos d-none" data-fi="{{ $fi }}" id="qb_anos_{{ $fi }}">
+            <label class="form-label">{{ __('bank.catalog.pick_agr') }}</label>
+            <div class="bc-mock-subject-grid">
+                @foreach ($grupo['anos'] as $ai => $ano)
+                    <label class="bc-mock-subject-card">
+                        <input type="radio" name="_qb_pick_ano_{{ $fi }}" value="{{ $ai }}" data-fi="{{ $fi }}">
+                        <span class="bc-mock-subject-card__box">
+                            <span class="material-symbols-outlined bc-mock-subject-card__ico" aria-hidden="true">calendar_today</span>
+                            <span class="bc-mock-subject-card__label">{{ $ano['agrupamento']->nome ?? '—' }}</span>
+                        </span>
+                    </label>
+                @endforeach
+            </div>
+        </div>
+    @endforeach
+
+    @foreach ($arvoreBanco as $fi => $grupo)
+        @foreach ($grupo['anos'] as $ai => $ano)
+            <div class="mb-4 qb-pick-materias d-none" data-fi="{{ $fi }}" data-ai="{{ $ai }}" id="qb_materias_{{ $fi }}_{{ $ai }}">
+                <label class="form-label">{{ __('bank.catalog.pick_mat') }}</label>
+                <div class="bc-mock-subject-grid">
+                    @foreach ($ano['materias'] as $m)
+                        <label class="bc-mock-subject-card">
+                            <input type="radio" name="_qb_pick_materia_{{ $fi }}_{{ $ai }}" value="{{ $m->id }}">
+                            <span class="bc-mock-subject-card__box">
+                                <span class="material-symbols-outlined bc-mock-subject-card__ico" aria-hidden="true">menu_book</span>
+                                <span class="bc-mock-subject-card__label">{{ $m->nome }}</span>
+                            </span>
+                        </label>
+                    @endforeach
+                </div>
+            </div>
+        @endforeach
+    @endforeach
+
+    <select id="qb_mat" hidden></select>
 @endif
 <div class="mb-4">
     <label class="form-label" for="qb_cat">{{ __('bank.catalog.pick_cat_opt') }}</label>
