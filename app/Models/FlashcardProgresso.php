@@ -11,8 +11,8 @@ class FlashcardProgresso extends Model
 
     protected $fillable = [
         'usuario_id',
-        'questao_id',
         'materia_id',
+        'overlay_key',
         'fator_facilidade',
         'intervalo_dias',
         'repeticoes',
@@ -36,11 +36,6 @@ class FlashcardProgresso extends Model
     public function usuario(): BelongsTo
     {
         return $this->belongsTo(User::class, 'usuario_id');
-    }
-
-    public function questao(): BelongsTo
-    {
-        return $this->belongsTo(Questao::class, 'questao_id');
     }
 
     public function materia(): BelongsTo

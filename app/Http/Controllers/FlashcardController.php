@@ -4,13 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\FlashcardProgresso;
 use App\Models\Materia;
-use App\Models\Questao;
 use App\Services\Flashcards\FlashcardQueueBuilder;
-use App\Support\FlashcardAnswerFormatter;
+use App\Support\FlashcardBankLocator;
 use App\Support\FlashcardSession;
-use App\Support\Question;
-use App\Support\QuestionBankLocator;
-use App\Support\QuestionLocale;
 use App\Support\Sm2Scheduler;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -67,7 +63,6 @@ class FlashcardController extends Controller
         $this->sessao->init([
             'materia' => $materiaId,
             'materia_nome' => $materia->nome,
-            'banco_questoes' => QuestionBankLocator::filenameFor($materiaId),
             'fila' => $refs,
             'atual' => 0,
             'revelado' => false,
@@ -127,29 +122,25 @@ class FlashcardController extends Controller
         $fila = (array) ($this->sessao->get('fila') ?? []);
         $atual = (int) ($this->sessao->get('atual') ?? 0);
 
-        $banco = (string) ($this->sessao->get('banco_questoes') ?? '');
         $materiaId = (int) $this->sessao->get('materia');
-        $lista = QuestionBankLocator::loadCanonicalList($materiaId);
+        $lista = FlashcardBankLocator::loadList($materiaId);
         $overlayKey = (int) $fila[$atual]['overlay_key'];
-
-        $qRaw = QuestionLocale::apply($lista[$overlayKey] ?? [], (string) app()->getLocale(), $banco);
-        $questao = new Question($qRaw);
-        $questaoId = (int) $fila[$atual]['questao_id'];
+        $carta = $lista[$overlayKey] ?? [];
         $revelado = (bool) $this->sessao->get('revelado');
 
-        $frente = $questao->getPergunta();
-        $verso = FlashcardAnswerFormatter::format($questao->getFeedback());
+        $frente = (string) ($carta['frente'] ?? '');
+        $verso = (string) ($carta['verso'] ?? '');
 
-        $tema = Questao::query()->whereKey($questaoId)->value('tema');
         $progresso = FlashcardProgresso::query()
             ->where('usuario_id', $user->id)
-            ->where('questao_id', $questaoId)
+            ->where('materia_id', $materiaId)
+            ->where('overlay_key', $overlayKey)
             ->first();
 
         return [
             'finished' => false,
             'materia_nome' => $this->sessao->get('materia_nome') ?? '',
-            'tema' => $tema ?: null,
+            'tema' => null,
             'numero' => $atual + 1,
             'streak_dias' => $this->calcularStreakDias((int) $user->id),
             'intervalo_atual' => $progresso ? (int) $progresso->intervalo_dias : null,
@@ -230,11 +221,11 @@ class FlashcardController extends Controller
         $materiaId = (int) $this->sessao->get('materia');
         $fila = (array) ($this->sessao->get('fila') ?? []);
         $atual = (int) $this->sessao->get('atual');
-        $questaoId = (int) $fila[$atual]['questao_id'];
+        $overlayKey = (int) $fila[$atual]['overlay_key'];
 
         $progresso = FlashcardProgresso::firstOrNew(
-            ['usuario_id' => $user->id, 'questao_id' => $questaoId],
-            ['materia_id' => $materiaId, 'fator_facilidade' => Sm2Scheduler::DEFAULT_EASE_FACTOR]
+            ['usuario_id' => $user->id, 'materia_id' => $materiaId, 'overlay_key' => $overlayKey],
+            ['fator_facilidade' => Sm2Scheduler::DEFAULT_EASE_FACTOR]
         );
 
         $qualidade = Sm2Scheduler::buttonToQuality($avaliacao);
@@ -245,7 +236,6 @@ class FlashcardController extends Controller
             $qualidade
         );
 
-        $progresso->materia_id = $materiaId;
         $progresso->fator_facilidade = $novo['ease_factor'];
         $progresso->intervalo_dias = $novo['interval_days'];
         $progresso->repeticoes = $novo['repetitions'];
@@ -255,7 +245,7 @@ class FlashcardController extends Controller
         $progresso->save();
 
         $resultados = (array) ($this->sessao->get('resultados') ?? []);
-        $resultados[] = ['questao_id' => $questaoId, 'avaliacao' => $avaliacao];
+        $resultados[] = ['overlay_key' => $overlayKey, 'avaliacao' => $avaliacao];
         $this->sessao->set('resultados', $resultados);
     }
 

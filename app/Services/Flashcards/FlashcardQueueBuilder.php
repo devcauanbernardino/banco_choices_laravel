@@ -3,7 +3,7 @@
 namespace App\Services\Flashcards;
 
 use App\Models\FlashcardProgresso;
-use App\Models\Questao;
+use App\Support\FlashcardBankLocator;
 
 class FlashcardQueueBuilder
 {
@@ -11,8 +11,8 @@ class FlashcardQueueBuilder
 
     /**
      * @return array{
-     *     due: list<array{questao_id: int, overlay_key: int}>,
-     *     new: list<array{questao_id: int, overlay_key: int}>,
+     *     due: list<array{overlay_key: int}>,
+     *     new: list<array{overlay_key: int}>,
      *     due_count: int,
      *     new_count: int,
      *     new_available_count: int
@@ -20,42 +20,38 @@ class FlashcardQueueBuilder
      */
     public static function buildQueue(int $userId, int $materiaId, int $novosPorDia = self::DEFAULT_NEW_CARDS_PER_DAY): array
     {
-        $questoes = Questao::query()
-            ->where('materia_id', $materiaId)
-            ->orderBy('overlay_key')
-            ->get(['id', 'overlay_key']);
+        $total = count(FlashcardBankLocator::loadList($materiaId));
 
-        $progressoPorQuestao = FlashcardProgresso::query()
+        $progressoPorOverlay = FlashcardProgresso::query()
             ->where('usuario_id', $userId)
             ->where('materia_id', $materiaId)
             ->get()
-            ->keyBy('questao_id');
+            ->keyBy('overlay_key');
 
         $now = now();
         $due = [];
         $new = [];
 
-        foreach ($questoes as $q) {
+        for ($overlayKey = 0; $overlayKey < $total; $overlayKey++) {
             /** @var FlashcardProgresso|null $p */
-            $p = $progressoPorQuestao->get($q->id);
+            $p = $progressoPorOverlay->get($overlayKey);
 
             if ($p === null) {
-                $new[] = ['questao_id' => $q->id, 'overlay_key' => (int) $q->overlay_key];
+                $new[] = ['overlay_key' => $overlayKey];
 
                 continue;
             }
 
             if ($p->proxima_revisao_em !== null && $p->proxima_revisao_em->lte($now)) {
                 $due[] = [
-                    'questao_id' => $q->id,
-                    'overlay_key' => (int) $q->overlay_key,
+                    'overlay_key' => $overlayKey,
                     '_proxima' => $p->proxima_revisao_em,
                 ];
             }
         }
 
         usort($due, fn ($a, $b) => $a['_proxima'] <=> $b['_proxima']);
-        $due = array_map(fn ($d) => ['questao_id' => $d['questao_id'], 'overlay_key' => $d['overlay_key']], $due);
+        $due = array_map(fn ($d) => ['overlay_key' => $d['overlay_key']], $due);
 
         $newAvailableCount = count($new);
         $new = array_slice($new, 0, max(0, $novosPorDia));
