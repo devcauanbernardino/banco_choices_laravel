@@ -83,6 +83,11 @@ window.PomodoroEngine = (function () {
     function ensureAudioCtx() {
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') {
+            // Se esta chamada ja partiu de um gesto do usuario (ex.: clique no
+            // botao de som ambiente), resolve na hora. Senao (ex.: retomado
+            // automaticamente ao carregar a pagina), fica pendente ate o
+            // primeiro clique/toque/tecla.
+            audioCtx.resume().catch(function () { /* ignore */ });
             var resume = function () {
                 audioCtx.resume();
                 document.removeEventListener('click', resume);
@@ -202,7 +207,8 @@ window.PomodoroEngine = (function () {
             focusMin: state.focusMin,
             breakMin: state.breakMin,
             ambient: state.ambient,
-            ambientVolume: state.ambientVolume
+            ambientVolume: state.ambientVolume,
+            audioState: audioCtx ? audioCtx.state : 'none'
         };
     }
 
