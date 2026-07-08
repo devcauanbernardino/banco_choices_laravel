@@ -171,14 +171,14 @@
                     </div>
 
                     @if ($isMulti && ! $hasFeedback)
-                        <div style="margin-top:14px;">
+                        <div style="margin-top:14px; text-align:center;">
                             <button type="submit" name="resposta_multi_submit" value="1"
                                     style="padding:9px 18px; border-radius:10px; border:none; background:linear-gradient(135deg,#8b1fb8,#6a0392); color:#fff; font-weight:700; font-size:.84rem; cursor:pointer;">
                                 {{ __('quiz.multi_confirm') }}
                             </button>
                         </div>
                     @elseif ($isStudy && ! $isMulti && ! $hasFeedback)
-                        <div style="margin-top:14px;">
+                        <div style="margin-top:14px; text-align:center;">
                             <button type="submit" name="resposta_confirm" value="1" id="qzConfirmBtn" {{ $respostaAtual === null ? 'disabled' : '' }}
                                     style="padding:9px 18px; border-radius:10px; border:none; background:linear-gradient(135deg,#8b1fb8,#6a0392); color:#fff; font-weight:700; font-size:.84rem; cursor:pointer; opacity:{{ $respostaAtual === null ? '.5' : '1' }};">
                                 {{ __('quiz.multi_confirm') }}
