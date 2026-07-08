@@ -1,2 +1,6 @@
 *.bak*
-i18n/
+i18n/**
+!i18n/pt_BR/
+!i18n/en_US/
+!i18n/pt_BR/flashcards_*.json
+!i18n/en_US/flashcards_*.json
