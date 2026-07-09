@@ -20,6 +20,7 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border: 1px solid rgba(255,255,255,.5);
     box-shadow: 0 8px 28px rgba(31,10,60,.06);
+    overflow: hidden;
 }
 [data-theme="dark"] .dash-home2-card { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 28px rgba(0,0,0,.3); }
 
