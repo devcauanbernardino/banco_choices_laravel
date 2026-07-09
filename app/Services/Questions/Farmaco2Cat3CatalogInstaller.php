@@ -16,7 +16,7 @@ final class Farmaco2Cat3CatalogInstaller
 
         $materiaId = Farmaco2Cat3SectionCatalog::MATERIA_ID;
         $payload = [
-            'nome' => 'Farmacología II — Cátedra III',
+            'nome' => 'Farmacología II',
             'slug' => Farmaco2Cat3SectionCatalog::MATERIA_SLUG,
             'agrupamento_id' => $agrClinicoId,
             'ordem' => 3,

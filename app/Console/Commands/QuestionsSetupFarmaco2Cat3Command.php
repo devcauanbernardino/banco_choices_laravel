@@ -42,7 +42,7 @@ class QuestionsSetupFarmaco2Cat3Command extends Command
             return self::FAILURE;
         }
 
-        $this->info('Catálogo: matéria id 5 · Farmacología II — Cátedra III · Cátedra III');
+        $this->info('Catálogo: matéria id 5 · Farmacología II · Cátedra III');
 
         try {
             $stats = Farmaco2Cat3MetadataSync::sync();

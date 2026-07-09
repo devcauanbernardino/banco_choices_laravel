@@ -165,7 +165,7 @@ class CatalogoSeeder extends Seeder
         if (! DB::table('materias')->where('id', 5)->exists()) {
             DB::table('materias')->insert([
                 'id' => 5,
-                'nome' => 'Farmacología II — Cátedra III',
+                'nome' => 'Farmacología II',
                 'slug' => 'farmacologia-ii-catedra-3',
                 'agrupamento_id' => $agrClinicoId,
                 'ordem' => 3,
@@ -173,7 +173,7 @@ class CatalogoSeeder extends Seeder
             $this->fixSqliteSequence('materias');
         } else {
             DB::table('materias')->where('id', 5)->update([
-                'nome' => 'Farmacología II — Cátedra III',
+                'nome' => 'Farmacología II',
                 'slug' => 'farmacologia-ii-catedra-3',
                 'agrupamento_id' => $agrClinicoId,
                 'ordem' => 3,
@@ -216,7 +216,6 @@ class CatalogoSeeder extends Seeder
         foreach ([
             ['slug' => 'patologia', 'nome' => 'Patología'],
             ['slug' => 'farmacologia-i', 'nome' => 'Farmacología I'],
-            ['slug' => 'farmacologia-ii', 'nome' => 'Farmacología II'],
             ['slug' => 'medicina-i', 'nome' => 'Medicina I'],
             ['slug' => 'neurocirugia', 'nome' => 'Neurocirugía'],
         ] as $i => $row) {
