@@ -118,21 +118,10 @@ class SimulationController extends Controller
     private function questionFilterViolationKey(int $materiaId, ?int $catedraId, array $parciaisSubmitted, array $temasSubmitted): ?string
     {
         $allowedParc = QuestionExamBuilder::parciaisDisponiveis($materiaId, $catedraId);
-        $hayFinal = QuestionExamBuilder::hayFinalPool($materiaId, $catedraId);
 
         foreach ($parciaisSubmitted as $p) {
             $pTrim = trim((string) $p);
             if ($pTrim === '') {
-                continue;
-            }
-
-            $isFinalToken = strtolower($pTrim) === 'final';
-
-            if ($isFinalToken) {
-                if (! $hayFinal['hay']) {
-                    return 'bank.err.invalid_filters_parciais';
-                }
-
                 continue;
             }
 

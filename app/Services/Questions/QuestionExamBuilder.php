@@ -247,18 +247,4 @@ class QuestionExamBuilder
     {
         return self::normalizeList($raw);
     }
-
-    /** @return array{hay:bool,total:int} */
-    public static function hayFinalPool(int $materiaId, ?int $catedraId = null): array
-    {
-        $q = Questao::query()->where('materia_id', $materiaId);
-        if ($catedraId !== null) {
-            $q->where(function ($w) use ($catedraId) {
-                $w->whereNull('catedra_id')->orWhere('catedra_id', $catedraId);
-            });
-        }
-        $total = (int) $q->clone()->count();
-
-        return ['hay' => $total > 0, 'total' => $total];
-    }
 }

@@ -125,21 +125,17 @@ class CatalogoAjaxController extends Controller
         $cid = $request->query('catedra_id');
         $cid = ($cid !== null && $cid !== '') ? (int) $cid : null;
         if ($mid <= 0) {
-            return response()->json(['data' => [], 'hay_final_pool' => false], 422);
+            return response()->json(['data' => []], 422);
         }
 
         /** @var \App\Models\User $user */
         $user = Auth::user();
         if (! $user->possuiMateria($mid)) {
-            return response()->json(['data' => [], 'hay_final_pool' => false], 403);
+            return response()->json(['data' => []], 403);
         }
 
-        $parc = QuestionExamBuilder::parciaisDisponiveis($mid, $cid);
-        $final = QuestionExamBuilder::hayFinalPool($mid, $cid);
-
         return response()->json([
-            'data' => $parc,
-            'hay_final_pool' => $final['hay'],
+            'data' => QuestionExamBuilder::parciaisDisponiveis($mid, $cid),
         ]);
     }
 }

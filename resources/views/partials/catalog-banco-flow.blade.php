@@ -42,7 +42,6 @@
         var qc = cid ? '&catedra_id=' + encodeURIComponent(cid) : '';
         u(URLs.parc, '?materia_id=' + encodeURIComponent(mid) + qc).then(function (r) {
             var ps = r.data || [];
-            var finals = !!r.hay_final_pool;
             var mapLbl = {'1':'{{ __('bank.parc.label_1') }}','2':'{{ __('bank.parc.label_2') }}','3':'{{ __('bank.parc.label_3') }}','final':'{{ __('bank.parc.final') }}','libre':'{{ __('bank.parc.libre') }}'};
             ps.forEach(function (p) {
                 if (!p) return;
@@ -53,13 +52,6 @@
                     '<label class="form-check-label" for="'+id+'">'+(mapLbl[String(p)] || ('Parcial '+p))+'</label>';
                 $('qb_parciais').appendChild(wrap);
             });
-            if (finals) {
-                var w = document.createElement('div');
-                w.className = 'form-check form-check-inline';
-                w.innerHTML = '<input class="form-check-input" type="checkbox" name="parcial[]" value="final" id="parc_fin">'+
-                    '<label class="form-check-label" for="parc_fin">{{ __('bank.parc.final') }}</label>';
-                $('qb_parciais').appendChild(w);
-            }
         });
         u(URLs.tem, '?materia_id=' + encodeURIComponent(mid) + qc).then(function (t) {
             var rows = t.data || [];
