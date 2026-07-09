@@ -13,10 +13,14 @@
             border-radius: 1.25rem;
             border: 1px solid rgba(106, 3, 146, 0.15);
             background: linear-gradient(135deg, rgba(106, 3, 146, 0.12) 0%, rgba(255,255,255,0.94) 45%, rgba(245,240,252,1) 100%);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
         }
         [data-theme="dark"] .ref-hero-card {
             background: linear-gradient(135deg, rgba(168,85,247,0.14) 0%, rgba(30,27,40,1) 50%, rgba(24,21,31,1) 100%);
             border-color: rgba(196,181,253,0.2);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
         }
         .ref-code-box {
             font-family: ui-monospace, monospace;
@@ -28,7 +32,19 @@
             padding: 0.65rem 1rem;
         }
         [data-theme="dark"] .ref-code-box { background: rgba(167,139,250,0.14); }
-        .ref-side-card { border-radius: 1rem; }
+        .ref-side-card {
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, .55) !important;
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, .5) !important;
+            box-shadow: 0 8px 28px rgba(31, 10, 60, .08) !important;
+        }
+        [data-theme="dark"] .ref-side-card {
+            background: rgba(255, 255, 255, .05) !important;
+            border-color: rgba(255, 255, 255, .1) !important;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .35) !important;
+        }
         .ref-cond-ul li { margin-bottom: .45rem; }
     </style>
 @endpush

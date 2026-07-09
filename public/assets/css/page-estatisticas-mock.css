@@ -49,15 +49,17 @@
   margin-bottom: var(--app-section-gap, 1.5rem);
   padding: 1rem 1.15rem;
   border-radius: var(--app-radius-panel, 1rem);
-  border: 1px solid var(--app-border, rgba(15, 23, 42, 0.1));
-  background: var(--app-surface, #fff);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
 }
 
 [data-theme="dark"] .bc-mock-stats__filter-panel {
-  background: #16161c;
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: none;
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-mock-stats__period-form {
@@ -556,9 +558,11 @@ a.bc-mock-stats__btn-primary:hover {
 }
 
 .bc-mock-stats__kpi {
-  background: var(--app-surface, #fff);
-  border: 1px solid var(--app-border);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
   border-radius: 0.875rem;
   padding: 1.35rem 1.25rem;
   min-width: 0;
@@ -570,18 +574,18 @@ a.bc-mock-stats__btn-primary:hover {
 }
 
 [data-theme="dark"] .bc-mock-stats__kpi {
-  background: #1a1a22;
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: none;
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-mock-stats__kpi:hover {
-  background: var(--app-surface, #fff);
+  background: rgba(255, 255, 255, .65);
   box-shadow: 0 16px 40px rgba(106, 3, 146, 0.06);
 }
 
 [data-theme="dark"] .bc-mock-stats__kpi:hover {
-  background: #22222c;
+  background: rgba(255, 255, 255, .08);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
@@ -652,9 +656,11 @@ a.bc-mock-stats__btn-primary:hover {
 }
 
 .bc-mock-stats__chart-panel {
-  background: var(--app-surface, #fff);
-  border: 1px solid var(--app-border);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
   border-radius: 1.25rem;
   padding: 1.5rem 1rem;
   min-height: 18rem;
@@ -668,9 +674,9 @@ a.bc-mock-stats__btn-primary:hover {
 }
 
 [data-theme="dark"] .bc-mock-stats__chart-panel {
-  background: #1a1a22;
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: none;
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-mock-stats__chart-panel h3 {
@@ -694,14 +700,19 @@ a.bc-mock-stats__btn-primary:hover {
 }
 
 .bc-mock-stats__table-panel {
-  background: var(--app-surface, #fff);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border-radius: 1.15rem;
   overflow: hidden;
-  border: 1px solid var(--app-border);
+  border: 1px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
 }
 
 [data-theme="dark"] .bc-mock-stats__table-panel {
-  background: #14141a;
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-mock-stats__table-head {

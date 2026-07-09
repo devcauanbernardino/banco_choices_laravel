@@ -18,6 +18,20 @@
   align-items: start;
 }
 
+.addon-checkout-grid .card {
+  background: rgba(255, 255, 255, .55) !important;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5) !important;
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08) !important;
+}
+
+[data-theme="dark"] .addon-checkout-grid .card {
+  background: rgba(255, 255, 255, .05) !important;
+  border-color: rgba(255, 255, 255, .1) !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35) !important;
+}
+
 @media (max-width: 991.98px) {
   .addon-checkout-grid {
     grid-template-columns: 1fr;

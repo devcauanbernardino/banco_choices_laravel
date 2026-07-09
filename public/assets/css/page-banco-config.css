@@ -12,8 +12,8 @@
   --bc-mock-primary-ct: #6a0392;
   --bc-mock-on-primary-ct: #f4e4ff;
   --bc-mock-primary-fixed: #f8d8ff;
-  --bc-mock-glass: rgba(255, 255, 255, 0.72);
-  --bc-mock-glass-border: rgba(255, 255, 255, 0.55);
+  --bc-mock-glass: rgba(255, 255, 255, .55);
+  --bc-mock-glass-border: rgba(255, 255, 255, .5);
   max-width: min(72rem, 100%);
   margin-left: auto;
   margin-right: auto;
@@ -28,8 +28,8 @@
   --bc-mock-on-surface: #ececf1;
   --bc-mock-on-variant: #b4b4c0;
   --bc-mock-outline: #8b8794;
-  --bc-mock-glass: rgba(30, 28, 38, 0.85);
-  --bc-mock-glass-border: rgba(255, 255, 255, 0.08);
+  --bc-mock-glass: rgba(255, 255, 255, .05);
+  --bc-mock-glass-border: rgba(255, 255, 255, .1);
 }
 
 /* Colunas em .row são flex: min-width:auto estoura o painel — permite encolher dentro do main */
@@ -103,9 +103,11 @@
 
 .bc-mock-panel {
   min-width: 0;
-  background: var(--app-surface, #fff);
-  border: 1px solid var(--app-border);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
   border-radius: 0.875rem;
   padding: 1.75rem 1.5rem;
   margin-bottom: 1.5rem;
@@ -113,9 +115,9 @@
 
 [data-theme="dark"] .bc-mock-panel,
 [data-bs-theme="dark"] .bc-mock-panel {
-  background: var(--bc-mock-surface-low);
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: none;
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-mock-panel--disabled {
@@ -388,16 +390,19 @@
   padding: 1.35rem 1.25rem;
   padding-inline-end: 2.75rem;
   border-radius: 0.875rem;
-  border: 2px solid var(--app-border, rgba(15, 23, 42, 0.14));
-  background: var(--app-surface, #fff);
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  border: 2px solid rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 [data-theme="dark"] .bc-mock-mode-card__box,
 [data-bs-theme="dark"] .bc-mock-mode-card__box {
-  background: var(--app-surface-2, #1a1a22);
-  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .14);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-mock-mode-card:hover .bc-mock-mode-card__box {
@@ -489,13 +494,18 @@ body.app-shell-painel .bc-mock-banco-page .bc-mock-mode-card__check .material-sy
 
 .bc-mock-glass-card {
   background: var(--bc-mock-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid var(--bc-mock-glass-border);
   border-radius: 1.25rem;
   padding: 1.75rem 1.5rem;
-  box-shadow: 0 20px 50px rgba(73, 0, 102, 0.08);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
   margin-bottom: 1.25rem;
+}
+
+[data-theme="dark"] .bc-mock-glass-card,
+[data-bs-theme="dark"] .bc-mock-glass-card {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-mock-glass-card__title {

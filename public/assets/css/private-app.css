@@ -90,14 +90,18 @@
 
 /* ---------- Cards ---------- */
 .bc-card {
-  background: var(--app-surface);
-  border: 1px solid var(--app-border);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5);
   border-radius: var(--app-radius-card, 16px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
 }
 
 [data-theme="dark"] .bc-card {
-  box-shadow: var(--app-shadow);
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-card--flat {
@@ -114,19 +118,23 @@
 
 /* ---------- Page Header ---------- */
 .bc-page-header {
-  background: var(--app-surface);
-  border: 1px solid var(--app-border);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5);
   padding: clamp(1.1rem, 2.8vw, 1.5rem) clamp(1.15rem, 3vw, 2rem);
   border-radius: var(--app-radius-panel, 16px);
   margin-bottom: var(--app-section-gap, 1.5rem);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 [data-theme="dark"] .bc-page-header {
-  box-shadow: var(--app-shadow);
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 @media (max-width: 991.98px) {
@@ -157,10 +165,19 @@
 
 /* ---------- Stat Card ---------- */
 .bc-stat-card {
-  background: var(--app-surface);
-  border: 1px solid var(--app-border);
+  background: rgba(255, 255, 255, .55);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .5);
   border-radius: var(--app-radius-card, 14px);
   padding: 1rem 1.1rem;
+  box-shadow: 0 8px 28px rgba(31, 10, 60, .08);
+}
+
+[data-theme="dark"] .bc-stat-card {
+  background: rgba(255, 255, 255, .05);
+  border-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
 .bc-stat-label {
