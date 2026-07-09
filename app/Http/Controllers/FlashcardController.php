@@ -88,6 +88,22 @@ class FlashcardController extends Controller
             return response()->json($this->cardPayload());
         }
 
+        if ($request->has('navegar')) {
+            $request->validate([
+                'navegar' => 'required|in:proximo,anterior',
+            ]);
+
+            $fila = (array) ($this->sessao->get('fila') ?? []);
+            $atual = (int) $this->sessao->get('atual');
+            $novoAtual = $request->input('navegar') === 'proximo' ? $atual + 1 : $atual - 1;
+            $novoAtual = max(0, min($novoAtual, count($fila) - 1));
+
+            $this->sessao->set('atual', $novoAtual);
+            $this->sessao->set('revelado', false);
+
+            return response()->json($this->cardPayload());
+        }
+
         if ($request->has('avaliar')) {
             if (! $this->sessao->get('revelado')) {
                 return response()->json(['error' => __('flashcards.err.reveal_first')], 409);

@@ -97,7 +97,14 @@
 .fc-flip.is-flipped .fc-flip-inner { box-shadow: none; }
 .fc-flip-face--front { cursor: pointer; border-color: rgba(255,255,255,.55); text-align: inherit; width: 100%; color: inherit; }
 .fc-flip-face--front:disabled { cursor: default; }
-.fc-flip-back { transform: rotateY(180deg); }
+.fc-flip-back { transform: rotateY(180deg); cursor: pointer; }
+
+.fc-nav-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 14px; }
+.fc-nav-btn { display: flex; align-items: center; gap: 4px; padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(120,120,140,.2); background: rgba(255,255,255,.4); color: var(--app-text); font-size: .82rem; font-weight: 700; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+[data-theme="dark"] .fc-nav-btn { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.12); }
+.fc-nav-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(15,23,42,.12); }
+.fc-nav-btn:disabled { opacity: .35; cursor: default; }
+.fc-nav-btn .material-symbols-outlined { font-size: 1.1rem; }
 
 .fc-flip-tag { align-self: flex-start; font-size: .66rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #8b1fb8; margin-bottom: 12px; }
 [data-theme="dark"] .fc-flip-tag { color: #c77dfd; }
@@ -204,12 +211,23 @@
                                         <span class="fc-flip-hint" id="fcRevealHint"></span>
                                     </div>
                                 </button>
-                                <div class="fc-flip-face fc-flip-back">
+                                <div class="fc-flip-face fc-flip-back" id="fcBackFace" role="button" tabindex="0">
                                     <span class="fc-flip-tag">{{ __('flashcards.review.reveal_button') }}</span>
                                     <p class="fc-flip-text" id="fcVersoText"></p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="fc-nav-row">
+                        <button type="button" class="fc-nav-btn" id="fcPrevBtn">
+                            <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+                            {{ __('flashcards.review.nav_previous') }}
+                        </button>
+                        <button type="button" class="fc-nav-btn" id="fcNextBtn">
+                            {{ __('flashcards.review.nav_next') }}
+                            <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+                        </button>
                     </div>
 
                     <div class="fc-rate-grid d-none" id="fcRateGrid">
@@ -266,6 +284,9 @@
     var summaryView = document.getElementById('fcModalSummaryView');
     var flip = document.getElementById('fcFlip');
     var frontBtn = document.getElementById('fcFrontBtn');
+    var backFace = document.getElementById('fcBackFace');
+    var prevBtn = document.getElementById('fcPrevBtn');
+    var nextBtn = document.getElementById('fcNextBtn');
     var revealHint = document.getElementById('fcRevealHint');
     var frenteTag = document.getElementById('fcFrenteTag');
     var frenteText = document.getElementById('fcFrenteText');
@@ -275,8 +296,10 @@
     var errorBox = document.getElementById('fcErrorBox');
     var materiaLbl = document.getElementById('fcModalMateria');
     var streakLbl = document.getElementById('fcModalStreak');
+    var hasVerso = false;
     var defaultTag = @json(__('flashcards.review.default_tag'));
     var revealBtnLabel = @json(__('flashcards.review.reveal_button'));
+    var flipHintLabel = @json(__('flashcards.review.flip_hint'));
     var intervalNewLabel = @json(__('flashcards.review.interval_new'));
     var intervalDaysTpl = @json(__('flashcards.review.interval_days', ['n' => '__N__']));
     var streakTpl = @json(__('flashcards.review.streak_days', ['n' => '__N__']));
@@ -311,6 +334,11 @@
         }, 1000);
     }
 
+    function updateNavButtons(data) {
+        prevBtn.disabled = data.atual <= 0;
+        nextBtn.disabled = data.atual >= data.total - 1;
+    }
+
     function renderCard(data) {
         errorBox.classList.add('d-none');
         cardView.classList.remove('d-none');
@@ -319,20 +347,34 @@
         streakLbl.textContent = streakTpl.replace('__N__', data.streak_dias);
         frenteTag.textContent = data.tema || defaultTag;
         frenteText.textContent = data.frente;
-        revealHint.textContent = (data.intervalo_atual ? intervalDaysTpl.replace('__N__', data.intervalo_atual) : intervalNewLabel) + ' · ' + revealBtnLabel;
+        updateNavButtons(data);
+
+        hasVerso = !!data.verso;
+        if (hasVerso) {
+            versoText.textContent = data.verso;
+        }
+        revealHint.textContent = (data.intervalo_atual ? intervalDaysTpl.replace('__N__', data.intervalo_atual) : intervalNewLabel) + ' · ' + (hasVerso ? flipHintLabel : revealBtnLabel);
 
         if (data.revelado) {
             stopTimer();
-            versoText.textContent = data.verso;
             flip.classList.add('is-flipped');
             rateGrid.classList.remove('d-none');
-            frontBtn.disabled = true;
         } else {
             startTimer();
             flip.classList.remove('is-flipped');
             rateGrid.classList.add('d-none');
-            frontBtn.disabled = false;
         }
+    }
+
+    function navigate(direcao) {
+        fetch('{{ route('flashcards.process') }}', {
+            method: 'POST',
+            headers: headers(),
+            body: JSON.stringify({ navegar: direcao })
+        }).then(function (r) { return r.json(); }).then(function (data) {
+            if (data.error) { showError(data.error); return; }
+            renderCard(data);
+        });
     }
 
     function renderSummary(data) {
@@ -367,7 +409,10 @@
     }
 
     frontBtn.addEventListener('click', function () {
-        if (frontBtn.disabled) return;
+        if (hasVerso) {
+            flip.classList.add('is-flipped');
+            return;
+        }
         fetch('{{ route('flashcards.process') }}', {
             method: 'POST',
             headers: headers(),
@@ -377,6 +422,17 @@
             renderCard(data);
         });
     });
+
+    function flipToFront() {
+        flip.classList.remove('is-flipped');
+    }
+    backFace.addEventListener('click', flipToFront);
+    backFace.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); flipToFront(); }
+    });
+
+    prevBtn.addEventListener('click', function () { navigate('anterior'); });
+    nextBtn.addEventListener('click', function () { navigate('proximo'); });
 
     rateGrid.querySelectorAll('button[data-avaliacao]').forEach(function (btn) {
         btn.addEventListener('click', function () {
