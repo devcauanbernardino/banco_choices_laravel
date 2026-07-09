@@ -250,7 +250,7 @@
                 <div id="dkModalCardView">
                     <div class="dk-toprow">
                         <span class="dk-pill">
-                            <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">workspaces</span>
+                            <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem;">stacks</span>
                             <span id="dkModalDeck"></span>
                         </span>
                     </div>

@@ -61,7 +61,7 @@
         @foreach ($decks as $d)
             @php $jaClonado = in_array($d->id, $jaClonados, true); @endphp
             <div class="dkd-card">
-                <div class="dkd-card__icon"><span class="material-symbols-outlined" aria-hidden="true">workspaces</span></div>
+                <div class="dkd-card__icon"><span class="material-symbols-outlined" aria-hidden="true">stacks</span></div>
                 <span class="dkd-badge">{{ $d->materia->nome ?? '' }}</span>
                 <h3 class="dkd-card__title">{{ $d->nome }}</h3>
                 <p class="dkd-card__meta">{{ __('decks.descobrir.by', ['nome' => $d->usuario->nome ?? '—']) }} · {{ __('decks.descobrir.card_count', ['n' => $d->cartas_count]) }}</p>

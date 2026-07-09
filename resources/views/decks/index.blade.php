@@ -103,7 +103,7 @@ a.dk-new-btn:hover { text-decoration: none; }
 
 @if ($decks->isEmpty())
     <div class="dk-empty">
-        <span class="material-symbols-outlined" aria-hidden="true">workspaces</span>
+        <span class="material-symbols-outlined" aria-hidden="true">stacks</span>
         <p class="mb-0">{{ __('decks.no_decks') }}</p>
     </div>
 @else
@@ -112,7 +112,7 @@ a.dk-new-btn:hover { text-decoration: none; }
             @php $resumo = $resumoPorDeck[$d->id] ?? ['due_count' => 0, 'new_count' => 0, 'new_available_count' => 0]; @endphp
             <div class="dk-card">
                 <div class="dk-card__top">
-                    <div class="dk-card__icon"><span class="material-symbols-outlined" aria-hidden="true">workspaces</span></div>
+                    <div class="dk-card__icon"><span class="material-symbols-outlined" aria-hidden="true">stacks</span></div>
                     <a href="{{ route('decks.show', $d) }}" class="dk-card__open" aria-label="{{ __('decks.form.manage') }}">
                         <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">arrow_outward</span>
                     </a>

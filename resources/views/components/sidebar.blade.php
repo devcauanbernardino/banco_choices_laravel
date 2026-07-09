@@ -3,7 +3,7 @@
         ['route' => 'dashboard', 'symbol' => 'dashboard', 'mobile_icon' => 'dashboard', 'label' => __('nav.dashboard'), 'short' => __('nav.dashboard')],
         ['route' => 'questionbank', 'symbol' => 'menu_book', 'mobile_icon' => 'quiz', 'label' => __('nav.studies'), 'short' => __('nav.studies_short')],
         ['route' => 'flashcards.index', 'symbol' => 'style', 'mobile_icon' => 'style', 'label' => __('nav.flashcards'), 'short' => __('nav.flashcards_short')],
-        ['route' => 'decks.index', 'symbol' => 'workspaces', 'mobile_icon' => 'workspaces', 'label' => __('nav.decks'), 'short' => __('nav.decks_short')],
+        ['route' => 'decks.index', 'symbol' => 'stacks', 'mobile_icon' => 'stacks', 'label' => __('nav.decks'), 'short' => __('nav.decks_short')],
         ['route' => 'pomodoro.index', 'symbol' => 'timer', 'mobile_icon' => 'timer', 'label' => __('nav.pomodoro'), 'short' => __('nav.pomodoro_short')],
         ['route' => 'comunidade.index', 'symbol' => 'forum', 'mobile_icon' => 'forum', 'label' => __('nav.comunidade'), 'short' => __('nav.comunidade_short')],
         ['route' => 'history', 'symbol' => 'folder_open', 'mobile_icon' => 'folder', 'label' => __('nav.files'), 'short' => __('nav.files_short')],
