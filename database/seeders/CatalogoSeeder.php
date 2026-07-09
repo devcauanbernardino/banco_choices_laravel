@@ -63,8 +63,33 @@ class CatalogoSeeder extends Seeder
             ]
         );
 
+        // Reflete o plan de estudios real da UBA: depois do Ciclo Clínico "puro"
+        // (Medicina A, Patología II, Farmacología II, Salud Pública, Bioética II...)
+        // vêm as rotações de Clínicas, depois Quirúrgicas, e por último o Ciclo
+        // Internado Anual Rotatorio. Ficam "vazios" até termos banco de questões
+        // pra alguma matéria desses estágios — não aparecem na UI enquanto isso
+        // (ver CatalogoAjaxController::agrupamentos, que só lista agrupamentos
+        // com pelo menos uma matéria).
+        foreach ([
+            ['uba-clinicas', 'Clínicas', 3],
+            ['uba-quirurgicas', 'Quirúrgicas', 4],
+            ['uba-ciclo-internado', 'Ciclo Internado', 5],
+        ] as [$slug, $nome, $ord]) {
+            DB::table('agrupamentos')->updateOrInsert(
+                ['faculdade_id' => $idUba, 'slug' => $slug],
+                [
+                    'nome' => $nome,
+                    'ordem' => $ord,
+                    'tipo' => 'ciclo',
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+        }
+
         $agrBioId = (int) DB::table('agrupamentos')->where('slug', $agrBiomedSlug)->value('id');
         $agrClinicoId = (int) DB::table('agrupamentos')->where('slug', 'uba-ciclo-clinico')->value('id');
+        $agrQuirurgicasId = (int) DB::table('agrupamentos')->where('slug', 'uba-quirurgicas')->value('id');
 
         // Placeholder agrupamentos (sem matérias)
         foreach ([
@@ -214,16 +239,16 @@ class CatalogoSeeder extends Seeder
         );
 
         foreach ([
-            ['slug' => 'patologia', 'nome' => 'Patología'],
-            ['slug' => 'farmacologia-i', 'nome' => 'Farmacología I'],
-            ['slug' => 'medicina-i', 'nome' => 'Medicina I'],
-            ['slug' => 'neurocirugia', 'nome' => 'Neurocirugía'],
+            ['slug' => 'patologia', 'nome' => 'Patología', 'agrupamento_id' => $agrClinicoId],
+            ['slug' => 'farmacologia-i', 'nome' => 'Farmacología I', 'agrupamento_id' => $agrBioId],
+            ['slug' => 'medicina-i', 'nome' => 'Medicina I', 'agrupamento_id' => $agrClinicoId],
+            ['slug' => 'neurocirugia', 'nome' => 'Neurocirugía', 'agrupamento_id' => $agrQuirurgicasId],
         ] as $i => $row) {
             DB::table('materias')->updateOrInsert(
                 ['slug' => $row['slug']],
                 [
                     'nome' => $row['nome'],
-                    'agrupamento_id' => $agrClinicoId,
+                    'agrupamento_id' => $row['agrupamento_id'],
                     'ordem' => $i + 1,
                 ]
             );
