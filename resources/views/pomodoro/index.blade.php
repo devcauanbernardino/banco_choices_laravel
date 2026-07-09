@@ -110,9 +110,6 @@
 .pm-fullscreen-btn:hover { background: rgba(139,31,184,.1); color: #8b1fb8; }
 .pm-fullscreen-btn .material-symbols-outlined { font-size: 1.3rem; }
 
-.pm-mascote { display: flex; justify-content: center; margin-top: 12px; }
-.pm-mascote img { width: 64px; height: 64px; object-fit: contain; }
-
 .pm-ambient { margin-top: 26px; padding-top: 20px; border-top: 1px solid rgba(120,120,140,.14); }
 .pm-ambient__options { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .pm-ambient__btn { padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(120,120,140,.25); background: rgba(255,255,255,.5); color: var(--app-text); font-size: .78rem; font-weight: 600; cursor: pointer; }
@@ -215,12 +212,6 @@
                 </div>
                 <p class="pm-cycle-count" id="pmCycleCount"></p>
             </div>
-
-            @if ($pmMascoteGif)
-                <div class="pm-mascote">
-                    <img src="{{ asset('assets/img/mascots/mascots-gifs/'.$pmMascoteGif) }}" alt="" id="pmMascoteImg">
-                </div>
-            @endif
 
             <div class="pm-controls" id="pmControls">
                 <button type="button" class="pm-btn pm-btn--primary" id="pmStartBtn">{{ __('pomodoro.form.start') }}</button>
