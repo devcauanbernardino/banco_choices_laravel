@@ -83,11 +83,11 @@ final class Farmaco2Cat3SectionCatalog
         'segundoparcial_2024' => ['parcial' => '2', 'tema' => '2do parcial 2024', 'grupo' => '2do parcial · Simulacros'],
         'segundoparcial_24_5_2024' => ['parcial' => '2', 'tema' => '2do parcial 24-05-2024', 'grupo' => '2do parcial · Simulacros'],
         'segundoparcial_29_5_2024' => ['parcial' => '2', 'tema' => '2do parcial 29-05-2024', 'grupo' => '2do parcial · Simulacros'],
-        'segundoparcial_casos_clinicos_1' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (1)', 'grupo' => '2do parcial · Simulacros'],
-        'segundoparcial_casos_clinicos_2' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (2)', 'grupo' => '2do parcial · Simulacros'],
-        'segundoparcial_casos_clinicos_3' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (3)', 'grupo' => '2do parcial · Simulacros'],
-        'segundoparcial_casos_clinicos_4' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (4)', 'grupo' => '2do parcial · Simulacros'],
-        'segundoparcial_casos_clinicos_5' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (5)', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_1' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_2' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_3' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_4' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_5' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial', 'grupo' => '2do parcial · Simulacros'],
 
         // —— 3er parcial ——
         'antisicoticos' => ['parcial' => '3', 'tema' => 'Antipsicóticos', 'grupo' => '3er parcial · SNC'],
@@ -104,11 +104,11 @@ final class Farmaco2Cat3SectionCatalog
         'tercerparcial_29_6_2023' => ['parcial' => '3', 'tema' => '3er parcial 29-06-2023', 'grupo' => '3er parcial · Simulacros'],
 
         // —— Finales y libre ——
-        'final_22_11_2023' => ['parcial' => 'final', 'tema' => 'Final 22-11-2023', 'grupo' => 'Finales'],
-        'final_20_09_2023' => ['parcial' => 'final', 'tema' => 'Final 20-09-2023', 'grupo' => 'Finales'],
-        'final_10_07_2023' => ['parcial' => 'final', 'tema' => 'Final 10-07-2023', 'grupo' => 'Finales'],
-        'final_17_07_2024' => ['parcial' => 'final', 'tema' => 'Final 17-07-2024', 'grupo' => 'Finales'],
-        'final_10_07_2024' => ['parcial' => 'final', 'tema' => 'Final 10-07-2024', 'grupo' => 'Finales'],
+        'final_22_11_2023' => ['parcial' => 'final', 'tema' => 'Final', 'grupo' => 'Finales'],
+        'final_20_09_2023' => ['parcial' => 'final', 'tema' => 'Final', 'grupo' => 'Finales'],
+        'final_10_07_2023' => ['parcial' => 'final', 'tema' => 'Final', 'grupo' => 'Finales'],
+        'final_17_07_2024' => ['parcial' => 'final', 'tema' => 'Final', 'grupo' => 'Finales'],
+        'final_10_07_2024' => ['parcial' => 'final', 'tema' => 'Final', 'grupo' => 'Finales'],
         'examenlibre' => ['parcial' => 'libre', 'tema' => 'Examen libre', 'grupo' => 'Examen libre'],
     ];
 }
