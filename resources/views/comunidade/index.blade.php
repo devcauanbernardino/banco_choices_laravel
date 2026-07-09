@@ -65,6 +65,10 @@
     box-shadow: 0 8px 28px rgba(31,10,60,.08);
     margin-bottom: 14px;
 }
+/* backdrop-filter cria um novo contexto de empilhamento - sem isso, o dropdown
+   do select (.bc-styled-select__list, z-index alto mas preso nesse contexto)
+   fica atras do proximo .cm-card no DOM (ex.: post seguinte no feed). */
+.cm-card:has(.bc-styled-select-wrap.is-open) { position: relative; z-index: 20; }
 [data-theme="dark"] .cm-card { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 28px rgba(0,0,0,.35); }
 
 .cm-stat-card h3, .cm-guidelines h3, .cm-filter-card h3, .cm-sort-card h3 {
