@@ -83,6 +83,11 @@ final class Farmaco2Cat3SectionCatalog
         'segundoparcial_2024' => ['parcial' => '2', 'tema' => '2do parcial 2024', 'grupo' => '2do parcial · Simulacros'],
         'segundoparcial_24_5_2024' => ['parcial' => '2', 'tema' => '2do parcial 24-05-2024', 'grupo' => '2do parcial · Simulacros'],
         'segundoparcial_29_5_2024' => ['parcial' => '2', 'tema' => '2do parcial 29-05-2024', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_1' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (1)', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_2' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (2)', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_3' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (3)', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_4' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (4)', 'grupo' => '2do parcial · Simulacros'],
+        'segundoparcial_casos_clinicos_5' => ['parcial' => '2', 'tema' => 'Casos clínicos — 2do parcial (5)', 'grupo' => '2do parcial · Simulacros'],
 
         // —— 3er parcial ——
         'antisicoticos' => ['parcial' => '3', 'tema' => 'Antipsicóticos', 'grupo' => '3er parcial · SNC'],
