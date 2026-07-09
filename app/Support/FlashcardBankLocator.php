@@ -20,6 +20,7 @@ final class FlashcardBankLocator
             4 => 'flashcards_biologia_cbc.json',
             5 => 'flashcards_farmaco2_cat3.json',
             6 => 'flashcards_histologia.json',
+            10 => 'flashcards_bioquimica.json',
             7 => 'flashcards_embriologia.json',
             9 => 'flashcards_fisiologia.json',
             11 => 'flashcards_imunologia.json',
