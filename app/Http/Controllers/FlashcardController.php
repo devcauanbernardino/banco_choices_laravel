@@ -59,7 +59,13 @@ class FlashcardController extends Controller
         $refs = array_merge($fila['due'], $fila['new']);
 
         if ($refs === []) {
-            return response()->json(['error' => __('flashcards.err.nothing_to_review')], 422);
+            // Nada devido/novo agora: em vez de bloquear, libera uma revisão livre de todo o baralho.
+            $total = count(FlashcardBankLocator::loadList($materiaId));
+            if ($total === 0) {
+                return response()->json(['error' => __('flashcards.err.nothing_to_review')], 422);
+            }
+
+            $refs = array_map(fn (int $k) => ['overlay_key' => $k], range(0, $total - 1));
         }
 
         $this->sessao->init([

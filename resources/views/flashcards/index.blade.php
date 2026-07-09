@@ -170,8 +170,7 @@
                         <button type="button" class="fc-stepper__btn" data-fc-step="1" aria-label="{{ __('flashcards.form.new_per_day_label') }} +">+</button>
                     </div>
                     <input type="hidden" name="novos_por_dia" value="20" data-fc-hidden>
-                    <button type="submit" class="fc-card__btn"
-                            @if ($resumo['due_count'] === 0 && $resumo['new_available_count'] === 0) disabled @endif>
+                    <button type="submit" class="fc-card__btn">
                         {{ __('flashcards.form.start') }}
                     </button>
                 </form>
