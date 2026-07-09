@@ -7,6 +7,7 @@
     ];
     $bcChatMascoteFile = $bcChatMascoteFiles[$bcChatMascoteKey] ?? null;
     $bcChatTitle = $bcChatMascoteKey ? __('mascote.'.$bcChatMascoteKey.'.nome') : __('ia_chat.title');
+    $bcChatWelcome = $bcChatMascoteKey ? __('ia_chat.welcome', ['nome' => $bcChatTitle]) : __('ia_chat.welcome_generic');
 @endphp
 <div id="bcAiChatWidget" style="position:fixed; right:20px; bottom:20px; z-index:1050; font-family:'Inter',system-ui,sans-serif;">
     <button type="button" id="bcAiChatToggle" aria-label="{{ __('ia_chat.open_aria') }}"
@@ -98,7 +99,7 @@
 
     function ensureWelcome() {
         if (messagesBox.children.length === 0) {
-            appendMessage('model', @json(__('ia_chat.welcome')));
+            appendMessage('model', @json($bcChatWelcome));
         }
     }
 
