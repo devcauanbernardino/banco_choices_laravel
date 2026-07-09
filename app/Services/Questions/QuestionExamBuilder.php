@@ -36,6 +36,72 @@ class QuestionExamBuilder
         }
         unset($row);
 
+        [$eligibleIdx, $overlayMeta, $filterActive] = self::eligibleIndexes($lista, $materiaId, $catedraId, $parciaisRaw, $temasRaw, $demoOnly);
+
+        $pack = [];
+
+        foreach ($eligibleIdx as $i) {
+            $row = $lista[$i];
+            if (! is_array($row)) {
+                continue;
+            }
+
+            /** @var Questao|null $meta */
+            $meta = $overlayMeta->get((int) $i);
+            $row['_parcial'] = $meta ? $meta->parcial : null;
+            $row['_tema'] = $meta ? $meta->tema : null;
+            $pack[] = $row;
+        }
+
+        if ($filterActive && $pack === []) {
+            return [];
+        }
+
+        if ($shufflePack) {
+            shuffle($pack);
+        }
+        $quantidade = max(1, min($quantidade, count($pack)));
+
+        return array_slice($pack, 0, $quantidade);
+    }
+
+    /**
+     * Conta quantas questões estão elegíveis para os filtros dados, sem montar o pacote completo.
+     *
+     * @param  list<string>  $parciaisRaw
+     * @param  list<string>  $temasRaw
+     */
+    public static function countEligible(
+        int $materiaId,
+        ?int $catedraId,
+        array $parciaisRaw,
+        array $temasRaw,
+        bool $demoOnly = false
+    ): int {
+        $lista = QuestionBankLocator::loadCanonicalList($materiaId);
+        if ($lista === []) {
+            return 0;
+        }
+
+        [$eligibleIdx] = self::eligibleIndexes($lista, $materiaId, $catedraId, $parciaisRaw, $temasRaw, $demoOnly);
+
+        return count($eligibleIdx);
+    }
+
+    /**
+     * @param  list<mixed>  $lista
+     * @param  list<string>  $parciaisRaw
+     * @param  list<string>  $temasRaw
+     * @return array{0: list<int>, 1: \Illuminate\Support\Collection<int, Questao>, 2: bool}
+     */
+    private static function eligibleIndexes(
+        array $lista,
+        int $materiaId,
+        ?int $catedraId,
+        array $parciaisRaw,
+        array $temasRaw,
+        bool $demoOnly
+    ): array {
         $overlayMeta = Questao::query()
             ->where('materia_id', $materiaId)
             ->when($demoOnly, fn ($q) => $q->where('is_demo', true))
@@ -108,31 +174,7 @@ class QuestionExamBuilder
             $eligibleIdx[] = $i;
         }
 
-        $pack = [];
-
-        foreach ($eligibleIdx as $i) {
-            $row = $lista[$i];
-            if (! is_array($row)) {
-                continue;
-            }
-
-            /** @var Questao|null $meta */
-            $meta = $overlayMeta->get((int) $i);
-            $row['_parcial'] = $meta ? $meta->parcial : null;
-            $row['_tema'] = $meta ? $meta->tema : null;
-            $pack[] = $row;
-        }
-
-        if ($filterActive && $pack === []) {
-            return [];
-        }
-
-        if ($shufflePack) {
-            shuffle($pack);
-        }
-        $quantidade = max(1, min($quantidade, count($pack)));
-
-        return array_slice($pack, 0, $quantidade);
+        return [$eligibleIdx, $overlayMeta, $filterActive];
     }
 
     /**

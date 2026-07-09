@@ -138,4 +138,27 @@ class CatalogoAjaxController extends Controller
             'data' => QuestionExamBuilder::parciaisDisponiveis($mid, $cid),
         ]);
     }
+
+    public function contagem(Request $request): \Illuminate\Http\JsonResponse
+    {
+        $mid = (int) $request->query('materia_id');
+        $cid = $request->query('catedra_id');
+        $cid = ($cid !== null && $cid !== '') ? (int) $cid : null;
+        if ($mid <= 0) {
+            return response()->json(['total' => 0], 422);
+        }
+
+        /** @var \App\Models\User $user */
+        $user = Auth::user();
+        if (! $user->possuiMateria($mid)) {
+            return response()->json(['total' => 0], 403);
+        }
+
+        $parciais = QuestionExamBuilder::normalizedFilterTokens((array) $request->query('parcial', []));
+        $temas = QuestionExamBuilder::normalizedFilterTokens((array) $request->query('tema', []));
+
+        return response()->json([
+            'total' => QuestionExamBuilder::countEligible($mid, $cid, $parciais, $temas),
+        ]);
+    }
 }

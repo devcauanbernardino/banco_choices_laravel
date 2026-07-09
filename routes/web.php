@@ -114,6 +114,7 @@ Route::middleware(['auth', 'force.password.change', 'force.mascote.choice'])->gr
         Route::get('/catedras', [CatalogoAjaxController::class, 'catedras'])->name('api.catalogo.catedras');
         Route::get('/temas', [CatalogoAjaxController::class, 'temas'])->name('api.catalogo.temas');
         Route::get('/parciais', [CatalogoAjaxController::class, 'parciais'])->name('api.catalogo.parciais');
+        Route::get('/contagem', [CatalogoAjaxController::class, 'contagem'])->name('api.catalogo.contagem');
     });
 
     Route::match(['get', 'post'], '/comprar-materias', [AddonController::class, 'materias'])->name('addon.materias');

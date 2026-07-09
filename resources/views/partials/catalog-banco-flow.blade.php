@@ -31,7 +31,45 @@
         cat: '{{ route('api.catalogo.catedras') }}',
         parc: '{{ route('api.catalogo.parciais') }}',
         tem: '{{ route('api.catalogo.temas') }}',
+        cont: '{{ route('api.catalogo.contagem') }}',
     };
+
+    var availableLbl = @json(__('bank.num_questions_available'));
+    var noneAvailableLbl = @json(__('bank.num_questions_none_available'));
+
+    function checkedValues(containerId) {
+        return Array.from(document.querySelectorAll('#' + containerId + ' input[type=checkbox]:checked')).map(function (el) { return el.value; });
+    }
+
+    function updateDisponibilidade() {
+        var mid = $('qb_materia_hidden').value;
+        var countEl = $('qbankAvailableCount');
+        if (!mid || !countEl) return;
+        var cid = $('qb_catedra_hidden').value;
+        var qc = cid ? '&catedra_id=' + encodeURIComponent(cid) : '';
+        var qp = checkedValues('qb_parciais').map(function (v) { return '&parcial[]=' + encodeURIComponent(v); }).join('');
+        var qt = checkedValues('qb_temas').map(function (v) { return '&tema[]=' + encodeURIComponent(v); }).join('');
+
+        u(URLs.cont, '?materia_id=' + encodeURIComponent(mid) + qc + qp + qt).then(function (r) {
+            var total = Math.max(0, parseInt(r.total, 10) || 0);
+            countEl.classList.remove('d-none');
+            countEl.textContent = total > 0 ? availableLbl.replace(':n', total) : noneAvailableLbl;
+            countEl.classList.toggle('text-danger', total === 0);
+
+            var range = document.getElementById('qbankQtyRange');
+            if (range) {
+                var newMax = Math.max(1, Math.min(200, total));
+                range.max = String(newMax);
+                range.disabled = total === 0;
+                if (parseInt(range.value, 10) > newMax) {
+                    range.value = String(newMax);
+                }
+                if (typeof window.bcSyncQtyRange === 'function') {
+                    window.bcSyncQtyRange();
+                }
+            }
+        });
+    }
 
     function loadFiltros() {
         $('qb_parciais').innerHTML = '';
@@ -39,6 +77,7 @@
         var mid = $('qb_materia_hidden').value;
         var cid = $('qb_catedra_hidden').value;
         if (!mid) return;
+        updateDisponibilidade();
         var qc = cid ? '&catedra_id=' + encodeURIComponent(cid) : '';
         u(URLs.parc, '?materia_id=' + encodeURIComponent(mid) + qc).then(function (r) {
             var ps = r.data || [];
@@ -183,6 +222,9 @@
         matSel.addEventListener('change', function () { onMateriaChange(this.value); });
         if (matSel.value) { onMateriaChange(matSel.value); }
     }
+
+    $('qb_parciais').addEventListener('change', updateDisponibilidade);
+    $('qb_temas').addEventListener('change', updateDisponibilidade);
 
     function selectFaculdade(fi) {
         document.querySelectorAll('.qb-pick-anos').forEach(function (el) {

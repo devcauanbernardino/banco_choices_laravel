@@ -67,6 +67,7 @@
                                 </div>
                                 <input type="hidden" name="quantidade" id="qbankQtyHidden" value="20">
                                 <p class="small text-muted mt-3 mb-0">{{ __('bank.num_questions_hint') }}</p>
+                                <p class="small fw-semibold mt-2 mb-0 d-none" id="qbankAvailableCount"></p>
                             </section>
                             <section class="bc-mock-panel mb-0" id="qbankTimePanel">
                                 <h2 class="bc-mock-panel__title mb-4">{{ __('bank.time_label') }}</h2>
@@ -214,6 +215,7 @@
         }
         range.addEventListener('input', sync);
         sync();
+        window.bcSyncQtyRange = sync;
     }
 
     const radioEstudo = document.getElementById('radioEstudo');
