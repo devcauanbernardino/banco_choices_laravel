@@ -18,11 +18,15 @@ window.PomodoroEngine = (function () {
     var noiseFilter = null;
     var noiseGain = null;
     var ambientAudioEl = null;
+    var ambientPosTimer = null;
+    var currentAmbientKind = null;
 
     // Preferencia de som ambiente e independente da sessao do cronometro (existe
     // mesmo com o timer parado/idle), pra dar pra ouvir/trocar o som mesmo antes
-    // de iniciar um foco.
-    var ambientPrefs = { kind: 'none', volume: 0.4 };
+    // de iniciar um foco. 'positions' guarda por onde cada som real parou
+    // (segundos), pra retomar dali ao navegar pra outra pagina em vez de
+    // reiniciar do zero (o site nao e SPA - cada navegacao recria o <audio>).
+    var ambientPrefs = { kind: 'none', volume: 0.4, positions: {} };
 
     function loadAmbientPrefs() {
         try {
@@ -32,6 +36,7 @@ window.PomodoroEngine = (function () {
             if (parsed && typeof parsed === 'object') {
                 if (typeof parsed.kind === 'string') ambientPrefs.kind = parsed.kind;
                 if (typeof parsed.volume === 'number') ambientPrefs.volume = parsed.volume;
+                if (parsed.positions && typeof parsed.positions === 'object') ambientPrefs.positions = parsed.positions;
             }
         } catch (e) { /* ignore */ }
     }
@@ -39,6 +44,20 @@ window.PomodoroEngine = (function () {
     function persistAmbientPrefs() {
         try { localStorage.setItem(AMBIENT_KEY, JSON.stringify(ambientPrefs)); } catch (e) { /* ignore */ }
     }
+
+    function saveCurrentAmbientPosition() {
+        // currentTime > 0 evita sobrescrever uma posicao boa com 0 quando o
+        // autoplay foi bloqueado nessa pagina (audio nem chegou a carregar
+        // metadados/avancar - ver App\Support\AmbientSoundLocator).
+        if (ambientAudioEl && currentAmbientKind && ambientAudioEl.currentTime > 0) {
+            ambientPrefs.positions[currentAmbientKind] = ambientAudioEl.currentTime;
+            persistAmbientPrefs();
+        }
+    }
+
+    // Ultima chance de gravar a posicao exata antes da pagina descarregar
+    // (navegacao pra outra tela) - mais preciso que so o intervalo periodico.
+    window.addEventListener('pagehide', saveCurrentAmbientPosition);
 
     function nowMs() { return Date.now(); }
 
@@ -143,8 +162,15 @@ window.PomodoroEngine = (function () {
         return buffer;
     }
 
+    function stopAmbientPositionTracking() {
+        if (ambientPosTimer) { clearInterval(ambientPosTimer); ambientPosTimer = null; }
+    }
+
     function stopAmbient() {
+        saveCurrentAmbientPosition();
+        stopAmbientPositionTracking();
         if (ambientAudioEl) { ambientAudioEl.pause(); ambientAudioEl.src = ''; ambientAudioEl = null; }
+        currentAmbientKind = null;
         if (noiseNode) { try { noiseNode.stop(); } catch (e) { /* ignore */ } noiseNode.disconnect(); noiseNode = null; }
         if (noiseFilter) { noiseFilter.disconnect(); noiseFilter = null; }
         if (noiseGain) { noiseGain.disconnect(); noiseGain = null; }
@@ -153,12 +179,27 @@ window.PomodoroEngine = (function () {
     /**
      * Arquivo de audio real (mp3/ogg) enviado pelo usuario tem prioridade sobre
      * o ruido sintetizado - ver App\Support\AmbientSoundLocator, exposto via
-     * window.POMODORO_AMBIENT_FILES (slug => URL publica).
+     * window.POMODORO_AMBIENT_FILES (slug => URL publica). Retoma da ultima
+     * posicao salva pra esse som (ambientPrefs.positions[kind]) em vez de
+     * comecar do zero, ja que a pagina recarrega a cada navegacao.
      */
-    function startRealAudio(url, volume) {
+    function startRealAudio(url, volume, kind) {
         ambientAudioEl = new Audio(url);
         ambientAudioEl.loop = true;
         ambientAudioEl.volume = typeof volume === 'number' ? volume : 0.4;
+        currentAmbientKind = kind;
+
+        var resumeAt = ambientPrefs.positions[kind];
+        if (typeof resumeAt === 'number' && resumeAt > 0) {
+            ambientAudioEl.addEventListener('loadedmetadata', function () {
+                if (!ambientAudioEl) return;
+                try {
+                    var dur = ambientAudioEl.duration;
+                    ambientAudioEl.currentTime = (dur && isFinite(dur)) ? (resumeAt % dur) : resumeAt;
+                } catch (e) { /* ignore */ }
+            }, { once: true });
+        }
+
         var attempt = function () { return ambientAudioEl && ambientAudioEl.play().catch(function () { /* ignore */ }); };
         attempt();
         var retry = function () {
@@ -170,6 +211,14 @@ window.PomodoroEngine = (function () {
         document.addEventListener('click', retry);
         document.addEventListener('touchstart', retry);
         document.addEventListener('keydown', retry);
+
+        stopAmbientPositionTracking();
+        ambientPosTimer = setInterval(function () {
+            if (ambientAudioEl && !ambientAudioEl.paused) {
+                ambientPrefs.positions[kind] = ambientAudioEl.currentTime;
+                persistAmbientPrefs();
+            }
+        }, 3000);
     }
 
     function startAmbient(kind, volume) {
@@ -178,7 +227,7 @@ window.PomodoroEngine = (function () {
 
         var fileUrl = (window.POMODORO_AMBIENT_FILES || {})[kind];
         if (fileUrl) {
-            startRealAudio(fileUrl, volume);
+            startRealAudio(fileUrl, volume, kind);
             return;
         }
 
