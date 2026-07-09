@@ -30,6 +30,9 @@ window.POMODORO_AMBIENT_FILES = @json(\App\Support\AmbientSoundLocator::availabl
         <button type="button" class="pm-widget__toggle" id="pmWidgetToggle" aria-label="{{ __('pomodoro.form.pause') }}">
             <span class="material-symbols-outlined" id="pmWidgetToggleIcon" aria-hidden="true">pause</span>
         </button>
+        <button type="button" class="pm-widget__toggle pm-widget__pip d-none" id="pmWidgetPip" aria-label="{{ __('pomodoro.widget.pip_open') }}" title="{{ __('pomodoro.widget.pip_open') }}">
+            <span class="material-symbols-outlined" aria-hidden="true">picture_in_picture_alt</span>
+        </button>
     </div>
 </div>
 
@@ -103,12 +106,17 @@ window.POMODORO_AMBIENT_FILES = @json(\App\Support\AmbientSoundLocator::availabl
     var openBtn = document.getElementById('pmWidgetOpen');
     var toggleBtn = document.getElementById('pmWidgetToggle');
     var toggleIcon = document.getElementById('pmWidgetToggleIcon');
+    var pipBtn = document.getElementById('pmWidgetPip');
 
     var LABELS = {
         focus: @json(__('pomodoro.state.focus')),
-        brk: @json(__('pomodoro.state.break'))
+        brk: @json(__('pomodoro.state.break')),
+        pause: @json(__('pomodoro.form.pause')),
+        resume: @json(__('pomodoro.form.resume')),
+        pipHint: @json(__('pomodoro.widget.pip_hint'))
     };
     var POMODORO_URL = @json(route('pomodoro.index'));
+    var mascoteSrc = @json($pmMascoteGif ? asset('assets/img/mascots/mascots-gifs/'.$pmMascoteGif) : null);
 
     openBtn.addEventListener('click', function () {
         window.location.href = POMODORO_URL;
@@ -119,6 +127,81 @@ window.POMODORO_AMBIENT_FILES = @json(\App\Support\AmbientSoundLocator::availabl
         var st = window.PomodoroEngine.getState();
         if (st.running) { window.PomodoroEngine.pause(); } else { window.PomodoroEngine.resume(); }
     });
+
+    // ---- Picture-in-Picture (janela flutuante por cima de outros apps) ----
+    var pipSupported = typeof window.documentPictureInPicture !== 'undefined';
+    var pipWindow = null;
+    var pipEls = null;
+
+    function buildPipContent(pipDoc) {
+        var style = pipDoc.createElement('style');
+        style.textContent = 'body{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;height:100vh;font-family:Inter,system-ui,sans-serif;background:#15101c;color:#fff;text-align:center;padding:12px;box-sizing:border-box;}' +
+            'img{width:64px;height:64px;object-fit:contain;}' +
+            '.t{font-size:2.4rem;font-weight:800;font-variant-numeric:tabular-nums;}' +
+            '.s{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#c77dfd;}' +
+            'button{border:none;border-radius:10px;padding:8px 18px;font-weight:700;font-size:.85rem;background:linear-gradient(135deg,#8b1fb8,#6a0392);color:#fff;cursor:pointer;}' +
+            '.h{font-size:.68rem;color:rgba(255,255,255,.5);max-width:220px;}';
+        pipDoc.head.appendChild(style);
+
+        if (mascoteSrc) {
+            var img = pipDoc.createElement('img');
+            img.src = mascoteSrc;
+            img.alt = '';
+            pipDoc.body.appendChild(img);
+        }
+        var t = pipDoc.createElement('div');
+        t.className = 't';
+        var s = pipDoc.createElement('div');
+        s.className = 's';
+        var btn = pipDoc.createElement('button');
+        btn.type = 'button';
+        var hint = pipDoc.createElement('div');
+        hint.className = 'h';
+        hint.textContent = LABELS.pipHint;
+
+        btn.addEventListener('click', function () {
+            var st = window.PomodoroEngine.getState();
+            if (st.running) { window.PomodoroEngine.pause(); } else { window.PomodoroEngine.resume(); }
+        });
+
+        pipDoc.body.appendChild(t);
+        pipDoc.body.appendChild(s);
+        pipDoc.body.appendChild(btn);
+        pipDoc.body.appendChild(hint);
+
+        pipEls = { time: t, state: s, btn: btn };
+    }
+
+    function updatePipContent(st) {
+        if (!pipWindow || !pipEls || !st) return;
+        pipEls.time.textContent = formatTime(st);
+        pipEls.state.textContent = st.mode === 'focus' ? LABELS.focus : LABELS.brk;
+        pipEls.btn.textContent = st.running ? LABELS.pause : LABELS.resume;
+    }
+
+    function openPip() {
+        if (!pipSupported || pipWindow) return;
+        window.documentPictureInPicture.requestWindow({ width: 260, height: 220 }).then(function (win) {
+            pipWindow = win;
+            buildPipContent(pipWindow.document);
+            updatePipContent(window.PomodoroEngine.getState());
+            pipWindow.addEventListener('pagehide', function () {
+                pipWindow = null;
+                pipEls = null;
+            });
+        }).catch(function () { /* usuario cancelou ou navegador bloqueou */ });
+    }
+
+    if (pipBtn) {
+        if (pipSupported) {
+            pipBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                openPip();
+            });
+        } else {
+            pipBtn.remove();
+        }
+    }
 
     function formatTime(st) {
         var m = Math.floor(st.remainingSec / 60);
@@ -137,6 +220,7 @@ window.POMODORO_AMBIENT_FILES = @json(\App\Support\AmbientSoundLocator::availabl
 
     function render(st) {
         updateTitle(st);
+        updatePipContent(st);
 
         if (onPomodoroPage || !st || st.mode === 'idle') {
             widget.classList.add('d-none');
@@ -148,6 +232,7 @@ window.POMODORO_AMBIENT_FILES = @json(\App\Support\AmbientSoundLocator::availabl
         timeEl.textContent = formatTime(st);
         stateEl.textContent = st.mode === 'focus' ? LABELS.focus : LABELS.brk;
         toggleIcon.textContent = st.running ? 'pause' : 'play_arrow';
+        if (pipBtn && pipSupported) pipBtn.classList.remove('d-none');
         // o balao ocupa o mesmo canto do widget de chat - substitui em vez de sobrepor
         if (chatWidget) chatWidget.style.display = 'none';
     }
