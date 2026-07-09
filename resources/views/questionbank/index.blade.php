@@ -63,7 +63,7 @@
                                        aria-labelledby="qbankQtyDisplay">
                                 <div class="bc-mock-range-ticks">
                                     <span>1</span>
-                                    <span>200</span>
+                                    <span id="qbankQtyMaxTick">200</span>
                                 </div>
                                 <input type="hidden" name="quantidade" id="qbankQtyHidden" value="20">
                                 <p class="small text-muted mt-3 mb-0">{{ __('bank.num_questions_hint') }}</p>
@@ -205,6 +205,7 @@
     const hidden = document.getElementById('qbankQtyHidden');
     const display = document.getElementById('qbankQtyDisplay');
     const summary = document.getElementById('qbankSummaryQty');
+    const maxTick = document.getElementById('qbankQtyMaxTick');
     if (range && hidden && display) {
         function sync() {
             var v = range.value;
@@ -212,6 +213,8 @@
             display.textContent = v;
             if (summary) summary.textContent = v;
             range.setAttribute('aria-valuenow', v);
+            range.setAttribute('aria-valuemax', range.max);
+            if (maxTick) maxTick.textContent = range.max;
         }
         range.addEventListener('input', sync);
         sync();
