@@ -39,24 +39,42 @@ class CatalogoSeeder extends Seeder
         $idBc = (int) DB::table('faculdades')->where('slug', 'barcelo')->value('id');
         $idCbc = (int) DB::table('faculdades')->where('slug', 'cbc')->value('id');
 
-        // Agrupamentos UBA
+        // Agrupamentos UBA — o Ciclo Biomédico se divide em 1º/2º/3º Año (plan de
+        // estudios real), e o Ciclo Clínico tem matérias próprias além de se
+        // dividir em Clínicas e Quirúrgicas.
         $agrBiomedSlug = 'uba-ciclo-biomedico';
         DB::table('agrupamentos')->updateOrInsert(
             ['faculdade_id' => $idUba, 'slug' => $agrBiomedSlug],
             [
-                'nome' => 'Ciclo Biomédico',
+                'nome' => 'Ciclo Biomédico — 1er Año',
                 'ordem' => 1,
-                'tipo' => 'ciclo',
+                'tipo' => 'ano',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]
         );
 
+        foreach ([
+            ['uba-ciclo-biomedico-2', 'Ciclo Biomédico — 2do Año', 2],
+            ['uba-ciclo-biomedico-3', 'Ciclo Biomédico — 3er Año', 3],
+        ] as [$slug, $nome, $ord]) {
+            DB::table('agrupamentos')->updateOrInsert(
+                ['faculdade_id' => $idUba, 'slug' => $slug],
+                [
+                    'nome' => $nome,
+                    'ordem' => $ord,
+                    'tipo' => 'ano',
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+        }
+
         DB::table('agrupamentos')->updateOrInsert(
             ['faculdade_id' => $idUba, 'slug' => 'uba-ciclo-clinico'],
             [
                 'nome' => 'Ciclo Clínico',
-                'ordem' => 2,
+                'ordem' => 4,
                 'tipo' => 'ciclo',
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -71,9 +89,9 @@ class CatalogoSeeder extends Seeder
         // (ver CatalogoAjaxController::agrupamentos, que só lista agrupamentos
         // com pelo menos uma matéria).
         foreach ([
-            ['uba-clinicas', 'Clínicas', 3],
-            ['uba-quirurgicas', 'Quirúrgicas', 4],
-            ['uba-ciclo-internado', 'Ciclo Internado', 5],
+            ['uba-clinicas', 'Clínicas', 5],
+            ['uba-quirurgicas', 'Quirúrgicas', 6],
+            ['uba-ciclo-internado', 'Ciclo Internado', 7],
         ] as [$slug, $nome, $ord]) {
             DB::table('agrupamentos')->updateOrInsert(
                 ['faculdade_id' => $idUba, 'slug' => $slug],
@@ -88,6 +106,8 @@ class CatalogoSeeder extends Seeder
         }
 
         $agrBioId = (int) DB::table('agrupamentos')->where('slug', $agrBiomedSlug)->value('id');
+        $agrBio2Id = (int) DB::table('agrupamentos')->where('slug', 'uba-ciclo-biomedico-2')->value('id');
+        $agrBio3Id = (int) DB::table('agrupamentos')->where('slug', 'uba-ciclo-biomedico-3')->value('id');
         $agrClinicoId = (int) DB::table('agrupamentos')->where('slug', 'uba-ciclo-clinico')->value('id');
         $agrQuirurgicasId = (int) DB::table('agrupamentos')->where('slug', 'uba-quirurgicas')->value('id');
 
@@ -117,7 +137,7 @@ class CatalogoSeeder extends Seeder
                 'id' => 1,
                 'nome' => 'Microbiología y Parasitología',
                 'slug' => 'microbiologia-y-parasitologia',
-                'agrupamento_id' => $agrBioId,
+                'agrupamento_id' => $agrBio3Id,
                 'ordem' => 7,
             ]);
             $this->fixSqliteSequence('materias');
@@ -125,7 +145,7 @@ class CatalogoSeeder extends Seeder
             DB::table('materias')->where('id', 1)->update([
                 'nome' => 'Microbiología y Parasitología',
                 'slug' => 'microbiologia-y-parasitologia',
-                'agrupamento_id' => $agrBioId,
+                'agrupamento_id' => $agrBio3Id,
                 'ordem' => 7,
             ]);
         }
@@ -210,15 +230,14 @@ class CatalogoSeeder extends Seeder
             ['nome' => 'Cátedra III', 'ordem' => 1, 'created_at' => now(), 'updated_at' => now()]
         );
 
-        $ubiomedMaterias = [
+        // Primer Año: Histología-Biología Celular-Embriología-Genética (curso
+        // combinado no plan de estudios, modelado aqui como matérias separadas).
+        $ubiomedMateriasAno1 = [
             ['slug' => 'histologia', 'nome' => 'Histología', 'ordem' => 1],
             ['slug' => 'embriologia', 'nome' => 'Embriología', 'ordem' => 2],
             ['slug' => 'biologia-molecular-y-genetica', 'nome' => 'Biología Molecular y Genética', 'ordem' => 3],
-            ['slug' => 'fisiologia-y-biofisica', 'nome' => 'Fisiología y Biofísica', 'ordem' => 4],
-            ['slug' => 'bioquimica', 'nome' => 'Bioquímica', 'ordem' => 5],
         ];
-
-        foreach ($ubiomedMaterias as $m) {
+        foreach ($ubiomedMateriasAno1 as $m) {
             DB::table('materias')->updateOrInsert(
                 ['slug' => $m['slug']],
                 [
@@ -229,11 +248,28 @@ class CatalogoSeeder extends Seeder
             );
         }
 
+        // Segundo Año: Química Biológica (Bioquímica) e Fisiología y Biofísica.
+        $ubiomedMateriasAno2 = [
+            ['slug' => 'fisiologia-y-biofisica', 'nome' => 'Fisiología y Biofísica', 'ordem' => 4],
+            ['slug' => 'bioquimica', 'nome' => 'Bioquímica', 'ordem' => 5],
+        ];
+        foreach ($ubiomedMateriasAno2 as $m) {
+            DB::table('materias')->updateOrInsert(
+                ['slug' => $m['slug']],
+                [
+                    'nome' => $m['nome'],
+                    'agrupamento_id' => $agrBio2Id,
+                    'ordem' => $m['ordem'],
+                ]
+            );
+        }
+
+        // Tercer Año: Microbiología y Parasitología I/II, Inmunología Humana.
         DB::table('materias')->updateOrInsert(
             ['slug' => 'inmunologia-humana'],
             [
                 'nome' => 'Inmunología Humana',
-                'agrupamento_id' => $agrBioId,
+                'agrupamento_id' => $agrBio3Id,
                 'ordem' => 6,
             ]
         );
