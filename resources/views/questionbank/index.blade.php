@@ -160,8 +160,6 @@
                 </div>
             </div>
             @endif
-
-            <p class="bc-mock-footer-note mb-0">&copy; {{ date('Y') }} {{ __('bank.footer_copy') }}</p>
         </div>
     </div>
 @endsection
