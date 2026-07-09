@@ -134,13 +134,22 @@ window.POMODORO_AMBIENT_FILES = @json(\App\Support\AmbientSoundLocator::availabl
     var pipEls = null;
 
     function buildPipContent(pipDoc) {
+        var meta = pipDoc.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1';
+        pipDoc.head.appendChild(meta);
+
         var style = pipDoc.createElement('style');
-        style.textContent = 'body{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;height:100vh;font-family:Inter,system-ui,sans-serif;background:#15101c;color:#fff;text-align:center;padding:12px;box-sizing:border-box;}' +
-            'img{width:64px;height:64px;object-fit:contain;}' +
-            '.t{font-size:2.4rem;font-weight:800;font-variant-numeric:tabular-nums;}' +
-            '.s{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#c77dfd;}' +
-            'button{border:none;border-radius:10px;padding:8px 18px;font-weight:700;font-size:.85rem;background:linear-gradient(135deg,#8b1fb8,#6a0392);color:#fff;cursor:pointer;}' +
-            '.h{font-size:.68rem;color:rgba(255,255,255,.5);max-width:220px;}';
+        style.textContent = 'html,body{margin:0;height:100%;width:100%;overflow:hidden;}' +
+            'body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(4px,3vh,10px);font-family:Inter,system-ui,sans-serif;background:#15101c;color:#fff;text-align:center;padding:clamp(6px,4vw,12px);box-sizing:border-box;}' +
+            'img{width:clamp(28px,20vw,64px);height:clamp(28px,20vw,64px);object-fit:contain;flex-shrink:0;}' +
+            '.t{font-size:clamp(1.1rem,16vw,2.4rem);font-weight:800;font-variant-numeric:tabular-nums;line-height:1;}' +
+            '.s{font-size:clamp(.6rem,4vw,.8rem);font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#c77dfd;}' +
+            'button{border:none;border-radius:10px;padding:clamp(5px,2vh,8px) clamp(10px,5vw,18px);font-weight:700;font-size:clamp(.68rem,3.5vw,.85rem);background:linear-gradient(135deg,#8b1fb8,#6a0392);color:#fff;cursor:pointer;flex-shrink:0;}' +
+            '.h{font-size:.62rem;color:rgba(255,255,255,.5);max-width:90%;}' +
+            '@media (max-height:160px){img{display:none;}.h{display:none;}}' +
+            '@media (max-height:110px){.s{display:none;}}' +
+            '@media (max-width:160px){.h{display:none;}}';
         pipDoc.head.appendChild(style);
 
         if (mascoteSrc) {
