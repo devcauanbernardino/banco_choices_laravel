@@ -73,12 +73,26 @@ class SimulationController extends Controller
             return strcasecmp($t, 'final') === 0 ? 'final' : $t;
         }, $parciais)));
 
+        $quantidadeSolicitada = (int) $request->input('quantidade');
+        $disponivel = QuestionExamBuilder::countEligible($materiaId, $catId, $parciais, $temas);
+
+        if ($disponivel === 0) {
+            return redirect()->route('questionbank')->with('error', __('bank.err.no_questions_filters'));
+        }
+
+        if ($quantidadeSolicitada > $disponivel) {
+            return redirect()->route('questionbank')->with('error', __('bank.err.quantidade_excede_disponivel', [
+                'pedido' => $quantidadeSolicitada,
+                'disponivel' => $disponivel,
+            ]));
+        }
+
         $questoes = QuestionExamBuilder::buildPack(
             $materiaId,
             $catId,
             $parciais,
             $temas,
-            (int) $request->input('quantidade'),
+            $quantidadeSolicitada,
             false,
         );
 
