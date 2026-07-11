@@ -238,7 +238,7 @@
                                 {{ $mascoteNome ? __('quiz.ai.explain_btn_mascote', ['mascote' => $mascoteNome]) : __('quiz.ai.explain_btn') }}
                             </button>
                             <div id="qzAiExplainBox" class="d-none" style="margin-top:10px; padding:13px 16px; border-radius:12px; background:rgba(139,31,184,.06); border:1px solid rgba(139,31,184,.2);">
-                                <p id="qzAiExplainText" style="font-size:.85rem; color:var(--app-text); line-height:1.65; margin:0;"></p>
+                                <div id="qzAiExplainText" style="font-size:.85rem; color:var(--app-text); line-height:1.65;"></div>
                             </div>
                         </div>
                     @endif
@@ -462,7 +462,17 @@
                 if (!res.ok) {
                     throw new Error((res.body && res.body.error) || '{{ __('quiz.ai.error') }}');
                 }
-                text.textContent = res.body.explicacao;
+                var paragrafos = String(res.body.explicacao || '')
+                    .split(/\n\s*\n/)
+                    .map(function (p) { return p.trim(); })
+                    .filter(function (p) { return p !== ''; });
+                text.innerHTML = '';
+                paragrafos.forEach(function (p, idx) {
+                    var par = document.createElement('p');
+                    par.style.margin = idx < paragrafos.length - 1 ? '0 0 10px' : '0';
+                    par.textContent = p;
+                    text.appendChild(par);
+                });
                 box.classList.remove('d-none');
                 btn.remove();
             }).catch(function (err) {

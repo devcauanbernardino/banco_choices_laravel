@@ -375,13 +375,20 @@ class SimulationController extends Controller
             default => 'português',
         };
 
+        $acertou = ! empty($feedbacksAll[$indiceAtual]['acertou']);
+
+        $instrucoes = $acertou
+            ? 'Escreva um único parágrafo curto (2 a 3 frases) explicando por que essa é a resposta correta, sem repetir literalmente o enunciado.'
+            : 'Escreva exatamente dois parágrafos curtos (2 a 3 frases cada), separados por uma linha em branco: '
+                .'o primeiro explicando por que a resposta correta está certa; o segundo explicando especificamente '
+                .'por que a alternativa que o aluno escolheu está incorreta.';
+
         $prompt = "Questão de prova de medicina:\n{$questao->getPergunta()}\n\n"
             ."Alternativas:\n".implode("\n", $opcoesTexto)."\n\n"
             .'Resposta correta: '.(implode(', ', $corretaLetras) ?: 'não definida')."\n"
             .'Resposta do aluno: '.($usuarioLetras !== [] ? implode(', ', $usuarioLetras) : 'não respondeu')."\n\n"
-            .'Explique de forma clara e didática por que a resposta correta está certa e, se o aluno errou, '
-            .'por que a alternativa escolhida por ele está incorreta. '
-            ."Responda em {$idioma}, em até 5 frases, sem repetir literalmente o enunciado.";
+            .$instrucoes.' Não use marcadores, listas, títulos nem markdown — apenas texto corrido dividido em parágrafos curtos.'
+            ." Responda em {$idioma}.";
 
         $system = 'Você é um tutor de medicina que explica questões de prova de forma clara, direta e didática '
             .'para estudantes de graduação.';
