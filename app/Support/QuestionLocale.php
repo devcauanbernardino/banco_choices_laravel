@@ -4,8 +4,9 @@ namespace App\Support;
 
 /**
  * Ficheiros de questões têm o texto de referência em espanhol (es).
- * Traduções por idioma (mapa chave => { "pergunta", "opcoes", "feedback" }):
+ * Traduções por idioma (mapa chave => { "pergunta", "opcoes", "explicacoes", "feedback" }):
  * chave = índice 0..N no JSON (`_overlay_key`, definido ao carregar o banco) ou, em overlays antigos, `numero`.
+ * "explicacoes" substitui o array inteiro (mesmo formato por mascote do banco original).
  * - storage/app/data/i18n/{locale}/{nome_do_ficheiro_base} (gerado em deploy com questions:build-i18n)
  * - resources/question-i18n/{locale}/… (opcional, para versionar no git)
  */
@@ -52,6 +53,10 @@ class QuestionLocale
 
         if (isset($patch['opcoes']) && is_array($patch['opcoes'])) {
             $out['opcoes'] = self::mergeOpcoes($questao['opcoes'] ?? [], $patch['opcoes']);
+        }
+
+        if (isset($patch['explicacoes']) && is_array($patch['explicacoes'])) {
+            $out['explicacoes'] = $patch['explicacoes'];
         }
 
         if (isset($patch['nota']) && is_string($patch['nota']) && $patch['nota'] !== '') {
