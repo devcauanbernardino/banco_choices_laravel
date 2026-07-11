@@ -229,8 +229,8 @@
                                     </div>
                                 </td>
                                 <td class="text-end">
-                                    <span class="badge bg-{{ $aprov >= 70 ? 'success' : 'warning' }} rounded-pill">
-                                        {{ $aprov >= 70 ? __('stats.badge_goal') : __('stats.badge_evolving') }}
+                                    <span class="badge bg-{{ \App\Support\SimulationGrading::aprovado($aprov) ? 'success' : 'warning' }} rounded-pill">
+                                        {{ \App\Support\SimulationGrading::aprovado($aprov) ? __('stats.badge_goal') : __('stats.badge_evolving') }}
                                     </span>
                                 </td>
                             </tr>

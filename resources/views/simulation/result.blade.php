@@ -22,7 +22,7 @@
 @section('content')
 @php
     $erros = max(0, $total - $acertos);
-    $aprovado = $porcentagem >= 70;
+    $aprovado = \App\Support\SimulationGrading::aprovado($porcentagem);
     $tempoFmt = $tempoSegundos ? gmdate('H:i:s', $tempoSegundos) : null;
     $xpGanho = (int) max(15, min(999, round($acertos * 12 + ($total > 0 ? ($acertos / $total) : 0) * 80)));
     $circunf = 251;

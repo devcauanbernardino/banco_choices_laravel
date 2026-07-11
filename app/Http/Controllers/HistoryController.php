@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\SimulationGrading;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -36,7 +37,7 @@ class HistoryController extends Controller
             $total = (int) $row->total_questoes;
             $acertos = (int) $row->acertos;
             $pct = $total > 0 ? $acertos / $total : 0;
-            $statusKey = $pct >= 0.7 ? 'aprovado' : 'reprovado';
+            $statusKey = SimulationGrading::aprovado($pct * 100) ? 'aprovado' : 'reprovado';
 
             if ($filtroStatus !== '' && strtolower($filtroStatus) !== $statusKey) {
                 continue;
@@ -48,8 +49,8 @@ class HistoryController extends Controller
                 'materia' => ucfirst($row->materia),
                 'pontuacao' => "{$acertos}/{$total}",
                 'porcentagem' => round($pct * 100) . '%',
-                'status' => $pct >= 0.7 ? __('dashboard.status.approved') : __('dashboard.status.failed'),
-                'classe' => $pct >= 0.7 ? 'success' : 'danger',
+                'status' => SimulationGrading::aprovado($pct * 100) ? __('dashboard.status.approved') : __('dashboard.status.failed'),
+                'classe' => SimulationGrading::aprovado($pct * 100) ? 'success' : 'danger',
             ];
         }
 

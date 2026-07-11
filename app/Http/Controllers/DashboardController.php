@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\SimulationGrading;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -101,8 +102,8 @@ class DashboardController extends Controller
                 'data' => date('d/m/Y', strtotime($row->data_realizacao)),
                 'categoria' => $row->materia,
                 'pontuacao' => "{$acertos}/{$total}",
-                'status' => $pct >= 0.7 ? __('dashboard.status.approved') : __('dashboard.status.failed'),
-                'classe' => $pct >= 0.7 ? 'success' : 'danger',
+                'status' => SimulationGrading::aprovado($pct * 100) ? __('dashboard.status.approved') : __('dashboard.status.failed'),
+                'classe' => SimulationGrading::aprovado($pct * 100) ? 'success' : 'danger',
             ];
         })->toArray();
     }
