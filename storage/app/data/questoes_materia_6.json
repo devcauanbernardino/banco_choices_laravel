@@ -1,201 +1,470 @@
 {
-  "titulo": "Histología",
-  "subtitulo": "Cátedra de Citología, Histología y Embriología · Facultad de Medicina UNLP",
-  "total_questoes": 13,
-  "questoes": [
-    {
-      "numero": 1,
-      "pergunta": "Los islotes de Langerhans se hallan en:",
-      "opcoes": [
-        {"letra": "A", "texto": "Páncreas y tienen 3 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D, secretora de polipéptido pancreático."},
-        {"letra": "B", "texto": "Páncreas y tienen 4 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D, secretora de polipéptido pancreático, PP secretora de somatostatina."},
-        {"letra": "C", "texto": "Páncreas y tienen 4 tipos principales de células endocrinas: A, secretora de somatostatina, B, secretora de insulina, D, secretora de polipéptido pancreático, PP, secretora de glucagón."},
-        {"letra": "D", "texto": "Páncreas y tienen 4 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D secretora de somatostatina, PP secretora de polipéptido pancreático."},
-        {"letra": "E", "texto": "Hígado y tienen 4 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D, secretora somatostatina, PP, secretora de polipéptido pancreático."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "D",
-      "feedback": "Resposta correta: D. Os ilhotes de Langerhans ficam no pâncreas endócrino e têm 4 tipos celulares principais: células A (alfa), secretoras de glucagon; células B (beta), secretoras de insulina; células D (delta), secretoras de somatostatina; e células PP, secretoras de polipeptídeo pancreático. As demais opções trocam as secreções entre os tipos celulares ou reduzem para 3 tipos, o que é incorreto."
-    },
-    {
-      "numero": 2,
-      "pergunta": "El acino hepático está constituido por un:",
-      "opcoes": [
-        {"letra": "A", "texto": "Rombo que tiene un eje menor que en sus extremos tiene dos tríadas portales y un eje mayor que tiene en sus extremos dos venas terminales y explica la circulación biliar."},
-        {"letra": "B", "texto": "Rombo que tiene un eje menor que en sus extremos tiene dos tríadas portales y un eje mayor que tiene en sus extremos dos venas terminales y explica la circulación sanguínea."},
-        {"letra": "C", "texto": "Hexágono que tiene un eje menor que en sus extremos tiene dos tríadas portales y un eje mayor que tiene en sus extremos dos venas terminales y explica la circulación sanguínea."},
-        {"letra": "D", "texto": "Rombo que tiene un eje menor que en sus extremos tiene dos venas terminales y un eje mayor que tiene en sus extremos dos tríadas portales y explica la circulación sanguínea."},
-        {"letra": "E", "texto": "Hexágono que tiene un eje menor que en sus extremos tiene dos venas terminales y un eje mayor que tiene en sus extremos dos tríadas portales y explica la circulación sanguínea."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "B",
-      "feedback": "Resposta correta: B. O ácino hepático (de Rappaport) tem formato de losango (rombo): o eixo menor liga duas tríades portais vizinhas, e o eixo maior liga duas veias centrolobulillares (terminais) — esse arranjo é o que define a circulação sanguínea (não biliar) dentro do ácino, organizando o parênquima em zonas 1, 2 e 3 conforme a distância da tríade portal."
-    },
-    {
-      "numero": 3,
-      "pergunta": "La mácula densa es una diferenciación del epitelio de los túbulos:",
-      "opcoes": [
-        {"letra": "A", "texto": "contorneados distales y se considera un osmorreceptor."},
-        {"letra": "B", "texto": "contorneados distales y se considera barorreceptor."},
-        {"letra": "C", "texto": "colectores y se considera un osmorreceptor."},
-        {"letra": "D", "texto": "contorneados proximales y se considera un osmorreceptor."},
-        {"letra": "E", "texto": "colectores y se considera un baroorreceptor."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "A",
-      "feedback": "Resposta correta: A. A mácula densa é uma diferenciação do epitélio do túbulo contorneado distal, no ponto em que este entra em contato com o polo vascular do corpúsculo renal. Suas células são sensíveis à concentração de Na+/osmolaridade do fluido tubular, funcionando como parte do aparelho justaglomerular que regula a filtração glomerular (feedback túbulo-glomerular)."
-    },
-    {
-      "numero": 4,
-      "pergunta": "La presencia de glándulas endometriales rectas, con alta actividad mitótica, es un efecto directo de la hormona:",
-      "opcoes": [
-        {"letra": "A", "texto": "FSH"},
-        {"letra": "B", "texto": "estrógeno"},
-        {"letra": "C", "texto": "progesterona"},
-        {"letra": "D", "texto": "Prolactina/LH"}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "B",
-      "feedback": "Resposta correta: B. Na fase proliferativa do ciclo endometrial, o estrógeno estimula diretamente a proliferação do epitélio glandular do endométrio, formando glândulas retas e com alta atividade mitótica. É só depois, na fase secretora, sob ação da progesterona, que essas glândulas se tornam tortuosas/serrilhadas e passam a secretar em vez de proliferar."
-    },
-    {
-      "numero": 5,
-      "pergunta": "Las glándulas gástricas que tienen una morfología más compleja se ubican en la región:",
-      "opcoes": [
-        {"letra": "A", "texto": "Antropíloro y están constituidas por células parietales, caliciformes, indiferenciadas, principales y enteroendocrinas."},
-        {"letra": "B", "texto": "Corpofúndica y están constituidas por células parietales, enterocitos, indiferenciadas, principales y enteroendocrinas."},
-        {"letra": "C", "texto": "Corpofúndica y están constituidas por células parietales, mucosas del cuello, indiferenciadas, principales y enteroendocrinas."},
-        {"letra": "D", "texto": "Antropíloro y están constituidas por células parietales, enterocitos, indiferenciadas, principales y enteroendocrinas."},
-        {"letra": "E", "texto": "Corpofúndica y están constituidas por células parietales, caliciformes, indiferenciadas, principales y enteroendocrinas."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "C",
-      "feedback": "Resposta correta: C. As glândulas gástricas próprias (corpofúndicas) são as mais complexas do estômago, com maior variedade celular: células parietais (oxínticas), mucosas do colo, indiferenciadas (tronco), principais (zimogênicas) e enteroendócrinas. As glândulas pilóricas/cárdicas, em comparação, têm população celular mais uniforme (predomínio de células mucosas)."
-    },
-    {
-      "numero": 6,
-      "pergunta": "El proceso mediante el cual el melanocito transfiere melanina al queratinocito se denomina mecanismo:",
-      "opcoes": [
-        {"letra": "A", "texto": "Apócrino."},
-        {"letra": "B", "texto": "Citocrino."},
-        {"letra": "C", "texto": "Merócrino."},
-        {"letra": "D", "texto": "Yuxtacrino."},
-        {"letra": "E", "texto": "Holócrino."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "B",
-      "feedback": "Resposta correta: B. A transferência de melanina do melanócito para os queratinócitos vizinhos ocorre por secreção citocrina: os prolongamentos dendríticos do melanócito injetam os melanossomos diretamente no citoplasma do queratinócito, sem que a membrana celular do melanócito se rompa (diferente do mecanismo apócrino/merócrino/holócrino, que descrevem outros tipos de secreção glandular)."
-    },
-    {
-      "numero": 7,
-      "pergunta": "El conducto deferente tiene un epitelio de tipo:",
-      "opcoes": [
-        {"letra": "A", "texto": "Pseudoestratificado con células que poseen esterocilios, microvellosidades y vellosidades."},
-        {"letra": "B", "texto": "Estratificado con células que poseen esterocilios, microvellosidades y vellosidades."},
-        {"letra": "C", "texto": "Pseudoestratificado con células que poseen esterocilios, ribete en cepillo y cilios."},
-        {"letra": "D", "texto": "Pseudoestratificado con células que poseen esterocilios, microvellosidades y cilios."},
-        {"letra": "E", "texto": "Estratificado con células que poseen esterocilios, microvellosidades y cilios."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "D",
-      "feedback": "Resposta correta: D. O conducto deferente é revestido por epitélio pseudoestratificado, com células que apresentam esterocílios (longas microvilosidades, não cílios móveis verdadeiros) na superfície apical, além de microvilosidades e cílios. É a mesma linhagem epitelial da via espermática (epidídimo/conducto deferente), diferente do epitélio de transição das vias urinárias."
-    },
-    {
-      "numero": 8,
-      "pergunta": "Las vellosidades intestinales son:",
-      "opcoes": [
-        {"letra": "A", "texto": "Proyecciones digitiformes de la mucosa del intestino delgado que tienen una relación 1:1 con respecto a las criptas."},
-        {"letra": "B", "texto": "Proyecciones digitiformes de la submucosa del intestino delgado que tienen una relación 3:1 con respecto a las criptas."},
-        {"letra": "C", "texto": "Proyecciones digitiformes de la mucosa del duodeno exclusivamente que tienen una relación 3:1 con respecto a las criptas."},
-        {"letra": "D", "texto": "Proyecciones digitiformes de la submucosa del intestino delgado que tienen una relación 1:1 con respecto a las criptas."},
-        {"letra": "E", "texto": "Proyecciones digitiformes de la mucosa del intestino delgado que tienen una relación 3:1 con respecto a las criptas."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "E",
-      "feedback": "Resposta correta: E. As vilosidades intestinais são projeções digitiformes da mucosa (epitélio + lâmina própria, não da submucosa) do intestino delgado como um todo (não só do duodeno), numa proporção aproximada de 3 vilosidades para cada cripta de Lieberkühn, o que amplia bastante a superfície de absorção."
-    },
-    {
-      "numero": 9,
-      "pergunta": "Las células C se ubican:",
-      "opcoes": [
-        {"letra": "A", "texto": "Por fuera de las células foliculares y secretan calcitonina que disminuye el calcio a nivel sanguíneo."},
-        {"letra": "B", "texto": "Entre las células foliculares y secretan PTH que disminuye el calcio a nivel sanguíneo."},
-        {"letra": "C", "texto": "Por fuera de las células foliculares y secretan PTH que aumenta el calcio a nivel sanguíneo."},
-        {"letra": "D", "texto": "Por fuera de las células foliculares y secretan calcitonina que aumenta el calcio a nivel sanguíneo."},
-        {"letra": "E", "texto": "Entre las células foliculares y secretan calcitonina que aumenta el calcio a nivel sanguíneo."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "A",
-      "feedback": "Resposta correta: A. As células C (parafoliculares) da tireoide ficam por fora do epitélio folicular (entre as células foliculares e a lâmina basal, ou isoladas no interstício), e secretam calcitonina, que diminui a calcemia ao inibir a reabsorção óssea pelos osteoclastos — ação oposta à do PTH (paratormônio), que é produzido pelas paratireoides, não pelas células C."
-    },
-    {
-      "numero": 10,
-      "pergunta": "Los conductos de las glándulas del cérvix pueden obstruirse y el acúmulo de la secreción mucosa da lugar a la formación de lo que se conoce como:",
-      "opcoes": [
-        {"letra": "A", "texto": "Quistes de Naboth"},
-        {"letra": "B", "texto": "Quistes de Ranvier"},
-        {"letra": "C", "texto": "Metaplasia"},
-        {"letra": "D", "texto": "Bolsas de Rathke"},
-        {"letra": "E", "texto": "Aparato de Golgi"}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "A",
-      "feedback": "Resposta correta: A. Quando os ductos das glândulas mucosas do colo do útero se obstruem, o acúmulo da secreção mucosa forma pequenos cistos de retenção conhecidos como cistos (ou ovos) de Naboth — um achado benigno e comum no colo uterino, sem relação com metaplasia (mudança de tipo epitelial) nem com as demais estruturas listadas, que pertencem a outros contextos anatômicos."
-    },
-    {
-      "numero": 11,
-      "pergunta": "Las saculaciones o haustras del intestino grueso:",
-      "opcoes": [
-        {"letra": "A", "texto": "Son repliegues de la serosa."},
-        {"letra": "B", "texto": "Se encuentran en la adventicia del colon."},
-        {"letra": "C", "texto": "Están formados por la submucosa."},
-        {"letra": "D", "texto": "Se encuentran entre las tenias del colon."},
-        {"letra": "E", "texto": "Son evaginaciones de la adventicia."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "D",
-      "feedback": "Resposta correta: D. As haustras (saculações) do colo se formam entre as tênias do colo — as três faixas longitudinais de músculo liso mais espesso da camada muscular externa —, já que essas faixas são mais curtas que o comprimento do intestino grosso e acabam \"franzindo\" a parede em saculações. Não são repliegues de serosa nem de submucosa."
-    },
-    {
-      "numero": 12,
-      "pergunta": "En la lámina propia de la mucosa del estómago en la región corpofúndica encontramos las glándulas:",
-      "opcoes": [
-        {"letra": "A", "texto": "gástricas formadas por diferentes tipos celulares"},
-        {"letra": "B", "texto": "de Brunner formadas por diferentes tipos celulares"},
-        {"letra": "C", "texto": "de Lieberkühn formadas por un solo tipo celular"},
-        {"letra": "D", "texto": "gástricas formadas por un solo tipo celular"},
-        {"letra": "E", "texto": "de Lieberkühn formadas por diferentes tipos celulares"}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "A",
-      "feedback": "Resposta correta: A. Na região corpofúndica do estômago, a lâmina própria da mucosa aloja as glândulas gástricas próprias, compostas por vários tipos celulares (parietais, principais, mucosas do colo, indiferenciadas e enteroendócrinas). As glândulas de Brunner são da submucosa duodenal, e as de Lieberkühn são do intestino, não do estômago."
-    },
-    {
-      "numero": 13,
-      "pergunta": "En el túbulo seminífero, en la región adluminal se encuentran:",
-      "opcoes": [
-        {"letra": "A", "texto": "Espermatocitos II, espermátides, la región apical de las células de Sértoli."},
-        {"letra": "B", "texto": "Espermátides y espermatozoides, la región apical de las células de Sértoli."},
-        {"letra": "C", "texto": "Espermatocitos II, espermátides, espermatozoides y la región apical de las células de Leydig."},
-        {"letra": "D", "texto": "Espermatocitos II, espermátides, espermatozoides y la región apical de las células de Sértoli."},
-        {"letra": "E", "texto": "Espermatocitos II, espermátides y la región apical de las células de Leydig."}
-      ],
-      "tipo": "multipla_escolha",
-      "nota": null,
-      "resposta_correta": "D",
-      "feedback": "Resposta correta: D. O compartimento adluminal do túbulo seminífero, além da barreira hemato-testicular, contém as células germinativas mais avançadas — espermatócitos II, espermátides e espermatozoides — além da região apical do citoplasma das células de Sértoli, que as sustenta e nutre. As células de Leydig ficam no interstício, fora do túbulo, não no compartimento adluminal."
-    }
-  ]
+    "titulo": "Histología",
+    "subtitulo": "Cátedra de Citología, Histología y Embriología · Facultad de Medicina UNLP",
+    "total_questoes": 13,
+    "questoes": [
+        {
+            "numero": 1,
+            "pergunta": "Los islotes de Langerhans se hallan en:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Páncreas y tienen 3 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D, secretora de polipéptido pancreático."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Páncreas y tienen 4 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D, secretora de polipéptido pancreático, PP secretora de somatostatina."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Páncreas y tienen 4 tipos principales de células endocrinas: A, secretora de somatostatina, B, secretora de insulina, D, secretora de polipéptido pancreático, PP, secretora de glucagón."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Páncreas y tienen 4 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D secretora de somatostatina, PP secretora de polipéptido pancreático."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Hígado y tienen 4 tipos principales de células endocrinas: A, secretora de glucagón, B, secretora de insulina, D, secretora somatostatina, PP, secretora de polipéptido pancreático."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "D",
+            "explicacoes": [
+                "Aquí solo se listan 3 tipos celulares (falta la célula D-somatostatina) y además se le asigna el polipéptido pancreático a la célula D, cuando en realidad esa hormona corresponde a las células PP.",
+                "Los islotes sí tienen 4 tipos celulares, pero acá se intercambian las secreciones de las células D y PP: la D secreta somatostatina (no polipéptido pancreático) y la PP secreta polipéptido pancreático (no somatostatina).",
+                "Reasigna las hormonas de forma incorrecta: la célula A secreta glucagón (no somatostatina), la D secreta somatostatina (no polipéptido) y la PP secreta polipéptido pancreático (no glucagón).",
+                "Los islotes de Langerhans se ubican en el páncreas endocrino y tienen 4 tipos celulares principales: A (glucagón), B (insulina), D (somatostatina) y PP (polipéptido pancreático).",
+                "La ubicación es incorrecta: los islotes de Langerhans están en el páncreas, no en el hígado, aunque la composición celular descrita coincida con la correcta."
+            ]
+        },
+        {
+            "numero": 2,
+            "pergunta": "El acino hepático está constituido por un:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Rombo que tiene un eje menor que en sus extremos tiene dos tríadas portales y un eje mayor que tiene en sus extremos dos venas terminales y explica la circulación biliar."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Rombo que tiene un eje menor que en sus extremos tiene dos tríadas portales y un eje mayor que tiene en sus extremos dos venas terminales y explica la circulación sanguínea."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Hexágono que tiene un eje menor que en sus extremos tiene dos tríadas portales y un eje mayor que tiene en sus extremos dos venas terminales y explica la circulación sanguínea."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Rombo que tiene un eje menor que en sus extremos tiene dos venas terminales y un eje mayor que tiene en sus extremos dos tríadas portales y explica la circulación sanguínea."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Hexágono que tiene un eje menor que en sus extremos tiene dos venas terminales y un eje mayor que tiene en sus extremos dos tríadas portales y explica la circulación sanguínea."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "B",
+            "explicacoes": [
+                "La forma de rombo y la disposición de los ejes son correctas, pero el acino hepático se define en relación a la circulación sanguínea, no biliar.",
+                "El acino hepático (de Rappaport) tiene forma de rombo: su eje menor conecta dos tríadas portales vecinas y su eje mayor conecta dos venas centrolobulillares, definiendo la circulación sanguínea dentro del parénquima.",
+                "El hexágono describe al lobulillo hepático clásico, no al acino — el acino de Rappaport tiene forma de rombo.",
+                "Los ejes están invertidos: en el acino, el eje menor conecta las tríadas portales y el eje mayor conecta las venas terminales, no al revés.",
+                "Combina dos errores: la forma no es hexagonal (es un rombo) y además invierte los ejes descritos."
+            ]
+        },
+        {
+            "numero": 3,
+            "pergunta": "La mácula densa es una diferenciación del epitelio de los túbulos:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "contorneados distales y se considera un osmorreceptor."
+                },
+                {
+                    "letra": "B",
+                    "texto": "contorneados distales y se considera barorreceptor."
+                },
+                {
+                    "letra": "C",
+                    "texto": "colectores y se considera un osmorreceptor."
+                },
+                {
+                    "letra": "D",
+                    "texto": "contorneados proximales y se considera un osmorreceptor."
+                },
+                {
+                    "letra": "E",
+                    "texto": "colectores y se considera un baroorreceptor."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "A",
+            "explicacoes": [
+                "La mácula densa está en el túbulo contorneado distal y funciona como osmorreceptor, sensando la concentración de Na+ del filtrado.",
+                "La ubicación es correcta, pero la mácula densa actúa como osmorreceptor (sensa Na+/osmolaridad), no como barorreceptor — ese rol corresponde a las células yuxtaglomerulares de la arteriola aferente.",
+                "La mácula densa no está en los túbulos colectores, sino en el túbulo contorneado distal.",
+                "La mácula densa se ubica en el túbulo contorneado distal, no en el proximal.",
+                "Combina dos errores: ni la ubicación (colectores) ni la función (barorreceptor) son correctas."
+            ]
+        },
+        {
+            "numero": 4,
+            "pergunta": "La presencia de glándulas endometriales rectas, con alta actividad mitótica, es un efecto directo de la hormona:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "FSH"
+                },
+                {
+                    "letra": "B",
+                    "texto": "estrógeno"
+                },
+                {
+                    "letra": "C",
+                    "texto": "progesterona"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Prolactina/LH"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "B",
+            "explicacoes": [
+                "La FSH actúa sobre el ovario estimulando el desarrollo folicular; el efecto proliferativo directo sobre el endometrio es del estrógeno que ese folículo produce.",
+                "En la fase proliferativa del ciclo endometrial, el estrógeno estimula directamente la proliferación del epitelio glandular, formando glándulas rectas con alta actividad mitótica.",
+                "La progesterona actúa después, en la fase secretora, volviendo las glándulas tortuosas y secretoras — no rectas ni con alta actividad mitótica.",
+                "Ni la prolactina ni la LH son las hormonas responsables del efecto proliferativo directo sobre el endometrio."
+            ]
+        },
+        {
+            "numero": 5,
+            "pergunta": "Las glándulas gástricas que tienen una morfología más compleja se ubican en la región:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Antropíloro y están constituidas por células parietales, caliciformes, indiferenciadas, principales y enteroendocrinas."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Corpofúndica y están constituidas por células parietales, enterocitos, indiferenciadas, principales y enteroendocrinas."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Corpofúndica y están constituidas por células parietales, mucosas del cuello, indiferenciadas, principales y enteroendocrinas."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Antropíloro y están constituidas por células parietales, enterocitos, indiferenciadas, principales y enteroendocrinas."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Corpofúndica y están constituidas por células parietales, caliciformes, indiferenciadas, principales y enteroendocrinas."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "C",
+            "explicacoes": [
+                "La región antropilórica no es la de mayor complejidad glandular, y las células caliciformes no se encuentran en el estómago sino en el intestino.",
+                "La ubicación es correcta, pero los enterocitos no existen en el estómago — el tipo celular que falta es la célula mucosa del cuello.",
+                "Las glándulas corpofúndicas (gástricas propias) son las de mayor complejidad celular en el estómago, con células parietales, mucosas del cuello, indiferenciadas, principales y enteroendocrinas.",
+                "Combina dos errores: la ubicación (debería ser corpofúndica) y el tipo celular (los enterocitos no existen en el estómago).",
+                "Las células caliciformes son propias del intestino, no se encuentran en las glándulas gástricas."
+            ]
+        },
+        {
+            "numero": 6,
+            "pergunta": "El proceso mediante el cual el melanocito transfiere melanina al queratinocito se denomina mecanismo:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Apócrino."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Citocrino."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Merócrino."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Yuxtacrino."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Holócrino."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "B",
+            "explicacoes": [
+                "El mecanismo apócrino implica que la célula secretora pierde parte de su citoplasma apical al secretar — no es lo que ocurre en la transferencia de melanina.",
+                "La transferencia de melanina se da por secreción citocrina: las prolongaciones del melanocito inyectan los melanosomas directamente en el citoplasma del queratinocito, sin romper su membrana.",
+                "El mecanismo merócrino describe una exocitosis clásica hacia el exterior celular, no la inyección directa de melanosomas en la célula vecina.",
+                "El mecanismo yuxtacrino describe señalización por contacto de membrana, no la transferencia de partículas hacia el citoplasma de otra célula.",
+                "El mecanismo holócrino implica la desintegración completa de la célula secretora (como en las glándulas sebáceas) — no ocurre en la transferencia de melanina."
+            ]
+        },
+        {
+            "numero": 7,
+            "pergunta": "El conducto deferente tiene un epitelio de tipo:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Pseudoestratificado con células que poseen esterocilios, microvellosidades y vellosidades."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Estratificado con células que poseen esterocilios, microvellosidades y vellosidades."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Pseudoestratificado con células que poseen esterocilios, ribete en cepillo y cilios."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Pseudoestratificado con células que poseen esterocilios, microvellosidades y cilios."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Estratificado con células que poseen esterocilios, microvellosidades y cilios."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "D",
+            "explicacoes": [
+                "El tipo de epitelio es correcto, pero el término adecuado es cilios, no vellosidades, entre las estructuras de superficie descritas.",
+                "El conducto deferente tiene epitelio pseudoestratificado, no estratificado.",
+                "El 'ribete en cepillo' es una estructura típica del epitelio intestinal (enterocitos), no del conducto deferente.",
+                "El conducto deferente tiene epitelio pseudoestratificado, con células que presentan esterocilios, microvellosidades y cilios en su superficie apical.",
+                "El conducto deferente tiene epitelio pseudoestratificado, no estratificado."
+            ]
+        },
+        {
+            "numero": 8,
+            "pergunta": "Las vellosidades intestinales son:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Proyecciones digitiformes de la mucosa del intestino delgado que tienen una relación 1:1 con respecto a las criptas."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Proyecciones digitiformes de la submucosa del intestino delgado que tienen una relación 3:1 con respecto a las criptas."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Proyecciones digitiformes de la mucosa del duodeno exclusivamente que tienen una relación 3:1 con respecto a las criptas."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Proyecciones digitiformes de la submucosa del intestino delgado que tienen una relación 1:1 con respecto a las criptas."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Proyecciones digitiformes de la mucosa del intestino delgado que tienen una relación 3:1 con respecto a las criptas."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "E",
+            "explicacoes": [
+                "La proporción correcta entre vellosidades y criptas es de 3:1, no 1:1.",
+                "Las vellosidades intestinales son proyecciones de la mucosa (epitelio + lámina propia), no de la submucosa.",
+                "Las vellosidades se encuentran en todo el intestino delgado, no exclusivamente en el duodeno.",
+                "Combina dos errores: las vellosidades son de la mucosa (no de la submucosa) y la proporción correcta es 3:1 (no 1:1).",
+                "Las vellosidades intestinales son proyecciones digitiformes de la mucosa del intestino delgado, en una proporción aproximada de 3 vellosidades por cada cripta de Lieberkühn."
+            ]
+        },
+        {
+            "numero": 9,
+            "pergunta": "Las células C se ubican:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Por fuera de las células foliculares y secretan calcitonina que disminuye el calcio a nivel sanguíneo."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Entre las células foliculares y secretan PTH que disminuye el calcio a nivel sanguíneo."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Por fuera de las células foliculares y secretan PTH que aumenta el calcio a nivel sanguíneo."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Por fuera de las células foliculares y secretan calcitonina que aumenta el calcio a nivel sanguíneo."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Entre las células foliculares y secretan calcitonina que aumenta el calcio a nivel sanguíneo."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "A",
+            "explicacoes": [
+                "Las células C (parafoliculares) se ubican por fuera del epitelio folicular y secretan calcitonina, que disminuye la calcemia al inhibir la resorción ósea.",
+                "Las células C secretan calcitonina, no PTH — la PTH es producida por las glándulas paratiroides, no por la tiroides.",
+                "Las células C secretan calcitonina (no PTH), y esta hormona disminuye la calcemia, no la aumenta.",
+                "La calcitonina disminuye la calcemia, no la aumenta.",
+                "La ubicación y el efecto están equivocados: las células C están por fuera de las foliculares y su hormona disminuye (no aumenta) la calcemia."
+            ]
+        },
+        {
+            "numero": 10,
+            "pergunta": "Los conductos de las glándulas del cérvix pueden obstruirse y el acúmulo de la secreción mucosa da lugar a la formación de lo que se conoce como:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Quistes de Naboth"
+                },
+                {
+                    "letra": "B",
+                    "texto": "Quistes de Ranvier"
+                },
+                {
+                    "letra": "C",
+                    "texto": "Metaplasia"
+                },
+                {
+                    "letra": "D",
+                    "texto": "Bolsas de Rathke"
+                },
+                {
+                    "letra": "E",
+                    "texto": "Aparato de Golgi"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "A",
+            "explicacoes": [
+                "Cuando los conductos de las glándulas mucosas del cérvix se obstruyen, la secreción acumulada forma los quistes (o huevos) de Naboth.",
+                "No existe esa entidad en este contexto — los nódulos de Ranvier son estructuras del axón neuronal, no del cérvix.",
+                "La metaplasia es un cambio de tipo epitelial, no el resultado de la obstrucción de un conducto glandular.",
+                "La bolsa de Rathke es una estructura embrionaria relacionada con el desarrollo de la hipófisis, no con el cérvix.",
+                "El aparato de Golgi es un organelo celular; no tiene relación con la obstrucción de las glándulas cervicales."
+            ]
+        },
+        {
+            "numero": 11,
+            "pergunta": "Las saculaciones o haustras del intestino grueso:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Son repliegues de la serosa."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Se encuentran en la adventicia del colon."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Están formados por la submucosa."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Se encuentran entre las tenias del colon."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Son evaginaciones de la adventicia."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "D",
+            "explicacoes": [
+                "Las haustras se forman por la disposición de la capa muscular externa (tenias), no por repliegues de la serosa.",
+                "Las haustras no se encuentran en la adventicia — se forman por la acción de las tenias, bandas de músculo liso de la capa muscular externa.",
+                "Las haustras no están formadas por la submucosa; son producto de la tensión ejercida por las tenias del colon sobre la pared intestinal.",
+                "Las tenias del colon son más cortas que la longitud del intestino grueso, lo que \"frunce\" la pared y forma las haustras entre ellas.",
+                "La adventicia no es la responsable de las haustras — estas se forman por la acción de las tenias de la capa muscular externa."
+            ]
+        },
+        {
+            "numero": 12,
+            "pergunta": "En la lámina propia de la mucosa del estómago en la región corpofúndica encontramos las glándulas:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "gástricas formadas por diferentes tipos celulares"
+                },
+                {
+                    "letra": "B",
+                    "texto": "de Brunner formadas por diferentes tipos celulares"
+                },
+                {
+                    "letra": "C",
+                    "texto": "de Lieberkühn formadas por un solo tipo celular"
+                },
+                {
+                    "letra": "D",
+                    "texto": "gástricas formadas por un solo tipo celular"
+                },
+                {
+                    "letra": "E",
+                    "texto": "de Lieberkühn formadas por diferentes tipos celulares"
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "A",
+            "explicacoes": [
+                "En la región corpofúndica, la lámina propia gástrica contiene las glándulas gástricas propias, compuestas por varios tipos celulares (parietales, principales, mucosas del cuello, indiferenciadas y enteroendocrinas).",
+                "Las glándulas de Brunner están en la submucosa duodenal, no en la lámina propia gástrica.",
+                "Las glándulas de Lieberkühn son intestinales (no gástricas) y además están formadas por varios tipos celulares, no uno solo.",
+                "Las glándulas gástricas propias están formadas por varios tipos celulares, no por uno solo.",
+                "Las glándulas de Lieberkühn se encuentran en el intestino, no en el estómago."
+            ]
+        },
+        {
+            "numero": 13,
+            "pergunta": "En el túbulo seminífero, en la región adluminal se encuentran:",
+            "opcoes": [
+                {
+                    "letra": "A",
+                    "texto": "Espermatocitos II, espermátides, la región apical de las células de Sértoli."
+                },
+                {
+                    "letra": "B",
+                    "texto": "Espermátides y espermatozoides, la región apical de las células de Sértoli."
+                },
+                {
+                    "letra": "C",
+                    "texto": "Espermatocitos II, espermátides, espermatozoides y la región apical de las células de Leydig."
+                },
+                {
+                    "letra": "D",
+                    "texto": "Espermatocitos II, espermátides, espermatozoides y la región apical de las células de Sértoli."
+                },
+                {
+                    "letra": "E",
+                    "texto": "Espermatocitos II, espermátides y la región apical de las células de Leydig."
+                }
+            ],
+            "tipo": "multipla_escolha",
+            "nota": null,
+            "resposta_correta": "D",
+            "explicacoes": [
+                "En la región adluminal también se encuentran los espermatozoides, además de los espermatocitos II y las espermátides mencionados.",
+                "En la región adluminal también están presentes los espermatocitos II, no solo espermátides y espermatozoides.",
+                "Las células de Leydig se ubican en el intersticio, fuera del túbulo seminífero — la célula de sostén dentro del túbulo es la de Sértoli.",
+                "El compartimento adluminal contiene las células germinativas más avanzadas (espermatocitos II, espermátides y espermatozoides) junto con la región apical de las células de Sértoli, que las sostiene.",
+                "Faltan los espermatozoides en la enumeración, y además la célula de sostén dentro del túbulo es la de Sértoli, no la de Leydig (que está en el intersticio)."
+            ]
+        }
+    ]
 }
