@@ -31,13 +31,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "No son arterias uterinas las que dan origen a los sinusoides hepáticos, y además el origen es venoso, no arterial.",
-                "El origen es venoso, no arterial: son las venas vitelinas (no arterias) las que forman los sinusoides hepáticos.",
-                "Las venas cardinales dan origen al sistema venoso general (como la vena cava), no a los sinusoides hepáticos.",
-                "Los sinusoides hepáticos se originan de las venas vitelinas (onfalomesentéricas), que forman una red anastomótica alrededor del brote hepático en desarrollo.",
-                "La vena umbilical participa de la circulación hepática formando el conducto venoso, pero el origen de los sinusoides son las venas vitelinas."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "No son arterias uterinas las que dan origen a los sinusoides hepáticos, y además el origen es venoso, no arterial.",
+                    "El origen es venoso, no arterial: son las venas vitelinas (no arterias) las que forman los sinusoides hepáticos.",
+                    "Las venas cardinales dan origen al sistema venoso general (como la vena cava), no a los sinusoides hepáticos.",
+                    "Los sinusoides hepáticos se originan de las venas vitelinas (onfalomesentéricas), que forman una red anastomótica alrededor del brote hepático en desarrollo.",
+                    "La vena umbilical participa de la circulación hepática formando el conducto venoso, pero el origen de los sinusoides son las venas vitelinas."
+                ],
+                "fantasma": [
+                    "Ojo, no son arterias uterinas, y además el origen es venoso, no arterial.",
+                    "Che, el origen es venoso — son las venas vitelinas (no arterias) las que arman los sinusoides.",
+                    "Casi, las venas cardinales forman el sistema venoso general (como la cava), no los sinusoides hepáticos.",
+                    "¡Esta! Los sinusoides hepáticos vienen de las venas vitelinas (onfalomesentéricas), que arman una red alrededor del brote hepático.",
+                    "La vena umbilical arma el conducto venoso, pero el origen de los sinusoides son las venas vitelinas."
+                ],
+                "gato": [
+                    "Fijate: no son arterias uterinas, y el origen es venoso, no arterial.",
+                    "Dato curioso: son las venas vitelinas (no arterias) las que forman los sinusoides.",
+                    "Miau, las cardinales arman el sistema venoso general, no los sinusoides hepáticos.",
+                    "¡Ronroneo de aprobación! Los sinusoides hepáticos nacen de las venas vitelinas, formando una red alrededor del brote hepático en desarrollo.",
+                    "Curiosidad: la vena umbilical arma el conducto venoso, pero el origen de los sinusoides son las venas vitelinas."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -67,13 +83,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "El intestino que se comunica con el saco vitelino en esta etapa es el medio, no el anterior.",
-                "El intestino medio se comunica con el saco vitelino (a través del conducto vitelino), no con el alantoides.",
-                "Es el intestino posterior el que se relaciona con el alantoides (vía cloaca), no con el saco vitelino.",
-                "En la 5ª semana, el intestino medio aún se comunica ampliamente con el saco vitelino a través del conducto vitelino (onfalomesentérico).",
-                "Ni la porción (anterior) ni la estructura (alantoides) mencionadas son correctas para esta comunicación."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El intestino que se comunica con el saco vitelino en esta etapa es el medio, no el anterior.",
+                    "El intestino medio se comunica con el saco vitelino (a través del conducto vitelino), no con el alantoides.",
+                    "Es el intestino posterior el que se relaciona con el alantoides (vía cloaca), no con el saco vitelino.",
+                    "En la 5ª semana, el intestino medio aún se comunica ampliamente con el saco vitelino a través del conducto vitelino (onfalomesentérico).",
+                    "Ni la porción (anterior) ni la estructura (alantoides) mencionadas son correctas para esta comunicación."
+                ],
+                "fantasma": [
+                    "Ojo, el que se comunica con el saco vitelino acá es el intestino medio, no el anterior.",
+                    "Che, es el medio el que se comunica con el saco vitelino (vía conducto vitelino), no con el alantoides.",
+                    "Casi, el posterior se relaciona con el alantoides (por la cloaca), no con el saco vitelino.",
+                    "¡Esta! En la 5ª semana, el intestino medio todavía se comunica con el saco vitelino a través del conducto vitelino.",
+                    "Ni la porción ni la estructura mencionadas acá son correctas."
+                ],
+                "gato": [
+                    "Fijate: el que se comunica con el saco vitelino es el medio, no el anterior.",
+                    "Dato curioso: es el medio (vía conducto vitelino), no el alantoides.",
+                    "Miau, el posterior se conecta con el alantoides, no con el saco vitelino.",
+                    "¡Ronroneo de aprobación! En la 5ª semana, el intestino medio sigue comunicado con el saco vitelino por el conducto vitelino.",
+                    "Curiosidad: ni la porción ni la estructura mencionadas cierran acá."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -103,13 +135,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "explicacoes": [
-                "El hígado se desarrolla del intestino anterior, no del medio.",
-                "El hígado se desarrolla a partir del endodermo del intestino anterior, en el campo hepático, inducido por el FGF que secreta el mesodermo cardíaco vecino, el cual inhibe los represores de SHH en esa región.",
-                "El factor inductor del campo hepático es el FGF, no Pax 6.",
-                "Ni la porción del intestino (es anterior, no medio) ni el factor (Pdx-1 se asocia más al desarrollo pancreático) son correctos.",
-                "El factor inductor correcto es el FGF, no Pdx-1 (más relacionado al desarrollo pancreático)."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El hígado se desarrolla del intestino anterior, no del medio.",
+                    "El hígado se desarrolla a partir del endodermo del intestino anterior, en el campo hepático, inducido por el FGF que secreta el mesodermo cardíaco vecino, el cual inhibe los represores de SHH en esa región.",
+                    "El factor inductor del campo hepático es el FGF, no Pax 6.",
+                    "Ni la porción del intestino (es anterior, no medio) ni el factor (Pdx-1 se asocia más al desarrollo pancreático) son correctos.",
+                    "El factor inductor correcto es el FGF, no Pdx-1 (más relacionado al desarrollo pancreático)."
+                ],
+                "fantasma": [
+                    "Ojo, el hígado sale del intestino anterior, no del medio.",
+                    "¡Esta! El hígado nace del endodermo del intestino anterior, en el campo hepático, activado por el FGF del mesodermo cardíaco vecino.",
+                    "Che, el factor es el FGF, no Pax 6.",
+                    "Casi, ni la porción (es anterior) ni el factor (Pdx-1 es más de páncreas) están bien.",
+                    "El factor correcto es FGF, no Pdx-1."
+                ],
+                "gato": [
+                    "Fijate: el hígado viene del intestino anterior, no del medio.",
+                    "¡Dato para guardar! El hígado nace del endodermo del intestino anterior, en el campo hepático, gracias al FGF del mesodermo cardíaco.",
+                    "Miau, el factor correcto es FGF, no Pax 6.",
+                    "Curiosidad: ni la porción ni el factor mencionados acá son correctos.",
+                    "Dato curioso: el factor es FGF, no Pdx-1 (ese es más de páncreas)."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -139,13 +187,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "En la 4ta semana recién aparecen los esbozos pancreáticos — todavía no se han fusionado.",
-                "La fusión ocurre antes de la 8va semana, ya en la 7ma semana del desarrollo.",
-                "En la 5ta semana los esbozos aún están separados; la fusión ocurre más adelante.",
-                "Los esbozos pancreáticos dorsal y ventral se aproximan durante la rotación del duodeno y se fusionan hacia la 7ma semana del desarrollo.",
-                "La fusión se completa un poco más tarde, en la 7ma semana, no en la 6ta."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "En la 4ta semana recién aparecen los esbozos pancreáticos — todavía no se han fusionado.",
+                    "La fusión ocurre antes de la 8va semana, ya en la 7ma semana del desarrollo.",
+                    "En la 5ta semana los esbozos aún están separados; la fusión ocurre más adelante.",
+                    "Los esbozos pancreáticos dorsal y ventral se aproximan durante la rotación del duodeno y se fusionan hacia la 7ma semana del desarrollo.",
+                    "La fusión se completa un poco más tarde, en la 7ma semana, no en la 6ta."
+                ],
+                "fantasma": [
+                    "Ojo, en la 4ta semana recién aparecen los esbozos, todavía separados.",
+                    "Che, la fusión pasa antes de la 8va — es en la 7ma.",
+                    "Casi, en la 5ta todavía están separados.",
+                    "¡Esta! Los esbozos se acercan con la rotación duodenal y se fusionan cerca de la 7ma semana.",
+                    "Un poquito antes: la fusión es en la 7ma, no en la 6ta."
+                ],
+                "gato": [
+                    "Fijate: en la 4ta semana los esbozos recién aparecen, sin fusionarse todavía.",
+                    "Dato curioso: la fusión es antes de la 8va — pasa en la 7ma semana.",
+                    "Miau, en la 5ta todavía están separados los esbozos.",
+                    "¡Ronroneo de aprobación! Con la rotación duodenal, los esbozos se acercan y se fusionan hacia la 7ma semana.",
+                    "Curiosidad: la fusión es en la 7ma, no en la 6ta."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -175,13 +239,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "explicacoes": [
-                "El mesonefros se desarrolla entre la 5ª y 6ª semana, a la altura torácica, y funciona brevemente como riñón transitorio antes de involucionar.",
-                "La ubicación correcta es torácica (no lumbosacra), y el mesonefros sí funciona brevemente como riñón transitorio.",
-                "El rango de semanas correcto es 5ª-6ª (no 4ª-5ª), y el mesonefros sí funciona brevemente.",
-                "El rango de semanas correcto es 5ª-6ª, no 4ª-5ª.",
-                "La ubicación correcta es torácica, no lumbosacra."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El mesonefros se desarrolla entre la 5ª y 6ª semana, a la altura torácica, y funciona brevemente como riñón transitorio antes de involucionar.",
+                    "La ubicación correcta es torácica (no lumbosacra), y el mesonefros sí funciona brevemente como riñón transitorio.",
+                    "El rango de semanas correcto es 5ª-6ª (no 4ª-5ª), y el mesonefros sí funciona brevemente.",
+                    "El rango de semanas correcto es 5ª-6ª, no 4ª-5ª.",
+                    "La ubicación correcta es torácica, no lumbosacra."
+                ],
+                "fantasma": [
+                    "¡Esta! El mesonefros aparece entre la 5ª y 6ª semana, a nivel torácico, y funciona un rato como riñón transitorio.",
+                    "Ojo, la ubicación es torácica (no lumbosacra), y sí funciona un rato.",
+                    "Che, el rango correcto es 5ª-6ª (no 4ª-5ª), y sí funciona brevemente.",
+                    "Casi, el rango es 5ª-6ª, no 4ª-5ª.",
+                    "La ubicación correcta es torácica, no lumbosacra."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El mesonefros aparece entre la 5ª y 6ª semana, a nivel torácico, funcionando un rato como riñón transitorio.",
+                    "Fijate: la ubicación es torácica, no lumbosacra — y sí funciona brevemente.",
+                    "Dato curioso: el rango correcto es 5ª-6ª, no 4ª-5ª.",
+                    "Miau, el rango correcto es 5ª-6ª, no 4ª-5ª.",
+                    "Curiosidad: la ubicación correcta es torácica, no lumbosacra."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -211,13 +291,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "explicacoes": [
-                "El eje de rotación es correcto (longitudinal), pero el grado de rotación es de 90 grados, no 180.",
-                "El eje de rotación es longitudinal (no horizontal), y el sentido es horario (no antihorario).",
-                "El estómago rota 90 grados en sentido horario alrededor de su eje longitudinal, lo que hace que la cara izquierda original pase a ser la cara anterior.",
-                "Ni el eje (es longitudinal), ni el sentido (es horario), ni el grado (90°) coinciden con lo descrito.",
-                "El grado de rotación correcto es de 90 grados, no 270."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El eje de rotación es correcto (longitudinal), pero el grado de rotación es de 90 grados, no 180.",
+                    "El eje de rotación es longitudinal (no horizontal), y el sentido es horario (no antihorario).",
+                    "El estómago rota 90 grados en sentido horario alrededor de su eje longitudinal, lo que hace que la cara izquierda original pase a ser la cara anterior.",
+                    "Ni el eje (es longitudinal), ni el sentido (es horario), ni el grado (90°) coinciden con lo descrito.",
+                    "El grado de rotación correcto es de 90 grados, no 270."
+                ],
+                "fantasma": [
+                    "Casi, el eje está bien (longitudinal), pero el giro es de 90 grados, no 180.",
+                    "Ojo, el eje es longitudinal (no horizontal), y el sentido es horario (no antihorario).",
+                    "¡Esta! El estómago gira 90 grados en sentido horario sobre su eje longitudinal, y por eso la cara izquierda pasa a ser la anterior.",
+                    "Che, ni el eje, ni el sentido, ni el grado coinciden acá.",
+                    "El grado correcto es 90, no 270."
+                ],
+                "gato": [
+                    "Fijate: el eje está bien (longitudinal), pero el giro correcto es de 90 grados, no 180.",
+                    "Dato curioso: el eje es longitudinal, y el sentido es horario, no antihorario.",
+                    "¡Ronroneo de aprobación! El estómago gira 90° en sentido horario sobre su eje longitudinal — por eso la cara izquierda pasa a ser la anterior.",
+                    "Miau, acá ni el eje, ni el sentido, ni el grado están bien.",
+                    "Curiosidad: el grado correcto es 90, no 270."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -247,13 +343,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "explicacoes": [
-                "Es solo el tercio distal del colon transverso el que proviene del intestino posterior, no dos tercios.",
-                "Todo lo enumerado aquí (íleon, ciego, apéndice, colon ascendente y dos tercios proximales del transverso) proviene del intestino medio, no del posterior.",
-                "El intestino posterior origina el tercio distal del colon transverso, el colon descendente, el sigmoide y el recto.",
-                "Solo el tercio distal del colon transverso viene del intestino posterior — los dos tercios proximales son del intestino medio.",
-                "Además de la proporción incorrecta del colon transverso, falta el recto en la enumeración de estructuras derivadas del intestino posterior."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Es solo el tercio distal del colon transverso el que proviene del intestino posterior, no dos tercios.",
+                    "Todo lo enumerado aquí (íleon, ciego, apéndice, colon ascendente y dos tercios proximales del transverso) proviene del intestino medio, no del posterior.",
+                    "El intestino posterior origina el tercio distal del colon transverso, el colon descendente, el sigmoide y el recto.",
+                    "Solo el tercio distal del colon transverso viene del intestino posterior — los dos tercios proximales son del intestino medio.",
+                    "Además de la proporción incorrecta del colon transverso, falta el recto en la enumeración de estructuras derivadas del intestino posterior."
+                ],
+                "fantasma": [
+                    "Ojo, es solo el tercio distal del transverso el que viene del intestino posterior, no dos tercios.",
+                    "Che, todo esto (íleon, ciego, apéndice, ascendente y dos tercios proximales) es del intestino medio, no del posterior.",
+                    "¡Esta! El intestino posterior origina el tercio distal del transverso, el descendente, el sigmoide y el recto.",
+                    "Casi, solo el tercio distal del transverso es del posterior — los otros dos tercios son del medio.",
+                    "Acá además de la proporción mal, falta el recto en la lista."
+                ],
+                "gato": [
+                    "Fijate: solo el tercio distal del transverso viene del posterior, no dos tercios.",
+                    "Dato curioso: todo lo enumerado ahí es del intestino medio, no del posterior.",
+                    "¡Ronroneo de aprobación! El intestino posterior forma el tercio distal del transverso, el descendente, el sigmoide y el recto.",
+                    "Miau, solo el tercio distal es del posterior — el resto del transverso es del medio.",
+                    "Curiosidad: acá falta el recto, además de la proporción incorrecta."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -283,13 +395,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "explicacoes": [
-                "El alantoides no es el origen del epitelio del tubo digestivo.",
-                "El epitelio de revestimiento y las glándulas del tubo digestivo derivan del endodermo del intestino primitivo.",
-                "La cavidad amniótica no tiene relación con el origen del epitelio digestivo.",
-                "La somatopleura forma estructuras de la pared corporal, no el epitelio del tubo digestivo.",
-                "El mesodermo asociado al intestino primitivo forma la muscular y el tejido conjuntivo de la pared, no el epitelio glandular."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El alantoides no es el origen del epitelio del tubo digestivo.",
+                    "El epitelio de revestimiento y las glándulas del tubo digestivo derivan del endodermo del intestino primitivo.",
+                    "La cavidad amniótica no tiene relación con el origen del epitelio digestivo.",
+                    "La somatopleura forma estructuras de la pared corporal, no el epitelio del tubo digestivo.",
+                    "El mesodermo asociado al intestino primitivo forma la muscular y el tejido conjuntivo de la pared, no el epitelio glandular."
+                ],
+                "fantasma": [
+                    "Ojo, el alantoides no tiene nada que ver con el origen de ese epitelio.",
+                    "¡Esta! El epitelio y las glándulas del tubo digestivo vienen del endodermo del intestino primitivo.",
+                    "Che, la cavidad amniótica no pinta nada acá.",
+                    "Casi, la somatopleura arma la pared corporal, no el epitelio digestivo.",
+                    "El mesodermo asociado arma la muscular y el conjuntivo, no el epitelio glandular."
+                ],
+                "gato": [
+                    "Fijate: el alantoides no participa del origen de ese epitelio.",
+                    "¡Ronroneo de aprobación! El epitelio y las glándulas del tubo digestivo vienen del endodermo del intestino primitivo.",
+                    "Dato curioso: la cavidad amniótica no tiene relación con esto.",
+                    "Miau, la somatopleura arma la pared corporal, no el epitelio digestivo.",
+                    "Curiosidad: el mesodermo asociado forma la muscular y el conjuntivo, no el epitelio glandular."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -319,13 +447,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "E",
-            "explicacoes": [
-                "El origen germinal correcto es ecto-endodérmico, no meso-ectodérmico.",
-                "Son las células foliculares (no 'células F') las que derivan del piso de la faringe; las células C son las que migran desde la cresta neural.",
-                "El origen germinal correcto es ecto-endodérmico, no meso-endodérmico.",
-                "Son las células C (no 'células F') las que derivan de la cresta neural.",
-                "La tiroides tiene origen ecto-endodérmico: el folículo tiroideo viene del endodermo del piso de la faringe, mientras que las células C migran desde la cresta neural."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El origen germinal correcto es ecto-endodérmico, no meso-ectodérmico.",
+                    "Son las células foliculares (no 'células F') las que derivan del piso de la faringe; las células C son las que migran desde la cresta neural.",
+                    "El origen germinal correcto es ecto-endodérmico, no meso-endodérmico.",
+                    "Son las células C (no 'células F') las que derivan de la cresta neural.",
+                    "La tiroides tiene origen ecto-endodérmico: el folículo tiroideo viene del endodermo del piso de la faringe, mientras que las células C migran desde la cresta neural."
+                ],
+                "fantasma": [
+                    "Ojo, el origen correcto es ecto-endodérmico, no meso-ectodérmico.",
+                    "Che, son las células foliculares (no 'células F') las del piso de la faringe — las C vienen de la cresta neural.",
+                    "Casi, el origen es ecto-endodérmico, no meso-endodérmico.",
+                    "Son las células C (no 'células F') las que vienen de la cresta neural.",
+                    "¡Esta! La tiroides es ecto-endodérmica: el folículo viene del endodermo faríngeo, y las células C migran desde la cresta neural."
+                ],
+                "gato": [
+                    "Fijate: el origen correcto es ecto-endodérmico, no meso-ectodérmico.",
+                    "Dato curioso: son las células foliculares las del piso de la faringe, no las \"células F\" — las C vienen de la cresta neural.",
+                    "Miau, el origen es ecto-endodérmico, no meso-endodérmico.",
+                    "Curiosidad: son las células C (no \"F\") las que migran de la cresta neural.",
+                    "¡Ronroneo de aprobación! La tiroides es ecto-endodérmica: folículo del endodermo faríngeo, células C de la cresta neural."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -355,13 +499,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "explicacoes": [
-                "El asa intestinal se comunica con el saco vitelino (no con el alantoides), y lo hace a través del conducto vitelino (no del conducto neuroentérico).",
-                "En la 5ª semana, el asa intestinal primitiva tiene una rama cefálica y una caudal, ambas en comunicación con el saco vitelino a través del conducto vitelino.",
-                "La comunicación es con el saco vitelino, no con el alantoides.",
-                "La estructura con la que se comunica el asa intestinal es el saco vitelino, no el celoma extraembrionario.",
-                "No existe tal comunicación del asa intestinal con el amnios."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El asa intestinal se comunica con el saco vitelino (no con el alantoides), y lo hace a través del conducto vitelino (no del conducto neuroentérico).",
+                    "En la 5ª semana, el asa intestinal primitiva tiene una rama cefálica y una caudal, ambas en comunicación con el saco vitelino a través del conducto vitelino.",
+                    "La comunicación es con el saco vitelino, no con el alantoides.",
+                    "La estructura con la que se comunica el asa intestinal es el saco vitelino, no el celoma extraembrionario.",
+                    "No existe tal comunicación del asa intestinal con el amnios."
+                ],
+                "fantasma": [
+                    "Ojo, se comunica con el saco vitelino (no el alantoides), y por el conducto vitelino (no el neuroentérico).",
+                    "¡Esta! En la 5ª semana, el asa intestinal tiene rama cefálica y caudal, comunicadas con el saco vitelino por el conducto vitelino.",
+                    "Che, es con el saco vitelino, no con el alantoides.",
+                    "Casi, la estructura es el saco vitelino, no el celoma extraembrionario.",
+                    "No existe esa comunicación con el amnios."
+                ],
+                "gato": [
+                    "Fijate: la comunicación es con el saco vitelino (no el alantoides), por el conducto vitelino.",
+                    "¡Ronroneo de aprobación! En la 5ª semana, el asa intestinal tiene rama cefálica y caudal, unidas al saco vitelino por el conducto vitelino.",
+                    "Dato curioso: es con el saco vitelino, no con el alantoides.",
+                    "Miau, la estructura correcta es el saco vitelino, no el celoma extraembrionario.",
+                    "Curiosidad: esa comunicación con el amnios no existe."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -391,13 +551,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "explicacoes": [
-                "Los hepatocitos (y también los colangiocitos) se originan del brote hepático, de composición endodérmica.",
-                "Los hepatocitos se originan del brote hepático endodérmico, no del septum transverso.",
-                "Los colangiocitos también derivan del brote hepático endodérmico, no del septum transverso.",
-                "Las células de Kupffer derivan de precursores mesodérmicos/hematopoyéticos, no de la cresta neural.",
-                "Las células de Ito derivan del mesénquima (mesodermo), no del endodermo, del septum transverso."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Los hepatocitos (y también los colangiocitos) se originan del brote hepático, de composición endodérmica.",
+                    "Los hepatocitos se originan del brote hepático endodérmico, no del septum transverso.",
+                    "Los colangiocitos también derivan del brote hepático endodérmico, no del septum transverso.",
+                    "Las células de Kupffer derivan de precursores mesodérmicos/hematopoyéticos, no de la cresta neural.",
+                    "Las células de Ito derivan del mesénquima (mesodermo), no del endodermo, del septum transverso."
+                ],
+                "fantasma": [
+                    "¡Esta! Los hepatocitos (y los colangiocitos) salen del brote hepático, que es endodérmico.",
+                    "Ojo, los hepatocitos vienen del brote hepático endodérmico, no del septum transverso.",
+                    "Che, los colangiocitos también vienen del brote hepático endodérmico, no del septum transverso.",
+                    "Casi, las células de Kupffer vienen de precursores mesodérmicos/hematopoyéticos, no de la cresta neural.",
+                    "Las de Ito vienen del mesénquima (mesodermo), no del endodermo, del septum transverso."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Hepatocitos y colangiocitos vienen del brote hepático endodérmico.",
+                    "Fijate: los hepatocitos vienen del brote hepático endodérmico, no del septum transverso.",
+                    "Dato curioso: los colangiocitos también son del brote hepático, no del septum transverso.",
+                    "Miau, las de Kupffer vienen de precursores mesodérmicos/hematopoyéticos, no de la cresta neural.",
+                    "Curiosidad: las de Ito vienen del mesénquima, no del endodermo, del septum transverso."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -427,13 +603,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "E",
-            "explicacoes": [
-                "El vaso quilífero es un vaso linfático, no sanguíneo.",
-                "Es un vaso linfático (no sanguíneo), y transporta quilomicrones ricos en triglicéridos, no en ácidos grasos libres.",
-                "Los quilomicrones transportados son ricos en triglicéridos, no en ácidos grasos libres.",
-                "El vaso quilífero se ubica en la lámina propia de las vellosidades, no en la submucosa.",
-                "El vaso quilífero es un capilar linfático ubicado en la lámina propia de cada vellosidad intestinal, por donde los quilomicrones ricos en triglicéridos entran a la circulación linfática."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El vaso quilífero es un vaso linfático, no sanguíneo.",
+                    "Es un vaso linfático (no sanguíneo), y transporta quilomicrones ricos en triglicéridos, no en ácidos grasos libres.",
+                    "Los quilomicrones transportados son ricos en triglicéridos, no en ácidos grasos libres.",
+                    "El vaso quilífero se ubica en la lámina propia de las vellosidades, no en la submucosa.",
+                    "El vaso quilífero es un capilar linfático ubicado en la lámina propia de cada vellosidad intestinal, por donde los quilomicrones ricos en triglicéridos entran a la circulación linfática."
+                ],
+                "fantasma": [
+                    "Ojo, el vaso quilífero es linfático, no sanguíneo.",
+                    "Che, es linfático (no sanguíneo), y lleva quilomicrones con triglicéridos, no ácidos grasos libres.",
+                    "Casi, los quilomicrones son ricos en triglicéridos, no en ácidos grasos libres.",
+                    "El vaso quilífero está en la lámina propia de las vellosidades, no en la submucosa.",
+                    "¡Esta! Es un capilar linfático en la lámina propia de cada vellosidad, por donde entran los quilomicrones con triglicéridos."
+                ],
+                "gato": [
+                    "Fijate: el vaso quilífero es linfático, no sanguíneo.",
+                    "Dato curioso: es linfático, y transporta quilomicrones con triglicéridos, no ácidos grasos libres.",
+                    "Miau, los quilomicrones son ricos en triglicéridos, no en ácidos grasos libres.",
+                    "Curiosidad: está en la lámina propia de las vellosidades, no en la submucosa.",
+                    "¡Ronroneo de aprobación! Es un capilar linfático en la lámina propia de cada vellosidad, por donde pasan los quilomicrones con triglicéridos."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -463,13 +655,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "explicacoes": [
-                "Es el sincitiotrofoblasto (no el citotrofoblasto) el que produce la hCG.",
-                "El endometrio no es la fuente de la hCG.",
-                "Sin fecundación no hay sincitiotrofoblasto que produzca hCG; sin ese estímulo, el cuerpo lúteo no es rescatado y regresa, desencadenando la menstruación.",
-                "Las células luteínicas reciben el estímulo de la hCG, pero no son las que la producen.",
-                "Sí hay una opción correcta: la que menciona al sincitiotrofoblasto como fuente de hCG."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Es el sincitiotrofoblasto (no el citotrofoblasto) el que produce la hCG.",
+                    "El endometrio no es la fuente de la hCG.",
+                    "Sin fecundación no hay sincitiotrofoblasto que produzca hCG; sin ese estímulo, el cuerpo lúteo no es rescatado y regresa, desencadenando la menstruación.",
+                    "Las células luteínicas reciben el estímulo de la hCG, pero no son las que la producen.",
+                    "Sí hay una opción correcta: la que menciona al sincitiotrofoblasto como fuente de hCG."
+                ],
+                "fantasma": [
+                    "¡Esta! Es el sincitiotrofoblasto (no el citotrofoblasto) el que produce la hCG.",
+                    "Ojo, el endometrio no es la fuente de la hCG.",
+                    "Che, sin fecundación no hay sincitiotrofoblasto, entonces no hay hCG, y el cuerpo lúteo se va apagando — de ahí la menstruación.",
+                    "Casi, las luteínicas reciben el estímulo de la hCG, no la producen.",
+                    "Sí hay una correcta acá: la del sincitiotrofoblasto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es el sincitiotrofoblasto el que produce la hCG, no el citotrofoblasto.",
+                    "Fijate: el endometrio no produce hCG.",
+                    "Dato curioso: sin fecundación no hay sincitiotrofoblasto ni hCG, entonces el cuerpo lúteo regresa y llega la menstruación.",
+                    "Miau, las luteínicas reciben el estímulo, no lo producen.",
+                    "Curiosidad: sí hay una opción correcta, la del sincitiotrofoblasto."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -499,13 +707,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "explicacoes": [
-                "El tripsinógeno secretado por los acinos pancreáticos se convierte en tripsina activa por acción de la enterocinasa (enteropeptidasa), una enzima del borde en cepillo del epitelio duodenal.",
-                "El polipéptido pancreático no participa en la activación enzimática del jugo pancreático.",
-                "El ácido gástrico activa al pepsinógeno en el estómago, no a las enzimas pancreáticas.",
-                "El bicarbonato del jugo pancreático neutraliza el pH ácido, pero no activa las enzimas.",
-                "Las enzimas se secretan de forma inactiva (zimógenos) dentro de los acinos y solo se activan en la luz intestinal."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El tripsinógeno secretado por los acinos pancreáticos se convierte en tripsina activa por acción de la enterocinasa (enteropeptidasa), una enzima del borde en cepillo del epitelio duodenal.",
+                    "El polipéptido pancreático no participa en la activación enzimática del jugo pancreático.",
+                    "El ácido gástrico activa al pepsinógeno en el estómago, no a las enzimas pancreáticas.",
+                    "El bicarbonato del jugo pancreático neutraliza el pH ácido, pero no activa las enzimas.",
+                    "Las enzimas se secretan de forma inactiva (zimógenos) dentro de los acinos y solo se activan en la luz intestinal."
+                ],
+                "fantasma": [
+                    "¡Esta! La enterocinasa del borde en cepillo duodenal activa el tripsinógeno en tripsina.",
+                    "Ojo, el polipéptido pancreático no tiene nada que ver con esa activación.",
+                    "Che, el ácido gástrico activa al pepsinógeno, no a las enzimas pancreáticas.",
+                    "Casi, el bicarbonato neutraliza el pH, pero no activa nada.",
+                    "Las enzimas salen inactivas (zimógenos) de los acinos y se activan recién en el intestino."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La enterocinasa del borde en cepillo duodenal convierte el tripsinógeno en tripsina activa.",
+                    "Fijate: el polipéptido pancreático no participa de esa activación.",
+                    "Dato curioso: el ácido gástrico activa el pepsinógeno, no las enzimas pancreáticas.",
+                    "Miau, el bicarbonato solo neutraliza el pH, no activa enzimas.",
+                    "Curiosidad: salen inactivas de los acinos y se activan en el intestino."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -535,13 +759,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "E",
-            "explicacoes": [
-                "Los cuerpos de Herring se ubican en los terminales axónicos en la pars nervosa, no en los somas neuronales (que están en el hipotálamo).",
-                "Los pituicitos son células gliales, no neuronas modificadas.",
-                "Las fibras de la pars nervosa son amielínicas, no mielínicas.",
-                "La vascularización de la pars nervosa es por capilares fenestrados comunes, no sinusoides.",
-                "Los cuerpos de Herring son acúmulos de los terminales axónicos de las neuronas hipotalámicas supraóptica y paraventricular, con gránulos neurosecretores de oxitocina y ADH."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Los cuerpos de Herring se ubican en los terminales axónicos en la pars nervosa, no en los somas neuronales (que están en el hipotálamo).",
+                    "Los pituicitos son células gliales, no neuronas modificadas.",
+                    "Las fibras de la pars nervosa son amielínicas, no mielínicas.",
+                    "La vascularización de la pars nervosa es por capilares fenestrados comunes, no sinusoides.",
+                    "Los cuerpos de Herring son acúmulos de los terminales axónicos de las neuronas hipotalámicas supraóptica y paraventricular, con gránulos neurosecretores de oxitocina y ADH."
+                ],
+                "fantasma": [
+                    "Ojo, los cuerpos de Herring están en los terminales axónicos, no en los somas (que están en el hipotálamo).",
+                    "Che, los pituicitos son células gliales, no neuronas.",
+                    "Casi, las fibras ahí son amielínicas, no mielínicas.",
+                    "La vascularización es por capilares fenestrados comunes, no sinusoides.",
+                    "¡Esta! Los cuerpos de Herring son acúmulos axónicos con oxitocina y ADH, de las neuronas supraóptica y paraventricular."
+                ],
+                "gato": [
+                    "Fijate: los cuerpos de Herring están en los terminales axónicos, no en los somas neuronales.",
+                    "Dato curioso: los pituicitos son gliales, no neuronas.",
+                    "Miau, las fibras de la pars nervosa son amielínicas.",
+                    "Curiosidad: la vascularización es por capilares fenestrados comunes, no sinusoides.",
+                    "¡Ronroneo de aprobación! Los cuerpos de Herring acumulan oxitocina y ADH en los terminales axónicos de las neuronas hipotalámicas."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -571,13 +811,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "Las células luteínicas de la granulosa secretan inhibina, no ABP (esa proteína la secreta la célula de Sertoli, en el testículo).",
-                "Estas células son de mayor tamaño, no de menor tamaño.",
-                "Estas células son las más abundantes, no las menos abundantes.",
-                "Las células luteínicas de la granulosa son las de mayor tamaño y las más abundantes, sintetizan estrógenos, progesterona e inhibina, y se ubican en la porción interna del cuerpo amarillo.",
-                "Se ubican en la porción interna del cuerpo amarillo, no en la externa (esa es la posición de las luteínicas de la teca)."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Las células luteínicas de la granulosa secretan inhibina, no ABP (esa proteína la secreta la célula de Sertoli, en el testículo).",
+                    "Estas células son de mayor tamaño, no de menor tamaño.",
+                    "Estas células son las más abundantes, no las menos abundantes.",
+                    "Las células luteínicas de la granulosa son las de mayor tamaño y las más abundantes, sintetizan estrógenos, progesterona e inhibina, y se ubican en la porción interna del cuerpo amarillo.",
+                    "Se ubican en la porción interna del cuerpo amarillo, no en la externa (esa es la posición de las luteínicas de la teca)."
+                ],
+                "fantasma": [
+                    "Ojo, secretan inhibina, no ABP (esa es de la célula de Sertoli, en el testículo).",
+                    "Che, son de mayor tamaño, no menor.",
+                    "Casi, son las más abundantes, no las menos.",
+                    "¡Esta! Son grandes, abundantes, secretan estrógenos+progesterona+inhibina, y están en la porción interna del cuerpo amarillo.",
+                    "Van en la porción interna, no en la externa (esa es de las de la teca)."
+                ],
+                "gato": [
+                    "Fijate: secretan inhibina, no ABP (eso es del Sertoli testicular).",
+                    "Dato curioso: son de mayor tamaño, no de menor.",
+                    "Miau, son las más abundantes, no las menos.",
+                    "¡Ronroneo de aprobación! Grandes, abundantes, con estrógenos, progesterona e inhibina, en la porción interna del cuerpo amarillo.",
+                    "Curiosidad: van por dentro, no por fuera (esa posición es de la teca)."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -607,13 +863,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "E",
-            "explicacoes": [
-                "Las células de Kupffer pertenecen al sistema fagocítico mononuclear (no al de células dendríticas), y se ubican en el espacio perisinusoidal, no dentro del sinusoide.",
-                "Se ubican en el espacio perisinusoidal (no dentro del sinusoide), y almacenan hemosiderina, no vitamina A — ese almacenamiento es propio de las células de Ito.",
-                "El almacenamiento de vitamina A es característico de las células de Ito, no de las células de Kupffer.",
-                "Se ubican en el espacio perisinusoidal (no dentro del sinusoide), y almacenan hemosiderina, no vitamina A.",
-                "Las células de Kupffer se ubican en el espacio perisinusoidal (espacio de Disse), pertenecen al sistema fagocítico mononuclear, tienen prolongaciones citoplasmáticas y almacenan hemosiderina."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Las células de Kupffer pertenecen al sistema fagocítico mononuclear (no al de células dendríticas), y se ubican en el espacio perisinusoidal, no dentro del sinusoide.",
+                    "Se ubican en el espacio perisinusoidal (no dentro del sinusoide), y almacenan hemosiderina, no vitamina A — ese almacenamiento es propio de las células de Ito.",
+                    "El almacenamiento de vitamina A es característico de las células de Ito, no de las células de Kupffer.",
+                    "Se ubican en el espacio perisinusoidal (no dentro del sinusoide), y almacenan hemosiderina, no vitamina A.",
+                    "Las células de Kupffer se ubican en el espacio perisinusoidal (espacio de Disse), pertenecen al sistema fagocítico mononuclear, tienen prolongaciones citoplasmáticas y almacenan hemosiderina."
+                ],
+                "fantasma": [
+                    "Ojo, son del sistema fagocítico mononuclear (no dendrítico), y están en el espacio perisinusoidal, no dentro del sinusoide.",
+                    "Che, están en el espacio perisinusoidal, y guardan hemosiderina, no vitamina A (esa es de las de Ito).",
+                    "Casi, el almacenamiento de vitamina A es de las células de Ito, no de Kupffer.",
+                    "De nuevo: perisinusoidal, y hemosiderina, no vitamina A.",
+                    "¡Esta! Las Kupffer viven en el espacio de Disse, son del sistema fagocítico mononuclear, y almacenan hemosiderina."
+                ],
+                "gato": [
+                    "Fijate: son del sistema fagocítico mononuclear, no dendrítico, y viven en el espacio perisinusoidal.",
+                    "Dato curioso: están en el perisinusoidal, y guardan hemosiderina, no vitamina A.",
+                    "Miau, el almacenamiento de vitamina A es cosa de las células de Ito.",
+                    "Curiosidad: otra vez, perisinusoidal y hemosiderina, no vitamina A.",
+                    "¡Ronroneo de aprobación! Las Kupffer viven en el espacio de Disse, son macrófagos residentes y almacenan hemosiderina."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -643,13 +915,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "explicacoes": [
-                "Regular la circulación sanguínea no es la función principal del sistema renal fetal.",
-                "No existe tal función — el líquido producido en gran parte por la orina fetal es el amniótico, no un 'líquido vitelino'.",
-                "A partir del segundo trimestre, la orina fetal es el principal componente del líquido amniótico — esa es la función principal del sistema renal fetal.",
-                "La eliminación de desechos del complejo embrión-anexos es función de la placenta (vía circulación materna), no del riñón fetal.",
-                "Sí hay una opción correcta: la que menciona la formación del líquido amniótico."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Regular la circulación sanguínea no es la función principal del sistema renal fetal.",
+                    "No existe tal función — el líquido producido en gran parte por la orina fetal es el amniótico, no un 'líquido vitelino'.",
+                    "A partir del segundo trimestre, la orina fetal es el principal componente del líquido amniótico — esa es la función principal del sistema renal fetal.",
+                    "La eliminación de desechos del complejo embrión-anexos es función de la placenta (vía circulación materna), no del riñón fetal.",
+                    "Sí hay una opción correcta: la que menciona la formación del líquido amniótico."
+                ],
+                "fantasma": [
+                    "Ojo, regular la circulación no es su función principal.",
+                    "Che, no existe esa función — lo importante es el líquido amniótico, no un 'líquido vitelino'.",
+                    "¡Esta! Desde el segundo trimestre, la orina fetal es el principal componente del líquido amniótico.",
+                    "Casi, eliminar desechos es trabajo de la placenta, no del riñón fetal.",
+                    "Sí hay una correcta: la que habla del líquido amniótico."
+                ],
+                "gato": [
+                    "Fijate: regular la circulación no es la función principal acá.",
+                    "Dato curioso: eso no existe — lo relevante es el líquido amniótico.",
+                    "¡Ronroneo de aprobación! Desde el segundo trimestre, la orina fetal arma la mayor parte del líquido amniótico.",
+                    "Miau, eliminar desechos es tarea de la placenta, no del riñón fetal.",
+                    "Curiosidad: sí hay una correcta, la del líquido amniótico."
+                ]
+            }
         }
     ]
 }
