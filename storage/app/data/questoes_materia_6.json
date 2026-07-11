@@ -31,13 +31,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "Aquí solo se listan 3 tipos celulares (falta la célula D-somatostatina) y además se le asigna el polipéptido pancreático a la célula D, cuando en realidad esa hormona corresponde a las células PP.",
-                "Los islotes sí tienen 4 tipos celulares, pero acá se intercambian las secreciones de las células D y PP: la D secreta somatostatina (no polipéptido pancreático) y la PP secreta polipéptido pancreático (no somatostatina).",
-                "Reasigna las hormonas de forma incorrecta: la célula A secreta glucagón (no somatostatina), la D secreta somatostatina (no polipéptido) y la PP secreta polipéptido pancreático (no glucagón).",
-                "Los islotes de Langerhans se ubican en el páncreas endocrino y tienen 4 tipos celulares principales: A (glucagón), B (insulina), D (somatostatina) y PP (polipéptido pancreático).",
-                "La ubicación es incorrecta: los islotes de Langerhans están en el páncreas, no en el hígado, aunque la composición celular descrita coincida con la correcta."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Aquí solo se listan 3 tipos celulares (falta la célula D-somatostatina) y además se le asigna el polipéptido pancreático a la célula D, cuando en realidad esa hormona corresponde a las células PP.",
+                    "Los islotes sí tienen 4 tipos celulares, pero acá se intercambian las secreciones de las células D y PP: la D secreta somatostatina (no polipéptido pancreático) y la PP secreta polipéptido pancreático (no somatostatina).",
+                    "Reasigna las hormonas de forma incorrecta: la célula A secreta glucagón (no somatostatina), la D secreta somatostatina (no polipéptido) y la PP secreta polipéptido pancreático (no glucagón).",
+                    "Los islotes de Langerhans se ubican en el páncreas endocrino y tienen 4 tipos celulares principales: A (glucagón), B (insulina), D (somatostatina) y PP (polipéptido pancreático).",
+                    "La ubicación es incorrecta: los islotes de Langerhans están en el páncreas, no en el hígado, aunque la composición celular descrita coincida con la correcta."
+                ],
+                "fantasma": [
+                    "Che, acá faltó un tipo celular (el D-somatostatina) y encima le asignaron el polipéptido pancreático a la célula D, que en realidad es cosa de las PP.",
+                    "Casi! Tienen los 4 tipos, pero mezclaron las secreciones de D y PP: la D larga somatostatina, no polipéptido, y viceversa.",
+                    "Acá se armó lío: la A larga glucagón (no somatostatina), la D larga somatostatina (no polipéptido) y la PP larga polipéptido (no glucagón).",
+                    "¡Esta es! Los islotes de Langerhans están en el páncreas endocrino y tienen 4 tipos celulares: A (glucagón), B (insulina), D (somatostatina) y PP (polipéptido pancreático).",
+                    "Ojo con la ubicación: los islotes están en el páncreas, no en el hígado, aunque el resto de la descripción esté bien."
+                ],
+                "gato": [
+                    "Miau, casi... acá falta un tipo celular (la D-somatostatina) y le pusieron el polipéptido pancreático a la célula equivocada.",
+                    "¡Fijate qué interesante! Tienen los 4 tipos, pero intercambiaron las hormonas de D y PP entre sí.",
+                    "Dato curioso: acá reasignaron todas las hormonas mal — ni la A, ni la D, ni la PP secretan lo que dice esta opción.",
+                    "¡Ronroneo de aprobación! Los islotes de Langerhans viven en el páncreas endocrino, con 4 tipos celulares: A (glucagón), B (insulina), D (somatostatina) y PP (polipéptido pancreático).",
+                    "Buena composición celular, pero la ubicación está mal — es en el páncreas, no en el hígado."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -67,13 +83,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "explicacoes": [
-                "La forma de rombo y la disposición de los ejes son correctas, pero el acino hepático se define en relación a la circulación sanguínea, no biliar.",
-                "El acino hepático (de Rappaport) tiene forma de rombo: su eje menor conecta dos tríadas portales vecinas y su eje mayor conecta dos venas centrolobulillares, definiendo la circulación sanguínea dentro del parénquima.",
-                "El hexágono describe al lobulillo hepático clásico, no al acino — el acino de Rappaport tiene forma de rombo.",
-                "Los ejes están invertidos: en el acino, el eje menor conecta las tríadas portales y el eje mayor conecta las venas terminales, no al revés.",
-                "Combina dos errores: la forma no es hexagonal (es un rombo) y además invierte los ejes descritos."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "La forma de rombo y la disposición de los ejes son correctas, pero el acino hepático se define en relación a la circulación sanguínea, no biliar.",
+                    "El acino hepático (de Rappaport) tiene forma de rombo: su eje menor conecta dos tríadas portales vecinas y su eje mayor conecta dos venas centrolobulillares, definiendo la circulación sanguínea dentro del parénquima.",
+                    "El hexágono describe al lobulillo hepático clásico, no al acino — el acino de Rappaport tiene forma de rombo.",
+                    "Los ejes están invertidos: en el acino, el eje menor conecta las tríadas portales y el eje mayor conecta las venas terminales, no al revés.",
+                    "Combina dos errores: la forma no es hexagonal (es un rombo) y además invierte los ejes descritos."
+                ],
+                "fantasma": [
+                    "Casi! La forma y los ejes están bien, pero el acino hepático se define por la circulación sanguínea, no por la biliar.",
+                    "¡Esta! El acino hepático (de Rappaport) es un rombo: el eje menor une dos tríadas portales vecinas y el eje mayor une dos venas centrolobulillares — ahí se define la circulación sanguínea.",
+                    "Ojo, el hexágono es el lobulillo hepático clásico, no el acino — el acino es un rombo.",
+                    "Che, invirtieron los ejes: el eje menor va con las tríadas portales y el mayor con las venas terminales, no al revés.",
+                    "Acá se juntaron dos errores: ni la forma es hexagonal (es rombo) ni los ejes están en el orden correcto."
+                ],
+                "gato": [
+                    "Fijate: la forma de rombo y los ejes están bien descritos, pero el acino se relaciona con la circulación sanguínea, no la biliar.",
+                    "¡Dato para guardar! El acino hepático tiene forma de rombo: eje menor conecta tríadas portales, eje mayor conecta venas centrolobulillares — y define la circulación sanguínea del parénquima.",
+                    "Curiosidad: el hexágono es del lobulillo clásico, no del acino de Rappaport (que es un rombo).",
+                    "Miau, los ejes están al revés: el menor va con las tríadas, el mayor con las venas terminales.",
+                    "Doble errorcito acá: la forma (no es hexágono) y el orden de los ejes, los dos están mal."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -103,13 +135,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "explicacoes": [
-                "La mácula densa está en el túbulo contorneado distal y funciona como osmorreceptor, sensando la concentración de Na+ del filtrado.",
-                "La ubicación es correcta, pero la mácula densa actúa como osmorreceptor (sensa Na+/osmolaridad), no como barorreceptor — ese rol corresponde a las células yuxtaglomerulares de la arteriola aferente.",
-                "La mácula densa no está en los túbulos colectores, sino en el túbulo contorneado distal.",
-                "La mácula densa se ubica en el túbulo contorneado distal, no en el proximal.",
-                "Combina dos errores: ni la ubicación (colectores) ni la función (barorreceptor) son correctas."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "La mácula densa está en el túbulo contorneado distal y funciona como osmorreceptor, sensando la concentración de Na+ del filtrado.",
+                    "La ubicación es correcta, pero la mácula densa actúa como osmorreceptor (sensa Na+/osmolaridad), no como barorreceptor — ese rol corresponde a las células yuxtaglomerulares de la arteriola aferente.",
+                    "La mácula densa no está en los túbulos colectores, sino en el túbulo contorneado distal.",
+                    "La mácula densa se ubica en el túbulo contorneado distal, no en el proximal.",
+                    "Combina dos errores: ni la ubicación (colectores) ni la función (barorreceptor) son correctas."
+                ],
+                "fantasma": [
+                    "¡Esta! La mácula densa está en el túbulo contorneado distal y actúa como osmorreceptor, sensando el Na+ del filtrado.",
+                    "Casi, la ubicación está bien, pero la mácula densa es osmorreceptor (sensa Na+), no barorreceptor — eso es cosa de las células yuxtaglomerulares.",
+                    "Ojo, la mácula densa no vive en los colectores, sino en el túbulo contorneado distal.",
+                    "Che, es en el distal, no en el proximal.",
+                    "Acá fallaron los dos datos: ni la ubicación (colectores) ni la función (barorreceptor) son correctas."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La mácula densa está en el túbulo contorneado distal, actuando como osmorreceptor del Na+ del filtrado.",
+                    "Fijate: la ubicación está bien, pero la función es de osmorreceptor, no barorreceptor — ese trabajo es de las células yuxtaglomerulares.",
+                    "Dato curioso: no está en los colectores, sino en el túbulo contorneado distal.",
+                    "Miau, casi — es en el distal, no en el proximal.",
+                    "Doble desliz: ni la ubicación ni la función coinciden con la mácula densa real."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -135,12 +183,26 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "explicacoes": [
-                "La FSH actúa sobre el ovario estimulando el desarrollo folicular; el efecto proliferativo directo sobre el endometrio es del estrógeno que ese folículo produce.",
-                "En la fase proliferativa del ciclo endometrial, el estrógeno estimula directamente la proliferación del epitelio glandular, formando glándulas rectas con alta actividad mitótica.",
-                "La progesterona actúa después, en la fase secretora, volviendo las glándulas tortuosas y secretoras — no rectas ni con alta actividad mitótica.",
-                "Ni la prolactina ni la LH son las hormonas responsables del efecto proliferativo directo sobre el endometrio."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "La FSH actúa sobre el ovario estimulando el desarrollo folicular; el efecto proliferativo directo sobre el endometrio es del estrógeno que ese folículo produce.",
+                    "En la fase proliferativa del ciclo endometrial, el estrógeno estimula directamente la proliferación del epitelio glandular, formando glándulas rectas con alta actividad mitótica.",
+                    "La progesterona actúa después, en la fase secretora, volviendo las glándulas tortuosas y secretoras — no rectas ni con alta actividad mitótica.",
+                    "Ni la prolactina ni la LH son las hormonas responsables del efecto proliferativo directo sobre el endometrio."
+                ],
+                "fantasma": [
+                    "Ojo, la FSH actúa en el ovario estimulando el folículo — el efecto directo sobre el endometrio es del estrógeno que ese folículo libera.",
+                    "¡Esta! En la fase proliferativa, el estrógeno hace que las glándulas endometriales crezcan rectas y con mucha actividad mitótica.",
+                    "Casi, pero la progesterona actúa después, en la fase secretora, volviendo las glándulas tortuosas y secretoras.",
+                    "Che, ni la prolactina ni la LH son las responsables directas de esa proliferación endometrial."
+                ],
+                "gato": [
+                    "Fijate: la FSH trabaja sobre el ovario, no directo sobre el endometrio — ese efecto es del estrógeno que el folículo produce.",
+                    "¡Dato para el examen! En la fase proliferativa, el estrógeno estimula directamente la proliferación glandular del endometrio, con glándulas rectas y alta actividad mitótica.",
+                    "Miau, la progesterona entra después, en la fase secretora, y ahí las glándulas se vuelven tortuosas.",
+                    "Curiosidad: ni prolactina ni LH tienen ese rol proliferativo directo sobre el endometrio."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -170,13 +232,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "explicacoes": [
-                "La región antropilórica no es la de mayor complejidad glandular, y las células caliciformes no se encuentran en el estómago sino en el intestino.",
-                "La ubicación es correcta, pero los enterocitos no existen en el estómago — el tipo celular que falta es la célula mucosa del cuello.",
-                "Las glándulas corpofúndicas (gástricas propias) son las de mayor complejidad celular en el estómago, con células parietales, mucosas del cuello, indiferenciadas, principales y enteroendocrinas.",
-                "Combina dos errores: la ubicación (debería ser corpofúndica) y el tipo celular (los enterocitos no existen en el estómago).",
-                "Las células caliciformes son propias del intestino, no se encuentran en las glándulas gástricas."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "La región antropilórica no es la de mayor complejidad glandular, y las células caliciformes no se encuentran en el estómago sino en el intestino.",
+                    "La ubicación es correcta, pero los enterocitos no existen en el estómago — el tipo celular que falta es la célula mucosa del cuello.",
+                    "Las glándulas corpofúndicas (gástricas propias) son las de mayor complejidad celular en el estómago, con células parietales, mucosas del cuello, indiferenciadas, principales y enteroendocrinas.",
+                    "Combina dos errores: la ubicación (debería ser corpofúndica) y el tipo celular (los enterocitos no existen en el estómago).",
+                    "Las células caliciformes son propias del intestino, no se encuentran en las glándulas gástricas."
+                ],
+                "fantasma": [
+                    "Ojo, la región antropilórica no es la más compleja, y las caliciformes son del intestino, no del estómago.",
+                    "Casi, la ubicación está bien, pero los enterocitos no existen en el estómago — faltó la célula mucosa del cuello.",
+                    "¡Esta! Las glándulas corpofúndicas son las más complejas del estómago: parietales, mucosas del cuello, indiferenciadas, principales y enteroendocrinas.",
+                    "Che, doble error: la ubicación (debería ser corpofúndica) y el tipo celular (no hay enterocitos en el estómago).",
+                    "Las caliciformes son del intestino — en el estómago no aparecen."
+                ],
+                "gato": [
+                    "Fijate: la región antropilórica no es la más compleja, y las caliciformes viven en el intestino, no en el estómago.",
+                    "Dato curioso: la ubicación está bien, pero 'enterocito' no existe en el estómago — el tipo celular correcto es la mucosa del cuello.",
+                    "¡Ronroneo de aprobación! Las glándulas corpofúndicas son las más completas del estómago: parietales, mucosas del cuello, indiferenciadas, principales y enteroendocrinas.",
+                    "Miau, acá hay dos errores: ubicación y tipo celular, ninguno cierra.",
+                    "Curiosidad: las caliciformes son del intestino, no aparecen en las glándulas gástricas."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -206,13 +284,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "explicacoes": [
-                "El mecanismo apócrino implica que la célula secretora pierde parte de su citoplasma apical al secretar — no es lo que ocurre en la transferencia de melanina.",
-                "La transferencia de melanina se da por secreción citocrina: las prolongaciones del melanocito inyectan los melanosomas directamente en el citoplasma del queratinocito, sin romper su membrana.",
-                "El mecanismo merócrino describe una exocitosis clásica hacia el exterior celular, no la inyección directa de melanosomas en la célula vecina.",
-                "El mecanismo yuxtacrino describe señalización por contacto de membrana, no la transferencia de partículas hacia el citoplasma de otra célula.",
-                "El mecanismo holócrino implica la desintegración completa de la célula secretora (como en las glándulas sebáceas) — no ocurre en la transferencia de melanina."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El mecanismo apócrino implica que la célula secretora pierde parte de su citoplasma apical al secretar — no es lo que ocurre en la transferencia de melanina.",
+                    "La transferencia de melanina se da por secreción citocrina: las prolongaciones del melanocito inyectan los melanosomas directamente en el citoplasma del queratinocito, sin romper su membrana.",
+                    "El mecanismo merócrino describe una exocitosis clásica hacia el exterior celular, no la inyección directa de melanosomas en la célula vecina.",
+                    "El mecanismo yuxtacrino describe señalización por contacto de membrana, no la transferencia de partículas hacia el citoplasma de otra célula.",
+                    "El mecanismo holócrino implica la desintegración completa de la célula secretora (como en las glándulas sebáceas) — no ocurre en la transferencia de melanina."
+                ],
+                "fantasma": [
+                    "Ojo, el apócrino implica que la célula pierde parte de su citoplasma al secretar — no es lo que pasa acá.",
+                    "¡Esta! La melanina pasa por secreción citocrina: el melanocito inyecta los melanosomas directo en el queratinocito, sin romper nada.",
+                    "Casi, el merócrino es una exocitosis normal hacia afuera, no una inyección directa en la célula vecina.",
+                    "Che, el yuxtacrino es señalización por contacto, no transferencia de partículas.",
+                    "El holócrino implica que la célula entera se desarma para liberar contenido — no es el caso acá."
+                ],
+                "gato": [
+                    "Fijate: el apócrino pierde parte del citoplasma al secretar, y eso no pasa en la transferencia de melanina.",
+                    "¡Dato curioso! Es secreción citocrina: el melanocito \"inyecta\" los melanosomas directo en el queratinocito vecino, sin abrir su membrana.",
+                    "Miau, el merócrino es una exocitosis clásica hacia afuera, distinto de esta inyección directa.",
+                    "Curiosidad: el yuxtacrino es señalización por contacto, no transferencia de partículas.",
+                    "El holócrino desarma toda la célula para secretar — no es lo que hace el melanocito acá."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -242,13 +336,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "El tipo de epitelio es correcto, pero el término adecuado es cilios, no vellosidades, entre las estructuras de superficie descritas.",
-                "El conducto deferente tiene epitelio pseudoestratificado, no estratificado.",
-                "El 'ribete en cepillo' es una estructura típica del epitelio intestinal (enterocitos), no del conducto deferente.",
-                "El conducto deferente tiene epitelio pseudoestratificado, con células que presentan esterocilios, microvellosidades y cilios en su superficie apical.",
-                "El conducto deferente tiene epitelio pseudoestratificado, no estratificado."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "El tipo de epitelio es correcto, pero el término adecuado es cilios, no vellosidades, entre las estructuras de superficie descritas.",
+                    "El conducto deferente tiene epitelio pseudoestratificado, no estratificado.",
+                    "El 'ribete en cepillo' es una estructura típica del epitelio intestinal (enterocitos), no del conducto deferente.",
+                    "El conducto deferente tiene epitelio pseudoestratificado, con células que presentan esterocilios, microvellosidades y cilios en su superficie apical.",
+                    "El conducto deferente tiene epitelio pseudoestratificado, no estratificado."
+                ],
+                "fantasma": [
+                    "Casi, el epitelio está bien, pero la palabra correcta es cilios, no vellosidades.",
+                    "Ojo, el conducto deferente es pseudoestratificado, no estratificado.",
+                    "Che, el 'ribete en cepillo' es cosa del intestino (enterocitos), no del conducto deferente.",
+                    "¡Esta! Pseudoestratificado, con esterocilios, microvellosidades y cilios en la superficie apical.",
+                    "De nuevo, es pseudoestratificado, no estratificado."
+                ],
+                "gato": [
+                    "Fijate: el tipo de epitelio está bien, pero el término correcto es cilios, no vellosidades.",
+                    "Dato curioso: es pseudoestratificado, no estratificado.",
+                    "Miau, el 'ribete en cepillo' es del intestino (enterocitos), no del conducto deferente.",
+                    "¡Ronroneo de aprobación! Pseudoestratificado con esterocilios, microvellosidades y cilios — así es el conducto deferente.",
+                    "Otra vez: pseudoestratificado, no estratificado."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -278,13 +388,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "E",
-            "explicacoes": [
-                "La proporción correcta entre vellosidades y criptas es de 3:1, no 1:1.",
-                "Las vellosidades intestinales son proyecciones de la mucosa (epitelio + lámina propia), no de la submucosa.",
-                "Las vellosidades se encuentran en todo el intestino delgado, no exclusivamente en el duodeno.",
-                "Combina dos errores: las vellosidades son de la mucosa (no de la submucosa) y la proporción correcta es 3:1 (no 1:1).",
-                "Las vellosidades intestinales son proyecciones digitiformes de la mucosa del intestino delgado, en una proporción aproximada de 3 vellosidades por cada cripta de Lieberkühn."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "La proporción correcta entre vellosidades y criptas es de 3:1, no 1:1.",
+                    "Las vellosidades intestinales son proyecciones de la mucosa (epitelio + lámina propia), no de la submucosa.",
+                    "Las vellosidades se encuentran en todo el intestino delgado, no exclusivamente en el duodeno.",
+                    "Combina dos errores: las vellosidades son de la mucosa (no de la submucosa) y la proporción correcta es 3:1 (no 1:1).",
+                    "Las vellosidades intestinales son proyecciones digitiformes de la mucosa del intestino delgado, en una proporción aproximada de 3 vellosidades por cada cripta de Lieberkühn."
+                ],
+                "fantasma": [
+                    "Ojo, la proporción correcta es 3:1, no 1:1.",
+                    "Che, las vellosidades son de la mucosa (epitelio + lámina propia), no de la submucosa.",
+                    "Casi, las vellosidades están en todo el intestino delgado, no solo en el duodeno.",
+                    "Doble error acá: capa (es mucosa) y proporción (es 3:1).",
+                    "¡Esta! Vellosidades de la mucosa, en proporción 3:1 con las criptas de Lieberkühn."
+                ],
+                "gato": [
+                    "Fijate: la proporción correcta es 3:1, no 1:1.",
+                    "Dato curioso: son de la mucosa, no de la submucosa.",
+                    "Miau, están en todo el intestino delgado, no solo en el duodeno.",
+                    "Acá se juntaron dos errores: capa y proporción, ninguno cierra.",
+                    "¡Ronroneo de aprobación! Vellosidades de la mucosa, 3 por cada cripta de Lieberkühn — así es la cosa."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -314,13 +440,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "explicacoes": [
-                "Las células C (parafoliculares) se ubican por fuera del epitelio folicular y secretan calcitonina, que disminuye la calcemia al inhibir la resorción ósea.",
-                "Las células C secretan calcitonina, no PTH — la PTH es producida por las glándulas paratiroides, no por la tiroides.",
-                "Las células C secretan calcitonina (no PTH), y esta hormona disminuye la calcemia, no la aumenta.",
-                "La calcitonina disminuye la calcemia, no la aumenta.",
-                "La ubicación y el efecto están equivocados: las células C están por fuera de las foliculares y su hormona disminuye (no aumenta) la calcemia."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Las células C (parafoliculares) se ubican por fuera del epitelio folicular y secretan calcitonina, que disminuye la calcemia al inhibir la resorción ósea.",
+                    "Las células C secretan calcitonina, no PTH — la PTH es producida por las glándulas paratiroides, no por la tiroides.",
+                    "Las células C secretan calcitonina (no PTH), y esta hormona disminuye la calcemia, no la aumenta.",
+                    "La calcitonina disminuye la calcemia, no la aumenta.",
+                    "La ubicación y el efecto están equivocados: las células C están por fuera de las foliculares y su hormona disminuye (no aumenta) la calcemia."
+                ],
+                "fantasma": [
+                    "¡Esta! Las células C están por fuera del epitelio folicular y largan calcitonina, que baja la calcemia.",
+                    "Ojo, las células C largan calcitonina, no PTH — esa es cosa de las paratiroides.",
+                    "Casi, la hormona es calcitonina (no PTH) y esta baja la calcemia, no la sube.",
+                    "Che, la calcitonina baja la calcemia, no la sube.",
+                    "Acá fallaron ubicación y efecto, los dos."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Las células C están afuera del folículo y secretan calcitonina, bajando la calcemia.",
+                    "Dato curioso: es calcitonina, no PTH — la PTH es de las paratiroides.",
+                    "Miau, la calcitonina baja la calcemia, no la sube (y tampoco es PTH).",
+                    "Fijate: la calcitonina baja el calcio, no lo sube.",
+                    "Curiosidad: acá ni la ubicación ni el efecto están bien."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -350,13 +492,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "explicacoes": [
-                "Cuando los conductos de las glándulas mucosas del cérvix se obstruyen, la secreción acumulada forma los quistes (o huevos) de Naboth.",
-                "No existe esa entidad en este contexto — los nódulos de Ranvier son estructuras del axón neuronal, no del cérvix.",
-                "La metaplasia es un cambio de tipo epitelial, no el resultado de la obstrucción de un conducto glandular.",
-                "La bolsa de Rathke es una estructura embrionaria relacionada con el desarrollo de la hipófisis, no con el cérvix.",
-                "El aparato de Golgi es un organelo celular; no tiene relación con la obstrucción de las glándulas cervicales."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Cuando los conductos de las glándulas mucosas del cérvix se obstruyen, la secreción acumulada forma los quistes (o huevos) de Naboth.",
+                    "No existe esa entidad en este contexto — los nódulos de Ranvier son estructuras del axón neuronal, no del cérvix.",
+                    "La metaplasia es un cambio de tipo epitelial, no el resultado de la obstrucción de un conducto glandular.",
+                    "La bolsa de Rathke es una estructura embrionaria relacionada con el desarrollo de la hipófisis, no con el cérvix.",
+                    "El aparato de Golgi es un organelo celular; no tiene relación con la obstrucción de las glándulas cervicales."
+                ],
+                "fantasma": [
+                    "¡Esta! Cuando se tapan los conductos de las glándulas del cérvix, la secreción acumulada forma los quistes de Naboth.",
+                    "Ojo, no existe tal cosa acá — los nódulos de Ranvier son del axón, nada que ver con el cérvix.",
+                    "Che, la metaplasia es un cambio de tipo epitelial, no el resultado de una obstrucción glandular.",
+                    "Casi, la bolsa de Rathke es de la hipófisis, no del cérvix.",
+                    "El aparato de Golgi es un organelo — no tiene nada que ver con esto."
+                ],
+                "gato": [
+                    "¡Dato curioso! Los quistes de Naboth aparecen cuando se tapan los conductos de las glándulas mucosas del cérvix.",
+                    "Miau, eso no existe en este contexto — los nódulos de Ranvier son del axón neuronal.",
+                    "Fijate: la metaplasia es un cambio de tipo epitelial, no una obstrucción glandular.",
+                    "Curiosidad: la bolsa de Rathke es de la hipófisis, no del cérvix.",
+                    "El aparato de Golgi es un organelo celular, sin relación con esto."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -386,13 +544,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "Las haustras se forman por la disposición de la capa muscular externa (tenias), no por repliegues de la serosa.",
-                "Las haustras no se encuentran en la adventicia — se forman por la acción de las tenias, bandas de músculo liso de la capa muscular externa.",
-                "Las haustras no están formadas por la submucosa; son producto de la tensión ejercida por las tenias del colon sobre la pared intestinal.",
-                "Las tenias del colon son más cortas que la longitud del intestino grueso, lo que \"frunce\" la pared y forma las haustras entre ellas.",
-                "La adventicia no es la responsable de las haustras — estas se forman por la acción de las tenias de la capa muscular externa."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "Las haustras se forman por la disposición de la capa muscular externa (tenias), no por repliegues de la serosa.",
+                    "Las haustras no se encuentran en la adventicia — se forman por la acción de las tenias, bandas de músculo liso de la capa muscular externa.",
+                    "Las haustras no están formadas por la submucosa; son producto de la tensión ejercida por las tenias del colon sobre la pared intestinal.",
+                    "Las tenias del colon son más cortas que la longitud del intestino grueso, lo que \"frunce\" la pared y forma las haustras entre ellas.",
+                    "La adventicia no es la responsable de las haustras — estas se forman por la acción de las tenias de la capa muscular externa."
+                ],
+                "fantasma": [
+                    "Ojo, las haustras se forman por la muscular externa (tenias), no por la serosa.",
+                    "Che, no están en la adventicia — son cosa de las tenias del colon.",
+                    "Casi, tampoco es la submucosa — son las tenias tirando de la pared.",
+                    "¡Esta! Las tenias son más cortas que el intestino grueso, así que \"fruncen\" la pared y forman las haustras.",
+                    "La adventicia no tiene nada que ver — son las tenias las responsables."
+                ],
+                "gato": [
+                    "Fijate: son las tenias (muscular externa) las que forman las haustras, no la serosa.",
+                    "Dato curioso: no es la adventicia, son las tenias del colon.",
+                    "Miau, tampoco la submucosa — son las tenias tirando de la pared intestinal.",
+                    "¡Ronroneo de aprobación! Las tenias, más cortas que el colon, \"fruncen\" la pared y crean las haustras.",
+                    "Curiosidad: la adventicia no participa — todo es obra de las tenias."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -422,13 +596,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "explicacoes": [
-                "En la región corpofúndica, la lámina propia gástrica contiene las glándulas gástricas propias, compuestas por varios tipos celulares (parietales, principales, mucosas del cuello, indiferenciadas y enteroendocrinas).",
-                "Las glándulas de Brunner están en la submucosa duodenal, no en la lámina propia gástrica.",
-                "Las glándulas de Lieberkühn son intestinales (no gástricas) y además están formadas por varios tipos celulares, no uno solo.",
-                "Las glándulas gástricas propias están formadas por varios tipos celulares, no por uno solo.",
-                "Las glándulas de Lieberkühn se encuentran en el intestino, no en el estómago."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "En la región corpofúndica, la lámina propia gástrica contiene las glándulas gástricas propias, compuestas por varios tipos celulares (parietales, principales, mucosas del cuello, indiferenciadas y enteroendocrinas).",
+                    "Las glándulas de Brunner están en la submucosa duodenal, no en la lámina propia gástrica.",
+                    "Las glándulas de Lieberkühn son intestinales (no gástricas) y además están formadas por varios tipos celulares, no uno solo.",
+                    "Las glándulas gástricas propias están formadas por varios tipos celulares, no por uno solo.",
+                    "Las glándulas de Lieberkühn se encuentran en el intestino, no en el estómago."
+                ],
+                "fantasma": [
+                    "¡Esta! En la región corpofúndica, la lámina propia tiene las glándulas gástricas propias, con varios tipos celulares.",
+                    "Ojo, las de Brunner son de la submucosa duodenal, no de la lámina propia gástrica.",
+                    "Che, las de Lieberkühn son del intestino (no del estómago) y tienen varios tipos celulares, no uno solo.",
+                    "Casi, las glándulas gástricas propias tienen varios tipos celulares, no uno solo.",
+                    "Las de Lieberkühn viven en el intestino, no en el estómago."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! En la corpofúndica, la lámina propia gástrica tiene las glándulas gástricas propias, con varios tipos celulares.",
+                    "Dato curioso: las de Brunner están en la submucosa duodenal, no en el estómago.",
+                    "Miau, las de Lieberkühn son intestinales, y además tienen varios tipos celulares.",
+                    "Fijate: las glándulas gástricas propias tienen varios tipos celulares, no uno solo.",
+                    "Curiosidad: las de Lieberkühn están en el intestino, no en el estómago."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -458,13 +648,29 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "explicacoes": [
-                "En la región adluminal también se encuentran los espermatozoides, además de los espermatocitos II y las espermátides mencionados.",
-                "En la región adluminal también están presentes los espermatocitos II, no solo espermátides y espermatozoides.",
-                "Las células de Leydig se ubican en el intersticio, fuera del túbulo seminífero — la célula de sostén dentro del túbulo es la de Sértoli.",
-                "El compartimento adluminal contiene las células germinativas más avanzadas (espermatocitos II, espermátides y espermatozoides) junto con la región apical de las células de Sértoli, que las sostiene.",
-                "Faltan los espermatozoides en la enumeración, y además la célula de sostén dentro del túbulo es la de Sértoli, no la de Leydig (que está en el intersticio)."
-            ]
+            "explicacoes": {
+                "robo": [
+                    "En la región adluminal también se encuentran los espermatozoides, además de los espermatocitos II y las espermátides mencionados.",
+                    "En la región adluminal también están presentes los espermatocitos II, no solo espermátides y espermatozoides.",
+                    "Las células de Leydig se ubican en el intersticio, fuera del túbulo seminífero — la célula de sostén dentro del túbulo es la de Sértoli.",
+                    "El compartimento adluminal contiene las células germinativas más avanzadas (espermatocitos II, espermátides y espermatozoides) junto con la región apical de las células de Sértoli, que las sostiene.",
+                    "Faltan los espermatozoides en la enumeración, y además la célula de sostén dentro del túbulo es la de Sértoli, no la de Leydig (que está en el intersticio)."
+                ],
+                "fantasma": [
+                    "Ojo, en la región adluminal también hay espermatozoides, además de espermatocitos II y espermátides.",
+                    "Che, también están los espermatocitos II ahí, no solo espermátides y espermatozoides.",
+                    "Casi, las de Leydig están en el intersticio — la célula de sostén dentro del túbulo es la de Sértoli.",
+                    "¡Esta! El compartimento adluminal tiene espermatocitos II, espermátides y espermatozoides, más la región apical de las células de Sértoli.",
+                    "Faltan los espermatozoides acá, y la célula de sostén es Sértoli, no Leydig."
+                ],
+                "gato": [
+                    "Fijate: también hay espermatozoides en la región adluminal, además de espermatocitos II y espermátides.",
+                    "Dato curioso: los espermatocitos II también están ahí, no solo las etapas más avanzadas.",
+                    "Miau, las de Leydig viven en el intersticio — adentro del túbulo la célula de sostén es la de Sértoli.",
+                    "¡Ronroneo de aprobación! El compartimento adluminal tiene espermatocitos II, espermátides, espermatozoides y la región apical de Sértoli sosteniendo todo.",
+                    "Curiosidad: faltan los espermatozoides en la lista, y la célula de sostén correcta es Sértoli, no Leydig."
+                ]
+            }
         }
     ]
 }
