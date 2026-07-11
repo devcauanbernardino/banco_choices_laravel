@@ -49,12 +49,20 @@
 .qz-card { background:var(--app-surface); border:1px solid var(--app-border); }
 .qz-btn-ghost { background:var(--app-surface); border:1.5px solid var(--app-border); color:var(--app-text); }
 .qz-btn-ghost:hover { border-color:rgba(106,3,146,.4); color:#a855f7; }
+
+.qz-opt-explain { margin:6px 0 0 40px; padding:10px 14px; border-radius:11px; background:var(--app-bg); border:1px solid var(--app-border); }
+.qz-opt-explain--correct { background:rgba(22,163,74,.1); border-color:rgba(22,163,74,.3); }
+.qz-opt-explain__cue { display:flex; align-items:center; gap:6px; font-size:.8rem; font-weight:700; color:#16a34a; margin-bottom:4px; }
+.qz-opt-explain__cue .material-symbols-outlined { font-size:1.05rem; }
+.qz-opt-explain__text { font-size:.84rem; color:var(--app-muted); line-height:1.55; margin:0; }
+.qz-opt-explain--correct .qz-opt-explain__text { color:var(--app-text); }
 </style>
 @endpush
 
 @section('content')
 @php
     $opcoes = $questao->getOpcoes();
+    $explicacoes = $questao->getExplicacoesAlternativas();
     $letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
     $respostaAtual = $respostas[$indiceAtual] ?? null;
     $textoPergunta = $questao->getPergunta();
@@ -176,6 +184,28 @@
                                     <span class="material-symbols-outlined" aria-hidden="true" style="margin-left:auto; color:#f87171;">cancel</span>
                                 @endif
                             </label>
+
+                            @if ($hasFeedback)
+                                @php
+                                    $explicacaoTexto = trim((string) ($explicacoes[$i] ?? ''));
+                                    if ($isCorrect && $explicacaoTexto === '') {
+                                        $explicacaoTexto = trim((string) ($feedback['feedback'] ?? ''));
+                                    }
+                                @endphp
+                                @if ($isCorrect || $explicacaoTexto !== '')
+                                    <div class="qz-opt-explain {{ $isCorrect ? 'qz-opt-explain--correct' : '' }}">
+                                        @if ($isCorrect)
+                                            <div class="qz-opt-explain__cue">
+                                                <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                                                {{ __('quiz.alt_correct_cue') }}
+                                            </div>
+                                        @endif
+                                        @if ($explicacaoTexto !== '')
+                                            <p class="qz-opt-explain__text">{{ $explicacaoTexto }}</p>
+                                        @endif
+                                    </div>
+                                @endif
+                            @endif
                         @endforeach
                     </div>
 
@@ -201,9 +231,6 @@
                                 <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.3rem; color:{{ !empty($feedback['acertou']) ? '#22c55e' : '#f87171' }};">{{ !empty($feedback['acertou']) ? 'task_alt' : 'error' }}</span>
                                 <strong style="font-size:.9rem; color:{{ !empty($feedback['acertou']) ? '#16a34a' : '#dc2626' }};">{{ !empty($feedback['acertou']) ? __('quiz.correct') : __('quiz.incorrect') }}</strong>
                             </div>
-                            @if (!empty($feedback['feedback']))
-                                <p style="font-size:.86rem; color:var(--app-text); line-height:1.65; margin:0;">{{ $feedback['feedback'] }}</p>
-                            @endif
 
                             <div style="margin-top:14px;">
                                 <button type="button" id="qzAiExplainBtn" style="display:inline-flex; align-items:center; gap:7px; padding:8px 16px; border-radius:10px; border:1.5px solid rgba(139,31,184,.35); background:rgba(139,31,184,.06); color:#8b1fb8; font-size:.8rem; font-weight:700; cursor:pointer;">

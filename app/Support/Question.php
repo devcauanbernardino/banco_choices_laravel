@@ -247,6 +247,41 @@ class Question
         return array_values(array_map(fn ($v) => is_scalar($v) ? (string) $v : '', $raw));
     }
 
+    /**
+     * Explicações por alternativa (índice 0 = A, etc.), quando o banco já tem esse
+     * conteúdo migrado. Ausente ou vazio nessa posição = nada a exibir ali ainda.
+     *
+     * @return list<string>
+     */
+    public function getExplicacoesAlternativas(): array
+    {
+        $raw = $this->data['explicacoes'] ?? null;
+        if (! is_array($raw) || $raw === []) {
+            return [];
+        }
+
+        $numericKeys = array_keys($raw) === range(0, count($raw) - 1);
+        if (! $numericKeys) {
+            $order = ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e'];
+            $ordered = [];
+            foreach ($order as $letter) {
+                if (array_key_exists($letter, $raw)) {
+                    $ordered[] = (string) $raw[$letter];
+                }
+            }
+            if ($ordered !== []) {
+                return $ordered;
+            }
+        }
+
+        return array_values(array_map(fn ($v) => is_scalar($v) ? trim((string) $v) : '', $raw));
+    }
+
+    public function getExplicacaoAlternativa(int $index): string
+    {
+        return $this->getExplicacoesAlternativas()[$index] ?? '';
+    }
+
     public function getData(): array
     {
         return $this->data;
