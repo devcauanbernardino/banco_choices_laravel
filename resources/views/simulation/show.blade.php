@@ -228,24 +228,17 @@
                     @endif
 
                     @if ($hasFeedback)
-                        <div style="margin-top:20px; padding:16px 18px; border-radius:14px; background:{{ !empty($feedback['acertou']) ? 'rgba(22,163,74,.1)' : 'rgba(239,68,68,.08)' }}; border:1px solid {{ !empty($feedback['acertou']) ? 'rgba(22,163,74,.3)' : 'rgba(239,68,68,.3)' }};">
-                            <div style="display:flex; align-items:center; gap:9px; margin-bottom:8px;">
-                                <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.3rem; color:{{ !empty($feedback['acertou']) ? '#22c55e' : '#f87171' }};">{{ !empty($feedback['acertou']) ? 'task_alt' : 'error' }}</span>
-                                <strong style="font-size:.9rem; color:{{ !empty($feedback['acertou']) ? '#16a34a' : '#dc2626' }};">{{ !empty($feedback['acertou']) ? __('quiz.correct') : __('quiz.incorrect') }}</strong>
-                            </div>
-
-                            <div style="margin-top:14px;">
-                                <button type="button" id="qzAiExplainBtn" style="display:inline-flex; align-items:center; gap:7px; padding:8px 16px; border-radius:10px; border:1.5px solid rgba(139,31,184,.35); background:rgba(139,31,184,.06); color:#8b1fb8; font-size:.8rem; font-weight:700; cursor:pointer;">
-                                    @if ($mascoteFile)
-                                        <img src="{{ asset('assets/img/mascots/'.$mascoteFile) }}" alt="" style="width:22px; height:22px; border-radius:50%; object-fit:cover; flex-shrink:0;">
-                                    @else
-                                        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem;">auto_awesome</span>
-                                    @endif
-                                    {{ $mascoteNome ? __('quiz.ai.explain_btn_mascote', ['mascote' => $mascoteNome]) : __('quiz.ai.explain_btn') }}
-                                </button>
-                                <div id="qzAiExplainBox" class="d-none" style="margin-top:10px; padding:13px 16px; border-radius:12px; background:rgba(139,31,184,.06); border:1px solid rgba(139,31,184,.2);">
-                                    <p id="qzAiExplainText" style="font-size:.85rem; color:var(--app-text); line-height:1.65; margin:0;"></p>
-                                </div>
+                        <div style="margin-top:20px;">
+                            <button type="button" id="qzAiExplainBtn" style="display:inline-flex; align-items:center; gap:7px; padding:8px 16px; border-radius:10px; border:1.5px solid rgba(139,31,184,.35); background:rgba(139,31,184,.06); color:#8b1fb8; font-size:.8rem; font-weight:700; cursor:pointer;">
+                                @if ($mascoteFile)
+                                    <img src="{{ asset('assets/img/mascots/'.$mascoteFile) }}" alt="" style="width:22px; height:22px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+                                @else
+                                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem;">auto_awesome</span>
+                                @endif
+                                {{ $mascoteNome ? __('quiz.ai.explain_btn_mascote', ['mascote' => $mascoteNome]) : __('quiz.ai.explain_btn') }}
+                            </button>
+                            <div id="qzAiExplainBox" class="d-none" style="margin-top:10px; padding:13px 16px; border-radius:12px; background:rgba(139,31,184,.06); border:1px solid rgba(139,31,184,.2);">
+                                <p id="qzAiExplainText" style="font-size:.85rem; color:var(--app-text); line-height:1.65; margin:0;"></p>
                             </div>
                         </div>
                     @endif
