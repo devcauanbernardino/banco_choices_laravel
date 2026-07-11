@@ -116,9 +116,11 @@ class DashboardController extends Controller
             ->where('usuario_id', $uid)
             ->selectRaw('DATE(data_realizacao) as data, (SUM(acertos)/SUM(total_questoes))*100 as desempenho')
             ->groupByRaw('DATE(data_realizacao)')
-            ->orderBy('data')
+            ->orderByDesc('data')
             ->limit(10)
-            ->get();
+            ->get()
+            ->sortBy('data')
+            ->values();
 
         $labels = [];
         $data = [];
