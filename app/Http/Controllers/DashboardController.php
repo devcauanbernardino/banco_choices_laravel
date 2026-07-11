@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Support\SimulationGrading;
+use App\Support\SimulationSession;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -16,11 +17,12 @@ class DashboardController extends Controller
         $recentes = $this->getRecentSimulados($uid);
         $evolucao = $this->getEvolucaoGrafico($uid);
         $porMateria = $this->getDesempenhoPorMateria($uid);
+        $simuladoEmAndamento = SimulationSession::resumoAtual();
 
         $usuario = Auth::user();
 
         return view('dashboard.index', compact(
-            'stats', 'recentes', 'evolucao', 'porMateria', 'usuario'
+            'stats', 'recentes', 'evolucao', 'porMateria', 'usuario', 'simuladoEmAndamento'
         ));
     }
 

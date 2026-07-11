@@ -103,7 +103,24 @@
     {{-- Top row: Hero card + Chart --}}
     <div style="display:grid; grid-template-columns:1.35fr 1fr; gap:20px; animation: fadeUp .6s .06s ease both;">
 
-        @if ($hasRecent)
+        @if ($simuladoEmAndamento)
+            <a href="{{ route('simulation.show') }}" style="display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg, #18002e 0%, #2d0050 60%, #0d0a1a 100%); border-radius:18px; padding:clamp(20px,3vw,28px); text-decoration:none; position:relative; overflow:hidden; min-height:168px; transition:filter .2s ease;">
+                <div style="position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px); background-size:24px 24px; pointer-events:none;"></div>
+                <div style="position:absolute; top:-20%; right:-5%; width:55%; height:70%; background:radial-gradient(ellipse at 60% 30%, rgba(139,31,184,.45), transparent 65%); pointer-events:none;"></div>
+                <div style="position:relative; z-index:1; margin-bottom:14px;">
+                    <span style="display:inline-block; padding:4px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.07); color:rgba(255,255,255,.65); font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; backdrop-filter:blur(8px);">{{ __('dashboard.home.hero_tag_ongoing') }}</span>
+                </div>
+                <div style="position:relative; z-index:1;">
+                    <h2 style="font-size:clamp(1.1rem,1.8vw,1.3rem); font-weight:700; color:#fff; margin-bottom:8px; letter-spacing:-.02em;">{{ __('dashboard.home.hero_ongoing_title', ['materia' => $simuladoEmAndamento['materia_nome']]) }}</h2>
+                    <p style="color:rgba(255,255,255,.5); font-size:.84rem; margin-bottom:16px;">{{ __('dashboard.home.hero_ongoing_sub', ['atual' => $simuladoEmAndamento['atual'] + 1, 'total' => $simuladoEmAndamento['total']]) }}</p>
+                    <span style="display:inline-flex; align-items:center; gap:7px; color:#fff; font-size:.84rem; font-weight:600;">
+                        {{ __('dashboard.home.btn_continue') }}
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                </div>
+                <svg style="position:absolute; right:20px; bottom:14px; color:rgba(255,255,255,.05);" width="80" height="80" viewBox="0 0 24 24" fill="currentColor"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </a>
+        @elseif ($hasRecent)
             <a href="{{ route('history') }}" style="display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg, #18002e 0%, #2d0050 60%, #0d0a1a 100%); border-radius:18px; padding:clamp(20px,3vw,28px); text-decoration:none; position:relative; overflow:hidden; min-height:168px; transition:filter .2s ease;">
                 <div style="position:absolute; inset:0; background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px); background-size:24px 24px; pointer-events:none;"></div>
                 <div style="position:absolute; top:-20%; right:-5%; width:55%; height:70%; background:radial-gradient(ellipse at 60% 30%, rgba(139,31,184,.45), transparent 65%); pointer-events:none;"></div>

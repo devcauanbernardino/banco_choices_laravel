@@ -33,6 +33,16 @@
                 <p class="bc-mock-editorial__lead">{{ __('bank.lead_paragraph') }}</p>
             </header>
 
+            @if ($simuladoEmAndamento)
+                <a href="{{ route('simulation.show') }}" class="bc-mock-panel" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; text-decoration:none; margin-bottom:20px;">
+                    <div>
+                        <p class="fw-semibold mb-1" style="color:var(--app-text);">{{ __('bank.ongoing.title') }}</p>
+                        <p class="small text-muted mb-0">{{ __('bank.ongoing.sub', ['materia' => $simuladoEmAndamento['materia_nome'], 'atual' => $simuladoEmAndamento['atual'] + 1, 'total' => $simuladoEmAndamento['total']]) }}</p>
+                    </div>
+                    <span class="bc-mock-pill">{{ __('bank.ongoing.cta') }}</span>
+                </a>
+            @endif
+
             @if ($materias->isEmpty())
                 <section class="bc-mock-panel">
                     <p class="text-muted mb-0">{{ __('bank.no_subjects') }}</p>

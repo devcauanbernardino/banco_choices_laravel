@@ -73,7 +73,10 @@ class SimulationExamTimerTest extends TestCase
         $this->assertStringContainsString('formatRemaining', $html);
         $this->assertStringContainsString('setInterval', $html);
 
-        $this->assertNotNull(session('simulado.inicio'));
-        $this->assertSame('exame', session('simulado.modo'));
+        $row = DB::table('simulados_em_andamento')->where('usuario_id', $user->id)->first();
+        $dados = json_decode((string) $row->dados, true);
+
+        $this->assertNotNull($dados['inicio'] ?? null);
+        $this->assertSame('exame', $dados['modo'] ?? null);
     }
 }

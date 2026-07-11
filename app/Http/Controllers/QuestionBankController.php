@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\SimulationSession;
 use Illuminate\Support\Facades\Auth;
 
 class QuestionBankController extends Controller
@@ -10,7 +11,8 @@ class QuestionBankController extends Controller
     {
         $usuario = Auth::user();
         $materias = $usuario->materiasUnicas();
+        $simuladoEmAndamento = SimulationSession::resumoAtual();
 
-        return view('questionbank.index', compact('usuario', 'materias'));
+        return view('questionbank.index', compact('usuario', 'materias', 'simuladoEmAndamento'));
     }
 }
