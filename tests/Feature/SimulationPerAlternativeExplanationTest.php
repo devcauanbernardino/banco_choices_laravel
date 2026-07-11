@@ -74,7 +74,7 @@ class SimulationPerAlternativeExplanationTest extends TestCase
 
         $this->assertStringContainsString('Explicação de por que A está errada.', $html);
         $this->assertStringContainsString('Explicação de por que B é a correta.', $html);
-        $this->assertStringContainsString('qz-opt-explain--correct', $html);
+        $this->assertStringContainsString('qz-opt-explain__cue', $html);
 
         // A opção C não tem texto em "explicacoes" e não é a correta — não deve aparecer nenhuma caixa pra ela.
         $this->assertStringNotContainsString('Feedback antigo (fallback)', $html);

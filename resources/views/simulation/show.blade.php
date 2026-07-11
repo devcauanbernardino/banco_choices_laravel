@@ -27,7 +27,8 @@
 @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
 @keyframes slideIn { from { opacity:0; transform:translateX(12px); } to { opacity:1; transform:none; } }
 
-.qz-opt { display:flex; align-items:center; gap:12px; padding:13px 16px; border-radius:13px; border:1.5px solid var(--app-border); background:var(--app-surface); cursor:pointer; transition:border-color .18s ease, background .18s ease, box-shadow .18s ease; }
+.qz-opt { display:flex; flex-direction:column; gap:10px; padding:13px 16px; border-radius:13px; border:1.5px solid var(--app-border); background:var(--app-surface); cursor:pointer; transition:border-color .18s ease, background .18s ease, box-shadow .18s ease; }
+.qz-opt-row { display:flex; align-items:center; gap:12px; }
 .qz-opt:hover { border-color:rgba(106,3,146,.45); }
 .qz-opt.is-selected { border-color:rgba(106,3,146,.6); background:rgba(106,3,146,.08); }
 .qz-opt.is-correct  { border-color:rgba(22,163,74,.55); background:rgba(22,163,74,.1); }
@@ -50,12 +51,11 @@
 .qz-btn-ghost { background:var(--app-surface); border:1.5px solid var(--app-border); color:var(--app-text); }
 .qz-btn-ghost:hover { border-color:rgba(106,3,146,.4); color:#a855f7; }
 
-.qz-opt-explain { margin:6px 0 0 40px; padding:10px 14px; border-radius:11px; background:var(--app-bg); border:1px solid var(--app-border); }
-.qz-opt-explain--correct { background:rgba(22,163,74,.1); border-color:rgba(22,163,74,.3); }
+.qz-opt-explain { padding-left:40px; }
 .qz-opt-explain__cue { display:flex; align-items:center; gap:6px; font-size:.8rem; font-weight:700; color:#16a34a; margin-bottom:4px; }
 .qz-opt-explain__cue .material-symbols-outlined { font-size:1.05rem; }
 .qz-opt-explain__text { font-size:.84rem; color:var(--app-muted); line-height:1.55; margin:0; }
-.qz-opt-explain--correct .qz-opt-explain__text { color:var(--app-text); }
+.qz-opt.is-correct .qz-opt-explain__text { color:var(--app-text); }
 </style>
 @endpush
 
@@ -172,40 +172,42 @@
                                 $isWrongPick = $hasFeedback && $isSelected && ! $isCorrect;
                             @endphp
                             <label class="qz-opt {{ $isSelected ? 'is-selected' : '' }} {{ $isCorrect ? 'is-correct' : '' }} {{ $isWrongPick ? 'is-wrong' : '' }}">
-                                <input type="{{ $isMulti ? 'checkbox' : 'radio' }}"
-                                       name="{{ $isMulti ? 'resposta[]' : 'resposta' }}" value="{{ $i }}"
-                                       {{ $isSelected ? 'checked' : '' }}
-                                       @if ($hasFeedback) disabled @endif>
-                                <span class="qz-opt-letter" aria-hidden="true">{{ $letras[$i] ?? ($i + 1) }}</span>
-                                <span class="qz-opt-text">{{ $opcao }}</span>
-                                @if ($hasFeedback && $isCorrect)
-                                    <span class="material-symbols-outlined" aria-hidden="true" style="margin-left:auto; color:#22c55e;">check_circle</span>
-                                @elseif ($isWrongPick)
-                                    <span class="material-symbols-outlined" aria-hidden="true" style="margin-left:auto; color:#f87171;">cancel</span>
+                                <div class="qz-opt-row">
+                                    <input type="{{ $isMulti ? 'checkbox' : 'radio' }}"
+                                           name="{{ $isMulti ? 'resposta[]' : 'resposta' }}" value="{{ $i }}"
+                                           {{ $isSelected ? 'checked' : '' }}
+                                           @if ($hasFeedback) disabled @endif>
+                                    <span class="qz-opt-letter" aria-hidden="true">{{ $letras[$i] ?? ($i + 1) }}</span>
+                                    <span class="qz-opt-text">{{ $opcao }}</span>
+                                    @if ($hasFeedback && $isCorrect)
+                                        <span class="material-symbols-outlined" aria-hidden="true" style="margin-left:auto; color:#22c55e;">check_circle</span>
+                                    @elseif ($isWrongPick)
+                                        <span class="material-symbols-outlined" aria-hidden="true" style="margin-left:auto; color:#f87171;">cancel</span>
+                                    @endif
+                                </div>
+
+                                @if ($hasFeedback)
+                                    @php
+                                        $explicacaoTexto = trim((string) ($explicacoes[$i] ?? ''));
+                                        if ($isCorrect && $explicacaoTexto === '') {
+                                            $explicacaoTexto = trim((string) ($feedback['feedback'] ?? ''));
+                                        }
+                                    @endphp
+                                    @if ($isCorrect || $explicacaoTexto !== '')
+                                        <div class="qz-opt-explain">
+                                            @if ($isCorrect)
+                                                <div class="qz-opt-explain__cue">
+                                                    <span class="material-symbols-outlined" aria-hidden="true">check</span>
+                                                    {{ __('quiz.alt_correct_cue') }}
+                                                </div>
+                                            @endif
+                                            @if ($explicacaoTexto !== '')
+                                                <p class="qz-opt-explain__text">{{ $explicacaoTexto }}</p>
+                                            @endif
+                                        </div>
+                                    @endif
                                 @endif
                             </label>
-
-                            @if ($hasFeedback)
-                                @php
-                                    $explicacaoTexto = trim((string) ($explicacoes[$i] ?? ''));
-                                    if ($isCorrect && $explicacaoTexto === '') {
-                                        $explicacaoTexto = trim((string) ($feedback['feedback'] ?? ''));
-                                    }
-                                @endphp
-                                @if ($isCorrect || $explicacaoTexto !== '')
-                                    <div class="qz-opt-explain {{ $isCorrect ? 'qz-opt-explain--correct' : '' }}">
-                                        @if ($isCorrect)
-                                            <div class="qz-opt-explain__cue">
-                                                <span class="material-symbols-outlined" aria-hidden="true">check</span>
-                                                {{ __('quiz.alt_correct_cue') }}
-                                            </div>
-                                        @endif
-                                        @if ($explicacaoTexto !== '')
-                                            <p class="qz-opt-explain__text">{{ $explicacaoTexto }}</p>
-                                        @endif
-                                    </div>
-                                @endif
-                            @endif
                         @endforeach
                     </div>
 
