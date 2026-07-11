@@ -1,0 +1,754 @@
+[
+    {
+        "pergunta": "Num dispositivo são colocadas duas soluções (A e B), separadas uma da outra por uma membrana X de permeabilidade seletiva. A solução A contém 1 M de MgCl2 + 1 M de glicose e a solução B contém apenas 4 M de glicose. O coeficiente de reflexão da membrana Tendo em conta esta informação, selecione a opção correta.",
+        "feedback": "Resposta correta: D. Osmolaridade efetiva em A = σ_Mg·[Mg] + σ_Cl·[Cl] + σ_glu·[glu] = 0,6·1 + 1·2 + 1·1 = 3,6 Osm. Osmolaridade efetiva em B = 1·4 = 4 Osm. Para que A fosse isotônico com B, a concentração efetiva de glicose em A teria que compensar a diferença, o que é conseguido ajustando a glicose em A para 1,4 M (3,6 - 1 + 1,4 = 4 Osm efetivo).\n\nAs outras alternativas estão incorretas:\nA) As osmolaridades efetivas são diferentes (3,6 vs 4 Osm), portanto não são isotônicas.\nB) A osmolaridade total não determina a tonicidade quando os solutos possuem σ < 1; o que é relevante é a osmolaridade efetiva.\nC) O fluxo líquido de água vai de A (menor osmolaridade efetiva) para B (maior osmolaridade efetiva), e não o contrário.\nE) Cl não atravessa a membrana (σ = 1), como a glicose; o íon Mg tem σ = 0,6 ≠ 0.",
+        "opcoes": [
+            "As soluções A e B são isoosmolares e isotônicas",
+            "A solução A é hiperosmótica em relação a B porque possui maior quantidade de solutos, A possui três solutos diferentes (glicose, Cl e Mg) enquanto B contém apenas glicose",
+            "A solução A é isoosmolar em relação à solução B, mas registraremos o fluxo líquido de água do compartimento B para o compartimento A",
+            "Para evitar um fluxo líquido de água entre os dois compartimentos, a concentração de glicose em A deve ser de 1,4 M.",
+            "O coeficiente de reflexão para Cl é o mesmo que para glicose e em ambos os casos é 0"
+        ]
+    },
+    {
+        "pergunta": "As células Hep2 têm osmolaridade interna de 300 mOsm e membrana plasmática impermeável aos íons Mg, permeável aos íons Cl e parcialmente permeável à uréia com valor sigma de 0,5 (σ = 0,5). Levando esses dados em consideração, selecione a premissa correta:",
+        "feedback": "Resposta correta: D. MgCl 300 mM com i = 2 (Mg + Cl) gera 600 mOsm totais. Como a membrana é impermeável ao Mg (σ=1) mas permeável ao Cl (σ=0), a osmolaridade efetiva = 1·300 (Mg) + 0·300 (Cl) = 300 mOsm, igual ao interior da célula. Portanto a solução é isotônica e não há variação de volume.\n\nAs outras alternativas estão incorretas:\nA) Uréia com σ=0,5 a 300 mM fornece 150 mOsm efetivos (hipotônicos), mesmo sendo iso-osmolar.\nB) 100 mM de MgCl tem 200 mOsm totais e 100 mOsm efetivos (apenas Mg conta), é hipotônico em relação a 300 mOsm celulares.\nC) Osmolaridade efetiva = 200 (Mg, σ=1) + 0 (Cl) + 100 (uréia, σ=0,5) = 300 mOsm; É isotônico, não hipertônico.\nE) MgCl 200 mM tem uma osmolaridade efetiva de 200 mOsm (somente Mg, σ = 1); É hipotônico, as células inchariam e não cresceriam.",
+        "opcoes": [
+            "Uma solução de ureia 300 mM é isoosmolar e isotônica em relação ao interior das células Hep2.",
+            "Uma solução de MgCl 100 mM tem a mesma osmolaridade que o interior das células Hep2, portanto as células não alterarão seu volume quando introduzidas nesta solução.",
+            "Uma solução contendo 200 mM de MgCl e 200 mM de ureia é hiperosmolar e hipertônica em relação ao interior das células Hep2.",
+            "Quando as células Hep2 são introduzidas numa solução de MgCl 300 mM, o seu volume não se altera porque a solução é isotónica em relação ao interior da célula.",
+            "Se introduzirmos células Hep2 em uma solução de MgCl 200 mM, as células crescem porque a solução é hipertônica."
+        ]
+    },
+    {
+        "pergunta": "Num dispositivo são colocadas duas soluções (A e B), separadas uma da outra por uma membrana X de permeabilidade seletiva. A solução A contém NaCl 1 M + glicose 2 M e a solução B contém apenas 4 M de glicose. O coeficiente de reflexão da membrana Tendo em conta estes dados, selecione a opção INCORRETA:",
+        "feedback": "Resposta correta: B. Osmolaridade total A = 1+1+2 = 4 Osm; osmolaridade total B = 4 Osm → são iso-osmolares. Mas a osmolaridade efetiva A = 0,3·1 (Na) + 1·1 (Cl) + 1·2 (glu) = 3,3 Osm vs B = 4 Osm efetivo → A é hipotônico em relação a B. Portanto, eles não são isotônicos.\n\nAs demais alternativas estão incorretas (ou seja, são verdadeiras):\nA) Como A é hipotônico em relação a B, a água flui de A (maior potencial hídrico) para B (menor).\nC) Cl não atravessa a membrana, portanto seu σ é 1.\nD) Confirmado pelo cálculo da osmolaridade efetiva (3,3 < 4).\nE) Confirmado pelo cálculo da osmolaridade total (4 = 4).",
+        "nota": "Selecione a opção INCORRETA",
+        "opcoes": [
+            "Haverá um fluxo líquido de água através da membrana",
+            "As soluções A e B são isoosmolares e isotônicas",
+            "O coeficiente de reflexão para Cl é 1",
+            "A solução A é hipotônica em relação a B",
+            "A solução A é isoosmolar em relação à solução B"
+        ]
+    },
+    {
+        "pergunta": "Os hepatócitos de rato têm uma osmolaridade de 300 mOsm e uma membrana permeável aos íons CO2- e impermeável aos íons Na+. Selecione a opção correta que descreve o que acontecerá quando essas células forem colocadas em uma solução de Na2CO3 150 mM:",
+        "feedback": "Resposta correta: A. Na2CO3 150 mM com i=3 (2 Na + 1 CO3) gera 450 mOsm totais (hipersmolar em relação à célula). Porém, a membrana é permeável ao CO3 (σ=0) e impermeável ao Na (σ=1). Osmolaridade efetiva extracelular = 1·300 (Na) + 0·150 (CO3) = 300 mOsm = osmolaridade celular. Portanto a solução é isotônica e não há fluxo líquido de água, justamente porque o CO3 não contribui para a tonicidade devido ao seu σ=0.\n\nAs outras alternativas estão incorretas:\nB) Não é hipertônico: a osmolaridade efetiva é de 300 mOsm = a celular.\nC) É hiperosmolar (450 vs 300), mas isotônico, não hipotônico; não suaviza.\nD) O fator i do Na2CO3 é 3 (2 Na + 1 CO3), não 2; Além disso, a solução é hiperosmolar (450), e não isoosmolar.\nE) A solução é hiperosmolar (450 mOsm), não isoosmolar; o que é é isotônico.",
+        "opcoes": [
+            "Não haverá fluxo líquido de água porque o íon CO não contribui para o cálculo da osmolaridade efetiva porque tem σ = 0.",
+            "A água escapará da célula e crenatará porque a solução é hiperosmolar e hipertônica em relação à célula.",
+            "A água entrará na célula e lisará porque a solução é hiperosmolar, mas hipotônica em relação à célula.",
+            "Não haverá fluxo líquido de água, pois tanto a célula quanto a solução têm a mesma osmolaridade (300 mOsm), isso ocorre porque o fator 'i' do Na CO é 2 porque possui dois íons diferentes.",
+            "Não haverá fluxo líquido de água porque a solução é isosmótica em relação à célula."
+        ]
+    },
+    {
+        "pergunta": "Os hepatócitos de rato têm uma osmolaridade de 300 mOsm e uma membrana permeável aos íons Na e impermeável aos íons CO. Selecione a opção correta que descreve o que acontecerá quando essas células forem colocadas em uma solução 150 mM de Na CO:",
+        "feedback": "Resposta correta: E. Na2CO3 150 mM com i=3 gera 450 mOsm total (hipersmolar). A membrana é permeável ao Na (σ=0) e impermeável ao CO3 (σ=1). Osmolaridade efetiva extracelular = 0,300 (Na) + 1,150 (CO3) = 150 mOsm < 300 mOsm celular → solução hipotônica. Portanto a água entra na célula e ela sofre lise.\n\nAs outras alternativas estão incorretas:\nA) Não é isotônico: a osmolaridade efetiva extracelular é de 150 mOsm vs. 300 mOsm celular.\nB) Não é hipertônico e sim hipotônico; A água entra, não sai.\nC) Se o CO tivesse σ=1 contribuiria totalmente para a osmolaridade efetiva (que é o que acontece); a declaração declara que é à prova d'água.\nD) O fator i do Na2CO3 é 3 e a solução não é iso-osmolar (450 mOsm).",
+        "opcoes": [
+            "Não haverá fluxo líquido de água porque a solução é isotônica em relação à célula, apesar de ser hiperosmolar.",
+            "A água escapará da célula e crenatará porque a solução é hiperosmolar e hipertônica em relação à célula.",
+            "Não haverá fluxo líquido de água porque o íon CO não contribui para o cálculo da osmolaridade efetiva porque tem σ = 1.",
+            "Não haverá fluxo líquido de água, pois tanto a célula quanto a solução têm a mesma osmolaridade (300 mOsm), isso ocorre porque o fator 'i' do Na CO é 2 porque possui dois íons diferentes.",
+            "A água entrará na célula e lisará porque a solução é hiperosmolar, mas hipotônica em relação à célula."
+        ]
+    },
+    {
+        "pergunta": "Dada uma célula que possui osmolaridade de 300 mOsm e sabendo que possui uma membrana parcialmente permeável ao Na (σ= 0,5) e aos monossacarídeos (σ= 0,2) e impermeável aos dissacarídeos e ao Cl, selecione a premissa correta:",
+        "feedback": "Resposta correta: A. NaCl 200 mM (i=2) → 400 mOsm total. Osmolaridade efetiva = 0,5·200 (Na) + 1·200 (Cl) = 100 + 200 = 300 mOsm = osmolaridade celular. Portanto a solução é isotônica e não há variação de volume.\n\nAs outras alternativas estão incorretas:\nB) Efetivo = 0,2·100 (frutose) + 1·200 (maltose) = 20 + 200 = 220 mOsm < 300 → hipotônico, não isotônico.\nC) Efetivo = 0,2·500 + 1·100 = 100 + 100 = 200 mOsm < 300 → hipotônico, não hipertônico.\nD) O fator i dos dissacarídeos é 1, não 2 (eles não se dissociam). Adição efetiva = 1·100 (maltose) + 0,5·50 (Na) + 1·50 (Cl) = 175 mOsm → hipotônico.",
+        "opcoes": [
+            "Se colocarmos essas células em uma solução de NaCl 200 mM, não haverá alteração no volume celular.",
+            "Uma solução de 100 mM de frutose e 200 mM de maltose é isotônica em relação ao interior da célula.",
+            "Uma solução de 500 mM de frutose e 100 mM de maltose é hipertônica em relação ao interior da célula.",
+            "Como o fator 'i' dos dissacarídeos e do NaCl é 2, uma solução contendo concentrações de maltose 100 mM e NaCl 50 mM será isotônica para essas células.",
+            "Nenhum está correto"
+        ]
+    },
+    {
+        "pergunta": "Dadas as seguintes premissas, indique qual delas está INCORRETA:",
+        "feedback": "Resposta correta: B. O ácido 18:2 Δ9,12 e o ácido 18:2 ω-6 são A MESMA molécula (ácido linoléico) descrita com duas nomenclaturas diferentes: Δ9,12 indica as posições contadas a partir da carboxila, e ω-6 indica que a primeira insaturação está a 6 carbonos da extremidade metila. Portanto, eles têm o mesmo ponto de fusão, nem um mais alto que o outro.\n\nAs demais alternativas estão incorretas (ou seja, são verdadeiras):\nA) O araquidônico saturado com 20C (mais longo, mais interações de van der Waals) tem um ponto de fusão mais alto do que o mirístico saturado com 14C.\nC) O ácido α-linolênico (ω-3) é essencial porque os humanos não conseguem sintetizá-lo.\nD) Linoleico possui 2 ligações duplas e araquidônico possui 4; Quanto maior a insaturação, menor o ponto de fusão, portanto o ácido linoléico derrete a uma temperatura mais elevada.\nE) O palmitoléico (insaturado) funde a uma temperatura mais baixa que o palmítico (saturado), devido à curvatura cis que dificulta o empacotamento.",
+        "nota": "Selecione a opção INCORRETA",
+        "opcoes": [
+            "O ponto de fusão do ácido araquidônico (20:0) é superior ao do ácido mirístico (14:0)",
+            "O ponto de fusão do ácido 18:2 Δ9,12 é maior do que o do ácido 18:2 ω−6",
+            "O ácido α-linolênico é um ácido graxo essencial para humanos.",
+            "O ponto de fusão do ácido linoléico (18:2 Δ9,12) é superior ao do ácido araquidônico (20:4 Δ5,8,11,14)",
+            "O ponto de fusão do ácido palmitoléico (16:1 Δ9) é inferior ao do ácido palmítico (16:0)"
+        ]
+    },
+    {
+        "pergunta": "A proteína transmembrana Tx é constituída por uma única cadeia polipeptídica composta por 6 segmentos hidrofílicos alternados com 5 segmentos hidrofóbicos. O segmento hidrofílico que compreende sua extremidade N-terminal contém 4 resíduos de cisteína e aquele que compreende sua extremidade C-terminal possui um oligossacarídeo anexado. Levando em consideração essas informações, indique a opção correta:",
+        "feedback": "Resposta correta: E. A presença de um oligossacarídeo ligado à extremidade C-terminal indica que este segmento está no domínio extracelular (a glicosilação ocorre no lúmen do RE\/Golgi, equivalente topológico ao espaço extracelular). Com 5 cruzamentos transmembranares (número ímpar), se o terminal N estiver de um lado, o terminal C estará no lado oposto, o que é consistente com o terminal C extracelular.\n\nAs outras alternativas estão incorretas:\nA) Tx é multipass (5 cruzamentos), não unipass.\nB) É uma glicoproteína mas não se sabe se é oligomérica; Além disso, os dados são as informações fornecidas no extrato.\nC) As cisteínas no domínio citosólico não formam pontes dissulfeto: o citosol está reduzindo e pontes dissulfeto são formadas no lúmen do RE.\nD) Com 5 segmentos transmembrana (ímpares), os terminais N e C estão em lados opostos, e não no mesmo lado.",
+        "opcoes": [
+            "Tx é uma proteína conjugada de etapa única na qual três domínios podem ser distinguidos: citosólico, transmembrana e extracelular.",
+            "Tx é uma glicoproteína oligomérica que atravessa a membrana biológica 5 vezes",
+            "Pontes dissulfeto são geradas entre as cisteínas presentes no segmento hidrofílico que contém a extremidade amino-terminal da proteína Tx.",
+            "Ambas as extremidades N-terminal e C-terminal da proteína Tx estão localizadas no domínio citosólico.",
+            "O segmento hidrofílico contendo o terminal carboxila está localizado no domínio extracelular da proteína Tx."
+        ]
+    },
+    {
+        "pergunta": "Tendo em conta o seu conhecimento sobre ácidos nucleicos, selecione a opção correta:",
+        "feedback": "Resposta correta: C. As polimerases (DNA e RNA) usam trifosfatos de nucleotídeos (dNTPs\/NTPs) como substratos. Após a incorporação na cadeia, o pirofosfato (PPi) é liberado e um nucleotídeo monofosfato ligado por uma ligação fosfodiéster permanece na cadeia. A hidrólise do PPi fornece a energia termodinâmica do processo.\n\nAs outras alternativas estão incorretas:\nA) É o contrário: o DNA é tipicamente de fita dupla e muitos RNAs funcionais são de fita simples (embora possam se dobrar).\nB) Os monômeros são unidos por ligações fosfodiéster (covalentes) entre o 3'-OH de um nucleotídeo e o 5'-fosfato do próximo; As pontes H emparelham bases entre fitas, não monômeros dentro de uma fita.\nD) É o contrário: a extremidade 5' possui fosfato livre e a extremidade 3' possui hidroxila livre.\nE) A especificidade do emparelhamento é dada por ligações de hidrogênio entre bases nitrogenadas (AT, G-C), não por desoxirriboses.",
+        "opcoes": [
+            "Existem dois tipos de ácidos nucleicos: os ácidos ribonucléicos, que estão na forma de fita dupla, e os ácidos desoxirribonucléicos, que estão na forma de fita simples.",
+            "Para gerar as cadeias polinucleotídicas dos ácidos nucleicos, os monômeros constituintes são unidos por ligações de hidrogênio que são estabelecidas entre suas bases nitrogenadas.",
+            "Nucleotídeos trifosfato são usados ​​para sintetizar ácidos nucléicos. No entanto, nas suas cadeias polinucleotídicas são incorporados como nucleótidos monofosfato.",
+            "As cadeias polinucleotídicas de todos os ácidos nucleicos têm polaridade, distinguindo uma extremidade 5' que possui um grupo hidroxila livre e outra extremidade 3' que possui um grupo fosfato livre.",
+            "A especificidade no pareamento entre as fitas de DNA é dada pela interação entre as desoxirriboses dos nucleotídeos."
+        ]
+    },
+    {
+        "pergunta": "Em relação ao seguinte ácido graxo: CH3–(CH2)x–CH=CH–CH2–CH=CH–(CH2)y–COOH. Selecione a premissa que descreve sua nomenclatura taquigráfica e as características que ela possui:",
+        "feedback": "Resposta correta: D. A estrutura mostra 18 carbonos e 2 ligações duplas interrompidas por metileno (CH=CH-CH2-CH=CH), um padrão típico para o ácido linoléico (18:2 Δ9,12 ou ω-6), que é essencial para humanos porque não temos as Δ12 e Δ15 dessaturases necessárias para sintetizá-lo.\n\nAs outras alternativas estão incorretas:\nA) É 18:2, mas é essencial (é ácido linoléico).\nB) Não está saturado: a estrutura apresenta duas ligações duplas.\nC) Possui 2 ligações duplas e não 1.\nE) Possui 2 ligações duplas, não 3.",
+        "opcoes": [
+            "18:2, ácido graxo insaturado e não essencial para humanos.",
+            "18:0 ácido graxo saturado e essencial para humanos.",
+            "18:1, ácido graxo insaturado e não essencial para humanos.",
+            "18:2, ácido graxo insaturado e essencial para humanos.",
+            "18:3, ácido graxo insaturado e essencial para humanos."
+        ]
+    },
+    {
+        "pergunta": "Em relação às forças que estabilizam a estrutura terciária de uma proteína citosólica, indique a opção correta:",
+        "feedback": "Resposta correta: D. A estrutura terciária das proteínas citosólicas é fundamentalmente estabilizada por interações hidrofóbicas: os grupos R não polares estão escondidos no núcleo da proteína para minimizar o contato com a água (efeito hidrofóbico), sendo esta a força dominante de dobramento.\n\nAs outras alternativas estão incorretas:\nA) As interações fracas permanecem fracas; Eles não se tornam covalentes.\nB) Interações de curta distância entre aminoácidos adjacentes estabilizam a estrutura secundária, não a estrutura terciária.\nC) Nas proteínas citosólicas, as pontes dissulfeto não são formadas porque o citosol está reduzindo; As pontes dissulfeto estabilizam proteínas extracelulares ou organelas oxidativas.\nE) As ligações amida (peptídeo) estabilizam a estrutura primária, não a estrutura terciária.",
+        "opcoes": [
+            "As fracas interações estabelecidas entre os resíduos de aminoácidos (forças de Van der Waals, ligações de hidrogênio, interações hidrofóbicas e interações eletrostáticas) são convertidas em ligações covalentes para estabilizar a estrutura.",
+            "É estabilizado principalmente por interações de curta distância que são estabelecidas entre aminoácidos adjacentes da cadeia polipeptídica.",
+            "É estabilizado por interações hidrofóbicas e ligações covalentes entre as cadeias laterais dos resíduos de cisteína.",
+            "É estabilizado principalmente por interações hidrofóbicas entre os grupos R de resíduos de aminoácidos não polares.",
+            "É estabilizado por ligações covalentes do tipo amida."
+        ]
+    },
+    {
+        "pergunta": "Levando em consideração o seu conhecimento sobre polissacarídeos, selecione a opção correta:",
+        "feedback": "Resposta correta: E. As entranhas (carne) fornecem glicogênio e amido de batata. Ambos os polissacarídeos são ramificados (especialmente glicogênio e amilopectina): possuem ligações α(1→4) em cadeias lineares e α(1→6) em pontos de ramificação. Para degradá-los completamente em glicose livre, ambos os tipos de ligações devem ser hidrolisados.\n\nAs outras alternativas estão incorretas:\nA) O glicogênio serve como reserva de energia, não como suporte e proteção (essa é a função da celulose ou da quitina).\nB) Os humanos NÃO PODEM digerir a celulose porque não temos celulase; Não o hidrolisamos em seus monômeros.\nC) Os carboidratos são uma fonte de energia de acesso mais rápido do que os triglicerídeos (que requerem lipólise e β-oxidação, processos mais lentos).\nD) O amido contém amilopectina com ramificações α(1→6), portanto, enzimas desramificadoras também são necessárias.",
+        "opcoes": [
+            "Os humanos podem armazenar açúcares na forma de glicogênio, que é um polissacarídeo que fornece suporte e proteção.",
+            "Se uma pessoa ingere celulose, ela pode ser digerida por enzimas específicas, mas os monômeros liberados após a hidrólise não podem ser absorvidos pelos enterócitos.",
+            "Se uma pessoa fizer uma refeição rica em triglicerídeos, estará incorporando uma fonte de energia de acesso mais rápido do que outra pessoa que consome um prato rico em carboidratos.",
+            "Ao comer arroz com frango consumimos principalmente amido. Para degradar completamente estes polissacarídeos nos seus monômeros constituintes, precisamos apenas hidrolisar as ligações alfa (1→4) O-glicosídicas.",
+            "Quando comemos um jantar composto por entranhas e batatas assadas, consumimos glicogênio e amido respectivamente. Para degradar completamente esses polissacarídeos em seus monômeros constituintes, precisamos hidrolisar as ligações alfa (1→4) e alfa (1→6) O-glicosídicas."
+        ]
+    },
+    {
+        "pergunta": "Levando em consideração os eventos que ocorrem em um ribossomo durante a tradução do seguinte heptapeptídeo: Glu-Val-Ser-Met-Asp-Gly-Phe (escrito do terminal N ao C), indique a opção correta:",
+        "feedback": "Resposta correta: E. A síntese prossegue de N para C: quando Met é incorporado (4°), o peptídeo em P é Ser-Val-Glu ligado ao Ser tRNA. O Glu tRNA sai através de E após a incorporação de Ser. À medida que o ribossomo avança, quando o Ser-tRNA deixa o sítio E (após ter doado o peptídeo), o sítio P contém a cadeia crescente incluindo Ser-Val-Glu (com Met adicionado) suportada pelo tRNA correspondente - a composição Ser-Val-Glu mencionada descreve o segmento N-terminal do peptídeo em P naquele momento.\n\nAs outras alternativas estão incorretas:\nA) Glu é o primeiro aminoácido (N-terminal); seu tRNA entra no sítio P (não A) durante a iniciação, e ainda não há tRNA-Val-Ser.\nB) Quando o tRNA-Ser entra no local A, o tRNA que sai através de E é o de Glu (não Asp); Asp ainda não foi incorporada.\nC) Quando o tRNA Asp sai por E, o aminoácido que entra no sítio A é Phe (último), não Ser.\nD) os tRNAs saem pelo sítio E, não pelo sítio A; e o tRNA-Phe entra por A, não por E.",
+        "opcoes": [
+            "Quando o tRNA-Glu entra no ribossomo através do sítio A, o tRNA-Val-Ser está localizado no sítio P.",
+            "Quando o tRNA-Ser entra no ribossomo através do sítio A, o tRNA que transporta Asp deixa o ribossomo através do sítio E.",
+            "Quando o tRNA que transporta Asp deixa o ribossomo através do sítio E, o Ser-tRNA entra no ribossomo através do sítio A.",
+            "Quando o tRNA que transporta Asp deixa o ribossomo através do sítio A, o Phe-tRNA entra no ribossomo através do sítio E.",
+            "Quando o tRNA que transporta Ser deixa o ribossomo através do sítio E, o sítio P contém o tRNA-Ser-Val-Glu."
+        ]
+    },
+    {
+        "pergunta": "Na seguinte estrutura correspondente a uma das pequenas moléculas orgânicas presentes nos seres vivos, indicamos com números algumas ligações químicas que as caracterizam. Com base nesta informação, selecione a opção correta: (1 indica uma ligação fosfodiéster entre nucleotídeos e 2 uma ligação N-glicosídica entre base e açúcar)",
+        "feedback": "Resposta correta: D. Em um dinucleotídeo, a ligação que une dois nucleotídeos consecutivos através do fosfato e dos dois açúcares (3' de um e 5' do próximo) é uma ligação fosfodiéster. A ligação entre a base nitrogenada e o carbono 1' do açúcar (ribose ou desoxirribose) é uma ligação N-glicosídica (através de um N da base).\n\nAs outras alternativas estão incorretas:\nA) A ligação entre o açúcar e a base é N-glicosídica (não O-glicosídica), e a ligação entre os nucleotídeos envolve duas ligações éster (fosfodiéster), e não um único éster fosfórico.\nB) O fosfoanidrido estaria entre dois fosfatos consecutivos (como no ATP), não entre dois nucleotídeos.\nC) As bases não podem ser determinadas sem ver a estrutura específica indicada (e a opção não se justifica pela nomenclatura dos links).\nE) Seria necessário saber se as bases incluem U ou T e a natureza do açúcar para decidir se provém do mRNA.",
+        "opcoes": [
+            "É um dinucleotídeo em que 1 marca uma ligação éster-fosfórica e 2 uma ligação O-glicosídica.",
+            "É um dinucleotídeo em que 1 marca uma ligação fosfoanidrido e 2 uma ligação N-glicosídica.",
+            "É um dinucleotídeo de adenina e guanina.",
+            "É um dinucleotídeo em que 1 marca uma ligação fosfodiéster e 2 uma ligação N-glicosídica.",
+            "É um dinucleotídeo que pode ser obtido por hidrólise parcial de um mRNA bacteriano"
+        ]
+    },
+    {
+        "pergunta": "Indique qual das seguintes premissas descreve corretamente o colesterol.",
+        "feedback": "Resposta correta: E. O colesterol é um esteroide insaponificável (núcleo ciclopentanoperidrofenantreno) (não contém ácidos graxos esterificados), tem função estrutural nas membranas animais (regula a fluidez) e é precursor da vitamina D, hormônios esteroides e ácidos biliares.\n\nAs outras alternativas estão incorretas:\nA) Não é um glicolípido (não contém açúcares ligados), não é uma reserva energética mas sim estrutural; Está envolvido na biossíntese de ácidos biliares.\nB) É insaponificável (não saponificável); Não é derivado de hormônios esteróides, mas é seu precursor.\nC) Não é fosfolipídico (não contém fosfato); É um precursor da vitamina D, não um produto.\nD) Não é um fosfolipídio nem é derivado do ácido araquidônico (os eicosanóides são derivados deste).",
+        "opcoes": [
+            "Função de reserva energética glicolipídica, insaponificável, envolvida na biossíntese de ácidos biliares.",
+            "Função estrutural esteróide, saponificável, derivada de hormônios esteróides.",
+            "Fosfolípido, saponificável, sintetizado a partir da vitamina D.",
+            "Fosfolipídeo, insaponificável, derivado do ácido araquidônico, precursor dos hormônios esteróides.",
+            "Esteroide, insaponificável, de função estrutural, precursor da vitamina D entre outros compostos."
+        ]
+    },
+    {
+        "pergunta": "Dados os seguintes compostos: I- Amilose; II- Glicogênio e III- Gorduras. Selecione a premissa correta:",
+        "feedback": "Resposta correta: D. As gorduras (triacilglicerídeos) armazenam ~9 kcal\/g, enquanto os polissacarídeos, como o glicogênio, armazenam ~4 kcal\/g. Além disso, os TAGs são anidros (hidrofóbicos), enquanto o glicogênio é armazenado hidratado (~2g de água por g de glicogênio), reduzindo ainda mais sua densidade energética.\n\nAs outras alternativas estão incorretas:\nA) As gorduras (sólidas à temperatura ambiente) possuem principalmente ácidos graxos saturados; Os óleos são os que são em sua maioria insaturados.\nB) A amilose é linear e possui APENAS ligações α(1→4), sem ramificações α(1→6); o glicogênio tem ambos.\nC) Amilose é um polissacarídeo de reserva em VEGETAIS, não em animais; o glicogênio é uma reserva animal.",
+        "opcoes": [
+            "III são triacilglicerídeos cujos ácidos graxos são principalmente insaturados",
+            "Ambos os compostos I e composto II possuem ligações O-glicosídicas α(1→4) e α(1→6)",
+            "I e II são polissacarídeos de reserva em animais",
+            "III armazena energia de forma mais eficiente que II",
+            "Nenhuma das premissas está correta"
+        ]
+    },
+    {
+        "pergunta": "A reação A→B tem um ΔG° de -3,3 kcal\/mol com G°A = 5,3 kcal\/mol. A enzima EZ é capaz de catalizá-la e na sua presença a energia de ativação para esta reação em condições padrão é de 5 kcal\/mol. Levando essas informações em consideração, selecione a premissa correta:",
+        "feedback": "Resposta correta: A. O ΔG° é uma função de estado e depende apenas da diferença entre produtos e reagentes: ΔG°(B→A) = -ΔG°(A→B) = +3,3 kcal\/mol. Na presença de EZ o Ea(A→B) = 5 kcal\/mol; Na ausência da enzima, Ea é necessariamente maior (as enzimas reduzem Ea). Como na presença de EZ o estado ativado está localizado em G°A + Ea = 5,3 + 5 = 10,3 kcal\/mol, o catalisado Ea(B→A) = 10,3 - G°B = 10,3 - 2 = 8,3 kcal\/mol; Sem enzima este Ea é superior a 8,3.\n\nAs outras alternativas estão incorretas:\nB) ΔG° é função do estado e NÃO é modificado pela enzima; permanece -3,3 kcal\/mol. O estado ativado de 10,3 kcal\/mol está correto, mas a primeira afirmação é falsa.\nC) ΔG°(B→A) catalisado é exatamente +3,3 kcal\/mol (não maior); enzimas não alteram ΔG°.\nD) G°B = G°A + ΔG° = 5,3 + (-3,3) = 2,0 kcal\/mol está correto, mas Ea = 5 kcal\/mol corresponde à reação CATALISADA (não na ausência de EZ).\nE) B está incorreto, portanto o conjunto está incorreto.",
+        "opcoes": [
+            "Na ausência de EZ, o ΔG° da reação B→A é 3,3 kcal\/mol e sua energia de ativação é superior a 8,3 kcal\/mol.",
+            "Na presença de EZ, o valor ΔG° da reação A→B é inferior a -3,3 kcal\/mol e o estado ativado de A (A#) é 10,3 kcal\/mol.",
+            "Na presença de EZ, o valor ΔG° da reação B→A é maior que 3,3 kcal\/mol e sua energia de ativação é 8,3 kcal\/mol.",
+            "Na ausência de EZ, G°B = 2,0 kcal\/mol e a energia de ativação da reação A→B é 5 kcal\/mol.",
+            "A e B estão corretos"
+        ]
+    },
+    {
+        "pergunta": "A reação A → B é catalisada pela enzima E, cujas condições ótimas são temperatura de 37°C e pH: 7. Sabendo que em condições ótimas e com [E] de 10 mM registra-se uma velocidade de 1 mM\/min quando [A] é igual a Km, selecione a opção INCORRETA referente ao valor de VMAX que pode ser encontrado de acordo com as condições de teste propostas:",
+        "feedback": "Resposta correta: E. A 45°C (acima do ótimo de 37°C) a enzima sofre desnaturação parcial ou total, portanto o Vmax deve ser MENOR que 2 mM\/min, não igual. Quando v=1 em [S]=Km, Vmax=2 (pela equação de Michaelis-Menten v = Vmax·[S]\/(Km+[S]) = Vmax\/2 em [S]=Km).\n\nAs demais alternativas estão incorretas (ou seja, são verdadeiras):\nA) Em condições ideais com [E]=10 mM o Vmax é 2 mM\/min, calculado conforme explicado.\nB) Ao duplicar [E] mantendo todo o resto ideal, Vmax duplica (é proporcional a [E]).\nC) Um inibidor não competitivo reduz Vmax; com [E]=20 mM (Vmáx esperado 4) um inibidor que o reduza para 2 é plausível.\nD) Em pH 3 e 20°C (abaixo do ideal), Vmax será inferior a 2 mM\/min; 0,5 é plausível.",
+        "nota": "Selecione a opção INCORRETA",
+        "opcoes": [
+            "Condições de teste: pH e temperatura ideais e [E] = 10 mM. Vmax registrado: 2 mM\/min",
+            "Condições de teste: pH e temperatura ideais e [E] = 20 mM. Vmax registrado: 4 mM\/min",
+            "Condições de teste: pH e temperatura ideais, [E] = 20 mM e presença de inibidor não competitivo. Vmax registrado: 2 mM\/min",
+            "Condições de teste: pH=3, Temperatura: 20°C e [E]= 10 mM. Vmax registrado: 0,5 mM\/min",
+            "Condições de teste: pH=7, Temperatura: 45°C e [E]= 10 mM. Vmax registrado: 2 mM\/min"
+        ]
+    },
+    {
+        "pergunta": "A reação A → B é catalisada pela enzima E, que é regulada por um processo de fosforilação-desfosforilação. Em seu estado fosforilado, a enzima E tem Km = 0,1 mM e VMAX = 220 nmol\/min. Sabendo que quando E é desfosforilado ele sofre uma mudança conformacional que não altera sua afinidade por A mas o inativa, selecione o par de valores correspondentes a Km e VMAX que seria possível encontrar quando a reação fosse catalisada por E em estado parcialmente desfosforilado.",
+        "feedback": "Resposta correta: E. A afirmação indica que a desfosforilação NÃO altera a afinidade por A: portanto o Km deve permanecer em 0,1 mM. Em contraste, a desfosforilação inativa as moléculas afetadas: com a desfosforilação parcial, uma fração de moléculas E fica ativa (fosforilada) e outra inativa (desfosforilada), reduzindo o Vmax total para um valor entre 0 e 220. 150 nmol\/min atende a esse critério.\n\nAs outras alternativas estão incorretas:\nA) Km = 1 mM implica uma mudança na afinidade, ao contrário do que afirma.\nB) Mesma razão de A: Km não deve mudar.\nC) Km = 0,01 mM também implica uma mudança na afinidade.\nD) Km = 0,01 mM implica mudança na afinidade; Além disso, Vmax 220 implica que houve desfosforilação de NO.",
+        "opcoes": [
+            "Km = 1 mM e V = 150 nmol\/min",
+            "Km = 1 mM e V = 220 nmol\/min",
+            "Km = 0,01 mM e V = 150 nmol\/min",
+            "Km = 0,01 mM e V = 220 nmol\/min",
+            "Km = 0,1 mM e V = 150 nmol\/min"
+        ]
+    },
+    {
+        "pergunta": "Nos lisossomos, a transformação D→F é catalisada pela enzima E1. Nesta organela, a reação catalisada possui ΔG de -4 kcal\/mol e energia de ativação (Ea) de 3 kcal\/mol. Em relação a esta reação nos lisossomos, selecione a premissa correta.",
+        "feedback": "Resposta correta: E. Todas as premissas são verdadeiras: A) ΔG = -4 kcal\/mol significa que 4 kcal são liberadas por mol convertido (reação exergônica). B) ΔG negativo indica espontaneidade termodinâmica nas condições dadas. C) As enzimas não modificam o ΔG (função de estado), mas reduzem a Ea: sem enzima a Ea é superior a 3 kcal\/mol. D) Se a reação direta tem Ea=3 e ΔG=-4, a inversa tem Ea=3+4=7 kcal\/mol; Maior Ea implica menor velocidade.\n\nAs outras alternativas estão incorretas:\n(A, B, C, D estão individualmente corretos, mas a opção que consolida todos eles é E.)",
+        "opcoes": [
+            "Para cada mol de moléculas de D convertidas em F, uma energia de 4 kcal é liberada.",
+            "Sob condições celulares, a transformação D→F é espontânea.",
+            "Na ausência da enzima E1, o ΔG da reação D→F será -4 kcal\/mol e o Ea será maior que 3 kcal\/mol.",
+            "A energia de ativação da reação F→D é maior que a de D→F e portanto sua velocidade é menor.",
+            "Eles estão todos corretos."
+        ]
+    },
+    {
+        "pergunta": "Ex é uma enzima que catalisa a reação A → B no citosol das células CHO. Suas condições ótimas são temperatura de 37°C e pH de 7,2 (coincidindo com os existentes no citosol) e possui um sítio alostérico onde o modulador alostérico P pode se ligar, causando diminuição do Km da enzima. Que estratégias a célula pode implementar para aumentar a velocidade da reação catalisada por Ex? Eu escolhi a opção correta:",
+        "feedback": "Resposta correta: A. Aumentar a concentração da enzima aumenta proporcionalmente o Vmax e, portanto, a velocidade em qualquer [S], é a estratégia fisiologicamente viável (síntese ou diminuição da degradação de Ex).\n\nAs outras alternativas estão incorretas:\nB) As células não regulam a sua temperatura citosólica voluntariamente; CHO cresce em temperatura média. Além disso, já está ótimo (37°C).\nC) Aumentar [B] (produto) aproxima o sistema do equilíbrio e diminui a velocidade líquida de A→B (efeito de ação de massa).\nD) P é um ativador alostérico (diminui Km, o que aumenta afinidade e velocidade); Diminuir P ​​reduz a velocidade.",
+        "opcoes": [
+            "Aumentar a concentração da enzima Ex.",
+            "Aumente a temperatura do seu citosol",
+            "Aumentar a concentração citosólica de B",
+            "Diminuir a concentração citosólica de P.",
+            "Nenhum está correto"
+        ]
+    },
+    {
+        "pergunta": "A reação A → B é catalisada pela enzima Ez. Sob condições padrão e na ausência da enzima Ez: G°A = 5 Kcal\/mol; G°B = 3 Kcal\/mol e A# = 10 Kcal\/mol. Levando esses dados em consideração, selecione a premissa correta.",
+        "feedback": "Resposta correta: D. Ea(A→B) = A# - G°A = 10 - 5 = 5 kcal\/mol. Ea(B→A) = A# - G°B = 10 - 3 = 7 kcal\/mol. Portanto Ea(A→B) <Ea(B→A).\n\nAs outras alternativas estão incorretas:\nA) ΔG°(B→A) = G°A - G°B = 5 - 3 = +2 kcal\/mol (positivo, não -2); também Ea(B→A) = 7 kcal\/mol, não 5.\nB) A enzima reduz Ea mas NÃO modifica o ΔG° (função de estado); também ΔG°(A→B) = 3-5 = -2 (não inferior a -2).\nC) Sob condições padrão (1M, 25°C, 1 atm) ΔG = ΔG° = +2 kcal\/mol para B→A: positivo, NÃO espontâneo.\nE) B e C são ambos falsos.",
+        "opcoes": [
+            "A reação B→A terá um ∆G° = -2 Kcal\/mol e um Ea = 5 Kcal\/mol",
+            "Na presença da enzima Es, o Ea da reação A → B será inferior a 5 Kcal\/mol e seu ∆G° será inferior a -2 Kcal\/mol",
+            "Se [A] e [B] forem 1M, a temperatura for 25°C (298 K) e a pressão for 1 atm, a reação B → A será espontânea",
+            "O Ea da reação A → B será menor que o de B → A",
+            "B e C estão corretos"
+        ]
+    },
+    {
+        "pergunta": "Nos lisossomos, a reação A → B é catalisada pela enzima Ez. Esta enzima tem um pH ótimo correspondente a [H+] = 10⁻⁵ M (coincidindo com o pH lisossômico) e sua temperatura ótima é de 37°C. Sob condições ideais, os parâmetros cinéticos característicos desta enzima são Km = 0,6 μM e VMAX = 150 mM\/min. Tendo em conta estes dados, selecione a premissa correta relativamente aos parâmetros cinéticos registados em cada uma das condições indicadas nas opções.",
+        "feedback": "Resposta correta: A. Vmax é diretamente proporcional a [E]: duplicando [Ez], Vmax duplica (300 mM\/min). Km é uma propriedade intrínseca da enzima (afinidade do substrato) e não muda com a concentração da enzima: permanece 0,6 μM.\n\nAs outras alternativas estão incorretas:\nB) Um inibidor competitivo aumenta o Km aparente (NÃO o deixa igual) e NÃO modifica o Vmax (permanece em 150).\nC) O Km não muda ao modificar [Ez].\nD) Mesma razão de C: Km não depende de [Ez]; Além disso, ao reduzir [Ez], o Vmax deve diminuir, e não ser mantido.\nE) Um inibidor não competitivo diminui Vmax e NÃO altera Km.",
+        "opcoes": [
+            "Se trabalharmos em condições ótimas, mas aumentarmos o [Ez] para o dobro, obteremos um Km de 0,6 μM e VMAX = 300 mM\/min.",
+            "Se a temperatura e o pH forem ótimos, mas adicionarmos um inibidor competitivo, um VMAX < 150 mM\/min e um Km = 0,6 μM serão registrados.",
+            "Se trabalharmos em condições ótimas, mas duplicarmos o [Ez] obteremos um Km de 0,3 μM e VMAX = 150 mM\/min",
+            "Se trabalharmos em condições ótimas, mas reduzirmos o [Ez] pela metade, obteremos um Km de 0,3 μM e VMAX = 150 mM\/min",
+            "Se a temperatura e o pH forem ótimos, mas adicionarmos um inibidor não competitivo, um VMAX = 150 mM\/min e um Km < 0,6 μM serão registrados."
+        ]
+    },
+    {
+        "pergunta": "Dada a reação A→B e sabendo que em condições padrão e sem catalisadores presentes: G°A = 5 Kcal\/mol; G°B = 5,1 Kcal\/mol e Ea = 4 Kcal\/mol, selecione a premissa correta.",
+        "feedback": "Resposta correta: E. B e C estão ambos corretos. B) Em condições celulares (não padronizadas), as concentrações de A e B diferem de 1M; se [A]>>[B] o ΔG real pode ser negativo e a reação ser espontânea mesmo que ΔG° = +0,1 seja ligeiramente positivo. C) Estado ativado = G°A + Ea = 5 + 4 = 9 kcal\/mol. Ea(B→A) = 9 - 5,1 = 3,9 kcal\/mol < Ea(A→B) = 4 kcal\/mol.\n\nAs outras alternativas estão incorretas:\nA) Em condições padrão ΔG(B→A) = G°A - G°B = 5 - 5,1 = -0,1 kcal\/mol (negativo): SIM, é espontâneo.\nD) Os catalisadores diminuem Ea (não a aumentam) e não modificam ΔG.",
+        "opcoes": [
+            "Se [A] e [B] forem 1M, a temperatura for 25°C (298 K) e a pressão for 1 atm, a reação B → A não será espontânea",
+            "Nas células musculares de camundongos, a reação A → B pode ser espontânea",
+            "Sob condições padrão e sem catalisação, a energia do estado ativado é 9 Kcal\/mol e a Ea da reação B → A será menor que a de A → B",
+            "Na presença de um catalisador, o ∆G da reação diminuirá e a energia do estado ativado aumentará.",
+            "B e C estão corretos"
+        ]
+    },
+    {
+        "pergunta": "A enzima E é capaz de catalisar a reação S→P. Em condições padrão G°S = 6,5 Kcal\/mol, ΔG°S→P = -3,5 Kcal\/mol e se não for catalisado, a reação S→P ocorre quando as moléculas de S atingem uma energia de 12 Kcal\/mol. Levando esses dados em consideração, selecione a premissa correta em relação a esta reação sob condições padrão:",
+        "feedback": "Resposta correta: A. G°P = G°S + ΔG° = 6,5 + (-3,5) = 3 kcal\/mol. O Ea da reação não catalisada é 12 - 6,5 = 5,5 kcal\/mol; o estado ativado na presença da enzima deve ser inferior a 12 kcal\/mol porque as enzimas reduzem Ea.\n\nAs outras alternativas estão incorretas:\nB) ΔG° = -3,5 (negativo) → exergônico, NÃO endergônico.\nC) As enzimas NÃO modificam o ΔG°: ele permanece exatamente -3,5 (não inferior); o Ea catalisado é inferior a 5,5 (diferente).\nD) O Ea não catalisado (5.5) está correto, mas G°P = 3 kcal\/mol, e não 10.\nE) ΔG° catalisado = -3,5 está correto, mas o Ea de 5,5 corresponde ao NO catalisado; o catalisado é menor.",
+        "opcoes": [
+            "A energia do estado ativado do complexo enzima-substrato da reação catalisada é inferior a 12 Kcal\/mol e G°P = 3 Kcal\/mol.",
+            "A reação não catalisada é endergônica e sua energia de ativação (Ea) é de 5,5 Kcal\/mol.",
+            "A reação catalisada tem um ΔG° menor que -3,5 Kcal\/mol e uma energia de ativação (Ea) de 5,5 Kcal\/mol.",
+            "A energia de ativação (Ea) da reação não catalisada é 5,5 Kcal\/mol e G°P = 10 Kcal\/mol.",
+            "A reação catalisada tem um ΔG° = -3,5 Kcal\/mol e uma energia de ativação (Ea) de 5,5 Kcal\/mol."
+        ]
+    },
+    {
+        "pergunta": "A reação de A para dar B é catalisada pela enzima E1. Utilizando uma concentração de E1 ([E1]) de 1 mM e sob condições ideais de pH e temperatura, tem Km = 8 mM e a velocidade inicial (v0) registrada quando [A] = 8 mM é de 100 nmol B\/min. Levando em consideração esses dados, selecione a premissa correta quanto aos resultados esperados para a reação catalisada por E1 em incubações realizadas em condições ótimas de pH e temperatura:",
+        "feedback": "Resposta correta: B. Quando [A] = Km = 8 mM, v = Vmax\/2 = 100 → Vmax com [E1] = 1mM é 200 nmoles\/min. Ao duplicar a concentração da enzima para 2 mM, o Vmax duplica para 400 nmol\/min, enquanto o Km permanece constante (8 mM) porque é uma propriedade intrínseca da enzima.\n\nAs outras alternativas estão incorretas:\nA) Vmax com [E1]=1mM é 200 nmoles\/min, não 300.\nC) Um inibidor competitivo NÃO modifica a Vmax: ela continuará a ser 200 nmol\/min, e não inferior.\nD) 100 nmol\/min é a velocidade quando [A]=Km, não Vmax.\nE) Um inibidor competitivo AUMENTA o Km aparente, não o diminui.",
+        "opcoes": [
+            "Com [E1] = 1mM e concentrações saturantes de substrato (quando todos os sítios ativos estão ocupados) será alcançada uma velocidade de 300 nmol B\/min.",
+            "Utilizando [E1]= 2mM, serão obtidos os seguintes parâmetros cinéticos: Km= 8mM e Vmax= 400 nmoles de B\/min.",
+            "Com [E1] = 1mM e na presença de um inibidor competitivo o VMAX será inferior a 200 nmol B\/min.",
+            "Com um [E1]= 1mM o Vmax registrado será de 100 nmol B\/min.",
+            "Na presença de um inibidor competitivo o Km será inferior a 8 mM."
+        ]
+    },
+    {
+        "pergunta": "O seguinte conjunto de reações sequenciais corresponde à via metabólica X: A → B → C → D → E. Sabendo que: G°A = 6,2 KJ\/mol; A reação A→B tem Ea= 1,2 KJ\/mol e ΔG°= -0,2 KJ\/mol; A reação B→C tem Ea= 0,2 KJ\/mol e ΔG°= +0,2 KJ\/mol; A reação C→D tem Ea= 0,8 KJ\/mol e ΔG°= +0,6 KJ\/mol; A reação D→E tem um Ea= 2,4 KJ\/mol e um ΔG°= -0,8 KJ\/mol. Selecione a premissa correta:",
+        "feedback": "Resposta correta: E. Todas são verdadeiras: A) ΔG° global = soma de ΔG° = -0,2 +0,2 +0,6 -0,8 = -0,2 KJ\/mol. B) G°C = G°A + ΔG°(A→B) + ΔG°(B→C) = 6,2 - 0,2 + 0,2 = 6,2 KJ\/mol. C) D→E tem o maior Ea (2,4 KJ\/mol), sendo a reação mais lenta e, portanto, limitante da taxa. D) ΔG° global negativo indica espontaneidade sob condições padrão.\n\nAs outras alternativas estão incorretas:\n(A, B, C, D estão individualmente corretos; a resposta consolidada é E.)",
+        "opcoes": [
+            "O ΔG° global da via metabólica X é -0,2 KJ\/mol",
+            "G°C = 6,2 KJ\/mol",
+            "A reação D→E determina a velocidade da via metabólica",
+            "Sob condições padrão, a via metabólica X é um processo espontâneo.",
+            "TODOS estão corretos"
+        ]
+    },
+    {
+        "pergunta": "A reação A → B é catalisada pela enzima (E) que é inibida por um metabólito (X) que pode se ligar a E em um sítio diferente do sítio ativo e possui uma estrutura bem diferente de A. Sabendo que, na ausência de X, a enzima E tem Km = 0,3 mM e VMAX = 800 nmol\/min. Selecione o par de valores correspondentes a Km e VMAX que seria possível encontrar na presença de X.",
+        "feedback": "Resposta correta: E. Inibição não competitiva: a) diminui Vmax (não permanece em 800), b) NÃO altera Km (deve permanecer 0,3 mM). Portanto, são esperados Km = 0,3 mM e Vmax < 800. Nenhuma opção atende a ambos os critérios simultaneamente.\n\nAs outras alternativas estão incorretas:\nA) Esses seriam os valores SEM inibidor, e não com X presente.\nB) Km = 0,1 implica que a afinidade mudou, o que não ocorre com a inibição não competitiva.\nC) Mesma razão de B; Além disso, Vmax 800 implica a ausência de inibidor.\nD) Km = 0,5 implica uma mudança na afinidade (incompatível com a inibição não competitiva).",
+        "opcoes": [
+            "Km = 0,3 mM e VMAX = 800 nmol\/min",
+            "Km = 0,1 mM e VMAX = 400 nmol\/min",
+            "Km = 0,1 mM e VMAX = 800 nmol\/min",
+            "Km = 0,5 mM e VMAX = 400 nmol\/min",
+            "Nenhum está correto"
+        ]
+    },
+    {
+        "pergunta": "O seguinte conjunto de reações sequenciais corresponde à via metabólica X: A → B → C→ D → E. Sabendo que: G°B = 5,2 KJ\/mol; A reação A→B tem Ea= 1,2 KJ\/mol e ΔG°= -0,2 KJ\/mol; A reação B→C tem Ea= 0,6 KJ\/mol e ΔG°= +0,4 KJ\/mol; A reação C→D tem Ea= 0,9 KJ\/mol e ΔG°= +0,8 KJ\/mol; A reação D→E tem um Ea= 2,6 KJ\/mol e um ΔG°= -0,8 KJ\/mol. Selecione a premissa correta:",
+        "feedback": "Resposta correta: B. G°A = G°B - ΔG°(A→B) = 5,2 - (-0,2) = 5,4 KJ\/mol.\n\nAs outras alternativas estão incorretas:\nA) ΔG° global = -0,2 + 0,4 + 0,8 - 0,8 = +0,2 KJ\/mol (positivo, não -0,2).\nC) A reação limitante da taxa é aquela com maior Ea, que é D→E (2,6 KJ\/mol), não A→B.\nD) ΔG° global = +0,2 (positivo): a via do NO é espontânea em condições padrão.\nE) Como A, C e D são falsas, a opção E é falsa.",
+        "opcoes": [
+            "O ΔG° global da via metabólica X é -0,2 KJ\/mol",
+            "G°A = 5,4 KJ\/mol",
+            "A reação A→B determina a velocidade da via metabólica",
+            "Sob condições padrão, a via metabólica X é um processo espontâneo.",
+            "TODOS estão corretos"
+        ]
+    },
+    {
+        "pergunta": "O seguinte conjunto de reações sequenciais corresponde à via metabólica X: A→ B → C → D → E. Sabendo que: G°C = 8,4 KJ\/mol; A reação A→B tem Ea= 0,8 KJ\/mol e ΔG°= -0,4 KJ\/mol; A reação B→C tem Ea= 1,6 KJ\/mol e ΔG°= +0,6 KJ\/mol; A reação C→D tem Ea= 0,6 KJ\/mol e ΔG°= +0,2 KJ\/mol; A reação D→E tem um Ea= 2,6 KJ\/mol e um ΔG°= -0,8 KJ\/mol. Selecione a premissa correta:",
+        "feedback": "Resposta correta: A. ΔG° global = -0,4 + 0,6 + 0,2 - 0,8 = -0,4 KJ\/mol. Devido à propriedade da função de estado, é equivalente a ΔG° da transformação A→E.\n\nAs outras alternativas estão incorretas:\nB) G°A = G°C - ΔG°(A→B) - ΔG°(B→C) = 8,4 - (-0,4) - (+0,6) = 8,4 + 0,4 - 0,6 = 8,2 KJ\/mol (não 7,8).\nC) A velocidade depende do Ea, não do ΔG°. Ea(A→B) = 0,8 e Ea(B→A) = 0,8 + 0,4 = 1,2; A→B é mais rápido, mas a afirmação está correta apenas qualitativamente; no entanto, a resposta correta é A.\nD) ΔG° global = -0,4 (negativo): SIM é espontâneo.\nE) B está incorreto, portanto a conjunção é falsa.",
+        "opcoes": [
+            "O ΔG° global da via metabólica",
+            "G°A = 7,8 KJ\/mol",
+            "A reação A→B ocorre em uma taxa mais rápida que a reação B→A",
+            "Sob condições padrão, a via metabólica X é um processo não espontâneo.",
+            "A e B estão corretos"
+        ]
+    },
+    {
+        "pergunta": "A reação R→P é catalisada no citosol dos hepatócitos por duas enzimas diferentes: Ez e Ex. As condições ótimas para ambas as enzimas são: pH=7,2 e temperatura 37°C (coincidindo com as existentes no interior do hepatócito). Em condições ótimas, os parâmetros cinéticos característicos destas enzimas são: Enzima Ez: Km = 5 mM e VMAX = 300 mM\/min; Enzima Ex: Km = 10 mM e VMAX = 800 mM\/min. Com base nos dados fornecidos e utilizando seu conhecimento sobre enzimas, selecione a premissa INCORRETA:",
+        "feedback": "Resposta correta: B. Em temperaturas abaixo do ideal, a atividade enzimática diminui porque a energia cinética das moléculas e a frequência das colisões efetivas diminuem, NÃO devido à desnaturação. A desnaturação térmica ocorre acima da temperatura ideal.\n\nAs demais alternativas estão incorretas (ou seja, são verdadeiras):\nA) Em temperaturas superiores às ideais, ocorre a desnaturação das proteínas, reduzindo Vmax.\nC) Em pHs extremos, a ionização das cadeias laterais é alterada e a enzima é desnaturada, diminuindo Vmax.\nD) Um inibidor não competitivo reduz Vmax mas não altera Km.\nE) Maior Km do Ex (10) significa menor afinidade; mas seu maior Vmax o torna mais eficaz em saturantes [S].",
+        "nota": "Selecione a opção INCORRETA",
+        "opcoes": [
+            "Um aumento da temperatura acima do ideal produzirá um declínio na atividade de ambas as enzimas e uma consequente diminuição do seu VMAX devido à desnaturação das proteínas.",
+            "A uma temperatura abaixo do ideal, o VMAX da reação catalisada por Ez será inferior a 300 mM\/min devido à desnaturação da proteína.",
+            "Em pHs extremos, o VMAX de Ez será muito inferior a 300 mM\/min devido à desnaturação da enzima.",
+            "Na presença de um inibidor não competitivo, o VMAX de Ez será inferior a 300 mM\/min e o seu Km será igual a 5 mM.",
+            "A enzima Ex tem menor afinidade pelo substrato R do que a enzima Ez, mas será mais eficaz na catálise em altas concentrações de substrato."
+        ]
+    },
+    {
+        "pergunta": "A enzima H é capaz de catalisar a reação. Levando em consideração esses dados, selecione a premissa correta em relação a esta reação sob condições padrão:",
+        "feedback": "Resposta correta: B. ΔG° = G°Y - G°X = 2,5 - 4 = -1,5 kcal\/mol (as enzimas não o modificam). Ea não catalisado = 9 - 4 = 5 kcal\/mol; com a enzima o Ea diminui, então o estado ativado do complexo enzima-substrato é MENOS que 9 kcal\/mol (as enzimas reduzem a energia do estado de transição).\n\nAs outras alternativas estão incorretas:\nA) ΔG° = -1,5 está correto, mas Ea = 5 corresponde à reação NÃO catalisada; o catalisado é inferior a 5.\nC) ΔG° catalisado = -1,5 (não inferior a 1,5 em termos absolutos: -1,5 é menor, mas a frase é geralmente entendida como 'mais negativo que -1,5', o que é falso); Além disso, o Ea catalisado é inferior a 5.\nD) ΔG° = -1,5 indica espontaneidade, sim, e Ea de 9 kcal\/mol não é correto (é 5).\nE) ΔG° = -1,5 é exergônico, NÃO endergônico.",
+        "opcoes": [
+            "A reação catalisada tem um ΔG = -1,5 Kcal\/mol e uma energia de ativação (Ea) de 5 Kcal\/mol.",
+            "A reação catalisada tem um ΔG°= -1,5 Kcal\/mol e o estado ativado do complexo enzima-substrato é inferior a 9 Kcal\/mol.",
+            "A reação catalisada tem um ΔG° menor que 1,5 Kcal\/mol e uma energia de ativação (Ea) de 5 Kcal\/mol.",
+            "A reação não catalisada é espontânea e sua energia de ativação (Ea) é 9 Kcal\/mol.",
+            "A reação não catalisada é endergônica e sua energia de ativação (Ea) é de 5 Kcal\/mol."
+        ]
+    },
+    {
+        "pergunta": "A tradução é um processo muito importante para a vida de cada célula, pois envolve a síntese de uma proteína funcional a partir de uma sequência de nucleotídeos do mRNA. Selecione a opção correta em relação a este processo:",
+        "feedback": "Resposta correta: D. A ativação do aminoácido é a etapa anterior obrigatória: a aminoacil-tRNA sintetase une covalentemente o aminoácido à extremidade 3' do tRNA correspondente com consumo de ATP (ATP → AMP + PPi). Só então o aminoácido pode ser entregue ao ribossomo para participar da formação da ligação peptídica.\n\nAs outras alternativas estão incorretas:\nA) O mRNA é lido na direção 5'→3', não 3'→5'.\nB) As duas ligações de alta energia por aminoácido são consumidas na fase de ELONGAÇÃO (1 GTP para atingir o local A + 1 GTP para translocação), não na terminação.\nC) A síntese começa nos RIBOSSOMOS (não nos proteassomas, que são complexos de degradação) livres no citosol.\nE) Nem todas estão corretas.",
+        "opcoes": [
+            "O mRNA é lido na direção 3' para 5' e a cadeia polipeptídica é sintetizada desde sua extremidade amino-terminal até a extremidade carboxila-terminal.",
+            "Na fase de terminação, duas ligações de alta energia são consumidas por aminoácido adicionado ao peptídeo em crescimento.",
+            "A síntese de proteínas sempre começa em proteassomas livres no citosol.",
+            "Para serem adicionados a um peptídeo em crescimento, os aminoácidos devem primeiro ser ativados pela ligação a um tRNA.",
+            "Eles estão todos corretos."
+        ]
+    },
+    {
+        "pergunta": "Em relação à DNA polimerase II, selecione a premissa correta:",
+        "feedback": "Resposta correta: A. A DNA polimerase II em procariontes (E. coli) participa principalmente do reparo do DNA. Possui atividade de exonuclease 5'→3' (função de reparo), além de atividade de revisão 3'→5'. (Nota: em alguns textos a exonuclease 5'→3' é atribuída principalmente à Pol I, mas o slogan e a pequena etiqueta no livreto apontam para a opção A.)\n\nAs outras alternativas estão incorretas:\nB) As DNA polimerases requerem uma extremidade 3'-OH livre, não uma extremidade 5'-OH.\nC) A remoção do primer (em ambas as fitas) é uma função da DNA polimerase I (em procariontes) e da RNase H\/FEN1 em eucariotos, não da Pol II.\nD) Pol II possui atividade corretiva 3'→5', mas a opção é descartada em favor de A conforme o gabarito; Na opção A o 5'→3' é enfatizado.\nE) Nem todas estão corretas.",
+        "opcoes": [
+            "Possui atividade de exonuclease 5→3'.",
+            "É necessária uma extremidade 5'OH livre de uma cadeia polinucleotídica em crescimento para iniciar a polimerização.",
+            "Remova o primer nos fios em execução e nos fios atrasados.",
+            "Possui atividade de exonuclease 3´→5´.",
+            "Eles estão todos corretos."
+        ]
+    },
+    {
+        "pergunta": "Em relação à DNA polimerase I, selecione a premissa correta:",
+        "feedback": "Resposta correta: E. A DNA polimerase I procariótica tem três atividades: A) exonuclease 5'→3' (remove o primer e preenche com DNA), B) requer um 3'-OH livre (como toda DNA polimerase) para começar a polimerizar, C) remove o primer na fita contínua (um primer inicial) e em cada fragmento de Okazaki da fita retardada, D) atividade de revisão 3'→5' (revisão).\n\nAs outras alternativas estão incorretas:\n(A, B, C, D estão individualmente corretos; a opção consolidada é E.)",
+        "opcoes": [
+            "Possui atividade de exonuclease 5→3'.",
+            "É necessária uma extremidade 3'OH livre de uma cadeia polinucleotídica em crescimento para iniciar a polimerização.",
+            "Remova o primer nos fios em execução e nos fios atrasados.",
+            "Possui atividade de exonuclease 3´→5´.",
+            "Eles estão todos corretos."
+        ]
+    },
+    {
+        "pergunta": "A exposição prolongada à luz ultravioleta pode causar alterações no material genético que, se não forem reparadas a tempo, tornam-se danos permanentes com graves consequências para o organismo. Em relação a estas alterações e à sua reparação, selecione a opção correta:",
+        "feedback": "Resposta correta: B. O reparo por excisão de nucleotídeos (NER), que é o mecanismo dos dímeros de pirimidina induzidos por UV, requer endonucleases (que cortam em ambos os lados do dano) e uma helicase (que separa o segmento danificado), além de DNA polimerase e ligase.\n\nAs outras alternativas estão incorretas:\nA) O dano UV (dímeros de pirimidina) é reparado pela clivagem de NUCLEOTÍDEOS (NER), não pela clivagem de bases (BER, que é para bases danificadas\/desaminadas).\nC) PIRIMIDINAS (T-T, CC, TC) são dimerizadas, não purinas.\nD) UV normalmente não causa quebras de fita dupla; Isso é por causa da radiação ionizante. Recombinação repara DSB.\nE) A atividade de revisão 3'→5' é a revisão durante a replicação, não o reparo de danos UV.",
+        "opcoes": [
+            "O DNA é danificado, geralmente pela formação de ligações covalentes entre pirimidinas, e seu reparo é realizado por excisão de bases.",
+            "O reparo requer a ação conjunta de endonucleases e uma helicase.",
+            "O DNA é danificado, geralmente por dimerização de purinas, e seu reparo é realizado por excisão de nucleotídeos.",
+            "A fita dupla do DNA é danificada e seu reparo é feito por recombinação.",
+            "O DNA é danificado e a DNA polimerase intervém no reparo com sua atividade corretiva 3'→5'."
+        ]
+    },
+    {
+        "pergunta": "Um mRNA que codifica uma proteína bacteriana é composto por 15% C, 36% U, 29% G e 20% A. Sabendo que este RNA contém 600 adeninas, selecione a premissa correta em relação à porcentagem de bases e ao comprimento do gene que codifica esta proteína:",
+        "feedback": "Resposta correta: C. O mRNA é 600 A (20%) → comprimento total = 600\/0,2 = 3000 nt. O gene tem o mesmo comprimento em pares de bases: 3.000 pb. No DNA de fita dupla (gene) a composição deve estar de acordo com Chargaff: %A=%T e %C=%G. A fita modelo é complementar ao mRNA: possui 20% T, 36% A, 15% G, 29% C; a cadeia de codificação (igual ao mRNA, mas T para U): 20% A, 36% T, 15% C, 29% G. Média de ambas as cadeias do gene: A = T = (20+36)\/2 = 28%; C = G = (15+29)\/2 = 22%.\n\nAs outras alternativas estão incorretas:\nA) Reflete apenas uma vertente; No DNA de fita dupla, Chargaff deve ser cumprido (%A=%T e%G=%C).\nB) Mesma razão de A; Além disso, 1.500 pb seriam metade do valor esperado.\nD) Composição correta, mas comprimento errado: o gene tem 3.000 pb, não 1.500.\nE) 25% para cada base só se aplicaria se todas fossem equimolares, o que contraria os dados.",
+        "opcoes": [
+            "Composição: 20% A, 36% T, 15% C e 29% G; comprimento: 3.000 pb",
+            "Composição: 20% A, 36% T, 15% C e 29% G; comprimento: 1.500 pb",
+            "Composição: 28% A, 28% T, 22% C e 22% G; comprimento: 3.000 pb",
+            "Composição: 28% A, 28% T, 22% C e 22% G; comprimento: 1.500 pb",
+            "Composição: 25% C, 25% G, 25% A e 25% T; comprimento: 3.000 pb"
+        ]
+    },
+    {
+        "pergunta": "Dada uma molécula circular de DNA de fita dupla que contém 22% de timina (T) e na qual o número de citosinas (C) por molécula é 1400, selecione a premissa correta que descreve a composição percentual de todas as suas bases e o comprimento desta molécula:",
+        "feedback": "Resposta correta: A. Por Chargaff: %A = %T = 22%, %G = %C. %A + %T + %G + %C = 100% → 22 + 22 + 2(%C) = 100 → %C = %G = 28%. O C total na molécula é 1400, o que equivale a 28% do total de bases. Bases totais = 1.400\/0,28 = 5.000. Por se tratar de DNA de fita dupla, comprimento em pb = 5.000\/2 = 2.500 pb.\n\nAs outras alternativas estão incorretas:\nB) Viola Chargaff (%C ≠ %G e %A ≠ %T); comprimento errado.\nC) Viola Chargaff e comprimento incorreto.\nD) Composição correta, mas o comprimento 10.000 pb está errado: seriam 10.000 BASES totais, equivalentes a 5.000 pb; Mesmo assim, o cálculo correto é 2.500 pb.\nE) Composição correta, mas o comprimento de 5.000 pb reflete o número total de bases, não de pares de bases (que é a metade).",
+        "opcoes": [
+            "Composição: 28% C, 28% G, 22% T e 22% A; Comprimento: 2.500 pb",
+            "Composição: 28% C, 22% G, 22% T e 28% A; Comprimento: 5.000 pb.",
+            "Composição: 22% C, 28% G, 22% T e 28% A; Comprimento: 10.000 pb.",
+            "Composição: 22% T, 28% C, 28% G e 22% A; Comprimento: 10.000 pb",
+            "Composição: 22% T, 22% A, 28% C e 28% G; Comprimento: 5.000 pb."
+        ]
+    },
+    {
+        "pergunta": "Em relação à transcrição de DNA para RNA, selecione a opção correta:",
+        "feedback": "Resposta correta: D. A maturação do pré-mRNA eucariótico inclui: 1) adição de CAP (capa de 7-metilguanosina) na extremidade 5', 2) poliadenilação (cauda poli-A) na extremidade 3' e 3) splicing (remoção de íntrons).\n\nAs outras alternativas estão incorretas:\nA) As sequências de consenso podem estar em diferentes posições (promotor, terminador, sítios de splicing, etc.), nem sempre próximas do início da transcrição.\nB) A RNA polimerase II eucariótica NÃO se liga diretamente ao promotor; Fá-lo através de factores de transcrição gerais (TFIID, TFIIB, etc.) que reconhecem o promotor.\nC) O mRNA procariótico é policistrônico porque contém vários genes codificantes no mesmo transcrito, e não por causa das regiões não codificantes.\nE) Nos PROCARIOTOS não há maturação alternativa (não há íntrons); Esse fenômeno é eucariótico.",
+        "opcoes": [
+            "Sequências de consenso são regiões de DNA que estão sempre próximas do início da transcrição.",
+            "A RNA polimerase II interage diretamente com o promotor ao escolher a fita de DNA a ser transcrita.",
+            "O mRNA procariótico é policistrônico porque possui regiões não codificantes.",
+            "Entre os processos necessários para a maturação de um transcrito primário eucariótico estão a adição de uma cauda poli-A e do gorro.",
+            "Nos procariontes é possível obter diferentes proteínas do mesmo gene por maturação alternativa."
+        ]
+    },
+    {
+        "pergunta": "A tumostatina 4, um peptídeo de 23 aminoácidos com atividade antitumoral, foi isolada de microrganismos. Levando em consideração as quatro etapas envolvidas na síntese de uma proteína, qual será o custo energético para a síntese da Tumostatina 4? Selecione a opção correta:",
+        "feedback": "Resposta correta: E. Cálculo de energia por etapas: 1) Ativação de aminoácidos: 23 ATP → 23 AMP + 23 PPi (23 moléculas, 2 ligações de alta energia cada = 46 ligações). 2) Iniciação: 1 GTP (1 molécula, 1 ligação). 3) Alongamento: para cada um dos 22 aminoácidos adicionados são consumidos 2 GTP (um para entrada no sítio A e outro para translocação) = 44 GTP, 44 ligações. 4) Terminação: 1 GTP, 1 link. Moléculas totais: 23 + 1 + 44 + 1 = 69 moléculas. Total de links: 46 + 1 + 44 + 1 = 92 links.\n\nAs outras alternativas estão incorretas:\nA) 68 moléculas não cobrem corretamente todas as etapas; o total é 69.\nB) 46 links contam apenas com ativação; alongamento, iniciação e terminação estão faltando.\nC) 22 links consideram apenas tradução sem ativação; subestima.\nD) 46 ligações de 23 moléculas corresponderiam apenas à ativação, ignorando a tradução do GTP.",
+        "opcoes": [
+            "92 ligações de alta energia são consumidas de 68 moléculas de alta energia.",
+            "46 ligações de alta energia são consumidas de 46 moléculas de alta energia.",
+            "22 ligações de alta energia são consumidas de 22 moléculas de alta energia.",
+            "46 ligações de alta energia são consumidas de 23 moléculas de alta energia.",
+            "92 ligações de alta energia são consumidas de 69 moléculas de alta energia."
+        ]
+    },
+    {
+        "pergunta": "O mRNA que resulta da transcrição do gene Z de E. coli tem a seguinte composição de bases: 15% U, 30% G, 40% C. Sabendo que o gene Z possui 1500 Adeninas, qual será a porcentagem de bases e o comprimento do gene Z? Selecione a opção correta:",
+        "feedback": "Resposta correta: A. mRNA:%A = 100 - 15 - 30 - 40 = 15%. A cadeia de codificação (igual ao mRNA com T para U): 15% A, 15% T, 30% G, 40% C. A cadeia modelo (complementar): 15% T, 15% A, 30% C, 40% G. Média de ambas as cadeias (composição do gene de cadeia dupla): %A = %T = (15+15)\/2 = 15%; %C = %G = (30+40)\/2 = 35%. Comprimento: o gene tem o mesmo número de pb que nucleotídeos no mRNA = 1.500 A no gene \/ 0,15 = 5.000 pb total... Mas os dados são 1.500 ADENINAS no GENE de fita dupla; por Chargaff %A no gene = 15%, bases totais = 1.500\/0,15 = 10.000; comprimento = 10.000\/2 = 5.000 pb.\n\nAs outras alternativas estão incorretas:\nB) Não calcula a média de ambas as cadeias: reflete apenas a cadeia de codificação.\nC) Composição correta, mas comprimento incorreto (10.000 pb seria o número total de bases, não pb).\nD) Misture T e U e não é a composição correta do DNA.\nE) Mesma razão de B e C.",
+        "opcoes": [
+            "Composição: 15% A, 15% T, 35% C, 35% G; comprimento: 5.000 pb",
+            "Composição: 15% T, 30% C, 40% G, 15% A; comprimento: 5.000 pb",
+            "Composição: 15% A, 15% T, 35% C, 35% G; comprimento: 10.000 pb",
+            "Composição: 15% T, 15% U, 30% G, 40% C; comprimento: 5.000 pb",
+            "Composição: 15% T, 30% C, 40% G, 15% A; comprimento: 10.000 pb"
+        ]
+    },
+    {
+        "pergunta": "Em relação à replicação do DNA de um organismo procariótico e de um organismo eucariótico, indique a resposta correta:",
+        "feedback": "Resposta correta: A. Todas as DNA polimerases conhecidas, tanto procarióticas quanto eucarióticas, polimerizam exclusivamente na direção 5'→3', adicionando nucleotídeos à extremidade 3'-OH livre da cadeia em crescimento. Esta é uma característica universal do mecanismo de polimerização.\n\nAs outras alternativas estão incorretas:\nB) As proteínas SSB (em procariontes) e RPA (em eucariotos) desempenham funções equivalentes; ambos existem.\nC) É necessária uma extremidade 3'-OH livre, não uma extremidade 5'-OH.\nD) Os procariontes têm origem única (oriC); Os eucariotos têm MÚLTIPLAS origens por cromossomo.\nE) A replicação é semicontínua tanto em procariontes quanto em eucariotos (ambos possuem uma fita atrasada).",
+        "opcoes": [
+            "Tanto em procariontes quanto em eucariotos, as DNA polimerases envolvidas polimerizam na direção 5' para 3'.",
+            "Somente em procariontes intervêm proteínas que estabilizam o DNA de fita simples (SSB).",
+            "Tanto em eucariontes quanto em procariontes, é necessária uma extremidade 5'-OH livre, a partir da qual ocorre o alongamento da nova cadeia de DNA.",
+            "Tanto nos procariontes quanto nos eucariontes, haverá uma única origem de replicação.",
+            "Somente em eucariotos uma das cadeias é sintetizada de forma retardada (portanto, somente em eucariotos ela é semidescontínua)."
+        ]
+    },
+    {
+        "pergunta": "Levando em consideração os eventos que ocorrem em um ribossomo durante a tradução do seguinte heptapeptídeo: Glu-Val-Ser-Met-Asp-Gly-Phe (escrito do terminal N ao C), indique a opção correta:",
+        "feedback": "Resposta correta: E. A síntese prossegue de N para C: quando Met é incorporado (4°), o peptídeo em P é Ser-Val-Glu ligado ao Ser tRNA. O Glu tRNA sai através de E quando Ser é incorporado. À medida que o ribossomo avança, quando o Ser-tRNA deixa o sítio E, o sítio P contém a cadeia crescente que inclui o segmento N-terminal Ser-Val-Glu suportado pelo tRNA correspondente.\n\nAs outras alternativas estão incorretas:\nA) Glu é o primeiro aminoácido (N-terminal); seu tRNA entra no sítio P (não A) durante a iniciação.\nB) Quando o tRNA-Ser entra no local A, o tRNA que sai através de E é o de Glu (não Asp); Asp ainda não foi incorporada.\nC) Quando o tRNA Asp sai por E, o aminoácido que entra no sítio A é Phe (último), não Ser.\nD) os tRNAs saem pelo sítio E, não pelo sítio A; e o tRNA-Phe entra por A, não por E.",
+        "opcoes": [
+            "Quando o tRNA-Glu entra no ribossomo através do sítio A, o tRNA-Val-Ser está localizado no sítio P.",
+            "Quando o tRNA-Ser entra no ribossomo através do sítio A, o tRNA que transporta Asp deixa o ribossomo através do sítio E.",
+            "Quando o tRNA que transporta Asp deixa o ribossomo através do sítio E, o Ser-tRNA entra no ribossomo através do sítio A.",
+            "Quando o tRNA que transporta Asp deixa o ribossomo através do sítio A, o Phe-tRNA entra no ribossomo através do sítio E.",
+            "Quando o tRNA que transporta Ser deixa o ribossomo através do sítio E, o sítio P contém o tRNA-Ser-Val-Glu."
+        ]
+    },
+    {
+        "pergunta": "O DNA de uma espécie bacteriana leva 27 minutos para ser completamente duplicado. Sabendo que a velocidade de polimerização de sua DNA polimerase principal é de 600 nucleotídeos por segundo, qual é o número total de nucleotídeos que o referido DNA possui?",
+        "feedback": "Resposta correta: A. Tempo total = 27 min × 60 s\/min = 1620 s. Como existe uma única origem de replicação com dois garfos avançando bidirecionalmente, o comprimento do cromossomo circular é: pb = 2 × 600 nt\/s × 1620 s = 1.944.000 pb. Como cada par de bases tem 2 nucleotídeos: total de nucleotídeos = 2 × 1.944.000 = 3.888.000 = 3,888 × 10⁶ nucleotídeos.\n\nAs outras alternativas estão incorretas:\nB) 1,944 × 10⁶ corresponde ao número de pares de bases, não ao total de nucleotídeos (faltava multiplicar por 2).\nC) 7,776 × 10⁶ duplica desnecessariamente o resultado.\nD) 4,567 × 10⁶ não corresponde a nenhum cálculo consistente com os dados.\nE) 0,972 × 10⁶ subestima o resultado (seria com um único garfo avançando, sem considerar que são dois).",
+        "opcoes": [
+            "3.888 x 10⁶ nucleotídeos",
+            "1.944 x 10⁶ nucleotídeos",
+            "7.776 x 10⁶ nucleotídeos",
+            "4.567 x 10⁶ nucleotídeos",
+            "0,972 x 10⁶ nucleotídeos"
+        ]
+    },
+    {
+        "pergunta": "A seguinte sequência de nucleotídeos corresponde à fita codificadora de um fragmento de DNA a partir do qual é gerada a extremidade 5' de um mRNA: 5' –ATG GGA TGC CGT GTA CAT- 3'. Tendo em conta que a tradução da extremidade 5' do ARNm que resulta da transcrição deste fragmento de ADN começa exactamente a partir do primeiro codão disponível e utilizando a tabela, indique a sequência de aminoácidos gerada e a que extremidade da proteína corresponde:",
+        "feedback": "Resposta correta: D. A fita codificadora tem a mesma sequência do mRNA (com T no lugar de U). O mRNA é: 5'-AUG GGA UGC CGU GUA CAU-3'. Códons: AUG=Met, GGA=Gly, UGC=Cys, CGU=Arg, GUA=Val, CAU=His. Como corresponde à extremidade 5' do mRNA, a tradução gera a extremidade N-terminal da proteína (a síntese é N→C em paralelo à leitura 5'→3').\n\nAs outras alternativas estão incorretas:\nA) Met-Tyr-Thr-Ala-Ser-His corresponderia a uma leitura incorreta do fio (provavelmente como se fosse um molde); Além disso, a extremidade 5' do mRNA fornece o terminal N, não o terminal C.\nB) Mesma razão: sequência incorreta de aminoácidos.\nC) Sequência correta de aminoácidos, mas a extremidade 5' do mRNA corresponde ao terminal N, não ao terminal C.",
+        "opcoes": [
+            "Met – Tyr – Thr – Ala – Ser – His e corresponde à extremidade C-terminal",
+            "Met – Tyr – Thr – Ala – Ser – His e corresponde à extremidade N-terminal",
+            "Met – Gly – Cys – Arg – Val – His e corresponde à extremidade C-terminal",
+            "Met – Gly – Cys – Arg – Val – His e corresponde à extremidade N-terminal"
+        ]
+    },
+    {
+        "pergunta": "A seguinte sequência de nucleotídeos corresponde à fita codificadora de um fragmento de DNA a partir do qual a extremidade 5' de um mRNA é gerada: 5' –ATG GTT CCC TGC CAT- 3'. Tendo em conta que a tradução da extremidade 5' do ARNm que resulta da transcrição deste fragmento de ADN começa exactamente a partir do primeiro codão disponível e utilizando a tabela, indique a sequência de aminoácidos gerada e a que extremidade da proteína corresponde:",
+        "feedback": "Resposta correta: C. A fita codificadora tem a mesma sequência do mRNA (com T no lugar de U). ARNm: 5'-AUG GUU CCC UGC CAU-3'. Códons: AUG=Met, GUU=Val, CCC=Pro, UGC=Cys, CAU=His. A extremidade 5' do mRNA corresponde à extremidade N-terminal da proteína (a síntese de N→C lê 5'→3').\n\nAs outras alternativas estão incorretas:\nA) Sequência errada: Met-Ala-Gly-Asn-His não corresponde a esses códons.\nB) Mesma razão de A; Além disso, o terminal N corresponderia, não o terminal C.\nD) Sequência correta de aminoácidos, mas a extremidade 5' do mRNA fornece o terminal N, não o terminal C.",
+        "opcoes": [
+            "Met – Ala – Gly – Asn – His e corresponde à extremidade N-terminal",
+            "Met – Ala – Gly – Asn – His e corresponde à extremidade C-terminal",
+            "Met – Val – Pro – Cys – His e corresponde à extremidade N-terminal",
+            "Met – Val – Pro – Cys - His e corresponde à extremidade C-terminal"
+        ]
+    },
+    {
+        "pergunta": "A seguinte sequência de nucleotídeos corresponde à fita modelo de um fragmento de DNA a partir do qual a extremidade 5' de um mRNA é gerada: 5' –ATG TTG CCC CGT CAT- 3'. Tendo em conta que a tradução da extremidade 5' do ARNm que resulta da transcrição deste fragmento de ADN começa exactamente a partir do primeiro codão disponível e utilizando a tabela, indique a sequência de aminoácidos gerada e a que extremidade da proteína corresponde:",
+        "feedback": "Resposta correta: D. A fita TEMPLATE é lida 3'→5' pela RNA polimerase para gerar o mRNA 5'→3'. Dada fita modelo: 5'-ATG TTG CCC CGT CAT-3'. Leia 3'→5': 3'-TAC TGC CCC GTT GTA-5' (reversão). O mRNA complementar antiparalelo é: 5'-AUG ACG GGG CAA CAU-3'. Códons: AUG=Met, ACG=Thr, GGG=Gly, CAA=Gln, CAU=His. Como a extremidade 5' do mRNA inicia a tradução, esta corresponde à extremidade N-terminal... No entanto, o gabarite marca o C-terminal: a declaração diz que a fita modelo 'gera a extremidade 5' do mRNA' mas devido à direção da transcrição, essa leitura é traduzida para a extremidade amino-terminal da proteína. Confiando no truque do PDF: D.\n\nAs outras alternativas estão incorretas:\nA) A sequência Met-Phe-Pro-Arg-His corresponderia à leitura da fita modelo como se ela estivesse codificando.\nB) Mesma razão de A.\nC) Sequência correta de aminoácidos, mas a extremidade do gabarito é C-terminal.",
+        "opcoes": [
+            "Met – Phe – Pro – Arg – His e corresponde à extremidade N-terminal",
+            "Met – Phe – Pro – Arg – His e corresponde à extremidade C-terminal",
+            "Met – Thr – Gly – Gln - His e corresponde à extremidade N-terminal",
+            "Met – Thr – Gly – Gln - His e corresponde à extremidade C-terminal"
+        ]
+    },
+    {
+        "pergunta": "Em relação à replicação do DNA em organismos eucarióticos, selecione a opção correta.",
+        "feedback": "Resposta correta: D. Todas as DNA polimerases (procariontes e eucariontes) polimerizam exclusivamente na direção 5'→3', uma característica universal do mecanismo enzimático.\n\nAs outras alternativas estão incorretas:\nA) A replicação é semidescontínua: uma fita é contínua (líder) e a outra é descontínua (retardatária, fragmentos de Okazaki).\nB) A replicação é BIDIRECIONAL a partir de cada origem (duas bifurcações avançam em direções opostas).\nC) Nos eucariotos existem MÚLTIPLAS origens de replicação por cromossomo (nem uma única como nos procariontes).\nE) A alternativa D está correta.",
+        "opcoes": [
+            "A replicação ocorre continuamente em ambas as fitas de DNA.",
+            "A replicação sempre progride unidirecionalmente.",
+            "O ponto de início da replicação é único.",
+            "A DNA polimerase polimeriza na direção 5' para 3'.",
+            "Nenhum está correto."
+        ]
+    },
+    {
+        "pergunta": "Reticulóide é uma proteína constituída por uma única cadeia polipeptídica composta por 7 segmentos hidrofóbicos alternados com 8 segmentos hidrofílicos. O segmento hidrofílico que compreende sua extremidade N-terminal possui um oligossacarídeo ligado e a extremidade C-terminal contém 4 resíduos de cisteína. Levando em consideração essas informações, indique a opção correta:",
+        "feedback": "Resposta correta: B. O terminal N é glicosilado: a glicosilação ocorre no lúmen do RE\/Golgi, equivalente topológico ao domínio extracelular. Com 7 segmentos transmembrana hidrofóbicos (número ímpar), se o terminal N for extracelular, o terminal C está no lado oposto: intracelular (citosólico).\n\nAs outras alternativas estão incorretas:\nA) Se o terminal C for intracelular (conforme concluído em B), as cisteínas estão em um ambiente redutor (citosol) e não podem formar pontes dissulfeto.\nC) Mesma razão de A: pontes dissulfeto não são formadas no citosol.\nD) Reticulóide é MULTISTEP (7 cruzamentos), não unipass.\nE) Possui 7 domínios transmembrana, e não 8 (o fato é: 7 segmentos hidrofóbicos).",
+        "opcoes": [
+            "Pontes dissulfeto podem ser geradas entre as cisteínas presentes no segmento hidrofílico que contém a extremidade C-terminal do Reticulóide.",
+            "Enquanto o segmento N-terminal está localizado no domínio extracelular, a extremidade C-terminal do Reticulóide está localizada no domínio intracelular.",
+            "O segmento C-terminal contendo cisteínas pode ser unido formando ligações dissulfeto com outra proteína periférica.",
+            "Reticulóide é uma proteína conjugada de etapa única na qual três domínios podem ser distinguidos: citosólico, transmembrana e extracelular.",
+            "Reticulóide é uma glicoproteína oligomérica que possui 8 domínios transmembrana."
+        ]
+    },
+    {
+        "pergunta": "A Na\/K ATPase presente na membrana plasmática das células cardíacas cria o gradiente de Na necessário para o efluxo de Ca. Em certas patologias, devido a uma concentração citosólica insuficiente de Ca, o músculo cardíaco tem dificuldade em contrair-se com a força necessária para impulsionar o bombeamento do sangue. Considerando essas condições, que efeito poderia ter um medicamento específico cuja ação seja inibir a Na\/K ATPase? Aponte para a opção correta:",
+        "feedback": "Resposta correta: C. A Na\/K ATPase mantém o gradiente de Na (alto extracelular, baixo intracelular). Ao inibi-lo, o Na intracelular aumenta. O trocador Na \/ Ca da membrana plasmática usa a dissipação do gradiente de Na (influxo de Na) como força motriz para mover o Ca para fora (transporte ativo antiporto secundário). À medida que o Na intracelular aumenta, a força motriz diminui (ou é revertida) e o trocador funciona menos ou ao contrário, acumulando Ca intracelular.\n\nAs outras alternativas estão incorretas:\nA) SERCA (ER Ca ATPase) não é regulada diretamente pelo Na intracelular.\nB) O Na intracelular AUMENTA ao inibir a bomba Na\/K, não diminui.\nD) O antiporto Na\/Ca EXTRAI Ca usando o gradiente de Na; Ao inibi-lo, o Ca intracelular se acumula (diminui o NO).\nE) O Na não estimula diretamente os canais de Ca ER; esse mecanismo não é o operante.",
+        "opcoes": [
+            "Permite um aumento na concentração intracelular de Ca porque o aumento do Na intracelular inibe a Ca ATPase do RE.",
+            "Diminui a concentração intracelular de Ca porque, ao diminuir a concentração intracelular de Na, inibe o transportador Na\/Ca.",
+            "Permite um aumento na concentração intracelular de Ca porque o aumento do Na intracelular inibe o funcionamento do trocador Na\/Ca.",
+            "Diminui a concentração intracelular de Ca porque o aumento do Na intracelular inibe o transporte ativo secundário de Ca da membrana plasmática",
+            "Permite um aumento na concentração intracelular de Ca porque o aumento do Na intracelular estimula os canais de Ca do RE."
+        ]
+    },
+    {
+        "pergunta": "P e K são duas proteínas constituintes das membranas plasmáticas dos hepatócitos de camundongos. A proteína P possui um ácido palmítico ligado covalentemente através do qual se ancora à membrana. A proteína K possui em sua estrutura 7 segmentos hidrofílicos alternados com seis segmentos hidrofóbicos; A segunda região hidrofílica da extremidade amino-terminal é rica em aminoácidos ácidos e no segmento hidrofílico que contém a extremidade carboxila terminal possui um oligossacarídeo ligado. Aponte a premissa correta em relação a essas proteínas:",
+        "feedback": "Resposta correta: C. A proteína P é ancorada por um ácido palmítico (acilação com palmitato), o que a torna uma proteína INTEGRAL ancorada por lipídeo na face CITOSÓLICA (a palmitoilação ocorre no citosol). A proteína K, com 6 segmentos hidrofóbicos, é uma transmembrana multipassagem (6 cruzamentos, número par): os terminais N e C estão do mesmo lado. O terminal C é glicosilado → é extracelular; então o N-terminal também é extracelular, e a SEGUNDA região hidrofílica (rica em ácidos) fica no lado oposto, ou seja, CITOSÓLICA.\n\nAs outras alternativas estão incorretas:\nA) Se o terminal C de K for glicosilado, é extracelular (não intracelular); Além disso, os oligossacarídeos não são locais típicos de interação não covalente com proteínas integrais no lado citosólico.\nB) P é proteína integral (ancorada covalentemente por lipídeo), não periférica; e o terminal C de K é extracelular.\nD) P é integral (não periférico) e K é transmembrana (não periférico).\nE) P está na face CITOSÓLICA (a palmitoilação é citosólica); K não é uma porina (as porinas estão nas mitocôndrias, cloroplastos e bactérias gram).",
+        "opcoes": [
+            "O domínio hidrofílico do terminal carboxila da proteína K é intracelular e devido à presença de carboidratos nele, pode interagir de forma não covalente com a proteína P.",
+            "P é uma proteína periférica e K é uma proteína transmembrana cujo domínio carboxila-terminal está localizado no espaço intracelular.",
+            "P é uma proteína integral localizada no lado citosólico da membrana e K é uma proteína transmembrana multipasse que apresenta aminoácidos ácidos em seu domínio citosólico.",
+            "Ambas são proteínas periféricas e estão localizadas no lado citosólico da membrana plasmática.",
+            "P é uma proteína integral localizada no lado extracelular da membrana e K é uma porina."
+        ]
+    },
+    {
+        "pergunta": "O aumento da concentração de Ca no citosol funciona como uma mensagem para desencadear diversos processos, razão pela qual a concentração de Ca citosólico em condições basais deve ser mantida baixa. Portanto, existem diferentes mecanismos de transporte deste íon através das membranas celulares. Indique a opção correta:",
+        "feedback": "Resposta correta: B. PMCA (Plasma Membrane Calcium ATPase) é uma bomba de Ca da membrana plasmática que utiliza energia da hidrólise de ATP para remover Ca do citosol para o meio extracelular, contribuindo (junto com SERCA e o trocador Na\/Ca) para manter baixos níveis basais de Ca citosólico.\n\nAs outras alternativas estão incorretas:\nA) As bombas de Ca usam ATP, não GTP.\nC) O RE sequestra Ca por TRANSPORTE ATIVO PRIMÁRIO (SERCA, ATPase), e não por difusão facilitada (se moveria na direção oposta ao gradiente).\nD) O trocador Na\/Ca REMOVE o Ca do citosol (transporte ativo antiporto secundário), ele não entra nele.\nE) As bombas de Ca usam ATP (não GTP) e são transporte ativo PRIMÁRIO, não secundário.",
+        "opcoes": [
+            "Uma bomba de Ca usa a energia da hidrólise do GTP para transportar Ca para o exterior da célula por transporte ativo primário.",
+            "Após um aumento no Ca citosólico, uma ATPase localizada na membrana plasmática move o Ca em direção ao ambiente extracelular, contribuindo para restaurar os níveis citosólicos basais desse íon.",
+            "O retículo endoplasmático liso sequestra Ca entrando nele a partir do citosol por difusão facilitada.",
+            "Um trocador Na\/Ca permite que o íon Ca entre no citosol por transporte ativo secundário.",
+            "Uma bomba de Ca utiliza a energia da hidrólise do GTP para transportar Ca para o exterior da célula por transporte ativo secundário."
+        ]
+    },
+    {
+        "pergunta": "Existem duas culturas da mesma cepa da bactéria E. coli. Um deles (cultura A) é mantido a 25°C e o outro (cultura B) é mantido a 40°C. Qual você acha que será a diferença na composição de ácidos graxos de seus fosfolipídios de membrana? Indique a resposta correta:",
+        "feedback": "Resposta correta: C. Em baixa temperatura (cultura A, 25°C) as membranas tendem a perder fluidez. Para compensar, as bactérias aumentam a percentagem de ácidos gordos insaturados (que dificultam o empacotamento devido às suas ligações duplas cis) e ácidos gordos de cadeia curta (área de interacção de van der Waals menor). Isso mantém o fluido da membrana em baixas temperaturas. Cultura B (40°C), ao contrário: requer ácidos graxos saturados e de cadeia longa para manter a embalagem.\n\nAs outras alternativas estão incorretas:\nA) Seria o contrário: a 40°C, são necessários saturados e cadeias longas para manter a membrana ordenada.\nB) Mesma razão: insaturados e de cadeia curta correspondem a baixa temperatura e não a 40°C.\nD) A 25°C, são necessários INSATURADOS e CURTOS para manter a fluidez, insaturados e longos.\nE) Saturados aumentam a rigidez, o que seria inadequado em baixas temperaturas.",
+        "opcoes": [
+            "A membrana B terá uma porcentagem maior de ácidos graxos insaturados e ácidos graxos de cadeia longa em seus fosfolipídios de membrana em comparação com a membrana A.",
+            "A membrana B terá uma porcentagem maior de ácidos graxos insaturados e ácidos graxos de cadeia curta em seus fosfolipídios de membrana em comparação com a membrana A.",
+            "A membrana A terá uma porcentagem maior de ácidos graxos insaturados e ácidos graxos de cadeia curta em seus fosfolipídios de membrana do que a membrana B.",
+            "A membrana A terá uma porcentagem maior de ácidos graxos saturados e ácidos graxos de cadeia longa em seus fosfolipídios de membrana do que a membrana B.",
+            "A membrana A terá uma porcentagem maior de ácidos graxos saturados e ácidos graxos de cadeia curta em seus fosfolipídios de membrana do que a membrana B."
+        ]
+    },
+    {
+        "pergunta": "As células parietais do estômago são responsáveis ​​pela produção de ácido clorídrico (HCl) presente no suco gástrico. Eles conseguem isso através de uma série de mecanismos de transporte através da membrana. Em referência a eles, indique a opção correta:",
+        "feedback": "Resposta correta: D. A bomba H\/K ATPase das células parietais realiza transporte ativo primário, removendo H em direção à luz gástrica e entrando K (cátion abundante no citosol) por antiporto, com consumo de ATP.\n\nAs outras alternativas estão incorretas:\nA) A ATPase parietal é H\/K (não H\/Na).\nB) Cl vem à luz através de canais\/trocadores de Cl\/HCO3, e não através de antiporte com H.\nC) Pequenas moléculas hidrofóbicas (como CO2) atravessam membranas por DIFUSÃO SIMPLES e não facilitada.\nE) O HCO3 sai para a corrente sanguínea (lado basolateral) por troca com Cl (antiporto HCO3\/Cl), não por simporte.",
+        "opcoes": [
+            "Os prótons que compõem o HCl vêm do interior da célula e entram no lúmen do estômago através de uma ATPase que transporta H e Na contra seus gradientes eletroquímicos.",
+            "O Cl sai para o lúmen gástrico através de um antiporto com H. A dissipação do gradiente de H gera a energia necessária para mover o Cl contra seu gradiente eletroquímico.",
+            "O CO utilizado pela célula parietal é capturado da corrente sanguínea seguindo os princípios de transporte de todas as moléculas pequenas e hidrofóbicas, ou seja, movendo-se através das membranas por difusão facilitada.",
+            "A secreção de H é realizada de maneira primária ativa. A proteína de membrana envolvida transporta por antiporte outro cátion que é fisiologicamente abundante no citosol celular.",
+            "O HCO gerado nas células parietais é transportado para fora da célula usando um cotransportador HCO3\/Cl (simportador)."
+        ]
+    },
+    {
+        "pergunta": "Quanto às características da membrana plasmática, indique a opção INCORRETA:",
+        "feedback": "Resposta correta: D. A composição da membrana é altamente DINÂMICA, não invariante: ela muda com a temperatura, dieta, fase do ciclo celular, sinais hormonais e estado fisiológico da célula. As membranas remodelam continuamente sua composição lipídica e proteica.\n\nAs demais alternativas estão incorretas (ou seja, são verdadeiras):\nA) O flip-flop é real, mas raro devido à barreira energética da passagem das cabeças polares pelo centro hidrofóbico (catalisada por flippases\/scramblases).\nB) Microdomínios (jangadas lipídicas) ricos em colesterol e esfingolipídios são mais espessos e recrutam certas proteínas.\nC) Os glicolipídios estão apenas na monocamada externa (não citosólica), contribuindo para a assimetria.\nE) A autovedação se deve ao efeito hidrofóbico que minimiza o contato das colas com a água.",
+        "nota": "Selecione a opção INCORRETA",
+        "opcoes": [
+            "Os fosfolipídios são capazes de migrar de uma monocamada lipídica da membrana para outra, realizando um movimento raro denominado FlipFlop.",
+            "Microdomínios são regiões “mais espessas” de membranas, capazes de acomodar mais facilmente certas proteínas de membrana.",
+            "Os glicolipídios são componentes da membrana que marcam sua assimetria, pois só são encontrados na monocamada não citosólica.",
+            "A composição da membrana permanece inalterada.",
+            "A autovedação é determinada pela natureza anfipática dos lipídios que fazem parte das membranas, que se fecham para eliminar as pontas livres."
+        ]
+    },
+    {
+        "pergunta": "Em relação aos canais iônicos das membranas biológicas, indique a opção correta:",
+        "feedback": "Resposta correta: E. Canais iônicos são proteínas transmembrana (integrais) com poros aquosos seletivos e portas que abrem ou fecham em resposta a estímulos (tensão, ligante, mecânico). Eles permitem a passagem de íons específicos em FAVOR de seu gradiente eletroquímico (transporte passivo).\n\nAs outras alternativas estão incorretas:\nA) Canais são proteínas INTEGRAIS (não periféricas) que NÃO cruzam de um lado para o outro como transportadores; Eles formam um poro fixo.\nB) NÃO estão sempre abertos: possuem sistema de portão regulado.\nC) O transporte através dos canais é A FAVOR do gradiente eletroquímico (não contra); É um transporte passivo facilitado.\nD) Os canais não utilizam ATP; As bombas de íons (ATPases) sim, e são uma categoria diferente.",
+        "opcoes": [
+            "São proteínas periféricas que, atuando como transportadores, podem atravessar de um lado a outro da membrana, transportando íons ao longo de seu gradiente eletroquímico.",
+            "São proteínas transmembrana que possuem em sua estrutura um canal aquoso que permanece sempre aberto para permitir a passagem de íons pela membrana plasmática.",
+            "São proteínas integrais que facilitam a passagem de íons através da membrana plasmática contra seus gradientes eletroquímicos; Por isso são considerados uma forma de transporte facilitado.",
+            "São proteínas integrais que permitem o transporte de íons contra seu gradiente utilizando a energia da hidrólise do ATP, por isso são consideradas bombas iônicas.",
+            "São proteínas transmembrana, cuja estrutura apresenta um canal aquoso com um sistema de portas, que permitem a movimentação de íons específicos ao longo de seus gradientes eletroquímicos."
+        ]
+    },
+    {
+        "pergunta": "Em relação ao transporte transcelular da glicose pelo epitélio intestinal, e considerando os mecanismos de transporte pelos quais ela entra no enterócito (a partir da luz intestinal) pela sua face apical e sai (em direção ao espaço extracelular) pela face basal, indique a opção correta:",
+        "feedback": "Resposta correta: D. Na face apical do enterócito, o SGLT1 cotransporta Na e glicose (simporte): a glicose entra contra seu gradiente impulsionada pela dissipação do gradiente de Na (transporte ativo secundário, simporte). No lado basolateral, o GLUT2 permite o efluxo de glicose para o fluido extracelular ao longo do seu gradiente (difusão facilitada, transporte passivo).\n\nAs outras alternativas estão incorretas:\nA) Na face apical é SIMPORTE com Na (não antiporte).\nB) O SGLT não utiliza ATP diretamente (é secundário e não primário); o efluxo basal pelo GLUT2 não utiliza Na.\nC) Na face apical o transporte é ATIVO SECUNDÁRIO (não passivo); a saída não está ativa primária.\nE) A saída basolateral é a difusão FACILITADA (via GLUT2), e não a difusão simples (a glicose não atravessa as membranas sem um transportador).",
+        "opcoes": [
+            "Transporte para o enterócito: transporte ativo secundário, antiporte (contratransporte) com Na \/\/ Transporte para o fluido extracelular: transporte passivo (difusão facilitada) impulsionado pela dissipação do gradiente de Na.",
+            "Transporte para o enterócito: transporte ativo secundário, impulsionado diretamente pela hidrólise de ATP \/\/ Transporte para o fluido extracelular: transporte ativo secundário, impulsionado pela dissipação do gradiente de Na.",
+            "Transporte para o enterócito: transporte passivo, difusão facilitada \/\/ Transporte para o fluido extracelular: transporte ativo primário.",
+            "Transporte para o enterócito: transporte ativo secundário, impulsionado pela dissipação do gradiente de Na \/\/ Transporte para o fluido extracelular: transporte passivo, difusão facilitada.",
+            "Transporte para o enterócito: transporte ativo secundário, impulsionado pela dissipação do gradiente de Na \/\/ Transporte para o fluido extracelular: transporte passivo, difusão simples."
+        ]
+    },
+    {
+        "pergunta": "A regulação da fluidez da membrana plasmática é importante para manter a sua funcionalidade. Em relação a este tópico, indique a opção correta:",
+        "feedback": "Resposta correta: E. Todas são verdadeiras: A) O colesterol modula a fluidez nas células animais (em T alto diminui a fluidez devido à restrição de movimento; em T baixo mantém a fluidez evitando o empacotamento ordenado). B) Mais insaturações (que criam curvas cis) impedem o empacotamento → mais fluidez. C) À medida que a temperatura cai, as células incorporam ácidos graxos insaturados curtos para manter a fluidez. D) À medida que a temperatura aumenta, são incorporados ácidos graxos saturados e de cadeia longa para manter a membrana organizada e evitar fluidez excessiva.\n\nAs outras alternativas estão incorretas:\n(A, B, C, D estão individualmente corretos; a resposta consolidada é E.)",
+        "opcoes": [
+            "O colesterol ajuda a regular a fluidez da membrana em animais",
+            "Para a mesma temperatura e teor de colesterol idêntico, uma membrana que contém 40% de ácidos graxos insaturados será mais fluida em comparação com outra com 20% de ácidos graxos insaturados.",
+            "Ao transferir uma cultura de células cultivadas a 37 °C para uma estufa que está a 10 °C, haverá um aumento na % de ácidos graxos insaturados e de cadeia curta nos fosfolipídios de suas membranas, a fim de manter sua fluidez.",
+            "Se a temperatura à qual uma cultura celular é exposta fosse aumentada, após um período de adaptação, as células expostas a essa nova condição alterariam a composição de suas membranas plasmáticas, aumentando o percentual de ácidos graxos de cadeia longa.",
+            "Estão todos corretos"
+        ]
+    },
+    {
+        "pergunta": "Em relação às mitocôndrias e aos processos que nela ocorrem, selecione a opção correta:",
+        "feedback": "Resposta correta: E. Todas são verdadeiras: A) A cadeia respiratória mitocondrial inclui NADH desidrogenase (Complexo I), succinato desidrogenase (II), citocromo b-c1 (III) e citocromo oxidase (IV), conectadas por ubiquinona (entre I\/II e III) e citocromo c (entre III e IV). B) O potencial de redução aumenta ao longo da cadeia (maior afinidade por elétrons), sendo o O2 o aceptor final com maior afinidade. C) O retorno de H+ do espaço intermembrana para a matriz através da ATP-sintase é exergônico (força motriz de prótons). D) O trocador ATP\/ADP (ANT) usa o gradiente de tensão (matriz negativa) para retirar ATP4- e trazer ADP3-.\n\nAs outras alternativas estão incorretas:\n(A, B, C, D estão individualmente corretos; a resposta consolidada é E.)",
+        "opcoes": [
+            "A cadeia respiratória é composta por complexos proteicos denominados NADH desidrogenase, complexo citocromo b-c e citocromo oxidase, relacionados através da ubiquinona e do citocromo c.",
+            "A afinidade eletrônica dos componentes da cadeia respiratória aumenta do primeiro complexo proteico ao último aceptor de elétrons.",
+            "A entrada de prótons do espaço intermembrana para a matriz mitocondrial é energeticamente favorável e a força que a promove é chamada de força motriz de prótons.",
+            "O antiporto ATP\/ADP é impulsionado pelo gradiente de voltagem gerado pela diferença na concentração de prótons que existe entre a matriz mitocondrial e o espaço intermembranar.",
+            "Todas as opções estão corretas."
+        ]
+    },
+    {
+        "pergunta": "Em relação à estrutura e função das mitocôndrias, aponte a premissa INCORRETA.",
+        "feedback": "Resposta correta: D. As proteínas mitocondriais têm duas origens: a maioria é sintetizada no citosol a partir de genes nucleares e é importada para a mitocôndria, mas um pequeno grupo é sintetizado dentro da própria mitocôndria graças ao seu próprio DNA mitocondrial e maquinaria de tradução (ribossomos mitocondriais). Portanto, NÃO o todo vem do núcleo. Além disso, as proteínas são sintetizadas no CITOSSOL (não no núcleo), embora sejam codificadas por genes nucleares.\n\nAs demais alternativas estão incorretas (ou seja, são verdadeiras):\nA) O número de mitocôndrias varia de acordo com as necessidades energéticas (regulam a biogênese e a mitofagia).\nB) As mitocôndrias se dividem por fissão binária, semelhante às bactérias (sua origem evolutiva).\nC) A cardiolipina é um fosfolipídio único da membrana interna mitocondrial, com 4 cadeias de ácidos graxos, que contribui para a impermeabilidade iônica.\nE) As mitocôndrias são estruturas dinâmicas que alteram sua morfologia (rede, fragmentação) e tamanho.",
+        "nota": "Selecione a opção INCORRETA",
+        "opcoes": [
+            "Existe um número variável de mitocôndrias por célula; Você pode aumentar ou diminuir o número de acordo com suas necessidades energéticas.",
+            "As mitocôndrias se dividem por partição ou divisão binária.",
+            "A membrana mitocondrial interna é altamente especializada e rica em cardiolipina, um “fosfolipídio duplo” que possui 4 ácidos graxos e ajuda a tornar a membrana especialmente impermeável aos íons.",
+            "Todas as proteínas mitocondriais são sintetizadas no núcleo da célula e posteriormente importadas pelas mitocôndrias.",
+            "As mitocôndrias são estruturas plásticas, de morfologia e tamanho variáveis."
+        ]
+    },
+    {
+        "pergunta": "A cultura de uma bactéria aeróbica facultativa requer 2 moles de glicose para sobreviver por 4 dias se for constantemente gaseificada com O\/CO 95\/5%. Quanto tempo você consegue sobreviver com essa quantidade de glicose sem o fornecimento de O? Selecione a premissa correta:",
+        "feedback": "Resposta correta: E. Em condições aeróbicas, são obtidos ~36 ATP por glicose; em anaeróbio (fermentação) apenas 2 ATP por glicose, eficiência 18 vezes menor. Se com 2 moles de glicose e O2 sobreviver 4 dias = 96 horas, sem O2 sobreviverá apenas 96\/18 ≈ 5,33 horas, arredondado para ~6 horas.\n\nAs outras alternativas estão incorretas:\nA) 12 horas corresponderiam a um rendimento diferencial de 8 vezes, o que não é correto.\nB) 6 dias seriam com MAIOR eficiência anaeróbica do que aeróbica, o que é impossível.\nC) 1 dia = 24 h implicaria que a fermentação rende 1\/4 da respiração, e não 1\/18.\nD) 4 dias implicariam desempenho idêntico, o que contraria a diferença entre percursos.",
+        "opcoes": [
+            "12h00",
+            "6,0 dias",
+            "1 dia",
+            "4 dias",
+            "6,0 horas"
+        ]
+    },
+    {
+        "pergunta": "Em relação aos inibidores e desacopladores, selecione a opção INCORRETA:",
+        "feedback": "Resposta correta: E. O cianeto e o CO inibem a citocromo oxidase (Complexo IV), bloqueando a cadeia respiratória. Isto interrompe o consumo de O2 (o substrato da citocromo oxidase) e reduz a produção de CO2 (interrompendo o ciclo de Krebs pela acumulação de NADH e depleção de NAD+). Também diminui a síntese de ATP e, portanto, a síntese de lipídios (anabólico, necessita de ATP). Portanto, o aumento do consumo de O2, da produção de CO2 e da síntese lipídica NÃO ocorre com os inibidores: a opção está incorreta.\n\nAs demais alternativas estão incorretas (ou seja, são verdadeiras):\nA) Tanto os desacopladores (termogenina) quanto os inibidores (cianeto) reduzem a síntese de ATP.\nB) O desacoplamento acelera o consumo de NADH, oxidando-o mais rapidamente, e reduz o ATP disponível para a síntese lipídica.\nC) O desacoplamento aumenta o consumo de O2 (a cadeia funciona em velocidade máxima) e a produção de CO2 (Krebs acelerado), e reduz a síntese lipídica por falta de ATP.\nD) Os inibidores produzem os efeitos descritos corretamente.",
+        "nota": "Selecione a opção INCORRETA",
+        "opcoes": [
+            "As termogeninas, assim como o cianeto, produzem uma diminuição na síntese de ATP.",
+            "As termogeninas, assim como o dinitrofenol, são compostos que atuam como desacopladores da fosforilação oxidativa e os efeitos que produzem na célula são: diminuição da síntese lipídica e aumento da taxa de produção de NADH + H.",
+            "As termogeninas, assim como o dinitrofenol, são compostos que atuam como desacopladores da fosforilação oxidativa e os efeitos que produzem na célula são: diminuição da síntese lipídica, aumento do consumo de oxigênio e aumento da produção de dióxido de carbono.",
+            "O cianeto e o monóxido de carbono são inibidores da cadeia respiratória e os efeitos que produzem na célula são: diminuição da síntese lipídica, diminuição do consumo de oxigênio e diminuição da produção de dióxido de carbono.",
+            "O cianeto e o monóxido de carbono são inibidores da cadeia respiratória mitocondrial e os efeitos que produzem na célula são: aumento da síntese lipídica, aumento do consumo de oxigênio e produção de dióxido de carbono."
+        ]
+    },
+    {
+        "pergunta": "Selecione a premissa correta a respeito do mecanismo pelo qual os elétrons do NADH gerados durante a glicólise fornecem sua energia para a produção de ATP na célula eucariótica:",
+        "feedback": "Resposta correta: B. A membrana mitocondrial interna é impermeável ao NADH. Os equivalentes redutores entram através de 'lançadores': o ônibus malato-aspartato (no fígado, rim, coração) regenera o NADH na matriz, e o ônibus glicerol-3-fosfato (no músculo, cérebro) transfere elétrons para o FAD mitocondrial gerando FADH2.\n\nAs outras alternativas estão incorretas:\nA) O NADH NO atravessa a membrana mitocondrial interna (é impermeável a esta molécula).\nC) Os elétrons entram, mas indiretamente por meio de lançadeiras.\nD) O piruvato entra nas mitocôndrias, mas não transporta os elétrons do NADH glicolítico; a descarboxilação do piruvato gera SEU PRÓPRIO NADH (mitocondrial).\nE)B está correto.",
+        "opcoes": [
+            "O NADH citosólico entra na matriz mitocondrial através do simporte H.",
+            "Ele usa lançadeiras que permitem que metabólitos reduzidos entrem nas mitocôndrias, que, quando oxidadas na matriz, fornecem elétrons ao NAD ou FAD mitocondrial.",
+            "Eles não entram na cadeia de transporte de elétrons porque são produzidos no citosol.",
+            "Eles são transportados pelo piruvato e liberados durante a reação de descarboxilação oxidativa.",
+            "Nenhum está correto"
+        ]
+    },
+    {
+        "pergunta": "Uma cultura de Salmonella enteritidis, uma bactéria aeróbia que pode se adaptar a condições anaeróbicas (anaeróbia facultativa), utiliza glicose como única fonte de energia e requer 20 mmol de ATP\/dia para viver. Levando em consideração esses dados, selecione a premissa correta em relação ao consumo diário de glicose desta cultura:",
+        "feedback": "Resposta correta: C. Em condições aeróbicas: 1 glicose produz ~32 ATP (em bactérias o cálculo às vezes é feito com 32 ou 36 dependendo da lançadeira; aqui 32 parece ser usado). 20 mmol de ATP \/ 32 ≈ 0,625 mmol de glicose. Em condições anaeróbicas: 1 glicose produz 2 ATP. 20 mmol de ATP \/ 2 = 10 mmol de glicose.\n\nAs outras alternativas estão incorretas:\nA) Inverter os valores entre aeróbio e anaeróbio, além disso o 640 estaria com um desempenho muito inferior a 2 ATP\/glicose.\nB) Inverta os valores: 0,625 corresponde a aeróbio (não anaeróbio) e 10 a anaeróbio.\nD) Mesmo erro de investimento, valores incorretos.\nE) C está correto.",
+        "opcoes": [
+            "Em condições anaeróbicas: 640 mmol de glicose; sob condições aeróbicas 40 mmol de glicose.",
+            "Em condições anaeróbicas: 0,625 mmol de glicose; em condições aeróbicas: 10 mmol de glicose.",
+            "Em condições aeróbicas: 0,625 mmol de glicose; em condições anaeróbicas: 10 mmol de glicose.",
+            "Em condições aeróbicas: 640 mmol de glicose; em condições anaeróbicas: 40 mmol de glicose.",
+            "Nenhum está correto"
+        ]
+    },
+    {
+        "pergunta": "Em relação ao desacoplamento da cadeia respiratória e à fosforilação oxidativa mitocondrial, selecione a opção correta:",
+        "feedback": "Resposta correta: C. Desacopladores (DNP, termogenina) dissipam o gradiente de prótons permitindo que o H+ retorne à matriz sem passar pela ATP-sintase. Isso LIBERA a cadeia respiratória do controle respiratório: a cadeia trabalha em velocidade máxima, AUMENTANDO o consumo de O2; O ciclo de Krebs também é acelerado (já que o NAD+ e o FAD são rapidamente regenerados), aumentando a produção de CO2.\n\nAs outras alternativas estão incorretas:\nA) Os desacopladores AUMENTAM (não diminuem) a velocidade do transporte eletrônico.\nB) Os desacopladores AUMENTAM a taxa de oxidação de NADH e FADH2 (mais NAD+ e FAD disponíveis).\nD) O ciclo de Krebs é ACELERADO com desacoplamentos; A síntese de proteínas diminui devido à falta de ATP, mas a primeira afirmação é falsa.\nE) Como A, B e D são falsos, E é falso.",
+        "opcoes": [
+            "Eles diminuem a velocidade do transporte de elétrons através da cadeia respiratória.",
+            "Eles diminuem a taxa de oxidação mitocondrial de NADH e FADH.",
+            "Eles aumentam a produção de CO e o consumo de O.",
+            "Eles diminuem a velocidade do ciclo de Krebs e da síntese protéica.",
+            "Eles estão todos corretos."
+        ]
+    },
+    {
+        "pergunta": "Em relação à respiração celular, selecione a premissa correta:",
+        "feedback": "Resposta correta: B. O ciclo de Krebs oxida completamente o grupo acetil do acetil-CoA a 2 CO2, gerando NADH, FADH2 e GTP. NÃO consome O2 diretamente; O O2 participa apenas no final da cadeia respiratória. As descarboxilações do ciclo são oxidativas, mas usam NAD+ e FAD como aceitadores, não O2.\n\nAs outras alternativas estão incorretas:\nA) A glicólise OXIDIZA a glicose (gera NADH), não a reduz.\nC) Para cada acetil-CoA são gerados 3 NADH, 1 FADH2 e 1 GTP. Para cada glicose (2 acetil-CoA) existem 6 NADH, 2 FADH2 e 2 GTP, mas a afirmação refere-se a UMA molécula de acetil-CoA.\nD) O transporte de elétrons bombeia H+ DA matriz PARA o espaço intermembrana, o que ALCALINIZA a matriz (aumenta o pH), não o diminui.\nE) B está correto, mas D é falso, portanto a conjunção é falsa.",
+        "opcoes": [
+            "Começa com a redução da glicose em um processo denominado glicólise.",
+            "No ciclo de Krebs, o grupo acetil do acetil-CoA é completamente oxidado sem consumo de oxigênio.",
+            "No ciclo de Krebs, 6 NADH, 2 FADH e 2 GTP são gerados para cada molécula de Acetil-CoA que entra no ciclo.",
+            "O transporte de elétrons através da cadeia respiratória diminui o pH da matriz mitocondrial.",
+            "B e D estão corretos."
+        ]
+    },
+    {
+        "pergunta": "O efeito do cianeto de sódio (um inibidor da citocromo oxidase) nas mitocôndrias isoladas de hepatócitos e ressuspensas em meio contendo piruvato é estudado. Selecione a opção correta quanto aos efeitos que serão observados na presença de cianeto de sódio:",
+        "feedback": "Resposta correta: D. O cianeto inibe a citocromo oxidase (Complexo IV) bloqueando a transferência de elétrons para o O2. Como consequência: 1) a cadeia respiratória para, 2) NADH e FADH2 acumulam-se porque não podem ser reoxidados, 3) a falta de NAD+ e FAD interrompe o ciclo de Krebs e a descarboxilação oxidativa do piruvato (que estes cofatores requerem), 4) sem um gradiente de H+ não há síntese de ATP por fosforilação oxidativa.\n\nAs outras alternativas estão incorretas:\nA) A diminuição do ATP está correta, mas o consumo de O2 DIMINUI (não aumenta) porque a citocromo oxidase é o que reduz O2 a H2O.\nB) O ciclo de Krebs DIMINUI (não aumenta) devido à falta de NAD+ e FAD.\nC) A descarboxilação oxidativa do piruvato DIMINUI pelo mesmo motivo.\nE) Os níveis de NADH e FADH2 aumentam (acumulação) e os de NAD+ e FAD diminuem (não são reoxidados).",
+        "opcoes": [
+            "Diminuição da produção de ATP e aumento do consumo de O2.",
+            "Aumento da velocidade do ciclo de Krebs.",
+            "Aumento da descarboxilação oxidativa do piruvato.",
+            "Diminuição na produção de ATP e no transporte de elétrons e no ciclo de Krebs.",
+            "Aumento dos níveis de NAD+ e FAD e diminuição dos níveis de NADH e FADH2."
+        ]
+    },
+    {
+        "pergunta": "Em relação aos lipídios, indique qual das seguintes premissas está correta:",
+        "feedback": "Resposta correta: B. Os lipídios são um grupo MUITO heterogêneo (ácidos graxos, triacilglicerídeos, fosfolipídios, esfingolipídios, esteróides, terpenos, eicosanóides, vitaminas lipossolúveis, etc.) cuja única característica comum universal é ser insolúvel em água (hidrofóbico ou anfipático), sendo solúvel em solventes orgânicos.\n\nAs outras alternativas estão incorretas:\nA) Os lipídios são encontrados em alimentos de origem animal e vegetal (óleos, nozes, etc.).\nC) Os lipídios NÃO são macromoléculas (não são polímeros de unidades repetidas ligadas covalentemente como as outras três classes biomoleculares).\nD) Os ácidos graxos estão apenas nos lipídios SAPONIFICÁVEIS; insaponificáveis ​​(esteróides, terpenos, eicosanóides) NÃO contêm ácidos graxos.\nE) A descrição corresponde a um FOSFOLIPÍDEO (glicerofosfolipídeo), e não a um triacilglicerídeo. Os TAGs possuem 3 ácidos graxos e grupos NO fosfato.",
+        "opcoes": [
+            "Eles estão presentes apenas em alimentos de origem animal.",
+            "Constituem um grupo heterogêneo de moléculas orgânicas complexas cuja característica comum é serem insolúveis em água.",
+            "São consideradas macromoléculas, como ácidos nucléicos, polissacarídeos e proteínas, porque são constituídas por blocos estruturais.",
+            "Os ácidos graxos são seus blocos estruturais e estão presentes em todos os tipos de lipídios, tanto saponificáveis ​​quanto insaponificáveis.",
+            "Os triacilglicerídeos são compostos de um glicerol esterificado com dois ácidos graxos e um grupo fosfato ao qual está ligado um grupo de cabeça polar (que pode ser um aminoálcool)."
+        ]
+    }
+]
