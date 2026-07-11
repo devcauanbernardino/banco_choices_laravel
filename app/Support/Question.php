@@ -247,16 +247,51 @@ class Question
         return array_values(array_map(fn ($v) => is_scalar($v) ? (string) $v : '', $raw));
     }
 
+    private const MASCOTE_KEYS = ['robo', 'fantasma', 'gato'];
+
     /**
      * Explicações por alternativa (índice 0 = A, etc.), quando o banco já tem esse
      * conteúdo migrado. Ausente ou vazio nessa posição = nada a exibir ali ainda.
      *
+     * Bancos migrados guardam uma versão do texto por mascote (mesma informação
+     * médica, forma de falar diferente): {"robo": [...], "fantasma": [...], "gato": [...]}.
+     * Bancos antigos ainda têm uma lista única (sem personalidade) — nesse caso
+     * $mascoteKey é ignorado e a mesma lista vale para todos.
+     *
      * @return list<string>
      */
-    public function getExplicacoesAlternativas(): array
+    public function getExplicacoesAlternativas(?string $mascoteKey = null): array
     {
         $raw = $this->data['explicacoes'] ?? null;
         if (! is_array($raw) || $raw === []) {
+            return [];
+        }
+
+        if ($this->isPerMascote($raw)) {
+            $lista = ($mascoteKey !== null && isset($raw[$mascoteKey])) ? $raw[$mascoteKey] : reset($raw);
+
+            return $this->normalizeExplicacoesList(is_array($lista) ? $lista : []);
+        }
+
+        return $this->normalizeExplicacoesList($raw);
+    }
+
+    public function getExplicacaoAlternativa(int $index, ?string $mascoteKey = null): string
+    {
+        return $this->getExplicacoesAlternativas($mascoteKey)[$index] ?? '';
+    }
+
+    private function isPerMascote(array $raw): bool
+    {
+        return array_intersect(array_keys($raw), self::MASCOTE_KEYS) !== [];
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function normalizeExplicacoesList(array $raw): array
+    {
+        if ($raw === []) {
             return [];
         }
 
@@ -275,11 +310,6 @@ class Question
         }
 
         return array_values(array_map(fn ($v) => is_scalar($v) ? trim((string) $v) : '', $raw));
-    }
-
-    public function getExplicacaoAlternativa(int $index): string
-    {
-        return $this->getExplicacoesAlternativas()[$index] ?? '';
     }
 
     public function getData(): array

@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Services\AI\GeminiClient;
+use App\Support\MascotePersonality;
 use App\Support\Question;
 use App\Support\QuestionLocale;
 use App\Support\SimulationSession;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AiChatController extends Controller
 {
@@ -41,8 +43,10 @@ class AiChatController extends Controller
         };
 
         $contexto = $this->contextoQuestaoAtual();
+        $mascoteKey = Auth::user()->mascote ?? null;
 
-        $system = 'Você é um tutor de medicina que ajuda estudantes a entender conteúdo e tirar dúvidas de forma clara e direta. '
+        $system = MascotePersonality::systemPrefix($mascoteKey)
+            .' Você ajuda estudantes de medicina a entender conteúdo e tirar dúvidas de forma clara e direta. '
             ."Responda sempre em {$idioma}. Seja objetivo, no máximo 6 frases por resposta, a menos que o aluno peça mais detalhes."
             .($contexto !== '' ? "\n\nContexto: o aluno está respondendo agora esta questão:\n{$contexto}" : '');
 

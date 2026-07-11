@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Materia;
 use App\Services\AI\GeminiClient;
 use App\Services\Questions\QuestionExamBuilder;
+use App\Support\MascotePersonality;
 use App\Support\Question;
 use App\Support\QuestionBankLocator;
 use App\Support\QuestionLocale;
@@ -390,8 +391,10 @@ class SimulationController extends Controller
             .$instrucoes.' Não use marcadores, listas, títulos nem markdown — apenas texto corrido dividido em parágrafos curtos.'
             ." Responda em {$idioma}.";
 
-        $system = 'Você é um tutor de medicina que explica questões de prova de forma clara, direta e didática '
-            .'para estudantes de graduação.';
+        $mascoteKey = Auth::user()->mascote ?? null;
+
+        $system = MascotePersonality::systemPrefix($mascoteKey)
+            .' Você explica questões de prova de medicina de forma clara e didática para estudantes de graduação.';
 
         try {
             $explicacao = app(GeminiClient::class)->generate($prompt, $system);

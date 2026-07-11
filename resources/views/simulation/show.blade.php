@@ -61,8 +61,9 @@
 
 @section('content')
 @php
+    $mascoteKey = auth()->user()->mascote ?? null;
     $opcoes = $questao->getOpcoes();
-    $explicacoes = $questao->getExplicacoesAlternativas();
+    $explicacoes = $questao->getExplicacoesAlternativas($mascoteKey);
     $letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
     $respostaAtual = $respostas[$indiceAtual] ?? null;
     $textoPergunta = $questao->getPergunta();
@@ -76,7 +77,6 @@
     $totalCorretas = count(array_filter($mapaStatus, fn ($s) => $s === 'correta'));
     $pctAcertos = $totalRespondidas > 0 ? round(($totalCorretas / $totalRespondidas) * 100) : 0;
 
-    $mascoteKey = auth()->user()->mascote ?? null;
     $mascoteFiles = [
         'robo' => 'robo-choice.png',
         'fantasma' => 'fantasma-choice.png',
