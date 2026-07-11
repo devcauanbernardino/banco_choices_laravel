@@ -326,11 +326,20 @@
                 </div>
             @endif
 
-            <a href="{{ route('result.show') }}"
-               style="width:100%; padding:12px; border-radius:12px; border:1.5px solid rgba(239,68,68,.3); background:transparent; color:#f87171; font-size:.85rem; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:7px; text-decoration:none;">
-                <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">logout</span>
-                {{ __('quiz.end_early') }}
-            </a>
+            <div class="qz-card" style="border-radius:18px; padding:16px; display:flex; flex-direction:column; gap:10px;">
+                <a href="{{ route('dashboard') }}" class="qz-btn-ghost"
+                   style="width:100%; padding:12px; border-radius:12px; font-size:.85rem; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:7px; text-decoration:none;">
+                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">pause_circle</span>
+                    {{ __('quiz.pause_exit') }}
+                </a>
+                <p style="font-size:.72rem; color:var(--app-muted); line-height:1.5; margin:0; text-align:center;">{{ __('quiz.pause_hint') }}</p>
+
+                <a href="{{ route('result.show') }}"
+                   style="width:100%; padding:12px; border-radius:12px; border:1.5px solid rgba(239,68,68,.3); background:transparent; color:#f87171; font-size:.85rem; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:7px; text-decoration:none;">
+                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">logout</span>
+                    {{ __('quiz.end_early') }}
+                </a>
+            </div>
         </aside>
     </div>
 </div>
