@@ -389,6 +389,8 @@ class SimulationController extends Controller
             .'Resposta correta: '.(implode(', ', $corretaLetras) ?: 'não definida')."\n"
             .'Resposta do aluno: '.($usuarioLetras !== [] ? implode(', ', $usuarioLetras) : 'não respondeu')."\n\n"
             .$instrucoes.' Não use marcadores, listas, títulos nem markdown — apenas texto corrido dividido em parágrafos curtos.'
+            .' Vá direto para a explicação: não se apresente, não cumprimente, não repita seu nome nem sua personagem '
+            .'(o aluno já sabe quem você é — isso aparece várias vezes na mesma sessão de estudo e ficaria repetitivo).'
             ." Responda em {$idioma}.";
 
         $mascoteKey = Auth::user()->mascote ?? null;

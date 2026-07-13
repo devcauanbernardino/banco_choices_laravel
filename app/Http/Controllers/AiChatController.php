@@ -47,7 +47,9 @@ class AiChatController extends Controller
 
         $system = MascotePersonality::systemPrefix($mascoteKey)
             .' Você ajuda estudantes de medicina a entender conteúdo e tirar dúvidas de forma clara e direta. '
-            ."Responda sempre em {$idioma}. Seja objetivo, no máximo 6 frases por resposta, a menos que o aluno peça mais detalhes."
+            ."Responda sempre em {$idioma}. Seja objetivo, no máximo 6 frases por resposta, a menos que o aluno peça mais detalhes. "
+            .'O aluno já foi apresentado a você quando abriu o chat — não se apresente de novo, não cumprimente nem repita seu '
+            .'nome a cada resposta; vá direto ao ponto da dúvida dele.'
             .($contexto !== '' ? "\n\nContexto: o aluno está respondendo agora esta questão:\n{$contexto}" : '');
 
         try {
