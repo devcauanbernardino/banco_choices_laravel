@@ -111,6 +111,10 @@ class SimulationController extends Controller
             'atual' => 0,
             'respostas' => [],
             'feedback' => [],
+            // Guardados só para poder repetir o mesmo filtro depois (botão "fazer outro" no resultado).
+            'filtro_parciais' => $parciais,
+            'filtro_temas' => $temas,
+            'filtro_quantidade' => $quantidadeSolicitada,
         ];
 
         if ($request->input('modo') === 'exame') {
@@ -119,6 +123,7 @@ class SimulationController extends Controller
 
             $data['inicio'] = time();
             $data['tempo_total'] = SimulationTimer::secondsFromMinutes($tempoMinutos);
+            $data['filtro_tempo_minutos'] = $tempoMinutos;
         }
 
         $this->sim->init($data);

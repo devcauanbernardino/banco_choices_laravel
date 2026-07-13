@@ -157,6 +157,30 @@
 
         {{-- Actions --}}
         <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; animation:fadeUp .6s .22s ease both;">
+            @if (! empty($repetirFiltro) && ! empty($repetirFiltro['materia']))
+                <form method="POST" action="{{ route('simulation.create') }}">
+                    @csrf
+                    <input type="hidden" name="materia" value="{{ $repetirFiltro['materia'] }}">
+                    @if (! empty($repetirFiltro['catedra_id']))
+                        <input type="hidden" name="catedra_id" value="{{ $repetirFiltro['catedra_id'] }}">
+                    @endif
+                    @foreach ($repetirFiltro['parciais'] as $p)
+                        <input type="hidden" name="parcial[]" value="{{ $p }}">
+                    @endforeach
+                    @foreach ($repetirFiltro['temas'] as $t)
+                        <input type="hidden" name="tema[]" value="{{ $t }}">
+                    @endforeach
+                    <input type="hidden" name="quantidade" value="{{ $repetirFiltro['quantidade'] }}">
+                    <input type="hidden" name="modo" value="{{ $repetirFiltro['modo'] }}">
+                    @if (! empty($repetirFiltro['tempo_minutos']))
+                        <input type="hidden" name="tempo_minutos" value="{{ $repetirFiltro['tempo_minutos'] }}">
+                    @endif
+                    <button type="submit" style="display:inline-flex; align-items:center; gap:9px; padding:13px 26px; border-radius:12px; border:1.5px solid rgba(139,31,184,.35); background:var(--app-surface); color:var(--app-text); font-family:'Poppins',sans-serif; font-weight:700; font-size:.92rem; cursor:pointer;">
+                        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">tune</span>
+                        {{ __('result.repeat_same_filter') }}
+                    </button>
+                </form>
+            @endif
             <a href="{{ route('questionbank') }}" style="display:inline-flex; align-items:center; gap:9px; padding:13px 26px; border-radius:12px; background:linear-gradient(135deg,#8b1fb8,#6a0392); color:#fff; font-family:'Poppins',sans-serif; font-weight:700; font-size:.92rem; text-decoration:none; box-shadow:0 6px 20px rgba(106,3,146,.28);">
                 <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.1rem;">replay</span>
                 {{ __('result.new_quiz') }}

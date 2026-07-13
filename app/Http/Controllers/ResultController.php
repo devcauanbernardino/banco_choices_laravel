@@ -38,9 +38,11 @@ class ResultController extends Controller
             $tempoSegundos = (int) $tempoSegundos;
         }
 
+        $repetirFiltro = null;
+
         return view('simulation.result', compact(
             'acertos', 'total', 'porcentagem', 'detalhes', 'modo',
-            'materiaNome', 'tempoSegundos'
+            'materiaNome', 'tempoSegundos', 'repetirFiltro'
         ));
     }
 
@@ -57,6 +59,16 @@ class ResultController extends Controller
         $modo = $sim->get('modo') ?? 'estudo';
         $materiaId = $sim->get('materia');
         $materiaNome = $sim->get('materia_nome') ?? '';
+
+        $repetirFiltro = [
+            'materia' => $materiaId,
+            'catedra_id' => $sim->get('catedra_id'),
+            'parciais' => (array) ($sim->get('filtro_parciais') ?? []),
+            'temas' => (array) ($sim->get('filtro_temas') ?? []),
+            'quantidade' => $sim->get('filtro_quantidade'),
+            'modo' => $modo,
+            'tempo_minutos' => $sim->get('filtro_tempo_minutos'),
+        ];
 
         $acertos = 0;
         $total = count($questoes);
@@ -123,7 +135,7 @@ class ResultController extends Controller
 
         return view('simulation.result', compact(
             'acertos', 'total', 'porcentagem', 'detalhes', 'modo',
-            'materiaNome', 'tempoSegundos'
+            'materiaNome', 'tempoSegundos', 'repetirFiltro'
         ));
     }
 }
