@@ -161,8 +161,10 @@
 .fc-tema-filter__item { display: flex; align-items: center; gap: 6px; font-weight: 500; color: var(--app-text); cursor: pointer; }
 
 /* Navegação livre */
-.fc-browse-link { align-self: flex-start; background: none; border: none; padding: 0; font-size: .78rem; font-weight: 700; color: #8b1fb8; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
-[data-theme="dark"] .fc-browse-link { color: #c77dfd; }
+.fc-browse-link { align-self: stretch; text-align: center; padding: 8px 14px; border-radius: 10px; border: 1px solid rgba(139,31,184,.3); background: transparent; font-size: .82rem; font-weight: 700; color: #8b1fb8; cursor: pointer; text-decoration: none; transition: background .15s ease; }
+.fc-browse-link:hover { background: rgba(139,31,184,.08); }
+[data-theme="dark"] .fc-browse-link { color: #c77dfd; border-color: rgba(199,125,253,.3); }
+[data-theme="dark"] .fc-browse-link:hover { background: rgba(199,125,253,.1); }
 </style>
 @endpush
 
@@ -221,7 +223,7 @@
                             @if ($mastery['aprendendo'] > 0)<span class="fc-mastery__seg fc-mastery__seg--aprendendo" style="flex-basis: {{ $mastery['aprendendo'] / $mastery['total'] * 100 }}%"></span>@endif
                             @if ($mastery['novo'] > 0)<span class="fc-mastery__seg fc-mastery__seg--novo" style="flex-basis: {{ $mastery['novo'] / $mastery['total'] * 100 }}%"></span>@endif
                         </div>
-                        <span class="fc-mastery__label">{{ __('flashcards.card.mastery_label', ['dominado' => $mastery['dominado'], 'total' => $mastery['total']]) }}</span>
+                        <span class="fc-mastery__label">{{ __('flashcards.card.mastery_label', ['aprendendo' => $mastery['aprendendo'], 'dominado' => $mastery['dominado'], 'total' => $mastery['total']]) }}</span>
                     </div>
                 @endif
 
