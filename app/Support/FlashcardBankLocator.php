@@ -57,6 +57,28 @@ final class FlashcardBankLocator
     }
 
     /**
+     * Temas distintos marcados nos cartões desta materia (campo opcional "tema").
+     * Baralhos ainda nao marcados retornam [] — o filtro de tema simplesmente nao aparece.
+     *
+     * @return list<string>
+     */
+    public static function temasDisponiveis(int $materiaId): array
+    {
+        $temas = [];
+        foreach (self::loadList($materiaId) as $carta) {
+            $tema = trim((string) ($carta['tema'] ?? ''));
+            if ($tema !== '') {
+                $temas[$tema] = true;
+            }
+        }
+
+        $out = array_keys($temas);
+        sort($out, SORT_NATURAL | SORT_FLAG_CASE);
+
+        return $out;
+    }
+
+    /**
      * @return list<array<string, mixed>>
      */
     public static function loadList(int $materiaId): array

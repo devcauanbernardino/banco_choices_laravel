@@ -10,6 +10,7 @@ class FlashcardQueueBuilder
     public const DEFAULT_NEW_CARDS_PER_DAY = 20;
 
     /**
+     * @param  list<string>  $temas  Se nao vazio, restringe a fila aos cartoes marcados com um desses temas.
      * @return array{
      *     due: list<array{overlay_key: int}>,
      *     new: list<array{overlay_key: int}>,
@@ -18,9 +19,9 @@ class FlashcardQueueBuilder
      *     new_available_count: int
      * }
      */
-    public static function buildQueue(int $userId, int $materiaId, int $novosPorDia = self::DEFAULT_NEW_CARDS_PER_DAY): array
+    public static function buildQueue(int $userId, int $materiaId, int $novosPorDia = self::DEFAULT_NEW_CARDS_PER_DAY, array $temas = []): array
     {
-        $total = count(FlashcardBankLocator::loadList($materiaId));
+        $overlayKeys = self::eligibleOverlayKeys($materiaId, $temas);
 
         $progressoPorOverlay = FlashcardProgresso::query()
             ->where('usuario_id', $userId)
@@ -32,7 +33,7 @@ class FlashcardQueueBuilder
         $due = [];
         $new = [];
 
-        for ($overlayKey = 0; $overlayKey < $total; $overlayKey++) {
+        foreach ($overlayKeys as $overlayKey) {
             /** @var FlashcardProgresso|null $p */
             $p = $progressoPorOverlay->get($overlayKey);
 
@@ -75,5 +76,42 @@ class FlashcardQueueBuilder
         unset($result['due'], $result['new']);
 
         return $result;
+    }
+
+    /**
+     * Fila com todos os cartoes da materia (ou do(s) tema(s) filtrado(s)), sem distincao
+     * due/novo e sem SM-2 — usada pelo modo de navegacao livre.
+     *
+     * @param  list<string>  $temas
+     * @return list<array{overlay_key: int}>
+     */
+    public static function buildFreeBrowseQueue(int $materiaId, array $temas = []): array
+    {
+        return array_map(
+            static fn (int $overlayKey) => ['overlay_key' => $overlayKey],
+            self::eligibleOverlayKeys($materiaId, $temas)
+        );
+    }
+
+    /**
+     * @param  list<string>  $temas
+     * @return list<int>
+     */
+    private static function eligibleOverlayKeys(int $materiaId, array $temas): array
+    {
+        $lista = FlashcardBankLocator::loadList($materiaId);
+
+        if ($temas === []) {
+            return array_keys($lista);
+        }
+
+        $out = [];
+        foreach ($lista as $overlayKey => $carta) {
+            if (in_array((string) ($carta['tema'] ?? ''), $temas, true)) {
+                $out[] = $overlayKey;
+            }
+        }
+
+        return $out;
     }
 }

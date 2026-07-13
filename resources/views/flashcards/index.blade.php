@@ -133,6 +133,36 @@
 .fc-sum__cell { background: rgba(255,255,255,.4); border: 1px solid rgba(120,120,140,.18); border-radius: 12px; padding: 12px 6px; }
 [data-theme="dark"] .fc-sum__cell { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.1); }
 .fc-sum__cell strong { display: block; font-size: 1.1rem; }
+
+/* Faixa de resumo (streak, revisados hoje, atividade recente) */
+.fc-summary-strip { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-bottom: 20px; padding: 14px 18px; border-radius: 16px; background: rgba(255,255,255,.5); border: 1px solid rgba(255,255,255,.5); backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px) saturate(180%); box-shadow: 0 8px 22px rgba(31,10,60,.06); }
+[data-theme="dark"] .fc-summary-strip { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.1); box-shadow: 0 8px 22px rgba(0,0,0,.3); }
+.fc-summary-chip { display: flex; align-items: center; gap: 6px; font-size: .84rem; font-weight: 700; color: var(--app-text); }
+.fc-summary-chip .material-symbols-outlined { font-size: 1.15rem; color: #ea580c; }
+.fc-summary-chip--done .material-symbols-outlined { color: #0d9488; }
+.fc-summary-mini-chart { display: flex; align-items: flex-end; gap: 4px; height: 28px; margin-left: auto; }
+.fc-summary-bar { width: 6px; height: var(--h); background: linear-gradient(180deg,#8b1fb8,#6a0392); border-radius: 3px; min-height: 3px; }
+[data-theme="dark"] .fc-summary-bar { background: linear-gradient(180deg,#c77dfd,#8b1fb8); }
+
+/* Progresso de domínio por matéria */
+.fc-mastery { display: flex; flex-direction: column; gap: 4px; }
+.fc-mastery__bar { display: flex; width: 100%; height: 6px; border-radius: 4px; overflow: hidden; background: rgba(120,120,140,.15); }
+.fc-mastery__seg--dominado { background: #0d9488; }
+.fc-mastery__seg--aprendendo { background: #d97706; }
+.fc-mastery__seg--novo { background: rgba(120,120,140,.35); }
+.fc-mastery__label { font-size: .72rem; color: var(--app-muted); font-weight: 600; }
+
+/* Filtro de tema (colapsável, só aparece quando o baralho tem temas marcados) */
+.fc-tema-filter { font-size: .78rem; }
+.fc-tema-filter summary { cursor: pointer; font-weight: 700; color: #8b1fb8; list-style: none; }
+[data-theme="dark"] .fc-tema-filter summary { color: #c77dfd; }
+.fc-tema-filter summary::-webkit-details-marker { display: none; }
+.fc-tema-filter__list { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; max-height: 140px; overflow-y: auto; }
+.fc-tema-filter__item { display: flex; align-items: center; gap: 6px; font-weight: 500; color: var(--app-text); cursor: pointer; }
+
+/* Navegação livre */
+.fc-browse-link { align-self: flex-start; background: none; border: none; padding: 0; font-size: .78rem; font-weight: 700; color: #8b1fb8; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+[data-theme="dark"] .fc-browse-link { color: #c77dfd; }
 </style>
 @endpush
 
@@ -142,12 +172,33 @@
     <p>{{ __('flashcards.header.sub') }}</p>
 </div>
 
+@php $maxN = max(1, collect($ultimos7dias ?? [])->max('n')); @endphp
+<div class="fc-summary-strip">
+    <span class="fc-summary-chip">
+        <span class="material-symbols-outlined" aria-hidden="true">local_fire_department</span>
+        <span>{{ __('flashcards.stats.streak', ['n' => $streak ?? 0]) }}</span>
+    </span>
+    <span class="fc-summary-chip fc-summary-chip--done">
+        <span class="material-symbols-outlined" aria-hidden="true">task_alt</span>
+        <span>{{ __('flashcards.stats.reviewed_today', ['n' => $revisadosHoje ?? 0]) }}</span>
+    </span>
+    <div class="fc-summary-mini-chart" aria-hidden="true">
+        @foreach (($ultimos7dias ?? []) as $dia)
+            <div class="fc-summary-bar" style="--h: {{ $dia['n'] > 0 ? max(10, round($dia['n'] / $maxN * 100)) : 4 }}%" title="{{ __('flashcards.stats.day_tooltip', ['data' => $dia['data'], 'n' => $dia['n']]) }}"></div>
+        @endforeach
+    </div>
+</div>
+
 @if ($materias->isEmpty())
     <p class="text-muted">{{ __('flashcards.no_subjects') }}</p>
 @else
     <div class="fc-grid">
         @foreach ($materias as $m)
-            @php $resumo = $resumoPorMateria[$m->id] ?? ['due_count' => 0, 'new_count' => 0, 'new_available_count' => 0]; @endphp
+            @php
+                $resumo = $resumoPorMateria[$m->id] ?? ['due_count' => 0, 'new_count' => 0, 'new_available_count' => 0, 'mastery' => ['dominado' => 0, 'aprendendo' => 0, 'novo' => 0, 'total' => 0], 'temas' => []];
+                $mastery = $resumo['mastery'] ?? ['dominado' => 0, 'aprendendo' => 0, 'novo' => 0, 'total' => 0];
+                $temas = $resumo['temas'] ?? [];
+            @endphp
             <div class="fc-card">
                 <div class="fc-card__icon"><span class="material-symbols-outlined" aria-hidden="true">style</span></div>
                 <h3 class="fc-card__title">{{ \App\Support\MateriaLocale::nome($m) }}</h3>
@@ -162,6 +213,32 @@
                         <span class="fc-badge fc-badge--empty">{{ __('flashcards.card.all_caught_up') }}</span>
                     @endif
                 </div>
+
+                @if ($mastery['total'] > 0)
+                    <div class="fc-mastery">
+                        <div class="fc-mastery__bar">
+                            @if ($mastery['dominado'] > 0)<span class="fc-mastery__seg fc-mastery__seg--dominado" style="flex-basis: {{ $mastery['dominado'] / $mastery['total'] * 100 }}%"></span>@endif
+                            @if ($mastery['aprendendo'] > 0)<span class="fc-mastery__seg fc-mastery__seg--aprendendo" style="flex-basis: {{ $mastery['aprendendo'] / $mastery['total'] * 100 }}%"></span>@endif
+                            @if ($mastery['novo'] > 0)<span class="fc-mastery__seg fc-mastery__seg--novo" style="flex-basis: {{ $mastery['novo'] / $mastery['total'] * 100 }}%"></span>@endif
+                        </div>
+                        <span class="fc-mastery__label">{{ __('flashcards.card.mastery_label', ['dominado' => $mastery['dominado'], 'total' => $mastery['total']]) }}</span>
+                    </div>
+                @endif
+
+                @if (! empty($temas))
+                    <details class="fc-tema-filter">
+                        <summary>{{ __('flashcards.form.filter_by_tema') }}</summary>
+                        <div class="fc-tema-filter__list">
+                            @foreach ($temas as $tema)
+                                <label class="fc-tema-filter__item">
+                                    <input type="checkbox" value="{{ $tema }}" data-fc-tema>
+                                    {{ $tema }}
+                                </label>
+                            @endforeach
+                        </div>
+                    </details>
+                @endif
+
                 <form class="fc-card__actions" data-fc-start>
                     <input type="hidden" name="materia" value="{{ $m->id }}">
                     <div class="fc-stepper">
@@ -174,6 +251,9 @@
                         {{ __('flashcards.form.start') }}
                     </button>
                 </form>
+                <button type="button" class="fc-browse-link" data-fc-browse data-materia="{{ $m->id }}">
+                    {{ __('flashcards.form.browse_free') }}
+                </button>
             </div>
         @endforeach
     </div>
@@ -222,6 +302,9 @@
                         <button type="button" class="fc-nav-btn" id="fcPrevBtn">
                             <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
                             {{ __('flashcards.review.nav_previous') }}
+                        </button>
+                        <button type="button" class="fc-nav-btn d-none" id="fcFinishBrowseBtn" data-bs-dismiss="modal">
+                            {{ __('flashcards.review.finish_browse') }}
                         </button>
                         <button type="button" class="fc-nav-btn" id="fcNextBtn">
                             {{ __('flashcards.review.nav_next') }}
@@ -286,6 +369,7 @@
     var backFace = document.getElementById('fcBackFace');
     var prevBtn = document.getElementById('fcPrevBtn');
     var nextBtn = document.getElementById('fcNextBtn');
+    var finishBrowseBtn = document.getElementById('fcFinishBrowseBtn');
     var revealHint = document.getElementById('fcRevealHint');
     var frenteTag = document.getElementById('fcFrenteTag');
     var frenteText = document.getElementById('fcFrenteText');
@@ -302,6 +386,7 @@
     var intervalNewLabel = @json(__('flashcards.review.interval_new'));
     var intervalDaysTpl = @json(__('flashcards.review.interval_days', ['n' => '__N__']));
     var streakTpl = @json(__('flashcards.review.streak_days', ['n' => '__N__']));
+    var freeModeTagLabel = @json(__('flashcards.review.free_mode_tag'));
 
     var timerHandle = null;
     var timerStart = 0;
@@ -352,12 +437,17 @@
         if (hasVerso) {
             versoText.textContent = data.verso;
         }
-        revealHint.textContent = (data.intervalo_atual ? intervalDaysTpl.replace('__N__', data.intervalo_atual) : intervalNewLabel) + ' · ' + (hasVerso ? flipHintLabel : revealBtnLabel);
+
+        var livre = data.modo === 'livre';
+        finishBrowseBtn.classList.toggle('d-none', !livre);
+        revealHint.textContent = livre
+            ? freeModeTagLabel
+            : (data.intervalo_atual ? intervalDaysTpl.replace('__N__', data.intervalo_atual) : intervalNewLabel) + ' · ' + (hasVerso ? flipHintLabel : revealBtnLabel);
 
         if (data.revelado) {
             stopTimer();
             flip.classList.add('is-flipped');
-            rateGrid.classList.remove('d-none');
+            rateGrid.classList.toggle('d-none', livre);
         } else {
             startTimer();
             flip.classList.remove('is-flipped');
@@ -386,11 +476,16 @@
         document.getElementById('fcSumFacil').textContent = data.contagem.facil;
     }
 
-    function startReview(materiaId, novosPorDia) {
+    function collectTemas(cardEl) {
+        if (!cardEl) return [];
+        return Array.prototype.map.call(cardEl.querySelectorAll('[data-fc-tema]:checked'), function (el) { return el.value; });
+    }
+
+    function startReview(materiaId, novosPorDia, modo, temas) {
         fetch('{{ route('flashcards.create') }}', {
             method: 'POST',
             headers: headers(),
-            body: JSON.stringify({ materia: materiaId, novos_por_dia: novosPorDia })
+            body: JSON.stringify({ materia: materiaId, novos_por_dia: novosPorDia, modo: modo || 'revisao', temas: temas || [] })
         }).then(function (r) {
             return r.json().then(function (body) { return { ok: r.ok, body: body }; });
         }).then(function (res) {
@@ -456,7 +551,13 @@
             ev.preventDefault();
             var materiaId = form.querySelector('[name="materia"]').value;
             var novos = form.querySelector('[name="novos_por_dia"]').value;
-            startReview(materiaId, novos);
+            startReview(materiaId, novos, 'revisao', collectTemas(form.closest('.fc-card')));
+        });
+    });
+
+    document.querySelectorAll('[data-fc-browse]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            startReview(btn.dataset.materia, 0, 'livre', collectTemas(btn.closest('.fc-card')));
         });
     });
 

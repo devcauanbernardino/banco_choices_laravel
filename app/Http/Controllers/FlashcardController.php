@@ -31,10 +31,20 @@ class FlashcardController extends Controller
         $materias = $user->materiasUnicas();
 
         $resumoPorMateria = $materias->mapWithKeys(function (Materia $m) use ($user) {
-            return [$m->id => FlashcardQueueBuilder::counts((int) $user->id, (int) $m->id)];
+            $materiaId = (int) $m->id;
+
+            return [$materiaId => array_merge(
+                FlashcardQueueBuilder::counts((int) $user->id, $materiaId),
+                ['mastery' => $this->masteryBreakdown((int) $user->id, $materiaId)],
+                ['temas' => FlashcardBankLocator::temasDisponiveis($materiaId)],
+            )];
         });
 
-        return view('flashcards.index', compact('materias', 'resumoPorMateria'));
+        $streak = $this->calcularStreakDias((int) $user->id);
+        $revisadosHoje = $this->revisadosHoje((int) $user->id);
+        $ultimos7dias = $this->ultimos7Dias((int) $user->id);
+
+        return view('flashcards.index', compact('materias', 'resumoPorMateria', 'streak', 'revisadosHoje', 'ultimos7dias'));
     }
 
     public function create(Request $request): JsonResponse
@@ -42,6 +52,9 @@ class FlashcardController extends Controller
         $request->validate([
             'materia' => 'required|integer|exists:materias,id',
             'novos_por_dia' => 'nullable|integer|min:0|max:200',
+            'modo' => 'nullable|in:revisao,livre',
+            'temas' => 'nullable|array',
+            'temas.*' => 'string',
         ]);
 
         /** @var \App\Models\User $user */
@@ -53,19 +66,29 @@ class FlashcardController extends Controller
         }
 
         $materia = Materia::query()->findOrFail($materiaId);
-        $novosPorDia = (int) $request->input('novos_por_dia', FlashcardQueueBuilder::DEFAULT_NEW_CARDS_PER_DAY);
+        $modo = $request->input('modo') === 'livre' ? 'livre' : 'revisao';
+        $temas = array_values(array_filter(
+            (array) $request->input('temas', []),
+            fn ($t) => is_string($t) && $t !== ''
+        ));
 
-        $fila = FlashcardQueueBuilder::buildQueue((int) $user->id, $materiaId, $novosPorDia);
-        $refs = array_merge($fila['due'], $fila['new']);
-
-        if ($refs === []) {
-            // Nada devido/novo agora: em vez de bloquear, libera uma revisão livre de todo o baralho.
-            $total = count(FlashcardBankLocator::loadList($materiaId));
-            if ($total === 0) {
+        if ($modo === 'livre') {
+            $refs = FlashcardQueueBuilder::buildFreeBrowseQueue($materiaId, $temas);
+            if ($refs === []) {
                 return response()->json(['error' => __('flashcards.err.nothing_to_review')], 422);
             }
+        } else {
+            $novosPorDia = (int) $request->input('novos_por_dia', FlashcardQueueBuilder::DEFAULT_NEW_CARDS_PER_DAY);
+            $fila = FlashcardQueueBuilder::buildQueue((int) $user->id, $materiaId, $novosPorDia, $temas);
+            $refs = array_merge($fila['due'], $fila['new']);
 
-            $refs = array_map(fn (int $k) => ['overlay_key' => $k], range(0, $total - 1));
+            if ($refs === []) {
+                // Nada devido/novo agora: em vez de bloquear, libera uma revisão livre de todo o baralho (respeitando o filtro de tema).
+                $refs = FlashcardQueueBuilder::buildFreeBrowseQueue($materiaId, $temas);
+                if ($refs === []) {
+                    return response()->json(['error' => __('flashcards.err.nothing_to_review')], 422);
+                }
+            }
         }
 
         $this->sessao->init([
@@ -75,6 +98,7 @@ class FlashcardController extends Controller
             'atual' => 0,
             'revelado' => false,
             'resultados' => [],
+            'modo' => $modo,
         ]);
 
         return response()->json($this->cardPayload());
@@ -111,6 +135,10 @@ class FlashcardController extends Controller
         }
 
         if ($request->has('avaliar')) {
+            if ($this->sessao->get('modo') !== 'revisao') {
+                return response()->json(['error' => __('flashcards.err.invalid_action')], 422);
+            }
+
             if (! $this->sessao->get('revelado')) {
                 return response()->json(['error' => __('flashcards.err.reveal_first')], 409);
             }
@@ -165,7 +193,7 @@ class FlashcardController extends Controller
         return [
             'finished' => false,
             'materia_nome' => $this->sessao->get('materia_nome') ?? '',
-            'tema' => null,
+            'tema' => is_string($carta['tema'] ?? null) && $carta['tema'] !== '' ? $carta['tema'] : null,
             'numero' => $atual + 1,
             'streak_dias' => $this->calcularStreakDias((int) $user->id),
             'intervalo_atual' => $progresso ? (int) $progresso->intervalo_dias : null,
@@ -174,7 +202,61 @@ class FlashcardController extends Controller
             'revelado' => $revelado,
             'atual' => $atual,
             'total' => count($fila),
+            'modo' => (string) ($this->sessao->get('modo') ?? 'revisao'),
         ];
+    }
+
+    /**
+     * @return array{dominado: int, aprendendo: int, novo: int, total: int}
+     */
+    private function masteryBreakdown(int $userId, int $materiaId): array
+    {
+        $total = count(FlashcardBankLocator::loadList($materiaId));
+
+        $rows = FlashcardProgresso::query()
+            ->where('usuario_id', $userId)
+            ->where('materia_id', $materiaId)
+            ->get(['intervalo_dias']);
+
+        $dominado = $rows->where('intervalo_dias', '>=', Sm2Scheduler::MATURE_THRESHOLD_DAYS)->count();
+        $comProgresso = $rows->count();
+
+        return [
+            'dominado' => $dominado,
+            'aprendendo' => $comProgresso - $dominado,
+            'novo' => $total - $comProgresso,
+            'total' => $total,
+        ];
+    }
+
+    private function revisadosHoje(int $uid): int
+    {
+        return (int) DB::table('flashcard_progresso')
+            ->where('usuario_id', $uid)
+            ->whereDate('ultima_revisao_em', now()->toDateString())
+            ->count();
+    }
+
+    /**
+     * @return list<array{data: string, n: int}>
+     */
+    private function ultimos7Dias(int $uid): array
+    {
+        $rows = DB::table('flashcard_progresso')
+            ->where('usuario_id', $uid)
+            ->where('ultima_revisao_em', '>=', now()->subDays(6)->startOfDay())
+            ->selectRaw('DATE(ultima_revisao_em) as dia, COUNT(*) as n')
+            ->groupBy('dia')
+            ->pluck('n', 'dia');
+
+        $out = [];
+        for ($i = 6; $i >= 0; $i--) {
+            $data = now()->subDays($i);
+            $chave = $data->toDateString();
+            $out[] = ['data' => $data->format('d/m'), 'n' => (int) ($rows[$chave] ?? 0)];
+        }
+
+        return $out;
     }
 
     private function calcularStreakDias(int $uid): int

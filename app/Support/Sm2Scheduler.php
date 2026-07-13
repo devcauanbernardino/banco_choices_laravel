@@ -17,6 +17,9 @@ final class Sm2Scheduler
 
     public const DEFAULT_EASE_FACTOR = 2.5;
 
+    /** Intervalo (em dias) a partir do qual um cartão é considerado "dominado" (convenção do Anki). */
+    public const MATURE_THRESHOLD_DAYS = 21;
+
     /**
      * @return array{ease_factor: float, interval_days: int, repetitions: int}
      */
