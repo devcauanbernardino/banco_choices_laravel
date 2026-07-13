@@ -1,0 +1,1952 @@
+[
+    {
+        "pergunta": "Levando em conta a classificação das ciências: (assinale a opção correta)",
+        "opcoes": [
+            "As ciências fáticas têm um objeto ideal e procedem por indução: do particular ao geral.",
+            "As ciências formais têm um objeto ideal e procedem por indução: do geral ao particular.",
+            "As ciências fáticas têm um objeto real e procedem preferencialmente por indução: do particular ao geral."
+        ],
+        "explicacoes": {
+            "robo": [
+                "As ciências fáticas têm objeto real, não ideal; o objeto ideal é próprio das ciências formais.",
+                "As ciências formais procedem por dedução, não por indução; além disso seu objeto é ideal, mas o sentido indutivo descrito não lhes corresponde.",
+                "As ciências fáticas (como a Medicina, a Física ou a Biologia) têm um objeto real, concreto e observável, e procedem preferencialmente por indução: do particular ao geral."
+            ],
+            "fantasma": [
+                "Ojo, as fáticas têm objeto real, não ideal — isso é das formais.",
+                "Eita, as formais vão por dedução, não por indução.",
+                "Essa aí! As fáticas têm objeto real e vão do particular ao geral por indução."
+            ],
+            "gato": [
+                "Fijate: as fáticas têm objeto real, não ideal.",
+                "Dado curioso: as formais procedem por dedução, não indução.",
+                "Ronronado de aprovação! Objeto real + indução, assim são as ciências fáticas."
+            ]
+        }
+    },
+    {
+        "pergunta": "O conhecimento científico se caracteriza por ser: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Metódico e sistemático",
+            "Analítico e definitivo",
+            "Subjetivo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O conhecimento científico é metódico (segue procedimentos organizados) e sistemático (seus elementos se articulam em um corpo coerente).",
+                "Não é definitivo; o conhecimento científico é provisório e pode ser revisado.",
+                "Não é subjetivo; busca a intersubjetividade, ou seja, que possa ser verificado por outros."
+            ],
+            "fantasma": [
+                "Essa aí! Metódico e sistemático, assim é o conhecimento científico.",
+                "Eita, não é definitivo, sempre pode ser revisado.",
+                "Ojo, não é subjetivo, busca que outros possam verificá-lo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Metódico e sistemático.",
+                "Dado curioso: não é definitivo, sempre pode ser revisado.",
+                "Fijate: não é subjetivo, busca a intersubjetividade."
+            ]
+        }
+    },
+    {
+        "pergunta": "O método científico: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Segue procedimentos que respondem a uma estrutura lógica prévia",
+            "Chega a conclusões verdadeiras que não podem voltar a ser produzidas",
+            "Trata-se de um sistema de relações entre hipóteses verdadeiras e derivações empíricas estabelecidas com base em princípios descritivos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O método científico segue procedimentos que respondem a uma estrutura lógica prévia.",
+                "É incorreta: as conclusões sim podem (e devem) voltar a ser produzidas, essa é a reprodutibilidade.",
+                "Não se trata de hipóteses já verdadeiras; as hipóteses são provisórias até serem contrastadas."
+            ],
+            "fantasma": [
+                "Essa aí! Segue uma estrutura lógica prévia, esse é o método científico.",
+                "Eita, as conclusões sim devem poder ser reproduzidas, não o contrário.",
+                "As hipóteses não são verdadeiras de saída, são provisórias."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Estrutura lógica prévia, assim funciona o método científico.",
+                "Miau, as conclusões sim devem ser reprodutíveis.",
+                "Dado curioso: as hipóteses são provisórias, não verdadeiras de saída."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma hipótese: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Deve se submeter a um padrão de demonstração. Requer-se que ela tenha uma ou várias consequências observacionais",
+            "Deve se submeter a um padrão de descoberta, por isso se requer que ela tenha uma ou várias consequências observacionais",
+            "É um enunciado verdadeiro e verificado cientificamente"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma hipótese é um enunciado provisório que deve se submeter ao padrão de demonstração: derivam-se consequências observacionais dela e se contrastam com a experiência.",
+                "O padrão de descoberta se refere ao processo de geração da hipótese, não à sua verificação.",
+                "Não é um enunciado já verdadeiro; é provisório até ser contrastado."
+            ],
+            "fantasma": [
+                "Essa aí! Vai ao padrão de demonstração, contrastando suas consequências observacionais com a experiência.",
+                "Eita, o padrão de descoberta é sobre como a hipótese nasce, não como se verifica.",
+                "Ojo, não é verdadeira de saída, é provisória."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Padrão de demonstração, contrastando com a experiência.",
+                "Fijate: o padrão de descoberta é sobre como nasce, não como se verifica.",
+                "Miau, não é verdadeira de saída."
+            ]
+        }
+    },
+    {
+        "pergunta": "O raciocínio ou inferência indutiva: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A força conclusiva da indução é maior que a da dedução",
+            "À conclusão se interpõe \"provavelmente\"",
+            "Parte de enunciados gerais"
+        ],
+        "explicacoes": {
+            "robo": [
+                "É o contrário: a força conclusiva da indução é menor que a da dedução.",
+                "Na indução, mesmo que as premissas sejam verdadeiras e o raciocínio correto, a conclusão é apenas provável.",
+                "A indução vai do particular ao geral, não parte de enunciados gerais; isso é a dedução."
+            ],
+            "fantasma": [
+                "Eita, é o contrário: a dedução tem mais força conclusiva.",
+                "Essa aí! Na indução a conclusão sempre é apenas provável.",
+                "A indução vai do particular ao geral, não o contrário."
+            ],
+            "gato": [
+                "Miau, é o contrário, a dedução tem mais força.",
+                "Ronronado de aprovação! A conclusão indutiva é sempre apenas provável.",
+                "Fijate: a indução vai do particular ao geral."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os três elementos essenciais que configuram uma ciência são: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Um termo afirmativo conjetural, um método e um objeto.",
+            "Uma hipótese verdadeira, um campo de atuação e um padrão de descoberta",
+            "Um conteúdo teórico próprio - Paradigma -, um objeto de estudo sobre o qual trabalha e um método de procedimento."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Contém elementos que não são os essenciais reconhecidos para constituir uma ciência.",
+                "Uma hipótese não é necessariamente verdadeira, e essa combinação não é a formulação reconhecida.",
+                "Toda ciência se constitui por um paradigma próprio, um objeto de estudo específico e um método de procedimento."
+            ],
+            "fantasma": [
+                "Esses não são os elementos essenciais reconhecidos.",
+                "Uma hipótese não é verdadeira de saída, e essa combinação não é a correta.",
+                "Essa aí! Paradigma, objeto e método, os três pilares de uma ciência."
+            ],
+            "gato": [
+                "Miau, esses não são os elementos essenciais.",
+                "Dado curioso: uma hipótese não é verdadeira de saída.",
+                "Ronronado de aprovação! Paradigma, objeto e método."
+            ]
+        }
+    },
+    {
+        "pergunta": "A ciência é um conjunto de conhecimentos sobre a realidade observável, obtidos através do método científico. Os três elementos essenciais que configuram uma ciência são: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Um objeto sobre o qual a ciência trabalha, um método ou procedimento e um marco teórico",
+            "Um problema, um paradigma científico e a observação de fatos.",
+            "Um termo afirmativo conjetural, um método e um objeto."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os três elementos essenciais de uma ciência são: objeto, método ou procedimento e marco teórico — a formulação mais completa.",
+                "Essa combinação não é a formulação reconhecida dos elementos essenciais de uma ciência.",
+                "Contém um elemento (termo afirmativo conjetural) que não faz parte da estrutura essencial reconhecida."
+            ],
+            "fantasma": [
+                "Essa aí! Objeto, método e marco teórico, a combinação mais completa.",
+                "Essa combinação não é a reconhecida para os elementos essenciais.",
+                "Esse 'termo afirmativo conjetural' não é parte da estrutura essencial."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Objeto, método e marco teórico.",
+                "Miau, essa combinação não é a reconhecida.",
+                "Fijate: esse termo não é parte da estrutura essencial."
+            ]
+        }
+    },
+    {
+        "pergunta": "Sobre o Padrão de descoberta: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A verificação ou refutação da hipótese",
+            "É também um Padrão de produção, achado ou invenção e depende de fatores psicológicos e sociais.",
+            "Uma conclusão que nasce da observação e depende de fatores racionais e lógicos."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Isso corresponde ao padrão de demonstração, não ao de descoberta.",
+                "O padrão de descoberta (também chamado de produção, achado ou invenção) é o processo pelo qual se gera a hipótese, e depende de fatores psicológicos e sociais do pesquisador.",
+                "O padrão de descoberta não depende exclusivamente de fatores racionais e lógicos; intervêm a intuição e o contexto."
+            ],
+            "fantasma": [
+                "Isso é o padrão de demonstração, não o de descoberta.",
+                "Essa aí! É o padrão de produção/achado, e depende de fatores psicológicos e sociais do pesquisador.",
+                "Não depende só do racional e lógico, também da intuição e do contexto."
+            ],
+            "gato": [
+                "Miau, isso é o padrão de demonstração.",
+                "Ronronado de aprovação! Produção, achado ou invenção, com fatores psicológicos e sociais.",
+                "Fijate: não depende só do racional e lógico."
+            ]
+        }
+    },
+    {
+        "pergunta": "A lógica: (Marque a opção verdadeira)",
+        "opcoes": [
+            "É a disciplina que se ocupa de estudar as leis dos pensamentos",
+            "É a disciplina que estuda as inferências e os termos verdadeiros",
+            "É a disciplina que se ocupa de estudar as leis dos raciocínios"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Estudar as leis dos pensamentos em geral é tarefa da psicologia, não da lógica.",
+                "A lógica não determina se os termos são verdadeiros; isso corresponde a outras disciplinas.",
+                "A lógica é a disciplina filosófica que estuda as leis dos raciocínios: as regras que determinam quando uma conclusão se segue corretamente das premissas."
+            ],
+            "fantasma": [
+                "Isso é mais da psicologia, não da lógica.",
+                "A lógica não determina se os termos são verdadeiros.",
+                "Essa aí! Estuda as leis dos raciocínios, quando uma conclusão se segue bem das premissas."
+            ],
+            "gato": [
+                "Miau, isso é da psicologia.",
+                "Dado curioso: a lógica não determina a verdade dos termos.",
+                "Ronronado de aprovação! Leis dos raciocínios, isso é a lógica."
+            ]
+        }
+    },
+    {
+        "pergunta": "Levando em conta os Padrões da Ciência: (Marque a opção verdadeira)",
+        "opcoes": [
+            "O padrão de descoberta é o processo de verificação, validação ou justificação",
+            "O padrão de demonstração é o processo de verificação, validação ou justificação",
+            "O padrão de demonstração é aquele que permite gerar a hipótese."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Inverte a relação: o padrão de descoberta é o que permite gerar a hipótese, não verificá-la.",
+                "O padrão de demonstração (ou de justificação/validação) é aquele pelo qual se verifica, valida ou refuta a hipótese mediante o confronto com a experiência.",
+                "Inverte a relação: é o padrão de descoberta que permite gerar a hipótese."
+            ],
+            "fantasma": [
+                "Ao contrário: o de descoberta gera a hipótese, não a verifica.",
+                "Essa aí! O de demonstração é o que verifica, valida ou refuta a hipótese.",
+                "Ao contrário: é o de descoberta que gera a hipótese."
+            ],
+            "gato": [
+                "Miau, é o contrário, isso é da descoberta.",
+                "Ronronado de aprovação! Demonstração = verificação, validação ou justificação.",
+                "Dado curioso: é o contrário, isso é da descoberta."
+            ]
+        }
+    },
+    {
+        "pergunta": "O conhecimento científico se caracteriza por ser: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Verdadeiro, definitivo, e não modificável",
+            "Comunicável por meio de uma linguagem precisa",
+            "Levar em conta os valores ou crenças do próprio pesquisador ou instaladas na comunidade, ou seja, é subjetivo."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é definitivo nem não modificável; o conhecimento científico é provisório e pode ser revisado.",
+                "O conhecimento científico é comunicável mediante uma linguagem precisa, o que permite que seja compartilhado, discutido e verificado pela comunidade científica.",
+                "Não é subjetivo; busca a objetividade intersubjetiva, não depende de crenças pessoais."
+            ],
+            "fantasma": [
+                "Eita, não é definitivo, sempre pode ser revisado.",
+                "Essa aí! Comunicável com linguagem precisa, assim se compartilha e verifica.",
+                "Não é subjetivo, busca a objetividade intersubjetiva."
+            ],
+            "gato": [
+                "Miau, não é definitivo.",
+                "Ronronado de aprovação! Linguagem precisa para poder compartilhar e verificar.",
+                "Fijate: não é subjetivo."
+            ]
+        }
+    },
+    {
+        "pergunta": "O processo científico tem dois padrões: (Marque a opção verdadeira)",
+        "opcoes": [
+            "O padrão de descoberta se apoia nos estudos complementares",
+            "O padrão de demonstração em Medicina tem um condicionamento ético.",
+            "O padrão de descoberta utiliza exclusivamente a lógica para corroborar a hipótese"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O padrão de descoberta não se define por se apoiar em estudos complementares; depende de fatores psicológicos e sociais.",
+                "Na Medicina, o padrão de demonstração tem um condicionamento ético fundamental: a experimentação com seres humanos está sujeita a princípios bioéticos.",
+                "O padrão de descoberta não corrobora hipóteses só com lógica; isso é tarefa do padrão de demonstração."
+            ],
+            "fantasma": [
+                "Isso não define o padrão de descoberta.",
+                "Essa aí! Na Medicina, demonstrar tem limites éticos, como o consentimento informado.",
+                "Corroborar com lógica é tarefa do padrão de demonstração, não do de descoberta."
+            ],
+            "gato": [
+                "Miau, isso não define o padrão de descoberta.",
+                "Ronronado de aprovação! Na Medicina, demonstrar tem condicionantes éticos.",
+                "Fijate: corroborar é tarefa do padrão de demonstração."
+            ]
+        }
+    },
+    {
+        "pergunta": "Para que seja possível o conhecimento científico, um Fato deve cumprir as seguintes condições: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Pode ser real ou ideal, intersubjetivo e efetivo",
+            "Observação efetiva, repetível e intersubjetivo",
+            "Ser normativo, interpessoal e irrepetível"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O fato científico deve ser real (não ideal) para servir de base empírica ao conhecimento.",
+                "Para que um fato seja base do conhecimento científico deve ser observável efetivamente, repetível e intersubjetivo.",
+                "A irrepetibilidade impediria a verificação científica; um fato científico deve poder ser reproduzido."
+            ],
+            "fantasma": [
+                "O fato científico precisa ser real, não ideal.",
+                "Essa aí! Observação efetiva, repetível e intersubjetiva, assim é o fato científico.",
+                "Eita, se fosse irrepetível não daria para verificar."
+            ],
+            "gato": [
+                "Miau, o fato científico é real, não ideal.",
+                "Ronronado de aprovação! Efetivo, repetível e intersubjetivo.",
+                "Fijate: irrepetível impediria verificar, não serve."
+            ]
+        }
+    },
+    {
+        "pergunta": "O Padrão de descoberta é: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Um enunciado que nasce da observação empírica de uma pessoa em um meio social",
+            "A verificação ou refutação da hipótese",
+            "Um enunciado que nasce da observação e depende de fatores racionais e lógicos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O padrão de descoberta é o processo pelo qual surge uma hipótese: nasce da observação empírica do pesquisador em um contexto social determinado.",
+                "Isso corresponde ao padrão de demonstração, não ao de descoberta.",
+                "Não depende exclusivamente de fatores racionais e lógicos; também de fatores psicológicos, culturais e criativos."
+            ],
+            "fantasma": [
+                "Essa aí! Nasce da observação empírica em um contexto social, isso é o padrão de descoberta.",
+                "Isso é o padrão de demonstração.",
+                "Não depende só do racional e lógico."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Observação empírica em um contexto social.",
+                "Miau, isso é o padrão de demonstração.",
+                "Fijate: não depende só do racional e lógico."
+            ]
+        }
+    },
+    {
+        "pergunta": "O modelo bioético é constituído pelos seguintes princípios: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Não maleficência",
+            "Dependência do médico.",
+            "Equanimidade"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os quatro princípios do modelo bioético são: não maleficência, beneficência, autonomia e justiça; a não maleficência é um deles.",
+                "A dependência do médico não é um princípio bioético reconhecido.",
+                "A equanimidade não é um princípio bioético reconhecido no modelo de Beauchamp e Childress."
+            ],
+            "fantasma": [
+                "Essa aí! Não maleficência é um dos quatro princípios bioéticos clássicos.",
+                "Isso não é um princípio bioético reconhecido.",
+                "Equanimidade também não é um dos quatro reconhecidos."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Não maleficência, um dos quatro pilares bioéticos.",
+                "Miau, isso não é um princípio bioético.",
+                "Fijate: equanimidade também não é um dos quatro."
+            ]
+        }
+    },
+    {
+        "pergunta": "O princípio de não maleficência: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Se refere unicamente ao dano físico.",
+            "Implica manter uma atitude tradicionalista por parte do médico que assegure uma correta relação médico-paciente",
+            "Atualmente abrange não causar dano moral ou psicológico ao paciente, o que implica respeitar sua liberdade de pensamento, suas crenças religiosas e sua cultura"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O princípio evoluiu além do dano físico; também inclui o dano moral e psicológico.",
+                "Não se trata de uma atitude tradicionalista; o princípio se centra em evitar o dano, não em preservar formas de relação antigas.",
+                "O princípio de não maleficência atualmente inclui não causar dano moral nem psicológico ao paciente, respeitando sua liberdade de pensamento, crenças e cultura."
+            ],
+            "fantasma": [
+                "Eita, já não é só o dano físico, também o moral e psicológico.",
+                "Não tem a ver com atitudes tradicionalistas.",
+                "Essa aí! Hoje inclui não causar dano moral nem psicológico, respeitando crenças e cultura."
+            ],
+            "gato": [
+                "Miau, já não é só físico.",
+                "Fijate: não tem a ver com tradicionalismo.",
+                "Ronronado de aprovação! Inclui o dano moral e psicológico, respeitando o paciente."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Irreversibilidade dos direitos humanos implica: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Que a dignidade humana não admite relativismos, de modo que seria inconcebível que o que hoje se reconhece como um atributo inerente à pessoa, amanhã pudesse deixar de sê-lo por uma decisão governamental.",
+            "Que cada Nação pode ou não reconhecê-los.",
+            "Que uma vez que um determinado direito foi reconhecido como inerente à pessoa humana, pode ser revogado sem ser integrado à categoria de direitos cuja inviolabilidade deve ser respeitada e garantida."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A irreversibilidade implica que, uma vez reconhecido um direito humano, ele não pode deixar de ser reconhecido por decisão de um governo: a dignidade humana não admite relativismos.",
+                "Que cada nação possa ou não reconhecê-los seria relativismo, justo o que a irreversibilidade descarta.",
+                "Descreve erroneamente a irreversibilidade como revogabilidade; é o contrário do que o conceito implica."
+            ],
+            "fantasma": [
+                "Essa aí! A dignidade não admite relativismos, um direito reconhecido não se pode perder.",
+                "Isso seria relativismo, justo o contrário da irreversibilidade.",
+                "Ao contrário: a irreversibilidade significa que NÃO se pode revogar."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Um direito reconhecido não se pode perder por decisão de governo.",
+                "Miau, isso seria relativismo.",
+                "Fijate: é ao contrário, não se pode revogar."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os Direitos do paciente: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Constituem direitos essenciais na relação entre o paciente e o(s) profissional(is) de saúde, o(s) agente(s) do seguro de saúde, e qualquer efetor de que se trate.",
+            "Constituem direitos essenciais na relação entre o paciente e o médico, estabelecidos por cada organização de saúde de acordo com suas metas e objetivos.",
+            "Constituem as responsabilidades do paciente na consulta médica"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Segundo a Lei 26.529, os direitos do paciente são essenciais na relação com todos os atores do sistema: profissionais, agentes do seguro de saúde e qualquer efetor.",
+                "Não são definidos por cada organização de saúde; estão estabelecidos por lei, de forma geral.",
+                "Não são responsabilidades do paciente; são direitos que lhe correspondem."
+            ],
+            "fantasma": [
+                "Essa aí! A lei reconhece esses direitos diante de todos os atores do sistema de saúde.",
+                "Não são definidos por cada organização, estão na lei.",
+                "Não são responsabilidades, são direitos do paciente."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Direitos diante de todos os atores do sistema de saúde.",
+                "Miau, não os define cada organização, é a lei.",
+                "Fijate: são direitos, não responsabilidades."
+            ]
+        }
+    },
+    {
+        "pergunta": "O consentimento informado é: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Informação que o médico dá ao paciente sobre práticas eutanásicas.",
+            "Uma declaração de vontade suficiente feita pelo paciente ou por seus representantes legais, emitida após receber do profissional interveniente informação clara, precisa e adequada sobre o estado de sua saúde.",
+            "Uma declaração de vontade mediante a qual cada sujeito manifesta apenas por escrito e antecipadamente instruções relacionadas à tomada de decisões sobre sua saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O consentimento informado não se limita a informação sobre práticas eutanásicas; é um conceito muito mais amplo.",
+                "O consentimento informado (Lei 26.529) é uma declaração de vontade do paciente ou seus representantes, emitida após receber informação clara, precisa e adequada do profissional.",
+                "Essa descrição corresponde às diretivas antecipadas (instruções prévias), um conceito diferente do consentimento informado."
+            ],
+            "fantasma": [
+                "Não se limita a isso, é bem mais amplo.",
+                "Essa aí! Declaração de vontade após receber informação clara, precisa e adequada.",
+                "Isso é a diretiva antecipada, não o consentimento informado."
+            ],
+            "gato": [
+                "Miau, não se limita a isso.",
+                "Ronronado de aprovação! Vontade do paciente após informação clara e adequada.",
+                "Fijate: isso é a diretiva antecipada, outra coisa."
+            ]
+        }
+    },
+    {
+        "pergunta": "O princípio de autonomia: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Considera que o médico tem o direito de escolher e decidir o tratamento adequado para o paciente.",
+            "Fortalece e reivindica o tradicional modelo paternalista na relação médico-paciente.",
+            "Considera que o paciente tem o direito de exercer a liberdade de escolher e decidir sobre sua atenção"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Isso descreve o paternalismo médico, justo o oposto do princípio de autonomia.",
+                "O princípio de autonomia é a antítese do paternalismo, não seu fortalecimento.",
+                "O princípio de autonomia reconhece o direito do paciente de exercer sua liberdade de escolha e decisão sobre sua própria atenção médica."
+            ],
+            "fantasma": [
+                "Isso é paternalismo, o oposto da autonomia.",
+                "Eita, a autonomia é justo o contrário do paternalismo.",
+                "Essa aí! O paciente decide sobre sua própria atenção, isso é autonomia."
+            ],
+            "gato": [
+                "Miau, isso é paternalismo.",
+                "Fijate: a autonomia é o oposto do paternalismo.",
+                "Ronronado de aprovação! O paciente decide sobre sua atenção."
+            ]
+        }
+    },
+    {
+        "pergunta": "O Prontuário (História Clínica) se caracteriza por: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Ser uma prova documental que avalia o nível da qualidade assistencial, eximindo de responsabilidade o pessoal sanitário.",
+            "Responder a um marco teórico, estar sistematizado e utilizar linguagem científica.",
+            "Ser um documento opcional, cronológico, com páginas numeradas, e completo, no qual consta toda atualização realizada ao paciente por profissionais de saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não exime de responsabilidade o pessoal sanitário; pode até ser prova de sua conduta.",
+                "O Prontuário responde a um marco teórico, está sistematizado e utiliza linguagem científica.",
+                "Não é opcional; é um documento obrigatório."
+            ],
+            "fantasma": [
+                "Não exime ninguém de responsabilidade, pode ser prova.",
+                "Essa aí! Tem marco teórico, está sistematizado e usa linguagem científica.",
+                "Não é opcional, é obrigatório."
+            ],
+            "gato": [
+                "Miau, não exime de responsabilidade.",
+                "Ronronado de aprovação! Marco teórico, sistematizado, linguagem científica.",
+                "Fijate: não é opcional, é obrigatório."
+            ]
+        }
+    },
+    {
+        "pergunta": "Sobre os Princípios do Modelo Bioético: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A Justiça se rege pelo princípio de não maleficência e o paciente pelo princípio de bonança.",
+            "O médico se rege pelo princípio de não maleficência e beneficência, o paciente pelo de autonomia, e a sociedade pelo de justiça.",
+            "Implica uma relação vertical em que o médico toma as decisões mais adequadas."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa associação de princípios com atores não é a correta; 'bonança' nem sequer é um dos quatro princípios.",
+                "No modelo de Beauchamp e Childress, o médico se guia por não maleficência e beneficência, o paciente exerce autonomia e a sociedade zela pela justiça.",
+                "O modelo bioético não implica uma relação vertical; busca equilibrar a decisão entre médico, paciente e sociedade."
+            ],
+            "fantasma": [
+                "Essa associação não está correta, e 'bonança' nem é um princípio bioético.",
+                "Essa aí! Médico: não maleficência e beneficência. Paciente: autonomia. Sociedade: justiça.",
+                "Não é uma relação vertical, é um equilíbrio entre atores."
+            ],
+            "gato": [
+                "Miau, essa associação está errada, e 'bonança' não é um princípio.",
+                "Ronronado de aprovação! Cada ator com seu princípio: médico, paciente, sociedade.",
+                "Fijate: não é vertical, é um equilíbrio entre atores."
+            ]
+        }
+    },
+    {
+        "pergunta": "O reconhecimento dos Direitos Humanos: (Marque a opção verdadeira)",
+        "opcoes": [
+            "É um privilégio das sociedades e depende do reconhecimento dos governos",
+            "Está estreitamente vinculado à abordagem dos componentes integrais do Direito à Saúde.",
+            "Supõe que o exercício do poder não deve se sujeitar a regras, deve ser livre de acordo com os diferentes sistemas políticos."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os direitos humanos não são um privilégio nem dependem dos governos para sua existência; são inerentes à pessoa.",
+                "O reconhecimento dos Direitos Humanos está intimamente vinculado ao Direito à Saúde: ambos fazem parte do marco de direitos fundamentais.",
+                "O exercício do poder sim deve se sujeitar a regras que protejam os direitos humanos, não ser livre."
+            ],
+            "fantasma": [
+                "Não, são inerentes à pessoa, não dependem do governo.",
+                "Essa aí! Estão intimamente vinculados ao Direito à Saúde.",
+                "O poder sim deve se sujeitar a regras que protejam esses direitos."
+            ],
+            "gato": [
+                "Miau, são inerentes, não dependem de governos.",
+                "Ronronado de aprovação! Vinculados de perto ao Direito à Saúde.",
+                "Fijate: o poder sim deve se sujeitar a regras."
+            ]
+        }
+    },
+    {
+        "pergunta": "O paciente tem direito de receber a informação sanitária necessária vinculada à sua saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A informação sanitária poderá ser fornecida a terceiros, sem autorização do paciente.",
+            "O paciente tem direito de receber a informação sanitária por escrito.",
+            "O profissional médico pode decidir informar ou não sobre o estado de saúde, os exames e tratamentos e/ou complicações ao paciente."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A informação não pode ser fornecida a terceiros sem autorização do paciente.",
+                "Segundo a Lei 26.529, o paciente tem direito de receber a informação sanitária por escrito quando assim o solicitar.",
+                "O médico não pode decidir unilateralmente não informar o paciente."
+            ],
+            "fantasma": [
+                "Não, sem autorização do paciente não se pode compartilhar com terceiros.",
+                "Essa aí! O paciente pode pedir a informação por escrito.",
+                "O médico não decide sozinho se informa ou não."
+            ],
+            "gato": [
+                "Miau, sem autorização não se compartilha com terceiros.",
+                "Ronronado de aprovação! Direito de receber a informação por escrito.",
+                "Fijate: o médico não decide sozinho se informa."
+            ]
+        }
+    },
+    {
+        "pergunta": "São direitos essenciais do paciente: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Interconsulta médica",
+            "Diagnóstico precoce e tratamento oportuno",
+            "Prevenção primária, secundária e terciária."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A interconsulta médica é um direito essencial do paciente reconhecido pela Lei 26.529: ele pode solicitar uma segunda opinião médica.",
+                "O diagnóstico precoce e o tratamento oportuno são objetivos do sistema de saúde, não um direito específico do paciente listado nessa lei.",
+                "Os níveis de prevenção são objetivos do sistema de saúde, não direitos específicos do paciente listados nessa lei."
+            ],
+            "fantasma": [
+                "Essa aí! O paciente pode pedir uma segunda opinião, isso é um direito reconhecido.",
+                "Isso é um objetivo do sistema de saúde, não um direito listado na lei.",
+                "Isso também é objetivo do sistema, não um direito do paciente nessa lei."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Segunda opinião médica, direito reconhecido.",
+                "Miau, isso é objetivo do sistema, não direito listado.",
+                "Fijate: isso também é objetivo do sistema."
+            ]
+        }
+    },
+    {
+        "pergunta": "A bioética é um campo interdisciplinar constituído por princípios e regras morais. Na prática clínica se destacam três regras morais: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Confidencialidade",
+            "Responsabilidade",
+            "Segurança"
+        ],
+        "explicacoes": {
+            "robo": [
+                "As três regras morais principais da prática clínica são confidencialidade, veracidade e fidelidade; a confidencialidade é a mais destacada.",
+                "A responsabilidade é um valor importante, mas não integra a tríade clássica de regras morais clínicas.",
+                "A segurança é um valor importante, mas não integra a tríade clássica de regras morais clínicas."
+            ],
+            "fantasma": [
+                "Essa aí! Confidencialidade, veracidade e fidelidade são as três regras morais clássicas.",
+                "A responsabilidade é importante, mas não é uma das três regras clássicas.",
+                "A segurança também não integra essa tríade clássica."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Confidencialidade, uma das três regras morais clínicas.",
+                "Miau, a responsabilidade não é da tríade clássica.",
+                "Fijate: a segurança também não integra a tríade."
+            ]
+        }
+    },
+    {
+        "pergunta": "Sobre os Direitos do Paciente em sua relação com os Profissionais e Instituições de Saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Os estabelecimentos de saúde devem adotar os cuidados para que os dados com fins epidemiológicos ou de pesquisa sejam tratados de modo a preservar a confidencialidade dos pacientes",
+            "Cada Centro Assistencial pode limitar o acesso à informação tanto para os pacientes quanto para os profissionais que os assistem",
+            "Os estabelecimentos de Saúde podem fornecer dados dos Prontuários para fins epidemiológicos ou de pesquisa e depois tentar localizar o paciente para informá-lo."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Mesmo quando os dados de prontuários sejam usados para pesquisa ou epidemiologia, os estabelecimentos devem garantir a confidencialidade.",
+                "Não podem limitar arbitrariamente o acesso do paciente à sua própria informação.",
+                "Inverte a ordem correta: não podem esperar localizar o paciente depois de usar seus dados."
+            ],
+            "fantasma": [
+                "Essa aí! Mesmo que os dados sejam usados para pesquisa, a confidencialidade deve ser preservada.",
+                "Não podem limitar o acesso do paciente à sua própria informação.",
+                "Eita, essa ordem está invertida: primeiro tem que resguardar, não usar e avisar depois."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Confidencialidade garantida mesmo que se use para pesquisa.",
+                "Miau, não podem limitar o acesso do paciente.",
+                "Fijate: essa ordem está invertida."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Bioética se define como: (Marque a opção verdadeira)",
+        "opcoes": [
+            "O estudo anárquico da conduta humana na área das ciências da vida e da atenção à saúde.",
+            "O estudo sistemático da conduta humana na área das ciências da vida e da atenção à saúde, na medida em que essa conduta é examinada à luz dos princípios e valores morais.",
+            "O estudo dos princípios e das normas sociais."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A Bioética é um estudo sistemático, não anárquico, da conduta humana.",
+                "A Bioética (Van Rensselaer Potter, 1971) é o estudo sistemático da conduta humana em ciências da vida e saúde, examinada à luz de princípios e valores morais.",
+                "Não se limita ao estudo de normas sociais; inclui princípios e valores morais aplicados à vida e à saúde."
+            ],
+            "fantasma": [
+                "Não é anárquico, é sistemático.",
+                "Essa aí! Estudo sistemático da conduta à luz de princípios e valores morais.",
+                "Não se limita a normas sociais, vai além."
+            ],
+            "gato": [
+                "Miau, é sistemático, não anárquico.",
+                "Ronronado de aprovação! Sistemático, à luz de princípios e valores morais.",
+                "Fijate: não se limita a normas sociais."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os direitos humanos são: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Individuais, divisíveis e dependentes entre si",
+            "Universais, indivisíveis e interdependentes entre si",
+            "Individuais, relativos a cada cultura"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os direitos humanos não são divisíveis nem meramente individuais nesse sentido; são indivisíveis.",
+                "Os direitos humanos são universais, indivisíveis e interdependentes entre si.",
+                "Não são relativos a cada cultura; são universais, para todos os seres humanos sem distinção."
+            ],
+            "fantasma": [
+                "Não são divisíveis, essa característica está errada.",
+                "Essa aí! Universais, indivisíveis e interdependentes.",
+                "Não são relativos a cada cultura, são universais."
+            ],
+            "gato": [
+                "Miau, não são divisíveis.",
+                "Ronronado de aprovação! Universais, indivisíveis, interdependentes.",
+                "Fijate: não são relativos a cada cultura."
+            ]
+        }
+    },
+    {
+        "pergunta": "O Prontuário se caracteriza por: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Não responder a um marco teórico nem estar sistematizado.",
+            "Ser uma prova documental que avalia o nível da qualidade assistencial, eximindo de responsabilidade o pessoal sanitário.",
+            "Ser um documento obrigatório, cronológico, com páginas numeradas e completo, no qual constam todas as atuações realizadas ao paciente por profissionais e auxiliares de saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Sim responde a um marco teórico e está sistematizado.",
+                "Não exime de responsabilidade o pessoal sanitário; pode ser prova de sua conduta.",
+                "O Prontuário é um documento obrigatório, cronológico, com páginas numeradas e completo, com todas as atuações de profissionais e auxiliares."
+            ],
+            "fantasma": [
+                "Sim tem marco teórico e está sistematizado.",
+                "Não exime ninguém de responsabilidade.",
+                "Essa aí! Obrigatório, cronológico, paginado e completo."
+            ],
+            "gato": [
+                "Miau, sim tem marco teórico.",
+                "Fijate: não exime de responsabilidade.",
+                "Ronronado de aprovação! Obrigatório, cronológico, paginado, completo."
+            ]
+        }
+    },
+    {
+        "pergunta": "A empatia é: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A capacidade de conectar-se com a experiência de outra pessoa",
+            "Uma função de autoconservação",
+            "Sentir exatamente o mesmo que sente outra pessoa"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A empatia é a capacidade de conectar-se com a experiência subjetiva de outra pessoa, compreendendo sua perspectiva emocional sem perder a própria.",
+                "A empatia não é uma função de autoconservação; é uma capacidade relacional.",
+                "Não implica sentir exatamente o mesmo; isso seria simpatia ou fusão emocional."
+            ],
+            "fantasma": [
+                "Essa aí! Conectar-se com a experiência do outro, compreendendo sua perspectiva.",
+                "Não é uma função de autoconservação.",
+                "Não é sentir exatamente o mesmo, isso é outra coisa."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Conectar-se com a experiência alheia.",
+                "Miau, não é autoconservação.",
+                "Fijate: não é sentir exatamente o mesmo."
+            ]
+        }
+    },
+    {
+        "pergunta": "As principais características da empatia terapêutica são: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Que o paciente se sinta confiante para contar suas histórias pessoais, sinta alívio e maior regulação emocional, e gere motivação para a mudança.",
+            "Que o paciente tema a doença e as possíveis consequências dela.",
+            "Que o paciente desconfie do médico e do tratamento, e recorra a outro profissional."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A empatia terapêutica gera confiança, alívio emocional, maior regulação afetiva e motivação para aderir ao tratamento.",
+                "Esse efeito é oposto ao buscado pela empatia terapêutica, próprio de uma relação médico-paciente deficiente.",
+                "Esse efeito também é oposto ao buscado pela empatia terapêutica, próprio de uma relação médico-paciente deficiente."
+            ],
+            "fantasma": [
+                "Essa aí! Confiança, alívio e motivação para a mudança, isso gera a empatia terapêutica.",
+                "Isso é o contrário, típico de uma má relação médico-paciente.",
+                "Isso também é o contrário do buscado."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Confiança, alívio, motivação.",
+                "Miau, isso é o oposto.",
+                "Fijate: isso também é o oposto."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os Fatores protetores da saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Não incluem condutas relacionadas a estilos de vida saudáveis.",
+            "São estímulos que determinam uma resposta estabelecida.",
+            "São aquelas medidas e ações orientadas a promover a saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Sim incluem condutas de estilos de vida saudáveis, como alimentação e atividade física.",
+                "Não são simples estímulos que determinam uma resposta fixa.",
+                "Os fatores protetores da saúde são medidas e ações orientadas a promover a saúde."
+            ],
+            "fantasma": [
+                "Sim incluem essas condutas saudáveis.",
+                "Não é um simples estímulo-resposta fixo.",
+                "Essa aí! Medidas e ações para promover a saúde."
+            ],
+            "gato": [
+                "Miau, sim incluem essas condutas.",
+                "Fijate: não é um estímulo-resposta fixo.",
+                "Ronronado de aprovação! Medidas para promover a saúde."
+            ]
+        }
+    },
+    {
+        "pergunta": "O termo adesão é entendido como: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A responsabilidade do paciente na aceitação do tratamento.",
+            "O contato com a assistência médica.",
+            "Uma implicação ativa e colaboração voluntária do paciente em um desenvolvimento de comportamento aceito de mútuo acordo, com o fim de produzir um resultado terapêutico desejado."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A adesão supera a noção de 'cumprimento' ou mera responsabilidade do paciente.",
+                "A adesão inclui muito mais que o simples contato com a assistência médica.",
+                "A adesão (OMS) implica uma colaboração ativa e voluntária do paciente em condutas acordadas com a equipe de saúde para alcançar resultados terapêuticos."
+            ],
+            "fantasma": [
+                "É mais que só 'responsabilidade', é colaboração ativa.",
+                "É bem mais que só ter contato com a assistência.",
+                "Essa aí! Colaboração ativa e voluntária em um acordo mútuo."
+            ],
+            "gato": [
+                "Miau, é mais que só responsabilidade.",
+                "Fijate: é mais que só contato.",
+                "Ronronado de aprovação! Colaboração ativa e voluntária."
+            ]
+        }
+    },
+    {
+        "pergunta": "A OMS define saúde mental como: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Um estado de bem-estar em que o indivíduo não apresenta traumas nem conflitos.",
+            "Um estado de bem-estar em que o indivíduo realiza suas capacidades, supera o estresse normal da vida, trabalha de forma produtiva e contribui para sua comunidade.",
+            "Como uma conquista evolutiva e universal."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A saúde mental não implica ausência de conflitos; é compatível com enfrentá-los adequadamente.",
+                "A OMS define saúde mental como um estado de bem-estar em que o indivíduo realiza suas capacidades, enfrenta o estresse normal, trabalha produtivamente e contribui para sua comunidade.",
+                "Não é meramente uma conquista evolutiva; é um estado de bem-estar ativo e cotidiano."
+            ],
+            "fantasma": [
+                "Não implica ausência de conflitos.",
+                "Essa aí! Realizar suas capacidades, enfrentar o estresse, ser produtivo e contribuir com a comunidade.",
+                "Não é só uma conquista evolutiva."
+            ],
+            "gato": [
+                "Miau, não implica ausência de conflitos.",
+                "Ronronado de aprovação! Capacidades, estresse normal, produtividade e comunidade.",
+                "Fijate: não é só uma conquista evolutiva."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Psicologia comportamental propõe o estudo da conduta, enquanto fenômeno observável e objetivo, e estabelece que: (Marque a opção verdadeira)",
+        "opcoes": [
+            "As condutas se adquirem através da aprendizagem (por meio da repetição), reforçando condutas positivas e desencorajando condutas indesejadas.",
+            "A conduta é a associação entre um estímulo e uma resposta; e esta última se expressa como sensação subjetiva.",
+            "O ser humano ocupa um lugar ativo no momento de responder a condicionamentos, criando respostas novas e originais."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O comportamentalismo sustenta que as condutas se aprendem através da repetição e do reforço, fortalecendo as positivas e desencorajando as indesejadas.",
+                "O comportamentalismo não aceita a subjetividade; não estuda sensações subjetivas.",
+                "Essa descrição corresponde mais à psicologia humanista ou cognitiva, não ao comportamentalismo."
+            ],
+            "fantasma": [
+                "Essa aí! Aprendizagem por repetição, reforçando o positivo.",
+                "O comportamentalismo não estuda sensações subjetivas.",
+                "Isso é mais de outra corrente, a humanista ou cognitiva."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Repetição e reforço, assim aprende a conduta.",
+                "Miau, o comportamentalismo não vê sensações subjetivas.",
+                "Fijate: isso é de outra corrente, não do comportamentalismo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Para que o psiquismo se construa e organize, é necessário satisfazer: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Somente as necessidades psicológicas: contato, olhar, amor, afeto, desejo, estabelecimento de limites adquiridas durante a primeira infância.",
+            "O instinto de conservação da espécie.",
+            "Necessidades biológicas, psicológicas e sociais."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Reduzir a apenas necessidades psicológicas é insuficiente; também intervêm as biológicas e sociais.",
+                "Reduzir ao instinto de conservação é insuficiente; o psiquismo requer mais dimensões.",
+                "O psiquismo humano se constrói e se organiza a partir de necessidades biológicas, psicológicas e sociais."
+            ],
+            "fantasma": [
+                "Não basta só o psicológico, faltam o biológico e o social.",
+                "O instinto de conservação sozinho não explica a construção do psiquismo.",
+                "Essa aí! Biológicas, psicológicas e sociais, as três dimensões."
+            ],
+            "gato": [
+                "Miau, falta o biológico e o social.",
+                "Fijate: isso sozinho não basta.",
+                "Ronronado de aprovação! Biológicas, psicológicas e sociais."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os problemas de saúde constituem: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Um fenômeno complexo que afeta unicamente a dimensão biológica e psicológica do paciente.",
+            "Um fenômeno complexo, multideterminado e de múltiplas causas.",
+            "Um fenômeno complexo determinado unicamente por fatores biológicos."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se limitam ao biológico e psicológico; também intervêm fatores sociais, culturais, econômicos e ambientais.",
+                "Os problemas de saúde são fenômenos complexos e multideterminados, próprios do modelo biopsicossocial.",
+                "Reduzi-los unicamente a fatores biológicos é uma visão reducionista superada."
+            ],
+            "fantasma": [
+                "Faltam fatores sociais, culturais e econômicos.",
+                "Essa aí! Complexo e multideterminado, o modelo biopsicossocial.",
+                "Reduzir só ao biológico é uma visão superada."
+            ],
+            "gato": [
+                "Miau, faltam vários fatores mais.",
+                "Ronronado de aprovação! Multideterminado, biopsicossocial.",
+                "Fijate: isso é uma visão reducionista."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Psicologia da saúde é: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Um ramo da psicologia básica.",
+            "Um ramo aplicado da psicologia que estuda os componentes da subjetividade no processo saúde-doença.",
+            "Um ramo da psicologia que estuda a população saudável."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A Psicologia da Saúde é um ramo aplicado, não básico.",
+                "A Psicologia da Saúde é um ramo aplicado que estuda os componentes subjetivos do processo saúde-doença-atenção.",
+                "Não se limita a estudar a população saudável; abrange todo o processo saúde-doença."
+            ],
+            "fantasma": [
+                "É aplicado, não básico.",
+                "Essa aí! Ramo aplicado que estuda o subjetivo em saúde-doença.",
+                "Não se limita à população saudável."
+            ],
+            "gato": [
+                "Miau, é aplicado, não básico.",
+                "Ronronado de aprovação! Estuda o subjetivo do processo saúde-doença.",
+                "Fijate: não se limita aos saudáveis."
+            ]
+        }
+    },
+    {
+        "pergunta": "Entre os fatores psicológicos de risco para o surgimento de doenças, o mais estudado por sua importância tem sido: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A ação do eustresse.",
+            "A depressão endógena.",
+            "A ação do estresse."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O eustresse (estresse positivo) tem efeitos benéficos, não é o fator de risco mais estudado.",
+                "A depressão endógena não é o fator psicológico de risco mais estudado nesse contexto.",
+                "O estresse (distresse) é o fator psicológico de risco mais estudado em relação ao surgimento e agravamento de doenças."
+            ],
+            "fantasma": [
+                "O eustresse é mais positivo, não o de risco mais estudado.",
+                "Não é a depressão endógena a mais estudada aqui.",
+                "Essa aí! O estresse é o fator psicológico de risco mais estudado."
+            ],
+            "gato": [
+                "Miau, o eustresse é positivo.",
+                "Fijate: não é a depressão endógena.",
+                "Ronronado de aprovação! O estresse, o mais estudado."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Psicologia da saúde é resultado de: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Uma nova forma de pensamento em saúde, que considera a dimensão biopsicossocial no processo saúde-doença",
+            "O modelo biomédico.",
+            "Descontextualizar a saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A Psicologia da Saúde surge de uma nova forma de pensamento que integra o biológico, o psicológico e o social.",
+                "É precisamente uma crítica e superação do modelo biomédico, não seu resultado.",
+                "Não surge de descontextualizar a saúde, e sim de integrá-la em seu contexto biopsicossocial."
+            ],
+            "fantasma": [
+                "Essa aí! Nasce de integrar o biológico, psicológico e social.",
+                "É uma superação do modelo biomédico, não vem dele.",
+                "Não é descontextualizar, é justo o contrário."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Integra o biopsicossocial.",
+                "Miau, supera o modelo biomédico, não vem dele.",
+                "Fijate: é o contrário de descontextualizar."
+            ]
+        }
+    },
+    {
+        "pergunta": "As seguintes condutas verbais refletem empatia terapêutica: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Ter taxas de expressão e tons vocais similares aos de seus pacientes; não interromper o paciente.",
+            "Interromper continuamente o paciente, cada vez que surge uma dúvida ou não fica precisa uma parte do relato, impedindo o paciente de encadear várias frases seguidas.",
+            "Falar em um tom de voz ligeiramente mais elevado que o paciente, indicando saber e autoridade."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A empatia terapêutica se manifesta em adaptar o tom e ritmo de expressão ao do paciente, e não interromper para permitir que ele desenvolva seu relato.",
+                "Interromper continuamente reflete uma conduta que dificulta a comunicação terapêutica, não a empatia.",
+                "Falar com tom de autoridade reflete uma conduta desvinculada, não empática."
+            ],
+            "fantasma": [
+                "Essa aí! Adaptar o tom e não interromper, isso é empatia terapêutica.",
+                "Interromper o tempo todo dificulta a comunicação, não ajuda.",
+                "Falar com tom de autoridade não é empático."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Adaptar o tom, não interromper.",
+                "Miau, interromper muito dificulta a comunicação.",
+                "Fijate: falar com autoridade não é empatia."
+            ]
+        }
+    },
+    {
+        "pergunta": "O processo de aprendizagem que organiza a construção psíquica é um processo dinâmico, que: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Atravessa etapas: infância, adolescência, idade adulta, velhice. E à medida que vai se desenvolvendo, vai se complexificando tanto em sua dimensão afetiva quanto em sua dimensão cognitiva.",
+            "Não requer o intercâmbio entre mundo interno e externo.",
+            "Se desenvolve exclusivamente por meio de condutas herdadas biologicamente."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A aprendizagem que organiza o psiquismo é dinâmica e atravessa etapas vitais, complexificando-se nas dimensões afetiva e cognitiva.",
+                "Sim requer o intercâmbio entre o mundo interno e o externo; esse intercâmbio é central no processo.",
+                "Não é exclusivamente biológico; intervêm também o psicológico e o social."
+            ],
+            "fantasma": [
+                "Essa aí! Atravessa etapas de vida, complexificando-se no afetivo e no cognitivo.",
+                "Sim precisa desse intercâmbio entre o interno e o externo.",
+                "Não é só biológico, tem muito mais em jogo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Etapas de vida, cada vez mais complexo.",
+                "Miau, sim precisa desse intercâmbio.",
+                "Fijate: não é só biológico."
+            ]
+        }
+    },
+    {
+        "pergunta": "Segundo a OMS, a comunicação para a saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "É uma estratégia-chave destinada unicamente a informar os meios de comunicação sobre os temas de saúde relevantes para a comunidade.",
+            "É uma estratégia de atenção à saúde.",
+            "É uma estratégia-chave destinada a informar a população sobre aspectos relativos à saúde e a manter questões sanitárias importantes na agenda pública."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se dirige unicamente aos meios de comunicação; se dirige à população em geral.",
+                "Não é simplesmente uma estratégia de atenção clínica; é uma estratégia comunicacional mais ampla.",
+                "Segundo a OMS, a comunicação para a saúde é uma estratégia-chave para informar a população e manter temas sanitários na agenda pública."
+            ],
+            "fantasma": [
+                "Não é só para os meios, é para toda a população.",
+                "Não é só atenção clínica, é comunicação.",
+                "Essa aí! Informar a população e manter a agenda pública sanitária."
+            ],
+            "gato": [
+                "Miau, não é só para os meios.",
+                "Fijate: não é só atenção clínica.",
+                "Ronronado de aprovação! Informar e manter a agenda pública."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um dos primeiros modelos que surge no campo da comunicação é a teoria informacional, que se caracteriza por: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Considerar a comunicação como um processo de transmissão de informação linear.",
+            "Ser exclusivamente analógica.",
+            "Levar em conta o sentido que o receptor atribui e a intenção com que a mensagem foi emitida."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A teoria informacional (modelo de Shannon e Weaver, 1949) concebe a comunicação como um processo linear de transmissão: emissor, mensagem, receptor.",
+                "Não se limita à comunicação analógica; o modelo linear não distingue essa dimensão.",
+                "Levar em conta o sentido que o receptor atribui pertence a modelos mais complexos, não à teoria informacional linear."
+            ],
+            "fantasma": [
+                "Essa aí! Um processo linear: emissor, mensagem, receptor.",
+                "Não se limita ao analógico.",
+                "Isso é de modelos mais complexos, não da teoria informacional."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Transmissão linear: emissor, mensagem, receptor.",
+                "Miau, não se limita ao analógico.",
+                "Fijate: isso é de modelos mais complexos."
+            ]
+        }
+    },
+    {
+        "pergunta": "Todo modelo de saúde corresponde a um modelo comunicacional: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Os modelos verticais favorecem a participação dos pacientes na própria cura.",
+            "Os processos de comunicação circulares são menos convocantes, inclusivos e humanos.",
+            "Em um modelo de saúde piramidal, onde as informações 'descem', costuma vir acompanhado de um paradigma de saúde autoritário, verticalista."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Ao contrário: os modelos verticais não favorecem a participação, são próprios de um paradigma autoritário.",
+                "Ao contrário: os modelos circulares ou horizontais são mais inclusivos e participativos.",
+                "Os modelos piramidais, onde a informação flui de cima para baixo, correspondem a paradigmas autoritários e verticalistas que não promovem a participação."
+            ],
+            "fantasma": [
+                "Ao contrário: o vertical não favorece a participação.",
+                "Ao contrário: o circular é mais inclusivo, não menos.",
+                "Essa aí! Pirâmide com informação que 'desce' = paradigma autoritário."
+            ],
+            "gato": [
+                "Miau, é ao contrário.",
+                "Fijate: é ao contrário, o circular é mais inclusivo.",
+                "Ronronado de aprovação! Pirâmide = autoritário e verticalista."
+            ]
+        }
+    },
+    {
+        "pergunta": "Considerando a Comunicação e a saúde a partir de uma perspectiva de direitos, o acesso à informação: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Dificulta que a equipe de saúde tome decisões e coloque em prática estratégias de saúde.",
+            "É um direito que tem o médico e que lhe permite, entre outras coisas, tomar decisões em relação à saúde do paciente.",
+            "Facilita que os indivíduos e as comunidades possam desenvolver uma participação concreta na definição de prioridades, na tomada de decisões e na implementação de estratégias para alcançar um maior nível de saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não dificulta, facilita a tomada de decisões e as estratégias de saúde.",
+                "A informação não é apenas um atributo do médico; é um direito da cidadania.",
+                "Desde uma perspectiva de direitos, o acesso à informação empodera as pessoas e comunidades para participar da tomada de decisões sanitárias."
+            ],
+            "fantasma": [
+                "Ao contrário, facilita, não dificulta.",
+                "Não é só do médico, é um direito da cidadania.",
+                "Essa aí! Empodera a comunidade para participar das decisões de saúde."
+            ],
+            "gato": [
+                "Miau, é ao contrário, facilita.",
+                "Fijate: é um direito da cidadania, não só do médico.",
+                "Ronronado de aprovação! Empodera indivíduos e comunidades."
+            ]
+        }
+    },
+    {
+        "pergunta": "Para estabelecer uma boa comunicação com o paciente é recomendável: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Utilizar termos técnicos e nunca uma linguagem cotidiana.",
+            "Reduzir o espaço da consulta a transmitir dados ao paciente, já que não é uma instância para dialogar ou conversar.",
+            "Olhar sempre nos olhos. O contato visual é crucial. Muitas vezes o profissional faz outras coisas enquanto atende quem está relatando sua queixa ou situação. Isso comunica falta de interesse."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A linguagem deve ser clara e acessível, não exclusivamente técnica.",
+                "A consulta deve ser um espaço de diálogo bidirecional, não só de transmissão de dados.",
+                "O contato visual direto é fundamental na comunicação terapêutica: demonstra atenção e interesse pelo relato do paciente."
+            ],
+            "fantasma": [
+                "A linguagem deve ser clara, não só técnica.",
+                "A consulta é para dialogar, não só para transmitir dados.",
+                "Essa aí! O contato visual mostra atenção e interesse."
+            ],
+            "gato": [
+                "Miau, a linguagem deve ser clara e acessível.",
+                "Fijate: a consulta é diálogo, não só transmissão.",
+                "Ronronado de aprovação! Olhar nos olhos mostra interesse real."
+            ]
+        }
+    },
+    {
+        "pergunta": "A comunicação humana se caracteriza por ser um processo transacional e multidimensional. O multidimensional corresponde às diversas dimensões envolvidas. A dimensão relacional se refere a: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Os aspectos da mensagem que têm a ver com a forma de vinculação das pessoas envolvidas.",
+            "As palavras que se utilizam, a linguagem e a informação que se transmite.",
+            "A influência recíproca das mensagens."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A dimensão relacional se refere a como a mensagem define ou negocia a relação entre os comunicantes.",
+                "Isso corresponde à dimensão de conteúdo, não à relacional.",
+                "A influência recíproca não é a definição específica da dimensão relacional."
+            ],
+            "fantasma": [
+                "Essa aí! Como a mensagem define o vínculo entre as pessoas.",
+                "Isso é a dimensão de conteúdo, não a relacional.",
+                "Isso não descreve especificamente a dimensão relacional."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O vínculo entre as pessoas que se comunicam.",
+                "Miau, isso é conteúdo, não dimensão relacional.",
+                "Fijate: isso não é o que define a dimensão relacional."
+            ]
+        }
+    },
+    {
+        "pergunta": "A comunicação humana implica duas modalidades: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A processual e a complementar.",
+            "A Dialética e a processual.",
+            "A digital e a analógica."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa combinação não corresponde às duas modalidades reconhecidas por Watzlawick.",
+                "Essa combinação não corresponde às duas modalidades reconhecidas por Watzlawick.",
+                "Segundo Watzlawick, a comunicação humana tem duas modalidades: digital (o conteúdo verbal) e analógica (tudo o não verbal)."
+            ],
+            "fantasma": [
+                "Essa combinação não é a reconhecida por Watzlawick.",
+                "Também não é essa a combinação correta.",
+                "Essa aí! Digital (o verbal) e analógica (o não verbal), as duas modalidades."
+            ],
+            "gato": [
+                "Miau, essa combinação não é a correta.",
+                "Dado curioso: também não é essa.",
+                "Ronronado de aprovação! Digital e analógica, assim propôs Watzlawick."
+            ]
+        }
+    },
+    {
+        "pergunta": "Há pesquisadores que propõem axiomas na teoria da comunicação humana. Algum dos seguintes é considerado um axioma: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Informar é comunicar.",
+            "Todo comportamento é uma forma de comunicação.",
+            "A comunicação implica unicamente as palavras faladas (comunicação digital: o que se diz)"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Confunde informação com comunicação; não é o axioma reconhecido.",
+                "Um axioma de Watzlawick é 'é impossível não se comunicar', o que implica que todo comportamento comunica algo.",
+                "Reduz erroneamente a comunicação ao verbal; o silêncio, os gestos e a postura também comunicam."
+            ],
+            "fantasma": [
+                "Confunde informação com comunicação.",
+                "Essa aí! 'É impossível não se comunicar' — todo comportamento comunica.",
+                "Não se reduz ao verbal, o silêncio e os gestos também comunicam."
+            ],
+            "gato": [
+                "Miau, confunde informação com comunicação.",
+                "Ronronado de aprovação! Todo comportamento comunica algo.",
+                "Fijate: não se reduz ao verbal."
+            ]
+        }
+    },
+    {
+        "pergunta": "A informação e a comunicação médico-paciente: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Não têm influência no cumprimento terapêutico.",
+            "Adquirem importância por serem consideradas um requisito prévio à autonomia do paciente.",
+            "Asseguram que o paciente siga as indicações médicas."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Sim têm influência positiva no cumprimento terapêutico.",
+                "A informação e a comunicação médico-paciente são um requisito prévio à autonomia: o paciente só pode decidir se recebeu informação adequada.",
+                "Não garantem por si mesmas o cumprimento terapêutico, embora influenciem positivamente."
+            ],
+            "fantasma": [
+                "Sim influencia, e bastante, o cumprimento.",
+                "Essa aí! Sem informação adequada não há autonomia real.",
+                "Não garantem totalmente, embora ajudem."
+            ],
+            "gato": [
+                "Miau, sim tem influência positiva.",
+                "Ronronado de aprovação! Requisito prévio para que a autonomia seja real.",
+                "Fijate: não garantem totalmente."
+            ]
+        }
+    },
+    {
+        "pergunta": "A concepção da comunicação como produção de sentido estabelece: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Que a comunicação é exclusivamente verbal.",
+            "Que a comunicação é um processo, e ocorre um intercâmbio dinâmico entre emissor e receptor (que funcionam alternadamente como tais).",
+            "Que a comunicação consiste na transmissão unilateral de mensagens."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se limita ao verbal; o sentido também se constrói por outros canais.",
+                "A comunicação como produção de sentido sustenta que é um processo dinâmico em que emissor e receptor trocam papéis.",
+                "É o oposto da transmissão unilateral; o sentido se constrói na interação."
+            ],
+            "fantasma": [
+                "Não se limita ao verbal.",
+                "Essa aí! Um processo dinâmico onde emissor e receptor trocam de papel.",
+                "É justo o contrário de uma transmissão unilateral."
+            ],
+            "gato": [
+                "Miau, não se limita ao verbal.",
+                "Ronronado de aprovação! Emissor e receptor trocam papéis.",
+                "Fijate: é o oposto de uma transmissão unilateral."
+            ]
+        }
+    },
+    {
+        "pergunta": "A relação médico-paciente tem diversos condicionantes. A relação sujeito-médico – sujeito-paciente se veicula na prática médica, e as ações resultantes estão condicionadas por: (assinale a opção INCORRETA)",
+        "opcoes": [
+            "A intervenção médica específica (incluindo a concepção própria de cada profissional sobre a forma de exercer o papel médico)",
+            "O contexto macrossocial em que estão imersos (política, economia, ideologia, cultura, políticas socioeconômicas, políticas de saúde, organizações de saúde, etc.)",
+            "As características inerentes a cada médico e ao tipo e caráter de seus padecimentos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta opção é correta como condicionante: a intervenção médica específica sim condiciona a relação.",
+                "Esta opção é correta como condicionante: o contexto macrossocial sim condiciona a relação.",
+                "É a opção incorreta: são as características do PACIENTE (não do médico) e seus padecimentos que também condicionam a relação, junto com as do profissional."
+            ],
+            "fantasma": [
+                "Esta sim é um condicionante real da relação.",
+                "Esta também é um condicionante real.",
+                "Essa aí! O erro é falar de padecimentos 'do médico' quando são do paciente."
+            ],
+            "gato": [
+                "Fijate: esta sim condiciona a relação de verdade.",
+                "Dado curioso: esta também é um condicionante real.",
+                "Ronronado de aprovação! O erro está em misturar 'padecimentos' com o médico, quando são do paciente."
+            ]
+        }
+    },
+    {
+        "pergunta": "A comunidade socializa e controla seus membros: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A socialização é o processo pelo qual a comunidade tenta que seus membros façam suas as normas comuns, as interiorizem.",
+            "O processo de socialização é um processo exclusivamente genético-biológico",
+            "As normas se incorporam através de castigos, recorrendo sempre à violência física."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A socialização é o processo pelo qual a comunidade transmite e consegue que seus membros interiorizem normas, valores e padrões culturais comuns.",
+                "Não é genético-biológico; é um processo cultural e social.",
+                "As normas se incorporam por múltiplos mecanismos, não só por castigo físico."
+            ],
+            "fantasma": [
+                "Essa aí! Interiorizar as normas comuns da comunidade.",
+                "Não é genético-biológico, é cultural e social.",
+                "Nem sempre é por castigo físico, há outros mecanismos."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Interiorizar normas comuns.",
+                "Miau, é cultural e social, não genético.",
+                "Fijate: nem sempre é por castigo físico."
+            ]
+        }
+    },
+    {
+        "pergunta": "No conceito de cultura convergem duas grandes dimensões: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A emotiva e a social.",
+            "A cognitiva e a material.",
+            "A cognitiva e a emotiva."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa combinação não é a reconhecida para as duas dimensões da cultura.",
+                "No conceito de cultura convergem duas dimensões: a cognitiva (ideias, crenças, valores) e a material (artefatos, tecnologia, objetos).",
+                "Essa combinação não é a reconhecida; falta a dimensão material."
+            ],
+            "fantasma": [
+                "Essa combinação não é a correta.",
+                "Essa aí! Cognitiva (ideias, valores) e material (objetos, tecnologia).",
+                "Falta a dimensão material nessa combinação."
+            ],
+            "gato": [
+                "Miau, essa combinação não é a correta.",
+                "Ronronado de aprovação! Cognitiva e material, as duas dimensões.",
+                "Fijate: falta a dimensão material."
+            ]
+        }
+    },
+    {
+        "pergunta": "Considerando que a percepção do sintoma é o primeiro passo no processo antropológico da doença humana: (assinale a opção correta)",
+        "opcoes": [
+            "Um sintoma é o sinal objetivo de um transtorno, que consequentemente se apresenta primeiro ao próprio doente.",
+            "O sinal é uma manifestação subjetiva da doença.",
+            "Um sintoma é o sinal subjetivo de um transtorno, que consequentemente se apresenta primeiro ao próprio doente"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O sintoma é subjetivo, não objetivo; o objetivo corresponde ao sinal.",
+                "É ao contrário: o sinal é a manifestação objetiva, e o sintoma a subjetiva.",
+                "O sintoma é a manifestação subjetiva da doença: o que o próprio paciente percebe, e é o primeiro passo porque o doente o experimenta antes de consultar."
+            ],
+            "fantasma": [
+                "O sintoma é subjetivo, não objetivo.",
+                "É ao contrário: o sinal é o objetivo.",
+                "Essa aí! O sintoma é subjetivo, o que o paciente sente primeiro."
+            ],
+            "gato": [
+                "Miau, o sintoma é subjetivo.",
+                "Fijate: é ao contrário, o sinal é o objetivo.",
+                "Ronronado de aprovação! O sintoma é o que o paciente sente primeiro."
+            ]
+        }
+    },
+    {
+        "pergunta": "A doença tem uma dimensão social. Considerando que a doença gera no homem uma modificação nos papéis, na comunicação e na relação social: (Marque a opção verdadeira)",
+        "opcoes": [
+            "O papel social são as normas e regras que se espera que uma pessoa cumpra segundo seu status e função.",
+            "O papel é a posição que a pessoa ocupa na sociedade",
+            "O conjunto de tarefas de um grupo social determina o STATUS social."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O papel social são as normas e expectativas de comportamento associadas ao status de uma pessoa na sociedade.",
+                "Isso descreve o status, não o papel; o papel é o que se espera que a pessoa faça em função desse status.",
+                "O conjunto de tarefas de um grupo não determina o status; o status é a posição ocupada."
+            ],
+            "fantasma": [
+                "Essa aí! O papel são as normas esperadas segundo o status.",
+                "Isso é o status, não o papel.",
+                "Isso não define o status."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Normas esperadas segundo o status.",
+                "Miau, isso é o status, não o papel.",
+                "Fijate: isso não define o status."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os valores fundamentam as normas e papéis. Algumas de suas características são: (Marque a opção verdadeira)",
+        "opcoes": [
+            "São compartilhados universalmente por todas as pessoas.",
+            "Nascem da lógica",
+            "Precisam ser afirmados por símbolos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os valores não são universais; variam entre culturas.",
+                "Os valores não emergem da lógica; surgem da experiência histórica e cultural de cada grupo.",
+                "Os valores precisam ser afirmados e reforçados por símbolos (ritos, cerimônias, linguagem) para se manterem vigentes na comunidade."
+            ],
+            "fantasma": [
+                "Não são universais, variam entre culturas.",
+                "Não nascem da lógica, nascem da experiência cultural.",
+                "Essa aí! Precisam de símbolos (ritos, cerimônias) para se manterem vivos."
+            ],
+            "gato": [
+                "Miau, não são universais.",
+                "Fijate: não nascem da lógica.",
+                "Ronronado de aprovação! Símbolos que os mantêm vigentes."
+            ]
+        }
+    },
+    {
+        "pergunta": "A antropologia médica contribui para mostrar: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A variabilidade cultural da universalidade do processo saúde-doença-atenção.",
+            "A uniformidade cultural da universalidade do processo saúde-doença-atenção.",
+            "A dimensão puramente biológica do processo saúde-doença."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A antropologia médica mostra que o processo saúde-doença-atenção é universal, mas sua expressão varia culturalmente entre grupos.",
+                "Não existe uniformidade cultural; cada grupo interpreta a doença de maneira diferente.",
+                "Não se limita ao biológico; inclui a interpretação cultural do processo."
+            ],
+            "fantasma": [
+                "Essa aí! O processo é universal, mas cada cultura o vive diferente.",
+                "Não há uniformidade, cada cultura interpreta à sua maneira.",
+                "Não se limita ao biológico."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Universal, mas com variabilidade cultural.",
+                "Miau, não há uniformidade cultural.",
+                "Fijate: não se limita ao biológico."
+            ]
+        }
+    },
+    {
+        "pergunta": "A instituição social da Medicina, que chamamos de Complexo Médico, tem algumas das seguintes características: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Tem três protagonistas essenciais: o doente, o médico e a comunidade. Os três interagem em um meio social em função da saúde e da doença.",
+            "O médico é o protagonista primordial do complexo médico",
+            "A interação é orientada pela política e o sistema de saúde que é o mesmo em todo tempo e lugar, definindo os papéis dos participantes."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O Complexo Médico tem três protagonistas essenciais: o doente, o médico e a comunidade, interagindo em um meio social.",
+                "Não existe um protagonista primordial único; os três atores têm igual relevância estrutural.",
+                "A interação varia conforme o tempo e o contexto social; não é a mesma em todo tempo e lugar."
+            ],
+            "fantasma": [
+                "Essa aí! Doente, médico e comunidade, os três protagonistas.",
+                "Não há um protagonista único, são os três juntos.",
+                "Isso varia conforme o tempo e o contexto."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Doente, médico e comunidade, os três juntos.",
+                "Miau, não há um protagonista único.",
+                "Fijate: isso muda conforme o contexto."
+            ]
+        }
+    },
+    {
+        "pergunta": "Desde a antropologia, a cultura se define como: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A interconexão entre o étnico e o biológico.",
+            "Um conjunto de necessidades sociais e individuais próprias de um coletivo humano.",
+            "Um complexo e dinâmico conjunto de crenças, conhecimentos, valores e condutas aprendidas e transmitidas entre as pessoas através da linguagem e sua vida em sociedade"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cultura não se reduz ao étnico-biológico; é um fenômeno aprendido e transmitido socialmente.",
+                "Não se reduz a necessidades individuais ou coletivas; é um sistema de crenças e condutas.",
+                "A cultura é esse complexo dinâmico de crenças, conhecimentos, valores e condutas que se aprendem e transmitem socialmente, principalmente através da linguagem."
+            ],
+            "fantasma": [
+                "Não se reduz ao étnico-biológico.",
+                "Não se limita a necessidades, é todo um sistema de crenças.",
+                "Essa aí! Crenças, conhecimentos, valores e condutas transmitidas pela linguagem."
+            ],
+            "gato": [
+                "Miau, não se reduz ao étnico-biológico.",
+                "Fijate: não se limita a necessidades.",
+                "Ronronado de aprovação! Todo um sistema aprendido e transmitido pela linguagem."
+            ]
+        }
+    },
+    {
+        "pergunta": "Para a 'saúde intercultural', as medicinas são construções culturais que respondem a necessidades de um ambiente social específico, nas quais é possível distinguir: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Uma dimensão conceitual e outra comportamental.",
+            "Uma dimensão explicativa e outra preditiva.",
+            "Uma dimensão subjetiva e outra individual."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os sistemas médicos podem ser analisados em duas dimensões: conceitual (ideias e teorias sobre saúde e doença) e comportamental (práticas terapêuticas concretas).",
+                "Essa combinação não é a reconhecida para a análise intercultural dos sistemas médicos.",
+                "Essa combinação não é a reconhecida para a análise intercultural dos sistemas médicos."
+            ],
+            "fantasma": [
+                "Essa aí! Conceitual (ideias) e comportamental (práticas).",
+                "Essa combinação não é a usada aqui.",
+                "Também não é essa a combinação correta."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Conceitual e comportamental, as duas dimensões.",
+                "Miau, essa combinação não é a correta.",
+                "Dado curioso: também não é essa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Segundo Schumann, a relação do homem com sua doença pode ser dividida em etapas: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Consulta médica de urgência e internação.",
+            "Experiência dos sintomas.",
+            "Frustração"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é a primeira etapa; a consulta vem depois de outras etapas prévias.",
+                "Schumann propôs que a primeira etapa do processo antropológico da doença é a experiência dos sintomas.",
+                "A frustração não é uma etapa reconhecida no modelo de Schumann."
+            ],
+            "fantasma": [
+                "Essa não é a primeira etapa, vêm outras antes.",
+                "Essa aí! A experiência dos sintomas é a primeira etapa.",
+                "A frustração não faz parte desse modelo."
+            ],
+            "gato": [
+                "Miau, essa não é a primeira etapa.",
+                "Ronronado de aprovação! Experiência dos sintomas, a primeira etapa.",
+                "Fijate: isso não é parte do modelo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os métodos fundamentais da Antropologia são: (Marque a opção verdadeira)",
+        "opcoes": [
+            "O método hipotético-dedutivo",
+            "A entrevista e a experimentação.",
+            "A entrevista e a observação."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O método hipotético-dedutivo é mais característico das ciências formais e naturais, não da Antropologia.",
+                "A experimentação é mais própria das ciências naturais, não um método fundamental da Antropologia.",
+                "Os métodos fundamentais da Antropologia são a entrevista (em profundidade, etnográfica) e a observação (participante e não participante)."
+            ],
+            "fantasma": [
+                "Isso é mais das ciências formais e naturais.",
+                "A experimentação é mais das ciências naturais.",
+                "Essa aí! Entrevista e observação, os métodos fundamentais da Antropologia."
+            ],
+            "gato": [
+                "Miau, isso é de outras ciências.",
+                "Fijate: a experimentação é das ciências naturais.",
+                "Ronronado de aprovação! Entrevista e observação."
+            ]
+        }
+    },
+    {
+        "pergunta": "Para que os níveis de atenção funcionem adequadamente, deve existir, entre outras questões: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Independência entre os diferentes níveis de prevenção.",
+            "A entrada do usuário no sistema sempre e unicamente pelo terceiro nível de atenção.",
+            "Um sistema de referência e contrarreferência que permita a continência ou capacidade operativa de cada um deles."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os níveis devem se articular, não ser independentes entre si.",
+                "A entrada no sistema normalmente deve ser pelo primeiro nível, não pelo terceiro.",
+                "Para que os níveis de atenção funcionem eficientemente deve existir um sistema de referência e contrarreferência entre eles."
+            ],
+            "fantasma": [
+                "Os níveis devem se articular, não ser independentes.",
+                "A entrada normal é pelo primeiro nível, não pelo terceiro.",
+                "Essa aí! Referência e contrarreferência entre níveis."
+            ],
+            "gato": [
+                "Miau, devem se articular, não ser independentes.",
+                "Fijate: entra-se pelo primeiro nível, não pelo terceiro.",
+                "Ronronado de aprovação! Referência e contrarreferência."
+            ]
+        }
+    },
+    {
+        "pergunta": "As atividades preventivas se classificam em três níveis: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A prevenção terciária visa o diagnóstico precoce e o tratamento oportuno.",
+            "A prevenção primária se apoia em medidas orientadas a evitar o surgimento da doença ou problema de saúde, mediante o controle dos fatores causais e predisponentes.",
+            "A prevenção secundária se refere a ações relativas à recuperação ad integrum da doença, mediante a reabilitação."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O diagnóstico precoce e tratamento oportuno correspondem à prevenção secundária, não à terciária.",
+                "A prevenção primária atua antes da doença, controlando fatores causais e predisponentes para evitar seu surgimento.",
+                "A reabilitação corresponde à prevenção terciária, não à secundária."
+            ],
+            "fantasma": [
+                "Isso é da prevenção secundária, não a terciária.",
+                "Essa aí! A primária previne antes de a doença aparecer.",
+                "A reabilitação é da terciária, não da secundária."
+            ],
+            "gato": [
+                "Miau, isso é da secundária.",
+                "Ronronado de aprovação! A primária atua antes de a doença aparecer.",
+                "Fijate: a reabilitação é da terciária."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os determinantes sociais da saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "São estratégias que o sistema de saúde desenvolve.",
+            "São as circunstâncias em que as pessoas vivem, mas não está incluído o sistema de saúde.",
+            "São as circunstâncias em que as pessoas nascem, crescem, vivem, trabalham e envelhecem, incluído o sistema de saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não são estratégias do sistema de saúde; são circunstâncias sociais mais amplas.",
+                "Sim incluem o sistema de saúde como um dos determinantes.",
+                "Os determinantes sociais da saúde (OMS) são as circunstâncias em que as pessoas nascem, crescem, vivem, trabalham e envelhecem, incluindo o sistema de saúde."
+            ],
+            "fantasma": [
+                "Não são estratégias, são circunstâncias mais amplas.",
+                "Sim incluem o sistema de saúde.",
+                "Essa aí! Nascer, crescer, viver, trabalhar e envelhecer, incluído o sistema de saúde."
+            ],
+            "gato": [
+                "Miau, não são estratégias do sistema.",
+                "Fijate: sim incluem o sistema de saúde.",
+                "Ronronado de aprovação! Todo o ciclo de vida, incluído o sistema de saúde."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Prevenção secundária: (Marque a opção verdadeira)",
+        "opcoes": [
+            "O conjunto de medidas e atividades que têm como objetivo evitar sequelas dos problemas de saúde padecidos, visando principalmente a reabilitação e integração dessas pessoas à comunidade.",
+            "Se desenvolve exclusivamente no Segundo Nível de Atenção.",
+            "É o conjunto de medidas e atividades tendentes a reduzir a incidência de um problema de saúde através de seu diagnóstico precoce e uma intervenção efetiva, diminuindo as consequências que a doença acarreta."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa descrição corresponde à prevenção terciária (reabilitação e integração), não à secundária.",
+                "Não se desenvolve exclusivamente no segundo nível de atenção.",
+                "A prevenção secundária busca reduzir a incidência mediante diagnóstico precoce e intervenção efetiva, diminuindo as consequências da doença já iniciada."
+            ],
+            "fantasma": [
+                "Isso é prevenção terciária, não secundária.",
+                "Não é exclusiva do segundo nível.",
+                "Essa aí! Diagnóstico precoce e intervenção efetiva."
+            ],
+            "gato": [
+                "Miau, isso é terciária.",
+                "Fijate: não é exclusiva de um só nível.",
+                "Ronronado de aprovação! Diagnóstico precoce e intervenção efetiva."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Prevenção primária: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Tem como objetivo reduzir a incidência do problema de saúde na população, detectando e neutralizando as condições que implicam risco.",
+            "Se realiza exclusivamente no Primeiro Nível de Atenção.",
+            "O conjunto de medidas e atividades tendentes à cura da doença."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A prevenção primária reduz a incidência detectando e neutralizando fatores de risco antes de a doença se produzir.",
+                "Não se realiza exclusivamente no primeiro nível; pode se desenvolver em qualquer nível.",
+                "A cura é um objetivo terapêutico, não preventivo."
+            ],
+            "fantasma": [
+                "Essa aí! Detecta e neutraliza fatores de risco antes da doença.",
+                "Não é exclusiva do primeiro nível.",
+                "A cura é terapêutica, não preventiva."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Neutraliza fatores de risco antes da doença.",
+                "Miau, não é exclusiva de um nível.",
+                "Fijate: isso é terapêutico, não preventivo."
+            ]
+        }
+    },
+    {
+        "pergunta": "O Terceiro nível de atenção: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Compreende as instituições de saúde equipadas com alta complexidade para a atenção de problemas de saúde que requerem maior tecnologia e maior aparelhamento.",
+            "Se ocupa de realizar exclusivamente prevenção terciária.",
+            "Compreende as instituições de saúde equipadas com baixa complexidade para a atenção de problemas de saúde mais frequentes."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O terceiro nível compreende instituições de alta complexidade que atendem problemas que requerem tecnologia avançada e especialização.",
+                "Não se ocupa exclusivamente de prevenção terciária; abrange a atenção de alta complexidade em geral.",
+                "A baixa complexidade é própria do primeiro nível, não do terceiro."
+            ],
+            "fantasma": [
+                "Essa aí! Alta complexidade, mais tecnologia e especialização.",
+                "Não é só prevenção terciária.",
+                "A baixa complexidade é do primeiro nível."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Alta complexidade e mais tecnologia.",
+                "Miau, não é só prevenção terciária.",
+                "Fijate: a baixa complexidade é do primeiro nível."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Estratégia de Atenção Primária à Saúde se caracteriza por: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Ser um componente-chave para a saúde, embora esta não possa se adaptar a diferentes contextos políticos, sociais e culturais.",
+            "O treinamento dos recursos humanos que se articula com as necessidades de saúde e é sustentável.",
+            "Ser sinônimo de prevenção primária, já que a estratégia se desenvolve nesse nível de prevenção."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A APS sim se adapta a diferentes contextos políticos, sociais e culturais.",
+                "A Estratégia de APS (Alma-Ata, 1978) se caracteriza pelo treinamento de recursos humanos articulado com as necessidades locais de saúde, sendo sustentável.",
+                "Não é sinônimo de prevenção primária; é uma estratégia mais ampla."
+            ],
+            "fantasma": [
+                "Sim se adapta a diferentes contextos.",
+                "Essa aí! Treinamento de recursos humanos articulado com as necessidades locais.",
+                "Não é sinônimo de prevenção primária, é mais ampla."
+            ],
+            "gato": [
+                "Miau, sim se adapta a diferentes contextos.",
+                "Ronronado de aprovação! Treinamento articulado com necessidades locais.",
+                "Fijate: não é sinônimo de prevenção primária."
+            ]
+        }
+    },
+    {
+        "pergunta": "O primeiro nível de Atenção: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Se caracteriza por contar com estabelecimentos de baixa complexidade. Permite uma adequada acessibilidade à população, podendo realizar uma atenção oportuna e eficaz.",
+            "Resolve a atenção de patologias complexas que requerem procedimentos especializados e de alta tecnologia.",
+            "Facilita a adaptação dos pacientes a problemas incuráveis e contribui para prevenir ou reduzir ao máximo as recidivas da doença."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O primeiro nível é composto por estabelecimentos de baixa complexidade que garantem acessibilidade e atenção oportuna para os problemas mais frequentes.",
+                "A alta complexidade corresponde ao terceiro nível, não ao primeiro.",
+                "A adaptação a problemas incuráveis é própria do nível terciário/paliativo, não do primeiro nível."
+            ],
+            "fantasma": [
+                "Essa aí! Baixa complexidade, boa acessibilidade, atenção oportuna.",
+                "Isso é do terceiro nível, não do primeiro.",
+                "Isso é mais do nível terciário/paliativo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Baixa complexidade e boa acessibilidade.",
+                "Miau, isso é do terceiro nível.",
+                "Fijate: isso é do nível terciário/paliativo."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Prevenção (OMS, 1998) se define como: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A detecção precoce de doenças e o tratamento oportuno.",
+            "A reabilitação biopsicossocial.",
+            "As 'medidas destinadas não somente a prevenir o surgimento da doença, tais como a redução de fatores de risco, mas também a deter seu avanço e atenuar suas consequências uma vez estabelecida'"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A detecção precoce é apenas parte da prevenção secundária, não a definição completa de prevenção.",
+                "A reabilitação corresponde à prevenção terciária, não à definição completa de prevenção.",
+                "Segundo a OMS (1998), a prevenção abrange desde reduzir fatores de risco até deter o avanço e atenuar consequências da doença já estabelecida."
+            ],
+            "fantasma": [
+                "Isso é só parte da prevenção secundária.",
+                "Isso é da prevenção terciária, só uma parte.",
+                "Essa aí! Desde reduzir riscos até atenuar consequências, todo o espectro."
+            ],
+            "gato": [
+                "Miau, isso é só uma parte, a secundária.",
+                "Fijate: isso é só a terciária.",
+                "Ronronado de aprovação! Todo o espectro, do risco até as consequências."
+            ]
+        }
+    },
+    {
+        "pergunta": "A Promoção da Saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A estratégia de promoção da saúde só é aplicável a populações vulneráveis socioeconomicamente.",
+            "É uma estratégia estabelecida que proporciona aos indivíduos e às comunidades os meios necessários para exercer maior controle sobre sua própria saúde e assim poder melhorá-la.",
+            "É uma estratégia que proporciona aos indivíduos e às comunidades os meios necessários para acessar o sistema de saúde."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se limita a populações vulneráveis; se aplica a toda a população.",
+                "A Promoção da Saúde (Carta de Ottawa, 1986) proporciona às pessoas e comunidades os meios para exercer maior controle sobre sua saúde e melhorá-la.",
+                "Vai além do mero acesso ao sistema de saúde; inclui estilos de vida, ambientes saudáveis e empoderamento."
+            ],
+            "fantasma": [
+                "Não se limita a populações vulneráveis.",
+                "Essa aí! Dar ferramentas para controlar e melhorar a própria saúde.",
+                "É mais que só o acesso ao sistema de saúde."
+            ],
+            "gato": [
+                "Miau, não se limita ao vulnerável.",
+                "Ronronado de aprovação! Ferramentas para controlar e melhorar a saúde própria.",
+                "Fijate: é mais que só acesso ao sistema."
+            ]
+        }
+    },
+    {
+        "pergunta": "Quando nos referimos às práticas de promoção da saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A comunidade não se envolve nos problemas de saúde, estes são definidos pela equipe médica.",
+            "Priorizam-se os comportamentos individuais sem levar em conta os recursos que a comunidade tem para a resolução de problemas de saúde.",
+            "Falamos dos processos que estimulam as práticas saudáveis, seja de forma individual e especialmente coletiva, favorecendo a participação social e a construção de cidadania."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A comunidade é protagonista ativa, não passiva, nas práticas de promoção da saúde.",
+                "Integra-se o individual com o comunitário; não se prioriza unicamente o individual.",
+                "As práticas de promoção da saúde estimulam condutas saudáveis individuais e coletivas, promovendo a participação social e a construção de cidadania."
+            ],
+            "fantasma": [
+                "A comunidade é protagonista ativa, não passiva.",
+                "Integra-se o individual com o comunitário, não se prioriza só um.",
+                "Essa aí! Práticas saudáveis, individuais e coletivas, com participação social."
+            ],
+            "gato": [
+                "Miau, a comunidade é protagonista ativa.",
+                "Fijate: integra-se o individual com o comunitário.",
+                "Ronronado de aprovação! Participação social e construção de cidadania."
+            ]
+        }
+    },
+    {
+        "pergunta": "Sobre a Promoção da Saúde: (Marque a opção verdadeira)",
+        "opcoes": [
+            "A estratégia de promoção da saúde propõe a criação de ambientes e entornos saudáveis, facilita a participação social construindo cidadania e estabelecendo estilos de vida saudáveis.",
+            "A promoção de saúde como tal é uma estratégia que proporciona aos indivíduos e às comunidades os meios necessários para acessar o sistema de saúde.",
+            "É uma estratégia que permite evitar doenças por meio da vacinação."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A Promoção da Saúde (Carta de Ottawa) propõe criar ambientes saudáveis, facilitar a participação social, construir cidadania e estabelecer estilos de vida saudáveis.",
+                "Não se limita ao acesso ao sistema de saúde; é um conceito mais amplo.",
+                "Não se limita à vacinação, que é uma medida de prevenção primária específica."
+            ],
+            "fantasma": [
+                "Essa aí! Ambientes saudáveis, participação social, cidadania e estilos de vida.",
+                "Não se limita só ao acesso ao sistema.",
+                "Não é só a vacinação, isso é prevenção primária específica."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Ambientes saudáveis e cidadania.",
+                "Miau, não se limita só ao acesso.",
+                "Fijate: a vacinação é só prevenção primária específica."
+            ]
+        }
+    },
+    {
+        "pergunta": "Define-se Níveis de Atenção: (Marque a opção verdadeira)",
+        "opcoes": [
+            "Como uma forma ordenada e estratificada de organizar os recursos para satisfazer as necessidades da população.",
+            "Como uma estratégia para o diagnóstico e tratamento das doenças mais frequentes.",
+            "Como um sistema que garante a erradicação das doenças."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os Níveis de Atenção são uma forma ordenada e estratificada de organizar os recursos do sistema de saúde para satisfazer as necessidades da população.",
+                "Não se limitam ao diagnóstico e tratamento; organizam todo o sistema de recursos.",
+                "Nenhum sistema garante a erradicação de todas as doenças."
+            ],
+            "fantasma": [
+                "Essa aí! Organizar os recursos de forma ordenada e estratificada.",
+                "Não se limitam só ao diagnóstico e tratamento.",
+                "Nenhum sistema garante erradicar tudo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Recursos organizados de forma ordenada.",
+                "Miau, não se limitam a diagnóstico e tratamento.",
+                "Fijate: nada garante erradicar tudo."
+            ]
+        }
+    }
+]
