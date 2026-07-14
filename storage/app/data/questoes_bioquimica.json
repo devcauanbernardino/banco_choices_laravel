@@ -28,7 +28,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Uniones químicas e isomería",
-            "feedback": "A esterificação ocorre entre um grupo álcool (-OH) e um grupo ácido carboxílico (-COOH), com perda de uma molécula de água, formando o éster. O anidrido se forma entre dois ácidos, o éter entre dois álcoois, e a amida entre um ácido e uma amina."
+            "explicacoes": {
+                "robo": [
+                    "El anhídrido se forma entre dos ácidos, no entre un alcohol y un ácido.",
+                    "El éter se forma entre dos alcoholes, no entre un alcohol y un ácido.",
+                    "La esterificación ocurre entre un grupo alcohol (-OH) y un grupo ácido carboxílico (-COOH), con pérdida de una molécula de agua, formando el éster.",
+                    "La amida se forma entre un ácido y una amina, no entre un alcohol y un ácido."
+                ],
+                "fantasma": [
+                    "Ojo, el anhídrido es entre dos ácidos, no alcohol con ácido.",
+                    "El éter es entre dos alcoholes, no esto.",
+                    "¡Esta! Alcohol + ácido carboxílico, con pérdida de agua, forma un éster.",
+                    "La amida es entre ácido y amina, no lo que describe la pregunta."
+                ],
+                "gato": [
+                    "Fijate: el anhídrido es entre dos ácidos.",
+                    "Dato curioso: el éter es entre dos alcoholes.",
+                    "¡Ronroneo de aprobación! Alcohol + ácido = éster, con pérdida de agua.",
+                    "Miau, la amida es entre ácido y amina."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -55,7 +74,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Uniones químicas e isomería",
-            "feedback": "O éter (R-O-R') se forma pela condensação de dois álcoois com perda de uma molécula de água. A opção A descreve um éster, e a opção D descreve um anidrido."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe un éster, no un éter.",
+                    "El éter (R-O-R') se forma por la condensación de dos alcoholes con pérdida de una molécula de agua.",
+                    "Esa combinación no corresponde a la formación de un éter.",
+                    "Eso describe un anhídrido, no un éter."
+                ],
+                "fantasma": [
+                    "Eso es un éster, no un éter.",
+                    "¡Esta! Dos alcoholes se condensan y forman un éter, perdiendo agua.",
+                    "Esa combinación no es la del éter.",
+                    "Eso es un anhídrido, no un éter."
+                ],
+                "gato": [
+                    "Fijate: eso es un éster.",
+                    "¡Ronroneo de aprobación! Dos alcoholes = éter.",
+                    "Dato curioso: esa combinación no arma un éter.",
+                    "Miau, eso es un anhídrido."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -82,7 +120,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Uniones químicas e isomería",
-            "feedback": "A condensação de dois grupos carboxila (ácidos) com perda de água forma um anidrido (ex.: anidrido acético a partir de duas moléculas de ácido acético). O éter, por outro lado, se forma entre dois álcoois, não entre dois ácidos."
+            "explicacoes": {
+                "robo": [
+                    "El éster se forma entre un alcohol y un ácido, no entre dos ácidos.",
+                    "La condensación de dos grupos carboxilo (ácidos) con pérdida de agua forma un anhídrido.",
+                    "El éter se forma entre dos alcoholes, no entre dos ácidos.",
+                    "La amida se forma entre un ácido y una amina, no entre dos ácidos."
+                ],
+                "fantasma": [
+                    "El éster es alcohol + ácido, no dos ácidos.",
+                    "¡Esta! Dos ácidos condensados forman un anhídrido.",
+                    "El éter es entre dos alcoholes, no esto.",
+                    "La amida es ácido + amina, no dos ácidos."
+                ],
+                "gato": [
+                    "Fijate: el éster es alcohol + ácido.",
+                    "¡Ronroneo de aprobación! Dos ácidos = anhídrido.",
+                    "Dato curioso: el éter es entre alcoholes.",
+                    "Miau, la amida es ácido + amina."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -109,7 +166,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Uniones químicas e isomería",
-            "feedback": "As ligações entre os grupos fosfato terminais do ATP (alfa-beta e beta-gama) são anidridos fosfóricos, de alta energia de hidrólise. Já a ligação entre o primeiro fosfato e a ribose é do tipo éster fosfórico."
+            "explicacoes": {
+                "robo": [
+                    "El enlace entre el primer fosfato y la ribosa sí es de tipo éster fosfórico, pero no es el que une los grupos fosfato entre sí.",
+                    "Los enlaces entre los grupos fosfato terminales del ATP (alfa-beta y beta-gamma) son anhídridos fosfóricos, de alta energía de hidrólisis.",
+                    "No es un éter; los fosfatos no se unen por esa clase de enlace.",
+                    "No es una amida; ese tipo de enlace no está presente entre los fosfatos del ATP."
+                ],
+                "fantasma": [
+                    "Ojo, ese tipo de enlace es entre el fosfato y la ribosa, no entre los fosfatos.",
+                    "¡Esta! Entre los fosfatos terminales del ATP hay anhídridos fosfóricos, de alta energía.",
+                    "No es un éter acá.",
+                    "No es una amida acá."
+                ],
+                "gato": [
+                    "Fijate: eso es entre el fosfato y la ribosa.",
+                    "¡Ronroneo de aprobación! Anhídridos fosfóricos de alta energía entre los fosfatos.",
+                    "Dato curioso: no es un éter.",
+                    "Miau, no es una amida."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -136,7 +212,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Uniones químicas e isomería",
-            "feedback": "Enantiômeros são estereoisômeros que são imagens especulares não sobreponíveis um do outro (como a mão direita e a esquerda), diferindo em todos os centros quirais simultaneamente. Isômeros que diferem em apenas um carbono quiral são chamados de epímeros (opção B)."
+            "explicacoes": {
+                "robo": [
+                    "Los enantiómeros son estereoisómeros que son imágenes especulares no superponibles entre sí, difiriendo en todos los centros quirales simultáneamente.",
+                    "Eso describe a los epímeros, que difieren en un solo carbono quiral, no a los enantiómeros.",
+                    "Eso describe la isomería geométrica cis/trans, no la enantiomería.",
+                    "Esa descripción es demasiado vaga y no define específicamente a los enantiómeros."
+                ],
+                "fantasma": [
+                    "¡Esta! Imágenes especulares no superponibles, difiriendo en todos los centros quirales.",
+                    "Eso es un epímero, no un enantiómero.",
+                    "Eso es la isomería cis/trans, no esto.",
+                    "Esa descripción es muy vaga para ser la correcta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Imágenes especulares, como la mano derecha y la izquierda.",
+                    "Fijate: eso es un epímero.",
+                    "Dato curioso: eso es cis/trans.",
+                    "Miau, esa descripción es muy vaga."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -163,7 +258,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Uniones químicas e isomería",
-            "feedback": "A oxidação do carbono 1 (o carbono do grupo aldeído) transforma esse grupo em um carboxilo, gerando o ácido D-glucônico. O ácido D-glucurônico, em contrapartida, resulta da oxidação do carbono 6 (o álcool primário terminal), não do carbono 1."
+            "explicacoes": {
+                "robo": [
+                    "La oxidación del carbono 1 (el carbono del grupo aldehído) transforma ese grupo en un carboxilo, generando el ácido D-glucónico.",
+                    "El ácido D-glucurónico resulta de la oxidación del carbono 6 (el alcohol primario terminal), no del carbono 1.",
+                    "La oxidación del carbono 1 no genera un aminoazúcar; eso requeriría la sustitución de un hidroxilo por un grupo amino.",
+                    "La desoxiglucosa resulta de la pérdida de un oxígeno, no de una oxidación."
+                ],
+                "fantasma": [
+                    "¡Esta! Oxidar el carbono 1 da un carboxilo, formando ácido glucónico.",
+                    "Eso es oxidar el carbono 6, no el 1.",
+                    "Oxidar el carbono 1 no da un aminoazúcar.",
+                    "La desoxiglucosa es al revés, pérdida de oxígeno, no oxidación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Carbono 1 oxidado = carboxilo, ácido glucónico.",
+                    "Fijate: eso es el carbono 6, no el 1.",
+                    "Dato curioso: no da un aminoazúcar.",
+                    "Miau, la desoxiglucosa es pérdida de oxígeno."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -190,7 +304,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Uniones químicas e isomería",
-            "feedback": "Epímeros são estereoisômeros que diferem na configuração de apenas UM átomo de carbono assimétrico (ex.: glicose e galactose diferem apenas no carbono 4), mantendo a mesma configuração nos demais centros quirais."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe a los enantiómeros, no a los epímeros.",
+                    "Los epímeros son estereoisómeros que difieren en la configuración de un solo átomo de carbono asimétrico, manteniendo igual configuración en los demás centros quirales.",
+                    "Eso describe la isomería cis/trans, no la epimería.",
+                    "Esa descripción es demasiado vaga para definir a los epímeros."
+                ],
+                "fantasma": [
+                    "Eso es un enantiómero, no un epímero.",
+                    "¡Esta! Difieren solo en un carbono, el resto igual.",
+                    "Eso es cis/trans, no esto.",
+                    "Muy vaga esa descripción."
+                ],
+                "gato": [
+                    "Fijate: eso es un enantiómero.",
+                    "¡Ronroneo de aprobación! Un solo carbono distinto, como glucosa y galactosa.",
+                    "Dato curioso: eso es cis/trans.",
+                    "Miau, muy vaga esa opción."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -217,7 +350,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Uniones químicas e isomería",
-            "feedback": "A isomeria cis/trans surge da restrição de rotação ao redor da dupla ligação carbono-carbono, gerando dois arranjos espaciais distintos (geométricos) — cis (mesma face) e trans (faces opostas) — sem alterar a fórmula molecular nem a sequência de átomos."
+            "explicacoes": {
+                "robo": [
+                    "No es isomería plana; ese término no corresponde a la isomería cis/trans.",
+                    "No es isomería de cadena; esa se refiere a diferencias en la ramificación del esqueleto carbonado.",
+                    "No es isomería de posición; esa se refiere a la ubicación de un grupo funcional en la cadena.",
+                    "La isomería cis/trans surge de la restricción de rotación alrededor del doble enlace carbono-carbono, generando dos arreglos espaciales distintos (geométricos)."
+                ],
+                "fantasma": [
+                    "Ese término no aplica acá.",
+                    "Eso es diferenciar por ramificación, no esto.",
+                    "Eso es diferenciar por ubicación de un grupo, no esto.",
+                    "¡Esta! La rigidez del doble enlace genera cis y trans, isomería geométrica."
+                ],
+                "gato": [
+                    "Miau, ese término no aplica.",
+                    "Fijate: eso es otra cosa, ramificación.",
+                    "Dato curioso: eso es ubicación de grupo, no esto.",
+                    "¡Ronroneo de aprobación! Cis y trans por la rigidez del doble enlace."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -244,7 +396,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Uniones químicas e isomería",
-            "feedback": "O número atômico (Z) é definido como o número de prótons no núcleo, identidade que define o elemento químico. A soma de prótons e nêutrons corresponde ao número de massa (A), não ao número atômico."
+            "explicacoes": {
+                "robo": [
+                    "El número atómico (Z) se define como el número de protones en el núcleo, identidad que define al elemento químico.",
+                    "El número de neutrones no define a Z; corresponde a otro concepto relacionado con los isótopos.",
+                    "La suma de protones y neutrones corresponde al número de masa (A), no al número atómico.",
+                    "En un átomo neutro los protones y electrones son iguales en cantidad, y sumarlos no define el número atómico."
+                ],
+                "fantasma": [
+                    "¡Esta! Z es la cantidad de protones, define al elemento.",
+                    "Los neutrones no definen a Z.",
+                    "Esa suma es el número de masa (A), no Z.",
+                    "Sumar protones y electrones no tiene que ver con Z."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Protones = Z, la identidad del elemento.",
+                    "Miau, los neutrones no son Z.",
+                    "Fijate: esa suma es el número de masa.",
+                    "Dato curioso: eso no define a Z."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -271,7 +442,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Uniones químicas e isomería",
-            "feedback": "O grupo (coluna) é determinado pelo número de elétrons na camada de valência (última órbita), que define as propriedades químicas semelhantes dos elementos de um mesmo grupo. O período (linha), por sua vez, é determinado pelo número total de órbitas (camadas eletrônicas)."
+            "explicacoes": {
+                "robo": [
+                    "No es la primera órbita; lo que define al grupo son los electrones de la última órbita (valencia).",
+                    "El grupo (columna) está determinado por el número de electrones en la capa de valencia (última órbita), que define las propiedades químicas semejantes de los elementos de un mismo grupo.",
+                    "No es el número total de electrones en todas las órbitas; eso simplemente reflejaría el número atómico.",
+                    "El número de órbitas define al período (fila), no al grupo."
+                ],
+                "fantasma": [
+                    "No es la primera órbita, es la última.",
+                    "¡Esta! Los electrones de la última órbita (valencia) definen el grupo.",
+                    "El total de electrones en todas las órbitas no es lo que define al grupo.",
+                    "El número de órbitas es el período, no el grupo."
+                ],
+                "gato": [
+                    "Miau, no es la primera órbita.",
+                    "¡Ronroneo de aprobación! Electrones de valencia definen el grupo.",
+                    "Fijate: el total no es lo que define al grupo.",
+                    "Dato curioso: el número de órbitas es el período."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -298,7 +488,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Uniones químicas e isomería",
-            "feedback": "A ligação covalente ocorre quando dois átomos compartilham pares de elétrons de sua camada externa (valência). A opção B descreve a ligação iônica/eletrovalente (transferência completa de elétrons), e a opção A descreve o puente de hidrogênio."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe el puente de hidrógeno, no la unión covalente.",
+                    "Eso describe la unión iónica/electrovalente (transferencia completa de un electrón), no la covalente.",
+                    "Tener la misma valencia no es la definición de unión covalente.",
+                    "La unión covalente ocurre cuando dos átomos comparten pares de electrones de su capa externa (valencia)."
+                ],
+                "fantasma": [
+                    "Eso es el puente de hidrógeno.",
+                    "Eso es la unión iónica, transferencia completa.",
+                    "Tener la misma valencia no define esto.",
+                    "¡Esta! Compartir electrones externos, eso es covalente."
+                ],
+                "gato": [
+                    "Fijate: eso es puente de hidrógeno.",
+                    "Miau, eso es unión iónica.",
+                    "Dato curioso: la misma valencia no define esto.",
+                    "¡Ronroneo de aprobación! Compartir electrones = covalente."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -325,7 +534,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Uniones químicas e isomería",
-            "feedback": "No cloreto de sódio, a grande diferença de eletronegatividade entre Na e Cl leva à transferência completa de um elétron do sódio para o cloro, formando íons Na+ e Cl- que se atraem eletrostaticamente — a ligação eletrovalente (iônica)."
+            "explicacoes": {
+                "robo": [
+                    "No es covalente pura; en el NaCl no hay compartición de electrones.",
+                    "No es covalente polar; la diferencia de electronegatividad es demasiado grande para eso.",
+                    "En el cloruro de sodio, la gran diferencia de electronegatividad entre Na y Cl lleva a la transferencia completa de un electrón del sodio al cloro, formando iones que se atraen electrostáticamente: la unión electrovalente (iónica).",
+                    "No es puente de hidrógeno; ese tipo de unión no aplica a un compuesto iónico como el NaCl."
+                ],
+                "fantasma": [
+                    "No hay compartición de electrones acá.",
+                    "La diferencia de electronegatividad es muy grande para ser covalente polar.",
+                    "¡Esta! Na cede un electrón, Cl lo acepta, y se atraen como iones: electrovalente.",
+                    "El puente de hidrógeno no aplica acá."
+                ],
+                "gato": [
+                    "Miau, no hay compartición de electrones.",
+                    "Fijate: la diferencia es muy grande para covalente polar.",
+                    "¡Ronroneo de aprobación! Iones que se atraen, unión electrovalente.",
+                    "Dato curioso: el puente de hidrógeno no aplica."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -352,7 +580,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Uniones químicas e isomería",
-            "feedback": "O período indica o número de camadas eletrônicas (2 órbitas) e o grupo indica os elétrons de valência (7 elétrons) — como o flúor, elemento típico dessa posição. Elementos do grupo 7 (halogênios) são, além disso, fortemente eletronegativos e de caráter não metálico, tornando A e B simultaneamente verdadeiras."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta en sí misma (2 órbitas, 7 electrones de valencia), pero no es la más completa: también es correcta la opción B.",
+                    "Esta afirmación también es correcta (los halógenos son no metálicos y electronegativos), pero no es la más completa: también lo es la opción A.",
+                    "Invierte los datos: son 2 órbitas (no 7) y 7 electrones de valencia (no 2).",
+                    "El período indica el número de capas electrónicas (2 órbitas) y el grupo indica los electrones de valencia (7 electrones), como el flúor; además, los elementos del grupo 7 (halógenos) son fuertemente electronegativos y de carácter no metálico, por lo que A y B son simultáneamente verdaderas."
+                ],
+                "fantasma": [
+                    "Es verdad, pero falta la B para ser la respuesta completa.",
+                    "También es verdad, pero falta la A para ser completa.",
+                    "Che, esos números están invertidos.",
+                    "¡Esta! Las dos, A y B, son ciertas al mismo tiempo."
+                ],
+                "gato": [
+                    "Cierto, pero incompleto sin la B.",
+                    "Cierto también, pero incompleto sin la A.",
+                    "Fijate: esos números están al revés.",
+                    "¡Ronroneo de aprobación! A y B son ciertas juntas."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -379,7 +626,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "A solução fisiológica (NaCl a 0,9%) aporta 154 mEq/l de sódio e 154 mEq/l de cloreto, valor clássico usado em fluidoterapia. A concentração correta é 0,9 g/dl (9 g/l), não 9 g/dl como diz a opção A, e ela não contém glicose nem é isenta de contraindicações (ex.: sobrecarga de volume, hipercloremia)."
+            "explicacoes": {
+                "robo": [
+                    "La concentración correcta es 0,9 g/dl (9 g/l), no 9 g/dl como dice esta opción.",
+                    "La solución fisiológica no contiene glucosa; eso seria la solución dextrosada.",
+                    "La solución fisiológica (NaCl al 0,9%) aporta 154 mEq/l de sodio y 154 mEq/l de cloruro, valor clásico usado en fluidoterapia.",
+                    "No está exenta de contraindicaciones; puede causar sobrecarga de volumen, hipercloremia, entre otras."
+                ],
+                "fantasma": [
+                    "Che, es 0,9 g/dl, no 9 g/dl.",
+                    "No tiene glucosa, eso es otra solución.",
+                    "¡Esta! 154 mEq/l de sodio y de cloruro, el clásico.",
+                    "Sí tiene contraindicaciones, como sobrecarga de volumen."
+                ],
+                "gato": [
+                    "Fijate: es 0,9 g/dl, no 9.",
+                    "Miau, no tiene glucosa.",
+                    "¡Ronroneo de aprobación! 154 y 154, el número clásico.",
+                    "Dato curioso: sí tiene contraindicaciones."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -406,7 +672,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "Déficit de sódio = 0,6 × peso (kg) × (Na desejado − Na atual) = 0,6 × 70 × (142−128) = 42 × 14 = 588 mEq, usando 0,6 como fração de água corporal total."
+            "explicacoes": {
+                "robo": [
+                    "El cálculo correcto es 0,6 × 70 × (142−128) = 588 mEq, no 424.",
+                    "Déficit de sodio = 0,6 × peso (kg) × (Na deseado − Na actual) = 0,6 × 70 × (142−128) = 42 × 14 = 588 mEq, usando 0,6 como fracción de agua corporal total.",
+                    "El cálculo correcto da 588 mEq, no 696.",
+                    "El cálculo correcto da 588 mEq, no 828."
+                ],
+                "fantasma": [
+                    "El cálculo real da 588, no 424.",
+                    "¡Esta! 0,6 × 70 × 14 = 588 mEq de déficit.",
+                    "El cálculo real da 588, no 696.",
+                    "El cálculo real da 588, no 828."
+                ],
+                "gato": [
+                    "Miau, el cálculo da 588, no 424.",
+                    "¡Ronroneo de aprobación! 0,6 × 70 × 14 = 588.",
+                    "Fijate: da 588, no 696.",
+                    "Dato curioso: da 588, no 828."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -433,7 +718,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "Uma solução a 5% (peso/volume) aporta 5 g por 100 ml, ou seja, 50 g de glicose por litro; considerando ~4 kcal/g, isso equivale a aproximadamente 170-200 kcal/litro, valor classicamente citado para o soro glicosado a 5% (D5W)."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (5 g por 100 ml), pero no es la más completa: también lo es la C.",
+                    "Esta opción confunde las unidades; no son 100 mg de solución, sino 100 ml.",
+                    "Esta afirmación también es correcta (aproximadamente 200 kcal/litro), pero no es la más completa sin la A.",
+                    "Una solución al 5% (peso/volumen) aporta 5 g por 100 ml, es decir 50 g de glucosa por litro; considerando ~4 kcal/g, eso equivale a aproximadamente 170-200 kcal/litro, valor clásico del suero glucosado al 5% (D5W)."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta la C para ser completa.",
+                    "Che, esas unidades están mal (mg en vez de ml).",
+                    "También correcto, pero falta la A.",
+                    "¡Esta! A y C son ciertas juntas."
+                ],
+                "gato": [
+                    "Cierto, pero incompleto sin la C.",
+                    "Fijate: esas unidades están mal.",
+                    "Cierto también, pero incompleto sin la A.",
+                    "¡Ronroneo de aprobación! A y C juntas."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -460,7 +764,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "O potássio (K, Z=19) pertence de fato ao período 4, grupo 1 (metais alcalinos) da tabela periódica. O hiperaldosteronismo primário causa HIPOpotasemia (não hiper), a potassemia normal é 3,5-5,5 mEq/l (não 9-11), e o sódio — não o potássio — é o principal cátion extracelular."
+            "explicacoes": {
+                "robo": [
+                    "El hiperaldosteronismo primario causa hipopotasemia, no hiperpotasemia.",
+                    "La potasemia normal es de 3,5-5,5 mEq/l, no 9-11 mEq/l.",
+                    "El sodio, no el potasio, es el principal catión del espacio extracelular.",
+                    "El potasio (K, Z=19) pertenece efectivamente al período 4, grupo 1 (metales alcalinos) de la tabla periódica."
+                ],
+                "fantasma": [
+                    "Che, es hipopotasemia, no hiper.",
+                    "Ese rango está mal, es 3,5-5,5.",
+                    "El sodio es el principal catión extracelular, no el potasio.",
+                    "¡Esta! Período 4, grupo 1, correcto."
+                ],
+                "gato": [
+                    "Miau, es hipopotasemia.",
+                    "Fijate: el rango real es 3,5-5,5.",
+                    "Dato curioso: el sodio manda afuera de la célula.",
+                    "¡Ronroneo de aprobación! Período 4, grupo 1."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -487,7 +810,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "Cetoacidose diabética, intoxicação alcoólica e insuficiência renal são causas clássicas de acidose metabólica com ânion gap aumentado (mnemônico MUDPILES), por acúmulo de ácidos orgânicos (cetoácidos, ácido lático, ureia/toxinas retidas) não medidos no íon gap padrão."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (la cetoacidosis diabética cursa con anión gap aumentado), pero no es la más completa.",
+                    "Esta afirmación también es correcta, pero no es la más completa sin las otras.",
+                    "Esta afirmación también es correcta, pero no es la más completa sin las otras.",
+                    "Cetoacidosis diabética, intoxicación alcohólica e insuficiencia renal son causas clásicas de acidosis metabólica con anión gap aumentado (mnemotecnia MUDPILES), por acumulación de ácidos orgánicos no medidos en el anión gap estándar."
+                ],
+                "fantasma": [
+                    "Correcto, pero no es la única.",
+                    "También correcto, pero no es la única.",
+                    "También correcto, pero no es la única.",
+                    "¡Esta! Las tres causan anión gap aumentado."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -514,7 +856,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "Na acidose metabólica, o excesso de H+ extracelular entra nas células em troca de K+ (para manter a eletroneutralidade), deslocando potássio para fora das células e gerando hiperpotasemia — mesmo com o potássio corporal total podendo estar normal ou reduzido."
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: la acidosis metabólica suele generar hiperpotasemia, no hipopotasemia.",
+                    "En la acidosis metabólica, el exceso de H+ extracelular entra a las células a cambio de K+ (para mantener la electroneutralidad), desplazando potasio hacia afuera de las células y generando hiperpotasemia.",
+                    "La acidosis metabólica no se asocia clásicamente con hipernatremia.",
+                    "La acidosis metabólica no se asocia clásicamente con hipocalcemia como su alteración característica."
+                ],
+                "fantasma": [
+                    "Es al revés, da hiperpotasemia.",
+                    "¡Esta! El H+ entra a la célula y saca K+, dando hiperpotasemia.",
+                    "No tiene que ver con el sodio directamente.",
+                    "No es la alteración característica acá."
+                ],
+                "gato": [
+                    "Miau, es al revés.",
+                    "¡Ronroneo de aprobación! H+ adentro, K+ afuera, hiperpotasemia.",
+                    "Fijate: no es esto.",
+                    "Dato curioso: no es esto tampoco."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -541,7 +902,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "220 mg/dl = 2200 mg/l = 2,2 g/l. Dividindo pelo peso molecular (180 g/mol): 2200 ÷ 180 ≈ 12,2 mmol/l."
+            "explicacoes": {
+                "robo": [
+                    "El cálculo correcto da 12,2 mmol/l, no 3,5.",
+                    "El cálculo correcto da 12,2 mmol/l, no 5.",
+                    "220 mg/dl equivale a 2,2 g/l, no 22 g/l.",
+                    "220 mg/dl = 2200 mg/l = 2,2 g/l. Dividiendo por el peso molecular (180 g/mol): 2200 ÷ 180 ≈ 12,2 mmol/l."
+                ],
+                "fantasma": [
+                    "El cálculo real da 12,2, no 3,5.",
+                    "El cálculo real da 12,2, no 5.",
+                    "Che, son 2,2 g/l, no 22 g/l.",
+                    "¡Esta! 2200 mg/l ÷ 180 = 12,2 mmol/l."
+                ],
+                "gato": [
+                    "Miau, da 12,2, no 3,5.",
+                    "Fijate: da 12,2, no 5.",
+                    "Dato curioso: son 2,2 g/l, no 22.",
+                    "¡Ronroneo de aprobación! 2200 ÷ 180 = 12,2 mmol/l."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -568,7 +948,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "5 mmol/l × 180 mg/mmol = 900 mg/l = 90 mg/dl."
+            "explicacoes": {
+                "robo": [
+                    "El cálculo correcto da 90 mg/dl, no 45.",
+                    "5 mmol/l × 180 mg/mmol = 900 mg/l = 90 mg/dl.",
+                    "El cálculo correcto da 90 mg/dl, no 180.",
+                    "El cálculo correcto da 90 mg/dl, no 360."
+                ],
+                "fantasma": [
+                    "El cálculo real da 90, no 45.",
+                    "¡Esta! 5 × 180 = 900 mg/l = 90 mg/dl.",
+                    "El cálculo real da 90, no 180.",
+                    "El cálculo real da 90, no 360."
+                ],
+                "gato": [
+                    "Miau, da 90, no 45.",
+                    "¡Ronroneo de aprobación! 5 × 180 ÷ 10 = 90 mg/dl.",
+                    "Fijate: da 90, no 180.",
+                    "Dato curioso: da 90, no 360."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -595,7 +994,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "Na cetoacidose diabética, a acidose metabólica desencadeia hiperventilação compensatória (respiração de Kussmaul, para reduzir a pCO2) e hiperpotasemia (por deslocamento transcelular de K+ mediado pela acidose e pela deficiência de insulina), apesar de o potássio corporal total geralmente estar depletado."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (la respiración de Kussmaul compensa la acidosis), pero no es la más completa: también lo es B.",
+                    "Esta afirmación también es correcta (hiperpotasemia por desplazamiento transcelular), pero no es la más completa sin A.",
+                    "La cetoacidosis diabética no se asocia clásicamente con hipernatremia como su alteración típica.",
+                    "En la cetoacidosis diabética, la acidosis metabólica desencadena hiperventilación compensatoria (respiración de Kussmaul, para reducir la pCO2) e hiperpotasemia (por desplazamiento transcelular de K+ mediado por la acidosis y la deficiencia de insulina), a pesar de que el potasio corporal total suele estar depletado."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta la B.",
+                    "También correcto, pero falta la A.",
+                    "No es lo típico acá.",
+                    "¡Esta! Las dos, Kussmaul e hiperpotasemia."
+                ],
+                "gato": [
+                    "Cierto, pero incompleto.",
+                    "Cierto también, pero incompleto.",
+                    "Fijate: no es lo típico.",
+                    "¡Ronroneo de aprobación! Las dos juntas."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -622,7 +1040,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Agua, electrolitos y equilibrio ácido-base",
-            "feedback": "A retenção de CO2 por dificuldade de difusão gera acidose respiratória: pCO2 aumentada (causa primária) leva a pH diminuído, com aumento compensatório do HCO3 renal (mecanismo mais evidente na forma crônica), configurando o padrão clássico de acidose respiratória parcialmente compensada."
+            "explicacoes": {
+                "robo": [
+                    "La retención de CO2 por dificultad de difusión genera acidosis respiratoria: pCO2 aumentada (causa primaria) lleva a pH disminuido, con aumento compensatorio del HCO3 renal (mecanismo más evidente en la forma crónica), configurando el patrón clásico de acidosis respiratoria parcialmente compensada.",
+                    "Es inconsistente: si la pCO2 está disminuida, no se explica un pH disminuido en este contexto de dificultad respiratoria.",
+                    "Es inconsistente: una pCO2 aumentada no puede acompañarse de un pH aumentado sin sobrecompensación extrema.",
+                    "Esto describe una alcalosis respiratoria (hiperventilación), lo opuesto al problema descrito, que dificulta la eliminación de CO2."
+                ],
+                "fantasma": [
+                    "¡Esta! CO2 retenido, pH baja, HCO3 sube para compensar.",
+                    "Che, no es consistente esta combinación.",
+                    "No es consistente esta combinación.",
+                    "Eso es alcalosis respiratoria, lo contrario a esta situación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El patrón clásico de acidosis respiratoria compensada.",
+                    "Fijate: no es consistente.",
+                    "Dato curioso: no es consistente.",
+                    "Miau, eso es lo opuesto, alcalosis respiratoria."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -649,7 +1086,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Sodio",
-            "feedback": "O sódio, como metal alcalino do grupo I, tende a ceder seu único elétron de valência para atingir configuração estável, o que explica sua grande afinidade por elementos eletronegativos como o cloro (formando NaCl). As três afirmações descrevem corretamente essa mesma propriedade eletropositiva."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (el sodio cede fácilmente su electrón de valencia), pero no es la más completa.",
+                    "Esta afirmación también es correcta (el sodio está en el grupo I), pero no es la más completa.",
+                    "Esta afirmación también es correcta (gran afinidad por el cloro), pero no es la más completa.",
+                    "El sodio, como metal alcalino del grupo I, tiende a ceder su único electrón de valencia para alcanzar configuración estable, lo que explica su gran afinidad por elementos electronegativos como el cloro (formando NaCl). Las tres afirmaciones describen correctamente esa misma propiedad electropositiva."
+                ],
+                "fantasma": [
+                    "Correcto, pero no es lo único cierto.",
+                    "También correcto, pero no es lo único.",
+                    "También correcto, pero no es lo único.",
+                    "¡Esta! Las tres describen lo mismo: electropositividad."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas, todo es electropositividad."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -676,7 +1132,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Sodio",
-            "feedback": "O sal de cozinha (NaCl) é de fato a principal fonte alimentar de sódio. A necessidade diária recomendada é de apenas alguns gramas de sal (bem abaixo de 40-60 g, quantidade perigosamente alta), os alimentos enlatados/processados costumam conter mais sódio que a carne fresca, e 1 g de sal contém cerca de 400 mg (não 400 g) de sódio."
+            "explicacoes": {
+                "robo": [
+                    "La sal de mesa (NaCl) es efectivamente la principal fuente alimentaria de sodio.",
+                    "La necesidad diaria recomendada es de apenas unos pocos gramos de sal (muy por debajo de 40-60 g, cantidad peligrosamente alta).",
+                    "Los alimentos enlatados/procesados suelen contener más sodio que la carne fresca, no menos.",
+                    "1 g de sal contiene alrededor de 400 mg (no 400 g) de sodio."
+                ],
+                "fantasma": [
+                    "¡Esta! La sal común es la fuente principal de sodio.",
+                    "Che, esa cantidad es peligrosamente alta, no es lo recomendado.",
+                    "Es al revés, los enlatados tienen más sodio.",
+                    "Son 400 mg, no 400 g, ojo con la unidad."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La sal común manda.",
+                    "Miau, esa cantidad es exagerada.",
+                    "Fijate: es al revés.",
+                    "Dato curioso: son miligramos, no gramos."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -703,7 +1178,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Sodio",
-            "feedback": "A excreção urinária de sódio e potássio reflete, em estado estável, a ingestão dietética desses íons; também reflete a atividade do eixo renina-angiotensina-aldosterona (que regula a reabsorção de Na e a secreção de K) e auxilia na avaliação do estado de hidratação/volemia (ex.: Na urinário baixo em depleção de volume)."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (refleja la ingesta dietética en estado estable), pero no es la más completa.",
+                    "Esta afirmación también es correcta (refleja la actividad del eje renina-angiotensina-aldosterona), pero no es la más completa.",
+                    "Esta afirmación también es correcta (útil para evaluar hidratación/volemia), pero no es la más completa.",
+                    "La excreción urinaria de sodio y potasio refleja, en estado estable, la ingesta dietética de esos iones; también refleja la actividad del eje renina-angiotensina-aldosterona (que regula la reabsorción de Na y la secreción de K) y ayuda a evaluar el estado de hidratación/volemia (ej.: Na urinario bajo en depleción de volumen)."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "¡Esta! Las tres cosas se ven en el ionograma urinario."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -730,7 +1224,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Sodio",
-            "feedback": "O túbulo contorneado proximal é o principal sítio de reabsorção de sódio filtrado (aproximadamente 60-80%, acoplada ao transporte de glicose, aminoácidos e outros solutos), sendo por isso considerado o local de reabsorção em massa do sódio."
+            "explicacoes": {
+                "robo": [
+                    "El túbulo contorneado proximal es el principal sitio de reabsorción de sodio filtrado (aproximadamente 60-80%, acoplada al transporte de glucosa, aminoácidos y otros solutos), por lo que se lo considera el sitio de reabsorción en masa del sodio.",
+                    "El asa descendente de Henle es permeable principalmente al agua, no el sitio de la reabsorción masiva de sodio.",
+                    "El asa ascendente de Henle reabsorbe una fracción menor del sodio filtrado, mediante el cotransportador Na-K-2Cl.",
+                    "El túbulo contorneado distal reabsorbe una fracción pequeña del sodio filtrado, no el 80%."
+                ],
+                "fantasma": [
+                    "¡Esta! El proximal se lleva la mayor parte del sodio.",
+                    "Ese tramo es más de agua, no de sodio en masa.",
+                    "Ahí se reabsorbe menos, con otro transportador.",
+                    "Ahí se reabsorbe poco, no el 80%."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El proximal, la reabsorción en masa.",
+                    "Fijate: eso es más de agua.",
+                    "Dato curioso: ahí es menos.",
+                    "Miau, ahí es poco."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -757,7 +1270,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Sodio",
-            "feedback": "O cotransportador Na-K-2Cl (NKCC2), sensível à furosemida, é o principal responsável pela reabsorção de sódio na alça de Henle. O cotransportador Na-Cl sensível a tiazídicos atua no túbulo contorneado distal, e o canal sensível à amilorida (ENaC) atua no túbulo coletor."
+            "explicacoes": {
+                "robo": [
+                    "El cotransportador Na-Cl sensible a tiazidas actúa en el túbulo contorneado distal, no en el asa de Henle.",
+                    "El canal epitelial sensible a la amilorida (ENaC) actúa en el túbulo colector, no en el asa de Henle.",
+                    "El cotransportador Na-K-2Cl (NKCC2), sensible a la furosemida, es el principal responsable de la reabsorción de sodio en el asa de Henle.",
+                    "El contratransporte con bicarbonato de sodio no es el mecanismo característico de esta porción del asa de Henle."
+                ],
+                "fantasma": [
+                    "Ese es del distal, no de acá.",
+                    "Ese es del colector, no de acá.",
+                    "¡Esta! NKCC2, sensible a furosemida, en el asa de Henle.",
+                    "Ese mecanismo no es el de acá."
+                ],
+                "gato": [
+                    "Fijate: ese es del distal.",
+                    "Dato curioso: ese es del colector.",
+                    "¡Ronroneo de aprobación! Furosemida bloquea justo este transportador.",
+                    "Miau, no es ese mecanismo."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -784,7 +1316,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Sodio",
-            "feedback": "A restrição de sódio na dieta é uma medida terapêutica clássica em edemas, hipertensão arterial e insuficiência cardíaca, condições nas quais o excesso de sódio favorece a retenção de água e a sobrecarga de volume."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (los edemas requieren restricción de sodio), pero no es la más completa.",
+                    "Esta afirmación también es correcta (la hipertensión también se beneficia de la restricción de sodio), pero no es la más completa.",
+                    "Esta afirmación también es correcta (la insuficiencia cardíaca requiere restricción de sodio), pero no es la más completa.",
+                    "La restricción de sodio en la dieta es una medida terapéutica clásica en edemas, hipertensión arterial e insuficiencia cardíaca, condiciones en las que el exceso de sodio favorece la retención de agua y la sobrecarga de volumen."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "¡Esta! Las tres se benefician de restringir el sodio."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -811,7 +1362,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Sodio",
-            "feedback": "O valor de referência normal da natremia (sódio plasmático) é de 135 a 145 mEq/l."
+            "explicacoes": {
+                "robo": [
+                    "El valor normal de natremia es 135-145 mEq/l, no 115-125.",
+                    "El valor normal de natremia es 135-145 mEq/l, no 125-135.",
+                    "El valor de referencia normal de la natremia (sodio plasmático) es de 135 a 145 mEq/l.",
+                    "El valor normal de natremia es 135-145 mEq/l, no 145-155."
+                ],
+                "fantasma": [
+                    "El valor real es 135-145, no ese.",
+                    "El valor real es 135-145, no ese.",
+                    "¡Esta! 135-145 mEq/l, el rango clásico.",
+                    "El valor real es 135-145, no ese."
+                ],
+                "gato": [
+                    "Miau, es 135-145.",
+                    "Fijate: es 135-145.",
+                    "¡Ronroneo de aprobación! 135-145 mEq/l.",
+                    "Dato curioso: es 135-145."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -838,7 +1408,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Potasio",
-            "feedback": "O potássio, assim como o sódio, é um metal alcalino do grupo I que cede facilmente seu elétron de valência, o que lhe confere grande afinidade por elementos eletronegativos como o cloro. As três afirmações descrevem a mesma propriedade eletropositiva."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (el potasio cede fácilmente su electrón de valencia), pero no es la más completa.",
+                    "Esta afirmación también es correcta (el potasio está en el grupo I), pero no es la más completa.",
+                    "Esta afirmación también es correcta (gran afinidad por el cloro), pero no es la más completa.",
+                    "El potasio, al igual que el sodio, es un metal alcalino del grupo I que cede fácilmente su electrón de valencia, lo que le confiere gran afinidad por elementos electronegativos como el cloro. Las tres afirmaciones describen la misma propiedad electropositiva."
+                ],
+                "fantasma": [
+                    "Correcto, pero no es lo único.",
+                    "También correcto, pero no es lo único.",
+                    "También correcto, pero no es lo único.",
+                    "¡Esta! Las tres describen la electropositividad del potasio."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -865,7 +1454,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Potasio",
-            "feedback": "Frutas, hortaliças, carnes e peixes são as principais fontes dietéticas de potássio. A ingestão diária real gira em torno de poucos gramas (não 40-60 g), farinhas/arroz possuem menos potássio que carnes/frutas, e o sal comum (NaCl) não contém potássio significativo."
+            "explicacoes": {
+                "robo": [
+                    "Frutas, hortalizas, carnes y pescados son efectivamente las principales fuentes dietéticas de potasio.",
+                    "La ingesta diaria real ronda unos pocos gramos, no 40-60 g.",
+                    "Las harinas y el arroz poseen menos potasio que las carnes y frutas, no más.",
+                    "La sal común (NaCl) no aporta potasio significativo en su composición."
+                ],
+                "fantasma": [
+                    "¡Esta! Frutas, hortalizas, carnes y pescados, las fuentes clásicas.",
+                    "Esa cantidad es exagerada.",
+                    "Es al revés, harinas y arroz tienen menos.",
+                    "La sal común no tiene potasio."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Las fuentes clásicas de potasio.",
+                    "Miau, cantidad exagerada.",
+                    "Fijate: es al revés.",
+                    "Dato curioso: no tiene potasio."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -892,7 +1500,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Potasio",
-            "feedback": "A urina é a principal via de excreção do potássio corporal (cerca de 90% do potássio ingerido), regulada principalmente pela aldosterona no néfron distal."
+            "explicacoes": {
+                "robo": [
+                    "La bilis no es la principal vía de excreción de potasio.",
+                    "La saliva no es la principal vía de excreción de potasio.",
+                    "La orina es la principal vía de excreción del potasio corporal (alrededor del 90% del potasio ingerido), regulada principalmente por la aldosterona en el nefrón distal.",
+                    "Las heces no son la principal vía de excreción de potasio, aunque representan una vía secundaria."
+                ],
+                "fantasma": [
+                    "No es por ahí.",
+                    "No es por ahí.",
+                    "¡Esta! La orina se lleva el 90% del potasio.",
+                    "Es una vía menor, no la principal."
+                ],
+                "gato": [
+                    "Miau, no es por ahí.",
+                    "Fijate: no es por ahí.",
+                    "¡Ronroneo de aprobación! La orina, la vía principal.",
+                    "Dato curioso: es secundaria, no la principal."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -919,7 +1546,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Potasio",
-            "feedback": "A hiperpotasemia é um estímulo direto e potente para a secreção de aldosterona pela zona glomerulosa da adrenal, hormônio que promove a excreção renal de potássio, restaurando a homeostase."
+            "explicacoes": {
+                "robo": [
+                    "El aumento de la potasemia no es el estímulo principal para la hormona antidiurética.",
+                    "La hiperpotasemia es un estímulo directo y potente para la secreción de aldosterona por la zona glomerular de la suprarrenal, hormona que promueve la excreción renal de potasio, restaurando la homeostasis.",
+                    "El aumento de la potasemia no actúa principalmente estimulando bombas Na-H+-ATPasa.",
+                    "El aumento de la potasemia no actúa principalmente mediante contratransporte de cloruro y bicarbonato."
+                ],
+                "fantasma": [
+                    "No es el estímulo principal para esa hormona.",
+                    "¡Esta! El K+ alto activa la aldosterona directamente.",
+                    "No es ese el mecanismo principal.",
+                    "No es ese el mecanismo principal."
+                ],
+                "gato": [
+                    "Miau, no es esa hormona.",
+                    "¡Ronroneo de aprobación! Aldosterona responde directo al K+ alto.",
+                    "Fijate: no es ese mecanismo.",
+                    "Dato curioso: no es ese mecanismo."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -946,7 +1592,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Potasio",
-            "feedback": "A insulina e as catecolaminas (adrenalina, via receptores beta-2) estimulam a bomba Na-K-ATPase, promovendo a captação celular de potássio — mecanismo inclusive usado clinicamente para tratar hiperpotasemia aguda."
+            "explicacoes": {
+                "robo": [
+                    "La insulina y las catecolaminas (adrenalina, vía receptores beta-2) estimulan la bomba Na-K-ATPasa, promoviendo la captación celular de potasio; mecanismo usado incluso clínicamente para tratar la hiperpotasemia aguda.",
+                    "El glucagón no cumple este rol; es la insulina la que actúa junto a la adrenalina.",
+                    "La hormona tiroidea no es la que cumple este rol junto a la adrenalina.",
+                    "El cortisol y la hormona de crecimiento no son los principales reguladores de este intercambio."
+                ],
+                "fantasma": [
+                    "¡Esta! Insulina y adrenalina meten el K+ para adentro de la célula.",
+                    "El glucagón no es la pareja acá, es la insulina.",
+                    "La hormona tiroidea no es la pareja acá.",
+                    "Ni cortisol ni GH son los protagonistas acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Insulina + adrenalina, el dúo que mete K+ adentro.",
+                    "Fijate: no es el glucagón.",
+                    "Dato curioso: no es la tiroidea.",
+                    "Miau, no son esos dos."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -973,7 +1638,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Potasio",
-            "feedback": "A hipopotasemia se associa classicamente à alcalose metabólica: situações que causam perda de K+ (vômitos, diuréticos) frequentemente cursam com alcalose, e a própria alcalose favorece a entrada de K+ nas células, agravando a hipopotasemia — relação recíproca à da acidose com a hiperpotasemia."
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: la hipopotasemia se asocia más con alcalosis metabólica, no con acidosis.",
+                    "La hipopotasemia se asocia clásicamente con la alcalosis metabólica: situaciones que causan pérdida de K+ (vómitos, diuréticos) frecuentemente cursan con alcalosis, y la propia alcalosis favorece la entrada de K+ a las células, agravando la hipopotasemia; relación recíproca a la de la acidosis con la hiperpotasemia.",
+                    "La hipopotasemia no se asocia clásicamente con la acidosis respiratoria como su alteración típica.",
+                    "Sí existe una asociación clásica: con la alcalosis metabólica."
+                ],
+                "fantasma": [
+                    "Es al revés.",
+                    "¡Esta! Vómitos y diuréticos: pérdida de K+ y alcalosis, van de la mano.",
+                    "No es esa la asociación clásica.",
+                    "Sí hay una asociación clásica: con la alcalosis."
+                ],
+                "gato": [
+                    "Miau, es al revés.",
+                    "¡Ronroneo de aprobación! Alcalosis metabólica, la pareja clásica.",
+                    "Fijate: no es esa.",
+                    "Dato curioso: sí existe, es la alcalosis."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -1000,7 +1684,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Potasio",
-            "feedback": "O valor de referência normal da potassemia (potássio plasmático) é de 3,5 a 5,5 mEq/l."
+            "explicacoes": {
+                "robo": [
+                    "El valor normal de potasemia es 3,5-5,5 mEq/l, no 1,5-2,5.",
+                    "El valor normal de potasemia es 3,5-5,5 mEq/l, no 2,5-3,5.",
+                    "El valor de referencia normal de la potasemia (potasio plasmático) es de 3,5 a 5,5 mEq/l.",
+                    "El valor normal de potasemia es 3,5-5,5 mEq/l, no 5,5-6,5."
+                ],
+                "fantasma": [
+                    "El valor real es 3,5-5,5, no ese.",
+                    "El valor real es 3,5-5,5, no ese.",
+                    "¡Esta! 3,5-5,5 mEq/l, el rango clásico.",
+                    "El valor real es 3,5-5,5, no ese."
+                ],
+                "gato": [
+                    "Miau, es 3,5-5,5.",
+                    "Fijate: es 3,5-5,5.",
+                    "¡Ronroneo de aprobación! 3,5-5,5 mEq/l.",
+                    "Dato curioso: es 3,5-5,5."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -1027,7 +1730,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Hidratos de carbono",
-            "feedback": "A maltose é formada por duas unidades de alfa-D-glucopiranose unidas por ligação alfa-1,4. A opção B descreve a sacarose (glicose+frutose), a C descreve a lactose (galactose+glicose), e a D descreve a celobiose (unidade da celulose)."
+            "explicacoes": {
+                "robo": [
+                    "La maltosa está formada por dos unidades de alfa-D-glucopiranosa unidas por enlace alfa-1,4.",
+                    "Eso describe a la sacarosa (glucosa+fructosa), no a la maltosa.",
+                    "Eso describe a la lactosa (galactosa+glucosa), no a la maltosa.",
+                    "Eso describe a la celobiosa (unidad de la celulosa), no a la maltosa."
+                ],
+                "fantasma": [
+                    "¡Esta! Dos glucosas unidas alfa-1,4, eso es maltosa.",
+                    "Eso es la sacarosa.",
+                    "Eso es la lactosa.",
+                    "Eso es la celobiosa."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Glucosa + glucosa alfa-1,4.",
+                    "Fijate: eso es sacarosa.",
+                    "Dato curioso: eso es lactosa.",
+                    "Miau, eso es celobiosa."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -1054,7 +1776,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Hidratos de carbono",
-            "feedback": "A sacarose é composta por alfa-D-glicose e beta-D-frutofuranose unidas por ligação glicosídica alfa-1,2 (equivalente a beta-2,1, dependendo de qual açúcar serve de referência). Como essa ligação compromete os dois carbonos anoméricos (C1 da glicose e C2 da frutose), nenhum dos dois pode se abrir para expor um grupo redutor livre — por isso a sacarose é um açúcar não redutor."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (glucosa+fructofuranosa), pero no es la más completa.",
+                    "Esta afirmación también es correcta (la unión alfa-1,2 equivale a beta-2,1 según la referencia), pero no es la más completa.",
+                    "Esta afirmación también es correcta (sin poder reductor por comprometer ambos carbonos anoméricos), pero no es la más completa.",
+                    "La sacarosa está compuesta por alfa-D-glucosa y beta-D-fructofuranosa unidas por enlace glucosídico alfa-1,2 (equivalente a beta-2,1, según cuál azúcar sirva de referencia). Como ese enlace compromete ambos carbonos anoméricos (C1 de la glucosa y C2 de la fructosa), ninguno puede abrirse para exponer un grupo reductor libre, por lo que la sacarosa es un azúcar no reductor."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "¡Esta! Las tres son ciertas sobre la sacarosa."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -1081,7 +1822,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Hidratos de carbono",
-            "feedback": "A ligação glicosídica entre monossacarídeos resulta em uma estrutura carbono-oxigênio-carbono (C-O-C), classificada didaticamente como do tipo éter, formada pela condensação do carbono anomérico de um açúcar com uma hidroxila de outro, com perda de água."
+            "explicacoes": {
+                "robo": [
+                    "No es tipo éster; ese enlace se forma entre un alcohol y un ácido carboxílico.",
+                    "La unión glicosídica entre monosacáridos resulta en una estructura carbono-oxígeno-carbono (C-O-C), clasificada didácticamente como de tipo éter, formada por la condensación del carbono anomérico de un azúcar con un hidroxilo de otro, con pérdida de agua.",
+                    "No es tipo anhídrido; ese enlace se forma entre dos ácidos.",
+                    "No es puente de hidrógeno; ese es un enlace débil no covalente, distinto del enlace glicosídico covalente."
+                ],
+                "fantasma": [
+                    "No es éster acá.",
+                    "¡Esta! C-O-C, tipo éter, así se arma la unión glicosídica.",
+                    "No es anhídrido acá.",
+                    "No es puente de hidrógeno, es covalente."
+                ],
+                "gato": [
+                    "Fijate: no es éster.",
+                    "¡Ronroneo de aprobación! Tipo éter, la unión glicosídica.",
+                    "Dato curioso: no es anhídrido.",
+                    "Miau, no es puente de hidrógeno."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -1108,7 +1868,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Hidratos de carbono",
-            "feedback": "Como os dois carbonos anoméricos (o aldeído da glicose e a cetona da frutose) estão comprometidos na ligação glicosídica, não há grupo aldeído potencialmente livre capaz de se oxidar, o que explica a ausência de poder redutor da sacarose."
+            "explicacoes": {
+                "robo": [
+                    "No es por poca capacidad de formar puentes de hidrógeno; ese no es el motivo de la ausencia de poder reductor.",
+                    "Como los dos carbonos anoméricos (el aldehído de la glucosa y la cetona de la fructosa) están comprometidos en el enlace glucosídico, no hay grupo aldehído potencialmente libre capaz de oxidarse, lo que explica la ausencia de poder reductor de la sacarosa.",
+                    "No posee dos grupos cetónicos unidos; solo uno de los monosacáridos aporta un grupo cetónico (fructosa).",
+                    "Sí posee carbonos anoméricos en su estructura; lo que ocurre es que ambos están comprometidos en el enlace glucosídico."
+                ],
+                "fantasma": [
+                    "No es por eso.",
+                    "¡Esta! Ningún carbono anomérico queda libre para oxidarse.",
+                    "No son dos cetonas unidas.",
+                    "Sí tiene carbonos anoméricos, solo que están comprometidos."
+                ],
+                "gato": [
+                    "Fijate: no es por eso.",
+                    "¡Ronroneo de aprobación! Los dos anoméricos comprometidos, cero poder reductor.",
+                    "Dato curioso: no son dos cetonas.",
+                    "Miau, sí tiene, solo que ocupados."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -1135,7 +1914,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Hidratos de carbono",
-            "feedback": "Os glicosaminoglicanos são longas cadeias de unidades dissacarídicas repetitivas (ex.: ácido hialurônico, condroitim sulfato, heparina) que, ligadas covalentemente a um núcleo proteico, formam os proteoglicanos."
+            "explicacoes": {
+                "robo": [
+                    "Los glicosaminoglicanos son largas cadenas de unidades disacarídicas repetitivas (ej.: ácido hialurónico, condroitín sulfato, heparina) que, unidas covalentemente a un núcleo proteico, forman los proteoglicanos.",
+                    "No son unidades estructurales de las glicoproteínas; su estructura y función son distintas.",
+                    "No son componentes estructurales de membranas biológicas; ese rol corresponde a otros lípidos y proteínas.",
+                    "No son glúcidos circulantes de bajo peso molecular; son polímeros grandes, típicamente asociados a matriz extracelular."
+                ],
+                "fantasma": [
+                    "¡Esta! Disacáridos repetidos, forman los proteoglicanos.",
+                    "No son de las glicoproteínas.",
+                    "No son de las membranas.",
+                    "No circulan libres ni son de bajo peso molecular."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Disacáridos repetitivos, la base de los proteoglicanos.",
+                    "Fijate: no es esto.",
+                    "Dato curioso: no es esto.",
+                    "Miau, no es esto."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -1162,7 +1960,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Hidratos de carbono",
-            "feedback": "A lactose (açúcar do leite) é formada por beta-D-galactopiranose unida à alfa-D-glucopiranose por ligação beta-1,4."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe a la sacarosa (glucosa+fructosa), no a la lactosa.",
+                    "La lactosa (azúcar de la leche) está formada por beta-D-galactopiranosa unida a alfa-D-glucopiranosa por enlace beta-1,4.",
+                    "Eso describe a la maltosa (glucosa+glucosa), no a la lactosa.",
+                    "Eso describe a la celobiosa, no a la lactosa."
+                ],
+                "fantasma": [
+                    "Eso es la sacarosa.",
+                    "¡Esta! Galactosa + glucosa beta-1,4, así es la lactosa.",
+                    "Eso es la maltosa.",
+                    "Eso es la celobiosa."
+                ],
+                "gato": [
+                    "Fijate: eso es sacarosa.",
+                    "¡Ronroneo de aprobación! Galactosa + glucosa, el azúcar de la leche.",
+                    "Dato curioso: eso es maltosa.",
+                    "Miau, eso es celobiosa."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -1189,7 +2006,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Hidratos de carbono",
-            "feedback": "A amilopectina, componente ramificado do amido, apresenta ramificações alfa-1,6 a cada 24-30 unidades de glicose, sendo por isso menos ramificada que o glicogênio (que se ramifica a cada 8-12 unidades). Ela é um componente do amido (não do glicogênio) e é uma reserva energética, não uma estrutura vegetal estrutural — esse papel é da celulose."
+            "explicacoes": {
+                "robo": [
+                    "La amilopectina no es subunidad del glucógeno; es un componente del almidón, distinto pero análogo estructuralmente.",
+                    "La amilopectina no es lineal, sino ramificada; la subunidad lineal del almidón es la amilosa.",
+                    "La amilopectina, componente ramificado del almidón, presenta ramificaciones alfa-1,6 cada 24-30 unidades de glucosa, siendo por eso menos ramificada que el glucógeno (que se ramifica cada 8-12 unidades).",
+                    "No es un homopolisacárido estructural vegetal; es una reserva energética (almidón), y la estructura vegetal corresponde a la celulosa."
+                ],
+                "fantasma": [
+                    "No es del glucógeno, es del almidón.",
+                    "No es lineal, es ramificada; la lineal es la amilosa.",
+                    "¡Esta! Menos ramificada que el glucógeno, ese es el dato.",
+                    "No es estructural, es de reserva; la estructural es la celulosa."
+                ],
+                "gato": [
+                    "Fijate: es del almidón, no del glucógeno.",
+                    "Dato curioso: es ramificada, no lineal.",
+                    "¡Ronroneo de aprobación! Menos ramas que el glucógeno.",
+                    "Miau, es de reserva, no estructural."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -1216,7 +2052,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Hidratos de carbono",
-            "feedback": "O ácido hialurônico é o principal glicosaminoglicano do líquido sinovial, conferindo-lhe sua característica viscosidade e função lubrificante nas articulações."
+            "explicacoes": {
+                "robo": [
+                    "El ácido hialurónico es el principal glicosaminoglicano del líquido sinovial, confiriéndole su característica viscosidad y función lubricante en las articulaciones.",
+                    "La N-acetilgalactosamina es un componente estructural de algunos GAGs, no el principal proteoglicano del líquido sinovial en sí.",
+                    "El condroitín sulfato es un GAG importante en cartílago, pero no el principal del líquido sinovial.",
+                    "La heparina es un GAG anticoagulante, no el principal componente del líquido sinovial."
+                ],
+                "fantasma": [
+                    "¡Esta! El ácido hialurónico, el que da viscosidad al líquido sinovial.",
+                    "Ese es un componente, no el protagonista.",
+                    "Ese es más del cartílago.",
+                    "Esa es la anticoagulante, no la del líquido sinovial."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Ácido hialurónico, la viscosidad articular.",
+                    "Fijate: no es el protagonista.",
+                    "Dato curioso: es del cartílago.",
+                    "Miau, esa es otra función."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -1243,7 +2098,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Hidratos de carbono",
-            "feedback": "Ao ciclizar (formar hemiacetal), o carbono carbonílico se torna um novo centro estereogênico — o carbono anomérico —, o que gera as formas alfa e beta e o fenômeno de mutarrotação (interconversão espontânea entre elas em solução), além de manter o grupo aldeído em forma potencial (mascarado), passível de se reabrir."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (surge el carbono anomérico), pero no es la más completa.",
+                    "Esta afirmación también es correcta (formas alfa, beta y mutarrotación), pero no es la más completa.",
+                    "Esta afirmación también es correcta (mantiene el grupo aldehído en forma potencial), pero no es la más completa.",
+                    "Al ciclizarse (formar hemiacetal), el carbono carbonílico se convierte en un nuevo centro estereogénico —el carbono anomérico—, lo que genera las formas alfa y beta y el fenómeno de mutarrotación (interconversión espontánea entre ellas en solución), además de mantener el grupo aldehído en forma potencial (enmascarado), capaz de reabrirse."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "¡Esta! Las tres cosas pasan al ciclizarse."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -1270,7 +2144,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Hidratos de carbono",
-            "feedback": "O glicogênio é um homoglicano (composto exclusivamente por glicose, não heteroglicano) altamente ramificado, mais ramificado que a amilopectina do amido, o que o torna mais compacto e menos disperso em água. É armazenado principalmente no fígado e no músculo esquelético."
+            "explicacoes": {
+                "robo": [
+                    "El glucógeno no posee dos subunidades ramificadas de alfa-D-glucopiranosa; es un homopolisacárido de glucosa altamente ramificado.",
+                    "El glucógeno es un homoglicano (compuesto exclusivamente por glucosa), no un heteroglicano.",
+                    "El glucógeno es una estructura insoluble y altamente ramificada, más ramificada que la amilopectina del almidón, lo que lo hace más compacto y menos disperso en agua. Se almacena principalmente en hígado y músculo esquelético.",
+                    "El glucógeno no está constituido por glicosaminoglicanos; es un polímero de glucosa unida por enlaces alfa-1,4 y alfa-1,6."
+                ],
+                "fantasma": [
+                    "No son dos subunidades así, es un polímero muy ramificado.",
+                    "No es heteroglicano, es puro glucosa.",
+                    "¡Esta! Más ramificado que el almidón, y guardado en hígado y músculo.",
+                    "No tiene que ver con los GAGs."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: es homoglicano.",
+                    "¡Ronroneo de aprobación! El campeón de las ramificaciones.",
+                    "Miau, no son GAGs."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -1297,7 +2190,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Lípidos",
-            "feedback": "O ácido linoleico (18:2, duas insaturações) tem menor ponto de fusão que o ácido oleico (18:1, uma insaturação), pois quanto maior o número de duplas ligações, menor a temperatura de fusão do ácido graso. A notação 18:3(9,12,15) corresponde ao ácido alfa-linolênico, não ao linoleico; e o linoleico é poli-insaturado (não saturado)."
+            "explicacoes": {
+                "robo": [
+                    "El 18:3(9,12,15) corresponde al ácido alfa-linolénico, no al linoleico.",
+                    "El ácido linoleico es poliinsaturado (18:2), no saturado.",
+                    "El ácido linoleico (18:2, dos insaturaciones) tiene menor punto de fusión que el ácido oleico (18:1, una insaturación), ya que cuanto mayor el número de dobles enlaces, menor la temperatura de fusión del ácido graso.",
+                    "El ácido linoleico es un ácido graso, generalmente transportado esterificado en lipoproteínas o unido a albúmina, no libre en el plasma como si fuera polar."
+                ],
+                "fantasma": [
+                    "Ese es el alfa-linolénico, no el linoleico.",
+                    "El linoleico es poliinsaturado, no saturado.",
+                    "¡Esta! Más dobles enlaces, menor punto de fusión.",
+                    "No viaja libre así en el plasma."
+                ],
+                "gato": [
+                    "Fijate: ese es otro ácido graso.",
+                    "Dato curioso: es poliinsaturado.",
+                    "¡Ronroneo de aprobación! Menos rígido, más dobles enlaces, funde antes.",
+                    "Miau, no viaja así."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -1324,7 +2236,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Lípidos",
-            "feedback": "A esfingomielina é composta por ceramida ligada a fosforilcolina; sua hidrólise libera esses dois produtos. Diferente do afirmado nas demais opções, é um fosfolipídio (não glicolipídio, pois contém fosfato), deriva da esfingosina (não do glicerol), e é anfipática (não simplesmente hidrofóbica) — sendo componente estrutural de membranas, não gordura de depósito."
+            "explicacoes": {
+                "robo": [
+                    "La esfingomielina está compuesta por ceramida unida a fosforilcolina; su hidrólisis libera esos dos productos.",
+                    "Es un fosfolípido (no glicolípido, ya que contiene fósforo).",
+                    "Deriva de la esfingosina (no del glicerol), unida a un ácido graso (no a mielina).",
+                    "Es anfipática (no simplemente hidrofóbica), siendo un componente estructural de membranas, no una grasa de depósito."
+                ],
+                "fantasma": [
+                    "¡Esta! Ceramida + fosforilcolina, eso da la esfingomielina.",
+                    "Es fosfolípido, no glicolípido.",
+                    "Viene de la esfingosina, no del glicerol.",
+                    "Es anfipática, de membrana, no grasa de depósito."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Ceramida + fosforilcolina.",
+                    "Fijate: tiene fósforo, es fosfolípido.",
+                    "Dato curioso: viene de la esfingosina.",
+                    "Miau, es de membrana, no de depósito."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -1351,7 +2282,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Lípidos",
-            "feedback": "Os gangliosídeos são glicoesfingolipídios formados por ceramida ligada a um oligossacarídeo que contém um ou mais resíduos de ácido siálico (N-acetilneuramínico), característica que os distingue dos demais glicolipídios (globosídeos, que não contêm ácido siálico)."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe parte de la esfingomielina (esfingosina y fosforilcolina), no a un gangliósido.",
+                    "Eso describe a un glicerofosfolípido (glicerol, ácidos grasos y fósforo), no a un gangliósido.",
+                    "Los gangliósidos son glicoesfingolípidos formados por ceramida unida a un oligosacárido que contiene uno o más residuos de ácido siálico (N-acetilneuramínico), característica que los distingue de los demás glicolípidos (globósidos, que no contienen ácido siálico).",
+                    "Eso no describe la composición completa de un gangliósido; falta el componente glucídico con ácido siálico."
+                ],
+                "fantasma": [
+                    "Eso es parte de la esfingomielina.",
+                    "Eso es un glicerofosfolípido.",
+                    "¡Esta! Ceramida + oligosacárido con ácido siálico, ese es el gangliósido.",
+                    "Falta el ácido siálico ahí."
+                ],
+                "gato": [
+                    "Fijate: eso es otra molécula.",
+                    "Dato curioso: eso es un glicerofosfolípido.",
+                    "¡Ronroneo de aprobación! El ácido siálico es la marca del gangliósido.",
+                    "Miau, falta el ácido siálico."
+                ]
+            }
         },
         {
             "numero": 51,
@@ -1378,7 +2328,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Lípidos",
-            "feedback": "Os triacilgliceróis são lípidos simples, formados por três ácidos graxos esterificados (ligação éster comum, não éster fosfórico) ao glicerol. São moléculas apolares (não anfipáticas, por isso não integram membranas) e, após uma refeição, são transportados empacotados em quilomícrons, não livremente no sangue."
+            "explicacoes": {
+                "robo": [
+                    "No son anfipáticos; por eso no forman parte de las membranas celulares, sino que son de depósito.",
+                    "No se transportan libremente en la sangre; se transportan empaquetados en quilomicrones (lipoproteínas) tras una comida.",
+                    "Los triacilgliceroles son lípidos simples, formados por tres ácidos grasos esterificados (unión éster común, no éster fosfórico) al glicerol.",
+                    "Poseen los tres ácidos grasos unidos por enlace éster común, no éster fosfórico, al glicerol."
+                ],
+                "fantasma": [
+                    "No son anfipáticos, son de depósito.",
+                    "No viajan libres, van en quilomicrones.",
+                    "¡Esta! Tres ácidos grasos + glicerol, unión éster, simples.",
+                    "El enlace es éster común, no fosfórico."
+                ],
+                "gato": [
+                    "Fijate: no son anfipáticos.",
+                    "Dato curioso: viajan en quilomicrones.",
+                    "¡Ronroneo de aprobación! Ácidos grasos + glicerol, lípidos simples.",
+                    "Miau, es éster, no fosfórico."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -1405,7 +2374,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Lípidos",
-            "feedback": "Os globosídeos são glicoesfingolipídios neutros formados por ceramida ligada a um oligossacarídeo (sem ácido siálico, diferenciando-os dos gangliosídeos); por hidrólise, liberam ceramida e o oligossacarídeo. São esfingolipídios (não glicerolipídios) e não contêm fósforo em sua estrutura."
+            "explicacoes": {
+                "robo": [
+                    "Es correcto que sea insoluble en agua, pero esa característica no lo define de manera específica como globósido.",
+                    "No posee ácido fosfórico en su estructura; los globósidos no contienen fósforo.",
+                    "No es un glicerolípido; es un esfingolípido, derivado de la esfingosina.",
+                    "Los globósidos son glicoesfingolípidos neutros formados por ceramida unida a un oligosacárido (sin ácido siálico, lo que los diferencia de los gangliósidos); por hidrólisis, liberan ceramida y el oligosacárido."
+                ],
+                "fantasma": [
+                    "Es cierto, pero no lo distingue como globósido específicamente.",
+                    "No tiene fósforo, eso lo descarta.",
+                    "No es glicerolípido, es esfingolípido.",
+                    "¡Esta! Ceramida + oligosacárido, sin ácido siálico, ese es el globósido."
+                ],
+                "gato": [
+                    "Cierto, pero no es lo distintivo.",
+                    "Miau, no tiene fósforo.",
+                    "Dato curioso: es esfingolípido, no glicerolípido.",
+                    "¡Ronroneo de aprobación! Ceramida + oligosacárido sin siálico."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -1432,7 +2420,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Lípidos",
-            "feedback": "Uma micela se forma quando lípidos anfipáticos se agregam em meio aquoso, orientando suas caudas hidrofóbicas para o interior e suas cabeças polares para a água circundante."
+            "explicacoes": {
+                "robo": [
+                    "Una micela se forma cuando lípidos anfipáticos se agregan en medio acuoso, orientando sus colas hidrofóbicas hacia el interior y sus cabezas polares hacia el agua circundante.",
+                    "No se forma en solventes orgánicos; ese medio favorecería la orientación inversa.",
+                    "No se refiere a una interfase agua-aire; se trata de un agregado tridimensional en el seno del agua.",
+                    "Eso describe a una membrana biológica (bicapa), no a una micela (que suele ser una monocapa esférica)."
+                ],
+                "fantasma": [
+                    "¡Esta! Colas adentro, cabezas afuera, en agua.",
+                    "En solvente orgánico sería al revés.",
+                    "No es una interfase, es un agregado en el agua.",
+                    "Eso es una membrana, no una micela."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El clásico ovillo lipídico en agua.",
+                    "Fijate: sería al revés en solvente orgánico.",
+                    "Dato curioso: no es una interfase.",
+                    "Miau, eso es membrana."
+                ]
+            }
         },
         {
             "numero": 54,
@@ -1459,7 +2466,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Lípidos",
-            "feedback": "O colesterol é um esterol de 27 carbonos com um grupo hidroxila no carbono 3. Essa hidroxila lhe confere caráter anfipático (não totalmente hidrofóbico), sendo formado por seis unidades de isopreno (via esqualeno), e nas membranas encontra-se predominantemente em sua forma livre (não esterificada) — a forma esterificada é a de armazenamento/transporte em lipoproteínas."
+            "explicacoes": {
+                "robo": [
+                    "En su forma libre no es totalmente hidrofóbico; el hidroxilo en C3 le confiere carácter anfipático.",
+                    "No se forma por la unión de 3 isoprenos; se forma por seis unidades de isopreno, vía escualeno.",
+                    "En las membranas se encuentra predominantemente en su forma libre (no esterificada); la forma esterificada es la de almacenamiento/transporte en lipoproteínas.",
+                    "El colesterol es un esterol de 27 carbonos con un grupo hidroxilo en el carbono 3."
+                ],
+                "fantasma": [
+                    "No es totalmente hidrofóbico, el OH lo hace anfipático.",
+                    "Son 6 isoprenos, no 3.",
+                    "En la membrana está libre, no esterificado.",
+                    "¡Esta! 27 carbonos, hidroxilo en C3, así es el colesterol."
+                ],
+                "gato": [
+                    "Fijate: tiene un lado polar.",
+                    "Dato curioso: son 6 isoprenos.",
+                    "Miau, en la membrana está libre.",
+                    "¡Ronroneo de aprobación! 27 carbonos, OH en C3."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -1486,7 +2512,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Lípidos",
-            "feedback": "O ácido alfa-linolênico (18:3, ômega-3) é o representante clássico e essencial dessa família, cuja primeira dupla ligação ocorre no terceiro carbono a partir do grupo metila terminal. Os ácidos ômega-3 variam em número de carbonos (18 no ALA, 20 no EPA, 22 no DHA) e são poli-insaturados e essenciais, não mono-insaturados nem dispensáveis."
+            "explicacoes": {
+                "robo": [
+                    "Los ácidos omega-3 no siempre poseen 18 carbonos; varían (18 en el ALA, 20 en el EPA, 22 en el DHA).",
+                    "No posee una sola insaturación en el carbono 9; es poliinsaturado, con la primera insaturación en el carbono 3 desde el extremo metilo.",
+                    "El ácido alfa-linolénico (18:3, omega-3) es el representante clásico y esencial de esa familia, cuya primera doble ligadura ocurre en el tercer carbono desde el grupo metilo terminal.",
+                    "Sí es esencial; el organismo humano no puede sintetizarlo, debiendo obtenerlo de la dieta."
+                ],
+                "fantasma": [
+                    "No siempre son 18 carbonos, varían según el omega-3.",
+                    "No es una sola insaturación, es poliinsaturado.",
+                    "¡Esta! El linolénico, el omega-3 clásico y esencial.",
+                    "Sí es esencial, no dispensable."
+                ],
+                "gato": [
+                    "Fijate: varía el número de carbonos.",
+                    "Dato curioso: es poliinsaturado.",
+                    "¡Ronroneo de aprobación! El linolénico, el representante omega-3.",
+                    "Miau, sí es esencial."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -1513,7 +2558,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Lípidos",
-            "feedback": "Os ácidos ômega-3 estão presentes em alguns óleos vegetais (linhaça, canola) e principalmente em óleos de peixe (EPA, DHA). Os ácidos graxos saturados não são cardioprotetores, a proporção recomendada é de ômega-6/ômega-3 (não o inverso), e carnes bovinas/laticínios são ricos em gorduras saturadas, não monoinsaturadas."
+            "explicacoes": {
+                "robo": [
+                    "Los ácidos grasos saturados no son cardioprotectores; se asocian con mayor riesgo cardiovascular.",
+                    "La proporción recomendada es de omega-6/omega-3 (no al revés), y no en ese rango tan alto.",
+                    "Los ácidos omega-3 están presentes en algunos aceites vegetales (lino, canola) y principalmente en aceites de pescado (EPA, DHA).",
+                    "Las carnes vacunas y lácteos son ricos en grasas saturadas, no monoinsaturadas."
+                ],
+                "fantasma": [
+                    "No son cardioprotectores, es al revés.",
+                    "Esa proporción está invertida y exagerada.",
+                    "¡Esta! Aceites vegetales y de pescado, las fuentes de omega-3.",
+                    "Son ricos en saturadas, no monoinsaturadas."
+                ],
+                "gato": [
+                    "Miau, no son cardioprotectores.",
+                    "Fijate: esa proporción está mal.",
+                    "¡Ronroneo de aprobación! Pescado y algunos vegetales, ahí está el omega-3.",
+                    "Dato curioso: son saturadas, no monoinsaturadas."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -1540,7 +2604,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Lípidos",
-            "feedback": "O azeite de oliva é rico em ácido oleico, um ácido graxo monoinsaturado (18:1), característica que o distingue de óleos vegetais poli-insaturados como o de girassol ou soja."
+            "explicacoes": {
+                "robo": [
+                    "El aceite de oliva no es predominantemente saturado; su ácido graso principal (oleico) es monoinsaturado.",
+                    "El aceite de oliva es rico en ácido oleico, un ácido graso monoinsaturado (18:1), característica que lo distingue de aceites vegetales poliinsaturados como el de girasol o soja.",
+                    "No es predominantemente poliinsaturado; ese perfil corresponde a otros aceites vegetales, no al de oliva.",
+                    "No es rico en ácidos grasos trans; esos son típicos de procesos de hidrogenación industrial, no del aceite de oliva natural."
+                ],
+                "fantasma": [
+                    "No es saturado, es monoinsaturado.",
+                    "¡Esta! Ácido oleico, monoinsaturado, la marca del aceite de oliva.",
+                    "No es poliinsaturado como el de girasol.",
+                    "No tiene trans, eso es de otra cosa."
+                ],
+                "gato": [
+                    "Miau, no es saturado.",
+                    "¡Ronroneo de aprobación! Oleico, monoinsaturado.",
+                    "Fijate: eso es otros aceites.",
+                    "Dato curioso: no tiene trans."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -1567,7 +2650,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Proteínas",
-            "feedback": "O enlace peptídico é uma amida (entre o carboxilo de um aminoácido e o grupo amino do seguinte), possui caráter parcial de dupla ligação por ressonância entre o C=O e o N, e essa restrição de rotação favorece a configuração trans (mais estável estericamente que a cis, exceto quando envolve prolina). As três afirmações são corretas."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (el enlace peptídico es de tipo amida), pero no es la más completa.",
+                    "Esta afirmación también es correcta (posee carácter parcial de doble enlace), pero no es la más completa.",
+                    "Esta afirmación también es correcta (la configuración trans es la más favorecida), pero no es la más completa.",
+                    "El enlace peptídico es una amida (entre el carboxilo de un aminoácido y el grupo amino del siguiente), posee carácter parcial de doble enlace por resonancia entre el C=O y el N, y esa restricción de rotación favorece la configuración trans (más estable estéricamente que la cis, excepto cuando involucra prolina). Las tres afirmaciones son correctas."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "¡Esta! Las tres son ciertas sobre el enlace peptídico."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -1594,7 +2696,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Proteínas",
-            "feedback": "A estrutura primária é a sequência linear (número, ordem e tipo) de aminoácidos, determinada geneticamente pelo código do RNAm. O enrolamento ao redor de um eixo (A) descreve a estrutura secundária tipo hélice, o enovelamento globular (B) descreve a estrutura terciária, e a associação de subunidades (D) descreve a estrutura quaternária."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe una estructura secundaria tipo hélice (enrollamiento alrededor de un eje), no a la estructura primaria.",
+                    "Eso describe la estructura terciaria (plegamiento globular compacto), no a la estructura primaria.",
+                    "La estructura primaria es la secuencia lineal (número, orden y tipo) de aminoácidos, determinada genéticamente por el código del ARNm.",
+                    "Eso describe la estructura cuaternaria (asociación de subunidades), no a la estructura primaria."
+                ],
+                "fantasma": [
+                    "Eso es la secundaria.",
+                    "Eso es la terciaria.",
+                    "¡Esta! La secuencia de aminoácidos, eso es primaria.",
+                    "Eso es la cuaternaria."
+                ],
+                "gato": [
+                    "Fijate: eso es secundaria.",
+                    "Dato curioso: eso es terciaria.",
+                    "¡Ronroneo de aprobación! El orden de los aminoácidos, la primaria.",
+                    "Miau, eso es cuaternaria."
+                ]
+            }
         },
         {
             "numero": 60,
@@ -1621,7 +2742,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Proteínas",
-            "feedback": "Por definição, em pH abaixo do ponto isoelétrico (pI), predomina a protonação e o aminoácido apresenta carga líquida positiva; acima do pI, carga líquida negativa; e exatamente no pI, carga líquida nula. Essa relação é válida independentemente do valor exato de pH, bastando saber sua posição relativa ao pI."
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: por debajo del pI predomina la protonación, dando carga neta positiva, no negativa.",
+                    "Por definición, en pH por debajo del punto isoeléctrico (pI), predomina la protonación y el aminoácido presenta carga neta positiva; por encima del pI, carga neta negativa; y exactamente en el pI, carga neta nula.",
+                    "No queda sin carga; eso ocurre exactamente en el pI, no por debajo de él.",
+                    "No es necesario conocer el valor exacto de pH; basta con saber su posición relativa al pI."
+                ],
+                "fantasma": [
+                    "Es al revés, da positiva.",
+                    "¡Esta! Por debajo del pI, carga positiva.",
+                    "Sin carga es justo en el pI, no antes.",
+                    "No hace falta el valor exacto, alcanza con la posición relativa."
+                ],
+                "gato": [
+                    "Miau, es al revés.",
+                    "¡Ronroneo de aprobación! Por debajo del pI, todo positivo.",
+                    "Fijate: sin carga es justo en el pI.",
+                    "Dato curioso: no hace falta el valor exacto."
+                ]
+            }
         },
         {
             "numero": 61,
@@ -1648,7 +2788,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Proteínas",
-            "feedback": "Metionina e cisteína são os dois aminoácidos proteicos que contêm enxofre em sua cadeia lateral. Serina e treonina possuem grupos hidroxila, não enxofre."
+            "explicacoes": {
+                "robo": [
+                    "La serina no contiene azufre; posee un grupo hidroxilo.",
+                    "La treonina no contiene azufre; posee un grupo hidroxilo.",
+                    "Metionina y cisteína son los dos aminoácidos proteicos que contienen azufre en su cadena lateral.",
+                    "Ni treonina ni metionina son la pareja correcta; la treonina no tiene azufre."
+                ],
+                "fantasma": [
+                    "La serina no tiene azufre, tiene un OH.",
+                    "La treonina tampoco tiene azufre.",
+                    "¡Esta! Metionina y cisteína, la pareja del azufre.",
+                    "La treonina se cuela ahí sin tener azufre."
+                ],
+                "gato": [
+                    "Fijate: la serina no tiene azufre.",
+                    "Dato curioso: la treonina tampoco.",
+                    "¡Ronroneo de aprobación! Los dos con azufre.",
+                    "Miau, la treonina no encaja."
+                ]
+            }
         },
         {
             "numero": 62,
@@ -1675,7 +2834,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Proteínas",
-            "feedback": "Na alfa-hélice, as pontes de hidrogênio se formam entre o oxigênio carbonílico do resíduo n e o hidrogênio amídico do resíduo n+4, ao longo de toda a hélice, orientadas de forma aproximadamente paralela ao seu eixo longitudinal — não entre cadeias laterais."
+            "explicacoes": {
+                "robo": [
+                    "En la alfa-hélice, los puentes de hidrógeno se forman entre el oxígeno carbonílico del residuo n y el hidrógeno amídico del residuo n+4, a lo largo de toda la hélice, orientados de forma aproximadamente paralela a su eje longitudinal.",
+                    "No son perpendiculares; su orientación es aproximadamente paralela al eje de la hélice.",
+                    "No se producen entre cadenas laterales; se producen entre átomos del esqueleto peptídico (carbonilo y amida).",
+                    "No se producen solo cerca de los extremos; ocurren de forma repetida a lo largo de toda la hélice."
+                ],
+                "fantasma": [
+                    "¡Esta! Paralelos al eje, entre el residuo n y el n+4.",
+                    "No son perpendiculares.",
+                    "No son entre cadenas laterales, es el esqueleto.",
+                    "No es solo en los extremos, es a lo largo de toda la hélice."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Paralelos al eje, el patrón clásico.",
+                    "Miau, no son perpendiculares.",
+                    "Fijate: es el esqueleto, no las cadenas laterales.",
+                    "Dato curioso: es a lo largo de toda la hélice."
+                ]
+            }
         },
         {
             "numero": 63,
@@ -1702,7 +2880,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Proteínas",
-            "feedback": "Domínios são regiões estruturalmente independentes e compactas de uma proteína, com padrão de enovelamento e/ou função característicos, que podem inclusive se enovelar de forma autônoma."
+            "explicacoes": {
+                "robo": [
+                    "Los dominios son regiones estructuralmente independientes y compactas de una proteína, con patrón de plegamiento y/o función característicos, que pueden incluso plegarse de forma autónoma.",
+                    "Los oligómeros son proteínas formadas por varias subunidades, no las regiones de plegamiento dentro de una cadena.",
+                    "Un péptido es una cadena corta de aminoácidos, no una región interna de plegamiento característico.",
+                    "Las subunidades son cadenas polipeptídicas completas que se asocian entre sí, no regiones dentro de una única cadena."
+                ],
+                "fantasma": [
+                    "¡Esta! Regiones con plegamiento propio, eso son los dominios.",
+                    "Un oligómero es toda la proteína con varias subunidades.",
+                    "Un péptido es una cadena corta, no esto.",
+                    "Una subunidad es una cadena entera, no una región."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Los dominios, piezas con función propia.",
+                    "Fijate: eso es otra cosa.",
+                    "Dato curioso: no es un péptido.",
+                    "Miau, no es una subunidad."
+                ]
+            }
         },
         {
             "numero": 64,
@@ -1729,7 +2926,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Proteínas",
-            "feedback": "Em eletroforese, a velocidade de migração é diretamente proporcional à carga elétrica líquida da partícula e à intensidade do campo elétrico aplicado (não inversamente), e inversamente proporcional ao seu tamanho/atrito com o meio — não diretamente proporcional ao raio."
+            "explicacoes": {
+                "robo": [
+                    "En electroforesis, la velocidad de migración es directamente proporcional a la carga eléctrica neta de la partícula y a la intensidad del campo eléctrico aplicado.",
+                    "No es inversamente proporcional a la intensidad del campo; es directamente proporcional a ella.",
+                    "No es directamente proporcional al radio al cuadrado; el tamaño se relaciona inversamente con la velocidad, por mayor fricción con el medio.",
+                    "El peso específico y la densidad no son los factores determinantes principales de la velocidad de migración electroforética."
+                ],
+                "fantasma": [
+                    "¡Esta! Más carga, más campo, más rápido migra.",
+                    "Es directamente proporcional al campo, no inversamente.",
+                    "El tamaño frena, no acelera así.",
+                    "No es por peso específico ni densidad."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Carga y campo, los que mandan en electroforesis.",
+                    "Fijate: es directo, no inverso.",
+                    "Dato curioso: el tamaño frena.",
+                    "Miau, no es por eso."
+                ]
+            }
         },
         {
             "numero": 65,
@@ -1756,7 +2972,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Proteínas",
-            "feedback": "A albumina, por sua longa meia-vida plasmática, é um marcador clássico de estado nutricional. A proteinemia total normal é de 6-8 gramas por decilitro (não por litro), a ceruloplasmina migra como alfa-2 globulina (não alfa-1), e as LDL migram na região das beta-globulinas (por isso também chamadas beta-lipoproteínas), não nas alfa-2."
+            "explicacoes": {
+                "robo": [
+                    "La proteinemia total normal es de 6-8 gramos por decilitro, no por litro.",
+                    "La albúmina, por su larga vida media plasmática, es un marcador clásico del estado nutricional.",
+                    "La ceruloplasmina migra como globulina alfa-2, no alfa-1.",
+                    "Las LDL migran electroforéticamente en la región de las globulinas beta (por eso también se las llama beta-lipoproteínas), no en las alfa-2."
+                ],
+                "fantasma": [
+                    "Es por decilitro, no por litro.",
+                    "¡Esta! La albúmina, el marcador nutricional clásico.",
+                    "Es alfa-2, no alfa-1.",
+                    "Las LDL van con las beta, no las alfa-2."
+                ],
+                "gato": [
+                    "Miau, es por decilitro.",
+                    "¡Ronroneo de aprobación! La albúmina cuenta la historia nutricional.",
+                    "Fijate: es alfa-2.",
+                    "Dato curioso: las LDL son beta."
+                ]
+            }
         },
         {
             "numero": 66,
@@ -1783,7 +3018,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Proteínas",
-            "feedback": "A proteína de Bence Jones (cadeias leves de imunoglobulina livres) é uma paraproteína anormal, classicamente associada a gamopatias monoclonais (como o mieloma múltiplo), e apresenta o comportamento térmico característico de precipitar por volta de 40-60°C e redissolver-se próximo à fervura."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (es una paraproteína anormal), pero no es la más completa.",
+                    "Esta afirmación también es correcta (coagula/precipita alrededor de 40-60°C y se redisuelve cerca de la ebullición), pero no es la más completa.",
+                    "Esta afirmación también es correcta (aparece en gammapatías monoclonales), pero no es la más completa.",
+                    "La proteína de Bence Jones (cadenas ligeras de inmunoglobulina libres) es una paraproteína anormal, clásicamente asociada a gammapatías monoclonales (como el mieloma múltiple), y presenta el comportamiento térmico característico de precipitar alrededor de 40-60°C y redisolverse cerca de la ebullición."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "¡Esta! Las tres describen a la Bence Jones."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 67,
@@ -1810,7 +3064,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Proteínas",
-            "feedback": "A albumina é a proteína plasmática clássica usada para avaliar o estado nutricional, pois sua concentração reflete a síntese hepática de proteínas ao longo do tempo (semanas), sendo sensível à desnutrição proteico-calórica prolongada."
+            "explicacoes": {
+                "robo": [
+                    "La inmunoglobulina G no es el marcador clásico de estado nutricional.",
+                    "La inmunoglobulina M no es el marcador clásico de estado nutricional.",
+                    "La ceruloplasmina no es el marcador clásico de estado nutricional; su rol principal es el transporte de cobre.",
+                    "La albúmina es la proteína plasmática clásica usada para evaluar el estado nutricional, ya que su concentración refleja la síntesis hepática de proteínas a lo largo del tiempo (semanas), siendo sensible a la desnutrición proteico-calórica prolongada."
+                ],
+                "fantasma": [
+                    "No es la IgG la que se usa para esto.",
+                    "No es la IgM la que se usa para esto.",
+                    "La ceruloplasmina es del cobre, no de nutrición.",
+                    "¡Esta! La albúmina, la clásica del estado nutricional."
+                ],
+                "gato": [
+                    "Fijate: no es la IgG.",
+                    "Dato curioso: no es la IgM.",
+                    "Miau, esa es del cobre.",
+                    "¡Ronroneo de aprobación! Albúmina, la reina de la nutrición."
+                ]
+            }
         },
         {
             "numero": 68,
@@ -1837,7 +3110,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Proteínas",
-            "feedback": "A estrutura secundária descreve os padrões locais e regulares de enovelamento da cadeia (como a alfa-hélice, que se enrola ao redor de um eixo imaginário, e a folha beta), estabilizados por pontes de hidrogênio do esqueleto peptídico."
+            "explicacoes": {
+                "robo": [
+                    "La estructura secundaria describe los patrones locales y regulares de plegamiento de la cadena (como la alfa-hélice, que se enrolla alrededor de un eje imaginario, y la lámina beta), estabilizados por puentes de hidrógeno del esqueleto peptídico.",
+                    "Eso describe la estructura terciaria (empaquetamiento globular compacto), no la secundaria.",
+                    "Eso describe la estructura cuaternaria (asociación de subunidades), no la secundaria.",
+                    "Eso describe la estructura primaria (secuencia de aminoácidos), no la secundaria."
+                ],
+                "fantasma": [
+                    "¡Esta! El enrollamiento tipo hélice, eso es secundaria.",
+                    "Eso es terciaria.",
+                    "Eso es cuaternaria.",
+                    "Eso es primaria."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Hélice y lámina beta, la secundaria.",
+                    "Fijate: eso es terciaria.",
+                    "Dato curioso: eso es cuaternaria.",
+                    "Miau, eso es primaria."
+                ]
+            }
         },
         {
             "numero": 69,
@@ -1864,7 +3156,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Proteínas",
-            "feedback": "A ceruloplasmina é a principal proteína transportadora de cobre no plasma; sua deficiência (ou alteração no metabolismo do cobre associado a ela) está classicamente ligada à doença de Wilson, na qual o cobre se acumula em fígado e núcleos da base."
+            "explicacoes": {
+                "robo": [
+                    "La ceruloplasmina no transporta zinc; su función es el transporte de cobre.",
+                    "La albúmina, no la ceruloplasmina, es la principal responsable de mantener la presión oncótica junto con otras proteínas plasmáticas.",
+                    "La ceruloplasmina es la principal proteína transportadora de cobre en el plasma; su deficiencia (o alteración en el metabolismo del cobre asociado a ella) está clásicamente ligada a la enfermedad de Wilson, en la que el cobre se acumula en hígado y núcleos de la base.",
+                    "La ceruloplasmina no interviene en el metabolismo de las ceramidas; esa vía corresponde a otras enzimas del metabolismo lipídico."
+                ],
+                "fantasma": [
+                    "No es zinc, es cobre.",
+                    "Eso es más de la albúmina.",
+                    "¡Esta! Cobre y Wilson, la marca de la ceruloplasmina.",
+                    "No tiene que ver con ceramidas."
+                ],
+                "gato": [
+                    "Fijate: es cobre, no zinc.",
+                    "Dato curioso: eso es la albúmina.",
+                    "¡Ronroneo de aprobación! Cobre + Wilson.",
+                    "Miau, no son ceramidas."
+                ]
+            }
         },
         {
             "numero": 70,
@@ -1891,7 +3202,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Proteínas",
-            "feedback": "Considerando cada par cadeia pesada-cadeia leve (unidade estrutural básica, repetida simetricamente na molécula de IgG), há dois domínios variáveis (VH e VL) e quatro domínios constantes (CH1, CH2, CH3 e CL). A afirmação A também é verdadeira (IgG tem 4 cadeias: 2 pesadas + 2 leves, estrutura quaternária), mas C descreve com mais precisão a organização em domínios pedida. Todos os domínios (pesados e leves) são globulares, e as pontes dissulfeto que estabilizam a molécula se formam entre resíduos de cisteína, não de metionina (que não possui grupo tiol livre)."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación también es verdadera (la IgG tiene 4 cadenas: 2 pesadas + 2 livianas, estructura cuaternaria), pero C describe con mayor precisión la organización en dominios pedida.",
+                    "No es correcto; todos los dominios (pesados y livianos) son globulares, no solo los de las cadenas pesadas.",
+                    "Considerando cada par cadena pesada-cadena liviana (unidad estructural básica, repetida simétricamente en la molécula de IgG), hay dos dominios variables (VH y VL) y cuatro dominios constantes (CH1, CH2, CH3 y CL).",
+                    "Los puentes disulfuro que estabilizan la molécula se forman entre residuos de cisteína, no de metionina (que no posee grupo tiol libre)."
+                ],
+                "fantasma": [
+                    "También es verdad, pero la C describe mejor los dominios.",
+                    "No, todos los dominios son globulares.",
+                    "¡Esta! Dos variables, cuatro constantes, por cada par de cadenas.",
+                    "Son puentes de cisteína, no de metionina."
+                ],
+                "gato": [
+                    "Cierto también, pero la C es más precisa.",
+                    "Fijate: todos son globulares.",
+                    "¡Ronroneo de aprobación! 2 variables + 4 constantes.",
+                    "Miau, es cisteína, no metionina."
+                ]
+            }
         },
         {
             "numero": 71,
@@ -1918,7 +3248,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Proteínas",
-            "feedback": "A rigidez do enlace peptídico se origina do caráter parcial de dupla ligação entre o carbono carbonílico e o nitrogênio (por ressonância), que restringe a rotação livre ao redor dessa ligação. A coplanaridade dos seis átomos envolvidos (Cα-C-O-N-H-Cα) e a preferência pela configuração trans são consequências geométricas dessa restrição, não sua causa primária."
+            "explicacoes": {
+                "robo": [
+                    "La configuración trans es una consecuencia geométrica de la rigidez, no su causa primaria.",
+                    "La coplanaridad de los átomos es una consecuencia de la restricción de rotación, no la causa primaria de la rigidez.",
+                    "El carácter amida por sí solo no explica la rigidez; lo determinante es la resonancia parcial de doble enlace de ese enlace amida.",
+                    "La rigidez del enlace peptídico se origina en el carácter parcial de doble enlace entre el carbono carbonílico y el nitrógeno (por resonancia), que restringe la rotación libre alrededor de ese enlace."
+                ],
+                "fantasma": [
+                    "Eso es consecuencia, no la causa.",
+                    "Eso también es consecuencia, no la causa.",
+                    "El carácter amida solo no alcanza para explicarlo.",
+                    "¡Esta! La resonancia parcial de doble enlace, la causa de fondo."
+                ],
+                "gato": [
+                    "Fijate: eso es efecto, no causa.",
+                    "Dato curioso: también es efecto.",
+                    "Miau, falta la resonancia en esa explicación.",
+                    "¡Ronroneo de aprobación! La resonancia, la verdadera causa."
+                ]
+            }
         },
         {
             "numero": 72,
@@ -1945,7 +3294,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Proteínas",
-            "feedback": "O glutamato possui um grupo carboxila adicional na cadeia lateral, ionizado (carregado negativamente) em pH fisiológico 7, classificando-o como aminoácido ácido. Alanina, triptofano e prolina possuem cadeias laterais não polares/neutras."
+            "explicacoes": {
+                "robo": [
+                    "La alanina posee una cadena lateral no polar, sin carga a pH 7.",
+                    "El triptófano posee una cadena lateral no polar (aromática), sin carga a pH 7.",
+                    "El glutamato posee un grupo carboxilo adicional en su cadena lateral, ionizado (con carga negativa) a pH fisiológico 7, lo que lo clasifica como aminoácido ácido.",
+                    "La prolina posee una cadena lateral no polar, sin carga a pH 7."
+                ],
+                "fantasma": [
+                    "La alanina no tiene carga a pH 7.",
+                    "El triptófano tampoco.",
+                    "¡Esta! El glutamato, con su carboxilo extra, carga negativa a pH 7.",
+                    "La prolina tampoco tiene carga."
+                ],
+                "gato": [
+                    "Fijate: sin carga.",
+                    "Dato curioso: tampoco tiene carga.",
+                    "¡Ronroneo de aprobación! Glutamato, el ácido con carga negativa.",
+                    "Miau, sin carga también."
+                ]
+            }
         },
         {
             "numero": 73,
@@ -1972,7 +3340,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Enzimas",
-            "feedback": "O Km (constante de Michaelis-Menten) é a concentração de substrato necessária para atingir metade da velocidade máxima, sendo usado como um indicador (inverso) da afinidade da enzima pelo substrato: quanto menor o Km, maior a afinidade."
+            "explicacoes": {
+                "robo": [
+                    "El Km no indica la concentración de sustrato que se forma por unidad de tiempo; eso se relaciona más con la velocidad de reacción.",
+                    "El Km (constante de Michaelis-Menten) es la concentración de sustrato necesaria para alcanzar la mitad de la velocidad máxima, siendo usado como indicador (inverso) de la afinidad de la enzima por el sustrato: cuanto menor el Km, mayor la afinidad.",
+                    "El Km no indica la tendencia a unirse a un inhibidor; ese concepto se relaciona con la constante de inhibición (Ki).",
+                    "El Km no indica la cantidad de calor liberado en una reacción; ese es un concepto termodinámico distinto (entalpía)."
+                ],
+                "fantasma": [
+                    "No es eso lo que mide el Km.",
+                    "¡Esta! Cuanto menor el Km, más afinidad.",
+                    "Eso es la Ki, no el Km.",
+                    "Eso es termodinámica, no el Km."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "¡Ronroneo de aprobación! Km bajo = mucha afinidad.",
+                    "Dato curioso: eso es otra constante.",
+                    "Miau, eso es calor, no esto."
+                ]
+            }
         },
         {
             "numero": 74,
@@ -1999,7 +3386,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Enzimas",
-            "feedback": "Km e afinidade têm relação inversa: um Km alto significa que é necessária mais concentração de substrato para atingir metade da Vmax, ou seja, menor afinidade; um Km baixo indica maior afinidade."
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: al aumentar el Km, disminuye la afinidad de la enzima por el sustrato, no aumenta.",
+                    "El Km y la afinidad tienen relación inversa: un Km alto significa que se necesita más concentración de sustrato para alcanzar la mitad de la Vmax, es decir, menor afinidad; un Km bajo indica mayor afinidad.",
+                    "Es al revés: al disminuir el Km, aumenta la afinidad, no disminuye.",
+                    "Sí existe una opción correcta: la B describe correctamente la relación inversa entre Km y afinidad."
+                ],
+                "fantasma": [
+                    "Es al revés.",
+                    "¡Esta! Km alto, menos afinidad; Km bajo, más afinidad.",
+                    "También es al revés.",
+                    "Hay una correcta, es la B."
+                ],
+                "gato": [
+                    "Miau, es al revés.",
+                    "¡Ronroneo de aprobación! Relación inversa entre Km y afinidad.",
+                    "Fijate: también al revés.",
+                    "Dato curioso: sí hay una correcta."
+                ]
+            }
         },
         {
             "numero": 75,
@@ -2026,7 +3432,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Enzimas",
-            "feedback": "As enzimas aceleram as reações diminuindo a energia de ativação necessária, sem alterar a variação de energia livre (ΔG) nem a constante de equilíbrio da reação — ou seja, não tornam uma reação termodinamicamente mais favorável, apenas mais rápida."
+            "explicacoes": {
+                "robo": [
+                    "Las enzimas no modifican la variación de energía libre (ΔG) de la reacción; solo aceleran el proceso.",
+                    "Las enzimas no alteran la constante de equilibrio de la reacción; no hacen que sea termodinámicamente más favorable.",
+                    "Las enzimas aceleran las reacciones disminuyendo la energía de activación necesaria, sin alterar la variación de energía libre (ΔG) ni la constante de equilibrio de la reacción.",
+                    "Las enzimas no modifican la velocidad máxima intrínseca de la reacción no catalizada; actúan disminuyendo la barrera energética."
+                ],
+                "fantasma": [
+                    "No tocan el ΔG.",
+                    "No tocan la constante de equilibrio.",
+                    "¡Esta! Bajan la energía de activación, y listo.",
+                    "No es sobre eso."
+                ],
+                "gato": [
+                    "Fijate: no tocan el ΔG.",
+                    "Dato curioso: no tocan el equilibrio.",
+                    "¡Ronroneo de aprobación! Menos energía de activación.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 76,
@@ -2053,7 +3478,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Enzimas",
-            "feedback": "Por definição, uma Unidade Internacional (UI) de atividade enzimática corresponde à quantidade de enzima que catalisa a transformação de 1 micromol de substrato por minuto, nas condições padrão de ensaio."
+            "explicacoes": {
+                "robo": [
+                    "Por definición, una Unidad Internacional (UI) de actividad enzimática corresponde a la cantidad de enzima que cataliza la transformación de 1 micromol de sustrato por minuto, en condiciones estándar de ensayo.",
+                    "No es por segundo; la definición estándar de la UI usa el minuto como unidad de tiempo.",
+                    "No es un mol; la definición estándar usa el micromol, una cantidad mucho menor.",
+                    "No es milimol por segundo; la definición estándar es micromol por minuto."
+                ],
+                "fantasma": [
+                    "¡Esta! Micromol por minuto, la definición clásica de UI.",
+                    "No es por segundo.",
+                    "No es un mol entero.",
+                    "No es milimol ni por segundo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Micromol/minuto.",
+                    "Fijate: no es por segundo.",
+                    "Dato curioso: no es un mol.",
+                    "Miau, ni milimol ni segundo."
+                ]
+            }
         },
         {
             "numero": 77,
@@ -2080,7 +3524,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Enzimas",
-            "feedback": "Isoenzimas são formas moleculares distintas de uma mesma enzima (mesma atividade catalítica), diferindo em sua estrutura primária — como as cinco isoenzimas da LDH — geralmente com distribuição tecidual e propriedades cinéticas diferentes, úteis como marcadores diagnósticos."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe a los zimógenos, no a las isoenzimas.",
+                    "Las isoenzimas son formas moleculares distintas de una misma enzima (misma actividad catalítica), difiriendo en su estructura primaria —como las cinco isoenzimas de la LDH—, generalmente con distribución tisular y propiedades cinéticas diferentes, útiles como marcadores diagnósticos.",
+                    "Eso describe a las enzimas alostéricas, no a las isoenzimas en general.",
+                    "Eso describe a las coenzimas o cofactores, no a las isoenzimas."
+                ],
+                "fantasma": [
+                    "Eso es un zimógeno.",
+                    "¡Esta! Misma función, distinta estructura, eso es isoenzima.",
+                    "Eso es más de las enzimas alostéricas.",
+                    "Eso es una coenzima."
+                ],
+                "gato": [
+                    "Fijate: eso es zimógeno.",
+                    "¡Ronroneo de aprobación! Como las 5 isoenzimas de la LDH.",
+                    "Dato curioso: eso es otra cosa.",
+                    "Miau, eso es coenzima."
+                ]
+            }
         },
         {
             "numero": 78,
@@ -2107,7 +3570,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Enzimas",
-            "feedback": "Na inibição competitiva, o inibidor tem semelhança estrutural com o substrato e compete com ele pelo mesmo sítio ativo; por isso, aumentando a concentração de substrato é possível reverter a inibição, e a Vmax não se altera (apenas o Km aparente aumenta). Ligar-se a um sítio diferente do substrato (opção A) e alterar a Vmax (opção D) são, na verdade, características da inibição não competitiva."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe a la inhibición no competitiva, en la que el inhibidor se une a un sitio distinto del activo.",
+                    "No es que enzima y sustrato presenten analogías moleculares; es el inhibidor el que se asemeja al sustrato.",
+                    "En la inhibición competitiva, el inhibidor tiene semejanza estructural con el sustrato y compite con él por el mismo sitio activo; por eso, aumentando la concentración de sustrato es posible revertir la inhibición, y la Vmax no se altera (solo el Km aparente aumenta).",
+                    "Eso describe a la inhibición no competitiva; en la competitiva la Vmax no se modifica."
+                ],
+                "fantasma": [
+                    "Eso es no competitiva.",
+                    "No es esa la analogía, es entre inhibidor y sustrato.",
+                    "¡Esta! Compiten por el mismo sitio, el inhibidor se parece al sustrato.",
+                    "Eso pasa en la no competitiva, no acá."
+                ],
+                "gato": [
+                    "Fijate: eso es no competitiva.",
+                    "Dato curioso: no es esa la relación.",
+                    "¡Ronroneo de aprobación! Compiten codo a codo por el sitio activo.",
+                    "Miau, eso es la no competitiva."
+                ]
+            }
         },
         {
             "numero": 79,
@@ -2134,7 +3616,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Enzimas",
-            "feedback": "No infarto agudo do miocárdio, a sequência clássica de elevação é: CPK primeiro (4-6h), depois ASAT (6-12h), e por último LDH (24-48h) — sendo a LDH a que permanece elevada por mais tempo, persistindo alta até uma semana ou mais após o evento, útil para diagnóstico retrospectivo. A CPK sobe antes da ASAT (não depois), e as troponinas se elevam precocemente, de forma similar ou até antes da CPK-MB, não mais tardiamente."
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: la CPK aumenta antes que la ASAT, no después.",
+                    "Es al revés: la ASAT aumenta antes que la LDH, y después de la CPK.",
+                    "En el infarto agudo de miocardio, la secuencia clásica de elevación es: CPK primero (4-6h), después ASAT (6-12h), y por último LDH (24-48h), siendo la LDH la que permanece elevada por más tiempo, persistiendo alta hasta una semana o más tras el evento, útil para diagnóstico retrospectivo.",
+                    "Es al revés: las troponinas se elevan precozmente, de forma similar o incluso antes que la CPK-MB, no más tardíamente."
+                ],
+                "fantasma": [
+                    "Es al revés, la CPK sube primero.",
+                    "Es al revés, la secuencia es CPK, ASAT, LDH.",
+                    "¡Esta! La LDH es la que queda elevada más tiempo, hasta una semana.",
+                    "Es al revés, las troponinas suben temprano."
+                ],
+                "gato": [
+                    "Miau, es al revés.",
+                    "Fijate: la secuencia real es otra.",
+                    "¡Ronroneo de aprobación! LDH, la que persiste elevada.",
+                    "Dato curioso: es al revés."
+                ]
+            }
         },
         {
             "numero": 80,
@@ -2161,7 +3662,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Enzimas",
-            "feedback": "De modo geral, o grau de elevação das transaminases (ASAT/ALAT) acompanha a intensidade da lesão hepatocelular aguda. A fosfatase alcalina é marcador de colestase (obstrução biliar), não de hepatonecrose; a ALAT é uma enzima exclusivamente citosólica (a ASAT é que tem fração mitocondrial, associada a lesões mais extensas); e as hepatites virais costumam cursar com elevação MARCADA das transaminases, não discreta. Vale notar que, em hepatites fulminantes avançadas, as transaminases podem paradoxalmente cair por exaustão da massa hepatocitária funcionante — uma exceção clínica a essa regra geral."
+            "explicacoes": {
+                "robo": [
+                    "De manera general, el grado de elevación de las transaminasas (ASAT/ALAT) acompaña la intensidad de la lesión hepatocelular aguda.",
+                    "La fosfatasa alcalina es marcador de colestasis (obstrucción biliar), no de hepatonecrosis.",
+                    "La ALAT es una enzima exclusivamente citosólica; es la ASAT la que tiene fracción mitocondrial, asociada a lesiones más extensas.",
+                    "Las hepatitis virales suelen cursar con elevación marcada de las transaminasas, no discreta."
+                ],
+                "fantasma": [
+                    "¡Esta! Más transaminasas, más lesión hepática, en general.",
+                    "Esa es de colestasis, no de hepatonecrosis.",
+                    "Esa es la ASAT, no la ALAT.",
+                    "Es al revés, suben mucho en las virales."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Transaminasas altas, más lesión.",
+                    "Fijate: esa es de colestasis.",
+                    "Dato curioso: es la ASAT la mitocondrial.",
+                    "Miau, es al revés."
+                ]
+            }
         },
         {
             "numero": 81,
@@ -2188,7 +3708,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Enzimas",
-            "feedback": "Zimogênios são precursores enzimáticos inativos que requerem clivagem proteolítica para se tornarem ativos — exemplos clássicos são o pepsinogênio e o tripsinogênio, enzimas digestivas ativadas apenas no local de ação para evitar autodigestão do tecido de origem."
+            "explicacoes": {
+                "robo": [
+                    "Los zimógenos son precursores enzimáticos inactivos que requieren clivaje proteolítico para activarse; ejemplos clásicos son el pepsinógeno y el tripsinógeno, enzimas digestivas activadas solo en el sitio de acción para evitar la autodigestión del tejido de origen.",
+                    "Eso describe a las isoenzimas, no a los zimógenos.",
+                    "Eso describe a las enzimas alostéricas, no a los zimógenos.",
+                    "Eso describe a coenzimas o cofactores, no a los zimógenos."
+                ],
+                "fantasma": [
+                    "¡Esta! Pepsinógeno y tripsinógeno, los ejemplos clásicos.",
+                    "Eso es isoenzima.",
+                    "Eso es enzima alostérica.",
+                    "Eso es coenzima."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Inactivos hasta que se activan por corte.",
+                    "Fijate: eso es isoenzima.",
+                    "Dato curioso: eso es otra cosa.",
+                    "Miau, eso es coenzima."
+                ]
+            }
         },
         {
             "numero": 82,
@@ -2215,7 +3754,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Enzimas",
-            "feedback": "Na inibição não competitiva, o inibidor se liga a um sítio diferente do sítio ativo (geralmente um sítio alostérico), podendo se ligar tanto à enzima livre quanto ao complexo enzima-substrato, reduzindo a Vmax sem alterar o Km — e, por não competir pelo mesmo sítio, não pode ser revertida aumentando a concentração de substrato."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe a la inhibición competitiva; la no competitiva no se revierte aumentando el sustrato.",
+                    "Eso describe a la inhibición competitiva (Km modificado, Vmax sin cambios); en la no competitiva ocurre lo contrario.",
+                    "No es que se una en cantidades iguales; el inhibidor no competitivo se une a un sitio distinto del activo, independientemente del sustrato.",
+                    "En la inhibición no competitiva, el inhibidor se une a un sitio diferente del sitio activo (generalmente un sitio alostérico), pudiendo unirse tanto a la enzima libre como al complejo enzima-sustrato, reduciendo la Vmax sin alterar el Km; y, al no competir por el mismo sitio, no puede revertirse aumentando la concentración de sustrato."
+                ],
+                "fantasma": [
+                    "Eso es competitiva.",
+                    "Eso también es competitiva.",
+                    "No es así como se unen.",
+                    "¡Esta! Sitio distinto, baja la Vmax, eso es no competitiva."
+                ],
+                "gato": [
+                    "Fijate: eso es competitiva.",
+                    "Dato curioso: también es competitiva.",
+                    "Miau, no es así.",
+                    "¡Ronroneo de aprobación! Otro sitio, Vmax abajo."
+                ]
+            }
         },
         {
             "numero": 83,
@@ -2242,7 +3800,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Enzimas",
-            "feedback": "Por serem proteínas, as enzimas são termolábeis (sensíveis à desnaturação pelo calor). A especificidade enzimática se refere ao reconhecimento seletivo do substrato/reação, não à quantidade necessária (que é catalítica, ou seja, pequena); e as enzimas diminuem — não aumentam — a energia de ativação."
+            "explicacoes": {
+                "robo": [
+                    "La especificidad enzimática se refiere al reconocimiento selectivo del sustrato/reacción, no a la cantidad necesaria (que es catalítica, es decir, pequeña).",
+                    "Por ser proteínas, las enzimas son termolábiles (sensibles a la desnaturalización por el calor).",
+                    "Las enzimas disminuyen —no aumentan— la energía de activación.",
+                    "Sí existe una opción correcta: la B."
+                ],
+                "fantasma": [
+                    "No es por cantidad, es por reconocimiento.",
+                    "¡Esta! Son proteínas, el calor las desnaturaliza.",
+                    "Es al revés, la bajan.",
+                    "Hay una correcta, es la B."
+                ],
+                "gato": [
+                    "Fijate: no es por cantidad.",
+                    "¡Ronroneo de aprobación! Termolábiles, como toda proteína.",
+                    "Dato curioso: es al revés.",
+                    "Miau, sí hay una correcta."
+                ]
+            }
         },
         {
             "numero": 84,
@@ -2269,7 +3846,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Enzimas",
-            "feedback": "A indução e a repressão regulam a quantidade de enzima disponível ao controlar sua síntese a nível gênico/transcricional. O alosterismo, a inibição por produto e a modificação covalente são mecanismos de regulação pós-traducional, que atuam sobre a atividade de moléculas enzimáticas já existentes, não sobre sua síntese."
+            "explicacoes": {
+                "robo": [
+                    "El alosterismo es un mecanismo de regulación postraduccional, que actúa sobre la actividad de moléculas ya existentes, no sobre su síntesis.",
+                    "La inhibición por producto es un mecanismo de regulación postraduccional, no genético.",
+                    "La inducción y represión regulan la cantidad de enzima disponible controlando su síntesis a nivel génico/transcripcional.",
+                    "La modificación covalente es un mecanismo de regulación postraduccional, no genético."
+                ],
+                "fantasma": [
+                    "Ese actúa después de sintetizada, no a nivel genético.",
+                    "Ese también actúa después.",
+                    "¡Esta! Inducción y represión, a nivel del gen.",
+                    "Ese también es posterior a la síntesis."
+                ],
+                "gato": [
+                    "Fijate: eso es después de sintetizada.",
+                    "Dato curioso: eso también.",
+                    "¡Ronroneo de aprobación! Directo al gen.",
+                    "Miau, eso también es posterior."
+                ]
+            }
         },
         {
             "numero": 85,
@@ -2296,7 +3892,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Enzimas",
-            "feedback": "Assim como na questão equivalente sobre proteínas: a rigidez do enlace peptídico decorre de seu caráter parcial de dupla ligação (por ressonância entre C=O e N), que restringe a rotação livre ao redor dessa ligação, tornando o grupo peptídico plano e preferencialmente trans."
+            "explicacoes": {
+                "robo": [
+                    "La configuración trans es una consecuencia geométrica de la rigidez, no su causa primaria.",
+                    "La coplanaridad de los átomos es una consecuencia de la restricción de rotación, no la causa primaria.",
+                    "El carácter amida por sí solo no explica la rigidez; lo determinante es la resonancia parcial de doble enlace de ese enlace.",
+                    "Al igual que en la pregunta equivalente sobre proteínas: la rigidez del enlace peptídico surge de su carácter parcial de doble enlace (por resonancia entre C=O y N), que restringe la rotación libre alrededor de esa unión, haciendo al grupo peptídico plano y preferentemente trans."
+                ],
+                "fantasma": [
+                    "Eso es consecuencia, no la causa.",
+                    "Eso también es consecuencia.",
+                    "El carácter amida solo no alcanza.",
+                    "¡Esta! La resonancia, la causa de fondo, otra vez."
+                ],
+                "gato": [
+                    "Fijate: eso es efecto.",
+                    "Dato curioso: también es efecto.",
+                    "Miau, falta la resonancia.",
+                    "¡Ronroneo de aprobación! La resonancia manda, de nuevo."
+                ]
+            }
         },
         {
             "numero": 86,
@@ -2323,7 +3938,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Enzimas",
-            "feedback": "As quinases catalisam a transferência de um grupo fosfato (geralmente do ATP) para outra molécula, sendo classificadas como transferases (especificamente fosfotransferases)."
+            "explicacoes": {
+                "robo": [
+                    "Las quinasas catalizan la transferencia de un grupo fosfato (generalmente del ATP) a otra molécula, siendo clasificadas como transferasas (específicamente fosfotransferasas).",
+                    "No son sintetasas; las sintetasas forman enlaces nuevos con gasto de energía en un mecanismo distinto al de la transferencia de fosfato.",
+                    "No son hidrolasas; las hidrolasas rompen enlaces por adición de agua, no transfieren grupos fosfato.",
+                    "No son liasas; las liasas rompen enlaces sin hidrólisis ni transferencia de fosfato, generando dobles enlaces o anillos."
+                ],
+                "fantasma": [
+                    "¡Esta! Transfieren fosfato del ATP, son transferasas.",
+                    "No son sintetasas.",
+                    "No son hidrolasas.",
+                    "No son liasas."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Fosfotransferasas, así se llaman técnicamente.",
+                    "Fijate: no es esa clase.",
+                    "Dato curioso: no es esa clase.",
+                    "Miau, no es esa clase."
+                ]
+            }
         },
         {
             "numero": 87,
@@ -2350,7 +3984,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Ácidos nucleicos",
-            "feedback": "Os nucleotídeos do ADN se unem por ligações fosfodiéster, nas quais um mesmo grupo fosfato forma duas ligações éster: uma com a hidroxila 3' de um nucleotídeo e outra com a hidroxila 5' do seguinte, constituindo o esqueleto açúcar-fosfato da cadeia."
+            "explicacoes": {
+                "robo": [
+                    "No es un solo éster fosfórico; el fosfato forma dos enlaces éster simultáneamente, lo que lo hace un fosfodiéster.",
+                    "No es amida; ese enlace no involucra un grupo carboxilo con una amina en este contexto.",
+                    "No es anhídrido fosfórico; ese tipo de enlace se da entre fosfatos, como en el ATP, no entre nucleótidos del ADN.",
+                    "Los nucleótidos del ADN se unen por enlaces fosfodiéster, en los cuales un mismo grupo fosfato forma dos enlaces éster: uno con el hidroxilo 3' de un nucleótido y otro con el hidroxilo 5' del siguiente, constituyendo el esqueleto azúcar-fosfato de la cadena."
+                ],
+                "fantasma": [
+                    "Es doble, no uno solo: fosfodiéster.",
+                    "No es amida acá.",
+                    "Eso es entre fosfatos del ATP, no acá.",
+                    "¡Esta! Un fosfato, dos ésteres, eso es el fosfodiéster."
+                ],
+                "gato": [
+                    "Fijate: son dos ésteres, no uno.",
+                    "Dato curioso: no es amida.",
+                    "Miau, eso es del ATP.",
+                    "¡Ronroneo de aprobación! El esqueleto azúcar-fosfato."
+                ]
+            }
         },
         {
             "numero": 88,
@@ -2377,7 +4030,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Ácidos nucleicos",
-            "feedback": "A citidina é o nucleosídeo formado pela citosina (base pirimídica) unida a uma ribose, sem grupo fosfato — a presença do fosfato é o que a transformaria em nucleotídeo (citidina monofosfato, CMP)."
+            "explicacoes": {
+                "robo": [
+                    "No es un nucleótido; le falta el grupo fosfato para serlo.",
+                    "No es de base púrica; la citosina es una base pirimídica.",
+                    "La citidina es el nucleósido formado por la citosina (base pirimídica) unida a una ribosa, sin grupo fosfato; la presencia del fosfato es lo que la transformaría en nucleótido (citidina monofosfato, CMP).",
+                    "No es solo la base; es la base unida a un azúcar (nucleósido)."
+                ],
+                "fantasma": [
+                    "Le falta el fosfato para ser nucleótido.",
+                    "La citosina es pirimídica, no púrica.",
+                    "¡Esta! Citosina + ribosa, sin fosfato, eso es nucleósido.",
+                    "Es más que solo la base."
+                ],
+                "gato": [
+                    "Fijate: sin fosfato no es nucleótido.",
+                    "Dato curioso: es pirimídica.",
+                    "¡Ronroneo de aprobación! El nucleósido de la citosina.",
+                    "Miau, es más que la base sola."
+                ]
+            }
         },
         {
             "numero": 89,
@@ -2404,7 +4076,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Ácidos nucleicos",
-            "feedback": "As snRNPs (small nuclear ribonucleoproteins) formam o spliceossomo, responsável pela remoção dos íntrons — a principal etapa do processamento do RNAm precursor —, e RNAs pequenos relacionados também participam de outras etapas de maturação do transcrito, como o processamento de sua extremidade 3'."
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta (participan en la remoción de intrones), pero no es la más completa.",
+                    "Esta afirmación también es correcta (participan del procesamiento del ARNm precursor en general), pero no es la más completa.",
+                    "Esta afirmación también es correcta (participan del procesamiento del poli A), pero no es la más completa.",
+                    "Las snRNPs (small nuclear ribonucleoproteins) forman el espliceosoma, responsable de la remoción de los intrones —la principal etapa del procesamiento del ARNm precursor—, y ARNs pequeños relacionados también participan de otras etapas de maduración del transcrito, como el procesamiento de su extremo 3'."
+                ],
+                "fantasma": [
+                    "Correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "También correcto, pero falta más.",
+                    "¡Esta! Las tres funciones son de las snRNPs."
+                ],
+                "gato": [
+                    "Cierto, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "Cierto también, pero hay más.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 90,
@@ -2431,7 +4122,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Ácidos nucleicos",
-            "feedback": "O açúcar do ADN é a beta-D-2-desoxirribofuranose (forma cíclica furanósica, configuração beta, sem hidroxila no carbono 2). A ribofuranose (sem a desoxilação) compõe o ARN, e a forma alfa não é a encontrada nos nucleotídeos biologicamente relevantes."
+            "explicacoes": {
+                "robo": [
+                    "La beta-D-ribofuranosa (sin desoxilar) es el azúcar del ARN, no del ADN.",
+                    "El azúcar del ADN es la beta-D-2-desoxirribofuranosa (forma cíclica furanósica, configuración beta, sin hidroxilo en el carbono 2).",
+                    "La forma alfa no es la que se encuentra en los nucleótidos biológicamente relevantes; predomina la forma beta.",
+                    "No es una glucopiranosa; el azúcar de los ácidos nucleicos es una pentosa en forma furanósica, no una hexosa piranósica."
+                ],
+                "fantasma": [
+                    "Esa es del ARN, sin desoxilar.",
+                    "¡Esta! Beta, 2-desoxi, furanosa: el azúcar del ADN.",
+                    "La forma biológica relevante es la beta, no la alfa.",
+                    "No es glucosa, es una pentosa."
+                ],
+                "gato": [
+                    "Fijate: esa es del ARN.",
+                    "¡Ronroneo de aprobación! El azúcar clásico del ADN.",
+                    "Dato curioso: es beta, no alfa.",
+                    "Miau, no es glucopiranosa."
+                ]
+            }
         },
         {
             "numero": 91,
@@ -2458,7 +4168,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Ácidos nucleicos",
-            "feedback": "A síntese de RNAm a partir do molde de ADN é chamada de transcrição. A replicação copia ADN em ADN, a maduração se refere ao processamento pós-transcricional do RNAm precursor, e a tradução é a síntese proteica a partir do RNAm."
+            "explicacoes": {
+                "robo": [
+                    "La replicación copia ADN en ADN, no es la síntesis de ARNm.",
+                    "La síntesis de ARNm a partir del molde de ADN se denomina transcripción.",
+                    "La maduración se refiere al procesamiento postranscripcional del ARNm precursor, no a su síntesis inicial.",
+                    "La traducción es la síntesis proteica a partir del ARNm, no la síntesis del ARNm en sí."
+                ],
+                "fantasma": [
+                    "Eso es copiar ADN en ADN.",
+                    "¡Esta! Transcripción, del ADN al ARNm.",
+                    "Eso es después, el procesamiento.",
+                    "Eso es la síntesis de proteínas, no de ARNm."
+                ],
+                "gato": [
+                    "Fijate: eso es replicación.",
+                    "¡Ronroneo de aprobación! Transcripción.",
+                    "Dato curioso: eso es maduración.",
+                    "Miau, eso es traducción."
+                ]
+            }
         },
         {
             "numero": 92,
@@ -2485,7 +4214,26 @@
             "nota": null,
             "resposta_correta": "D",
             "tema": "Ácidos nucleicos",
-            "feedback": "O aminoácido se liga à extremidade 3' do ARNt (aminoacil-ARNt) por uma ligação éster, entre seu grupo carboxila e a hidroxila da ribose terminal do ARNt."
+            "explicacoes": {
+                "robo": [
+                    "No es amida; el enlace entre el aminoácido y el ARNt no involucra un grupo amino de esa forma.",
+                    "No es amina; ese término no describe un tipo de enlace covalente entre moléculas.",
+                    "No es éter; ese tipo de enlace no corresponde a la unión aminoacil-ARNt.",
+                    "El aminoácido se une al extremo 3' del ARNt (aminoacil-ARNt) mediante un enlace éster, entre su grupo carboxilo y el hidroxilo de la ribosa terminal del ARNt."
+                ],
+                "fantasma": [
+                    "No es amida acá.",
+                    "Una amina no es un tipo de enlace.",
+                    "No es éter acá.",
+                    "¡Esta! Carboxilo del aminoácido + OH de la ribosa, enlace éster."
+                ],
+                "gato": [
+                    "Fijate: no es amida.",
+                    "Dato curioso: amina no es un enlace.",
+                    "Miau, no es éter.",
+                    "¡Ronroneo de aprobación! El enlace éster del aminoacil-ARNt."
+                ]
+            }
         },
         {
             "numero": 93,
@@ -2512,7 +4260,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Ácidos nucleicos",
-            "feedback": "O ADN-Z é uma dupla hélice levógira (gira para a esquerda), ao contrário das formas A e B (destrógiras). É uma estrutura mais fina e alongada (em zigue-zague), não mais larga que a forma B, e continua sendo uma dupla hélice de duas fitas, não três."
+            "explicacoes": {
+                "robo": [
+                    "No está formada por tres hebras; sigue siendo una doble hélice de dos hebras.",
+                    "El ADN-Z es una doble hélice levógira (gira hacia la izquierda), a diferencia de las formas A y B (dextrógiras).",
+                    "Es una estructura más fina y alargada (en zigzag), no más ancha que la forma B.",
+                    "Sí existe una opción correcta: la B."
+                ],
+                "fantasma": [
+                    "Sigue siendo doble hélice, no triple.",
+                    "¡Esta! Gira para la izquierda, al revés de A y B.",
+                    "Es más fina, no más ancha.",
+                    "Hay una correcta, es la B."
+                ],
+                "gato": [
+                    "Fijate: sigue siendo dos hebras.",
+                    "¡Ronroneo de aprobación! Levógira, el ADN zurdo.",
+                    "Dato curioso: es más fina.",
+                    "Miau, sí hay una correcta."
+                ]
+            }
         },
         {
             "numero": 94,
@@ -2539,7 +4306,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Ácidos nucleicos",
-            "feedback": "A base nitrogenada se une ao carbono 1' da pentose por uma ligação N-glicosídica beta (entre o carbono anomérico do açúcar e um nitrogênio da base). A ligação entre o fosfato e a pentose (no carbono 5'), por sua vez, é do tipo éster fosfórico."
+            "explicacoes": {
+                "robo": [
+                    "La base nitrogenada se une al carbono 1' de la pentosa mediante un enlace N-glucosídico beta (entre el carbono anomérico del azúcar y un nitrógeno de la base).",
+                    "No es alfa 1-4 glucosídica; ese tipo de enlace conecta monosacáridos entre sí (como en el glucógeno), no una base con una pentosa.",
+                    "El enlace éster fosfórico corresponde a la unión entre el fosfato y la pentosa (en el carbono 5'), no entre la base y la pentosa.",
+                    "No es anhídrido fosfórico; ese enlace se da entre fosfatos, como en el ATP."
+                ],
+                "fantasma": [
+                    "¡Esta! N-glucosídica beta, base con azúcar.",
+                    "Ese enlace es entre azúcares, no acá.",
+                    "Ese es el del fosfato con la pentosa, no la base.",
+                    "Ese es entre fosfatos, no acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! N-glucosídica beta, la unión base-azúcar.",
+                    "Fijate: ese es entre azúcares.",
+                    "Dato curioso: ese es fosfato-pentosa.",
+                    "Miau, ese es entre fosfatos."
+                ]
+            }
         },
         {
             "numero": 95,
@@ -2566,7 +4352,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Ácidos nucleicos",
-            "feedback": "Um cístron é a unidade funcional de codificação — o conjunto completo de trípletes (códons) do ARNm cuja sequência codifica um polipeptídeo, equivalendo funcionalmente a um gene estrutural. Um único tripleto que codifica um aminoácido é um códon (A), seu complementar no ARNt é o anticódon (B), e um tripleto que finaliza a tradução é um códon de parada (D)."
+            "explicacoes": {
+                "robo": [
+                    "Eso describe a un codón, no a un cistrón.",
+                    "Eso describe a un anticodón (del ARNt), no a un cistrón.",
+                    "Un cistrón es la unidad funcional de codificación —el conjunto completo de tripletes (codones) del ARNm cuya secuencia codifica un polipéptido—, equivaliendo funcionalmente a un gen estructural.",
+                    "Eso describe a un codón de parada, no a un cistrón."
+                ],
+                "fantasma": [
+                    "Eso es un codón.",
+                    "Eso es un anticodón.",
+                    "¡Esta! Todo el conjunto de codones que arma una proteína, eso es un cistrón.",
+                    "Eso es un codón de parada."
+                ],
+                "gato": [
+                    "Fijate: eso es un codón.",
+                    "Dato curioso: eso es un anticodón.",
+                    "¡Ronroneo de aprobación! El conjunto entero, el cistrón.",
+                    "Miau, eso es de parada."
+                ]
+            }
         },
         {
             "numero": 96,
@@ -2593,7 +4398,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Ácidos nucleicos",
-            "feedback": "As ligações entre os fosfatos terminais do ATP são anidridos fosfóricos de alta energia, cuja hidrólise libera a energia utilizada nos processos celulares."
+            "explicacoes": {
+                "robo": [
+                    "No es éster fosfórico simple; ese tipo de enlace uniría un solo fosfato a un hidroxilo, no dos fosfatos entre sí.",
+                    "No es amida; ese enlace no está presente entre los fosfatos del ATP.",
+                    "Los enlaces entre los fosfatos terminales del ATP son anhídridos fosfóricos de alta energía, cuya hidrólisis libera la energía utilizada en los procesos celulares.",
+                    "No es acetálica; ese tipo de enlace corresponde a la formación de acetales a partir de hemiacetales, no a la unión entre fosfatos."
+                ],
+                "fantasma": [
+                    "No es un éster simple.",
+                    "No es amida acá.",
+                    "¡Esta! Anhídridos fosfóricos, la energía del ATP.",
+                    "No es acetálica acá."
+                ],
+                "gato": [
+                    "Fijate: no es éster simple.",
+                    "Dato curioso: no es amida.",
+                    "¡Ronroneo de aprobación! Anhídrido fosfórico, alta energía.",
+                    "Miau, no es acetálica."
+                ]
+            }
         },
         {
             "numero": 97,
@@ -2620,7 +4444,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Ácidos nucleicos",
-            "feedback": "A timidina é o nucleosídeo formado pela timina (base pirimídica exclusiva do ADN) unida a uma desoxirribose, sem fosfato."
+            "explicacoes": {
+                "robo": [
+                    "No es un nucleótido; le falta el grupo fosfato para serlo.",
+                    "No es de base púrica; la timina es una base pirimídica.",
+                    "La timidina es el nucleósido formado por la timina (base pirimídica exclusiva del ADN) unida a una desoxirribosa, sin fosfato.",
+                    "No es solo la base; es la base unida a un azúcar (nucleósido)."
+                ],
+                "fantasma": [
+                    "Le falta el fosfato para ser nucleótido.",
+                    "La timina es pirimídica, no púrica.",
+                    "¡Esta! Timina + desoxirribosa, sin fosfato.",
+                    "Es más que solo la base."
+                ],
+                "gato": [
+                    "Fijate: sin fosfato no es nucleótido.",
+                    "Dato curioso: es pirimídica.",
+                    "¡Ronroneo de aprobación! El nucleósido de la timina.",
+                    "Miau, es más que la base sola."
+                ]
+            }
         },
         {
             "numero": 98,
@@ -2647,7 +4490,26 @@
             "nota": null,
             "resposta_correta": "B",
             "tema": "Ácidos nucleicos",
-            "feedback": "Por convenção, um oligonucleotídeo escrito na direção 5'→3' (AGCTTG) apresenta uma hidroxila livre no extremo 3' — justamente o grupo que a ADN polimerase utiliza para adicionar o próximo nucleotídeo durante a síntese. A última base da sequência (lida 5'→3') é a G, não a A, o que também descarta a opção D; e um oligonucleotídeo de 6 bases não comporta 7 grupos fosfato."
+            "explicacoes": {
+                "robo": [
+                    "Un oligonucleótido de 6 bases no posee 7 grupos fosfato; ese número no corresponde a su estructura.",
+                    "Por convención, un oligonucleótido escrito en dirección 5'→3' (AGCTTG) presenta un hidroxilo libre en el extremo 3', precisamente el grupo que la ADN polimerasa utiliza para añadir el siguiente nucleótido durante la síntesis.",
+                    "No posee un grupo fosfato en el extremo 3'; ese extremo posee el hidroxilo libre, mientras que el fosfato libre suele estar en el extremo 5'.",
+                    "La última base de la secuencia (leída 5'→3') es la G, no la A, en el extremo 3'."
+                ],
+                "fantasma": [
+                    "No son 7 fosfatos con solo 6 bases.",
+                    "¡Esta! El extremo 3' termina en OH libre.",
+                    "Es al revés, el fosfato libre está del lado 5'.",
+                    "La última letra es G, no A."
+                ],
+                "gato": [
+                    "Fijate: ese número no cierra.",
+                    "¡Ronroneo de aprobación! OH libre en el 3'.",
+                    "Dato curioso: es al revés.",
+                    "Miau, termina en G, no en A."
+                ]
+            }
         },
         {
             "numero": 99,
@@ -2674,7 +4536,26 @@
             "nota": null,
             "resposta_correta": "A",
             "tema": "Ácidos nucleicos",
-            "feedback": "O efeito hipercrômico refere-se ao aumento da absorbância de luz UV a 260 nm quando o ADN se desnatura (separação das fitas), pois as bases empilhadas na dupla hélice absorvem menos luz do que quando estão livres em fita simples. Não se trata de uma mudança de coloração visível nem de uma propriedade tintorial relacionada às histonas."
+            "explicacoes": {
+                "robo": [
+                    "El efecto hipercrómico se refiere al aumento de la absorbancia de luz UV a 260 nm cuando el ADN se desnaturaliza (separación de las hebras), ya que las bases apiladas en la doble hélice absorben menos luz que cuando están libres en hebra simple.",
+                    "No se trata de un cambio de coloración visible; es un fenómeno de absorbancia UV, no visible a simple vista.",
+                    "No es una propiedad tintorial relacionada con las histonas; es un fenómeno espectroscópico intrínseco de las bases apiladas.",
+                    "No son todas correctas; solo la A describe correctamente el efecto hipercrómico."
+                ],
+                "fantasma": [
+                    "¡Esta! Más absorción UV a 260 nm al separarse las hebras.",
+                    "No es un color visible, es espectroscopía.",
+                    "No tiene que ver con histonas.",
+                    "No son todas correctas."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Hebras separadas, más absorción UV.",
+                    "Fijate: no es un color visible.",
+                    "Dato curioso: no son las histonas.",
+                    "Miau, no son todas."
+                ]
+            }
         },
         {
             "numero": 100,
@@ -2701,7 +4582,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Ácidos nucleicos",
-            "feedback": "A uridina é o nucleosídeo formado pela uracila (base pirimídica exclusiva do ARN) unida a uma ribose, sem grupo fosfato."
+            "explicacoes": {
+                "robo": [
+                    "La uridina no es solo la base; es la base unida a un azúcar (nucleósido).",
+                    "No es una base púrica; el uracilo es una base pirimídica.",
+                    "La uridina es el nucleósido formado por el uracilo (base pirimídica exclusiva del ARN) unido a una ribosa, sin grupo fosfato.",
+                    "No es un nucleótido; le falta el grupo fosfato para serlo."
+                ],
+                "fantasma": [
+                    "Es más que solo la base.",
+                    "El uracilo es pirimídica, no púrica.",
+                    "¡Esta! Uracilo + ribosa, sin fosfato, eso es nucleósido.",
+                    "Le falta el fosfato para ser nucleótido."
+                ],
+                "gato": [
+                    "Fijate: es más que la base.",
+                    "Dato curioso: es pirimídica.",
+                    "¡Ronroneo de aprobación! El nucleósido del uracilo.",
+                    "Miau, sin fosfato no es nucleótido."
+                ]
+            }
         },
         {
             "numero": 101,
@@ -2728,7 +4628,26 @@
             "nota": null,
             "resposta_correta": "C",
             "tema": "Ácidos nucleicos",
-            "feedback": "Existe pelo menos um ARNt específico para cada aminoácido, responsável por reconhecê-lo e incorporá-lo à cadeia polipeptídica em formação. O ARNt contém uracila (não timina, exclusiva do ADN), seu tripleto é chamado de anticódon (não códon — termo reservado ao ARNm), e participa apenas da síntese proteica, não da replicação do ADN."
+            "explicacoes": {
+                "robo": [
+                    "El ARNt contiene uracilo (no timina, exclusiva del ADN), por lo que la afirmación es incorrecta.",
+                    "El triplete del ARNt se denomina anticodón (no codón, término reservado al ARNm).",
+                    "Existe al menos un ARNt específico para cada aminoácido, responsable de reconocerlo e incorporarlo a la cadena polipeptídica en formación.",
+                    "El ARNt participa únicamente en la síntesis proteica, no en la replicación del ADN."
+                ],
+                "fantasma": [
+                    "El ARNt tiene uracilo, no timina.",
+                    "Ese triplete se llama anticodón, no codón.",
+                    "¡Esta! Un ARNt para cada aminoácido, el traductor especializado.",
+                    "El ARNt no participa en la replicación del ADN."
+                ],
+                "gato": [
+                    "Fijate: es uracilo, no timina.",
+                    "Dato curioso: es anticodón.",
+                    "¡Ronroneo de aprobación! Cada aminoácido con su ARNt.",
+                    "Miau, no participa en la replicación."
+                ]
+            }
         }
     ]
 }
