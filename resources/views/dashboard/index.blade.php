@@ -208,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column; justify-content:center;">
+            <div class="dash-home2-card" style="border-radius:14px; padding:18px;">
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
                     <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.2rem; color:#a855f7;">military_tech</span>
                     <h3 style="font-size:.88rem; font-weight:700; color:var(--app-text);">{{ __('dashboard.home.ranking_title') }}</h3>
