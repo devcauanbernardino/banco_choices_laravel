@@ -208,11 +208,11 @@
                 </div>
             </div>
 
-            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column;">
+            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column; justify-content:center; gap:20px;">
                 <div>
                     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-                        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.2rem; color:#a855f7;">military_tech</span>
-                        <h3 style="font-size:.88rem; font-weight:700; color:var(--app-text);">{{ __('dashboard.home.ranking_title') }}</h3>
+                        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.15rem; color:#a855f7; line-height:1;">military_tech</span>
+                        <h3 style="font-size:.88rem; font-weight:700; color:var(--app-text); margin:0;">{{ __('dashboard.home.ranking_title') }}</h3>
                     </div>
                     <p style="font-size:.8rem; color:var(--app-muted); margin-bottom:14px; line-height:1.5;">{{ __('dashboard.home.ranking_copy') }}</p>
                     <div style="height:8px; background:var(--app-border); border-radius:99px; overflow:hidden; margin-bottom:8px;">
@@ -224,8 +224,6 @@
                         <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_high') }}</span>
                     </div>
                 </div>
-
-                <div style="flex:1 1 0; max-height:24px; min-height:16px;"></div>
 
                 <div style="background:rgba(106,3,146,.08); border:1px solid rgba(106,3,146,.22); border-radius:14px; padding:14px 16px;">
                     <strong style="display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--app-text);">
