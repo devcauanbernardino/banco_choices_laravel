@@ -3,7 +3,10 @@
 namespace App\Support;
 
 /**
- * Ficheiros de questões têm o texto de referência em espanhol (es).
+ * Ficheiros de questões têm, por padrão, o texto de referência em espanhol (es).
+ * Alguns bancos fogem à regra e têm o texto de referência nativo em outro idioma
+ * (ver NATIVE_LOCALE_OVERRIDES); nesses casos o idioma nativo não precisa de overlay,
+ * mas o espanhol passa a precisar de um overlay como qualquer outro idioma não nativo.
  * Traduções por idioma (mapa chave => { "pergunta", "opcoes", "explicacoes", "feedback" }):
  * chave = índice 0..N no JSON (`_overlay_key`, definido ao carregar o banco) ou, em overlays antigos, `numero`.
  * "explicacoes" substitui o array inteiro (mesmo formato por mascote do banco original).
@@ -15,13 +18,22 @@ class QuestionLocale
     /** @var array<string, array<string, mixed>> */
     private static array $overlayCache = [];
 
+    /**
+     * Bancos cujo texto de referência nativo não é espanhol (ficheiro base => idioma nativo).
+     *
+     * @var array<string, string>
+     */
+    private const NATIVE_LOCALE_OVERRIDES = [
+        'questoes_patologia_2024.json' => 'pt_BR',
+    ];
+
     public static function apply(array $questao, string $locale, string $bankFilename): array
     {
         if ($bankFilename === '') {
             return $questao;
         }
 
-        if (self::isSpanishLocale($locale)) {
+        if (self::isNativeLocale($locale, $bankFilename)) {
             return $questao;
         }
 
@@ -72,12 +84,12 @@ class QuestionLocale
     }
 
     /**
-     * Indica se existe ficheiro de tradução não vazio para o banco (pt_BR / en_US em storage ou resources).
-     * Locales em espanhol consideram-se sempre satisfeitos (texto de referência do JSON).
+     * Indica se existe ficheiro de tradução não vazio para o banco (em storage ou resources).
+     * O idioma nativo do banco (espanhol, salvo override) considera-se sempre satisfeito.
      */
     public static function hasTranslationOverlay(string $locale, string $bankFilename): bool
     {
-        if ($bankFilename === '' || self::isSpanishLocale($locale)) {
+        if ($bankFilename === '' || self::isNativeLocale($locale, $bankFilename)) {
             return true;
         }
 
@@ -120,9 +132,18 @@ class QuestionLocale
         return $l;
     }
 
-    private static function isSpanishLocale(string $locale): bool
+    /**
+     * Indica se $locale corresponde ao idioma nativo do texto de referência do banco
+     * (espanhol por padrão, salvo override em NATIVE_LOCALE_OVERRIDES).
+     */
+    private static function isNativeLocale(string $locale, string $bankFilename): bool
     {
         $l = strtolower(str_replace('-', '_', $locale));
+        $native = self::NATIVE_LOCALE_OVERRIDES[$bankFilename] ?? null;
+
+        if ($native !== null) {
+            return str_starts_with($l, strtolower(substr($native, 0, 2)));
+        }
 
         return str_starts_with($l, 'es');
     }
