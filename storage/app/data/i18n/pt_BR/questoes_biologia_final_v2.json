@@ -1,1245 +1,3392 @@
-{
-    "1": {
+[
+    {
         "pergunta": "O cálcio pode atravessar a membrana plasmática:",
-        "feedback": "O cálcio é um íon carregado e não pode atravessar a bicamada lipídica por difusão simples; requer proteínas ou canais transportadores.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "através de bombas",
             "Por transporte acoplado",
             "Por difusão simples",
             "Através de canais regulados por ligantes"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é verdadeira: o cálcio de fato pode atravessar a membrana por bombas (como a Ca2+-ATPase), que usam energia para movê-lo contra seu gradiente.",
+                "Esta afirmação é verdadeira: o cálcio também pode se mover por transporte acoplado, como o trocador Na+/Ca2+.",
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: o cálcio é um íon carregado e não pode atravessar a bicamada lipídica por difusão simples; requer proteínas transportadoras ou canais.",
+                "Esta afirmação é verdadeira: existem canais de cálcio regulados por ligante que permitem sua passagem a favor do gradiente."
+            ],
+            "fantasma": [
+                "Certo, as bombas de cálcio (como a Ca2+-ATPase) sim o movem.",
+                "Certo, o trocador Na+/Ca2+ também faz passar.",
+                "Essa é a falsa! O cálcio tem carga, não atravessa por difusão simples sem ajuda.",
+                "Certo, tem canais de cálcio que abrem por ligante."
+            ],
+            "gato": [
+                "Fijate: verdadeiro, as bombas movem.",
+                "Dado curioso: verdadeiro, o trocador também.",
+                "Ronronado de aprovação! Essa é a falsa: o cálcio com carga não atravessa sozinho.",
+                "Miau, verdadeiro: tem canais por ligante."
+            ]
+        }
     },
-    "2": {
+    {
         "pergunta": "Na membrana plasmática encontramos glicoproteínas em:",
-        "feedback": "As glicoproteínas são encontradas exclusivamente no lado extracelular, formando parte do glicocálix.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "A face citosólica",
             "A face extracelular",
             "Nenhum dos rostos",
             "ambos os lados"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As glicoproteínas não se localizam na face citosólica; suas cadeias de açúcares se orientam sempre para o exterior.",
+                "As glicoproteínas se encontram exclusivamente na face extracelular, formando parte do glicocálice.",
+                "Sim, se encontram na membrana, na face extracelular.",
+                "Não se encontram em ambas as faces; sua distribuição é assimétrica, só para o exterior."
+            ],
+            "fantasma": [
+                "Não é a face citosólica.",
+                "Essa aí! Face extracelular, formando o glicocálice.",
+                "Sim estão, do lado de fora.",
+                "Não são as duas faces, só a de fora."
+            ],
+            "gato": [
+                "Fijate: não é essa face.",
+                "Ronronado de aprovação! Face extracelular, o glicocálice.",
+                "Dado curioso: sim existem, do lado de fora.",
+                "Miau, só uma face, não as duas."
+            ]
+        }
     },
-    "3": {
+    {
         "pergunta": "Transporte ativo sempre:",
-        "feedback": "O transporte ativo requer energia (ATP) para mover as substâncias contra o seu gradiente.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Envolve transporte através de proteínas integrais de membrana",
             "Ocorre contra o gradiente de concentração",
             "É independente da quantidade de ATP",
             "Envolve gasto de energia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é verdadeira: o transporte ativo sempre usa proteínas integrais de membrana (bombas) para mover os solutos.",
+                "Esta afirmação é verdadeira: por definição, o transporte ativo move solutos contra seu gradiente de concentração.",
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: o transporte ativo requer energia (ATP) para mover substâncias contra seu gradiente, portanto sim depende da quantidade de ATP disponível.",
+                "Esta afirmação é verdadeira: o transporte ativo sempre implica gasto de energia, diferente do transporte passivo."
+            ],
+            "fantasma": [
+                "Certo, sempre usa proteínas integrais.",
+                "Certo, sempre é contra o gradiente.",
+                "Essa é a falsa! Sim depende do ATP, é pra isso que ele gasta.",
+                "Certo, sempre gasta energia."
+            ],
+            "gato": [
+                "Fijate: verdadeiro.",
+                "Dado curioso: verdadeiro, sempre contra o gradiente.",
+                "Ronronado de aprovação! Essa é a falsa: precisa de ATP sim ou sim.",
+                "Miau, verdadeiro: gasta energia sempre."
+            ]
+        }
     },
-    "4": {
+    {
         "pergunta": "Um monossacarídeo como a glicose cruzará a membrana plasmática por:",
-        "feedback": "A glicose usa transportadores específicos (GLUT) para entrar na célula por difusão facilitada.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Difusão simples",
             "transporte de massa",
             "Difusão facilitada usando uma proteína de canal",
             "Difusão facilitada usando uma proteína transportadora"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A glicose é uma molécula polar e grande, não consegue atravessar a bicamada lipídica por difusão simples.",
+                "O transporte em massa (endocitose/exocitose) não é o mecanismo habitual para uma molécula pequena como a glicose.",
+                "Os canais proteicos não são o mecanismo típico de transporte de glicose; essa função cabe aos transportadores.",
+                "A glicose utiliza transportadores específicos (GLUT) para entrar na célula por difusão facilitada."
+            ],
+            "fantasma": [
+                "Grande e polar demais para passar sozinha.",
+                "Não é transporte em massa para algo tão pequeno.",
+                "Não é por canal, é por transportador.",
+                "Essa aí! GLUT, o transportador clássico da glicose."
+            ],
+            "gato": [
+                "Fijate: não atravessa sozinha.",
+                "Dado curioso: não é em massa.",
+                "Miau, não é canal.",
+                "Ronronado de aprovação! GLUT, a porta da glicose."
+            ]
+        }
     },
-    "5": {
+    {
         "pergunta": "No transporte acoplado, os solutos atravessam a membrana plasmática:",
-        "feedback": "O transporte acoplado usa o gradiente de um soluto (passivo) para mover outro contra o seu gradiente (ativo).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Tanto por difusão simples",
             "Tanto por transporte ativo",
             "Um soluto por transporte ativo e outro por transporte passivo",
             "Tanto por difusão facilitada usando uma proteína transportadora"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é difusão simples para ambos; o transporte acoplado usa uma proteína transportadora comum.",
+                "Não são ambos transporte ativo; apenas um dos solutos se move ativamente.",
+                "O transporte acoplado usa o gradiente de um soluto (passivo) para mover outro contra seu gradiente (ativo).",
+                "Não são ambos por difusão facilitada; um dos solutos se move contra seu gradiente, o que exige energia indireta."
+            ],
+            "fantasma": [
+                "Não são os dois por difusão simples.",
+                "Não os dois são ativos.",
+                "Essa aí! Um passivo empurra o outro ativo.",
+                "Não os dois são só difusão facilitada."
+            ],
+            "gato": [
+                "Fijate: não os dois assim.",
+                "Dado curioso: não os dois ativos.",
+                "Ronronado de aprovação! Um empurra o outro, a dupla clássica.",
+                "Miau, não é isso."
+            ]
+        }
     },
-    "6": {
+    {
         "pergunta": "Os filamentos intermediários:",
-        "feedback": "Os filamentos intermediários polimerizam para formar fibras fortes.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "São proteínas que não polimerizam",
             "Eles estão presentes no núcleo da célula",
             "Eles podem ser específicos para um tipo de célula",
             "Eles estão associados à membrana plasmática"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: os filamentos intermediários sim se polimerizam, formando fibras resistentes a partir de subunidades proteicas.",
+                "Esta afirmação é verdadeira: a lâmina nuclear é formada por filamentos intermediários (laminas).",
+                "Esta afirmação é verdadeira: existem filamentos intermediários específicos de tecido, como as queratinas (epitélios) ou a desmina (músculo).",
+                "Esta afirmação é verdadeira: os filamentos intermediários se ancoram à membrana plasmática em estruturas como os desmossomos."
+            ],
+            "fantasma": [
+                "Essa é a falsa! Sim se polimerizam, formam fibras resistentes.",
+                "Certo, a lâmina nuclear é de filamentos intermediários.",
+                "Certo, como as queratinas da pele.",
+                "Certo, se ancoram nos desmossomos."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Essa é a falsa: sim se polimerizam.",
+                "Fijate: verdadeiro, a lâmina nuclear.",
+                "Dado curioso: verdadeiro, específicos por tecido.",
+                "Miau, verdadeiro: ancorados nos desmossomos."
+            ]
+        }
     },
-    "7": {
+    {
         "pergunta": "As proteínas do citoesqueleto que desempenham funções motoras são:",
-        "feedback": "Miosina, dineína e cinesina são as principais proteínas motoras do citoesqueleto.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Miosina, dineína e cinesina",
             "Miosina, dineína e colágeno",
             "Actina, dineína e elastina",
             "Miosina, cinesina e tubulina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Miosina, dineína e cinesina são as principais proteínas motoras do citoesqueleto.",
+                "O colágeno é uma proteína estrutural da matriz extracelular, não uma proteína motora.",
+                "A elastina é uma proteína estrutural extracelular, não uma proteína motora.",
+                "A tubulina é a subunidade estrutural dos microtúbulos, não uma proteína motora em si."
+            ],
+            "fantasma": [
+                "Essa aí! As três motoras clássicas.",
+                "O colágeno não é motor, é estrutural e extracelular.",
+                "A elastina também não é motora.",
+                "A tubulina é o trilho, não o motor."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Miosina, dineína, cinesina.",
+                "Fijate: colágeno não é motor.",
+                "Dado curioso: elastina também não.",
+                "Miau, tubulina é a via, não o motor."
+            ]
+        }
     },
-    "8": {
+    {
         "pergunta": "Os microtúbulos participam de:",
-        "feedback": "Microtúbulos são vias de transporte de vesículas no axônio.",
         "nota": "Marque a resposta CORRETA",
         "opcoes": [
             "transporte axonal",
             "Juntas aderentes",
             "Desmossomos",
             "Citocinese"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os microtúbulos são as vias para o transporte de vesículas no axônio (por meio de cinesina e dineína).",
+                "As junções aderentes dependem principalmente de filamentos de actina, não de microtúbulos.",
+                "Os desmossomos se ancoram a filamentos intermediários, não a microtúbulos.",
+                "A citocinese depende do anel contrátil de actina e miosina, não de microtúbulos."
+            ],
+            "fantasma": [
+                "Essa aí! O transporte axônico corre sobre microtúbulos.",
+                "Isso é mais de actina.",
+                "Isso é de filamentos intermediários.",
+                "Isso é actina e miosina."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Vias do transporte axônico.",
+                "Fijate: isso é actina.",
+                "Dado curioso: isso é filamentos intermediários.",
+                "Miau, isso é actina/miosina."
+            ]
+        }
     },
-    "9": {
+    {
         "pergunta": "Os microfilamentos de actina participam de:",
-        "feedback": "A actina é essencial nas junções aderentes celulares.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "transporte axonal",
             "Juntas aderentes",
             "Desmossomos",
             "Cariocinese"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O transporte axônico depende principalmente de microtúbulos, não de actina.",
+                "A actina é fundamental nas junções aderentes celulares.",
+                "Os desmossomos se ancoram a filamentos intermediários, não a actina.",
+                "A cariocinese (divisão nuclear) depende do fuso mitótico de microtúbulos, não de actina."
+            ],
+            "fantasma": [
+                "Isso é de microtúbulos.",
+                "Essa aí! Actina nas junções aderentes.",
+                "Isso é de filamentos intermediários.",
+                "Isso é do fuso, microtúbulos."
+            ],
+            "gato": [
+                "Fijate: isso é microtúbulos.",
+                "Ronronado de aprovação! Actina nas aderentes.",
+                "Dado curioso: isso é outro filamento.",
+                "Miau, isso é o fuso mitótico."
+            ]
+        }
     },
-    "10": {
+    {
         "pergunta": "Centros organizadores de microtúbulos:",
-        "feedback": "A dineína é uma proteína motora, não um componente estrutural do centro organizador.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Eles têm uma estrutura de 9 trigêmeos",
             "Eles são a base dos cílios",
             "Eles são a base dos flagelos",
             "Eles têm dineína em sua estrutura"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é verdadeira: os centríolos (centros organizadores) têm uma estrutura de 9 tripletos de microtúbulos.",
+                "Esta afirmação é verdadeira: os centríolos dão origem aos corpos basais, base dos cílios.",
+                "Esta afirmação é verdadeira: também são a base estrutural dos flagelos.",
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: a dineína é uma proteína motora, não um componente estrutural do centro organizador."
+            ],
+            "fantasma": [
+                "Certo, 9 tripletos.",
+                "Certo, base dos cílios.",
+                "Certo, base dos flagelos também.",
+                "Essa é a falsa! A dineína é um motor, não faz parte dessa estrutura."
+            ],
+            "gato": [
+                "Fijate: verdadeiro, 9 tripletos.",
+                "Dado curioso: verdadeiro.",
+                "Miau, verdadeiro também.",
+                "Ronronado de aprovação! Essa é a falsa: dineína é motora, não estrutural."
+            ]
+        }
     },
-    "11": {
+    {
         "pergunta": "No retículo endoplasmático rugoso (RER), são sintetizados:",
-        "feedback": "O RER sintetiza proteínas destinadas à secreção ou organelas do sistema endomembranar.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Fatores de transcrição basais",
             "Histonas",
             "filamentos de actina",
             "Proteínas do lúmen do aparelho de Golgi"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os fatores de transcrição se sintetizam em ribossomos livres do citosol, não no RER.",
+                "As histonas se sintetizam no citosol, não no RER.",
+                "Os filamentos de actina se sintetizam no citosol, não no RER.",
+                "O RER sintetiza proteínas destinadas à secreção ou a organelas do sistema de endomembranas, como as proteínas da luz do Golgi."
+            ],
+            "fantasma": [
+                "Isso é feito no citosol.",
+                "Isso também é do citosol.",
+                "Isso também é do citosol.",
+                "Essa aí! Proteínas para o sistema de endomembranas."
+            ],
+            "gato": [
+                "Fijate: isso é citosol.",
+                "Dado curioso: citosol também.",
+                "Miau, citosol também.",
+                "Ronronado de aprovação! Rumo ao Golgi."
+            ]
+        }
     },
-    "12": {
+    {
         "pergunta": "No retículo endoplasmático liso (SER) é realizado o seguinte:",
-        "feedback": "A glicosilação de proteínas ocorre principalmente no RER e no aparelho de Golgi, não no REL.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Armazenamento de cálcio",
             "Glicosilação de proteínas",
             "Síntese lipídica",
             "desintoxicação de drogas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é verdadeira: o REL armazena cálcio, função-chave no músculo (retículo sarcoplasmático).",
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: a glicosilação de proteínas ocorre principalmente no RER e no complexo de Golgi, não no REL.",
+                "Esta afirmação é verdadeira: o REL é o principal sítio de síntese de lipídios.",
+                "Esta afirmação é verdadeira: o REL detoxifica drogas por meio de enzimas como o citocromo P450."
+            ],
+            "fantasma": [
+                "Certo, guarda cálcio.",
+                "Essa é a falsa! A glicosilação é do RER/Golgi, não do liso.",
+                "Certo, fabrica lipídios.",
+                "Certo, detoxifica drogas."
+            ],
+            "gato": [
+                "Fijate: verdadeiro.",
+                "Ronronado de aprovação! Essa é a falsa.",
+                "Dado curioso: verdadeiro.",
+                "Miau, verdadeiro."
+            ]
+        }
     },
-    "13": {
+    {
         "pergunta": "A manose 6-fosfato é o sinal que distingue as proteínas:",
-        "feedback": "A manose 6-fosfato é o sinal de direcionamento para os lisossomas.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Mitocondrial",
             "Lisossomal",
             "citosólico",
             "Nuclear"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A manose 6-fosfato não marca proteínas mitocondriais; estas são importadas por outros sinais.",
+                "A manose 6-fosfato é o sinal de direcionamento para os lisossomos.",
+                "As proteínas citosólicas não carregam essa marca; permanecem sem sinal de direcionamento especial.",
+                "As proteínas nucleares são marcadas com sinais de localização nuclear (NLS), não com manose 6-fosfato."
+            ],
+            "fantasma": [
+                "Não é de mitocôndrias.",
+                "Essa aí! Manose-6-P, a etiqueta do lisossomo.",
+                "Não é de citosol.",
+                "Não é de núcleo, isso é NLS."
+            ],
+            "gato": [
+                "Fijate: não é essa.",
+                "Ronronado de aprovação! Direto ao lisossomo.",
+                "Dado curioso: não se aplica.",
+                "Miau, não é esse sinal."
+            ]
+        }
     },
-    "14": {
+    {
         "pergunta": "Endossomos iniciais:",
-        "feedback": "Os endossomos não são cobertos por clatrina; a clatrina é perdida logo após a formação da vesícula endocítica.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Eles recebem vesículas endocitadas pela célula",
             "Eles são cobertos por clatrina",
             "Eles estão localizados perto da membrana plasmática",
             "Eles permitem a reciclagem de receptores de membrana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é verdadeira: os endossomos precoces recebem as vesículas recém-endocitadas.",
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: os endossomos não estão cobertos por clatrina; a clatrina se perde pouco depois da formação da vesícula endocítica.",
+                "Esta afirmação é verdadeira: os endossomos precoces se localizam perto da membrana plasmática.",
+                "Esta afirmação é verdadeira: permitem reciclar receptores de membrana de volta à superfície celular."
+            ],
+            "fantasma": [
+                "Certo, recebem o que foi endocitado.",
+                "Essa é a falsa! A clatrina cai assim que a vesícula se forma.",
+                "Certo, estão perto da membrana.",
+                "Certo, reciclam receptores."
+            ],
+            "gato": [
+                "Fijate: verdadeiro.",
+                "Ronronado de aprovação! Essa é a falsa.",
+                "Dado curioso: verdadeiro.",
+                "Miau, verdadeiro."
+            ]
+        }
     },
-    "15": {
+    {
         "pergunta": "A partícula de reconhecimento de sinal (PRS):",
-        "feedback": "PRS reconhece a sequência sinal no peptídeo que está sendo sintetizado no citosol.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Liga-se à sequência de aminoácidos do peptídeo nascente",
             "Está localizado dentro do RER",
             "Localiza proteínas na membrana plasmática",
             "Permite a reciclagem de proteínas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A PRS reconhece a sequência-sinal no peptídeo que está sendo sintetizado no citosol.",
+                "A PRS atua no citosol, não dentro do RER; ali se liga ao ribossomo antes que a cadeia nascente entre.",
+                "A PRS direciona proteínas para o RER, não diretamente para a membrana plasmática.",
+                "A PRS não cumpre função de reciclagem; seu papel é guiar a síntese inicial rumo ao RER."
+            ],
+            "fantasma": [
+                "Essa aí! Reconhece o sinal do peptídeo nascente.",
+                "Atua no citosol, não dentro do RER.",
+                "Direciona pro RER, não direto pra membrana.",
+                "Não é reciclagem, é guia inicial."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O guia do peptídeo nascente.",
+                "Fijate: é no citosol.",
+                "Dado curioso: vai pro RER primeiro.",
+                "Miau, não é reciclagem."
+            ]
+        }
     },
-    "16": {
+    {
         "pergunta": "Proteínas peroxissômicas:",
-        "feedback": "As proteínas peroxissomais são sintetizadas no citosol e importadas pós-tradução.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "É sintetizado em ribossomos livres no citosol",
             "Eles são sintetizados no núcleo e liberados auxiliados pelas exportinas.",
             "Eles são sintetizados no RER",
             "Eles têm manose-6 fosfato"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As proteínas peroxissomais se sintetizam no citosol e são importadas pós-traducionalmente.",
+                "Não se sintetizam no núcleo; o núcleo sintetiza ARN, não proteínas, e as exportinas não participam desse processo.",
+                "Não se sintetizam no RER; diferente das proteínas lisossomais, as peroxissomais são traduzidas em ribossomos livres.",
+                "A manose 6-fosfato é o sinal das proteínas lisossomais, não das peroxissomais."
+            ],
+            "fantasma": [
+                "Essa aí! Citosol e depois são importadas.",
+                "Não é no núcleo.",
+                "Não é no RER, essa é outra via.",
+                "Essa marca é do lisossomo, não daqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Citosol, depois entram.",
+                "Fijate: não é o núcleo.",
+                "Dado curioso: não é o RER.",
+                "Miau, essa etiqueta é de outra organela."
+            ]
+        }
     },
-    "17": {
+    {
         "pergunta": "No transporte vesicular intracelular, as vesículas estão ligadas ao seu compartimento alvo por:",
-        "feedback": "O complexo SNARE (v-SNARE na vesícula e t-SNARE no alvo) medeia a fusão da membrana.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Ligação de proteínas v-SNARE e t-SNARE",
             "Ligação das proteínas α-tubulina e β - tubulina",
             "A ligação das proteínas cop i e cop ii",
             "A ligação de proteínas de uma maneira específica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O complexo SNARE (v-SNARE na vesícula e t-SNARE no alvo) medeia a fusão de membranas.",
+                "A tubulina forma os microtúbulos, que servem de via de transporte, mas não são as proteínas de ancoragem/fusão da vesícula com seu destino.",
+                "As proteínas COP (I e II) participam da formação/brotamento de vesículas, não de sua fusão final com o compartimento alvo.",
+                "Esta opção é vaga demais e não descreve o mecanismo molecular específico (SNARE) responsável pela ancoragem."
+            ],
+            "fantasma": [
+                "Essa aí! v-SNARE com t-SNARE, o fecho da fusão.",
+                "A tubulina é a via, não o fecho.",
+                "As COP montam a vesícula, não a encaixam no final.",
+                "Muito vaga, não diz o mecanismo real."
+            ],
+            "gato": [
+                "Ronronado de aprovação! SNARE com SNARE.",
+                "Fijate: isso é a via, não o fecho.",
+                "Dado curioso: isso é formação, não fusão.",
+                "Miau, muito vaga."
+            ]
+        }
     },
-    "18": {
+    {
         "pergunta": "Na matriz mitocondrial você pode observar:",
-        "feedback": "Acetil-CoA é um intermediário chave na matriz mitocondrial para o ciclo de Krebs.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Acetilos ligados à coenzima a",
             "Glicose ligada à coenzima a",
             "Β-oxidação do colesterol",
             "Acetilos ligados ao fosfato de manose-6"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O Acetil-CoA é um intermediário-chave na matriz mitocondrial para o ciclo de Krebs.",
+                "A glicose não se liga diretamente à coenzima A; primeiro se transforma em piruvato e depois em acetil-CoA.",
+                "A beta-oxidação é um processo próprio dos ácidos graxos, não do colesterol.",
+                "Essa combinação não corresponde a nenhuma molécula real da matriz mitocondrial; a manose-6-fosfato é um sinal lisossomal, não mitocondrial."
+            ],
+            "fantasma": [
+                "Essa aí! Acetil-CoA, a moeda do ciclo de Krebs.",
+                "A glicose não gruda direto na CoA.",
+                "A beta-oxidação é de ácidos graxos, não de colesterol.",
+                "Essa mistura não existe; a manose-6-P é de outra organela."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Acetil-CoA na matriz.",
+                "Fijate: a glicose passa por outros passos antes.",
+                "Dado curioso: beta-oxidação é de gorduras.",
+                "Miau, essa mistura não existe."
+            ]
+        }
     },
-    "19": {
+    {
         "pergunta": "No ciclo de Krebs:",
-        "feedback": "O ciclo de Krebs libera CO2 como produto da oxidação de grupos acetila.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Os complexos da cadeia respiratória participam",
             "CO2 é gerado",
             "Muito ATP é gerado",
             "Ação das cardiolipinas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os complexos da cadeia respiratória atuam na membrana mitocondrial interna, numa etapa posterior ao ciclo de Krebs, não dentro dele.",
+                "O ciclo de Krebs libera CO2 como produto da oxidação dos grupos acetil.",
+                "O ciclo de Krebs gera diretamente pouco ATP (ou GTP); a maior parte do ATP é produzida depois, na cadeia respiratória.",
+                "A cardiolipina é um lipídio da membrana mitocondrial interna, não uma participante direta das reações do ciclo de Krebs."
+            ],
+            "fantasma": [
+                "Isso é depois, na cadeia respiratória.",
+                "Essa aí! O CO2 sai do ciclo de Krebs.",
+                "Pouco ATP direto, o grosso vem depois.",
+                "A cardiolipina não participa direto do ciclo."
+            ],
+            "gato": [
+                "Fijate: isso é em outra etapa.",
+                "Ronronado de aprovação! CO2, o produto clássico.",
+                "Dado curioso: pouco ATP ali mesmo.",
+                "Miau, a cardiolipina é da membrana."
+            ]
+        }
     },
-    "20": {
+    {
         "pergunta": "As mitocôndrias podem:",
-        "feedback": "Nota: Esta questão foi marcada como “totalmente correta” no exame original, mas a função principal da regulação do cálcio é o REL.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Regular a concentração intracelular de cálcio",
             "Desintoxicar drogas",
             "Sintetizar enzimas lisossômicas",
             "Regular a concentração intracelular de sódio"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta é a opção marcada como incorreta neste banco: embora a mitocôndria participe um pouco da homeostase do cálcio, sua função principal nesse papel cabe ao retículo endoplasmático liso (REL). Nota: esta pergunta figurava como 'todas corretas' no exame original.",
+                "Segundo o critério adotado nesta pergunta, a mitocôndria também participa da detoxificação de algumas substâncias.",
+                "Segundo o critério adotado nesta pergunta, esta afirmação é considerada válida neste banco.",
+                "Segundo o critério adotado nesta pergunta, a mitocôndria também participa de alguma regulação iônica intracelular."
+            ],
+            "fantasma": [
+                "Eita, essa pergunta vem marcada como ambígua desde o exame original.",
+                "Neste banco, se toma como válida.",
+                "Neste banco, se toma como válida.",
+                "Neste banco, se toma como válida."
+            ],
+            "gato": [
+                "Miau, pergunta com etiqueta de ambígua.",
+                "Fijate: se toma como válida aqui.",
+                "Dado curioso: se toma como válida aqui.",
+                "Ronronado neutro: se toma como válida aqui."
+            ]
+        }
     },
-    "21": {
+    {
         "pergunta": "Através do complexo de poros nucleares eles entram no núcleo:",
-        "feedback": "Os fatores de transcrição são sintetizados no citosol e entram no núcleo para agir.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Subunidades do ribossomo",
             "A enzima aminoacil arnt sintetase",
             "Fatores de transcrição basais",
             "enzimas da glicólise"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As subunidades ribossomais se montam no nucléolo e SAEM do núcleo rumo ao citosol, não entram.",
+                "A aminoacil-ARNt sintetase atua no citosol durante a tradução, não entra no núcleo.",
+                "Os fatores de transcrição se sintetizam no citosol e entram no núcleo para atuar.",
+                "As enzimas da glicólise são citosólicas e não precisam entrar no núcleo para cumprir sua função."
+            ],
+            "fantasma": [
+                "Essas saem, não entram.",
+                "Essa atua fora, na tradução.",
+                "Essa aí! Os fatores de transcrição entram para atuar.",
+                "Essas ficam no citosol."
+            ],
+            "gato": [
+                "Fijate: saem, não entram.",
+                "Dado curioso: trabalha fora.",
+                "Ronronado de aprovação! Entram para regular genes.",
+                "Miau, ficam no citosol."
+            ]
+        }
     },
-    "22": {
+    {
         "pergunta": "No nucléolo:",
-        "feedback": "A montagem das subunidades ribossômicas ocorre na zona granular do nucléolo.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "As subunidades ribossômicas são montadas na zona granular.",
             "A transcrição do RNA ocorre",
             "As subunidades ribossômicas são montadas na zona fibrilar.",
             "Arnr 5s é sintetizado"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A montagem das subunidades ribossomais ocorre na zona granular do nucléolo.",
+                "A transcrição do RNAm ocorre fora do nucléolo, no restante do núcleo.",
+                "A zona fibrilar é onde se transcreve o RNAr, não onde se montam as subunidades.",
+                "O RNAr 5S se sintetiza fora do nucléolo (pela RNA polimerase III) e depois se incorpora a ele."
+            ],
+            "fantasma": [
+                "Essa aí! Zona granular, a oficina de montagem.",
+                "Isso acontece fora do nucléolo.",
+                "A fibrilar é de transcrição, não de montagem.",
+                "O 5S é feito fora e depois entra."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Zona granular, montagem.",
+                "Fijate: isso é fora.",
+                "Dado curioso: a fibrilar é outra coisa.",
+                "Miau, o 5S nasce fora."
+            ]
+        }
     },
-    "23": {
+    {
         "pergunta": "Em relação às histonas:",
-        "feedback": "Nota: Marcado como 'tudo correto' no PDF, mas as histonas NÃO se associam ao DNA mitocondrial.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Eles são os únicos presentes na cromatina",
             "Eles fazem parte dos nucleossomos",
             "Eles estão associados ao DNA mitocondrial",
             "Eles não participam da regulamentação da transcrição"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cromatina também contém proteínas não histônicas (fatores de transcrição, proteínas HMG), além das histonas.",
+                "Esta é a opção marcada neste banco como resposta a esta pergunta sinalizada como ambígua no exame original ('todas corretas'); a ressalva documentada é que as histonas não se associam ao ADN mitocondrial (ver opção C).",
+                "As histonas não se associam ao ADN mitocondrial, que se compacta com outras proteínas, como a TFAM.",
+                "As histonas sim participam da regulação da transcrição, por meio de modificações como acetilação e metilação."
+            ],
+            "fantasma": [
+                "Eita, também tem proteínas não histônicas na cromatina.",
+                "Essa pergunta é meio esquisita, vem marcada como ambígua desde o exame original.",
+                "Olha só: as histonas não tocam o ADN mitocondrial.",
+                "As histonas sim regulam a transcrição, com acetilação e metilação."
+            ],
+            "gato": [
+                "Dado curioso: tem mais proteínas ali, não só histonas.",
+                "Miau, essa pergunta vem com etiqueta de ambígua.",
+                "Fijate: o ADN mitocondrial não tem histonas.",
+                "Ronronado de aprovação: sim regulam a transcrição."
+            ]
+        }
     },
-    "24": {
+    {
         "pergunta": "Em relação à DNA polimerase α:",
-        "feedback": "A DNA polimerase alfa tem atividade primorosa para sintetizar primers.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Sintetiza fita retardada de DNA",
             "Sintetiza DNA de fita direta",
             "Sintetizar primers de RNA",
             "É uma transcriptase reversa"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A síntese de ADN da fita atrasada cabe principalmente à ADN polimerase delta, não à alfa.",
+                "A síntese de ADN da fita adiantada cabe a outras polimerases (como a épsilon), não à alfa.",
+                "A ADN polimerase alfa tem atividade primase para sintetizar os iniciadores (primers) de ARN necessários para começar a síntese.",
+                "Não é uma transcriptase reversa; essa enzima é própria de retrovírus, não do sistema de replicação celular."
+            ],
+            "fantasma": [
+                "Essa é mais da delta.",
+                "Essa é de outra polimerase.",
+                "Essa aí! Faz os iniciadores de ARN.",
+                "Não é transcriptase reversa, essa é de vírus."
+            ],
+            "gato": [
+                "Fijate: essa é outra polimerase.",
+                "Dado curioso: também não é essa.",
+                "Ronronado de aprovação! Os iniciadores de ARN.",
+                "Miau, não é de vírus."
+            ]
+        }
     },
-    "25": {
+    {
         "pergunta": "Todos Mensageiro Arn:",
-        "feedback": "Nem todos os mRNAs passam por splicing alternativo; alguns têm um único éxon.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Eles passam por um estágio de maturação",
             "Eles passam por emendas alternativas",
             "Eles têm um boné",
             "Eles têm uma cauda de policial"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é verdadeira: todos os RNAm passam por uma etapa de maturação (processamento pós-transcricional).",
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: nem todos os RNAm sofrem splicing alternativo; alguns genes têm um único éxon ou sempre são processados da mesma forma.",
+                "Esta afirmação é verdadeira: todos os RNAm maduros possuem o capuz (cap) de 7-metilguanosina em sua extremidade 5'.",
+                "Esta afirmação é verdadeira: todos os RNAm maduros (com poucas exceções) têm cauda poli-A em sua extremidade 3'."
+            ],
+            "fantasma": [
+                "Certo, todas maturam.",
+                "Essa é a falsa! Nem todas têm splicing alternativo.",
+                "Certo, todas têm seu capuz.",
+                "Certo, todas com sua cauda poli-A."
+            ],
+            "gato": [
+                "Fijate: verdadeiro.",
+                "Ronronado de aprovação! Essa é a falsa.",
+                "Dado curioso: verdadeiro.",
+                "Miau, verdadeiro."
+            ]
+        }
     },
-    "26": {
+    {
         "pergunta": "Na transcrição e duplicação do DNA, a energia vem de:",
-        "feedback": "A energia vem da hidrólise das ligações fosfato dos substratos de nucleotídeo trifosfato.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Dos primeiros substratos",
             "Diretamente do acetil-coa",
             "Exclusivamente da GTP",
             "Da quebra de ligações peptídicas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A energia vem da hidrólise das ligações fosfato dos nucleotídeos trifosfato substratos (dNTPs/NTPs) usados na síntese.",
+                "O acetil-CoA não é a fonte de energia desses processos; é um intermediário do metabolismo energético, não da síntese de ácidos nucleicos.",
+                "Não é exclusivamente do GTP; os substratos usados são os quatro tipos de nucleotídeos trifosfato, não só GTP.",
+                "Não vem da quebra de ligações peptídicas; essas ligações são próprias das proteínas, não do ADN ou ARN."
+            ],
+            "fantasma": [
+                "Essa aí! Os próprios substratos (NTPs/dNTPs) trazem a energia.",
+                "O acetil-CoA é de outro metabolismo.",
+                "Não é só GTP, são os quatro nucleotídeos.",
+                "Essas ligações são de proteínas, não daqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Os próprios substratos pagam a conta.",
+                "Fijate: isso é outro metabolismo.",
+                "Dado curioso: não é só GTP.",
+                "Miau, isso é de proteínas."
+            ]
+        }
     },
-    "27": {
+    {
         "pergunta": "O anticódon:",
-        "feedback": "O anticódon é encontrado no RNA de transferência (tRNA).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "É um trio de nucleotídeos no pequeno RNA",
             "É um trio de nucleotídeos no mRNA",
             "É um trio de nucleotídeos no arnt",
             "É um trio de nucleotídeos no RNA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O anticódon não se encontra nos ARN pequenos; essa é uma molécula específica do ARNt.",
+                "O tripleto do RNAm se chama códon, não anticódon.",
+                "O anticódon se encontra no ARN transportador (ARNt).",
+                "O ARNr não possui anticódon; essa estrutura é exclusiva do ARNt."
+            ],
+            "fantasma": [
+                "Não é dos ARN pequenos.",
+                "Isso é o códon, do RNAm.",
+                "Essa aí! O anticódon mora no ARNt.",
+                "O ARNr não tem anticódon."
+            ],
+            "gato": [
+                "Fijate: não é aí.",
+                "Dado curioso: isso é o códon.",
+                "Ronronado de aprovação! Anticódon, casa do ARNt.",
+                "Miau, não é o ARNr."
+            ]
+        }
     },
-    "28": {
+    {
         "pergunta": "No mecanismo de reparo por excisão de nucleotídeos, são reparados os seguintes:",
-        "feedback": "Este mecanismo repara danos volumosos, como dímeros de pirimidina, causados ​​por UV.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Os sítios apurínicos",
             "Bases incompatíveis",
             "Dímeros de purina",
             "Dímeros de pirimidina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os sítios apurínicos são reparados pelo mecanismo de excisão de bases (BER), não pelo de excisão de nucleotídeos.",
+                "As bases mal pareadas são corrigidas pelo sistema de reparo de erros de pareamento (mismatch repair), um mecanismo diferente.",
+                "Os dímeros de purinas não são o tipo de dano clássico reparado por esse mecanismo; os dímeros característicos causados por luz UV são de pirimidinas.",
+                "Esse mecanismo repara danos volumosos como os dímeros de pirimidina causados por UV."
+            ],
+            "fantasma": [
+                "Isso é reparo por excisão de bases.",
+                "Isso é o mismatch repair.",
+                "Não são de purinas, são de pirimidinas.",
+                "Essa aí! Os dímeros de pirimidina, o dano clássico por UV."
+            ],
+            "gato": [
+                "Fijate: isso é outro mecanismo.",
+                "Dado curioso: isso é mismatch repair.",
+                "Miau, não são de purinas.",
+                "Ronronado de aprovação! Pirimidinas danificadas por UV."
+            ]
+        }
     },
-    "29": {
+    {
         "pergunta": "O processo de corte e emenda requer:",
-        "feedback": "snRNAs (pequenos RNAs nucleares) fazem parte do spliceossomo.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Pequenos chicotes nucleares",
             "RNAs nucleolares pequenos",
             "RNAs citoplasmáticos pequenos",
             "arnês de transferência"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os snRNA (ARN pequenos nucleares) fazem parte do spliceossomo, a maquinaria responsável pelo splicing.",
+                "Os ARN pequenos nucleolares (snoRNA) participam da modificação do ARNr, não diretamente do splicing do RNAm.",
+                "Os ARN pequenos citoplasmáticos não são os componentes centrais do spliceossomo.",
+                "Os ARN transportadores participam da tradução, não do splicing do RNAm."
+            ],
+            "fantasma": [
+                "Essa aí! Os snRNA montam o spliceossomo.",
+                "Esses modificam o ARNr, outra tarefa.",
+                "Não são esses do spliceossomo.",
+                "Esses vão para a tradução, não o splicing."
+            ],
+            "gato": [
+                "Ronronado de aprovação! snRNA, o coração do spliceossomo.",
+                "Fijate: esses são de outra tarefa.",
+                "Dado curioso: não são esses.",
+                "Miau, esses vão para a tradução."
+            ]
+        }
     },
-    "30": {
+    {
         "pergunta": "Qual dos seguintes eventos é exclusivo da replicação do DNA?:",
-        "feedback": "A atividade da exonuclease 3'-5' (revisão) é característica das DNA polimerases.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Formação de ligações fosfodiéster",
             "Hidrólise de nucleotídeo trifosfato",
             "Nucleotídeo unindo-se na direção 5'-3'",
             "Remoção de nucleotídeos na direção 3'-5'"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A formação de ligações fosfodiéster também ocorre na transcrição (síntese de ARN), não é exclusiva da replicação.",
+                "A hidrólise de nucleotídeos trifosfato também ocorre durante a transcrição, não é exclusiva da replicação.",
+                "A união de nucleotídeos no sentido 5'-3' também caracteriza a síntese de ARN, não é exclusiva da replicação.",
+                "A atividade exonuclease 3'-5' (revisão de provas) é característica das ADN polimerases, um mecanismo de fidelidade ausente na transcrição."
+            ],
+            "fantasma": [
+                "Isso também acontece na transcrição.",
+                "Isso também acontece na transcrição.",
+                "Isso também acontece na transcrição.",
+                "Essa aí! A revisão de qualidade, exclusiva da replicação."
+            ],
+            "gato": [
+                "Fijate: também na transcrição.",
+                "Dado curioso: também ali.",
+                "Miau, também compartilhado.",
+                "Ronronado de aprovação! O controle de qualidade, único da replicação."
+            ]
+        }
     },
-    "31": {
+    {
         "pergunta": "Na tradução de proteínas:",
-        "feedback": "As proteínas são sintetizadas do terminal amino (N) ao terminal carboxila (C).",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "As proteínas são sintetizadas do terminal carboxila ao terminal amino.",
             "A ligação do peptídeo é catalisada pelo RNA ribossômico da subunidade grande",
             "As arnts que vão sair do ribossomo estão localizadas no local e",
             "As arnts que carregam os aminoácidos estão localizadas no local"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: as proteínas se sintetizam do extremo amino (N) ao carboxila (C) terminal, não ao contrário.",
+                "Esta afirmação é verdadeira: a ligação peptídica é catalisada pelo ARN ribossômico da subunidade maior (atividade de ribozima).",
+                "Esta afirmação é verdadeira: os ARNt que vão sair do ribossomo se localizam transitoriamente no sítio E (exit).",
+                "Esta afirmação é verdadeira: os ARNt carregados com aminoácidos entram e se localizam no sítio A (aminoacil)."
+            ],
+            "fantasma": [
+                "Essa é a falsa! É ao contrário: de amino a carboxila.",
+                "Certo, o ARNr da subunidade maior faz o trabalho.",
+                "Certo, sítio E para sair.",
+                "Certo, sítio A para entrar carregado."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Essa é a falsa, é ao contrário.",
+                "Fijate: verdadeiro.",
+                "Dado curioso: verdadeiro, sítio E.",
+                "Miau, verdadeiro, sítio A."
+            ]
+        }
     },
-    "32": {
+    {
         "pergunta": "Se um mRNA humano for inserido em uma célula de rã para tradução:",
-        "feedback": "Devido à universalidade do código genético, a célula da rã traduzirá corretamente o mRNA humano.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Uma proteína de sapo será obtida porque o código genético é ambíguo",
             "Uma proteína de sapo será obtida porque o código genético é degenerado",
             "Uma proteína de sapo será obtida porque o código genético é universal",
             "Nenhuma proteína será obtida porque o mRNA não será reconhecido"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O código genético não é ambíguo; cada códon especifica um único aminoácido.",
+                "A degenerescência do código (vários códons para um mesmo aminoácido) não é a razão pela qual a célula de rã traduz corretamente o RNAm; a razão é a universalidade do código.",
+                "Devido à universalidade do código genético, qualquer célula (incluindo uma de rã) interpreta os códons da mesma forma, por isso traduzirá corretamente o RNAm humano inserido.",
+                "O RNAm sim será reconhecido, já que a maquinaria de tradução (ribossomos, ARNt) interpreta o código genético da mesma forma em quase todos os organismos."
+            ],
+            "fantasma": [
+                "Não é ambíguo, cada códon tem um só significado.",
+                "Não é por degenerescência.",
+                "Essa aí! O código é universal, funciona em qualquer célula.",
+                "Sim se traduz, o código é o mesmo em todo lugar."
+            ],
+            "gato": [
+                "Fijate: não é ambíguo.",
+                "Dado curioso: não é por isso.",
+                "Ronronado de aprovação! Universalidade do código genético.",
+                "Miau, sim se traduz."
+            ]
+        }
     },
-    "33": {
+    {
         "pergunta": "Um hormônio é um sinal:",
-        "feedback": "Os hormônios viajam pelo sangue para atuar em células distantes (sinalização endócrina).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Parácrino porque é direcionado para um ducto excretor",
             "Endócrino porque percorre longas distâncias",
             "Parácrino porque é liberado na corrente sanguínea",
             "Endócrino porque atua no mesmo tecido que o produz"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Ser lançada em um duto excretor descreve a secreção exócrina, não um sinal parácrino nem hormonal.",
+                "Os hormônios viajam pelo sangue para atuar em células distantes (sinalização endócrina).",
+                "A sinalização parácrina atua localmente, por difusão no líquido intersticial, não sendo lançada na corrente sanguínea.",
+                "A sinalização endócrina atua a distância, não no mesmo tecido que a produz; isso descreveria mais uma sinalização autócrina ou parácrina."
+            ],
+            "fantasma": [
+                "Isso é exócrina, com duto.",
+                "Essa aí! Pelo sangue, a longa distância.",
+                "A parácrina é local, não pelo sangue.",
+                "A endócrina viaja longe, não fica no mesmo tecido."
+            ],
+            "gato": [
+                "Fijate: isso é exócrina.",
+                "Ronronado de aprovação! Sangue e distância, a endócrina.",
+                "Dado curioso: a parácrina é pertinho.",
+                "Miau, a endócrina vai longe."
+            ]
+        }
     },
-    "34": {
+    {
         "pergunta": "Com relação à sinalização intracelular, o ampc:",
-        "feedback": "cAMP é um segundo mensageiro que amplifica o sinal inicial.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "É produzido no espaço intracelular que amplifica o sinal",
             "Atua fosforilando enzimas intracelulares",
             "Atua ativando receptores citosólicos",
             "É produzido por uma proteína g"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O AMPc é um segundo mensageiro produzido no espaço intracelular que amplifica o sinal inicial recebido pelo receptor.",
+                "O AMPc não fosforila enzimas diretamente; ativa a proteína quinase A (PKA), que é quem fosforila outras proteínas.",
+                "O AMPc não ativa receptores citosólicos; seu alvo principal é a PKA.",
+                "O AMPc não é produzido diretamente pela proteína G, e sim pela enzima adenilato ciclase, que é ativada pela proteína G."
+            ],
+            "fantasma": [
+                "Essa aí! Segundo mensageiro que amplifica o sinal, dentro da célula.",
+                "Isso a PKA faz, ativada pelo AMPc.",
+                "Não ativa receptores citosólicos.",
+                "Quem produz é a adenilato ciclase, não a proteína G direto."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Amplificador intracelular.",
+                "Fijate: isso é a PKA.",
+                "Dado curioso: não é isso.",
+                "Miau, a adenilato ciclase fabrica."
+            ]
+        }
     },
-    "35": {
+    {
         "pergunta": "A abertura dos canais iônicos da membrana pode ser desencadeada por:",
-        "feedback": "Os canais iônicos geralmente não são abertos por variações no ATP, mas por voltagem, ligantes ou estímulos mecânicos.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Variações nas concentrações de soluto",
             "estímulos mecânicos",
             "Ligação de ligante",
             "Variações na concentração de ATP"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação é verdadeira: existem canais sensíveis a variações na concentração de solutos.",
+                "Esta afirmação é verdadeira: há canais mecanossensíveis que se abrem diante de estímulos mecânicos.",
+                "Esta afirmação é verdadeira: os canais ativados por ligante se abrem ao se ligar uma molécula sinalizadora específica.",
+                "Esta afirmação é FALSA, por isso é a resposta a esta pergunta que pede para identificar a opção incorreta: os canais iônicos geralmente não se abrem por variações de ATP, e sim por voltagem, ligantes ou estímulos mecânicos."
+            ],
+            "fantasma": [
+                "Certo, tem canais que respondem a isso.",
+                "Certo, os mecanossensíveis.",
+                "Certo, os ativados por ligante.",
+                "Essa é a falsa! O ATP não é o gatilho típico desses canais."
+            ],
+            "gato": [
+                "Fijate: verdadeiro.",
+                "Dado curioso: verdadeiro.",
+                "Miau, verdadeiro.",
+                "Ronronado de aprovação! Essa é a falsa."
+            ]
+        }
     },
-    "36": {
-        "pergunta": "O complexo ciclina d\/CDK em g1 participa de:",
-        "feedback": "Nota: Marcado como 'tudo correto' no PDF, mas sua principal função é a transição de G1 para S.",
+    {
+        "pergunta": "O complexo ciclina d/CDK em g1 participa de:",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Promova a separação das cromátides irmãs",
             "Determina a entrada na fase s",
             "Determina a entrada na fase m",
             "Determina a entrada na fase g1"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta afirmação não corresponde à função principal do complexo ciclina D/CDK em G1; promover a separação de cromátides irmãs é um evento da anáfase, mediado por outros complexos.",
+                "Esta é a opção marcada como resposta neste banco para esta pergunta sinalizada como ambígua no exame original ('todas corretas'). Paradoxalmente, promover a entrada na fase S é justamente a função principal aceita do complexo ciclina D/CDK em G1.",
+                "A entrada na fase M é determinada por outros complexos (como ciclina B/CDK1), não pela ciclina D/CDK de G1.",
+                "O complexo ciclina D/CDK, uma vez ativo, é o que já está atuando na fase G1, não o que determina a entrada nela."
+            ],
+            "fantasma": [
+                "Isso é da anáfase, outro processo.",
+                "Pergunta marcada como ambígua desde o exame original; a função de G1 para S é justo a desse complexo.",
+                "Isso é de outro complexo, na fase M.",
+                "Esse complexo já atua em G1, não decide entrar em G1."
+            ],
+            "gato": [
+                "Fijate: isso é outra fase.",
+                "Miau, pergunta com etiqueta de ambígua.",
+                "Dado curioso: isso é de outro complexo.",
+                "Ronronado neutro: esse complexo já está em G1."
+            ]
+        }
     },
-    "37": {
+    {
         "pergunta": "As ciclinas são:",
-        "feedback": "Nota: Marcado como 'tudo correto' no PDF, mas as ciclinas são subunidades regulatórias.",
         "nota": "Marque a opção INCORRETA",
         "opcoes": [
             "Subunidades catalíticas do fator promotor da mitose",
             "As subunidades reguladoras da atividade dos cdks",
             "Proteínas de concentração constante nas células",
             "Proteínas que não influenciam a atividade dos cdks"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As ciclinas são as subunidades reguladoras do fator promotor da mitose (FPM), não as catalíticas; essa função cabe à CDK.",
+                "Esta é a opção marcada como resposta neste banco para esta pergunta sinalizada como ambígua no exame original ('todas corretas'). Paradoxalmente, as ciclinas são justamente as subunidades reguladoras da atividade das CDKs.",
+                "As ciclinas não têm concentração constante; seu nível oscila ciclicamente ao longo do ciclo celular (daí o nome).",
+                "As ciclinas sim influenciam a atividade das CDKs; de fato, são necessárias para ativá-las."
+            ],
+            "fantasma": [
+                "A catalítica é a CDK, não a ciclina.",
+                "Pergunta marcada como ambígua desde o exame original; essa é justamente a função real das ciclinas.",
+                "As ciclinas sobem e descem, não são constantes.",
+                "Sim influenciam, são elas que ativam as CDKs."
+            ],
+            "gato": [
+                "Fijate: a catalítica é outra.",
+                "Miau, pergunta com etiqueta de ambígua.",
+                "Dado curioso: oscilam, não são constantes.",
+                "Ronronado neutro: sim influenciam, e muito."
+            ]
+        }
     },
-    "38": {
+    {
         "pergunta": "Durante a anáfase da mitose:",
-        "feedback": "A anáfase é caracterizada pela separação das cromátides irmãs em direção aos pólos.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "O envelope nuclear é reconstruído",
             "Cromátides irmãs separadas",
             "Cromossomos se alinham no equador",
             "As lâminas nucleares são fosforiladas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A reconstrução do envelope nuclear ocorre na telófase, não na anáfase.",
+                "A anáfase se caracteriza pela separação das cromátides irmãs em direção aos polos.",
+                "O alinhamento dos cromossomos no equador ocorre na metáfase, a etapa anterior à anáfase.",
+                "A fosforilação das laminas nucleares ocorre na prófase, para desmontar o envelope nuclear, não na anáfase."
+            ],
+            "fantasma": [
+                "Isso é da telófase.",
+                "Essa aí! As cromátides se separam na anáfase.",
+                "Isso é da metáfase, antes.",
+                "Isso é da prófase, para desmontar."
+            ],
+            "gato": [
+                "Fijate: isso é telófase.",
+                "Ronronado de aprovação! Separação de cromátides.",
+                "Dado curioso: isso é metáfase.",
+                "Miau, isso é prófase."
+            ]
+        }
     },
-    "39": {
+    {
         "pergunta": "A diferença entre um oócito II e um óvulo do mesmo indivíduo:",
-        "feedback": "O ovócito II possui cromossomos com duas cromátides, enquanto o óvulo possui cromossomos com uma única cromátide.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "O número de cromossomos vistos",
             "O tamanho e a forma dos seus cromossomos x",
             "A informação genética que existe em cada um deles",
             "O número de cromátides vistas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O número de cromossomos (23, haploide) é o mesmo no ovócito II e no óvulo; o que muda é o número de cromátides por cromossomo.",
+                "O tamanho e a forma dos cromossomos X não é a diferença relevante entre essas duas células.",
+                "A informação genética é essencialmente a mesma nas duas células; o que muda é a estrutura física dos cromossomos.",
+                "O ovócito II tem cromossomos de duas cromátides, enquanto o óvulo tem cromossomos de uma única cromátide (após completar a meiose II)."
+            ],
+            "fantasma": [
+                "O número de cromossomos é o mesmo nas duas.",
+                "Não é por tamanho ou forma do X.",
+                "A informação genética é a mesma.",
+                "Essa aí! Muda o número de cromátides por cromossomo."
+            ],
+            "gato": [
+                "Fijate: mesmo número de cromossomos.",
+                "Dado curioso: não é por aí.",
+                "Miau, mesma informação.",
+                "Ronronado de aprovação! Cromátides, a chave."
+            ]
+        }
     },
-    "40": {
+    {
         "pergunta": "A apoptose que ocorre intrinsecamente depende de:",
-        "feedback": "A via intrínseca da apoptose envolve a liberação do citocromo c da mitocôndria.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Ativação de receptores de morte",
             "Ativação de receptores acoplados à proteína g",
             "O equilíbrio entre proteínas ciclinas",
             "O envolvimento das mitocôndrias"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ativação de receptores de morte caracteriza a via extrínseca da apoptose, não a intrínseca.",
+                "Os receptores acoplados à proteína G não são o disparador característico de nenhuma das duas vias clássicas de apoptose.",
+                "O equilíbrio entre proteínas ciclinas regula o ciclo celular, não diretamente a via intrínseca da apoptose.",
+                "A via intrínseca da apoptose envolve a liberação de citocromo c a partir da mitocôndria."
+            ],
+            "fantasma": [
+                "Isso é a via extrínseca.",
+                "Isso não dispara nenhuma das duas vias.",
+                "Isso é do ciclo celular.",
+                "Essa aí! A mitocôndria libera citocromo c."
+            ],
+            "gato": [
+                "Fijate: isso é a extrínseca.",
+                "Dado curioso: não é o gatilho.",
+                "Miau, isso é ciclo celular.",
+                "Ronronado de aprovação! A mitocôndria, protagonista."
+            ]
+        }
     },
-    "41": {
+    {
         "pergunta": "Depois que a nucleação de um microtúbulo tiver ocorrido:",
-        "feedback": "As extremidades (+) dos microtúbulos podem ser estabilizadas por proteínas cap para evitar a despolimerização.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "É observada depleção de subunidades de tubulina disponíveis",
             "As pontas sem contato com os centros organizadores podem ser estabilizadas por proteínas",
             "Há crescimento se houver preponderância de dímeros ligados ao PIB",
             "Os protofilamentos não possuem estrutura polarizada"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O esgotamento de subunidades de tubulina não é uma consequência imediata da nucleação; o citosol mantém um estoque disponível.",
+                "As extremidades (+) dos microtúbulos podem ser estabilizadas por proteínas de capa para evitar a despolimerização.",
+                "O crescimento do microtúbulo é favorecido pelo predomínio de dímeros ligados a GTP, não a GDP (que favorece a despolimerização).",
+                "Os protofilamentos sim apresentam uma estrutura polarizada, com uma extremidade (+) e outra (-) claramente diferentes."
+            ],
+            "fantasma": [
+                "Não se esgota tão rápido assim.",
+                "Essa aí! Proteínas de capa estabilizam as extremidades livres.",
+                "O GTP favorece crescer, não o GDP.",
+                "Sim são polarizados, com extremidades + e -."
+            ],
+            "gato": [
+                "Fijate: não se esgota assim.",
+                "Ronronado de aprovação! Capas que estabilizam.",
+                "Dado curioso: é GTP, não GDP.",
+                "Miau, sim têm polaridade."
+            ]
+        }
     },
-    "42": {
+    {
         "pergunta": "Nas membranas plasmáticas das células epiteliais humanas observa-se:",
-        "feedback": "As membranas contêm componentes específicos, como fosfoinositídeos, que são fundamentais na sinalização celular.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Proteínas extracelulares que entram no citosol através de transportadores",
             "Distribuição homogênea de proteínas integrais e periféricas",
             "Proteínas e fosfolipídios específicos que participam de processos de sinalização",
             "Íons que atravessam ambos os lados da membrana por difusão simples"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As proteínas extracelulares não entram de forma genérica no citosol por meio de transportadores; esse não é um mecanismo geral da membrana.",
+                "A distribuição de proteínas integrais e periféricas não é homogênea; se organizam em domínios e microdomínios especializados (como as balsas lipídicas).",
+                "As membranas contêm componentes específicos, como fosfoinositídeos, que são fundamentais na sinalização celular.",
+                "Os íons, por terem carga, não atravessam a membrana por difusão simples; precisam de canais ou transportadores específicos."
+            ],
+            "fantasma": [
+                "Isso não é um mecanismo real e geral.",
+                "Não é homogênea, tem domínios especiais.",
+                "Essa aí! Componentes específicos para sinalizar.",
+                "Os íons precisam de ajuda, não atravessam sozinhos."
+            ],
+            "gato": [
+                "Fijate: não é assim.",
+                "Dado curioso: tem zonas especiais, não é tudo igual.",
+                "Ronronado de aprovação! Sinalização com o específico.",
+                "Miau, os íons precisam de canal."
+            ]
+        }
     },
-    "43": {
+    {
         "pergunta": "GLUT4 é uma proteína transportadora integral de glicose localizada em:",
-        "feedback": "Como proteína de membrana, o GLUT4 é inicialmente sintetizado e inserido na membrana do RER.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Membrana plasmática independente das proteínas SNARES e Rabs",
             "O RER, observando o polipeptídeo incluído na membrana",
             "Via secretora constitutiva",
             "Vesículas revestidas com COPII após o Golgi"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tráfego de GLUT4 até a membrana plasmática sim depende de proteínas SNARE e Rab, que regulam sua translocação regulada por insulina.",
+                "Como proteína de membrana, o GLUT4 se sintetiza e se insere inicialmente na membrana do RER.",
+                "GLUT4 não segue a via secretora constitutiva; é armazenado em vesículas especializadas e liberado de forma regulada (por insulina).",
+                "As vesículas COPII medeiam o transporte do RER para o Golgi, não um transporte posterior ao Golgi."
+            ],
+            "fantasma": [
+                "Sim depende de SNAREs e Rabs para se mover.",
+                "Essa aí! Nasce inserido na membrana do RER.",
+                "Não é a via constitutiva, é regulada por insulina.",
+                "As COPII vão do RER para o Golgi, não depois."
+            ],
+            "gato": [
+                "Fijate: sim depende dessas proteínas.",
+                "Ronronado de aprovação! Nasce no RER.",
+                "Dado curioso: é regulada, não constitutiva.",
+                "Miau, essas vão antes do Golgi."
+            ]
+        }
     },
-    "44": {
+    {
         "pergunta": "Que tipo de proteína é codificada pelo gene p53?",
-        "feedback": "p53 é um fator de transcrição que regula genes envolvidos no ciclo celular e na apoptose.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "fator de transcrição",
             "Fator de crescimento",
             "Proteína de reparo de DNA",
             "Protease característica da morte celular"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "p53 é um fator de transcrição que regula genes envolvidos no ciclo celular e na apoptose.",
+                "p53 não é um fator de crescimento; sua função é regular a expressão gênica, não estimular diretamente a proliferação.",
+                "p53 não é em si uma proteína de reparo do ADN; regula a transcrição de genes que participam da resposta ao dano do ADN.",
+                "p53 não é uma protease; as caspases são as proteases características da morte celular programada."
+            ],
+            "fantasma": [
+                "Essa aí! p53, o guardião do genoma, fator de transcrição.",
+                "Não é fator de crescimento.",
+                "Não repara o ADN direto, regula genes que fazem isso.",
+                "Não é protease, isso são as caspases."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O guardião, fator de transcrição.",
+                "Fijate: não é de crescimento.",
+                "Dado curioso: não repara direto.",
+                "Miau, não é protease."
+            ]
+        }
     },
-    "45": {
+    {
         "pergunta": "O bloqueio da polimerização dos microtúbulos afeta especificamente qual estágio do ciclo celular?",
-        "feedback": "Os microtúbulos formam o fuso mitótico, portanto, bloqueá-los interrompe a célula na fase M (mitose).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "G1",
             "M",
             "G0",
             "G2"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Em G1 os microtúbulos ainda não formam o fuso mitótico; seu bloqueio nessa fase não tem o mesmo efeito crítico.",
+                "Os microtúbulos formam o fuso mitótico, por isso seu bloqueio detém a célula na fase M (mitose).",
+                "Em G0 a célula está em repouso, fora do ciclo ativo; o bloqueio de microtúbulos não a afeta da mesma forma crítica.",
+                "Em G2 os microtúbulos ainda não formam o fuso mitótico; essa montagem ocorre ao entrar na fase M."
+            ],
+            "fantasma": [
+                "Em G1 ainda não monta o fuso.",
+                "Essa aí! O fuso mitótico se monta em M, ali trava tudo.",
+                "Em G0 a célula está de folga.",
+                "Em G2 o fuso ainda não se monta."
+            ],
+            "gato": [
+                "Fijate: em G1 ainda não tem fuso.",
+                "Ronronado de aprovação! M, o fuso mitótico.",
+                "Dado curioso: G0 é repouso.",
+                "Miau, em G2 também não tem fuso ainda."
+            ]
+        }
     },
-    "46": {
+    {
         "pergunta": "Qual dos seguintes processos é compatível com o desenvolvimento da morte celular programada?",
-        "feedback": "A apoptose envolve a ativação de caspases através do seu processamento proteolítico.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Liberação de hidrolases ácidas para o citosol",
             "Estimulação da translocação do citocromo C para a matriz mitocondrial",
             "Bloqueio de receptores que ativam caspases iniciadoras",
             "Proteólise de caspases iniciadoras"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A liberação de hidrolases ácidas no citosol é mais própria de processos de dano lisossomal/necrose, não do programa apoptótico clássico.",
+                "O processo é o contrário: na apoptose, o citocromo C sai da mitocôndria rumo ao citosol, não entra na matriz.",
+                "Bloquear os receptores que ativam caspases iniciadoras impediria a apoptose, não a promoveria.",
+                "A apoptose envolve a ativação de caspases por meio de seu processamento proteolítico."
+            ],
+            "fantasma": [
+                "Isso é mais de necrose.",
+                "É ao contrário, o citocromo C sai da mitocôndria.",
+                "Bloquear esses receptores freiaria a apoptose, não a ativaria.",
+                "Essa aí! Cortar as caspases iniciadoras as ativa."
+            ],
+            "gato": [
+                "Fijate: isso é necrose.",
+                "Dado curioso: é ao contrário.",
+                "Miau, isso freiaria tudo.",
+                "Ronronado de aprovação! O corte que ativa as caspases."
+            ]
+        }
     },
-    "47": {
+    {
         "pergunta": "Qual das seguintes mutações poderia contribuir para o desenvolvimento do tumor?",
-        "feedback": "O aumento dos receptores do fator de crescimento (como o EGF) promove a proliferação celular descontrolada.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Mutação de ganho de função do gene p53",
             "Mutação que diminui a expressão de proteases de matriz",
             "Mutação que aumenta a expressão do receptor EGF",
             "Mutação com perda de função do gene da ciclina D1"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O que contribui para o desenvolvimento tumoral é a perda de função de p53 (gene supressor), não um ganho de função.",
+                "Diminuir a expressão de proteases da matriz reduziria a capacidade invasiva, não a promoveria.",
+                "O aumento de receptores de fatores de crescimento (como EGF) promove a proliferação celular descontrolada.",
+                "Perder a função da ciclina D1 freiaria, não promoveria, o avanço do ciclo celular."
+            ],
+            "fantasma": [
+                "p53 é supressor; o que ajuda o tumor é ele perder função, não ganhar.",
+                "Menos proteases, menos invasão, não mais tumor.",
+                "Essa aí! Mais receptores de EGF, mais proliferação.",
+                "Perder ciclina D1 freia, não ajuda o tumor."
+            ],
+            "gato": [
+                "Fijate: é ao contrário com p53.",
+                "Dado curioso: menos proteases não ajuda o tumor.",
+                "Ronronado de aprovação! Mais EGF-R, mais proliferação.",
+                "Miau, perder ciclina D1 freia."
+            ]
+        }
     },
-    "48": {
+    {
         "pergunta": "Indique qual fenômeno ocorre na necrose e não na apoptose:",
-        "feedback": "A necrose causa ruptura da membrana e liberação de conteúdo, o que gera inflamação, diferentemente da apoptose.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Indução por ativação de caspases",
             "Aumento da permeabilidade mitocondrial",
             "Diminuição do volume celular",
             "Produção de um processo inflamatório"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A indução por ativação de caspases é característica da apoptose, não da necrose.",
+                "O aumento da permeabilidade mitocondrial está mais associado à via intrínseca da apoptose.",
+                "A diminuição do volume celular (picnose) é típica da apoptose; a necrose, por sua vez, cursa com inchaço celular.",
+                "A necrose provoca a ruptura da membrana e a liberação de conteúdo, o que gera inflamação, diferente da apoptose."
+            ],
+            "fantasma": [
+                "Isso é da apoptose.",
+                "Isso é mais da via intrínseca da apoptose.",
+                "Isso é da apoptose; a necrose incha a célula.",
+                "Essa aí! A necrose sim acende a inflamação."
+            ],
+            "gato": [
+                "Fijate: isso é apoptose.",
+                "Dado curioso: isso também é apoptose.",
+                "Miau, isso é apoptose, aqui incha.",
+                "Ronronado de aprovação! Inflamação, a marca da necrose."
+            ]
+        }
     },
-    "49": {
+    {
         "pergunta": "Durante a migração de um fibroblasto, indique quais eventos moleculares ocorrem:",
-        "feedback": "A migração celular envolve a polarização do citoesqueleto e a estabilização dos microtúbulos na direção do movimento.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Aumento da adesão por integrinas na borda de ataque",
             "Reorganização de contatos focais e inibição da endocitose",
             "Transporte vesicular mediado por cinesinas em filamentos intermediários",
             "Ativação da sinalização de jangadas lipídicas e estabilização de microtúbulos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na migração celular, as integrinas se montam e desmontam dinamicamente (não apenas aumentam) na frente de avanço.",
+                "A migração celular exige endocitose ativa para reciclar receptores e integrinas rumo à frente de avanço, não sua inibição.",
+                "As cinesinas se deslocam sobre microtúbulos, não sobre filamentos intermediários.",
+                "A migração celular envolve a polarização do citoesqueleto e a estabilização de microtúbulos na direção do movimento."
+            ],
+            "fantasma": [
+                "Não é só aumento, tem troca dinâmica.",
+                "A migração precisa de endocitose ativa, não bloqueada.",
+                "As cinesinas andam sobre microtúbulos, não filamentos intermediários.",
+                "Essa aí! Balsas lipídicas e microtúbulos estáveis, apontando pra frente."
+            ],
+            "gato": [
+                "Fijate: é dinâmico, não só sobe.",
+                "Dado curioso: precisa de endocitose ativa.",
+                "Miau, as cinesinas andam por microtúbulos.",
+                "Ronronado de aprovação! Polarização rumo à frente."
+            ]
+        }
     },
-    "50": {
+    {
         "pergunta": "Qual dos seguintes processos está associado à transição epitelial-mesenquimal?",
-        "feedback": "A transição epitelial-mesenquimal envolve a degradação da matriz para permitir a invasão e migração celular.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Aumento na expressão de integrinas e E-caderinas",
             "Secreção de metaloproteases da matriz extracelular",
             "Desorganização dos hemidesmossomos e aumento das junções aderentes",
             "Aumento da expressão de citoqueratinas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na transição epitélio-mesenquimática a E-caderina caracteristicamente diminui (não aumenta), o que é chave para perder a adesão epitelial.",
+                "A transição epitélio-mesenquimática envolve a degradação da matriz para permitir a invasão e a migração celular.",
+                "Na EMT se perdem tanto os hemidesmossomos quanto as junções aderentes, e não que estas últimas aumentem.",
+                "Na EMT a expressão de citoqueratinas (marcador epitelial) diminui, enquanto aumenta a vimentina (marcador mesenquimático)."
+            ],
+            "fantasma": [
+                "É ao contrário, a E-caderina cai na EMT.",
+                "Essa aí! Metaloproteases degradando a matriz para invadir.",
+                "As junções aderentes também se perdem, não sobem.",
+                "As citoqueratinas caem, sobe a vimentina."
+            ],
+            "gato": [
+                "Fijate: é ao contrário.",
+                "Ronronado de aprovação! Metaloproteases abrindo caminho.",
+                "Dado curioso: também se perdem essas junções.",
+                "Miau, é ao contrário com as citoqueratinas."
+            ]
+        }
     },
-    "51": {
+    {
         "pergunta": "Mecanismo molecular envolvido durante a fase M do ciclo celular:",
-        "feedback": "O Fator Promotor de Mitose (MPF) ativa o APC para permitir a transição da metáfase para a anáfase.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "APC promove desorganização do envelope nuclear",
             "A fosforilação da lamina promove o restabelecimento do envelope",
             "Microtúbulos polares produzem movimento da cromátide na anáfase A",
             "FPM promove a ativação do complexo APC"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é o APC que desorganiza o envelope nuclear; essa ação cabe à fosforilação das laminas nucleares mediada pelo FPM.",
+                "É ao contrário: a fosforilação das laminas nucleares promove a desorganização do envelope, não seu restabelecimento (que ocorre por desfosforilação).",
+                "O movimento de cromátides na anáfase A é produzido pelo encurtamento dos microtúbulos cinetocóricos, não dos polares.",
+                "O Fator Promotor da Mitose (FPM) ativa o APC para permitir a transição de metáfase para anáfase."
+            ],
+            "fantasma": [
+                "Isso é da fosforilação de laminas, não do APC.",
+                "É ao contrário, fosforilar desmonta, não remonta.",
+                "Isso é dos cinetocóricos, não dos polares.",
+                "Essa aí! O FPM liga o APC."
+            ],
+            "gato": [
+                "Fijate: isso é outra coisa.",
+                "Dado curioso: é ao contrário.",
+                "Miau, são os cinetocóricos.",
+                "Ronronado de aprovação! FPM ativa o APC."
+            ]
+        }
     },
-    "52": {
+    {
         "pergunta": "O processo de emenda alternativa é caracterizado por:",
-        "feedback": "O splicing alternativo permite que múltiplas proteínas sejam geradas a partir de um único gene.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Reduza a taxa de erros de transcrição",
             "Aumentar a capacidade de codificação do genoma",
             "Use códons sinônimos",
             "Removendo íntrons de transcrições maduras"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O splicing alternativo não reduz erros de transcrição; esse não é seu papel principal.",
+                "O splicing alternativo permite gerar múltiplas proteínas a partir de um único gene, aumentando a capacidade codificante do genoma.",
+                "O uso de códons sinônimos é um fenômeno da tradução/degenerescência do código, não do splicing.",
+                "A remoção de íntrons ocorre no splicing em geral; o que distingue o splicing alternativo é a combinação variável de éxons, não simplesmente remover íntrons."
+            ],
+            "fantasma": [
+                "Não reduz erros, não é sua função.",
+                "Essa aí! Um gene, muitas proteínas possíveis.",
+                "Isso é outra coisa, da tradução.",
+                "Isso já faz o splicing normal; o alternativo combina éxons diferente."
+            ],
+            "gato": [
+                "Fijate: não é por isso.",
+                "Ronronado de aprovação! Mais proteínas de um mesmo gene.",
+                "Dado curioso: isso é da tradução.",
+                "Miau, o especial é combinar éxons diferente."
+            ]
+        }
     },
-    "53": {
+    {
         "pergunta": "O encurtamento dos telômeros nas células somáticas está associado a:",
-        "feedback": "Devido à necessidade de um primer, a extremidade posterior do fio atrasado não pode ser completada, encurtando o telômero.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Telomerase não tem atividade de revisão",
             "Telômeros são DNA não codificante",
             "A heterocromatina não permite acesso a máquinas",
             "As extremidades 3' não podem ser completamente replicadas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A falta de atividade de revisão de provas da telomerase não é a causa do encurtamento; na verdade, a telomerase é a enzima que alonga os telômeros (quando ativa).",
+                "Os telômeros serem ADN não codificante é verdade, mas não explica por que encurtam a cada divisão.",
+                "O acesso limitado da maquinaria à heterocromatina não é a causa do encurtamento telomérico.",
+                "Devido à necessidade de um iniciador, a extremidade final da fita atrasada não pode ser completada, encurtando o telômero a cada rodada de replicação."
+            ],
+            "fantasma": [
+                "A telomerase na verdade alonga, quando ativa.",
+                "É verdade, mas não explica o encurtamento.",
+                "Não é por isso que encurta.",
+                "Essa aí! A extremidade 3' fica curta a cada vez."
+            ],
+            "gato": [
+                "Fijate: a telomerase alonga, não encurta.",
+                "Dado curioso: verdade, mas não é a razão.",
+                "Miau, não é pela heterocromatina.",
+                "Ronronado de aprovação! O problema da extremidade 3'."
+            ]
+        }
     },
-    "54": {
+    {
         "pergunta": "Para diagnosticar o número de cópias virais de um vírus DNA, deve-se solicitar:",
-        "feedback": "qPCR permite quantificar a carga viral dos genomas de DNA em tempo real.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Eletroforese de DNA",
             "Retrotranscrição seguida por qPCR",
             "Ponto final da PCR",
             "PCR quantitativo (qPCR)"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A eletroforese de ADN permite ver fragmentos, mas não quantificar com precisão a carga viral.",
+                "A retrotranscrição é necessária para vírus de ARN, não para um vírus de ADN, que já tem o material genético nesse formato.",
+                "A PCR de ponto final só indica presença/ausência, sem quantificar com precisão o número de cópias.",
+                "A qPCR permite quantificar a carga viral de genomas de ADN em tempo real."
+            ],
+            "fantasma": [
+                "Isso mostra fragmentos, não conta cópias.",
+                "A retrotranscrição é para vírus de ARN, não de ADN.",
+                "Isso só diz sim ou não, não quanto.",
+                "Essa aí! A qPCR conta as cópias em tempo real."
+            ],
+            "gato": [
+                "Fijate: não quantifica.",
+                "Dado curioso: esse passo é para ARN.",
+                "Miau, não dá um número exato.",
+                "Ronronado de aprovação! qPCR, a que conta."
+            ]
+        }
     },
-    "55": {
+    {
         "pergunta": "Um mecanismo molecular compatível com o fenótipo das células tumorais é:",
-        "feedback": "As células tumorais frequentemente hiperexpressam receptores que estimulam a divisão celular constante.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Aumento da expressão de receptores mitógenos",
             "A aquisição da senescência replicativa",
             "Conservação da resposta aos sinais de morte",
             "Conservação da inibição de contato"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As células tumorais costumam hiperexpressar receptores que estimulam a divisão celular constante.",
+                "A senescência replicativa detém a divisão celular; adquiri-la freiaria, não favoreceria, o fenótipo tumoral.",
+                "As células tumorais tipicamente perdem a resposta a sinais de morte (evasão da apoptose), não a conservam.",
+                "As células tumorais tipicamente perdem a inibição por contato, permitindo o crescimento descontrolado."
+            ],
+            "fantasma": [
+                "Essa aí! Mais receptores, mais divisão.",
+                "A senescência freia, não ajuda o tumor.",
+                "O tumor perde essa resposta, não conserva.",
+                "O tumor perde essa inibição, não conserva."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Receptores extras, mais proliferação.",
+                "Fijate: é ao contrário.",
+                "Dado curioso: se perde, não se conserva.",
+                "Miau, também se perde."
+            ]
+        }
     },
-    "56": {
+    {
         "pergunta": "Células-tronco intestinais ou células-tronco:",
-        "feedback": "A divisão assimétrica permite que o pool de células-tronco seja mantido enquanto células diferenciadas são geradas.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Eles podem se auto-renovar por divisão celular assimétrica",
             "Eles são pluripotentes",
             "Sua replicação é independente de mitógenos",
             "Apresentam maior restrição que o restante das células"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A divisão assimétrica permite manter o pool de células-tronco enquanto se geram células diferenciadas.",
+                "As células-tronco intestinais são multipotentes (geram os tipos celulares do epitélio intestinal), não pluripotentes.",
+                "Sua replicação sim depende de sinais mitogênicos do nicho, não é independente deles.",
+                "Apresentam menor restrição que o restante das células diferenciadas do epitélio, não maior."
+            ],
+            "fantasma": [
+                "Essa aí! Se dividem assimétrico e mantêm a reserva.",
+                "São multipotentes, não pluripotentes.",
+                "Sim dependem de sinais do nicho.",
+                "Têm menos restrição, não mais."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Divisão assimétrica, a chave.",
+                "Fijate: multipotentes, não pluripotentes.",
+                "Dado curioso: sim dependem de mitógenos.",
+                "Miau, é ao contrário."
+            ]
+        }
     },
-    "57": {
+    {
         "pergunta": "Em relação à determinação celular na linhagem intestinal:",
-        "feedback": "Uma vez determinada e diferenciada uma célula (como um enterócito), seu estado é estável e não muda diante de novos sinais.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Math1 é uma proteína expressa constitutivamente",
             "Enterócitos são obtidos com ausência de Math1 em ambiente indutor",
             "Certas células podem gerar filhas com fenótipos opostos",
             "Enterócitos expostos a sinais secretores não alteram seu fenótipo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Math1 não tem expressão constitutiva; sua expressão é regulada conforme a via de diferenciação celular.",
+                "Em um ambiente indutor de linhagem secretora, espera-se a presença (não a ausência) de Math1 para esse destino celular.",
+                "Uma vez que uma célula está determinada, suas células-filhas mantêm esse mesmo fenótipo; não geram filhas com fenótipo oposto.",
+                "Uma vez que uma célula está determinada e diferenciada (como um enterócito), seu estado é estável e não muda diante de novos sinais."
+            ],
+            "fantasma": [
+                "Não é constitutiva, se regula.",
+                "Ali se esperaria que Math1 estivesse presente.",
+                "As filhas herdam o mesmo destino, não o oposto.",
+                "Essa aí! Uma vez enterócito, fica assim."
+            ],
+            "gato": [
+                "Fijate: se regula, não é fixa.",
+                "Dado curioso: se esperaria o contrário.",
+                "Miau, as filhas seguem o mesmo caminho.",
+                "Ronronado de aprovação! Estado estável, não muda."
+            ]
+        }
     },
-    "58": {
+    {
         "pergunta": "A proteína Math1 possui um domínio hélice-alça-hélice, portanto:",
-        "feedback": "Proteínas nucleares (como fatores de transcrição) são sintetizadas no citosol e possuem sinais de localização nuclear (NLS).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "É processado no RER e no Golgi para entrar no núcleo",
             "Apresenta aminoácidos com localização nuclear devido a alterações citosólicas.",
             "Apresenta peptídeo sinal para síntese em RER",
             "Apresenta sinal de localização nuclear e é sintetizado em polirribossomos livres."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As proteínas nucleares não se processam no RER nem no Golgi; essa via é para proteínas de secreção ou membrana.",
+                "Não se trata de 'mudanças citosólicas'; o sinal de localização nuclear é uma sequência de aminoácidos específica (NLS) reconhecida por importinas.",
+                "Não apresenta peptídeo-sinal para o RER; as proteínas destinadas ao núcleo se sintetizam em ribossomos livres do citosol.",
+                "As proteínas nucleares (como os fatores de transcrição) se sintetizam no citosol e possuem sinais de localização nuclear (NLS)."
+            ],
+            "fantasma": [
+                "As nucleares não passam por RER nem Golgi.",
+                "Não é por 'mudanças citosólicas' soltas assim.",
+                "Não tem peptídeo-sinal para o RER.",
+                "Essa aí! NLS e síntese livre no citosol."
+            ],
+            "gato": [
+                "Fijate: não passa por ali.",
+                "Dado curioso: não é assim tão vago.",
+                "Miau, não vai ao RER.",
+                "Ronronado de aprovação! NLS, a etiqueta nuclear."
+            ]
+        }
     },
-    "59": {
+    {
         "pergunta": "A proteína Math1 é dimerizada nas seguintes sequências reguladoras:",
-        "feedback": "Fatores de transcrição específicos frequentemente se ligam a sequências intensificadoras para regular a expressão gênica.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Melhoradores",
             "Local de iniciação da replicação",
             "promotores basais",
             "Isoladores"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os fatores de transcrição específicos costumam se ligar a sequências potenciadoras para regular a expressão gênica.",
+                "O sítio de iniciação da replicação é reconhecido por outra maquinaria, não por fatores de transcrição específicos como Math1.",
+                "As sequências promotoras basais são reconhecidas principalmente pelos fatores de transcrição basais, não pelos específicos.",
+                "Os isolantes (insulators) cumprem função de barreira/limite, não são o sítio típico de ligação de fatores específicos como Math1."
+            ],
+            "fantasma": [
+                "Essa aí! Os enhancers, terreno dos fatores específicos.",
+                "Esse sítio é de outra maquinaria.",
+                "Os promotores basais são dos fatores basais.",
+                "Os insulators são barreiras, não isso."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Enhancers, a casa de Math1.",
+                "Fijate: isso é outra coisa.",
+                "Dado curioso: isso é dos basais.",
+                "Miau, isso é barreira."
+            ]
+        }
     },
-    "60": {
+    {
         "pergunta": "Na exposição do epitélio intestinal à radiação ionizante:",
-        "feedback": "Danos no DNA ativam pontos de controle que interrompem o ciclo celular para permitir o reparo ou induzir a apoptose.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Uma resposta aos danos é a interrupção do ciclo celular",
             "Mecanismos de morte programados são inibidos",
             "Um aumento na ubiquitina ligase é observado em p53",
             "O reparo depende da excisão de bases ou nucleotídeos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O dano ao ADN ativa pontos de checagem que detêm o ciclo celular para permitir o reparo ou induzir a apoptose.",
+                "Os mecanismos de morte programada se ativam (não se inibem) diante de dano severo ao ADN, como mecanismo de defesa.",
+                "Diante do dano, a ubiquitinação de p53 (mediada por MDM2) diminui, permitindo que p53 se acumule e atue.",
+                "A radiação ionizante causa principalmente quebras de fita dupla, reparadas por recombinação homóloga ou NHEJ, não por excisão de bases ou nucleotídeos."
+            ],
+            "fantasma": [
+                "Essa aí! O ciclo freia para reparar.",
+                "Se ativam, não se inibem.",
+                "Cai a ubiquitinação, para que p53 atue.",
+                "Isso é de outro tipo de dano, não de radiação."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Pausa para reparar.",
+                "Fijate: se ativam.",
+                "Dado curioso: cai, não sobe.",
+                "Miau, isso é outro mecanismo."
+            ]
+        }
     },
-    "61": {
+    {
         "pergunta": "Elemento necessário para que os mRNAs sejam traduzidos de forma eficiente:",
-        "feedback": "O cap 7-metilguanosina (cap 5') é essencial para reconfirmar o ribossomo e iniciar a tradução.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Sequência de consenso de emenda",
             "Códon inicial na extremidade 3'",
             "Sinal de exportação nuclear",
             "Nucleotídeo 7-metilguanosina na extremidade 5'"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A sequência consenso do splicing é necessária para o processamento, mas não é o elemento-chave para a eficiência da tradução em si.",
+                "O códon de início se localiza perto da extremidade 5', não da extremidade 3'.",
+                "O sinal de exportação nuclear regula a saída do RNAm do núcleo, mas não é o elemento-chave para a eficiência traducional.",
+                "O capuz de 7-metilguanosina (5' cap) é essencial para o reconhecimento pelo ribossomo e o início da tradução."
+            ],
+            "fantasma": [
+                "Isso é do splicing, não da tradução em si.",
+                "O códon de início fica perto do 5', não do 3'.",
+                "Isso regula a saída do núcleo, não a tradução em si.",
+                "Essa aí! O capuz 5', a chave de entrada do ribossomo."
+            ],
+            "gato": [
+                "Fijate: isso é splicing.",
+                "Dado curioso: está do outro lado.",
+                "Miau, isso é exportação.",
+                "Ronronado de aprovação! O capuz 5'."
+            ]
+        }
     },
-    "62": {
+    {
         "pergunta": "Técnica apropriada para determinar os níveis de glicoproteína S produzida nas células:",
-        "feedback": "Western blotting é a técnica padrão para detectar e quantificar proteínas específicas usando anticorpos.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "RT-qPCR com primers específicos",
             "Western blot com anticorpos anti-glicoproteína S",
             "Obtenção de frações subcelulares",
             "PCR com primers específicos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O RT-qPCR mede níveis de RNAm, não diretamente a quantidade de proteína produzida.",
+                "O Western Blot é a técnica padrão para detectar e quantificar proteínas específicas por meio de anticorpos.",
+                "Obter frações subcelulares é um passo de purificação, não uma técnica de quantificação específica de uma proteína.",
+                "A PCR comum detecta ADN, não proteínas."
+            ],
+            "fantasma": [
+                "Isso mede RNAm, não a proteína final.",
+                "Essa aí! Western blot com anticorpos, feito para proteínas.",
+                "Isso é só separar partes, não medir.",
+                "Isso mede ADN, não proteína."
+            ],
+            "gato": [
+                "Fijate: mede outra coisa.",
+                "Ronronado de aprovação! Anticorpos caçando a proteína.",
+                "Dado curioso: não mede nada sozinho.",
+                "Miau, isso é de ADN."
+            ]
+        }
     },
-    "63": {
+    {
         "pergunta": "Localização esperada de uma proteína traduzida de um mRNA sem um peptídeo sinal:",
-        "feedback": "Sem o peptídeo sinal, a proteína não é translocada para o RER e permanece no citosol.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Aparelho de Golgi",
             "exterior celular",
             "retículo endoplasmático",
             "Citosol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Sem peptídeo-sinal, a proteína não consegue entrar na via do RER/Golgi.",
+                "Sem peptídeo-sinal, a proteína não é direcionada para a via secretora que a levaria ao exterior celular.",
+                "Sem peptídeo-sinal, a proteína não é translocada para o RE.",
+                "Sem peptídeo-sinal, a proteína não é translocada para o RER e permanece no citosol."
+            ],
+            "fantasma": [
+                "Sem sinal, não chega ao Golgi.",
+                "Sem sinal, não sai da célula.",
+                "Sem sinal, não entra no RE.",
+                "Essa aí! Fica flutuando no citosol."
+            ],
+            "gato": [
+                "Fijate: não chega ali.",
+                "Dado curioso: não sai.",
+                "Miau, não entra no RE.",
+                "Ronronado de aprovação! Direto ao citosol, sem escalas."
+            ]
+        }
     },
-    "64": {
+    {
         "pergunta": "Mecanismo compatível com aumento induzido por vírus na produção de ATP mitocondrial:",
-        "feedback": "O aumento dos componentes da cadeia respiratória aumenta a capacidade de produção de ATP.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "MicroRNAs que se ligam ao mRNA da ATP sintase",
             "Aumento na expressão de genes da cadeia de transporte",
             "Ubiquitina ligases enzimas de beta-oxidação",
             "Canais permeáveis ​​a prótons na membrana interna"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os microARNs que se ligam ao RNAm da ATP sintase reduziriam sua expressão, diminuindo (não aumentando) a produção de ATP.",
+                "Aumentar os componentes da cadeia respiratória incrementa a capacidade de produção de ATP.",
+                "Ubiquitinar e degradar enzimas da beta-oxidação reduziria o aporte energético, não o aumentaria.",
+                "Os canais permeáveis a prótons dissipam o gradiente eletroquímico necessário para a síntese de ATP, diminuindo sua produção."
+            ],
+            "fantasma": [
+                "Isso baixaria a produção, não subiria.",
+                "Essa aí! Mais cadeia respiratória, mais ATP.",
+                "Degradar essas enzimas tira energia, não soma.",
+                "Esses canais jogam o gradiente no chão."
+            ],
+            "gato": [
+                "Fijate: isso baixa a produção.",
+                "Ronronado de aprovação! Mais peças da cadeia, mais ATP.",
+                "Dado curioso: isso tira, não soma.",
+                "Miau, isso arruína o gradiente."
+            ]
+        }
     },
-    "65": {
+    {
         "pergunta": "Os receptores de glicocorticóides (GR) ligados aos seus ligantes atuam como:",
-        "feedback": "Os receptores de hormônios esteróides são fatores de transcrição ativados pela ligação do ligante.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Ativadores triméricos de proteína G",
             "Canais iônicos controlados por ligante",
             "Fatores de transcrição específicos",
             "Inibidores da via apoptótica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os receptores de glicocorticoides não atuam ativando proteínas G triméricas; são receptores intracelulares, não de membrana.",
+                "Não são canais iônicos; os receptores de glicocorticoides são intracelulares e atuam sobre a transcrição gênica.",
+                "Os receptores de hormônios esteroides são fatores de transcrição que se ativam ao se ligar ao ligante.",
+                "Não é sua função principal atuar como inibidores diretos da via apoptótica, e sim regular a transcrição de múltiplos genes."
+            ],
+            "fantasma": [
+                "Não são de membrana, não ativam proteína G.",
+                "Não são canais iônicos.",
+                "Essa aí! Fatores de transcrição, atuam sobre o ADN.",
+                "Essa não é sua função principal."
+            ],
+            "gato": [
+                "Fijate: são intracelulares, não de membrana.",
+                "Dado curioso: não são canais.",
+                "Ronronado de aprovação! Vão direto regular genes.",
+                "Miau, não é o principal."
+            ]
+        }
     },
-    "66": {
+    {
         "pergunta": "Na mitose, a separação das cromátides irmãs ocorre em:",
-        "feedback": "Anáfase é a fase em que as cromátides se separam e migram para os pólos.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Prófase",
             "Metáfase",
             "Anáfase",
             "Telófase"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na prófase os cromossomos se condensam, mas as cromátides irmãs ainda não se separam.",
+                "Na metáfase os cromossomos se alinham no equador, mas as cromátides irmãs ainda não se separam.",
+                "A anáfase é a fase em que as cromátides se separam e migram para os polos.",
+                "Na telófase os cromossomos já chegaram aos polos e o envelope nuclear se reconstrói; a separação ocorreu antes, na anáfase."
+            ],
+            "fantasma": [
+                "Na prófase ainda não se separam.",
+                "Na metáfase estão alinhadas, ainda não separadas.",
+                "Essa aí! Na anáfase se separam e viajam para os polos.",
+                "Na telófase já chegaram, a separação foi antes."
+            ],
+            "gato": [
+                "Fijate: ainda não.",
+                "Dado curioso: alinhadas, não separadas.",
+                "Ronronado de aprovação! Anáfase, o momento da separação.",
+                "Miau, isso é depois."
+            ]
+        }
     },
-    "67": {
+    {
         "pergunta": "A síntese lipídica é uma função principal de:",
-        "feedback": "O retículo endoplasmático liso é o principal local de síntese de lipídios e esteróides.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "RER",
             "REL",
             "Aparelho de Golgi",
             "Lisossomos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O RER se especializa na síntese de proteínas, não de lipídios.",
+                "O Retículo Endoplasmático Liso é o principal sítio de síntese de lipídios e esteroides.",
+                "O Golgi modifica e empacota proteínas e lipídios, mas não é o principal sítio de sua síntese.",
+                "Os lisossomos digerem macromoléculas; não são o sítio de síntese de lipídios."
+            ],
+            "fantasma": [
+                "O RER é de proteínas.",
+                "Essa aí! O REL, a fábrica de lipídios.",
+                "O Golgi empacota, não fabrica lipídios do zero.",
+                "Os lisossomos digerem, não sintetizam."
+            ],
+            "gato": [
+                "Fijate: RER é de proteínas.",
+                "Ronronado de aprovação! REL, lipídios.",
+                "Dado curioso: isso é empacotamento, não fábrica.",
+                "Miau, isso é digestão."
+            ]
+        }
     },
-    "68": {
+    {
         "pergunta": "O sinal de importação nuclear (NLS) é reconhecido por:",
-        "feedback": "As importinas ligam-se ao NLS para mediar o transporte para o núcleo.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Exportadoras",
             "Importadas",
             "Clatrina",
             "PRS"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As exportinas medeiam a saída de moléculas do núcleo, não o reconhecimento da NLS de entrada.",
+                "As importinas se ligam à NLS para mediar o transporte rumo ao núcleo.",
+                "A clatrina participa da formação de vesículas, não do transporte nuclear.",
+                "A PRS (partícula de reconhecimento do sinal) atua na síntese de proteínas direcionadas ao RER, não no transporte nuclear."
+            ],
+            "fantasma": [
+                "As exportinas tiram, não colocam.",
+                "Essa aí! Importinas, as que reconhecem a NLS.",
+                "A clatrina é de vesículas, não do núcleo.",
+                "A PRS é do RER, não do núcleo."
+            ],
+            "gato": [
+                "Fijate: essas são para sair.",
+                "Ronronado de aprovação! Importinas ao resgate.",
+                "Dado curioso: isso é de vesículas.",
+                "Miau, isso é do RER."
+            ]
+        }
     },
-    "69": {
+    {
         "pergunta": "O complexo de Golgi participa de:",
-        "feedback": "O Golgi processa, classifica e distribui proteínas do RER.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "síntese de proteínas",
             "digestão intracelular",
             "Modificação e embalagem de proteínas",
             "Produção de ATP"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A síntese de proteínas ocorre nos ribossomos (livres ou do RER), não no Golgi.",
+                "A digestão intracelular é função dos lisossomos, não do Golgi.",
+                "O Golgi processa, classifica e distribui proteínas vindas do RER.",
+                "A produção de ATP ocorre principalmente na mitocôndria, não no Golgi."
+            ],
+            "fantasma": [
+                "Isso é dos ribossomos.",
+                "Isso é dos lisossomos.",
+                "Essa aí! Modifica e empacota o que chega do RER.",
+                "Isso é da mitocôndria."
+            ],
+            "gato": [
+                "Fijate: isso é de ribossomos.",
+                "Dado curioso: isso é lisossomo.",
+                "Ronronado de aprovação! O Golgi, a central de empacotamento.",
+                "Miau, isso é mitocôndria."
+            ]
+        }
     },
-    "70": {
+    {
         "pergunta": "A cadeia respiratória está localizada em:",
-        "feedback": "Os complexos da cadeia de transporte de elétrons estão embutidos nas cristas da membrana interna.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Matriz mitocondrial",
             "Membrana mitocondrial externa",
             "membrana mitocondrial interna",
             "espaço intermembranar"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na matriz ocorrem o ciclo de Krebs e a beta-oxidação, mas a cadeia respiratória em si está na membrana interna.",
+                "A membrana externa é permeável por meio de porinas e não abriga a cadeia respiratória.",
+                "Os complexos da cadeia de transporte de elétrons estão embutidos nas cristas da membrana interna.",
+                "O espaço intermembranas acumula prótons bombeados pela cadeia, mas os complexos em si estão na membrana interna."
+            ],
+            "fantasma": [
+                "Ali é o ciclo de Krebs, a cadeia está na membrana.",
+                "Essa membrana é mais permeável, sem complexos de cadeia.",
+                "Essa aí! Nas cristas da membrana interna.",
+                "Ali se acumulam os prótons, mas os complexos estão na membrana."
+            ],
+            "gato": [
+                "Fijate: isso é a matriz.",
+                "Dado curioso: não é essa membrana.",
+                "Ronronado de aprovação! Membrana interna, as cristas.",
+                "Miau, isso é o espaço, não a membrana."
+            ]
+        }
     },
-    "71": {
+    {
         "pergunta": "A replicação do DNA é:",
-        "feedback": "Cada nova molécula de DNA retém uma fita original e outra recém-sintetizada.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Conservador",
             "Semiconservador",
             "Dispersivo",
             "Não são necessários primers"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O modelo conservativo (uma molécula totalmente velha e outra totalmente nova) foi descartado experimentalmente.",
+                "Cada nova molécula de ADN conserva uma fita original e uma recém-sintetizada.",
+                "O modelo dispersivo (fitas misturadas de ADN velho e novo) também foi descartado experimentalmente.",
+                "A replicação sim exige iniciadores de ARN para que as ADN polimerases possam começar a sintetizar."
+            ],
+            "fantasma": [
+                "Esse modelo foi descartado por experimento.",
+                "Essa aí! Uma fita velha, uma nova, em cada molécula.",
+                "Esse modelo misturado também foi descartado.",
+                "Sim precisa de iniciadores, sempre."
+            ],
+            "gato": [
+                "Fijate: esse modelo caiu.",
+                "Ronronado de aprovação! Semiconservativa, o experimento de Meselson-Stahl.",
+                "Dado curioso: esse também caiu.",
+                "Miau, sim precisa de iniciador."
+            ]
+        }
     },
-    "72": {
+    {
         "pergunta": "O códon de início da tradução é:",
-        "feedback": "AUG é o códon de início universal que codifica a metionina.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "UAA",
             "UAG",
             "AGOSTO",
             "UGA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "UAA é um códon de terminação (stop), não de início.",
+                "UAG é um códon de terminação (stop), não de início.",
+                "AUG é o códon de início universal que codifica para metionina.",
+                "UGA é um códon de terminação (stop), não de início."
+            ],
+            "fantasma": [
+                "Esse é de parada.",
+                "Esse também é de parada.",
+                "Essa aí! AUG, a largada, metionina.",
+                "Esse é de parada também."
+            ],
+            "gato": [
+                "Fijate: isso é de parada.",
+                "Dado curioso: parada também.",
+                "Ronronado de aprovação! AUG, sinal verde.",
+                "Miau, parada também."
+            ]
+        }
     },
-    "73": {
+    {
         "pergunta": "A transcrição ocorre em:",
-        "feedback": "Nos eucariotos, a síntese de RNA a partir de DNA ocorre dentro do núcleo.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Citosol",
             "Essencial",
             "RER",
             "Lisossomos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A transcrição não ocorre no citosol em eucariotos; ali ocorre a tradução.",
+                "Em eucariotos, a síntese de ARN a partir de ADN ocorre dentro do núcleo.",
+                "O RER é o sítio de síntese de proteínas de membrana/secreção, não de transcrição.",
+                "Os lisossomos são organelas digestivas, não participam da transcrição."
+            ],
+            "fantasma": [
+                "O citosol é de tradução, não transcrição.",
+                "Essa aí! O núcleo, onde mora o ADN.",
+                "O RER é de proteínas, não de transcrição.",
+                "Os lisossomos digerem, não transcrevem."
+            ],
+            "gato": [
+                "Fijate: isso é tradução.",
+                "Ronronado de aprovação! Núcleo, a fábrica de ARN.",
+                "Dado curioso: isso é de proteínas.",
+                "Miau, isso digere, não transcreve."
+            ]
+        }
     },
-    "74": {
+    {
         "pergunta": "Os lisossomos contêm enzimas como:",
-        "feedback": "Os lisossomos mantêm um pH ácido para o funcionamento de suas hidrolases digestivas.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Polimerases",
             "hidrolases ácidas",
             "Quinases",
             "ATPases"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os lisossomos não contêm polimerases; essas enzimas são próprias da síntese de ácidos nucleicos.",
+                "Os lisossomos mantêm um pH ácido para o funcionamento de suas hidrolases digestivas.",
+                "As quinases não são as enzimas características dos lisossomos; participam da fosforilação de outras vias.",
+                "Embora exista uma ATPase que bombeia prótons para acidificar o lisossomo, as enzimas digestivas características são as hidrolases ácidas."
+            ],
+            "fantasma": [
+                "Essas são de outro processo.",
+                "Essa aí! Hidrolases ácidas, o arsenal digestivo.",
+                "Não são as típicas do lisossomo.",
+                "Tem uma que acidifica, mas as digestivas são as hidrolases."
+            ],
+            "gato": [
+                "Fijate: não são essas.",
+                "Ronronado de aprovação! Hidrolases ácidas, a digestão.",
+                "Dado curioso: não é o típico.",
+                "Miau, essa é só para acidificar."
+            ]
+        }
     },
-    "75": {
+    {
         "pergunta": "A apoptose é um processo de:",
-        "feedback": "A apoptose é uma morte celular controlada e geneticamente programada.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Morte celular acidental",
             "morte celular programada",
             "inflamação dos tecidos",
             "Ruptura da membrana plasmática"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A morte celular acidental descreve mais a necrose, não a apoptose, que é um processo controlado.",
+                "A apoptose é uma morte celular controlada e programada geneticamente.",
+                "A inflamação tecidual é mais característica da necrose, não da apoptose (que evita a inflamação).",
+                "A ruptura da membrana plasmática é típica da necrose; na apoptose a célula se fragmenta de forma controlada."
+            ],
+            "fantasma": [
+                "Isso é mais necrose, não apoptose.",
+                "Essa aí! Morte controlada e programada.",
+                "Isso é da necrose.",
+                "Isso também é da necrose."
+            ],
+            "gato": [
+                "Fijate: isso é necrose.",
+                "Ronronado de aprovação! Programada e organizada.",
+                "Dado curioso: isso é necrose.",
+                "Miau, isso também é necrose."
+            ]
+        }
     },
-    "77": {
+    {
         "pergunta": "Os anticódons são encontrados em:",
-        "feedback": "O anticódon é a sequência de três nucleotídeos no tRNA que emparelha com o códon no mRNA.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "tRNA",
             "ARNm",
             "miRNA",
             "snRNA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O anticódon é a sequência de três nucleotídeos no ARNt que pareia com o códon do RNAm.",
+                "O RNAm contém códons, não anticódons; estes últimos estão no ARNt.",
+                "Os miARN regulam a expressão gênica, mas não possuem anticódons.",
+                "Os snRNA participam do splicing, mas não possuem anticódons."
+            ],
+            "fantasma": [
+                "Essa aí! O anticódon mora no ARNt.",
+                "O RNAm tem códons, não anticódons.",
+                "Os miARN fazem outra coisa, não têm anticódon.",
+                "Os snRNA também não têm anticódon."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Anticódon, casa do ARNt.",
+                "Fijate: isso é o códon.",
+                "Dado curioso: não têm anticódon.",
+                "Miau, também não os snRNA."
+            ]
+        }
     },
-    "78": {
+    {
         "pergunta": "Em relação ao complexo de poros nucleares:",
-        "feedback": "O complexo de poros nucleares permite o transporte seletivo de proteínas (importinas\/exportinas) e outras macromoléculas.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "permite a passagem de íons através de co-transportadores",
             "permite a passagem de proteínas através de proteínas de transporte",
             "Possui um anel nuclear que entra em contato com o citoplasma",
             "É completamente impermeável a qualquer substância"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O complexo de poro nuclear não transporta íons por co-transportadores; sua função principal é a passagem seletiva de macromoléculas.",
+                "O complexo de poro nuclear permite o transporte seletivo de proteínas (importinas/exportinas) e outras macromoléculas.",
+                "Embora estruturalmente tenha anéis, essa descrição não é a característica funcional principal que define o complexo de poro.",
+                "Não é impermeável; permite a passagem seletiva de íons pequenos por difusão e o transporte ativo de macromoléculas grandes."
+            ],
+            "fantasma": [
+                "Não é por co-transportadores de íons.",
+                "Essa aí! Transporte seletivo com importinas e exportinas.",
+                "Isso é mais estrutural, não a função-chave.",
+                "Não é impermeável, deixa passar bastante coisa."
+            ],
+            "gato": [
+                "Fijate: não é assim.",
+                "Ronronado de aprovação! Importinas e exportinas no comando.",
+                "Dado curioso: não é a função-chave.",
+                "Miau, não é impermeável."
+            ]
+        }
     },
-    "79": {
+    {
         "pergunta": "Em relação aos processos tumorais:",
-        "feedback": "Os proto-oncogenes regulam o crescimento celular; Sua mutação para oncogenes promove proliferação descontrolada.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Mutações (alterações na sequência de DNA) de um proto-oncogene induzem a proliferação celular",
             "Todas as transformações de células tumorais começam com uma mudança em um proto-oncogene",
             "Mutações (alterações na sequência de DNA) de um gene supressor de tumor impedem o reparo do DNA nuclear",
             "Genes supressores de tumor são aqueles que causam o início da transformação tumoral devido a um aumento anormal em sua expressão."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os proto-oncogenes regulam o crescimento celular; sua mutação em oncogenes promove a proliferação descontrolada.",
+                "Nem todas as transformações tumorais começam com mudanças em proto-oncogenes; também podem se originar de alterações em genes supressores de tumor.",
+                "Nem todos os genes supressores de tumor estão relacionados ao reparo do ADN; alguns regulam o ciclo celular ou a apoptose por outras vias.",
+                "É ao contrário: é a perda ou diminuição da expressão/função dos genes supressores (não seu aumento) que favorece a transformação tumoral."
+            ],
+            "fantasma": [
+                "Essa aí! Proto-oncogene mutado, mais proliferação.",
+                "Nem sempre começa aí, também por supressores.",
+                "Não é uma regra geral para todos os supressores.",
+                "É ao contrário, perder função de supressores é o que ajuda o tumor."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O clássico caminho oncogênico.",
+                "Fijate: tem outros caminhos também.",
+                "Dado curioso: não é regra geral.",
+                "Miau, é ao contrário."
+            ]
+        }
     },
-    "80": {
+    {
         "pergunta": "Após serem ativados, os receptores intracelulares:",
-        "feedback": "Os receptores intracelulares (como os dos hormônios esteróides) atuam como fatores de transcrição ligando-se ao DNA.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Eles atuam como transportadores de membrana",
             "Eles têm atividade de proteína quinase",
             "Eles são ativados pelo cAMP",
             "Eles agem ligando-se ao DNA nuclear"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os receptores intracelulares não atuam como transportadores de membrana; uma vez ativados, atuam sobre a expressão gênica.",
+                "Não têm atividade quinase de proteínas; essa é uma característica de outro tipo de receptor.",
+                "Não são ativados por AMPc; esse mecanismo cabe aos receptores de membrana acoplados à proteína G.",
+                "Os receptores intracelulares (como os de hormônios esteroides) atuam como fatores de transcrição ao se ligarem ao ADN."
+            ],
+            "fantasma": [
+                "Não são transportadores de membrana.",
+                "Não têm essa atividade quinase.",
+                "O AMPc é de outro tipo de receptor.",
+                "Essa aí! Vão direto ao ADN regular genes."
+            ],
+            "gato": [
+                "Fijate: não são transportadores.",
+                "Dado curioso: não têm essa atividade.",
+                "Miau, isso é de outro receptor.",
+                "Ronronado de aprovação! Direto ao ADN."
+            ]
+        }
     },
-    "81": {
+    {
         "pergunta": "Transporte passivo:",
-        "feedback": "O transporte passivo (difusão facilitada) pode utilizar proteínas integrais como canais ou transportadores sem gasto de energia.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "ocorre contra o gradiente de concentração do soluto",
             "sempre envolve gasto de energia",
             "pode envolver proteínas integrais de membrana",
             "ocorre através de bombas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Ir contra o gradiente de concentração é característico do transporte ativo, não do passivo.",
+                "O transporte passivo, por definição, não implica gasto de energia; isso é próprio do transporte ativo.",
+                "O transporte passivo (difusão facilitada) pode usar proteínas integrais como canais ou transportadores sem gasto de energia.",
+                "As bombas são proteínas do transporte ativo, que consome energia; não fazem parte do transporte passivo."
+            ],
+            "fantasma": [
+                "Isso é do transporte ativo.",
+                "O passivo não gasta energia, por definição.",
+                "Essa aí! Canais e transportadores, sem gastar energia.",
+                "As bombas são do ativo."
+            ],
+            "gato": [
+                "Fijate: isso é ativo.",
+                "Dado curioso: o passivo não gasta nada.",
+                "Ronronado de aprovação! Proteínas sem gastar energia.",
+                "Miau, isso é de bombas ativas."
+            ]
+        }
     },
-    "82": {
+    {
         "pergunta": "Em relação aos fosfolipídios de membrana:",
-        "feedback": "Os fosfolipídios são anfipáticos, com uma cabeça polar contendo um grupo fosfato e caudas de ácidos graxos apolares.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Eles são feitos de colesterol",
             "sua cauda apolar está associada aos ribossomos",
             "Sua cabeça polar possui um grupo fosfato",
             "eles não fazem movimentos laterais"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os fosfolipídios não são formados por colesterol; são moléculas distintas, embora ambas estejam na membrana.",
+                "A cauda não polar dos fosfolipídios não se associa a ribossomos; essa associação não faz sentido biológico nesse contexto.",
+                "Os fosfolipídios são anfipáticos, com uma cabeça polar que contém um grupo fosfato e caudas não polares de ácidos graxos.",
+                "Os fosfolipídios sim realizam movimentos laterais dentro da membrana, o que lhe confere sua característica fluidez."
+            ],
+            "fantasma": [
+                "Não são de colesterol.",
+                "Essa associação não existe.",
+                "Essa aí! Cabeça com fosfato, caudas de ácidos graxos.",
+                "Sim se movem, a membrana é fluida."
+            ],
+            "gato": [
+                "Fijate: não são de colesterol.",
+                "Dado curioso: isso não faz sentido.",
+                "Ronronado de aprovação! Fosfato na cabeça.",
+                "Miau, sim se movem, e bastante."
+            ]
+        }
     },
-    "83": {
+    {
         "pergunta": "Qual dos seguintes componentes está associado às cinesinas?",
-        "feedback": "As cinesinas são proteínas motoras que se movem nos microtúbulos em direção à extremidade (+).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "queratina",
             "microfilamento",
             "microtúbulo",
             "folha nuclear"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A queratina é um filamento intermediário; as cinesinas não se deslocam sobre essa estrutura.",
+                "Os microfilamentos de actina são a via da miosina, não das cinesinas.",
+                "As cinesinas são proteínas motoras que se deslocam sobre os microtúbulos rumo à extremidade (+).",
+                "A lâmina nuclear é formada por filamentos intermediários, não relacionados ao deslocamento de cinesinas."
+            ],
+            "fantasma": [
+                "Esse é filamento intermediário, não a via da cinesina.",
+                "Essa é a via da miosina.",
+                "Essa aí! Os microtúbulos, a rodovia da cinesina.",
+                "Essa é de filamentos intermediários."
+            ],
+            "gato": [
+                "Fijate: isso é outro filamento.",
+                "Dado curioso: essa é da miosina.",
+                "Ronronado de aprovação! Microtúbulos, a via certa.",
+                "Miau, isso é outra estrutura."
+            ]
+        }
     },
-    "84": {
+    {
         "pergunta": "Em relação às proteínas lisossomais:",
-        "feedback": "As proteínas lisossomais são sintetizadas no RER (guiado por PRS) e marcadas com Manose-6-P no Golgi para irem para o lisossoma.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Eles contêm uma sequência de aminoácidos que é reconhecida pelos POPs",
             "Eles adquirem sua estrutura terciária quando atingem o lisossomo",
             "Nenhum está correto",
             "A partícula de reconhecimento de sinal (PRS) os direciona para o lisossomo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As proteínas lisossomais não são reconhecidas pelas COP; sua marca de direcionamento é a manose-6-fosfato, reconhecida por receptores específicos no Golgi.",
+                "As proteínas adquirem sua estrutura terciária no RER, não depois de chegarem ao lisossomo.",
+                "As proteínas lisossomais se sintetizam no RER (guiadas pela PRS) e são marcadas com manose-6-fosfato no Golgi para irem ao lisossomo; nenhuma das outras opções descreve corretamente esse processo.",
+                "A PRS direciona as proteínas nascentes para o RER, não diretamente para o lisossomo; esse direcionamento final depende da manose-6-fosfato."
+            ],
+            "fantasma": [
+                "Não são as COP que as reconhecem.",
+                "Se enovelam antes, no RER.",
+                "Essa aí! Nenhuma das outras descreve bem o processo.",
+                "A PRS leva ao RER, não direto ao lisossomo."
+            ],
+            "gato": [
+                "Fijate: não são as COP.",
+                "Dado curioso: se enovelam antes.",
+                "Ronronado de aprovação! Nenhuma encaixa, correto.",
+                "Miau, a PRS vai ao RER primeiro."
+            ]
+        }
     },
-    "85": {
+    {
         "pergunta": "RNA Polimerase II:",
-        "feedback": "O RNA Pol II requer fatores de transcrição basais (TFII) para reconhecer o promotor e iniciar a transcrição.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "transcreve RNAs de transferência",
             "liga desoxirribonucleotídeos",
             "requer fatores de transcrição para se ligar ao promotor",
             "precisa de uma cartilha"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A transcrição dos ARN transportadores cabe à ARN Polimerase III, não à II.",
+                "As ARN polimerases se ligam a ribonucleotídeos, não a desoxirribonucleotídeos.",
+                "A ARN Pol II requer fatores de transcrição basais (TFII) para reconhecer o promotor e iniciar a transcrição.",
+                "Diferente das ADN polimerases, as ARN polimerases não precisam de um iniciador para começar a síntese."
+            ],
+            "fantasma": [
+                "Isso é da ARN Pol III.",
+                "Ela se liga a ribonucleotídeos, não a desoxi.",
+                "Essa aí! Precisa dos fatores TFII para começar.",
+                "Não precisa de iniciador, diferente do ADN."
+            ],
+            "gato": [
+                "Fijate: isso é outra polimerase.",
+                "Dado curioso: são ribonucleotídeos.",
+                "Ronronado de aprovação! TFII, o passe de entrada.",
+                "Miau, não precisa de iniciador."
+            ]
+        }
     },
-    "86": {
+    {
         "pergunta": "Observe o diagrama e responda: Que estrutura do citoesqueleto você esperaria encontrar na seção transversal indicada pela linha pontilhada?",
-        "feedback": "A seção transversal de um flagelo (axonema) mostra um arranjo de 9 pares de microtúbulos periféricos e 2 microtúbulos centrais (9+2).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "PARA",
             "b",
             "c",
             "d"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta opção do esquema não corresponde à estrutura 9+2 característica do axonema; revise a figura no seu material de aula.",
+                "Esta opção do esquema não corresponde à estrutura 9+2 característica do axonema; revise a figura no seu material de aula.",
+                "Esta opção do esquema não corresponde à estrutura 9+2 característica do axonema; revise a figura no seu material de aula.",
+                "O corte transversal de um flagelo (axonema) mostra uma disposição de 9 pares de microtúbulos periféricos e 2 centrais (9+2), a estrutura indicada pela linha pontilhada."
+            ],
+            "fantasma": [
+                "Essa não é a 9+2, revê a imagem do material.",
+                "Essa também não, não é a do axonema.",
+                "Essa não bate com o 9+2.",
+                "Essa aí! O clássico 9+2 do axonema."
+            ],
+            "gato": [
+                "Fijate na figura do material, essa não é.",
+                "Dado curioso: não é essa opção.",
+                "Miau, também não é essa.",
+                "Ronronado de aprovação! 9+2, a assinatura do axonema."
+            ]
+        }
     },
-    "87": {
+    {
         "pergunta": "Proteínas mitocondriais codificadas pelo DNA nuclear:",
-        "feedback": "A maioria das proteínas mitocondriais é sintetizada no citosol e importada pós-tradução.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "são sintetizados em ribossomos livres no citosol",
             "são sintetizados no RER",
             "são sintetizados em peroxissomos",
             "tem manose 6-fosfato"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A maioria das proteínas mitocondriais se sintetiza no citosol e é importada pós-traducionalmente.",
+                "Não se sintetizam no RER; essa via é para proteínas de secreção ou de membrana/lisossomais.",
+                "Não se sintetizam em peroxissomos; os peroxissomos não são sítio de síntese proteica.",
+                "A manose-6-fosfato é o sinal das proteínas lisossomais, não das mitocondriais."
+            ],
+            "fantasma": [
+                "Essa aí! Citosol, e depois entram na mitocôndria.",
+                "Não é o RER.",
+                "Os peroxissomos não fabricam proteínas.",
+                "Essa marca é do lisossomo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Citosol, e depois migram.",
+                "Fijate: não é o RER.",
+                "Dado curioso: não fabricam ali.",
+                "Miau, essa etiqueta é de outra organela."
+            ]
+        }
     },
-    "88": {
+    {
         "pergunta": "A diferença entre um oócito I e um oócito II do mesmo indivíduo é:",
-        "feedback": "O oócito I é diplóide (antes da Meiose I) e o oócito II é haplóide (após a Meiose I).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "A informação genética que existe em cada um deles",
             "O número de centrômeros por cromossomo",
             "O número de cromossomos vistos",
             "O tamanho e a forma dos seus cromossomos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A informação genética é essencialmente a mesma nas duas células; o que muda é a dotação cromossômica.",
+                "O número de centrômeros por cromossomo não é a diferença relevante entre essas duas células.",
+                "O ovócito I é diploide (antes da meiose I) e o ovócito II é haploide (depois da meiose I); o número de cromossomos observado muda.",
+                "O tamanho e a forma dos cromossomos não é a diferença-chave entre as duas células."
+            ],
+            "fantasma": [
+                "A informação genética é a mesma.",
+                "Não é pelos centrômeros.",
+                "Essa aí! Diploide antes, haploide depois.",
+                "Não é por tamanho ou forma."
+            ],
+            "gato": [
+                "Fijate: mesma informação.",
+                "Dado curioso: não é isso.",
+                "Ronronado de aprovação! O número de cromossomos muda.",
+                "Miau, não é por aí."
+            ]
+        }
     },
-    "89": {
+    {
         "pergunta": "O controle da expressão gênica ocorre principalmente ao nível de:",
-        "feedback": "Embora existam vários níveis, o controle transcricional é o principal e mais eficiente mecanismo de regulação gênica.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "regulação da degradação do mRNA",
             "regulação da atividade proteica",
             "regulação da transcrição",
             "regulamento de tradução"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A degradação do RNAm é um nível de regulação, mas não o principal nem o mais eficiente.",
+                "A regulação da atividade proteica atua sobre o produto final, um nível posterior e menos eficiente do que atuar sobre a transcrição.",
+                "Embora existam vários níveis, o controle transcricional é o mecanismo principal e mais eficiente de regulação gênica.",
+                "A regulação da tradução é um nível de controle, mas não o principal mecanismo regulador da expressão gênica."
+            ],
+            "fantasma": [
+                "Esse é um nível, mas não o principal.",
+                "Esse é tarde, já com a proteína pronta.",
+                "Essa aí! Regular a transcrição, o mais eficiente.",
+                "Esse nível existe, mas não é o principal."
+            ],
+            "gato": [
+                "Fijate: não é o principal.",
+                "Dado curioso: isso é tarde.",
+                "Ronronado de aprovação! Transcrição, o controle mestre.",
+                "Miau, não é o principal."
+            ]
+        }
     },
-    "90": {
+    {
         "pergunta": "As proteínas da matriz extracelular são sintetizadas em:",
-        "feedback": "Proteínas de exportação, como as da matriz extracelular, são sintetizadas no Retículo Endoplasmático Rugoso.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "fora da célula",
             "RER",
             "Essencial",
             "Citosol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As proteínas não se sintetizam fora da célula; se sintetizam dentro e depois são secretadas para o espaço extracelular.",
+                "As proteínas de exportação, como as da matriz extracelular, se sintetizam no Retículo Endoplasmático Rugoso.",
+                "O núcleo sintetiza ARN, não proteínas.",
+                "As proteínas destinadas à secreção se sintetizam no RER, não em ribossomos livres do citosol."
+            ],
+            "fantasma": [
+                "Não se fazem fora, se secretam depois.",
+                "Essa aí! O RER, fábrica de proteínas de exportação.",
+                "O núcleo não fabrica proteínas.",
+                "Essas vão para o RER, não ficam livres no citosol."
+            ],
+            "gato": [
+                "Fijate: se secretam depois, não nascem fora.",
+                "Ronronado de aprovação! RER, a fábrica de exportação.",
+                "Dado curioso: o núcleo não faz proteínas.",
+                "Miau, essas vão para o RER."
+            ]
+        }
     },
-    "91": {
+    {
         "pergunta": "Os microfilamentos de actina participam em qual destes processos:",
-        "feedback": "A actina e a miosina formam o anel contrátil responsável pela citocinese (divisão do citoplasma).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Formação da lâmina nuclear",
             "Formação de uniões oclusivas",
             "Citocinese",
             "Cariocinese"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A lâmina nuclear é formada por filamentos intermediários (laminas), não por actina.",
+                "As junções oclusivas dependem de proteínas transmembrana específicas, não principalmente dos microfilamentos de actina.",
+                "A actina e a miosina formam o anel contrátil responsável pela citocinese (divisão do citoplasma).",
+                "A cariocinese (divisão nuclear) depende do fuso mitótico de microtúbulos, não dos microfilamentos de actina."
+            ],
+            "fantasma": [
+                "Essa é de filamentos intermediários.",
+                "Essas dependem de outras proteínas, não tanto de actina.",
+                "Essa aí! O anel contrátil de actina e miosina.",
+                "Essa é do fuso, microtúbulos."
+            ],
+            "gato": [
+                "Fijate: isso é outro filamento.",
+                "Dado curioso: não é tão de actina.",
+                "Ronronado de aprovação! O anel que corta a célula.",
+                "Miau, isso é microtúbulos."
+            ]
+        }
     },
-    "92": {
+    {
         "pergunta": "MicroRNAs (miRNAs):",
-        "feedback": "miRNAs são pequenos RNAs não codificantes que regulam a expressão gênica através da degradação ou repressão do mRNA.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "São moléculas de 200 pb que ativam a RNA polimerase",
             "são pequenos RNAs que regulam a expressão gênica",
             "são RNAs que ajudam o complexo spliceossomo",
             "São moléculas médias de RNA de 200 pb."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os miARN são bem menores que 200 pb (medem cerca de 22 nucleotídeos) e não ativam a ARN polimerase.",
+                "Os miRNAs são pequenos ARNs não codificantes que regulam a expressão gênica por meio da degradação ou repressão do RNAm.",
+                "Ajudar o spliceossomo é mais uma função dos snRNA, não dos miARN.",
+                "Os miARN são moléculas pequenas (não médias), de aproximadamente 22 nucleotídeos, não 200 pb."
+            ],
+            "fantasma": [
+                "São bem menores que isso, e não ativam a ARN pol.",
+                "Essa aí! ARN pequenininhos que regulam genes.",
+                "Isso é mais dos snRNA.",
+                "São pequenos, não médios."
+            ],
+            "gato": [
+                "Fijate: são bem pequenos, uns 22 nt.",
+                "Ronronado de aprovação! Reguladores pequenos da expressão gênica.",
+                "Dado curioso: isso é de outros ARN.",
+                "Miau, são pequenos, não médios."
+            ]
+        }
     },
-    "93": {
+    {
         "pergunta": "Em relação ao controle do ciclo celular:",
-        "feedback": "Os Cdks requerem ligação às ciclinas e serem fosforilados\/desfosforilados para serem ativados.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Cdks requerem modificações pós-tradução para serem ativados",
             "As ciclinas são proteínas muito estáveis ​​ao longo do ciclo celular.",
             "A atividade de Cdks é constante ao longo do ciclo celular",
             "Cdks são inativados por ubiquitinação"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As Cdks precisam se ligar a ciclinas e ser fosforiladas/desfosforiladas (modificações pós-traducionais) para se ativarem.",
+                "As ciclinas não são estáveis; seu nível oscila ciclicamente, sendo degradadas em momentos específicos do ciclo.",
+                "A atividade das Cdks não é constante; varia ciclicamente conforme a disponibilidade de ciclinas e seu estado de fosforilação.",
+                "É principalmente a ciclina (não a Cdk em si) que é marcada com ubiquitina para degradação, o que inativa indiretamente o complexo."
+            ],
+            "fantasma": [
+                "Essa aí! Precisam ser fosforiladas/desfosforiladas.",
+                "As ciclinas sobem e descem, não são estáveis.",
+                "A atividade varia, não é constante.",
+                "É a ciclina que se degrada, não direto a Cdk."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Modificações necessárias para ativar.",
+                "Fijate: oscilam, não são estáveis.",
+                "Dado curioso: varia o tempo todo.",
+                "Miau, é a ciclina a marcada."
+            ]
+        }
     },
-    "94": {
+    {
         "pergunta": "Observe o diagrama e responda: Qual das opções representa uma das características da replicação do DNA?",
-        "feedback": "A replicação do DNA é semiconservativa, onde cada fita original serve de modelo para uma nova.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "PARA",
             "b",
             "c",
             "d"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esta opção do esquema não corresponde a uma característica da replicação semiconservativa; revise a figura no seu material de aula.",
+                "A replicação do ADN é semiconservativa, em que cada fita original serve de molde para uma nova.",
+                "Esta opção do esquema não corresponde a uma característica da replicação semiconservativa; revise a figura no seu material de aula.",
+                "Esta opção do esquema não corresponde a uma característica da replicação semiconservativa; revise a figura no seu material de aula."
+            ],
+            "fantasma": [
+                "Essa não mostra a semiconservativa, eita.",
+                "Essa aí! Uma fita velha, uma nova, em cada molécula.",
+                "Também não é essa opção.",
+                "Nem essa tampouco."
+            ],
+            "gato": [
+                "Fijate na figura do material, essa não é.",
+                "Ronronado de aprovação! Semiconservativa, a clássica.",
+                "Dado curioso: não é essa.",
+                "Miau, também não."
+            ]
+        }
     },
-    "95": {
+    {
         "pergunta": "Observe o diagrama e responda: Que fase da divisão celular está diagramada?",
-        "feedback": "A metáfase II mostra cromossomos individuais (não bivalentes) alinhados na placa equatorial em uma célula haplóide.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Metáfase da mitose",
             "Metáfase da meiose I",
             "Metáfase da meiose II",
             "Nenhum está correto"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na metáfase da mitose os cromossomos seriam diploides com pares homólogos, um padrão diferente do da figura.",
+                "Na metáfase da meiose I se observam bivalentes (cromossomos homólogos pareados), não cromossomos individuais.",
+                "A metáfase II mostra cromossomos individuais (não bivalentes) alinhados na placa equatorial em uma célula haploide.",
+                "Sim existe uma opção correta entre as anteriores: a C."
+            ],
+            "fantasma": [
+                "Ali seriam diploides, não bate.",
+                "Na meiose I se veem os bivalentes, pareados.",
+                "Essa aí! Cromossomos soltos, célula haploide, meiose II.",
+                "Tem uma correta, é a C."
+            ],
+            "gato": [
+                "Fijate: isso seria diploide.",
+                "Dado curioso: ali tem bivalentes.",
+                "Ronronado de aprovação! Haploide e cromossomos soltos, meiose II.",
+                "Miau, sim tem uma correta."
+            ]
+        }
     },
-    "96": {
+    {
         "pergunta": "Qual das alternativas a seguir é função da telomerase?",
-        "feedback": "A telomerase é uma ribonucleoproteína que estende as extremidades dos cromossomos (telômeros).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Degradação dos telômeros",
             "Replicação de Telômeros",
             "Encurtamento dos telômeros",
             "Transcrição dos telômeros"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A telomerase não degrada os telômeros; ela os alonga.",
+                "A telomerase é uma ribonucleoproteína que estende as extremidades dos cromossomos (telômeros).",
+                "O encurtamento dos telômeros ocorre na ausência de atividade suficiente da telomerase, não como função dessa enzima.",
+                "A transcrição dos telômeros não é a função principal da telomerase; seu papel é estendê-los usando seu próprio molde de ARN."
+            ],
+            "fantasma": [
+                "Não os degrada, os alonga.",
+                "Essa aí! Estende os telômeros com seu próprio molde de ARN.",
+                "Isso acontece quando FALTA telomerase.",
+                "Não é transcrição, é extensão."
+            ],
+            "gato": [
+                "Fijate: é ao contrário.",
+                "Ronronado de aprovação! A que alonga os telômeros.",
+                "Dado curioso: isso acontece sem ela.",
+                "Miau, não é isso."
+            ]
+        }
     },
-    "97": {
+    {
         "pergunta": "No processo de tradução, a ligação peptídica é catalisada por:",
-        "feedback": "A atividade da peptidil transferase reside no rRNA da subunidade grande (ribozima).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "um rRNA da subunidade menor do ribossomo",
             "um rRNA da subunidade grande do ribossomo",
             "uma proteína da subunidade menor do ribossomo",
             "uma proteína da subunidade principal do ribossomo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A atividade peptidil-transferase não reside na subunidade menor, e sim na maior.",
+                "A atividade peptidil-transferase reside no ARNr da subunidade maior (ribozima).",
+                "Não é uma proteína da subunidade menor; além disso, essa subunidade não é a responsável por catalisar a ligação peptídica.",
+                "Não é uma proteína que catalisa a ligação peptídica, e sim o ARNr da subunidade maior."
+            ],
+            "fantasma": [
+                "Não é a menor, é a maior.",
+                "Essa aí! O ARNr da subunidade maior, uma ribozima.",
+                "Não é proteína, e também não é a menor.",
+                "Não é proteína, é o ARN que catalisa."
+            ],
+            "gato": [
+                "Fijate: é a maior.",
+                "Ronronado de aprovação! ARNr ribozima, a subunidade maior.",
+                "Dado curioso: não é proteína.",
+                "Miau, é ARN, não proteína."
+            ]
+        }
     },
-    "98": {
+    {
         "pergunta": "Em relação à proteína G:",
-        "feedback": "As proteínas G são GTPases que são ativadas pela ligação ao GTP e inativadas pela hidrólise em GDP.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "É um receptor transmembrana de 7 etapas.",
             "pode hidrolisar o diacilglicerol",
             "é ativado por cAMP",
             "é capaz de hidrolisar GTP"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O receptor de 7 passagens transmembrana é o GPCR em si, uma molécula distinta da proteína G que ele ativa.",
+                "A proteína G não hidrolisa diacilglicerol; essa molécula é gerada e degradada por outras enzimas da via de sinalização.",
+                "É ao contrário: a proteína G ativada estimula a adenilato ciclase, que produz AMPc, em vez de ser ativada por ele.",
+                "As proteínas G são GTPases que se ativam ao se ligarem ao GTP e se inativam ao hidrolisá-lo em GDP."
+            ],
+            "fantasma": [
+                "Isso é o receptor GPCR, não a proteína G.",
+                "Isso não é feito pela proteína G.",
+                "É ao contrário, ela ativa a produção de AMPc.",
+                "Essa aí! GTPase, hidrolisa seu próprio GTP."
+            ],
+            "gato": [
+                "Fijate: isso é o receptor, não a proteína G.",
+                "Dado curioso: não é sua função.",
+                "Miau, é ao contrário.",
+                "Ronronado de aprovação! GTPase em ação."
+            ]
+        }
     },
-    "99": {
+    {
         "pergunta": "As diferenças entre uma célula do fígado e o neurônio de uma pessoa se devem a:",
-        "feedback": "Todas as células somáticas possuem o mesmo DNA; a diferenciação é devida à expressão gênica diferencial.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "expressar diferentes proteínas",
             "Eles têm DNA diferente",
             "têm diferentes fatores de transcrição basais",
             "Eles têm nucléolos diferentes"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Todas as células somáticas têm o mesmo ADN; a diferenciação se deve à expressão gênica diferencial.",
+                "Não têm ADN diferente; ambas as células compartilham o mesmo genoma.",
+                "Os fatores de transcrição basais são comuns a todas as células; o que varia são os fatores de transcrição específicos.",
+                "A diferença funcional entre essas células não está no nucléolo, e sim em quais genes são expressos."
+            ],
+            "fantasma": [
+                "Essa aí! Mesmo ADN, expressão de genes diferente.",
+                "O ADN é o mesmo nas duas.",
+                "Os basais são iguais, mudam os específicos.",
+                "Não é pelo nucléolo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Expressão diferencial, a chave.",
+                "Fijate: mesmo ADN.",
+                "Dado curioso: os basais são iguais.",
+                "Miau, não é o nucléolo."
+            ]
+        }
     },
-    "100": {
+    {
         "pergunta": "Observe o diagrama e responda quais dos seguintes componentes NÃO estão envolvidos nos processos descritos?",
-        "feedback": "O transporte pós-Golgi para a membrana utiliza clatrina e SNAREs, enquanto os COPs atuam entre RER e Golgi.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Proteínas COP",
             "Proteínas SNARE",
             "Microtúbulos",
             "Clatrina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O transporte pós-Golgi rumo à membrana usa clatrina e SNAREs, enquanto as COP atuam entre o RER e o Golgi, não nessa etapa.",
+                "As proteínas SNARE sim participam da fusão das vesículas nesse processo.",
+                "Os microtúbulos sim participam como vias de transporte das vesículas nesse processo.",
+                "A clatrina sim participa da formação das vesículas nesse processo."
+            ],
+            "fantasma": [
+                "Essa aí! As COP trabalham entre RER e Golgi, não aqui.",
+                "As SNARE sim estão nisso.",
+                "Os microtúbulos sim participam, são a via.",
+                "A clatrina sim está nisso."
+            ],
+            "gato": [
+                "Ronronado de aprovação! As COP não aparecem aqui.",
+                "Fijate: essas sim participam.",
+                "Dado curioso: esses sim estão.",
+                "Miau, essa sim participa."
+            ]
+        }
     },
-    "101": {
+    {
         "pergunta": "Na síntese de proteínas lisossomais, os primeiros aminoácidos a serem sintetizados:",
-        "feedback": "A sequência de sinal inicial é reconhecida pelo PRS para direcionar o ribossomo para o RER.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Eles são reconhecidos pela manose 6-fosfato",
             "Eles são clivados por aquaporinas",
             "Eles são clivados pela sinal peptidase",
             "Eles são reconhecidos pela partícula de reconhecimento de sinal (PRS)."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O reconhecimento por manose-6-fosfato ocorre depois, no complexo de Golgi, não com os primeiros aminoácidos sintetizados.",
+                "As aquaporinas são canais de água; não têm relação com a clivagem de sequências-sinal.",
+                "A peptidase sinal sim cliva a sequência-sinal, mas isso ocorre depois que a PRS já direcionou o ribossomo ao RER; não é o primeiro evento.",
+                "A sequência-sinal inicial é reconhecida pela PRS para direcionar o ribossomo ao RER."
+            ],
+            "fantasma": [
+                "Isso acontece depois, no Golgi.",
+                "As aquaporinas são de água, não têm nada a ver.",
+                "Isso acontece, mas depois da PRS.",
+                "Essa aí! A PRS reconhece a sinalização primeiro."
+            ],
+            "gato": [
+                "Fijate: isso é depois.",
+                "Dado curioso: aquaporinas são de água.",
+                "Miau, isso é um passo posterior.",
+                "Ronronado de aprovação! A PRS, primeira a agir."
+            ]
+        }
     },
-    "102": {
+    {
         "pergunta": "O proteassoma:",
-        "feedback": "O proteassoma degrada proteínas citosólicas e nucleares marcadas com cadeias de ubiquitina.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "participa da degradação de substâncias endocitadas",
             "participa da reciclagem de receptores de membrana",
             "Está localizado no centro organizador dos microtúbulos",
             "participa da degradação de proteínas ubiquitinadas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A degradação de substâncias endocitadas é função do lisossomo, não do proteassomo.",
+                "A reciclagem de receptores de membrana ocorre nos endossomos, não no proteassomo.",
+                "O proteassomo não tem relação com o centro organizador de microtúbulos; são estruturas diferentes.",
+                "O proteassomo degrada proteínas citosólicas e nucleares marcadas com cadeias de ubiquitina."
+            ],
+            "fantasma": [
+                "Isso é do lisossomo.",
+                "Isso é dos endossomos.",
+                "Não tem nada a ver com isso.",
+                "Essa aí! Degrada o que vem marcado com ubiquitina."
+            ],
+            "gato": [
+                "Fijate: isso é lisossomo.",
+                "Dado curioso: isso é endossomo.",
+                "Miau, não tem relação.",
+                "Ronronado de aprovação! Ubiquitina, a etiqueta de degradação."
+            ]
+        }
     },
-    "103": {
+    {
         "pergunta": "Os peroxissomos podem fazer:",
-        "feedback": "Os peroxissomos realizam a beta-oxidação de ácidos graxos de cadeia muito longa.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "glicogenólise",
             "oxidação de proteínas",
             "beta-oxidação de ácidos graxos",
             "glicólise"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A glicogenólise ocorre no citosol, não nos peroxissomos.",
+                "A oxidação de proteínas não é a função característica dos peroxissomos.",
+                "Os peroxissomos realizam a beta-oxidação de ácidos graxos de cadeia muito longa.",
+                "A glicólise ocorre no citosol, não nos peroxissomos."
+            ],
+            "fantasma": [
+                "Isso é do citosol.",
+                "Não é o típico do peroxissomo.",
+                "Essa aí! Ácidos graxos longos, a especialidade do peroxissomo.",
+                "Isso também é do citosol."
+            ],
+            "gato": [
+                "Fijate: isso é citosol.",
+                "Dado curioso: não é o dele.",
+                "Ronronado de aprovação! Beta-oxidação, tarefa do peroxissomo.",
+                "Miau, também citosol."
+            ]
+        }
     },
-    "104": {
+    {
         "pergunta": "Em relação à membrana plasmática:",
-        "feedback": "O colesterol intercala-se entre os fosfolipídios, estabilizando a membrana e diminuindo sua fluidez em temperaturas normais.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "conecta-se à matriz extracelular pelo colesterol",
             "colesterol facilita a difusão de íons",
             "a presença de colesterol diminui sua fluidez",
             "A diminuição da temperatura aumenta sua fluidez"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A conexão com a matriz extracelular se dá por proteínas de adesão (como integrinas), não pelo colesterol.",
+                "O colesterol não facilita a difusão de íons; os íons precisam de canais ou transportadores específicos.",
+                "O colesterol se intercala entre os fosfolipídios, estabilizando a membrana e diminuindo sua fluidez em temperaturas normais.",
+                "É ao contrário: a queda da temperatura diminui a fluidez da membrana, não a aumenta."
+            ],
+            "fantasma": [
+                "Essa conexão é de outras proteínas.",
+                "O colesterol não ajuda a passar íons.",
+                "Essa aí! O colesterol freia a fluidez.",
+                "É ao contrário, o frio deixa a membrana rígida."
+            ],
+            "gato": [
+                "Fijate: são outras proteínas.",
+                "Dado curioso: não facilita isso.",
+                "Ronronado de aprovação! Colesterol, freio de fluidez.",
+                "Miau, é ao contrário."
+            ]
+        }
     },
-    "105": {
+    {
         "pergunta": "Em relação ao espaço intermembranar das mitocôndrias:",
-        "feedback": "A cadeia respiratória bombeia prótons (H+) para o espaço intermembranar, diminuindo seu pH em relação à matriz.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "tem um pH mais baixo que a matriz mitocondrial",
             "tem um pH mais alto que a matriz mitocondrial",
             "contém enzimas hidrolíticas",
             "armazena elétrons"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cadeia respiratória bombeia prótons (H+) para o espaço intermembranas, baixando seu pH em relação à matriz.",
+                "É ao contrário: o espaço intermembranas tem um pH mais baixo (mais ácido) que a matriz, não mais alto.",
+                "As enzimas hidrolíticas são características do lisossomo, não do espaço intermembranas.",
+                "O espaço intermembranas não armazena elétrons em si; ali se acumulam prótons bombeados pela cadeia respiratória."
+            ],
+            "fantasma": [
+                "Essa aí! Ali se acumulam os prótons, pH baixo.",
+                "É ao contrário, o pH é mais baixo, não mais alto.",
+                "Essas enzimas são do lisossomo.",
+                "Não armazena elétrons, e sim prótons."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Prótons acumulados, pH baixo.",
+                "Fijate: é ao contrário.",
+                "Dado curioso: isso é lisossomo.",
+                "Miau, são prótons, não elétrons."
+            ]
+        }
     },
-    "106": {
+    {
         "pergunta": "Os corpos basais:",
-        "feedback": "Os corpos basais são centros organizadores de microtúbulos na base dos cílios e flagelos.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Eles são centros organizadores de microtúbulos",
             "eles formam microvilosidades",
             "Eles estão organizando centros de filamentos intermediários",
             "formar desmossomos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os corpúsculos basais são centros organizadores de microtúbulos na base de cílios e flagelos.",
+                "As microvilosidades são sustentadas por microfilamentos de actina, não por corpúsculos basais.",
+                "Os corpúsculos basais organizam microtúbulos, não filamentos intermediários.",
+                "Os desmossomos são junções celulares ancoradas a filamentos intermediários, não formados por corpúsculos basais."
+            ],
+            "fantasma": [
+                "Essa aí! A base de cílios e flagelos.",
+                "Essas são de actina.",
+                "Organizam microtúbulos, não filamentos intermediários.",
+                "Esses são outra estrutura, com filamentos intermediários."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Corpúsculos basais, a raiz de cílios e flagelos.",
+                "Fijate: isso é actina.",
+                "Dado curioso: são de microtúbulos.",
+                "Miau, isso é outra coisa."
+            ]
+        }
     },
-    "107": {
+    {
         "pergunta": "Em relação ao DNA mitocondrial:",
-        "feedback": "O DNA mitocondrial codifica seu próprio rRNA, tRNA e algumas proteínas da cadeia respiratória.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "codifica seus próprios rRNAs",
             "códigos para todos os componentes da cadeia respiratória",
             "enviar uma única cópia",
             "tem múltiplas origens de replicação"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ADN mitocondrial codifica seus próprios ARNr, ARNt e algumas proteínas da cadeia respiratória.",
+                "Não codifica todos os componentes da cadeia respiratória; a maioria das proteínas mitocondriais é codificada pelo ADN nuclear.",
+                "O ADN mitocondrial não apresenta uma única cópia; cada mitocôndria contém múltiplas cópias de seu genoma.",
+                "O ADN mitocondrial tem uma origem de replicação (ou poucas), diferente do ADN nuclear, que sim apresenta múltiplas origens."
+            ],
+            "fantasma": [
+                "Essa aí! Seus próprios ARNr, ARNt, e algo da cadeia.",
+                "Nem tudo; a maioria vem do núcleo.",
+                "Tem várias cópias, não uma só.",
+                "Isso é mais do ADN nuclear."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O ADNmt com o que é seu.",
+                "Fijate: a maioria vem de outro lugar.",
+                "Dado curioso: tem várias cópias.",
+                "Miau, isso é do núcleo."
+            ]
+        }
     },
-    "108": {
+    {
         "pergunta": "Qual destes componentes não está rodeado por uma membrana biológica?",
-        "feedback": "O nucléolo é um compartimento nuclear não membranoso onde o rRNA é sintetizado.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "nucléolo",
             "peroxissomos",
             "fagossomas",
             "essencial"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O nucléolo é um compartimento nuclear não membranoso onde se sintetiza o ARNr.",
+                "Os peroxissomos sim são envolvidos por uma membrana biológica simples.",
+                "Os fagossomos sim são envolvidos por uma membrana, formada a partir da membrana plasmática durante a fagocitose.",
+                "O núcleo sim é envolvido por uma membrana (na verdade, dupla: o envelope nuclear)."
+            ],
+            "fantasma": [
+                "Essa aí! O nucléolo não tem membrana própria.",
+                "Os peroxissomos sim têm sua membrana.",
+                "Os fagossomos também têm membrana.",
+                "O núcleo tem até dupla membrana."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Sem membrana, o nucléolo.",
+                "Fijate: esses sim têm.",
+                "Dado curioso: esses também.",
+                "Miau, esse tem até dupla."
+            ]
+        }
     },
-    "109": {
+    {
         "pergunta": "Observe o diagrama e responda. Levando em consideração o gradiente eletroquímico das substâncias A e B mostrado na figura e sabendo que a substância A não é um íon, qual dos seguintes mecanismos a substância A utiliza para atravessar a membrana plasmática?",
-        "feedback": "O diagrama mostra o movimento de A impulsionado pelo gradiente de B (cotransporte).",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Transporte através de uma bomba acionada por ATP",
             "Transporte através de um canal ativado pela substância A",
             "Cotransporte de substâncias A e B",
             "Difusão facilitada por portadora"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O enunciado não descreve um mecanismo que consuma ATP diretamente, e sim um acoplado ao gradiente de outra substância.",
+                "Por não ser um íon, não faria sentido um canal iônico ativado pela própria substância A; além disso, o enunciado remete ao gradiente de B.",
+                "O esquema mostra o movimento de A impulsionado pelo gradiente de B (cotransporte).",
+                "Um transportador simples de difusão facilitada usaria apenas o gradiente próprio de A, não o de B mencionado no enunciado."
+            ],
+            "fantasma": [
+                "Não tem gasto de ATP nesse cenário.",
+                "Não é íon, esse canal não faz sentido aqui.",
+                "Essa aí! B empurra A, cotransporte.",
+                "Isso deixaria de fora o gradiente de B, que importa aqui."
+            ],
+            "gato": [
+                "Fijate: não tem ATP envolvido.",
+                "Dado curioso: não é íon, não se aplica.",
+                "Ronronado de aprovação! A dupla A e B, cotransporte.",
+                "Miau, isso deixa de fora o gradiente de B."
+            ]
+        }
     },
-    "110": {
+    {
         "pergunta": "No nucléolo:",
-        "feedback": "O nucléolo é o local de transcrição do precursor 45S do rRNA.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "a região fibrilar contém os ribossomos",
             "todos os RNAs ribossômicos são sintetizados",
             "45S rRNA é sintetizado",
             "a região granular contém os genes ribossômicos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A região fibrilar é onde se transcreve o ARNr, não onde se montam os ribossomos (isso ocorre na zona granular).",
+                "Não se sintetizam todos os ARN ribossômicos ali; o ARNr 5S se sintetiza fora do nucléolo (pela ARN Pol III) e depois se incorpora.",
+                "O nucléolo é o sítio de transcrição do precursor 45S dos ARNr.",
+                "Os genes ribossômicos (ADNr) se localizam na região fibrilar, não na granular."
+            ],
+            "fantasma": [
+                "Isso é da zona granular.",
+                "O 5S nasce fora, nem tudo se sintetiza ali.",
+                "Essa aí! O precursor 45S, a estrela do nucléolo.",
+                "Os genes estão na fibrilar, não na granular."
+            ],
+            "gato": [
+                "Fijate: isso é a granular.",
+                "Dado curioso: o 5S nasce fora.",
+                "Ronronado de aprovação! 45S, o grande precursor.",
+                "Miau, é ao contrário."
+            ]
+        }
     },
-    "111": {
+    {
         "pergunta": "Em relação à síntese da proteína actina:",
-        "feedback": "A actina é uma proteína citosólica, portanto é completamente traduzida em ribossomos livres no citoplasma.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "o tRNA inicial entra através do sítio A do ribossomo",
             "pode ser feito na luz RER",
             "Para iniciá-lo é fundamental que o mRNA se associe aos microfilamentos",
             "começa e termina no citoplasma"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ARNt iniciador entra pelo sítio P do ribossomo, não pelo sítio A (que recebe os ARNt carregados durante a elongação).",
+                "A actina é uma proteína citosólica sem peptídeo-sinal; não é traduzida na luz do RER.",
+                "Não é um requisito que o RNAm se associe a microfilamentos para iniciar sua tradução.",
+                "A actina é uma proteína citosólica, por isso é totalmente traduzida em ribossomos livres no citoplasma."
+            ],
+            "fantasma": [
+                "O iniciador entra pelo sítio P, não o A.",
+                "A actina não entra no RER, é citosólica.",
+                "Isso não é um requisito real.",
+                "Essa aí! Tudo acontece no citoplasma, do início ao fim."
+            ],
+            "gato": [
+                "Fijate: é o sítio P.",
+                "Dado curioso: não vai ao RER.",
+                "Miau, isso não é necessário.",
+                "Ronronado de aprovação! Tudo no citoplasma."
+            ]
+        }
     },
-    "112": {
+    {
         "pergunta": "Cerebrosídeos e gangliosídeos estão localizados em:",
-        "feedback": "Os glicolipídeos (cerebrosídeos\/gangliosídeos) são encontrados exclusivamente no lado externo da membrana plasmática.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "lado citosólico da membrana plasmática",
             "face externa da membrana plasmática",
             "não são encontrados na membrana plasmática",
             "entre ambas as faces da bicamada"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os glicolipídios não se localizam na face citosólica; sua distribuição é assimétrica, voltada para o exterior.",
+                "Os glicolipídios (cerebrosídeos/gangliosídeos) se encontram exclusivamente na face externa da membrana plasmática.",
+                "Sim se encontram na membrana plasmática, especificamente na face externa.",
+                "Não se localizam entre as duas faces; sua distribuição é assimétrica, apenas voltada para o exterior."
+            ],
+            "fantasma": [
+                "Não é a face citosólica.",
+                "Essa aí! Face externa, olhando para fora da célula.",
+                "Sim estão, e em um lugar específico.",
+                "Não estão distribuídos entre as duas faces."
+            ],
+            "gato": [
+                "Fijate: não é essa face.",
+                "Ronronado de aprovação! Face externa, sempre.",
+                "Dado curioso: sim existem ali.",
+                "Miau, só uma face."
+            ]
+        }
     },
-    "113": {
+    {
         "pergunta": "Vesículas revestidas de clatrina estão envolvidas no transporte entre:",
-        "feedback": "A clatrina medeia a formação de vesículas na endocitose (membrana para endossomo) e do TGN.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "diferentes cisternas de Golgi",
             "RER e o aparelho de Golgi",
             "REL e o Golgi",
             "membrana plasmática e endossomo inicial"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O transporte entre cisternas do Golgi é mediado principalmente por COP I, não por clatrina.",
+                "O transporte do RER para o Golgi é mediado por COP II, não por clatrina.",
+                "O REL não participa tipicamente desse tipo de transporte vesicular mediado por clatrina.",
+                "A clatrina medeia a formação de vesículas na endocitose (membrana para endossomo) e a partir do TGN."
+            ],
+            "fantasma": [
+                "Isso é mais de COP I.",
+                "Isso é de COP II.",
+                "O REL não participa dessa via.",
+                "Essa aí! Da membrana ao endossomo, a via clássica da clatrina."
+            ],
+            "gato": [
+                "Fijate: isso é COP I.",
+                "Dado curioso: isso é COP II.",
+                "Miau, não é essa via.",
+                "Ronronado de aprovação! Membrana ao endossomo, clatrina em ação."
+            ]
+        }
     },
-    "114": {
+    {
         "pergunta": "Observe o diagrama e responda qual dos seguintes eventos causaria um aumento no pH no espaço intermembranar mitocondrial?",
-        "feedback": "A ruptura da membrana interna permitiria que os prótons (H+) escapassem do espaço intermembranar, aumentando o pH.",
         "nota": "Marque a opção CORRETA",
         "opcoes": [
             "Ruptura da membrana mitocondrial interna (D)",
             "Presença de porinas na membrana mitocondrial externa (B)",
             "Aumento da atividade do complexo mitocondrial I (C)",
             "Inibição da ATP sintase (A)"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ruptura da membrana interna permitiria que os prótons (H+) escapassem do espaço intermembranas, aumentando seu pH.",
+                "As porinas já fazem parte normal da membrana externa; sua presença habitual não representa uma mudança que aumente o pH do espaço intermembranas.",
+                "Aumentar a atividade do complexo I bombearia mais prótons para o espaço intermembranas, o que baixaria ainda mais seu pH, não o aumentaria.",
+                "Inibir a ATP sintase tenderia a fazer os prótons bombeados se acumularem no espaço intermembranas, o que baixaria seu pH, não o subiria."
+            ],
+            "fantasma": [
+                "Essa aí! Os prótons escapam e o pH sobe.",
+                "Essas já estão ali sempre, não muda nada.",
+                "Isso bombeia mais prótons, baixa o pH.",
+                "Isso acumula prótons ali, baixa o pH."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Fuga de prótons, pH sobe.",
+                "Fijate: isso já é normal.",
+                "Dado curioso: isso baixa o pH, não sobe.",
+                "Miau, isso também baixa o pH."
+            ]
+        }
     }
-}
+]
