@@ -208,34 +208,36 @@
                 </div>
             </div>
 
-            <div class="dash-home2-card" style="border-radius:14px; padding:18px;">
-                <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
-                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.2rem; color:#a855f7;">military_tech</span>
-                    <h3 style="font-size:.88rem; font-weight:700; color:var(--app-text);">{{ __('dashboard.home.ranking_title') }}</h3>
+            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+                <div>
+                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+                        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.2rem; color:#a855f7;">military_tech</span>
+                        <h3 style="font-size:.88rem; font-weight:700; color:var(--app-text);">{{ __('dashboard.home.ranking_title') }}</h3>
+                    </div>
+                    <p style="font-size:.8rem; color:var(--app-muted); margin-bottom:14px; line-height:1.5;">{{ __('dashboard.home.ranking_copy') }}</p>
+                    <div style="height:8px; background:var(--app-border); border-radius:99px; overflow:hidden; margin-bottom:8px;">
+                        <div style="height:100%; width:{{ $aproveitamentoPct }}%; background:linear-gradient(90deg, #8b1fb8, #c084fc); border-radius:99px; transition:width .8s cubic-bezier(.2,.9,.2,1);"></div>
+                    </div>
+                    <div style="display:flex; align-items:center; justify-content:space-between;">
+                        <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_low') }}</span>
+                        <span style="font-size:.78rem; font-weight:700; color:#a855f7; white-space:nowrap;">{{ __('dashboard.stat.overall') }}: {{ $stats['aproveitamento_geral'] }}%</span>
+                        <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_high') }}</span>
+                    </div>
                 </div>
-                <p style="font-size:.8rem; color:var(--app-muted); margin-bottom:14px; line-height:1.5;">{{ __('dashboard.home.ranking_copy') }}</p>
-                <div style="height:8px; background:var(--app-border); border-radius:99px; overflow:hidden; margin-bottom:8px;">
-                    <div style="height:100%; width:{{ $aproveitamentoPct }}%; background:linear-gradient(90deg, #8b1fb8, #c084fc); border-radius:99px; transition:width .8s cubic-bezier(.2,.9,.2,1);"></div>
-                </div>
-                <div style="display:flex; align-items:center; justify-content:space-between;">
-                    <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_low') }}</span>
-                    <span style="font-size:.78rem; font-weight:700; color:#a855f7; white-space:nowrap;">{{ __('dashboard.stat.overall') }}: {{ $stats['aproveitamento_geral'] }}%</span>
-                    <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_high') }}</span>
-                </div>
-            </div>
 
-            <div style="background:rgba(106,3,146,.08); border:1px solid rgba(106,3,146,.22); border-radius:14px; padding:14px 16px; flex:1; display:flex; flex-direction:column; justify-content:center;">
-                <strong style="display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--app-text);">
-                    <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem; color:#a855f7;">tips_and_updates</span>
-                    {{ __('dashboard.panel.tip_title') }}
-                </strong>
-                <p style="font-size:.82rem; color:var(--app-muted); line-height:1.6; margin:6px 0 0;">
-                    @if ($tipMateria)
-                        {{ __('dashboard.panel.tip_body_materia', ['materia' => $melhorMateria]) }}
-                    @else
-                        {{ __('dashboard.panel.tip_body') }}
-                    @endif
-                </p>
+                <div style="background:rgba(106,3,146,.08); border:1px solid rgba(106,3,146,.22); border-radius:14px; padding:14px 16px;">
+                    <strong style="display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--app-text);">
+                        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem; color:#a855f7;">tips_and_updates</span>
+                        {{ __('dashboard.panel.tip_title') }}
+                    </strong>
+                    <p style="font-size:.82rem; color:var(--app-muted); line-height:1.6; margin:6px 0 0;">
+                        @if ($tipMateria)
+                            {{ __('dashboard.panel.tip_body_materia', ['materia' => $melhorMateria]) }}
+                        @else
+                            {{ __('dashboard.panel.tip_body') }}
+                        @endif
+                    </p>
+                </div>
             </div>
         </div>
 
