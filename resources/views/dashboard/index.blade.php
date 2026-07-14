@@ -224,7 +224,7 @@
                 </div>
             </div>
 
-            <div style="background:rgba(106,3,146,.08); border:1px solid rgba(106,3,146,.22); border-radius:14px; padding:14px 16px;">
+            <div style="background:rgba(106,3,146,.08); border:1px solid rgba(106,3,146,.22); border-radius:14px; padding:14px 16px; flex:1; display:flex; flex-direction:column; justify-content:center;">
                 <strong style="display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--app-text);">
                     <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.05rem; color:#a855f7;">tips_and_updates</span>
                     {{ __('dashboard.panel.tip_title') }}
