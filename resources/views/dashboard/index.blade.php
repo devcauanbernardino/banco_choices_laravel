@@ -208,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:16px;">
+            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column;">
                 <div>
                     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
                         <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.2rem; color:#a855f7;">military_tech</span>
@@ -224,6 +224,8 @@
                         <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_high') }}</span>
                     </div>
                 </div>
+
+                <div style="flex:1 1 0; max-height:24px; min-height:16px;"></div>
 
                 <div style="background:rgba(106,3,146,.08); border:1px solid rgba(106,3,146,.22); border-radius:14px; padding:14px 16px;">
                     <strong style="display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--app-text);">
