@@ -208,21 +208,19 @@
                 </div>
             </div>
 
-            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column;">
+            <div class="dash-home2-card" style="border-radius:14px; padding:18px; flex:1; display:flex; flex-direction:column; justify-content:center;">
                 <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
                     <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1.2rem; color:#a855f7;">military_tech</span>
                     <h3 style="font-size:.88rem; font-weight:700; color:var(--app-text);">{{ __('dashboard.home.ranking_title') }}</h3>
                 </div>
                 <p style="font-size:.8rem; color:var(--app-muted); margin-bottom:14px; line-height:1.5;">{{ __('dashboard.home.ranking_copy') }}</p>
-                <div style="margin-top:auto;">
-                    <div style="height:8px; background:var(--app-border); border-radius:99px; overflow:hidden; margin-bottom:8px;">
-                        <div style="height:100%; width:{{ $aproveitamentoPct }}%; background:linear-gradient(90deg, #8b1fb8, #c084fc); border-radius:99px; transition:width .8s cubic-bezier(.2,.9,.2,1);"></div>
-                    </div>
-                    <div style="display:flex; align-items:center; justify-content:space-between;">
-                        <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_low') }}</span>
-                        <span style="font-size:.78rem; font-weight:700; color:#a855f7; white-space:nowrap;">{{ __('dashboard.stat.overall') }}: {{ $stats['aproveitamento_geral'] }}%</span>
-                        <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_high') }}</span>
-                    </div>
+                <div style="height:8px; background:var(--app-border); border-radius:99px; overflow:hidden; margin-bottom:8px;">
+                    <div style="height:100%; width:{{ $aproveitamentoPct }}%; background:linear-gradient(90deg, #8b1fb8, #c084fc); border-radius:99px; transition:width .8s cubic-bezier(.2,.9,.2,1);"></div>
+                </div>
+                <div style="display:flex; align-items:center; justify-content:space-between;">
+                    <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_low') }}</span>
+                    <span style="font-size:.78rem; font-weight:700; color:#a855f7; white-space:nowrap;">{{ __('dashboard.stat.overall') }}: {{ $stats['aproveitamento_geral'] }}%</span>
+                    <span style="font-size:.72rem; color:var(--app-muted);">{{ __('dashboard.home.ranking_meter_high') }}</span>
                 </div>
             </div>
 
