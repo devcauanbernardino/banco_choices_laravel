@@ -227,7 +227,7 @@ class Question
                 $out[] = (string) ($item['texto'] ?? $item['text'] ?? '');
             }
 
-            return $out;
+            return array_map([self::class, 'capitalizarOpcao'], $out);
         }
 
         $numericKeys = array_keys($raw) === range(0, count($raw) - 1);
@@ -240,11 +240,26 @@ class Question
                 }
             }
             if ($ordered !== []) {
-                return $ordered;
+                return array_map([self::class, 'capitalizarOpcao'], $ordered);
             }
         }
 
-        return array_values(array_map(fn ($v) => is_scalar($v) ? (string) $v : '', $raw));
+        $out = array_values(array_map(fn ($v) => is_scalar($v) ? (string) $v : '', $raw));
+
+        return array_map([self::class, 'capitalizarOpcao'], $out);
+    }
+
+    /**
+     * Deixa maiúscula a primeira letra do texto da opção, preservando o resto
+     * (muitos bancos trazem as alternativas todas em minúsculas).
+     */
+    private static function capitalizarOpcao(string $texto): string
+    {
+        if (trim($texto) === '') {
+            return $texto;
+        }
+
+        return mb_strtoupper(mb_substr($texto, 0, 1)).mb_substr($texto, 1);
     }
 
     private const MASCOTE_KEYS = ['robo', 'fantasma', 'gato'];
