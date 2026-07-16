@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{ route('stats') }}" class="btn btn-outline-primary btn-sm w-100 mt-3 d-inline-flex align-items-center justify-content-center gap-2">
+                    <a href="{{ route('stats') }}" class="btn btn-outline-primary btn-sm rounded-pill w-100 mt-3 d-inline-flex align-items-center justify-content-center gap-2">
                         <span class="material-symbols-outlined" aria-hidden="true" style="font-size: 1.1rem;">bar_chart</span>
                         {{ __('perfil.view_detailed_stats') }}
                     </a>
@@ -104,12 +104,12 @@
                         <div class="bc-form-actions bc-form-actions--profile">
                             <div class="d-flex flex-wrap gap-2 justify-content-stretch justify-content-md-end align-items-center">
                                 <a href="{{ route('dashboard') }}"
-                                   class="btn btn-outline-primary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 flex-grow-1 flex-md-grow-0">
+                                   class="btn btn-outline-primary btn-lg px-4 rounded-pill d-inline-flex align-items-center justify-content-center gap-2 flex-grow-1 flex-md-grow-0">
                                     <span class="material-symbols-outlined bc-perfil-symbol-btn" aria-hidden="true">arrow_back</span>
                                     {{ __('perfil.back') }}
                                 </a>
                                 <button type="submit"
-                                        class="btn btn-primary btn-lg px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 flex-grow-1 flex-md-grow-0">
+                                        class="btn btn-primary btn-lg px-4 rounded-pill d-inline-flex align-items-center justify-content-center gap-2 flex-grow-1 flex-md-grow-0">
                                     <span class="material-symbols-outlined bc-perfil-symbol-btn" aria-hidden="true">save</span>
                                     {{ __('perfil.save') }}
                                 </button>
