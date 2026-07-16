@@ -1867,7 +1867,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A bolsa amarela não é usada para barbijos e camisolines do centro cirúrgico, que devem ser descartados em sacos específicos (geralmente vermelhos) para resíduos potencialmente contaminados, não na bolsa amarela destinada a materiais perfurocortantes e resíduos biológicos infectantes.\n\n**Outras opções:**  \nA (bolsa vermelha para restos cirúrgicos) está correta;  \nB (bolsa preta para bolsas de soro vazias) está correta;  \nC (descartador para materiais cortopunzantes) está correta.\n\nD está incorreta por indicar descarte inadequado para barbijos e camisolines usados."
+            "feedback": "**Resposta Correta:** D. A bolsa amarela não é usada para barbijos e camisolines do centro cirúrgico, que devem ser descartados em sacos específicos (geralmente vermelhos) para resíduos potencialmente contaminados, não na bolsa amarela destinada a materiais perfurocortantes e resíduos biológicos infectantes.\n\n**Outras opções:**  \nA (bolsa vermelha para restos cirúrgicos) está correta;  \nB (bolsa preta para bolsas de soro vazias) está correta;  \nC (descartador para materiais cortopunzantes) está correta.\n\nD está incorreta por indicar descarte inadequado para barbijos e camisolines usados.",
+            "explicacoes": {
+                "robo": [
+                    "Los restos quirúrgicos de biopsias efectivamente se descartan en bolsa roja.",
+                    "Las bolsas de suero vacías y sin contaminar efectivamente van en bolsa negra.",
+                    "Lancetas y bisturí efectivamente van en descartador de cortopunzantes.",
+                    "Barbijos y camisolines usados en quirófano son materiales potencialmente contaminados y deben ir en bolsa roja, no en bolsa amarilla — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, roja.",
+                    "Esa está bien, negra.",
+                    "Esa está bien, descartador.",
+                    "¡Esta! Eso va en bolsa roja, no amarilla."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es roja, no amarilla."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -1893,7 +1913,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A opção A está incorreta: Bacillus cereus, Listeria monocytogenes e Mycobacterium tuberculosis não pertencem ao Grupo 1, que inclui agentes com risco mínimo à saúde humana. Listeria e M. tuberculosis são patógenos graves, classificados nos Grupos 2 e 3, respectivamente. Bacillus cereus causa intoxicações alimentares, não risco mínimo. As opções B, C e D estão corretas, correspondendo respectivamente aos Grupos 2 (risco moderado, controle possível), 3 (doenças graves, baixa transmissão) e 4 (doenças graves, alta transmissibilidade e sem tratamento eficaz)."
+            "feedback": "A opção A está incorreta: Bacillus cereus, Listeria monocytogenes e Mycobacterium tuberculosis não pertencem ao Grupo 1, que inclui agentes com risco mínimo à saúde humana. Listeria e M. tuberculosis são patógenos graves, classificados nos Grupos 2 e 3, respectivamente. Bacillus cereus causa intoxicações alimentares, não risco mínimo. As opções B, C e D estão corretas, correspondendo respectivamente aos Grupos 2 (risco moderado, controle possível), 3 (doenças graves, baixa transmissão) e 4 (doenças graves, alta transmissibilidade e sem tratamento eficaz).",
+            "explicacoes": {
+                "robo": [
+                    "Bacillus cereus, Listeria monocytogenes y M. tuberculosis NO pertenecen al Grupo 1 (riesgo mínimo); Listeria y M. tuberculosis son patógenos graves de Grupos 2 y 3 respectivamente, y B. cereus causa intoxicaciones alimentarias — esta es la asociación incorrecta.",
+                    "El Grupo 2 (sarampión, hepatitis) efectivamente presenta riesgo individual moderado y riesgo poblacional bajo.",
+                    "El Grupo 3 (Rickettsia, rabia, Brucella) efectivamente presenta riesgo individual elevado con riesgo poblacional bajo.",
+                    "El Grupo 4 (Junín, Lassa, fiebre aftosa) efectivamente presenta riesgo individual y poblacional elevado."
+                ],
+                "fantasma": [
+                    "¡Esta! Esos no son riesgo mínimo, son patógenos serios.",
+                    "Esa está bien, riesgo moderado.",
+                    "Esa está bien, riesgo alto individual.",
+                    "Esa está bien, riesgo alto en todo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No son de riesgo mínimo.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -1919,7 +1959,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Calor úmido.  \nO calor úmido esteriliza por vapor sob pressão, desnaturando proteínas e enzimas, sem uso de agentes químicos.  \n\n**Outras opções:**  \nA, C e D são métodos químicos:  \n- A (Peróxido de hidrogênio/plasma) gera radicais livres que destroem componentes celulares.  \n- C (Glutaraldeído) alquila proteínas e ácidos nucleicos.  \n- D (Formaldeído) fixa proteínas, inativando microrganismos.  \n\nAssim, B é a única opção que utiliza método físico, diferenciando-se das demais."
+            "feedback": "**Resposta Correta:** B. Calor úmido.  \nO calor úmido esteriliza por vapor sob pressão, desnaturando proteínas e enzimas, sem uso de agentes químicos.  \n\n**Outras opções:**  \nA, C e D são métodos químicos:  \n- A (Peróxido de hidrogênio/plasma) gera radicais livres que destroem componentes celulares.  \n- C (Glutaraldeído) alquila proteínas e ácidos nucleicos.  \n- D (Formaldeído) fixa proteínas, inativando microrganismos.  \n\nAssim, B é a única opção que utiliza método físico, diferenciando-se das demais.",
+            "explicacoes": {
+                "robo": [
+                    "El peróxido de hidrógeno (plasma gaseoso) efectivamente es un método químico, genera radicales libres.",
+                    "El calor húmedo esteriliza por vapor a presión, un método FÍSICO, sin agentes químicos — esta es la excepción.",
+                    "El glutaraldehído efectivamente es un método químico, alquila proteínas y ácidos nucleicos.",
+                    "El formaldehído efectivamente es un método químico, fija proteínas inactivando microorganismos."
+                ],
+                "fantasma": [
+                    "Ese sí es químico.",
+                    "¡Esta! El calor húmedo es físico, no químico.",
+                    "Ese sí es químico.",
+                    "Ese sí es químico."
+                ],
+                "gato": [
+                    "Fijate: químico.",
+                    "¡Ronroneo de aprobación! Es físico, la excepción.",
+                    "Dato curioso: químico.",
+                    "Miau, químico."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -1945,7 +2005,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Especificidade é a capacidade do teste em identificar corretamente os indivíduos saudáveis (verdadeiros negativos), evitando falsos positivos. Opção A e D referem-se à sensibilidade, que identifica os infectados. Opção B trata do espectro do teste, não da especificidade. Portanto, especificidade significa reconhecer corretamente os não infectados."
+            "feedback": "Resposta correta: C. Especificidade é a capacidade do teste em identificar corretamente os indivíduos saudáveis (verdadeiros negativos), evitando falsos positivos. Opção A e D referem-se à sensibilidade, que identifica os infectados. Opção B trata do espectro do teste, não da especificidade. Portanto, especificidade significa reconhecer corretamente os não infectados.",
+            "explicacoes": {
+                "robo": [
+                    "Identificar a la mayoría de los infectados corresponde a la sensibilidad, no a la especificidad.",
+                    "Detectar cualquier tipo de microorganismo se relaciona con el espectro del test, no con la especificidad.",
+                    "La especificidad es la capacidad del test de identificar correctamente a los individuos sanos (verdaderos negativos), evitando falsos positivos — es la respuesta correcta.",
+                    "Medir la proporción de infectados identificados corresponde a la sensibilidad, no a la especificidad."
+                ],
+                "fantasma": [
+                    "Eso es de la sensibilidad.",
+                    "Eso es del espectro, otra cosa.",
+                    "¡Esta! Identifica bien a los sanos, eso es especificidad.",
+                    "Eso es de la sensibilidad también."
+                ],
+                "gato": [
+                    "Fijate: es sensibilidad.",
+                    "Dato curioso: es otra cosa.",
+                    "¡Ronroneo de aprobación! Identifica bien a los sanos.",
+                    "Miau, es sensibilidad."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -1971,7 +2051,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Peróxido de hidrogênio a 25% é inadequado como antisséptico por ser corrosivo e tóxico para tecidos humanos. Concentrações seguras para antissepsia são cerca de 3%, eficazes e seguras para pele. Opções A (álcool 70%), B (clorexidina 2%) e C (triclosan 0,5%) são antissépticos eficazes e seguros em suas concentrações, usados para reduzir microrganismos em tecidos vivos. Portanto, apenas a concentração alta do peróxido de hidrogênio não é adequada para antissepsia."
+            "feedback": "Resposta correta: D. Peróxido de hidrogênio a 25% é inadequado como antisséptico por ser corrosivo e tóxico para tecidos humanos. Concentrações seguras para antissepsia são cerca de 3%, eficazes e seguras para pele. Opções A (álcool 70%), B (clorexidina 2%) e C (triclosan 0,5%) são antissépticos eficazes e seguros em suas concentrações, usados para reduzir microrganismos em tecidos vivos. Portanto, apenas a concentração alta do peróxido de hidrogênio não é adequada para antissepsia.",
+            "explicacoes": {
+                "robo": [
+                    "El alcohol al 70% efectivamente es un antiséptico eficaz y seguro en esa concentración.",
+                    "La clorhexidina al 2% efectivamente es un antiséptico eficaz y seguro.",
+                    "El triclosán al 0,5% efectivamente es un antiséptico eficaz y seguro.",
+                    "El peróxido de hidrógeno al 25% es corrosivo y tóxico para los tejidos humanos; las concentraciones seguras para antisepsia son de alrededor del 3% — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Ese sí sirve de antiséptico.",
+                    "Ese sí sirve de antiséptico.",
+                    "Ese sí sirve de antiséptico.",
+                    "¡Esta! A 25% quema el tejido, no sirve así."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve.",
+                    "¡Ronroneo de aprobación! Quema el tejido a esa dosis."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -1997,7 +2097,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. O valor preditivo negativo (VPN) varia conforme a prevalência da doença; na temporada invernal, com menor incidência, o VPN aumenta, indicando maior chance de um resultado negativo ser verdadeiro, mesmo sem mudanças na sensibilidade ou especificidade do teste.  \n**Outras opções:**  \nA e C estão incorretas porque especificidade e sensibilidade são características fixas do teste, não influenciadas pela prevalência ou estação do ano.  \nD é incorreta pois a capacidade de detectar infectados (sensibilidade) também permanece constante independentemente da temporada."
+            "feedback": "**Resposta Correta:** B. O valor preditivo negativo (VPN) varia conforme a prevalência da doença; na temporada invernal, com menor incidência, o VPN aumenta, indicando maior chance de um resultado negativo ser verdadeiro, mesmo sem mudanças na sensibilidade ou especificidade do teste.  \n**Outras opções:**  \nA e C estão incorretas porque especificidade e sensibilidade são características fixas do teste, não influenciadas pela prevalência ou estação do ano.  \nD é incorreta pois a capacidade de detectar infectados (sensibilidade) também permanece constante independentemente da temporada.",
+            "explicacoes": {
+                "robo": [
+                    "La especificidad es una característica fija de la prueba, no influenciada por la prevalencia o la estación.",
+                    "El valor predictivo negativo (VPN) varía según la prevalencia; con menor incidencia en invierno, el VPN aumenta — es la respuesta correcta.",
+                    "La sensibilidad es una característica fija de la prueba, no influenciada por la prevalencia o la estación.",
+                    "La capacidad de detectar a la mayoría de los infectados (sensibilidad) también permanece constante independientemente de la temporada."
+                ],
+                "fantasma": [
+                    "Esa es fija, no cambia.",
+                    "¡Esta! El VPN sube cuando baja la incidencia.",
+                    "Esa es fija también.",
+                    "Eso es la sensibilidad, fija también."
+                ],
+                "gato": [
+                    "Fijate: fija.",
+                    "¡Ronroneo de aprobación! Sube con menos incidencia.",
+                    "Dato curioso: fija.",
+                    "Miau, es sensibilidad."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -2023,7 +2143,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta. Testes de triagem priorizam alta sensibilidade para detectar mais casos, não alta especificidade.  \nA. Correta: especificidade é a capacidade de identificar corretamente os indivíduos saudáveis.  \nB. Correta: especificidade mede a proporção de não infectados corretamente identificados.  \nD. Correta: aumentar a especificidade reduz falsos positivos.  \nPortanto, alta especificidade não é característica típica de testes de triagem, que buscam alta sensibilidade."
+            "feedback": "Resposta correta: C está incorreta. Testes de triagem priorizam alta sensibilidade para detectar mais casos, não alta especificidade.  \nA. Correta: especificidade é a capacidade de identificar corretamente os indivíduos saudáveis.  \nB. Correta: especificidade mede a proporção de não infectados corretamente identificados.  \nD. Correta: aumentar a especificidade reduz falsos positivos.  \nPortanto, alta especificidade não é característica típica de testes de triagem, que buscam alta sensibilidade.",
+            "explicacoes": {
+                "robo": [
+                    "Indicar la capacidad de identificar como sanos es efectivamente una característica de alta especificidad.",
+                    "Medir la proporción de no infectados identificados es efectivamente una característica de alta especificidad.",
+                    "Las pruebas de tamizaje priorizan alta sensibilidad, no alta especificidad, para detectar más casos — esta es la excepción, la opción incorrecta.",
+                    "Aumentar la especificidad efectivamente disminuye los falsos positivos."
+                ],
+                "fantasma": [
+                    "Esa sí es de alta especificidad.",
+                    "Esa sí es de alta especificidad.",
+                    "¡Esta! Tamizaje quiere sensibilidad, no especificidad.",
+                    "Esa sí es de alta especificidad."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "¡Ronroneo de aprobación! Tamizaje quiere sensibilidad.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -2049,7 +2189,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Objetos críticos, como equipamentos de hemodiálise, devem ser esterilizados para eliminar todos os microrganismos, incluindo esporos. Antissépticos são agentes químicos usados em tecidos vivos para reduzir microrganismos, não para esterilizar objetos. As opções B, C e D estão corretas quanto ao uso de antissépticos na preparação da pele e higienização das mãos, mas estes não substituem a esterilização de instrumentos críticos."
+            "feedback": "Resposta correta: A. Objetos críticos, como equipamentos de hemodiálise, devem ser esterilizados para eliminar todos os microrganismos, incluindo esporos. Antissépticos são agentes químicos usados em tecidos vivos para reduzir microrganismos, não para esterilizar objetos. As opções B, C e D estão corretas quanto ao uso de antissépticos na preparação da pele e higienização das mãos, mas estes não substituem a esterilização de instrumentos críticos.",
+            "explicacoes": {
+                "robo": [
+                    "Los objetos críticos como equipos de hemodiálisis deben esterilizarse, no tratarse con antisépticos; los antisépticos son para tejidos vivos, no para esterilizar objetos — esta es la excepción.",
+                    "Preparar la piel para procedimientos invasivos es efectivamente un uso correcto de antisépticos.",
+                    "El lavado quirúrgico de manos es efectivamente un uso correcto de antisépticos.",
+                    "Usar antisépticos tras manipular material contaminado es efectivamente una recomendación correcta."
+                ],
+                "fantasma": [
+                    "¡Esta! Objeto crítico se esteriliza, no se usa antiséptico.",
+                    "Esa está bien, uso correcto.",
+                    "Esa está bien, uso correcto.",
+                    "Esa está bien, uso correcto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Objeto crítico se esteriliza.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -2075,7 +2235,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O Vírus Lassa pertence ao Grupo 4, com alto risco individual e populacional, causando doenças graves sem tratamento eficaz, transmitido rapidamente, como na febre de Lassa.\n\n**Incorretas:**  \nA) *Mycobacterium tuberculosis* é Grupo 3, alto risco individual e moderado a alto populacional, não Grupo 1.  \nB) Vírus da raiva é Grupo 3, alto risco individual e moderado populacional, não Grupo 2.  \nC) Vírus do sarampo é Grupo 3, alto risco individual e populacional, não com risco populacional baixo."
+            "feedback": "**Resposta Correta:** D. O Vírus Lassa pertence ao Grupo 4, com alto risco individual e populacional, causando doenças graves sem tratamento eficaz, transmitido rapidamente, como na febre de Lassa.\n\n**Incorretas:**  \nA) *Mycobacterium tuberculosis* é Grupo 3, alto risco individual e moderado a alto populacional, não Grupo 1.  \nB) Vírus da raiva é Grupo 3, alto risco individual e moderado populacional, não Grupo 2.  \nC) Vírus do sarampo é Grupo 3, alto risco individual e populacional, não com risco populacional baixo.",
+            "explicacoes": {
+                "robo": [
+                    "Mycobacterium tuberculosis pertenece al Grupo 3, con riesgo individual elevado y poblacional moderado a alto, no al Grupo 1.",
+                    "El virus de la rabia pertenece al Grupo 3, con riesgo individual elevado y poblacional moderado, no al Grupo 2.",
+                    "El virus del sarampión pertenece al Grupo 3, con riesgo individual y poblacional elevados, no con riesgo poblacional bajo.",
+                    "El virus Lassa pertenece al Grupo 4, con riesgo individual y poblacional elevados, causando enfermedad grave sin tratamiento eficaz — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese es grupo 3, no grupo 1.",
+                    "Ese es grupo 3, no grupo 2.",
+                    "Ese es grupo 3, con más riesgo poblacional.",
+                    "¡Esta! Lassa, grupo 4, sin tratamiento eficaz."
+                ],
+                "gato": [
+                    "Fijate: grupo 3.",
+                    "Dato curioso: grupo 3.",
+                    "Miau, más riesgo.",
+                    "¡Ronroneo de aprobación! Lassa, grupo 4."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -2101,7 +2281,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Fibrobroncoscópio / semicrítico / desinfecção de alto nível.\n\nO fibrobroncoscópio é semicrítico, pois contata mucosas, exigindo desinfecção de alto nível; detergentes são insuficientes. As outras opções estão corretas:  \nA) Máscaras são não críticas, desinfecção com álcool 70% adequada.  \nB) Termômetros orais/rectais são semicríticos, desinfecção de nível médio adequada.  \nC) Bisturis e agulhas são críticos, exigem esterilização física, como incineração."
+            "feedback": "**Resposta Correta:** D. Fibrobroncoscópio / semicrítico / desinfecção de alto nível.\n\nO fibrobroncoscópio é semicrítico, pois contata mucosas, exigindo desinfecção de alto nível; detergentes são insuficientes. As outras opções estão corretas:  \nA) Máscaras são não críticas, desinfecção com álcool 70% adequada.  \nB) Termômetros orais/rectais são semicríticos, desinfecção de nível médio adequada.  \nC) Bisturis e agulhas são críticos, exigem esterilização física, como incineração.",
+            "explicacoes": {
+                "robo": [
+                    "Las máscaras faciales son efectivamente no críticas y la desinfección con alcohol 70 es adecuada.",
+                    "Los termómetros orales o rectales son efectivamente semicríticos con desinfección de nivel medio adecuada.",
+                    "Bisturíes y agujas son efectivamente críticos, requiriendo esterilización física como la incineración.",
+                    "El fibrobroncoscopio es SEMICRÍTICO (contacta mucosas), requiere desinfección de ALTO nivel; los detergentes son insuficientes — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, no crítico con alcohol.",
+                    "Esa está bien, semicrítico.",
+                    "Esa está bien, crítico con esterilización.",
+                    "¡Esta! Toca mucosa, necesita nivel alto, no detergente."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Nivel alto, no detergente."
+                ]
+            }
         },
         {
             "numero": 51,
@@ -2127,7 +2327,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. O glutaraldehído é usado para esterilizar/desinfetar instrumentos sensíveis ao calor, não para eliminar resíduos infecciosos, que requerem processos específicos como incineração ou autoclavação.\n\n**Outras opções:**  \nA. Formaldeído é adequado para esterilizar equipamentos de hemodiálise.  \nC. Calor úmido (autoclave a 121°C) é padrão para esterilizar material cirúrgico reutilizável.  \nD. Radiação UV desinfeta superfícies ao danificar material genético microbiano."
+            "feedback": "**Resposta Correta:** B está incorreta. O glutaraldehído é usado para esterilizar/desinfetar instrumentos sensíveis ao calor, não para eliminar resíduos infecciosos, que requerem processos específicos como incineração ou autoclavação.\n\n**Outras opções:**  \nA. Formaldeído é adequado para esterilizar equipamentos de hemodiálise.  \nC. Calor úmido (autoclave a 121°C) é padrão para esterilizar material cirúrgico reutilizável.  \nD. Radiação UV desinfeta superfícies ao danificar material genético microbiano.",
+            "explicacoes": {
+                "robo": [
+                    "El formaldehído efectivamente es adecuado para esterilizar equipos de hemodiálisis.",
+                    "El glutaraldehído se usa para esterilizar/desinfectar instrumentos sensibles al calor, no para eliminar desechos infecciosos, que requieren procesos como incineración o autoclave — esta es la opción incorrecta.",
+                    "El calor húmedo en autoclave (121°C, 1 atm, 30 min) efectivamente es el estándar para esterilizar material quirúrgico reutilizable.",
+                    "La radiación UV efectivamente desinfecta superficies dañando el material genético microbiano."
+                ],
+                "fantasma": [
+                    "Esa está bien, hemodiálisis.",
+                    "¡Esta! Glutaraldehído no es para descartar residuos.",
+                    "Esa está bien, autoclave.",
+                    "Esa está bien, superficies."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No es para descartar residuos.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -2153,7 +2373,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Formol. O formol fixa e mata bactérias, inviabilizando o transporte para cultura.  \n\n**Outras opções:**  \nA. Meio de Stuart preserva a viabilidade bacteriana retardando o crescimento.  \nB. Meio de Cary Blair mantém microrganismos viáveis, especialmente enterobactérias.  \nD. Meio PRAS mantém anaeróbios vivos em ambiente livre de oxigênio.  \n\nPortanto, só o formol não é adequado para transporte, pois elimina as bactérias, impedindo seu cultivo."
+            "feedback": "**Resposta Correta:** C. Formol. O formol fixa e mata bactérias, inviabilizando o transporte para cultura.  \n\n**Outras opções:**  \nA. Meio de Stuart preserva a viabilidade bacteriana retardando o crescimento.  \nB. Meio de Cary Blair mantém microrganismos viáveis, especialmente enterobactérias.  \nD. Meio PRAS mantém anaeróbios vivos em ambiente livre de oxigênio.  \n\nPortanto, só o formol não é adequado para transporte, pois elimina as bactérias, impedindo seu cultivo.",
+            "explicacoes": {
+                "robo": [
+                    "El medio de Stuart efectivamente preserva la viabilidad bacteriana retardando el crecimiento.",
+                    "El medio de Cary Blair efectivamente mantiene viables los microorganismos, especialmente enterobacterias.",
+                    "El formol fija y mata las bacterias, inviabilizando el transporte para cultivo — esta es la excepción.",
+                    "El medio PRAS efectivamente mantiene anaerobios viables en ambiente libre de oxígeno."
+                ],
+                "fantasma": [
+                    "Ese sí sirve de transporte.",
+                    "Ese sí sirve de transporte.",
+                    "¡Esta! El formol mata la bacteria, no sirve de transporte.",
+                    "Ese sí sirve de transporte."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "Dato curioso: sirve.",
+                    "¡Ronroneo de aprobación! El formol mata la bacteria.",
+                    "Miau, sirve."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -2179,7 +2419,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Clorhexidina. É um desinfetante de nível médio eficaz contra bactérias gram-positivas, gram-negativas, vírus lipofílicos e micobactérias como Mycobacterium tuberculosis, agindo na membrana celular e causando morte microbiana.\n\n**Outras opções:**  \nA. Anfóteros são detergentes com baixo poder antimicrobiano e ineficazes contra micobactérias.  \nC. Cloreto de benzalcônio tem ação limitada contra micobactérias, insuficiente para eliminar M. tuberculosis.  \nD. Triclosan é bacteriostático e não eficaz contra micobactérias, não sendo adequado como des"
+            "feedback": "**Resposta Correta:** B. Clorhexidina. É um desinfetante de nível médio eficaz contra bactérias gram-positivas, gram-negativas, vírus lipofílicos e micobactérias como Mycobacterium tuberculosis, agindo na membrana celular e causando morte microbiana.\n\n**Outras opções:**  \nA. Anfóteros são detergentes com baixo poder antimicrobiano e ineficazes contra micobactérias.  \nC. Cloreto de benzalcônio tem ação limitada contra micobactérias, insuficiente para eliminar M. tuberculosis.  \nD. Triclosan é bacteriostático e não eficaz contra micobactérias, não sendo adequado como des",
+            "explicacoes": {
+                "robo": [
+                    "Los anfóteros son detergentes de bajo poder antimicrobiano, ineficaces frente a micobacterias.",
+                    "La clorhexidina es un desinfectante de nivel medio eficaz contra bacterias grampositivas, gramnegativas, virus lipofílicos y micobacterias como M. tuberculosis — es la respuesta correcta.",
+                    "El cloruro de benzalconio tiene acción limitada frente a micobacterias, insuficiente para eliminar M. tuberculosis.",
+                    "El triclosán es bacteriostático y no eficaz frente a micobacterias."
+                ],
+                "fantasma": [
+                    "Ese es flojo, no sirve contra micobacteria.",
+                    "¡Esta! La clorhexidina, nivel medio, mata la TB.",
+                    "Ese tiene acción limitada, no alcanza.",
+                    "Ese solo frena, no mata la micobacteria."
+                ],
+                "gato": [
+                    "Fijate: flojo.",
+                    "¡Ronroneo de aprobación! Clorhexidina mata la TB.",
+                    "Dato curioso: limitado.",
+                    "Miau, solo frena."
+                ]
+            }
         },
         {
             "numero": 54,
@@ -2205,7 +2465,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Prevalência.  \nA prevalência é a proporção de indivíduos com a doença numa população em um dado momento, dependendo do contexto epidemiológico e não das propriedades do teste.  \n\n**Outras opções:**  \nA. Sensibilidade e B. Especificidade são características intrínsecas do teste, fixas e independentes da população.  \nC. Valor preditivo positivo depende da prevalência, mas reflete a performance do teste em um contexto específico.  \n\nAssim, apenas a prevalência não é uma propriedade do teste, mas um parâmetro epidemiológico."
+            "feedback": "**Resposta Correta:** D. Prevalência.  \nA prevalência é a proporção de indivíduos com a doença numa população em um dado momento, dependendo do contexto epidemiológico e não das propriedades do teste.  \n\n**Outras opções:**  \nA. Sensibilidade e B. Especificidade são características intrínsecas do teste, fixas e independentes da população.  \nC. Valor preditivo positivo depende da prevalência, mas reflete a performance do teste em um contexto específico.  \n\nAssim, apenas a prevalência não é uma propriedade do teste, mas um parâmetro epidemiológico.",
+            "explicacoes": {
+                "robo": [
+                    "La sensibilidad es efectivamente una característica intrínseca y fija del test.",
+                    "La especificidad es efectivamente una característica intrínseca y fija del test.",
+                    "El valor predictivo positivo depende de la prevalencia, pero refleja el desempeño del test en un contexto específico.",
+                    "La prevalencia es la proporción de individuos con la enfermedad en una población, dependiendo del contexto epidemiológico, no de las propiedades del test — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa es propia del test.",
+                    "Esa es propia del test.",
+                    "Esa depende un poco de la prevalencia, pero es del test.",
+                    "¡Esta! Eso es del contexto epidemiológico, no del test."
+                ],
+                "gato": [
+                    "Fijate: propia.",
+                    "Dato curioso: propia.",
+                    "Miau, casi propia.",
+                    "¡Ronroneo de aprobación! Es del contexto, no del test."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -2231,7 +2511,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Vírus Junin é agente da febre hemorrágica argentina, classificado no Grupo 4, com alto risco individual e populacional, exigindo biossegurança nível 4. \n\nErrado:  \nA. Escherichia coli K12 é não patogênica, Grupo 1, risco baixo, não moderado.  \nB. Mycobacterium tuberculosis é Grupo 3, risco elevado individual e moderado populacional, não Grupo 1.  \nD. Bacillus cereus é Grupo 2, risco moderado individual e baixo populacional, não Grupo 3."
+            "feedback": "Resposta correta: C. Vírus Junin é agente da febre hemorrágica argentina, classificado no Grupo 4, com alto risco individual e populacional, exigindo biossegurança nível 4. \n\nErrado:  \nA. Escherichia coli K12 é não patogênica, Grupo 1, risco baixo, não moderado.  \nB. Mycobacterium tuberculosis é Grupo 3, risco elevado individual e moderado populacional, não Grupo 1.  \nD. Bacillus cereus é Grupo 2, risco moderado individual e baixo populacional, não Grupo 3.",
+            "explicacoes": {
+                "robo": [
+                    "Escherichia coli K12 es no patogénica, pertenece al Grupo 1, con riesgo bajo, no moderado.",
+                    "Mycobacterium tuberculosis pertenece al Grupo 3, con riesgo elevado individual y moderado poblacional, no al Grupo 1.",
+                    "El virus Junín, agente de la fiebre hemorrágica argentina, pertenece al Grupo 4, con riesgo individual y poblacional elevados, exigiendo bioseguridad nivel 4 — es la respuesta correcta.",
+                    "Bacillus cereus pertenece al Grupo 2, con riesgo moderado individual y bajo poblacional, no al Grupo 3."
+                ],
+                "fantasma": [
+                    "Esa cepa es grupo 1, riesgo bajo.",
+                    "Esa es grupo 3, riesgo alto.",
+                    "¡Esta! Junín, grupo 4, fiebre hemorrágica argentina.",
+                    "Ese es grupo 2, riesgo moderado."
+                ],
+                "gato": [
+                    "Fijate: grupo 1.",
+                    "Dato curioso: grupo 3.",
+                    "¡Ronroneo de aprobación! Junín, grupo 4.",
+                    "Miau, grupo 2."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -2257,7 +2557,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Bisturis e agulhas são resíduos perfurocortantes, com alto risco de ferimentos e transmissão de infecções (hepatite B, C e HIV). Devem ser descartados em contêineres rígidos de segurança para proteger profissionais, meio ambiente e comunidade.\n\n**Outras opções:**  \nA. Gasas contaminadas são infectantes, mas não perfurocortantes, e vão em sacos para resíduos infectantes.  \nC. Embalagens de medicamentos são resíduos químicos ou comuns, sem risco perfurocortante.  \nD. Caixas de insumos são resíduos comuns ou recicláveis, não perfurocortantes.  \n\nApenas materiais perf"
+            "feedback": "**Resposta Correta:** B. Bisturis e agulhas são resíduos perfurocortantes, com alto risco de ferimentos e transmissão de infecções (hepatite B, C e HIV). Devem ser descartados em contêineres rígidos de segurança para proteger profissionais, meio ambiente e comunidade.\n\n**Outras opções:**  \nA. Gasas contaminadas são infectantes, mas não perfurocortantes, e vão em sacos para resíduos infectantes.  \nC. Embalagens de medicamentos são resíduos químicos ou comuns, sem risco perfurocortante.  \nD. Caixas de insumos são resíduos comuns ou recicláveis, não perfurocortantes.  \n\nApenas materiais perf",
+            "explicacoes": {
+                "robo": [
+                    "Las gasas contaminadas son infectantes, pero no cortopunzantes, y van en bolsas para residuos infectantes, no en contenedor rígido.",
+                    "Bisturíes y agujas son residuos cortopunzantes, con alto riesgo de heridas y transmisión de infecciones (hepatitis B, C, VIH); deben descartarse en contenedores rígidos de seguridad — es la respuesta correcta.",
+                    "Los envases de medicamentos son residuos químicos o comunes, sin riesgo cortopunzante.",
+                    "Las cajas de insumos son residuos comunes o reciclables, no cortopunzantes."
+                ],
+                "fantasma": [
+                    "Esa va en bolsa, no en caja rígida.",
+                    "¡Esta! Cortopunzante, va en caja rígida de seguridad.",
+                    "Ese es residuo común o químico.",
+                    "Ese es residuo común."
+                ],
+                "gato": [
+                    "Fijate: va en bolsa.",
+                    "¡Ronroneo de aprobación! Caja rígida de seguridad.",
+                    "Dato curioso: residuo común.",
+                    "Miau, residuo común."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -2283,7 +2603,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Prueba de intradermoreacción.  \nEsse teste imunológico detecta a sensibilização celular a antígenos fúngicos, sendo ideal para estudos epidemiológicos de prevalência e controle de focos em micoses sistêmicas endêmicas.  \n\nOutras opções:  \nA. Cultivo é padrão para diagnóstico ativo, mas não para prevalência ou infecções latentes.  \nB. PCR detecta DNA fúngico em infecções ativas, não em exposições passadas.  \nD. Exame microscópico de esputo é útil só em casos sintomáticos, não para estudos populacionais."
+            "feedback": "Resposta correta: C. Prueba de intradermoreacción.  \nEsse teste imunológico detecta a sensibilização celular a antígenos fúngicos, sendo ideal para estudos epidemiológicos de prevalência e controle de focos em micoses sistêmicas endêmicas.  \n\nOutras opções:  \nA. Cultivo é padrão para diagnóstico ativo, mas não para prevalência ou infecções latentes.  \nB. PCR detecta DNA fúngico em infecções ativas, não em exposições passadas.  \nD. Exame microscópico de esputo é útil só em casos sintomáticos, não para estudos populacionais.",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo es el estándar para diagnóstico activo, pero no para evaluar prevalencia o infecciones latentes.",
+                    "La PCR detecta ADN fúngico en infecciones activas, no en exposiciones pasadas.",
+                    "La prueba de intradermorreacción detecta la sensibilización celular a antígenos fúngicos, siendo ideal para estudios epidemiológicos de prevalencia — es la respuesta correcta.",
+                    "El examen microscópico de esputo es útil solo en casos sintomáticos, no para estudios poblacionales."
+                ],
+                "fantasma": [
+                    "Ese es diagnóstico activo, no de prevalencia.",
+                    "Esa detecta infección activa, no pasada.",
+                    "¡Esta! Detecta quién ya tuvo contacto, ideal para prevalencia.",
+                    "Ese solo sirve si hay síntomas."
+                ],
+                "gato": [
+                    "Fijate: es activo.",
+                    "Dato curioso: es activa.",
+                    "¡Ronroneo de aprobación! Detecta contacto pasado.",
+                    "Miau, solo con síntoma."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -2309,7 +2649,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Um teste com alta especificidade identifica corretamente os indivíduos sem a doença, descartando infecção em pacientes sãos quando o resultado é negativo.  \n\n**Outras opções:**  \nA e B estão incorretas por se referirem à sensibilidade, que avalia a detecção de doentes, não a especificidade.  \nC está errada porque testes para triagem precisam ter alta sensibilidade, não alta especificidade, que é usada para confirmação diagnóstica."
+            "feedback": "**Resposta Correta:** D. Um teste com alta especificidade identifica corretamente os indivíduos sem a doença, descartando infecção em pacientes sãos quando o resultado é negativo.  \n\n**Outras opções:**  \nA e B estão incorretas por se referirem à sensibilidade, que avalia a detecção de doentes, não a especificidade.  \nC está errada porque testes para triagem precisam ter alta sensibilidade, não alta especificidade, que é usada para confirmação diagnóstica.",
+            "explicacoes": {
+                "robo": [
+                    "Detectar la capacidad de identificar a un sujeto enfermo corresponde a la sensibilidad, no a la especificidad.",
+                    "Medir la proporción de infectados identificados corresponde a la sensibilidad, no a la especificidad.",
+                    "Las pruebas de tamizaje requieren alta sensibilidad, no alta especificidad, que se usa para confirmación diagnóstica.",
+                    "Un test con alta especificidad, cuando es negativo, descarta infección en pacientes sanos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es de la sensibilidad.",
+                    "Eso es de la sensibilidad también.",
+                    "Tamizaje quiere sensibilidad, no especificidad.",
+                    "¡Esta! Negativo con alta especificidad, descarta infección."
+                ],
+                "gato": [
+                    "Fijate: es sensibilidad.",
+                    "Dato curioso: es sensibilidad.",
+                    "Miau, es sensibilidad la de tamizaje.",
+                    "¡Ronroneo de aprobación! Descarta infección si es negativo."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -2335,7 +2695,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. A frase indica que maior valor reduz a infecção, o que define especificidade, não sensibilidade. Sensibilidade é a capacidade do teste identificar corretamente os infectados (verdadeiros positivos). As alternativas A, B e D descrevem corretamente a sensibilidade: A define sua função; B destaca seu uso em triagens para evitar falsos negativos; D reforça que alta sensibilidade detecta a maioria dos infectados. Assim, apenas a alternativa C está incorreta ao confundir sensibilidade com especificidade."
+            "feedback": "Resposta correta: C. A frase indica que maior valor reduz a infecção, o que define especificidade, não sensibilidade. Sensibilidade é a capacidade do teste identificar corretamente os infectados (verdadeiros positivos). As alternativas A, B e D descrevem corretamente a sensibilidade: A define sua função; B destaca seu uso em triagens para evitar falsos negativos; D reforça que alta sensibilidade detecta a maioria dos infectados. Assim, apenas a alternativa C está incorreta ao confundir sensibilidade com especificidade.",
+            "explicacoes": {
+                "robo": [
+                    "Indicar la capacidad de detectar a un sujeto enfermo efectivamente define la sensibilidad.",
+                    "Ser de elección como tamizaje en bancos de sangre efectivamente destaca el uso de la sensibilidad.",
+                    "Esta frase indica que a mayor valor, menor infección, lo cual define la especificidad, no la sensibilidad — esta es la excepción.",
+                    "Cuando el valor es elevado, detectar a la mayoría de los infectados efectivamente refuerza la definición de sensibilidad."
+                ],
+                "fantasma": [
+                    "Esa sí define sensibilidad.",
+                    "Esa sí es de sensibilidad.",
+                    "¡Esta! Eso es especificidad, no sensibilidad.",
+                    "Esa sí es de sensibilidad."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "¡Ronroneo de aprobación! Eso es especificidad.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 60,
@@ -2361,7 +2741,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A está incorreta. Objetos cortopunzantes contaminados não devem ser descartados apenas em sacos vermelhos, mas em recipientes rígidos específicos (\"sharps containers\") para evitar perfurações e contaminações. As opções B, C e D estão corretas: agulhas não devem ser dobradas ou recapsuladas (B); agulhas, lâminas e ampolas de vidro são resíduos perfurocortantes que exigem descarte adequado (C); e no ambiente hospitalar, esses resíduos devem ser eliminados em recipientes rígidos resistentes (D)."
+            "feedback": "Resposta correta: A está incorreta. Objetos cortopunzantes contaminados não devem ser descartados apenas em sacos vermelhos, mas em recipientes rígidos específicos (\"sharps containers\") para evitar perfurações e contaminações. As opções B, C e D estão corretas: agulhas não devem ser dobradas ou recapsuladas (B); agulhas, lâminas e ampolas de vidro são resíduos perfurocortantes que exigem descarte adequado (C); e no ambiente hospitalar, esses resíduos devem ser eliminados em recipientes rígidos resistentes (D).",
+            "explicacoes": {
+                "robo": [
+                    "Los objetos cortopunzantes contaminados NO deben descartarse solo en bolsa roja, sino en recipientes rígidos específicos para evitar perforaciones — esta es la opción incorrecta.",
+                    "Las agujas efectivamente no deben doblarse, romperse ni reencapsularse.",
+                    "Agujas, hojas de bisturí y ampollas de vidrio efectivamente son residuos cortopunzantes que exigen descarte adecuado.",
+                    "En el medio hospitalario, estos residuos efectivamente se eliminan en dispositivos rígidos."
+                ],
+                "fantasma": [
+                    "¡Esta! Eso va en recipiente rígido, no solo en bolsa.",
+                    "Esa está bien, no doblar ni reencapsular.",
+                    "Esa está bien, esos residuos van ahí.",
+                    "Esa está bien, dispositivo rígido."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Recipiente rígido, no solo bolsa.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 61,

@@ -1234,7 +1234,27 @@
             "BLACK BAGZ4/ Sacos de soro vazios e não contaminados",
             "SHARP DISCARDER/Lancetas e bisturi",
             "SACO AMARELO/Máscaras e aventais utilizados na sala cirúrgica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Restos cirúrgicos de biópsias de fato são descartados em saco vermelho.",
+                "Bolsas de soro vazias e sem contaminação de fato vão em saco preto.",
+                "Lancetas e bisturi de fato vão em descartador de cortopunzantes.",
+                "Máscaras e aventais usados no centro cirúrgico são materiais potencialmente contaminados e devem ir em saco vermelho, não em saco amarelo — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, vermelho.",
+                "Essa está certa, preto.",
+                "Essa está certa, descartador.",
+                "Essa aí! Isso vai em saco vermelho, não amarelo."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! É vermelho, não amarelo."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à classificação dos microrganismos infecciosos por grupos de risco. Indique a associação INCORRETA:",
@@ -1245,7 +1265,27 @@
             "GRUPO 2/ Vírus do sarampo, vírus da hepatite/ risco individual moderado, baixo risco populacional",
             "GRUPO 3/Rickettsia spp, vírus da raiva, Brucella spp. / Alto risco individual, baixo risco populacional",
             "GRUPO 4/ Junín, vírus Lassa, vírus da febre aftosa/ população elevada, risco individual"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Bacillus cereus, Listeria monocytogenes e M. tuberculosis NÃO pertencem ao Grupo 1 (risco mínimo); Listeria e M. tuberculosis são patógenos graves dos Grupos 2 e 3, respectivamente, e B. cereus causa intoxicações alimentares — essa é a associação incorreta.",
+                "O Grupo 2 (sarampo, hepatite) de fato apresenta risco individual moderado e risco populacional baixo.",
+                "O Grupo 3 (Rickettsia, raiva, Brucella) de fato apresenta risco individual elevado com risco populacional baixo.",
+                "O Grupo 4 (Junín, Lassa, febre aftosa) de fato apresenta risco individual e populacional elevado."
+            ],
+            "fantasma": [
+                "Essa aí! Esses não são risco mínimo, são patógenos sérios.",
+                "Essa está certa, risco moderado.",
+                "Essa está certa, risco alto individual.",
+                "Essa está certa, risco alto em tudo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Não são de risco mínimo.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "São considerados métodos de esterilização química, EXCETO:",
@@ -1255,7 +1295,27 @@
             "CALOR HÚMIDO",
             "GLUTARALDEÍDO",
             "FORMALDEÍDO"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O peróxido de hidrogênio (plasma gasoso) de fato é um método químico, gera radicais livres.",
+                "O calor úmido esteriliza por vapor sob pressão, um método FÍSICO, sem agentes químicos — essa é a exceção.",
+                "O glutaraldeído de fato é um método químico, alquila proteínas e ácidos nucleicos.",
+                "O formaldeído de fato é um método químico, fixa proteínas inativando microrganismos."
+            ],
+            "fantasma": [
+                "Esse sim é químico.",
+                "Essa aí! O calor úmido é físico, não químico.",
+                "Esse sim é químico.",
+                "Esse sim é químico."
+            ],
+            "gato": [
+                "Fijate: químico.",
+                "Ronronado de aprovação! É físico, a exceção.",
+                "Dado curioso: químico.",
+                "Miau, químico."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é propriedade de um teste diagnóstico com alta especificidade?",
@@ -1265,7 +1325,27 @@
             "É capaz de detectar qualquer tipo de microrganismo",
             "Identifica corretamente indivíduos saudáveis",
             "Mede a proporção (%) de pessoas infectadas que são identificadas com o teste em estudo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Identificar a maioria dos infectados corresponde à sensibilidade, não à especificidade.",
+                "Detectar qualquer tipo de microrganismo se relaciona ao espectro do teste, não à especificidade.",
+                "A especificidade é a capacidade do teste de identificar corretamente os indivíduos saudáveis (verdadeiros negativos), evitando falsos positivos — é a resposta correta.",
+                "Medir a proporção de infectados identificados corresponde à sensibilidade, não à especificidade."
+            ],
+            "fantasma": [
+                "Isso é da sensibilidade.",
+                "Isso é do espectro, outra coisa.",
+                "Essa aí! Identifica bem os saudáveis, isso é especificidade.",
+                "Isso é da sensibilidade também."
+            ],
+            "gato": [
+                "Fijate: é sensibilidade.",
+                "Dado curioso: é outra coisa.",
+                "Ronronado de aprovação! Identifica bem os saudáveis.",
+                "Miau, é sensibilidade."
+            ]
+        }
     },
     {
         "pergunta": "Os seguintes desinfetantes podem ser usados ​​como anti-sépticos. EXCETO:",
@@ -1275,7 +1355,27 @@
             "Clorexidina 2%",
             "Triclosan 0,5%",
             "Peróxido de hidrogênio (25%)"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O álcool a 70% de fato é um antisséptico eficaz e seguro nessa concentração.",
+                "A clorexidina a 2% de fato é um antisséptico eficaz e seguro.",
+                "O triclosan a 0,5% de fato é um antisséptico eficaz e seguro.",
+                "O peróxido de hidrogênio a 25% é corrosivo e tóxico para os tecidos humanos; as concentrações seguras para antissepsia são de cerca de 3% — essa é a exceção."
+            ],
+            "fantasma": [
+                "Esse sim serve de antisséptico.",
+                "Esse sim serve de antisséptico.",
+                "Esse sim serve de antisséptico.",
+                "Essa aí! A 25% queima o tecido, não serve assim."
+            ],
+            "gato": [
+                "Fijate: serve.",
+                "Dado curioso: serve.",
+                "Miau, serve.",
+                "Ronronado de aprovação! Queima o tecido nessa dose."
+            ]
+        }
     },
     {
         "pergunta": "Durante o inverno, observa-se uma diminuição na incidência do número de infecções transmitidas por artrópodes. Diante disso, indique quais dos seguintes parâmetros podem ser modificados para a mesma técnica diagnóstica. (marque a opção CORRETA):",
@@ -1286,7 +1386,27 @@
             "Valores preditivos negativos.",
             "A sensibilidade",
             "A capacidade de detectar a maioria dos indivíduos com infecção"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A especificidade é uma característica fixa do teste, não influenciada pela prevalência ou pela estação.",
+                "O valor preditivo negativo (VPN) varia conforme a prevalência; com menor incidência no inverno, o VPN aumenta — é a resposta correta.",
+                "A sensibilidade é uma característica fixa do teste, não influenciada pela prevalência ou pela estação.",
+                "A capacidade de detectar a maioria dos infectados (sensibilidade) também permanece constante independentemente da estação."
+            ],
+            "fantasma": [
+                "Essa é fixa, não muda.",
+                "Essa aí! O VPN sobe quando cai a incidência.",
+                "Essa é fixa também.",
+                "Isso é a sensibilidade, fixa também."
+            ],
+            "gato": [
+                "Fijate: fixa.",
+                "Ronronado de aprovação! Sobe com menos incidência.",
+                "Dado curioso: fixa.",
+                "Miau, é sensibilidade."
+            ]
+        }
     },
     {
         "pergunta": "A seguir estão as características de um teste diagnóstico com alta especificidade, EXCETO",
@@ -1296,7 +1416,27 @@
             "Mede a proporção (%) de não infectados identificados pelo teste no estudo",
             "Eles são usados ​​como testes de triagem para uma determinada doença.",
             "Ao aumentar a especificidade, os falsos positivos diminuem"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Indicar a capacidade de identificar como saudáveis é de fato uma característica de alta especificidade.",
+                "Medir a proporção de não infectados identificados é de fato uma característica de alta especificidade.",
+                "Testes de triagem priorizam alta sensibilidade, não alta especificidade, para detectar mais casos — essa é a exceção, a opção incorreta.",
+                "Aumentar a especificidade de fato diminui os falsos positivos."
+            ],
+            "fantasma": [
+                "Essa sim é de alta especificidade.",
+                "Essa sim é de alta especificidade.",
+                "Essa aí! Triagem quer sensibilidade, não especificidade.",
+                "Essa sim é de alta especificidade."
+            ],
+            "gato": [
+                "Fijate: sim é.",
+                "Dado curioso: sim é.",
+                "Ronronado de aprovação! Triagem quer sensibilidade.",
+                "Miau, sim é."
+            ]
+        }
     },
     {
         "pergunta": "As variáveis ​​a seguir descrevem recomendações para o uso de antissépticos. EXCETO:",
@@ -1306,7 +1446,27 @@
             "Preparar a pele para procedimentos invasivos",
             "Lavagem cirúrgica das mãos",
             "Após manusear material contaminado."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Objetos críticos como equipamentos de hemodiálise devem ser esterilizados, não tratados com antissépticos; antissépticos são para tecidos vivos, não para esterilizar objetos — essa é a exceção.",
+                "Preparar a pele para procedimentos invasivos é de fato um uso correto de antissépticos.",
+                "A lavagem cirúrgica das mãos é de fato um uso correto de antissépticos.",
+                "Usar antissépticos após manipular material contaminado é de fato uma recomendação correta."
+            ],
+            "fantasma": [
+                "Essa aí! Objeto crítico se esteriliza, não se usa antisséptico.",
+                "Essa está certa, uso correto.",
+                "Essa está certa, uso correto.",
+                "Essa está certa, uso correto."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Objeto crítico se esteriliza.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à classificação dos microrganismos infecciosos por grupos de risco. Indique a associação CORRETA:",
@@ -1317,7 +1477,27 @@
             "GRUPO 2/ Vírus da raiva/ risco individual moderado, baixo risco populacional",
             "GRUPO 3/ Vírus do Sarampo / Alto risco individual, baixo risco populacional",
             "GRUPO 4/ Vírus Lassa / população elevada, risco individual"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Mycobacterium tuberculosis pertence ao Grupo 3, com risco individual elevado e populacional moderado a alto, não ao Grupo 1.",
+                "O vírus da raiva pertence ao Grupo 3, com risco individual elevado e populacional moderado, não ao Grupo 2.",
+                "O vírus do sarampo pertence ao Grupo 3, com risco individual e populacional elevados, não com risco populacional baixo.",
+                "O vírus Lassa pertence ao Grupo 4, com risco individual e populacional elevados, causando doença grave sem tratamento eficaz — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse é grupo 3, não grupo 1.",
+                "Esse é grupo 3, não grupo 2.",
+                "Esse é grupo 3, com mais risco populacional.",
+                "Essa aí! Lassa, grupo 4, sem tratamento eficaz."
+            ],
+            "gato": [
+                "Fijate: grupo 3.",
+                "Dado curioso: grupo 3.",
+                "Miau, mais risco.",
+                "Ronronado de aprovação! Lassa, grupo 4."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao controle do desenvolvimento microbiano, indique a relação INCORRETA:",
@@ -1328,7 +1508,27 @@
             "Termômetros para uso oral ou retal/desinfetantes semicríticos/de nível médio:",
             "Bisturis e agulhas hipodérmicas/crítica/esterilização por meios físicos, como incineração",
             "Fibrobroncoscópio/não crítico/desinfecção com detergentes."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As máscaras faciais de fato são não críticas e a desinfecção com álcool 70 é adequada.",
+                "Os termômetros orais ou retais de fato são semicríticos com desinfecção de nível médio adequada.",
+                "Bisturis e agulhas de fato são críticos, exigindo esterilização física como a incineração.",
+                "O fibrobroncoscópio é SEMICRÍTICO (toca mucosas), exige desinfecção de ALTO nível; detergentes são insuficientes — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, não crítico com álcool.",
+                "Essa está certa, semicrítico.",
+                "Essa está certa, crítico com esterilização.",
+                "Essa aí! Toca mucosa, precisa de nível alto, não detergente."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Nível alto, não detergente."
+            ]
+        }
     },
     {
         "pergunta": "Quanto às associações sobre métodos e materiais de esterilização, indique a opção INCORRETA:",
@@ -1339,7 +1539,27 @@
             "Glutaraldeído/remoção de resíduos infecciosos.",
             "Calor úmido: vapor d'água a 121*C a 1 atm por 30 min (autoclave)/Material cirúrgico reutilizável.",
             "Radiação UV/desinfeção de superfícies."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O formaldeído de fato é adequado para esterilizar equipamentos de hemodiálise.",
+                "O glutaraldeído é usado para esterilizar/desinfetar instrumentos sensíveis ao calor, não para eliminar resíduos infecciosos, que exigem processos como incineração ou autoclavagem — essa é a opção incorreta.",
+                "O calor úmido em autoclave (121°C, 1 atm, 30 min) de fato é o padrão para esterilizar material cirúrgico reutilizável.",
+                "A radiação UV de fato desinfeta superfícies danificando o material genético microbiano."
+            ],
+            "fantasma": [
+                "Essa está certa, hemodiálise.",
+                "Essa aí! Glutaraldeído não é pra descartar resíduo.",
+                "Essa está certa, autoclave.",
+                "Essa está certa, superfícies."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Não é pra descartar resíduo.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "São meios de transporte adequados para amostras bacteriológicas, EXCETO:",
@@ -1349,7 +1569,27 @@
             "Cary Blair Médio",
             "Formol",
             "Meio para anaeróbios (PRAS)"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O meio de Stuart de fato preserva a viabilidade bacteriana retardando o crescimento.",
+                "O meio de Cary Blair de fato mantém os microrganismos viáveis, especialmente enterobactérias.",
+                "O formol fixa e mata as bactérias, inviabilizando o transporte para cultivo — essa é a exceção.",
+                "O meio PRAS de fato mantém anaeróbios vivos em ambiente livre de oxigênio."
+            ],
+            "fantasma": [
+                "Esse sim serve de transporte.",
+                "Esse sim serve de transporte.",
+                "Essa aí! O formol mata a bactéria, não serve de transporte.",
+                "Esse sim serve de transporte."
+            ],
+            "gato": [
+                "Fijate: serve.",
+                "Dado curioso: serve.",
+                "Ronronado de aprovação! O formol mata a bactéria.",
+                "Miau, serve."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes desinfetantes é de nível médio e elimina o Mycobacterium tuberculosis?",
@@ -1359,7 +1599,27 @@
             "Clorexidina",
             "Cloreto de benzalcônio",
             "Triclosan."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os anfóteros são detergentes de baixo poder antimicrobiano, ineficazes contra micobactérias.",
+                "A clorexidina é um desinfetante de nível médio eficaz contra bactérias gram-positivas, gram-negativas, vírus lipofílicos e micobactérias como M. tuberculosis — é a resposta correta.",
+                "O cloreto de benzalcônio tem ação limitada contra micobactérias, insuficiente para eliminar M. tuberculosis.",
+                "O triclosan é bacteriostático e não eficaz contra micobactérias."
+            ],
+            "fantasma": [
+                "Esse é fraco, não serve contra micobactéria.",
+                "Essa aí! A clorexidina, nível médio, mata a TB.",
+                "Esse tem ação limitada, não alcança.",
+                "Esse só freia, não mata a micobactéria."
+            ],
+            "gato": [
+                "Fijate: fraco.",
+                "Ronronado de aprovação! Clorexidina mata a TB.",
+                "Dado curioso: limitado.",
+                "Miau, só freia."
+            ]
+        }
     },
     {
         "pergunta": "Os seguintes parâmetros são intrínsecos a um teste diagnóstico, EXCETO:",
@@ -1369,7 +1629,27 @@
             "Especificidade",
             "valor preditivo positivo",
             "Prevalência"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A sensibilidade de fato é uma característica intrínseca e fixa do teste.",
+                "A especificidade de fato é uma característica intrínseca e fixa do teste.",
+                "O valor preditivo positivo depende da prevalência, mas reflete o desempenho do teste em um contexto específico.",
+                "A prevalência é a proporção de indivíduos com a doença numa população, dependendo do contexto epidemiológico, não das propriedades do teste — essa é a exceção."
+            ],
+            "fantasma": [
+                "Essa é própria do teste.",
+                "Essa é própria do teste.",
+                "Essa depende um pouco da prevalência, mas é do teste.",
+                "Essa aí! Isso é do contexto epidemiológico, não do teste."
+            ],
+            "gato": [
+                "Fijate: própria.",
+                "Dado curioso: própria.",
+                "Miau, quase própria.",
+                "Ronronado de aprovação! É do contexto, não do teste."
+            ]
+        }
     },
     {
         "pergunta": "Com relação aos microrganismos relacionados ao seu correspondente nível de segurança, indique a opção CORRETA:",
@@ -1380,7 +1660,27 @@
             "Mycobacterium tuberculose! GRUPO 1/ Pouco ou nenhum risco individual e populacional",
             "Vírus Junin/ GRUPO 4/ ALTO/ Alto risco individual e populacional.",
             "Bacillus cereus/GRUPO 3/ Alto risco individual, baixo risco populacional."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Escherichia coli K12 é não patogênica, pertence ao Grupo 1, com risco baixo, não moderado.",
+                "Mycobacterium tuberculosis pertence ao Grupo 3, com risco elevado individual e moderado populacional, não ao Grupo 1.",
+                "O vírus Junín, agente da febre hemorrágica argentina, pertence ao Grupo 4, com risco individual e populacional elevados, exigindo biossegurança nível 4 — é a resposta correta.",
+                "Bacillus cereus pertence ao Grupo 2, com risco moderado individual e baixo populacional, não ao Grupo 3."
+            ],
+            "fantasma": [
+                "Essa cepa é grupo 1, risco baixo.",
+                "Essa é grupo 3, risco alto.",
+                "Essa aí! Junín, grupo 4, febre hemorrágica argentina.",
+                "Esse é grupo 2, risco moderado."
+            ],
+            "gato": [
+                "Fijate: grupo 1.",
+                "Dado curioso: grupo 3.",
+                "Ronronado de aprovação! Junín, grupo 4.",
+                "Miau, grupo 2."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes resíduos deve ser descartado em um recipiente rígido de segurança? Selecione a opção CORRETA:",
@@ -1391,7 +1691,27 @@
             "Bisturis e agulhas",
             "Recipientes de medicamentos",
             "Caixas de suprimentos médicos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Gaze contaminada é infectante, mas não cortopunzante, e vai em sacos para resíduos infectantes, não em recipiente rígido.",
+                "Bisturis e agulhas são resíduos perfurocortantes, com alto risco de ferimentos e transmissão de infecções (hepatite B, C, HIV); devem ser descartados em contêineres rígidos de segurança — é a resposta correta.",
+                "Embalagens de medicamentos são resíduos químicos ou comuns, sem risco perfurocortante.",
+                "Caixas de insumos são resíduos comuns ou recicláveis, não perfurocortantes."
+            ],
+            "fantasma": [
+                "Essa vai em saco, não em caixa rígida.",
+                "Essa aí! Cortopunzante, vai em caixa rígida de segurança.",
+                "Esse é resíduo comum ou químico.",
+                "Essa é resíduo comum."
+            ],
+            "gato": [
+                "Fijate: vai em saco.",
+                "Ronronado de aprovação! Caixa rígida de segurança.",
+                "Dado curioso: resíduo comum.",
+                "Miau, resíduo comum."
+            ]
+        }
     },
     {
         "pergunta": "Se você quiser avaliar a prevalência ou a catástrofe",
@@ -1402,7 +1722,27 @@
             "Procure o genoma do fungo por PCR",
             "Teste de intradermoreação",
             "Coleta de amostra de escarro e observação microscópica da etiologia em questão."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O cultivo é o padrão para diagnóstico ativo, mas não para avaliar prevalência ou infecções latentes.",
+                "A PCR detecta DNA fúngico em infecções ativas, não em exposições passadas.",
+                "A prova de intradermorreação detecta a sensibilização celular a antígenos fúngicos, sendo ideal para estudos epidemiológicos de prevalência — é a resposta correta.",
+                "O exame microscópico de escarro é útil só em casos sintomáticos, não para estudos populacionais."
+            ],
+            "fantasma": [
+                "Esse é diagnóstico ativo, não de prevalência.",
+                "Essa detecta infecção ativa, não passada.",
+                "Essa aí! Detecta quem já teve contato, ideal pra prevalência.",
+                "Esse só serve se tiver sintoma."
+            ],
+            "gato": [
+                "Fijate: é ativo.",
+                "Dado curioso: é ativa.",
+                "Ronronado de aprovação! Detecta contato passado.",
+                "Miau, só com sintoma."
+            ]
+        }
     },
     {
         "pergunta": "Com relação às propriedades intrínsecas das técnicas utilizadas, qual das seguintes está associada à ESPECIFICIDADE de uma técnica específica utilizada, indique a opção CORRETA:",
@@ -1413,7 +1753,27 @@
             "Mede a proporção (%) de pessoas infectadas que são identificadas com o teste em estudo",
             "Uma técnica tem alta especificidade e é usada como método de triagem de escolha.",
             "Quando negativo, descarta infecção em pacientes saudáveis."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Detectar a capacidade de identificar um sujeito doente corresponde à sensibilidade, não à especificidade.",
+                "Medir a proporção de infectados identificados corresponde à sensibilidade, não à especificidade.",
+                "Testes de triagem exigem alta sensibilidade, não alta especificidade, que é usada para confirmação diagnóstica.",
+                "Um teste com alta especificidade, quando negativo, descarta infecção em pacientes sãos — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é da sensibilidade.",
+                "Isso é da sensibilidade também.",
+                "Triagem quer sensibilidade, não especificidade.",
+                "Essa aí! Negativo com alta especificidade, descarta infecção."
+            ],
+            "gato": [
+                "Fijate: é sensibilidade.",
+                "Dado curioso: é sensibilidade.",
+                "Miau, é sensibilidade a de triagem.",
+                "Ronronado de aprovação! Descarta infecção se negativo."
+            ]
+        }
     },
     {
         "pergunta": "Com relação aos indicadores estatísticos básicos para avaliar o desempenho de um teste diagnóstico, estão associadas à propriedade SENSIBILIDADE as seguintes definições, EXCETO:",
@@ -1423,7 +1783,27 @@
             "Eles são escolhidos como método de triagem em bancos de sangue.",
             "Quanto maior o valor, maior a probabilidade de um indivíduo não apresentar a infecção.",
             "Quando seu valor é alto, tem a capacidade de detectar a maioria dos indivíduos infectados."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Indicar a capacidade de detectar um sujeito doente de fato define a sensibilidade.",
+                "Ser de escolha como triagem em bancos de sangue de fato destaca o uso da sensibilidade.",
+                "Essa frase indica que quanto maior o valor, menor a infecção, o que define especificidade, não sensibilidade — essa é a exceção.",
+                "Quando o valor é elevado, detectar a maioria dos infectados de fato reforça a definição de sensibilidade."
+            ],
+            "fantasma": [
+                "Essa sim define sensibilidade.",
+                "Essa sim é de sensibilidade.",
+                "Essa aí! Isso é especificidade, não sensibilidade.",
+                "Essa sim é de sensibilidade."
+            ],
+            "gato": [
+                "Fijate: sim é.",
+                "Dado curioso: sim é.",
+                "Ronronado de aprovação! Isso é especificidade.",
+                "Miau, sim é."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à eliminação de resíduos biopatogênicos de objetos perfurocortantes, indique a opção INCORRETA:",
@@ -1434,7 +1814,27 @@
             "As agulhas devem ser descartadas, NÃO dobradas, quebradas ou recolocadas.",
             "Agulhas, lâminas de bisturi e frascos de vidro devem ser descartados.",
             "No ambiente hospitalar são descartados em dispositivos rígidos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Objetos cortopunzantes contaminados NÃO devem ser descartados apenas em saco vermelho, mas em recipientes rígidos específicos para evitar perfurações — essa é a opção incorreta.",
+                "As agulhas de fato não devem ser dobradas, quebradas ou recapeadas.",
+                "Agulhas, lâminas de bisturi e ampolas de vidro de fato são resíduos perfurocortantes que exigem descarte adequado.",
+                "No ambiente hospitalar, esses resíduos de fato são eliminados em dispositivos rígidos."
+            ],
+            "fantasma": [
+                "Essa aí! Isso vai em recipiente rígido, não só em saco.",
+                "Essa está certa, não dobrar nem recapear.",
+                "Essa está certa, esses resíduos vão aí.",
+                "Essa está certa, dispositivo rígido."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Recipiente rígido, não só saco.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à avaliação da sensibilidade antibiótica in vitro ao Streptococcus pneumoniae, indique a opção CORRETA:",
