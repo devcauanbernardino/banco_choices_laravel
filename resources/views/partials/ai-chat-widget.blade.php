@@ -9,6 +9,12 @@
     $bcChatTitle = $bcChatMascoteKey ? __('mascote.'.$bcChatMascoteKey.'.nome') : __('ia_chat.title');
     $bcChatWelcome = $bcChatMascoteKey ? __('ia_chat.welcome', ['nome' => $bcChatTitle]) : __('ia_chat.welcome_generic');
 @endphp
+<style>
+    /* Abaixo de lg a barra inferior fixa (.app-mobile-bottom) ocupa esse canto — sobe o widget pra não sobrepor o botão "Mais". */
+    @media (max-width: 991.98px) {
+        #bcAiChatWidget { bottom: calc(var(--app-mobile-nav-h, 80px) + 12px) !important; }
+    }
+</style>
 <div id="bcAiChatWidget" style="position:fixed; right:20px; bottom:20px; z-index:1050; font-family:'Inter',system-ui,sans-serif;">
     <button type="button" id="bcAiChatToggle" aria-label="{{ __('ia_chat.open_aria') }}"
             style="width:76px; height:76px; border-radius:50%; border:none; background:transparent; padding:0; display:flex; align-items:center; justify-content:center; cursor:pointer;">

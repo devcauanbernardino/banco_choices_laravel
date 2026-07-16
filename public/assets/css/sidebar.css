@@ -707,9 +707,18 @@ html:not([data-theme="dark"]) .perfil-card .app-sidebar-theme-row--sheet .app-si
   color: #fecaca !important;
 }
 
-/* Corpo do sheet “Mais”: empurra conta + sair para o fundo */
+/* Corpo do sheet “Mais”: lista de links que não couberam na barra inferior, com conta + sair fixados embaixo */
 .app-offcanvas-more-body {
   min-height: min(36vh, 16rem);
+}
+
+.app-offcanvas-more-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  overflow-y: auto;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
 }
 
 .app-offcanvas-account {

@@ -11,6 +11,10 @@
         ['route' => 'referral.show', 'symbol' => 'redeem', 'mobile_icon' => 'redeem', 'label' => __('nav.referrals'), 'short' => __('nav.referrals_short')],
         ['route' => 'addon.materias', 'symbol' => 'shopping_cart', 'mobile_icon' => 'add_shopping_cart', 'label' => __('nav.buy_subjects'), 'short' => __('nav.buy_subjects_short')],
     ];
+
+    // A barra inferior só cabe confortavelmente ~4 itens + "Mais" — o resto vai pro offcanvas.
+    $mobilePrimaryLinks = array_slice($navLinks, 0, 4);
+    $mobileMoreLinks = array_slice($navLinks, 4);
 @endphp
 
 {{-- Desktop sidebar — referência visual: stats curadoria (nav + CTA + utilizador) --}}
@@ -79,7 +83,17 @@
                 aria-label="{{ __('sidebar.close') }}"></button>
     </div>
     <div class="offcanvas-body app-offcanvas-more-body d-flex flex-column pb-4">
-        <div class="flex-grow-1 min-h-0" aria-hidden="true"></div>
+        <nav class="app-offcanvas-more-links flex-grow-1 min-h-0" aria-label="{{ __('sidebar.more_options') }}">
+            @foreach ($mobileMoreLinks as $link)
+                @php $active = request()->routeIs($link['route']); @endphp
+                <a class="app-sidebar-link{{ $active ? ' active' : '' }}"
+                   href="{{ route($link['route']) }}"
+                   @if($active) aria-current="page" @endif>
+                    <span class="material-icons" aria-hidden="true">{{ $link['mobile_icon'] }}</span>
+                    <span class="app-sidebar-link-text">{{ $link['label'] }}</span>
+                </a>
+            @endforeach
+        </nav>
 
         <div class="app-offcanvas-account flex-shrink-0 pt-1">
             <a href="{{ route('profile.show') }}" class="btn btn-outline-primary w-100 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 py-2 mb-2">
@@ -102,7 +116,7 @@
 {{-- Mobile bottom navigation --}}
 <nav class="app-mobile-bottom d-lg-none" aria-label="{{ __('nav.menu_aria') }}">
     <div class="app-mobile-bottom-inner">
-        @foreach ($navLinks as $link)
+        @foreach ($mobilePrimaryLinks as $link)
             @php $active = request()->routeIs($link['route']); @endphp
             <a class="app-mobile-bottom-item{{ $active ? ' active' : '' }}"
                href="{{ route($link['route']) }}"
