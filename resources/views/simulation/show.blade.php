@@ -27,6 +27,14 @@
 @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
 @keyframes slideIn { from { opacity:0; transform:translateX(12px); } to { opacity:1; transform:none; } }
 
+.qz-canvas { display:flex; gap:0; }
+.qz-aside { width:260px; flex-shrink:0; }
+@media (max-width: 900px) {
+    .qz-canvas { flex-direction:column; }
+    .qz-aside { width:100%; }
+    .qz-main { flex:none; }
+}
+
 .qz-opt { display:flex; flex-direction:column; gap:10px; padding:13px 16px; border-radius:13px; border:1.5px solid var(--app-border); background:var(--app-surface); cursor:pointer; transition:border-color .18s ease, background .18s ease, box-shadow .18s ease; }
 .qz-opt-row { display:flex; align-items:center; gap:12px; }
 .qz-opt:hover { border-color:rgba(106,3,146,.45); }
@@ -117,10 +125,10 @@
     </div>
 
     {{-- MAIN CANVAS --}}
-    <div style="flex:1; display:flex; gap:0; padding-top:58px; max-width:1280px; margin:0 auto; width:100%;">
+    <div class="qz-canvas" style="flex:1; padding-top:58px; max-width:1280px; margin:0 auto; width:100%;">
 
         {{-- QUESTION COLUMN --}}
-        <main style="flex:1; min-width:0; padding:clamp(20px,3vw,36px); display:flex; flex-direction:column; gap:20px; animation:fadeUp .5s ease both;">
+        <main class="qz-main" style="flex:1; min-width:0; padding:clamp(20px,3vw,36px); display:flex; flex-direction:column; gap:20px; animation:fadeUp .5s ease both;">
 
             <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
                 <nav aria-label="{{ __('quiz.breadcrumb_aria') }}" style="display:flex; align-items:center; gap:6px; font-size:.8rem; color:var(--app-muted);">
@@ -283,7 +291,7 @@
         </main>
 
         {{-- SIDEBAR --}}
-        <aside style="width:260px; flex-shrink:0; padding:clamp(16px,2.5vw,28px) clamp(16px,2vw,20px); padding-top:clamp(20px,3vw,36px); display:flex; flex-direction:column; gap:16px; animation:slideIn .5s .1s ease both;">
+        <aside class="qz-aside" style="padding:clamp(16px,2.5vw,28px) clamp(16px,2vw,20px); padding-top:clamp(20px,3vw,36px); display:flex; flex-direction:column; gap:16px; animation:slideIn .5s .1s ease both;">
 
             <div class="qz-card" style="border-radius:18px; padding:20px;">
                 <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
