@@ -5547,7 +5547,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta; a maioria dos vírus exantemáticos, como sarampo e rubéola, tem reservatório exclusivo em humanos, não em outros mamíferos. Isso é crucial para controle epidemiológico.  \n\n**Outras opções:**  \nA está correta: diagnóstico do sarampo é feito por RT-PCR do RNA viral.  \nB está correta: anticorpos IgM indicam infecção recente por rubéola, mas PCR confirma o diagnóstico.  \nD está correta: transmissão predominante é respiratória por gotículas, justificando medidas de controle."
+            "feedback": "**Resposta Correta:** C está incorreta; a maioria dos vírus exantemáticos, como sarampo e rubéola, tem reservatório exclusivo em humanos, não em outros mamíferos. Isso é crucial para controle epidemiológico.  \n\n**Outras opções:**  \nA está correta: diagnóstico do sarampo é feito por RT-PCR do RNA viral.  \nB está correta: anticorpos IgM indicam infecção recente por rubéola, mas PCR confirma o diagnóstico.  \nD está correta: transmissão predominante é respiratória por gotículas, justificando medidas de controle.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico de certeza de sarampión efectivamente puede realizarse evaluando ARN genómico mediante RT-PCR.",
+                    "Efectivamente, un resultado reactivo de IgM específica para rubéola se confirma mediante PCR.",
+                    "La mayoría de los virus exantemáticos, como sarampión y rubéola, tienen reservorio exclusivo en humanos, no en otros mamíferos — esta es la opción incorrecta.",
+                    "Efectivamente, la vía de transmisión predominante de estas enfermedades es respiratoria."
+                ],
+                "fantasma": [
+                    "Esa está bien, con RT-PCR.",
+                    "Esa está bien, PCR confirma.",
+                    "¡Esta! El reservorio es solo humano.",
+                    "Esa está bien, es respiratoria."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Solo humano.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -5573,7 +5593,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta porque o diagnóstico definitivo da celulite necrotizante exige cultura de tecido profundo, não de hisopado superficial, que pode estar contaminado.  \n\n**Outras opções:**  \nA está correta: Streptococcus pyogenes causa celulite necrotizante tipo II, infecção monomicrobiana e destruição rápida.  \nB está correta: celulite necrotizante tipo I é polimicrobiana, com anaeróbios e gram-negativos entéricos.  \nD está correta: Clostridium perfringens causa mionecrose gasosa com produção de gás e necrose muscular rápida."
+            "feedback": "**Resposta Correta:** C está incorreta porque o diagnóstico definitivo da celulite necrotizante exige cultura de tecido profundo, não de hisopado superficial, que pode estar contaminado.  \n\n**Outras opções:**  \nA está correta: Streptococcus pyogenes causa celulite necrotizante tipo II, infecção monomicrobiana e destruição rápida.  \nB está correta: celulite necrotizante tipo I é polimicrobiana, com anaeróbios e gram-negativos entéricos.  \nD está correta: Clostridium perfringens causa mionecrose gasosa com produção de gás e necrose muscular rápida.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pyogenes efectivamente es una causa común de celulitis necrotizante tipo II, con infección monomicrobiana.",
+                    "La celulitis necrotizante tipo I efectivamente suele ser polimicrobiana, con anaerobios y gramnegativos entéricos.",
+                    "El diagnóstico definitivo requiere cultivo de tejido profundo, no hisopado superficial, que puede estar contaminado — esta es la opción incorrecta.",
+                    "Clostridium perfringens efectivamente puede producir mionecrosis con gas abundante en partes blandas."
+                ],
+                "fantasma": [
+                    "Esa está bien, monomicrobiana.",
+                    "Esa está bien, polimicrobiana.",
+                    "¡Esta! Ese cultivo no sirve, hace falta profundo.",
+                    "Esa está bien, gas y mionecrosis."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Hace falta profundo.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -5599,7 +5639,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O cultivo do hispado superficial não é sensível nem recomendado para diagnosticar celulite, pois a pele possui microbiota normal que contamina a amostra. Cultivos eficazes vêm de aspiração ou biópsia da lesão, que refletem melhor o agente infeccioso.\n\n**Outras opções:**  \nA. Correta – Streptococcus pyogenes e Staphylococcus aureus são os principais agentes causadores.  \nB. Correta – Quebras na barreira cutânea facilitam a entrada bacteriana.  \nC. Correta – O cultivo do aspirado da lesão é método diagnóstico confiável."
+            "feedback": "**Resposta Correta:** D. O cultivo do hispado superficial não é sensível nem recomendado para diagnosticar celulite, pois a pele possui microbiota normal que contamina a amostra. Cultivos eficazes vêm de aspiração ou biópsia da lesão, que refletem melhor o agente infeccioso.\n\n**Outras opções:**  \nA. Correta – Streptococcus pyogenes e Staphylococcus aureus são os principais agentes causadores.  \nB. Correta – Quebras na barreira cutânea facilitam a entrada bacteriana.  \nC. Correta – O cultivo do aspirado da lesão é método diagnóstico confiável.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pyogenes y Staphylococcus aureus efectivamente son agentes etiológicos frecuentes.",
+                    "La disrupción de la barrera cutánea efectivamente es un factor predisponente.",
+                    "El diagnóstico microbiológico efectivamente se basa en el cultivo del aspirado de la lesión.",
+                    "El cultivo del hisopado superficial no es sensible ni recomendado para diagnosticar celulitis, ya que la piel posee microbiota normal que contamina la muestra; los cultivos eficaces provienen de la aspiración o biopsia de la lesión — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, agentes conocidos.",
+                    "Esa está bien, la piel rota.",
+                    "Esa está bien, aspirado con salina.",
+                    "¡Esta! Ese hisopado no sirve tanto."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No sirve tanto."
+                ]
+            }
         },
         {
             "numero": 54,
@@ -5625,7 +5685,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O eritema infeccioso causado pelo Parvovírus B19 não tem vacina disponível; a prevenção é por higiene e controle de contato.  \n\n**Outras opções:**  \nB está correta ao afirmar que o exantema do sarampo resulta da resposta imunológica, podendo causar imunossupressão temporária.  \nC está correta ao destacar que a rubéola congênita pode causar malformações fetais, especialmente no primeiro trimestre.  \nD está correta ao identificar o HHV-6 como causador do exantema súbito, caracterizado por febre alta seguida de erupção cutânea."
+            "feedback": "**Resposta Correta:** A. O eritema infeccioso causado pelo Parvovírus B19 não tem vacina disponível; a prevenção é por higiene e controle de contato.  \n\n**Outras opções:**  \nB está correta ao afirmar que o exantema do sarampo resulta da resposta imunológica, podendo causar imunossupressão temporária.  \nC está correta ao destacar que a rubéola congênita pode causar malformações fetais, especialmente no primeiro trimestre.  \nD está correta ao identificar o HHV-6 como causador do exantema súbito, caracterizado por febre alta seguida de erupção cutânea.",
+            "explicacoes": {
+                "robo": [
+                    "El eritema infeccioso causado por Parvovirus B19 no cuenta con vacuna disponible; la prevención se basa en higiene y control de contacto — esta es la opción incorrecta.",
+                    "Efectivamente, el exantema del sarampión resulta de la respuesta inmune frente a células infectadas, con inmunosupresión transitoria.",
+                    "Efectivamente, en la rubéola congénita el virus atraviesa la placenta y afecta el desarrollo fetal, especialmente en el primer trimestre.",
+                    "Efectivamente, el exantema súbito por HHV-6 aparece tras la caída de una fiebre elevada en lactantes."
+                ],
+                "fantasma": [
+                    "¡Esta! No hay vacuna para eso.",
+                    "Esa está bien, la respuesta inmune.",
+                    "Esa está bien, cruza la placenta.",
+                    "Esa está bien, tras la fiebre."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No hay vacuna.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -5651,7 +5731,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. O diagnóstico definitivo do sarampo não se baseia só na detecção de anticorpos IgM, pois pode haver falso-positivos. É necessária a combinação de métodos como RT-PCR, isolamento viral ou soroconversão de IgG.  \nOpções A, B e D estão corretas: A) o vírus pertence à família Paramyxoviridae, gênero Morbillivirus; B) a infecção gera imunidade duradoura; D) o sarampo pode causar complicações graves como encefalite pós-infecciosa e panencefalite esclerosante subaguda."
+            "feedback": "Resposta correta: C. O diagnóstico definitivo do sarampo não se baseia só na detecção de anticorpos IgM, pois pode haver falso-positivos. É necessária a combinação de métodos como RT-PCR, isolamento viral ou soroconversão de IgG.  \nOpções A, B e D estão corretas: A) o vírus pertence à família Paramyxoviridae, gênero Morbillivirus; B) a infecção gera imunidade duradoura; D) o sarampo pode causar complicações graves como encefalite pós-infecciosa e panencefalite esclerosante subaguda.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el virus del sarampión pertenece a la familia Paramyxoviridae y al género Morbillivirus.",
+                    "Efectivamente la inmunidad tras la infección es duradera y protectora de por vida.",
+                    "El diagnóstico de certeza no se basa únicamente en la detección de IgM, ya que puede haber falsos positivos; se requiere combinar métodos como RT-PCR, aislamiento viral o seroconversión de IgG — esta es la opción incorrecta.",
+                    "Efectivamente puede provocar complicaciones graves como encefalitis postinfecciosa o panencefalitis esclerosante subaguda."
+                ],
+                "fantasma": [
+                    "Esa está bien, Paramyxoviridae.",
+                    "Esa está bien, de por vida.",
+                    "¡Esta! No es solo con IgM.",
+                    "Esa está bien, esas complicaciones graves."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es solo eso.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -5677,7 +5777,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. A transmissão ocorre por inoculação traumática das formas miceliais (conídios) de Sporothrix, não pelas leveduras.\n\n**Resumo:** Sporothrix infecta por inoculação de conídios presentes no ambiente (solo, vegetais). Leveduras são a forma parasitária no tecido, não o agente transmitido.  \n**Opções A, B e C:** corretas. O complexo inclui espécies próximas; a infecção ocorre por trauma com material contaminado; a forma clínica mais comum é a linfocutânea com nódulos ao longo dos vasos linfáticos."
+            "feedback": "**Resposta Correta:** D está incorreta. A transmissão ocorre por inoculação traumática das formas miceliais (conídios) de Sporothrix, não pelas leveduras.\n\n**Resumo:** Sporothrix infecta por inoculação de conídios presentes no ambiente (solo, vegetais). Leveduras são a forma parasitária no tecido, não o agente transmitido.  \n**Opções A, B e C:** corretas. O complexo inclui espécies próximas; a infecção ocorre por trauma com material contaminado; a forma clínica mais comum é a linfocutânea com nódulos ao longo dos vasos linfáticos.",
+            "explicacoes": {
+                "robo": [
+                    "El complejo Sporothrix schenckii efectivamente incluye especies como S. brasiliensis y S. globosa.",
+                    "La infección efectivamente suele producirse por inoculación traumática con material vegetal contaminado.",
+                    "La forma clínica más común efectivamente es la esporotricosis linfocutánea, con nódulos que siguen trayectos linfáticos.",
+                    "La transmisión ocurre por inoculación traumática de las formas miceliales (conidios) de Sporothrix, no por las levaduras, que son la forma parasitaria en el tejido — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa está bien, incluye esas especies.",
+                    "Esa está bien, material vegetal.",
+                    "Esa está bien, la linfocutánea.",
+                    "¡Esta! Es por conidio, no por levadura."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es por conidio."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -5703,7 +5823,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. O desbridamento cirúrgico urgente com coleta de tecido para exame microbiológico é essencial na celulite necrotizante, permitindo remoção do tecido necrótico e identificação precisa dos patógenos para tratamento direcionado.  \nOpção B: Hemoculturas podem ser negativas e não são ferramentas principais para diagnóstico.  \nOpção C: Swabs superficiais não refletem a flora do tecido profundo e podem confundir o diagnóstico.  \nOpção D: Detecção de anticorpos antitoxina não é útil no diagnóstico agudo, pois a resposta imunológica demora e Clostridium perfringens não é o único agente causador."
+            "feedback": "Resposta correta: A. O desbridamento cirúrgico urgente com coleta de tecido para exame microbiológico é essencial na celulite necrotizante, permitindo remoção do tecido necrótico e identificação precisa dos patógenos para tratamento direcionado.  \nOpção B: Hemoculturas podem ser negativas e não são ferramentas principais para diagnóstico.  \nOpção C: Swabs superficiais não refletem a flora do tecido profundo e podem confundir o diagnóstico.  \nOpção D: Detecção de anticorpos antitoxina não é útil no diagnóstico agudo, pois a resposta imunológica demora e Clostridium perfringens não é o único agente causador.",
+            "explicacoes": {
+                "robo": [
+                    "El desbridamiento quirúrgico urgente con toma de muestra de tejido para estudio microbiológico es esencial en la celulitis necrotizante, permitiendo remover el tejido necrótico e identificar con precisión los patógenos — es la respuesta correcta.",
+                    "Los hemocultivos pueden ser negativos y no son la herramienta principal para el diagnóstico.",
+                    "El hisopado superficial no refleja la flora del tejido profundo y puede confundir el diagnóstico.",
+                    "La detección de anticuerpos antitoxina no es útil en el diagnóstico agudo, ya que la respuesta inmune tarda y Clostridium perfringens no es el único agente causal."
+                ],
+                "fantasma": [
+                    "¡Esta! Desbridamiento urgente con muestra, la correcta.",
+                    "Ese hemocultivo puede fallar.",
+                    "Ese hisopado no refleja lo profundo.",
+                    "Eso tarda mucho, no sirve al agudo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Desbridamiento con muestra.",
+                    "Fijate: puede fallar.",
+                    "Dato curioso: no refleja lo profundo.",
+                    "Miau, tarda mucho."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -5729,7 +5869,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta, pois a celulite afeta a derme profunda e tecido subcutâneo, não só a derme superficial. A celulite causa edema, eritema e calor, diferindo da erisipela, que é mais superficial. As opções A, B e D estão corretas: A) o cultivo do aspirado tem baixa sensibilidade (20-30%); B) os principais agentes são cocos Gram-positivos, como Streptococcus pyogenes e Staphylococcus aureus; D) fatores de risco incluem alterações vasculares e imunossupressão, como diabetes mellitus."
+            "feedback": "Resposta correta: C está incorreta, pois a celulite afeta a derme profunda e tecido subcutâneo, não só a derme superficial. A celulite causa edema, eritema e calor, diferindo da erisipela, que é mais superficial. As opções A, B e D estão corretas: A) o cultivo do aspirado tem baixa sensibilidade (20-30%); B) os principais agentes são cocos Gram-positivos, como Streptococcus pyogenes e Staphylococcus aureus; D) fatores de risco incluem alterações vasculares e imunossupressão, como diabetes mellitus.",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo del aspirado de la lesión efectivamente tiene una sensibilidad diagnóstica del 20 al 30%.",
+                    "Los agentes etiológicos más frecuentes efectivamente son cocos Gram positivos.",
+                    "La celulitis compromete la dermis PROFUNDA y el tejido subcutáneo, no la dermis superficial (que es más propia de la erisipela) — esta es la opción incorrecta.",
+                    "Los principales factores de riesgo efectivamente incluyen alteraciones vasculares y diabetes."
+                ],
+                "fantasma": [
+                    "Esa está bien, 20 a 30%.",
+                    "Esa está bien, cocos Gram positivos.",
+                    "¡Esta! Es la dermis profunda, no la superficial.",
+                    "Esa está bien, vascular y diabetes."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es profunda.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -5755,7 +5915,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A detecção de IgM não confirma Herpes-Zoster, pois é uma reativação viral em que IgM é pouco confiável. O diagnóstico é clínico, apoiado por PCR ou cultura viral.  \n\n**Outras opções:**  \nA está correta: sarampo e rubéola transmitem-se por gotículas respiratórias.  \nB está correta: pneumonia bacteriana é complicação comum do sarampo por imunossupressão.  \nD está correta: a vacina tríplice viral contém vírus atenuados que induzem imunidade eficaz."
+            "feedback": "**Resposta Correta:** C. A detecção de IgM não confirma Herpes-Zoster, pois é uma reativação viral em que IgM é pouco confiável. O diagnóstico é clínico, apoiado por PCR ou cultura viral.  \n\n**Outras opções:**  \nA está correta: sarampo e rubéola transmitem-se por gotículas respiratórias.  \nB está correta: pneumonia bacteriana é complicação comum do sarampo por imunossupressão.  \nD está correta: a vacina tríplice viral contém vírus atenuados que induzem imunidade eficaz.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente, la principal vía de transmisión de sarampión y rubéola es por secreciones respiratorias.",
+                    "Efectivamente, la neumonía bacteriana es una posible complicación tras la infección por sarampión.",
+                    "El diagnóstico de Herpes-Zóster no se confirma por detección de IgM específica, ya que se trata de una reactivación viral en la que la IgM es poco confiable; el diagnóstico es clínico, apoyado por PCR o cultivo viral — esta es la opción incorrecta.",
+                    "Efectivamente, la vacuna triple viral es una vacuna atenuada."
+                ],
+                "fantasma": [
+                    "Esa está bien, respiratoria.",
+                    "Esa está bien, complicación conocida.",
+                    "¡Esta! Ese diagnóstico no es con IgM.",
+                    "Esa está bien, es atenuada."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es con IgM.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 60,
@@ -5781,7 +5961,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Candida albicans.  \nCandida albicans é um fungo oportunista que infecta principalmente mucosas ou áreas com barreira epitelial comprometida, não por via percutânea. Infecções cutâneas ocorrem em áreas úmidas ou após desequilíbrio da microbiota, não por trauma direto na pele.\n\n**Outras opções:**  \nA. Rhizopus sp., C. Pasteurella multocida e D. Staphylococcus aureus causam infecções cutâneas por inoculação direta via pele lesionada, caracterizando entrada percutânea.  \n\nPortanto, Candida albicans é o único que não usa a via percutânea para infecção"
+            "feedback": "**Resposta Correta:** B. Candida albicans.  \nCandida albicans é um fungo oportunista que infecta principalmente mucosas ou áreas com barreira epitelial comprometida, não por via percutânea. Infecções cutâneas ocorrem em áreas úmidas ou após desequilíbrio da microbiota, não por trauma direto na pele.\n\n**Outras opções:**  \nA. Rhizopus sp., C. Pasteurella multocida e D. Staphylococcus aureus causam infecções cutâneas por inoculação direta via pele lesionada, caracterizando entrada percutânea.  \n\nPortanto, Candida albicans é o único que não usa a via percutânea para infecção",
+            "explicacoes": {
+                "robo": [
+                    "Rhizopus sp efectivamente causa infección cutánea por inoculación directa vía piel lesionada.",
+                    "Candida albicans es un hongo oportunista que infecta principalmente mucosas o áreas con barrera epitelial comprometida, no por vía percutánea; las infecciones cutáneas ocurren en áreas húmedas o tras desequilibrio de la microbiota — esta es la excepción.",
+                    "Pasteurella multocida efectivamente causa infección cutánea por inoculación directa, como en mordeduras.",
+                    "Staphylococcus aureus efectivamente causa infección cutánea por inoculación directa vía piel lesionada."
+                ],
+                "fantasma": [
+                    "Ese sí es percutáneo.",
+                    "¡Esta! Esa es de mucosa, no percutánea.",
+                    "Ese sí es percutáneo.",
+                    "Ese sí es percutáneo."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es de mucosa.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 61,
@@ -5807,7 +6007,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. O sarampo é transmitido principalmente por via respiratória, não pelo contato com o exantema cutâneo.  \n\n**Outras opções:**  \nA) IgM específica indica infecção recente e é usada para diagnóstico.  \nB) IgM por ELISA é útil até 30 dias após sintomas, depois diminui.  \nD) O vírus causa imunossupressão transitória, facilitando infecções secundárias graves."
+            "feedback": "**Resposta Correta:** C. O sarampo é transmitido principalmente por via respiratória, não pelo contato com o exantema cutâneo.  \n\n**Outras opções:**  \nA) IgM específica indica infecção recente e é usada para diagnóstico.  \nB) IgM por ELISA é útil até 30 dias após sintomas, depois diminui.  \nD) O vírus causa imunossupressão transitória, facilitando infecções secundárias graves.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la presencia de IgM específica confirma el diagnóstico de sarampión.",
+                    "Efectivamente la detección de IgM por ELISA es útil hasta los 30 días de iniciados los síntomas.",
+                    "El sarampión se transmite principalmente por vía respiratoria, no por contacto con el exantema cutáneo — esta es la opción incorrecta.",
+                    "Efectivamente produce inmunosupresión generalizada transitoria, facilitando infecciones secundarias."
+                ],
+                "fantasma": [
+                    "Esa está bien, IgM confirma.",
+                    "Esa está bien, hasta 30 días.",
+                    "¡Esta! Es por el aire, no por tocar la piel.",
+                    "Esa está bien, baja las defensas."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es por el aire.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 62,
@@ -5833,7 +6053,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta. A linfangite nodular na esporotricose resulta da disseminação linfática de leveduras (formas parasitárias), não de hifas. Sporothrix é um fungo dimórfico, com hifas no ambiente e leveduras no organismo. As opções A, B e D estão corretas: A indica a via cutânea clássica por traumatismos; B destaca a transmissão por arranhões ou mordidas de gatos infectados; D ressalta a importância do histórico epidemiológico para diferenciar agentes causadores da linfangite. Portanto, apenas a opção C apresenta erro conceitual."
+            "feedback": "Resposta correta: C está incorreta. A linfangite nodular na esporotricose resulta da disseminação linfática de leveduras (formas parasitárias), não de hifas. Sporothrix é um fungo dimórfico, com hifas no ambiente e leveduras no organismo. As opções A, B e D estão corretas: A indica a via cutânea clássica por traumatismos; B destaca a transmissão por arranhões ou mordidas de gatos infectados; D ressalta a importância do histórico epidemiológico para diferenciar agentes causadores da linfangite. Portanto, apenas a opção C apresenta erro conceitual.",
+            "explicacoes": {
+                "robo": [
+                    "La principal vía de ingreso efectivamente es cutánea, por traumatismos.",
+                    "La enfermedad efectivamente puede adquirirse por contacto con felinos (arañazo o mordedura).",
+                    "La linfangitis nodular en la esporotricosis resulta de la diseminación linfática de LEVADURAS (formas parasitarias), no de hifas; Sporothrix es un hongo dimórfico, con hifas en el ambiente y levaduras en el organismo — esta es la excepción.",
+                    "Efectivamente es importante considerar los antecedentes epidemiológicos por la diversidad de microorganismos involucrados."
+                ],
+                "fantasma": [
+                    "Esa está bien, es cutánea.",
+                    "Esa está bien, el gato.",
+                    "¡Esta! Es de levadura, no de hifa.",
+                    "Esa está bien, importa el antecedente."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es de levadura.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 63,
@@ -5859,7 +6099,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. O diagnóstico microbiológico do micetoma exige biópsia profunda do trajeto fistuloso para coletar grânulos e tecido infectado, permitindo identificar o agente etiológico.  \nOpção B incorreta: tumoração isolada não confirma micetoma, é necessária análise microbiológica.  \nOpção C incorreta: antecedentes epidemiológicos são importantes para suspeita e diagnóstico.  \nOpção D incorreta: prevalência de eumicetomas e actinomicetomas varia regionalmente, não sendo possível afirmar qual é mais comum."
+            "feedback": "Resposta correta: A. O diagnóstico microbiológico do micetoma exige biópsia profunda do trajeto fistuloso para coletar grânulos e tecido infectado, permitindo identificar o agente etiológico.  \nOpção B incorreta: tumoração isolada não confirma micetoma, é necessária análise microbiológica.  \nOpção C incorreta: antecedentes epidemiológicos são importantes para suspeita e diagnóstico.  \nOpção D incorreta: prevalência de eumicetomas e actinomicetomas varia regionalmente, não sendo possível afirmar qual é mais comum.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico microbiológico de micetoma efectivamente exige biopsia profunda del trayecto fistuloso para recolectar gránulos y tejido infectado, permitiendo identificar el agente etiológico — es la respuesta correcta.",
+                    "Una tumoración aislada no confirma micetoma; se requiere análisis microbiológico.",
+                    "Los antecedentes epidemiológicos SÍ son importantes para la sospecha y el diagnóstico.",
+                    "La prevalencia de eumicetomas y actinomicetomas varía regionalmente, no siendo posible afirmar cuál es más común de forma general."
+                ],
+                "fantasma": [
+                    "¡Esta! Biopsia profunda del trayecto, la correcta.",
+                    "Eso solo no confirma nada.",
+                    "Eso sí importa, al revés.",
+                    "Eso varía según la región."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Biopsia profunda.",
+                    "Fijate: no confirma solo.",
+                    "Dato curioso: sí importa.",
+                    "Miau, varía."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -5885,7 +6145,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Linfocutânea.  \nÉ a forma mais comum da esporotricose no Brasil, caracterizada por lesões que se espalham ao longo dos vasos linfáticos após inoculação cutânea do fungo *Sporothrix schenckii*.  \n\n**Outras opções:**  \nB. Cutânea fixa: infecção localizada, sem disseminação linfática, menos frequente.  \nC. Osteoarticular: rara, afeta ossos e articulações, geralmente em imunocomprometidos.  \nD. Pulmonar: forma rara e grave, causada por inalação, incomum no país."
+            "feedback": "**Resposta Correta:** A. Linfocutânea.  \nÉ a forma mais comum da esporotricose no Brasil, caracterizada por lesões que se espalham ao longo dos vasos linfáticos após inoculação cutânea do fungo *Sporothrix schenckii*.  \n\n**Outras opções:**  \nB. Cutânea fixa: infecção localizada, sem disseminação linfática, menos frequente.  \nC. Osteoarticular: rara, afeta ossos e articulações, geralmente em imunocomprometidos.  \nD. Pulmonar: forma rara e grave, causada por inalação, incomum no país.",
+            "explicacoes": {
+                "robo": [
+                    "La forma linfocutánea es efectivamente la más frecuente de esporotricosis, con lesiones que se diseminan a lo largo de los vasos linfáticos tras la inoculación cutánea del hongo — es la respuesta correcta.",
+                    "La forma cutánea fija es una infección localizada sin diseminación linfática, menos frecuente.",
+                    "La forma osteoarticular es rara, afecta huesos y articulaciones, generalmente en inmunocomprometidos.",
+                    "La forma pulmonar es rara y grave, causada por inhalación, poco común."
+                ],
+                "fantasma": [
+                    "¡Esta! La linfocutánea, la más común.",
+                    "Esa es menos común, sin diseminación.",
+                    "Esa es rara, de hueso.",
+                    "Esa es rara, de pulmón."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La linfocutánea.",
+                    "Fijate: es rara.",
+                    "Dato curioso: es rara.",
+                    "Miau, es rara."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -5911,7 +6191,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta. Trichophyton mentagrophytes causa lesões em pele, mas no exame direto de escamas observa-se principalmente hifas tabicadas, não macroconídios, que aparecem em cultura.  \nOpções A, B e C estão corretas:  \nA) Hifas tabicadas em escamas de unhas indicam tinea unguium.  \nB) Células esclerotais em biópsia de pele caracterizam cromoblastomicose.  \nC) Leveduras e hifas curtas em escamas indicam pitiríase versicolor.  \nPortanto, apenas a associação da opção D é incorreta."
+            "feedback": "Resposta correta: D está incorreta. Trichophyton mentagrophytes causa lesões em pele, mas no exame direto de escamas observa-se principalmente hifas tabicadas, não macroconídios, que aparecem em cultura.  \nOpções A, B e C estão corretas:  \nA) Hifas tabicadas em escamas de unhas indicam tinea unguium.  \nB) Células esclerotais em biópsia de pele caracterizam cromoblastomicose.  \nC) Leveduras e hifas curtas em escamas indicam pitiríase versicolor.  \nPortanto, apenas a associação da opção D é incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Las hifas tabicadas en escamas de uñas efectivamente indican tinea unguium.",
+                    "Las células esclerotales en biopsia de piel efectivamente caracterizan la cromoblastomicosis.",
+                    "Las hifas cortas junto con levaduras en escamas de piel efectivamente indican pitiriasis versicolor.",
+                    "Trichophyton mentagrophytes causa lesiones en piel, pero en el examen directo de escamas se observan principalmente hifas tabicadas, no macroconidios, que aparecen en cultivo — esta es la asociación incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, tinea unguium.",
+                    "Esa está bien, cromoblastomicosis.",
+                    "Esa está bien, versicolor.",
+                    "¡Esta! Eso es de cultivo, no de examen directo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es de cultivo."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -5937,7 +6237,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta correta: B. Clostridium tetani.**  \nC. tetani causa tétano, caracterizado por espasmos musculares devido à neurotoxina tetanospasmina, não por infecções necrotizantes de pele.  \n\n**Outras opções:**  \nA. Klebsiella pneumoniae pode causar infecções necrotizantes em imunocomprometidos;  \nC. Clostridium septicum é associado a fasceíte necrosante e necrose rápida;  \nD. Staphylococcus aureus é um agente comum de infecções necrotizantes cutâneas.  \n\nPortanto, apenas C. tetani não está relacionado a infecções necrotizantes de pele e"
+            "feedback": "**Resposta correta: B. Clostridium tetani.**  \nC. tetani causa tétano, caracterizado por espasmos musculares devido à neurotoxina tetanospasmina, não por infecções necrotizantes de pele.  \n\n**Outras opções:**  \nA. Klebsiella pneumoniae pode causar infecções necrotizantes em imunocomprometidos;  \nC. Clostridium septicum é associado a fasceíte necrosante e necrose rápida;  \nD. Staphylococcus aureus é um agente comum de infecções necrotizantes cutâneas.  \n\nPortanto, apenas C. tetani não está relacionado a infecções necrotizantes de pele e",
+            "explicacoes": {
+                "robo": [
+                    "Klebsiella pneumoniae efectivamente puede causar infecciones necrotizantes en inmunocomprometidos.",
+                    "Clostridium tetani causa tétanos, caracterizado por espasmos musculares debido a la neurotoxina tetanospasmina, no infecciones necrotizantes de piel — esta es la opción incorrecta.",
+                    "Clostridium septicum efectivamente se asocia a fascitis necrotizante y necrosis rápida.",
+                    "Staphylococcus aureus efectivamente es un agente común de infecciones necrotizantes cutáneas."
+                ],
+                "fantasma": [
+                    "Ese sí causa necrosante.",
+                    "¡Esta! Ese es de tétanos, no de necrosis de piel.",
+                    "Ese sí causa necrosante.",
+                    "Ese sí causa necrosante."
+                ],
+                "gato": [
+                    "Fijate: sí causa.",
+                    "¡Ronroneo de aprobación! Es de tétanos.",
+                    "Dato curioso: sí causa.",
+                    "Miau, sí causa."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -5963,7 +6283,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está errada, pois a leishmaniose tegumentar é transmitida por picada de flebotomíneos, não por contato direto entre humanos. As opções A, C e D estão corretas: A – coleta de amostras por raspado ou biópsia da borda da úlcera; C – uso da coloração de Giemsa para visualizar amastigotes intracelulares; D – cultivo em meio NNN para isolamento e estudo do parasita. Assim, a transmissão é zoonótica via vetor, sem transmissão interumana direta pelas lesões."
+            "feedback": "Resposta correta: B está errada, pois a leishmaniose tegumentar é transmitida por picada de flebotomíneos, não por contato direto entre humanos. As opções A, C e D estão corretas: A – coleta de amostras por raspado ou biópsia da borda da úlcera; C – uso da coloração de Giemsa para visualizar amastigotes intracelulares; D – cultivo em meio NNN para isolamento e estudo do parasita. Assim, a transmissão é zoonótica via vetor, sem transmissão interumana direta pelas lesões.",
+            "explicacoes": {
+                "robo": [
+                    "La toma de muestra efectivamente se realiza por escarificación o biopsia de la úlcera cutánea.",
+                    "La leishmaniasis tegumentaria se transmite por picadura de flebótomos, no por contacto interhumano con las úlceras — esta es la opción incorrecta.",
+                    "La tinción de Giemsa efectivamente es útil para visualizar amastigotes intracelulares.",
+                    "El cultivo en medio de Novy-MacNeal-Nicolle (NNN) efectivamente es útil para el diagnóstico."
+                ],
+                "fantasma": [
+                    "Esa está bien, escarificación o biopsia.",
+                    "¡Esta! Es por el mosquito, no por tocar la úlcera.",
+                    "Esa está bien, Giemsa.",
+                    "Esa está bien, cultivo NNN."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es por mosquito.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -5989,7 +6329,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta correta:** D. Clostridium perfringens não é parte da microbiota normal da pele; é uma bactéria anaeróbia estrita, esporulada, encontrada no solo e trato gastrointestinal, podendo causar infecções oportunistas.  \n\n**Outras opções:**  \nA. Staphylococcus aureus é um comensal comum da pele e narinas, podendo ser patogênico.  \nB. Candida spp. é uma levedura comensal em áreas úmidas da pele, podendo causar candidíase.  \nC. Propionibacterium spp. (Cutibacterium spp.) são bacilos anaeróbios facultativos, importantes na microbiota cutânea e relacionados à acne."
+            "feedback": "**Resposta correta:** D. Clostridium perfringens não é parte da microbiota normal da pele; é uma bactéria anaeróbia estrita, esporulada, encontrada no solo e trato gastrointestinal, podendo causar infecções oportunistas.  \n\n**Outras opções:**  \nA. Staphylococcus aureus é um comensal comum da pele e narinas, podendo ser patogênico.  \nB. Candida spp. é uma levedura comensal em áreas úmidas da pele, podendo causar candidíase.  \nC. Propionibacterium spp. (Cutibacterium spp.) são bacilos anaeróbios facultativos, importantes na microbiota cutânea e relacionados à acne.",
+            "explicacoes": {
+                "robo": [
+                    "Staphylococcus aureus efectivamente es un comensal común de la piel y las fosas nasales.",
+                    "Candida spp efectivamente es una levadura comensal en áreas húmedas de la piel.",
+                    "Propionibacterium spp (Cutibacterium spp) efectivamente son bacilos anaerobios facultativos, importantes en la microbiota cutánea.",
+                    "Clostridium perfringens no forma parte de la microbiota normal de la piel; es una bacteria anaerobia estricta, esporulada, hallada en el suelo y el tracto gastrointestinal — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Ese sí es de la piel.",
+                    "Ese sí es de la piel.",
+                    "Ese sí es de la piel.",
+                    "¡Esta! Ese no vive en la piel, es del suelo."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es.",
+                    "¡Ronroneo de aprobación! Es del suelo."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -6015,7 +6375,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Infecções necrotizantes de pele não são causadas apenas por microrganismos anaeróbios, mas também por aeróbios e facultativos, como Streptococcus pyogenes e Staphylococcus aureus.  \n\nAs opções B, C e D estão corretas: fatores predisponentes aumentam o risco; a coleta deve ser feita em pele saudável adjacente; e o isolamento do patógeno é essencial para tratamento.  \n\nSobre Clostridium tetani, a transmissão não é inter-humana, mas por esporos do solo. A toxina tetânica, produzida em ambiente anaeróbio, causa a paralisia espástica do tétano."
+            "feedback": "Resposta correta: A. Infecções necrotizantes de pele não são causadas apenas por microrganismos anaeróbios, mas também por aeróbios e facultativos, como Streptococcus pyogenes e Staphylococcus aureus.  \n\nAs opções B, C e D estão corretas: fatores predisponentes aumentam o risco; a coleta deve ser feita em pele saudável adjacente; e o isolamento do patógeno é essencial para tratamento.  \n\nSobre Clostridium tetani, a transmissão não é inter-humana, mas por esporos do solo. A toxina tetânica, produzida em ambiente anaeróbio, causa a paralisia espástica do tétano.",
+            "explicacoes": {
+                "robo": [
+                    "Las infecciones necrotizantes de piel no son causadas únicamente por anaerobios, sino también por aerobios y facultativos, como Streptococcus pyogenes y Staphylococcus aureus — esta es la opción incorrecta.",
+                    "Efectivamente suelen existir antecedentes predisponentes como traumatismos, cirugías y diabetes.",
+                    "Efectivamente se recomienda realizar la punción a través de piel sana.",
+                    "Efectivamente el aislamiento del patógeno es relevante, ya que la etiología no es predecible."
+                ],
+                "fantasma": [
+                    "¡Esta! No son solo anaerobios.",
+                    "Esa está bien, esos antecedentes.",
+                    "Esa está bien, piel sana.",
+                    "Esa está bien, aislar el patógeno."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No son solo anaerobios.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -6041,7 +6421,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Leishmania braziliensis, protozoário transmitido por picada de flebotomíneos (vetor biológico). As outras opções (A. Sporothrix brasiliensis, C. Fonsecaea pedrosoi e D. Mycobacterium marinum) causam infecções cutâneas por inoculação traumática direta, via contato com materiais contaminados ou água. Assim, apenas L. braziliensis tem transmissão via vetor, diferenciando-se dos demais agentes que infectam por implantação traumática."
+            "feedback": "Resposta correta: B. Leishmania braziliensis, protozoário transmitido por picada de flebotomíneos (vetor biológico). As outras opções (A. Sporothrix brasiliensis, C. Fonsecaea pedrosoi e D. Mycobacterium marinum) causam infecções cutâneas por inoculação traumática direta, via contato com materiais contaminados ou água. Assim, apenas L. braziliensis tem transmissão via vetor, diferenciando-se dos demais agentes que infectam por implantação traumática.",
+            "explicacoes": {
+                "robo": [
+                    "Sporothrix brasiliensis efectivamente causa infección cutánea por implantación traumática con material contaminado.",
+                    "Leishmania braziliensis es un protozoario transmitido por picadura de flebótomos (vector biológico), no por implantación traumática directa — esta es la excepción.",
+                    "Fonsecaea pedrosoi efectivamente causa infección cutánea por implantación traumática.",
+                    "Mycobacterium marinum efectivamente causa infección cutánea por implantación traumática, vía contacto con agua contaminada."
+                ],
+                "fantasma": [
+                    "Ese sí es de trauma directo.",
+                    "¡Esta! Ese es por mosquito, no por trauma.",
+                    "Ese sí es de trauma directo.",
+                    "Ese sí es de trauma directo."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es por mosquito.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 9,
