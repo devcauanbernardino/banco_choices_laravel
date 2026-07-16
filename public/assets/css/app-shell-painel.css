@@ -210,10 +210,12 @@ body.app-shell-painel .app-sidebar--painel .app-sidebar-cta {
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-plus {
-  font-size: 1.15rem;
-  font-weight: 800;
-  line-height: 1;
+  font-size: 1.2rem;
   opacity: 0.95;
+}
+
+body.app-shell-painel .app-sidebar--painel .app-sidebar-cta-label {
+  line-height: 1;
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-cta:hover {
@@ -221,6 +223,16 @@ body.app-shell-painel .app-sidebar--painel .app-sidebar-cta:hover {
   filter: brightness(1.05);
   transform: translateY(-1px);
   box-shadow: 0 14px 32px rgba(106, 3, 146, 0.35);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-cta {
+  background: var(--bc-purple, #6a0392);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] body.app-shell-painel .app-sidebar--painel .app-sidebar-cta:hover {
+  background: #7c3aed;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
 }
 
 body.app-shell-painel .app-sidebar--painel .app-sidebar-nav {

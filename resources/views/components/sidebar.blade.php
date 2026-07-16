@@ -34,7 +34,7 @@
     <div class="app-sidebar-cta-wrap">
         <a href="{{ route('questionbank') }}" class="app-sidebar-cta"
            data-sidebar-tooltip="{{ __('sidebar.new_sim') }}">
-            <span class="app-sidebar-cta-plus" aria-hidden="true">+</span>
+            <span class="material-symbols-outlined app-sidebar-cta-plus" aria-hidden="true">add</span>
             <span class="app-sidebar-cta-label">{{ __('sidebar.new_sim') }}</span>
         </a>
     </div>
