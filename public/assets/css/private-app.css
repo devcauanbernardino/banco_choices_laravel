@@ -336,48 +336,6 @@
   border-color: var(--app-border);
 }
 
-/* Password strength meter (perfil) */
-.bc-pw-strength {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.bc-pw-strength-track {
-  height: 4px;
-  border-radius: 4px;
-  background: var(--app-border);
-  overflow: hidden;
-}
-
-.bc-pw-strength-bar {
-  height: 100%;
-  width: 0;
-  border-radius: 4px;
-  transition: width 0.2s ease, background-color 0.2s ease;
-}
-
-.bc-pw-strength-bar--weak {
-  background: #dc3545;
-}
-
-.bc-pw-strength-bar--medium {
-  background: #ffc107;
-}
-
-.bc-pw-strength-bar--strong {
-  background: #198754;
-}
-
-.bc-pw-strength-label {
-  color: var(--app-muted);
-}
-
-.bc-pw-toggle {
-  flex-shrink: 0;
-  min-width: 2.75rem;
-}
-
 /* ---------- Action Button (table row) ---------- */
 .bc-btn-action {
   width: 36px;
@@ -688,10 +646,6 @@
   margin-bottom: 1.25rem;
 }
 
-.bc-profile-section-head--security .bc-profile-section-lead {
-  margin-top: 0.35rem;
-}
-
 .bc-profile-section-title {
   font-size: 1.05rem;
   font-weight: 700;
@@ -717,62 +671,6 @@
 .bc-profile-form .bc-profile-input {
   min-height: 3rem;
   border-radius: var(--app-radius-md, 12px);
-}
-
-.bc-profile-password-group {
-  border-radius: var(--app-radius-md, 12px);
-  border: 1px solid var(--app-border);
-  background: var(--app-surface);
-  overflow: hidden;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.bc-profile-password-group:focus-within {
-  border-color: var(--bc-purple);
-  box-shadow: 0 0 0 0.2rem rgba(106, 3, 146, 0.18);
-}
-
-.bc-profile-password-group .form-control {
-  min-height: 3rem;
-  border: none;
-  background: transparent;
-  border-radius: 0;
-  padding-inline: 1rem;
-}
-
-.bc-profile-password-group .form-control:focus {
-  border-color: transparent;
-  box-shadow: none;
-  outline: none;
-}
-
-.bc-profile-password-group .bc-pw-toggle {
-  min-width: 3rem;
-  padding-inline: 0.65rem;
-  border: none;
-  border-left: 1px solid var(--app-border);
-  border-radius: 0 !important;
-  background: var(--app-surface-2);
-  color: var(--app-muted);
-}
-
-.bc-profile-password-group .bc-pw-toggle:hover {
-  background: rgba(106, 3, 146, 0.08);
-  color: var(--bc-purple);
-}
-
-[data-theme="dark"] .bc-profile-password-group .bc-pw-toggle {
-  background: rgba(255, 255, 255, 0.04);
-}
-
-[data-theme="dark"] .bc-profile-password-group .bc-pw-toggle:hover {
-  background: rgba(106, 3, 146, 0.22);
-  color: #e9d5ff;
-}
-
-.bc-profile-password-group .bc-pw-toggle-icon {
-  font-size: 1.25rem;
-  line-height: 1;
 }
 
 .bc-form-actions--profile {

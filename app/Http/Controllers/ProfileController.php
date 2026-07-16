@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 
 class ProfileController extends Controller
 {
@@ -42,26 +41,6 @@ class ProfileController extends Controller
         }
 
         $user->nome = $nome;
-
-        $senhaAtual = trim((string) $request->input('senha_atual', ''));
-        $novaSenha = (string) $request->input('nova_senha', '');
-
-        if ($senhaAtual !== '' && $novaSenha !== '') {
-            if (!Hash::check($senhaAtual, $user->getAuthPassword())) {
-                $user->save();
-
-                return redirect()->route('profile.show')->with('error', __('perfil.err.senha_incorreta'));
-            }
-
-            if (strlen($novaSenha) < 8) {
-                $user->save();
-
-                return redirect()->route('profile.show')->with('error', __('perfil.err.senha_curta'));
-            }
-
-            $user->senha = Hash::make($novaSenha);
-        }
-
         $user->save();
 
         return redirect()->route('profile.show')->with('success', __('perfil.flash_ok'));
