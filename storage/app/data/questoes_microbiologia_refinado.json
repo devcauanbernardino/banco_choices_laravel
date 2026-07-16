@@ -4627,7 +4627,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Fonsecaea pedrosoi, fungo causador da cromoblastomicose, micose subcutânea crônica com lesões ulceradas e vegetantes nos membros inferiores, comuns em regiões tropicais. Corpos escleróticos são patognomônicos.  \nOpções incorretas:  \nA. HPV causa verrugas, não lesões ulceradas vegetantes;  \nB. Tunga penetrans é ectoparasita que causa nódulos pruriginosos, não úlceras vegetantes;  \nD. Actinomyces israelii provoca abscessos fistulizados, não lesões vegetantes ulceradas.  \nO quadro clínico e epidemiológico confirma cromoblastomicose."
+            "feedback": "Resposta correta: C. Fonsecaea pedrosoi, fungo causador da cromoblastomicose, micose subcutânea crônica com lesões ulceradas e vegetantes nos membros inferiores, comuns em regiões tropicais. Corpos escleróticos são patognomônicos.  \nOpções incorretas:  \nA. HPV causa verrugas, não lesões ulceradas vegetantes;  \nB. Tunga penetrans é ectoparasita que causa nódulos pruriginosos, não úlceras vegetantes;  \nD. Actinomyces israelii provoca abscessos fistulizados, não lesões vegetantes ulceradas.  \nO quadro clínico e epidemiológico confirma cromoblastomicose.",
+            "explicacoes": {
+                "robo": [
+                    "El HPV causa verrugas, no lesiones ulceradas vegetantes.",
+                    "Tunga penetrans es un ectoparásito que causa nódulos pruriginosos, no úlceras vegetantes.",
+                    "Fonsecaea pedrosoi es el hongo causante de la cromoblastomicosis, micosis subcutánea crónica con lesiones ulceradas y vegetantes en miembros inferiores, comunes en regiones tropicales; los cuerpos escleróticos son patognomónicos — es la respuesta correcta.",
+                    "Actinomyces israelii provoca abscesos fistulizados, no lesiones vegetantes ulceradas."
+                ],
+                "fantasma": [
+                    "Eso es de verruga, no de úlcera vegetante.",
+                    "Eso da nódulo, no úlcera así.",
+                    "¡Esta! Corpo esclerótico, la cromoblastomicosis.",
+                    "Eso da absceso, no lesión vegetante."
+                ],
+                "gato": [
+                    "Fijate: es verruga.",
+                    "Dato curioso: es nódulo.",
+                    "¡Ronroneo de aprobación! Corpo esclerótico.",
+                    "Miau, es absceso."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -4653,7 +4673,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Para diagnosticar cromoblastomicose, a amostra deve ser coletada em solução fisiológica estéril (A), que preserva os fungos viáveis para cultura. Formol a 10% (B) mata os fungos, inviabilizando o cultivo. Misturar formol com solução fisiológica (C) é impraticável e compromete a viabilidade fúngica. Água destilada (D) é hipotônica e pode causar lise celular, prejudicando o isolamento. Assim, a biopsia em solução fisiológica estéril é a melhor opção para garantir o diagnóstico microbiológico definitivo."
+            "feedback": "Para diagnosticar cromoblastomicose, a amostra deve ser coletada em solução fisiológica estéril (A), que preserva os fungos viáveis para cultura. Formol a 10% (B) mata os fungos, inviabilizando o cultivo. Misturar formol com solução fisiológica (C) é impraticável e compromete a viabilidade fúngica. Água destilada (D) é hipotônica e pode causar lise celular, prejudicando o isolamento. Assim, a biopsia em solução fisiológica estéril é a melhor opção para garantir o diagnóstico microbiológico definitivo.",
+            "explicacoes": {
+                "robo": [
+                    "La muestra en solución fisiológica estéril preserva los hongos viables para el cultivo — es la respuesta correcta.",
+                    "El formol al 10% mata los hongos, inviabilizando el cultivo.",
+                    "Mezclar formol con solución fisiológica es impracticable y compromete la viabilidad fúngica.",
+                    "El agua destilada es hipotónica y puede causar lisis celular, perjudicando el aislamiento."
+                ],
+                "fantasma": [
+                    "¡Esta! Fisiológica estéril, preserva vivo.",
+                    "Eso mata el hongo.",
+                    "Eso no sirve, mezcla rara.",
+                    "Eso hace lisis, hipotónica."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Fisiológica, preserva vivo.",
+                    "Fijate: mata el hongo.",
+                    "Dato curioso: no sirve.",
+                    "Miau, hace lisis."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -4679,7 +4719,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** A. O raspado da pele é o método padrão para coletar amostras e identificar os ácaros *Demodex*.\n\n**Explicação:**  \n*Demodex* é um ácaro parasita, diagnosticado pela visualização direta no raspado cutâneo, geralmente após clarificação microscópica (B). O cultivo em ágar cérebro-coração (C) é inadequado, pois não cresce em meios bacterianos. A transmissão ocorre por contato direto ou com objetos contaminados (D). Portanto, o diagnóstico é clínico e parasitológico, não envolvendo cultivo microbiológico."
+            "feedback": "**Resposta Correta:** A. O raspado da pele é o método padrão para coletar amostras e identificar os ácaros *Demodex*.\n\n**Explicação:**  \n*Demodex* é um ácaro parasita, diagnosticado pela visualização direta no raspado cutâneo, geralmente após clarificação microscópica (B). O cultivo em ágar cérebro-coração (C) é inadequado, pois não cresce em meios bacterianos. A transmissão ocorre por contato direto ou com objetos contaminados (D). Portanto, o diagnóstico é clínico e parasitológico, não envolvendo cultivo microbiológico.",
+            "explicacoes": {
+                "robo": [
+                    "La toma de muestra por raspado de piel afectada efectivamente es el método estándar para identificar los ácaros Demodex.",
+                    "La observación microscópica tras la clarificación con xilol efectivamente es suficiente para el diagnóstico.",
+                    "Demodex es un ácaro, no crece en medios de cultivo bacterianos como el agar cerebro-corazón; el diagnóstico es clínico y parasitológico, no microbiológico — esta es la opción incorrecta.",
+                    "La transmisión por contacto directo entre personas efectivamente es la vía habitual."
+                ],
+                "fantasma": [
+                    "Esa está bien, raspado.",
+                    "Esa está bien, con xilol alcanza.",
+                    "¡Esta! Eso no crece en ese medio, es ácaro.",
+                    "Esa está bien, contacto directo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No crece ahí, es ácaro.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -4705,7 +4765,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Micetoma, infecção crônica subcutânea com tumefações, fístulas e grãos visíveis nas secreções, típico em áreas endêmicas como a região amazônica.  \nA. Lepra lepromatosa: lesões difusas e acometimento nervoso, sem fístulas ou grãos.  \nC. Lepra tuberculoide: poucas lesões sem fístulas ou grânulos.  \nD. Leishmaniose: úlceras cutâneas sem fístulas nem grãos visíveis.  \nOs sinais de fístulas com grânulos são característicos e diagnósticos do micetoma."
+            "feedback": "Resposta correta: B. Micetoma, infecção crônica subcutânea com tumefações, fístulas e grãos visíveis nas secreções, típico em áreas endêmicas como a região amazônica.  \nA. Lepra lepromatosa: lesões difusas e acometimento nervoso, sem fístulas ou grãos.  \nC. Lepra tuberculoide: poucas lesões sem fístulas ou grânulos.  \nD. Leishmaniose: úlceras cutâneas sem fístulas nem grãos visíveis.  \nOs sinais de fístulas com grânulos são característicos e diagnósticos do micetoma.",
+            "explicacoes": {
+                "robo": [
+                    "La lepra lepromatosa presenta lesiones difusas y compromiso nervioso, sin fístulas ni granos.",
+                    "El micetoma es una infección crónica subcutánea con tumefacciones, fístulas y granos visibles en las secreciones, típico en áreas endémicas como la región amazónica — es la respuesta correcta.",
+                    "La lepra tuberculoide presenta pocas lesiones sin fístulas ni gránulos.",
+                    "La leishmaniosis presenta úlceras cutáneas sin fístulas ni granos visibles."
+                ],
+                "fantasma": [
+                    "Esa no tiene fístula ni grano.",
+                    "¡Esta! Fístula con grano, el micetoma.",
+                    "Esa no tiene fístula ni grano.",
+                    "Esa no tiene fístula ni grano."
+                ],
+                "gato": [
+                    "Fijate: sin fístula.",
+                    "¡Ronroneo de aprobación! Fístula con grano.",
+                    "Dato curioso: sin fístula.",
+                    "Miau, sin fístula."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -4731,7 +4811,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta correta:** A. Úlceras na face e pescoço é incorreta para cromoblastomicose, pois a doença afeta principalmente membros inferiores com lesões verrucosas em formato de couve-flor.  \n\nOpções corretas:  \nB. Lesões verrucosas em membros inferiores são típicas.  \nC. Presença de corpos fumagoides no exame com KOH é diagnóstico patognomônico.  \nD. Lesões limitam-se à pele e tecido subcutâneo, raramente atingindo músculos ou ossos.  \n\nAssim, cromoblastomicose não costuma causar úlceras na face e pescoço."
+            "feedback": "**Resposta correta:** A. Úlceras na face e pescoço é incorreta para cromoblastomicose, pois a doença afeta principalmente membros inferiores com lesões verrucosas em formato de couve-flor.  \n\nOpções corretas:  \nB. Lesões verrucosas em membros inferiores são típicas.  \nC. Presença de corpos fumagoides no exame com KOH é diagnóstico patognomônico.  \nD. Lesões limitam-se à pele e tecido subcutâneo, raramente atingindo músculos ou ossos.  \n\nAssim, cromoblastomicose não costuma causar úlceras na face e pescoço.",
+            "explicacoes": {
+                "robo": [
+                    "Las úlceras en cara y cuello no son características de la cromoblastomicosis, que afecta principalmente miembros inferiores con lesiones verrugosas en forma de coliflor — esta es la excepción.",
+                    "Las lesiones verrugosas en miembros inferiores efectivamente son típicas de la cromoblastomicosis.",
+                    "La identificación de cuerpos fumagoides en el examen con KOH efectivamente es diagnóstica y patognomónica.",
+                    "Las lesiones efectivamente se limitan a la piel y tejido subcutáneo, raramente alcanzando músculo o hueso."
+                ],
+                "fantasma": [
+                    "¡Esta! No es de cara, es de pierna.",
+                    "Esa está bien, la coliflor.",
+                    "Esa está bien, cuerpo fumagoide.",
+                    "Esa está bien, no llega al hueso."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de pierna, no de cara.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -4757,7 +4857,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta correta: A. Nocardia spp.**  \nO meio Sabouraud com antibióticos favorece o crescimento de fungos, inibindo bactérias. Nocardia spp. é uma bactéria filamentosas Gram-positiva, que requer meios específicos para actinomicetos, não o Sabouraud. Portanto, é a exceção.  \n\n**Outras opções (B, C e D)** são fungos (dematiáceos ou dimórficos) que crescem adequadamente em Sabouraud com antibióticos, tornando esse meio adequado para seu isolamento."
+            "feedback": "**Resposta correta: A. Nocardia spp.**  \nO meio Sabouraud com antibióticos favorece o crescimento de fungos, inibindo bactérias. Nocardia spp. é uma bactéria filamentosas Gram-positiva, que requer meios específicos para actinomicetos, não o Sabouraud. Portanto, é a exceção.  \n\n**Outras opções (B, C e D)** são fungos (dematiáceos ou dimórficos) que crescem adequadamente em Sabouraud com antibióticos, tornando esse meio adequado para seu isolamento.",
+            "explicacoes": {
+                "robo": [
+                    "Nocardia spp es una bacteria filamentosa Gram positiva, que requiere medios específicos para actinomicetos, no el agar Sabouraud — esta es la excepción.",
+                    "Phialophora spp es un hongo dematiáceo que crece adecuadamente en Sabouraud con antibióticos.",
+                    "Coccidioides posadasii es un hongo dimórfico que crece adecuadamente en Sabouraud con antibióticos.",
+                    "Histoplasma capsulatum es un hongo dimórfico que crece adecuadamente en Sabouraud con antibióticos."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa es bacteria, no crece en Sabouraud.",
+                    "Ese sí crece en Sabouraud.",
+                    "Ese sí crece en Sabouraud.",
+                    "Ese sí crece en Sabouraud."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es bacteria.",
+                    "Fijate: crece ahí.",
+                    "Dato curioso: crece ahí.",
+                    "Miau, crece ahí."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -4783,7 +4903,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Actinomyces israelii não causa síndrome linfangítico nodular, típico de outras infecções. É um bacilo anaeróbico gram-positivo que provoca actinomicose crônica com abscessos e fístulas, geralmente em regiões cervicofaciais, torácicas ou abdominais.  \nOpções incorretas:  \nB. Nocardia brasiliensis causa linfangite nodular após trauma, como arranhadura de gato.  \nC. Mycobacterium marinum infecta pele de aquaristas, causando linfangite nodular.  \nD. Sporothrix schenckii, agente da esporotricose, provoca linfangite nod"
+            "feedback": "Resposta correta: A. Actinomyces israelii não causa síndrome linfangítico nodular, típico de outras infecções. É um bacilo anaeróbico gram-positivo que provoca actinomicose crônica com abscessos e fístulas, geralmente em regiões cervicofaciais, torácicas ou abdominais.  \nOpções incorretas:  \nB. Nocardia brasiliensis causa linfangite nodular após trauma, como arranhadura de gato.  \nC. Mycobacterium marinum infecta pele de aquaristas, causando linfangite nodular.  \nD. Sporothrix schenckii, agente da esporotricose, provoca linfangite nod",
+            "explicacoes": {
+                "robo": [
+                    "Actinomyces israelii no causa síndrome linfangítico nodular; es un bacilo anaeróbico Gram positivo que provoca actinomicosis crónica con abscesos y fístulas, generalmente en regiones cervicofaciales, torácicas o abdominales — esta es la excepción.",
+                    "La nocardiosis cutaneolinfática por Nocardia brasiliensis efectivamente puede desencadenarse tras un arañazo de gato.",
+                    "La infección por Mycobacterium marinum efectivamente ocurre en acuaristas, causando linfangitis nodular.",
+                    "La diseminación cutaneolinfática de Sporothrix schenckii efectivamente ocurre en trabajadores rurales."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese hace absceso cervicofacial, no linfangitis así.",
+                    "Ese sí da linfangitis, por el gato.",
+                    "Ese sí da linfangitis, del acuario.",
+                    "Ese sí da linfangitis, del campo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de cara y cuello, no de brazo.",
+                    "Fijate: sí da.",
+                    "Dato curioso: sí da.",
+                    "Miau, sí da."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -4809,7 +4949,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A esporotricose, causada pelo fungo *Sporothrix schenckii*, não é contagiosa, mesmo durante o síndrome linfangiítico nodular, pois a transmissão pessoa a pessoa é extremamente rara. \n\n**Outras opções:**  \nA está correta: verrugas são contagiosas por HPV via contato direto.  \nB está correta: *Ancylostoma caninum* causa larva migrans cutânea com lesões serpiginosas.  \nD está correta: *Tunga penetrans* provoca lesões ulceradas com risco de tétanos por sobreinfecção bacteriana."
+            "feedback": "**Resposta Correta:** C. A esporotricose, causada pelo fungo *Sporothrix schenckii*, não é contagiosa, mesmo durante o síndrome linfangiítico nodular, pois a transmissão pessoa a pessoa é extremamente rara. \n\n**Outras opções:**  \nA está correta: verrugas são contagiosas por HPV via contato direto.  \nB está correta: *Ancylostoma caninum* causa larva migrans cutânea com lesões serpiginosas.  \nD está correta: *Tunga penetrans* provoca lesões ulceradas com risco de tétanos por sobreinfecção bacteriana.",
+            "explicacoes": {
+                "robo": [
+                    "Las verrugas por HPV efectivamente son contagiosas por contacto directo.",
+                    "Ancylostoma caninum efectivamente causa larva migrans cutánea con lesiones serpiginosas.",
+                    "La esporotricosis, causada por Sporothrix schenckii, NO es contagiosa, incluso durante el síndrome linfangítico nodular, ya que la transmisión de persona a persona es extremadamente rara — esta es la opción incorrecta.",
+                    "La sobreinfección de lesiones por Tunga penetrans efectivamente implica riesgo de tétanos por contaminación bacteriana secundaria."
+                ],
+                "fantasma": [
+                    "Esa está bien, contagia.",
+                    "Esa está bien, lesión serpiginosa.",
+                    "¡Esta! Eso no contagia de persona a persona.",
+                    "Esa está bien, riesgo de tétanos."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No contagia entre personas.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -4835,7 +4995,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A opção A está incorreta: erisipela e celulite são causadas principalmente por bactérias aeróbias Gram-positivas, como Streptococcus pyogenes e Staphylococcus aureus, não por anaeróbios Peptostreptococcus. A opção B está correta ao afirmar que o diagnóstico é clínico e que a coleta para cultura deve ser profunda e de pele saudável para evitar contaminação. A C é correta ao destacar a baixa sensibilidade das hemoculturas, usadas apenas em casos graves. A D também está certa, pois a entrada dos microrganismos ocorre por lesões na pele."
+            "feedback": "A opção A está incorreta: erisipela e celulite são causadas principalmente por bactérias aeróbias Gram-positivas, como Streptococcus pyogenes e Staphylococcus aureus, não por anaeróbios Peptostreptococcus. A opção B está correta ao afirmar que o diagnóstico é clínico e que a coleta para cultura deve ser profunda e de pele saudável para evitar contaminação. A C é correta ao destacar a baixa sensibilidade das hemoculturas, usadas apenas em casos graves. A D também está certa, pois a entrada dos microrganismos ocorre por lesões na pele.",
+            "explicacoes": {
+                "robo": [
+                    "La erisipela y la celulitis son causadas principalmente por bacterias aerobias Gram positivas, como Streptococcus pyogenes y Staphylococcus aureus, no por anaerobios del género Peptostreptococcus — esta es la opción incorrecta.",
+                    "El diagnóstico efectivamente es clínico, y cuando se requiere muestra debe tomarse en profundidad a través de piel sana.",
+                    "Los hemocultivos efectivamente tienen baja sensibilidad diagnóstica, por lo que raramente se emplean.",
+                    "La vía de ingreso efectivamente ocurre a través de soluciones de continuidad de la piel."
+                ],
+                "fantasma": [
+                    "¡Esta! Es aerobio, no anaerobio del Peptostreptococcus.",
+                    "Esa está bien, profunda y piel sana.",
+                    "Esa está bien, baja sensibilidad.",
+                    "Esa está bien, por la piel dañada."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es aerobio.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -4861,7 +5041,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Erisipela e celulite são causadas principalmente por Streptococcus pyogenes e, às vezes, Staphylococcus aureus, não por bactérias anaeróbias do gênero Fusobacterium. Opção B está correta: o diagnóstico é clínico e a coleta de amostras deve evitar contaminação superficial. Opção C também está certa: hemoculturas têm baixa sensibilidade, pois bactérias raramente circulam no sangue nesses casos. Opção D é correta: a porta de entrada são lesões na pele que permitem a invasão bacteriana."
+            "feedback": "Resposta correta: A. Erisipela e celulite são causadas principalmente por Streptococcus pyogenes e, às vezes, Staphylococcus aureus, não por bactérias anaeróbias do gênero Fusobacterium. Opção B está correta: o diagnóstico é clínico e a coleta de amostras deve evitar contaminação superficial. Opção C também está certa: hemoculturas têm baixa sensibilidade, pois bactérias raramente circulam no sangue nesses casos. Opção D é correta: a porta de entrada são lesões na pele que permitem a invasão bacteriana.",
+            "explicacoes": {
+                "robo": [
+                    "La erisipela y la celulitis son causadas principalmente por Streptococcus pyogenes y, ocasionalmente, Staphylococcus aureus, no por bacterias anaerobias del género Fusobacterium — esta es la opción incorrecta.",
+                    "El diagnóstico efectivamente es clínico, y la toma de muestra debe evitar la contaminación superficial.",
+                    "Los hemocultivos efectivamente tienen baja sensibilidad, ya que las bacterias raramente circulan en sangre en estos casos.",
+                    "La puerta de entrada efectivamente son lesiones en la piel que permiten la invasión bacteriana."
+                ],
+                "fantasma": [
+                    "¡Esta! Es de Streptococcus, no de Fusobacterium.",
+                    "Esa está bien, evita contaminación.",
+                    "Esa está bien, baja sensibilidad.",
+                    "Esa está bien, por lesión de piel."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de Streptococcus.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -4887,7 +5087,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O hisopado superficial tem baixa sensibilidade para infecções necróticas da pele, pois a infecção envolve tecidos profundos e a superfície pode conter bactérias colonizadoras, dificultando a identificação dos patógenos reais. Amostras profundas são essenciais para diagnóstico preciso.\n\n**Outras opções:**  \nA, B e C estão corretas: essas infecções são polimicrobianas (aeróbias e anaeróbias), acometem tecidos profundos (pele, subcutâneo, fáscia, músculo) e exigem amostras profundas para cultura e histopatologia, além de hemoculturas em casos graves."
+            "feedback": "**Resposta Correta:** D. O hisopado superficial tem baixa sensibilidade para infecções necróticas da pele, pois a infecção envolve tecidos profundos e a superfície pode conter bactérias colonizadoras, dificultando a identificação dos patógenos reais. Amostras profundas são essenciais para diagnóstico preciso.\n\n**Outras opções:**  \nA, B e C estão corretas: essas infecções são polimicrobianas (aeróbias e anaeróbias), acometem tecidos profundos (pele, subcutâneo, fáscia, músculo) e exigem amostras profundas para cultura e histopatologia, além de hemoculturas em casos graves.",
+            "explicacoes": {
+                "robo": [
+                    "Estas infecciones efectivamente suelen ser polimicrobianas.",
+                    "Efectivamente pueden afectar piel, tejido subcutáneo, fascia muscular y/o músculo.",
+                    "El diagnóstico efectivamente requiere muestras de tejido tomadas en profundidad y hemocultivos.",
+                    "El hisopado de tejido superficial tiene BAJA sensibilidad, ya que la infección involucra tejidos profundos y la superficie puede contener bacterias colonizadoras que dificultan la identificación del patógeno real — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, polimicrobiana.",
+                    "Esa está bien, hasta el músculo.",
+                    "Esa está bien, profunda y hemocultivo.",
+                    "¡Esta! El hisopado superficial rinde poco, no mucho."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Rinde poco, no mucho."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -4913,7 +5133,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Rhizopus spp.  \nRhizopus spp., causador da mucormicose, provoca infecções invasivas em tecidos profundos, não infecções superficiais como o intertrigo.  \n\n**Outras opções:**  \nA. Cândida albicans é comum em intertrigo candidiásico por infectar áreas úmidas da pele.  \nB. Trichophyton rubrum, dermatófito, frequentemente causa intertrigo fúngico.  \nC. Malassezia spp., leveduras lipofílicas, também estão associadas ao intertrigo em condições específicas.  \n\nPortanto, Rhizopus não é agente esperado no intertrigo,"
+            "feedback": "**Resposta Correta:** D. Rhizopus spp.  \nRhizopus spp., causador da mucormicose, provoca infecções invasivas em tecidos profundos, não infecções superficiais como o intertrigo.  \n\n**Outras opções:**  \nA. Cândida albicans é comum em intertrigo candidiásico por infectar áreas úmidas da pele.  \nB. Trichophyton rubrum, dermatófito, frequentemente causa intertrigo fúngico.  \nC. Malassezia spp., leveduras lipofílicas, também estão associadas ao intertrigo em condições específicas.  \n\nPortanto, Rhizopus não é agente esperado no intertrigo,",
+            "explicacoes": {
+                "robo": [
+                    "Candida albicans efectivamente es común en el intertrigo candidiásico, infectando áreas húmedas de la piel.",
+                    "Trichophyton rubrum, dermatofito, efectivamente causa con frecuencia intertrigo fúngico.",
+                    "Malassezia spp, levaduras lipofílicas, efectivamente se asocian al intertrigo en condiciones específicas.",
+                    "Rhizopus spp, causante de la mucormicosis, provoca infecciones invasivas en tejidos profundos, no infecciones superficiales como el intertrigo — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Ese sí es de intertrigo.",
+                    "Ese sí es de intertrigo.",
+                    "Ese sí es de intertrigo.",
+                    "¡Esta! Ese es profundo, no de intertrigo."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es.",
+                    "¡Ronroneo de aprobación! Es profundo, no superficial."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -4939,7 +5179,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta; complicações neurológicas por reativação do vírus Varicela-Zoster (herpes-zóster) ocorrem principalmente em idosos e imunocomprometidos, não em crianças de 5 a 20 anos.  \n**Outras opções:**  \nA: Vacina com vírus vivo atenuado pode causar doença pós-vacinal rara.  \nB: VZV transmite-se por aerossóis e contato com lesões.  \nC: Herpes-zóster resulta da reativação do VZV latente nos gânglios sensoriais, podendo causar complicações neurológicas.  \nPortanto, apenas a opção D está errada quanto à faixa"
+            "feedback": "**Resposta Correta:** D está incorreta; complicações neurológicas por reativação do vírus Varicela-Zoster (herpes-zóster) ocorrem principalmente em idosos e imunocomprometidos, não em crianças de 5 a 20 anos.  \n**Outras opções:**  \nA: Vacina com vírus vivo atenuado pode causar doença pós-vacinal rara.  \nB: VZV transmite-se por aerossóis e contato com lesões.  \nC: Herpes-zóster resulta da reativação do VZV latente nos gânglios sensoriais, podendo causar complicações neurológicas.  \nPortanto, apenas a opção D está errada quanto à faixa",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente existe una vacuna a virus vivo atenuado que eventualmente puede causar enfermedad post-vacunal.",
+                    "La infección efectivamente puede transmitirse por aerosoles respiratorios y por contacto con las lesiones cutáneas.",
+                    "El zóster efectivamente constituye una reactivación de la infección latente en neuronas sensoriales, con complicaciones neurológicas potenciales.",
+                    "Las complicaciones neurológicas por reactivación se observan principalmente en ancianos e inmunocomprometidos, no en niños entre 5 y 20 años — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, puede pasar.",
+                    "Esa está bien, por aerosol y contacto.",
+                    "Esa está bien, reactivación latente.",
+                    "¡Esta! Es de viejo e inmunocomprometido, no de niño."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es de viejo, no de niño."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -4965,7 +5225,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Os HPV de alto risco não causam apenas câncer de colo uterino, mas também cânceres anogenitais e orofaríngeos, tornando falsa a exclusividade ao câncer cervical.\n\n**Outras opções:**  \nA está correta ao afirmar que o HPV é transmitido por contato direto e pode haver autorreinfeção.  \nB está correta ao descrever lesões cutâneas e mucosas típicas do HPV.  \nD está correta ao dizer que o diagnóstico clínico é geralmente suficiente, mas exames como PCR e histopatologia confirmam casos atípicos."
+            "feedback": "**Resposta Correta:** C. Os HPV de alto risco não causam apenas câncer de colo uterino, mas também cânceres anogenitais e orofaríngeos, tornando falsa a exclusividade ao câncer cervical.\n\n**Outras opções:**  \nA está correta ao afirmar que o HPV é transmitido por contato direto e pode haver autorreinfeção.  \nB está correta ao descrever lesões cutâneas e mucosas típicas do HPV.  \nD está correta ao dizer que o diagnóstico clínico é geralmente suficiente, mas exames como PCR e histopatologia confirmam casos atípicos.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente se transmite por contacto directo, relaciones sexuales, y puede haber autorreinfección.",
+                    "Efectivamente genera lesiones en piel y mucosas.",
+                    "Los HPV de alto riesgo no se asocian exclusivamente al cáncer de cuello uterino, sino también a cánceres anogenitales y orofaríngeos — esta es la opción incorrecta.",
+                    "El diagnóstico efectivamente es clínico, aunque puede confirmarse mediante técnicas de laboratorio específicas."
+                ],
+                "fantasma": [
+                    "Esa está bien, contacto y sexual.",
+                    "Esa está bien, piel y mucosa.",
+                    "¡Esta! No es solo del cuello uterino.",
+                    "Esa está bien, clínico con confirmación."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es solo cervical.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -4991,7 +5271,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A opção A está incorreta: diabetes, insuficiência venosa e imunocompromisso não são fatores predisponentes específicos para infecção por *Clostridium tetani*. A infecção ocorre por feridas contaminadas com esporos em ambiente anaeróbio, especialmente feridas sujas, profundas ou com tecido desvitalizado, e pela ausência de imunização adequada. As opções B, C e D estão corretas: vacinação e imunoglobulina são indicadas em mordeduras com esquema incompleto; reforço vacinal combinado é recomendado a cada 10 anos; e profilaxia não é necessária em feridas limpas com vacinação em dia."
+            "feedback": "A opção A está incorreta: diabetes, insuficiência venosa e imunocompromisso não são fatores predisponentes específicos para infecção por *Clostridium tetani*. A infecção ocorre por feridas contaminadas com esporos em ambiente anaeróbio, especialmente feridas sujas, profundas ou com tecido desvitalizado, e pela ausência de imunização adequada. As opções B, C e D estão corretas: vacinação e imunoglobulina são indicadas em mordeduras com esquema incompleto; reforço vacinal combinado é recomendado a cada 10 anos; e profilaxia não é necessária em feridas limpas com vacinação em dia.",
+            "explicacoes": {
+                "robo": [
+                    "La diabetes, insuficiencia venosa e inmunocompromiso no son factores predisponentes específicos para la infección por Clostridium tetani; esta ocurre por heridas contaminadas con esporas en ambiente anaerobio, especialmente heridas sucias, profundas o con tejido desvitalizado, y por falta de inmunización adecuada — esta es la opción incorrecta.",
+                    "Efectivamente, ante una mordedura con esquema de vacunación incompleto debe administrarse vacuna y gammaglobulina antitetánicas.",
+                    "Efectivamente, la vacuna antitetánica debe administrarse junto a la antidiftérica cada 10 años en adultos.",
+                    "Efectivamente, no es necesaria la profilaxis post-exposición en heridas limpias con vacunación al día."
+                ],
+                "fantasma": [
+                    "¡Esta! No es por eso, es por la herida contaminada.",
+                    "Esa está bien, vacuna y gammaglobulina.",
+                    "Esa está bien, cada 10 años.",
+                    "Esa está bien, herida limpia no necesita."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es la herida, no esos factores.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -5017,7 +5317,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. A presença isolada de cocos Gram-positivos não confirma infecção por *Staphylococcus aureus*, pois inclui vários gêneros, como *Staphylococcus* (com espécies contaminantes) e *Streptococcus*. É necessária identificação específica para diagnóstico.  \nOutras opções corretas:  \nA: *Streptococcus* grupo C pode causar erisipela, embora o grupo A seja mais comum.  \nB: Mordidas de animais associam-se a infecções por *Pasteurella multocida*.  \nC: Leveduras, hifas e pseudohifas indicam infecção por *Candida* spp."
+            "feedback": "Resposta correta: D. A presença isolada de cocos Gram-positivos não confirma infecção por *Staphylococcus aureus*, pois inclui vários gêneros, como *Staphylococcus* (com espécies contaminantes) e *Streptococcus*. É necessária identificação específica para diagnóstico.  \nOutras opções corretas:  \nA: *Streptococcus* grupo C pode causar erisipela, embora o grupo A seja mais comum.  \nB: Mordidas de animais associam-se a infecções por *Pasteurella multocida*.  \nC: Leveduras, hifas e pseudohifas indicam infecção por *Candida* spp.",
+            "explicacoes": {
+                "robo": [
+                    "Los estreptococos del grupo C efectivamente pueden causar erisipela, aunque el grupo A es más frecuente.",
+                    "Las mordeduras de animales efectivamente se asocian a infecciones por Pasteurella multocida.",
+                    "La observación de levaduras, hifas y pseudohifas efectivamente sugiere infección por Candida spp.",
+                    "El aislamiento de cocos Gram positivos por sí solo no confirma infección por Staphylococcus aureus, ya que incluye varios géneros como Staphylococcus (con especies contaminantes) y Streptococcus; se requiere identificación específica — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, grupo C también da.",
+                    "Esa está bien, Pasteurella.",
+                    "Esa está bien, Candida.",
+                    "¡Esta! Solo eso no confirma el aureus."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No confirma solo."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -5043,7 +5363,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. O diagnóstico do impetigo é clínico, baseado nas lesões típicas, não sendo rotineira a escarificação e cultura em ágar sangue, usadas apenas em casos atípicos ou surtos.  \n\n**Análise das outras opções:**  \nA, B e D estão corretas: Staphylococcus aureus é um agente comum (A); a infecção ocorre por inoculação direta em lesões cutâneas (B); e o impetigo é mais frequente em crianças pré-escolares (D)."
+            "feedback": "**Resposta Correta:** C. O diagnóstico do impetigo é clínico, baseado nas lesões típicas, não sendo rotineira a escarificação e cultura em ágar sangue, usadas apenas em casos atípicos ou surtos.  \n\n**Análise das outras opções:**  \nA, B e D estão corretas: Staphylococcus aureus é um agente comum (A); a infecção ocorre por inoculação direta em lesões cutâneas (B); e o impetigo é mais frequente em crianças pré-escolares (D).",
+            "explicacoes": {
+                "robo": [
+                    "Staphylococcus aureus efectivamente es un agente causal del impétigo.",
+                    "El impétigo efectivamente se produce por inoculación directa del microorganismo.",
+                    "El diagnóstico del impétigo es clínico, basado en las lesiones típicas; la escarificación y cultivo en agar sangre no son rutinarios, usándose solo en casos atípicos o brotes — esta es la opción incorrecta.",
+                    "El impétigo efectivamente es más frecuente en niños."
+                ],
+                "fantasma": [
+                    "Esa está bien, agente conocido.",
+                    "Esa está bien, inoculación directa.",
+                    "¡Esta! No es de rutina eso, es clínico.",
+                    "Esa está bien, más en niño."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es de rutina.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -5069,7 +5409,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta, pois vírus exantemáticos humanos (sarampo, rubéola, varicela) não têm reservatórios em animais domésticos; a transmissão é exclusivamente entre humanos. \n\n**Outras opções:**  \nA está correta: transmissão ocorre por contato com secreções respiratórias.  \nB está correta: disseminação via sangue e sistema linfático é típica, levando o vírus à pele.  \nC está correta: lesões cutâneas na varicela-zoster contêm vírus ativos, essenciais para a transmissão."
+            "feedback": "**Resposta Correta:** D está incorreta, pois vírus exantemáticos humanos (sarampo, rubéola, varicela) não têm reservatórios em animais domésticos; a transmissão é exclusivamente entre humanos. \n\n**Outras opções:**  \nA está correta: transmissão ocorre por contato com secreções respiratórias.  \nB está correta: disseminação via sangue e sistema linfático é típica, levando o vírus à pele.  \nC está correta: lesões cutâneas na varicela-zoster contêm vírus ativos, essenciais para a transmissão.",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión efectivamente ocurre por contacto con secreciones respiratorias.",
+                    "Efectivamente se diseminan por vía linfohemática en el huésped.",
+                    "En la infección por virus varicela-zóster, las lesiones efectivamente están habitadas por partículas virales, esenciales para la transmisión.",
+                    "Los virus exantemáticos humanos (sarampión, rubéola, varicela) no tienen reservorio en animales domésticos; la transmisión es exclusivamente entre humanos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, por secreción.",
+                    "Esa está bien, vía sangre y linfa.",
+                    "Esa está bien, con virus vivo.",
+                    "¡Esta! No hay mascota reservorio, es solo humano."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es solo entre humanos."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -5095,7 +5455,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. A imunossupressão pelo vírus do sarampo é transitória, durando semanas a meses, não permanente.\n\n**Outras opções:**  \nA está correta: o vírus é contagioso de 4 dias antes até 4 dias após o exantema.  \nB está correta: diagnóstico confirmado por soroconversão (aumento de IgG específico).  \nC está correta: vacinação tríplice viral é a prevenção mais eficaz.\n\nEm resumo, D erra ao afirmar que a imunossupressão é permanente; as demais opções são corretas."
+            "feedback": "**Resposta Correta:** D está incorreta. A imunossupressão pelo vírus do sarampo é transitória, durando semanas a meses, não permanente.\n\n**Outras opções:**  \nA está correta: o vírus é contagioso de 4 dias antes até 4 dias após o exantema.  \nB está correta: diagnóstico confirmado por soroconversão (aumento de IgG específico).  \nC está correta: vacinação tríplice viral é a prevenção mais eficaz.\n\nEm resumo, D erra ao afirmar que a imunossupressão é permanente; as demais opções são corretas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el virus puede transmitirse desde 4 días antes hasta 4 días después de la aparición del exantema.",
+                    "El diagnóstico confirmatorio efectivamente puede realizarse por seroconversión de IgG específica en muestras pareadas.",
+                    "La vacuna efectivamente es una medida eficaz para eliminar la transmisión.",
+                    "La inmunosupresión causada por el virus del sarampión es TRANSITORIA, durando semanas a meses, no permanente — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, 4 y 4 días.",
+                    "Esa está bien, con IgG pareada.",
+                    "Esa está bien, la vacuna elimina.",
+                    "¡Esta! Es pasajera, no permanente."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es pasajera."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -5121,7 +5501,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A alopecia por Pediculus humanus capitis decorre da coceira e traumatismo mecânico, não de resposta inflamatória, tornando a afirmação incorreta.\n\n**Outras opções:**  \nA. Demodex folliculorum parasita folículos pilosos, associado a rosácea e dermatite — correto.  \nB. Dermatobia hominis causa lesões nodulares inflamatórias na pele — correto.  \nC. Ancylostoma caninum provoca larva migrans cutânea com lesões serpenteantes eritematosas — correto."
+            "feedback": "**Resposta Correta:** D. A alopecia por Pediculus humanus capitis decorre da coceira e traumatismo mecânico, não de resposta inflamatória, tornando a afirmação incorreta.\n\n**Outras opções:**  \nA. Demodex folliculorum parasita folículos pilosos, associado a rosácea e dermatite — correto.  \nB. Dermatobia hominis causa lesões nodulares inflamatórias na pele — correto.  \nC. Ancylostoma caninum provoca larva migrans cutânea com lesões serpenteantes eritematosas — correto.",
+            "explicacoes": {
+                "robo": [
+                    "Demodex folliculorum efectivamente parasita los folículos pilosos, particularmente en la cara.",
+                    "La larva de Dermatobia hominis efectivamente causa lesiones nodulares.",
+                    "Ancylostoma caninum efectivamente produce lesiones serpenteantes eritematosas en miembros inferiores.",
+                    "La alopecia causada por Pediculus humanus capitis se debe al rascado y traumatismo mecánico, no a una respuesta inflamatoria — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, folículo de la cara.",
+                    "Esa está bien, nódulo.",
+                    "Esa está bien, lesión serpenteante.",
+                    "¡Esta! Es por el rascado, no por inflamación."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es por rascarse."
+                ]
+            }
         },
         {
             "numero": 51,
