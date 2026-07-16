@@ -16,6 +16,11 @@
         window.bcRefreshStyledSelect(sel);
     }
 
+    function toggleWrap(id, show) {
+        var el = $(id);
+        if (el) el.classList.toggle('d-none', !show);
+    }
+
     function setSel(sel, rows, placeholder) {
         sel.innerHTML = '';
         var o0 = document.createElement('option');
@@ -81,6 +86,7 @@
         var qc = cid ? '&catedra_id=' + encodeURIComponent(cid) : '';
         u(URLs.parc, '?materia_id=' + encodeURIComponent(mid) + qc).then(function (r) {
             var ps = r.data || [];
+            toggleWrap('qb_parciais_wrap', ps.length > 0);
             var mapLbl = {'1':'{{ __('bank.parc.label_1') }}','2':'{{ __('bank.parc.label_2') }}','3':'{{ __('bank.parc.label_3') }}','final':'{{ __('bank.parc.final') }}','libre':'{{ __('bank.parc.libre') }}'};
             ps.forEach(function (p) {
                 if (!p) return;
@@ -185,6 +191,7 @@
         $('qb_catedra_hidden').value = '';
         $('qb_parciais').innerHTML = '';
         $('qb_temas').innerHTML = '';
+        toggleWrap('qb_parciais_wrap', false);
         var catSel = $('qb_cat');
         if (catSel) {
             catSel.innerHTML = '';
@@ -194,6 +201,7 @@
         }
         var qh = $('qb_cat_hint');
         if (qh) qh.classList.add('d-none');
+        toggleWrap('qb_cat_wrap', false);
         if (! mid) return;
 
         u(URLs.cat, '?materia_id=' + encodeURIComponent(mid)).then(function (j) {
@@ -202,6 +210,7 @@
                 loadFiltros();
                 return;
             }
+            toggleWrap('qb_cat_wrap', true);
             if (qh) qh.classList.remove('d-none');
             catSel.disabled = false;
             setSel(catSel, rows, '{{ __('catalog.placeholder') }}');
@@ -209,6 +218,7 @@
                 $('qb_catedra_hidden').value = this.value || '';
                 $('qb_parciais').innerHTML = '';
                 $('qb_temas').innerHTML = '';
+                toggleWrap('qb_parciais_wrap', false);
                 if (! this.value) {
                     return;
                 }
@@ -384,12 +394,12 @@
 
     <select id="qb_mat" hidden></select>
 @endif
-<div class="mb-4">
+<div class="mb-4 d-none" id="qb_cat_wrap">
     <label class="form-label" for="qb_cat">{{ __('bank.catalog.pick_cat_opt') }}</label>
     <select class="bc-styled-select bc-styled-select--fluid" id="qb_cat" disabled></select>
     <div id="qb_cat_hint" class="form-text small d-none">{{ __('bank.catalog.catedra_obrig') }}</div>
 </div>
-<div class="mb-3">
+<div class="mb-3 d-none" id="qb_parciais_wrap">
     <span class="form-label d-block">{{ __('bank.parc.heading') }}</span>
     <div id="qb_parciais" class="d-flex flex-wrap gap-3"></div>
     <p class="small text-muted mt-2 mb-0">{{ __('bank.help_final_covers_partials') }}</p>
