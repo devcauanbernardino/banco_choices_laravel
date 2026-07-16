@@ -78,6 +78,25 @@
   color: inherit;
 }
 
+/*
+ * Contorno roxo no escuro: mesma cor #6a0392 do modo claro fica quase
+ * invisível contra fundo escuro. Usa o lilás claro já adotado em
+ * .text-primary/.link-primary no modo escuro.
+ */
+[data-theme="dark"] .btn-outline-primary,
+[data-bs-theme="dark"] .btn-outline-primary {
+  --bs-btn-color: #c4b5fd;
+  --bs-btn-border-color: #c4b5fd;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bc-purple);
+  --bs-btn-hover-border-color: #c4b5fd;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #550275;
+  --bs-btn-active-border-color: #550275;
+  --bs-btn-disabled-color: rgba(196, 181, 253, 0.5);
+  --bs-btn-disabled-border-color: rgba(196, 181, 253, 0.3);
+}
+
 [data-theme="dark"] .card {
   background-color: var(--app-surface);
   border-color: var(--app-border);
