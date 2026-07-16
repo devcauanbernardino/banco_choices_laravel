@@ -44,15 +44,15 @@ a.btn-primary {
   box-shadow: 0 0.125rem 0.35rem rgba(0, 0, 0, 0.1) !important;
 }
 
-/* Contorno roxo (secundários) */
+/* Contorno roxo (secundários) — fundo transparente, só um tint sutil no hover/active */
 .btn-outline-primary {
   --bs-btn-color: var(--bc-purple);
   --bs-btn-border-color: var(--bc-purple);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--bc-purple);
+  --bs-btn-hover-color: var(--bc-purple);
+  --bs-btn-hover-bg: rgba(106, 3, 146, 0.08);
   --bs-btn-hover-border-color: var(--bc-purple);
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: var(--bc-purple-dark);
+  --bs-btn-active-color: var(--bc-purple-dark);
+  --bs-btn-active-bg: rgba(106, 3, 146, 0.14);
   --bs-btn-active-border-color: var(--bc-purple-dark);
   font-weight: 600;
 }
