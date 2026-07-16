@@ -2787,7 +2787,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. O método Kirby-Bauer é o padrão qualitativo para testar a sensibilidade de Streptococcus pneumoniae, classificando bactérias como sensíveis, intermediárias ou resistentes com base no halo de inibição. \n\nErrado:  \nA) Kirby-Bauer não ajusta doses nem fornece CIM, apenas categorização qualitativa.  \nB) Meio Sabouraud é para fungos, não para bactérias; usa-se ágar Mueller-Hinton com sangue.  \nC) CIM é determinado por métodos quantitativos (microdiluição, E-test), não por discos de Kirby-Bauer."
+            "feedback": "Resposta correta: D. O método Kirby-Bauer é o padrão qualitativo para testar a sensibilidade de Streptococcus pneumoniae, classificando bactérias como sensíveis, intermediárias ou resistentes com base no halo de inibição. \n\nErrado:  \nA) Kirby-Bauer não ajusta doses nem fornece CIM, apenas categorização qualitativa.  \nB) Meio Sabouraud é para fungos, não para bactérias; usa-se ágar Mueller-Hinton com sangue.  \nC) CIM é determinado por métodos quantitativos (microdiluição, E-test), não por discos de Kirby-Bauer.",
+            "explicacoes": {
+                "robo": [
+                    "El método de Kirby-Bauer no ajusta dosis ni proporciona la CIM, solo categoriza cualitativamente.",
+                    "El medio de Sabouraud es para hongos, no para bacterias; se usa agar Mueller-Hinton con sangre para neumococo.",
+                    "La CIM se determina con métodos cuantitativos (microdilución, E-test), no con discos de Kirby-Bauer.",
+                    "El método de Kirby-Bauer es el estándar cualitativo para evaluar la sensibilidad de S. pneumoniae, clasificando la bacteria como sensible, intermedia o resistente según el halo de inhibición — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Kirby-Bauer no ajusta dosis.",
+                    "Sabouraud es de hongo, no de bacteria.",
+                    "La CIM usa otro método, no discos.",
+                    "¡Esta! Kirby-Bauer, el clásico cualitativo."
+                ],
+                "gato": [
+                    "Fijate: no ajusta dosis.",
+                    "Dato curioso: es de hongo.",
+                    "Miau, otro método.",
+                    "¡Ronroneo de aprobación! El clásico cualitativo."
+                ]
+            }
         },
         {
             "numero": 62,
@@ -2813,7 +2833,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Testes com alta sensibilidade são eficazes para descartar infecções, pois apresentam poucos falsos negativos (regra SnNout).  \n\n**Opções Incorretas:**  \nA está errada, pois especificidade identifica os não infectados, não sensibilidade.  \nB é incorreta, pois alta sensibilidade reduz falsos negativos, não aumenta.  \nD está errada, pois sensibilidade é fixa e não depende da prevalência da infecção."
+            "feedback": "**Resposta Correta:** C. Testes com alta sensibilidade são eficazes para descartar infecções, pois apresentam poucos falsos negativos (regra SnNout).  \n\n**Opções Incorretas:**  \nA está errada, pois especificidade identifica os não infectados, não sensibilidade.  \nB é incorreta, pois alta sensibilidade reduz falsos negativos, não aumenta.  \nD está errada, pois sensibilidade é fixa e não depende da prevalência da infecção.",
+            "explicacoes": {
+                "robo": [
+                    "Medir la capacidad de identificar correctamente a los no infectados corresponde a la especificidad, no a la sensibilidad.",
+                    "La alta sensibilidad DISMINUYE la probabilidad de falsos negativos, no la aumenta.",
+                    "Una prueba con alta sensibilidad es útil para descartar una infección, ya que presenta pocos falsos negativos (regla SnNout) — es la respuesta correcta.",
+                    "La sensibilidad es una propiedad fija de la prueba, no depende de la prevalencia de la infección."
+                ],
+                "fantasma": [
+                    "Eso es especificidad.",
+                    "Al revés: baja los falsos negativos.",
+                    "¡Esta! Alta sensibilidad, sirve para descartar.",
+                    "Es fija, no depende de la prevalencia."
+                ],
+                "gato": [
+                    "Fijate: es especificidad.",
+                    "Dato curioso: es al revés.",
+                    "¡Ronroneo de aprobación! Sirve para descartar.",
+                    "Miau, es fija."
+                ]
+            }
         },
         {
             "numero": 63,
@@ -2839,7 +2879,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A opção A está incorreta: a detecção de anticorpos por Western Blot é um método indireto, pois identifica a resposta imune do paciente, não o microrganismo diretamente. As opções B, C e D estão corretas: Ziehl-Neelsen detecta diretamente bacilos ácido-alcool resistentes; PCR em tempo real identifica e quantifica material genético do microrganismo; e o teste de aglutinação em látex detecta antígenos bacterianos rapidamente. Assim, apenas a opção A confunde método direto com indireto."
+            "feedback": "A opção A está incorreta: a detecção de anticorpos por Western Blot é um método indireto, pois identifica a resposta imune do paciente, não o microrganismo diretamente. As opções B, C e D estão corretas: Ziehl-Neelsen detecta diretamente bacilos ácido-alcool resistentes; PCR em tempo real identifica e quantifica material genético do microrganismo; e o teste de aglutinação em látex detecta antígenos bacterianos rapidamente. Assim, apenas a opção A confunde método direto com indireto.",
+            "explicacoes": {
+                "robo": [
+                    "La detección de anticuerpos por Western Blot es un método INDIRECTO, ya que identifica la respuesta inmune del paciente, no el microorganismo directamente — esta es la opción incorrecta.",
+                    "La coloración de Ziehl-Neelsen efectivamente detecta directamente bacilos ácido-alcohol resistentes.",
+                    "La PCR en tiempo real efectivamente identifica y cuantifica material genético del microorganismo.",
+                    "La aglutinación de látex efectivamente detecta rápidamente antígenos bacterianos."
+                ],
+                "fantasma": [
+                    "¡Esta! Western Blot es indirecto, mide la respuesta inmune.",
+                    "Esa es directa sí, detecta el bacilo.",
+                    "Esa es directa sí, detecta el genoma.",
+                    "Esa es directa sí, detecta antígeno rápido."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es indirecto, mide la respuesta inmune.",
+                    "Fijate: directa.",
+                    "Dato curioso: directa.",
+                    "Miau, directa."
+                ]
+            }
         },
         {
             "numero": 64,
@@ -2865,7 +2925,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. A detecção sorológica de antígenos capsulares é método direto, pois identifica diretamente o antígeno do microrganismo no material clínico. Métodos diretos detectam componentes do patógeno; métodos indiretos avaliam a resposta imune do hospedeiro. Classificar essa detecção como indireta está incorreto.\n\n**Outras opções:**  \nA (microscopia de pseudohifas), C (imunofluorescência direta) e D (detecção molecular de ácidos nucleicos) são métodos diretos, pois identificam diretamente estruturas ou material genético do agente infeccioso."
+            "feedback": "**Resposta Correta:** B. A detecção sorológica de antígenos capsulares é método direto, pois identifica diretamente o antígeno do microrganismo no material clínico. Métodos diretos detectam componentes do patógeno; métodos indiretos avaliam a resposta imune do hospedeiro. Classificar essa detecção como indireta está incorreto.\n\n**Outras opções:**  \nA (microscopia de pseudohifas), C (imunofluorescência direta) e D (detecção molecular de ácidos nucleicos) são métodos diretos, pois identificam diretamente estruturas ou material genético do agente infeccioso.",
+            "explicacoes": {
+                "robo": [
+                    "La observación microscópica en fresco de pseudohifas es efectivamente un método directo.",
+                    "La detección serológica de antígenos capsulares bacterianos es un método DIRECTO, ya que identifica directamente el antígeno del microorganismo, no la respuesta inmune del huésped — esta es la opción incorrecta.",
+                    "La inmunofluorescencia directa efectivamente puede emplearse para detectar antígenos.",
+                    "La detección de ácidos nucleicos por técnicas moleculares es efectivamente un método directo."
+                ],
+                "fantasma": [
+                    "Esa es directa sí.",
+                    "¡Esta! Detecta el antígeno, es directa, no indirecta.",
+                    "Esa es directa sí.",
+                    "Esa es directa sí."
+                ],
+                "gato": [
+                    "Fijate: directa.",
+                    "¡Ronroneo de aprobación! Es directa, detecta antígeno.",
+                    "Dato curioso: directa.",
+                    "Miau, directa."
+                ]
+            }
         },
         {
             "numero": 65,
@@ -2891,7 +2971,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. A evolução dos títulos de anticorpos (IgM, IgG) permite avaliar o prognóstico da infecção, indicando atividade ou resolução da doença.\n\n**Opções Incorretas:**\nB. MALDI-TOF identifica rapidamente bactérias e fungos, mas não é usado rotineiramente para parasitas, que exigem métodos específicos.  \nC. O valor preditivo positivo depende da prevalência da doença, não sendo independente dela.  \nD. A especificidade é uma característica do teste e não varia com a prevalência, ao contrário do que foi afirmado."
+            "feedback": "**Resposta Correta:** A. A evolução dos títulos de anticorpos (IgM, IgG) permite avaliar o prognóstico da infecção, indicando atividade ou resolução da doença.\n\n**Opções Incorretas:**\nB. MALDI-TOF identifica rapidamente bactérias e fungos, mas não é usado rotineiramente para parasitas, que exigem métodos específicos.  \nC. O valor preditivo positivo depende da prevalência da doença, não sendo independente dela.  \nD. A especificidade é uma característica do teste e não varia com a prevalência, ao contrário do que foi afirmado.",
+            "explicacoes": {
+                "robo": [
+                    "La evolución del título de anticuerpos (IgM, IgG) efectivamente permite evaluar el pronóstico de una infección, indicando actividad o resolución de la enfermedad — es la respuesta correcta.",
+                    "El MALDI-TOF identifica rápidamente bacterias y hongos, pero no se usa de rutina para parásitos, que requieren métodos específicos.",
+                    "El valor predictivo positivo depende de la prevalencia de la enfermedad, no es independiente de ella.",
+                    "La especificidad es una característica del test y no varía con la prevalencia."
+                ],
+                "fantasma": [
+                    "¡Esta! El título de anticuerpo dice cómo va la infección.",
+                    "El MALDI-TOF no es de rutina para parásito.",
+                    "El VPP sí depende de la prevalencia.",
+                    "La especificidad no cambia con la prevalencia."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Título de anticuerpo, el pronóstico.",
+                    "Fijate: no es de rutina.",
+                    "Dato curioso: sí depende.",
+                    "Miau, no cambia."
+                ]
+            }
         },
         {
             "numero": 66,
@@ -2917,7 +3017,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Urina para infecção urinária deve ser transportada e conservada refrigerada (2-8°C) para evitar crescimento excessivo de contaminantes e garantir viabilidade dos microrganismos.  \nOpção A incorreta: hisopados faríngeos não devem usar meio anaeróbio, pois a flora é aeróbia/microaerófila.  \nOpção B incorreta: amostras de sítios não estéreis precisam ser coletadas e transportadas em recipientes estéreis para evitar contaminação.  \nOpção D incorreta: uso prévio de antibióticos reduz sensibilidade do cultivo, podendo causar falsos negativos."
+            "feedback": "Resposta correta: C. Urina para infecção urinária deve ser transportada e conservada refrigerada (2-8°C) para evitar crescimento excessivo de contaminantes e garantir viabilidade dos microrganismos.  \nOpção A incorreta: hisopados faríngeos não devem usar meio anaeróbio, pois a flora é aeróbia/microaerófila.  \nOpção B incorreta: amostras de sítios não estéreis precisam ser coletadas e transportadas em recipientes estéreis para evitar contaminação.  \nOpção D incorreta: uso prévio de antibióticos reduz sensibilidade do cultivo, podendo causar falsos negativos.",
+            "explicacoes": {
+                "robo": [
+                    "Los hisopados faríngeos no deben usar medio anaerobio, ya que la flora es aerobia/microaerófila.",
+                    "Las muestras de sitios no estériles también deben recolectarse y transportarse en recipientes estériles, para evitar contaminación adicional.",
+                    "La temperatura de transporte y conservación de la orina efectivamente influye en el resultado, evitando el sobrecrecimiento de contaminantes — es la respuesta correcta.",
+                    "El consumo previo de antibióticos SÍ reduce la sensibilidad del cultivo de LCR, pudiendo causar falsos negativos."
+                ],
+                "fantasma": [
+                    "La garganta es aerobia, no anaerobia.",
+                    "Igual necesita estéril, aunque el sitio no lo sea.",
+                    "¡Esta! La temperatura de la orina sí importa.",
+                    "El antibiótico previo sí afecta el resultado."
+                ],
+                "gato": [
+                    "Fijate: es aerobia.",
+                    "Dato curioso: igual necesita estéril.",
+                    "¡Ronroneo de aprobación! La temperatura importa.",
+                    "Miau, sí afecta."
+                ]
+            }
         },
         {
             "numero": 67,
@@ -2943,7 +3063,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "A opção A está correta: esterilização elimina todos os microrganismos, inclusive esporos, garantindo ambiente livre de vida microbiana viável. B refere-se à limpeza, que remove sujeira, mas não microrganismos. C menciona inativação, que pode não destruir completamente, especialmente esporos. D fala de métodos mecânicos, que removem, mas não necessariamente destroem todos os microrganismos. Assim, apenas A define corretamente a esterilização."
+            "feedback": "A opção A está correta: esterilização elimina todos os microrganismos, inclusive esporos, garantindo ambiente livre de vida microbiana viável. B refere-se à limpeza, que remove sujeira, mas não microrganismos. C menciona inativação, que pode não destruir completamente, especialmente esporos. D fala de métodos mecânicos, que removem, mas não necessariamente destroem todos os microrganismos. Assim, apenas A define corretamente a esterilização.",
+            "explicacoes": {
+                "robo": [
+                    "La esterilización elimina todos los microorganismos, incluidas las esporas, garantizando un ambiente libre de vida microbiana viable — es la respuesta correcta.",
+                    "Esto se refiere a la limpieza, que remueve suciedad, pero no necesariamente microorganismos.",
+                    "La 'inactivación' puede no destruir completamente, especialmente las esporas; esto no define esterilización con precisión.",
+                    "Los métodos mecánicos remueven, pero no necesariamente destruyen todos los microorganismos."
+                ],
+                "fantasma": [
+                    "¡Esta! Elimina todo, hasta las esporas.",
+                    "Eso es limpieza, no esterilización.",
+                    "Eso puede no destruir esporas.",
+                    "Eso remueve, no siempre destruye."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Elimina todo, hasta esporas.",
+                    "Fijate: es limpieza.",
+                    "Dato curioso: puede fallar con esporas.",
+                    "Miau, no siempre destruye."
+                ]
+            }
         },
         {
             "numero": 68,
@@ -2969,7 +3109,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "A alternativa D está incorreta: antiparras e cofia não são medidas necessárias para prevenir a transmissão da varicela-zóster por gotículas. A transmissão ocorre por gotículas respiratórias e contato direto com lesões. As opções A, B e C estão corretas: o uso de máscara N95 protege contra aerossóis; luvas e avental evitam contato direto com lesões; e a higienização das mãos antes e depois do uso de luvas é essencial para o controle da infecção."
+            "feedback": "A alternativa D está incorreta: antiparras e cofia não são medidas necessárias para prevenir a transmissão da varicela-zóster por gotículas. A transmissão ocorre por gotículas respiratórias e contato direto com lesões. As opções A, B e C estão corretas: o uso de máscara N95 protege contra aerossóis; luvas e avental evitam contato direto com lesões; e a higienização das mãos antes e depois do uso de luvas é essencial para o controle da infecção.",
+            "explicacoes": {
+                "robo": [
+                    "El uso de barbijo N95 efectivamente previene la transmisión por vía inhalatoria (aerosoles).",
+                    "El uso de guantes y camisolín estéril efectivamente evita la transmisión por contacto con lesiones.",
+                    "El lavado de manos antes y después del uso de guantes efectivamente es esencial para el control de la infección.",
+                    "Antiparras y cofia no son medidas necesarias para prevenir la transmisión de varicela-zóster por gota; la transmisión ocurre por gotículas respiratorias y contacto directo con lesiones — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, N95 para aerosol.",
+                    "Esa está bien, contacto con lesión.",
+                    "Esa está bien, lavado de manos.",
+                    "¡Esta! No hace falta antiparras y cofia para eso."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No hace falta eso."
+                ]
+            }
         },
         {
             "numero": 69,
@@ -2995,7 +3155,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. Materiais perfurocortantes devem ser descartados em recipientes rígidos específicos, não em bolsas vermelhas para resíduos biocontaminados, para evitar acidentes e contaminação.  \n\n**Outras opções:**  \nA, C e D estão corretas: uso de EPIs (luvas, máscara, jaleco) protege contra infecções; resíduos químicos devem ser descartados em bolsas amarelas; e antissépticos como iodopovidona são eficazes para preparo da pele antes de procedimentos invasivos."
+            "feedback": "**Resposta Correta:** B está incorreta. Materiais perfurocortantes devem ser descartados em recipientes rígidos específicos, não em bolsas vermelhas para resíduos biocontaminados, para evitar acidentes e contaminação.  \n\n**Outras opções:**  \nA, C e D estão corretas: uso de EPIs (luvas, máscara, jaleco) protege contra infecções; resíduos químicos devem ser descartados em bolsas amarelas; e antissépticos como iodopovidona são eficazes para preparo da pele antes de procedimentos invasivos.",
+            "explicacoes": {
+                "robo": [
+                    "El uso de guantes, barbijo y camisolín efectivamente son barreras físicas de protección.",
+                    "Los elementos cortopunzantes deben eliminarse en recipientes rígidos específicos, no en bolsa roja, para evitar accidentes y contaminación — esta es la opción incorrecta.",
+                    "Los residuos químicos efectivamente se descartan en bolsas amarillas.",
+                    "Los antisépticos como iodopovidona efectivamente se usan para preparar la piel antes de procedimientos invasivos."
+                ],
+                "fantasma": [
+                    "Esa está bien, barreras físicas.",
+                    "¡Esta! Cortopunzante va en recipiente rígido, no en bolsa.",
+                    "Esa está bien, bolsa amarilla.",
+                    "Esa está bien, para la piel."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Recipiente rígido, no bolsa.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 70,
@@ -3021,7 +3201,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. \"Clorógenos\" não são compostos usados para eliminar esporos, bactérias e vírus em materiais resistentes ao calor.\n\n**Explicação:**  \nA opção B é incorreta pois \"clorógenos\" não correspondem a desinfetantes ou esterilizantes reconhecidos. Métodos eficazes incluem autoclave e agentes como glutaraldeído, peróxido de hidrogênio e hipoclorito. \n\n**Outras opções:**  \nA (iodóforos), C (pasteurização) e D (glutaraldeído 2%) estão corretas, pois correspondem a práticas e compostos adequados no controle microbiológico."
+            "feedback": "**Resposta Correta:** B. \"Clorógenos\" não são compostos usados para eliminar esporos, bactérias e vírus em materiais resistentes ao calor.\n\n**Explicação:**  \nA opção B é incorreta pois \"clorógenos\" não correspondem a desinfetantes ou esterilizantes reconhecidos. Métodos eficazes incluem autoclave e agentes como glutaraldeído, peróxido de hidrogênio e hipoclorito. \n\n**Outras opções:**  \nA (iodóforos), C (pasteurização) e D (glutaraldeído 2%) estão corretas, pois correspondem a práticas e compostos adequados no controle microbiológico.",
+            "explicacoes": {
+                "robo": [
+                    "Los iodóforos efectivamente se usan como antisépticos en la preparación preoperatoria.",
+                    "Los 'clorógenos' no corresponden a desinfectantes o esterilizantes reconocidos para eliminar esporas, bacterias y virus de materiales resistentes al calor — esta es la opción incorrecta.",
+                    "La pasteurización efectivamente es un método que alcanza 65°C seguido de enfriamiento rápido a 10°C.",
+                    "El glutaraldehído al 2% efectivamente es un desinfectante de alto nivel para elementos semicríticos."
+                ],
+                "fantasma": [
+                    "Esa está bien, para prequirúrgico.",
+                    "¡Esta! 'Clorógenos' no es un desinfectante reconocido.",
+                    "Esa está bien, 65 y enfría rápido.",
+                    "Esa está bien, alto nivel."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No es un término reconocido.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -3047,7 +3247,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A coleta para diagnóstico do micetoma deve ser de amostras profundas (tecido ou grânulos), não hisopado superficial, que pode estar contaminado e não conter o agente causal.  \n\n**Outras opções:**  \nB) Correta – micetoma pode causar osteomielite e deformidades.  \nC) Correta – não há invasão vascular ou nervosa significativa.  \nD) Correta – micetomas micóticos são endêmicos em áreas rurais do nordeste argentino.  \n\nAssim, apenas a opção A está incorreta quanto ao método diagnóstico."
+            "feedback": "**Resposta Correta:** A coleta para diagnóstico do micetoma deve ser de amostras profundas (tecido ou grânulos), não hisopado superficial, que pode estar contaminado e não conter o agente causal.  \n\n**Outras opções:**  \nB) Correta – micetoma pode causar osteomielite e deformidades.  \nC) Correta – não há invasão vascular ou nervosa significativa.  \nD) Correta – micetomas micóticos são endêmicos em áreas rurais do nordeste argentino.  \n\nAssim, apenas a opção A está incorreta quanto ao método diagnóstico.",
+            "explicacoes": {
+                "robo": [
+                    "La toma de muestra para micetoma debe ser de material profundo (tejido o gránulos), no hisopado superficial, que puede estar contaminado y no contener el agente causal — esta es la opción incorrecta.",
+                    "Los micetomas efectivamente pueden comprometer el tejido óseo produciendo osteomielitis.",
+                    "Efectivamente, no hay compromiso vascular ni nervioso significativo en los micetomas.",
+                    "Los micetomas micóticos efectivamente presentan endemicidad en regiones rurales del noreste argentino."
+                ],
+                "fantasma": [
+                    "¡Esta! Necesita muestra profunda, no hisopado superficial.",
+                    "Esa está bien, puede llegar al hueso.",
+                    "Esa está bien, no compromete vaso ni nervio.",
+                    "Esa está bien, endémico ahí."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Muestra profunda, no superficial.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -3073,7 +3293,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Streptococcus spp.  \nStreptococcus spp. não causa micetomas, que são infecções crônicas subcutâneas causadas por fungos verdadeiros (eumicetoma) ou actinobactérias (actinomicetoma). Streptococcus está associado a infecções agudas, não a micetomas.\n\n**Outras opções:**  \nA. Scedosporium spp., B. Streptomyces spp. e D. Exophiala janselmei são agentes conhecidos de micetoma, sendo fungos ou actinobactérias responsáveis pela doença. Portanto, Streptococcus spp. é a única incorreta."
+            "feedback": "**Resposta Correta:** C. Streptococcus spp.  \nStreptococcus spp. não causa micetomas, que são infecções crônicas subcutâneas causadas por fungos verdadeiros (eumicetoma) ou actinobactérias (actinomicetoma). Streptococcus está associado a infecções agudas, não a micetomas.\n\n**Outras opções:**  \nA. Scedosporium spp., B. Streptomyces spp. e D. Exophiala janselmei são agentes conhecidos de micetoma, sendo fungos ou actinobactérias responsáveis pela doença. Portanto, Streptococcus spp. é a única incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Scedosporium spp efectivamente es un agente conocido de micetoma.",
+                    "Streptomyces spp efectivamente es un agente conocido de micetoma (actinomicetoma).",
+                    "Streptococcus spp no causa micetomas, que son infecciones crónicas subcutáneas por hongos verdaderos o actinobacterias; Streptococcus se asocia a infecciones agudas — esta es la excepción.",
+                    "Exophiala jeanselmei efectivamente es un agente conocido de micetoma."
+                ],
+                "fantasma": [
+                    "Ese sí causa micetoma.",
+                    "Ese sí causa micetoma.",
+                    "¡Esta! Ese es de infección aguda, no de micetoma.",
+                    "Ese sí causa micetoma."
+                ],
+                "gato": [
+                    "Fijate: sí causa.",
+                    "Dato curioso: sí causa.",
+                    "¡Ronroneo de aprobación! Es de infección aguda.",
+                    "Miau, sí causa."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -3099,7 +3339,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Micetomas formam abscessos crônicos que drenam por fístulas, liberando \"grãos\" microbianos (fungos ou bactérias), essenciais para o diagnóstico.  \n\n**Outras opções:**  \nB. Exophiala jeanselmei e Fusarium não causam cromoblastomicose, que é causada por fungos demáceos como Fonsecaea pedrosoi.  \nC. Cromoblastomicose é geralmente localizada; disseminação hematogênica é rara em imunocompetentes.  \nD. Esporotricose cutâneo-linfática é comum na infecção primária, mas reinfecção pode variar, não sendo sempre nessa forma."
+            "feedback": "**Resposta Correta:** A. Micetomas formam abscessos crônicos que drenam por fístulas, liberando \"grãos\" microbianos (fungos ou bactérias), essenciais para o diagnóstico.  \n\n**Outras opções:**  \nB. Exophiala jeanselmei e Fusarium não causam cromoblastomicose, que é causada por fungos demáceos como Fonsecaea pedrosoi.  \nC. Cromoblastomicose é geralmente localizada; disseminação hematogênica é rara em imunocompetentes.  \nD. Esporotricose cutâneo-linfática é comum na infecção primária, mas reinfecção pode variar, não sendo sempre nessa forma.",
+            "explicacoes": {
+                "robo": [
+                    "Los micetomas efectivamente forman abscesos que drenan granos característicos a través de fístulas, hallazgo esencial para el diagnóstico — es la respuesta correcta.",
+                    "Exophiala jeanselmei y Fusarium no causan cromoblastomicosis, que es producida por hongos demáceos como Fonsecaea pedrosoi.",
+                    "La cromoblastomicosis suele ser localizada; la diseminación hematógena es rara en inmunocompetentes.",
+                    "La forma cutáneo-linfática es común en la infección primaria de esporotricosis, pero la reinfección puede variar, no siempre presentándose así."
+                ],
+                "fantasma": [
+                    "¡Esta! Grano por fístula, la marca del micetoma.",
+                    "Esos no son de cromoblastomicosis, es otro hongo.",
+                    "Eso es raro en inmunocompetente.",
+                    "Eso puede variar, no siempre así."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Grano por fístula.",
+                    "Fijate: es otro hongo.",
+                    "Dato curioso: es raro.",
+                    "Miau, puede variar."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -3125,7 +3385,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Hemocultivos não são indicados para diagnóstico de celulite devido à baixa sensibilidade.\n\nA celulite é diagnosticada clinicamente, pois bacteremia é rara. Hemoculturas têm baixo valor diagnóstico; culturas da lesão são preferíveis quando possíveis.  \n\n**Outras opções:**  \nA) Tinea pedis pode facilitar erisipela por fissuras na pele.  \nB) Staphylococcus aureus e Streptococcus pyogenes são agentes comuns da celulite.  \nD) Tinea cruris é causada por fungos dermatófitos com micélio hialino e artroconídios.  \n\nPortanto, hemoculturas não são método de"
+            "feedback": "**Resposta Correta:** C. Hemocultivos não são indicados para diagnóstico de celulite devido à baixa sensibilidade.\n\nA celulite é diagnosticada clinicamente, pois bacteremia é rara. Hemoculturas têm baixo valor diagnóstico; culturas da lesão são preferíveis quando possíveis.  \n\n**Outras opções:**  \nA) Tinea pedis pode facilitar erisipela por fissuras na pele.  \nB) Staphylococcus aureus e Streptococcus pyogenes são agentes comuns da celulite.  \nD) Tinea cruris é causada por fungos dermatófitos com micélio hialino e artroconídios.  \n\nPortanto, hemoculturas não são método de",
+            "explicacoes": {
+                "robo": [
+                    "La tinea pedis efectivamente constituye un factor de riesgo local para erisipela, por fisuras en la piel.",
+                    "Staphylococcus aureus efectivamente es uno de los agentes más frecuentes de celulitis.",
+                    "Los hemocultivos NO son el método de elección para celulitis, ya que tienen BAJA sensibilidad; la bacteriemia es rara en la celulitis — esta es la opción incorrecta.",
+                    "La tinea cruris efectivamente muestra micelio hialino ramificado con artroconidias en el examen directo."
+                ],
+                "fantasma": [
+                    "Esa está bien, fisura de la piel.",
+                    "Esa está bien, agente frecuente.",
+                    "¡Esta! El hemocultivo tiene baja sensibilidad ahí.",
+                    "Esa está bien, micelio con artroconidia."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Baja sensibilidad, no alta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -3151,7 +3431,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A alternativa A está incorreta porque o hisopado da lesão ulcerada tem baixo rendimento diagnóstico na esporotricose; a cultura de material por punção, biópsia ou raspado da borda é mais sensível. As opções B, C e D estão corretas: B destaca a transmissão zoonótica por gatos; C, a forma linfangítica nodular como apresentação comum; e D, a visualização das leveduras monogemantes na microscopia direta, que confirma o diagnóstico apesar da baixa sensibilidade."
+            "feedback": "A alternativa A está incorreta porque o hisopado da lesão ulcerada tem baixo rendimento diagnóstico na esporotricose; a cultura de material por punção, biópsia ou raspado da borda é mais sensível. As opções B, C e D estão corretas: B destaca a transmissão zoonótica por gatos; C, a forma linfangítica nodular como apresentação comum; e D, a visualização das leveduras monogemantes na microscopia direta, que confirma o diagnóstico apesar da baixa sensibilidade.",
+            "explicacoes": {
+                "robo": [
+                    "El hisopado de la lesión ulcerada tiene BAJO rendimiento diagnóstico en esporotricosis; el cultivo de material por punción, biopsia o raspado es más sensible — esta es la opción incorrecta.",
+                    "Efectivamente se asocia a zoonosis donde los felinos domésticos pueden ser reservorios.",
+                    "La forma linfangítica nodular efectivamente se observa durante la primoinfección.",
+                    "La observación en fresco efectivamente evidencia levaduras monogemantes."
+                ],
+                "fantasma": [
+                    "¡Esta! El hisopado rinde poco, mejor cultivo profundo.",
+                    "Esa está bien, el gato como reservorio.",
+                    "Esa está bien, en la primoinfección.",
+                    "Esa está bien, levadura con un solo brote."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Rinde poco, mejor cultivo profundo.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -3177,7 +3477,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta correta:** B. Dermatobia hominis causa lesões nodulares na pele, mas sua frequência e gravidade não aumentam em pacientes com HIV/SIDA, pois dependem da exposição ao vetor, não do estado imunológico.\n\n**Outras opções:**  \nA está correta: Molusco contagioso é viral e mais grave em imunocomprometidos.  \nC está correta: HPV infecta células basais da epiderme via microtraumas.  \nD está correta: Coilócitos, visíveis no exame de Papanicolau, indicam infecção produtiva por HPV."
+            "feedback": "**Resposta correta:** B. Dermatobia hominis causa lesões nodulares na pele, mas sua frequência e gravidade não aumentam em pacientes com HIV/SIDA, pois dependem da exposição ao vetor, não do estado imunológico.\n\n**Outras opções:**  \nA está correta: Molusco contagioso é viral e mais grave em imunocomprometidos.  \nC está correta: HPV infecta células basais da epiderme via microtraumas.  \nD está correta: Coilócitos, visíveis no exame de Papanicolau, indicam infecção produtiva por HPV.",
+            "explicacoes": {
+                "robo": [
+                    "El Molusco contagioso efectivamente se transmite por autoinoculación y es más marcado en inmunocomprometidos por VIH/SIDA.",
+                    "Las lesiones por Dermatobia hominis dependen de la exposición al vector, no del estado inmunológico; su frecuencia y gravedad no aumentan en pacientes con VIH/SIDA — esta es la opción incorrecta.",
+                    "El HPV efectivamente infecta las capas basales de la piel.",
+                    "La observación de coilocitos por tinción de Papanicolau efectivamente indica infección productiva por HPV."
+                ],
+                "fantasma": [
+                    "Esa está bien, más grave en VIH.",
+                    "¡Esta! Eso depende del bicho, no del VIH.",
+                    "Esa está bien, capa basal.",
+                    "Esa está bien, coilocito indica HPV."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Depende del vector, no del VIH.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -3203,7 +3523,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Leishmania braziliensis é transmitida pela picada de flebotomíneos (mosquitos), não por espinhos de plantas, tornando essa associação incorreta.  \nOpções corretas:  \nB. Nocardia brasiliensis infecta via traumatismo transcutâneo com solo contaminado.  \nC. Sporothrix schenckii entra por traumatismos com materiais vegetais contaminados.  \nD. Mycobacterium marinum infecta através de feridas em contato com água contaminada.  \nAssim, apenas a associação da Leishmania com espinhos de plantas está errada."
+            "feedback": "Resposta correta: A. Leishmania braziliensis é transmitida pela picada de flebotomíneos (mosquitos), não por espinhos de plantas, tornando essa associação incorreta.  \nOpções corretas:  \nB. Nocardia brasiliensis infecta via traumatismo transcutâneo com solo contaminado.  \nC. Sporothrix schenckii entra por traumatismos com materiais vegetais contaminados.  \nD. Mycobacterium marinum infecta através de feridas em contato com água contaminada.  \nAssim, apenas a associação da Leishmania com espinhos de plantas está errada.",
+            "explicacoes": {
+                "robo": [
+                    "Leishmania braziliensis se transmite por picadura de flebótomos (mosquitos), no por espinas de plantas — esta es la asociación incorrecta.",
+                    "Nocardia brasiliensis efectivamente infecta vía traumatismo transcutáneo con suelo contaminado.",
+                    "Sporothrix schenckii efectivamente ingresa por traumatismos con materiales vegetales contaminados.",
+                    "Mycobacterium marinum efectivamente infecta a través de heridas en contacto con agua contaminada."
+                ],
+                "fantasma": [
+                    "¡Esta! Es por mosquito, no por espina.",
+                    "Esa está bien, tierra contaminada.",
+                    "Esa está bien, material vegetal.",
+                    "Esa está bien, agua contaminada."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es por mosquito.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -3229,7 +3569,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Levaduras multibrotantes está incorreta, pois o micetoma é causado por fungos filamentosos (eumicetomas) ou bactérias actinomicetais, não por leveduras unicelulares.  \n\n**Outras opções:**  \nA. Bacilos ácido-alcool resistentes (coloração de Kinyoun) indicam actinomicetos bacterianos.  \nC. Filamentos hialinos tabicados são típicos de fungos eumicetomatosos claros.  \nD. Hifas pigmentadas tabicadas correspondem a fungos eumicetomatosos escuros.  \n\nLeveduras multibrotantes não formam os"
+            "feedback": "**Resposta Correta:** B. Levaduras multibrotantes está incorreta, pois o micetoma é causado por fungos filamentosos (eumicetomas) ou bactérias actinomicetais, não por leveduras unicelulares.  \n\n**Outras opções:**  \nA. Bacilos ácido-alcool resistentes (coloração de Kinyoun) indicam actinomicetos bacterianos.  \nC. Filamentos hialinos tabicados são típicos de fungos eumicetomatosos claros.  \nD. Hifas pigmentadas tabicadas correspondem a fungos eumicetomatosos escuros.  \n\nLeveduras multibrotantes não formam os",
+            "explicacoes": {
+                "robo": [
+                    "Los bacilos ácido-alcohol resistentes en tinción de Kinyoun efectivamente indican actinomicetos bacterianos, hallazgo esperado en micetoma.",
+                    "Las levaduras multibrotantes no son un hallazgo esperado, ya que el micetoma es causado por hongos filamentosos o bacterias actinomicetales, no por levaduras unicelulares — esta es la excepción.",
+                    "Los filamentos hialinos tabicados efectivamente son típicos de micetomas eumicóticos claros.",
+                    "Las hifas pigmentadas tabicadas efectivamente corresponden a micetomas eumicóticos oscuros."
+                ],
+                "fantasma": [
+                    "Ese sí se espera, actinomiceto.",
+                    "¡Esta! Micetoma no es de levadura, es de hongo filamentoso.",
+                    "Ese sí se espera, hongo claro.",
+                    "Ese sí se espera, hongo oscuro."
+                ],
+                "gato": [
+                    "Fijate: se espera.",
+                    "¡Ronroneo de aprobación! No es de levadura.",
+                    "Dato curioso: se espera.",
+                    "Miau, se espera."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -3255,7 +3615,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Hisopado de lesão ulcerada. Para diagnóstico do síndrome linfangítico nodular, é fundamental coletar amostras diretamente dos linfonodos ou tecidos afetados, como nas opções A (punção de nódulos), C (punção de adenopatia epitroclear) e D (biópsia de nódulos), que garantem maior sensibilidade e especificidade. O hisopado superficial é menos útil, pois pode conter poucos microrganismos viáveis e estar contaminado, dificultando a identificação do agente etiológico. Portanto, amostras profundas são essenciais para diagnóstico preciso."
+            "feedback": "Resposta correta: B. Hisopado de lesão ulcerada. Para diagnóstico do síndrome linfangítico nodular, é fundamental coletar amostras diretamente dos linfonodos ou tecidos afetados, como nas opções A (punção de nódulos), C (punção de adenopatia epitroclear) e D (biópsia de nódulos), que garantem maior sensibilidade e especificidade. O hisopado superficial é menos útil, pois pode conter poucos microrganismos viáveis e estar contaminado, dificultando a identificação do agente etiológico. Portanto, amostras profundas são essenciais para diagnóstico preciso.",
+            "explicacoes": {
+                "robo": [
+                    "La punción-aspiración de nódulos efectivamente aporta muestra profunda útil para el diagnóstico.",
+                    "El hisopado de lesión ulcerada es menos útil, ya que puede contener pocos microorganismos viables y estar contaminado, dificultando la identificación del agente — esta es la excepción.",
+                    "La punción-aspiración de adenopatía epitroclear efectivamente aporta muestra profunda útil.",
+                    "La biopsia de nódulos cutáneos efectivamente garantiza mayor sensibilidad y especificidad diagnóstica."
+                ],
+                "fantasma": [
+                    "Esa sí sirve, muestra profunda.",
+                    "¡Esta! Ese hisopado rinde poco, superficial.",
+                    "Esa sí sirve, muestra profunda.",
+                    "Esa sí sirve, biopsia."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "¡Ronroneo de aprobación! Rinde poco, superficial.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -3281,7 +3661,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta; Streptococcus pyogenes é catalase negativo, não positivo. A catalase distingue Staphylococcus (positivo) de Streptococcus (negativo).\n\n**Outras opções:**  \nA está correta: punção-aspiração e cultivo em ágar sangue isolam S. pyogenes, que apresenta beta-hemólise.  \nB está correta: mordidas de cães podem causar celulite por Pasteurella multocida.  \nC está correta: uso de drogas intravenosas é fator de risco para celulite por Staphylococcus aureus."
+            "feedback": "**Resposta Correta:** D está incorreta; Streptococcus pyogenes é catalase negativo, não positivo. A catalase distingue Staphylococcus (positivo) de Streptococcus (negativo).\n\n**Outras opções:**  \nA está correta: punção-aspiração e cultivo em ágar sangue isolam S. pyogenes, que apresenta beta-hemólise.  \nB está correta: mordidas de cães podem causar celulite por Pasteurella multocida.  \nC está correta: uso de drogas intravenosas é fator de risco para celulite por Staphylococcus aureus.",
+            "explicacoes": {
+                "robo": [
+                    "La punción-aspiración y cultivo en agar sangre efectivamente aísla S. pyogenes, con beta-hemólisis característica.",
+                    "Las mordeduras de perros efectivamente pueden causar celulitis por Pasteurella multocida.",
+                    "El uso de drogas intravenosas efectivamente predispone a celulitis por S. aureus.",
+                    "Streptococcus pyogenes es catalasa NEGATIVA, no positiva; la catalasa distingue Staphylococcus (positivo) de Streptococcus (negativo) — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, aísla el estrepto.",
+                    "Esa está bien, mordida de perro.",
+                    "Esa está bien, droga IV.",
+                    "¡Esta! El estrepto es catalasa negativa, no positiva."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es negativa, no positiva."
+                ]
+            }
         },
         {
             "numero": 11,
