@@ -51,6 +51,15 @@
 }
 .bc-quick:hover { transform: translateY(-3px); border-color: rgba(106,3,146,.4); box-shadow: 0 12px 30px rgba(0,0,0,.18); }
 [data-theme="dark"] .bc-quick { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.1); }
+
+.dash-home2-hero-grid { grid-template-columns: 1.35fr 1fr; }
+.dash-home2-activity-grid { grid-template-columns: 1fr 1.6fr; }
+@media (max-width: 767.98px) {
+    .dash-home2-hero-grid,
+    .dash-home2-activity-grid {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 @endpush
 
@@ -101,7 +110,7 @@
     </div>
 
     {{-- Top row: Hero card + Chart --}}
-    <div style="display:grid; grid-template-columns:1.35fr 1fr; gap:20px; animation: fadeUp .6s .06s ease both;">
+    <div class="dash-home2-hero-grid" style="display:grid; gap:20px; animation: fadeUp .6s .06s ease both;">
 
         @if ($simuladoEmAndamento)
             <a href="{{ route('simulation.show') }}" style="display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg, #18002e 0%, #2d0050 60%, #0d0a1a 100%); border-radius:18px; padding:clamp(20px,3vw,28px); text-decoration:none; position:relative; overflow:hidden; min-height:168px; transition:filter .2s ease;">
@@ -188,7 +197,7 @@
     </div>
 
     {{-- Mini stats + Activities row --}}
-    <div style="display:grid; grid-template-columns:1fr 1.6fr; gap:20px; animation: fadeUp .6s .12s ease both;">
+    <div class="dash-home2-activity-grid" style="display:grid; gap:20px; animation: fadeUp .6s .12s ease both;">
 
         <div style="display:flex; flex-direction:column; gap:14px;">
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
