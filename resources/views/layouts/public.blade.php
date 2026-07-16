@@ -29,11 +29,11 @@
 
     {{-- Custom CSS — mesma ordem de prioridade que o projeto PHP (tokens → botões → app → idioma) --}}
     <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}?v={{ @filemtime(public_path('assets/css/theme-tokens.css')) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}?v={{ @filemtime(public_path('assets/css/fluid-layout.css')) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}?v={{ filemtime(public_path('assets/css/scrollbar.css')) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}?v={{ @filemtime(public_path('assets/css/buttons-global.css')) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}?v={{ @filemtime(public_path('assets/css/theme-app.css')) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}?v={{ @filemtime(public_path('assets/css/public-language-selector.css')) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/toast.css') }}?v={{ @filemtime(public_path('assets/css/toast.css')) }}">
 
     @stack('styles')

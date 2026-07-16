@@ -19,14 +19,14 @@
 
     {{-- Custom CSS --}}
     <link rel="stylesheet" href="{{ asset('assets/css/theme-tokens.css') }}?v={{ @filemtime(public_path('assets/css/theme-tokens.css')) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/fluid-layout.css') }}?v={{ @filemtime(public_path('assets/css/fluid-layout.css')) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/scrollbar.css') }}?v={{ filemtime(public_path('assets/css/scrollbar.css')) }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/sidebar.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/private-app.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/app-shell-painel.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/buttons-global.css') }}?v={{ @filemtime(public_path('assets/css/buttons-global.css')) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme-app.css') }}?v={{ @filemtime(public_path('assets/css/theme-app.css')) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/sidebar.css') }}?v={{ @filemtime(public_path('assets/css/sidebar.css')) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/private-app.css') }}?v={{ @filemtime(public_path('assets/css/private-app.css')) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/app-shell-painel.css') }}?v={{ @filemtime(public_path('assets/css/app-shell-painel.css')) }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/public-language-selector.css') }}?v={{ @filemtime(public_path('assets/css/public-language-selector.css')) }}">
     <link rel="stylesheet" href="{{ asset('assets/css/toast.css') }}?v={{ @filemtime(public_path('assets/css/toast.css')) }}">
 
     {{-- Theme + sidebar state (must run before first paint; sidebar key must match KEY in public/assets/js/sidebar-collapse.js) --}}
