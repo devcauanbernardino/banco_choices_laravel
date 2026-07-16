@@ -3707,7 +3707,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. Clostridium tetani causa tétano, uma doença neurológica, não infecções necrotizantes como celulite clostrídica.\n\n**Análise:**  \nA (Clostridium perfringens) é correta, pois causa gangrena gasosa por produção de toxinas que destroem tecidos.  \nB está correta, pois a anaerobiose favorece infecções necrotizantes.  \nD está correta, já que Streptococcus pyogenes causa fascite necrotizante tipo II."
+            "feedback": "**Resposta Correta:** C está incorreta. Clostridium tetani causa tétano, uma doença neurológica, não infecções necrotizantes como celulite clostrídica.\n\n**Análise:**  \nA (Clostridium perfringens) é correta, pois causa gangrena gasosa por produção de toxinas que destroem tecidos.  \nB está correta, pois a anaerobiose favorece infecções necrotizantes.  \nD está correta, já que Streptococcus pyogenes causa fascite necrotizante tipo II.",
+            "explicacoes": {
+                "robo": [
+                    "Clostridium perfringens efectivamente es un agente frecuente de gangrena gaseosa, produciendo gas en los tejidos.",
+                    "La anaerobiosis de la herida efectivamente favorece el desarrollo de estos agentes.",
+                    "Clostridium tetani causa tétanos, una enfermedad neurológica por la tetanospasmina, no celulitis clostridiana ni infecciones necrotizantes de tejidos blandos — esta es la opción incorrecta.",
+                    "Los estreptococos del grupo A efectivamente pueden producir fascitis necrotizante tipo II."
+                ],
+                "fantasma": [
+                    "Esa está bien, gas en el tejido.",
+                    "Esa está bien, anaerobiosis favorece.",
+                    "¡Esta! Ese causa tétanos, no celulitis.",
+                    "Esa está bien, fascitis tipo II."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es tétanos, no celulitis.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -3733,7 +3753,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Mycobacterium marinum não causa micetoma, uma infecção crônica subcutânea por fungos (eumicetomas) ou actinomicetos bacterianos (actinomicetomas). Aspergillus spp. (A) e Madurella grisea (C) são fungos causadores de eumicetomas, e Nocardia spp. (D) é um actinomiceto causador de actinomicetoma. Portanto, apenas Mycobacterium marinum não está associado ao micetoma."
+            "feedback": "Resposta correta: B. Mycobacterium marinum não causa micetoma, uma infecção crônica subcutânea por fungos (eumicetomas) ou actinomicetos bacterianos (actinomicetomas). Aspergillus spp. (A) e Madurella grisea (C) são fungos causadores de eumicetomas, e Nocardia spp. (D) é um actinomiceto causador de actinomicetoma. Portanto, apenas Mycobacterium marinum não está associado ao micetoma.",
+            "explicacoes": {
+                "robo": [
+                    "Aspergillus spp efectivamente es un agente causal de eumicetomas.",
+                    "Mycobacterium marinum no causa micetoma, una infección crónica subcutánea por hongos (eumicetomas) o actinomicetos bacterianos (actinomicetomas); M. marinum causa infecciones cutáneas granulomatosas distintas — esta es la excepción.",
+                    "Madurella grisea efectivamente es un agente causal de eumicetomas.",
+                    "Nocardia spp efectivamente es un agente causal de actinomicetomas."
+                ],
+                "fantasma": [
+                    "Ese sí causa micetoma.",
+                    "¡Esta! Ese no causa micetoma, es otra cosa.",
+                    "Ese sí causa micetoma.",
+                    "Ese sí causa micetoma."
+                ],
+                "gato": [
+                    "Fijate: sí causa.",
+                    "¡Ronroneo de aprobación! No causa micetoma.",
+                    "Dato curioso: sí causa.",
+                    "Miau, sí causa."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -3759,7 +3799,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Micélios hialinos, ramificados e tabicados, típicos de dermatófitos causadores da tinea capitis.  \nOpção A descreve hifas largas e cenocíticas de Zygomycota, não relacionadas à tinea capitis.  \nOpção B refere-se a fungos dematiáceos pigmentados, não típicos dessa infecção.  \nOpção D indica levaduras, que não causam tinea capitis, caracterizada por hifas miceliais.  \nAssim, apenas a opção C corresponde à morfologia fúngica esperada no exame direto da tinea capitis."
+            "feedback": "Resposta correta: C. Micélios hialinos, ramificados e tabicados, típicos de dermatófitos causadores da tinea capitis.  \nOpção A descreve hifas largas e cenocíticas de Zygomycota, não relacionadas à tinea capitis.  \nOpção B refere-se a fungos dematiáceos pigmentados, não típicos dessa infecção.  \nOpção D indica levaduras, que não causam tinea capitis, caracterizada por hifas miceliais.  \nAssim, apenas a opção C corresponde à morfologia fúngica esperada no exame direto da tinea capitis.",
+            "explicacoes": {
+                "robo": [
+                    "Los filamentos anchos cenocíticos son típicos de Zygomycota, no relacionados con tinea capitis.",
+                    "Los elementos esféricos tabicados de color pardo corresponden a hongos dematiáceos pigmentados, no típicos de esta infección.",
+                    "Los micelios hialinos, ramificados y tabicados son típicos de los dermatofitos causantes de tinea capitis — es la respuesta correcta.",
+                    "Las levaduras no causan tinea capitis, que se caracteriza por hifas miceliales, no levaduriformes."
+                ],
+                "fantasma": [
+                    "Eso es de Zygomycota, no de acá.",
+                    "Eso es de otro hongo pigmentado.",
+                    "¡Esta! El micelio hialino tabicado, típico.",
+                    "Levadura no causa esto."
+                ],
+                "gato": [
+                    "Fijate: es de otro hongo.",
+                    "Dato curioso: es otro hongo.",
+                    "¡Ronroneo de aprobación! Típico de dermatofito.",
+                    "Miau, no es de levadura."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -3785,7 +3845,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Clostridium tetani.  \nClostridium tetani causa tétano, caracterizado por paralisia espástica devido à tetanospasmina, que bloqueia neurotransmissores inibitórios, causando rigidez muscular. Não provoca paralisia flácida.\n\n**Outras opções:**  \nA. Clostridium botulinum causa paralisia flácida ao bloquear acetilcolina.  \nB. Enterovírus (ex: poliovírus) causam paralisia flácida pela destruição de neurônios motores.  \nC. Guillain-Barré pós-influenza provoca paralisia flácida por desmielinização nervosa"
+            "feedback": "**Resposta Correta:** D. Clostridium tetani.  \nClostridium tetani causa tétano, caracterizado por paralisia espástica devido à tetanospasmina, que bloqueia neurotransmissores inibitórios, causando rigidez muscular. Não provoca paralisia flácida.\n\n**Outras opções:**  \nA. Clostridium botulinum causa paralisia flácida ao bloquear acetilcolina.  \nB. Enterovírus (ex: poliovírus) causam paralisia flácida pela destruição de neurônios motores.  \nC. Guillain-Barré pós-influenza provoca paralisia flácida por desmielinização nervosa",
+            "explicacoes": {
+                "robo": [
+                    "Clostridium botulinum efectivamente se asocia a parálisis flácida al bloquear la acetilcolina.",
+                    "Los enterovirus (ej. poliovirus) efectivamente se asocian a parálisis flácida por destrucción de neuronas motoras.",
+                    "El síndrome de Guillain-Barré post-influenza efectivamente se asocia a parálisis flácida por desmielinización nerviosa.",
+                    "Clostridium tetani causa tétanos, caracterizado por parálisis ESPÁSTICA debido a la tetanospasmina, que bloquea neurotransmisores inhibitorios, no parálisis flácida — es la respuesta correcta (no se asocia)."
+                ],
+                "fantasma": [
+                    "Esa está bien, es flácida.",
+                    "Esa está bien, es flácida.",
+                    "Esa está bien, es flácida.",
+                    "¡Esta! Ese es espástico, no flácido."
+                ],
+                "gato": [
+                    "Fijate: flácida.",
+                    "Dato curioso: flácida.",
+                    "Miau, flácida.",
+                    "¡Ronroneo de aprobación! Es espástico."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -3811,7 +3891,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Filamentos pigmentados tabicados de *Madurella mycetomatis* no exame fresco, característicos do micetoma eumicótico.  \n\nErrado:  \nA) *Fusarium* tem filamentos tabicados e hialinos, não cenocíticos;  \nC) *Aspergillus* é fungo filamentoso tabicado, não levedura;  \nD) *Streptomyces* é bactéria gram-positiva, não gram-negativa.  \n\nA identificação dos filamentos pigmentados tabicados é essencial para diagnosticar *Madurella mycetomatis*."
+            "feedback": "Resposta correta: B. Filamentos pigmentados tabicados de *Madurella mycetomatis* no exame fresco, característicos do micetoma eumicótico.  \n\nErrado:  \nA) *Fusarium* tem filamentos tabicados e hialinos, não cenocíticos;  \nC) *Aspergillus* é fungo filamentoso tabicado, não levedura;  \nD) *Streptomyces* é bactéria gram-positiva, não gram-negativa.  \n\nA identificação dos filamentos pigmentados tabicados é essencial para diagnosticar *Madurella mycetomatis*.",
+            "explicacoes": {
+                "robo": [
+                    "Fusarium spp presenta filamentos tabicados e hialinos, no cenocíticos.",
+                    "Los filamentos pigmentados tabicados corresponden a Madurella mycetomatis en el examen en fresco, hallazgo característico del micetoma eumicótico — es la respuesta correcta.",
+                    "Aspergillus spp es un hongo filamentoso tabicado, no una levadura.",
+                    "Streptomyces spp es una bacteria Gram-positiva, no Gram-negativa."
+                ],
+                "fantasma": [
+                    "Ese es tabicado hialino, no cenocítico.",
+                    "¡Esta! Pigmentado tabicado, la Madurella.",
+                    "Ese es filamentoso, no levadura.",
+                    "Ese es Gram positivo, no negativo."
+                ],
+                "gato": [
+                    "Fijate: es hialino.",
+                    "¡Ronroneo de aprobación! La Madurella, pigmentada.",
+                    "Dato curioso: es filamentoso.",
+                    "Miau, es Gram positivo."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -3837,7 +3937,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Bacilos ácido-álcool resistentes (BAAR) são do gênero *Mycobacterium* (ex: *M. leprae*, *M. tuberculosis*), com parede rica em ácidos micólicos, detectados pela coloração de Ziehl-Neelsen e cultivados em meio Lowenstein-Jensen, essencial para diagnóstico em síndromes linfangíticas nodulares.\n\n**Incorretas:**  \nB. *Leishmania* apresenta amastigotes intracelulares, cultivados em meios específicos (NNN), não em agar sangue, e não causa linfangite nodular.  \nC. *Sporothrix schenckii* é identificado por leveduras cigar"
+            "feedback": "**Resposta Correta:** A. Bacilos ácido-álcool resistentes (BAAR) são do gênero *Mycobacterium* (ex: *M. leprae*, *M. tuberculosis*), com parede rica em ácidos micólicos, detectados pela coloração de Ziehl-Neelsen e cultivados em meio Lowenstein-Jensen, essencial para diagnóstico em síndromes linfangíticas nodulares.\n\n**Incorretas:**  \nB. *Leishmania* apresenta amastigotes intracelulares, cultivados em meios específicos (NNN), não em agar sangue, e não causa linfangite nodular.  \nC. *Sporothrix schenckii* é identificado por leveduras cigar",
+            "explicacoes": {
+                "robo": [
+                    "Los bacilos ácido-alcohol resistentes son del género Mycobacterium, con pared rica en ácidos micólicos, detectados por tinción de Ziehl-Neelsen y cultivados en medio de Löwenstein-Jensen — es la respuesta correcta.",
+                    "Leishmania presenta amastigotes intracelulares, cultivados en medios específicos (NNN), no en agar sangre, y no causa linfangitis nodular de esta forma.",
+                    "Sporothrix schenckii se identifica por levaduras en forma de cigarro en tejido, no por cuerpos esclerotales (propios de cromoblastomicosis).",
+                    "Nocardia se cultiva habitualmente en medios comunes como agar Sabouraud o infusión cerebro-corazón, sin requerir necesariamente antibiótico específico para su aislamiento inicial."
+                ],
+                "fantasma": [
+                    "¡Esta! El BAAR va con Lowenstein Jensen.",
+                    "Ese cultivo no es en agar sangre.",
+                    "Eso es de otra enfermedad, no de Sporothrix.",
+                    "Eso no necesita antibiótico específico así."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! BAAR con Lowenstein Jensen.",
+                    "Fijate: no es agar sangre.",
+                    "Dato curioso: es de otra.",
+                    "Miau, no necesita eso."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -3863,7 +3983,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O HH6, causador da roséola, transmite-se principalmente por via respiratória, não pelo contato com lesões cutâneas, que são poucas e pouco contagiosas.  \n\n**Outras opções:**  \nA está correta ao afirmar que exantemas do sarampo e rubéola não transmitem o vírus; a contaminação ocorre por secreções respiratórias.  \nB está correta, pois o sarampo pode causar complicações neurológicas raras.  \nC está correta ao indicar múltiplas vias de transmissão do erythrovirus B19, incluindo respiratória, transplacentária e transfusões.  \n\nAssim, apenas a opção D está incorreta."
+            "feedback": "**Resposta Correta:** D. O HH6, causador da roséola, transmite-se principalmente por via respiratória, não pelo contato com lesões cutâneas, que são poucas e pouco contagiosas.  \n\n**Outras opções:**  \nA está correta ao afirmar que exantemas do sarampo e rubéola não transmitem o vírus; a contaminação ocorre por secreções respiratórias.  \nB está correta, pois o sarampo pode causar complicações neurológicas raras.  \nC está correta ao indicar múltiplas vias de transmissão do erythrovirus B19, incluindo respiratória, transplacentária e transfusões.  \n\nAssim, apenas a opção D está incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente, los exantemas de sarampión y rubéola no son la vía de contagio, ya que la transmisión ocurre por secreciones respiratorias.",
+                    "Efectivamente, las complicaciones del sarampión que afectan al SNC son graves pero poco frecuentes.",
+                    "Efectivamente, el eritrovirus B19 se transmite por vía respiratoria, transplacentaria y por transfusiones.",
+                    "El HH6, causante del exantema súbito (roséola), se transmite principalmente por vía respiratoria, no por contacto con las lesiones cutáneas, que son escasas y poco contagiosas — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, no contagia por ahí.",
+                    "Esa está bien, rara pero grave.",
+                    "Esa está bien, varias vías.",
+                    "¡Esta! Es respiratoria, no por la piel."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es respiratoria."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -3889,7 +4029,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. Dermatofitoses são infecções superficiais causadas por Microsporum, Trichophyton e Epidermophyton, comuns em indivíduos imunocompetentes, pois os fungos colonizam a camada córnea da pele, independentemente do sistema imunológico. A imunidade celular ajuda na resolução, mas não aumenta a frequência da infecção em imunocomprometidos.\n\n**Outras opções corretas:**  \nA: Microsporum canis causa tinea capitis com parasitismo ectothrix.  \nB: Microsporum gypseum é um fungo geófilo.  \nC: Transmissão ocorre por contato humano e fomites."
+            "feedback": "**Resposta Correta:** D está incorreta. Dermatofitoses são infecções superficiais causadas por Microsporum, Trichophyton e Epidermophyton, comuns em indivíduos imunocompetentes, pois os fungos colonizam a camada córnea da pele, independentemente do sistema imunológico. A imunidade celular ajuda na resolução, mas não aumenta a frequência da infecção em imunocomprometidos.\n\n**Outras opções corretas:**  \nA: Microsporum canis causa tinea capitis com parasitismo ectothrix.  \nB: Microsporum gypseum é um fungo geófilo.  \nC: Transmissão ocorre por contato humano e fomites.",
+            "explicacoes": {
+                "robo": [
+                    "Microsporum canis efectivamente es agente causal de tinea capitis con parasitación ectothrix.",
+                    "Microsporum gypseum efectivamente es un hongo geófilo.",
+                    "Efectivamente, la transmisión puede ser por contacto interhumano y/o fómites.",
+                    "Las dermatoficias son infecciones superficiales que colonizan la capa córnea, comunes también en inmunocompetentes; no son más frecuentes en inmunocomprometidos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, ectothrix.",
+                    "Esa está bien, geófilo.",
+                    "Esa está bien, contacto y fómites.",
+                    "¡Esta! No es más frecuente en inmunocomprometido."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No aumenta con inmunocompromiso."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -3915,7 +4075,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. *Mucor* é um zigomiceto com micélio não tabicado, hialino e forma esporângios, não macroconídios pigmentados.  \n\n**Outras opções:**  \nA: *Sporothrix schenckii* saprofítica tem micélio hialino com conídios em “margarida”.  \nB: *Paracoccidioides brasiliensis* parasitária apresenta leveduras multigemantes (“roda de leme”).  \nD: *Fonsecaea pedrosoi* parasitária forma corpos fumagoides típicos da cromoblastomicose.  \n\nSomente a alternativa C associa incorretamente características ao gênero"
+            "feedback": "**Resposta Correta:** C está incorreta. *Mucor* é um zigomiceto com micélio não tabicado, hialino e forma esporângios, não macroconídios pigmentados.  \n\n**Outras opções:**  \nA: *Sporothrix schenckii* saprofítica tem micélio hialino com conídios em “margarida”.  \nB: *Paracoccidioides brasiliensis* parasitária apresenta leveduras multigemantes (“roda de leme”).  \nD: *Fonsecaea pedrosoi* parasitária forma corpos fumagoides típicos da cromoblastomicose.  \n\nSomente a alternativa C associa incorretamente características ao gênero",
+            "explicacoes": {
+                "robo": [
+                    "Sporothrix schenckii en su forma saprófita efectivamente presenta micelio hialino con conidias en forma de margarita.",
+                    "Paracoccidioides brasiliensis en su forma parasitaria efectivamente presenta levaduras multigemantes ('rueda de timón').",
+                    "Mucor es un zigomiceto con micelio NO tabicado, hialino, que forma esporangios, no macroconidias pigmentadas — esta es la asociación incorrecta (excepción).",
+                    "Fonsecaea pedrosoi en su forma parasitaria efectivamente forma cuerpos fumagoides, típicos de la cromoblastomicosis."
+                ],
+                "fantasma": [
+                    "Esa está bien, margarita.",
+                    "Esa está bien, rueda de timón.",
+                    "¡Esta! Mucor no es así, es no tabicado e hialino.",
+                    "Esa está bien, fumagoide."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es tabicado ni pigmentado.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -3941,7 +4121,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O raspado de lesões indica presença de dermatófito, mas não identifica a espécie; para isso, é necessária cultura e análise macroscópica e microscópica.  \n\n**Outras opções:**  \nA está correta ao descrever o querion de Celso como reação inflamatória intensa causada por dermatofitos zoófilos ou geófilos.  \nB é correta ao afirmar que gatos e cães podem ser portadores assintomáticos de Microsporum canis, transmitindo a infecção.  \nC está correta ao relacionar a inflamação a reações de hipersensibilidade tipo I e IV desencadeadas por antígenos fúngicos."
+            "feedback": "**Resposta Correta:** D. O raspado de lesões indica presença de dermatófito, mas não identifica a espécie; para isso, é necessária cultura e análise macroscópica e microscópica.  \n\n**Outras opções:**  \nA está correta ao descrever o querion de Celso como reação inflamatória intensa causada por dermatofitos zoófilos ou geófilos.  \nB é correta ao afirmar que gatos e cães podem ser portadores assintomáticos de Microsporum canis, transmitindo a infecção.  \nC está correta ao relacionar a inflamação a reações de hipersensibilidade tipo I e IV desencadeadas por antígenos fúngicos.",
+            "explicacoes": {
+                "robo": [
+                    "El querión de Celso efectivamente es una reacción inflamatoria supurativa del huésped ante dermatofitos zoófilos o geófilos.",
+                    "Los animales domésticos efectivamente pueden ser portadores asintomáticos de Microsporum canis.",
+                    "La inflamación efectivamente puede deberse a hipersensibilidad tipo I o IV frente a metabolitos fúngicos.",
+                    "El raspado indica la presencia de un dermatofito, pero no identifica la especie; para ello se requiere cultivo y análisis macro y microscópico — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa está bien, reacción inflamatoria.",
+                    "Esa está bien, portador asintomático.",
+                    "Esa está bien, hipersensibilidad.",
+                    "¡Esta! El raspado no dice la especie, hace falta cultivo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No dice la especie."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -3967,7 +4167,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta. Micetoma é infecção subcutânea causada por fungos ou bactérias filamentosas, diagnosticada pelo exame direto do material da lesão, não por hemocultura, pois raramente há fungemia ou bacteremia.  \nOpções A, B e C estão corretas:  \nA. Querion de Celso diagnosticado por raspado do couro cabeludo;  \nB. Celulite por punção aspirativa da lesão;  \nC. Demodecidosis por raspado para visualizar ácaros.  \nPortanto, apenas a associação da opção D é inadequada."
+            "feedback": "Resposta correta: D está incorreta. Micetoma é infecção subcutânea causada por fungos ou bactérias filamentosas, diagnosticada pelo exame direto do material da lesão, não por hemocultura, pois raramente há fungemia ou bacteremia.  \nOpções A, B e C estão corretas:  \nA. Querion de Celso diagnosticado por raspado do couro cabeludo;  \nB. Celulite por punção aspirativa da lesão;  \nC. Demodecidosis por raspado para visualizar ácaros.  \nPortanto, apenas a associação da opção D é inadequada.",
+            "explicacoes": {
+                "robo": [
+                    "El querión de Celso efectivamente se diagnostica mediante raspado del cuero cabelludo.",
+                    "La celulitis efectivamente se diagnostica por punción-aspiración de la lesión.",
+                    "La demodecidosis efectivamente se diagnostica por raspado de la lesión, observando los ácaros.",
+                    "El micetoma es una infección subcutánea causada por hongos o bacterias filamentosas, diagnosticada por examen directo del material de la lesión, no por hemocultivo, ya que rara vez hay fungemia o bacteriemia — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, raspado del cuero cabelludo.",
+                    "Esa está bien, punción de la lesión.",
+                    "Esa está bien, raspado con ácaros.",
+                    "¡Esta! No es por hemocultivo, es examen directo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No es hemocultivo."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -3993,7 +4213,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta. *Streptococcus viridans* é coco Gram-positivo, catalase e coagulase negativos, diferente do informado (Gram-negativo e coagulase positivo).  \nOpção A: *Staphylococcus aureus* é coco Gram-positivo, catalase e coagulase positivos — correto.  \nOpção B: *Pseudomonas aeruginosa* é bacilo Gram-negativo, não fermentador de carboidratos — correto.  \nOpção D: *Clostridium tetani* é bacilo Gram-positivo, esporulado e anaeróbio estrito — correto.  \nPortanto, apenas a alternativa C apresenta erro conceitual."
+            "feedback": "Resposta correta: C está incorreta. *Streptococcus viridans* é coco Gram-positivo, catalase e coagulase negativos, diferente do informado (Gram-negativo e coagulase positivo).  \nOpção A: *Staphylococcus aureus* é coco Gram-positivo, catalase e coagulase positivos — correto.  \nOpção B: *Pseudomonas aeruginosa* é bacilo Gram-negativo, não fermentador de carboidratos — correto.  \nOpção D: *Clostridium tetani* é bacilo Gram-positivo, esporulado e anaeróbio estrito — correto.  \nPortanto, apenas a alternativa C apresenta erro conceitual.",
+            "explicacoes": {
+                "robo": [
+                    "Staphylococcus aureus efectivamente es coco Gram positivo, catalasa y coagulasa positivo.",
+                    "Pseudomonas aeruginosa efectivamente es bacilo Gram negativo, no fermentador de carbohidratos.",
+                    "Streptococcus viridans es coco Gram POSITIVO, catalasa y coagulasa NEGATIVOS, a diferencia de lo señalado (Gram negativo y coagulasa positivo) — esta es la opción incorrecta.",
+                    "Clostridium tetani efectivamente es bacilo Gram positivo, esporulado y anaerobio estricto."
+                ],
+                "fantasma": [
+                    "Esa está bien, Gram positivo doble positivo.",
+                    "Esa está bien, Gram negativo no fermentador.",
+                    "¡Esta! Es Gram positivo, no negativo.",
+                    "Esa está bien, esporulado anaerobio."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es Gram positivo.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -4019,7 +4259,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Paracoccidioides brasiliensis é uma levedura multibrotante, característica essencial para o diagnóstico da paracoccidioidomicose.  \nErradas: A. Malassezia não forma corpos esclerotais, pois é uma levedura lipofílica. B. Madurella mycetomatis é fungo filamentoso septado e dematiáceo, não cenocítico nem hialino. D. Actinomyces israelii é bacilo Gram-positivo, não Gram-negativo, e anaeróbio facultativo."
+            "feedback": "Resposta correta: C. Paracoccidioides brasiliensis é uma levedura multibrotante, característica essencial para o diagnóstico da paracoccidioidomicose.  \nErradas: A. Malassezia não forma corpos esclerotais, pois é uma levedura lipofílica. B. Madurella mycetomatis é fungo filamentoso septado e dematiáceo, não cenocítico nem hialino. D. Actinomyces israelii é bacilo Gram-positivo, não Gram-negativo, e anaeróbio facultativo.",
+            "explicacoes": {
+                "robo": [
+                    "Malassezia no forma cuerpos esclerotales, ya que es una levadura lipofílica.",
+                    "Madurella mycetomatis es un hongo filamentoso tabicado y dematiáceo, no cenocítico ni hialino.",
+                    "Paracoccidioides brasiliensis es efectivamente una levadura multibrotante, hallazgo esencial para el diagnóstico de la paracoccidioidomicosis — es la respuesta correcta.",
+                    "Actinomyces israelii es bacilo Gram positivo, no Gram negativo, y anaerobio facultativo."
+                ],
+                "fantasma": [
+                    "Esa no forma eso, es levadura lipofílica.",
+                    "Esa no es cenocítica, es tabicada.",
+                    "¡Esta! Levadura multibrotante, la marca.",
+                    "Ese es Gram positivo, no negativo."
+                ],
+                "gato": [
+                    "Fijate: es lipofílica.",
+                    "Dato curioso: es tabicada.",
+                    "¡Ronroneo de aprobación! Levadura multibrotante.",
+                    "Miau, es Gram positivo."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -4045,7 +4305,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. A biópsia do trajeto fistuloso em profundidade é essencial para obter amostra representativa com os grãos característicos, permitindo isolamento e identificação dos agentes etiológicos do micetoma.  \nOpções incorretas:  \nA. Punção aspirativa pode não alcançar áreas profundas nem coletar grãos suficientes.  \nB. Hemoculturas são inadequadas, pois micetoma é infecção localizada, sem bacteremia/fungemia.  \nC. Punch de nódulo fechado pode não atingir trajetos fistulosos profundos, resultando em amostra insuficiente para diagnóstico preciso."
+            "feedback": "Resposta correta: D. A biópsia do trajeto fistuloso em profundidade é essencial para obter amostra representativa com os grãos característicos, permitindo isolamento e identificação dos agentes etiológicos do micetoma.  \nOpções incorretas:  \nA. Punção aspirativa pode não alcançar áreas profundas nem coletar grãos suficientes.  \nB. Hemoculturas são inadequadas, pois micetoma é infecção localizada, sem bacteremia/fungemia.  \nC. Punch de nódulo fechado pode não atingir trajetos fistulosos profundos, resultando em amostra insuficiente para diagnóstico preciso.",
+            "explicacoes": {
+                "robo": [
+                    "La punción-aspiración puede no alcanzar áreas profundas ni obtener suficientes gránulos característicos.",
+                    "Los hemocultivos son inadecuados, ya que el micetoma es una infección localizada, sin bacteriemia/fungemia.",
+                    "El punch de un nódulo cerrado puede no alcanzar trayectos fistulosos profundos, resultando en muestra insuficiente.",
+                    "La biopsia del trayecto fistuloso en profundidad es esencial para obtener una muestra representativa con los gránulos característicos, permitiendo el aislamiento e identificación de los agentes etiológicos del micetoma — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa no llega tan profundo.",
+                    "Ese no sirve, no hay bacteriemia ahí.",
+                    "Ese punch no llega al trayecto.",
+                    "¡Esta! Biopsia profunda del trayecto, la que sirve."
+                ],
+                "gato": [
+                    "Fijate: no alcanza.",
+                    "Dato curioso: no sirve.",
+                    "Miau, no llega.",
+                    "¡Ronroneo de aprobación! La biopsia profunda."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -4071,7 +4351,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. Hemocultivos têm baixa sensibilidade em infecções necrotizantes de pele, pois bacteremia nem sempre ocorre ou é detectada, especialmente no início. Hemocultivos negativos não excluem o diagnóstico.\n\n**Outras opções:**  \nA está correta: anaerobiose favorece bactérias anaeróbias, comuns nessas infecções.  \nB está correta: tecidos necróticos devem ser transportados em meio anaeróbio para preservar microrganismos.  \nD está correta: punção aspirativa por pele íntegra reduz contaminação e melhora o isolamento bacteriano."
+            "feedback": "**Resposta Correta:** C está incorreta. Hemocultivos têm baixa sensibilidade em infecções necrotizantes de pele, pois bacteremia nem sempre ocorre ou é detectada, especialmente no início. Hemocultivos negativos não excluem o diagnóstico.\n\n**Outras opções:**  \nA está correta: anaerobiose favorece bactérias anaeróbias, comuns nessas infecções.  \nB está correta: tecidos necróticos devem ser transportados em meio anaeróbio para preservar microrganismos.  \nD está correta: punção aspirativa por pele íntegra reduz contaminação e melhora o isolamento bacteriano.",
+            "explicacoes": {
+                "robo": [
+                    "Las condiciones de anaerobiosis en la herida efectivamente favorecen el desarrollo y diseminación de los agentes causales.",
+                    "El tejido necrótico obtenido por debridamiento quirúrgico efectivamente debe transportarse en medio para anaerobios.",
+                    "Los hemocultivos tienen BAJA sensibilidad en infecciones necrotizantes de piel, ya que la bacteriemia no siempre ocurre o se detecta, especialmente al inicio — esta es la opción incorrecta.",
+                    "La muestra por punción-aspiración a través de piel sana efectivamente es válida para infecciones de heridas, reduciendo la contaminación."
+                ],
+                "fantasma": [
+                    "Esa está bien, la anaerobiosis favorece.",
+                    "Esa está bien, medio anaerobio.",
+                    "¡Esta! El hemocultivo tiene baja sensibilidad aquí.",
+                    "Esa está bien, piel sana."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Baja sensibilidad, no alta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -4097,7 +4397,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O exame de Tzanck detecta rapidamente infecção por herpes simplex, identificando células multinucleadas gigantes típicas da família Herpesviridae.  \n**Opção B:** Incorreta, pois impetigo é infecção bacteriana, não viral.  \n**Opção C:** Parcialmente correta; vacina atenuada contraindicada em imunodeprimidos, mas vacina recombinante é segura e recomendada.  \n**Opção D:** Incorreta; primoinfecção por HSV ocorre mais na infância/adolescência, sendo rara exclusivamente na idade adulta."
+            "feedback": "**Resposta Correta:** A. O exame de Tzanck detecta rapidamente infecção por herpes simplex, identificando células multinucleadas gigantes típicas da família Herpesviridae.  \n**Opção B:** Incorreta, pois impetigo é infecção bacteriana, não viral.  \n**Opção C:** Parcialmente correta; vacina atenuada contraindicada em imunodeprimidos, mas vacina recombinante é segura e recomendada.  \n**Opção D:** Incorreta; primoinfecção por HSV ocorre mais na infância/adolescência, sendo rara exclusivamente na idade adulta.",
+            "explicacoes": {
+                "robo": [
+                    "El frotis de Tzanck efectivamente detecta rápidamente la infección por herpes simplex, identificando células gigantes multinucleadas típicas de la familia Herpesviridae — es la respuesta correcta.",
+                    "El impétigo es una infección bacteriana, no viral; no se asocia al virus herpes simplex.",
+                    "Es cierto que la vacuna atenuada contra el Herpes zóster está contraindicada en inmunodeprimidos, pero existe una vacuna recombinante segura y recomendada para este grupo, por lo que la afirmación es incompleta.",
+                    "La primoinfección por Herpes simplex ocurre principalmente en la infancia/adolescencia, siendo rara exclusivamente en la adultez."
+                ],
+                "fantasma": [
+                    "¡Esta! Tzanck con célula multinucleada, el clásico.",
+                    "Impétigo es bacteriano, no viral.",
+                    "Falta la vacuna recombinante en esa afirmación.",
+                    "Es más de infancia, no de adultez."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Célula multinucleada, el clásico.",
+                    "Fijate: es bacteriano.",
+                    "Dato curioso: está incompleta.",
+                    "Miau, es de infancia."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -4123,7 +4443,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. Ancylostoma duodenale causa ancilostomíase intestinal, não larva migrans cutânea, que é causada por Ancylostoma braziliense.  \n\n**Outras opções:**  \nA está correta: Tunga penetrans penetra a pele em solos arenosos.  \nB está correta: Demodex folliculorum habita folículos pilosos e é diagnosticado por raspado e microscopia.  \nC está correta: Pediculus humanus var. corporis transmite doenças por Rickettsia.  \n\nPortanto, a confusão do agente da larva migrans torna D incorreta."
+            "feedback": "**Resposta Correta:** D está incorreta. Ancylostoma duodenale causa ancilostomíase intestinal, não larva migrans cutânea, que é causada por Ancylostoma braziliense.  \n\n**Outras opções:**  \nA está correta: Tunga penetrans penetra a pele em solos arenosos.  \nB está correta: Demodex folliculorum habita folículos pilosos e é diagnosticado por raspado e microscopia.  \nC está correta: Pediculus humanus var. corporis transmite doenças por Rickettsia.  \n\nPortanto, a confusão do agente da larva migrans torna D incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Tunga penetrans efectivamente habita suelos arenosos y penetra la piel, siendo la hembra adulta la que se introduce.",
+                    "Demodex folliculorum efectivamente se diagnostica mediante raspado de la lesión y observación al microscopio óptico.",
+                    "Pediculus humanus var corporis efectivamente es vector de enfermedades por especies de Rickettsia.",
+                    "Ancylostoma duodenale causa anquilostomiasis intestinal, no larva migrans cutánea, que es causada por Ancylostoma braziliense — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, la hembra en el suelo arenoso.",
+                    "Esa está bien, raspado y microscopio.",
+                    "Esa está bien, vector de Rickettsia.",
+                    "¡Esta! Ese no da larva migrans, es intestinal."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es intestinal, no larva migrans."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -4149,7 +4489,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Sporothrix schenckii causa esporotricose, micose subcutânea típica de inoculação traumática em pele, comum em áreas rurais e contato com vegetais ou solo, como na caça a tatus. Lesões ulcerativas em membros expostos são características.\n\n**Outras opções:**  \nB. Paracoccidioides brasiliensis causa micose sistêmica pulmonar, não lesão ulcerativa isolada por inoculação traumática.  \nC. Leishmania chagasi provoca leishmaniose visceral, não lesões cutâneas ulcerativas.  \nD. Plasmodium falciparum causa malária sistêmica, sem lesões cutâneas ulcer"
+            "feedback": "**Resposta Correta:** A. Sporothrix schenckii causa esporotricose, micose subcutânea típica de inoculação traumática em pele, comum em áreas rurais e contato com vegetais ou solo, como na caça a tatus. Lesões ulcerativas em membros expostos são características.\n\n**Outras opções:**  \nB. Paracoccidioides brasiliensis causa micose sistêmica pulmonar, não lesão ulcerativa isolada por inoculação traumática.  \nC. Leishmania chagasi provoca leishmaniose visceral, não lesões cutâneas ulcerativas.  \nD. Plasmodium falciparum causa malária sistêmica, sem lesões cutâneas ulcer",
+            "explicacoes": {
+                "robo": [
+                    "Sporothrix schenckii causa esporotricosis, micosis subcutánea típica por inoculación traumática en piel, común en zonas rurales y contacto con vegetales o suelo, como en la caza de armadillos; las lesiones ulcerativas en miembros expuestos son características — es la respuesta correcta.",
+                    "Paracoccidioides brasiliensis causa micosis sistémica pulmonar, no lesión ulcerativa aislada por inoculación traumática.",
+                    "Leishmania chagasi provoca leishmaniasis visceral, no lesiones cutáneas ulcerativas.",
+                    "Plasmodium falciparum causa malaria sistémica, sin lesiones cutáneas ulcerativas."
+                ],
+                "fantasma": [
+                    "¡Esta! El hongo del armadillo, la esporotricosis.",
+                    "Ese es pulmonar, no de la piel así.",
+                    "Esa es visceral, no de piel.",
+                    "Esa es malaria, no da esto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El hongo del armadillo.",
+                    "Fijate: es pulmonar.",
+                    "Dato curioso: es visceral.",
+                    "Miau, es malaria."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -4175,7 +4535,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta correta:** A. O soro é a amostra principal para diagnóstico da rubéola, com urina e aspirado nasofaríngeo como complementares.\n\n**Explicação:** A detecção de anticorpos IgM no soro indica infecção recente. Urina e aspirado são usados para PCR ou cultura viral, especialmente em casos suspeitos.\n\n**Outras opções:**  \nB está errada, pois IgG indica imunidade prévia, não infecção aguda.  \nC está errada, pois avaliação pré-gestacional é feita por IgG, não PCR.  \nD está errada, pois PCR após 5 dias do exantema é pouco eficaz; IgM negativo não exclui inf"
+            "feedback": "**Resposta correta:** A. O soro é a amostra principal para diagnóstico da rubéola, com urina e aspirado nasofaríngeo como complementares.\n\n**Explicação:** A detecção de anticorpos IgM no soro indica infecção recente. Urina e aspirado são usados para PCR ou cultura viral, especialmente em casos suspeitos.\n\n**Outras opções:**  \nB está errada, pois IgG indica imunidade prévia, não infecção aguda.  \nC está errada, pois avaliação pré-gestacional é feita por IgG, não PCR.  \nD está errada, pois PCR após 5 dias do exantema é pouco eficaz; IgM negativo não exclui inf",
+            "explicacoes": {
+                "robo": [
+                    "El suero es efectivamente la muestra de elección para el diagnóstico de rubéola, pudiendo colectarse además orina y aspirado nasofaríngeo — es la respuesta correcta.",
+                    "La sospecha clínica se confirma buscando IgM específica (infección aguda), no IgG, que indica inmunidad previa.",
+                    "La evaluación del estado pre-gestacional se realiza mediante IgG, no PCR del genoma viral.",
+                    "La PCR luego de 5 días del exantema es poco eficaz; un IgM negativo no descarta la infección."
+                ],
+                "fantasma": [
+                    "¡Esta! El suero, la muestra clásica.",
+                    "Es IgM, no IgG, para lo agudo.",
+                    "Es con IgG, no con PCR.",
+                    "El PCR tarde no sirve tanto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El suero, la clásica.",
+                    "Fijate: es IgM.",
+                    "Dato curioso: es con IgG.",
+                    "Miau, no sirve tanto tarde."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -4201,7 +4581,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. O sarampo é transmitido principalmente por via aérea, por gotículas respiratórias, não pelo contato com lesões cutâneas.\n\n**Outras opções:**  \nA está correta ao afirmar que o sarampo pode causar complicações graves no SNC.  \nC está correta ao descrever o exantema maculopapular típico e sintomas respiratórios.  \nD está correta ao destacar a imunossupressão causada pelo vírus, que facilita infecções secundárias."
+            "feedback": "**Resposta Correta:** B. O sarampo é transmitido principalmente por via aérea, por gotículas respiratórias, não pelo contato com lesões cutâneas.\n\n**Outras opções:**  \nA está correta ao afirmar que o sarampo pode causar complicações graves no SNC.  \nC está correta ao descrever o exantema maculopapular típico e sintomas respiratórios.  \nD está correta ao destacar a imunossupressão causada pelo vírus, que facilita infecções secundárias.",
+            "explicacoes": {
+                "robo": [
+                    "El sarampión efectivamente puede causar complicaciones graves en el SNC, aunque poco frecuentes.",
+                    "El sarampión se transmite principalmente por vía aérea, mediante gotitas respiratorias, no por contacto con las lesiones cutáneas — esta es la opción incorrecta.",
+                    "Efectivamente presenta un exantema maculopapular centrífugo característico con síntomas respiratorios concomitantes.",
+                    "Efectivamente induce una profunda inmunosupresión celular que contribuye al desarrollo de infecciones secundarias."
+                ],
+                "fantasma": [
+                    "Esa está bien, rara pero grave.",
+                    "¡Esta! Es por el aire, no por la piel.",
+                    "Esa está bien, el exantema típico.",
+                    "Esa está bien, baja las defensas."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es por el aire.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 31,
