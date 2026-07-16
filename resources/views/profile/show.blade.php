@@ -115,7 +115,7 @@
                         </div>
 
                         <div class="bc-form-actions bc-form-actions--profile">
-                            <div class="d-flex flex-wrap gap-2 justify-content-stretch justify-content-md-end align-items-center">
+                            <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 justify-content-stretch justify-content-md-end align-items-stretch align-items-sm-center">
                                 <a href="{{ route('dashboard') }}"
                                    class="btn btn-outline-primary btn-lg px-4 rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
                                     <span class="material-symbols-outlined bc-perfil-symbol-btn" aria-hidden="true">arrow_back</span>

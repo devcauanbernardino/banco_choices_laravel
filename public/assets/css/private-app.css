@@ -695,8 +695,11 @@
   padding-top: 0;
 }
 
-.bc-form-actions--profile .btn {
-  flex: 1 1 0;
+/* Abaixo de sm os botões empilham (largura cheia); a partir daí dividem a linha igualmente */
+@media (min-width: 576px) {
+  .bc-form-actions--profile .btn {
+    flex: 1 1 0;
+  }
 }
 
 .bc-perfil-symbol-btn {
