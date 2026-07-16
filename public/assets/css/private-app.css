@@ -88,6 +88,8 @@
 .text-primary   { color: var(--bc-purple) !important; }
 .bg-primary-soft { background-color: rgba(106, 3, 146, 0.1); }
 
+[data-theme="dark"] .text-primary { color: #c4b5fd !important; }
+
 /* ---------- Cards ---------- */
 .bc-card {
   background: rgba(255, 255, 255, .55);
