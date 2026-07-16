@@ -42,7 +42,7 @@
 [data-theme="dark"] .bc-toast--success .bc-toast__icon { color: #4ade80; }
 [data-theme="dark"] .bc-toast--error .bc-toast__icon { color: #f87171; }
 
-.bc-toast__msg { flex: 1; word-break: break-word; }
+.bc-toast__msg { flex: 1; min-width: 0; word-break: break-word; }
 
 @keyframes bc-toast-in {
     from { opacity: 0; transform: translateY(-10px) scale(.97); }
