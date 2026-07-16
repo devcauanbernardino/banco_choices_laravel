@@ -17,8 +17,13 @@
         @endif
 
         {{-- Hero banner --}}
+        @php
+            $materiasList = $materias instanceof \Illuminate\Support\Collection ? $materias->values() : collect($materias)->values();
+            $materiasVisiveis = $materiasList->take(6);
+            $materiasOcultas = $materiasList->slice(6)->values();
+        @endphp
         <div class="bc-hero mb-4">
-            <div class="row align-items-end g-4 position-relative bc-profile-hero-row">
+            <div class="row align-items-start g-4 position-relative bc-profile-hero-row">
                 <div class="col-md-auto text-center text-md-start">
                     <img class="bc-hero-avatar"
                          src="https://ui-avatars.com/api/?name={{ urlencode($usuario->nome) }}&size=224&background=ffffff&color=6a0392"
@@ -27,12 +32,20 @@
                 <div class="col-md">
                     <h1 class="h3 fw-bold mb-1 text-white">{{ $usuario->nome }}</h1>
                     <p class="mb-2 opacity-90 small text-white">{{ $usuario->email }}</p>
-                    <div class="d-flex flex-wrap gap-2">
-                        @forelse ($materias as $mat)
+                    <div class="d-flex flex-wrap gap-2" id="profileMateriaChips">
+                        @forelse ($materiasVisiveis as $mat)
                             <span class="bc-materia-chip">{{ $mat->nome ?? $mat['nome'] ?? '' }}</span>
                         @empty
                             <span class="badge bg-light text-dark">{{ __('perfil.no_materias') }}</span>
                         @endforelse
+                        @if ($materiasOcultas->isNotEmpty())
+                            @foreach ($materiasOcultas as $mat)
+                                <span class="bc-materia-chip d-none" data-materia-extra>{{ $mat->nome ?? $mat['nome'] ?? '' }}</span>
+                            @endforeach
+                            <button type="button" class="bc-materia-chip bc-materia-chip--toggle" id="profileMateriaToggle" data-label-more="{{ __('perfil.materias_more', ['n' => $materiasOcultas->count()]) }}" data-label-less="{{ __('perfil.materias_less') }}">
+                                {{ __('perfil.materias_more', ['n' => $materiasOcultas->count()]) }}
+                            </button>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -134,3 +147,20 @@
         </div>
     </div>
 @endsection
+
+@push('scripts')
+<script>
+(function () {
+    var btn = document.getElementById('profileMateriaToggle');
+    if (!btn) return;
+    var expanded = false;
+    btn.addEventListener('click', function () {
+        expanded = !expanded;
+        document.querySelectorAll('#profileMateriaChips [data-materia-extra]').forEach(function (el) {
+            el.classList.toggle('d-none', !expanded);
+        });
+        btn.textContent = expanded ? btn.getAttribute('data-label-less') : btn.getAttribute('data-label-more');
+    });
+})();
+</script>
+@endpush
