@@ -6467,7 +6467,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Hisopados superficiais não são ideais para infecções de pele e partes moles, pois coletam contaminantes e não refletem o agente causador nas camadas profundas. Amostras de material purulento, tecido ou aspirados são preferíveis.\n\n**Outras opções:**  \nB. Aspiração de abscessos fechados é recomendada para obter material representativo.  \nC. Amostras cirúrgicas devem ser suficientes, sem tecido necrótico, e enviadas em frascos para anaeróbios.  \nD. Amostras para anaeróbios precisam de transporte imediato ou meios específicos para preservar viabilidade.\n\nColeta adequada é essencial para diagnóstico correto."
+            "feedback": "**Resposta Correta:** A. Hisopados superficiais não são ideais para infecções de pele e partes moles, pois coletam contaminantes e não refletem o agente causador nas camadas profundas. Amostras de material purulento, tecido ou aspirados são preferíveis.\n\n**Outras opções:**  \nB. Aspiração de abscessos fechados é recomendada para obter material representativo.  \nC. Amostras cirúrgicas devem ser suficientes, sem tecido necrótico, e enviadas em frascos para anaeróbios.  \nD. Amostras para anaeróbios precisam de transporte imediato ou meios específicos para preservar viabilidade.\n\nColeta adequada é essencial para diagnóstico correto.",
+            "explicacoes": {
+                "robo": [
+                    "Los hisopados superficiales de heridas no son ideales para infecciones de piel y partes blandas, ya que recolectan contaminantes y no reflejan al agente causal en capas profundas; se prefieren muestras de material purulento, tejido o aspirados — esta es la opción incorrecta.",
+                    "En abscesos cerrados efectivamente se recomienda aspirar el contenido purulento con jeringa y aguja.",
+                    "En tejidos obtenidos por cirugía efectivamente se recomienda obtener suficiente muestra, desbridando el material necrótico y enviándola en frasco para anaerobios.",
+                    "Ante sospecha de anaerobios efectivamente se debe remitir de inmediato la muestra al laboratorio o en medios de transporte específicos."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese hisopado no rinde, hace falta más profundo.",
+                    "Esa está bien, con jeringa.",
+                    "Esa está bien, frasco anaerobio.",
+                    "Esa está bien, rápido al labo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No rinde, hace falta más.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -6493,7 +6513,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta, pois a resposta humoral adaptativa no sarampo gera anticorpos IgG que conferem imunidade protetora duradoura, geralmente vitalícia.  \n\n**Outras opções:**  \nA está correta: o exantema resulta da resposta imune mediada por células T CD4+.  \nB está correta: o sarampo causa imunossupressão transitória, aumentando risco de infecções secundárias.  \nD está correta: tanto a resposta humoral quanto a celular são essenciais para eliminar o vírus."
+            "feedback": "**Resposta Correta:** C está incorreta, pois a resposta humoral adaptativa no sarampo gera anticorpos IgG que conferem imunidade protetora duradoura, geralmente vitalícia.  \n\n**Outras opções:**  \nA está correta: o exantema resulta da resposta imune mediada por células T CD4+.  \nB está correta: o sarampo causa imunossupressão transitória, aumentando risco de infecções secundárias.  \nD está correta: tanto a resposta humoral quanto a celular são essenciais para eliminar o vírus.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el exantema se observa como resultado de la respuesta inmune.",
+                    "Efectivamente la inmunosupresión generalizada y transitoria favorece infecciones secundarias.",
+                    "La respuesta humoral adaptativa en el sarampión genera anticuerpos IgG que SÍ confieren inmunidad protectora duradera, generalmente de por vida — esta es la opción incorrecta.",
+                    "Efectivamente, tanto la respuesta humoral como la celular son esenciales para eliminar el virus del organismo."
+                ],
+                "fantasma": [
+                    "Esa está bien, es la respuesta.",
+                    "Esa está bien, baja las defensas.",
+                    "¡Esta! Sí da inmunidad de por vida.",
+                    "Esa está bien, elimina el virus."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Sí es de por vida.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -6519,7 +6559,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. As lesões de *Sarcoptes scabiei* são habitadas pelo ácaro que cava túneis na epiderme, causando prurido e inflamação.  \n\n**Outras opções:**  \nA: Correta. *Tunga penetrans* penetra e cresce na pele, liberando ovos.  \nB: Correta. *Demodex folliculorum* habita folículos pilosos e é identificado por raspado.  \nC: Correta. *Ancylostoma caninum* causa dermatite serpiginosa por penetração larval.  \n\nSomente D está errada, pois nega a presença ativa do ácaro"
+            "feedback": "**Resposta Correta:** D está incorreta. As lesões de *Sarcoptes scabiei* são habitadas pelo ácaro que cava túneis na epiderme, causando prurido e inflamação.  \n\n**Outras opções:**  \nA: Correta. *Tunga penetrans* penetra e cresce na pele, liberando ovos.  \nB: Correta. *Demodex folliculorum* habita folículos pilosos e é identificado por raspado.  \nC: Correta. *Ancylostoma caninum* causa dermatite serpiginosa por penetração larval.  \n\nSomente D está errada, pois nega a presença ativa do ácaro",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la hembra fecundada de Tunga penetrans penetra en la piel del pie y libera los huevos.",
+                    "El raspado de la lesión efectivamente permite visualizar Demodex folliculorum por microscopía óptica.",
+                    "Ancylostoma caninum efectivamente causa eritema y lesión serpiginosa en el pie.",
+                    "Las lesiones por Sarcoptes scabiei están HABITADAS por el ácaro, que cava túneles en la epidermis, causando prurito e inflamación — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, la hembra pone huevos.",
+                    "Esa está bien, con raspado se ve.",
+                    "Esa está bien, lesión serpiginosa.",
+                    "¡Esta! Ahí sí vive el ácaro, no está vacío."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Ahí vive el ácaro."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -6545,7 +6605,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Para tinea capitis, a amostra não deve ser conservada em meio de Stuart, indicado para bactérias, não fungos. Amostras como cabelos e escamas devem ser enviadas secas e à temperatura ambiente para preservar os dermatófitos e garantir cultivo eficaz.\n\n**Outras opções:**  \nB está correta: parasitismo ectothrix (artroconídios externos) ocorre em Microsporum spp.  \nC está correta: Trichophyton tonsurans causa parasitismo endothrix (artroconídios internos).  \nD está correta: Microsporum canis é o agente mais comum, especialmente em contato com animais domésticos."
+            "feedback": "**Resposta Correta:** A. Para tinea capitis, a amostra não deve ser conservada em meio de Stuart, indicado para bactérias, não fungos. Amostras como cabelos e escamas devem ser enviadas secas e à temperatura ambiente para preservar os dermatófitos e garantir cultivo eficaz.\n\n**Outras opções:**  \nB está correta: parasitismo ectothrix (artroconídios externos) ocorre em Microsporum spp.  \nC está correta: Trichophyton tonsurans causa parasitismo endothrix (artroconídios internos).  \nD está correta: Microsporum canis é o agente mais comum, especialmente em contato com animais domésticos.",
+            "explicacoes": {
+                "robo": [
+                    "Para la tinea capitis, la muestra no debe conservarse en medio de Stuart, indicado para bacterias, no hongos; los cabellos y escamas deben enviarse secos y a temperatura ambiente — esta es la excepción.",
+                    "El parasitismo ectothrix (artroconidios externos) efectivamente puede observarse en la tinea capitis por Microsporum spp.",
+                    "Trichophyton tonsurans efectivamente causa parasitismo endothrix (artroconidios internos).",
+                    "Microsporum canis efectivamente es el agente etiológico más frecuente de tinea capitis en nuestro medio."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese medio es de bacteria, no de hongo.",
+                    "Esa está bien, ectothrix.",
+                    "Esa está bien, endothrix.",
+                    "Esa está bien, el más común."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de bacteria, no de hongo.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -6571,7 +6651,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A está incorreta. Clostridium tetani causa tétano, doença neurológica, não infecções necrotizantes de pele. B, C e D estão corretas: Clostridium perfringens causa gangrena gasosa; Streptococcus pyogenes pode provocar fasceíte necrotizante pós-trauma; enterobactérias participam de infecções necrotizantes mistas, especialmente em diabéticos."
+            "feedback": "Resposta correta: A está incorreta. Clostridium tetani causa tétano, doença neurológica, não infecções necrotizantes de pele. B, C e D estão corretas: Clostridium perfringens causa gangrena gasosa; Streptococcus pyogenes pode provocar fasceíte necrotizante pós-trauma; enterobactérias participam de infecções necrotizantes mistas, especialmente em diabéticos.",
+            "explicacoes": {
+                "robo": [
+                    "Clostridium tetani causa tétanos, una enfermedad neurológica, no infecciones necrotizantes de piel — esta es la excepción.",
+                    "Clostridium perfringens efectivamente es agente productor de infecciones necrotizantes de piel (gangrena gaseosa).",
+                    "Streptococcus pyogenes efectivamente puede ser agente de infecciones necrotizantes de piel post-traumáticas.",
+                    "Las enterobacterias efectivamente pueden estar involucradas en infecciones necrotizantes de piel de tipo mixtas."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese causa tétanos, no necrosis de piel.",
+                    "Ese sí es de necrosis.",
+                    "Ese sí es de necrosis.",
+                    "Esas sí participan de la mixta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es tétanos, no necrosis.",
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí participan."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -6597,7 +6697,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Lesões hipo ou hiperpigmentadas com descamação fina são típicas da pitiríase versicolor, causada por Malassezia spp., que faz parte da microbiota normal e prolifera em condições favoráveis.\n\n**Análise das incorretas:**  \nA está errada: a doença responde ao tratamento, mas recidiva é comum.  \nC está errada: no exame direto, observam-se leveduras e filamentos curtos, não filamentos tabicados típicos de dermatófitos.  \nD está errada: Malassezia é cultivável em meios especiais, e o exame direto é diagnóstico importante."
+            "feedback": "**Resposta Correta:** B. Lesões hipo ou hiperpigmentadas com descamação fina são típicas da pitiríase versicolor, causada por Malassezia spp., que faz parte da microbiota normal e prolifera em condições favoráveis.\n\n**Análise das incorretas:**  \nA está errada: a doença responde ao tratamento, mas recidiva é comum.  \nC está errada: no exame direto, observam-se leveduras e filamentos curtos, não filamentos tabicados típicos de dermatófitos.  \nD está errada: Malassezia é cultivável em meios especiais, e o exame direto é diagnóstico importante.",
+            "explicacoes": {
+                "robo": [
+                    "La pitiriasis versicolor responde al tratamiento, pero la recidiva es frecuente.",
+                    "Las lesiones hipo o hiperpigmentadas con descamación fina son típicas de la pitiriasis versicolor, causada por Malassezia spp — es la respuesta correcta.",
+                    "En el examen directo se observan levaduras y filamentos cortos, no filamentos hialinos tabicados, típicos de dermatofitos.",
+                    "Malassezia es cultivable en medios especiales; el examen directo es un dato diagnóstico importante, pero no exclusivo."
+                ],
+                "fantasma": [
+                    "Recae bastante, no es como dice.",
+                    "¡Esta! Manchas con descamación fina, la marca.",
+                    "Eso es de dermatofito, no de esto.",
+                    "Sí se cultiva, no es solo por eso."
+                ],
+                "gato": [
+                    "Fijate: recae bastante.",
+                    "¡Ronroneo de aprobación! Descamación fina.",
+                    "Dato curioso: es de otro hongo.",
+                    "Miau, sí se cultiva."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -6623,7 +6743,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta. O HPV infecta as camadas basais da pele e pode se disseminar por autoinoculação, causando múltiplas lesões no mesmo indivíduo. As opções A, B e C estão corretas: molusco contagioso é mais comum em crianças menores de 5 anos, transmite-se por contato direto, e o HPV infecta as células basais da epiderme. Portanto, a única afirmação errada é que o HPV não infecta por autoinoculação."
+            "feedback": "Resposta correta: D está incorreta. O HPV infecta as camadas basais da pele e pode se disseminar por autoinoculação, causando múltiplas lesões no mesmo indivíduo. As opções A, B e C estão corretas: molusco contagioso é mais comum em crianças menores de 5 anos, transmite-se por contato direto, e o HPV infecta as células basais da epiderme. Portanto, a única afirmação errada é que o HPV não infecta por autoinoculação.",
+            "explicacoes": {
+                "robo": [
+                    "El molusco contagioso efectivamente es más frecuente en menores de 5 años.",
+                    "El HPV efectivamente infecta las capas basales de la piel.",
+                    "El molusco contagioso efectivamente se transmite por contacto directo.",
+                    "El HPV SÍ puede diseminarse por autoinoculación, causando múltiples lesiones en el mismo individuo — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, en el chiquito.",
+                    "Esa está bien, capa basal.",
+                    "Esa está bien, contacto directo.",
+                    "¡Esta! Sí se autoinocula el HPV."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Sí se autoinocula."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -6649,7 +6789,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está incorreta porque, na esporotricose cutânea, a amostra deve ser obtida por punção aspirativa, biópsia ou coleta de lesões profundas, já que o Sporothrix schenckii reside em camadas profundas da pele. Raspado superficial pode gerar falso negativo. As outras opções estão corretas: A e C referem-se às colorações Ziehl-Neelsen e Kinyoun para micobactérias e Nocardia, respectivamente; D indica que a leishmaniose cutânea é diagnosticada pela identificação de amastigotes em biópsias coradas com Giemsa."
+            "feedback": "Resposta correta: B está incorreta porque, na esporotricose cutânea, a amostra deve ser obtida por punção aspirativa, biópsia ou coleta de lesões profundas, já que o Sporothrix schenckii reside em camadas profundas da pele. Raspado superficial pode gerar falso negativo. As outras opções estão corretas: A e C referem-se às colorações Ziehl-Neelsen e Kinyoun para micobactérias e Nocardia, respectivamente; D indica que a leishmaniose cutânea é diagnosticada pela identificação de amastigotes em biópsias coradas com Giemsa.",
+            "explicacoes": {
+                "robo": [
+                    "La tinción de Ziehl-Neelsen efectivamente es útil para observar BAAR en micobacteriosis subcutáneas.",
+                    "En la esporotricosis cutánea la muestra debe obtenerse por punción-aspiración, biopsia o material de lesiones profundas, ya que Sporothrix schenckii reside en capas profundas de la piel; el raspado superficial puede generar falso negativo — esta es la opción incorrecta.",
+                    "En el síndrome linfangítico la tinción de Kinyoun efectivamente permite observar bacterias filamentosas ácido resistentes.",
+                    "La leishmaniosis cutánea efectivamente puede diagnosticarse por observación de amastigotes mediante tinción de Giemsa en biopsias."
+                ],
+                "fantasma": [
+                    "Esa está bien, Ziehl-Neelsen.",
+                    "¡Esta! Ahí hace falta profundo, no superficial.",
+                    "Esa está bien, Kinyoun.",
+                    "Esa está bien, Giemsa."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Hace falta profundo.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -6675,7 +6835,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta porque a escarificação do exantema com coloração de Giemsa não detecta o vírus do sarampo, um vírus RNA, tornando esse método inadequado para diagnóstico.\n\n**Outras opções:**  \nA (RT-PCR) é o padrão para detectar RNA viral em amostras respiratórias;  \nC (manchas de Koplik) é um sinal clínico precoce e patognomônico;  \nD (IgM por ELISA) confirma infecção recente por sorologia.  \n\nAssim, A, C e D são métodos válidos, enquanto B não é útil para diagnóstico do sarampo."
+            "feedback": "**Resposta Correta:** B está incorreta porque a escarificação do exantema com coloração de Giemsa não detecta o vírus do sarampo, um vírus RNA, tornando esse método inadequado para diagnóstico.\n\n**Outras opções:**  \nA (RT-PCR) é o padrão para detectar RNA viral em amostras respiratórias;  \nC (manchas de Koplik) é um sinal clínico precoce e patognomônico;  \nD (IgM por ELISA) confirma infecção recente por sorologia.  \n\nAssim, A, C e D são métodos válidos, enquanto B não é útil para diagnóstico do sarampo.",
+            "explicacoes": {
+                "robo": [
+                    "La RT-PCR en muestras de aspirado nasofaríngeo o esputo efectivamente es el estándar para detectar ARN viral.",
+                    "La escarificación del exantema con tinción de Giemsa no detecta el virus del sarampión, que es un virus ARN; este método es inadecuado para el diagnóstico — esta es la opción incorrecta.",
+                    "La investigación de enantema (manchas de Koplik) efectivamente es un signo clínico precoz y patognomónico.",
+                    "La detección de IgM específica mediante ELISA efectivamente confirma la infección reciente por serología."
+                ],
+                "fantasma": [
+                    "Esa está bien, RT-PCR.",
+                    "¡Esta! Eso no detecta el virus del sarampión.",
+                    "Esa está bien, mancha de Koplik.",
+                    "Esa está bien, IgM por ELISA."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No detecta el virus.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -6701,7 +6881,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta. Nas doenças exantemáticas virais, as vesículas contêm partículas virais infecciosas, como na varicela.  \nA. Máculas não abrigam vírus, pois são manchas causadas por inflamação, não replicação viral.  \nB. A vacinação contra varicela reduz a incidência e complicações graves da doença.  \nC. Doenças exantemáticas geralmente apresentam erupção cutânea aguda, acompanhada de sintomas sistêmicos.  \nAssim, apenas a afirmação D é falsa, pois nega a presença de vírus nas vesículas."
+            "feedback": "Resposta correta: D está incorreta. Nas doenças exantemáticas virais, as vesículas contêm partículas virais infecciosas, como na varicela.  \nA. Máculas não abrigam vírus, pois são manchas causadas por inflamação, não replicação viral.  \nB. A vacinação contra varicela reduz a incidência e complicações graves da doença.  \nC. Doenças exantemáticas geralmente apresentam erupção cutânea aguda, acompanhada de sintomas sistêmicos.  \nAssim, apenas a afirmação D é falsa, pois nega a presença de vírus nas vesículas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente las máculas no están habitadas por virus, ya que son manchas causadas por inflamación.",
+                    "Efectivamente la vacunación contra la varicela modifica la probabilidad de aparición de complicaciones.",
+                    "Efectivamente se asocian con frecuencia a erupción cutánea de aparición aguda.",
+                    "En las enfermedades exantemáticas virales, las vesículas SÍ contienen partículas virales infecciosas, como en la varicela — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, sin virus.",
+                    "Esa está bien, la vacuna ayuda.",
+                    "Esa está bien, es aguda.",
+                    "¡Esta! Sí tienen virus adentro."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Sí tienen virus."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -6727,7 +6927,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Cladophialophora carrioni não causa síndrome linfangítico nodular, estando associada à cromoblastomicose.  \n\n**Outras opções:**  \nA. Nocardia brasiliensis é uma bactéria que causa nocardiose cutânea com linfangite nodular.  \nB. Mycobacterium marinum provoca infecções cutâneas que podem evoluir para linfangite nodular.  \nC. Sporothrix schenckii é um fungo que causa esporotricose, caracterizada por linfangite nodular.  \n\nSomente Cladophialophora carrioni não está relacionada a essa síndrome."
+            "feedback": "**Resposta Correta:** D. Cladophialophora carrioni não causa síndrome linfangítico nodular, estando associada à cromoblastomicose.  \n\n**Outras opções:**  \nA. Nocardia brasiliensis é uma bactéria que causa nocardiose cutânea com linfangite nodular.  \nB. Mycobacterium marinum provoca infecções cutâneas que podem evoluir para linfangite nodular.  \nC. Sporothrix schenckii é um fungo que causa esporotricose, caracterizada por linfangite nodular.  \n\nSomente Cladophialophora carrioni não está relacionada a essa síndrome.",
+            "explicacoes": {
+                "robo": [
+                    "Nocardia brasiliensis efectivamente causa nocardiosis cutánea con linfangitis nodular.",
+                    "Mycobacterium marinum efectivamente provoca infecciones cutáneas que pueden evolucionar a linfangitis nodular.",
+                    "Sporothrix schenckii efectivamente causa esporotricosis, caracterizada por linfangitis nodular.",
+                    "Cladophialophora carrioni no causa síndrome linfangítico nodular, estando asociada a la cromoblastomicosis — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Ese sí causa linfangitis.",
+                    "Ese sí causa linfangitis.",
+                    "Ese sí causa linfangitis.",
+                    "¡Esta! Ese es de cromoblastomicosis, no de linfangitis."
+                ],
+                "gato": [
+                    "Fijate: sí causa.",
+                    "Dato curioso: sí causa.",
+                    "Miau, sí causa.",
+                    "¡Ronroneo de aprobación! Es de cromoblastomicosis."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -6753,7 +6973,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Sporothrix schenckii cresce como micélio a 28°C, com filamentos hialinos e septados, produzindo microconídios, característica essencial para diagnóstico.  \n\n**Opção B:** Errada. Gatos transmitem esporotricose ao homem por arranhões ou mordidas, devido à alta carga fúngica nas lesões.  \n\n**Opção C:** Errada. Não há transmissão direta pessoa a pessoa; infecção ocorre por inoculação traumática do ambiente.  \n\n**Opção D:** Errada. Leveduras de S. schenckii são ovaladas e unicelulares, sem brotamento múltiplo; leveduras são rar"
+            "feedback": "**Resposta Correta:** A. Sporothrix schenckii cresce como micélio a 28°C, com filamentos hialinos e septados, produzindo microconídios, característica essencial para diagnóstico.  \n\n**Opção B:** Errada. Gatos transmitem esporotricose ao homem por arranhões ou mordidas, devido à alta carga fúngica nas lesões.  \n\n**Opção C:** Errada. Não há transmissão direta pessoa a pessoa; infecção ocorre por inoculação traumática do ambiente.  \n\n**Opção D:** Errada. Leveduras de S. schenckii são ovaladas e unicelulares, sem brotamento múltiplo; leveduras são rar",
+            "explicacoes": {
+                "robo": [
+                    "Sporothrix schenckii efectivamente crece como micelio a 28°C, con filamentos hialinos tabicados y microconidias, hallazgo esencial para el diagnóstico — es la respuesta correcta.",
+                    "Los gatos SÍ transmiten la esporotricosis al hombre por arañazos o mordidas, debido a la alta carga fúngica en las lesiones.",
+                    "No existe transmisión directa persona a persona; la infección ocurre por inoculación traumática desde el ambiente.",
+                    "Las levaduras de S. schenckii son ovaladas y unicelulares, con brotación única (monogemante), no multibrotante."
+                ],
+                "fantasma": [
+                    "¡Esta! Micelio con microconidia a 28 grados.",
+                    "El gato sí transmite.",
+                    "No es de persona a persona.",
+                    "Es de un solo brote, no varios."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Micelio con microconidia.",
+                    "Fijate: sí transmite.",
+                    "Dato curioso: no es así.",
+                    "Miau, un solo brote."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -6779,7 +7019,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Hisopados superficiais são inadequados para diagnóstico de esporotricose, pois a superfície das lesões pode estar contaminada, dificultando o isolamento do Sporothrix spp., que reside em tecido subcutâneo. Métodos eficazes incluem biópsia e punção-aspiração, que coletam amostras profundas, e intradermorreação, que avalia a resposta imunológica. Essas técnicas são mais confiáveis para identificar o agente etiológico na síndrome linfangítica nodular."
+            "feedback": "Resposta correta: A. Hisopados superficiais são inadequados para diagnóstico de esporotricose, pois a superfície das lesões pode estar contaminada, dificultando o isolamento do Sporothrix spp., que reside em tecido subcutâneo. Métodos eficazes incluem biópsia e punção-aspiração, que coletam amostras profundas, e intradermorreação, que avalia a resposta imunológica. Essas técnicas são mais confiáveis para identificar o agente etiológico na síndrome linfangítica nodular.",
+            "explicacoes": {
+                "robo": [
+                    "Los hisopados superficiales son inadecuados para el diagnóstico de esporotricosis, ya que la superficie de las lesiones puede estar contaminada, dificultando el aislamiento de Sporothrix spp, que reside en tejido subcutáneo — esta es la excepción.",
+                    "La intradermorreacción con antígenos específicos efectivamente evalúa la respuesta inmunológica y es útil en el diagnóstico.",
+                    "La biopsia de la lesión efectivamente aporta muestra profunda confiable.",
+                    "La punción-aspiración de un nódulo cerrado efectivamente aporta muestra profunda confiable."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese hisopado rinde poco, está contaminado.",
+                    "Esa sí sirve, la reacción.",
+                    "Esa sí sirve, biopsia.",
+                    "Esa sí sirve, punción."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Rinde poco, contaminado.",
+                    "Fijate: sirve.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -6805,7 +7065,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A diabetes é fator predisponente para celulite, pois compromete a circulação, a imunidade e a cicatrização, facilitando a infecção bacteriana.\n\n**Opções incorretas:**\nA. Celulite é bacteriana, não viral.  \nB. Cultivo do aspirado não tem sensibilidade de 100%, podendo falhar por uso de antibióticos ou baixa carga bacteriana.  \nC. Hemocultura negativa não exclui infecção bacteriana localizada, pois nem sempre há bacteremia."
+            "feedback": "**Resposta Correta:** D. A diabetes é fator predisponente para celulite, pois compromete a circulação, a imunidade e a cicatrização, facilitando a infecção bacteriana.\n\n**Opções incorretas:**\nA. Celulite é bacteriana, não viral.  \nB. Cultivo do aspirado não tem sensibilidade de 100%, podendo falhar por uso de antibióticos ou baixa carga bacteriana.  \nC. Hemocultura negativa não exclui infecção bacteriana localizada, pois nem sempre há bacteremia.",
+            "explicacoes": {
+                "robo": [
+                    "La celulitis es de etiología bacteriana, no viral.",
+                    "El cultivo del aspirado no tiene sensibilidad del 100%, pudiendo fallar por uso previo de antibióticos o baja carga bacteriana.",
+                    "Un hemocultivo negativo no excluye la infección bacteriana localizada, ya que no siempre hay bacteriemia.",
+                    "La diabetes efectivamente es un factor predisponente para la celulitis, ya que compromete la circulación, la inmunidad y la cicatrización, facilitando la infección bacteriana — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es bacteriana, no viral.",
+                    "No es 100%, puede fallar.",
+                    "El hemocultivo negativo no descarta nada.",
+                    "¡Esta! La diabetes predispone, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es bacteriana.",
+                    "Dato curioso: no es 100%.",
+                    "Miau, no descarta.",
+                    "¡Ronroneo de aprobación! La diabetes predispone."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -6831,7 +7111,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Deve receber a vacina dupla bacteriana (dT) a cada 10 anos.\n\nO tétano não gera imunidade duradoura, pois a toxina em baixa dose não estimula resposta protetora eficaz. Por isso, mesmo quem teve a doença deve receber reforço decenal com a vacina dT.  \n\n**Outras opções incorretas:**  \nA) Vacina triple bacteriana acelular é para crianças, não reforço adulto a cada 3 anos.  \nB) Imunidade natural não é permanente.  \nC) Gammaglobulina é para profilaxia passiva imediata, não para reforço rotineiro."
+            "feedback": "**Resposta Correta:** D. Deve receber a vacina dupla bacteriana (dT) a cada 10 anos.\n\nO tétano não gera imunidade duradoura, pois a toxina em baixa dose não estimula resposta protetora eficaz. Por isso, mesmo quem teve a doença deve receber reforço decenal com a vacina dT.  \n\n**Outras opções incorretas:**  \nA) Vacina triple bacteriana acelular é para crianças, não reforço adulto a cada 3 anos.  \nB) Imunidade natural não é permanente.  \nC) Gammaglobulina é para profilaxia passiva imediata, não para reforço rotineiro.",
+            "explicacoes": {
+                "robo": [
+                    "La vacuna triple bacteriana acelular es para niños, no un refuerzo en adultos cada 3 años.",
+                    "El tétanos NO genera inmunidad duradera, ya que la toxina en dosis baja no estimula una respuesta protectora eficaz.",
+                    "La gammaglobulina es para profilaxis pasiva inmediata, no para refuerzo rutinario cada 10 años.",
+                    "Debe recibir la vacuna doble bacteriana (dT) cada 10 años, ya que el tétanos no confiere inmunidad protectora duradera — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa es de niño, no cada 3.",
+                    "No es de por vida.",
+                    "Esa es para emergencia, no cada 10.",
+                    "¡Esta! La dT cada 10 años, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es de niño.",
+                    "Dato curioso: no es de por vida.",
+                    "Miau, es de emergencia.",
+                    "¡Ronroneo de aprobación! La dT cada 10 años."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -6857,7 +7157,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Sporothrix schenckii, fungo dimórfico que cresce em meio Sabouraud a 28°C na forma saprofítica e em agar com infusão de sangue a 37°C na forma parasitária.  \nOpção A incorreta: Leishmania braziliensis é protozoário e não cresce em Sabouraud.  \nOpção B incorreta: Actinomadura madurae é bactéria actinomiceta, não cresce em Lowenstein-Jensen.  \nOpção D incorreta: Mycobacterium marinum não cresce em meio NNN, usado para protozoários."
+            "feedback": "Resposta correta: C. Sporothrix schenckii, fungo dimórfico que cresce em meio Sabouraud a 28°C na forma saprofítica e em agar com infusão de sangue a 37°C na forma parasitária.  \nOpção A incorreta: Leishmania braziliensis é protozoário e não cresce em Sabouraud.  \nOpção B incorreta: Actinomadura madurae é bactéria actinomiceta, não cresce em Lowenstein-Jensen.  \nOpção D incorreta: Mycobacterium marinum não cresce em meio NNN, usado para protozoários.",
+            "explicacoes": {
+                "robo": [
+                    "Leishmania braziliensis es un protozoario y no crece en medio Sabouraud.",
+                    "Actinomadura madurae es una bacteria actinomiceta, no crece en medio Löwenstein-Jensen.",
+                    "Sporothrix schenckii, hongo dimórfico, crece en medio Sabouraud a 28°C en su forma saprofítica y en agar con infusión de sangre a 37°C en su forma parasitaria — es la respuesta correcta.",
+                    "Mycobacterium marinum no crece en medio NNN, usado para protozoarios."
+                ],
+                "fantasma": [
+                    "Ese es protozoario, no crece ahí.",
+                    "Esa es bacteria, no crece ahí.",
+                    "¡Esta! Sabouraud 28 y sangre 37, la correcta.",
+                    "Ese no crece en NNN."
+                ],
+                "gato": [
+                    "Fijate: no crece ahí.",
+                    "Dato curioso: no crece ahí.",
+                    "¡Ronroneo de aprobación! Sabouraud y sangre.",
+                    "Miau, no crece ahí."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -6883,7 +7203,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Nocardia brasiliensis, um bacilo filamentosos aeróbico gram-positivo que causa infecções cutâneas crônicas, como nocardiose, sem necrose rápida. As opções A, C e D (Streptococcus pyogenes, Staphylococcus aureus e Clostridium perfringens) são agentes clássicos de infecções necrotizantes, produzindo toxinas que levam à rápida destruição tecidual. Portanto, Nocardia brasiliensis não é típica em infecções necrotizantes de pele e partes moles, justificando sua exclusão."
+            "feedback": "Resposta correta: B. Nocardia brasiliensis, um bacilo filamentosos aeróbico gram-positivo que causa infecções cutâneas crônicas, como nocardiose, sem necrose rápida. As opções A, C e D (Streptococcus pyogenes, Staphylococcus aureus e Clostridium perfringens) são agentes clássicos de infecções necrotizantes, produzindo toxinas que levam à rápida destruição tecidual. Portanto, Nocardia brasiliensis não é típica em infecções necrotizantes de pele e partes moles, justificando sua exclusão.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pyogenes efectivamente es agente etiológico de infecciones necrotizantes de piel y partes blandas.",
+                    "Nocardia brasiliensis es un bacilo filamentoso aeróbico Gram positivo que causa infecciones cutáneas crónicas (nocardiosis), sin necrosis rápida; no es un agente típico de infecciones necrotizantes — esta es la excepción.",
+                    "Staphylococcus aureus efectivamente es agente etiológico de infecciones necrotizantes de piel y partes blandas.",
+                    "Clostridium perfringens efectivamente es agente etiológico de infecciones necrotizantes de piel y partes blandas."
+                ],
+                "fantasma": [
+                    "Ese sí es de necrosis.",
+                    "¡Esta! Ese es crónico, no de necrosis rápida.",
+                    "Ese sí es de necrosis.",
+                    "Ese sí es de necrosis."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es crónico.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -6909,7 +7249,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. A ingestão de alimentos contaminados com esporas de *Clostridium tetani* não causa tétano, pois o trato gastrointestinal não favorece a germinação das esporas nem a produção da toxina. O tétano ocorre quando as esporas entram em feridas profundas e anaeróbias. As opções A (uso de drogas injetáveis), B (lesões cutâneas crônicas) e D (mordedura de cão) são situações de risco reais, pois criam ambientes propícios para a germinação das esporas e produção da toxina tetanospasmina."
+            "feedback": "Resposta correta: C. A ingestão de alimentos contaminados com esporas de *Clostridium tetani* não causa tétano, pois o trato gastrointestinal não favorece a germinação das esporas nem a produção da toxina. O tétano ocorre quando as esporas entram em feridas profundas e anaeróbias. As opções A (uso de drogas injetáveis), B (lesões cutâneas crônicas) e D (mordedura de cão) são situações de risco reais, pois criam ambientes propícios para a germinação das esporas e produção da toxina tetanospasmina.",
+            "explicacoes": {
+                "robo": [
+                    "El uso de drogas inyectables efectivamente es una situación de riesgo para desarrollar tétanos.",
+                    "Las lesiones cutáneas de larga evolución efectivamente son un factor de riesgo para tétanos.",
+                    "La ingestión de alimentos contaminados con esporas de C. tetani no causa tétanos, ya que el tracto gastrointestinal no favorece la germinación de las esporas ni la producción de toxina; el tétanos requiere que las esporas entren en heridas profundas y anaerobias — esta es la excepción.",
+                    "La mordedura de perro efectivamente es una situación de riesgo real para tétanos."
+                ],
+                "fantasma": [
+                    "Esa sí es de riesgo.",
+                    "Esa sí es de riesgo.",
+                    "¡Esta! Comer eso no da tétanos.",
+                    "Esa sí es de riesgo."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "¡Ronroneo de aprobación! No pasa por comer.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -6935,7 +7295,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Infecções necrotizantes de pele e partes moles são frequentemente polimicrobianas, envolvendo bactérias aeróbias e anaeróbias que agem sinergicamente, aumentando a gravidade e dificultando o tratamento.\n\n**Opção A:** Diagnóstico não é só clínico; exames laboratoriais e de imagem são essenciais.  \n**Opção C:** Essas infecções não apresentam linfangite nodular, típica de outras doenças.  \n**Opção D:** São infecções locais graves, não manifestações secundárias de doenças sistêmicas."
+            "feedback": "**Resposta Correta:** B. Infecções necrotizantes de pele e partes moles são frequentemente polimicrobianas, envolvendo bactérias aeróbias e anaeróbias que agem sinergicamente, aumentando a gravidade e dificultando o tratamento.\n\n**Opção A:** Diagnóstico não é só clínico; exames laboratoriais e de imagem são essenciais.  \n**Opção C:** Essas infecções não apresentam linfangite nodular, típica de outras doenças.  \n**Opção D:** São infecções locais graves, não manifestações secundárias de doenças sistêmicas.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico no es solo clínico; los exámenes de laboratorio y de imagen son esenciales.",
+                    "Las infecciones necrotizantes de piel y partes blandas suelen ser polimicrobianas, involucrando bacterias aerobias y anaerobias que actúan sinérgicamente, aumentando la gravedad — es la respuesta correcta.",
+                    "Estas infecciones no se presentan con síndrome linfangítico nodular, típico de otras enfermedades.",
+                    "Son infecciones locales graves, no manifestaciones secundarias de enfermedades sistémicas."
+                ],
+                "fantasma": [
+                    "No es solo clínico.",
+                    "¡Esta! Más de un microorganismo, la correcta.",
+                    "Eso no pasa acá.",
+                    "No es de otra enfermedad."
+                ],
+                "gato": [
+                    "Fijate: no es solo eso.",
+                    "¡Ronroneo de aprobación! Más de un bicho.",
+                    "Dato curioso: no pasa.",
+                    "Miau, no es de otra."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -6961,7 +7341,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Cladophialophora carrioni não causa micetoma, mas está associada à cromoblastomicose. As outras opções são agentes clássicos do micetoma: B. Fusarium spp (micetoma eumicótico), C. Nocardia spp (micetoma actinomicótico bacteriano) e D. Actinomadura madurae (micetoma bacteriano comum). Portanto, apenas C. carrioni não está relacionada ao micetoma."
+            "feedback": "Resposta correta: A. Cladophialophora carrioni não causa micetoma, mas está associada à cromoblastomicose. As outras opções são agentes clássicos do micetoma: B. Fusarium spp (micetoma eumicótico), C. Nocardia spp (micetoma actinomicótico bacteriano) e D. Actinomadura madurae (micetoma bacteriano comum). Portanto, apenas C. carrioni não está relacionada ao micetoma.",
+            "explicacoes": {
+                "robo": [
+                    "Cladophialophora carrioni no causa micetoma, sino que está asociada a la cromoblastomicosis — esta es la excepción.",
+                    "Fusarium spp efectivamente es un agente etiológico de micetoma eumicótico.",
+                    "Nocardia spp efectivamente es un agente etiológico de micetoma actinomicótico bacteriano.",
+                    "Actinomadura madurae efectivamente es un agente etiológico de micetoma bacteriano común."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese es de cromoblastomicosis, no de micetoma.",
+                    "Ese sí causa micetoma.",
+                    "Ese sí causa micetoma.",
+                    "Ese sí causa micetoma."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de cromoblastomicosis.",
+                    "Fijate: sí causa.",
+                    "Dato curioso: sí causa.",
+                    "Miau, sí causa."
+                ]
+            }
         },
         {
             "numero": 29,
