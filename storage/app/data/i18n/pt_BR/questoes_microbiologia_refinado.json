@@ -16570,7 +16570,27 @@
             "Os genótipos 3 e 4 transmitidos zoonoticamente são encontrados exclusivamente na Ásia.",
             "Pode causar hepatite crônica com potencial para desenvolvimento de cirrose em pacientes imunocompetentes.",
             "A hepatite causada pelos genótipos 1 e 2 pode ocorrer como surtos epidêmicos em regiões com acesso limitado à água potável."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Genótipos 1 e 2 não têm transmissão zoonótica; essa ocorre nos genótipos 3 e 4.",
+                "Genótipos 3 e 4 são zoonóticos e ocorrem globalmente, não só na Ásia.",
+                "Hepatite crônica por VHE ocorre em imunossuprimidos, não em imunocompetentes.",
+                "Os genótipos 1 e 2 do VHE, exclusivos humanos, causam surtos epidêmicos por transmissão fecal-oral em áreas com saneamento precário — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não, esses não vêm de animal.",
+                "Não, esses estão em todo lugar.",
+                "Não, isso é do fraco.",
+                "Essa aí! Esse faz surto onde falta água limpa."
+            ],
+            "gato": [
+                "Fijate: não vêm de animal.",
+                "Dado curioso: estão em todo lugar.",
+                "Miau, é do fraco.",
+                "Ronronado de aprovação! Surto sem água limpa."
+            ]
+        }
     },
     {
         "pergunta": "Para indivíduos que “não respondem” às três doses recomendadas da vacina contra hepatite B, selecione a opção CORRETA:",
@@ -16581,7 +16601,27 @@
             "Administrar uma dose de reforço e realizar triagem de anticorpos após 30 dias para avaliar a resposta.",
             "Administrar novamente um esquema completo da vacina e ao final realizar um teste de detecção de anticorpos.",
             "Administrar uma dose de imunoglobulina contra hepatite B."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Sim é possível tentar induzir resposta imunológica; nem tudo está perdido.",
+                "Uma dose isolada não garante imunidade em não respondedores.",
+                "Para não respondedores à vacina contra hepatite B, recomenda-se repetir o esquema completo (três doses) e depois avaliar os anticorpos — é a resposta correta.",
+                "Imunoglobulina é usada apenas para exposição recente, não para induzir imunidade ativa em não respondedores."
+            ],
+            "fantasma": [
+                "Sim pode tentar de novo.",
+                "Com uma dose não basta.",
+                "Essa aí! Repetir todo o esquema, a correta.",
+                "Essa é só pra exposição recente."
+            ],
+            "gato": [
+                "Fijate: sim pode.",
+                "Dado curioso: não basta.",
+                "Ronronado de aprovação! Repetir tudo.",
+                "Miau, é pra outra coisa."
+            ]
+        }
     },
     {
         "pergunta": "A seguir estão procedimentos úteis para o prognóstico de infecção e monitoramento do tratamento antiviral em um paciente com diagnóstico de infecção pelo vírus da hepatite C, EXCETO:",
@@ -16591,7 +16631,27 @@
             "Determine o título de anticorpos anti-HCV no soro.",
             "Avaliar a carga viral plasmática.",
             "Determine o genótipo viral."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a elastografia avalia a fibrose hepática, importante para prognóstico e acompanhamento.",
+                "Determinar o título de anticorpos anti-VHC em soro indica exposição ao vírus, útil para diagnóstico inicial, mas não para prognóstico ou monitoramento, pois anticorpos persistem mesmo após tratamento — essa é a exceção.",
+                "De fato a carga viral quantifica RNA viral, essencial para monitorar replicação e resposta ao tratamento.",
+                "De fato a genotipagem do VHC orienta escolha e duração do tratamento, influenciando o prognóstico."
+            ],
+            "fantasma": [
+                "Essa está certa, mede a cicatriz.",
+                "Essa aí! Isso fica igual mesmo curando.",
+                "Essa está certa, mede o vírus.",
+                "Essa está certa, diz qual tipo é."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Fica igual.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Interprete os seguintes resultados laboratoriais e indique a opção CORRETA: Anti-HAV IgM: Não reativo; Anti-HBc total: Reativo; IgM Anti-HBc: Não reativo; HBsAg: Reagente; Anti-HBs: Não reagente; anti-HBe: Reativo; Anti-HAV total: Reativo; Anti-HCV total: Reativo.",
@@ -16602,7 +16662,27 @@
             "Vacinado contra hepatite A, hepatite B crônica, provável hepatite C.",
             "Hepatite A resolvida ou vacinada, Hepatite B aguda, Hepatite C crônica.",
             "Hepatite A resolvida ou vacinada, Hepatite B crônica, provável Hepatite C."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não reconhece que a Hepatite A pode ser tanto resolvida quanto por vacinação, e a Hepatite C não está confirmada, apenas provável sem exame molecular.",
+                "Não reconhece que a Hepatite A pode ser tanto resolvida quanto por vacinação.",
+                "Confunde a fase da Hepatite B; o perfil (HBsAg reagente, IgM anti-HBc não reagente) indica infecção crônica, não aguda.",
+                "O paciente apresenta imunidade passada ou vacinal para Hepatite A (Anti-VHA total reagente, IgM negativo), infecção crônica por Hepatite B (HBsAg e Anti-HBc total reagentes, IgM Anti-HBc negativo) e provável infecção por Hepatite C (Anti-VHC reagente, pendente confirmação molecular) — é a resposta correta."
+            ],
+            "fantasma": [
+                "Falta a opção de vacinado, e dá como certa a C.",
+                "Falta a opção de resolvida.",
+                "Confunde, essa B é crônica, não aguda.",
+                "Essa aí! Junta bem as três pistas, a correta."
+            ],
+            "gato": [
+                "Fijate: falta algo.",
+                "Dado curioso: falta algo.",
+                "Miau, confunde a fase.",
+                "Ronronado de aprovação! Junta tudo bem."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de infecção pelo vírus da hepatite B, indique a opção INCORRETA:",
@@ -16613,7 +16693,27 @@
             "A detecção de HBsAg e anti-HBsAg na mesma amostra é muito rara.",
             "O aparecimento de anti-HBe reativo nos estudos de um indivíduo com infecção crônica pelo VHB indica entrada em uma fase de baixa replicação viral.",
             "A infecção persistente por hepatite B é definida pela presença de HBsAg no soro do paciente por mais de 6 meses."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Infecção oculta por VHB apresenta DNA viral no fígado (às vezes no sangue em níveis baixos) sem detecção de HBsAg. Valores elevados de HBsAg com DNA indetectável indicam infecção ativa, não oculta — essa é a opção incorreta.",
+                "De fato a detecção simultânea de HBsAg e anti-HBs na mesma amostra é rara.",
+                "De fato o anti-HBe indica menor replicação viral na infecção crônica.",
+                "De fato a infecção crônica é definida pela persistência de HBsAg por mais de 6 meses."
+            ],
+            "fantasma": [
+                "Essa aí! Isso é ativa, não escondida.",
+                "Essa está certa, é raro ver isso junto.",
+                "Essa está certa, baixa replicação.",
+                "Essa está certa, seis meses."
+            ],
+            "gato": [
+                "Ronronado de aprovação! É ativa.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao procedimento a ser realizado, um enfermeiro com esquema completo para V",
@@ -16624,7 +16724,27 @@
             "Administrar dose de imunoglobulina específica contra HBV e aplicar esquema vacinal completo",
             "Não é necessária a administração de profilaxia pós-exposição, pois o enfermeiro está vacinado e protegido.",
             "Não é necessário administrar profilaxia pós-exposição se a fonte de exposição for um paciente conhecido e não estiver em estágio agudo de infecção pelo VHB."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Administrar apenas uma dose de vacina não garante proteção imediata.",
+                "Embora a profissional tenha esquema vacinal completo, seu título de anti-HBs (5 mUI/ml) está abaixo do nível protetor (≥10 mUI/ml), indicando imunidade insuficiente. Após exposição a VHB, é necessária profilaxia passiva com imunoglobulina para proteção imediata, além da vacina para imunidade ativa — é a resposta correta.",
+                "O título baixo não protege, então sim é necessária a profilaxia.",
+                "Não considera o risco da hepatite B crônica nem a imunidade inadequada do exposto."
+            ],
+            "fantasma": [
+                "Com uma dose só não basta.",
+                "Essa aí! O anticorpo dela está baixo, precisa das duas coisas.",
+                "Não, esse número baixo não protege.",
+                "Não, mesmo assim precisa se cuidar."
+            ],
+            "gato": [
+                "Fijate: não basta.",
+                "Ronronado de aprovação! Anticorpo baixo.",
+                "Dado curioso: não protege.",
+                "Miau, sim precisa."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às medidas adequadas para prevenção da hidatidose, indique a resposta CORRETA:",
@@ -16635,7 +16755,27 @@
             "Evitar que cães do ambiente peridomiciliar rural entrem em contato com excrementos de gado.",
             "Não permita que os cães bebam água da mesma fonte que o gado.",
             "Evite que os cães alimentem carnes cruas de órgãos de gado."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Lavar as mãos é importante, mas não previne hidatidose diretamente.",
+                "Fezes do gado não infectam cães; o mecanismo de transmissão é outro.",
+                "Compartilhar água entre cães e gado não é via significativa de transmissão.",
+                "Evitar que cães consumam vísceras cruas do gado, pois eles são hospedeiros definitivos do Echinococcus granulosus e adquirem o parasita ao ingerir cistos hidáticos — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso ajuda, mas não evita diretamente.",
+                "Não é por aí.",
+                "Não é pela água.",
+                "Essa aí! Não deixar comer a víscera crua, a correta."
+            ],
+            "gato": [
+                "Fijate: não evita direto.",
+                "Dado curioso: não é por aí.",
+                "Miau, não é a água.",
+                "Ronronado de aprovação! Não comer víscera crua."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes associações pode estar relacionada à síndrome mononucleosiforme?",
@@ -16645,7 +16785,27 @@
             "Vírus Epstein-Barr/reativação.",
             "Vírus varicela zoster/reativação em adultos.",
             "Herpes Vírus Humano 6/infecção primária em adultos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Toxoplasma gondii reativa em imunocomprometidos, mas não causa síndrome mononucleosiforme.",
+                "Reativação do EBV é geralmente subclínica e não gera síndrome mononucleosiforme.",
+                "Reativação do VZV em adultos causa herpes zoster, não síndrome mononucleosiforme.",
+                "HHV-6 pode causar síndrome mononucleosiforme na primoinfecção adulta, com febre, linfadenopatia, esplenomegalia e linfocitose atípica, devido à infecção ativa dos linfócitos T — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse reativa, mas não dá isso.",
+                "Esse quase não dá sintoma ao reativar.",
+                "Esse dá cobreiro, não isso.",
+                "Essa aí! A primeira vez de adulto, a correta."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: quase sem sintoma.",
+                "Miau, é outra coisa.",
+                "Ronronado de aprovação! A primeira vez de adulto."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes vírus NÃO é hepatotrópico?",
@@ -16655,7 +16815,27 @@
             "Raiva.",
             "Vírus Epstein-Barr.",
             "Citomegalovírus."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Febre amarela é hepátotropa, causando hepatite grave.",
+                "O vírus da raiva é neurotrópico, infecta o sistema nervoso central e não tem tropismo pelo fígado — é a resposta correta.",
+                "Epstein-Barr pode causar hepatite, apresentando tropismo hepático secundário.",
+                "Citomegalovírus infecta o fígado, especialmente em imunocomprometidos, sendo hepátotropo em certas condições."
+            ],
+            "fantasma": [
+                "Esse sim vai pro fígado.",
+                "Essa aí! Esse vai pro cérebro, não pro fígado.",
+                "Esse também toca o fígado.",
+                "Esse também toca o fígado."
+            ],
+            "gato": [
+                "Fijate: vai pro fígado.",
+                "Ronronado de aprovação! Vai pro cérebro.",
+                "Dado curioso: toca o fígado.",
+                "Miau, toca o fígado."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à epidemiologia e diagnóstico da síndrome mononucleosiforme. Indique a opção INCORRETA:",
@@ -16666,7 +16846,27 @@
             "A mononucleose de etiologia infecciosa é mais comum em adolescentes e adultos jovens",
             "Para o diagnóstico indireto de CMV, pode-se utilizar o método Antigenemia utilizando ELISA ou Shell-vial.",
             "O diagnóstico da síndrome mononucleosiforme por herpesvírus humano tipo 6 (HHV-6) pode ser feito por soroconversão ou teste de avidez de IgG."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato as etiologias podem ser tanto infecciosas quanto não infecciosas.",
+                "De fato a mononucleose de etiologia infecciosa é mais frequente em adolescentes e adultos jovens.",
+                "O teste de Antigenemia para CMV é direto, detectando antígeno viral em leucócitos, não sendo um diagnóstico indireto por ELISA ou Shell-vial — essa é a opção incorreta.",
+                "De fato o diagnóstico do HHV-6 pode ser feito por soroconversão ou teste de avidez de IgG."
+            ],
+            "fantasma": [
+                "Essa está certa, as duas causas.",
+                "Essa está certa, no jovem.",
+                "Essa aí! Isso vê direto o bichinho, não é indireto.",
+                "Essa está certa, com esses testes."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! É direto.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à profilaxia contra o Vírus da Imunodeficiência Humana (HIV), indique a opção CORRETA:",
@@ -16677,7 +16877,27 @@
             "A profilaxia pré-exposição (PrEP) é indicada apenas em pessoas que já vivem com HIV como complemento ao tratamento antirretroviral.",
             "A profilaxia pós-exposição (PEP) deve idealmente ser iniciada nas primeiras 72 horas após a exposição e continuada por 28 dias.",
             "Não existe nenhum regime profilático que impeça a transmissão vertical do VIH durante a gravidez OU o parto."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A PEP não deve esperar confirmação laboratorial; o início imediato é crucial.",
+                "PrEP é para pessoas HIV-negativas em alto risco, não para complementar tratamento em quem já vive com HIV.",
+                "A PEP deve ser iniciada idealmente nas primeiras 72 horas após a exposição, preferencialmente em até 2 horas, e mantida por 28 dias — é a resposta correta.",
+                "Existem protocolos eficazes para prevenir transmissão vertical do HIV."
+            ],
+            "fantasma": [
+                "Não precisa esperar o laboratório.",
+                "Essa é pra quem não tem o vírus.",
+                "Essa aí! As 72 horas e 28 dias, a correta.",
+                "Não, sim tem forma de prevenir isso."
+            ],
+            "gato": [
+                "Fijate: não precisa esperar.",
+                "Dado curioso: é pro são.",
+                "Ronronado de aprovação! 72 horas e 28 dias.",
+                "Miau, sim tem forma."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de mononucleose infecciosa, indique a opção INCORRETA:",
@@ -16688,7 +16908,27 @@
             "Anticorpos IgM anti-VCA indicam IM primária recente.",
             "A presença de linfócitos atípicos é diagnóstica de infecção persistente por EBV.",
             "A presença de IgG anti-EBNA indica IM primária tardia."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a detecção de anticorpos heterófilos (teste Monotest) é uma prova rápida com alta sensibilidade.",
+                "De fato os anticorpos IgM anti-VCA indicam uma MI primária recente.",
+                "Linfócitos atípicos indicam a fase ativa da mononucleose infecciosa (infecção primária recente pelo EBV), não uma infecção persistente. Eles são linfócitos T ativados em resposta ao vírus na fase aguda — essa é a opção incorreta.",
+                "De fato a presença de IgG anti-EBNA indica uma MI primária tardia."
+            ],
+            "fantasma": [
+                "Essa está certa, esse teste rápido.",
+                "Essa está certa, recente.",
+                "Essa aí! Isso é do agudo, não do que fica.",
+                "Essa está certa, tardia."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! É do agudo.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Durante uma consulta médica você deseja investigar o estado sorológico de um paciente quanto à vacinação para os vírus da hepatite A e B (HAV) (HBV), para isso solicita as seguintes determinações. Selecione a opção CORRETA:",
@@ -16699,7 +16939,27 @@
             "Detecção de IgG anti-HAV e anti-HBs.",
             "Detecção de IgG anti-HAV e anti-HBc.",
             "Detecção de anti HAV e anti HBe totais."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "IgM anti-HAV indica infecção recente, não imunidade; anti-HBc total não reflete vacinação.",
+                "A detecção de IgG anti-HAV e anti-HBs avalia adequadamente a imunidade vacinal contra hepatite A e B. IgG anti-HAV indica imunidade por vacinação ou infecção prévia. IgG anti-HBs demonstra imunidade adquirida pela vacina ou resolução da infecção — é a resposta correta.",
+                "Anti-HBc indica infecção passada, não imunidade vacinal.",
+                "Anti-HAV total não diferencia infecção de imunidade; anti-HBe não indica imunidade vacinal."
+            ],
+            "fantasma": [
+                "Isso diz se está infectado agora, não vacinado.",
+                "Essa aí! Essas duas dizem se está protegido.",
+                "Isso diz que já passou, não que está vacinado.",
+                "Isso não distingue bem."
+            ],
+            "gato": [
+                "Fijate: diz infecção, não vacina.",
+                "Ronronado de aprovação! Dizem se está protegido.",
+                "Dado curioso: diz que já passou.",
+                "Miau, não distingue."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de HAV, indique a opção INCORRETA",
@@ -16710,7 +16970,27 @@
             "Nos casos crônicos de hepatite A, a presença de anticorpos IgG anti-HAV é suficiente para confirmar a infecção ativa.",
             "A detecção do RNA viral do HAV no sangue é inadequada.",
             "No contexto de um surto ou em grupos de risco quando o IgM anti-HAV é não reativo, avalia-se o IgG específico."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato o diagnóstico de infecção aguda é feito pela detecção de IgM anti-HAV no soro.",
+                "A presença de IgG anti-HAV indica imunidade prévia, não infecção ativa, pois o HAV não causa infecção crônica — essa é a opção incorreta.",
+                "De fato RNA viral não é usado rotineiramente devido à baixa viremia.",
+                "De fato em surtos ou grupos de risco, quando a IgM anti-HAV é não reagente, avalia-se a IgG específica."
+            ],
+            "fantasma": [
+                "Essa está certa, a aguda com IgM.",
+                "Essa aí! Esse vírus não vira crônico.",
+                "Essa está certa, não se usa.",
+                "Essa está certa, olha a IgG."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Não vira crônico.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à profilaxia contra hepatites virais, indique a opção CORRETA:",
@@ -16721,7 +17001,27 @@
             "O aparecimento de IgG anti-HBc permite avaliar a resposta favorável à vacinação contra a Hepatite B",
             "A hepatite C pode ser eficazmente prevenida através da vacinação com antigénio recombinante administrada na infância.",
             "A hepatite E possui vacina baseada na proteína recombinante do capsídeo, embora só seja aprovada na China."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "HBsAg indica infecção ativa, não proteção; proteção é dada por anticorpos anti-HBs.",
+                "Anti-HBc IgG indica infecção prévia, não vacinação; vacina gera anticorpos anti-HBs.",
+                "Não há vacina aprovada para hepatite C devido à alta variabilidade do vírus.",
+                "A vacina contra hepatite E, baseada em proteína de cápside recombinante, está aprovada principalmente na China e é importante para prevenir a transmissão fecal-oral do vírus em áreas com saneamento precário — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso significa que está infectado, não protegido.",
+                "Isso diz que já passou, não que está vacinado.",
+                "Não, pra esse não tem vacina.",
+                "Essa aí! Essa vacina existe, aprovada na China."
+            ],
+            "gato": [
+                "Fijate: está infectado.",
+                "Dado curioso: já passou.",
+                "Miau, não tem vacina.",
+                "Ronronado de aprovação! Aprovada na China."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo vírus da hepatite E (HEV), indique a opção INCORRETA:",
@@ -16732,7 +17032,27 @@
             "Nos países em desenvolvimento, os surtos são geralmente causados ​​pelos genótipos 1 e 2, com transmissão fecal-oral associada à água contaminada.",
             "A hepatite E apresenta curso exclusivamente agudo.",
             "A infecção pelo HEV pode estar associada a manifestações neurológicas, renais e hematológicas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato em países desenvolvidos os genótipos 3 e 4 se transmitem por via zoonótica, pelo consumo de carne malcozida.",
+                "De fato em países em desenvolvimento os surtos costumam ser causados pelos genótipos 1 e 2, com transmissão fecal-oral associada à água contaminada.",
+                "A hepatite E não tem curso exclusivamente agudo, pois os genótipos 3 e 4 podem causar infecção crônica em imunossuprimidos — essa é a opção incorreta.",
+                "De fato a infecção por VHE pode se associar a manifestações neurológicas, renais e hematológicas."
+            ],
+            "fantasma": [
+                "Essa está certa, pela carne.",
+                "Essa está certa, pela água.",
+                "Essa aí! Esse também vira crônico.",
+                "Essa está certa, ataca outros órgãos."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Também crônico.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às seguintes afirmações sobre vírus hepatotrópicos primários, indique a opção CORRETA:",
@@ -16743,7 +17063,27 @@
             "O teste sustentado de IgG anti-HAV confirma infecção ativa.",
             "O vírus da hepatite B (HBV) possui uma vacina composta por subunidades antigênicas recombinantes.",
             "O vírus da hepatite D (HDV) é capaz de se replicar de forma independente."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Hepatite E pode ter manifestações extrahepáticas, mas são raras.",
+                "IgG anti-VHA indica imunidade passada, não infecção ativa; IgM anti-VHA indica infecção recente.",
+                "A vacina contra hepatite B é recombinante, contendo apenas subunidades do antígeno de superfície (HBsAg) produzidas em leveduras, garantindo segurança e alta imunogenicidade — é a resposta correta.",
+                "Hepatite D depende do vírus B para replicação, não se replica sozinho."
+            ],
+            "fantasma": [
+                "Não, às vezes sim dá outras coisas.",
+                "Não, isso é de imunidade velha.",
+                "Essa aí! Essa vacina é de um pedacinho só.",
+                "Não, precisa do outro vírus."
+            ],
+            "gato": [
+                "Fijate: às vezes sim.",
+                "Dado curioso: é velha.",
+                "Ronronado de aprovação! Um pedacinho só.",
+                "Miau, precisa do outro."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às hepatites crônicas, indique a opção INCORRETA:",
@@ -16754,7 +17094,27 @@
             "A hepatite E pode apresentar curso crônico, em que os sintomas podem se apresentar com síndromes neurológicas e manifestações hematológicas.",
             "A variante HBe Ag-minus do HBV é caracterizada pela ausência de replicação ativa durante a cronicidade.",
             "A hepatite C é caracterizada por alta frequência de cronicidade e pode ser curada com antivirais de ação direta."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato transmissão vertical do VHB favorece cronicidade devido ao sistema imaturo do recém-nascido.",
+                "De fato hepatite E pode evoluir para cronicidade em imunocomprometidos e causar manifestações extra-hepáticas.",
+                "A variante HBeAg-negativa do VHB apresenta replicação viral ativa apesar da ausência do antígeno e, podendo causar dano hepático progressivo — essa é a opção incorreta.",
+                "De fato hepatite C tem alta cronificação, mas é tratável com antivirais de ação direta."
+            ],
+            "fantasma": [
+                "Essa está certa, vira crônico.",
+                "Essa está certa, com esses sintomas raros.",
+                "Essa aí! Ali continua replicando igual.",
+                "Essa está certa, cura com remédio."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Continua replicando.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de hepatites virais, indique a opção INCORRETA:",
@@ -16765,7 +17125,27 @@
             "A hepatite A aguda é diagnosticada pela detecção de IgM anti-HAV no soro.",
             "O diagnóstico de infecção ativa por hepatite C é confirmado pela detecção de RNA viral no soro por RT-PCR.",
             "Na hepatite B, a persistência do antígeno de superfície (HBsAg) por mais de 6 meses indica infecção crônica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O diagnóstico da hepatite E não deve basear-se só na detecção de IgM anti-HEV; é essencial também detectar RNA viral por RT-PCR para confirmar a infecção, especialmente em imunocomprometidos — essa é a opção incorreta.",
+                "De fato a hepatite A aguda é diagnosticada pela detecção de IgM anti-HAV no soro.",
+                "De fato RNA viral por RT-PCR confirma hepatite C ativa.",
+                "De fato persistência do HBsAg por mais de 6 meses indica hepatite B crônica."
+            ],
+            "fantasma": [
+                "Essa aí! Falta também olhar o RNA.",
+                "Essa está certa, com IgM.",
+                "Essa está certa, com RT-PCR.",
+                "Essa está certa, seis meses."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Falta o RNA.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao curso natural da infecção pelo Vírus da Imunodeficiência Humana (HIV), indique a opção INCORRETA:",
@@ -16776,7 +17156,27 @@
             "Após a infecção inicial, desenvolve-se uma fase de latência clínica na qual o. O paciente pode permanecer assintomático por anos.",
             "O estágio da AIDS é diagnosticado pela presença de carga de linfócitos TCD4+ <200/mm3 e/ou presença de doença marcadora.",
             "A fase de latência clínica é caracterizada pela completa ausência de replicação viral e pela persistência de anticorpos específicos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato após a infecção primária pode surgir síndrome retroviral aguda semelhante a síndrome mononucleosiforme.",
+                "De fato após a infecção inicial desenvolve-se fase de latência clínica com anos de curso assintomático.",
+                "De fato o estágio AIDS é diagnosticado por CD4+ <200/mm3 e/ou presença de doença marcadora.",
+                "Na fase de latência clínica do HIV, há replicação viral contínua, embora reduzida, mantendo a infecção ativa e destruindo linfócitos T CD4+. Pacientes podem estar assintomáticos, mas o vírus não está inativo — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, parece mono.",
+                "Essa está certa, se esconde sem sintoma.",
+                "Essa está certa, esses números.",
+                "Essa aí! Ali continua trabalhando o vírus, não para."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Continua trabalhando."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico do Vírus da Imunodeficiência Humana (HIV), indique a opção INCORRETA:",
