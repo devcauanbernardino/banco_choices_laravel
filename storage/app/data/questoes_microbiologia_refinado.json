@@ -11987,7 +11987,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Paciente com quadro respiratório de uma semana.\n\nCultivo para *Mycobacterium tuberculosis* é indicado em casos com sintomas persistentes, alterações radiológicas sugestivas ou em grupos de risco (imunocomprometidos, profissionais de saúde). Opções A, B e C são corretas, pois envolvem situações com maior suspeita clínica ou necessidade de confirmação diagnóstica. Já a opção D está incorreta, pois um quadro respiratório agudo e breve (uma semana) não justifica o cultivo imediato, visto que a tuberculose geralmente apresenta evolução lenta e sintomas prolongados."
+            "feedback": "**Resposta Correta:** D. Paciente com quadro respiratório de uma semana.\n\nCultivo para *Mycobacterium tuberculosis* é indicado em casos com sintomas persistentes, alterações radiológicas sugestivas ou em grupos de risco (imunocomprometidos, profissionais de saúde). Opções A, B e C são corretas, pois envolvem situações com maior suspeita clínica ou necessidade de confirmação diagnóstica. Já a opção D está incorreta, pois um quadro respiratório agudo e breve (uma semana) não justifica o cultivo imediato, visto que a tuberculose geralmente apresenta evolução lenta e sintomas prolongados.",
+            "explicacoes": {
+                "robo": [
+                    "Los pacientes inmunocomprometidos con compromiso pulmonar efectivamente son indicación de cultivo.",
+                    "La radiografía compatible con TBC y baciloscopía negativa efectivamente es indicación de cultivo, para confirmar el diagnóstico.",
+                    "El personal de salud con placa de tórax compatible con TBC efectivamente es indicación de cultivo.",
+                    "Un cuadro respiratorio agudo y breve (una semana) no justifica el cultivo inmediato, ya que la tuberculosis generalmente presenta evolución lenta y síntomas prolongados — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa sí es indicación.",
+                    "Esa sí es indicación.",
+                    "Esa sí es indicación.",
+                    "¡Esta! Una semana es muy poco tiempo para eso."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es.",
+                    "¡Ronroneo de aprobación! Muy poco tiempo."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -12013,7 +12033,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. O esputo não permite diagnóstico etiológico certo em 80% dos casos de pneumonia comunitária.  \n\nEmbora útil, o exame do esputo tem sensibilidade limitada (30-50%) devido à contaminação e dificuldade de identificar o agente.  \n\n**Outras opções corretas:**  \nA: Coletar esputo antes da antibioticoterapia aumenta a chance de isolamento.  \nB: Avaliar a qualidade do esputo (leucócitos >25 e células epiteliais <10 por campo) é essencial.  \nD: Hemoculturas são indicadas em casos graves para auxiliar no diagnóstico."
+            "feedback": "**Resposta Correta:** C. O esputo não permite diagnóstico etiológico certo em 80% dos casos de pneumonia comunitária.  \n\nEmbora útil, o exame do esputo tem sensibilidade limitada (30-50%) devido à contaminação e dificuldade de identificar o agente.  \n\n**Outras opções corretas:**  \nA: Coletar esputo antes da antibioticoterapia aumenta a chance de isolamento.  \nB: Avaliar a qualidade do esputo (leucócitos >25 e células epiteliais <10 por campo) é essencial.  \nD: Hemoculturas são indicadas em casos graves para auxiliar no diagnóstico.",
+            "explicacoes": {
+                "robo": [
+                    "La toma de muestra efectivamente debe obtenerse antes de haber implementado antibioticoterapia.",
+                    "Efectivamente para que la muestra sea representativa deben observarse más de 25 PMN y menos de 10 células epiteliales por campo.",
+                    "El esputo no permite llegar al diagnóstico etiológico de certeza en el 80% de los casos; su sensibilidad es limitada (30-50%) debido a la contaminación y la dificultad de identificar el agente — esta es la opción incorrecta.",
+                    "Efectivamente también se toman muestras para hemocultivos."
+                ],
+                "fantasma": [
+                    "Esa está bien, antes del antibiótico.",
+                    "Esa está bien, ese conteo.",
+                    "¡Esta! No es tan certero, rinde poco.",
+                    "Esa está bien, también hemocultivo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Rinde poco.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -12039,7 +12079,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A coloração de Gram é útil no diagnóstico da angina de Vincent por revelar a associação típica de bactérias anaeróbias, como fusos (Fusobacterium spp.) e espiroquetas (Treponema spp.), caracterizando a estomatite ulcerativa necrosante.\n\n**Outras opções:**  \nA está incorreta, pois a doença não é causada por toxinas bacterianas específicas.  \nB está errada, pois não envolve Corynebacterium diphtheriae, agente da difteria.  \nC é incorreta, pois a angina de Vincent não é altamente contagiosa, ocorrendo em indivíduos predispostos."
+            "feedback": "**Resposta Correta:** D. A coloração de Gram é útil no diagnóstico da angina de Vincent por revelar a associação típica de bactérias anaeróbias, como fusos (Fusobacterium spp.) e espiroquetas (Treponema spp.), caracterizando a estomatite ulcerativa necrosante.\n\n**Outras opções:**  \nA está incorreta, pois a doença não é causada por toxinas bacterianas específicas.  \nB está errada, pois não envolve Corynebacterium diphtheriae, agente da difteria.  \nC é incorreta, pois a angina de Vincent não é altamente contagiosa, ocorrendo em indivíduos predispostos.",
+            "explicacoes": {
+                "robo": [
+                    "La angina de Vincent no se debe a toxinas bacterianas específicas, por lo que su detección no aplica.",
+                    "No involucra a Corynebacterium diphtheriae, agente de la difteria.",
+                    "La angina de Vincent no es altamente contagiosa, ocurriendo en individuos predispuestos.",
+                    "La tinción de Gram efectivamente tiene valor diagnóstico en la angina de Vincent, al revelar la asociación típica de fusiformes (Fusobacterium spp) y espiroquetas (Treponema spp), característica de la estomatitis ulcerativa necrosante — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No hay toxina así.",
+                    "No es del difterico.",
+                    "No es tan contagiosa.",
+                    "¡Esta! El Gram muestra el fuso y la espiroqueta."
+                ],
+                "gato": [
+                    "Fijate: no hay toxina.",
+                    "Dato curioso: no es del difterico.",
+                    "Miau, no es tan contagiosa.",
+                    "¡Ronroneo de aprobación! El Gram muestra el fuso."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -12065,7 +12125,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Fibrose cística / Pseudomonas aeruginosa. Essa bactéria coloniza pulmões de pacientes com fibrose cística, causando infecções recorrentes.  \nOpções incorretas:  \nB. Trabalho em veterinária não é fator de risco para Mycoplasma pneumoniae, transmitida por pessoa a pessoa.  \nC. Exposição a aves não está associada a S. pneumoniae, mas a Chlamydophila psittaci.  \nD. Contato com águas estagnadas relaciona-se a Legionella, não a S. aureus."
+            "feedback": "Resposta correta: A. Fibrose cística / Pseudomonas aeruginosa. Essa bactéria coloniza pulmões de pacientes com fibrose cística, causando infecções recorrentes.  \nOpções incorretas:  \nB. Trabalho em veterinária não é fator de risco para Mycoplasma pneumoniae, transmitida por pessoa a pessoa.  \nC. Exposição a aves não está associada a S. pneumoniae, mas a Chlamydophila psittaci.  \nD. Contato com águas estagnadas relaciona-se a Legionella, não a S. aureus.",
+            "explicacoes": {
+                "robo": [
+                    "La fibrosis quística efectivamente se asocia a Pseudomonas aeruginosa, que coloniza los pulmones de estos pacientes causando infecciones recurrentes — es la respuesta correcta.",
+                    "El trabajo en veterinaria no es factor de riesgo para Mycoplasma pneumoniae, que se transmite de persona a persona.",
+                    "La exposición a aves no se asocia a S. pneumoniae, sino a Chlamydophila psittaci.",
+                    "El contacto con aguas estancadas se relaciona con Legionella, no con S. aureus."
+                ],
+                "fantasma": [
+                    "¡Esta! Fibrosis con la Pseudomona, la correcta.",
+                    "Ese no es factor de riesgo así.",
+                    "Eso es de otro bicho, no del neumococo.",
+                    "Eso es de Legionella, no de aureus."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La Pseudomona.",
+                    "Fijate: no es así.",
+                    "Dato curioso: es otro bicho.",
+                    "Miau, es Legionella."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -12091,7 +12171,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Hisopado superficial das lesões cutâneas é inadequado para micoses sistêmicas, pois coleta apenas fungos superficiais, não refletindo a infecção profunda.  \n\nAs outras opções são válidas:  \nA. Escarificação obtém material do tecido infectado, captando o agente causador.  \nB. Esputo é útil em micoses respiratórias, identificando o fungo na via aérea.  \nC. Hemocultivos detectam fungos na corrente sanguínea em infecções disseminadas.  \n\nPortanto, amostras que envolvem tecido ou fluidos estéreis são mais confiáveis para diagnóstico dessas micoses."
+            "feedback": "Resposta correta: D. Hisopado superficial das lesões cutâneas é inadequado para micoses sistêmicas, pois coleta apenas fungos superficiais, não refletindo a infecção profunda.  \n\nAs outras opções são válidas:  \nA. Escarificação obtém material do tecido infectado, captando o agente causador.  \nB. Esputo é útil em micoses respiratórias, identificando o fungo na via aérea.  \nC. Hemocultivos detectam fungos na corrente sanguínea em infecções disseminadas.  \n\nPortanto, amostras que envolvem tecido ou fluidos estéreis são mais confiáveis para diagnóstico dessas micoses.",
+            "explicacoes": {
+                "robo": [
+                    "La escarificación de las lesiones cutáneas efectivamente obtiene material del tejido infectado, captando el agente causal.",
+                    "El esputo efectivamente es útil en micosis respiratorias, identificando el hongo en la vía aérea.",
+                    "Los hemocultivos efectivamente detectan hongos en la sangre en infecciones diseminadas.",
+                    "El hisopado superficial de las lesiones cutáneas es inadecuado para micosis sistémicas, ya que recolecta solo hongos superficiales, sin reflejar la infección profunda — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa sí sirve, la escarificación.",
+                    "Esa sí sirve, el esputo.",
+                    "Esa sí sirve, hemocultivo.",
+                    "¡Esta! Ese hisopado no sirve, es superficial."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve.",
+                    "¡Ronroneo de aprobación! No sirve, superficial."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -12117,7 +12217,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A procedência do paciente não é fator determinante na suspeita de nocardiose, pois Nocardia spp. é saprófita amplamente distribuída no solo, água e matéria orgânica, podendo infectar em qualquer região.\n\n**Outras opções:**  \nA está correta ao associar nocardiose pulmonar a lesões cavitadas em imunocomprometidos.  \nB destaca a coloração de Kinyoun para identificar Nocardia, devido à sua resistência parcial ao álcool ácido.  \nC aponta a síndrome linfangítica nodular em imunocompetentes, típica da nocardiose cutânea.  \nAssim, A, B e C são verdadeiras; D é incor"
+            "feedback": "**Resposta Correta:** D. A procedência do paciente não é fator determinante na suspeita de nocardiose, pois Nocardia spp. é saprófita amplamente distribuída no solo, água e matéria orgânica, podendo infectar em qualquer região.\n\n**Outras opções:**  \nA está correta ao associar nocardiose pulmonar a lesões cavitadas em imunocomprometidos.  \nB destaca a coloração de Kinyoun para identificar Nocardia, devido à sua resistência parcial ao álcool ácido.  \nC aponta a síndrome linfangítica nodular em imunocompetentes, típica da nocardiose cutânea.  \nAssim, A, B e C são verdadeiras; D é incor",
+            "explicacoes": {
+                "robo": [
+                    "En pacientes inmunocomprometidos efectivamente puede ser causa de neumonía cavitada.",
+                    "Nocardia spp efectivamente es una bacteria filamentosa ácido resistente, siendo útil la tinción de Kinyoun para evidenciarla.",
+                    "Efectivamente causa síndrome linfangítico nodular en pacientes inmunocompetentes.",
+                    "La procedencia del paciente no es un factor determinante en la sospecha de nocardiosis, ya que Nocardia spp es saprófita ampliamente distribuida en suelo, agua y materia orgánica, pudiendo infectar en cualquier región — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, cavitada.",
+                    "Esa está bien, Kinyoun.",
+                    "Esa está bien, linfangitis nodular.",
+                    "¡Esta! No importa de dónde venga."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No importa de dónde."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -12143,7 +12263,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Mycobacterium bovis tem como reservatório o gado bovino.\n\nM. bovis, bacilo ácido-resistente, causa tuberculose em bovinos e transmite-se a humanos por leite não pasteurizado ou contato direto. \n\n**Outras opções incorretas:**  \nA) Histoplasma capsulatum não transmite entre humanos, infecção ocorre por inalação de esporos ambientais.  \nB) Coccidioides posadasii também infecta por inalação ambiental, sem transmissão interpessoal.  \nD) Nocardia não é transmitida entre pessoas, infecção ocorre por contato ambiental.  \n\nSomente C está correta quanto ao reservatório e transmissão."
+            "feedback": "**Resposta Correta:** C. Mycobacterium bovis tem como reservatório o gado bovino.\n\nM. bovis, bacilo ácido-resistente, causa tuberculose em bovinos e transmite-se a humanos por leite não pasteurizado ou contato direto. \n\n**Outras opções incorretas:**  \nA) Histoplasma capsulatum não transmite entre humanos, infecção ocorre por inalação de esporos ambientais.  \nB) Coccidioides posadasii também infecta por inalação ambiental, sem transmissão interpessoal.  \nD) Nocardia não é transmitida entre pessoas, infecção ocorre por contato ambiental.  \n\nSomente C está correta quanto ao reservatório e transmissão.",
+            "explicacoes": {
+                "robo": [
+                    "Histoplasma capsulatum no se transmite entre humanos; la infección ocurre por inhalación de esporas ambientales.",
+                    "Coccidioides posadasii también infecta por inhalación ambiental, sin transmisión interpersonal.",
+                    "Mycobacterium bovis tiene como reservorio al ganado bovino; el bacilo ácido resistente causa tuberculosis en bovinos y se transmite a humanos por leche no pasteurizada o contacto directo — es la respuesta correcta.",
+                    "Nocardia no se transmite entre personas; la infección ocurre por contacto ambiental."
+                ],
+                "fantasma": [
+                    "No se pasa así entre personas.",
+                    "No se pasa así entre personas.",
+                    "¡Esta! El bovino, el reservorio correcto.",
+                    "No se pasa así entre personas."
+                ],
+                "gato": [
+                    "Fijate: no es así.",
+                    "Dato curioso: no es así.",
+                    "¡Ronroneo de aprobación! El ganado bovino.",
+                    "Miau, no es así."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -12169,7 +12309,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A coloração Ziehl-Neelsen e o cultivo em Lowenstein-Jensen a 37 °C são essenciais para identificar *Mycobacterium tuberculosis*, agente da tuberculose pulmonar, devido à sua parede rica em ácidos micólicos e crescimento lento característico.\n\n**Outras opções:**  \nA) *Streptococcus pneumoniae* causa pneumonia aguda; agar sangue não investiga doenças respiratórias crônicas.  \nB) Tinta chinesa detecta *Cryptococcus neoformans*, não *Pneumocystis jirovecii*, que requer coloração de prata; hemocultivo não é adequado.  \nD) *Streptococcus pyogenes*"
+            "feedback": "**Resposta Correta:** C. A coloração Ziehl-Neelsen e o cultivo em Lowenstein-Jensen a 37 °C são essenciais para identificar *Mycobacterium tuberculosis*, agente da tuberculose pulmonar, devido à sua parede rica em ácidos micólicos e crescimento lento característico.\n\n**Outras opções:**  \nA) *Streptococcus pneumoniae* causa pneumonia aguda; agar sangue não investiga doenças respiratórias crônicas.  \nB) Tinta chinesa detecta *Cryptococcus neoformans*, não *Pneumocystis jirovecii*, que requer coloração de prata; hemocultivo não é adequado.  \nD) *Streptococcus pyogenes*",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pneumoniae causa neumonía aguda; el agar sangre no investiga enfermedades respiratorias crónicas como esta.",
+                    "La tinta china detecta Cryptococcus neoformans, no Pneumocystis jirovecii, que requiere tinción de plata; el hemocultivo no es adecuado.",
+                    "La tinción de Ziehl-Neelsen y la siembra en agar Löwenstein-Jensen a 37°C son esenciales para identificar Mycobacterium tuberculosis, agente de la tuberculosis pulmonar, debido a su pared rica en ácidos micólicos y crecimiento lento característico — es la respuesta correcta.",
+                    "Streptococcus pyogenes no es el agente sospechado en una afección respiratoria crónica; el agar sangre no es el estudio indicado aquí."
+                ],
+                "fantasma": [
+                    "Ese es de neumonía aguda, no crónica.",
+                    "Esa tinta es de otro hongo.",
+                    "¡Esta! Ziehl-Neelsen y Lowenstein, la TBC.",
+                    "Ese no es el sospechoso acá."
+                ],
+                "gato": [
+                    "Fijate: es agudo.",
+                    "Dato curioso: es otro hongo.",
+                    "¡Ronroneo de aprobación! Ziehl-Neelsen y Lowenstein.",
+                    "Miau, no es el sospechoso."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -12195,7 +12355,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A rinosinusite crônica (>4 semanas) pode ser causada por bactérias, especialmente *Staphylococcus aureus*, que forma biofilmes e resiste a antibióticos, dificultando o tratamento.\n\n**Outras opções:**  \nA) Rinovírus causa rinosinusite aguda viral, autolimitada em até 2 semanas, não crônica.  \nB) Infecções fúngicas por fungos cenocíticos são raras e ocorrem em imunocomprometidos; em imunocompetentes, fungos septados são mais comuns.  \nD) Sobreinfecção viral após bacteriana é incomum; infecções virais geralmente preced"
+            "feedback": "**Resposta Correta:** C. A rinosinusite crônica (>4 semanas) pode ser causada por bactérias, especialmente *Staphylococcus aureus*, que forma biofilmes e resiste a antibióticos, dificultando o tratamento.\n\n**Outras opções:**  \nA) Rinovírus causa rinosinusite aguda viral, autolimitada em até 2 semanas, não crônica.  \nB) Infecções fúngicas por fungos cenocíticos são raras e ocorrem em imunocomprometidos; em imunocompetentes, fungos septados são mais comuns.  \nD) Sobreinfecção viral após bacteriana é incomum; infecções virais geralmente preced",
+            "explicacoes": {
+                "robo": [
+                    "El rinovirus causa rinosinusitis viral aguda, autolimitada en hasta 2 semanas, no crónica.",
+                    "Las infecciones fúngicas por hongos cenocíticos son raras y ocurren en inmunocomprometidos; en inmunocompetentes predominan los hongos septados.",
+                    "La rinosinusitis crónica (>4 semanas) puede ser causada por bacterias, especialmente Staphylococcus aureus, que forma biofilms y resiste antibióticos, dificultando el tratamiento — es la respuesta correcta.",
+                    "La sobreinfección viral tras la bacteriana es poco común; las infecciones virales generalmente preceden a las bacterianas, no al revés."
+                ],
+                "fantasma": [
+                    "Eso dura poco, no 6 semanas.",
+                    "Eso es raro, es de inmunocomprometido.",
+                    "¡Esta! El aureus con biofilm, la crónica.",
+                    "Al revés, el virus va primero."
+                ],
+                "gato": [
+                    "Fijate: dura poco.",
+                    "Dato curioso: es raro.",
+                    "¡Ronroneo de aprobación! El aureus con biofilm.",
+                    "Miau, es al revés."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -12221,7 +12401,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta porque o esputo, embora comum no diagnóstico de pneumonia, tem sensibilidade variável devido à contaminação por flora orofaríngea e à dificuldade de cultivo de bactérias atípicas como Legionella, Mycoplasma e Chlamydophila. Técnicas como PCR, sorologia ou amostras broncoalveolares são mais precisas.  \n\n**Outras opções:**  \nA, C e D estão corretas: A identifica vírus respiratórios comuns; C usa soroconversão para agentes atípicos; D reconhece que hemoculturas têm baixa sensibilidade, mas são úteis em casos graves."
+            "feedback": "**Resposta Correta:** B está incorreta porque o esputo, embora comum no diagnóstico de pneumonia, tem sensibilidade variável devido à contaminação por flora orofaríngea e à dificuldade de cultivo de bactérias atípicas como Legionella, Mycoplasma e Chlamydophila. Técnicas como PCR, sorologia ou amostras broncoalveolares são mais precisas.  \n\n**Outras opções:**  \nA, C e D estão corretas: A identifica vírus respiratórios comuns; C usa soroconversão para agentes atípicos; D reconhece que hemoculturas têm baixa sensibilidade, mas são úteis em casos graves.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente entre los agentes virales responsables se encuentran influenza, adenovirus, coronavirus y parainfluenza.",
+                    "El esputo, aunque común en el diagnóstico, tiene sensibilidad variable debido a la contaminación por flora orofaríngea y la dificultad de cultivar bacterias atípicas como Legionella, Mycoplasma y Chlamydophila — esta es la opción incorrecta.",
+                    "Efectivamente ante sospecha de Chlamydophila o Mycoplasma se realiza búsqueda de anticuerpos y seroconversión.",
+                    "Efectivamente los hemocultivos son útiles en internados, aunque tienen baja sensibilidad."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos virus.",
+                    "¡Esta! El esputo no es tan sensible.",
+                    "Esa está bien, anticuerpos.",
+                    "Esa está bien, baja sensibilidad."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No es tan sensible.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -12247,7 +12447,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A punção-aspiração dos seios paranasais após falha do tratamento empírico é o método mais confiável para diagnosticar sinusite bacteriana, pois obtém material direto dos seios, evitando contaminação e permitindo identificação precisa do agente.\n\n**Outras opções:**  \nB) O hisopado nasal é pouco específico, pois pode conter vírus e flora normal.  \nC) O aspirado das fossas nasais não acessa os seios e pode estar contaminado.  \nD) A congelação é para preservação, não diagnóstico, e a sinusite viral é autolimitada."
+            "feedback": "**Resposta Correta:** A punção-aspiração dos seios paranasais após falha do tratamento empírico é o método mais confiável para diagnosticar sinusite bacteriana, pois obtém material direto dos seios, evitando contaminação e permitindo identificação precisa do agente.\n\n**Outras opções:**  \nB) O hisopado nasal é pouco específico, pois pode conter vírus e flora normal.  \nC) O aspirado das fossas nasais não acessa os seios e pode estar contaminado.  \nD) A congelação é para preservação, não diagnóstico, e a sinusite viral é autolimitada.",
+            "explicacoes": {
+                "robo": [
+                    "La punción-aspiración de los senos paranasales tras el fracaso del tratamiento empírico es el método más confiable para diagnosticar sinusitis bacteriana, ya que obtiene material directo de los senos, evitando contaminación y permitiendo identificar con precisión el agente — es la respuesta correcta.",
+                    "El hisopado nasal es poco específico, ya que puede contener virus y flora normal.",
+                    "El aspirado de las fosas nasales no accede a los senos y puede estar contaminado.",
+                    "La congelación es para preservación, no diagnóstico, y la sinusitis viral es autolimitada."
+                ],
+                "fantasma": [
+                    "¡Esta! Punción de los senos, la confiable.",
+                    "Eso tiene mucha flora normal.",
+                    "Eso no llega al seno.",
+                    "Eso es solo para guardar, no diagnostica."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Punción de los senos.",
+                    "Fijate: mucha flora.",
+                    "Dato curioso: no llega.",
+                    "Miau, no diagnostica."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -12273,7 +12493,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A gravidade da infecção por Influenza depende de múltiplos fatores, como resposta imune, comorbidades e infecções secundárias, não apenas do dano viral direto.\n\n**Outras opções:**  \nA está correta: vacinas trivalentes com hemaglutininas inativadas previnem a gripe.  \nB está correta: Influenza pode levar a infecções bacterianas secundárias graves.  \nD está correta: o drift antigênico causa mutações que exigem atualização das vacinas."
+            "feedback": "**Resposta Correta:** C. A gravidade da infecção por Influenza depende de múltiplos fatores, como resposta imune, comorbidades e infecções secundárias, não apenas do dano viral direto.\n\n**Outras opções:**  \nA está correta: vacinas trivalentes com hemaglutininas inativadas previnem a gripe.  \nB está correta: Influenza pode levar a infecções bacterianas secundárias graves.  \nD está correta: o drift antigênico causa mutações que exigem atualização das vacinas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente existe una vacuna trivalente con proteínas de virus inactivado para generar inmunidad.",
+                    "Efectivamente es una infección prevalente globalmente que puede predisponer a infecciones bacterianas con secuelas potenciales.",
+                    "La severidad del cuadro clínico depende de múltiples factores, como la respuesta inmune, comorbilidades e infecciones secundarias, no exclusivamente del daño directo del virus — esta es la opción incorrecta.",
+                    "Efectivamente los mecanismos de drift antigénico obligan a actualizar periódicamente la vacuna antigripal."
+                ],
+                "fantasma": [
+                    "Esa está bien, la trivalente.",
+                    "Esa está bien, predispone a bacteria.",
+                    "¡Esta! No es solo del virus, hay más factores.",
+                    "Esa está bien, hay que actualizar."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Hay más factores.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -12299,7 +12539,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Um teste rápido positivo para antígenos de *Streptococcus pyogenes* não precisa ser confirmado por cultura devido à alta especificidade do teste. A cultura é indicada apenas para confirmar resultados negativos, pois o teste rápido pode gerar falsos negativos. A opção A está correta ao indicar o swab faríngeo como amostra padrão. B destaca a sensibilidade do teste rápido (80-90%), justificando a cultura em casos negativos suspeitos. C explica que febre reumática e glomerulonefrite são complicações imunológicas, não supurativas. A única incorreta é D."
+            "feedback": "Resposta correta: D. Um teste rápido positivo para antígenos de *Streptococcus pyogenes* não precisa ser confirmado por cultura devido à alta especificidade do teste. A cultura é indicada apenas para confirmar resultados negativos, pois o teste rápido pode gerar falsos negativos. A opção A está correta ao indicar o swab faríngeo como amostra padrão. B destaca a sensibilidade do teste rápido (80-90%), justificando a cultura em casos negativos suspeitos. C explica que febre reumática e glomerulonefrite são complicações imunológicas, não supurativas. A única incorreta é D.",
+            "explicacoes": {
+                "robo": [
+                    "Para su diagnóstico efectivamente la muestra de elección es el hisopado de fauces.",
+                    "Efectivamente el valor de sensibilidad de los tests rápidos oscila entre el 80 y 90%.",
+                    "Efectivamente la fiebre reumática y la glomerulonefritis son complicaciones no supurativas de esta faringitis.",
+                    "Un resultado positivo en el test rápido de antígenos NO necesita confirmarse por cultivo, debido a su alta especificidad; el cultivo se indica solo para confirmar resultados negativos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, ese hisopado.",
+                    "Esa está bien, ese porcentaje.",
+                    "Esa está bien, esas complicaciones.",
+                    "¡Esta! El positivo no necesita más confirmación."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No necesita más confirmación."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -12325,7 +12585,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A imunofluorescência com anticorpos monoclonais em aspirado nasofaríngeo identifica rapidamente sete vírus respiratórios com alta sensibilidade.\n\n**Resumo:** A bronquiolite em lactentes é geralmente causada pelo vírus respiratório sincicial (RSV). A imunofluorescência é o método rápido, sensível e prático para diagnóstico simultâneo de RSV e outros vírus, facilitando o manejo clínico. Cultivo viral (A) é demorado; cepillado traqueal (B) é invasivo e desnecessário; sorologia (D) não diferencia infecção ativa e é lenta. Portanto, a imunofluorescência é a técnica mais"
+            "feedback": "**Resposta Correta:** C. A imunofluorescência com anticorpos monoclonais em aspirado nasofaríngeo identifica rapidamente sete vírus respiratórios com alta sensibilidade.\n\n**Resumo:** A bronquiolite em lactentes é geralmente causada pelo vírus respiratório sincicial (RSV). A imunofluorescência é o método rápido, sensível e prático para diagnóstico simultâneo de RSV e outros vírus, facilitando o manejo clínico. Cultivo viral (A) é demorado; cepillado traqueal (B) é invasivo e desnecessário; sorologia (D) não diferencia infecção ativa e é lenta. Portanto, a imunofluorescência é a técnica mais",
+            "explicacoes": {
+                "robo": [
+                    "El aislamiento viral en cultivo celular es lento, no siendo la técnica de elección para el diagnóstico rápido.",
+                    "La detección en cepillado traqueal es invasiva e innecesaria para este diagnóstico.",
+                    "La inmunofluorescencia con anticuerpos monoclonales en aspirado nasofaríngeo identifica rápidamente siete virus respiratorios con alta sensibilidad, siendo el método rápido y práctico para el diagnóstico simultáneo — es la respuesta correcta.",
+                    "La serología no diferencia infección activa y es lenta, no siendo el método de elección."
+                ],
+                "fantasma": [
+                    "Eso es lento, no es la de elección.",
+                    "Eso es invasivo de más.",
+                    "¡Esta! Inmunofluorescencia con siete virus, la correcta.",
+                    "Eso es lento, no distingue lo activo."
+                ],
+                "gato": [
+                    "Fijate: es lento.",
+                    "Dato curioso: es invasivo.",
+                    "¡Ronroneo de aprobación! Siete virus juntos.",
+                    "Miau, es lento."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -12351,7 +12631,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Testes rápidos de antígeno para SARS-CoV-2 podem ser negativos enquanto a RT-PCR é positiva, pois a RT-PCR é mais sensível e detecta cargas virais baixas.\n\n**Outras opções:**  \nB. Cultura de escarro tem baixa sensibilidade para pneumonia associada à ventilação mecânica devido à contaminação e biofilmes; culturas quantitativas e métodos moleculares são preferíveis.  \nC. Contato com aves é risco para psitacose (Chlamydia psittaci), não para Leptospira interrogans, que é transmitida por água ou solo contaminado.  \nD. Drogadicção endovenosa aumenta risco para pneumonias por"
+            "feedback": "**Resposta Correta:** A. Testes rápidos de antígeno para SARS-CoV-2 podem ser negativos enquanto a RT-PCR é positiva, pois a RT-PCR é mais sensível e detecta cargas virais baixas.\n\n**Outras opções:**  \nB. Cultura de escarro tem baixa sensibilidade para pneumonia associada à ventilação mecânica devido à contaminação e biofilmes; culturas quantitativas e métodos moleculares são preferíveis.  \nC. Contato com aves é risco para psitacose (Chlamydia psittaci), não para Leptospira interrogans, que é transmitida por água ou solo contaminado.  \nD. Drogadicção endovenosa aumenta risco para pneumonias por",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en un hisopado nasofaríngeo para SARS-CoV-2, la detección rápida de antígenos puede ser negativa mientras la RT-PCR es positiva, ya que esta última es más sensible y detecta cargas virales bajas — es la respuesta correcta.",
+                    "El cultivo de esputo tiene baja sensibilidad para neumonía asociada a ventilación mecánica debido a la contaminación y biofilms; se prefieren cultivos cuantitativos y métodos moleculares.",
+                    "El contacto con aves es factor de riesgo para psitacosis (Chlamydia psittaci), no para Leptospira interrogans, que se transmite por agua o suelo contaminado.",
+                    "El riesgo de neumonía por drogadicción endovenosa se asocia principalmente a Staphylococcus aureus vía émbolos sépticos, no a bacterias anaerobias, que se relacionan más con aspiración."
+                ],
+                "fantasma": [
+                    "¡Esta! El PCR es más sensible, puede dar positivo igual.",
+                    "Ese cultivo rinde poco ahí.",
+                    "El ave es de otra bacteria, no de Leptospira.",
+                    "Eso es más del aureus, no del anaerobio."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El PCR es más sensible.",
+                    "Fijate: rinde poco.",
+                    "Dato curioso: es otra bacteria.",
+                    "Miau, es del aureus."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -12377,7 +12677,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. O diagnóstico de pneumonia adquirida na comunidade em adultos jovens e imunocompetentes é clínico-radiológico, baseado em sinais, sintomas e radiografia, sem necessidade inicial de identificação microbiológica.\n\n**Outras opções:**  \nA) Tuberculose não é infecção hospitalar típica; infecções hospitalares comuns envolvem MRSA e Pseudomonas.  \nC) Enterococcus faecalis raramente causa pneumonia comunitária, predominando em infecções hospitalares.  \nD) Colonização por Streptococcus pneumoniae é mais frequente e persistente em crianças que em adultos."
+            "feedback": "**Resposta Correta:** B. O diagnóstico de pneumonia adquirida na comunidade em adultos jovens e imunocompetentes é clínico-radiológico, baseado em sinais, sintomas e radiografia, sem necessidade inicial de identificação microbiológica.\n\n**Outras opções:**  \nA) Tuberculose não é infecção hospitalar típica; infecções hospitalares comuns envolvem MRSA e Pseudomonas.  \nC) Enterococcus faecalis raramente causa pneumonia comunitária, predominando em infecções hospitalares.  \nD) Colonização por Streptococcus pneumoniae é mais frequente e persistente em crianças que em adultos.",
+            "explicacoes": {
+                "robo": [
+                    "La tuberculosis no es una infección hospitalaria típica; las infecciones hospitalarias comunes involucran SARM y Pseudomonas.",
+                    "El diagnóstico de neumonía aguda de la comunidad en un adulto menor de 65 años, inmunocompetente y sin factores de riesgo efectivamente es clínico-radiológico, sin necesidad inicial de identificación microbiológica — es la respuesta correcta.",
+                    "Enterococcus faecalis raramente causa neumonía comunitaria, predominando en infecciones hospitalarias.",
+                    "La colonización por Streptococcus pneumoniae es más frecuente y persistente en niños que en adultos."
+                ],
+                "fantasma": [
+                    "Esa no es de hospital, es otra bacteria ahí.",
+                    "¡Esta! Clínico y radiológico, la correcta.",
+                    "Ese es raro en la comunidad.",
+                    "Es más de niño, no de adulto."
+                ],
+                "gato": [
+                    "Fijate: es de otra.",
+                    "¡Ronroneo de aprobación! Clínico y radiológico.",
+                    "Dato curioso: es raro.",
+                    "Miau, es más de niño."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -12403,7 +12723,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Rinovírus. O rinovírus causa infecções do trato respiratório superior, como resfriados, mas raramente pneumonia na comunidade.  \n\n**Outras opções:**  \nA. Influenza A é causa comum de pneumonia viral comunitária.  \nB. Streptococcus pneumoniae é o principal agente bacteriano da pneumonia adquirida na comunidade.  \nD. Haemophilus influenzae também é frequente, especialmente em pacientes com doenças pulmonares crônicas.  \n\nPortanto, rinovírus não é um agente típico da pneumonia comunitária, ao contrário dos outros citados."
+            "feedback": "**Resposta Correta:** C. Rinovírus. O rinovírus causa infecções do trato respiratório superior, como resfriados, mas raramente pneumonia na comunidade.  \n\n**Outras opções:**  \nA. Influenza A é causa comum de pneumonia viral comunitária.  \nB. Streptococcus pneumoniae é o principal agente bacteriano da pneumonia adquirida na comunidade.  \nD. Haemophilus influenzae também é frequente, especialmente em pacientes com doenças pulmonares crônicas.  \n\nPortanto, rinovírus não é um agente típico da pneumonia comunitária, ao contrário dos outros citados.",
+            "explicacoes": {
+                "robo": [
+                    "El virus influenza A efectivamente es causa común de neumonía viral comunitaria.",
+                    "Streptococcus pneumoniae efectivamente es el principal agente bacteriano de la neumonía adquirida en la comunidad.",
+                    "El rinovirus causa infecciones del tracto respiratorio superior, como resfriados, pero rara vez neumonía en la comunidad — esta es la excepción.",
+                    "Haemophilus influenzae efectivamente es frecuente, especialmente en pacientes con enfermedades pulmonares crónicas."
+                ],
+                "fantasma": [
+                    "Ese sí es agente de acá.",
+                    "Ese sí es agente de acá.",
+                    "¡Esta! Ese es de resfrío, no de neumonía.",
+                    "Ese sí es agente de acá."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "¡Ronroneo de aprobación! Es de resfrío.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 51,
@@ -12429,7 +12769,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. O diagnóstico do vírus sincicial respiratório em crianças é feito pela detecção de ácidos nucleicos via PCR em aspirado nasofaríngeo, método sensível e específico. Opção A erra ao considerar 10² UFC/mL para pneumonia associada ao ventilador, pois o limiar é 10⁵ UFC/mL. Opção B está incorreta, pois coloração de Gram não diferencia Streptococcus pyogenes; o diagnóstico é por teste rápido ou cultura. Opção D falha ao indicar coloração de Gram para Mycoplasma pneumoniae, que requer métodos sorológicos ou moleculares."
+            "feedback": "Resposta correta: C. O diagnóstico do vírus sincicial respiratório em crianças é feito pela detecção de ácidos nucleicos via PCR em aspirado nasofaríngeo, método sensível e específico. Opção A erra ao considerar 10² UFC/mL para pneumonia associada ao ventilador, pois o limiar é 10⁵ UFC/mL. Opção B está incorreta, pois coloração de Gram não diferencia Streptococcus pyogenes; o diagnóstico é por teste rápido ou cultura. Opção D falha ao indicar coloração de Gram para Mycoplasma pneumoniae, que requer métodos sorológicos ou moleculares.",
+            "explicacoes": {
+                "robo": [
+                    "El recuento válido para un aspirado traqueal en neumonía asociada al ventilador es de 10⁵ UFC/ml, no de 10².",
+                    "El diagnóstico de certeza de faringitis por Streptococcus pyogenes no se realiza por tinción de Gram; se usa test rápido o cultivo.",
+                    "El diagnóstico de virus sincicial respiratorio en niños efectivamente se realiza por detección de ácidos nucleicos vía PCR a partir de una muestra de aspirado nasofaríngeo, método sensible y específico — es la respuesta correcta.",
+                    "El diagnóstico de neumonía por Mycoplasma pneumoniae no se realiza por tinción de Gram, ya que requiere métodos serológicos o moleculares."
+                ],
+                "fantasma": [
+                    "Ese número no es el correcto, es más alto.",
+                    "Eso no se ve con Gram.",
+                    "¡Esta! PCR en aspirado, la correcta.",
+                    "Eso no se ve con Gram."
+                ],
+                "gato": [
+                    "Fijate: es más alto.",
+                    "Dato curioso: no es con Gram.",
+                    "¡Ronroneo de aprobación! PCR en aspirado.",
+                    "Miau, no es con Gram."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -12455,7 +12815,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Um teste rápido negativo não exclui faringite por Streptococcus pyogenes devido à sensibilidade variável (70-90%) e risco de falso-negativo; a cultura da garganta é necessária para confirmação.  \nAs opções A, B e C estão corretas: A) A faringite estreptocócica é menos comum em adultos; B) Transmite-se por secreções respiratórias; C) A coleta do swab deve evitar contaminação da amostra.  \nPortanto, apenas a opção D está incorreta por subestimar a necessidade de confirmação após teste rápido negativo."
+            "feedback": "Resposta correta: D. Um teste rápido negativo não exclui faringite por Streptococcus pyogenes devido à sensibilidade variável (70-90%) e risco de falso-negativo; a cultura da garganta é necessária para confirmação.  \nAs opções A, B e C estão corretas: A) A faringite estreptocócica é menos comum em adultos; B) Transmite-se por secreções respiratórias; C) A coleta do swab deve evitar contaminação da amostra.  \nPortanto, apenas a opção D está incorreta por subestimar a necessidade de confirmação após teste rápido negativo.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la faringitis por Streptococcus pyogenes es menos frecuente en adultos.",
+                    "Efectivamente la faringitis estreptocócica se transmite de persona a persona por secreciones nasales y saliva.",
+                    "Efectivamente el hisopado de fauces debe realizarse con cuidado de no contaminar la muestra con la cavidad bucal.",
+                    "Un test rápido negativo NO descarta la faringitis por Streptococcus pyogenes, debido a su sensibilidad variable (70-90%) y riesgo de falso negativo; se requiere confirmación por cultivo — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, menos en el adulto.",
+                    "Esa está bien, por saliva.",
+                    "Esa está bien, cuidado con la boca.",
+                    "¡Esta! El negativo no descarta solo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No descarta solo."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -12481,7 +12861,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta porque pneumonia intrahospitalar e comunitária têm agentes distintos. Pneumonia comunitária é causada por Streptococcus pneumoniae, Haemophilus influenzae e vírus respiratórios. Pneumonia intrahospitalar envolve microrganismos resistentes como Pseudomonas aeruginosa e MRSA, exigindo tratamentos específicos.  \n\n**Outras opções:**  \nA, B e D estão corretas: infecções virais são comuns em crianças (A); Chlamydia psittaci está ligada à exposição a aves (B); e pacientes com fibrose cística têm infecções pulmonares crônicas por Pseudomonas aeruginosa (D)."
+            "feedback": "**Resposta Correta:** C está incorreta porque pneumonia intrahospitalar e comunitária têm agentes distintos. Pneumonia comunitária é causada por Streptococcus pneumoniae, Haemophilus influenzae e vírus respiratórios. Pneumonia intrahospitalar envolve microrganismos resistentes como Pseudomonas aeruginosa e MRSA, exigindo tratamentos específicos.  \n\n**Outras opções:**  \nA, B e D estão corretas: infecções virais são comuns em crianças (A); Chlamydia psittaci está ligada à exposição a aves (B); e pacientes com fibrose cística têm infecções pulmonares crônicas por Pseudomonas aeruginosa (D).",
+            "explicacoes": {
+                "robo": [
+                    "Las infecciones virales efectivamente constituyen la etiología más frecuente en los niños.",
+                    "La neumonía por Chlamydia psittaci efectivamente es más prevalente en trabajadores avícolas.",
+                    "La neumonía intrahospitalaria y la neumonía de la comunidad tienen agentes distintos; la comunitaria se debe a Streptococcus pneumoniae, Haemophilus influenzae y virus respiratorios, mientras que la intrahospitalaria involucra microorganismos resistentes como Pseudomonas aeruginosa y SARM — esta es la opción incorrecta.",
+                    "Las infecciones por Pseudomonas aeruginosa efectivamente son más frecuentes en pacientes con fibrosis quística."
+                ],
+                "fantasma": [
+                    "Esa está bien, en el niño.",
+                    "Esa está bien, el ave.",
+                    "¡Esta! No son los mismos bichos.",
+                    "Esa está bien, la fibrosis."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No son los mismos.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 54,

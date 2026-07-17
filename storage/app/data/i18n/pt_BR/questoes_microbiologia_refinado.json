@@ -7984,7 +7984,27 @@
             "Paciente com radiografia pulmonar compatível com TB e baciloscopia negativa",
             "Pessoal de saúde com radiografia torácica compatível com TB.",
             "Paciente com sintomas respiratórios há uma semana."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Pacientes imunocomprometidos com comprometimento pulmonar de fato são indicação de cultura.",
+                "A radiografia compatível com TBC e baciloscopia negativa de fato é indicação de cultura, para confirmar o diagnóstico.",
+                "O pessoal de saúde com radiografia de tórax compatível com TBC de fato é indicação de cultura.",
+                "Um quadro respiratório agudo e breve (uma semana) não justifica a cultura imediata, pois a tuberculose geralmente apresenta evolução lenta e sintomas prolongados — essa é a exceção."
+            ],
+            "fantasma": [
+                "Essa sim é indicação.",
+                "Essa sim é indicação.",
+                "Essa sim é indicação.",
+                "Essa aí! Uma semana é muito pouco tempo pra isso."
+            ],
+            "gato": [
+                "Fijate: sim é.",
+                "Dado curioso: sim é.",
+                "Miau, sim é.",
+                "Ronronado de aprovação! Muito pouco tempo."
+            ]
+        }
     },
     {
         "pergunta": "Em referência ao diagnóstico laboratorial de pneumonia comunitária aguda, indicar a opção INCORRETA:",
@@ -7995,7 +8015,27 @@
             "Para que esta amostra seja representativa, mais de 25 leucócitos polimorfonucleares e menos de 10 células epiteliais por campo de 100x devem ser observados ao microscópio.",
             "A expectoração é uma amostra que permite chegar a um diagnóstico etiológico determinado em 80% dos casos de pneumonia aguda na comunidade.",
             "Também são coletadas amostras para hemoculturas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A coleta de amostra de fato deve ser obtida antes de implementada a antibioticoterapia.",
+                "De fato, para que a amostra seja representativa devem ser observados mais de 25 PMN e menos de 10 células epiteliais por campo.",
+                "O escarro não permite chegar ao diagnóstico etiológico de certeza em 80% dos casos; sua sensibilidade é limitada (30-50%) devido à contaminação e à dificuldade de identificar o agente — essa é a opção incorreta.",
+                "De fato também são coletadas amostras para hemocultivos."
+            ],
+            "fantasma": [
+                "Essa está certa, antes do antibiótico.",
+                "Essa está certa, essa contagem.",
+                "Essa aí! Não é tão certeiro, rende pouco.",
+                "Essa está certa, também hemocultivo."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Rende pouco.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à angina de Vincent, indique a opção CORRETA",
@@ -8006,7 +8046,27 @@
             "É devido à exotoxina proteica produzida por C. diphtheriae",
             "É uma doença altamente contagiosa",
             "A coloração de Gram tem certo valor diagnóstico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A angina de Vincent não é causada por toxinas bacterianas específicas, então sua detecção não se aplica.",
+                "Não envolve Corynebacterium diphtheriae, agente da difteria.",
+                "A angina de Vincent não é altamente contagiosa, ocorrendo em indivíduos predispostos.",
+                "A coloração de Gram de fato tem valor diagnóstico na angina de Vincent, ao revelar a associação típica de fusos (Fusobacterium spp) e espiroquetas (Treponema spp), característica da estomatite ulcerativa necrosante — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não tem toxina assim.",
+                "Não é do diftérico.",
+                "Não é tão contagiosa.",
+                "Essa aí! O Gram mostra o fuso e a espiroqueta."
+            ],
+            "gato": [
+                "Fijate: não tem toxina.",
+                "Dado curioso: não é do diftérico.",
+                "Miau, não é tão contagiosa.",
+                "Ronronado de aprovação! O Gram mostra o fuso."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às condições dos possíveis agentes etiológicos das pneumonias agudas na comunidade, indique a opção CORRETA:",
@@ -8017,7 +8077,27 @@
             "Trabalho veterinário / Mycoplasma pneumoniae",
             "Exposição a aves domésticas/S. pneumoniae.",
             "Contato com água estagnada / $. áureo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fibrose cística de fato se associa a Pseudomonas aeruginosa, que coloniza os pulmões desses pacientes causando infecções recorrentes — é a resposta correta.",
+                "O trabalho em veterinária não é fator de risco para Mycoplasma pneumoniae, transmitida de pessoa a pessoa.",
+                "A exposição a aves não se associa a S. pneumoniae, mas a Chlamydophila psittaci.",
+                "O contato com águas estagnadas se relaciona a Legionella, não a S. aureus."
+            ],
+            "fantasma": [
+                "Essa aí! Fibrose com a Pseudomonas, a correta.",
+                "Esse não é fator de risco assim.",
+                "Isso é de outro bicho, não do pneumococo.",
+                "Isso é de Legionella, não de aureus."
+            ],
+            "gato": [
+                "Ronronado de aprovação! A Pseudomonas.",
+                "Fijate: não é assim.",
+                "Dado curioso: é outro bicho.",
+                "Miau, é Legionella."
+            ]
+        }
     },
     {
         "pergunta": "Quando houver suspeita de infecção disseminada por agentes causadores de micoses sistêmicas endêmicas, as seguintes amostras são adequadas para realizar o diagnóstico microbiológico, EXCETO",
@@ -8027,7 +8107,27 @@
             "Escarro.",
             "Hemoculturas.",
             "Swab superficial de lesões cutâneas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A escarificação das lesões cutâneas de fato obtém material do tecido infectado, captando o agente causador.",
+                "O escarro de fato é útil em micoses respiratórias, identificando o fungo na via aérea.",
+                "Os hemocultivos de fato detectam fungos na corrente sanguínea em infecções disseminadas.",
+                "O hisopado superficial das lesões cutâneas é inadequado para micoses sistêmicas, pois coleta apenas fungos superficiais, não refletindo a infecção profunda — essa é a exceção."
+            ],
+            "fantasma": [
+                "Essa sim serve, a escarificação.",
+                "Essa sim serve, o escarro.",
+                "Essa sim serve, hemocultivo.",
+                "Essa aí! Esse hisopado não serve, é superficial."
+            ],
+            "gato": [
+                "Fijate: serve.",
+                "Dado curioso: serve.",
+                "Miau, serve.",
+                "Ronronado de aprovação! Não serve, superficial."
+            ]
+        }
     },
     {
         "pergunta": "Quanto às características de Nocardia spp., indique a opção INCORRETA:",
@@ -8038,7 +8138,27 @@
             "É uma bactéria filamentosa ácido-resistente e a coloração Kinyoun é útil para demonstrá-la a partir de amostras clínicas.",
             "Causa da síndrome linfangítica nodular em pacientes imunocompetentes.",
             "A consideração da história epidemiológica (origem do paciente) é útil na suspeita de nocardiose."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Em pacientes imunocomprometidos de fato pode ser causa de pneumonia cavitada.",
+                "Nocardia spp de fato é uma bactéria filamentosa ácido-resistente, sendo útil a coloração de Kinyoun para evidenciá-la.",
+                "De fato causa síndrome linfangítica nodular em pacientes imunocompetentes.",
+                "A procedência do paciente não é fator determinante na suspeita de nocardiose, pois Nocardia spp é saprófita amplamente distribuída no solo, água e matéria orgânica, podendo infectar em qualquer região — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, cavitada.",
+                "Essa está certa, Kinyoun.",
+                "Essa está certa, linfangite nodular.",
+                "Essa aí! Não importa de onde vem."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Não importa de onde."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao reservatório e às vias de transmissão mais frequentes dos agentes etiológicos produtores dos processos granulomatosos, indique a opção CORRETA:",
@@ -8049,7 +8169,27 @@
             "A transmissão de Coccidioides posadasii ocorre através de gotículas aerossolizadas de pacientes com doença micótica.",
             "O Mycobacterium bovis tem o gado como reservatório.",
             "As espécies patogênicas de Nocardia podem ser transmitidas de pessoa para pessoa."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Histoplasma capsulatum não se transmite entre humanos; a infecção ocorre por inalação de esporos ambientais.",
+                "Coccidioides posadasii também infecta por inalação ambiental, sem transmissão interpessoal.",
+                "Mycobacterium bovis tem como reservatório o gado bovino; o bacilo ácido-resistente causa tuberculose em bovinos e se transmite a humanos por leite não pasteurizado ou contato direto — é a resposta correta.",
+                "Nocardia não é transmitida entre pessoas; a infecção ocorre por contato ambiental."
+            ],
+            "fantasma": [
+                "Não passa assim entre pessoas.",
+                "Não passa assim entre pessoas.",
+                "Essa aí! O boi, o reservatório correto.",
+                "Não passa assim entre pessoas."
+            ],
+            "gato": [
+                "Fijate: não é assim.",
+                "Dado curioso: não é assim.",
+                "Ronronado de aprovação! O gado bovino.",
+                "Miau, não é assim."
+            ]
+        }
     },
     {
         "pergunta": "O laboratório recebe uma amostra de escarro de um paciente com doença respiratória crônica. Indique quais estudos deveriam ter sido incluídos no laboratório para investigação da etiologia.",
@@ -8059,7 +8199,27 @@
             "Coloração com tinta nanquim e hemocultura para confirmar infecção por Pneumocystis jirovecci.",
             "Coloração com Ziehl!-Neelsen e plaqueamento em Ágar Lowenstein-Jensen a 37*C quando há suspeita de tuberculose.",
             "Cultura em ágar sangue para descartar infecção por Streptococcus pyogenes."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Streptococcus pneumoniae causa pneumonia aguda; o ágar sangue não investiga doenças respiratórias crônicas como esta.",
+                "A tinta chinesa detecta Cryptococcus neoformans, não Pneumocystis jirovecii, que requer coloração de prata; o hemocultivo não é adequado.",
+                "A coloração Ziehl-Neelsen e o cultivo em ágar Löwenstein-Jensen a 37 °C são essenciais para identificar Mycobacterium tuberculosis, agente da tuberculose pulmonar, devido à sua parede rica em ácidos micólicos e crescimento lento característico — é a resposta correta.",
+                "Streptococcus pyogenes não é o agente suspeito em uma afecção respiratória crônica; o ágar sangue não é o exame indicado aqui."
+            ],
+            "fantasma": [
+                "Esse é de pneumonia aguda, não crônica.",
+                "Essa tinta é de outro fungo.",
+                "Essa aí! Ziehl-Neelsen e Lowenstein, a TBC.",
+                "Esse não é o suspeito aqui."
+            ],
+            "gato": [
+                "Fijate: é agudo.",
+                "Dado curioso: é outro fungo.",
+                "Ronronado de aprovação! Ziehl-Neelsen e Lowenstein.",
+                "Miau, não é o suspeito."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente apresenta rinossinusite com duração de seis semanas. Em relação à sua suspeita diagnóstica, indique a opção CORRETA:",
@@ -8070,7 +8230,27 @@
             "A causa mais provável é uma infecção fúngica associada a fungos do talo cenocítico.",
             "A infecção pode ser causada por Staphylococcus aureus.",
             "A causa é uma infecção bacteriana complicada por superinfecção viral."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O rinovírus causa rinossinusite viral aguda, autolimitada em até 2 semanas, não crônica.",
+                "Infecções fúngicas por fungos cenocíticos são raras e ocorrem em imunocomprometidos; em imunocompetentes predominam fungos septados.",
+                "A rinossinusite crônica (>4 semanas) pode ser causada por bactérias, especialmente Staphylococcus aureus, que forma biofilmes e resiste a antibióticos, dificultando o tratamento — é a resposta correta.",
+                "A sobreinfecção viral após a bacteriana é incomum; as infecções virais geralmente precedem as bacterianas, não o contrário."
+            ],
+            "fantasma": [
+                "Isso dura pouco, não 6 semanas.",
+                "Isso é raro, é de imunocomprometido.",
+                "Essa aí! O aureus com biofilme, a crônica.",
+                "Ao contrário, o vírus vai primeiro."
+            ],
+            "gato": [
+                "Fijate: dura pouco.",
+                "Dado curioso: é raro.",
+                "Ronronado de aprovação! O aureus com biofilme.",
+                "Miau, é ao contrário."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à pneumonia aguda, indique a opção INCORRETA:",
@@ -8081,7 +8261,27 @@
             "A amostra de escolha é o escarro e posterior cultura por apresentar alta sensibilidade.",
             "Se houver suspeita de infecção por Chlamydophila ou Mycoplasma, é realizada uma pesquisa de anticorpos e soroconversão.",
             "As hemoculturas são úteis em casos de indivíduos hospitalizados, mas apresentam baixa sensibilidade."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato entre os agentes virais responsáveis estão influenza, adenovírus, coronavírus e parainfluenza.",
+                "O escarro, embora comum no diagnóstico, tem sensibilidade variável devido à contaminação por flora orofaríngea e à dificuldade de cultivar bactérias atípicas como Legionella, Mycoplasma e Chlamydophila — essa é a opção incorreta.",
+                "De fato diante de suspeita de Chlamydophila ou Mycoplasma faz-se busca de anticorpos e soroconversão.",
+                "De fato os hemocultivos são úteis em internados, embora tenham baixa sensibilidade."
+            ],
+            "fantasma": [
+                "Essa está certa, esses vírus.",
+                "Essa aí! O escarro não é tão sensível.",
+                "Essa está certa, anticorpos.",
+                "Essa está certa, baixa sensibilidade."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Não é tão sensível.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos procedimentos diagnósticos em sinusites, indique a opção CORRETA:",
@@ -8092,7 +8292,27 @@
             "Swab de secreção nasal em pacientes com menos de 10 dias de evolução;",
             "Obtenção de amostras por aspiração das fossas nasais com pipeta plástica:",
             "Congelamento de amostras para diagnóstico molecular de infecções virais."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A punção-aspiração dos seios paranasais após falha do tratamento empírico é o método mais confiável para diagnosticar sinusite bacteriana, pois obtém material direto dos seios, evitando contaminação e permitindo identificação precisa do agente — é a resposta correta.",
+                "O hisopado nasal é pouco específico, pois pode conter vírus e flora normal.",
+                "O aspirado das fossas nasais não acessa os seios e pode estar contaminado.",
+                "A congelação é para preservação, não diagnóstico, e a sinusite viral é autolimitada."
+            ],
+            "fantasma": [
+                "Essa aí! Punção dos seios, a confiável.",
+                "Isso tem muita flora normal.",
+                "Isso não chega no seio.",
+                "Isso é só pra guardar, não diagnostica."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Punção dos seios.",
+                "Fijate: muita flora.",
+                "Dado curioso: não chega.",
+                "Miau, não diagnostica."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo vírus Influenza, indique a opção INCORRETA:",
@@ -8103,7 +8323,27 @@
             "É uma infecção globalmente prevalente que pode predispor a infecções bacterianas com potenciais sequelas.",
             "A gravidade do quadro clínico é variável e depende exclusivamente do dano direto induzido pelo vírus.",
             "Os chamados mecanismos de deriva antigênica exigem que a vacina contra influenza seja atualizada periodicamente."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato existe uma vacina trivalente com proteínas de vírus inativado para gerar imunidade.",
+                "De fato é uma infecção prevalente globalmente que pode predispor a infecções bacterianas com sequelas potenciais.",
+                "A gravidade do quadro clínico depende de múltiplos fatores, como resposta imune, comorbidades e infecções secundárias, não exclusivamente do dano direto do vírus — essa é a opção incorreta.",
+                "De fato os mecanismos de drift antigênico obrigam a atualizar periodicamente a vacina antigripal."
+            ],
+            "fantasma": [
+                "Essa está certa, a trivalente.",
+                "Essa está certa, predispõe a bactéria.",
+                "Essa aí! Não é só do vírus, tem mais fatores.",
+                "Essa está certa, tem que atualizar."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Tem mais fatores.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de faringite estreptocócica, indique a opção INCORRETA:",
@@ -8114,7 +8354,27 @@
             "O valor de sensibilidade dos testes rápidos para detecção de antígenos varia entre 80 e 90%.",
             "A febre reumática e a glomerulonefrite são duas complicações não supurativas desse tipo de faringite.",
             "O resultado positivo no teste rápido para detecção de antígenos deve ser confirmado através da cultura da amostra."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Para seu diagnóstico de fato a amostra de escolha é o hisopado das fauces.",
+                "De fato o valor de sensibilidade dos testes rápidos varia entre 80 e 90%.",
+                "De fato a febre reumática e a glomerulonefrite são complicações não supurativas dessa faringite.",
+                "Um resultado positivo no teste rápido de antígenos NÃO precisa ser confirmado por cultura, devido à sua alta especificidade; a cultura é indicada apenas para confirmar resultados negativos — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, esse hisopado.",
+                "Essa está certa, essa porcentagem.",
+                "Essa está certa, essas complicações.",
+                "Essa aí! O positivo não precisa de mais confirmação."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Não precisa de mais confirmação."
+            ]
+        }
     },
     {
         "pergunta": "Um bebê de 5 meses, amamentado e previamente saudável, é trazido à clínica por sua mãe com febre e dificuldade respiratória. Bronquiolite é diagnosticada. Em relação ao diagnóstico etiológico desta doença, indique a opção CORRETA",
@@ -8125,7 +8385,27 @@
             "A detecção de partículas virais na escovação traqueal é o método confirmatório da bronquiolite por VSR.",
             "A imunofluorescência com anticorpos monoclonais em aspirado nasofaríngeo permite a identificação simultânea de sete vírus respiratórios com alta sensibilidade.",
             "A sorologia é o método de escolha para confirmar a infecção aguda por VSR e Adenovírus."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O isolamento viral em cultura celular é lento, não sendo a técnica de escolha para diagnóstico rápido.",
+                "A detecção no cepilhado traqueal é invasiva e desnecessária para esse diagnóstico.",
+                "A imunofluorescência com anticorpos monoclonais em aspirado nasofaríngeo identifica rapidamente sete vírus respiratórios com alta sensibilidade, sendo o método rápido e prático para diagnóstico simultâneo — é a resposta correta.",
+                "A sorologia não diferencia infecção ativa e é lenta, não sendo o método de escolha."
+            ],
+            "fantasma": [
+                "Isso é lento, não é a de escolha.",
+                "Isso é invasivo demais.",
+                "Essa aí! Imunofluorescência com sete vírus, a correta.",
+                "Isso é lento, não distingue o ativo."
+            ],
+            "gato": [
+                "Fijate: é lento.",
+                "Dado curioso: é invasivo.",
+                "Ronronado de aprovação! Sete vírus juntos.",
+                "Miau, é lento."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à pneumonia comunitária aguda (PAC), indique a opção CORRETA:",
@@ -8136,7 +8416,27 @@
             "A cultura de amostra de escarro apresenta alta sensibilidade para o diagnóstico de pneumonia associada à assistência respiratória mecânica.",
             "O contato com aves em cativeiro é fator de risco para PAC por Leptospira interrogans.",
             "A dependência de drogas intravenosas é um fator de risco para PAC devido a bactérias anaeróbias."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato em um hisopado nasofaríngeo para SARS-CoV-2, a detecção rápida de antígenos pode ser negativa enquanto a RT-PCR é positiva, pois esta última é mais sensível e detecta cargas virais baixas — é a resposta correta.",
+                "A cultura de escarro tem baixa sensibilidade para pneumonia associada à ventilação mecânica devido à contaminação e biofilmes; preferem-se culturas quantitativas e métodos moleculares.",
+                "O contato com aves é fator de risco para psitacose (Chlamydia psittaci), não para Leptospira interrogans, que é transmitida por água ou solo contaminado.",
+                "O risco de pneumonia por drogadição endovenosa se associa principalmente a Staphylococcus aureus via êmbolos sépticos, não a bactérias anaeróbias, mais relacionadas à aspiração."
+            ],
+            "fantasma": [
+                "Essa aí! O PCR é mais sensível, pode dar positivo igual.",
+                "Essa cultura rende pouco ali.",
+                "A ave é de outra bactéria, não de Leptospira.",
+                "Isso é mais do aureus, não do anaeróbio."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O PCR é mais sensível.",
+                "Fijate: rende pouco.",
+                "Dado curioso: é outra bactéria.",
+                "Miau, é do aureus."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às infecções do trato respiratório inferior, indique a opção CORRETA:",
@@ -8147,7 +8447,27 @@
             "O diagnóstico de pneumonia comunitária aguda em adulto com menos de 65 anos, imunocompetente e sem fatores de risco é clínico-radiológico.",
             "Enterococcus faecalis é o agente etiológico mais comum na pneumonia comunitária.",
             "A colonização por Streptococcus pneumoniae é mais frequente e persistente em adultos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A tuberculose não é infecção hospitalar típica; infecções hospitalares comuns envolvem MRSA e Pseudomonas.",
+                "O diagnóstico de pneumonia aguda da comunidade em um adulto menor de 65 anos, imunocompetente e sem fatores de risco de fato é clínico-radiológico, sem necessidade inicial de identificação microbiológica — é a resposta correta.",
+                "Enterococcus faecalis raramente causa pneumonia comunitária, predominando em infecções hospitalares.",
+                "A colonização por Streptococcus pneumoniae é mais frequente e persistente em crianças do que em adultos."
+            ],
+            "fantasma": [
+                "Essa não é de hospital, é outra bactéria ali.",
+                "Essa aí! Clínico e radiológico, a correta.",
+                "Esse é raro na comunidade.",
+                "É mais de criança, não de adulto."
+            ],
+            "gato": [
+                "Fijate: é de outra.",
+                "Ronronado de aprovação! Clínico e radiológico.",
+                "Dado curioso: é raro.",
+                "Miau, é mais de criança."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos agentes etiológicos de pneumonia aguda mais frequentes na comunidade, indicar a opção INCORRETA.",
@@ -8158,7 +8478,27 @@
             "Streptococcus pneumoniae.",
             "Rinovírus.",
             "Haemophilus influenzae."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O vírus influenza A de fato é causa comum de pneumonia viral comunitária.",
+                "Streptococcus pneumoniae de fato é o principal agente bacteriano da pneumonia adquirida na comunidade.",
+                "O rinovírus causa infecções do trato respiratório superior, como resfriados, mas raramente pneumonia na comunidade — essa é a exceção.",
+                "Haemophilus influenzae de fato é frequente, especialmente em pacientes com doenças pulmonares crônicas."
+            ],
+            "fantasma": [
+                "Esse sim é agente daqui.",
+                "Esse sim é agente daqui.",
+                "Essa aí! Esse é de resfriado, não de pneumonia.",
+                "Esse sim é agente daqui."
+            ],
+            "gato": [
+                "Fijate: sim é.",
+                "Dado curioso: sim é.",
+                "Ronronado de aprovação! É de resfriado.",
+                "Miau, sim é."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao diagnóstico microbiológico de infecções respiratórias, indique a opção CORRETA:",
@@ -8169,7 +8509,27 @@
             "O diagnóstico definitivo de faringite por Streptococcus pyogenes é feito pela coloração de Gram do swab de fauces.",
             "O diagnóstico do vírus sincicial respiratório em crianças é feito pela detecção de ácidos nucléicos em amostra de aspirado nasofaríngeo.",
             "O diagnóstico de pneumonia por Mycoplasma pneumoniae é feito pela observação do microrganismo pela coloração de Gram."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A contagem válida para um aspirado traqueal em pneumonia associada ao ventilador é de 10⁵ UFC/ml, não de 10².",
+                "O diagnóstico de certeza de faringite por Streptococcus pyogenes não é feito por coloração de Gram; usa-se teste rápido ou cultura.",
+                "O diagnóstico do vírus sincicial respiratório em crianças de fato é feito pela detecção de ácidos nucleicos via PCR em aspirado nasofaríngeo, método sensível e específico — é a resposta correta.",
+                "O diagnóstico de pneumonia por Mycoplasma pneumoniae não é feito por coloração de Gram, pois exige métodos sorológicos ou moleculares."
+            ],
+            "fantasma": [
+                "Esse número não é o correto, é mais alto.",
+                "Isso não se vê com Gram.",
+                "Essa aí! PCR no aspirado, a correta.",
+                "Isso não se vê com Gram."
+            ],
+            "gato": [
+                "Fijate: é mais alto.",
+                "Dado curioso: não é com Gram.",
+                "Ronronado de aprovação! PCR no aspirado.",
+                "Miau, não é com Gram."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à faringite bacteriana, indicar a opção INCORRETA.",
@@ -8180,7 +8540,27 @@
             "A infecção estreptocócica é transmitida de pessoa para pessoa através de secreções nasais e saliva.",
             "O swab das fauces deve ser realizado com cuidado para não contaminar a amostra com a cavidade oral.",
             "Faringite por Streptococcus pyogenes é descartada se o teste rápido \"Strep-Test\" for negativo,"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a faringite por Streptococcus pyogenes é menos frequente em adultos.",
+                "De fato a faringite estreptocócica se transmite de pessoa a pessoa por secreções nasais e saliva.",
+                "De fato o hisopado das fauces deve ser feito com cuidado para não contaminar a amostra com a cavidade bucal.",
+                "Um teste rápido negativo NÃO exclui a faringite por Streptococcus pyogenes, devido à sua sensibilidade variável (70-90%) e risco de falso-negativo; é necessária confirmação por cultura — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, menos no adulto.",
+                "Essa está certa, por saliva.",
+                "Essa está certa, cuidado com a boca.",
+                "Essa aí! O negativo não descarta sozinho."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Não descarta sozinho."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à epidemiologia das infecções do trato respiratório inferior, indique a opção INCORRETA.",
@@ -8191,7 +8571,27 @@
             "A pneumonia por Chlamydia psittaci é mais prevalente em trabalhadores avícolas.",
             "A pneumonia adquirida no hospital e a pneumonia adquirida na comunidade são causadas pelos mesmos microrganismos.",
             "Infecções por Pseudomonas aeruginosa são mais comuns em pacientes com fibrose cística"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As infecções virais de fato constituem a etiologia mais frequente em crianças.",
+                "A pneumonia por Chlamydia psittaci de fato é mais prevalente em trabalhadores avícolas.",
+                "A pneumonia hospitalar e a pneumonia da comunidade têm agentes distintos; a comunitária é causada por Streptococcus pneumoniae, Haemophilus influenzae e vírus respiratórios, enquanto a hospitalar envolve microrganismos resistentes como Pseudomonas aeruginosa e MRSA — essa é a opção incorreta.",
+                "As infecções por Pseudomonas aeruginosa de fato são mais frequentes em pacientes com fibrose cística."
+            ],
+            "fantasma": [
+                "Essa está certa, na criança.",
+                "Essa está certa, a ave.",
+                "Essa aí! Não são os mesmos bichos.",
+                "Essa está certa, a fibrose."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Não são os mesmos.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à sinusite bacteriana, indique a opção INCORRETA:",
