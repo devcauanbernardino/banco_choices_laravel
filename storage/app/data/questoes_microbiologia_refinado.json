@@ -10147,7 +10147,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O título de IgG anti-sarampionoso não é útil no primeiro dia do exantema, pois indica imunidade prévia ou exposição passada, não infecção aguda.\n\n**Outras opções:**  \nA. Manchas de Kóplik são sinal patognomônico e indicam sarampo precoce.  \nB. IgM específica confirma infecção aguda logo no início dos sintomas.  \nC. Sintomas respiratórios (conjuntivite, tosse) são típicos da fase inicial e ajudam no diagnóstico.\n\nAssim, sinais clínicos e IgM são úteis para diagnóstico precoce; IgG não confirma infecção recente."
+            "feedback": "**Resposta Correta:** D. O título de IgG anti-sarampionoso não é útil no primeiro dia do exantema, pois indica imunidade prévia ou exposição passada, não infecção aguda.\n\n**Outras opções:**  \nA. Manchas de Kóplik são sinal patognomônico e indicam sarampo precoce.  \nB. IgM específica confirma infecção aguda logo no início dos sintomas.  \nC. Sintomas respiratórios (conjuntivite, tosse) são típicos da fase inicial e ajudam no diagnóstico.\n\nAssim, sinais clínicos e IgM são úteis para diagnóstico precoce; IgG não confirma infecção recente.",
+            "explicacoes": {
+                "robo": [
+                    "Las manchas de Koplik son un signo patognomónico e indican sarampión precoz; sí son relevantes.",
+                    "La IgM específica confirma infección aguda desde el inicio de los síntomas; sí es relevante.",
+                    "Los síntomas respiratorios (conjuntivitis, tos) son típicos de la fase inicial y ayudan al diagnóstico; sí son relevantes.",
+                    "Un título de IgG anti-sarampionosa no es útil el primer día del exantema, ya que indica inmunidad previa o exposición pasada, no infección aguda — es la respuesta correcta (NO relevante)."
+                ],
+                "fantasma": [
+                    "Esa sí importa, es de las primeras señales.",
+                    "Esa sí importa, confirma lo agudo.",
+                    "Esa sí importa, es de la fase inicial.",
+                    "¡Esta! Esa IgG no dice nada de ahora."
+                ],
+                "gato": [
+                    "Fijate: sí importa.",
+                    "Dato curioso: sí importa.",
+                    "Miau, sí importa.",
+                    "¡Ronroneo de aprobación! No dice nada de ahora."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -10173,7 +10193,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está incorreta. Herpes humano 6 (HHV-6) causa roséola infantil, não herpes-zóster. O zóster é causado exclusivamente pelo vírus Varicela-Zóster (VZV). As outras associações estão corretas: A) Rubéola pode causar artrite e artralgias; C) Parvovírus B19 afeta a medula óssea; D) Sarampo pode levar à encefalite. Portanto, apenas a opção B apresenta erro na associação vírus-complicação."
+            "feedback": "Resposta correta: B está incorreta. Herpes humano 6 (HHV-6) causa roséola infantil, não herpes-zóster. O zóster é causado exclusivamente pelo vírus Varicela-Zóster (VZV). As outras associações estão corretas: A) Rubéola pode causar artrite e artralgias; C) Parvovírus B19 afeta a medula óssea; D) Sarampo pode levar à encefalite. Portanto, apenas a opção B apresenta erro na associação vírus-complicação.",
+            "explicacoes": {
+                "robo": [
+                    "La rubéola efectivamente puede causar artritis y artralgias.",
+                    "El herpes humano 6 (HHV-6) causa roséola infantil, no herpes zóster; el zóster es causado exclusivamente por el virus varicela-zóster (VZV) — esta es la opción incorrecta.",
+                    "El eritrovirus B19 efectivamente afecta la médula ósea.",
+                    "El sarampión efectivamente puede llevar a encefalitis."
+                ],
+                "fantasma": [
+                    "Esa está bien, dolor de articulación.",
+                    "¡Esta! Ese da roséola, no zóster.",
+                    "Esa está bien, afecta la médula.",
+                    "Esa está bien, encefalitis."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Da roséola.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -10199,7 +10239,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Exantema súbito por HHV-6.\n\nExantema súbito é comum em crianças, com febre alta por 3-5 dias seguida de exantema maculopapular que inicia no tronco e desaparece em 1-2 dias. O quadro descrito é típico e não responde a antibióticos.\n\n**Outras opções:**  \nA) Escarlatina apresenta exantema áspero, sintomas graves e responde a antibióticos.  \nB) Sarampo tem sintomas respiratórios, enantema e exantema iniciando na face.  \nD) Varicela causa lesões vesiculares, não maculopapulares."
+            "feedback": "**Resposta Correta:** C. Exantema súbito por HHV-6.\n\nExantema súbito é comum em crianças, com febre alta por 3-5 dias seguida de exantema maculopapular que inicia no tronco e desaparece em 1-2 dias. O quadro descrito é típico e não responde a antibióticos.\n\n**Outras opções:**  \nA) Escarlatina apresenta exantema áspero, sintomas graves e responde a antibióticos.  \nB) Sarampo tem sintomas respiratórios, enantema e exantema iniciando na face.  \nD) Varicela causa lesões vesiculares, não maculopapulares.",
+            "explicacoes": {
+                "robo": [
+                    "La escarlatina presenta exantema áspero, síntomas más graves y responde a antibióticos, diferente de lo descrito.",
+                    "El sarampión presenta síntomas respiratorios, enantema y exantema que inicia en la cara, diferente de lo descrito.",
+                    "El exantema súbito por HHV-6 es común en lactantes, con fiebre alta durante 3-5 días seguida de exantema maculopapular que inicia en el tronco y desaparece en 1-2 días; el cuadro descrito es típico y no responde a antibióticos — es la respuesta correcta.",
+                    "La varicela causa lesiones vesiculares, no maculopapulares."
+                ],
+                "fantasma": [
+                    "Esa responde a antibiótico, no acá.",
+                    "Esa empieza en la cara, no así.",
+                    "¡Esta! Fiebre y después el exantema, la roséola.",
+                    "Esa es de vesícula, no de mancha."
+                ],
+                "gato": [
+                    "Fijate: responde a antibiótico.",
+                    "Dato curioso: empieza en la cara.",
+                    "¡Ronroneo de aprobación! La roséola.",
+                    "Miau, es de vesícula."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -10225,7 +10285,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A detecção de IgM específica e a PCR são métodos rápidos, sensíveis e pouco invasivos, ideais para diagnóstico confirmatório em lactentes, indicando infecção recente e detectando o genoma viral mesmo com baixa carga.\n\n**Outras opções:**  \nA é invasiva e pouco prática em crianças;  \nB, laboriosa e menos sensível devido à baixa viremia;  \nD, lenta e requer infraestrutura especializada.  \n\nPortanto, C é a melhor escolha para diagnóstico em bebês de 6 meses."
+            "feedback": "**Resposta Correta:** C. A detecção de IgM específica e a PCR são métodos rápidos, sensíveis e pouco invasivos, ideais para diagnóstico confirmatório em lactentes, indicando infecção recente e detectando o genoma viral mesmo com baixa carga.\n\n**Outras opções:**  \nA é invasiva e pouco prática em crianças;  \nB, laboriosa e menos sensível devido à baixa viremia;  \nD, lenta e requer infraestrutura especializada.  \n\nPortanto, C é a melhor escolha para diagnóstico em bebês de 6 meses.",
+            "explicacoes": {
+                "robo": [
+                    "La detección de antígenos por punción-biopsia es invasiva y poco práctica en niños.",
+                    "El shell vial es laborioso y menos sensible debido a la baja viremia.",
+                    "La determinación de IgM específica en suero o la detección del genoma viral por PCR son métodos rápidos, sensibles y poco invasivos, ideales para el diagnóstico confirmatorio en lactantes — es la respuesta correcta.",
+                    "Los cultivos en líneas celulares son lentos y requieren infraestructura especializada."
+                ],
+                "fantasma": [
+                    "Eso es invasivo de más.",
+                    "Eso es lento, no tan sensible.",
+                    "¡Esta! IgM o PCR, rápido y confiable.",
+                    "Eso es lento, hace falta laboratorio especial."
+                ],
+                "gato": [
+                    "Fijate: es invasivo.",
+                    "Dato curioso: es lento.",
+                    "¡Ronroneo de aprobación! IgM o PCR.",
+                    "Miau, es lento."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -10251,7 +10331,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Síndrome Mononucleosiforme.  \nCaracteriza-se por febre, linfadenopatia, faringite e esplenomegalia em adolescentes, causada pelo vírus Epstein-Barr (EBV) que infecta linfócitos B, gerando linfocitose atípica.  \n\n**Outras opções:**  \nA. Zóster: reativação do vírus Varicella-Zoster, com lesão cutânea localizada, não sintomas sistêmicos.  \nB. Erisipela: infecção bacteriana da pele, sem linfadenopatia nem quadro sistêmico típico.  \nC. Sarcoma de Kaposi: tumor associado ao HHV"
+            "feedback": "**Resposta Correta:** D. Síndrome Mononucleosiforme.  \nCaracteriza-se por febre, linfadenopatia, faringite e esplenomegalia em adolescentes, causada pelo vírus Epstein-Barr (EBV) que infecta linfócitos B, gerando linfocitose atípica.  \n\n**Outras opções:**  \nA. Zóster: reativação do vírus Varicella-Zoster, com lesão cutânea localizada, não sintomas sistêmicos.  \nB. Erisipela: infecção bacteriana da pele, sem linfadenopatia nem quadro sistêmico típico.  \nC. Sarcoma de Kaposi: tumor associado ao HHV",
+            "explicacoes": {
+                "robo": [
+                    "El zóster es una reactivación del virus varicela-zóster, con lesión cutánea localizada, no síntomas sistémicos como estos.",
+                    "La erisipela es una infección bacteriana de la piel, sin linfadenopatía ni cuadro sistémico típico como este.",
+                    "El sarcoma de Kaposi es un tumor asociado al HHV-8, no un cuadro febril agudo con adenopatías.",
+                    "El síndrome mononucleosiforme se caracteriza por fiebre, linfadenopatía, faringitis y esplenomegalia en adolescentes, causado por el virus Epstein-Barr (EBV) que infecta linfocitos B, generando linfocitosis atípica — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese es local, no da fiebre así.",
+                    "Esa es de la piel, no de ganglio.",
+                    "Ese es tumor, no fiebre.",
+                    "¡Esta! Fiebre, ganglio y faringitis, el mono."
+                ],
+                "gato": [
+                    "Fijate: es local.",
+                    "Dato curioso: es de piel.",
+                    "Miau, es tumor.",
+                    "¡Ronroneo de aprobación! La mononucleosis."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -10277,7 +10377,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. ELISA para IgM anti-HHV-6 e/ou PCR de sangue periférico. Esses métodos detectam diretamente o vírus ou anticorpos IgM específicos, confirmando infecção ativa por HHV-6 com alta sensibilidade e especificidade.\n\n**Outras opções:**  \nA (shell vial) e B (hemocultivo) são métodos lentos, menos sensíveis e não padrão para HHV-6, devido à dificuldade de cultivo.  \nD (ELISA para IgM anti-Varicela-Zóster) é específico para outro vírus e não serve para diagnosticar HHV-6."
+            "feedback": "**Resposta Correta:** C. ELISA para IgM anti-HHV-6 e/ou PCR de sangue periférico. Esses métodos detectam diretamente o vírus ou anticorpos IgM específicos, confirmando infecção ativa por HHV-6 com alta sensibilidade e especificidade.\n\n**Outras opções:**  \nA (shell vial) e B (hemocultivo) são métodos lentos, menos sensíveis e não padrão para HHV-6, devido à dificuldade de cultivo.  \nD (ELISA para IgM anti-Varicela-Zóster) é específico para outro vírus e não serve para diagnosticar HHV-6.",
+            "explicacoes": {
+                "robo": [
+                    "El shell vial es lento, poco sensible y no es el método estándar para HHV-6, debido a la dificultad de cultivo.",
+                    "El hemocultivo viral en líneas continuas es lento y poco sensible.",
+                    "El ELISA para IgM anti-HHV-6 y/o la PCR de sangre periférica detectan directamente el virus o anticuerpos IgM específicos, confirmando la infección activa con alta sensibilidad y especificidad — es la respuesta correcta.",
+                    "El ELISA para IgM anti varicela-zóster es específico para otro virus y no sirve para diagnosticar HHV-6."
+                ],
+                "fantasma": [
+                    "Eso es lento, difícil de cultivar.",
+                    "Eso es lento también.",
+                    "¡Esta! IgM o PCR, la que confirma.",
+                    "Ese es de otro virus."
+                ],
+                "gato": [
+                    "Fijate: es lento.",
+                    "Dato curioso: es lento.",
+                    "¡Ronroneo de aprobación! IgM o PCR.",
+                    "Miau, es de otro virus."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -10303,7 +10423,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Os agentes do exantema súbito (HHV-6 e HHV-7) não estabelecem latência nos neurônios sensoriais, mas sim em linfócitos T, diferentemente do HSV e VZV.\n\n**Outras opções:**  \nA está correta: o exantema do sarampo é causado por efeito citopático indireto mediado por células T.  \nB está correta: o diagnóstico do sarampo é clínico, confirmado por IgM específica ou soroconversão de IgG.  \nC está correta: Erythrovirus B19 tem maior incidência no inverno e primavera."
+            "feedback": "**Resposta Correta:** D. Os agentes do exantema súbito (HHV-6 e HHV-7) não estabelecem latência nos neurônios sensoriais, mas sim em linfócitos T, diferentemente do HSV e VZV.\n\n**Outras opções:**  \nA está correta: o exantema do sarampo é causado por efeito citopático indireto mediado por células T.  \nB está correta: o diagnóstico do sarampo é clínico, confirmado por IgM específica ou soroconversão de IgG.  \nC está correta: Erythrovirus B19 tem maior incidência no inverno e primavera.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el exantema producido por el virus del sarampión se debe a un efecto citopático indirecto mediado por células T.",
+                    "Efectivamente el diagnóstico de sarampión generalmente es clínico, confirmable indirectamente por IgM específica o seroconversión de IgG.",
+                    "Efectivamente el eritrovirus B19 presenta un patrón estacional más frecuente en invierno y primavera.",
+                    "Los agentes del exantema súbito (HHV-6 y HHV-7) no establecen latencia en las neuronas de los ganglios sensoriales, sino en linfocitos T, a diferencia del HSV y VZV — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, efecto indirecto.",
+                    "Esa está bien, IgM o IgG.",
+                    "Esa está bien, invierno y primavera.",
+                    "¡Esta! Es en el linfocito, no en el ganglio."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es en el linfocito."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -10329,7 +10469,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta porque Coccidioides immitis na amostra respiratória não apresenta filamentos com clamidoartroconídios, mas esférulas contendo endosporos. No ambiente, o fungo cresce em forma filamentosa com artroconídios, mas na infecção clínica a forma é esférica.  \nAs opções A, B e D estão corretas: A mostra esférulas com endosporos de Coccidioides posadasii; B, leveduras multibrotantes do complexo Paracoccidioides brasiliensis; D, leveduras monogemantes intracelulares, típicas de Histoplasma capsulatum."
+            "feedback": "Resposta correta: C está incorreta porque Coccidioides immitis na amostra respiratória não apresenta filamentos com clamidoartroconídios, mas esférulas contendo endosporos. No ambiente, o fungo cresce em forma filamentosa com artroconídios, mas na infecção clínica a forma é esférica.  \nAs opções A, B e D estão corretas: A mostra esférulas com endosporos de Coccidioides posadasii; B, leveduras multibrotantes do complexo Paracoccidioides brasiliensis; D, leveduras monogemantes intracelulares, típicas de Histoplasma capsulatum.",
+            "explicacoes": {
+                "robo": [
+                    "Las esferas con endosporas en muestra respiratoria efectivamente se asocian a Coccidioides posadasii.",
+                    "Las levaduras multibrotantes en el examen directo efectivamente se asocian al complejo Paracoccidioides brasiliensis.",
+                    "Coccidioides immitis en muestra respiratoria no presenta filamentos con clamidoartroconidios, sino esférulas con endosporas; la forma filamentosa con artroconidios ocurre en el ambiente, no en la infección clínica — esta es la asociación incorrecta.",
+                    "Las levaduras monogemantes intracelulares de 2 a 4 micrones en Giemsa efectivamente se asocian a Histoplasma capsulatum."
+                ],
+                "fantasma": [
+                    "Esa está bien, esa esfera.",
+                    "Esa está bien, esa levadura.",
+                    "¡Esta! En la muestra clínica es esférula, no filamento.",
+                    "Esa está bien, esa levadura chiquita."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es esférula.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -10355,7 +10515,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Mycobacterium tuberculosis, diagnosticado por métodos moleculares PCR, que detectam rapidamente o DNA bacteriano em amostras respiratórias, mesmo com baciloscopia negativa.  \nOpção B incorreta: Histoplasma capsulatum não apresenta macroconídios tuberculados no exame direto, apenas em cultura.  \nOpção C incorreta: Nocardia asteroides cresce em meios bacterianos, não em agar Sabouraud, usado para fungos.  \nOpção D incorreta: Actinomicetos são bacilos gram-positivos, não gram-negativos como descrito."
+            "feedback": "Resposta correta: A. Mycobacterium tuberculosis, diagnosticado por métodos moleculares PCR, que detectam rapidamente o DNA bacteriano em amostras respiratórias, mesmo com baciloscopia negativa.  \nOpção B incorreta: Histoplasma capsulatum não apresenta macroconídios tuberculados no exame direto, apenas em cultura.  \nOpção C incorreta: Nocardia asteroides cresce em meios bacterianos, não em agar Sabouraud, usado para fungos.  \nOpção D incorreta: Actinomicetos são bacilos gram-positivos, não gram-negativos como descrito.",
+            "explicacoes": {
+                "robo": [
+                    "Mycobacterium tuberculosis, diagnosticado por métodos moleculares de PCR, que detectan rápidamente el ADN bacteriano en muestras respiratorias, incluso con baciloscopía negativa — es la respuesta correcta.",
+                    "Histoplasma capsulatum no presenta macroconidias tuberculadas en el examen directo, solo en cultivo.",
+                    "Nocardia asteroides crece en medios bacterianos, no en agar Sabouraud, usado para hongos.",
+                    "Los actinomicetos son bacilos Gram positivos, no Gram negativos como se describe."
+                ],
+                "fantasma": [
+                    "¡Esta! El PCR detecta rápido, la correcta.",
+                    "Eso es solo en cultivo, no directo.",
+                    "Ese crece en otro medio.",
+                    "Eso es Gram positivo, no negativo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El PCR rápido.",
+                    "Fijate: solo en cultivo.",
+                    "Dato curioso: otro medio.",
+                    "Miau, es Gram positivo."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -10381,7 +10561,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Paracoccidioides brasiliensis.  \nEste fungo dimórfico, causador da paracoccidioidomicose, apresenta leveduras com múltiplas gemulações (“botão de leme”) na fase parasitária, visíveis em amostras respiratórias.  \n\n**Erradas:**  \nA. Pneumocystis jirovecii não forma leveduras, apresenta cistos e trofozoítos identificados por colorações especiais.  \nB. Coccidioides posadasii forma esférulas com endósporos, não leveduras.  \nD. Fusarium spp. é fungo filamentoso com hifas, não leveduras"
+            "feedback": "**Resposta Correta:** C. Paracoccidioides brasiliensis.  \nEste fungo dimórfico, causador da paracoccidioidomicose, apresenta leveduras com múltiplas gemulações (“botão de leme”) na fase parasitária, visíveis em amostras respiratórias.  \n\n**Erradas:**  \nA. Pneumocystis jirovecii não forma leveduras, apresenta cistos e trofozoítos identificados por colorações especiais.  \nB. Coccidioides posadasii forma esférulas com endósporos, não leveduras.  \nD. Fusarium spp. é fungo filamentoso com hifas, não leveduras",
+            "explicacoes": {
+                "robo": [
+                    "Pneumocystis jirovecii no forma levaduras, presenta quistes y trofozoítos identificados por tinciones especiales.",
+                    "Coccidioides posadasii forma esférulas con endosporas, no levaduras.",
+                    "Paracoccidioides brasiliensis, hongo dimórfico causante de la paracoccidioidomicosis, presenta levaduras con múltiples gemaciones ('rueda de timón') en la fase parasitaria, visibles en muestras respiratorias — es la respuesta correcta.",
+                    "Fusarium spp es un hongo filamentoso con hifas, no levaduras."
+                ],
+                "fantasma": [
+                    "Ese es de quiste, no de levadura.",
+                    "Esa es de esférula, no de levadura.",
+                    "¡Esta! Rueda de timón, la levadura.",
+                    "Ese es de hifa, no de levadura."
+                ],
+                "gato": [
+                    "Fijate: es de quiste.",
+                    "Dato curioso: es esférula.",
+                    "¡Ronroneo de aprobación! Rueda de timón.",
+                    "Miau, es de hifa."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -10407,7 +10607,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Devem ser coletadas amostras respiratórias por broncoscopia e três hemocultivos.\n\nPacientes com pneumonia após 48 horas de internação têm maior risco de infecção por bactérias multirresistentes, exigindo amostras precisas para diagnóstico. A broncoscopia coleta secreções do trato respiratório inferior e hemoculturas detectam bacteremia, orientando o tratamento adequado.\n\n**Outras opções:**  \nA está errada, pois pneumonia hospitalar ocorre após 48 horas de internação.  \nB está incorreta, pois agentes comuns na comunidade diferem dos da pneumonia hospitalar.  \nD é falsa, pois antiácidos aumentam o risco"
+            "feedback": "**Resposta Correta:** C. Devem ser coletadas amostras respiratórias por broncoscopia e três hemocultivos.\n\nPacientes com pneumonia após 48 horas de internação têm maior risco de infecção por bactérias multirresistentes, exigindo amostras precisas para diagnóstico. A broncoscopia coleta secreções do trato respiratório inferior e hemoculturas detectam bacteremia, orientando o tratamento adequado.\n\n**Outras opções:**  \nA está errada, pois pneumonia hospitalar ocorre após 48 horas de internação.  \nB está incorreta, pois agentes comuns na comunidade diferem dos da pneumonia hospitalar.  \nD é falsa, pois antiácidos aumentam o risco",
+            "explicacoes": {
+                "robo": [
+                    "La neumonía tras 48 horas de internación se considera intrahospitalaria, no adquirida en la comunidad, aunque hayan pasado 14 días.",
+                    "Los agentes más probables en la neumonía intrahospitalaria difieren de los de la comunidad, siendo más frecuentes bacterias multirresistentes.",
+                    "Deben solicitarse muestra respiratoria por broncoscopía y tres hemocultivos, ya que los pacientes con neumonía tras 48 horas de internación tienen mayor riesgo de infección por bacterias multirresistentes, requiriendo muestras precisas para el diagnóstico — es la respuesta correcta.",
+                    "El uso de antiácidos y bloqueantes H2 SÍ constituye un factor de riesgo para neumonía intrahospitalaria."
+                ],
+                "fantasma": [
+                    "Después de 48hs ya es hospitalaria.",
+                    "Esos son de la comunidad, no de acá.",
+                    "¡Esta! Broncoscopía y hemocultivo, la correcta.",
+                    "Eso sí es factor de riesgo."
+                ],
+                "gato": [
+                    "Fijate: es hospitalaria.",
+                    "Dato curioso: son de la comunidad.",
+                    "¡Ronroneo de aprobación! Broncoscopía y hemocultivo.",
+                    "Miau, sí es factor de riesgo."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -10433,7 +10653,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A está incorreta. Testes rápidos para *Streptococcus pyogenes* devem ser feitos na fase aguda da faringite para diagnóstico precoce e início do tratamento, prevenindo complicações.  \n\nAs opções B, C e D estão corretas:  \nB) Tratamento deve começar imediatamente após resultado positivo.  \nC) Resultado negativo precisa ser confirmado por cultura, devido à sensibilidade variável do teste rápido.  \nD) Resultados rápidos são obtidos em minutos, facilitando decisões clínicas ágeis.  \n\nPortanto, testes rápidos não são indicados após o desenvolvimento de sequelas."
+            "feedback": "Resposta correta: A está incorreta. Testes rápidos para *Streptococcus pyogenes* devem ser feitos na fase aguda da faringite para diagnóstico precoce e início do tratamento, prevenindo complicações.  \n\nAs opções B, C e D estão corretas:  \nB) Tratamento deve começar imediatamente após resultado positivo.  \nC) Resultado negativo precisa ser confirmado por cultura, devido à sensibilidade variável do teste rápido.  \nD) Resultados rápidos são obtidos em minutos, facilitando decisões clínicas ágeis.  \n\nPortanto, testes rápidos não são indicados após o desenvolvimento de sequelas.",
+            "explicacoes": {
+                "robo": [
+                    "Las pruebas rápidas para Streptococcus pyogenes deben realizarse en la fase aguda de la faringitis para diagnóstico precoz e inicio del tratamiento, previniendo complicaciones, no después de desarrolladas las secuelas — esta es la opción incorrecta.",
+                    "Efectivamente ante un resultado positivo se debe iniciar tratamiento.",
+                    "Efectivamente el resultado negativo requiere confirmación mediante cultivo, debido a la sensibilidad variable de la prueba rápida.",
+                    "Efectivamente los resultados se obtienen en menos de 2 horas."
+                ],
+                "fantasma": [
+                    "¡Esta! Es antes de la secuela, no después.",
+                    "Esa está bien, se trata ya.",
+                    "Esa está bien, hace falta cultivo.",
+                    "Esa está bien, es rápido."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es antes de la secuela.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -10459,7 +10699,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Aspirado traqueal exige maior número de UFC/ml que BAL para ser positivo.\n\nO aspirado traqueal é mais superficial e contaminado, demandando critério quantitativo mais rigoroso. O BAL é coletado mais profundamente, com menor contaminação e critério de positividade menor, aumentando a especificidade.\n\n**Outras opções:**  \nA) Incorreta: mini-BAL é menos sensível que BAL convencional.  \nC) Incorreta: sorologia para pneumonias atípicas é útil, apesar de limitações.  \nD) Incorreta: coloração de Gram em hemocultura não é obrigatória antes da incubação."
+            "feedback": "**Resposta Correta:** B. Aspirado traqueal exige maior número de UFC/ml que BAL para ser positivo.\n\nO aspirado traqueal é mais superficial e contaminado, demandando critério quantitativo mais rigoroso. O BAL é coletado mais profundamente, com menor contaminação e critério de positividade menor, aumentando a especificidade.\n\n**Outras opções:**  \nA) Incorreta: mini-BAL é menos sensível que BAL convencional.  \nC) Incorreta: sorologia para pneumonias atípicas é útil, apesar de limitações.  \nD) Incorreta: coloração de Gram em hemocultura não é obrigatória antes da incubação.",
+            "explicacoes": {
+                "robo": [
+                    "El mini-BAL es menos sensible que el BAL convencional.",
+                    "El aspirado traqueal, al ser más superficial y contaminado, requiere un recuento de UFC/ml mayor que el BAL, que se obtiene más profundamente con menor contaminación, para ser considerado positivo — es la respuesta correcta.",
+                    "La serología para neumonías atípicas es útil, a pesar de sus limitaciones.",
+                    "La tinción de Gram en hemocultivo no es obligatoria antes de la incubación."
+                ],
+                "fantasma": [
+                    "Al revés: el mini es menos sensible.",
+                    "¡Esta! El aspirado necesita más UFC que el BAL.",
+                    "Sí sirve la serología.",
+                    "No es obligatorio el Gram antes."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Más UFC en el aspirado.",
+                    "Dato curioso: sí sirve.",
+                    "Miau, no es obligatorio."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -10485,7 +10745,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "A resposta correta é A: o cultivo em ágar sangue é o padrão-ouro para diagnosticar faringite por Streptococcus do grupo A, pois permite identificar a bactéria beta-hemolítica, confirmar a espécie e testar sensibilidade a antibióticos. A PCR (B) é sensível, mas cara e não rotineira. O teste rápido de antígeno (C) é rápido e específico, porém menos sensível, exigindo confirmação por cultura se negativo. A coloração de Gram (D) não é adequada devido à microbiota complexa e baixa especificidade para SGA."
+            "feedback": "A resposta correta é A: o cultivo em ágar sangue é o padrão-ouro para diagnosticar faringite por Streptococcus do grupo A, pois permite identificar a bactéria beta-hemolítica, confirmar a espécie e testar sensibilidade a antibióticos. A PCR (B) é sensível, mas cara e não rotineira. O teste rápido de antígeno (C) é rápido e específico, porém menos sensível, exigindo confirmação por cultura se negativo. A coloração de Gram (D) não é adequada devido à microbiota complexa e baixa especificidade para SGA.",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo en agar sangre con exámenes bioquímicos complementarios es el estándar de oro para diagnosticar faringitis por Streptococcus del grupo A, ya que permite identificar la bacteria beta-hemolítica, confirmar la especie y probar sensibilidad a antibióticos — es la respuesta correcta.",
+                    "La PCR es sensible, pero cara y no rutinaria para este diagnóstico.",
+                    "El test rápido de antígeno (RADT) es rápido y específico, pero menos sensible, requiriendo confirmación por cultivo si es negativo.",
+                    "La tinción de Gram no es adecuada debido a la microbiota compleja de la faringe y su baja especificidad para SGA."
+                ],
+                "fantasma": [
+                    "¡Esta! El agar sangre con bioquímico, el patrón oro.",
+                    "Ese es caro, no de rutina.",
+                    "Ese es rápido pero menos sensible.",
+                    "Ese no sirve por la flora normal."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El patrón oro.",
+                    "Fijate: es caro.",
+                    "Dato curioso: menos sensible.",
+                    "Miau, no sirve."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -10511,7 +10791,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O lavado broncoalveolar (BAL) não é a amostra ideal para diagnosticar bronquiolite aguda, pois é invasivo e reservado para casos específicos. Swabs nasais ou aspirados nasofaríngeos são preferidos por serem menos invasivos e eficazes na detecção do vírus sincicial respiratório (VSR), principal agente da doença.  \n\n**Opção B:** Incorreta. Não existe vacina inativada contra VSR disponível para gestantes. A profilaxia atual usa palivizumabe em lactentes de alto risco.  \n\n**Opção C:** Correta. A imunofluorescência em amostras respiratórias permite diagnóstico rápido do"
+            "feedback": "**Resposta Correta:** A. O lavado broncoalveolar (BAL) não é a amostra ideal para diagnosticar bronquiolite aguda, pois é invasivo e reservado para casos específicos. Swabs nasais ou aspirados nasofaríngeos são preferidos por serem menos invasivos e eficazes na detecção do vírus sincicial respiratório (VSR), principal agente da doença.  \n\n**Opção B:** Incorreta. Não existe vacina inativada contra VSR disponível para gestantes. A profilaxia atual usa palivizumabe em lactentes de alto risco.  \n\n**Opção C:** Correta. A imunofluorescência em amostras respiratórias permite diagnóstico rápido do",
+            "explicacoes": {
+                "robo": [
+                    "El lavado broncoalveolar (BAL) no es la muestra ideal para diagnosticar bronquiolitis aguda, ya que es invasivo y se reserva para casos específicos; se prefieren hisopados nasales o aspirados nasofaríngeos, menos invasivos y eficaces para detectar el virus sincicial respiratorio — esta es la opción incorrecta.",
+                    "La vacuna aplicada en gestantes entre las semanas 32-36 efectivamente constituye una profilaxis contra el virus sincicial respiratorio.",
+                    "Efectivamente el diagnóstico virológico puede realizarse por detección de antígenos virales mediante inmunofluorescencia en muestra respiratoria.",
+                    "Efectivamente el virus sincicial respiratorio es la etiología más frecuente de la bronquiolitis aguda."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese es invasivo de más, mejor el hisopado.",
+                    "Esa está bien, la vacuna en la mamá.",
+                    "Esa está bien, con inmunofluorescencia.",
+                    "Esa está bien, el VSR es el más común."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Invasivo de más.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -10537,7 +10837,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A (10⁴ UFC/ml), valor padrão para diferenciar infecção pulmonar verdadeira de colonização em LBA. Contagens ≥10⁴ UFC/ml indicam infecção significativa. Opções B e D usam \"?\" inválido e indicam valores incorretos ou muito baixos. Opção C usa \"*\" sem notação adequada, tornando o valor ambíguo e inválido. Apenas a opção A apresenta notação correta e valor adequado para o diagnóstico."
+            "feedback": "Resposta correta: A (10⁴ UFC/ml), valor padrão para diferenciar infecção pulmonar verdadeira de colonização em LBA. Contagens ≥10⁴ UFC/ml indicam infecção significativa. Opções B e D usam \"?\" inválido e indicam valores incorretos ou muito baixos. Opção C usa \"*\" sem notação adequada, tornando o valor ambíguo e inválido. Apenas a opção A apresenta notação correta e valor adequado para o diagnóstico.",
+            "explicacoes": {
+                "robo": [
+                    "El punto de corte de 10⁴ UFC/ml es el valor estándar para diferenciar infección pulmonar verdadera de colonización en el lavado broncoalveolar — es la respuesta correcta.",
+                    "Este valor no corresponde al punto de corte estándar para BAL.",
+                    "Este valor no corresponde al punto de corte estándar para BAL.",
+                    "Este valor no corresponde al punto de corte estándar para BAL."
+                ],
+                "fantasma": [
+                    "¡Esta! 10 a la cuarta, el valor correcto.",
+                    "Ese valor no es el estándar.",
+                    "Ese valor no es el estándar.",
+                    "Ese valor no es el estándar."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El valor estándar.",
+                    "Fijate: no es ese.",
+                    "Dato curioso: no es ese.",
+                    "Miau, no es ese."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -10563,7 +10883,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Polimorfonucleares > 25 e células epiteliais planas < 10. Essa combinação indica amostra de escarro de boa qualidade, com inflamação pulmonar ativa e baixa contaminação por secreções orais.  \n\nOpção A tem PMNs adequados, mas células epiteliais ≥ 5, sugerindo possível contaminação.  \nOpção B apresenta células epiteliais ≥ 10, indicando contaminação significativa e amostra inadequada.  \nOpção D tem poucos PMNs (≤ 25), sinalizando ausência de inflamação ativa, tornando a amostra imprópria para diagnóstico."
+            "feedback": "Resposta correta: C. Polimorfonucleares > 25 e células epiteliais planas < 10. Essa combinação indica amostra de escarro de boa qualidade, com inflamação pulmonar ativa e baixa contaminação por secreções orais.  \n\nOpção A tem PMNs adequados, mas células epiteliais ≥ 5, sugerindo possível contaminação.  \nOpção B apresenta células epiteliais ≥ 10, indicando contaminação significativa e amostra inadequada.  \nOpção D tem poucos PMNs (≤ 25), sinalizando ausência de inflamação ativa, tornando a amostra imprópria para diagnóstico.",
+            "explicacoes": {
+                "robo": [
+                    "Con células epiteliales ≥5, existe posible contaminación, no cumpliendo el criterio ideal de aceptación.",
+                    "Con células epiteliales ≥10, existe contaminación significativa, haciendo la muestra inadecuada.",
+                    "Polimorfonucleares > 25 con células epiteliales planas < 10 indica una muestra de esputo de buena calidad, con inflamación pulmonar activa y baja contaminación por secreciones orales — es la respuesta correcta.",
+                    "Con polimorfonucleares ≤25, hay ausencia de inflamación activa, haciendo la muestra inadecuada para el diagnóstico."
+                ],
+                "fantasma": [
+                    "Esa epitelial es mucha.",
+                    "Esa epitelial es mucha más.",
+                    "¡Esta! Buena muestra, poca contaminación.",
+                    "Esos PMN son pocos."
+                ],
+                "gato": [
+                    "Fijate: mucha epitelial.",
+                    "Dato curioso: mucha más.",
+                    "¡Ronroneo de aprobación! Buena muestra.",
+                    "Miau, pocos PMN."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -10589,7 +10929,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Exame em fresco permite a rápida visualização dos esférulos característicos de Coccidioides spp. em amostras respiratórias, facilitando o diagnóstico imediato antes da cultura.\n\n**Outras opções:**  \nB. Giemsa é útil para parasitas sanguíneos, mas não ideal para esférulos de Coccidioides.  \nC. Kinyoun é para micobactérias ácido-resistentes, não para fungos.  \nD. Gram não cora bem os esférulos fúngicos, dificultando a identificação rápida."
+            "feedback": "**Resposta Correta:** A. Exame em fresco permite a rápida visualização dos esférulos característicos de Coccidioides spp. em amostras respiratórias, facilitando o diagnóstico imediato antes da cultura.\n\n**Outras opções:**  \nB. Giemsa é útil para parasitas sanguíneos, mas não ideal para esférulos de Coccidioides.  \nC. Kinyoun é para micobactérias ácido-resistentes, não para fungos.  \nD. Gram não cora bem os esférulos fúngicos, dificultando a identificação rápida.",
+            "explicacoes": {
+                "robo": [
+                    "El examen en fresco permite la rápida visualización de las esférulas características de Coccidioides spp en muestras respiratorias, facilitando el diagnóstico inmediato antes del cultivo — es la respuesta correcta.",
+                    "La tinción de Giemsa es útil para parásitos sanguíneos, pero no ideal para las esférulas de Coccidioides.",
+                    "La coloración de Kinyoun es para micobacterias ácido-resistentes, no para hongos.",
+                    "La coloración de Gram no tiñe bien las esférulas fúngicas, dificultando la identificación rápida."
+                ],
+                "fantasma": [
+                    "¡Esta! En fresco se ve rápido la esférula.",
+                    "Esa es de parásito de sangre.",
+                    "Esa es de micobacteria.",
+                    "Esa no tiñe bien el hongo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se ve rápido en fresco.",
+                    "Fijate: es de sangre.",
+                    "Dato curioso: es de micobacteria.",
+                    "Miau, no tiñe bien."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -10615,7 +10975,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Fibrose quística está associada à colonização pulmonar crônica por Pseudomonas aeruginosa, bactéria gram-negativa resistente e formadora de biofilme, que agrava a função pulmonar. Opção A está incorreta, pois Mycoplasma pneumoniae afeta crianças maiores, não menores de 1 ano. Opção B erra ao associar Haemophilus influenzae à pneumonia hospitalar, que é causada por bactérias gram-negativas resistentes e MRSA. Opção D está errada ao vincular Staphylococcus epidermidis à pneumonia em usuários de drogas endovenosas; o patógeno clássico é Staphylococcus aureus."
+            "feedback": "Resposta correta: C. Fibrose quística está associada à colonização pulmonar crônica por Pseudomonas aeruginosa, bactéria gram-negativa resistente e formadora de biofilme, que agrava a função pulmonar. Opção A está incorreta, pois Mycoplasma pneumoniae afeta crianças maiores, não menores de 1 ano. Opção B erra ao associar Haemophilus influenzae à pneumonia hospitalar, que é causada por bactérias gram-negativas resistentes e MRSA. Opção D está errada ao vincular Staphylococcus epidermidis à pneumonia em usuários de drogas endovenosas; o patógeno clássico é Staphylococcus aureus.",
+            "explicacoes": {
+                "robo": [
+                    "Mycoplasma pneumoniae afecta a niños mayores, no a menores de 1 año.",
+                    "La neumonía intrahospitalaria se asocia a bacterias Gram negativas resistentes y SARM, no principalmente a Haemophilus influenzae.",
+                    "La fibrosis quística se asocia a la colonización pulmonar crónica por Pseudomonas aeruginosa, bacteria Gram negativa resistente y formadora de biofilm, que agrava la función pulmonar — es la respuesta correcta.",
+                    "El patógeno clásico en usuarios de drogas endovenosas es Staphylococcus aureus, no Staphylococcus epidermidis."
+                ],
+                "fantasma": [
+                    "Ese es de niño más grande.",
+                    "Ese no es el de hospital.",
+                    "¡Esta! La Pseudomona en la fibrosis, la correcta.",
+                    "Ese es el aureus, no el epidermidis."
+                ],
+                "gato": [
+                    "Fijate: es de más grande.",
+                    "Dato curioso: no es ese.",
+                    "¡Ronroneo de aprobación! La Pseudomona.",
+                    "Miau, es el aureus."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -10641,7 +11021,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. Chlamydophila pneumoniae transmite-se via gotículas respiratórias entre humanos, não por contato com aves, que é característico de Chlamydophila psittaci.  \n\n**Outras opções corretas:**  \nA: O escarro é amostra adequada para identificar o agente etiológico na pneumonia.  \nC: Streptococcus pneumoniae é o agente bacteriano mais comum na pneumonia adquirida na comunidade.  \nD: Mycoplasma pneumoniae não possui parede celular, explicando sua resistência a antibióticos betalactâmicos."
+            "feedback": "**Resposta Correta:** B está incorreta. Chlamydophila pneumoniae transmite-se via gotículas respiratórias entre humanos, não por contato com aves, que é característico de Chlamydophila psittaci.  \n\n**Outras opções corretas:**  \nA: O escarro é amostra adequada para identificar o agente etiológico na pneumonia.  \nC: Streptococcus pneumoniae é o agente bacteriano mais comum na pneumonia adquirida na comunidade.  \nD: Mycoplasma pneumoniae não possui parede celular, explicando sua resistência a antibióticos betalactâmicos.",
+            "explicacoes": {
+                "robo": [
+                    "El esputo efectivamente es la muestra que se utiliza para identificar el agente etiológico.",
+                    "Chlamydophila pneumoniae se transmite por vía respiratoria entre humanos, no por contacto con aves de corral, que es característico de Chlamydophila psittaci — esta es la opción incorrecta.",
+                    "Efectivamente el agente etiológico más frecuente es Streptococcus pneumoniae.",
+                    "Efectivamente Mycoplasma pneumoniae carece de pared celular."
+                ],
+                "fantasma": [
+                    "Esa está bien, el esputo.",
+                    "¡Esta! Esa se contagia de persona, no de ave.",
+                    "Esa está bien, el neumococo.",
+                    "Esa está bien, sin pared."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es de persona a persona.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 14,
