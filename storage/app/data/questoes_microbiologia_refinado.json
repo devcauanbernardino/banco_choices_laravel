@@ -21183,7 +21183,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Streptococcus pneumoniae.  \nS. pneumoniae causa meningite bacteriana aguda com líquor turvo, devido à intensa inflamação, alto número de polimorfonucleares, proteínas elevadas e glicose diminuída.  \n\n**Outras opções:**  \nA. Herpes simplex-2 e B. Enterovirus causam meningite viral com líquor claro, pleocitose linfocitária e glicose normal.  \nD. Mycobacterium tuberculosis provoca meningite crônica com líquor claro ou levemente turvo, pleocitose linfocitária, proteínas altas e glicose baixa, mas sem turvação intensa."
+            "feedback": "**Resposta Correta:** C. Streptococcus pneumoniae.  \nS. pneumoniae causa meningite bacteriana aguda com líquor turvo, devido à intensa inflamação, alto número de polimorfonucleares, proteínas elevadas e glicose diminuída.  \n\n**Outras opções:**  \nA. Herpes simplex-2 e B. Enterovirus causam meningite viral com líquor claro, pleocitose linfocitária e glicose normal.  \nD. Mycobacterium tuberculosis provoca meningite crônica com líquor claro ou levemente turvo, pleocitose linfocitária, proteínas altas e glicose baixa, mas sem turvação intensa.",
+            "explicacoes": {
+                "robo": [
+                    "El virus herpes simple-2 causa meningitis viral con LCR claro, pleocitosis linfocitaria y glucosa normal.",
+                    "Los enterovirus causan meningitis viral con LCR claro, pleocitosis linfocitaria y glucosa normal.",
+                    "Streptococcus pneumoniae causa meningitis bacteriana aguda con LCR turbio, debido a la intensa inflamación, alto número de polimorfonucleares, proteínas elevadas y glucosa disminuida — es la respuesta correcta.",
+                    "Mycobacterium tuberculosis provoca meningitis crónica con LCR claro o levemente turbio, pleocitosis linfocitaria, proteínas altas y glucosa baja, pero sin turbidez intensa."
+                ],
+                "fantasma": [
+                    "Ese es claro.",
+                    "Ese es claro.",
+                    "¡Esta! Ese es el turbio con pus.",
+                    "Ese es claro o casi."
+                ],
+                "gato": [
+                    "Fijate: claro.",
+                    "Dato curioso: claro.",
+                    "¡Ronroneo de aprobación! El turbio.",
+                    "Miau, casi claro."
+                ]
+            }
         },
         {
             "numero": 62,
@@ -21209,7 +21229,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. A glicorraquia diminui apenas em meningites bacterianas, pois bactérias e células inflamatórias consomem glicose no líquor; em meningites virais, a glicose geralmente permanece normal.  \n\n**Outras opções:**  \nA está correta: testes rápidos de aglutinação detectam antígenos bacterianos comuns.  \nB está correta: coloração de Gram é positiva em 50-90% das meningites bacterianas, auxiliando na identificação.  \nD está correta: redução da clorurorraquia ocorre em meningites por Mycobacterium tuberculosis e Cryptococcus neoformans, útil para diferenciar casos crônicos."
+            "feedback": "**Resposta Correta:** C está incorreta. A glicorraquia diminui apenas em meningites bacterianas, pois bactérias e células inflamatórias consomem glicose no líquor; em meningites virais, a glicose geralmente permanece normal.  \n\n**Outras opções:**  \nA está correta: testes rápidos de aglutinação detectam antígenos bacterianos comuns.  \nB está correta: coloração de Gram é positiva em 50-90% das meningites bacterianas, auxiliando na identificação.  \nD está correta: redução da clorurorraquia ocorre em meningites por Mycobacterium tuberculosis e Cryptococcus neoformans, útil para diferenciar casos crônicos.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente existen métodos rápidos de aglutinación en el LCR para diagnosticar S. pneumoniae, N. meningitidis, S. agalactiae o H. influenzae b.",
+                    "Efectivamente la tinción de Gram del sedimento del LCR es positiva en el 50-90% de las meningitis bacterianas.",
+                    "La glucorraquia disminuye principalmente en las meningitis bacterianas, ya que las bacterias y las células inflamatorias consumen glucosa en el LCR; en las meningitis virales la glucosa generalmente permanece normal — esta es la opción incorrecta.",
+                    "Efectivamente la disminución de la clorurorraquia se observa en las meningitis por M. tuberculosis y Cryptococcus neoformans."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos tests rápidos.",
+                    "Esa está bien, ese porcentaje.",
+                    "¡Esta! Eso es solo con bacteria.",
+                    "Esa está bien, esos dos bichos."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Solo bacteria.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 63,
@@ -21235,7 +21275,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Vírus Sincicial Respiratório (VSR).  \nO VSR causa infecções respiratórias, especialmente em crianças, e raramente invade o sistema nervoso central, não sendo classicamente associado à meningite viral com LCR claro.  \n\n**Outras opções:**  \nB. Sarampo, C. Zika e D. Epstein-Barr são vírus conhecidos por causar meningite viral asséptica, caracterizada por LCR límpido, pleocitose linfocitária e ausência de bactérias.  \n\nAssim, o VSR é a única opção que não se relaciona classicamente à meningite com LCR claro."
+            "feedback": "**Resposta Correta:** A. Vírus Sincicial Respiratório (VSR).  \nO VSR causa infecções respiratórias, especialmente em crianças, e raramente invade o sistema nervoso central, não sendo classicamente associado à meningite viral com LCR claro.  \n\n**Outras opções:**  \nB. Sarampo, C. Zika e D. Epstein-Barr são vírus conhecidos por causar meningite viral asséptica, caracterizada por LCR límpido, pleocitose linfocitária e ausência de bactérias.  \n\nAssim, o VSR é a única opção que não se relaciona classicamente à meningite com LCR claro.",
+            "explicacoes": {
+                "robo": [
+                    "El virus sincicial respiratorio causa infecciones respiratorias, especialmente en niños, y rara vez invade el sistema nervioso central, no siendo clásicamente asociado a la meningitis viral con LCR claro — es la respuesta correcta.",
+                    "El sarampión es conocido por causar meningitis viral aséptica, con LCR límpido, pleocitosis linfocitaria y ausencia de bacterias.",
+                    "El Zika es conocido por causar meningitis viral aséptica, con LCR límpido, pleocitosis linfocitaria y ausencia de bacterias.",
+                    "El Epstein-Barr es conocido por causar meningitis viral aséptica, con LCR límpido, pleocitosis linfocitaria y ausencia de bacterias."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese casi no llega al cerebro.",
+                    "Ese sí da eso.",
+                    "Ese sí da eso.",
+                    "Ese sí da eso."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Casi no llega.",
+                    "Fijate: sí da.",
+                    "Dato curioso: sí da.",
+                    "Miau, sí da."
+                ]
+            }
         },
         {
             "numero": 64,
@@ -21261,7 +21321,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A inoculação de cultivos celulares com LCR para observar efeito citopático viral não é adequada para diagnóstico rápido da encefalite herpética, pois é lenta e pouco sensível.\n\n**Análise das outras opções:**  \nB está correta: PCR do líquor é o padrão-ouro, rápido e sensível.  \nC é válida, mas invasiva, usada em casos atípicos ou quando PCR é insuficiente.  \nD está incorreta, pois PCR e imunofluorescência são condutas diagnósticas apropriadas."
+            "feedback": "**Resposta Correta:** A inoculação de cultivos celulares com LCR para observar efeito citopático viral não é adequada para diagnóstico rápido da encefalite herpética, pois é lenta e pouco sensível.\n\n**Análise das outras opções:**  \nB está correta: PCR do líquor é o padrão-ouro, rápido e sensível.  \nC é válida, mas invasiva, usada em casos atípicos ou quando PCR é insuficiente.  \nD está incorreta, pois PCR e imunofluorescência são condutas diagnósticas apropriadas.",
+            "explicacoes": {
+                "robo": [
+                    "La inoculación de cultivos celulares con LCR para observar efecto citopático viral no es adecuada para diagnóstico rápido de la encefalitis herpética, ya que es lenta y poco sensible — esta es la respuesta correcta.",
+                    "La PCR del LCR es el estándar de oro, rápido y sensible para el diagnóstico.",
+                    "La biopsia cerebral es válida, aunque invasiva, usada en casos atípicos o cuando la PCR es insuficiente.",
+                    "La PCR y la inmunofluorescencia son conductas diagnósticas apropiadas, por lo que afirmar que ninguna lo es resulta incorrecto."
+                ],
+                "fantasma": [
+                    "¡Esta! Eso tarda cuatro días, no sirve rápido.",
+                    "Esa sí sirve, es rápida.",
+                    "Esa sirve, aunque invasiva.",
+                    "No, esas dos sí sirven."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Tarda mucho.",
+                    "Fijate: sí sirve.",
+                    "Dato curioso: sirve.",
+                    "Miau, sí sirven."
+                ]
+            }
         },
         {
             "numero": 65,
@@ -21287,7 +21367,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A encefalite herpética não ocorre só em imunodeprimidos; pode afetar indivíduos imunocompetentes, causada pela reativação do HSV-1.  \n\n**Outras opções:**  \nB) Correto – causa necrose hemorrágica nos lobos temporais.  \nC) Correto – resulta da reativação do HSV-1 nos gânglios sensoriais com migração ao cérebro.  \nD) Correto – é a principal causa viral de encefalite esporádica em adultos.  \n\nA única incorreta é a de que a encefalite herpética ocorre exclusivamente em pacientes imunodeprimidos."
+            "feedback": "**Resposta Correta:** A encefalite herpética não ocorre só em imunodeprimidos; pode afetar indivíduos imunocompetentes, causada pela reativação do HSV-1.  \n\n**Outras opções:**  \nB) Correto – causa necrose hemorrágica nos lobos temporais.  \nC) Correto – resulta da reativação do HSV-1 nos gânglios sensoriais com migração ao cérebro.  \nD) Correto – é a principal causa viral de encefalite esporádica em adultos.  \n\nA única incorreta é a de que a encefalite herpética ocorre exclusivamente em pacientes imunodeprimidos.",
+            "explicacoes": {
+                "robo": [
+                    "La encefalitis herpética no ocurre únicamente en inmunodeprimidos; también puede afectar a individuos inmunocompetentes, causada por la reactivación del HSV-1 — esta es la opción incorrecta.",
+                    "Efectivamente provoca necrosis hemorrágica en los lóbulos temporales.",
+                    "Efectivamente ocurre como reactivación del virus latente en el ganglio de Gasser, que migra en forma retrógrada hasta los lóbulos temporales.",
+                    "Efectivamente es la más frecuente de las encefalitis esporádicas del adulto."
+                ],
+                "fantasma": [
+                    "¡Esta! Le da a cualquiera, no solo al débil.",
+                    "Esa está bien, quema esa zona.",
+                    "Esa está bien, viene del ganglio.",
+                    "Esa está bien, la más común."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Le da a cualquiera.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 66,
@@ -21313,7 +21413,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Streptococcus agalactiae é o principal agente bacteriano da meningite neonatal, transmitido da mãe para o bebê durante o parto. A triagem e profilaxia intraparto são essenciais para prevenção.  \n\n**Outras opções:**  \nB. Neisseria gonorrhoeae causa conjuntivite neonatal, não meningite.  \nC. Citomegalovírus provoca infecções congênitas, mas não meningite bacteriana neonatal.  \nD. Vírus da rubéola causa malformações congênitas, não meningite neonatal."
+            "feedback": "**Resposta Correta:** A. Streptococcus agalactiae é o principal agente bacteriano da meningite neonatal, transmitido da mãe para o bebê durante o parto. A triagem e profilaxia intraparto são essenciais para prevenção.  \n\n**Outras opções:**  \nB. Neisseria gonorrhoeae causa conjuntivite neonatal, não meningite.  \nC. Citomegalovírus provoca infecções congênitas, mas não meningite bacteriana neonatal.  \nD. Vírus da rubéola causa malformações congênitas, não meningite neonatal.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus agalactiae es el principal agente bacteriano de la meningitis neonatal, transmitido de la madre al bebé durante el parto; el tamizaje y la profilaxis intraparto son esenciales para la prevención — es la respuesta correcta.",
+                    "Neisseria gonorrhoeae causa conjuntivitis neonatal, no meningitis.",
+                    "El citomegalovirus provoca infecciones congénitas, pero no meningitis bacteriana neonatal.",
+                    "El virus de la rubéola causa malformaciones congénitas, no meningitis neonatal."
+                ],
+                "fantasma": [
+                    "¡Esta! El del parto, la correcta.",
+                    "Ese es del ojito.",
+                    "Ese es de nacimiento, no meninge.",
+                    "Ese es de malformación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El del parto.",
+                    "Fijate: es del ojo.",
+                    "Dato curioso: no es esto.",
+                    "Miau, es otra cosa."
+                ]
+            }
         },
         {
             "numero": 67,
@@ -21339,7 +21459,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "A opção B está incorreta porque leucocitose no hemograma indica infecção, mas não identifica o agente causador da meningite bacteriana. O diagnóstico etiológico depende de exames do líquor, hemoculturas e técnicas moleculares. As opções A, C e D estão corretas: A) maior volume de LCR aumenta a sensibilidade do cultivo; C) hemoculturas seriadas têm cerca de 50% de sensibilidade; D) leucocitose com neutrófilos no líquor causa turbidez, comum na meningite bacteriana."
+            "feedback": "A opção B está incorreta porque leucocitose no hemograma indica infecção, mas não identifica o agente causador da meningite bacteriana. O diagnóstico etiológico depende de exames do líquor, hemoculturas e técnicas moleculares. As opções A, C e D estão corretas: A) maior volume de LCR aumenta a sensibilidade do cultivo; C) hemoculturas seriadas têm cerca de 50% de sensibilidade; D) leucocitose com neutrófilos no líquor causa turbidez, comum na meningite bacteriana.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la sensibilidad de las técnicas de cultivo depende del volumen de LCR enviado al laboratorio.",
+                    "La leucocitosis en el hemograma indica infección, pero no identifica el agente causante de la meningitis bacteriana; el diagnóstico etiológico depende de estudios del LCR, hemocultivos y técnicas moleculares — esta es la opción incorrecta.",
+                    "Efectivamente los hemocultivos seriados tienen una sensibilidad de alrededor del 50%.",
+                    "Efectivamente la leucocitosis con predominio de neutrófilos en el LCR provoca la turbidez, común en la meningitis bacteriana."
+                ],
+                "fantasma": [
+                    "Esa está bien, más volumen ayuda.",
+                    "¡Esta! Eso no dice cuál bicho es.",
+                    "Esa está bien, la mitad.",
+                    "Esa está bien, por eso se pone turbio."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No dice cuál es.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 68,
@@ -21365,7 +21505,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A alternativa A está incorreta: o diagnóstico da raiva não é confirmado pela detecção de anticorpos no soro, pois a doença é fatal antes da resposta imune detectável. O diagnóstico definitivo é feito por métodos diretos, como imunofluorescência em tecido nervoso ou RT-PCR. As opções B, C e D estão corretas: o reservatório são mamíferos com ciclos urbano e silvestre; o vírus se dissemina via axonal retrógrada; e o período de incubação varia conforme a distância da mordida ao sistema nervoso central."
+            "feedback": "A alternativa A está incorreta: o diagnóstico da raiva não é confirmado pela detecção de anticorpos no soro, pois a doença é fatal antes da resposta imune detectável. O diagnóstico definitivo é feito por métodos diretos, como imunofluorescência em tecido nervoso ou RT-PCR. As opções B, C e D estão corretas: o reservatório são mamíferos com ciclos urbano e silvestre; o vírus se dissemina via axonal retrógrada; e o período de incubação varia conforme a distância da mordida ao sistema nervoso central.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico de la rabia no se confirma mediante la detección de anticuerpos en el suero, ya que la enfermedad es fatal antes de que se genere una respuesta inmune detectable; el diagnóstico definitivo se realiza por métodos directos, como inmunofluorescencia en tejido nervioso o RT-PCR — esta es la opción incorrecta.",
+                    "Efectivamente el reservorio son mamíferos de sangre caliente, con ciclos urbano y silvestre.",
+                    "Efectivamente el virus se disemina por vía axonal retrógrada.",
+                    "Efectivamente el período de incubación varía según la distancia entre el sitio de ingreso del virus y el sistema nervioso central."
+                ],
+                "fantasma": [
+                    "¡Esta! Se muere antes de tener anticuerpo.",
+                    "Esa está bien, animal de sangre caliente.",
+                    "Esa está bien, por el nervio.",
+                    "Esa está bien, depende de la distancia."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se muere antes.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 69,
@@ -21391,7 +21551,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta correta:** D. Streptococcus pyogenes.  \nStreptococcus pyogenes raramente causa abscessos no sistema nervoso central, apesar de ser comum em outras infecções.  \n\n**Outras opções:**  \nA. Nocardia spp. — causa frequente de abscessos cerebrais, especialmente em imunocomprometidos.  \nB. Staphylococcus aureus — principal agente de abscessos cerebrais, comum após trauma ou disseminação hematogênica.  \nC. Bacteroides spp. — anaeróbios que causam abscessos cerebrais, frequentemente por infecções odontogênicas ou sinusais.  \n\nStreptococcus pyogen"
+            "feedback": "**Resposta correta:** D. Streptococcus pyogenes.  \nStreptococcus pyogenes raramente causa abscessos no sistema nervoso central, apesar de ser comum em outras infecções.  \n\n**Outras opções:**  \nA. Nocardia spp. — causa frequente de abscessos cerebrais, especialmente em imunocomprometidos.  \nB. Staphylococcus aureus — principal agente de abscessos cerebrais, comum após trauma ou disseminação hematogênica.  \nC. Bacteroides spp. — anaeróbios que causam abscessos cerebrais, frequentemente por infecções odontogênicas ou sinusais.  \n\nStreptococcus pyogen",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Nocardia spp. es causa frecuente de abscesos cerebrales, especialmente en inmunocomprometidos.",
+                    "Efectivamente Staphylococcus aureus es el principal agente de abscesos cerebrales, común tras traumatismo o diseminación hematógena.",
+                    "Efectivamente Bacteroides spp. son anaerobios que causan abscesos cerebrales, frecuentemente por infecciones odontogénicas o sinusales.",
+                    "Streptococcus pyogenes rara vez causa abscesos en el sistema nervioso central, a pesar de ser común en otras infecciones — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, en el débil.",
+                    "Esa está bien, el principal.",
+                    "Esa está bien, el de los dientes.",
+                    "¡Esta! Ese casi no da absceso ahí."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Casi no da eso."
+                ]
+            }
         },
         {
             "numero": 70,
@@ -21417,7 +21597,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A forma pulmonar da criptococose é geralmente assintomática ou com poucos sintomas, apresentando evolução subaguda ou crônica, não aguda, especialmente em imunocompetentes. \n\n**Outras opções:**  \nA está correta ao indicar que a forma mais comum é a meningoencefalite subaguda/crônica em imunossuprimidos.  \nB é correta ao destacar o exame direto do líquor com tinta da china para visualizar leveduras encapsuladas.  \nD é correta ao citar a detecção do antígeno capsular por aglutinação em látex como método diagnóstico sensível e específico."
+            "feedback": "**Resposta Correta:** C. A forma pulmonar da criptococose é geralmente assintomática ou com poucos sintomas, apresentando evolução subaguda ou crônica, não aguda, especialmente em imunocompetentes. \n\n**Outras opções:**  \nA está correta ao indicar que a forma mais comum é a meningoencefalite subaguda/crônica em imunossuprimidos.  \nB é correta ao destacar o exame direto do líquor com tinta da china para visualizar leveduras encapsuladas.  \nD é correta ao citar a detecção do antígeno capsular por aglutinação em látex como método diagnóstico sensível e específico.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la criptococosis puede manifestarse como meningoencefalitis subaguda o crónica, especialmente en pacientes con inmunosupresión severa.",
+                    "Efectivamente en el examen con tinta china del LCR es posible observar levaduras capsuladas características.",
+                    "La forma pulmonar de la criptococosis es generalmente asintomática o con pocos síntomas, de evolución subaguda o crónica, no aguda, especialmente en inmunocompetentes — esta es la opción incorrecta.",
+                    "Efectivamente la detección de antígeno capsular en suero o LCR mediante aglutinación con látex es un método diagnóstico útil."
+                ],
+                "fantasma": [
+                    "Esa está bien, en el bajo de defensas.",
+                    "Esa está bien, se ve con la tinta.",
+                    "¡Esta! El pulmón casi no da síntoma.",
+                    "Esa está bien, el test del látex."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Casi sin síntoma.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 71,
@@ -21443,7 +21643,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. A coloração de Gram do líquor identifica rapidamente diplococos Gram-positivos, com alta sensibilidade e especificidade na meningite pneumocócica aguda.  \nErrado: A) Antígeno urinário não é específico para meningite; B) Cultura do líquor é padrão-ouro, mas pode falhar após antibióticos; D) PCR é sensível e útil, especialmente pós-tratamento, sendo importante no diagnóstico."
+            "feedback": "Resposta correta: C. A coloração de Gram do líquor identifica rapidamente diplococos Gram-positivos, com alta sensibilidade e especificidade na meningite pneumocócica aguda.  \nErrado: A) Antígeno urinário não é específico para meningite; B) Cultura do líquor é padrão-ouro, mas pode falhar após antibióticos; D) PCR é sensível e útil, especialmente pós-tratamento, sendo importante no diagnóstico.",
+            "explicacoes": {
+                "robo": [
+                    "El antígeno urinario no es específico para meningitis.",
+                    "El cultivo de LCR es el estándar de oro, pero puede fallar tras el inicio de antibióticos, no siendo siempre positivo.",
+                    "La observación de diplococos grampositivos en el LCR mediante tinción de Gram identifica rápidamente la bacteria, con alta sensibilidad y especificidad en casos agudos — es la respuesta correcta.",
+                    "La PCR es sensible y útil, especialmente después del tratamiento, siendo importante en el diagnóstico."
+                ],
+                "fantasma": [
+                    "Esa no sirve tanto.",
+                    "No siempre da positivo.",
+                    "¡Esta! Se ve el bichito rápido.",
+                    "Sí se usa, y bien."
+                ],
+                "gato": [
+                    "Fijate: no sirve tanto.",
+                    "Dato curioso: no siempre.",
+                    "¡Ronroneo de aprobación! Se ve rápido.",
+                    "Miau, sí se usa."
+                ]
+            }
         },
         {
             "numero": 72,
@@ -21469,7 +21689,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta correta:** A, B e C estão corretas, pois Taenia solium causa neurocisticercose; Cryptococcus neoformans provoca meningoencefalite em imunocomprometidos; e Staphylococcus aureus está ligado a abscessos cerebrais pós-cirúrgicos.  \n**Incorreta:** D. Toxoplasma gondii não está associado a encefalomielite autolimitada em imunocompetentes; sua infecção no SNC é grave e ocorre principalmente em imunossuprimidos. Portanto, a opção D apresenta uma associação errada."
+            "feedback": "**Resposta correta:** A, B e C estão corretas, pois Taenia solium causa neurocisticercose; Cryptococcus neoformans provoca meningoencefalite em imunocomprometidos; e Staphylococcus aureus está ligado a abscessos cerebrais pós-cirúrgicos.  \n**Incorreta:** D. Toxoplasma gondii não está associado a encefalomielite autolimitada em imunocompetentes; sua infecção no SNC é grave e ocorre principalmente em imunossuprimidos. Portanto, a opção D apresenta uma associação errada.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Taenia solium causa neurocisticercosis.",
+                    "Efectivamente Cryptococcus neoformans provoca meningoencefalitis en inmunocomprometidos.",
+                    "Efectivamente Staphylococcus aureus está ligado a abscesos cerebrales posquirúrgicos.",
+                    "Toxoplasma gondii no está asociado a una encefalomielitis autolimitada en inmunocompetentes; su infección en el SNC es grave y ocurre principalmente en inmunosuprimidos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, la lombriz.",
+                    "Esa está bien, el hongo.",
+                    "Esa está bien, después de operar.",
+                    "¡Esta! Ese es grave, no autolimitado."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es grave."
+                ]
+            }
         },
         {
             "numero": 73,
@@ -21495,7 +21735,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Cryptococcus gattii causa meningoencefalite em imunocompetentes, diferente do C. neoformans, que afeta imunossuprimidos. Está presente em ambientes tropicais e atinge o sistema nervoso central ao ser inalado.  \n\n**Análise das Incorretas:**  \nB. Toxoplasma causa abscessos, não lesões quísticas ocupantes de espaço.  \nC. Neurocisticercose é causada pela Taenia solium, não pela Taenia saginata.  \nD. Echovirus 30 causa meningite viral com líquor claro; líquor turvo indica meningite bacteriana."
+            "feedback": "**Resposta Correta:** A. Cryptococcus gattii causa meningoencefalite em imunocompetentes, diferente do C. neoformans, que afeta imunossuprimidos. Está presente em ambientes tropicais e atinge o sistema nervoso central ao ser inalado.  \n\n**Análise das Incorretas:**  \nB. Toxoplasma causa abscessos, não lesões quísticas ocupantes de espaço.  \nC. Neurocisticercose é causada pela Taenia solium, não pela Taenia saginata.  \nD. Echovirus 30 causa meningite viral com líquor claro; líquor turvo indica meningite bacteriana.",
+            "explicacoes": {
+                "robo": [
+                    "Cryptococcus gattii causa meningoencefalitis en inmunocompetentes, a diferencia de C. neoformans, que afecta a inmunosuprimidos; está presente en ambientes tropicales y alcanza el sistema nervioso central por inhalación — es la respuesta correcta.",
+                    "Toxoplasma gondii causa abscesos, no lesiones quísticas ocupantes de espacio.",
+                    "La neurocisticercosis es causada por Taenia solium, no por Taenia saginata.",
+                    "Echovirus 30 causa meningitis viral con LCR claro; el LCR turbio indica meningitis bacteriana."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese ataca al sano.",
+                    "Ese hace absceso, no quiste.",
+                    "Es la otra Taenia, la del cerdo.",
+                    "Ese es claro, no turbio."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Ataca al sano.",
+                    "Fijate: hace absceso.",
+                    "Dato curioso: es la del cerdo.",
+                    "Miau, es claro."
+                ]
+            }
         },
         {
             "numero": 74,
@@ -21521,7 +21781,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta: D está incorreta.** A meningite por Mycobacterium tuberculosis apresenta líquor claro ou levemente turvo, pleocitose mononuclear, glicose baixa e proteínas elevadas. O perfil turvo, com pleocitose neutrofílica, glicose elevada e proteínas baixas não condiz com tuberculose meníngea, que é uma infecção granulomatosa crônica.  \n\n**Outras opções corretas:**  \nA (viral por enterovírus): líquor claro, pleocitose linfocitária, glicose normal ou levemente baixa, proteínas levemente elevadas.  \nB (fúngica por Cryptococcus): líquor claro, pleoc"
+            "feedback": "**Resposta Correta: D está incorreta.** A meningite por Mycobacterium tuberculosis apresenta líquor claro ou levemente turvo, pleocitose mononuclear, glicose baixa e proteínas elevadas. O perfil turvo, com pleocitose neutrofílica, glicose elevada e proteínas baixas não condiz com tuberculose meníngea, que é uma infecção granulomatosa crônica.  \n\n**Outras opções corretas:**  \nA (viral por enterovírus): líquor claro, pleocitose linfocitária, glicose normal ou levemente baixa, proteínas levemente elevadas.  \nB (fúngica por Cryptococcus): líquor claro, pleoc",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la meningitis viral por enterovirus presenta LCR claro, celularidad mononuclear y glucosa normal o levemente disminuida.",
+                    "Efectivamente la meningitis fúngica por Cryptococcus neoformans presenta LCR claro, pleocitosis mononuclear, glucorraquia baja y proteínas elevadas.",
+                    "Efectivamente la meningitis bacteriana por Streptococcus pneumoniae presenta LCR turbio, pleocitosis a predominio de polimorfonucleares, glucorraquia baja y proteínas elevadas.",
+                    "La meningitis por Mycobacterium tuberculosis presenta LCR claro o levemente turbio, pleocitosis mononuclear, glucosa baja y proteínas elevadas; el perfil turbio con pleocitosis neutrofílica, glucosa elevada y proteínas bajas no corresponde a la tuberculosis meníngea, que es una infección granulomatosa crónica — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos valores.",
+                    "Esa está bien, esos valores.",
+                    "Esa está bien, esos valores.",
+                    "¡Esta! Esos valores están al revés."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Al revés."
+                ]
+            }
         },
         {
             "numero": 75,
@@ -21547,7 +21827,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. HSV-2 causa meningite viral com líquor claro, pleocitose mononuclear e glicose normal, típico de infecção viral.  \n\nOpção A (Neisseria meningitidis) está errada pois líquor bacteriano é turvo, com glicose diminuída e pleocitose neutrofílica.  \nOpção B (Cryptococcus neoformans) está errada pois apresenta pleocitose mononuclear e glicose diminuída, não neutrofílica e normal.  \nOpção D (Streptococcus pneumoniae) está errada pois líquor é turvo, proteínas elevadas e glicose diminuída, não elevada."
+            "feedback": "Resposta correta: C. HSV-2 causa meningite viral com líquor claro, pleocitose mononuclear e glicose normal, típico de infecção viral.  \n\nOpção A (Neisseria meningitidis) está errada pois líquor bacteriano é turvo, com glicose diminuída e pleocitose neutrofílica.  \nOpção B (Cryptococcus neoformans) está errada pois apresenta pleocitose mononuclear e glicose diminuída, não neutrofílica e normal.  \nOpção D (Streptococcus pneumoniae) está errada pois líquor é turvo, proteínas elevadas e glicose diminuída, não elevada.",
+            "explicacoes": {
+                "robo": [
+                    "Neisseria meningitidis produce un LCR bacteriano turbio, con glucosa disminuida y pleocitosis neutrofílica, no glucosa normal ni mononuclear.",
+                    "Cryptococcus neoformans presenta pleocitosis mononuclear y glucosa disminuida, no neutrofílica ni normal.",
+                    "El virus herpes simple tipo 2 causa meningitis viral con LCR claro, pleocitosis mononuclear y glucosa normal, típico de infección viral — es la respuesta correcta.",
+                    "Streptococcus pneumoniae presenta LCR turbio, proteínas elevadas y glucosa disminuida, no elevada."
+                ],
+                "fantasma": [
+                    "Ese es turbio y baja azúcar.",
+                    "Ese es al revés, mononuclear y baja.",
+                    "¡Esta! Claro y azúcar normal.",
+                    "Esa baja el azúcar, no la sube."
+                ],
+                "gato": [
+                    "Fijate: es turbio.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Claro y normal.",
+                    "Miau, baja el azúcar."
+                ]
+            }
         },
         {
             "numero": 76,
@@ -21573,7 +21873,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Listeria monocytogenes / Sobrenadante / Aglutinação em látex para antígeno capsular está incorreta. Listeria não possui antígeno capsular detectável por aglutinação em látex no sobrenadante do LCR; seu diagnóstico usa cultura, PCR ou exame microscópico do sedimento.  \nOpções corretas:  \nA. Haemophilus influenzae tipo b – sedimento do LCR com coloração de Gram;  \nB. Cryptococcus neoformans – sedimento com tinta chinesa para cápsula;  \nC. Enterovírus – sobrenadante com PCR multiplex para RNA viral."
+            "feedback": "Resposta correta: D. Listeria monocytogenes / Sobrenadante / Aglutinação em látex para antígeno capsular está incorreta. Listeria não possui antígeno capsular detectável por aglutinação em látex no sobrenadante do LCR; seu diagnóstico usa cultura, PCR ou exame microscópico do sedimento.  \nOpções corretas:  \nA. Haemophilus influenzae tipo b – sedimento do LCR com coloração de Gram;  \nB. Cryptococcus neoformans – sedimento com tinta chinesa para cápsula;  \nC. Enterovírus – sobrenadante com PCR multiplex para RNA viral.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Haemophilus influenzae b se detecta en el sedimento del LCR mediante tinción de Gram.",
+                    "Efectivamente Cryptococcus neoformans se detecta en el sedimento con tinta china para visualizar la cápsula.",
+                    "Efectivamente el enterovirus se detecta en el sobrenadante mediante PCR multiplex para ARN viral.",
+                    "Listeria monocytogenes no posee antígeno capsular detectable por aglutinación en látex en el sobrenadante del LCR; su diagnóstico usa cultivo, PCR o examen microscópico del sedimento — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, con el Gram.",
+                    "Esa está bien, con la tinta.",
+                    "Esa está bien, con el PCR.",
+                    "¡Esta! Esa bacteria no tiene esa cápsula."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No tiene cápsula."
+                ]
+            }
         },
         {
             "numero": 77,
@@ -21599,7 +21919,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. *Streptococcus pneumoniae* é o principal agente de meningite em fraturas da base do crânio, pois a fratura permite a entrada dessa bactéria da flora nasofaríngea ao sistema nervoso central.  \n\n**Outras opções:**  \nB. *Haemophilus influenzae* tipo B é menos comum hoje devido à vacinação e não predomina nesse contexto.  \nC. *Listeria monocytogenes* afeta grupos específicos e não está associada a fraturas cranianas.  \nD. Echovírus causam meningite viral, não bacteriana, e não estão relacionados a fraturas de base do crânio."
+            "feedback": "**Resposta Correta:** A. *Streptococcus pneumoniae* é o principal agente de meningite em fraturas da base do crânio, pois a fratura permite a entrada dessa bactéria da flora nasofaríngea ao sistema nervoso central.  \n\n**Outras opções:**  \nB. *Haemophilus influenzae* tipo B é menos comum hoje devido à vacinação e não predomina nesse contexto.  \nC. *Listeria monocytogenes* afeta grupos específicos e não está associada a fraturas cranianas.  \nD. Echovírus causam meningite viral, não bacteriana, e não estão relacionados a fraturas de base do crânio.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pneumoniae es el principal agente de meningitis en fracturas de base de cráneo, ya que la fractura permite la entrada de esta bacteria de la flora nasofaríngea al sistema nervioso central — es la respuesta correcta.",
+                    "Haemophilus influenzae tipo b es menos común hoy debido a la vacunación y no predomina en este contexto.",
+                    "Listeria monocytogenes afecta a grupos específicos y no está asociada a fracturas craneales.",
+                    "Echovirus causa meningitis viral, no bacteriana, y no está relacionado con fracturas de base de cráneo."
+                ],
+                "fantasma": [
+                    "¡Esta! Entra por la fractura, la correcta.",
+                    "Ese ya casi no aparece.",
+                    "Ese es de otro grupo.",
+                    "Ese es viral, no de hueso roto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Entra por la fractura.",
+                    "Fijate: casi no aparece.",
+                    "Dato curioso: otro grupo.",
+                    "Miau, es viral."
+                ]
+            }
         },
         {
             "numero": 78,
@@ -21625,7 +21965,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta correta:** D está incorreta. Haemophilus influenzae tipo b (Hib) causa meningite principalmente em crianças não vacinadas e imunodeficientes, sendo rara em adultos jovens imunocompetentes.\n\n**Outras opções corretas:**  \nA. Streptococcus agalactiae é comum em neonatos menores de 1 mês.  \nB. Listeria monocytogenes afeta adultos maiores e imunocomprometidos.  \nC. Neisseria meningitidis é frequente em lactentes e adolescentes.\n\nPortanto, Hib não é causa comum de meningite em adultos jovens imunocompetentes."
+            "feedback": "**Resposta correta:** D está incorreta. Haemophilus influenzae tipo b (Hib) causa meningite principalmente em crianças não vacinadas e imunodeficientes, sendo rara em adultos jovens imunocompetentes.\n\n**Outras opções corretas:**  \nA. Streptococcus agalactiae é comum em neonatos menores de 1 mês.  \nB. Listeria monocytogenes afeta adultos maiores e imunocomprometidos.  \nC. Neisseria meningitidis é frequente em lactentes e adolescentes.\n\nPortanto, Hib não é causa comum de meningite em adultos jovens imunocompetentes.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Streptococcus agalactiae es común en neonatos menores de 1 mes.",
+                    "Efectivamente Listeria monocytogenes afecta a adultos mayores e inmunocomprometidos.",
+                    "Efectivamente Neisseria meningitidis es frecuente en lactantes y adolescentes.",
+                    "Haemophilus influenzae tipo b causa meningitis principalmente en niños no vacunados e inmunodeficientes, siendo rara en adultos jóvenes inmunocompetentes — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, el recién nacido.",
+                    "Esa está bien, el viejo.",
+                    "Esa está bien, el bebé y el adolescente.",
+                    "¡Esta! Ese casi no le da al joven sano."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Casi no le da."
+                ]
+            }
         },
         {
             "numero": 79,
@@ -21651,7 +22011,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "A alternativa B está incorreta: o HSV-2 é a causa mais comum de meningite viral por herpes simples, especialmente em adultos jovens, enquanto o HSV-1 está mais associado à encefalite. As outras opções estão corretas: A) enterovírus são a principal causa de meningite viral em crianças; C) no líquor viral, há pleocitose linfocitária, glicose normal e proteínas normais ou levemente elevadas; D) a PCR no líquor é sensível e específica para detectar HSV, VZV e enterovírus, facilitando o diagnóstico rápido."
+            "feedback": "A alternativa B está incorreta: o HSV-2 é a causa mais comum de meningite viral por herpes simples, especialmente em adultos jovens, enquanto o HSV-1 está mais associado à encefalite. As outras opções estão corretas: A) enterovírus são a principal causa de meningite viral em crianças; C) no líquor viral, há pleocitose linfocitária, glicose normal e proteínas normais ou levemente elevadas; D) a PCR no líquor é sensível e específica para detectar HSV, VZV e enterovírus, facilitando o diagnóstico rápido.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente los enterovirus son la causa más frecuente de meningitis viral, especialmente en niños menores de 1 año.",
+                    "El HSV-2 es la causa más común de meningitis viral por herpes simple, especialmente en adultos jóvenes, mientras que el HSV-1 está más asociado a la encefalitis — esta es la opción incorrecta.",
+                    "Efectivamente en la meningitis viral el LCR suele ser claro, con pleocitosis mononuclear, glucosa normal y proteínas normales o levemente elevadas.",
+                    "Efectivamente la PCR en LCR permite detectar virus como HSV, VZV y enterovirus con alta sensibilidad y especificidad."
+                ],
+                "fantasma": [
+                    "Esa está bien, el más chiquito.",
+                    "¡Esta! Es al revés, el 2 es más común.",
+                    "Esa está bien, esos valores.",
+                    "Esa está bien, detecta esos tres."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Al revés.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 80,
@@ -21677,7 +22057,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta porque o diagnóstico da meningite meningocócica não usa detecção de anticorpos contra antígenos capsulares no LCR, mas sim métodos diretos como coloração de Gram, cultura e PCR para identificar Neisseria meningitidis. As outras opções estão corretas: A associa Streptococcus pneumoniae à coloração de Gram e cultura em ágar sangue; B relaciona Cryptococcus neoformans à tinta china e detecção de antígeno capsular; C associa Enterovirus à PCR multiplex no sobrenadante do LCR."
+            "feedback": "Resposta correta: D está incorreta porque o diagnóstico da meningite meningocócica não usa detecção de anticorpos contra antígenos capsulares no LCR, mas sim métodos diretos como coloração de Gram, cultura e PCR para identificar Neisseria meningitidis. As outras opções estão corretas: A associa Streptococcus pneumoniae à coloração de Gram e cultura em ágar sangue; B relaciona Cryptococcus neoformans à tinta china e detecção de antígeno capsular; C associa Enterovirus à PCR multiplex no sobrenadante do LCR.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Streptococcus pneumoniae se asocia a la tinción de Gram y cultivo en agar sangre.",
+                    "Efectivamente Cryptococcus neoformans se asocia a la tinta china y a la detección de antígeno capsular.",
+                    "Efectivamente el enterovirus se asocia a la PCR multiplex en el sobrenadante del LCR.",
+                    "El diagnóstico de la meningitis meningocócica no usa la detección de anticuerpos contra antígenos capsulares en el LCR, sino métodos directos como tinción de Gram, cultivo y PCR para identificar Neisseria meningitidis — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, con el Gram.",
+                    "Esa está bien, con la tinta.",
+                    "Esa está bien, con el PCR.",
+                    "¡Esta! No se busca así, se busca directo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Se busca directo."
+                ]
+            }
         },
         {
             "numero": 81,
