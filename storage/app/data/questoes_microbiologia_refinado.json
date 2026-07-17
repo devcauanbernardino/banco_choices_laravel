@@ -8307,7 +8307,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Contato com animais em fazenda.  \nA criança tem tinea capitis, e os pais, lesões dermatofíticas, sugerindo infecção familiar por dermatófitos zoofílicos, como Microsporum canis, transmitidos por animais. O histórico de contato com animais é essencial para a investigação.\n\n**Opções Incorretas:**  \nA) Viagens a praias não se relacionam com dermatofitoses.  \nC) Onicomicose por Candida não indica risco de dermatofitose, pois Candida é levedura, não dermatófito.  \nD) Liendres indicam pediculose, condição parasitária, não fúngica."
+            "feedback": "**Resposta Correta:** B. Contato com animais em fazenda.  \nA criança tem tinea capitis, e os pais, lesões dermatofíticas, sugerindo infecção familiar por dermatófitos zoofílicos, como Microsporum canis, transmitidos por animais. O histórico de contato com animais é essencial para a investigação.\n\n**Opções Incorretas:**  \nA) Viagens a praias não se relacionam com dermatofitoses.  \nC) Onicomicose por Candida não indica risco de dermatofitose, pois Candida é levedura, não dermatófito.  \nD) Liendres indicam pediculose, condição parasitária, não fúngica.",
+            "explicacoes": {
+                "robo": [
+                    "Los viajes a playas tropicales no se relacionan con las dermatofitosis zoofílicas.",
+                    "El antecedente de haber visitado una granja y tenido contacto con animales es clave, ya que el cuadro familiar sugiere infección por dermatofitos zoofílicos como Microsporum canis, transmitidos por animales — es la respuesta correcta.",
+                    "La onicomicosis por Candida albicans no indica riesgo de dermatofitosis, ya que Candida es una levadura, no un dermatofito.",
+                    "El hallazgo de liendres indica pediculosis, una condición parasitaria, no fúngica."
+                ],
+                "fantasma": [
+                    "No tiene que ver con playa.",
+                    "¡Esta! El contacto con animal, ahí está el bicho.",
+                    "Esa Candida no es dermatofito.",
+                    "Eso es piojo, no hongo."
+                ],
+                "gato": [
+                    "Fijate: no tiene que ver.",
+                    "¡Ronroneo de aprobación! El contacto con el animal.",
+                    "Dato curioso: no es dermatofito.",
+                    "Miau, es de piojo."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -8333,7 +8353,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Escamas e pelos com vaina branca, coletados por raspagem, são a amostra ideal para diagnóstico da tinea capitis, pois contêm os fungos dermatófitos para exame direto e cultura.  \n\nOutras opções são inadequadas:  \nA) Hisopado da secreção purulenta pode conter bactérias e células inflamatórias, dificultando o isolamento do fungo.  \nC) Biópsia é invasiva e desnecessária na maioria dos casos, indicada só em situações atípicas.  \nD) Punção aspirativa não é apropriada para lesões superficiais como o querion Celso."
+            "feedback": "Resposta correta: B. Escamas e pelos com vaina branca, coletados por raspagem, são a amostra ideal para diagnóstico da tinea capitis, pois contêm os fungos dermatófitos para exame direto e cultura.  \n\nOutras opções são inadequadas:  \nA) Hisopado da secreção purulenta pode conter bactérias e células inflamatórias, dificultando o isolamento do fungo.  \nC) Biópsia é invasiva e desnecessária na maioria dos casos, indicada só em situações atípicas.  \nD) Punção aspirativa não é apropriada para lesões superficiais como o querion Celso.",
+            "explicacoes": {
+                "robo": [
+                    "El hisopado de secreción purulenta puede contener bacterias y células inflamatorias, dificultando el aislamiento del hongo.",
+                    "Las escamas y pelos con vaina blanca alrededor, tomados por raspado, son la muestra ideal para el diagnóstico de tinea capitis, ya que contienen los hongos dermatofitos para examen directo y cultivo — es la respuesta correcta.",
+                    "La biopsia es invasiva e innecesaria en la mayoría de los casos, indicada solo en situaciones atípicas.",
+                    "La punción-aspiración no es apropiada para lesiones superficiales como el querión de Celso."
+                ],
+                "fantasma": [
+                    "Eso trae bacteria, no sirve.",
+                    "¡Esta! Vaina blanca por raspado, la correcta.",
+                    "Eso es invasivo de más.",
+                    "Eso no es para lesión superficial."
+                ],
+                "gato": [
+                    "Fijate: trae bacteria.",
+                    "¡Ronroneo de aprobación! Vaina blanca, raspado.",
+                    "Dato curioso: es invasivo.",
+                    "Miau, no es para eso."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -8359,7 +8399,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Parto domiciliar é risco para tétano neonatal; vacinação materna previne.\n\nO tétano neonatal ocorre por contaminação do coto umbilical em partos com higiene inadequada. A vacinação materna durante a gestação transfere anticorpos ao recém-nascido, protegendo-o.  \n\n**Erradas:**  \nA. Tétano não é transmitido por mordidas de animais, e profilaxia é feita no paciente, não no animal.  \nB. Tétano não é doença alimentar; ingestão de esporos não causa infecção.  \nC. Limpar feridas é essencial; evitar limpeza favorece a toxina."
+            "feedback": "**Resposta Correta:** D. Parto domiciliar é risco para tétano neonatal; vacinação materna previne.\n\nO tétano neonatal ocorre por contaminação do coto umbilical em partos com higiene inadequada. A vacinação materna durante a gestação transfere anticorpos ao recém-nascido, protegendo-o.  \n\n**Erradas:**  \nA. Tétano não é transmitido por mordidas de animais, e profilaxia é feita no paciente, não no animal.  \nB. Tétano não é doença alimentar; ingestão de esporos não causa infecção.  \nC. Limpar feridas é essencial; evitar limpeza favorece a toxina.",
+            "explicacoes": {
+                "robo": [
+                    "El tétanos no se transmite por mordeduras de animales, y la profilaxis se realiza en el paciente, no en la mascota.",
+                    "El tétanos no es una enfermedad alimentaria; la ingestión de esporas no causa infección.",
+                    "Limpiar las heridas es esencial; evitar la limpieza favorece la producción de toxina.",
+                    "El parto domiciliario es un factor de riesgo para el tétanos neonatal, por contaminación del cordón umbilical en partos con higiene inadecuada; la vacunación materna durante el embarazo transfiere anticuerpos al recién nacido, protegiéndolo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso no es así, la mordida no da tétanos.",
+                    "Comer eso no da tétanos.",
+                    "Al revés: hay que limpiar sí o sí.",
+                    "¡Esta! La vacuna en la mamá protege al bebé."
+                ],
+                "gato": [
+                    "Fijate: no es así.",
+                    "Dato curioso: no da tétanos.",
+                    "Miau, al revés.",
+                    "¡Ronroneo de aprobación! La vacuna protege al bebé."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -8385,7 +8445,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Nocardia brasiliensis.  \nNocardia brasiliensis é um microrganismo aeróbio, filamentosos e parcialmente ácido-resistente, causador de infecções cutâneas crônicas, como nocardiose, sem caracterizar infecções necrotizantes agudas.  \n\n**Outras opções:**  \nA. Streptococcus pyogenes é um agente clássico da fasceíte necrosante, com rápida destruição tecidual.  \nB. Clostridium perfringens causa gangrena gasosa, infecção necrotizante grave com formação de gás.  \nD. Staphylococcus aureus, especialmente cepas PVL, pode causar infec"
+            "feedback": "**Resposta Correta:** C. Nocardia brasiliensis.  \nNocardia brasiliensis é um microrganismo aeróbio, filamentosos e parcialmente ácido-resistente, causador de infecções cutâneas crônicas, como nocardiose, sem caracterizar infecções necrotizantes agudas.  \n\n**Outras opções:**  \nA. Streptococcus pyogenes é um agente clássico da fasceíte necrosante, com rápida destruição tecidual.  \nB. Clostridium perfringens causa gangrena gasosa, infecção necrotizante grave com formação de gás.  \nD. Staphylococcus aureus, especialmente cepas PVL, pode causar infec",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pyogenes efectivamente es un agente clásico de fascitis necrotizante, con rápida destrucción tisular.",
+                    "Clostridium perfringens efectivamente causa gangrena gaseosa, infección necrotizante grave con formación de gas.",
+                    "Nocardia brasiliensis es un microorganismo aeróbico, filamentoso y parcialmente ácido resistente, causante de infecciones cutáneas crónicas (nocardiosis), sin caracterizar infecciones necrotizantes agudas — esta es la excepción.",
+                    "Staphylococcus aureus, especialmente cepas productoras de leucocidina de Panton-Valentine, efectivamente puede causar infecciones necrotizantes agudas."
+                ],
+                "fantasma": [
+                    "Ese sí es de necrosis rápida.",
+                    "Ese sí es de gangrena gaseosa.",
+                    "¡Esta! Ese es crónico, no agudo.",
+                    "Ese sí puede causar necrosis."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "¡Ronroneo de aprobación! Es crónico.",
+                    "Miau, sí puede."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -8411,7 +8491,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Trichophyton rubrum é um fungo dermatófito que causa infecções superficiais, não celulite, que é uma infecção bacteriana profunda.  \nOpções incorretas:  \nB. Staphylococcus aureus, C. Streptococcus pyogenes e D. Streptococcus do grupo D são bactérias que podem causar celulite, uma infecção aguda da pele e tecido subcutâneo após lesões. Portanto, apenas a opção A não está associada à etiologia da celulite."
+            "feedback": "Resposta correta: A. Trichophyton rubrum é um fungo dermatófito que causa infecções superficiais, não celulite, que é uma infecção bacteriana profunda.  \nOpções incorretas:  \nB. Staphylococcus aureus, C. Streptococcus pyogenes e D. Streptococcus do grupo D são bactérias que podem causar celulite, uma infecção aguda da pele e tecido subcutâneo após lesões. Portanto, apenas a opção A não está associada à etiologia da celulite.",
+            "explicacoes": {
+                "robo": [
+                    "Trichophyton rubrum es un hongo dermatofito que causa infecciones superficiales, no celulitis, que es una infección bacteriana profunda — esta es la excepción.",
+                    "Staphylococcus aureus efectivamente puede causar celulitis, infección aguda de piel y tejido subcutáneo tras lesiones.",
+                    "Streptococcus pyogenes efectivamente puede causar celulitis.",
+                    "Streptococcus del grupo D efectivamente puede causar celulitis."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese es de hongo superficial, no de celulitis.",
+                    "Ese sí causa celulitis.",
+                    "Ese sí causa celulitis.",
+                    "Ese sí causa celulitis."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es superficial.",
+                    "Fijate: sí causa.",
+                    "Dato curioso: sí causa.",
+                    "Miau, sí causa."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -8437,7 +8537,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Histoplasma capsulatum é um fungo dimórfico que causa histoplasmose pulmonar por inalação de conídios, não dermatofitoses.  \n**Outras opções:** A. Trichophyton rubrum, B. Microsporum canis e C. Epidermophyton floccosum são dermatófitos que causam infecções superficiais em pele, unhas e cabelos, típicas das dermatofitoses. Portanto, apenas Histoplasma capsulatum não produz dermatofitoses."
+            "feedback": "**Resposta Correta:** D. Histoplasma capsulatum é um fungo dimórfico que causa histoplasmose pulmonar por inalação de conídios, não dermatofitoses.  \n**Outras opções:** A. Trichophyton rubrum, B. Microsporum canis e C. Epidermophyton floccosum são dermatófitos que causam infecções superficiais em pele, unhas e cabelos, típicas das dermatofitoses. Portanto, apenas Histoplasma capsulatum não produz dermatofitoses.",
+            "explicacoes": {
+                "robo": [
+                    "Trichophyton rubrum efectivamente es un dermatofito causante de dermatofitosis.",
+                    "Microsporum canis efectivamente es un dermatofito causante de dermatofitosis.",
+                    "Epidermophyton floccosum efectivamente es un dermatofito causante de dermatofitosis.",
+                    "Histoplasma capsulatum es un hongo dimórfico que causa histoplasmosis pulmonar por inhalación de conidios, no dermatofitosis — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Ese sí es dermatofito.",
+                    "Ese sí es dermatofito.",
+                    "Ese sí es dermatofito.",
+                    "¡Esta! Ese es de pulmón, no de piel así."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es.",
+                    "¡Ronroneo de aprobación! Es de pulmón."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -8463,7 +8583,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Raspado da vesícula com imunofluorescência indireta, que detecta diretamente o vírus Varicela-Zoster nas lesões, garantindo diagnóstico rápido e específico.  \nA (Tzanck/Giemsa) identifica alterações celulares comuns a herpesvírus, mas não confirma VZV e tem menor sensibilidade.  \nC (IgG sérica) indica exposição prévia, não infecção ativa.  \nD (PCR em sangue) pode ser negativa devido à baixa viremia no herpes zóster; PCR em lesões é mais confiável."
+            "feedback": "Resposta correta: B. Raspado da vesícula com imunofluorescência indireta, que detecta diretamente o vírus Varicela-Zoster nas lesões, garantindo diagnóstico rápido e específico.  \nA (Tzanck/Giemsa) identifica alterações celulares comuns a herpesvírus, mas não confirma VZV e tem menor sensibilidade.  \nC (IgG sérica) indica exposição prévia, não infecção ativa.  \nD (PCR em sangue) pode ser negativa devido à baixa viremia no herpes zóster; PCR em lesões é mais confiável.",
+            "explicacoes": {
+                "robo": [
+                    "El método de Tzanck/Giemsa identifica alteraciones celulares comunes a herpesvirus, pero no confirma específicamente VZV y tiene menor sensibilidad.",
+                    "El raspado de la vesícula con inmunofluorescencia indirecta con anticuerpos específicos detecta directamente el virus varicela-zóster en las lesiones, garantizando un diagnóstico rápido y específico — es la respuesta correcta.",
+                    "La detección de IgG sérica indica exposición previa, no infección activa.",
+                    "La PCR en sangre puede ser negativa por la baja viremia en el herpes zóster; la PCR en lesiones es más confiable."
+                ],
+                "fantasma": [
+                    "Eso no confirma bien, sensibilidad baja.",
+                    "¡Esta! Inmunofluorescencia directa en la lesión, la correcta.",
+                    "Eso dice si tuvo antes, no ahora.",
+                    "En sangre puede fallar, mejor en la lesión."
+                ],
+                "gato": [
+                    "Fijate: sensibilidad baja.",
+                    "¡Ronroneo de aprobación! Inmunofluorescencia en la lesión.",
+                    "Dato curioso: es previa.",
+                    "Miau, en sangre falla."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -8489,7 +8629,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Por contato com lesões ativas de outra pessoa.\n\nO HSV-1 transmite-se principalmente pelo contato direto com vesículas ou secreções infectadas, entrando por pequenas lesões na pele ou mucosas. Não ocorre transmissão por aerossóis (A), acidentes perfurocortantes são raros e mais ligados a vírus sanguíneos (C), e o vírus não é transmitido por insetos vetores como flebótomos (D)."
+            "feedback": "**Resposta Correta:** B. Por contato com lesões ativas de outra pessoa.\n\nO HSV-1 transmite-se principalmente pelo contato direto com vesículas ou secreções infectadas, entrando por pequenas lesões na pele ou mucosas. Não ocorre transmissão por aerossóis (A), acidentes perfurocortantes são raros e mais ligados a vírus sanguíneos (C), e o vírus não é transmitido por insetos vetores como flebótomos (D).",
+            "explicacoes": {
+                "robo": [
+                    "No hay transmisión por aerosoles con el HSV-1.",
+                    "El HSV-1 se transmite principalmente por contacto directo con vesículas o secreciones infectadas, entrando por pequeñas lesiones en piel o mucosas — es la respuesta correcta.",
+                    "Los accidentes punzo-cortantes son raros y se asocian más a virus transmitidos por sangre, no al HSV-1.",
+                    "El virus no se transmite por insectos vectores como los flebótomos."
+                ],
+                "fantasma": [
+                    "No es por el aire eso.",
+                    "¡Esta! Contacto directo con la lesión, la correcta.",
+                    "Eso es raro, no es de acá.",
+                    "No es por mosquito eso."
+                ],
+                "gato": [
+                    "Fijate: no es aéreo.",
+                    "¡Ronroneo de aprobación! Contacto directo.",
+                    "Dato curioso: es raro.",
+                    "Miau, no es de mosquito."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -8515,7 +8675,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Pitiríase versicolor é uma infecção fúngica causada por Malassezia, fungos da microbiota normal que se tornam patogênicos. Não é ectoparasitose, pois não envolve parasitas externos. As opções A (Tungiasis), C (Pediculose) e D (Escabiose) são ectoparasitoses, causadas por pulga, piolhos e ácaro, respectivamente, que infestam a pele. Assim, tungiasis, pediculose e escabiose são infestações por ectoparasitas, enquanto pitiríase versicolor é uma micose."
+            "feedback": "Resposta correta: B. Pitiríase versicolor é uma infecção fúngica causada por Malassezia, fungos da microbiota normal que se tornam patogênicos. Não é ectoparasitose, pois não envolve parasitas externos. As opções A (Tungiasis), C (Pediculose) e D (Escabiose) são ectoparasitoses, causadas por pulga, piolhos e ácaro, respectivamente, que infestam a pele. Assim, tungiasis, pediculose e escabiose são infestações por ectoparasitas, enquanto pitiríase versicolor é uma micose.",
+            "explicacoes": {
+                "robo": [
+                    "La tungiasis efectivamente es una ectoparasitosis causada por una pulga.",
+                    "La pitiriasis versicolor es una infección fúngica causada por Malassezia, un hongo de la microbiota normal que se vuelve patógeno; no es una ectoparasitosis, ya que no involucra parásitos externos — esta es la excepción.",
+                    "La pediculosis efectivamente es una ectoparasitosis causada por piojos.",
+                    "La escabiosis efectivamente es una ectoparasitosis causada por un ácaro."
+                ],
+                "fantasma": [
+                    "Esa sí es de bicho.",
+                    "¡Esta! Esa es de hongo, no de bicho.",
+                    "Esa sí es de bicho.",
+                    "Esa sí es de bicho."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es de hongo.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -8541,7 +8721,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A transmissão do vírus Varicela-Zóster (VZV) ocorre principalmente por via aérea, através de gotículas respiratórias, e também pelo contato direto com lesões vesiculares, não apenas por contato estreito. As opções B, C e D estão corretas: o VZV é contagioso desde 1-2 dias antes das lesões até que estejam cobertas por crostas; o líquido das vesículas contém vírus em alta concentração; e as lesões podem ser sobreinfectadas por bactérias devido ao ato de coçar. A única incorreta é a opção A, que limita erroneamente a transmissão ao contato próximo."
+            "feedback": "A transmissão do vírus Varicela-Zóster (VZV) ocorre principalmente por via aérea, através de gotículas respiratórias, e também pelo contato direto com lesões vesiculares, não apenas por contato estreito. As opções B, C e D estão corretas: o VZV é contagioso desde 1-2 dias antes das lesões até que estejam cobertas por crostas; o líquido das vesículas contém vírus em alta concentração; e as lesões podem ser sobreinfectadas por bactérias devido ao ato de coçar. A única incorreta é a opção A, que limita erroneamente a transmissão ao contato próximo.",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión del virus varicela-zóster ocurre principalmente por vía aérea, mediante gotículas respiratorias, y también por contacto directo con las lesiones, no solo por contacto estrecho — esta es la opción incorrecta.",
+                    "Efectivamente es transmisible desde el final del período de incubación hasta el tercer día del estado de costra.",
+                    "Las vesículas efectivamente están repletas de virus infectivos.",
+                    "Las lesiones cutáneas efectivamente pueden sobreinfectarse con bacterias por el rascado."
+                ],
+                "fantasma": [
+                    "¡Esta! También es por el aire, no solo contacto.",
+                    "Esa está bien, hasta la costra.",
+                    "Esa está bien, llenas de virus.",
+                    "Esa está bien, se sobreinfecta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! También es por el aire.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -8567,7 +8767,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. A coloração de Giemsa não é adequada para detectar fungos em unhas, pois é usada para células sanguíneas e parasitas. O diagnóstico de onicomicose deve ser feito por exame direto com KOH (opções A e C) e cultivo em meios específicos (opção B). O KOH dissolve queratina, facilitando a visualização dos fungos, e o cultivo confirma a infecção e identifica o agente. Assim, métodos A, B e C são corretos e padrão para diagnóstico fúngico; a opção D é incorreta."
+            "feedback": "Resposta correta: D. A coloração de Giemsa não é adequada para detectar fungos em unhas, pois é usada para células sanguíneas e parasitas. O diagnóstico de onicomicose deve ser feito por exame direto com KOH (opções A e C) e cultivo em meios específicos (opção B). O KOH dissolve queratina, facilitando a visualização dos fungos, e o cultivo confirma a infecção e identifica o agente. Assim, métodos A, B e C são corretos e padrão para diagnóstico fúngico; a opção D é incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "El extendido de escamas de uñas con tratamiento en caliente (KOH) efectivamente es un método adecuado de diagnóstico.",
+                    "El cultivo de escamas en agar de Lactrimel efectivamente permite observar el desarrollo de colonias fúngicas.",
+                    "El extendido de escamas de planta de los pies con observación de filamentos tras tratamiento con KOH efectivamente es un método adecuado.",
+                    "La tinción de Giemsa no es adecuada para detectar hongos en uñas, ya que se usa para células sanguíneas y parásitos; el diagnóstico de onicomicosis se hace por examen directo con KOH y cultivo — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa sí sirve, con KOH.",
+                    "Esa sí sirve, en Lactrimel.",
+                    "Esa sí sirve, filamento con KOH.",
+                    "¡Esta! Giemsa no es para hongo de uña."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve.",
+                    "¡Ronroneo de aprobación! Giemsa no es de acá."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -8593,7 +8813,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. O sarampo causa viremia sistêmica, permitindo a disseminação do vírus e as manifestações clínicas típicas.  \n\n**Análise das outras opções:**  \nA está correta: o vírus entra pelo trato respiratório via gotículas.  \nB está correta: o vírus infecta células do sistema imunológico, causando imunossupressão.  \nC está correta: pneumonia é a complicação mais comum, podendo ser viral ou bacteriana secundária.  \n\nAssim, apenas a opção D nega a viremia, essencial para a patogênese do sarampo."
+            "feedback": "**Resposta Correta:** D está incorreta. O sarampo causa viremia sistêmica, permitindo a disseminação do vírus e as manifestações clínicas típicas.  \n\n**Análise das outras opções:**  \nA está correta: o vírus entra pelo trato respiratório via gotículas.  \nB está correta: o vírus infecta células do sistema imunológico, causando imunossupressão.  \nC está correta: pneumonia é a complicação mais comum, podendo ser viral ou bacteriana secundária.  \n\nAssim, apenas a opção D nega a viremia, essencial para a patogênese do sarampo.",
+            "explicacoes": {
+                "robo": [
+                    "La principal vía de ingreso efectivamente es a través de secreciones respiratorias.",
+                    "El virus efectivamente infecta células dendríticas y monocitos, actuando como agente inmunodepresor.",
+                    "La complicación más frecuente efectivamente es la bronconeumonía viral primaria o bacteriana agregada.",
+                    "El sarampión causa viremia sistémica, permitiendo la diseminación del virus y las manifestaciones clínicas típicas, no se disemina solo de célula a célula sin viremia — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, por secreción.",
+                    "Esa está bien, baja defensas.",
+                    "Esa está bien, la neumonía.",
+                    "¡Esta! Sí hay viremia, se va por la sangre."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Sí hay viremia."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -8619,7 +8859,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. A pediculose é transmitida por contato físico direto, pois piolhos não saltam nem voam, apenas se agarram aos cabelos, especialmente em ambientes próximos como escolas.\n\n**Opções Incorretas:**  \nA está errada pois fatores do ectoparasita também influenciam a manifestação clínica, não só do hospedeiro.  \nC é incorreta porque Pediculus humanus capitis é um ectoparasita patogênico, não parte da microbiota normal.  \nD está errada pois o diagnóstico é clínico pela visualização dos piolhos ou lêndeas, não por teste cutâneo."
+            "feedback": "**Resposta Correta:** B. A pediculose é transmitida por contato físico direto, pois piolhos não saltam nem voam, apenas se agarram aos cabelos, especialmente em ambientes próximos como escolas.\n\n**Opções Incorretas:**  \nA está errada pois fatores do ectoparasita também influenciam a manifestação clínica, não só do hospedeiro.  \nC é incorreta porque Pediculus humanus capitis é um ectoparasita patogênico, não parte da microbiota normal.  \nD está errada pois o diagnóstico é clínico pela visualização dos piolhos ou lêndeas, não por teste cutâneo.",
+            "explicacoes": {
+                "robo": [
+                    "Tanto los factores del huésped como los del ectoparásito influyen en la manifestación clínica, no solo los del huésped.",
+                    "La transmisión efectivamente se efectúa por contacto físico muy estrecho, ya que los piojos no saltan ni vuelan, solo se aferran al cabello — es la respuesta correcta.",
+                    "Pediculus humanus capitis es un ectoparásito patógeno, no forma parte de la microbiota normal del cuero cabelludo.",
+                    "El diagnóstico es clínico, por visualización de los piojos o liendres, no por prueba cutánea."
+                ],
+                "fantasma": [
+                    "También influye el bicho, no solo el huésped.",
+                    "¡Esta! Contacto muy cercano, la correcta.",
+                    "Ese no es microbiota, es parásito.",
+                    "No es con prueba cutánea, es a simple vista."
+                ],
+                "gato": [
+                    "Fijate: también influye el bicho.",
+                    "¡Ronroneo de aprobación! Contacto cercano.",
+                    "Dato curioso: es parásito.",
+                    "Miau, es a simple vista."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -8645,7 +8905,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. As vesículas em exantemas virais contêm vírions infectantes, pois o vírus se replica nas células da pele, como na varicela e varíola.\n\n**Análise das outras opções:**  \nB, C e D estão corretas: B) maculopápulas do sarampo e rubéola resultam da resposta imunológica;  \nC) vesículas da doença mão-pé-boca contêm vírus;  \nD) vacina tríplice viral usa vírus atenuados para imunidade segura.  \n\nAssim, a única incorreta é a opção A."
+            "feedback": "**Resposta Correta:** A. As vesículas em exantemas virais contêm vírions infectantes, pois o vírus se replica nas células da pele, como na varicela e varíola.\n\n**Análise das outras opções:**  \nB, C e D estão corretas: B) maculopápulas do sarampo e rubéola resultam da resposta imunológica;  \nC) vesículas da doença mão-pé-boca contêm vírus;  \nD) vacina tríplice viral usa vírus atenuados para imunidade segura.  \n\nAssim, a única incorreta é a opção A.",
+            "explicacoes": {
+                "robo": [
+                    "Las vesículas en exantemas virales SÍ contienen viriones infectantes, ya que el virus se replica en las células de la piel, como en la varicela y la viruela — esta es la opción incorrecta.",
+                    "Efectivamente las maculopápulas del sarampión y la rubéola están mediadas por mecanismos inmunológicos.",
+                    "Efectivamente la enfermedad mano-pie-boca cursa con vesículas.",
+                    "Efectivamente la vacuna MMR está preparada con virus atenuados."
+                ],
+                "fantasma": [
+                    "¡Esta! Sí tienen virus adentro.",
+                    "Esa está bien, es inmunológico.",
+                    "Esa está bien, tiene vesícula.",
+                    "Esa está bien, es atenuada."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Sí tienen virus.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -8671,7 +8951,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. O vírus replica sim no pâncreas. O vírus da caxumba replica inicialmente no epitélio das vias aéreas superiores (A), causa inflamação e aumento das parótidas com congestão do ducto de Stenon (B) e pode provocar meningite asséptica (D). A única afirmativa incorreta é a C, que nega a replicação viral no pâncreas, local onde pode ocorrer pancreatite viral, uma complicação conhecida da parotidite."
+            "feedback": "Resposta correta: C. O vírus replica sim no pâncreas. O vírus da caxumba replica inicialmente no epitélio das vias aéreas superiores (A), causa inflamação e aumento das parótidas com congestão do ducto de Stenon (B) e pode provocar meningite asséptica (D). A única afirmativa incorreta é a C, que nega a replicação viral no pâncreas, local onde pode ocorrer pancreatite viral, uma complicação conhecida da parotidite.",
+            "explicacoes": {
+                "robo": [
+                    "El virus efectivamente replica inicialmente en el epitelio faringoamigdalino.",
+                    "Las parótidas efectivamente se agrandan por inflamación, con congestión de la desembocadura del conducto de Stenon.",
+                    "El virus de la parotiditis SÍ replica en el páncreas, pudiendo causar pancreatitis viral, una complicación conocida de la parotiditis — esta es la excepción.",
+                    "Efectivamente no son infrecuentes los casos de meningitis aséptica causados por este virus."
+                ],
+                "fantasma": [
+                    "Esa está bien, ahí replica primero.",
+                    "Esa está bien, se hincha la parótida.",
+                    "¡Esta! Sí replica en el páncreas.",
+                    "Esa está bien, puede dar meningitis."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Sí replica ahí.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -8697,7 +8997,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A alternativa A está incorreta: o vírus do sarampo possui apenas um sorotipo, garantindo imunidade cruzada e eficácia da vacina. As alternativas B, C e D estão corretas: B descreve corretamente a formação de sincícios nas células infectadas; C apresenta as manchas de Koplik como sinal clínico típico na mucosa bucal; D informa adequadamente o período de incubação entre 5 e 14 dias. Portanto, a única afirmação errada é a de múltiplos sorotipos do vírus."
+            "feedback": "A alternativa A está incorreta: o vírus do sarampo possui apenas um sorotipo, garantindo imunidade cruzada e eficácia da vacina. As alternativas B, C e D estão corretas: B descreve corretamente a formação de sincícios nas células infectadas; C apresenta as manchas de Koplik como sinal clínico típico na mucosa bucal; D informa adequadamente o período de incubação entre 5 e 14 dias. Portanto, a única afirmação errada é a de múltiplos sorotipos do vírus.",
+            "explicacoes": {
+                "robo": [
+                    "El virus del sarampión posee un único serotipo, lo que garantiza inmunidad cruzada y la eficacia de la vacuna — esta es la opción incorrecta.",
+                    "Efectivamente el efecto citopático son las células sinciciales, aunque no es patognomónico.",
+                    "Las manchas de Koplik efectivamente se observan a la altura de los segundos premolares inferiores, como focos de necrosis por respuesta inmune.",
+                    "Efectivamente el período de incubación del sarampión es de aproximadamente 5 a 12 días."
+                ],
+                "fantasma": [
+                    "¡Esta! Es un solo serotipo, no tres.",
+                    "Esa está bien, sincicio.",
+                    "Esa está bien, mancha de Koplik.",
+                    "Esa está bien, esos días."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es uno solo.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -8723,7 +9043,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A exotoxina tetanospasmina inibe a liberação de neurotransmissores inibitórios (GABA e glicina), causando hiperexcitabilidade dos neurônios motores e espasmos musculares típicos do tétano.\n\n**Outras opções:**\n\nA: A bactéria não invade o sistema nervoso central; apenas a toxina se dissemina.  \nB: Coagulação intravascular disseminada não está relacionada ao tétano.  \nD: A microglia não é ativada diretamente na patogênese do tétano, que é neurotóxica, não inflamatória."
+            "feedback": "**Resposta Correta:** C. A exotoxina tetanospasmina inibe a liberação de neurotransmissores inibitórios (GABA e glicina), causando hiperexcitabilidade dos neurônios motores e espasmos musculares típicos do tétano.\n\n**Outras opções:**\n\nA: A bactéria não invade o sistema nervoso central; apenas a toxina se dissemina.  \nB: Coagulação intravascular disseminada não está relacionada ao tétano.  \nD: A microglia não é ativada diretamente na patogênese do tétano, que é neurotóxica, não inflamatória.",
+            "explicacoes": {
+                "robo": [
+                    "La bacteria no invade el sistema nervioso central; solo la toxina se disemina.",
+                    "La coagulación intravascular diseminada no está relacionada con el tétanos.",
+                    "La exotoxina tetanospasmina inhibe la liberación de neurotransmisores inhibitorios (GABA y glicina), causando hiperexcitabilidad de las neuronas motoras y los espasmos musculares típicos del tétanos — es la respuesta correcta.",
+                    "La microglía no es activada directamente en la patogenia del tétanos, que es neurotóxica, no inflamatoria."
+                ],
+                "fantasma": [
+                    "La bacteria no llega ahí, es solo la toxina.",
+                    "Eso no tiene que ver.",
+                    "¡Esta! La toxina bloquea al neurotransmisor.",
+                    "Eso no es lo que pasa."
+                ],
+                "gato": [
+                    "Fijate: no llega ahí.",
+                    "Dato curioso: no tiene que ver.",
+                    "¡Ronroneo de aprobación! Bloquea el neurotransmisor.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -8749,7 +9089,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A inalação de esporos não é via comum para Clostridium tetani, pois o ambiente aeróbico das vias respiratórias impede sua germinação. A infecção ocorre quando esporos penetram em tecidos anaeróbicos, como feridas profundas.\n\n**Outras opções:**  \nA, B e D são vias válidas: feridas punzantes, queimaduras com tecido necrótico e feridas cirúrgicas mal esterilizadas permitem ambiente anaeróbico para germinação e produção da toxina tetânica.  \nAssim, apenas a inalação não é porta de entrada para o C. tetani."
+            "feedback": "**Resposta Correta:** C. A inalação de esporos não é via comum para Clostridium tetani, pois o ambiente aeróbico das vias respiratórias impede sua germinação. A infecção ocorre quando esporos penetram em tecidos anaeróbicos, como feridas profundas.\n\n**Outras opções:**  \nA, B e D são vias válidas: feridas punzantes, queimaduras com tecido necrótico e feridas cirúrgicas mal esterilizadas permitem ambiente anaeróbico para germinação e produção da toxina tetânica.  \nAssim, apenas a inalação não é porta de entrada para o C. tetani.",
+            "explicacoes": {
+                "robo": [
+                    "Las heridas punzantes con objetos contaminados efectivamente son puerta de entrada del C. tetani.",
+                    "Las quemaduras expuestas a tierra o polvo efectivamente son puerta de entrada.",
+                    "La inhalación de esporas no es una vía común, ya que el ambiente aeróbico de las vías respiratorias impide su germinación; la infección requiere que las esporas penetren en tejidos anaeróbicos — esta es la excepción.",
+                    "Las heridas quirúrgicas mal esterilizadas efectivamente son puerta de entrada."
+                ],
+                "fantasma": [
+                    "Esa sí es puerta.",
+                    "Esa sí es puerta.",
+                    "¡Esta! Eso no germina en el aire.",
+                    "Esa sí es puerta."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "¡Ronroneo de aprobación! No germina en el aire.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -8775,7 +9135,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O vírus da varicela-zóster permanece latente nos gânglios sensoriais dos nervos periféricos, não na medula óssea ou linfócitos T, onde a latência não ocorre.  \n\n**Outras opções:**  \nB está correta: varicela pode causar pneumonia bacteriana secundária.  \nC está correta: lesões cutâneas são altamente contagiosas por contato e gotículas.  \nD está correta: vacina com vírus vivo atenuado previne ou reduz a gravidade da doença."
+            "feedback": "**Resposta Correta:** A. O vírus da varicela-zóster permanece latente nos gânglios sensoriais dos nervos periféricos, não na medula óssea ou linfócitos T, onde a latência não ocorre.  \n\n**Outras opções:**  \nB está correta: varicela pode causar pneumonia bacteriana secundária.  \nC está correta: lesões cutâneas são altamente contagiosas por contato e gotículas.  \nD está correta: vacina com vírus vivo atenuado previne ou reduz a gravidade da doença.",
+            "explicacoes": {
+                "robo": [
+                    "El virus varicela-zóster permanece latente en los ganglios sensoriales de los nervios periféricos, no en la médula ósea ni en los linfocitos T circulantes — esta es la opción incorrecta.",
+                    "Efectivamente puede desarrollarse una neumonía bacteriana hasta 20 días después de la enfermedad.",
+                    "Las lesiones cutáneas efectivamente son altamente contagiosas.",
+                    "Efectivamente existe una vacuna contra la varicela con virus atenuados."
+                ],
+                "fantasma": [
+                    "¡Esta! Es en el ganglio nervioso, no en la médula.",
+                    "Esa está bien, hasta 20 días.",
+                    "Esa está bien, muy contagiosas.",
+                    "Esa está bien, atenuada."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es en el ganglio nervioso.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -8801,7 +9181,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Não é possível distinguir reativação do HSV-1 de herpes zóster apenas pelo exame morfológico das células do raspado das vesículas, pois ambas apresentam células multinucleadas e alterações citopáticas semelhantes. A diferenciação exige métodos laboratoriais específicos, como PCR, cultura viral ou imunofluorescência.\n\n**Outras opções:**\n\nA, B e C estão corretas: herpes zóster afeta principalmente dermatomos torácicos e pode envolver o nervo trigêmeo; neurite pós-herpética causa dor persistente; e o vírus varicela-zóster reativa-se em imunodeprimidos ou idosos."
+            "feedback": "**Resposta Correta:** D. Não é possível distinguir reativação do HSV-1 de herpes zóster apenas pelo exame morfológico das células do raspado das vesículas, pois ambas apresentam células multinucleadas e alterações citopáticas semelhantes. A diferenciação exige métodos laboratoriais específicos, como PCR, cultura viral ou imunofluorescência.\n\n**Outras opções:**\n\nA, B e C estão corretas: herpes zóster afeta principalmente dermatomos torácicos e pode envolver o nervo trigêmeo; neurite pós-herpética causa dor persistente; e o vírus varicela-zóster reativa-se em imunodeprimidos ou idosos.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el zóster no necesariamente se da en el tronco, también puede ser oftálmico.",
+                    "La neuritis post-herpética efectivamente es una de las complicaciones más frecuentes del zóster.",
+                    "El zóster efectivamente es la reactivación del virus varicela como consecuencia de un episodio de inmunodepresión.",
+                    "No es posible distinguir la reactivación del HSV-1 de un herpes zóster solo por el examen morfológico de las células del raspado de las vesículas, ya que ambas presentan células multinucleadas y alteraciones citopáticas similares; se requieren métodos específicos como PCR, cultivo viral o inmunofluorescencia — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, puede ser oftálmico.",
+                    "Esa está bien, la neuritis.",
+                    "Esa está bien, reactivación por inmunodepresión.",
+                    "¡Esta! No se distinguen solo por la forma de la célula."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No se distinguen así."
+                ]
+            }
         },
         {
             "numero": 19,
