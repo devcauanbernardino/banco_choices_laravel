@@ -12907,7 +12907,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "A opção B está incorreta, pois a punção e drenagem dos seios paranasais é um procedimento invasivo, reservado para casos graves ou refratários, não sendo necessário para todos os pacientes imunocompetentes com sinusite bacteriana. O diagnóstico geralmente é clínico e, se necessário, complementado por exames de imagem. As opções A, C e D estão corretas: a sinusite bacteriana dura mais que a viral; os principais agentes são Streptococcus pneumoniae, Haemophilus influenzae e Moraxella catarrhalis; e o cultivo ajuda na identificação do agente, mas não é rotina."
+            "feedback": "A opção B está incorreta, pois a punção e drenagem dos seios paranasais é um procedimento invasivo, reservado para casos graves ou refratários, não sendo necessário para todos os pacientes imunocompetentes com sinusite bacteriana. O diagnóstico geralmente é clínico e, se necessário, complementado por exames de imagem. As opções A, C e D estão corretas: a sinusite bacteriana dura mais que a viral; os principais agentes são Streptococcus pneumoniae, Haemophilus influenzae e Moraxella catarrhalis; e o cultivo ajuda na identificação do agente, mas não é rotina.",
+            "explicacoes": {
+                "robo": [
+                    "Las sinusitis de etiología bacteriana efectivamente presentan una evolución clínica más prolongada que las virales.",
+                    "La punción y drenaje de los senos es un procedimiento invasivo, reservado para casos graves o refractarios, no siendo necesario en todos los pacientes inmunocompetentes con sinusitis bacteriana; el diagnóstico suele ser clínico — esta es la opción incorrecta.",
+                    "Streptococcus pneumoniae, Haemophilus influenzae y Moraxella catarrhalis efectivamente son los agentes etiológicos más frecuentes.",
+                    "El cultivo de las muestras junto con pruebas bioquímicas efectivamente permite el diagnóstico etiológico microbiológico."
+                ],
+                "fantasma": [
+                    "Esa está bien, dura más.",
+                    "¡Esta! No hace falta en todos, solo en graves.",
+                    "Esa está bien, esos agentes.",
+                    "Esa está bien, cultivo con bioquímica."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Solo en graves.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -12933,7 +12953,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O diagnóstico definitivo da difteria é feito pelo isolamento do *Corynebacterium diphtheriae* e confirmação da toxina, não pela detecção de anticorpos, que pode ser negativa no início ou influenciada por vacinação.\n\n**Análise das outras opções:**  \nA) Correta. A vacina usa toxoide, toxina inativada que gera imunidade.  \nB) Correta. Pseudomembranas cinza-esbranquiçadas são sinal clínico típico.  \nC) Correta. A toxina causa danos sistêmicos graves (neuropatia, nefropatia, miocardite).\n\nAssim, apenas a opção D está incorreta."
+            "feedback": "**Resposta Correta:** D. O diagnóstico definitivo da difteria é feito pelo isolamento do *Corynebacterium diphtheriae* e confirmação da toxina, não pela detecção de anticorpos, que pode ser negativa no início ou influenciada por vacinação.\n\n**Análise das outras opções:**  \nA) Correta. A vacina usa toxoide, toxina inativada que gera imunidade.  \nB) Correta. Pseudomembranas cinza-esbranquiçadas são sinal clínico típico.  \nC) Correta. A toxina causa danos sistêmicos graves (neuropatia, nefropatia, miocardite).\n\nAssim, apenas a opção D está incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "La vacuna contra la difteria efectivamente es un toxoide bacteriano.",
+                    "Efectivamente se presenta con pseudomembranas grisáceas en amígdalas y faringe, permitiendo el diagnóstico presuntivo.",
+                    "Corynebacterium diphtheriae efectivamente produce una toxina que puede causar daño al SNC, riñón y corazón.",
+                    "El diagnóstico de certeza se realiza mediante el aislamiento de Corynebacterium diphtheriae y la confirmación de la toxina, no por detección de anticuerpos, que puede ser negativa al inicio o estar influida por la vacunación — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, es toxoide.",
+                    "Esa está bien, esas placas grises.",
+                    "Esa está bien, daña varios órganos.",
+                    "¡Esta! No es con anticuerpos, es aislando la bacteria."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es aislando la bacteria."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -12959,7 +12999,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta. Leptospira interrogans causa leptospirose, não pneumonia típica associada a diabetes. As outras associações estão corretas: A (Chlamydia psittaci com contato com aves), B (Pseudomonas aeruginosa em doenças pulmonares estruturais) e C (Mycobacterium tuberculosis em alcoolismo). Portanto, a única relação inadequada é diabetes com Leptospira no contexto de pneumonia comunitária aguda."
+            "feedback": "Resposta correta: D está incorreta. Leptospira interrogans causa leptospirose, não pneumonia típica associada a diabetes. As outras associações estão corretas: A (Chlamydia psittaci com contato com aves), B (Pseudomonas aeruginosa em doenças pulmonares estruturais) e C (Mycobacterium tuberculosis em alcoolismo). Portanto, a única relação inadequada é diabetes com Leptospira no contexto de pneumonia comunitária aguda.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el contacto con aves se asocia a Chlamydia psittaci.",
+                    "Efectivamente la enfermedad estructural del pulmón se asocia a Pseudomonas aeruginosa.",
+                    "Efectivamente el alcoholismo se asocia a Mycobacterium tuberculosis.",
+                    "Leptospira interrogans causa leptospirosis, no una neumonía típica asociada a la diabetes — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, el ave.",
+                    "Esa está bien, la Pseudomona.",
+                    "Esa está bien, el alcohol.",
+                    "¡Esta! Esa bacteria no es de la diabetes."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No es de diabetes."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -12985,7 +13045,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O teste tuberculínico (PPD) indica exposição ou infecção latente por Mycobacterium tuberculosis, mas não confirma tuberculose ativa, que exige exames complementares como baciloscopia, cultura ou testes moleculares.  \n\n**Outras opções:**  \nA está correta ao afirmar que coletar três amostras seriadas de escarro aumenta a sensibilidade da baciloscopia.  \nB está correta ao citar que a identificação das micobactérias pode ser feita por testes bioquímicos e moleculares.  \nC está correta ao destacar a PCR em tempo real como método rápido e sensível para diagnóstico e detecção de resistência."
+            "feedback": "**Resposta Correta:** D. O teste tuberculínico (PPD) indica exposição ou infecção latente por Mycobacterium tuberculosis, mas não confirma tuberculose ativa, que exige exames complementares como baciloscopia, cultura ou testes moleculares.  \n\n**Outras opções:**  \nA está correta ao afirmar que coletar três amostras seriadas de escarro aumenta a sensibilidade da baciloscopia.  \nB está correta ao citar que a identificação das micobactérias pode ser feita por testes bioquímicos e moleculares.  \nC está correta ao destacar a PCR em tempo real como método rápido e sensível para diagnóstico e detecção de resistência.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la toma de muestras seriadas de esputo incrementa la sensibilidad de la baciloscopía.",
+                    "Efectivamente la identificación de especies de micobacterias puede realizarse por pruebas bioquímicas o técnicas moleculares.",
+                    "Efectivamente la amplificación de ADN por PCR en tiempo real permite la detección rápida de M. tuberculosis.",
+                    "La prueba de tuberculina (PPD) indica exposición o infección latente por M. tuberculosis, pero no confirma tuberculosis activa, que requiere exámenes complementarios como baciloscopía, cultivo o pruebas moleculares — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, aumenta la sensibilidad.",
+                    "Esa está bien, esas pruebas.",
+                    "Esa está bien, PCR rápido.",
+                    "¡Esta! No confirma activa, es solo exposición."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es solo exposición."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -13011,7 +13091,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. A primoinfecção por *Coccidioides posadasii* frequentemente causa sintomas, variando de leves a graves, diferentemente de outras micoses endêmicas que são geralmente assintomáticas.  \nOpção A incorreta: o estradiol inibe a transformação do *Paracoccidioides brasiliensis*, protegendo mulheres em idade fértil.  \nOpção C incorreta: prova cutânea negativa na histoplasmose indica pior prognóstico, não boa evolução.  \nOpção D incorreta: aumento de anticorpos contra *P. brasiliensis* indica atividade da doença, não necessariamente boa resposta imunológica."
+            "feedback": "Resposta correta: B. A primoinfecção por *Coccidioides posadasii* frequentemente causa sintomas, variando de leves a graves, diferentemente de outras micoses endêmicas que são geralmente assintomáticas.  \nOpção A incorreta: o estradiol inibe a transformação do *Paracoccidioides brasiliensis*, protegendo mulheres em idade fértil.  \nOpção C incorreta: prova cutânea negativa na histoplasmose indica pior prognóstico, não boa evolução.  \nOpção D incorreta: aumento de anticorpos contra *P. brasiliensis* indica atividade da doença, não necessariamente boa resposta imunológica.",
+            "explicacoes": {
+                "robo": [
+                    "El estradiol INHIBE la transformación del Paracoccidioides brasiliensis a la forma parasitaria, protegiendo a las mujeres en edad fértil, no estimula el pasaje como se afirma.",
+                    "La primoinfección por Coccidioides posadasii frecuentemente causa síntomas, variando de leves a graves, a diferencia de otras micosis endémicas generalmente asintomáticas — es la respuesta correcta.",
+                    "La negativización de la prueba cutánea en la histoplasmosis indica peor pronóstico, no buena evolución.",
+                    "El aumento de anticuerpos contra P. brasiliensis indica actividad de la enfermedad, no necesariamente buena respuesta inmunológica."
+                ],
+                "fantasma": [
+                    "Al revés: el estradiol frena eso.",
+                    "¡Esta! Muchos con síntomas, la correcta.",
+                    "Al revés: es mal pronóstico.",
+                    "Al revés: indica que la enfermedad está activa."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Muchos síntomas.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -13037,7 +13137,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Paracoccidioides brasiliensis apresenta-se como leveduras multibrotantes em lavado broncoalveolar, com múltiplas gemulações que formam a típica “roda de leme”, essencial para diagnóstico.\n\n**Opções Incorretas:**  \nA. Histoplasma capsulatum aparece como leveduras pequenas intracelulares, não esférulas com endosporos (característica de Coccidioides).  \nC. Sporothrix schenckii forma leveduras em “charuto” na fase patogênica; hifas hialinas são da fase ambiental e raras em lavados broncoalveolares.  \nD."
+            "feedback": "**Resposta Correta:** B. Paracoccidioides brasiliensis apresenta-se como leveduras multibrotantes em lavado broncoalveolar, com múltiplas gemulações que formam a típica “roda de leme”, essencial para diagnóstico.\n\n**Opções Incorretas:**  \nA. Histoplasma capsulatum aparece como leveduras pequenas intracelulares, não esférulas com endosporos (característica de Coccidioides).  \nC. Sporothrix schenckii forma leveduras em “charuto” na fase patogênica; hifas hialinas são da fase ambiental e raras em lavados broncoalveolares.  \nD.",
+            "explicacoes": {
+                "robo": [
+                    "Histoplasma capsulatum aparece como levaduras pequeñas intracelulares, no esférulas con endosporas (característica de Coccidioides).",
+                    "Paracoccidioides brasiliensis efectivamente se presenta como levaduras multibrotantes en lavado broncoalveolar, con múltiples gemaciones que forman la típica 'rueda de timón' — es la respuesta correcta.",
+                    "Sporothrix schenckii forma levaduras en 'cigarro' en la fase patogénica; las hifas hialinas son de la fase ambiental y raras en lavados broncoalveolares.",
+                    "Coccidioides posadasii se presenta como esférulas con endosporas, no levaduras intracelulares."
+                ],
+                "fantasma": [
+                    "Eso es de Coccidioides, no de Histoplasma.",
+                    "¡Esta! Rueda de timón, la correcta.",
+                    "Eso es levadura cigarro, no hifa.",
+                    "Eso es esférula, no levadura."
+                ],
+                "gato": [
+                    "Fijate: es de otro.",
+                    "¡Ronroneo de aprobación! Rueda de timón.",
+                    "Dato curioso: es levadura.",
+                    "Miau, es esférula."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -13063,7 +13183,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. O cultivo em ágar sangue, ágar chocolate e caldo tioglicolato é padrão para identificar os principais patógenos da otite média purulenta. A coloração de Gram (A) é útil, mas insuficiente para diagnóstico definitivo. O ágar Sabouraud (C) é específico para fungos, raros nessa infecção. Congelar a amostra (D) é mais indicado para pesquisa viral, não rotineira em otite média bacteriana. Assim, o cultivo em meios específicos é essencial para diagnóstico e tratamento adequados."
+            "feedback": "Resposta correta: B. O cultivo em ágar sangue, ágar chocolate e caldo tioglicolato é padrão para identificar os principais patógenos da otite média purulenta. A coloração de Gram (A) é útil, mas insuficiente para diagnóstico definitivo. O ágar Sabouraud (C) é específico para fungos, raros nessa infecção. Congelar a amostra (D) é mais indicado para pesquisa viral, não rotineira em otite média bacteriana. Assim, o cultivo em meios específicos é essencial para diagnóstico e tratamento adequados.",
+            "explicacoes": {
+                "robo": [
+                    "La tinción de Gram es útil, pero insuficiente para el diagnóstico definitivo del agente.",
+                    "El cultivo en agar sangre, agar chocolate y caldo tioglicolato es el estándar para identificar los principales patógenos de la otitis media purulenta — es la respuesta correcta.",
+                    "El agar Sabouraud es específico para hongos, poco frecuentes en esta infección.",
+                    "Congelar la muestra es más indicado para investigación viral, no rutinario en otitis media bacteriana."
+                ],
+                "fantasma": [
+                    "Eso solo no alcanza.",
+                    "¡Esta! Esos tres medios, la rutina correcta.",
+                    "Eso es de hongo, raro acá.",
+                    "Eso es para virus, no bacteria."
+                ],
+                "gato": [
+                    "Fijate: no alcanza solo.",
+                    "¡Ronroneo de aprobación! Esos tres medios.",
+                    "Dato curioso: es de hongo.",
+                    "Miau, es de virus."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -13089,7 +13229,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. O diagnóstico de rotina é clínico.\n\nA faringite viral é geralmente autolimitada e diagnosticada pela avaliação clínica dos sintomas e exame físico. Testes laboratoriais não são necessários rotineiramente, pois são caros e não alteram o tratamento inicial.  \n\n**Outras opções:**  \nA) Diagnóstico microbiológico rotineiro não é indicado, salvo casos especiais.  \nB) Diagnóstico apenas laboratorial é imprático e desnecessário.  \nD) PCR e biologia molecular são sensíveis, mas usados somente em situações específicas, não rotineiramente."
+            "feedback": "**Resposta Correta:** C. O diagnóstico de rotina é clínico.\n\nA faringite viral é geralmente autolimitada e diagnosticada pela avaliação clínica dos sintomas e exame físico. Testes laboratoriais não são necessários rotineiramente, pois são caros e não alteram o tratamento inicial.  \n\n**Outras opções:**  \nA) Diagnóstico microbiológico rotineiro não é indicado, salvo casos especiais.  \nB) Diagnóstico apenas laboratorial é imprático e desnecessário.  \nD) PCR e biologia molecular são sensíveis, mas usados somente em situações específicas, não rotineiramente.",
+            "explicacoes": {
+                "robo": [
+                    "No es necesario solicitar diagnóstico microbiológico de rutina; solo se indica en casos especiales.",
+                    "El diagnóstico exclusivamente de laboratorio es impráctico e innecesario.",
+                    "El diagnóstico de rutina en la faringitis viral es clínico, ya que suele ser autolimitada y se evalúa por síntomas y examen físico, sin necesidad rutinaria de estudios de laboratorio — es la respuesta correcta.",
+                    "La PCR y la biología molecular son sensibles, pero se usan solo en situaciones específicas, no de rutina."
+                ],
+                "fantasma": [
+                    "No hace falta de rutina eso.",
+                    "Eso es impráctico solo.",
+                    "¡Esta! Es clínico, la rutina correcta.",
+                    "Eso es solo para casos especiales."
+                ],
+                "gato": [
+                    "Fijate: no hace falta.",
+                    "Dato curioso: es impráctico.",
+                    "¡Ronroneo de aprobación! Es clínico.",
+                    "Miau, es especial."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -13115,7 +13275,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta correta:** C está incorreta. Hemocultivos automatizados por 21 dias não são sensíveis nem padrão para diagnóstico de micoses sistêmicas endêmicas, pois o crescimento fúngico é raro e a incubação usual é até 14 dias.  \n\n**Outras opções:**  \nA) Cultivo de LBA em agar Sabouraud a 28°C e BHI a 37°C é padrão para identificar fungos dimórficos.  \nB) Detecção sorológica por imunodifusão ou contrainmunoeletroforese é sensível e útil para diagnóstico e monitoramento.  \nD) Exame direto e cultivo de lesões cutaneomucosas em imunocompromet"
+            "feedback": "**Resposta correta:** C está incorreta. Hemocultivos automatizados por 21 dias não são sensíveis nem padrão para diagnóstico de micoses sistêmicas endêmicas, pois o crescimento fúngico é raro e a incubação usual é até 14 dias.  \n\n**Outras opções:**  \nA) Cultivo de LBA em agar Sabouraud a 28°C e BHI a 37°C é padrão para identificar fungos dimórficos.  \nB) Detecção sorológica por imunodifusão ou contrainmunoeletroforese é sensível e útil para diagnóstico e monitoramento.  \nD) Exame direto e cultivo de lesões cutaneomucosas em imunocompromet",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo de muestras de LBA en agar Sabouraud a 28°C y en agar BHI a 37°C efectivamente es el estándar para identificar hongos dimórficos.",
+                    "La detección de anticuerpos por inmunodifusión o contrainmunoelectroforesis efectivamente es sensible y útil para el diagnóstico y seguimiento.",
+                    "Los hemocultivos automatizados por 21 días no son sensibles ni estándar para el diagnóstico de micosis sistémicas endémicas, ya que el crecimiento fúngico es raro y la incubación usual es hasta 14 días — esta es la opción incorrecta.",
+                    "El examen directo y cultivo de escarificación de lesiones cutaneomucosas en inmunocomprometidos efectivamente es un procedimiento adecuado."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos medios.",
+                    "Esa está bien, esa detección.",
+                    "¡Esta! 21 días no es lo estándar, es raro que crezca.",
+                    "Esa está bien, escarificación."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es lo estándar.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -13141,7 +13321,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Adenovírus.  \nO adenovírus é a causa viral mais comum de faringite aguda em adultos, incluindo pacientes diabéticos, devido à sua alta transmissibilidade e resistência ambiental. Causa dor de garganta, febre, congestão nasal e conjuntivite.\n\n**Outras opções:**  \nB. Vírus Epstein-Barr está mais ligado à mononucleose, com sintomas sistêmicos, não sendo causa comum de faringite aguda.  \nC. Borrelia vincentii causa gengivite ulcerativa, não faringite.  \nD. Enterovírus afeta mais crianças e causa quadros sistêmicos, sendo menos prevalente em adultos com faring"
+            "feedback": "**Resposta Correta:** A. Adenovírus.  \nO adenovírus é a causa viral mais comum de faringite aguda em adultos, incluindo pacientes diabéticos, devido à sua alta transmissibilidade e resistência ambiental. Causa dor de garganta, febre, congestão nasal e conjuntivite.\n\n**Outras opções:**  \nB. Vírus Epstein-Barr está mais ligado à mononucleose, com sintomas sistêmicos, não sendo causa comum de faringite aguda.  \nC. Borrelia vincentii causa gengivite ulcerativa, não faringite.  \nD. Enterovírus afeta mais crianças e causa quadros sistêmicos, sendo menos prevalente em adultos com faring",
+            "explicacoes": {
+                "robo": [
+                    "El adenovirus es la causa viral más común de faringitis aguda en adultos, incluyendo pacientes diabéticos, debido a su alta transmisibilidad y resistencia ambiental — es la respuesta correcta.",
+                    "El virus Epstein-Barr está más ligado a la mononucleosis, con síntomas sistémicos, no siendo causa común de faringitis aguda aislada.",
+                    "Borrelia vincentii causa gingivitis ulcerativa, no faringitis.",
+                    "El enterovirus afecta más a niños y causa cuadros sistémicos, siendo menos prevalente en adultos con faringitis."
+                ],
+                "fantasma": [
+                    "¡Esta! El adenovirus, el más común en el adulto.",
+                    "Ese es más de mononucleosis.",
+                    "Esa es de encía, no de garganta.",
+                    "Ese es más de niño."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El adenovirus.",
+                    "Fijate: es mononucleosis.",
+                    "Dato curioso: es de encía.",
+                    "Miau, es de niño."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -13167,7 +13367,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Realizar cultivo se o teste rápido for negativo.\n\n**Resumo:** O teste rápido para *Streptococcus pyogenes* tem alta especificidade, mas sensibilidade variável (<90%), podendo gerar falso-negativos. Por isso, se negativo e houver suspeita clínica, o cultivo em ágar sangue é indicado por ser mais sensível e definitivo.  \nAs outras opções são incorretas: A) coloração de Gram não é sensível nem específica para *S. pyogenes*; B) teste rápido tem sensibilidade menor que 99% e especificidade maior que 95%, não o contrário; C) o cultivo positivo ocorre em muito mais que 10% dos casos."
+            "feedback": "**Resposta Correta:** D. Realizar cultivo se o teste rápido for negativo.\n\n**Resumo:** O teste rápido para *Streptococcus pyogenes* tem alta especificidade, mas sensibilidade variável (<90%), podendo gerar falso-negativos. Por isso, se negativo e houver suspeita clínica, o cultivo em ágar sangue é indicado por ser mais sensível e definitivo.  \nAs outras opções são incorretas: A) coloração de Gram não é sensível nem específica para *S. pyogenes*; B) teste rápido tem sensibilidade menor que 99% e especificidade maior que 95%, não o contrário; C) o cultivo positivo ocorre em muito mais que 10% dos casos.",
+            "explicacoes": {
+                "robo": [
+                    "La tinción de Gram del hisopado de fauces no tiene alta sensibilidad ni especificidad para S. pyogenes.",
+                    "El test rápido tiene sensibilidad menor al 99% y especificidad mayor al 95%, no al contrario de lo afirmado.",
+                    "El cultivo positivo ocurre en mucho más que el 10% de los casos con sospecha clínica.",
+                    "Se debe realizar el cultivo cuando el test rápido arroja un resultado negativo, ya que el test tiene alta especificidad pero sensibilidad variable (<90%), pudiendo generar falsos negativos, y el cultivo en agar sangre es más sensible y definitivo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso no es tan sensible.",
+                    "Esos números están al revés.",
+                    "Eso es mucho más que 10%.",
+                    "¡Esta! Si da negativo, hay que cultivar."
+                ],
+                "gato": [
+                    "Fijate: no tan sensible.",
+                    "Dato curioso: está al revés.",
+                    "Miau, es mucho más.",
+                    "¡Ronroneo de aprobación! Hay que cultivar si es negativo."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -13193,7 +13413,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. O diagnóstico da angina de Vincent não é feito pela detecção de anticorpos contra Borrelia vincentii, pois não há sorologia específica. A doença é uma infecção local por bactérias anaeróbias e espiroquetas, diagnosticada clinicamente e confirmada por exame microbiológico direto (ex.: coloração de Gram).  \n\n**Outras opções:**  \nA, C e D estão corretas, pois destacam fatores de risco (imunossupressão, má higiene), características clínicas (lesões ulceronecróticas com odor fétido) e a associação bacteriana típica da doença."
+            "feedback": "**Resposta Correta:** B. O diagnóstico da angina de Vincent não é feito pela detecção de anticorpos contra Borrelia vincentii, pois não há sorologia específica. A doença é uma infecção local por bactérias anaeróbias e espiroquetas, diagnosticada clinicamente e confirmada por exame microbiológico direto (ex.: coloração de Gram).  \n\n**Outras opções:**  \nA, C e D estão corretas, pois destacam fatores de risco (imunossupressão, má higiene), características clínicas (lesões ulceronecróticas com odor fétido) e a associação bacteriana típica da doença.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente puede presentarse en pacientes inmunocomprometidos o con pobre higiene dental.",
+                    "El diagnóstico de la angina de Vincent no se realiza por detección de anticuerpos contra Borrelia vincentii, ya que no existe serología específica; se diagnostica clínicamente y se confirma con examen microbiológico directo (ej. tinción de Gram) — esta es la opción incorrecta.",
+                    "Efectivamente debe sospecharse ante lesiones faríngeas ulcero-necróticas asociadas a olor fétido.",
+                    "Efectivamente es producto de la asociación entre bacterias anaerobias (Fusobacterium necrophorum) y espiroquetas (Borrelia vincentii)."
+                ],
+                "fantasma": [
+                    "Esa está bien, mala higiene.",
+                    "¡Esta! No hay ese anticuerpo, se ve directo.",
+                    "Esa está bien, esas úlceras.",
+                    "Esa está bien, esa asociación."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Se ve directo.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -13219,7 +13459,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta correta:** B, C e D estão corretas; A está incorreta.\n\n**Resumo:**  \nA coccidioidomicose não se transmite por contato com cães, mas pela inalação de esporos do solo em regiões desérticas. Portanto, a associação \"contacto con perros / coccidioidomicosis\" é errada. Já a tuberculose (B) se propaga em ambientes aglomerados; a actinomicosis (C) está ligada a abscessos dentários; e a histoplasmose (D) ocorre em trabalhadores expostos a solos contaminados por excrementos de aves e morcegos."
+            "feedback": "**Resposta correta:** B, C e D estão corretas; A está incorreta.\n\n**Resumo:**  \nA coccidioidomicose não se transmite por contato com cães, mas pela inalação de esporos do solo em regiões desérticas. Portanto, a associação \"contacto con perros / coccidioidomicosis\" é errada. Já a tuberculose (B) se propaga em ambientes aglomerados; a actinomicosis (C) está ligada a abscessos dentários; e a histoplasmose (D) ocorre em trabalhadores expostos a solos contaminados por excrementos de aves e morcegos.",
+            "explicacoes": {
+                "robo": [
+                    "La coccidioidomicosis no se transmite por contacto con perros, sino por inhalación de esporas del suelo en regiones desérticas — esta es la opción incorrecta.",
+                    "Efectivamente el hacinamiento se asocia a tuberculosis.",
+                    "Efectivamente el absceso odontógeno previo se asocia a actinomicosis.",
+                    "Efectivamente el trabajador en demoliciones se asocia a histoplasmosis, por exposición a suelos contaminados con excrementos de aves y murciélagos."
+                ],
+                "fantasma": [
+                    "¡Esta! El perro no tiene que ver, es el suelo.",
+                    "Esa está bien, gente amontonada.",
+                    "Esa está bien, el diente.",
+                    "Esa está bien, el escombro."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es el suelo, no el perro.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -13245,7 +13505,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A prova tuberculínica (PPD) indica exposição prévia ao antígeno, mas não confirma tuberculose ativa, que exige exames diretos, culturais, moleculares ou radiológicos.\n\n**Outras opções:**\n\nA. Três coletas seriadas de escarro aumentam a sensibilidade da baciloscopia.\n\nB. Identificação de micobactérias usa testes bioquímicos e moleculares para diferenciar espécies.\n\nC. PCR em tempo real detecta M. tuberculosis rapidamente, facilitando diagnóstico precoce.\n\nPortanto, apenas a opção D está incorreta sobre o diagnóstico da tuberculose."
+            "feedback": "**Resposta Correta:** D. A prova tuberculínica (PPD) indica exposição prévia ao antígeno, mas não confirma tuberculose ativa, que exige exames diretos, culturais, moleculares ou radiológicos.\n\n**Outras opções:**\n\nA. Três coletas seriadas de escarro aumentam a sensibilidade da baciloscopia.\n\nB. Identificação de micobactérias usa testes bioquímicos e moleculares para diferenciar espécies.\n\nC. PCR em tempo real detecta M. tuberculosis rapidamente, facilitando diagnóstico precoce.\n\nPortanto, apenas a opção D está incorreta sobre o diagnóstico da tuberculose.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la toma de muestras seriadas de esputo incrementa la sensibilidad de la baciloscopía.",
+                    "Efectivamente la identificación de especies de micobacterias puede realizarse por pruebas bioquímicas o técnicas moleculares.",
+                    "Efectivamente la amplificación de ADN por PCR en tiempo real permite la detección rápida de M. tuberculosis en muestras respiratorias.",
+                    "La intradermorreacción con tuberculina (PPD) indica exposición previa al antígeno, pero no confirma tuberculosis activa, que requiere exámenes directos, culturales, moleculares o radiológicos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, aumenta.",
+                    "Esa está bien, esas pruebas.",
+                    "Esa está bien, rápido.",
+                    "¡Esta! Solo dice exposición, no confirma enfermedad."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Solo exposición."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -13271,7 +13551,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Mycoplasma pneumoniae é detectado pela presença de anticorpos IgM, indicando infecção recente. Por ser um organismo sem parede celular e difícil de cultivar, a sorologia é o método diagnóstico mais prático. \n\nOpção A está incorreta porque Chlamydophila pneumoniae não cresce em ágar sangue, exigindo cultura em células específicas.  \nOpção B é inadequada, pois Streptococcus pneumoniae não é diagnosticado por IgG sorológica, mas por cultura ou antígeno urinário.  \nOpção D é imprecisa, pois a detecção de antígeno urinário é válida para Hib, não para todas as cepas de Haemophilus influenzae."
+            "feedback": "Resposta correta: C. Mycoplasma pneumoniae é detectado pela presença de anticorpos IgM, indicando infecção recente. Por ser um organismo sem parede celular e difícil de cultivar, a sorologia é o método diagnóstico mais prático. \n\nOpção A está incorreta porque Chlamydophila pneumoniae não cresce em ágar sangue, exigindo cultura em células específicas.  \nOpção B é inadequada, pois Streptococcus pneumoniae não é diagnosticado por IgG sorológica, mas por cultura ou antígeno urinário.  \nOpção D é imprecisa, pois a detecção de antígeno urinário é válida para Hib, não para todas as cepas de Haemophilus influenzae.",
+            "explicacoes": {
+                "robo": [
+                    "Chlamydophila pneumoniae no crece en agar sangre, requiriendo cultivo en células específicas.",
+                    "Streptococcus pneumoniae no se diagnostica por IgG serológica, sino por cultivo o antígeno urinario.",
+                    "Mycoplasma pneumoniae se detecta por la presencia de anticuerpos IgM, indicando infección reciente; al ser un organismo sin pared celular y difícil de cultivar, la serología es el método diagnóstico más práctico — es la respuesta correcta.",
+                    "La detección de antígeno urinario es válida para Hib, no para todas las cepas de Haemophilus influenzae."
+                ],
+                "fantasma": [
+                    "Ese no crece en ese medio.",
+                    "Ese no es con IgG.",
+                    "¡Esta! IgM del Mycoplasma, la correcta.",
+                    "Eso es solo del tipo b."
+                ],
+                "gato": [
+                    "Fijate: no crece ahí.",
+                    "Dato curioso: no es con IgG.",
+                    "¡Ronroneo de aprobación! IgM del Mycoplasma.",
+                    "Miau, es solo tipo b."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -13297,7 +13597,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. O exame do escarro não tem alta sensibilidade e especificidade para diagnosticar pneumonia pneumocócica devido à contaminação e dificuldade na coleta.\n\n**Outras opções:**  \nA está correta: S. pneumoniae coloniza assintomaticamente a via aérea superior.  \nB está correta: A detecção do antígeno urinário é útil e confiável para diagnóstico.  \nD está correta: A vacina é recomendada para maiores de 65 anos, mesmo sem fatores de risco."
+            "feedback": "**Resposta Correta:** C está incorreta. O exame do escarro não tem alta sensibilidade e especificidade para diagnosticar pneumonia pneumocócica devido à contaminação e dificuldade na coleta.\n\n**Outras opções:**  \nA está correta: S. pneumoniae coloniza assintomaticamente a via aérea superior.  \nB está correta: A detecção do antígeno urinário é útil e confiável para diagnóstico.  \nD está correta: A vacina é recomendada para maiores de 65 anos, mesmo sem fatores de risco.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la colonización de la mucosa de la vía aérea superior es asintomática.",
+                    "Efectivamente la detección del antígeno urinario es útil para el diagnóstico de neumonía comunitaria.",
+                    "La muestra de esputo no tiene alta sensibilidad ni especificidad para el diagnóstico de neumonía neumocócica, debido a la contaminación y la dificultad en la recolección — esta es la opción incorrecta.",
+                    "Efectivamente la vacuna antineumocócica se debe administrar en mayores de 65 años sin factores de riesgo."
+                ],
+                "fantasma": [
+                    "Esa está bien, sin síntomas.",
+                    "Esa está bien, la orina.",
+                    "¡Esta! No es tan sensible ni específico.",
+                    "Esa está bien, esa edad."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No tan sensible.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -13323,7 +13643,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta. Equipamentos de respiração assistida, embora esterilizados, podem causar infecções por falhas na manutenção e manipulação, sendo fontes de pneumonias associadas à ventilação mecânica.  \nOpções A, B e D estão corretas: A) Vacinas conjugadas e não conjugadas contra *Streptococcus pneumoniae* previnem pneumonias; B) Evitar contato com excreções de aves previne psitacose causada por *Chlamydophila psittaci*; D) Vacinação anual contra gripe é necessária devido à deriva antigênica do vírus influenza."
+            "feedback": "Resposta correta: C está incorreta. Equipamentos de respiração assistida, embora esterilizados, podem causar infecções por falhas na manutenção e manipulação, sendo fontes de pneumonias associadas à ventilação mecânica.  \nOpções A, B e D estão corretas: A) Vacinas conjugadas e não conjugadas contra *Streptococcus pneumoniae* previnem pneumonias; B) Evitar contato com excreções de aves previne psitacose causada por *Chlamydophila psittaci*; D) Vacinação anual contra gripe é necessária devido à deriva antigênica do vírus influenza.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente las vacunas conjugada y no conjugada contra S. pneumoniae se emplean para prevenir la neumonía en pediatría.",
+                    "Efectivamente la prevención de neumonía por Chlamydophila psittaci implica evitar la inhalación de excreciones de aves.",
+                    "Los equipos de respiración asistida, aunque esterilizados, SÍ pueden causar infecciones por fallas en el mantenimiento y manipulación, siendo fuente de neumonías asociadas a la ventilación mecánica — esta es la opción incorrecta.",
+                    "Efectivamente los adultos mayores deben recibir anualmente una dosis de vacuna antigripal."
+                ],
+                "fantasma": [
+                    "Esa está bien, previene.",
+                    "Esa está bien, evitar el ave.",
+                    "¡Esta! Sí puede infectar por mal manejo.",
+                    "Esa está bien, cada año."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Sí puede infectar.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -13349,7 +13689,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Mycobacterium avium. O diagnóstico depende de cultura, PCR e avaliação clínica, pois a sorologia para anticorpos é pouco sensível e inespecífica, especialmente em pacientes imunocomprometidos.  \nOutras opções:  \nA. Chlamydia psittaci – sorologia é importante e usada para diagnóstico.  \nC. Histoplasma capsulatum – anticorpos são úteis para confirmar infecções subagudas/crônicas.  \nD. Leptospira interrogans – sorologia (MAT) é padrão para diagnóstico.  \nAssim, a busca de anticorpos é relevante para A, C e D, mas não para Mycobacterium avium."
+            "feedback": "Resposta correta: B. Mycobacterium avium. O diagnóstico depende de cultura, PCR e avaliação clínica, pois a sorologia para anticorpos é pouco sensível e inespecífica, especialmente em pacientes imunocomprometidos.  \nOutras opções:  \nA. Chlamydia psittaci – sorologia é importante e usada para diagnóstico.  \nC. Histoplasma capsulatum – anticorpos são úteis para confirmar infecções subagudas/crônicas.  \nD. Leptospira interrogans – sorologia (MAT) é padrão para diagnóstico.  \nAssim, a busca de anticorpos é relevante para A, C e D, mas não para Mycobacterium avium.",
+            "explicacoes": {
+                "robo": [
+                    "Para Chlamydia psittaci efectivamente la serología es importante y se usa para el diagnóstico.",
+                    "El diagnóstico de Mycobacterium avium depende del cultivo, PCR y evaluación clínica, ya que la serología para anticuerpos es poco sensible e inespecífica, especialmente en inmunocomprometidos — esta es la excepción.",
+                    "Para Histoplasma capsulatum efectivamente los anticuerpos son útiles para confirmar infecciones subagudas o crónicas.",
+                    "Para Leptospira interrogans efectivamente la serología (MAT) es el estándar diagnóstico."
+                ],
+                "fantasma": [
+                    "Ese sí usa anticuerpo.",
+                    "¡Esta! Ese no se ve bien con anticuerpo.",
+                    "Ese sí usa anticuerpo.",
+                    "Ese sí usa anticuerpo."
+                ],
+                "gato": [
+                    "Fijate: sí usa.",
+                    "¡Ronroneo de aprobación! No se ve bien así.",
+                    "Dato curioso: sí usa.",
+                    "Miau, sí usa."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -13375,7 +13735,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "A resposta correta é A: processar o escarro rapidamente, com coloração de Gram e cultivo em ágar sangue e chocolate, para identificar bactérias comuns na pneumonia comunitária. Opção B é incorreta, pois congelar a amostra a -20 °C prejudica bactérias sensíveis e anaeróbios não são foco rotineiro. C está errada, pois meio com só NaCl não preserva vírus e escarro não é ideal para diagnóstico viral. D é inadequada, pois aquecer a amostra destrói patógenos e inviabiliza o cultivo."
+            "feedback": "A resposta correta é A: processar o escarro rapidamente, com coloração de Gram e cultivo em ágar sangue e chocolate, para identificar bactérias comuns na pneumonia comunitária. Opção B é incorreta, pois congelar a amostra a -20 °C prejudica bactérias sensíveis e anaeróbios não são foco rotineiro. C está errada, pois meio com só NaCl não preserva vírus e escarro não é ideal para diagnóstico viral. D é inadequada, pois aquecer a amostra destrói patógenos e inviabiliza o cultivo.",
+            "explicacoes": {
+                "robo": [
+                    "La muestra debe procesarse lo antes posible, con tinción de Gram y cultivo en agar sangre y agar chocolate, para identificar bacterias comunes en la neumonía comunitaria — es la respuesta correcta.",
+                    "Congelar la muestra a -20°C perjudica a las bacterias sensibles, y los anaerobios no son el foco rutinario en esputo.",
+                    "Un medio con solo cloruro de sodio no preserva virus, y el esputo no es la muestra ideal para diagnóstico viral.",
+                    "Calentar la muestra destruye los patógenos e inviabiliza el cultivo."
+                ],
+                "fantasma": [
+                    "¡Esta! Rápido con Gram y esos medios, la correcta.",
+                    "Eso daña la bacteria, no sirve.",
+                    "Eso no preserva el virus.",
+                    "Eso mata todo, no sirve para cultivo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Rápido con esos medios.",
+                    "Fijate: daña.",
+                    "Dato curioso: no preserva.",
+                    "Miau, mata todo."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -13401,7 +13781,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A opção A está incorreta porque 10¹ UFC/ml é um valor muito baixo para diagnóstico em esputo, geralmente requer-se ≥10⁵ UFC/ml para considerar a amostra válida e representativa de infecção pulmonar. Valores baixos indicam possível contaminação ou colonização.\n\n**Outras opções:**  \nB está correta, pois em lavados broncoalveolares o ponto de corte é ≥10⁴ UFC/ml.  \nC está correta, pois >10 células epiteliais por campo indicam contaminação da amostra.  \nD está correta, pois >25 neutrófilos por campo indicam inflamação ativa e amostra processável."
+            "feedback": "**Resposta Correta:** A opção A está incorreta porque 10¹ UFC/ml é um valor muito baixo para diagnóstico em esputo, geralmente requer-se ≥10⁵ UFC/ml para considerar a amostra válida e representativa de infecção pulmonar. Valores baixos indicam possível contaminação ou colonização.\n\n**Outras opções:**  \nB está correta, pois em lavados broncoalveolares o ponto de corte é ≥10⁴ UFC/ml.  \nC está correta, pois >10 células epiteliais por campo indicam contaminação da amostra.  \nD está correta, pois >25 neutrófilos por campo indicam inflamação ativa e amostra processável.",
+            "explicacoes": {
+                "robo": [
+                    "Un recuento de 10¹ UFC/ml es un valor muy bajo para el diagnóstico en esputo; generalmente se requiere ≥10⁵ UFC/ml para considerar la muestra válida y representativa de infección pulmonar — esta es la opción incorrecta.",
+                    "El recuento en lavado broncoalveolar efectivamente es ≥10⁴ UFC/ml.",
+                    "Efectivamente la presencia de más de 10 células epiteliales planas por campo indica que la muestra no es representativa de vía aérea inferior.",
+                    "Efectivamente la presencia de más de 25 polimorfonucleares por campo es uno de los criterios para que la muestra de esputo sea procesable."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese número es muy bajo para eso.",
+                    "Esa está bien, ese corte.",
+                    "Esa está bien, contamina.",
+                    "Esa está bien, ese criterio."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Muy bajo ese número.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 15,
