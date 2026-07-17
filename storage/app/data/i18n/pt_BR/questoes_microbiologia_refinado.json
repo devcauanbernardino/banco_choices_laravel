@@ -19029,7 +19029,27 @@
             "Anti-HCV.",
             "Antígeno HBc.",
             "IgM-anti-HAV."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato o HBsAg deve ser solicitado diante de um quadro de hepatite aguda.",
+                "De fato o anti-HCV deve ser solicitado para descartar hepatite C.",
+                "O antígeno HBc (HBcAg) não é detectável no sangue, pois se encontra apenas dentro dos hepatócitos infectados; não tem utilidade diagnóstica no soro, por isso não se solicita — é a resposta correta.",
+                "De fato a IgM anti-HAV deve ser solicitada para diagnosticar hepatite A aguda."
+            ],
+            "fantasma": [
+                "Essa está certa, pede-se.",
+                "Essa está certa, pede-se.",
+                "Essa aí! Esse não se vê no sangue.",
+                "Essa está certa, pede-se."
+            ],
+            "gato": [
+                "Fijate: pede-se.",
+                "Dado curioso: pede-se.",
+                "Ronronado de aprovação! Não se vê no sangue.",
+                "Miau, pede-se."
+            ]
+        }
     },
     {
         "pergunta": "Obtêm-se os seguintes resultados significativos: HBsAg: Pos; IgM anti-HBcAg negativo, IgM-anti HAV: Neg; IgG-antiHAV: ​​Pos. Você conclui:",
@@ -19039,7 +19059,27 @@
             "Infecção aguda pelo vírus da hepatite A.",
             "Infecção passada pelo vírus da hepatite A e infecção persistente pelo vírus da hepatite B.",
             "Coinfecção aguda com vírus da hepatite B e vírus da hepatite A."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A infecção aguda por HBV exigiria IgM anti-HBc positivo, ausente neste perfil.",
+                "A infecção aguda por HAV exigiria IgM anti-HAV positivo, ausente aqui.",
+                "O HBsAg positivo com IgM anti-HBc negativo indica infecção persistente por HBV; a IgG anti-HAV positiva com IgM negativa indica infecção passada por hepatite A — é a resposta correta.",
+                "Não há coinfecção aguda; os marcadores de fase aguda (IgM) estão negativos para ambos os vírus."
+            ],
+            "fantasma": [
+                "Falta o IgM pra ser agudo.",
+                "Falta o IgM pra ser agudo.",
+                "Essa aí! Uma já passou, a outra continua.",
+                "Não, nenhuma é aguda agora."
+            ],
+            "gato": [
+                "Fijate: falta o IgM.",
+                "Dado curioso: falta o IgM.",
+                "Ronronado de aprovação! Uma passou, outra continua.",
+                "Miau, nenhuma aguda."
+            ]
+        }
     },
     {
         "pergunta": "Um profissional médico assume a função de chefe de um Serviço de Hemodiálise. Em primeiro lugar, pretende-se saber o estado da situação ligada às hepatites virais dos pacientes e do pessoal de saúde a seu cargo que possam estar associadas à atividade do serviço. Para isso, você deve investigar inicialmente a circulação dos seguintes vírus:",
@@ -19049,7 +19089,27 @@
             "Vírus da hepatite A e vírus da hepatite E.",
             "Vírus da hepatite D.",
             "Vírus Epstein Barr e citomegalovírus humano."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Em hemodiálise, o risco principal é a transmissão de vírus por via parenteral, como HBV e HCV, devido à exposição frequente a sangue e procedimentos invasivos — é a resposta correta.",
+                "HAV e HEV transmitem-se por via fecal-oral, não sendo a principal preocupação no contexto de hemodiálise.",
+                "O VHD depende do VHB para sua replicação, mas não é o foco inicial de vigilância; investiga-se junto ao VHB se este estiver presente.",
+                "EBV e CMV não são prioridade de vigilância em hemodiálise, já que a transmissão relevante nesse contexto é a parenteral."
+            ],
+            "fantasma": [
+                "Essa aí! Esses dois vão pelo sangue, a correta.",
+                "Esses são pela boca, não é o primeiro.",
+                "Esse depende do outro, não é o primeiro a olhar.",
+                "Esses não são a prioridade aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Vão pelo sangue.",
+                "Fijate: são pela boca.",
+                "Dado curioso: depende do outro.",
+                "Miau, não é prioridade."
+            ]
+        }
     },
     {
         "pergunta": "Se você quisesse estabelecer a prevalência da infecção pelo VHB em todos os indivíduos a serem estudados, você solicitaria um dos seguintes marcadores:",
@@ -19059,7 +19119,27 @@
             "HBeAg.",
             "Imunoglobulinas anti-HBc isotipo G.",
             "Imunoglobulinas anti-HBs."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "HBsAg indica infecção ativa, não a prevalência total de exposição ao vírus (incluindo casos resolvidos).",
+                "HBeAg indica replicação viral ativa, não prevalência geral de exposição.",
+                "As imunoglobulinas IgG anti-HBc detectam tanto infecções ativas quanto resolvidas, sendo o marcador mais adequado para estabelecer a prevalência total de exposição ao VHB em uma população — é a resposta correta.",
+                "Anti-HBs indica apenas imunidade (por vacinação ou infecção resolvida com soroconversão), não capturando todos os casos de exposição prévia."
+            ],
+            "fantasma": [
+                "Esse é só do ativo.",
+                "Esse é só de quando replica.",
+                "Essa aí! Esse marca todos que tiveram contato.",
+                "Esse é só do imune."
+            ],
+            "gato": [
+                "Fijate: só ativo.",
+                "Dado curioso: só replicando.",
+                "Ronronado de aprovação! Marca todos.",
+                "Miau, só imune."
+            ]
+        }
     },
     {
         "pergunta": "Uma mulher de 20 anos chega à consulta no primeiro mês de gravidez e apresenta teste ELISA reagente para VIH. São solicitados estudos complementares cujos resultados foram. Carga viral: 10.000 cópias/ml e relação CD4/CD8 de 0,92. Qual seria o curso de ação a seguir no caso deste paciente?",
@@ -19069,7 +19149,27 @@
             "Informar a paciente que seu filho nascerá infectado",
             "Indicar início rápido do tratamento antirretroviral",
             "Considere a relação CD4/CD8 como indicativa de um ELISA inicial falso-positivo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A carga viral detectável (10.000 cópias/ml) e a relação CD4/CD8 alterada confirmam infecção ativa; não é necessário atrasar o diagnóstico com mais exames.",
+                "Não se pode afirmar que o bebê nascerá infectado; com tratamento antirretroviral adequado o risco de transmissão vertical se reduz drasticamente.",
+                "Deve-se indicar o início rápido do tratamento antirretroviral, tanto para o benefício da paciente quanto para reduzir o risco de transmissão vertical ao feto — é a resposta correta.",
+                "A relação CD4/CD8 alterada junto com carga viral detectável confirma a infecção, não sugere falso positivo do ELISA inicial."
+            ],
+            "fantasma": [
+                "Não, já está confirmado com esses números.",
+                "Não, com tratamento dá pra evitar.",
+                "Essa aí! Começar rápido, a correta.",
+                "Não, esses números confirmam, não desmentem."
+            ],
+            "gato": [
+                "Fijate: já está confirmado.",
+                "Dado curioso: dá pra evitar.",
+                "Ronronado de aprovação! Começar rápido.",
+                "Miau, confirmam, não desmentem."
+            ]
+        }
     },
     {
         "pergunta": "Uma criança a termo nasce do paciente da história. Qual dos seguintes estudos você solicitaria para determinar se o recém-nascido é HIV positivo?",
@@ -19079,7 +19179,27 @@
             "carga viral",
             "Western Blot",
             "Teste ou teste rápido (TR)"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A contagem de CD4 não é método diagnóstico no neonato, apenas avalia estado imunológico.",
+                "No neonato deve-se solicitar a carga viral (PCR), pois os métodos sorológicos (anticorpos) refletiriam anticorpos maternos transferidos por via transplacentária, não a infecção do bebê — é a resposta correta.",
+                "Western blot detecta anticorpos, que no neonato podem ser de origem materna, não sendo útil para diagnóstico direto.",
+                "O teste rápido detecta anticorpos, com a mesma limitação do Western blot em neonatos."
+            ],
+            "fantasma": [
+                "Esse não diagnostica, só olha defesas.",
+                "Essa aí! Com isso vê o vírus direto, a correta.",
+                "Esse pode ser da mamãe.",
+                "Esse também pode ser da mamãe."
+            ],
+            "gato": [
+                "Fijate: não diagnostica.",
+                "Ronronado de aprovação! Vê o vírus direto.",
+                "Dado curioso: pode ser da mamãe.",
+                "Miau, também da mamãe."
+            ]
+        }
     },
     {
         "pergunta": "O resultado do estudo solicitado não indica infecção pelo VIH à nascença e nos controlos subsequentes até à 16ª semana de vida, o PCR permanece negativo. Com base nestes resultados e na ação a ser tomada, indique a opção CORRETA.",
@@ -19090,7 +19210,27 @@
             "A infecção pelo HIV é descartada e não é necessário realizar controles clínicos ou sorológicos subsequentes.",
             "A partir dos 18 meses de idade é realizada a sorologia com ELISA de 4ª geração, em que um resultado negativo descarta definitivamente a infecção.",
             "O Western Blot é realizado imediatamente em busca de anticorpos específicos para confirmar a infecção."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se espera até o ano; o acompanhamento continua com controles até os 18 meses.",
+                "Não se deve descartar a infecção sem completar o acompanhamento até os 18 meses com sorologia.",
+                "Após os 18 meses de idade, deve-se realizar sorologia com ELISA de 4ª geração; um resultado negativo nesse momento descarta definitivamente a infecção, pois nessa idade os anticorpos maternos já não interferem — é a resposta correta.",
+                "Não é necessário um Western blot imediato diante de resultados negativos consistentes na PCR."
+            ],
+            "fantasma": [
+                "Não, não se espera tanto.",
+                "Não, tem que continuar olhando.",
+                "Essa aí! Aos 18 meses já dá pra confiar nisso.",
+                "Não, não precisa desse já."
+            ],
+            "gato": [
+                "Fijate: não é tanto.",
+                "Dado curioso: tem que continuar.",
+                "Ronronado de aprovação! Aos 18 meses.",
+                "Miau, não precisa."
+            ]
+        }
     },
     {
         "pergunta": "Paciente do sexo feminino, 18 anos, sem antecedentes pessoais significativos, iniciada uma semana antes da consulta, com quadro de faringite, cansaço significativo e temperatura axilar de 37,5\", sem outros sintomas adicionais. O exame físico detectou linfonodos inflamatórios generalizados e occipitais e esplenomegalia. Os seguintes agentes etiológicos estão associados a esta condição, EXCETO:",
@@ -19100,7 +19240,27 @@
             "Citomegalovírus",
             "vírus VIH",
             "Vírus da gripe"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato o vírus Epstein-Barr causa esse quadro mononucleosiforme.",
+                "De fato o citomegalovírus causa esse quadro mononucleosiforme.",
+                "De fato o HIV na primoinfecção pode causar esse quadro mononucleosiforme.",
+                "O vírus Influenza causa um quadro respiratório agudo típico, sem adenomegalias generalizadas nem esplenomegalia características da síndrome mononucleosiforme — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse sim dá isso.",
+                "Esse sim dá isso.",
+                "Esse sim dá isso.",
+                "Essa aí! Esse é de gripe, não disso."
+            ],
+            "gato": [
+                "Fijate: sim dá.",
+                "Dado curioso: sim dá.",
+                "Miau, sim dá.",
+                "Ronronado de aprovação! É de gripe."
+            ]
+        }
     },
     {
         "pergunta": "O laboratório indica: anti-VCA IgM e IgG positivo, monoteste positivo. Anti-EBNA IgM.elgG negativo. De que patologia o paciente sofre?",
@@ -19110,7 +19270,27 @@
             "Uma reinfecção com citomegalovírus",
             "Mononucleose infecciosa devido ao vírus Epstein-Barr",
             "Uma infecção primária por HIV"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Faringite bacteriana não cursa com esses marcadores sorológicos virais.",
+                "Essa sorologia corresponde a EBV, não a CMV.",
+                "IgM e IgG anti-VCA positivas junto com Monotest positivo e IgM/IgG anti-EBNA negativas são compatíveis com mononucleose infecciosa aguda pelo vírus Epstein-Barr, pois o anti-EBNA surge mais tardiamente — é a resposta correta.",
+                "A primoinfecção por HIV não é diagnosticada com esses marcadores sorológicos de EBV."
+            ],
+            "fantasma": [
+                "Não, essa não dá esses anticorpos.",
+                "Não, isso é do outro vírus.",
+                "Essa aí! Esses marcadores são do EBV agudo.",
+                "Não, esses marcadores não são do HIV."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: é outro vírus.",
+                "Ronronado de aprovação! EBV agudo.",
+                "Miau, não é HIV."
+            ]
+        }
     },
     {
         "pergunta": "O mecanismo mais provável de transmissão desta doença foi:",
@@ -19120,7 +19300,27 @@
             "através da saliva",
             "Por contato sexual",
             "Por transmissão fecal-oral"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O EBV não se transmite principalmente por via inalatória.",
+                "O vírus Epstein-Barr se transmite principalmente pela saliva, por contato direto como o beijo, sendo a via clássica de contágio — é a resposta correta.",
+                "A transmissão sexual do EBV não é a via principal nem relevante epidemiologicamente.",
+                "O EBV não se transmite por via fecal-oral."
+            ],
+            "fantasma": [
+                "Não é pelo ar.",
+                "Essa aí! Pelo beijo, a correta.",
+                "Não é a via principal.",
+                "Não, não é pela boca-cocô."
+            ],
+            "gato": [
+                "Fijate: não é pelo ar.",
+                "Ronronado de aprovação! Pelo beijo.",
+                "Dado curioso: não é a principal.",
+                "Miau, não é assim."
+            ]
+        }
     },
     {
         "pergunta": "CASO: (O caso a seguir refere-se às três questões seguintes.) Um indivíduo de 30 anos é solicitado a realizar um teste rápido (TR) para detecção de HIV. Os laudos laboratoriais de TR reagente e os resultados dos exames complementares foram: Carga Viral: não detectável e relação CD4/CD8=0,9. Que outro exame você solicita para confirmar o diagnóstico do paciente?",
@@ -19130,7 +19330,27 @@
             "Carga viral por outro método",
             "mancha ocidental",
             "Determinação do antígeno p24."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O isolamento viral é complexo e pouco usado rotineiramente.",
+                "Repetir a carga viral por outro método não confirma a infecção após um teste rápido positivo.",
+                "O Western blot confirma a infecção por HIV após teste rápido reativo, detectando anticorpos específicos; a carga viral indetectável e a relação CD4/CD8 alterada reforçam a necessidade de confirmação sorológica — é a resposta correta.",
+                "O antígeno p24 é menos sensível nessa situação e não é o teste confirmatório padrão."
+            ],
+            "fantasma": [
+                "Isso é complicado, quase não se usa.",
+                "Repetir isso não confirma nada.",
+                "Essa aí! Esse confirma com segurança.",
+                "Esse não é o de confirmar."
+            ],
+            "gato": [
+                "Fijate: quase não se usa.",
+                "Dado curioso: não confirma.",
+                "Ronronado de aprovação! Confirma com segurança.",
+                "Miau, não é esse."
+            ]
+        }
     },
     {
         "pergunta": "A infecção pelo HIV é confirmada no paciente. Sua esposa está grávida, no terceiro trimestre de gestação (8º mês). A busca por anticorpos anti-HIV no 4º mês resultou em não reagentes. Diante de uma situação de alto risco no curso atual da gravidez e posteriormente, que comportamentos devem ser tomados?",
@@ -19140,7 +19360,27 @@
             "Espere quatro semanas caso o teste rápido dê positivo.",
             "Realize um Western blot para evitar perda de tempo no diagnóstico.",
             "Não iniba a amamentação até que a infecção seja confirmada."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Diante de situação de alto risco, deve-se realizar triagem por ELISA de 4ª geração para busca de antígenos e anticorpos contra HIV, pois detecta a infecção mais precocemente que testes de gerações anteriores — é a resposta correta.",
+                "Não se deve esperar passivamente; deve-se agir ativamente com a triagem adequada.",
+                "O Western blot é confirmatório, não de triagem inicial; primeiro deve-se fazer o ELISA de 4ª geração.",
+                "Diante de alto risco de infecção, deve-se inibir a amamentação até descartar a infecção, dado o risco de transmissão pelo leite."
+            ],
+            "fantasma": [
+                "Essa aí! Com esse teste vê mais rápido, a correta.",
+                "Não, tem que agir já.",
+                "Não, primeiro vai o ELISA.",
+                "Não, tem que parar a teta até saber."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Vê mais rápido.",
+                "Fijate: tem que agir já.",
+                "Dado curioso: primeiro o ELISA.",
+                "Miau, parar a teta."
+            ]
+        }
     },
     {
         "pergunta": "O paciente neste caso iniciou tratamento antirretroviral. Que controles você deve realizar para saber se é eficaz?",
@@ -19150,7 +19390,27 @@
             "Monitoramento dos padrões de bandas por Western blot a cada 3 meses.",
             "Carga viral e nível CD4/CD8 três vezes por ano.",
             "A busca pelo antígeno P24."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O teste de resistência não é feito anualmente de rotina para monitorar eficácia; é indicado diante de falha virológica.",
+                "Western blot não é usado para monitorar o tratamento; é teste diagnóstico confirmatório, não de acompanhamento.",
+                "O controle do tratamento antirretroviral é feito por carga viral e contagem de CD4/CD8 várias vezes ao ano, permitindo avaliar a resposta virológica e imunológica — é a resposta correta.",
+                "O antígeno P24 não é o método de acompanhamento do tratamento; é usado no diagnóstico precoce."
+            ],
+            "fantasma": [
+                "Isso não é de rotina assim.",
+                "Isso não serve pra acompanhar o tratamento.",
+                "Essa aí! Esses dois várias vezes no ano.",
+                "Esse é pro diagnóstico, não pra acompanhar."
+            ],
+            "gato": [
+                "Fijate: não é rotina.",
+                "Dado curioso: não serve pra acompanhar.",
+                "Ronronado de aprovação! Várias vezes no ano.",
+                "Miau, é pro diagnóstico."
+            ]
+        }
     },
     {
         "pergunta": "Os exames laboratoriais para determinar a presença de resistência ao tratamento antirretroviral baseiam-se em: (marque a opção CORRETA)",
@@ -19161,7 +19421,27 @@
             "Sequenciamento de nucleotídeos (genotipagem) de RNA plasmático e para determinar mutações associadas à resistência.",
             "Sequenciamento do genoma proviral de reservatórios obtidos por biópsia.",
             "Isolamento do vírus por cultura na presença de antivirais e posterior sequenciamento do genoma."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cultura celular com antivirais não é o método padrão para avaliar resistência; é complexa e pouco prática.",
+                "Os testes de resistência baseiam-se na sequenciação nucleotídica (genotipagem) a partir do RNA plasmático, para determinar mutações associadas à resistência aos antirretrovirais — é a resposta correta.",
+                "A sequenciação do genoma proviral por biópsia não é o método padrão; usa-se o RNA plasmático.",
+                "O isolamento por cultura com sequenciação posterior não é o método prático nem padrão utilizado."
+            ],
+            "fantasma": [
+                "Isso é complicado, quase não se usa.",
+                "Essa aí! Lê o RNA e vê a mutação.",
+                "Isso não é o que se usa, é outra amostra.",
+                "Isso não é o prático."
+            ],
+            "gato": [
+                "Fijate: quase não se usa.",
+                "Ronronado de aprovação! Lê o RNA.",
+                "Dado curioso: é outra amostra.",
+                "Miau, não é o prático."
+            ]
+        }
     },
     {
         "pergunta": "Paciente de 35 anos, submetido a situação de alto estresse fisiológico, consulta febre de 39\" há 2 dias. Ao exame físico apresenta fauces congestivas e linfadenopatia. O hemograma do paciente indica linfocitose e 10% de linfócitos atípicos. Caso você suspeite de infecção primária tardia por EBV, qual dos seguintes resultados confirmaria tal suspeita?",
@@ -19171,7 +19451,27 @@
             "Ausência de IgG anti-EA e IgG anti-EBNA",
             "Altos títulos de IgG anti-EBNA e ausência de IgG anti-VCA",
             "Títulos moderados de IgM anti-EBNA como único marcador"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A presença de IgG e IgM anti-VCA junto com títulos moderados de IgG anti-EBNA é compatível com infecção primária tardia por EBV, pois o anti-EBNA começa a aparecer semanas após o início da infecção aguda — é a resposta correta.",
+                "A ausência de ambos os marcadores não orienta especificamente para infecção primária tardia.",
+                "Títulos altos de IgG anti-EBNA com ausência de IgG anti-VCA não é o padrão esperado numa infecção recente; sugeriria inconsistência.",
+                "IgM anti-EBNA não é um marcador sorológico habitual nem confiável como achado único."
+            ],
+            "fantasma": [
+                "Essa aí! Essa combinação é de tardia, a correta.",
+                "Isso não diz nada de tardia.",
+                "Isso não encaixa com o recente.",
+                "Esse marcador não é de confiar sozinho."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Combinação de tardia.",
+                "Fijate: não diz nada.",
+                "Dado curioso: não encaixa.",
+                "Miau, não é de confiar."
+            ]
+        }
     },
     {
         "pergunta": "Contudo, os resultados obtidos excluem a reativação da infecção por EBV. Você decide investigar a reativação da infecção por CMV. Qual dos seguintes resultados confirma a sua suspeita de reativação da infecção por CMV?",
@@ -19181,7 +19481,27 @@
             "Presença de antígeno pp65 no sangue",
             "Presença de anticorpos IgG por Elisa",
             "Cultura viral em linhagens celulares"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O frotis de Tzanck é usado para diagnóstico de infecções herpéticas (HSV, VZV), não para CMV.",
+                "A presença de antigenemia pp65 no sangue confirma a reativação ativa do CMV, detectando diretamente o antígeno viral em leucócitos — é a resposta correta.",
+                "Anticorpos IgG por ELISA indicam exposição passada, não confirmam reativação ativa.",
+                "O cultivo viral em linhas celulares é lento e pouco prático para confirmar reativação aguda."
+            ],
+            "fantasma": [
+                "Isso é de outro vírus com bolhas.",
+                "Essa aí! Esse antígeno confirma a reativação.",
+                "Isso só diz que já teve.",
+                "Isso demora muito."
+            ],
+            "gato": [
+                "Fijate: é de outro vírus.",
+                "Ronronado de aprovação! Confirma a reativação.",
+                "Dado curioso: só diz que teve.",
+                "Miau, demora muito."
+            ]
+        }
     },
     {
         "pergunta": "Paciente do sexo masculino, 21 anos, estudante, apresenta quadro gripal há 3 semanas, com astenia, febre, faringite e sudorese. O exame revelou linfadenopatia laterocervical e axilar dolorosa. No hemograma: contagem de leucócitos 14.800/mm?; Fórmula diferencial: neutrófilos: 20%; eosinófilos: 2%; linfócitos: 68%, monócitos: 10%. Nota-se a presença de linfócitos atípicos; série vermelha e plaquetas: normais. Qual das seguintes determinações você NÃO solicitaria ao laboratório para fins de diagnóstico?",
@@ -19191,7 +19511,27 @@
             "IgM-anti VCA.",
             "IgM anti-CMV.",
             "Streptest e cultura (de esfregaço de fauces)."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato solicita-se a detecção de anticorpos heterófilos para o diagnóstico da síndrome mononucleosiforme.",
+                "De fato solicita-se IgM anti-VCA para confirmar infecção por EBV.",
+                "De fato solicita-se IgM anti-CMV como diagnóstico diferencial.",
+                "O streptest e a cultura de hisopado de fauces investigam Streptococcus pyogenes, causa de faringite bacteriana; o quadro descrito (adenopatias generalizadas, linfócitos atípicos, curso prolongado) é compatível com etiologia viral, não bacteriana — é a resposta correta (não se solicitaria)."
+            ],
+            "fantasma": [
+                "Essa está certa, se pede.",
+                "Essa está certa, se pede.",
+                "Essa está certa, se pede.",
+                "Essa aí! Isso é pra bactéria, e isso é vírus."
+            ],
+            "gato": [
+                "Fijate: se pede.",
+                "Dado curioso: se pede.",
+                "Miau, se pede.",
+                "Ronronado de aprovação! É vírus, não bactéria."
+            ]
+        }
     },
     {
         "pergunta": "A infecção pelo vírus Epstein-Barr (EBV) é confirmada. Após 6 anos, o mesmo paciente apresentou IgM-anti VCA positivo. Você infere que esse fenômeno é provavelmente atribuído à reativação viral pelo EBV. Para confirmar sua presunção, você pergunta ao laboratório:",
@@ -19201,7 +19541,27 @@
             "Antígenos virais por IFl em punção linfonodal.",
             "Antigenemia PP65",
             "Esfregaço de Tzanck usando amostra de urina."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Para confirmar reativação por EBV, solicita-se anti-VCA IgG (que permanece elevado ou aumenta) e IgG anti-EBNA (que pode flutuar ou mostrar mudanças no contexto de reativação), já que a IgM anti-VCA reaparecida num contexto de infecção prévia não é conclusiva sozinha — é a resposta correta.",
+                "A detecção de antígenos por IFI em punção de gânglio é invasiva e não é o método de escolha para confirmar reativação.",
+                "Antigenemia PP65 é marcador de CMV, não de EBV.",
+                "O frotis de Tzanck em urina não tem relevância diagnóstica para EBV."
+            ],
+            "fantasma": [
+                "Essa aí! Esses dois anticorpos, a correta.",
+                "Isso é invasivo, não é o primeiro.",
+                "Isso é do outro vírus.",
+                "Isso não faz sentido pra isso."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Esses dois anticorpos.",
+                "Fijate: é invasivo.",
+                "Dado curioso: é de outro vírus.",
+                "Miau, não faz sentido."
+            ]
+        }
     },
     {
         "pergunta": "Paciente de 25 anos chega ao consultório com dor em quadrante superior direito e icterícia. Relata que sua esposa, de 23 anos, está grávida de 7 meses e que em decorrência de exame obstétrico foi informado que ela estava infectada com hepatite B. Após análise e questionamento, solicita perfil sorológico cujo resultado é: HBs Ag (+), anti-HBs (=), IgM anti-HBc (+),/-HBe Ag (+), anti-HBe (-), IgG anti-HAV (+), IgM anti-HAV (-), IgG anti-HCV (-). Em relação à infecção pelo HBV do paciente, você infere o seguinte:",
@@ -19211,7 +19571,27 @@
             "Infecção persistente e inativa por HBV.",
             "Infecção persistente por HBV com a variante HBe Ag-minus (variante pré-núcleo/núcleo).",
             "Infecção aguda no período de janela do HBV."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O perfil sorológico (HBsAg positivo, IgM anti-HBc positivo, HBeAg positivo) indica infecção aguda inicial por VHB, com alta replicação viral e resposta imune inicial (IgM) presente — é a resposta correta.",
+                "A infecção persistente inativa apresentaria HBeAg negativo e anti-HBe positivo, não observado aqui.",
+                "A variante HBeAg-minus caracteriza-se por HBeAg negativo, o que contradiz esse perfil, onde o HBeAg é positivo.",
+                "O período de janela caracteriza-se por HBsAg negativo, não observado nesse perfil, onde o HBsAg é positivo."
+            ],
+            "fantasma": [
+                "Essa aí! Isso é recém pego, com o IgM aceso.",
+                "Não, ali faltaria esse antígeno apagado.",
+                "Não, esse antígeno está aceso, não apagado.",
+                "Não, ali o HBsAg estaria apagado."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Recém pego.",
+                "Fijate: falta o apagado.",
+                "Dado curioso: está aceso.",
+                "Miau, estaria apagado."
+            ]
+        }
     },
     {
         "pergunta": "Você pede a ele que na próxima consulta venha com sua esposa grávida fazer os exames. O perfil sorológico da mulher é: HBs Ag (+), anti-HBs (-), lg M anti-HBc (-), Ig total anti HBc (+), HBe Ag (+), anti-HBe (-), lg anti HCV (-). Com relação ao contágio por vias horizontais e verticais, você infere que:",
@@ -19221,7 +19601,27 @@
             "É muito provável que o bebê desenvolva uma infecção assintomática",
             "O marido não poderia ter sido infectado porque possui anticorpos anti-HBec, que são neutralizantes.",
             "A mulher não poderia ter sido infectada pelo marido porque tem uma infecção crónica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Subestima o risco de cronicidade no bebê, que pode ser muito maior, especialmente com HBeAg materno positivo.",
+                "Bebês infectados por transmissão vertical do VHB geralmente desenvolvem infecção assintomática inicial devido à imaturidade do sistema imunológico — é a resposta correta.",
+                "Anticorpos anti-HBc NÃO são neutralizantes; apenas indicam exposição ao vírus, não conferem proteção contra a infecção.",
+                "Ter infecção crônica não impede que a mulher tenha se contagiado do marido; na verdade, a infecção crônica é consequência de um contágio prévio."
+            ],
+            "fantasma": [
+                "Não, o risco pode ser muito mais alto.",
+                "Essa aí! Quase não dá sintoma no começo.",
+                "Não, esse anticorpo não protege de nada.",
+                "Não, a crônica vem de ter se contagiado antes."
+            ],
+            "gato": [
+                "Fijate: pode ser mais alto.",
+                "Ronronado de aprovação! Quase sem sintoma.",
+                "Dado curioso: não protege.",
+                "Miau, vem de antes."
+            ]
+        }
     },
     {
         "pergunta": "As seguintes determinações podem ser utilizadas para monitoramento e acompanhamento da infecção por hepatite crônica em ambos os membros do casal, EXCETO:",

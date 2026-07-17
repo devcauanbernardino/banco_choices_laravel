@@ -28543,7 +28543,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el HBsAg debe solicitarse ante un cuadro de hepatitis aguda.",
+                    "Efectivamente el anti-HCV debe solicitarse para descartar hepatitis C.",
+                    "El antígeno HBc (HBcAg) no es detectable en sangre, ya que se encuentra únicamente dentro de los hepatocitos infectados; no tiene utilidad diagnóstica en suero, por lo que no se solicita — es la respuesta correcta.",
+                    "Efectivamente la IgM anti-HAV debe solicitarse para diagnosticar hepatitis A aguda."
+                ],
+                "fantasma": [
+                    "Esa está bien, se pide.",
+                    "Esa está bien, se pide.",
+                    "¡Esta! Ese no se ve en la sangre.",
+                    "Esa está bien, se pide."
+                ],
+                "gato": [
+                    "Fijate: se pide.",
+                    "Dato curioso: se pide.",
+                    "¡Ronroneo de aprobación! No se ve en sangre.",
+                    "Miau, se pide."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -28569,7 +28589,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La infección aguda por HBV requeriría IgM anti-HBc positivo, ausente en este perfil.",
+                    "La infección aguda por HAV requeriría IgM anti-HAV positivo, ausente aquí.",
+                    "El HBsAg positivo con IgM anti-HBc negativo indica infección persistente por HBV; la IgG anti-HAV positiva con IgM negativa indica infección pasada por hepatitis A — es la respuesta correcta.",
+                    "No hay coinfección aguda; los marcadores de fase aguda (IgM) están negativos para ambos virus."
+                ],
+                "fantasma": [
+                    "Falta el IgM para ser agudo.",
+                    "Falta el IgM para ser agudo.",
+                    "¡Esta! Una ya pasó, la otra sigue.",
+                    "No, ninguna es aguda ahora."
+                ],
+                "gato": [
+                    "Fijate: falta el IgM.",
+                    "Dato curioso: falta el IgM.",
+                    "¡Ronroneo de aprobación! Una pasó, otra sigue.",
+                    "Miau, ninguna aguda."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -28595,7 +28635,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "En hemodiálisis, el riesgo principal es la transmisión de virus por vía parenteral, como HBV y HCV, debido a la exposición frecuente a sangre y procedimientos invasivos — es la respuesta correcta.",
+                    "HAV y HEV se transmiten por vía fecal-oral, no siendo la principal preocupación en el contexto de hemodiálisis.",
+                    "El VHD depende del VHB para su replicación, pero no es el foco inicial de vigilancia; se investiga junto al VHB si este está presente.",
+                    "EBV y CMV no son la prioridad de vigilancia en hemodiálisis, ya que la transmisión relevante en ese contexto es la parenteral."
+                ],
+                "fantasma": [
+                    "¡Esta! Esos dos van por la sangre, la correcta.",
+                    "Esos son por la boca, no es lo primero.",
+                    "Ese depende del otro, no es el primero a mirar.",
+                    "Esos no son la prioridad acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Van por la sangre.",
+                    "Fijate: son por la boca.",
+                    "Dato curioso: depende del otro.",
+                    "Miau, no es prioridad."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -28621,7 +28681,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El HBsAg indica infección activa, no la prevalencia total de exposición al virus (incluyendo casos resueltos).",
+                    "El HBeAg indica replicación viral activa, no prevalencia general de exposición.",
+                    "Las inmunoglobulinas IgG anti-HBc detectan tanto infecciones activas como resueltas, siendo el marcador más adecuado para establecer la prevalencia total de exposición al VHB en una población — es la respuesta correcta.",
+                    "El anti-HBs indica solo inmunidad (por vacunación o infección resuelta con seroconversión), no capturando todos los casos de exposición previa."
+                ],
+                "fantasma": [
+                    "Ese es solo del activo.",
+                    "Ese es solo de cuando replica.",
+                    "¡Esta! Ese marca a todos los que tuvieron contacto.",
+                    "Ese es solo del inmune."
+                ],
+                "gato": [
+                    "Fijate: solo activo.",
+                    "Dato curioso: solo replicando.",
+                    "¡Ronroneo de aprobación! Marca a todos.",
+                    "Miau, solo inmune."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -28647,7 +28727,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La carga viral detectable (10.000 copias/ml) y la relación CD4/CD8 alterada confirman infección activa; no es necesario retrasar el diagnóstico con más estudios.",
+                    "No se puede afirmar que el hijo nacerá infectado; con tratamiento antirretroviral adecuado el riesgo de transmisión vertical se reduce drásticamente.",
+                    "Se debe indicar el inicio rápido del tratamiento antirretroviral, tanto para el beneficio de la paciente como para reducir el riesgo de transmisión vertical al feto — es la respuesta correcta.",
+                    "La relación CD4/CD8 alterada junto con carga viral detectable confirma la infección, no sugiere un falso positivo del ELISA inicial."
+                ],
+                "fantasma": [
+                    "No, ya está confirmado con esos números.",
+                    "No, con tratamiento se puede evitar.",
+                    "¡Esta! Empezar rápido, la correcta.",
+                    "No, esos números confirman, no desmienten."
+                ],
+                "gato": [
+                    "Fijate: ya está confirmado.",
+                    "Dato curioso: se puede evitar.",
+                    "¡Ronroneo de aprobación! Empezar rápido.",
+                    "Miau, confirman, no desmienten."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -28673,7 +28773,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El recuento de CD4 no es un método diagnóstico en el neonato, solo evalúa estado inmunológico.",
+                    "En el neonato se debe solicitar la carga viral (PCR), ya que los métodos serológicos (anticuerpos) reflejarían anticuerpos maternos transferidos por vía transplacentaria, no la infección del bebé — es la respuesta correcta.",
+                    "El Western blot detecta anticuerpos, que en el neonato pueden ser de origen materno, no siendo útil para el diagnóstico directo.",
+                    "El test rápido detecta anticuerpos, con la misma limitación que el Western blot en neonatos."
+                ],
+                "fantasma": [
+                    "Ese no diagnostica, solo mira defensas.",
+                    "¡Esta! Con eso se ve el virus directo, la correcta.",
+                    "Ese puede ser de la mamá.",
+                    "Ese también puede ser de la mamá."
+                ],
+                "gato": [
+                    "Fijate: no diagnostica.",
+                    "¡Ronroneo de aprobación! Ve el virus directo.",
+                    "Dato curioso: puede ser de mamá.",
+                    "Miau, también de mamá."
+                ]
+            }
         },
         {
             "numero": 51,
@@ -28699,7 +28819,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "La opción CORRECTA es C: Transcurrido los 18 meses de edad se procede a realizar serología con ELISA de 4ta generación, enel cual un resultado negativo descarta definitivamente la infección Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es C: Transcurrido los 18 meses de edad se procede a realizar serología con ELISA de 4ta generación, enel cual un resultado negativo descarta definitivamente la infección Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "No se espera hasta el año; el seguimiento continúa con controles hasta los 18 meses.",
+                    "No se debe descartar la infección sin completar el seguimiento hasta los 18 meses con serología.",
+                    "Transcurridos los 18 meses de edad, se debe realizar serología con ELISA de 4ª generación; un resultado negativo en ese momento descarta definitivamente la infección, ya que a esa edad ya no interfieren los anticuerpos maternos — es la respuesta correcta.",
+                    "No es necesario un Western blot inmediato ante resultados negativos consistentes en la PCR."
+                ],
+                "fantasma": [
+                    "No, no se espera tanto.",
+                    "No, hay que seguir mirando.",
+                    "¡Esta! A los 18 meses ya se puede confiar en eso.",
+                    "No, no hace falta ese ya."
+                ],
+                "gato": [
+                    "Fijate: no es tanto.",
+                    "Dato curioso: hay que seguir.",
+                    "¡Ronroneo de aprobación! A los 18 meses.",
+                    "Miau, no hace falta."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -28725,7 +28865,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el virus Epstein-Barr causa este cuadro mononucleosiforme.",
+                    "Efectivamente el citomegalovirus causa este cuadro mononucleosiforme.",
+                    "Efectivamente el VIH en primoinfección puede causar este cuadro mononucleosiforme.",
+                    "El virus Influenza causa un cuadro respiratorio agudo típico, sin adenomegalias generalizadas ni esplenomegalia características del síndrome mononucleosiforme — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese sí da eso.",
+                    "Ese sí da eso.",
+                    "Ese sí da eso.",
+                    "¡Esta! Ese es de gripe, no de esto."
+                ],
+                "gato": [
+                    "Fijate: sí da.",
+                    "Dato curioso: sí da.",
+                    "Miau, sí da.",
+                    "¡Ronroneo de aprobación! Es de gripe."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -28751,7 +28911,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La faringitis bacteriana no cursa con estos marcadores serológicos virales.",
+                    "Esta serología corresponde a EBV, no a CMV.",
+                    "IgM e IgG anti-VCA positivas junto con Monotest positivo e IgM/IgG anti-EBNA negativas son compatibles con una mononucleosis infecciosa aguda por el virus Epstein-Barr, ya que el anti-EBNA aparece más tardíamente — es la respuesta correcta.",
+                    "La primoinfección por VIH no se diagnostica con estos marcadores serológicos de EBV."
+                ],
+                "fantasma": [
+                    "No, esa no da esos anticuerpos.",
+                    "No, eso es del otro virus.",
+                    "¡Esta! Esos marcadores son del EBV agudo.",
+                    "No, esos marcadores no son del HIV."
+                ],
+                "gato": [
+                    "Fijate: no da eso.",
+                    "Dato curioso: es otro virus.",
+                    "¡Ronroneo de aprobación! EBV agudo.",
+                    "Miau, no es HIV."
+                ]
+            }
         },
         {
             "numero": 54,
@@ -28777,7 +28957,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El EBV no se transmite principalmente por vía inhalatoria.",
+                    "El virus Epstein-Barr se transmite principalmente a través de la saliva, por contacto directo como el beso, siendo la vía clásica de contagio — es la respuesta correcta.",
+                    "La transmisión sexual del EBV no es la vía principal ni relevante epidemiológicamente.",
+                    "El EBV no se transmite por vía fecal-oral."
+                ],
+                "fantasma": [
+                    "No es por el aire.",
+                    "¡Esta! Por el beso, la correcta.",
+                    "No es la vía principal.",
+                    "No, no es por la boca-caca."
+                ],
+                "gato": [
+                    "Fijate: no es por el aire.",
+                    "¡Ronroneo de aprobación! Por el beso.",
+                    "Dato curioso: no es la principal.",
+                    "Miau, no es así."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -28803,7 +29003,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El aislamiento viral es complejo y poco usado de rutina.",
+                    "Repetir la carga viral por otro método no confirma la infección tras un test rápido positivo.",
+                    "El Western blot confirma la infección por VIH tras un test rápido reactivo, detectando anticuerpos específicos; la carga viral indetectable y la relación CD4/CD8 alterada refuerzan la necesidad de confirmación serológica — es la respuesta correcta.",
+                    "El antígeno p24 es menos sensible en esta situación y no es la prueba confirmatoria estándar."
+                ],
+                "fantasma": [
+                    "Eso es complicado, casi no se usa.",
+                    "Repetir eso no confirma nada.",
+                    "¡Esta! Ese confirma con seguridad.",
+                    "Ese no es el de confirmar."
+                ],
+                "gato": [
+                    "Fijate: casi no se usa.",
+                    "Dato curioso: no confirma.",
+                    "¡Ronroneo de aprobación! Confirma con seguridad.",
+                    "Miau, no es ese."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -28829,7 +29049,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Ante una situación de alto riesgo, se debe realizar tamizaje mediante ELISA de 4ª generación para la búsqueda de antígenos y anticuerpos contra VIH, ya que detecta la infección más precozmente que las pruebas de generaciones anteriores — es la respuesta correcta.",
+                    "No se debe esperar pasivamente; se debe actuar activamente con el tamizaje adecuado.",
+                    "El Western blot es confirmatorio, no de tamizaje inicial; primero se debe hacer el ELISA de 4ª generación.",
+                    "Ante alto riesgo de infección, se debe inhibir la lactancia materna hasta descartar la infección, dado el riesgo de transmisión por la leche."
+                ],
+                "fantasma": [
+                    "¡Esta! Con esa prueba se ve más rápido, la correcta.",
+                    "No, hay que actuar ya.",
+                    "No, primero va el ELISA.",
+                    "No, hay que frenar la teta hasta saber."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se ve más rápido.",
+                    "Fijate: hay que actuar ya.",
+                    "Dato curioso: primero el ELISA.",
+                    "Miau, frenar la teta."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -28855,7 +29095,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La prueba de resistencia no se hace de rutina anual para monitorear la eficacia; se indica ante falla virológica.",
+                    "El Western blot no se usa para monitorear el tratamiento; es una prueba diagnóstica confirmatoria, no de seguimiento.",
+                    "El control del tratamiento antirretroviral se realiza mediante carga viral y recuento de CD4/CD8 varias veces al año, permitiendo evaluar la respuesta virológica e inmunológica — es la respuesta correcta.",
+                    "El antígeno P24 no es el método de seguimiento del tratamiento; se usa en el diagnóstico temprano."
+                ],
+                "fantasma": [
+                    "Eso no es de rutina así.",
+                    "Eso no sirve para seguir el tratamiento.",
+                    "¡Esta! Esos dos varias veces al año.",
+                    "Ese es para el diagnóstico, no para seguir."
+                ],
+                "gato": [
+                    "Fijate: no es rutina.",
+                    "Dato curioso: no sirve para seguir.",
+                    "¡Ronroneo de aprobación! Varias veces al año.",
+                    "Miau, es para diagnóstico."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -28881,7 +29141,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "La opción CORRECTA es B: Secuenciación nucleotídica (genotipificación) a partir de ARN plasmático y para determinar mutaciones asociadas a resistencia. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es B: Secuenciación nucleotídica (genotipificación) a partir de ARN plasmático y para determinar mutaciones asociadas a resistencia. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo celular con antivirales no es el método estándar para evaluar resistencia; es complejo y poco práctico.",
+                    "Las pruebas de resistencia se basan en la secuenciación nucleotídica (genotipificación) a partir del ARN plasmático, para determinar mutaciones asociadas a resistencia a los antirretrovirales — es la respuesta correcta.",
+                    "La secuenciación de genoma proviral por biopsia no es el método estándar; se usa el ARN plasmático.",
+                    "El aislamiento por cultivo con posterior secuenciación no es el método práctico ni estándar utilizado."
+                ],
+                "fantasma": [
+                    "Eso es complicado, casi no se usa.",
+                    "¡Esta! Se lee el ARN y se ve la mutación.",
+                    "Eso no es lo que se usa, es otra muestra.",
+                    "Eso no es lo práctico."
+                ],
+                "gato": [
+                    "Fijate: casi no se usa.",
+                    "¡Ronroneo de aprobación! Se lee el ARN.",
+                    "Dato curioso: es otra muestra.",
+                    "Miau, no es lo práctico."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -28907,7 +29187,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La presencia de IgG e IgM anti-VCA junto con títulos moderados de IgG anti-EBNA es compatible con una infección primaria tardía por EBV, ya que el anti-EBNA comienza a aparecer semanas después del inicio de la infección aguda — es la respuesta correcta.",
+                    "La ausencia de ambos marcadores no orienta hacia una infección primaria tardía específicamente.",
+                    "Títulos altos de IgG anti-EBNA con ausencia de IgG anti-VCA no es el patrón esperado en una infección reciente; sugeriría inconsistencia.",
+                    "La IgM anti-EBNA no es un marcador serológico habitual ni confiable como único hallazgo."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa combinación es de tardía, la correcta.",
+                    "Eso no dice nada de tardía.",
+                    "Eso no encaja con lo reciente.",
+                    "Ese marcador no es de fiar solo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Combinación de tardía.",
+                    "Fijate: no dice nada.",
+                    "Dato curioso: no encaja.",
+                    "Miau, no es de fiar."
+                ]
+            }
         },
         {
             "numero": 60,
@@ -28933,7 +29233,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Feedback não disponível devido a erro na geração; não foi possível fornecer informações sobre as respostas corretas ou incorretas."
+            "feedback": "Feedback não disponível devido a erro na geração; não foi possível fornecer informações sobre as respostas corretas ou incorretas.",
+            "explicacoes": {
+                "robo": [
+                    "El frotis de Tzanck se usa para el diagnóstico de infecciones herpéticas (HSV, VZV), no para CMV.",
+                    "La presencia de antigenemia pp65 en sangre confirma la reactivación activa del CMV, detectando directamente el antígeno viral en leucocitos — es la respuesta correcta.",
+                    "Los anticuerpos IgG mediante ELISA indican exposición pasada, no confirman reactivación activa.",
+                    "El cultivo viral en líneas celulares es lento y poco práctico para confirmar una reactivación aguda."
+                ],
+                "fantasma": [
+                    "Eso es de otro virus con ampollas.",
+                    "¡Esta! Ese antígeno confirma la reactivación.",
+                    "Eso solo dice que ya lo tuvo.",
+                    "Eso tarda mucho."
+                ],
+                "gato": [
+                    "Fijate: es de otro virus.",
+                    "¡Ronroneo de aprobación! Confirma la reactivación.",
+                    "Dato curioso: solo dice que tuvo.",
+                    "Miau, tarda mucho."
+                ]
+            }
         },
         {
             "numero": 61,
@@ -28959,7 +29279,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente se solicita la detección de anticuerpos heterófilos para el diagnóstico del síndrome mononucleosiforme.",
+                    "Efectivamente se solicita IgM anti-VCA para confirmar infección por EBV.",
+                    "Efectivamente se solicita IgM anti-CMV como diagnóstico diferencial.",
+                    "El streptest y el cultivo de hisopado de fauces investigan Streptococcus pyogenes, causa de faringitis bacteriana; el cuadro descripto (adenopatías generalizadas, linfocitos atípicos, curso prolongado) es compatible con etiología viral, no bacteriana — es la respuesta correcta (no se solicitaría)."
+                ],
+                "fantasma": [
+                    "Esa está bien, se pide.",
+                    "Esa está bien, se pide.",
+                    "Esa está bien, se pide.",
+                    "¡Esta! Eso es para bacteria, y esto es virus."
+                ],
+                "gato": [
+                    "Fijate: se pide.",
+                    "Dato curioso: se pide.",
+                    "Miau, se pide.",
+                    "¡Ronroneo de aprobación! Es virus, no bacteria."
+                ]
+            }
         },
         {
             "numero": 62,
@@ -28985,7 +29325,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Feedback não disponível devido a erro na geração; não foi possível fornecer orientações sobre as respostas corretas e incorretas."
+            "feedback": "Feedback não disponível devido a erro na geração; não foi possível fornecer orientações sobre as respostas corretas e incorretas.",
+            "explicacoes": {
+                "robo": [
+                    "Para confirmar una reactivación por EBV, se solicita anti-VCA IgG (que permanece elevado o aumenta) e IgG anti-EBNA (que puede fluctuar o mostrar cambios en el contexto de reactivación), ya que la IgM anti-VCA reaparecida en un contexto de infección previa no es concluyente por sí sola — es la respuesta correcta.",
+                    "La detección de antígenos por IFI en punción de ganglio es invasiva y no es el método de elección para confirmar una reactivación.",
+                    "La antigenemia PP65 es un marcador de CMV, no de EBV.",
+                    "El frotis de Tzanck en orina no tiene relevancia diagnóstica para EBV."
+                ],
+                "fantasma": [
+                    "¡Esta! Esos dos anticuerpos, la correcta.",
+                    "Eso es invasivo, no es lo primero.",
+                    "Eso es del otro virus.",
+                    "Eso no tiene sentido para esto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Esos dos anticuerpos.",
+                    "Fijate: es invasivo.",
+                    "Dato curioso: es de otro virus.",
+                    "Miau, no tiene sentido."
+                ]
+            }
         },
         {
             "numero": 63,
@@ -29011,7 +29371,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El perfil serológico (HBsAg positivo, IgM anti-HBc positivo, HBeAg positivo) indica infección aguda temprana por VHB, con alta replicación viral y respuesta inmune inicial (IgM) presente — es la respuesta correcta.",
+                    "La infección persistente inactiva presentaría HBeAg negativo y anti-HBe positivo, no observado aquí.",
+                    "La variante HBeAg-minus se caracteriza por HBeAg negativo, lo cual contradice este perfil, donde el HBeAg es positivo.",
+                    "El período de ventana se caracteriza por HBsAg negativo, no observado en este perfil, donde el HBsAg es positivo."
+                ],
+                "fantasma": [
+                    "¡Esta! Eso es recién agarrado, con el IgM prendido.",
+                    "No, ahí faltaría ese antígeno apagado.",
+                    "No, ese antígeno está prendido, no apagado.",
+                    "No, ahí el HBsAg estaría apagado."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Recién agarrado.",
+                    "Fijate: falta el apagado.",
+                    "Dato curioso: está prendido.",
+                    "Miau, estaría apagado."
+                ]
+            }
         },
         {
             "numero": 64,
@@ -29037,7 +29417,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Subestima el riesgo de cronicidad en el bebé, que puede ser mucho mayor, especialmente con HBeAg materno positivo.",
+                    "Los bebés infectados por transmisión vertical del VHB generalmente desarrollan una infección asintomática inicial debido a la inmadurez del sistema inmunológico — es la respuesta correcta.",
+                    "Los anticuerpos anti-HBc NO son neutralizantes; solo indican exposición al virus, no otorgan protección contra la infección.",
+                    "Tener infección crónica no impide que la mujer se haya contagiado del marido; de hecho, la infección crónica es consecuencia de un contagio previo."
+                ],
+                "fantasma": [
+                    "No, el riesgo puede ser mucho más alto.",
+                    "¡Esta! Casi no da síntoma al principio.",
+                    "No, ese anticuerpo no protege de nada.",
+                    "No, la crónica viene de haberse contagiado antes."
+                ],
+                "gato": [
+                    "Fijate: puede ser más alto.",
+                    "¡Ronroneo de aprobación! Casi sin síntoma.",
+                    "Dato curioso: no protege.",
+                    "Miau, viene de antes."
+                ]
+            }
         },
         {
             "numero": 65,
