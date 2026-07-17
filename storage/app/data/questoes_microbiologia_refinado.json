@@ -26703,7 +26703,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Toxoplasma gondii.  \nT. gondii é um protozoário intracelular que reativa em pacientes com SIDA e CD4 <100, causando toxoplasmose cerebral com lesões focais e massas no cérebro, gerando sintomas neurológicos variados.\n\n**Outras opções:**  \nA. Trypanosoma cruzi causa doença de Chagas, afetando principalmente coração e sistema digestivo, não formando massas cerebrais em SIDA.  \nB. Aspergillus fumigatus pode causar abscessos cerebrais, mas é menos comum que T. gondii e ocorre mais em neutropenia.  \nC. Pneumocystis jirovecii causa"
+            "feedback": "**Resposta Correta:** D. Toxoplasma gondii.  \nT. gondii é um protozoário intracelular que reativa em pacientes com SIDA e CD4 <100, causando toxoplasmose cerebral com lesões focais e massas no cérebro, gerando sintomas neurológicos variados.\n\n**Outras opções:**  \nA. Trypanosoma cruzi causa doença de Chagas, afetando principalmente coração e sistema digestivo, não formando massas cerebrais em SIDA.  \nB. Aspergillus fumigatus pode causar abscessos cerebrais, mas é menos comum que T. gondii e ocorre mais em neutropenia.  \nC. Pneumocystis jirovecii causa",
+            "explicacoes": {
+                "robo": [
+                    "Trypanosoma cruzi causa la enfermedad de Chagas, afectando principalmente al corazón y al sistema digestivo, sin formar masas cerebrales en el SIDA.",
+                    "Aspergillus fumigatus puede causar abscesos cerebrales, pero es menos común que T. gondii y ocurre más en neutropenia.",
+                    "Pneumocystis jirovecii causa neumonía, no lesiones cerebrales focales.",
+                    "Toxoplasma gondii es un protozoario intracelular que se reactiva en pacientes con SIDA y CD4 <100, causando toxoplasmosis cerebral con lesiones focales y masas en el cerebro, generando síntomas neurológicos variados — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese ataca el corazón, no el cerebro.",
+                    "Ese es menos común, es de otro caso.",
+                    "Ese va al pulmón.",
+                    "¡Esta! El que hace la masa en el cerebro."
+                ],
+                "gato": [
+                    "Fijate: va al corazón.",
+                    "Dato curioso: es menos común.",
+                    "Miau, va al pulmón.",
+                    "¡Ronroneo de aprobación! La masa cerebral."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -26729,7 +26749,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Recomenda-se vacinar todos os adultos não vacinados contra hepatite B.\n\nA vacina é essencial para prevenir a infecção pelo HBV, protegendo contra múltiplas formas de transmissão.  \n**Outras opções:**  \nA) Imunoglobulina anti-HBs oferece proteção temporária e não substitui a vacina.  \nB) Vacinação é recomendada em adultos com HIV, apesar da resposta imunológica variável.  \nC) Vacinar menores de um ano não é contraindicado; pelo contrário, é recomendada logo após o nascimento."
+            "feedback": "**Resposta Correta:** D. Recomenda-se vacinar todos os adultos não vacinados contra hepatite B.\n\nA vacina é essencial para prevenir a infecção pelo HBV, protegendo contra múltiplas formas de transmissão.  \n**Outras opções:**  \nA) Imunoglobulina anti-HBs oferece proteção temporária e não substitui a vacina.  \nB) Vacinação é recomendada em adultos com HIV, apesar da resposta imunológica variável.  \nC) Vacinar menores de um ano não é contraindicado; pelo contrário, é recomendada logo após o nascimento.",
+            "explicacoes": {
+                "robo": [
+                    "La inmunoglobulina anti-HBs ofrece protección temporal y no sustituye a la vacuna.",
+                    "La vacunación se recomienda en adultos con VIH, a pesar de que la respuesta inmunológica pueda ser variable.",
+                    "Vacunar a menores de un año no está contraindicado; al contrario, se recomienda poco después del nacimiento.",
+                    "Se recomienda la vacunación contra la hepatitis B para todos los adultos no vacunados; la vacuna es esencial para prevenir la infección por HBV, protegiendo contra múltiples formas de transmisión — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No, eso protege poquito y por poco tiempo.",
+                    "No, igual se recomienda.",
+                    "No, se da apenas nace.",
+                    "¡Esta! A todo adulto que no se dio, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es temporal.",
+                    "Dato curioso: sí se recomienda.",
+                    "Miau, se da al nacer.",
+                    "¡Ronroneo de aprobación! A todos los adultos."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -26755,7 +26795,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. A transmissão do abscesso hepático amebiano ocorre pela ingestão de quistos de *E. histolytica* em água ou alimentos contaminados com fezes. \n\nOpção B incorreta: a sorologia antiamebas tem alta sensibilidade e é útil no diagnóstico. \n\nOpção C incorreta: a doença é rara na Argentina, região de baixa endemicidade. \n\nOpção D incorreta: o abscesso é mais comum em adultos jovens, não em crianças."
+            "feedback": "Resposta correta: A. A transmissão do abscesso hepático amebiano ocorre pela ingestão de quistos de *E. histolytica* em água ou alimentos contaminados com fezes. \n\nOpção B incorreta: a sorologia antiamebas tem alta sensibilidade e é útil no diagnóstico. \n\nOpção C incorreta: a doença é rara na Argentina, região de baixa endemicidade. \n\nOpção D incorreta: o abscesso é mais comum em adultos jovens, não em crianças.",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión del absceso hepático amebiano ocurre por la ingestión de quistes de E. histolytica en agua o alimentos contaminados con heces — es la respuesta correcta.",
+                    "La serología antiamebas tiene alta sensibilidad y es útil en el diagnóstico.",
+                    "La enfermedad es rara en Argentina, región de baja endemicidad.",
+                    "El absceso es más común en adultos jóvenes, no en niños."
+                ],
+                "fantasma": [
+                    "¡Esta! Por el agua o comida con caca.",
+                    "No, ve bien esa prueba.",
+                    "No, acá casi no hay.",
+                    "No, es del adulto joven."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Agua o comida sucia.",
+                    "Fijate: ve bien.",
+                    "Dato curioso: casi no hay.",
+                    "Miau, es del adulto."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -26781,7 +26841,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O diagnóstico inicial de HIV em maiores de 18 meses é feito pela detecção de anticorpos no plasma, seguido pela quantificação da carga viral e testes confirmatórios como Western blot para garantir especificidade e evitar erros.  \n\n**Opções Incorretas:**  \nB está errada ao afirmar que não há replicação viral no período assintomático, pois o vírus se replica ativamente.  \nC erra ao considerar que anticorpos são detectáveis na janela imunológica; nesse período, PCR é mais eficaz.  \nD está incorreta ao negar o impacto positivo do TAR no aumento dos linfócitos T CD4+."
+            "feedback": "**Resposta Correta:** A. O diagnóstico inicial de HIV em maiores de 18 meses é feito pela detecção de anticorpos no plasma, seguido pela quantificação da carga viral e testes confirmatórios como Western blot para garantir especificidade e evitar erros.  \n\n**Opções Incorretas:**  \nB está errada ao afirmar que não há replicação viral no período assintomático, pois o vírus se replica ativamente.  \nC erra ao considerar que anticorpos são detectáveis na janela imunológica; nesse período, PCR é mais eficaz.  \nD está incorreta ao negar o impacto positivo do TAR no aumento dos linfócitos T CD4+.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico inicial del VIH en mayores de 18 meses se realiza mediante la detección de anticuerpos en plasma, seguido de la cuantificación de la carga viral y pruebas confirmatorias como el Western blot para garantizar especificidad — es la respuesta correcta.",
+                    "Durante el período asintomático sí hay replicación viral activa; la afirmación de que no existe riesgo de transmisión es incorrecta.",
+                    "Durante el período de ventana los anticuerpos aún no son detectables; en ese período, el PCR es más eficaz.",
+                    "El tratamiento antirretroviral sí tiene un impacto positivo relevante, aumentando el recuento de linfocitos T CD4+."
+                ],
+                "fantasma": [
+                    "¡Esta! Primero anticuerpo, después se confirma.",
+                    "No, el virus sigue trabajando igual.",
+                    "No, ahí todavía no se ve el anticuerpo.",
+                    "No, sí sube el CD4 con el tratamiento."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Primero anticuerpo.",
+                    "Fijate: sigue trabajando.",
+                    "Dato curioso: no se ve todavía.",
+                    "Miau, sí sube el CD4."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -26807,7 +26887,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Vacinação para HBV (anti-HBs +, anti-HBc -), possível infecção por HCV (anti-HCV +) e suscetibilidade à HAV (anti-HAV -). Anti-HBc negativo indica ausência de infecção natural por HBV, confirmando vacinação. Anti-HCV positivo sugere infecção atual ou passada, requerendo PCR para confirmação. Anti-HAV negativo indica falta de imunidade.  \nOpções A e C incorretas: A exige anti-HBc positivo para infecção oculta por HBV, ausente aqui; C espera HBsAg e anti-HBc IgM positivos para infecção aguda, não observados."
+            "feedback": "Resposta correta: B. Vacinação para HBV (anti-HBs +, anti-HBc -), possível infecção por HCV (anti-HCV +) e suscetibilidade à HAV (anti-HAV -). Anti-HBc negativo indica ausência de infecção natural por HBV, confirmando vacinação. Anti-HCV positivo sugere infecção atual ou passada, requerendo PCR para confirmação. Anti-HAV negativo indica falta de imunidade.  \nOpções A e C incorretas: A exige anti-HBc positivo para infecção oculta por HBV, ausente aqui; C espera HBsAg e anti-HBc IgM positivos para infecção aguda, não observados.",
+            "explicacoes": {
+                "robo": [
+                    "La infección oculta por HBV exige anti-HBc positivo, ausente en este perfil.",
+                    "El perfil indica vacunación para HBV (anti-HBs +, anti-HBc -), posible infección por HCV (anti-HCV +) y susceptibilidad a HAV (anti-HAV -); el anti-HBc negativo indica ausencia de infección natural por HBV, confirmando vacunación — es la respuesta correcta.",
+                    "La infección aguda por HBV requiere HBsAg y anti-HBc IgM positivos, no observados en este perfil.",
+                    "La infección pasada por HBV requeriría anti-HBc positivo, ausente aquí; el perfil corresponde a vacunación, no a infección pasada."
+                ],
+                "fantasma": [
+                    "Le falta ese marcador para ser oculta.",
+                    "¡Esta! Vacunado y hay que revisar la C.",
+                    "Le falta lo agudo.",
+                    "No, esto es de vacuna, no de pasada."
+                ],
+                "gato": [
+                    "Fijate: falta ese dato.",
+                    "¡Ronroneo de aprobación! Vacunado.",
+                    "Dato curioso: falta lo agudo.",
+                    "Miau, es de vacuna."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -26833,7 +26933,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Diferentes genótipos do vírus da hepatite E (HEV) circulam em países distintos, associados a surtos endêmicos locais.\n\nO HEV possui genótipos 1 e 2, predominantes em países em desenvolvimento, transmitidos principalmente por via fecal-oral via água contaminada. Os genótipos 3 e 4 ocorrem em países desenvolvidos, com transmissão zoonótica, relacionada ao consumo de carne suína. \n\nOpções incorretas:  \nA) Transmissão não é exclusivamente fecal-oral;  \nB) Infecção pode ser crônica em imunossuprimidos e grave em gestantes;  \nC) Inf"
+            "feedback": "**Resposta Correta:** D. Diferentes genótipos do vírus da hepatite E (HEV) circulam em países distintos, associados a surtos endêmicos locais.\n\nO HEV possui genótipos 1 e 2, predominantes em países em desenvolvimento, transmitidos principalmente por via fecal-oral via água contaminada. Os genótipos 3 e 4 ocorrem em países desenvolvidos, com transmissão zoonótica, relacionada ao consumo de carne suína. \n\nOpções incorretas:  \nA) Transmissão não é exclusivamente fecal-oral;  \nB) Infecção pode ser crônica em imunossuprimidos e grave em gestantes;  \nC) Inf",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión no es exclusivamente fecal-oral; también existe la vía zoonótica en los genotipos 3 y 4.",
+                    "La infección puede ser crónica en inmunosuprimidos y grave en gestantes, no siempre aguda y autolimitada.",
+                    "La primoinfección no ocurre mayoritariamente antes de los 2 años; depende de la exposición y el genotipo circulante.",
+                    "Diferentes genotipos del virus de la hepatitis E circulan de manera diferencial en distintos países, asociados a brotes endémicos locales; los genotipos 1 y 2 predominan en países en desarrollo, transmitidos por vía fecal-oral, mientras que los genotipos 3 y 4 ocurren en países desarrollados, con transmisión zoonótica — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No, también hay por el animal.",
+                    "No, en el débil se hace crónico.",
+                    "No, no es a esa edad siempre.",
+                    "¡Esta! Cada país tiene el suyo, la correcta."
+                ],
+                "gato": [
+                    "Fijate: también por animal.",
+                    "Dato curioso: se hace crónico.",
+                    "Miau, no es siempre.",
+                    "¡Ronroneo de aprobación! Cada país el suyo."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -26859,7 +26979,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta, pois a vacina contra hepatite E existe, mas sua disponibilidade é limitada, principalmente fora da Ásia. Portanto, não há profilaxia ativa vacinal disponível mundialmente.\n\n**Outras opções:**  \nA, B e D estão corretas: imunossuprimidos podem desenvolver infecção crônica (A); gestantes têm risco de hepatite fulminante, especialmente pelo genótipo 1 (B); e o genótipo 3 é transmitido zoonoticamente, por contato com animais ou carne mal cozida (D)."
+            "feedback": "**Resposta Correta:** C está incorreta, pois a vacina contra hepatite E existe, mas sua disponibilidade é limitada, principalmente fora da Ásia. Portanto, não há profilaxia ativa vacinal disponível mundialmente.\n\n**Outras opções:**  \nA, B e D estão corretas: imunossuprimidos podem desenvolver infecção crônica (A); gestantes têm risco de hepatite fulminante, especialmente pelo genótipo 1 (B); e o genótipo 3 é transmitido zoonoticamente, por contato com animais ou carne mal cozida (D).",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en inmunosuprimidos puede conducir a infección crónica.",
+                    "Efectivamente puede producir hepatitis fulminante, especialmente en embarazadas.",
+                    "Existe vacuna contra la hepatitis E, pero su disponibilidad es limitada, principalmente fuera de Asia; por lo tanto, no hay profilaxis activa vacunal disponible mundialmente — esta es la opción incorrecta.",
+                    "Efectivamente el genotipo 3 puede transmitirse por vía zoonótica."
+                ],
+                "fantasma": [
+                    "Esa está bien, en el débil.",
+                    "Esa está bien, en la panza.",
+                    "¡Esta! Esa vacuna no está en todos lados.",
+                    "Esa está bien, del animal."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No está en todos lados.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -26885,7 +27025,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Após anticorpos anti-HCV positivos, deve-se realizar RT-PCR para confirmar infecção ativa pela detecção do RNA viral. Anticorpos indicam exposição, não infecção atual. \n\nOpção A está errada, pois não se inicia tratamento sem confirmação molecular.  \nOpção B está incorreta, pois o teste inicial é para anticorpos, não RT-PCR.  \nOpção D é incorreta, pois o monitoramento do tratamento é feito pela RT-PCR, não pelos níveis de anticorpos."
+            "feedback": "Resposta correta: C. Após anticorpos anti-HCV positivos, deve-se realizar RT-PCR para confirmar infecção ativa pela detecção do RNA viral. Anticorpos indicam exposição, não infecção atual. \n\nOpção A está errada, pois não se inicia tratamento sem confirmação molecular.  \nOpção B está incorreta, pois o teste inicial é para anticorpos, não RT-PCR.  \nOpção D é incorreta, pois o monitoramento do tratamento é feito pela RT-PCR, não pelos níveis de anticorpos.",
+            "explicacoes": {
+                "robo": [
+                    "No se debe informar infección ni iniciar tratamiento sin confirmación molecular.",
+                    "El test inicial es para anticuerpos, no RT-PCR; la secuencia es al revés.",
+                    "Si los resultados de la prueba de anticuerpos son positivos, se requiere realizar una RT-PCR para confirmar la infección actual mediante la detección del ARN viral, ya que los anticuerpos solo indican exposición, no infección activa — es la respuesta correcta.",
+                    "El monitoreo del tratamiento se hace mediante RT-PCR, no por los niveles de anticuerpos."
+                ],
+                "fantasma": [
+                    "No, primero hay que confirmar bien.",
+                    "No, es al revés el orden.",
+                    "¡Esta! Con anticuerpo positivo, se pide el PCR.",
+                    "No, eso se sigue con el PCR."
+                ],
+                "gato": [
+                    "Fijate: hay que confirmar.",
+                    "Dato curioso: es al revés.",
+                    "¡Ronroneo de aprobación! Se pide el PCR.",
+                    "Miau, es con el PCR."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -26911,7 +27071,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Recomenda-se vacinação para hepatite B, pois o paciente apresenta hepatite A aguda (anti-HAV IgM positivo, IgG negativo) e não tem imunidade para hepatite B (marcadores negativos).  \n\nOpção A está incorreta: anti-HCV negativo exclui infecção aguda por hepatite C, não justificando carga viral.  \nOpção C está errada: reativação de hepatite A é rara e a sorologia indica infecção primária, não reativação.  \nOpção D está incompleta e incorreta para este caso."
+            "feedback": "Resposta correta: B. Recomenda-se vacinação para hepatite B, pois o paciente apresenta hepatite A aguda (anti-HAV IgM positivo, IgG negativo) e não tem imunidade para hepatite B (marcadores negativos).  \n\nOpção A está incorreta: anti-HCV negativo exclui infecção aguda por hepatite C, não justificando carga viral.  \nOpção C está errada: reativação de hepatite A é rara e a sorologia indica infecção primária, não reativação.  \nOpção D está incompleta e incorreta para este caso.",
+            "explicacoes": {
+                "robo": [
+                    "El anti-HCV negativo descarta la infección aguda por hepatitis C, no justificando la carga viral.",
+                    "Se debe recomendar la vacunación para hepatitis B, ya que el paciente presenta hepatitis A aguda (anti-HAV IgM positivo, IgG negativo) y no tiene inmunidad para hepatitis B (todos los marcadores negativos) — es la respuesta correcta.",
+                    "La reactivación de hepatitis A es rara y la serología indica infección primaria, no reactivación.",
+                    "Esta afirmación es incorrecta e incompleta para el caso presentado."
+                ],
+                "fantasma": [
+                    "No, ya se descartó eso.",
+                    "¡Esta! No tiene defensa para la B, hay que vacunar.",
+                    "No, esto es la primera vez.",
+                    "No, eso no aplica bien aquí."
+                ],
+                "gato": [
+                    "Fijate: ya se descartó.",
+                    "¡Ronroneo de aprobación! Hay que vacunar.",
+                    "Dato curioso: es la primera vez.",
+                    "Miau, no aplica."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -26937,7 +27117,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta; os diferentes genótipos do HEV têm relevância epidemiológica importante. Genótipos 1 e 2 transmitem-se fecal-oral em países em desenvolvimento, enquanto 3 e 4 são zoonóticos, presentes em animais e infectam humanos via consumo de carne mal cozida.  \n\n**Outras opções:**  \nA, C e D estão corretas: A) Hepatite E é subdiagnosticada e pode ser crônica em imunossuprimidos;  \nC) transmissão zoonótica ocorre pelos genótipos 3 e 4;  \nD) pode causar hepatite fulminante especialmente em gestantes, com alta mortalidade."
+            "feedback": "**Resposta Correta:** B está incorreta; os diferentes genótipos do HEV têm relevância epidemiológica importante. Genótipos 1 e 2 transmitem-se fecal-oral em países em desenvolvimento, enquanto 3 e 4 são zoonóticos, presentes em animais e infectam humanos via consumo de carne mal cozida.  \n\n**Outras opções:**  \nA, C e D estão corretas: A) Hepatite E é subdiagnosticada e pode ser crônica em imunossuprimidos;  \nC) transmissão zoonótica ocorre pelos genótipos 3 e 4;  \nD) pode causar hepatite fulminante especialmente em gestantes, com alta mortalidade.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente representa una causa subdiagnosticada de hepatitis aguda y crónica.",
+                    "Los diferentes genotipos del HEV sí tienen relevancia epidemiológica importante; los genotipos 1 y 2 se transmiten por vía fecal-oral en países en desarrollo, mientras que el 3 y el 4 son zoonóticos, presentes en animales — esta es la opción incorrecta.",
+                    "Efectivamente puede transmitirse por vía zoonótica.",
+                    "Efectivamente puede producir hepatitis fulminante, especialmente en embarazadas."
+                ],
+                "fantasma": [
+                    "Esa está bien, se pasa por alto.",
+                    "¡Esta! Sí importa cuál genotipo es.",
+                    "Esa está bien, del animal.",
+                    "Esa está bien, en la panza."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Sí importa.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -26963,7 +27163,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. A detecção em soro de IgM anti-HAV.\n\nO diagnóstico da hepatite A aguda é feito pela detecção de anticorpos IgM anti-HAV no soro, que indicam infecção recente. As outras opções são inadequadas: B não é prática nem padronizada; C, embora possível via RT-PCR, não é método rotineiro devido a custo e complexidade; D é incorreta, pois não há antígeno viral detectável no sangue por ELISA para HAV. Assim, a detecção de IgM anti-HAV é o padrão clínico para confirmar infecção aguda."
+            "feedback": "**Resposta Correta:** A. A detecção em soro de IgM anti-HAV.\n\nO diagnóstico da hepatite A aguda é feito pela detecção de anticorpos IgM anti-HAV no soro, que indicam infecção recente. As outras opções são inadequadas: B não é prática nem padronizada; C, embora possível via RT-PCR, não é método rotineiro devido a custo e complexidade; D é incorreta, pois não há antígeno viral detectável no sangue por ELISA para HAV. Assim, a detecção de IgM anti-HAV é o padrão clínico para confirmar infecção aguda.",
+            "explicacoes": {
+                "robo": [
+                    "La detección en suero de IgM anti-HAV es el estándar clínico para confirmar infección aguda por hepatitis A — es la respuesta correcta.",
+                    "Esta práctica no es habitual ni está estandarizada.",
+                    "Aunque posible por RT-PCR, no es el método rutinario debido a su costo y complejidad.",
+                    "No hay antígeno viral detectable en sangre por ELISA para HAV."
+                ],
+                "fantasma": [
+                    "¡Esta! Con eso se confirma rápido.",
+                    "Eso no es lo habitual.",
+                    "Eso es caro y complicado.",
+                    "Eso no existe así."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Confirma rápido.",
+                    "Fijate: no es lo habitual.",
+                    "Dato curioso: caro y complicado.",
+                    "Miau, no existe."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -26989,7 +27209,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Bebês infectados por transmissão vertical do VHB geralmente desenvolvem infecção assintomática inicial devido à imaturidade do sistema imunológico, podendo evoluir para infecção crônica sem profilaxia adequada.\n\n**Opções Incorretas:**  \nA está errada ao subestimar o risco de cronicidade, que pode chegar a 90%.  \nC está incorreta porque o diagnóstico não é feito por IgG anti-HBc, que pode ser materno, mas por HBsAg e DNA viral.  \nD é falsa ao afirmar que a transmissão ocorre apenas em mães HBeAg-negativas; na verdade, é maior em mães HBeAg-positivas."
+            "feedback": "**Resposta Correta:** B. Bebês infectados por transmissão vertical do VHB geralmente desenvolvem infecção assintomática inicial devido à imaturidade do sistema imunológico, podendo evoluir para infecção crônica sem profilaxia adequada.\n\n**Opções Incorretas:**  \nA está errada ao subestimar o risco de cronicidade, que pode chegar a 90%.  \nC está incorreta porque o diagnóstico não é feito por IgG anti-HBc, que pode ser materno, mas por HBsAg e DNA viral.  \nD é falsa ao afirmar que a transmissão ocorre apenas em mães HBeAg-negativas; na verdade, é maior em mães HBeAg-positivas.",
+            "explicacoes": {
+                "robo": [
+                    "Subestima el riesgo de cronicidad, que puede llegar al 90%.",
+                    "Los bebés infectados por transmisión vertical del VHB generalmente desarrollan una infección asintomática inicial debido a la inmadurez del sistema inmunológico, pudiendo evolucionar a infección crónica sin profilaxis adecuada — es la respuesta correcta.",
+                    "El diagnóstico no se hace por IgG anti-HBc, que puede ser materna, sino por HBsAg y ADN viral.",
+                    "La transmisión vertical es mayor en madres HBeAg-positivas, no exclusiva de madres HBeAg-negativas."
+                ],
+                "fantasma": [
+                    "No, el riesgo es mucho más alto.",
+                    "¡Esta! Casi no da síntoma al principio.",
+                    "No, eso puede ser de la mamá.",
+                    "No, es al revés, con esa positiva."
+                ],
+                "gato": [
+                    "Fijate: es más alto.",
+                    "¡Ronroneo de aprobación! Casi sin síntoma.",
+                    "Dato curioso: es de la mamá.",
+                    "Miau, es al revés."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -27015,7 +27255,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A quantificação do anticorpo anti-HBc não é útil para monitorar a infecção crônica pelo VHB, pois indica apenas exposição ao vírus, sem refletir atividade viral ou carga. Opção B: a análise da resistência a antivirais é importante para ajustar tratamentos. Opção C: a carga viral (DNA do VHB) é essencial para avaliar replicação, gravidade e resposta ao tratamento. Opção D: a fibroelastografia, embora não microbiológica, avalia a fibrose hepática, importante para acompanhamento e prognóstico."
+            "feedback": "Resposta correta: A quantificação do anticorpo anti-HBc não é útil para monitorar a infecção crônica pelo VHB, pois indica apenas exposição ao vírus, sem refletir atividade viral ou carga. Opção B: a análise da resistência a antivirais é importante para ajustar tratamentos. Opção C: a carga viral (DNA do VHB) é essencial para avaliar replicação, gravidade e resposta ao tratamento. Opção D: a fibroelastografia, embora não microbiológica, avalia a fibrose hepática, importante para acompanhamento e prognóstico.",
+            "explicacoes": {
+                "robo": [
+                    "La cuantificación del anticuerpo anti-HBc no es útil para monitorear la infección crónica por VHB, ya que solo indica exposición al virus, sin reflejar actividad viral ni carga — esta es la excepción.",
+                    "Efectivamente el análisis de resistencia a antivirales es importante para ajustar tratamientos.",
+                    "Efectivamente la carga viral (ADN del VHB) es esencial para evaluar replicación, gravedad y respuesta al tratamiento.",
+                    "Efectivamente la fibroelastografía, aunque no microbiológica, evalúa la fibrosis hepática, importante para el seguimiento y pronóstico."
+                ],
+                "fantasma": [
+                    "¡Esta! Eso solo dice que estuvo, no sirve para seguir.",
+                    "Esa está bien, ajusta el tratamiento.",
+                    "Esa está bien, mide el virus.",
+                    "Esa está bien, mide la cicatriz."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Solo dice que estuvo.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -27041,7 +27301,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Carga viral e CD4.  \nEsses exames são essenciais para diagnosticar e monitorar o HIV em crianças, avaliando a replicação viral e o estado imunológico, fundamentais para decisões terapêuticas.\n\n**Outras opções:**  \nA) Caracterização genômica é usada em pesquisa e casos específicos, não rotineiramente.  \nB) Estudo de correceptores não é padrão no diagnóstico ou manejo inicial.  \nC) PCR em linfomononucleares não é o método padrão; carga viral e CD4 são mais práticos e informativos."
+            "feedback": "**Resposta Correta:** D. Carga viral e CD4.  \nEsses exames são essenciais para diagnosticar e monitorar o HIV em crianças, avaliando a replicação viral e o estado imunológico, fundamentais para decisões terapêuticas.\n\n**Outras opções:**  \nA) Caracterização genômica é usada em pesquisa e casos específicos, não rotineiramente.  \nB) Estudo de correceptores não é padrão no diagnóstico ou manejo inicial.  \nC) PCR em linfomononucleares não é o método padrão; carga viral e CD4 são mais práticos e informativos.",
+            "explicacoes": {
+                "robo": [
+                    "La caracterización genómica se usa en investigación y casos específicos, no de rutina.",
+                    "El estudio de correceptores no es estándar en el diagnóstico o manejo inicial.",
+                    "La PCR en células linfomononucleares no es el método estándar; la carga viral y el CD4 son más prácticos e informativos.",
+                    "La carga viral y el CD4 son esenciales para diagnosticar y monitorear el VIH en niños, evaluando la replicación viral y el estado inmunológico, fundamentales para las decisiones terapéuticas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es para investigar, no de rutina.",
+                    "Eso no es lo estándar.",
+                    "Eso no es lo más práctico.",
+                    "¡Esta! Esos dos dicen todo, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es de investigación.",
+                    "Dato curioso: no es estándar.",
+                    "Miau, no es lo práctico.",
+                    "¡Ronroneo de aprobación! Esos dos."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -27067,7 +27347,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. O dano hepático é causado pela larva imatura da Fasciola hepática, que migra para o fígado após a ingestão das metacercárias. O ovo não provoca lesões, apenas é eliminado para reprodução.\n\n**Outras opções:**  \nA está correta ao identificar o caramujo como hospedeiro intermediário essencial.  \nB está correta ao afirmar que o diagnóstico é feito pela detecção dos ovos nas fezes.  \nD está correta ao associar eosinofilia à infecção, auxiliando no diagnóstico clínico."
+            "feedback": "**Resposta Correta:** C. O dano hepático é causado pela larva imatura da Fasciola hepática, que migra para o fígado após a ingestão das metacercárias. O ovo não provoca lesões, apenas é eliminado para reprodução.\n\n**Outras opções:**  \nA está correta ao identificar o caramujo como hospedeiro intermediário essencial.  \nB está correta ao afirmar que o diagnóstico é feito pela detecção dos ovos nas fezes.  \nD está correta ao associar eosinofilia à infecção, auxiliando no diagnóstico clínico.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente son trematodos que poseen un caracol de agua dulce como hospedador intermediario.",
+                    "Efectivamente el diagnóstico de certeza se realiza por observación de huevos en materia fecal.",
+                    "El daño hepático es causado por la larva inmadura de Fasciola hepatica, que migra al hígado tras la ingestión de las metacercarias; el huevo no provoca lesiones, solo se elimina para la reproducción — esta es la opción incorrecta.",
+                    "Efectivamente la eosinofilia elevada orienta al diagnóstico."
+                ],
+                "fantasma": [
+                    "Esa está bien, el caracolito.",
+                    "Esa está bien, se ve el huevo.",
+                    "¡Esta! Eso lo hace la larvita, no el huevo.",
+                    "Esa está bien, sube ese glóbulo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es la larvita.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -27093,7 +27393,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Hepatite B crônica em fase ativa.\n\nO perfil sorológico mostra HBsAg e HBeAg positivos, indicando infecção crônica com alta replicação viral. A ausência de anti-core IgM exclui fase aguda recente. A falta de anti-HBe e anti-HBs indica ausência de controle da replicação e imunidade. Anti-HCV negativo descarta coinfecção.\n\n**Opções incorretas:**  \nA) Hepatite B crônica inativa apresenta HBeAg negativo e anti-HBe positivo, o que não ocorre aqui.  \nC) Fase de janela aguda ocorre com HBsAg negativo, diferente do caso apresentado."
+            "feedback": "**Resposta Correta:** B. Hepatite B crônica em fase ativa.\n\nO perfil sorológico mostra HBsAg e HBeAg positivos, indicando infecção crônica com alta replicação viral. A ausência de anti-core IgM exclui fase aguda recente. A falta de anti-HBe e anti-HBs indica ausência de controle da replicação e imunidade. Anti-HCV negativo descarta coinfecção.\n\n**Opções incorretas:**  \nA) Hepatite B crônica inativa apresenta HBeAg negativo e anti-HBe positivo, o que não ocorre aqui.  \nC) Fase de janela aguda ocorre com HBsAg negativo, diferente do caso apresentado.",
+            "explicacoes": {
+                "robo": [
+                    "La hepatitis B crónica inactiva presenta HBeAg negativo y anti-HBe positivo, lo cual no ocurre aquí.",
+                    "El perfil serológico muestra HBsAg y HBeAg positivos, indicando infección crónica con alta replicación viral; la ausencia de anti-core IgM excluye una fase aguda reciente, y la falta de anti-HBe y anti-HBs indica ausencia de control de la replicación e inmunidad — es la respuesta correcta.",
+                    "La fase de ventana aguda ocurre con HBsAg negativo, diferente del caso presentado.",
+                    "Una hepatitis B aguda temprana presentaría anti-core IgM reactivo, ausente en este perfil."
+                ],
+                "fantasma": [
+                    "No, faltaría el otro anticuerpo.",
+                    "¡Esta! HBeAg positivo, sigue replicando, la correcta.",
+                    "No, ahí el antígeno estaría negativo.",
+                    "No, faltaría el IgM ahí."
+                ],
+                "gato": [
+                    "Fijate: falta algo.",
+                    "¡Ronroneo de aprobación! Sigue replicando.",
+                    "Dato curioso: estaría negativo.",
+                    "Miau, falta el IgM."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -27119,7 +27439,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "La opción CORRECTA es B: La inmunización contra la hepatitis B se requiere, al menos, la administración de tres dosis de HBsAg recombinante. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es B: La inmunización contra la hepatitis B se requiere, al menos, la administración de tres dosis de HBsAg recombinante. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "La vacunación contra la hepatitis A está recomendada a nivel nacional para todos los niños, no solo en áreas con saneamiento deficiente.",
+                    "La inmunización contra la hepatitis B requiere, al menos, la administración de tres dosis de HBsAg recombinante para generar inmunidad protectora — es la respuesta correcta.",
+                    "El interferón alfa no siempre reduce la carga viral a niveles indetectables en ambas infecciones; su eficacia varía y no es el estándar actual, especialmente en HCV, donde los antivirales de acción directa son preferidos.",
+                    "No existe inmunoglobulina hiperinmune específica para la hepatitis C, ni evidencia de que prevenga el hepatocarcinoma."
+                ],
+                "fantasma": [
+                    "No, es para todos los chicos.",
+                    "¡Esta! Tres dosis, la correcta.",
+                    "No, no siempre baja tanto.",
+                    "No, eso no existe para esa hepatitis."
+                ],
+                "gato": [
+                    "Fijate: es para todos.",
+                    "¡Ronroneo de aprobación! Tres dosis.",
+                    "Dato curioso: no siempre.",
+                    "Miau, no existe eso."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -27145,7 +27485,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: La transmisión ocurre por vía fecal-oral. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: La transmisión ocurre por vía fecal-oral. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión de la fasciolosis no es por vía fecal-oral clásica (persona a persona); ocurre por la ingestión de metacercarias adheridas a vegetales acuáticos (como el berro) contaminados a través del ciclo con el caracol de agua dulce — esta es la opción incorrecta.",
+                    "Efectivamente el ganado es reservorio habitual de esta parasitosis.",
+                    "Efectivamente los adultos se localizan en los ductos biliares.",
+                    "Efectivamente la infección crónica puede ser asintomática y causar obstrucción intermitente de vías biliares."
+                ],
+                "fantasma": [
+                    "¡Esta! Es por el berro con la larvita, no de persona a persona.",
+                    "Esa está bien, la vaca.",
+                    "Esa está bien, en el conducto.",
+                    "Esa está bien, va y viene."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es por el berro.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -27171,7 +27531,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La IgM anti-HAV negativa descarta hepatitis A aguda; además, HBeAg positivo indica replicación viral activa, no ausencia de ella.",
+                    "El anti-HAV IgG negativo descarta vacunación previa para hepatitis A; además, HBeAg positivo indica replicación activa, no ausencia.",
+                    "El HBeAg está reactivo (positivo), lo cual descarta la variante HBe-minus, que se caracteriza justamente por HBeAg negativo.",
+                    "El paciente es susceptible a hepatitis A (IgM e IgG anti-HAV negativas) y presenta un perfil de hepatitis B compatible con cronicidad y replicación viral activa: IgG anti-HBc positivo (exposición pasada/persistente), HBsAg positivo (infección activa) y HBeAg positivo (replicación viral), sin anti-HBs ni anti-HBe que indiquen control — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No, esa A y el HBe positivo lo desmienten.",
+                    "No, le falta ese anticuerpo para ser vacunado.",
+                    "No, ese antígeno e está prendido, no apagado.",
+                    "¡Esta! Nunca tuvo la A, y la B sigue activa."
+                ],
+                "gato": [
+                    "Fijate: no encaja.",
+                    "Dato curioso: falta el anticuerpo.",
+                    "Miau, el antígeno está prendido.",
+                    "¡Ronroneo de aprobación! Sigue activa la B."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -27197,7 +27577,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "La opción CORRECTA es A: La fase denominada E-minus ocurre más comúnmente como resultado de variantes.mutantes, no detectándose Ag e y observándose progresión de enfermedad hepática. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es A: La fase denominada E-minus ocurre más comúnmente como resultado de variantes.mutantes, no detectándose Ag e y observándose progresión de enfermedad hepática. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "La fase denominada E-minus ocurre más comúnmente como resultado de variantes mutantes, sin detectarse el antígeno e y observándose progresión de la enfermedad hepática — es la respuesta correcta.",
+                    "Los adultos infectados por VHB tienen bajo riesgo de progresión a enfermedad crónica (menos del 5%), no más del 80%.",
+                    "Los neonatos infectados con VHB tienen alto riesgo de cronicidad, no capacidad de resolver la infección rápidamente.",
+                    "La hepatitis B crónica se diagnostica principalmente por la persistencia del HBsAg (antígeno S) por más de 6 meses, no por la sola presencia de IgG anti-core sin antígeno S."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa variante muta y no se ve el antígeno e.",
+                    "No, es al revés, son pocos.",
+                    "No, al bebé le cuesta curarse.",
+                    "No, hace falta el antígeno S también."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La variante que muta.",
+                    "Fijate: son pocos.",
+                    "Dato curioso: le cuesta curarse.",
+                    "Miau, falta el antígeno S."
+                ]
+            }
         },
         {
             "numero": 25,

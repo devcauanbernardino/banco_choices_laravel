@@ -17803,7 +17803,27 @@
             "Aspergillus fumigatus",
             "Pneumocystis jirovecii",
             "Toxoplasma gondii"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Trypanosoma cruzi causa doença de Chagas, afetando principalmente coração e sistema digestivo, não formando massas cerebrais em SIDA.",
+                "Aspergillus fumigatus pode causar abscessos cerebrais, mas é menos comum que T. gondii e ocorre mais em neutropenia.",
+                "Pneumocystis jirovecii causa pneumonia, não lesões cerebrais focais.",
+                "T. gondii é um protozoário intracelular que reativa em pacientes com SIDA e CD4 <100, causando toxoplasmose cerebral com lesões focais e massas no cérebro, gerando sintomas neurológicos variados — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse ataca o coração, não o cérebro.",
+                "Esse é menos comum, é de outro caso.",
+                "Esse vai pro pulmão.",
+                "Essa aí! O que faz a massa no cérebro."
+            ],
+            "gato": [
+                "Fijate: vai pro coração.",
+                "Dado curioso: é menos comum.",
+                "Miau, vai pro pulmão.",
+                "Ronronado de aprovação! A massa cerebral."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes afirmações sobre a imunoprofilaxia da hepatite B está CORRETA?:",
@@ -17814,7 +17834,27 @@
             "A imunoprofilaxia activa contra a hepatite B está contra-indicada em adultos infectados pelo VIH.",
             "A vacinação é contraindicada em crianças menores de um ano.",
             "A vacinação contra hepatite B é recomendada para todos os adultos não vacinados."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Imunoglobulina anti-HBs oferece proteção temporária e não substitui a vacina.",
+                "Vacinação é recomendada em adultos com HIV, apesar da resposta imunológica variável.",
+                "Vacinar menores de um ano não é contraindicado; pelo contrário, é recomendada logo após o nascimento.",
+                "Recomenda-se vacinar todos os adultos não vacinados contra hepatite B. A vacina é essencial para prevenir a infecção pelo HBV, protegendo contra múltiplas formas de transmissão — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não, isso protege pouquinho e por pouco tempo.",
+                "Não, ainda assim se recomenda.",
+                "Não, se dá assim que nasce.",
+                "Essa aí! Pra todo adulto que não tomou, a correta."
+            ],
+            "gato": [
+                "Fijate: é temporário.",
+                "Dado curioso: sim se recomenda.",
+                "Miau, se dá ao nascer.",
+                "Ronronado de aprovação! A todos os adultos."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos abscessos hepáticos amebianos, indique a opção CORRETA:",
@@ -17825,7 +17865,27 @@
             "Sorologia (ac-anti amebas) tem baixa sensibilidade",
             "É uma patologia comum na Argentina.",
             "A faixa etária pediátrica é a mais afetada."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A transmissão do abscesso hepático amebiano ocorre pela ingestão de quistos de E. histolytica em água ou alimentos contaminados com fezes — é a resposta correta.",
+                "A sorologia antiamebas tem alta sensibilidade e é útil no diagnóstico.",
+                "A doença é rara na Argentina, região de baixa endemicidade.",
+                "O abscesso é mais comum em adultos jovens, não em crianças."
+            ],
+            "fantasma": [
+                "Essa aí! Pela água ou comida com cocô.",
+                "Não, vê bem esse teste.",
+                "Não, aqui quase não tem.",
+                "Não, é do adulto jovem."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Água ou comida suja.",
+                "Fijate: vê bem.",
+                "Dado curioso: quase não tem.",
+                "Miau, é do adulto."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo HIV-1, indique a opção CORRETA:",
@@ -17836,7 +17896,27 @@
             "Durante o período assintomático não há risco de transmissão viral, uma vez que não há replicação viral ativa (fase de latência viral).",
             "Durante o período de janela, podem ser detectados títulos elevados de anticorpos específicos contra glicoproteínas virais, principalmente anti-gp120.",
             "O tratamento antirretroviral consegue inibir a replicação, mas não tem impacto relevante na contagem de linfócitos T CD4."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O diagnóstico inicial de HIV em maiores de 18 meses é feito pela detecção de anticorpos no plasma, seguido pela quantificação da carga viral e testes confirmatórios como Western blot para garantir especificidade e evitar erros — é a resposta correta.",
+                "Durante o período assintomático há sim replicação viral ativa; afirmar que não há risco de transmissão está errado.",
+                "No período de janela os anticorpos ainda não são detectáveis; nesse período, PCR é mais eficaz.",
+                "O tratamento antirretroviral tem sim impacto positivo relevante, aumentando os linfócitos T CD4+."
+            ],
+            "fantasma": [
+                "Essa aí! Primeiro anticorpo, depois confirma.",
+                "Não, o vírus continua trabalhando igual.",
+                "Não, ali ainda não dá pra ver o anticorpo.",
+                "Não, sim sobe o CD4 com o tratamento."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Primeiro anticorpo.",
+                "Fijate: continua trabalhando.",
+                "Dado curioso: ainda não dá pra ver.",
+                "Miau, sim sobe o CD4."
+            ]
+        }
     },
     {
         "pergunta": "Com base no seguinte perfil sorológico de anticorpos, indique a interpretação CORRETA. Anti-HBs (+), anti-HBc total (-), anti-HCV (+) e anti-HAV (-)",
@@ -17847,7 +17927,27 @@
             "Vacinado contra HBV, possível infecção por HCV, suscetível ao HAV.",
             "Infecção aguda por VHB, infecção por VHC resolvida, suscetível ao VHA.",
             "Infecção passada por HBV, possível infecção por HCV, suscetível a HAV-"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Infecção oculta por HBV exige anti-HBc positivo, ausente aqui.",
+                "O perfil indica vacinação para HBV (anti-HBs +, anti-HBc -), possível infecção por HCV (anti-HCV +) e suscetibilidade à HAV (anti-HAV -). Anti-HBc negativo indica ausência de infecção natural por HBV, confirmando vacinação — é a resposta correta.",
+                "Infecção aguda por HBV espera HBsAg e anti-HBc IgM positivos, não observados aqui.",
+                "Infecção passada por HBV exigiria anti-HBc positivo, ausente aqui; o perfil corresponde a vacinação, não a infecção passada."
+            ],
+            "fantasma": [
+                "Falta esse marcador pra ser oculta.",
+                "Essa aí! Vacinado e tem que revisar a C.",
+                "Falta o agudo.",
+                "Não, isso é de vacina, não de passada."
+            ],
+            "gato": [
+                "Fijate: falta esse dado.",
+                "Ronronado de aprovação! Vacinado.",
+                "Dado curioso: falta o agudo.",
+                "Miau, é de vacina."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo HEV, indique a opção CORRETA:",
@@ -17858,7 +17958,27 @@
             "Independentemente do hospedeiro, o HEV causa uma infecção aguda e autolimitada.",
             "Na maioria dos casos, a infecção primária ocorre antes dos 2 anos de idade:",
             "Diferentes genótipos circulam de forma diferente em diferentes países, associados a surtos endêmicos em cada população."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A transmissão não é exclusivamente fecal-oral; também existe a via zoonótica nos genótipos 3 e 4.",
+                "A infecção pode ser crônica em imunossuprimidos e grave em gestantes, não sempre aguda e autolimitada.",
+                "A primoinfecção não ocorre majoritariamente antes dos 2 anos; depende da exposição e do genótipo circulante.",
+                "Diferentes genótipos do vírus da hepatite E (HEV) circulam em países distintos, associados a surtos endêmicos locais. Os genótipos 1 e 2 predominam em países em desenvolvimento, transmitidos por via fecal-oral, enquanto os genótipos 3 e 4 ocorrem em países desenvolvidos, com transmissão zoonótica — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não, também tem pelo animal.",
+                "Não, no fraco vira crônico.",
+                "Não, não é sempre nessa idade.",
+                "Essa aí! Cada país tem o seu, a correta."
+            ],
+            "gato": [
+                "Fijate: também por animal.",
+                "Dado curioso: vira crônico.",
+                "Miau, não é sempre.",
+                "Ronronado de aprovação! Cada país o seu."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo vírus da hepatite E, marque a opção INCORRETA",
@@ -17869,7 +17989,27 @@
             "Pode causar hepatite fulminante, principalmente em mulheres grávidas.",
             "A profilaxia com vacina ativa está disponível em todo o mundo.",
             "O genótipo 3 pode ser transmitido zoonoticamente."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato em imunossuprimidos pode conduzir à infecção crônica.",
+                "De fato pode produzir hepatite fulminante, especialmente em gestantes.",
+                "A vacina contra hepatite E existe, mas sua disponibilidade é limitada, principalmente fora da Ásia. Portanto, não há profilaxia ativa vacinal disponível mundialmente — essa é a opção incorreta.",
+                "De fato o genótipo 3 é transmitido zoonoticamente."
+            ],
+            "fantasma": [
+                "Essa está certa, no fraco.",
+                "Essa está certa, na barriga.",
+                "Essa aí! Essa vacina não está em todo lugar.",
+                "Essa está certa, do animal."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Não está em todo lugar.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes opções é CORRETA para o diagnóstico e monitoramento da infecção pelo vírus da hepatite C (HCV)?",
@@ -17880,7 +18020,27 @@
             "Somente nos casos de RT-PCR positivo é solicitada a confirmação por meio de teste de anticorpos anti-HCV.",
             "Se os resultados do teste de anticorpos forem positivos, é necessário RT-PCR para confirmar a infecção atual.",
             "A monitorização da eficácia da terapia antiviral requer a avaliação do título de anticorpos anti-HCV."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se deve informar infecção nem iniciar tratamento sem confirmação molecular.",
+                "O teste inicial é para anticorpos, não RT-PCR; a sequência é o contrário.",
+                "Após anticorpos anti-HCV positivos, deve-se realizar RT-PCR para confirmar infecção ativa pela detecção do RNA viral. Anticorpos indicam exposição, não infecção atual — é a resposta correta.",
+                "O monitoramento do tratamento é feito pela RT-PCR, não pelos níveis de anticorpos."
+            ],
+            "fantasma": [
+                "Não, primeiro tem que confirmar bem.",
+                "Não, é ao contrário a ordem.",
+                "Essa aí! Com anticorpo positivo, pede-se o PCR.",
+                "Não, isso se acompanha com o PCR."
+            ],
+            "gato": [
+                "Fijate: tem que confirmar.",
+                "Dado curioso: é ao contrário.",
+                "Ronronado de aprovação! Pede-se o PCR.",
+                "Miau, é com o PCR."
+            ]
+        }
     },
     {
         "pergunta": "Adolescente de 15 anos chega ao pronto-socorro com febre, astenia, icterícia e dor abdominal. Os resultados laboratoriais indicam níveis séricos aumentados de ALT e IgM anti-HAV (+), IgG anti-HAV (-), HBsAg (-), anti-HBc total (-), IgG anti-HBs (-), IgM anti-HBc (-) e anti-HCV (-). Qual das seguintes afirmações está CORRETA?",
@@ -17891,7 +18051,27 @@
             "A vacinação contra hepatite B deve ser recomendada.",
             "A condição é compatível com uma reativação da hepatite A.",
             "Não é solicitada sorologia para HEV, pois não há circulação do referido vírus em nosso país."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Anti-HCV negativo exclui infecção aguda por hepatite C, não justificando carga viral.",
+                "Recomenda-se vacinação para hepatite B, pois o paciente apresenta hepatite A aguda (anti-HAV IgM positivo, IgG negativo) e não tem imunidade para hepatite B (marcadores negativos) — é a resposta correta.",
+                "Reativação de hepatite A é rara e a sorologia indica infecção primária, não reativação.",
+                "Essa afirmação está incompleta e incorreta para este caso."
+            ],
+            "fantasma": [
+                "Não, isso já foi descartado.",
+                "Essa aí! Não tem defesa pra B, tem que vacinar.",
+                "Não, isso é a primeira vez.",
+                "Não, isso não se aplica bem aqui."
+            ],
+            "gato": [
+                "Fijate: já foi descartado.",
+                "Ronronado de aprovação! Tem que vacinar.",
+                "Dado curioso: é a primeira vez.",
+                "Miau, não se aplica."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à Hepatite E, marque a opção INCORRETA",
@@ -17902,7 +18082,27 @@
             "Seus diferentes genótipos não apresentam relevância epidemiológica",
             "Pode ser transmitido zoonoticamente",
             "Pode causar hepatite fulminante, principalmente em mulheres grávidas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato representa causa subdiagnosticada de hepatite aguda e crônica.",
+                "Os diferentes genótipos do HEV têm relevância epidemiológica importante. Genótipos 1 e 2 transmitem-se fecal-oral em países em desenvolvimento, enquanto 3 e 4 são zoonóticos, presentes em animais e infectam humanos via consumo de carne mal cozida — essa é a opção incorreta.",
+                "De fato pode ser transmitida por via zoonótica.",
+                "De fato pode causar hepatite fulminante especialmente em gestantes, com alta mortalidade."
+            ],
+            "fantasma": [
+                "Essa está certa, passa despercebido.",
+                "Essa aí! Sim importa qual genótipo é.",
+                "Essa está certa, do animal.",
+                "Essa está certa, na barriga."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Sim importa.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Uma das seguintes opções está CORRETA em relação ao diagnóstico habitual de hepatite A",
@@ -17913,7 +18113,27 @@
             "Detecção de Ag viral em fezes por ELISA de captura.",
             "Detecção de RNA viral no sangue por RT-PCR.",
             "Detecção de Ag viral no sangue por ELISA de captura."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A detecção em soro de IgM anti-HAV é o padrão clínico para confirmar infecção aguda por hepatite A — é a resposta correta.",
+                "Essa prática não é usual nem padronizada.",
+                "Embora possível via RT-PCR, não é método rotineiro devido a custo e complexidade.",
+                "Não há antígeno viral detectável no sangue por ELISA para HAV."
+            ],
+            "fantasma": [
+                "Essa aí! Com isso confirma rápido.",
+                "Isso não é o habitual.",
+                "Isso é caro e complicado.",
+                "Isso não existe assim."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Confirma rápido.",
+                "Fijate: não é habitual.",
+                "Dado curioso: caro e complicado.",
+                "Miau, não existe."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à transmissão vertical do vírus da hepatite B, indique a opção CORRETA:",
@@ -17924,7 +18144,27 @@
             "É muito provável que o bebê desenvolva uma infecção assintomática",
             "O diagnóstico no bebê é feito pela determinação de IgG anti-HBc,",
             "A transmissão vertical só ocorre quando a gestante está infectada com uma variante HBe Ag - minus (variante pré-core/core)."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Subestima o risco de cronicidade, que pode chegar a 90%.",
+                "Bebês infectados por transmissão vertical do VHB geralmente desenvolvem infecção assintomática inicial devido à imaturidade do sistema imunológico, podendo evoluir para infecção crônica sem profilaxia adequada — é a resposta correta.",
+                "O diagnóstico não é feito por IgG anti-HBc, que pode ser materno, mas por HBsAg e DNA viral.",
+                "A transmissão é maior em mães HBeAg-positivas, não exclusiva de mães HBeAg-negativas."
+            ],
+            "fantasma": [
+                "Não, o risco é muito mais alto.",
+                "Essa aí! Quase não dá sintoma no começo.",
+                "Não, isso pode ser da mamãe.",
+                "Não, é ao contrário, com essa positiva."
+            ],
+            "gato": [
+                "Fijate: é mais alto.",
+                "Ronronado de aprovação! Quase sem sintoma.",
+                "Dado curioso: é da mamãe.",
+                "Miau, é ao contrário."
+            ]
+        }
     },
     {
         "pergunta": "As seguintes medidas podem ser usadas para monitorar a infecção crônica pelo vírus da hepatite B, EXCETO:",
@@ -17934,7 +18174,27 @@
             "Resistência a medicamentos antivirais.",
             "Carga viral.",
             "Fibroelastografia para avaliação do parênquima hepático"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A quantificação do anticorpo anti-HBc não é útil para monitorar a infecção crônica pelo VHB, pois indica apenas exposição ao vírus, sem refletir atividade viral ou carga — essa é a exceção.",
+                "De fato a análise da resistência a antivirais é importante para ajustar tratamentos.",
+                "De fato a carga viral (DNA do VHB) é essencial para avaliar replicação, gravidade e resposta ao tratamento.",
+                "De fato a fibroelastografia, embora não microbiológica, avalia a fibrose hepática, importante para acompanhamento e prognóstico."
+            ],
+            "fantasma": [
+                "Essa aí! Isso só diz que teve, não serve pra acompanhar.",
+                "Essa está certa, ajusta o tratamento.",
+                "Essa está certa, mede o vírus.",
+                "Essa está certa, mede a cicatriz."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Só diz que teve.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "No caso de diagnóstico de infecção pelo HIV em criança e eventual estabelecimento. de tratamento, que tipo de estudos você solicitaria para esse fim?",
@@ -17944,7 +18204,27 @@
             "Estudo genético de co-receptores",
             "PCR em células linfomononucleares",
             "Carga viral e CD4."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Caracterização genômica é usada em pesquisa e casos específicos, não rotineiramente.",
+                "Estudo de correceptores não é padrão no diagnóstico ou manejo inicial.",
+                "PCR em linfomononucleares não é o método padrão; carga viral e CD4 são mais práticos e informativos.",
+                "Carga viral e CD4 são essenciais para diagnosticar e monitorar o HIV em crianças, avaliando a replicação viral e o estado imunológico, fundamentais para decisões terapêuticas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é pra pesquisa, não de rotina.",
+                "Isso não é o padrão.",
+                "Isso não é o mais prático.",
+                "Essa aí! Esses dois dizem tudo, a correta."
+            ],
+            "gato": [
+                "Fijate: é de pesquisa.",
+                "Dado curioso: não é padrão.",
+                "Miau, não é o prático.",
+                "Ronronado de aprovação! Esses dois."
+            ]
+        }
     },
     {
         "pergunta": "Quanto às características da Fasciola hepatica, indique a opção INCORRETA:",
@@ -17955,7 +18235,27 @@
             "O diagnóstico definitivo é pela observação de ovos na matéria fecal:",
             "O estágio responsável pelos danos ao fígado é o ovo.",
             "A alta eosinofilia orienta o diagnóstico."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato são trematódeos que possuem um caracol de água doce como hospedeiro intermediário.",
+                "De fato o diagnóstico de certeza é feito pela detecção dos ovos nas fezes.",
+                "O dano hepático é causado pela larva imatura da Fasciola hepática, que migra para o fígado após a ingestão das metacercárias. O ovo não provoca lesões, apenas é eliminado para reprodução — essa é a opção incorreta.",
+                "De fato a eosinofilia elevada associa-se à infecção, auxiliando no diagnóstico clínico."
+            ],
+            "fantasma": [
+                "Essa está certa, o caracolzinho.",
+                "Essa está certa, vê o ovo.",
+                "Essa aí! Isso faz a larvinha, não o ovo.",
+                "Essa está certa, sobe esse glóbulo."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! É a larvinha.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Você solicita um estudo de hepatite B cujos resultados são os seguintes: HBsAg reativo, HBeAg reativo, Anti-core IgM não reativo, Anti HBs não reativo, Anti HBeAg não reativo, Anti-HCV não reativo. Qual seria o seu diagnóstico?",
@@ -17965,7 +18265,27 @@
             "Hepatite B crônica em fase ativa.",
             "Hepatite B aguda em fase de janela.",
             "Hepatite B aguda na fase inicial."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Hepatite B crônica inativa apresenta HBeAg negativo e anti-HBe positivo, o que não ocorre aqui.",
+                "O perfil sorológico mostra HBsAg e HBeAg positivos, indicando infecção crônica com alta replicação viral. A ausência de anti-core IgM exclui fase aguda recente. A falta de anti-HBe e anti-HBs indica ausência de controle da replicação e imunidade — é a resposta correta.",
+                "Fase de janela aguda ocorre com HBsAg negativo, diferente do caso apresentado.",
+                "Uma hepatite B aguda inicial apresentaria anti-core IgM reagente, ausente neste perfil."
+            ],
+            "fantasma": [
+                "Não, faltaria o outro anticorpo.",
+                "Essa aí! HBeAg positivo, continua replicando, a correta.",
+                "Não, ali o antígeno estaria negativo.",
+                "Não, faltaria o IgM ali."
+            ],
+            "gato": [
+                "Fijate: falta algo.",
+                "Ronronado de aprovação! Continua replicando.",
+                "Dado curioso: estaria negativo.",
+                "Miau, falta o IgM."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à imunoprofilaxia das hepatites virais, indicar a opção CORRETA:",
@@ -17976,7 +18296,27 @@
             "A imunização contra a hepatite B requer pelo menos três doses de HBsAg recombinante.",
             "O tratamento com IFN-α reduz a carga viral para níveis indetectáveis ​​nas infecções por HBV e HCV.",
             "A administração de gamaglobulina hiperimune na hepatite C previne o desenvolvimento de carcinoma hepatocelular celular."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A vacinação contra hepatite A é recomendada nacionalmente para todas as crianças, não só em áreas com saneamento deficiente.",
+                "A imunização contra a hepatite B requer, no mínimo, a administração de três doses de HBsAg recombinante para gerar imunidade protetora — é a resposta correta.",
+                "O interferon alfa nem sempre reduz a carga viral a níveis indetectáveis em ambas as infecções; sua eficácia varia e não é o padrão atual, especialmente no HCV, onde antivirais de ação direta são preferidos.",
+                "Não existe imunoglobulina hiperimune específica para hepatite C, nem evidência de que previna o hepatocarcinoma."
+            ],
+            "fantasma": [
+                "Não, é pra todas as crianças.",
+                "Essa aí! Três doses, a correta.",
+                "Não, nem sempre baixa tanto.",
+                "Não, isso não existe pra essa hepatite."
+            ],
+            "gato": [
+                "Fijate: é pra todos.",
+                "Ronronado de aprovação! Três doses.",
+                "Dado curioso: nem sempre.",
+                "Miau, não existe isso."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à epidemiologia e diagnóstico da fasciolose, indique a opção INCORRETA:",
@@ -17987,7 +18327,27 @@
             "O gado é um reservatório comum desta parasitose.",
             "Os adultos estão localizados nos ductos biliares.",
             "A infecção crônica pode ser assintomática e causar obstrução intermitente do ducto biliar."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A transmissão da fasciolose não é por via fecal-oral clássica (pessoa a pessoa); ocorre pela ingestão de metacercárias aderidas a vegetais aquáticos (como o agrião) contaminados através do ciclo com o caramujo de água doce — essa é a opção incorreta.",
+                "De fato o gado é reservatório habitual dessa parasitose.",
+                "De fato os adultos se localizam nos ductos biliares.",
+                "De fato a infecção crônica pode ser assintomática e causar obstrução intermitente de vias biliares."
+            ],
+            "fantasma": [
+                "Essa aí! É pelo agrião com a larvinha, não de pessoa pra pessoa.",
+                "Essa está certa, a vaca.",
+                "Essa está certa, no conduto.",
+                "Essa está certa, vai e vem."
+            ],
+            "gato": [
+                "Ronronado de aprovação! É pelo agrião.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Como você interpreta os seguintes marcadores sorológicos para vírus da hepatite? IgM Anti-HAV (2, IgG Anti HAV (-), IgM Anti HBc Ag (-), IgG Anti-HBc Ag (+), HBs Ag (+), HBe Ag (+), Anti HBs Ag (-), Anti HBe Ag (-).?",
@@ -17997,7 +18357,27 @@
             "Vacinados contra Hepatite A e Hepatite B em estágio crônico sem replicação viral,",
             "Hepatite A suscetível e hepatite B em estágio agudo devido ao vírus HBe menos mutante.",
             "Hepatite A susceptível e Hepatite B em provável cronicidade com replicação viral."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "IgM anti-HAV negativa descarta hepatite A aguda; além disso, HBeAg positivo indica replicação viral ativa, não ausência dela.",
+                "Anti-HAV IgG negativo descarta vacinação prévia para hepatite A; além disso, HBeAg positivo indica replicação ativa, não ausência.",
+                "O HBeAg está reagente (positivo), o que descarta a variante HBe-minus, caracterizada justamente por HBeAg negativo.",
+                "O paciente é suscetível à hepatite A (IgM e IgG anti-HAV negativas) e apresenta perfil de hepatite B compatível com cronicidade e replicação viral ativa: IgG anti-HBc positivo (exposição passada/persistente), HBsAg positivo (infecção ativa) e HBeAg positivo (replicação viral), sem anti-HBs nem anti-HBe que indiquem controle — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não, essa A e o HBe positivo desmentem isso.",
+                "Não, falta esse anticorpo pra ser vacinado.",
+                "Não, esse antígeno e está aceso, não apagado.",
+                "Essa aí! Nunca teve a A, e a B continua ativa."
+            ],
+            "gato": [
+                "Fijate: não encaixa.",
+                "Dado curioso: falta o anticorpo.",
+                "Miau, o antígeno está aceso.",
+                "Ronronado de aprovação! Continua ativa a B."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à hepatite B crônica, marque a opção CORRETA:",
@@ -18008,7 +18388,27 @@
             "Os adultos evoluem para doenças crónicas em mais de 80%.",
             "Os neonatos infectados pelo vírus HBV têm a capacidade de resolver a infecção rapidamente.",
             "A hepatite B crônica é diagnosticada pela persistência no plasma de anticorpos IgG anti-core, sem a presença do antígeno S."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fase denominada E-minus ocorre mais comumente como resultado de variantes mutantes, não se detectando Ag e e observando-se progressão da doença hepática — é a resposta correta.",
+                "Adultos infectados pelo VHB têm baixo risco de progressão para doença crônica (menos de 5%), não mais de 80%.",
+                "Neonatos infectados com VHB têm alto risco de cronicidade, não capacidade de resolver a infecção rapidamente.",
+                "A hepatite B crônica é diagnosticada principalmente pela persistência do HBsAg (antígeno S) por mais de 6 meses, não apenas pela presença de IgG anti-core sem antígeno S."
+            ],
+            "fantasma": [
+                "Essa aí! Essa variante muda e não dá pra ver o antígeno e.",
+                "Não, é ao contrário, são poucos.",
+                "Não, o bebê tem dificuldade de curar.",
+                "Não, precisa do antígeno S também."
+            ],
+            "gato": [
+                "Ronronado de aprovação! A variante que muda.",
+                "Fijate: são poucos.",
+                "Dado curioso: tem dificuldade.",
+                "Miau, falta o antígeno S."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de HIV na criança filha de mãe infectada, indique a opção INCORRETA:",
