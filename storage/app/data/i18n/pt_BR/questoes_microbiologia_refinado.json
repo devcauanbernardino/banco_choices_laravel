@@ -15955,7 +15955,27 @@
             "vírus da hepatite B",
             "vírus da hepatite C",
             "Vírus da hepatite E"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O VHA é transmitido fecal-oral, mas sem reservatórios animais.",
+                "O VHB transmite-se por contato com sangue e fluidos, sem transmissão zoonótica.",
+                "O VHC transmite-se por contato com sangue e fluidos, sem transmissão zoonótica.",
+                "O vírus da hepatite E (VHE) é transmitido zoonoticamente, principalmente por ingestão de água ou alimentos contaminados por fezes de animais infectados, como suínos. Diferentes genótipos circulam em reservatórios animais, causando infecções humanas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não vem de animal.",
+                "Esse é pelo sangue.",
+                "Esse é pelo sangue.",
+                "Essa aí! Esse vem do porco."
+            ],
+            "gato": [
+                "Fijate: não é de animal.",
+                "Dado curioso: pelo sangue.",
+                "Miau, pelo sangue.",
+                "Ronronado de aprovação! Do porco."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às possíveis causas da icterícia infecciosa, indique a opção INCORRETA:",
@@ -15966,7 +15986,27 @@
             "Pode estar relacionada à infecção de trabalhador rural por Echinococcus granulosus.",
             "Pode ter origem na infecção pelo vírus da hepatite A em um paciente não vacinado.",
             "Pode estar associada à obstrução do ducto biliar comum com cisticercos de Taenia solium."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato Fasciola hepatica pode causar icterícia em pacientes de áreas endêmicas.",
+                "De fato Echinococcus granulosus forma cistos hepáticos que podem comprimir ductos biliares.",
+                "De fato o vírus da hepatite A pode causar icterícia por inflamação hepática aguda.",
+                "Cisticercos de Taenia solium não causam obstrução do colédoco nem icterícia biliar; eles se alojam em cérebro, músculos e subcutâneo — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, essa lombriga.",
+                "Essa está certa, o cisto.",
+                "Essa está certa, essa hepatite.",
+                "Essa aí! Esse bicho vai pro cérebro, não pro fígado."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Vai pro cérebro."
+            ]
+        }
     },
     {
         "pergunta": "Um indivíduo de 30 anos é solicitado a realizar um teste rápido (TR) para detecção do HIV. Os laudos laboratoriais de RT reagente e os resultados dos exames complementares foram: Carga viral: não detectável e relação CD4/CD8 > 1. Qual exame deve ser solicitado para se chegar ao diagnóstico de paciente HIV positivo?",
@@ -15976,7 +16016,27 @@
             "Carga viral por outro método",
             "Western Blot",
             "Determinação do antígeno p24."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O isolamento viral é complexo e pouco usado rotineiramente.",
+                "Repetir carga viral não confirma infecção com teste rápido positivo.",
+                "O Western Blot confirma a infecção por HIV após teste rápido reativo, detectando anticorpos específicos e evitando falso-positivos. No caso, carga viral indetectável e CD4/CD8 > 1 podem indicar fase inicial, falso-positivo ou controle imunológico, reforçando a necessidade da confirmação sorológica — é a resposta correta.",
+                "Antígeno p24 é menos sensível em fases crônicas e não indicado aqui."
+            ],
+            "fantasma": [
+                "Isso é complicado, quase não se usa.",
+                "Repetir isso não confirma nada.",
+                "Essa aí! Esse confirma com segurança.",
+                "Esse não serve tanto já avançado."
+            ],
+            "gato": [
+                "Fijate: quase não se usa.",
+                "Dado curioso: não confirma.",
+                "Ronronado de aprovação! Confirma com segurança.",
+                "Miau, não serve já."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos exames para diagnóstico de HIV, indique a opção INCORRETA:",
@@ -15987,7 +16047,27 @@
             "O valor preditivo positivo de um teste rápido confirmado com WB está próximo de 100%",
             "Nas crianças, o valor preditivo negativo do DNA proviral aos 6 meses de idade é! 100%",
             "Em crianças com mais de 18 meses de idade, um teste rápido positivo confirmado com WB indica infecção"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O valor preditivo positivo (VPP) de um teste rápido e ELISA de 4ª geração não é próximo de 50%; é superior a 90% em populações com prevalência razoável de HIV, devido à alta sensibilidade e especificidade — essa é a opção incorreta.",
+                "De fato teste rápido confirmado por Western Blot tem VPP próximo a 100%.",
+                "De fato teste de DNA proviral aos 6 meses em crianças tem valor preditivo negativo próximo a 100%.",
+                "De fato em crianças >18 meses, teste rápido positivo confirmado por Western Blot indica infecção."
+            ],
+            "fantasma": [
+                "Essa aí! Esse número está muito baixo, é mais.",
+                "Essa está certa, quase certeza.",
+                "Essa está certa, quase certeza.",
+                "Essa está certa, indica infecção."
+            ],
+            "gato": [
+                "Ronronado de aprovação! É mais de 90.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes vírus da hepatite NÃO está envelopado?:",
@@ -15997,7 +16077,27 @@
             "Vírus da hepatite D.",
             "Vírus da hepatite C.",
             "Vírus da hepatite E."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "HBV é envelopado, com membrana lipídica essencial para infectividade.",
+                "HDV é defectivo e envelopado, usando o envelope do HBV.",
+                "HCV é envelopado, com glicoproteínas para entrada celular.",
+                "O vírus da hepatite E (HEV) é não envelopado, possuindo apenas cápside protéica, o que o torna mais resistente a condições ambientais e facilita sua transmissão fecal-oral — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse sim tem essa capa.",
+                "Esse sim tem essa capa, emprestada.",
+                "Esse sim tem essa capa.",
+                "Essa aí! Esse anda sem capa, resiste mais."
+            ],
+            "gato": [
+                "Fijate: tem capa.",
+                "Dado curioso: capa emprestada.",
+                "Miau, tem capa.",
+                "Ronronado de aprovação! Sem capa."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à Hepatite A, indique a opção INCORRETA:",
@@ -16008,7 +16108,27 @@
             "É um vírus com genoma de RNA de fita simples, capsídeo icosaédrico que não possui envelope lipoproteico.",
             "A infecção aguda é diagnosticada pela detecção de anti-HAV-IgM no soro.",
             "Em países/regiões com alta circulação do vírus, a infecção é frequente na infância e geralmente é subclínica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A evolução para hepatite aguda fulminante ocorre em menos de 1% dos casos de hepatite A, geralmente entre 0,1% e 0,5%. A taxa de 4 a 20% da opção A está superestimada — essa é a opção incorreta.",
+                "De fato HAV é vírus RNA monocatenário positivo, com cápside icosaédrica, sem envelope.",
+                "De fato o diagnóstico agudo é feito pela detecção de IgM anti-HAV, que indica infecção aguda.",
+                "De fato em áreas endêmicas, infecção ocorre na infância, geralmente assintomática/subclínica."
+            ],
+            "fantasma": [
+                "Essa aí! Esse número está muito alto, é quase nada.",
+                "Essa está certa, sem capa.",
+                "Essa está certa, com isso se vê.",
+                "Essa está certa, na criança."
+            ],
+            "gato": [
+                "Ronronado de aprovação! É quase nada.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Indique a que corresponde o seguinte perfil sorológico: HBsAg: reativo, HBeAg: reativo, anti-HBc IgM: negativo, Anti-HBc IgG: reativo, anti-HBs: negativo:",
@@ -16018,7 +16138,27 @@
             "Indivíduo vacinado contra hepatite B.",
             "Hepatite B crônica de provável longa duração.",
             "Hepatite B resolvida."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Perfil sorológico mostra HBsAg e HBeAg positivos (replicação ativa), anti-HBc IgM negativo e IgG positivo (não agudo), e anti-HBs negativo (sem proteção), compatível com hepatite B crônica recente (6-12 meses) — é a resposta correta.",
+                "Vacinação descartada por ausência de anti-HBs e presença de HBsAg.",
+                "Crônica longa descartada pois HBeAg geralmente é negativo nessa fase.",
+                "Infecção resolvida descartada pela persistência do HBsAg e ausência de anti-HBs."
+            ],
+            "fantasma": [
+                "Essa aí! Essa combinação é de crônico recente.",
+                "Não, ali não tem proteção de vacina.",
+                "Não, na longa isso já não está.",
+                "Não, ainda tem o vírus."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Crônico recente.",
+                "Fijate: não tem vacina ali.",
+                "Dado curioso: isso já não está.",
+                "Miau, ainda tem o vírus."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos abscessos hepáticos microbianos, indique a opção INCORRETA:",
@@ -16029,7 +16169,27 @@
             "As hemoculturas são o método de escolha para o diagnóstico de abscesso hepático amebiano.",
             "As culturas de material aspirado de abscesso piogênico são positivas na maioria dos casos.",
             "O uso de corticosteróides é um fator de risco para abscessos hepáticos amébicos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a doença biliar é a principal causa dos abscessos hepáticos piogênicos.",
+                "Hemocultivos não diagnosticam abscesso hepático amebiano, causado por Entamoeba histolytica, que não cresce nesses exames. O diagnóstico baseia-se em clínica, imagem, sorologia e aspirado do abscesso — essa é a opção incorreta.",
+                "De fato os cultivos do material aspirado do abscesso piogênico são positivos na maioria dos casos.",
+                "De fato o uso de corticoides é fator de risco para abscessos hepáticos amebianos, ao suprimir a imunidade."
+            ],
+            "fantasma": [
+                "Essa está certa, a via biliar.",
+                "Essa aí! Essa amebinha não cresce no sangue.",
+                "Essa está certa, quase sempre positivo.",
+                "Essa está certa, baixa as defesas."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Não cresce no sangue.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de HIV em adultos e crianças maiores de 18 meses, indique a opção INCORRETA",
@@ -16040,7 +16200,27 @@
             "A técnica Western blot é um método direto alternativo que detecta Ag-gp120 e gp41 do HIV.",
             "Na Argentina, um teste sorológico com resultado não reagente tem um valor preditivo negativo aceitável e, portanto, a infecção é descartada.",
             "A contagem de linfócitos T CD4 realizada por citometria de fluxo fornece informações sobre o estado imunológico do paciente."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a sequenciação do genoma viral identifica mutações de resistência a antirretrovirais.",
+                "Western blot é um método INDIRETO que detecta anticorpos contra proteínas virais do HIV (gp120 e gp41), não os antígenos diretamente, sendo um teste confirmatório sorológico — essa é a opção incorreta.",
+                "De fato um teste sorológico negativo na Argentina tem alto valor preditivo negativo para excluir infecção.",
+                "De fato a contagem de linfócitos CD4 avalia o estado imunológico e orienta o tratamento do HIV."
+            ],
+            "fantasma": [
+                "Essa está certa, prevê o tratamento.",
+                "Essa aí! Esse busca anticorpo, não antígeno direto.",
+                "Essa está certa, descarta bem.",
+                "Essa está certa, diz como está o sistema."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Busca anticorpo.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao curso crônico da infecção pelo HBV, indique a opção INCORRETA",
@@ -16051,7 +16231,27 @@
             "Após vários anos de infecção, alguns pacientes entram numa fase de controle da replicação viral caracterizada por baixa carga viral do VHB no sangue.",
             "O aparecimento de anticorpos anti-HBeAg no sangue indica a resolução da infecção crónica.",
             "A probabilidade de progressão para carcinoma hepatocelular devido ao HBV é promovida pela integração do genoma viral no hepatócito."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato um quadro clínico assim pode ocorrer por primoinfecção ou de forma esporádica durante a infecção crônica por VHB.",
+                "De fato após vários anos alguns pacientes entram em fase de controle da replicação viral com baixa carga viral.",
+                "O anticorpo anti-HBeAg indica soroconversão, com menor replicação viral e infectividade, mas NÃO a resolução da infecção crônica pelo VHB; o vírus permanece integrado — essa é a opção incorreta.",
+                "De fato a probabilidade de hepatocarcinoma é propiciada pela integração do genoma viral ao hepatócito."
+            ],
+            "fantasma": [
+                "Essa está certa, pode acontecer assim.",
+                "Essa está certa, controla um pouco.",
+                "Essa aí! Isso não cura, só controla um pouco.",
+                "Essa está certa, se mete na célula."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Não cura, controla.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Os seguintes vírus entram no corpo por via oral, EXCETO:",
@@ -16061,7 +16261,27 @@
             "Adenovírus 40/41.",
             "Rotavírus.",
             "Poliovírus."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O vírus da Hepatite D (HDV) é defectivo e precisa do HBV para replicar-se, transmitindo-se por via parenteral (sangue, sexual, perinatal), não oral — é a resposta correta.",
+                "De fato Adenovirus 40/41 transmite-se pela via fecal-oral, entrando pela via oral.",
+                "De fato o Rotavirus transmite-se pela via fecal-oral, entrando pela via oral.",
+                "De fato o Poliovirus transmite-se pela via fecal-oral, entrando pela via oral."
+            ],
+            "fantasma": [
+                "Essa aí! Esse entra pelo sangue, não pela boca.",
+                "Esse sim entra pela boca.",
+                "Esse sim entra pela boca.",
+                "Esse sim entra pela boca."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Pelo sangue.",
+                "Fijate: pela boca.",
+                "Dado curioso: pela boca.",
+                "Miau, pela boca."
+            ]
+        }
     },
     {
         "pergunta": "Marque a opção CORRETA em relação à infecção por Hepatite E (HEV):",
@@ -16072,7 +16292,27 @@
             "O vírus HEV é transmitido principalmente pela via fecal-oral.",
             "Pode ser diagnosticado através da pesquisa de antígeno de superfície no sangue.",
             "O genótipo 3 do HEV não está associado a infecções crônicas em pacientes imunossuprimidos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O HEV também tem transmissão zoonótica (genótipos 3 e 4) via carne malcozida ou contato com animais.",
+                "O HEV é transmitido principalmente pela via fecal-oral, por ingestão de água ou alimentos contaminados, comum em áreas com saneamento precário — é a resposta correta.",
+                "Diagnóstico não usa antígeno de superfície, mas anticorpos anti-HEV IgM e PCR para RNA viral.",
+                "Genótipo 3 pode causar infecção crônica em imunossuprimidos, como transplantados e pacientes com HIV."
+            ],
+            "fantasma": [
+                "Não, esse também vem do animal.",
+                "Essa aí! Pela boca e a água suja.",
+                "Não, é com outro anticorpo.",
+                "Não, esse sim vira crônico no fraco."
+            ],
+            "gato": [
+                "Fijate: sim vem de animal.",
+                "Ronronado de aprovação! Água suja.",
+                "Dado curioso: é outro anticorpo.",
+                "Miau, sim vira crônico."
+            ]
+        }
     },
     {
         "pergunta": "Marque a opção INCORRETA referente ao HDV:",
@@ -16083,7 +16323,27 @@
             "O vírus da Hepatite D necessita do HBsAg (antígeno de superfície do VHB) para realizar seu ciclo de replicação.",
             "A detecção do genoma viral do HDV implica replicação viral.",
             "A superinfecção (de um paciente com HBV) pelo HDV favorece a eliminação de ambos os agentes."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a população de risco de contrair HDV são os pacientes com HBV.",
+                "De fato o vírus da hepatite D depende do HBsAg para replicação.",
+                "De fato a detecção do RNA viral do HDV indica replicação ativa.",
+                "A superinfecção por HDV em paciente com HBV agrava a doença hepática, aumentando a replicação viral e a inflamação, dificultando a eliminação dos vírus, não favorecendo-a — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, quem já tem o outro.",
+                "Essa está certa, precisa dessa capa.",
+                "Essa está certa, tem replicação.",
+                "Essa aí! Isso piora, não ajuda a curar."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Piora."
+            ]
+        }
     },
     {
         "pergunta": "Marque a opção INCORRETA referente ao diagnóstico de HAV (vírus da Hepatite A):",
@@ -16094,7 +16354,27 @@
             "É possível detectar o genoma viral do HAV em uma amostra de soro colhida 15 dias após o início dos sintomas clínicos.",
             "A eliminação viral nas fezes é mais longa que a viremia e pode ser usada para detecção viral direta.",
             "A detecção de IgM por ELISA indica infecção aguda."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a detecção de IgG permite conhecer o estado imune do paciente.",
+                "De fato é possível detectar o genoma viral de HAV no soro aos 15 dias do início do quadro.",
+                "A eliminação do vírus da hepatite A nas fezes é breve e não mais prolongada que a viremia, e a detecção viral direta nas fezes não é método diagnóstico rotineiro — essa é a opção incorreta.",
+                "De fato a detecção de IgM por ELISA indica infecção aguda."
+            ],
+            "fantasma": [
+                "Essa está certa, diz se já é imune.",
+                "Essa está certa, detecta-se assim.",
+                "Essa aí! Isso dura pouco, não é o que diz.",
+                "Essa está certa, indica o agudo."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Dura pouco.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Marque a opção INCORRETA referente ao vírus da hepatite C (HCV):",
@@ -16105,7 +16385,27 @@
             "A maioria das infecções tem um curso agudo com resolução espontânea",
             "A triagem sorológica para HCV é realizada por ELISA.",
             "O diagnóstico de infecção crônica em paciente imunocompetente é feito com a detecção de anticorpos e amplificação de ácidos nucléicos no sangue."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a RT-PCR quantitativa é essencial para detectar e quantificar o RNA viral na primoinfecção.",
+                "A maioria das infecções pelo HCV evolui para a forma crônica (70-85%), com risco de complicações hepáticas; a eliminação espontânea na fase aguda é rara, não a maioria — essa é a opção incorreta.",
+                "De fato a triagem sorológica por ELISA detecta anticorpos anti-HCV e é o método inicial padrão.",
+                "De fato a infecção crônica é confirmada por anticorpos persistentes e RNA viral detectado por RT-PCR."
+            ],
+            "fantasma": [
+                "Essa está certa, precisa disso.",
+                "Essa aí! A maioria vira crônica, não se cura sozinha.",
+                "Essa está certa, com esse teste.",
+                "Essa está certa, as duas coisas."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! A maioria vira crônica.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Ao se deparar com um caso de síndrome mononucleosiforme (SMN), onde o teste de anticorpos heterófilos (AH) foi negativo e o hemograma mostra linfocitose (58%) com 15% de linfócitos “atípicos”, indique qual seria a opção INCORRETA.",
@@ -16116,7 +16416,27 @@
             "Se o paciente fosse criança, o SMN poderia estar associado ao HHV-6.",
             "A etiologia viral é descartada e são solicitados estudos bacteriológicos.",
             "Poderia estar associado ao SMN através do CMV."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato pode-se solicitar IgM anti-VCA de EBV para confirmar.",
+                "De fato se o paciente fosse criança, o SMN poderia se associar a HHV-6.",
+                "Não se deve descartar etiologia viral nem solicitar estudos bacteriológicos imediatamente. Síndrome mononucleosiforme com anticorpos heterófilos negativos pode ser causada por EBV, CMV ou HHV-6 — essa é a opção incorreta.",
+                "De fato poderia se associar a SMN por CMV."
+            ],
+            "fantasma": [
+                "Essa está certa, pede-se isso.",
+                "Essa está certa, na criança.",
+                "Essa aí! Não pode descartar o vírus ainda.",
+                "Essa está certa, também pode ser."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Não descartar o vírus.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à hepatite aguda por vírus da hepatite A, indique a opção CORRETA.",
@@ -16127,7 +16447,27 @@
             "Apresenta sinais e sintomas clínicos muito específicos.",
             "É uma patologia imunoprevenível e a principal causa infecciosa de insuficiência hepática fulminante em pediatria.",
             "Os casos assintomáticos são muito raros."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Diagnóstico não é só clínico, requer anticorpos anti-HAV IgM.",
+                "Sintomas são inespecíficos, comuns a várias hepatites, não específicos.",
+                "A hepatite A, causada pelo vírus RNA transmitido fecal-oral, é imunoprevenível pela vacina e pode causar insuficiência hepática fulminante em crianças — é a resposta correta.",
+                "Casos assintomáticos são comuns, especialmente em crianças pequenas."
+            ],
+            "fantasma": [
+                "Não, também precisa do teste.",
+                "Não, são sintomas de qualquer hepatite.",
+                "Essa aí! Tem vacina e pode ser grave na criança.",
+                "Não, é comum não ter sintoma."
+            ],
+            "gato": [
+                "Fijate: também precisa do teste.",
+                "Dado curioso: são de qualquer uma.",
+                "Ronronado de aprovação! Tem vacina.",
+                "Miau, é comum sem sintoma."
+            ]
+        }
     },
     {
         "pergunta": "Uma das seguintes afirmações está CORRETA:",
@@ -16138,7 +16478,27 @@
             "Na hepatite C, a maior frequência de transmissão ocorre por via sexual entre indivíduos heterossexuais.",
             "Em nosso país, a vacinação contra a hepatite A só é recomendada em áreas com redes de água e esgoto deficientes.",
             "Na hepatite B, a apresentação de anticorpos anti-HBc totais é um marcador de resolução da infecção."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Antivirais de ação direta (DAAs) para hepatite E são eficazes, com cura acima de 90%, especialmente em pacientes imunocompetentes, atuando na inibição da replicação viral. São essenciais em casos crônicos, comuns em imunossuprimidos — é a resposta correta.",
+                "Hepatite C é transmitida principalmente por via parenteral; transmissão sexual em heterossexuais é rara.",
+                "Vacinação contra hepatite A é recomendada nacionalmente para crianças, não só em áreas com saneamento precário.",
+                "Anticorpos anti-HBc indicam exposição, não cura; cura é confirmada por anti-HBs positivos e HBsAg negativo."
+            ],
+            "fantasma": [
+                "Essa aí! Esses remédios curam quase sempre.",
+                "Não, essa é mais pelo sangue.",
+                "Não, é pra todas as crianças.",
+                "Não, isso só diz que teve, não que curou."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Curam quase sempre.",
+                "Fijate: é pelo sangue.",
+                "Dado curioso: é pra todos.",
+                "Miau, só diz que teve."
+            ]
+        }
     },
     {
         "pergunta": "Os seguintes agentes virais têm tropismo reconhecido pelo fígado e podem causar hepatite, EXCETO:",
@@ -16148,7 +16508,27 @@
             "Citomegalovírus durante a infecção primária.",
             "Sorotipo 4 do vírus da dengue.",
             "Vírus do gênero Papillomavirus."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O vírus da febre amarela (vacinal) pode replicar-se no fígado, causando hepatite viral.",
+                "O citomegalovírus pode infectar o fígado, especialmente em imunocomprometidos, causando hepatite.",
+                "O vírus dengue sorotipo 4 infecta hepatócitos, podendo provocar desde elevações enzimáticas até hepatite grave.",
+                "Papilomavírus não tem tropismo pelo fígado nem causa hepatite, infectando principalmente pele e mucosas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse sim ataca o fígado.",
+                "Esse sim ataca o fígado.",
+                "Esse sim ataca o fígado.",
+                "Essa aí! Esse vai pra pele, não pro fígado."
+            ],
+            "gato": [
+                "Fijate: ataca o fígado.",
+                "Dado curioso: ataca o fígado.",
+                "Miau, ataca o fígado.",
+                "Ronronado de aprovação! Vai pra pele."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às seguintes afirmações sobre hepatites virais, marque a opção CORRETA:",
@@ -16159,7 +16539,27 @@
             "Uma única amostra de soro ou plasma é suficiente para diagnosticar a infecção crônica pelo vírus da hepatite C.",
             "A infecção pelo vírus da hepatite B só pode causar infecções crônicas quando contraída por transmissão vertical.",
             "Antes da vacinação, o vírus da hepatite A na Argentina era a principal causa de hepatite aguda na população pediátrica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não existe vacina para hepatite C; HDV é prevenido indiretamente pela vacina contra hepatite B.",
+                "Diagnóstico crônico de HCV requer RNA viral em duas amostras separadas, não apenas uma.",
+                "Hepatite B crônica não ocorre só por transmissão vertical; outras formas podem causar cronicidade.",
+                "Antes da vacinação, o vírus da hepatite A era a principal causa de hepatite aguda em crianças na Argentina, devido à transmissão fecal-oral em condições sanitárias precárias. A vacinação reduziu essa incidência — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não, pra um desses não tem vacina.",
+                "Não, precisa de outra amostra a mais.",
+                "Não, também por outras vias vira crônico.",
+                "Essa aí! Antes da vacina, esse era o mais comum na criança."
+            ],
+            "gato": [
+                "Fijate: falta uma vacina.",
+                "Dado curioso: falta outra amostra.",
+                "Miau, tem outras vias.",
+                "Ronronado de aprovação! O mais comum antes."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo vírus da Hepatite E, indique a opção CORRETA:",
