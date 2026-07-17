@@ -9227,7 +9227,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta D incorreta:** Na erisipela, a cultura por hisopado da pele eritematosa não é útil, pois a infecção é na derme e linfáticos superficiais, sem pus ou exsudato para coleta. O diagnóstico é clínico, e culturas são raras e indicadas só em complicações.  \n**Outras opções corretas:**  \nA) Tinea pedis causa fissuras que facilitam infecção por Streptococcus pyogenes.  \nB) Streptococcus pyogenes é o principal agente da erisipela.  \nC) Feridas cirúrgicas podem ser porta de entrada para a infecção."
+            "feedback": "**Resposta D incorreta:** Na erisipela, a cultura por hisopado da pele eritematosa não é útil, pois a infecção é na derme e linfáticos superficiais, sem pus ou exsudato para coleta. O diagnóstico é clínico, e culturas são raras e indicadas só em complicações.  \n**Outras opções corretas:**  \nA) Tinea pedis causa fissuras que facilitam infecção por Streptococcus pyogenes.  \nB) Streptococcus pyogenes é o principal agente da erisipela.  \nC) Feridas cirúrgicas podem ser porta de entrada para a infecção.",
+            "explicacoes": {
+                "robo": [
+                    "La tinea pedis efectivamente es un factor de riesgo local, ya que las fisuras facilitan la infección.",
+                    "Streptococcus pyogenes efectivamente es el principal agente causal de la erisipela.",
+                    "La erisipela efectivamente puede darse como consecuencia de la infección de heridas quirúrgicas.",
+                    "En la erisipela, el cultivo por hisopado de la piel eritematosa no es útil, ya que la infección está en la dermis y linfáticos superficiales, sin pus ni exudado para recolectar; el diagnóstico es clínico y los cultivos son raros — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, la fisura.",
+                    "Esa está bien, el estrepto.",
+                    "Esa está bien, la herida quirúrgica.",
+                    "¡Esta! Ahí no hay nada para hisopar."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No hay nada que hisopar."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -9253,7 +9273,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Streptococcus viridans.  \nStreptococcus viridans é comensal da flora oral e causa endocardite, não linfangite nodular na mão e antebraço.  \n\n**Análise das outras opções:**  \nA. Sporothrix schenkii causa esporotricose, com úlcera inicial e linfangite nodular típica.  \nB. Nocardia brasiliensis provoca nocardiose cutânea com lesões ulceradas e linfangite nodular.  \nD. Mycobacterium marinum causa infecção cutânea após contato com água, com úlcera e linfangite nodular.  \n\nAssim, A, B e D caus"
+            "feedback": "**Resposta Correta:** C. Streptococcus viridans.  \nStreptococcus viridans é comensal da flora oral e causa endocardite, não linfangite nodular na mão e antebraço.  \n\n**Análise das outras opções:**  \nA. Sporothrix schenkii causa esporotricose, com úlcera inicial e linfangite nodular típica.  \nB. Nocardia brasiliensis provoca nocardiose cutânea com lesões ulceradas e linfangite nodular.  \nD. Mycobacterium marinum causa infecção cutânea após contato com água, com úlcera e linfangite nodular.  \n\nAssim, A, B e D caus",
+            "explicacoes": {
+                "robo": [
+                    "Sporothrix schenckii efectivamente causa esporotricosis, con úlcera inicial y linfangitis nodular típica.",
+                    "Nocardia brasiliensis efectivamente provoca nocardiosis cutánea con lesiones ulceradas y linfangitis nodular.",
+                    "Streptococcus viridans es comensal de la flora oral y causa endocarditis, no linfangitis nodular en mano y antebrazo — esta es la excepción.",
+                    "Mycobacterium marinum efectivamente causa infección cutánea tras contacto con agua, con úlcera y linfangitis nodular."
+                ],
+                "fantasma": [
+                    "Ese sí causa esto.",
+                    "Ese sí causa esto.",
+                    "¡Esta! Ese es de la boca, no de la mano.",
+                    "Ese sí causa esto."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "¡Ronroneo de aprobación! Es de la boca.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -9279,7 +9319,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está incorreta. A vacina contra rubéola é de vírus vivo atenuado, não inativado, garantindo imunidade eficaz e duradoura. As outras opções estão corretas: A) diagnóstico pela detecção de IgM indica infecção recente; C) a rubéola pode causar esplenomegalia e linfadenite reativa devido à resposta imunológica; D) o vírus da rubéola tem reservatório exclusivamente humano, facilitando seu controle."
+            "feedback": "Resposta correta: B está incorreta. A vacina contra rubéola é de vírus vivo atenuado, não inativado, garantindo imunidade eficaz e duradoura. As outras opções estão corretas: A) diagnóstico pela detecção de IgM indica infecção recente; C) a rubéola pode causar esplenomegalia e linfadenite reativa devido à resposta imunológica; D) o vírus da rubéola tem reservatório exclusivamente humano, facilitando seu controle.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico de laboratorio efectivamente se realiza por la detección de IgM específica en el suero.",
+                    "La vacuna contra la rubéola es de virus vivo atenuado, no inactivado, garantizando inmunidad eficaz y duradera — esta es la opción incorrecta.",
+                    "Efectivamente el virus induce esplenomegalia y linfadenitis reactiva durante su diseminación.",
+                    "Efectivamente el reservorio del virus es exclusivamente humano."
+                ],
+                "fantasma": [
+                    "Esa está bien, IgM en suero.",
+                    "¡Esta! Es atenuado, no inactivado.",
+                    "Esa está bien, se hinchan los ganglios.",
+                    "Esa está bien, solo humano."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es atenuado.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -9305,7 +9365,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está errada. A análise macroscópica, microscópica e histológica dos grânulos do micetoma permite suspeitar do agente etiológico, diferenciando eumicetomas (fungos) de actinomicetomas (bactérias). Grânulos negros indicam fungos; amarelados ou brancos, bactérias. As opções A, C e D estão corretas: micetomas bacterianos são mais comuns em certas regiões; a infecção ocorre por microtraumas; e o diagnóstico definitivo é feito por cultura em diferentes temperaturas."
+            "feedback": "Resposta correta: B está errada. A análise macroscópica, microscópica e histológica dos grânulos do micetoma permite suspeitar do agente etiológico, diferenciando eumicetomas (fungos) de actinomicetomas (bactérias). Grânulos negros indicam fungos; amarelados ou brancos, bactérias. As opções A, C e D estão corretas: micetomas bacterianos são mais comuns em certas regiões; a infecção ocorre por microtraumas; e o diagnóstico definitivo é feito por cultura em diferentes temperaturas.",
+            "explicacoes": {
+                "robo": [
+                    "Los micetomas de etiología bacteriana efectivamente son más frecuentes que los micóticos en muchas regiones.",
+                    "El análisis macroscópico, microscópico e histológico de los gránulos del micetoma SÍ permite sospechar el agente etiológico, diferenciando eumicetomas (hongos) de actinomicetomas (bacterias); gránulos negros indican hongos, amarillentos o blancos, bacterias — esta es la opción incorrecta.",
+                    "El mecanismo de infección efectivamente es por microtraumas que comprometen la piel y el tejido subcutáneo.",
+                    "La caracterización definitiva del agente etiológico efectivamente puede hacerse por cultivos a 28 y 37°C."
+                ],
+                "fantasma": [
+                    "Esa está bien, más bacterianos.",
+                    "¡Esta! El grano sí orienta el diagnóstico.",
+                    "Esa está bien, microtrauma.",
+                    "Esa está bien, esas temperaturas."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Sí orienta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -9331,7 +9411,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Bactérias em ambiente anaeróbio na ferida produzem toxinas.\n\n*Clostridium tetani* é um bacilo gram-positivo anaeróbio obrigatório que coloniza feridas profundas, onde produz a neurotoxina tetanospasmina, causadora dos sintomas do tétano.  \n\n**Outras opções:**  \nA) A toxina do tétano não é superantígeno; atua bloqueando neurotransmissores.  \nB) Não há bacteremia significativa; a toxina se dissemina via sistema nervoso.  \nC) A imunoglobulina neutraliza toxinas livres, não impede a multiplicação bacteriana."
+            "feedback": "**Resposta Correta:** D. Bactérias em ambiente anaeróbio na ferida produzem toxinas.\n\n*Clostridium tetani* é um bacilo gram-positivo anaeróbio obrigatório que coloniza feridas profundas, onde produz a neurotoxina tetanospasmina, causadora dos sintomas do tétano.  \n\n**Outras opções:**  \nA) A toxina do tétano não é superantígeno; atua bloqueando neurotransmissores.  \nB) Não há bacteremia significativa; a toxina se dissemina via sistema nervoso.  \nC) A imunoglobulina neutraliza toxinas livres, não impede a multiplicação bacteriana.",
+            "explicacoes": {
+                "robo": [
+                    "La toxina tetánica no es un superantígeno; actúa bloqueando neurotransmisores.",
+                    "No hay bacteriemia significativa; la toxina se disemina por el sistema nervioso.",
+                    "La inmunoglobulina neutraliza toxinas libres, no impide la multiplicación bacteriana.",
+                    "Clostridium tetani es un bacilo Gram positivo anaerobio obligado que coloniza heridas profundas, donde produce y libera la neurotoxina tetanospasmina, causante de los síntomas del tétanos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No es superantígeno.",
+                    "No hay bacteriemia.",
+                    "No frena la multiplicación.",
+                    "¡Esta! Ambiente sin aire, ahí produce la toxina."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: no hay bacteriemia.",
+                    "Miau, no frena.",
+                    "¡Ronroneo de aprobación! Sin aire, produce toxina."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -9357,7 +9457,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Deve receber a dupla bacteriana adultos a cada 10 anos.\n\nApós tétano, não há imunidade duradoura, pois a infecção não gera proteção eficaz contra a toxina. A vacinação periódica a cada 10 anos é essencial para manter anticorpos protetores.  \n\n**Erradas:**  \nA) Imunidade vitalícia é falsa; o tétano não confere proteção duradoura.  \nC) Reforço a cada 3 anos é desnecessário; o intervalo correto é 10 anos.  \nD) Gammaglobulina é para uso imediato, não para profilaxia periódica."
+            "feedback": "**Resposta Correta:** B. Deve receber a dupla bacteriana adultos a cada 10 anos.\n\nApós tétano, não há imunidade duradoura, pois a infecção não gera proteção eficaz contra a toxina. A vacinação periódica a cada 10 anos é essencial para manter anticorpos protetores.  \n\n**Erradas:**  \nA) Imunidade vitalícia é falsa; o tétano não confere proteção duradoura.  \nC) Reforço a cada 3 anos é desnecessário; o intervalo correto é 10 anos.  \nD) Gammaglobulina é para uso imediato, não para profilaxia periódica.",
+            "explicacoes": {
+                "robo": [
+                    "La inmunidad de por vida es falsa; el tétanos no confiere protección duradera.",
+                    "Debe recibir la vacuna doble bacteriana adultos cada 10 años; tras el tétanos no hay inmunidad duradera, ya que la infección no genera protección eficaz contra la toxina — es la respuesta correcta.",
+                    "El refuerzo cada 3 años es innecesario; el intervalo correcto es cada 10 años.",
+                    "La gammaglobulina es para uso inmediato, no para profilaxis periódica."
+                ],
+                "fantasma": [
+                    "No es de por vida eso.",
+                    "¡Esta! Doble bacteriana cada 10, la correcta.",
+                    "Cada 3 no, es cada 10.",
+                    "Eso es de emergencia, no periódico."
+                ],
+                "gato": [
+                    "Fijate: no es así.",
+                    "¡Ronroneo de aprobación! Cada 10 años.",
+                    "Dato curioso: es cada 10.",
+                    "Miau, es de emergencia."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -9383,7 +9503,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Ancylostoma caninum.  \nEste nematódeo penetra na pele humana, causando larva migrans cutânea, com lesões serpiginosas, pruriginosas e dolorosas típicas após contato com solo contaminado.\n\n**Outras opções:**  \nB. Microsporum canis causa lesões arredondadas e descamativas, sem padrão migratório.  \nC. Streptococcus spp. provoca infecções cutâneas sem lesões serpiginosas migratórias.  \nD. Ascaris lumbricoides infecta via ingestão, não pela pele, e não causa lesões cutâneas migratórias."
+            "feedback": "**Resposta Correta:** A. Ancylostoma caninum.  \nEste nematódeo penetra na pele humana, causando larva migrans cutânea, com lesões serpiginosas, pruriginosas e dolorosas típicas após contato com solo contaminado.\n\n**Outras opções:**  \nB. Microsporum canis causa lesões arredondadas e descamativas, sem padrão migratório.  \nC. Streptococcus spp. provoca infecções cutâneas sem lesões serpiginosas migratórias.  \nD. Ascaris lumbricoides infecta via ingestão, não pela pele, e não causa lesões cutâneas migratórias.",
+            "explicacoes": {
+                "robo": [
+                    "Ancylostoma caninum penetra en la piel humana, causando larva migrans cutánea, con lesiones serpiginosas, pruriginosas y dolorosas típicas tras contacto con suelo contaminado (arena de playa) — es la respuesta correcta.",
+                    "Microsporum canis causa lesiones redondeadas y descamativas, sin patrón migratorio.",
+                    "Streptococcus spp provoca infecciones cutáneas sin lesiones serpiginosas migratorias.",
+                    "Ascaris lumbricoides infecta por ingestión, no por la piel, y no causa lesiones cutáneas migratorias."
+                ],
+                "fantasma": [
+                    "¡Esta! Es de la arena, la lombriz.",
+                    "Ese es redondo, sin migrar.",
+                    "Ese no migra así.",
+                    "Ese es por comer, no por la piel."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! De la arena.",
+                    "Fijate: no migra.",
+                    "Dato curioso: no migra.",
+                    "Miau, es por comer."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -9409,7 +9549,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. O paciente é hospedeiro acidental, pois o agente etiológico não faz parte do ciclo natural, causando infecção atípica.  \nOpção B: Punção-aspiração pode ajudar, mas não garante diagnóstico definitivo, pois outros exames são necessários.  \nOpção C: Lesão de unha espessa sem descamação não é típica de tiña pedis, dificultando o diagnóstico.  \nOpção D: Diagnóstico de Ancylostoma não é feito rotineiramente por sorologia IgM, mas por exame parasitológico de fezes."
+            "feedback": "Resposta correta: A. O paciente é hospedeiro acidental, pois o agente etiológico não faz parte do ciclo natural, causando infecção atípica.  \nOpção B: Punção-aspiração pode ajudar, mas não garante diagnóstico definitivo, pois outros exames são necessários.  \nOpção C: Lesão de unha espessa sem descamação não é típica de tiña pedis, dificultando o diagnóstico.  \nOpção D: Diagnóstico de Ancylostoma não é feito rotineiramente por sorologia IgM, mas por exame parasitológico de fezes.",
+            "explicacoes": {
+                "robo": [
+                    "El paciente se comporta como un huésped accidental, ya que el agente etiológico no forma parte de su ciclo natural, causando una infección atípica en humanos — es la respuesta correcta.",
+                    "La punción-aspiración de las lesiones puede ayudar, pero no garantiza el diagnóstico definitivo, siendo necesarios otros exámenes.",
+                    "Una lesión ungueal engrosada sin descamación no es típica de tinea pedis, dificultando el diagnóstico.",
+                    "El diagnóstico de Ancylostoma no se hace habitualmente por serología IgM, sino por examen parasitológico de materia fecal."
+                ],
+                "fantasma": [
+                    "¡Esta! El hombre no es su huésped natural.",
+                    "Eso ayuda, pero no confirma solo.",
+                    "Eso no es típico de tiña.",
+                    "Eso no se hace así, es con materia fecal."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No es su huésped natural.",
+                    "Fijate: no confirma solo.",
+                    "Dato curioso: no es típico.",
+                    "Miau, es con materia fecal."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -9435,7 +9595,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. A penetração percutânea de larvas na areia. Larvas presentes no ambiente, como na areia, penetram ativamente a pele, causando infecção, típico de helmintos como na larva migrans cutânea.  \n\n**Outras opções:**  \nA (contato com cães) não é o principal mecanismo, pois a infecção ocorre via larvas no ambiente.  \nC (bactérias da biota da pele) não se aplica, pois a infecção envolve larvas, não bactérias da flora normal.  \nD (pulgas na areia) está incorreta, pois pulgas não transmitem esse agente.  \n\nPortanto, a infecção ocorre pela penetração"
+            "feedback": "**Resposta Correta:** B. A penetração percutânea de larvas na areia. Larvas presentes no ambiente, como na areia, penetram ativamente a pele, causando infecção, típico de helmintos como na larva migrans cutânea.  \n\n**Outras opções:**  \nA (contato com cães) não é o principal mecanismo, pois a infecção ocorre via larvas no ambiente.  \nC (bactérias da biota da pele) não se aplica, pois a infecção envolve larvas, não bactérias da flora normal.  \nD (pulgas na areia) está incorreta, pois pulgas não transmitem esse agente.  \n\nPortanto, a infecção ocorre pela penetração",
+            "explicacoes": {
+                "robo": [
+                    "El contacto con perros no es el mecanismo principal, ya que la infección ocurre por las larvas presentes en el ambiente.",
+                    "Las larvas presentes en el ambiente, como en la arena, penetran activamente la piel, causando la infección, típico de helmintos como en la larva migrans cutánea — es la respuesta correcta.",
+                    "No se aplica bacterias de la biota de la piel, ya que la infección involucra larvas, no bacterias de la flora normal.",
+                    "Las pulgas de la arena no transmiten este agente."
+                ],
+                "fantasma": [
+                    "No es el perro directo.",
+                    "¡Esta! La larva penetra por la piel, la correcta.",
+                    "No es bacteria de la piel.",
+                    "No es la pulga eso."
+                ],
+                "gato": [
+                    "Fijate: no es el perro.",
+                    "¡Ronroneo de aprobación! La larva penetra.",
+                    "Dato curioso: no es bacteria.",
+                    "Miau, no es pulga."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -9461,7 +9641,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Picaduras por Pediculus humanus var corporis não causam lesões ulcerosas com linfangite local, mas sim doenças sistêmicas com febre alta e exantema.  \n\nOpções incorretas:  \nA. Contato com águas contaminadas pode causar micobacteriose de pescador, com lesões ulcerosas e linfangite.  \nB. Picadas de Lutzomyia transmitem Leishmaniose cutânea, que causa lesões ulcerosas com linfangite e linfadenite.  \nC. Traumas com vegetais ou solo podem levar a infecções fúngicas ou micobacterianas com quadro semelhante."
+            "feedback": "Resposta correta: D. Picaduras por Pediculus humanus var corporis não causam lesões ulcerosas com linfangite local, mas sim doenças sistêmicas com febre alta e exantema.  \n\nOpções incorretas:  \nA. Contato com águas contaminadas pode causar micobacteriose de pescador, com lesões ulcerosas e linfangite.  \nB. Picadas de Lutzomyia transmitem Leishmaniose cutânea, que causa lesões ulcerosas com linfangite e linfadenite.  \nC. Traumas com vegetais ou solo podem levar a infecções fúngicas ou micobacterianas com quadro semelhante.",
+            "explicacoes": {
+                "robo": [
+                    "Las actividades laborales relacionadas con la limpieza de peceras o aguas cloacales efectivamente pueden causar micobacteriosis con lesiones ulcerosas y linfangitis.",
+                    "Las picaduras por Lutzomyia efectivamente transmiten leishmaniasis cutánea, con lesiones ulcerosas y linfangitis.",
+                    "Los traumatismos con vegetales o suelos efectivamente pueden llevar a infecciones fúngicas o micobacterianas con cuadro similar.",
+                    "Las picaduras por Pediculus humanus var corporis no causan lesiones ulcerosas con linfangitis local, sino enfermedades sistémicas con fiebre alta y exantema — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, la pecera.",
+                    "Esa está bien, el mosquito.",
+                    "Esa está bien, el trauma.",
+                    "¡Esta! Ese piojo no da eso, da otra cosa."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Da otra cosa."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -9487,7 +9687,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Hemocultivo.\n\nNo síndrome linfangítico nodular, hemocultivos são pouco úteis, pois os agentes causadores se localizam nas lesões cutâneas/linfáticas e raramente causam bacteremia detectável. \n\n**Outras opções:**\nA. Raspado e coloração Giemsa identificam parasitas/bactérias intracelulares nas lesões.  \nC. Sorologia IgG auxilia no diagnóstico diferencial de infecções crônicas.  \nD. Biópsia com colorações Ziehl-Neelsen e Kinyoun detecta micobactérias ácido-resistentes, comuns nessa síndrome.  \n\nAssim, hemocultivo não é indicado para"
+            "feedback": "**Resposta Correta:** B. Hemocultivo.\n\nNo síndrome linfangítico nodular, hemocultivos são pouco úteis, pois os agentes causadores se localizam nas lesões cutâneas/linfáticas e raramente causam bacteremia detectável. \n\n**Outras opções:**\nA. Raspado e coloração Giemsa identificam parasitas/bactérias intracelulares nas lesões.  \nC. Sorologia IgG auxilia no diagnóstico diferencial de infecções crônicas.  \nD. Biópsia com colorações Ziehl-Neelsen e Kinyoun detecta micobactérias ácido-resistentes, comuns nessa síndrome.  \n\nAssim, hemocultivo não é indicado para",
+            "explicacoes": {
+                "robo": [
+                    "La incisión en el borde de la úlcera con obtención de material por raspado y tinción con Giemsa efectivamente es útil para identificar parásitos/bacterias intracelulares.",
+                    "En el síndrome linfangítico nodular, los hemocultivos son poco útiles, ya que los agentes causales se localizan en las lesiones cutáneas/linfáticas y rara vez causan bacteriemia detectable — esta es la opción incorrecta.",
+                    "El suero para búsqueda de IgG efectivamente ayuda en el diagnóstico diferencial de infecciones crónicas.",
+                    "La biopsia de la lesión con tinción de Ziehl-Neelsen y Kinyoun efectivamente detecta micobacterias ácido-resistentes, comunes en este síndrome."
+                ],
+                "fantasma": [
+                    "Esa sí sirve, raspado y Giemsa.",
+                    "¡Esta! Ahí no hay bacteria en la sangre.",
+                    "Esa sí sirve, IgG.",
+                    "Esa sí sirve, esas tinciones."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "¡Ronroneo de aprobación! No hay bacteria en sangre.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -9513,7 +9733,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Amastigotes de Leishmania braziliensis.  \nLeishmania é um protozoário intracelular detectado por exame direto ou técnicas moleculares, não por cultivo convencional.  \nOpções B, C e D estão corretas: Sporothrix schenckii (fungo dimórfico) cresce em cultura a 28°C e 37°C; micobactérias atípicas são cultiváveis em meios específicos; bactérias filamentosas (ex.: Nocardia) crescem em meios bacteriológicos comuns.  \nPortanto, a única incorreta é a recuperação de amastigotes de Leishmania por cultivo."
+            "feedback": "Resposta correta: A. Amastigotes de Leishmania braziliensis.  \nLeishmania é um protozoário intracelular detectado por exame direto ou técnicas moleculares, não por cultivo convencional.  \nOpções B, C e D estão corretas: Sporothrix schenckii (fungo dimórfico) cresce em cultura a 28°C e 37°C; micobactérias atípicas são cultiváveis em meios específicos; bactérias filamentosas (ex.: Nocardia) crescem em meios bacteriológicos comuns.  \nPortanto, a única incorreta é a recuperação de amastigotes de Leishmania por cultivo.",
+            "explicacoes": {
+                "robo": [
+                    "Leishmania es un protozoario intracelular detectado por examen directo o técnicas moleculares, no por cultivo convencional; los amastigotes no se recuperan por cultivo rutinario — esta es la opción incorrecta.",
+                    "Sporothrix schenckii (hongo dimórfico) efectivamente crece en cultivo a 28°C y 37°C, mostrando formas levaduriformes y filamentosas.",
+                    "Las micobacterias atípicas efectivamente son cultivables en medios específicos.",
+                    "Las bacterias filamentosas (como Nocardia) efectivamente crecen en medios bacteriológicos comunes."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese no se cultiva así, es directo.",
+                    "Ese sí se cultiva.",
+                    "Esas sí se cultivan.",
+                    "Esas sí se cultivan."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No se cultiva así.",
+                    "Fijate: sí se cultiva.",
+                    "Dato curioso: sí se cultivan.",
+                    "Miau, sí se cultivan."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -9539,7 +9779,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Nocardia brasiliensis, bactéria gram-positiva aeróbia que causa actinomycetoma, infecção crônica subcutânea com nódulos e abscessos, comum em regiões tropicais. O tratamento exige antibióticos prolongados.\n\n**Outras opções:**  \nB. Madurella mycetomatis e C. Pseudoallescheria boydii são fungos causadores de eumicetoma, não bactérias.  \nD. Fonsecaea pedrosoi é fungo causador de cromoblastomicose, doença cutânea distinta do micetoma.\n\nPortanto, só a alternativa A corresponde ao agente bacteriano do actinomycetoma"
+            "feedback": "**Resposta Correta:** A. Nocardia brasiliensis, bactéria gram-positiva aeróbia que causa actinomycetoma, infecção crônica subcutânea com nódulos e abscessos, comum em regiões tropicais. O tratamento exige antibióticos prolongados.\n\n**Outras opções:**  \nB. Madurella mycetomatis e C. Pseudoallescheria boydii são fungos causadores de eumicetoma, não bactérias.  \nD. Fonsecaea pedrosoi é fungo causador de cromoblastomicose, doença cutânea distinta do micetoma.\n\nPortanto, só a alternativa A corresponde ao agente bacteriano do actinomycetoma",
+            "explicacoes": {
+                "robo": [
+                    "Nocardia brasiliensis, bacteria Gram positiva aeróbica, causa actinomicetoma, infección crónica subcutánea con nódulos y abscesos, común en regiones tropicales — es la respuesta correcta.",
+                    "Madurella mycetomatis es un hongo causante de eumicetoma, no una bacteria.",
+                    "Pseudoallescheria boydii es un hongo causante de eumicetoma, no una bacteria.",
+                    "Fonsecaea pedrosoi es un hongo causante de cromoblastomicosis, enfermedad cutánea distinta del micetoma."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa es la bacteria, el actinomicetoma.",
+                    "Ese es hongo, no bacteria.",
+                    "Ese es hongo, no bacteria.",
+                    "Ese es de otra enfermedad."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La bacteria del actinomicetoma.",
+                    "Fijate: es hongo.",
+                    "Dato curioso: es hongo.",
+                    "Miau, es de otra."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -9565,7 +9825,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O micetoma ocorre habitualmente por traumatismo cutâneo.\n\nA clínica descrita (aumento do volume, deformação, fístulas com secreção contendo grãos) é típica de micetoma, infecção crônica subcutânea causada por fungos ou actinomicetos, com entrada por ferimentos na pele, comum em áreas endêmicas como o Chaco.  \n\n**Incorretas:**  \nA) Soroconversão não protege contra formas disseminadas, que são raras no micetoma.  \nB) Cromomicose apresenta lesões verrucosas, sem fístulas ou grãos.  \nC) Micetoma afeta imunocompetentes,"
+            "feedback": "**Resposta Correta:** D. O micetoma ocorre habitualmente por traumatismo cutâneo.\n\nA clínica descrita (aumento do volume, deformação, fístulas com secreção contendo grãos) é típica de micetoma, infecção crônica subcutânea causada por fungos ou actinomicetos, com entrada por ferimentos na pele, comum em áreas endêmicas como o Chaco.  \n\n**Incorretas:**  \nA) Soroconversão não protege contra formas disseminadas, que são raras no micetoma.  \nB) Cromomicose apresenta lesões verrucosas, sem fístulas ou grãos.  \nC) Micetoma afeta imunocompetentes,",
+            "explicacoes": {
+                "robo": [
+                    "La seroconversión no protege contra formas diseminadas, que son raras en el micetoma.",
+                    "La cromomicosis presenta lesiones verrugosas, sin fístulas ni granos; el cuadro descrito no corresponde a cromomicosis.",
+                    "El micetoma afecta también a inmunocompetentes.",
+                    "El micetoma ocurre habitualmente por traumatismo cutáneo; el cuadro descrito (aumento de volumen, deformación, fístulas con secreción con granos) es típico de esta infección crónica subcutánea causada por hongos o actinomicetos, con entrada por heridas en la piel — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No protege eso.",
+                    "No es cromomicosis, no tiene grano así.",
+                    "Sí afecta a cualquiera.",
+                    "¡Esta! Es por herida en la piel, la correcta."
+                ],
+                "gato": [
+                    "Fijate: no protege.",
+                    "Dato curioso: no es eso.",
+                    "Miau, afecta a cualquiera.",
+                    "¡Ronroneo de aprobación! Es por herida en la piel."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -9591,7 +9871,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta porque o diagnóstico definitivo do micetoma exige exames complementares, como estudos histopatológicos e microbiológicos, não apenas a observação clínica e presença de grãos.  \n\n**Outras opções:**  \nA) Biópsia é essencial para análise histopatológica e cultura, confirmando a etiologia.  \nB) Características macroscópicas dos grãos ajudam a identificar possíveis agentes causais.  \nC) Cultivo permite identificação precisa do agente e testes de sensibilidade, fundamentais para o tratamento."
+            "feedback": "**Resposta Correta:** D está incorreta porque o diagnóstico definitivo do micetoma exige exames complementares, como estudos histopatológicos e microbiológicos, não apenas a observação clínica e presença de grãos.  \n\n**Outras opções:**  \nA) Biópsia é essencial para análise histopatológica e cultura, confirmando a etiologia.  \nB) Características macroscópicas dos grãos ajudam a identificar possíveis agentes causais.  \nC) Cultivo permite identificação precisa do agente e testes de sensibilidade, fundamentais para o tratamento.",
+            "explicacoes": {
+                "robo": [
+                    "La toma de muestra adecuada efectivamente es la biopsia.",
+                    "Las características macroscópicas de los gránulos efectivamente orientan hacia los posibles agentes causales.",
+                    "Efectivamente es necesario el cultivo para determinar género y especie fúngica.",
+                    "El diagnóstico definitivo del micetoma exige estudios complementarios, como histopatología y microbiología, no solo la observación clínica y la presencia de granos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, la biopsia.",
+                    "Esa está bien, orienta.",
+                    "Esa está bien, hace falta cultivo.",
+                    "¡Esta! Ese solo no alcanza, hace falta más."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No alcanza solo."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -9617,7 +9917,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Micoses subcutâneas são crônicas devido ao lento crescimento dos fungos causadores.\n\nEssas infecções resultam da inoculação traumática de fungos do solo ou matéria orgânica, com evolução lenta e sintomas progressivos, como aumento de volume e fístulas drenantes.  \n\n**Opções incorretas:**  \nA) Transmissão por aerossóis é rara; a via principal é inoculação traumática.  \nB) Micotoxinas não são o principal fator patogênico; a lesão decorre da invasão local e inflamação.  \nD) Não predominam em imunocomprometidos, mas em indivíduos imunocompetentes exp"
+            "feedback": "**Resposta Correta:** C. Micoses subcutâneas são crônicas devido ao lento crescimento dos fungos causadores.\n\nEssas infecções resultam da inoculação traumática de fungos do solo ou matéria orgânica, com evolução lenta e sintomas progressivos, como aumento de volume e fístulas drenantes.  \n\n**Opções incorretas:**  \nA) Transmissão por aerossóis é rara; a via principal é inoculação traumática.  \nB) Micotoxinas não são o principal fator patogênico; a lesão decorre da invasão local e inflamação.  \nD) Não predominam em imunocomprometidos, mas em indivíduos imunocompetentes exp",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión por aerosoles es rara; la vía principal es la inoculación traumática.",
+                    "Las micotoxinas no son el principal factor patogénico; la lesión se debe a la invasión local y la inflamación.",
+                    "Las micosis subcutáneas son procesos crónicos debido al lento desarrollo de los agentes etiológicos, resultando de la inoculación traumática de hongos del suelo o materia orgánica, con evolución lenta y síntomas progresivos — es la respuesta correcta.",
+                    "No predominan en inmunocomprometidos, sino en individuos inmunocompetentes expuestos a trauma con material contaminado."
+                ],
+                "fantasma": [
+                    "Eso no es raro, es raro por aerosol.",
+                    "Eso no es lo principal.",
+                    "¡Esta! Crece lento, por eso es crónico.",
+                    "No es de inmunocomprometido."
+                ],
+                "gato": [
+                    "Fijate: es raro así.",
+                    "Dato curioso: no es lo principal.",
+                    "¡Ronroneo de aprobación! Crece lento.",
+                    "Miau, no es así."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -9643,7 +9963,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Dermatófitos, fungos filamentosos que invadem queratina da pele, cabelos e unhas, causando lesões escamosas, pruriginosas e delimitadas, típicas do paciente nadador exposto à umidade.\n\n**Análise das incorretas:**  \nA. Staphylococcus aureus causa lesões purulentas, não escamosas.  \nB. Larva migrans gera lesões lineares e serpiginosas, diferentes das dermatofitoses.  \nD. Bacilos Gram negativos causam infecções oportunistas, não lesões escamosas típicas."
+            "feedback": "**Resposta Correta:** C. Dermatófitos, fungos filamentosos que invadem queratina da pele, cabelos e unhas, causando lesões escamosas, pruriginosas e delimitadas, típicas do paciente nadador exposto à umidade.\n\n**Análise das incorretas:**  \nA. Staphylococcus aureus causa lesões purulentas, não escamosas.  \nB. Larva migrans gera lesões lineares e serpiginosas, diferentes das dermatofitoses.  \nD. Bacilos Gram negativos causam infecções oportunistas, não lesões escamosas típicas.",
+            "explicacoes": {
+                "robo": [
+                    "Staphylococcus aureus causa lesiones purulentas, no escamosas.",
+                    "La larva migrans genera lesiones lineales y serpiginosas, diferentes de las dermatofitosis.",
+                    "Los dermatofitos, hongos filamentosos que invaden la queratina de piel, cabellos y uñas, causan lesiones escamosas, pruriginosas y delimitadas, típicas en un nadador expuesto a la humedad — es la respuesta correcta.",
+                    "Los bacilos Gram negativos causan infecciones oportunistas, no lesiones escamosas típicas."
+                ],
+                "fantasma": [
+                    "Ese hace pus, no escama.",
+                    "Esa es serpenteante, no así.",
+                    "¡Esta! Invaden la queratina, la correcta.",
+                    "Ese es oportunista, no así."
+                ],
+                "gato": [
+                    "Fijate: hace pus.",
+                    "Dato curioso: es serpenteante.",
+                    "¡Ronroneo de aprobación! Invaden la queratina.",
+                    "Miau, es oportunista."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -9669,7 +10009,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. O uso contínuo de piletas e duchas em clubes cria ambientes úmidos que favorecem a proliferação de microrganismos patogênicos, especialmente fungos e bactérias oportunistas, aumentando a predisposição a infecções cutâneas.\n\n**Opções Incorretas:**  \nA) Idade não é fator predominante para essas lesões.  \nC) Hipersensibilidade por infecção bacteriana não é causa primária.  \nD) Lunar não está relacionado à cromoblastomicose, micose subcutânea por fungos dematiáceos."
+            "feedback": "**Resposta Correta:** B. O uso contínuo de piletas e duchas em clubes cria ambientes úmidos que favorecem a proliferação de microrganismos patogênicos, especialmente fungos e bactérias oportunistas, aumentando a predisposição a infecções cutâneas.\n\n**Opções Incorretas:**  \nA) Idade não é fator predominante para essas lesões.  \nC) Hipersensibilidade por infecção bacteriana não é causa primária.  \nD) Lunar não está relacionado à cromoblastomicose, micose subcutânea por fungos dematiáceos.",
+            "explicacoes": {
+                "robo": [
+                    "La edad no es el factor predominante para este tipo de lesiones.",
+                    "El uso continuo de piletas y duchas de clubes crea ambientes húmedos que favorecen la proliferación de microorganismos patógenos, especialmente hongos y bacterias oportunistas, aumentando la predisposición a infecciones cutáneas — es la respuesta correcta.",
+                    "La hipersensibilidad por infección bacteriana no es la causa primaria.",
+                    "El lunar no está relacionado con la cromoblastomicosis, micosis subcutánea causada por hongos dematiáceos."
+                ],
+                "fantasma": [
+                    "No es la edad.",
+                    "¡Esta! La humedad de la pileta, la correcta.",
+                    "No es lo primario.",
+                    "El lunar no tiene que ver."
+                ],
+                "gato": [
+                    "Fijate: no es la edad.",
+                    "¡Ronroneo de aprobación! La humedad.",
+                    "Dato curioso: no es lo primario.",
+                    "Miau, no tiene que ver."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -9695,7 +10055,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Usar antifúngicos ativos contra fungos queratinofílicos, como dermatófitos, para tratar infecções cutâneas.  \n\nOpção A: Testes de sensibilidade não são rotina, pois resistência é rara e testes são complexos.  \nOpção B: Antibióticos não atuam contra fungos, sendo inadequados e potencialmente prejudiciais.  \nOpção C: Antiparasitários não têm efeito sobre fungos, portanto não são indicados."
+            "feedback": "Resposta correta: D. Usar antifúngicos ativos contra fungos queratinofílicos, como dermatófitos, para tratar infecções cutâneas.  \n\nOpção A: Testes de sensibilidade não são rotina, pois resistência é rara e testes são complexos.  \nOpção B: Antibióticos não atuam contra fungos, sendo inadequados e potencialmente prejudiciais.  \nOpção C: Antiparasitários não têm efeito sobre fungos, portanto não são indicados.",
+            "explicacoes": {
+                "robo": [
+                    "Las pruebas de sensibilidad no son rutina, ya que la resistencia es rara y las pruebas son complejas.",
+                    "Los antibióticos no actúan contra hongos, siendo inadecuados y potencialmente perjudiciales.",
+                    "Los antiparasitarios no tienen efecto sobre hongos, por lo que no están indicados.",
+                    "Administrar drogas capaces de actuar frente a hongos queratinofílicos, como dermatofitos, es la conducta correcta para tratar infecciones cutáneas de este tipo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No es de rutina eso.",
+                    "El antibiótico no sirve para hongo.",
+                    "El antiparasitario no sirve para hongo.",
+                    "¡Esta! Antifúngico para queratinofílico, la correcta."
+                ],
+                "gato": [
+                    "Fijate: no es rutina.",
+                    "Dato curioso: no sirve.",
+                    "Miau, no sirve.",
+                    "¡Ronroneo de aprobación! Antifúngico, la correcta."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -9721,7 +10101,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Início de broncopneumonia bacteriana sobreagregada.\n\nNo sarampo, febre e exantema duram cerca de 7 dias, seguidos de melhora. Febre persistente ou recorrente no sétimo dia indica complicação bacteriana, comum por Streptococcus pneumoniae, Staphylococcus aureus ou Haemophilus influenzae, causando broncopneumonia.  \n\nOutras opções:  \nA) Panencefalite subaguda esclerosante é rara e tardia.  \nC) Citomegalovírus não é causa comum de sobreinfecção no sarampo.  \nD) Febre prolongada não faz parte do curso clínico habitual"
+            "feedback": "**Resposta Correta:** B. Início de broncopneumonia bacteriana sobreagregada.\n\nNo sarampo, febre e exantema duram cerca de 7 dias, seguidos de melhora. Febre persistente ou recorrente no sétimo dia indica complicação bacteriana, comum por Streptococcus pneumoniae, Staphylococcus aureus ou Haemophilus influenzae, causando broncopneumonia.  \n\nOutras opções:  \nA) Panencefalite subaguda esclerosante é rara e tardia.  \nC) Citomegalovírus não é causa comum de sobreinfecção no sarampo.  \nD) Febre prolongada não faz parte do curso clínico habitual",
+            "explicacoes": {
+                "robo": [
+                    "La panencefalitis subaguda esclerosante es rara y tardía, no ocurre en el séptimo día.",
+                    "En el sarampión, la fiebre y el exantema duran alrededor de 7 días, seguidos de mejoría; una fiebre persistente o recurrente al séptimo día indica complicación bacteriana, común por Streptococcus pneumoniae, Staphylococcus aureus o Haemophilus influenzae, causando bronconeumonía — es la respuesta correcta.",
+                    "El citomegalovirus no es una causa común de sobreinfección en el sarampión.",
+                    "La fiebre prolongada no forma parte del curso clínico habitual del sarampión."
+                ],
+                "fantasma": [
+                    "Eso es raro y tardío.",
+                    "¡Esta! Fiebre en el día 7, es bacteria agregada.",
+                    "Ese no es de acá.",
+                    "No es lo normal esa fiebre."
+                ],
+                "gato": [
+                    "Fijate: es raro.",
+                    "¡Ronroneo de aprobación! Bacteria agregada.",
+                    "Dato curioso: no es de acá.",
+                    "Miau, no es lo normal."
+                ]
+            }
         },
         {
             "numero": 39,
