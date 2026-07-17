@@ -12271,7 +12271,27 @@
             "Hiperergia cutânea a anticorpos dirigidos contra micobactérias.",
             "Indivíduo infectado.",
             "Indivíduo suscetível."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A anergia indica ausência de resposta, incompatível com uma induração de 10 mm.",
+                "A reação não depende de anticorpos, mas sim de imunidade celular.",
+                "Uma induração ≥10 mm indica infecção prévia ou atual, confirmando exposição e resposta imune a Mycobacterium tuberculosis, sem diferenciar infecção latente de ativa — é a resposta correta.",
+                "Um indivíduo suscetível não apresenta induração significativa."
+            ],
+            "fantasma": [
+                "Isso é sem resposta, não bate com essa induração.",
+                "Não é por anticorpo, é por célula.",
+                "Essa aí! Essa induração diz que está infectado.",
+                "Esse não reage assim."
+            ],
+            "gato": [
+                "Fijate: sem resposta.",
+                "Dado curioso: é por célula.",
+                "Ronronado de aprovação! Está infectado.",
+                "Miau, não reage assim."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à etiologia da meningite considerando faixa etária de indivíduo de 55 anos, indique a opção INCORRETA:",
@@ -12282,7 +12302,27 @@
             "Streptococcus agalactiae.",
             "Listeria monocytogenes.",
             "Bacilos Gram negativos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Neisseria meningitidis de fato é um agente relevante em adultos, embora mais frequente em jovens.",
+                "Streptococcus agalactiae (grupo B) causa meningite em recém-nascidos, não em adultos de 55 anos, sendo a opção incorreta.",
+                "Listeria monocytogenes de fato é uma causa importante em adultos maiores de 50 anos, especialmente com fatores de risco.",
+                "Os bacilos Gram negativos de fato causam meningite em adultos hospitalizados ou imunossuprimidos."
+            ],
+            "fantasma": [
+                "Esse sim é relevante no adulto.",
+                "Essa aí! Esse é de recém-nascido, não de adulto.",
+                "Essa sim é comum nessa idade.",
+                "Esses sim são de adulto internado."
+            ],
+            "gato": [
+                "Fijate: sim é relevante.",
+                "Ronronado de aprovação! É de recém-nascido.",
+                "Dado curioso: sim é comum.",
+                "Miau, sim são de adulto."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à coleta de amostra para diagnóstico microbiológico e apresentação clínica de meningite supondo que o paciente apresente pressão intracraniana aumentada, indicar a opção INCORRETA:",
@@ -12293,7 +12333,27 @@
             "A obtenção de sangue para hemoculturas seriadas é uma opção para identificação do agente etiológico.",
             "Se papiledema ou déficits neurológicos focais forem detectados clinicamente, tomografia computadorizada ou ressonância magnética devem ser realizadas antes da punção lombar.",
             "A presença de hipertensão intracraniana pode precipitar hérnia cerebral."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O isolamento em hisopado de fauces não confirma meningite, pois pode refletir colonização ou contaminação da flora normal; o diagnóstico definitivo se baseia na análise do LCR por punção lombar — essa é a opção incorreta.",
+                "De fato a coleta de sangue para hemocultivos seriados é útil para identificar o agente, especialmente se o LCR não estiver disponível.",
+                "De fato se há edema de papila ou déficits neurológicos focais, deve-se fazer TC ou RM antes da punção lombar.",
+                "De fato a hipertensão endocraniana pode precipitar uma herniação cerebral."
+            ],
+            "fantasma": [
+                "Essa aí! Isso não confirma nada, pode ser só flora normal.",
+                "Essa está certa, o hemocultivo ajuda.",
+                "Essa está certa, primeiro a tomografia.",
+                "Essa está certa, pode herniar."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Não confirma nada.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes características físico-químicas do LCR é compatível com meningite bacteriana? Selecione a opção CORRETA:",
@@ -12304,7 +12364,27 @@
             "LCR turvo, 5.000 células predominantemente polimorfonucleares, aumento de hipoglicorraquia e raquia proteica",
             "LCR turvo, 10 células predominantemente mononucleares, hiperglicorraquia e proteinorraquia aumentadas,",
             "LCR turvo, 20 células predominantemente polimorfonucleares, hipoglicorraquia. e diminuição da proteinorraquia."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Poucas células com predomínio mononuclear, glicose normal e proteínas baixas sugerem meningite viral ou tuberculosa, não bacteriana.",
+                "LCR turvo com 5000 células a predomínio polimorfonuclear, hipoglucorraquia e proteinorraquia aumentadas é típico da meningite bacteriana — é a resposta correta.",
+                "Poucas células com predomínio mononuclear e glicose aumentada (hiperglucorraquia) é incompatível com meningite bacteriana.",
+                "Esses valores não são os típicos de uma meningite bacteriana clássica."
+            ],
+            "fantasma": [
+                "Isso é de meningite viral.",
+                "Essa aí! Muitas células, glicose baixa, a bacteriana.",
+                "Isso tem a glicose ao contrário.",
+                "Esses valores não encaixam."
+            ],
+            "gato": [
+                "Fijate: é viral.",
+                "Ronronado de aprovação! Glicose baixa, muitas células.",
+                "Dado curioso: glicose ao contrário.",
+                "Miau, não encaixa."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à meningite aguda, indique a opção CORRETA:",
@@ -12315,7 +12395,27 @@
             "A coloração de Gram tem 90% de sensibilidade para Listeria monocytogenes.",
             "Streptococcus pyogenes é um dos patógenos mais prevalentes em pacientes pós-cirúrgicos como fator predisponente.",
             "Além da PCR, as técnicas de detecção de antígenos por ELISA ou imunofluorescência são úteis para a detecção de Enterovírus."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Neisseria meningitidis é comum em crianças maiores, não em neonatos, onde predominam Streptococcus agalactiae, E. coli e Listeria.",
+                "A coloração de Gram tem baixa sensibilidade para Listeria monocytogenes devido à sua baixa concentração e características morfológicas.",
+                "Streptococcus pyogenes não é causa comum de meningite pós-cirúrgica; Staphylococcus aureus e bactérias Gram negativas são mais frequentes.",
+                "Além da PCR (padrão-ouro), as técnicas de detecção de antígenos por ELISA ou imunofluorescência de fato são úteis para Enterovirus — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é de criança grande, não de recém-nascido.",
+                "Isso rende pouco pra esse bicho.",
+                "Esse não é o típico aí.",
+                "Essa aí! ELISA e imunofluorescência também servem."
+            ],
+            "gato": [
+                "Fijate: é de criança grande.",
+                "Dado curioso: rende pouco.",
+                "Miau, não é o típico.",
+                "Ronronado de aprovação! Também servem."
+            ]
+        }
     },
     {
         "pergunta": "Ao obter uma amostra de LCR turvo de um paciente com mais de 60 anos de idade, uma das seguintes solicitações é CORRETA",
@@ -12326,7 +12426,27 @@
             "Basta solicitar a coloração de Gram, pois possui alto valor preditivo para as espécies envolvidas.",
             "Coloração de Gram e hemocultura devem ser necessárias.",
             "A realização de hemocultura seriada será suficiente para chegar ao diagnóstico."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A coloração de Gram, cultura em ágar sangue, ágar chocolate, ágar Levine e hemocultivo é a solicitação completa para o diagnóstico de meningite bacteriana, pois o Gram permite visualização rápida e os diferentes meios aumentam a chance de isolar o patógeno — é a resposta correta.",
+                "Somente a coloração de Gram não tem alto valor preditivo isolado da espécie envolvida.",
+                "Somente Gram e hemocultivo, sem os meios de cultura do LCR, é uma solicitação incompleta.",
+                "Somente o hemocultivo seriado não é suficiente para o diagnóstico definitivo."
+            ],
+            "fantasma": [
+                "Essa aí! Tudo junto, a solicitação completa.",
+                "Isso sozinho não prediz bem.",
+                "Isso falta a cultura do líquido.",
+                "Isso sozinho não basta."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Tudo junto.",
+                "Fijate: não prediz sozinho.",
+                "Dado curioso: falta a cultura.",
+                "Miau, não basta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à encefalite, indique a opção INCORRETA:",
@@ -12337,7 +12457,27 @@
             "Se houver suspeita de encefalite por herpes simples, uma amostra de LCR deve ser coletada para realização de PCR.",
             "A encefalite herpética costuma apresentar baixa mortalidade, diferentemente da encefalite por Varicela Zoster, que é elevada.",
             "Não existe vacina para enterovírus não-poliomielite."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato os enterovírus se transmitem por contato direto ou fômites contaminados.",
+                "De fato diante de suspeita de encefalite por herpes simples deve-se coletar LCR para PCR.",
+                "A encefalite herpética apresenta ALTA mortalidade (até 70% sem tratamento), enquanto a causada por varicela-zóster tem mortalidade menor — essa é a opção incorreta.",
+                "De fato não existe vacina para os enterovírus não pólio."
+            ],
+            "fantasma": [
+                "Essa está certa, assim se transmite.",
+                "Essa está certa, PCR no líquido.",
+                "Essa aí! É ao contrário, o herpético mata mais.",
+                "Essa está certa, não tem vacina."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! É ao contrário.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao diagnóstico de meningite bacteriana aguda, indicar a opção INCORRETA.",
@@ -12348,7 +12488,27 @@
             "A investigação de antígenos bacterianos no sobrenadante do LCR é útil.",
             "A cultura do LCR tem sensibilidade > 70%.",
             "Eles geralmente apresentam celularidade < 1.000, LCR de aparência clara e proteínas elevadas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a coloração de Gram tem alta sensibilidade para diplococos Gram positivos (S. pneumoniae).",
+                "De fato é útil investigar antígenos bacterianos no sobrenadante do LCR.",
+                "De fato a cultura do LCR tem sensibilidade maior que 70%.",
+                "Na meningite bacteriana aguda a celularidade geralmente é >1000 células/mm³, com LCR de aspecto turvo, não claro — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, sensível pra isso.",
+                "Essa está certa, serve buscar antígeno.",
+                "Essa está certa, mais de 70%.",
+                "Essa aí! É turvo e com muitas células, não claro."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! É turvo."
+            ]
+        }
     },
     {
         "pergunta": "Paciente de 35 anos, HIV positivo, morador de rua, consultado por cefaleia e febre há 20 dias, emagrecimento e referia tosse com expectoração 10 dias antes do início da cefaleia. A punção do líquido cefalorraquidiano (LCR) é realizada. O exame físico-químico indicou 250 leucócitos/mm com predomínio de linfócitos, proteínas discretamente aumentadas e hipoglicorraquia. Presume-se uma infecção no sistema nervoso central (SNC). De qual dos seguintes diagnósticos você suspeita? Selecione a opção CORRETA",
@@ -12359,7 +12519,27 @@
             "Neurocisticercose.",
             "Encefalite por vírus varicela zoster (VZV).",
             "Meningite tuberculosa"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A meningite bacteriana aguda tem evolução rápida, neutrofilia e um quadro clínico diferente do descrito.",
+                "A neurocisticercose causa crises epilépticas e um LCR geralmente normal ou com alterações leves, sem a pleocitose descrita.",
+                "A encefalite por varicela-zóster não explica esse padrão subagudo com hipoglucorraquia tão marcada.",
+                "A meningite tuberculosa afeta frequentemente pacientes imunocomprometidos, como portadores de HIV avançado, com sintomas subagudos (cefaleia, febre prolongada, perda de peso) e LCR com pleocitose linfocitária, proteínas elevadas e hipoglucorraquia — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa é rápida, não assim.",
+                "Essa não dá esse líquido assim.",
+                "Essa não explica essa glicose tão baixa.",
+                "Essa aí! HIV avançado com esses valores, a tuberculosa."
+            ],
+            "gato": [
+                "Fijate: é rápida.",
+                "Dado curioso: não dá isso.",
+                "Miau, não explica.",
+                "Ronronado de aprovação! A tuberculosa."
+            ]
+        }
     },
     {
         "pergunta": "Um recém-nascido de 5 dias é levado à enfermaria com irritabilidade, febre alta e recusa em ingerir alimentos desde a noite anterior. O diagnóstico presuntivo é meningite neonatal. Em relação aos prováveis ​​agentes etiológicos para a idade da criança neste caso, indique o. Opção CORRETA",
@@ -12370,7 +12550,27 @@
             "Streptococcus agalactiae.",
             "Neisseria meningitidis.",
             "Staphylococcus aureus"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Mycobacterium tuberculosis causa meningite rara e de evolução lenta em neonatos.",
+                "Streptococcus agalactiae é o principal agente da meningite neonatal nos primeiros dias de vida, transmitido pela via genital materna no parto; os sintomas descritos são típicos — é a resposta correta.",
+                "Neisseria meningitidis é incomum em recém-nascidos e não se transmite verticalmente.",
+                "Staphylococcus aureus está ligado a infecções hospitalares, não sendo causa frequente de meningite neonatal."
+            ],
+            "fantasma": [
+                "Esse é raro e lento no bebê.",
+                "Essa aí! O do parto, a correta.",
+                "Esse não passa assim.",
+                "Esse é de hospital, não disso."
+            ],
+            "gato": [
+                "Fijate: é raro.",
+                "Ronronado de aprovação! O do parto.",
+                "Dado curioso: não passa assim.",
+                "Miau, é de hospital."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à conservação das amostras de LCR enviadas ao laboratório, indique a opção CORRETA:",
@@ -12381,7 +12581,27 @@
             "Eles devem ser processados ​​imediatamente após o recebimento.",
             "Eles serão mantidos a -20 *C até o aparecimento do bacteriologista da figos da Índia.",
             "Devem ser mantidos a 37°C em meio de transporte até serem cultivados em meio apropriado."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Manter o LCR 24h à temperatura ambiente favorece contaminantes e mata bactérias exigentes.",
+                "O LCR deve ser processado imediatamente após seu recebimento, pois é uma amostra sensível cuja viabilidade microbiana se perde rápido, sendo essencial para um diagnóstico preciso — é a resposta correta.",
+                "Congelar a -20°C causa lise e inviabiliza a cultura.",
+                "Manter a 37°C em meio de transporte favorece o crescimento de contaminantes e altera a amostra."
+            ],
+            "fantasma": [
+                "Isso mata a bactéria delicada.",
+                "Essa aí! Rápido, assim que chega, a correta.",
+                "Isso rompe a célula.",
+                "Isso faz crescer o que não deve."
+            ],
+            "gato": [
+                "Fijate: mata a bactéria.",
+                "Ronronado de aprovação! Rápido assim que chega.",
+                "Dado curioso: rompe a célula.",
+                "Miau, cresce o que não deve."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com AIDS, LT CD4+ < 100/mm? internado em serviço com convulsões, a presença de lesões de massa ocupantes correspondentes a múltiplas imagens cerebrais com realce de contraste é confirmada pelo diagnóstico de imagem. Em relação ao diagnóstico presuntivo, indique a opção CORRETA:",
@@ -12392,7 +12612,27 @@
             "Em pacientes com AIDS e contagem de LT CD4+ < 100/mm? A meningite por bactérias anaeróbicas é a etiologia mais comum.",
             "Este é um caso de meningoencefalite amebiana primária devido a Naegleria fowleni.:",
             "O caso está associado à disseminação da mucormicose pulmonar."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Em pacientes com AIDS e CD4+ <100/mm³, a reativação da toxoplasmose cerebral é muito provável, caracterizada por múltiplas lesões que realçam com contraste — é a resposta correta.",
+                "A meningite por bactérias anaeróbias não é comum nem causa múltiplas lesões cerebrais desse tipo.",
+                "A meningoencefalite amebiana primária por Naegleria fowleri é aguda e fulminante, não típica em AIDS nem causadora de lesões múltiplas.",
+                "A mucormicose pulmonar não explica as lesões cerebrais múltiplas descritas."
+            ],
+            "fantasma": [
+                "Essa aí! A toxoplasmose, a reativação típica.",
+                "Isso não é comum nem dá essas lesões.",
+                "Essa é fulminante, diferente disso.",
+                "Isso não explica essas lesões."
+            ],
+            "gato": [
+                "Ronronado de aprovação! A toxoplasmose.",
+                "Fijate: não é comum.",
+                "Dado curioso: é fulminante.",
+                "Miau, não explica."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à meningococcemia, indique a opção INCORRETA:",
@@ -12403,7 +12643,27 @@
             "É identificado pelo seu desenvolvimento em condições anaeróbicas.",
             "Os pacientes acometidos geralmente apresentam manifestações cutâneas (petéquias, púrpura, equimoses).",
             "O diagnóstico requer a coleta de amostras seriadas para hemocultura."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a meningococcemia se associa à meningite por Neisseria meningitidis.",
+                "Neisseria meningitidis é um diplococo Gram negativo aeróbio ou microaerófilo, não cresce em condições anaeróbias; o diagnóstico não se baseia em desenvolvimento anaeróbio — essa é a opção incorreta.",
+                "De fato os pacientes afetados costumam apresentar manifestações cutâneas (petéquias, púrpura, equimoses).",
+                "De fato o diagnóstico exige amostras seriadas para hemocultivo."
+            ],
+            "fantasma": [
+                "Essa está certa, essa relação.",
+                "Essa aí! Esse bicho precisa de ar, não anaeróbio.",
+                "Essa está certa, essas manchas.",
+                "Essa está certa, hemocultivo seriado."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Precisa de ar.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Um adulto vai ao pronto-socorro devido a febre e dor de cabeça. Ele afirma ter comido laticínios caseiros. Indique a opção CORRETA em relação ao isolamento microbiano mais provável em hemoculturas:",
@@ -12414,7 +12674,27 @@
             "Staphylococcus aureus.",
             "Flora polimicrobiana com predominância de anaeróbios.",
             "Candida glabrata."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Listeria monocytogenes, bactéria Gram positiva que causa listeriose por ingestão de laticínios crus, especialmente em gestantes e imunocomprometidos, com febre e cefaleia — é a resposta correta.",
+                "Staphylococcus aureus geralmente causa infecções de pele e hospitalares, não associadas a laticínios caseiros.",
+                "A flora polimicrobiana anaeróbia não é típica em bacteremia por ingestão de laticínios.",
+                "Candida glabrata causa candidemia em imunocomprometidos, não relacionada a laticínios nem cefaleia isolada."
+            ],
+            "fantasma": [
+                "Essa aí! O dos laticínios crus, a correta.",
+                "Esse é de pele, não de laticínio.",
+                "Isso não é típico assim.",
+                "Esse não tem a ver com laticínio."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Os laticínios crus.",
+                "Fijate: é de pele.",
+                "Dado curioso: não é típico.",
+                "Miau, não tem a ver."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao vírus herpes simplex 1, indique a opção CORRETA:",
@@ -12425,7 +12705,27 @@
             "O diagnóstico de encefalite por herpes simples 1 é feito por esfregaço de LCR e esfregaço de Tzanck.",
             "Meningite por HSV-2 causa LCR turvo",
             "A infecção ocorre no início da infância e se apresenta como gengivoestomatite."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A reativação do HSV-1 não depende exclusivamente de imunossupressão; outros fatores podem desencadeá-la.",
+                "O diagnóstico de encefalite por HSV-1 não é feito por esfregaço de Tzanck no LCR, mas por PCR para detectar DNA viral.",
+                "A meningite por HSV-2 apresenta LCR claro, não turvo.",
+                "A infecção primária por HSV-1 ocorre precocemente na infância, manifestando-se como gengivoestomatite herpética com lesões vesiculares orais, febre e mal-estar — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não é só por isso que reativa.",
+                "Isso não é com Tzanck, é com PCR.",
+                "Esse líquido é claro, não turvo.",
+                "Essa aí! De pequeno, a boca inflamada."
+            ],
+            "gato": [
+                "Fijate: não é só isso.",
+                "Dado curioso: é com PCR.",
+                "Miau, é claro.",
+                "Ronronado de aprovação! De pequeno."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o agente etiológico mais comum de meningite em paciente com fratura de base de crânio como fator de risco? Selecione a opção CORRETA:",
@@ -12436,7 +12736,27 @@
             "Staphylococcus aureus",
             "Streptococcus pneumoniae.",
             "Enterovírus"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Neisseria meningitidis é comum na população geral, mas menos frequente em fraturas de base de crânio.",
+                "Staphylococcus aureus se associa a traumas abertos e cirurgias, não a fraturas fechadas.",
+                "Streptococcus pneumoniae é o principal agente de meningite bacteriana em fratura de base de crânio, devido à comunicação anormal entre o SNC e as vias aéreas superiores, facilitando sua invasão — é a resposta correta.",
+                "Os enterovírus causam meningite viral, não bacteriana, e não se relacionam com fraturas de base."
+            ],
+            "fantasma": [
+                "Esse é da população geral.",
+                "Esse é de ferida aberta.",
+                "Essa aí! O pneumococo, por essa comunicação.",
+                "Esse é viral, não disso."
+            ],
+            "gato": [
+                "Fijate: é geral.",
+                "Dado curioso: é de ferida aberta.",
+                "Ronronado de aprovação! O pneumococo.",
+                "Miau, é viral."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às seguintes associações entre o patógeno e os métodos de diagnóstico no LCR, a opção INCORRETA",
@@ -12447,7 +12767,27 @@
             "Coloração de Haemophilus influenzae B/Gram e cultura do sedimento em meio ágar chocolate,",
             "Cryptococcus neoformans/ coloração e cultura com tinta da Índia fresca em meio Sabouraud",
             "Histoplasma capsulatum/ ELISA para detecção de antígeno capsular. o sobrenadante"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato S. pneumoniae é detectado por aglutinação de partículas de látex no sobrenadante.",
+                "De fato H. influenzae B é identificado por Gram e cultura em ágar chocolate a partir do sedimento.",
+                "De fato Cryptococcus neoformans é visualizado com tinta chinesa a fresco e cultivado em Sabouraud.",
+                "Histoplasma capsulatum e ELISA para antígeno capsular no LCR não é o método padrão para diagnóstico no sistema nervoso central; o diagnóstico da histoplasmose meníngea se baseia em cultura, exame direto e sorologia específica — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, o látex.",
+                "Essa está certa, ágar chocolate.",
+                "Essa está certa, a tinta chinesa.",
+                "Essa aí! Esse método não é o padrão pra esse fungo."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Não é o padrão."
+            ]
+        }
     },
     {
         "pergunta": "Mulher de 30 anos é transferida para enfermaria com febre, rigidez de nuca e alteração do estado de consciência. Uma amostra de líquido cefalorraquidiano (LCR) é obtida por meio de punção lombar. Em relação ao diagnóstico de meningite aguda, indicar a opção CORRETA",
@@ -12458,7 +12798,27 @@
             "Os antígenos de Streptococcus pneumoniae são procurados no sedimento do LCR.",
             "O diagnóstico direto da meningite viral aguda geralmente é feito através da detecção do genoma viral por PCR.",
             "A busca de antígeno capsular para Listeria monocytogenes através do sedimento do LCR apresenta alta sensibilidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cultura de E. coli em ágar Levine a partir do sobrenadante é inadequada, pois as bactérias estão no sedimento e esse meio não é o padrão para LCR.",
+                "A busca de antígenos de S. pneumoniae tem sensibilidade inferior à cultura e à PCR, podendo gerar falsos negativos.",
+                "O diagnóstico das meningites virais agudas é feito geralmente pela detecção do genoma viral por PCR, método rápido, sensível e específico — é a resposta correta.",
+                "A busca de antígeno capsular para Listeria monocytogenes no LCR não apresenta alta sensibilidade."
+            ],
+            "fantasma": [
+                "Isso está errado, é no sedimento.",
+                "Isso rende menos que a cultura.",
+                "Essa aí! PCR pro genoma viral, a correta.",
+                "Isso não é sensível pra essa bactéria."
+            ],
+            "gato": [
+                "Fijate: é no sedimento.",
+                "Dado curioso: rende menos.",
+                "Ronronado de aprovação! PCR viral.",
+                "Miau, não é sensível."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à população menor de 12 meses e à indicação de profilaxia contra meningococo, indicar a opção CORRETA:",
@@ -12469,7 +12829,27 @@
             "A mãe e a criança devem ser vacinadas.",
             "É adequado prescrever vacina antimeningocócica conjugada (2, 4 e 6 meses) com reforço aos 12 meses de idade.",
             "Uma dose da vacina meningocócica quadrivalente deve ser administrada dentro de uma semana após o nascimento."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O reforço só na mãe não protege adequadamente o bebê.",
+                "Vacinar só a mãe não substitui a vacinação direta da criança.",
+                "Corresponde a vacina conjugada antimeningocócica aos 2, 4 e 6 meses, com reforço aos 12 meses, garantindo imunidade eficaz em lactentes via resposta imune dependente de células T — é a resposta correta.",
+                "A vacina tetravalente não é indicada ao nascimento, pois não gera resposta eficaz nessa idade."
+            ],
+            "fantasma": [
+                "Isso não protege o bebê.",
+                "Isso não substitui vacinar a criança.",
+                "Essa aí! 2, 4, 6 e reforço aos 12, a correta.",
+                "Isso não funciona recém-nascido."
+            ],
+            "gato": [
+                "Fijate: não protege.",
+                "Dado curioso: não substitui.",
+                "Ronronado de aprovação! Esse esquema.",
+                "Miau, não funciona ao nascer."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos abscessos cerebrais, indique a opção INCORRETA:",
@@ -12480,7 +12860,27 @@
             "Podem originar-se de forma hematogênica a partir de endocardite bacteriana.",
             "Eles podem se espalhar a partir de um foco de otite crônica causada por infecções polimicrobianas.",
             "As hemoculturas são geralmente positivas nesta patologia."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato podem se originar de uma sinusite complicada por extensão direta.",
+                "De fato podem se originar por via hematogênica a partir de uma endocardite bacteriana.",
+                "De fato podem se estender de um foco de otite crônica por infecções polimicrobianas.",
+                "Os hemocultivos NÃO são sempre positivos nos abscessos cerebrais, pois a bacteremia pode ser intermitente; a cultura direta do abscesso é mais confiável — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, por extensão.",
+                "Essa está certa, pelo sangue.",
+                "Essa está certa, do ouvido crônico.",
+                "Essa aí! Nem sempre dá positivo isso."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Nem sempre dá positivo."
+            ]
+        }
     },
     {
         "pergunta": "Uma jovem boliviana de 30 anos, sem história clínica relevante, é atendida de plantão por apresentar deterioração do sensório e convulsões. Uma ressonância magnética cerebral demonstra múltiplas imagens císticas com escólex em seu interior, com 0,5-2 cm de diâmetro. Com base nesses resultados indique a opção CORRETA:",
