@@ -7387,7 +7387,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O diagnóstico direto da varicela é feito pela detecção do DNA do vírus varicela-zoster em amostras clínicas via PCR, método sensível e específico, ideal para casos atípicos.\n\n**Outras opções:**  \nB está incorreta, pois nem toda reativação viral causa herpes-zóster; pode ser subclínica.  \nC é falsa; o vírus não causa imunossupressão por apoptose seletiva de linfócitos T CD4 de memória.  \nD erra ao afirmar que as lesões vesiculares não contêm vírus; elas são altamente contagiosas devido ao vírus presente no fluido."
+            "feedback": "**Resposta Correta:** A. O diagnóstico direto da varicela é feito pela detecção do DNA do vírus varicela-zoster em amostras clínicas via PCR, método sensível e específico, ideal para casos atípicos.\n\n**Outras opções:**  \nB está incorreta, pois nem toda reativação viral causa herpes-zóster; pode ser subclínica.  \nC é falsa; o vírus não causa imunossupressão por apoptose seletiva de linfócitos T CD4 de memória.  \nD erra ao afirmar que as lesões vesiculares não contêm vírus; elas são altamente contagiosas devido ao vírus presente no fluido.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico directo efectivamente se realiza mediante detección de ácido nucleico viral por PCR en suero, LCR, ANF y biopsias — es la respuesta correcta.",
+                    "No todas las reactivaciones virales del virus varicela-zóster conducen a herpes zóster manifiesto; pueden ser subclínicas.",
+                    "La inmunosupresión transitoria por amnesia inmune debido a apoptosis de linfocitos T CD4 de memoria es una característica descrita para el sarampión, no para la varicela-zóster.",
+                    "Las lesiones vesiculares están habitadas por el virus, siendo altamente contagiosas por el fluido vesicular."
+                ],
+                "fantasma": [
+                    "¡Esta! PCR en esas muestras, la correcta.",
+                    "No todas dan zóster.",
+                    "Eso es del sarampión, no de acá.",
+                    "Sí tienen virus, sí contagian."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! PCR, la correcta.",
+                    "Fijate: no todas.",
+                    "Dato curioso: es de otra enfermedad.",
+                    "Miau, sí contagian."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -7413,7 +7433,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Na esporotricose cutânea, o diagnóstico eficaz exige biópsia ou punção da lesão nodular, pois o hisopado das úlceras raramente isola o fungo Sporothrix schenckii.\n\n**Outras opções:**  \nA: PCR em exsudado de vesículas é padrão ouro para HSV-1.  \nC: Coloração de Ziehl-Neelsen detecta bacilos ácido-resistentes em micobacterioses subcutâneas.  \nD: Coloração de Giemsa revela amastigotas para diagnóstico da leishmaniose cutânea."
+            "feedback": "**Resposta Correta:** B. Na esporotricose cutânea, o diagnóstico eficaz exige biópsia ou punção da lesão nodular, pois o hisopado das úlceras raramente isola o fungo Sporothrix schenckii.\n\n**Outras opções:**  \nA: PCR em exsudado de vesículas é padrão ouro para HSV-1.  \nC: Coloração de Ziehl-Neelsen detecta bacilos ácido-resistentes em micobacterioses subcutâneas.  \nD: Coloração de Giemsa revela amastigotas para diagnóstico da leishmaniose cutânea.",
+            "explicacoes": {
+                "robo": [
+                    "La infección por HSV-1 efectivamente puede confirmarse mediante PCR en exudado de vesículas.",
+                    "En la esporotricosis cutánea el diagnóstico eficaz requiere biopsia o punción de la lesión nodular, ya que el hisopado de las úlceras rara vez aísla el hongo — esta es la opción incorrecta.",
+                    "La tinción de Ziehl-Neelsen efectivamente es útil para identificar micobacteriosis subcutáneas.",
+                    "La leishmaniosis cutánea efectivamente puede diagnosticarse por observación de amastigotes con tinción de Giemsa de biopsia."
+                ],
+                "fantasma": [
+                    "Esa está bien, con PCR.",
+                    "¡Esta! Ese hisopado rinde poco, hace falta biopsia.",
+                    "Esa está bien, Ziehl-Neelsen.",
+                    "Esa está bien, Giemsa."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Rinde poco, hace falta biopsia.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -7439,7 +7479,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. O teste de Tzanck não é mais sensível nem específico que a imunofluorescência para herpesvirus. Tzanck detecta células multinucleadas, mas não diferencia tipos virais e tem baixa sensibilidade e especificidade. A imunofluorescência usa anticorpos específicos, oferecendo maior precisão e diferenciação viral.\n\nOutras opções:  \nA está correta: primoinfecção por HSV-1 ocorre na infância como gingivoestomatite herpética.  \nC correta: impetigo pode complicar lesões herpéticas por superinfecção bacteriana.  \nD correta: vacinação contra VZV previne varicela e herpes-zóster.\n\nA única"
+            "feedback": "Resposta correta: B. O teste de Tzanck não é mais sensível nem específico que a imunofluorescência para herpesvirus. Tzanck detecta células multinucleadas, mas não diferencia tipos virais e tem baixa sensibilidade e especificidade. A imunofluorescência usa anticorpos específicos, oferecendo maior precisão e diferenciação viral.\n\nOutras opções:  \nA está correta: primoinfecção por HSV-1 ocorre na infância como gingivoestomatite herpética.  \nC correta: impetigo pode complicar lesões herpéticas por superinfecção bacteriana.  \nD correta: vacinação contra VZV previne varicela e herpes-zóster.\n\nA única",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la primoinfección por HSV-1 ocurre más frecuentemente en la primera infancia, expresándose como gingivoestomatitis.",
+                    "El test de Tzanck no es más sensible ni específico que la inmunofluorescencia; detecta células multinucleadas pero no diferencia tipos virales, con menor sensibilidad y especificidad que la inmunofluorescencia, que usa anticuerpos específicos — esta es la opción incorrecta.",
+                    "El impétigo efectivamente es una complicación frecuente asociada a lesiones herpéticas por sobreinfección bacteriana.",
+                    "Con la vacuna para el virus varicela-zóster efectivamente se podría evitar la afectación metamérica (herpes zóster)."
+                ],
+                "fantasma": [
+                    "Esa está bien, gingivoestomatitis.",
+                    "¡Esta! No es mejor que la inmunofluorescencia.",
+                    "Esa está bien, complicación conocida.",
+                    "Esa está bien, la vacuna previene."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No es mejor.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -7465,7 +7525,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Tinea cruris é causada por dermatófitos antropofílicos (ex.: Trichophyton rubrum, Epidermophyton floccosum), acometendo lesões eccematoides eritematosas nos pliegues genitocrurais.\n\n**Opção A:** Incorreta, pois tinea capitis é causada por Trichophyton e Microsporum, não por Epidermophyton floccosum, que não invade folículos pilosos no couro cabeludo.\n\n**Opção B:** Incorreta, pois Trichophyton ajelloi não é agente comum de tinea unguium; onicomicose é geralmente causada por outros"
+            "feedback": "**Resposta Correta:** C. Tinea cruris é causada por dermatófitos antropofílicos (ex.: Trichophyton rubrum, Epidermophyton floccosum), acometendo lesões eccematoides eritematosas nos pliegues genitocrurais.\n\n**Opção A:** Incorreta, pois tinea capitis é causada por Trichophyton e Microsporum, não por Epidermophyton floccosum, que não invade folículos pilosos no couro cabeludo.\n\n**Opção B:** Incorreta, pois Trichophyton ajelloi não é agente comum de tinea unguium; onicomicose é geralmente causada por outros",
+            "explicacoes": {
+                "robo": [
+                    "La tinea capitis es causada por Trichophyton y Microsporum, no por Epidermophyton floccosum, que no invade folículos pilosos del cuero cabelludo.",
+                    "Trichophyton ajelloi no es un agente común de tinea unguium; la onicomicosis suele deberse a otras especies.",
+                    "La tinea cruris efectivamente es causada por dermatofitos antropofílicos, con lesiones eccematosas eritematosas en los pliegues genitocrurales — es la respuesta correcta.",
+                    "Las piedras (blanca y negra) afectan el tallo del pelo externamente, no representan compromiso endothrix."
+                ],
+                "fantasma": [
+                    "Eso no invade folículo, es de otra especie.",
+                    "Ese no es el agente común.",
+                    "¡Esta! Dermatofito antropófilo, la correcta.",
+                    "Eso no es endothrix, es externo."
+                ],
+                "gato": [
+                    "Fijate: es otra especie.",
+                    "Dato curioso: no es común.",
+                    "¡Ronroneo de aprobación! Antropófilo.",
+                    "Miau, es externo."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -7491,7 +7571,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. O diagnóstico da demodicidose exige raspado profundo ou biópsia, pois o ácaro Demodex spp. habita camadas profundas da pele; tratamento com KOH não é padrão.  \n\n**Outras opções:**  \nA está correta: escabiose é diagnosticada por raspado e KOH para visualizar Sarcoptes scabiei.  \nC está correta: tungíase é causada pela pulga Tunga penetrans que penetra a pele, podendo causar infecção bacteriana.  \nD está correta: Ancylostoma braziliense causa larva migrans cutânea, com lesão eritematosa serpiginosa nos pés."
+            "feedback": "**Resposta Correta:** B está incorreta. O diagnóstico da demodicidose exige raspado profundo ou biópsia, pois o ácaro Demodex spp. habita camadas profundas da pele; tratamento com KOH não é padrão.  \n\n**Outras opções:**  \nA está correta: escabiose é diagnosticada por raspado e KOH para visualizar Sarcoptes scabiei.  \nC está correta: tungíase é causada pela pulga Tunga penetrans que penetra a pele, podendo causar infecção bacteriana.  \nD está correta: Ancylostoma braziliense causa larva migrans cutânea, com lesão eritematosa serpiginosa nos pés.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico de Sarcoptes scabiei efectivamente requiere raspado de piel y tratamiento con hidróxido de potasio.",
+                    "El diagnóstico de demodicidosis exige raspado profundo o biopsia, ya que Demodex spp habita capas profundas de la piel; no se realiza extrayendo cabellos con KOH — esta es la opción incorrecta.",
+                    "La tungiasis efectivamente es causada por una pulga que penetra la planta del pie, pudiendo sobreinfectarse.",
+                    "Ancylostoma braziliense efectivamente causa larva migrans cutánea con lesión eritematosa serpiginosa en los pies."
+                ],
+                "fantasma": [
+                    "Esa está bien, raspado con KOH.",
+                    "¡Esta! No es con cabello, es raspado profundo.",
+                    "Esa está bien, la pulga.",
+                    "Esa está bien, lesión serpiginosa."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es raspado profundo.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -7517,7 +7617,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. Madurella grisea causa micetoma, não cromoblastomicose, e Aspergillus niger não é típico das micoses subcutâneas citadas. A cromoblastomicose é causada por fungos dematiáceos como Fonsecaea pedrosoi, Cladophialophora carrionii e Phialophora verrucosa, que formam lesões verrucosas melanizadas.  \n\n**Outras opções:**  \nA está correta: disseminação por contiguidade na cromoblastomicose.  \nB está correta: esporotricose cutâneo-linfática é a forma mais comum.  \nD está correta: micetomas"
+            "feedback": "**Resposta Correta:** C está incorreta. Madurella grisea causa micetoma, não cromoblastomicose, e Aspergillus niger não é típico das micoses subcutâneas citadas. A cromoblastomicose é causada por fungos dematiáceos como Fonsecaea pedrosoi, Cladophialophora carrionii e Phialophora verrucosa, que formam lesões verrucosas melanizadas.  \n\n**Outras opções:**  \nA está correta: disseminação por contiguidade na cromoblastomicose.  \nB está correta: esporotricose cutâneo-linfática é a forma mais comum.  \nD está correta: micetomas",
+            "explicacoes": {
+                "robo": [
+                    "En la cromoblastomicosis la diseminación efectivamente ocurre por contigüidad.",
+                    "En la esporotricosis el complejo de primoinfección efectivamente se manifiesta en la forma cutáneo-linfática.",
+                    "Madurella grisea causa micetoma, no cromoblastomicosis, y Aspergillus niger no es típico de esta micosis; la cromoblastomicosis es causada por hongos dematiáceos como Fonsecaea pedrosoi, Cladophialophora carrionii y Phialophora verrucosa — esta es la opción incorrecta.",
+                    "En los micetomas efectivamente se forman abscesos que drenan gránulos característicos mediante fístulas."
+                ],
+                "fantasma": [
+                    "Esa está bien, por contigüidad.",
+                    "Esa está bien, cutáneo-linfática.",
+                    "¡Esta! Esos son de otro hongo, de micetoma.",
+                    "Esa está bien, grano por fístula."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es de micetoma.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -7543,7 +7663,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: A, B e D estão corretas. Streptococcus pyogenes causa erisipela; Clostridium perfringens é anaeróbio obrigatório, exigindo transporte anaeróbio; cromoblastomicose se espalha por contiguidade. A opção C está incorreta: Clostridium botulinum causa botulismo por neurotoxina, não infecções necrosantes de pele. Essas infecções são associadas a Clostridium perfringens e Streptococcus pyogenes."
+            "feedback": "Resposta correta: A, B e D estão corretas. Streptococcus pyogenes causa erisipela; Clostridium perfringens é anaeróbio obrigatório, exigindo transporte anaeróbio; cromoblastomicose se espalha por contiguidade. A opção C está incorreta: Clostridium botulinum causa botulismo por neurotoxina, não infecções necrosantes de pele. Essas infecções são associadas a Clostridium perfringens e Streptococcus pyogenes.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pyogenes efectivamente es el principal agente causal de erisipela.",
+                    "El diagnóstico de Clostridium perfringens efectivamente requiere transporte de la muestra en medio anaerobio.",
+                    "Clostridium botulinum causa botulismo por su neurotoxina, no infecciones necrotizantes de piel; estas se asocian a Clostridium perfringens y Streptococcus pyogenes — esta es la opción incorrecta.",
+                    "Los agentes de cromoblastomicosis efectivamente se extienden por contigüidad tras su implantación traumática."
+                ],
+                "fantasma": [
+                    "Esa está bien, el estrepto.",
+                    "Esa está bien, medio anaerobio.",
+                    "¡Esta! Ese es de botulismo, no de necrosis.",
+                    "Esa está bien, por contigüidad."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es botulismo.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -7569,7 +7709,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "A alternativa D está incorreta: amostras para micoses superficiais não devem ser transportadas em meio de Stuart, que é indicado para bactérias, pois o meio úmido pode prejudicar o diagnóstico fúngico. As opções A, B e C estão corretas: A) tinea corporis afeta pele sem pelos, sem invasão folicular; B) Microsporum canis é agente comum da tinea capitis em crianças; C) exame direto mostra parasitismo ectothrix típico de Microsporum spp."
+            "feedback": "A alternativa D está incorreta: amostras para micoses superficiais não devem ser transportadas em meio de Stuart, que é indicado para bactérias, pois o meio úmido pode prejudicar o diagnóstico fúngico. As opções A, B e C estão corretas: A) tinea corporis afeta pele sem pelos, sem invasão folicular; B) Microsporum canis é agente comum da tinea capitis em crianças; C) exame direto mostra parasitismo ectothrix típico de Microsporum spp.",
+            "explicacoes": {
+                "robo": [
+                    "En la tinea corporis efectivamente los pelos no son parasitados.",
+                    "Microsporum canis efectivamente es el agente etiológico más frecuente de tinea capitis en nuestro medio.",
+                    "El examen microscópico directo de pelos en tinea capitis efectivamente puede mostrar parasitismo ectothrix.",
+                    "Las muestras para micosis superficiales no deben transportarse en medio de Stuart, indicado para bacterias, ya que el medio húmedo puede perjudicar el diagnóstico fúngico — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa está bien, no hay pelo parasitado.",
+                    "Esa está bien, el más común.",
+                    "Esa está bien, ectothrix.",
+                    "¡Esta! Ese medio es de bacteria, no de hongo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es de bacteria."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -7595,7 +7755,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Parvovirus B19. Causa o eritema infeccioso, com exantema eritematoso típico nas bochechas (\"face esbofeteada\"), comum em crianças, além de sintomas leves como febre. Infecta células precursoras eritroides na medula óssea.\n\n**Outras opções:**  \nA. Herpes 1 causa lesões vesiculares periorais, não exantema maculopapular nas bochechas.  \nB. Sarampo apresenta exantema generalizado, não restrito às bochechas, com sintomas sistêmicos intensos.  \nD. Sarcoptes scabiei provoca prurido e lesões específicas"
+            "feedback": "**Resposta Correta:** C. Parvovirus B19. Causa o eritema infeccioso, com exantema eritematoso típico nas bochechas (\"face esbofeteada\"), comum em crianças, além de sintomas leves como febre. Infecta células precursoras eritroides na medula óssea.\n\n**Outras opções:**  \nA. Herpes 1 causa lesões vesiculares periorais, não exantema maculopapular nas bochechas.  \nB. Sarampo apresenta exantema generalizado, não restrito às bochechas, com sintomas sistêmicos intensos.  \nD. Sarcoptes scabiei provoca prurido e lesões específicas",
+            "explicacoes": {
+                "robo": [
+                    "El herpes 1 causa lesiones vesiculares periorales, no exantema maculopapular en las mejillas.",
+                    "El sarampión presenta exantema generalizado, no restringido a las mejillas, con síntomas sistémicos intensos.",
+                    "El Parvovirus B19 causa el eritema infeccioso, con exantema eritematoso típico en las mejillas ('cara abofeteada'), común en niños, junto con síntomas leves — es la respuesta correcta.",
+                    "Sarcoptes scabiei provoca prurito y lesiones específicas de escabiosis, no un exantema malar."
+                ],
+                "fantasma": [
+                    "Ese es de boca, no de mejilla así.",
+                    "Ese es generalizado, no solo mejilla.",
+                    "¡Esta! La cara abofeteada, el Parvovirus.",
+                    "Ese es de picazón, no de mejilla."
+                ],
+                "gato": [
+                    "Fijate: es de boca.",
+                    "Dato curioso: es generalizado.",
+                    "¡Ronroneo de aprobación! La cara abofeteada.",
+                    "Miau, es de picazón."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -7621,7 +7801,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta porque, em biópsias de nódulos, Sporothrix se apresenta na forma de levedura, não filamentosa com microconídios em \"flor\". Essa morfologia só ocorre em cultura, não em tecido.  \n**Outras opções:** A, C e D estão corretas. A descreve a esporotricose linfangítica nodular associada a atividades com matéria orgânica; C destaca a transmissão zoonótica de S. brasiliensis via gatos; D explica que a infecção inicia por traumatismos cutâneos que inoculam o fungo."
+            "feedback": "**Resposta Correta:** B está incorreta porque, em biópsias de nódulos, Sporothrix se apresenta na forma de levedura, não filamentosa com microconídios em \"flor\". Essa morfologia só ocorre em cultura, não em tecido.  \n**Outras opções:** A, C e D estão corretas. A descreve a esporotricose linfangítica nodular associada a atividades com matéria orgânica; C destaca a transmissão zoonótica de S. brasiliensis via gatos; D explica que a infecção inicia por traumatismos cutâneos que inoculam o fungo.",
+            "explicacoes": {
+                "robo": [
+                    "El complejo Sporothrix efectivamente produce un síndrome linfangítico nodular asociado a ciertas actividades laborales.",
+                    "En las biopsias de nódulos, Sporothrix se presenta en forma de levadura, no filamentosa con microconidios en 'flor'; esa morfología solo ocurre en cultivo, no en tejido — esta es la excepción.",
+                    "Sporothrix brasiliensis efectivamente es una especie que puede transmitirse zoonóticamente, principalmente por gatos.",
+                    "La principal vía de ingreso efectivamente se asocia a traumatismos de la piel."
+                ],
+                "fantasma": [
+                    "Esa está bien, actividad laboral.",
+                    "¡Esta! En el tejido es levadura, no filamento en flor.",
+                    "Esa está bien, zoonosis del gato.",
+                    "Esa está bien, trauma en la piel."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es levadura en el tejido.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -7647,7 +7847,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta correta:** C está incorreta. A esporotricose transmite-se por inoculação traumática da pele via material vegetal contaminado, não por contato cutâneo direto entre humanos.  \n\n**Outras opções:**  \nA está correta: gatos são importantes transmissores por arranhões ou mordidas.  \nB está correta: em 28ºC, o fungo cresce como filamentos hialinos tabicados com microconídios.  \nD está correta: no organismo, o fungo tem forma de levedura oval (navicular), típica da fase parasitária.  \n\nPortanto, somente C é incorreta."
+            "feedback": "**Resposta correta:** C está incorreta. A esporotricose transmite-se por inoculação traumática da pele via material vegetal contaminado, não por contato cutâneo direto entre humanos.  \n\n**Outras opções:**  \nA está correta: gatos são importantes transmissores por arranhões ou mordidas.  \nB está correta: em 28ºC, o fungo cresce como filamentos hialinos tabicados com microconídios.  \nD está correta: no organismo, o fungo tem forma de levedura oval (navicular), típica da fase parasitária.  \n\nPortanto, somente C é incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Los gatos efectivamente son transmisores muy eficientes de la esporotricosis.",
+                    "En los cultivos a 28°C efectivamente se desarrollan filamentos hialinos tabicados con microconidias.",
+                    "La esporotricosis se transmite por inoculación traumática de la piel con material contaminado, no por contacto cutáneo directo entre humanos enfermos y sanos — esta es la opción incorrecta.",
+                    "El examen microscópico de las lesiones efectivamente demuestra levaduras de aspecto navicular."
+                ],
+                "fantasma": [
+                    "Esa está bien, el gato transmite.",
+                    "Esa está bien, filamento con microconidia.",
+                    "¡Esta! No es de persona a persona.",
+                    "Esa está bien, levadura navicular."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es entre personas.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -7673,7 +7893,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta correta: A. Hisopado superficial da lesão.**\n\nO hisopado superficial é inadequado para diagnosticar cromoblastomicose, pois a amostra contém pouco ou nenhum fungo viável, que está nas camadas profundas da pele. Técnicas como punção e aspiração (B), raspado com bisturi (C) e biópsia dos pontos negros (D) são mais eficazes, pois coletam material fúngico suficiente para exame direto, cultura e análise histopatológica, sendo a biópsia o padrão-ouro. Portanto, amostras profundas são essenciais para o diagnóstico correto da cromoblastomicose."
+            "feedback": "**Resposta correta: A. Hisopado superficial da lesão.**\n\nO hisopado superficial é inadequado para diagnosticar cromoblastomicose, pois a amostra contém pouco ou nenhum fungo viável, que está nas camadas profundas da pele. Técnicas como punção e aspiração (B), raspado com bisturi (C) e biópsia dos pontos negros (D) são mais eficazes, pois coletam material fúngico suficiente para exame direto, cultura e análise histopatológica, sendo a biópsia o padrão-ouro. Portanto, amostras profundas são essenciais para o diagnóstico correto da cromoblastomicose.",
+            "explicacoes": {
+                "robo": [
+                    "El hisopado superficial de la lesión es inadecuado para diagnosticar cromoblastomicosis, ya que la muestra contiene poco o ningún hongo viable, que se encuentra en capas profundas de la piel — esta es la respuesta correcta (muestra NO adecuada).",
+                    "La punción-aspiración de la lesión efectivamente es una muestra adecuada, recolectando material fúngico suficiente.",
+                    "El raspado con bisturí estéril efectivamente es una muestra adecuada para el diagnóstico.",
+                    "La biopsia de los puntos negros efectivamente es una muestra adecuada, siendo el estándar de referencia."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese rinde poco, no es adecuado.",
+                    "Esa sí sirve, punción.",
+                    "Esa sí sirve, bisturí.",
+                    "Esa sí sirve, biopsia."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No es adecuado, rinde poco.",
+                    "Fijate: sirve.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -7699,7 +7939,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O diagnóstico da celulite é clínico; hisopado da lesão não é indicado para cultura devido à contaminação por microorganismos da pele. Culturas são feitas por hemocultura ou punção aspirativa em casos graves.  \n\n**Outras opções:**  \nB, C e D estão corretas: Staphylococcus aureus e Streptococcus pyogenes são os principais agentes; características bioquímicas confirmam S. aureus; diabetes e obesidade são fatores predisponentes importantes."
+            "feedback": "**Resposta Correta:** A. O diagnóstico da celulite é clínico; hisopado da lesão não é indicado para cultura devido à contaminação por microorganismos da pele. Culturas são feitas por hemocultura ou punção aspirativa em casos graves.  \n\n**Outras opções:**  \nB, C e D estão corretas: Staphylococcus aureus e Streptococcus pyogenes são os principais agentes; características bioquímicas confirmam S. aureus; diabetes e obesidade são fatores predisponentes importantes.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico de celulitis es clínico; el hisopado de la lesión no está indicado para cultivo debido a la contaminación por microorganismos de la piel. Los cultivos se realizan por hemocultivo o punción-aspiración en casos graves — esta es la opción incorrecta.",
+                    "Staphylococcus aureus y Streptococcus pyogenes efectivamente son sus principales agentes causales.",
+                    "El aislamiento de cocos Gram positivos en racimo, catalasa, coagulasa y DNAasa positivos efectivamente confirma infección por Staphylococcus aureus.",
+                    "La diabetes y la obesidad efectivamente son factores predisponentes para la enfermedad."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese hisopado no sirve, la piel contamina.",
+                    "Esa está bien, agentes conocidos.",
+                    "Esa está bien, esas pruebas confirman.",
+                    "Esa está bien, diabetes y obesidad."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No sirve, contamina.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -7725,7 +7985,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. Bactérias filamentosas ácido-resistentes (Kinyoun positivas), como Nocardia e micobactérias, não são cultivadas em ágar BHI com antibióticos a 37°C. O cultivo adequado é em meios específicos, como ágar Sabouraud com antibióticos ou Lowenstein-Jensen.  \n\n**Outras opções:**  \nA está correta: corpos esclerotales indicam fungos dematiáceos, cultivados em ágar Sabouraud a 28-37°C.  \nB está correta: amastigotes de Leishmania visualizados com Giemsa, cultivados em meio NNN."
+            "feedback": "**Resposta Correta:** D está incorreta. Bactérias filamentosas ácido-resistentes (Kinyoun positivas), como Nocardia e micobactérias, não são cultivadas em ágar BHI com antibióticos a 37°C. O cultivo adequado é em meios específicos, como ágar Sabouraud com antibióticos ou Lowenstein-Jensen.  \n\n**Outras opções:**  \nA está correta: corpos esclerotales indicam fungos dematiáceos, cultivados em ágar Sabouraud a 28-37°C.  \nB está correta: amastigotes de Leishmania visualizados com Giemsa, cultivados em meio NNN.",
+            "explicacoes": {
+                "robo": [
+                    "La presencia de cuerpos esclerotales en examen en fresco efectivamente se asocia a cultivo en agar Sabouraud a 28 y 37°C.",
+                    "Los amastigotes en tinción de Giemsa efectivamente se asocian a cultivo en medio de Novy-MacNeal-Nicolle.",
+                    "Las levaduras alargadas en forma de navecilla Gram positivas efectivamente se asocian a cultivo en medio de Sabouraud a 28 y 37°C.",
+                    "Las bacterias filamentosas ácido resistentes (Kinyoun positivas), como Nocardia y micobacterias, no se cultivan en agar BHI con antibióticos a 37°C; requieren medios específicos como Sabouraud con antibióticos o Löwenstein-Jensen — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, cuerpo esclerótico.",
+                    "Esa está bien, amastigote y NNN.",
+                    "Esa está bien, levadura navecilla.",
+                    "¡Esta! Ese medio no es para esa bacteria."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Ese medio no sirve."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -7751,7 +8031,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Candida apresenta pseudohifas e células esféricas que se dividem por brotamento, típicas em onicite e perionixis.  \nOpção A: Dermatófitos formam hifas tabicadas e microconídios, mas não causam perionixis aguda como Candida.  \nOpção C: Zigomicetos têm filamentos cenocíticos, raros em unhas e não compatíveis com o quadro clínico.  \nPortanto, a presença de pseudohifas e brotamento indica infecção por Candida, a causa mais provável neste caso."
+            "feedback": "Resposta correta: B. Candida apresenta pseudohifas e células esféricas que se dividem por brotamento, típicas em onicite e perionixis.  \nOpção A: Dermatófitos formam hifas tabicadas e microconídios, mas não causam perionixis aguda como Candida.  \nOpção C: Zigomicetos têm filamentos cenocíticos, raros em unhas e não compatíveis com o quadro clínico.  \nPortanto, a presença de pseudohifas e brotamento indica infecção por Candida, a causa mais provável neste caso.",
+            "explicacoes": {
+                "robo": [
+                    "Los dermatofitos forman hifas tabicadas y microconidios, pero no suelen causar perionixis aguda como Candida.",
+                    "Candida presenta pseudohifas y células esféricas que se dividen por gemación (estrangulación), típico hallazgo en onixis y perionixis — es la respuesta correcta.",
+                    "Los zigomicetos tienen filamentos cenocíticos, raros en uñas y no compatibles con este cuadro clínico.",
+                    "Las hifas tabicadas y pigmentadas con macroconidios son propias de hongos dematiáceos, poco frecuentes en este cuadro agudo de onixis-perionixis."
+                ],
+                "fantasma": [
+                    "Eso es de dermatofito, no de esto.",
+                    "¡Esta! Pseudohifa y gemación, la Candida.",
+                    "Eso es raro en uña, no acá.",
+                    "Eso es de hongo pigmentado, no de acá."
+                ],
+                "gato": [
+                    "Fijate: es de otro hongo.",
+                    "¡Ronroneo de aprobación! Pseudohifa, la Candida.",
+                    "Dato curioso: es raro.",
+                    "Miau, es de otro hongo."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -7777,7 +8077,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Biópsia incisional profunda.\n\nA lesão crônica com grãos brancos sugere micetoma, que requer amostra profunda para identificar o agente etiológico. A biópsia incisional profunda é ideal, pois coleta tecido suficiente para exame histopatológico, cultura e análise direta. \n\n**Outras opções:**  \nB. Escarificação superficial pode não atingir o foco profundo e coletar tecido não representativo.  \nC. Intradermorreação é teste imunológico, não diagnóstico definitivo.  \nD. Punch cutâneo geralmente coleta amostra superficial insuficiente para detectar os grãos."
+            "feedback": "**Resposta Correta:** A. Biópsia incisional profunda.\n\nA lesão crônica com grãos brancos sugere micetoma, que requer amostra profunda para identificar o agente etiológico. A biópsia incisional profunda é ideal, pois coleta tecido suficiente para exame histopatológico, cultura e análise direta. \n\n**Outras opções:**  \nB. Escarificação superficial pode não atingir o foco profundo e coletar tecido não representativo.  \nC. Intradermorreação é teste imunológico, não diagnóstico definitivo.  \nD. Punch cutâneo geralmente coleta amostra superficial insuficiente para detectar os grãos.",
+            "explicacoes": {
+                "robo": [
+                    "La biopsia incisional profunda es ideal, ya que la lesión crónica con granos blancos sugiere micetoma, requiriendo muestra profunda para identificar el agente etiológico, permitiendo examen histopatológico, cultivo y análisis directo — es la respuesta correcta.",
+                    "La escarificación superficial del borde puede no alcanzar el foco profundo, recolectando tejido no representativo.",
+                    "La intradermorreacción es una prueba inmunológica, no un diagnóstico definitivo.",
+                    "El punch cutáneo generalmente recolecta muestra superficial insuficiente para detectar los granos."
+                ],
+                "fantasma": [
+                    "¡Esta! Biopsia profunda, la ideal para el micetoma.",
+                    "Eso es superficial, no llega.",
+                    "Eso es solo inmunológico.",
+                    "Eso es superficial, no alcanza."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Biopsia profunda.",
+                    "Fijate: no llega.",
+                    "Dato curioso: es inmunológico.",
+                    "Miau, no alcanza."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -7803,7 +8123,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Escherichia coli.  \nE. coli é uma bactéria gram-negativa comum no trato gastrointestinal, mas não causa micetomas, infecções subcutâneas crônicas típicas de fungos (eumicóticos) ou actinomicetos (bactérias).  \n\n**Outras opções:**  \nA. Fusarium spp (fungo) e B. Nocardia spp (bactéria actinomiceto) são agentes causadores reais de micetomas.  \nD. Actinomadura madurae, actinomiceto gram-positivo, também causa micetomas bacterianos.  \nPortanto, só E. coli não está associada a micetomas."
+            "feedback": "**Resposta Correta:** C. Escherichia coli.  \nE. coli é uma bactéria gram-negativa comum no trato gastrointestinal, mas não causa micetomas, infecções subcutâneas crônicas típicas de fungos (eumicóticos) ou actinomicetos (bactérias).  \n\n**Outras opções:**  \nA. Fusarium spp (fungo) e B. Nocardia spp (bactéria actinomiceto) são agentes causadores reais de micetomas.  \nD. Actinomadura madurae, actinomiceto gram-positivo, também causa micetomas bacterianos.  \nPortanto, só E. coli não está associada a micetomas.",
+            "explicacoes": {
+                "robo": [
+                    "Fusarium spp efectivamente es un agente causal de micetoma.",
+                    "Nocardia spp efectivamente es un agente causal de micetoma.",
+                    "Escherichia coli es una bacteria Gram negativa común del tracto gastrointestinal, pero no causa micetomas, infecciones subcutáneas crónicas típicas de hongos (eumicóticos) o actinomicetos (bacterias) — esta es la excepción.",
+                    "Actinomadura madurae, actinomiceto Gram positivo, efectivamente también causa micetomas bacterianos."
+                ],
+                "fantasma": [
+                    "Ese sí causa micetoma.",
+                    "Ese sí causa micetoma.",
+                    "¡Esta! Esa no causa micetoma, es del intestino.",
+                    "Ese sí causa micetoma."
+                ],
+                "gato": [
+                    "Fijate: sí causa.",
+                    "Dato curioso: sí causa.",
+                    "¡Ronroneo de aprobación! Es del intestino.",
+                    "Miau, sí causa."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -7829,7 +8169,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Filamentos cenocíticos, estruturas multinucleadas sem septos, típicas de certos oomicetos, não presentes nos granos de micetomas. Nos micetomas, observam-se filamentos tabicados e pigmentados (fungos eumicetomas), bactérias filamentosas Gram positivas (actinomicetos) e bactérias ácido-resistentes (nocardias), todas opções corretas. Portanto, filamentos cenocíticos não são característicos dos micetomas, justificando a escolha da opção C."
+            "feedback": "Resposta correta: C. Filamentos cenocíticos, estruturas multinucleadas sem septos, típicas de certos oomicetos, não presentes nos granos de micetomas. Nos micetomas, observam-se filamentos tabicados e pigmentados (fungos eumicetomas), bactérias filamentosas Gram positivas (actinomicetos) e bactérias ácido-resistentes (nocardias), todas opções corretas. Portanto, filamentos cenocíticos não são característicos dos micetomas, justificando a escolha da opção C.",
+            "explicacoes": {
+                "robo": [
+                    "Las bacterias filamentosas Gram positivas efectivamente son un hallazgo habitual en los granos (actinomicetoma).",
+                    "Los filamentos pigmentados tabicados en examen en fresco efectivamente son un hallazgo habitual en granos de eumicetoma oscuro.",
+                    "Los filamentos cenocíticos, estructuras multinucleadas sin septos, típicas de ciertos oomicetos, no son un hallazgo habitual en los granos de micetomas — esta es la excepción.",
+                    "Las bacterias ácido-resistentes en la tinción de Kinyoun efectivamente son un hallazgo habitual en granos de actinomicetoma nocardiósico."
+                ],
+                "fantasma": [
+                    "Eso sí se ve.",
+                    "Eso sí se ve.",
+                    "¡Esta! Eso no es de acá, es de otro hongo.",
+                    "Eso sí se ve."
+                ],
+                "gato": [
+                    "Fijate: se ve.",
+                    "Dato curioso: se ve.",
+                    "¡Ronroneo de aprobación! No es de acá.",
+                    "Miau, se ve."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -7855,7 +8215,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Clostridium tetani.  \nClostridium tetani causa tétano por sua neurotoxina, não infecções necrotizantes de pele.  \n\n**Outras opções:**  \nB. Streptococcus pyogenes causa fasceíte necrotizante com rápida destruição tecidual.  \nC. Mucorales provocam mucormicose, infecção fúngica agressiva com necrose vascular.  \nD. Staphylococcus aureus pode causar infecções necrosantes cutâneas, incluindo abscessos e celulite.  \n\nAssim, apenas C. tetani não está associado a infecções necrotizantes de pele e partes moles."
+            "feedback": "**Resposta Correta:** A. Clostridium tetani.  \nClostridium tetani causa tétano por sua neurotoxina, não infecções necrotizantes de pele.  \n\n**Outras opções:**  \nB. Streptococcus pyogenes causa fasceíte necrotizante com rápida destruição tecidual.  \nC. Mucorales provocam mucormicose, infecção fúngica agressiva com necrose vascular.  \nD. Staphylococcus aureus pode causar infecções necrosantes cutâneas, incluindo abscessos e celulite.  \n\nAssim, apenas C. tetani não está associado a infecções necrotizantes de pele e partes moles.",
+            "explicacoes": {
+                "robo": [
+                    "Clostridium tetani causa tétanos por su neurotoxina, no infecciones necrotizantes de piel — esta es la excepción.",
+                    "Streptococcus pyogenes efectivamente causa fascitis necrotizante con rápida destrucción tisular.",
+                    "Las especies de Mucorales efectivamente provocan mucormicosis, infección fúngica agresiva con necrosis vascular.",
+                    "Staphylococcus aureus efectivamente puede causar infecciones necrosantes cutáneas."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese es de tétanos, no de necrosis.",
+                    "Ese sí causa necrosis.",
+                    "Ese sí causa necrosis.",
+                    "Ese sí causa necrosis."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es tétanos.",
+                    "Fijate: sí causa.",
+                    "Dato curioso: sí causa.",
+                    "Miau, sí causa."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -7881,7 +8261,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A varicela rara vez recorre, pois a infecção primária gera imunidade duradoura; o vírus permanece latente e pode reativar como herpes-zóster, que apresenta lesões localizadas, não disseminadas. Outras opções corretas: B) infecção primária em adulto é possível, especialmente sem imunidade prévia; C) quadro disseminado indica infecção primária, não reativação; D) vacina tríplice viral protege, mas não garante imunidade total contra varicela."
+            "feedback": "Resposta correta: A varicela rara vez recorre, pois a infecção primária gera imunidade duradoura; o vírus permanece latente e pode reativar como herpes-zóster, que apresenta lesões localizadas, não disseminadas. Outras opções corretas: B) infecção primária em adulto é possível, especialmente sem imunidade prévia; C) quadro disseminado indica infecção primária, não reativação; D) vacina tríplice viral protege, mas não garante imunidade total contra varicela.",
+            "explicacoes": {
+                "robo": [
+                    "La varicela rara vez recurre, ya que la infección primaria genera inmunidad duradera; el virus permanece latente y puede reactivarse como herpes zóster, que presenta lesiones localizadas, no diseminadas — esta es la opción incorrecta.",
+                    "Efectivamente es posible que el paciente no tuviera inmunidad previa y se infectara de adulto.",
+                    "Efectivamente, un cuadro diseminado como este indica infección primaria, no reactivación de una infección latente.",
+                    "Efectivamente la varicela puede presentarse aun cuando el paciente haya recibido la vacuna en su infancia, ya que la protección no es absoluta."
+                ],
+                "fantasma": [
+                    "¡Esta! La varicela casi no recae así.",
+                    "Esa está bien, se infectó de grande.",
+                    "Esa está bien, es primera vez, no reactivación.",
+                    "Esa está bien, la vacuna no es 100%."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Casi no recae.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 49,
