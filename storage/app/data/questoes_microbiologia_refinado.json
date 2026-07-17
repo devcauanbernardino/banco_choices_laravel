@@ -16587,7 +16587,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. Micobactérias atípicas (MNT) geralmente apresentam resistência variável e maior aos fármacos tuberculostáticos, ao contrário do Mycobacterium tuberculosis. \n\n**Outras opções:**  \nA, B e D estão corretas: MNT são saprófitas ambientais, podem colonizar humanos sem causar doença e causam infecções principalmente em imunodeprimidos.  \n\nPortanto, afirmar que são \"muito sensíveis\" aos fármacos tuberculostáticos é errado, pois o tratamento dessas micobactérias é mais complexo e específico."
+            "feedback": "**Resposta Correta:** C está incorreta. Micobactérias atípicas (MNT) geralmente apresentam resistência variável e maior aos fármacos tuberculostáticos, ao contrário do Mycobacterium tuberculosis. \n\n**Outras opções:**  \nA, B e D estão corretas: MNT são saprófitas ambientais, podem colonizar humanos sem causar doença e causam infecções principalmente em imunodeprimidos.  \n\nPortanto, afirmar que são \"muito sensíveis\" aos fármacos tuberculostáticos é errado, pois o tratamento dessas micobactérias é mais complexo e específico.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente las micobacterias atípicas suelen ser saprófitas ambientales.",
+                    "Efectivamente pueden colonizar al humano sin provocar enfermedad.",
+                    "Las micobacterias atípicas generalmente presentan resistencia variable y mayor a los fármacos tuberculostáticos, a diferencia de M. tuberculosis; su tratamiento es más complejo y específico — esta es la opción incorrecta.",
+                    "Efectivamente pueden producir enfermedad en pacientes inmunodeprimidos."
+                ],
+                "fantasma": [
+                    "Esa está bien, saprófita.",
+                    "Esa está bien, sin enfermar.",
+                    "¡Esta! Son resistentes, no sensibles.",
+                    "Esa está bien, en el inmunodeprimido."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Son resistentes.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -16613,7 +16633,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Mycobacterium tuberculosis não produz exotoxina A-B; sua patogenicidade decorre da parede rica em lipídios, como cera D, e da sobrevivência em macrófagos.  \n**Outras opções:**  \nB está correta: é aeróbio estrito, preferindo áreas ricas em oxigênio.  \nC está correta: resiste à desidratação pela parede lipídica, mas é sensível à radiação UV.  \nD está correta: cresce lentamente em meio Lowenstein-Jensen, levando até 6-8 semanas para cultivo negativo.  \nAssim, apenas a opção A é incorreta."
+            "feedback": "**Resposta Correta:** A. Mycobacterium tuberculosis não produz exotoxina A-B; sua patogenicidade decorre da parede rica em lipídios, como cera D, e da sobrevivência em macrófagos.  \n**Outras opções:**  \nB está correta: é aeróbio estrito, preferindo áreas ricas em oxigênio.  \nC está correta: resiste à desidratação pela parede lipídica, mas é sensível à radiação UV.  \nD está correta: cresce lentamente em meio Lowenstein-Jensen, levando até 6-8 semanas para cultivo negativo.  \nAssim, apenas a opção A é incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Mycobacterium tuberculosis no produce exotoxina A-B; su patogenicidad se debe a la pared rica en lípidos, como la cera D, y a la supervivencia dentro de macrófagos — esta es la opción incorrecta.",
+                    "Efectivamente es aerobia estricta.",
+                    "Efectivamente resiste la desecación por su pared lipídica, pero es eliminada por la radiación solar (UV).",
+                    "Efectivamente los cultivos en Lowenstein-Jensen no pueden descartarse hasta los 60 días, debido a su crecimiento lento."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese bicho no tiene esa toxina.",
+                    "Esa está bien, necesita aire.",
+                    "Esa está bien, la mata el sol.",
+                    "Esa está bien, esos días."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No tiene esa toxina.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -16639,7 +16679,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Aspirado nasofaríngeo com sonda K-30 é o método ideal para coletar amostras em lactentes com bronquiolite, pois obtém secreções diretamente da nasofaringe, local de alta replicação viral, garantindo amostra representativa para diagnóstico seguro e sensível.\n\n**Opções Incorretas:**  \nA. Lavado broncoalveolar é invasivo e desnecessário em casos comuns.  \nB. Hisopado de fauces tem menor sensibilidade por coletar da orofaringe, não da nasofaringe.  \nD. Biópsia pulmonar é altamente invasiva e não indicada para bronquiolite."
+            "feedback": "**Resposta Correta:** C. Aspirado nasofaríngeo com sonda K-30 é o método ideal para coletar amostras em lactentes com bronquiolite, pois obtém secreções diretamente da nasofaringe, local de alta replicação viral, garantindo amostra representativa para diagnóstico seguro e sensível.\n\n**Opções Incorretas:**  \nA. Lavado broncoalveolar é invasivo e desnecessário em casos comuns.  \nB. Hisopado de fauces tem menor sensibilidade por coletar da orofaringe, não da nasofaringe.  \nD. Biópsia pulmonar é altamente invasiva e não indicada para bronquiolite.",
+            "explicacoes": {
+                "robo": [
+                    "El lavado broncoalveolar es invasivo e innecesario en casos comunes.",
+                    "El hisopado de fauces tiene menor sensibilidad, ya que recolecta de la orofaringe, no de la nasofaringe.",
+                    "El aspirado nasofaríngeo con sonda K-30 es el método ideal para recolectar muestras en lactantes con bronquiolitis, ya que obtiene secreciones directamente de la nasofaringe, sitio de alta replicación viral — es la respuesta correcta.",
+                    "La biopsia pulmonar es altamente invasiva y no está indicada para bronquiolitis."
+                ],
+                "fantasma": [
+                    "Eso es invasivo de más.",
+                    "Eso rinde menos.",
+                    "¡Esta! Sonda K-30, la correcta.",
+                    "Eso es muy invasivo."
+                ],
+                "gato": [
+                    "Fijate: invasivo.",
+                    "Dato curioso: rinde menos.",
+                    "¡Ronroneo de aprobación! Sonda K-30.",
+                    "Miau, muy invasivo."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -16665,7 +16725,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta: A. Adenovirus.**  \nO adenovírus causa bronquiolites e pneumonias graves em crianças, podendo levar a sequelas pulmonares permanentes como fibrose e bronquiectasias, devido à intensa inflamação e necrose do epitélio respiratório.  \n\n**Outras opções:**  \nB. Vírus Sincicial Respiratório provoca bronquiolite comum, mas raramente sequelas permanentes.  \nC. Influenza causa infecções agudas, sem danos pulmonares crônicos.  \nD. Metapneumovírus causa doença significativa, mas sequelas graves são incomuns.  \n\nO adenovírus se destaca pelo potencial de lesões pulmona"
+            "feedback": "**Resposta Correta: A. Adenovirus.**  \nO adenovírus causa bronquiolites e pneumonias graves em crianças, podendo levar a sequelas pulmonares permanentes como fibrose e bronquiectasias, devido à intensa inflamação e necrose do epitélio respiratório.  \n\n**Outras opções:**  \nB. Vírus Sincicial Respiratório provoca bronquiolite comum, mas raramente sequelas permanentes.  \nC. Influenza causa infecções agudas, sem danos pulmonares crônicos.  \nD. Metapneumovírus causa doença significativa, mas sequelas graves são incomuns.  \n\nO adenovírus se destaca pelo potencial de lesões pulmona",
+            "explicacoes": {
+                "robo": [
+                    "El adenovirus causa bronquiolitis y neumonías graves en niños, pudiendo dejar secuelas pulmonares permanentes como fibrosis y bronquiectasias, debido a la intensa inflamación y necrosis del epitelio respiratorio — es la respuesta correcta.",
+                    "El VSR provoca bronquiolitis común, pero raramente deja secuelas permanentes.",
+                    "El influenza causa infecciones agudas, sin daño pulmonar crónico habitual.",
+                    "El metapneumovirus causa enfermedad significativa, pero las secuelas graves son poco comunes."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese deja fibrosis después.",
+                    "Ese casi no deja secuela.",
+                    "Ese es agudo, sin secuela.",
+                    "Ese casi no deja secuela."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Deja fibrosis.",
+                    "Fijate: casi no deja.",
+                    "Dato curioso: es agudo.",
+                    "Miau, casi no deja."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -16691,7 +16771,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. PCR.  \nA PCR é o método mais rápido, sensível e específico para diagnóstico virológico, detectando diretamente o material genético viral em poucas horas, essencial para o manejo da bronquiolite.\n\n**Outras opções:**  \nA. Cultivo viral é lento, demorando dias ou semanas.  \nB. Cultivo com imunofluorescência é mais sensível, mas ainda demorado.  \nD. Microscopia eletrônica é cara, complexa e pouco sensível para diagnóstico rápido.  \n\nPortanto, a PCR é a melhor escolha para diagnóstico virológico rápido."
+            "feedback": "**Resposta Correta:** C. PCR.  \nA PCR é o método mais rápido, sensível e específico para diagnóstico virológico, detectando diretamente o material genético viral em poucas horas, essencial para o manejo da bronquiolite.\n\n**Outras opções:**  \nA. Cultivo viral é lento, demorando dias ou semanas.  \nB. Cultivo com imunofluorescência é mais sensível, mas ainda demorado.  \nD. Microscopia eletrônica é cara, complexa e pouco sensível para diagnóstico rápido.  \n\nPortanto, a PCR é a melhor escolha para diagnóstico virológico rápido.",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo viral es lento, demorando días o semanas.",
+                    "El cultivo con inmunofluorescencia sigue siendo demorado y no es el método más rápido aparte de la técnica ya mencionada.",
+                    "La PCR es el método más rápido, sensible y específico para el diagnóstico virológico, detectando directamente el material genético viral en pocas horas — es la respuesta correcta.",
+                    "La microscopía electrónica es cara, compleja y poco sensible para un diagnóstico rápido."
+                ],
+                "fantasma": [
+                    "Eso es lento.",
+                    "Eso también es lento.",
+                    "¡Esta! El PCR, el más rápido.",
+                    "Eso es caro y complicado."
+                ],
+                "gato": [
+                    "Fijate: lento.",
+                    "Dato curioso: también lento.",
+                    "¡Ronroneo de aprobación! El PCR.",
+                    "Miau, caro y complicado."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -16717,7 +16817,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Induzir o escarro com nebulização não é rotina na pneumonia adquirida na comunidade (PAC) não complicada, pois é invasivo, desconfortável e pouco útil diagnostica-mente nesses casos, que geralmente são diagnosticados clinicamente e por radiografia.\n\n**Outras opções:**  \nA está correta ao destacar o diagnóstico clínico e radiológico e o monitoramento da resposta ao tratamento.  \nB é válida para casos graves, usando Gram e cultura para orientar antimicrobianos.  \nD é útil na suspeita de agentes atípicos, auxiliando no tratamento quando indicado."
+            "feedback": "**Resposta Correta:** C. Induzir o escarro com nebulização não é rotina na pneumonia adquirida na comunidade (PAC) não complicada, pois é invasivo, desconfortável e pouco útil diagnostica-mente nesses casos, que geralmente são diagnosticados clinicamente e por radiografia.\n\n**Outras opções:**  \nA está correta ao destacar o diagnóstico clínico e radiológico e o monitoramento da resposta ao tratamento.  \nB é válida para casos graves, usando Gram e cultura para orientar antimicrobianos.  \nD é útil na suspeita de agentes atípicos, auxiliando no tratamento quando indicado.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente si el caso no es complicado, puede hacerse diagnóstico solo por clínica y radiología, observando la respuesta al tratamiento.",
+                    "Efectivamente hacer Gram del esputo y cultivo es válido en casos que lo requieran.",
+                    "Inducir el esputo con nebulizaciones no es rutina en la NAC no complicada, ya que es invasivo, incómodo y poco útil diagnósticamente en estos casos, que suelen diagnosticarse clínica y radiológicamente — es la respuesta correcta (conducta que NO se debe tomar).",
+                    "Efectivamente si lo sugiere la clínica y radiología, hacer serología para virus, Mycoplasma y Chlamydia es útil."
+                ],
+                "fantasma": [
+                    "Esa está bien, esa conducta.",
+                    "Esa está bien, en caso grave.",
+                    "¡Esta! Eso no se hace de rutina.",
+                    "Esa está bien, si lo sugiere el cuadro."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es de rutina.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -16743,7 +16863,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Rubéola.  \nA rubéola, causada pelo vírus Togaviridae, é uma doença sistêmica com exantema, linfadenopatia e febre baixa, não caracterizada por rinite viral típica, que é uma infecção localizada da mucosa nasal.  \n\n**Outras opções:**  \nA. Rinovírus causa rinite viral comum;  \nC. RSV pode causar rinite em adultos;  \nD. Coronavírus comuns também provocam rinite viral.  \n\nPortanto, apenas a rubéola não está associada à rinite viral, justificando a alternativa B."
+            "feedback": "**Resposta Correta:** B. Rubéola.  \nA rubéola, causada pelo vírus Togaviridae, é uma doença sistêmica com exantema, linfadenopatia e febre baixa, não caracterizada por rinite viral típica, que é uma infecção localizada da mucosa nasal.  \n\n**Outras opções:**  \nA. Rinovírus causa rinite viral comum;  \nC. RSV pode causar rinite em adultos;  \nD. Coronavírus comuns também provocam rinite viral.  \n\nPortanto, apenas a rubéola não está associada à rinite viral, justificando a alternativa B.",
+            "explicacoes": {
+                "robo": [
+                    "El rinovirus efectivamente causa rinitis viral común.",
+                    "La rubéola, causada por un Togavirus, es una enfermedad sistémica con exantema, linfadenopatía y fiebre baja, no caracterizada por una rinitis viral típica localizada en la mucosa nasal — es la respuesta correcta.",
+                    "El VSR efectivamente puede causar rinitis en adultos.",
+                    "Los coronavirus comunes efectivamente también provocan rinitis viral."
+                ],
+                "fantasma": [
+                    "Ese sí es de acá.",
+                    "¡Esta! Ese es sistémico, no de la nariz sola.",
+                    "Ese sí es de acá.",
+                    "Ese sí es de acá."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es sistémica.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -16769,7 +16909,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Legionella pneumophila.\n\nLegionella pneumophila causa pneumonia comunitária, associada a ambientes como sistemas de água contaminados, mas é rara em pneumonia nosocomial, especialmente em UCI.  \n\n**Outras opções:**  \nA. Staphylococcus aureus (MRSA) é uma causa comum de pneumonia intrahospitalar.  \nB. Pseudomonas aeruginosa destaca-se pela resistência e colonização em UCI.  \nC. Acinetobacter spp também é frequente em pneumonias nosocomiais, resistente e associado a dispositivos invasivos.  \n\nAssim, A, B e C são os principais agentes na pneumonia nosocomial em UCI, diferentemente da"
+            "feedback": "**Resposta Correta:** D. Legionella pneumophila.\n\nLegionella pneumophila causa pneumonia comunitária, associada a ambientes como sistemas de água contaminados, mas é rara em pneumonia nosocomial, especialmente em UCI.  \n\n**Outras opções:**  \nA. Staphylococcus aureus (MRSA) é uma causa comum de pneumonia intrahospitalar.  \nB. Pseudomonas aeruginosa destaca-se pela resistência e colonização em UCI.  \nC. Acinetobacter spp também é frequente em pneumonias nosocomiais, resistente e associado a dispositivos invasivos.  \n\nAssim, A, B e C são os principais agentes na pneumonia nosocomial em UCI, diferentemente da",
+            "explicacoes": {
+                "robo": [
+                    "Staphylococcus aureus (SARM) efectivamente es causa común de neumonía intrahospitalaria.",
+                    "Pseudomonas aeruginosa efectivamente se destaca por su resistencia y colonización en UCI.",
+                    "Acinetobacter spp y otros Gram negativos efectivamente son frecuentes en neumonías nosocomiales.",
+                    "Legionella pneumophila causa neumonía comunitaria, asociada a ambientes con sistemas de agua contaminados, siendo rara en neumonía nosocomial en UCI — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Ese sí es de hospital.",
+                    "Ese sí es de hospital.",
+                    "Ese sí es de hospital.",
+                    "¡Esta! Ese es de la comunidad, no del hospital."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es.",
+                    "¡Ronroneo de aprobación! Es de la comunidad."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -16795,7 +16955,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Dosagem sérica de IgM e IgG específicas para Chlamydophila pneumoniae e Mycoplasma pneumoniae.\n\nExplicação: Pneumonia intersticial em adultos saudáveis é frequentemente causada por esses agentes atípicos, difíceis de cultivar. A sorologia detecta infecção aguda (IgM) e exposição prévia (IgG) de forma rápida e não invasiva, facilitando o diagnóstico e tratamento.\n\nOutras opções são menos indicadas: A é invasiva e desnecessária; B limita o diagnóstico a Legionella; D é para casos graves e pacientes intubados."
+            "feedback": "**Resposta Correta:** C. Dosagem sérica de IgM e IgG específicas para Chlamydophila pneumoniae e Mycoplasma pneumoniae.\n\nExplicação: Pneumonia intersticial em adultos saudáveis é frequentemente causada por esses agentes atípicos, difíceis de cultivar. A sorologia detecta infecção aguda (IgM) e exposição prévia (IgG) de forma rápida e não invasiva, facilitando o diagnóstico e tratamento.\n\nOutras opções são menos indicadas: A é invasiva e desnecessária; B limita o diagnóstico a Legionella; D é para casos graves e pacientes intubados.",
+            "explicacoes": {
+                "robo": [
+                    "La fibrobroncoscopía es invasiva e innecesaria para este caso.",
+                    "El lavado broncoalveolar y cultivo limitan el diagnóstico solo a Legionella.",
+                    "La determinación sérica de IgM e IgG para Chlamydophila pneumoniae y Mycoplasma pneumoniae es el procedimiento más indicado, ya que estos son los agentes atípicos más frecuentes en neumonía intersticial de adultos sanos, difíciles de cultivar; la serología detecta infección aguda y exposición previa de forma rápida y no invasiva — es la respuesta correcta.",
+                    "El aspirado endotraqueal y hemocultivos seriados son para casos graves y pacientes intubados."
+                ],
+                "fantasma": [
+                    "Eso es invasivo de más.",
+                    "Eso limita solo a esa.",
+                    "¡Esta! IgM e IgG para esos bichos difíciles.",
+                    "Eso es para grave, no para esto."
+                ],
+                "gato": [
+                    "Fijate: invasivo.",
+                    "Dato curioso: limita.",
+                    "¡Ronroneo de aprobación! IgM e IgG.",
+                    "Miau, es para grave."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -16821,7 +17001,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta. Má higiene dental está associada a bactérias anaeróbias orais e Streptococcus do grupo viridans, não a Haemophilus influenzae, que é um patógeno respiratório ligado a pneumonia em pacientes com doenças pulmonares crônicas ou imunossupressão. As outras associações estão corretas: A (asplenia com Streptococcus pneumoniae), B (exposição a aves com Chlamydia psittaci) e D (alcoolismo com Streptococcus pneumoniae). Portanto, a única associação errada é a de má higiene dental com Haemophilus influenzae."
+            "feedback": "Resposta correta: C está incorreta. Má higiene dental está associada a bactérias anaeróbias orais e Streptococcus do grupo viridans, não a Haemophilus influenzae, que é um patógeno respiratório ligado a pneumonia em pacientes com doenças pulmonares crônicas ou imunossupressão. As outras associações estão corretas: A (asplenia com Streptococcus pneumoniae), B (exposição a aves com Chlamydia psittaci) e D (alcoolismo com Streptococcus pneumoniae). Portanto, a única associação errada é a de má higiene dental com Haemophilus influenzae.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la asplenia se asocia a Streptococcus pneumoniae.",
+                    "Efectivamente la exposición a aves se asocia a Chlamydia psittaci.",
+                    "La mala higiene dental se asocia a bacterias anaerobias orales y Streptococcus del grupo viridans, no a Haemophilus influenzae, que es un patógeno respiratorio ligado a enfermedades pulmonares crónicas o inmunosupresión — esta es la opción incorrecta.",
+                    "Efectivamente el alcoholismo se asocia a Streptococcus pneumoniae."
+                ],
+                "fantasma": [
+                    "Esa está bien, el neumococo.",
+                    "Esa está bien, el ave.",
+                    "¡Esta! Ese diente es de otra bacteria.",
+                    "Esa está bien, el alcohol."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es de otra bacteria.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -16847,7 +17047,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta porque a sensibilidade à optoquina distingue Streptococcus pneumoniae (sensível) de estreptococos alfa-hemolíticos do grupo viridans (resistentes). Streptococcus pyogenes é beta-hemolítico e resistente à optoquina, não apresentando colônias alfa-hemolíticas.  \n\n**Outras opções:**  \nA, C e D estão corretas. A identifica bacilos gram-negativos fusiformes da angina de Vincent; C mostra bacilos gram-positivos em empalizada do Corynebacterium diphtheriae; D destaca que a coloração de Gram isolada não é suficiente para diagnosticar S"
+            "feedback": "**Resposta Correta:** B está incorreta porque a sensibilidade à optoquina distingue Streptococcus pneumoniae (sensível) de estreptococos alfa-hemolíticos do grupo viridans (resistentes). Streptococcus pyogenes é beta-hemolítico e resistente à optoquina, não apresentando colônias alfa-hemolíticas.  \n\n**Outras opções:**  \nA, C e D estão corretas. A identifica bacilos gram-negativos fusiformes da angina de Vincent; C mostra bacilos gram-positivos em empalizada do Corynebacterium diphtheriae; D destaca que a coloração de Gram isolada não é suficiente para diagnosticar S",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente los bacilos Gram negativos fusiformes y espiralados permiten diagnosticar angina de Vincent.",
+                    "La sensibilidad a la optoquina distingue Streptococcus pneumoniae (sensible) de estreptococos alfa-hemolíticos del grupo viridans (resistentes); Streptococcus pyogenes es beta-hemolítico y resistente a la optoquina, no presentando colonias alfa-hemolíticas — esta es la opción incorrecta.",
+                    "Efectivamente los bacilos Gram positivos en empalizada muestran diagnóstico presuntivo de difteria.",
+                    "Efectivamente la tinción de Gram por sí sola carece de utilidad diagnóstica para faringitis por S. pyogenes."
+                ],
+                "fantasma": [
+                    "Esa está bien, angina de Vincent.",
+                    "¡Esta! Ese estrepto es beta, no alfa.",
+                    "Esa está bien, difteria.",
+                    "Esa está bien, sola no alcanza."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es beta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -16873,7 +17093,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Pneumonia aguda comunitária por Streptococcus pneumoniae. O quadro de febre alta, calafrios, tosse produtiva, crepitações localizadas e opacidade lobar na radiografia é típico dessa infecção bacteriana em idosos.  \n\nOpções incorretas:  \nA e B são bronquiolites virais (VSR e Metapneumovirus), comuns em crianças, com sintomas mais difusos e sem consolidação lobar.  \nD refere-se a pneumonia atípica por Chlamydophila pneumoniae, com sintomas mais leves, tosse seca e infiltrados difusos, não opacidade lobar."
+            "feedback": "Resposta correta: C. Pneumonia aguda comunitária por Streptococcus pneumoniae. O quadro de febre alta, calafrios, tosse produtiva, crepitações localizadas e opacidade lobar na radiografia é típico dessa infecção bacteriana em idosos.  \n\nOpções incorretas:  \nA e B são bronquiolites virais (VSR e Metapneumovirus), comuns em crianças, com sintomas mais difusos e sem consolidação lobar.  \nD refere-se a pneumonia atípica por Chlamydophila pneumoniae, com sintomas mais leves, tosse seca e infiltrados difusos, não opacidade lobar.",
+            "explicacoes": {
+                "robo": [
+                    "Las bronquiolitis virales, como por VSR, son comunes en niños, con síntomas más difusos y sin consolidación lobar como la descrita.",
+                    "El metapneumovirus también causa bronquiolitis en niños, con presentación difusa, no consolidación lobar.",
+                    "El cuadro de fiebre alta, escalofríos, tos productiva, crepitantes localizados y opacidad lobar en la radiografía es típico de neumonía aguda de la comunidad por Streptococcus pneumoniae en ancianos — es la respuesta correcta.",
+                    "Chlamydophila pneumoniae (no trachomatis) causa neumonía atípica, con síntomas más leves, tos seca e infiltrados difusos, no opacidad lobar."
+                ],
+                "fantasma": [
+                    "Eso es de nene, difuso.",
+                    "Eso es de nene, difuso.",
+                    "¡Esta! Fiebre alta, opacidad de un lóbulo, el neumococo.",
+                    "Eso es más leve, tos seca."
+                ],
+                "gato": [
+                    "Fijate: es difuso.",
+                    "Dato curioso: es difuso.",
+                    "¡Ronroneo de aprobación! El neumococo.",
+                    "Miau, es más leve."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -16899,7 +17139,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Coleta de escarro para tinção de Gram e cultivo, junto com hemocultivos, é o padrão para confirmar pneumonia, identificando o agente e bacteremia.  \n\nOpções incorretas:  \nB. Hisopado nasal detecta colonização, não infecção pulmonar.  \nC. Aspirado nasofaríngeo é menos representativo para pneumonia em adultos.  \nD. Métodos indiretos em aspirado não são padrão para pneumonia bacteriana.  \n\nPortanto, amostra do trato respiratório inferior e hemocultivos são essenciais para diagnóstico etiológico e manejo adequado."
+            "feedback": "Resposta correta: A. Coleta de escarro para tinção de Gram e cultivo, junto com hemocultivos, é o padrão para confirmar pneumonia, identificando o agente e bacteremia.  \n\nOpções incorretas:  \nB. Hisopado nasal detecta colonização, não infecção pulmonar.  \nC. Aspirado nasofaríngeo é menos representativo para pneumonia em adultos.  \nD. Métodos indiretos em aspirado não são padrão para pneumonia bacteriana.  \n\nPortanto, amostra do trato respiratório inferior e hemocultivos são essenciais para diagnóstico etiológico e manejo adequado.",
+            "explicacoes": {
+                "robo": [
+                    "La recolección de esputo para tinción de Gram y cultivo, junto con hemocultivos, es el estándar para confirmar la neumonía, identificando el agente y la bacteriemia — es la respuesta correcta.",
+                    "El hisopado nasal detecta colonización, no infección pulmonar.",
+                    "El aspirado nasofaríngeo es menos representativo para neumonía en adultos.",
+                    "Los métodos indirectos en aspirado no son estándar para neumonía bacteriana."
+                ],
+                "fantasma": [
+                    "¡Esta! Esputo con Gram y hemocultivo, la correcta.",
+                    "Eso es colonización, no infección.",
+                    "Eso rinde menos en adulto.",
+                    "Eso no es lo estándar."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Esputo y hemocultivo.",
+                    "Fijate: es colonización.",
+                    "Dato curioso: rinde menos.",
+                    "Miau, no es estándar."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -16925,7 +17185,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Mais de 25 polimorfonucleares e menos de 10 células epiteliais planas indicam inflamação no trato respiratório inferior e baixa contaminação por saliva, garantindo amostra válida.  \nOpção A: poucos polimorfonucleares e muitas células epiteliais indicam ausência de inflamação e contaminação por saliva, invalidando a amostra.  \nOpção B: muitos polimorfonucleares, mas também muitas células epiteliais, sugerem inflamação com contaminação oral, comprometendo a análise.  \nOpção D: poucas células epiteliais, mas poucos polimorfonucleares indicam baixa inflamação,"
+            "feedback": "Resposta correta: C. Mais de 25 polimorfonucleares e menos de 10 células epiteliais planas indicam inflamação no trato respiratório inferior e baixa contaminação por saliva, garantindo amostra válida.  \nOpção A: poucos polimorfonucleares e muitas células epiteliais indicam ausência de inflamação e contaminação por saliva, invalidando a amostra.  \nOpção B: muitos polimorfonucleares, mas também muitas células epiteliais, sugerem inflamação com contaminação oral, comprometendo a análise.  \nOpção D: poucas células epiteliais, mas poucos polimorfonucleares indicam baixa inflamação,",
+            "explicacoes": {
+                "robo": [
+                    "Pocos polimorfonucleares y muchas células epiteliales indican ausencia de inflamación y contaminación por saliva, invalidando la muestra.",
+                    "Muchos polimorfonucleares, pero también muchas células epiteliales, sugieren inflamación con contaminación oral, comprometiendo el análisis.",
+                    "Más de 25 polimorfonucleares y menos de 10 células epiteliales planas indican inflamación en el tracto respiratorio inferior y baja contaminación por saliva, garantizando una muestra válida — es la respuesta correcta.",
+                    "Pocas células epiteliales, pero también pocos polimorfonucleares, indican baja inflamación, no siendo criterio de validez adecuado."
+                ],
+                "fantasma": [
+                    "Ahí no hay inflamación, contamina.",
+                    "Ahí hay contaminación oral.",
+                    "¡Esta! Esa combinación, la buena.",
+                    "No hay inflamación tampoco."
+                ],
+                "gato": [
+                    "Fijate: contamina.",
+                    "Dato curioso: contamina.",
+                    "¡Ronroneo de aprobación! La buena combinación.",
+                    "Miau, sin inflamación."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -16951,7 +17231,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Klebsiella pneumoniae não é um agente típico da otite média aguda (OMA) em crianças. A OMA é geralmente causada por Streptococcus pneumoniae, Moraxella catarrhalis e Haemophilus influenzae, que colonizam o trato respiratório superior e infectam o ouvido médio. Klebsiella pneumoniae está associada principalmente a infecções hospitalares e não é um patógeno comum em OMA não complicada em crianças saudáveis. Portanto, as opções B, C e D são os principais agentes etiológicos da OMA, ao contrário da opção A."
+            "feedback": "**Resposta Correta:** A. Klebsiella pneumoniae não é um agente típico da otite média aguda (OMA) em crianças. A OMA é geralmente causada por Streptococcus pneumoniae, Moraxella catarrhalis e Haemophilus influenzae, que colonizam o trato respiratório superior e infectam o ouvido médio. Klebsiella pneumoniae está associada principalmente a infecções hospitalares e não é um patógeno comum em OMA não complicada em crianças saudáveis. Portanto, as opções B, C e D são os principais agentes etiológicos da OMA, ao contrário da opção A.",
+            "explicacoes": {
+                "robo": [
+                    "Klebsiella pneumoniae no es un agente típico de la otitis media aguda en niños, estando asociada principalmente a infecciones hospitalarias, no siendo un patógeno común en OMA no complicada en niños sanos — es la respuesta correcta.",
+                    "Streptococcus pneumoniae efectivamente es uno de los principales agentes de la OMA.",
+                    "Moraxella catarrhalis efectivamente es uno de los principales agentes de la OMA.",
+                    "Haemophilus influenzae efectivamente es uno de los principales agentes de la OMA."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese es de hospital, no de acá.",
+                    "Ese sí es común.",
+                    "Ese sí es común.",
+                    "Ese sí es común."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de hospital.",
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -16977,7 +17277,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Clínica. O diagnóstico da otite média aguda baseia-se na avaliação clínica, incluindo exame otoscópico e sintomas, sendo suficiente para a decisão terapêutica inicial.  \n\n**Outras opções:**  \nA. Cultivo por timpanocentesis é preciso, mas invasivo e reservado para casos graves.  \nB. Sorologia não é útil, pois a resposta imune é tardia e não altera a conduta.  \nD. Hisopado da membrana timpânica é contraindicado por risco de lesão e contaminação, não sendo método habitual."
+            "feedback": "**Resposta Correta:** C. Clínica. O diagnóstico da otite média aguda baseia-se na avaliação clínica, incluindo exame otoscópico e sintomas, sendo suficiente para a decisão terapêutica inicial.  \n\n**Outras opções:**  \nA. Cultivo por timpanocentesis é preciso, mas invasivo e reservado para casos graves.  \nB. Sorologia não é útil, pois a resposta imune é tardia e não altera a conduta.  \nD. Hisopado da membrana timpânica é contraindicado por risco de lesão e contaminação, não sendo método habitual.",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo por timpanocentesis es preciso, pero invasivo y reservado para casos graves.",
+                    "La serología no es útil, ya que la respuesta inmune es tardía y no cambia la conducta.",
+                    "El diagnóstico de otitis media aguda se basa en la evaluación clínica, incluyendo el examen otoscópico y los síntomas, siendo suficiente para la decisión terapéutica inicial — es la respuesta correcta.",
+                    "El hisopado de la membrana timpánica está contraindicado por riesgo de lesión y contaminación, no siendo un método habitual."
+                ],
+                "fantasma": [
+                    "Eso es invasivo, solo en grave.",
+                    "Eso tarda, no cambia nada.",
+                    "¡Esta! El ojo clínico alcanza.",
+                    "Eso puede lastimar, no se hace."
+                ],
+                "gato": [
+                    "Fijate: invasivo.",
+                    "Dato curioso: no cambia nada.",
+                    "¡Ronroneo de aprobación! El ojo clínico.",
+                    "Miau, puede lastimar."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -17003,7 +17323,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Esporos por via aérea. Aspergillus libera esporos inalados, causando infecção respiratória como rinosinusite. Outras opções são incorretas: B, clamidoconídios não são a forma principal infectante e via traumática é rara em rinosinusite; C, macroconídios não pertencem ao Aspergillus e via oral não é típica; D, blastoconídios são de leveduras, não de Aspergillus, e via traumática não é comum nessa infecção."
+            "feedback": "Resposta correta: A. Esporos por via aérea. Aspergillus libera esporos inalados, causando infecção respiratória como rinosinusite. Outras opções são incorretas: B, clamidoconídios não são a forma principal infectante e via traumática é rara em rinosinusite; C, macroconídios não pertencem ao Aspergillus e via oral não é típica; D, blastoconídios são de leveduras, não de Aspergillus, e via traumática não é comum nessa infecção.",
+            "explicacoes": {
+                "robo": [
+                    "Aspergillus libera esporas que se inhalan, causando infección respiratoria como la rinosinusitis — es la respuesta correcta.",
+                    "Las clamidoconidias no son la forma principal infectante, y la vía traumática es rara en rinosinusitis.",
+                    "Las macroconidias no son propias del Aspergillus, y la vía oral no es típica de esta infección.",
+                    "Las blastoconidias son de levaduras, no de Aspergillus, y la vía traumática no es común en esta infección."
+                ],
+                "fantasma": [
+                    "¡Esta! Esporas por el aire, la correcta.",
+                    "Eso no es lo principal ahí.",
+                    "Eso no es de este hongo.",
+                    "Eso es de levadura, no de acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Esporas por el aire.",
+                    "Fijate: no es lo principal.",
+                    "Dato curioso: no es de este hongo.",
+                    "Miau, es de levadura."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -17029,7 +17369,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Micélio tabicado hialino.\n\nO micélio tabicado possui septos que dividem as hifas em células distintas, e \"hialino\" indica coloração clara, típica de fungos filamentosos não pigmentados. Essa estrutura é característica do tallo vegetativo do fungo isolado.\n\n**Opções incorretas:**  \nA. Micélio cenocítico não tem septos;  \nB. Leveduras são unicelulares e não formam micélio filamentoso;  \nC. Micélio pigmentado apresenta coloração, diferente do hialino descrito.  \n\nPortanto, D é a opção correta."
+            "feedback": "**Resposta Correta:** D. Micélio tabicado hialino.\n\nO micélio tabicado possui septos que dividem as hifas em células distintas, e \"hialino\" indica coloração clara, típica de fungos filamentosos não pigmentados. Essa estrutura é característica do tallo vegetativo do fungo isolado.\n\n**Opções incorretas:**  \nA. Micélio cenocítico não tem septos;  \nB. Leveduras são unicelulares e não formam micélio filamentoso;  \nC. Micélio pigmentado apresenta coloração, diferente do hialino descrito.  \n\nPortanto, D é a opção correta.",
+            "explicacoes": {
+                "robo": [
+                    "El micelio cenocítico no tiene septos, diferente del descrito.",
+                    "Las levaduras son unicelulares y no forman micelio filamentoso.",
+                    "El micelio pigmentado presenta coloración, distinto del hialino descrito.",
+                    "El micelio tabicado hialino, con septos que dividen las hifas en células distintas y coloración clara típica de hongos filamentosos no pigmentados, corresponde al tallo vegetativo del hongo aislado (Aspergillus) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese no tiene tabique.",
+                    "Esa es de una sola célula.",
+                    "Ese tiene color, no es incoloro.",
+                    "¡Esta! Tabicado e incoloro, la correcta."
+                ],
+                "gato": [
+                    "Fijate: sin tabique.",
+                    "Dato curioso: una célula.",
+                    "Miau, tiene color.",
+                    "¡Ronroneo de aprobación! Tabicado e incoloro."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -17055,7 +17415,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A identificação de espécies fúngicas baseia-se na análise morfológica em cultura, observando colônias, esporulação, conídios e micélios, essencial para diagnóstico e tratamento.\n\n**Outras opções:**  \nA. Testes bioquímicos são limitados e pouco usados para identificação fúngica.  \nB. Testes de sensibilidade antifúngica ajudam no tratamento, não na identificação.  \nC. Morfologia no material clínico indica presença, mas não identifica com precisão a espécie."
+            "feedback": "**Resposta Correta:** D. A identificação de espécies fúngicas baseia-se na análise morfológica em cultura, observando colônias, esporulação, conídios e micélios, essencial para diagnóstico e tratamento.\n\n**Outras opções:**  \nA. Testes bioquímicos são limitados e pouco usados para identificação fúngica.  \nB. Testes de sensibilidade antifúngica ajudam no tratamento, não na identificação.  \nC. Morfologia no material clínico indica presença, mas não identifica com precisão a espécie.",
+            "explicacoes": {
+                "robo": [
+                    "Las pruebas bioquímicas son limitadas y poco usadas para la identificación fúngica.",
+                    "Las pruebas de sensibilidad antifúngica ayudan al tratamiento, no a la identificación.",
+                    "La morfología en el material clínico indica presencia del hongo, pero no identifica con precisión la especie.",
+                    "La identificación de especies fúngicas se basa en el análisis morfológico en cultivo, observando colonias, esporulación, conidios y micelios, esencial para diagnóstico y tratamiento — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso se usa poco.",
+                    "Eso es para tratar, no identificar.",
+                    "Eso dice que está, no cuál es.",
+                    "¡Esta! En el cultivo se ve la especie."
+                ],
+                "gato": [
+                    "Fijate: se usa poco.",
+                    "Dato curioso: es para tratar.",
+                    "Miau, no dice cuál.",
+                    "¡Ronroneo de aprobación! En el cultivo."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -17081,7 +17461,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Hisopado de fauces.  \nA faringoamigdalite apresenta sinais clássicos e é causada principalmente pelo Streptococcus pyogenes, que coloniza a orofaringe. O hisopado de fauces é o método padrão para coletar amostras dessa região, permitindo diagnóstico preciso.  \n\n**Outras opções:**  \nB. Aspirado nasofaríngeo é indicado para vírus respiratórios e infecções do trato inferior, não para faringoamigdalite.  \nC. Lavado broncoalveolar é invasivo e usado para infecções pulmonares, não indicado aqui.  \nD. Hisopado nasal detecta pató"
+            "feedback": "**Resposta Correta:** A. Hisopado de fauces.  \nA faringoamigdalite apresenta sinais clássicos e é causada principalmente pelo Streptococcus pyogenes, que coloniza a orofaringe. O hisopado de fauces é o método padrão para coletar amostras dessa região, permitindo diagnóstico preciso.  \n\n**Outras opções:**  \nB. Aspirado nasofaríngeo é indicado para vírus respiratórios e infecções do trato inferior, não para faringoamigdalite.  \nC. Lavado broncoalveolar é invasivo e usado para infecções pulmonares, não indicado aqui.  \nD. Hisopado nasal detecta pató",
+            "explicacoes": {
+                "robo": [
+                    "La faringoamigdalitis presenta signos clásicos y es causada principalmente por Streptococcus pyogenes, que coloniza la orofaringe; el hisopado de fauces es el método estándar para recolectar muestras de esta región — es la respuesta correcta.",
+                    "El aspirado nasofaríngeo se indica para virus respiratorios e infecciones del tracto inferior, no para faringoamigdalitis.",
+                    "El lavado broncoalveolar es invasivo y se usa para infecciones pulmonares, no indicado aquí.",
+                    "El hisopado nasal detecta patógenos de otra región, no el foco faríngeo de este cuadro."
+                ],
+                "fantasma": [
+                    "¡Esta! Ahí en la garganta, la correcta.",
+                    "Eso es de virus de vía baja.",
+                    "Eso es invasivo, para pulmón.",
+                    "Eso es de otra zona, no de la garganta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! En la garganta.",
+                    "Fijate: es de vía baja.",
+                    "Dato curioso: es invasivo.",
+                    "Miau, es de otra zona."
+                ]
+            }
         },
         {
             "numero": 50,
