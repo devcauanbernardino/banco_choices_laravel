@@ -15339,7 +15339,27 @@
             "HBcAg (antígeno central do HBV), anticorpos anti-HBeAg, HBsAg (antígeno de superfície do HBV)",
             "HBsAg (antígeno de superfície do HBV), IgM anti HBcAg (anticorpos contra o antígeno central do HBV).",
             "IgG anti-HBc na presença de Ag de superfície por mais de 6 meses, presença de HBeAg positivo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O anti-HBs indica imunidade, não infecção ativa.",
+                "O HBcAg não é detectável no sangue e a ausência de HBeAg não confirma replicação ativa.",
+                "Essa combinação indica infecção aguda, não crônica, pela presença de IgM anti-HBc.",
+                "A presença de HBsAg por mais de 6 meses com anticorpos anti-HBc IgG e HBeAg positivo indica infecção crônica ativa pelo vírus da hepatite B, refletindo replicação viral persistente — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse é de estar imune, já passou.",
+                "Esse não se detecta assim.",
+                "Esse é agudo, não crônico.",
+                "Essa aí! Seis meses com isso dentro, a correta."
+            ],
+            "gato": [
+                "Fijate: já passou.",
+                "Dado curioso: não se vê assim.",
+                "Miau, é agudo.",
+                "Ronronado de aprovação! Seis meses dentro."
+            ]
+        }
     },
     {
         "pergunta": "Os testes a seguir são úteis no monitoramento do curso da infecção pelo VHC e na resposta ao tratamento, EXCETO:",
@@ -15349,7 +15369,27 @@
             "Ultrassonografia e ressonância magnética em busca de nódulos hepáticos",
             "Biópsia com coloração e imuno-histoquímica",
             "Fibroelastografia hepática"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A soroconversão de anticorpos totais anti-VHC indica exposição ao vírus e resposta imune, mas não serve para monitorar infecção ou tratamento, pois os anticorpos permanecem detectáveis mesmo após cura — essa é a exceção.",
+                "De fato a imagem (ecografia/ressonância) avalia complicações hepáticas.",
+                "De fato a biópsia analisa inflamação, fibrose e antígenos virais.",
+                "De fato a fibroelastografia mede fibrose hepática e acompanha evolução e resposta ao tratamento."
+            ],
+            "fantasma": [
+                "Essa aí! Isso fica ali pra sempre, não serve pra acompanhar.",
+                "Essa está certa, vê o fígado.",
+                "Essa está certa, olha o tecido.",
+                "Essa está certa, mede a fibrose."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Fica pra sempre.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Dentre os seguintes procedimentos diagnósticos para HIV, indique a opção INCORRETA:",
@@ -15360,7 +15400,27 @@
             "Carga Viral do HIV e contagem de células T CD4+ dentro de 3 dias após um acidente com materiais cortantes:",
             "Naqueles pacientes com teste de triagem reativo, mas com carga viral indetectável, uma nova detecção de anticorpos específicos pode ser realizada por meio de Western blot para confirmar a infecção.",
             "Ensaio sorológico de 4ª geração (anticorpos e antígenos virais) contra o vírus pelo menos uma semana depois em paciente que sofreu acidente com material cortante com suspeita de exposição ao vírus."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato o diagnóstico em menores de 18 meses expostos ao HIV deve ser feito via carga viral e/ou RT-PCR, não sorologia.",
+                "Realizar carga viral e contagem de CD4+ nos primeiros 3 dias após acidente cortopunzante não é indicado, pois a carga viral só é detectável após 10-14 dias e CD4+ não é teste diagnóstico precoce — essa é a opção incorreta.",
+                "De fato se a triagem é reativa mas a carga viral é indetectável, pode-se confirmar com western blot.",
+                "De fato o teste de 4ª geração é recomendado pelo menos uma semana depois para diagnóstico precoce."
+            ],
+            "fantasma": [
+                "Essa está certa, com carga viral.",
+                "Essa aí! Muito cedo, ainda não dá pra ver nada.",
+                "Essa está certa, confirma com isso.",
+                "Essa está certa, uma semana depois."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Muito cedo.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "De acordo com a profilaxia pós-exposição contra o VHB nas diferentes situações apresentadas. Marque a opção INCORRETA:",
@@ -15371,7 +15431,27 @@
             "Se o título de anticorpos da pessoa exposta for 5 mUl/ml e o estado sorológico da fonte for desconhecido, um novo esquema vacinal deve ser iniciado.",
             "Caso a pessoa exposta NÃO responda e NÃO tenha sido revacinada, aplica-se uma dose de gamaglobulina hiperimune e inicia-se um novo esquema vacinal.",
             "Se o título de anticorpos da pessoa exposta for superior a 10 mUl/ml, não há necessidade de medidas preventivas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A aplicação de gamaglobulina hiperimune deve considerar o título de anticorpos, não ser feita indiscriminadamente; é indicada para pessoas suscetíveis (anticorpos <10 mUI/mL) — essa é a opção incorreta.",
+                "De fato com título 5 mUI/mL e fonte desconhecida, iniciar vacinação é correto.",
+                "De fato não respondedores devem receber gamaglobulina e nova vacinação.",
+                "De fato título >10 mUI/mL dispensa medidas adicionais."
+            ],
+            "fantasma": [
+                "Essa aí! Isso depende do número, não é pra todo mundo.",
+                "Essa está certa, começar de novo.",
+                "Essa está certa, as duas coisas.",
+                "Essa está certa, já está protegido."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Depende do número.",
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação a outros possíveis estudos para confirmar ou descartar a etiologia da síndrome mononucleosiforme, indicar a opção INCORRETA.",
@@ -15382,7 +15462,27 @@
             "Infecção/Sorologia HIV utilizando Elisa de 4ª geração para busca de antígenos e/ou anticorpos específicos",
             "Infecção/Sorologia por Spyogenes para confirmar o sorotipo G do grupo Lancefield.",
             "Infecção pelo vírus Epstein-Barr/sorologia IgM anti-VCA (Antígeno do Capsídeo Viral)"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a infecção por citomegalovírus é estudada por antigenemia ELISA/shell-vial.",
+                "De fato a infecção por HIV é estudada por sorologia ELISA de 4ª geração para antígenos e/ou anticorpos.",
+                "S. pyogenes (grupo A) não causa síndrome mononucleosiforme, e sorologia para grupo G não é relevante nesse contexto — essa é a opção incorreta.",
+                "De fato a infecção por vírus Epstein-Barr é estudada por sorologia IgM anti-VCA."
+            ],
+            "fantasma": [
+                "Essa está certa, esse teste.",
+                "Essa está certa, esse teste.",
+                "Essa aí! Essa bactéria não dá isso.",
+                "Essa está certa, esse teste."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Não dá isso.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Um adolescente de 15 anos chega ao consultório com suspeita de síndrome mononucleosiforme; o hemograma mostra linfopenia óbvia. Em relação aos possíveis agentes etiológicos indique a opção CORRETA:",
@@ -15393,7 +15493,27 @@
             "Vírus Epstein-Barr (EBV).",
             "Streptococcus pyogenes",
             "Vírus da imunodeficiência humana."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Toxoplasma gondii provoca linfocitose, não linfopenia.",
+                "O EBV causa linfocitose com linfócitos atípicos, não linfopenia.",
+                "Streptococcus pyogenes não está associado à síndrome mononucleosiforme nem à linfopenia, apresentando neutrofilia em infecções agudas.",
+                "O HIV causa síndrome mononucleosiforme aguda com linfopenia, especialmente pela redução dos linfócitos T CD4+ devido à destruição viral, indicando imunossupressão — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse sobe os linfócitos, não desce.",
+                "Esse sobe os linfócitos, não desce.",
+                "Esse nem se relaciona com isso.",
+                "Essa aí! Esse baixa os linfócitos, a correta."
+            ],
+            "gato": [
+                "Fijate: sobe, não desce.",
+                "Dado curioso: sobe, não desce.",
+                "Miau, não se relaciona.",
+                "Ronronado de aprovação! Baixa os linfócitos."
+            ]
+        }
     },
     {
         "pergunta": "Os seguintes eventos podem ocorrer durante a síndrome retroviral aguda causada pelo HIV, EXCETO",
@@ -15403,7 +15523,27 @@
             "Aparecimento de anticorpos anti-HIV.",
             "Aumento de linfócitos T CD4 no GALT.",
             "Sintomas gastrointestinais"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato podem ocorrer febre, faringite e linfadenopatias.",
+                "De fato pode ocorrer o aparecimento de anticorpos anti-HIV (soroconversão).",
+                "No síndrome retroviral agudo do HIV, ocorre DIMINUIÇÃO dos linfócitos T CD4 no GALT, devido à destruição precoce dessas células, não aumento — essa é a exceção.",
+                "De fato podem ocorrer sintomas gastrointestinais."
+            ],
+            "fantasma": [
+                "Essa está certa, esses sintomas.",
+                "Essa está certa, aparecem.",
+                "Essa aí! Ali descem, não sobem.",
+                "Essa está certa, a barriga."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Descem, não sobem.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Uma mulher chega ao consultório com uma situação recente de alto risco de exposição ao vírus da imunodeficiência humana. O teste rápido para anticorpos deu negativo. Qual teste você solicitaria como método de escolha em caso de suspeita de período de janela para HIV? Selecione a opção CORRETA",
@@ -15414,7 +15554,27 @@
             "Carga viral por culturas celulares",
             "Detecção de antígenos específicos por Western Blot",
             "Determinação do antígeno P24 por Elisa de 4ª geração"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O isolamento viral é definitivo, mas complexo, lento e impraticável para diagnóstico inicial.",
+                "Carga viral não é medida por cultivo celular, mas por PCR; cultivo não é padrão.",
+                "Western Blot detecta anticorpos, não antígenos, e só é positivo após o período de janela.",
+                "O teste ELISA de 4ª geração, que detecta anticorpos e o antígeno p24, permite diagnóstico precoce no período de janela do HIV — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso demora muito, não serve na hora.",
+                "Não se mede assim.",
+                "Esse vê outra coisa, e tarde.",
+                "Essa aí! Detecta as duas coisas, a correta."
+            ],
+            "gato": [
+                "Fijate: demora muito.",
+                "Dado curioso: não é assim.",
+                "Miau, é tarde.",
+                "Ronronado de aprovação! As duas coisas."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às seguintes situações relacionadas à transmissão do HIV, indique a opção CORRETA:",
@@ -15425,7 +15585,27 @@
             "O HIV pode ser transmitido verticalmente por via transplacentária, durante o parto ou pós-natal durante a amamentação.",
             "Se uma mulher grávida chegar ao termo com carga viral plasmática indetectável, ela não poderá optar pelo parto vaginal, pois representa um risco maior de transmissão ao recém-nascido.",
             "Se uma mulher previamente positiva chegar ao termo com carga viral plasmática indetectável, não é necessário realizar um diagnóstico virológico no recém-nascido."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Mesmo com carga viral indetectável, recomenda-se evitar a amamentação para prevenir transmissão, pois representa sim um risco, ainda que baixo.",
+                "O HIV pode ser transmitido verticalmente via transplacentária, durante o parto ou de forma pós-natal durante a amamentação — é a resposta correta.",
+                "Com carga viral indetectável, o parto vaginal é via segura, não é proibido.",
+                "O diagnóstico virológico no neonato é essencial para confirmar a infecção e iniciar tratamento precoce, não deve ser dispensado."
+            ],
+            "fantasma": [
+                "Não, melhor evitar igual.",
+                "Essa aí! Pela barriga, o parto ou a teta.",
+                "Não, pode ser normal o parto.",
+                "Não, sim precisa revisar o bebê."
+            ],
+            "gato": [
+                "Fijate: melhor evitar.",
+                "Ronronado de aprovação! As três vias.",
+                "Dado curioso: pode ser normal.",
+                "Miau, sim precisa."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo HIV, indique a opção CORRETA.",
@@ -15436,7 +15616,27 @@
             "É considerado no estágio de AIDS um indivíduo com contagem de linfócitos CD4+ superior a 200 células/mm?* e candidíase orofaríngea.",
             "A terapia antirretroviral iniciada precocemente irá recuperar os níveis de linfócitos TCD4+ na circulação e no GALT",
             "A fase inicial da infecção é caracterizada por aumento de linfócitos T CD4+ associados ao tecido linfático da mucosa intestinal e subsequente diminuição progressiva."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fase inicial da infecção pelo HIV causa sintomas como febre, exantema, faringoamigdalite e linfadenopatia, caracterizando a síndrome retroviral aguda entre 2 a 4 semanas após a infecção — é a resposta correta.",
+                "Candidíase orofaríngea com CD4+ > 200 não indica AIDS.",
+                "A terapia antirretroviral não restaura totalmente os linfócitos CD4+ no tecido linfático intestinal (GALT).",
+                "Há destruição, não aumento, dos linfócitos CD4+ no GALT na fase inicial."
+            ],
+            "fantasma": [
+                "Essa aí! No começo dá esses sintomas.",
+                "Não, com essa quantidade não é aids.",
+                "Não se recupera de todo isso.",
+                "Não, ali descem, não sobem."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Esses sintomas no começo.",
+                "Fijate: não é aids.",
+                "Dado curioso: não se recupera.",
+                "Miau, descem."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às características comuns aos abscessos hepáticos, amebianos e abscessos hepáticos de origem bacteriana, indique a opção CORRETA:",
@@ -15447,7 +15647,27 @@
             "A ultrassonografia abdominal é um procedimento que contribui para o diagnóstico presuntivo.",
             "Eles ocorrem por disseminação a partir da vesícula biliar.",
             "O diagnóstico certo é feito através da sorologia."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Apenas os abscessos bacterianos são piógenos; os amebianos contêm material necrótico, não pus típico.",
+                "A ultrassonografia abdominal é essencial no diagnóstico presuntivo de abscessos hepáticos amebianos e bacterianos, permitindo localizar e caracterizar as lesões, embora não diferencie a etiologia com certeza — é a resposta correta.",
+                "A disseminação ocorre principalmente pela via porta, não pela vesícula biliar.",
+                "A sorologia auxilia, mas não confirma o diagnóstico com certeza."
+            ],
+            "fantasma": [
+                "Só um dos dois tem pus.",
+                "Essa aí! Vê bem com a eco.",
+                "Não é por aí, é pela veia porta.",
+                "Isso ajuda, mas não confirma."
+            ],
+            "gato": [
+                "Fijate: só um.",
+                "Ronronado de aprovação! Vê com a eco.",
+                "Dado curioso: é a veia porta.",
+                "Miau, não confirma."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos vírus das Hepatites B e C, indique a opção INCORRETA:",
@@ -15458,7 +15678,27 @@
             "A profilaxia passiva é aplicável em ambos os casos contra o contágio.",
             "A detecção do genoma do HCV por RT-QPCR confirma a infecção pelo HCV.",
             "A detecção de HBsAg por um período superior a 6 meses indica infecção crônica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato tanto HBV como HCV se transmitem por via parenteral.",
+                "A profilaxia passiva com imunoglobulina específica é eficaz para HBV após exposição, mas não existe para HCV, que requer monitoramento e tratamento antiviral — essa é a opção incorreta.",
+                "De fato a RT-qPCR detecta RNA viral, confirmando infecção ativa por HCV.",
+                "De fato HBsAg por mais de 6 meses indica infecção crônica por HBV."
+            ],
+            "fantasma": [
+                "Essa está certa, os dois pelo sangue.",
+                "Essa aí! Um tem esse resgate, o outro não.",
+                "Essa está certa, confirma.",
+                "Essa está certa, seis meses."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Um tem resgate, o outro não.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à evolução das hepatites virais, indique a opção INCORRETA:",
@@ -15469,7 +15709,27 @@
             "A testagem de anticorpos anti-HBcAg é útil para evolução e monitoramento de pacientes com doença crônica.",
             "A infecção pelo VHC resolve-se espontaneamente numa baixa percentagem da população infectada.",
             "Gestantes infectadas pelo HEV podem manifestar uma forma fulminante da doença."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a infecção por HAV pode ter curso subclínico em crianças.",
+                "Anticorpos Anti-HBcAg indicam exposição prévia ao HBV, mas não refletem a atividade viral nem a evolução clínica da hepatite B crônica. Para acompanhamento, usam-se HBeAg, anti-HBe, carga viral (HBV DNA) e transaminases — essa é a opção incorreta.",
+                "De fato a infecção por HCV se resolve espontaneamente em uma porcentagem baixa da população infectada.",
+                "De fato gestantes infectadas por HEV podem manifestar forma fulminante, especialmente no terceiro trimestre."
+            ],
+            "fantasma": [
+                "Essa está certa, quase sem sintoma na criança.",
+                "Essa aí! Isso não serve pra acompanhar a evolução.",
+                "Essa está certa, poucos se curam sozinhos.",
+                "Essa está certa, fica grave na barriga."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Ronronado de aprovação! Não serve pra isso.",
+                "Dado curioso: correta.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Na mononucleose infecciosa por vírus Epstein-Barr é característico encontrar, (marque a opção CORRETA)",
@@ -15480,7 +15740,27 @@
             "Linfócitos CD8+ atípicos.",
             "Linfopenia.",
             "Linfocitose com linfócitos CD4+ atípicos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Agamaglobulinemia não ocorre, pois há produção ativa de anticorpos.",
+                "Na mononucleose infecciosa pelo EBV, há proliferação de linfócitos T citotóxicos CD8+ atípicos, que combatem a infecção — é a resposta correta.",
+                "Linfopenia está errada; há linfocitose, não diminuição de linfócitos.",
+                "Os linfócitos atípicos são CD8+, não CD4+."
+            ],
+            "fantasma": [
+                "Não, continua fazendo anticorpo.",
+                "Essa aí! Os CD8 esquisitos, a correta.",
+                "Não, sobem, não descem.",
+                "São CD8, não CD4."
+            ],
+            "gato": [
+                "Fijate: continua fazendo.",
+                "Ronronado de aprovação! Os CD8 esquisitos.",
+                "Dado curioso: sobem.",
+                "Miau, são CD8."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao diagnóstico microbiológico de hepatite, indicar a opção INCORRETA",
@@ -15491,7 +15771,27 @@
             "Considere como possível diagnóstico a hepatite aguda, para a qual solicita enzimas hepáticas; IgM anti-core HBV), HbsAg (HBV), IgM anti-HAV e anti-HCV.",
             "A presença de anti-HbsAg IgG como único marcador presente em um teste sorológico indica vacinação.",
             "Em mulher em idade fértil deve ser solicitada PCR para HEV"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato um screening anti-HCV reativo com carga viral indetectável indica possível infecção passada, resolvida, ou um falso positivo.",
+                "De fato diante de suspeita de hepatite aguda solicitam-se enzimas hepáticas, IgM anti-core HBV, HBsAg, IgM anti-HAV e anti-HCV.",
+                "De fato a presença isolada de IgG anti-HBs indica vacinação.",
+                "Solicitar PCR para HEV em mulher em idade fértil não é rotina, salvo suspeita clínica ou epidemiológica. Diagnóstico de hepatite E baseia-se em IgM anti-HEV ou PCR em casos selecionados — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, passou ou é falso.",
+                "Essa está certa, pede-se tudo isso.",
+                "Essa está certa, só pela vacina.",
+                "Essa aí! Isso não se pede sempre."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Não sempre."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes antígenos está presente no capsídeo do vírus da hepatite B?:",
@@ -15501,7 +15801,27 @@
             "AgHBs.",
             "HBxAg.",
             "HBeAg."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "HBcAg é a proteína que forma a cápside do HBV, protegendo o material genético e indicando infecção ativa — é a resposta correta.",
+                "HBsAg é a proteína do envelope viral, detectada no sangue, não na cápside.",
+                "HBxAg regula a transcrição viral, sem função estrutural.",
+                "HBeAg é uma proteína secretada associada à replicação, não faz parte da cápside."
+            ],
+            "fantasma": [
+                "Essa aí! Essa é a casquinha de dentro.",
+                "Esse é da envoltura, de fora.",
+                "Esse só regula, não é casca.",
+                "Esse se libera, não é casca."
+            ],
+            "gato": [
+                "Ronronado de aprovação! A casca de dentro.",
+                "Fijate: é a envoltura.",
+                "Dado curioso: só regula.",
+                "Miau, se libera."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à combinação dos marcadores sorológicos do VHB e seu correspondente estágio da doença, indicar a associação INCORRETA",
@@ -15512,7 +15832,27 @@
             "HBsAg persistente por mais de 6 meses, Carga viral (PCR quantitativa) para DNA do HBV e HBeAg (antígeno E do HBV) / Infecção persistente em estado ativo",
             "Anticorpos anti-HBsAg IgG, anti-HBcAg IgG (anticorpos contra o antígeno central do HBV) / Vacinado",
             "Carga viral (PCR quantitativa) para DNA do VHB na ausência de outros marcadores sorológicos/infecção oculta pelo VHB"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato HBsAg com anticorpos IgM anti-HBc indica infecção aguda.",
+                "De fato HBsAg persistente por mais de 6 meses, HBeAg e alta carga viral indicam infecção crônica ativa.",
+                "Anticorpos IgG anti-HBs e anti-HBc indicam infecção prévia resolvida, não vacinação. A vacina gera apenas anti-HBs, pois não expõe ao antígeno core (HBc). A presença de anti-HBc confirma contato natural com o HBV — essa é a opção incorreta.",
+                "De fato o DNA do HBV detectado por PCR sem marcadores sorológicos caracteriza infecção oculta, relevante em transfusões e imunossupressão."
+            ],
+            "fantasma": [
+                "Essa está certa, agudo.",
+                "Essa está certa, crônico ativo.",
+                "Essa aí! Isso é de infecção passada, não de vacina.",
+                "Essa está certa, oculta."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! É infecção passada.",
+                "Miau, correta."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à infecção pelo HIV, indique a opção INCORRETA.",
@@ -15523,7 +15863,27 @@
             "O tratamento antirretroviral pode ser iniciado precocemente, independentemente da contagem de linfócitos T CD4.",
             "A população de células infectadas que possuem provírus persiste apesar de anos de tratamento",
             "O teste de anticorpos é útil no diagnóstico e monitoramento da infecção."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato a maioria das novas infecções a nível mundial e local ocorre por transmissão sexual.",
+                "De fato o tratamento antirretroviral deve começar precocemente, independentemente do CD4.",
+                "De fato o HIV persiste em reservatórios latentes, dificultando sua erradicação.",
+                "A dosagem de anticorpos anti-HIV é essencial para o diagnóstico, mas não para o monitoramento da infecção, pois seus níveis permanecem estáveis independentemente do controle viral — essa é a opção incorreta."
+            ],
+            "fantasma": [
+                "Essa está certa, por aí se pega mais.",
+                "Essa está certa, quanto antes melhor.",
+                "Essa está certa, fica escondido.",
+                "Essa aí! Isso não muda mesmo melhorando, não serve pra acompanhar."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Miau, correta.",
+                "Ronronado de aprovação! Não serve pra acompanhar."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos seguintes marcadores sorológicos em paciente com suspeita de infecção pelo VHB: AgS: reagente; LG total anti-core: reativo; IgG anti-AgS: não reativo; IgG anti-e: reagente. Indique a opção CORRETA em relação ao seu estado infeccioso:",
@@ -15534,7 +15894,27 @@
             "Hepatite aguda anterior ao acidente.",
             "Hepatite crônica, provavelmente de longa duração.",
             "Hepatite crônica, provavelmente de evolução recente (6-12 meses de infecção)."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esperar-se-iam anticorpos IgM anti-core e ausência de IgG anti-e numa hepatite aguda decorrente do acidente.",
+                "Uma hepatite aguda prévia apresentaria IgG anti-AgS positivo, indicando resolução da infecção, o que não ocorre aqui.",
+                "O perfil sorológico indica presença do vírus (AgS positivo), exposição prévia (anti-core total positivo), ausência de imunidade protetora (IgG anti-AgS negativo) e infecção persistente com anticorpo anti-e positivo, típico da fase crônica de longa duração — é a resposta correta.",
+                "Um curso recente (6-12 meses) não explica a combinação completa de marcadores apresentada, mais compatível com cronicidade prolongada."
+            ],
+            "fantasma": [
+                "Não, faltam outros marcadores disso.",
+                "Não, faltaria outro marcador de curado.",
+                "Essa aí! Essa combinação é de muito tempo, a correta.",
+                "Não, essa combinação é de mais tempo ainda."
+            ],
+            "gato": [
+                "Fijate: não encaixa.",
+                "Dado curioso: não encaixa.",
+                "Ronronado de aprovação! Muito tempo.",
+                "Miau, é mais tempo."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às consequências das hepatites virais, indique a opção CORRETA:",
@@ -15545,7 +15925,27 @@
             "O HAV não deixa sequelas, pois a resposta imunológica resolve a infecção.",
             "A imunoprofilaxia ativa contra o HCV limita a hepatomegalia causada por esse vírus.",
             "A infecção por HEV pode evoluir para esteatose e cirrose."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hepatite B pode causar sequelas graves como cirrose e câncer hepático.",
+                "A hepatite A é aguda e autolimitada, sem evolução para cronicidade ou sequelas, devido à eficaz resposta imune que elimina o vírus e gera imunidade duradoura — é a resposta correta.",
+                "Não há vacina para hepatite C; imunoprofilaxia ativa não existe para esse vírus.",
+                "Hepatite E é geralmente autolimitada, sem evolução para fibrose ou cirrose; esteatose está ligada a outras doenças hepáticas."
+            ],
+            "fantasma": [
+                "Não, esse sim deixa sequela grave.",
+                "Essa aí! Esse se cura sozinho e sem marca.",
+                "Não, pra esse não tem vacina.",
+                "Não, esse não chega nisso."
+            ],
+            "gato": [
+                "Fijate: deixa sequela.",
+                "Ronronado de aprovação! Se cura sozinho.",
+                "Dado curioso: não tem vacina.",
+                "Miau, não chega nisso."
+            ]
+        }
     },
     {
         "pergunta": "UM dos seguintes agentes causadores de hepatite tem transmissão zoonótica:",
