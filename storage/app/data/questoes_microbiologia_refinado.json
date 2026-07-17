@@ -25783,7 +25783,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Em neonatos, anticorpos anti-VIH e antígeno p24 não confirmam infecção ativa.\n\n**Explicação:** Anticorpos maternos atravessam a placenta e podem estar no bebê sem infecção. O antígeno p24 tem baixa sensibilidade e pode gerar falso-negativo. O diagnóstico em neonatos deve usar métodos moleculares, como PCR, que detectam diretamente o vírus.\n\n**Outras opções:**  \nA) Sorologia confiável em crianças >18 meses, sem anticorpos maternos.  \nB) PCR é recomendada em neonatos para detectar infecção ativa.  \nD) Confirmar diagnóstico com teste diferente evita falsos positivos e é padrão."
+            "feedback": "**Resposta Correta:** C. Em neonatos, anticorpos anti-VIH e antígeno p24 não confirmam infecção ativa.\n\n**Explicação:** Anticorpos maternos atravessam a placenta e podem estar no bebê sem infecção. O antígeno p24 tem baixa sensibilidade e pode gerar falso-negativo. O diagnóstico em neonatos deve usar métodos moleculares, como PCR, que detectam diretamente o vírus.\n\n**Outras opções:**  \nA) Sorologia confiável em crianças >18 meses, sem anticorpos maternos.  \nB) PCR é recomendada em neonatos para detectar infecção ativa.  \nD) Confirmar diagnóstico com teste diferente evita falsos positivos e é padrão.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en adultos y niños mayores de 18 meses el diagnóstico se basa inicialmente en pruebas serológicas.",
+                    "Efectivamente en neonatos de madres VIH positivas se debe detectar el genoma viral mediante técnicas moleculares como PCR.",
+                    "En neonatos, los anticuerpos maternos atraviesan la placenta y pueden estar presentes sin infección; el antígeno p24 tiene baja sensibilidad y puede dar falso negativo. El diagnóstico en neonatos debe usar métodos moleculares como PCR, que detectan directamente el virus — esta es la opción incorrecta.",
+                    "Efectivamente en todos los casos el diagnóstico definitivo debe confirmarse con una segunda prueba diferente."
+                ],
+                "fantasma": [
+                    "Esa está bien, con la sangre primero.",
+                    "Esa está bien, con el PCR.",
+                    "¡Esta! Eso puede ser de la mamá, no del bebé.",
+                    "Esa está bien, confirmar dos veces."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Puede ser de la mamá.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 62,
@@ -25809,7 +25829,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Linfócitos atípicos e anticorpos heterófilos positivos são típicos da mononucleose infecciosa causada pelo vírus Epstein-Barr (EBV), não por Streptococcus pyogenes, que causa faringites sem esses achados.\n\n**Outras opções:**  \nA) EBV é a principal causa da síndrome mononucleosiforme, infectando linfócitos B e gerando linfocitose atípica.  \nB) Toxoplasma gondii, Trypanosoma cruzi e CMV também podem causar quadro semelhante à mononucleose.  \nD) Ampicilina ou amoxicilina em monon"
+            "feedback": "**Resposta Correta:** C. Linfócitos atípicos e anticorpos heterófilos positivos são típicos da mononucleose infecciosa causada pelo vírus Epstein-Barr (EBV), não por Streptococcus pyogenes, que causa faringites sem esses achados.\n\n**Outras opções:**  \nA) EBV é a principal causa da síndrome mononucleosiforme, infectando linfócitos B e gerando linfocitose atípica.  \nB) Toxoplasma gondii, Trypanosoma cruzi e CMV também podem causar quadro semelhante à mononucleose.  \nD) Ampicilina ou amoxicilina em monon",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el EBV es la causa más frecuente del síndrome mononucleosiforme, especialmente en adolescentes y adultos jóvenes.",
+                    "Efectivamente Toxoplasma gondii, Trypanosoma cruzi y citomegalovirus pueden presentarse con un cuadro compatible con síndrome mononucleosiforme.",
+                    "Los linfocitos atípicos y los anticuerpos heterófilos positivos son hallazgos clásicos de la mononucleosis infecciosa causada por el virus Epstein-Barr, no por Streptococcus pyogenes, que causa faringitis sin esos hallazgos — esta es la opción incorrecta.",
+                    "Efectivamente el uso erróneo de ampicilina en la mononucleosis por EBV puede provocar una erupción cutánea característica."
+                ],
+                "fantasma": [
+                    "Esa está bien, el más común.",
+                    "Esa está bien, esos también dan eso.",
+                    "¡Esta! Eso es del virus, no de esa bacteria.",
+                    "Esa está bien, sale ronchita."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es del virus.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 63,
@@ -25835,7 +25875,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "A opção D está incorreta: IgG anti-VCA negativa e IgG anti-EBNA positiva indicam infecção passada, não infecção primária recente, pois IgG anti-VCA surge no início da infecção e IgG anti-EBNA aparece depois. As opções A, B e C estão corretas: A (linfocitose com linfócitos atípicos) é comum na infecção aguda; B (teste heterófilo positivo) é útil para diagnóstico; C (IgM anti-VCA positiva e IgG anti-EBNA negativa) indica infecção primária ativa. Portanto, apenas a opção D apresenta padrão sorológico incompatível com infecção recente por EBV."
+            "feedback": "A opção D está incorreta: IgG anti-VCA negativa e IgG anti-EBNA positiva indicam infecção passada, não infecção primária recente, pois IgG anti-VCA surge no início da infecção e IgG anti-EBNA aparece depois. As opções A, B e C estão corretas: A (linfocitose com linfócitos atípicos) é comum na infecção aguda; B (teste heterófilo positivo) é útil para diagnóstico; C (IgM anti-VCA positiva e IgG anti-EBNA negativa) indica infecção primária ativa. Portanto, apenas a opção D apresenta padrão sorológico incompatível com infecção recente por EBV.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la linfocitosis con más del 10% de linfocitos atípicos es un hallazgo inespecífico pero orientador de infección aguda por EBV.",
+                    "Efectivamente el Monotest positivo es un marcador útil en adolescentes y adultos con clínica compatible.",
+                    "Efectivamente IgM anti-VCA positiva e IgG anti-EBNA negativa es el patrón típico de infección primaria activa por EBV.",
+                    "IgG anti-VCA negativa e IgG anti-EBNA positiva indican infección pasada, no infección primaria reciente, ya que la IgG anti-VCA aparece al inicio de la infección y la IgG anti-EBNA aparece después — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, orienta.",
+                    "Esa está bien, útil en grande.",
+                    "Esa está bien, activa reciente.",
+                    "¡Esta! Eso es de infección vieja, no reciente."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es infección vieja."
+                ]
+            }
         },
         {
             "numero": 64,
@@ -25861,7 +25921,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta. O EBV causa síndrome mononucleosiforme, mas anticorpos heterófilos positivos e linfocitose atípica não garantem diagnóstico confirmatório em todas as idades, especialmente em crianças, exigindo sorologia específica (anticorpos contra VCA, EBNA).  \n\n**Outras opções:**  \nA (CMV) está correta, com diagnóstico por IgM e avidez de IgG para infecção aguda.  \nB (Toxoplasma) correta, com IgM e IgG para primoinfecção recente.  \nD (HIV) correta, usando PCR para RNA viral no síndrome retroviral agudo."
+            "feedback": "**Resposta Correta:** C está incorreta. O EBV causa síndrome mononucleosiforme, mas anticorpos heterófilos positivos e linfocitose atípica não garantem diagnóstico confirmatório em todas as idades, especialmente em crianças, exigindo sorologia específica (anticorpos contra VCA, EBNA).  \n\n**Outras opções:**  \nA (CMV) está correta, com diagnóstico por IgM e avidez de IgG para infecção aguda.  \nB (Toxoplasma) correta, com IgM e IgG para primoinfecção recente.  \nD (HIV) correta, usando PCR para RNA viral no síndrome retroviral agudo.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el CMV se diagnostica mediante IgM y avidez de IgG para infección aguda.",
+                    "Efectivamente Toxoplasma gondii se diagnostica mediante detección de IgM e IgG para primoinfección reciente.",
+                    "El EBV causa síndrome mononucleosiforme, pero los anticuerpos heterófilos positivos y la linfocitosis atípica no garantizan un diagnóstico confirmatorio en todas las edades, especialmente en niños, requiriendo serología específica (anticuerpos contra VCA, EBNA) — esta es la opción incorrecta.",
+                    "Efectivamente el VIH se diagnostica mediante PCR para ARN viral en el síndrome retroviral agudo."
+                ],
+                "fantasma": [
+                    "Esa está bien, con IgM y avidez.",
+                    "Esa está bien, con esas dos.",
+                    "¡Esta! Eso no confirma en todas las edades.",
+                    "Esa está bien, con el PCR."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No en todas las edades.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 65,
@@ -25887,7 +25967,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Pessoas com HIV em tratamento antirretroviral e carga viral indetectável não transmitem o vírus sexualmente (I=I).\n\n**Explicação:** Manter carga viral indetectável (<50 cópias/mL) elimina o risco de transmissão sexual, comprovado por estudos.  \n\n**Erros nas outras opções:**  \nA) PEP deve começar até 72 horas após exposição, não após 7 dias.  \nB) Pessoas com carga viral indetectável não transmitem HIV.  \nC) PrEP é para pessoas HIV negativas em risco, não para quem já tem HIV."
+            "feedback": "**Resposta Correta:** D. Pessoas com HIV em tratamento antirretroviral e carga viral indetectável não transmitem o vírus sexualmente (I=I).\n\n**Explicação:** Manter carga viral indetectável (<50 cópias/mL) elimina o risco de transmissão sexual, comprovado por estudos.  \n\n**Erros nas outras opções:**  \nA) PEP deve começar até 72 horas após exposição, não após 7 dias.  \nB) Pessoas com carga viral indetectável não transmitem HIV.  \nC) PrEP é para pessoas HIV negativas em risco, não para quem já tem HIV.",
+            "explicacoes": {
+                "robo": [
+                    "La PEP debe iniciarse hasta 72 horas después de la exposición, no después de 7 días.",
+                    "Las personas con carga viral indetectable no transmiten el VIH.",
+                    "La PrEP es para personas VIH negativas en riesgo, no para quienes ya tienen VIH.",
+                    "Las personas con VIH en tratamiento antirretroviral y carga viral indetectable no transmiten el virus por vía sexual (Indetectable = Intransmisible); mantener la carga viral indetectable (<50 copias/mL) elimina el riesgo de transmisión sexual, comprobado por estudios — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No, hay que empezar antes.",
+                    "No, indetectable es no transmite.",
+                    "Esa es para el sano.",
+                    "¡Esta! Indetectable es intransmisible, la correcta."
+                ],
+                "gato": [
+                    "Fijate: hay que empezar antes.",
+                    "Dato curioso: no transmite.",
+                    "Miau, es para el sano.",
+                    "¡Ronroneo de aprobación! I=I."
+                ]
+            }
         },
         {
             "numero": 66,
@@ -25913,7 +26013,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O esquema pediátrico de vacinação contra hepatite B inclui 4 doses, garantindo profilaxia ativa eficaz ao estimular a produção de anticorpos anti-HBs protetores (≥10 mUI/ml), reduzindo a infecção crônica.\n\n**Opções Incorretas:**  \nB: Título anti-HBs <10 mUI/ml não protege, indicando necessidade de reforço.  \nC: Existe vacina contra hepatite A (profilaxia ativa), mas não contra hepatite C.  \nD: Anticorpos IgG anti-HBc indicam infecção prévia, não resposta vacinal; a resposta é medida pelos anti-HBs."
+            "feedback": "**Resposta Correta:** A. O esquema pediátrico de vacinação contra hepatite B inclui 4 doses, garantindo profilaxia ativa eficaz ao estimular a produção de anticorpos anti-HBs protetores (≥10 mUI/ml), reduzindo a infecção crônica.\n\n**Opções Incorretas:**  \nB: Título anti-HBs <10 mUI/ml não protege, indicando necessidade de reforço.  \nC: Existe vacina contra hepatite A (profilaxia ativa), mas não contra hepatite C.  \nD: Anticorpos IgG anti-HBc indicam infecção prévia, não resposta vacinal; a resposta é medida pelos anti-HBs.",
+            "explicacoes": {
+                "robo": [
+                    "El esquema pediátrico de vacunación del calendario nacional contempla 4 dosis para generar profilaxis activa eficaz contra el VHB, estimulando la producción de anticuerpos anti-HBs protectores (≥10 mUI/ml), reduciendo la infección crónica — es la respuesta correcta.",
+                    "Un título anti-HBs <10 mUI/ml NO protege, indicando la necesidad de un refuerzo.",
+                    "Existe vacuna contra la hepatitis A (profilaxis activa), pero no contra la hepatitis C.",
+                    "Los anticuerpos IgG anti-HBc indican infección previa, no respuesta vacunal; la respuesta se mide con los anti-HBs."
+                ],
+                "fantasma": [
+                    "¡Esta! Cuatro dosis, la correcta.",
+                    "No, ese número bajo no protege.",
+                    "No, para uno de los dos sí hay.",
+                    "No, eso dice que ya tuvo la infección."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Cuatro dosis.",
+                    "Fijate: no protege.",
+                    "Dato curioso: sí hay para uno.",
+                    "Miau, ya tuvo la infección."
+                ]
+            }
         },
         {
             "numero": 67,
@@ -25939,7 +26059,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. O vírus da hepatite E (VHE) pode causar manifestações extra-hepáticas, como complicações neurológicas, renais, pancreatite e hematológicas, não se limitando ao fígado.  \n\n**Outras opções:**  \nA) Infecção crônica é rara e ocorre principalmente em imunossuprimidos;  \nC) Genótipos 3 e 4 são prevalentes no Brasil, com transmissão zoonótica;  \nD) Existe vacina recombinante contra o VHE usada na China. Todas essas informações estão corretas."
+            "feedback": "**Resposta Correta:** B. O vírus da hepatite E (VHE) pode causar manifestações extra-hepáticas, como complicações neurológicas, renais, pancreatite e hematológicas, não se limitando ao fígado.  \n\n**Outras opções:**  \nA) Infecção crônica é rara e ocorre principalmente em imunossuprimidos;  \nC) Genótipos 3 e 4 são prevalentes no Brasil, com transmissão zoonótica;  \nD) Existe vacina recombinante contra o VHE usada na China. Todas essas informações estão corretas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente existe la posibilidad de infección crónica por VHE, principalmente en inmunosuprimidos.",
+                    "El VHE puede causar manifestaciones extrahepáticas, como complicaciones neurológicas, renales, pancreatitis y hematológicas, no limitándose al hígado — esta es la opción incorrecta.",
+                    "Efectivamente los genotipos 3 y 4, presentes en nuestro país, se corresponden con transmisión zoonótica/contacto directo.",
+                    "Efectivamente existe profilaxis activa con una vacuna recombinante que desarrolla inmunidad contra las proteínas de la cápside viral."
+                ],
+                "fantasma": [
+                    "Esa está bien, puede pasar.",
+                    "¡Esta! Ese también toca otros órganos.",
+                    "Esa está bien, esos dos genotipos.",
+                    "Esa está bien, la vacuna existe."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Toca otros órganos.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 68,
@@ -25965,7 +26105,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C está incorreta. HBsAg indica infecção ativa pelo VHB, não proteção. Proteção é dada por anticorpos anti-HBs >10 UI/L, presentes após vacinação.  \nOpções A, B e D estão corretas:  \nA) IgM anti-VHA e IgM anti-HBc indicam infecção aguda;  \nB) IgG anti-HCV e RNA viral indicam hepatite C crônica;  \nD) anti-HBe aparece na fase crônica do VHB, indicando menor replicação viral.  \nAssim, C confunde marcador de infecção ativa com marcador de proteção."
+            "feedback": "Resposta correta: C está incorreta. HBsAg indica infecção ativa pelo VHB, não proteção. Proteção é dada por anticorpos anti-HBs >10 UI/L, presentes após vacinação.  \nOpções A, B e D estão corretas:  \nA) IgM anti-VHA e IgM anti-HBc indicam infecção aguda;  \nB) IgG anti-HCV e RNA viral indicam hepatite C crônica;  \nD) anti-HBe aparece na fase crônica do VHB, indicando menor replicação viral.  \nAssim, C confunde marcador de infecção ativa com marcador de proteção.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en el diagnóstico de las hepatitis agudas por VHA y VHB es útil la búsqueda de anticuerpos IgM específicos.",
+                    "Efectivamente la detección de ARN genómico del VHC puede acompañar la presencia de IgG anti-HCV en plasma en la hepatitis crónica.",
+                    "El HBsAg indica infección activa por el VHB, no protección; la protección la dan los anticuerpos anti-HBs >10 UI/L, presentes tras la vacunación — esta es la opción incorrecta.",
+                    "Efectivamente la presencia de anti-HBe puede ocurrir durante la cronicidad, indicando menor replicación viral."
+                ],
+                "fantasma": [
+                    "Esa está bien, con esa IgM.",
+                    "Esa está bien, junto con eso.",
+                    "¡Esta! Eso dice que está infectado, no protegido.",
+                    "Esa está bien, puede pasar en crónico."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Está infectado.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 69,
@@ -25991,7 +26151,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta correta:** C. As IgG totais anti-HBc permanecem positivas na hepatite B crônica, indicando infecção persistente. Diferente do anti-HBc IgM, típico da fase aguda, o anti-HBc IgG é marcador sensível para cronicidade.\n\n**Opção A incorreta:** Transmissão vertical do VHB leva maior risco de cronicidade, não curso autolimitado.\n\n**Opção B incorreta:** Hepatites crônicas por VHC não têm quadro clínico distintivo em relação a outros vírus hepatotrópicos.\n\n**Opção D incompleta:** Informação insuficiente para avaliação."
+            "feedback": "**Resposta correta:** C. As IgG totais anti-HBc permanecem positivas na hepatite B crônica, indicando infecção persistente. Diferente do anti-HBc IgM, típico da fase aguda, o anti-HBc IgG é marcador sensível para cronicidade.\n\n**Opção A incorreta:** Transmissão vertical do VHB leva maior risco de cronicidade, não curso autolimitado.\n\n**Opção B incorreta:** Hepatites crônicas por VHC não têm quadro clínico distintivo em relação a outros vírus hepatotrópicos.\n\n**Opção D incompleta:** Informação insuficiente para avaliação.",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión vertical del VHB conlleva mayor riesgo de cronicidad, no un curso autolimitado.",
+                    "El cuadro clínico de las hepatitis crónicas por VHC no es distintivo respecto a otros virus hepatótropos.",
+                    "Las IgG totales anti-HBc permanecen positivas en la hepatitis B crónica, indicando infección persistente; a diferencia del anti-HBc IgM, típico de la fase aguda, el anti-HBc IgG es marcador sensible de cronicidad — es la respuesta correcta.",
+                    "Los antivirales de acción directa contra el VHC actúan inhibiendo enzimas virales (proteasa, polimerasa, NS5A), no impidiendo el ingreso al núcleo."
+                ],
+                "fantasma": [
+                    "No, es al revés, se hace más crónico.",
+                    "No, se parecen todos.",
+                    "¡Esta! Ese anticuerpo se queda en el crónico.",
+                    "No, actúan de otra forma."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: se parecen.",
+                    "¡Ronroneo de aprobación! Se queda en crónico.",
+                    "Miau, es otra forma."
+                ]
+            }
         },
         {
             "numero": 70,
@@ -26017,7 +26197,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A infecção aguda por hepatite A é diagnosticada por anticorpos IgM anti-VHA, não por métodos diretos como detecção do RNA viral. IgM indica infecção aguda; IgG, imunidade.\n\n**Outras opções:**  \nB está correta, definindo infecção crônica por hepatite B pela persistência do HBsAg por mais de 6 meses.  \nC está correta, pois soroconversão de IgG anti-HBe e desaparecimento do HBeAg indicam melhora na infecção crônica por VHB.  \nD está correta, pois o diagnóstico da hepatite C crônica requer detecção molecular do RNA viral, não só sorologia."
+            "feedback": "**Resposta Correta:** A infecção aguda por hepatite A é diagnosticada por anticorpos IgM anti-VHA, não por métodos diretos como detecção do RNA viral. IgM indica infecção aguda; IgG, imunidade.\n\n**Outras opções:**  \nB está correta, definindo infecção crônica por hepatite B pela persistência do HBsAg por mais de 6 meses.  \nC está correta, pois soroconversão de IgG anti-HBe e desaparecimento do HBeAg indicam melhora na infecção crônica por VHB.  \nD está correta, pois o diagnóstico da hepatite C crônica requer detecção molecular do RNA viral, não só sorologia.",
+            "explicacoes": {
+                "robo": [
+                    "La infección aguda por hepatitis A se diagnostica por anticuerpos IgM anti-VHA, no por métodos directos como la detección del ARN viral; la IgM indica infección aguda, la IgG indica inmunidad — esta es la opción incorrecta.",
+                    "Efectivamente la infección crónica por VHB se define por la persistencia de HBsAg por más de 6 meses.",
+                    "Efectivamente la seroconversión a IgG anti-HBe y la desaparición de HBeAg distinguen dos etapas de la infección crónica por VHB.",
+                    "Efectivamente el diagnóstico de certeza de infección crónica por VHC se realiza con métodos moleculares que cuantifican el ARN viral."
+                ],
+                "fantasma": [
+                    "¡Esta! Es con anticuerpo, no directo.",
+                    "Esa está bien, seis meses.",
+                    "Esa está bien, esas dos etapas.",
+                    "Esa está bien, con el ARN."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es con anticuerpo.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 71,
@@ -26043,7 +26243,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Todo paciente com HIV deve iniciar terapia antirretroviral (TARV) imediatamente, independentemente da carga viral ou CD4. O início precoce reduz a replicação viral, preserva o sistema imunológico e diminui transmissão. \n\nOpção A incorreta: CD4 não retorna totalmente ao normal após fase aguda sem tratamento.  \nOpção B incorreta: carga viral deve ser monitorada em todas as fases, não só aguda e AIDS.  \nOpção D incorreta: TARV controla o vírus, mas não cura, pois reservatórios virais persistem."
+            "feedback": "Resposta correta: C. Todo paciente com HIV deve iniciar terapia antirretroviral (TARV) imediatamente, independentemente da carga viral ou CD4. O início precoce reduz a replicação viral, preserva o sistema imunológico e diminui transmissão. \n\nOpção A incorreta: CD4 não retorna totalmente ao normal após fase aguda sem tratamento.  \nOpção B incorreta: carga viral deve ser monitorada em todas as fases, não só aguda e AIDS.  \nOpção D incorreta: TARV controla o vírus, mas não cura, pois reservatórios virais persistem.",
+            "explicacoes": {
+                "robo": [
+                    "El CD4 no regresa totalmente a lo normal tras la fase aguda sin tratamiento.",
+                    "La carga viral debe monitorearse en todas las fases, no solo en la aguda y en el SIDA.",
+                    "Todo paciente VIH positivo debe comenzar la terapia antirretroviral lo más temprano posible, independientemente de la carga viral o el CD4; el inicio precoz reduce la replicación viral, preserva el sistema inmunológico y disminuye la transmisión — es la respuesta correcta.",
+                    "La TARV controla el virus, pero no cura, ya que los reservorios virales persisten."
+                ],
+                "fantasma": [
+                    "No, no vuelve del todo a lo normal.",
+                    "No, se mide siempre.",
+                    "¡Esta! Empezar ya, sin importar el número.",
+                    "No, no cura, el virus se esconde."
+                ],
+                "gato": [
+                    "Fijate: no vuelve del todo.",
+                    "Dato curioso: siempre se mide.",
+                    "¡Ronroneo de aprobación! Empezar ya.",
+                    "Miau, se esconde el virus."
+                ]
+            }
         },
         {
             "numero": 72,
@@ -26069,7 +26289,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. O tratamento oportuno da gestante e do neonato previne a transmissão vertical do HIV.\n\nA transmissão vertical ocorre durante gestação, parto ou amamentação, mas pode ser evitada com terapia antirretroviral precoce na mãe, manejo adequado do parto e profilaxia no bebê.  \n\n**Outras opções:**  \nA: Diagnóstico não é feito por contagem de CD4, mas por testes sorológicos e confirmatórios.  \nB: Ausência de carga viral não significa cura, pois o vírus permanece latente.  \nC: Neonatos são diagnosticados por PCR, não por sorologia, devido à presença de anticorpos maternos."
+            "feedback": "**Resposta Correta:** D. O tratamento oportuno da gestante e do neonato previne a transmissão vertical do HIV.\n\nA transmissão vertical ocorre durante gestação, parto ou amamentação, mas pode ser evitada com terapia antirretroviral precoce na mãe, manejo adequado do parto e profilaxia no bebê.  \n\n**Outras opções:**  \nA: Diagnóstico não é feito por contagem de CD4, mas por testes sorológicos e confirmatórios.  \nB: Ausência de carga viral não significa cura, pois o vírus permanece latente.  \nC: Neonatos são diagnosticados por PCR, não por sorologia, devido à presença de anticorpos maternos.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico no se hace por recuento de CD4, sino por pruebas serológicas y confirmatorias.",
+                    "La ausencia de carga viral no significa cura, ya que el virus permanece latente.",
+                    "Los neonatos se diagnostican por PCR, no por serología, debido a la presencia de anticuerpos maternos.",
+                    "El tratamiento oportuno de la persona gestante y del neonato puede evitar la transmisión vertical del VIH; la transmisión vertical ocurre durante la gestación, el parto o la lactancia, pero puede evitarse con terapia antirretroviral precoz en la madre, manejo adecuado del parto y profilaxis en el bebé — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No es por ese número.",
+                    "No, el virus se esconde igual.",
+                    "No, es con PCR.",
+                    "¡Esta! Cuidando a tiempo se evita, la correcta."
+                ],
+                "gato": [
+                    "Fijate: no es así.",
+                    "Dato curioso: se esconde.",
+                    "Miau, es con PCR.",
+                    "¡Ronroneo de aprobación! Se evita a tiempo."
+                ]
+            }
         },
         {
             "numero": 73,
@@ -26095,7 +26335,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Carga viral para EBV não é exame padrão para diagnóstico da mononucleose infecciosa, sendo útil apenas em pacientes imunocomprometidos para monitorar reativação.  \n\n**Outras opções:**  \nA. IgG anti-VCA indica exposição prévia, não infecção aguda.  \nC. IgM anti-VCA é marcador de infecção recente e diagnóstico da mononucleose.  \nD. IgG anti-EBNA surge após infecção e indica infecção passada.  \n\nPortanto, o diagnóstico baseia-se em sorologia (IgM e IgG anti-VCA, IgG anti-EBNA), não em carga viral."
+            "feedback": "**Resposta Correta:** B. Carga viral para EBV não é exame padrão para diagnóstico da mononucleose infecciosa, sendo útil apenas em pacientes imunocomprometidos para monitorar reativação.  \n\n**Outras opções:**  \nA. IgG anti-VCA indica exposição prévia, não infecção aguda.  \nC. IgM anti-VCA é marcador de infecção recente e diagnóstico da mononucleose.  \nD. IgG anti-EBNA surge após infecção e indica infecção passada.  \n\nPortanto, o diagnóstico baseia-se em sorologia (IgM e IgG anti-VCA, IgG anti-EBNA), não em carga viral.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la IgG anti-VCA indica exposición previa, útil en el panel diagnóstico.",
+                    "La carga viral para EBV no es un examen estándar para el diagnóstico de la mononucleosis infecciosa, siendo útil solo en pacientes inmunocomprometidos para monitorear la reactivación — esta es la excepción.",
+                    "Efectivamente la IgM anti-VCA es marcador de infección reciente y diagnóstico de la mononucleosis.",
+                    "Efectivamente la IgG anti-EBNA surge tras la infección e indica infección pasada."
+                ],
+                "fantasma": [
+                    "Esa está bien, se pide.",
+                    "¡Esta! Eso no es de rutina, es para otro caso.",
+                    "Esa está bien, se pide.",
+                    "Esa está bien, se pide."
+                ],
+                "gato": [
+                    "Fijate: se pide.",
+                    "¡Ronroneo de aprobación! No es de rutina.",
+                    "Dato curioso: se pide.",
+                    "Miau, se pide."
+                ]
+            }
         },
         {
             "numero": 74,
@@ -26121,7 +26381,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "A opção C está incorreta: a detecção de antigenemia é usada para CMV, não para confirmar infecção aguda por HHV-6, que é diagnosticada por PCR ou sorologia devido à latência viral. As opções A, B e D estão corretas: A) EBV transmite-se por saliva; B) EBV e HHV-6 pertencem à família Herpesviridae, associada a síndromes mononucleosiformes; D) descartar HIV é importante no diagnóstico diferencial da síndrome mononucleosiforme."
+            "feedback": "A opção C está incorreta: a detecção de antigenemia é usada para CMV, não para confirmar infecção aguda por HHV-6, que é diagnosticada por PCR ou sorologia devido à latência viral. As opções A, B e D estão corretas: A) EBV transmite-se por saliva; B) EBV e HHV-6 pertencem à família Herpesviridae, associada a síndromes mononucleosiformes; D) descartar HIV é importante no diagnóstico diferencial da síndrome mononucleosiforme.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el virus de Epstein-Barr se transmite por contacto persona a persona a través de la saliva.",
+                    "Efectivamente los agentes más frecuentes pertenecen a la familia Herpesviridae.",
+                    "La detección de antigenemia se usa para CMV, no para confirmar la infección aguda por HHV-6, que se diagnostica por PCR o serología debido a la latencia viral — esta es la opción incorrecta.",
+                    "Efectivamente se debe descartar la infección por VIH."
+                ],
+                "fantasma": [
+                    "Esa está bien, con la saliva.",
+                    "Esa está bien, esa familia.",
+                    "¡Esta! Esa prueba es de otro virus.",
+                    "Esa está bien, hay que descartar."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es de otro virus.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 75,
@@ -26147,7 +26427,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. Um teste de triagem reativo para HIV detecta antígeno e anticorpos, mas não confirma o diagnóstico, pois pode haver falsos positivos; é necessária confirmação por testes específicos (Western blot, imunoblot) ou carga viral.  \n\n**Outras opções:**  \nA está correta, pois teste não reativo geralmente indica ausência de infecção, considerando o período janela.  \nC e D também estão corretas, pois a confirmação por carga viral e a avaliação adicional em casos de carga viral indetectável são recomendadas."
+            "feedback": "**Resposta Correta:** B está incorreta. Um teste de triagem reativo para HIV detecta antígeno e anticorpos, mas não confirma o diagnóstico, pois pode haver falsos positivos; é necessária confirmação por testes específicos (Western blot, imunoblot) ou carga viral.  \n\n**Outras opções:**  \nA está correta, pois teste não reativo geralmente indica ausência de infecção, considerando o período janela.  \nC e D também estão corretas, pois a confirmação por carga viral e a avaliação adicional em casos de carga viral indetectável são recomendadas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente un tamizaje de antígeno y anticuerpos no reactivo generalmente indica ausencia de infección, considerando el período ventana.",
+                    "Un tamizaje de antígeno y anticuerpos reactivo NO confirma el diagnóstico, ya que puede haber falsos positivos; es necesaria la confirmación con pruebas específicas o carga viral — esta es la opción incorrecta.",
+                    "Efectivamente un tamizaje reactivo debe confirmarse mediante carga viral.",
+                    "Efectivamente un tamizaje reactivo seguido de carga viral indetectable indica realizar una nueva búsqueda de anticuerpos específicos."
+                ],
+                "fantasma": [
+                    "Esa está bien, negativo es negativo.",
+                    "¡Esta! Eso todavía necesita confirmar.",
+                    "Esa está bien, se confirma así.",
+                    "Esa está bien, se busca de nuevo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Necesita confirmar.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 76,
@@ -26173,7 +26473,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. A amamentação fornece anticorpos IgA ao recém-nascido. Porém, não previne a infecção pelo HIV, pois o vírus pode ser transmitido pelo leite materno, aumentando o risco de transmissão vertical. \n\nOutras opções:  \nB. Profilaxia pré e pós-exposição com antirretrovirais é eficaz na prevenção do HIV.  \nC. Uso correto de preservativos previne a transmissão sexual do HIV.  \nD. Tratamento antirretroviral em gestantes reduz a carga viral e o risco de transmissão vertical.  \n\nPortanto, amamentar não previne o HIV e pode facilitar a transmissão, ao contrário das outras estratégias recomendadas."
+            "feedback": "Resposta correta: A. A amamentação fornece anticorpos IgA ao recém-nascido. Porém, não previne a infecção pelo HIV, pois o vírus pode ser transmitido pelo leite materno, aumentando o risco de transmissão vertical. \n\nOutras opções:  \nB. Profilaxia pré e pós-exposição com antirretrovirais é eficaz na prevenção do HIV.  \nC. Uso correto de preservativos previne a transmissão sexual do HIV.  \nD. Tratamento antirretroviral em gestantes reduz a carga viral e o risco de transmissão vertical.  \n\nPortanto, amamentar não previne o HIV e pode facilitar a transmissão, ao contrário das outras estratégias recomendadas.",
+            "explicacoes": {
+                "robo": [
+                    "La lactancia materna aporta anticuerpos IgA al recién nacido, pero NO previene la infección por VIH, ya que el virus puede transmitirse por la leche materna, aumentando el riesgo de transmisión vertical — esta es la excepción.",
+                    "Efectivamente la profilaxis pre y post-exposición con antirretrovirales es eficaz en la prevención del VIH.",
+                    "Efectivamente el uso correcto de preservativos previene la transmisión sexual del VIH.",
+                    "Efectivamente el tratamiento antirretroviral en gestantes reduce la carga viral y el riesgo de transmisión vertical."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa leche puede llevar el virus también.",
+                    "Esa está bien, con la pastilla.",
+                    "Esa está bien, con el forrito.",
+                    "Esa está bien, cuidando a la mamá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Puede llevar el virus.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -26199,7 +26519,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. O paciente é suscetível à hepatite A (IgM e IgG anti-HAV negativas) e já foi exposto à hepatite B (anti-HBc total positivo, IgM anti-HBc negativa), sem infecção ativa.  \nOpção A está errada, pois exposição natural (anti-HBc positivo) não indica vacinação.  \nOpções C e D são incorretas, pois a ausência de IgM anti-HAV e IgM anti-HBc exclui hepatites agudas.  \nAssim, o perfil sorológico indica suscetibilidade à hepatite A e exposição prévia à hepatite B, sem infecção recente."
+            "feedback": "Resposta correta: B. O paciente é suscetível à hepatite A (IgM e IgG anti-HAV negativas) e já foi exposto à hepatite B (anti-HBc total positivo, IgM anti-HBc negativa), sem infecção ativa.  \nOpção A está errada, pois exposição natural (anti-HBc positivo) não indica vacinação.  \nOpções C e D são incorretas, pois a ausência de IgM anti-HAV e IgM anti-HBc exclui hepatites agudas.  \nAssim, o perfil sorológico indica suscetibilidade à hepatite A e exposição prévia à hepatite B, sem infecção recente.",
+            "explicacoes": {
+                "robo": [
+                    "La exposición natural (anti-HBc positivo) no indica vacunación, ya que la vacuna no genera anti-HBc.",
+                    "El paciente es susceptible a la hepatitis A (IgM e IgG anti-HAV negativas) y ya fue expuesto a la hepatitis B (anti-HBc total positivo, IgM anti-HBc negativa), sin infección activa — es la respuesta correcta.",
+                    "La ausencia de IgM anti-HAV e IgM anti-HBc excluye las hepatitis agudas.",
+                    "La ausencia de anti-HAV total (no mencionada como positiva) y la ausencia de IgM anti-HBc no son compatibles con esta interpretación."
+                ],
+                "fantasma": [
+                    "No, eso no viene de vacuna, viene de haber tenido contacto.",
+                    "¡Esta! Nunca tuvo la A, ya conoció la B.",
+                    "No, no hay nada agudo aquí.",
+                    "No, no dice que se curó de la A."
+                ],
+                "gato": [
+                    "Fijate: no es vacuna.",
+                    "¡Ronroneo de aprobación! Nunca tuvo la A.",
+                    "Dato curioso: no hay agudo.",
+                    "Miau, no dice eso."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -26225,7 +26565,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A ingestão de alimentos contaminados com fezes bovinas não causa abscesso amebiano hepático, que é causado por *Entamoeba histolytica* transmitida via fezes humanas.  \n\n**Outras opções:**  \nB está correta: doença biliar é a principal causa dos abscessos hepáticos bacterianos.  \nC está correta: sorologia para *E. histolytica* é sensível no diagnóstico amebiano.  \nD está correta: cultivos de abscessos piogênicos geralmente são positivos, auxiliando na terapia."
+            "feedback": "**Resposta Correta:** A ingestão de alimentos contaminados com fezes bovinas não causa abscesso amebiano hepático, que é causado por *Entamoeba histolytica* transmitida via fezes humanas.  \n\n**Outras opções:**  \nB está correta: doença biliar é a principal causa dos abscessos hepáticos bacterianos.  \nC está correta: sorologia para *E. histolytica* é sensível no diagnóstico amebiano.  \nD está correta: cultivos de abscessos piogênicos geralmente são positivos, auxiliando na terapia.",
+            "explicacoes": {
+                "robo": [
+                    "La ingesta de alimentos contaminados con materia fecal bovina no causa absceso amebiano hepático, que es causado por Entamoeba histolytica transmitida vía heces humanas — esta es la opción incorrecta.",
+                    "Efectivamente la enfermedad biliar es la causa principal de los abscesos bacterianos hepáticos.",
+                    "Efectivamente la serología para E. histolytica es sensible en el diagnóstico amebiano.",
+                    "Efectivamente los cultivos de abscesos piógenos suelen ser positivos, ayudando en la terapia."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa ameba es de caca humana, no de vaca.",
+                    "Esa está bien, la vía biliar.",
+                    "Esa está bien, sensible.",
+                    "Esa está bien, casi siempre positivo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de caca humana.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -26251,7 +26611,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. O vírus Epstein-Barr (EBV) transmite-se principalmente pela saliva, por contato direto como beijo ou compartilhamento de utensílios, causando mononucleose infecciosa.  \n\n**Outras opções:**  \nA. Transmissão sexual é rara e não relevante epidemiologicamente.  \nC. A eliminação viral nas secreções respiratórias é intermitente, não permanente.  \nD. Transmissão vertical é extremamente rara e não frequente."
+            "feedback": "**Resposta Correta:** B. O vírus Epstein-Barr (EBV) transmite-se principalmente pela saliva, por contato direto como beijo ou compartilhamento de utensílios, causando mononucleose infecciosa.  \n\n**Outras opções:**  \nA. Transmissão sexual é rara e não relevante epidemiologicamente.  \nC. A eliminação viral nas secreções respiratórias é intermitente, não permanente.  \nD. Transmissão vertical é extremamente rara e não frequente.",
+            "explicacoes": {
+                "robo": [
+                    "La transmisión sexual es rara y no relevante epidemiológicamente.",
+                    "El virus Epstein-Barr se transmite principalmente por la saliva, por contacto directo como beso o compartir utensilios, causando mononucleosis infecciosa — es la respuesta correcta.",
+                    "La eliminación viral en secreciones respiratorias es intermitente, no permanente.",
+                    "La transmisión vertical es extremadamente rara y no frecuente."
+                ],
+                "fantasma": [
+                    "No, no es esa la principal.",
+                    "¡Esta! Por el beso o el mate, la correcta.",
+                    "No, va y viene.",
+                    "No, es muy raro así."
+                ],
+                "gato": [
+                    "Fijate: no es esa.",
+                    "¡Ronroneo de aprobación! Por el beso.",
+                    "Dato curioso: va y viene.",
+                    "Miau, es raro."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -26277,7 +26657,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está incorreta porque a detecção de IgM anti-HCV não é um bom marcador da fase aguda da hepatite C, diferentemente de outras hepatites. A resposta imune humoral contra HCV é atípica, e os testes clínicos detectam principalmente anticorpos totais (IgG).  \nAs opções A, C e D estão corretas: A) a carga viral por PCR é essencial para monitorar a infecção; C) a transmissão é principalmente parenteral; D) a genotipagem orienta o tratamento e o prognóstico."
+            "feedback": "Resposta correta: B está incorreta porque a detecção de IgM anti-HCV não é um bom marcador da fase aguda da hepatite C, diferentemente de outras hepatites. A resposta imune humoral contra HCV é atípica, e os testes clínicos detectam principalmente anticorpos totais (IgG).  \nAs opções A, C e D estão corretas: A) a carga viral por PCR é essencial para monitorar a infecção; C) a transmissão é principalmente parenteral; D) a genotipagem orienta o tratamento e o prognóstico.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la carga viral plasmática se usa para monitorear el curso de la infección y la respuesta al tratamiento.",
+                    "La detección de IgM específica anti-HCV NO es un buen marcador de la fase aguda de la hepatitis C, a diferencia de otras hepatitis; la respuesta inmune humoral contra el HCV es atípica, y los tests clínicos detectan principalmente anticuerpos totales (IgG) — esta es la opción incorrecta.",
+                    "Efectivamente la vía de transmisión predominante del HCV es la parenteral, mientras que la sexual y vertical son infrecuentes.",
+                    "Efectivamente el estudio de genotipificación viral tiene valor en la elección de tratamiento y pronóstico."
+                ],
+                "fantasma": [
+                    "Esa está bien, se sigue con eso.",
+                    "¡Esta! Esa prueba no marca bien lo agudo acá.",
+                    "Esa está bien, por sangre.",
+                    "Esa está bien, dice el tratamiento."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No marca bien.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 5,
