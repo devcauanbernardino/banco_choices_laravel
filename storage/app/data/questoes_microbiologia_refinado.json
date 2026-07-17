@@ -14747,7 +14747,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. A vacina BCG é aplicada em dose única em recém-nascidos com peso acima de 2 kg, protegendo contra formas graves da tuberculose infantil.  \nOpção A está errada: BCG não é profilaxia pós-exposição para trabalhadores de saúde.  \nOpção B está errada: BCG é contraindicada em crianças imunodeficientes por ser vacina viva atenuada.  \nOpção D está errada: BCG não previne a infecção por M. tuberculosis, apenas reduz o risco de doença ativa grave.  \nPortanto, a única correta é a aplicação da BCG em recém-nascidos com peso adequado."
+            "feedback": "Resposta correta: C. A vacina BCG é aplicada em dose única em recém-nascidos com peso acima de 2 kg, protegendo contra formas graves da tuberculose infantil.  \nOpção A está errada: BCG não é profilaxia pós-exposição para trabalhadores de saúde.  \nOpção B está errada: BCG é contraindicada em crianças imunodeficientes por ser vacina viva atenuada.  \nOpção D está errada: BCG não previne a infecção por M. tuberculosis, apenas reduz o risco de doença ativa grave.  \nPortanto, a única correta é a aplicação da BCG em recém-nascidos com peso adequado.",
+            "explicacoes": {
+                "robo": [
+                    "La BCG no es profilaxis post-exposición para trabajadores de la salud.",
+                    "La BCG está contraindicada en niños inmunodeficientes, al ser una vacuna viva atenuada.",
+                    "La vacuna BCG efectivamente se administra a los recién nacidos con peso mayor a 2 kg en una sola dosis, protegiendo contra las formas graves de tuberculosis infantil — es la respuesta correcta.",
+                    "La BCG no previene la infección por M. tuberculosis, solo reduce el riesgo de enfermedad activa grave."
+                ],
+                "fantasma": [
+                    "No es para eso.",
+                    "Al revés, está contraindicada.",
+                    "¡Esta! Al nacer, con ese peso.",
+                    "No evita la infección, solo lo grave."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Al nacer.",
+                    "Miau, no evita todo."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -14773,7 +14793,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A ativação dos macrófagos pelo interferon-gama, produzido por linfócitos Th1 e células NK, é crucial para controlar Mycobacterium tuberculosis, promovendo a produção de espécies reativas e a formação do granuloma, que limita a infecção.  \n\n**Outras opções:**  \nA) Anticorpos da vacina BCG têm papel limitado; a proteção depende da resposta celular Th1.  \nB) Tratamento visa eliminar a bactéria ativa, não manter a tuberculose latente.  \nD) Resposta Th2, focada em anticorpos, é ineficaz contra patógenos intracelulares como M. tuberculosis."
+            "feedback": "**Resposta Correta:** C. A ativação dos macrófagos pelo interferon-gama, produzido por linfócitos Th1 e células NK, é crucial para controlar Mycobacterium tuberculosis, promovendo a produção de espécies reativas e a formação do granuloma, que limita a infecção.  \n\n**Outras opções:**  \nA) Anticorpos da vacina BCG têm papel limitado; a proteção depende da resposta celular Th1.  \nB) Tratamento visa eliminar a bactéria ativa, não manter a tuberculose latente.  \nD) Resposta Th2, focada em anticorpos, é ineficaz contra patógenos intracelulares como M. tuberculosis.",
+            "explicacoes": {
+                "robo": [
+                    "Los anticuerpos de la vacuna BCG tienen un papel limitado; la protección depende de la respuesta celular Th1.",
+                    "El tratamiento busca eliminar la bacteria activa, no mantener la tuberculosis latente.",
+                    "La activación de los macrófagos por interferón-gamma, producido por linfocitos Th1 y células NK, es crucial para controlar Mycobacterium tuberculosis, promoviendo la producción de especies reactivas y la formación del granuloma que limita la infección — es la respuesta correcta.",
+                    "Una respuesta Th2, enfocada en anticuerpos, es ineficaz contra patógenos intracelulares como M. tuberculosis."
+                ],
+                "fantasma": [
+                    "Ese anticuerpo hace poco.",
+                    "Al revés, se busca eliminar la bacteria.",
+                    "¡Esta! El interferón activa al macrófago.",
+                    "Th2 no sirve contra ese bicho."
+                ],
+                "gato": [
+                    "Fijate: hace poco.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! El interferón activa.",
+                    "Miau, no sirve."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -14799,7 +14839,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. Actinomyces são bactérias anaeróbias facultativas ou obrigatórias, exigindo meios e condições anaeróbias para seu cultivo, não crescendo bem em aerobiose.  \n**Outras opções:**  \nA está correta, pois o cultivo específico para micobactérias é essencial em suspeitas de doenças granulomatosas pulmonares.  \nB está correta; Nocardias crescem em agar-sangue e Sabouraud, mas seu crescimento é lento, podendo levar até 4 semanas.  \nC está correta; algumas micobactérias atípicas crescem mais rápido que Mycobacterium tuberculosis, auxiliando na diferenciação laboratorial."
+            "feedback": "**Resposta Correta:** D está incorreta. Actinomyces são bactérias anaeróbias facultativas ou obrigatórias, exigindo meios e condições anaeróbias para seu cultivo, não crescendo bem em aerobiose.  \n**Outras opções:**  \nA está correta, pois o cultivo específico para micobactérias é essencial em suspeitas de doenças granulomatosas pulmonares.  \nB está correta; Nocardias crescem em agar-sangue e Sabouraud, mas seu crescimento é lento, podendo levar até 4 semanas.  \nC está correta; algumas micobactérias atípicas crescem mais rápido que Mycobacterium tuberculosis, auxiliando na diferenciação laboratorial.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente siempre debe solicitarse cultivo para micobacterias del material respiratorio en niños.",
+                    "Efectivamente los medios de cultivo para Nocardia son agar-sangre o Sabouraud, y el resultado puede demorar hasta 4 semanas.",
+                    "Efectivamente algunas micobacterias atípicas pueden desarrollarse en cultivo en menor tiempo que M. tuberculosis.",
+                    "Actinomyces son bacterias anaerobias facultativas u obligadas, requiriendo medios y condiciones anaerobias para su cultivo, no creciendo bien en aerobiosis — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, siempre se pide.",
+                    "Esa está bien, hasta 4 semanas.",
+                    "Esa está bien, más rápido.",
+                    "¡Esta! Ese necesita sin aire, no con aire."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Necesita sin aire."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -14825,7 +14885,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta correta:** B. A IDR é útil para catastro (controle de focos ou contatos).\n\nA IDR avalia a resposta celular a antígenos específicos, indicando exposição ou imunidade, mas não confirma doença ativa. É usada principalmente em vigilância epidemiológica para identificar pessoas expostas e controlar a disseminação.\n\nOpções incorretas:  \nA) Reação positiva não confirma doença ativa.  \nC) Resultado negativo não exclui infecção devido a fatores como imunossupressão.  \nD) O tempo de leitura (48-72h) varia e não é o foco principal da questão."
+            "feedback": "**Resposta correta:** B. A IDR é útil para catastro (controle de focos ou contatos).\n\nA IDR avalia a resposta celular a antígenos específicos, indicando exposição ou imunidade, mas não confirma doença ativa. É usada principalmente em vigilância epidemiológica para identificar pessoas expostas e controlar a disseminação.\n\nOpções incorretas:  \nA) Reação positiva não confirma doença ativa.  \nC) Resultado negativo não exclui infecção devido a fatores como imunossupressão.  \nD) O tempo de leitura (48-72h) varia e não é o foco principal da questão.",
+            "explicacoes": {
+                "robo": [
+                    "Una reacción positiva no confirma enfermedad activa, solo indica exposición o inmunidad.",
+                    "La intradermorreacción es útil para realizar catastro (control de focos o contactos), evaluando la respuesta celular a antígenos específicos y siendo utilizada principalmente en vigilancia epidemiológica — es la respuesta correcta.",
+                    "Un resultado negativo no excluye la infección en todos los casos, debido a factores como la inmunosupresión.",
+                    "El tiempo de lectura (48-72hs) es correcto, pero no es el uso principal que se destaca en esta pregunta."
+                ],
+                "fantasma": [
+                    "No confirma sola.",
+                    "¡Esta! Sirve para el catastro, la correcta.",
+                    "No descarta siempre.",
+                    "Eso es cierto, pero no es lo que pide acá."
+                ],
+                "gato": [
+                    "Fijate: no confirma.",
+                    "¡Ronroneo de aprobación! El catastro.",
+                    "Dato curioso: no descarta.",
+                    "Miau, no es el foco."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -14851,7 +14931,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Vírus causadores de rinites virais, como rinovírus e coronavírus, apresentam alta diversidade antigênica e mutabilidade, impedindo imunidade cruzada e duradoura. Por isso, infecções repetidas são comuns.\n\n**Outras opções:**\n\nA. Correta – Rinite viral é autolimitada, afetando mucosa nasal e seios paranasais, com sintomas respiratórios que se resolvem em poucos dias.\n\nB. Correta – Período de incubação curto (1-3 dias) devido à rápida replicação viral.\n\nC. Correta – Rinites podem causar dano à mucosa e favorecer infecções bacterianas secundárias."
+            "feedback": "**Resposta Correta:** D. Vírus causadores de rinites virais, como rinovírus e coronavírus, apresentam alta diversidade antigênica e mutabilidade, impedindo imunidade cruzada e duradoura. Por isso, infecções repetidas são comuns.\n\n**Outras opções:**\n\nA. Correta – Rinite viral é autolimitada, afetando mucosa nasal e seios paranasais, com sintomas respiratórios que se resolvem em poucos dias.\n\nB. Correta – Período de incubação curto (1-3 dias) devido à rápida replicação viral.\n\nC. Correta – Rinites podem causar dano à mucosa e favorecer infecções bacterianas secundárias.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la rinitis es un proceso autolimitado que incluye afección nasal y de senos paranasales.",
+                    "Efectivamente el período de incubación es muy breve, de 1 a 3 días.",
+                    "Efectivamente las rinitis virales pueden actuar como factor predisponente para sinusitis bacteriana.",
+                    "Los virus causantes de rinitis, como rinovirus y coronavirus, presentan alta diversidad antigénica y mutabilidad, impidiendo inmunidad cruzada duradera; por eso son comunes las infecciones repetidas — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, se pasa sola.",
+                    "Esa está bien, esos días.",
+                    "Esa está bien, favorece la sinusitis.",
+                    "¡Esta! Mutan mucho, no dan inmunidad larga."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Mutan mucho."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -14877,7 +14977,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. A *Corynebacterium diphtheriae* produz uma exotoxina proteica, não endotoxina, e em condições aeróbias ou facultativamente anaeróbias, não em anaerobiose estrita. A exotoxina inibe a síntese proteica nas células hospedeiras.\n\n**Outras opções:**  \nA está correta: o toxoide é usado para imunização ativa.  \nC está correta: crianças são mais suscetíveis à infecção.  \nD está correta: a doença forma pseudomembranas nas mucosas da faringe, sinal diagnóstico clássico."
+            "feedback": "**Resposta Correta:** B está incorreta. A *Corynebacterium diphtheriae* produz uma exotoxina proteica, não endotoxina, e em condições aeróbias ou facultativamente anaeróbias, não em anaerobiose estrita. A exotoxina inibe a síntese proteica nas células hospedeiras.\n\n**Outras opções:**  \nA está correta: o toxoide é usado para imunização ativa.  \nC está correta: crianças são mais suscetíveis à infecção.  \nD está correta: a doença forma pseudomembranas nas mucosas da faringe, sinal diagnóstico clássico.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el toxoide de la difteria se utiliza para la inmunización activa.",
+                    "Corynebacterium diphtheriae produce una EXOTOXINA proteica, no endotoxina, y en condiciones aerobias o facultativamente anaerobias, no en anaerobiosis estricta — esta es la opción incorrecta.",
+                    "Efectivamente los niños son particularmente propensos a contraer esta infección.",
+                    "Efectivamente se caracteriza por la aparición de falsas membranas en las superficies mucosas de la faringe."
+                ],
+                "fantasma": [
+                    "Esa está bien, el toxoide.",
+                    "¡Esta! Es exotoxina, no endotoxina, y no anaerobio estricto.",
+                    "Esa está bien, el niño.",
+                    "Esa está bien, esas membranas."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es exotoxina.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -14903,7 +15023,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O diagnóstico microbiológico de faringite por *Streptococcus pyogenes* é essencial para orientar o tratamento antibiótico adequado, prevenindo complicações supurativas (abscessos, otites) e não supurativas (febre reumática, glomerulonefrite).  \n\n**Outras opções:**  \nB está incorreta, pois a maioria das faringites é viral, não justificando diagnóstico em todos os casos.  \nC é insuficiente, pois nem toda faringite estreptocócica apresenta exantema.  \nD é inadequada, pois o exame clínico não distingue com precisão infecção por *S. pyogenes*, sendo necessário"
+            "feedback": "**Resposta Correta:** A. O diagnóstico microbiológico de faringite por *Streptococcus pyogenes* é essencial para orientar o tratamento antibiótico adequado, prevenindo complicações supurativas (abscessos, otites) e não supurativas (febre reumática, glomerulonefrite).  \n\n**Outras opções:**  \nB está incorreta, pois a maioria das faringites é viral, não justificando diagnóstico em todos os casos.  \nC é insuficiente, pois nem toda faringite estreptocócica apresenta exantema.  \nD é inadequada, pois o exame clínico não distingue com precisão infecção por *S. pyogenes*, sendo necessário",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico microbiológico de faringitis por Streptococcus pyogenes es esencial para orientar el tratamiento antibiótico adecuado, previniendo complicaciones supurativas (abscesos, otitis) y no supurativas (fiebre reumática, glomerulonefritis) — es la respuesta correcta.",
+                    "La mayoría de las faringitis son virales, no justificando el diagnóstico microbiológico en todos los casos por esta razón.",
+                    "No toda faringitis estreptocócica presenta exantema; esto es insuficiente como justificación general.",
+                    "El examen clínico no distingue con precisión la infección por S. pyogenes, siendo necesario el estudio microbiológico."
+                ],
+                "fantasma": [
+                    "¡Esta! Evita las complicaciones, la correcta.",
+                    "La mayoría es viral, no siempre.",
+                    "No todos tienen esa mancha.",
+                    "El ojo clínico no alcanza solo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Evita complicaciones.",
+                    "Fijate: la mayoría es viral.",
+                    "Dato curioso: no siempre.",
+                    "Miau, no alcanza."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -14929,7 +15069,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Micélios ramificados com artroconídios ou clamidoartroconídios.\n\nEsses micélios são típicos da fase saprofítica ambiental, não da forma parasitária nos humanos. As outras opções (A, C e D) descrevem formas parasitárias clássicas: leveduras intracelulares em macrófagos (A), leveduras multibrotantes como Paracoccidioides (C) e esferas com endosporos de Coccidioides (D), todas encontradas durante infecções sistêmicas endêmicas. Portanto, a opção B é a exceção."
+            "feedback": "**Resposta Correta:** B. Micélios ramificados com artroconídios ou clamidoartroconídios.\n\nEsses micélios são típicos da fase saprofítica ambiental, não da forma parasitária nos humanos. As outras opções (A, C e D) descrevem formas parasitárias clássicas: leveduras intracelulares em macrófagos (A), leveduras multibrotantes como Paracoccidioides (C) e esferas com endosporos de Coccidioides (D), todas encontradas durante infecções sistêmicas endêmicas. Portanto, a opção B é a exceção.",
+            "explicacoes": {
+                "robo": [
+                    "Las levaduras intracelulares dentro de macrófagos, características al Giemsa, efectivamente son una forma parasitaria clásica (Histoplasma).",
+                    "Los micelios ramificados con artroconidios o clamidoartroconidios son típicos de la fase saprofítica ambiental, no de la forma parasitaria en humanos — esta es la excepción.",
+                    "Las levaduras multibrotantes efectivamente son una forma parasitaria clásica (Paracoccidioides).",
+                    "Las esferas con endosporas efectivamente son una forma parasitaria clásica (Coccidioides)."
+                ],
+                "fantasma": [
+                    "Esa sí es parasitaria.",
+                    "¡Esta! Eso es del ambiente, no del cuerpo.",
+                    "Esa sí es parasitaria.",
+                    "Esa sí es parasitaria."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es del ambiente.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -14955,7 +15115,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Resultado negativo no teste rápido requer cultivo em agar sangue de carnero para buscar beta-hemólise típica do *S. pyogenes*. O teste rápido pode gerar falsos negativos, por isso a cultura confirma o diagnóstico. \n\nOpção A é incorreta, pois resultado negativo não descarta infecção bacteriana.  \nOpção C erra ao indicar alfa-hemólise, que não é característica do *S. pyogenes*.  \nOpção D não é padrão, pois imunofluorescência não é necessária após resultado positivo; a cultura é o padrão ouro."
+            "feedback": "Resposta correta: B. Resultado negativo no teste rápido requer cultivo em agar sangue de carnero para buscar beta-hemólise típica do *S. pyogenes*. O teste rápido pode gerar falsos negativos, por isso a cultura confirma o diagnóstico. \n\nOpção A é incorreta, pois resultado negativo não descarta infecção bacteriana.  \nOpção C erra ao indicar alfa-hemólise, que não é característica do *S. pyogenes*.  \nOpção D não é padrão, pois imunofluorescência não é necessária após resultado positivo; a cultura é o padrão ouro.",
+            "explicacoes": {
+                "robo": [
+                    "Un resultado negativo no descarta la infección bacteriana.",
+                    "Un resultado negativo requiere sembrar la muestra en agar sangre de carnero para buscar beta-hemólisis típica de S. pyogenes, ya que el test rápido puede generar falsos negativos — es la respuesta correcta.",
+                    "La alfa-hemólisis no es característica de S. pyogenes; se busca beta-hemólisis.",
+                    "Un resultado positivo no requiere confirmación por inmunofluorescencia; el cultivo es el estándar de oro."
+                ],
+                "fantasma": [
+                    "No descarta solo.",
+                    "¡Esta! Beta hemólisis, la correcta.",
+                    "Es beta, no alfa.",
+                    "El positivo no necesita eso."
+                ],
+                "gato": [
+                    "Fijate: no descarta.",
+                    "¡Ronroneo de aprobación! Beta hemólisis.",
+                    "Dato curioso: es beta.",
+                    "Miau, no necesita eso."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -14981,7 +15161,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A limitação das micoses sistêmicas endêmicas não depende da soroconversão de IgG, que indica exposição, mas sim da resposta imune celular, especialmente macrófagos e células T que formam granulomas para conter o fungo.  \n\n**Outras opções:**  \nA, B e C estão corretas: A fala da persistência do fungo após primoinfecção; B indica a via inhalatória como porta de entrada; C aborda a reativação das lesões granulomatosas com imunidade comprometida."
+            "feedback": "**Resposta Correta:** D. A limitação das micoses sistêmicas endêmicas não depende da soroconversão de IgG, que indica exposição, mas sim da resposta imune celular, especialmente macrófagos e células T que formam granulomas para conter o fungo.  \n\n**Outras opções:**  \nA, B e C estão corretas: A fala da persistência do fungo após primoinfecção; B indica a via inhalatória como porta de entrada; C aborda a reativação das lesões granulomatosas com imunidade comprometida.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente se producen por una primoinfección que no logra controlarse.",
+                    "Efectivamente la vía de entrada es la inhalatoria.",
+                    "Efectivamente pueden producirse por reactivación de lesiones granulomatosas.",
+                    "La limitación del proceso infeccioso no depende de la seroconversión de IgG, que indica exposición, sino de la respuesta inmune celular, especialmente macrófagos y células T que forman granulomas para contener el hongo — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, no se controla.",
+                    "Esa está bien, por el aire.",
+                    "Esa está bien, se reactiva.",
+                    "¡Esta! No es el IgG, es la célula."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es la célula."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -15007,7 +15207,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. A vacina inativada contra VRS é administrada a gestantes entre 32 e 36 semanas para proteger o recém-nascido via anticorpos maternos.  \nOpção B incorreta: anticorpos monoclonais (ex. palivizumabe) são usados diretamente em lactentes de alto risco, não em gestantes.  \nOpção C incorreta: plasma convalescente não é padrão para profilaxia do VRS.  \nOpção D incorreta: não há vacina atenuada contra VRS aprovada para recém-nascidos.  \nPortanto, a profilaxia atual foca na vacinação materna inativada e anticorpos monoclonais para"
+            "feedback": "Resposta correta: A. A vacina inativada contra VRS é administrada a gestantes entre 32 e 36 semanas para proteger o recém-nascido via anticorpos maternos.  \nOpção B incorreta: anticorpos monoclonais (ex. palivizumabe) são usados diretamente em lactentes de alto risco, não em gestantes.  \nOpção C incorreta: plasma convalescente não é padrão para profilaxia do VRS.  \nOpção D incorreta: não há vacina atenuada contra VRS aprovada para recém-nascidos.  \nPortanto, a profilaxia atual foca na vacinação materna inativada e anticorpos monoclonais para",
+            "explicacoes": {
+                "robo": [
+                    "La vacuna inactivada contra VSR efectivamente se administra a embarazadas entre las semanas 32 y 36 para proteger al recién nacido vía anticuerpos maternos — es la respuesta correcta.",
+                    "Los anticuerpos monoclonales (como el palivizumab) se usan directamente en lactantes de alto riesgo, no en gestantes.",
+                    "El plasma convaleciente no es el estándar para profilaxis del VSR.",
+                    "No existe vacuna atenuada contra VSR aprobada para recién nacidos."
+                ],
+                "fantasma": [
+                    "¡Esta! Vacuna inactivada en el embarazo, la correcta.",
+                    "Ese anticuerpo va al bebé, no a la mamá.",
+                    "Eso no es lo estándar.",
+                    "No hay esa vacuna atenuada."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! En el embarazo.",
+                    "Fijate: va al bebé.",
+                    "Dato curioso: no es estándar.",
+                    "Miau, no existe."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -15033,7 +15253,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. Chlamydia pneumoniae é uma bactéria intracelular obrigatória, cujo cultivo é lento e complexo, levando semanas para resultados, não 24-48 horas.  \n\n**Outras opções:**  \nA está correta: transmissão por gotículas respiratórias.  \nC está correta: causa pneumonia adquirida na comunidade, especialmente atípica.  \nD está correta: provoca comprometimento pulmonar intersticial típico da pneumonia atípica.  \n\nAssim, B subestima o tempo e a dificuldade do cultivo; as demais opções são precisas."
+            "feedback": "**Resposta Correta:** B está incorreta. Chlamydia pneumoniae é uma bactéria intracelular obrigatória, cujo cultivo é lento e complexo, levando semanas para resultados, não 24-48 horas.  \n\n**Outras opções:**  \nA está correta: transmissão por gotículas respiratórias.  \nC está correta: causa pneumonia adquirida na comunidade, especialmente atípica.  \nD está correta: provoca comprometimento pulmonar intersticial típico da pneumonia atípica.  \n\nAssim, B subestima o tempo e a dificuldade do cultivo; as demais opções são precisas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente se adquiere por contagio interhumano a través de secreciones respiratorias.",
+                    "Chlamydia pneumoniae es una bacteria intracelular obligada, cuyo cultivo es lento y complejo, tomando semanas para obtener resultados, no 24-48 horas — esta es la opción incorrecta.",
+                    "Efectivamente es agente causal de neumonía adquirida en la comunidad.",
+                    "Efectivamente causa compromiso pulmonar intersticial."
+                ],
+                "fantasma": [
+                    "Esa está bien, contagio por gotita.",
+                    "¡Esta! Eso tarda semanas, no días.",
+                    "Esa está bien, causa neumonía.",
+                    "Esa está bien, intersticial."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Tarda semanas.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -15059,7 +15299,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta; é necessário controlar contatos humanos estreitos, mesmo assintomáticos, para prevenir a transmissão aérea da psitacose causada por *Chlamydophila psittaci*.  \n\n**Outras opções:**  \nA está correta ao definir caso provável pela exposição, sintomas e título IgG ≥1:32.  \nB está correta ao afirmar que o diagnóstico confirmado exige soroconversão ou aumento significativo de IgG.  \nC está correta ao indicar a via aérea como principal entrada do patógeno, que causa pneumonia atípica com tropismo alveolar."
+            "feedback": "**Resposta Correta:** D está incorreta; é necessário controlar contatos humanos estreitos, mesmo assintomáticos, para prevenir a transmissão aérea da psitacose causada por *Chlamydophila psittaci*.  \n\n**Outras opções:**  \nA está correta ao definir caso provável pela exposição, sintomas e título IgG ≥1:32.  \nB está correta ao afirmar que o diagnóstico confirmado exige soroconversão ou aumento significativo de IgG.  \nC está correta ao indicar a via aérea como principal entrada do patógeno, que causa pneumonia atípica com tropismo alveolar.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente un caso probable o sospechado se define por la epidemiología, la clínica, o un título de IgG 1:32 en muestra aislada.",
+                    "Efectivamente un caso confirmado se define por la epidemiología, la clínica y un aumento de 4 veces o más el título de IgG.",
+                    "Efectivamente el patógeno ingresa generalmente por vía aérea con alto tropismo por los alvéolos pulmonares.",
+                    "Es NECESARIO controlar los contactos humanos estrechos, incluso asintomáticos, para prevenir la transmisión aérea de la psitacosis causada por Chlamydophila psittaci — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, esa definición.",
+                    "Esa está bien, ese aumento.",
+                    "Esa está bien, por el aire.",
+                    "¡Esta! Sí hay que controlar aunque no tenga síntomas."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Sí hay que controlar."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -15085,7 +15345,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A está incorreta. Mycoplasma pneumoniae é exclusivo do ser humano, sem reservatórios animais, transmitido apenas por gotículas respiratórias. As demais opções estão corretas: B destaca o baixo valor preditivo da IgA para infecção ativa; C aponta baixa portação assintomática de Chlamydophila pneumoniae; D recomenda confirmação sorológica dos diagnósticos moleculares para diferenciar colonização de infecção."
+            "feedback": "Resposta correta: A está incorreta. Mycoplasma pneumoniae é exclusivo do ser humano, sem reservatórios animais, transmitido apenas por gotículas respiratórias. As demais opções estão corretas: B destaca o baixo valor preditivo da IgA para infecção ativa; C aponta baixa portação assintomática de Chlamydophila pneumoniae; D recomenda confirmação sorológica dos diagnósticos moleculares para diferenciar colonização de infecção.",
+            "explicacoes": {
+                "robo": [
+                    "Los animales no son reservorios naturales de Mycoplasma pneumoniae; es exclusivo del ser humano, transmitiéndose solo por gotículas respiratorias — esta es la opción incorrecta.",
+                    "Efectivamente la detección de IgA específica tiene bajo poder predictivo positivo para la infección.",
+                    "Efectivamente la portación asintomática en nasofaringe es baja para Chlamydophila pneumoniae.",
+                    "Efectivamente los diagnósticos moleculares positivos deben confirmarse con pruebas serológicas."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese solo se pasa de humano a humano.",
+                    "Esa está bien, predice poco.",
+                    "Esa está bien, es baja.",
+                    "Esa está bien, hay que confirmar."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Solo humano a humano.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -15111,7 +15391,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta. Na paracoccidioidomicose, a prova cutânea pode ser negativa ou diminuída na fase ativa devido à imunossupressão, e sua positividade isolada não indica boa evolução clínica.  \n\n**Outras opções:**  \nA está correta, pois espeleólogos têm alta exposição a Histoplasma, resultando em teste cutâneo positivo frequente.  \nB está correta, com cerca de 40% das infecções primárias por Coccidioides posadasii sendo sintomáticas.  \nC está correta, pois a presença de leveduras intracelulares em Giemsa é importante para diagnóstico presuntivo de histoplasmose."
+            "feedback": "**Resposta Correta:** D está incorreta. Na paracoccidioidomicose, a prova cutânea pode ser negativa ou diminuída na fase ativa devido à imunossupressão, e sua positividade isolada não indica boa evolução clínica.  \n\n**Outras opções:**  \nA está correta, pois espeleólogos têm alta exposição a Histoplasma, resultando em teste cutâneo positivo frequente.  \nB está correta, com cerca de 40% das infecções primárias por Coccidioides posadasii sendo sintomáticas.  \nC está correta, pois a presença de leveduras intracelulares em Giemsa é importante para diagnóstico presuntivo de histoplasmose.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente un porcentaje elevado de espeleólogos de Salta tiene prueba cutánea positiva para histoplasmina, por su alta exposición.",
+                    "Efectivamente en áreas endémicas la primoinfección por Coccidioides posadasii es sintomática en cerca del 40% de los casos.",
+                    "Efectivamente el examen directo de levaduras intracelulares con Giemsa es diagnóstico presuntivo de histoplasmosis.",
+                    "En la paracoccidioidomicosis, la prueba cutánea puede ser negativa o disminuida en la fase activa debido a la inmunosupresión; su positividad aislada NO indica buena evolución clínica — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, mucha exposición.",
+                    "Esa está bien, ese porcentaje.",
+                    "Esa está bien, Giemsa presuntivo.",
+                    "¡Esta! Eso no indica que va mejorando."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No indica mejoría."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -15137,7 +15437,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Pseudomonas aeruginosa.\n\nPseudomonas aeruginosa é rara na pneumonia adquirida na comunidade (NAC) em pacientes saudáveis, sendo mais comum em infecções hospitalares e imunocomprometidos, devido à sua resistência e perfil oportunista. \n\n**Outras opções:**  \nA. Streptococcus pneumoniae é o principal agente da NAC típica.  \nC. Mycoplasma pneumoniae causa pneumonia atípica, especialmente em jovens.  \nD. Chlamydophila pneumoniae também é agente comum da pneumonia atípica comunitária.  \n\nPortanto, Pseudomonas não é habitual na NAC em pacientes sem fatores de risco."
+            "feedback": "**Resposta Correta:** B. Pseudomonas aeruginosa.\n\nPseudomonas aeruginosa é rara na pneumonia adquirida na comunidade (NAC) em pacientes saudáveis, sendo mais comum em infecções hospitalares e imunocomprometidos, devido à sua resistência e perfil oportunista. \n\n**Outras opções:**  \nA. Streptococcus pneumoniae é o principal agente da NAC típica.  \nC. Mycoplasma pneumoniae causa pneumonia atípica, especialmente em jovens.  \nD. Chlamydophila pneumoniae também é agente comum da pneumonia atípica comunitária.  \n\nPortanto, Pseudomonas não é habitual na NAC em pacientes sem fatores de risco.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pneumoniae efectivamente es el principal agente de la NAC típica.",
+                    "Pseudomonas aeruginosa es rara en la neumonía adquirida en la comunidad en pacientes sanos, siendo más común en infecciones hospitalarias e inmunocomprometidos, debido a su resistencia y perfil oportunista — esta es la excepción.",
+                    "Mycoplasma pneumoniae efectivamente causa neumonía atípica, especialmente en jóvenes.",
+                    "Chlamydophila pneumoniae efectivamente también es agente común de la neumonía atípica comunitaria."
+                ],
+                "fantasma": [
+                    "Ese sí es común aquí.",
+                    "¡Esta! Ese es de hospital, no de la comunidad.",
+                    "Ese sí es común aquí.",
+                    "Ese sí es común aquí."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es de hospital.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -15163,7 +15483,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. A sorologia é o método mais prático para diagnosticar Chlamydophila pneumoniae, um patógeno intracelular difícil de cultivar. Técnicas como ELISA detectam anticorpos específicos para confirmação.\n\nOpção A incorreta: Cultivo de Mycoplasma pneumoniae e Legionella spp é complexo, lento e pouco sensível; preferem-se métodos moleculares ou sorológicos.  \nOpção B incorreta: Hemoculturas têm baixa sensibilidade na pneumonia adquirida na comunidade e são pouco úteis para agentes atípicos.  \nOpção C incorreta: Diplococos Gram-positivos no escarro não confirmam S. pneumoniae, pois podem haver outras bactérias"
+            "feedback": "Resposta correta: D. A sorologia é o método mais prático para diagnosticar Chlamydophila pneumoniae, um patógeno intracelular difícil de cultivar. Técnicas como ELISA detectam anticorpos específicos para confirmação.\n\nOpção A incorreta: Cultivo de Mycoplasma pneumoniae e Legionella spp é complexo, lento e pouco sensível; preferem-se métodos moleculares ou sorológicos.  \nOpção B incorreta: Hemoculturas têm baixa sensibilidade na pneumonia adquirida na comunidade e são pouco úteis para agentes atípicos.  \nOpção C incorreta: Diplococos Gram-positivos no escarro não confirmam S. pneumoniae, pois podem haver outras bactérias",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo de Mycoplasma pneumoniae y Legionella spp es complejo, lento y poco sensible; se prefieren métodos moleculares o serológicos.",
+                    "Los hemocultivos tienen baja sensibilidad en la neumonía adquirida en la comunidad.",
+                    "Diplococos Gram positivos en el esputo no confirman S. pneumoniae, ya que pueden existir otras bacterias similares.",
+                    "La serología es el método más práctico para diagnosticar Chlamydophila pneumoniae, patógeno intracelular difícil de cultivar; técnicas como ELISA detectan anticuerpos específicos para confirmación — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es lento y difícil.",
+                    "Eso rinde poco.",
+                    "Eso solo no confirma.",
+                    "¡Esta! Serología para ese bicho difícil, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es difícil.",
+                    "Dato curioso: rinde poco.",
+                    "Miau, no confirma solo.",
+                    "¡Ronroneo de aprobación! Serología."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -15189,7 +15529,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Lavado broncoalveolar (LBA) é o método mais sensível para identificar agentes causadores de pneumonia, coletando amostras diretamente dos alvéolos pulmonares, especialmente em pacientes hospitalizados com infecções graves.\n\n**Outras opções:**  \nA. Hemocultivos têm baixa sensibilidade, pois nem sempre detectam bactérias na corrente sanguínea.  \nC. Esputo pode ser contaminado e pouco representativo dos alvéolos, reduzindo a precisão.  \nD. Intradermoreação é um teste imunológico para exposição prévia, não diagnóstico direto da pneumonia."
+            "feedback": "**Resposta Correta:** B. Lavado broncoalveolar (LBA) é o método mais sensível para identificar agentes causadores de pneumonia, coletando amostras diretamente dos alvéolos pulmonares, especialmente em pacientes hospitalizados com infecções graves.\n\n**Outras opções:**  \nA. Hemocultivos têm baixa sensibilidade, pois nem sempre detectam bactérias na corrente sanguínea.  \nC. Esputo pode ser contaminado e pouco representativo dos alvéolos, reduzindo a precisão.  \nD. Intradermoreação é um teste imunológico para exposição prévia, não diagnóstico direto da pneumonia.",
+            "explicacoes": {
+                "robo": [
+                    "Los hemocultivos tienen baja sensibilidad, ya que no siempre detectan bacterias en la sangre.",
+                    "El lavado broncoalveolar (LBA) es el método más sensible para identificar agentes causantes de neumonía, recolectando muestras directamente de los alvéolos pulmonares, especialmente en pacientes hospitalizados con infecciones graves — es la respuesta correcta.",
+                    "El esputo puede estar contaminado y ser poco representativo de los alvéolos, reduciendo la precisión.",
+                    "La intradermorreacción es un test inmunológico de exposición previa, no un diagnóstico directo de la neumonía."
+                ],
+                "fantasma": [
+                    "Ese rinde poco.",
+                    "¡Esta! El LBA, el más sensible.",
+                    "Ese se contamina.",
+                    "Esa mide exposición, no infección."
+                ],
+                "gato": [
+                    "Fijate: rinde poco.",
+                    "¡Ronroneo de aprobación! El LBA.",
+                    "Dato curioso: se contamina.",
+                    "Miau, mide exposición."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -15215,7 +15575,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "A resposta correta é C: a IDR é útil para controle de focos e contatos na vigilância epidemiológica. A opção A está incompleta, pois o tempo de leitura (48-72h) não define sua aplicação principal. B está errada, pois um resultado negativo não exclui infecção devido a falsos negativos. D é incorreta, pois resultado positivo indica exposição, não confirma doença ativa. Portanto, a IDR serve para identificar indivíduos expostos e monitorar a disseminação, não para diagnóstico definitivo."
+            "feedback": "A resposta correta é C: a IDR é útil para controle de focos e contatos na vigilância epidemiológica. A opção A está incompleta, pois o tempo de leitura (48-72h) não define sua aplicação principal. B está errada, pois um resultado negativo não exclui infecção devido a falsos negativos. D é incorreta, pois resultado positivo indica exposição, não confirma doença ativa. Portanto, a IDR serve para identificar indivíduos expostos e monitorar a disseminação, não para diagnóstico definitivo.",
+            "explicacoes": {
+                "robo": [
+                    "El tiempo de lectura (48-72hs) es correcto, pero no es el uso principal que se destaca en esta pregunta.",
+                    "Un resultado negativo no excluye la infección en todos los casos, debido a factores como la inmunosupresión.",
+                    "La intradermorreacción es útil para realizar catastro (control de focos o contactos), siendo utilizada principalmente en vigilancia epidemiológica — es la respuesta correcta.",
+                    "Un resultado positivo no confirma enfermedad activa por el agente homólogo, solo indica exposición."
+                ],
+                "fantasma": [
+                    "Eso es cierto, pero no es lo que pide.",
+                    "No descarta siempre.",
+                    "¡Esta! Sirve para el catastro.",
+                    "No confirma sola."
+                ],
+                "gato": [
+                    "Fijate: no es el foco.",
+                    "Dato curioso: no descarta.",
+                    "¡Ronroneo de aprobación! El catastro.",
+                    "Miau, no confirma."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -15241,7 +15621,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. A angina de Vincent é uma gengivite ulcerativa necrosante causada por infecção polimicrobiana, principalmente *Fusobacterium necrophorum* e *Borrelia vincentii*, não pela exotoxina de *Corynebacterium diphtheriae*, que causa difteria.  \n\n**Outras opções:** A, C e D estão corretas: a angina de Vincent não é altamente contagiosa, a coloração de Gram auxilia no diagnóstico e a etiologia é polimicrobiana."
+            "feedback": "**Resposta Correta:** B está incorreta. A angina de Vincent é uma gengivite ulcerativa necrosante causada por infecção polimicrobiana, principalmente *Fusobacterium necrophorum* e *Borrelia vincentii*, não pela exotoxina de *Corynebacterium diphtheriae*, que causa difteria.  \n\n**Outras opções:** A, C e D estão corretas: a angina de Vincent não é altamente contagiosa, a coloração de Gram auxilia no diagnóstico e a etiologia é polimicrobiana.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente no es altamente contagiosa.",
+                    "La angina de Vincent es una gingivitis ulcerativa necrosante causada por infección polimicrobiana, principalmente Fusobacterium necrophorum y Borrelia vincentii, no por la exotoxina de Corynebacterium diphtheriae, que causa difteria — esta es la opción incorrecta.",
+                    "Efectivamente la tinción de Gram tiene valor diagnóstico.",
+                    "Efectivamente presenta una etiología polimicrobiana."
+                ],
+                "fantasma": [
+                    "Esa está bien, no contagia tanto.",
+                    "¡Esta! Eso es del difterico, no de acá.",
+                    "Esa está bien, el Gram ayuda.",
+                    "Esa está bien, varias bacterias."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es del difterico.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 10,
