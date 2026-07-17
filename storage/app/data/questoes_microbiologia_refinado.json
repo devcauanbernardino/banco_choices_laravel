@@ -15667,7 +15667,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Pseudomonas aeruginosa não é causa comum de otite média aguda (OMA) em crianças, estando mais associada a otite externa e infecções hospitalares.  \n\n**Outras opções:**  \nA. Moraxella catarrhalis, B. Streptococcus pneumoniae e C. Haemophilus influenzae são os principais agentes da OMA, colonizam o trato respiratório superior e causam infecção no ouvido médio.  \n\nEm resumo, a OMA é geralmente causada por S. pneumoniae, H. influenzae e M. catarrhalis, enquanto P. aeruginosa é rara nessa condição."
+            "feedback": "**Resposta Correta:** D. Pseudomonas aeruginosa não é causa comum de otite média aguda (OMA) em crianças, estando mais associada a otite externa e infecções hospitalares.  \n\n**Outras opções:**  \nA. Moraxella catarrhalis, B. Streptococcus pneumoniae e C. Haemophilus influenzae são os principais agentes da OMA, colonizam o trato respiratório superior e causam infecção no ouvido médio.  \n\nEm resumo, a OMA é geralmente causada por S. pneumoniae, H. influenzae e M. catarrhalis, enquanto P. aeruginosa é rara nessa condição.",
+            "explicacoes": {
+                "robo": [
+                    "Moraxella catarrhalis efectivamente es uno de los principales agentes de la OMA.",
+                    "Streptococcus pneumoniae efectivamente es uno de los principales agentes de la OMA.",
+                    "Haemophilus influenzae efectivamente es uno de los principales agentes de la OMA.",
+                    "Pseudomonas aeruginosa no es causa común de otitis media aguda en niños, estando más asociada a otitis externa e infecciones hospitalarias — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Ese sí es común.",
+                    "Ese sí es común.",
+                    "Ese sí es común.",
+                    "¡Esta! Ese es de oído externo, no de acá."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es.",
+                    "¡Ronroneo de aprobación! Es de oído externo."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -15693,7 +15713,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A está incorreta. Pseudomonas aeruginosa é um bacilo gram-negativo aeróbio obrigatório e não cresce em meio anaeróbio. Para isolá-la, use meios aeróbios como ágar MacConkey ou ágar sangue. As opções B, C e D estão corretas: B usa ágar sangue para estreptococos alfa-hemolíticos sensíveis à optoquina; C usa Sabouraud para fungos; D usa ágar chocolate para cocobacilos hemófilos como Haemophilus influenzae. Portanto, apenas a opção A é inadequada para o cultivo de Pseudomonas aeruginosa."
+            "feedback": "Resposta correta: A está incorreta. Pseudomonas aeruginosa é um bacilo gram-negativo aeróbio obrigatório e não cresce em meio anaeróbio. Para isolá-la, use meios aeróbios como ágar MacConkey ou ágar sangue. As opções B, C e D estão corretas: B usa ágar sangue para estreptococos alfa-hemolíticos sensíveis à optoquina; C usa Sabouraud para fungos; D usa ágar chocolate para cocobacilos hemófilos como Haemophilus influenzae. Portanto, apenas a opção A é inadequada para o cultivo de Pseudomonas aeruginosa.",
+            "explicacoes": {
+                "robo": [
+                    "Pseudomonas aeruginosa es un bacilo Gram negativo aerobio obligado y no crece en medio anaerobio; para aislarla se usan medios aerobios como agar MacConkey o agar sangre — esta es la opción incorrecta.",
+                    "Efectivamente el cultivo en agar sangre busca colonias alfa hemolíticas sensibles a optoquina.",
+                    "Efectivamente el cultivo en Sabouraud evidencia hongos ambientales.",
+                    "Efectivamente el cultivo en agar chocolate es para cocobacilos hemófilos."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese bicho necesita aire, no anaerobio.",
+                    "Esa está bien, optoquina.",
+                    "Esa está bien, hongo.",
+                    "Esa está bien, hemófilo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Necesita aire.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -15719,7 +15759,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Em otite bilateral, é importante cultivar material de ambos os ouvidos para identificar agentes e orientar o tratamento, especialmente se o quadro persistir. Ignorar isso pode levar a tratamento inadequado. \n\nOpções A, B e D estão corretas: A) anaeróbios podem estar presentes em otites supuradas ou crônicas; B) cultivo é essencial diante de tratamento falho; D) otites não complicadas são diagnosticadas clinicamente, sem necessidade rotineira de exame microbiológico."
+            "feedback": "Resposta correta: C. Em otite bilateral, é importante cultivar material de ambos os ouvidos para identificar agentes e orientar o tratamento, especialmente se o quadro persistir. Ignorar isso pode levar a tratamento inadequado. \n\nOpções A, B e D estão corretas: A) anaeróbios podem estar presentes em otites supuradas ou crônicas; B) cultivo é essencial diante de tratamento falho; D) otites não complicadas são diagnosticadas clinicamente, sem necessidade rotineira de exame microbiológico.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en OMA supurada y OMC deben sospecharse gérmenes anaerobios.",
+                    "Efectivamente si hay respuesta insatisfactoria y persistencia del exudado se debe realizar diagnóstico microbiológico.",
+                    "En casos de otitis bilateral SÍ es necesario cultivar material de ambos oídos, para identificar los agentes y orientar el tratamiento — esta es la opción incorrecta.",
+                    "Efectivamente ante otitis no complicada el diagnóstico es clínico."
+                ],
+                "fantasma": [
+                    "Esa está bien, anaerobio.",
+                    "Esa está bien, si no mejora.",
+                    "¡Esta! Sí hay que cultivar los dos oídos.",
+                    "Esa está bien, es clínico."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Sí hay que cultivar los dos.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -15745,7 +15805,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A reação positiva não indica quando a infecção tuberculosa ocorreu.\n\nA intradermorreação com tuberculina detecta resposta imune celular à Mycobacterium tuberculosis, mas não informa o tempo da infecção, pois a hipersensibilidade tipo IV pode persistir anos.  \n\n**Opções incorretas:**  \nA está errada, pois a reação é de hipersensibilidade tipo IV, não tipo II.  \nB está errada, pois a avaliação é pela induração, não pelo eritema.  \nD está errada, pois a tuberculina é PPD, não micobactérias atenuadas."
+            "feedback": "**Resposta Correta:** C. A reação positiva não indica quando a infecção tuberculosa ocorreu.\n\nA intradermorreação com tuberculina detecta resposta imune celular à Mycobacterium tuberculosis, mas não informa o tempo da infecção, pois a hipersensibilidade tipo IV pode persistir anos.  \n\n**Opções incorretas:**  \nA está errada, pois a reação é de hipersensibilidade tipo IV, não tipo II.  \nB está errada, pois a avaliação é pela induração, não pelo eritema.  \nD está errada, pois a tuberculina é PPD, não micobactérias atenuadas.",
+            "explicacoes": {
+                "robo": [
+                    "La reacción positiva es producto de un fenómeno de hipersensibilidad tipo IV, no tipo II.",
+                    "La positividad se determina por el diámetro de la INDURACIÓN, no del eritema.",
+                    "Una reacción positiva no da indicación temporal de cuándo se produjo la infección tuberculosa, ya que la hipersensibilidad tipo IV puede persistir años — es la respuesta correcta.",
+                    "La prueba se practica con PPD (derivado proteico purificado), no con micobacterias atenuadas."
+                ],
+                "fantasma": [
+                    "Es tipo IV, no tipo II.",
+                    "Es la induración, no el eritema.",
+                    "¡Esta! No dice cuándo fue, la correcta.",
+                    "Es el PPD, no la bacteria viva."
+                ],
+                "gato": [
+                    "Fijate: es tipo IV.",
+                    "Dato curioso: es induración.",
+                    "¡Ronroneo de aprobación! No dice cuándo.",
+                    "Miau, es el PPD."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -15771,7 +15851,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Cocos Gram positivos alfa-hemolíticos capsulados (grupo viridans), pois não são agentes comuns de faringoamigdalite em crianças. As opções A (vírus respiratórios como adenovírus), B (Streptococcus pyogenes, beta-hemolítico grupo A) e D (Streptococcus beta-hemolíticos grupos C e G) são corretas, pois representam os agentes etiológicos mais frequentes da faringoamigdalite aguda. Portanto, a única incorreta é a opção C."
+            "feedback": "Resposta correta: C. Cocos Gram positivos alfa-hemolíticos capsulados (grupo viridans), pois não são agentes comuns de faringoamigdalite em crianças. As opções A (vírus respiratórios como adenovírus), B (Streptococcus pyogenes, beta-hemolítico grupo A) e D (Streptococcus beta-hemolíticos grupos C e G) são corretas, pois representam os agentes etiológicos mais frequentes da faringoamigdalite aguda. Portanto, a única incorreta é a opção C.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente adenovirus, rinovirus, coronavirus y enterovirus son agentes frecuentes.",
+                    "Efectivamente los cocos Gram positivos beta hemolíticos del grupo A (S. pyogenes) son agentes frecuentes.",
+                    "Los cocos Gram positivos alfa hemolíticos capsulados (grupo viridans) no son agentes comunes de faringoamigdalitis en niños — esta es la opción incorrecta.",
+                    "Efectivamente los cocos betahemolíticos no grupo A (grupos C y G) son agentes frecuentes."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos virus.",
+                    "Esa está bien, el estrepto A.",
+                    "¡Esta! Ese no es de esto, es de otra cosa.",
+                    "Esa está bien, otros grupos."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es de otra cosa.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -15797,7 +15897,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Resultado negativo no teste rápido exige cultura em ágar sangue para busca de beta-hemólise típica de *S. pyogenes*.  \nOpção A incorreta: teste rápido negativo não descarta infecção, pois há falsos negativos.  \nOpção C incorreta: teste rápido positivo já confirma diagnóstico, não requer imunofluorescência.  \nOpção D incorreta: *S. pyogenes* é beta-hemolítico, não alfa-hemolítico; cultura deve buscar beta-hemólise."
+            "feedback": "Resposta correta: B. Resultado negativo no teste rápido exige cultura em ágar sangue para busca de beta-hemólise típica de *S. pyogenes*.  \nOpção A incorreta: teste rápido negativo não descarta infecção, pois há falsos negativos.  \nOpção C incorreta: teste rápido positivo já confirma diagnóstico, não requer imunofluorescência.  \nOpção D incorreta: *S. pyogenes* é beta-hemolítico, não alfa-hemolítico; cultura deve buscar beta-hemólise.",
+            "explicacoes": {
+                "robo": [
+                    "Un resultado negativo no descarta la etiología bacteriana.",
+                    "Un resultado negativo requiere sembrar la muestra en agar sangre de carnero buscando beta-hemólisis típica de S. pyogenes — es la respuesta correcta.",
+                    "Un resultado positivo en el test rápido ya confirma el diagnóstico, no requiriendo inmunofluorescencia.",
+                    "S. pyogenes es beta-hemolítico, no alfa-hemolítico; el cultivo debe buscar beta-hemólisis."
+                ],
+                "fantasma": [
+                    "No descarta solo.",
+                    "¡Esta! Beta hemólisis, la correcta.",
+                    "El positivo ya alcanza.",
+                    "Es beta, no alfa."
+                ],
+                "gato": [
+                    "Fijate: no descarta.",
+                    "¡Ronroneo de aprobación! Beta hemólisis.",
+                    "Dato curioso: ya alcanza.",
+                    "Miau, es beta."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -15823,7 +15943,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. A coloração de Gram não diferencia com segurança Streptococcus pyogenes de outras espécies na faringite, exigindo cultura e testes específicos para diagnóstico.  \nOpções A, B e C estão corretas: A identifica bactérias associadas à angina de Vincent; B descreve o método padrão para confirmar S. pyogenes via cultura e testes bioquímicos; C indica o diagnóstico presuntivo de difteria pela morfologia característica dos bacilos Gram-positivos em empalizada."
+            "feedback": "Resposta correta: D. A coloração de Gram não diferencia com segurança Streptococcus pyogenes de outras espécies na faringite, exigindo cultura e testes específicos para diagnóstico.  \nOpções A, B e C estão corretas: A identifica bactérias associadas à angina de Vincent; B descreve o método padrão para confirmar S. pyogenes via cultura e testes bioquímicos; C indica o diagnóstico presuntivo de difteria pela morfologia característica dos bacilos Gram-positivos em empalizada.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la observación de bacilos Gram negativos fusiformes y espiralados es útil para el diagnóstico de angina de Vincent.",
+                    "Efectivamente el aislamiento en agar sangre de colonias betahemolíticas con pruebas bioquímicas confirma S. pyogenes.",
+                    "Efectivamente los bacilos Gram positivos en empalizada con pseudomembrana permiten sospechar difteria.",
+                    "La tinción de Gram no diferencia con seguridad Streptococcus pyogenes de otras especies en la faringitis, requiriendo cultivo y pruebas específicas para el diagnóstico — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, angina de Vincent.",
+                    "Esa está bien, con bioquímica.",
+                    "Esa está bien, difteria.",
+                    "¡Esta! El Gram no distingue bien ese caso."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No distingue bien."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -15849,7 +15989,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O aspirado nasofaríngeo é a melhor amostra para diagnóstico virológico da bronquiolite em lactentes, pois contém células infectadas, permitindo detecção rápida e precisa do vírus por métodos como imunofluorescência direta ou cultura viral.\n\n**Outras opções:**  \nB. Esputo não é ideal por contaminação bacteriana e difícil obtenção em lactentes.  \nC. Efeito citopático é observado após incubação em laboratório, não sendo útil para diagnóstico rápido.  \nD. Detecção de anticorpos por imunofluorescência indireta não é adequada para diagnóstico agudo, pois reflete resposta imune tardia, não a presença viral"
+            "feedback": "**Resposta Correta:** A. O aspirado nasofaríngeo é a melhor amostra para diagnóstico virológico da bronquiolite em lactentes, pois contém células infectadas, permitindo detecção rápida e precisa do vírus por métodos como imunofluorescência direta ou cultura viral.\n\n**Outras opções:**  \nB. Esputo não é ideal por contaminação bacteriana e difícil obtenção em lactentes.  \nC. Efeito citopático é observado após incubação em laboratório, não sendo útil para diagnóstico rápido.  \nD. Detecção de anticorpos por imunofluorescência indireta não é adequada para diagnóstico agudo, pois reflete resposta imune tardia, não a presença viral",
+            "explicacoes": {
+                "robo": [
+                    "El aspirado nasofaríngeo contiene células infectadas que pueden utilizarse para el diagnóstico virológico directo, permitiendo detección rápida y precisa por inmunofluorescencia directa o cultivo viral — es la respuesta correcta.",
+                    "El esputo no es ideal por contaminación bacteriana y difícil obtención en lactantes.",
+                    "El efecto citopático se observa tras incubación en laboratorio, no siendo útil para diagnóstico rápido.",
+                    "La detección de anticuerpos por inmunofluorescencia indirecta no es adecuada para diagnóstico agudo, ya que refleja respuesta inmune tardía, no la presencia viral."
+                ],
+                "fantasma": [
+                    "¡Esta! Ahí hay células infectadas, la correcta.",
+                    "Ese se contamina y es difícil de sacar.",
+                    "Eso se ve después, no es rápido.",
+                    "Eso es tardío, no agudo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Células infectadas ahí.",
+                    "Fijate: se contamina.",
+                    "Dato curioso: se ve después.",
+                    "Miau, es tardío."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -15875,7 +16035,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. A queda do título de anticorpos específicos de 128 para 16 indica redução da carga antigênica e melhora clínica, mostrando resposta favorável ao tratamento da paracoccidioidomicose.  \nOpção B está incorreta, pois anticorpos não garantem imunidade protetora duradoura contra Paracoccidioides; a resposta celular é mais importante.  \nOpção C erra ao atribuir aos anticorpos o controle principal da infecção, que depende da imunidade celular; complexos imunes podem causar reações adversas.  \nOpção D é falsa, pois a variação dos títulos anticorpos é útil para monitorar a evolução clínica."
+            "feedback": "Resposta correta: A. A queda do título de anticorpos específicos de 128 para 16 indica redução da carga antigênica e melhora clínica, mostrando resposta favorável ao tratamento da paracoccidioidomicose.  \nOpção B está incorreta, pois anticorpos não garantem imunidade protetora duradoura contra Paracoccidioides; a resposta celular é mais importante.  \nOpção C erra ao atribuir aos anticorpos o controle principal da infecção, que depende da imunidade celular; complexos imunes podem causar reações adversas.  \nOpção D é falsa, pois a variação dos títulos anticorpos é útil para monitorar a evolução clínica.",
+            "explicacoes": {
+                "robo": [
+                    "La reducción del título de anticuerpos de 128 a 16 tras tres meses indica menor carga antigénica y mejora clínica, mostrando respuesta favorable al tratamiento de la paracoccidioidomicosis — es la respuesta correcta.",
+                    "Los anticuerpos no garantizan inmunidad protectora duradera frente a Paracoccidioides; la respuesta celular es más importante.",
+                    "El control principal de la infección depende de la inmunidad celular, no de los anticuerpos; los complejos inmunes pueden causar reacciones adversas.",
+                    "La variación de los títulos de anticuerpos SÍ es útil para monitorear la evolución clínica de la micosis."
+                ],
+                "fantasma": [
+                    "¡Esta! Bajó el título, va mejorando.",
+                    "No es tan protector así.",
+                    "Eso simplifica de más.",
+                    "Sí se correlaciona, al revés."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Bajó, mejora.",
+                    "Fijate: no protege tanto.",
+                    "Dato curioso: simplifica.",
+                    "Miau, sí correlaciona."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -15901,7 +16081,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Hisopar a base da língua é incorreto, pois essa região não é adequada para coleta de patógenos da faringe e pode causar desconforto e reflexo de vômito. As opções B (pilares amigdalinos) e C (parede posterior da faringe) são corretas, pois são locais onde os agentes infecciosos se alojam. A opção D, submergir o swab em meio de transporte sem refrigeração, também é correta para preservar os microrganismos. Portanto, a base da língua não deve ser usada para o hisopado faríngeo."
+            "feedback": "Resposta correta: A. Hisopar a base da língua é incorreto, pois essa região não é adequada para coleta de patógenos da faringe e pode causar desconforto e reflexo de vômito. As opções B (pilares amigdalinos) e C (parede posterior da faringe) são corretas, pois são locais onde os agentes infecciosos se alojam. A opção D, submergir o swab em meio de transporte sem refrigeração, também é correta para preservar os microrganismos. Portanto, a base da língua não deve ser usada para o hisopado faríngeo.",
+            "explicacoes": {
+                "robo": [
+                    "Hisopar la base de la lengua no es correcto, ya que esa región no es adecuada para recolectar patógenos de la faringe y puede causar molestias y reflejo nauseoso — esta es la excepción.",
+                    "Efectivamente se debe deslizar el hisopo por los pilares amigdalinos.",
+                    "Efectivamente se debe incluir el hisopado de la pared posterior de la faringe.",
+                    "Efectivamente se debe sumergir el hisopo en medio de transporte sin refrigerar, para preservar los microorganismos."
+                ],
+                "fantasma": [
+                    "¡Esta! Ahí no es la lengua, causa arcada.",
+                    "Esa está bien, los pilares.",
+                    "Esa está bien, la pared.",
+                    "Esa está bien, sin heladera."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No es la lengua.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -15927,7 +16127,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está incorreta. Streptococcus pyogenes, causador da faringite estreptocócica, é beta-hemolítico, produzindo hemólise completa no ágar sangue.  \nOpções A, C e D estão corretas: A) S. pyogenes é sensível à bacitracina, usada para diferenciá-lo; C) teste rápido positivo dispensa cultivo; D) cresce apenas em meios enriquecidos, como ágar sangue.  \nPortanto, a única afirmação falsa é que não haverá hemólise no ágar sangue."
+            "feedback": "Resposta correta: B está incorreta. Streptococcus pyogenes, causador da faringite estreptocócica, é beta-hemolítico, produzindo hemólise completa no ágar sangue.  \nOpções A, C e D estão corretas: A) S. pyogenes é sensível à bacitracina, usada para diferenciá-lo; C) teste rápido positivo dispensa cultivo; D) cresce apenas em meios enriquecidos, como ágar sangue.  \nPortanto, a única afirmação falsa é que não haverá hemólise no ágar sangue.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la bacteria será inhibible por bacitracina en cultivo.",
+                    "Streptococcus pyogenes es beta-hemolítico, produciendo hemólisis completa en agar sangre, no ausencia de ella — esta es la opción incorrecta.",
+                    "Efectivamente si el resultado del método rápido es positivo, no hace falta realizar el cultivo.",
+                    "Efectivamente la bacteria no crece en medios simples, solo en medios enriquecidos como agar sangre."
+                ],
+                "fantasma": [
+                    "Esa está bien, se frena con eso.",
+                    "¡Esta! Sí hace hemólisis, es beta.",
+                    "Esa está bien, ya alcanza.",
+                    "Esa está bien, necesita medio rico."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Sí hace hemólisis.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -15953,7 +16173,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta correta:** A está incorreta. Vírus causadores de rinites virais, como rinovírus e coronavírus, apresentam alta variabilidade antigênica, impedindo imunidade cruzada e duradoura. A pessoa pode ser reinfectada por diferentes cepas.\n\n**Outras opções:**  \nB, C e D estão corretas: o período de incubação é curto (1-3 dias); a rinite é autolimitada e pode afetar seios paranasais; e a rinite viral pode predispor à sinusite bacteriana secundária."
+            "feedback": "**Resposta correta:** A está incorreta. Vírus causadores de rinites virais, como rinovírus e coronavírus, apresentam alta variabilidade antigênica, impedindo imunidade cruzada e duradoura. A pessoa pode ser reinfectada por diferentes cepas.\n\n**Outras opções:**  \nB, C e D estão corretas: o período de incubação é curto (1-3 dias); a rinite é autolimitada e pode afetar seios paranasais; e a rinite viral pode predispor à sinusite bacteriana secundária.",
+            "explicacoes": {
+                "robo": [
+                    "Los virus causantes de rinitis, como rinovirus y coronavirus, presentan alta variabilidad antigénica, impidiendo inmunidad cruzada duradera; la persona puede reinfectarse con diferentes cepas — esta es la opción incorrecta.",
+                    "Efectivamente el período de incubación es breve, de 1-3 días.",
+                    "Efectivamente la rinitis es un proceso autolimitado que incluye afección nasal y de senos paranasales.",
+                    "Efectivamente las rinitis virales pueden predisponer al desarrollo de sinusitis bacteriana."
+                ],
+                "fantasma": [
+                    "¡Esta! Mutan mucho, no dan inmunidad larga.",
+                    "Esa está bien, esos días.",
+                    "Esa está bien, se pasa sola.",
+                    "Esa está bien, favorece la sinusitis."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Mutan mucho.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -15979,7 +16219,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A alternativa A está incorreta, pois a avaliação sorológica de anticorpos é útil no diagnóstico e acompanhamento das micoses sistêmicas endêmicas causadas por fungos dimórficos. As opções B, C e D estão corretas: B indica contraindicação temporária para transplante devido à infecção ativa; C destaca a disponibilidade de tratamento antifúngico eficaz; D explica que o teste intradérmico detecta exposição, mas não distingue infecção latente de doença ativa. Portanto, a sorologia é uma ferramenta importante, ao contrário do que afirma a alternativa A."
+            "feedback": "A alternativa A está incorreta, pois a avaliação sorológica de anticorpos é útil no diagnóstico e acompanhamento das micoses sistêmicas endêmicas causadas por fungos dimórficos. As opções B, C e D estão corretas: B indica contraindicação temporária para transplante devido à infecção ativa; C destaca a disponibilidade de tratamento antifúngico eficaz; D explica que o teste intradérmico detecta exposição, mas não distingue infecção latente de doença ativa. Portanto, a sorologia é uma ferramenta importante, ao contrário do que afirma a alternativa A.",
+            "explicacoes": {
+                "robo": [
+                    "La evaluación de anticuerpos SÍ es útil para corroborar el diagnóstico y el seguimiento de las micosis sistémicas endémicas causadas por hongos dimórficos — esta es la opción incorrecta.",
+                    "Efectivamente está contraindicado el trasplante en caso de requerirlo, por la infección activa.",
+                    "Efectivamente hay tratamiento antifúngico disponible y el paciente debe recibirlo.",
+                    "Efectivamente la prueba intradérmica con antígeno homólogo sirve como diagnóstico de infección, pero no de enfermedad activa."
+                ],
+                "fantasma": [
+                    "¡Esta! Sí sirve el anticuerpo, la incorrecta es esta.",
+                    "Esa está bien, contraindicado.",
+                    "Esa está bien, hay tratamiento.",
+                    "Esa está bien, solo infección."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Sí sirve.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -16005,7 +16265,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Para pneumonia por *Chlamydia psittaci*, a coleta de soro é adequada para diagnóstico sorológico indireto, pois o microrganismo é intracelular e difícil de cultivar. Outras opções incorretas: B, pois hantavírus está associado a roedores, não aves; C, *Staphylococcus aureus* pode causar pneumonia aguda comunitária e complicações; D, para diagnóstico viral, aspirado ou swab nasofaríngeo são preferíveis ao lavado broncoalveolar, que é invasivo e reservado para casos específicos."
+            "feedback": "Resposta correta: A. Para pneumonia por *Chlamydia psittaci*, a coleta de soro é adequada para diagnóstico sorológico indireto, pois o microrganismo é intracelular e difícil de cultivar. Outras opções incorretas: B, pois hantavírus está associado a roedores, não aves; C, *Staphylococcus aureus* pode causar pneumonia aguda comunitária e complicações; D, para diagnóstico viral, aspirado ou swab nasofaríngeo são preferíveis ao lavado broncoalveolar, que é invasivo e reservado para casos específicos.",
+            "explicacoes": {
+                "robo": [
+                    "Para la neumonía por Chlamydia psittaci, la toma de muestra de suero efectivamente es adecuada para un diagnóstico indirecto, ya que el microorganismo es intracelular y difícil de cultivar — es la respuesta correcta.",
+                    "El hantavirus se asocia a roedores, no a aves; el contacto con gallineros no aumenta el riesgo de esta infección.",
+                    "Staphylococcus aureus SÍ puede causar neumonía aguda comunitaria y complicaciones.",
+                    "Para el diagnóstico viral de infecciones respiratorias bajas se prefieren el aspirado o hisopado nasofaríngeo; el lavado broncoalveolar es invasivo y se reserva para casos específicos."
+                ],
+                "fantasma": [
+                    "¡Esta! El suero para ese bicho difícil, la correcta.",
+                    "Ese es de roedor, no de ave.",
+                    "Sí puede causar ese.",
+                    "Ese es invasivo, mejor el hisopado."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El suero.",
+                    "Fijate: es roedor.",
+                    "Dato curioso: sí puede.",
+                    "Miau, es invasivo."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -16031,7 +16311,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Pseudomonas aeruginosa.\n\nPseudomonas aeruginosa não é comum em sinusites agudas em imunocompetentes pós-infecção viral, sendo um patógeno oportunista ligado a hospitalizações e imunossupressão. As causas típicas são Haemophilus influenzae, Streptococcus pneumoniae (principal agente) e Moraxella catarrhalis, que colonizam as vias respiratórias superiores e proliferam após inflamação viral. Assim, P. aeruginosa não é uma causa usual de sinusite bacteriana comunitária."
+            "feedback": "**Resposta Correta:** B. Pseudomonas aeruginosa.\n\nPseudomonas aeruginosa não é comum em sinusites agudas em imunocompetentes pós-infecção viral, sendo um patógeno oportunista ligado a hospitalizações e imunossupressão. As causas típicas são Haemophilus influenzae, Streptococcus pneumoniae (principal agente) e Moraxella catarrhalis, que colonizam as vias respiratórias superiores e proliferam após inflamação viral. Assim, P. aeruginosa não é uma causa usual de sinusite bacteriana comunitária.",
+            "explicacoes": {
+                "robo": [
+                    "Haemophilus influenzae efectivamente es una bacteria frecuentemente involucrada en la sinusitis aguda bacteriana post-viral.",
+                    "Pseudomonas aeruginosa no es común en las sinusitis agudas de pacientes inmunocompetentes tras infección viral, siendo un patógeno oportunista ligado a hospitalizaciones e inmunosupresión — esta es la excepción.",
+                    "Streptococcus pneumoniae efectivamente es el principal agente de la sinusitis aguda bacteriana.",
+                    "Moraxella catarrhalis efectivamente es una bacteria frecuentemente involucrada en la sinusitis aguda bacteriana."
+                ],
+                "fantasma": [
+                    "Ese sí es común.",
+                    "¡Esta! Ese es de hospital, no de esto.",
+                    "Ese sí es común.",
+                    "Ese sí es común."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "¡Ronroneo de aprobación! Es de hospital.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -16057,7 +16357,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: A e B. O diagnóstico da otite média aguda é clínico e o tratamento, empírico. A alternativa C está incorreta, pois a timpanocentese e o cultivo em meios anaeróbios não são indicados rotineiramente, devido à invasividade do procedimento, predominância de bactérias aeróbias e baixo custo-benefício. A perfuração da membrana timpânica não justifica o exame sistemático. A opção D é correta, pois o cultivo pode apresentar falsos positivos por contaminação da microbiota externa, reforçando que a timpanocentese não deve ser rotina em casos não complicados."
+            "feedback": "Resposta correta: A e B. O diagnóstico da otite média aguda é clínico e o tratamento, empírico. A alternativa C está incorreta, pois a timpanocentese e o cultivo em meios anaeróbios não são indicados rotineiramente, devido à invasividade do procedimento, predominância de bactérias aeróbias e baixo custo-benefício. A perfuração da membrana timpânica não justifica o exame sistemático. A opção D é correta, pois o cultivo pode apresentar falsos positivos por contaminação da microbiota externa, reforçando que a timpanocentese não deve ser rotina em casos não complicados.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el diagnóstico de la OMA no complicada es clínico.",
+                    "Efectivamente el tratamiento es empírico.",
+                    "La timpanocentesis y el cultivo en medios anaerobios NO se indican de rutina, debido a la invasividad del procedimiento, el predominio de bacterias aerobias y el bajo costo-beneficio; la perforación de la membrana no justifica el examen sistemático — esta es la opción incorrecta.",
+                    "Efectivamente si se hiciera un cultivo, tendría alto índice de falsos positivos por microbiota contaminante."
+                ],
+                "fantasma": [
+                    "Esa está bien, es clínico.",
+                    "Esa está bien, es empírico.",
+                    "¡Esta! No es de rutina, es invasivo.",
+                    "Esa está bien, da falsos positivos."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es de rutina.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -16083,7 +16403,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Não se deve iniciar antibióticos de amplo espectro empiricamente sem cultura e identificação do agente. A confirmação microbiológica, por cultura ou teste rápido, é essencial para diferenciar faringites bacterianas (Streptococcus pyogenes) das virais, evitando uso inadequado de antibióticos, resistência bacteriana e efeitos adversos.  \nOpções A, B e C estão corretas: a maioria das faringites é viral (A); Streptococcus pyogenes é o principal agente bacteriano (B); e a falta de tratamento pode causar complicações graves (C). Portanto, apenas a opção D está incorreta."
+            "feedback": "Resposta correta: D. Não se deve iniciar antibióticos de amplo espectro empiricamente sem cultura e identificação do agente. A confirmação microbiológica, por cultura ou teste rápido, é essencial para diferenciar faringites bacterianas (Streptococcus pyogenes) das virais, evitando uso inadequado de antibióticos, resistência bacteriana e efeitos adversos.  \nOpções A, B e C estão corretas: a maioria das faringites é viral (A); Streptococcus pyogenes é o principal agente bacteriano (B); e a falta de tratamento pode causar complicações graves (C). Portanto, apenas a opção D está incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en el 70% de los casos la etiología es viral y no requieren antibióticos.",
+                    "Efectivamente la bacteria más frecuentemente involucrada es Streptococcus pyogenes.",
+                    "Efectivamente si no fuera tratada adecuadamente podría tener secuelas no supurativas como la glomerulonefritis.",
+                    "Cuando se sospecha origen bacteriano SÍ está indicado realizar cultivo y caracterización del germen, para confirmar el diagnóstico antes de iniciar antibióticos de amplio espectro empíricamente, evitando resistencia y efectos adversos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, la mayoría viral.",
+                    "Esa está bien, el estrepto.",
+                    "Esa está bien, esa secuela.",
+                    "¡Esta! Sí hay que cultivar antes de dar antibiótico."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Sí hay que cultivar."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -16109,7 +16449,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta. Em amostras respiratórias da histoplasmose, o *Histoplasma capsulatum* aparece como levedura intracelular, não como filamentos hialinos tabicados com macroconídios tuberculados, que são da fase ambiental. A coloração Giemsa evidencia leveduras, não filamentos. As opções A, B e C estão corretas: A descreve a dimorfia do fungo após inalação; B relaciona o habitat em solos com excrementos de morcegos e aves; C explica o uso da histoplasmina em testes de hipersensibilidade para exposição prévia."
+            "feedback": "Resposta correta: D está incorreta. Em amostras respiratórias da histoplasmose, o *Histoplasma capsulatum* aparece como levedura intracelular, não como filamentos hialinos tabicados com macroconídios tuberculados, que são da fase ambiental. A coloração Giemsa evidencia leveduras, não filamentos. As opções A, B e C estão corretas: A descreve a dimorfia do fungo após inalação; B relaciona o habitat em solos com excrementos de morcegos e aves; C explica o uso da histoplasmina em testes de hipersensibilidade para exposição prévia.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente tras inhalar las microconidias, estas se transforman en levaduras intramacrofágicas por el cambio de temperatura y nutrientes.",
+                    "Efectivamente el hongo habita en cuevas con murciélagos o suelos con deyecciones de palomas.",
+                    "Efectivamente el diagnóstico de infección puede detectarse por intradermorreacción con histoplasmina.",
+                    "En muestras respiratorias de histoplasmosis, Histoplasma capsulatum aparece como levadura intracelular, no como filamentos hialinos tabicados con macroconidios tuberculados, que son propios de la fase ambiental — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, se hace levadura adentro.",
+                    "Esa está bien, cueva o paloma.",
+                    "Esa está bien, la histoplasmina.",
+                    "¡Esta! Eso es de cultivo, no del cuerpo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Es de cultivo."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -16135,7 +16495,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. A cura das micoses sistêmicas endêmicas depende da resposta imune celular, com ativação de macrófagos e formação de granulomas, não do aumento dos anticorpos neutralizantes. Anticorpos são úteis para diagnóstico, mas não essenciais para eliminação do fungo.\n\n**Outras opções:**  \nA) Correta: granulomas limitam a infecção.  \nC) Correta: fungos apresentam morfologias específicas no tecido (levaduras intracelulares, esférulas, levaduras multibrotantes).  \nD) Correta: diagnóstico é feito por análise de amostras clínicas e cultura."
+            "feedback": "**Resposta Correta:** B está incorreta. A cura das micoses sistêmicas endêmicas depende da resposta imune celular, com ativação de macrófagos e formação de granulomas, não do aumento dos anticorpos neutralizantes. Anticorpos são úteis para diagnóstico, mas não essenciais para eliminação do fungo.\n\n**Outras opções:**  \nA) Correta: granulomas limitam a infecção.  \nC) Correta: fungos apresentam morfologias específicas no tecido (levaduras intracelulares, esférulas, levaduras multibrotantes).  \nD) Correta: diagnóstico é feito por análise de amostras clínicas e cultura.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente todas ellas forman granulomas que tienden a limitar la infección.",
+                    "La curación de las micosis sistémicas endémicas depende de la respuesta inmune celular, con activación de macrófagos y formación de granulomas, no del aumento de anticuerpos neutralizantes; los anticuerpos son útiles para el diagnóstico, pero no esenciales para la eliminación del hongo — esta es la opción incorrecta.",
+                    "Efectivamente los elementos fúngicos observados son levaduras intramacrofágicas, esférulas con endosporas y levaduras multibrotantes, respectivamente.",
+                    "Efectivamente los procedimientos diagnósticos incluyen esputo, raspados de úlceras mucocutáneas o biopsias."
+                ],
+                "fantasma": [
+                    "Esa está bien, el granuloma.",
+                    "¡Esta! La cura es celular, no de anticuerpo.",
+                    "Esa está bien, esas formas.",
+                    "Esa está bien, esas muestras."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es celular.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -16161,7 +16541,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Tuberculose pulmonar primária em indivíduo imunocompetente.\n\nA prova tuberculínica (PPD) depende da resposta imune celular a antígenos da Mycobacterium tuberculosis. Em tuberculose ativa, espera-se PPD positivo devido à sensibilização do sistema imune. \n\n**Outras opções:**  \nA (sarcoidose), B (sarampo) e C (uso de corticoides ou antineoplásicos) causam imunossupressão ou anergia, levando à negativação do PPD. Portanto, apenas a opção D indica uma condição com PPD positivo."
+            "feedback": "**Resposta Correta:** D. Tuberculose pulmonar primária em indivíduo imunocompetente.\n\nA prova tuberculínica (PPD) depende da resposta imune celular a antígenos da Mycobacterium tuberculosis. Em tuberculose ativa, espera-se PPD positivo devido à sensibilização do sistema imune. \n\n**Outras opções:**  \nA (sarcoidose), B (sarampo) e C (uso de corticoides ou antineoplásicos) causam imunossupressão ou anergia, levando à negativação do PPD. Portanto, apenas a opção D indica uma condição com PPD positivo.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la sarcoidosis puede causar anergia y negativización de la prueba de tuberculina.",
+                    "Efectivamente el sarampión puede causar anergia y negativización de la prueba de tuberculina.",
+                    "Efectivamente los corticoides o antineoplásicos sistémicos causan inmunosupresión y negativización de la prueba.",
+                    "En una tuberculosis pulmonar primaria en un individuo inmunocompetente se espera una PPD POSITIVA, debido a la sensibilización del sistema inmune, no una negativización — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa sí lo apaga.",
+                    "Esa sí lo apaga.",
+                    "Esa sí lo apaga.",
+                    "¡Esta! Ahí da positivo, no se apaga."
+                ],
+                "gato": [
+                    "Fijate: sí apaga.",
+                    "Dato curioso: sí apaga.",
+                    "Miau, sí apaga.",
+                    "¡Ronroneo de aprobación! Da positivo."
+                ]
+            }
         },
         {
             "numero": 30,
