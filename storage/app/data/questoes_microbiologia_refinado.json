@@ -13827,7 +13827,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A está incorreta. Legionella pneumophila não se cora bem pela coloração de Gram do esputo devido à sua parede celular e natureza intracelular; por isso, esse método não é sensível nem específico. O diagnóstico eficaz envolve detecção do antígeno urinário, cultura em meios especiais (BCYE) ou PCR.  \n\n**Outras opções:**  \nB está correta: diagnóstico sorológico é útil para Mycoplasma pneumoniae, que não possui parede celular.  \nC está correta: Chlamydophila psittaci está associada à exposição a aves infectadas.  \nD está correta: idosos (>65 anos) são grupo de risco para infecções por Chlamyd"
+            "feedback": "**Resposta Correta:** A está incorreta. Legionella pneumophila não se cora bem pela coloração de Gram do esputo devido à sua parede celular e natureza intracelular; por isso, esse método não é sensível nem específico. O diagnóstico eficaz envolve detecção do antígeno urinário, cultura em meios especiais (BCYE) ou PCR.  \n\n**Outras opções:**  \nB está correta: diagnóstico sorológico é útil para Mycoplasma pneumoniae, que não possui parede celular.  \nC está correta: Chlamydophila psittaci está associada à exposição a aves infectadas.  \nD está correta: idosos (>65 anos) são grupo de risco para infecções por Chlamyd",
+            "explicacoes": {
+                "robo": [
+                    "Legionella pneumophila no se tiñe bien con la tinción de Gram del esputo debido a su pared celular y naturaleza intracelular; este método no es sensible ni específico. El diagnóstico eficaz incluye antígeno urinario, cultivo en medios especiales (BCYE) o PCR — esta es la opción incorrecta.",
+                    "Efectivamente Mycoplasma pneumoniae puede diagnosticarse indirectamente mediante IgM o seroconversión de IgG.",
+                    "Efectivamente Chlamydophila psittaci puede adquirirse por exposición a aves infectadas.",
+                    "Efectivamente los adultos mayores de 65 años son un factor de riesgo para Chlamydophila pneumoniae."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa bacteria no se ve bien con Gram.",
+                    "Esa está bien, IgM o IgG.",
+                    "Esa está bien, el ave.",
+                    "Esa está bien, esa edad."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No se ve bien con Gram.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -13853,7 +13873,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "A opção C está incorreta: o esputo seriado não é usado para diagnóstico indireto de vírus respiratórios, que requer amostras de sangue para detecção de anticorpos. O esputo pode conter contaminantes que dificultam a análise. Diagnóstico direto usa amostras respiratórias específicas (aspirado ou swab nasofaríngeo). As opções A, B e D estão corretas: vírus respiratórios causam padrão intersticial na radiografia (A); testes rápidos de antígenos são eficazes em amostras respiratórias (B); e o VSR é o principal agente da bronquiolite em lactentes (D)."
+            "feedback": "A opção C está incorreta: o esputo seriado não é usado para diagnóstico indireto de vírus respiratórios, que requer amostras de sangue para detecção de anticorpos. O esputo pode conter contaminantes que dificultam a análise. Diagnóstico direto usa amostras respiratórias específicas (aspirado ou swab nasofaríngeo). As opções A, B e D estão corretas: vírus respiratórios causam padrão intersticial na radiografia (A); testes rápidos de antígenos são eficazes em amostras respiratórias (B); e o VSR é o principal agente da bronquiolite em lactentes (D).",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente producen neumonías agudas con patrón intersticial en la radiografía.",
+                    "Efectivamente pueden emplearse técnicas inmunocromatográficas para detección rápida de antígenos virales.",
+                    "El esputo seriado no se usa para el diagnóstico indirecto de virus respiratorios, que requiere muestras de sangre para detección de anticuerpos; el esputo puede contener contaminantes que dificultan el análisis — esta es la opción incorrecta.",
+                    "Efectivamente el VSR es el agente etiológico más frecuente de bronquiolitis en lactantes."
+                ],
+                "fantasma": [
+                    "Esa está bien, patrón intersticial.",
+                    "Esa está bien, técnica rápida.",
+                    "¡Esta! Ese no es para diagnóstico indirecto.",
+                    "Esa está bien, el VSR."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No es para eso.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -13879,7 +13919,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Anticorpos apresentam reações cruzadas entre vírus respiratórios, dificultando a identificação específica por sorologia.\n\nA detecção sorológica é limitada pela reação cruzada, tornando o diagnóstico direto (detecção de antígenos ou RNA viral) mais preciso e rápido.  \n\n**Outras opções:**  \nA está correta, pois a imunofluorescência direta é rápida, sensível e específica.  \nB está correta, pois anticorpos podem não estar detectáveis precocemente devido à rápida evolução clínica.  \nC está correta, mas o isolamento viral é lento e pouco útil para decisões clínicas imediatas."
+            "feedback": "**Resposta Correta:** D. Anticorpos apresentam reações cruzadas entre vírus respiratórios, dificultando a identificação específica por sorologia.\n\nA detecção sorológica é limitada pela reação cruzada, tornando o diagnóstico direto (detecção de antígenos ou RNA viral) mais preciso e rápido.  \n\n**Outras opções:**  \nA está correta, pois a imunofluorescência direta é rápida, sensível e específica.  \nB está correta, pois anticorpos podem não estar detectáveis precocemente devido à rápida evolução clínica.  \nC está correta, mas o isolamento viral é lento e pouco útil para decisões clínicas imediatas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la inmunofluorescencia para antígenos virales en muestra respiratoria es rápida, sensible y específica, justificando el uso de métodos directos.",
+                    "Efectivamente, a pesar de inducir respuesta humoral, la rápida evolución clínica hace que los anticuerpos puedan no ser detectables al momento de la toma de muestra.",
+                    "Efectivamente el aislamiento viral en cultivo es lento y de poca utilidad para decisiones clínicas inmediatas.",
+                    "Si bien existe cierta reacción cruzada entre anticuerpos de virus respiratorios, afirmar que 'no discriminan' es una generalización imprecisa; esta no es la razón principal que justifica preferir los métodos directos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, rápida y específica.",
+                    "Esa está bien, tarda en detectarse.",
+                    "Esa está bien, lento el cultivo.",
+                    "¡Esta! No es tan tajante eso."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No es tan absoluto."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -13905,7 +13965,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A está incorreta. Veterinários não são reservatórios de Mycobacterium bovis; bovinos e animais infectados são os reservatórios clássicos. Humanos são hospedeiros acidentais, não portadores assintomáticos.\n\n**Outras opções:** B está correta: baixa dose infectante explica alta infectividade. C está correta: humanos com tuberculose ativa são reservatórios de M. tuberculosis. D está correta: M. bovis pode ser transmitido por leite cru de animais infectados, sendo importante via zoonótica."
+            "feedback": "**Resposta Correta:** A está incorreta. Veterinários não são reservatórios de Mycobacterium bovis; bovinos e animais infectados são os reservatórios clássicos. Humanos são hospedeiros acidentais, não portadores assintomáticos.\n\n**Outras opções:** B está correta: baixa dose infectante explica alta infectividade. C está correta: humanos com tuberculose ativa são reservatórios de M. tuberculosis. D está correta: M. bovis pode ser transmitido por leite cru de animais infectados, sendo importante via zoonótica.",
+            "explicacoes": {
+                "robo": [
+                    "Los veterinarios no son reservorios de Mycobacterium bovis; el ganado bovino y otros animales infectados son los reservorios clásicos. Los humanos son huéspedes accidentales, no portadores asintomáticos — esta es la opción incorrecta.",
+                    "Efectivamente la dosis infectante de una micobacteria tuberculosa es muy baja.",
+                    "Efectivamente el principal reservorio de M. tuberculosis es el humano enfermo.",
+                    "Efectivamente puede transmitirse al hombre a través de leche no pasteurizada."
+                ],
+                "fantasma": [
+                    "¡Esta! El reservorio es el ganado, no el veterinario.",
+                    "Esa está bien, muy poquito basta.",
+                    "Esa está bien, el humano.",
+                    "Esa está bien, esa leche."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es el ganado.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -13931,7 +14011,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Animais não são reservatórios naturais de Mycoplasma pneumoniae, que é transmitido exclusivamente entre humanos por gotículas respiratórias.\n\n**Outras opções:**  \nB. IgA específica tem baixo poder preditivo positivo devido a anticorpos residuais e variação imunológica.  \nC. A portação assintomática de Chlamydophila pneumoniae na nasofaringe é baixa.  \nD. Diagnósticos moleculares de M. pneumoniae devem ser confirmados por sorologia para diferenciar infecção ativa de colonização.  \n\nPortanto, apenas a opção A está incorreta."
+            "feedback": "**Resposta Correta:** A. Animais não são reservatórios naturais de Mycoplasma pneumoniae, que é transmitido exclusivamente entre humanos por gotículas respiratórias.\n\n**Outras opções:**  \nB. IgA específica tem baixo poder preditivo positivo devido a anticorpos residuais e variação imunológica.  \nC. A portação assintomática de Chlamydophila pneumoniae na nasofaringe é baixa.  \nD. Diagnósticos moleculares de M. pneumoniae devem ser confirmados por sorologia para diferenciar infecção ativa de colonização.  \n\nPortanto, apenas a opção A está incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Los animales no son reservorios naturales de Mycoplasma pneumoniae, que se transmite exclusivamente entre humanos por gotículas respiratorias — esta es la excepción.",
+                    "Efectivamente la detección de IgA específica tiene bajo poder predictivo positivo, debido a anticuerpos residuales y variación inmunológica.",
+                    "Efectivamente la portación asintomática nasofaríngea de Chlamydophila pneumoniae es baja.",
+                    "Efectivamente los diagnósticos moleculares positivos de M. pneumoniae deben confirmarse con pruebas serológicas, para diferenciar infección activa de colonización."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese no tiene reservorio animal.",
+                    "Esa está bien, predice poco.",
+                    "Esa está bien, es baja.",
+                    "Esa está bien, hace falta confirmar."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No hay reservorio animal.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -13957,7 +14057,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "A alternativa C está incorreta: humanos não são portadores habituais de Chlamydophila psittaci, bactéria transmitida por aves e causadora da psitacose. As outras opções estão corretas: A) Streptococcus pyogenes pode colonizar fauces sem causar doença; B) soroconversão de IgG confirma infecção atual por Chlamydophila pneumoniae; D) Streptococcus pneumoniae em swab de fauces indica colonização, não infecção ativa. Assim, a C contradiz o conhecimento sobre reservatório e transmissão da Chlamydophila psittaci."
+            "feedback": "A alternativa C está incorreta: humanos não são portadores habituais de Chlamydophila psittaci, bactéria transmitida por aves e causadora da psitacose. As outras opções estão corretas: A) Streptococcus pyogenes pode colonizar fauces sem causar doença; B) soroconversão de IgG confirma infecção atual por Chlamydophila pneumoniae; D) Streptococcus pneumoniae em swab de fauces indica colonização, não infecção ativa. Assim, a C contradiz o conhecimento sobre reservatório e transmissão da Chlamydophila psittaci.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el humano puede ser portador de Streptococcus pyogenes en fauces sin desarrollar enfermedad.",
+                    "Efectivamente la seroconversión de IgG confirma infección actual por Chlamydophila pneumoniae.",
+                    "Los humanos NO son portadores habituales de Chlamydophila psittaci, bacteria transmitida por aves y causante de la psitacosis — esta es la opción incorrecta.",
+                    "Efectivamente la identificación de Streptococcus pneumoniae en hisopado de fauces indica colonización, no infección respiratoria."
+                ],
+                "fantasma": [
+                    "Esa está bien, sin enfermarse.",
+                    "Esa está bien, confirma actual.",
+                    "¡Esta! Ese no vive ahí normalmente, es del ave.",
+                    "Esa está bien, es colonización."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es del ave.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -13983,7 +14103,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Presença de antígenos de Adenovirus.\n\nO adenovírus é resistente a desinfetantes e sobrevive em ambientes hospitalares, facilitando surtos nosocomiais, especialmente em lactentes com bronquiolite. A detecção de seus antígenos indica alta transmissibilidade e necessidade de controle rigoroso.  \n\n**Outras opções:**  \nA. IgM contra VSR indica infecção recente, mas VSR é menos estável e menos propenso a surtos hospitalares.  \nB. Antígenos de Metapneumovirus têm menor estabilidade e risco de transmissão.  \nC. Ausência de anticorpos não indica presença viral ou risco imediato de surto."
+            "feedback": "**Resposta Correta:** D. Presença de antígenos de Adenovirus.\n\nO adenovírus é resistente a desinfetantes e sobrevive em ambientes hospitalares, facilitando surtos nosocomiais, especialmente em lactentes com bronquiolite. A detecção de seus antígenos indica alta transmissibilidade e necessidade de controle rigoroso.  \n\n**Outras opções:**  \nA. IgM contra VSR indica infecção recente, mas VSR é menos estável e menos propenso a surtos hospitalares.  \nB. Antígenos de Metapneumovirus têm menor estabilidade e risco de transmissão.  \nC. Ausência de anticorpos não indica presença viral ou risco imediato de surto.",
+            "explicacoes": {
+                "robo": [
+                    "La IgM contra VSR indica infección reciente, pero el VSR es menos estable y menos propenso a brotes hospitalarios.",
+                    "Los antígenos de Metapneumovirus tienen menor estabilidad y riesgo de transmisión.",
+                    "La ausencia de anticuerpos no indica presencia viral ni riesgo inmediato de brote.",
+                    "El adenovirus es resistente a desinfectantes y sobrevive en ambientes hospitalarios, facilitando brotes nosocomiales, especialmente en lactantes con bronquiolitis; la detección de sus antígenos indica alta transmisibilidad y necesidad de control riguroso — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese es menos estable, menos riesgo de brote.",
+                    "Ese también es menos estable.",
+                    "Eso no dice nada de riesgo.",
+                    "¡Esta! El adenovirus sobrevive mucho, el más riesgoso."
+                ],
+                "gato": [
+                    "Fijate: menos riesgo.",
+                    "Dato curioso: menos riesgo.",
+                    "Miau, no dice nada.",
+                    "¡Ronroneo de aprobación! Sobrevive mucho."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -14009,7 +14149,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta porque *Coccidioides posadasii* em amostras respiratórias não se apresenta como leveduras, mas como elementos miceliais ou esférulas contendo endosporos, típicos de seu dimorfismo.  \n\n**Outras opções:**  \nA está correta: Xpert MTB/RIF detecta DNA de *Mycobacterium tuberculosis* e resistência à rifampicina por PCR em tempo real.  \nB está correta: *Paracoccidioides brasiliensis* é endêmico no Nordeste argentino, causando infecções pulmonares.  \nD está correta: BACTEC MGIT 960 é um sistema automatizado sensível para cultura e det"
+            "feedback": "**Resposta Correta:** C está incorreta porque *Coccidioides posadasii* em amostras respiratórias não se apresenta como leveduras, mas como elementos miceliais ou esférulas contendo endosporos, típicos de seu dimorfismo.  \n\n**Outras opções:**  \nA está correta: Xpert MTB/RIF detecta DNA de *Mycobacterium tuberculosis* e resistência à rifampicina por PCR em tempo real.  \nB está correta: *Paracoccidioides brasiliensis* é endêmico no Nordeste argentino, causando infecções pulmonares.  \nD está correta: BACTEC MGIT 960 é um sistema automatizado sensível para cultura e det",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente las micobacterias patógenas pueden detectarse por Xpert MTB/RIF, que además detecta genes de resistencia a rifampicina.",
+                    "Efectivamente Paracoccidioides brasiliensis es endémico de provincias del noreste argentino.",
+                    "Coccidioides posadasii en muestras respiratorias no se presenta como levaduras, sino como elementos miceliales o esférulas con endosporas, típicos de su dimorfismo — esta es la opción incorrecta.",
+                    "Efectivamente el BACTEC MGIT 960 permite detectar micobacterias por cultivo en medio líquido y detección fluorométrica."
+                ],
+                "fantasma": [
+                    "Esa está bien, esa resistencia.",
+                    "Esa está bien, esa zona.",
+                    "¡Esta! No es levadura, es esférula.",
+                    "Esa está bien, ese sistema."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es esférula.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -14035,7 +14195,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. A coleta ideal para diagnóstico da bronquiolite é o aspirado nasofaríngeo com sonda pequena (K30/K33), que permite obter secreções das vias aéreas inferiores para detecção viral por PCR, cultivo ou imunofluorescência.  \n\nOpção A incorreta: vários vírus respiratórios, além do influenza, podem ser isolados em cultivo celular.  \nOpção C incorreta: existe profilaxia para bronquiolite por VSR, como o palivizumabe em grupos de risco.  \nOpção D incorreta: internação depende da gravidade clínica, não só da confirmação etiológica viral."
+            "feedback": "Resposta correta: B. A coleta ideal para diagnóstico da bronquiolite é o aspirado nasofaríngeo com sonda pequena (K30/K33), que permite obter secreções das vias aéreas inferiores para detecção viral por PCR, cultivo ou imunofluorescência.  \n\nOpção A incorreta: vários vírus respiratórios, além do influenza, podem ser isolados em cultivo celular.  \nOpção C incorreta: existe profilaxia para bronquiolite por VSR, como o palivizumabe em grupos de risco.  \nOpção D incorreta: internação depende da gravidade clínica, não só da confirmação etiológica viral.",
+            "explicacoes": {
+                "robo": [
+                    "Varios virus respiratorios, además del influenza, pueden aislarse en cultivo celular.",
+                    "La toma de muestra ideal para el diagnóstico de la bronquiolitis efectivamente se realiza mediante aspirado nasofaríngeo con sonda pequeña (K30/K33), obteniendo secreciones de vías aéreas inferiores para PCR, cultivo o inmunofluorescencia — es la respuesta correcta.",
+                    "Existe profilaxis para la bronquiolitis por VSR, como el palivizumab en grupos de riesgo.",
+                    "La internación depende de la gravedad clínica, no solo de la confirmación etiológica viral."
+                ],
+                "fantasma": [
+                    "Otros virus también se cultivan.",
+                    "¡Esta! Sonda chiquita, la correcta.",
+                    "Sí hay profilaxis, el palivizumab.",
+                    "No es solo por eso que internan."
+                ],
+                "gato": [
+                    "Fijate: otros también.",
+                    "¡Ronroneo de aprobación! Sonda chiquita.",
+                    "Dato curioso: sí hay.",
+                    "Miau, no es solo eso."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -14061,7 +14241,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Lavado broncoalveolar (LBA) é o método mais sensível para diagnóstico etiológico da pneumonia, pois coleta amostras diretamente das vias aéreas inferiores, reduzindo contaminação e permitindo melhor identificação do agente, especialmente em pacientes imunocomprometidos.  \nOutras opções:  \nB. Intradermorreação detecta resposta imune, não infecção ativa;  \nC. Hemoculturas têm baixa sensibilidade e demoram para resultado;  \nD. Esputo pode ser contaminado e nem sempre é coletado adequadamente.  \nAssim, o LBA é superior para diagnóstico microbiológico preciso em pneumonia."
+            "feedback": "Resposta correta: A. Lavado broncoalveolar (LBA) é o método mais sensível para diagnóstico etiológico da pneumonia, pois coleta amostras diretamente das vias aéreas inferiores, reduzindo contaminação e permitindo melhor identificação do agente, especialmente em pacientes imunocomprometidos.  \nOutras opções:  \nB. Intradermorreação detecta resposta imune, não infecção ativa;  \nC. Hemoculturas têm baixa sensibilidade e demoram para resultado;  \nD. Esputo pode ser contaminado e nem sempre é coletado adequadamente.  \nAssim, o LBA é superior para diagnóstico microbiológico preciso em pneumonia.",
+            "explicacoes": {
+                "robo": [
+                    "El lavado broncoalveolar (LBA) es el método más sensible para el diagnóstico etiológico de la neumonía, ya que recolecta muestras directamente de las vías aéreas inferiores, reduciendo la contaminación — es la respuesta correcta.",
+                    "La intradermorreacción detecta respuesta inmune, no infección activa.",
+                    "Los hemocultivos tienen baja sensibilidad y demoran en dar resultado.",
+                    "El esputo puede estar contaminado y no siempre se recolecta adecuadamente."
+                ],
+                "fantasma": [
+                    "¡Esta! El LBA, el más sensible.",
+                    "Esa mide respuesta inmune, no infección.",
+                    "Esos tardan y rinden poco.",
+                    "Ese se contamina fácil."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El LBA, el mejor.",
+                    "Fijate: es respuesta inmune.",
+                    "Dato curioso: rinden poco.",
+                    "Miau, se contamina."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -14087,7 +14287,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A redução do título de anticorpos de 128 para 16 após três meses indica diminuição da carga antigênica e resposta imune eficaz contra Paracoccidioides spp., refletindo evolução clínica favorável.\n\n**Opções Incorretas:**  \nB simplifica o controle da infecção, pois a resposta celular é crucial, e complexos imunes podem causar danos.  \nC incorretamente associa anticorpos à imunidade protetora duradoura, que depende mais da resposta celular.  \nD erra ao afirmar que variação do título não se correlaciona com a evolução da doença, pois na paracoccidioidomicose essa correlação é útil para monitoramento."
+            "feedback": "**Resposta Correta:** A redução do título de anticorpos de 128 para 16 após três meses indica diminuição da carga antigênica e resposta imune eficaz contra Paracoccidioides spp., refletindo evolução clínica favorável.\n\n**Opções Incorretas:**  \nB simplifica o controle da infecção, pois a resposta celular é crucial, e complexos imunes podem causar danos.  \nC incorretamente associa anticorpos à imunidade protetora duradoura, que depende mais da resposta celular.  \nD erra ao afirmar que variação do título não se correlaciona com a evolução da doença, pois na paracoccidioidomicose essa correlação é útil para monitoramento.",
+            "explicacoes": {
+                "robo": [
+                    "La reducción del título de anticuerpos de 128 a 16 tras tres meses indica disminución de la carga antigénica y respuesta inmune eficaz frente a Paracoccidioides spp, reflejando una evolución clínica favorable — es la respuesta correcta.",
+                    "El control de la infección depende principalmente de la respuesta celular; los complejos inmunes pueden causar daño, no controlar el proceso.",
+                    "Los anticuerpos no otorgan inmunidad protectora duradera, que depende más de la respuesta celular.",
+                    "En la paracoccidioidomicosis, la variación del título de anticuerpos SÍ se correlaciona con la evolución de la enfermedad, siendo útil para el seguimiento."
+                ],
+                "fantasma": [
+                    "¡Esta! Bajó el título, va mejorando.",
+                    "Eso simplifica de más.",
+                    "No es tan protector así.",
+                    "Sí se correlaciona, al revés."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Bajó, mejora.",
+                    "Fijate: simplifica.",
+                    "Dato curioso: no protege tanto.",
+                    "Miau, sí correlaciona."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -14113,7 +14333,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Imunodepressão a predomínio celular.\n\nGangrena gaseosa, causada por *Clostridium perfringens*, está associada a fatores que criam ambiente anaeróbio e comprometem tecidos, como diabetes, fraturas expostas e procedimentos cirúrgicos. Imunodepressão celular (diminuição da função de linfócitos T) não é fator predisponente típico, pois a infecção depende mais da integridade tecidual e ambiente anaeróbio do que da imunodeficiência celular. Portanto, a opção D está incorreta, enquanto A, B e C são fatores de risco reconhecidos para a doença."
+            "feedback": "**Resposta Correta:** D. Imunodepressão a predomínio celular.\n\nGangrena gaseosa, causada por *Clostridium perfringens*, está associada a fatores que criam ambiente anaeróbio e comprometem tecidos, como diabetes, fraturas expostas e procedimentos cirúrgicos. Imunodepressão celular (diminuição da função de linfócitos T) não é fator predisponente típico, pois a infecção depende mais da integridade tecidual e ambiente anaeróbio do que da imunodeficiência celular. Portanto, a opção D está incorreta, enquanto A, B e C são fatores de risco reconhecidos para a doença.",
+            "explicacoes": {
+                "robo": [
+                    "La diabetes efectivamente puede ser antecedente de gangrena gaseosa.",
+                    "La fractura expuesta efectivamente puede ser antecedente de gangrena gaseosa.",
+                    "Los procedimientos quirúrgicos efectivamente pueden ser antecedente de gangrena gaseosa.",
+                    "La inmunodepresión a predominio celular no es un factor predisponente típico de la gangrena gaseosa, ya que la infección depende más de la integridad tisular y el ambiente anaerobio que de la inmunodeficiencia celular — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa sí es antecedente.",
+                    "Esa sí es antecedente.",
+                    "Esa sí es antecedente.",
+                    "¡Esta! Eso no es lo típico ahí."
+                ],
+                "gato": [
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es.",
+                    "¡Ronroneo de aprobación! No es lo típico."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -14139,7 +14379,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Viajeros a zonas endémicas.\n\nA vacinação contra influenza é recomendada para grupos de risco, como idosos, gestantes, imunossuprimidos e pessoas com comorbidades, não apenas para viajantes a áreas endêmicas, pois o vírus circula globalmente. \n\n**Opções incorretas:**  \nB. Conviventes de imunossuprimidos devem ser vacinados para proteger indiretamente os vulneráveis.  \nC. Gestantes são grupo prioritário devido ao risco elevado de complicações.  \nD. Pacientes em terapia com corticoides ou aspirina têm maior risco e também devem ser vacinados."
+            "feedback": "**Resposta Correta:** A. Viajeros a zonas endémicas.\n\nA vacinação contra influenza é recomendada para grupos de risco, como idosos, gestantes, imunossuprimidos e pessoas com comorbidades, não apenas para viajantes a áreas endêmicas, pois o vírus circula globalmente. \n\n**Opções incorretas:**  \nB. Conviventes de imunossuprimidos devem ser vacinados para proteger indiretamente os vulneráveis.  \nC. Gestantes são grupo prioritário devido ao risco elevado de complicações.  \nD. Pacientes em terapia com corticoides ou aspirina têm maior risco e também devem ser vacinados.",
+            "explicacoes": {
+                "robo": [
+                    "La vacunación contra influenza se recomienda para grupos de riesgo como ancianos, embarazadas, inmunosuprimidos y personas con comorbilidades, no específicamente para viajeros a zonas endémicas, ya que el virus circula globalmente — esta es la excepción.",
+                    "Efectivamente los convivientes de inmunosuprimidos deben vacunarse para proteger indirectamente a los vulnerables.",
+                    "Efectivamente las embarazadas son un grupo prioritario debido al riesgo elevado de complicaciones.",
+                    "Efectivamente los pacientes bajo terapia con corticoides o aspirina tienen mayor riesgo y también deben vacunarse."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese no es motivo especial, circula en todos lados.",
+                    "Esa sí es indicación.",
+                    "Esa sí es indicación.",
+                    "Esa sí es indicación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Circula en todos lados.",
+                    "Fijate: sí es.",
+                    "Dato curioso: sí es.",
+                    "Miau, sí es."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -14165,7 +14425,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. A coloração de Gram não diferencia com precisão Streptococcus pyogenes de outros cocos Gram-positivos da microbiota orofaríngea, sendo pouco sensível e específica para diagnóstico da faringite estreptocócica. O cultivo com testes bioquímicos ou rápidos de antígeno é mais confiável.  \n\n**Outras opções:**  \nA: Bacilos Gram-positivos em empalizada e pseudomembrana indicam difteria.  \nC: Bacilos fusiformes e espiralados indicam angina de Vincent.  \nD: Isolamento em agar sangue com beta-hemólise e testes bioquímicos confirmam S. pyogenes"
+            "feedback": "**Resposta Correta:** B. A coloração de Gram não diferencia com precisão Streptococcus pyogenes de outros cocos Gram-positivos da microbiota orofaríngea, sendo pouco sensível e específica para diagnóstico da faringite estreptocócica. O cultivo com testes bioquímicos ou rápidos de antígeno é mais confiável.  \n\n**Outras opções:**  \nA: Bacilos Gram-positivos em empalizada e pseudomembrana indicam difteria.  \nC: Bacilos fusiformes e espiralados indicam angina de Vincent.  \nD: Isolamento em agar sangue com beta-hemólise e testes bioquímicos confirmam S. pyogenes",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente los bacilos Gram positivos en empalizada asociados a pseudomembrana permiten un diagnóstico presuntivo de difteria.",
+                    "La tinción de Gram no diferencia con precisión Streptococcus pyogenes de otros cocos Gram positivos de la microbiota orofaríngea, siendo poco sensible y específica para el diagnóstico de faringitis estreptocócica; el cultivo con pruebas bioquímicas o test rápido de antígeno es más confiable — esta es la opción incorrecta.",
+                    "Efectivamente la observación de bacilos Gram negativos fusiformes y espiralados es útil para el diagnóstico de angina de Vincent.",
+                    "Efectivamente el aislamiento en agar sangre de colonias betahemolíticas con pruebas bioquímicas confirma el diagnóstico de S. pyogenes."
+                ],
+                "fantasma": [
+                    "Esa está bien, difteria por eso.",
+                    "¡Esta! El Gram no distingue bien ese caso.",
+                    "Esa está bien, angina de Vincent.",
+                    "Esa está bien, con bioquímica."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No distingue bien.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -14191,7 +14471,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A intradermorreação com histoplasmina não é indicada para diagnosticar histoplasmose diseminada em pacientes com HIV/AIDS, pois mede a resposta imune celular, frequentemente deprimida nesses pacientes, gerando falso-negativos.\n\n**Outras opções:**  \nA, B e D são métodos diretos e válidos para identificar o fungo: hemoculturas por lisis-centrifugação (A), escarificações cutâneas com coloração Giemsa (B) e punção de medula óssea com anticoagulante (D). Portanto, apenas a opção C é inadequada para diagnóstico nessa população."
+            "feedback": "**Resposta Correta:** C. A intradermorreação com histoplasmina não é indicada para diagnosticar histoplasmose diseminada em pacientes com HIV/AIDS, pois mede a resposta imune celular, frequentemente deprimida nesses pacientes, gerando falso-negativos.\n\n**Outras opções:**  \nA, B e D são métodos diretos e válidos para identificar o fungo: hemoculturas por lisis-centrifugação (A), escarificações cutâneas com coloração Giemsa (B) e punção de medula óssea com anticoagulante (D). Portanto, apenas a opção C é inadequada para diagnóstico nessa população.",
+            "explicacoes": {
+                "robo": [
+                    "Los hemocultivos por método de lisis-centrifugación efectivamente son útiles para identificar el hongo.",
+                    "Las escarificaciones cutáneas con tinción de Giemsa efectivamente son un método directo válido.",
+                    "La intradermorreacción con histoplasmina no está indicada para diagnosticar histoplasmosis diseminada en pacientes con VIH/SIDA, ya que mide la respuesta inmune celular, frecuentemente deprimida en estos pacientes, generando falsos negativos — esta es la excepción.",
+                    "La punción de médula ósea con anticoagulante efectivamente es un método directo válido."
+                ],
+                "fantasma": [
+                    "Esa sí sirve, lisis-centrifugación.",
+                    "Esa sí sirve, Giemsa.",
+                    "¡Esta! Esa no sirve, el VIH baja esa respuesta.",
+                    "Esa sí sirve, punción de médula."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "Dato curioso: sirve.",
+                    "¡Ronroneo de aprobación! No sirve, baja la respuesta.",
+                    "Miau, sirve."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -14217,7 +14517,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Aspirado nasofaríngeo para detecção de antígenos por imunofluorescência, método rápido e sensível para diagnóstico precoce de adenovírus.  \nOpção A incorreta: IgM é detectada no sangue, não no aspirado, e pode não ser detectável precocemente.  \nOpção C incorreta: Esputo é difícil de coletar em lactentes e não indicado para IgM.  \nOpção D incorreta: Esputo não é amostra preferida; aspirado nasofaríngeo é mais sensível para detectar antígenos virais."
+            "feedback": "Resposta correta: B. Aspirado nasofaríngeo para detecção de antígenos por imunofluorescência, método rápido e sensível para diagnóstico precoce de adenovírus.  \nOpção A incorreta: IgM é detectada no sangue, não no aspirado, e pode não ser detectável precocemente.  \nOpção C incorreta: Esputo é difícil de coletar em lactentes e não indicado para IgM.  \nOpção D incorreta: Esputo não é amostra preferida; aspirado nasofaríngeo é mais sensível para detectar antígenos virais.",
+            "explicacoes": {
+                "robo": [
+                    "La IgM se detecta en sangre, no en el aspirado, y puede no ser detectable precozmente.",
+                    "El aspirado nasofaríngeo para detección de antígenos mediante inmunofluorescencia es un método rápido y sensible para el diagnóstico precoz de adenovirus — es la respuesta correcta.",
+                    "El esputo es difícil de recolectar en lactantes y no es indicado para IgM.",
+                    "El esputo no es la muestra preferida; el aspirado nasofaríngeo es más sensible para detectar antígenos virales."
+                ],
+                "fantasma": [
+                    "Eso se ve en sangre, no ahí.",
+                    "¡Esta! Aspirado con inmunofluorescencia, la correcta.",
+                    "Eso es difícil en bebé.",
+                    "El esputo no es lo mejor acá."
+                ],
+                "gato": [
+                    "Fijate: es en sangre.",
+                    "¡Ronroneo de aprobación! Aspirado con inmunofluorescencia.",
+                    "Dato curioso: es difícil.",
+                    "Miau, no es lo mejor."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -14243,7 +14563,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. O teste PPD positivo indica exposição ou infecção latente por M. tuberculosis, mas não confirma doença ativa.  \n\n**Outras opções:**  \nB. A vacina BCG protege contra formas graves em crianças, mas tem eficácia variável em adultos.  \nC. M. tuberculosis é um patógeno exclusivamente humano, sem reservatórios animais.  \nD. A tuberculose é transmitida principalmente por aerossóis gerados por tosse, espirro ou fala de pacientes ativos."
+            "feedback": "**Resposta Correta:** A. O teste PPD positivo indica exposição ou infecção latente por M. tuberculosis, mas não confirma doença ativa.  \n\n**Outras opções:**  \nB. A vacina BCG protege contra formas graves em crianças, mas tem eficácia variável em adultos.  \nC. M. tuberculosis é um patógeno exclusivamente humano, sem reservatórios animais.  \nD. A tuberculose é transmitida principalmente por aerossóis gerados por tosse, espirro ou fala de pacientes ativos.",
+            "explicacoes": {
+                "robo": [
+                    "Una prueba de PPD positiva indica exposición o infección latente por M. tuberculosis, pero NO confirma con certeza enfermedad activa — esta es la opción incorrecta.",
+                    "Efectivamente un niño vacunado con BCG está protegido contra las formas diseminadas graves.",
+                    "Efectivamente M. tuberculosis proviene necesariamente de un huésped humano, sin reservorios animales.",
+                    "Efectivamente la transmisión se da por vía aerógena, mediante gotitas de Flugge."
+                ],
+                "fantasma": [
+                    "¡Esta! Solo dice exposición, no confirma enfermedad.",
+                    "Esa está bien, protege.",
+                    "Esa está bien, solo del humano.",
+                    "Esa está bien, por el aire."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Solo exposición.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -14269,7 +14609,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A vacinação é recomendada para todos maiores de 65 anos, mesmo sem fatores de risco, devido à imunossenescência que aumenta o risco de pneumonia.\n\n**Opções Incorretas:**  \nA está errada porque no Brasil e Argentina a vacina contra Influenza é inativada, não de vírus vivo atenuado.  \nB está errada; pacientes asplênicos devem ser vacinados contra bactérias encapsuladas para prevenir infecções graves.  \nD está errada; a vacina conjugada pneumocócica é segura e indicada em imunossuprimidos, não contraindicação."
+            "feedback": "**Resposta Correta:** C. A vacinação é recomendada para todos maiores de 65 anos, mesmo sem fatores de risco, devido à imunossenescência que aumenta o risco de pneumonia.\n\n**Opções Incorretas:**  \nA está errada porque no Brasil e Argentina a vacina contra Influenza é inativada, não de vírus vivo atenuado.  \nB está errada; pacientes asplênicos devem ser vacinados contra bactérias encapsuladas para prevenir infecções graves.  \nD está errada; a vacina conjugada pneumocócica é segura e indicada em imunossuprimidos, não contraindicação.",
+            "explicacoes": {
+                "robo": [
+                    "La vacuna contra influenza usada en Argentina es inactivada, no de virus vivo atenuado.",
+                    "Los pacientes asplénicos SÍ deben vacunarse contra bacterias encapsuladas para prevenir infecciones graves.",
+                    "La vacunación efectivamente está recomendada para mayores de 65 años, aun sin factores de riesgo, debido a la inmunosenescencia que aumenta el riesgo de neumonía — es la respuesta correcta.",
+                    "La vacuna conjugada contra neumococo es segura y está indicada en inmunosuprimidos, no contraindicada."
+                ],
+                "fantasma": [
+                    "Es inactivada, no viva.",
+                    "Sí deben vacunarse ellos.",
+                    "¡Esta! Con o sin riesgo, esa edad se vacuna.",
+                    "Sí se aplica, es segura."
+                ],
+                "gato": [
+                    "Fijate: es inactivada.",
+                    "Dato curioso: sí deben.",
+                    "¡Ronroneo de aprobación! Esa edad se vacuna.",
+                    "Miau, es segura."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -14295,7 +14655,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Pseudomonas aeruginosa.\n\nPseudomonas aeruginosa não é comum na otite média aguda (OMA), sendo mais associada a otite externa e infecções hospitalares. Os agentes típicos da OMA são bactérias do trato respiratório superior que ascendem pela tuba auditiva. \n\n**Outras opções:**  \nB. Moraxella catarrhalis, C. Haemophilus influenzae e D. Streptococcus pneumoniae são os principais causadores da OMA, com S. pneumoniae sendo o mais frequente. Portanto, P. aeruginosa é excluída por não ser típica da OMA."
+            "feedback": "**Resposta Correta:** A. Pseudomonas aeruginosa.\n\nPseudomonas aeruginosa não é comum na otite média aguda (OMA), sendo mais associada a otite externa e infecções hospitalares. Os agentes típicos da OMA são bactérias do trato respiratório superior que ascendem pela tuba auditiva. \n\n**Outras opções:**  \nB. Moraxella catarrhalis, C. Haemophilus influenzae e D. Streptococcus pneumoniae são os principais causadores da OMA, com S. pneumoniae sendo o mais frequente. Portanto, P. aeruginosa é excluída por não ser típica da OMA.",
+            "explicacoes": {
+                "robo": [
+                    "Pseudomonas aeruginosa no es común en la otitis media aguda, asociándose más a otitis externa e infecciones hospitalarias; los agentes típicos de la OMA ascienden por la trompa de Eustaquio desde la vía respiratoria superior — esta es la excepción.",
+                    "Moraxella catarrhalis efectivamente es uno de los principales agentes de la OMA.",
+                    "Haemophilus influenzae efectivamente es uno de los principales agentes de la OMA.",
+                    "Streptococcus pneumoniae efectivamente es el agente más frecuente de la OMA."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese es de oído externo, no de acá.",
+                    "Ese sí es común.",
+                    "Ese sí es común.",
+                    "Ese sí es el más común."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es de oído externo.",
+                    "Fijate: sí es común.",
+                    "Dato curioso: sí es común.",
+                    "Miau, es el más común."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -14321,7 +14701,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "A opção A é incorreta: a tuberculose multirresistente (TB-MR) está diretamente associada à falta de adesão ao tratamento, principal causa da resistência. As opções B, C e D estão corretas: a TB-MR pode surgir por monoterapia real ou encoberta, ser transmitida em ambientes hospitalares (transmissão nosocomial) e aparecer por mutações genéticas espontâneas. Portanto, a resistência resulta da combinação desses fatores, especialmente da adesão inadequada ao tratamento."
+            "feedback": "A opção A é incorreta: a tuberculose multirresistente (TB-MR) está diretamente associada à falta de adesão ao tratamento, principal causa da resistência. As opções B, C e D estão corretas: a TB-MR pode surgir por monoterapia real ou encoberta, ser transmitida em ambientes hospitalares (transmissão nosocomial) e aparecer por mutações genéticas espontâneas. Portanto, a resistência resulta da combinação desses fatores, especialmente da adesão inadequada ao tratamento.",
+            "explicacoes": {
+                "robo": [
+                    "La tuberculosis multirresistente SÍ está directamente asociada a la falta de adherencia al tratamiento, siendo la principal causa de resistencia — esta es la opción incorrecta.",
+                    "Efectivamente surge como consecuencia de la monoterapia real o encubierta.",
+                    "Efectivamente puede ser de transmisión nosocomial.",
+                    "Efectivamente aparece por mutación genética espontánea."
+                ],
+                "fantasma": [
+                    "¡Esta! Sí tiene que ver con no tomar bien el remedio.",
+                    "Esa está bien, la monoterapia.",
+                    "Esa está bien, en el hospital.",
+                    "Esa está bien, la mutación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Sí tiene que ver.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 35,
