@@ -19347,7 +19347,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. As múltiplas lesões císticas com escólex na ressonância indicam neurocisticercose, causada pela ingestão dos ovos de Taenia solium, que formam cistos no sistema nervoso central. Essa apresentação é típica e patognomônica, associada a convulsões e alterações mentais.\n\n**Outras opções incorretas:**  \nB. Paracoccidioidomicose cerebral é rara, não apresenta cistos com escólex.  \nC. Taenia saginata não causa neurocisticercose.  \nD. Toxoplasmose cerebral não forma cistos com escólex, apresentando lesões diferentes."
+            "feedback": "**Resposta Correta:** A. As múltiplas lesões císticas com escólex na ressonância indicam neurocisticercose, causada pela ingestão dos ovos de Taenia solium, que formam cistos no sistema nervoso central. Essa apresentação é típica e patognomônica, associada a convulsões e alterações mentais.\n\n**Outras opções incorretas:**  \nB. Paracoccidioidomicose cerebral é rara, não apresenta cistos com escólex.  \nC. Taenia saginata não causa neurocisticercose.  \nD. Toxoplasmose cerebral não forma cistos com escólex, apresentando lesões diferentes.",
+            "explicacoes": {
+                "robo": [
+                    "Las múltiples lesiones quísticas con escólex en la RMN indican neurocisticercosis, causada por la ingestión de huevos de Taenia solium, que forman quistes en el sistema nervioso central; esta presentación es típica y patognomónica, asociada a convulsiones y alteraciones mentales — es la respuesta correcta.",
+                    "La paracoccidioidomicosis cerebral es rara y no presenta quistes con escólex.",
+                    "Taenia saginata no causa neurocisticercosis; el agente es Taenia solium.",
+                    "La toxoplasmosis cerebral no forma quistes con escólex, presentando lesiones diferentes."
+                ],
+                "fantasma": [
+                    "¡Esta! Quiste con escólex, la lombriz del cerdo.",
+                    "Eso es raro y sin escólex.",
+                    "Es la otra Taenia, la del cerdo.",
+                    "Eso no forma ese quiste."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El escólex, la solitaria.",
+                    "Fijate: es raro.",
+                    "Dato curioso: es la del cerdo.",
+                    "Miau, no forma eso."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -19373,7 +19393,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B está incorreta. O vírus da raiva é transmitido principalmente pela mordida de animais infectados, não pela inalação de urina. Raramente, aerossóis podem infectar, mas não é via comum.  \nAs opções A, C e D estão corretas:  \nA) Vírus herpes simples transmite-se por contato direto com lesões.  \nC) Enterovírus transmitem-se por via fecal-oral e secreções respiratórias.  \nD) Arbovírus transmitem-se pela picada de vetores.  \nPortanto, a única associação incorreta é a do vírus da raiva com a inalação de urina."
+            "feedback": "Resposta correta: B está incorreta. O vírus da raiva é transmitido principalmente pela mordida de animais infectados, não pela inalação de urina. Raramente, aerossóis podem infectar, mas não é via comum.  \nAs opções A, C e D estão corretas:  \nA) Vírus herpes simples transmite-se por contato direto com lesões.  \nC) Enterovírus transmitem-se por via fecal-oral e secreções respiratórias.  \nD) Arbovírus transmitem-se pela picada de vetores.  \nPortanto, a única associação incorreta é a do vírus da raiva com a inalação de urina.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el VHS se transmite por contacto directo con lesiones productivas de piel y mucosas.",
+                    "El virus de la rabia se transmite principalmente por la mordedura de animales infectados, no por inhalación de orina; rara vez los aerosoles pueden infectar, pero no es la vía común — esta es la opción incorrecta.",
+                    "Efectivamente los enterovirus se transmiten por secreciones respiratorias y/o vía fecal-oral.",
+                    "Efectivamente los arbovirus se transmiten por vía vectorial."
+                ],
+                "fantasma": [
+                    "Esa está bien, contacto con la lesión.",
+                    "¡Esta! Es por mordida, no por orina.",
+                    "Esa está bien, boca y heces.",
+                    "Esa está bien, por el mosquito."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es por mordida.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -19399,7 +19439,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C está incorreta porque o congelamento a -20°C pode degradar antígenos bacterianos, prejudicando a detecção. Amostras para antígenos devem ser mantidas refrigeradas (~4°C).  \n\n**Outras opções:**  \nA está correta: transporte a temperatura ambiente ou 37°C é ideal para cultivo bacteriano.  \nB está correta: refrigeração (~4°C) preserva ácidos nucleicos para análises moleculares.  \nD está correta: transporte a temperatura ambiente é adequado para culturas fúngicas, evitando danos por frio."
+            "feedback": "**Resposta Correta:** C está incorreta porque o congelamento a -20°C pode degradar antígenos bacterianos, prejudicando a detecção. Amostras para antígenos devem ser mantidas refrigeradas (~4°C).  \n\n**Outras opções:**  \nA está correta: transporte a temperatura ambiente ou 37°C é ideal para cultivo bacteriano.  \nB está correta: refrigeração (~4°C) preserva ácidos nucleicos para análises moleculares.  \nD está correta: transporte a temperatura ambiente é adequado para culturas fúngicas, evitando danos por frio.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en tubo a temperatura ambiente o 37°C es ideal para cultivo bacteriano.",
+                    "Efectivamente en tubo refrigerado es adecuado para detección de ácidos nucleicos.",
+                    "Congelar a -20°C puede degradar los antígenos bacterianos, perjudicando su detección; las muestras para antígenos deben mantenerse refrigeradas (~4°C), no congeladas — esta es la opción incorrecta.",
+                    "Efectivamente en tubo a temperatura ambiente es adecuado para cultivo de hongos."
+                ],
+                "fantasma": [
+                    "Esa está bien, temperatura o 37.",
+                    "Esa está bien, refrigerado.",
+                    "¡Esta! Eso rompe el antígeno, es mucho frío.",
+                    "Esa está bien, ambiente."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es mucho frío.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -19425,7 +19485,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. A vacina conjugada contra Haemophilus influenzae b previne eficazmente meningite em crianças menores de 5 anos, pois a conjugação do polissacarídeo com proteína melhora a resposta imune infantil.  \nOpção B incorreta: A tríplice viral é contraindicada na gestação e não previne encefalite por sarampo em grávidas.  \nOpção C incorreta: A vacina tetravalente protege contra meningococos A, C, W e Y, não contra o sorogrupo B.  \nOpção D incorreta: Não existe vacina monovalente contra estreptococos para meningite em idosos."
+            "feedback": "Resposta correta: A. A vacina conjugada contra Haemophilus influenzae b previne eficazmente meningite em crianças menores de 5 anos, pois a conjugação do polissacarídeo com proteína melhora a resposta imune infantil.  \nOpção B incorreta: A tríplice viral é contraindicada na gestação e não previne encefalite por sarampo em grávidas.  \nOpção C incorreta: A vacina tetravalente protege contra meningococos A, C, W e Y, não contra o sorogrupo B.  \nOpção D incorreta: Não existe vacina monovalente contra estreptococos para meningite em idosos.",
+            "explicacoes": {
+                "robo": [
+                    "La vacuna conjugada anti-Haemophilus influenzae b previene eficazmente la meningitis en niños menores de 5 años, ya que la conjugación del polisacárido con proteína mejora la respuesta inmune infantil — es la respuesta correcta.",
+                    "La vacuna triple viral está contraindicada en el embarazo y no previene la encefalitis por sarampión en embarazadas.",
+                    "La vacuna tetravalente protege contra meningococos A, C, W e Y, no contra el serogrupo B.",
+                    "No existe vacuna monovalente contra estreptococos para meningitis en ancianos."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa vacuna sí previene bien al chico.",
+                    "Esa está contraindicada en la panza.",
+                    "Esa no cubre ese serogrupo.",
+                    "Esa no existe."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Previene al chico.",
+                    "Fijate: está contraindicada.",
+                    "Dato curioso: no cubre ese.",
+                    "Miau, no existe."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -19451,7 +19531,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A opção A está incorreta: existe tratamento antiviral específico para encefalite por Herpes simplex, sendo o aciclovir o padrão-ouro, fundamental para reduzir mortalidade e sequelas. As opções B, C e D estão corretas: a encefalite pode ocorrer na primoinfecção ou reativação do vírus latente; o HSV é a causa mais comum de encefalite viral esporádica; e sinais meníngeos são frequentes no quadro clínico. O diagnóstico precoce e tratamento imediato com aciclovir são essenciais para o sucesso terapêutico."
+            "feedback": "A opção A está incorreta: existe tratamento antiviral específico para encefalite por Herpes simplex, sendo o aciclovir o padrão-ouro, fundamental para reduzir mortalidade e sequelas. As opções B, C e D estão corretas: a encefalite pode ocorrer na primoinfecção ou reativação do vírus latente; o HSV é a causa mais comum de encefalite viral esporádica; e sinais meníngeos são frequentes no quadro clínico. O diagnóstico precoce e tratamento imediato com aciclovir são essenciais para o sucesso terapêutico.",
+            "explicacoes": {
+                "robo": [
+                    "SÍ existe tratamiento antiviral específico para la encefalitis por herpes simple; el aciclovir es el estándar de oro, fundamental para reducir mortalidad y secuelas — esta es la opción incorrecta.",
+                    "Efectivamente la encefalitis por HSV puede resultar de la primoinfección o de la reactivación viral.",
+                    "Efectivamente el HSV es el primer agente causal de encefalitis esporádica.",
+                    "Efectivamente la encefalitis herpética puede acompañarse de signos meníngeos."
+                ],
+                "fantasma": [
+                    "¡Esta! Sí hay tratamiento, el aciclovir.",
+                    "Esa está bien, de las dos formas.",
+                    "Esa está bien, el primero de la lista.",
+                    "Esa está bien, con signos meníngeos."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Sí hay tratamiento.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -19477,7 +19577,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Neurocisticercose resulta da ingestão de ovos de *Taenia solium*, que formam cisticercos no SNC. O consumo de larvas na carne mal cozida causa teníase, não neurocisticercose.\n\n**Outras opções:**  \nA) Hemoculturas geralmente negativas em abscessos cerebrais devido à infecção localizada.  \nB) Punção estereotáxica é o padrão-ouro para diagnóstico, permitindo análise direta do material.  \nD) *Aspergillus* e mucorais podem causar abscessos no SNC, especialmente em imunocomprometidos."
+            "feedback": "**Resposta Correta:** C. Neurocisticercose resulta da ingestão de ovos de *Taenia solium*, que formam cisticercos no SNC. O consumo de larvas na carne mal cozida causa teníase, não neurocisticercose.\n\n**Outras opções:**  \nA) Hemoculturas geralmente negativas em abscessos cerebrais devido à infecção localizada.  \nB) Punção estereotáxica é o padrão-ouro para diagnóstico, permitindo análise direta do material.  \nD) *Aspergillus* e mucorais podem causar abscessos no SNC, especialmente em imunocomprometidos.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente los hemocultivos en el diagnóstico de abscesos del SNC suelen ser negativos.",
+                    "Efectivamente la punción estereotáxica es el gold standard para el diagnóstico de lesiones por abscesos.",
+                    "La neurocisticercosis resulta de la ingestión de HUEVOS de Taenia solium, no de larvas en carne mal cocida; el consumo de larvas en carne causa teniasis, no neurocisticercosis — esta es la opción incorrecta.",
+                    "Efectivamente especies de Aspergillus y mucorales pueden producir abscesos en el SNC asociados a inmunocompromiso."
+                ],
+                "fantasma": [
+                    "Esa está bien, negativos.",
+                    "Esa está bien, el gold standard.",
+                    "¡Esta! Es por huevo, no por larva en la carne.",
+                    "Esa está bien, en inmunocomprometido."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es por huevo.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -19503,7 +19623,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Streptococcus agalactiae, Escherichia coli K1 e Listeria monocytogenes são os principais agentes causadores de meningite em neonatos. Streptococcus agalactiae é o mais comum, transmitido durante o parto. E. coli K1 atravessa a barreira hematoencefálica, e Listeria pode infectar via transplacentária ou parto.  \n\nOutras opções incluem agentes mais comuns em crianças maiores ou adultos (S. pneumoniae, N. meningitidis, H. influenzae) ou bactérias raras em neonatos (Streptococcus β-hemolítico grupo A, Staphylococcus aureus), não sendo"
+            "feedback": "Resposta correta: D. Streptococcus agalactiae, Escherichia coli K1 e Listeria monocytogenes são os principais agentes causadores de meningite em neonatos. Streptococcus agalactiae é o mais comum, transmitido durante o parto. E. coli K1 atravessa a barreira hematoencefálica, e Listeria pode infectar via transplacentária ou parto.  \n\nOutras opções incluem agentes mais comuns em crianças maiores ou adultos (S. pneumoniae, N. meningitidis, H. influenzae) ou bactérias raras em neonatos (Streptococcus β-hemolítico grupo A, Staphylococcus aureus), não sendo",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pneumoniae y Neisseria meningitidis son más comunes en niños mayores o adultos, no en neonatos como agentes principales.",
+                    "Streptococcus pneumoniae, H. influenzae y Streptococcus del grupo A no son los agentes típicos de meningitis neonatal.",
+                    "Staphylococcus aureus y Streptococcus pneumoniae no son los agentes principales en meningitis neonatal.",
+                    "Streptococcus agalactiae, Escherichia coli K1 y Listeria monocytogenes son los principales agentes causantes de meningitis en neonatos; S. agalactiae es el más común, transmitido durante el parto, E. coli K1 atraviesa la barrera hematoencefálica, y Listeria puede infectar vía transplacentaria o durante el parto — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esos son de niño grande.",
+                    "Esos no son de recién nacido.",
+                    "Esos no son de recién nacido.",
+                    "¡Esta! Esos tres, los del bebé."
+                ],
+                "gato": [
+                    "Fijate: son de grande.",
+                    "Dato curioso: no son de bebé.",
+                    "Miau, no son de bebé.",
+                    "¡Ronroneo de aprobación! Los del bebé."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -19529,7 +19669,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta correta:** C. Vacina quíntuple (Difteria/tétanos/Pertussis/HBV/Haemophilus influenzae) previne abscessos no SNC causados por Hib.  \n\n**Outras opções incorretas:**  \nA) Tríplice viral não protege contra meningite por Varicela-Zoster; vacina específica para varicela é necessária.  \nB) Não há vacina monovalente anti-estreptocócica para prevenir lesões quísticas no SNC.  \nD) Vacina tetravalente anti-meningocócica previne meningite, mas não lesões quísticas no SNC."
+            "feedback": "**Resposta correta:** C. Vacina quíntuple (Difteria/tétanos/Pertussis/HBV/Haemophilus influenzae) previne abscessos no SNC causados por Hib.  \n\n**Outras opções incorretas:**  \nA) Tríplice viral não protege contra meningite por Varicela-Zoster; vacina específica para varicela é necessária.  \nB) Não há vacina monovalente anti-estreptocócica para prevenir lesões quísticas no SNC.  \nD) Vacina tetravalente anti-meningocócica previne meningite, mas não lesões quísticas no SNC.",
+            "explicacoes": {
+                "robo": [
+                    "La vacuna triple viral no protege contra la meningitis por VVZ; se necesita una vacuna específica para varicela.",
+                    "No existe vacuna monovalente antiestreptocócica para prevenir lesiones quísticas en el SNC.",
+                    "La vacuna quíntuple (Difteria/tétanos/Pertussis/HBV/Haemophilus influenzae) previene abscesos en el SNC causados por Hib — es la respuesta correcta.",
+                    "La vacuna tetravalente antimeningocócica previene meningitis, no lesiones quísticas en el SNC."
+                ],
+                "fantasma": [
+                    "Esa no cubre la varicela.",
+                    "Esa no existe.",
+                    "¡Esta! La quíntuple con Hib, la correcta.",
+                    "Esa no cubre esos quistes."
+                ],
+                "gato": [
+                    "Fijate: no cubre eso.",
+                    "Dato curioso: no existe.",
+                    "¡Ronroneo de aprobación! La quíntuple.",
+                    "Miau, no cubre eso."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -19555,7 +19715,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. ECHO/virus Coxsackie são enterovírus, principais causadores de meningite viral asséptica em crianças imunocompetentes, com LCR claro e pleocitose linfocitária, sem alterações significativas em glicose ou proteínas.\n\n**Outras opções:**  \nA. HSV-1 causa principalmente encefalite, não meningite isolada, e apresenta LCR alterado.  \nB. Vírus da parotidite é raro após vacinação MMR.  \nC. Varicela-zóster afeta principalmente imunossuprimidos e causa quadro mais grave."
+            "feedback": "**Resposta Correta:** D. ECHO/virus Coxsackie são enterovírus, principais causadores de meningite viral asséptica em crianças imunocompetentes, com LCR claro e pleocitose linfocitária, sem alterações significativas em glicose ou proteínas.\n\n**Outras opções:**  \nA. HSV-1 causa principalmente encefalite, não meningite isolada, e apresenta LCR alterado.  \nB. Vírus da parotidite é raro após vacinação MMR.  \nC. Varicela-zóster afeta principalmente imunossuprimidos e causa quadro mais grave.",
+            "explicacoes": {
+                "robo": [
+                    "El HSV-1 causa principalmente encefalitis, no meningitis aislada, y presenta LCR alterado.",
+                    "El virus de la parotiditis es raro tras la vacunación MMR.",
+                    "El virus varicela-zóster afecta principalmente a inmunosuprimidos y causa un cuadro más grave.",
+                    "ECHO/Coxsackie son enterovirus, principales causantes de meningitis viral aséptica en niños inmunocompetentes, con LCR claro y pleocitosis linfocitaria, sin alteraciones significativas en glucosa o proteínas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese es de encefalitis, no de esto.",
+                    "Ese es raro, ya está vacunado.",
+                    "Ese es de inmunosuprimido.",
+                    "¡Esta! El enterovirus, el más común."
+                ],
+                "gato": [
+                    "Fijate: es otro cuadro.",
+                    "Dato curioso: es raro.",
+                    "Miau, es de inmunosuprimido.",
+                    "¡Ronroneo de aprobación! El enterovirus."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -19581,7 +19761,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. A panencefalite esclerosante subaguda é causada pela persistência do vírus do sarampo no SNC, levando à desmielinização e degeneração neuronal anos após a infecção inicial.  \nOpção A incorreta: HSV-1 causa encefalite esporádica, não epidêmica.  \nOpção B incorreta: Raiva é fatal e progressiva, não benigna.  \nOpção D incorreta: Além de Echovirus e Coxsackie B, outros enterovírus (Coxsackie A, poliovírus) também causam meningite asséptica."
+            "feedback": "Resposta correta: C. A panencefalite esclerosante subaguda é causada pela persistência do vírus do sarampo no SNC, levando à desmielinização e degeneração neuronal anos após a infecção inicial.  \nOpção A incorreta: HSV-1 causa encefalite esporádica, não epidêmica.  \nOpção B incorreta: Raiva é fatal e progressiva, não benigna.  \nOpção D incorreta: Além de Echovirus e Coxsackie B, outros enterovírus (Coxsackie A, poliovírus) também causam meningite asséptica.",
+            "explicacoes": {
+                "robo": [
+                    "El HSV-1 causa encefalitis esporádica, no epidémica.",
+                    "La rabia es fatal y progresiva, no benigna.",
+                    "La panencefalitis esclerosante subaguda es consecuencia de la persistencia del virus del sarampión en el SNC, causando desmielinización y degeneración neuronal años después de la infección inicial — es la respuesta correcta.",
+                    "Además de Echovirus y Coxsackie B, otros enterovirus (Coxsackie A, poliovirus) también causan meningitis aséptica."
+                ],
+                "fantasma": [
+                    "Ese es esporádico, no epidémico.",
+                    "Esa mata, no es benigna.",
+                    "¡Esta! El sarampión que se queda, la correcta.",
+                    "También otros dan eso."
+                ],
+                "gato": [
+                    "Fijate: es esporádico.",
+                    "Dato curioso: mata.",
+                    "¡Ronroneo de aprobación! El sarampión que persiste.",
+                    "Miau, otros también."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -19607,7 +19807,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta porque a sorologia detecta anticorpos que demoram dias a semanas para aparecer, não sendo útil no diagnóstico inicial da meningite aguda. Opções A, B e C estão corretas: A usa PCR no LCR para diagnóstico rápido de meningite viral; B realiza coloração de Gram e cultura do LCR para identificar bactérias; C coleta hemoculturas para detectar bacteremia associada, auxiliando no diagnóstico e tratamento."
+            "feedback": "Resposta correta: D está incorreta porque a sorologia detecta anticorpos que demoram dias a semanas para aparecer, não sendo útil no diagnóstico inicial da meningite aguda. Opções A, B e C estão corretas: A usa PCR no LCR para diagnóstico rápido de meningite viral; B realiza coloração de Gram e cultura do LCR para identificar bactérias; C coleta hemoculturas para detectar bacteremia associada, auxiliando no diagnóstico e tratamento.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en LCR se realiza detección de ácidos nucleicos virales por PCR.",
+                    "Efectivamente en LCR se hace tinción de Gram y aislamiento bacteriano.",
+                    "Efectivamente en sangre se hace hemocultivo para determinar bacteriemia.",
+                    "La serología detecta anticuerpos que tardan días a semanas en aparecer, no siendo útil en el diagnóstico inicial de la meningitis aguda — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, PCR en el líquido.",
+                    "Esa está bien, Gram y cultivo.",
+                    "Esa está bien, hemocultivo.",
+                    "¡Esta! Eso tarda mucho, no sirve al principio."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Tarda mucho."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -19633,7 +19853,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "Resposta correta: C. Quimioprofilaxia com rifampicina para todos os contatos próximos, incluindo colegas e conviventes, independentemente da vacinação.  \n\nNeisseria meningitidis transmite-se por contato próximo, e a rifampicina elimina a bactéria da nasofaringe, prevenindo a disseminação. A profilaxia não deve ser restrita apenas a familiares (A) nem depender do estado vacinal (B), pois a vacina pode não proteger imediatamente ou contra todos os sorogrupos. Também é incorreto não fazer profilaxia na ausência de sintomas (D), pois portadores assintomáticos podem transmitir a doença."
+            "feedback": "Resposta correta: C. Quimioprofilaxia com rifampicina para todos os contatos próximos, incluindo colegas e conviventes, independentemente da vacinação.  \n\nNeisseria meningitidis transmite-se por contato próximo, e a rifampicina elimina a bactéria da nasofaringe, prevenindo a disseminação. A profilaxia não deve ser restrita apenas a familiares (A) nem depender do estado vacinal (B), pois a vacina pode não proteger imediatamente ou contra todos os sorogrupos. Também é incorreto não fazer profilaxia na ausência de sintomas (D), pois portadores assintomáticos podem transmitir a doença.",
+            "explicacoes": {
+                "robo": [
+                    "La quimioprofilaxis no debe restringirse solo a familiares directos.",
+                    "La profilaxis no debe depender del estado vacunal, ya que la vacuna puede no proteger inmediatamente o contra todos los serogrupos.",
+                    "Debe darse quimioprofilaxis con rifampicina a compañeros de clase y convivientes, independientemente del estado de vacunación, ya que Neisseria meningitidis se transmite por contacto cercano y la rifampicina elimina la bacteria de la nasofaringe, previniendo la diseminación — es la respuesta correcta.",
+                    "Es necesaria la profilaxis aun en ausencia de síntomas, ya que los portadores asintomáticos pueden transmitir la enfermedad."
+                ],
+                "fantasma": [
+                    "No es solo la familia.",
+                    "No depende de la vacuna.",
+                    "¡Esta! A todos los cercanos, la correcta.",
+                    "Sí hace falta igual, sin síntomas."
+                ],
+                "gato": [
+                    "Fijate: no es solo familia.",
+                    "Dato curioso: no depende.",
+                    "¡Ronroneo de aprobación! A todos los cercanos.",
+                    "Miau, sí hace falta."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -19659,7 +19899,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta. Mycobacterium tuberculosis causa tuberculomas nodulares, únicos ou múltiplos, com realce em anel, não lesões difusas múltiplas.\n\n**Outras opções corretas:**  \nA) Toxoplasma gondii: múltiplas lesões que realçam em anel.  \nC) Vírus herpes: encefalite difusa, sem lesões nodulares.  \nD) Neurocisticercose e hidatose: lesões císticas típicas.  \n\nPortanto, B descreve incorretamente as lesões da tuberculose no SNC."
+            "feedback": "**Resposta Correta:** B está incorreta. Mycobacterium tuberculosis causa tuberculomas nodulares, únicos ou múltiplos, com realce em anel, não lesões difusas múltiplas.\n\n**Outras opções corretas:**  \nA) Toxoplasma gondii: múltiplas lesões que realçam em anel.  \nC) Vírus herpes: encefalite difusa, sem lesões nodulares.  \nD) Neurocisticercose e hidatose: lesões císticas típicas.  \n\nPortanto, B descreve incorretamente as lesões da tuberculose no SNC.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Toxoplasma gondii se presenta como lesiones cerebrales múltiples que realzan con contraste.",
+                    "Mycobacterium tuberculosis causa tuberculomas nodulares, únicos o múltiples, con realce en anillo, no lesiones difusas múltiples — esta es la opción incorrecta.",
+                    "Efectivamente el virus herpes generalmente se presenta como encefalitis herpética.",
+                    "Efectivamente neurocisticercosis e hidatidosis se presentan como lesiones quísticas."
+                ],
+                "fantasma": [
+                    "Esa está bien, esas lesiones.",
+                    "¡Esta! Son nódulos con anillo, no difusas.",
+                    "Esa está bien, encefalitis.",
+                    "Esa está bien, quistes."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Son nódulos.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -19685,7 +19945,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B está incorreta porque abscessos cerebrais por Aspergillus não são tipicamente associados a cirurgia, mas sim à disseminação hematogênica em pacientes imunocomprometidos.  \n\n**Outras opções:**  \nA) Toxoplasma causa múltiplas lesões cerebrais com realce em contraste, comuns em AIDS.  \nC) Mycobacterium tuberculosis forma tuberculomas granulomatosos no SNC.  \nD) Hidatose cerebral gera cistos únicos ou múltiplos que comprimem o tecido nervoso.  \n\nAssim, B associa incorretamente Aspergillus à cirurgia, enquanto as outras descrevem corretamente as lesões típicas."
+            "feedback": "**Resposta Correta:** B está incorreta porque abscessos cerebrais por Aspergillus não são tipicamente associados a cirurgia, mas sim à disseminação hematogênica em pacientes imunocomprometidos.  \n\n**Outras opções:**  \nA) Toxoplasma causa múltiplas lesões cerebrais com realce em contraste, comuns em AIDS.  \nC) Mycobacterium tuberculosis forma tuberculomas granulomatosos no SNC.  \nD) Hidatose cerebral gera cistos únicos ou múltiplos que comprimem o tecido nervoso.  \n\nAssim, B associa incorretamente Aspergillus à cirurgia, enquanto as outras descrevem corretamente as lesões típicas.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Toxoplasma gondii se presenta como lesiones cerebrales múltiples que realzan con contraste.",
+                    "Los abscesos por Aspergillus no se asocian típicamente a cirugía, sino a diseminación hematógena en pacientes inmunocomprometidos — esta es la opción incorrecta.",
+                    "Efectivamente M. tuberculosis puede dar lugar a lesiones granulomatosas (tuberculomas).",
+                    "Efectivamente la hidatidosis se presenta como lesiones quísticas."
+                ],
+                "fantasma": [
+                    "Esa está bien, esas lesiones.",
+                    "¡Esta! Es por la sangre, no por cirugía.",
+                    "Esa está bien, tuberculoma.",
+                    "Esa está bien, quiste."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es por la sangre.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -19711,7 +19991,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Listeria monocytogenes causa meningoencefalite com LCR turvo, proteínas elevadas e glucorraquia baixa (glicose reduzida), pois a bactéria consome glicose. A afirmação de glucorraquia normal está incorreta.  \n\nOutras opções:  \nA. Neisseria meningitidis: LCR turvo, glucorraquia baixa, pleocitose intensa – correto.  \nB. Herpes vírus: LCR claro, glucorraquia normal, pleocitose moderada – correto.  \nC. Mycobacterium tuberculosis: meningoencefalite crônica, LCR claro, proteínas elevadas, glicose baixa – correto."
+            "feedback": "Resposta correta: D. Listeria monocytogenes causa meningoencefalite com LCR turvo, proteínas elevadas e glucorraquia baixa (glicose reduzida), pois a bactéria consome glicose. A afirmação de glucorraquia normal está incorreta.  \n\nOutras opções:  \nA. Neisseria meningitidis: LCR turvo, glucorraquia baixa, pleocitose intensa – correto.  \nB. Herpes vírus: LCR claro, glucorraquia normal, pleocitose moderada – correto.  \nC. Mycobacterium tuberculosis: meningoencefalite crônica, LCR claro, proteínas elevadas, glicose baixa – correto.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Neisseria meningitidis presenta LCR turbio, glucorraquia baja y más de 3000 células.",
+                    "Efectivamente el herpesvirus presenta LCR claro, glucorraquia normal y 200 células.",
+                    "Efectivamente M. tuberculosis presenta meningoencefalitis crónica con LCR claro y proteínas elevadas.",
+                    "Listeria monocytogenes causa meningoencefalitis con LCR turbio, proteínas elevadas y glucorraquia BAJA (no normal), ya que la bacteria consume glucosa — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos valores.",
+                    "Esa está bien, esos valores.",
+                    "Esa está bien, esos valores.",
+                    "¡Esta! Ahí la glucosa baja, no es normal."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Baja, no normal."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -19737,7 +20037,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. A meningite causada por Chlamydophila psittaci no líquor não é purulenta.\n\nChlamydophila psittaci, bactéria intracelular transmitida por aves, causa meningite asséptica com líquor contendo células mononucleares, não neutrófilos nem pus. As opções A, C e D estão corretas: a infecção ocorre por inalação de aerossóis aviários (A); a bactéria se replica nas vias aéreas e se dissemina via monócitos (C); e a transmissão inter-humana é rara, predominando a zoonose (D). Apenas a letra B está incorreta ao afirmar que a mening"
+            "feedback": "**Resposta Correta:** B. A meningite causada por Chlamydophila psittaci no líquor não é purulenta.\n\nChlamydophila psittaci, bactéria intracelular transmitida por aves, causa meningite asséptica com líquor contendo células mononucleares, não neutrófilos nem pus. As opções A, C e D estão corretas: a infecção ocorre por inalação de aerossóis aviários (A); a bactéria se replica nas vias aéreas e se dissemina via monócitos (C); e a transmissão inter-humana é rara, predominando a zoonose (D). Apenas a letra B está incorreta ao afirmar que a mening",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el ser humano generalmente adquiere la infección de pájaros sintomáticos o asintomáticos.",
+                    "La meningitis causada por Chlamydophila psittaci en el LCR NO es purulenta; es una meningitis aséptica con células mononucleares, no neutrófilos ni pus — esta es la opción incorrecta.",
+                    "Efectivamente tras la replicación inicial en células epiteliales de vías aéreas superiores se disemina mediante monocitos.",
+                    "Efectivamente el contagio interhumano es posible, aunque poco frecuente."
+                ],
+                "fantasma": [
+                    "Esa está bien, del ave.",
+                    "¡Esta! No es con pus, es aséptica.",
+                    "Esa está bien, por el monocito.",
+                    "Esa está bien, es raro."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Sin pus.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -19763,7 +20083,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. A cicatriz da vacina BCG indica vacinação, mas não exclui meningite tuberculosa, pois a proteção não é absoluta, especialmente em imunossuprimidos ou exposições intensas.  \n\n**Outras opções:**  \nB. Correta. Neisseria meningitidis e Streptococcus pneumoniae colonizam a nasofaringe antes de invadir o SNC.  \nC. Correta. Listeria monocytogenes afeta neonatos, idosos e imunocomprometidos, causando meningite nesses grupos.  \nD. Correta. O sorogrupo W135 de Neisseria meningitidis é comum em surtos na Argentina, importante para controle e vacinação."
+            "feedback": "**Resposta Correta:** A. A cicatriz da vacina BCG indica vacinação, mas não exclui meningite tuberculosa, pois a proteção não é absoluta, especialmente em imunossuprimidos ou exposições intensas.  \n\n**Outras opções:**  \nB. Correta. Neisseria meningitidis e Streptococcus pneumoniae colonizam a nasofaringe antes de invadir o SNC.  \nC. Correta. Listeria monocytogenes afeta neonatos, idosos e imunocomprometidos, causando meningite nesses grupos.  \nD. Correta. O sorogrupo W135 de Neisseria meningitidis é comum em surtos na Argentina, importante para controle e vacinação.",
+            "explicacoes": {
+                "robo": [
+                    "La cicatriz de BCG indica vacunación, pero NO descarta la meningitis tuberculosa, ya que la protección no es absoluta, especialmente en inmunosuprimidos o exposiciones intensas — esta es la opción incorrecta.",
+                    "Efectivamente la colonización de la mucosa nasofaríngea por N. meningitidis y S. pneumoniae es necesaria para la invasión del SNC.",
+                    "Efectivamente Listeria monocytogenes afecta principalmente a neonatos, mayores de 60 años e inmunocomprometidos.",
+                    "Efectivamente el serogrupo W135 de N. meningitidis es el más frecuente en Argentina."
+                ],
+                "fantasma": [
+                    "¡Esta! La cicatriz no descarta nada.",
+                    "Esa está bien, esa colonización.",
+                    "Esa está bien, esos grupos.",
+                    "Esa está bien, ese serogrupo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No descarta nada.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -19789,7 +20129,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. RT-PCR do líquido cefalorraquidiano.\n\nA RT-PCR do LCR é o método padrão-ouro para diagnóstico rápido e preciso da meningite viral por enterovírus, detectando diretamente o RNA viral no sistema nervoso central com alta sensibilidade e especificidade.  \n\n**Outras opções:**  \nA (inoculação em hámsteres) é lenta e impraticável;  \nB (imunofluorescência em fezes) não confirma infecção meníngea e é menos sensível;  \nD (cultivo de swab de fauces) é demorado e pode não refletir a infecção no SNC."
+            "feedback": "**Resposta Correta:** C. RT-PCR do líquido cefalorraquidiano.\n\nA RT-PCR do LCR é o método padrão-ouro para diagnóstico rápido e preciso da meningite viral por enterovírus, detectando diretamente o RNA viral no sistema nervoso central com alta sensibilidade e especificidade.  \n\n**Outras opções:**  \nA (inoculação em hámsteres) é lenta e impraticável;  \nB (imunofluorescência em fezes) não confirma infecção meníngea e é menos sensível;  \nD (cultivo de swab de fauces) é demorado e pode não refletir a infecção no SNC.",
+            "explicacoes": {
+                "robo": [
+                    "La inoculación en hámsteres es lenta e impracticable.",
+                    "La inmunofluorescencia en heces no confirma infección meníngea y es menos sensible.",
+                    "La RT-PCR del líquido cefalorraquídeo es el método estándar de oro para el diagnóstico rápido y preciso de la meningitis viral por enterovirus, detectando directamente el ARN viral en el sistema nervioso central con alta sensibilidad y especificidad — es la respuesta correcta.",
+                    "El cultivo de hisopado de fauces es demorado y puede no reflejar la infección en el SNC."
+                ],
+                "fantasma": [
+                    "Eso es lento e impráctico.",
+                    "Eso no confirma la meninge.",
+                    "¡Esta! RT-PCR en el líquido, la correcta.",
+                    "Eso tarda y no refleja bien."
+                ],
+                "gato": [
+                    "Fijate: es lento.",
+                    "Dato curioso: no confirma.",
+                    "¡Ronroneo de aprobación! RT-PCR.",
+                    "Miau, tarda."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -19815,7 +20175,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. Vírus da raiva não usa via hematógena para alcançar o SNC; propaga-se retrogradamente pelas fibras nervosas periféricas.  \n\n**Outras opções:**  \nB. Enterovírus atingem o SNC pela via hematógena.  \nC. HSV acessa o SNC por via neuronal.  \nD. Arbovírus chegam ao SNC pela via hematógena.  \n\nAssim, apenas a associação da raiva com via hematógena está incorreta."
+            "feedback": "**Resposta Correta:** A. Vírus da raiva não usa via hematógena para alcançar o SNC; propaga-se retrogradamente pelas fibras nervosas periféricas.  \n\n**Outras opções:**  \nB. Enterovírus atingem o SNC pela via hematógena.  \nC. HSV acessa o SNC por via neuronal.  \nD. Arbovírus chegam ao SNC pela via hematógena.  \n\nAssim, apenas a associação da raiva com via hematógena está incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "El virus de la rabia no usa vía hematógena para alcanzar el SNC; se propaga retrógradamente por las fibras nerviosas periféricas — esta es la opción incorrecta.",
+                    "Efectivamente los enterovirus alcanzan el SNC por vía hematógena.",
+                    "Efectivamente el HSV accede al SNC por vía neuronal.",
+                    "Efectivamente los arbovirus llegan al SNC por vía hematógena."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese va por el nervio, no por la sangre.",
+                    "Esa está bien, por la sangre.",
+                    "Esa está bien, por el nervio.",
+                    "Esa está bien, por la sangre."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Va por el nervio.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -19841,7 +20221,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta: D. Enterovirus.**  \nEnterovírus, da família Picornaviridae, são a causa mais comum de meningoencefalite em crianças até 8 anos, transmitidos por via fecal-oral e respiratória, com tropismo pelo sistema nervoso central. Causam quadro geralmente benigno.\n\n**Outras opções:**  \nA. *Escherichia coli* K1 causa meningite em recém-nascidos, não em crianças maiores.  \nB. *Listeria monocytogenes* afeta principalmente recém-nascidos, idosos e imunocomprometidos, raro em crianças saudáveis.  \nC. *Staphylococcus aureus* está associado a infecções"
+            "feedback": "**Resposta Correta: D. Enterovirus.**  \nEnterovírus, da família Picornaviridae, são a causa mais comum de meningoencefalite em crianças até 8 anos, transmitidos por via fecal-oral e respiratória, com tropismo pelo sistema nervoso central. Causam quadro geralmente benigno.\n\n**Outras opções:**  \nA. *Escherichia coli* K1 causa meningite em recém-nascidos, não em crianças maiores.  \nB. *Listeria monocytogenes* afeta principalmente recém-nascidos, idosos e imunocomprometidos, raro em crianças saudáveis.  \nC. *Staphylococcus aureus* está associado a infecções",
+            "explicacoes": {
+                "robo": [
+                    "Escherichia coli K1 causa meningitis en recién nacidos, no en niños mayores.",
+                    "Listeria monocytogenes afecta principalmente a recién nacidos, ancianos e inmunocomprometidos, siendo rara en niños sanos.",
+                    "Staphylococcus aureus se asocia a infecciones específicas, no siendo el agente más frecuente en este grupo etario.",
+                    "Los enterovirus, de la familia Picornaviridae, son la causa más común de meningoencefalitis en niños hasta los 8 años, transmitidos por vía fecal-oral y respiratoria, con tropismo por el sistema nervioso central, causando un cuadro generalmente benigno — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese es de recién nacido.",
+                    "Esa es de viejo o inmunocomprometido.",
+                    "Ese es de otro tipo de infección.",
+                    "¡Esta! El enterovirus, el más común en esa edad."
+                ],
+                "gato": [
+                    "Fijate: es de bebé.",
+                    "Dato curioso: es de viejo.",
+                    "Miau, es de otra.",
+                    "¡Ronroneo de aprobación! El enterovirus."
+                ]
+            }
         },
         {
             "numero": 40,
