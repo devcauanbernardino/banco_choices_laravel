@@ -11067,7 +11067,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. Streptococcus pneumoniae.\n\nStreptococcus pneumoniae é o principal agente bacteriano da otite média aguda supurativa em crianças, devido à sua capacidade de colonizar a nasofaringe, invadir o ouvido médio e produzir cápsula que ajuda a evadir o sistema imune. \n\n**Outras opções:**  \nA. Vírus influenza e B. Rhinovirus causam infecções virais que podem predispor à otite, mas não são agentes supurativos comuns.  \nC. Moraxella catarrhalis pode causar otite, mas é menos frequente que S. pneumoniae."
+            "feedback": "**Resposta Correta:** D. Streptococcus pneumoniae.\n\nStreptococcus pneumoniae é o principal agente bacteriano da otite média aguda supurativa em crianças, devido à sua capacidade de colonizar a nasofaringe, invadir o ouvido médio e produzir cápsula que ajuda a evadir o sistema imune. \n\n**Outras opções:**  \nA. Vírus influenza e B. Rhinovirus causam infecções virais que podem predispor à otite, mas não são agentes supurativos comuns.  \nC. Moraxella catarrhalis pode causar otite, mas é menos frequente que S. pneumoniae.",
+            "explicacoes": {
+                "robo": [
+                    "El virus influenza causa infecciones virales que pueden predisponer a la otitis, pero no es un agente supurativo común.",
+                    "El rhinovirus causa infecciones virales que pueden predisponer a la otitis, pero no es un agente supurativo común.",
+                    "Moraxella catarrhalis puede causar otitis, pero es menos frecuente que S. pneumoniae.",
+                    "Streptococcus pneumoniae es el principal agente bacteriano de la otitis media aguda supurativa en niños, por su capacidad de colonizar la nasofaringe, invadir el oído medio y producir cápsula que evade el sistema inmune — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese predispone, no es supurativo.",
+                    "Ese predispone, no es supurativo.",
+                    "Esa es menos frecuente.",
+                    "¡Esta! El neumococo, el más común."
+                ],
+                "gato": [
+                    "Fijate: predispone.",
+                    "Dato curioso: predispone.",
+                    "Miau, menos frecuente.",
+                    "¡Ronroneo de aprobación! El neumococo."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -11093,7 +11113,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. A imunoprofilaxia ativa para pneumonias adquiridas na comunidade inclui a vacina polivalente contra Streptococcus pneumoniae, que protege contra diversos sorotipos e é essencial para grupos de risco.\n\n**Erros nas outras opções:**  \nA) Mycoplasma pneumoniae afeta tanto imunocompetentes quanto imunocomprometidos, não apenas estes últimos.  \nC) Histoplasma capsulatum não se transmite entre pessoas, mas por inalação ambiental.  \nD) Morcegos estão ligados à histoplasmose, não à infecção por hantavírus, que é transmitida por roedores."
+            "feedback": "**Resposta Correta:** B. A imunoprofilaxia ativa para pneumonias adquiridas na comunidade inclui a vacina polivalente contra Streptococcus pneumoniae, que protege contra diversos sorotipos e é essencial para grupos de risco.\n\n**Erros nas outras opções:**  \nA) Mycoplasma pneumoniae afeta tanto imunocompetentes quanto imunocomprometidos, não apenas estes últimos.  \nC) Histoplasma capsulatum não se transmite entre pessoas, mas por inalação ambiental.  \nD) Morcegos estão ligados à histoplasmose, não à infecção por hantavírus, que é transmitida por roedores.",
+            "explicacoes": {
+                "robo": [
+                    "Mycoplasma pneumoniae afecta tanto a inmunocompetentes como a inmunocomprometidos, no exclusivamente a estos últimos.",
+                    "La inmunoprofilaxis activa para las neumonías adquiridas en la comunidad incluye la vacuna polivalente contra Streptococcus pneumoniae, que protege contra diversos serotipos y es esencial para grupos de riesgo — es la respuesta correcta.",
+                    "Histoplasma capsulatum no se transmite entre personas, sino por inhalación ambiental.",
+                    "Los murciélagos se asocian a la histoplasmosis, no a la infección por hantavirus, que se transmite por roedores."
+                ],
+                "fantasma": [
+                    "Afecta a cualquiera, no solo al inmunocomprometido.",
+                    "¡Esta! La vacuna polivalente, la correcta.",
+                    "Ese no se pasa de persona a persona.",
+                    "El murciélago es de otro hongo, no de hanta."
+                ],
+                "gato": [
+                    "Fijate: afecta a cualquiera.",
+                    "¡Ronroneo de aprobación! La vacuna polivalente.",
+                    "Dato curioso: no se pasa así.",
+                    "Miau, es de otro hongo."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -11119,7 +11159,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Os testes QantiFERON-TB Gold e T-SPOT.TB medem a resposta imune a antígenos do M. tuberculosis, detectando infecção latente, mas não distinguem tuberculose ativa.\n\n**Outras Opções:**  \nA está correta ao descrever o teste de Mantoux, que avalia a resposta celular local.  \nB está correta, pois a coloração Auramina-Rodamina na baciloscopia aumenta a sensibilidade para detectar micobactérias.  \nD está correta, pois o Xpert MTB/RIF identifica rapidamente M. tuberculosis e resistência à rifampicina, importante para o diagnóstico e tratamento."
+            "feedback": "**Resposta Correta:** C. Os testes QantiFERON-TB Gold e T-SPOT.TB medem a resposta imune a antígenos do M. tuberculosis, detectando infecção latente, mas não distinguem tuberculose ativa.\n\n**Outras Opções:**  \nA está correta ao descrever o teste de Mantoux, que avalia a resposta celular local.  \nB está correta, pois a coloração Auramina-Rodamina na baciloscopia aumenta a sensibilidade para detectar micobactérias.  \nD está correta, pois o Xpert MTB/RIF identifica rapidamente M. tuberculosis e resistência à rifampicina, importante para o diagnóstico e tratamento.",
+            "explicacoes": {
+                "robo": [
+                    "La intradermorreacción con tuberculina efectivamente evalúa la inmunidad adaptativa celular contra M. tuberculosis.",
+                    "La baciloscopía con tinción de Auramina-Rodamina efectivamente permite visualizar micobacterias con coloración fluorescente.",
+                    "Los tests de IFN-γ (QuantiFERON-TB Gold o T-SPOT.TB) miden la respuesta inmune a antígenos de M. tuberculosis, detectando infección latente, pero no distinguen tuberculosis activa — esta es la opción incorrecta.",
+                    "Las técnicas moleculares (Xpert MTB/Rif) efectivamente identifican simultáneamente M. tuberculosis y resistencia a rifampicina."
+                ],
+                "fantasma": [
+                    "Esa está bien, es celular.",
+                    "Esa está bien, fluorescente.",
+                    "¡Esta! Eso es latente, no activa.",
+                    "Esa está bien, TB y resistencia juntos."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es latente, no activa.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -11145,7 +11205,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Amostras de aspirado traqueal são positivas com ≥ 10^6 UFC/ml, diferenciando infecção ativa de contaminação. \n\nOpções incorretas:  \nA) VSR não é o principal vírus em maiores de 65 anos; Influenza é.  \nB) Bronquiolite é causada principalmente por VSR, não Rhinovírus.  \nC) Para diagnóstico de tosse convulsa, usa-se swab nasofaríngeo, não esputo.  \n\nPortanto, apenas a opção D está correta."
+            "feedback": "Resposta correta: D. Amostras de aspirado traqueal são positivas com ≥ 10^6 UFC/ml, diferenciando infecção ativa de contaminação. \n\nOpções incorretas:  \nA) VSR não é o principal vírus em maiores de 65 anos; Influenza é.  \nB) Bronquiolite é causada principalmente por VSR, não Rhinovírus.  \nC) Para diagnóstico de tosse convulsa, usa-se swab nasofaríngeo, não esputo.  \n\nPortanto, apenas a opção D está correta.",
+            "explicacoes": {
+                "robo": [
+                    "El VSR no es el principal virus en mayores de 65 años; lo es el virus influenza.",
+                    "La bronquiolitis es causada principalmente por VSR, no por rhinovirus.",
+                    "Para el diagnóstico de tos convulsa se usa hisopado nasofaríngeo, no esputo.",
+                    "El punto de corte para considerar positiva una muestra de aspirado traqueal es ≥10⁶ UFC/ml, diferenciando infección activa de contaminación — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese es de la influenza, no del VSR.",
+                    "Es el VSR, no el rhinovirus.",
+                    "Es con hisopado, no con esputo.",
+                    "¡Esta! 10 a la sexta, el corte correcto."
+                ],
+                "gato": [
+                    "Fijate: es influenza.",
+                    "Dato curioso: es VSR.",
+                    "Miau, es hisopado.",
+                    "¡Ronroneo de aprobación! El corte correcto."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -11171,7 +11251,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. Administração de imunossoro de convalescentes não é recomendada para profilaxia da bronquiolite por VSR. O tratamento passivo eficaz é o palivizumabe, anticorpo monoclonal específico.\n\n**Outras opções:**  \nA. Lavagem frequente das mãos é essencial para prevenir transmissão do VSR.  \nB. Amamentação prolongada oferece proteção imunológica passiva ao lactente.  \nD. Vacinação materna contra VSR (em desenvolvimento) visa imunidade passiva neonatal.\n\nAssim, A, B e D são medidas profiláticas válidas; C não é reconhecida."
+            "feedback": "**Resposta Correta:** C. Administração de imunossoro de convalescentes não é recomendada para profilaxia da bronquiolite por VSR. O tratamento passivo eficaz é o palivizumabe, anticorpo monoclonal específico.\n\n**Outras opções:**  \nA. Lavagem frequente das mãos é essencial para prevenir transmissão do VSR.  \nB. Amamentação prolongada oferece proteção imunológica passiva ao lactente.  \nD. Vacinação materna contra VSR (em desenvolvimento) visa imunidade passiva neonatal.\n\nAssim, A, B e D são medidas profiláticas válidas; C não é reconhecida.",
+            "explicacoes": {
+                "robo": [
+                    "El lavado de manos frecuente efectivamente es esencial para prevenir la transmisión del VSR.",
+                    "La lactancia materna prolongada efectivamente ofrece protección inmunológica pasiva al lactante.",
+                    "La administración de inmunosuero de convalecientes no está recomendada para la profilaxis de la bronquiolitis por VSR; el tratamiento pasivo eficaz es el palivizumab, anticuerpo monoclonal específico — esta es la opción incorrecta.",
+                    "La vacuna para VSR en el embarazo (semanas 32-36) efectivamente busca la inmunidad pasiva neonatal."
+                ],
+                "fantasma": [
+                    "Esa está bien, lavarse las manos.",
+                    "Esa está bien, la teta.",
+                    "¡Esta! Eso no es lo que se usa, es el palivizumab.",
+                    "Esa está bien, la vacuna en el embarazo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es el palivizumab.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -11197,7 +11297,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "A alternativa B está incorreta: sinusites crônicas raramente têm etiologia viral, sendo geralmente causadas por bactérias, alergias ou fatores anatômicos. Vírus predominam nas sinusites agudas. As opções A, C e D estão corretas: o diagnóstico é clínico (A); Haemophilus influenzae apresenta satelitismo em ágar sangue (C); e Streptococcus pneumoniae é um agente comum em sinusites bacterianas subagudas (D)."
+            "feedback": "A alternativa B está incorreta: sinusites crônicas raramente têm etiologia viral, sendo geralmente causadas por bactérias, alergias ou fatores anatômicos. Vírus predominam nas sinusites agudas. As opções A, C e D estão corretas: o diagnóstico é clínico (A); Haemophilus influenzae apresenta satelitismo em ágar sangue (C); e Streptococcus pneumoniae é um agente comum em sinusites bacterianas subagudas (D).",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico de sinusitis efectivamente es generalmente clínico dada la temporalidad de los síntomas y la etiología predecible.",
+                    "Las sinusitis crónicas raramente tienen etiología viral, siendo generalmente causadas por bacterias, alergias o factores anatómicos; los virus predominan en las sinusitis agudas — esta es la opción incorrecta.",
+                    "En los cultivos de agar sangre donde se aísla H. influenzae efectivamente puede observarse el fenómeno de satelitismo.",
+                    "Streptococcus pneumoniae efectivamente es uno de los agentes etiológicos más frecuentes de la sinusitis subaguda bacteriana."
+                ],
+                "fantasma": [
+                    "Esa está bien, es clínico.",
+                    "¡Esta! La crónica no es viral, es bacteria.",
+                    "Esa está bien, el satelitismo.",
+                    "Esa está bien, el neumococo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No es viral la crónica.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -11223,7 +11343,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D. Haemophilus influenzae, especialmente o tipo não tipável, é um dos principais agentes da otite média aguda bacteriana.  \nOpção A está errada, pois H. influenzae é bacilo gram-negativo, não gram-positivo.  \nOpção B é incorreta, pois Hib não é o principal agente da pneumonia adquirida na comunidade; Streptococcus pneumoniae é o mais comum.  \nOpção C está errada porque H. influenzae não cresce em ágar sangue comum nem produz beta-hemólise, necessitando de ágar chocolate para crescer."
+            "feedback": "Resposta correta: D. Haemophilus influenzae, especialmente o tipo não tipável, é um dos principais agentes da otite média aguda bacteriana.  \nOpção A está errada, pois H. influenzae é bacilo gram-negativo, não gram-positivo.  \nOpção B é incorreta, pois Hib não é o principal agente da pneumonia adquirida na comunidade; Streptococcus pneumoniae é o mais comum.  \nOpção C está errada porque H. influenzae não cresce em ágar sangue comum nem produz beta-hemólise, necessitando de ágar chocolate para crescer.",
+            "explicacoes": {
+                "robo": [
+                    "Haemophilus influenzae es un bacilo Gram NEGATIVO pleomórfico, no Gram positivo.",
+                    "Haemophilus influenzae tipo B no es el principal patógeno de neumonía adquirida en la comunidad; Streptococcus pneumoniae es el más común.",
+                    "H. influenzae no crece en agar sangre común ni produce beta-hemólisis, necesitando agar chocolate para crecer.",
+                    "Haemophilus influenzae, especialmente el tipo no tipificable, es uno de los principales agentes de la otitis media aguda bacteriana — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es Gram negativo, no positivo.",
+                    "Ese no es el principal, es el neumococo.",
+                    "No crece ahí, necesita chocolate.",
+                    "¡Esta! Uno de los principales de la otitis."
+                ],
+                "gato": [
+                    "Fijate: es negativo.",
+                    "Dato curioso: es el neumococo.",
+                    "Miau, necesita chocolate.",
+                    "¡Ronroneo de aprobación! Uno de los principales."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -11249,7 +11389,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D. A vacina BCG não é usada como profilaxia pós-exposição para trabalhadores da saúde. Ela previne formas graves de tuberculose em crianças, mas não é indicada após contato com o Bacilo de Koch. O manejo pós-exposição inclui testes, acompanhamento e, se necessário, tratamento preventivo.\n\n**Outras opções:**  \nA, B e C estão corretas: A BCG causa reação positiva ao PPD por até 4 anos (A); gera cicatriz por resposta imune local (B); e protege recém-nascidos contra tuberculose grave extrapulmonar (C)."
+            "feedback": "**Resposta Correta:** D. A vacina BCG não é usada como profilaxia pós-exposição para trabalhadores da saúde. Ela previne formas graves de tuberculose em crianças, mas não é indicada após contato com o Bacilo de Koch. O manejo pós-exposição inclui testes, acompanhamento e, se necessário, tratamento preventivo.\n\n**Outras opções:**  \nA, B e C estão corretas: A BCG causa reação positiva ao PPD por até 4 anos (A); gera cicatriz por resposta imune local (B); e protege recém-nascidos contra tuberculose grave extrapulmonar (C).",
+            "explicacoes": {
+                "robo": [
+                    "La vacuna BCG efectivamente despierta reacción positiva a la PPD durante 3 o 4 años.",
+                    "La aplicación intradérmica efectivamente genera cicatriz inmunológica de tipo celular adaptativo.",
+                    "Aplicada en recién nacidos efectivamente produce un efecto protector del 60-80% para las formas extrapulmonares graves.",
+                    "La vacuna BCG no se usa como profilaxis post-exposición para trabajadores de la salud; previene formas graves de tuberculosis en niños, pero no está indicada tras contacto con el bacilo de Koch — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, por esos años.",
+                    "Esa está bien, cicatriz celular.",
+                    "Esa está bien, protege al bebé.",
+                    "¡Esta! No sirve para después del contacto."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No es post-exposición."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -11275,7 +11435,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A. A glomerulonefrite é uma complicação não supurativa da faringite estreptocócica, causada por reação imune após infecção por Streptococcus pyogenes.\n\n**Outras opções:**  \nB está errada: S. pyogenes cresce em agar sangue, não agar chocolate.  \nC está errada: teste rápido negativo não exclui a doença; cultura é necessária para confirmação.  \nD está errada: sintomas clínicos não diferenciam etiologia viral ou bacteriana; exame laboratorial é indispensável."
+            "feedback": "**Resposta Correta:** A. A glomerulonefrite é uma complicação não supurativa da faringite estreptocócica, causada por reação imune após infecção por Streptococcus pyogenes.\n\n**Outras opções:**  \nB está errada: S. pyogenes cresce em agar sangue, não agar chocolate.  \nC está errada: teste rápido negativo não exclui a doença; cultura é necessária para confirmação.  \nD está errada: sintomas clínicos não diferenciam etiologia viral ou bacteriana; exame laboratorial é indispensável.",
+            "explicacoes": {
+                "robo": [
+                    "Dentro de las complicaciones NO supurativas de la faringitis estreptocócica efectivamente se encuentra la glomerulonefritis, por reacción inmune tras la infección — es la respuesta correcta.",
+                    "Para cultivar Streptococcus pyogenes se usa agar sangre, no agar chocolate.",
+                    "Un resultado negativo por RADT no permite descartar la enfermedad; se requiere confirmación por cultivo.",
+                    "Las manifestaciones clínicas no permiten predecir la etiología viral o bacteriana; se requiere el examen de laboratorio."
+                ],
+                "fantasma": [
+                    "¡Esta! La glomerulonefritis, la complicación sin pus.",
+                    "Es en agar sangre, no chocolate.",
+                    "Eso no descarta solo.",
+                    "Los síntomas no dicen cuál es."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La glomerulonefritis.",
+                    "Fijate: es agar sangre.",
+                    "Dato curioso: no descarta.",
+                    "Miau, no dicen cuál."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -11301,7 +11481,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "Resposta correta: D está incorreta, pois o aspirado nasofaríngeo é uma amostra válida para diagnóstico de infecções virais por técnicas moleculares ou detecção de antígenos.  \n\nAs opções A, B e C estão corretas:  \nA) Diagnóstico sorológico é importante para Chlamydophila pneumoniae e Mycoplasma pneumoniae, patógenos atípicos difíceis de cultivar.  \nB) No aspirado traqueal, o critério padrão é ≥10^5 UFC/ml para indicar infecção.  \nC) O teste de antígeno urinário para Streptococcus pneumoniae é rápido e mais sensível em casos com bacteremia."
+            "feedback": "Resposta correta: D está incorreta, pois o aspirado nasofaríngeo é uma amostra válida para diagnóstico de infecções virais por técnicas moleculares ou detecção de antígenos.  \n\nAs opções A, B e C estão corretas:  \nA) Diagnóstico sorológico é importante para Chlamydophila pneumoniae e Mycoplasma pneumoniae, patógenos atípicos difíceis de cultivar.  \nB) No aspirado traqueal, o critério padrão é ≥10^5 UFC/ml para indicar infecção.  \nC) O teste de antígeno urinário para Streptococcus pneumoniae é rápido e mais sensível em casos com bacteremia.",
+            "explicacoes": {
+                "robo": [
+                    "Para el diagnóstico indirecto de Chlamydophila pneumoniae y Mycoplasma pneumoniae efectivamente puede emplearse la búsqueda de IgM o seroconversión de IgG.",
+                    "En el aspirado traqueal, el punto de corte para considerar significativo un microorganismo efectivamente es de aproximadamente 10⁵ UFC/ml.",
+                    "La antigenuria para S. pneumoniae efectivamente es un método rápido por inmunocromatografía, que aumenta la sensibilidad cuando hay bacteriemia.",
+                    "El aspirado nasofaríngeo SÍ constituye una muestra válida para el diagnóstico de infecciones virales, mediante técnicas moleculares o detección de antígenos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, con IgM o IgG.",
+                    "Esa está bien, ese corte.",
+                    "Esa está bien, con orina.",
+                    "¡Esta! Sí sirve para virus."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Sí sirve."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -11327,7 +11527,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "A prova de tuberculina utiliza PPD, um extrato proteico purificado de Mycobacterium tuberculosis, e não uma cepa atenuada bacteriana. Ela avalia a resposta de hipersensibilidade tipo IV, indicando exposição prévia ou vacinação com BCG. Reação ≥10 mm em imunocompetentes é positiva. A leitura deve ocorrer entre 48-72 horas após aplicação. Resultado negativo não exclui infecção, especialmente em imunossuprimidos ou infecção recente, mostrando que o teste tem limitações e deve ser interpretado clinicamente."
+            "feedback": "A prova de tuberculina utiliza PPD, um extrato proteico purificado de Mycobacterium tuberculosis, e não uma cepa atenuada bacteriana. Ela avalia a resposta de hipersensibilidade tipo IV, indicando exposição prévia ou vacinação com BCG. Reação ≥10 mm em imunocompetentes é positiva. A leitura deve ocorrer entre 48-72 horas após aplicação. Resultado negativo não exclui infecção, especialmente em imunossuprimidos ou infecção recente, mostrando que o teste tem limitações e deve ser interpretado clinicamente.",
+            "explicacoes": {
+                "robo": [
+                    "La prueba de tuberculina utiliza PPD, un extracto proteico purificado de Mycobacterium tuberculosis, no una cepa atenuada bacteriana — esta es la opción incorrecta.",
+                    "Efectivamente se considera positiva si el diámetro de la pápula es mayor a 10 mm en individuos inmunocompetentes.",
+                    "Efectivamente debe evaluarse a las 48 y 72 horas luego de administrada.",
+                    "Efectivamente una prueba negativa no descarta la infección, especialmente en inmunosuprimidos o infección reciente."
+                ],
+                "fantasma": [
+                    "¡Esta! Es un extracto, no una cepa viva.",
+                    "Esa está bien, más de 10mm.",
+                    "Esa está bien, esas horas.",
+                    "Esa está bien, no descarta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es un extracto.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -11353,7 +11573,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta porque a vacina contra Haemophilus influenzae tipo b (Hib) reduz doenças invasivas por Hib, mas não afeta otites médias e sinusites causadas por cepas não tipáveis (NTHi), que não são cobertas pela vacina.\n\n**Outras opções:**  \nA está correta: sinusite nosocomial requer amostra por punção para diagnóstico e tratamento.  \nB está correta: Aspergillus pode causar sinusite em imunocomprometidos.  \nC está correta: sinusite aguda é geralmente viral, facilitando infecções bacterianas secundárias."
+            "feedback": "**Resposta Correta:** D está incorreta porque a vacina contra Haemophilus influenzae tipo b (Hib) reduz doenças invasivas por Hib, mas não afeta otites médias e sinusites causadas por cepas não tipáveis (NTHi), que não são cobertas pela vacina.\n\n**Outras opções:**  \nA está correta: sinusite nosocomial requer amostra por punção para diagnóstico e tratamento.  \nB está correta: Aspergillus pode causar sinusite em imunocomprometidos.  \nC está correta: sinusite aguda é geralmente viral, facilitando infecções bacterianas secundárias.",
+            "explicacoes": {
+                "robo": [
+                    "La sinusitis nosocomial efectivamente es indicación de tomar muestra por punción de senos paranasales.",
+                    "Los hongos del género Aspergillus efectivamente pueden producir sinusitis en individuos atópicos.",
+                    "La etiología más frecuente de la sinusitis aguda efectivamente son los virus respiratorios.",
+                    "La vacuna contra Haemophilus influenzae tipo b reduce las enfermedades invasivas por Hib, pero no afecta las otitis medias y sinusitis causadas por cepas no tipificables (NTHi), que no están cubiertas por la vacuna — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, punción.",
+                    "Esa está bien, el Aspergillus.",
+                    "Esa está bien, virus.",
+                    "¡Esta! No cubre la cepa que no se tipa."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No cubre esa cepa."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -11379,7 +11619,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "Resposta correta: B. Início súbito e febre alta indicam otite média aguda típica, mas não justificam punção do ouvido médio, procedimento invasivo reservado para casos especiais. Incorretas: A (neonatos), C (imunodeprimidos) e D (falha no tratamento) exigem punção para identificar o agente etiológico e orientar tratamento, devido ao maior risco de complicações, infecções graves ou resistência bacteriana."
+            "feedback": "Resposta correta: B. Início súbito e febre alta indicam otite média aguda típica, mas não justificam punção do ouvido médio, procedimento invasivo reservado para casos especiais. Incorretas: A (neonatos), C (imunodeprimidos) e D (falha no tratamento) exigem punção para identificar o agente etiológico e orientar tratamento, devido ao maior risco de complicações, infecções graves ou resistência bacteriana.",
+            "explicacoes": {
+                "robo": [
+                    "Los neonatos efectivamente requieren punción para identificar el agente etiológico, dado el mayor riesgo de complicaciones.",
+                    "El inicio súbito y la fiebre alta indican una otitis media aguda típica, pero no justifican por sí solos la punción del oído medio, procedimiento invasivo reservado para casos especiales — esta es la excepción.",
+                    "El paciente inmunodeprimido efectivamente requiere punción para identificar el agente etiológico.",
+                    "La respuesta inadecuada al tratamiento antibiótico efectivamente requiere punción para identificar el agente y orientar el tratamiento."
+                ],
+                "fantasma": [
+                    "Ese sí necesita punción.",
+                    "¡Esta! Eso solo no justifica la punción.",
+                    "Ese sí necesita punción.",
+                    "Ese sí necesita punción."
+                ],
+                "gato": [
+                    "Fijate: sí necesita.",
+                    "¡Ronroneo de aprobación! No justifica solo.",
+                    "Dato curioso: sí necesita.",
+                    "Miau, sí necesita."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -11405,7 +11665,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta Correta:** A está incorreta porque Streptococcus pneumoniae pode colonizar a nasofaringe sem causar doença, configurando portador saudável, importante para transmissão.  \n\n**Outras opções:**  \nB está correta; a IgA protease degrada a IgA secretora, facilitando adesão e colonização.  \nC está correta; a cápsula polisacarídica impede a fagocitose, sendo fator principal de virulência.  \nD está correta; a pneumolisina causa dano celular e inflamação, contribuindo para a patogênese.  \n\nSomente A nega o estado de portador assintomático, sendo incorreta."
+            "feedback": "**Resposta Correta:** A está incorreta porque Streptococcus pneumoniae pode colonizar a nasofaringe sem causar doença, configurando portador saudável, importante para transmissão.  \n\n**Outras opções:**  \nB está correta; a IgA protease degrada a IgA secretora, facilitando adesão e colonização.  \nC está correta; a cápsula polisacarídica impede a fagocitose, sendo fator principal de virulência.  \nD está correta; a pneumolisina causa dano celular e inflamação, contribuindo para a patogênese.  \n\nSomente A nega o estado de portador assintomático, sendo incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Streptococcus pneumoniae puede colonizar la nasofaringe sin causar enfermedad, configurando un estado de portador sano, importante para la transmisión — esta es la opción incorrecta.",
+                    "La IgA proteasa de la bacteria efectivamente degrada la IgA secretora, facilitando la adhesión y colonización.",
+                    "El principal factor de virulencia efectivamente es la cápsula polisacárida, que impide la fagocitosis.",
+                    "La bacteria efectivamente sintetiza una neumolisina, que causa daño celular e inflamación."
+                ],
+                "fantasma": [
+                    "¡Esta! Sí existe el portador sano.",
+                    "Esa está bien, esa proteasa.",
+                    "Esa está bien, la cápsula.",
+                    "Esa está bien, la neumolisina."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Sí hay portador sano.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -11431,7 +11711,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "**Resposta Correta:** D está incorreta; hemocultivos seriados são indicados em pneumonia pneumocócica intrahospitalar ou complicada para detectar bacteremia persistente, monitorar tratamento e identificar complicações como sepse.  \n\n**Outras opções:**  \nA está correta: pneumonia pneumocócica clássica evolui por quatro fases patológicas.  \nB está correta: S. pneumoniae é causa comum de sepse em pneumonia complicada.  \nC está correta: disseminação intrapulmonar ocorre pelos poros de Kohn.  \n\nPortanto, apenas a opção D é incorreta."
+            "feedback": "**Resposta Correta:** D está incorreta; hemocultivos seriados são indicados em pneumonia pneumocócica intrahospitalar ou complicada para detectar bacteremia persistente, monitorar tratamento e identificar complicações como sepse.  \n\n**Outras opções:**  \nA está correta: pneumonia pneumocócica clássica evolui por quatro fases patológicas.  \nB está correta: S. pneumoniae é causa comum de sepse em pneumonia complicada.  \nC está correta: disseminação intrapulmonar ocorre pelos poros de Kohn.  \n\nPortanto, apenas a opção D é incorreta.",
+            "explicacoes": {
+                "robo": [
+                    "Sin tratamiento, la neumonía neumocócica efectivamente presenta las 4 fases clásicas: congestión, hepatización roja, hepatización gris y resolución o muerte.",
+                    "Efectivamente es una causa principal de sepsis.",
+                    "Efectivamente las bacterias se diseminan intrapulmonarmente a través de los poros de Kohn.",
+                    "Los hemocultivos seriados SÍ están indicados en neumonía neumocócica intrahospitalaria o complicada, para detectar bacteriemia persistente, monitorear el tratamiento e identificar complicaciones — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, esas fases.",
+                    "Esa está bien, causa sepsis.",
+                    "Esa está bien, esos poros.",
+                    "¡Esta! Sí se indican los hemocultivos."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Sí se indican."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -11457,7 +11757,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "**Resposta Correta:** B. Streptococcus pneumoniae, causador da pneumonia pneumocócica, cresce em ágar-sangue com hemólise alfa e não é inibido pela bacitracina, que serve para diferenciar Streptococcus pyogenes. \n\n**Outras opções:**  \nA correta: Pneumonias atípicas (Mycoplasma, Chlamydophila) são diagnosticadas por sorologia IgM/IgG.  \nC correta: Metapneumovírus são detectados por PCR em secreções nasofaríngeas.  \nD correta: Antigenúria pneumocócica é um teste rápido e confiável para pneumonia por S. pneumoniae."
+            "feedback": "**Resposta Correta:** B. Streptococcus pneumoniae, causador da pneumonia pneumocócica, cresce em ágar-sangue com hemólise alfa e não é inibido pela bacitracina, que serve para diferenciar Streptococcus pyogenes. \n\n**Outras opções:**  \nA correta: Pneumonias atípicas (Mycoplasma, Chlamydophila) são diagnosticadas por sorologia IgM/IgG.  \nC correta: Metapneumovírus são detectados por PCR em secreções nasofaríngeas.  \nD correta: Antigenúria pneumocócica é um teste rápido e confiável para pneumonia por S. pneumoniae.",
+            "explicacoes": {
+                "robo": [
+                    "Ante una neumonía intersticial o 'atípica' efectivamente puede hacerse diagnóstico rápido por titulación de IgM e IgG específicas.",
+                    "Streptococcus pneumoniae crece en agar sangre con hemólisis alfa y NO es inhibido por la bacitracina, que sirve para diferenciar Streptococcus pyogenes — esta es la opción incorrecta.",
+                    "Los metapneumovirus efectivamente se diagnostican habitualmente por PCR de muestras nasofaríngeas.",
+                    "En las neumonías neumocócicas efectivamente puede hacerse diagnóstico rápido por detección de antigenuria."
+                ],
+                "fantasma": [
+                    "Esa está bien, IgM e IgG.",
+                    "¡Esta! La bacitracina no lo frena a ese.",
+                    "Esa está bien, PCR nasofaríngeo.",
+                    "Esa está bien, la antigenuria."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No lo frena.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -11483,7 +11803,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": "A opção B está correta porque *Chlamydophila psittaci* é uma bactéria intracelular obrigatória que não cresce em agar sangue ou chocolate, tornando o cultivo nesses meios inviável para diagnóstico. As opções A, C e D também estão corretas: PCR detecta o DNA da bactéria diretamente; soroconversão com aumento de anticorpos IgG confirma infecção recente; e a detecção de IgM em títulos elevados indica infecção aguda. Assim, PCR e sorologia são métodos eficazes, enquanto o cultivo em meios convencionais não é aplicável para *C. psittaci*."
+            "feedback": "A opção B está correta porque *Chlamydophila psittaci* é uma bactéria intracelular obrigatória que não cresce em agar sangue ou chocolate, tornando o cultivo nesses meios inviável para diagnóstico. As opções A, C e D também estão corretas: PCR detecta o DNA da bactéria diretamente; soroconversão com aumento de anticorpos IgG confirma infecção recente; e a detecção de IgM em títulos elevados indica infecção aguda. Assim, PCR e sorologia são métodos eficazes, enquanto o cultivo em meios convencionais não é aplicável para *C. psittaci*.",
+            "explicacoes": {
+                "robo": [
+                    "La PCR de una muestra respiratoria efectivamente es aplicable para el diagnóstico de Chlamydophila psittaci.",
+                    "Chlamydophila psittaci es una bacteria intracelular obligada que no crece en agar sangre ni agar chocolate, haciendo inviable el cultivo en estos medios para el diagnóstico — es la respuesta correcta (NO aplicable).",
+                    "La seroconversión o el aumento de 4 veces el título de IgG efectivamente es aplicable para confirmar infección reciente.",
+                    "La detección de IgM con títulos >1/16 efectivamente es aplicable, indicando infección aguda."
+                ],
+                "fantasma": [
+                    "Esa sí sirve, con PCR.",
+                    "¡Esta! Esa no crece en ese medio, es intracelular.",
+                    "Esa sí sirve, IgG.",
+                    "Esa sí sirve, IgM."
+                ],
+                "gato": [
+                    "Fijate: sirve.",
+                    "¡Ronroneo de aprobación! No crece ahí.",
+                    "Dato curioso: sirve.",
+                    "Miau, sirve."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -11509,7 +11849,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A imunofluorescência direta em aspirado nasofaríngeo detecta rapidamente antígenos virais com alta sensibilidade e especificidade, facilitando o diagnóstico da bronquiolite.\n\n**Outras opções:**  \nA) PCR em sangue não é padrão, pois viremia é rara no VSR.  \nB) Sorologia não é ideal para diagnóstico ativo devido à resposta imune e possíveis reações cruzadas.  \nD) Cultura viral é padrão-ouro, porém lenta e pouco prática para diagnóstico rápido."
+            "feedback": "**Resposta Correta:** C. A imunofluorescência direta em aspirado nasofaríngeo detecta rapidamente antígenos virais com alta sensibilidade e especificidade, facilitando o diagnóstico da bronquiolite.\n\n**Outras opções:**  \nA) PCR em sangue não é padrão, pois viremia é rara no VSR.  \nB) Sorologia não é ideal para diagnóstico ativo devido à resposta imune e possíveis reações cruzadas.  \nD) Cultura viral é padrão-ouro, porém lenta e pouco prática para diagnóstico rápido.",
+            "explicacoes": {
+                "robo": [
+                    "La PCR en sangre no es el método estándar, ya que la viremia es rara en el VSR.",
+                    "La serología no es ideal para el diagnóstico activo debido a la respuesta inmune y posibles reacciones cruzadas.",
+                    "La detección de antígenos de virus respiratorios por inmunofluorescencia en aspirado nasofaríngeo es un método rápido, sensible y específico, facilitando el diagnóstico de la bronquiolitis — es la respuesta correcta.",
+                    "El cultivo viral es el estándar de oro, pero lento y poco práctico para un diagnóstico rápido."
+                ],
+                "fantasma": [
+                    "En sangre eso es raro.",
+                    "Sí distinguen, no se cruzan tanto.",
+                    "¡Esta! Inmunofluorescencia rápida, la correcta.",
+                    "Eso es lento, no tan práctico."
+                ],
+                "gato": [
+                    "Fijate: raro en sangre.",
+                    "Dato curioso: sí distinguen.",
+                    "¡Ronroneo de aprobación! Rápida y específica.",
+                    "Miau, es lento."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -11535,7 +11895,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "**Resposta Correta:** C. A febre reumática é uma complicação não supurativa da faringite estreptocócica, resultante de uma reação imune tardia, não de infecção direta ou pus. Afeta coração, articulações e outros tecidos por inflamação autoimune.\n\n**Outras opções:**  \nA está correta: o diagnóstico viral pode ser confirmado por hisopado e detecção de antígenos.  \nB está correta: faringites virais são mais comuns que bacterianas.  \nD está correta: o hisopado deve ser feito nos pilares posteriores e amígdalas para melhor coleta bacteriana."
+            "feedback": "**Resposta Correta:** C. A febre reumática é uma complicação não supurativa da faringite estreptocócica, resultante de uma reação imune tardia, não de infecção direta ou pus. Afeta coração, articulações e outros tecidos por inflamação autoimune.\n\n**Outras opções:**  \nA está correta: o diagnóstico viral pode ser confirmado por hisopado e detecção de antígenos.  \nB está correta: faringites virais são mais comuns que bacterianas.  \nD está correta: o hisopado deve ser feito nos pilares posteriores e amígdalas para melhor coleta bacteriana.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente, aunque el diagnóstico suele ser clínico, en etiología viral puede realizarse hisopado nasofaríngeo y búsqueda de antígenos por inmunofluorescencia.",
+                    "Efectivamente las etiologías virales son más frecuentes en la faringitis.",
+                    "La fiebre reumática es una complicación NO supurativa de la faringitis estreptocócica, resultante de una reacción inmune tardía, no de infección directa o pus — esta es la opción incorrecta.",
+                    "Efectivamente la toma de muestra consiste en hisopar los pilares posteriores de la faringe y las amígdalas."
+                ],
+                "fantasma": [
+                    "Esa está bien, con inmunofluorescencia.",
+                    "Esa está bien, es más viral.",
+                    "¡Esta! Esa no tiene pus, es sin supurar.",
+                    "Esa está bien, esos pilares."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Sin pus.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -11561,7 +11941,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "**Resposta correta:** A está incorreta por postergar o diagnóstico microbiológico em 48 horas, o que pode agravar o paciente. O tratamento empírico deve iniciar imediatamente, com coleta simultânea de amostras para diagnóstico.  \n**Outras opções:**  \nB está correta ao destacar o diagnóstico sorológico de Mycoplasma pneumoniae;  \nC é correta ao descrever a hemólise alfa e testes para identificar Streptococcus pneumoniae;  \nD está correta ao recomendar exame direto do escarro e hemoculturas para diagnóstico etiológico."
+            "feedback": "**Resposta correta:** A está incorreta por postergar o diagnóstico microbiológico em 48 horas, o que pode agravar o paciente. O tratamento empírico deve iniciar imediatamente, com coleta simultânea de amostras para diagnóstico.  \n**Outras opções:**  \nB está correta ao destacar o diagnóstico sorológico de Mycoplasma pneumoniae;  \nC é correta ao descrever a hemólise alfa e testes para identificar Streptococcus pneumoniae;  \nD está correta ao recomendar exame direto do escarro e hemoculturas para diagnóstico etiológico.",
+            "explicacoes": {
+                "robo": [
+                    "Postergar el diagnóstico microbiológico 48 horas puede agravar al paciente; el tratamiento empírico debe iniciarse de inmediato, con recolección simultánea de muestras para diagnóstico — esta es la opción incorrecta.",
+                    "El diagnóstico para Mycoplasma pneumoniae efectivamente puede realizarse por serología, buscando IgM o seroconversión de IgG.",
+                    "En los cultivos de agar sangre para S. pneumoniae efectivamente se espera hemólisis incompleta (alfa) y sensibilidad a optoquina y solubilidad en bilis.",
+                    "Efectivamente se solicita esputo para tinción de Gram y cultivo, y tres muestras de sangre para hemocultivo."
+                ],
+                "fantasma": [
+                    "¡Esta! No hay que esperar 48hs para pedir eso.",
+                    "Esa está bien, con IgM o IgG.",
+                    "Esa está bien, esos rasgos del neumococo.",
+                    "Esa está bien, tres hemocultivos."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No hay que esperar.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 34,
