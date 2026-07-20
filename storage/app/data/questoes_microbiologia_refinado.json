@@ -20629,29 +20629,33 @@
                 },
                 {
                     "letra": "D",
-                    "texto": "Es un cuadro que sólo afecta a los niños menores de 5 años 49 ¿Cuál de los siguientes procedimientos es el más adecuado para el diagnóstico de la infección ante la obtención de LCR turbio por punción lumbar en un paciente pediátrico?"
-                },
-                {
-                    "letra": "A",
-                    "texto": "Centrifugación del LCR y ELISA del sobrenadante para detectar anticuerpos contra especies parasitarias."
-                },
-                {
-                    "letra": "B",
-                    "texto": "Centrifugación del LCR y ELISA para detección de Ag virales en sobrenadante."
-                },
-                {
-                    "letra": "C",
-                    "texto": "Centrifugación del LCR e inmunofluorescencia directa del sedimento para identificar especies fúngicas."
-                },
-                {
-                    "letra": "D",
-                    "texto": "Centrifugación del LCR, tinción del sedimento y cultivo en medios para bacterias."
+                    "texto": "Es un cuadro que sólo afecta a los niños menores de 5 años."
                 }
             ],
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": "Resposta correta: A. Para suspeita de poliovírus, deve-se coletar amostra fecal, pois o vírus é excretado nas fezes, facilitando diagnóstico e controle.  \n\nIncorretas:  \nB) Errado, vírus neurotrópicos podem atravessar a barreira hematoencefálica intacta por mecanismos específicos.  \nC) Errado, a detecção de IgM no líquor é importante para confirmar infecção viral no SNC.  \nD) Errado, meningite viral pode afetar todas as idades, não só crianças menores de 5 anos."
+            "feedback": "Resposta correta: A. Para suspeita de poliovírus, deve-se coletar amostra fecal, pois o vírus é excretado nas fezes, facilitando diagnóstico e controle.  \n\nIncorretas:  \nB) Errado, vírus neurotrópicos podem atravessar a barreira hematoencefálica intacta por mecanismos específicos.  \nC) Errado, a detecção de IgM no líquor é importante para confirmar infecção viral no SNC.  \nD) Errado, meningite viral pode afetar todas as idades, não só crianças menores de 5 anos.",
+            "explicacoes": {
+                "robo": [
+                    "En caso de sospecharse la presencia de poliovirus, es pertinente solicitar una muestra de materia fecal, ya que el virus se excreta en las heces, facilitando el diagnóstico y el control — es la respuesta correcta.",
+                    "Los virus neurotrópicos pueden atravesar la barrera hematoencefálica intacta por mecanismos específicos, sin necesidad de que esté lesionada.",
+                    "La detección de IgM en el LCR es relevante para confirmar la infección viral en el SNC.",
+                    "La meningitis viral puede afectar a todas las edades, no solo a niños menores de 5 años."
+                ],
+                "fantasma": [
+                    "¡Esta! Hay que buscar en la caca.",
+                    "No hace falta que esté rota.",
+                    "Sí sirve buscar eso.",
+                    "También le da a los grandes."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! En la caca.",
+                    "Fijate: no hace falta.",
+                    "Dato curioso: sí sirve.",
+                    "Miau, también a grandes."
+                ]
+            }
         },
         {
             "numero": 50,
