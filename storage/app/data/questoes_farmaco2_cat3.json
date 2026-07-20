@@ -28,7 +28,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La digoxina inhibe la bomba Na/K-ATPasa, aumentando el Na+ intracelular y, por esta vía, el Ca2+ disponible para la contracción; se usa en insuficiencia cardíaca con fibrilación auricular — es la respuesta correcta y completa.",
+                    "La inhibición de la fosfodiesterasa del AMPc es el mecanismo de otros inotrópicos (como la milrinona), no de la digoxina.",
+                    "Esta opción solo menciona el uso terapéutico, sin describir el mecanismo de acción pedido en el enunciado.",
+                    "La digoxina tiene efecto cronotrópico NEGATIVO (disminuye la frecuencia cardíaca), no un efecto simpaticomimético que la aumente."
+                ],
+                "fantasma": [
+                    "¡Esta! Bloquea la bomba y con eso hace más fuerza el corazón.",
+                    "Ese mecanismo es de otro inotrópico.",
+                    "Le falta la parte del mecanismo.",
+                    "Es al revés, hace más lento el corazón."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El mecanismo completo.",
+                    "Fijate: es de otra droga.",
+                    "Dato curioso: falta una parte.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -55,7 +75,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
             "origem_seccion": "inotropicos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Puede usarse en los trastornos de la conducción AV (2º y 3er. grado de bloqueo AV) Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Puede usarse en los trastornos de la conducción AV (2º y 3er. grado de bloqueo AV) Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación sobre arritmias y alteraciones de la conducción como reacciones adversas frecuentes de la digoxina es correcta; no es la incorrecta buscada.",
+                    "Esta descripción de los síntomas de intoxicación (gastrointestinales, del SNC y cardíacos, siendo estos últimos los más graves) es correcta; no es la incorrecta buscada.",
+                    "La prolongación del PR y la depresión del ST (\"cubeta digitálica\") son cambios electrocardiográficos reales asociados a la digoxina, incluso a dosis terapéuticas; esta afirmación es correcta.",
+                    "La digoxina está CONTRAINDICADA en los trastornos de conducción AV de 2º y 3er grado, ya que puede empeorar el bloqueo; esta es la afirmación incorrecta y la respuesta buscada."
+                ],
+                "fantasma": [
+                    "Esa es verdad, no es esta.",
+                    "Esa es verdad, no es esta.",
+                    "Esa es verdad, no es esta.",
+                    "¡Esta! Ahí está prohibida, no permitida."
+                ],
+                "gato": [
+                    "Fijate: es verdad.",
+                    "Dato curioso: es verdad.",
+                    "Miau, es verdad.",
+                    "¡Ronroneo de aprobación! Es la falsa."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -82,7 +122,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida es un diurético de asa que causa hipokalemia; el menor potasio compite menos con la digoxina por su sitio de unión en la bomba Na/K-ATPasa, aumentando su efecto y toxicidad — es la respuesta correcta.",
+                    "No hay una interacción farmacocinética clásica entre furosemida y digoxina a nivel de unión a proteínas plasmáticas que explique este aumento de toxicidad.",
+                    "La furosemida no aumenta el calcio plasmático de forma relevante para este mecanismo; de hecho, los diuréticos de asa tienden a aumentar la excreción de calcio.",
+                    "La furosemida no inhibe el metabolismo de la digoxina; el mecanismo de interacción es electrolítico (hipokalemia), no metabólico."
+                ],
+                "fantasma": [
+                    "¡Esta! Baja el potasio y eso potencia la digoxina.",
+                    "Eso no es lo que pasa acá.",
+                    "Es al revés, elimina más calcio.",
+                    "No es por el metabolismo, es por el potasio."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Menos potasio, más toxicidad.",
+                    "Fijate: no es eso.",
+                    "Dato curioso: al revés.",
+                    "Miau, no es el metabolismo."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -109,7 +169,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La hiperkalemia no es el efecto típico de los diuréticos tiazídicos como la clortalidona; de hecho, ocurre lo contrario.",
+                    "La clortalidona, como diurético tiazídico, induce hipokalemia, la cual potencia la toxicidad y el riesgo arrítmico de la digoxina — es la respuesta correcta.",
+                    "La hiponatremia puede ocurrir con tiazidas, pero no es el mecanismo principal por el que se potencia la toxicidad de la digoxina en este contexto.",
+                    "El aumento de colesterol y la hiperglucemia son efectos metabólicos posibles de las tiazidas, pero no explican el aumento del riesgo de arritmias con digoxina."
+                ],
+                "fantasma": [
+                    "Es al revés, ese no es el efecto de esta droga.",
+                    "¡Esta! Baja el potasio y potencia la digoxina.",
+                    "Eso no es lo principal acá.",
+                    "Eso no tiene que ver con las arritmias acá."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Menos potasio, más riesgo.",
+                    "Dato curioso: no es lo principal.",
+                    "Miau, no tiene que ver."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -136,7 +216,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La hipokalemia reduce la competencia con la digoxina por su sitio de unión en la bomba Na/K-ATPasa, aumentando su efecto y el riesgo de toxicidad — es la respuesta correcta.",
+                    "La hiperkalemia, al contrario, tiende a competir más con la digoxina por su sitio de unión, reduciendo (no aumentando) su efecto.",
+                    "La hiponatremia no es el principal factor electrolítico que modula la toxicidad de la digoxina; ese rol corresponde al potasio.",
+                    "La hipernatremia tampoco es el principal factor electrolítico relevante para la toxicidad de la digoxina."
+                ],
+                "fantasma": [
+                    "¡Esta! Menos potasio, más efecto y más riesgo.",
+                    "Eso competiría más, bajaría el efecto.",
+                    "Eso no es lo que importa acá.",
+                    "Eso tampoco es lo que importa acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Menos potasio, más riesgo.",
+                    "Fijate: sería al revés.",
+                    "Dato curioso: no es eso.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -163,7 +263,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La digoxina no actúa sobre los canales de calcio voltaje dependientes de forma directa; su acción principal es sobre la bomba Na/K-ATPasa.",
+                    "La digoxina inhibe la bomba Na/K-ATPasa, aumentando el Na+ intracelular, lo que reduce el intercambio Na+/Ca2+ y aumenta el Ca2+ disponible para la contracción — es la respuesta correcta.",
+                    "La digoxina no actúa principalmente sobre canales de potasio voltaje dependientes.",
+                    "La digoxina no actúa sobre la bomba H/K-ATPasa (esa es la diana de los inhibidores de bomba de protones gástricos, no de la digoxina)."
+                ],
+                "fantasma": [
+                    "Esos canales no son el blanco de la digoxina.",
+                    "¡Esta! Bloquea esa bomba específica.",
+                    "Esos canales tampoco son el blanco.",
+                    "Esa bomba es de otro órgano, no del corazón."
+                ],
+                "gato": [
+                    "Fijate: no son esos canales.",
+                    "¡Ronroneo de aprobación! Esa bomba específica.",
+                    "Dato curioso: no son esos canales.",
+                    "Miau, es de otro órgano."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -190,7 +310,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La inhibición de la digoxina sobre la bomba Na/K-ATPasa es reversible (competitiva), no irreversible.",
+                    "La digoxina es conocida precisamente por tener un margen terapéutico ESTRECHO, no amplio, lo que exige monitoreo cuidadoso de sus niveles plasmáticos.",
+                    "La digoxina tiene un efecto cronotrópico negativo (disminuye la frecuencia cardíaca), en parte por su efecto vagotónico — es la respuesta correcta.",
+                    "A diferencia de otros inotrópicos como las catecolaminas, la digoxina no aumenta significativamente el consumo de oxígeno miocárdico."
+                ],
+                "fantasma": [
+                    "Eso se puede revertir, no es para siempre.",
+                    "Es al revés, el margen es angosto.",
+                    "¡Esta! Hace más lento el corazón.",
+                    "No gasta tanto oxígeno como otros."
+                ],
+                "gato": [
+                    "Fijate: se puede revertir.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Corazón más lento.",
+                    "Miau, no gasta tanto."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -217,7 +357,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "A dosis tóxicas, la intoxicación digitálica se caracteriza clásicamente por AUMENTO de la excitabilidad (arritmias, extrasístoles), no por una disminución generalizada desde el inicio.",
+                    "A dosis terapéuticas, la digoxina puede aumentar levemente la excitabilidad miocárdica; en la intoxicación severa, este efecto puede progresar hasta una supresión de la conducción (bradiarritmias graves, bloqueo AV avanzado) — es la respuesta correcta según el gabarito de origen.",
+                    "La digoxina sí tiene un efecto conocido sobre la excitabilidad miocárdica (batmotropismo), tanto a dosis terapéuticas como tóxicas.",
+                    "Sí existe una opción correcta entre las alternativas disponibles."
+                ],
+                "fantasma": [
+                    "La intoxicación aumenta la excitabilidad, no la baja siempre.",
+                    "Esta es la marcada en el gabarito original.",
+                    "Sí tiene efecto sobre esto.",
+                    "Sí hay una correcta entre las opciones."
+                ],
+                "gato": [
+                    "Fijate: aumenta al principio.",
+                    "Ronroneo de aprobación (según el gabarito original).",
+                    "Dato curioso: sí tiene efecto.",
+                    "Miau, sí hay una correcta."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -244,7 +404,27 @@
             "nota": "Selecionar opção EXCETO (incorreta)",
             "resposta_correta": "D",
             "origem_seccion": "inotropicos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Diabetes Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Diabetes Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "El síndrome de WPW es una contraindicación clásica para digoxina, ya que puede facilitar la conducción por la vía accesoria y precipitar arritmias graves.",
+                    "La miocardiopatía hipertrófica obstructiva es una contraindicación para digoxina, ya que su efecto inotrópico puede empeorar la obstrucción del tracto de salida.",
+                    "El bloqueo AV de tercer grado es una contraindicación clara para digoxina, dado su efecto dromotrópico negativo adicional sobre el nodo AV.",
+                    "La diabetes no es una contraindicación específica para el uso de digoxina — es la respuesta correcta (la excepción buscada)."
+                ],
+                "fantasma": [
+                    "Esa sí está prohibida.",
+                    "Esa también está prohibida.",
+                    "Esa también está prohibida.",
+                    "¡Esta! Esta no tiene nada que ver con prohibir la digoxina."
+                ],
+                "gato": [
+                    "Fijate: sí está prohibida.",
+                    "Dato curioso: también prohibida.",
+                    "Miau, también prohibida.",
+                    "¡Ronroneo de aprobación! Esta no la prohíbe."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -271,7 +451,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Hidratar es una medida de soporte general, pero no es la prioridad específica más urgente frente a una intoxicación digitálica.",
+                    "La hemodiálisis no es eficaz para eliminar digoxina, dado su gran volumen de distribución; no es una medida útil en este contexto.",
+                    "Corregir el potasio (ya sea hipo o hiperkalemia, según el caso) es una medida temprana y prioritaria en la intoxicación digitálica, dado el papel central del K+ en la toxicidad de la droga — es la respuesta correcta según el gabarito de origen.",
+                    "Aplicar otro inotrópico podría empeorar el cuadro en un contexto de intoxicación por digoxina, no es la primera medida indicada."
+                ],
+                "fantasma": [
+                    "Eso es de apoyo general, no lo más urgente.",
+                    "Eso no sirve para sacar la digoxina.",
+                    "¡Esta! El potasio es clave en esta intoxicación.",
+                    "Eso podría empeorar las cosas acá."
+                ],
+                "gato": [
+                    "Fijate: no es lo más urgente.",
+                    "Dato curioso: no sirve para esto.",
+                    "¡Ronroneo de aprobación! El potasio es clave.",
+                    "Miau, podría empeorar."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -298,7 +498,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las discromatopsias (alteraciones de la visión de los colores) son un síntoma característico pero más TARDÍO de la intoxicación digitálica, no de los primeros en aparecer.",
+                    "La \"cubeta digitálica\" es un cambio electrocardiográfico asociado al uso de digoxina, incluso a dosis terapéuticas, no específicamente el primer signo de intoxicación.",
+                    "Las náuseas, vómitos y anorexia son clásicamente los primeros síntomas en aparecer en la intoxicación digitálica, antes de las manifestaciones cardíacas o visuales — es la respuesta correcta.",
+                    "La ginecomastia y las reacciones alérgicas no son los primeros efectos adversos típicos de la intoxicación digitálica."
+                ],
+                "fantasma": [
+                    "Eso aparece más tarde.",
+                    "Eso pasa incluso sin intoxicación.",
+                    "¡Esta! El estómago avisa primero.",
+                    "Eso no es lo primero que aparece."
+                ],
+                "gato": [
+                    "Fijate: es más tardío.",
+                    "Dato curioso: pasa aunque no haya intoxicación.",
+                    "¡Ronroneo de aprobación! El estómago avisa primero.",
+                    "Miau, no es lo primero."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -325,7 +545,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las náuseas y vómitos son los signos tempranos clásicos de la intoxicación por digoxina, precediendo a las manifestaciones más graves — es la respuesta correcta.",
+                    "La torsión de punta es una arritmia grave que puede aparecer en estadios más avanzados de la toxicidad, no como signo temprano.",
+                    "La digoxina, con su efecto cronotrópico negativo, tiende a AUMENTAR (no disminuir) el intervalo RR; además, esto no es un signo temprano típico.",
+                    "La hepatotoxicidad no es una manifestación característica de la intoxicación por digoxina."
+                ],
+                "fantasma": [
+                    "¡Esta! El estómago avisa primero.",
+                    "Esa es una arritmia más grave, más tardía.",
+                    "Eso sería aumentar el intervalo, no disminuir.",
+                    "Eso no es típico de esta intoxicación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El estómago avisa primero.",
+                    "Fijate: es más tardía.",
+                    "Dato curioso: sería al revés.",
+                    "Miau, no es típico."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -352,7 +592,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La digoxina actúa inhibiendo la bomba Na/K-ATPasa, no directamente sobre canales de calcio voltaje dependientes.",
+                    "La digoxina se emplea clásicamente para el control de la frecuencia ventricular en la fibrilación auricular, retrasando la conducción por el nodo AV — es la respuesta señalada en el gabarito de origen.",
+                    "La digoxina DISMINUYE (no aumenta) la velocidad de conducción a través del nodo AV; ese es precisamente el fundamento de su uso en fibrilación auricular.",
+                    "Los niveles de digoxinemia deseables actualmente tienden a recomendarse más bajos (para minimizar toxicidad); el rango de 1 a 2 ng/ml corresponde a referencias más antiguas."
+                ],
+                "fantasma": [
+                    "Ese no es el blanco de la digoxina.",
+                    "Esta es la marcada en el gabarito original.",
+                    "Es al revés, la hace más lenta.",
+                    "Ese rango es de otra época, hoy se prefiere menos."
+                ],
+                "gato": [
+                    "Fijate: no es ese el blanco.",
+                    "Ronroneo de aprobación (según el gabarito original).",
+                    "Dato curioso: al revés.",
+                    "Miau, rango antiguo."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -379,7 +639,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La digoxina generalmente ACORTA (no prolonga) el intervalo QT, a diferencia de esta afirmación.",
+                    "La elevación del punto J no es un cambio electrocardiográfico característico de la digoxina.",
+                    "La digoxina, con su efecto cronotrópico negativo, tiende a AUMENTAR (no disminuir) el intervalo RR.",
+                    "La digoxina prolonga el intervalo PR, reflejando su efecto dromotrópico negativo sobre el nodo AV — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, lo acorta.",
+                    "Eso no es típico de esta droga.",
+                    "Sería al revés, lo alarga.",
+                    "¡Esta! Frena la conducción por el nodo AV."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: no es típico.",
+                    "Miau, sería al revés.",
+                    "¡Ronroneo de aprobación! Frena la conducción."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -406,7 +686,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los primeros síntomas de intoxicación por digoxina son gastrointestinales (náuseas, vómitos, anorexia), no cardiológicos — es la respuesta correcta.",
+                    "La digoxina inhibe la bomba Na/K-ATPasa, no la fosfodiesterasa (ese es el mecanismo de otros inotrópicos).",
+                    "La digoxina tiene un margen terapéutico ESTRECHO, no seguro, lo que exige monitoreo cuidadoso.",
+                    "La digoxina se elimina principalmente por vía renal, por lo que su dosificación debe ajustarse según la función renal, no la hepática."
+                ],
+                "fantasma": [
+                    "¡Esta! El estómago avisa antes que el corazón.",
+                    "Ese mecanismo es de otra droga.",
+                    "Es al revés, el margen es angosto.",
+                    "Es el riñón el que importa acá, no el hígado."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El estómago avisa primero.",
+                    "Fijate: es de otra droga.",
+                    "Dato curioso: al revés.",
+                    "Miau, es el riñón."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -433,7 +733,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "En la FA de baja respuesta ventricular, la frecuencia ya es baja, por lo que agregar digoxina (que reduce aún más la conducción AV) podría ser contraproducente.",
+                    "La digoxina no es de primera línea para la TPS; se prefieren otras medidas como maniobras vagales o adenosina.",
+                    "La digoxina está contraindicada en la taquicardia ventricular sostenida, ya que puede empeorar arritmias ventriculares.",
+                    "La digoxina se usa clásicamente para controlar la frecuencia ventricular excesivamente alta en la FA de alta respuesta ventricular, al enlentecer la conducción por el nodo AV — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ahí ya está lenta, no hace falta frenar más.",
+                    "Para eso se usan otras cosas primero.",
+                    "Ahí está prohibida, puede empeorar todo.",
+                    "¡Esta! Frena el corazón que va muy rápido."
+                ],
+                "gato": [
+                    "Fijate: ya está lenta.",
+                    "Dato curioso: se usan otras cosas.",
+                    "Miau, está prohibida ahí.",
+                    "¡Ronroneo de aprobación! Frena lo que va rápido."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -460,7 +780,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La dobutamina, al ser más selectiva sobre receptores beta-1, genera menos arritmias que la dopamina, cuyos efectos dopaminérgicos/alfa/beta mixtos son más arritmogénicos — es la respuesta correcta.",
+                    "La dobutamina no es la opción de elección para revertir intoxicaciones por agonistas alfa adrenérgicos; ese no es su uso característico.",
+                    "La dobutamina tiene una degradación rápida (vida media corta), no lenta.",
+                    "La dobutamina se administra por vía intravenosa (no oral) y se usa en el contexto agudo, no en casos crónicos ambulatorios de insuficiencia cardíaca."
+                ],
+                "fantasma": [
+                    "¡Esta! Menos arritmias que la otra catecolamina.",
+                    "Ese no es su uso característico.",
+                    "Es al revés, se degrada rápido.",
+                    "Se da por vena, no por boca, y es para lo agudo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Menos arritmias.",
+                    "Fijate: no es para eso.",
+                    "Dato curioso: al revés.",
+                    "Miau, es por vena y agudo."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -487,7 +827,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Ya establecido que la dobutamina genera MENOS (no más) arritmias que la dopamina.",
+                    "La dobutamina tiene un tiempo de degradación CORTO (rápido), no prolongado.",
+                    "La dobutamina actúa con mayor afinidad sobre receptores BETA-1, no sobre receptores alfa.",
+                    "La dobutamina, al tener menor efecto vasopresor que otros inotrópicos, es apropiada en shock cardiogénico cuando la tensión arterial está relativamente conservada — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, genera menos.",
+                    "Es al revés, se degrada rápido.",
+                    "Es al revés, va más por el beta.",
+                    "¡Esta! Cuando la presión está bien, esta es la elegida."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés.",
+                    "¡Ronroneo de aprobación! Presión conservada, esta gana."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -514,7 +874,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La digoxina no es el agente de elección para el soporte hemodinámico agudo en un shock relacionado con arritmia.",
+                    "Al ser menos arritmogénica que otros inotrópicos como la dopamina, la dobutamina resulta más apropiada como soporte en un paciente cuyo shock ya está vinculado a una arritmia — es la respuesta correcta.",
+                    "La dopamina, al ser más arritmogénica, podría perpetuar o empeorar el cuadro en un shock ya relacionado con una arritmia.",
+                    "El levosimendán no es la primera elección típica mencionada en este contexto específico entre las opciones dadas."
+                ],
+                "fantasma": [
+                    "Esa no es la elegida para esto agudo.",
+                    "¡Esta! Genera menos arritmias, más segura acá.",
+                    "Esa podría empeorar la arritmia de base.",
+                    "Esa no es la elegida acá."
+                ],
+                "gato": [
+                    "Fijate: no es para esto.",
+                    "¡Ronroneo de aprobación! Más segura acá.",
+                    "Dato curioso: podría empeorar.",
+                    "Miau, no es la elegida."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -541,7 +921,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "inotropicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La dopamina no es una opción estándar para tratar intoxicaciones por agonistas alfa adrenérgicos; ella misma es un agonista adrenérgico.",
+                    "La dopamina, como catecolamina, tiene una degradación rápida (vida media corta), no lenta.",
+                    "La dopamina genera más arritmias que la dobutamina, dado su perfil de acción dopaminérgico/alfa/beta más mixto y dosis-dependiente — es la respuesta correcta.",
+                    "La dopamina se administra por vía intravenosa (no oral) y no tiene un rol en el tratamiento crónico ambulatorio de la insuficiencia cardíaca."
+                ],
+                "fantasma": [
+                    "Eso no es lo que trata, es otro agonista ella misma.",
+                    "Es al revés, se degrada rápido.",
+                    "¡Esta! Da más arritmias que la otra.",
+                    "Se da por vena, no por boca, y no es para lo crónico."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Más arritmias.",
+                    "Miau, es por vena."
+                ]
+            }
         },
         {
             "numero": 21,
