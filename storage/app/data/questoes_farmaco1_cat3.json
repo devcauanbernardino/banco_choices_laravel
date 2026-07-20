@@ -3707,7 +3707,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El primer paso hepático no es la variable directamente afectada; la vida media beta se relaciona más con la eliminación sistémica general, no específicamente con este fenómeno de primer paso.",
+                    "El volumen aparente de distribución no es la variable directamente disminuida por un extenso primer paso hepático.",
+                    "Un extenso metabolismo de primer paso hepático destruye gran parte del fármaco antes de que alcance la circulación sistémica, disminuyendo su fracción biodisponible — es la respuesta correcta.",
+                    "La fracción no ionizada depende del pKa de la droga y el pH del medio, no del fenómeno de primer paso hepático."
+                ],
+                "fantasma": [
+                    "Eso no es lo que baja acá.",
+                    "Eso no es lo que baja acá.",
+                    "¡Esta! Se pierde antes de llegar a la sangre.",
+                    "Eso depende de otra cosa, el pKa."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: no es eso.",
+                    "¡Ronroneo de aprobación! Se pierde antes.",
+                    "Miau, es otra cosa."
+                ]
+            }
         },
         {
             "numero": 82,
@@ -3733,7 +3753,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Los metabolitos generalmente son MENOS liposolubles (más polares), no más, ya que la biotransformación busca facilitar su eliminación.",
+                    "Los metabolitos son frecuentemente MENOS activos (o inactivos), no más activos, aunque existen excepciones.",
+                    "Aunque algunos metabolitos pueden ser más tóxicos, esto no es lo más frecuente en general; la característica más común es un aumento de la polaridad.",
+                    "La biotransformación suele aumentar la polaridad de la molécula (haciéndola más hidrosoluble), lo que facilita su excreción renal o biliar — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, menos grasosos.",
+                    "No siempre, a veces es al revés.",
+                    "A veces, pero no es lo más común.",
+                    "¡Esta! Más solubles en agua para salir."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: no siempre.",
+                    "Miau, no es lo más común.",
+                    "¡Ronroneo de aprobación! Más polares."
+                ]
+            }
         },
         {
             "numero": 83,
@@ -3759,7 +3799,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El alcoholismo crónico induce el CYP2E1, lo que acelera el metabolismo del paracetamol; esto tiende a disminuir (no aumentar) los niveles del fármaco original.",
+                    "Al inducirse el CYP2E1 por el alcohol crónico, se produce MÁS (no menos) metabolito hepatotóxico del paracetamol.",
+                    "El alcoholismo crónico induce el CYP2E1, generando mayor cantidad del metabolito hepatotóxico del paracetamol, lo que aumenta el riesgo de hepatotoxicidad — es la respuesta correcta.",
+                    "La inducción del CYP2E1 ACELERA (no disminuye) la eliminación metabólica del paracetamol, generando más metabolito tóxico en el proceso."
+                ],
+                "fantasma": [
+                    "Es al revés, bajan los niveles del original.",
+                    "Es al revés, sale más metabolito.",
+                    "¡Esta! Más metabolito tóxico, más riesgo para el hígado.",
+                    "Es al revés, se metaboliza más rápido."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Más riesgo hepático.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 84,
@@ -3785,7 +3845,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "En cinética de orden 1, la velocidad de eliminación es DIRECTAMENTE (no inversamente) proporcional a la concentración plasmática.",
+                    "En cinética de orden 1, la velocidad de eliminación es directamente proporcional a la concentración plasmática: a mayor concentración, mayor velocidad de eliminación — es la respuesta correcta.",
+                    "En cinética de orden 1 (a diferencia de la de orden cero), la velocidad SÍ se modifica en función de la concentración plasmática.",
+                    "La cinética de orden 1 se caracteriza precisamente por NO estar saturada (a diferencia de la cinética de orden cero); el sistema tiene capacidad de sobra."
+                ],
+                "fantasma": [
+                    "Es al revés, es directa.",
+                    "¡Esta! Más concentración, más rápido se va.",
+                    "Sí se modifica, es orden 1.",
+                    "Eso es de la de orden cero, no esta."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Proporcional siempre.",
+                    "Dato curioso: sí se modifica.",
+                    "Miau, es la otra cinética."
+                ]
+            }
         },
         {
             "numero": 85,
@@ -3811,7 +3891,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un intervalo de 0,1 vidas medias no reproduce la relación dosis de carga/dosis de mantenimiento observada (1023/300 ≈ 3,41).",
+                    "La razón entre la dosis de carga (1023 mg) y la de mantenimiento (300 mg) es 1023/300 ≈ 3,41, que corresponde exactamente al factor de acumulación esperado cuando el intervalo entre dosis es de 0,5 vidas medias — es la respuesta correcta.",
+                    "Un intervalo de 1 vida media daría una razón dosis de carga/mantenimiento de 2 (ya que 1/(1-2^-1)=2), no de 3,41 como se observa aquí.",
+                    "Un intervalo de 1,41 vidas medias no corresponde a la razón de 3,41 observada entre la dosis de carga y la de mantenimiento."
+                ],
+                "fantasma": [
+                    "Ese número no da 3,41.",
+                    "¡Esta! Esa cuenta da justo 3,41.",
+                    "Ese número no da 3,41, da 2.",
+                    "Ese número no da 3,41."
+                ],
+                "gato": [
+                    "Fijate: no da ese número.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Dato curioso: da 2, no 3,41.",
+                    "Miau, no da ese número."
+                ]
+            }
         },
         {
             "numero": 86,
@@ -3837,7 +3937,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un cociente pico/valle de 0,5 sería menor a 1, lo cual no tiene sentido (el pico siempre es mayor o igual al valle).",
+                    "Un cociente de 0,75 también sería menor a 1, lo cual no es posible para esta relación (pico siempre ≥ valle).",
+                    "Un cociente de 1 implicaría que no hay oscilación (como en infusión continua), lo cual no corresponde a un intervalo de dosificación de 0,5 vidas medias.",
+                    "Con un intervalo entre dosis de 0,5 vidas medias, el cociente pico/valle es 2^(0,5) ≈ 1,41 — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso sería menos que el valle, no puede ser.",
+                    "Eso sería menos que el valle, no puede ser.",
+                    "Eso sería sin oscilación, no es el caso.",
+                    "¡Esta! Justo lo que da la raíz de 2."
+                ],
+                "gato": [
+                    "Fijate: no puede ser.",
+                    "Dato curioso: no puede ser.",
+                    "Miau, no hay oscilación ahí.",
+                    "¡Ronroneo de aprobación! Raíz de 2."
+                ]
+            }
         },
         {
             "numero": 87,
@@ -3863,7 +3983,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Con un cociente pico/valle de 2 = 2^(τ/t½), se obtiene τ/t½ = 1, es decir, el intervalo de dosificación es igual a una vida media (16 horas) — es la respuesta correcta.",
+                    "Un intervalo de 32 horas (2 vidas medias) daría un cociente pico/valle de 2^2=4, no de 2.",
+                    "Un intervalo de 64 horas (4 vidas medias) daría un cociente pico/valle de 2^4=16, no de 2.",
+                    "Un intervalo de 128 horas (8 vidas medias) daría un cociente pico/valle extremadamente alto (2^8=256), no de 2."
+                ],
+                "fantasma": [
+                    "¡Esta! Una vida media entera, cociente 2.",
+                    "Eso daría un cociente de 4, no 2.",
+                    "Eso daría un cociente de 16, no 2.",
+                    "Eso daría un cociente enorme, no 2."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Justo una vida media.",
+                    "Fijate: da 4.",
+                    "Dato curioso: da 16.",
+                    "Miau, da un montón."
+                ]
+            }
         },
         {
             "numero": 88,
@@ -3889,7 +4029,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Con τ=24h, si la vida media fuera 12h (τ/t½=2), el factor de acumulación sería 1/(1-2^-2)=1,33, no 3,41.",
+                    "Con τ=24h, si la vida media fuera 24h (τ/t½=1), el factor de acumulación sería 1/(1-2^-1)=2, no 3,41.",
+                    "Con τ=24h (dosificación diaria) y un factor de acumulación de 3,41, se resuelve τ/t½=0,5, por lo que la vida media es el doble del intervalo: 48 horas — es la respuesta correcta.",
+                    "Con τ=24h, si la vida media fuera 96h (τ/t½=0,25), el factor de acumulación sería 1/(1-2^-0,25)≈5,35, no 3,41."
+                ],
+                "fantasma": [
+                    "Esa cuenta no da 3,41, da 1,33.",
+                    "Esa cuenta no da 3,41, da 2.",
+                    "¡Esta! Esa cuenta da justo 3,41.",
+                    "Esa cuenta no da 3,41, da más."
+                ],
+                "gato": [
+                    "Fijate: no da eso.",
+                    "Dato curioso: da 2.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Miau, no da eso."
+                ]
+            }
         },
         {
             "numero": 89,
@@ -3915,7 +4075,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un intervalo de 2 vidas medias daría un cociente pico/valle de 2^2=4 (por ejemplo, de 200 a 50), no de 2 (100 a 50) como se pide aquí.",
+                    "Un cociente pico/valle de 100/50=2 corresponde a 2^(τ/t½)=2, es decir τ/t½=1: administrar la droga cada 1 vida media — es la respuesta correcta.",
+                    "Un intervalo de más de 4 vidas medias daría un cociente pico/valle mucho mayor a 2 (por ejemplo, 2^4=16), generando una oscilación mucho más amplia que 100 a 50.",
+                    "Un intervalo de 3 vidas medias daría un cociente pico/valle de 2^3=8, no de 2."
+                ],
+                "fantasma": [
+                    "Eso daría un cociente de 4, no 2.",
+                    "¡Esta! 100 sobre 50 es 2, y eso es una vida media.",
+                    "Eso oscilaría muchísimo más.",
+                    "Eso daría un cociente de 8, no 2."
+                ],
+                "gato": [
+                    "Fijate: da 4.",
+                    "¡Ronroneo de aprobación! Justo una vida media.",
+                    "Dato curioso: oscila mucho más.",
+                    "Miau, da 8."
+                ]
+            }
         },
         {
             "numero": 90,
@@ -3941,7 +4121,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La vida media de eliminación se refiere a la concentración PLASMÁTICA (no al 'efecto'), y en su definición básica no se describe en función de la distribución de esta manera.",
+                    "La vida media es INVERSAMENTE proporcional a la constante de eliminación (k), y en cinética de orden 1 la velocidad de eliminación no es una cifra fija, sino que depende de la concentración.",
+                    "En la cinética de orden cero, la vida media NO tiene un valor único ni constante, ya que depende de la concentración de droga presente en cada momento (a diferencia de la cinética de orden 1, donde la vida media sí es constante) — es la respuesta correcta.",
+                    "La vida media se expresa en unidades de TIEMPO (por ejemplo, horas), no en unidades de concentración por tiempo (esas son las unidades de la velocidad de eliminación)."
+                ],
+                "fantasma": [
+                    "No es del efecto, es de la concentración.",
+                    "No es proporcional así, es al revés.",
+                    "¡Esta! En orden cero cambia según cuánta droga hay.",
+                    "Se mide en tiempo, no en esa unidad."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: es al revés.",
+                    "¡Ronroneo de aprobación! Cambia con la dosis.",
+                    "Miau, se mide en tiempo."
+                ]
+            }
         },
         {
             "numero": 91,
@@ -3967,7 +4167,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Aumentar el intervalo interdosis en vidas medias AUMENTARÍA (no disminuiría) la oscilación pico/valle, empeorando el resultado buscado.",
+                    "Disminuir la vida media, manteniendo el mismo horario, haría que ese mismo intervalo representara MÁS vidas medias, lo que AUMENTARÍA (no disminuiría) el cociente pico/valle.",
+                    "Aumentar la dosis, manteniendo el mismo régimen horario, no modifica el cociente pico/valle (que depende solo de la relación entre el intervalo y la vida media), solo cambia la magnitud absoluta de pico y valle.",
+                    "La infusión intravenosa continua mantiene una concentración plasmática constante en meseta, eliminando por completo la oscilación entre pico y valle — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso empeora, no mejora.",
+                    "Eso empeora, no mejora.",
+                    "Eso no cambia el cociente, solo el tamaño.",
+                    "¡Esta! Sin subidas ni bajadas, todo parejo."
+                ],
+                "gato": [
+                    "Fijate: empeora.",
+                    "Dato curioso: empeora.",
+                    "Miau, no cambia el cociente.",
+                    "¡Ronroneo de aprobación! Todo parejo."
+                ]
+            }
         },
         {
             "numero": 92,
@@ -3993,7 +4213,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Esta descripción corresponde a la cinética de orden 1, no a la de orden cero.",
+                    "En la cinética de orden cero, la eliminación NO se acelera con la concentración; ocurre a una velocidad constante, independientemente de ella.",
+                    "En la cinética de orden cero, la droga se elimina a una velocidad constante (una cantidad fija por unidad de tiempo), independientemente de su concentración plasmática, típicamente porque el sistema de eliminación está saturado — es la respuesta correcta.",
+                    "En la cinética de orden cero, la vida media NO es constante; varía según la concentración inicial de la droga."
+                ],
+                "fantasma": [
+                    "Esa es la de orden 1.",
+                    "Es al revés, va siempre igual.",
+                    "¡Esta! Siempre la misma cantidad por hora.",
+                    "Ahí la vida media cambia, no es fija."
+                ],
+                "gato": [
+                    "Fijate: es la otra cinética.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Siempre lo mismo.",
+                    "Miau, no es fija."
+                ]
+            }
         },
         {
             "numero": 93,
@@ -4019,7 +4259,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La vida media de eliminación se define, en su forma básica, como el tiempo que tarda la concentración plasmática en reducirse a la mitad desde su administración — es la respuesta correcta.",
+                    "Aunque en modelos con fase de distribución significativa esta distinción importa más, en el marco básico de este curso la vida media se cuenta desde la administración, no específicamente desde el pico.",
+                    "Este concepto describe el tiempo de eliminación COMPLETA del fármaco, no el tiempo para reducirse a la mitad; son conceptos distintos.",
+                    "Este concepto también describe la eliminación completa (no la reducción a la mitad), y además la mide desde el pico, no desde la administración."
+                ],
+                "fantasma": [
+                    "¡Esta! Desde que se toma hasta la mitad.",
+                    "Esa es una versión más fina, no la básica.",
+                    "Eso es eliminarse del todo, no la mitad.",
+                    "Eso es eliminarse del todo, y desde el pico."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Desde que se toma.",
+                    "Fijate: es más específico.",
+                    "Dato curioso: es otro concepto.",
+                    "Miau, es otro concepto."
+                ]
+            }
         },
         {
             "numero": 94,
@@ -4045,7 +4305,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Como la droga P se elimina casi en un 100% por vía renal sin biotransformación, la función renal es el determinante clave de su eliminación; en insuficiencia renal, la droga se acumulará y será necesario ajustar la dosis — es la respuesta correcta.",
+                    "Como la droga P no sufre biotransformación hepática (se elimina sin metabolizarse), la función hepática no es relevante para su eliminación.",
+                    "Como la droga P no se metaboliza en absoluto, una interacción con el CYP2C19 (vía omeprazol) no afectaría su farmacocinética.",
+                    "El tabaco induce principalmente otras isoformas (como el CYP1A2), pero como la droga P no se biotransforma, ninguna inducción enzimática afectaría su eliminación."
+                ],
+                "fantasma": [
+                    "¡Esta! Si el riñón falla, se acumula.",
+                    "El hígado no participa acá.",
+                    "Esa enzima no toca a esta droga.",
+                    "Fumar no cambia nada si no hay metabolismo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Todo depende del riñón.",
+                    "Fijate: no es el hígado.",
+                    "Dato curioso: no la toca.",
+                    "Miau, no cambia nada."
+                ]
+            }
         },
         {
             "numero": 95,
@@ -4071,7 +4351,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "En cinética de orden 1, la velocidad de eliminación SÍ depende de la concentración plasmática; no es constante ni independiente de ella (eso describe a la cinética de orden cero).",
+                    "En cinética de orden 1, la velocidad de eliminación es proporcional a la concentración plasmática: a mayor concentración, mayor velocidad de eliminación — es la respuesta correcta.",
+                    "La velocidad de eliminación es DIRECTAMENTE (no inversamente) proporcional a la concentración plasmática en cinética de orden 1.",
+                    "La cinética de orden 1 es, precisamente, predecible: existe una relación matemática constante (proporcionalidad directa) entre la concentración y la velocidad de eliminación."
+                ],
+                "fantasma": [
+                    "Esa es la de orden cero.",
+                    "¡Esta! Más concentración, más rápido se va.",
+                    "Es al revés, es directa.",
+                    "Sí se puede predecir, es proporcional."
+                ],
+                "gato": [
+                    "Fijate: es la otra.",
+                    "¡Ronroneo de aprobación! Proporcional siempre.",
+                    "Dato curioso: al revés.",
+                    "Miau, sí se predice."
+                ]
+            }
         },
         {
             "numero": 96,
@@ -4097,7 +4397,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un escaso pasaje intracelular se asociaría con un volumen de distribución BAJO (el fármaco quedaría confinado al espacio extracelular), no alto.",
+                    "Una alta unión a proteínas plasmáticas tiende a asociarse con un volumen de distribución BAJO (el fármaco queda retenido en el plasma), no alto.",
+                    "Un volumen de distribución aparente mayor al volumen de agua corporal total sugiere que el fármaco se acumula o concentra en algún compartimento tisular específico, haciendo que el cálculo matemático 'aparente' supere el volumen físico real del cuerpo — es la respuesta correcta.",
+                    "El patrón de eliminación (mono o bicompartimental) es un concepto cinético distinto, no una conclusión que se derive directamente del tamaño del volumen de distribución."
+                ],
+                "fantasma": [
+                    "Eso daría un volumen bajo, no alto.",
+                    "Eso daría un volumen bajo, no alto.",
+                    "¡Esta! Se esconde en algún tejido.",
+                    "Eso es otro tema, no tiene que ver."
+                ],
+                "gato": [
+                    "Fijate: sería bajo.",
+                    "Dato curioso: sería bajo.",
+                    "¡Ronroneo de aprobación! Se esconde en un tejido.",
+                    "Miau, no tiene que ver."
+                ]
+            }
         },
         {
             "numero": 97,
@@ -4123,7 +4443,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La velocidad inicial con que un fármaco llega a distintos tejidos tras una administración IV depende principalmente de la irrigación sanguínea de cada tejido: los órganos más perfundidos (corazón, cerebro, riñón, hígado) reciben el fármaco primero — es la respuesta correcta.",
+                    "El contenido de grasa determina más la distribución hacia el tejido adiposo específicamente, no la velocidad inicial general de distribución a los distintos tejidos.",
+                    "El grado de ionización afecta más el equilibrio final (cuánto fármaco llega y permanece) que la velocidad inicial de llegada a los tejidos.",
+                    "El transporte activo fuera de las células no es el determinante principal de la velocidad inicial de distribución tisular tras una administración IV."
+                ],
+                "fantasma": [
+                    "¡Esta! Llega primero a donde hay más sangre.",
+                    "Eso importa para la grasa, no en general.",
+                    "Eso importa al final, no al principio.",
+                    "Eso no es lo que manda acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Sangre primero.",
+                    "Fijate: es solo para la grasa.",
+                    "Dato curioso: es al final.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 98,
@@ -4149,7 +4489,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La predominancia de la eliminación sobre la distribución describe la fase beta (terminal), no la fase alfa.",
+                    "La fase alfa refleja la distribución rápida inicial del fármaco desde el compartimento central hacia los tejidos periféricos, antes de alcanzar el equilibrio — es la respuesta correcta.",
+                    "La eliminación lenta y constante describe la fase beta, no la fase alfa (que es la fase de distribución rápida).",
+                    "Es al revés: la fase alfa tiene una vida media MÁS CORTA que la fase beta, ya que la distribución ocurre más rápido que la eliminación terminal."
+                ],
+                "fantasma": [
+                    "Esa es la fase beta.",
+                    "¡Esta! Reparto rápido a los tejidos.",
+                    "Esa es la fase beta.",
+                    "Es al revés, la alfa es más corta."
+                ],
+                "gato": [
+                    "Fijate: es la beta.",
+                    "¡Ronroneo de aprobación! Reparto rápido.",
+                    "Dato curioso: es la beta.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 99,
@@ -4175,7 +4535,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un AUC oral igual a un décimo del AUC IV daría una biodisponibilidad de 0,1, no correspondiente a 'la quinta parte' mencionada en el enunciado.",
+                    "Si el AUC oral es la quinta parte (1/5) del AUC IV, la fracción biodisponible oral es F=AUC_oral/AUC_IV=1/5=0,2 — es la respuesta correcta.",
+                    "Un AUC oral igual a la mitad del AUC IV daría una biodisponibilidad de 0,5, no correspondiente a 'la quinta parte' del enunciado.",
+                    "Una biodisponibilidad de 1 implicaría que el AUC oral es igual al AUC IV, no una quinta parte de este."
+                ],
+                "fantasma": [
+                    "Un décimo no es una quinta parte.",
+                    "¡Esta! Un quinto es 0,2 justo.",
+                    "La mitad no es una quinta parte.",
+                    "Igual no es una quinta parte."
+                ],
+                "gato": [
+                    "Fijate: no es un décimo.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Dato curioso: no es la mitad.",
+                    "Miau, no es igual."
+                ]
+            }
         },
         {
             "numero": 100,
@@ -4201,7 +4581,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un volumen de distribución de 40 L/kg (3200 L en este paciente) es muchísimo mayor que el agua corporal total (~0,6 L/kg), lo que indica que el fármaco se acumula o concentra en algún tejido específico, y no se distribuye simplemente en el agua corporal — es la respuesta correcta.",
+                    "Un Vd tan alto es opuesto a lo esperado si el fármaco no llegara al líquido intracelular; esa situación daría un Vd bajo, cercano al volumen extracelular.",
+                    "Un Vd tan alto es incompatible con una distribución limitada al compartimento endovascular, que daría un Vd bajo (cercano al volumen plasmático, ~0,04-0,07 L/kg).",
+                    "Una alta tasa metabólica se relaciona con la velocidad de eliminación, no con el volumen de distribución aparente."
+                ],
+                "fantasma": [
+                    "¡Esta! Se esconde en algún tejido.",
+                    "Eso daría un volumen bajo, no este número gigante.",
+                    "Eso daría un volumen bajo también.",
+                    "Eso es otra cosa, la eliminación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se esconde en un tejido.",
+                    "Fijate: sería bajo.",
+                    "Dato curioso: sería bajo.",
+                    "Miau, es otra cosa."
+                ]
+            }
         },
         {
             "numero": 101,

@@ -2318,5 +2318,585 @@
                 "Miau, é de difusão simples."
             ]
         }
+    },
+    {
+        "pergunta": "As drogas que sofrem um extenso primeiro passo hepático têm como consequência uma diminuição em sua",
+        "opcoes": [
+            "Meia-vida beta",
+            "Volume aparente de distribuição",
+            "Fração biodisponível",
+            "Fração não ionizada"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O primeiro passo hepático não é a variável diretamente afetada; a meia-vida beta se relaciona mais com a eliminação sistêmica geral, não especificamente com esse fenômeno de primeiro passo.",
+                "O volume aparente de distribuição não é a variável diretamente diminuída por um extenso primeiro passo hepático.",
+                "Um extenso metabolismo de primeiro passo hepático destrói grande parte do fármaco antes que ele alcance a circulação sistêmica, diminuindo sua fração biodisponível — é a resposta correta.",
+                "A fração não ionizada depende do pKa da droga e do pH do meio, não do fenômeno de primeiro passo hepático."
+            ],
+            "fantasma": [
+                "Isso não é o que diminui aqui.",
+                "Isso não é o que diminui aqui.",
+                "Essa aí! Se perde antes de chegar no sangue.",
+                "Isso depende de outra coisa, o pKa."
+            ],
+            "gato": [
+                "Fijate: não é isso.",
+                "Dado curioso: não é isso.",
+                "Ronronado de aprovação! Se perde antes.",
+                "Miau, é outra coisa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os metabólitos, produzidos por biotransformação da droga original, são frequentemente mais:",
+        "opcoes": [
+            "Lipossolúveis",
+            "Ativos",
+            "Tóxicos",
+            "Polares"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os metabólitos geralmente são MENOS lipossolúveis (mais polares), não mais, já que a biotransformação busca facilitar sua eliminação.",
+                "Os metabólitos são frequentemente MENOS ativos (ou inativos), não mais ativos, embora existam exceções.",
+                "Embora alguns metabólitos possam ser mais tóxicos, isso não é o mais frequente em geral; a característica mais comum é um aumento da polaridade.",
+                "A biotransformação costuma aumentar a polaridade da molécula (tornando-a mais hidrossolúvel), o que facilita sua excreção renal ou biliar — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, menos gordurosos.",
+                "Nem sempre, às vezes é ao contrário.",
+                "Às vezes, mas não é o mais comum.",
+                "Essa aí! Mais solúveis em água para sair."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: nem sempre.",
+                "Miau, não é o mais comum.",
+                "Ronronado de aprovação! Mais polares."
+            ]
+        }
+    },
+    {
+        "pergunta": "O paracetamol é substrato do CYP2E1 e produz um metabólito hepatotóxico, enquanto o álcool é substrato e indutor do mesmo. Portanto, se administrado paracetamol em um paciente com alcoolismo crônico, espera-se:",
+        "opcoes": [
+            "Um aumento dos níveis de paracetamol",
+            "Uma diminuição dos níveis do metabólito do paracetamol",
+            "Um aumento da toxicidade do paracetamol",
+            "Uma diminuição da eliminação metabólica do paracetamol"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O alcoolismo crônico induz o CYP2E1, o que acelera o metabolismo do paracetamol; isso tende a diminuir (não aumentar) os níveis do fármaco original.",
+                "Ao ser induzido o CYP2E1 pelo álcool crônico, se produz MAIS (não menos) metabólito hepatotóxico do paracetamol.",
+                "O alcoolismo crônico induz o CYP2E1, gerando maior quantidade do metabólito hepatotóxico do paracetamol, o que aumenta o risco de hepatotoxicidade — é a resposta correta.",
+                "A indução do CYP2E1 ACELERA (não diminui) a eliminação metabólica do paracetamol, gerando mais metabólito tóxico no processo."
+            ],
+            "fantasma": [
+                "É ao contrário, diminuem os níveis do original.",
+                "É ao contrário, sai mais metabólito.",
+                "Essa aí! Mais metabólito tóxico, mais risco pro fígado.",
+                "É ao contrário, se metaboliza mais rápido."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário.",
+                "Ronronado de aprovação! Mais risco hepático.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "Na cinética de ordem 1, a velocidade de eliminação do fármaco:",
+        "opcoes": [
+            "É inversamente proporcional à concentração plasmática",
+            "É diretamente proporcional à concentração plasmática",
+            "Não se modifica em função da concentração plasmática",
+            "É escassa, porque o sistema de eliminação está saturado"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na cinética de ordem 1, a velocidade de eliminação é DIRETAMENTE (não inversamente) proporcional à concentração plasmática.",
+                "Na cinética de ordem 1, a velocidade de eliminação é diretamente proporcional à concentração plasmática: quanto maior a concentração, maior a velocidade de eliminação — é a resposta correta.",
+                "Na cinética de ordem 1 (diferente da de ordem zero), a velocidade SIM se modifica em função da concentração plasmática.",
+                "A cinética de ordem 1 se caracteriza justamente por NÃO estar saturada (diferente da cinética de ordem zero); o sistema tem capacidade de sobra."
+            ],
+            "fantasma": [
+                "É ao contrário, é direta.",
+                "Essa aí! Mais concentração, mais rápido vai embora.",
+                "Sim se modifica, é ordem 1.",
+                "Isso é da de ordem zero, não essa."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Ronronado de aprovação! Proporcional sempre.",
+                "Dado curioso: sim se modifica.",
+                "Miau, é a outra cinética."
+            ]
+        }
+    },
+    {
+        "pergunta": "A cada quantas meias-vidas se deve administrar uma droga sabendo que a dose de manutenção é de 300 mg e a dose de ataque é de 1023 mg?",
+        "opcoes": [
+            "0,1",
+            "0,5",
+            "1",
+            "1,41"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um intervalo de 0,1 meias-vidas não reproduz a relação dose de ataque/dose de manutenção observada (1023/300 ≈ 3,41).",
+                "A razão entre a dose de ataque (1023 mg) e a de manutenção (300 mg) é 1023/300 ≈ 3,41, que corresponde exatamente ao fator de acumulação esperado quando o intervalo entre doses é de 0,5 meias-vidas — é a resposta correta.",
+                "Um intervalo de 1 meia-vida daria uma razão dose de ataque/manutenção de 2 (já que 1/(1-2^-1)=2), não de 3,41 como observado aqui.",
+                "Um intervalo de 1,41 meias-vidas não corresponde à razão de 3,41 observada entre a dose de ataque e a de manutenção."
+            ],
+            "fantasma": [
+                "Esse número não dá 3,41.",
+                "Essa aí! Essa conta dá exatamente 3,41.",
+                "Esse número não dá 3,41, dá 2.",
+                "Esse número não dá 3,41."
+            ],
+            "gato": [
+                "Fijate: não dá esse número.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: dá 2, não 3,41.",
+                "Miau, não dá esse número."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um esquema de tratamento com a dose de manutenção de um fármaco administrado por via intravenosa e um intervalo entre doses de 0,5 meias-vidas, o quociente pico/vale é próximo de:",
+        "opcoes": [
+            "0,5",
+            "0,75",
+            "1",
+            "1,41"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um quociente pico/vale de 0,5 seria menor que 1, o que não faz sentido (o pico sempre é maior ou igual ao vale).",
+                "Um quociente de 0,75 também seria menor que 1, o que não é possível para essa relação (pico sempre ≥ vale).",
+                "Um quociente de 1 implicaria que não há oscilação (como em infusão contínua), o que não corresponde a um intervalo de dosagem de 0,5 meias-vidas.",
+                "Com um intervalo entre doses de 0,5 meias-vidas, o quociente pico/vale é 2^(0,5) ≈ 1,41 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso seria menos que o vale, não pode ser.",
+                "Isso seria menos que o vale, não pode ser.",
+                "Isso seria sem oscilação, não é o caso.",
+                "Essa aí! Exatamente o que dá a raiz de 2."
+            ],
+            "gato": [
+                "Fijate: não pode ser.",
+                "Dado curioso: não pode ser.",
+                "Miau, não tem oscilação ali.",
+                "Ronronado de aprovação! Raiz de 2."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se a meia-vida de uma droga administrada por via intravenosa e com cinética de ordem 1 é de 16 horas, e o quociente pico/vale, uma vez atingido o platô, é de 2, a cada quantas horas se ingere o fármaco?",
+        "opcoes": [
+            "16hs",
+            "32hs",
+            "64hs",
+            "128hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com um quociente pico/vale de 2 = 2^(τ/t½), obtém-se τ/t½ = 1, ou seja, o intervalo de dosagem é igual a uma meia-vida (16 horas) — é a resposta correta.",
+                "Um intervalo de 32 horas (2 meias-vidas) daria um quociente pico/vale de 2^2=4, não de 2.",
+                "Um intervalo de 64 horas (4 meias-vidas) daria um quociente pico/vale de 2^4=16, não de 2.",
+                "Um intervalo de 128 horas (8 meias-vidas) daria um quociente pico/vale extremamente alto (2^8=256), não de 2."
+            ],
+            "fantasma": [
+                "Essa aí! Uma meia-vida inteira, quociente 2.",
+                "Isso daria um quociente de 4, não 2.",
+                "Isso daria um quociente de 16, não 2.",
+                "Isso daria um quociente enorme, não 2."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Exatamente uma meia-vida.",
+                "Fijate: dá 4.",
+                "Dado curioso: dá 16.",
+                "Miau, dá um montão."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um paciente ingere um fármaco com uma dosagem de 40mg, 1 vez por dia. Uma vez atingido o platô, o fator de acumulação determinado é igual a 3,41. Qual é a meia-vida da droga?",
+        "opcoes": [
+            "12hs",
+            "24hs",
+            "48hs",
+            "96hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com τ=24h, se a meia-vida fosse 12h (τ/t½=2), o fator de acumulação seria 1/(1-2^-2)=1,33, não 3,41.",
+                "Com τ=24h, se a meia-vida fosse 24h (τ/t½=1), o fator de acumulação seria 1/(1-2^-1)=2, não 3,41.",
+                "Com τ=24h (dosagem diária) e um fator de acumulação de 3,41, resolve-se τ/t½=0,5, então a meia-vida é o dobro do intervalo: 48 horas — é a resposta correta.",
+                "Com τ=24h, se a meia-vida fosse 96h (τ/t½=0,25), o fator de acumulação seria 1/(1-2^-0,25)≈5,35, não 3,41."
+            ],
+            "fantasma": [
+                "Essa conta não dá 3,41, dá 1,33.",
+                "Essa conta não dá 3,41, dá 2.",
+                "Essa aí! Essa conta dá exatamente 3,41.",
+                "Essa conta não dá 3,41, dá mais."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: dá 2.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Miau, não dá isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se para uma droga se quer que, no platô, seus valores séricos oscilem entre 100ng/ml e 50ng/ml, então a droga deverá ser administrada a cada:",
+        "opcoes": [
+            "2 meias-vidas",
+            "1 meia-vida",
+            "Mais de 4 meias-vidas",
+            "3 meias-vidas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um intervalo de 2 meias-vidas daria um quociente pico/vale de 2^2=4 (por exemplo, de 200 a 50), não de 2 (100 a 50) como se pede aqui.",
+                "Um quociente pico/vale de 100/50=2 corresponde a 2^(τ/t½)=2, ou seja τ/t½=1: administrar a droga a cada 1 meia-vida — é a resposta correta.",
+                "Um intervalo de mais de 4 meias-vidas daria um quociente pico/vale muito maior que 2 (por exemplo, 2^4=16), gerando uma oscilação muito mais ampla que 100 a 50.",
+                "Um intervalo de 3 meias-vidas daria um quociente pico/vale de 2^3=8, não de 2."
+            ],
+            "fantasma": [
+                "Isso daria um quociente de 4, não 2.",
+                "Essa aí! 100 sobre 50 é 2, e isso é uma meia-vida.",
+                "Isso oscilaria muitíssimo mais.",
+                "Isso daria um quociente de 8, não 2."
+            ],
+            "gato": [
+                "Fijate: dá 4.",
+                "Ronronado de aprovação! Exatamente uma meia-vida.",
+                "Dado curioso: oscila muito mais.",
+                "Miau, dá 8."
+            ]
+        }
+    },
+    {
+        "pergunta": "A meia-vida de eliminação:",
+        "opcoes": [
+            "É o tempo que a droga demora para diminuir seu efeito à metade e depende da distribuição da mesma",
+            "É diretamente proporcional à velocidade de eliminação da droga, em um modelo unicompartimental.",
+            "Não tem um valor único se a droga segue cinética de ordem zero, já que vai depender da concentração de droga no compartimento.",
+            "É dada em unidades de concentração por unidade de tempo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A meia-vida de eliminação se refere à concentração PLASMÁTICA (não ao 'efeito'), e em sua definição básica não se descreve em função da distribuição dessa maneira.",
+                "A meia-vida é INVERSAMENTE proporcional à constante de eliminação (k), e na cinética de ordem 1 a velocidade de eliminação não é uma cifra fixa, mas depende da concentração.",
+                "Na cinética de ordem zero, a meia-vida NÃO tem um valor único nem constante, já que depende da concentração de droga presente a cada momento (diferente da cinética de ordem 1, onde a meia-vida sim é constante) — é a resposta correta.",
+                "A meia-vida se expressa em unidades de TEMPO (por exemplo, horas), não em unidades de concentração por tempo (essas são as unidades da velocidade de eliminação)."
+            ],
+            "fantasma": [
+                "Não é do efeito, é da concentração.",
+                "Não é proporcional assim, é ao contrário.",
+                "Essa aí! Na ordem zero muda conforme quanto tem de droga.",
+                "Se mede em tempo, não nessa unidade."
+            ],
+            "gato": [
+                "Fijate: não é isso.",
+                "Dado curioso: é ao contrário.",
+                "Ronronado de aprovação! Muda com a dose.",
+                "Miau, se mede em tempo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se é requerido que um fármaco, administrado por via intravenosa, com cinética de eliminação de ordem 1, alcance no platô a menor oscilação possível entre seu nível sérico mais alto (pico) e mais baixo (vale) (ou seja, se é requerido fazer o quociente pico/vale o menor possível) então:",
+        "opcoes": [
+            "Deveria aumentar o intervalo interdoses medido em meias-vidas",
+            "Deveria diminuir a meia-vida do fármaco, se possível, mantendo o mesmo regime horário de administração.",
+            "Deveria aumentar a dose do fármaco, se possível, mantendo o mesmo regime horário de administração.",
+            "Deveria administrar-se o fármaco por infusão intravenosa contínua, se possível"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Aumentar o intervalo interdoses em meias-vidas AUMENTARIA (não diminuiria) a oscilação pico/vale, piorando o resultado buscado.",
+                "Diminuir a meia-vida, mantendo o mesmo horário, faria com que esse mesmo intervalo representasse MAIS meias-vidas, o que AUMENTARIA (não diminuiria) o quociente pico/vale.",
+                "Aumentar a dose, mantendo o mesmo regime horário, não modifica o quociente pico/vale (que depende só da relação entre o intervalo e a meia-vida), só muda a magnitude absoluta de pico e vale.",
+                "A infusão intravenosa contínua mantém uma concentração plasmática constante no platô, eliminando completamente a oscilação entre pico e vale — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso piora, não melhora.",
+                "Isso piora, não melhora.",
+                "Isso não muda o quociente, só o tamanho.",
+                "Essa aí! Sem subidas nem descidas, tudo parelho."
+            ],
+            "gato": [
+                "Fijate: piora.",
+                "Dado curioso: piora.",
+                "Miau, não muda o quociente.",
+                "Ronronado de aprovação! Tudo parelho."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um fármaco apresenta uma cinética de eliminação de ordem zero, isso significa que:",
+        "opcoes": [
+            "Se elimina de maneira proporcional à sua concentração no plasma.",
+            "Sua eliminação se acelera quando aumenta sua concentração.",
+            "Se elimina a uma velocidade constante, independentemente da concentração plasmática.",
+            "Sua meia-vida é constante e previsível em qualquer dose."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa descrição corresponde à cinética de ordem 1, não à de ordem zero.",
+                "Na cinética de ordem zero, a eliminação NÃO se acelera com a concentração; ocorre a uma velocidade constante, independentemente dela.",
+                "Na cinética de ordem zero, a droga se elimina a uma velocidade constante (uma quantidade fixa por unidade de tempo), independentemente de sua concentração plasmática, tipicamente porque o sistema de eliminação está saturado — é a resposta correta.",
+                "Na cinética de ordem zero, a meia-vida NÃO é constante; varia conforme a concentração inicial da droga."
+            ],
+            "fantasma": [
+                "Essa é a de ordem 1.",
+                "É ao contrário, vai sempre igual.",
+                "Essa aí! Sempre a mesma quantidade por hora.",
+                "Ali a meia-vida muda, não é fixa."
+            ],
+            "gato": [
+                "Fijate: é a outra cinética.",
+                "Dado curioso: ao contrário.",
+                "Ronronado de aprovação! Sempre o mesmo.",
+                "Miau, não é fixa."
+            ]
+        }
+    },
+    {
+        "pergunta": "O conceito de meia-vida se refere a:",
+        "opcoes": [
+            "O tempo que a concentração plasmática de um fármaco demora para se reduzir à metade desde sua administração.",
+            "O tempo que a concentração plasmática de um fármaco demora para se reduzir à metade desde que alcança seu pico.",
+            "O tempo que um fármaco demora para se eliminar do organismo desde sua administração.",
+            "O tempo que um fármaco demora para se eliminar do organismo desde que alcança seu pico."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A meia-vida de eliminação se define, em sua forma básica, como o tempo que a concentração plasmática demora para se reduzir à metade desde sua administração — é a resposta correta.",
+                "Embora em modelos com fase de distribuição significativa essa distinção importe mais, no âmbito básico deste curso a meia-vida se conta desde a administração, não especificamente desde o pico.",
+                "Esse conceito descreve o tempo de eliminação COMPLETA do fármaco, não o tempo para se reduzir à metade; são conceitos diferentes.",
+                "Esse conceito também descreve a eliminação completa (não a redução à metade), e além disso a mede desde o pico, não desde a administração."
+            ],
+            "fantasma": [
+                "Essa aí! Desde que se toma até a metade.",
+                "Essa é uma versão mais fina, não a básica.",
+                "Isso é se eliminar por completo, não a metade.",
+                "Isso é se eliminar por completo, e desde o pico."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Desde que se toma.",
+                "Fijate: é mais específico.",
+                "Dado curioso: é outro conceito.",
+                "Miau, é outro conceito."
+            ]
+        }
+    },
+    {
+        "pergunta": "A droga P é administrada por via oral na razão de 25 mg/dia, tem meia-vida de 6,3 horas e se elimina quase 100% pela urina sem sofrer nenhuma biotransformação. Em qual dos seguintes casos você acha que será necessário ajustar a dose empregada?",
+        "opcoes": [
+            "Paciente com insuficiência renal.",
+            "Paciente com insuficiência hepática.",
+            "Paciente com esofagite por refluxo em tratamento com omeprazol (um antiácido que se metaboliza em nível do CYP2C19).",
+            "Paciente fumante"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Como a droga P se elimina quase 100% por via renal sem biotransformação, a função renal é o determinante-chave de sua eliminação; em insuficiência renal, a droga vai se acumular e será necessário ajustar a dose — é a resposta correta.",
+                "Como a droga P não sofre biotransformação hepática (se elimina sem se metabolizar), a função hepática não é relevante para sua eliminação.",
+                "Como a droga P não se metaboliza de forma alguma, uma interação com o CYP2C19 (via omeprazol) não afetaria sua farmacocinética.",
+                "O tabaco induz principalmente outras isoformas (como o CYP1A2), mas como a droga P não se biotransforma, nenhuma indução enzimática afetaria sua eliminação."
+            ],
+            "fantasma": [
+                "Essa aí! Se o rim falha, acumula.",
+                "O fígado não participa aqui.",
+                "Essa enzima não toca nessa droga.",
+                "Fumar não muda nada se não tem metabolismo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Tudo depende do rim.",
+                "Fijate: não é o fígado.",
+                "Dado curioso: não a toca.",
+                "Miau, não muda nada."
+            ]
+        }
+    },
+    {
+        "pergunta": "Na cinética de eliminação de ordem 1, a velocidade de eliminação de uma droga é:",
+        "opcoes": [
+            "Constante e independente da concentração plasmática",
+            "Proporcional à concentração plasmática",
+            "Inversamente proporcional à concentração plasmática",
+            "Não previsível em função da concentração plasmática"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na cinética de ordem 1, a velocidade de eliminação SIM depende da concentração plasmática; não é constante nem independente dela (isso descreve a cinética de ordem zero).",
+                "Na cinética de ordem 1, a velocidade de eliminação é proporcional à concentração plasmática: quanto maior a concentração, maior a velocidade de eliminação — é a resposta correta.",
+                "A velocidade de eliminação é DIRETAMENTE (não inversamente) proporcional à concentração plasmática na cinética de ordem 1.",
+                "A cinética de ordem 1 é, justamente, previsível: existe uma relação matemática constante (proporcionalidade direta) entre a concentração e a velocidade de eliminação."
+            ],
+            "fantasma": [
+                "Essa é a de ordem zero.",
+                "Essa aí! Mais concentração, mais rápido vai embora.",
+                "É ao contrário, é direta.",
+                "Sim dá pra prever, é proporcional."
+            ],
+            "gato": [
+                "Fijate: é a outra.",
+                "Ronronado de aprovação! Proporcional sempre.",
+                "Dado curioso: ao contrário.",
+                "Miau, sim se prevê."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um fármaco apresenta um volume de distribuição aparente superior ao volume de água corporal total, pode-se deduzir que:",
+        "opcoes": [
+            "Tem escassa passagem intracelular",
+            "Possui alta ligação a proteínas como a albumina",
+            "Apresenta acumulação em algum compartimento tecidual",
+            "Possui uma eliminação com padrão monocompartimental"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma escassa passagem intracelular se associaria a um volume de distribuição BAIXO (o fármaco ficaria confinado ao espaço extracelular), não alto.",
+                "Uma alta ligação a proteínas plasmáticas tende a se associar a um volume de distribuição BAIXO (o fármaco fica retido no plasma), não alto.",
+                "Um volume de distribuição aparente maior que o volume de água corporal total sugere que o fármaco se acumula ou concentra em algum compartimento tecidual específico, fazendo com que o cálculo matemático 'aparente' supere o volume físico real do corpo — é a resposta correta.",
+                "O padrão de eliminação (mono ou bicompartimental) é um conceito cinético diferente, não uma conclusão que se derive diretamente do tamanho do volume de distribuição."
+            ],
+            "fantasma": [
+                "Isso daria um volume baixo, não alto.",
+                "Isso daria um volume baixo, não alto.",
+                "Essa aí! Se esconde em algum tecido.",
+                "Isso é outro tema, não tem a ver."
+            ],
+            "gato": [
+                "Fijate: seria baixo.",
+                "Dado curioso: seria baixo.",
+                "Ronronado de aprovação! Se esconde em um tecido.",
+                "Miau, não tem a ver."
+            ]
+        }
+    },
+    {
+        "pergunta": "Depois da administração IV, as velocidades iniciais de distribuição do fármaco a diferentes tecidos dependem principalmente de qual dos seguintes parâmetros?",
+        "opcoes": [
+            "Irrigação sanguínea dos tecidos",
+            "Conteúdo de gordura dos tecidos",
+            "Grau de ionização do fármaco nos tecidos",
+            "Transporte ativo do fármaco para fora dos diferentes tipos celulares"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A velocidade inicial com que um fármaco chega a diferentes tecidos após uma administração IV depende principalmente da irrigação sanguínea de cada tecido: os órgãos mais perfundidos (coração, cérebro, rim, fígado) recebem o fármaco primeiro — é a resposta correta.",
+                "O conteúdo de gordura determina mais a distribuição para o tecido adiposo especificamente, não a velocidade inicial geral de distribuição aos diferentes tecidos.",
+                "O grau de ionização afeta mais o equilíbrio final (quanto fármaco chega e permanece) do que a velocidade inicial de chegada aos tecidos.",
+                "O transporte ativo para fora das células não é o determinante principal da velocidade inicial de distribuição tecidual após uma administração IV."
+            ],
+            "fantasma": [
+                "Essa aí! Chega primeiro onde tem mais sangue.",
+                "Isso importa pra gordura, não em geral.",
+                "Isso importa no final, não no início.",
+                "Isso não é o que manda aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Sangue primeiro.",
+                "Fijate: é só pra gordura.",
+                "Dado curioso: é no final.",
+                "Miau, não é isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um modelo bicompartimental, a fase alfa se caracteriza por:",
+        "opcoes": [
+            "Predominância da eliminação sobre a distribuição",
+            "Distribuição rápida para os tecidos periféricos",
+            "Eliminação lenta e constante",
+            "Meia-vida mais longa que a fase beta"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A predominância da eliminação sobre a distribuição descreve a fase beta (terminal), não a fase alfa.",
+                "A fase alfa reflete a distribuição rápida inicial do fármaco do compartimento central para os tecidos periféricos, antes de alcançar o equilíbrio — é a resposta correta.",
+                "A eliminação lenta e constante descreve a fase beta, não a fase alfa (que é a fase de distribuição rápida).",
+                "É ao contrário: a fase alfa tem meia-vida MAIS CURTA que a fase beta, já que a distribuição ocorre mais rápido que a eliminação terminal."
+            ],
+            "fantasma": [
+                "Essa é a fase beta.",
+                "Essa aí! Reparte rápido pros tecidos.",
+                "Essa é a fase beta.",
+                "É ao contrário, a alfa é mais curta."
+            ],
+            "gato": [
+                "Fijate: é a beta.",
+                "Ronronado de aprovação! Reparte rápido.",
+                "Dado curioso: é a beta.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se a AUC de um fármaco após ser administrado por via oral é a quinta parte da AUC posterior à administração por via endovenosa, então sua fração biodisponível oral é:",
+        "opcoes": [
+            "0.1",
+            "0.2",
+            "0.5",
+            "1"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma AUC oral igual a um décimo da AUC IV daria uma biodisponibilidade de 0,1, não correspondente à 'quinta parte' mencionada no enunciado.",
+                "Se a AUC oral é a quinta parte (1/5) da AUC IV, a fração biodisponível oral é F=AUC_oral/AUC_IV=1/5=0,2 — é a resposta correta.",
+                "Uma AUC oral igual à metade da AUC IV daria uma biodisponibilidade de 0,5, não correspondente à 'quinta parte' do enunciado.",
+                "Uma biodisponibilidade de 1 implicaria que a AUC oral é igual à AUC IV, não uma quinta parte dela."
+            ],
+            "fantasma": [
+                "Um décimo não é uma quinta parte.",
+                "Essa aí! Um quinto é 0,2 exato.",
+                "A metade não é uma quinta parte.",
+                "Igual não é uma quinta parte."
+            ],
+            "gato": [
+                "Fijate: não é um décimo.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: não é a metade.",
+                "Miau, não é igual."
+            ]
+        }
+    },
+    {
+        "pergunta": "Durante um estudo de farmacocinética clínica, um fármaco é administrado a um indivíduo de 80kg. Ao calcular o volume aparente de distribuição, encontramos que o mesmo é de 40L/kg (3200 litros nesse indivíduo). Esse volume faz pensar que o fármaco:",
+        "opcoes": [
+            "Se acumula em algum tecido",
+            "Não chega ao líquido intracelular",
+            "Se distribui somente no compartimento endovascular",
+            "Possui altíssima taxa metabólica"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um volume de distribuição de 40 L/kg (3200 L nesse paciente) é muitíssimo maior que a água corporal total (~0,6 L/kg), o que indica que o fármaco se acumula ou concentra em algum tecido específico, e não se distribui simplesmente na água corporal — é a resposta correta.",
+                "Um Vd tão alto é oposto ao esperado se o fármaco não chegasse ao líquido intracelular; essa situação daria um Vd baixo, próximo ao volume extracelular.",
+                "Um Vd tão alto é incompatível com uma distribuição limitada ao compartimento endovascular, que daria um Vd baixo (próximo ao volume plasmático, ~0,04-0,07 L/kg).",
+                "Uma alta taxa metabólica se relaciona com a velocidade de eliminação, não com o volume de distribuição aparente."
+            ],
+            "fantasma": [
+                "Essa aí! Se esconde em algum tecido.",
+                "Isso daria um volume baixo, não esse número gigante.",
+                "Isso daria um volume baixo também.",
+                "Isso é outra coisa, a eliminação."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Se esconde em um tecido.",
+                "Fijate: seria baixo.",
+                "Dado curioso: seria baixo.",
+                "Miau, é outra coisa."
+            ]
+        }
     }
 ]
