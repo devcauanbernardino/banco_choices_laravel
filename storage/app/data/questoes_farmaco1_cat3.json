@@ -5547,7 +5547,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un valor de 0,99mg no reproduce el cálculo del factor de acumulación con τ=24h y t½=46h.",
+                    "Un valor de 1,5mg no reproduce el cálculo correcto con estos datos.",
+                    "Con τ=24h y t½=46h, el factor de acumulación es Rac=1/(1-2^(-24/46))≈3,3; la dosis de carga es Dosis mantenimiento × Rac = 0,75mg × 3,3 ≈ 2,5mg — es la respuesta correcta.",
+                    "Un valor de 1,16mg no reproduce el cálculo correcto con estos datos."
+                ],
+                "fantasma": [
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso.",
+                    "¡Esta! La cuenta con esos datos da justo eso.",
+                    "Esa cuenta no da eso."
+                ],
+                "gato": [
+                    "Fijate: no da eso.",
+                    "Dato curioso: no da eso.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Miau, no da eso."
+                ]
+            }
         },
         {
             "numero": 122,
@@ -5573,7 +5593,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un valor de 161,7mg no reproduce el cálculo correcto.",
+                    "La dosis IV diaria total es 150mg×6=900mg/día (cada 4h en 24h); la dosis oral diaria equivalente es 900/0,8=1125mg/día, repartida en 6 tomas de 4h: 1125/6=187,5mg por dosis — es la respuesta correcta.",
+                    "Un valor de 175mg no reproduce el cálculo correcto con estos datos.",
+                    "Un valor de 120mg no reproduce el cálculo correcto con estos datos."
+                ],
+                "fantasma": [
+                    "Esa cuenta no da eso.",
+                    "¡Esta! Multiplicá, dividí por la biodisponibilidad, y repartí.",
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso."
+                ],
+                "gato": [
+                    "Fijate: no da eso.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Dato curioso: no da eso.",
+                    "Miau, no da eso."
+                ]
+            }
         },
         {
             "numero": 123,
@@ -5598,8 +5638,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un factor de 1,33 corresponde a un intervalo de 2 vidas medias (Rac=1/(1-2^-2)=1,33), no a 1 vida media.",
+                    "Con un intervalo igual a 1 vida media (τ/t½=1), el factor de acumulación es Rac=1/(1-2^-1)=1/0,5=2 — es la respuesta correcta.",
+                    "Un factor de 3,41 corresponde a un intervalo de 0,5 vidas medias (τ/t½=0,5), no a 1 vida media completa.",
+                    "Un factor de 5 no corresponde a ningún intervalo simple relacionado con 1 vida media."
+                ],
+                "fantasma": [
+                    "Ese número es de dos vidas medias.",
+                    "¡Esta! Justo lo que da con una vida media entera.",
+                    "Ese número es de media vida media, no de una entera.",
+                    "Ese número no corresponde acá."
+                ],
+                "gato": [
+                    "Fijate: es de otro intervalo.",
+                    "¡Ronroneo de aprobación! Una vida media completa.",
+                    "Dato curioso: es de la mitad.",
+                    "Miau, no corresponde."
+                ]
+            }
         },
         {
             "numero": 124,
@@ -5624,8 +5684,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un Vd de 30L es mucho mayor que el volumen plasmático solo (~3L), por lo que esta opción subestima la distribución real de la teofilina.",
+                    "Un Vd de aproximadamente 30L es cercano al volumen de agua corporal total (~42L en un adulto de 70kg), lo cual es consistente con que la teofilina se distribuya de forma relativamente homogénea en el agua corporal — es la respuesta correcta.",
+                    "No existe evidencia farmacológica estándar de que la teofilina se acumule específicamente en tejido sinovial.",
+                    "Un Vd de solo 30L (menos de 0,5 L/kg) es demasiado bajo para indicar secuestro en grasa; fármacos con alta liposolubilidad y secuestro graso presentan Vd mucho mayores (frecuentemente cientos de litros)."
+                ],
+                "fantasma": [
+                    "Eso sería mucho menos volumen.",
+                    "¡Esta! Se reparte por toda el agua del cuerpo.",
+                    "Eso no tiene que ver con esta droga.",
+                    "Para grasa, el volumen sería mucho más grande."
+                ],
+                "gato": [
+                    "Fijate: sería menos.",
+                    "¡Ronroneo de aprobación! Toda el agua del cuerpo.",
+                    "Dato curioso: no tiene que ver.",
+                    "Miau, sería mucho más grande."
+                ]
+            }
         },
         {
             "numero": 125,
@@ -5651,7 +5731,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Con τ=24h (1 vez al día) y cociente pico/valle=4=2^(τ/t½), se obtiene τ/t½=2, por lo que t½=24h/2=12h — es la respuesta correcta.",
+                    "Un valor de 96hs no reproduce el cálculo correcto con estos datos.",
+                    "Un valor de 48hs no reproduce el cálculo correcto con estos datos.",
+                    "Un valor de 24hs no reproduce el cálculo correcto con estos datos."
+                ],
+                "fantasma": [
+                    "¡Esta! Con esa vida media el cociente da 4.",
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Fijate: no da eso.",
+                    "Dato curioso: no da eso.",
+                    "Miau, no da eso."
+                ]
+            }
         },
         {
             "numero": 126,
@@ -5677,7 +5777,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un valor de 0,5 L/h subestima ampliamente el clearance calculado con estos datos.",
+                    "Un valor de 2 L/h no reproduce el cálculo correcto con estos datos.",
+                    "Usando C(t)=C0×e^(-kt): 10=80×e^-k → k=ln(8)≈2,08 h⁻¹; el clearance es CL=k×Vd=2,08×4L≈8,3 L/h — es la respuesta correcta.",
+                    "Un valor de 3,5 L/h no reproduce el cálculo correcto con estos datos."
+                ],
+                "fantasma": [
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso.",
+                    "¡Esta! Sale justo de la fórmula de eliminación.",
+                    "Esa cuenta no da eso."
+                ],
+                "gato": [
+                    "Fijate: no da eso.",
+                    "Dato curioso: no da eso.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Miau, no da eso."
+                ]
+            }
         },
         {
             "numero": 127,
@@ -5702,8 +5822,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un Vd tan alto (3 L/kg, mucho mayor que el agua corporal total) es incompatible con una distribución limitada solo al plasma.",
+                    "Un Vd elevado como 3 L/kg indica que el fármaco se distribuye ampliamente en los tejidos, superando ampliamente el volumen físico de agua corporal — es la respuesta correcta.",
+                    "El volumen de distribución no predice directamente la velocidad de eliminación renal; son parámetros farmacocinéticos independientes.",
+                    "El volumen de distribución tampoco predice directamente el clearance hepático; son parámetros independientes entre sí."
+                ],
+                "fantasma": [
+                    "Eso sería quedarse solo en la sangre, no es esto.",
+                    "¡Esta! Se reparte mucho por los tejidos.",
+                    "Eso es otra cosa, no tiene que ver con el volumen.",
+                    "Eso es otra cosa, no tiene que ver con el volumen."
+                ],
+                "gato": [
+                    "Fijate: sería solo sangre.",
+                    "¡Ronroneo de aprobación! Se reparte por todos lados.",
+                    "Dato curioso: no tiene que ver.",
+                    "Miau, no tiene que ver."
+                ]
+            }
         },
         {
             "numero": 128,
@@ -5729,7 +5869,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La fase alfa refleja principalmente la distribución, no exclusivamente la eliminación.",
+                    "Esta opción describe la definición de pKa, sin relación con el modelo bicompartimental; es un distractor fuera de contexto.",
+                    "El modelo bicompartimental permite estudiar tanto la distribución (fase alfa) como la eliminación (fase beta) de una droga.",
+                    "La vida media beta (fase terminal, de eliminación) es la que más se afecta ante cambios en el clearance hepático o renal, mientras que la fase alfa (dominada por la distribución/perfusión tisular) se mantiene prácticamente inalterada ante estos cambios — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa es más de reparto, no solo eliminación.",
+                    "Eso es de otra cosa, el pKa.",
+                    "Se pueden estudiar las dos cosas.",
+                    "¡Esta! La beta se afecta, la alfa casi no."
+                ],
+                "gato": [
+                    "Fijate: es más de reparto.",
+                    "Dato curioso: es de otra cosa.",
+                    "Miau, se estudian las dos.",
+                    "¡Ronroneo de aprobación! La beta es la sensible."
+                ]
+            }
         },
         {
             "numero": 129,
@@ -5755,7 +5915,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un valor de 60mg no reproduce el cálculo Dosis=180/0,5=360mg.",
+                    "Un valor de 30mg no reproduce el cálculo correcto con estos datos.",
+                    "Un valor de 90mg no reproduce el cálculo correcto con estos datos.",
+                    "La dosis administrada se calcula como Cantidad sistémica/F=180mg/0,5=360mg — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso.",
+                    "¡Esta! 180 dividido por 0,5, da 360."
+                ],
+                "gato": [
+                    "Fijate: no da eso.",
+                    "Dato curioso: no da eso.",
+                    "Miau, no da eso.",
+                    "¡Ronroneo de aprobación! La cuenta cierra."
+                ]
+            }
         },
         {
             "numero": 130,
@@ -5781,7 +5961,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "En orden 0, el PORCENTAJE eliminado por unidad de tiempo NO es constante (esa es la característica de orden 1); en orden 0 lo constante es la cantidad absoluta eliminada.",
+                    "Un gráfico semilogarítmico con una recta de pendiente negativa es característico de la cinética de orden 1, no de la de orden 0.",
+                    "La velocidad de eliminación en cinética de orden 0 es constante e independiente de la cantidad de droga presente en el compartimiento, precisamente porque el mecanismo de eliminación está saturado — es la respuesta correcta.",
+                    "En un sistema ya saturado (orden 0), aumentar aún más la dosis mantiene o profundiza la saturación; no produce un cambio hacia orden 1."
+                ],
+                "fantasma": [
+                    "Eso no es constante en orden cero, es el porcentaje.",
+                    "Esa recta es de la otra cinética.",
+                    "¡Esta! Siempre la misma cantidad, no importa cuánta haya.",
+                    "Es al revés, seguiría saturado."
+                ],
+                "gato": [
+                    "Fijate: no es así.",
+                    "Dato curioso: es de la otra.",
+                    "¡Ronroneo de aprobación! Siempre la misma cantidad.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 131,
@@ -5807,7 +6007,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un valor de 100mg/dL ignoraría por completo la eliminación transcurrida en las 12 horas.",
+                    "Un valor de 50mg/dL corresponde a solo 1 vida media (6h), no a las 12h (2 vidas medias) del enunciado.",
+                    "Tras 12 horas (2 vidas medias con t½=6h), la concentración se reduce a 100×(1/2)²=25mg/dL — es la respuesta correcta.",
+                    "Un valor de 12,5mg/dL correspondería a 3 vidas medias (18h), no a las 12h del enunciado."
+                ],
+                "fantasma": [
+                    "Eso sería como si no pasara el tiempo.",
+                    "Esa es después de solo una vida media.",
+                    "¡Esta! Dos vidas medias, un cuarto de lo que había.",
+                    "Esa es después de tres vidas medias."
+                ],
+                "gato": [
+                    "Fijate: no pasó el tiempo.",
+                    "Dato curioso: solo una vida media.",
+                    "¡Ronroneo de aprobación! Un cuarto exacto.",
+                    "Miau, son tres vidas medias."
+                ]
+            }
         },
         {
             "numero": 132,
@@ -5833,7 +6053,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Después de 1 vida media se elimina el 50%, no el 75%.",
+                    "Después de 2 vidas medias se elimina 1-(1/2)²=0,75, es decir el 75% — es la respuesta correcta.",
+                    "Después de 3 vidas medias se elimina el 87,5%, superando ya el 75% buscado.",
+                    "Después de 4 vidas medias se elimina el 93,75%, muy por encima del 75% buscado."
+                ],
+                "fantasma": [
+                    "Ahí solo se fue la mitad.",
+                    "¡Esta! Dos vidas medias, justo 75%.",
+                    "Ahí ya se fue de más.",
+                    "Ahí ya se fue mucho más."
+                ],
+                "gato": [
+                    "Fijate: solo la mitad.",
+                    "¡Ronroneo de aprobación! Justo 75%.",
+                    "Dato curioso: ya se pasó.",
+                    "Miau, mucho más."
+                ]
+            }
         },
         {
             "numero": 133,
@@ -5859,7 +6099,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte1"
+            "origem_seccion": "farmacocinetica_ii_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un valor de 3mg/L es la concentración medida a las 4 horas, no la concentración esperada en estado estable (que se alcanza después de varias vidas medias).",
+                    "A las 4 horas (2 vidas medias, t½=2h), la concentración alcanzada es el 75% de la Css: C(4h)=Css×(1-(1/2)²)=Css×0,75; como C(4h)=3mg/L, entonces Css=3/0,75=4mg/L — es la respuesta correcta.",
+                    "Un valor de 6mg/L no reproduce el cálculo correcto con estos datos.",
+                    "Un valor de 9,9mg/L no reproduce el cálculo correcto con estos datos."
+                ],
+                "fantasma": [
+                    "Ese es el valor de a las 4 horas, no el final.",
+                    "¡Esta! Con esa cuenta da justo 4.",
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso."
+                ],
+                "gato": [
+                    "Fijate: es el valor de antes.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Dato curioso: no da eso.",
+                    "Miau, no da eso."
+                ]
+            }
         },
         {
             "numero": 134,
@@ -5885,7 +6145,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "La concentración obtenida luego de una vida media ya incluye eliminación (y posiblemente distribución) parcial, dando un cálculo de Vd incorrecto si se usa directamente.",
+                    "El volumen de distribución se calcula como Dosis/Concentración extrapolada a tiempo cero (C0), que representa la concentración teórica inmediatamente después de la administración, antes de que ocurra eliminación — es la respuesta correcta.",
+                    "La vida media, por sí sola, no es el denominador de esta fórmula; Vd se calcula con una concentración, no con un tiempo.",
+                    "La vida media en estado estacionario tampoco es el denominador correcto para calcular Vd, que requiere una concentración, no un tiempo."
+                ],
+                "fantasma": [
+                    "Ese valor ya viene con algo eliminado.",
+                    "¡Esta! El valor teórico justo al empezar.",
+                    "Eso es un tiempo, no una concentración.",
+                    "Eso es un tiempo, no una concentración."
+                ],
+                "gato": [
+                    "Fijate: ya tiene algo eliminado.",
+                    "¡Ronroneo de aprobación! El valor inicial teórico.",
+                    "Dato curioso: es un tiempo.",
+                    "Miau, es un tiempo."
+                ]
+            }
         },
         {
             "numero": 135,
@@ -5911,7 +6191,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "El tamaño de una dosis individual respecto a la dosis de carga no es el factor que determina la acumulación por dosis repetidas en el tiempo.",
+                    "Cuando el intervalo entre dosis es menor a 4 vidas medias, cada nueva dosis se administra antes de que la anterior se elimine por completo, generando acumulación progresiva hasta alcanzar la meseta — es la respuesta correcta.",
+                    "Un volumen de distribución bajo no es, por sí solo, el factor que determina la acumulación por dosis repetidas (que depende de τ y t½, no de Vd).",
+                    "La acumulación puede ocurrir con cualquier vía de administración, siempre que el intervalo sea corto respecto a la vida media; no es exclusiva de la vía intravenosa."
+                ],
+                "fantasma": [
+                    "Eso no es lo que decide la acumulación.",
+                    "¡Esta! Si el intervalo es corto, se va acumulando.",
+                    "Eso no decide la acumulación por sí solo.",
+                    "Puede pasar con cualquier vía."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "¡Ronroneo de aprobación! Intervalo corto, se acumula.",
+                    "Dato curioso: no es por sí solo.",
+                    "Miau, cualquier vía."
+                ]
+            }
         },
         {
             "numero": 136,
@@ -5936,8 +6236,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "La cinética de orden 1 se caracteriza precisamente porque el porcentaje (fracción) de droga eliminada por unidad de tiempo permanece constante, sin importar la concentración — es la respuesta correcta.",
+                    "Una cantidad constante eliminada por unidad de tiempo describe a la cinética de orden 0, no a la de orden 1.",
+                    "En orden 1, el porcentaje eliminado por unidad de tiempo permanece CONSTANTE al variar la dosis, no aumenta.",
+                    "En orden 1, la velocidad de eliminación AUMENTA al aumentar la concentración (no al disminuirla); esta opción invierte la relación."
+                ],
+                "fantasma": [
+                    "¡Esta! El porcentaje siempre es el mismo.",
+                    "Esa es la otra cinética, cantidad fija.",
+                    "El porcentaje se mantiene igual, no sube.",
+                    "Es al revés, sube con más concentración."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Mismo porcentaje siempre.",
+                    "Fijate: es la otra.",
+                    "Dato curioso: se mantiene igual.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 137,
@@ -5963,7 +6283,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "Un valor de 6 L/h no se corresponde de forma exacta con el cálculo estándar de clearance mediante la fórmula CL=k×Vd para estos datos.",
+                    "Un valor de 1 L/h subestima el clearance esperado según la caída de concentración observada.",
+                    "Un valor de 4 L/h se aproxima parcialmente al resultado esperado, aunque no coincide exactamente con el cálculo formal.",
+                    "Usando C(t)=C0×e^(-kt): 20=40×e^-k → k=ln(2)≈0,693 h⁻¹; el clearance es CL=k×Vd≈0,693×4L≈2,8 L/h, el valor más cercano entre las opciones disponibles."
+                ],
+                "fantasma": [
+                    "Ese no es el número que sale de la cuenta.",
+                    "Ese queda corto.",
+                    "Ese se acerca, pero no es exacto.",
+                    "La cuenta da algo cercano a este valor."
+                ],
+                "gato": [
+                    "Fijate: no es ese.",
+                    "Dato curioso: queda corto.",
+                    "Miau, se acerca pero no es exacto.",
+                    "Dato curioso: el más cercano a la cuenta."
+                ]
+            }
         },
         {
             "numero": 138,
@@ -5988,8 +6328,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "La vida media constante e independiente de la concentración es precisamente la característica distintiva de la cinética de orden 1 — es la respuesta correcta.",
+                    "Una eliminación constante en cantidad por unidad de tiempo describe a la cinética de orden 0, no a la de orden 1.",
+                    "La saturación del metabolismo hepático es característica de la cinética de orden 0 (que surge precisamente cuando el sistema se satura), no de la de orden 1.",
+                    "La dependencia de transportadores activos no es una característica definitoria de la cinética de orden 1 en particular."
+                ],
+                "fantasma": [
+                    "¡Esta! Vida media fija, no cambia.",
+                    "Esa es la otra cinética, cantidad fija.",
+                    "Eso es de la otra cinética, la que se satura.",
+                    "Eso no define a esta cinética en particular."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Siempre la misma vida media.",
+                    "Fijate: es la otra.",
+                    "Dato curioso: es de la otra.",
+                    "Miau, no es definitorio."
+                ]
+            }
         },
         {
             "numero": 139,
@@ -6014,8 +6374,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "La dosis administrada se calcula como Cantidad sistémica/F=60mg/0,5=120mg — es la respuesta correcta.",
+                    "Un valor de 360mg no reproduce el cálculo correcto con estos datos.",
+                    "Un valor de 300mg no reproduce el cálculo correcto con estos datos.",
+                    "Un valor de 30mg no reproduce el cálculo correcto con estos datos."
+                ],
+                "fantasma": [
+                    "¡Esta! 60 dividido por 0,5, da 120.",
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso.",
+                    "Esa cuenta no da eso."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Fijate: no da eso.",
+                    "Dato curioso: no da eso.",
+                    "Miau, no da eso."
+                ]
+            }
         },
         {
             "numero": 140,
@@ -6041,7 +6421,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "El modelo bicompartimental permite estudiar tanto la eliminación como la distribución de la droga (fases beta y alfa respectivamente).",
+                    "Los fenómenos de acumulación por dosis repetidas dependen principalmente de la relación entre el intervalo interdosis y la vida media terminal (fase beta), no exclusivamente de la fase alfa.",
+                    "Esta opción invierte los roles: es la vida media BETA (no la alfa) la que se ve más afectada ante cambios en el clearance hepático o renal.",
+                    "La vida media alfa corresponde al tiempo que tarda la concentración plasmática en reducirse a la mitad en la fase inicial, dominada principalmente por la distribución del fármaco hacia los tejidos periféricos, aunque también incluye algo de eliminación — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Se pueden estudiar las dos cosas.",
+                    "No depende solo de esa fase.",
+                    "Le diste vuelta a los roles.",
+                    "¡Esta! Ahí manda el reparto a los tejidos."
+                ],
+                "gato": [
+                    "Fijate: se estudian las dos.",
+                    "Dato curioso: no es solo esa.",
+                    "Miau, al revés.",
+                    "¡Ronroneo de aprobación! Manda el reparto."
+                ]
+            }
         },
         {
             "numero": 141,
