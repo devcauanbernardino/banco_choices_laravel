@@ -2898,5 +2898,585 @@
                 "Miau, é outra coisa."
             ]
         }
+    },
+    {
+        "pergunta": "Um fármaco, administrado em uma dose única de 100mg, dá lugar a um pico de concentração plasmática de 20µg/ml. O volume aparente de distribuição é (assumindo distribuição rápida e eliminação insignificante antes de medir o nível plasmático máximo) de:",
+        "opcoes": [
+            "0.5 L",
+            "1L",
+            "2L",
+            "5L"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um volume de 0,5 L não é consistente com os dados: Vd = Dose/Concentração = 100mg/20µg/ml = 100mg/20mg/L = 5L, não 0,5L.",
+                "Um volume de 1L não reproduz o cálculo correto de Vd=Dose/Concentração com esses dados.",
+                "Um volume de 2L não reproduz o cálculo correto de Vd=Dose/Concentração com esses dados.",
+                "O volume aparente de distribuição se calcula como Dose/Concentração plasmática = 100mg / 20µg/ml; como 20µg/ml equivale a 20mg/L, Vd = 100mg/20mg/L = 5L — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Essa aí! Dose sobre concentração, dá 5."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: não dá isso.",
+                "Miau, não dá isso.",
+                "Ronronado de aprovação! A conta fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "O fator de acumulação depende exclusivamente de:",
+        "opcoes": [
+            "O intervalo interdoses e a meia-vida",
+            "Dose de manutenção e a meia-vida",
+            "O intervalo interdoses e o mecanismo de absorção",
+            "A via de administração e o clearance"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O fator de acumulação (Rac=1/(1-2^(-τ/t½))) depende exclusivamente do intervalo interdoses (τ) e da meia-vida (t½), sem que o mecanismo de absorção específico altere essa relação — é a resposta correta.",
+                "A dose de manutenção não faz parte da fórmula do fator de acumulação, que depende só de τ e t½.",
+                "O mecanismo de absorção não faz parte da fórmula do fator de acumulação; o que sim importa é a meia-vida, não como o fármaco é absorvido.",
+                "Nem a via de administração nem o clearance fazem parte diretamente da fórmula do fator de acumulação, que depende só de τ e t½."
+            ],
+            "fantasma": [
+                "Essa aí! Só o intervalo e a meia-vida.",
+                "Essa não entra na fórmula.",
+                "Isso não entra, é a meia-vida que importa.",
+                "Essas duas não entram nessa fórmula."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Os dois de sempre.",
+                "Fijate: não entra.",
+                "Dado curioso: não é isso.",
+                "Miau, não entram essas."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um fármaco que possui meia-vida de 12 horas é administrado com um padrão de dosagem de 200mg a cada 6hs por via oral. Considerando que se decide aumentar a dose para 400mg a cada 6hs, o tempo que se levará para alcançar uma nova concentração plasmática em estado estacionário é:",
+        "opcoes": [
+            "6h",
+            "12 h",
+            "24 h",
+            "50 h"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tempo para alcançar um novo estado estacionário depende unicamente da meia-vida, não da dose; 6 horas é muito pouco tempo, equivalente a apenas meia meia-vida.",
+                "12 horas equivale a apenas 1 meia-vida, insuficiente para considerar alcançado um novo platô (que requer aproximadamente 4-5 meias-vidas).",
+                "24 horas equivale a apenas 2 meias-vidas, ainda insuficiente para alcançar um platô praticamente completo.",
+                "O tempo para alcançar um novo estado estacionário depende só da meia-vida (não da dose administrada), e são necessárias aproximadamente 4-5 meias-vidas; com t½=12h, isso equivale a umas 50 horas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é muito pouco tempo.",
+                "Isso é muito pouco tempo.",
+                "Ainda falta um pouco.",
+                "Essa aí! Com essa meia-vida, demora isso."
+            ],
+            "gato": [
+                "Fijate: muito pouco.",
+                "Dado curioso: muito pouco.",
+                "Miau, ainda falta.",
+                "Ronronado de aprovação! Exatamente o que demora."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um fármaco que possui meia-vida de 12 horas é administrado com um padrão de dosagem de 200 mg a cada 6 hs por via oral. Considerando que se decide aumentar a dose para 400 mg a cada 6 horas, o tempo que se levará para alcançar uma nova concentração plasmática em estado estacionário é:",
+        "opcoes": [
+            "12 hs",
+            "6 hs",
+            "24 hs",
+            "48 hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "12 horas equivale a apenas 1 meia-vida, insuficiente para considerar alcançado um novo platô.",
+                "6 horas é muito pouco tempo, equivalente a apenas meia meia-vida.",
+                "24 horas equivale a apenas 2 meias-vidas, ainda insuficiente para um platô praticamente completo.",
+                "O tempo para alcançar um novo estado estacionário depende só da meia-vida (não da dose administrada, que aqui mudou de 200 para 400mg); são necessárias aproximadamente 4 meias-vidas para considerá-la praticamente alcançada, e com t½=12h isso equivale a umas 48 horas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ainda falta um pouco.",
+                "Isso é muito pouco tempo.",
+                "Ainda falta um pouco.",
+                "Essa aí! Com essa meia-vida, demora isso."
+            ],
+            "gato": [
+                "Miau, ainda falta.",
+                "Fijate: muito pouco.",
+                "Dado curioso: ainda falta.",
+                "Ronronado de aprovação! Exatamente o que demora."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma droga administrada por via oral, no platô, alcança uma concentração de 100 mg. Considerando que com a posologia utilizada se alcança um fator de acumulação de 2 e que tem uma biodisponibilidade de 10%, qual será a dose de manutenção?",
+        "opcoes": [
+            "250 mg",
+            "50 mg",
+            "500 mg",
+            "100 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 250mg não reproduz a relação Dose=Platô/(F×Rac)=100/(0,1×2)=500mg.",
+                "Um valor de 50mg não reproduz o cálculo correto com esses dados.",
+                "Aplicando Dose=Platô/(F×Rac), onde Platô=100mg, F=0,1 e Rac=2: Dose=100/(0,1×2)=100/0,2=500mg — é a resposta correta.",
+                "Um valor de 100mg não reproduz o cálculo correto: seria ignorar tanto a biodisponibilidade reduzida quanto o fator de acumulação."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Essa aí! 100 dividido por 0,1 vezes 2, dá 500.",
+                "Essa conta não dá isso."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: não dá isso.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Miau, não dá isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas com cinética de eliminação de ordem 0 apresentam:",
+        "opcoes": [
+            "Um mecanismo de eliminação não saturável e uma meia-vida dependente da dose administrada",
+            "Um mecanismo de eliminação saturável e uma meia-vida dependente da dose administrada",
+            "Um mecanismo de eliminação não saturável e uma meia-vida independente da dose administrada",
+            "Um mecanismo de eliminação saturável e uma meia-vida independente da dose administrada"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa opção mistura características de ambas as cinéticas de forma incoerente: um mecanismo não saturável não é próprio da cinética de ordem 0.",
+                "A cinética de ordem zero se caracteriza por um mecanismo de eliminação saturável (o sistema alcança sua capacidade máxima) e, como consequência, uma meia-vida que varia conforme a dose administrada (quanto maior a dose, maior o tempo para se reduzir à metade) — é a resposta correta.",
+                "Essa descrição (não saturável + meia-vida independente da dose) corresponde na verdade à cinética de ordem 1, não à de ordem zero.",
+                "Essa opção combina 'saturável' (correto para ordem zero) com 'meia-vida independente' (que na verdade descreve a cinética de ordem 1), uma combinação incoerente."
+            ],
+            "fantasma": [
+                "Essa mistura mal as duas coisas.",
+                "Essa aí! Satura e a meia-vida muda com a dose.",
+                "Essa é a descrição da outra cinética.",
+                "Essa mistura mal as duas coisas."
+            ],
+            "gato": [
+                "Fijate: mistura mal.",
+                "Ronronado de aprovação! Saturável e variável.",
+                "Dado curioso: é a outra.",
+                "Miau, mistura mal."
+            ]
+        }
+    },
+    {
+        "pergunta": "Quantas meias-vidas deverão transcorrer para que se elimine 85% de uma droga?",
+        "opcoes": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Depois de 1 meia-vida se elimina 50% da droga, não 85%.",
+                "Depois de 2 meias-vidas se elimina 75% da droga, ainda abaixo dos 85%.",
+                "Depois de 3 meias-vidas se elimina 87,5% da droga (1-(1/2)^3=0,875), o valor mais próximo dos 85% buscados entre as opções — é a resposta correta.",
+                "Depois de 4 meias-vidas se elimina 93,75% da droga, superando já amplamente os 85% buscados."
+            ],
+            "fantasma": [
+                "Ali só foi embora a metade.",
+                "Ali foi 75%, ainda não.",
+                "Essa aí! Ali já foi quase 87,5%.",
+                "Ali já foi mais que 85%."
+            ],
+            "gato": [
+                "Fijate: só a metade.",
+                "Dado curioso: 75%, não chega.",
+                "Ronronado de aprovação! O mais próximo.",
+                "Miau, já passou."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um fármaco tem uma fração biodisponível de 0.5 e a dose administrada é de 200 mg, a quantidade de droga que chega à circulação sistêmica é:",
+        "opcoes": [
+            "50 mg",
+            "100 mg",
+            "150 mg",
+            "200 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 50mg não corresponde a F×Dose=0,5×200mg=100mg.",
+                "A quantidade que chega à circulação sistêmica é F×Dose=0,5×200mg=100mg — é a resposta correta.",
+                "Um valor de 150mg não corresponde ao cálculo F×Dose com esses dados.",
+                "Um valor de 200mg ignoraria completamente a fração biodisponível, tratando como se F=1 (100%)."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa aí! Metade de 200 é 100.",
+                "Essa conta não dá isso.",
+                "Isso seria ignorar a biodisponibilidade."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Ronronado de aprovação! A metade exata.",
+                "Dado curioso: não dá isso.",
+                "Miau, ignora a biodisponibilidade."
+            ]
+        }
+    },
+    {
+        "pergunta": "Assinale a opção correta:",
+        "opcoes": [
+            "A cinética de ordem 1 se satura, a velocidade de eliminação depende da dose e a meia-vida é constante",
+            "A cinética de ordem 0 se satura, a velocidade de eliminação depende da dose e a meia-vida também, o melhor exemplo é o metabolismo do etanol",
+            "A cinética de ordem 1 é insaturável, a velocidade de eliminação é proporcional à dose e a meia-vida depende da dose administrada",
+            "A cinética de ordem 0 se satura, a velocidade de eliminação é constante e a meia-vida depende da dose administrada"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cinética de ordem 1 NÃO se satura (isso é próprio da de ordem zero); essa opção combina um traço falso com traços certos, então no conjunto está incorreta.",
+                "Na cinética de ordem zero, a VELOCIDADE de eliminação é constante (não dependente da dose); é a meia-vida que varia com a dose, não a velocidade.",
+                "Na cinética de ordem 1, a meia-vida é constante, não dependente da dose (esse traço é próprio da cinética de ordem zero).",
+                "A cinética de ordem zero se satura, sua velocidade de eliminação é constante (não varia com a concentração) e sua meia-vida sim depende da dose administrada; o metabolismo do etanol é o exemplo clássico desse tipo de cinética — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa não satura, está errada aí.",
+                "A velocidade é fixa, não varia.",
+                "Essa meia-vida é fixa, não varia.",
+                "Essa aí! Tudo bate, e o etanol é o exemplo de sempre."
+            ],
+            "gato": [
+                "Fijate: não satura.",
+                "Dado curioso: a velocidade é fixa.",
+                "Miau, a meia-vida é fixa.",
+                "Ronronado de aprovação! Tudo fecha, com etanol e tudo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Quanto tempo deve passar para que se elimine 75% de uma droga cuja meia-vida é de 12 horas?",
+        "opcoes": [
+            "6 hs",
+            "12 hs",
+            "24 hs",
+            "36 hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Depois de 6 horas (meia meia-vida) se elimina bem menos que 75%.",
+                "Depois de 12 horas (1 meia-vida) se elimina 50%, não 75%.",
+                "Depois de 24 horas (2 meias-vidas) se elimina 75% (1-(1/2)^2=0,75) — é a resposta correta.",
+                "Depois de 36 horas (3 meias-vidas) se elimina 87,5%, superando já os 75% buscados."
+            ],
+            "fantasma": [
+                "Ali foi muito pouquinho.",
+                "Ali só foi a metade.",
+                "Essa aí! Duas meias-vidas, exatamente 75%.",
+                "Ali já passou demais."
+            ],
+            "gato": [
+                "Fijate: muito pouco.",
+                "Dado curioso: só a metade.",
+                "Ronronado de aprovação! Exatamente 75%.",
+                "Miau, já passou."
+            ]
+        }
+    },
+    {
+        "pergunta": "O fator de acumulação depende de:",
+        "opcoes": [
+            "A biodisponibilidade e o volume de distribuição",
+            "O intervalo interdoses e a meia-vida",
+            "A dose administrada e o metabolismo hepático",
+            "A velocidade de eliminação e a ligação a proteínas plasmáticas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A biodisponibilidade e o volume de distribuição não fazem parte da fórmula do fator de acumulação.",
+                "O fator de acumulação (Rac=1/(1-2^(-τ/t½))) depende exclusivamente do intervalo interdoses (τ) e da meia-vida (t½) — é a resposta correta.",
+                "A dose administrada e o metabolismo hepático (além de sua influência sobre a meia-vida) não fazem parte diretamente da fórmula do fator de acumulação.",
+                "A velocidade de eliminação e a ligação a proteínas plasmáticas não fazem parte diretamente da fórmula do fator de acumulação."
+            ],
+            "fantasma": [
+                "Essas não entram na fórmula.",
+                "Essa aí! Só o intervalo e a meia-vida.",
+                "Essas não entram diretamente.",
+                "Essas não entram diretamente."
+            ],
+            "gato": [
+                "Fijate: não entram.",
+                "Ronronado de aprovação! Os dois de sempre.",
+                "Dado curioso: não entram.",
+                "Miau, não entram."
+            ]
+        }
+    },
+    {
+        "pergunta": "A meia-vida de uma droga administrada por via I.V. é 4 hs. Uma vez alcançado o platô, o quociente pico/vale é de 8. A cada quantas horas essa droga é administrada?",
+        "opcoes": [
+            "2",
+            "4",
+            "12",
+            "16"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um intervalo de 2 horas (τ/t½=0,5) daria um quociente pico/vale de 2^0,5≈1,41, não de 8.",
+                "Um intervalo de 4 horas (τ/t½=1) daria um quociente pico/vale de 2^1=2, não de 8.",
+                "Com um quociente pico/vale de 8=2^(τ/t½), obtém-se τ/t½=3, então τ=3×4h=12h — é a resposta correta.",
+                "Um intervalo de 16 horas (τ/t½=4) daria um quociente pico/vale de 2^4=16, não de 8."
+            ],
+            "fantasma": [
+                "Essa conta dá 1,41, não 8.",
+                "Essa conta dá 2, não 8.",
+                "Essa aí! Três meias-vidas, dá exatamente 8.",
+                "Essa conta dá 16, não 8."
+            ],
+            "gato": [
+                "Fijate: dá 1,41.",
+                "Dado curioso: dá 2.",
+                "Ronronado de aprovação! Três meias-vidas.",
+                "Miau, dá 16."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se ao alcançar o platô o quociente pico/vale de uma droga é igual a 2 e o intervalo interdoses é de 4 horas, qual é a meia-vida da droga?",
+        "opcoes": [
+            "1 hora",
+            "2 horas",
+            "4 horas",
+            "8 horas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com τ=4h, se a meia-vida fosse 1 hora (τ/t½=4), o quociente pico/vale seria 2^4=16, não 2.",
+                "Com τ=4h, se a meia-vida fosse 2 horas (τ/t½=2), o quociente pico/vale seria 2^2=4, não 2.",
+                "Com um quociente pico/vale de 2=2^(τ/t½) e τ=4h, obtém-se τ/t½=1, então a meia-vida é igual ao intervalo: 4 horas — é a resposta correta.",
+                "Com τ=4h, se a meia-vida fosse 8 horas (τ/t½=0,5), o quociente pico/vale seria 2^0,5≈1,41, não 2."
+            ],
+            "fantasma": [
+                "Essa conta dá 16, não 2.",
+                "Essa conta dá 4, não 2.",
+                "Essa aí! Ali o intervalo e a meia-vida são iguais.",
+                "Essa conta dá 1,41, não 2."
+            ],
+            "gato": [
+                "Fijate: dá 16.",
+                "Dado curioso: dá 4.",
+                "Ronronado de aprovação! São iguais.",
+                "Miau, dá 1,41."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas que apresentam uma cinética de eliminação de ordem 1 se caracterizam por:",
+        "opcoes": [
+            "A meia-vida é constante e a velocidade de eliminação varia com a concentração da droga",
+            "A meia-vida não é constante e a velocidade de eliminação varia com a concentração da droga",
+            "Tanto a meia-vida quanto a velocidade de eliminação da droga são constantes",
+            "A meia-vida não é constante, mas sim a velocidade de eliminação"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na cinética de ordem 1, a meia-vida é constante (independente da dose) enquanto a velocidade de eliminação varia proporcionalmente com a concentração da droga — é a resposta correta.",
+                "Na cinética de ordem 1, a meia-vida SIM é constante, não variável (isso descreve a cinética de ordem zero).",
+                "Na cinética de ordem 1, a velocidade de eliminação NÃO é constante; varia em proporção à concentração plasmática.",
+                "Na cinética de ordem 1, é a meia-vida que é constante, não a velocidade de eliminação (que sim varia com a concentração); essa opção inverte os termos."
+            ],
+            "fantasma": [
+                "Essa aí! Meia-vida fixa, velocidade que muda.",
+                "Essa meia-vida sim é fixa.",
+                "Essa velocidade sim muda.",
+                "Você inverteu os termos."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Fixa e variável, cada uma o seu.",
+                "Fijate: sim é fixa.",
+                "Dado curioso: sim muda.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A droga biodisponível:",
+        "opcoes": [
+            "É a droga administrada menos a eliminada no pré-sistêmico",
+            "É a fração da dose que conseguiu se absorver",
+            "É a droga que chega à biofase",
+            "É a porcentagem da dose que chegou ao ventrículo esquerdo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa descrição (dose administrada menos o eliminado no pré-sistêmico) é uma forma alternativa razoável de descrever a biodisponibilidade, mas a definição mais direta e usada nesse contexto é a fração que conseguiu se absorver.",
+                "A droga biodisponível é a fração da dose administrada que efetivamente conseguiu se absorver e alcançar a circulação sistêmica — é a resposta correta.",
+                "Chegar à biofase (sítio de ação) é um conceito diferente e posterior à biodisponibilidade, que se refere à circulação sistêmica, não ao sítio de ação específico.",
+                "Essa é uma forma anatômica pouco convencional de descrever a circulação sistêmica; o conceito padrão de biodisponibilidade não se define em termos do ventrículo esquerdo especificamente."
+            ],
+            "fantasma": [
+                "Essa também serve, mas não é a usada aqui.",
+                "Essa aí! O que se absorveu de verdade.",
+                "Isso é depois, no sítio de ação.",
+                "Isso é uma forma estranha de dizer."
+            ],
+            "gato": [
+                "Fijate: não é a usada aqui.",
+                "Ronronado de aprovação! O que se absorveu.",
+                "Dado curioso: é outro passo.",
+                "Miau, forma estranha de dizer."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um fármaco tem um volume de distribuição de 50 L e uma concentração plasmática de 5 mg/L, a quantidade total de droga no organismo é:",
+        "opcoes": [
+            "5 mg",
+            "10 mg",
+            "50 mg",
+            "250 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 5mg não reproduz o cálculo Vd×Concentração=50L×5mg/L=250mg.",
+                "Um valor de 10mg não reproduz o cálculo correto com esses dados.",
+                "Um valor de 50mg não reproduz o cálculo correto: seria confundir a concentração (5mg/L) com a quantidade total.",
+                "A quantidade total de droga no organismo se calcula como Vd×Concentração plasmática=50L×5mg/L=250mg — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Isso é a concentração, não o total.",
+                "Essa aí! Volume vezes concentração, dá 250."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: não dá isso.",
+                "Miau, é só a concentração.",
+                "Ronronado de aprovação! A conta fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual deveria ser a dose diária para um paciente que recebe 700mg por via intravenosa a cada 24hs de uma droga \"X\", se desejo administrá-la por via oral (fração biodisponível de X por V.O.= 75%)?",
+        "opcoes": [
+            "933mg",
+            "525mg",
+            "850mg",
+            "450mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 525mg não corresponde ao cálculo correto.",
+                "Um valor de 933mg SIM corresponde ao cálculo correto: Dose_oral=Dose_IV/F=700/0,75≈933mg — é a resposta correta.",
+                "Um valor de 850mg não corresponde ao cálculo correto.",
+                "Um valor de 450mg não corresponde ao cálculo correto."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa aí! 700 dividido por 0,75, dá exatamente isso.",
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: não dá isso.",
+                "Miau, não dá isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Tem-se 600mg/ml em plasma de uma droga de cinética dose-independente. Às 8 hs observa-se uma concentração de 150mg/ml. Qual é o intervalo interdoses mínimo para que a acumulação da droga seja menor que 75%?",
+        "opcoes": [
+            "4 meias-vidas",
+            "3 meias-vidas",
+            "2 meias-vidas",
+            "1 meia-vida"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um intervalo de 4 meias-vidas seria mais do que o necessário para atingir uma acumulação abaixo do limite pedido.",
+                "Um intervalo de 3 meias-vidas também seria maior que o mínimo necessário segundo o cálculo de acumulação.",
+                "Com meia-vida de 4h (calculada de C0=600 a C(8h)=150, ou seja, 2 meias-vidas em 8h), um intervalo de 2 meias-vidas é o mínimo entre as opções que mantém o excesso de acumulação abaixo dos 75% adicionais — é a resposta correta.",
+                "Um intervalo de apenas 1 meia-vida resultaria em uma acumulação excessiva, acima dos 75% adicionais buscados."
+            ],
+            "fantasma": [
+                "Isso é mais do que o necessário.",
+                "Isso também é de mais.",
+                "Essa aí! Com duas meias-vidas já alcança.",
+                "Com isso acumula demais."
+            ],
+            "gato": [
+                "Fijate: é de mais.",
+                "Dado curioso: também é de mais.",
+                "Ronronado de aprovação! O mínimo exato.",
+                "Miau, acumula demais."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um modelo farmacocinético bicompartimental, o compartimento periférico representa:",
+        "opcoes": [
+            "O plasma e os tecidos altamente irrigados",
+            "O espaço extracelular e intracelular acessível",
+            "Os tecidos menos irrigados, como músculo e gordura",
+            "A via principal de eliminação do fármaco"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O plasma e os tecidos altamente irrigados descrevem o compartimento CENTRAL, não o periférico.",
+                "Essa descrição é muito vaga e não corresponde especificamente ao conceito de compartimento periférico em farmacocinética.",
+                "O compartimento periférico representa os tecidos com menor irrigação sanguínea (como músculo e gordura), aos quais o fármaco chega mais lentamente em comparação com o compartimento central — é a resposta correta.",
+                "A via principal de eliminação geralmente se associa ao compartimento central (fígado, rim), não ao periférico."
+            ],
+            "fantasma": [
+                "Isso é o compartimento central.",
+                "Essa descrição é muito vaga pra isso.",
+                "Essa aí! Os tecidos que recebem menos sangue.",
+                "A eliminação é do outro compartimento."
+            ],
+            "gato": [
+                "Fijate: é o central.",
+                "Dado curioso: muito vago.",
+                "Ronronado de aprovação! Os tecidos lentos.",
+                "Miau, é do outro."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas com cinética de eliminação de ordem 0:",
+        "opcoes": [
+            "A velocidade de eliminação é proporcional à concentração de droga",
+            "Se eliminam por mecanismos não saturáveis",
+            "Se eliminam por filtração glomerular",
+            "A meia-vida depende da dose da droga"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A velocidade proporcional à concentração descreve a cinética de ordem 1, não a de ordem zero.",
+                "Os mecanismos de eliminação da cinética de ordem zero são precisamente SATURÁVEIS, não não saturáveis.",
+                "A filtração glomerular não é, em geral, um mecanismo de eliminação de ordem zero; costuma se comportar como um processo de ordem 1 (não saturável).",
+                "Na cinética de ordem zero, a meia-vida varia conforme a dose administrada, já que a velocidade de eliminação é constante (não proporcional à concentração) — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa é a de ordem 1.",
+                "Esses mecanismos sim se saturam.",
+                "Essa não é de ordem zero em geral.",
+                "Essa aí! A meia-vida muda conforme a dose."
+            ],
+            "gato": [
+                "Fijate: é a outra.",
+                "Dado curioso: sim se saturam.",
+                "Miau, não é essa.",
+                "Ronronado de aprovação! Muda com a dose."
+            ]
+        }
     }
 ]
