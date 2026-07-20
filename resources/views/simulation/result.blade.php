@@ -28,6 +28,21 @@
     $circunf = 251;
     $scoreOffset = $circunf - $circunf * min(100, max(0, $porcentagem)) / 100;
     $modoLabel = $modo === 'estudo' ? __('quiz.mode_study') : __('quiz.mode_exam');
+    // resposta_usuario/resposta_correta vêm como índice numérico 0-based para questões
+    // de resposta única (App\Support\Question::getCorrectAnswer/isCorrect); nas de múltipla
+    // resposta já chegam como letras (App\Support\Question::getCorrectAnswerIndices). Aqui
+    // normaliza os dois casos para letras na exibição, sem precisar migrar dados já salvos.
+    $toLetras = function ($valor) {
+        if ($valor === null || $valor === '') {
+            return null;
+        }
+        $partes = array_map(function ($p) {
+            $p = trim($p);
+            return preg_match('/^\d+$/', $p) ? chr(ord('A') + (int) $p) : strtoupper($p);
+        }, explode(',', (string) $valor));
+
+        return implode(', ', $partes);
+    };
 @endphp
 
 <div class="sim-result2">
@@ -127,8 +142,8 @@
                             <tr>
                                 <td style="padding:13px 16px; font-weight:700; color:var(--app-muted); font-size:.82rem; vertical-align:top;">{{ $i + 1 }}</td>
                                 <td style="padding:13px 16px; font-size:.84rem; color:var(--app-text); max-width:360px; vertical-align:top;">{!! nl2br(e($d['pergunta'] ?? '')) !!}</td>
-                                <td style="padding:13px 16px; text-align:center; vertical-align:top;"><span style="font-weight:800; font-size:.9rem; color:var(--app-text); background:var(--app-surface-2); padding:3px 10px; border-radius:7px;">{{ $d['resposta_usuario'] ?? '—' }}</span></td>
-                                <td style="padding:13px 16px; text-align:center; vertical-align:top;"><span style="font-weight:800; font-size:.9rem; color:#22c55e; background:rgba(22,163,74,.14); padding:3px 10px; border-radius:7px;">{{ $d['resposta_correta'] ?? '—' }}</span></td>
+                                <td style="padding:13px 16px; text-align:center; vertical-align:top;"><span style="font-weight:800; font-size:.9rem; color:var(--app-text); background:var(--app-surface-2); padding:3px 10px; border-radius:7px;">{{ $toLetras($d['resposta_usuario'] ?? null) ?? '—' }}</span></td>
+                                <td style="padding:13px 16px; text-align:center; vertical-align:top;"><span style="font-weight:800; font-size:.9rem; color:#22c55e; background:rgba(22,163,74,.14); padding:3px 10px; border-radius:7px;">{{ $toLetras($d['resposta_correta'] ?? null) ?? '—' }}</span></td>
                                 <td style="padding:13px 16px; text-align:center; vertical-align:top;">
                                     @if (!empty($d['acertou']))
                                         <span style="display:inline-flex; align-items:center; gap:4px; padding:4px 12px; border-radius:999px; background:rgba(22,163,74,.14); border:1px solid rgba(22,163,74,.32); color:#22c55e; font-size:.72rem; font-weight:700;">
