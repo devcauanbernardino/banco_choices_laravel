@@ -1908,7 +1908,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Esta descripción no corresponde al mecanismo típico de la furosemida a nivel de acuaporinas.",
+                    "La furosemida, al aumentar la secreción distal de potasio por el mayor aporte de sodio a esos segmentos, produce hipokalemia — es la respuesta correcta.",
+                    "La neuropatía periférica no es un efecto adverso característico de la furosemida.",
+                    "Los diuréticos como la furosemida tienden a EMPEORAR (no mejorar) la sensibilidad a la insulina."
+                ],
+                "fantasma": [
+                    "Eso no es lo típico de esta droga.",
+                    "¡Esta! Se pierde potasio con esta droga.",
+                    "Eso no es típico de esta droga.",
+                    "Es al revés, la empeora."
+                ],
+                "gato": [
+                    "Fijate: no es típico.",
+                    "¡Ronroneo de aprobación! Se pierde potasio.",
+                    "Dato curioso: no es típico.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -1935,7 +1955,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida no se metaboliza principalmente por el CYP1A2; su eliminación es predominantemente renal, no por metabolismo hepático de este tipo.",
+                    "La furosemida se excreta principalmente por el sistema secretor tubular de ácidos orgánicos a nivel renal — es la respuesta correcta.",
+                    "La furosemida sí sufre cierta biotransformación (glucuronidación), no se excreta completamente sin cambios.",
+                    "El órgano principal de eliminación de la furosemida es el riñón, independientemente de la vía de administración usada."
+                ],
+                "fantasma": [
+                    "Ese no es el camino principal.",
+                    "¡Esta! Sale por ese transportador específico del riñón.",
+                    "Sí sufre algo de cambio antes de salir.",
+                    "El riñón manda siempre, no cambia según cómo se dé."
+                ],
+                "gato": [
+                    "Fijate: no es ese camino.",
+                    "¡Ronroneo de aprobación! Ese transportador específico.",
+                    "Dato curioso: sí cambia algo.",
+                    "Miau, el riñón siempre manda."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -1962,7 +2002,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La acidosis metabólica no es la alteración típica esperada por el uso de furosemida en síndrome nefrótico; de hecho, los diuréticos de asa tienden más a la alcalosis.",
+                    "La furosemida causa hipokalemia (no hiperkalemia) como efecto adverso característico.",
+                    "En el síndrome nefrótico, la albúmina presente en la luz tubular (por la proteinuria) se une a la furosemida, reduciendo la cantidad de droga libre que llega a su sitio de acción, por lo que suelen requerirse dosis mayores para lograr el efecto diurético — es la respuesta correcta.",
+                    "La furosemida es un antihipertensivo (reduce, no produce, hipertensión) al disminuir el volumen circulante."
+                ],
+                "fantasma": [
+                    "Eso no es lo esperado con esta droga acá.",
+                    "Es al revés, baja el potasio.",
+                    "¡Esta! La proteína en la orina atrapa parte de la droga.",
+                    "Es al revés, ayuda a bajar la presión."
+                ],
+                "gato": [
+                    "Fijate: no es lo esperado.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! La proteína atrapa la droga.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -1989,7 +2049,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida tiene una vida media corta (~2 horas), no larga; esta opción describe lo contrario.",
+                    "La furosemida tiene alta (no baja) unión a proteínas plasmáticas, y una vida media corta, no larga.",
+                    "La furosemida tiene una vida media corta (~2 horas), alta unión a proteínas plasmáticas y se elimina por el sistema secretor renal de ácidos orgánicos — es la respuesta correcta.",
+                    "La furosemida se elimina por el sistema secretor de ácidos (no de bases), y tiene alta (no baja) unión a proteínas."
+                ],
+                "fantasma": [
+                    "Es al revés, es corta.",
+                    "Es al revés en las dos cosas.",
+                    "¡Esta! Corta, se pega mucho a la proteína, y sale por ese sistema.",
+                    "Es al revés en dos cosas."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés en todo.",
+                    "¡Ronroneo de aprobación! Los tres datos correctos.",
+                    "Miau, al revés en dos cosas."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -2016,7 +2096,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida tiene alta (no baja) unión a proteínas plasmáticas.",
+                    "La eliminación de la furosemida es principalmente renal (por secreción tubular activa), no biliar exclusiva.",
+                    "La furosemida se administra tanto por vía intravenosa como oral, tiene alta unión a proteínas y se elimina por el sistema secretor renal de ácidos orgánicos — es la respuesta correcta.",
+                    "La furosemida sí puede administrarse por vía oral (no solo intravenosa), y su eliminación es renal, no biliar exclusiva."
+                ],
+                "fantasma": [
+                    "Es al revés, se pega mucho.",
+                    "Eso no es lo principal, es el riñón.",
+                    "¡Esta! Las dos vías, se pega mucho, y sale por ese sistema.",
+                    "También se puede dar por boca, y sale por el riñón."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: es el riñón.",
+                    "¡Ronroneo de aprobación! Todo correcto.",
+                    "Miau, también por boca."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -2043,7 +2143,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida tiende a AUMENTAR (no disminuir) la excreción de calcio, causando hipocalcemia, no hipercalcemia.",
+                    "La furosemida a altas dosis puede producir hipokalemia, hipocalcemia (por aumento de excreción de calcio), hiponatremia y nefrotoxicidad — es la respuesta correcta.",
+                    "La furosemida causa hipocalcemia (no hipercalcemia), y la ginecomastia no es un efecto adverso característico de la furosemida (sí de la espironolactona).",
+                    "La furosemida causa hipocalcemia (no hipercalcemia), y la hepatotoxicidad no es un efecto adverso característico de la furosemida."
+                ],
+                "fantasma": [
+                    "Es al revés, baja el calcio.",
+                    "¡Esta! Los cuatro efectos correctos.",
+                    "Es al revés en el calcio, y eso es de otra droga.",
+                    "Es al revés en el calcio, y eso no es típico."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Los cuatro correctos.",
+                    "Dato curioso: al revés y es de otra droga.",
+                    "Miau, al revés y no es típico."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -2070,7 +2190,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida causa hipocalcemia (no hipercalcemia) al aumentar la excreción de calcio.",
+                    "A altas dosis, la furosemida puede producir hipokalemia, hipocalcemia, hiponatremia y ototoxicidad, especialmente con administración IV rápida — es la respuesta correcta.",
+                    "La furosemida causa hipocalcemia (no hipercalcemia), y la ginecomastia no es característica de la furosemida.",
+                    "La furosemida causa hipocalcemia (no hipercalcemia), y la hepatotoxicidad no es característica de la furosemida."
+                ],
+                "fantasma": [
+                    "Es al revés, baja el calcio.",
+                    "¡Esta! Los cuatro efectos correctos, incluido el oído.",
+                    "Es al revés, y eso es de otra droga.",
+                    "Es al revés, y eso no es típico."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Incluye el oído.",
+                    "Dato curioso: al revés y de otra droga.",
+                    "Miau, al revés y no es típico."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -2097,7 +2237,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida causa hiperglucemia (no hipoglucemia) como alteración metabólica.",
+                    "La furosemida causa hipokalemia (no hiperkalemia), al aumentar la secreción distal de potasio.",
+                    "La furosemida produce hiperuricemia (por competencia con la secreción de ácido úrico) e hiperglucemia como alteraciones metabólicas características — es la respuesta correcta.",
+                    "La furosemida causa hiperuricemia (no hipouricemia), y generalmente hiponatremia (no hipernatremia) por la pérdida de sodio."
+                ],
+                "fantasma": [
+                    "Es al revés, sube el azúcar.",
+                    "Es al revés, baja el potasio.",
+                    "¡Esta! Sube el ácido úrico y el azúcar.",
+                    "Es al revés en dos cosas."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Ácido úrico y azúcar arriba.",
+                    "Miau, al revés en dos cosas."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -2124,7 +2284,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los diuréticos de asa producen un efecto venodilatador agudo que aumenta la capacitancia venosa, reduciendo la precarga cardíaca de forma rápida, incluso antes de que se manifieste el efecto diurético — es la respuesta correcta.",
+                    "Los diuréticos de asa no mejoran la contractilidad cardíaca por un efecto directo sobre calcio y potasio de esta manera; su efecto cardiovascular principal es hemodinámico (precarga), no inotrópico.",
+                    "No producen un efecto bradicardizante inicial por reflejo vagal asociado a hipovolemia como mecanismo principal a nivel cardiovascular.",
+                    "El efecto principal a nivel cardiovascular no es arterial/de poscarga, sino venoso/de precarga."
+                ],
+                "fantasma": [
+                    "¡Esta! Dilata las venas y alivia al corazón rápido.",
+                    "Eso no es lo que hace esta droga en el corazón.",
+                    "No es ese el mecanismo principal.",
+                    "El efecto principal es en las venas, no en las arterias."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Dilata venas, alivia rápido.",
+                    "Fijate: no es eso.",
+                    "Dato curioso: no es ese mecanismo.",
+                    "Miau, es en las venas."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -2151,7 +2331,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El efecto arterial/de poscarga no es el mecanismo inicial principal; el efecto venodilatador es el que actúa primero.",
+                    "La furosemida IV, inicialmente, aumenta la capacitancia venosa mejorando la precarga (efecto rápido, incluso antes del efecto diurético), y posteriormente actúa el efecto diurético con pérdida de sodio y agua — es la respuesta correcta.",
+                    "El efecto diurético no es el mecanismo inmediato inicial; el efecto venodilatador precede al efecto diurético en el tiempo.",
+                    "El efecto diurético no ocurre de forma verdaderamente inmediata tras la administración; el alivio inicial se debe al efecto venodilatador."
+                ],
+                "fantasma": [
+                    "No es ese el mecanismo inicial.",
+                    "¡Esta! Primero alivia las venas, después saca líquido.",
+                    "Eso viene después, no es lo primero.",
+                    "Eso no es tan inmediato como el efecto en las venas."
+                ],
+                "gato": [
+                    "Fijate: no es el inicial.",
+                    "¡Ronroneo de aprobación! Primero venas, después diuresis.",
+                    "Dato curioso: viene después.",
+                    "Miau, no es tan inmediato."
+                ]
+            }
         },
         {
             "numero": 51,
@@ -2178,7 +2378,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El metabolismo de Fase II hepático no es el mecanismo principal de eliminación de la furosemida.",
+                    "La furosemida, al tener alta unión a proteínas, se filtra poco en el glomérulo; su eliminación depende principalmente de la secreción tubular activa, no de la filtración glomerular pasiva.",
+                    "El metabolismo hepático vía CYP450 no es el mecanismo principal de eliminación de la furosemida.",
+                    "La furosemida presenta alta unión a proteínas plasmáticas, lo cual es relevante tanto para su farmacocinética como para posibles interacciones por desplazamiento de unión proteica — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese no es el camino principal.",
+                    "Eso no es lo principal, es la secreción activa.",
+                    "Ese no es el camino principal.",
+                    "¡Esta! Se pega mucho a la proteína."
+                ],
+                "gato": [
+                    "Fijate: no es ese camino.",
+                    "Dato curioso: es la secreción activa.",
+                    "Miau, no es ese camino.",
+                    "¡Ronroneo de aprobación! Se pega mucho."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -2205,7 +2425,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La acetazolamida actúa en el túbulo contorneado proximal, no en el asa gruesa de Henle.",
+                    "El amiloride actúa en el túbulo colector, no en el asa gruesa de Henle.",
+                    "La clortalidona actúa en el túbulo contorneado distal (es una tiazida), no en el asa gruesa de Henle.",
+                    "La furosemida es el diurético clásico que actúa en la rama gruesa ascendente del asa de Henle — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese actúa en otro lugar.",
+                    "Ese actúa en otro lugar.",
+                    "Esa actúa en otro lugar.",
+                    "¡Esta! Justo ahí, en el asa gruesa."
+                ],
+                "gato": [
+                    "Fijate: es otro lugar.",
+                    "Dato curioso: es otro lugar.",
+                    "Miau, es otro lugar.",
+                    "¡Ronroneo de aprobación! Justo ahí."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -2232,7 +2472,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida es un diurético de techo alto/potente, no pobre.",
+                    "La furosemida puede producir hipocalcemia, hiponatremia e hiperglucemia como efectos adversos — es la respuesta correcta.",
+                    "Bloquear los canales epiteliales de Na+ es el mecanismo del amiloride/triamtereno, no de la furosemida.",
+                    "La furosemida puede administrarse tanto por vía oral como intravenosa, no solo oral."
+                ],
+                "fantasma": [
+                    "Es al revés, es potente.",
+                    "¡Esta! Esos tres efectos son reales.",
+                    "Ese mecanismo es de otra droga.",
+                    "También se da por vena, no solo por boca."
+                ],
+                "gato": [
+                    "Fijate: es potente.",
+                    "¡Ronroneo de aprobación! Esos tres son reales.",
+                    "Dato curioso: es de otra droga.",
+                    "Miau, también por vena."
+                ]
+            }
         },
         {
             "numero": 54,
@@ -2259,7 +2519,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida es la opción señalada en el gabarito de origen para el manejo de la sobrecarga de volumen asociada a la proteinuria, aunque el fundamento nefroprotector específico requiere contrastarse con la bibliografía del curso — es la respuesta indicada.",
+                    "El amiloride, ahorrador de potasio, no es la elección clásica mencionada en este contexto entre las opciones dadas.",
+                    "La hidroclorotiazida no es la elección clásica mencionada en este contexto entre las opciones dadas.",
+                    "El manitol, diurético osmótico de uso agudo, no es la elección clásica mencionada en este contexto entre las opciones dadas."
+                ],
+                "fantasma": [
+                    "Esta es la marcada en el gabarito original.",
+                    "Esa no es la elegida acá.",
+                    "Esa no es la elegida acá.",
+                    "Ese no es el elegido acá."
+                ],
+                "gato": [
+                    "Ronroneo de aprobación (según el gabarito original).",
+                    "Fijate: no es esa.",
+                    "Dato curioso: no es esa.",
+                    "Miau, no es ese."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -2286,7 +2566,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El metabolismo de Fase I vía CYP3A4 no es el mecanismo principal de eliminación de la furosemida.",
+                    "La furosemida se elimina principalmente de forma activa por el sistema de transporte de ácidos orgánicos en el túbulo contorneado proximal, mediante secreción tubular — es la respuesta correcta.",
+                    "La filtración glomerular no es el mecanismo principal, dado que la alta unión a proteínas limita la fracción libre filtrable; la secreción tubular activa es dominante.",
+                    "La conjugación con ácido glucurónico (Fase II) no es el mecanismo principal de eliminación de la furosemida, que es predominantemente renal por secreción activa."
+                ],
+                "fantasma": [
+                    "Ese no es el camino principal.",
+                    "¡Esta! Sale activamente por ese transportador.",
+                    "No es la filtración, es la secreción activa.",
+                    "Ese no es el camino principal."
+                ],
+                "gato": [
+                    "Fijate: no es ese camino.",
+                    "¡Ronroneo de aprobación! Ese transportador activo.",
+                    "Dato curioso: es la secreción, no la filtración.",
+                    "Miau, no es ese camino."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -2313,7 +2613,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La furosemida no es un diurético osmótico ni ahorrador de potasio; es un diurético de asa que causa pérdida de potasio (hipokalemia).",
+                    "Bloquear los canales epiteliales de Na+ en el TCD y colectores es el mecanismo del amiloride/triamtereno, no de la furosemida, que actúa en el asa de Henle.",
+                    "La furosemida tiene una unión a la albúmina muy alta (95-99%), no del 30%.",
+                    "La furosemida puede producir hipocalemia, hipocalcemia e hiperglucemia como efectos adversos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés en las dos cosas.",
+                    "Ese mecanismo es de otra droga y otro lugar.",
+                    "Se pega mucho más que eso.",
+                    "¡Esta! Esos tres efectos son reales."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: es de otra droga.",
+                    "Miau, se pega mucho más.",
+                    "¡Ronroneo de aprobación! Los tres reales."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -2340,7 +2660,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las tiazidas inhiben el cotransportador Na-Cl en el túbulo contorneado distal y disminuyen la eliminación renal de calcio — es la respuesta correcta.",
+                    "El cotransportador Na-Cl-K (no solo Na-Cl) y la ubicación proximal corresponden a los diuréticos de asa, no a las tiazidas; además, las tiazidas disminuyen (no aumentan) la eliminación de calcio.",
+                    "Las tiazidas actúan en el túbulo distal (no proximal), y disminuyen (no aumentan) la eliminación de calcio.",
+                    "El cotransportador de las tiazidas es solo Na-Cl (no Na-Cl-K, que es de los diuréticos de asa), y actúan en el túbulo distal (no proximal)."
+                ],
+                "fantasma": [
+                    "¡Esta! Frenan ese transportador y retienen calcio.",
+                    "Ese transportador y lugar son de otra droga.",
+                    "Ese lugar es de otra droga, y es al revés con el calcio.",
+                    "Ese transportador es de otra droga, y el lugar también."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Frenan y retienen calcio.",
+                    "Fijate: es de otra droga.",
+                    "Dato curioso: es de otra droga y al revés.",
+                    "Miau, es de otra droga y otro lugar."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -2367,7 +2707,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las tiazidas actúan en el túbulo contorneado distal (TCD), inhibiendo el cotransportador Na-Cl — es la respuesta correcta.",
+                    "La furosemida actúa en el asa gruesa de Henle, no en el TCD.",
+                    "La torasemida, otro diurético de asa, también actúa en el asa de Henle, no en el TCD.",
+                    "La espironolactona actúa en el túbulo colector, no en el TCD."
+                ],
+                "fantasma": [
+                    "¡Esta! Justo ahí actúan las tiazidas.",
+                    "Esa actúa en otro lugar.",
+                    "Esa actúa en otro lugar.",
+                    "Esa actúa en otro lugar."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Justo ahí.",
+                    "Fijate: es otro lugar.",
+                    "Dato curioso: es otro lugar.",
+                    "Miau, es otro lugar."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -2394,7 +2754,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La acetazolamida no es el tratamiento de elección para la hipercalciuria idiopática; su uso principal es en glaucoma.",
+                    "Las tiazidas disminuyen la excreción renal de calcio, siendo el tratamiento de elección para reducir la hipercalciuria idiopática y prevenir litiasis renal — es la respuesta correcta.",
+                    "La furosemida AUMENTA (no disminuye) la excreción de calcio, siendo contraproducente en este contexto.",
+                    "El manitol, diurético osmótico de uso agudo, no es el tratamiento de elección para la hipercalciuria idiopática."
+                ],
+                "fantasma": [
+                    "Esa es para otra cosa, el ojo.",
+                    "¡Esta! Retiene el calcio, ideal acá.",
+                    "Esa hace lo contrario, saca más calcio.",
+                    "Ese es para otra situación, aguda."
+                ],
+                "gato": [
+                    "Fijate: es para el ojo.",
+                    "¡Ronroneo de aprobación! Retiene el calcio.",
+                    "Dato curioso: al revés.",
+                    "Miau, es para otra cosa."
+                ]
+            }
         },
         {
             "numero": 60,
@@ -2421,7 +2801,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "diureticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las tiazidas como la hidroclorotiazida pueden empeorar la gota (por hiperuricemia), la dislipidemia (aumentan colesterol/triglicéridos) y el control glucémico, siendo de uso cauteloso en este perfil de comorbilidades — es la respuesta correcta.",
+                    "El enalapril (IECA) no comparte estas contraindicaciones metabólicas específicas relacionadas con gota, dislipidemia y obesidad.",
+                    "La atorvastatina es en realidad beneficiosa para la dislipidemia, no una droga de precaución en este contexto.",
+                    "La amiodarona no tiene una relación directa característica con este perfil metabólico específico (obesidad, dislipidemia, gota)."
+                ],
+                "fantasma": [
+                    "¡Esta! Empeora las tres cosas que tiene este paciente.",
+                    "Esa no tiene ese problema.",
+                    "Esa en realidad ayuda con el colesterol.",
+                    "Esa no tiene que ver con este perfil."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Empeora todo lo que tiene.",
+                    "Fijate: no tiene ese problema.",
+                    "Dato curioso: en realidad ayuda.",
+                    "Miau, no tiene que ver."
+                ]
+            }
         },
         {
             "numero": 61,
