@@ -6958,5 +6958,585 @@
                 "Ronronado de aprovação! A afinidade decide."
             ]
         }
+    },
+    {
+        "pergunta": "Efetuou-se uma curva concentração-efeito à acetilcolina sozinha (agonista) e na presença de atropina 1 µM em músculo liso intestinal. Na presença de atropina, um antagonista competitivo dos receptores mencionados, a curva de acetilcolina:",
+        "opcoes": [
+            "Se desloca à direita, com diminuição da inclinação e da resposta máxima",
+            "Se desloca à direita, com aumento da inclinação, e diminuição na resposta máxima",
+            "Se desloca à direita, sem mudança na inclinação e na resposta máxima",
+            "Não se modifica"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista competitivo NÃO reduz a resposta máxima; essa opção descreve um efeito de antagonismo não competitivo, contradizendo a premissa dada.",
+                "Um antagonista competitivo também não aumenta a inclinação nem reduz a resposta máxima; isso descreveria um tipo diferente de antagonismo.",
+                "Por ser a atropina um antagonista competitivo puro, a curva de acetilcolina se desloca à direita sem mudanças na inclinação nem na resposta máxima, já que seu efeito sempre pode ser superado com mais agonista — é a resposta correta.",
+                "A curva sim se modifica: se desloca para a direita, embora sem mudar a resposta máxima."
+            ],
+            "fantasma": [
+                "Isso acontece com o não competitivo, não com este.",
+                "Isso também não acontece com um competitivo puro.",
+                "Essa aí! Se desloca à direita, mas chega igual de alto.",
+                "Sim muda, se desloca à direita."
+            ],
+            "gato": [
+                "Fijate: é do outro tipo.",
+                "Dado curioso: também não acontece assim.",
+                "Ronronado de aprovação! Desloca mas chega igual.",
+                "Miau, sim muda."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se realiza uma curva controle para um agonista A e depois outra curva para o agonista A na presença de uma concentração fixa de uma droga B. Na presença de B, a curva do agonista A tem menor potência e menor resposta máxima. A droga B é um:",
+        "opcoes": [
+            "Agonista parcial",
+            "Antagonista não competitivo",
+            "Agonista inverso",
+            "Antagonista competitivo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um agonista parcial produziria seu próprio efeito (submáximo) ao atuar sozinho, não simplesmente reduziria a potência e o máximo de outro agonista dessa maneira.",
+                "Reduzir tanto a potência (deslocamento à direita) quanto a resposta máxima simultaneamente é precisamente a assinatura característica do antagonismo não competitivo — é a resposta correta.",
+                "Um agonista inverso produziria um efeito oposto ao basal por si só, o que não é descrito aqui.",
+                "Um antagonista competitivo reduz só a potência (desloca a curva), sem reduzir a resposta máxima; aqui se descreve uma redução de ambas, o que contradiz a definição de competitivo."
+            ],
+            "fantasma": [
+                "Isso faria seu próprio efeito, e não é o que acontece.",
+                "Essa aí! Baixa as duas coisas, potência e teto.",
+                "Isso faria algo por si só, e aqui não.",
+                "Um competitivo não baixaria o teto, e aqui sim baixa."
+            ],
+            "gato": [
+                "Fijate: não é o que acontece.",
+                "Ronronado de aprovação! Baixa as duas coisas.",
+                "Dado curioso: não encaixa.",
+                "Miau, o competitivo não faz isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "A potência de um fármaco depende de:",
+        "opcoes": [
+            "Sua afinidade pelo receptor",
+            "Sua capacidade de gerar a resposta máxima",
+            "Sua taxa de eliminação",
+            "Seu volume de distribuição"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A afinidade de um fármaco pelo seu receptor é o determinante principal de sua potência: quanto maior a afinidade, menor a concentração necessária para produzir o efeito — é a resposta correta.",
+                "A capacidade de gerar a resposta máxima descreve a eficácia, não a potência.",
+                "A taxa de eliminação é um parâmetro farmacocinético, não um determinante direto da potência farmacodinâmica.",
+                "O volume de distribuição também é um parâmetro farmacocinético, não relacionado diretamente à potência farmacodinâmica."
+            ],
+            "fantasma": [
+                "Essa aí! Quanto se gruda, decide quanta dose precisa.",
+                "Isso é a eficácia, não a potência.",
+                "Isso é da farmacocinética.",
+                "Isso também é da farmacocinética."
+            ],
+            "gato": [
+                "Ronronado de aprovação! A afinidade manda.",
+                "Fijate: é a eficácia.",
+                "Dado curioso: é outra coisa.",
+                "Miau, é outra coisa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Duas drogas se ligam ao mesmo receptor. De ensaios de ligação de radioligantes se obtêm os seguintes parâmetros: Droga A: Bmax 1000 fmoles/mg, Kd 10-9 M: Droga B: Bmax 600 fmoles/mg, Kd 10-6 M. Com esses dados, você pode deduzir que:",
+        "opcoes": [
+            "A afinidade de A é maior que a de B",
+            "O número de receptores de B é maior que o de A",
+            "A é um agonista parcial",
+            "A potência de A é maior que a de B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O Kd de A (10⁻⁹M) é muito menor que o de B (10⁻⁶M); como um Kd menor indica maior afinidade, a afinidade de A é maior que a de B — é a resposta correta.",
+                "É ao contrário: o Bmax de A (1000) é maior que o de B (600), então A tem mais receptores, não menos.",
+                "Um ensaio de binding não determina se uma droga é agonista ou antagonista, nem se é parcial ou total; isso requer um ensaio funcional.",
+                "A potência (relacionada à CE50 funcional) não se determina diretamente de dados de binding puro (Kd); não pode ser concluída com certeza a partir desses dados."
+            ],
+            "fantasma": [
+                "Essa aí! A se gruda muito mais forte.",
+                "É ao contrário, A tem mais.",
+                "Isso não se sabe com um binding só.",
+                "Isso também não se sabe com isso só."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Se gruda mais forte.",
+                "Fijate: ao contrário.",
+                "Dado curioso: não se sabe.",
+                "Miau, não se sabe."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um gráfico de Scatchard, a inclinação da reta representa:",
+        "opcoes": [
+            "-1/Kd",
+            "Bmax",
+            "1/Bmax",
+            "-Kd x"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A inclinação da reta de Scatchard é -1/Kd, derivada diretamente da equação B/F=Bmax/Kd−B/Kd — é a resposta correta.",
+                "Bmax corresponde à interseção com o eixo X, não à inclinação.",
+                "1/Bmax não corresponde a nenhum elemento padrão do gráfico de Scatchard.",
+                "O termo -Kd (sem o expoente -1) não é a inclinação correta; é -1/Kd."
+            ],
+            "fantasma": [
+                "Essa aí! Essa é a inclinação correta.",
+                "Isso é o corte em X, não a inclinação.",
+                "Isso não é nada desse gráfico.",
+                "Falta o expoente, não é assim."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Inclinação correta.",
+                "Fijate: é o corte em X.",
+                "Dado curioso: não é nada disso.",
+                "Miau, falta algo na fórmula."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B são antagonistas competitivos do mesmo receptor. O pA2 de A é 11,3 e o pA2 de B é 8,7. Qual das seguintes afirmações é correta?",
+        "opcoes": [
+            "A CE50 de A é menor que a de B",
+            "A é menos potente como bloqueador que B",
+            "A resposta máxima de A é maior que a de B do fármaco",
+            "A é mais potente como bloqueador que B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O pA2 mede potência bloqueadora, não está diretamente relacionado à CE50 de outra droga dessa maneira.",
+                "É ao contrário: como o pA2 de A é maior, A é mais potente, não menos.",
+                "O pA2 não mede resposta máxima nem eficácia; só mede potência de bloqueio.",
+                "O pA2 maior de A (11,3 frente a 8,7 de B) indica que A é mais potente como bloqueador — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso não se relaciona assim.",
+                "É ao contrário, A ganha.",
+                "Isso não mede isso.",
+                "Essa aí! A tem maior pA2, é mais potente."
+            ],
+            "gato": [
+                "Fijate: não se relaciona assim.",
+                "Dado curioso: ao contrário.",
+                "Miau, não mede isso.",
+                "Ronronado de aprovação! A é mais potente."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual das seguintes afirmações é correta a respeito da atividade intrínseca?",
+        "opcoes": [
+            "Um agonista parcial tem atividade intrínseca igual a 1",
+            "Um antagonista tem atividade intrínseca entre 0 e 1",
+            "Um antagonista tem atividade intrínseca de 0",
+            "Um agonista total tem atividade intrínseca menor que um agonista parcial"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um agonista parcial tem atividade intrínseca menor que 1 (entre 0 e 1), não igual a 1 (isso descreve um agonista total).",
+                "Um antagonista puro tem atividade intrínseca de exatamente 0, não uma faixa entre 0 e 1 (isso descreveria um agonista parcial).",
+                "Por definição, um antagonista não ativa o receptor, então sua atividade intrínseca é exatamente 0 — é a resposta correta.",
+                "É ao contrário: um agonista total tem atividade intrínseca (1) maior, não menor, que um agonista parcial (<1)."
+            ],
+            "fantasma": [
+                "Isso é do agonista total, não do parcial.",
+                "Esse é de 0 exato, não uma faixa.",
+                "Essa aí! Zero, não faz nada.",
+                "É ao contrário, o total tem mais."
+            ],
+            "gato": [
+                "Fijate: é do total.",
+                "Dado curioso: é exato.",
+                "Ronronado de aprovação! Zero puro.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B se ligam ao mesmo receptor. A é uma droga com CE50 de 10-9 M e atividade intrínseca de 1. Na presença de uma concentração 10-8 M da droga B, a CE50 de A passa a ser de 10-8 M e sua atividade intrínseca de 1 se mantém (o tecido não possui receptores de reserva). Portanto, o fármaco B (cuja atividade intrínseca é 0) é:",
+        "opcoes": [
+            "Agonista inverso",
+            "Antagonista não-competitivo",
+            "Antagonista competitivo",
+            "Agonista pleno"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um agonista inverso produziria um efeito oposto ao basal por si só; aqui B se descreve com atividade intrínseca 0, sem efeito próprio (nem em um sentido nem em outro).",
+                "Um antagonista não competitivo reduziria também a atividade intrínseca de A, o que não ocorre aqui (permanece em 1).",
+                "B desloca a CE50 de A para a direita sem reduzir sua atividade intrínseca (que permanece em 1), e B mesmo tem atividade intrínseca 0 (sem efeito próprio): essa é a assinatura característica de um antagonista competitivo — é a resposta correta.",
+                "Um agonista pleno teria atividade intrínseca 1, não 0 como se descreve para B."
+            ],
+            "fantasma": [
+                "Isso faria um efeito contrário, e não é isso.",
+                "Isso também baixaria o teto, e não baixou.",
+                "Essa aí! Corre a curva mas o teto fica igual, e B não faz nada sozinho.",
+                "Isso teria atividade intrínseca 1, não 0."
+            ],
+            "gato": [
+                "Fijate: não encaixa.",
+                "Dado curioso: baixaria o teto.",
+                "Ronronado de aprovação! Corre mas o teto fica.",
+                "Miau, não é isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B se ligam ao mesmo receptor. A é um agonista com uma CE50 de 10-9 M e atividade intrínseca de 0,7 e B um agonista com CE50 de 10-8 M e atividade intrínseca de 1. Portanto, o fármaco A é:",
+        "opcoes": [
+            "Menos potente e mais eficaz que B",
+            "Mais potente e menos eficaz que B",
+            "Mais potente e mais eficaz que B",
+            "Menos potente e menos eficaz que B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A tem menor CE50 (mais potente, não menos), mas é menos eficaz (não mais), já que sua atividade intrínseca é menor.",
+                "A tem menor CE50 (10⁻⁹ frente a 10⁻⁸ de B), então é mais potente; e menor atividade intrínseca (0,7 frente a 1 de B), então é menos eficaz — é a resposta correta.",
+                "A é mais potente (correto), mas é menos eficaz (não mais), dado sua menor atividade intrínseca.",
+                "A é mais potente, não menos, já que precisa de menor concentração (CE50 menor) para alcançar 50% do efeito."
+            ],
+            "fantasma": [
+                "É ao contrário nas duas coisas.",
+                "Essa aí! Precisa de menos dose mas faz menos efeito máximo.",
+                "A parte de potência está certa, a de eficácia não.",
+                "É ao contrário, precisa de menos dose."
+            ],
+            "gato": [
+                "Fijate: ao contrário em tudo.",
+                "Ronronado de aprovação! Menos dose, menos efeito máximo.",
+                "Dado curioso: falta a parte da eficácia.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "Sugammadex é um novo fármaco que reverte a ação do rocurônio e certos outros agentes relaxantes do músculo esquelético (agentes bloqueadores neuromusculares não despolarizantes). Parece interagir diretamente com a molécula de rocurônio e não em absoluto com o receptor de rocurônio. Qual dos seguintes termos descreve melhor o sugammadex?",
+        "opcoes": [
+            "Antagonista químico.",
+            "Agonista total.",
+            "Agonista parcial.",
+            "Antagonista competitivo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O sugammadex neutraliza diretamente a molécula de rocurônio (sem interagir com o receptor), o que é precisamente a definição de antagonista químico — é a resposta correta.",
+                "Um agonista total ativaria um receptor, enquanto o sugammadex não interage com nenhum receptor.",
+                "Um agonista parcial também ativaria um receptor de forma submáxima; o sugammadex não age sobre nenhum receptor.",
+                "Um antagonista competitivo agiria no mesmo receptor que o agonista; o sugammadex age diretamente sobre a molécula de rocurônio, não no receptor."
+            ],
+            "fantasma": [
+                "Essa aí! Captura a molécula diretamente, sem tocar o receptor.",
+                "Isso ativaria um receptor, e isso não toca nenhum.",
+                "Isso também ativaria, embora menos.",
+                "Isso seria no receptor, e isso vai direto na molécula."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Captura a molécula.",
+                "Fijate: não toca receptor.",
+                "Dado curioso: também não toca receptor.",
+                "Miau, vai direto na molécula."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual das seguintes afirmações é verdadeira?",
+        "opcoes": [
+            "A potência de um agonista é diretamente proporcional à sua CE50.",
+            "A potência de um agonista é inversamente proporcional à sua pCE50.",
+            "A potência bloqueadora de um antagonista é inversamente proporcional à sua resposta máxima.",
+            "A potência bloqueadora de um antagonista é diretamente proporcional ao seu pA2."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A potência de um agonista é INVERSAMENTE (não diretamente) proporcional à sua CE50: menor CE50, maior potência.",
+                "A potência de um agonista é DIRETAMENTE (não inversamente) proporcional à sua pCE50, já que um pCE50 maior implica menor CE50.",
+                "Um antagonista puro não tem uma \"resposta máxima\" própria (atividade intrínseca 0); essa relação não tem sentido conceitual claro.",
+                "O pA2 mede diretamente a potência bloqueadora de um antagonista: quanto maior o pA2, maior a potência bloqueadora, uma relação diretamente proporcional — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, é inversa.",
+                "É ao contrário, é direta.",
+                "Isso não tem sentido pra um antagonista puro.",
+                "Essa aí! Mais pA2, mais potência bloqueadora."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário.",
+                "Miau, não tem sentido.",
+                "Ronronado de aprovação! Andam juntos."
+            ]
+        }
+    },
+    {
+        "pergunta": "Efetuou-se uma curva concentração-efeito à acetilcolina sozinha e na presença de atropina 1 µM em músculo esquelético. Na presença de atropina, a pCE50 da acetilcolina:",
+        "opcoes": [
+            "Não muda.",
+            "Aumenta",
+            "Diminui.",
+            "Se aproxima do valor 10-8"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A atropina é um antagonista seletivo de receptores MUSCARÍNICOS de acetilcolina; o músculo esquelético usa receptores NICOTÍNICOS na placa neuromuscular, que a atropina não bloqueia, então a pCE50 da acetilcolina não muda nesse tecido — é a resposta correta.",
+                "Um aumento da pCE50 implicaria uma diminuição da CE50 (maior potência aparente da acetilcolina), o que não é consistente com nenhum efeito esperado da atropina, seja qual for o tecido.",
+                "Uma diminuição da pCE50 implicaria um bloqueio efetivo, mas isso não ocorre em músculo esquelético, já que a atropina não atua sobre os receptores nicotínicos ali presentes.",
+                "Não há nenhuma razão para que a pCE50 se aproxime especificamente desse valor numérico nesse cenário."
+            ],
+            "fantasma": [
+                "Essa aí! A atropina não toca os receptores desse músculo.",
+                "Isso não aconteceria com a atropina aqui.",
+                "Isso não acontece, porque não são os receptores que a atropina bloqueia.",
+                "Esse número não tem por que sair aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Não são seus receptores.",
+                "Fijate: não aconteceria isso.",
+                "Dado curioso: receptor errado para a atropina.",
+                "Miau, não há motivo pra esse número."
+            ]
+        }
+    },
+    {
+        "pergunta": "Efetuou-se uma curva concentração-efeito à acetilcolina sozinha e na presença de d-tubocurarina 1mM em músculo liso intestinal. Na presença da d-tubocurarina, a curva de acetilcolina:",
+        "opcoes": [
+            "Se desloca à direita sem mudança na inclinação e na resposta máxima",
+            "Não se modifica",
+            "Se desloca à direita, com diminuição da inclinação e da resposta máxima",
+            "Se desloca à direita, com aumento da inclinação e diminuição na resposta máxima"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A d-tubocurarina é um antagonista nicotínico; o músculo liso intestinal usa principalmente receptores MUSCARÍNICOS de acetilcolina, então a curva de acetilcolina não deveria se deslocar nesse tecido.",
+                "A d-tubocurarina bloqueia receptores nicotínicos, não muscarínicos; como o músculo liso intestinal usa receptores muscarínicos, a curva de acetilcolina não se modifica nesse tecido — é a resposta correta.",
+                "Essa combinação de mudanças não corresponde a nenhum antagonismo típico, e de qualquer forma a d-tubocurarina não age sobre os receptores presentes nesse tecido.",
+                "Um aumento de inclinação não é característico de nenhum tipo padrão de antagonismo, e além disso a d-tubocurarina não age sobre os receptores muscarínicos presentes nesse tecido."
+            ],
+            "fantasma": [
+                "Isso aconteceria se fosse o receptor certo, mas não é.",
+                "Essa aí! Não são os receptores que a d-tubocurarina bloqueia.",
+                "Isso não é um padrão típico, e também não é o receptor certo.",
+                "Isso não é típico de nada, e o receptor também não é o certo."
+            ],
+            "gato": [
+                "Fijate: receptor errado.",
+                "Ronronado de aprovação! Receptor diferente, não acontece nada.",
+                "Dado curioso: não encaixa nem o padrão nem o receptor.",
+                "Miau, não encaixa nada disso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Marcar a opção correta:",
+        "opcoes": [
+            "O álcool possui uma cinética de eliminação de ordem 1",
+            "Uma intoxicação com uma droga inespecífica poderá ser eliminada do organismo através de sua excreção e a administração de um antagonista",
+            "As drogas de ação específica possuem alta especificidade química",
+            "As drogas de ação inespecífica exercem seu efeito em concentrações baixas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metabolismo do álcool (etanol) é o exemplo clássico de cinética de eliminação de ordem 0 (saturável), não de ordem 1.",
+                "No contexto clínico/toxicológico, uma intoxicação com uma droga de ação inespecífica pode ser tratada favorecendo sua excreção junto com medidas de suporte, considerando essa opção como a assinalada no gabarito de origem — é a resposta correta.",
+                "A especificidade das drogas de ação específica se relaciona mais com sua especificidade biológica (interação com um receptor definido) do que com sua especificidade química em sentido estrito.",
+                "As drogas de ação inespecífica requerem concentrações ALTAS (não baixas) para exercer seu efeito, diferente das de ação específica."
+            ],
+            "fantasma": [
+                "Esse é o exemplo da outra cinética.",
+                "Essa é a marcada no gabarito original.",
+                "Isso é mais do biológico que do químico.",
+                "É ao contrário, precisam de concentrações altas."
+            ],
+            "gato": [
+                "Fijate: é a outra cinética.",
+                "Ronronado de aprovação (segundo o gabarito original).",
+                "Dado curioso: é mais biológico.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A atividade intrínseca de um agonista é:",
+        "opcoes": [
+            "1",
+            "0,5",
+            "0",
+            "-1"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Por definição padrão (assumindo agonista total, a convenção habitual quando não se especifica \"parcial\"), a atividade intrínseca de um agonista é 1 — é a resposta correta.",
+                "Um valor de 0,5 seria próprio de algum agonista parcial específico, não a definição geral/padrão de \"agonista\" sem qualificação.",
+                "Um valor de 0 corresponde a um antagonista puro, não a um agonista.",
+                "Um valor de -1 não corresponde à escala padrão de atividade intrínseca usada na farmacologia clássica (que vai de 0 a 1)."
+            ],
+            "fantasma": [
+                "Essa aí! O agonista de livro tem atividade intrínseca 1.",
+                "Isso seria um caso particular de agonista parcial.",
+                "Isso é do antagonista, não do agonista.",
+                "Essa escala não se usa assim."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Agonista de livro.",
+                "Fijate: é um caso particular.",
+                "Dado curioso: é do antagonista.",
+                "Miau, essa escala não é assim."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em relação à farmacodinâmica:",
+        "opcoes": [
+            "A CDR se realiza à primeira droga que se coloca no experimento de órgão isolado",
+            "A CE50 é inversamente proporcional à potência do agonista",
+            "A CE50 é inversamente proporcional à potência do antagonista",
+            "O pA2 é inversamente proporcional à potência do agonista"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A CDR (curva dose-resposta) não se define por ser \"a primeira droga colocada\"; essa afirmação não tem sentido farmacológico claro.",
+                "A CE50 é inversamente proporcional à potência do agonista: quanto menor a CE50, maior a potência — é a resposta correta.",
+                "A CE50 é um parâmetro que caracteriza agonistas (concentração para 50% do efeito máximo), não antagonistas, que se caracterizam mais apropriadamente pelo pA2.",
+                "O pA2 caracteriza a potência bloqueadora de um antagonista, não tem uma relação direta estabelecida dessa forma com a potência de um agonista."
+            ],
+            "fantasma": [
+                "Isso não tem sentido assim.",
+                "Essa aí! Menos CE50, mais potência.",
+                "Isso é de agonistas, não de antagonistas.",
+                "Isso é de outra droga, não se relaciona assim."
+            ],
+            "gato": [
+                "Fijate: não tem sentido.",
+                "Ronronado de aprovação! Relação inversa clássica.",
+                "Dado curioso: é de outro tipo.",
+                "Miau, não se relaciona assim."
+            ]
+        }
+    },
+    {
+        "pergunta": "No sinergismo de potenciação",
+        "opcoes": [
+            "O efeito máximo obtido com duas drogas juntas supera o efeito máximo com qualquer uma das drogas sozinha",
+            "O efeito máximo obtido com duas drogas juntas jamais supera o efeito máximo obtido com uma droga sozinha",
+            "Os dois fármacos que apresentam sinergismo devem sempre agir sobre o mesmo receptor",
+            "Os dois fármacos que apresentam sinergismo ocasionam efeitos opostos sobre o mesmo receptor"
+        ],
+        "explicacoes": {
+            "robo": [
+                "No sinergismo de potenciação, o efeito máximo combinado supera o de qualquer uma das drogas separadamente, mesmo quando uma delas não tem efeito próprio — é a resposta correta.",
+                "Essa opção descreve justo o contrário do sinergismo de potenciação, que por definição SIM supera o efeito de uma droga sozinha.",
+                "Não é necessário que ambos os fármacos ajam sobre o mesmo receptor; o sinergismo pode ocorrer por mecanismos complementares diferentes.",
+                "O sinergismo de potenciação não requer efeitos opostos sobre o mesmo receptor; na verdade, costuma envolver mecanismos que se complementam, não que se opõem."
+            ],
+            "fantasma": [
+                "Essa aí! Juntas fazem mais que qualquer uma sozinha.",
+                "Isso é justo o contrário do que acontece.",
+                "Não precisa ser o mesmo receptor.",
+                "Não são efeitos opostos, se complementam."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Juntas superam qualquer uma.",
+                "Fijate: é o contrário.",
+                "Dado curioso: não precisa.",
+                "Miau, se complementam."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um fármaco \"X\" possui um Emax de 80% em relação ao máximo obtido com o agonista total e outro fármaco \"Y\" possui um Emax de 60% em relação ao máximo efeito obtido com o mesmo agonista total, então:",
+        "opcoes": [
+            "X é menos potente que Y",
+            "X é mais eficaz que Y",
+            "X é um antagonista",
+            "Y é um agonista pleno"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O dado não compara doses necessárias (potência), só compara o efeito máximo relativo (eficácia) entre X e Y.",
+                "Como o Emax de X (80%) é maior que o de Y (60%) em relação ao mesmo agonista total de referência, X é mais eficaz que Y — é a resposta correta.",
+                "Um fármaco com Emax de 80% tem um efeito substancial, muito longe de ser um antagonista puro (que teria Emax de 0%); essa classificação não é consistente com os dados.",
+                "Y só alcança 60% do efeito máximo do agonista total; um agonista pleno alcançaria 100%, não 60%."
+            ],
+            "fantasma": [
+                "Esse dado não compara isso.",
+                "Essa aí! 80% é mais que 60%, X ganha em eficácia.",
+                "Com 80% de efeito, não é nenhum antagonista.",
+                "Um pleno chega a 100%, e Y não chega."
+            ],
+            "gato": [
+                "Fijate: não compara isso.",
+                "Ronronado de aprovação! X ganha em eficácia.",
+                "Dado curioso: não é antagonista com esse efeito.",
+                "Miau, não chega a 100%."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas de ação específica:",
+        "opcoes": [
+            "Desenvolvem suas ações em baixos níveis de saturação relativa",
+            "São drogas muito potentes, mas pouco eficazes",
+            "Apresentam mudanças significativas de atividade com pequenas modificações de sua estrutura química",
+            "Não possuem a possibilidade de reverter seu efeito com antagonistas."
+        ],
+        "explicacoes": {
+            "robo": [
+                "As drogas de ação específica na verdade agem perto de níveis altos de ocupação relativa de seu receptor, dada sua alta afinidade, não em níveis baixos de saturação.",
+                "Não existe uma generalização válida de que todas as drogas de ação específica sejam \"muito potentes mas pouco eficazes\"; potência e eficácia são parâmetros independentes.",
+                "Ao depender de uma interação de alta precisão com um receptor definido, as drogas de ação específica são muito sensíveis a pequenas mudanças em sua estrutura química, que podem alterar drasticamente sua atividade — é a resposta correta.",
+                "As drogas de ação específica sim podem ser antagonizadas especificamente, precisamente por atuarem em um sítio de ligação bem definido."
+            ],
+            "fantasma": [
+                "É ao contrário, agem perto da saturação.",
+                "Isso não é uma regra geral.",
+                "Essa aí! Uma mudancinha na estrutura muda tudo.",
+                "Essas sim podem ser bloqueadas de forma específica."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: não é regra geral.",
+                "Ronronado de aprovação! Mudancinha, efeito grande.",
+                "Miau, sim podem ser bloqueadas."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os agonistas parciais:",
+        "opcoes": [
+            "Diferente dos agonistas totais têm menor afinidade, mas sua atividade intrínseca é similar",
+            "Age como agonista quando o tônus basal prévio à sua administração é superior ao seu efeito máximo",
+            "Possuem uma atividade intrínseca menor que o agonista total e superior ao antagonista",
+            "Induzem menor efeito máximo porque sua capacidade de reserva é menor."
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: os agonistas parciais se definem por ter MENOR atividade intrínseca (não similar) que os totais; a afinidade pode variar independentemente.",
+                "Essa descrição tem a lógica invertida: se o tônus basal já supera o que o agonista parcial pode produzir, ele se comportaria como um antagonista funcional (reduzindo o efeito líquido), não como um agonista puro nesse cenário.",
+                "Por definição, um agonista parcial tem atividade intrínseca entre 0 (antagonista puro) e 1 (agonista total), ou seja, menor que o total mas maior que o antagonista — é a resposta correta.",
+                "A razão do menor efeito máximo de um agonista parcial é sua menor atividade intrínseca, não uma \"capacidade de reserva\" própria do fármaco (os receptores de reserva são uma propriedade do sistema/tecido, não do fármaco)."
+            ],
+            "fantasma": [
+                "É ao contrário, têm menos atividade intrínseca.",
+                "Essa lógica está ao contrário.",
+                "Essa aí! Está entre o antagonista e o total.",
+                "A razão real é outra: menos atividade intrínseca."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: lógica invertida.",
+                "Ronronado de aprovação! Bem no meio.",
+                "Miau, a razão é outra."
+            ]
+        }
     }
 ]
