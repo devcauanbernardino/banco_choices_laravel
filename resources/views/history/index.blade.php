@@ -129,6 +129,12 @@
                 </table>
             </div>
         </div>
+
+        @if ($historico->hasPages())
+            <div class="bc-mock-historico__pagination">
+                {{ $historico->links('pagination::bootstrap-5') }}
+            </div>
+        @endif
     </div>
 @endsection
 

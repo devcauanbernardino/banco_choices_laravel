@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Support\SimulationGrading;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class HistoryController extends Controller
 {
+    private const PER_PAGE = 15;
+
     public function index(Request $request)
     {
         $uid = Auth::id();
@@ -71,6 +74,18 @@ class HistoryController extends Controller
             }
             $mediaPct = round($sum / $totalSimulados, 1);
         }
+
+        // Paginação em memória: o filtro de status é calculado em PHP (não é coluna do
+        // banco), então o recorte por página só pode acontecer depois de montar $historico
+        // por completo (totalSimulados/mediaPct também precisam do conjunto filtrado inteiro).
+        $page = LengthAwarePaginator::resolveCurrentPage('page');
+        $historico = new LengthAwarePaginator(
+            array_slice($historico, ($page - 1) * self::PER_PAGE, self::PER_PAGE),
+            $totalSimulados,
+            self::PER_PAGE,
+            $page,
+            ['path' => $request->url(), 'query' => $request->query()]
+        );
 
         return view('history.index', compact(
             'historico', 'materias', 'totalSimulados', 'filtroMateria', 'filtroStatus', 'filtroQ', 'mediaPct'

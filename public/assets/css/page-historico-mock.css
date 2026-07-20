@@ -224,6 +224,12 @@
   box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
+.bc-mock-historico__pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
 .bc-mock-historico__table {
   width: 100%;
   border-collapse: collapse;
