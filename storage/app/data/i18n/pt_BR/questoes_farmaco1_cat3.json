@@ -4058,5 +4058,585 @@
                 "Ronronado de aprovação! Manda o reparto."
             ]
         }
+    },
+    {
+        "pergunta": "Quantas horas deve durar o período de washout de um fármaco de meia-vida igual a 40 hs, se deseja perder 75% da dose inicial?",
+        "opcoes": [
+            "80 hs",
+            "60 hs",
+            "40 hs",
+            "120 hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Para perder 75% da dose inicial são necessárias 2 meias-vidas (1-(1/2)²=0,75); com t½=40h, isso equivale a 2×40h=80h — é a resposta correta.",
+                "Um valor de 60hs não corresponde a um número inteiro de meias-vidas com t½=40h.",
+                "40 horas equivale a apenas 1 meia-vida, na qual se elimina 50%, não 75%.",
+                "Um valor de 120hs (3 meias-vidas) corresponderia a eliminar 87,5%, mais do que o pedido."
+            ],
+            "fantasma": [
+                "Essa aí! Duas meias-vidas, exatamente 75%.",
+                "Esse número não cai numa meia-vida inteira.",
+                "Ali só foi embora a metade.",
+                "Isso já seria demais, uns 87,5%."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Exatamente 75%.",
+                "Fijate: não cai certo.",
+                "Dado curioso: só a metade.",
+                "Miau, já seria demais."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um paciente ingere um fármaco com uma dosagem de 40 mg, 1 vez por dia. Uma vez atingido o platô, o fator de acumulação determinado é igual a 3.41. Qual é a meia-vida da droga?",
+        "opcoes": [
+            "96 hs",
+            "48 hs",
+            "24 hs",
+            "12 hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 96hs não corresponde ao fator de acumulação 3,41 com τ=24h.",
+                "Com Rac=3,41, resolve-se τ/t½=0,5; como τ=24h (dosagem diária), a meia-vida é t½=24h/0,5=48h — é a resposta correta.",
+                "Um valor de 24hs (τ/t½=1) daria um fator de acumulação de 2, não de 3,41.",
+                "Um valor de 12hs (τ/t½=2) daria um fator de acumulação de 1,33, não de 3,41."
+            ],
+            "fantasma": [
+                "Essa conta não dá esse fator.",
+                "Essa aí! Essa meia-vida dá exatamente 3,41.",
+                "Essa conta dá 2, não 3,41.",
+                "Essa conta dá 1,33, não 3,41."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: dá 2.",
+                "Miau, dá 1,33."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um fármaco segue uma cinética de eliminação de ordem 0, sua meia-vida:",
+        "opcoes": [
+            "É constante e independente da concentração",
+            "Aumenta quando a concentração plasmática é maior",
+            "Diminui com o tempo",
+            "É proporcional à dose administrada"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Em cinética de ordem 0, a meia-vida NÃO é constante nem independente da concentração; varia conforme a concentração presente.",
+                "Em cinética de ordem 0, como a velocidade de eliminação é constante (uma quantidade fixa por unidade de tempo), quanto maior a concentração plasmática, mais tempo leva para reduzi-la à metade, então a meia-vida aumenta quando a concentração é maior — é a resposta correta.",
+                "A meia-vida em ordem 0 não simplesmente \"diminui com o tempo\" de forma genérica; depende especificamente da concentração presente a cada momento.",
+                "A meia-vida em ordem 0 depende da concentração presente, não diretamente da dose administrada como número isolado (embora uma dose maior tipicamente implique maior concentração inicial)."
+            ],
+            "fantasma": [
+                "É ao contrário, muda com a dose.",
+                "Essa aí! Mais droga, mais tempo pra cair pela metade.",
+                "Não é tão simples, depende da concentração.",
+                "Depende da concentração, não diretamente disso."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Ronronado de aprovação! Mais concentração, mais demora.",
+                "Dado curioso: depende do momento.",
+                "Miau, depende de outra coisa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se é dosificada a mesma quantidade diária de droga (cinética dose-independente) da seguinte maneira (400mg/4 hs versus 200 mg/2h), observar-se-á que a dosagem de intervalos mais curtos (200mg/2h) produz:",
+        "opcoes": [
+            "Menor acumulação",
+            "Menor perda pré-sistêmica",
+            "Menor concentração sérica nos picos",
+            "Maior quociente pico/vale"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com o mesmo total diário, a acumulação (Rac) no platô depende de τ/t½, não simplesmente de os intervalos serem mais curtos ou longos em si.",
+                "A perda pré-sistêmica (metabolismo de primeira passagem) não muda por fracionar a mesma dose diária em intervalos mais curtos.",
+                "Ao fracionar a mesma dose diária em tomadas menores e mais frequentes, cada pico individual é menor, já que se administra menos quantidade por vez — é a resposta correta.",
+                "Com intervalos mais curtos, o quociente pico/vale na verdade se reduz (menos oscilação relativa), não aumenta."
+            ],
+            "fantasma": [
+                "Não é tão direto, depende da relação com a meia-vida.",
+                "Isso não muda por fracionar a dose.",
+                "Essa aí! Menos quantidade por tomada, pico mais baixo.",
+                "É ao contrário, oscila menos."
+            ],
+            "gato": [
+                "Fijate: não é tão direto.",
+                "Dado curioso: não muda por isso.",
+                "Ronronado de aprovação! Picos menores.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma droga segue uma cinética de eliminação de ordem 0 (zero):",
+        "opcoes": [
+            "Aumentará a reabsorção do AAS no túbulo renal",
+            "Se a velocidade de eliminação aumenta ao diminuir a concentração de droga no compartimento.",
+            "Se ao aumentar a dose administrada, a porcentagem de droga eliminada por unidade de tempo também aumenta,",
+            "Se a porcentagem de droga eliminada por unidade de tempo diminui ao aumentar a concentração de droga no compartimento."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa opção é um distrator sobre reabsorção de AAS, sem relação com a definição de cinética de ordem 0.",
+                "Em ordem 0, a velocidade de eliminação é CONSTANTE, não aumenta ao diminuir a concentração.",
+                "Em ordem 0, ao aumentar a dose, a porcentagem eliminada por unidade de tempo na verdade DIMINUI, não aumenta.",
+                "Em ordem 0, como a quantidade absoluta eliminada por unidade de tempo é constante, essa quantidade representa uma porcentagem cada vez MENOR à medida que a concentração é maior; por isso a porcentagem eliminada diminui ao aumentar a concentração — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso não tem a ver com essa pergunta.",
+                "Essa velocidade é fixa, não muda assim.",
+                "É ao contrário, a porcentagem cai.",
+                "Essa aí! Quanto mais tem, menor é a porcentagem que sai."
+            ],
+            "gato": [
+                "Fijate: não tem a ver.",
+                "Dado curioso: é fixa.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação! A porcentagem cai."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um paciente ingere um fármaco com uma dosagem de 40 mg, 1 vez por dia. Uma vez atingido o platô, o fator de acumulação determinado é igual a 1.33. Qual é a meia-vida da droga?",
+        "opcoes": [
+            "24 hs",
+            "96 hs",
+            "48 hs",
+            "12 hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 24hs (τ/t½=1) daria um fator de acumulação de 2, não de 1,33.",
+                "Um valor de 96hs não corresponde ao fator de acumulação 1,33 com τ=24h.",
+                "Um valor de 48hs (τ/t½=0,5) daria um fator de acumulação de 3,41, não de 1,33.",
+                "Com Rac=1,33, resolve-se τ/t½=2; como τ=24h (dosagem diária), a meia-vida é t½=24h/2=12h — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa conta dá 2, não 1,33.",
+                "Essa conta não dá esse fator.",
+                "Essa conta dá 3,41, não 1,33.",
+                "Essa aí! Essa meia-vida dá exatamente 1,33."
+            ],
+            "gato": [
+                "Fijate: dá 2.",
+                "Dado curioso: não dá isso.",
+                "Miau, dá 3,41.",
+                "Ronronado de aprovação! A conta fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se uma droga segue uma cinética de ordem 1 (um):",
+        "opcoes": [
+            "Sua velocidade de eliminação (concentração de droga eliminada por unidade de tempo) é sempre a mesma e independente da concentração de droga no compartimento.",
+            "A representação concentração (ordenadas) vs. tempo (abscissas), em um gráfico aritmético, será a de uma reta com inclinação negativa.",
+            "Ao aumentar a dose administrada, teoricamente e em alguns casos, poderia ocorrer a saturação dos mecanismos de eliminação e mudar para uma cinética de ordem 0 (zero).",
+            "A porcentagem de droga eliminada por unidade de tempo é inversamente proporcional à concentração de droga no compartimento."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa descrição (velocidade constante e independente da concentração) corresponde à cinética de ordem 0, não à de ordem 1.",
+                "Em um gráfico ARITMÉTICO (escala normal), a cinética de ordem 1 dá uma curva exponencial decrescente, não uma reta; é no gráfico SEMILOGARÍTMICO que ordem 1 dá uma reta.",
+                "Se a dose de um fármaco de ordem 1 aumentar o suficiente, teoricamente os mecanismos de eliminação (de capacidade finita) podem saturar, fazendo com que a cinética mude para ordem 0 em doses altas — é a resposta correta.",
+                "Em ordem 1, a porcentagem eliminada por unidade de tempo é CONSTANTE, não inversamente proporcional à concentração."
+            ],
+            "fantasma": [
+                "Essa é a descrição da outra cinética.",
+                "Essa reta é no gráfico semilog, não no aritmético.",
+                "Essa aí! Com muita dose, pode saturar e mudar.",
+                "A porcentagem é fixa, não muda assim."
+            ],
+            "gato": [
+                "Fijate: é a outra.",
+                "Dado curioso: é o gráfico errado.",
+                "Ronronado de aprovação! Pode saturar.",
+                "Miau, é fixa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se o intervalo interdoses é de 2 meias-vidas, o fator de acumulação esperado será:",
+        "opcoes": [
+            "1.33",
+            "2",
+            "3.41",
+            "4"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com um intervalo de 2 meias-vidas (τ/t½=2), o fator de acumulação é Rac=1/(1-2^-2)=1/0,75=1,33 — é a resposta correta.",
+                "Um fator de 2 corresponde a um intervalo de 1 meia-vida (τ/t½=1), não de 2 meias-vidas.",
+                "Um fator de 3,41 corresponde a um intervalo de 0,5 meias-vidas, não de 2 meias-vidas.",
+                "Um fator de 4 não corresponde a nenhum intervalo simples relacionado com 2 meias-vidas."
+            ],
+            "fantasma": [
+                "Essa aí! Com duas meias-vidas, dá exatamente isso.",
+                "Esse é o número de uma só meia-vida.",
+                "Esse é o número de meia meia-vida.",
+                "Esse número não corresponde aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Duas meias-vidas.",
+                "Fijate: é de uma meia-vida.",
+                "Dado curioso: é da metade.",
+                "Miau, não corresponde."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma droga X tem um volume aparente de distribuição de aproximadamente 3,5 litros, indicando que possui:",
+        "opcoes": [
+            "Distribuição em toda a água corporal",
+            "Acumulação em tecido sinovial",
+            "Distribuição na água plasmática",
+            "Elevada lipossolubilidade e sequestro em gordura"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A água corporal total (~42L) é muito maior que 3,5L; essa opção não é consistente com o dado.",
+                "Não há evidência farmacológica padrão de acumulação específica em tecido sinovial associada a esse valor de Vd.",
+                "Um Vd de aproximadamente 3,5L coincide quase exatamente com o volume plasmático típico (~3L em um adulto), indicando que a droga X permanece praticamente confinada ao plasma, sem se distribuir aos tecidos — é a resposta correta.",
+                "Um Vd tão baixo (3,5L) é incompatível com elevada lipossolubilidade e sequestro em gordura, que exigiria valores de Vd muito mais altos."
+            ],
+            "fantasma": [
+                "Isso seria muito mais volume.",
+                "Isso não tem a ver com essa droga.",
+                "Essa aí! Fica só no sangue.",
+                "Pra gordura, o volume seria muito maior."
+            ],
+            "gato": [
+                "Fijate: seria mais.",
+                "Dado curioso: não tem a ver.",
+                "Ronronado de aprovação! Fica no sangue.",
+                "Miau, seria muito maior."
+            ]
+        }
+    },
+    {
+        "pergunta": "Quantas horas devem transcorrer para que se elimine 75% da dose inicial de um fármaco, se sua meia-vida é igual a 30 hs?",
+        "opcoes": [
+            "120 hs",
+            "60 hs",
+            "90 hs",
+            "30 hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 120hs (4 meias-vidas) corresponderia a eliminar 93,75%, mais do que o pedido.",
+                "Para eliminar 75% são necessárias 2 meias-vidas (1-(1/2)²=0,75); com t½=30h, isso equivale a 2×30h=60h — é a resposta correta.",
+                "Um valor de 90hs (3 meias-vidas) corresponderia a eliminar 87,5%, mais do que o pedido.",
+                "30 horas equivale a apenas 1 meia-vida, na qual se elimina 50%, não 75%."
+            ],
+            "fantasma": [
+                "Isso já seria demais.",
+                "Essa aí! Duas meias-vidas, exatamente 75%.",
+                "Isso também seria de mais.",
+                "Ali só foi embora a metade."
+            ],
+            "gato": [
+                "Fijate: seria demais.",
+                "Ronronado de aprovação! Exatamente 75%.",
+                "Dado curioso: também demais.",
+                "Miau, só a metade."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um fármaco que possui meia-vida de 6 horas é administrado com um padrão de dosagem de 200 mg a cada 12 hs por via oral. Considerando que se decide aumentar a dose para 400 mg a cada 12 horas, o tempo que se levará para alcançar uma nova concentração plasmática em estado estacionário (novo platô) é:",
+        "opcoes": [
+            "6 hs",
+            "24 hs",
+            "48 hs",
+            "12 hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "6 horas é muito pouco tempo, equivalente a apenas 1 meia-vida.",
+                "O tempo para alcançar um novo estado estacionário depende só da meia-vida (não da dose, que aqui mudou de 200 para 400mg); são necessárias aproximadamente 4 meias-vidas, e com t½=6h isso equivale a 24 horas — é a resposta correta.",
+                "48 horas equivale a 8 meias-vidas, muito mais do que o necessário para alcançar um platô praticamente completo.",
+                "12 horas equivale a apenas 2 meias-vidas, insuficiente para considerar alcançado um novo platô."
+            ],
+            "fantasma": [
+                "Isso é muito pouco tempo.",
+                "Essa aí! Com essa meia-vida, demora isso.",
+                "Isso é muito mais do que o necessário.",
+                "Ainda falta um pouco."
+            ],
+            "gato": [
+                "Fijate: muito pouco.",
+                "Ronronado de aprovação! Exatamente o que demora.",
+                "Dado curioso: demais.",
+                "Miau, ainda falta."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se a fração biodisponível de um fármaco por via oral é de 0.5 e a quantidade de droga que chega à circulação sistêmica é de 160 mg, então a quantidade de droga administrada foi:",
+        "opcoes": [
+            "32 mg",
+            "80 mg",
+            "320 mg",
+            "16 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 32mg não reproduz o cálculo Dose=160/0,5=320mg.",
+                "Um valor de 80mg não reproduz o cálculo correto com esses dados.",
+                "A dose administrada se calcula como Quantidade sistêmica/F=160mg/0,5=320mg — é a resposta correta.",
+                "Um valor de 16mg não reproduz o cálculo correto com esses dados."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Essa aí! 160 dividido por 0,5, dá 320.",
+                "Essa conta não dá isso."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: não dá isso.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Miau, não dá isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se a fração biodisponível de um fármaco administrado por via oral é de 0.75 e a quantidade de droga que chega à circulação sistêmica é de 150 mg, qual foi a dose administrada?",
+        "opcoes": [
+            "100 mg",
+            "150 mg",
+            "200 mg",
+            "250 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 100mg não reproduz o cálculo Dose=150/0,75=200mg.",
+                "Um valor de 150mg não reproduz o cálculo correto com esses dados.",
+                "A dose administrada se calcula como Quantidade sistêmica/F=150mg/0,75=200mg — é a resposta correta.",
+                "Um valor de 250mg não reproduz o cálculo correto com esses dados."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Essa aí! 150 dividido por 0,75, dá 200.",
+                "Essa conta não dá isso."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: não dá isso.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Miau, não dá isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual será a dose de ataque de um fármaco administrado com dose de manutenção de 500 mg a cada 0,5 meias-vidas?",
+        "opcoes": [
+            "250 mg",
+            "655 mg",
+            "1000 mg",
+            "1705 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 250mg subestima amplamente o fator de acumulação esperado para esse intervalo.",
+                "Um valor de 655mg não reproduz o cálculo correto com esses dados.",
+                "Um valor de 1000mg não reproduz o cálculo correto com esses dados.",
+                "Com τ=0,5 meias-vidas, o fator de acumulação é Rac=3,41; a dose de ataque é Dose de manutenção × Rac = 500mg × 3,41 = 1705mg — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa conta fica curta.",
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Essa aí! 500 vezes 3,41, dá exatamente isso."
+            ],
+            "gato": [
+                "Fijate: fica curto.",
+                "Dado curioso: não dá isso.",
+                "Miau, não dá isso.",
+                "Ronronado de aprovação! A conta fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um paciente ingere um fármaco com dosagem de 75 mg a cada 8 hs. A meia-vida da droga é de 16 hs. Qual seria a dose de ataque do fármaco?",
+        "opcoes": [
+            "99,75 mg.",
+            "105,75 mg.",
+            "150 mg",
+            "255,75 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 99,75mg não reproduz o cálculo Dose de manutenção × Rac com esses dados.",
+                "Com τ=8h e t½=16h, τ/t½=0,5, dando Rac=3,41; embora esse valor pareça razoável, o cálculo exato (75mg×3,41=255,75mg) corresponde a outra opção.",
+                "150mg não reproduz o cálculo correto com esses dados.",
+                "Com τ=8h e t½=16h (τ/t½=0,5), o fator de acumulação é Rac=3,41; a dose de ataque é 75mg×3,41=255,75mg — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Esse número não é o resultado final da conta.",
+                "Essa conta não dá isso.",
+                "Essa aí! 75 vezes 3,41, dá exatamente isso."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: não é o resultado.",
+                "Miau, não dá isso.",
+                "Ronronado de aprovação! A conta fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual será a concentração de uma droga às 10hs de administrada, sabendo que tem cinética de ordem 1, possui uma VM de 4hs e alcança seu pico máximo de 20ug/L às 2hs depois de administrada como dose única por via oral?",
+        "opcoes": [
+            "10 ug/L",
+            "5 ug/L",
+            "2,5 ug/L",
+            "1 ug/L"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 10 ug/L corresponderia a apenas 1 meia-vida desde o pico, não às 8 horas (2 meias-vidas) que transcorrem entre as 2h e as 10h.",
+                "Do pico (20µg/L às 2h) até as 10h transcorrem 8 horas, ou seja, 2 meias-vidas (t½=4h); a concentração cai para 20×(1/2)²=5µg/L — é a resposta correta.",
+                "Um valor de 2,5 ug/L corresponderia a 3 meias-vidas desde o pico, mais tempo do que transcorreu.",
+                "Um valor de 1 ug/L corresponderia a mais de 4 meias-vidas desde o pico, muito mais tempo do que transcorreu."
+            ],
+            "fantasma": [
+                "Essa é depois de só uma meia-vida.",
+                "Essa aí! Duas meias-vidas desde o pico, exatamente isso.",
+                "Essa é depois de três meias-vidas.",
+                "Essa é depois de muitas mais meias-vidas."
+            ],
+            "gato": [
+                "Fijate: é de antes.",
+                "Ronronado de aprovação! Duas meias-vidas exatas.",
+                "Dado curioso: é de depois.",
+                "Miau, muito mais tempo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Assinale a opção correta:",
+        "opcoes": [
+            "Na cinética bicompartimental a inclinação da fase alfa é muito pronunciada",
+            "O compartimento periférico normalmente é o plasma",
+            "Em casos de meningite, é pouco provável a passagem de drogas através da barreira hematoencefálica",
+            "O CYP3A4 metaboliza uma porcentagem desprezível para a maioria das drogas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "No modelo bicompartimental, a fase alfa (distribuição rápida) tem uma inclinação de decaimento muito pronunciada em comparação com a fase beta, mais gradual — é a resposta correta.",
+                "O compartimento periférico corresponde aos tecidos menos irrigados (músculo, gordura), não ao plasma, que é o compartimento central.",
+                "A meningite na verdade AUMENTA a permeabilidade da barreira hematoencefálica, facilitando (não dificultando) a passagem de fármacos que normalmente não a atravessam bem.",
+                "O CYP3A4 metaboliza aproximadamente 50% dos fármacos usados na clínica, sendo a isoforma mais importante, não uma com porcentagem desprezível."
+            ],
+            "fantasma": [
+                "Essa aí! Essa fase cai bem íngreme.",
+                "Esse é o compartimento central, não o periférico.",
+                "É ao contrário, facilita a passagem.",
+                "Esse metaboliza um monte, não pouquinho."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Queda íngreme.",
+                "Fijate: é o central.",
+                "Dado curioso: ao contrário.",
+                "Miau, metaboliza muito."
+            ]
+        }
+    },
+    {
+        "pergunta": "Assinale a incorreta com respeito ao Volume Aparente de Distribuição:",
+        "opcoes": [
+            "Se calcula como o quociente entre quantidade de droga e a concentração plasmática",
+            "É diretamente proporcional à meia-vida da droga",
+            "É dependente do volume real no qual se distribui a droga",
+            "Se é maior que o volume de água corporal total pode-se deduzir que a droga permanece no plasma"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: Vd se calcula precisamente como o quociente entre a quantidade de droga e a concentração plasmática; não é a incorreta buscada.",
+                "Essa afirmação é correta: segundo a fórmula t½=0,693×Vd/CL, a meia-vida é diretamente proporcional ao Vd (para um clearance dado); não é a incorreta buscada.",
+                "Essa afirmação é razoavelmente correta: o Vd aparente guarda relação com os volumes fisiológicos reais nos quais a droga se distribui, ainda que de forma indireta; não é a incorreta buscada.",
+                "Um Vd maior que o volume de água corporal total indica ACUMULAÇÃO EM TECIDOS (a droga sai extensamente do plasma), não que a droga \"permanece no plasma\"; na verdade, permanecer no plasma corresponderia a um Vd baixo — essa é a afirmação incorreta e a resposta buscada."
+            ],
+            "fantasma": [
+                "Essa é verdade, não é essa.",
+                "Essa é verdade, não é essa.",
+                "Essa é razoável, não é essa.",
+                "Essa aí! É ao contrário, vai pros tecidos."
+            ],
+            "gato": [
+                "Fijate: é verdade.",
+                "Dado curioso: é verdade.",
+                "Miau, é razoável.",
+                "Ronronado de aprovação! É a falsa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Indique o intervalo interdoses correto para conseguir uma acumulação de 25% da dose administrada:",
+        "opcoes": [
+            "4 VM",
+            "3 VM",
+            "2 VM",
+            "1 VM"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um intervalo de 4 meias-vidas daria uma acumulação (fração residual) muito menor que os 25% pedidos.",
+                "Um intervalo de 3 meias-vidas também daria uma fração residual menor que os 25% pedidos.",
+                "A fração residual da dose anterior ao administrar a seguinte é 2^(-τ/t½); para que seja 0,25 (25%), é necessário τ/t½=2, ou seja, um intervalo de 2 meias-vidas — é a resposta correta.",
+                "Um intervalo de apenas 1 meia-vida deixaria uma fração residual de 50%, muito mais do que os 25% buscados."
+            ],
+            "fantasma": [
+                "Com isso fica muito menos que 25%.",
+                "Com isso também fica menos que 25%.",
+                "Essa aí! Exatamente duas meias-vidas, dá 25%.",
+                "Com isso fica muito mais que 25%."
+            ],
+            "gato": [
+                "Fijate: fica menos.",
+                "Dado curioso: também menos.",
+                "Ronronado de aprovação! Exatamente 25%.",
+                "Miau, fica mais."
+            ]
+        }
+    },
+    {
+        "pergunta": "A AUC de um fármaco após ser administrado por via oral é a quarta parte da AUC posterior à administração por via endovenosa, então sua fração biodisponível é:",
+        "opcoes": [
+            "1",
+            "0,25",
+            "5",
+            "0,001"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma biodisponibilidade de 1 implicaria que a AUC oral é igual à AUC IV, não uma quarta parte dela.",
+                "Se a AUC oral é a quarta parte (1/4) da AUC IV, a fração biodisponível é F=AUC_oral/AUC_IV=1/4=0,25 — é a resposta correta.",
+                "Um valor de 5 não é possível para uma fração biodisponível, que por definição está entre 0 e 1.",
+                "Um valor de 0,001 não corresponde a uma AUC oral igual à quarta parte da AUC IV."
+            ],
+            "fantasma": [
+                "Igual não é uma quarta parte.",
+                "Essa aí! Um quarto é 0,25 exato.",
+                "Isso não pode ser uma biodisponibilidade.",
+                "Isso seria quase nada, não um quarto."
+            ],
+            "gato": [
+                "Fijate: não é igual.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: impossível.",
+                "Miau, seria quase nada."
+            ]
+        }
     }
 ]
