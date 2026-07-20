@@ -2787,7 +2787,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção EXCETO (incorreta)",
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El CYP3A4 SÍ es inducible (por ejemplo, por rifampicina o hierba de San Juan), por lo que no es la excepción buscada.",
+                    "El CYP2D6 es la excepción clásica entre los principales citocromos: no presenta un mecanismo de inducción significativo conocido, a diferencia de otras isoformas — es la respuesta correcta.",
+                    "El CYP2C9 SÍ es inducible (por ejemplo, por rifampicina), por lo que no es la excepción buscada.",
+                    "El CYP2A6 SÍ es inducible, por lo que no es la excepción buscada."
+                ],
+                "fantasma": [
+                    "Ese sí se induce.",
+                    "¡Esta! Ese es el que no se deja inducir.",
+                    "Ese sí se induce.",
+                    "Ese sí se induce."
+                ],
+                "gato": [
+                    "Fijate: sí se induce.",
+                    "¡Ronroneo de aprobación! El rebelde que no se induce.",
+                    "Dato curioso: sí se induce.",
+                    "Miau, sí se induce."
+                ]
+            }
         },
         {
             "numero": 62,
@@ -2812,8 +2832,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El pKa no es una medida de la potencia del fármaco; la potencia es un concepto farmacodinámico distinto, relacionado con la dosis necesaria para producir un efecto.",
+                    "El pKa es una magnitud característica de la propia droga, determinada por su estructura química, que representa el pH al cual la mitad de sus moléculas está ionizada — es la respuesta correcta.",
+                    "El pKa NO es una característica del medio; es una propiedad intrínseca de la droga. Lo que sí depende del medio es el pH, que junto al pKa determina el grado de disociación.",
+                    "El pKa no describe el pH de máxima disolución en lípidos; describe el punto de disociación ácido-base de la molécula."
+                ],
+                "fantasma": [
+                    "Eso es otra cosa, la potencia.",
+                    "¡Esta! Es de la droga, por su estructura.",
+                    "Es al revés, es de la droga, no del medio.",
+                    "No es de disolverse en grasa, es de disociarse."
+                ],
+                "gato": [
+                    "Fijate: es otra cosa.",
+                    "¡Ronroneo de aprobación! Propiedad de la droga.",
+                    "Dato curioso: al revés.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 63,
@@ -2838,8 +2878,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Al inducir el citocromo, el metabolismo se acelera, por lo que la vida media del fármaco DISMINUYE, no aumenta.",
+                    "Al inducirse el citocromo que metaboliza este fármaco, su eliminación se acelera y su concentración plasmática disponible disminuye, reduciendo su eficacia clínica — es la respuesta correcta.",
+                    "Con un metabolismo acelerado por inducción, la concentración en fase estacionaria DISMINUYE (para una misma dosis), no aumenta.",
+                    "La inducción ACELERA (no enlentece) la eliminación del fármaco, ya que aumenta la actividad de la enzima que lo metaboliza."
+                ],
+                "fantasma": [
+                    "Es al revés, baja.",
+                    "¡Esta! Se metaboliza más y hace menos efecto.",
+                    "Es al revés, baja.",
+                    "Es al revés, se elimina más rápido."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Menos droga, menos efecto.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 64,
@@ -2865,7 +2925,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La mayor parte de los fármacos liposolubles no ionizados se reabsorben en el túbulo renal por difusión simple, atravesando pasivamente las membranas tubulares — es la respuesta correcta.",
+                    "La ultrafiltración ocurre a nivel glomerular (en la formación de la orina primaria), no como mecanismo de reabsorción tubular.",
+                    "La difusión facilitada, mediada por transportadores específicos, no es el mecanismo predominante de reabsorción para la mayoría de los fármacos.",
+                    "El transporte ligado al sodio es un mecanismo específico para ciertos solutos (como la glucosa), no el mecanismo predominante para la mayoría de los fármacos."
+                ],
+                "fantasma": [
+                    "¡Esta! Pasa solita por la membrana.",
+                    "Esa es de otra etapa, en el glomérulo.",
+                    "Esa necesita un transportador especial.",
+                    "Ese es para otras cosas, no fármacos en general."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Pasa sola.",
+                    "Fijate: es otra etapa.",
+                    "Dato curioso: necesita ayuda.",
+                    "Miau, es para otra cosa."
+                ]
+            }
         },
         {
             "numero": 65,
@@ -2891,7 +2971,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La biofase es el sitio (generalmente el receptor o tejido diana) donde el fármaco ejerce su acción farmacológica — es la respuesta correcta.",
+                    "El sitio donde más se absorbe el fármaco no se denomina biofase; ese concepto pertenece a la etapa de absorción.",
+                    "El sitio de eliminación más rápida no se denomina biofase; ese concepto pertenece a la etapa de eliminación.",
+                    "El sitio de mayor ionización no se denomina biofase; eso depende del pKa de la droga y el pH de cada compartimento."
+                ],
+                "fantasma": [
+                    "¡Esta! Donde el fármaco hace su trabajo.",
+                    "Eso es de la absorción, no de esto.",
+                    "Eso es de la eliminación, no de esto.",
+                    "Eso depende del pKa, no es esto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Donde actúa.",
+                    "Fijate: es otra etapa.",
+                    "Dato curioso: es otra etapa.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 66,
@@ -2917,7 +3017,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La ultrafiltración no depende de un transportador, por lo que no genera interacciones por competencia de este tipo.",
+                    "La secreción tubular es un mecanismo distinto (activo, mediado por transportadores), no la ultrafiltración (que ocurre pasivamente en el glomérulo).",
+                    "Como la ultrafiltración es un proceso pasivo, no saturable, proporcional a la concentración plasmática del fármaco, una droga eliminada únicamente por este mecanismo seguirá una cinética de orden 1 (eliminación proporcional a la concentración) — es la respuesta correcta.",
+                    "La ultrafiltración deja pasar solutos pequeños independientemente de su grado de ionización; es la reabsorción tubular posterior la que sí depende de la ionización."
+                ],
+                "fantasma": [
+                    "Esa no usa transportador.",
+                    "Esa es otra etapa, en el túbulo.",
+                    "¡Esta! Va proporcional a la cantidad que hay.",
+                    "Eso importa después, en la reabsorción."
+                ],
+                "gato": [
+                    "Fijate: no usa transportador.",
+                    "Dato curioso: es otra etapa.",
+                    "¡Ronroneo de aprobación! Proporcional siempre.",
+                    "Miau, es después."
+                ]
+            }
         },
         {
             "numero": 67,
@@ -2943,7 +3063,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El gradiente electroquímico y la afinidad por el transportador son propios del transporte activo, no de la ultrafiltración.",
+                    "El filtrado glomerular es el resultado del proceso, no uno de sus factores determinantes; y el grado de ionización no determina el paso por ultrafiltración (que no distingue por carga, solo por tamaño).",
+                    "La ultrafiltración depende de la diferencia de presión hidrostática entre los compartimentos (que impulsa el filtrado) y del flujo sanguíneo renal (que determina cuánto plasma llega al glomérulo) — es la respuesta correcta.",
+                    "La liposolubilidad y el grado de ionización son determinantes de la difusión simple, no de la ultrafiltración."
+                ],
+                "fantasma": [
+                    "Eso es de transporte activo.",
+                    "Eso no es factor, es resultado.",
+                    "¡Esta! Presión y flujo de sangre.",
+                    "Eso es de la difusión simple."
+                ],
+                "gato": [
+                    "Fijate: transporte activo.",
+                    "Dato curioso: es el resultado.",
+                    "¡Ronroneo de aprobación! Presión y flujo.",
+                    "Miau, es de difusión simple."
+                ]
+            }
         },
         {
             "numero": 68,
@@ -2969,7 +3109,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Aumentar la velocidad del vaciado gástrico generalmente ACELERA la absorción, pero no suele producir toxicidad abrupta en un tratamiento crónico ya estable.",
+                    "Aumentar la unión a proteínas plasmáticas reduciría (no aumentaría) la fracción libre activa del fármaco, disminuyendo (no aumentando) su efecto/toxicidad.",
+                    "La aparición súbita de toxicidad en un paciente con dosis de mantenimiento estable sugiere que un nuevo fármaco está inhibiendo el metabolismo hepático de la medicación crónica, elevando sus niveles plasmáticos por encima del rango terapéutico — es la respuesta correcta.",
+                    "Disminuir la absorción gastrointestinal reduciría (no aumentaría) los niveles plasmáticos del fármaco, lo opuesto a un cuadro de toxicidad."
+                ],
+                "fantasma": [
+                    "Eso no explica una toxicidad así de golpe.",
+                    "Es al revés, bajaría el efecto.",
+                    "¡Esta! Frena el metabolismo y se acumula.",
+                    "Es al revés, bajaría los niveles."
+                ],
+                "gato": [
+                    "Fijate: no explica esto.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Se acumula.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 69,
@@ -2995,7 +3155,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La reabsorción tubular ocurre a lo largo de la nefrona (no solo en el túbulo proximal) y depende principalmente de la liposolubilidad/ionización, más que de una \"solubilidad\" genérica no especificada.",
+                    "El sistema de transporte de aniones orgánicos (STAO/OAT) participa activamente en la secreción tubular, y al ser compartido por varios fármacos, es un sitio común de interacciones por competencia — es la respuesta correcta.",
+                    "Los fármacos suelen biotransformarse hacia compuestos MÁS hidrosolubles (no liposolubles) para facilitar su excreción; ser liposoluble en realidad facilitaría la reabsorción, no la eliminación.",
+                    "El CYP3A4 (no el CYP2D6) es la isoforma responsable de metabolizar aproximadamente el 50% de los fármacos."
+                ],
+                "fantasma": [
+                    "Pasa por toda la nefrona, no solo ahí.",
+                    "¡Esta! Ahí compiten y se estorban.",
+                    "Es al revés, se vuelven solubles en agua.",
+                    "Ese no es el que más metaboliza."
+                ],
+                "gato": [
+                    "Fijate: es en toda la nefrona.",
+                    "¡Ronroneo de aprobación! Ahí compiten.",
+                    "Dato curioso: al revés.",
+                    "Miau, no es ese."
+                ]
+            }
         },
         {
             "numero": 70,
@@ -3021,7 +3201,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El sitio de absorción no se denomina biofase; ese es un concepto distinto de la etapa de absorción.",
+                    "El lugar de eliminación no se denomina biofase; ese concepto pertenece a la etapa de eliminación.",
+                    "La biofase es el sitio donde el fármaco ejerce su acción farmacológica, generalmente en o cerca de su receptor — es la respuesta correcta.",
+                    "El compartimiento de acumulación del fármaco no se denomina biofase; eso se relaciona más con el volumen de distribución y depósitos tisulares."
+                ],
+                "fantasma": [
+                    "Eso es de la absorción.",
+                    "Eso es de la eliminación.",
+                    "¡Esta! Donde el fármaco hace su trabajo.",
+                    "Eso es de dónde se acumula, no de esto."
+                ],
+                "gato": [
+                    "Fijate: es otra etapa.",
+                    "Dato curioso: es otra etapa.",
+                    "¡Ronroneo de aprobación! Donde actúa.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 71,
@@ -3047,7 +3247,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Este orden coloca al intestino delgado primero (como si fuera el menor), cuando en realidad tiene la mayor superficie de las cuatro.",
+                    "Este orden también coloca al intestino delgado primero, invirtiendo el orden real de menor a mayor superficie.",
+                    "Este orden coloca a la piel antes que el intestino delgado pero después del estómago; sin embargo, invierte la posición de pulmón e intestino delgado respecto al orden real.",
+                    "De menor a mayor superficie de absorción: estómago (la más pequeña), piel, pulmón, e intestino delgado (la mayor, gracias a las microvellosidades) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Empezaste por el más grande.",
+                    "Empezaste por el más grande.",
+                    "Casi, pero cambiaste el orden al final.",
+                    "¡Esta! De chico a grande, en ese orden."
+                ],
+                "gato": [
+                    "Fijate: empezaste al revés.",
+                    "Dato curioso: empezaste al revés.",
+                    "Miau, casi.",
+                    "¡Ronroneo de aprobación! El orden correcto."
+                ]
+            }
         },
         {
             "numero": 72,
@@ -3073,7 +3293,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La vía rectal evita parcialmente (según la porción del recto) el primer paso hepático, por lo que no garantiza la biotransformación necesaria para activar la prodroga.",
+                    "La vía oral favorece que el fármaco pase primero por el hígado (vía la circulación portal) antes de llegar a la circulación sistémica, lo cual es precisamente lo que se necesita para que una prodroga se biotransforme en su forma activa — es la respuesta correcta.",
+                    "La vía sublingual evita el primer paso hepático (drena directamente a la circulación sistémica), por lo que no favorecería la activación hepática de la prodroga.",
+                    "La vía transdérmica evita el primer paso hepático, por lo que no sería la más adecuada para activar una prodroga que depende del metabolismo hepático."
+                ],
+                "fantasma": [
+                    "Esa a veces evita el hígado.",
+                    "¡Esta! Pasa por el hígado primero, como se necesita.",
+                    "Esa evita el hígado directo.",
+                    "Esa evita el hígado directo."
+                ],
+                "gato": [
+                    "Fijate: a veces evita.",
+                    "¡Ronroneo de aprobación! Pasa por el hígado.",
+                    "Dato curioso: evita el hígado.",
+                    "Miau, evita el hígado."
+                ]
+            }
         },
         {
             "numero": 73,
@@ -3099,7 +3339,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Esta opción incluye la 'reabsorción tubular', que es un proceso renal ajeno a la absorción oral/intestinal, no un factor de la absorción por esta vía.",
+                    "Esta opción también incluye la 'reabsorción tubular', un proceso renal que no pertenece a los factores de absorción oral.",
+                    "Esta opción igualmente incluye la 'reabsorción tubular', que no es relevante para la absorción de un fármaco por vía oral.",
+                    "La absorción oral depende del pKa del fármaco y el pH gastrointestinal (que determinan la ionización), el tránsito digestivo (que determina el tiempo de contacto con la superficie absortiva) y el metabolismo de la luz intestinal (que puede degradar el fármaco antes de absorberse) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es del riñón, no de acá.",
+                    "Eso es del riñón, no de acá.",
+                    "Eso es del riñón, no de acá.",
+                    "¡Esta! Los cuatro factores de la absorción oral."
+                ],
+                "gato": [
+                    "Fijate: es del riñón.",
+                    "Dato curioso: es del riñón.",
+                    "Miau, es del riñón.",
+                    "¡Ronroneo de aprobación! Los cuatro juntos."
+                ]
+            }
         },
         {
             "numero": 74,
@@ -3125,7 +3385,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Con orina a pH 5 (solo 1 unidad por encima del pKa 4 de este ácido), la diferencia pH-pKa es la más pequeña entre las opciones, lo que da la mayor fracción no ionizada (FNI) relativa de las cuatro — es la respuesta correcta.",
+                    "El intestino, con un pH mucho más alcalino (~6-7) que el pKa 4 de este ácido, tendría una FNI mucho menor que en la orina a pH 5.",
+                    "El LCR, con un pH cercano al plasmático (~7,3), está muy por encima del pKa 4, dando una FNI muy baja.",
+                    "La orina a pH 9 está muy por encima del pKa 4, dando la FNI más baja de las cuatro opciones, no la mayor."
+                ],
+                "fantasma": [
+                    "¡Esta! Ahí el pH está más cerca del pKa.",
+                    "Ahí está lejos del pKa.",
+                    "Ahí está lejos del pKa.",
+                    "Ahí está lo más lejos posible del pKa."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Más cerca, más FNI.",
+                    "Fijate: lejos.",
+                    "Dato curioso: lejos.",
+                    "Miau, lo más lejos."
+                ]
+            }
         },
         {
             "numero": 75,
@@ -3151,7 +3431,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Aunque la inducción acelera inicialmente la formación del metabolito activo de la prodroga X, el mismo sistema enzimático inducido también acelera su posterior eliminación/inactivación, por lo que la exposición neta en estado estacionario al metabolito activo puede terminar siendo menor, reduciendo la eficacia clínica respecto a la situación sin inducción — es la respuesta correcta.",
+                    "La potencia de un fármaco es una propiedad farmacodinámica intrínseca de la interacción fármaco-receptor; no se modifica por procesos cinéticos como la inducción enzimática.",
+                    "La inducción del citocromo activador debería, en principio, AUMENTAR (no disminuir) la cantidad de metabolito activo sintetizado a partir de la prodroga.",
+                    "Si el metabolito de X fuera tóxico, la inducción tendería a generar MÁS metabolito, lo que en principio se esperaría que aumente (no disminuya) el riesgo de efectos adversos."
+                ],
+                "fantasma": [
+                    "¡Esta! Se activa rápido pero también se va rápido.",
+                    "Esa no cambia por esto.",
+                    "Es al revés, aumenta.",
+                    "Es al revés, aumentaría el riesgo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Un balance complicado.",
+                    "Fijate: no cambia.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 76,
@@ -3177,7 +3477,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Esta descripción corresponde al primer paso hepático (metabolismo presistémico), no al circuito enterohepático, que ocurre después de que la droga ya estuvo en circulación sistémica.",
+                    "El circuito enterohepático en realidad PROLONGA la presencia de la droga en el organismo, en lugar de ser un mecanismo de eliminación presistémica (concepto distinto, relacionado con el primer paso).",
+                    "El circuito enterohepático puede interrumpirse (por ejemplo, con antibióticos que alteran la flora intestinal), y esto reduce la reabsorción de la droga, acortando su vida media efectiva — es la respuesta correcta.",
+                    "El circuito enterohepático depende de la excreción biliar de la droga, la cual no está limitada exclusivamente a la administración por vía oral o rectal."
+                ],
+                "fantasma": [
+                    "Eso es otra cosa, el primer paso.",
+                    "Es al revés, alarga la droga.",
+                    "¡Esta! Se puede cortar y todo dura menos.",
+                    "No es solo por esas vías."
+                ],
+                "gato": [
+                    "Fijate: es otra cosa.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Se puede cortar.",
+                    "Miau, no es exclusivo."
+                ]
+            }
         },
         {
             "numero": 77,
@@ -3202,8 +3522,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
-            "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "resposta_correta": "C",
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La secreción tubular activa SÍ depende del flujo sanguíneo renal, ya que este determina cuánto fármaco llega a los túbulos para ser transportado; esta afirmación es correcta, no es la buscada.",
+                    "La secreción tubular SÍ puede generar interacciones entre drogas, al compartir transportadores (como el STAO); esta afirmación es correcta, no es la buscada.",
+                    "A diferencia de la reabsorción tubular pasiva (que sí depende del pH urinario, por su efecto sobre la ionización), la secreción tubular activa es un proceso mediado por transportadores específicos y no depende directamente del pH urinario — esta es la afirmación incorrecta y la respuesta buscada.",
+                    "La secreción tubular SÍ depende de la afinidad de la droga por el transportador específico; esta afirmación es correcta, no es la buscada."
+                ],
+                "fantasma": [
+                    "Esa es verdad, no es esta.",
+                    "Esa es verdad, no es esta.",
+                    "¡Esta! Eso depende de la reabsorción, no de la secreción.",
+                    "Esa es verdad, no es esta."
+                ],
+                "gato": [
+                    "Fijate: es verdad.",
+                    "Dato curioso: es verdad.",
+                    "¡Ronroneo de aprobación! Es la falsa.",
+                    "Miau, es verdad."
+                ]
+            }
         },
         {
             "numero": 78,
@@ -3228,8 +3568,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La porción superior del recto drena hacia la vena porta, por lo que un fármaco administrado por esta vía puede sufrir metabolismo de primer paso hepático, a diferencia de las demás vías listadas — es la respuesta correcta.",
+                    "La vía intravenosa introduce el fármaco directamente en la circulación sistémica, evitando por completo el paso previo por el hígado; es precisamente la vía usada quirúrgicamente para EVITAR el primer paso hepático.",
+                    "La vía intramuscular permite la absorción directa hacia la circulación sistémica a través de los capilares musculares, sin pasar primero por la vena porta.",
+                    "La vía transdérmica permite la absorción directa hacia la circulación sistémica a través de la piel, evitando el paso hepático inicial."
+                ],
+                "fantasma": [
+                    "¡Esta! La parte de arriba pasa por el hígado primero.",
+                    "Esa va directo a la sangre, sin pasar por el hígado.",
+                    "Esa va directo a la sangre.",
+                    "Esa va directo a la sangre."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La parte alta pasa por el hígado.",
+                    "Fijate: directo a la sangre.",
+                    "Dato curioso: directo a la sangre.",
+                    "Miau, directo a la sangre."
+                ]
+            }
         },
         {
             "numero": 79,
@@ -3255,7 +3615,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Con un pH urinario (6) mucho más ácido que el pKa (9) de esta base, la fracción NO ionizada DISMINUYE, no aumenta.",
+                    "Con un pH urinario (6) más ácido que el pKa (9) de esta base, la base se ioniza más, aumentando su fracción ionizada — es la respuesta correcta.",
+                    "Al aumentar la ionización de esta base en un medio más ácido, la reabsorción DISMINUYE (no aumenta), ya que la forma ionizada no atraviesa fácilmente las membranas tubulares.",
+                    "Al aumentar la ionización de esta base, la eliminación AUMENTA (no disminuye), ya que se reabsorbe menos y se excreta más."
+                ],
+                "fantasma": [
+                    "Es al revés, baja.",
+                    "¡Esta! Se ioniza más en ese medio ácido.",
+                    "Es al revés, baja.",
+                    "Es al revés, sube."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Se ioniza más.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 80,
@@ -3281,7 +3661,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El pKa es más relevante para procesos pasivos como la difusión simple y la reabsorción, no es el factor preponderante en la secreción tubular activa.",
+                    "La secreción tubular es un proceso activo mediado por transportadores específicos; la afinidad de la droga por dicho transportador es el factor determinante clave de este mecanismo — es la respuesta correcta.",
+                    "La unión a proteínas plasmáticas influye más en la distribución y en la filtración glomerular (al limitar qué fracción se filtra), no es el factor preponderante en la secreción tubular activa.",
+                    "El coeficiente de partición lípido/agua es relevante para la difusión simple pasiva, no para la secreción tubular activa mediada por transportadores."
+                ],
+                "fantasma": [
+                    "Eso importa más en lo pasivo.",
+                    "¡Esta! El transportador decide todo acá.",
+                    "Eso importa más en la distribución.",
+                    "Eso importa más en la difusión simple."
+                ],
+                "gato": [
+                    "Fijate: es de lo pasivo.",
+                    "¡Ronroneo de aprobación! El transportador manda.",
+                    "Dato curioso: es de distribución.",
+                    "Miau, es de difusión simple."
+                ]
+            }
         },
         {
             "numero": 81,
