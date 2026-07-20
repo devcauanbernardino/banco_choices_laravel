@@ -4638,5 +4638,585 @@
                 "Miau, seria quase nada."
             ]
         }
+    },
+    {
+        "pergunta": "Se se administra uma droga por IV com dose de manutenção e a intervalos regulares menores que 4 meias-vidas, o quociente entre a concentração alcançada no platô e a obtida imediatamente após a primeira dose nos dá o valor:",
+        "opcoes": [
+            "Do fator de acumulação",
+            "Da dose de ataque",
+            "Do pico plasmático",
+            "Da constante de eliminação"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O quociente entre a concentração no platô e a obtida após a primeira dose é, por definição, o fator de acumulação — é a resposta correta.",
+                "A dose de ataque é uma quantidade de fármaco (mg), não um quociente entre concentrações.",
+                "O pico plasmático é um valor de concentração pontual, não um quociente entre duas concentrações.",
+                "A constante de eliminação (k) é uma taxa (unidades de tempo⁻¹), não um quociente adimensional entre concentrações."
+            ],
+            "fantasma": [
+                "Essa aí! Isso é exatamente o fator de acumulação.",
+                "Isso é uma quantidade, não um quociente.",
+                "Isso é um valor só, não uma relação.",
+                "Isso é outra unidade, não esse quociente."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Por definição.",
+                "Fijate: é uma quantidade.",
+                "Dado curioso: é um valor só.",
+                "Miau, outra unidade."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se se administra uma droga com dose de manutenção igual a 100mg com intervalos regulares de 2 meias-vidas, o quociente entre a concentração alcançada no platô e a obtida após a primeira dose será de:",
+        "opcoes": [
+            "1,33",
+            "2",
+            "3,41",
+            "14,93"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com τ/t½=2, o fator de acumulação é Rac=1/(1-2^-2)=1/0,75=1,33 — é a resposta correta.",
+                "Um valor de 2 corresponde a um intervalo de 1 meia-vida (τ/t½=1), não de 2 meias-vidas.",
+                "Um valor de 3,41 corresponde a um intervalo de 0,5 meias-vidas, não de 2 meias-vidas.",
+                "Um valor de 14,93 não corresponde a nenhum intervalo simples relacionado com 2 meias-vidas."
+            ],
+            "fantasma": [
+                "Essa aí! Com duas meias-vidas, dá exatamente isso.",
+                "Esse é o número de uma só meia-vida.",
+                "Esse é o número de meia meia-vida.",
+                "Esse número não corresponde aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Duas meias-vidas.",
+                "Fijate: é de uma meia-vida.",
+                "Dado curioso: é da metade.",
+                "Miau, não corresponde."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se administra 1000 mg de uma droga por via IV e a concentração da droga em função do tempo diminui sempre 20mg/ml por hora, então:",
+        "opcoes": [
+            "A velocidade de eliminação é constante",
+            "A velocidade de eliminação é proporcional à concentração da droga",
+            "Em intervalos de tempo regulares se elimina a mesma porcentagem da droga",
+            "A velocidade de eliminação segue uma cinética dose-independente"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma queda de concentração de exatamente 20mg/ml a cada hora, sem importar a concentração presente, descreve precisamente uma velocidade de eliminação constante — é a resposta correta.",
+                "Se a velocidade fosse proporcional à concentração, a queda não seria sempre a mesma quantidade fixa por hora, mas iria diminuindo à medida que a concentração cai; isso descreveria ordem 1, não o observado aqui.",
+                "Eliminar a mesma quantidade fixa por hora significa que a PORCENTAGEM eliminada vai mudando (aumentando relativamente à medida que resta menos droga), não que se mantenha constante.",
+                "Uma velocidade constante como a descrita é característica da cinética de ordem 0, que é precisamente dose-DEPENDENTE (não independente), já que sua meia-vida varia com a dose."
+            ],
+            "fantasma": [
+                "Essa aí! Sempre a mesma quantidade por hora.",
+                "Se fosse assim, a queda iria mudando.",
+                "Essa porcentagem na verdade vai mudando.",
+                "Essa cinética depende da dose, não é independente."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Quantidade fixa sempre.",
+                "Fijate: iria mudando.",
+                "Dado curioso: a porcentagem muda.",
+                "Miau, depende da dose."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas que possuem cinética de eliminação de ordem 1:",
+        "opcoes": [
+            "Apresentam farmacocinética não linear (dose dependente)",
+            "Se eliminam de forma independente da concentração presente no plasma",
+            "São eliminadas em quantidades constantes na unidade de tempo",
+            "Apresentam um mecanismo de eliminação não saturável."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cinética de ordem 1 é LINEAR (dose-independente), não não linear.",
+                "Em ordem 1, a eliminação SIM depende (é proporcional) da concentração plasmática, não é independente dela.",
+                "Eliminar uma quantidade constante por unidade de tempo descreve a cinética de ordem 0, não a de ordem 1.",
+                "A cinética de ordem 1 se caracteriza por um mecanismo de eliminação não saturável, diferente da de ordem 0 — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, é linear.",
+                "Sim depende, é proporcional.",
+                "Essa é a outra cinética, quantidade fixa.",
+                "Essa aí! Nunca satura."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: sim depende.",
+                "Miau, é a outra.",
+                "Ronronado de aprovação! Não satura."
+            ]
+        }
+    },
+    {
+        "pergunta": "A meia-vida de eliminação é:",
+        "opcoes": [
+            "Diretamente proporcional à constante de eliminação",
+            "Independente da constante de eliminação",
+            "Constante para drogas de cinética de ordem 0",
+            "Constante para drogas de cinética de ordem 1"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A meia-vida é INVERSAMENTE (não diretamente) proporcional à constante de eliminação (t½=0,693/k).",
+                "A meia-vida SIM depende da constante de eliminação, através da fórmula t½=0,693/k.",
+                "Em ordem 0 ocorre precisamente o contrário: a meia-vida VARIA conforme a concentração/dose, não é constante.",
+                "A meia-vida é constante para drogas com cinética de ordem 1, independentemente da dose administrada — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, é inversa.",
+                "Sim depende dessa constante.",
+                "Ali muda, não é constante.",
+                "Essa aí! Sempre a mesma em ordem 1."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: sim depende.",
+                "Miau, ali muda.",
+                "Ronronado de aprovação! Sempre a mesma."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma droga determinada com cinética de eliminação de ordem 1, T½ = 2hs se elimina mais de 90% aproximadamente em:",
+        "opcoes": [
+            "6hs",
+            "8hs",
+            "4hs",
+            "5hs"
+        ],
+        "explicacoes": {
+            "robo": [
+                "6 horas equivale a 3 meias-vidas, eliminando 87,5%, ainda abaixo dos 90% buscados.",
+                "Para superar 90% de eliminação são necessárias pelo menos 4 meias-vidas (1-(1/2)⁴=93,75%); com t½=2h, isso equivale a 8h — é a resposta correta.",
+                "4 horas equivale a apenas 2 meias-vidas, eliminando 75%, bem abaixo dos 90%.",
+                "5 horas equivale a apenas 2,5 meias-vidas, eliminando aproximadamente 82%, ainda abaixo dos 90% buscados."
+            ],
+            "fantasma": [
+                "Ali ainda não chega aos 90%.",
+                "Essa aí! Com quatro meias-vidas, já passa dos 90%.",
+                "Ali está longe dos 90%.",
+                "Ali ainda não chega aos 90%."
+            ],
+            "gato": [
+                "Fijate: não chega.",
+                "Ronronado de aprovação! Passa dos 90%.",
+                "Dado curioso: está longe.",
+                "Miau, não chega."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma droga segue uma cinética de eliminação linear ou dose-independente:",
+        "opcoes": [
+            "Se em doses baixas administradas segue uma cinética de ordem 1 e em doses altas de ordem 0",
+            "Se os mecanismos pelos quais é eliminada nunca chegam a saturar-se.",
+            "Se permanentemente segue uma cinética de ordem 0",
+            "Se sua velocidade de eliminação (concentração de droga eliminada por unidade de tempo) é independente da quantidade da droga no compartimento."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa descrição corresponde a uma farmacocinética NÃO linear (mista), contraditória com o conceito de cinética \"dose-independente\" apresentado no enunciado.",
+                "Uma cinética linear ou dose-independente ocorre precisamente quando os mecanismos de eliminação nunca chegam a saturar no intervalo de doses usado, mantendo a proporcionalidade característica da ordem 1 — é a resposta correta.",
+                "A cinética de ordem 0 é precisamente a dose-DEPENDENTE (não independente), já que sua meia-vida varia com a dose administrada.",
+                "Essa descrição (velocidade independente da quantidade de droga) corresponde à cinética de ordem 0, não à linear/dose-independente (que é ordem 1, com velocidade proporcional à concentração)."
+            ],
+            "fantasma": [
+                "Essa é uma cinética mista, não essa.",
+                "Essa aí! Nunca acaba a capacidade.",
+                "Essa é a dose-dependente, a outra.",
+                "Essa descreve a outra cinética."
+            ],
+            "gato": [
+                "Fijate: é mista.",
+                "Ronronado de aprovação! Nunca satura.",
+                "Dado curioso: é a outra.",
+                "Miau, descreve a outra."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um paciente é tratado com um fármaco em doses fixas a intervalos regulares. Uma vez atingido o platô, os valores séricos oscilam estáveis entre um máximo de 200 ng/ml e um mínimo de 50 ng/ml. Considerando que a dose de manutenção é de 100 mg, qual é a dose de ataque?",
+        "opcoes": [
+            "341 mg",
+            "200 mg",
+            "133 mg",
+            "100 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 341mg corresponde ao fator de acumulação de um intervalo de 0,5 meias-vidas (Rac=3,41), não ao deste caso.",
+                "Um valor de 200mg simplesmente dobra a dose de manutenção, sem aplicar o fator de acumulação correto.",
+                "O quociente pico/vale de 200/50=4=2^(τ/t½) dá τ/t½=2, com fator de acumulação Rac=1/(1-2^-2)=1,33; a dose de ataque é 100mg×1,33≈133mg — é a resposta correta.",
+                "Um valor de 100mg seria simplesmente a dose de manutenção sem aplicar nenhum fator de acumulação."
+            ],
+            "fantasma": [
+                "Esse fator é de outro intervalo.",
+                "Isso é só dobrar, sem a conta real.",
+                "Essa aí! Essa conta dá exatamente 133.",
+                "Isso é só a dose normal, sem mais nada."
+            ],
+            "gato": [
+                "Fijate: é de outro intervalo.",
+                "Dado curioso: falta a conta.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Miau, falta algo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em qual compartimento se encontra um fármaco se administrados por bolo intravenoso uma dose única de 300 mg e a concentração máxima alcançada no plasma é de 100 mg/L?",
+        "opcoes": [
+            "No plasma exclusivamente.",
+            "No plasma e água intracelular.",
+            "Acumulado em algum tecido.",
+            "No plasma e interstício."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O volume de distribuição calculado (Vd=300mg/100mg/L=3L) é praticamente idêntico ao volume plasmático típico (~3L), indicando que o fármaco permanece exclusivamente no plasma — é a resposta correta.",
+                "Um Vd tão baixo (3L) é incompatível com uma distribuição que alcance também a água intracelular, que exigiria um Vd muito maior.",
+                "Um Vd de apenas 3L não é compatível com acumulação tecidual, que se reflete em valores de Vd muito mais altos, não baixos.",
+                "Um Vd tão baixo (3L) nem alcança o volume do líquido intersticial além do plasma, que exigiria um Vd maior."
+            ],
+            "fantasma": [
+                "Essa aí! Esse volume é só o do sangue.",
+                "Pra isso, o volume teria que ser maior.",
+                "Pra acumular em tecido, o volume seria muito maior.",
+                "Pra isso também precisaria de mais volume."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Só o plasma.",
+                "Fijate: precisaria de mais.",
+                "Dado curioso: seria muito mais.",
+                "Miau, precisaria de mais."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um fármaco tem meia-vida de 8 horas e um intervalo interdoses de 16 horas, o coeficiente pico/vale no platô será:",
+        "opcoes": [
+            "1.33",
+            "2",
+            "3.41",
+            "4"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 1,33 corresponde ao fator de acumulação para τ/t½=2, não ao quociente pico/vale (que usa uma fórmula diferente).",
+                "Um valor de 2 corresponderia a um quociente pico/vale com τ/t½=1, não com τ/t½=2 como neste caso.",
+                "Um valor de 3,41 corresponde ao fator de acumulação para τ/t½=0,5, não ao quociente pico/vale deste cenário.",
+                "Com τ=16h e t½=8h, τ/t½=2; o quociente pico/vale é 2^(τ/t½)=2²=4 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse é o fator de acumulação, não isso.",
+                "Esse valor é de outro intervalo.",
+                "Esse número é de outra fórmula.",
+                "Essa aí! Duas meias-vidas, quociente 4."
+            ],
+            "gato": [
+                "Fijate: é outra fórmula.",
+                "Dado curioso: é de outro intervalo.",
+                "Miau, é de outra fórmula.",
+                "Ronronado de aprovação! Quociente exato."
+            ]
+        }
+    },
+    {
+        "pergunta": "O volume aparente de distribuição:",
+        "opcoes": [
+            "É a concentração que alcançaria uma droga administrada se dissolvesse em todo o volume plasmático",
+            "É o volume em que teria que se dissolver a droga administrada para alcançar a concentração plasmática medida após administrá-la.",
+            "É inversamente proporcional ao clearance total, se se mantém constante a meia-vida.",
+            "É a concentração plasmática alcançada após a administração da droga, dividida pela quantidade de droga administrada."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa opção confunde Vd (um volume) com uma concentração; são grandezas de natureza diferente.",
+                "O volume aparente de distribuição é o volume imaginário no qual teria que se dissolver uniformemente a dose administrada para produzir a concentração plasmática realmente medida — é a resposta correta.",
+                "Segundo a fórmula t½=0,693×Vd/CL, o Vd é DIRETAMENTE (não inversamente) proporcional ao clearance, para uma meia-vida constante.",
+                "Essa opção inverte a fórmula real de Vd (que é Quantidade/Concentração, não Concentração/Quantidade)."
+            ],
+            "fantasma": [
+                "Isso confunde volume com concentração.",
+                "Essa aí! O volume que faria falta pra essa concentração.",
+                "É ao contrário, é diretamente proporcional.",
+                "Você inverteu a fórmula."
+            ],
+            "gato": [
+                "Fijate: confunde as coisas.",
+                "Ronronado de aprovação! O volume necessário.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário a fórmula."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas que possuem uma cinética de eliminação de ordem 0:",
+        "opcoes": [
+            "Apresentam farmacocinética linear (dose independente)",
+            "Possuem uma velocidade de eliminação que é proporcional à sua concentração plasmática",
+            "Possuem uma meia-vida de eliminação que depende da concentração plasmática",
+            "Apresentam um mecanismo de eliminação não saturável"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cinética de ordem 0 é precisamente NÃO linear (dose-dependente), não linear/dose-independente; isso descreve a de ordem 1.",
+                "Em ordem 0, a velocidade de eliminação é CONSTANTE, não proporcional à concentração plasmática (isso descreve a ordem 1).",
+                "A cinética de ordem 0 se caracteriza precisamente porque sua meia-vida varia (depende) conforme a concentração plasmática presente — é a resposta correta.",
+                "A cinética de ordem 0 apresenta um mecanismo de eliminação SATURÁVEL, não não saturável (isso descreve a ordem 1)."
+            ],
+            "fantasma": [
+                "É ao contrário, é a que depende da dose.",
+                "Essa é a outra cinética.",
+                "Essa aí! A meia-vida muda conforme quanta droga tem.",
+                "Essa se satura, não é livre."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: é a outra.",
+                "Ronronado de aprovação! Muda com a dose.",
+                "Miau, se satura."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual será a dose de ataque de um fármaco administrado com dose de manutenção de 500 mg a cada 2 meias-vidas?",
+        "opcoes": [
+            "500 mg",
+            "667 mg",
+            "1000 mg",
+            "1705 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 500mg seria simplesmente a dose de manutenção sem aplicar nenhum fator de acumulação.",
+                "Com τ/t½=2, o fator de acumulação é Rac=1,33; a dose de ataque é 500mg×1,33≈667mg — é a resposta correta.",
+                "Um valor de 1000mg simplesmente dobra a dose de manutenção, sem corresponder ao cálculo real com Rac=1,33.",
+                "Um valor de 1705mg corresponde ao fator de acumulação de um intervalo de 0,5 meias-vidas (Rac=3,41), não de 2 meias-vidas."
+            ],
+            "fantasma": [
+                "Isso é só a dose normal, sem mais nada.",
+                "Essa aí! Essa conta dá exatamente 667.",
+                "Isso é só dobrar, sem a conta real.",
+                "Esse fator é de outro intervalo."
+            ],
+            "gato": [
+                "Fijate: falta a conta.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: falta algo.",
+                "Miau, é de outro intervalo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se é dosificada a mesma quantidade diária de droga (cinética dose-independente) da seguinte maneira (400 mg/4 hs versus 200 mg/2h), observar-se-á que a dosagem de intervalos mais curtos (200 mg/2h) produz:",
+        "opcoes": [
+            "Que se alcance o platô em menor tempo",
+            "Que ocorra uma menor perda pré-sistêmica",
+            "Menor quociente pico/vale no platô",
+            "Menor fator de acumulação"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tempo para alcançar o platô depende só da meia-vida, não do esquema de intervalos escolhido para uma mesma dose diária total.",
+                "A perda pré-sistêmica não muda por fracionar a mesma dose diária em intervalos mais curtos.",
+                "Ao usar intervalos mais curtos com a mesma dose diária total, a oscilação relativa entre pico e vale se reduz, dando um menor quociente pico/vale no platô — é a resposta correta.",
+                "Com intervalos mais curtos em relação à meia-vida, o fator de acumulação na verdade tende a ser MAIOR (não menor), não menor."
+            ],
+            "fantasma": [
+                "Isso não muda pelo esquema escolhido.",
+                "Isso não muda por fracionar a dose.",
+                "Essa aí! Menos oscilação entre pico e vale.",
+                "É ao contrário, seria maior."
+            ],
+            "gato": [
+                "Fijate: não muda por isso.",
+                "Dado curioso: não muda por isso.",
+                "Ronronado de aprovação! Menos oscilação.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A cada quantas meias-vidas se deve administrar uma droga sabendo que a dose de manutenção é de 200 mg e a dose de ataque é de 266 mg?",
+        "opcoes": [
+            "0,1",
+            "0,5",
+            "1",
+            "2"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um intervalo de 0,1 meias-vidas não reproduz a razão dose de ataque/manutenção observada (266/200=1,33).",
+                "Um intervalo de 0,5 meias-vidas daria uma razão de 3,41, não de 1,33 como se observa aqui.",
+                "Um intervalo de 1 meia-vida daria uma razão de 2, não de 1,33 como se observa aqui.",
+                "A razão entre a dose de ataque (266mg) e a de manutenção (200mg) é 266/200=1,33, que corresponde exatamente ao fator de acumulação esperado com um intervalo de 2 meias-vidas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse número não dá essa razão.",
+                "Esse número dá 3,41, não 1,33.",
+                "Esse número dá 2, não 1,33.",
+                "Essa aí! Essa conta dá exatamente 1,33."
+            ],
+            "gato": [
+                "Fijate: não dá essa razão.",
+                "Dado curioso: dá 3,41.",
+                "Miau, dá 2.",
+                "Ronronado de aprovação! A conta fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um esquema de tratamento com a dose de manutenção de um fármaco administrado por via intravenosa e um intervalo entre doses de 2 meias-vidas, o quociente pico/vale é:",
+        "opcoes": [
+            "0,41",
+            "1,33",
+            "2",
+            "4"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 0,41 não corresponde à fórmula do quociente pico/vale para esse intervalo.",
+                "Um valor de 1,33 corresponde ao fator de acumulação (não ao quociente pico/vale) para τ/t½=2.",
+                "Um valor de 2 corresponderia ao quociente pico/vale com τ/t½=1, não com τ/t½=2 como neste caso.",
+                "Com um intervalo de 2 meias-vidas (τ/t½=2), o quociente pico/vale é 2^(τ/t½)=2²=4 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse número não corresponde a essa fórmula.",
+                "Esse é o fator de acumulação, não isso.",
+                "Esse valor é de outro intervalo.",
+                "Essa aí! Duas meias-vidas, quociente 4."
+            ],
+            "gato": [
+                "Fijate: não corresponde.",
+                "Dado curioso: é outra fórmula.",
+                "Miau, é de outro intervalo.",
+                "Ronronado de aprovação! Quociente exato."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual é a concentração plasmática em estado estacionário de X se após a primeira dose se obtêm 350ng/ml, sabendo que se administra a cada 7hs e sua meia-vida é de 3,5hs?",
+        "opcoes": [
+            "1099ng/ml",
+            "700 ng/ml",
+            "542 ng/ml",
+            "465 ng/ml"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 1099ng/ml superestima amplamente o resultado esperado com esses dados.",
+                "Um valor de 700ng/ml (o dobro do valor inicial) não corresponde ao cálculo correto usando o fator de acumulação.",
+                "Um valor de 542ng/ml não reproduz o cálculo correto com o fator de acumulação deste cenário.",
+                "Com τ=7h e t½=3,5h, τ/t½=2, dando um fator de acumulação Rac=1,33; a concentração em estado estacionário é 350ng/ml×1,33≈465ng/ml — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é demais.",
+                "Isso seria só o dobro, sem a conta real.",
+                "Essa conta não dá isso.",
+                "Essa aí! Essa conta dá exatamente isso."
+            ],
+            "gato": [
+                "Fijate: é demais.",
+                "Dado curioso: falta a conta.",
+                "Miau, não dá isso.",
+                "Ronronado de aprovação! A conta fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se a fração biodisponível de um fármaco por via oral é de 0,80 e a quantidade de droga eliminada pré-sistemicamente é de 50 mg, então a quantidade de droga administrada foi:",
+        "opcoes": [
+            "40 mg",
+            "62,5 mg",
+            "166 mg",
+            "200 mg"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um valor de 40mg não reproduz de forma clara a relação entre biodisponibilidade e perda pré-sistêmica com esses dados.",
+                "Um valor de 62,5mg surge de tratar a quantidade eliminada como se fosse a fração biodisponível, uma interpretação alternativa dos dados.",
+                "Considerando que a fração NÃO biodisponível (1-F=0,20) corresponde aos 50mg eliminados pré-sistemicamente, a dose total seria Dose=50/(1-0,80)=250mg, um valor que não coincide exatamente com esta opção, embora esta seja a resposta marcada no gabarito de origem.",
+                "Um valor de 200mg não reproduz com exatidão o cálculo de dose a partir da fração biodisponível e a quantidade pré-sistêmica eliminada."
+            ],
+            "fantasma": [
+                "Essa conta não fecha bem.",
+                "Essa é outra forma de ler os dados.",
+                "Essa é a marcada, embora a conta não feche direito.",
+                "Essa conta também não fecha exata."
+            ],
+            "gato": [
+                "Fijate: não fecha bem.",
+                "Dado curioso: outra leitura.",
+                "Miau, a marcada no gabarito.",
+                "Dado curioso: também não fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um paciente ingere um fármaco com dosagem de 40 mg, 2 vezes por dia. Uma vez atingido o platô, o fator de acumulação determinado é igual a 3.41. Qual é a meia-vida da droga?",
+        "opcoes": [
+            "6h",
+            "12 h",
+            "24 h",
+            "36 h"
+        ],
+        "explicacoes": {
+            "robo": [
+                "6 horas não corresponde ao cálculo de meia-vida com esses dados.",
+                "12 horas não corresponde ao cálculo de meia-vida com esses dados.",
+                "Com τ=12h (2 vezes ao dia) e Rac=3,41 (correspondente a τ/t½=0,5), a meia-vida é t½=τ/0,5=12/0,5=24h — é a resposta correta.",
+                "36 horas não corresponde ao cálculo de meia-vida com esses dados."
+            ],
+            "fantasma": [
+                "Essa conta não dá isso.",
+                "Essa conta não dá isso.",
+                "Essa aí! Essa meia-vida dá exatamente 3,41.",
+                "Essa conta não dá isso."
+            ],
+            "gato": [
+                "Fijate: não dá isso.",
+                "Dado curioso: não dá isso.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Miau, não dá isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Duas drogas se ligam ao mesmo receptor. De ensaios de ligação de radioligantes se obtêm os seguintes parâmetros: Droga A: Bmax 900 fmoles/mg, Kd 10-9 M; Droga B: Bmax 600 fmoles/mg, Kd 10-7 M. Qual das seguintes afirmações é correta?",
+        "opcoes": [
+            "Afinidade A<B",
+            "Afinidade A>B",
+            "Eficácia de A < B",
+            "Eficácia de A > B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O Kd da droga A (10⁻⁹M) é menor que o da droga B (10⁻⁷M); como um Kd menor indica MAIOR afinidade, não menor, essa opção inverte a relação.",
+                "O Kd da droga A (10⁻⁹M) é 100 vezes menor que o da droga B (10⁻⁷M); como a afinidade é inversamente proporcional ao Kd, a droga A tem maior afinidade que a B — é a resposta correta.",
+                "Um ensaio de ligação de radioligantes (binding) mede afinidade (via Kd) e densidade de sítios de ligação (via Bmax), mas não pode determinar diretamente a eficácia farmacodinâmica, que requer ensaios funcionais.",
+                "Assim como a opção C, essa afirmação sobre \"eficácia\" não pode ser derivada diretamente de dados de um ensaio de ligação de radioligantes."
+            ],
+            "fantasma": [
+                "É ao contrário, menor Kd é mais afinidade.",
+                "Essa aí! Kd menor, se gruda mais forte.",
+                "Esse ensaio não mede eficácia, mede ligação.",
+                "Esse ensaio também não mede eficácia."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Ronronado de aprovação! Se gruda mais forte.",
+                "Dado curioso: não mede isso.",
+                "Miau, não mede isso."
+            ]
+        }
     }
 ]
