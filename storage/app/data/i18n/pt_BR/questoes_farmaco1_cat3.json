@@ -8698,5 +8698,295 @@
                 "Miau, se eliminam diferente."
             ]
         }
+    },
+    {
+        "pergunta": "Os fármacos biotecnológicos possuem a seguinte característica farmacocinética (marque a opção correta):",
+        "opcoes": [
+            "Têm meias-vidas geralmente curtas e duração de ação na faixa de horas e dias",
+            "Seu volume aparente de distribuição, assim como os fármacos de síntese química, pode ser grande ou pequeno dependendo dos compartimentos alcançados",
+            "Se são empregados os mesmos procedimentos de fabricação, pode-se afirmar que dois fármacos biológicos com igual mecanismo de ação são sempre bioequivalentes",
+            "Mesmo empregando os mesmos procedimentos de fabricação, diz-se que dois preparados da mesma molécula são biossimilares, já que não se pode garantir que sejam idênticos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Muitos fármacos biotecnológicos (especialmente os anticorpos monoclonais IgG) têm meias-vidas LONGAS, de semanas, não curtas de horas ou dias, graças à reciclagem mediada pelo receptor FcRn.",
+                "O volume aparente de distribuição dos biológicos costuma ser pequeno e relativamente uniforme (próximo ao compartimento vascular/intersticial), diferente da variabilidade ampla dos fármacos de síntese química.",
+                "Devido à complexidade e variabilidade inerente aos processos de fabricação biológica (culturas celulares, purificação), não se pode afirmar que dois biológicos com o mesmo mecanismo de ação sejam sempre bioequivalentes.",
+                "Devido à complexidade dos processos biológicos de produção, não se pode garantir identidade molecular exata entre lotes ou fabricantes, mesmo com procedimentos similares; por isso se usa o termo \"biossimilar\" em vez de \"genérico\" para esses produtos — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, muitos duram semanas.",
+                "É ao contrário, costuma ser pequeno e parecido.",
+                "Não se pode afirmar isso sempre.",
+                "Essa aí! Nunca se pode garantir que sejam idênticos."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário.",
+                "Miau, nem sempre.",
+                "Ronronado de aprovação! Nunca idênticos."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual é a meia-vida do trastuzumabe?",
+        "opcoes": [
+            "15 minutos",
+            "12 horas",
+            "4 dias",
+            "28 dias"
+        ],
+        "explicacoes": {
+            "robo": [
+                "15 minutos é um valor extremamente curto, típico de fármacos pequenos de eliminação rápida, não de um anticorpo monoclonal IgG.",
+                "12 horas também é um valor curto demais para a meia-vida característica de um anticorpo monoclonal como o trastuzumabe.",
+                "4 dias subestima a meia-vida real do trastuzumabe, que é consideravelmente mais longa.",
+                "O trastuzumabe, como muitos anticorpos monoclonais IgG, tem uma meia-vida longa de aproximadamente 28 dias, graças à reciclagem mediada pelo receptor FcRn — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é rapidíssimo, não é dessas moléculas grandes.",
+                "Isso também é muito curto pra isso.",
+                "Isso fica curto.",
+                "Essa aí! Quase um mês, típico desses anticorpos."
+            ],
+            "gato": [
+                "Fijate: rápido demais pra isso.",
+                "Dado curioso: curto demais.",
+                "Miau, fica curto.",
+                "Ronronado de aprovação! Quase um mês."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual é o volume de distribuição do rituximabe?",
+        "opcoes": [
+            "750 L/m2",
+            "420 L/m2",
+            "15 L/m2",
+            "4 L/m2"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esse valor é grande demais para um anticorpo monoclonal, que tipicamente fica confinado a um volume pequeno (vascular/intersticial).",
+                "Esse valor também é grande demais para o esperado em um anticorpo monoclonal.",
+                "Os anticorpos monoclonais, por serem moléculas grandes que não atravessam facilmente as membranas, costumam ter volumes de distribuição pequenos, próximos ao compartimento vascular — é a resposta correta.",
+                "Esse valor, embora pequeno, é menor que o relatado especificamente para o rituximabe."
+            ],
+            "fantasma": [
+                "Isso é grande demais para essa molécula.",
+                "Isso também é grande demais.",
+                "Essa aí! Fica perto do sangue, pouco volume.",
+                "Esse número é menor que o real."
+            ],
+            "gato": [
+                "Fijate: muito grande.",
+                "Dado curioso: também grande.",
+                "Ronronado de aprovação! Pouco volume.",
+                "Miau, menor que o real."
+            ]
+        }
+    },
+    {
+        "pergunta": "A geração de reações de hipersensibilidade e de autoanticorpos é mais frequente com os anticorpos de qual origem?",
+        "opcoes": [
+            "De origem quimérica.",
+            "Parcialmente humanizados.",
+            "Humanizados.",
+            "Humanos."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os anticorpos de origem quimérica, por conterem uma proporção significativa de sequência murina (de camundongo), são reconhecidos mais facilmente como estranhos pelo sistema imune humano, gerando mais reações de hipersensibilidade e autoanticorpos — é a resposta correta.",
+                "Os anticorpos parcialmente humanizados têm menos sequência não humana que os quiméricos, então são menos imunogênicos.",
+                "Os anticorpos humanizados têm ainda menos sequência não humana, sendo menos imunogênicos que os quiméricos.",
+                "Os anticorpos completamente humanos são os menos imunogênicos de todos, por não conterem sequências de outra espécie."
+            ],
+            "fantasma": [
+                "Essa aí! Tem mais partes de camundongo, o corpo nota mais.",
+                "Esse tem menos partes alheias.",
+                "Esse tem ainda menos partes alheias.",
+                "Esse é o mais parecido com o corpo, quase não incomoda."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mais partes de camundongo.",
+                "Fijate: menos partes alheias.",
+                "Dado curioso: ainda menos.",
+                "Miau, quase não incomoda."
+            ]
+        }
+    },
+    {
+        "pergunta": "O sucesso terapêutico dos anticorpos monoclonais em parte se deve a sua:",
+        "opcoes": [
+            "Alta distribuição por todos os tecidos",
+            "Frequência muito baixa de efeitos adversos",
+            "Alta especificidade",
+            "Custo de produção acessível"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os anticorpos monoclonais na verdade têm uma distribuição LIMITADA (Vd pequeno, ficam principalmente no compartimento vascular/intersticial), não ampla por todos os tecidos.",
+                "Os anticorpos monoclonais sim podem gerar efeitos adversos significativos (reações infusionais, tempestade de citocinas), não uma frequência \"muito baixa\" de forma generalizada.",
+                "A alta especificidade dos anticorpos monoclonais pelo seu antígeno-alvo é a característica-chave que minimiza efeitos fora do alvo e sustenta seu sucesso terapêutico — é a resposta correta.",
+                "Os fármacos biotecnológicos são notoriamente caros de produzir, não acessíveis."
+            ],
+            "fantasma": [
+                "É ao contrário, ficam perto do sangue.",
+                "Sim podem ter efeitos sérios.",
+                "Essa aí! Acertam bem no alvo, sem errar.",
+                "São caros de produzir, não baratos."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: sim têm riscos.",
+                "Ronronado de aprovação! Bem no alvo.",
+                "Miau, são caros."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes mecanismos de ação não é compatível com os anticorpos monoclonais utilizados em doenças oncológicas?",
+        "opcoes": [
+            "Bloqueio de ligante circulante.",
+            "Bloqueio de receptor solúvel.",
+            "Bloqueio de receptor intranuclear.",
+            "Bloqueio de ligante endossomal"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O bloqueio de um ligante circulante é um mecanismo compatível e frequentemente utilizado por anticorpos monoclonais.",
+                "O bloqueio de um receptor solúvel também é um mecanismo compatível com os anticorpos monoclonais.",
+                "Por serem moléculas grandes que não penetram facilmente no interior celular nem no núcleo, os anticorpos monoclonais não podem bloquear receptores intranucleares; sua ação se limita a alvos extracelulares ou de superfície — é a resposta correta.",
+                "O bloqueio de um ligante endossomal, dentro de certos contextos de reciclagem de receptores, pode ser compatível com alguns mecanismos de anticorpos monoclonais."
+            ],
+            "fantasma": [
+                "Isso sim conseguem fazer.",
+                "Isso também conseguem fazer.",
+                "Essa aí! Não entram no núcleo, são grandes demais.",
+                "Isso também encaixa com o que fazem."
+            ],
+            "gato": [
+                "Fijate: sim conseguem.",
+                "Dado curioso: também conseguem.",
+                "Ronronado de aprovação! Não entram no núcleo.",
+                "Miau, também encaixa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes quadros é o mais temido com o uso de anticorpos monoclonais superagonistas?",
+        "opcoes": [
+            "Reações infusionais.",
+            "Tempestade de citocinas.",
+            "Infecções oportunistas.",
+            "Todas estão corretas."
+        ],
+        "explicacoes": {
+            "robo": [
+                "As reações infusionais são um risco conhecido dos anticorpos monoclonais em geral, mas não o quadro mais temido especificamente associado aos superagonistas.",
+                "A tempestade de citocinas é o quadro mais temido associado a anticorpos superagonistas, exemplificado historicamente pelo caso do ensaio com TGN1412, que causou uma resposta inflamatória massiva e potencialmente fatal — é a resposta correta.",
+                "As infecções oportunistas são um risco associado mais à imunossupressão gerada por certos anticorpos, não especificamente o quadro mais temido dos superagonistas.",
+                "Não são todas igualmente o quadro mais temido especificamente associado a superagonistas; a tempestade de citocinas é a mais característica e grave nesse contexto particular."
+            ],
+            "fantasma": [
+                "Isso acontece, mas não é o mais temido aqui.",
+                "Essa aí! Uma resposta inflamatória massiva e perigosa.",
+                "Isso é de outro tipo de risco.",
+                "Não são todas iguais, uma é a mais temida."
+            ],
+            "gato": [
+                "Fijate: não é o pior aqui.",
+                "Ronronado de aprovação! O caso mais temido.",
+                "Dado curioso: é de outro risco.",
+                "Miau, não são todas iguais."
+            ]
+        }
+    },
+    {
+        "pergunta": "O Nivolumabe se trata de um anticorpo de qual tipo?",
+        "opcoes": [
+            "Anticorpo monoclonal anti CTLA4",
+            "Anticorpo monoclonal anti PDL1",
+            "Anticorpo monoclonal anti CD20",
+            "Anticorpo monoclonal anti PD1"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os anticorpos anti-CTLA4 (como ipilimumabe) são diferentes do nivolumabe.",
+                "Os anticorpos anti-PDL1 (como atezolizumabe) são diferentes do nivolumabe, que se dirige contra PD-1, não contra seu ligante.",
+                "Os anticorpos anti-CD20 (como rituximabe) têm um mecanismo e alvo completamente diferentes do nivolumabe.",
+                "O nivolumabe é um anticorpo monoclonal inibidor de ponto de checagem imunológico dirigido contra o receptor PD-1 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse é outro anticorpo diferente.",
+                "Esse mira o ligante, não o receptor.",
+                "Esse é de outro alvo totalmente diferente.",
+                "Essa aí! Mira direto no PD-1."
+            ],
+            "gato": [
+                "Fijate: é outro.",
+                "Dado curioso: mira o ligante.",
+                "Miau, alvo diferente.",
+                "Ronronado de aprovação! Direto no PD-1."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes anticorpos monoclonais anti TNF-alfa são anticorpos completos?",
+        "opcoes": [
+            "Etanercepte.",
+            "Golimumabe.",
+            "Certolizumabe.",
+            "Rituximabe"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O etanercepte não é um anticorpo monoclonal; é uma proteína de fusão entre o receptor solúvel de TNF e a porção Fc de uma IgG.",
+                "O golimumabe é um anticorpo monoclonal IgG1 completo dirigido contra o TNF-alfa — é a resposta correta.",
+                "O certolizumabe é um fragmento Fab' peguilado, não um anticorpo completo, já que carece da região Fc.",
+                "O rituximabe é dirigido contra CD20, não contra o TNF-alfa; é um anticorpo de alvo completamente diferente."
+            ],
+            "fantasma": [
+                "Esse não é um anticorpo, é outra coisa fundida.",
+                "Essa aí! Esse sim é completo.",
+                "A esse falta uma parte, não é completo.",
+                "Esse mira outro alvo totalmente diferente."
+            ],
+            "gato": [
+                "Fijate: não é anticorpo.",
+                "Ronronado de aprovação! Completo de verdade.",
+                "Dado curioso: falta uma parte.",
+                "Miau, outro alvo."
+            ]
+        }
+    },
+    {
+        "pergunta": "O Rituximabe é uma imunoglobulina com as regiões constantes da IgG1 humana e as sequências das regiões variáveis das cadeias leves e cadeias pesadas murinas. Então, o rituximabe se trata de um anticorpo:",
+        "opcoes": [
+            "É um anticorpo quimérico",
+            "É um anticorpo humanizado",
+            "É um anticorpo humano",
+            "É um anticorpo murino"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Combinar regiões constantes humanas com regiões variáveis murinas é precisamente a definição de um anticorpo quimérico — é a resposta correta.",
+                "Um anticorpo humanizado tem uma proporção muito menor de sequência murina (só as regiões hipervariáveis específicas), não toda a região variável como se descreve aqui.",
+                "Um anticorpo completamente humano não conteria nenhuma sequência murina, diferente do descrito para o rituximabe.",
+                "Um anticorpo murino teria também as regiões constantes de origem murina, não humanas como se descreve aqui."
+            ],
+            "fantasma": [
+                "Essa aí! Metade humano, metade camundongo, é quimérico.",
+                "Esse tem bem menos parte de camundongo.",
+                "Esse não teria nada de camundongo.",
+                "Esse teria tudo de camundongo, não só uma parte."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Metade e metade.",
+                "Fijate: bem menos camundongo.",
+                "Dado curioso: nada de camundongo.",
+                "Miau, tudo seria de camundongo."
+            ]
+        }
     }
 ]

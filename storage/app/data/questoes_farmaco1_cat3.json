@@ -13827,7 +13827,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Muchos fármacos biotecnológicos (especialmente los anticuerpos monoclonales IgG) tienen vidas medias LARGAS, de semanas, no cortas de horas o días, gracias al reciclaje mediado por el receptor FcRn.",
+                    "El volumen aparente de distribución de los biológicos suele ser pequeño y relativamente uniforme (cercano al compartimento vascular/intersticial), a diferencia de la variabilidad amplia de los fármacos de síntesis química.",
+                    "Debido a la complejidad y variabilidad inherente a los procesos de manufactura biológica (cultivos celulares, purificación), no se puede afirmar que dos biológicos con el mismo mecanismo de acción sean siempre bioequivalentes.",
+                    "Debido a la complejidad de los procesos biológicos de producción, no se puede garantizar identidad molecular exacta entre lotes o fabricantes, incluso con procedimientos similares; por eso se usa el término \"biosimilar\" en vez de \"genérico\" para estos productos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, muchos duran semanas.",
+                    "Es al revés, suele ser chico y parecido.",
+                    "No se puede afirmar eso siempre.",
+                    "¡Esta! Nunca se puede garantizar que sean idénticos."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "Miau, no siempre.",
+                    "¡Ronroneo de aprobación! Nunca idénticos."
+                ]
+            }
         },
         {
             "numero": 302,
@@ -13853,7 +13873,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "15 minutos es un valor extremadamente corto, típico de fármacos pequeños de eliminación rápida, no de un anticuerpo monoclonal IgG.",
+                    "12 horas también es un valor demasiado corto para la vida media característica de un anticuerpo monoclonal como el trastuzumab.",
+                    "4 días subestima la vida media real del trastuzumab, que es considerablemente más larga.",
+                    "El trastuzumab, como muchos anticuerpos monoclonales IgG, tiene una vida media larga de aproximadamente 28 días, gracias al reciclaje mediado por el receptor FcRn — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es rapidísimo, no es de estas moléculas grandes.",
+                    "Eso también es muy corto para esto.",
+                    "Eso se queda corto.",
+                    "¡Esta! Casi un mes, típico de estos anticuerpos."
+                ],
+                "gato": [
+                    "Fijate: muy rápido para esto.",
+                    "Dato curioso: muy corto.",
+                    "Miau, se queda corto.",
+                    "¡Ronroneo de aprobación! Casi un mes."
+                ]
+            }
         },
         {
             "numero": 303,
@@ -13879,7 +13919,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Este valor es demasiado grande para un anticuerpo monoclonal, que típicamente queda confinado a un volumen pequeño (vascular/intersticial).",
+                    "Este valor también es demasiado grande para lo esperado en un anticuerpo monoclonal.",
+                    "Los anticuerpos monoclonales, al ser moléculas grandes que no atraviesan fácilmente las membranas, suelen tener volúmenes de distribución pequeños, cercanos al compartimento vascular — es la respuesta correcta.",
+                    "Este valor, aunque pequeño, es menor al reportado específicamente para el rituximab."
+                ],
+                "fantasma": [
+                    "Eso es demasiado grande para esta molécula.",
+                    "Eso también es demasiado grande.",
+                    "¡Esta! Se queda cerca de la sangre, poco volumen.",
+                    "Ese número es más chico de lo real."
+                ],
+                "gato": [
+                    "Fijate: muy grande.",
+                    "Dato curioso: también grande.",
+                    "¡Ronroneo de aprobación! Poco volumen.",
+                    "Miau, más chico de lo real."
+                ]
+            }
         },
         {
             "numero": 304,
@@ -13905,7 +13965,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Los anticuerpos de origen quimérico, al contener una proporción significativa de secuencia murina (de ratón), son reconocidos más fácilmente como extraños por el sistema inmune humano, generando más reacciones de hipersensibilidad y autoanticuerpos — es la respuesta correcta.",
+                    "Los anticuerpos parcialmente humanizados tienen menos secuencia no humana que los quiméricos, por lo que son menos inmunogénicos.",
+                    "Los anticuerpos humanizados tienen aún menos secuencia no humana, siendo menos inmunogénicos que los quiméricos.",
+                    "Los anticuerpos completamente humanos son los menos inmunogénicos de todos, al no contener secuencias de otra especie."
+                ],
+                "fantasma": [
+                    "¡Esta! Tiene más partes de ratón, el cuerpo lo nota más.",
+                    "Ese tiene menos partes ajenas.",
+                    "Ese tiene todavía menos partes ajenas.",
+                    "Ese es el más parecido al cuerpo, casi no molesta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Más partes de ratón.",
+                    "Fijate: menos partes ajenas.",
+                    "Dato curioso: aún menos.",
+                    "Miau, casi no molesta."
+                ]
+            }
         },
         {
             "numero": 305,
@@ -13931,7 +14011,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Los anticuerpos monoclonales en realidad tienen una distribución LIMITADA (Vd pequeño, quedan principalmente en el compartimento vascular/intersticial), no amplia por todos los tejidos.",
+                    "Los anticuerpos monoclonales sí pueden generar efectos adversos significativos (reacciones infusionales, tormenta de citoquinas), no una frecuencia \"muy baja\" de forma generalizada.",
+                    "La alta especificidad de los anticuerpos monoclonales por su antígeno diana es la característica clave que minimiza efectos fuera del blanco y sustenta su éxito terapéutico — es la respuesta correcta.",
+                    "Los fármacos biotecnológicos son notoriamente costosos de producir, no accesibles."
+                ],
+                "fantasma": [
+                    "Es al revés, se quedan cerca de la sangre.",
+                    "Sí pueden tener efectos serios.",
+                    "¡Esta! Le pegan justo al blanco, sin errar.",
+                    "Son caros de producir, no baratos."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: sí tienen riesgos.",
+                    "¡Ronroneo de aprobación! Justo al blanco.",
+                    "Miau, son caros."
+                ]
+            }
         },
         {
             "numero": 306,
@@ -13957,7 +14057,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "El bloqueo de un ligando circulante es un mecanismo compatible y frecuentemente utilizado por anticuerpos monoclonales.",
+                    "El bloqueo de un receptor soluble es también un mecanismo compatible con los anticuerpos monoclonales.",
+                    "Al ser moléculas grandes que no penetran fácilmente al interior celular ni al núcleo, los anticuerpos monoclonales no pueden bloquear receptores intranucleares; su acción se limita a dianas extracelulares o de superficie — es la respuesta correcta.",
+                    "El bloqueo de un ligando endosomal, dentro de ciertos contextos de reciclaje de receptores, puede ser compatible con algunos mecanismos de anticuerpos monoclonales."
+                ],
+                "fantasma": [
+                    "Eso sí lo pueden hacer.",
+                    "Eso también lo pueden hacer.",
+                    "¡Esta! No entran al núcleo, son muy grandes.",
+                    "Eso también encaja con lo que hacen."
+                ],
+                "gato": [
+                    "Fijate: sí pueden.",
+                    "Dato curioso: también pueden.",
+                    "¡Ronroneo de aprobación! No entran al núcleo.",
+                    "Miau, también encaja."
+                ]
+            }
         },
         {
             "numero": 307,
@@ -13983,7 +14103,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Las reacciones infusionales son un riesgo conocido de los anticuerpos monoclonales en general, pero no el cuadro más temido específicamente asociado a los superagonistas.",
+                    "La tormenta de citoquinas es el cuadro más temido asociado a anticuerpos superagonistas, ejemplificado históricamente por el caso del ensayo con TGN1412, que causó una respuesta inflamatoria masiva y potencialmente mortal — es la respuesta correcta.",
+                    "Las infecciones oportunistas son un riesgo asociado más bien a la inmunosupresión generada por ciertos anticuerpos, no específicamente el cuadro más temido de los superagonistas.",
+                    "No todas son igualmente el cuadro más temido específicamente asociado a superagonistas; la tormenta de citoquinas es la más característica y grave en este contexto particular."
+                ],
+                "fantasma": [
+                    "Eso pasa, pero no es lo más temido acá.",
+                    "¡Esta! Una respuesta inflamatoria masiva y peligrosa.",
+                    "Eso es de otro tipo de riesgo.",
+                    "No todas por igual, una es la más temida."
+                ],
+                "gato": [
+                    "Fijate: no es lo peor acá.",
+                    "¡Ronroneo de aprobación! El caso más temido.",
+                    "Dato curioso: es de otro riesgo.",
+                    "Miau, no son todas iguales."
+                ]
+            }
         },
         {
             "numero": 308,
@@ -14009,7 +14149,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Los anticuerpos anti-CTLA4 (como ipilimumab) son distintos del nivolumab.",
+                    "Los anticuerpos anti-PDL1 (como atezolizumab) son distintos del nivolumab, que se dirige contra PD-1, no contra su ligando.",
+                    "Los anticuerpos anti-CD20 (como rituximab) tienen un mecanismo y diana completamente distintos al del nivolumab.",
+                    "El nivolumab es un anticuerpo monoclonal inhibidor de punto de control inmunológico dirigido contra el receptor PD-1 — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese es otro anticuerpo distinto.",
+                    "Ese apunta al ligando, no al receptor.",
+                    "Ese es de otro blanco totalmente distinto.",
+                    "¡Esta! Apunta directo al PD-1."
+                ],
+                "gato": [
+                    "Fijate: es otro.",
+                    "Dato curioso: apunta al ligando.",
+                    "Miau, blanco distinto.",
+                    "¡Ronroneo de aprobación! Directo al PD-1."
+                ]
+            }
         },
         {
             "numero": 309,
@@ -14035,7 +14195,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "El etanercept no es un anticuerpo monoclonal; es una proteína de fusión entre el receptor soluble de TNF y la porción Fc de una IgG.",
+                    "El golimumab es un anticuerpo monoclonal IgG1 completo dirigido contra el TNF-alfa — es la respuesta correcta.",
+                    "El certolizumab es un fragmento Fab' pegilado, no un anticuerpo completo, ya que carece de la región Fc.",
+                    "El rituximab está dirigido contra CD20, no contra el TNF-alfa; es un anticuerpo de diana completamente distinta."
+                ],
+                "fantasma": [
+                    "Ese no es un anticuerpo, es otra cosa fusionada.",
+                    "¡Esta! Ese sí es completo.",
+                    "A ese le falta una parte, no es completo.",
+                    "Ese apunta a otro blanco totalmente distinto."
+                ],
+                "gato": [
+                    "Fijate: no es anticuerpo.",
+                    "¡Ronroneo de aprobación! Completo de verdad.",
+                    "Dato curioso: le falta una parte.",
+                    "Miau, otro blanco."
+                ]
+            }
         },
         {
             "numero": 310,
@@ -14061,7 +14241,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Combinar regiones constantes humanas con regiones variables murinas es precisamente la definición de un anticuerpo quimérico — es la respuesta correcta.",
+                    "Un anticuerpo humanizado tiene una proporción mucho menor de secuencia murina (solo las regiones hipervariables específicas), no toda la región variable como se describe aquí.",
+                    "Un anticuerpo completamente humano no contendría ninguna secuencia murina, a diferencia de lo descrito para el rituximab.",
+                    "Un anticuerpo murino tendría también las regiones constantes de origen murino, no humanas como se describe aquí."
+                ],
+                "fantasma": [
+                    "¡Esta! Mitad humano, mitad ratón, es quimérico.",
+                    "Ese tiene mucha menos parte de ratón.",
+                    "Ese no tendría nada de ratón.",
+                    "Ese tendría todo de ratón, no solo una parte."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Mitad y mitad.",
+                    "Fijate: mucho menos ratón.",
+                    "Dato curioso: nada de ratón.",
+                    "Miau, todo sería de ratón."
+                ]
+            }
         }
     ]
 }
