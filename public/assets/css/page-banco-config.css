@@ -122,6 +122,11 @@
   box-shadow: 0 8px 28px rgba(0, 0, 0, .35);
 }
 
+/* backdrop-filter cria um novo contexto de empilhamento - sem isso, o dropdown
+   do select (.bc-styled-select__list, z-index alto mas preso nesse contexto)
+   fica atras do próximo .bc-mock-panel no DOM (ex.: "Volume de questões" / "Tempo disponível"). */
+.bc-mock-panel:has(.bc-styled-select-wrap.is-open) { position: relative; z-index: 20; }
+
 .bc-mock-panel--disabled {
   opacity: 0.5;
   pointer-events: none;
