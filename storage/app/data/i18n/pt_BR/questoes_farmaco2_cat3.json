@@ -609,7 +609,27 @@
             "A dobutamina é mais arritmogênica que a dopamina",
             "A dopamina em doses baixas é vasoconstritora",
             "A dopamina em doses intermediárias tem efeito β-adrenérgico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A dopamina é mais (não menos) arritmogênica que a dobutamina, dado seu perfil de ação mais misto.",
+                "É ao contrário: a dobutamina gera menos arritmias que a dopamina, não mais.",
+                "Em doses baixas, a dopamina age sobre receptores dopaminérgicos produzindo vasodilatação, não vasoconstrição.",
+                "Em doses intermediárias, a dopamina ativa predominantemente receptores beta-adrenérgicos, com efeito inotrópico positivo — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, a dopamina dá mais arritmias.",
+                "É ao contrário, a dobutamina dá menos.",
+                "Nessa dose dilata, não contrai.",
+                "Essa aí! No meio, age pelo beta."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário.",
+                "Miau, dilata nessa dose.",
+                "Ronronado de aprovação! Dose média, efeito beta."
+            ]
+        }
     },
     {
         "pergunta": "A vasodilatação esplâncnica da dopamina é observada com doses:",
@@ -619,7 +639,27 @@
             "Alta atuação nos receptores beta-2 adrenérgicos",
             "Baixa ação nos receptores beta-2 adrenérgicos",
             "Altos agindo nos receptores dopaminérgicos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Em doses baixas, a dopamina ativa receptores dopaminérgicos, produzindo vasodilatação esplâncnica e renal — é a resposta correta.",
+                "Em doses altas, predomina o efeito alfa-adrenérgico (vasoconstrição), não o beta-2.",
+                "Em doses baixas, o efeito predominante é dopaminérgico, não beta-2 adrenérgico.",
+                "Em doses altas predomina o efeito alfa (vasoconstritor), não o efeito dopaminérgico vasodilatador."
+            ],
+            "fantasma": [
+                "Essa aí! Dose baixa, receptor dopaminérgico, dilata.",
+                "Nessa dose contrai, não dilata.",
+                "Nessa dose é outro receptor.",
+                "Nessa dose contrai, é outro mecanismo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Dose baixa, dilata.",
+                "Fijate: contrai nessa dose.",
+                "Dado curioso: é outro receptor.",
+                "Miau, contrai nessa dose."
+            ]
+        }
     },
     {
         "pergunta": "Em um paciente com choque séptico que necessita de efeito vasopressor alfa-1 altamente potente, qual medicamento você escolheria?",
@@ -629,7 +669,27 @@
             "Dobutamina",
             "Norepinefrina",
             "Dopamina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fentolamina é um antagonista (bloqueador) alfa, não um vasopressor; é o oposto do buscado.",
+                "A dobutamina não tem um efeito vasopressor alfa-1 significativo; é principalmente um inotrópico beta-1.",
+                "A noradrenalina é o vasopressor de primeira linha no choque séptico, com potente efeito agonista alfa-1 — é a resposta correta.",
+                "A dopamina tem efeito alfa em doses altas, mas é menos potente e seletiva para esse propósito que a noradrenalina, preferida atualmente pelas diretrizes de sepse."
+            ],
+            "fantasma": [
+                "Esse bloqueia, não contrai os vasos.",
+                "Essa não aperta os vasos assim.",
+                "Essa aí! A escolhida pra apertar forte os vasos.",
+                "Essa não é tão boa pra isso quanto a escolhida."
+            ],
+            "gato": [
+                "Fijate: bloqueia, não aperta.",
+                "Dado curioso: não aperta assim.",
+                "Ronronado de aprovação! A escolhida pra isso.",
+                "Miau, não é tão boa quanto a outra."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos medicamentos inotrópicos:",
@@ -639,7 +699,27 @@
             "A norepinefrina pode causar bradicardia mediada por reflexo vagal.",
             "A adrenalina diminui o consumo de oxigênio e a taxa de relaxamento",
             "A dopamina em doses baixas diminui a filtração glomerular"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O efeito da adrenalina sobre o fluxo coronariano é mais complexo (e em geral tende a aumentá-lo por vasodilatação e maior demanda), não simplesmente uma diminuição por esse mecanismo isolado.",
+                "A noradrenalina, ao elevar muito a pressão arterial por seu potente efeito vasoconstritor, pode desencadear um reflexo barorreceptor vagal que produz bradicardia, apesar de seu efeito cronotrópico direto — é a resposta correta.",
+                "A adrenalina na verdade AUMENTA (não diminui) tanto o consumo de oxigênio miocárdico quanto a velocidade de relaxamento (efeito lusotrópico positivo).",
+                "Em doses baixas, a dopamina AUMENTA (ou mantém) a filtração glomerular por vasodilatação renal, não a diminui."
+            ],
+            "fantasma": [
+                "Isso não é tão simples assim.",
+                "Essa aí! O corpo freia o coração por reflexo quando a pressão sobe muito.",
+                "É ao contrário, sobe as duas coisas.",
+                "É ao contrário, melhora nessa dose."
+            ],
+            "gato": [
+                "Fijate: não é tão simples.",
+                "Ronronado de aprovação! O reflexo vagal freia.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário."
+            ]
+        }
     },
     {
         "pergunta": "Indique a resposta correta, em relação ao Isoproterenol:",
@@ -649,7 +729,27 @@
             "Reduz a frequência cardíaca",
             "Não altera a frequência cardíaca",
             "Bloqueia os receptores alfa-1"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O isoproterenol, agonista beta não seletivo, tem um potente efeito cronotrópico positivo, aumentando a frequência cardíaca — é a resposta correta.",
+                "É ao contrário: o isoproterenol aumenta, não reduz, a frequência cardíaca.",
+                "O isoproterenol sim modifica notavelmente a frequência cardíaca, sendo um de seus efeitos mais característicos.",
+                "O isoproterenol é um agonista (não bloqueador) de receptores beta; não tem atividade de bloqueio alfa-1."
+            ],
+            "fantasma": [
+                "Essa aí! Acelera bastante o coração.",
+                "É ao contrário, acelera.",
+                "Sim muda, e muito.",
+                "Esse ativa o beta, não bloqueia o alfa."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Acelera o coração.",
+                "Fijate: ao contrário.",
+                "Dado curioso: sim muda.",
+                "Miau, ativa o beta."
+            ]
+        }
     },
     {
         "pergunta": "Indique o mecanismo de ação e ação terapêutica da Milrinona:",
@@ -659,7 +759,27 @@
             "Inibição da cAMP fosfodiesterase. Inotrópico positivo. Tratamento de curto prazo da insuficiência cardíaca congestiva aguda",
             "Inibição da atpase Na+/K+ dos cardiomiócitos. Inotrópico positivo. Tratamento de curto prazo da insuficiência cardíaca congestiva aguda",
             "Falta uma opção mas não é a CORRETA que está faltando"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esse mecanismo corresponde à furosemida, não à milrinona.",
+                "A milrinona inibe a fosfodiesterase do AMPc, aumentando o cálcio intracelular com efeito inotrópico positivo; é usada a curto prazo na insuficiência cardíaca congestiva aguda — é a resposta correta.",
+                "A milrinona não inibe a ATPase Na+/K+ (esse é o mecanismo da digoxina); seu mecanismo é a inibição da fosfodiesterase.",
+                "Sim existe uma opção correta entre as alternativas dadas."
+            ],
+            "fantasma": [
+                "Esse mecanismo é de outra droga.",
+                "Essa aí! Bloqueia essa enzima e com isso o coração faz mais força.",
+                "Essa bomba é de outra droga diferente.",
+                "Sim há uma correta entre as opções."
+            ],
+            "gato": [
+                "Fijate: é de outra droga.",
+                "Ronronado de aprovação! O mecanismo correto.",
+                "Dado curioso: é de outra droga.",
+                "Miau, sim há uma correta."
+            ]
+        }
     },
     {
         "pergunta": "Milrinona é:",
@@ -669,7 +789,27 @@
             "Um antiarrítmico útil para o tratamento de arritmias na insuficiência cardíaca",
             "Um diurético útil para o tratamento da insuficiência cardíaca compensada",
             "Agente antianginoso utilizado em casos de tratamento refratário"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A milrinona é um inotrópico positivo, útil especificamente para o manejo a curto prazo da insuficiência cardíaca descompensada — é a resposta correta.",
+                "A milrinona não é um antiarrítmico; sua ação principal é inotrópica, mediada por inibição da fosfodiesterase.",
+                "A milrinona não é um diurético; age aumentando a contratilidade cardíaca, não eliminando líquido diretamente.",
+                "A milrinona não é um antianginoso; seu uso é voltado ao suporte inotrópico na insuficiência cardíaca aguda."
+            ],
+            "fantasma": [
+                "Essa aí! Ajuda o coração descompensado, por pouco tempo.",
+                "Essa não é sua função principal.",
+                "Essa não é sua função principal.",
+                "Essa não é sua função principal."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Suporte agudo do coração.",
+                "Fijate: não é isso.",
+                "Dado curioso: não é isso.",
+                "Miau, não é isso."
+            ]
+        }
     },
     {
         "pergunta": "Amrinona é:",
@@ -679,7 +819,27 @@
             "Um diurético útil para o tratamento da insuficiência cardíaca compensada",
             "Um antiarrítmico útil para o tratamento de arritmias na insuficiência cardíaca",
             "Um inotrópico positivo útil para o tratamento a curto prazo da insuficiência cardíaca descompensada"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A amrinona não é um antianginoso; pertence à mesma classe da milrinona, os inibidores da fosfodiesterase III.",
+                "A amrinona não é um diurético; seu mecanismo é inotrópico, não de eliminação de líquido.",
+                "A amrinona não é um antiarrítmico; é um inotrópico positivo, com o mesmo mecanismo da milrinona.",
+                "A amrinona, assim como a milrinona, é um inibidor da fosfodiesterase III com efeito inotrópico positivo, útil a curto prazo na insuficiência cardíaca descompensada — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa não é sua função.",
+                "Essa não é sua função.",
+                "Essa não é sua função.",
+                "Essa aí! É da mesma família da milrinona."
+            ],
+            "gato": [
+                "Fijate: não é isso.",
+                "Dado curioso: não é isso.",
+                "Miau, não é isso.",
+                "Ronronado de aprovação! Mesma família da milrinona."
+            ]
+        }
     },
     {
         "pergunta": "Inibidores da PDE-III (fosfodiesterase tipo III):",
@@ -689,7 +849,27 @@
             "São úteis em casos de choque hipovolêmico",
             "Eles aumentam o inotropismo diminuindo o AMPc intracelular",
             "Eles são úteis no tratamento de curto prazo da IC."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os inibidores da FDE-III são usados a curto prazo, não a longo prazo, no tratamento da insuficiência cardíaca.",
+                "Esses fármacos não são de escolha no choque hipovolêmico, que exige principalmente reposição de volume, não suporte inotrópico.",
+                "Ao inibir a fosfodiesterase, esses fármacos AUMENTAM (não diminuem) o AMPc intracelular, o que aumenta o inotropismo.",
+                "Os inibidores da FDE-III (como milrinona e amrinona) são úteis no tratamento a curto prazo da insuficiência cardíaca descompensada aguda — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, é a curto prazo.",
+                "Isso não é pra isso aqui.",
+                "É ao contrário, aumentam.",
+                "Essa aí! Servem pro agudo, pouco tempo."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: não é pra isso.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação! Pro agudo."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação do levosimendana?",
@@ -699,7 +879,27 @@
             "Diminui o efeito vasodilatador da dopamina",
             "Sensibiliza a troponina C ao cálcio",
             "Tem efeito alfa adrenérgico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O levosimendana não age aumentando o cálcio intracelular; seu mecanismo distintivo é sensibilizar a maquinaria contrátil ao cálcio já presente.",
+                "O levosimendana não tem relação com o efeito vasodilatador da dopamina.",
+                "O levosimendana sensibiliza a troponina C ao cálcio, aumentando a eficácia contrátil sem precisar de mais cálcio intracelular — é a resposta correta.",
+                "O levosimendana não age através de receptores alfa adrenérgicos."
+            ],
+            "fantasma": [
+                "Não soma mais cálcio, faz render melhor o que já tem.",
+                "Isso não tem a ver com essa droga.",
+                "Essa aí! Faz a troponina aproveitar melhor o cálcio que já está ali.",
+                "Não age por esse receptor."
+            ],
+            "gato": [
+                "Fijate: não soma cálcio.",
+                "Dado curioso: não tem a ver.",
+                "Ronronado de aprovação! Aproveita melhor o cálcio.",
+                "Miau, não é esse receptor."
+            ]
+        }
     },
     {
         "pergunta": "O levosimendan é:",
@@ -709,7 +909,27 @@
             "Um inotrópico que atua inibindo a bomba ATPase de sódio/potássio",
             "Um inotrópico que atua sensibilizando a troponina ao cálcio já presente na célula",
             "Um inotrópico que atua através da sensibilização e ativação adrenérgica endógena"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O levosimendana não age aumentando a concentração de cálcio intracelular; esse não é seu mecanismo distintivo.",
+                "O levosimendana não inibe a bomba Na/K-ATPase (esse é o mecanismo da digoxina).",
+                "O levosimendana age sensibilizando a troponina ao cálcio já presente na célula, sem precisar aumentar sua concentração — é a resposta correta.",
+                "O levosimendana não depende da sensibilização e ativação adrenérgica endógena para seu mecanismo principal."
+            ],
+            "fantasma": [
+                "Não é por somar mais cálcio.",
+                "Essa bomba é de outra droga.",
+                "Essa aí! Aproveita melhor o cálcio que já está ali.",
+                "Não é por esse caminho adrenérgico."
+            ],
+            "gato": [
+                "Fijate: não é por somar cálcio.",
+                "Dado curioso: é de outra droga.",
+                "Ronronado de aprovação! Aproveita o que já tem.",
+                "Miau, não é por aí."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes diuréticos é de escolha para o tratamento do glaucoma? ",
@@ -719,7 +939,27 @@
             "Hidroclorotiazida ",
             "Acetazolamida ",
             "Indapamida "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A furosemida não é o diurético de escolha para o glaucoma; seu uso principal é em sobrecarga de volume e hipertensão.",
+                "A hidroclorotiazida não é o diurético de escolha para o glaucoma; é usada principalmente na hipertensão.",
+                "A acetazolamida, inibidor da anidrase carbônica, reduz a produção de humor aquoso, sendo o diurético de escolha para o glaucoma — é a resposta correta.",
+                "A indapamida não é o diurético de escolha para o glaucoma; seu uso principal é como anti-hipertensivo tipo tiazídico."
+            ],
+            "fantasma": [
+                "Essa não é a escolhida pro olho.",
+                "Essa não é a escolhida pro olho.",
+                "Essa aí! Baixa a produção do líquido do olho.",
+                "Essa não é a escolhida pro olho."
+            ],
+            "gato": [
+                "Fijate: não é pro olho.",
+                "Dado curioso: não é pro olho.",
+                "Ronronado de aprovação! Baixa o líquido ocular.",
+                "Miau, não é pro olho."
+            ]
+        }
     },
     {
         "pergunta": "ACETAZOLAMIDA: ",
@@ -729,7 +969,27 @@
             "Tem muita capacidade diurética ",
             "Estimula a anidrase carbônica ",
             "Usado para glaucoma de ângulo aberto "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A acetazolamida age no túbulo contorneado PROXIMAL, não na alça grossa de Henle (esse é o local dos diuréticos de alça).",
+                "A acetazolamida na verdade tem baixa capacidade diurética, sendo um diurético relativamente fraco.",
+                "A acetazolamida INIBE (não estimula) a anidrase carbônica; esse é precisamente seu mecanismo de ação.",
+                "A acetazolamida é usada no tratamento do glaucoma de ângulo aberto, ao reduzir a produção de humor aquoso — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse lugar é de outro diurético.",
+                "É ao contrário, é fraca como diurético.",
+                "É ao contrário, bloqueia.",
+                "Essa aí! Se usa pro glaucoma."
+            ],
+            "gato": [
+                "Fijate: é de outro diurético.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação! Pro glaucoma."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação da metazolamida? ",
@@ -739,7 +999,27 @@
             "Aumenta a osmolaridade plasmática  ",
             "Diminui o gradiente medular ",
             "Inibidor da anidrase carbônica "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A metazolamida não age inibindo o cotransporte Na+/Cl- (esse é o mecanismo dos tiazídicos).",
+                "A metazolamida não age aumentando a osmolaridade plasmática de forma direta como mecanismo principal.",
+                "A metazolamida não age principalmente diminuindo o gradiente medular (esse efeito é mais característico dos diuréticos de alça).",
+                "A metazolamida, química e farmacologicamente similar à acetazolamida, é um inibidor da anidrase carbônica — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse mecanismo é de outro diurético.",
+                "Não é por esse caminho.",
+                "Esse efeito é de outro diurético.",
+                "Essa aí! É prima da acetazolamida, mesmo mecanismo."
+            ],
+            "gato": [
+                "Fijate: é de outro diurético.",
+                "Dado curioso: não é por aí.",
+                "Miau, é de outro diurético.",
+                "Ronronado de aprovação! Mesma família."
+            ]
+        }
     },
     {
         "pergunta": "A ototoxicidade da Furosemida é potencializada pela administração de: ",
@@ -749,7 +1029,27 @@
             "Gentamicina  ",
             "Amoxicilina  ",
             "Cefalexina  "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A anfotericina B tem outros efeitos adversos renais característicos, mas não é a combinação clássica de potencialização ototóxica com furosemida.",
+                "A combinação de furosemida com gentamicina (um aminoglicosídeo) tem um risco sinérgico bem estabelecido de ototoxicidade — é a resposta correta.",
+                "A amoxicilina não tem um perfil de ototoxicidade relevante que se potencialize com furosemida.",
+                "A cefalexina também não tem um perfil de ototoxicidade relevante que se potencialize com furosemida."
+            ],
+            "fantasma": [
+                "Essa droga causa outro tipo de dano.",
+                "Essa aí! Juntas prejudicam mais o ouvido.",
+                "Essa não prejudica o ouvido assim.",
+                "Essa não prejudica o ouvido assim."
+            ],
+            "gato": [
+                "Fijate: é outro tipo de dano.",
+                "Ronronado de aprovação! Prejudicam o ouvido juntas.",
+                "Dado curioso: não prejudica o ouvido.",
+                "Miau, não prejudica o ouvido."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes associações poderia aumentar a ototoxicidade? ",
@@ -759,7 +1059,27 @@
             "Furosemida-aminoglicosídeos ",
             "Amilorida-acetazolamida ",
             "Enalapril-espironolactona "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O amiloride não tem um perfil ototóxico relevante que se some ao da furosemida dessa maneira.",
+                "A combinação de furosemida com aminoglicosídeos tem um risco sinérgico bem estabelecido de ototoxicidade — é a resposta correta.",
+                "Nem o amiloride nem a acetazolamida têm um perfil ototóxico relevante nessa combinação.",
+                "Nem o enalapril nem a espironolactona têm relação com potencialização de ototoxicidade."
+            ],
+            "fantasma": [
+                "Esse não prejudica o ouvido assim.",
+                "Essa aí! Juntas prejudicam mais o ouvido.",
+                "Nenhuma das duas prejudica o ouvido assim.",
+                "Essas não têm a ver com o ouvido."
+            ],
+            "gato": [
+                "Fijate: não prejudica o ouvido.",
+                "Ronronado de aprovação! Prejudicam o ouvido juntas.",
+                "Dado curioso: não prejudica o ouvido.",
+                "Miau, não tem a ver."
+            ]
+        }
     },
     {
         "pergunta": "A furosemida interage farmacocineticamente com: ",
@@ -769,7 +1089,27 @@
             "Gentamicina  ",
             "Anfotericina B  ",
             "Penicilina G "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O cisplatino compartilha risco de ototoxicidade com furosemida, mas essa é uma interação farmacodinâmica (efeito aditivo no mesmo órgão), não farmacocinética.",
+                "A interação com gentamicina também é farmacodinâmica (ototoxicidade aditiva), não farmacocinética.",
+                "A interação com anfotericina B é igualmente farmacodinâmica, relacionada à toxicidade renal/eletrolítica, não farmacocinética no sentido pedido.",
+                "A furosemida e a penicilina G competem pelo mesmo transportador de secreção tubular renal, uma interação farmacocinética clássica que pode alterar a eliminação de ambos os fármacos — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa é do mesmo tipo de dano, não de eliminação.",
+                "Essa também é do mesmo tipo de dano.",
+                "Essa é de outro tipo de toxicidade.",
+                "Essa aí! Competem pelo mesmo transportador no rim."
+            ],
+            "gato": [
+                "Fijate: é do mesmo tipo de dano.",
+                "Dado curioso: também é assim.",
+                "Miau, é outro tipo de toxicidade.",
+                "Ronronado de aprovação! Competem pelo transportador."
+            ]
+        }
     },
     {
         "pergunta": "A furosemida, administrada cronicamente, pode produzir: ",
@@ -779,7 +1119,27 @@
             "Hipoestrogenismo  ",
             "Hipoglicemia  ",
             "Hipocolesterolemia  "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A furosemida crônica pode produzir hiperuricemia, ao competir com a secreção tubular de ácido úrico — é a resposta correta.",
+                "O hipoestrogenismo não é um efeito adverso característico do uso crônico de furosemida.",
+                "Os diuréticos, incluindo a furosemida, tendem a produzir HIPERglicemia (não hipoglicemia) como efeito metabólico adverso.",
+                "Os diuréticos tendem a se associar com AUMENTO (não diminuição) do colesterol, não hipocolesterolemia."
+            ],
+            "fantasma": [
+                "Essa aí! Sobe o ácido úrico.",
+                "Isso não é típico dessa droga.",
+                "É ao contrário, sobe o açúcar.",
+                "É ao contrário, sobe o colesterol."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Sobe o ácido úrico.",
+                "Fijate: não é típico.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário."
+            ]
+        }
     },
     {
         "pergunta": "Furosemida: ",
@@ -789,7 +1149,27 @@
             "Aumenta o fornecimento de sódio ao túbulo coletor e inibe a secreção de íons hidrogênio  ",
             "Reduz a ingestão de sódio para o ducto coletor e estimula a reabsorção de potássio  ",
             "Diminui o fornecimento de sódio ao túbulo distal e produz hipercalemia  "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Ao aumentar o aporte de sódio aos segmentos distais, a furosemida estimula a troca com hidrogênios, aumentando sua secreção — é a resposta correta.",
+                "É ao contrário: a furosemida ESTIMULA (não inibe) a secreção de hidrogênios no túbulo coletor.",
+                "A furosemida AUMENTA (não diminui) o aporte de sódio ao túbulo coletor, e aumenta (não estimula a reabsorção de) a secreção de potássio, causando hipocalemia.",
+                "A furosemida AUMENTA (não diminui) o aporte de sódio ao túbulo distal, e produz hipocalemia (não hipercalemia), pela maior secreção distal de potássio."
+            ],
+            "fantasma": [
+                "Essa aí! Mais sódio chega, e se secreta mais hidrogênio.",
+                "É ao contrário, estimula.",
+                "É ao contrário nas duas partes.",
+                "É ao contrário nas duas partes."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mais sódio, mais hidrogênio secretado.",
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário em tudo.",
+                "Miau, ao contrário em tudo."
+            ]
+        }
     },
     {
         "pergunta": "Diuréticos de teto alto: ",
@@ -799,7 +1179,27 @@
             "Eles diminuem a excreção de HCO3 e fosfato ",
             "Eles alteram a propriedade do rim de excretar urina diluída em situações de sobrecarga hídrica. ",
             "Não modifica a acidez titulável da urina "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os diuréticos de alça na verdade AUMENTAM (não diminuem) a excreção de cálcio, diferente dos tiazídicos.",
+                "Isso não é uma característica principal distintiva dos diuréticos de teto alto.",
+                "Ao agir na alça de Henle, chave para o mecanismo de concentração e diluição urinária, os diuréticos de teto alto alteram a capacidade renal de excretar urina diluída em situações de sobrecarga aquosa — é a resposta correta.",
+                "Os diuréticos de teto alto sim modificam vários parâmetros do manejo ácido-base urinário, não deixam a acidez titulável sem mudanças."
+            ],
+            "fantasma": [
+                "É ao contrário, aumentam.",
+                "Isso não é o típico desses.",
+                "Essa aí! Quebram o mecanismo de diluir a urina.",
+                "Sim mudam isso, não ficam iguais."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: não é típico.",
+                "Ronronado de aprovação! Quebram o mecanismo.",
+                "Miau, sim mudam."
+            ]
+        }
     },
     {
         "pergunta": "Confira o CORRETO sobre Furosemida ",
