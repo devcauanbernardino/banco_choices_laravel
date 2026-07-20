@@ -5798,5 +5798,585 @@
                 "Miau, demora horas."
             ]
         }
+    },
+    {
+        "pergunta": "O isoproterenol produz uma contração máxima do músculo cardíaco de maneira similar à adrenalina (agonista pleno de receptores adrenérgicos). Qual dos seguintes termos descreve melhor o isoproterenol?",
+        "opcoes": [
+            "Agonista",
+            "Agonista parcial",
+            "Agonista competitivo",
+            "Antagonista irreversível"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Como o isoproterenol alcança uma contração máxima similar à de um agonista pleno de referência (adrenalina) nos mesmos receptores, se classifica como agonista (pleno) — é a resposta correta.",
+                "Um agonista parcial produziria uma resposta máxima menor que a do agonista pleno de referência, o que não ocorre aqui.",
+                "Embora tecnicamente correto em sentido amplo, \"agonista competitivo\" não é o termo preciso; agonistas não \"competem\" com o receptor da mesma forma que antagonistas competitivos com o agonista.",
+                "Um antagonista irreversível bloquearia o efeito da adrenalina, não produziria por si só uma contração máxima similar."
+            ],
+            "fantasma": [
+                "Essa aí! Faz o mesmo efeito máximo, é agonista.",
+                "Um parcial faria menos efeito.",
+                "Esse termo não é o mais preciso aqui.",
+                "Um antagonista bloqueia, não imita o efeito."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mesmo efeito máximo.",
+                "Fijate: seria menos.",
+                "Dado curioso: não é o termo certo.",
+                "Miau, bloqueia, não imita."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se 10mg de naproxeno induzem a mesma resposta analgésica que 100mg de ibuprofeno, pode-se concluir que o naproxeno:",
+        "opcoes": [
+            "É mais eficaz que o ibuprofeno",
+            "É mais potente que o ibuprofeno",
+            "É um agonista completo e o ibuprofeno é um agonista parcial",
+            "É um antagonista competitivo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O dado compara doses necessárias para o mesmo efeito (potência), não a resposta máxima alcançável (eficácia); essa conclusão não se depreende dos dados.",
+                "Como o naproxeno precisa de uma dose muito menor (10mg frente a 100mg) para produzir o mesmo efeito que o ibuprofeno, o naproxeno é mais potente — é a resposta correta.",
+                "Ambos são AINEs com mecanismo similar (inibição de COX); não há evidência no enunciado de que atuem como agonista completo/parcial no sentido farmacodinâmico clássico.",
+                "Não há evidência de que um bloqueie o efeito do outro; o dado só compara doses necessárias para o mesmo efeito."
+            ],
+            "fantasma": [
+                "Esse dado é de potência, não de eficácia.",
+                "Essa aí! Precisa de muito menos dose pro mesmo efeito.",
+                "Esses atuam parecido, não é esse o ponto.",
+                "Ninguém está bloqueando ninguém aqui."
+            ],
+            "gato": [
+                "Fijate: é de potência.",
+                "Ronronado de aprovação! Menos dose, mesmo efeito.",
+                "Dado curioso: não é isso.",
+                "Miau, não há bloqueio."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em preparações isoladas de músculo liso intestinal se determinou a ação de um novo medicamento \"novamina\", que em estudos separados se ligou aos mesmos receptores que a acetilcolina. Na ausência de outros medicamentos, a acetilcolina causou a contração do músculo. Novamina só causou o relaxamento da preparação. Na presença de uma baixa concentração de Novamina, a CE50 da acetilcolina não se modificou, mas o Emax se reduziu. Na presença de uma alta concentração de novamina, concentrações extremamente altas de acetilcolina não tiveram nenhum efeito. Com base nos resultados, concluiu-se que a Novamina é:",
+        "opcoes": [
+            "Um antagonista químico",
+            "Um antagonista irreversível",
+            "Um agonista parcial",
+            "Um antagonista fisiológico"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista químico neutraliza o agonista diretamente (por exemplo, ligando-se a ele em solução), não competindo pelo receptor; não encaixa no cenário descrito.",
+                "O enunciado estabelece explicitamente que Novamina se liga aos MESMOS receptores que a acetilcolina; uma ligação de alta afinidade ou pseudo-irreversível a esse receptor que reduz o Emax em baixa concentração (sem mudar a CE50 dos receptores restantes) e bloqueia completamente em alta concentração é característica de um antagonista irreversível — é a resposta correta.",
+                "Novamina reduz o Emax da acetilcolina em vez de produzir seu próprio efeito máximo com menor intensidade; isso não encaixa com a definição de agonista parcial (que sim ativa o receptor, embora de forma submáxima).",
+                "Um antagonista fisiológico age em um receptor DIFERENTE, produzindo um efeito oposto por uma via diferente; isso contradiz diretamente o dado de que Novamina se liga aos MESMOS receptores que a acetilcolina."
+            ],
+            "fantasma": [
+                "Isso neutraliza na solução, não é isso.",
+                "Essa aí! Se gruda forte no mesmo receptor e não solta.",
+                "Isso ativaria algo, e aqui só reduz o efeito.",
+                "Isso seria em outro receptor, e aqui é o mesmo."
+            ],
+            "gato": [
+                "Fijate: não é isso.",
+                "Ronronado de aprovação! Se gruda e não solta.",
+                "Dado curioso: não encaixa.",
+                "Miau, é o mesmo receptor."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um fármaco que se liga ao receptor em um sítio diferente do agonista total, ocasionando uma diminuição da resposta observada habitualmente frente ao agonista total, é um:",
+        "opcoes": [
+            "Agonista completo",
+            "Antagonista competitivo reversível",
+            "Agonista parcial",
+            "Antagonista não competitivo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um agonista completo ativa o receptor em seu sítio habitual, não o bloqueia a partir de um sítio diferente.",
+                "Um antagonista competitivo reversível se liga no MESMO sítio que o agonista, não em um diferente.",
+                "Um agonista parcial ativa o receptor (de forma submáxima), não reduz a resposta de outro agonista a partir de um sítio separado.",
+                "Ligar-se em um sítio diferente (alostérico) do agonista, reduzindo a resposta máxima habitual, é a definição de antagonista não competitivo — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso ativa, não bloqueia de outro lugar.",
+                "Esse se gruda no mesmo lugar, não em outro.",
+                "Esse também ativa, embora menos.",
+                "Essa aí! Se gruda em outro lugar e freia o efeito."
+            ],
+            "gato": [
+                "Fijate: ativa.",
+                "Dado curioso: mesmo lugar.",
+                "Miau, também ativa.",
+                "Ronronado de aprovação! Outro lugar, freia o efeito."
+            ]
+        }
+    },
+    {
+        "pergunta": "Com respeito ao dualismo competitivo:",
+        "opcoes": [
+            "Em baixas concentrações de agonista Total e altas concentrações de agonista parcial há antagonismo competitivo",
+            "Em altas concentrações de agonista Total e Parcial há antagonismo competitivo",
+            "Na CDR de Agonista total, este é deslocado pelo agonista parcial chegando a uma eficácia menor que 100%",
+            "Na CDR de Agonista Total, este é deslocado pelo agonista parcial aumentando sua potência"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O fenômeno de dualismo competitivo se caracteriza melhor pela redução de eficácia máxima ao deslocar o agonista total com o parcial, não especificamente por essa combinação de concentrações baixas/altas.",
+                "Em altas concentrações de ambos os agonistas, geralmente predomina o efeito do agonista total no sistema, não um \"antagonismo competitivo\" definido dessa forma.",
+                "Quando um agonista parcial desloca progressivamente o agonista total no mesmo receptor, a eficácia máxima alcançável na curva se reduz abaixo de 100% do efeito do agonista total puro, já que o agonista parcial \"dilui\" a ativação ao ocupar receptores sem produzir o efeito máximo — é a resposta correta.",
+                "O deslocamento por competição entre agonistas tipicamente reduz (não aumenta) a potência aparente do agonista total, já que se precisa de mais concentração para superar a competição do parcial."
+            ],
+            "fantasma": [
+                "Isso não descreve bem o fenômeno.",
+                "Nessas concentrações, não é exatamente isso.",
+                "Essa aí! O parcial baixa o teto do total.",
+                "É ao contrário, baixa a potência, não sobe."
+            ],
+            "gato": [
+                "Fijate: não é tão preciso.",
+                "Dado curioso: não é exatamente isso.",
+                "Ronronado de aprovação! Baixa o teto.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "São administrados hormônios tireoidianos em tecido cardíaco de rato durante 15 dias e depois se faz binding de radioligante para avaliar a densidade de receptores Beta 1. No gráfico de Scatchard correspondente se verá:",
+        "opcoes": [
+            "Diminuição da inclinação por se tratar de um Up Regulation Heterólogo",
+            "Aumento da inclinação por se tratar de um Up Regulation Heterólogo",
+            "Diminuição da B Máx por se tratar de um Up Regulation Heterólogo",
+            "Aumento da B Máx por se tratar de um Up Regulation Heterólogo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um up regulation heterólogo aumenta (não diminui) a Bmax; além disso, a inclinação do gráfico de Scatchard reflete a afinidade (Kd), não diretamente o número de receptores.",
+                "Um up regulation heterólogo se manifesta principalmente como uma mudança na Bmax (número de receptores), não necessariamente na inclinação (que reflete afinidade/Kd).",
+                "Os hormônios tireoidianos AUMENTAM (não diminuem) a densidade de receptores beta-1 cardíacos; essa opção descreve o efeito contrário ao esperado.",
+                "Os hormônios tireoidianos, por não serem o ligante natural do receptor beta-1 (por isso \"heterólogo\"), aumentam a densidade desses receptores (Bmax) no tecido cardíaco, sensibilizando o coração a catecolaminas — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, sobe; e isso não é a inclinação.",
+                "Isso muda a Bmax, não a inclinação.",
+                "É ao contrário, sobe.",
+                "Essa aí! Mais receptores, coração mais sensível."
+            ],
+            "gato": [
+                "Fijate: ao contrário; e não é a inclinação.",
+                "Dado curioso: muda a Bmax.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação! Mais receptores."
+            ]
+        }
+    },
+    {
+        "pergunta": "Realizaram-se curvas dose-resposta de 4 drogas, obtendo-se os seguintes resultados: Droga A: CE50 = 10^-7 M; Droga B: CE50 = 10mM; Droga C: pCE50= 8; Droga D: pCE50= 4. Ordene as drogas segundo sua potência (da mais potente à menos potente)",
+        "opcoes": [
+            "B > A > D > C",
+            "C > A > D > B",
+            "D > C > B > A",
+            "C > B > D > A"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa ordem (B>A>D>C) não corresponde ao cálculo de CE50: a Droga C (10⁻⁸M) é a mais potente, não a menos potente como implica essa ordem.",
+                "Convertendo pCE50=8 para CE50=10⁻⁸M (droga C) e comparando as quatro: C(10⁻⁸)<A(10⁻⁷)<D(10⁻⁴)<B(10⁻²); da mais para a menos potente (menor para maior CE50): C>A>D>B — é a resposta correta (o texto desta opção, embora o gabarito original a rotulasse com outra letra).",
+                "Essa ordem (D>C>B>A) não corresponde ao cálculo: coloca D como a mais potente, quando na verdade D (CE50=10⁻⁴M) é menos potente que A e C.",
+                "Essa ordem (C>B>D>A) coloca corretamente C primeiro, mas inverte a posição relativa de B, D e A em relação ao cálculo real."
+            ],
+            "fantasma": [
+                "Essa ordem não fecha com a conta.",
+                "Essa aí! Essa é a conta correta.",
+                "Essa ordem não fecha com a conta.",
+                "Essa ordem quase fecha, mas não de vez."
+            ],
+            "gato": [
+                "Fijate: não fecha.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: não fecha.",
+                "Miau, quase mas não."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes é uma característica das drogas de ação específica?",
+        "opcoes": [
+            "Muito baixa especificidade biológica",
+            "Impossibilidade de antagonismo específico",
+            "Concentrações efetivas menores que 10mM",
+            "Muito baixa especificidade química"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma muito baixa especificidade biológica descreve as drogas de ação INESPECÍFICA, não específica.",
+                "As drogas de ação específica sim podem ser antagonizadas especificamente, precisamente por atuarem em um sítio de ligação bem definido.",
+                "As drogas de ação específica, ao se ligarem com alta afinidade a um receptor definido, costumam ser efetivas em concentrações muito baixas (abaixo de 10mM), diferente das de ação inespecífica, que exigem concentrações muito mais altas — é a resposta correta.",
+                "Uma muito baixa especificidade química também descreve mais as drogas de ação inespecífica, não as específicas."
+            ],
+            "fantasma": [
+                "Isso é das inespecíficas.",
+                "Essas sim podem ser bloqueadas de forma específica.",
+                "Essa aí! Com pouquinha quantidade já fazem efeito.",
+                "Isso também é das inespecíficas."
+            ],
+            "gato": [
+                "Fijate: é das outras.",
+                "Dado curioso: sim pode.",
+                "Ronronado de aprovação! Pouquinha quantidade.",
+                "Miau, é das outras."
+            ]
+        }
+    },
+    {
+        "pergunta": "Realizaram-se curvas dose-resposta de 4 drogas, obtendo-se os seguintes resultados: Droga A: CE50=10^-7 M; Droga B: CE50=10 mM; Droga C: pCE50=8; Droga D: pCE50= 5. Ordene as drogas segundo sua potência (da mais potente à menos potente)",
+        "opcoes": [
+            "B>A>D>C",
+            "C>A>D>B",
+            "D>C>B>A",
+            "C>B>D>A"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa ordem (B>A>D>C) não corresponde ao cálculo: coloca B (a menos potente, CE50=10⁻²M) primeiro, quando deveria ser a última.",
+                "Convertendo pCE50=8 para CE50=10⁻⁸M (droga C) e pCE50=5 para CE50=10⁻⁵M (droga D), e comparando as quatro: C(10⁻⁸)<A(10⁻⁷)<D(10⁻⁵)<B(10⁻²); da mais para a menos potente: C>A>D>B — é a resposta correta.",
+                "Essa ordem (D>C>B>A) não corresponde ao cálculo: coloca D primeiro, quando D é menos potente que A e C.",
+                "Essa ordem (C>B>D>A) coloca corretamente C primeiro, mas inverte a posição relativa de B, D e A em relação ao cálculo real."
+            ],
+            "fantasma": [
+                "Essa ordem não fecha com a conta.",
+                "Essa aí! Essa é a conta correta.",
+                "Essa ordem não fecha com a conta.",
+                "Essa ordem quase fecha, mas não de vez."
+            ],
+            "gato": [
+                "Fijate: não fecha.",
+                "Ronronado de aprovação! A conta fecha.",
+                "Dado curioso: não fecha.",
+                "Miau, quase mas não."
+            ]
+        }
+    },
+    {
+        "pergunta": "O pA2:",
+        "opcoes": [
+            "É o logaritmo negativo da concentração de agonista necessária para alcançar 50% da resposta máxima.",
+            "É o logaritmo negativo da concentração de antagonista competitivo que diminui em 50% a resposta máxima de um agonista",
+            "É o logaritmo negativo da concentração necessária de um agonista parcial para duplicar a CE50 de um agonista",
+            "É o logaritmo negativo da concentração necessária de um antagonista competitivo para duplicar a CE50 de um agonista"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa descrição corresponde à CE50 do próprio agonista, não ao pA2 (que é uma medida relacionada a um antagonista).",
+                "Embora relacionada, essa descrição é menos precisa: o pA2 não se refere a uma redução de 50% da resposta máxima, mas especificamente a duplicar a concentração necessária de agonista.",
+                "Essa descrição fala de um agonista parcial, não de um antagonista competitivo; não corresponde à definição de pA2.",
+                "O pA2 é o logaritmo negativo da concentração de um antagonista competitivo necessária para que se precise do dobro de concentração de agonista para alcançar o mesmo efeito (duplicar a CE50 do agonista) — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é a CE50 do agonista, não isso.",
+                "Parece, mas não é exatamente assim.",
+                "Isso é de um agonista parcial, não disso.",
+                "Essa aí! Duplica o que precisa de agonista."
+            ],
+            "gato": [
+                "Fijate: é a CE50.",
+                "Dado curioso: não é exato.",
+                "Miau, é de outro tipo de droga.",
+                "Ronronado de aprovação! Duplica a CE50."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se se produz um up regulation dos receptores para uma droga X, sem modificação de outras variantes, em um gráfico de Scatchard se poderá observar:",
+        "opcoes": [
+            "Aumento da Bmax e da inclinação",
+            "Diminuição da Bmax, sem modificações na inclinação",
+            "Aumento da Bmax, sem modificações na inclinação",
+            "Diminuição da Bmax e da inclinação"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Sem modificação de outras variantes (como a afinidade), a inclinação (que depende do Kd) não deveria mudar; essa opção adiciona uma mudança não justificada.",
+                "Up regulation significa AUMENTO (não diminuição) do número de receptores.",
+                "Up regulation aumenta a Bmax (número de receptores); se não se modificam outras variantes como a afinidade, a inclinação (relacionada ao Kd) permanece igual — é a resposta correta.",
+                "Up regulation significa aumento, não diminuição, da Bmax."
+            ],
+            "fantasma": [
+                "Isso adiciona uma mudança que não corresponde.",
+                "Up regulation é aumentar, não diminuir.",
+                "Essa aí! Mais receptores, mesma inclinação.",
+                "Up regulation é aumentar, não diminuir."
+            ],
+            "gato": [
+                "Fijate: adiciona algo a mais.",
+                "Dado curioso: é aumentar.",
+                "Ronronado de aprovação! Mais receptores, mesma inclinação.",
+                "Miau, é aumentar."
+            ]
+        }
+    },
+    {
+        "pergunta": "Através de um experimento de binding de radioligante e o gráfico de Scatchard, obtenho os seguintes parâmetros de uma droga:",
+        "opcoes": [
+            "Densidade de receptores e potência da droga",
+            "Afinidade pelo receptor e atividade intrínseca da droga",
+            "Atividade intrínseca e potência da droga",
+            "Afinidade pelo receptor e a densidade de receptores"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A densidade de receptores sim se obtém do binding, mas a potência requer um ensaio funcional dose-resposta, não só binding.",
+                "A afinidade sim se obtém do binding, mas a atividade intrínseca requer um ensaio funcional, não só binding.",
+                "Nem a atividade intrínseca nem a potência se obtêm diretamente de um ensaio de binding puro; ambas requerem um ensaio funcional.",
+                "O gráfico de Scatchard, a partir de dados de binding de radioligante, dá diretamente a afinidade (Kd, da inclinação) e a densidade de receptores (Bmax, da interseção) — é a resposta correta."
+            ],
+            "fantasma": [
+                "A potência não sai daí.",
+                "A atividade intrínseca não sai daí.",
+                "Nenhuma das duas sai de um binding puro.",
+                "Essa aí! Afinidade e quantidade de receptores, isso o binding dá."
+            ],
+            "gato": [
+                "Fijate: a potência não sai daí.",
+                "Dado curioso: também não sai daí.",
+                "Miau, nenhuma das duas.",
+                "Ronronado de aprovação! Exatamente essas duas."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se realiza uma CDR controle para uma droga Z (um agonista parcial). Depois se produz um up-regulation dos receptores para essa droga. O que se observará é:",
+        "opcoes": [
+            "Um deslocamento da curva para a esquerda, já que aumenta a potência",
+            "Um deslocamento da curva para a direita, já que diminui a potência",
+            "Um aumento da altura máxima da curva, já que aumenta a eficácia",
+            "Não se observam mudanças na curva para a droga Z"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com mais receptores disponíveis após o up-regulation, se necessita ocupar uma fração menor deles para alcançar o mesmo efeito, o que aumenta a potência aparente e desloca a curva para a esquerda — é a resposta correta.",
+                "É ao contrário: com mais receptores, a potência aumenta (não diminui), deslocando a curva para a esquerda, não para a direita.",
+                "Embora em agonistas parciais o aumento de receptores possa ter efeitos adicionais sobre a eficácia máxima em certos contextos, a mudança principal e mais diretamente esperada é o deslocamento por aumento de potência.",
+                "Sim se observam mudanças na curva: o up-regulation de receptores modifica a relação dose-resposta da droga Z."
+            ],
+            "fantasma": [
+                "Essa aí! Mais receptores, precisa de menos droga.",
+                "É ao contrário, se desloca pro outro lado.",
+                "A mudança principal é outra.",
+                "Sim muda algo, não fica igual."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Menos droga necessária.",
+                "Fijate: ao contrário.",
+                "Dado curioso: a mudança principal é outra.",
+                "Miau, sim muda."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se realiza um experimento de órgão isolado e os resultados se refletem em um gráfico curva dose-resposta. Este se realiza com concentrações crescentes de uma droga M e com concentrações fixas e crescentes de uma droga Y. No gráfico se observa um deslocamento da curva para a droga M para a direita, sem modificações na altura máxima. Disso se infere que:",
+        "opcoes": [
+            "A droga M é um antagonista não competitivo, enquanto a droga Y é um agonista completo",
+            "A droga M é um agonista completo, enquanto a droga Y é um antagonista não competitivo",
+            "A droga M é um antagonista competitivo, enquanto a droga Y é um agonista completo",
+            "A droga M é um agonista completo, enquanto a droga Y é um antagonista competitivo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista não competitivo reduziria também a altura máxima, o que não ocorreu aqui (a altura máxima não mudou).",
+                "Se M fosse agonista completo e Y antagonista não competitivo, se esperaria uma redução da altura máxima, o que não foi observado.",
+                "Um antagonista competitivo (não não-competitivo) desloca a curva para a direita sem mudar a altura máxima; porém, essa opção não especifica corretamente o papel de M como agonista.",
+                "A droga M, cuja curva se desloca para a direita sem mudança na altura máxima na presença de Y, se comporta como agonista completo competindo com Y, um antagonista competitivo — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso também baixaria o teto, e não baixou.",
+                "Isso também baixaria o teto, e não baixou.",
+                "Isso não diz bem o papel de M.",
+                "Essa aí! Se desloca à direita, mas chega igual de alto."
+            ],
+            "gato": [
+                "Fijate: baixaria o teto.",
+                "Dado curioso: baixaria o teto.",
+                "Miau, não encaixa bem.",
+                "Ronronado de aprovação! Igual de alto."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se realiza uma curva dose-resposta de 4 drogas e os valores obtidos são droga A pCE50=5, droga B pCE50= 7, droga C CE50= 10-9, droga D CE50 10-3",
+        "opcoes": [
+            "A droga D tem menor potência que C",
+            "A droga A tem maior CE50 que D",
+            "A droga B tem maior potência que C",
+            "A droga A tem menor CE50 que B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "CE50_D (10⁻³) é maior que CE50_C (10⁻⁹), ou seja, D precisa de muito mais concentração que C para o mesmo efeito; por isso D tem menor potência que C — é a resposta correta.",
+                "CE50_A é 10⁻⁵ (já que pCE50=5) e CE50_D é 10⁻³; comparando, 10⁻⁵ é MENOR que 10⁻³, então A tem MENOR (não maior) CE50 que D.",
+                "CE50_B é 10⁻⁷ (já que pCE50=7) e CE50_C é 10⁻⁹; como 10⁻⁹ é menor que 10⁻⁷, C é mais potente que B, ou seja, B tem MENOR (não maior) potência que C.",
+                "CE50_A é 10⁻⁵ e CE50_B é 10⁻⁷; como 10⁻⁵ é MAIOR que 10⁻⁷, A tem MAIOR (não menor) CE50 que B."
+            ],
+            "fantasma": [
+                "Essa aí! D precisa de muito mais que C.",
+                "É ao contrário, A tem menos.",
+                "É ao contrário, B tem menos potência.",
+                "É ao contrário, A tem mais CE50."
+            ],
+            "gato": [
+                "Ronronado de aprovação! D precisa de mais.",
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "Administra-se glicocorticoides em tecido brônquico por 10 dias e depois se faz binding de radioligante para avaliar os receptores beta2 adrenérgicos. No gráfico de Scatchard correspondente se verá:",
+        "opcoes": [
+            "Aumento da inclinação por se tratar de um up regulation homólogo",
+            "Diminuição da inclinação por se tratar de um down regulation heterólogo",
+            "Diminui a Bmax por se tratar de um down regulation homólogo",
+            "Aumenta a Bmax por se tratar de um up regulation heterólogo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um up regulation homólogo seria causado pelo próprio ligante do receptor (um agonista/antagonista beta2), não por glicocorticoides, que são heterólogos a esse receptor.",
+                "Os glicocorticoides AUMENTAM (não diminuem) a densidade de receptores beta2 no tecido brônquico; essa opção descreve o efeito contrário.",
+                "Os glicocorticoides não reduzem a Bmax dos receptores beta2; ao contrário, a aumentam, então também não se trata de um down regulation.",
+                "Os glicocorticoides, por não serem o ligante natural do receptor beta2 (por isso \"heterólogo\"), aumentam sua densidade (Bmax) no tecido brônquico, potencializando a resposta aos agonistas beta2 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não é o mecanismo, e seria outro tipo.",
+                "É ao contrário, sobe.",
+                "É ao contrário, sobe.",
+                "Essa aí! Mais receptores, responde melhor ao beta2."
+            ],
+            "gato": [
+                "Fijate: não é esse mecanismo.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação! Mais receptores."
+            ]
+        }
+    },
+    {
+        "pergunta": "Duas drogas se ligam ao mesmo receptor. De ensaios de ligação de radioligantes se obtêm os seguintes parâmetros: Droga A: Bmax 60 fmoles/mg, Kd 10-9 M; Droga B: Bmax 60 fmoles/mg, Kd 10-7 M. Qual das seguintes afirmações é correta?",
+        "opcoes": [
+            "Eficácia de A > B",
+            "Afinidade A < B",
+            "Afinidade A > B",
+            "Eficácia de A < B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O Kd de A (10⁻⁹M) é menor que o de B (10⁻⁷M); como um Kd menor indica maior afinidade, essa opção inverte a relação.",
+                "A afinidade de A não é menor que a de B; é ao contrário, dado seu menor Kd.",
+                "O Kd de A (10⁻⁹M) é 100 vezes menor que o de B (10⁻⁷M), o que indica maior afinidade de A pelo receptor — é a resposta correta.",
+                "Um ensaio de ligação de radioligantes mede afinidade, não eficácia farmacodinâmica, que requer ensaios funcionais."
+            ],
+            "fantasma": [
+                "É ao contrário.",
+                "É ao contrário.",
+                "Essa aí! Kd menor, se gruda mais forte.",
+                "Isso não mede eficácia, mede ligação."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário.",
+                "Ronronado de aprovação! Se gruda mais forte.",
+                "Miau, não mede isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes enunciados determinaria uma \"regulação em mais\" (up regulation) dos receptores β1 adrenérgicos pós-sinápticos?",
+        "opcoes": [
+            "Uso diário de propranolol, um antagonista do receptor β1.",
+            "Uma doença que induz um incremento da atividade dos neurônios de noradrenalina.",
+            "Uso diário de anfetaminas que ocasionam a liberação de noradrenalina (agonista beta-1 adrenérgico).",
+            "Uso diário de isoproterenol, um agonista do receptor β1"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O bloqueio crônico de um receptor (por um antagonista como o propranolol) reduz a estimulação habitual, e o organismo compensa aumentando o número de receptores disponíveis (up regulation) — é a resposta correta.",
+                "Um incremento da atividade de neurônios noradrenérgicos implica MAIS estimulação crônica do receptor, o que tipicamente causa down regulation (dessensibilização), não up regulation.",
+                "Liberar mais noradrenalina de forma crônica (por anfetaminas) implica mais estimulação do receptor, o que causaria down regulation, não up regulation.",
+                "O uso crônico de um agonista direto (isoproterenol) também implica estimulação aumentada do receptor, o que causaria down regulation, não up regulation."
+            ],
+            "fantasma": [
+                "Essa aí! Bloquear muito faz o corpo fabricar mais.",
+                "Isso é estimular demais, baixa os receptores.",
+                "Isso é estimular demais, baixa os receptores.",
+                "Isso é estimular demais, baixa os receptores."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O bloqueio gera mais receptores.",
+                "Fijate: é estimular demais.",
+                "Dado curioso: é estimular demais.",
+                "Miau, é estimular demais."
+            ]
+        }
+    },
+    {
+        "pergunta": "Na presença de uma concentração fixa de um antagonista reversível (competitivo), e sem a presença de receptores de reserva, a curva de concentração-resposta ao agonista se desloca para:",
+        "opcoes": [
+            "A esquerda, sem mudanças da inclinação, nem na resposta máxima",
+            "A esquerda, com diminuição da inclinação e da resposta máxima",
+            "A direita, com diminuição da inclinação e da resposta máxima",
+            "A direita, sem mudanças da inclinação, nem na resposta máxima"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista reversível (competitivo) desloca a curva do agonista para a DIREITA (não a esquerda), já que se precisa de mais agonista para superar a competição.",
+                "A curva se desloca para a esquerda só com essa mudança na inclinação/Emax em certos cenários diferentes; para um antagonismo competitivo puro, não se espera redução do Emax.",
+                "O antagonismo competitivo puro não reduz a resposta máxima nem muda a inclinação; só desloca a curva, já que seu efeito sempre pode ser superado com agonista suficiente.",
+                "Um antagonista competitivo reversível desloca a curva de concentração-resposta para a direita, sem mudanças na inclinação nem na resposta máxima, já que seu efeito sempre pode ser superado aumentando a concentração de agonista — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário, se desloca pra direita.",
+                "Isso não acontece com um competitivo puro.",
+                "Isso não acontece com um competitivo puro.",
+                "Essa aí! Se desloca à direita, mas chega igual de alto."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: não acontece assim.",
+                "Miau, não acontece assim.",
+                "Ronronado de aprovação! Igual de alto."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes fatores terá influência no número de complexos fármaco-receptor formados?",
+        "opcoes": [
+            "O quociente pico/vale",
+            "O volume aparente de distribuição",
+            "O fator de acumulação",
+            "A constante de dissociação (Kd)"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O quociente pico/vale é um parâmetro farmacocinético relacionado à dosagem repetida, não à formação de complexos fármaco-receptor.",
+                "O volume aparente de distribuição é um parâmetro farmacocinético, não relacionado à formação de complexos fármaco-receptor.",
+                "O fator de acumulação também é um parâmetro farmacocinético, alheio à formação de complexos fármaco-receptor.",
+                "A constante de dissociação (Kd) mede a afinidade do fármaco pelo receptor, a qual, junto com a concentração disponível, determina quantos complexos fármaco-receptor se formam — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é da farmacocinética, não disso.",
+                "Isso é da farmacocinética, não disso.",
+                "Isso é da farmacocinética, não disso.",
+                "Essa aí! Isso mede quanto se gruda no receptor."
+            ],
+            "gato": [
+                "Fijate: é de outra parte.",
+                "Dado curioso: é de outra parte.",
+                "Miau, é de outra parte.",
+                "Ronronado de aprovação! Mede o grude."
+            ]
+        }
     }
 ]

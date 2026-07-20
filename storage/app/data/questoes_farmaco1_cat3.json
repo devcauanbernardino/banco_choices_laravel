@@ -9227,7 +9227,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Como el isoproterenol alcanza una contracción máxima similar a la de un agonista pleno de referencia (adrenalina) en los mismos receptores, se clasifica como agonista (pleno) — es la respuesta correcta.",
+                    "Un agonista parcial produciría una respuesta máxima menor a la del agonista pleno de referencia, lo cual no ocurre aquí.",
+                    "Aunque técnicamente correcto en sentido amplio, \"agonista competitivo\" no es el término preciso; los agonistas no \"compiten\" con el receptor de la misma forma que los antagonistas competitivos con el agonista.",
+                    "Un antagonista irreversible bloquearía el efecto de la adrenalina, no produciría por sí mismo una contracción máxima similar."
+                ],
+                "fantasma": [
+                    "¡Esta! Hace el mismo efecto máximo, es agonista.",
+                    "Un parcial haría menos efecto.",
+                    "Ese término no es el más preciso acá.",
+                    "Un antagonista bloquea, no imita el efecto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Mismo efecto máximo.",
+                    "Fijate: sería menos.",
+                    "Dato curioso: no es el término justo.",
+                    "Miau, bloquea, no imita."
+                ]
+            }
         },
         {
             "numero": 202,
@@ -9253,7 +9273,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El dato compara dosis necesarias para el mismo efecto (potencia), no la respuesta máxima alcanzable (eficacia); esta conclusión no se desprende de los datos.",
+                    "Como el naproxeno necesita una dosis mucho menor (10mg frente a 100mg) para producir el mismo efecto que el ibuprofeno, el naproxeno es más potente — es la respuesta correcta.",
+                    "Ambos son AINEs con mecanismo similar (inhibición de COX); no hay evidencia en el enunciado de que actúen como agonista completo/parcial en el sentido farmacodinámico clásico.",
+                    "No hay evidencia de que uno bloquee el efecto del otro; el dato solo compara dosis necesarias para el mismo efecto."
+                ],
+                "fantasma": [
+                    "Ese dato es de potencia, no de eficacia.",
+                    "¡Esta! Necesita mucha menos dosis para lo mismo.",
+                    "Esos actúan parecido, no es ese el punto.",
+                    "Nadie está bloqueando a nadie acá."
+                ],
+                "gato": [
+                    "Fijate: es de potencia.",
+                    "¡Ronroneo de aprobación! Menos dosis, mismo efecto.",
+                    "Dato curioso: no es eso.",
+                    "Miau, no hay bloqueo."
+                ]
+            }
         },
         {
             "numero": 203,
@@ -9278,8 +9318,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un antagonista químico neutraliza al agonista directamente (por ejemplo, uniéndose a él en solución), no compitiendo por el receptor; no encaja con el escenario descrito.",
+                    "El enunciado establece explícitamente que Novamina se une a los MISMOS receptores que la acetilcolina; una unión de alta afinidad o pseudo-irreversible a ese receptor que reduce el Emax a baja concentración (sin cambiar la CE50 de los receptores restantes) y bloquea completamente a alta concentración es característica de un antagonista irreversible — es la respuesta correcta.",
+                    "Novamina reduce el Emax de la acetilcolina en lugar de producir su propio efecto máximo con menor intensidad; esto no encaja con la definición de agonista parcial (que sí activa el receptor, aunque de forma submáxima).",
+                    "Un antagonista fisiológico actúa en un receptor DIFERENTE, produciendo un efecto opuesto por una vía distinta; esto contradice directamente el dato de que Novamina se une a los MISMOS receptores que la acetilcolina."
+                ],
+                "fantasma": [
+                    "Eso neutraliza en la solución, no es esto.",
+                    "¡Esta! Se pega fuerte al mismo receptor y no suelta.",
+                    "Eso activaría algo, y acá solo reduce el efecto.",
+                    "Eso sería en otro receptor, y acá es el mismo."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "¡Ronroneo de aprobación! Se pega y no suelta.",
+                    "Dato curioso: no encaja.",
+                    "Miau, es el mismo receptor."
+                ]
+            }
         },
         {
             "numero": 204,
@@ -9305,7 +9365,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un agonista completo activa el receptor en su sitio habitual, no lo bloquea desde un sitio distinto.",
+                    "Un antagonista competitivo reversible se une en el MISMO sitio que el agonista, no en uno distinto.",
+                    "Un agonista parcial activa el receptor (de forma submáxima), no reduce la respuesta de otro agonista desde un sitio separado.",
+                    "Unirse en un sitio distinto (alostérico) del agonista, reduciendo la respuesta máxima habitual, es la definición de antagonista no competitivo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso activa, no bloquea desde otro lado.",
+                    "Ese se pega en el mismo lugar, no en otro.",
+                    "Ese también activa, aunque menos.",
+                    "¡Esta! Se pega en otro lado y frena el efecto."
+                ],
+                "gato": [
+                    "Fijate: activa.",
+                    "Dato curioso: mismo lugar.",
+                    "Miau, también activa.",
+                    "¡Ronroneo de aprobación! Otro lugar, frena el efecto."
+                ]
+            }
         },
         {
             "numero": 205,
@@ -9331,7 +9411,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El fenómeno de dualismo competitivo se caracteriza mejor por la reducción de eficacia máxima al desplazar el agonista total con el parcial, no específicamente por esta combinación de concentraciones bajas/altas.",
+                    "A altas concentraciones de ambos agonistas, generalmente predomina el efecto del agonista total en el sistema, no un \"antagonismo competitivo\" definido de esta forma.",
+                    "Cuando un agonista parcial desplaza progresivamente al agonista total en el mismo receptor, la eficacia máxima alcanzable en la curva se reduce por debajo del 100% del efecto del agonista total puro, ya que el agonista parcial \"diluye\" la activación al ocupar receptores sin producir el efecto máximo — es la respuesta correcta.",
+                    "El desplazamiento por competencia entre agonistas típicamente reduce (no aumenta) la potencia aparente del agonista total, ya que se necesita más concentración para superar la competencia del parcial."
+                ],
+                "fantasma": [
+                    "Eso no describe bien el fenómeno.",
+                    "A esas concentraciones, no es exactamente eso.",
+                    "¡Esta! El parcial le baja el techo al total.",
+                    "Es al revés, le baja la potencia, no la sube."
+                ],
+                "gato": [
+                    "Fijate: no es tan preciso.",
+                    "Dato curioso: no es exactamente eso.",
+                    "¡Ronroneo de aprobación! Le baja el techo.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 206,
@@ -9357,7 +9457,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un up regulation heterólogo aumenta (no disminuye) la Bmax; además, la pendiente del gráfico de Scatchard refleja la afinidad (Kd), no directamente el número de receptores.",
+                    "Un up regulation heterólogo se manifiesta principalmente como un cambio en la Bmax (número de receptores), no necesariamente en la pendiente (que refleja afinidad/Kd).",
+                    "Las hormonas tiroideas AUMENTAN (no disminuyen) la densidad de receptores beta-1 cardíacos; esta opción describe el efecto contrario al esperado.",
+                    "Las hormonas tiroideas, al no ser el ligando natural del receptor beta-1 (por eso \"heterólogo\"), aumentan la densidad de estos receptores (Bmax) en el tejido cardíaco, sensibilizando el corazón a catecolaminas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, sube; y eso no es la pendiente.",
+                    "Eso cambia la Bmax, no la pendiente.",
+                    "Es al revés, sube.",
+                    "¡Esta! Más receptores, corazón más sensible."
+                ],
+                "gato": [
+                    "Fijate: al revés; y no es la pendiente.",
+                    "Dato curioso: cambia la Bmax.",
+                    "Miau, al revés.",
+                    "¡Ronroneo de aprobación! Más receptores."
+                ]
+            }
         },
         {
             "numero": 207,
@@ -9382,8 +9502,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Este orden (B>A>D>C) no corresponde al cálculo de CE50: Droga C (10⁻⁸M) es la más potente, no la menos potente como implica este orden.",
+                    "Convirtiendo pCE50=8 a CE50=10⁻⁸M (droga C) y comparando las cuatro: C(10⁻⁸)<A(10⁻⁷)<D(10⁻⁴)<B(10⁻²); de más a menos potente (menor a mayor CE50): C>A>D>B — es la respuesta correcta (el texto de esta opción, aunque el gabarito original la etiquetaba con otra letra).",
+                    "Este orden (D>C>B>A) no corresponde al cálculo: coloca a D como la más potente, cuando en realidad D (CE50=10⁻⁴M) es menos potente que A y C.",
+                    "Este orden (C>B>D>A) coloca correctamente a C primero, pero invierte la posición relativa de B, D y A respecto al cálculo real."
+                ],
+                "fantasma": [
+                    "Ese orden no cierra con la cuenta.",
+                    "¡Esta! Esa es la cuenta correcta.",
+                    "Ese orden no cierra con la cuenta.",
+                    "Ese orden casi cierra, pero no del todo."
+                ],
+                "gato": [
+                    "Fijate: no cierra.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Dato curioso: no cierra.",
+                    "Miau, casi pero no."
+                ]
+            }
         },
         {
             "numero": 208,
@@ -9409,7 +9549,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Una muy baja especificidad biológica describe a las drogas de acción INESPECÍFICA, no específica.",
+                    "Las drogas de acción específica sí pueden ser antagonizadas específicamente, precisamente por actuar en un sitio de unión bien definido.",
+                    "Las drogas de acción específica, al unirse con alta afinidad a un receptor definido, suelen ser efectivas a concentraciones muy bajas (por debajo de 10mM), a diferencia de las de acción inespecífica, que requieren concentraciones mucho más altas — es la respuesta correcta.",
+                    "Una muy baja especificidad química también describe más a las drogas de acción inespecífica, no a las específicas."
+                ],
+                "fantasma": [
+                    "Eso es de las inespecíficas.",
+                    "A esas sí se las puede bloquear específico.",
+                    "¡Esta! Con poquita cantidad ya hacen efecto.",
+                    "Eso también es de las inespecíficas."
+                ],
+                "gato": [
+                    "Fijate: es de las otras.",
+                    "Dato curioso: sí se puede.",
+                    "¡Ronroneo de aprobación! Poquita cantidad.",
+                    "Miau, es de las otras."
+                ]
+            }
         },
         {
             "numero": 209,
@@ -9435,7 +9595,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Este orden (B>A>D>C) no corresponde al cálculo: coloca a B (la menos potente, CE50=10⁻²M) primero, cuando debería ser la última.",
+                    "Convirtiendo pCE50=8 a CE50=10⁻⁸M (droga C) y pCE50=5 a CE50=10⁻⁵M (droga D), y comparando las cuatro: C(10⁻⁸)<A(10⁻⁷)<D(10⁻⁵)<B(10⁻²); de más a menos potente: C>A>D>B — es la respuesta correcta.",
+                    "Este orden (D>C>B>A) no corresponde al cálculo: coloca a D primero, cuando D es menos potente que A y C.",
+                    "Este orden (C>B>D>A) coloca correctamente a C primero, pero invierte la posición relativa de B, D y A respecto al cálculo real."
+                ],
+                "fantasma": [
+                    "Ese orden no cierra con la cuenta.",
+                    "¡Esta! Esa es la cuenta correcta.",
+                    "Ese orden no cierra con la cuenta.",
+                    "Ese orden casi cierra, pero no del todo."
+                ],
+                "gato": [
+                    "Fijate: no cierra.",
+                    "¡Ronroneo de aprobación! La cuenta cierra.",
+                    "Dato curioso: no cierra.",
+                    "Miau, casi pero no."
+                ]
+            }
         },
         {
             "numero": 210,
@@ -9461,7 +9641,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Esta descripción corresponde a la CE50 del agonista mismo, no al pA2 (que es una medida relacionada con un antagonista).",
+                    "Aunque relacionada, esta descripción es menos precisa: el pA2 no se refiere a una reducción del 50% de la respuesta máxima, sino específicamente a duplicar la concentración necesaria de agonista.",
+                    "Esta descripción habla de un agonista parcial, no de un antagonista competitivo; no corresponde a la definición de pA2.",
+                    "El pA2 es el logaritmo negativo de la concentración de un antagonista competitivo necesaria para que se requiera el doble de concentración de agonista para lograr el mismo efecto (duplicar la CE50 del agonista) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es la CE50 del agonista, no esto.",
+                    "Se parece, pero no es exactamente así.",
+                    "Eso es de un agonista parcial, no de esto.",
+                    "¡Esta! Duplica lo que hace falta de agonista."
+                ],
+                "gato": [
+                    "Fijate: es la CE50.",
+                    "Dato curioso: no es exacto.",
+                    "Miau, es de otro tipo de droga.",
+                    "¡Ronroneo de aprobación! Duplica la CE50."
+                ]
+            }
         },
         {
             "numero": 211,
@@ -9487,7 +9687,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Sin modificación de otras variantes (como la afinidad), la pendiente (que depende del Kd) no debería cambiar; esta opción añade un cambio no justificado.",
+                    "Up regulation significa AUMENTO (no disminución) del número de receptores.",
+                    "Up regulation aumenta la Bmax (número de receptores); si no se modifican otras variantes como la afinidad, la pendiente (relacionada con el Kd) permanece igual — es la respuesta correcta.",
+                    "Up regulation significa aumento, no disminución, de la Bmax."
+                ],
+                "fantasma": [
+                    "Eso agrega un cambio que no corresponde.",
+                    "Up regulation es aumentar, no bajar.",
+                    "¡Esta! Más receptores, misma pendiente.",
+                    "Up regulation es aumentar, no bajar."
+                ],
+                "gato": [
+                    "Fijate: agrega algo de más.",
+                    "Dato curioso: es aumentar.",
+                    "¡Ronroneo de aprobación! Más receptores, misma pendiente.",
+                    "Miau, es aumentar."
+                ]
+            }
         },
         {
             "numero": 212,
@@ -9513,7 +9733,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La densidad de receptores sí se obtiene del binding, pero la potencia requiere un ensayo funcional dosis-respuesta, no solo binding.",
+                    "La afinidad sí se obtiene del binding, pero la actividad intrínseca requiere un ensayo funcional, no solo binding.",
+                    "Ni la actividad intrínseca ni la potencia se obtienen directamente de un ensayo de binding puro; ambas requieren un ensayo funcional.",
+                    "El gráfico de Scatchard, a partir de datos de binding de radioligando, da directamente la afinidad (Kd, de la pendiente) y la densidad de receptores (Bmax, de la intersección) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "La potencia no sale de ahí.",
+                    "La actividad intrínseca no sale de ahí.",
+                    "Ninguna de esas dos sale de un binding puro.",
+                    "¡Esta! Afinidad y cantidad de receptores, eso da el binding."
+                ],
+                "gato": [
+                    "Fijate: la potencia no sale de ahí.",
+                    "Dato curioso: tampoco sale de ahí.",
+                    "Miau, ninguna de las dos.",
+                    "¡Ronroneo de aprobación! Justo esos dos."
+                ]
+            }
         },
         {
             "numero": 213,
@@ -9539,7 +9779,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Con más receptores disponibles tras el up-regulation, se necesita ocupar una fracción menor de ellos para lograr el mismo efecto, lo que aumenta la potencia aparente y desplaza la curva hacia la izquierda — es la respuesta correcta.",
+                    "Es al revés: con más receptores, la potencia aumenta (no disminuye), desplazando la curva a la izquierda, no a la derecha.",
+                    "Aunque en agonistas parciales el aumento de receptores puede tener efectos adicionales sobre la eficacia máxima en ciertos contextos, el cambio principal y más directamente esperado es el desplazamiento por aumento de potencia.",
+                    "Sí se observan cambios en la curva: el up-regulation de receptores modifica la relación dosis-respuesta de la droga Z."
+                ],
+                "fantasma": [
+                    "¡Esta! Más receptores, hace falta menos droga.",
+                    "Es al revés, se corre para el otro lado.",
+                    "El cambio principal es otro.",
+                    "Sí cambia algo, no se queda igual."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Menos droga necesaria.",
+                    "Fijate: al revés.",
+                    "Dato curioso: el cambio principal es otro.",
+                    "Miau, sí cambia."
+                ]
+            }
         },
         {
             "numero": 214,
@@ -9565,7 +9825,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un antagonista no competitivo reduciría también la altura máxima, lo cual no ocurrió aquí (la altura máxima no cambió).",
+                    "Si M fuera agonista completo e Y antagonista no competitivo, se esperaría una reducción de la altura máxima, lo cual no se observó.",
+                    "Un antagonista competitivo (no no-competitivo) desplaza la curva a la derecha sin cambiar la altura máxima; sin embargo, esta opción no especifica correctamente el rol de M como agonista.",
+                    "La droga M, cuya curva se desplaza a la derecha sin cambio en la altura máxima en presencia de Y, se comporta como agonista completo compitiendo con Y, un antagonista competitivo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso también bajaría el techo, y no bajó.",
+                    "Eso también bajaría el techo, y no bajó.",
+                    "Eso no dice bien el papel de M.",
+                    "¡Esta! Se corre a la derecha, pero llega igual de alto."
+                ],
+                "gato": [
+                    "Fijate: bajaría el techo.",
+                    "Dato curioso: bajaría el techo.",
+                    "Miau, no encaja bien.",
+                    "¡Ronroneo de aprobación! Igual de alto."
+                ]
+            }
         },
         {
             "numero": 215,
@@ -9590,8 +9870,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "B",
-            "origem_seccion": "farmacodinamia_parte1"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "CE50_D (10⁻³) es mayor que CE50_C (10⁻⁹), es decir, D necesita mucha más concentración que C para el mismo efecto; por eso D tiene menor potencia que C — es la respuesta correcta.",
+                    "CE50_A es 10⁻⁵ (ya que pCE50=5) y CE50_D es 10⁻³; comparando, 10⁻⁵ es MENOR que 10⁻³, por lo que A tiene MENOR (no mayor) CE50 que D.",
+                    "CE50_B es 10⁻⁷ (ya que pCE50=7) y CE50_C es 10⁻⁹; como 10⁻⁹ es menor que 10⁻⁷, C es más potente que B, es decir B tiene MENOR (no mayor) potencia que C.",
+                    "CE50_A es 10⁻⁵ y CE50_B es 10⁻⁷; como 10⁻⁵ es MAYOR que 10⁻⁷, A tiene MAYOR (no menor) CE50 que B."
+                ],
+                "fantasma": [
+                    "¡Esta! D necesita mucho más que C.",
+                    "Es al revés, A tiene menos.",
+                    "Es al revés, B tiene menos potencia.",
+                    "Es al revés, A tiene más CE50."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! D necesita más.",
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 216,
@@ -9617,7 +9917,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un up regulation homólogo sería causado por el propio ligando del receptor (un agonista/antagonista beta2), no por glucocorticoides, que son heterólogos a este receptor.",
+                    "Los glucocorticoides AUMENTAN (no disminuyen) la densidad de receptores beta2 en tejido bronquial; esta opción describe el efecto contrario.",
+                    "Los glucocorticoides no reducen la Bmax de los receptores beta2; al contrario, la aumentan, por lo que tampoco se trata de un down regulation.",
+                    "Los glucocorticoides, al no ser el ligando natural del receptor beta2 (por eso \"heterólogo\"), aumentan su densidad (Bmax) en el tejido bronquial, potenciando la respuesta a los agonistas beta2 — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese no es el mecanismo, y sería otro tipo.",
+                    "Es al revés, sube.",
+                    "Es al revés, sube.",
+                    "¡Esta! Más receptores, mejor responde al beta2."
+                ],
+                "gato": [
+                    "Fijate: no es ese mecanismo.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés.",
+                    "¡Ronroneo de aprobación! Más receptores."
+                ]
+            }
         },
         {
             "numero": 217,
@@ -9643,7 +9963,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El Kd de A (10⁻⁹M) es menor que el de B (10⁻⁷M); como un Kd menor indica mayor afinidad, esta opción invierte la relación.",
+                    "La afinidad de A no es menor que la de B; es al revés, dado su menor Kd.",
+                    "El Kd de A (10⁻⁹M) es 100 veces menor que el de B (10⁻⁷M), lo que indica mayor afinidad de A por el receptor — es la respuesta correcta.",
+                    "Un ensayo de unión de radioligandos mide afinidad, no eficacia farmacodinámica, que requiere ensayos funcionales."
+                ],
+                "fantasma": [
+                    "Es al revés.",
+                    "Es al revés.",
+                    "¡Esta! Kd más chico, se pega más fuerte.",
+                    "Eso no mide eficacia, mide unión."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Se pega más fuerte.",
+                    "Miau, no mide eso."
+                ]
+            }
         },
         {
             "numero": 218,
@@ -9668,8 +10008,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El bloqueo crónico de un receptor (por un antagonista como el propranolol) reduce la estimulación habitual, y el organismo compensa aumentando el número de receptores disponibles (up regulation) — es la respuesta correcta.",
+                    "Un incremento de la actividad de neuronas noradrenérgicas implica MÁS estimulación crónica del receptor, lo cual típicamente causa down regulation (desensibilización), no up regulation.",
+                    "Liberar más noradrenalina de forma crónica (por anfetaminas) implica más estimulación del receptor, lo que causaría down regulation, no up regulation.",
+                    "El uso crónico de un agonista directo (isoproterenol) también implica estimulación aumentada del receptor, lo que causaría down regulation, no up regulation."
+                ],
+                "fantasma": [
+                    "¡Esta! Bloquearlo mucho hace que el cuerpo fabrique más.",
+                    "Eso es estimular de más, baja los receptores.",
+                    "Eso es estimular de más, baja los receptores.",
+                    "Eso es estimular de más, baja los receptores."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El bloqueo genera más receptores.",
+                    "Fijate: es estimular de más.",
+                    "Dato curioso: es estimular de más.",
+                    "Miau, es estimular de más."
+                ]
+            }
         },
         {
             "numero": 219,
@@ -9695,7 +10055,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un antagonista reversible (competitivo) desplaza la curva del agonista hacia la DERECHA (no la izquierda), ya que se necesita más agonista para superar la competencia.",
+                    "La curva se desplaza a la izquierda solo con este cambio en la pendiente/Emax en ciertos escenarios distintos; para un antagonismo competitivo puro, no se espera reducción del Emax.",
+                    "El antagonismo competitivo puro no reduce la respuesta máxima ni cambia la pendiente; solo desplaza la curva, ya que su efecto siempre puede superarse con suficiente agonista.",
+                    "Un antagonista competitivo reversible desplaza la curva de concentración-respuesta hacia la derecha, sin cambios en la pendiente ni en la respuesta máxima, ya que su efecto siempre puede superarse aumentando la concentración de agonista — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, se corre para la derecha.",
+                    "Eso no pasa con un competitivo puro.",
+                    "Eso no pasa con un competitivo puro.",
+                    "¡Esta! Se corre a la derecha, pero llega igual de alto."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: no pasa así.",
+                    "Miau, no pasa así.",
+                    "¡Ronroneo de aprobación! Igual de alto."
+                ]
+            }
         },
         {
             "numero": 220,
@@ -9721,7 +10101,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El cociente pico/valle es un parámetro farmacocinético relacionado con dosificación repetida, no con la formación de complejos fármaco-receptor.",
+                    "El volumen aparente de distribución es un parámetro farmacocinético, no relacionado con la formación de complejos fármaco-receptor.",
+                    "El factor de acumulación es también un parámetro farmacocinético, ajeno a la formación de complejos fármaco-receptor.",
+                    "La constante de disociación (Kd) mide la afinidad del fármaco por el receptor, la cual, junto con la concentración disponible, determina cuántos complejos fármaco-receptor se forman — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es de la farmacocinética, no de esto.",
+                    "Eso es de la farmacocinética, no de esto.",
+                    "Eso es de la farmacocinética, no de esto.",
+                    "¡Esta! Eso mide cuánto se pega al receptor."
+                ],
+                "gato": [
+                    "Fijate: es de otra parte.",
+                    "Dato curioso: es de otra parte.",
+                    "Miau, es de otra parte.",
+                    "¡Ronroneo de aprobación! Mide el pegado."
+                ]
+            }
         },
         {
             "numero": 221,
