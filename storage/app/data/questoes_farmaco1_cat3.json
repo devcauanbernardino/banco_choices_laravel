@@ -947,7 +947,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El CYP2D6 metaboliza un porcentaje menor de fármacos que el CYP3A4, aunque es clínicamente relevante por su polimorfismo genético.",
+                    "El CYP3A4 es la isoforma más abundante en el hígado y metaboliza la mayor cantidad de fármacos utilizados en clínica — es la respuesta correcta.",
+                    "El CYP1A2 metaboliza un porcentaje menor de fármacos que el CYP3A4.",
+                    "El CYP2C9 metaboliza un porcentaje menor de fármacos que el CYP3A4."
+                ],
+                "fantasma": [
+                    "Ese metaboliza menos que el otro.",
+                    "¡Esta! El que más droga metaboliza.",
+                    "Ese metaboliza menos que el otro.",
+                    "Ese metaboliza menos que el otro."
+                ],
+                "gato": [
+                    "Fijate: metaboliza menos.",
+                    "¡Ronroneo de aprobación! El campeón del hígado.",
+                    "Dato curioso: metaboliza menos.",
+                    "Miau, metaboliza menos."
+                ]
+            }
         },
         {
             "numero": 22,
@@ -973,7 +993,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La hidrólisis es una reacción NO sintética (de Fase I), no una reacción sintética.",
+                    "La oxido-reducción y la conjugación con ácido glucurónico son procesos MICROSOMALES (dependientes del retículo endoplásmico liso, incluido el sistema CYP450 y las UGT), no procesos no microsomales.",
+                    "La metilación y la acetilación SÍ son reacciones de tipo sintético (Fase II), no no sintéticas.",
+                    "La conjugación con ácido glucurónico (glucuronidación) es una reacción de conjugación, es decir, un proceso sintético de la Fase II del metabolismo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa no conjuga, no es sintética.",
+                    "Esas dos son microsomales.",
+                    "Esas sí son sintéticas.",
+                    "¡Esta! Conjuga, es de Fase II."
+                ],
+                "gato": [
+                    "Fijate: no es sintética.",
+                    "Dato curioso: son microsomales.",
+                    "Miau, sí son sintéticas.",
+                    "¡Ronroneo de aprobación! Fase II."
+                ]
+            }
         },
         {
             "numero": 23,
@@ -999,7 +1039,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Como ambas drogas tienen el mismo pKa (4), la relación de concentración en equilibrio entre los dos medios (determinada por Henderson-Hasselbalch) es igual para M y N; el coeficiente de partición no determina el valor final de esta relación, sino la velocidad para alcanzarla.",
+                    "Igual que en la opción A, el coeficiente de partición no altera la relación de concentración en el equilibrio, que depende solo del pKa (idéntico para ambas drogas).",
+                    "La droga M, con un coeficiente de partición lípido/agua mucho mayor (15 frente a 0,3), difunde más rápido a través de la membrana lipídica y por eso alcanza el estado estacionario antes que N, aunque la relación de concentraciones final en el equilibrio sea la misma para ambas (ya que comparten el mismo pKa) — es la respuesta correcta.",
+                    "La droga N, con menor coeficiente de partición lípido/agua, difunde más lento a través de la membrana, por lo que tarda más (no menos) en alcanzar el estado estacionario."
+                ],
+                "fantasma": [
+                    "El pKa es igual, no cambia el resultado final.",
+                    "El pKa es igual, no cambia el resultado final.",
+                    "¡Esta! Más grasa, llega más rápido al equilibrio.",
+                    "Esa es más lenta, no más rápida."
+                ],
+                "gato": [
+                    "Fijate: mismo pKa, mismo resultado.",
+                    "Dato curioso: mismo pKa, mismo resultado.",
+                    "¡Ronroneo de aprobación! Llega rápido.",
+                    "Miau, es la lenta."
+                ]
+            }
         },
         {
             "numero": 24,
@@ -1025,7 +1085,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La liposolubilidad es DIRECTAMENTE (no inversamente) proporcional a la difusión simple, ya que la membrana es una bicapa lipídica.",
+                    "La ionización molecular es INVERSAMENTE (no directamente) proporcional a la difusión, ya que las moléculas ionizadas no atraviesan fácilmente la bicapa lipídica.",
+                    "El tamaño molecular es INVERSAMENTE (no directamente) proporcional a la difusión: moléculas más grandes difunden peor.",
+                    "El coeficiente de partición lípido/agua refleja la liposolubilidad relativa de la molécula, y es directamente proporcional a la velocidad de difusión simple a través de la membrana — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, es directa.",
+                    "Es al revés, es inversa.",
+                    "Es al revés, es inversa.",
+                    "¡Esta! Más grasa, más difusión."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés.",
+                    "¡Ronroneo de aprobación! Más grasa, más difusión."
+                ]
+            }
         },
         {
             "numero": 25,
@@ -1051,7 +1131,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Con un pH urinario (8) más ácido que el pKa (9) de esta droga básica, predomina la fracción ionizada; la forma ionizada no se reabsorbe, por lo que la droga A se excreta, no se reabsorbe.",
+                    "Con un pH urinario (8) más ácido que el pKa (9) de esta droga básica, la base se ioniza más, queda atrapada en la orina (no se reabsorbe) y se excreta — es la respuesta correcta.",
+                    "No hay una relación causal directa entre administrar la droga B y aumentar la fracción ionizada de la droga A, salvo que B modifique el pH urinario, dato no proporcionado en el enunciado.",
+                    "El pKa de la droga B no determina directamente si la droga A se excreta; lo relevante para A es la relación entre su propio pKa y el pH urinario."
+                ],
+                "fantasma": [
+                    "Al revés, no se reabsorbe.",
+                    "¡Esta! Se ioniza en la orina y se va.",
+                    "Eso no se sabe con este dato.",
+                    "Ese dato no aplica a la droga A."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Se va por la orina.",
+                    "Dato curioso: no alcanza el dato.",
+                    "Miau, no aplica."
+                ]
+            }
         },
         {
             "numero": 26,
@@ -1077,7 +1177,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La filtración glomerular es un proceso pasivo, dependiente de la presión de filtración, NO es un proceso saturable (a diferencia de la secreción tubular activa).",
+                    "La secreción tubular activa depende del flujo sanguíneo renal, ya que este determina cuánto fármaco llega a los túbulos para ser transportado activamente hacia la luz tubular — es la respuesta correcta.",
+                    "La reabsorción tubular es más eficiente en drogas NO ionizadas (liposolubles), no en drogas ionizadas.",
+                    "Un fármaco unido a proteínas plasmáticas NO se filtra libremente en el glomérulo; solo la fracción libre se filtra."
+                ],
+                "fantasma": [
+                    "Esa no se satura.",
+                    "¡Esta! Depende de cuánta sangre llega al riñón.",
+                    "Es al revés, lo no ionizado.",
+                    "Eso no se filtra, queda pegado a la proteína."
+                ],
+                "gato": [
+                    "Fijate: no se satura.",
+                    "¡Ronroneo de aprobación! Depende del flujo.",
+                    "Dato curioso: al revés.",
+                    "Miau, no se filtra."
+                ]
+            }
         },
         {
             "numero": 27,
@@ -1103,7 +1223,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "En la difusión simple, la velocidad es INVERSAMENTE (no directamente) proporcional al tamaño de la molécula.",
+                    "La difusión facilitada SÍ es selectiva, ya que utiliza transportadores específicos para determinadas moléculas; no es una característica de no selectividad.",
+                    "La ultrafiltración (filtración glomerular) permite el paso de la mayoría de las drogas y solutos pequeños, excluyendo a las macromoléculas (como proteínas grandes) — es la respuesta correcta.",
+                    "En la difusión simple, cuanto mayor sea el coeficiente lípido/agua, MAYOR (no menor) será la velocidad de difusión."
+                ],
+                "fantasma": [
+                    "Es al revés, cuanto más grande, más lento.",
+                    "Esa sí elige a quién deja pasar.",
+                    "¡Esta! Deja pasar casi todo menos lo grande.",
+                    "Es al revés, más grasa es más rápido."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: sí elige.",
+                    "¡Ronroneo de aprobación! Filtra casi todo.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 28,
@@ -1129,7 +1269,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La hidrólisis es una reacción NO sintética (Fase I), no una reacción sintética.",
+                    "La conjugación con ácido sulfúrico (sulfatación) es una reacción sintética (Fase II), no una reacción no sintética.",
+                    "Esta descripción no corresponde con precisión a las reacciones de óxido-reducción típicas del metabolismo de fármacos, que son catalizadas principalmente por el sistema citocromo P450.",
+                    "Las acetilaciones son reacciones de conjugación, es decir, reacciones sintéticas de la Fase II del metabolismo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa no es sintética.",
+                    "Esa sí es sintética.",
+                    "Esa descripción no es la correcta.",
+                    "¡Esta! Esa sí es sintética."
+                ],
+                "gato": [
+                    "Fijate: no es sintética.",
+                    "Dato curioso: sí es sintética.",
+                    "Miau, no es así.",
+                    "¡Ronroneo de aprobación! Es sintética."
+                ]
+            }
         },
         {
             "numero": 29,
@@ -1155,7 +1315,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La vía sublingual, aunque rápida, no garantiza el 100% de biodisponibilidad, ya que aún puede haber pérdida de fármaco por deglución parcial.",
+                    "La vía transdérmica es más lenta y, aunque evita el metabolismo de primer paso, no necesariamente alcanza la máxima biodisponibilidad de forma inmediata.",
+                    "La vía intramuscular puede tener variaciones de absorción según el flujo sanguíneo local, sin garantizar 100% de biodisponibilidad.",
+                    "La vía endovenosa introduce el fármaco directamente en la circulación sistémica, alcanzando por definición una biodisponibilidad del 100%, sin pérdidas por absorción ni metabolismo de primer paso — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ahí se puede perder un poco.",
+                    "Esa es más lenta.",
+                    "Esa varía según el músculo.",
+                    "¡Esta! Va directo a la sangre, 100%."
+                ],
+                "gato": [
+                    "Fijate: se pierde algo.",
+                    "Dato curioso: es más lenta.",
+                    "Miau, varía.",
+                    "¡Ronroneo de aprobación! Directo a la sangre."
+                ]
+            }
         },
         {
             "numero": 30,
@@ -1181,7 +1361,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Si se inhibe el metabolismo hepático, la droga se elimina MÁS LENTO, por lo que su vida media aumenta, no disminuye.",
+                    "Al inhibir el metabolismo hepático, la droga se elimina más lentamente del organismo, lo que prolonga su vida media — es la respuesta correcta.",
+                    "La inhibición del metabolismo sí modifica la vida media, ya que el metabolismo hepático es un determinante clave de la velocidad de eliminación de muchos fármacos.",
+                    "Aunque la unión a proteínas influye en la distribución, el efecto directo de inhibir el metabolismo hepático sobre la vida media no depende principalmente de esa unión."
+                ],
+                "fantasma": [
+                    "Es al revés, aumenta.",
+                    "¡Esta! Se elimina más lento, dura más.",
+                    "Sí cambia, y bastante.",
+                    "Eso no es lo que decide acá."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Dura más.",
+                    "Dato curioso: sí cambia.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 31,
@@ -1207,7 +1407,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El CYP1A2 metaboliza un porcentaje menor de fármacos que el CYP3A4.",
+                    "El CYP2C9 metaboliza un porcentaje menor de fármacos que el CYP3A4.",
+                    "El CYP2C19 metaboliza un porcentaje menor de fármacos que el CYP3A4.",
+                    "El CYP3A4 es la isoforma responsable de metabolizar el mayor número de medicamentos en el hígado — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese metaboliza menos.",
+                    "Ese metaboliza menos.",
+                    "Ese metaboliza menos.",
+                    "¡Esta! El que más metaboliza."
+                ],
+                "gato": [
+                    "Fijate: metaboliza menos.",
+                    "Dato curioso: metaboliza menos.",
+                    "Miau, metaboliza menos.",
+                    "¡Ronroneo de aprobación! El campeón."
+                ]
+            }
         },
         {
             "numero": 32,
@@ -1233,7 +1453,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El túbulo renal no es un sitio de absorción de fármacos administrados por vía oral; es un sitio de reabsorción/secreción tras la filtración.",
+                    "En el intestino (pH ~6-7, mayor que el pKa 4), este ácido estaría mayormente ionizado, lo que da una velocidad de absorción por unidad de superficie menor que en el estómago.",
+                    "El líquido cefalorraquídeo no es un compartimento de absorción de fármacos administrados por vía oral.",
+                    "En el estómago (pH muy ácido, ~1-2, mucho menor que el pKa 4), este ácido débil está casi completamente en su forma NO ionizada, lo que le da la mayor velocidad de absorción por unidad de superficie entre los compartimentos listados — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ahí no se absorbe, ahí se filtra.",
+                    "Ahí se ioniza más, va más lento.",
+                    "Ahí no se absorbe nada de esto.",
+                    "¡Esta! Ahí casi no se ioniza, va rápido."
+                ],
+                "gato": [
+                    "Fijate: no es absorción.",
+                    "Dato curioso: va más lento.",
+                    "Miau, no es absorción.",
+                    "¡Ronroneo de aprobación! Va rápido."
+                ]
+            }
         },
         {
             "numero": 33,
@@ -1259,7 +1499,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El orden A>B>C no corresponde a la relación esperada entre el pKa de cada droga y la diferencia de pH entre la leche (más ácida) y el plasma materno.",
+                    "El orden A>C>B tampoco corresponde a la relación esperada según el pKa de cada droga.",
+                    "Las bases con mayor pKa (más básicas) se ionizan más en el medio más ácido de la leche materna respecto al plasma, quedando más atrapadas allí y alcanzando mayor concentración relativa; los ácidos, en cambio, tienden a no acumularse en la leche. Por eso el orden es C (base pKa 10) > B (base pKa 8) > A (ácido pKa 5) — es la respuesta correcta.",
+                    "El orden D>A>B no corresponde a la relación esperada entre pKa y el gradiente de pH leche-plasma."
+                ],
+                "fantasma": [
+                    "Ese orden no cierra.",
+                    "Ese orden no cierra.",
+                    "¡Esta! Cuanto más básica, más se atrapa en la leche.",
+                    "Ese orden no cierra."
+                ],
+                "gato": [
+                    "Fijate: no cierra.",
+                    "Dato curioso: no cierra.",
+                    "¡Ronroneo de aprobación! Más básica, más atrapada.",
+                    "Miau, no cierra."
+                ]
+            }
         },
         {
             "numero": 34,
@@ -1285,7 +1545,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El intestino delgado tiene, por lejos, la mayor superficie de absorción (gracias a las microvellosidades), seguido del pulmón (alveolos), la piel y finalmente el estómago, que tiene la menor superficie de las cuatro — es la respuesta correcta.",
+                    "Este orden coloca la piel antes que el pulmón, invirtiendo el orden real de superficie de absorción entre ambos.",
+                    "Este orden coloca al estómago antes que la piel y el pulmón, cuando en realidad el estómago tiene la menor superficie de absorción de las cuatro.",
+                    "Este orden coloca al estómago antes que el pulmón y la piel, invirtiendo el orden real de superficie de absorción."
+                ],
+                "fantasma": [
+                    "¡Esta! Intestino gana por lejos, después pulmón.",
+                    "Ahí cambiaste piel y pulmón.",
+                    "El estómago es el más chico de todos.",
+                    "El estómago es el más chico de todos."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El intestino gana.",
+                    "Fijate: cambiaste el orden.",
+                    "Dato curioso: el estómago es chico.",
+                    "Miau, el estómago es chico."
+                ]
+            }
         },
         {
             "numero": 35,
@@ -1311,7 +1591,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La oxidorreducción a través de oxidasas es una reacción de Fase I, no de Fase II.",
+                    "La acetilación es una reacción de conjugación, típica de la Fase II (sintética) del metabolismo — es la respuesta correcta.",
+                    "La hidrólisis es una reacción de Fase I, no de Fase II.",
+                    "La oxidorreducción a través de catalasas es una reacción de Fase I, no de Fase II."
+                ],
+                "fantasma": [
+                    "Esa es de Fase I.",
+                    "¡Esta! Esa conjuga, es de Fase II.",
+                    "Esa es de Fase I.",
+                    "Esa es de Fase I."
+                ],
+                "gato": [
+                    "Fijate: Fase I.",
+                    "¡Ronroneo de aprobación! Fase II.",
+                    "Dato curioso: Fase I.",
+                    "Miau, Fase I."
+                ]
+            }
         },
         {
             "numero": 36,
@@ -1337,7 +1637,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Una alta unión a proteínas plasmáticas mantiene al fármaco retenido en el compartimento vascular, resultando en un volumen de distribución ALTO no sería lo esperado; es lo contrario de lo que ocurre.",
+                    "Una alta unión a proteínas plasmáticas limita la salida del fármaco hacia los tejidos (solo la fracción libre se distribuye), resultando en un volumen de distribución bajo — es la respuesta correcta.",
+                    "El volumen de distribución no se vuelve infinito por la unión a proteínas; ese concepto se aplica a fármacos que se acumulan extensamente en tejidos, lo opuesto a este escenario.",
+                    "La unión a proteínas plasmáticas sí modifica el volumen de distribución, siendo un determinante importante del mismo."
+                ],
+                "fantasma": [
+                    "Es al revés, queda pegado en la sangre.",
+                    "¡Esta! Queda pegado en la sangre, bajo.",
+                    "No es infinito, es lo contrario.",
+                    "Sí cambia, y mucho."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Queda en la sangre.",
+                    "Dato curioso: no es infinito.",
+                    "Miau, sí cambia."
+                ]
+            }
         },
         {
             "numero": 37,
@@ -1363,7 +1683,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El pKa es una propiedad característica de la droga (constante de disociación) que, junto con el pH del medio, determina su grado de ionización en distintos compartimentos biológicos — es la respuesta correcta.",
+                    "El pKa no es el negativo del logaritmo de una constante de absorción; es el negativo del logaritmo de la constante de disociación ácida (Ka).",
+                    "El pKa es el pH en el cual la droga está 50% ionizada y 50% no ionizada, no el pH en el cual está completamente no ionizada.",
+                    "El pKa es una propiedad de la DROGA, no del medio en que se encuentra; el medio aporta el pH, que junto al pKa determina la ionización."
+                ],
+                "fantasma": [
+                    "¡Esta! Es de la droga, decide cómo se disocia.",
+                    "Eso no es de absorción, es de disociación.",
+                    "No es \"todo no ionizado\", es mitad y mitad.",
+                    "Es de la droga, no del medio."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Propiedad de la droga.",
+                    "Fijate: es de disociación.",
+                    "Dato curioso: es mitad y mitad.",
+                    "Miau, es de la droga."
+                ]
+            }
         },
         {
             "numero": 38,
@@ -1389,7 +1729,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Un alto coeficiente de partición lípido/agua favorece la absorción en tejidos LIPÍDICOS, no en tejidos acuosos.",
+                    "Un alto coeficiente de partición lípido/agua generalmente favorece (no reduce) la biodisponibilidad oral, al mejorar la absorción intestinal.",
+                    "Un alto coeficiente de partición lípido/agua indica alta liposolubilidad, lo que facilita el paso a través de las membranas celulares (bicapa lipídica) — es la respuesta correcta.",
+                    "Un fármaco muy liposoluble tiende a reabsorberse más en los túbulos renales, resultando en menor (no mayor) eliminación renal directa."
+                ],
+                "fantasma": [
+                    "Es al revés, va a la grasa.",
+                    "Es al revés, mejora la absorción oral.",
+                    "¡Esta! Más grasa, pasa más fácil.",
+                    "Es al revés, se reabsorbe más."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Pasa fácil.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 39,
@@ -1415,7 +1775,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El circuito enterohepático no ocurre \"siempre\" en drogas de alta extracción hepática; depende específicamente de si la droga (o su metabolito) se excreta por bilis, independientemente del grado de extracción hepática.",
+                    "El circuito enterohepático depende de la excreción BILIAR de la droga, la cual puede ocurrir sea cual sea la vía de administración original, no exclusivamente por vía oral o rectal.",
+                    "El circuito enterohepático requiere que la droga (o su metabolito, liberado por ejemplo tras hidrólisis bacteriana intestinal de un conjugado) sea reabsorbida a nivel intestinal, volviendo a la circulación sistémica — es la respuesta correcta.",
+                    "Es el circuito enterohepático EN SÍ (no su interrupción) el que puede aumentar la vida media y prolongar el efecto, típicamente en fármacos que se conjugan y excretan por bilis, no una condición limitada a fármacos muy hidrosolubles."
+                ],
+                "fantasma": [
+                    "No es \"siempre\", depende de la bilis.",
+                    "No es exclusivo de esas vías.",
+                    "¡Esta! Tiene que volver a entrar por el intestino.",
+                    "Está al revés, el circuito mismo alarga el efecto."
+                ],
+                "gato": [
+                    "Fijate: no es siempre.",
+                    "Dato curioso: no es exclusivo.",
+                    "¡Ronroneo de aprobación! Vuelve a entrar.",
+                    "Miau, está al revés."
+                ]
+            }
         },
         {
             "numero": 40,
@@ -1441,7 +1821,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Una baja liposolubilidad dificulta, no favorece, la difusión a través de la membrana gástrica.",
+                    "Una alta ionización dificulta la absorción, ya que la forma ionizada no atraviesa fácilmente la bicapa lipídica.",
+                    "El pKa de la droga, en relación con el pH del medio gástrico, determina el grado de ionización y por lo tanto la capacidad de absorción; esta relación pKa-pH es el factor determinante clave para la absorción gástrica — es la respuesta correcta.",
+                    "La unión a proteínas plasmáticas es un fenómeno de distribución sanguínea, no de absorción a través de la membrana gástrica."
+                ],
+                "fantasma": [
+                    "Eso complica, no ayuda.",
+                    "Eso complica la absorción.",
+                    "¡Esta! El pKa frente al pH decide todo.",
+                    "Eso es de otra etapa, no de acá."
+                ],
+                "gato": [
+                    "Fijate: complica.",
+                    "Dato curioso: complica.",
+                    "¡Ronroneo de aprobación! El pKa manda.",
+                    "Miau, es de otra etapa."
+                ]
+            }
         },
         {
             "numero": 41,
