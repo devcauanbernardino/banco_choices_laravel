@@ -29463,7 +29463,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la fibroelastografía hepática es útil para el seguimiento de la hepatitis crónica.",
+                    "El HBcAg no es detectable en sangre y no se cuantifica en el monitoreo clínico; no tiene utilidad para el seguimiento — esta es la excepción.",
+                    "Efectivamente la carga viral es esencial para el seguimiento de la infección crónica.",
+                    "Efectivamente el estudio de resistencia a antivirales es útil para ajustar el tratamiento."
+                ],
+                "fantasma": [
+                    "Esa está bien, mide la cicatriz.",
+                    "¡Esta! Ese no se ve en la sangre, no sirve seguir con eso.",
+                    "Esa está bien, mide el virus.",
+                    "Esa está bien, ajusta el tratamiento."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No se ve en sangre.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 1,
@@ -29489,7 +29509,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Meningitis/Taenia saginata. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Meningitis/Taenia saginata. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Taenia saginata no causa meningitis; esta lombriz permanece en el intestino y no invade el sistema nervioso central. La neurocisticercosis (que sí afecta el SNC) es causada por Taenia solium — esta es la opción incorrecta.",
+                    "Efectivamente Pneumocystis jirovecii causa neumonía subaguda en pacientes con CD4 bajo.",
+                    "Efectivamente Toxoplasma gondii causa masa ocupante cerebral por reactivación en pacientes con CD4 <100.",
+                    "Efectivamente Trypanosoma cruzi puede causar meningoencefalitis por reactivación de Chagas en inmunosuprimidos."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa lombriz se queda en la panza, no va al cerebro.",
+                    "Esa está bien, con poca defensa.",
+                    "Esa está bien, esa masa.",
+                    "Esa está bien, se reactiva el Chagas."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se queda en la panza.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -29515,7 +29555,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: El LCR suele ser turbio y con aumento de leucocitos polimorfonucleares. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: El LCR suele ser turbio y con aumento de leucocitos polimorfonucleares. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la tinta china en el LCR es útil para visualizar las levaduras capsuladas.",
+                    "Efectivamente puede presentarse concomitantemente con compromiso pulmonar y cutáneo.",
+                    "El LCR en la criptococosis suele ser claro, con pleocitosis a predominio mononuclear, no turbio ni con predominio de polimorfonucleares — esta es la opción incorrecta.",
+                    "Efectivamente suele presentarse como una meningitis subaguda."
+                ],
+                "fantasma": [
+                    "Esa está bien, se ve la levadura.",
+                    "Esa está bien, en varios lados.",
+                    "¡Esta! Ese es claro, no turbio.",
+                    "Esa está bien, subaguda."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es claro.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -29541,7 +29601,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "La opción CORRECTA es C: Se transmite por contagio Interhumano por vía respiratoria Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es C: Se transmite por contagio Interhumano por vía respiratoria Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "La ausencia de anticuerpos no descarta la infección aguda; muchos pacientes inmunosuprimidos no generan una respuesta serológica adecuada.",
+                    "El lavado broncoalveolar posee alta sensibilidad para el diagnóstico de Pneumocystis, no baja.",
+                    "Pneumocystis jirovecii se transmite por contagio interhumano por vía respiratoria, siendo esta la vía de adquisición reconocida — es la respuesta correcta.",
+                    "Pneumocystis jirovecii no se cultiva de rutina en el laboratorio clínico; el diagnóstico se hace por visualización directa (tinción) o técnicas moleculares, no por cultivo."
+                ],
+                "fantasma": [
+                    "No, puede no tener anticuerpo igual.",
+                    "No, es al revés, ve bastante bien.",
+                    "¡Esta! Se pasa por el aire de persona a persona.",
+                    "No, ese no se cultiva así."
+                ],
+                "gato": [
+                    "Fijate: puede no tener.",
+                    "Dato curioso: ve bien.",
+                    "¡Ronroneo de aprobación! Por el aire.",
+                    "Miau, no se cultiva."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -29567,7 +29647,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Es frecuentemente producida por Entamoeba coli. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Es frecuentemente producida por Entamoeba coli. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente puede ser producida por parásitos oportunistas como Cryptosporidium spp. y Cystoisospora belli.",
+                    "Entamoeba coli es una ameba comensal no patógena; no causa diarrea. La ameba patógena es Entamoeba histolytica — esta es la opción incorrecta.",
+                    "Efectivamente para su diagnóstico se requiere coproparasitológico y eventualmente biopsia intestinal.",
+                    "Efectivamente la tinción de Kinyoun se utiliza para optimizar el reconocimiento de estructuras parasitarias como Cryptosporidium."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos dos bichos.",
+                    "¡Esta! Esa ameba no hace nada, vive tranquila.",
+                    "Esa está bien, con esos estudios.",
+                    "Esa está bien, esa tinción."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No hace nada.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -29593,7 +29693,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: El diagnóstico se realiza fundamentalmente con serología y PPD. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: El diagnóstico se realiza fundamentalmente con serología y PPD. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente en pacientes con CD4 <200 son más frecuentes las formas extrapulmonares y diseminadas.",
+                    "Efectivamente en pacientes con CD4 altos puede presentarse como una neumonía crónica similar a la de inmunocompetentes.",
+                    "El diagnóstico de tuberculosis no se realiza fundamentalmente con serología y PPD; se basa en bacteriología (baciloscopia, cultivo) y técnicas moleculares. El PPD solo indica exposición previa, no enfermedad activa — esta es la opción incorrecta.",
+                    "Efectivamente es una infección prevalente en nuestro país."
+                ],
+                "fantasma": [
+                    "Esa está bien, con poca defensa.",
+                    "Esa está bien, con mucha defensa.",
+                    "¡Esta! Eso no se ve con sangre, se ve con el bicho directo.",
+                    "Esa está bien, hay mucho acá."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Se ve el bicho directo.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -29619,7 +29739,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Búsqueda de anticuerpos contra el polisacárido capsular. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Búsqueda de anticuerpos contra el polisacárido capsular. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente se solicitan hemocultivos ante sospecha de criptococosis diseminada.",
+                    "Efectivamente se realizan escarificaciones cutáneas si hay lesiones en piel.",
+                    "No se busca anticuerpos contra el polisacárido capsular; el diagnóstico se basa en la detección del ANTÍGENO capsular (no del anticuerpo), ya que en inmunosuprimidos la respuesta de anticuerpos puede ser pobre — esta es la opción incorrecta.",
+                    "Efectivamente se busca el polisacárido capsular en LCR y sangre mediante antigenorraquia y antigenemia."
+                ],
+                "fantasma": [
+                    "Esa está bien, se pide.",
+                    "Esa está bien, si hay lesión.",
+                    "¡Esta! Se busca el antígeno, no el anticuerpo.",
+                    "Esa está bien, esas dos formas."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Es el antígeno.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -29645,7 +29785,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Pneumogcystis jirovecii. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Pneumogcystis jirovecii. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Pneumocystis jirovecii afecta principalmente los pulmones, causando neumonía; no es un agente etiológico reconocido de afectación del sistema nervioso central — esta es la opción incorrecta.",
+                    "Efectivamente Histoplasma capsulatum puede afectar el SNC, causando meningoencefalitis en inmunosuprimidos.",
+                    "Efectivamente el citomegalovirus puede causar encefalitis y retinitis en pacientes con VIH.",
+                    "Efectivamente Toxoplasma gondii es una causa frecuente de masa ocupante cerebral en pacientes con VIH."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese se queda en el pulmón, no va al cerebro.",
+                    "Esa está bien, va al cerebro.",
+                    "Esa está bien, ataca el ojo y el cerebro.",
+                    "Esa está bien, hace la masa."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se queda en el pulmón.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -29671,7 +29831,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Histoplasma capsulatum es endémico en la región de Misiones (NEA) y puede causar histoplasmosis diseminada con manifestaciones neurológicas en inmunosuprimidos.",
+                    "Coccidioides posadasii es endémico de regiones áridas (noroeste argentino), no de Misiones, cuyo clima subtropical húmedo no favorece este hongo — es la respuesta correcta (no sería un agente probable).",
+                    "Efectivamente Cryptococcus neoformans puede causar meningoencefalitis en pacientes con VIH y bajo CD4.",
+                    "Efectivamente Mycobacterium tuberculosis puede causar afectación del SNC (tuberculoma, meningitis tuberculosa) en pacientes con VIH."
+                ],
+                "fantasma": [
+                    "Ese sí es de esa zona.",
+                    "¡Esta! Ese es de zona seca, no de ahí.",
+                    "Ese sí puede darse.",
+                    "Ese sí puede darse."
+                ],
+                "gato": [
+                    "Fijate: es de esa zona.",
+                    "¡Ronroneo de aprobación! Es de zona seca.",
+                    "Dato curioso: sí puede.",
+                    "Miau, sí puede."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -29697,7 +29877,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "La opción CORRECTA es A: Nocardia/Virus varicela zoster/Pneumocystis jirovecii (PcP) Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es A: Nocardia/Virus varicela zoster/Pneumocystis jirovecii (PcP) Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "En la enfermedad injerto contra huésped crónica, la inmunosupresión prolongada favorece infecciones por Nocardia, reactivación de virus varicela zóster y Pneumocystis jirovecii, patógenos típicos de esta fase tardía — es la respuesta correcta.",
+                    "Esta combinación no es la típica de la fase de EICH crónica.",
+                    "Staphylococcus aureus y Aspergillus son más característicos de fases más tempranas (neutropenia, preengraftment), no de la fase crónica de EICH.",
+                    "Esta combinación no representa los patógenos más característicos de la fase crónica de EICH."
+                ],
+                "fantasma": [
+                    "¡Esta! Esos tres son de la fase larga, la correcta.",
+                    "Esa combinación no es la típica.",
+                    "Esos son de antes, no de esta fase.",
+                    "Esa combinación no es la típica."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! La fase larga.",
+                    "Fijate: no es típica.",
+                    "Dato curioso: son de antes.",
+                    "Miau, no es típica."
+                ]
+            }
         },
         {
             "numero": 10,
@@ -29723,7 +29923,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El virus varicela zóster se reactiva típicamente en la fase tardía (después de los 100 días) del trasplante, cuando persiste la inmunosupresión de la inmunidad celular — es la respuesta correcta.",
+                    "Staphylococcus aureus es típico de la fase temprana (neutropenia), no de la fase tardía.",
+                    "Pseudomonas aeruginosa es típica de la fase temprana (neutropenia), no de la fase tardía.",
+                    "Candida krusei es típica de la fase de preengraftment (temprana), no de la fase tardía."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese se reactiva bien tarde, la correcta.",
+                    "Ese es del principio.",
+                    "Ese es del principio.",
+                    "Ese es del principio."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se reactiva tarde.",
+                    "Fijate: es del principio.",
+                    "Dato curioso: es del principio.",
+                    "Miau, es del principio."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -29749,7 +29969,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la antigenemia pp65 cuantitativa es un método de diagnóstico precoz.",
+                    "Efectivamente la PCR cuali-cuantitativa es un método de diagnóstico precoz.",
+                    "Efectivamente el cultivo en shell-vial es un método de diagnóstico precoz, más rápido que el cultivo convencional.",
+                    "Los anticuerpos IgG de alta avidez indican infección pasada, no reflejan reactivación ni son útiles para el diagnóstico precoz de infección activa por CMV — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa está bien, sirve.",
+                    "Esa está bien, sirve.",
+                    "Esa está bien, sirve.",
+                    "¡Esta! Eso dice que ya pasó, no sirve para lo precoz."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Ya pasó."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -29775,7 +30015,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Pneumocystis jirovecii es más típico de fases posteriores con inmunosupresión de la inmunidad celular, no de la fase de preengraftment.",
+                    "Candida krusei es el patógeno más prevalente en la fase de preengraftment, período de neutropenia intensa post-trasplante, favoreciendo infecciones fúngicas invasivas — es la respuesta correcta.",
+                    "Mycobacterium tuberculosis no es el patógeno más característico de la fase de preengraftment.",
+                    "Listeria monocytogenes no es el patógeno más característico de la fase de preengraftment."
+                ],
+                "fantasma": [
+                    "Ese es de más adelante.",
+                    "¡Esta! Ese hongo en la neutropenia, la correcta.",
+                    "Ese no es el típico acá.",
+                    "Ese no es el típico acá."
+                ],
+                "gato": [
+                    "Fijate: es de después.",
+                    "¡Ronroneo de aprobación! El hongo de la neutropenia.",
+                    "Dato curioso: no es típico.",
+                    "Miau, no es típico."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -29801,7 +30061,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Ancylostoma duodenale Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Ancylostoma duodenale Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Cryptosporidium parvum es un patógeno oportunista clásico de diarrea crónica en SIDA.",
+                    "Efectivamente Cystoisospora belli es un patógeno oportunista clásico de diarrea crónica en SIDA.",
+                    "Efectivamente Cyclospora cayetanensis es un patógeno oportunista clásico de diarrea crónica en SIDA.",
+                    "Ancylostoma duodenale es un helminto que causa anemia por pérdida de sangre intestinal, no es un patógeno oportunista clásico de diarrea crónica en el contexto de SIDA — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, ese bichito.",
+                    "Esa está bien, ese bichito.",
+                    "Esa está bien, ese bichito.",
+                    "¡Esta! Ese da anemia, no esa diarrea marcadora."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Da anemia."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -29827,7 +30107,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "La opción CORRECTA es C: La presencia de C. neoformans en muestras respiratorias por examen directo obliga a su pesquisa en LCR. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es C: La presencia de C. neoformans en muestras respiratorias por examen directo obliga a su pesquisa en LCR. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "La confirmación en piel no descarta otros agentes; en un paciente con deterioro sistémico se deben investigar todas las muestras obtenidas, ya que pueden coexistir múltiples patógenos oportunistas.",
+                    "La criptococosis no se contagia por contacto directo con la piel; se adquiere por vía respiratoria (inhalación de esporas del ambiente), y las lesiones cutáneas son manifestación de diseminación hematógena.",
+                    "La presencia de Cryptococcus neoformans en muestras respiratorias por examen directo obliga a investigar su presencia en el LCR, ya que la afectación pulmonar puede acompañarse de diseminación al sistema nervioso central — es la respuesta correcta.",
+                    "El diagnóstico de criptococosis en un paciente VIH positivo SÍ es una enfermedad marcadora de SIDA por sí sola, independientemente del recuento de CD4."
+                ],
+                "fantasma": [
+                    "No, hay que seguir buscando en todo.",
+                    "No, es por el aire, no por tocar la piel.",
+                    "¡Esta! Si está en el pulmón, hay que mirar el líquido de la cabeza.",
+                    "No, ya con eso solo alcanza para decir sida."
+                ],
+                "gato": [
+                    "Fijate: hay que seguir buscando.",
+                    "Dato curioso: es por el aire.",
+                    "¡Ronroneo de aprobación! Mirar el líquido de la cabeza.",
+                    "Miau, ya alcanza."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -29853,7 +30153,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Cyclospora cayetanensis sí se asocia clásicamente a la inmunodeficiencia por HIV, causando diarrea crónica.",
+                    "Isospora belli (Cystoisospora belli) sí se asocia clásicamente a la inmunodeficiencia por HIV.",
+                    "Hymenolepis nana no se asocia clásicamente a la inmunodeficiencia por HIV; afecta principalmente a niños en condiciones de mala higiene, independientemente del estado inmunológico — es la respuesta correcta.",
+                    "Microsporidium spp. sí se asocia clásicamente a la inmunodeficiencia por HIV, causando diarrea crónica en pacientes con CD4 muy bajo."
+                ],
+                "fantasma": [
+                    "Ese sí se asocia.",
+                    "Ese sí se asocia.",
+                    "¡Esta! Ese es del chico con mala higiene, no del HIV.",
+                    "Ese sí se asocia."
+                ],
+                "gato": [
+                    "Fijate: sí se asocia.",
+                    "Dato curioso: sí se asocia.",
+                    "¡Ronroneo de aprobación! Es del chico.",
+                    "Miau, sí se asocia."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -29879,7 +30199,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Pneumocystis jirovecii puede producir neumonía en este paciente con CD4 muy bajo.",
+                    "Efectivamente Mycobacterium tuberculosis puede producir neumonía en este contexto de inmunosupresión severa.",
+                    "Efectivamente Streptococcus pneumoniae puede producir neumonía bacteriana en pacientes con VIH.",
+                    "Rhizopus oryzae causa mucormicosis, típicamente de presentación rinocerebral o cutánea en pacientes con factores de riesgo específicos (diabetes, neutropenia severa), no siendo una causa típica de neumonía en este contexto clínico — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese sí da neumonía acá.",
+                    "Ese sí da neumonía acá.",
+                    "Ese sí da neumonía acá.",
+                    "¡Esta! Ese ataca la nariz o la piel, no tanto el pulmón así."
+                ],
+                "gato": [
+                    "Fijate: sí da.",
+                    "Dato curioso: sí da.",
+                    "Miau, sí da.",
+                    "¡Ronroneo de aprobación! Ataca la nariz."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -29905,7 +30245,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Pneumocystis jirovecii no crece en hemocultivos ni causa fungemia relacionada a catéteres.",
+                    "Candida parapsilosis es la especie de Candida más asociada a catéteres venosos centrales y nutrición parenteral, siendo frecuente causa de fungemia en pacientes con estos factores de riesgo — es la respuesta correcta.",
+                    "Cryptococcus neoformans no se relaciona típicamente con catéteres ni nutrición parenteral; se asocia más a inmunosupresión celular.",
+                    "Malassezia globosa se asocia a nutrición parenteral con lípidos, pero es menos frecuente que Candida parapsilosis en este contexto."
+                ],
+                "fantasma": [
+                    "Ese no crece en la sangre así.",
+                    "¡Esta! Esa Candida ama el catéter, la correcta.",
+                    "Ese no es por el catéter.",
+                    "Ese es menos común acá."
+                ],
+                "gato": [
+                    "Fijate: no crece así.",
+                    "¡Ronroneo de aprobación! Ama el catéter.",
+                    "Dato curioso: no es por eso.",
+                    "Miau, menos común."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -29931,7 +30291,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente el tratamiento con dosis altas de corticoides es factor de riesgo para infección fúngica levaduriforme.",
+                    "La acidosis metabólica no es un factor de riesgo reconocido para infección fúngica levaduriforme; los factores clásicos se relacionan con inmunosupresión y ruptura de barreras — esta es la excepción.",
+                    "Efectivamente la neutropenia es factor de riesgo para infección fúngica invasiva.",
+                    "Efectivamente las cirugías abdominales son factor de riesgo, al romper barreras naturales y facilitar translocación de Candida."
+                ],
+                "fantasma": [
+                    "Esa está bien, baja las defensas.",
+                    "¡Esta! Eso no tiene que ver con el hongo.",
+                    "Esa está bien, sin glóbulos blancos.",
+                    "Esa está bien, rompe la barrera."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! No tiene que ver.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -29957,7 +30337,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "La opción CORRECTA es C: Escarificación cutánea de las lesiones en la piel/ Histoplasma capsulatum/ tinción de Giemsa y observación levaduras intramacrofágicas Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es C: Escarificación cutánea de las lesiones en la piel/ Histoplasma capsulatum/ tinción de Giemsa y observación levaduras intramacrofágicas Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "Cryptococcus neoformans presenta levaduras con gemación simple (única), no multibrotante; la gemación múltiple es característica de Paracoccidioides brasiliensis.",
+                    "Cyclospora cayetanensis se diagnostica por observación de ooquistes en materia fecal con tinción de Kinyoun, no por trofozoítos en biopsia colónica.",
+                    "La escarificación cutánea de lesiones en la piel, con tinción de Giemsa, permite observar las levaduras intramacrofágicas características de Histoplasma capsulatum en su forma diseminada — es la respuesta correcta.",
+                    "Coccidioides posadasii se observa como esférulas con endosporas mediante examen directo en tejido, no mediante cultivo de rutina, ya que su manipulación en cultivo representa un riesgo biológico alto."
+                ],
+                "fantasma": [
+                    "Esa gemación es de una sola, no de varias.",
+                    "Eso se ve en la caca, no en biopsia así.",
+                    "¡Esta! Se ve la levadura adentro del macrófago, la correcta.",
+                    "Eso se ve directo en el tejido, cultivarlo es peligroso."
+                ],
+                "gato": [
+                    "Fijate: es de una sola.",
+                    "Dato curioso: es en la caca.",
+                    "¡Ronroneo de aprobación! Adentro del macrófago.",
+                    "Miau, es peligroso cultivarlo."
+                ]
+            }
         },
         {
             "numero": 20,
