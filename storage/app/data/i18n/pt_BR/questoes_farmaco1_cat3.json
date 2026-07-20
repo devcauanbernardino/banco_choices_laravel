@@ -1,0 +1,582 @@
+[
+    {
+        "pergunta": "Se a velocidade de formação do metabólito inativo aumenta sem que se modifique a concentração de enzima, então estamos diante de um fenômeno de:",
+        "opcoes": [
+            "Indução",
+            "Ativação",
+            "Repressão",
+            "Inibição"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A indução enzimática implica aumento da QUANTIDADE de enzima (maior síntese proteica), não só da sua velocidade de ação; nesse caso a concentração de enzima não muda.",
+                "Se a velocidade de formação do metabólito aumenta sem que mude a concentração da enzima, trata-se de uma ativação: a mesma quantidade de enzima trabalha mais rápido, geralmente por um mecanismo alostérico — é a resposta correta.",
+                "A repressão implica diminuição na síntese da enzima, o que reduziria (não aumentaria) a velocidade de formação do metabólito.",
+                "A inibição reduz a atividade enzimática, diminuindo a velocidade de formação do metabólito, não aumentando-a."
+            ],
+            "fantasma": [
+                "Isso faz mais enzima, não é isso.",
+                "Essa aí! A mesma enzima, mas mais rápida.",
+                "Isso freia, não acelera.",
+                "Isso freia, não acelera."
+            ],
+            "gato": [
+                "Fijate: faz mais enzima.",
+                "Ronronado de aprovação! Mais rápida, mesma quantidade.",
+                "Dado curioso: freia.",
+                "Miau, freia."
+            ]
+        }
+    },
+    {
+        "pergunta": "Para calcular a fração não ionizada de uma droga é necessário conhecer seu pKa, o pH do meio e também sua:",
+        "opcoes": [
+            "Volume aparente de distribuição",
+            "Peso molecular",
+            "Natureza ácida ou básica",
+            "Coeficiente de partição lipídio/água"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O volume aparente de distribuição não é necessário para calcular a fração não ionizada; é usado para outros cálculos farmacocinéticos, como a dose de ataque.",
+                "O peso molecular não entra na equação de Henderson-Hasselbalch para calcular frações ionizadas.",
+                "Para calcular a fração não ionizada é necessária a equação de Henderson-Hasselbalch, que depende do pKa, do pH do meio e de a droga ser um ácido ou uma base fraca, já que a fórmula se aplica de forma diferente conforme a natureza do eletrólito — é a resposta correta.",
+                "O coeficiente de partição lipídio/água influencia a lipossolubilidade, não o cálculo da fração ionizada em si."
+            ],
+            "fantasma": [
+                "Isso é pra outra conta.",
+                "Isso não entra nessa fórmula.",
+                "Essa aí! Tem que saber se é ácido ou base.",
+                "Isso é da gordura, não disso."
+            ],
+            "gato": [
+                "Fijate: é outra conta.",
+                "Dado curioso: não entra.",
+                "Ronronado de aprovação! Ácido ou base.",
+                "Miau, é da gordura."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em qual dos seguintes compartimentos o fenômeno de aprisionamento iônico tem papel mais preponderante na absorção da droga?",
+        "opcoes": [
+            "Mucosa bucal",
+            "Estômago",
+            "Intestino",
+            "Reto"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A mucosa bucal tem pH próximo à neutralidade, com menor diferença de pH em relação ao plasma, gerando menos aprisionamento iônico.",
+                "O estômago tem pH muito ácido (~1-2), gerando a maior diferença de pH em relação ao plasma entre os compartimentos listados; essa diferença extrema faz com que o aprisionamento iônico tenha seu papel mais importante na absorção das drogas ionizáveis — é a resposta correta.",
+                "O intestino tem pH mais próximo do plasmático (~6-7), com menor diferença de pH e portanto menor aprisionamento iônico relativo.",
+                "O reto tem pH próximo à neutralidade, com menor diferença em relação ao plasma que o estômago."
+            ],
+            "fantasma": [
+                "Ali o pH é parecido, não tem tanta diferença.",
+                "Essa aí! Ali o ácido é extremo, a correta.",
+                "Ali o pH já é mais parecido com o do sangue.",
+                "Ali o pH também é parecido."
+            ],
+            "gato": [
+                "Fijate: pouca diferença.",
+                "Ronronado de aprovação! Ácido extremo.",
+                "Dado curioso: parece com o sangue.",
+                "Miau, pouca diferença."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes fatores favorece a difusão simples de uma droga através da membrana?",
+        "opcoes": [
+            "Alto peso molecular",
+            "Alta ionização",
+            "Maior lipossolubilidade",
+            "Maior tamanho molecular"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um alto peso molecular dificulta, não favorece, a passagem através da membrana por difusão simples.",
+                "Uma alta ionização dificulta a difusão simples, pois moléculas ionizadas não atravessam facilmente a bicamada lipídica.",
+                "A difusão simples através da membrana depende principalmente da lipossolubilidade da molécula, já que a membrana celular é uma bicamada lipídica; quanto maior a lipossolubilidade, maior a facilidade de passagem — é a resposta correta.",
+                "Um maior tamanho molecular dificulta, não favorece, a passagem através da membrana."
+            ],
+            "fantasma": [
+                "Isso complica a passagem, não ajuda.",
+                "Isso complica a passagem, não ajuda.",
+                "Essa aí! Quanto mais gordura, mais fácil passa.",
+                "Isso complica a passagem, não ajuda."
+            ],
+            "gato": [
+                "Fijate: complica.",
+                "Dado curioso: complica.",
+                "Ronronado de aprovação! Mais gordura, mais fácil.",
+                "Miau, complica."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual das seguintes enzimas catalisa reações de biotransformação pertencentes à Fase II ou sintética?",
+        "opcoes": [
+            "Sulfotransferases",
+            "Esterases",
+            "Amidases",
+            "Monooxigenases"
+        ],
+        "explicacoes": {
+            "robo": [
+                "As sulfotransferases catalisam a sulfatação, uma reação de conjugação típica da Fase II (sintética) do metabolismo — é a resposta correta.",
+                "As esterases catalisam a hidrólise de ésteres, uma reação de Fase I, não de Fase II.",
+                "As amidases catalisam a hidrólise de amidas, uma reação de Fase I, não de Fase II.",
+                "As monooxigenases (como o citocromo P450) catalisam reações de oxidação, típicas da Fase I, não da Fase II."
+            ],
+            "fantasma": [
+                "Essa aí! Essa conjuga, é da Fase II.",
+                "Essa é da Fase I.",
+                "Essa é da Fase I.",
+                "Essa é da Fase I."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Fase II.",
+                "Fijate: Fase I.",
+                "Dado curioso: Fase I.",
+                "Miau, Fase I."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes citocromos tem o papel mais importante como metabolizador de drogas no nível hepático?",
+        "opcoes": [
+            "CYP 3A4",
+            "CYP 2D6",
+            "CYP2C9",
+            "CYP 1A2"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O CYP3A4 é a isoforma mais abundante no fígado e metaboliza aproximadamente 50% dos fármacos usados na clínica, sendo o citocromo mais importante na biotransformação hepática — é a resposta correta.",
+                "O CYP2D6 metaboliza uma porcentagem menor de fármacos que o CYP3A4, embora seja clinicamente relevante pelo seu polimorfismo genético.",
+                "O CYP2C9 metaboliza uma porcentagem menor de fármacos que o CYP3A4.",
+                "O CYP1A2 metaboliza uma porcentagem menor de fármacos que o CYP3A4."
+            ],
+            "fantasma": [
+                "Essa aí! O que mais metaboliza droga.",
+                "Esse metaboliza menos que o outro.",
+                "Esse metaboliza menos que o outro.",
+                "Esse metaboliza menos que o outro."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O campeão do fígado.",
+                "Fijate: metaboliza menos.",
+                "Dado curioso: metaboliza menos.",
+                "Miau, metaboliza menos."
+            ]
+        }
+    },
+    {
+        "pergunta": "Administra-se uma droga A ácida com pKa 3 a um paciente. Considerando pH urinário 6, será observado:",
+        "opcoes": [
+            "Aumento da fração ionizada (Fi) da droga A com diminuição de sua excreção",
+            "Aumento da Fi da droga A com aumento em sua excreção",
+            "Aumento da fração não ionizada (FNI) da droga A com aumento em sua excreção",
+            "Aumento da FNI da droga A com diminuição em sua excreção"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O pH urinário (6) é mais alcalino que o pKa (3) dessa droga ácida, então predomina a fração IONIZADA, não uma diminuição da excreção; a fração ionizada não se reabsorve, aumentando a excreção.",
+                "Com pH urinário (6) mais alcalino que o pKa (3) dessa droga ácida, predomina a fração ionizada (Fi); como a forma ionizada não atravessa facilmente as membranas tubulares, é menos reabsorvida e aumenta sua excreção urinária — é a resposta correta.",
+                "Nesse caso predomina a fração ionizada, não a não ionizada, já que o pH do meio é maior que o pKa do ácido.",
+                "Nesse caso predomina a fração ionizada (não a não ionizada) e a excreção aumenta (não diminui)."
+            ],
+            "fantasma": [
+                "Aumenta a excreção, não diminui.",
+                "Essa aí! Ioniza e vai pela urina, a correta.",
+                "É ao contrário, ioniza.",
+                "É ao contrário nas duas coisas."
+            ],
+            "gato": [
+                "Fijate: aumenta, não diminui.",
+                "Ronronado de aprovação! Vai pela urina.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário em tudo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual das seguintes afirmações é correta a respeito da distribuição de fármacos?",
+        "opcoes": [
+            "Fármacos hidrofóbicos se distribuem melhor em tecidos aquosos",
+            "A ligação a proteínas plasmáticas limita a distribuição",
+            "Uma droga ligada a proteínas plasmáticas é a forma ativa",
+            "A distribuição de fármacos não depende de sua solubilidade"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Fármacos hidrofóbicos (lipossolúveis) se distribuem melhor em tecidos ricos em lipídios, não em tecidos aquosos.",
+                "A ligação a proteínas plasmáticas limita a distribuição tecidual, pois só a fração livre (não ligada) do fármaco pode atravessar as membranas e chegar aos tecidos — é a resposta correta.",
+                "A droga ligada a proteínas plasmáticas é a forma inativa/de reserva, não a forma ativa; só a fração livre exerce o efeito farmacológico.",
+                "A distribuição de fármacos sim depende da sua solubilidade (lipossolubilidade e hidrossolubilidade), sendo um fator determinante."
+            ],
+            "fantasma": [
+                "É ao contrário, vai pra gordura.",
+                "Essa aí! Só o livre se move, a correta.",
+                "É ao contrário, o livre é o ativo.",
+                "Sim depende, e muito."
+            ],
+            "gato": [
+                "Fijate: é ao contrário.",
+                "Ronronado de aprovação! Só o livre se move.",
+                "Dado curioso: ao contrário.",
+                "Miau, sim depende."
+            ]
+        }
+    },
+    {
+        "pergunta": "A absorção, distribuição, metabolismo e excreção de um fármaco implicam a passagem através de numerosas membranas celulares. Selecione, das seguintes características da molécula, qual favorece mais a passagem através delas:",
+        "opcoes": [
+            "Lipossolubilidade e grau de ionização.",
+            "Número de moléculas, lipossolubilidade e grau de ionização.",
+            "Tamanho e estrutura molecular, grau de ionização e lipossolubilidade.",
+            "Estrutura e tamanho molecular, grau de ionização e número de moléculas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa opção omite o tamanho e a estrutura molecular, fatores também relevantes para a passagem através de membranas.",
+                "Essa opção inclui o 'número de moléculas', que não é uma característica da molécula individual que favoreça sua passagem através de membranas, mas um fator quantitativo diferente.",
+                "A passagem de uma molécula através das membranas celulares é favorecida por seu tamanho e estrutura molecular pequenos, seu baixo grau de ionização e sua alta lipossolubilidade, combinando todos os fatores relevantes — é a resposta correta.",
+                "Essa opção inclui o 'número de moléculas', que não é característica molecular relevante para a passagem individual através da membrana."
+            ],
+            "fantasma": [
+                "Falta o tamanho.",
+                "Isso do número de moléculas não entra aqui.",
+                "Essa aí! Junta tudo que precisa.",
+                "Isso do número de moléculas não entra aqui."
+            ],
+            "gato": [
+                "Fijate: falta algo.",
+                "Dado curioso: não entra isso.",
+                "Ronronado de aprovação! Junta tudo.",
+                "Miau, não entra isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "A membrana plasmática é uma barreira biológica composta, principalmente, por uma bicamada de lipídios anfipáticos e proteínas de membrana encravadas que cumprem múltiplas funções. Essa barreira é a que os fármacos devem atravessar durante sua passagem pelo organismo. Selecione a correta a respeito dos mecanismos e/ou modos de transporte através das membranas celulares:",
+        "opcoes": [
+            "A pinocitose e a exocitose são mecanismos de transporte importantes para moléculas de qualquer tamanho.",
+            "A difusão facilitada é o mecanismo de transporte mais comumente utilizado pelos fármacos.",
+            "A reversibilidade e a bidirecionalidade são características próprias da difusão simples.",
+            "A difusão simples é o mecanismo de transporte mais comumente utilizado pelos fármacos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Pinocitose e exocitose são mecanismos relevantes para macromoléculas ou partículas grandes, não para moléculas de qualquer tamanho em geral.",
+                "A difusão facilitada é mecanismo mediado por transportador usado por moléculas específicas (como a glicose), mas não é o mecanismo mais comum para a passagem de fármacos.",
+                "Reversibilidade e bidirecionalidade SÃO características da difusão simples, mas essa opção não responde corretamente ao que se pergunta sobre o mecanismo mais comum.",
+                "A difusão simples (passiva) é o mecanismo de transporte mais comumente utilizado pelos fármacos para atravessar as membranas celulares, já que a maioria são moléculas lipossolúveis pequenas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é pra coisas grandes.",
+                "Esse não é o mais comum.",
+                "Isso é certo, mas não responde a pergunta.",
+                "Essa aí! O mais comum de todos."
+            ],
+            "gato": [
+                "Fijate: é de coisas grandes.",
+                "Dado curioso: não é o comum.",
+                "Miau, não responde bem.",
+                "Ronronado de aprovação! O mais comum."
+            ]
+        }
+    },
+    {
+        "pergunta": "Muitos fármacos são ácidos ou bases fracas que em solução aquosa estão na forma ionizada e não ionizada. Selecione a correta a respeito da influência do meio nos fármacos ionizáveis.",
+        "opcoes": [
+            "A forma não ionizada de uma base fraca aumenta à medida que diminui o pH do meio.",
+            "Em estado estável, se acumulará um fármaco básico no lado mais básico da membrana e vice-versa.",
+            "A distribuição de um eletrólito fraco depende do seu pKa e do gradiente de pH através da membrana.",
+            "Em estado estável, se acumulará um fármaco ácido no lado mais ácido da membrana e vice-versa"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A forma NÃO ionizada de uma base fraca AUMENTA quando o pH do meio AUMENTA (fica mais alcalino), não quando diminui; bases se ionizam mais em meios ácidos.",
+                "Em estado estável, um fármaco básico se acumula no lado MAIS ÁCIDO da membrana (onde se ioniza mais e fica retido), não no lado mais básico; é o contrário do que essa opção afirma.",
+                "A distribuição de um eletrólito fraco através de uma membrana depende do seu pKa e do gradiente de pH entre os dois lados da membrana, pois esses determinam o grau de ionização em cada compartimento — é a resposta correta.",
+                "Em estado estável, um fármaco ácido se acumula no lado MAIS BÁSICO da membrana (onde se ioniza mais), não no lado mais ácido; é o contrário do que essa opção afirma."
+            ],
+            "fantasma": [
+                "É ao contrário, com pH mais alto.",
+                "É ao contrário, acumula do lado ácido.",
+                "Essa aí! Depende do pKa e do gradiente.",
+                "É ao contrário, acumula do lado básico."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: ao contrário.",
+                "Ronronado de aprovação! pKa e gradiente.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A loratadina é um antagonista dos receptores de histamina utilizado para tratar diferentes formas de alergia. Seu mecanismo de ação é o mesmo da difenidramina (conhecida popularmente como benadryl), porém, como esta última é capaz de passar para o SNC, gera sedação como efeito colateral. Qual das seguintes afirmações você considera apropriada para explicar esse fato?",
+        "opcoes": [
+            "A loratadina é uma base fraca com pKa de 4,33 que no plasma (pH 6,5) se encontra majoritariamente ionizada.",
+            "A loratadina é um ácido fraco com pKa de 6,5 que no plasma (pH 6,5) se encontra majoritariamente ionizada.",
+            "A loratadina é um ácido fraco com pKa de 4,33 que no plasma (pH 6,5) se encontra majoritariamente ionizada.",
+            "A loratadina é uma base fraca com pKa de 6,5 que no plasma (pH 6,5) se encontra majoritariamente ionizada"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A opção descreve a loratadina como base fraca, mas nesta questão ela é considerada com um pKa (4,33) que, segundo o gabarito, corresponde a um ácido fraco, não a uma base.",
+                "O pKa atribuído à loratadina como ácido nesta questão é 4,33, não 6,5; além disso, em pH 6,5 (maior que o pKa 4,33) um ácido fraco está majoritariamente ionizado, o que coincide com parte dessa opção, mas o pKa indicado (6,5) está incorreto.",
+                "Considerando a loratadina como um ácido fraco com pKa 4,33, em um pH plasmático de 6,5 (mais alcalino que seu pKa) predominaria a fração ionizada; a forma ionizada é menos lipossolúvel e atravessa com mais dificuldade a barreira hematoencefálica, o que explicaria por que a loratadina não causa sedação diferente da difenidramina — é a resposta correta.",
+                "O pKa atribuído à loratadina nesta questão é 4,33 (não 6,5), e ela é considerada um ácido fraco (não uma base) para esse raciocínio."
+            ],
+            "fantasma": [
+                "Esse pKa é de ácido, não de base, nesse caso.",
+                "Esse número de pKa está errado aqui.",
+                "Essa aí! Ioniza e não entra no cérebro, a correta.",
+                "Esse número de pKa está errado, e não é base."
+            ],
+            "gato": [
+                "Fijate: errou o tipo.",
+                "Dado curioso: errou o número.",
+                "Ronronado de aprovação! Não entra no cérebro.",
+                "Miau, errou em duas coisas."
+            ]
+        }
+    },
+    {
+        "pergunta": "Embora a difusão passiva domine o movimento através da membrana da maioria dos fármacos, os mecanismos mediados por transportador (transporte ativo e difusão facilitada) também desempenham funções importantes. Selecione a opção correta a respeito dos mecanismos de transporte de membrana mediados por proteínas:",
+        "opcoes": [
+            "A velocidade de passagem é, em geral, mais lenta que na difusão passiva.",
+            "A força motriz é sempre o gradiente eletroquímico do soluto transportado.",
+            "É saturável e, além disso, pode ser inibido de forma competitiva por outros substratos.",
+            "A velocidade de passagem, segundo a lei de Fick, será tanto maior quanto menor for o tamanho da molécula"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O transporte mediado por proteínas pode ser tão rápido ou até mais rápido que a difusão passiva para seu substrato específico, dependendo do sistema; não é necessariamente mais lento.",
+                "O transporte ativo usa energia (ATP) para mover solutos CONTRA seu gradiente eletroquímico, não sempre a favor dele, então essa afirmação não é universalmente verdadeira.",
+                "Os mecanismos de transporte mediados por proteínas (transportadores) são saturáveis (têm número limitado de sítios de ligação) e podem ser inibidos de forma competitiva por outros substratos que competem pelo mesmo transportador — é a resposta correta.",
+                "A lei de Fick descreve a difusão simples (passiva), não os mecanismos mediados por transportador, que não dependem diretamente do tamanho molecular da mesma forma."
+            ],
+            "fantasma": [
+                "Nem sempre é mais lento.",
+                "Nem sempre vai a favor do gradiente.",
+                "Essa aí! Satura e compete pelo lugar.",
+                "Essa lei é de outro mecanismo."
+            ],
+            "gato": [
+                "Fijate: nem sempre.",
+                "Dado curioso: nem sempre.",
+                "Ronronado de aprovação! Satura.",
+                "Miau, é de outro mecanismo."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas A e B se ligam exclusivamente à albumina, enquanto a droga C se liga com alta afinidade à alfa-1-glicoproteína ácida. A droga A tem pKa 1, a droga B pKa 6 e a droga C pKa 4. Como será a velocidade de absorção dessas três drogas no estômago (pKa 1,5)?",
+        "opcoes": [
+            "A>B>C",
+            "B>A>C",
+            "C>A>B",
+            "A>C>B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ordem A>B>C não corresponde à relação esperada entre o pKa de cada droga e o pH gástrico (1,5) para determinar sua absorção.",
+                "A velocidade de absorção gástrica de um eletrólito fraco depende da relação entre seu pKa e o pH do meio (1,5): quanto mais favorável essa relação para a forma não ionizada, maior a absorção; segundo essa relação, a ordem de absorção é B>A>C — é a resposta correta.",
+                "A ordem C>A>B não corresponde à relação esperada entre pKa e pH gástrico para essas três drogas.",
+                "A ordem A>C>B não corresponde à relação esperada entre pKa e pH gástrico para essas três drogas."
+            ],
+            "fantasma": [
+                "Essa ordem não fecha com a conta.",
+                "Essa aí! Essa ordem sai da relação pKa-pH.",
+                "Essa ordem não fecha com a conta.",
+                "Essa ordem não fecha com a conta."
+            ],
+            "gato": [
+                "Fijate: não fecha.",
+                "Ronronado de aprovação! Sai da conta.",
+                "Dado curioso: não fecha.",
+                "Miau, não fecha."
+            ]
+        }
+    },
+    {
+        "pergunta": "Assinale a opção INCORRETA:",
+        "opcoes": [
+            "Como regra geral, uma droga lipossolúvel tem alta ligação a proteínas, e após o metabolismo hepático se torna hidrossolúvel, com menor ligação a proteínas, pior difusão de barreiras e menor reabsorção renal",
+            "Geralmente os metabólitos são inativos ou muito menos ativos, mas ocasionalmente podem ser mais ativos, inclusive mais tóxicos",
+            "Se o metabólito é mais tóxico, após induzir o metabolismo pode resultar na diminuição da toxicidade da droga",
+            "Todas as opções estão corretas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "De fato, como regra geral, uma droga lipossolúvel com alta ligação a proteínas se torna hidrossolúvel após o metabolismo hepático, com menor ligação a proteínas, pior difusão de barreiras e menor reabsorção renal.",
+                "De fato, os metabólitos costumam ser inativos ou menos ativos, mas às vezes podem ser mais ativos ou até mais tóxicos que a droga original.",
+                "Se o metabólito é mais tóxico que a droga original, induzir o metabolismo ACELERA sua formação, o que AUMENTARIA a toxicidade, não a diminuiria — essa é a opção incorreta.",
+                "Como a opção C está incorreta, nem todas as opções são corretas."
+            ],
+            "fantasma": [
+                "Essa está certa, funciona assim.",
+                "Essa está certa, às vezes acontece isso.",
+                "Essa aí! Isso piora, não melhora.",
+                "Não, tem uma que falha."
+            ],
+            "gato": [
+                "Fijate: correta.",
+                "Dado curioso: correta.",
+                "Ronronado de aprovação! Piora.",
+                "Miau, tem uma que falha."
+            ]
+        }
+    },
+    {
+        "pergunta": "A respeito do transporte:",
+        "opcoes": [
+            "A albumina tem maior especificidade para transportar qualquer droga",
+            "A alfa1 glicoproteína ácida transporta com maior capacidade as drogas ácidas",
+            "A albumina tem maior capacidade para transportar qualquer droga",
+            "A alfa1 glicoproteína ácida transporta com maior afinidade as drogas ácidas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A albumina tem maior CAPACIDADE (mais sítios de ligação disponíveis), mas não maior especificidade; na verdade, é pouco específica e liga muitos tipos de fármacos, principalmente ácidos.",
+                "A alfa-1-glicoproteína ácida transporta preferencialmente fármacos BÁSICOS, não ácidos.",
+                "A albumina, por sua alta concentração plasmática e grande número de sítios de ligação, tem maior capacidade para transportar fármacos em geral (especialmente ácidos fracos) — é a resposta correta.",
+                "A alfa-1-glicoproteína ácida transporta com maior afinidade fármacos BÁSICOS, não ácidos."
+            ],
+            "fantasma": [
+                "É capacidade, não especificidade.",
+                "Essa transporta o básico, não o ácido.",
+                "Essa aí! Essa tem lugar pra todo mundo.",
+                "Essa transporta o básico, não o ácido."
+            ],
+            "gato": [
+                "Fijate: é capacidade.",
+                "Dado curioso: é o básico.",
+                "Ronronado de aprovação! Lugar pra todo mundo.",
+                "Miau, é o básico."
+            ]
+        }
+    },
+    {
+        "pergunta": "Paciente intoxicado com uma droga ácida como o AAS, você decide",
+        "opcoes": [
+            "Administramos HCO3-, assim predomina a fração ionizada, e aumentar sua excreção",
+            "Não realizo mudanças no pH urinário já que",
+            "Administramos ácido ascórbico, assim predomina a fração ionizada, e aumentar sua excreção",
+            "Administramos HCO3-, assim predomina a fração não ionizada e diminuir sua excreção"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Administrar bicarbonato (HCO3-) alcaliniza a urina; nesse meio alcalino, o ácido fraco (AAS) se ioniza mais, fica retido na urina (não se reabsorve) e aumenta sua excreção — é a resposta correta.",
+                "Não fazer mudanças no pH urinário desperdiçaria uma estratégia terapêutica eficaz para acelerar a eliminação dessa droga ácida.",
+                "O ácido ascórbico acidifica a urina, o que favoreceria a forma NÃO ionizada do ácido (AAS), aumentando sua reabsorção e diminuindo sua excreção; é contraproducente nesse caso.",
+                "O bicarbonato favorece a fração ionizada (não a não ionizada), e isso aumenta (não diminui) a excreção."
+            ],
+            "fantasma": [
+                "Essa aí! Bicarbonato tira a droga pela urina.",
+                "Não, sim convém mudar o pH.",
+                "Esse faz o contrário, prende ela dentro.",
+                "É ao contrário, aumenta a saída."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Bicarbonato ao resgate.",
+                "Fijate: sim convém mudar.",
+                "Dado curioso: faz o contrário.",
+                "Miau, é ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes processos metabólicos corresponde a uma reação de fase I?",
+        "opcoes": [
+            "Glucuronidação",
+            "Acetilação",
+            "Sulfatação",
+            "Oxidação"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A glucuronidação é uma reação de conjugação de Fase II, não de Fase I.",
+                "A acetilação é uma reação de conjugação de Fase II, não de Fase I.",
+                "A sulfatação é uma reação de conjugação de Fase II, não de Fase I.",
+                "A oxidação é a reação característica da Fase I do metabolismo, catalisada principalmente pelo sistema citocromo P450 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa é da Fase II.",
+                "Essa é da Fase II.",
+                "Essa é da Fase II.",
+                "Essa aí! A típica da Fase I."
+            ],
+            "gato": [
+                "Fijate: Fase II.",
+                "Dado curioso: Fase II.",
+                "Miau, Fase II.",
+                "Ronronado de aprovação! Fase I."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual é o fundamento de alcalinizar a urina diante de uma intoxicação com uma droga ácida?",
+        "opcoes": [
+            "Aumentar o ultrafiltrado",
+            "Diminuir a secreção",
+            "Diminuir a reabsorção",
+            "Aumentar a secreção"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Alcalinizar a urina não aumenta o ultrafiltrado glomerular; esse processo depende da pressão de filtração, não do pH.",
+                "Alcalinizar a urina não atua na secreção tubular, mas sim na reabsorção.",
+                "Alcalinizar a urina aumenta a ionização da droga ácida, e a forma ionizada não se reabsorve facilmente nos túbulos renais, diminuindo sua reabsorção e favorecendo sua eliminação — é a resposta correta.",
+                "Alcalinizar a urina não atua na secreção tubular ativa, mas sim na reabsorção passiva."
+            ],
+            "fantasma": [
+                "Isso não muda com o pH.",
+                "Não é a secreção, é outra coisa.",
+                "Essa aí! Ioniza e não volta a entrar.",
+                "Não é a secreção, é outra coisa."
+            ],
+            "gato": [
+                "Fijate: não é isso.",
+                "Dado curioso: não é isso.",
+                "Ronronado de aprovação! Não volta a entrar.",
+                "Miau, não é isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em qual dos seguintes compartimentos será absorvida maior quantidade de uma droga ácida com pKa 3?",
+        "opcoes": [
+            "Estômago",
+            "Intestino delgado",
+            "Pulmão",
+            "Pele"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Embora no estômago (pH muito ácido) uma droga ácida esteja menos ionizada, a pequena superfície de absorção gástrica limita a quantidade total absorvida ali.",
+                "Apesar de que no intestino delgado (pH ~6-7) uma droga ácida com pKa 3 esteja majoritariamente ionizada, a enorme superfície de absorção intestinal (microvilosidades) compensa amplamente essa desvantagem, fazendo com que a maior quantidade absorvida ocorra no intestino delgado — é a resposta correta.",
+                "O pulmão não é a via de absorção relevante para uma droga administrada por via oral nesse contexto.",
+                "A pele tem absorção limitada e não é a via relevante para esse cenário."
+            ],
+            "fantasma": [
+                "Ali tem pouco lugar pra absorver.",
+                "Essa aí! Tem muita superfície, ganha na quantidade.",
+                "Essa via não é a daqui.",
+                "Essa via não é a daqui."
+            ],
+            "gato": [
+                "Fijate: pouco lugar.",
+                "Ronronado de aprovação! Muita superfície.",
+                "Dado curioso: não é essa via.",
+                "Miau, não é essa via."
+            ]
+        }
+    }
+]

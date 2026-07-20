@@ -27,7 +27,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La inducción enzimática implica un aumento de la CANTIDAD de enzima (mayor síntesis proteica), no solo de su velocidad de acción; en este caso la concentración de enzima no cambia.",
+                    "Si la velocidad de formación del metabolito aumenta sin que cambie la concentración de la enzima, se trata de una activación: la misma cantidad de enzima trabaja más rápido, generalmente por un mecanismo alostérico — es la respuesta correcta.",
+                    "La represión implica una disminución en la síntesis de la enzima, lo cual reduciría (no aumentaría) la velocidad de formación del metabolito.",
+                    "La inhibición reduce la actividad enzimática, disminuyendo la velocidad de formación del metabolito, no aumentándola."
+                ],
+                "fantasma": [
+                    "Eso hace más enzima, no es esto.",
+                    "¡Esta! La misma enzima, pero más rápido.",
+                    "Eso frena, no acelera.",
+                    "Eso frena, no acelera."
+                ],
+                "gato": [
+                    "Fijate: hace más enzima.",
+                    "¡Ronroneo de aprobación! Más rápido, misma cantidad.",
+                    "Dato curioso: frena.",
+                    "Miau, frena."
+                ]
+            }
         },
         {
             "numero": 2,
@@ -47,13 +67,33 @@
                 },
                 {
                     "letra": "D",
-                    "texto": "Coeficiente de partición lípido\/agua"
+                    "texto": "Coeficiente de partición lípido/agua"
                 }
             ],
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El volumen aparente de distribución no es necesario para calcular la fracción no ionizada; se usa para otros cálculos farmacocinéticos, como la dosis de carga.",
+                    "El peso molecular no interviene en la ecuación de Henderson-Hasselbalch para calcular fracciones ionizadas.",
+                    "Para calcular la fracción no ionizada se necesita la ecuación de Henderson-Hasselbalch, que depende del pKa, el pH del medio y si la droga es un ácido o una base débil, ya que la fórmula se aplica de forma distinta según la naturaleza del electrolito — es la respuesta correcta.",
+                    "El coeficiente de partición lípido/agua influye en la liposolubilidad, no en el cálculo de la fracción ionizada en sí."
+                ],
+                "fantasma": [
+                    "Eso es para otra cuenta.",
+                    "Eso no entra en esa fórmula.",
+                    "¡Esta! Hay que saber si es ácido o base.",
+                    "Eso es de la grasa, no de esto."
+                ],
+                "gato": [
+                    "Fijate: es otra cuenta.",
+                    "Dato curioso: no entra.",
+                    "¡Ronroneo de aprobación! Ácido o base.",
+                    "Miau, es de la grasa."
+                ]
+            }
         },
         {
             "numero": 3,
@@ -79,7 +119,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La mucosa bucal tiene un pH cercano a la neutralidad, con menor diferencia de pH respecto al plasma, generando menos atrapamiento iónico.",
+                    "El estómago tiene un pH muy ácido (~1-2), generando la mayor diferencia de pH respecto al plasma entre los compartimentos listados; esta diferencia extrema hace que el atrapamiento iónico juegue su papel más importante en la absorción de las drogas ionizables — es la respuesta correcta.",
+                    "El intestino tiene un pH más cercano al plasmático (~6-7), con menor diferencia de pH y por ende menor atrapamiento iónico relativo.",
+                    "El recto tiene un pH cercano a la neutralidad, con menor diferencia respecto al plasma que el estómago."
+                ],
+                "fantasma": [
+                    "Ahí el pH es parecido, no hay tanta diferencia.",
+                    "¡Esta! Ahí el ácido es extremo, la correcta.",
+                    "Ahí el pH ya es más parecido al de la sangre.",
+                    "Ahí el pH también es parecido."
+                ],
+                "gato": [
+                    "Fijate: poca diferencia.",
+                    "¡Ronroneo de aprobación! Ácido extremo.",
+                    "Dato curioso: se parece a la sangre.",
+                    "Miau, poca diferencia."
+                ]
+            }
         },
         {
             "numero": 4,
@@ -105,7 +165,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Un alto peso molecular dificulta, no favorece, el paso a través de la membrana por difusión simple.",
+                    "Una alta ionización dificulta la difusión simple, ya que las moléculas ionizadas no atraviesan fácilmente la bicapa lipídica.",
+                    "La difusión simple a través de la membrana depende principalmente de la liposolubilidad de la molécula, ya que la membrana celular es una bicapa lipídica; a mayor liposolubilidad, mayor facilidad de paso — es la respuesta correcta.",
+                    "Un mayor tamaño molecular dificulta, no favorece, el paso a través de la membrana."
+                ],
+                "fantasma": [
+                    "Eso complica el paso, no ayuda.",
+                    "Eso complica el paso, no ayuda.",
+                    "¡Esta! Cuanto más grasa, más fácil pasa.",
+                    "Eso complica el paso, no ayuda."
+                ],
+                "gato": [
+                    "Fijate: complica.",
+                    "Dato curioso: complica.",
+                    "¡Ronroneo de aprobación! Más grasa, más fácil.",
+                    "Miau, complica."
+                ]
+            }
         },
         {
             "numero": 5,
@@ -131,7 +211,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Las sulfotransferasas catalizan la sulfatación, una reacción de conjugación típica de la Fase II (sintética) del metabolismo — es la respuesta correcta.",
+                    "Las esterasas catalizan la hidrólisis de ésteres, una reacción de Fase I, no de Fase II.",
+                    "Las amidasas catalizan la hidrólisis de amidas, una reacción de Fase I, no de Fase II.",
+                    "Las monooxigenasas (como el citocromo P450) catalizan reacciones de oxidación, típicas de la Fase I, no de la Fase II."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa conjuga, es de la Fase II.",
+                    "Esa es de la Fase I.",
+                    "Esa es de la Fase I.",
+                    "Esa es de la Fase I."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Fase II.",
+                    "Fijate: Fase I.",
+                    "Dato curioso: Fase I.",
+                    "Miau, Fase I."
+                ]
+            }
         },
         {
             "numero": 6,
@@ -157,7 +257,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El CYP3A4 es la isoforma más abundante en el hígado y metaboliza aproximadamente el 50% de los fármacos utilizados en clínica, siendo el citocromo más importante en la biotransformación hepática — es la respuesta correcta.",
+                    "El CYP2D6 metaboliza un porcentaje menor de fármacos que el CYP3A4, aunque es clínicamente relevante por su polimorfismo genético.",
+                    "El CYP2C9 metaboliza un porcentaje menor de fármacos que el CYP3A4.",
+                    "El CYP1A2 metaboliza un porcentaje menor de fármacos que el CYP3A4."
+                ],
+                "fantasma": [
+                    "¡Esta! El que más droga metaboliza.",
+                    "Ese metaboliza menos que el otro.",
+                    "Ese metaboliza menos que el otro.",
+                    "Ese metaboliza menos que el otro."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El campeón del hígado.",
+                    "Fijate: metaboliza menos.",
+                    "Dato curioso: metaboliza menos.",
+                    "Miau, metaboliza menos."
+                ]
+            }
         },
         {
             "numero": 7,
@@ -183,7 +303,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El pH urinario (6) es más alcalino que el pKa (3) de esta droga ácida, por lo que predomina la fracción IONIZADA, no una disminución de su excreción; la fracción ionizada no se reabsorbe, aumentando la excreción.",
+                    "Con un pH urinario (6) más alcalino que el pKa (3) de esta droga ácida, predomina la fracción ionizada (Fi); como la forma ionizada no atraviesa fácilmente las membranas tubulares, se reabsorbe menos y aumenta su excreción urinaria — es la respuesta correcta.",
+                    "En este caso predomina la fracción ionizada, no la no ionizada, dado que el pH del medio es mayor que el pKa del ácido.",
+                    "En este caso predomina la fracción ionizada (no la no ionizada) y la excreción aumenta (no disminuye)."
+                ],
+                "fantasma": [
+                    "Aumenta la excreción, no baja.",
+                    "¡Esta! Se ioniza y se va por la orina, la correcta.",
+                    "Es al revés, se ioniza.",
+                    "Es al revés en las dos cosas."
+                ],
+                "gato": [
+                    "Fijate: aumenta, no baja.",
+                    "¡Ronroneo de aprobación! Se va por la orina.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés en todo."
+                ]
+            }
         },
         {
             "numero": 8,
@@ -209,7 +349,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Los fármacos hidrofóbicos (liposolubles) se distribuyen mejor en tejidos ricos en lípidos, no en tejidos acuosos.",
+                    "La unión a proteínas plasmáticas limita la distribución tisular, ya que solo la fracción libre (no unida) del fármaco puede atravesar las membranas y llegar a los tejidos — es la respuesta correcta.",
+                    "La droga unida a proteínas plasmáticas es la forma inactiva/de reserva, no la forma activa; solo la fracción libre ejerce el efecto farmacológico.",
+                    "La distribución de fármacos sí depende de su solubilidad (liposolubilidad e hidrosolubilidad), siendo un factor determinante."
+                ],
+                "fantasma": [
+                    "Es al revés, va a la grasa.",
+                    "¡Esta! Solo lo libre se mueve, la correcta.",
+                    "Es al revés, lo libre es lo activo.",
+                    "Sí depende, y mucho."
+                ],
+                "gato": [
+                    "Fijate: es al revés.",
+                    "¡Ronroneo de aprobación! Solo lo libre se mueve.",
+                    "Dato curioso: al revés.",
+                    "Miau, sí depende."
+                ]
+            }
         },
         {
             "numero": 9,
@@ -235,11 +395,31 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Esta opción omite el tamaño y la estructura molecular, factores también relevantes para el pasaje a través de membranas.",
+                    "Esta opción incluye el 'número de moléculas', que no es una característica de la molécula individual que favorezca su pasaje a través de membranas, sino un factor cuantitativo distinto.",
+                    "El pasaje de una molécula a través de las membranas celulares está favorecido por su tamaño y estructura molecular pequeños, su bajo grado de ionización y su alta liposolubilidad, combinando todos los factores relevantes — es la respuesta correcta.",
+                    "Esta opción incluye el 'número de moléculas', que no es una característica molecular relevante para el pasaje individual a través de la membrana."
+                ],
+                "fantasma": [
+                    "Le falta el tamaño.",
+                    "Eso del número de moléculas no pinta acá.",
+                    "¡Esta! Junta todo lo que hace falta.",
+                    "Eso del número de moléculas no pinta acá."
+                ],
+                "gato": [
+                    "Fijate: falta algo.",
+                    "Dato curioso: no pinta eso.",
+                    "¡Ronroneo de aprobación! Junta todo.",
+                    "Miau, no pinta eso."
+                ]
+            }
         },
         {
             "numero": 10,
-            "pergunta": "La membrana plasmática es una barrera biológica compuesta, principalmente, por una bicapa de lípidos anfipáticos y proteínas de membrana enclavadas que cumplen múltiples funciones. Esta barrera es la que deben atravesar los fármacos durante su paso por el organismo. Seleccione la correcta con respecto a los mecanismos y\/o modos de transporte a través de las membranas celulares:",
+            "pergunta": "La membrana plasmática es una barrera biológica compuesta, principalmente, por una bicapa de lípidos anfipáticos y proteínas de membrana enclavadas que cumplen múltiples funciones. Esta barrera es la que deben atravesar los fármacos durante su paso por el organismo. Seleccione la correcta con respecto a los mecanismos y/o modos de transporte a través de las membranas celulares:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -261,7 +441,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La pinocitosis y la exocitosis son mecanismos relevantes para macromoléculas o partículas grandes, no para moléculas de cualquier tamaño en general.",
+                    "La difusión facilitada es un mecanismo mediado por transportador usado por moléculas específicas (como la glucosa), pero no es el mecanismo más común para el paso de fármacos.",
+                    "La reversibilidad y bidireccionalidad SÍ son características de la difusión simple, pero esta opción no responde correctamente a lo que se pregunta sobre el mecanismo más común.",
+                    "La difusión simple (pasiva) es el mecanismo de transporte más comúnmente utilizado por los fármacos para atravesar las membranas celulares, dado que la mayoría son moléculas liposolubles pequeñas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es para cosas grandes.",
+                    "Ese no es el más común.",
+                    "Eso es cierto, pero no responde la pregunta.",
+                    "¡Esta! El más común de todos."
+                ],
+                "gato": [
+                    "Fijate: es de cosas grandes.",
+                    "Dato curioso: no es el común.",
+                    "Miau, no responde bien.",
+                    "¡Ronroneo de aprobación! El más común."
+                ]
+            }
         },
         {
             "numero": 11,
@@ -287,7 +487,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La forma NO ionizada de una base débil AUMENTA cuando el pH del medio AUMENTA (se vuelve más alcalino), no cuando disminuye; las bases se ionizan más en medios ácidos.",
+                    "En estado estable, un fármaco básico se acumula en el lado MÁS ÁCIDO de la membrana (donde se ioniza más y queda atrapado), no en el lado más básico; es lo contrario de lo que afirma esta opción.",
+                    "La distribución de un electrolito débil a través de una membrana depende de su pKa y del gradiente de pH entre ambos lados de la membrana, ya que estos determinan el grado de ionización en cada compartimento — es la respuesta correcta.",
+                    "En estado estable, un fármaco ácido se acumula en el lado MÁS BÁSICO de la membrana (donde se ioniza más), no en el lado más ácido; es lo contrario de lo que afirma esta opción."
+                ],
+                "fantasma": [
+                    "Es al revés, con pH más alto.",
+                    "Es al revés, se acumula del lado ácido.",
+                    "¡Esta! Depende del pKa y el gradiente.",
+                    "Es al revés, se acumula del lado básico."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! pKa y gradiente.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 12,
@@ -313,7 +533,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La opción describe a la loratadina como base débil, pero en esta pregunta se plantea con un pKa (4,33) que, según el gabarito, corresponde a un ácido débil, no a una base.",
+                    "El pKa asignado a la loratadina como ácido en esta pregunta es 4,33, no 6,5; además, a pH 6,5 (mayor que el pKa 4,33) un ácido débil está mayormente ionizado, coincidiendo con parte de esta opción, pero el pKa señalado (6,5) es incorrecto.",
+                    "Considerando a la loratadina como un ácido débil con pKa 4,33, a un pH plasmático de 6,5 (más alcalino que su pKa) predominaría la fracción ionizada; la forma ionizada es menos liposoluble y atraviesa con mayor dificultad la barrera hematoencefálica, lo que explicaría por qué la loratadina no causa sedación a diferencia de la difenhidramina — es la respuesta correcta.",
+                    "El pKa asignado a la loratadina en esta pregunta es 4,33 (no 6,5), y se la considera un ácido débil (no una base) para este razonamiento."
+                ],
+                "fantasma": [
+                    "Ese pKa es de ácido, no de base, en este caso.",
+                    "Ese número de pKa está mal acá.",
+                    "¡Esta! Se ioniza y no entra al cerebro, la correcta.",
+                    "Ese número de pKa está mal, y no es base."
+                ],
+                "gato": [
+                    "Fijate: mal el tipo.",
+                    "Dato curioso: mal el número.",
+                    "¡Ronroneo de aprobación! No entra al cerebro.",
+                    "Miau, mal en dos cosas."
+                ]
+            }
         },
         {
             "numero": 13,
@@ -339,7 +579,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El transporte mediado por proteínas puede ser tan rápido o incluso más rápido que la difusión pasiva para su sustrato específico, dependiendo del sistema; no es necesariamente más lento.",
+                    "El transporte activo utiliza energía (ATP) para mover solutos EN CONTRA de su gradiente electroquímico, no siempre a favor de él, por lo que esta afirmación no es universalmente cierta.",
+                    "Los mecanismos de transporte mediados por proteínas (transportadores) son saturables (tienen un número limitado de sitios de unión) y pueden ser inhibidos de forma competitiva por otros sustratos que compiten por el mismo transportador — es la respuesta correcta.",
+                    "La ley de Fick describe la difusión simple (pasiva), no los mecanismos mediados por transportador, que no dependen directamente del tamaño molecular de la misma manera."
+                ],
+                "fantasma": [
+                    "No siempre es más lento.",
+                    "No siempre va a favor del gradiente.",
+                    "¡Esta! Se satura y se compite por el lugar.",
+                    "Esa ley es de otro mecanismo."
+                ],
+                "gato": [
+                    "Fijate: no siempre.",
+                    "Dato curioso: no siempre.",
+                    "¡Ronroneo de aprobación! Se satura.",
+                    "Miau, es de otro mecanismo."
+                ]
+            }
         },
         {
             "numero": 14,
@@ -365,7 +625,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El orden A>B>C no corresponde a la relación esperada entre el pKa de cada droga y el pH gástrico (1,5) para determinar su absorción.",
+                    "La velocidad de absorción gástrica de un electrolito débil depende de la relación entre su pKa y el pH del medio (1,5): cuanto más favorable sea esa relación para la forma no ionizada, mayor será la absorción; según esta relación, el orden de absorción es B>A>C — es la respuesta correcta.",
+                    "El orden C>A>B no corresponde a la relación esperada entre pKa y pH gástrico para estas tres drogas.",
+                    "El orden A>C>B no corresponde a la relación esperada entre pKa y pH gástrico para estas tres drogas."
+                ],
+                "fantasma": [
+                    "Ese orden no cierra con la cuenta.",
+                    "¡Esta! Ese orden sale de la relación pKa-pH.",
+                    "Ese orden no cierra con la cuenta.",
+                    "Ese orden no cierra con la cuenta."
+                ],
+                "gato": [
+                    "Fijate: no cierra.",
+                    "¡Ronroneo de aprobación! Sale de la cuenta.",
+                    "Dato curioso: no cierra.",
+                    "Miau, no cierra."
+                ]
+            }
         },
         {
             "numero": 15,
@@ -391,7 +671,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente, como regla general, una droga liposoluble con alta unión a proteínas se vuelve hidrosoluble tras el metabolismo hepático, con menor unión a proteínas, peor difusión de barreras y menor reabsorción renal.",
+                    "Efectivamente, los metabolitos suelen ser inactivos o menos activos, pero en ocasiones pueden ser más activos o incluso más tóxicos que la droga original.",
+                    "Si el metabolito es más tóxico que la droga original, inducir el metabolismo ACELERA su formación, lo cual AUMENTARÍA la toxicidad, no la disminuiría — esta es la opción incorrecta.",
+                    "Como la opción C es incorrecta, no todas las opciones son correctas."
+                ],
+                "fantasma": [
+                    "Esa está bien, así funciona.",
+                    "Esa está bien, a veces pasa eso.",
+                    "¡Esta! Eso empeora, no mejora.",
+                    "No, hay una que falla."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! Empeora.",
+                    "Miau, hay una que falla."
+                ]
+            }
         },
         {
             "numero": 16,
@@ -417,7 +717,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La albúmina tiene mayor CAPACIDAD (más sitios de unión disponibles), pero no mayor especificidad; de hecho, es poco específica y une muchos tipos de fármacos, sobre todo ácidos.",
+                    "La alfa-1-glicoproteína ácida transporta preferentemente fármacos BÁSICOS, no ácidos.",
+                    "La albúmina, por su alta concentración plasmática y gran número de sitios de unión, tiene mayor capacidad para transportar fármacos en general (especialmente ácidos débiles) — es la respuesta correcta.",
+                    "La alfa-1-glicoproteína ácida transporta con mayor afinidad fármacos BÁSICOS, no ácidos."
+                ],
+                "fantasma": [
+                    "Es capacidad, no especificidad.",
+                    "Esa transporta lo básico, no lo ácido.",
+                    "¡Esta! Esa tiene lugar para todos.",
+                    "Esa transporta lo básico, no lo ácido."
+                ],
+                "gato": [
+                    "Fijate: es capacidad.",
+                    "Dato curioso: es lo básico.",
+                    "¡Ronroneo de aprobación! Lugar para todos.",
+                    "Miau, es lo básico."
+                ]
+            }
         },
         {
             "numero": 17,
@@ -443,7 +763,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Aportar bicarbonato (HCO3-) alcaliniza la orina; en este medio alcalino, el ácido débil (AAS) se ioniza más, queda atrapado en la orina (no se reabsorbe) y aumenta su excreción — es la respuesta correcta.",
+                    "No realizar cambios en el pH urinario desaprovecharía una estrategia terapéutica eficaz para acelerar la eliminación de esta droga ácida.",
+                    "El ácido ascórbico acidifica la orina, lo cual favorecería la forma NO ionizada del ácido (AAS), aumentando su reabsorción y disminuyendo su excreción; es contraproducente en este caso.",
+                    "El bicarbonato favorece la fracción ionizada (no la no ionizada), y esto aumenta (no disminuye) la excreción."
+                ],
+                "fantasma": [
+                    "¡Esta! Bicarbonato saca la droga por la orina.",
+                    "No, sí conviene cambiar el pH.",
+                    "Ese hace lo contrario, la atrapa adentro.",
+                    "Es al revés, aumenta la salida."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Bicarbonato al rescate.",
+                    "Fijate: sí conviene cambiar.",
+                    "Dato curioso: hace lo contrario.",
+                    "Miau, es al revés."
+                ]
+            }
         },
         {
             "numero": 18,
@@ -469,7 +809,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La glucuronidación es una reacción de conjugación de Fase II, no de Fase I.",
+                    "La acetilación es una reacción de conjugación de Fase II, no de Fase I.",
+                    "La sulfatación es una reacción de conjugación de Fase II, no de Fase I.",
+                    "La oxidación es la reacción característica de la Fase I del metabolismo, catalizada principalmente por el sistema citocromo P450 — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa es de la Fase II.",
+                    "Esa es de la Fase II.",
+                    "Esa es de la Fase II.",
+                    "¡Esta! La típica de la Fase I."
+                ],
+                "gato": [
+                    "Fijate: Fase II.",
+                    "Dato curioso: Fase II.",
+                    "Miau, Fase II.",
+                    "¡Ronroneo de aprobación! Fase I."
+                ]
+            }
         },
         {
             "numero": 19,
@@ -495,7 +855,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Alcalinizar la orina no aumenta el ultrafiltrado glomerular; este proceso depende de la presión de filtración, no del pH.",
+                    "Alcalinizar la orina no actúa sobre la secreción tubular, sino sobre la reabsorción.",
+                    "Alcalinizar la orina aumenta la ionización de la droga ácida, y la forma ionizada no se reabsorbe fácilmente en los túbulos renales, disminuyendo su reabsorción y favoreciendo su eliminación — es la respuesta correcta.",
+                    "Alcalinizar la orina no actúa sobre la secreción tubular activa, sino sobre la reabsorción pasiva."
+                ],
+                "fantasma": [
+                    "Eso no cambia con el pH.",
+                    "No es la secreción, es otra cosa.",
+                    "¡Esta! Se ioniza y no vuelve a entrar.",
+                    "No es la secreción, es otra cosa."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: no es eso.",
+                    "¡Ronroneo de aprobación! No vuelve a entrar.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 20,
@@ -521,7 +901,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Aunque en el estómago (pH muy ácido) una droga ácida estaría menos ionizada, la escasa superficie de absorción gástrica limita la cantidad total absorbida allí.",
+                    "A pesar de que en el intestino delgado (pH ~6-7) una droga ácida con pKa 3 está mayormente ionizada, la enorme superficie de absorción intestinal (microvellosidades) compensa ampliamente esta desventaja, haciendo que la mayor cantidad absorbida ocurra en el intestino delgado — es la respuesta correcta.",
+                    "El pulmón no es la vía de absorción relevante para una droga administrada por vía oral en este contexto.",
+                    "La piel tiene una absorción limitada y no es la vía relevante para este escenario."
+                ],
+                "fantasma": [
+                    "Ahí hay poco lugar para absorber.",
+                    "¡Esta! Tiene mucha superficie, gana por cantidad.",
+                    "Esa vía no es la de acá.",
+                    "Esa vía no es la de acá."
+                ],
+                "gato": [
+                    "Fijate: poco lugar.",
+                    "¡Ronroneo de aprobación! Mucha superficie.",
+                    "Dato curioso: no es esa vía.",
+                    "Miau, no es esa vía."
+                ]
+            }
         },
         {
             "numero": 21,
@@ -577,7 +977,7 @@
         },
         {
             "numero": 23,
-            "pergunta": "Marque la opción correcta en base al siguiente experimento. Se colocan iguales concentraciones de dos drogas ácidas (M y N) en un medio de PH:1,5 separadas de un medio a PH:6 por una membrana lipídica. Ambas drogas tienen un pKa de 4 y un coeficiente de partición lípido\/agua de 15 para la droga M y 0,3 para la droga N. Suponiendo que alcanzan el estado estacionario:",
+            "pergunta": "Marque la opción correcta en base al siguiente experimento. Se colocan iguales concentraciones de dos drogas ácidas (M y N) en un medio de PH:1,5 separadas de un medio a PH:6 por una membrana lipídica. Ambas drogas tienen un pKa de 4 y un coeficiente de partición lípido/agua de 15 para la droga M y 0,3 para la droga N. Suponiendo que alcanzan el estado estacionario:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -619,7 +1019,7 @@
                 },
                 {
                     "letra": "D",
-                    "texto": "El coeficiente de partición lípido\/agua es directamente proporcional a la difusión"
+                    "texto": "El coeficiente de partición lípido/agua es directamente proporcional a la difusión"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -967,7 +1367,7 @@
         },
         {
             "numero": 38,
-            "pergunta": "Un fármaco con un alto coeficiente de partición lípido\/agua tendrá:",
+            "pergunta": "Un fármaco con un alto coeficiente de partición lípido/agua tendrá:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -1447,7 +1847,7 @@
                 },
                 {
                     "letra": "C",
-                    "texto": "Es un proceso que requiere energía, por lo que está acoplado a una bomba Na+\/K+ asociada a la hidrólisis de ATP."
+                    "texto": "Es un proceso que requiere energía, por lo que está acoplado a una bomba Na+/K+ asociada a la hidrólisis de ATP."
                 },
                 {
                     "letra": "D",
@@ -1461,7 +1861,7 @@
         },
         {
             "numero": 57,
-            "pergunta": "La fracción no-ionizada\/ionizada de una droga ácida de pKa=8 en el estómago (pH=3) con respecto al intestino delgado (pH=6) es la siguiente:",
+            "pergunta": "La fracción no-ionizada/ionizada de una droga ácida de pKa=8 en el estómago (pH=3) con respecto al intestino delgado (pH=6) es la siguiente:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2075,7 +2475,7 @@
                 },
                 {
                     "letra": "D",
-                    "texto": "Coeficiente de partición lípido\/agua"
+                    "texto": "Coeficiente de partición lípido/agua"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -2215,7 +2615,7 @@
         },
         {
             "numero": 86,
-            "pergunta": "En un esquema de tratamiento con la dosis de mantenimiento de un fármaco administrado por vía intravenosa y un intervalo entre dosis de 0,5 vidas medias, el cociente pico\/valle es cercano a:",
+            "pergunta": "En un esquema de tratamiento con la dosis de mantenimiento de un fármaco administrado por vía intravenosa y un intervalo entre dosis de 0,5 vidas medias, el cociente pico/valle es cercano a:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2241,7 +2641,7 @@
         },
         {
             "numero": 87,
-            "pergunta": "Si la vida media de una droga administrada por vía intravenosa y con cinética de orden 1 es de 16 horas. El cociente pico\/valle una vez alcanzada la meseta, es de 2. ¿Cada cuántas horas se ingiere el fármaco?",
+            "pergunta": "Si la vida media de una droga administrada por vía intravenosa y con cinética de orden 1 es de 16 horas. El cociente pico/valle una vez alcanzada la meseta, es de 2. ¿Cada cuántas horas se ingiere el fármaco?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2293,7 +2693,7 @@
         },
         {
             "numero": 89,
-            "pergunta": "Si para una droga se quiere que, en meseta, sus valores séricos oscilen entre 100ng\/ml y 50ng\/ml, entonces la droga deberá administrarse cada:",
+            "pergunta": "Si para una droga se quiere que, en meseta, sus valores séricos oscilen entre 100ng/ml y 50ng/ml, entonces la droga deberá administrarse cada:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2345,7 +2745,7 @@
         },
         {
             "numero": 91,
-            "pergunta": "Si se requiere que un fármaco, administrado por vía intravenosa, con cinética de eliminación de orden 1, alcance en meseta la menor oscilación posible entre su nivel sérico más alto (pico) y más bajo (valle) (ósea si se requiere hacer el cociente pico\/valle lo más pequeño posible) entonces:",
+            "pergunta": "Si se requiere que un fármaco, administrado por vía intravenosa, con cinética de eliminación de orden 1, alcance en meseta la menor oscilación posible entre su nivel sérico más alto (pico) y más bajo (valle) (ósea si se requiere hacer el cociente pico/valle lo más pequeño posible) entonces:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2423,7 +2823,7 @@
         },
         {
             "numero": 94,
-            "pergunta": "La droga P se administra por vía oral a razón de 25 mg\/día, tiene una vida media de 6,3 horas y se elimina casi en un 100% a través de la orina sin sufrir ninguna biotransformación. ¿En cuál de los siguientes casos cree que será necesario ajustar la dosis empleada?",
+            "pergunta": "La droga P se administra por vía oral a razón de 25 mg/día, tiene una vida media de 6,3 horas y se elimina casi en un 100% a través de la orina sin sufrir ninguna biotransformación. ¿En cuál de los siguientes casos cree que será necesario ajustar la dosis empleada?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2579,7 +2979,7 @@
         },
         {
             "numero": 100,
-            "pergunta": "Durante un estudio de farmacocinética clínica, un fármaco se administra a un individuo de 80kg. Al calcular el volumen aparente de distribución encontramos que el mismo es de 40L\/kg (3200 litros en este individuo). Este volumen hace pensar que el fármaco:",
+            "pergunta": "Durante un estudio de farmacocinética clínica, un fármaco se administra a un individuo de 80kg. Al calcular el volumen aparente de distribución encontramos que el mismo es de 40L/kg (3200 litros en este individuo). Este volumen hace pensar que el fármaco:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2605,7 +3005,7 @@
         },
         {
             "numero": 101,
-            "pergunta": "Un fármaco, administrado en una dosis única de 100mg, da lugar a un pico de concentración plasmática de 20µg\/ml. El volumen aparente de distribución es (asumiendo una distribución rápida y una eliminación insignificante antes de medir el nivel plasmático máximo) de:",
+            "pergunta": "Un fármaco, administrado en una dosis única de 100mg, da lugar a un pico de concentración plasmática de 20µg/ml. El volumen aparente de distribución es (asumiendo una distribución rápida y una eliminación insignificante antes de medir el nivel plasmático máximo) de:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2891,7 +3291,7 @@
         },
         {
             "numero": 112,
-            "pergunta": "La vida media de una droga administrada por vía I.V. es 4 hs. Una vez alcanzada la meseta, el cociente pico\/valle es de 8. ¿Cada cuántas horas se administra esta droga?",
+            "pergunta": "La vida media de una droga administrada por vía I.V. es 4 hs. Una vez alcanzada la meseta, el cociente pico/valle es de 8. ¿Cada cuántas horas se administra esta droga?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2917,7 +3317,7 @@
         },
         {
             "numero": 113,
-            "pergunta": "Si al alcanzar la meseta el cociente pico\/valle de una droga es igual a 2 y el intervalo interdosis es de 4 horas. ¿Cuál es la vida media de la droga?",
+            "pergunta": "Si al alcanzar la meseta el cociente pico/valle de una droga es igual a 2 y el intervalo interdosis es de 4 horas. ¿Cuál es la vida media de la droga?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -2995,7 +3395,7 @@
         },
         {
             "numero": 116,
-            "pergunta": "Si un fármaco tiene un volumen de distribución de 50 L y una concentración plasmática de 5 mg\/L, la cantidad total de droga en el organismo es:",
+            "pergunta": "Si un fármaco tiene un volumen de distribución de 50 L y una concentración plasmática de 5 mg/L, la cantidad total de droga en el organismo es:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -3047,7 +3447,7 @@
         },
         {
             "numero": 118,
-            "pergunta": "Se tienen 600mg\/ml en plasma de una droga de cinética dosis independiente. A las 8 hs se observa una concentración de 150mg\/ml. ¿Cuál es el mínimo intervalo interdosis para que la acumulación de la droga sea menor al 75%?",
+            "pergunta": "Se tienen 600mg/ml en plasma de una droga de cinética dosis independiente. A las 8 hs se observa una concentración de 150mg/ml. ¿Cuál es el mínimo intervalo interdosis para que la acumulación de la droga sea menor al 75%?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -3125,7 +3525,7 @@
         },
         {
             "numero": 121,
-            "pergunta": "Si la dosis de una droga es de 0,75 mg\/día y la vida media es de 46 hs. ¿Cuál sería la dosis de carga de la droga?",
+            "pergunta": "Si la dosis de una droga es de 0,75 mg/día y la vida media es de 46 hs. ¿Cuál sería la dosis de carga de la droga?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -3255,23 +3655,23 @@
         },
         {
             "numero": 126,
-            "pergunta": "Si luego de una hora la concentración plasmática de una droga cae de 80 ng\/mL a 10 ng\/mL, y el volumen del plasma (= 4 L) no varía en ese lapso, ¿Cuál es el valor del clearance?",
+            "pergunta": "Si luego de una hora la concentración plasmática de una droga cae de 80 ng/mL a 10 ng/mL, y el volumen del plasma (= 4 L) no varía en ese lapso, ¿Cuál es el valor del clearance?",
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "0,5 L\/h"
+                    "texto": "0,5 L/h"
                 },
                 {
                     "letra": "B",
-                    "texto": "2 L\/h"
+                    "texto": "2 L/h"
                 },
                 {
                     "letra": "C",
-                    "texto": "8 L\/h"
+                    "texto": "8 L/h"
                 },
                 {
                     "letra": "D",
-                    "texto": "3,5 L\/h"
+                    "texto": "3,5 L/h"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -3281,7 +3681,7 @@
         },
         {
             "numero": 127,
-            "pergunta": "Un fármaco con un volumen de distribución de 3 L\/kg indica que:",
+            "pergunta": "Un fármaco con un volumen de distribución de 3 L/kg indica que:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -3385,23 +3785,23 @@
         },
         {
             "numero": 131,
-            "pergunta": "Un paciente recibe una dosis endovenosa de un fármaco alcanzando una concentración plasmática de 100 mg\/dL. Asumiendo que el fármaco se elimina con una cinética de orden 1 y que posee una vida media de 6 horas, es esperable que 12 horas después presente una concentración plasmática de:",
+            "pergunta": "Un paciente recibe una dosis endovenosa de un fármaco alcanzando una concentración plasmática de 100 mg/dL. Asumiendo que el fármaco se elimina con una cinética de orden 1 y que posee una vida media de 6 horas, es esperable que 12 horas después presente una concentración plasmática de:",
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "100 mg\/dL"
+                    "texto": "100 mg/dL"
                 },
                 {
                     "letra": "B",
-                    "texto": "50 mg\/dL"
+                    "texto": "50 mg/dL"
                 },
                 {
                     "letra": "C",
-                    "texto": "25 mg\/dL"
+                    "texto": "25 mg/dL"
                 },
                 {
                     "letra": "D",
-                    "texto": "12,5 mg\/dL"
+                    "texto": "12,5 mg/dL"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -3437,23 +3837,23 @@
         },
         {
             "numero": 133,
-            "pergunta": "Una mujer de 63 años en la unidad de cuidados intensivos requiere una infusión de procainamida. Su vida media es de 2 hs. La infusión se inicia a las 9 de la mañana. A la 1 PM del mismo día, se toma una muestra de sangre; la concentración de fármaco se encuentra en 3 mg\/L. la concentración probable de fármaco en estado estable después de 16 hs o más de infusión es de:",
+            "pergunta": "Una mujer de 63 años en la unidad de cuidados intensivos requiere una infusión de procainamida. Su vida media es de 2 hs. La infusión se inicia a las 9 de la mañana. A la 1 PM del mismo día, se toma una muestra de sangre; la concentración de fármaco se encuentra en 3 mg/L. la concentración probable de fármaco en estado estable después de 16 hs o más de infusión es de:",
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "3 mg\/L"
+                    "texto": "3 mg/L"
                 },
                 {
                     "letra": "B",
-                    "texto": "4 mg\/L"
+                    "texto": "4 mg/L"
                 },
                 {
                     "letra": "C",
-                    "texto": "6 mg\/L"
+                    "texto": "6 mg/L"
                 },
                 {
                     "letra": "D",
-                    "texto": "9,9 mg\/L"
+                    "texto": "9,9 mg/L"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -3541,23 +3941,23 @@
         },
         {
             "numero": 137,
-            "pergunta": "Si luego de una hora la concentración plasmática de una droga cae de 40 ng\/mL a 20 ng\/mL, y el volumen del plasma (= 4 L) no varía en ese lapso ¿Cuál es el valor del clearance?",
+            "pergunta": "Si luego de una hora la concentración plasmática de una droga cae de 40 ng/mL a 20 ng/mL, y el volumen del plasma (= 4 L) no varía en ese lapso ¿Cuál es el valor del clearance?",
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "6 L\/h"
+                    "texto": "6 L/h"
                 },
                 {
                     "letra": "B",
-                    "texto": "1 L\/h"
+                    "texto": "1 L/h"
                 },
                 {
                     "letra": "C",
-                    "texto": "4 L\/h"
+                    "texto": "4 L/h"
                 },
                 {
                     "letra": "D",
-                    "texto": "2 L\/h"
+                    "texto": "2 L/h"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -3723,7 +4123,7 @@
         },
         {
             "numero": 144,
-            "pergunta": "Si se dosifica una misma cantidad diaria de droga (cinética dosis-independiente) de la siguiente manera (400mg\/4 hs versus 200 mg\/2h), se observará que la dosificación de intervalos más cortos (200mg\/2h) produce:",
+            "pergunta": "Si se dosifica una misma cantidad diaria de droga (cinética dosis-independiente) de la siguiente manera (400mg/4 hs versus 200 mg/2h), se observará que la dosificación de intervalos más cortos (200mg/2h) produce:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -3739,7 +4139,7 @@
                 },
                 {
                     "letra": "D",
-                    "texto": "Mayor cociente pico\/valle"
+                    "texto": "Mayor cociente pico/valle"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -4035,23 +4435,23 @@
         },
         {
             "numero": 156,
-            "pergunta": "Cuál será la concentración de una droga a las 10hs de administrada sabiendo que tiene una cinética de orden 1, posee una VM de 4hs y alcanza su pico máximo de 20ug\/L a las 2hs después de administrada como única dosis por vía oral?",
+            "pergunta": "Cuál será la concentración de una droga a las 10hs de administrada sabiendo que tiene una cinética de orden 1, posee una VM de 4hs y alcanza su pico máximo de 20ug/L a las 2hs después de administrada como única dosis por vía oral?",
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "10 ug\/L"
+                    "texto": "10 ug/L"
                 },
                 {
                     "letra": "B",
-                    "texto": "5 ug\/L"
+                    "texto": "5 ug/L"
                 },
                 {
                     "letra": "C",
-                    "texto": "2,5 ug\/L"
+                    "texto": "2,5 ug/L"
                 },
                 {
                     "letra": "D",
-                    "texto": "1 ug\/L"
+                    "texto": "1 ug/L"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -4217,7 +4617,7 @@
         },
         {
             "numero": 163,
-            "pergunta": "Si se administra 1000 mg de una droga por vía IV y la concentración de la droga en función del tiempo disminuye siempre 20mg\/ml por hora entonces:",
+            "pergunta": "Si se administra 1000 mg de una droga por vía IV y la concentración de la droga en función del tiempo disminuye siempre 20mg/ml por hora entonces:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4347,7 +4747,7 @@
         },
         {
             "numero": 168,
-            "pergunta": "Un paciente es tratado con un fármaco en dosis fijas a intervalos regulares. Una vez alcanzada la meseta, los valores séricos oscilan estables entre un máximo de 200 ng\/ml y un mínimo de 50 ng\/ml. Teniendo en cuenta que la dosis de mantenimiento es de 100 mg. ¿Cuál es la dosis de carga o ataque?",
+            "pergunta": "Un paciente es tratado con un fármaco en dosis fijas a intervalos regulares. Una vez alcanzada la meseta, los valores séricos oscilan estables entre un máximo de 200 ng/ml y un mínimo de 50 ng/ml. Teniendo en cuenta que la dosis de mantenimiento es de 100 mg. ¿Cuál es la dosis de carga o ataque?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4373,7 +4773,7 @@
         },
         {
             "numero": 169,
-            "pergunta": "¿En qué compartimiento se encuentra un fármaco si se administran por bolo intravenoso una dosis única de 300 mg y la concentración máxima alcanzada en plasma es de 100 mg\/L?",
+            "pergunta": "¿En qué compartimiento se encuentra un fármaco si se administran por bolo intravenoso una dosis única de 300 mg y la concentración máxima alcanzada en plasma es de 100 mg/L?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4399,7 +4799,7 @@
         },
         {
             "numero": 170,
-            "pergunta": "Si un fármaco tiene una vida media de 8 horas y un intervalo interdosis de 16 horas, el coeficiente pico\/valle en meseta será:",
+            "pergunta": "Si un fármaco tiene una vida media de 8 horas y un intervalo interdosis de 16 horas, el coeficiente pico/valle en meseta será:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4503,7 +4903,7 @@
         },
         {
             "numero": 174,
-            "pergunta": "Si se dosifica una misma cantidad diaria de droga (cinética dosis-independiente) de la siguiente manera (400 mg\/4 hs versus 200 mg\/2h), se observará que la dosificación de intervalos más cortos (200 mg\/2h) produce:",
+            "pergunta": "Si se dosifica una misma cantidad diaria de droga (cinética dosis-independiente) de la siguiente manera (400 mg/4 hs versus 200 mg/2h), se observará que la dosificación de intervalos más cortos (200 mg/2h) produce:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4515,7 +4915,7 @@
                 },
                 {
                     "letra": "C",
-                    "texto": "Menor cociente pico\/valle en meseta"
+                    "texto": "Menor cociente pico/valle en meseta"
                 },
                 {
                     "letra": "D",
@@ -4555,7 +4955,7 @@
         },
         {
             "numero": 176,
-            "pergunta": "En un esquema de tratamiento con la dosis de mantenimiento de un fármaco administrado por vía intravenosa y un intervalo entre dosis de 2 vidas medias, el cociente pico\/valle es:",
+            "pergunta": "En un esquema de tratamiento con la dosis de mantenimiento de un fármaco administrado por vía intravenosa y un intervalo entre dosis de 2 vidas medias, el cociente pico/valle es:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4581,23 +4981,23 @@
         },
         {
             "numero": 177,
-            "pergunta": "¿Cuál es la concentración plasmática en estado estacionario de X si luego de la primer dosis se obtienen 350ng\/ml sabiendo que se administra cada 7hs y su vida media es de 3,5hs?",
+            "pergunta": "¿Cuál es la concentración plasmática en estado estacionario de X si luego de la primer dosis se obtienen 350ng/ml sabiendo que se administra cada 7hs y su vida media es de 3,5hs?",
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "1099ng\/ml"
+                    "texto": "1099ng/ml"
                 },
                 {
                     "letra": "B",
-                    "texto": "- 700 ng\/ml"
+                    "texto": "- 700 ng/ml"
                 },
                 {
                     "letra": "C",
-                    "texto": "- 542 ng\/ml"
+                    "texto": "- 542 ng/ml"
                 },
                 {
                     "letra": "D",
-                    "texto": "- 465 ng\/ml"
+                    "texto": "- 465 ng/ml"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -4659,7 +5059,7 @@
         },
         {
             "numero": 180,
-            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 900 fmoles\/mg, Kd 10-9 M; Droga B: Bmax 600 fmoles\/mg, Kd 10-7 M. ¿Cuál de las siguientes aseveraciones es correcta?",
+            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 900 fmoles/mg, Kd 10-9 M; Droga B: Bmax 600 fmoles/mg, Kd 10-7 M. ¿Cuál de las siguientes aseveraciones es correcta?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4741,15 +5141,15 @@
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "No se modifica la t1\/2"
+                    "texto": "No se modifica la t1/2"
                 },
                 {
                     "letra": "B",
-                    "texto": "Aumenta la t1\/2"
+                    "texto": "Aumenta la t1/2"
                 },
                 {
                     "letra": "C",
-                    "texto": "Disminuye la t1\/2"
+                    "texto": "Disminuye la t1/2"
                 },
                 {
                     "letra": "D",
@@ -4841,7 +5241,7 @@
         },
         {
             "numero": 187,
-            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 500 moles\/mg Kd 10-9 M; Droga B: Bmax 500moles\/mg Kd 10-8 M. ¿En un gráfico de Scatchard, ¿Cuál de las siguientes aseveraciones es correcta?",
+            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 500 moles/mg Kd 10-9 M; Droga B: Bmax 500moles/mg Kd 10-8 M. ¿En un gráfico de Scatchard, ¿Cuál de las siguientes aseveraciones es correcta?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -4893,7 +5293,7 @@
         },
         {
             "numero": 189,
-            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros. Droga A: Bmax 600 moles\/mg. Kd: 10-6M, Droga B: Bmax 600 moles\/mg Kd: 10-9M. ¿Cuál de las siguientes aseveraciones es correcta?",
+            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros. Droga A: Bmax 600 moles/mg. Kd: 10-6M, Droga B: Bmax 600 moles/mg Kd: 10-9M. ¿Cuál de las siguientes aseveraciones es correcta?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -5621,7 +6021,7 @@
         },
         {
             "numero": 217,
-            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 60 fmoles\/mg, Kd 10-9 M; Droga B: Bmax 60 fmoles\/mg, Kd 10-7 M. ¿Cuál de las siguientes aseveraciones es correcta?",
+            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 60 fmoles/mg, Kd 10-9 M; Droga B: Bmax 60 fmoles/mg, Kd 10-7 M. ¿Cuál de las siguientes aseveraciones es correcta?",
             "opcoes": [
                 {
                     "letra": "A",
@@ -5703,7 +6103,7 @@
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "El cociente pico\/valle"
+                    "texto": "El cociente pico/valle"
                 },
                 {
                     "letra": "B",
@@ -5763,11 +6163,11 @@
                 },
                 {
                     "letra": "C",
-                    "texto": "-1\/Kd"
+                    "texto": "-1/Kd"
                 },
                 {
                     "letra": "D",
-                    "texto": "1\/Bmax"
+                    "texto": "1/Bmax"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -6227,7 +6627,7 @@
                 },
                 {
                     "letra": "B",
-                    "texto": "El cociente pico\/valle"
+                    "texto": "El cociente pico/valle"
                 },
                 {
                     "letra": "C",
@@ -6323,7 +6723,7 @@
         },
         {
             "numero": 244,
-            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 1000 fmoles\/mg, Kd 10-9 M: Droga B: Bmax 600 fmoles\/mg, Kd 10-6 M. Con esos datos, UD. puede deducir que:",
+            "pergunta": "Dos drogas se unen al mismo receptor. De ensayos de unión de radioligandos se obtienen los siguientes parámetros: Droga A: Bmax 1000 fmoles/mg, Kd 10-9 M: Droga B: Bmax 600 fmoles/mg, Kd 10-6 M. Con esos datos, UD. puede deducir que:",
             "opcoes": [
                 {
                     "letra": "A",
@@ -6353,7 +6753,7 @@
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "-1\/Kd"
+                    "texto": "-1/Kd"
                 },
                 {
                     "letra": "B",
@@ -6361,7 +6761,7 @@
                 },
                 {
                     "letra": "C",
-                    "texto": "1\/Bmax"
+                    "texto": "1/Bmax"
                 },
                 {
                     "letra": "D",
@@ -7861,19 +8261,19 @@
             "opcoes": [
                 {
                     "letra": "A",
-                    "texto": "750 L\/m2"
+                    "texto": "750 L/m2"
                 },
                 {
                     "letra": "B",
-                    "texto": "420 L\/m2"
+                    "texto": "420 L/m2"
                 },
                 {
                     "letra": "C",
-                    "texto": "15 L\/m2"
+                    "texto": "15 L/m2"
                 },
                 {
                     "letra": "D",
-                    "texto": "4 L\/m2"
+                    "texto": "4 L/m2"
                 }
             ],
             "tipo": "multipla_escolha",
@@ -7935,7 +8335,7 @@
         },
         {
             "numero": 306,
-            "pergunta": "¿Cuál\/es de los siguientes mecanismos de acción no son compatibles con los anticuerpos monoclonales utilizados en enfermedades oncológicas?",
+            "pergunta": "¿Cuál/es de los siguientes mecanismos de acción no son compatibles con los anticuerpos monoclonales utilizados en enfermedades oncológicas?",
             "opcoes": [
                 {
                     "letra": "A",
