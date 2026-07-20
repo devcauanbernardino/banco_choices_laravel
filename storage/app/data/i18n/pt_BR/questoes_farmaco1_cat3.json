@@ -7538,5 +7538,585 @@
                 "Miau, a razão é outra."
             ]
         }
+    },
+    {
+        "pergunta": "A pCE50:",
+        "opcoes": [
+            "É o logaritmo do inverso do antagonista não competitivo que diminui a resposta do agonista pela metade.",
+            "Pode ser interpretada considerando que quanto maior seu valor, maior a potência do agonista",
+            "Se calcula a partir da CDR de um antagonista na presença de dose crescente de um agonista",
+            "Pode ser interpretada considerando que quanto maior a pCE50 do agonista maior a eficácia"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A pCE50 não se define em termos de um antagonista não competitivo nem de um \"inverso\" dessa forma; essa descrição não corresponde.",
+                "Como pCE50=-log(CE50), um valor maior de pCE50 corresponde a uma CE50 menor, ou seja, maior potência do agonista — é a resposta correta.",
+                "A pCE50 se calcula a partir da CDR do próprio agonista, não de um antagonista na presença de doses crescentes de agonista.",
+                "A pCE50 se relaciona com a potência, não diretamente com a eficácia (que se mede pela atividade intrínseca ou o Emax)."
+            ],
+            "fantasma": [
+                "Isso não é o que mede a pCE50.",
+                "Essa aí! Mais pCE50, mais potência.",
+                "Isso se calcula diferente.",
+                "Isso é potência, não eficácia."
+            ],
+            "gato": [
+                "Fijate: não é isso.",
+                "Ronronado de aprovação! Andam juntos.",
+                "Dado curioso: se calcula diferente.",
+                "Miau, é potência não eficácia."
+            ]
+        }
+    },
+    {
+        "pergunta": "A tolerância adquirida é:",
+        "opcoes": [
+            "A diminuição rápida da sensibilidade da primeira administração",
+            "Um fenômeno dependente de interações medicamentosas",
+            "A consequência do polimorfismo genético que converte alguns indivíduos em resistentes ao tratamento",
+            "A diminuição gradual da resposta da droga quando administrada em períodos prolongados"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma diminuição \"rápida\" desde a primeira administração descreve mais a taquifilaxia, não a tolerância adquirida (que é gradual, com o uso prolongado).",
+                "A tolerância adquirida não é um fenômeno dependente de interações com outros medicamentos; é uma adaptação do organismo ao próprio fármaco.",
+                "O polimorfismo genético que confere resistência de base é uma característica constitutiva do indivíduo, não uma tolerância \"adquirida\" com o uso.",
+                "A tolerância adquirida é a diminuição progressiva da resposta a uma droga quando administrada de forma repetida durante um período prolongado — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é rápido, isso é lento e gradual.",
+                "Isso não depende de outras drogas.",
+                "Isso já vem de nascença, não se adquire.",
+                "Essa aí! Com o uso repetido, cada vez faz menos efeito."
+            ],
+            "gato": [
+                "Fijate: é mais rápido que isso.",
+                "Dado curioso: não depende disso.",
+                "Miau, é de nascença.",
+                "Ronronado de aprovação! Cada vez menos efeito."
+            ]
+        }
+    },
+    {
+        "pergunta": "A potência de um fármaco é influenciada por:",
+        "opcoes": [
+            "CE50, afinidade aparente e inclinação da curva dose resposta do antagonista",
+            "CE50, variáveis farmacocinéticas, atividade intrínseca e inclinação da CDR do antagonista",
+            "CE50, afinidade aparente, atividade intrínseca e inclinação da CDR do antagonista",
+            "CE50, variáveis farmacocinéticas e afinidade aparente."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa combinação omite a atividade intrínseca, um fator que também influencia o comportamento observado do fármaco em sua curva dose-resposta.",
+                "Essa combinação mistura variáveis farmacocinéticas com parâmetros farmacodinâmicos de forma menos precisa que a combinação considerada correta.",
+                "A potência de um fármaco é influenciada por sua CE50, afinidade aparente, atividade intrínseca e a inclinação da CDR do antagonista, combinando os fatores farmacodinâmicos relevantes — é a resposta indicada no gabarito de origem.",
+                "Essa combinação omite tanto a afinidade aparente quanto a atividade intrínseca, fatores relevantes nesse contexto."
+            ],
+            "fantasma": [
+                "Falta um fator importante.",
+                "Mistura coisas de outro tipo.",
+                "Essa é a marcada no gabarito original.",
+                "Faltam dois fatores importantes."
+            ],
+            "gato": [
+                "Fijate: falta algo.",
+                "Dado curioso: mistura coisas.",
+                "Ronronado de aprovação (segundo o gabarito original).",
+                "Miau, faltam coisas."
+            ]
+        }
+    },
+    {
+        "pergunta": "A constante de dissociação (Kd) é:",
+        "opcoes": [
+            "Diretamente proporcional à afinidade do fármaco pelo receptor",
+            "Inversamente proporcional à afinidade do fármaco pelo receptor",
+            "Diretamente proporcional à eficácia do fármaco",
+            "Inversamente proporcional à atividade intrínseca do fármaco"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O Kd é INVERSAMENTE (não diretamente) proporcional à afinidade: quanto menor o Kd, maior a afinidade.",
+                "Quanto menor o Kd, maior a afinidade do fármaco pelo receptor; essa relação inversa é correta — é a resposta correta.",
+                "O Kd é um parâmetro de ligação (binding), não está diretamente relacionado à eficácia, que depende da atividade intrínseca.",
+                "O Kd também não está diretamente relacionado à atividade intrínseca, que é um conceito funcional diferente do de afinidade de ligação."
+            ],
+            "fantasma": [
+                "É ao contrário, é inversa.",
+                "Essa aí! Menos Kd, mais afinidade.",
+                "Isso é outra coisa, a eficácia.",
+                "Isso é outra coisa, a atividade intrínseca."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Ronronado de aprovação! Relação inversa.",
+                "Dado curioso: é outra coisa.",
+                "Miau, é outra coisa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se ao realizar uma CDR da droga A sozinha e na presença de concentrações fixas e crescentes de uma droga B se observa uma diminuição progressiva do Emax obtido com A e um aumento progressivo do valor da CE50 da droga A, então o fenômeno observado induzido pela droga B pode ser denominado:",
+        "opcoes": [
+            "Uma cooperatividade negativa",
+            "Antagonismo competitivo",
+            "Antagonista não competitivo",
+            "Um antagonista fisiológico"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cooperatividade negativa é um fenômeno relacionado à ligação de múltiplos ligantes a receptores com vários sítios, não a descrição típica dessa interação entre duas drogas.",
+                "Um antagonista competitivo desloca a curva (aumenta a CE50) mas NÃO reduz o Emax; aqui se descreve uma redução progressiva do Emax, o que contradiz a definição de competitivo.",
+                "A diminuição progressiva do Emax junto com o aumento da CE50 é precisamente a assinatura característica do antagonismo não competitivo — é a resposta correta.",
+                "Um antagonista fisiológico agiria em um receptor diferente, produzindo um efeito oposto por outra via, não competindo diretamente na mesma curva dose-resposta dessa forma."
+            ],
+            "fantasma": [
+                "Isso é de outra situação, com vários sítios.",
+                "Um competitivo não baixaria o teto, e aqui sim baixa.",
+                "Essa aí! Baixa o teto e corre a curva, as duas coisas.",
+                "Isso seria em outro receptor, e aqui é o mesmo."
+            ],
+            "gato": [
+                "Fijate: não é isso.",
+                "Dado curioso: o competitivo não faz isso.",
+                "Ronronado de aprovação! As duas coisas juntas.",
+                "Miau, seria outro receptor."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um receptor:",
+        "opcoes": [
+            "É toda molécula com a qual interage especificamente um fármaco e é capaz de gerar uma resposta.",
+            "Sempre está localizado na membrana celular",
+            "Diante da presença de altas doses de agonista completo pode modificar sua composição química",
+            "Pode criar funções novas"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa é a definição padrão de receptor farmacológico: toda molécula com a qual um fármaco interage especificamente e que pode gerar uma resposta — é a resposta correta.",
+                "Os receptores nem sempre estão na membrana celular; muitos são intracelulares (citosólicos ou nucleares), como os receptores esteroides.",
+                "Os receptores não mudam sua composição química fundamental pela ligação de um agonista, embora possam sofrer mudanças conformacionais ou regulação em seu número.",
+                "Os receptores não \"criam\" funções novas; transduzem e amplificam sinais existentes na célula."
+            ],
+            "fantasma": [
+                "Essa aí! Com isso o fármaco se gruda e acontece algo.",
+                "Nem sempre, muitos estão dentro da célula.",
+                "Não muda sua composição, muda de forma.",
+                "Não inventam funções, só passam o sinal."
+            ],
+            "gato": [
+                "Ronronado de aprovação! A definição de sempre.",
+                "Fijate: muitos estão dentro.",
+                "Dado curioso: muda de forma, não de composição.",
+                "Miau, só passam o sinal."
+            ]
+        }
+    },
+    {
+        "pergunta": "A droga A é um agonista com uma CE50 de 10-8 M e atividade intrínseca de 1. Na presença de uma concentração de 10-8 M da droga B, a qual não gera nenhum efeito por si só, a CE50 de A passa a ser de 10-6M e sua atividade intrínseca não se modifica. Portanto, o fármaco B é um:",
+        "opcoes": [
+            "Agonista parcial",
+            "Antagonista competitivo",
+            "Antagonista não competitivo",
+            "Inibidor da degradação de A"
+        ],
+        "explicacoes": {
+            "robo": [
+                "B não tem efeito próprio (segundo o enunciado), então não pode ser classificado como agonista, nem parcial nem total.",
+                "B desloca a CE50 de A para a direita (de 10⁻⁸ para 10⁻⁶) sem modificar sua atividade intrínseca, a assinatura clássica de um antagonismo competitivo — é a resposta correta.",
+                "Um antagonista não competitivo reduziria também a atividade intrínseca de A, o que o enunciado descarta explicitamente (\"sua atividade intrínseca não se modifica\").",
+                "Um inibidor da degradação de A aumentaria (não diminuiria) sua potência aparente, deslocando a curva para a esquerda, não para a direita."
+            ],
+            "fantasma": [
+                "Não faz nada sozinho, não pode ser agonista.",
+                "Essa aí! Corre a curva mas o teto fica igual.",
+                "Isso também baixaria o teto, e o enunciado diz que não baixa.",
+                "Isso deixaria A mais forte, não mais fraco."
+            ],
+            "gato": [
+                "Fijate: não pode ser agonista.",
+                "Ronronado de aprovação! Corre mas o teto fica.",
+                "Dado curioso: não baixa o teto.",
+                "Miau, seria ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B se ligam ao mesmo receptor. A é um agonista com pCE50 de 10 e atividade intrínseca de 0,9 e B um agonista com pCE50 de 8 e atividade intrínseca de 0,6. Qual das seguintes afirmações é correta?",
+        "opcoes": [
+            "A é mais potente e menos eficaz que B",
+            "A é menos potente e menos eficaz que B",
+            "A é menos potente e mais eficaz que B",
+            "A é mais potente e mais eficaz que B."
+        ],
+        "explicacoes": {
+            "robo": [
+                "A tem maior pCE50 (mais potente, não menos), e também maior atividade intrínseca (mais eficaz, não menos); essa opção inverte as duas relações.",
+                "A é mais potente (maior pCE50), não menos; e mais eficaz (maior atividade intrínseca), não menos.",
+                "A é mais potente, não menos, dado seu maior pCE50; a parte de eficácia sim está correta, mas a de potência não.",
+                "A tem maior pCE50 (10 frente a 8 de B, mais potente) e maior atividade intrínseca (0,9 frente a 0,6 de B, mais eficaz): A é mais potente e mais eficaz que B — é a resposta correta."
+            ],
+            "fantasma": [
+                "É ao contrário nas duas coisas.",
+                "É ao contrário nas duas coisas.",
+                "A eficácia está certa, a potência não.",
+                "Essa aí! Ganha nas duas coisas."
+            ],
+            "gato": [
+                "Fijate: ao contrário em tudo.",
+                "Dado curioso: ao contrário em tudo.",
+                "Miau, falta a potência.",
+                "Ronronado de aprovação! Ganha em tudo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um gráfico de Scatchard, um aumento na inclinação indica:",
+        "opcoes": [
+            "Maior afinidade do fármaco por seu receptor",
+            "Diminuição da densidade de receptores",
+            "Aumento da CE50",
+            "Aumento do número de receptores"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma inclinação mais pronunciada (maior magnitude, já que a inclinação é -1/Kd) corresponde a um Kd menor, ou seja, maior afinidade — é a resposta correta.",
+                "Uma mudança na inclinação reflete uma mudança na afinidade (Kd), não diretamente na densidade de receptores (que se reflete na interseção com o eixo X).",
+                "A CE50 é um parâmetro funcional de agonistas, não algo que se lê diretamente da inclinação de um gráfico de Scatchard (que é de binding).",
+                "O número de receptores (Bmax) se reflete na interseção com o eixo X, não na inclinação."
+            ],
+            "fantasma": [
+                "Essa aí! Mais íngreme, mais se gruda.",
+                "Isso se vê no corte em X, não na inclinação.",
+                "Isso não sai de um gráfico de binding.",
+                "Isso se vê no corte em X, não aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mais íngreme, mais afinidade.",
+                "Fijate: é o corte em X.",
+                "Dado curioso: não sai daqui.",
+                "Miau, é o corte em X."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um gráfico de Scatchard, a interseção da reta com o eixo das abscissas indica:",
+        "opcoes": [
+            "O número de receptores totais",
+            "O inverso do número de receptores",
+            "A afinidade da droga pelo receptor",
+            "O inverso da afinidade da droga pelo receptor"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na equação de Scatchard, quando B/F=0 (interseção com o eixo das abscissas), obtém-se B=Bmax; a interseção representa o número de receptores totais — é a resposta correta.",
+                "A interseção com o eixo X é diretamente Bmax, não seu inverso.",
+                "A afinidade da droga se reflete na inclinação da reta (-1/Kd), não na interseção com o eixo X.",
+                "O inverso da afinidade também não corresponde à interseção com o eixo X, que é Bmax."
+            ],
+            "fantasma": [
+                "Essa aí! Ali aparece a quantidade total de receptores.",
+                "Isso não é o que corta em X.",
+                "Essa é a inclinação, não o corte em X.",
+                "Isso também não é o que corta em X."
+            ],
+            "gato": [
+                "Ronronado de aprovação! É a quantidade total.",
+                "Fijate: não é isso.",
+                "Dado curioso: é a inclinação.",
+                "Miau, tampouco é isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Na presença de uma concentração fixa de fisostigmina, a curva de concentração-resposta à acetilcolina em músculo liso brônquico se desloca para:",
+        "opcoes": [
+            "A esquerda, com redução da resposta máxima",
+            "A esquerda, sem mudanças na resposta máxima",
+            "A direita, com redução da resposta máxima",
+            "A direita, sem mudanças na resposta máxima"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Ao inibir a degradação da acetilcolina, a fisostigmina prolonga e potencializa seu efeito, deslocando a curva para a esquerda (não a direita) e, por não bloquear receptores, sem reduzir a resposta máxima.",
+                "A fisostigmina, ao inibir a acetilcolinesterase, permite que a acetilcolina exógena persista mais tempo, deslocando a curva para a esquerda (maior potência aparente) sem reduzir a resposta máxima, já que não bloqueia receptores — é a resposta correta.",
+                "A curva se desloca para a esquerda (maior potência), não para a direita; a fisostigmina potencializa, não antagoniza, o efeito da acetilcolina.",
+                "A curva sim se modifica: se desloca para a esquerda pela potencialização do efeito da acetilcolina."
+            ],
+            "fantasma": [
+                "É ao contrário, se desloca à esquerda, e sem baixar o teto.",
+                "Essa aí! Se desloca à esquerda, e o teto fica igual.",
+                "É ao contrário, e além disso potencializa, não bloqueia.",
+                "Sim muda, se desloca à esquerda."
+            ],
+            "gato": [
+                "Fijate: ao contrário, e sem baixar o teto.",
+                "Ronronado de aprovação! À esquerda, teto igual.",
+                "Dado curioso: ao contrário, potencializa não bloqueia.",
+                "Miau, sim muda."
+            ]
+        }
+    },
+    {
+        "pergunta": "As drogas de ação inespecífica:",
+        "opcoes": [
+            "Apresentam mudanças significativas de atividade com pequenas modificações de sua estrutura química",
+            "São drogas muito potentes, mas pouco eficazes",
+            "Desenvolvem suas ações em faixas de concentrações muito mais altas que as de ação específica",
+            "Geram efeitos que podem ser revertidos com antagonistas específicos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Isso descreve as drogas de ação específica, que sim são muito sensíveis a mudanças estruturais, não as de ação inespecífica.",
+                "Não existe uma generalização válida de \"potentes mas pouco eficazes\" para as drogas de ação inespecífica.",
+                "As drogas de ação inespecífica exigem concentrações muito mais altas que as de ação específica para exercer seu efeito, já que agem por mecanismos físico-químicos gerais, não por ligação de alta afinidade a um receptor definido — é a resposta correta.",
+                "Por não atuar sobre um receptor específico, as drogas de ação inespecífica não podem ser antagonizadas especificamente."
+            ],
+            "fantasma": [
+                "Isso é das específicas, não destas.",
+                "Isso não é uma regra geral.",
+                "Essa aí! Precisam de muito mais quantidade que as específicas.",
+                "A essas não dá pra bloquear específico."
+            ],
+            "gato": [
+                "Fijate: é das outras.",
+                "Dado curioso: não é regra geral.",
+                "Ronronado de aprovação! Precisam de muito mais.",
+                "Miau, não dá pra bloquear assim."
+            ]
+        }
+    },
+    {
+        "pergunta": "Na presença de uma concentração fixa de um antagonista não competitivo, a curva de concentração-resposta do agonista se desloca para:",
+        "opcoes": [
+            "A esquerda, com redução da resposta máxima",
+            "A esquerda, sem mudanças na resposta máxima",
+            "A direita, com redução da resposta máxima",
+            "A direita, sem mudanças na resposta máxima"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista não competitivo desloca a curva para a direita (não a esquerda) e reduz o Emax; essa opção inverte a direção.",
+                "Um antagonista não competitivo sim reduz a resposta máxima; essa opção não reflete esse efeito característico.",
+                "O antagonista não competitivo desloca a curva para a direita e reduz a resposta máxima, ao eliminar funcionalmente parte da capacidade de resposta do sistema — é a resposta correta.",
+                "Um antagonista não competitivo sim reduz a resposta máxima; essa opção não reflete esse efeito característico."
+            ],
+            "fantasma": [
+                "É ao contrário, e sem baixar o teto.",
+                "Isso sim baixa o teto com esse tipo.",
+                "Essa aí! Se desloca à direita e baixa o teto.",
+                "Isso sim baixa o teto com esse tipo."
+            ],
+            "gato": [
+                "Fijate: ao contrário, e não baixa o teto.",
+                "Dado curioso: sim baixa o teto.",
+                "Ronronado de aprovação! Direita e teto mais baixo.",
+                "Miau, sim baixa o teto."
+            ]
+        }
+    },
+    {
+        "pergunta": "Efetuou-se uma curva concentração-efeito à acetilcolina sozinha (agonista) e na presença de fisostigmina em músculo liso intestinal. Na presença de fisostigmina, um inibidor da degradação de acetilcolina, a curva de acetilcolina:",
+        "opcoes": [
+            "Se desloca à direita, sem mudança na inclinação e na resposta máxima",
+            "Não se modifica",
+            "Se desloca à esquerda, com diminuição de CE50",
+            "Se desloca à direita, com aumento da inclinação, e diminuição na resposta máxima"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A curva sim se modifica; além disso, se desloca à esquerda (não à direita), já que a fisostigmina potencializa o efeito da acetilcolina.",
+                "A curva sim se modifica, deslocando-se à esquerda pela potencialização do efeito da acetilcolina exógena.",
+                "Ao inibir a degradação da acetilcolina, a fisostigmina prolonga seu efeito, deslocando a curva para a esquerda (maior potência aparente, menor CE50 necessária) — é a resposta correta.",
+                "A fisostigmina potencializa (não antagoniza) o efeito da acetilcolina, então a curva se desloca à esquerda, não à direita, e não reduz a resposta máxima."
+            ],
+            "fantasma": [
+                "Sim muda, e pro outro lado.",
+                "Sim muda, e pro outro lado.",
+                "Essa aí! Se desloca à esquerda, precisa de menos acetilcolina.",
+                "É ao contrário, potencializa não bloqueia."
+            ],
+            "gato": [
+                "Fijate: sim muda.",
+                "Dado curioso: sim muda.",
+                "Ronronado de aprovação! Precisa de menos.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A eficácia de um fármaco:",
+        "opcoes": [
+            "Agonista é independente de sua CE50",
+            "Agonista é diretamente proporcional a seu pA2",
+            "Antagonista é diretamente proporcional a sua CE50",
+            "Antagonista é inversamente proporcional a sua pCE50"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A eficácia (relacionada à atividade intrínseca/Emax) de um agonista é independente de sua CE50 (relacionada à potência); ambos os parâmetros podem se combinar de qualquer forma — é a resposta correta.",
+                "O pA2 é um parâmetro de antagonistas, não de agonistas; essa opção mistura conceitos incorretamente.",
+                "Um antagonista puro não tem \"eficácia\" própria (atividade intrínseca 0); essa relação não tem sentido conceitual claro.",
+                "Um antagonista tampouco se caracteriza por uma \"eficácia\" em função da pCE50, conceito que não se aplica da mesma forma a antagonistas puros."
+            ],
+            "fantasma": [
+                "Essa aí! Andam cada uma por seu lado.",
+                "Isso é do antagonista, não disso.",
+                "Um antagonista puro não tem eficácia própria.",
+                "Isso também não tem sentido pra um antagonista."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Independentes.",
+                "Fijate: é de outro tipo.",
+                "Dado curioso: não tem eficácia própria.",
+                "Miau, tampouco tem sentido."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B se ligam ao mesmo receptor. A é um agonista com CE50 de 10-8 M e atividade intrínseca de 0,8 e B um agonista com CE50 de 10-9 M e atividade intrínseca de 1. Portanto, o fármaco A é:",
+        "opcoes": [
+            "Mais potente e menos eficaz que B",
+            "Menos potente e menos eficaz que B",
+            "Menos potente e mais eficaz que B",
+            "Mais potente e mais eficaz que B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A tem maior CE50 (10⁻⁸ frente a 10⁻⁹ de B), então A é MENOS potente, não mais; essa opção inverte a comparação de potência.",
+                "A tem maior CE50 (menos potente) e menor atividade intrínseca (menos eficaz) que B: A é menos potente e menos eficaz que B — é a resposta correta.",
+                "A é menos potente (correto), mas a eficácia também é menor (não maior), já que sua atividade intrínseca (0,8) é menor que a de B (1).",
+                "A tem maior CE50 (menos potente, não mais) e menor atividade intrínseca (menos eficaz, não mais) que B; essa opção inverte as duas relações."
+            ],
+            "fantasma": [
+                "É ao contrário, A tem menos potência.",
+                "Essa aí! Perde nas duas coisas.",
+                "A potência está certa, mas a eficácia não.",
+                "É ao contrário nas duas coisas."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Ronronado de aprovação! Perde em tudo.",
+                "Dado curioso: falta a eficácia.",
+                "Miau, ao contrário em tudo."
+            ]
+        }
+    },
+    {
+        "pergunta": "A relação entre a dose do medicamento que causa um efeito nocivo em uma proporção e a dose que causa o efeito terapêutico desejado (Dose efetiva ou DE) na mesma proporção \"X\" se denomina:",
+        "opcoes": [
+            "Eficácia clínica",
+            "Potência",
+            "Curva dose resposta",
+            "Índice terapêutico"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A eficácia clínica se refere ao efeito terapêutico observado na prática, não especificamente a essa relação de proporções entre dose tóxica e efetiva.",
+                "A potência se refere à dose necessária para um efeito dado, não à relação entre dose tóxica e efetiva.",
+                "A curva dose-resposta é a representação gráfica da relação dose-efeito, não especificamente essa relação de proporções.",
+                "O índice terapêutico é, por definição, a relação entre a dose que causa um efeito nocivo e a dose que causa o efeito terapêutico desejado, na mesma proporção populacional — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é outra coisa, o efeito na prática.",
+                "Isso é a dose necessária, não essa relação.",
+                "Isso é o gráfico completo, não essa relação.",
+                "Essa aí! Relação entre o tóxico e o terapêutico."
+            ],
+            "gato": [
+                "Fijate: é outra coisa.",
+                "Dado curioso: é outra coisa.",
+                "Miau, é o gráfico completo.",
+                "Ronronado de aprovação! Exatamente essa relação."
+            ]
+        }
+    },
+    {
+        "pergunta": "De todas as variações presentes no genoma humano, as que aportam a maior proporção de variabilidade entre indivíduos são:",
+        "opcoes": [
+            "As modificações de base única",
+            "As deleções",
+            "As duplicações",
+            "As inserções"
+        ],
+        "explicacoes": {
+            "robo": [
+                "As modificações de base única (SNPs) são, de longe, o tipo de variação genética mais comum no genoma humano, aportando a maior proporção de variabilidade interindividual — é a resposta correta.",
+                "As deleções são muito menos frequentes numericamente que as variações de base única.",
+                "As duplicações também são muito menos frequentes que as variações de base única.",
+                "As inserções também são muito menos frequentes que as variações de base única."
+            ],
+            "fantasma": [
+                "Essa aí! São as mais comuns de todas.",
+                "Essas são muito menos comuns.",
+                "Essas são muito menos comuns.",
+                "Essas são muito menos comuns."
+            ],
+            "gato": [
+                "Ronronado de aprovação! As mais comuns.",
+                "Fijate: são menos comuns.",
+                "Dado curioso: são menos comuns.",
+                "Miau, são menos comuns."
+            ]
+        }
+    },
+    {
+        "pergunta": "O polimorfismo em algumas enzimas permite classificar os indivíduos membros de uma população:",
+        "opcoes": [
+            "Antagonistas, agonistas fracos e agonistas plenos",
+            "Repressores, inibidores e ativadores",
+            "Metabolizadores lentos, intermediários, rápidos e ultrarrápidos",
+            "Metabolizadores subterapêuticos, terapêuticos e supraterapêuticos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa classificação (antagonistas, agonistas fracos, plenos) descreve tipos de fármacos segundo sua ação, não a classificação de indivíduos segundo sua capacidade metabolizadora.",
+                "Essa classificação descreve tipos de regulação enzimática, não a classificação padrão de indivíduos segundo polimorfismos metabolizadores.",
+                "O polimorfismo em enzimas metabolizadoras (como o CYP450) permite classificar os indivíduos como metabolizadores lentos, intermediários, rápidos e ultrarrápidos — é a resposta correta.",
+                "Essa classificação se refere mais a níveis de concentração de fármaco alcançados, não à classificação padrão por capacidade metabolizadora genética."
+            ],
+            "fantasma": [
+                "Isso é de tipos de fármaco, não de pessoas.",
+                "Isso é de regulação de enzimas, não de pessoas.",
+                "Essa aí! Lento, intermediário, rápido e ultrarrápido.",
+                "Isso é de níveis de droga, não de pessoas."
+            ],
+            "gato": [
+                "Fijate: é de outro tema.",
+                "Dado curioso: é de outro tema.",
+                "Ronronado de aprovação! As quatro categorias clássicas.",
+                "Miau, é de outro tema."
+            ]
+        }
+    },
+    {
+        "pergunta": "No genoma humano, os polimorfismos de um único nucleotídeo (SNP) representam as variantes genéticas:",
+        "opcoes": [
+            "Mais comumente encontradas",
+            "Que não afetam a tradução do RNA mensageiro em um peptídeo",
+            "Que se encontram só nas sequências regulatórias dos genes",
+            "Que se encontram só nas sequências codificantes dos genes"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os SNPs são, de fato, as variantes genéticas mais comumente encontradas no genoma humano — é a resposta correta.",
+                "Alguns SNPs sim afetam a tradução (por exemplo, os que mudam um aminoácido em uma região codificante); não é correto generalizar que nenhum a afeta.",
+                "Os SNPs se encontram distribuídos por todo o genoma, não exclusivamente em sequências regulatórias.",
+                "Os SNPs se encontram distribuídos por todo o genoma, não exclusivamente em sequências codificantes."
+            ],
+            "fantasma": [
+                "Essa aí! São as mais comuns.",
+                "Alguns sim afetam, nem todos escapam.",
+                "Estão por todo o genoma, não só ali.",
+                "Estão por todo o genoma, não só ali."
+            ],
+            "gato": [
+                "Ronronado de aprovação! As mais comuns.",
+                "Fijate: alguns sim afetam.",
+                "Dado curioso: estão por toda parte.",
+                "Miau, estão por toda parte."
+            ]
+        }
     }
 ]
