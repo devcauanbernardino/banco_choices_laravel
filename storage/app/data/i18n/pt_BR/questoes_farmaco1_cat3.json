@@ -6378,5 +6378,585 @@
                 "Ronronado de aprovação! Mede o grude."
             ]
         }
+    },
+    {
+        "pergunta": "A morfina é um analgésico de elevada eficácia. Na presença de buprenorfina, é necessária uma maior concentração de morfina para obter o alívio completo da dor. A buprenorfina por si mesma tem um efeito analgésico máximo menor que a morfina. Com esses dados, só podemos afirmar que:",
+        "opcoes": [
+            "A buprenorfina é um antagonista competitivo.",
+            "A morfina é um agonista parcial e a buprenorfina é um antagonista não competitivo.",
+            "A morfina é mais potente que a buprenorfina.",
+            "A morfina é mais eficaz que a buprenorfina."
+        ],
+        "explicacoes": {
+            "robo": [
+                "O dado não estabelece que a buprenorfina careça de efeito próprio (na verdade, sim produz analgesia, embora menor); isso não encaixa com a definição de antagonista competitivo puro, que não teria efeito próprio.",
+                "Essa opção inverte os papéis: a morfina, com maior efeito máximo, se comporta como o agonista de referência (completo/total), enquanto a buprenorfina, com menor efeito máximo, seria a de comportamento parcial, não antagonista não competitivo puro.",
+                "O enunciado não compara diretamente as doses necessárias para alcançar o mesmo efeito entre morfina e buprenorfina de forma isolada; só descreve uma interação e uma diferença de efeito máximo, não de potência.",
+                "O enunciado estabelece diretamente que a buprenorfina, por si mesma, tem um efeito analgésico máximo MENOR que a morfina; isso é precisamente a definição de que a morfina é mais eficaz que a buprenorfina — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa sim faz algum efeito, não é antagonista puro.",
+                "Você inverteu os papéis.",
+                "Esse dado não compara isso diretamente.",
+                "Essa aí! O dado diz direto: menor efeito máximo."
+            ],
+            "gato": [
+                "Fijate: sim faz efeito.",
+                "Dado curioso: ao contrário.",
+                "Miau, não compara isso.",
+                "Ronronado de aprovação! Diz direto."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um gráfico de Scatchard, a interseção da reta com o eixo X representa:",
+        "opcoes": [
+            "Bmax",
+            "-Kd",
+            "-1/Kd",
+            "1/Bmax"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Na equação de Scatchard (B/F = Bmax/Kd − B/Kd), quando B/F=0 (interseção com o eixo X), obtém-se B=Bmax; a interseção com o eixo X representa Bmax — é a resposta correta.",
+                "O termo -Kd não corresponde a nenhuma interseção da reta de Scatchard; o negativo do Kd também não tem um significado direto nesse gráfico.",
+                "O termo -1/Kd corresponde à inclinação da reta de Scatchard, não à interseção com o eixo X.",
+                "O termo 1/Bmax não corresponde à interseção com o eixo X, que é diretamente Bmax (não seu inverso)."
+            ],
+            "fantasma": [
+                "Essa aí! Ali aparece a quantidade total de receptores.",
+                "Isso não é o que corta em X.",
+                "Essa é a inclinação, não o corte em X.",
+                "Essa não é a conta correta."
+            ],
+            "gato": [
+                "Ronronado de aprovação! É a quantidade total.",
+                "Fijate: não é isso.",
+                "Dado curioso: é a inclinação.",
+                "Miau, não é essa conta."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B são antagonistas competitivos do mesmo receptor. O pA2 de A é 8,7 e o pA2 de B é 7,8. Qual das seguintes afirmações é correta?",
+        "opcoes": [
+            "Potência bloqueadora de A < B",
+            "Eficácia de A < B",
+            "Potência bloqueadora de A > B",
+            "Eficácia de A > B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: como o pA2 de A é maior, A é mais potente, não menos.",
+                "O pA2 mede potência bloqueadora de um antagonista, não eficácia; além disso, não há dados de eficácia no enunciado.",
+                "O pA2 maior de A (8,7 frente a 7,8 de B) indica que A é mais potente como bloqueador — é a resposta correta.",
+                "O pA2 não mede eficácia; além disso, essa afirmação inverteria a comparação de potência se tentasse ser aplicada à eficácia."
+            ],
+            "fantasma": [
+                "É ao contrário, A ganha.",
+                "Isso não mede eficácia.",
+                "Essa aí! A tem maior pA2, é mais potente.",
+                "Isso não mede isso, e está ao contrário."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: não mede isso.",
+                "Ronronado de aprovação! A é mais potente.",
+                "Miau, não mede isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "A potência de um fármaco",
+        "opcoes": [
+            "Antagonista é inversamente proporcional a seu pCE50",
+            "Antagonista é diretamente proporcional a seu pCE50",
+            "Agonista é inversamente proporcional a seu pCE50",
+            "Agonista é diretamente proporcional a seu pCE50"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A potência de um antagonista não se mede em função de um pCE50 (conceito próprio de agonistas); essa opção mistura conceitos.",
+                "Assim como a anterior, essa opção aplica incorretamente o conceito de pCE50 a um antagonista.",
+                "A relação entre potência e pCE50 é direta (quanto maior o pCE50, maior a potência), não inversa; essa opção inverte a relação correta.",
+                "Como pCE50=-log(CE50), um pCE50 maior corresponde a uma CE50 menor, ou seja, maior potência; a potência de um agonista é diretamente proporcional ao seu pCE50 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é de agonistas, não de antagonistas.",
+                "Isso é de agonistas, não de antagonistas.",
+                "É ao contrário, é direta.",
+                "Essa aí! Mais pCE50, mais potência."
+            ],
+            "gato": [
+                "Fijate: é de outro tipo.",
+                "Dado curioso: é de outro tipo.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação! Andam juntos."
+            ]
+        }
+    },
+    {
+        "pergunta": "A potência de um fármaco:",
+        "opcoes": [
+            "Agonista é diretamente proporcional a sua CE50",
+            "Agonista é indiretamente proporcional a sua CE50",
+            "Antagonista é diretamente proporcional a sua CE50",
+            "Antagonista é inversamente proporcional a sua CE50"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A relação entre potência e CE50 é inversa (não direta): quanto menor a CE50, maior a potência; essa opção inverte a relação.",
+                "Essa relação (indiretamente/inversamente proporcional) é correta em termos matemáticos, embora o conceito de CE50 se aplique mais propriamente a agonistas do que a antagonistas.",
+                "A relação entre potência e CE50 é inversa, não direta; essa opção inverte a relação correta.",
+                "A relação matemática entre potência e CE50 é inversa (quanto menor a CE50, maior a potência), consistente com essa opção — é a resposta indicada no gabarito de origem."
+            ],
+            "fantasma": [
+                "É ao contrário, é inversa.",
+                "Essa conta está certa, embora o termo seja de outro tipo de droga.",
+                "É ao contrário, é inversa.",
+                "Essa é a marcada no gabarito original."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: a conta está certa.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação (segundo o gabarito original)."
+            ]
+        }
+    },
+    {
+        "pergunta": "A morfina é um analgésico de elevada eficácia. Na presença de naloxona se requer uma maior concentração de morfina para obter o alívio completo da dor. Dado que a naloxona por si mesma não tem efeito, pode-se deduzir que:",
+        "opcoes": [
+            "A naloxona é um antagonista competitivo",
+            "A morfina é um agonista completo e a naloxona é um agonista parcial",
+            "A morfina é menos eficaz que a naloxona",
+            "A morfina é menos potente que a naloxona"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A naloxona, sem efeito próprio mas deslocando a curva da morfina (exigindo mais morfina para o mesmo efeito, sem impedir alcançar o alívio completo), se comporta como um antagonista competitivo puro — é a resposta correta.",
+                "A naloxona não tem efeito analgésico próprio, então não encaixa com a definição de agonista (nem completo nem parcial); é um antagonista puro.",
+                "O dado não compara eficácia entre morfina e naloxona; a naloxona não tem efeito próprio, então não tem uma \"eficácia\" analgésica para comparar.",
+                "O dado não compara potência entre morfina e naloxona no sentido de doses necessárias para um mesmo efeito próprio de cada uma; naloxona não tem efeito analgésico próprio."
+            ],
+            "fantasma": [
+                "Essa aí! Não faz nada sozinha, mas corre a curva.",
+                "Não faz nenhum efeito, não é agonista.",
+                "Isso não dá pra comparar assim.",
+                "Isso também não dá pra comparar assim."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Não faz nada sozinha.",
+                "Fijate: não é agonista.",
+                "Dado curioso: não se compara assim.",
+                "Miau, não se compara assim."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os receptores de reserva:",
+        "opcoes": [
+            "Na ausência de fármaco, ficam sequestrados no citoplasma",
+            "Podem ser detectados ao encontrar que a interação fármaco-receptor dura mais que o efeito intracelular",
+            "Influenciam a eficácia máxima do sistema receptor do fármaco",
+            "Não precisam ser ativados para alcançar a resposta máxima"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os receptores de reserva não ficam sequestrados no citoplasma; permanecem como receptores normais de superfície ou intracelulares conforme seu tipo, simplesmente há mais do que o necessário para alcançar o efeito máximo.",
+                "Essa descrição corresponde mais a um possível desacoplamento cinético entre ligação e efeito, não à forma padrão de detectar receptores de reserva (que se faz comparando a curva de ocupação com a de efeito).",
+                "Os receptores de reserva influenciam como se relaciona a fração de receptores ocupados com o efeito observado, afetando a eficácia aparente do sistema — é a resposta correta.",
+                "Os receptores de reserva sim precisam da ligação do agonista para se ativar; \"de reserva\" só significa que não é necessário ocupar todos simultaneamente para alcançar o efeito máximo."
+            ],
+            "fantasma": [
+                "Não estão escondidos, são receptores normais.",
+                "Isso é outra coisa, não é como se detectam.",
+                "Essa aí! Mudam como se relaciona ocupação com efeito.",
+                "Sim precisam do agonista pra ligar."
+            ],
+            "gato": [
+                "Fijate: não estão escondidos.",
+                "Dado curioso: é outra coisa.",
+                "Ronronado de aprovação! Muda a relação.",
+                "Miau, precisam do agonista."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B se ligam ao mesmo receptor. A é um agonista com uma CE50 de 10^-9 M e atividade intrínseca de 1. Na presença de uma concentração de 10^-8 M da droga B, a CE50 de A passa a ser de 10^-8 M e sua atividade intrínseca de 0,4. Portanto o fármaco B é um:",
+        "opcoes": [
+            "Agonista inverso",
+            "Antagonista competitivo",
+            "Antagonista não-competitivo",
+            "Agonista pleno igual ao fármaco A"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um agonista inverso produziria um efeito oposto ao basal por si só; aqui B não é descrito com efeito próprio, só modificando a resposta de A.",
+                "Um antagonista competitivo puro deslocaria a CE50 de A sem reduzir sua atividade intrínseca (Emax); aqui a atividade intrínseca de A SIM se reduz (de 1 para 0,4).",
+                "B desloca a CE50 de A para a direita (de 10⁻⁹ para 10⁻⁸) E reduz sua atividade intrínseca (de 1 para 0,4); essa combinação de mudanças é característica do antagonismo não competitivo — é a resposta correta.",
+                "Um agonista pleno igual a A produziria o mesmo efeito máximo que A, não reduziria sua atividade intrínseca ao se combinar."
+            ],
+            "fantasma": [
+                "Isso faria algo por si só, e aqui não.",
+                "Isso não baixaria a atividade intrínseca.",
+                "Essa aí! Corre a curva e baixa o teto, as duas coisas.",
+                "Isso faria o mesmo efeito máximo, não o baixaria."
+            ],
+            "gato": [
+                "Fijate: não encaixa.",
+                "Dado curioso: não baixaria o teto.",
+                "Ronronado de aprovação! As duas coisas juntas.",
+                "Miau, não o baixaria."
+            ]
+        }
+    },
+    {
+        "pergunta": "A maioria dos receptores de drogas são:",
+        "opcoes": [
+            "Moléculas pequenas com peso molecular entre 100 e 1000",
+            "Lipídios dispostos em uma configuração de duas camadas",
+            "Proteínas localizadas nas membranas celulares ou no citosol",
+            "Moléculas de DNA"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A maioria dos receptores não são moléculas pequenas desse intervalo de peso molecular; são proteínas, geralmente muito maiores.",
+                "Os lipídios em bicamada formam a membrana celular em si, não os receptores que estão inseridos nela.",
+                "A maioria dos receptores farmacológicos são proteínas, seja de membrana (como os GPCR ou canais iônicos) ou intracelulares/citosólicas (como os receptores nucleares/esteroides) — é a resposta correta.",
+                "O DNA não é em si um receptor farmacológico, embora alguns receptores (nucleares) se liguem a sequências específicas de DNA após serem ativados."
+            ],
+            "fantasma": [
+                "Não são tão pequenas, são proteínas grandes.",
+                "Isso é a membrana em si, não o receptor.",
+                "Essa aí! São proteínas, na membrana ou dentro.",
+                "O DNA não é o receptor em si."
+            ],
+            "gato": [
+                "Fijate: são maiores.",
+                "Dado curioso: é a membrana.",
+                "Ronronado de aprovação! São proteínas.",
+                "Miau, não é o receptor."
+            ]
+        }
+    },
+    {
+        "pergunta": "Na presença de uma concentração fixa de um antagonista irreversível, e sem a presença de receptores de reserva, a curva de concentração-resposta ao agonista se desloca para:",
+        "opcoes": [
+            "A esquerda, com diminuição da inclinação e da resposta máxima",
+            "A esquerda, sem mudanças da inclinação nem na resposta máxima",
+            "A direita, com diminuição da inclinação e da resposta máxima",
+            "A direita, sem mudanças da inclinação nem na resposta máxima"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista irreversível desloca a curva para a direita (não para a esquerda) e reduz o Emax; essa opção inverte a direção do deslocamento.",
+                "Sem receptores de reserva, um antagonista irreversível sim reduz a resposta máxima, ao eliminar funcionalmente uma fração dos receptores disponíveis; essa opção não reflete esse efeito.",
+                "Um antagonista irreversível, ao bloquear permanentemente uma fração dos receptores, se comporta funcionalmente como um antagonista não competitivo: desloca a curva para a direita e, sem receptores de reserva, reduz a resposta máxima — é a resposta correta.",
+                "Sem receptores de reserva, a resposta máxima sim se vê reduzida pelo bloqueio irreversível de uma fração dos receptores."
+            ],
+            "fantasma": [
+                "É ao contrário, se desloca pra direita.",
+                "Sem receptores de sobra, sim baixa o teto.",
+                "Essa aí! Se desloca à direita e baixa o teto.",
+                "Sem receptores de sobra, sim muda o teto."
+            ],
+            "gato": [
+                "Fijate: ao contrário.",
+                "Dado curioso: sim baixa.",
+                "Ronronado de aprovação! As duas coisas.",
+                "Miau, sim muda."
+            ]
+        }
+    },
+    {
+        "pergunta": "As ações de um antagonista competitivo se caracterizam entre outras coisas porque:",
+        "opcoes": [
+            "Modifica o mecanismo de ação de um agonista",
+            "Diminui a potência observada com um agonista",
+            "Desvia a curva de dose-resposta de um agonista para a esquerda",
+            "Diminui a resposta máxima a um agonista"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa descrição é vaga demais; não é a característica distintiva e específica do antagonismo competitivo.",
+                "Ao deslocar a curva do agonista para a direita (precisa de mais agonista para o mesmo efeito), o antagonista competitivo reduz a potência aparente do agonista — é a resposta correta.",
+                "Um antagonista desvia a curva para a DIREITA, não para a esquerda.",
+                "Um antagonista competitivo NÃO reduz a resposta máxima; essa é a característica do antagonismo NÃO competitivo, não do competitivo."
+            ],
+            "fantasma": [
+                "Isso é muito geral pra isso.",
+                "Essa aí! Precisa de mais droga, baixa a potência aparente.",
+                "É ao contrário, vai pra direita.",
+                "Isso acontece com o não competitivo, não com este."
+            ],
+            "gato": [
+                "Fijate: muito geral.",
+                "Ronronado de aprovação! Baixa a potência.",
+                "Dado curioso: ao contrário.",
+                "Miau, é do outro tipo."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual das seguintes afirmações é CORRETA?",
+        "opcoes": [
+            "Se 10 mg do fármaco A produzem a mesma resposta que 100 mg do fármaco B, o fármaco A é mais eficaz que o fármaco B",
+            "Quanto maior a eficácia, maior a potência de um fármaco",
+            "Ao escolher um fármaco, a potência costuma ser mais importante que a eficácia",
+            "Um antagonista competitivo aumenta o valor de CE50 (concentração efetiva 50)"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa situação descreve potência (A precisa de menos dose para o mesmo efeito), não eficácia (que se refere ao efeito máximo alcançável).",
+                "Eficácia e potência são conceitos independentes; um fármaco pode ser muito eficaz sem ser muito potente, ou vice-versa.",
+                "Na prática clínica, a eficácia costuma ser considerada mais importante que a potência, não o contrário.",
+                "Um antagonista competitivo desloca a curva do agonista para a direita, exigindo uma concentração maior de agonista para alcançar 50% do efeito máximo, ou seja, aumenta a CE50 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é de potência, não de eficácia.",
+                "Essas duas coisas não andam grudadas.",
+                "É ao contrário, a eficácia costuma pesar mais.",
+                "Essa aí! O antagonista faz precisar de mais agonista pro mesmo efeito."
+            ],
+            "gato": [
+                "Fijate: é de potência.",
+                "Dado curioso: não andam grudadas.",
+                "Miau, ao contrário.",
+                "Ronronado de aprovação! Sobe a CE50."
+            ]
+        }
+    },
+    {
+        "pergunta": "Embora não atue em nenhum receptor de histamina e não tenha nenhum efeito sobre o metabolismo de histamina, a epinefrina reverte muitos efeitos da histamina. A epinefrina é uma:",
+        "opcoes": [
+            "Antagonista química da histamina",
+            "Inibidor competitivo da histamina",
+            "Inibidor metabólico da histamina",
+            "Antagonista fisiológico da histamina"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista químico neutraliza a histamina diretamente (ligando-se a ela), o que contradiz o dado de que a epinefrina não interage com a histamina nem seu metabolismo.",
+                "Um inibidor competitivo agiria no mesmo receptor que a histamina, o que o enunciado descarta explicitamente (\"não atua em nenhum receptor de histamina\").",
+                "Um inibidor metabólico afetaria o metabolismo da histamina, o que o enunciado também descarta explicitamente.",
+                "A epinefrina age em receptores diferentes (adrenérgicos), produzindo efeitos fisiologicamente opostos aos da histamina sem interagir com seu receptor nem seu metabolismo: essa é a definição de antagonista fisiológico — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso seria se ligar à histamina, e não acontece.",
+                "Isso seria no mesmo receptor, e não é.",
+                "Isso afetaria o metabolismo, e não é.",
+                "Essa aí! Age em outro receptor, com efeito contrário."
+            ],
+            "gato": [
+                "Fijate: não se liga a ela.",
+                "Dado curioso: não é o mesmo receptor.",
+                "Miau, não afeta o metabolismo.",
+                "Ronronado de aprovação! Outro receptor, efeito contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B se ligam ao mesmo receptor. A é um agonista com uma pCE50 de 9 e atividade intrínseca de 1. Na presença de uma concentração 10^-8M da droga B, a pCE50 de A é de 8 e sua atividade intrínseca de 1. Pode-se afirmar que:",
+        "opcoes": [
+            "B é um agonista inverso",
+            "B é um antagonista competitivo",
+            "B é um antagonista não-competitivo",
+            "B é um agonista total"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um agonista inverso produziria um efeito oposto ao basal por si só; aqui B só é descrito modificando a resposta de A.",
+                "B desloca a pCE50 de A para baixo (de 9 para 8, equivalente a um aumento da CE50, deslocamento para a direita) sem modificar sua atividade intrínseca (que permanece em 1); essa combinação é característica do antagonismo competitivo — é a resposta correta.",
+                "Um antagonista não competitivo reduziria também a atividade intrínseca de A, o que não ocorre aqui (permanece em 1).",
+                "Um agonista total por si mesmo não deslocaria a pCE50 de outro agonista dessa maneira específica sem mais contexto."
+            ],
+            "fantasma": [
+                "Isso faria algo por si só, e aqui não.",
+                "Essa aí! Corre a curva mas o teto fica igual.",
+                "Isso também baixaria o teto, e não baixou.",
+                "Isso não encaixa assim."
+            ],
+            "gato": [
+                "Fijate: não encaixa.",
+                "Ronronado de aprovação! Corre mas o teto fica.",
+                "Dado curioso: baixaria o teto.",
+                "Miau, não encaixa."
+            ]
+        }
+    },
+    {
+        "pergunta": "Em um sistema com receptores de reserva:",
+        "opcoes": [
+            "O número de receptores de reserva determina o efeito máximo",
+            "Os receptores de reserva estão sequestrados no citosol",
+            "Uma única interação fármaco-receptor dá lugar à ativação de múltiplos elementos de resposta celular.",
+            "Os receptores de reserva são ativos mesmo na ausência do agonista"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O número de receptores de reserva não é o que determina diretamente o efeito máximo; é mais a saturação da via de transdução de sinal.",
+                "Os receptores de reserva não estão sequestrados no citosol; são receptores normais, simplesmente em maior número do que o necessário para alcançar o efeito máximo.",
+                "A amplificação de sinal (uma única interação fármaco-receptor ativando múltiplos elementos de resposta celular) é o mecanismo que explica por que existem receptores de reserva: não é necessário ocupar todos para alcançar o efeito máximo — é a resposta correta.",
+                "Os receptores de reserva precisam da ligação do agonista para se ativar; não estão ativos na sua ausência."
+            ],
+            "fantasma": [
+                "Isso decide outra coisa.",
+                "Não estão escondidos ali.",
+                "Essa aí! Um encaixe ativa um monte de coisas dentro.",
+                "Precisam do agonista pra ligar."
+            ],
+            "gato": [
+                "Fijate: é outra coisa.",
+                "Dado curioso: não estão escondidos.",
+                "Ronronado de aprovação! Um encaixe, muitas coisas.",
+                "Miau, precisam do agonista."
+            ]
+        }
+    },
+    {
+        "pergunta": "A e B se ligam ao mesmo receptor. A é um agonista com uma CE50 de 10^-8 M e atividade intrínseca de 1 e B um agonista com CE50 de 10^-9 M e atividade intrínseca de 0,8. Portanto o fármaco A é:",
+        "opcoes": [
+            "Mais potente e mais eficaz que B",
+            "Menos potente e menos eficaz que B",
+            "Menos potente e mais eficaz que B",
+            "Mais potente e menos eficaz que B"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A tem maior CE50 (10⁻⁸ frente a 10⁻⁹ de B), então A é menos potente, não mais; além disso, A é mais eficaz (não menos), já que sua atividade intrínseca é maior.",
+                "A é menos potente (correto), mas é MAIS eficaz (não menos), já que sua atividade intrínseca (1) é maior que a de B (0,8).",
+                "A tem maior CE50 que B (menos potente) mas maior atividade intrínseca que B (mais eficaz): A é menos potente e mais eficaz que B — é a resposta correta.",
+                "A é menos potente, não mais, já que precisa de maior concentração (CE50 maior) para alcançar 50% do efeito."
+            ],
+            "fantasma": [
+                "É ao contrário nas duas coisas.",
+                "A parte da potência está certa, mas a de eficácia não.",
+                "Essa aí! Precisa de mais dose mas faz mais efeito.",
+                "É ao contrário, precisa de mais dose."
+            ],
+            "gato": [
+                "Fijate: ao contrário em tudo.",
+                "Dado curioso: falta a parte da eficácia.",
+                "Ronronado de aprovação! Menos dose, mais efeito... ao contrário.",
+                "Miau, precisa de mais."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes fatores determinará o número de complexos fármaco-receptor?",
+        "opcoes": [
+            "A constante de dissociação (Kd)",
+            "A constante de eliminação (Ke)",
+            "O transcurso de 4 meias-vidas",
+            "O índice terapêutico do fármaco"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A constante de dissociação (Kd) mede a afinidade do fármaco pelo receptor, a qual, junto com a concentração disponível, determina quantos complexos fármaco-receptor se formam — é a resposta correta.",
+                "A constante de eliminação (Ke) é um parâmetro farmacocinético, não relacionado com a formação de complexos fármaco-receptor.",
+                "O transcurso de 4 meias-vidas é relevante para alcançar o estado estacionário plasmático, não para determinar diretamente o número de complexos fármaco-receptor.",
+                "O índice terapêutico é uma medida de segurança relativa, não um determinante da formação de complexos fármaco-receptor."
+            ],
+            "fantasma": [
+                "Essa aí! Isso mede quanto se gruda no receptor.",
+                "Essa é de outra parte, a farmacocinética.",
+                "Isso é de chegar no platô, não disso.",
+                "Isso é de segurança, não disso."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mede o grude.",
+                "Fijate: é de outra parte.",
+                "Dado curioso: é do platô.",
+                "Miau, é de segurança."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se realiza uma curva controle para um agonista A e depois outra curva para o agonista A na presença de uma concentração fixa de uma droga B. Na presença de B, a curva do agonista A tem maior CE50, mas igual inclinação e resposta máxima. A droga B é um:",
+        "opcoes": [
+            "Antagonista não competitivo",
+            "Agonista parcial",
+            "Agonista inverso",
+            "Antagonista competitivo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um antagonista não competitivo também reduziria a resposta máxima, o que não ocorreu aqui (a resposta máxima se manteve igual).",
+                "Um agonista parcial produziria seu próprio efeito (submáximo) ao atuar sozinho, não simplesmente deslocaria a curva de outro agonista sem mudar o máximo.",
+                "Um agonista inverso produziria um efeito oposto ao basal por si só, o que não é descrito aqui.",
+                "B desloca a CE50 de A para a direita, mantendo igual a inclinação e a resposta máxima; essa é a assinatura característica de um antagonista competitivo — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso também baixaria o teto, e não baixou.",
+                "Isso faria seu próprio efeito, e não é o que acontece.",
+                "Isso faria algo por si só, e aqui não.",
+                "Essa aí! Corre a curva mas o teto fica igual."
+            ],
+            "gato": [
+                "Fijate: baixaria o teto.",
+                "Dado curioso: não é o que acontece.",
+                "Miau, não encaixa.",
+                "Ronronado de aprovação! Corre mas o teto fica."
+            ]
+        }
+    },
+    {
+        "pergunta": "Se um antagonista não competitivo está presente em uma curva concentração-resposta, o que se observa?",
+        "opcoes": [
+            "Um deslocamento paralelo para a direita",
+            "Um deslocamento para a direita com diminuição da resposta máxima",
+            "Um deslocamento para a esquerda com diminuição da resposta máxima",
+            "Um aumento na inclinação sem mudanças na eficácia"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um deslocamento paralelo sem mudança na resposta máxima descreve o antagonismo competitivo, não o não competitivo.",
+                "Um antagonista não competitivo desloca a curva para a direita e, além disso, reduz a resposta máxima, ao eliminar funcionalmente uma fração da capacidade de resposta do sistema — é a resposta correta.",
+                "Um antagonista não competitivo não desloca a curva para a esquerda; o deslocamento (quando ocorre) é para a direita.",
+                "Um antagonista não competitivo reduz a eficácia (resposta máxima), não simplesmente aumenta a inclinação sem mudanças."
+            ],
+            "fantasma": [
+                "Isso é do competitivo, não deste.",
+                "Essa aí! Se desloca à direita e baixa o teto.",
+                "Não se desloca pra esse lado.",
+                "Isso sim muda a eficácia, não só a inclinação."
+            ],
+            "gato": [
+                "Fijate: é do outro tipo.",
+                "Ronronado de aprovação! Direita e teto mais baixo.",
+                "Dado curioso: não é esse lado.",
+                "Miau, sim muda a eficácia."
+            ]
+        }
+    },
+    {
+        "pergunta": "Qual dos seguintes fatores determinará o número de complexos fármaco-receptor?",
+        "opcoes": [
+            "O índice de segurança do fármaco",
+            "O quociente pico/vale",
+            "A constante de absorção (Ka)",
+            "A afinidade do fármaco pelo receptor"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O índice de segurança é uma medida da relação entre dose tóxica e eficaz, não um determinante da formação de complexos fármaco-receptor.",
+                "O quociente pico/vale é um parâmetro farmacocinético de dosagem repetida, não relacionado com a formação de complexos fármaco-receptor.",
+                "A constante de absorção (Ka) é um parâmetro farmacocinético relacionado à velocidade de absorção, não à formação de complexos fármaco-receptor.",
+                "A afinidade do fármaco pelo receptor determina, junto com a concentração disponível, quantos complexos fármaco-receptor se formam — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é de segurança, não disso.",
+                "Isso é da farmacocinética, não disso.",
+                "Isso é da farmacocinética, não disso.",
+                "Essa aí! Quanto se gruda, decide quantos complexos tem."
+            ],
+            "gato": [
+                "Fijate: é de segurança.",
+                "Dado curioso: é de outra parte.",
+                "Miau, é de outra parte.",
+                "Ronronado de aprovação! A afinidade decide."
+            ]
+        }
     }
 ]
