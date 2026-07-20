@@ -12907,7 +12907,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Los SNPs no están restringidos a secuencias regulatorias; se distribuyen por todo el genoma.",
+                    "Los SNPs son, en realidad, las variantes genéticas más comúnmente encontradas, no las más raras.",
+                    "Los polimorfismos de un solo nucleótido se encuentran distribuidos ampliamente en cualquier parte de los genes y del genoma en general, tanto en regiones codificantes como no codificantes — es la respuesta correcta.",
+                    "Los SNPs no están restringidos a secuencias codificantes; se distribuyen por todo el genoma."
+                ],
+                "fantasma": [
+                    "No están solo ahí, están por todos lados.",
+                    "Son de las más comunes, no de las raras.",
+                    "¡Esta! Aparecen en cualquier parte del genoma.",
+                    "No están solo ahí, están por todos lados."
+                ],
+                "gato": [
+                    "Fijate: están por todos lados.",
+                    "Dato curioso: son de las comunes.",
+                    "¡Ronroneo de aprobación! En todas partes.",
+                    "Miau, están por todos lados."
+                ]
+            }
         },
         {
             "numero": 282,
@@ -12933,7 +12953,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Si B fuera ultrarrápido, eliminaría el fármaco más rápido, resultando en una concentración MENOR, no mayor.",
+                    "Es el paciente B, no A, quien muestra el patrón compatible con metabolismo lento en este escenario.",
+                    "Una concentración plasmática 4 veces mayor con la misma dosis sugiere que el paciente B elimina el fármaco mucho más lento de lo habitual, compatible con un fenotipo de metabolizador lento — es la respuesta correcta.",
+                    "No hay evidencia en el enunciado de que el paciente A tenga un metabolismo acelerado; el dato relevante es la concentración elevada en B."
+                ],
+                "fantasma": [
+                    "Eso daría menos concentración, no más.",
+                    "Es B el que muestra el patrón raro, no A.",
+                    "¡Esta! Cuatro veces más, se está acumulando.",
+                    "No hay dato de eso sobre A."
+                ],
+                "gato": [
+                    "Fijate: sería lo contrario.",
+                    "Dato curioso: es B el raro.",
+                    "¡Ronroneo de aprobación! Se está acumulando.",
+                    "Miau, no hay ese dato."
+                ]
+            }
         },
         {
             "numero": 283,
@@ -12959,7 +12999,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Una mutación sin sentido que inactiva la enzima principal responsable del metabolismo típicamente reduce la eliminación de la droga, por lo que este efecto (aumento en la dosis mínima eficaz) no es la consecuencia más directa esperada.",
+                    "Este es el efecto farmacológico más directamente esperable: al perder función una enzima clave, la velocidad con la que se elimina la droga se ve alterada.",
+                    "Con la enzima inactivada, el clearance hepático de la droga tendería a DISMINUIR (no aumentar), ya que la vía metabólica principal está bloqueada.",
+                    "Esta es la opción señalada en el gabarito de origen para este escenario específico."
+                ],
+                "fantasma": [
+                    "Eso no es lo más directo acá.",
+                    "¡Esta! Cambia cómo se va eliminando.",
+                    "Sería al revés, se eliminaría menos.",
+                    "Esta es la marcada en el gabarito original."
+                ],
+                "gato": [
+                    "Fijate: no es lo más directo.",
+                    "¡Ronroneo de aprobación! Cambia la eliminación.",
+                    "Dato curioso: sería al revés.",
+                    "Ronroneo de aprobación (según el gabarito original)."
+                ]
+            }
         },
         {
             "numero": 284,
@@ -12985,7 +13045,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Un metabolizador rápido tendría al menos una copia funcional del gen, no ambas copias nulas.",
+                    "Un metabolizador ultrarrápido típicamente presenta duplicaciones génicas (más actividad, no menos), lo opuesto a un alelo nulo en homocigosis.",
+                    "Un metabolizador estándar tendría al menos una copia funcional normal del gen.",
+                    "Al presentar en homocigosis (ambas copias) el alelo nulo, el individuo carece por completo de actividad enzimática funcional, correspondiendo al fenotipo de metabolizador lento — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese necesita al menos una copia que funcione.",
+                    "Ese es al revés, tiene copias de más.",
+                    "Ese también necesita una copia que ande bien.",
+                    "¡Esta! Sin ninguna copia que funcione, va lento."
+                ],
+                "gato": [
+                    "Fijate: necesita una copia buena.",
+                    "Dato curioso: es al revés.",
+                    "Miau, necesita una copia buena.",
+                    "¡Ronroneo de aprobación! Sin copias, va lento."
+                ]
+            }
         },
         {
             "numero": 285,
@@ -13011,7 +13091,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Los metabolizadores lentos de CYP2C9 efectivamente necesitan dosis de mantenimiento menores de warfarina, aunque esta consecuencia clínica no es la razón por la que se clasifican como \"lentos\" en primer lugar.",
+                    "La razón por la que se les identifica como metabolizadores lentos es que su respuesta a la dosis estándar inicial no es la esperada (suelen sobre-responder, con mayor efecto anticoagulante del previsto) — es la respuesta correcta.",
+                    "Es al revés: los metabolizadores lentos tienen MAYOR (no menor) riesgo de complicaciones hemorrágicas, al acumular más warfarina de la esperada.",
+                    "Es al revés: los metabolizadores lentos exhiben MAYOR (no menor) tiempo de protrombina, reflejando un efecto anticoagulante más intenso de lo esperado."
+                ],
+                "fantasma": [
+                    "Eso es cierto, pero no es la razón de la etiqueta.",
+                    "¡Esta! La dosis normal no les hace lo esperado.",
+                    "Es al revés, tienen más riesgo.",
+                    "Es al revés, tienen más tiempo."
+                ],
+                "gato": [
+                    "Fijate: es verdad, pero no es la razón.",
+                    "¡Ronroneo de aprobación! Responden distinto a lo esperado.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 286,
@@ -13037,7 +13137,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Si la enzima activadora está inactiva, no se genera el metabolito activo, por lo que sí habría un cambio (reducción) importante en su concentración, no ningún cambio.",
+                    "Como el clopidogrel es una prodroga que necesita este citocromo para activarse, una mutación que lo inactiva impide la formación adecuada del metabolito activo, reduciendo el efecto antiagregante plaquetario — es la respuesta correcta.",
+                    "Sin activación metabólica adecuada, no se esperaría un aumento en la extracción hepática del clopidogrel en su forma inactiva original de esta manera específica.",
+                    "La inactivación de la enzima activadora no acorta necesariamente la vida media del clopidogrel en su forma de prodroga; el problema es la falta de conversión a metabolito activo, no la eliminación de la prodroga en sí."
+                ],
+                "fantasma": [
+                    "Eso sí cambiaría, y mucho.",
+                    "¡Esta! Sin activarse, hace menos efecto.",
+                    "Eso no es lo que pasa acá.",
+                    "Eso tampoco es lo que pasa acá."
+                ],
+                "gato": [
+                    "Fijate: sí cambiaría.",
+                    "¡Ronroneo de aprobación! Menos efecto sin activarse.",
+                    "Dato curioso: no es eso.",
+                    "Miau, tampoco es eso."
+                ]
+            }
         },
         {
             "numero": 287,
@@ -13063,7 +13183,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Estos son nombres de citocromos relacionados con la síntesis de otras sustancias, no las enzimas metabolizadoras de fármacos con polimorfismo clásicamente estudiado.",
+                    "CYP2D6, CYP2C9, CYP2C19 y NAT2 son las enzimas metabolizadoras clásicas con polimorfismo farmacogenético frecuente y clínicamente relevante — es la respuesta correcta.",
+                    "Estas son enzimas hepáticas usadas como marcadores de daño hepático (transaminasas, fosfatasa alcalina), no enzimas metabolizadoras de fármacos con este tipo de polimorfismo.",
+                    "Estos son transportadores de membrana, no enzimas metabolizadoras propiamente dichas."
+                ],
+                "fantasma": [
+                    "Esos son de otra cosa, no de esto.",
+                    "¡Esta! Los clásicos con polimorfismo famoso.",
+                    "Esos son de daño hepático, no de esto.",
+                    "Esos son transportadores, no enzimas."
+                ],
+                "gato": [
+                    "Fijate: son de otra cosa.",
+                    "¡Ronroneo de aprobación! Los cuatro clásicos.",
+                    "Dato curioso: son de daño hepático.",
+                    "Miau, son transportadores."
+                ]
+            }
         },
         {
             "numero": 288,
@@ -13089,7 +13229,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Un metabolizador lento tendría MENOS (no más) actividad enzimática; las duplicaciones génicas dan lo contrario.",
+                    "Un metabolizador estándar tiene actividad enzimática normal, no duplicaciones génicas adicionales.",
+                    "Este término no corresponde a la clasificación estándar de metabolizadores en farmacogenética.",
+                    "Las duplicaciones génicas de CYP2D6 generan más actividad enzimática de lo normal, metabolizando el fármaco tan rápido que las dosis usuales resultan insuficientes; este es el fenotipo de metabolizador ultrarrápido — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese tiene menos actividad, no más.",
+                    "Ese tiene actividad normal, sin copias de más.",
+                    "Ese nombre no existe en la clasificación.",
+                    "¡Esta! Con copias de más, metaboliza rapidísimo."
+                ],
+                "gato": [
+                    "Fijate: tiene menos actividad.",
+                    "Dato curioso: es normal.",
+                    "Miau, ese nombre no existe.",
+                    "¡Ronroneo de aprobación! Metaboliza rapidísimo."
+                ]
+            }
         },
         {
             "numero": 289,
@@ -13115,7 +13275,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Este no es el término estándar usado para describir este enfoque de individualización terapéutica.",
+                    "Este término se refiere más al estudio de proteínas a gran escala, no específicamente a la individualización terapéutica basada en farmacogenética.",
+                    "La medicina traslacional se refiere a llevar hallazgos de investigación básica a la práctica clínica en general, un concepto más amplio que el descrito aquí.",
+                    "El uso de variantes farmacogenéticas para individualizar la terapéutica según cada paciente se conoce como medicina personalizada — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese término no es el usado para esto.",
+                    "Eso es de proteínas en general, no de esto.",
+                    "Eso es más amplio que esto.",
+                    "¡Esta! Ajustar el tratamiento a cada persona."
+                ],
+                "gato": [
+                    "Fijate: no es el término.",
+                    "Dato curioso: es de proteínas.",
+                    "Miau, es más amplio.",
+                    "¡Ronroneo de aprobación! A la medida de cada uno."
+                ]
+            }
         },
         {
             "numero": 290,
@@ -13141,7 +13321,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Con la enzima principal inactivada, la velocidad de eliminación de la droga tendería a DISMINUIR (no aumentar), ya que la vía metabólica principal está bloqueada.",
+                    "Con la enzima principal inactivada, la dosis máxima tolerada tendería a ser MENOR (no mayor), dado el mayor riesgo de acumulación y toxicidad.",
+                    "Con la enzima principal inactivada, la vida media de la droga tendería a AUMENTAR (no disminuir por sí sola sin más contexto), ya que se elimina más lento.",
+                    "Esta es la opción señalada en el gabarito de origen para este escenario específico."
+                ],
+                "fantasma": [
+                    "Sería al revés, se eliminaría menos.",
+                    "Sería al revés, toleraría menos dosis.",
+                    "Sería al revés, duraría más en el cuerpo.",
+                    "Esta es la marcada en el gabarito original."
+                ],
+                "gato": [
+                    "Fijate: sería al revés.",
+                    "Dato curioso: sería al revés.",
+                    "Miau, sería al revés.",
+                    "Ronroneo de aprobación (según el gabarito original)."
+                ]
+            }
         },
         {
             "numero": 291,
@@ -13167,7 +13367,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Por definición, un SNP (polimorfismo de un solo nucleótido) es precisamente una variante que afecta a un único nucleótido en la secuencia de ADN — es la respuesta correcta.",
+                    "Los SNP pueden ocurrir en cualquier región del genoma, no exclusivamente en regiones codificantes.",
+                    "Modificar el marco de lectura es característico de inserciones o deleciones que no son múltiplos de tres, no de un SNP típico (sustitución de una sola base).",
+                    "La frecuencia poblacional define si una variante se considera \"polimorfismo\" (más del 1%) o mutación rara, pero no es lo que define técnicamente a un SNP como tal (que se define por afectar un solo nucleótido)."
+                ],
+                "fantasma": [
+                    "¡Esta! Un solo nucleótido cambiado, nada más.",
+                    "Puede estar en cualquier parte, no solo ahí.",
+                    "Eso es de otro tipo de cambio, no de un SNP típico.",
+                    "Eso es de otra definición, la de \"polimorfismo\"."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Un solo nucleótido.",
+                    "Fijate: en cualquier parte.",
+                    "Dato curioso: es otro tipo de cambio.",
+                    "Miau, es otra definición."
+                ]
+            }
         },
         {
             "numero": 292,
@@ -13193,7 +13413,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Los SNPs son, en efecto, las variantes genéticas más comúnmente encontradas en el genoma humano — es la respuesta correcta.",
+                    "Es al revés: los SNPs son las variantes más comunes, no las menos comunes.",
+                    "Los SNPs se encuentran distribuidos por todo el genoma, no exclusivamente en secuencias regulatorias.",
+                    "Los SNPs se encuentran distribuidos por todo el genoma, no exclusivamente en secuencias codificantes."
+                ],
+                "fantasma": [
+                    "¡Esta! Son las más comunes.",
+                    "Es al revés, son las más comunes.",
+                    "Están por todos lados, no solo ahí.",
+                    "Están por todos lados, no solo ahí."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Las más comunes.",
+                    "Fijate: al revés.",
+                    "Dato curioso: están por todos lados.",
+                    "Miau, están por todos lados."
+                ]
+            }
         },
         {
             "numero": 293,
@@ -13219,7 +13459,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Una mutación con cambio de sentido SÍ modifica el aminoácido codificado (por eso \"cambia el sentido\"), lo opuesto a lo descrito aquí.",
+                    "Una mutación sin sentido genera un codón de parada prematuro, alterando drásticamente la proteína, no dejándola sin cambios.",
+                    "Una mutación silenciosa cambia el codón pero, debido a la degeneración del código genético, sigue codificando el mismo aminoácido, sin alterar la secuencia proteica — es la respuesta correcta.",
+                    "Una mutación de corrimiento del marco de lectura altera drásticamente toda la secuencia de aminoácidos posterior al punto de la mutación, no la deja sin cambios."
+                ],
+                "fantasma": [
+                    "Esa sí cambia el aminoácido.",
+                    "Esa corta la proteína a la mitad.",
+                    "¡Esta! Cambia la letra pero el aminoácido queda igual.",
+                    "Esa desordena todo lo que sigue."
+                ],
+                "gato": [
+                    "Fijate: sí cambia.",
+                    "Dato curioso: corta la proteína.",
+                    "¡Ronroneo de aprobación! Mismo aminoácido.",
+                    "Miau, desordena todo."
+                ]
+            }
         },
         {
             "numero": 294,
@@ -13245,7 +13505,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Esta es la definición estándar de farmacogenética: el estudio de cómo las diferencias genéticas entre individuos generan respuestas clínicas distintas a un mismo fármaco — es la respuesta correcta.",
+                    "Estudiar el efecto de fármacos sobre la expresión génica es más propio de la farmacogenómica o de estudios de expresión génica, no la definición central de farmacogenética.",
+                    "La farmacogenética no se centra en el riesgo de enfermedades genéticas inducidas por fármacos, sino en la variabilidad de respuesta a los mismos.",
+                    "La farmacogenética no se centra en desarrollar nuevos fármacos para prevenir enfermedades genéticas, sino en entender la respuesta individual a fármacos existentes."
+                ],
+                "fantasma": [
+                    "¡Esta! Por qué cada persona responde distinto.",
+                    "Eso es de otra rama, más genómica.",
+                    "Eso no es lo que estudia esta rama.",
+                    "Eso tampoco es lo que estudia esta rama."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Respuesta según los genes.",
+                    "Fijate: es otra rama.",
+                    "Dato curioso: no es eso.",
+                    "Miau, tampoco es eso."
+                ]
+            }
         },
         {
             "numero": 295,
@@ -13271,7 +13551,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "La farmacogenética estudia precisamente las variaciones genéticas que determinan la acción de las drogas en cada individuo — es la respuesta correcta.",
+                    "Estudiar el efecto de fármacos sobre la expresión génica en un tejido es un enfoque distinto, más relacionado con estudios de expresión génica que con la definición central de farmacogenética.",
+                    "Esta definición corresponde más propiamente a la farmacogenética que a la farmacogenómica, que tiene un enfoque más amplio a nivel de todo el genoma.",
+                    "Esta descripción es parcial; la farmacogenética abarca más que solo las concentraciones del fármaco, incluyendo también su acción/efecto."
+                ],
+                "fantasma": [
+                    "¡Esta! Los genes deciden cómo actúa la droga.",
+                    "Eso es otro enfoque distinto.",
+                    "Esa definición es de la otra rama.",
+                    "Le falta una parte a esa definición."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Los genes deciden.",
+                    "Fijate: es otro enfoque.",
+                    "Dato curioso: es de la otra rama.",
+                    "Miau, falta una parte."
+                ]
+            }
         },
         {
             "numero": 296,
@@ -13297,7 +13597,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Como la mutación es silenciosa (no cambia el aminoácido ni la función de la enzima), no hay razón para esperar un incremento en la dosis mínima necesaria.",
+                    "Como la enzima permanece funcionalmente idéntica (mutación silenciosa), no se espera un cambio en la velocidad de eliminación de las drogas que metaboliza.",
+                    "Al no alterar la proteína, una mutación silenciosa no debería producir ningún cambio funcional detectable en el metabolismo.",
+                    "Al no cambiar el aminoácido codificado, la enzima conserva su función normal, por lo que no se espera ningún cambio en la concentración de los metabolitos generados — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No hay motivo para eso, la enzima sigue igual.",
+                    "No cambia nada, la enzima es la misma.",
+                    "La enzima sigue funcionando igual que siempre.",
+                    "¡Esta! Mismo aminoácido, mismo resultado."
+                ],
+                "gato": [
+                    "Fijate: la enzima sigue igual.",
+                    "Dato curioso: no cambia nada.",
+                    "Miau, sigue funcionando igual.",
+                    "¡Ronroneo de aprobación! Todo sigue igual."
+                ]
+            }
         },
         {
             "numero": 297,
@@ -13323,7 +13643,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Este porcentaje subestima ampliamente la proporción real de SNPs dentro de la variación genómica total.",
+                    "Este porcentaje también subestima ampliamente la proporción real de SNPs.",
+                    "Este porcentaje sigue siendo una subestimación considerable de la proporción real.",
+                    "Los SNPs constituyen, de hecho, más del 90% de toda la variación genética conocida en el genoma humano — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso es muchísimo menos de lo que son en realidad.",
+                    "Eso también es mucho menos.",
+                    "Eso sigue siendo menos de lo real.",
+                    "¡Esta! Son la gran mayoría de toda la variación."
+                ],
+                "gato": [
+                    "Fijate: es mucho menos.",
+                    "Dato curioso: también es menos.",
+                    "Miau, sigue siendo menos.",
+                    "¡Ronroneo de aprobación! La gran mayoría."
+                ]
+            }
         },
         {
             "numero": 298,
@@ -13349,7 +13689,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Por convención estándar en genética, una variante se considera \"polimórfica\" cuando está presente en más del 1% de la población — es la respuesta correcta.",
+                    "La condición de ser deletérea no es el criterio que define a un polimorfismo; de hecho, muchos polimorfismos son neutros o incluso beneficiosos.",
+                    "El origen específico (deleción, sustitución, etc.) de la variante no es el criterio que define su condición de polimórfica; lo que importa es su frecuencia poblacional.",
+                    "Codificar para un citocromo no es el criterio que define a una variante como polimórfica; el criterio es puramente de frecuencia poblacional."
+                ],
+                "fantasma": [
+                    "¡Esta! Más del 1% de la gente la tiene.",
+                    "Eso no es lo que la hace polimórfica.",
+                    "Eso tampoco es lo que la hace polimórfica.",
+                    "Eso tampoco es lo que la hace polimórfica."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Más del 1%.",
+                    "Fijate: no es ese el criterio.",
+                    "Dato curioso: no es ese el criterio.",
+                    "Miau, no es ese el criterio."
+                ]
+            }
         },
         {
             "numero": 299,
@@ -13375,7 +13735,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "El etanercept es una proteína de fusión recombinante, un fármaco biológico/biotecnológico clásico.",
+                    "La prednisolona es un corticoide sintético de molécula pequeña, no una proteína ni un producto biotecnológico — es la respuesta correcta.",
+                    "La insulina es una proteína/hormona, un fármaco biológico/biotecnológico clásico (hoy producida por tecnología recombinante).",
+                    "La eritropoyetina es una proteína/hormona, un fármaco biológico/biotecnológico clásico (producida por tecnología recombinante)."
+                ],
+                "fantasma": [
+                    "Ese sí es biotecnológico.",
+                    "¡Esta! Ese es una molécula chica hecha en laboratorio clásico.",
+                    "Esa sí es biotecnológica.",
+                    "Esa sí es biotecnológica."
+                ],
+                "gato": [
+                    "Fijate: sí es biotecnológico.",
+                    "¡Ronroneo de aprobación! Molécula chica, no proteína.",
+                    "Dato curioso: sí es biotecnológica.",
+                    "Miau, sí es biotecnológica."
+                ]
+            }
         },
         {
             "numero": 300,
@@ -13401,7 +13781,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacogenetica_biotec1"
+            "origem_seccion": "farmacogenetica_biotec1",
+            "explicacoes": {
+                "robo": [
+                    "Los fármacos biotecnológicos son polipéptidos o proteínas, que frecuentemente presentan modificaciones post-traduccionales como la glicosilación — es la respuesta correcta.",
+                    "Las proteínas biológicas son generalmente moléculas grandes pero HIDROSOLUBLES (no liposolubles), dada su naturaleza polar.",
+                    "Los biológicos (proteínas) generalmente NO pueden administrarse por vía oral, ya que serían degradados por las enzimas digestivas; requieren vías parenterales.",
+                    "Muchas proteínas grandes no se eliminan principalmente por biotransformación hepática clásica, sino por catabolismo proteolítico general u otras vías específicas."
+                ],
+                "fantasma": [
+                    "¡Esta! Son proteínas, a veces con azúcares pegados.",
+                    "Son solubles en agua, no en grasa.",
+                    "Se destruirían en el estómago, no se dan así.",
+                    "Se eliminan de otra manera, no siempre así."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Proteínas con adornos.",
+                    "Fijate: son solubles en agua.",
+                    "Dato curioso: se destruirían.",
+                    "Miau, se eliminan distinto."
+                ]
+            }
         },
         {
             "numero": 301,

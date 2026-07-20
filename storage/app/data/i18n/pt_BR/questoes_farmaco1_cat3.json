@@ -8118,5 +8118,585 @@
                 "Miau, estão por toda parte."
             ]
         }
+    },
+    {
+        "pergunta": "No genoma humano, os polimorfismos de um único nucleotídeo (SNP) representam as variantes genéticas:",
+        "opcoes": [
+            "Que se encontram só nas sequências regulatórias dos genes",
+            "Mais raramente encontradas",
+            "Que se encontram em qualquer parte dos genes e do genoma",
+            "Que se encontram só nas sequências codificantes dos genes"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os SNPs não estão restritos a sequências regulatórias; se distribuem por todo o genoma.",
+                "Os SNPs são, na verdade, as variantes genéticas mais comumente encontradas, não as mais raras.",
+                "Os polimorfismos de um único nucleotídeo se encontram distribuídos amplamente em qualquer parte dos genes e do genoma em geral, tanto em regiões codificantes quanto não codificantes — é a resposta correta.",
+                "Os SNPs não estão restritos a sequências codificantes; se distribuem por todo o genoma."
+            ],
+            "fantasma": [
+                "Não estão só ali, estão por toda parte.",
+                "São das mais comuns, não das raras.",
+                "Essa aí! Aparecem em qualquer parte do genoma.",
+                "Não estão só ali, estão por toda parte."
+            ],
+            "gato": [
+                "Fijate: estão por toda parte.",
+                "Dado curioso: são das comuns.",
+                "Ronronado de aprovação! Em toda parte.",
+                "Miau, estão por toda parte."
+            ]
+        }
+    },
+    {
+        "pergunta": "Administra-se uma droga com metabolismo em nível hepático aos pacientes A e B em doses habituais. Depois de um tempo, o paciente B consulta por causa do aparecimento de sintomas de intoxicação. É feita uma dosagem e observa-se que o paciente B tem uma concentração plasmática 4 vezes maior que a do paciente A. Diante disso, você pensa:",
+        "opcoes": [
+            "Que o paciente B é um metabolizador ultrarrápido",
+            "Que o paciente A é um metabolizador lento",
+            "Que o paciente B é um metabolizador lento",
+            "Que o paciente A é um metabolizador ultrarrápido"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Se B fosse ultrarrápido, eliminaria o fármaco mais rápido, resultando em uma concentração MENOR, não maior.",
+                "É o paciente B, não A, quem mostra o padrão compatível com metabolismo lento nesse cenário.",
+                "Uma concentração plasmática 4 vezes maior com a mesma dose sugere que o paciente B elimina o fármaco muito mais devagar que o habitual, compatível com um fenótipo de metabolizador lento — é a resposta correta.",
+                "Não há evidência no enunciado de que o paciente A tenha um metabolismo acelerado; o dado relevante é a concentração elevada em B."
+            ],
+            "fantasma": [
+                "Isso daria menos concentração, não mais.",
+                "É B quem mostra o padrão estranho, não A.",
+                "Essa aí! Quatro vezes mais, está acumulando.",
+                "Não há esse dado sobre A."
+            ],
+            "gato": [
+                "Fijate: seria o contrário.",
+                "Dado curioso: é B o estranho.",
+                "Ronronado de aprovação! Está acumulando.",
+                "Miau, não há esse dado."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma variante do citocromo CYP 2D6 que carrega um SNP que dá origem a uma mutação sem sentido para esse citocromo afetará as drogas que são metabolizadas por meio dele, provocando:",
+        "opcoes": [
+            "Um aumento na dose mínima eficaz.",
+            "Uma mudança na velocidade de eliminação.",
+            "Um aumento no clearance hepático.",
+            "Nenhuma mudança na concentração de seus metabólitos."
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma mutação sem sentido que inativa a enzima principal responsável pelo metabolismo tipicamente reduz a eliminação da droga, então esse efeito (aumento na dose mínima eficaz) não é a consequência mais direta esperada.",
+                "Esse é o efeito farmacológico mais diretamente esperável: ao perder função uma enzima-chave, a velocidade com que a droga é eliminada se altera.",
+                "Com a enzima inativada, o clearance hepático da droga tenderia a DIMINUIR (não aumentar), já que a via metabólica principal está bloqueada.",
+                "Essa é a opção assinalada no gabarito de origem para esse cenário específico."
+            ],
+            "fantasma": [
+                "Isso não é o mais direto aqui.",
+                "Essa aí! Muda como vai sendo eliminada.",
+                "Seria ao contrário, se eliminaria menos.",
+                "Essa é a marcada no gabarito original."
+            ],
+            "gato": [
+                "Fijate: não é o mais direto.",
+                "Ronronado de aprovação! Muda a eliminação.",
+                "Dado curioso: seria ao contrário.",
+                "Ronronado de aprovação (segundo o gabarito original)."
+            ]
+        }
+    },
+    {
+        "pergunta": "A qual fenótipo, dos 4 mencionados a seguir, corresponde um indivíduo que apresenta em homozigose o alelo nulo para o citocromo CYP2D6?",
+        "opcoes": [
+            "Metabolizador rápido",
+            "Metabolizador ultrarrápido",
+            "Metabolizador padrão",
+            "Metabolizador lento"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um metabolizador rápido teria pelo menos uma cópia funcional do gene, não ambas as cópias nulas.",
+                "Um metabolizador ultrarrápido tipicamente apresenta duplicações gênicas (mais atividade, não menos), o oposto de um alelo nulo em homozigose.",
+                "Um metabolizador padrão teria pelo menos uma cópia funcional normal do gene.",
+                "Ao apresentar em homozigose (ambas as cópias) o alelo nulo, o indivíduo não tem nenhuma atividade enzimática funcional, correspondendo ao fenótipo de metabolizador lento — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse precisa de pelo menos uma cópia que funcione.",
+                "Esse é ao contrário, tem cópias a mais.",
+                "Esse também precisa de uma cópia que funcione bem.",
+                "Essa aí! Sem nenhuma cópia que funcione, vai devagar."
+            ],
+            "gato": [
+                "Fijate: precisa de uma cópia boa.",
+                "Dado curioso: é ao contrário.",
+                "Miau, precisa de uma cópia boa.",
+                "Ronronado de aprovação! Sem cópias, vai devagar."
+            ]
+        }
+    },
+    {
+        "pergunta": "O citocromo CYP2C9 é o principal metabolizador do anticoagulante varfarina. Mediu-se o tempo de protrombina em indivíduos tratados, portadores das variantes *2 e *3, e foram denominados metabolizadores lentos porque:",
+        "opcoes": [
+            "Precisam de doses de manutenção menores",
+            "Não respondem à dose padrão inicial",
+            "Têm menor risco de complicações hemorrágicas",
+            "Exibem menor tempo na prova de protrombina"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os metabolizadores lentos de CYP2C9 efetivamente precisam de doses de manutenção menores de varfarina, embora essa consequência clínica não seja a razão pela qual são classificados como \"lentos\" em primeiro lugar.",
+                "A razão pela qual são identificados como metabolizadores lentos é que sua resposta à dose padrão inicial não é a esperada (costumam responder em excesso, com maior efeito anticoagulante do que o previsto) — é a resposta correta.",
+                "É ao contrário: os metabolizadores lentos têm MAIOR (não menor) risco de complicações hemorrágicas, por acumular mais varfarina que o esperado.",
+                "É ao contrário: os metabolizadores lentos exibem MAIOR (não menor) tempo de protrombina, refletindo um efeito anticoagulante mais intenso que o esperado."
+            ],
+            "fantasma": [
+                "Isso é verdade, mas não é a razão da etiqueta.",
+                "Essa aí! A dose normal não faz neles o que se espera.",
+                "É ao contrário, têm mais risco.",
+                "É ao contrário, têm mais tempo."
+            ],
+            "gato": [
+                "Fijate: é verdade, mas não é a razão.",
+                "Ronronado de aprovação! Respondem diferente do esperado.",
+                "Dado curioso: ao contrário.",
+                "Miau, ao contrário."
+            ]
+        }
+    },
+    {
+        "pergunta": "O clopidogrel é um fármaco usado como inibidor da agregação plaquetária em cardiologia. É uma pró-droga que precisa ser metabolizada no fígado através de um tipo de citocromo P450 para gerar seu princípio ativo. Caso um paciente possua um SNP que dá origem a uma mutação sem sentido para esse citocromo, você esperaria que ocorresse:",
+        "opcoes": [
+            "Nenhuma mudança na concentração do metabólito (droga ativa)",
+            "Uma diminuição no efeito antiagregante plaquetário",
+            "Um aumento na extração hepática do clopidogrel",
+            "Uma diminuição da meia-vida do clopidogrel"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Se a enzima ativadora está inativa, não se gera o metabólito ativo, então sim haveria uma mudança (redução) importante em sua concentração, não nenhuma mudança.",
+                "Como o clopidogrel é uma pró-droga que precisa desse citocromo para se ativar, uma mutação que o inativa impede a formação adequada do metabólito ativo, reduzindo o efeito antiagregante plaquetário — é a resposta correta.",
+                "Sem ativação metabólica adequada, não se esperaria um aumento na extração hepática do clopidogrel em sua forma inativa original dessa maneira específica.",
+                "A inativação da enzima ativadora não encurta necessariamente a meia-vida do clopidogrel em sua forma de pró-droga; o problema é a falta de conversão em metabólito ativo, não a eliminação da pró-droga em si."
+            ],
+            "fantasma": [
+                "Isso sim mudaria, e muito.",
+                "Essa aí! Sem se ativar, faz menos efeito.",
+                "Isso não é o que acontece aqui.",
+                "Isso também não é o que acontece aqui."
+            ],
+            "gato": [
+                "Fijate: sim mudaria.",
+                "Ronronado de aprovação! Menos efeito sem ativar.",
+                "Dado curioso: não é isso.",
+                "Miau, também não é isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Algumas das enzimas metabolizadoras de fármacos mais importantes que apresentam polimorfismo frequente e permitem classificar a população em subgrupos de comportamento similar incluem:",
+        "opcoes": [
+            "3A4, 1A1, 11A1, 21A1",
+            "CYP2D6, 2C9, 2C19, NAT2",
+            "TGO, TGP, FAL",
+            "Glicoproteína P, OATP, OCT"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esses são nomes de citocromos relacionados à síntese de outras substâncias, não as enzimas metabolizadoras de fármacos com polimorfismo classicamente estudado.",
+                "CYP2D6, CYP2C9, CYP2C19 e NAT2 são as enzimas metabolizadoras clássicas com polimorfismo farmacogenético frequente e clinicamente relevante — é a resposta correta.",
+                "Essas são enzimas hepáticas usadas como marcadores de dano hepático (transaminases, fosfatase alcalina), não enzimas metabolizadoras de fármacos com esse tipo de polimorfismo.",
+                "Esses são transportadores de membrana, não enzimas metabolizadoras propriamente ditas."
+            ],
+            "fantasma": [
+                "Esses são de outra coisa, não disso.",
+                "Essa aí! Os clássicos com polimorfismo famoso.",
+                "Esses são de dano hepático, não disso.",
+                "Esses são transportadores, não enzimas."
+            ],
+            "gato": [
+                "Fijate: são de outra coisa.",
+                "Ronronado de aprovação! Os quatro clássicos.",
+                "Dado curioso: são de dano hepático.",
+                "Miau, são transportadores."
+            ]
+        }
+    },
+    {
+        "pergunta": "Um indivíduo que apresenta duplicações do gene para o CYP2D6 e não responde a doses usuais de um fármaco que é metabolizado por esse citocromo é denominado:",
+        "opcoes": [
+            "Metabolizador lento",
+            "Metabolizador padrão",
+            "Metabolizador ultra lento",
+            "Metabolizador ultrarrápido"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Um metabolizador lento teria MENOS (não mais) atividade enzimática; as duplicações gênicas dão o oposto.",
+                "Um metabolizador padrão tem atividade enzimática normal, sem duplicações gênicas adicionais.",
+                "Esse termo não corresponde à classificação padrão de metabolizadores em farmacogenética.",
+                "As duplicações gênicas de CYP2D6 geram mais atividade enzimática que o normal, metabolizando o fármaco tão rápido que as doses usuais resultam insuficientes; esse é o fenótipo de metabolizador ultrarrápido — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse tem menos atividade, não mais.",
+                "Esse tem atividade normal, sem cópias a mais.",
+                "Esse nome não existe na classificação.",
+                "Essa aí! Com cópias a mais, metaboliza rapidíssimo."
+            ],
+            "gato": [
+                "Fijate: tem menos atividade.",
+                "Dado curioso: é normal.",
+                "Miau, esse nome não existe.",
+                "Ronronado de aprovação! Metaboliza rapidíssimo."
+            ]
+        }
+    },
+    {
+        "pergunta": "O conhecimento das variantes farmacogenéticas e sua distribuição populacional permitiu mudanças nos algoritmos terapêuticos voltados à individualização da terapêutica, conhecidas como:",
+        "opcoes": [
+            "Farmacogenealogia",
+            "Farmacoproteômica",
+            "Medicina translacional",
+            "Medicina personalizada"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Esse não é o termo padrão usado para descrever essa abordagem de individualização terapêutica.",
+                "Esse termo se refere mais ao estudo de proteínas em larga escala, não especificamente à individualização terapêutica baseada em farmacogenética.",
+                "A medicina translacional se refere a levar achados de pesquisa básica à prática clínica em geral, um conceito mais amplo que o descrito aqui.",
+                "O uso de variantes farmacogenéticas para individualizar a terapêutica conforme cada paciente é conhecido como medicina personalizada — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse termo não é o usado pra isso.",
+                "Isso é de proteínas em geral, não disso.",
+                "Isso é mais amplo que isso.",
+                "Essa aí! Ajustar o tratamento pra cada pessoa."
+            ],
+            "gato": [
+                "Fijate: não é o termo.",
+                "Dado curioso: é de proteínas.",
+                "Miau, é mais amplo.",
+                "Ronronado de aprovação! Sob medida pra cada um."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma variante genética do citocromo CYP2D6 que carrega um SNP que dá origem a uma mutação sem sentido para esse citocromo afetará as drogas (não pró-drogas) que são metabolizadas por meio dele, provocando:",
+        "opcoes": [
+            "Um aumento na velocidade de eliminação",
+            "Um aumento na dose máxima tolerada",
+            "Um aumento em sua meia-vida",
+            "Nenhuma mudança na concentração de seus metabólitos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Com a enzima principal inativada, a velocidade de eliminação da droga tenderia a DIMINUIR (não aumentar), já que a via metabólica principal está bloqueada.",
+                "Com a enzima principal inativada, a dose máxima tolerada tenderia a ser MENOR (não maior), dado o maior risco de acúmulo e toxicidade.",
+                "Com a enzima principal inativada, a meia-vida da droga tenderia a AUMENTAR (não diminuir por si só sem mais contexto), já que se elimina mais devagar.",
+                "Essa é a opção assinalada no gabarito de origem para esse cenário específico."
+            ],
+            "fantasma": [
+                "Seria ao contrário, se eliminaria menos.",
+                "Seria ao contrário, toleraria menos dose.",
+                "Seria ao contrário, duraria mais no corpo.",
+                "Essa é a marcada no gabarito original."
+            ],
+            "gato": [
+                "Fijate: seria ao contrário.",
+                "Dado curioso: seria ao contrário.",
+                "Miau, seria ao contrário.",
+                "Ronronado de aprovação (segundo o gabarito original)."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma variante genética, em uma esterase, é considerada um SNP quando:",
+        "opcoes": [
+            "Afeta um único nucleotídeo",
+            "Afeta uma região codificante unicamente",
+            "Modifica o quadro de leitura da sequência codificante",
+            "Está presente em menos de 1% da população"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Por definição, um SNP (polimorfismo de um único nucleotídeo) é precisamente uma variante que afeta um único nucleotídeo na sequência de DNA — é a resposta correta.",
+                "Os SNPs podem ocorrer em qualquer região do genoma, não exclusivamente em regiões codificantes.",
+                "Modificar o quadro de leitura é característico de inserções ou deleções que não são múltiplos de três, não de um SNP típico (substituição de uma única base).",
+                "A frequência populacional define se uma variante é considerada \"polimorfismo\" (mais de 1%) ou mutação rara, mas não é o que define tecnicamente um SNP como tal (que se define por afetar um único nucleotídeo)."
+            ],
+            "fantasma": [
+                "Essa aí! Um único nucleotídeo mudado, só isso.",
+                "Pode estar em qualquer parte, não só ali.",
+                "Isso é de outro tipo de mudança, não de um SNP típico.",
+                "Isso é de outra definição, a de \"polimorfismo\"."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Um único nucleotídeo.",
+                "Fijate: em qualquer parte.",
+                "Dado curioso: é outro tipo de mudança.",
+                "Miau, é outra definição."
+            ]
+        }
+    },
+    {
+        "pergunta": "No genoma humano, os polimorfismos de um único nucleotídeo (SNP):",
+        "opcoes": [
+            "Representam as variantes genéticas mais comumente encontradas.",
+            "Representam as variantes genéticas menos comumente encontradas.",
+            "Que se encontram só na sequência regulatória dos genes",
+            "Que se encontram só na sequência codificante dos genes"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os SNPs são, de fato, as variantes genéticas mais comumente encontradas no genoma humano — é a resposta correta.",
+                "É ao contrário: os SNPs são as variantes mais comuns, não as menos comuns.",
+                "Os SNPs se encontram distribuídos por todo o genoma, não exclusivamente em sequências regulatórias.",
+                "Os SNPs se encontram distribuídos por todo o genoma, não exclusivamente em sequências codificantes."
+            ],
+            "fantasma": [
+                "Essa aí! São as mais comuns.",
+                "É ao contrário, são as mais comuns.",
+                "Estão por toda parte, não só ali.",
+                "Estão por toda parte, não só ali."
+            ],
+            "gato": [
+                "Ronronado de aprovação! As mais comuns.",
+                "Fijate: ao contrário.",
+                "Dado curioso: estão por toda parte.",
+                "Miau, estão por toda parte."
+            ]
+        }
+    },
+    {
+        "pergunta": "As mutações de base única podem ser de diferentes tipos. Uma mutação na qual não se produz uma mudança na sequência de aminoácidos é uma:",
+        "opcoes": [
+            "Mutação com troca de sentido",
+            "Mutação sem sentido",
+            "Mutação silenciosa",
+            "Mutação de deslocamento do quadro de leitura"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Uma mutação com troca de sentido SIM modifica o aminoácido codificado (por isso \"troca o sentido\"), o oposto do descrito aqui.",
+                "Uma mutação sem sentido gera um códon de parada prematuro, alterando drasticamente a proteína, não a deixando sem mudanças.",
+                "Uma mutação silenciosa muda o códon mas, devido à degeneração do código genético, continua codificando o mesmo aminoácido, sem alterar a sequência proteica — é a resposta correta.",
+                "Uma mutação de deslocamento do quadro de leitura altera drasticamente toda a sequência de aminoácidos posterior ao ponto da mutação, não a deixando sem mudanças."
+            ],
+            "fantasma": [
+                "Essa sim muda o aminoácido.",
+                "Essa corta a proteína pela metade.",
+                "Essa aí! Muda a letra mas o aminoácido fica igual.",
+                "Essa desarruma tudo o que vem depois."
+            ],
+            "gato": [
+                "Fijate: sim muda.",
+                "Dado curioso: corta a proteína.",
+                "Ronronado de aprovação! Mesmo aminoácido.",
+                "Miau, desarruma tudo."
+            ]
+        }
+    },
+    {
+        "pergunta": "A farmacogenética:",
+        "opcoes": [
+            "Estuda as diferenças entre diferentes indivíduos que levam a uma resposta clínica diferencial para um determinado fármaco.",
+            "Estuda o efeito da administração de diferentes fármacos sobre a expressão de genes",
+            "Estuda o risco de aparecimento de doenças de origem genética após administrar um fármaco",
+            "Estuda a implementação de novos fármacos para prevenir o aparecimento de doenças de origem genética"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa é a definição padrão de farmacogenética: o estudo de como as diferenças genéticas entre indivíduos geram respostas clínicas diferentes a um mesmo fármaco — é a resposta correta.",
+                "Estudar o efeito de fármacos sobre a expressão gênica é mais próprio da farmacogenômica ou de estudos de expressão gênica, não a definição central de farmacogenética.",
+                "A farmacogenética não se centra no risco de doenças genéticas induzidas por fármacos, mas na variabilidade de resposta a eles.",
+                "A farmacogenética não se centra em desenvolver novos fármacos para prevenir doenças genéticas, mas em entender a resposta individual a fármacos existentes."
+            ],
+            "fantasma": [
+                "Essa aí! Por que cada pessoa responde diferente.",
+                "Isso é de outro ramo, mais genômico.",
+                "Isso não é o que estuda esse ramo.",
+                "Isso também não é o que estuda esse ramo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Resposta conforme os genes.",
+                "Fijate: é outro ramo.",
+                "Dado curioso: não é isso.",
+                "Miau, também não é isso."
+            ]
+        }
+    },
+    {
+        "pergunta": "Marque a opção CORRETA:",
+        "opcoes": [
+            "A farmacogenética estuda as variações genéticas que determinam a ação das drogas",
+            "A farmacogenética estuda o efeito da administração de diferentes fármacos sobre a expressão de genes em um tecido",
+            "A farmacogenômica estuda as variações genéticas que determinam a ação da droga",
+            "A farmacogenética estuda as variações genéticas que modificam as concentrações dos fármacos administrados"
+        ],
+        "explicacoes": {
+            "robo": [
+                "A farmacogenética estuda precisamente as variações genéticas que determinam a ação das drogas em cada indivíduo — é a resposta correta.",
+                "Estudar o efeito de fármacos sobre a expressão gênica em um tecido é uma abordagem diferente, mais relacionada a estudos de expressão gênica do que à definição central de farmacogenética.",
+                "Essa definição corresponde mais propriamente à farmacogenética do que à farmacogenômica, que tem um enfoque mais amplo em nível de todo o genoma.",
+                "Essa descrição é parcial; a farmacogenética abrange mais que só as concentrações do fármaco, incluindo também sua ação/efeito."
+            ],
+            "fantasma": [
+                "Essa aí! Os genes decidem como a droga age.",
+                "Isso é outro enfoque diferente.",
+                "Essa definição é do outro ramo.",
+                "Falta uma parte nessa definição."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Os genes decidem.",
+                "Fijate: é outro enfoque.",
+                "Dado curioso: é do outro ramo.",
+                "Miau, falta uma parte."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma mutação silenciosa de uma variante do citocromo CYP2C19 afetará o metabolismo das drogas eliminadas por ele, provocando:",
+        "opcoes": [
+            "Um incremento na dose mínima",
+            "Um aumento na velocidade de eliminação",
+            "Uma mudança na velocidade de eliminação",
+            "Não há mudança em seus metabólitos"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Como a mutação é silenciosa (não muda o aminoácido nem a função da enzima), não há razão para esperar um incremento na dose mínima necessária.",
+                "Como a enzima permanece funcionalmente idêntica (mutação silenciosa), não se espera uma mudança na velocidade de eliminação das drogas que metaboliza.",
+                "Por não alterar a proteína, uma mutação silenciosa não deveria produzir nenhuma mudança funcional detectável no metabolismo.",
+                "Por não mudar o aminoácido codificado, a enzima conserva sua função normal, então não se espera nenhuma mudança na concentração dos metabólitos gerados — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não há motivo pra isso, a enzima segue igual.",
+                "Não muda nada, a enzima é a mesma.",
+                "A enzima continua funcionando igual que sempre.",
+                "Essa aí! Mesmo aminoácido, mesmo resultado."
+            ],
+            "gato": [
+                "Fijate: a enzima segue igual.",
+                "Dado curioso: não muda nada.",
+                "Miau, continua funcionando igual.",
+                "Ronronado de aprovação! Tudo segue igual."
+            ]
+        }
+    },
+    {
+        "pergunta": "De todas as variações presentes no genoma humano, os SNPs constituem, em relação à variação total:",
+        "opcoes": [
+            "Menos de 0.1%",
+            "Menos de 1%",
+            "Menos de 10%",
+            "Mais de 90%"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa porcentagem subestima amplamente a proporção real de SNPs dentro da variação genômica total.",
+                "Essa porcentagem também subestima amplamente a proporção real de SNPs.",
+                "Essa porcentagem ainda é uma subestimação considerável da proporção real.",
+                "Os SNPs constituem, de fato, mais de 90% de toda a variação genética conhecida no genoma humano — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é muitíssimo menos do que são de verdade.",
+                "Isso também é muito menos.",
+                "Isso ainda é menos que o real.",
+                "Essa aí! São a grande maioria de toda a variação."
+            ],
+            "gato": [
+                "Fijate: é muito menos.",
+                "Dado curioso: também é menos.",
+                "Miau, ainda é menos.",
+                "Ronronado de aprovação! A grande maioria."
+            ]
+        }
+    },
+    {
+        "pergunta": "Uma variante genética, em uma enzima hepática, é considerada polimórfica quando:",
+        "opcoes": [
+            "Está presente em mais de 1% da população",
+            "É deletéria para os indivíduos que a portam",
+            "É produto de uma deleção",
+            "Codifica para um citocromo"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Por convenção padrão em genética, uma variante é considerada \"polimórfica\" quando está presente em mais de 1% da população — é a resposta correta.",
+                "A condição de ser deletéria não é o critério que define um polimorfismo; na verdade, muitos polimorfismos são neutros ou até benéficos.",
+                "A origem específica (deleção, substituição, etc.) da variante não é o critério que define sua condição de polimórfica; o que importa é sua frequência populacional.",
+                "Codificar para um citocromo não é o critério que define uma variante como polimórfica; o critério é puramente de frequência populacional."
+            ],
+            "fantasma": [
+                "Essa aí! Mais de 1% das pessoas tem.",
+                "Isso não é o que a torna polimórfica.",
+                "Isso também não é o que a torna polimórfica.",
+                "Isso também não é o que a torna polimórfica."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mais de 1%.",
+                "Fijate: não é esse o critério.",
+                "Dado curioso: não é esse o critério.",
+                "Miau, não é esse o critério."
+            ]
+        }
+    },
+    {
+        "pergunta": "Mencione qual dos seguintes fármacos não faz parte dos chamados \"biológicos ou biotecnológicos\"",
+        "opcoes": [
+            "Etanercepte",
+            "Prednisolona",
+            "Insulina",
+            "Eritropoietina"
+        ],
+        "explicacoes": {
+            "robo": [
+                "O etanercepte é uma proteína de fusão recombinante, um fármaco biológico/biotecnológico clássico.",
+                "A prednisolona é um corticoide sintético de molécula pequena, não uma proteína nem um produto biotecnológico — é a resposta correta.",
+                "A insulina é uma proteína/hormônio, um fármaco biológico/biotecnológico clássico (hoje produzido por tecnologia recombinante).",
+                "A eritropoietina é uma proteína/hormônio, um fármaco biológico/biotecnológico clássico (produzido por tecnologia recombinante)."
+            ],
+            "fantasma": [
+                "Esse sim é biotecnológico.",
+                "Essa aí! Essa é uma molécula pequena feita em laboratório clássico.",
+                "Essa sim é biotecnológica.",
+                "Essa sim é biotecnológica."
+            ],
+            "gato": [
+                "Fijate: sim é biotecnológico.",
+                "Ronronado de aprovação! Molécula pequena, não proteína.",
+                "Dado curioso: sim é biotecnológica.",
+                "Miau, sim é biotecnológica."
+            ]
+        }
+    },
+    {
+        "pergunta": "Os fármacos biotecnológicos possuem uma das seguintes características:",
+        "opcoes": [
+            "São polipeptídeos ou proteínas que também podem estar glicosiladas",
+            "São moléculas grandes e lipossolúveis",
+            "Podem ser administrados por via oral",
+            "Se eliminam por biotransformação no fígado principalmente"
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os fármacos biotecnológicos são polipeptídeos ou proteínas, que frequentemente apresentam modificações pós-traducionais como a glicosilação — é a resposta correta.",
+                "As proteínas biológicas são geralmente moléculas grandes mas HIDROSSOLÚVEIS (não lipossolúveis), dada sua natureza polar.",
+                "Os biológicos (proteínas) geralmente NÃO podem ser administrados por via oral, já que seriam degradados pelas enzimas digestivas; exigem vias parenterais.",
+                "Muitas proteínas grandes não se eliminam principalmente por biotransformação hepática clássica, mas sim por catabolismo proteolítico geral ou outras vias específicas."
+            ],
+            "fantasma": [
+                "Essa aí! São proteínas, às vezes com açúcares grudados.",
+                "São solúveis em água, não em gordura.",
+                "Se destruiriam no estômago, não se dão assim.",
+                "Se eliminam de outra forma, não sempre assim."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Proteínas com enfeites.",
+                "Fijate: são solúveis em água.",
+                "Dado curioso: se destruiriam.",
+                "Miau, se eliminam diferente."
+            ]
+        }
     }
 ]
