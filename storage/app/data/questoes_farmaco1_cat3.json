@@ -8307,7 +8307,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "Sin acceso al gráfico/curva original de concentración plasmática referido en el enunciado, no es posible verificar de forma independiente el cálculo exacto; se acepta el valor indicado en el gabarito de origen.",
+                    "La biodisponibilidad compara el AUC obtenido por la vía en cuestión frente al AUC de referencia (habitualmente la vía intravenosa); sin los datos numéricos del gráfico original, no se puede confirmar este valor específico de forma independiente.",
+                    "Este valor (50%) es el indicado como correcto en el material de origen para este ejercicio, calculado presumiblemente a partir del cociente de AUC del gráfico asociado a la pregunta (no incluido en este banco de datos) — es la respuesta correcta según el gabarito de origen.",
+                    "Sin acceso al gráfico original, no es posible verificar de forma independiente este valor específico."
+                ],
+                "fantasma": [
+                    "Sin el gráfico, no puedo revisar esta cuenta.",
+                    "Faltan los datos del gráfico para confirmar esto.",
+                    "Esta es la marcada en el gabarito original.",
+                    "Sin el gráfico, no puedo revisar esta cuenta."
+                ],
+                "gato": [
+                    "Dato curioso: falta el gráfico.",
+                    "Miau, faltan los datos.",
+                    "Ronroneo de aprobación (según el gabarito original).",
+                    "Dato curioso: falta el gráfico."
+                ]
+            }
         },
         {
             "numero": 182,
@@ -8333,7 +8353,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "Sin acceso al gráfico/curva de concentración-tiempo referido en el enunciado, no es posible verificar de forma independiente este cálculo.",
+                    "Sin los datos numéricos del gráfico original, no se puede confirmar este valor específico de vida media.",
+                    "Sin acceso al gráfico original, no es posible verificar de forma independiente este valor.",
+                    "Este valor (48hs) es el indicado como correcto en el material de origen para este ejercicio, calculado presumiblemente a partir de la pendiente de decaimiento del gráfico asociado a la pregunta (no incluido en este banco de datos) — es la respuesta correcta según el gabarito de origen."
+                ],
+                "fantasma": [
+                    "Sin el gráfico, no puedo revisar esta cuenta.",
+                    "Faltan los datos del gráfico para confirmar esto.",
+                    "Sin el gráfico, no puedo revisar esta cuenta.",
+                    "Esta es la marcada en el gabarito original."
+                ],
+                "gato": [
+                    "Dato curioso: falta el gráfico.",
+                    "Miau, faltan los datos.",
+                    "Dato curioso: falta el gráfico.",
+                    "Ronroneo de aprobación (según el gabarito original)."
+                ]
+            }
         },
         {
             "numero": 183,
@@ -8359,7 +8399,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_ii_parte2"
+            "origem_seccion": "farmacocinetica_ii_parte2",
+            "explicacoes": {
+                "robo": [
+                    "El fenobarbital es un inductor enzimático clásico, por lo que su administración crónica sí modifica la vida media de la droga A.",
+                    "Al inducir el metabolismo hepático de la droga A, el fenobarbital AUMENTA su clearance; con Vd constante, esto DISMINUYE (no aumenta) la vida media, no la aumenta.",
+                    "El fenobarbital induce el metabolismo hepático de la droga A, aumentando su clearance; con Vd constante, esto disminuye la vida media (t½=0,693×Vd/CL) — es la respuesta correcta.",
+                    "El efecto del fenobarbital como inductor enzimático clásico sobre el metabolismo hepático es un principio bien establecido, suficiente para predecir la dirección del cambio sin datos adicionales."
+                ],
+                "fantasma": [
+                    "Sí cambia, el fenobarbital induce el metabolismo.",
+                    "Es al revés, baja.",
+                    "¡Esta! Metaboliza más rápido, baja la vida media.",
+                    "Ya se sabe la dirección, no faltan datos."
+                ],
+                "gato": [
+                    "Fijate: sí cambia.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! Baja la vida media.",
+                    "Miau, no faltan datos."
+                ]
+            }
         },
         {
             "numero": 184,
@@ -8385,7 +8445,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El número de receptores totales (Bmax) se relaciona con la intersección en el eje X del gráfico de Scatchard, no con la pendiente.",
+                    "La inversa del número de receptores no es lo que representa la pendiente en un gráfico de Scatchard.",
+                    "En el gráfico de Scatchard, la pendiente es -1/Kd; por lo tanto, el negativo de la pendiente (1/Kd) es directamente proporcional a la afinidad de la droga por el receptor, ya que a menor Kd, mayor afinidad — es la respuesta correcta.",
+                    "Es precisamente lo contrario: el negativo de la pendiente representa la afinidad (1/Kd), no la inversa de la afinidad."
+                ],
+                "fantasma": [
+                    "Eso es la intersección, no la pendiente.",
+                    "Eso no es lo que representa la pendiente.",
+                    "¡Esta! Esa pendiente muestra la afinidad.",
+                    "Es al revés de lo que dice esta opción."
+                ],
+                "gato": [
+                    "Fijate: es la intersección.",
+                    "Dato curioso: no es eso.",
+                    "¡Ronroneo de aprobación! Muestra la afinidad.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 185,
@@ -8411,7 +8491,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La constante de eliminación (Ke) es un parámetro farmacocinético relacionado con la vida media, no con la formación de complejos fármaco-receptor.",
+                    "La afinidad del fármaco por el receptor determina, junto con la concentración disponible, cuántos complejos fármaco-receptor se forman — es la respuesta correcta.",
+                    "El transcurso de 5 vidas medias es relevante para alcanzar el estado estacionario plasmático, no para determinar directamente el número de complejos fármaco-receptor.",
+                    "El índice terapéutico es una medida de seguridad relativa entre dosis tóxica y eficaz, no un determinante de la formación de complejos fármaco-receptor."
+                ],
+                "fantasma": [
+                    "Esa es de otra parte, la farmacocinética.",
+                    "¡Esta! Cuánto se pega, decide cuántos complejos hay.",
+                    "Eso es de llegar a la meseta, no de esto.",
+                    "Eso es de seguridad, no de esto."
+                ],
+                "gato": [
+                    "Fijate: es de otra parte.",
+                    "¡Ronroneo de aprobación! La afinidad decide.",
+                    "Dato curioso: es de la meseta.",
+                    "Miau, es de seguridad."
+                ]
+            }
         },
         {
             "numero": 186,
@@ -8437,7 +8537,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El pA2 mayor de B (8,7 frente a 7,8 de A) indica que B es más potente como bloqueante; por lo tanto, la potencia bloqueante de A es menor que la de B — es la respuesta correcta.",
+                    "Es al revés: como el pA2 de B es mayor, B es más potente, no A.",
+                    "Esta opción, aunque etiquetada como \"Eficacia\", está duplicada en el enunciado (idéntica a la opción D) y de todos modos el pA2 no mide eficacia, sino potencia de un antagonista.",
+                    "Esta opción está duplicada respecto a la C en el enunciado original; además, el pA2 mide potencia bloqueante, no eficacia."
+                ],
+                "fantasma": [
+                    "¡Esta! B tiene mayor pA2, es más potente.",
+                    "Es al revés, B gana.",
+                    "Esa está repetida, y no mide eso.",
+                    "Esa está repetida, y no mide eso."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! B es más potente.",
+                    "Fijate: al revés.",
+                    "Dato curioso: repetida.",
+                    "Miau, repetida."
+                ]
+            }
         },
         {
             "numero": 187,
@@ -8463,7 +8583,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Como el Bmax de A y B es idéntico (500 en ambas), la intersección con el eje X (que corresponde a Bmax) sería igual, no mayor en A.",
+                    "Por la misma razón, la intersección con el eje X no sería menor en A; sería igual, ya que ambos Bmax coinciden.",
+                    "El negativo de la pendiente (1/Kd) para A es 1/10⁻⁹=10⁹, y para B es 1/10⁻⁸=10⁸; como 10⁹>10⁸, el negativo de la pendiente de A es mayor que el de B — es la respuesta correcta.",
+                    "Las pendientes no son iguales, ya que los Kd de A y B son diferentes (10⁻⁹ frente a 10⁻⁸)."
+                ],
+                "fantasma": [
+                    "Esos Bmax son iguales, no hay diferencia ahí.",
+                    "Esos Bmax son iguales, no hay diferencia ahí.",
+                    "¡Esta! A tiene la pendiente más pronunciada.",
+                    "Esas pendientes no son iguales."
+                ],
+                "gato": [
+                    "Fijate: son iguales.",
+                    "Dato curioso: son iguales.",
+                    "¡Ronroneo de aprobación! A tiene más pendiente.",
+                    "Miau, no son iguales."
+                ]
+            }
         },
         {
             "numero": 188,
@@ -8489,7 +8629,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: si 10mg de morfina superan a cualquier dosis de ibuprofeno, la morfina es más (no menos) eficaz en este contexto analgésico.",
+                    "El dato dado se refiere a la respuesta máxima alcanzable (eficacia), no directamente a la potencia (dosis necesaria para cierto efecto); esta conclusión no se desprende de los datos.",
+                    "Morfina e ibuprofeno actúan sobre receptores/mecanismos completamente distintos (opioides vs. inhibición de COX), no sobre el mismo receptor; además, si la morfina alcanza mayor respuesta máxima, sería ella la que se comporta como el agonista de mayor eficacia en su propio sistema.",
+                    "Dado que la morfina alcanza una respuesta analgésica máxima mayor que cualquier dosis de ibuprofeno, en términos prácticos resulta el medicamento más eficaz para aliviar ese dolor en este contexto — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, la morfina gana en eficacia.",
+                    "Eso no se puede saber con este dato.",
+                    "Esos actúan en cosas distintas.",
+                    "¡Esta! Con esos datos, la morfina hace más efecto."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: no se sabe eso.",
+                    "Miau, son cosas distintas.",
+                    "¡Ronroneo de aprobación! La morfina gana."
+                ]
+            }
         },
         {
             "numero": 189,
@@ -8515,7 +8675,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El Kd de A (10⁻⁶M) es mayor que el de B (10⁻⁹M); como un Kd mayor indica menor afinidad, la afinidad de A es menor que la de B — es la respuesta correcta.",
+                    "Es al revés: el Kd mayor de A indica menor afinidad, no mayor.",
+                    "Un ensayo de unión de radioligandos mide afinidad (vía Kd), no eficacia farmacodinámica, que requiere ensayos funcionales.",
+                    "Igual que la opción anterior, la eficacia no puede determinarse directamente de estos datos de unión."
+                ],
+                "fantasma": [
+                    "¡Esta! Kd más grande, menos afinidad.",
+                    "Es al revés.",
+                    "Eso no mide eficacia, mide unión.",
+                    "Eso tampoco mide eficacia."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Menos afinidad.",
+                    "Fijate: al revés.",
+                    "Dato curioso: no mide eso.",
+                    "Miau, no mide eso."
+                ]
+            }
         },
         {
             "numero": 190,
@@ -8541,7 +8721,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Como X produce una respuesta máxima similar a la de un agonista total de referencia (adrenalina) actuando en los mismos receptores, X se comporta como un agonista (total) — es la respuesta correcta.",
+                    "Un agonista parcial produciría una respuesta máxima menor que la de un agonista total; aquí X iguala la respuesta de la adrenalina, lo cual descarta que sea parcial.",
+                    "Un antagonista competitivo bloquearía el efecto de la adrenalina, no produciría por sí mismo una respuesta máxima similar.",
+                    "Un antagonista irreversible tampoco produciría una respuesta agonista; su acción es bloquear, no imitar el efecto máximo del agonista de referencia."
+                ],
+                "fantasma": [
+                    "¡Esta! Hace el mismo efecto máximo, es agonista.",
+                    "Un parcial haría menos efecto, no igual.",
+                    "Un antagonista bloquea, no imita el efecto.",
+                    "Un antagonista irreversible tampoco hace esto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Mismo efecto máximo.",
+                    "Fijate: sería menos.",
+                    "Dato curioso: bloquea, no imita.",
+                    "Miau, tampoco hace esto."
+                ]
+            }
         },
         {
             "numero": 191,
@@ -8567,7 +8767,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un antagonista competitivo puede ser superado aumentando la dosis del agonista, pero aquí X sigue siendo menos eficaz \"sin importar la dosis\", lo cual descarta un antagonismo puramente competitivo.",
+                    "El enunciado no describe a X como antagonista, sino como agonista sedante; y la falta total de efecto de Y (ni siquiera parcial) contradice que sea un agonista parcial, que normalmente produciría algún efecto submáximo.",
+                    "Es al revés: X sí produce sedación por sí solo (tiene su propia eficacia); Y, en cambio, no produce ningún efecto sedante, por lo que sería Y el de menor eficacia, no X.",
+                    "Como Y reduce el efecto máximo de X de forma insuperable (independiente de la dosis de X) y Y mismo no tiene ningún efecto sedante propio, esto es la firma característica de un antagonismo NO competitivo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Un competitivo se supera con más dosis, y acá no pasa.",
+                    "X no es antagonista, e Y no hace nada, no encaja.",
+                    "Es al revés, Y es el que no hace nada.",
+                    "¡Esta! Reduce el máximo pase lo que pase, no competitivo."
+                ],
+                "gato": [
+                    "Fijate: no se supera.",
+                    "Dato curioso: no encaja.",
+                    "Miau, al revés.",
+                    "¡Ronroneo de aprobación! No competitivo."
+                ]
+            }
         },
         {
             "numero": 192,
@@ -8593,7 +8813,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "A tiene mayor CE50 (10⁻⁸ frente a 10⁻⁹ de B), por lo que A es MENOS potente, no más; en eficacia, A es más eficaz, no menos.",
+                    "A es menos potente (correcto, mayor CE50), pero es MÁS eficaz (no menos), ya que su actividad intrínseca (1) es mayor que la de B (0,8).",
+                    "A tiene mayor CE50 que B (menor potencia) pero mayor actividad intrínseca que B (mayor eficacia): A es menos potente y más eficaz que B — es la respuesta correcta.",
+                    "A es menos potente, no más, ya que necesita mayor concentración (CE50 mayor) para alcanzar el 50% del efecto."
+                ],
+                "fantasma": [
+                    "Es al revés en las dos cosas.",
+                    "Lo de potencia está bien, pero lo de eficacia no.",
+                    "¡Esta! Necesita más dosis pero hace más efecto.",
+                    "Es al revés, necesita más dosis."
+                ],
+                "gato": [
+                    "Fijate: al revés en todo.",
+                    "Dato curioso: falta lo de eficacia.",
+                    "¡Ronroneo de aprobación! Menos dosis, más efecto... al revés.",
+                    "Miau, necesita más."
+                ]
+            }
         },
         {
             "numero": 193,
@@ -8619,7 +8859,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "El efecto máximo está determinado por la vía de transducción de señal saturándose, no directamente por el número de receptores de reserva en sí.",
+                    "Los receptores de reserva son un concepto del sistema en general, no algo que se manifieste exclusivamente en presencia de antagonistas competitivos.",
+                    "Gracias a la redundancia de receptores de reserva, si la fracción de receptores bloqueados por un antagonista no competitivo en baja concentración es menor a la fracción de reserva, aún quedan suficientes receptores funcionales para alcanzar el efecto máximo, por lo que la eficacia del agonista no se ve disminuida — es la respuesta correcta.",
+                    "Por definición, los receptores requieren la unión de un ligando (agonista) para activarse; \"de reserva\" no significa que estén activos sin él."
+                ],
+                "fantasma": [
+                    "Eso lo decide otra cosa, la vía de señal.",
+                    "Eso pasa igual con otros antagonistas.",
+                    "¡Esta! Sobran receptores, no se nota el bloqueo.",
+                    "Necesitan el agonista para prenderse."
+                ],
+                "gato": [
+                    "Fijate: es otra cosa.",
+                    "Dato curioso: pasa igual.",
+                    "¡Ronroneo de aprobación! Sobran receptores.",
+                    "Miau, necesitan el agonista."
+                ]
+            }
         },
         {
             "numero": 194,
@@ -8644,8 +8904,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Por definición, un antagonista puramente competitivo (como se describe explícitamente a la atropina en el enunciado) desplaza la curva del agonista hacia la derecha sin modificar la pendiente ni la respuesta máxima, ya que su efecto siempre puede ser superado aumentando suficientemente la concentración de acetilcolina — es la respuesta correcta.",
+                    "La curva sí se modifica: se desplaza hacia la derecha, aunque sin cambiar la respuesta máxima, que es precisamente el rasgo distintivo de un antagonismo competitivo.",
+                    "Una disminución de la respuesta máxima es característica del antagonismo NO competitivo, lo cual contradice la descripción del enunciado, que clasifica explícitamente a la atropina como antagonista competitivo.",
+                    "Al igual que en la opción anterior, una reducción de la respuesta máxima contradice la definición de antagonismo competitivo dada en el propio enunciado."
+                ],
+                "fantasma": [
+                    "¡Esta! Se corre a la derecha, pero llega igual de alto.",
+                    "Sí cambia, se corre a la derecha.",
+                    "Eso pasa con el no competitivo, no con este.",
+                    "Eso pasa con el no competitivo, no con este."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se corre pero llega igual.",
+                    "Fijate: sí cambia.",
+                    "Dato curioso: es del otro tipo.",
+                    "Miau, es del otro tipo."
+                ]
+            }
         },
         {
             "numero": 195,
@@ -8671,7 +8951,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La acción específica implica interacción con un receptor particular; el bicarbonato actúa por neutralización química general, no por unión a un receptor específico.",
+                    "El bicarbonato de sodio actúa por un mecanismo puramente químico (neutralización ácido-base), sin unirse a un receptor específico, característica de los fármacos de acción inespecífica — es la respuesta correcta.",
+                    "El bicarbonato no bloquea la acción de otra sustancia en un receptor; no actúa como antagonista en el sentido farmacológico.",
+                    "El bicarbonato no actúa formando complejos de quelación con metales; su mecanismo es la neutralización ácido-base."
+                ],
+                "fantasma": [
+                    "Eso necesita un receptor, y esto no usa uno.",
+                    "¡Esta! Es química pura, sin receptor.",
+                    "Eso no es bloquear nada, es otra cosa.",
+                    "Eso no es agarrar metales, es otra cosa."
+                ],
+                "gato": [
+                    "Fijate: necesita receptor.",
+                    "¡Ronroneo de aprobación! Química pura.",
+                    "Dato curioso: no es eso.",
+                    "Miau, no es eso."
+                ]
+            }
         },
         {
             "numero": 196,
@@ -8697,7 +8997,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Una alta especificidad efectivamente puede favorecer que se necesite menor dosis, al enfocar mejor la acción del fármaco.",
+                    "Una alta potencia significa, por definición, que se necesita menor dosis para lograr un efecto determinado.",
+                    "Una baja CE50 es la otra cara de la alta potencia (misma idea, expresada numéricamente): significa que se necesita menor concentración/dosis para alcanzar el 50% del efecto.",
+                    "Las tres características mencionadas se relacionan, de manera directa o indirecta, con requerir una menor dosis para un efecto determinado — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa sí ayuda a necesitar menos.",
+                    "Esa sí es necesitar menos.",
+                    "Esa es lo mismo que la potencia, con otro nombre.",
+                    "¡Esta! Las tres apuntan para el mismo lado."
+                ],
+                "gato": [
+                    "Fijate: sí ayuda.",
+                    "Dato curioso: sí es eso.",
+                    "Miau, es la misma idea.",
+                    "¡Ronroneo de aprobación! Las tres juntas."
+                ]
+            }
         },
         {
             "numero": 197,
@@ -8723,7 +9043,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "La pentazocina no se describe aquí como un antagonista competitivo puro, ya que sí tiene efecto analgésico propio (aunque menor), lo cual es más consistente con un agonista parcial que con un antagonista puro.",
+                    "La morfina, al alcanzar mayor alivio del dolor y necesitar más concentración de sí misma en presencia de pentazocina (que compite por el receptor sin producir el mismo efecto máximo), se comporta como agonista completo, mientras que la pentazocina, con menor efecto máximo propio, se comporta como agonista parcial — es la respuesta correcta.",
+                    "Es al revés: la morfina es MÁS eficaz que la pentazocina, ya que esta última no alcanza el mismo alivio del dolor ni siquiera a dosis mayores.",
+                    "El dato dado no compara potencia (dosis necesaria para cierto efecto) directamente, sino la eficacia máxima alcanzable por cada droga."
+                ],
+                "fantasma": [
+                    "Esa sí hace algo de efecto, no es antagonista puro.",
+                    "¡Esta! Morfina es total, pentazocina es parcial.",
+                    "Es al revés, la morfina hace más efecto.",
+                    "Ese dato es de eficacia, no de potencia."
+                ],
+                "gato": [
+                    "Fijate: sí hace efecto.",
+                    "¡Ronroneo de aprobación! Total y parcial.",
+                    "Dato curioso: al revés.",
+                    "Miau, es de eficacia."
+                ]
+            }
         },
         {
             "numero": 198,
@@ -8748,8 +9088,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "D",
-            "origem_seccion": "farmacodinamia_parte1"
+            "resposta_correta": "B",
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Por definición, un agonista parcial nunca alcanza la misma eficacia que un agonista total en el mismo receptor; no serían iguales.",
+                    "Un agonista total tiene, por definición, mayor eficacia (efecto máximo) que un agonista parcial en el mismo receptor — es la respuesta correcta.",
+                    "Es al revés: el agonista total (A) tiene mayor eficacia que el parcial (B), no menor.",
+                    "Esta combinación no refleja correctamente la relación definitoria: la eficacia de un agonista total es siempre estrictamente mayor que la de un agonista parcial, no \"menor o igual\"."
+                ],
+                "fantasma": [
+                    "No pueden ser iguales, uno es parcial.",
+                    "¡Esta! El total siempre hace más efecto.",
+                    "Es al revés, el total gana.",
+                    "Esa combinación no encaja con la definición."
+                ],
+                "gato": [
+                    "Fijate: no son iguales.",
+                    "¡Ronroneo de aprobación! El total gana siempre.",
+                    "Dato curioso: al revés.",
+                    "Miau, no encaja."
+                ]
+            }
         },
         {
             "numero": 199,
@@ -8775,7 +9135,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Por definición, un agonista parcial tiene actividad intrínseca menor a 1, mientras que el agonista total tiene actividad intrínseca igual a 1; no serían iguales.",
+                    "Es al revés: el agonista total (A) tiene mayor actividad intrínseca que el parcial (B), no menor.",
+                    "Por definición, un agonista total tiene actividad intrínseca igual a 1, mayor que la de un agonista parcial (que es menor a 1) — es la respuesta correcta.",
+                    "La actividad intrínseca del agonista total es siempre estrictamente mayor a la del parcial, no \"menor o igual\"."
+                ],
+                "fantasma": [
+                    "No pueden ser iguales, uno es parcial.",
+                    "Es al revés, el total gana.",
+                    "¡Esta! El total siempre tiene actividad intrínseca mayor.",
+                    "Esa combinación no encaja con la definición."
+                ],
+                "gato": [
+                    "Fijate: no son iguales.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! El total gana siempre.",
+                    "Miau, no encaja."
+                ]
+            }
         },
         {
             "numero": 200,
@@ -8801,7 +9181,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacodinamia_parte1"
+            "origem_seccion": "farmacodinamia_parte1",
+            "explicacoes": {
+                "robo": [
+                    "Un receptor de membrana acoplado a proteína Gs requiere pasos de transducción de señal (segundos mensajeros), más lento que la apertura directa de un canal iónico.",
+                    "Un receptor citoplasmático acoplado a proteína Gs, además de requerir pasos de transducción de señal, implica un mecanismo más lento por su localización intracelular.",
+                    "Los receptores ionotrópicos, como los acoplados directamente a un canal de cloro, abren el canal de forma inmediata al unirse el ligando, sin pasos intermedios de transducción de señal, dando el inicio de acción más rápido de todos — es la respuesta correcta.",
+                    "Los receptores nucleares actúan modulando la transcripción génica, un proceso que toma horas, siendo el mecanismo más lento de todos los listados."
+                ],
+                "fantasma": [
+                    "Eso necesita pasos intermedios, es más lento.",
+                    "Eso también necesita pasos, y está adentro de la célula.",
+                    "¡Esta! Abre el canal directo, sin vueltas.",
+                    "Eso cambia genes, tarda horas."
+                ],
+                "gato": [
+                    "Fijate: necesita pasos.",
+                    "Dato curioso: necesita pasos y está adentro.",
+                    "¡Ronroneo de aprobación! Directo al grano.",
+                    "Miau, tarda horas."
+                ]
+            }
         },
         {
             "numero": 201,
