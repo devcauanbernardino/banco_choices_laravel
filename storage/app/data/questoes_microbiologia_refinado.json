@@ -31303,7 +31303,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "La opción CORRECTA es C: Toxoplasmosis/ ceguera producida por coriorretinitis. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es C: Toxoplasmosis/ ceguera producida por coriorretinitis. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "Los dermatofitos causan infecciones superficiales de piel, pelo y uñas; no producen enfermedad diseminada por vía hematógena.",
+                    "En la reactivación viral del CMV no se busca seroconversión de IgG, ya que el paciente ya posee anticuerpos previos; se utilizan antigenemia pp65 o PCR para detectar replicación activa.",
+                    "La toxoplasmosis cerebral puede acompañarse de coriorretinitis, causando ceguera por afectación ocular, siendo una manifestación característica en pacientes con SIDA avanzado — es la respuesta correcta.",
+                    "En Cryptosporidium parvum se observan OOQUISTES (no trofozoítos) en materia fecal, con tinción de Ziehl-Neelsen modificada (Kinyoun), no simplemente fijado en formol."
+                ],
+                "fantasma": [
+                    "Ese se queda en la piel, no viaja.",
+                    "Ese ya tiene anticuerpo, no busca eso.",
+                    "¡Esta! Se queda ciego por el ojo, la correcta.",
+                    "Ahí se ve otra cosa, no el bicho completo."
+                ],
+                "gato": [
+                    "Fijate: se queda en la piel.",
+                    "Dato curioso: ya tiene anticuerpo.",
+                    "¡Ronroneo de aprobación! Ciego por el ojo.",
+                    "Miau, es otra cosa."
+                ]
+            }
         },
         {
             "numero": 41,
@@ -31329,7 +31349,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la escarificación de las lesiones cutáneas y de mucosas es una muestra adecuada.",
+                    "Efectivamente el esputo es una muestra adecuada, dado el compromiso respiratorio.",
+                    "Efectivamente los hemocultivos son adecuados ante sospecha de diseminación hematógena.",
+                    "El hisopado superficial de las lesiones no obtiene material representativo del agente causal; se requiere escarificación profunda de la lesión, no un simple hisopado de superficie — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa está bien, esa muestra.",
+                    "Esa está bien, esa muestra.",
+                    "Esa está bien, esa muestra.",
+                    "¡Esta! Eso solo roza arriba, no alcanza."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! No alcanza."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -31355,7 +31395,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "La opción CORRECTA es D: Levaduras monogemantes intracelulares de 2 a 4 micrones de diámetro en el examen directo con Giemsa / Histoplasma capsulatum. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es D: Levaduras monogemantes intracelulares de 2 a 4 micrones de diámetro en el examen directo con Giemsa / Histoplasma capsulatum. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "Las levaduras multibrotantes son características de Paracoccidioides brasiliensis, no de Coccidioides posadasii, que se observa como esférulas con endosporas.",
+                    "Esta descripción morfológica no corresponde al Complejo Paracoccidioides brasiliensis, que se observa como levaduras multibrotantes ('rueda de timón'), no filamentos con esas conidias en la muestra clínica directa.",
+                    "Los artroconidios se observan en el cultivo ambiental de Coccidioides, no en el examen directo de material clínico, donde se ven esférulas con endosporas.",
+                    "Las levaduras monogemantes intracelulares de 2 a 4 micrones observadas con tinción de Giemsa son características de Histoplasma capsulatum dentro de macrófagos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa gemación es del otro hongo.",
+                    "Esa forma no es de ese hongo en el paciente.",
+                    "Eso se ve en el cultivo, no en el paciente.",
+                    "¡Esta! La levadurita chiquita adentro del macrófago, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es del otro hongo.",
+                    "Dato curioso: no es así en el paciente.",
+                    "Miau, es del cultivo.",
+                    "¡Ronroneo de aprobación! La levadurita chiquita."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -31381,7 +31441,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: El diagnóstico indirecto puede realizarse por la búsqueda de anticuerpos IgM anti Pneumocystis o seroconversión de IgG. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: El diagnóstico indirecto puede realizarse por la búsqueda de anticuerpos IgM anti Pneumocystis o seroconversión de IgG. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "El diagnóstico de Pneumocystis jirovecii no se realiza mediante anticuerpos IgM o seroconversión de IgG, ya que la mayoría de los adultos ya tienen anticuerpos previos por exposición asintomática; se usa visualización directa o técnicas moleculares — esta es la opción incorrecta.",
+                    "Efectivamente el humano es el único reservorio y puede ser portador asintomático.",
+                    "Efectivamente la muestra de elección es el lavado broncoalveolar.",
+                    "Efectivamente es un hongo que no se puede aislar por medios de cultivo convencionales."
+                ],
+                "fantasma": [
+                    "¡Esta! Casi todos ya tienen ese anticuerpo, no sirve.",
+                    "Esa está bien, solo el humano.",
+                    "Esa está bien, esa muestra.",
+                    "Esa está bien, no crece en cultivo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Ya casi todos lo tienen.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -31407,7 +31487,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: La diarrea crónica en estos pacientes se asocia frecuentemente a Cryptosporidium-parvum el cual puede diagnosticarse mediante la seroconversión de IgG específica. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: La diarrea crónica en estos pacientes se asocia frecuentemente a Cryptosporidium-parvum el cual puede diagnosticarse mediante la seroconversión de IgG específica. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la citomegalovirosis puede diagnosticarse por shell-vial o búsqueda de antígeno pp65.",
+                    "Efectivamente el sarcoma de Kaposi es causado por el virus herpes humano tipo 8, con compromiso de piel y mucosas.",
+                    "Efectivamente la toxoplasmosis cerebral se presenta como reactivación y es la causa más frecuente de masa cerebral ocupante en SIDA.",
+                    "Cryptosporidium parvum se diagnostica mediante examen coproparasitológico con tinción especial (Ziehl-Neelsen modificada), no mediante seroconversión de IgG específica, que no es un método diagnóstico útil para esta parasitosis — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, con esas pruebas.",
+                    "Esa está bien, ese virus.",
+                    "Esa está bien, la más común.",
+                    "¡Esta! Eso se ve en la caca, no con ese anticuerpo."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Se ve en la caca."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -31433,7 +31533,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "La opción CORRECTA es B: Muestra obtenida mediante lavado bronco alveolar! Pneumocystis Jirovecii/ observación de elementos quísticos con tinción de azul de toluidina. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es B: Muestra obtenida mediante lavado bronco alveolar! Pneumocystis Jirovecii/ observación de elementos quísticos con tinción de azul de toluidina. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "En Cryptococcus neoformans se busca el ANTÍGENO capsular (no anticuerpos IgM), ya que la respuesta de anticuerpos en inmunosuprimidos es pobre.",
+                    "El lavado broncoalveolar es la muestra de elección para Pneumocystis jirovecii, observándose elementos quísticos con tinción de azul de toluidina — es la respuesta correcta.",
+                    "Histoplasma capsulatum en muestra clínica se observa en su forma LEVADURIFORME intracelular, no como elementos miceliales; la forma filamentosa corresponde al cultivo a temperatura ambiente.",
+                    "Cystoisospora belli se diagnostica por observación de OOQUISTES en materia fecal con tinción de Ziehl-Neelsen modificada, no por trofozoítos intraepiteliales con auramina-rodamina (esta última se usa para micobacterias)."
+                ],
+                "fantasma": [
+                    "Ahí se busca el antígeno, no el anticuerpo.",
+                    "¡Esta! Se ve el quiste con esa tinción azul, la correcta.",
+                    "Ese se ve como levadura, no filamento.",
+                    "Eso se ve por el huevito, no así."
+                ],
+                "gato": [
+                    "Fijate: es el antígeno.",
+                    "¡Ronroneo de aprobación! El quiste azul.",
+                    "Dato curioso: es levadura.",
+                    "Miau, es por el huevito."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -31459,7 +31579,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "La opción CORRECTA es B: Pneumogcystis jirovecii Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es B: Pneumogcystis jirovecii Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "El HHV-6 se asocia más a reactivación viral con fiebre y erupción, no específicamente a enfermedad pulmonar restrictiva crónica.",
+                    "En la fase crónica de EICH (después de los 100 días), con inmunosupresión prolongada de la inmunidad celular y afectación pulmonar restrictiva, Pneumocystis jirovecii es un agente etiológico probable que debe considerarse — es la respuesta correcta.",
+                    "Staphylococcus aureus es más típico de las fases tempranas relacionadas a catéteres, no de la fase crónica con este cuadro clínico.",
+                    "Candida albicans es más típica de la fase de preengraftment (neutropenia temprana), no de la fase crónica de EICH."
+                ],
+                "fantasma": [
+                    "Ese da otro cuadro.",
+                    "¡Esta! Ese da esa enfermedad de pulmón, la correcta.",
+                    "Ese es de antes, con el catéter.",
+                    "Ese es de antes, con la neutropenia."
+                ],
+                "gato": [
+                    "Fijate: es otro cuadro.",
+                    "¡Ronroneo de aprobación! Da esa enfermedad de pulmón.",
+                    "Dato curioso: es de antes.",
+                    "Miau, es de antes."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -31485,7 +31625,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "A",
-            "feedback": "La opción CORRECTA es A: Tinción de Giemsa a partir de muestras respiratorias/ visualización de quistes y trofozoítos/ Pneumocystis Jirovecii Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es A: Tinción de Giemsa a partir de muestras respiratorias/ visualización de quistes y trofozoítos/ Pneumocystis Jirovecii Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "La tinción de Giemsa a partir de muestras respiratorias permite visualizar quistes y trofozoítos de Pneumocystis jirovecii, agente etiológico relevante en el contexto de EICH crónico — es la respuesta correcta.",
+                    "Aspergillus fumigatus presenta hifas hialinas TABICADAS con división dicotómica, no cenocíticas; las hifas cenocíticas son de los mucorales.",
+                    "En un paciente inmunosuprimido con posible reactivación de CMV, la detección de IgG específica no es útil por sí sola; se requieren antigenemia pp65 o PCR.",
+                    "Nocardia asteroides es una bacteria (actinomiceto), no un hongo, y su cultivo requiere condiciones especiales, no simplemente agar Sabouraud con antibióticos como en hongos."
+                ],
+                "fantasma": [
+                    "¡Esta! Se ve el quiste y el trofozoíto, la correcta.",
+                    "Ese no tiene esa forma sin tabique.",
+                    "Eso no alcanza solo, hay que buscar otra cosa.",
+                    "Ese no es hongo, es bacteria."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Se ve el quiste.",
+                    "Fijate: tiene tabique.",
+                    "Dato curioso: no alcanza solo.",
+                    "Miau, es bacteria."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -31511,7 +31671,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente Aspergillus fumigatus puede asociarse a la enfermedad injerto contra huésped crónico.",
+                    "Candida krusei es típica de la fase temprana de preengraftment (neutropenia), no de la fase crónica de EICH — esta es la excepción.",
+                    "Efectivamente el VZV se reactiva típicamente en la fase crónica (tardía) del trasplante.",
+                    "Efectivamente el CMV puede reactivarse y asociarse a la fase crónica de EICH."
+                ],
+                "fantasma": [
+                    "Esa está bien, se asocia.",
+                    "¡Esta! Esa es de mucho antes, no de esta fase.",
+                    "Esa está bien, se asocia.",
+                    "Esa está bien, se asocia."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Es de antes.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -31537,7 +31717,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "B",
-            "feedback": "La opción CORRECTA es B: HHB8. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es B: HHB8. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "El citomegalovirus no produce típicamente lesiones nodulares rojo vino en piel ni lesiones polipoides en tubo digestivo como las descriptas.",
+                    "El herpesvirus humano tipo 8 (HHV-8) causa el sarcoma de Kaposi, que se manifiesta con lesiones nodulares de color rojo vinoso en la piel y lesiones polipoides en el tubo digestivo, además de poder afectar el pulmón, siendo la etiología más probable en este cuadro — es la respuesta correcta.",
+                    "Candida albicans causa candidiasis mucocutánea, no lesiones nodulares rojo vino ni lesiones polipoides digestivas.",
+                    "Cryptococcus neoformans puede causar lesiones cutáneas moluscoides, pero no las lesiones nodulares rojo vino ni las polipoides digestivas descriptas."
+                ],
+                "fantasma": [
+                    "Ese no da esas ronchas moradas.",
+                    "¡Esta! Ese hace las manchas vino y los pólipos, la correcta.",
+                    "Ese da hongo blanco, no esto.",
+                    "Ese da verruguita, no esto."
+                ],
+                "gato": [
+                    "Fijate: no da eso.",
+                    "¡Ronroneo de aprobación! Manchas vino y pólipos.",
+                    "Dato curioso: da hongo blanco.",
+                    "Miau, da verruguita."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -31563,7 +31763,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "C",
-            "feedback": "La opción CORRECTA es C: La toma de muestra se realiza mediante biopsia de piel, tejido pulmonar o de las lesiones-del aparato digestivo. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es C: La toma de muestra se realiza mediante biopsia de piel, tejido pulmonar o de las lesiones-del aparato digestivo. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "El cultivo del virus HHV-8 no es un método empleado de rutina; es complejo y poco práctico clínicamente.",
+                    "El hisopado con tinción de Giemsa para efecto citopático se usa para otros virus (como herpes), no es el método diagnóstico del sarcoma de Kaposi.",
+                    "El diagnóstico del sarcoma de Kaposi se realiza mediante biopsia de piel, tejido pulmonar o de las lesiones del aparato digestivo, permitiendo la confirmación histopatológica de la neoplasia — es la respuesta correcta.",
+                    "La seroconversión de anticuerpos IgG anti-HHV-8 no es un método diagnóstico de rutina para confirmar la enfermedad activa."
+                ],
+                "fantasma": [
+                    "Eso no se hace de rutina.",
+                    "Eso es para otro virus.",
+                    "¡Esta! Se saca un pedacito y se mira, la correcta.",
+                    "Eso no confirma la enfermedad activa."
+                ],
+                "gato": [
+                    "Fijate: no es rutina.",
+                    "Dato curioso: es de otro virus.",
+                    "¡Ronroneo de aprobación! Se saca un pedacito.",
+                    "Miau, no confirma."
+                ]
+            }
         },
         {
             "numero": 51,
@@ -31589,7 +31809,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "feedback": "Feedback indisponível por erro na geração."
+            "feedback": "Feedback indisponível por erro na geração.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la escarificación de las lesiones cutáneas y de mucosas es una muestra adecuada.",
+                    "Efectivamente el esputo es una muestra adecuada, dado el compromiso respiratorio.",
+                    "Efectivamente los hemocultivos son adecuados ante sospecha de diseminación hematógena.",
+                    "El suero para estudios serológicos no es la muestra prioritaria para el diagnóstico microbiológico directo en este cuadro con lesiones activas; se prefieren métodos directos (examen microscópico, cultivo) sobre la serología en pacientes inmunosuprimidos, donde la respuesta de anticuerpos suele ser pobre — esta es la excepción."
+                ],
+                "fantasma": [
+                    "Esa está bien, esa muestra.",
+                    "Esa está bien, esa muestra.",
+                    "Esa está bien, esa muestra.",
+                    "¡Esta! Ahí el anticuerpo casi no se ve, no sirve."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Casi no se ve el anticuerpo."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -31615,7 +31855,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "La opción CORRECTA es D: Levaduras monogemantes intracelulares de 2 a 4 micrones de diámetro en el examen directo con Giemsa/Histoplasma capsulatum. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es D: Levaduras monogemantes intracelulares de 2 a 4 micrones de diámetro en el examen directo con Giemsa/Histoplasma capsulatum. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "Las levaduras multibrotantes son características de Paracoccidioides brasiliensis, no de Coccidioides posadasii, que se observa como esférulas con endosporas.",
+                    "Esta descripción morfológica no corresponde al Complejo Paracoccidioides brasiliensis, que se observa como levaduras multibrotantes ('rueda de timón'), no filamentos con esas conidias en la muestra clínica directa.",
+                    "Los artroconidios se observan en el cultivo ambiental de Coccidioides, no en el examen directo de material clínico, donde se ven esférulas con endosporas.",
+                    "Las levaduras monogemantes intracelulares de 2 a 4 micrones observadas con tinción de Giemsa son características de Histoplasma capsulatum dentro de macrófagos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa gemación es del otro hongo.",
+                    "Esa forma no es de ese hongo en el paciente.",
+                    "Eso se ve en el cultivo, no en el paciente.",
+                    "¡Esta! La levadurita chiquita adentro del macrófago, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es del otro hongo.",
+                    "Dato curioso: no es así en el paciente.",
+                    "Miau, es del cultivo.",
+                    "¡Ronroneo de aprobación! La levadurita chiquita."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -31641,7 +31901,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: El diagnóstico se realiza por aislamiento del patógeno en medios de cultivo especiales. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: El diagnóstico se realiza por aislamiento del patógeno en medios de cultivo especiales. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Pneumocystis jirovecii NO se puede aislar mediante medios de cultivo; el diagnóstico se realiza por visualización directa (tinción) o técnicas moleculares — esta es la opción incorrecta.",
+                    "Efectivamente el humano es el único reservorio y puede ser portador asintomático.",
+                    "Efectivamente la muestra de elección para el diagnóstico es el lavado broncoalveolar.",
+                    "Efectivamente las neumonías se presentan principalmente en pacientes con CD4+ <200 células/mm3."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese no crece en ningún cultivo.",
+                    "Esa está bien, solo el humano.",
+                    "Esa está bien, esa muestra.",
+                    "Esa está bien, ese número."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No crece en cultivo.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 54,
@@ -31667,7 +31947,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção CORRECTA",
             "resposta_correta": "D",
-            "feedback": "La opción CORRECTA es D: Escarificación o biopsia de las lesiones cutáneas para examen directo y cultivo. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta."
+            "feedback": "La opción CORRECTA es D: Escarificación o biopsia de las lesiones cutáneas para examen directo y cultivo. Las otras opciones no satisfacen de forma adecuada lo pedido en la pregunta.",
+            "explicacoes": {
+                "robo": [
+                    "La inmunodifusión en gel de agar es útil en formas crónicas, pero no es el método de elección en la forma aguda diseminada con inmunosupresión severa, donde la serología puede ser poco sensible.",
+                    "La contrainmunoelectroforesis tiene limitaciones similares en pacientes con inmunosupresión severa, donde la respuesta de anticuerpos es pobre.",
+                    "La seroconversión de IgG por ELISA no es confiable en pacientes con CD4 muy bajo, ya que la respuesta inmune humoral está gravemente comprometida.",
+                    "En un paciente con inmunosupresión severa (CD4 de 50) y sospecha de histoplasmosis aguda diseminada, se prefieren los métodos directos: escarificación o biopsia de las lesiones cutáneas para examen directo y cultivo, ya que la serología puede ser poco confiable en este contexto — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso sirve más en lo crónico, no acá.",
+                    "Eso también falla con pocas defensas.",
+                    "Eso no confía con tan pocas defensas.",
+                    "¡Esta! Mirar directo la piel, la correcta."
+                ],
+                "gato": [
+                    "Fijate: es de lo crónico.",
+                    "Dato curioso: falla igual.",
+                    "Miau, no confía.",
+                    "¡Ronroneo de aprobación! Mirar directo."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -31693,7 +31993,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Toxoplasmosis cerebral / se presenta con lesiones cerebrales únicas, sin edema,.en pacientes con CD4+ <100/mm”. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Toxoplasmosis cerebral / se presenta con lesiones cerebrales únicas, sin edema,.en pacientes con CD4+ <100/mm”. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la neumonía por Pneumocystis jirovecii es frecuente en CD4+ <200/mm3 y se diagnostica con tinciones especiales o PCR.",
+                    "La toxoplasmosis cerebral se presenta habitualmente con lesiones MÚLTIPLES y CON edema perilesional, no con lesión única sin edema — esta es la opción incorrecta.",
+                    "Efectivamente la candidiasis esofágica, causada por Candida albicans, se considera enfermedad definitoria de SIDA.",
+                    "Efectivamente el sarcoma de Kaposi se asocia a HHV-8 y puede afectar piel y órganos internos."
+                ],
+                "fantasma": [
+                    "Esa está bien, esos números.",
+                    "¡Esta! Son varias lesiones y con hinchazón, no una sola.",
+                    "Esa está bien, esa candidiasis.",
+                    "Esa está bien, ese virus."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Son varias con hinchazón.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -31719,7 +32039,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Candidiasis oral persistente Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Candidiasis oral persistente Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La candidiasis oral (orofaríngea) persistente por sí sola NO es una enfermedad marcadora de SIDA; es la candidiasis ESOFÁGICA la que se considera enfermedad definitoria — esta es la opción incorrecta.",
+                    "Efectivamente la coccidioidomicosis diseminada es una enfermedad marcadora de SIDA.",
+                    "Efectivamente la bacteriemia recurrente por Salmonella spp. es una enfermedad marcadora de SIDA.",
+                    "Efectivamente la leucoencefalopatía multifocal progresiva es una enfermedad marcadora de SIDA."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa de la boca sola no cuenta, es la del esófago.",
+                    "Esa está bien, cuenta.",
+                    "Esa está bien, cuenta.",
+                    "Esa está bien, cuenta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Es la del esófago que cuenta.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -31745,7 +32085,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Serología para Histoplasma capsulatum por contrainmunoelectrofores Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Serología para Histoplasma capsulatum por contrainmunoelectrofores Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la punción-aspiración de médula ósea para examen directo y cultivo es un método diagnóstico válido.",
+                    "Efectivamente el hemocultivo por lisis-centrifugación es útil para el diagnóstico de histoplasmosis diseminada.",
+                    "Efectivamente la escarificación o biopsia de lesiones cutáneas para examen directo y cultivo es válida.",
+                    "En un paciente con inmunosupresión severa sin tratamiento antirretroviral, la serología para Histoplasma por contrainmunoelectroforesis no es confiable, ya que la respuesta de anticuerpos suele ser pobre o ausente; se prefieren los métodos directos — esta es la opción incorrecta."
+                ],
+                "fantasma": [
+                    "Esa está bien, esa muestra.",
+                    "Esa está bien, esa técnica.",
+                    "Esa está bien, esa muestra.",
+                    "¡Esta! Con tan pocas defensas, ese anticuerpo casi no aparece."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta.",
+                    "¡Ronroneo de aprobación! Casi no aparece."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -31771,7 +32131,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Tuberculosis pulmonar. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Tuberculosis pulmonar. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la candidiasis esofágica es una enfermedad marcadora de SIDA.",
+                    "Efectivamente la histoplasmosis diseminada es una enfermedad marcadora de SIDA.",
+                    "La tuberculosis pulmonar simple no se considera enfermedad marcadora de SIDA en esta clasificación; solo la tuberculosis EXTRAPULMONAR se incluye como marcadora — esta es la opción incorrecta.",
+                    "Efectivamente el linfoma primario del sistema nervioso central es una enfermedad marcadora de SIDA."
+                ],
+                "fantasma": [
+                    "Esa está bien, cuenta.",
+                    "Esa está bien, cuenta.",
+                    "¡Esta! Esa del pulmón sola no cuenta acá.",
+                    "Esa está bien, cuenta."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "¡Ronroneo de aprobación! No cuenta esa.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -31797,7 +32177,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Hongos filamentosos hialinos tabicados/ Observación muestras de biopsia/ Mucormicosis por Rhizopus oryzae. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Hongos filamentosos hialinos tabicados/ Observación muestras de biopsia/ Mucormicosis por Rhizopus oryzae. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La mucormicosis por Rhizopus oryzae se caracteriza por hifas hialinas CENOCÍTICAS (sin septos), no tabicadas; la presencia de septos es típica de Aspergillus — esta es la opción incorrecta.",
+                    "Efectivamente el uso de filtros HEPA es una medida de profilaxis para la aspergilosis invasora.",
+                    "Efectivamente Fusarium presenta hifas tabicadas con macroconidios en forma de banana en muestras respiratorias.",
+                    "Efectivamente en la aspergilosis broncopulmonar alérgica ocurre depósito de inmunocomplejos por hipersensibilidad tipo I y III."
+                ],
+                "fantasma": [
+                    "¡Esta! Ese hongo no tiene tabique.",
+                    "Esa está bien, ese filtro.",
+                    "Esa está bien, esa forma de banana.",
+                    "Esa está bien, esos anticuerpos."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Sin tabique.",
+                    "Fijate: correcta.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         },
         {
             "numero": 60,
@@ -31823,7 +32223,27 @@
             "tipo": "multipla_escolha",
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Los hemocultivos en la aspergilosis invasora poseen elevada sensibilidad. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Los hemocultivos en la aspergilosis invasora poseen elevada sensibilidad. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Efectivamente la aspergilosis semi-invasora o necrotizante se caracteriza por invasión tisular sin invasión vascular.",
+                    "Los hemocultivos en la aspergilosis invasora son habitualmente NEGATIVOS, poseyendo baja sensibilidad, no elevada — esta es la opción incorrecta.",
+                    "Efectivamente la aspergilosis invasora tiene tropismo por los vasos sanguíneos, produciendo trombosis, infarto y necrosis tisular.",
+                    "Efectivamente el galactomanano por ELISA doble sándwich posee un valor predictivo positivo elevado en la aspergilosis invasora."
+                ],
+                "fantasma": [
+                    "Esa está bien, sin meterse al vaso.",
+                    "¡Esta! Ese casi siempre da negativo.",
+                    "Esa está bien, tapa el vaso.",
+                    "Esa está bien, ese test."
+                ],
+                "gato": [
+                    "Fijate: correcta.",
+                    "¡Ronroneo de aprobación! Casi siempre negativo.",
+                    "Dato curioso: correcta.",
+                    "Miau, correcta."
+                ]
+            }
         }
     ]
 }
