@@ -1867,7 +1867,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Las N-acetil transferasas catalizan la acetilación, una reacción de conjugación típica de la Fase II (sintética) del metabolismo — es la respuesta correcta.",
+                    "Las monoaminooxidasas (MAO) catalizan reacciones oxidativas de desaminación, típicas de la Fase I, no de la Fase II.",
+                    "Las esterasas catalizan la hidrólisis de ésteres, una reacción de Fase I, no de Fase II.",
+                    "Los citocromos P450 catalizan principalmente reacciones de oxidación, típicas de la Fase I, no de la Fase II."
+                ],
+                "fantasma": [
+                    "¡Esta! Esa conjuga, es de la Fase II.",
+                    "Esa es de la Fase I.",
+                    "Esa es de la Fase I.",
+                    "Esos son de la Fase I."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Fase II.",
+                    "Fijate: Fase I.",
+                    "Dato curioso: Fase I.",
+                    "Miau, Fase I."
+                ]
+            }
         },
         {
             "numero": 42,
@@ -1893,7 +1913,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La inducción enzimática acelera el metabolismo, lo que en general DISMINUYE (no aumenta) la concentración en fase estacionaria, ya que la droga se elimina más rápido.",
+                    "Para un fármaco (no una prodroga), un metabolismo más rápido reduce (no aumenta) su efecto farmacológico, al disminuir su concentración activa.",
+                    "Al inducir el citocromo, el fármaco se metaboliza más rápido, aumentando su velocidad de eliminación del organismo — es la respuesta correcta.",
+                    "Para un fármaco activo (no prodroga) que se metaboliza a un producto inactivo, la inducción generalmente reduce (no aumenta) la exposición y por ende el potencial tóxico del fármaco original."
+                ],
+                "fantasma": [
+                    "Es al revés, baja.",
+                    "Es al revés, baja el efecto.",
+                    "¡Esta! Se metaboliza y se va más rápido.",
+                    "Es al revés, en general baja."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: baja.",
+                    "¡Ronroneo de aprobación! Se va rápido.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 43,
@@ -1919,7 +1959,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El primer paso hepático no reduce necesariamente la absorción gastrointestinal en sí; el fármaco puede absorberse bien y aun así perderse antes de llegar a la circulación sistémica.",
+                    "La vida media beta no es la variable directamente afectada por el primer paso hepático; este concepto pertenece más a la eliminación sistémica que al proceso de primer paso.",
+                    "La unión a proteínas plasmáticas no es la variable directamente disminuida por un extenso primer paso hepático.",
+                    "Un extenso metabolismo de primer paso hepático destruye gran parte del fármaco antes de que alcance la circulación sistémica, disminuyendo su fracción biodisponible — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso no es lo que baja acá.",
+                    "Eso no es lo que baja acá.",
+                    "Eso no es lo que baja acá.",
+                    "¡Esta! Se pierde antes de llegar a la sangre."
+                ],
+                "gato": [
+                    "Fijate: no es eso.",
+                    "Dato curioso: no es eso.",
+                    "Miau, no es eso.",
+                    "¡Ronroneo de aprobación! Se pierde antes."
+                ]
+            }
         },
         {
             "numero": 44,
@@ -1945,7 +2005,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El filtrado glomerular y la permeabilidad de la BHE no son factores determinantes de la difusión simple en sí, sino procesos o barreras específicas distintas.",
+                    "El gradiente electroquímico y la afinidad por un transportador son propios del transporte activo o facilitado, no de la difusión simple.",
+                    "La difusión simple está determinada por la liposolubilidad, el tamaño molecular y el grado de ionización de la droga — es la respuesta correcta.",
+                    "La diferencia de presión hidrostática y el flujo sanguíneo son relevantes para la ultrafiltración, no para la difusión simple."
+                ],
+                "fantasma": [
+                    "Eso es de otros procesos.",
+                    "Eso es de transporte activo.",
+                    "¡Esta! Grasa, tamaño e ionización.",
+                    "Eso es de la filtración."
+                ],
+                "gato": [
+                    "Fijate: es de otro proceso.",
+                    "Dato curioso: es de transporte activo.",
+                    "¡Ronroneo de aprobación! Los tres factores.",
+                    "Miau, es de la filtración."
+                ]
+            }
         },
         {
             "numero": 45,
@@ -1971,7 +2051,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La absorción de drogas básicas SÍ depende del pKa de la droga en relación al pH del medio; no es independiente de él.",
+                    "La velocidad con que una droga atraviesa una barrera depende, entre otros factores, de su naturaleza ácido-base y de su pKa, ya que estos determinan el grado de ionización en el medio — es la respuesta correcta.",
+                    "Para una droga básica, si su pKa está por encima del pH del medio, predominará la fracción IONIZADA (no la no ionizada), ya que las bases se ionizan más cuando el pH es menor que su pKa.",
+                    "El pKa es una propiedad intrínseca y constante de la droga; no varía en función del pH del medio (lo que varía con el pH es el grado de ionización, no el pKa)."
+                ],
+                "fantasma": [
+                    "Sí depende, y mucho.",
+                    "¡Esta! Naturaleza y pKa deciden la velocidad.",
+                    "Es al revés, se ioniza más.",
+                    "El pKa no cambia, es fijo."
+                ],
+                "gato": [
+                    "Fijate: sí depende.",
+                    "¡Ronroneo de aprobación! Naturaleza y pKa.",
+                    "Dato curioso: al revés.",
+                    "Miau, el pKa es fijo."
+                ]
+            }
         },
         {
             "numero": 46,
@@ -1997,7 +2097,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El bicarbonato acelera la eliminación del AAS, lo que DISMINUYE (no aumenta) su vida media.",
+                    "El bicarbonato alcaliniza la orina, aumentando la ionización del AAS (ácido), lo que reduce su reabsorción tubular y aumenta su eliminación — es la respuesta correcta.",
+                    "El bicarbonato DISMINUYE (no aumenta) la reabsorción tubular del AAS, al aumentar su fracción ionizada.",
+                    "El bicarbonato AUMENTA (no disminuye) el clearance renal del AAS, al favorecer su excreción."
+                ],
+                "fantasma": [
+                    "Es al revés, baja.",
+                    "¡Esta! Alcaliniza y saca el AAS más rápido.",
+                    "Es al revés, baja.",
+                    "Es al revés, sube."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Sale más rápido.",
+                    "Dato curioso: al revés.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 47,
@@ -2023,7 +2143,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La oxidación es una reacción de Fase I, no de Fase II.",
+                    "La reducción es una reacción de Fase I, no de Fase II.",
+                    "La glucuronidación conjuga el metabolito con ácido glucurónico, aumentando notablemente su hidrosolubilidad y facilitando su rápida excreción urinaria — es la respuesta correcta.",
+                    "La hidrólisis es una reacción de Fase I, no de Fase II."
+                ],
+                "fantasma": [
+                    "Esa es de Fase I.",
+                    "Esa es de Fase I.",
+                    "¡Esta! La que hace soluble en agua para salir rápido.",
+                    "Esa es de Fase I."
+                ],
+                "gato": [
+                    "Fijate: Fase I.",
+                    "Dato curioso: Fase I.",
+                    "¡Ronroneo de aprobación! Se disuelve y sale.",
+                    "Miau, Fase I."
+                ]
+            }
         },
         {
             "numero": 48,
@@ -2049,7 +2189,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Al aumentar el pH de la orina (más alcalino, por encima del pKa 5 de este ácido), la fracción ionizada AUMENTA, no disminuye.",
+                    "Al aumentar la ionización de este ácido con un pH urinario más alcalino, la excreción AUMENTA, no disminuye.",
+                    "Al aumentar el pH urinario por encima del pKa de este ácido débil, predomina la forma ionizada, que no se reabsorbe fácilmente en los túbulos renales; por eso la reabsorción disminuye — es la respuesta correcta.",
+                    "El clearance de esta droga AUMENTA (no disminuye) al aumentar el pH urinario, ya que se favorece su excreción."
+                ],
+                "fantasma": [
+                    "Es al revés, sube.",
+                    "Es al revés, sube.",
+                    "¡Esta! Se ioniza y no vuelve a entrar.",
+                    "Es al revés, sube."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "¡Ronroneo de aprobación! No vuelve a entrar.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 49,
@@ -2075,7 +2235,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La vía sublingual permite una absorción rápida (por la rica vascularización de la mucosa), no lenta.",
+                    "La vía sublingual, gracias a su rica vascularización, permite una absorción rápida, y como el drenaje venoso evita la vena porta, el fármaco no sufre metabolismo de primer paso hepático — es la respuesta correcta.",
+                    "La vía sublingual permite una absorción rápida, no lenta, y evita (no sufre) el primer paso hepático.",
+                    "La vía sublingual evita (no sufre) el primer paso hepático, precisamente por su drenaje venoso directo que evita la vena porta."
+                ],
+                "fantasma": [
+                    "Es rápida, no lenta.",
+                    "¡Esta! Rápida y sin pasar por el hígado primero.",
+                    "Es rápida y sin ese paso hepático.",
+                    "No pasa por el hígado primero, es al revés."
+                ],
+                "gato": [
+                    "Fijate: es rápida.",
+                    "¡Ronroneo de aprobación! Directo, sin el hígado.",
+                    "Dato curioso: al revés en los dos.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 50,
@@ -2101,7 +2281,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El omeprazol inhibe el CYP2C19, lo que reduce (no potencia) la activación del clopidogrel.",
+                    "El omeprazol inhibe el CYP2C19, lo que reduce (no aumenta) la conversión del clopidogrel a su metabolito activo.",
+                    "Aunque la efectividad se reduce, no se anula por completo; el omeprazol es descrito como un inhibidor moderado, no total, del CYP2C19.",
+                    "El clopidogrel es una prodroga que requiere activación por CYP2C19; al coadministrarse con omeprazol (inhibidor moderado de esta enzima), se activa menos cantidad de fármaco, reduciendo la efectividad antiplaquetaria del tratamiento — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, baja.",
+                    "Es al revés, baja.",
+                    "No se anula del todo, solo baja.",
+                    "¡Esta! Menos activación, menos efecto."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: al revés.",
+                    "Miau, no es total.",
+                    "¡Ronroneo de aprobación! Menos activación."
+                ]
+            }
         },
         {
             "numero": 51,
@@ -2127,7 +2327,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La rifampicina no es sustrato del CYP2C19 en este escenario, solo inhibidor; por lo tanto su concentración no aumenta por este mecanismo.",
+                    "La rifampicina no es sustrato del CYP2C19, por lo que su concentración no se ve aumentada por la inhibición enzimática en este caso.",
+                    "La rifampicina no es sustrato del CYP2C19 (solo inhibidor), por lo que su concentración no aumenta; y aunque el diazepam sí aumenta, falta el omeprazol en esta combinación.",
+                    "El omeprazol y el diazepam son sustratos del CYP2C19; al ser esta enzima inhibida (por el propio omeprazol y por la rifampicina), el metabolismo de ambos sustratos se reduce, aumentando sus concentraciones plasmáticas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa no es sustrato, no sube por eso.",
+                    "Esa no es sustrato, no sube por eso.",
+                    "Falta uno de los dos.",
+                    "¡Esta! Los dos sustratos suben."
+                ],
+                "gato": [
+                    "Fijate: no es sustrato.",
+                    "Dato curioso: no es sustrato.",
+                    "Miau, falta uno.",
+                    "¡Ronroneo de aprobación! Los dos suben."
+                ]
+            }
         },
         {
             "numero": 52,
@@ -2153,7 +2373,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Activar la glucuroniltransferasa aumentaría la conjugación biliar, lo que en todo caso favorecería (no disminuiría) el sustrato disponible para la recirculación enterohepática.",
+                    "Un esquema de dosificación con período interdosis disminuido no tiene una relación causal directa con el mecanismo de la recirculación enterohepática.",
+                    "Competir por el transportador de cationes orgánicos no es el mecanismo relevante para la recirculación enterohepática, que depende principalmente de conjugados biliares (generalmente aniónicos) y su hidrólisis intestinal.",
+                    "Los antibióticos orales de amplio espectro destruyen la flora bacteriana intestinal encargada de hidrolizar los conjugados biliares (por ejemplo, glucurónidos), impidiendo que la droga se libere y se reabsorba, disminuyendo así la recirculación enterohepática — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso ayudaría, no disminuiría.",
+                    "Eso no tiene que ver directo.",
+                    "Ese no es el mecanismo acá.",
+                    "¡Esta! Mata la flora que hace el trabajo."
+                ],
+                "gato": [
+                    "Fijate: ayudaría.",
+                    "Dato curioso: no tiene que ver.",
+                    "Miau, no es ese.",
+                    "¡Ronroneo de aprobación! Mata la flora."
+                ]
+            }
         },
         {
             "numero": 53,
@@ -2179,7 +2419,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Un profármaco NO está en su forma activa; requiere biotransformación para volverse activo.",
+                    "Un profármaco no se define por la ausencia de metabolismo hepático, sino por requerir metabolismo (de cualquier tipo) para activarse.",
+                    "Un profármaco es un compuesto inicialmente inactivo (o poco activo) que requiere biotransformación metabólica para convertirse en el fármaco activo — es la respuesta correcta.",
+                    "Un profármaco no es, por definición, un metabolito tóxico; es un compuesto inactivo diseñado para activarse tras el metabolismo."
+                ],
+                "fantasma": [
+                    "Al revés, no está activo todavía.",
+                    "No es por eso, es por necesitar metabolismo.",
+                    "¡Esta! Inactivo hasta que lo metabolizan.",
+                    "No es tóxico, es solo inactivo."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: no es por eso.",
+                    "¡Ronroneo de aprobación! Necesita metabolismo.",
+                    "Miau, no es tóxico."
+                ]
+            }
         },
         {
             "numero": 54,
@@ -2205,7 +2465,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "El metabolismo microsomal se refiere a las reacciones catalizadas por enzimas del retículo endoplásmico liso (como el CYP450), no específicamente a la conjugación con sustancias endógenas.",
+                    "El metabolismo extramicrosomal se refiere a reacciones catalizadas fuera del retículo endoplásmico liso (por ejemplo, algunas hidrólisis), no específicamente a la conjugación.",
+                    "La conjugación de un fármaco (o su metabolito) con una sustancia endógena (ácido glucurónico, sulfato, glicina, etc.) es la definición misma de las reacciones de Fase II — es la respuesta correcta.",
+                    "Las reacciones de Fase I son de oxidación, reducción o hidrólisis, no de conjugación con sustancias endógenas."
+                ],
+                "fantasma": [
+                    "Eso es otra clasificación.",
+                    "Eso es otra clasificación.",
+                    "¡Esta! Conjugar es Fase II, por definición.",
+                    "Esa es la Fase I, no esta."
+                ],
+                "gato": [
+                    "Fijate: otra clasificación.",
+                    "Dato curioso: otra clasificación.",
+                    "¡Ronroneo de aprobación! Por definición.",
+                    "Miau, esa es la Fase I."
+                ]
+            }
         },
         {
             "numero": 55,
@@ -2231,7 +2511,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "D",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La solubilidad en agua efectivamente afecta la biodisponibilidad, ya que influye en la disolución y absorción del fármaco.",
+                    "El primer paso hepático efectivamente afecta la biodisponibilidad, al destruir parte del fármaco antes de que llegue a la circulación sistémica.",
+                    "La vía de administración efectivamente afecta la biodisponibilidad, ya que cada vía tiene distinta eficiencia de absorción y exposición al metabolismo de primer paso.",
+                    "Los tres factores mencionados (solubilidad en agua, primer paso hepático y vía de administración) influyen en la biodisponibilidad de un fármaco — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esa sí afecta.",
+                    "Esa sí afecta.",
+                    "Esa sí afecta.",
+                    "¡Esta! Las tres pesan."
+                ],
+                "gato": [
+                    "Fijate: sí afecta.",
+                    "Dato curioso: sí afecta.",
+                    "Miau, sí afecta.",
+                    "¡Ronroneo de aprobación! Las tres."
+                ]
+            }
         },
         {
             "numero": 56,
@@ -2257,7 +2557,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "A",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "La ultrafiltración (filtración glomerular) es un proceso pasivo dependiente de la presión hidrostática, sin necesidad de transportadores, por lo que es esencialmente no saturable — es la respuesta correcta.",
+                    "La secreción tubular es un mecanismo distinto (activo, mediado por transportadores) que ocurre a nivel de los túbulos renales, no en el glomérulo donde ocurre la ultrafiltración.",
+                    "La ultrafiltración es un proceso PASIVO que depende de la presión hidrostática, no requiere energía ni está acoplada a bombas iónicas.",
+                    "La mayoría de las drogas se absorben a nivel gastrointestinal por difusión simple, no por ultrafiltración, que es un proceso renal/glomerular."
+                ],
+                "fantasma": [
+                    "¡Esta! No necesita transportador, no se satura.",
+                    "Esa es otra cosa, en el túbulo.",
+                    "No gasta energía, es pasivo.",
+                    "Eso es de otra parte del cuerpo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! No se satura.",
+                    "Fijate: es otra cosa.",
+                    "Dato curioso: es pasivo.",
+                    "Miau, es de otra parte."
+                ]
+            }
         },
         {
             "numero": 57,
@@ -2282,8 +2602,28 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "resposta_correta": "A",
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Aplicando Henderson-Hasselbalch para un ácido, la razón no-ionizado/ionizado es 10^(pKa-pH); en el estómago (pH 3) es 10^5, y en el intestino (pH 6) es 10^2, dando una diferencia de 10^3 = 1000 veces mayor en el estómago — es la respuesta correcta.",
+                    "El cálculo correcto con Henderson-Hasselbalch da una diferencia de 1000 veces (10^3), no de 10000 veces (10^4).",
+                    "El cálculo correcto con Henderson-Hasselbalch da una diferencia de 1000 veces, no de 10 veces.",
+                    "El cálculo correcto con Henderson-Hasselbalch da una diferencia de 1000 veces, no de 100 veces."
+                ],
+                "fantasma": [
+                    "¡Esta! Cada unidad de pH multiplica por 10.",
+                    "Un cero de más.",
+                    "Faltan varios ceros.",
+                    "Falta un cero."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! 10 elevado a 3.",
+                    "Fijate: un cero de más.",
+                    "Dato curioso: faltan ceros.",
+                    "Miau, falta un cero."
+                ]
+            }
         },
         {
             "numero": 58,
@@ -2309,7 +2649,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Un metabolismo de primer paso elevado REDUCE (no maximiza) la biodisponibilidad oral, al destruir gran parte del fármaco antes de llegar a la circulación sistémica.",
+                    "Los medicamentos altamente hidrófilos pueden tener dificultad para atravesar membranas lipídicas, lo que puede limitar (no maximizar) su absorción oral.",
+                    "Un fármaco muy hidrófobo (liposoluble), pero que además es soluble en soluciones acuosas (buena disolución inicial), combina ambas cualidades necesarias para una absorción oral óptima: se disuelve bien y luego atraviesa fácilmente las membranas — es la respuesta correcta.",
+                    "Los medicamentos químicamente inestables pueden degradarse antes de absorberse, lo que reduce (no maximiza) la biodisponibilidad oral."
+                ],
+                "fantasma": [
+                    "Eso reduce, no maximiza.",
+                    "Eso puede trabar el paso por la membrana.",
+                    "¡Esta! Se disuelve bien y pasa fácil.",
+                    "Eso se rompe antes de absorberse."
+                ],
+                "gato": [
+                    "Fijate: reduce.",
+                    "Dato curioso: traba el paso.",
+                    "¡Ronroneo de aprobación! Las dos cosas juntas.",
+                    "Miau, se rompe."
+                ]
+            }
         },
         {
             "numero": 59,
@@ -2335,7 +2695,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "C",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Una alta afinidad por la albúmina reduce la fracción libre del fármaco, lo que en general DISMINUYE (no aumenta) su eliminación renal directa.",
+                    "Una alta afinidad por la albúmina retiene al fármaco en el plasma, resultando en un volumen de distribución BAJO (no mayor).",
+                    "Una alta afinidad por la albúmina significa que gran parte del fármaco circula unido a esta proteína, dejando una menor fracción libre disponible para ejercer efecto o distribuirse — es la respuesta correcta.",
+                    "Una alta afinidad por la albúmina limita (no aumenta) la difusión del fármaco a los tejidos, ya que solo la fracción libre puede atravesar las membranas."
+                ],
+                "fantasma": [
+                    "Es al revés, baja.",
+                    "Es al revés, es bajo.",
+                    "¡Esta! Casi todo pegado a la proteína.",
+                    "Es al revés, se mueve menos."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "Dato curioso: es bajo.",
+                    "¡Ronroneo de aprobación! Pegado a la proteína.",
+                    "Miau, al revés."
+                ]
+            }
         },
         {
             "numero": 60,
@@ -2361,7 +2741,27 @@
             "tipo": "multipla_escolha",
             "nota": null,
             "resposta_correta": "B",
-            "origem_seccion": "farmacocinetica_i"
+            "origem_seccion": "farmacocinetica_i",
+            "explicacoes": {
+                "robo": [
+                    "Es el circuito enterohepático EN SÍ (no su inhibición) el que puede aumentar la vida media y la duración del efecto, y esto ocurre típicamente en fármacos conjugados excretados por bilis, no restringido a drogas muy liposolubles.",
+                    "Los antibióticos orales de amplio espectro pueden destruir la flora bacteriana del colon, que normalmente hidroliza los conjugados biliares para liberar la droga y permitir su reabsorción; sin esa flora, el circuito enterohepático se inhibe — es la respuesta correcta.",
+                    "El circuito enterohepático depende de la excreción biliar, que no está limitada exclusivamente a fármacos administrados por vías que sufren primer paso hepático.",
+                    "El circuito enterohepático puede darse en drogas administradas por distintas vías, siempre que sufran excreción biliar y reabsorción intestinal; no está limitado únicamente a la vía oral."
+                ],
+                "fantasma": [
+                    "Al revés, es el circuito el que alarga.",
+                    "¡Esta! Sin bacterias, no hay reciclaje.",
+                    "No es exclusivo de esas vías.",
+                    "No es solo por una vía."
+                ],
+                "gato": [
+                    "Fijate: al revés.",
+                    "¡Ronroneo de aprobación! Sin bacterias, no hay reciclaje.",
+                    "Dato curioso: no es exclusivo.",
+                    "Miau, no es solo una vía."
+                ]
+            }
         },
         {
             "numero": 61,
