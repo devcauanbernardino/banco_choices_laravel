@@ -12245,7 +12245,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La liberación de renina a nivel renal está mediada por receptores beta1, no beta2; esta afirmación describe mal el receptor implicado.",
+                    "El asma, independientemente de su severidad, no es una contraindicación absoluta universal; los beta-bloqueantes cardioselectivos pueden usarse con precaución en casos leves.",
+                    "El efecto antianginoso de los beta-bloqueantes se explica en parte por la prolongación del tiempo diastólico, lo que mejora el llenado y la perfusión coronaria — es la respuesta correcta.",
+                    "La bradicardia sintomática por bloqueo AV de tercer grado es un efecto adverso serio pero no 'muy frecuente'; la bradicardia leve es más común que el bloqueo completo."
+                ],
+                "fantasma": [
+                    "Ese receptor está mal, es el beta1 el que frena la renina, no el beta2.",
+                    "Eso de 'independientemente de la severidad' es demasiado absoluto para el asma.",
+                    "¡Esta! Más tiempo en diástole, mejor riego para el corazón.",
+                    "El bloqueo completo no es tan común como suena en esta frase."
+                ],
+                "gato": [
+                    "Fijate: es el beta1, no el beta2, el que frena la renina.",
+                    "Dato curioso: el asma leve no siempre es contraindicación absoluta.",
+                    "¡Ronroneo de aprobación! Más diástole, más riego coronario: el fundamento antianginoso de los beta-bloqueantes.",
+                    "Miau, el bloqueo AV completo no es tan frecuente como lo pinta la frase."
+                ]
+            }
         },
         {
             "numero": 262,
@@ -12272,7 +12292,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El labetalol en realidad es antagonista (no agonista parcial) del receptor alfa1, y su bloqueo beta es no selectivo, no selectivo beta1.",
+                    "La hiperuricemia no es un efecto adverso característico del labetalol.",
+                    "El labetalol tiene efecto antagonista alfa1 y antagonismo beta no selectivo (beta1 y beta2) — es la respuesta correcta.",
+                    "El asma, independientemente de su severidad, no es una contraindicación absoluta universal para todos los beta-bloqueantes."
+                ],
+                "fantasma": [
+                    "Es al revés: antagoniza el alfa1, y su bloqueo beta no es selectivo.",
+                    "Esto no es cosa del labetalol, es más de las tiazidas.",
+                    "¡Esta! Alfa1 antagonizado, beta bloqueado sin distinción, el combo completo.",
+                    "Eso de 'independientemente de la severidad' es demasiado absoluto."
+                ],
+                "gato": [
+                    "Fijate: antagoniza el alfa1, y su beta no es selectivo.",
+                    "Dato curioso: la hiperuricemia no es cosa del labetalol.",
+                    "¡Ronroneo de aprobación! Labetalol: alfa1 antagonizado y beta bloqueado sin distinción.",
+                    "Miau, eso es demasiado absoluto para ser cierto siempre."
+                ]
+            }
         },
         {
             "numero": 263,
@@ -12299,7 +12339,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La lidocaína no es un fármaco de elección para el control de frecuencia en la fibrilación auricular.",
+                    "La nifedipina, un bloqueante cálcico dihidropiridínico, no actúa sobre el nodo AV, no sirve para controlar la frecuencia ventricular.",
+                    "La procainamida se usa más para intentar la reversión, no para el control crónico de frecuencia.",
+                    "Un beta-bloqueante, al enlentecer la conducción a través del nodo AV, es una opción clásica y efectiva para el control de frecuencia en la fibrilación auricular que no puede revertirse a ritmo sinusal — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta no es la elección para controlar la frecuencia acá.",
+                    "Esta no toca el nodo AV, no sirve para esto.",
+                    "Esta es más para intentar revertir, no para controlar la frecuencia día a día.",
+                    "¡Esta! Frena el nodo AV, controla bien la frecuencia cuando no se puede volver al ritmo normal."
+                ],
+                "gato": [
+                    "Fijate: lidocaína no es la elección para esto.",
+                    "Dato curioso: nifedipina no toca el nodo AV.",
+                    "Miau, procainamida es más para revertir, no para controlar frecuencia crónicamente.",
+                    "¡Ronroneo de aprobación! Beta-bloqueante: control de frecuencia clásico cuando la FA llegó para quedarse."
+                ]
+            }
         },
         {
             "numero": 264,
@@ -12326,7 +12386,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La propafenona no es el antiarrítmico indicado en este contexto de taquicardia por hipertiroidismo.",
+                    "El atenolol es un beta-bloqueante también útil, pero el propranolol es la respuesta clásicamente esperada por su propiedad adicional de inhibir la conversión periférica de T4 a T3.",
+                    "El propranolol, un beta-bloqueante no selectivo, es de elección en la taquicardia sinusal del hipertiroidismo, ya que además inhibe la conversión periférica de T4 a T3 — es la respuesta correcta.",
+                    "La amiodarona, con su alto contenido de yodo, puede empeorar la disfunción tiroidea y no es de elección en este contexto."
+                ],
+                "fantasma": [
+                    "Esta no es la respuesta para este cuadro particular.",
+                    "Este también sirve, pero el propranolol tiene un plus extra clásico acá.",
+                    "¡Esta! Propranolol frena el corazón y encima frena la conversión de hormona tiroidea.",
+                    "Esta puede empeorar justo el problema de fondo, no conviene acá."
+                ],
+                "gato": [
+                    "Fijate: propafenona no es la respuesta para este cuadro.",
+                    "Dato curioso: atenolol sirve, pero propranolol tiene ese plus extra clásico.",
+                    "¡Ronroneo de aprobación! Propranolol: frena el corazón y la conversión de T4 a T3, doble beneficio en hipertiroidismo.",
+                    "Miau, amiodarona puede empeorar la tiroides, mala elección acá."
+                ]
+            }
         },
         {
             "numero": 265,
@@ -12353,7 +12433,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El paciente puede efectivamente estar confundiendo antiarrítmico con antihipertensivo, pero muchos beta-bloqueantes cumplen ambas funciones, por lo que la sospecha principal sigue siendo esta clase de fármacos.",
+                    "El propranolol y el sotalol, ambos beta-bloqueantes, son causas clásicas de disfunción sexual (disfunción eréctil) como efecto adverso — es la respuesta correcta.",
+                    "La quinidina no se asocia clásicamente con disfunción sexual como efecto adverso característico.",
+                    "La amiodarona no tiene la disfunción sexual como uno de sus efectos adversos más característicos."
+                ],
+                "fantasma": [
+                    "Puede ser, pero muchos de estos fármacos hacen las dos cosas a la vez.",
+                    "¡Esta! Los beta-bloqueantes son sospechosos clásicos de este problema.",
+                    "Esta no tiene ese efecto adverso tan marcado.",
+                    "Esta tampoco es la sospechosa habitual para este problema."
+                ],
+                "gato": [
+                    "Fijate: puede ser, pero muchos beta-bloqueantes sirven para ambas cosas a la vez.",
+                    "¡Ronroneo de aprobación! Propranolol/sotalol: sospechosos clásicos de la disfunción sexual.",
+                    "Dato curioso: quinidina no tiene ese efecto adverso característico.",
+                    "Miau, amiodarona tampoco es la sospechosa habitual acá."
+                ]
+            }
         },
         {
             "numero": 266,
@@ -12380,7 +12480,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El atenolol no produce taquicardia refleja, produce bradicardia por su efecto beta-bloqueante.",
+                    "El atenolol, al ser hidrofílico, no ingresa fácilmente al sistema nervioso central, a diferencia de fármacos lipofílicos como el propranolol.",
+                    "El atenolol no tiene propiedades agonistas alfa2 adrenérgicas, es un beta-bloqueante puro.",
+                    "El atenolol, al ser cardioselectivo (beta1), produce broncoconstricción con menor frecuencia que el propranolol, que es no selectivo (beta1 y beta2) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, frena el corazón, no lo acelera.",
+                    "Este no entra fácil al cerebro, a diferencia de otros de la familia.",
+                    "No tiene ese truco alfa2, es beta-bloqueante puro y simple.",
+                    "¡Esta! Al ser selectivo por el corazón, molesta menos a los bronquios que el propranolol."
+                ],
+                "gato": [
+                    "Fijate: es al revés, produce bradicardia, no taquicardia.",
+                    "Dato curioso: no entra fácil al cerebro, a diferencia del propranolol.",
+                    "Miau, no tiene propiedades alfa2 agonistas, es puro beta-bloqueante.",
+                    "¡Ronroneo de aprobación! Cardioselectivo, menos broncoconstricción que el propranolol no selectivo."
+                ]
+            }
         },
         {
             "numero": 267,
@@ -12407,7 +12527,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Está contraindicado en la profilaxis a largo plazo tras infarto agudo de miocardio.  Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Está contraindicado en la profilaxis a largo plazo tras infarto agudo de miocardio.  Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta: el atenolol puede enmascarar la taquicardia de la hipoglucemia, requiriendo precaución en diabéticos.",
+                    "Esta afirmación es correcta: puede empeorar el control glucémico en pacientes diabéticos.",
+                    "Esta afirmación es correcta: describe fielmente los efectos adversos característicos del atenolol.",
+                    "El atenolol en realidad está indicado, no contraindicado, en la profilaxis a largo plazo tras un infarto agudo de miocardio, con beneficio comprobado en mortalidad; por eso esta es la afirmación INCORRECTA que había que señalar — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esto es verdad, hay que cuidar a los diabéticos con este fármaco.",
+                    "Esto también es verdad, puede complicar el control del azúcar.",
+                    "Esto también es verdad, esos son los efectos adversos reales.",
+                    "¡Esta! Todo lo contrario, después de un infarto se recomienda, no se prohíbe."
+                ],
+                "gato": [
+                    "Fijate: esto sí es correcto, cuidado con los diabéticos.",
+                    "Dato curioso: esto también es correcto, puede empeorar la glucemia.",
+                    "Miau, esto también es correcto, lista real de efectos adversos.",
+                    "¡Ronroneo de aprobación! Está indicado, no contraindicado, tras un infarto: la incorrecta."
+                ]
+            }
         },
         {
             "numero": 268,
@@ -12434,7 +12574,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El diltiazem no es un bloqueante cálcico dihidropiridínico, sino no dihidropiridínico (benzotiazepina).",
+                    "La amlodipina es un bloqueante cálcico dihidropiridínico cuya acción predomina sobre el músculo liso vascular más que sobre el tejido cardíaco, lo que limita su capacidad de reducir directamente el consumo de oxígeno miocárdico como lo hacen los no dihidropiridínicos — es la respuesta correcta.",
+                    "El diltiazem, un bloqueante cálcico no dihidropiridínico, actúa predominantemente sobre el tejido cardíaco (nodo sinusal, nodo AV, miocardio), no sobre el músculo liso vascular.",
+                    "La amlodipina es dihidropiridínica, no no dihidropiridínica; esta afirmación clasifica mal al fármaco."
+                ],
+                "fantasma": [
+                    "Se equivocó de familia, el diltiazem no es dihidropiridínico.",
+                    "¡Esta! La amlodipina actúa más sobre los vasos que sobre el corazón mismo.",
+                    "Es al revés: el diltiazem actúa más sobre el corazón que sobre los vasos.",
+                    "Otra clasificación errónea, amlodipina sí es dihidropiridínica."
+                ],
+                "gato": [
+                    "Fijate: diltiazem no es dihidropiridínico, es todo lo contrario.",
+                    "¡Ronroneo de aprobación! Amlodipina: acción predominantemente vascular, no cardíaca directa.",
+                    "Dato curioso: diltiazem actúa más sobre el corazón que sobre los vasos.",
+                    "Miau, amlodipina es dihidropiridínica, la frase se equivoca de nuevo."
+                ]
+            }
         },
         {
             "numero": 269,
@@ -12461,7 +12621,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: la nifedipina es más vascular-selectiva, no cardioselectiva.",
+                    "El verapamilo es más cardioselectivo, actuando predominantemente sobre el nodo sinusal y AV y el miocardio, reduciendo la demanda de oxígeno cardíaco, útil en la angina — es la respuesta correcta.",
+                    "Esa no es la razón principal de la diferencia de uso entre ambos fármacos.",
+                    "Esa propiedad existe, pero no es la explicación central de por qué se prefiere en la angina frente a la nifedipina."
+                ],
+                "fantasma": [
+                    "Es al revés, la nife es más de los vasos, no del corazón.",
+                    "¡Esta! Verapamilo se mete más con el corazón, por eso sirve para la angina.",
+                    "Esa no es la razón de fondo acá.",
+                    "Eso pasa, pero no es la explicación principal de la diferencia de uso."
+                ],
+                "gato": [
+                    "Fijate: es al revés, nifedipina es más vascular, no cardíaca.",
+                    "¡Ronroneo de aprobación! Verapamilo: más cardioselectivo, por eso brilla en la angina.",
+                    "Dato curioso: esa no es la razón principal de la diferencia.",
+                    "Miau, eso pasa, pero no explica del todo la diferencia de uso."
+                ]
+            }
         },
         {
             "numero": 270,
@@ -12488,7 +12668,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El verapamilo no tiene principalmente un efecto simpaticolítico, su mecanismo es el bloqueo de canales de calcio.",
+                    "El verapamilo no bloquea canales de sodio, ese es el mecanismo de la clase I.",
+                    "El verapamilo no actúa bloqueando la adenosina.",
+                    "El verapamilo bloquea los canales de calcio, siendo un antiarrítmico de clase IV — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No es un simpaticolítico como mecanismo principal.",
+                    "El sodio no es lo suyo, eso es de la clase I.",
+                    "No tiene nada que ver con bloquear adenosina.",
+                    "¡Esta! Bloqueo de calcio, la firma del verapamilo, clase IV."
+                ],
+                "gato": [
+                    "Fijate: el efecto simpaticolítico no es su mecanismo principal.",
+                    "Dato curioso: el sodio es territorio de la clase I.",
+                    "Miau, no bloquea adenosina, eso no es lo suyo.",
+                    "¡Ronroneo de aprobación! Bloqueo de calcio: el mecanismo clásico del verapamilo."
+                ]
+            }
         },
         {
             "numero": 271,
@@ -12515,7 +12715,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La nifedipina tiene un comienzo de acción más rápido y un pico plasmático más elevado, lo que se asocia a mayor riesgo de taquicardia refleja frente a la amlodipina, de acción lenta y sostenida — es la respuesta correcta.",
+                    "La amlodipina en realidad tiene una vida media más larga, no más corta, que la nifedipina.",
+                    "El riesgo de rubefacción y edema es mayor con la nifedipina (acción más brusca), no con la amlodipina.",
+                    "La amlodipina no enlentece la conducción AV ni disminuye la frecuencia cardiaca de forma característica, ese es un efecto de los no dihidropiridínicos."
+                ],
+                "fantasma": [
+                    "¡Esta! La nife pega rápido y fuerte, con más riesgo de acelerar el corazón por reflejo.",
+                    "Es al revés, dura más tiempo en el cuerpo, no menos.",
+                    "Ese riesgo es mayor con la nifedipina, no con la amlodipina.",
+                    "Eso es cosa de otra familia, la amlodipina no frena el nodo AV así."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Nifedipina: rápida y brusca, con más riesgo de taquicardia refleja que la amlodipina.",
+                    "Fijate: es al revés, la amlodipina dura más, no menos.",
+                    "Dato curioso: ese riesgo es mayor con la nifedipina, no con la amlodipina.",
+                    "Miau, eso es cosa de los no dihidropiridínicos, no de la amlodipina."
+                ]
+            }
         },
         {
             "numero": 272,
@@ -12542,7 +12762,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La nifedipina no produce bloqueo AV, ese es un efecto de los bloqueantes cálcicos no dihidropiridínicos.",
+                    "La nifedipina produce edema periférico como efecto adverso frecuente, característico de los bloqueantes cálcicos dihidropiridínicos — es la respuesta correcta.",
+                    "La nifedipina produce taquicardia refleja, no bradicardia compensadora.",
+                    "La vía sublingual para descensos rápidos de presión con nifedipina fue abandonada por el riesgo de hipotensión brusca y eventos isquémicos graves."
+                ],
+                "fantasma": [
+                    "Ese bloqueo es cosa de otra familia de bloqueantes cálcicos.",
+                    "¡Esta! Los tobillos hinchados son la marca registrada de este fármaco.",
+                    "Es al revés, acelera el corazón por reflejo, no lo frena.",
+                    "Esa práctica quedó abandonada, es peligrosa."
+                ],
+                "gato": [
+                    "Fijate: ese bloqueo es de otra familia de bloqueantes cálcicos.",
+                    "¡Ronroneo de aprobación! Edema periférico: la marca registrada de la nifedipina.",
+                    "Dato curioso: es al revés, produce taquicardia refleja, no bradicardia.",
+                    "Miau, esa práctica sublingual quedó abandonada por peligrosa."
+                ]
+            }
         },
         {
             "numero": 273,
@@ -12569,7 +12809,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El edema periférico en miembros inferiores es efectivamente el efecto adverso más común y típico de la nifedipina — es la respuesta correcta.",
+                    "La nifedipina actúa predominantemente sobre canales de calcio tipo L, no tipo T.",
+                    "La nifedipina produce taquicardia refleja en pacientes predispuestos, no bradicardia.",
+                    "La nifedipina produce vasodilatación, no vasoconstricción periférica."
+                ],
+                "fantasma": [
+                    "¡Esta! Los tobillos hinchados son lo más típico de este fármaco.",
+                    "Ese canal no es el suyo, es el tipo L el que le importa.",
+                    "Es al revés, acelera el corazón por reflejo, no lo frena.",
+                    "Es al revés, abre los vasos, no los cierra."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Edema periférico: lo más típico y frecuente de la nifedipina.",
+                    "Fijate: es el canal tipo L el que bloquea, no el T.",
+                    "Dato curioso: produce taquicardia refleja, no bradicardia.",
+                    "Miau, es al revés, produce vasodilatación, no vasoconstricción."
+                ]
+            }
         },
         {
             "numero": 274,
@@ -12596,7 +12856,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: No produce nunca edema pretibial Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: No produce nunca edema pretibial Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La nifedipina sí es un antagonista cálcico dihidropiridínico, esta afirmación es correcta.",
+                    "La nifedipina sí tiene efecto antianginoso, esta afirmación es correcta.",
+                    "La nifedipina sí puede producir edema pretibial, siendo uno de sus efectos adversos más característicos; por eso esta es la afirmación INCORRECTA que había que señalar — es la respuesta correcta.",
+                    "La nifedipina sí puede causar hipotensión postural y taquicardia refleja, esta afirmación es correcta."
+                ],
+                "fantasma": [
+                    "Esto es verdad, es dihidropiridínico puro.",
+                    "Esto también es verdad, sirve para la angina.",
+                    "¡Esta! Justo el edema pretibial es su marca registrada, la frase dice lo contrario de la realidad.",
+                    "Esto también es verdad, puede dar mareos y taquicardia por reflejo."
+                ],
+                "gato": [
+                    "Fijate: esto sí es correcto, dihidropiridínico puro.",
+                    "Dato curioso: esto también es correcto, efecto antianginoso real.",
+                    "¡Ronroneo de aprobación! El edema pretibial es justo su efecto típico, la frase lo niega y por eso es la incorrecta.",
+                    "Miau, esto también es correcto, hipotensión postural y taquicardia refleja reales."
+                ]
+            }
         },
         {
             "numero": 275,
@@ -12623,7 +12903,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El edema maleolar (de tobillo) es el efecto adverso clásico y característico de la amlodipina — es la respuesta correcta.",
+                    "El angioedema no es un efecto adverso característico de la amlodipina, es más asociado a los IECA.",
+                    "La tos seca no productiva es característica de los IECA, no de la amlodipina.",
+                    "La cianometahemoglobinemia no es un efecto adverso característico de la amlodipina."
+                ],
+                "fantasma": [
+                    "¡Esta! Tobillos hinchados, la firma de la amlodipina.",
+                    "Ese es más territorio de los IECA, no de este fármaco.",
+                    "Esa tos es del IECA, no de la amlodipina.",
+                    "Esa rareza de sangre no tiene nada que ver con este fármaco."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Edema maleolar: el efecto adverso clásico de la amlodipina.",
+                    "Fijate: el angioedema es más de los IECA.",
+                    "Dato curioso: la tos seca es marca de los IECA, no de la amlodipina.",
+                    "Miau, esa alteración de la sangre no tiene nada que ver acá."
+                ]
+            }
         },
         {
             "numero": 276,
@@ -12650,7 +12950,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La amlodipina bloquea canales de calcio tipo L y genera edema de miembros inferiores como efecto adverso característico — es la respuesta correcta.",
+                    "La amlodipina se caracteriza por bloquear predominantemente canales tipo L, no una combinación de tipo T y L.",
+                    "La amlodipina no bloquea canales de sodio, su mecanismo es sobre canales de calcio.",
+                    "La amlodipina no bloquea canales de sodio ni genera hepatotoxicidad como efecto adverso clásico."
+                ],
+                "fantasma": [
+                    "¡Esta! Calcio tipo L bloqueado, y los tobillos se hinchan.",
+                    "Es solo tipo L, no la combinación de las dos.",
+                    "El sodio no es lo suyo, es el calcio.",
+                    "Ni el canal ni el efecto adverso son correctos acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Canal de calcio tipo L bloqueado, edema de piernas: el combo clásico de la amlodipina.",
+                    "Fijate: es solo tipo L, no la mezcla de T y L.",
+                    "Dato curioso: el sodio no tiene nada que ver acá.",
+                    "Miau, ni el canal ni el efecto adverso descriptos son correctos."
+                ]
+            }
         },
         {
             "numero": 277,
@@ -12677,7 +12997,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El edema de la amlodipina no indica insuficiencia cardíaca, es un fenómeno vascular local benigno; suspender el fármaco no suele ser necesario.",
+                    "El edema en miembros inferiores por amlodipina es un efecto adverso común y benigno, resultado de la vasodilatación arteriolar predominante sobre la venular, sin implicar retención de líquidos sistémica — es la respuesta correcta.",
+                    "Rotar a nifedipina no resuelve el problema, ya que ambas son dihidropiridínicas y comparten este efecto adverso.",
+                    "No es necesario solicitar un ECG para explicar este edema, que no tiene origen cardíaco ni arrítmico."
+                ],
+                "fantasma": [
+                    "No hace falta frenar el fármaco, este edema no significa que el corazón esté fallando.",
+                    "¡Esta! Es un efecto conocido y sin gravedad, solo hay que explicárselo al paciente.",
+                    "Cambiar a esta otra no soluciona nada, es de la misma familia.",
+                    "No hace falta este estudio para un edema que no tiene que ver con el corazón."
+                ],
+                "gato": [
+                    "Fijate: este edema no significa insuficiencia cardíaca.",
+                    "¡Ronroneo de aprobación! Edema benigno y esperable, solo hay que tranquilizar al paciente.",
+                    "Dato curioso: cambiar de dihidropiridina no resuelve nada.",
+                    "Miau, este estudio no es necesario para este tipo de edema."
+                ]
+            }
         },
         {
             "numero": 278,
@@ -12704,7 +13044,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Ni la amlodipina ni la nifedipina son bloqueantes cálcicos no dihidropiridínicos, ambas son dihidropiridínicas.",
+                    "Ni la amlodipina ni la nifedipina bloquean la reabsorción de sodio, ese es el mecanismo de los diuréticos.",
+                    "Ni la amlodipina ni la nifedipina bloquean receptores beta-adrenérgicos, ese es el mecanismo de los beta-bloqueantes.",
+                    "La amlodipina y la nifedipina son bloqueantes cálcicos dihidropiridínicos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Al revés, ambas son dihidropiridínicas, no lo contrario.",
+                    "Eso es cosa de los diuréticos, no de estos fármacos.",
+                    "Eso es territorio de los beta-bloqueantes, no de estos dos.",
+                    "¡Esta! Las dos son dihidropiridínicas, hermanas de la misma familia."
+                ],
+                "gato": [
+                    "Fijate: es al revés, ambas son dihidropiridínicas.",
+                    "Dato curioso: eso es de los diuréticos, no de estos fármacos.",
+                    "Miau, eso es de los beta-bloqueantes, no de este dúo.",
+                    "¡Ronroneo de aprobación! Amlodipina y nifedipina: hermanas dihidropiridínicas."
+                ]
+            }
         },
         {
             "numero": 279,
@@ -12731,7 +13091,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La amlodipina produce vasodilatación, no vasoconstricción periférica.",
+                    "La amlodipina actúa eficazmente sobre la hipertensión sistólica, en especial en pacientes mayores con rigidez arterial (hipertensión sistólica aislada) — es la respuesta correcta.",
+                    "El mecanismo de acción de la amlodipina es lento, característica que la distingue de la nifedipina de acción rápida.",
+                    "La amlodipina sí produce vasodilatación, ese es justamente su mecanismo principal."
+                ],
+                "fantasma": [
+                    "Es al revés, abre los vasos, no los cierra.",
+                    "¡Esta! En la presión sistólica alta de los mayores, este fármaco brilla.",
+                    "Es lenta, no rápida, esa es su marca de identidad.",
+                    "Todo lo contrario, sí dilata los vasos, ese es su trabajo."
+                ],
+                "gato": [
+                    "Fijate: es al revés, produce vasodilatación.",
+                    "¡Ronroneo de aprobación! Amlodipina: aliada clásica de la hipertensión sistólica en el adulto mayor.",
+                    "Dato curioso: es lenta, no rápida, a diferencia de la nifedipina.",
+                    "Miau, sí dilata los vasos, ese es justamente su mecanismo."
+                ]
+            }
         },
         {
             "numero": 280,
@@ -12758,7 +13138,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los antiinflamatorios no esteroides, como el ibuprofeno, disminuyen el efecto antihipertensivo de la amlodipina al inhibir las prostaglandinas vasodilatadoras y favorecer la retención de sodio y agua — es la respuesta correcta.",
+                    "La furosemida no disminuye el efecto de la amlodipina, más bien tiende a potenciar el control de la presión arterial.",
+                    "El carvedilol no disminuye el efecto de la amlodipina, de hecho suelen combinarse en el tratamiento antihipertensivo.",
+                    "La amiodarona no disminuye el efecto terapéutico de la amlodipina; de hecho, puede aumentar sus niveles plasmáticos por interacción con el CYP3A4."
+                ],
+                "fantasma": [
+                    "¡Esta! Los antiinflamatorios retienen sal y agua, arruinando el efecto del fármaco.",
+                    "Este ayuda a bajar la presión, no la arruina.",
+                    "Este se combina bien con la amlodipina, no la contrarresta.",
+                    "Esta más bien podría subir sus niveles en sangre, no bajar su efecto."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Ibuprofeno y compañía: retienen sal y agua, arruinando el efecto de la amlodipina.",
+                    "Fijate: furosemida ayuda, no arruina el control de presión.",
+                    "Dato curioso: carvedilol se combina bien, no contrarresta.",
+                    "Miau, amiodarona podría subir sus niveles, no bajar el efecto."
+                ]
+            }
         },
         {
             "numero": 281,
