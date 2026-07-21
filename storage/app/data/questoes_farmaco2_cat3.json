@@ -6606,9 +6606,29 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "C",
+            "resposta_correta": "D",
             "origem_seccion": "antihipertensivos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La sedación no es un efecto característico de los IECA como el perindopril, que actúan a nivel periférico; además la hipokalemia es lo opuesto a lo que produce esta clase.",
+                    "La hipotensión ortostática y la hipokalemia no son el patrón característico de los IECA; el perfil correcto combina tos, hipotensión de primera dosis e hiperkalemia.",
+                    "La sedación no es un efecto adverso característico de los IECA, que no actúan sobre el sistema nervioso central.",
+                    "El perindopril, como todo IECA, produce clásicamente tos por acumulación de bradiquinina, hipotensión de primera dosis por vasodilatación brusca, e hiperkalemia por reducción de la aldosterona — es la respuesta correcta (se corrige el gabarito original, que marcaba la opción C)."
+                ],
+                "fantasma": [
+                    "Nada de sueño con este, y el potasio va para arriba, no para abajo.",
+                    "El potasio se equivocó de dirección acá, los IECA lo suben.",
+                    "La sedación no pega con esta familia, que actúa en el riñón y los vasos, no en la cabeza.",
+                    "¡Esta! Tos, bajón de presión al inicio, potasio arriba: el trío clásico del IECA."
+                ],
+                "gato": [
+                    "Fijate: IECA no da sueño, y el potasio sube, no baja.",
+                    "Dato curioso: la hipokalemia no es de esta familia, el potasio sube con los IECA.",
+                    "Miau, sedación no encaja con un IECA, que no toca el sistema nervioso central.",
+                    "¡Ronroneo de aprobación! Tos + hipotensión de primera dosis + hiperkalemia: la tríada clásica del IECA."
+                ]
+            }
         },
         {
             "numero": 142,
@@ -6635,16 +6655,33 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
             "origem_seccion": "antihipertensivos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Diabetes Mellitus Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Diabetes Mellitus Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La diabetes mellitus no es una contraindicación de los IECA — de hecho son renoprotectores en la nefropatía diabética; por eso esta es la opción INCORRECTA que había que señalar — es la respuesta correcta.",
+                    "El antecedente de angioedema por IECA sí es una contraindicación válida, dado el riesgo de recurrencia.",
+                    "El angioedema hereditario o idiopático sí es una contraindicación válida, ya que los IECA aumentan la bradiquinina y pueden desencadenar o agravar el cuadro.",
+                    "El segundo y tercer trimestre del embarazo sí es una contraindicación válida (junto con todo el embarazo), por el riesgo teratogénico."
+                ],
+                "fantasma": [
+                    "¡Esta! La diabetes no espanta a los IECA, al contrario, los IECA la protegen.",
+                    "Esta sí es una contraindicación real, ya vivió el angioedema una vez.",
+                    "Esta también es contraindicación real, el angioedema hereditario no se lleva bien con más bradiquinina.",
+                    "Esta también es contraindicación real, el embarazo no perdona a los IECA."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Diabetes no contraindica al IECA, es la opción incorrecta que pedían encontrar.",
+                    "Fijate: angioedema previo por IECA sí es motivo real para evitarlo.",
+                    "Dato curioso: angioedema hereditario sí es contraindicación válida.",
+                    "Miau, el embarazo (2do y 3er trimestre) sí es contraindicación real."
+                ]
+            }
         },
         {
             "numero": 143,
-            "pergunta": "Sacubitrilo/Valsartán Estimula la óxido nítrico sintetasa aumentando los niveles de óxido nítrico",
+            "pergunta": "Sacubitrilo/Valsartán: el mecanismo de acción del sacubitrilo es:",
             "opcoes": [
-                {
-                    "letra": "A",
-                    "texto": "El mecanismo de acción del sacubitrilo es:"
-                },
+                "Estimula la óxido nítrico sintetasa aumentando los niveles de óxido nítrico",
                 {
                     "letra": "B",
                     "texto": "Inhibe la neprilisina disminuyendo los niveles de renina plasmática"
@@ -6662,7 +6699,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antihipertensivos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El sacubitrilo no actúa sobre la óxido nítrico sintetasa, ese no es su mecanismo.",
+                    "El sacubitrilo sí inhibe la neprilisina, pero no disminuye la renina plasmática de esta forma; no es el mecanismo descripto acá.",
+                    "El antagonismo del receptor de renina corresponde a otro fármaco (aliskirén), no al sacubitrilo.",
+                    "El sacubitrilo inhibe la neprilisina, enzima que degrada tanto el péptido natriurético como la bradiquinina, aumentando los niveles de ambos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese mecanismo no le pertenece al sacubitrilo.",
+                    "Casi, pero el detalle de la renina plasmática no encaja.",
+                    "Ese es el trabajo del aliskirén, no del sacubitrilo.",
+                    "¡Esta! Neprilisina bloqueada, péptido natriurético y bradiquinina para arriba."
+                ],
+                "gato": [
+                    "Fijate: óxido nítrico sintetasa no tiene nada que ver con el sacubitrilo.",
+                    "Dato curioso: casi correcto, pero la renina plasmática no baja por este mecanismo.",
+                    "Miau, el receptor de renina es cosa del aliskirén, no de este fármaco.",
+                    "¡Ronroneo de aprobación! Neprilisina inhibida, péptido natriurético y bradiquinina suben juntos."
+                ]
+            }
         },
         {
             "numero": 144,
@@ -6689,7 +6746,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Todo lo contrario: todos los antiarrítmicos tienen potencial proarrítmico, ninguno es completamente seguro.",
+                    "La insuficiencia cardiaca puede ser un efecto adverso de algunos (por su efecto inotrópico negativo), pero no es 'el' efecto principal común a toda la clase.",
+                    "Todos los antiarrítmicos, sin excepción, tienen efecto proarrítmico: pueden generar nuevas arritmias o empeorar las existentes — es la respuesta correcta.",
+                    "Falso: varios antiarrítmicos, especialmente los de clase IA y III, tienen riesgo bien documentado de torsade de puntas."
+                ],
+                "fantasma": [
+                    "Nada de seguros, todos tienen su lado oscuro proarrítmico.",
+                    "La insuficiencia cardiaca es un riesgo de algunos, no 'el' efecto principal de todos.",
+                    "¡Esta! El efecto proarrítmico es la regla, no la excepción, en esta familia.",
+                    "Muchos sí la generan, especialmente los de clase IA y III."
+                ],
+                "gato": [
+                    "Fijate: ningún antiarrítmico es 100% seguro, todos pueden generar arritmias.",
+                    "Dato curioso: la insuficiencia cardiaca no es 'el' efecto principal universal.",
+                    "¡Ronroneo de aprobación! Todos, sin excepción, tienen potencial proarrítmico.",
+                    "Miau, varios sí generan torsade de puntas, sobre todo clase IA y III."
+                ]
+            }
         },
         {
             "numero": 145,
@@ -6716,7 +6793,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Falta la trombocitopenia, un efecto adverso inmunomediado característico de la quinidina, y sobra la constipación, que no es típica (la quinidina se asocia más a diarrea).",
+                    "Falta el tinnitus, parte clásica del cinconismo, y sobra la constipación.",
+                    "Falta la cefalea, parte del cuadro de cinconismo, y sobra la constipación.",
+                    "La quinidina produce trombocitopenia (inmunomediada), tinnitus y cefaleas (cinconismo), y prolongación del intervalo QT (riesgo de torsade de puntas) — es la respuesta correcta; no es característica la constipación, sino más bien la diarrea."
+                ],
+                "fantasma": [
+                    "Le falta la trombocitopenia y le sobra la constipación, no cierra.",
+                    "Le falta el tinnitus, pieza clave del cinconismo.",
+                    "Le falta la cefalea, otra pieza del cinconismo.",
+                    "¡Esta! Trombocitopenia, tinnitus, cefaleas y QT largo: el combo real de la quinidina."
+                ],
+                "gato": [
+                    "Fijate: la constipación no es típica, la quinidina da más diarrea.",
+                    "Dato curioso: sin tinnitus no hay cinconismo completo.",
+                    "Miau, la cefalea es pieza obligada del cinconismo, y acá falta.",
+                    "¡Ronroneo de aprobación! Trombocitopenia + tinnitus + cefaleas + QT largo, sin la constipación que no corresponde."
+                ]
+            }
         },
         {
             "numero": 146,
@@ -6743,7 +6840,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La quinidina sí modifica el automatismo, al reducir la pendiente de despolarización de fase 4 en tejidos automáticos; la afirmación de que 'no lo modifica' es incorrecta.",
+                    "La quinidina es un bloqueante de canales de sodio (clase IA), no un bloqueante cálcico no dihidropiridínico.",
+                    "La quinidina posee efecto vagolítico (bloquea receptores muscarínicos) y bloquea receptores alfa1 adrenérgicos, ambos mecanismos que pueden aumentar la frecuencia cardíaca — es la respuesta correcta.",
+                    "La quinidina está contraindicada en arritmias con QT prolongado, ya que ella misma prolonga el QT y puede desencadenar torsade de puntas."
+                ],
+                "fantasma": [
+                    "Sí que modifica el automatismo, esa parte de la frase es falsa.",
+                    "Este bloquea sodio, no calcio, cambiaste de familia.",
+                    "¡Esta! Bloqueo vagal y bloqueo alfa1: doble motivo para que el corazón se acelere.",
+                    "Todo lo contrario, esta empeora el QT largo, no lo trata."
+                ],
+                "gato": [
+                    "Fijate: sí modifica el automatismo, la frase se equivoca en esa parte.",
+                    "Dato curioso: es bloqueante de sodio, no de calcio.",
+                    "¡Ronroneo de aprobación! Vagolítico + bloqueo alfa1 = taquicardia por dos caminos distintos.",
+                    "Miau, con QT largo la quinidina es veneno, no tratamiento."
+                ]
+            }
         },
         {
             "numero": 147,
@@ -6770,7 +6887,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La quinidina no está indicada en la fibrilación ventricular, que requiere desfibrilación inmediata.",
+                    "La quinidina sí tiene efecto sobre otros receptores: es vagolítica y bloquea receptores alfa1 adrenérgicos.",
+                    "El cinconismo (tinnitus, cefalea, alteraciones visuales, trastornos gastrointestinales) es un efecto adverso característico de la quinidina — es la respuesta correcta.",
+                    "La quinidina pertenece al grupo IA de antiarrítmicos, no al grupo IB."
+                ],
+                "fantasma": [
+                    "Para eso está el desfibrilador, no la quinidina.",
+                    "Sí que tiene efectos extra, vagolítico y alfa1, ya lo vimos.",
+                    "¡Esta! El cinconismo es la marca registrada de la quinidina.",
+                    "Grupo IA, no IB, ojo con la letra."
+                ],
+                "gato": [
+                    "Fijate: fibrilación ventricular es cosa de desfibrilador, no de quinidina.",
+                    "Dato curioso: sí tiene otros efectos receptoriales, vagolítico y alfa1.",
+                    "¡Ronroneo de aprobación! Cinconismo: la firma clásica de la quinidina.",
+                    "Miau, es grupo IA, no IB."
+                ]
+            }
         },
         {
             "numero": 148,
@@ -6797,7 +6934,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La propafenona pertenece al grupo IC de antiarrítmicos, no al IB.",
+                    "La quinidina pertenece al grupo IA, no al IB.",
+                    "La flecainida pertenece al grupo IC, no al IB.",
+                    "La lidocaína pertenece al grupo IB de antiarrítmicos, bloqueantes de sodio que acortan la duración del potencial de acción — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta es del grupo IC, otra letra.",
+                    "Esta es del grupo IA, otra letra.",
+                    "Esta es del grupo IC, como la propafenona, no la IB.",
+                    "¡Esta! Lidocaína es la reina del grupo IB."
+                ],
+                "gato": [
+                    "Fijate: propafenona es IC, no IB.",
+                    "Dato curioso: quinidina es IA, no IB.",
+                    "Miau, flecainida es IC, junto con la propafenona.",
+                    "¡Ronroneo de aprobación! Lidocaína, ejemplo clásico del grupo IB."
+                ]
+            }
         },
         {
             "numero": 149,
@@ -6824,7 +6981,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "A",
             "origem_seccion": "antiarrítmicos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Bloquea únicamente los canales de sodio en estado activo. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es A: Bloquea únicamente los canales de sodio en estado activo. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La lidocaína bloquea preferentemente los canales de sodio en estado inactivo (bloqueo uso-dependiente), no únicamente en estado activo; por eso esta es la afirmación INCORRECTA que había que señalar — es la respuesta correcta.",
+                    "La lidocaína tiene un extenso metabolismo de primer paso hepático, por lo que no se administra por vía oral.",
+                    "La lidocaína es útil en el tratamiento de arritmias ventriculares, es su indicación clásica.",
+                    "La lidocaína es útil en arritmias por intoxicación digitálica, otra indicación clásica."
+                ],
+                "fantasma": [
+                    "¡Esta! Se equivoca de estado del canal: es en el inactivo, no en el activo, donde actúa mejor.",
+                    "Esto es verdad, por eso no va por boca.",
+                    "Esto es verdad, es su indicación estrella.",
+                    "Esto también es verdad, otra indicación clásica."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! El bloqueo es preferente en canal inactivo, no activo: la frase se equivoca.",
+                    "Fijate: esto sí es correcto, metabolismo hepático de primer paso.",
+                    "Dato curioso: esto también es correcto, arritmias ventriculares.",
+                    "Miau, esto también es correcto, intoxicación digitálica."
+                ]
+            }
         },
         {
             "numero": 150,
@@ -6851,7 +7028,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La quinidina, al prolongar el intervalo QT, es una causa clásica de torsade de puntas.",
+                    "La propafenona, al ensanchar el QRS y prolongar levemente el QT, también se asocia a riesgo proarrítmico.",
+                    "La lidocaína, al acortar la duración del potencial de acción y no prolongar el QT, no genera torsade de puntas — es la respuesta correcta.",
+                    "La amiodarona, aunque de bajo riesgo relativo, sí puede prolongar el QT y ocasionalmente producir torsade de puntas."
+                ],
+                "fantasma": [
+                    "Esta es una de las causantes clásicas de torsade.",
+                    "Esta también tiene su riesgo proarrítmico.",
+                    "¡Esta! Lidocaína acorta el potencial de acción, no lo alarga, así que no hay torsade.",
+                    "Esta puede prolongar el QT también, aunque menos que otras."
+                ],
+                "gato": [
+                    "Fijate: quinidina es sospechosa número uno de torsade.",
+                    "Dato curioso: propafenona también tiene su riesgo proarrítmico.",
+                    "¡Ronroneo de aprobación! Lidocaína acorta el potencial de acción, torsade no aparece acá.",
+                    "Miau, amiodarona también puede prolongar el QT, aunque con menos frecuencia."
+                ]
+            }
         },
         {
             "numero": 151,
@@ -6878,7 +7075,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La amiodarona es un fármaco de amplio espectro, pero la respuesta clásicamente esperada para arritmia ventricular post-IAM en este contexto es la lidocaína.",
+                    "La quinidina no es de elección en el contexto agudo post-infarto, por su perfil de efectos adversos y riesgo proarrítmico.",
+                    "La procainamida es una alternativa, pero no es la respuesta clásicamente esperada en este escenario.",
+                    "La lidocaína actúa selectivamente sobre el tejido isquémico despolarizado, siendo el antiarrítmico clásicamente asociado al tratamiento de arritmias ventriculares post-infarto agudo de miocardio — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta es más para otros contextos, no la respuesta clásica acá.",
+                    "Esta no es la primera opción en un IAM reciente.",
+                    "Esta es alternativa, pero no la respuesta esperada.",
+                    "¡Esta! Lidocaína es la clásica compañera del infarto reciente con arritmia ventricular."
+                ],
+                "gato": [
+                    "Fijate: no es la respuesta clásica esperada en este escenario.",
+                    "Dato curioso: quinidina no es primera línea en el IAM agudo.",
+                    "Miau, procainamida es alternativa, no la respuesta esperada.",
+                    "¡Ronroneo de aprobación! Lidocaína, la combinación clásica con arritmia ventricular post-IAM."
+                ]
+            }
         },
         {
             "numero": 152,
@@ -6905,7 +7122,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La lidocaína tiene metabolismo hepático, no renal.",
+                    "La vida media de la lidocaína es corta, de aproximadamente 1,5 a 2 horas, no mayor a 5 horas.",
+                    "El metabolismo de la lidocaína es flujo-dependiente (alta tasa de extracción hepática), no flujo-independiente.",
+                    "Los efectos adversos de la lidocaína son principalmente a nivel del sistema nervioso central (mareos, confusión, convulsiones en dosis altas) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "El hígado es el que trabaja acá, no el riñón.",
+                    "Su vida media es corta, no llega a las 5 horas.",
+                    "Es justo lo contrario: depende del flujo hepático.",
+                    "¡Esta! El cerebro es donde se sienten los efectos adversos de la lidocaína."
+                ],
+                "gato": [
+                    "Fijate: metabolismo hepático, no renal.",
+                    "Dato curioso: vida media corta, muy lejos de 5 horas.",
+                    "Miau, es flujo-dependiente, no independiente.",
+                    "¡Ronroneo de aprobación! SNC es el blanco de los efectos adversos de la lidocaína."
+                ]
+            }
         },
         {
             "numero": 153,
@@ -6932,7 +7169,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La biodisponibilidad oral no es el motivo, ya que la lidocaína ni siquiera se usa por vía oral por su alto metabolismo de primer paso.",
+                    "El metabolismo de la lidocaína es flujo-dependiente: en la insuficiencia cardíaca, la insuficiencia hepática o el envejecimiento, el flujo sanguíneo hepático disminuye, reduciendo su clearance y aumentando el riesgo de toxicidad si no se ajusta la dosis — es la respuesta correcta.",
+                    "Los metabolitos activos no son el motivo principal de este ajuste de dosis.",
+                    "La vida media de la lidocaína es corta, no larga; ese no es el motivo del ajuste."
+                ],
+                "fantasma": [
+                    "La biodisponibilidad no es el problema, ni siquiera se toma por boca.",
+                    "¡Esta! Menos flujo al hígado, menos lidocaína eliminada, más riesgo de toxicidad.",
+                    "Los metabolitos activos no son la razón acá.",
+                    "Su vida media es corta, no larga, así que no es esto."
+                ],
+                "gato": [
+                    "Fijate: la biodisponibilidad oral ni entra en la ecuación, es de uso IV.",
+                    "¡Ronroneo de aprobación! Menos flujo hepático, menos clearance, dosis a la mitad.",
+                    "Dato curioso: los metabolitos activos no son el motivo del ajuste.",
+                    "Miau, la vida media es corta, no larga."
+                ]
+            }
         },
         {
             "numero": 154,
@@ -6959,7 +7216,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La lidocaína no es de elección en la taquicardia paroxística supraventricular, cuyo tratamiento se centra en fármacos que actúan sobre el nodo AV (adenosina, verapamilo).",
+                    "La lidocaína no es un fármaco de elección para la fibrilación auricular.",
+                    "La lidocaína no es de elección para el aleteo auricular.",
+                    "La lidocaína, un antiarrítmico de clase IB, es de elección para el tratamiento de la taquicardia ventricular — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Para esta arritmia se usan otros fármacos, como adenosina o verapamilo.",
+                    "Esta no es la arritmia que trata la lidocaína.",
+                    "Tampoco esta, la lidocaína no se mete acá.",
+                    "¡Esta! Taquicardia ventricular es el terreno favorito de la lidocaína."
+                ],
+                "gato": [
+                    "Fijate: para esta arritmia, adenosina o verapamilo son los protagonistas.",
+                    "Dato curioso: fibrilación auricular no es territorio de lidocaína.",
+                    "Miau, aleteo auricular tampoco es su especialidad.",
+                    "¡Ronroneo de aprobación! Taquicardia ventricular: el terreno clásico de la lidocaína IV."
+                ]
+            }
         },
         {
             "numero": 155,
@@ -6986,7 +7263,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La lidocaína disminuye la duración del potencial de acción (DPA), no la aumenta.",
+                    "La lidocaína no aumenta la contractilidad, no tiene un efecto inotrópico positivo relevante.",
+                    "La lidocaína no prolonga característicamente el intervalo PR.",
+                    "La lidocaína reduce la automaticidad anormal en el tejido isquémico despolarizado, uno de sus principales mecanismos antiarrítmicos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, la lidocaína acorta el potencial de acción.",
+                    "No le da fuerza extra al corazón, eso no es lo suyo.",
+                    "El PR no es lo que modifica la lidocaína.",
+                    "¡Esta! Frenar la automaticidad anormal es su especialidad."
+                ],
+                "gato": [
+                    "Fijate: la lidocaína acorta la DPA, no la alarga.",
+                    "Dato curioso: contractilidad no es su fuerte.",
+                    "Miau, el PR se mantiene tranquilo con la lidocaína.",
+                    "¡Ronroneo de aprobación! Reducir automaticidad anormal: el mecanismo estrella de la lidocaína."
+                ]
+            }
         },
         {
             "numero": 156,
@@ -7013,7 +7310,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La lidocaína prácticamente no se administra por vía oral debido a su intenso metabolismo de primer paso hepático, por lo que esta afirmación no es relevante ni correcta en este contexto.",
+                    "El verapamilo sí posee un marcado efecto inotrópico negativo, siendo un riesgo importante en pacientes con disfunción ventricular.",
+                    "La flecainida sí modifica el ECG, característicamente ensancha el QRS y puede prolongar el QT, siendo esto un signo de alarma de toxicidad.",
+                    "La lidocaína, a diferencia de otros antiarrítmicos, no prolonga el PR, el QRS ni el intervalo QT a dosis terapéuticas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta ni se toma por boca, así que esta frase no aplica bien.",
+                    "Todo lo contrario, el verapamilo sí le baja la fuerza al corazón.",
+                    "La flecainida sí ensancha el QRS, y eso preocupa mucho.",
+                    "¡Esta! La lidocaína es la más 'neutral' del ECG entre los antiarrítmicos."
+                ],
+                "gato": [
+                    "Fijate: la lidocaína casi no se toma por boca.",
+                    "Dato curioso: verapamilo sí tiene efecto inotrópico negativo importante.",
+                    "Miau, flecainida sí ensancha el QRS, marca registrada de su toxicidad.",
+                    "¡Ronroneo de aprobación! Lidocaína: no toca el PR, el QRS ni el QT."
+                ]
+            }
         },
         {
             "numero": 157,
@@ -7040,7 +7357,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La lidocaína bloquea canales de sodio y se utiliza en el tratamiento de la taquicardia ventricular — es la respuesta correcta.",
+                    "La adenosina actúa sobre el nodo AV, se usa en taquicardia supraventricular, no bloquea canales de sodio.",
+                    "El diltiazem es un bloqueante cálcico, actúa sobre el nodo AV, no bloquea canales de sodio.",
+                    "El sotalol es un antiarrítmico de clase III (bloqueante de canales de potasio, con efecto beta-bloqueante adicional), no bloquea canales de sodio como mecanismo principal."
+                ],
+                "fantasma": [
+                    "¡Esta! Bloquea sodio y trata la taquicardia ventricular, combo perfecto.",
+                    "Esta frena el nodo AV, otro mecanismo, otra arritmia.",
+                    "Este también frena el nodo AV, no bloquea sodio.",
+                    "Este bloquea potasio, no sodio, otra familia."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Lidocaína: sodio bloqueado, taquicardia ventricular tratada.",
+                    "Fijate: adenosina actúa en el nodo AV, no en canales de sodio.",
+                    "Dato curioso: diltiazem también frena el nodo AV, canal de calcio.",
+                    "Miau, sotalol bloquea potasio, clase III."
+                ]
+            }
         },
         {
             "numero": 158,
@@ -7067,7 +7404,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Se usa para tratar arritmias ventriculares en embarazadas. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es B: Se usa para tratar arritmias ventriculares en embarazadas. Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La difenilhidantoína se utiliza para tratar la epilepsia, es su indicación principal y verdadera.",
+                    "La difenilhidantoína (fenitoína) es teratogénica (síndrome fetal por hidantoína) y su uso en embarazadas está desaconsejado salvo necesidad extrema bajo estricto control; afirmar que 'se usa' de forma general en embarazadas es la afirmación INCORRECTA que había que señalar — es la respuesta correcta.",
+                    "Es efectivamente conocida como fenitoína, es su nombre genérico.",
+                    "Se utiliza para tratar arritmias causadas por intoxicación digitálica, es una indicación clásica verdadera."
+                ],
+                "fantasma": [
+                    "Esto es verdad, para eso se inventó originalmente.",
+                    "¡Esta! Nada de recomendarla así nomás en embarazadas, es teratogénica.",
+                    "Esto es verdad, es su otro nombre.",
+                    "Esto también es verdad, otra indicación clásica."
+                ],
+                "gato": [
+                    "Fijate: esto sí es correcto, la epilepsia es su indicación estrella.",
+                    "¡Ronroneo de aprobación! Fenitoína y embarazo no se llevan bien, es la incorrecta.",
+                    "Dato curioso: esto sí es correcto, mismo fármaco, otro nombre.",
+                    "Miau, esto también es correcto, la intoxicación digitálica."
+                ]
+            }
         },
         {
             "numero": 159,
@@ -7094,7 +7451,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La difenilhidantoína no actúa bloqueando canales de calcio, ese no es su mecanismo principal.",
+                    "La difenilhidantoína (fenitoína) actúa bloqueando canales de sodio de forma uso-dependiente, estabilizando la membrana neuronal — es la respuesta correcta.",
+                    "Aumentar el tiempo de apertura del canal de cloro del receptor GABA es el mecanismo de los barbitúricos, no de la fenitoína.",
+                    "La fenitoína no actúa bloqueando el receptor de glutamato, ese no es su mecanismo."
+                ],
+                "fantasma": [
+                    "No se mete con el calcio, otro canal es su objetivo.",
+                    "¡Esta! Sodio bloqueado, membrana neuronal estabilizada.",
+                    "Eso es cosa de los barbitúricos, no de la fenitoína.",
+                    "El glutamato no es su blanco."
+                ],
+                "gato": [
+                    "Fijate: el calcio no es lo suyo.",
+                    "¡Ronroneo de aprobación! Bloqueo de sodio uso-dependiente, mecanismo clásico de la fenitoína.",
+                    "Dato curioso: eso describe a los barbitúricos, no a la fenitoína.",
+                    "Miau, el glutamato queda fuera de esta historia."
+                ]
+            }
         },
         {
             "numero": 160,
@@ -7121,7 +7498,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiarrítmicos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las molestias digestivas sí se relacionan con el tratamiento con flecainida, son un efecto adverso conocido.",
+                    "La disgeusia (alteración del gusto) sí se relaciona con la flecainida, es un efecto adverso descripto.",
+                    "La inestabilidad y ataxia sí se relacionan con la flecainida, por su efecto sobre el sistema nervioso central.",
+                    "La ictericia y el prurito, signos de colestasis/hepatotoxicidad, no son efectos adversos característicos de la flecainida — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta sí está en la lista de efectos de la flecainida.",
+                    "El sabor raro en la boca también es cosa de la flecainida.",
+                    "Los mareos y la falta de equilibrio también aparecen con este fármaco.",
+                    "¡Esta! La piel amarilla y la picazón no tienen nada que ver con la flecainida."
+                ],
+                "gato": [
+                    "Fijate: esto sí está en el cuadro de efectos de la flecainida.",
+                    "Dato curioso: el gusto raro también es cosa suya.",
+                    "Miau, la inestabilidad también aparece con este fármaco.",
+                    "¡Ronroneo de aprobación! Ictericia y prurito no forman parte del perfil de la flecainida."
+                ]
+            }
         },
         {
             "numero": 161,
