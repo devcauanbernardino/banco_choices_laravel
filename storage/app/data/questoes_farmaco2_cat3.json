@@ -16005,7 +16005,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La trombocitopenia inducida por heparina es en realidad más frecuente con la heparina no fraccionada que con la enoxaparina.",
+                    "El mecanismo de la trombocitopenia inducida por heparina es inmunomediado (anticuerpos contra el complejo heparina-PF4), no un mecanismo de hiperesplenismo.",
+                    "La trombocitopenia inducida por heparina típicamente aparece entre el quinto y décimo día de iniciado el tratamiento, tiempo necesario para el desarrollo de la respuesta inmune — es la respuesta correcta.",
+                    "La presentación típica de la trombocitopenia inducida por heparina es paradójicamente trombosis, no sangrado severo."
+                ],
+                "fantasma": [
+                    "Es al revés, la no fraccionada da más problemas que la enoxaparina.",
+                    "Esto no es hiperesplenismo, es el sistema inmune el que arma lío acá.",
+                    "¡Esta! Entre el día 5 y el 10 es cuando el sistema inmune arma los anticuerpos.",
+                    "Paradójicamente esto trombosa, no sangra, aunque las plaquetas estén bajas."
+                ],
+                "gato": [
+                    "Fijate: es al revés, más frecuente con la no fraccionada.",
+                    "Dato curioso: es inmunomediado, no hiperesplenismo.",
+                    "¡Ronroneo de aprobación! Día 5 a 10: el tiempo clásico que tarda el sistema inmune en armar los anticuerpos.",
+                    "Miau, paradójicamente trombosa, no sangra, esa es la trampa de esta enfermedad."
+                ]
+            }
         },
         {
             "numero": 342,
@@ -16032,7 +16052,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La heparina no activa directamente las plaquetas de forma que las destruya, el mecanismo es inmunomediado.",
+                    "La heparina se une al factor plaquetario 4 (PF4), formando complejos que se vuelven antigénicos y generan anticuerpos que activan las plaquetas — es la respuesta correcta.",
+                    "La heparina no disminuye la producción de plaquetas en la médula ósea, el problema no es de producción sino de destrucción/consumo periférico.",
+                    "La heparina no afecta directamente la función de los megacariocitos como mecanismo principal de este cuadro."
+                ],
+                "fantasma": [
+                    "No las destruye así directamente, hay un intermediario inmune de por medio.",
+                    "¡Esta! Heparina + PF4 = complejo que el sistema inmune ataca por error.",
+                    "La médula sigue fabricando bien, el problema es después, en la sangre.",
+                    "Los megacariocitos no son el problema principal acá."
+                ],
+                "gato": [
+                    "Fijate: no las destruye directo, hay un paso inmune de por medio.",
+                    "¡Ronroneo de aprobación! Heparina + PF4: el complejo que dispara la respuesta inmune equivocada.",
+                    "Dato curioso: la médula sigue produciendo bien, el problema es periférico.",
+                    "Miau, los megacariocitos no son el foco de este mecanismo."
+                ]
+            }
         },
         {
             "numero": 343,
@@ -16059,7 +16099,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las heparinas no tienen esa restricción temporal por riesgo de malformaciones, ya que no atraviesan la placenta en absoluto.",
+                    "Las heparinas pueden usarse de forma segura durante todo el embarazo porque, a diferencia de la warfarina, no atraviesan la placenta — es la respuesta correcta.",
+                    "No existe esa restricción de usarlas solo en el tercer trimestre ni de suspenderlas en el parto de forma generalizada.",
+                    "Las heparinas no generan malformaciones ni tienen esa restricción de uso exclusivo en el segundo trimestre."
+                ],
+                "fantasma": [
+                    "No hay tal restricción, esta familia es segura desde el principio.",
+                    "¡Esta! No cruzan la placenta, por eso son las seguras del embarazo.",
+                    "No hace falta esa restricción tan específica.",
+                    "No generan malformaciones, esa restricción no existe."
+                ],
+                "gato": [
+                    "Fijate: no hay tal restricción, son seguras desde el inicio.",
+                    "¡Ronroneo de aprobación! No cruzan la placenta: la razón de su seguridad en el embarazo.",
+                    "Dato curioso: esa restricción tan específica no existe.",
+                    "Miau, no generan malformaciones, esa afirmación es falsa."
+                ]
+            }
         },
         {
             "numero": 344,
@@ -16086,7 +16146,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los anticoagulantes orales (warfarina/acenocumarol) están contraindicados en el embarazo por su teratogenicidad, no son la opción a administrar.",
+                    "Las heparinas (anticoagulantes parenterales), al no atravesar la placenta, son la opción segura para anticoagular a una embarazada — es la respuesta correcta.",
+                    "La anticoagulación sí está indicada cuando es necesaria en el embarazo, no está contraindicada, y los fibrinolíticos no son un tratamiento preventivo.",
+                    "No se combinan anticoagulantes orales y parenterales para 'potenciar' el efecto, y los orales están contraindicados de por sí."
+                ],
+                "fantasma": [
+                    "Estos están prohibidos en el embarazo, no son la respuesta.",
+                    "¡Esta! Las heparinas son las seguras porque no cruzan la placenta.",
+                    "Sí se puede anticoagular, y los fibrinolíticos no son para esto.",
+                    "No se combinan así, y los orales ya están prohibidos de entrada."
+                ],
+                "gato": [
+                    "Fijate: estos están prohibidos en el embarazo.",
+                    "¡Ronroneo de aprobación! Heparinas: la opción segura, no cruzan la placenta.",
+                    "Dato curioso: sí se puede anticoagular, los fibrinolíticos no tienen que ver acá.",
+                    "Miau, no se combinan así, y los orales ya están vetados."
+                ]
+            }
         },
         {
             "numero": 345,
@@ -16113,7 +16193,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La aspirina, un antiagregante, no aborda el riesgo protrombótico específico por depleción de proteínas C y S.",
+                    "El clopidogrel, un antiagregante, tampoco aborda este riesgo protrombótico específico.",
+                    "El apixabán no es el fármaco clásico de bridging (puente) recomendado en este contexto, la enoxaparina lo es.",
+                    "La enoxaparina se utiliza como puente ('bridging') los primeros días, ya que la warfarina/acenocumarol inicialmente deplecionan más rápido las proteínas C y S (anticoagulantes) que los factores procoagulantes, generando un riesgo protrombótico transitorio — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta no toca el problema específico de las proteínas C y S.",
+                    "Este tampoco resuelve este riesgo particular.",
+                    "Este no es el clásico fármaco puente en este contexto.",
+                    "¡Esta! Mientras la warfarina hace efecto de a poco, la enoxaparina cubre el hueco protrombótico inicial."
+                ],
+                "gato": [
+                    "Fijate: la aspirina no ataca este problema específico.",
+                    "Dato curioso: el clopidogrel tampoco resuelve esto.",
+                    "Miau, apixabán no es el clásico fármaco puente acá.",
+                    "¡Ronroneo de aprobación! Enoxaparina: el puente clásico mientras la warfarina alcanza su efecto pleno."
+                ]
+            }
         },
         {
             "numero": 346,
@@ -16140,7 +16240,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La amiodarona, al inhibir el CYP2C9 (entre otras enzimas), aumenta los niveles y el efecto del acenocumarol, una interacción clínicamente relevante — es la respuesta correcta.",
+                    "La rifampicina, potente inductor enzimático, disminuye el efecto del acenocumarol, no lo aumenta.",
+                    "La carbamacepina, también inductora enzimática, disminuye el efecto del acenocumarol, no lo aumenta.",
+                    "La lamotrigina no tiene un efecto significativo inductor ni inhibidor sobre el metabolismo del acenocumarol."
+                ],
+                "fantasma": [
+                    "¡Esta! Amiodarona frena la enzima que degrada el acenocumarol, y el efecto se dispara.",
+                    "Esta acelera la degradación, bajando el efecto, no subiéndolo.",
+                    "Esta también acelera la degradación, bajando el efecto.",
+                    "Esta no tiene un impacto relevante acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Amiodarona: frena el CYP2C9 y dispara el efecto del acenocumarol.",
+                    "Fijate: rifampicina acelera la degradación, bajando el efecto.",
+                    "Dato curioso: carbamacepina también acelera, bajando el efecto.",
+                    "Miau, lamotrigina no tiene impacto relevante acá."
+                ]
+            }
         },
         {
             "numero": 347,
@@ -16167,7 +16287,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La necrosis cutánea sí se relaciona con el tratamiento con acenocumarol, por el descenso inicial de la proteína C.",
+                    "El síndrome gris del neonato se asocia clásicamente al cloranfenicol, no al acenocumarol; por eso esta es la respuesta correcta (la excepción que había que señalar).",
+                    "La condrodisplasia punctata sí se relaciona con la exposición a dicumarínicos durante el primer trimestre del embarazo (síndrome warfarínico fetal).",
+                    "El aborto espontáneo sí se relaciona con el uso de dicumarínicos durante el embarazo."
+                ],
+                "fantasma": [
+                    "Esta sí es real, por la caída inicial de la proteína C.",
+                    "¡Esta! Ese síndrome gris es del cloranfenicol, no de este anticoagulante.",
+                    "Esta sí es real, parte del síndrome fetal por warfarina.",
+                    "Este sí es un riesgo real durante el embarazo."
+                ],
+                "gato": [
+                    "Fijate: esta sí es real, por la proteína C que cae primero.",
+                    "¡Ronroneo de aprobación! Síndrome gris es del cloranfenicol, no del acenocumarol, la excepción de la lista.",
+                    "Dato curioso: esta sí es parte del síndrome fetal por warfarina.",
+                    "Miau, este sí es un riesgo real en el embarazo."
+                ]
+            }
         },
         {
             "numero": 348,
@@ -16194,7 +16334,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El factor VIII no es dependiente de la vitamina K y no es inhibido por la warfarina — es la respuesta correcta.",
+                    "El factor II (protrombina) sí es dependiente de la vitamina K y sí es inhibido por la warfarina.",
+                    "El factor VII sí es dependiente de la vitamina K y sí es inhibido por la warfarina.",
+                    "El factor X sí es dependiente de la vitamina K y sí es inhibido por la warfarina."
+                ],
+                "fantasma": [
+                    "¡Esta! El factor VIII no necesita vitamina K, la warfarina no lo toca.",
+                    "Este sí depende de la vitamina K, la warfarina lo frena.",
+                    "Este también depende de la vitamina K, la warfarina lo frena.",
+                    "Este también depende de la vitamina K, la warfarina lo frena."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Factor VIII: el único de la lista que no depende de la vitamina K.",
+                    "Fijate: el factor II sí depende de la vitamina K.",
+                    "Dato curioso: el factor VII sí depende de la vitamina K.",
+                    "Miau, el factor X también depende de la vitamina K."
+                ]
+            }
         },
         {
             "numero": 349,
@@ -16221,7 +16381,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El acenocumarol, un antagonista de la vitamina K, requiere monitoreo frecuente con RIN, con un objetivo terapéutico de 2 a 3 en la fibrilación auricular — es la respuesta correcta.",
+                    "Un RIN de 4 a 5 sería supraterapéutico y peligroso, no el objetivo buscado en la fibrilación auricular.",
+                    "La enoxaparina no se monitorea con RIN, ese parámetro es específico de los antagonistas de vitamina K.",
+                    "La enoxaparina no se monitorea con RIN, y un rango de 4 a 5 tampoco sería el objetivo de ningún anticoagulante en este contexto."
+                ],
+                "fantasma": [
+                    "¡Esta! Acenocumarol, con RIN entre 2 y 3, el objetivo clásico en fibrilación auricular.",
+                    "Ese rango es demasiado alto, peligroso de sangrado.",
+                    "Ese control no es para la enoxaparina.",
+                    "Ni el fármaco ni el rango son correctos acá."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Acenocumarol, RIN 2-3: el combo clásico en fibrilación auricular.",
+                    "Fijate: ese rango tan alto sería peligroso.",
+                    "Dato curioso: ese control no aplica a la enoxaparina.",
+                    "Miau, ni el fármaco ni el rango encajan acá."
+                ]
+            }
         },
         {
             "numero": 350,
@@ -16248,7 +16428,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La alta unión a proteínas plasmáticas no explica el retardo del efecto anticoagulante, sino otro mecanismo.",
+                    "El retardo se debe a que los factores de coagulación ya circulantes (especialmente el factor II, con vida media larga) deben degradarse antes de que el efecto anticoagulante sea completo — es la respuesta correcta.",
+                    "La distribución en tejidos poco irrigados no es la explicación del retardo del efecto.",
+                    "No es la vida media del propio fármaco, sino la de los factores de coagulación preexistentes, lo que explica el retardo."
+                ],
+                "fantasma": [
+                    "Eso no explica por qué tarda en hacer efecto.",
+                    "¡Esta! Los factores que ya circulaban tienen que degradarse primero, y eso lleva tiempo.",
+                    "Eso tampoco explica el retardo.",
+                    "No es la vida media del fármaco, es la de los factores viejos que aún circulan."
+                ],
+                "gato": [
+                    "Fijate: eso no explica el retardo del efecto.",
+                    "¡Ronroneo de aprobación! Los factores preexistentes (sobre todo el II) tardan en degradarse, esa es la clave del retardo.",
+                    "Dato curioso: eso tampoco explica el retardo.",
+                    "Miau, no es la vida media del fármaco, es la de los factores viejos."
+                ]
+            }
         },
         {
             "numero": 351,
@@ -16275,7 +16475,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Ante sangrado activo con RIN muy elevado, el plasma fresco congelado aporta de inmediato los factores de coagulación necesarios para revertir el efecto — es la respuesta correcta.",
+                    "La transfusión de plaquetas no corrige el problema, ya que este cuadro no es de origen plaquetario sino de déficit de factores.",
+                    "La vitamina K sola es demasiado lenta (tarda 24-48 horas) para una situación de sangrado activo, se necesita reposición inmediata de factores.",
+                    "El andexanet es el antídoto de los inhibidores del factor Xa (apixabán/rivaroxabán), no de los dicumarínicos."
+                ],
+                "fantasma": [
+                    "¡Esta! El plasma trae los factores ya listos, rápido, para frenar el sangrado.",
+                    "Las plaquetas no son el problema acá, no ayuda.",
+                    "Sola es demasiado lenta para un sangrado activo.",
+                    "Ese antídoto es de otra familia de anticoagulantes, no de este."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Plasma fresco congelado: reposición inmediata de factores ante sangrado activo.",
+                    "Fijate: las plaquetas no son el problema en este cuadro.",
+                    "Dato curioso: sola, la vitamina K es demasiado lenta para un sangrado activo.",
+                    "Miau, ese antídoto es para los anti-Xa, no para los dicumarínicos."
+                ]
+            }
         },
         {
             "numero": 352,
@@ -16302,7 +16522,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los dicumarínicos no se eliminan sin cambios por filtración glomerular, tienen un extenso metabolismo hepático.",
+                    "Los dicumarínicos no se distribuyen ampliamente en el agua corporal, tienen una altísima unión a proteínas plasmáticas.",
+                    "Los dicumarínicos no activan la epóxido reductasa de la vitamina K, la inhiben; ese es justamente su mecanismo de acción.",
+                    "Los dicumarínicos poseen efecto disminuido en presencia de rifampicina, un potente inductor enzimático que acelera su metabolismo — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No salen así por el riñón, el hígado hace casi todo el trabajo.",
+                    "No andan sueltos por el agua del cuerpo, están bien pegados a proteínas.",
+                    "Es al revés, la frenan, no la activan.",
+                    "¡Esta! La rifampicina acelera su eliminación y les baja el efecto."
+                ],
+                "gato": [
+                    "Fijate: el hígado hace el trabajo, no el riñón.",
+                    "Dato curioso: están muy unidos a proteínas, no sueltos en el agua corporal.",
+                    "Miau, es al revés, la inhiben, no la activan.",
+                    "¡Ronroneo de aprobación! Rifampicina: acelera su metabolismo y baja su efecto anticoagulante."
+                ]
+            }
         },
         {
             "numero": 353,
@@ -16329,7 +16569,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Un RIN prolongado es específico de los antagonistas de la vitamina K (warfarina/acenocumarol); el conteo de plaquetas normal/levemente elevado no sugiere trombocitopenia por heparina — es la respuesta correcta.",
+                    "La enoxaparina no prolonga el RIN, este parámetro es específico de los antagonistas de vitamina K.",
+                    "El clopidogrel no afecta el RIN, es un antiagregante, no un anticoagulante.",
+                    "Un RIN prolongado indica efecto anticoagulante activo, no es compatible con la ausencia de anticoagulación."
+                ],
+                "fantasma": [
+                    "¡Esta! El RIN alto es la huella digital de la warfarina o el acenocumarol.",
+                    "Esta no toca el RIN para nada.",
+                    "Este tampoco afecta el RIN, es otro tipo de fármaco.",
+                    "El RIN alto dice que sí hay anticoagulación activa."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! RIN prolongado: la huella específica de los antagonistas de vitamina K.",
+                    "Fijate: enoxaparina no toca el RIN.",
+                    "Dato curioso: clopidogrel tampoco afecta el RIN.",
+                    "Miau, el RIN alto confirma que sí hay anticoagulación, no lo contrario."
+                ]
+            }
         },
         {
             "numero": 354,
@@ -16356,7 +16616,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El acenocoumarol no bloquea receptores de vitamina K, no existe tal blanco farmacológico.",
+                    "El acenocoumarol inhibe la enzima vitamina K epóxido reductasa, encargada de reciclar y reducir la vitamina K a su forma activa — es la respuesta correcta.",
+                    "El acenocoumarol no bloquea receptores de los factores de coagulación, impide su síntesis por la vía de la vitamina K.",
+                    "El aumento de la actividad de antitrombina III es el mecanismo de la heparina, no del acenocoumarol."
+                ],
+                "fantasma": [
+                    "Ese receptor no existe, no es el mecanismo real.",
+                    "¡Esta! Frena la enzima que recicla la vitamina K para que siga funcionando.",
+                    "No bloquea receptores, frena la fábrica de factores nuevos.",
+                    "Eso es cosa de la heparina, no de este fármaco."
+                ],
+                "gato": [
+                    "Fijate: ese receptor no existe realmente.",
+                    "¡Ronroneo de aprobación! Enzima que recicla la vitamina K, bloqueada: el mecanismo real del acenocoumarol.",
+                    "Dato curioso: no bloquea receptores, frena la síntesis de factores nuevos.",
+                    "Miau, eso es mecanismo de la heparina, no de este fármaco."
+                ]
+            }
         },
         {
             "numero": 355,
@@ -16383,7 +16663,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Seis a doce horas es demasiado poco tiempo para el efecto anticoagulante completo de la warfarina.",
+                    "Doce a veinticuatro horas también es demasiado poco tiempo.",
+                    "Quince a veinte horas tampoco alcanza para el efecto completo.",
+                    "El efecto anticoagulante completo de la warfarina tarda entre 48 y 96 horas, tiempo necesario para que se agoten los factores de coagulación preexistentes — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Muy poco tiempo para el efecto completo.",
+                    "Todavía poco tiempo para el efecto completo.",
+                    "Sigue siendo poco tiempo para el efecto completo.",
+                    "¡Esta! Dos a cuatro días, el tiempo real que tarda en hacer efecto completo."
+                ],
+                "gato": [
+                    "Fijate: muy poco tiempo para el efecto completo.",
+                    "Dato curioso: todavía insuficiente.",
+                    "Miau, sigue siendo poco tiempo.",
+                    "¡Ronroneo de aprobación! 48 a 96 horas: el tiempo real para el efecto anticoagulante completo de la warfarina."
+                ]
+            }
         },
         {
             "numero": 356,
@@ -16410,7 +16710,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los dicumarínicos en realidad tienen una ventana terapéutica ESTRECHA, no amplia, requiriendo monitoreo frecuente con RIN.",
+                    "Existe un retraso entre la concentración máxima en sangre y la respuesta terapéutica porque los factores de coagulación ya preformados siguen circulando y deben agotarse primero — es la respuesta correcta.",
+                    "Los polimorfismos en CYP2C9 y en la vitamina K epóxido reductasa SÍ tienen una relación bien establecida con la variabilidad de respuesta a estos anticoagulantes.",
+                    "La vida media de la warfarina es mucho más larga, de aproximadamente 20 a 60 horas, no de 5 a 9 horas."
+                ],
+                "fantasma": [
+                    "Es al revés, la ventana es angosta, por eso hay que controlar tanto.",
+                    "¡Esta! Los factores viejos siguen dando vueltas y hay que esperar a que se agoten.",
+                    "Todo lo contrario, esos genes sí importan y mucho en la dosis final.",
+                    "Dura mucho más que eso, más de un día entero."
+                ],
+                "gato": [
+                    "Fijate: es al revés, la ventana terapéutica es angosta.",
+                    "¡Ronroneo de aprobación! Factores viejos circulando: la razón del retraso entre concentración y efecto.",
+                    "Dato curioso: esos polimorfismos sí importan, y mucho.",
+                    "Miau, la vida media real es mucho más larga que eso."
+                ]
+            }
         },
         {
             "numero": 357,
@@ -16437,7 +16757,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Una hora es demasiado poco tiempo para ver el efecto de la vitamina K.",
+                    "Seis horas también es insuficiente para ver un cambio significativo.",
+                    "El efecto de la vitamina K tarda entre 24 y 48 horas en manifestarse, ya que requiere la síntesis de nuevos factores de coagulación — es la respuesta correcta.",
+                    "No hace falta esperar muchos días, el efecto se ve dentro de las 24 a 48 horas."
+                ],
+                "fantasma": [
+                    "Muy rápido para lo que tarda este fármaco en actuar.",
+                    "Todavía poco tiempo para el efecto real.",
+                    "¡Esta! Un día o dos, el tiempo que tarda el cuerpo en fabricar factores nuevos.",
+                    "No hace falta esperar tanto, no son días y días."
+                ],
+                "gato": [
+                    "Fijate: muy rápido para lo que tarda este fármaco.",
+                    "Dato curioso: todavía insuficiente.",
+                    "¡Ronroneo de aprobación! 24 a 48 horas: el tiempo real que tarda la vitamina K en hacer efecto.",
+                    "Miau, no hace falta esperar tantos días."
+                ]
+            }
         },
         {
             "numero": 358,
@@ -16464,7 +16804,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La rosuvastatina no se elimina en más del 70% por vía renal sin metabolizar, tiene eliminación mayormente hepática/biliar.",
+                    "El dabigatrán se elimina en aproximadamente un 80% por vía renal sin metabolizar, un dato clave para su ajuste de dosis en insuficiencia renal — es la respuesta correcta.",
+                    "La amiodarona tiene metabolismo hepático extenso, no eliminación renal predominante sin metabolizar.",
+                    "El nitroprusiato de sodio se metaboliza a cianuro y luego a tiocianato, que sí se elimina por vía renal, pero como metabolito, no como fármaco inalterado."
+                ],
+                "fantasma": [
+                    "Esta se va más por el hígado, no por el riñón tal cual.",
+                    "¡Esta! Un 80% se va por el riñón sin cambiar, por eso hay que cuidar la dosis en riñón malo.",
+                    "Esta se transforma mucho en el hígado, no sale tal cual.",
+                    "Este se transforma en otra cosa antes de irse por el riñón."
+                ],
+                "gato": [
+                    "Fijate: rosuvastatina se va más por el hígado.",
+                    "¡Ronroneo de aprobación! Dabigatrán: 80% renal sin metabolizar, dato clave para ajustar dosis en riñón enfermo.",
+                    "Dato curioso: amiodarona se transforma mucho en el hígado.",
+                    "Miau, nitroprusiato sale como metabolito, no tal cual."
+                ]
+            }
         },
         {
             "numero": 359,
@@ -16491,7 +16851,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El dabigatrán en realidad tiene baja biodisponibilidad oral, y el rivaroxabán sí se administra por vía oral, no solo intravenosa.",
+                    "El dabigatrán tiene baja biodisponibilidad oral, pero se administra por vía oral igualmente (con una formulación especial), no únicamente por vía intravenosa.",
+                    "Es al revés: el dabigatrán se elimina principalmente por vía renal sin metabolizar, mientras que el rivaroxabán tiene mayor participación del CYP3A4.",
+                    "El dabigatrán se elimina aproximadamente un 80% por vía renal, mientras que el rivaroxabán se elimina en mayor proporción por metabolismo vía CYP3A4 — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Es al revés, dabigatrán absorbe poco, y rivaroxabán sí se toma por boca.",
+                    "Se toma por boca igual, aunque absorba poco, no es solo intravenoso.",
+                    "Se equivocó de fármaco: es el dabigatrán el que se va por el riñón, no el rivaroxabán.",
+                    "¡Esta! Dabigatrán al riñón, rivaroxabán al hígado (CYP3A4): así se diferencian."
+                ],
+                "gato": [
+                    "Fijate: es al revés, dabigatrán absorbe poco y rivaroxabán sí es oral.",
+                    "Dato curioso: se toma por boca igual, con formulación especial.",
+                    "Miau, se equivocó de fármaco: dabigatrán es el renal, no el rivaroxabán.",
+                    "¡Ronroneo de aprobación! Dabigatrán al riñón, rivaroxabán al CYP3A4: la diferencia clave entre ambos."
+                ]
+            }
         },
         {
             "numero": 360,
@@ -16518,7 +16898,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "anticoagulantes",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El dabigatrán, gracias a su farmacocinética y farmacodinamia predecibles, no requiere monitoreo habitual — es la respuesta correcta.",
+                    "El KPTT no es el monitoreo estándar recomendado para el dabigatrán en la práctica habitual.",
+                    "El dosaje de factor anti-X no es el test apropiado para el dabigatrán, que es un inhibidor directo de la trombina, no del factor Xa.",
+                    "El RIN no es un parámetro relevante para monitorear el dabigatrán, es específico de los antagonistas de vitamina K."
+                ],
+                "fantasma": [
+                    "¡Esta! Dosis predecible, sin necesidad de estar controlando todo el tiempo.",
+                    "Ese no es el control habitual de este fármaco.",
+                    "Ese test es para los inhibidores del factor Xa, no para este inhibidor de trombina.",
+                    "Ese valor es cosa de la warfarina, no del dabigatrán."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Farmacocinética predecible: el dabigatrán no necesita el control habitual de otros anticoagulantes.",
+                    "Fijate: ese no es el control estándar de este fármaco.",
+                    "Dato curioso: ese test es para inhibidores del factor Xa, no de trombina.",
+                    "Miau, el RIN es territorio de la warfarina, no del dabigatrán."
+                ]
+            }
         },
         {
             "numero": 361,
