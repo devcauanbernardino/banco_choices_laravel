@@ -3610,7 +3610,27 @@
             "Quinapril",
             "Losartana",
             "Valsartana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O enalapril é uma pródroga: é administrado inativo e ativado no fígado por hidrólise a enalaprilat.",
+                "O quinapril também é uma pródroga, ativada no fígado a quinaprilat.",
+                "O losartana é uma pródroga: seu metabólito ativo, EXP3174, é quem realmente bloqueia o receptor AT1.",
+                "O valsartana não precisa de ativação hepática, atua diretamente como antagonista do receptor AT1 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Nada disso, esse precisa se ativar no fígado.",
+                "Esse também é uma pródroga, como quase todos os IECA terminados em '-pril'.",
+                "Olha, losartana é a exceção entre os ARA-II: precisa se converter no metabólito ativo.",
+                "Essa aí! O valsartana já vem ativo, não precisa se transformar."
+            ],
+            "gato": [
+                "Fijate: enalapril precisa do fígado para se ativar, então não é a resposta.",
+                "Dado curioso: quase todos os IECA terminados em '-pril' (exceto captopril) são pródrogas.",
+                "Miau, losartana é enganoso: parece ativo mas precisa virar EXP3174.",
+                "Ronronado de aprovação! Valsartana age do jeito que é administrado."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos atua inibindo a neprilisina e aumentando os níveis de peptídeo natriurético?",
@@ -3620,7 +3640,27 @@
             "Eplerenona",
             "sacubitril",
             "Procainamida"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O valsartana é um ARA-II, bloqueia o receptor AT1, não atua sobre a neprilisina.",
+                "A eplerenona é um antagonista do receptor de mineralocorticoides, não inibe a neprilisina.",
+                "O sacubitrila inibe a neprilisina, enzima que degrada o peptídeo natriurético, aumentando assim seus níveis — é a resposta correta.",
+                "A procainamida é um antiarrítmico classe IA, sem relação com a neprilisina."
+            ],
+            "fantasma": [
+                "Esse bloqueia receptores, não enzimas de degradação.",
+                "Essa atua no receptor de aldosterona, assunto completamente diferente.",
+                "Essa aí! O sacubitrila trava a enzima que destrói o peptídeo natriurético.",
+                "Esse nem é um anti-hipertensivo, é um antiarrítmico."
+            ],
+            "gato": [
+                "Fijate: valsartana bloqueia receptores AT1, não mexe na neprilisina.",
+                "Dado curioso: eplerenona compete com a aldosterona, não com a neprilisina.",
+                "Ronronado de aprovação! Sacubitrila inibe a neprilisina e sobe o peptídeo natriurético.",
+                "Miau, procainamida é de outro capítulo do livro: antiarritmia classe IA."
+            ]
+        }
     },
     {
         "pergunta": "Quais dos seguintes medicamentos são absolutamente contra-indicados durante a gravidez?",
@@ -3630,7 +3670,27 @@
             "Bloqueadores de cálcio",
             "Medicamentos que atuam no sistema renina-angiotensina-aldosterona",
             "Betabloqueadores"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A alfametildopa é o anti-hipertensivo de escolha na gravidez, não está contraindicada.",
+                "Os bloqueadores de cálcio podem ser usados com cautela na gravidez, não estão absolutamente contraindicados.",
+                "Os fármacos que atuam no sistema renina-angiotensina-aldosterona (IECA, ARA-II) são teratogênicos e estão absolutamente contraindicados em todas as fases da gravidez — é a resposta correta.",
+                "Os betabloqueadores podem ser usados com cautela, especialmente o labetalol, não estão absolutamente contraindicados."
+            ],
+            "fantasma": [
+                "Muito pelo contrário, essa é a primeira opção em gestantes.",
+                "Esses podem ser usados se necessário, com cuidado.",
+                "Essa aí! Nada que mexa no sistema renina-angiotensina chega perto de uma gestante.",
+                "Esses também têm seu lugar, como o labetalol."
+            ],
+            "gato": [
+                "Fijate: alfametildopa é a rainha da hipertensão gestacional, não a vilã.",
+                "Dado curioso: os bloqueadores de cálcio são opção de segunda linha na gravidez.",
+                "Ronronado de aprovação! IECA e ARA-II são teratogênicos, proibidos em qualquer trimestre.",
+                "Miau, os betabloqueadores (labetalol) têm sim uso permitido na gravidez."
+            ]
+        }
     },
     {
         "pergunta": "Na hipertensão da gravidez, são contra-indicados em todos os casos:",
@@ -3640,7 +3700,27 @@
             "Bloqueadores de cálcio",
             "Alfa-metildopa",
             "Betabloqueadores"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os fármacos que atuam no sistema renina-angiotensina-aldosterona (IECA, ARA-II) são teratogênicos e estão absolutamente contraindicados em qualquer caso de hipertensão gestacional — é a resposta correta.",
+                "Os bloqueadores de cálcio são uma opção utilizável na hipertensão gestacional, não estão absolutamente contraindicados.",
+                "A alfametildopa é justamente o fármaco de primeira linha na hipertensão gestacional.",
+                "Os betabloqueadores, especialmente o labetalol, são usados na hipertensão gestacional quando necessário."
+            ],
+            "fantasma": [
+                "Essa aí! Nunca, em nenhum caso, se usa algo que mexa no sistema renina-angiotensina na gravidez.",
+                "Esses sim podem ser usados se a situação exigir.",
+                "Muito pelo contrário, essa é a estrela do tratamento na gravidez.",
+                "Esses também entram no arsenal permitido, como o labetalol."
+            ],
+            "gato": [
+                "Ronronado de aprovação! IECA e ARA-II: proibição absoluta em qualquer hipertensão da gravidez.",
+                "Fijate: os bloqueadores de cálcio têm sim seu lugar aqui.",
+                "Dado curioso: alfametildopa é primeira linha, não uma contraindicação.",
+                "Miau, os betabloqueadores (labetalol) são permitidos com cuidado."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com hipertensão tratado com inibidores da ECA manifesta tosse e angioedema. Selecione o medicamento para o qual você faria a rotação:",
@@ -3650,7 +3730,27 @@
             "Labetalol",
             "Espironolactona",
             "Amiodarona"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O losartana, por ser um ARA-II, não interfere na degradação da bradicinina e por isso não reproduz a tosse nem o angioedema do IECA — é a resposta correta.",
+                "O labetalol é um betabloqueador, não resolve o problema de mecanismo e não é a rotação padrão de um IECA por intolerância.",
+                "A espironolactona é um poupador de potássio, não é substituto habitual de um IECA por tosse/angioedema.",
+                "A amiodarona é um antiarrítmico, sem nenhum papel no manejo da hipertensão nem desse efeito adverso."
+            ],
+            "fantasma": [
+                "Essa aí! Os ARA-II são justamente a alternativa quando o IECA causa tosse ou angioedema.",
+                "Esse muda de família inteira, não é a rotação lógica aqui.",
+                "Essa atua em outro ponto do rim, não resolve o problema.",
+                "Essa nem é anti-hipertensivo, é para arritmias."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Losartana não mexe na bradicinina, então não causa tosse nem angioedema.",
+                "Fijate: labetalol muda de classe inteira, não é a rotação clássica do IECA.",
+                "Dado curioso: espironolactona poupa potássio, assunto à parte.",
+                "Miau, amiodarona nem compete nessa categoria."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente hipertenso de 48 anos foi tratado com sucesso com diurético tiazídico nos últimos 5 anos. Nos últimos 3 meses, a pressão diastólica aumentou de forma constante e outro medicamento anti-hipertensivo foi adicionado. O paciente relata que em diversas ocasiões não conseguiu obter uma ereção e que não consegue mais completar três séries de tênis como costumava fazer. Qual dos seguintes medicamentos o paciente poderia ter recebido?",
@@ -3660,7 +3760,27 @@
             "Losartana",
             "Atenolol",
             "Minoxidil"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O captopril (IECA) não se associa classicamente à disfunção erétil nem à fadiga como efeito característico.",
+                "O losartana (ARA-II) não tem um perfil de efeitos adversos que inclua fadiga e disfunção erétil de forma característica.",
+                "O atenolol, um betabloqueador, produz classicamente fadiga, diminuição da tolerância ao exercício e disfunção erétil por seu efeito sobre o tônus simpático — é a resposta correta.",
+                "O minoxidil é um vasodilatador que produz taquicardia reflexa e hirsutismo, não fadiga nem disfunção erétil."
+            ],
+            "fantasma": [
+                "Esse causa tosse, não cansaço nem problemas na cama.",
+                "Esse é bem neutro quanto a efeitos adversos sexuais.",
+                "Essa aí! Betabloqueadores são causadores clássicos de cansaço e disfunção erétil.",
+                "Esse faz crescer pelo e acelera o coração, o oposto de cansaço."
+            ],
+            "gato": [
+                "Fijate: captopril é mais de tosse que de cansaço.",
+                "Dado curioso: losartana é um dos anti-hipertensivos mais neutros sexualmente.",
+                "Ronronado de aprovação! Betabloqueador como atenolol: cansaço + disfunção erétil, combo clássico.",
+                "Miau, minoxidil te dá taquicardia e pelos, não fadiga."
+            ]
+        }
     },
     {
         "pergunta": "O principal mecanismo farmacodinâmico pelo qual o Telmisartan gera a sua ação é:",
@@ -3670,7 +3790,27 @@
             "Inibição da enzima conversora da angiotensina II a nível vascular.",
             "Antagonismo do receptor AT1 da angiotensina 2 no nível vascular",
             "Antagonismo do receptor do angiotensinogênio AT2 no nível vascular"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O antagonismo do receptor de renina corresponde a outra classe (alisquireno), não ao telmisartana.",
+                "A inibição da ECA é o mecanismo dos IECA, não dos ARA-II como o telmisartana.",
+                "O telmisartana bloqueia o receptor AT1 da angiotensina II a nível vascular, impedindo seu efeito vasoconstritor — é a resposta correta.",
+                "O receptor AT2 não é o alvo terapêutico dos ARA-II, e o ligante correto seria angiotensina II, não angiotensinogênio."
+            ],
+            "fantasma": [
+                "Esse é o mecanismo de outro fármaco, o alisquireno.",
+                "Isso é o que os IECA fazem, não os ARA-II.",
+                "Essa aí! O telmisartana bloqueia diretamente o receptor AT1.",
+                "Nem o receptor nem o ligante estão certos aqui, erro duplo."
+            ],
+            "gato": [
+                "Fijate: isso descreve o alisquireno, não o telmisartana.",
+                "Dado curioso: telmisartana termina em '-sartana', não inibe a ECA, essa é outra família.",
+                "Ronronado de aprovação! AT1 é o alvo dos ARA-II como o telmisartana.",
+                "Miau, nem o receptor (AT2) nem o ligante (angiotensinogênio) estão certos."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao telmisartana indicar:",
@@ -3680,7 +3820,27 @@
             "Um inibidor da enzima conversora de angiotensina pode causar tosse e angioedema.",
             "Seu efeito benéfico sobre os rins em pacientes diabéticos se deve à diminuição da pressão intraglomerular.",
             "O uso crônico em pacientes com hipertensão arterial aumenta a possibilidade de disfunção endotelial em nível cerebrovascular."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O telmisartana é administrado por via oral, não endovenosa.",
+                "O telmisartana é um ARA-II, não um IECA, por isso não inibe a ECA nem causa tosse por acúmulo de bradicinina.",
+                "O telmisartana reduz a pressão intraglomerular ao dilatar preferencialmente a arteríola eferente, o que explica seu efeito renoprotetor em pacientes diabéticos — é a resposta correta.",
+                "O uso crônico de ARA-II melhora a função endotelial, não piora."
+            ],
+            "fantasma": [
+                "Nada de endovenoso, esse é de tomada diária por boca.",
+                "Confunde famílias: esse é ARA-II, não IECA.",
+                "Essa aí! Baixar a pressão dentro do glomérulo é justamente o que protege o rim diabético.",
+                "Muito pelo contrário, esse melhora a função do endotélio com uso crônico."
+            ],
+            "gato": [
+                "Fijate: telmisartana é de comprimido, não de soro.",
+                "Dado curioso: a tosse por bradicinina é coisa de IECA, telmisartana é ARA-II.",
+                "Ronronado de aprovação! Menos pressão intraglomerular, rim diabético protegido.",
+                "Miau, é o contrário: melhora a função endotelial, não piora."
+            ]
+        }
     },
     {
         "pergunta": "Assinale a opção CORRETA em relação ao enalapril:",
@@ -3690,7 +3850,27 @@
             "Não inibe a degradação da bradicinina",
             "Pode ser associado ao valsartana",
             "É contraindicado na insuficiência renal grave."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O enalapril é uma pródroga, não uma droga ativa; é ativado no fígado a enalaprilat.",
+                "O enalapril sim inibe a degradação da bradicinina, já que a ECA é a enzima responsável por degradá-la; por isso aumenta a bradicinina e surge a tosse.",
+                "A associação de IECA com ARA-II (duplo bloqueio do sistema renina-angiotensina) é desaconselhada pelo risco de hipercalemia e insuficiência renal.",
+                "O enalapril é contraindicado na insuficiência renal severa, dado o risco de piora da função renal e hipercalemia — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não, esse precisa do fígado para se ativar primeiro.",
+                "É o contrário: sim inibe, por isso dá tosse.",
+                "Combinar essas duas famílias é má ideia, risco de hipercalemia.",
+                "Essa aí! Rim muito danificado e enalapril não combinam."
+            ],
+            "gato": [
+                "Fijate: enalapril é pródroga, não droga ativa.",
+                "Dado curioso: sim inibe a degradação da bradicinina, por isso a tosse.",
+                "Miau, duplo bloqueio IECA + ARA-II é perigoso, não recomendado.",
+                "Ronronado de aprovação! Insuficiência renal severa: enalapril fica de fora."
+            ]
+        }
     },
     {
         "pergunta": "Enalapril é caracterizado por ser:",
@@ -3700,7 +3880,27 @@
             "Um pró-fármaco, útil para o tratamento da hipertensão e da insuficiência cardíaca",
             "O único IECA que produz tosse em 5-20% dos pacientes",
             "O único lACEA que não inibe a remodelação cardíaca"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O captopril, não o enalapril, é quem possui o grupo sulfidrila em sua estrutura.",
+                "O enalapril é uma pródroga que se ativa em enalaprilat, útil tanto na hipertensão quanto na insuficiência cardíaca — é a resposta correta.",
+                "A tosse em 5-20% dos pacientes é um efeito de classe de todos os IECA, não exclusivo do enalapril.",
+                "Todos os IECA, incluindo o enalapril, inibem o remodelamento cardíaco ao reduzir a angiotensina II."
+            ],
+            "fantasma": [
+                "Esse grupo químico é marca registrada do captopril, não do enalapril.",
+                "Essa aí! Pródroga que serve tanto pra pressão quanto pro coração fraco.",
+                "A tosse é de toda a família, não exclusiva desse.",
+                "Muito pelo contrário, esse também trava o remodelamento, como seus primos."
+            ],
+            "gato": [
+                "Fijate: sulfidrila é coisa do captopril, não do enalapril.",
+                "Ronronado de aprovação! Pródroga versátil: hipertensão e insuficiência cardíaca.",
+                "Dado curioso: a tosse é efeito de classe, todos os IECA compartilham.",
+                "Miau, enalapril também trava o remodelamento cardíaco, como toda a família."
+            ]
+        }
     },
     {
         "pergunta": "No tratamento anti-hipertensivo com enalapril podem ocorrer as seguintes reações adversas:",
@@ -3710,7 +3910,27 @@
             "Tosse, hipotensão ortostática e hipocalemia",
             "Sedação, hipotensão na primeira dose e hipercalemia.",
             "Sedação, hipotensão ortostática e hipocalemia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O enalapril pode causar tosse por acúmulo de bradicinina, hipotensão de primeira dose por vasodilatação brusca, e hipercalemia por redução da aldosterona — é a resposta correta.",
+                "A hipocalemia não é característica dos IECA; pelo contrário, eles tendem a causar hipercalemia.",
+                "A sedação não é efeito adverso típico dos IECA, que atuam perifericamente, não centralmente.",
+                "Nem a sedação nem a hipocalemia são próprias do enalapril."
+            ],
+            "fantasma": [
+                "Essa aí! Tosse, queda de pressão no início, e potássio subindo: o combo clássico do IECA.",
+                "É o contrário: o IECA sobe o potássio, não baixa.",
+                "Esse não dá sono, atua no rim e nos vasos, não no cérebro.",
+                "Nenhuma das duas combina com o perfil do enalapril."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Tosse + hipotensão de primeira dose + hipercalemia: a tríade clássica do IECA.",
+                "Fijate: é hipercalemia, não hipocalemia, com os IECA.",
+                "Dado curioso: sedação não é coisa de IECA, esse efeito não está no quadro.",
+                "Miau, nem sedação nem hipocalemia combinam com o enalapril."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente com diabetes tipo 2 e hipertensão desenvolveu recentemente proteinúria. Qual medicamento retarda a progressão da doença renal neste paciente além de sua capacidade de reduzir a pressão arterial?",
@@ -3720,7 +3940,27 @@
             "Nifedipina",
             "Enalapril",
             "Diltiazem"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metoprolol é um betabloqueador e não tem efeito renoprotetor específico independente da pressão arterial.",
+                "A nifedipina, um bloqueador de cálcio, não demonstrou o mesmo efeito renoprotetor independente da pressão que os IECA.",
+                "O enalapril, ao reduzir a pressão intraglomerular pela dilatação da arteríola eferente, retarda a progressão da doença renal diabética além do seu efeito anti-hipertensivo — é a resposta correta.",
+                "O diltiazem, bloqueador de cálcio não di-hidropiridínico, também não tem o mesmo grau de evidência renoprotetora que os IECA."
+            ],
+            "fantasma": [
+                "Esse baixa a pressão, mas não tem esse plus renoprotetor.",
+                "Esse também só baixa pressão, sem o extra no rim.",
+                "Essa aí! O enalapril tem esse efeito extra que protege o rim além da pressão.",
+                "Esse é primo da nifedipina, mesmo problema: sem o plus renal."
+            ],
+            "gato": [
+                "Fijate: metoprolol não tem esse plus renoprotetor especial.",
+                "Dado curioso: nifedipina baixa pressão, mas não protege o rim como o IECA.",
+                "Ronronado de aprovação! Enalapril: menos pressão intraglomerular, rim diabético agradecido.",
+                "Miau, diltiazem também não tem essa vantagem renal comprovada."
+            ]
+        }
     },
     {
         "pergunta": "Um medicamento que, apesar de suas grandes vantagens terapêuticas, deve ser monitorado de perto em pacientes com insuficiência renal devido ao risco de desenvolver hipercalemia é:",
@@ -3730,7 +3970,27 @@
             "Furosemida",
             "Enalapril",
             "Acetazolamida"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hidroclorotiazida, pelo contrário, tende a causar hipocalemia, não hipercalemia.",
+                "A furosemida também causa tipicamente hipocalemia, não hipercalemia.",
+                "O enalapril, ao reduzir a aldosterona, favorece a retenção de potássio e deve ser monitorado de perto na insuficiência renal pelo risco de hipercalemia — é a resposta correta.",
+                "A acetazolamida, inibidor da anidrase carbônica, causa acidose metabólica com perda de potássio, não hipercalemia."
+            ],
+            "fantasma": [
+                "Essa baixa seu potássio, não sobe.",
+                "Essa também baixa, como quase todos os diuréticos de alça.",
+                "Essa aí! O enalapril retém potássio e em rim ruim isso é perigoso.",
+                "Essa acidifica o sangue e baixa o potássio, outra história."
+            ],
+            "gato": [
+                "Fijate: hidroclorotiazida baixa o potássio, não sobe.",
+                "Dado curioso: furosemida também te deixa sem potássio, não o contrário.",
+                "Ronronado de aprovação! Enalapril retém potássio, cuidado extra em rim danificado.",
+                "Miau, acetazolamida acidifica e também baixa o potássio."
+            ]
+        }
     },
     {
         "pergunta": "Quais das alternativas a seguir são contraindicações para o uso de Enalapril?",
@@ -3740,7 +4000,27 @@
             "Estenose bilateral da artéria renal",
             "História de anafilaxia após uso de Espironolactona",
             "Insuficiência renal independentemente do estágio"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A tosse por refluxo gastroesofágico não tem relação com o mecanismo do enalapril e não constitui contraindicação.",
+                "A estenose bilateral da artéria renal é uma contraindicação absoluta do enalapril, pois pode precipitar insuficiência renal aguda já que o fluxo glomerular depende da angiotensina II — é a resposta correta.",
+                "A anafilaxia à espironolactona não implica reatividade cruzada com o enalapril, são famílias farmacológicas distintas.",
+                "A insuficiência renal é contraindicada em seus estágios severos, não em todos os estágios sem distinção."
+            ],
+            "fantasma": [
+                "Esse tipo de tosse não tem nada a ver com o enalapril.",
+                "Essa aí! Sem fluxo nos dois rins, o enalapril pode derrubar a função renal.",
+                "Alergia a um diurético não significa alergia ao IECA, são coisas distintas.",
+                "Não é tão absoluto assim, só os estágios severos são problema."
+            ],
+            "gato": [
+                "Fijate: a tosse por refluxo não tem nada a ver com isso.",
+                "Ronronado de aprovação! Estenose bilateral: rim depende da angiotensina II, e o enalapril tira ela do caminho.",
+                "Dado curioso: alergia à espironolactona não cruza com enalapril.",
+                "Miau, só os estágios severos são contraindicação, não todos."
+            ]
+        }
     },
     {
         "pergunta": "A principal diferença entre Enalapril e Losartan é:",
@@ -3750,7 +4030,27 @@
             "O enalapril causa hipercalemia e o losartan não.",
             "Enalapril causa tosse e Losartan não",
             "O enalapril diminui a remodelação cardíaca e o losartan não"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Tanto enalapril quanto losartana reduzem a proteinúria de forma semelhante, por serem ambos bloqueadores do sistema renina-angiotensina.",
+                "Ambos os fármacos causam hipercalemia por mecanismos equivalentes, não é uma diferença distintiva entre eles.",
+                "O enalapril inibe a ECA e por isso acumula bradicinina, causando tosse; o losartana, ao bloquear diretamente o receptor AT1, não afeta a bradicinina e não causa tosse — é a resposta correta.",
+                "Ambos diminuem o remodelamento cardíaco de forma semelhante, ao inibir os efeitos da angiotensina II."
+            ],
+            "fantasma": [
+                "Os dois baixam a proteinúria mais ou menos igual, não é a diferença.",
+                "Os dois sobem o potássio parecido, também não é a diferença.",
+                "Essa aí! A tosse é a marca registrada que separa os IECA dos ARA-II.",
+                "Os dois cuidam do coração contra o remodelamento de forma parecida."
+            ],
+            "gato": [
+                "Fijate: ambos baixam proteinúria de forma similar.",
+                "Dado curioso: ambos sobem potássio parecido, não é a diferença chave.",
+                "Ronronado de aprovação! Tosse é a assinatura distintiva do IECA frente ao ARA-II.",
+                "Miau, os dois travam o remodelamento cardíaco de maneira comparável."
+            ]
+        }
     },
     {
         "pergunta": "Uma mulher foi medicada há 2 meses para hipertensão e consultada por tosse seca e persistente. Qual medicamento poderia ser responsável por esse efeito adverso?",
@@ -3760,7 +4060,27 @@
             "Losartana",
             "Amlodipina",
             "Propranolol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O lisinopril, um IECA, causa tosse seca e persistente por acúmulo de bradicinina — é a resposta correta.",
+                "O losartana, um ARA-II, não afeta a bradicinina e não causa tosse caracteristicamente.",
+                "A anlodipina, um bloqueador de cálcio, não se associa a tosse; produz mais edema periférico.",
+                "O propranolol, um betabloqueador, não causa tosse como efeito característico."
+            ],
+            "fantasma": [
+                "Essa aí! O lisinopril é um IECA clássico, a tosse é sua marca registrada.",
+                "Esse não mexe na bradicinina, não dá tosse.",
+                "Essa incha seus tornozelos, não faz você tossir.",
+                "Esse freia o coração, não irrita a garganta."
+            ],
+            "gato": [
+                "Ronronado de aprovação! IECA como lisinopril: tosse seca clássica por bradicinina.",
+                "Fijate: losartana é ARA-II, não mexe na bradicinina.",
+                "Dado curioso: anlodipina incha os pés, não dá tosse.",
+                "Miau, propranolol não tem nada a ver com tosse."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação do lisinopril?",
@@ -3770,7 +4090,27 @@
             "antagonismo do receptor ara II",
             "Inibição da enzima conversora de angiotensina (ECA)",
             "Antagonismo dos receptores beta-adrenérgicos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O lisinopril não atua inibindo a síntese de prostaglandinas, esse mecanismo é dos AINEs.",
+                "O antagonismo do receptor AT1 é o mecanismo dos ARA-II (como losartana), não de um IECA como o lisinopril.",
+                "O lisinopril inibe a enzima conversora de angiotensina (ECA), impedindo a conversão de angiotensina I em angiotensina II — é a resposta correta.",
+                "O antagonismo de receptores beta-adrenérgicos é dos betabloqueadores, não do lisinopril."
+            ],
+            "fantasma": [
+                "Isso quem faz são os anti-inflamatórios, não o lisinopril.",
+                "Esse mecanismo é dos '-sartana', não dos '-pril'.",
+                "Essa aí! Lisinopril bloqueia a enzima que converte angiotensina I em II.",
+                "Esse é trabalho dos betabloqueadores, outra família."
+            ],
+            "gato": [
+                "Fijate: prostaglandinas são coisa de AINE, não de lisinopril.",
+                "Dado curioso: isso é para os ARA-II, família diferente com sufixo '-sartana'.",
+                "Ronronado de aprovação! IECA clássico: bloqueia a ECA, freia a angiotensina II.",
+                "Miau, receptores beta são território dos betabloqueadores."
+            ]
+        }
     },
     {
         "pergunta": "A tosse associada ao uso de Ramipril deve-se a:",
@@ -3780,7 +4120,27 @@
             "Aumento dos níveis de bradicinina secundário à inibição da ECA.",
             "O aumento dos níveis de cálcio que favorecem a contração do diafragma.",
             "Aumento da resistência das vias aéreas periféricas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não há agonismo de receptores H1 nem edema de cordas vocais envolvido na tosse por IECA.",
+                "O aumento dos níveis de bradicinina, secundário à inibição da ECA (que normalmente a degrada), é o mecanismo responsável pela tosse associada aos IECA como o ramipril — é a resposta correta.",
+                "Não há relação entre o ramipril e níveis de cálcio ou contração diafragmática.",
+                "O ramipril não aumenta a resistência da via aérea periférica como mecanismo de tosse."
+            ],
+            "fantasma": [
+                "Isso não tem nada a ver, nem receptores H1 nem cordas vocais.",
+                "Essa aí! A bradicinina acumulada é a verdadeira culpada pela tosse.",
+                "Cálcio e diafragma não entram nessa história.",
+                "A via aérea periférica não é o mecanismo dessa tosse."
+            ],
+            "gato": [
+                "Fijate: nada de receptores H1 nem cordas vocais nessa história.",
+                "Ronronado de aprovação! Bradicinina acumulada = tosse do IECA, mecanismo clássico.",
+                "Dado curioso: cálcio e diafragma não têm nada a ver.",
+                "Miau, a resistência da via aérea não é o mecanismo real."
+            ]
+        }
     },
     {
         "pergunta": "Indicar a opção CORRETA quanto ao uso de ramipril em paciente com diabetes e insuficiência leve.",
@@ -3790,7 +4150,27 @@
             "Pode ser usado porque reduz a pressão intraglomerular e a proteinúria com nefroproteção",
             "Deve ser evitado, pois o uso de IECA pode alterar o metabolismo da glicose.",
             "Deve-se usar enalapril, que, diferentemente do ramipril, não possui metabolismo ativo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os IECA, usados com monitoramento adequado, não são contraindicados na insuficiência renal leve; na verdade são renoprotetores.",
+                "O ramipril pode ser usado em um paciente diabético com insuficiência renal leve, pois diminui a pressão intraglomerular e a proteinúria, oferecendo nefroproteção — é a resposta correta.",
+                "Os IECA não alteram de forma relevante o metabolismo da glicose a ponto de justificar evitá-los.",
+                "O enalapril, assim como o ramipril, é uma pródroga com metabólito ativo (enalaprilat); a afirmação está incorreta."
+            ],
+            "fantasma": [
+                "Muito pelo contrário, em dose leve o IECA ajuda o rim, não prejudica.",
+                "Essa aí! É justamente isso que o ramipril faz: protege esse rim diabético.",
+                "O IECA não mexe com a glicose desse jeito.",
+                "O enalapril também é pródroga, não é a exceção que a opção diz."
+            ],
+            "gato": [
+                "Fijate: em insuficiência renal leve o IECA é aliado, não inimigo.",
+                "Ronronado de aprovação! Menos pressão intraglomerular, menos proteinúria, rim diabético protegido.",
+                "Dado curioso: o metabolismo da glicose não é o problema aqui.",
+                "Miau, enalapril também é pródroga, a opção está errada."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos tem a tosse como efeito adverso característico?",
@@ -3800,7 +4180,27 @@
             "Perindopril.",
             "Valsartana.",
             "Procainamida."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A flecainida é um antiarrítmico classe IC, não causa tosse como efeito característico.",
+                "O perindopril, um IECA, causa tosse como efeito adverso característico por acúmulo de bradicinina — é a resposta correta.",
+                "O valsartana, um ARA-II, não causa tosse por não afetar a degradação da bradicinina.",
+                "A procainamida é um antiarrítmico classe IA, não se associa a tosse como efeito característico."
+            ],
+            "fantasma": [
+                "Esse é de outro capítulo, arritmias, não pressão.",
+                "Essa aí! Perindopril é IECA puro, a tosse é sua marca registrada.",
+                "Esse não mexe na bradicinina, então não causa tosse.",
+                "Esse também é de arritmias, nem perto da tosse por IECA."
+            ],
+            "gato": [
+                "Fijate: flecainida é antiarrítmico, não tem nada a ver com a tosse do IECA.",
+                "Ronronado de aprovação! Perindopril, IECA clássico, tosse por acúmulo de bradicinina.",
+                "Dado curioso: valsartana é ARA-II, não mexe na bradicinina.",
+                "Miau, procainamida é outro antiarrítmico, fora do assunto."
+            ]
+        }
     },
     {
         "pergunta": "No tratamento anti-hipertensivo com Perindopril podem ocorrer as seguintes reações adversas:",
