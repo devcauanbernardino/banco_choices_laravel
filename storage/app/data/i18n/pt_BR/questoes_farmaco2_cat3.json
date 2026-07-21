@@ -7217,7 +7217,27 @@
             "São excelentes anti-hipertensivos porque reduzem a resistência periférica, por isso são de primeira linha em qualquer paciente que necessite de tratamento para hipertensão.",
             "Eles produzem hiperuricemia como efeito adverso.",
             "O carvedilol tem efeito agonista alfa 1 parcial e antagonismo beta 1 seletivo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O labetalol combina o antagonismo do receptor alfa1 com o antagonismo beta não seletivo (beta1 e beta2) — é a resposta correta.",
+                "Nem todos os betabloqueadores diminuem a resistência periférica nem são primeira linha universal em qualquer paciente hipertenso; isso depende do tipo de betabloqueador e do perfil do paciente.",
+                "A hiperuricemia não é um efeito adverso característico dos betabloqueadores, é mais associada às tiazidas.",
+                "O carvedilol na verdade é antagonista (não agonista parcial) do receptor alfa1, combinado com antagonismo beta não seletivo, não seletivo beta1."
+            ],
+            "fantasma": [
+                "Essa aí! Bloqueia alfa1 e também beta sem distinção entre beta1 e beta2.",
+                "Nem todos fazem isso nem são a primeira opção pra qualquer um com pressão alta.",
+                "Isso é mais coisa das tiazidas, não dos betabloqueadores.",
+                "É o contrário: antagoniza o alfa1, não estimula, e seu bloqueio beta não é seletivo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Labetalol: alfa1 antagonizado e beta bloqueado sem distinção, o combo completo.",
+                "Fijate: nem todos baixam a resistência periférica nem são primeira linha universal.",
+                "Dado curioso: a hiperuricemia é território das tiazidas.",
+                "Miau, carvedilol antagoniza o alfa1 e seu bloqueio beta também não é seletivo."
+            ]
+        }
     },
     {
         "pergunta": "Entre os betabloqueadores:",
@@ -7227,7 +7247,27 @@
             "Eles não interferem nos sintomas de hipoglicemia ou na secreção de insulina.",
             "O carvedilol tem efeito antagonista alfa 1 e antagonismo beta não seletivo.",
             "O labetalol tem efeito agonista alfa 1 parcial e antagonismo beta 1 seletivo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Nem todos os betabloqueadores diminuem a resistência periférica nem são primeira linha universal em qualquer paciente hipertenso.",
+                "Os betabloqueadores sim interferem com os sintomas de hipoglicemia (mascarando-os) e podem reduzir a secreção de insulina mediada por beta2.",
+                "O carvedilol combina o antagonismo do receptor alfa1 com o antagonismo beta não seletivo — é a resposta correta.",
+                "O labetalol na verdade é antagonista (não agonista parcial) do receptor alfa1, combinado com antagonismo beta não seletivo, não seletivo beta1."
+            ],
+            "fantasma": [
+                "Nem todos fazem isso nem são a primeira opção pra qualquer um com pressão alta.",
+                "Sim interferem, e podem esconder os avisos de uma hipoglicemia.",
+                "Essa aí! Carvedilol: alfa1 antagonizado e beta bloqueado sem distinção.",
+                "É o contrário: antagoniza o alfa1, não estimula, e seu bloqueio beta não é seletivo."
+            ],
+            "gato": [
+                "Fijate: nem todos baixam a resistência periférica nem são primeira linha universal.",
+                "Dado curioso: sim interferem com os avisos de hipoglicemia.",
+                "Ronronado de aprovação! Carvedilol: alfa1 antagonizado, beta bloqueado sem distinção.",
+                "Miau, labetalol antagoniza o alfa1 e seu bloqueio beta também não é seletivo."
+            ]
+        }
     },
     {
         "pergunta": "Um medicamento que atua inibindo os receptores beta-adrenérgicos e aumentando a liberação de óxido nítrico no nível endotelial é:",
@@ -7237,7 +7277,27 @@
             "Nebivolol.",
             "Mononitrato de isossorbida.",
             "Labetalol."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O nitroprussiato de sódio libera óxido nítrico diretamente, mas não bloqueia receptores beta-adrenérgicos.",
+                "O nebivolol combina o bloqueio beta1-seletivo com o aumento da liberação de óxido nítrico endotelial, seu duplo mecanismo característico — é a resposta correta.",
+                "O mononitrato de isosorbida libera óxido nítrico, mas também não bloqueia receptores beta-adrenérgicos.",
+                "O labetalol bloqueia receptores beta e alfa1, mas não tem o mecanismo adicional de aumentar a liberação de óxido nítrico endotelial."
+            ],
+            "fantasma": [
+                "Esse libera óxido nítrico, mas não bloqueia receptores beta.",
+                "Essa aí! Nebivolol combina as duas coisas: bloqueio beta e óxido nítrico extra.",
+                "Esse também libera óxido nítrico, mas também não mexe nos receptores beta.",
+                "Esse bloqueia beta e alfa1, mas não tem esse plus do óxido nítrico."
+            ],
+            "gato": [
+                "Fijate: nitroprussiato libera óxido nítrico, mas não bloqueia beta.",
+                "Ronronado de aprovação! Nebivolol: bloqueio beta1 + óxido nítrico extra, combo único.",
+                "Dado curioso: mononitrato também libera óxido nítrico, sem mexer nos receptores beta.",
+                "Miau, labetalol bloqueia beta e alfa1, mas sem o plus do óxido nítrico."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com história de Diabetes Tipo 2, Infarto do Miocárdio e DPOC grave, optou-se por iniciar sotalol. Qual das opções a seguir está CORRETA em relação ao uso de Sotalol neste paciente?",
@@ -7247,7 +7307,27 @@
             "Não deve ser usado porque tem contraindicação absoluta.",
             "Durante a sua administração, o uso de beta-2 agonistas deve ser aumentado para evitar broncoconstrição.",
             "Durante a sua administração, a medicação hipoglicemiante deve ser aumentada."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Só controlar a glicemia não basta, o problema central nesse paciente é respiratório, não metabólico.",
+                "O sotalol, um betabloqueador não cardiosseletivo, é absolutamente contraindicado em pacientes com DPOC severo pelo risco de broncoespasmo grave — é a resposta correta.",
+                "Aumentar os agonistas beta-2 enquanto se bloqueiam os receptores beta é contraditório e ineficaz, não resolve a contraindicação de base.",
+                "Aumentar a medicação hipoglicemiante não é a resposta correta nem resolve o problema central desse caso."
+            ],
+            "fantasma": [
+                "O problema real aqui não é o açúcar, é a respiração.",
+                "Essa aí! Com DPOC severo, um betabloqueador não seletivo como o sotalol é diretamente perigoso.",
+                "Não faz sentido pisar no freio e no acelerador ao mesmo tempo.",
+                "Isso não resolve nada do problema de fundo nesse paciente."
+            ],
+            "gato": [
+                "Fijate: o problema central aqui é respiratório, não a glicemia.",
+                "Ronronado de aprovação! Sotalol não seletivo + DPOC severo = contraindicação absoluta.",
+                "Dado curioso: bloquear beta e empurrar agonistas beta2 ao mesmo tempo não faz sentido.",
+                "Miau, isso não ataca o problema real desse paciente."
+            ]
+        }
     },
     {
         "pergunta": "Nebivolol:",
@@ -7257,7 +7337,27 @@
             "Apresenta atividade simpatomimética intrínseca em altas doses",
             "Bloqueia os receptores beta-2 em pacientes com disfunção sistólica do ventrículo esquerdo",
             "Não é cardiosseletivo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O nebivolol é indicado como anti-hipertensivo (e com efeitos benéficos cardiovasculares) em pacientes com doença coronariana e tônus simpático aumentado, aproveitando seu bloqueio beta1 seletivo — é a resposta correta.",
+                "O nebivolol não apresenta atividade simpaticomimética intrínseca, essa propriedade corresponde a outros betabloqueadores como o pindolol.",
+                "O nebivolol não bloqueia significativamente receptores beta-2, é altamente seletivo pelo beta1.",
+                "O nebivolol sim é cardiosseletivo (beta1), essa é uma de suas características principais."
+            ],
+            "fantasma": [
+                "Essa aí! Coração acelerado pelo sistema simpático, nebivolol entra pra colocar ordem.",
+                "Essa atividade não é do nebivolol, é de outro fármaco.",
+                "O beta-2 não é o alvo principal desse fármaco.",
+                "Muito pelo contrário, é bem seletivo pelo coração."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Nebivolol: aliado em doença coronariana com tônus simpático elevado.",
+                "Fijate: essa atividade simpaticomimética intrínseca não é do nebivolol.",
+                "Dado curioso: o beta-2 não é o que esse fármaco bloqueia principalmente.",
+                "Miau, é cardiosseletivo, o oposto do que a opção diz."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes betabloqueadores apresenta antagonismo não seletivo de beta e alfa-1?",
@@ -7267,7 +7367,27 @@
             "Nebivolol",
             "Bisoprolol",
             "Metoprolol."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O labetalol apresenta antagonismo beta não seletivo (beta1 e beta2) junto com antagonismo alfa1 — é a resposta correta.",
+                "O nebivolol é cardiosseletivo (beta1), não apresenta esse perfil não seletivo com bloqueio alfa1.",
+                "O bisoprolol é cardiosseletivo (beta1), sem efeito alfa-bloqueador.",
+                "O metoprolol é cardiosseletivo (beta1), sem efeito alfa-bloqueador."
+            ],
+            "fantasma": [
+                "Essa aí! Não seletivo e com o plus do bloqueio alfa1, o combo completo.",
+                "Esse é bem seletivo pelo coração, sem esse perfil.",
+                "Esse também é bem seletivo, sem bloqueio alfa.",
+                "Esse também é seletivo, sem esse extra."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Labetalol: beta não seletivo + alfa1 antagonizado, o combo completo.",
+                "Fijate: nebivolol é seletivo, não tem esse perfil.",
+                "Dado curioso: bisoprolol é seletivo, sem bloqueio alfa.",
+                "Miau, metoprolol também é seletivo, sem esse extra."
+            ]
+        }
     },
     {
         "pergunta": "Por que betabloqueadores devem ser usados ​​em todo paciente com insuficiência cardíaca com disfunção sistólica que não tem contraindicação?",
@@ -7277,7 +7397,27 @@
             "Eles geram um aumento no sistema renina angiotensina aldosterona.",
             "Reduzem os danos da hiperativação simpática, gerando menor morbidade e mortalidade.",
             "Eles reduzem a hipoxemia relativa no nível esplâncnico."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A queda da pressão arterial não é o fundamento principal dessa indicação, muitos pacientes com insuficiência cardíaca nem são hipertensos.",
+                "Os betabloqueadores na verdade diminuem, não aumentam, a ativação do sistema renina-angiotensina-aldosterona, ao reduzir a secreção de renina.",
+                "Os betabloqueadores diminuem o dano causado pela hiperativação simpática crônica sobre o miocárdio, o que se traduz em menor morbimortalidade, o fundamento central de seu uso na insuficiência cardíaca — é a resposta correta.",
+                "A diminuição da hipoxemia esplâncnica não é o fundamento estabelecido dessa indicação."
+            ],
+            "fantasma": [
+                "Baixar a pressão não é o motivo real, muitos nem têm a pressão alta.",
+                "É o contrário: diminuem, não aumentam.",
+                "Essa aí! Frear o dano que o sistema simpático hiperativado causa é a chave de por que salvam vidas aqui.",
+                "Isso não tem nada a ver com o fundamento real dessa indicação."
+            ],
+            "gato": [
+                "Fijate: baixar a pressão não é o motivo principal nesse contexto.",
+                "Dado curioso: é o contrário, diminuem a ativação do sistema renina-angiotensina.",
+                "Ronronado de aprovação! Frear o dano simpático crônico: a razão real de por que salvam vidas na insuficiência cardíaca.",
+                "Miau, a hipoxemia esplâncnica não tem nada a ver aqui."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção CORRETA quanto ao uso do Carvedilol em paciente com insuficiência cardíaca e diabetes:",
@@ -7287,7 +7427,27 @@
             "Não deveria ter sido indicado porque pode alterar a glicemia em diabéticos.",
             "É bem indicado porque não tem contraindicação formal e gera claros benefícios neste paciente.",
             "É bem indicado porque ajuda a reduzir a proteinúria e a retinopatia em pacientes diabéticos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O carvedilol não é contraindicado na insuficiência cardíaca compensada; na verdade, é parte do tratamento padrão com benefício comprovado em mortalidade.",
+                "O diabetes não é uma contraindicação formal para o uso de carvedilol.",
+                "O carvedilol é bem indicado nesse paciente, sem contraindicação formal pelo diabetes, e com claros benefícios em morbimortalidade demonstrados na insuficiência cardíaca — é a resposta correta.",
+                "O carvedilol não tem um efeito estabelecido de diminuir proteinúria ou retinopatia diabética, esse não é seu mecanismo de benefício."
+            ],
+            "fantasma": [
+                "Muito pelo contrário, tem seu lugar bem conquistado na insuficiência cardíaca compensada.",
+                "O diabetes não é motivo pra frear esse tratamento.",
+                "Essa aí! Sem contraindicação real e com benefícios comprovados, a indicação está correta.",
+                "Esse benefício nos olhos e no rim não é mérito do carvedilol."
+            ],
+            "gato": [
+                "Fijate: carvedilol tem lugar reconhecido na insuficiência cardíaca compensada.",
+                "Dado curioso: o diabetes não contraindica o carvedilol.",
+                "Ronronado de aprovação! Sem contraindicação real, com benefício comprovado: a indicação estava correta.",
+                "Miau, a proteção renal e ocular não é mérito do carvedilol."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção INCORRETA referente aos Betabloqueadores:",
@@ -7298,7 +7458,27 @@
             "O atenolol é cardiosseletivo, o carvedilol também tem efeito alfa-bloqueador. São utilizados na insuficiência cardíaca descompensada, como anti-hipertensivos, antianginosos e antiarrítmicos.",
             "São contraindicados em pacientes com bradicardia, bloqueio AV de segundo e terceiro graus e insuficiência cardíaca descompensada.",
             "Um evento adverso comum é a bradicardia. O atenolol pode ser administrado com cautela em pacientes com asma ou DPOC. Hipertensão arterial essencial, angina de peito, arritmias cardíacas e infarto agudo do miocárdio são indicações."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação está correta: atenolol é cardiosseletivo, carvedilol tem efeito alfa-bloqueador adicional, e são usados na insuficiência cardíaca compensada (não descompensada) como anti-hipertensivos, antianginosos e antiarrítmicos.",
+                "Essa afirmação descreve erroneamente seu uso na insuficiência cardíaca DEScompensada; os betabloqueadores são usados na insuficiência cardíaca COMpensada, não na descompensada, onde são contraindicados; por isso essa é a afirmação INCORRETA que devia ser assinalada — é a resposta correta.",
+                "Essa afirmação está correta: são contraindicados em bradicardia, bloqueio AV de segundo e terceiro grau, e na insuficiência cardíaca descompensada.",
+                "Essa afirmação está correta: a bradicardia é um evento adverso frequente, o atenolol (cardiosseletivo) pode ser usado com cautela em asma/DPOC, e suas indicações incluem hipertensão, angina, arritmias e infarto agudo do miocárdio."
+            ],
+            "fantasma": [
+                "Isso é verdade, compensada é a palavra certa aqui.",
+                "Essa aí! Diz 'descompensada' quando na verdade se usam na compensada, aí está o erro.",
+                "Isso também é verdade, essas são contraindicações reais.",
+                "Isso também é verdade, descrição correta do perfil desses fármacos."
+            ],
+            "gato": [
+                "Fijate: isso sim está correto, compensada é a palavra-chave aqui.",
+                "Ronronado de aprovação! O erro está em dizer 'descompensada' quando deveria ser 'compensada'.",
+                "Dado curioso: isso também está correto, contraindicações reais.",
+                "Miau, isso também está correto, perfil bem descrito."
+            ]
+        }
     },
     {
         "pergunta": "Carvedilol:",
@@ -7308,7 +7488,27 @@
             "Tem efeito agonista alfa 1 parcial e antagonismo beta 1 seletivo.",
             "Seu efeito beta antagonista o contraindica em pacientes com diabetes.",
             "Tem efeito antagonista alfa não seletivo e antagonismo beta não seletivo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O carvedilol pode causar frialdade de extremidades em pacientes predispostos, um efeito vascular periférico possível mesmo com seu componente alfa-bloqueador — é a resposta correta.",
+                "O carvedilol na verdade é antagonista (não agonista parcial) do receptor alfa1, e seu bloqueio beta não é seletivo, e sim não seletivo (beta1 e beta2).",
+                "O diabetes não é uma contraindicação formal do carvedilol pelo seu efeito antagonista beta.",
+                "O bloqueio alfa do carvedilol é seletivo (alfa1), não não seletivo; e seu bloqueio beta sim é não seletivo, não o contrário."
+            ],
+            "fantasma": [
+                "Essa aí! Mãos e pés frios podem aparecer em quem já tem essa tendência.",
+                "É o contrário: antagoniza o alfa1, e seu bloqueio beta não é seletivo.",
+                "O diabetes não freia o uso desse fármaco.",
+                "Trocou as seletividades: o alfa é seletivo, o beta não é."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Frialdade de extremidades: efeito vascular possível mesmo com o plus alfa-bloqueador.",
+                "Fijate: antagoniza o alfa1, e seu beta não é seletivo.",
+                "Dado curioso: o diabetes não contraindica o carvedilol.",
+                "Miau, inverteu as seletividades: alfa seletivo, beta não seletivo, não o contrário."
+            ]
+        }
     },
     {
         "pergunta": "Quais são as contra-indicações e efeitos adversos dos betabloqueadores?",
@@ -7318,7 +7518,27 @@
             "Insuficiência cardíaca congestiva descompensada",
             "Asma",
             "Estão todos corretos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O diabetes mellitus sim requer cautela com os betabloqueadores, pelo risco de mascarar sintomas de hipoglicemia e alterar o metabolismo da glicose.",
+                "A insuficiência cardíaca congestiva descompensada sim é uma contraindicação real dos betabloqueadores.",
+                "A asma sim é uma contraindicação real, especialmente para os betabloqueadores não seletivos, pelo risco de broncoespasmo.",
+                "As três opções anteriores são contraindicações e/ou cautelas reais associadas aos betabloqueadores — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso sim requer cuidado, pode esconder uma hipoglicemia.",
+                "Isso sim é um não redondo pra esses fármacos.",
+                "Isso também é um não, principalmente com os não seletivos.",
+                "Essa aí! As três são reais, por isso a resposta é 'todas corretas'."
+            ],
+            "gato": [
+                "Fijate: isso sim requer cautela real com esses fármacos.",
+                "Dado curioso: isso sim é uma contraindicação real.",
+                "Miau, isso também é uma contraindicação real, principalmente com os não seletivos.",
+                "Ronronado de aprovação! As três são verdadeiras, por isso ganha a opção 'todas corretas'."
+            ]
+        }
     },
     {
         "pergunta": "O uso de betabloqueadores para o tratamento da angina de esforço baseia-se em:",
@@ -7328,7 +7548,27 @@
             "A disponibilidade de formulações sublinguais.",
             "O encurtamento da diástole.",
             "Seu efeito cronotrópico e inotrópico negativo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A atividade simpaticomimética intrínseca, quando existe em alguns betabloqueadores, na verdade reduziria o benefício antianginoso, não é o fundamento do seu uso.",
+                "A disponibilidade de formulações sublinguais não é relevante nem o fundamento do uso antianginoso dos betabloqueadores.",
+                "Os betabloqueadores na verdade prolongam a diástole (ao retardar a frequência cardíaca), melhorando a perfusão coronariana, não a encurtam.",
+                "O efeito cronotrópico e inotrópico negativo dos betabloqueadores reduz a demanda de oxigênio do miocárdio durante o esforço, sendo o fundamento do seu uso na angina de esforço — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso na verdade jogaria contra o efeito antianginoso, não a favor.",
+                "Isso não tem nada a ver com o fundamento desse uso.",
+                "É o contrário: alongam a diástole, não encurtam.",
+                "Essa aí! Menos frequência e menos força de contração, menos oxigênio que o coração pede."
+            ],
+            "gato": [
+                "Fijate: isso jogaria contra, não a favor do efeito antianginoso.",
+                "Dado curioso: isso não tem relação com o fundamento real.",
+                "Miau, é o contrário, alongam a diástole, não encurtam.",
+                "Ronronado de aprovação! Menos frequência e força cardíaca: menos demanda de oxigênio, o fundamento real do uso antianginoso."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção INCORRETA em relação ao carvedilol:",
@@ -7339,7 +7579,27 @@
             "É contraindicado em: insuficiência cardíaca descompensada, classe IV que requer uso de inotrópicos e pacientes com DPOC, hipotensão grave (sistólica < 85 mmHg), bradicardia grave (<50 batimentos por minuto), asma brônquica, choque cardiogênico, bloqueio AV de segundo e terceiro graus.",
             "Carvedilol é um agente betabloqueador vasodilatador cardiosseletivo.",
             "Os efeitos da insulina ou de agentes hipoglicemiantes orais podem ser potencializados. Os sinais e sintomas de hipoglicemia podem ser mascarados ou atenuados (especialmente taquicardia). Portanto, o controle glicêmico regular é recomendado nesses pacientes."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação está correta: o carvedilol é indicado em hipertensão essencial, cardiopatia isquêmica e insuficiência cardíaca congestiva sintomática.",
+                "Essa afirmação está correta: descreve corretamente as contraindicações reais do carvedilol.",
+                "O carvedilol na verdade é um betabloqueador NÃO cardiosseletivo (bloqueia beta1 e beta2), embora seja vasodilatador pelo seu efeito alfa-bloqueador adicional; por isso essa é a afirmação INCORRETA que devia ser assinalada — é a resposta correta.",
+                "Essa afirmação está correta: o carvedilol pode potencializar os efeitos da insulina ou hipoglicemiantes orais e mascarar sintomas de hipoglicemia, por isso se recomenda controle regular da glicemia."
+            ],
+            "fantasma": [
+                "Isso é verdade, essas são suas indicações reais.",
+                "Isso também é verdade, essas são suas contraindicações reais.",
+                "Essa aí! Não é cardiosseletivo, bloqueia as duas variantes de beta, embora seja vasodilatador.",
+                "Isso também é verdade, tem que vigiar a glicemia com esse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso sim está correto, indicações reais do carvedilol.",
+                "Dado curioso: isso também está correto, contraindicações reais.",
+                "Ronronado de aprovação! Não cardiosseletivo mas sim vasodilatador: aí está o erro da frase.",
+                "Miau, isso também está correto, vigiar a glicemia é chave."
+            ]
+        }
     },
     {
         "pergunta": "Qual medicamento demonstrou aumentar a sobrevida e reduzir a morbimortalidade em pacientes com IC:",
@@ -7349,7 +7609,27 @@
             "Carvedilol",
             "Digoxina",
             "Nitrato de isossorbida-hidralazina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A furosemida melhora os sintomas congestivos, mas não demonstrou aumentar a sobrevida na insuficiência cardíaca.",
+                "O carvedilol, um betabloqueador com efeito vasodilatador, demonstrou aumentar a sobrevida e diminuir a morbimortalidade em pacientes com insuficiência cardíaca em ensaios clínicos fundamentais — é a resposta correta.",
+                "A digoxina reduz hospitalizações e melhora sintomas, mas não demonstrou um benefício claro na sobrevida.",
+                "A combinação de nitrato de isosorbida e hidralazina mostrou benefício na sobrevida em uma população específica (afrodescendentes), mas não é a resposta mais representativa desse contexto geral."
+            ],
+            "fantasma": [
+                "Essa ajuda com os sintomas, mas não alonga a vida.",
+                "Essa aí! Carvedilol é um dos poucos que realmente demonstrou salvar vidas nessa doença.",
+                "Essa ajuda a se sentir melhor, mas não está provado que alonga a vida.",
+                "Essa combinação tem seu nicho específico, não é a resposta mais geral aqui."
+            ],
+            "gato": [
+                "Fijate: furosemida ajuda com sintomas, não com sobrevida.",
+                "Ronronado de aprovação! Carvedilol: um dos poucos fármacos com benefício comprovado em sobrevida na insuficiência cardíaca.",
+                "Dado curioso: digoxina não tem esse benefício claro em sobrevida.",
+                "Miau, essa combinação tem um nicho específico, não a resposta geral aqui."
+            ]
+        }
     },
     {
         "pergunta": "Os efeitos adversos dos betabloqueadores incluem:",
@@ -7359,7 +7639,27 @@
             "Hipoglicemia, bradicardia, broncoespasmo",
             "Hiperglicemia, taquicardia, hipertensão",
             "Bradicardia, hipotensão, broncoespasmo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os betabloqueadores causam bradicardia, não taquicardia, e tendem a mascarar hipoglicemia ao invés de causar hiperglicemia.",
+                "Os betabloqueadores não causam hipoglicemia diretamente, e sim mascaram seus sintomas de alerta.",
+                "Os betabloqueadores não causam hiperglicemia nem taquicardia nem hipertensão, o oposto de seus efeitos característicos.",
+                "Os efeitos adversos clássicos dos betabloqueadores incluem bradicardia, hipotensão e broncoespasmo — é a resposta correta."
+            ],
+            "fantasma": [
+                "É o contrário: baixam a frequência, e escondem a hipoglicemia, não geram açúcar alto.",
+                "Não a causam diretamente, escondem quando aparece.",
+                "Totalmente ao contrário do que esses fármacos realmente fazem.",
+                "Essa aí! Frequência baixa, pressão baixa e brônquios apertados: o trio clássico."
+            ],
+            "gato": [
+                "Fijate: baixam a frequência e escondem a hipoglicemia, não geram açúcar alto.",
+                "Dado curioso: não a causam, mascaram.",
+                "Miau, totalmente ao contrário do que esses fármacos realmente fazem.",
+                "Ronronado de aprovação! Bradicardia + hipotensão + broncoespasmo: o trio clássico de efeitos adversos."
+            ]
+        }
     },
     {
         "pergunta": "Indique qual das alternativas a seguir é contraindicação para administração de Bisoprolol:",
@@ -7369,7 +7669,27 @@
             "fibrilação atrial",
             "Doença arterial periférica grave",
             "Disfunção renal leve"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A taquiarritmia ventricular não é uma contraindicação do bisoprolol; os betabloqueadores são frequentemente usados para tratá-las.",
+                "A fibrilação atrial não é uma contraindicação do bisoprolol; na verdade é usada para o controle de frequência nessa arritmia.",
+                "A doença arterial periférica severa é uma contraindicação relevante do bisoprolol, dado o risco de piorar a isquemia dos membros por vasoconstrição sem oposição — é a resposta correta.",
+                "A disfunção renal leve não é uma contraindicação relevante para o uso de bisoprolol."
+            ],
+            "fantasma": [
+                "Muito pelo contrário, pra isso costuma se usar o betabloqueador.",
+                "Essa também não é um problema, se usa justamente pra controlar a frequência aqui.",
+                "Essa aí! Pernas com má circulação não combinam com um betabloqueador.",
+                "Um rim pouco afetado não é motivo de preocupação aqui."
+            ],
+            "gato": [
+                "Fijate: pra essa arritmia o betabloqueador costuma ser o tratamento, não a contraindicação.",
+                "Dado curioso: essa também não, se usa justamente pra controlar a frequência.",
+                "Ronronado de aprovação! Doença arterial periférica severa: a contraindicação real do bisoprolol.",
+                "Miau, disfunção renal leve não preocupa tanto aqui."
+            ]
+        }
     },
     {
         "pergunta": "Quais são os efeitos adversos mais comuns de b. bloqueadores:",
@@ -7379,7 +7699,27 @@
             "Hipocalemia, hipomagnesemia, bradicardia e hipotensão ortostática",
             "Dispneia e comprometimento sensorial",
             "Hipotensão e arritmia ventricular"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O broncoespasmo, a frialdade dos membros inferiores, a bradicardia e o bloqueio AV são os efeitos adversos mais frequentes dos betabloqueadores — é a resposta correta.",
+                "A hipocalemia e a hipomagnesemia não são efeitos característicos dos betabloqueadores, são mais próprios dos diuréticos.",
+                "A dispneia e o deterioro do sensório não são os efeitos adversos mais representativos nem frequentes dessa classe.",
+                "A hipotensão e a arritmia ventricular não são os efeitos adversos mais característicos; na verdade, os betabloqueadores costumam reduzir o risco de arritmia ventricular."
+            ],
+            "fantasma": [
+                "Essa aí! Brônquios apertados, mãos frias, coração devagar: o combo clássico dos betabloqueadores.",
+                "Isso é mais território dos diuréticos, não dos betabloqueadores.",
+                "Isso não é o mais representativo dessa família.",
+                "Muito pelo contrário, esses fármacos costumam prevenir arritmias ventriculares, não causá-las."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Broncoespasmo + frialdade + bradicardia + bloqueio AV: o combo clássico dos betabloqueadores.",
+                "Fijate: isso é mais dos diuréticos, não dos betabloqueadores.",
+                "Dado curioso: isso não é o mais frequente nem representativo aqui.",
+                "Miau, muito pelo contrário, costumam prevenir a arritmia ventricular, não causá-la."
+            ]
+        }
     },
     {
         "pergunta": "Qual grupo farmacológico deve ser utilizado para controlar a frequência ventricular na Fibrilação Atrial isolada por ser considerado o mais seguro e eficaz em um paciente com coração saudável?",
@@ -7389,7 +7729,27 @@
             "Bloqueadores de cálcio dihidropiridínicos",
             "Digoxina",
             "Amiodarona"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os betabloqueadores são considerados os mais seguros e efetivos pra controlar a frequência ventricular na fibrilação atrial isolada num paciente com coração saudável — é a resposta correta.",
+                "Os bloqueadores de cálcio di-hidropiridínicos não atuam sobre o nó AV, não são úteis pro controle de frequência nessa arritmia.",
+                "A digoxina é menos efetiva, especialmente durante estados de atividade simpática elevada, e já não é considerada a primeira opção.",
+                "A amiodarona é reservada para casos refratários, não é a primeira opção pelo seu perfil de efeitos adversos."
+            ],
+            "fantasma": [
+                "Essa aí! Em coração saudável, essa é a opção mais segura e efetiva pra baixar a frequência.",
+                "Esses não mexem no nó AV, não servem pra isso.",
+                "Essa falha justo quando o corpo está mais acelerado, já não é a primeira opção.",
+                "Essa fica guardada pros casos mais difíceis, não é primeira linha."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Betabloqueadores: a opção mais segura e efetiva na FA isolada de coração saudável.",
+                "Fijate: os di-hidropiridínicos não mexem no nó AV.",
+                "Dado curioso: digoxina falha justo em estados de muita atividade simpática.",
+                "Miau, amiodarona é reservada pra casos refratários, não é primeira linha aqui."
+            ]
+        }
     },
     {
         "pergunta": "Os betabloqueadores de primeira geração devem ser usados ​​com cautela em pacientes diabéticos porque causam:",
@@ -7399,7 +7759,27 @@
             "Astenia",
             "Mascarando os sintomas da hipoglicemia",
             "Dores de cabeça e suor"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hipotensão ortostática não é a razão principal da cautela em pacientes diabéticos.",
+                "A astenia é um efeito adverso geral, mas não a razão específica da cautela em diabéticos.",
+                "Os betabloqueadores de primeira geração (não seletivos) mascaram os sintomas de alerta da hipoglicemia (como taquicardia e tremor), atrasando seu reconhecimento e tratamento — é a resposta correta.",
+                "As cefaleias e a sudorese são na verdade sintomas de hipoglicemia que ficam mascarados, não um efeito adverso gerado diretamente pelo betabloqueador."
+            ],
+            "fantasma": [
+                "Isso não é o que mais preocupa no diabético.",
+                "Isso é geral, não a razão específica aqui.",
+                "Essa aí! Tampam os sinais de alarme da hipoglicemia, e isso atrasa o socorro.",
+                "Esses sintomas são justo os que se escondem, não algo que o fármaco causa."
+            ],
+            "gato": [
+                "Fijate: isso não é a preocupação principal no diabético.",
+                "Dado curioso: isso é geral demais pra ser a razão específica.",
+                "Ronronado de aprovação! Mascaram os sinais de hipoglicemia, o verdadeiro motivo de cautela.",
+                "Miau, esses sintomas são justo os que ficam tapados, não algo gerado pelo fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Segundo o Consenso sobre Diagnóstico e Tratamento da Insuficiência Cardíaca Crônica da Sociedade Argentina de Cardiologia, todos os pacientes com Insuficiência Cardíaca Crônica em qualquer um de seus estágios compensados ​​devem receber uma combinação de medicamentos. Quais são essas drogas?",
@@ -7409,7 +7789,27 @@
             "Inibidor da enzima conversora de angiotensina + betabloqueadores",
             "Diurético de alça + antagonista de aldosterona",
             "Uma tiazida + ieca"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os digitálicos não fazem parte da combinação base recomendada para todos os pacientes com insuficiência cardíaca crônica compensada.",
+                "O inibidor da enzima conversora de angiotensina combinado com betabloqueadores constitui a base do tratamento recomendado para todos os pacientes com insuficiência cardíaca crônica compensada, em qualquer estágio — é a resposta correta.",
+                "O diurético de alça e o antagonista da aldosterona são adicionados conforme o estágio e os sintomas, não são a combinação base universal pra todos os pacientes compensados.",
+                "A tiazida não é o diurético característico da insuficiência cardíaca (preferem-se os diuréticos de alça), e essa combinação não é a base universal recomendada."
+            ],
+            "fantasma": [
+                "Os digitálicos não são pra todos, são adicionados em casos pontuais.",
+                "Essa aí! IECA mais betabloqueador: a base pra todos, sem importar o estágio.",
+                "Esses se somam conforme necessário, não são a base pra todos.",
+                "A tiazida não é a protagonista aqui, e essa combinação não é a universal."
+            ],
+            "gato": [
+                "Fijate: os digitálicos não são pra todos, são adicionados em casos pontuais.",
+                "Ronronado de aprovação! IECA + betabloqueador: o combo base pra todo paciente compensado, seja qual for o estágio.",
+                "Dado curioso: esses se somam conforme o estágio, não são a base universal.",
+                "Miau, a tiazida não é protagonista na insuficiência cardíaca, e essa combinação não é a de base."
+            ]
+        }
     },
     {
         "pergunta": "Sobre bloqueadores beta, marque a opção correta:",
