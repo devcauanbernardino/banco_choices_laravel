@@ -11429,7 +11429,27 @@
             "Gravidez.",
             "Hemorragia intracraniana prévia.",
             "Hipertensão arterial não controlada."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hemorragia interna recente é uma contraindicação relativa a avaliar, não a contraindicação absoluta clássica.",
+                "A gravidez é considerada uma contraindicação relativa dos fibrinolíticos, não absoluta.",
+                "A hemorragia intracraniana prévia, não importa quando tenha ocorrido, é a contraindicação absoluta clássica do ativador tecidual do plasminogênio — é a resposta correta.",
+                "A hipertensão arterial não controlada é uma contraindicação relativa importante, mas não a absoluta clássica dessa lista."
+            ],
+            "fantasma": [
+                "Essa pesa muito, mas se avalia caso a caso.",
+                "Essa também é mais um 'depende', não um não absoluto.",
+                "Essa aí! Sangramento cerebral alguma vez na vida, porta fechada pra sempre.",
+                "Essa também pesa, mas não é a absoluta clássica aqui."
+            ],
+            "gato": [
+                "Fijate: essa é relativa, se pesa caso a caso.",
+                "Dado curioso: a gravidez também é relativa, não absoluta.",
+                "Ronronado de aprovação! Hemorragia intracraniana prévia: a contraindicação absoluta por excelência.",
+                "Miau, essa é relativa importante, mas não a absoluta da lista."
+            ]
+        }
     },
     {
         "pergunta": "Qual é a via de administração do r-TPA?",
@@ -11439,7 +11459,27 @@
             "intravenoso",
             "Sublingual",
             "Tópico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O r-TPA não é administrado por via oral, se inativaria no trato digestivo.",
+                "O r-TPA é administrado por via endovenosa, permitindo sua ação trombolítica sistêmica rápida — é a resposta correta.",
+                "O r-TPA não é administrado por via sublingual.",
+                "O r-TPA não é administrado por via tópica."
+            ],
+            "fantasma": [
+                "Nada de tomar, se destruiria no estômago.",
+                "Essa aí! Direto pra veia, pra agir rápido no corpo todo.",
+                "Embaixo da língua também não é sua via.",
+                "Sobre a pele também não é sua via de administração."
+            ],
+            "gato": [
+                "Fijate: por boca se destruiria no trato digestivo.",
+                "Ronronado de aprovação! Via endovenosa: a única forma de dar r-TPA.",
+                "Dado curioso: sublingual também não é sua via.",
+                "Miau, tópico também não é como esse fármaco é administrado."
+            ]
+        }
     },
     {
         "pergunta": "Qual é a via de administração do r-tPA?",
@@ -11449,7 +11489,27 @@
             "Intravenoso",
             "Intramuscular",
             "Subcutâneo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O r-tPA não é administrado por via oral, se inativaria no trato digestivo.",
+                "O r-tPA é administrado por via intravenosa, permitindo sua ação trombolítica sistêmica rápida — é a resposta correta.",
+                "O r-tPA não é administrado por via intramuscular.",
+                "O r-tPA não é administrado por via subcutânea."
+            ],
+            "fantasma": [
+                "Nada de tomar, se destruiria no estômago.",
+                "Essa aí! Direto pra veia, pra agir rápido no corpo todo.",
+                "No músculo também não é sua via.",
+                "Embaixo da pele também não é sua via de administração."
+            ],
+            "gato": [
+                "Fijate: por boca se destruiria no trato digestivo.",
+                "Ronronado de aprovação! Via intravenosa: a única forma de dar r-tPA.",
+                "Dado curioso: intramuscular também não é sua via.",
+                "Miau, subcutânea também não é como esse fármaco é administrado."
+            ]
+        }
     },
     {
         "pergunta": "Paciente que teve IAM há 3 anos e foi tratado com r-TPA e tem novo IAM, o que fazemos?",
@@ -11459,7 +11519,27 @@
             "A estreptoquinase deve ser administrada devido à sua maior VM, o que lhe confere maior eficácia.",
             "Pode ser administrado normalmente",
             "Pode ser administrado, mas corticosteróides e anti-histamínicos devem ser prescritos previamente."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O r-TPA é uma proteína humana recombinante, não antigênica, então não gera o mesmo risco de anafilaxia que a estreptoquinase; sim pode ser readministrado.",
+                "A estreptoquinase não tem meia-vida maior nem maior eficácia; além disso, seria contraproducente nesse contexto pela sua antigenicidade.",
+                "O r-TPA pode ser administrado normalmente nesse paciente, já que por não ser antigênico (diferente da estreptoquinase) não gera anticorpos que impeçam sua reutilização — é a resposta correta.",
+                "Não é necessária uma pré-medicação com corticoides e anti-histamínicos, já que o r-TPA não compartilha o risco de reação imune da estreptoquinase."
+            ],
+            "fantasma": [
+                "Por não ser de origem bacteriana, esse não gera esses anticorpos perigosos.",
+                "Essa teria o problema da anafilaxia, não é a solução aqui.",
+                "Essa aí! Sem o problema dos anticorpos, dá pra repetir sem drama.",
+                "Não precisa dessa pré-medicação, esse risco é de outro fármaco."
+            ],
+            "gato": [
+                "Fijate: por ser humano recombinante, não gera esses anticorpos perigosos.",
+                "Dado curioso: a estreptoquinase é quem tem esse problema de anticorpos, não a solução.",
+                "Ronronado de aprovação! Sem antigenicidade, o r-TPA pode ser repetido sem drama.",
+                "Miau, essa pré-medicação não é necessária com esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Qual medicamento pode aumentar os níveis plasmáticos de sinvastatina?",
@@ -11469,7 +11549,27 @@
             "Pramipexol",
             "Claritromicina",
             "Carvedilol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O naproxeno não é um inibidor relevante do CYP3A4 que afete significativamente a sinvastatina.",
+                "O pramipexol não tem uma interação relevante com o metabolismo da sinvastatina.",
+                "A claritromicina, um potente inibidor do CYP3A4 (via pela qual a sinvastatina é metabolizada), aumenta significativamente seus níveis plasmáticos, elevando o risco de miopatia e rabdomiólise — é a resposta correta.",
+                "O carvedilol não é um inibidor relevante do CYP3A4 que afete a sinvastatina dessa forma."
+            ],
+            "fantasma": [
+                "Esse não freia a enzima que degrada a sinvastatina.",
+                "Esse também não tem esse efeito sobre a sinvastatina.",
+                "Essa aí! Claritromicina freia a enzima que degrada a sinvastatina, e o nível dispara.",
+                "Esse betabloqueador não tem esse impacto sobre a sinvastatina."
+            ],
+            "gato": [
+                "Fijate: naproxeno não freia a enzima que degrada a sinvastatina.",
+                "Dado curioso: pramipexol também não tem esse efeito.",
+                "Ronronado de aprovação! Claritromicina: freia o CYP3A4, dispara os níveis de sinvastatina.",
+                "Miau, carvedilol não tem esse impacto sobre a sinvastatina."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes estudos deve ser realizado com o uso de estatinas devido à sua toxicidade?",
@@ -11479,7 +11579,27 @@
             "Eletrocardiograma",
             "função tireoidiana",
             "Creatinofosfoquinase (CPK)"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O hemograma não é o estudo característico de controle de toxicidade das estatinas.",
+                "O eletrocardiograma não é o estudo relacionado à toxicidade característica das estatinas.",
+                "A função tireoidiana não é o estudo específico de controle de toxicidade das estatinas.",
+                "A creatinofosfoquinase (CPK) deve ser controlada durante o tratamento com estatinas, dado o risco de miopatia e rabdomiólise — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não é o exame pedido pelas estatinas.",
+                "Esse também não tem a ver com a toxicidade das estatinas.",
+                "Essa não é a prova específica pra vigiar as estatinas.",
+                "Essa aí! A CPK avisa se o músculo está sofrendo com a estatina."
+            ],
+            "gato": [
+                "Fijate: esse exame não é o pedido pelas estatinas.",
+                "Dado curioso: esse também não se relaciona com a toxicidade das estatinas.",
+                "Miau, essa não é a prova específica aqui.",
+                "Ronronado de aprovação! CPK: o exame-chave pra vigiar a toxicidade muscular das estatinas."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes efeitos farmacológicos mais justifica o uso de estatinas em doenças cardiovasculares estabelecidas?",
@@ -11489,7 +11609,27 @@
             "Aumentando o número de receptores de HDL",
             "Aumento do colesterol HDL",
             "A diminuição dos níveis de triglicerídeos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O efeito pleiotrópico positivo (anti-inflamatório, estabilização de placa, melhora endotelial) é o que mais justifica o benefício das estatinas na doença cardiovascular já estabelecida — é a resposta correta.",
+                "O aumento de receptores para HDL não é o efeito que mais justifica esse benefício estabelecido.",
+                "O aumento do colesterol HDL com estatinas é modesto e não é o efeito que mais justifica esse benefício.",
+                "A queda dos triglicerídeos com estatinas é modesta e não é o efeito que mais justifica esse benefício estabelecido."
+            ],
+            "fantasma": [
+                "Essa aí! Além do colesterol, as estatinas fazem bem ao vaso e à placa por outros caminhos.",
+                "Isso não é o que mais pesa nesse benefício.",
+                "Isso é modesto, não é a explicação principal.",
+                "Isso também é modesto, não é o que mais pesa aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Efeito pleiotrópico: a razão principal do benefício das estatinas na doença cardiovascular estabelecida.",
+                "Fijate: isso não é o que mais pesa nesse benefício.",
+                "Dado curioso: o aumento de HDL é modesto, não é a explicação principal.",
+                "Miau, a queda dos triglicerídeos também é modesta aqui."
+            ]
+        }
     },
     {
         "pergunta": "Durante o tratamento com um inibidor da 3-hidroxi-3-metilglutaril-coenzima A (HMG-CoA) redutase, o aparecimento de:",
@@ -11499,7 +11639,27 @@
             "Prolongamento do intervalo QT e aparecimento de arritmias",
             "Dispneia e sintomas de falha da bomba",
             "Tosse e sintomas respiratórios irritativos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As mialgias, a rabdomiólise e outros sintomas musculares devem ser vigiados durante o tratamento com inibidores da HMG-CoA redutase (estatinas) — é a resposta correta.",
+                "O prolongamento do QT e as arritmias não são o efeito adverso característico das estatinas.",
+                "A dispneia e os sintomas de falência de bomba não são característicos das estatinas.",
+                "A tosse e os sintomas irritativos da via respiratória são característicos dos IECA, não das estatinas."
+            ],
+            "fantasma": [
+                "Essa aí! O músculo é quem mais sofre com as estatinas.",
+                "Isso não é o que preocupa com esse grupo de fármacos.",
+                "Isso também não é típico das estatinas.",
+                "Essa tosse é do IECA, não das estatinas."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Músculo: o grande vigiado no tratamento com estatinas.",
+                "Fijate: isso não preocupa com esse grupo de fármacos.",
+                "Dado curioso: isso também não é típico das estatinas.",
+                "Miau, essa tosse é marca do IECA, não das estatinas."
+            ]
+        }
     },
     {
         "pergunta": "Um efeito adverso que provavelmente será encontrado em um paciente em tratamento para hipercolesterolemia com rosuvastatina 40 mg por dia é:",
@@ -11509,7 +11669,27 @@
             "boca seca",
             "impotência sexual",
             "Anorexia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As mialgias são um efeito adverso plausível e característico do tratamento com rosuvastatina em doses altas — é a resposta correta.",
+                "A boca seca não é um efeito adverso característico das estatinas.",
+                "A impotência sexual não é o efeito adverso clássico das estatinas, é mais associada a outros anti-hipertensivos/psicofármacos.",
+                "A anorexia não é um efeito adverso característico das estatinas."
+            ],
+            "fantasma": [
+                "Essa aí! A dor muscular é a clássica com as estatinas, mais ainda em doses altas.",
+                "Isso não é o típico desse fármaco.",
+                "Isso é mais de outras famílias de fármacos, não das estatinas.",
+                "Isso também não é o característico aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mialgias: o efeito adverso clássico da rosuvastatina, especialmente em doses altas.",
+                "Fijate: isso não é o típico desse fármaco.",
+                "Dado curioso: isso é mais de outras famílias de fármacos.",
+                "Miau, isso também não é o característico das estatinas."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos pertence aos inibidores hipolipemiantes da enzima HMG-CoA redutase?",
@@ -11519,7 +11699,27 @@
             "Gemfibrozil",
             "Ezetimiba",
             "Niacina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fluvastatina pertence aos hipolipemiantes inibidores da HMG-CoA redutase (estatinas) — é a resposta correta.",
+                "O genfibrozila é um fibrato, de mecanismo diferente (agonista PPAR-alfa), não uma estatina.",
+                "A ezetimiba inibe a absorção intestinal de colesterol, um mecanismo diferente do das estatinas.",
+                "A niacina atua por um mecanismo diferente, não é uma estatina."
+            ],
+            "fantasma": [
+                "Essa aí! Fluvastatina é uma estatina clássica.",
+                "Esse é um fibrato, outra família completamente diferente.",
+                "Essa freia a absorção de colesterol no intestino, outro mecanismo.",
+                "Essa tem seu próprio mecanismo, não é uma estatina."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Fluvastatina: membro clássico da família das estatinas.",
+                "Fijate: genfibrozila é um fibrato, outra família.",
+                "Dado curioso: ezetimiba freia a absorção intestinal, outro mecanismo.",
+                "Miau, niacina tem seu próprio mecanismo, não é estatina."
+            ]
+        }
     },
     {
         "pergunta": "Ordene a potência das estatinas mencionadas da maior para a menor:",
@@ -11529,7 +11729,27 @@
             "Atorvastatina-Fluvastatina--Sinvastatina-Rosuvastatina",
             "Rosuvastatina-Sinvastatina--Atorvastatina-Fluvastatina",
             "Rosuvastatina-Atorvastatina--Sinvastatina--Fluvastatina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa ordem não reflete corretamente a potência relativa dessas estatinas.",
+                "Essa ordem também não reflete corretamente a potência relativa dessas estatinas.",
+                "Essa ordem inverte a potência real, colocando a rosuvastatina e a fluvastatina em posições incorretas.",
+                "Da maior à menor potência: rosuvastatina, atorvastatina, sinvastatina e fluvastatina, uma ordem clássica na farmacologia das estatinas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa ordem não é a correta.",
+                "Essa também não é a ordem correta.",
+                "Essa mistura mal as posições mais e menos potentes.",
+                "Essa aí! Rosuvastatina em cima de tudo, fluvastatina no final, a ordem clássica de potência."
+            ],
+            "gato": [
+                "Fijate: essa ordem não é a correta.",
+                "Dado curioso: essa também não é a correta.",
+                "Miau, essa mistura mal os extremos de potência.",
+                "Ronronado de aprovação! Rosuvastatina > atorvastatina > sinvastatina > fluvastatina: a ordem clássica de potência."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes fibratos é de escolha para uso conjunto com estatinas?",
@@ -11539,7 +11759,27 @@
             "Gemfibrozil",
             "Bezafibrato",
             "Clofibrato"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O fenofibrato é o fibrato de escolha pra combinar com estatinas, pelo seu menor risco de interação farmacocinética que aumente a miopatia — é a resposta correta.",
+                "O genfibrozila interfere significativamente com o metabolismo das estatinas (inibe sua glicuronidação), aumentando notavelmente o risco de miopatia e rabdomiólise; evita-se essa combinação.",
+                "O bezafibrato não é o fibrato classicamente preferido pra essa combinação no ensino padrão.",
+                "O clofibrato é um fibrato mais antigo, em grande parte descontinuado, não a resposta esperada aqui."
+            ],
+            "fantasma": [
+                "Essa aí! Fenofibrato é o que melhor combina com as estatinas.",
+                "Esse arma confusão com o metabolismo das estatinas, melhor evitar.",
+                "Esse não é o preferido clássico pra essa combinação.",
+                "Esse já quase não se usa, não é a resposta esperada."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Fenofibrato: o fibrato mais seguro pra combinar com estatinas.",
+                "Fijate: genfibrozila arma confusão com o metabolismo das estatinas.",
+                "Dado curioso: bezafibrato não é o preferido clássico aqui.",
+                "Miau, clofibrato já quase não se usa na prática atual."
+            ]
+        }
     },
     {
         "pergunta": "Por favor indique a opção correta:",
@@ -11549,7 +11789,27 @@
             "A atorvastatina inibe o PPARα",
             "A atorvastatina diminui a concentração de LDL-C de maneira dose-dependente",
             "A atorvastatina é metabolizada através do CYP 2D6"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A atorvastatina não pertence ao grupo dos fibratos, é uma estatina.",
+                "A atorvastatina não inibe os PPAR-alfa, esse é o mecanismo dos fibratos.",
+                "A atorvastatina diminui a concentração de LDL-C de forma dose-dependente, um efeito característico das estatinas — é a resposta correta.",
+                "A atorvastatina é metabolizada pelo CYP3A4, não pelo CYP2D6."
+            ],
+            "fantasma": [
+                "Outra família completamente, não é fibrato.",
+                "Isso é coisa dos fibratos, não dessa estatina.",
+                "Essa aí! Mais dose, mais queda de LDL, simples assim.",
+                "Errou de enzima, é outra que participa."
+            ],
+            "gato": [
+                "Fijate: atorvastatina não é fibrato, é estatina.",
+                "Dado curioso: isso é mecanismo dos fibratos, não dessa.",
+                "Ronronado de aprovação! Mais dose, mais queda de LDL: o efeito dose-dependente clássico da atorvastatina.",
+                "Miau, errou de enzima, não é a CYP2D6."
+            ]
+        }
     },
     {
         "pergunta": "Qual estatina não usa CYP3A4?",
@@ -11559,7 +11819,27 @@
             "Sinvastatina",
             "Rosuvastatina",
             "Atorvastatina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A lovastatina sim usa o CYP3A4 pro seu metabolismo.",
+                "A sinvastatina sim usa o CYP3A4 pro seu metabolismo.",
+                "A rosuvastatina não usa principalmente o CYP3A4; é eliminada em grande parte sem alterações pela via fecal, com participação mínima do CYP2C9 — é a resposta correta.",
+                "A atorvastatina sim usa o CYP3A4 pro seu metabolismo."
+            ],
+            "fantasma": [
+                "Essa sim passa por essa enzima.",
+                "Essa também passa por essa enzima.",
+                "Essa aí! Rosuvastatina quase não precisa dessa enzima, vai quase intacta pelas fezes.",
+                "Essa também depende dessa enzima."
+            ],
+            "gato": [
+                "Fijate: lovastatina sim usa essa enzima.",
+                "Dado curioso: sinvastatina também usa.",
+                "Ronronado de aprovação! Rosuvastatina: a exceção, quase não depende do CYP3A4.",
+                "Miau, atorvastatina também depende dessa enzima."
+            ]
+        }
     },
     {
         "pergunta": "É o principal mecanismo de eliminação da rosuvastatina:",
@@ -11569,7 +11849,27 @@
             "Metabolização por CYP450 2C9",
             "Eliminação sem alterações a nível fecal",
             "Eliminação inalterada na urina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A rosuvastatina não é metabolizada principalmente pelo CYP3A4, esse é o perfil de outras estatinas.",
+                "A rosuvastatina tem uma participação menor do CYP2C9, mas não é seu mecanismo de eliminação principal.",
+                "A rosuvastatina é eliminada em grande parte sem alterações pela via fecal (biliar), sendo essa sua principal via de eliminação — é a resposta correta.",
+                "A rosuvastatina não é eliminada principalmente sem alterações pela urina, sua via predominante é fecal/biliar."
+            ],
+            "fantasma": [
+                "Esse perfil é de outras estatinas, não dessa.",
+                "Essa enzima participa pouco, não é o principal.",
+                "Essa aí! Vai quase intacta pelas fezes, essa é sua via principal.",
+                "Não é pela urina principalmente, é pelas fezes."
+            ],
+            "gato": [
+                "Fijate: esse perfil metabólico é de outras estatinas.",
+                "Dado curioso: essa enzima participa pouco na rosuvastatina.",
+                "Ronronado de aprovação! Eliminação fecal sem alterações: a via principal da rosuvastatina.",
+                "Miau, não é pela urina, é pelas fezes principalmente."
+            ]
+        }
     },
     {
         "pergunta": "Qual é a meia-vida da sinvastatina?",
@@ -11579,7 +11879,27 @@
             "40 minutos",
             "Mais de 20 horas",
             "10 horas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A meia-vida da sinvastatina é de aproximadamente 2 a 3 horas, uma das mais curtas entre as estatinas — é a resposta correta.",
+                "40 minutos é curto demais pra meia-vida real da sinvastatina.",
+                "Mais de 20 horas é longo demais, esse perfil corresponde mais a estatinas como a atorvastatina ou rosuvastatina.",
+                "10 horas não corresponde à meia-vida real da sinvastatina."
+            ],
+            "fantasma": [
+                "Essa aí! Umas horas, das estatinas mais curtinhas em meia-vida.",
+                "Pouco tempo demais pro que esse fármaco dura.",
+                "Essa duração é de outras estatinas de ação mais longa.",
+                "Esse número não combina com a sinvastatina."
+            ],
+            "gato": [
+                "Ronronado de aprovação! 2-3 horas: a meia-vida curta característica da sinvastatina.",
+                "Fijate: pouco tempo demais pra esse fármaco.",
+                "Dado curioso: essa duração é de outras estatinas de ação longa.",
+                "Miau, esse número não corresponde à sinvastatina."
+            ]
+        }
     },
     {
         "pergunta": "Indique a resposta INCORRETA em relação à rosuvastatina:",
@@ -11590,7 +11910,27 @@
             "O uso concomitante de ciclosporina, inibidores de protease como ritonavir e antifúngicos como itraconazol pode aumentar significativamente a exposição à rosuvastatina, aumentando o risco de miopatia e rabdomiólise.",
             "Rosuvastatina é contraindicada durante a gravidez e lactação",
             "É indicado apenas em pacientes com hipercolesterolemia primária (tipo IIa incluindo hipercolesterolemia familiar heterozigótica) ou dislipidemia mista (tipo IIb). Não é indicado como prevenção de doenças cardiovasculares em pacientes considerados de alto risco de sofrer um primeiro evento cardiovascular."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação está correta: a combinação com genfibrozila sim dobra a exposição à rosuvastatina, aumentando o risco de miopatia.",
+                "Essa afirmação está correta: ciclosporina, inibidores da protease e antifúngicos azólicos sim podem aumentar significativamente a exposição à rosuvastatina.",
+                "Essa afirmação está correta: a rosuvastatina sim é contraindicada na gravidez e lactação, como toda a classe de estatinas.",
+                "A rosuvastatina na verdade SIM tem indicação como prevenção primária de eventos cardiovasculares em pacientes de alto risco (evidência do estudo JUPITER); por isso essa é a afirmação INCORRETA que devia ser assinalada — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é verdade, essa combinação é perigosa.",
+                "Isso também é verdade, esses fármacos sobem muito seu nível no sangue.",
+                "Isso também é verdade, contraindicação clássica de toda a família.",
+                "Essa aí! Serve sim pra prevenir o primeiro evento cardiovascular em gente de alto risco, a frase nega isso."
+            ],
+            "gato": [
+                "Fijate: isso sim está correto, combinação perigosa real.",
+                "Dado curioso: isso também está correto, interação real e relevante.",
+                "Miau, isso também está correto, contraindicação de toda a classe.",
+                "Ronronado de aprovação! Sim previne o primeiro evento em alto risco, a frase nega e por isso é a incorreta."
+            ]
+        }
     },
     {
         "pergunta": "Durante o tratamento com rosuvastatina, pode ocorrer o aparecimento de:",
@@ -11600,7 +11940,27 @@
             "Prolongamento QT e arritmias ventriculares",
             "Hipo e hipertireoidismo",
             "Insuficiência renal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hepatotoxicidade (elevação de transaminases) deve ser vigiada durante o tratamento com rosuvastatina, junto com a vigilância muscular — é a resposta correta.",
+                "O prolongamento do QT e as arritmias ventriculares não são características da rosuvastatina.",
+                "O hipo e hipertireoidismo não são efeitos característicos da rosuvastatina, esses se associam mais à amiodarona.",
+                "A insuficiência renal não é a preocupação de controle direta e característica da rosuvastatina nesse contexto."
+            ],
+            "fantasma": [
+                "Essa aí! O fígado também tem que ser vigiado com esse fármaco.",
+                "Isso não é o típico dessa estatina.",
+                "Isso é mais da amiodarona, não dessa estatina.",
+                "Isso não é o que se controla diretamente aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Hepatotoxicidade: junto com o músculo, o outro grande vigiado com a rosuvastatina.",
+                "Fijate: isso não é típico dessa estatina.",
+                "Dado curioso: isso é mais da amiodarona.",
+                "Miau, isso não é o que se controla diretamente aqui."
+            ]
+        }
     },
     {
         "pergunta": "Durante o tratamento com um inibidor da 3-hidroxi-3-metilglutaril-coenzima A (HMG-CoA) redutase, o aparecimento de:",
@@ -11610,7 +11970,27 @@
             "Mialgia, rabdomiólise e outros sintomas musculares",
             "Prolongamento QT e arritmias ventriculares",
             "Hipo e hipertireoidismo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A insuficiência renal não é o efeito adverso característico a vigiar com as estatinas.",
+                "As mialgias, a rabdomiólise e outros sintomas musculares devem ser vigiados durante o tratamento com inibidores da HMG-CoA redutase — é a resposta correta.",
+                "O prolongamento do QT e as arritmias ventriculares não são características das estatinas.",
+                "O hipo e hipertireoidismo não são efeitos característicos das estatinas."
+            ],
+            "fantasma": [
+                "Isso não é o que preocupa diretamente com as estatinas.",
+                "Essa aí! O músculo é o grande vigiado com esses fármacos.",
+                "Isso não é típico das estatinas.",
+                "Isso também não é característico dessa família."
+            ],
+            "gato": [
+                "Fijate: isso não preocupa diretamente com as estatinas.",
+                "Ronronado de aprovação! Músculo: o grande vigiado no tratamento com estatinas.",
+                "Dado curioso: isso não é típico das estatinas.",
+                "Miau, isso também não é característico dessa família."
+            ]
+        }
     },
     {
         "pergunta": "Um agente hipolipemiante de primeira linha deve ser usado para reduzir o LDL em um paciente HIV (+) que esteja sendo tratado com ritonavir e efavirenz. Qual das seguintes opções seria a mais adequada?",
@@ -11620,7 +12000,27 @@
             "Sinvastatina",
             "Rosuvastatina",
             "Lovastatina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A atorvastatina, por ser metabolizada pelo CYP3A4, tem maior risco de interação com o ritonavir (potente inibidor dessa via) do que a rosuvastatina.",
+                "A sinvastatina, muito dependente do CYP3A4, tem uma interação perigosa com o ritonavir, podendo elevar seus níveis a faixas de risco de rabdomiólise; evita-se essa combinação.",
+                "A rosuvastatina, por depender minimamente do CYP3A4 (eliminação majoritariamente fecal), é a opção mais segura num paciente com ritonavir/efavirenz — é a resposta correta.",
+                "A lovastatina, também muito dependente do CYP3A4, compartilha o mesmo risco de interação perigosa que a sinvastatina com o ritonavir."
+            ],
+            "fantasma": [
+                "Essa tem mais risco de interação com o ritonavir do que a rosuvastatina.",
+                "Essa é perigosa combinada com ritonavir, melhor evitar.",
+                "Essa aí! Quase não depende dessa enzima, a mais segura pra esse paciente em particular.",
+                "Essa compartilha o mesmo problema que a sinvastatina aqui."
+            ],
+            "gato": [
+                "Fijate: essa tem mais risco de interação com o ritonavir.",
+                "Dado curioso: essa é perigosa combinada com ritonavir.",
+                "Ronronado de aprovação! Rosuvastatina: quase sem depender do CYP3A4, a opção segura pra esse paciente com inibidores de protease.",
+                "Miau, essa compartilha o mesmo problema que a sinvastatina."
+            ]
+        }
     },
     {
         "pergunta": "É a principal via metabólica da atorvastatina:",
