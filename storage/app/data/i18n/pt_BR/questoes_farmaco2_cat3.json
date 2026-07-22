@@ -16832,7 +16832,27 @@
             "Para crianças com dosagem de fator II ativado ",
             "Para gestantes com dosagem de fator II ativado ",
             "Para pacientes com obesidade mórbida e fator ativado "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os idosos não são a população especial classicamente descrita pra esse controle, e o fator X ativado (não o II) é o parâmetro correto de monitoramento das heparinas de baixo peso.",
+                "As crianças não são a população especial classicamente descrita, e o fator II ativado não é o parâmetro correto (deveria ser o fator X ativado).",
+                "As gestantes podem precisar de controles em alguns casos, mas o parâmetro correto é o fator X ativado, não o fator II ativado.",
+                "Os obesos mórbidos, dada a imprevisibilidade da dose por peso, precisam de controle com dosagem de fator X ativado (anti-Xa) — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa população não é a clássica pra esse controle, e o fator não é o correto.",
+                "Essa também não é a população clássica, e o fator também não é o correto.",
+                "O fator não é o correto, embora a população possa precisar de controle em alguns casos.",
+                "Essa aí! Peso corporal extremo, controle com o fator Xa, a combinação correta."
+            ],
+            "gato": [
+                "Fijate: essa não é a população clássica, e o fator também não é o correto.",
+                "Dado curioso: essa também não é a população clássica, e o fator está errado.",
+                "Miau, o fator não é o correto nessa opção.",
+                "Ronronado de aprovação! Obesidade mórbida + fator Xa: a combinação real que exige monitoramento."
+            ]
+        }
     },
     {
         "pergunta": "Em paciente anticoagulado com Dabigatrana e sangramento ativo no sistema nervoso central, o que poderia usar para reverter o efeito? ",
@@ -16842,7 +16862,27 @@
             "Idarucizumabe ",
             "sulfato de protamina ",
             "Fator VII "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O andexanet alfa é o antídoto dos inibidores do fator Xa (apixabana, rivaroxabana), não do dabigatrana.",
+                "O idarucizumabe é o antídoto específico do dabigatrana, revertendo rapidamente seu efeito anticoagulante em sangramentos graves — é a resposta correta.",
+                "O sulfato de protamina é o antídoto da heparina, não do dabigatrana.",
+                "O fator VII não é o antídoto específico estabelecido pra reverter o dabigatrana."
+            ],
+            "fantasma": [
+                "Esse antídoto é pra outros anticoagulantes, não pra esse.",
+                "Essa aí! O antídoto sob medida pro dabigatrana.",
+                "Esse antídoto é da heparina, não desse fármaco.",
+                "Isso não é o antídoto específico estabelecido pra esse fármaco."
+            ],
+            "gato": [
+                "Fijate: esse antídoto é pra outros anticoagulantes.",
+                "Ronronado de aprovação! Idarucizumabe: o antídoto específico do dabigatrana.",
+                "Dado curioso: esse antídoto é da heparina.",
+                "Miau, isso não é o antídoto estabelecido pra esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Qual a diferença no mecanismo de ação entre o clopidogrel e o Ticagrelor? ",
@@ -16852,7 +16892,27 @@
             "O ticagrelor inibe o receptor 2PY12 de forma reversível e o clopidogrel o faz de forma irreversível. ",
             "Ticagrelor inibe o receptor ADP enquanto o clopidogrel inibe o receptor 2PY12. ",
             "O clopidogrel inibe o receptor ADP enquanto o Ticagrelor inibe o receptor 2PY12. "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Ambos, clopidogrel e ticagrelor, atuam sobre o mesmo receptor P2Y12, não sobre o IIb-IIIa; essa afirmação descreve mal o mecanismo compartilhado.",
+                "O ticagrelor inibe o receptor P2Y12 de forma reversível, enquanto o clopidogrel o faz de forma irreversível, sendo essa a diferença-chave entre os dois — é a resposta correta.",
+                "O receptor de ADP e o receptor P2Y12 são o mesmo receptor, essa opção não descreve uma diferença real de mecanismo.",
+                "Novamente, o receptor de ADP e o P2Y12 são o mesmo, essa opção também não descreve uma diferença real."
+            ],
+            "fantasma": [
+                "Os dois vão pro mesmo receptor, não pro IIb-IIIa.",
+                "Essa aí! Um é reversível, o outro gruda pra sempre, essa é a diferença real.",
+                "Esse é o mesmo receptor com outro nome, não há diferença aí.",
+                "De novo o mesmo receptor com nomes diferentes, sem diferença real."
+            ],
+            "gato": [
+                "Fijate: ambos vão pro mesmo receptor, não pro IIb-IIIa.",
+                "Ronronado de aprovação! Reversível vs. irreversível: a diferença-chave entre ticagrelor e clopidogrel.",
+                "Dado curioso: ADP e P2Y12 são o mesmo receptor, sem diferença real aqui.",
+                "Miau, de novo o mesmo receptor, sem diferença real nessa opção."
+            ]
+        }
     },
     {
         "pergunta": "Os betabloqueadores geram efeitos antiarrítmicos que os tornam especialmente úteis em: -",
@@ -16862,7 +16922,27 @@
             "Insuficiência cardíaca ",
             "Infarto agudo do miocárdio ",
             "hipotireoidismo "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fibrilação ventricular exige desfibrilação imediata, não é o contexto clássico desse benefício antiarrítmico.",
+                "Os betabloqueadores beneficiam a insuficiência cardíaca por outros mecanismos (redução do dano simpático crônico), não principalmente pelo seu efeito antiarrítmico puro nesse contexto.",
+                "Os betabloqueadores, ao reduzir a mortalidade arrítmica pós-infarto, são especialmente úteis no infarto agudo do miocárdio — é a resposta correta.",
+                "O hipotireoidismo não tem relação com o efeito antiarrítmico dos betabloqueadores."
+            ],
+            "fantasma": [
+                "Isso precisa de um desfibrilador, não desse benefício antiarrítmico crônico.",
+                "O benefício aqui é por outro caminho, não principalmente o antiarrítmico.",
+                "Essa aí! Depois de um infarto, esse efeito antiarrítmico salva vidas.",
+                "Isso não tem relação com esse efeito dos betabloqueadores."
+            ],
+            "gato": [
+                "Fijate: isso precisa de desfibrilador, não desse benefício.",
+                "Dado curioso: o benefício aqui é por outro mecanismo, não o antiarrítmico puro.",
+                "Ronronado de aprovação! Pós-infarto: o contexto clássico do benefício antiarrítmico dos betabloqueadores.",
+                "Miau, isso não tem relação com esse efeito."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes antiarrítmicos transforma seletivamente um bloqueio unidirecional em bidirecional? ",
@@ -16872,7 +16952,27 @@
             "Diltiazem ",
             "Amiodarona ",
             "Sotalol "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A digoxina não tem esse mecanismo eletrofisiológico específico de conversão de bloqueio unidirecional para bidirecional.",
+                "O diltiazem atua sobre o nó AV via canais de cálcio, sem esse mecanismo específico sobre a reentrada.",
+                "A amiodarona, pelo seu componente de bloqueio de canais de sódio (além da sua ação predominante sobre potássio), pode transformar um bloqueio unidirecional em bidirecional, suprimindo circuitos de reentrada — é a resposta correta.",
+                "O sotalol, embora combine bloqueio beta e de potássio, não se caracteriza por esse mecanismo específico de conversão do bloqueio."
+            ],
+            "fantasma": [
+                "Essa não tem esse mecanismo eletrofisiológico específico.",
+                "Esse atua no nó AV, mas não com esse mecanismo particular sobre a reentrada.",
+                "Essa aí! Seu toque de bloqueio de sódio permite fechar o círculo da reentrada.",
+                "Esse combina outros mecanismos, mas não esse em particular."
+            ],
+            "gato": [
+                "Fijate: a digoxina não tem esse mecanismo específico.",
+                "Dado curioso: o diltiazem atua no nó AV, mas não com esse mecanismo particular.",
+                "Ronronado de aprovação! Amiodarona: seu toque de bloqueio de sódio fecha o circuito de reentrada.",
+                "Miau, o sotalol combina outros mecanismos, mas não esse em particular."
+            ]
+        }
     },
     {
         "pergunta": "Indique qual dos seguintes antiarrítmicos pode ser usado cronicamente na Fibrilação Atrial Paroxística em um coração saudável devido ao seu efeito bloqueador dos canais de sódio:",
@@ -16882,7 +16982,27 @@
             "Sotalol ",
             "Adenosina ",
             "Propafenona "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fenitoína não é usada de forma crônica na fibrilação atrial paroxística.",
+                "O sotalol atua principalmente por bloqueio beta e de potássio, não por bloqueio de sódio como mecanismo destacado nesse contexto.",
+                "A adenosina, de meia-vida ultracurta, não é usada de forma crônica em nenhum contexto.",
+                "A propafenona, um antiarrítmico classe IC, pode ser usada de forma crônica na fibrilação atrial paroxística em coração saudável, pelo seu bloqueio de canais de sódio — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa não é usada de forma crônica pra essa arritmia.",
+                "Esse bloqueia potássio e beta principalmente, não sódio como mecanismo destacado.",
+                "Essa dura segundos, nunca é usada de forma crônica.",
+                "Essa aí! Bloqueio de sódio, uso crônico em coração saudável, a combinação correta."
+            ],
+            "gato": [
+                "Fijate: essa não é usada de forma crônica pra essa arritmia.",
+                "Dado curioso: esse bloqueia potássio e beta, não sódio como mecanismo destacado.",
+                "Miau, essa dura segundos, nunca é usada de forma crônica.",
+                "Ronronado de aprovação! Propafenona: bloqueio de sódio, uso crônico em coração saudável com FA paroxística."
+            ]
+        }
     },
     {
         "pergunta": "Num paciente que apresenta quadro clínico recente de tosse e dispneia, a qual dos seguintes medicamentos poderia ser atribuído?: ",
@@ -16892,7 +17012,27 @@
             "Valsartana. ",
             "Amiodarona. ",
             "Dapagliflozina. "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A propafenona não se associa caracteristicamente a tosse nem dispneia de recente aparição.",
+                "A valsartana, um ARA-II, não causa tosse (diferente dos IECA) nem se associa a dispneia desse tipo.",
+                "A amiodarona pode gerar toxicidade pulmonar (fibrose), apresentando-se com tosse e dispneia de aparição insidiosa — é a resposta correta.",
+                "A dapagliflozina não se associa caracteristicamente a tosse nem dispneia desse tipo."
+            ],
+            "fantasma": [
+                "Essa não dá esse quadro respiratório.",
+                "Esse não dá tosse, isso é marca dos IECA, não dos ARA-II.",
+                "Essa aí! O pulmão pode se danificar com esse fármaco, e aí aparecem a tosse e a dispneia.",
+                "Essa também não dá esse quadro respiratório."
+            ],
+            "gato": [
+                "Fijate: essa não dá esse quadro respiratório.",
+                "Dado curioso: esse não dá tosse, isso é dos IECA.",
+                "Ronronado de aprovação! Amiodarona: toxicidade pulmonar com tosse e dispneia, um quadro clássico a suspeitar.",
+                "Miau, essa também não dá esse quadro respiratório."
+            ]
+        }
     },
     {
         "pergunta": "A diminuição da pré-carga na insuficiência cardíaca aguda é típica da administração em altas doses intravenosas de: ",
@@ -16902,7 +17042,27 @@
             "Furosemida ",
             "Indapamida ",
             "Acetazolamida "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hidroclorotiazida não é administrada por via intravenosa em doses altas nesse contexto agudo.",
+                "A furosemida, em doses altas intravenosas, produz venodilatação aguda que diminui rapidamente a pré-carga na insuficiência cardíaca aguda — é a resposta correta.",
+                "A indapamida não é administrada por via intravenosa nesse contexto agudo.",
+                "A acetazolamida não é o diurético característico pra essa diminuição rápida de pré-carga na urgência."
+            ],
+            "fantasma": [
+                "Essa não é dada assim pela veia nessa urgência.",
+                "Essa aí! Em dose alta pela veia, afrouxa as veias e baixa a pré-carga rápido.",
+                "Essa também não é dada pela veia nessa urgência.",
+                "Essa não é a protagonista desse efeito rápido."
+            ],
+            "gato": [
+                "Fijate: essa não é dada assim pela veia nessa urgência.",
+                "Ronronado de aprovação! Furosemida IV em dose alta: venodilatação rápida, menos pré-carga.",
+                "Dado curioso: essa também não é dada pela veia nessa urgência.",
+                "Miau, essa não é a protagonista desse efeito rápido."
+            ]
+        }
     },
     {
         "pergunta": "Qual o efeito dos inibidores do receptor AT-1 da angiotensina II na fisiologia renal? ",
@@ -16912,7 +17072,27 @@
             "Reduzem a pressão intraglomerular e a proteinúria com nefroproteção. ",
             "Geram toxicidade direta e indireta devido ao aumento dos valores de glicose. ",
             "Diminuem a produção de prostaglandinas, aumentando assim a pressão intraglomerular. "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os ARA-II não aumentam o tônus simpático renal nem agravam a insuficiência renal por esse mecanismo; pelo contrário, costumam ser renoprotetores.",
+                "Os inibidores do receptor AT-1 diminuem a pressão intraglomerular (ao dilatar a arteríola eferente) e a proteinúria, oferecendo nefroproteção — é a resposta correta.",
+                "Os ARA-II não geram toxicidade por aumento da glicose como mecanismo renal característico.",
+                "Os ARA-II não diminuem as prostaglandinas nem aumentam a pressão intraglomerular por esse mecanismo, esse é mais o perfil dos AINEs."
+            ],
+            "fantasma": [
+                "Muito pelo contrário, não sobem esse tônus simpático assim.",
+                "Essa aí! Menos pressão dentro do glomérulo, menos proteína perdida, rim protegido.",
+                "Isso não tem a ver com o mecanismo renal desses fármacos.",
+                "Esse mecanismo com as prostaglandinas é mais dos anti-inflamatórios."
+            ],
+            "gato": [
+                "Fijate: muito pelo contrário, não sobem esse tônus simpático assim.",
+                "Ronronado de aprovação! Menos pressão intraglomerular, menos proteinúria: a nefroproteção dos ARA-II.",
+                "Dado curioso: isso não tem a ver com o mecanismo renal desses fármacos.",
+                "Miau, esse mecanismo com as prostaglandinas é mais dos AINEs."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes características da amiodarona é mais importante nos distúrbios da tireoide? ",
@@ -16922,7 +17102,27 @@
             "Tem meia-vida muito longa ",
             "Estimula a expressão de alguns genes relacionados aos hormônios da tireoide ",
             "Acumula-se em excesso em pacientes com hipotireoidismo "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O conteúdo de iodo na estrutura da amiodarona é a característica mais importante que explica seus efeitos sobre a função tireoidiana — é a resposta correta.",
+                "Sua meia-vida prolongada contribui pra persistência dos efeitos, mas não é a característica que explica diretamente o mecanismo tireoidiano.",
+                "Não é a estimulação direta de genes tireoidianos o que explica principalmente esse efeito, e sim o excesso de iodo.",
+                "A amiodarona não se acumula preferencialmente em pacientes hipotireoidianos como mecanismo característico dessa alteração."
+            ],
+            "fantasma": [
+                "Essa aí! O iodo da sua molécula é a chave de toda a confusão com a tireoide.",
+                "Isso ajuda a durar o efeito, mas não é a causa direta.",
+                "Não é isso o que explica principalmente o problema tireoidiano.",
+                "Isso não é um mecanismo real estabelecido pra esse efeito."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Iodo na sua estrutura: a chave do impacto da amiodarona sobre a tireoide.",
+                "Fijate: isso ajuda a durar o efeito, mas não é a causa direta.",
+                "Dado curioso: não é isso o que explica principalmente o problema.",
+                "Miau, isso não é um mecanismo real estabelecido."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos pode causar frio nas extremidades de forma mais característica? ",
@@ -16932,7 +17132,27 @@
             "Os IECA ",
             "betabloqueadores ",
             "Nitrovasodilatadores "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os bloqueadores de cálcio produzem vasodilatação (edema, rubor), não frialdade de extremidades.",
+                "Os IECA não se associam caracteristicamente à frialdade de extremidades.",
+                "Os betabloqueadores, especialmente os não seletivos, podem gerar frialdade de extremidades ao deixar sem oposição o efeito vasoconstritor alfa periférico — é a resposta correta.",
+                "Os nitrovasodilatadores produzem vasodilatação, não frialdade, o oposto."
+            ],
+            "fantasma": [
+                "Esses dilatam os vasos, dão calor e edema, não frio.",
+                "Esses não têm essa associação com o frio nas mãos e pés.",
+                "Essa aí! Sem o freio beta, o efeito vasoconstritor alfa se impõe, e as mãos esfriam.",
+                "Esses também dilatam, o oposto do frio."
+            ],
+            "gato": [
+                "Fijate: esses dilatam, dão calor, não frio.",
+                "Dado curioso: esses não têm essa associação com o frio.",
+                "Ronronado de aprovação! Betabloqueadores não seletivos: frialdade de extremidades pelo alfa sem oposição.",
+                "Miau, esses também dilatam, o oposto do frio."
+            ]
+        }
     },
     {
         "pergunta": "Em paciente de 85 anos com história de bradicardia sintomática e síncope de repetição sem marca-passo, deve ser iniciado tratamento para insuficiência cardíaca. Qual dos seguintes medicamentos você NÃO começaria? ",
@@ -16942,7 +17162,27 @@
             "Carvedilol. ",
             "Espironolactona. ",
             "Dapagliflozina. "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A valsartana não tem risco de piorar a bradicardia, é apropriado iniciar nesse paciente.",
+                "O carvedilol, um betabloqueador, é contraindicado nesse paciente com bradicardia sintomática e síncopes sem marcapasso, pelo risco de piorar esses sintomas — é a resposta correta.",
+                "A espironolactona não tem risco de piorar a bradicardia, é apropriada nesse paciente.",
+                "A dapagliflozina não tem risco de piorar a bradicardia, é apropriada nesse paciente."
+            ],
+            "fantasma": [
+                "Essa não piora a frequência cardíaca, pode ser iniciada sem problema.",
+                "Essa aí! Frear mais o coração de alguém que já desmaia por estar lento é perigoso.",
+                "Essa não tem esse risco, pode ser iniciada sem drama.",
+                "Essa também não afeta a frequência cardíaca, pode ser iniciada bem."
+            ],
+            "gato": [
+                "Fijate: essa não piora a frequência, pode ser iniciada.",
+                "Ronronado de aprovação! Carvedilol: contraindicado em bradicardia sintomática sem marcapasso, o risco é piorar os síncopes.",
+                "Dado curioso: essa não tem esse risco, pode ser iniciada bem.",
+                "Miau, essa também não afeta a frequência cardíaca."
+            ]
+        }
     },
     {
         "pergunta": "Em uma paciente grávida de 34 semanas com hipertensão arterial, qual dos seguintes medicamentos você usaria? ",
@@ -16952,7 +17192,27 @@
             "Hidroclorotiazida ",
             "Atenolol ",
             "Alfametildopa "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A losartana, um ARA-II, é absolutamente contraindicada na gravidez pela sua teratogenicidade.",
+                "A hidroclorotiazida geralmente é evitada na hipertensão gestacional.",
+                "O atenolol não é a primeira escolha de betabloqueador na gravidez, prefere-se o labetalol ou a alfametildopa.",
+                "A alfametildopa é o anti-hipertensivo clássico e seguro de escolha na gravidez — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse está totalmente proibido na gestação.",
+                "Essa não é a primeira opção pra esse quadro na gravidez.",
+                "Esse não é o preferido da sua família pra essa paciente.",
+                "Essa aí! Alfametildopa, a protagonista segura da gravidez."
+            ],
+            "gato": [
+                "Fijate: esse está totalmente proibido na gestação.",
+                "Dado curioso: essa não é a primeira opção aqui.",
+                "Miau, esse não é o preferido da sua família pra essa paciente.",
+                "Ronronado de aprovação! Alfametildopa: a protagonista segura da hipertensão gestacional."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente consulta você porque está com edema nos membros inferiores há 4 semanas. Depois de iniciar o tratamento anti-hipertensivo, qual dos seguintes medicamentos ele poderia ter iniciado? ",
@@ -16962,7 +17222,27 @@
             "Telmisartana ",
             "Indapamida ",
             "Carvedilol "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A felodipina, um bloqueador de cálcio di-hidropiridínico, produz edema periférico como efeito adverso característico — é a resposta correta.",
+                "A telmisartana não se associa caracteristicamente ao edema periférico.",
+                "A indapamida, um diurético, na verdade reduz o volume de líquido, efeito oposto ao edema.",
+                "O carvedilol não se associa caracteristicamente ao edema periférico."
+            ],
+            "fantasma": [
+                "Essa aí! Os tornozelos inchados são a marca dos bloqueadores de cálcio di-hidropiridínicos.",
+                "Essa não tem essa associação característica com o edema.",
+                "Essa na verdade tira líquido, o oposto do edema.",
+                "Esse também não tem essa associação característica."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Felodipina: edema periférico, o efeito clássico dos bloqueadores de cálcio di-hidropiridínicos.",
+                "Fijate: essa não tem essa associação característica.",
+                "Dado curioso: essa tira líquido, o oposto do edema.",
+                "Miau, esse também não tem essa associação característica."
+            ]
+        }
     },
     {
         "pergunta": "Aponte sobre a norepinefrina, a resposta correta: ",
@@ -16972,7 +17252,27 @@
             "Gera menos risco de arritmias que a dobutamina ",
             "Gera menos vasoconstrição que a adrenalina ",
             "Gera maior fluxo plasmático renal do que a adrenalina "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A noradrenalina na verdade gera menos taquicardia que a dobutamina, já que seu potente efeito vasoconstritor alfa dispara um reflexo barorreceptor que freia a frequência cardíaca, contrabalanceando seu efeito cronotrópico direto. Corrige-se o gabarito original, que marcava essa opção.",
+                "A noradrenalina gera menos risco de arritmias que a dobutamina, já que seu efeito vasoconstritor e o reflexo barorreceptor associado limitam o impacto arritmogênico direto sobre receptores beta1 — é a resposta correta.",
+                "A noradrenalina, por ser uma agonista alfa1 quase pura, gera mais vasoconstrição que a adrenalina (que tem um componente beta2 vasodilatador dose-dependente), não menos.",
+                "Não existe uma diferença bem estabelecida de maior fluxo plasmático renal da noradrenalina frente à adrenalina nesse sentido."
+            ],
+            "fantasma": [
+                "É o contrário: o reflexo que a noradrenalina dispara freia o coração, dando menos taquicardia que a dobutamina, não mais.",
+                "Essa aí! Com esse freio reflexo, tem menos chance do coração disparar em arritmias.",
+                "É o contrário, a noradrenalina aperta mais os vasos, não menos, comparada à adrenalina.",
+                "Isso não está bem estabelecido dessa forma."
+            ],
+            "gato": [
+                "Fijate: é o contrário, o reflexo barorreceptor freia o coração, dando menos taquicardia que a dobutamina.",
+                "Ronronado de aprovação! Menos risco arrítmico que a dobutamina: o perfil mais seguro da noradrenalina nesse sentido.",
+                "Dado curioso: é o contrário, a noradrenalina vasoconstringe mais que a adrenalina.",
+                "Miau, isso não está bem estabelecido dessa maneira."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao fenofibrato: ",
@@ -16982,7 +17282,27 @@
             "Caracteristicamente gera nefrotoxicidade ",
             "Atua interagindo com a enzima Lecitina Colesterol Acil Transferase (LCAT), que regula a produção de ácidos graxos. ",
             "Atua interagindo com receptores ativados por proliferadores de peroxissoma (PPARs), que regulam a transcrição genética. "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O fenofibrato não gera caracteristicamente litíase renal, sua associação clássica é com a litíase biliar/vesicular.",
+                "O fenofibrato não gera nefrotoxicidade como efeito adverso característico.",
+                "O fenofibrato não atua sobre a LCAT, essa enzima não regula a produção de ácidos graxos e não é seu alvo farmacológico.",
+                "O fenofibrato atua ativando os receptores PPAR, que regulam a transcrição de múltiplos genes relacionados ao metabolismo lipídico — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa pedra é da vesícula, não do rim.",
+                "Isso não é o que preocupa com esse fármaco.",
+                "Essa enzima não tem nada a ver com o fenofibrato.",
+                "Essa aí! Ativa esse receptor específico, que muda a expressão de vários genes lipídicos."
+            ],
+            "gato": [
+                "Fijate: essa pedra é da vesícula, não do rim.",
+                "Dado curioso: isso não preocupa com esse fármaco.",
+                "Miau, essa enzima não tem nada a ver com o fenofibrato.",
+                "Ronronado de aprovação! PPAR ativado: o mecanismo real do fenofibrato sobre a transcrição gênica."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação da Rivaroxabana e por que via é administrada? ",
@@ -16992,7 +17312,27 @@
             "Inibe o fator II de coagulação ativado e é administrado por via oral. ",
             "Inibe o fator X de coagulação ativado e é administrado por via intravenosa. ",
             "Inibe o fator II de coagulação ativado e é administrado por via intravenosa. "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O rivaroxabana inibe o fator X ativado da coagulação e é administrado por via oral — é a resposta correta.",
+                "O rivaroxabana não inibe o fator II, esse é o mecanismo do dabigatrana.",
+                "O rivaroxabana é administrado por via oral, não intravenosa.",
+                "O rivaroxabana não inibe o fator II nem é administrado por via intravenosa; ambos os dados estão incorretos."
+            ],
+            "fantasma": [
+                "Essa aí! Fator X bloqueado, e ainda por cima se toma por boca.",
+                "Esse fator é do dabigatrana, não desse fármaco.",
+                "Esse se toma por boca, não vai pela veia.",
+                "Nem o fator nem a via estão corretos nessa opção."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Fator X bloqueado, via oral: a assinatura completa do rivaroxabana.",
+                "Fijate: esse fator é do dabigatrana.",
+                "Dado curioso: esse se toma por boca, não por veia.",
+                "Miau, nem o fator nem a via estão corretos aqui."
+            ]
+        }
     },
     {
         "pergunta": "Você cuida de um paciente com níveis muito baixos de HDL e hipertrigliceridemia grave. Qual medicamento você deve usar? ",
@@ -17002,7 +17342,27 @@
             "Ezetimiba ",
             "Evolocumabe ",
             "Fenofibrato "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A rosuvastatina é primariamente um fármaco pra reduzir LDL, não a primeira escolha pra hipertrigliceridemia severa com HDL muito baixo.",
+                "A ezetimiba atua sobre a absorção de colesterol, sem efeito relevante sobre triglicerídeos nem HDL.",
+                "O evolocumabe reduz o LDL via PCSK9, sem efeito relevante sobre triglicerídeos nem HDL nesse contexto.",
+                "O fenofibrato, ao reduzir principalmente os triglicerídeos e aumentar modestamente o HDL, é a droga de escolha nesse perfil lipídico — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa foca no LDL, não é a primeira opção pra esse perfil.",
+                "Esse não mexe nos triglicerídeos nem no HDL de forma relevante.",
+                "Esse também não mexe nos triglicerídeos nem no HDL nesse contexto.",
+                "Essa aí! Baixa os triglicerídeos e sobe um pouco o HDL, justo o que esse paciente precisa."
+            ],
+            "gato": [
+                "Fijate: essa foca no LDL, não nesse perfil lipídico.",
+                "Dado curioso: esse não mexe em triglicerídeos nem HDL de forma relevante.",
+                "Miau, esse também não mexe em triglicerídeos nem HDL aqui.",
+                "Ronronado de aprovação! Fenofibrato: a escolha clássica pra triglicerídeos altos com HDL baixo."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção CORRETA em relação ao Nitroprussiato de Sódio: ",
@@ -17012,7 +17372,27 @@
             "Seu efeito adverso mais comum é a metemoglobinemia. ",
             "Seu efeito vasodilatador ocorre apenas no nível arterial. ",
             "É útil em emergências hipertensivas por via intravenosa. "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O nitroprussiato não é administrado por via oral nem é de escolha pra hipertensão crônica, é usado em emergências por via IV.",
+                "O efeito adverso mais frequente e característico do nitroprussiato é a toxicidade por cianeto/tiocianato, não a metahemoglobinemia (que é possível mas menos frequente).",
+                "O nitroprussiato é um vasodilatador arterial e venoso balanceado, não unicamente arterial.",
+                "O nitroprussiato de sódio é útil em emergências hipertensivas, administrado por via intravenosa — é a resposta correta."
+            ],
+            "fantasma": [
+                "Nada de boca nem de uso crônico, isso é pras urgências pela veia.",
+                "Esse não é o mais frequente, o cianeto é o grande protagonista aqui.",
+                "É balanceado, arterial e venoso, não só arterial.",
+                "Essa aí! Direto pra veia, pras emergências hipertensivas."
+            ],
+            "gato": [
+                "Fijate: nada de via oral nem uso crônico, é pras urgências.",
+                "Dado curioso: o cianeto é o protagonista, não a metahemoglobinemia.",
+                "Miau, é balanceado, arterial e venoso, não só arterial.",
+                "Ronronado de aprovação! Nitroprussiato IV: a solução clássica em emergências hipertensivas."
+            ]
+        }
     },
     {
         "pergunta": "O mecanismo de ação da ivabradina é: ",
@@ -17022,7 +17402,27 @@
             "Inibe seletivamente a bomba ATPase de sódio-potássio no nível cardíaco ",
             "Inibe seletivamente os canais de potássio no nível cardíaco ",
             "Inibe seletivamente os canais de cálcio tipo T no nível cardíaco "
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ivabradina inibe seletivamente os canais de cátion ativados por nucleotídeos cíclicos (corrente If) a nível do nó sinusal cardíaco — é a resposta correta.",
+                "A ivabradina não inibe a bomba sódio-potássio ATPase, esse é o mecanismo da digoxina.",
+                "A ivabradina não inibe canais de potássio como mecanismo principal.",
+                "A ivabradina não inibe canais de cálcio tipo T, esse não é seu mecanismo específico."
+            ],
+            "fantasma": [
+                "Essa aí! Freia a corrente If do marcapasso natural do coração, baixando a frequência sem mexer na força.",
+                "Essa bomba é alvo da digoxina, não da ivabradina.",
+                "Esse canal não é seu alvo principal.",
+                "Esse canal também não é o mecanismo específico desse fármaco."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Corrente If bloqueada: o mecanismo único da ivabradina pra baixar a frequência cardíaca.",
+                "Fijate: essa bomba é alvo da digoxina.",
+                "Dado curioso: esse canal não é seu alvo principal.",
+                "Miau, esse canal também não é o mecanismo específico aqui."
+            ]
+        }
     },
     {
         "pergunta": "Em relação a um paciente com insuficiência cardíaca. Por favor indique a opção correta: ",
