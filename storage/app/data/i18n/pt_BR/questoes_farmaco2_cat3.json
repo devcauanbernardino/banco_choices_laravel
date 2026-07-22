@@ -18033,7 +18033,27 @@
             "Um medicamento usado para diminuir a toxicidade sem interferir na ação",
             "Um medicamento que aumenta a eliminação da quimioterapia",
             "Um medicamento que aumenta o metabolismo da quimioterapia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A substância de resgate não busca diminuir a ação terapêutica, esse seria o efeito contrário ao buscado.",
+                "A substância de resgate é um fármaco administrado para diminuir a toxicidade do quimioterápico sobre as células normais, sem interferir na sua ação antitumoral — é a resposta correta.",
+                "A substância de resgate não atua aumentando a eliminação do quimioterápico como mecanismo definidor.",
+                "A substância de resgate não atua aumentando a metabolização do quimioterápico como mecanismo definidor."
+            ],
+            "fantasma": [
+                "Bem ao contrário, não busca frear o efeito que se precisa.",
+                "Essa aí! Protege da toxicidade sem estragar o efeito contra o tumor.",
+                "Não é isso que essa substância faz.",
+                "Isso também não é o que essa substância faz."
+            ],
+            "gato": [
+                "Fijate: bem ao contrário, não busca frear o efeito buscado.",
+                "Ronronado de aprovação! Menos toxicidade, mesmo efeito antitumoral: a substância de resgate em sua essência.",
+                "Dado curioso: não é isso que essa substância faz.",
+                "Miau, isso também não é o mecanismo dessa substância."
+            ]
+        }
     },
     {
         "pergunta": "Quais das seguintes reações adversas são comuns com a grande maioria dos medicamentos antineoplásicos clássicos?",
@@ -18043,7 +18063,27 @@
             "Nefrotoxicidade e hepatotoxicidade",
             "Mielotoxicidade e toxicidade digestiva",
             "Toxicidade cardíaca e mielotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hepatotoxicidade não é tão universal entre os antineoplásicos clássicos quanto a mielotoxicidade e a toxicidade digestiva.",
+                "A nefrotoxicidade é mais específica de certos agentes, não a reação comum à grande maioria.",
+                "A mielotoxicidade e a toxicidade digestiva são as reações adversas mais comuns à grande maioria dos antineoplásicos clássicos, ao afetarem tecidos de alto renovo celular — é a resposta correta.",
+                "A toxicidade cardíaca é mais específica de certos agentes (como as antraciclinas), não a reação comum à maioria."
+            ],
+            "fantasma": [
+                "Isso não é tão universal quanto a dupla medula e intestino.",
+                "Isso é mais específico de alguns fármacos pontuais.",
+                "Essa aí! Medula óssea e intestino, os alvos clássicos e comuns de quase todos.",
+                "Isso é mais específico de alguns agentes em particular."
+            ],
+            "gato": [
+                "Fijate: isso não é tão universal quanto a dupla medula-intestino.",
+                "Dado curioso: isso é mais específico de certos agentes.",
+                "Ronronado de aprovação! Mielotoxicidade + toxicidade digestiva: a dupla comum a quase todos os antineoplásicos clássicos.",
+                "Miau, isso é mais específico de agentes pontuais."
+            ]
+        }
     },
     {
         "pergunta": "As reações adversas comuns dos antineoplásicos são:",
@@ -18053,7 +18093,27 @@
             "Devido à hipersensibilidade",
             "Devido à citotoxicidade em tecidos com baixa fração de crescimento",
             "Devido à citotoxicidade em tecidos com alta fração de crescimento"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade não é o mecanismo geral que explica as reações adversas comuns dos antineoplásicos.",
+                "A hipersensibilidade não é o mecanismo geral que explica essas reações adversas comuns.",
+                "Os tecidos de baixa fração de crescimento não são os afetados por esse mecanismo, e sim os de alta fração de crescimento.",
+                "As reações adversas comuns se devem à citotoxicidade sobre tecidos de alta fração de crescimento, já que esses fármacos atacam células que se dividem rapidamente — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso não explica o mecanismo geral dessas reações.",
+                "Isso também não é o mecanismo geral aqui.",
+                "É ao contrário, são os que se dividem rápido os afetados, não os lentos.",
+                "Essa aí! Células que se multiplicam rápido são as mais atingidas por esses fármacos."
+            ],
+            "gato": [
+                "Fijate: isso não explica o mecanismo geral dessas reações.",
+                "Dado curioso: isso também não é o mecanismo geral aqui.",
+                "Miau, é ao contrário, os tecidos de alta divisão são os afetados.",
+                "Ronronado de aprovação! Alta fração de crescimento: o alvo clássico da toxicidade dos antineoplásicos."
+            ]
+        }
     },
     {
         "pergunta": "Quais tecidos são afetados pelas reações adversas comuns dos medicamentos antineoplásicos?",
@@ -18063,7 +18123,27 @@
             "Tecidos com alta renovação celular",
             "Tecidos altamente irrigados",
             "Apenas tecidos hematopoiéticos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O componente glandular não é o fator determinante dessa afetação.",
+                "Os tecidos com alto renovo celular são os afetados pela toxicidade comum dos antineoplásicos, por se dividirem rapidamente como as células tumorais — é a resposta correta.",
+                "A alta irrigação não é o fator determinante, é a velocidade de divisão celular.",
+                "Não são unicamente os tecidos hematopoiéticos, também se afetam a mucosa digestiva e os folículos pilosos, entre outros de alto renovo."
+            ],
+            "fantasma": [
+                "Isso não é o que determina essa afetação.",
+                "Essa aí! Células que se renovam rápido, tão vulneráveis quanto as tumorais.",
+                "Não é a irrigação, é a velocidade de divisão celular.",
+                "Não é só a medula, também o intestino e o pelo, entre outros."
+            ],
+            "gato": [
+                "Fijate: isso não é o que determina essa afetação.",
+                "Ronronado de aprovação! Alto renovo celular: o denominador comum dos tecidos afetados pelos antineoplásicos.",
+                "Dado curioso: não é a irrigação, é a velocidade de divisão.",
+                "Miau, não é só a medula, há mais tecidos de alto renovo afetados."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual medicamento antineoplásico pode causar fibrose pulmonar:",
@@ -18073,7 +18153,27 @@
             "Doxorrubicina",
             "Bleomicina",
             "Vinblastina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O etoposídeo não se associa caracteristicamente à fibrose pulmonar.",
+                "A doxorrubicina se caracteriza mais pela cardiotoxicidade, não pela fibrose pulmonar.",
+                "A bleomicina é o antineoplásico classicamente associado à fibrose pulmonar como sua toxicidade limitante — é a resposta correta.",
+                "A vimblastina não se associa caracteristicamente à fibrose pulmonar, é mais conhecida pela neurotoxicidade."
+            ],
+            "fantasma": [
+                "Esse não tem essa associação com o pulmão.",
+                "Essa é mais conhecida por prejudicar o coração, não o pulmão.",
+                "Essa aí! O pulmão é seu ponto fraco clássico entre os antineoplásicos.",
+                "Essa é mais conhecida por afetar os nervos, não o pulmão."
+            ],
+            "gato": [
+                "Fijate: esse não tem essa associação com o pulmão.",
+                "Dado curioso: essa é mais conhecida pelo coração, não o pulmão.",
+                "Ronronado de aprovação! Bleomicina: a rainha da fibrose pulmonar entre os antineoplásicos.",
+                "Miau, essa é mais conhecida por prejudicar os nervos."
+            ]
+        }
     },
     {
         "pergunta": "É a toxicidade limitante da bleomicina?",
@@ -18083,7 +18183,27 @@
             "Mielotoxicidade",
             "Cardiotoxicidade",
             "fibrose pulmonar"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A mucosite digestiva pode ocorrer com muitos antineoplásicos, mas não é a toxicidade limitante específica da bleomicina.",
+                "A bleomicina se caracteriza justamente por gerar MENOS mielotoxicidade que a maioria dos antineoplásicos, uma de suas características distintivas.",
+                "A cardiotoxicidade é mais característica da doxorrubicina, não da bleomicina.",
+                "A fibrose pulmonar é a toxicidade limitante clássica da bleomicina — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso pode acontecer com muitos, mas não é o limitante desse fármaco em particular.",
+                "Bem ao contrário, esse fármaco é dos que menos prejudicam a medula.",
+                "Isso é mais da doxorrubicina, não da bleomicina.",
+                "Essa aí! O pulmão é quem impõe o limite com esse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso pode acontecer com muitos, mas não é o limitante aqui.",
+                "Dado curioso: bem ao contrário, prejudica pouco a medula.",
+                "Miau, isso é mais da doxorrubicina.",
+                "Ronronado de aprovação! Fibrose pulmonar: a toxicidade limitante clássica da bleomicina."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes efeitos tóxicos é considerado toxicidade limitante durante o tratamento com Bleomicina?",
@@ -18093,7 +18213,27 @@
             "Mielossupressão",
             "Fibrose pulmonar",
             "Cistite hemorrágica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A neuropatia periférica é mais característica dos alcaloides da vinca, não da bleomicina.",
+                "A mielossupressão não é a toxicidade limitante da bleomicina, que na verdade causa pouca supressão medular.",
+                "A fibrose pulmonar é a toxicidade limitante considerada durante o tratamento com bleomicina — é a resposta correta.",
+                "A cistite hemorrágica é mais característica da ciclofosfamida/ifosfamida, não da bleomicina."
+            ],
+            "fantasma": [
+                "Isso é mais dos alcaloides da vinca, não desse fármaco.",
+                "Esse fármaco quase não toca a medula, não é o limitante.",
+                "Essa aí! O pulmão, de novo, o grande limite da bleomicina.",
+                "Isso é mais da ciclofosfamida, não da bleomicina."
+            ],
+            "gato": [
+                "Fijate: isso é mais dos alcaloides da vinca.",
+                "Dado curioso: esse fármaco quase não afeta a medula.",
+                "Ronronado de aprovação! Fibrose pulmonar: a toxicidade limitante da bleomicina, sem dúvidas.",
+                "Miau, isso é mais da ciclofosfamida/ifosfamida."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes grupos de antibióticos deve ser evitado em pacientes pediátricos em crescimento?",
@@ -18103,7 +18243,27 @@
             "carbapenêmicos",
             "Quinolonas",
             "Macrolídeos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As cefalosporinas são geralmente seguras e amplamente usadas em pediatria.",
+                "Os carbapenêmicos são usados em crianças quando necessário, sem essa restrição específica por crescimento.",
+                "As quinolonas devem ser evitadas em pacientes pediátricos em idade de crescimento, por seu potencial efeito sobre a cartilagem articular — é a resposta correta.",
+                "Os macrolídeos são usados comumente em crianças, sem essa restrição específica por crescimento."
+            ],
+            "fantasma": [
+                "Essas são das mais usadas e seguras em crianças.",
+                "Esses são usados em crianças quando necessário, sem esse problema específico.",
+                "Essa aí! A cartilagem em crescimento não combina com essa família.",
+                "Esses são usados sem drama na população pediátrica."
+            ],
+            "gato": [
+                "Fijate: essas são das mais usadas e seguras em crianças.",
+                "Dado curioso: esses são usados sem esse problema específico.",
+                "Ronronado de aprovação! Quinolonas: a família a evitar na criança em crescimento pela cartilagem.",
+                "Miau, esses são usados sem drama em pediatria."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção INCORRETA em relação às quinolonas:",
@@ -18114,7 +18274,27 @@
             "Entre seus efeitos adversos estão a tendinite e a ruptura do tendão de Aquiles.",
             "Sua associação com amiodarona não aumenta o risco de arritmias",
             "Não é recomendado seu uso em crianças e adolescentes."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: as quinolonas podem prolongar o intervalo QT do eletrocardiograma.",
+                "Essa afirmação é correta: a tendinite e a ruptura do tendão de Aquiles são efeitos adversos reais das quinolonas.",
+                "A associação de quinolonas com amiodarona SIM aumenta o risco de arritmias, já que ambos os fármacos prolongam o QT de forma aditiva; por isso essa é a afirmação INCORRETA que precisava ser assinalada — é a resposta correta.",
+                "Essa afirmação é correta: não se aconselha o uso de quinolonas em crianças e adolescentes."
+            ],
+            "fantasma": [
+                "Isso é verdade, o QT pode se alongar com esses fármacos.",
+                "Isso também é verdade, os tendões podem sofrer com esses fármacos.",
+                "Essa aí! Os dois alongam o QT, juntos o risco se soma, não desaparece.",
+                "Isso também é verdade, se evitam em crianças e adolescentes."
+            ],
+            "gato": [
+                "Fijate: isso sim é correto, o QT se alonga com esses fármacos.",
+                "Dado curioso: isso também é correto, risco real nos tendões.",
+                "Ronronado de aprovação! Ambos alongam o QT, o risco se soma: a incorreta da lista.",
+                "Miau, isso também é correto, se evitam em crianças e adolescentes."
+            ]
+        }
     },
     {
         "pergunta": "Qual afirmação sobre fluoroquinolonas é VERDADEIRA?",
@@ -18124,7 +18304,27 @@
             "Eles são seguros para administrar durante a gravidez",
             "As fluoroquinolonas são medicamentos de escolha para infecção do trato urinário em uma criança de 6 anos.",
             "Pode prolongar o QT"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As fluoroquinolonas têm alta, não baixa, biodisponibilidade oral, uma de suas vantagens farmacocinéticas.",
+                "As fluoroquinolonas não são seguras na gravidez, se evitam por preocupações semelhantes às do uso pediátrico.",
+                "As fluoroquinolonas não são de escolha em uma infecção urinária em uma criança de 6 anos, justamente por serem evitadas na idade de crescimento.",
+                "As fluoroquinolonas podem prolongar o intervalo QT — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, se absorvem muito bem por via oral.",
+                "Não são seguras na gravidez, melhor evitá-las.",
+                "Não são a escolha aqui, justo pela idade do paciente.",
+                "Essa aí! O coração pode notar o efeito no eletro com esses fármacos."
+            ],
+            "gato": [
+                "Fijate: ao contrário, têm alta biodisponibilidade oral.",
+                "Dado curioso: não são seguras na gravidez.",
+                "Miau, não são a escolha em uma criança dessa idade.",
+                "Ronronado de aprovação! Prolongação do QT: o efeito característico das fluoroquinolonas."
+            ]
+        }
     },
     {
         "pergunta": "Decidiu-se tratar um paciente com pneumonia adquirida na comunidade em regime ambulatorial com Levofloxacino. Que efeitos adversos você pode encontrar com o uso de quinolonas?",
@@ -18134,7 +18334,27 @@
             "Tendinopatias, neuropatias periféricas, vertigens, insônia, alucinações",
             "Nefrotoxicidade, erupção cutânea, prurido, fotossensibilidade",
             "Agranulocitose, taquicardia, prolongamento do intervalo QT"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hipoglicemia pode ocorrer em certos contextos, mas a nefrotoxicidade e eosinofilia não são o perfil característico principal das quinolonas.",
+                "As tendinopatias, neuropatias periféricas, vertigem, insônia e alucinações compõem o perfil de efeitos adversos característico e amplamente reconhecido das quinolonas — é a resposta correta.",
+                "A nefrotoxicidade não é o efeito característico principal das quinolonas, embora a fotossensibilidade seja real.",
+                "A agranulocitose não é um efeito característico das quinolonas, embora a prolongação do QT sim o seja."
+            ],
+            "fantasma": [
+                "Isso pode acontecer em casos pontuais, mas não é o perfil principal.",
+                "Essa aí! Tendões, nervos, tonturas, insônia e até alucinações: o combo completo dessa família.",
+                "Isso não é o principal, embora o sol sim possa incomodar a pele.",
+                "Isso não é típico, embora o coração sim possa ser afetado."
+            ],
+            "gato": [
+                "Fijate: isso pode acontecer em casos pontuais, não é o perfil principal.",
+                "Ronronado de aprovação! Tendões + nervos + SNC: o perfil de efeitos adversos clássico e completo das quinolonas.",
+                "Dado curioso: isso não é o principal, embora a fotossensibilidade seja real.",
+                "Miau, isso não é típico, embora o QT sim possa se alongar."
+            ]
+        }
     },
     {
         "pergunta": "Paciente de 70 anos inicia tratamento para Osteomielite com Levofloxacino. Além disso, ele é polimedicado. Qual interação medicamentosa pareceria relevante para você e por quê?",
@@ -18144,7 +18364,27 @@
             "Acenocumarol, devido ao aumento do metabolismo da quinolona com falha terapêutica",
             "Glicocorticóides, devido ao aumento das chances de ruptura do tendão de Aquiles",
             "Ivermectina, devido ao risco aumentado de uma reação adversa potencialmente fatal de Mazzotti"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As quinolonas não são indutoras do CYP450 dessa maneira; na verdade, algumas podem inibir certas enzimas, não acelerar assim o metabolismo da varfarina.",
+                "Esse mecanismo descrito (aumento do metabolismo da quinolona) não é a interação estabelecida nem relevante nesse contexto.",
+                "Os glicocorticoides, combinados com quinolonas, aumentam significativamente o risco de ruptura do tendão de Aquiles, uma interação clinicamente relevante especialmente no idoso — é a resposta correta.",
+                "A reação de Mazzotti se relaciona com o tratamento da oncocercose com ivermectina, não com uma interação com quinolonas."
+            ],
+            "fantasma": [
+                "Esse mecanismo não é o real com esse anticoagulante.",
+                "Essa interação não é a estabelecida nem a relevante aqui.",
+                "Essa aí! Corticoides mais quinolona, combinação perigosa para o tendão, principalmente no idoso.",
+                "Essa reação é de um contexto completamente diferente."
+            ],
+            "gato": [
+                "Fijate: esse mecanismo não é o real com esse anticoagulante.",
+                "Dado curioso: essa interação não é a estabelecida aqui.",
+                "Ronronado de aprovação! Corticoides + quinolona: a combinação perigosa clássica para o tendão de Aquiles.",
+                "Miau, essa reação é de outro contexto completamente diferente."
+            ]
+        }
     },
     {
         "pergunta": "Paciente em tratamento com levofloxacino para exacerbação aguda de doença pulmonar obstrutiva crônica. Que reações adversas podem ocorrer com este medicamento?",
@@ -18154,7 +18394,27 @@
             "Prolongamento do intervalo QT, neuropatia periférica, convulsões e tendinite",
             "Nefrotoxicidade, síndrome do pescoço vermelho e síndrome de Stevens-Johnson",
             "Hepatotoxicidade, hiperuricemia e neurite óptica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A necrólise epidérmica tóxica não é o perfil característico principal das quinolonas.",
+                "A prolongação do intervalo QT, a neuropatia periférica, as convulsões e a tendinite compõem o perfil de reações adversas característico das quinolonas — é a resposta correta.",
+                "A síndrome do pescoço vermelho é característica da vancomicina (por infusão rápida), não das quinolonas.",
+                "A neurite óptica é mais característica do etambutol, não das quinolonas."
+            ],
+            "fantasma": [
+                "Isso não é o típico dessa família de fármacos.",
+                "Essa aí! QT longo, nervos afetados, convulsões e tendões: o combo real das quinolonas.",
+                "Essa síndrome é da vancomicina, não das quinolonas.",
+                "Isso é mais do etambutol, não desse grupo."
+            ],
+            "gato": [
+                "Fijate: isso não é o típico dessa família.",
+                "Ronronado de aprovação! QT + neuropatia + convulsões + tendinite: o perfil real das quinolonas.",
+                "Dado curioso: essa síndrome é da vancomicina.",
+                "Miau, isso é mais do etambutol."
+            ]
+        }
     },
     {
         "pergunta": "Quais são as características das quinolonas?",
@@ -18164,7 +18424,27 @@
             "Eles têm baixo volume de distribuição",
             "São medicamentos bactericidas",
             "Eles não têm efeito pós-antibiótico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As quinolonas não são ativas unicamente para gram-positivos, têm ampla cobertura gram-negativa, uma de suas forças.",
+                "As quinolonas têm volume de distribuição alto, não baixo, com boa penetração tecidual.",
+                "As quinolonas são drogas bactericidas, dependentes de concentração — é a resposta correta.",
+                "As quinolonas sim possuem um efeito pós-antibiótico significativo, não carecem dele."
+            ],
+            "fantasma": [
+                "Cobrem bem também os gram-negativos, não são só para os positivos.",
+                "Se distribuem muito bem pelo corpo, bem ao contrário de um volume baixo.",
+                "Essa aí! Matam bactérias, não só as freiam, e dependem da concentração.",
+                "Sim têm esse efeito extra depois de suspenso o fármaco."
+            ],
+            "gato": [
+                "Fijate: cobrem bem gram-negativos também, não só positivos.",
+                "Dado curioso: se distribuem muito bem, volume alto, não baixo.",
+                "Ronronado de aprovação! Bactericidas concentração-dependentes: a assinatura das quinolonas.",
+                "Miau, sim têm efeito pós-antibiótico significativo."
+            ]
+        }
     },
     {
         "pergunta": "Quais são as características das quinolonas?",
@@ -18174,7 +18454,27 @@
             "Eles têm baixo volume de distribuição",
             "São medicamentos bactericidas",
             "Não é eficaz contra infecções causadas por E. coli"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As quinolonas não são ativas unicamente para gram-positivos, têm ampla cobertura gram-negativa.",
+                "As quinolonas têm volume de distribuição alto, não baixo.",
+                "As quinolonas são drogas bactericidas — é a resposta correta.",
+                "As quinolonas sim são eficazes contra infecções causadas por E. coli, um uso clássico (por exemplo, em infecções urinárias)."
+            ],
+            "fantasma": [
+                "Cobrem bem também os gram-negativos.",
+                "Se distribuem muito bem pelo corpo.",
+                "Essa aí! Matam bactérias, a assinatura bactericida dessa família.",
+                "Sim são eficazes contra essa bactéria, um uso clássico das quinolonas."
+            ],
+            "gato": [
+                "Fijate: cobrem bem gram-negativos também.",
+                "Dado curioso: se distribuem muito bem, volume alto.",
+                "Ronronado de aprovação! Bactericidas: a característica central das quinolonas.",
+                "Miau, sim são eficazes contra E. coli, uso clássico em infecções urinárias."
+            ]
+        }
     },
     {
         "pergunta": "Quais são as características das quinolonas?",
@@ -18184,7 +18484,27 @@
             "Os efeitos adversos mais frequentes são nefrotoxicidade e dor abdominal.",
             "Fluorados não possuem atividade bactericida contra bactérias intracelulares",
             "Como a ciprofloxacina e a norfloxacina são úteis no tratamento de infecções do trato urinário"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As quinolonas não inibem a síntese da parede bacteriana, esse é o mecanismo dos beta-lactâmicos.",
+                "O efeito adverso mais frequente das quinolonas não é principalmente a nefrotoxicidade e a dor abdominal, seu perfil característico inclui tendinopatias, efeitos no SNC e QT.",
+                "As quinolonas fluoradas sim têm boa atividade contra bactérias intracelulares, bem ao contrário do que diz essa opção.",
+                "A ciprofloxacina e a norfloxacina são úteis para o tratamento de infecções urinárias, um uso clássico dessas quinolonas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é dos beta-lactâmicos, não das quinolonas.",
+                "Isso não é o mais frequente com esses fármacos.",
+                "Ao contrário, sim funcionam bem contra bactérias intracelulares.",
+                "Essa aí! Essas duas são as clássicas para as infecções urinárias."
+            ],
+            "gato": [
+                "Fijate: isso é dos beta-lactâmicos, não das quinolonas.",
+                "Dado curioso: isso não é o mais frequente aqui.",
+                "Miau, ao contrário, sim cobrem bem as bactérias intracelulares.",
+                "Ronronado de aprovação! Ciprofloxacina e norfloxacina: as clássicas para infecções urinárias."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao mecanismo de ação das quinolonas?",
@@ -18194,7 +18514,27 @@
             "Eles se ligam à unidade ribossômica 30S",
             "Eles são inibidores diretos da síntese de DNA bacteriano.",
             "Atua no mecanismo de oxidação-redução"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As quinolonas não inibem a síntese da parede, esse é o mecanismo dos beta-lactâmicos.",
+                "As quinolonas não se ligam à subunidade ribossomal 30S, esse é o mecanismo de aminoglicosídeos/tetraciclinas.",
+                "As quinolonas são inibidoras diretas da síntese do DNA bacteriano — é a resposta correta.",
+                "As quinolonas não atuam sobre mecanismos de óxido-redução, esse é mais o mecanismo do metronidazol."
+            ],
+            "fantasma": [
+                "Isso é dos beta-lactâmicos, outro mecanismo completamente diferente.",
+                "Isso é de outros antibióticos, não das quinolonas.",
+                "Essa aí! Freiam diretamente a fábrica de DNA da bactéria.",
+                "Isso é mais do metronidazol, não das quinolonas."
+            ],
+            "gato": [
+                "Fijate: isso é dos beta-lactâmicos.",
+                "Dado curioso: isso é de outros antibióticos, não das quinolonas.",
+                "Ronronado de aprovação! Síntese de DNA bloqueada: o mecanismo direto das quinolonas.",
+                "Miau, isso é mais do metronidazol."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao mecanismo de ação das quinolonas?",
@@ -18204,7 +18544,27 @@
             "Eles se ligam à unidade ribossômica 50S",
             "Eles atuam na DNA girase e na Topoisomerase IV",
             "Eles inibem a diidrofolato redutase"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As quinolonas não inibem a síntese da parede bacteriana, esse é o mecanismo de outros antibióticos.",
+                "As quinolonas não se ligam à subunidade 50S, esse é o mecanismo de macrolídeos/cloranfenicol.",
+                "As quinolonas atuam sobre a DNA girase e a topoisomerase IV, bloqueando a replicação do DNA bacteriano — é a resposta correta.",
+                "As quinolonas não inibem a di-hidrofolato redutase, esse é o mecanismo do trimetoprima."
+            ],
+            "fantasma": [
+                "Isso é de outra família de antibióticos.",
+                "Isso é dos macrolídeos, não das quinolonas.",
+                "Essa aí! DNA girase e topoisomerase IV, os alvos precisos das quinolonas.",
+                "Isso é do trimetoprima, não das quinolonas."
+            ],
+            "gato": [
+                "Fijate: isso é de outra família de antibióticos.",
+                "Dado curioso: isso é dos macrolídeos.",
+                "Ronronado de aprovação! DNA girase e topoisomerase IV: os alvos moleculares precisos das quinolonas.",
+                "Miau, isso é do trimetoprima."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é um fator de risco para o desenvolvimento de ruptura do tendão de Aquiles com o uso de quinolona?",
@@ -18214,7 +18574,27 @@
             "Uso prévio de corticosteróides",
             "Uso anterior de AINEs",
             "História de doença renal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A obesidade não é o fator de risco classicamente estabelecido para essa interação específica.",
+                "O uso prévio de corticoides aumenta significativamente o risco de ruptura do tendão de Aquiles ao se combinar com quinolonas — é a resposta correta.",
+                "O uso prévio de AINEs não é o fator de risco classicamente estabelecido para essa interação específica.",
+                "Os antecedentes de doença renal não são o fator de risco classicamente estabelecido para a ruptura tendinosa especificamente."
+            ],
+            "fantasma": [
+                "Isso não é o que mais pesa nesse risco específico.",
+                "Essa aí! Corticoides antes, quinolona depois, tendão em perigo.",
+                "Isso também não é o fator clássico desse risco em particular.",
+                "Isso não é o fator de risco clássico para o tendão especificamente."
+            ],
+            "gato": [
+                "Fijate: isso não é o que mais pesa nesse risco.",
+                "Ronronado de aprovação! Corticoides prévios + quinolona: a combinação de risco clássica para o tendão.",
+                "Dado curioso: isso também não é o fator clássico aqui.",
+                "Miau, isso não é o fator de risco clássico para o tendão."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção CORRETA em relação às quinolonas:",
@@ -18224,7 +18604,27 @@
             "Eles têm baixa penetração nos tecidos",
             "Apresentam efeito pós-antibiótico",
             "Eles têm baixa toxicidade, por isso são a escolha para infecções leves."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As quinolonas têm alta, não baixa, biodisponibilidade oral.",
+                "As quinolonas têm boa penetração tecidual, não baixa.",
+                "As quinolonas apresentam um efeito pós-antibiótico significativo — é a resposta correta.",
+                "As quinolonas não têm baixa toxicidade; seu perfil de efeitos adversos (tendinopatias, QT, SNC) faz com que não sejam de escolha preferente em infecções leves."
+            ],
+            "fantasma": [
+                "Ao contrário, se absorvem muito bem por via oral.",
+                "Ao contrário, penetram muito bem os tecidos.",
+                "Essa aí! O efeito continua um tempo depois de suspender o fármaco.",
+                "Não são tão inocentes, têm sua lista de efeitos adversos importante."
+            ],
+            "gato": [
+                "Fijate: ao contrário, têm alta biodisponibilidade oral.",
+                "Dado curioso: ao contrário, penetram muito bem os tecidos.",
+                "Ronronado de aprovação! Efeito pós-antibiótico: uma característica real das quinolonas.",
+                "Miau, não são de baixa toxicidade, seu perfil de efeitos adversos é considerável."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o efeito adverso típico das quinolonas em idosos tratados com corticosteróides?",
