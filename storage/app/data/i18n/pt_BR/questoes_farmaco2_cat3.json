@@ -10829,7 +10829,27 @@
             "Dabigatrana",
             "Enoxaparina",
             "heparina não fracionada"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O clopidogrel é um antiagregante que inibe o receptor P2Y12, não um inibidor direto da trombina.",
+                "O dabigatrana é um inibidor direto da trombina que é administrado por via oral — é a resposta correta.",
+                "A enoxaparina não inibe diretamente a trombina, atua de forma indireta através da antitrombina III, e é administrada por via subcutânea, não oral.",
+                "A heparina não fracionada não inibe diretamente a trombina de forma oral, atua indiretamente via antitrombina III e é administrada por via parenteral."
+            ],
+            "fantasma": [
+                "Esse bloqueia outro receptor, não a trombina.",
+                "Essa aí! Dabigatrana ataca a trombina de frente, e ainda por cima se toma por boca.",
+                "Essa precisa de um intermediário e não se toma por boca.",
+                "Essa também precisa de um intermediário e vai pela veia ou pele, não por boca."
+            ],
+            "gato": [
+                "Fijate: clopidogrel bloqueia outro receptor, não a trombina.",
+                "Ronronado de aprovação! Dabigatrana: inibidor direto de trombina, e ainda por cima oral.",
+                "Dado curioso: enoxaparina precisa de um intermediário e não é oral.",
+                "Miau, heparina não fracionada também não é oral nem direta."
+            ]
+        }
     },
     {
         "pergunta": "A biodisponibilidade da Dabigatrana é:",
@@ -10839,7 +10859,27 @@
             "40 - 50%",
             "5 - 7%.",
             "80 - 90%."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A biodisponibilidade do dabigatrana não é menor que 1%; embora baixa, sim permite sua administração oral com a formulação adequada.",
+                "40-50% é alto demais pra biodisponibilidade real do dabigatrana.",
+                "A biodisponibilidade do dabigatrana é de aproximadamente 5-7%, uma das mais baixas entre os anticoagulantes orais diretos, compensada com uma formulação especial com núcleo ácido — é a resposta correta.",
+                "80-90% é alto demais pra biodisponibilidade real do dabigatrana."
+            ],
+            "fantasma": [
+                "Tão baixo não é, mesmo assim se toma por boca com sua formulação especial.",
+                "Alto demais pro que esse fármaco realmente absorve.",
+                "Essa aí! Só um punhado por cento se absorve, e precisa de ajuda extra na cápsula.",
+                "Alto demais, esse fármaco absorve bem pouco na realidade."
+            ],
+            "gato": [
+                "Fijate: não é tão baixo, sim se toma por boca com ajuda da sua formulação.",
+                "Dado curioso: alto demais pra realidade desse fármaco.",
+                "Ronronado de aprovação! 5-7%: a biodisponibilidade realmente baixa do dabigatrana.",
+                "Miau, alto demais, esse fármaco absorve bem pouco."
+            ]
+        }
     },
     {
         "pergunta": "O melhor medicamento para anticoagular rapidamente um paciente com história de trombocitopenia induzida por heparina e que atualmente apresenta trombose venosa profunda é:",
@@ -10849,7 +10889,27 @@
             "Clopidogrel",
             "heparina não fracionada",
             "Dabigatrana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A enoxaparina, por ser uma heparina, é contraindicada num paciente com antecedente de trombocitopenia induzida por heparina.",
+                "O clopidogrel é um antiagregante, não serve pra tratar uma trombose venosa profunda que exige anticoagulação.",
+                "A heparina não fracionada é absolutamente contraindicada num paciente com antecedente de trombocitopenia induzida por heparina.",
+                "O dabigatrana, por não ser uma heparina (inibidor direto de trombina), é uma alternativa segura e eficaz pra anticoagular rapidamente esse paciente com antecedente de trombocitopenia induzida por heparina — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa também é uma heparina, proibida pra esse paciente em particular.",
+                "Esse não serve pra tratar uma trombose, é antiagregante, não anticoagulante.",
+                "Essa está totalmente proibida nesse paciente com esse antecedente.",
+                "Essa aí! Sem ser heparina, é a alternativa segura e rápida pra esse caso particular."
+            ],
+            "gato": [
+                "Fijate: essa também é heparina, proibida pra esse paciente.",
+                "Dado curioso: esse não serve pra tratar a trombose em si.",
+                "Miau, essa está totalmente proibida com esse antecedente.",
+                "Ronronado de aprovação! Dabigatrana: a alternativa segura por não ser heparina, ideal pra esse caso."
+            ]
+        }
     },
     {
         "pergunta": "Confira o CORRETO sobre os efeitos adversos do Dabigatrana:",
@@ -10859,7 +10919,27 @@
             "Dor de cabeça.",
             "Urticária.",
             "Alopécia."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A dispepsia é um efeito adverso característico do dabigatrana, relacionado ao núcleo ácido tartárico da sua formulação que melhora a absorção — é a resposta correta.",
+                "A cefaleia não é o efeito adverso mais característico nem distintivo do dabigatrana.",
+                "A urticária não é o efeito adverso característico do dabigatrana.",
+                "A alopecia não é um efeito adverso característico do dabigatrana."
+            ],
+            "fantasma": [
+                "Essa aí! O ácido da sua cápsula pode incomodar o estômago.",
+                "Isso não é o mais típico desse fármaco.",
+                "Essa também não é o característico desse fármaco.",
+                "Essa não tem nada a ver com o dabigatrana."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Dispepsia: efeito adverso clássico pelo núcleo ácido da cápsula do dabigatrana.",
+                "Fijate: isso não é o mais característico desse fármaco.",
+                "Dado curioso: isso também não é típico do dabigatrana.",
+                "Miau, a queda de cabelo não tem nada a ver aqui."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à dabigatrana, indique a opção correta:",
@@ -10869,7 +10949,27 @@
             "Por se tratar de um medicamento que não possui antídoto, por se tratar de sangramento grave, o efeito anticoagulante deverá ser revertido com plasma fresco congelado e vitamina K.",
             "Uma característica farmacocinética que apresenta uma biodisponibilidade oral muito boa.",
             "É um medicamento que requer monitoramento do kPTT, pois o prolonga significativamente."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O dabigatrana é efetivamente um inibidor direto da trombina que é administrado por via oral — é a resposta correta.",
+                "O dabigatrana sim conta com um antídoto específico (idarucizumabe), então não é necessário recorrer a plasma fresco e vitamina K, que aliás não têm relação com seu mecanismo.",
+                "O dabigatrana na verdade tem biodisponibilidade oral muito baixa (5-7%), não muito boa.",
+                "O dabigatrana não precisa de monitoramento habitual com KPTT, dada sua farmacocinética previsível."
+            ],
+            "fantasma": [
+                "Essa aí! Ataca a trombina de frente, e se toma por boca.",
+                "Sim tem antídoto próprio, não precisa desse combo.",
+                "É o contrário, absorve muito pouco por boca.",
+                "Não precisa vigiar o KPTT de rotina com esse fármaco."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Inibidor direto de trombina, via oral: a assinatura do dabigatrana.",
+                "Fijate: tem seu próprio antídoto, esse combo não é necessário.",
+                "Dado curioso: é o contrário, absorve pouquíssimo por boca.",
+                "Miau, não precisa desse controle de rotina com KPTT."
+            ]
+        }
     },
     {
         "pergunta": "Num paciente tratado com Rivaroxabana, com que deve ser monitorizada regularmente a ação farmacológica?",
@@ -10879,7 +10979,27 @@
             "Tempo de protrombina com RIN.",
             "Não requer controle regular devido às suas características farmacológicas.",
             "Dosagem de fator II ativado."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O KPTT não é o parâmetro de controle habitual do rivaroxabana.",
+                "O tempo de protrombina/RNI não é o parâmetro de controle habitual do rivaroxabana, esse é da varfarina.",
+                "Graças à sua farmacocinética e farmacodinâmica previsíveis, o rivaroxabana não precisa de controle regular de rotina — é a resposta correta.",
+                "A dosagem de fator II ativado não é relevante nem o teste correto pro rivaroxabana, que atua sobre o fator Xa."
+            ],
+            "fantasma": [
+                "Esse controle não é o habitual desse fármaco.",
+                "Esse valor é coisa da varfarina, não do rivaroxabana.",
+                "Essa aí! Dose previsível, sem necessidade de controlar o tempo todo.",
+                "Esse teste não tem a ver com o mecanismo desse fármaco."
+            ],
+            "gato": [
+                "Fijate: esse controle não é o habitual desse fármaco.",
+                "Dado curioso: esse valor é território da varfarina.",
+                "Ronronado de aprovação! Farmacocinética previsível: o rivaroxabana não precisa de controle regular.",
+                "Miau, esse teste não corresponde ao mecanismo desse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "A principal via metabólica da Rivaroxabana é:",
@@ -10889,7 +11009,27 @@
             "90% é eliminado sem ser metabolizado pelos rins.",
             "Reações de conjugação com ácido glucurônico.",
             "É metabolizado pelas esterases plasmáticas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A principal via metabólica do rivaroxabana é o citocromo P450 3A4 — é a resposta correta.",
+                "Os 90% de eliminação renal sem metabolizar correspondem ao dabigatrana, não ao rivaroxabana.",
+                "As reações de conjugação com ácido glicurônico não são a via metabólica principal do rivaroxabana.",
+                "O rivaroxabana não é metabolizado principalmente por esterases plasmáticas."
+            ],
+            "fantasma": [
+                "Essa aí! O fígado, com essa enzima específica, faz o trabalho principal.",
+                "Esse perfil renal é do dabigatrana, não do rivaroxabana.",
+                "Essa não é a via principal desse fármaco.",
+                "Essas enzimas não são as protagonistas aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! CYP3A4: a via metabólica principal do rivaroxabana.",
+                "Fijate: esse perfil renal é do dabigatrana.",
+                "Dado curioso: essa não é a via principal desse fármaco.",
+                "Miau, essas enzimas não têm protagonismo aqui."
+            ]
+        }
     },
     {
         "pergunta": "Rivaroxabana:",
@@ -10899,7 +11039,27 @@
             "Seu início de ação é rápido.",
             "Seu mecanismo de ação é pela ligação à trombina.",
             "É usado por via oral e intravenosa"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O rivaroxabana não precisa de controle com RNI, esse parâmetro é da varfarina.",
+                "O rivaroxabana tem início de ação rápido, característica comum dos anticoagulantes orais diretos — é a resposta correta.",
+                "O rivaroxabana não se une à trombina, seu mecanismo é a inibição do fator Xa.",
+                "O rivaroxabana é usado unicamente por via oral, não intravenosa."
+            ],
+            "fantasma": [
+                "Esse controle é da varfarina, não desse fármaco.",
+                "Essa aí! Rápido pra entrar em ação, como todos os anticoagulantes orais diretos.",
+                "Não se gruda na trombina, ataca outro fator.",
+                "Só se toma por boca, nada de veia aqui."
+            ],
+            "gato": [
+                "Fijate: esse controle é da varfarina.",
+                "Ronronado de aprovação! Início de ação rápido: a marca dos anticoagulantes orais diretos.",
+                "Dado curioso: não se gruda na trombina, ataca o fator Xa.",
+                "Miau, só por boca, nada de veia com esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "O mecanismo de ação da Rivaroxabana é:",
@@ -10909,7 +11069,27 @@
             "Inibe diretamente o fator Xa.",
             "Inibe diretamente o receptor IIb-Illa.",
             "Ativa a antitrombina III."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O rivaroxabana não inibe diretamente o fator II, esse é o mecanismo do dabigatrana.",
+                "O rivaroxabana inibe diretamente o fator Xa, sendo esse seu mecanismo característico — é a resposta correta.",
+                "O rivaroxabana não inibe o receptor IIb-IIIa, esse é o mecanismo dos antiagregantes como o abciximabe.",
+                "O rivaroxabana não ativa a antitrombina III, esse é o mecanismo indireto da heparina."
+            ],
+            "fantasma": [
+                "Esse fator é do dabigatrana, não desse fármaco.",
+                "Essa aí! Fator Xa bloqueado direto, a assinatura do rivaroxabana.",
+                "Esse receptor é de outra família de fármacos.",
+                "Isso é coisa da heparina, não desse."
+            ],
+            "gato": [
+                "Fijate: esse fator é do dabigatrana.",
+                "Ronronado de aprovação! Fator Xa bloqueado direto: o mecanismo do rivaroxabana.",
+                "Dado curioso: esse receptor é de outra família de antiagregantes.",
+                "Miau, isso é mecanismo da heparina, não desse."
+            ]
+        }
     },
     {
         "pergunta": "Rivaroxabana como monitorá-lo:",
@@ -10919,7 +11099,27 @@
             "KPTT",
             "PLAQUETÁRIA",
             "NÃO MONITORADO"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O RNI não é o parâmetro de monitoramento do rivaroxabana, é da varfarina.",
+                "O KPTT não é o parâmetro padrão de monitoramento do rivaroxabana.",
+                "A contagem de plaquetas não é o parâmetro relacionado ao monitoramento do rivaroxabana.",
+                "O rivaroxabana, dada sua farmacocinética previsível, não precisa de monitoramento de rotina — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse valor é da varfarina, não desse fármaco.",
+                "Esse não é o controle padrão desse fármaco.",
+                "As plaquetas não têm a ver com esse controle.",
+                "Essa aí! Não precisa vigiar esse fármaco de rotina."
+            ],
+            "gato": [
+                "Fijate: esse valor é da varfarina.",
+                "Dado curioso: esse não é o controle padrão aqui.",
+                "Miau, as plaquetas não têm a ver com isso.",
+                "Ronronado de aprovação! Sem monitoramento de rotina: a vantagem característica do rivaroxabana."
+            ]
+        }
     },
     {
         "pergunta": "Com qual dos seguintes medicamentos o “tempo de sangramento” NÃO seria o método correto de escolha para controlar seu efeito farmacológico:",
@@ -10929,7 +11129,27 @@
             "Ticagrelor",
             "Rivaroxabana",
             "Eptifibatida"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O abciximabe é um antiagregante (bloqueia IIb-IIIa), então o tempo de sangramento sim seria o método correspondente pra avaliar seu efeito plaquetário.",
+                "O ticagrelor é um antiagregante (bloqueia P2Y12), então o tempo de sangramento também corresponderia como método de avaliação.",
+                "O rivaroxabana é um anticoagulante (inibidor do fator Xa), não um antiagregante, então o tempo de sangramento NÃO seria o método correto; precisaria de um teste de coagulação específico — é a resposta correta.",
+                "O eptifibatida é um antiagregante (bloqueia IIb-IIIa), então o tempo de sangramento sim corresponderia como método de avaliação."
+            ],
+            "fantasma": [
+                "Esse é antiagregante, o tempo de sangramento combina bem com ele.",
+                "Esse também é antiagregante, o tempo de sangramento também corresponde.",
+                "Essa aí! Esse é anticoagulante puro, o tempo de sangramento não é dele.",
+                "Esse também é antiagregante, o tempo de sangramento também corresponde."
+            ],
+            "gato": [
+                "Fijate: esse é antiagregante, o tempo de sangramento sim encaixa.",
+                "Dado curioso: esse também é antiagregante, mesmo teste aplicável.",
+                "Ronronado de aprovação! Rivaroxabana é anticoagulante, não antiagregante: o tempo de sangramento não é sua prova.",
+                "Miau, esse também é antiagregante, mesmo teste aplicável."
+            ]
+        }
     },
     {
         "pergunta": "Apixabana:",
@@ -10939,7 +11159,27 @@
             "É usado por via oral e intravenosa",
             "Seu início de ação é rápido.",
             "Sua ação deve ser controlada com o uso do RIN"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O apixabana não se une à trombina, seu mecanismo é a inibição do fator Xa.",
+                "O apixabana é usado unicamente por via oral, não intravenosa.",
+                "O apixabana tem início de ação rápido, característica comum dos anticoagulantes orais diretos — é a resposta correta.",
+                "O apixabana não precisa de controle com RNI, esse parâmetro é da varfarina."
+            ],
+            "fantasma": [
+                "Não se gruda na trombina, ataca outro fator.",
+                "Só se toma por boca, nada de veia aqui.",
+                "Essa aí! Rápido pra entrar em ação, como todos os anticoagulantes orais diretos.",
+                "Esse controle é da varfarina, não desse fármaco."
+            ],
+            "gato": [
+                "Fijate: não se gruda na trombina, ataca o fator Xa.",
+                "Dado curioso: só por boca, nada de veia com esse fármaco.",
+                "Ronronado de aprovação! Início de ação rápido: a marca dos anticoagulantes orais diretos.",
+                "Miau, esse controle é da varfarina."
+            ]
+        }
     },
     {
         "pergunta": "Apixabana atua por:",
@@ -10949,7 +11189,27 @@
             "Inibição do fator II.",
             "Inibição do fator VIII.",
             "Inibição do fator Xa."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O apixabana não inibe a redução da vitamina K, esse é o mecanismo dos dicumarínicos.",
+                "O apixabana não inibe o fator II, esse é o mecanismo do dabigatrana.",
+                "O apixabana não inibe o fator VIII, não tem relação com esse mecanismo.",
+                "O apixabana atua inibindo o fator Xa — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse mecanismo é dos dicumarínicos, não desse fármaco.",
+                "Esse fator é do dabigatrana, não desse.",
+                "Esse fator não tem nada a ver com o apixabana.",
+                "Essa aí! Fator Xa bloqueado, a assinatura do apixabana."
+            ],
+            "gato": [
+                "Fijate: esse mecanismo é dos dicumarínicos.",
+                "Dado curioso: esse fator é do dabigatrana.",
+                "Miau, esse fator não tem nada a ver com esse fármaco.",
+                "Ronronado de aprovação! Fator Xa bloqueado: o mecanismo do apixabana."
+            ]
+        }
     },
     {
         "pergunta": "O mecanismo de ação da apixabana é:",
@@ -10959,7 +11219,27 @@
             "Inibe diretamente o fator xa",
             "Inibe diretamente o receptor IIb-IIIa",
             "Ativa a antitrombina III"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O apixabana não inibe diretamente o fator II, esse é o mecanismo do dabigatrana.",
+                "O apixabana inibe diretamente o fator Xa, sendo esse seu mecanismo característico — é a resposta correta.",
+                "O apixabana não inibe o receptor IIb-IIIa, esse é o mecanismo de outros antiagregantes.",
+                "O apixabana não ativa a antitrombina III, esse é o mecanismo indireto da heparina."
+            ],
+            "fantasma": [
+                "Esse fator é do dabigatrana, não desse fármaco.",
+                "Essa aí! Fator Xa bloqueado direto, a assinatura do apixabana.",
+                "Esse receptor é de outra família de fármacos.",
+                "Isso é coisa da heparina, não desse."
+            ],
+            "gato": [
+                "Fijate: esse fator é do dabigatrana.",
+                "Ronronado de aprovação! Fator Xa bloqueado direto: o mecanismo do apixabana.",
+                "Dado curioso: esse receptor é de outra família de antiagregantes.",
+                "Miau, isso é mecanismo da heparina, não desse."
+            ]
+        }
     },
     {
         "pergunta": "Como é controlado o efeito anticoagulante da apixabana?",
@@ -10969,7 +11249,27 @@
             "Através da medição do tempo de coagulação ativado",
             "Através da medição do índice internacional normalizado (RIN)",
             "Não há necessidade de realizar verificações de rotina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O KPTT não é o parâmetro padrão de monitoramento do apixabana.",
+                "O tempo de coagulação ativado não é o parâmetro padrão de monitoramento do apixabana.",
+                "O RNI não é o parâmetro de monitoramento do apixabana, é da varfarina.",
+                "O apixabana, dada sua farmacocinética previsível, não precisa de controles rotineiros — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não é o controle padrão desse fármaco.",
+                "Esse também não é o controle padrão aqui.",
+                "Esse valor é da varfarina, não desse fármaco.",
+                "Essa aí! Não precisa vigiar esse fármaco de rotina."
+            ],
+            "gato": [
+                "Fijate: esse não é o controle padrão desse fármaco.",
+                "Dado curioso: esse também não é o controle padrão aqui.",
+                "Miau, esse valor é da varfarina.",
+                "Ronronado de aprovação! Sem controles rotineiros: a vantagem característica do apixabana."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à apixabana, indique a opção correta:",
@@ -10979,7 +11279,27 @@
             "É um inibidor direto da trombina para administração oral, que, se for necessária uma reversão rápida do efeito anticoagulante, pode ser usado de uma forma….mab",
             "É um inibidor direto da trombina para administração oral, que, caso seja necessária reversão rápida do efeito anticoagulante, pode-se utilizar plasma fresco e vitamina X.",
             "É um inibidor direto do fator x para administração oral, que não requer monitoramento."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O apixabana não é um inibidor de trombina, é inibidor do fator Xa, e não precisa de monitoramento com RNI.",
+                "O apixabana não é inibidor de trombina, e seu antídoto específico (andexanet alfa) é diferente do idarucizumabe, que é específico do dabigatrana.",
+                "O apixabana não é inibidor de trombina, e a reversão com plasma fresco e vitamina K não é sua abordagem característica (esses se usam mais com os dicumarínicos).",
+                "O apixabana é um inibidor direto do fator Xa de administração oral, que não precisa de monitoramento de rotina dada sua farmacocinética previsível — é a resposta correta."
+            ],
+            "fantasma": [
+                "Errou o mecanismo e o controle, nenhum dos dois está certo.",
+                "Esse antídoto é de outro fármaco, o dabigatrana, não do apixabana.",
+                "Esse combo de reversão é mais da varfarina, não desse fármaco.",
+                "Essa aí! Fator Xa bloqueado, oral, sem necessidade de vigiar de rotina."
+            ],
+            "gato": [
+                "Fijate: errou tanto no mecanismo quanto no controle.",
+                "Dado curioso: esse antídoto é do dabigatrana, não do apixabana.",
+                "Miau, esse combo de reversão é mais da varfarina.",
+                "Ronronado de aprovação! Fator Xa bloqueado, oral, sem monitoramento de rotina: a assinatura completa do apixabana."
+            ]
+        }
     },
     {
         "pergunta": "Indique qual dos seguintes medicamentos NÃO possui antídoto específico para reverter os efeitos:",
@@ -10989,7 +11309,27 @@
             "Clopidogrel",
             "Heparina sódica",
             "Varfarina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O rivaroxabana sim possui um antídoto específico: o andexanet alfa.",
+                "O clopidogrel não possui um antídoto farmacológico específico pra reverter seu efeito antiagregante; por isso essa é a resposta correta.",
+                "A heparina sódica sim possui um antídoto específico: o sulfato de protamina.",
+                "A varfarina sim possui um antídoto/reversão específica: a vitamina K (e o complexo protrombínico em emergências)."
+            ],
+            "fantasma": [
+                "Esse sim tem seu próprio antídoto.",
+                "Essa aí! Pro clopidogrel não há um antídoto farmacológico específico.",
+                "Essa sim tem seu antídoto clássico de sempre.",
+                "Essa também tem sua forma de se reverter."
+            ],
+            "gato": [
+                "Fijate: esse sim tem seu antídoto específico.",
+                "Ronronado de aprovação! Clopidogrel: o único sem antídoto farmacológico específico dessa lista.",
+                "Dado curioso: essa sim tem seu antídoto clássico.",
+                "Miau, essa também tem forma de se reverter."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes situações é contraindicação absoluta ao uso de fibrinolíticos?",
@@ -10999,7 +11339,27 @@
             "Úlcera péptica curada há 24 meses.",
             "Neoplasia maligna ativa.",
             "Gravidez."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hemorragia intracerebral, mesmo ocorrida há 12 meses, é uma contraindicação absoluta pros fibrinolíticos, dado o risco catastrófico de ressangramento — é a resposta correta.",
+                "Uma úlcera péptica curada há 24 meses não representa um risco ativo nem é contraindicação nesse momento.",
+                "A neoplasia maligna ativa é mais uma contraindicação relativa, a ser pesada conforme o contexto clínico, não absoluta.",
+                "A gravidez é considerada uma contraindicação relativa, a ser pesada frente ao benefício potencial numa situação de risco de vida, não absoluta."
+            ],
+            "fantasma": [
+                "Essa aí! Um sangramento no cérebro, mesmo que tenha sido há um ano, fecha a porta pra sempre pra esses fármacos.",
+                "Essa úlcera já cicatrizou, não representa risco nenhum agora.",
+                "Essa é mais um 'depende', não um não absoluto.",
+                "Essa também é mais um 'depende', se avalia caso a caso."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Hemorragia intracerebral, mesmo remota: contraindicação absoluta pra sempre.",
+                "Fijate: essa úlcera já cicatrizada não é problema agora.",
+                "Dado curioso: essa é relativa, se pesa caso a caso.",
+                "Miau, essa também é relativa, não absoluta."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é uma contraindicação absoluta aos fibrinolíticos (eles são ativadores do plasminogênio, a estreptoquinase é indireta, a uroquinase é direta)?",
@@ -11009,7 +11369,27 @@
             "Gravidez",
             "AVC isquêmico no último ano",
             "Neoplasia intracraniana benigna"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hemorragia intracraniana prévia, não importa quando tenha ocorrido, é a contraindicação absoluta clássica dos fibrinolíticos — é a resposta correta.",
+                "A gravidez é considerada uma contraindicação relativa, não absoluta, dos fibrinolíticos.",
+                "O AVC isquêmico no último ano é uma contraindicação relevante a considerar, mas o critério mais estritamente absoluto continua sendo qualquer antecedente de hemorragia intracraniana.",
+                "Uma neoplasia benigna intracraniana não representa a mesma contraindicação absoluta que o antecedente de sangramento cerebral."
+            ],
+            "fantasma": [
+                "Essa aí! Sangramento cerebral alguma vez na vida, porta fechada pra sempre pra esses fármacos.",
+                "Essa é mais um 'depende', não um não absoluto.",
+                "Esse pesa muito, mas o sangramento cerebral prévio continua sendo o critério mais duro.",
+                "Essa não tem o mesmo peso que um sangramento cerebral prévio."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Hemorragia intracraniana prévia: a contraindicação absoluta por excelência dos fibrinolíticos.",
+                "Fijate: essa é relativa, não absoluta.",
+                "Dado curioso: esse pesa, mas o sangramento cerebral prévio continua sendo o critério mais duro.",
+                "Miau, essa não tem o mesmo peso que um sangramento cerebral prévio."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é uma característica da estreptoquinase?",
@@ -11019,7 +11399,27 @@
             "Sua duração de ação é de 96 horas",
             "É específico da fibrina",
             "Pode ser administrado por via subcutânea"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A estreptoquinase, por derivar de uma bactéria, pode gerar anticorpos que causam reações de anafilaxia numa nova exposição — é a resposta correta.",
+                "A duração de ação da estreptoquinase é bem mais curta, não de 96 horas.",
+                "A estreptoquinase não é fibrino-específica, ativa o plasminogênio de forma sistêmica, diferente de agentes fibrino-específicos como a alteplase.",
+                "A estreptoquinase é administrada por infusão intravenosa, não por via subcutânea."
+            ],
+            "fantasma": [
+                "Essa aí! Por ser de origem bacteriana, o corpo pode montar anticorpos e reagir mal na próxima vez.",
+                "Dura bem menos que isso no organismo.",
+                "Não é tão específica, ativa a fibrinólise no corpo todo, não só onde precisa.",
+                "Vai pela veia, não embaixo da pele."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Origem bacteriana, anticorpos, risco de anafilaxia na reexposição: a marca da estreptoquinase.",
+                "Fijate: sua duração real é bem mais curta.",
+                "Dado curioso: não é fibrino-específica, atua no corpo todo.",
+                "Miau, vai pela veia, não embaixo da pele."
+            ]
+        }
     },
     {
         "pergunta": "Uma contraindicação absoluta para o uso do ativador do plasminogênio tecidual é:",
