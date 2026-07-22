@@ -39505,7 +39505,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La aparición de interacciones farmacológicas debe vigilarse, ya que la claritromicina es un inhibidor significativo del CYP450 — es la respuesta correcta.",
+                    "La insuficiencia renal no es la preocupación principal establecida con este fármaco en un paciente polimedicado.",
+                    "Las convulsiones no son la preocupación principal establecida con este fármaco.",
+                    "Los depósitos de inmunocomplejos no son una preocupación establecida con este fármaco."
+                ],
+                "fantasma": [
+                    "¡Esta! Este fármaco frena muchas otras drogas, hay que vigilar bien las combinaciones.",
+                    "Esa no es la preocupación principal con este fármaco.",
+                    "Eso no es lo que preocupa con este fármaco.",
+                    "Eso no es una preocupación establecida con este fármaco."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Interacciones farmacológicas: la vigilancia clave con la claritromicina en polimedicados.",
+                    "Fijate: esa no es la preocupación principal aquí.",
+                    "Dato curioso: eso no es lo que preocupa con este fármaco.",
+                    "Miau, eso no es una preocupación establecida aquí."
+                ]
+            }
         },
         {
             "numero": 842,
@@ -39532,7 +39552,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No es esta la característica destacada; su absorción no se ve especialmente afectada por los alimentos.",
+                    "Tiene acción contra clamidia pneumoniae, un uso clásico de los macrólidos contra atípicos — es la respuesta correcta.",
+                    "No son seguras en el embarazo; de hecho la claritromicina se asocia a mayor cautela que otros macrólidos en este contexto.",
+                    "Aunque también es cierto que tiene metabolismo hepático, el punto clásicamente destacado en este tema es su cobertura de atípicos."
+                ],
+                "fantasma": [
+                    "Esa no es la característica destacada aquí.",
+                    "¡Esta! Cubre bien a esta bacteria atípica particular.",
+                    "Al revés, no es segura en el embarazo.",
+                    "Eso también es cierto, pero el punto clásico aquí es otro."
+                ],
+                "gato": [
+                    "Fijate: esa no es la característica destacada aquí.",
+                    "¡Ronroneo de aprobación! Clamidia pneumoniae: la cobertura clásica de atípicos de los macrólidos.",
+                    "Dato curioso: al revés, no es segura en el embarazo.",
+                    "Miau, eso también es cierto, pero el punto clásico es otro."
+                ]
+            }
         },
         {
             "numero": 843,
@@ -39559,7 +39599,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La azitromicina se destaca justamente por NO inhibir el CYP450, por lo que no explicaría esta interacción.",
+                    "La ciprofloxacina no es la responsable clásica de esta interacción específica con metadona.",
+                    "La claritromicina, potente inhibidora del CYP3A4, aumenta los niveles de metadona (metabolizada por esa vía), explicando la necesidad de reducir su dosis — es la respuesta correcta.",
+                    "La doxiciclina no es una inhibidora relevante del CYP3A4 como para explicar esta interacción."
+                ],
+                "fantasma": [
+                    "Esta justamente no toca esa vía, no sería la responsable.",
+                    "Esta no es la responsable clásica de esta interacción particular.",
+                    "¡Esta! Frena la vía que degrada a la metadona, subiendo sus niveles.",
+                    "Esta tampoco frena esa vía de forma relevante."
+                ],
+                "gato": [
+                    "Fijate: esta justamente no toca esa vía.",
+                    "Dato curioso: esta no es la responsable clásica de esta interacción.",
+                    "¡Ronroneo de aprobación! Claritromicina inhibiendo el CYP3A4: la explicación de la interacción con metadona.",
+                    "Miau, esta tampoco frena esa vía de forma relevante."
+                ]
+            }
         },
         {
             "numero": 844,
@@ -39586,7 +39646,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La azitromicina SÍ cuenta con formulación intravenosa disponible.",
+                    "La azitromicina tiene buena biodisponibilidad oral, no baja.",
+                    "No tiene efecto inhibidor del Citocromo P450 3A4, su característica distintiva dentro del grupo — es la respuesta correcta.",
+                    "Es al revés: la azitromicina tiene la vida media MÁS LARGA del grupo, no corta."
+                ],
+                "fantasma": [
+                    "Esta sí tiene versión para la vena también.",
+                    "Al revés, se absorbe bien por boca.",
+                    "¡Esta! Esta droga en particular no frena esa vía enzimática.",
+                    "Al revés, esta dura más tiempo que las demás de su familia."
+                ],
+                "gato": [
+                    "Fijate: esta sí tiene versión para la vena también.",
+                    "Dato curioso: al revés, se absorbe bien por boca.",
+                    "¡Ronroneo de aprobación! Sin efecto sobre el CYP3A4: la característica distintiva de la azitromicina.",
+                    "Miau, al revés, esta dura más tiempo que las demás."
+                ]
+            }
         },
         {
             "numero": 845,
@@ -39613,7 +39693,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: la azitromicina se destaca por NO inhibir el CYP450, a diferencia de otros macrólidos.",
+                    "La hepatitis colestásica en ~40% es más bien el efecto clásico del estolato de eritromicina, no de la azitromicina.",
+                    "Tiene una buena absorción oral no afectada por alimentos y un volumen de distribución amplio, características bien establecidas — es la respuesta correcta.",
+                    "No es ampliamente activa contra gram negativos ni cubre Pseudomonas, fuera de su espectro característico."
+                ],
+                "fantasma": [
+                    "Al revés, esta droga justamente no frena esa vía.",
+                    "Eso es más de su prima eritromicina, no de esta.",
+                    "¡Esta! Se absorbe bien, la comida no le afecta, y se reparte por todo el cuerpo.",
+                    "No llega a esta bacteria difícil, fuera de su terreno."
+                ],
+                "gato": [
+                    "Fijate: al revés, esta droga no frena esa vía.",
+                    "Dato curioso: eso es más de su prima eritromicina.",
+                    "¡Ronroneo de aprobación! Buena absorción, sin efecto de la comida, amplio Vd: el perfil de la azitromicina.",
+                    "Miau, no llega a esta bacteria difícil."
+                ]
+            }
         },
         {
             "numero": 846,
@@ -39640,7 +39740,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No se dan por baja biodisponibilidad oral; de hecho, la azitromicina y la clindamicina se absorben bien por boca.",
+                    "Es al revés: interactúan con la subunidad ribosomal MAYOR (50S), no la menor (30S).",
+                    "Son inhibidores de la síntesis proteica al interactuar con la subunidad ribosomal mayor (50S), su mecanismo compartido — es la respuesta correcta.",
+                    "No tiene sentido como afirmación; la vía de administración no determina por sí sola el riesgo de esta colitis."
+                ],
+                "fantasma": [
+                    "Al revés, se absorben bien por boca.",
+                    "Al revés, es la subunidad mayor, no la menor.",
+                    "¡Esta! Las tres actúan sobre la subunidad grande del ribosoma.",
+                    "Eso no tiene sentido como explicación de este riesgo."
+                ],
+                "gato": [
+                    "Fijate: al revés, se absorben bien por boca.",
+                    "Dato curioso: al revés, es la subunidad mayor.",
+                    "¡Ronroneo de aprobación! Subunidad 50S compartida: el mecanismo común de estas tres drogas.",
+                    "Miau, eso no tiene sentido como explicación."
+                ]
+            }
         },
         {
             "numero": 847,
@@ -39667,7 +39787,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La isoniazida es de primera línea para M. tuberculosis, no para micobacterias atípicas (como el complejo M. avium) en este contexto de VIH avanzado.",
+                    "La clindamicina no es el tratamiento establecido para micobacterias atípicas.",
+                    "El TMS es más el tratamiento clásico de la neumonía por Pneumocystis jirovecii, una infección oportunista distinta a la diagnosticada aquí.",
+                    "La azitromicina (macrólido) es la base del tratamiento contra el complejo Mycobacterium avium, la micobacteria atípica clásica en VIH avanzado — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Este es para la tuberculosis clásica, no para esta otra micobacteria.",
+                    "Este no es el tratamiento establecido para esta infección particular.",
+                    "Este es más para otra infección oportunista distinta a la diagnosticada aquí.",
+                    "¡Esta! La base del tratamiento contra esta micobacteria atípica en VIH avanzado."
+                ],
+                "gato": [
+                    "Fijate: este es para la tuberculosis clásica, no esta otra.",
+                    "Dato curioso: este no es el tratamiento establecido aquí.",
+                    "Miau, este es para otra infección oportunista distinta.",
+                    "¡Ronroneo de aprobación! Azitromicina: la base del tratamiento del complejo M. avium en VIH avanzado."
+                ]
+            }
         },
         {
             "numero": 848,
@@ -39694,7 +39834,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "macrolidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés en parte: el linezolid también se une a la subunidad 50S, no a la 30S.",
+                    "Es al revés: el linezolid tiene excelente biodisponibilidad oral y se da comúnmente por esa vía, no únicamente IV.",
+                    "Ambos son en general bacteriostáticos, no bactericidas; esta afirmación invierte/confunde su naturaleza compartida.",
+                    "El linezolid inhibe la monoaminooxidasa (un riesgo de síndrome serotoninérgico con ciertas combinaciones), mientras que la azitromicina no comparte este efecto — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Al revés, el linezolid también va a esta subunidad, no a la otra.",
+                    "Al revés, este sí se toma bien por boca.",
+                    "Los dos son más bien de frenar, no de matar directamente.",
+                    "¡Esta! Uno frena una enzima relacionada a la serotonina, el otro no."
+                ],
+                "gato": [
+                    "Fijate: al revés, el linezolid también va a la 50S.",
+                    "Dato curioso: al revés, este sí se toma bien por boca.",
+                    "Miau, los dos son más bien de frenar, no de matar.",
+                    "¡Ronroneo de aprobación! Inhibición de la MAO por linezolid, no por azitromicina: la diferencia clave."
+                ]
+            }
         },
         {
             "numero": 849,
@@ -39721,7 +39881,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El cloranfenicol SÍ tiene toxicidad hematológica reconocida (supresión medular y, rara vez, aplasia).",
+                    "El cloranfenicol se une a la subunidad 50S, no a la 30S.",
+                    "No es el cloranfenicol el que tiene el espectro más amplio destacado en este banco; ese lugar corresponde a las tetraciclinas.",
+                    "Está contraindicado en neonatos, embarazo y puerperio, por el riesgo del síndrome del bebé gris — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Al revés, sí puede dañar la sangre con este fármaco.",
+                    "Es la otra subunidad, la 50S, no esta.",
+                    "Ese título es de otra familia, las tetraciclinas.",
+                    "¡Esta! Prohibido en estos tres grupos particulares, por el riesgo de ese síndrome grave."
+                ],
+                "gato": [
+                    "Fijate: al revés, sí puede dañar la sangre.",
+                    "Dato curioso: es la otra subunidad, la 50S.",
+                    "Miau, ese título es de otra familia.",
+                    "¡Ronroneo de aprobación! Contraindicado en neonatos, embarazo y puerperio: la marca del cloranfenicol."
+                ]
+            }
         },
         {
             "numero": 850,
@@ -39748,7 +39928,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Puede ser una prodroga (como el succinato de cloranfenicol, hidrolizado para liberar la forma activa) — es la respuesta correcta.",
+                    "Es al revés: SÍ atraviesa bien la placenta y la barrera hematoencefálica, una característica farmacocinética notable.",
+                    "SÍ presenta metabolismo hepático relevante (glucuronidación), precisamente la vía inmadura en neonatos que causa su toxicidad.",
+                    "No es la eliminación biliar la vía principal destacada; es más la metabolización hepática seguida de excreción renal de metabolitos."
+                ],
+                "fantasma": [
+                    "¡Esta! Existe en una forma que se activa después, una verdadera prodroga.",
+                    "Al revés, sí entra bien a la placenta y al cerebro.",
+                    "Al revés, sí pasa por el hígado, y esa vía inmadura explica su toxicidad en bebés.",
+                    "No es por ahí que sale principalmente."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Prodroga: una característica farmacocinética real del cloranfenicol.",
+                    "Fijate: al revés, sí entra bien a la placenta y al cerebro.",
+                    "Dato curioso: al revés, sí pasa por el hígado.",
+                    "Miau, no es por ahí que sale principalmente."
+                ]
+            }
         },
         {
             "numero": 851,
@@ -39775,7 +39975,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El síndrome del bebé gris es específico de neonatos/lactantes, no de adultos.",
+                    "La supresión de médula ósea (dosis-dependiente y reversible) puede ocurrir en pacientes adultos tratados con cloranfenicol — es la respuesta correcta.",
+                    "La reacción tipo disulfiram es más propia de ciertas cefalosporinas o del metronidazol, no del cloranfenicol.",
+                    "La nefrotoxicidad no es un efecto adverso característico del cloranfenicol."
+                ],
+                "fantasma": [
+                    "Ese cuadro es específico de los bebés, no de los adultos.",
+                    "¡Esta! La médula ósea puede sufrir con este fármaco, incluso en adultos.",
+                    "Eso es más de otros fármacos, no de este.",
+                    "Eso no es lo característico de este fármaco."
+                ],
+                "gato": [
+                    "Fijate: ese cuadro es específico de los bebés.",
+                    "¡Ronroneo de aprobación! Supresión de médula ósea: efecto adverso real del cloranfenicol, también en adultos.",
+                    "Dato curioso: eso es más de otros fármacos.",
+                    "Miau, eso no es lo característico de este fármaco."
+                ]
+            }
         },
         {
             "numero": 852,
@@ -39802,7 +40022,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ampicilina no produce este cuadro clínico tan característico.",
+                    "La azitromicina no produce este cuadro clínico tan característico.",
+                    "El cloranfenicol produce este cuadro (color cenizo, hipotensión, hipotermia, distensión abdominal), la presentación clásica de su toxicidad — es la respuesta correcta.",
+                    "La doxiciclina no produce este cuadro clínico tan característico."
+                ],
+                "fantasma": [
+                    "Este no da este cuadro tan particular.",
+                    "Esta no da este cuadro tan particular.",
+                    "¡Esta! El color ceniciento y todo lo demás, la marca clásica de esta toxicidad.",
+                    "Esta no da este cuadro tan particular."
+                ],
+                "gato": [
+                    "Fijate: este no da este cuadro tan particular.",
+                    "Dato curioso: esta no da este cuadro tan particular.",
+                    "¡Ronroneo de aprobación! Color ceniciento + hipotensión + hipotermia: la toxicidad clásica del cloranfenicol.",
+                    "Miau, esta no da este cuadro tan particular."
+                ]
+            }
         },
         {
             "numero": 853,
@@ -39829,7 +40069,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las convulsiones no son un efecto adverso característico establecido de las lincosamidas.",
+                    "El síndrome del recién nacido gris y la aplasia medular son característicos del cloranfenicol, no de las lincosamidas.",
+                    "La colestasis, ictericia y prolongación del QT son más característicos de otros grupos (eritromicina/macrólidos), no de las lincosamidas.",
+                    "Trombocitopenia, bloqueo neuromuscular y malestar gastrointestinal son los efectos adversos característicos de las lincosamidas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso no es lo característico de esta familia.",
+                    "Eso es del cloranfenicol, no de esta familia.",
+                    "Eso es más de la eritromicina, no de esta familia.",
+                    "¡Esta! El combo real: sangre, músculos y el estómago revuelto."
+                ],
+                "gato": [
+                    "Fijate: eso no es lo característico de esta familia.",
+                    "Dato curioso: eso es del cloranfenicol.",
+                    "Miau, eso es más de la eritromicina.",
+                    "¡Ronroneo de aprobación! Trombocitopenia + bloqueo neuromuscular + malestar digestivo: el combo real de las lincosamidas."
+                ]
+            }
         },
         {
             "numero": 854,
@@ -39856,7 +40116,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La clindamicina no se une a la subunidad 30S, se une a la 50S.",
+                    "No es este el mecanismo descrito para la clindamicina en este contexto.",
+                    "Se une a la subunidad 50S e inhibe la síntesis proteica, el mecanismo característico de la clindamicina — es la respuesta correcta.",
+                    "Esto describe el mecanismo de la vancomicina (unión al nucleótido de Park), no el de la clindamicina."
+                ],
+                "fantasma": [
+                    "Se pega a la otra subunidad, la 50S, no esta.",
+                    "Ese no es el mecanismo descrito para este fármaco.",
+                    "¡Esta! Se pega a esta subunidad para frenar la fábrica de proteínas.",
+                    "Eso es de la vancomicina, no de este fármaco."
+                ],
+                "gato": [
+                    "Fijate: se pega a la 50S, no a la 30S.",
+                    "Dato curioso: ese no es el mecanismo descrito aquí.",
+                    "¡Ronroneo de aprobación! Subunidad 50S bloqueada: el mecanismo de la clindamicina.",
+                    "Miau, eso es de la vancomicina."
+                ]
+            }
         },
         {
             "numero": 855,
@@ -39883,7 +40163,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La nefrotoxicidad no es un efecto adverso característico de la clindamicina.",
+                    "Las convulsiones no son un efecto adverso característico de la clindamicina.",
+                    "La prolongación del QT no es un efecto adverso característico de la clindamicina; es más de macrólidos/quinolonas.",
+                    "La diarrea asociada a antibióticos por C. difficile es el efecto adverso más característico de la clindamicina, un riesgo clásico y muy citado — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso no es lo característico de este fármaco.",
+                    "Eso no es lo característico de este fármaco.",
+                    "Eso es más de otras familias, no de este fármaco.",
+                    "¡Esta! El riesgo clásico y más famoso de este fármaco."
+                ],
+                "gato": [
+                    "Fijate: eso no es lo característico de este fármaco.",
+                    "Dato curioso: eso no es lo característico de este fármaco.",
+                    "Miau, eso es más de otras familias.",
+                    "¡Ronroneo de aprobación! Diarrea por C. difficile: el riesgo más característico y citado de la clindamicina."
+                ]
+            }
         },
         {
             "numero": 856,
@@ -39910,7 +40210,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es de elección en infecciones por anaerobios gram positivos, uno de sus usos clásicos distintivos — es la respuesta correcta.",
+                    "La clindamicina no actúa inhibiendo la ADN girasa, ese es el mecanismo de las quinolonas.",
+                    "La clindamicina tiene buena biodisponibilidad oral, no se limita únicamente a la vía IV.",
+                    "No es este el efecto adverso característico establecido de la clindamicina."
+                ],
+                "fantasma": [
+                    "¡Esta! Su terreno clásico contra bacterias sin oxígeno y positivas.",
+                    "Eso es de las quinolonas, no de este fármaco.",
+                    "Al revés, se toma bien por boca también.",
+                    "Ese no es el efecto adverso característico de este fármaco."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Anaerobios gram positivos: el uso clásico de la clindamicina.",
+                    "Fijate: eso es de las quinolonas.",
+                    "Dato curioso: al revés, se toma bien por boca también.",
+                    "Miau, ese no es el efecto adverso característico aquí."
+                ]
+            }
         },
         {
             "numero": 857,
@@ -39937,7 +40257,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El mareo no es el efecto secundario característico destacado de la clindamicina.",
+                    "La equimosis no es el efecto secundario característico destacado de la clindamicina.",
+                    "La dificultad auditiva es más propia de los aminoglucósidos, no de la clindamicina.",
+                    "La diarrea es el efecto secundario característico y más citado de la clindamicina — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso no es lo destacado con este fármaco.",
+                    "Eso tampoco es lo destacado con este fármaco.",
+                    "Eso es más de los aminoglucósidos, no de este.",
+                    "¡Esta! El intestino es quien más sufre con este fármaco."
+                ],
+                "gato": [
+                    "Fijate: eso no es lo destacado con este fármaco.",
+                    "Dato curioso: eso tampoco es lo destacado con este fármaco.",
+                    "Miau, eso es más de los aminoglucósidos.",
+                    "¡Ronroneo de aprobación! Diarrea: el efecto secundario más citado de la clindamicina."
+                ]
+            }
         },
         {
             "numero": 858,
@@ -39964,7 +40304,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: la clindamicina es activa sobre bacilos gram POSITIVOS, no negativos.",
+                    "Es activa sobre bacilos gram positivos y anaerobios, su espectro característico — es la respuesta correcta.",
+                    "Los enterococos son en general RESISTENTES a la clindamicina, no todos sensibles.",
+                    "Es al revés: la clindamicina tiene ALTA unión a proteínas (~90%), no baja."
+                ],
+                "fantasma": [
+                    "Al revés, es sobre los positivos que actúa.",
+                    "¡Esta! Positivos y sin oxígeno, su terreno característico.",
+                    "Al revés, esta bacteria en general se le escapa.",
+                    "Al revés, se pega mucho a las proteínas, no poco."
+                ],
+                "gato": [
+                    "Fijate: al revés, es sobre los positivos que actúa.",
+                    "¡Ronroneo de aprobación! Gram positivos y anaerobios: el espectro característico de la clindamicina.",
+                    "Dato curioso: al revés, esta bacteria se le escapa en general.",
+                    "Miau, al revés, se pega mucho a las proteínas."
+                ]
+            }
         },
         {
             "numero": 859,
@@ -39991,7 +40351,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La clindamicina es en general bacteriostática, no bactericida de amplio espectro.",
+                    "La clindamicina NO cubre C. difficile; de hecho, es un factor de riesgo clásico para esta infección al alterar la flora.",
+                    "Actúa sobre la subunidad 50S, su mecanismo característico — es la respuesta correcta.",
+                    "La lista incluye candida, pero la clindamicina no tiene actividad antifúngica alguna, lo que hace falsa esta combinación."
+                ],
+                "fantasma": [
+                    "Frena más que mata, y no es de espectro tan ancho.",
+                    "Al revés, es un riesgo para esta infección, no la cubre.",
+                    "¡Esta! Se pega a esta subunidad para frenar la fábrica de proteínas.",
+                    "Esa lista incluye a un hongo que este fármaco ni toca."
+                ],
+                "gato": [
+                    "Fijate: frena más que mata, y no es de espectro tan ancho.",
+                    "Dato curioso: al revés, es un riesgo para esta infección.",
+                    "¡Ronroneo de aprobación! Subunidad 50S: el mecanismo característico de la clindamicina.",
+                    "Miau, esa lista incluye a un hongo que este fármaco ni toca."
+                ]
+            }
         },
         {
             "numero": 860,
@@ -40018,7 +40398,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La clindamicina no inhibe la pared bacteriana ni se usa para gram negativos aerobios.",
+                    "La clindamicina no es un nitroimidazol; ese mecanismo de radicales libres es del metronidazol.",
+                    "La clindamicina no es un macrólido ni actúa a nivel 30S; es una lincosamida que actúa en la 50S.",
+                    "Es una lincosamida que inhibe la síntesis proteica a nivel 50S, utilizada para gérmenes gram positivos, la descripción precisa de la clindamicina — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ni el mecanismo ni el blanco de bacterias son estos.",
+                    "Ese mecanismo es del metronidazol, no de este fármaco.",
+                    "No es de esa familia ni de esa subunidad.",
+                    "¡Esta! Lincosamida, subunidad 50S, terreno de los positivos: la descripción correcta."
+                ],
+                "gato": [
+                    "Fijate: ni el mecanismo ni el blanco son estos.",
+                    "Dato curioso: ese mecanismo es del metronidazol.",
+                    "Miau, no es de esa familia ni de esa subunidad.",
+                    "¡Ronroneo de aprobación! Lincosamida + 50S + gram positivos: la descripción correcta de la clindamicina."
+                ]
+            }
         },
         {
             "numero": 861,
