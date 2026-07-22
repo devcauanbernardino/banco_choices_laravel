@@ -27654,7 +27654,27 @@
             "Miconazol",
             "Econazol",
             "Itraconazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O clotrimazol é de uso tópico, não tem essa interação sistêmica relevante.",
+                "O miconazol é principalmente de uso tópico/vaginal, sem essa interação oral relevante.",
+                "O econazol é de uso tópico, sem essa interação sistêmica relevante.",
+                "O itraconazol precisa de um meio ácido gástrico para se absorver bem, por isso os antiácidos diminuem sua concentração plasmática — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse é de uso na pele, não tem esse problema sistêmico.",
+                "Esse é mais de uso local, sem essa interação particular.",
+                "Esse é de uso local, sem esse problema.",
+                "Essa aí! Precisa do ácido do estômago para se absorver, os antiácidos tiram isso dele."
+            ],
+            "gato": [
+                "Fijate: esse é de uso na pele, sem esse problema.",
+                "Dado curioso: esse é mais de uso local.",
+                "Miau, esse é de uso local, sem esse problema.",
+                "Ronronado de aprovação! Itraconazol e antiácidos: a interação que baixa sua absorção."
+            ]
+        }
     },
     {
         "pergunta": "Entre os compostos azólicos, o:",
@@ -27664,7 +27684,27 @@
             "O itraconazol liga-se menos de 10% às proteínas plasmáticas.",
             "O cetoconazol é um potente indutor de enzimas hepáticas.",
             "O cetoconazol induz hepatotoxicidade e inibe a síntese de esteróides"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: o itraconazol SIM interfere com o CYP3A4, é um inibidor significativo.",
+                "É ao contrário: o itraconazol tem uma ligação a proteínas plasmáticas MUITO ALTA (~99%), não menor que 10%.",
+                "É ao contrário: o cetoconazol é um potente INIBIDOR enzimático, não indutor.",
+                "O cetoconazol induz hepatotoxicidade e inibe a síntese de esteroides, ambos efeitos bem estabelecidos desse fármaco — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, sim freia essa via enzimática, e bastante.",
+                "Ao contrário, se gruda muitíssimo às proteínas, não pouco.",
+                "Ao contrário, freia essas enzimas, não as acelera.",
+                "Essa aí! Prejudica o fígado e freia a fabricação de hormônios esteroides."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim freia essa via, e bastante.",
+                "Dado curioso: ao contrário, se gruda muitíssimo às proteínas.",
+                "Miau, ao contrário, freia essas enzimas, não as acelera.",
+                "Ronronado de aprovação! Hepatotoxicidade + inibição da esteroidogênese: o perfil do cetoconazol."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação dos azóis?",
@@ -27674,7 +27714,27 @@
             "Eles bloqueiam os receptores",
             "Eles inibem a 14alfa esterol desmetilase",
             "Eles geram poros na membrana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os azóis não inibem a esqualeno epoxidase, esse é o mecanismo da terbinafina.",
+                "Não é esse o mecanismo específico dos azóis, é vago demais.",
+                "Inibem a 14-alfa esterol desmetilase, o mecanismo característico dos azóis — é a resposta correta.",
+                "Os azóis não geram poros na membrana, esse é o mecanismo dos poliênicos."
+            ],
+            "fantasma": [
+                "Isso é da terbinafina, não dessa família.",
+                "Essa descrição é vaga demais para esse mecanismo.",
+                "Essa aí! Freiam essa enzima chave na fabricação do ergosterol.",
+                "Isso é dos poliênicos, não dessa família."
+            ],
+            "gato": [
+                "Fijate: isso é da terbinafina.",
+                "Dado curioso: essa descrição é vaga demais.",
+                "Ronronado de aprovação! 14-alfa esterol desmetilase: a enzima bloqueada pelos azóis.",
+                "Miau, isso é dos poliênicos."
+            ]
+        }
     },
     {
         "pergunta": "Os azóis:",
@@ -27684,7 +27744,27 @@
             "Eles são administrados apenas topicamente devido à sua alta toxicidade.",
             "Eles inibem o CYP450 e a enzima alfa esterol desmetilase",
             "Eles inibem a enzima esqualeno peroxidase"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o mecanismo dos azóis; isso é mais próprio de fármacos antimitóticos, não relacionado.",
+                "Muitos azóis SIM se administram por via sistêmica (oral/IV), não se limitam à via tópica.",
+                "Inibem o CYP450 e a enzima alfa esterol desmetilase, ambas características mecanísticas reais dos azóis — é a resposta correta.",
+                "Não existe essa enzima com esse nome exato; o alvo real é a esqualeno EPOXIDASE (da terbinafina), não dos azóis."
+            ],
+            "fantasma": [
+                "Isso não tem relação com esse mecanismo.",
+                "Ao contrário, muitos se dão por boca ou veia sem problema.",
+                "Essa aí! Freiam tanto essa via geral quanto essa enzima fúngica específica.",
+                "Essa enzima com esse nome não existe assim, e não é dessa família."
+            ],
+            "gato": [
+                "Fijate: isso não tem relação com esse mecanismo.",
+                "Dado curioso: ao contrário, muitos se dão por boca ou veia.",
+                "Ronronado de aprovação! CYP450 + alfa esterol desmetilase: o duplo mecanismo real dos azóis.",
+                "Miau, essa enzima não existe assim, e não é dessa família."
+            ]
+        }
     },
     {
         "pergunta": "Selecione o CORRETO em relação aos azóis:",
@@ -27694,7 +27774,27 @@
             "O fluconazol é eliminado pelos rins sem ser metabolizado.",
             "O cetoconazol não se liga às proteínas",
             "O voriconazol é eliminado pela saliva"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: o voriconazol SIM tem metabolismo hepático extenso (via CYP2C19 principalmente).",
+                "O fluconazol se elimina por via renal sem metabolizar, uma característica farmacocinética distintiva — é a resposta correta.",
+                "É ao contrário: o cetoconazol tem ALTA ligação a proteínas (~99%), não nenhuma.",
+                "Não está estabelecida a saliva como via de eliminação do voriconazol."
+            ],
+            "fantasma": [
+                "Ao contrário, sim passa bastante pelo fígado.",
+                "Essa aí! Sai limpo pelo rim, sem alterações.",
+                "Ao contrário, se gruda muitíssimo às proteínas.",
+                "Essa não é uma via de saída estabelecida para esse fármaco."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim passa bastante pelo fígado.",
+                "Ronronado de aprovação! Eliminação renal sem metabolizar: a característica distintiva do fluconazol.",
+                "Dado curioso: ao contrário, se gruda muitíssimo às proteínas.",
+                "Miau, essa não é uma via de saída estabelecida aqui."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente tratado com azol relata dor e ginecomastia. A que droga é atribuído?",
@@ -27704,7 +27804,27 @@
             "Itraconazol",
             "Cetoconazol",
             "Fluconazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o fármaco classicamente associado a esse efeito endócrino específico.",
+                "Não é esse o fármaco classicamente associado a esse efeito na magnitude destacada aqui.",
+                "O cetoconazol se associa classicamente à dor testicular e ginecomastia, por sua inibição da esteroidogênese — é a resposta correta.",
+                "Não é esse o fármaco classicamente associado a esse efeito na magnitude destacada aqui."
+            ],
+            "fantasma": [
+                "Esse não é o classicamente associado a esse efeito hormonal.",
+                "Esse tem bem menos esse efeito hormonal que o outro.",
+                "Essa aí! O clássico que freia os hormônios esteroides, com esses sintomas particulares.",
+                "Esse tem bem menos esse efeito hormonal que o outro."
+            ],
+            "gato": [
+                "Fijate: esse não é o classicamente associado a esse efeito.",
+                "Dado curioso: esse tem bem menos esse efeito hormonal.",
+                "Ronronado de aprovação! Cetoconazol: o clássico associado à ginecomastia por inibir a esteroidogênese.",
+                "Miau, esse tem bem menos esse efeito hormonal."
+            ]
+        }
     },
     {
         "pergunta": "Indique a resposta CORRETA em relação aos antifúngicos azólicos:",
@@ -27714,7 +27834,27 @@
             "Eles incluem dentro do espectro Candida spp, Cryptococcus neoformans, coccidioides immitis, Aspergillum, dermatófitos. Eles inibem várias formas de citocromo P450",
             "O cetoconazol e o fluconazol têm a capacidade de inibir a esteroidogênese e produzir EAs endocrinológicos.",
             "São medicamentos seguros para administração durante a gravidez, categoria B da FDA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: os azóis SIM inibem o citocromo P450, não o deixam intacto.",
+                "O espectro descrito está correto, e SIM inibem diversas formas do citocromo P450, ambas afirmações verdadeiras — é a resposta correta.",
+                "Não é tão preciso; o cetoconazol tem muito mais esse efeito que o fluconazol, não equiparáveis.",
+                "Os azóis NÃO são em geral considerados seguros/categoria B na gravidez; vários têm preocupações teratogênicas."
+            ],
+            "fantasma": [
+                "Ao contrário, sim freiam essa via enzimática.",
+                "Essa aí! O espectro amplo mais a inibição real dessa via enzimática.",
+                "Não é tão parelho entre esses dois fármacos.",
+                "Ao contrário, não são tão seguros na gravidez em geral."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim freiam essa via enzimática.",
+                "Ronronado de aprovação! Espectro amplo + inibição do CYP450: a descrição correta dos azóis.",
+                "Dado curioso: não é tão parelho entre esses dois fármacos.",
+                "Miau, ao contrário, não são tão seguros na gravidez."
+            ]
+        }
     },
     {
         "pergunta": "Indique a resposta CORRETA em relação aos antifúngicos azólicos:",
@@ -27724,7 +27864,27 @@
             "Eles não inibem o citocromo P450",
             "O cetoconazol e o fluconazol têm a capacidade de inibir a esteroidogênese e produzir efeitos endocrinológicos adversos.",
             "São medicamentos seguros para administração durante a gravidez, categoria B da FDA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O espectro descrito (Candida, Cryptococcus, Coccidioides, Aspergillus, dermatófitos) está correto para os azóis — é a resposta correta.",
+                "É ao contrário: os azóis SIM inibem o citocromo P450.",
+                "Não é tão preciso equiparar esses dois fármacos nesse efeito; o cetoconazol o tem muito mais marcado.",
+                "Os azóis NÃO são em geral considerados seguros/categoria B na gravidez."
+            ],
+            "fantasma": [
+                "Essa aí! O espectro amplo real dessa família de antifúngicos.",
+                "Ao contrário, sim freiam essa via enzimática.",
+                "Não é tão parelho entre esses dois fármacos.",
+                "Ao contrário, não são tão seguros na gravidez em geral."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O espectro amplo real dos azóis: a resposta correta.",
+                "Fijate: ao contrário, sim freiam essa via enzimática.",
+                "Dado curioso: não é tão parelho entre esses dois fármacos.",
+                "Miau, ao contrário, não são tão seguros na gravidez."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes é um imidazol?",
@@ -27734,7 +27894,27 @@
             "Itraconazol",
             "Fluconazol",
             "Cetoconazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O voriconazol é um triazol, não um imidazol.",
+                "O itraconazol é um triazol, não um imidazol.",
+                "O fluconazol é um triazol, não um imidazol.",
+                "O cetoconazol é classicamente classificado como imidazol, diferente dos triazóis mais novos — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse é da outra subfamília, os triazóis.",
+                "Esse também é um triazol, não um imidazol.",
+                "Esse também é um triazol, não um imidazol.",
+                "Essa aí! O clássico imidazol entre esses quatro."
+            ],
+            "gato": [
+                "Fijate: esse é da outra subfamília, os triazóis.",
+                "Dado curioso: esse também é um triazol.",
+                "Miau, esse também é um triazol.",
+                "Ronronado de aprovação! Cetoconazol: o imidazol clássico entre os azóis."
+            ]
+        }
     },
     {
         "pergunta": "Entre os antifúngicos imidazol encontramos:",
@@ -27744,7 +27924,27 @@
             "Itraconazol, voriconazol, metronidazol e cetoconazol",
             "Itraconazol, Fluconazol, Metronidazol e Cetoconazol",
             "Clotrimazol, Miconazol, Cetoconazol e Sulconazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa lista mistura triazóis (fluconazol, voriconazol) com um nitroimidazol não relacionado (metronidazol), não são todos imidazóis.",
+                "Essa lista mistura triazóis (itraconazol, voriconazol) com um nitroimidazol não relacionado (metronidazol).",
+                "Essa lista mistura triazóis (itraconazol, fluconazol) com um nitroimidazol não relacionado (metronidazol).",
+                "Clotrimazol, miconazol, cetoconazol e sulconazol são os imidazóis clássicos, corretamente agrupados — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa lista mistura famílias diferentes que não deveriam ir juntas.",
+                "Essa lista também mistura famílias diferentes.",
+                "Essa lista também mistura famílias diferentes.",
+                "Essa aí! O grupo real dos imidazóis, bem agrupado."
+            ],
+            "gato": [
+                "Fijate: essa lista mistura famílias diferentes.",
+                "Dado curioso: essa lista também mistura famílias diferentes.",
+                "Miau, essa lista também mistura famílias diferentes.",
+                "Ronronado de aprovação! Clotrimazol + miconazol + cetoconazol + sulconazol: o grupo real dos imidazóis."
+            ]
+        }
     },
     {
         "pergunta": "É clotrimazol:",
@@ -27754,7 +27954,27 @@
             "Um antifúngico útil para uso cutâneo, vaginal e oral",
             "Uma sulfonamida usada em infecções gram-positivas",
             "Um antiviral útil para herpes zoster"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É um antimicótico azólico útil para uso cutâneo e vaginal, sua classificação e uso corretos — é a resposta correta.",
+                "Não se estabelece seu uso oral sistêmico como o de outros azóis; se limita mais ao tópico/vaginal.",
+                "Não é uma sulfamida, é um antimicótico azólico.",
+                "Não é um antiviral, é um antimicótico."
+            ],
+            "fantasma": [
+                "Essa aí! Serve na pele e também em uso vaginal.",
+                "Não se usa assim por boca de forma sistêmica como outros da sua família.",
+                "Não é dessa família de antibióticos.",
+                "Não é dessa classe de fármacos contra vírus."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Uso cutâneo e vaginal: a classificação correta do clotrimazol.",
+                "Fijate: não se usa assim de forma sistêmica.",
+                "Dado curioso: não é dessa família de antibióticos.",
+                "Miau, não é dessa classe de antivirais."
+            ]
+        }
     },
     {
         "pergunta": "Quais dos seguintes efeitos adversos são característicos do Fluconazol?",
@@ -27764,7 +27984,27 @@
             "Hepatotoxicidade e toxicidade da medula óssea",
             "Hepatotoxicidade e alopecia",
             "Prolongamento do intervalo QT e toxicidade da medula óssea"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade não é um efeito adverso característico do fluconazol.",
+                "A toxicidade medular não é um efeito adverso característico estabelecido do fluconazol.",
+                "Hepatotoxicidade e alopecia são os efeitos adversos característicos do fluconazol — é a resposta correta.",
+                "A prolongação do QT e a toxicidade medular não são a combinação característica destacada para o fluconazol neste banco."
+            ],
+            "fantasma": [
+                "Isso não é o característico desse fármaco.",
+                "Isso não está estabelecido para esse fármaco.",
+                "Essa aí! O fígado sofre, e o cabelo também com esse fármaco.",
+                "Essa combinação não é a destacada para esse fármaco aqui."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico desse fármaco.",
+                "Dado curioso: isso não está estabelecido para esse fármaco.",
+                "Ronronado de aprovação! Hepatotoxicidade + alopecia: o perfil característico do fluconazol.",
+                "Miau, essa combinação não é a destacada aqui."
+            ]
+        }
     },
     {
         "pergunta": "Miconazol é:",
@@ -27774,7 +28014,27 @@
             "Um antifúngico útil para uso cutâneo, vaginal e oral",
             "Uma sulfonamida usada em infecções gram-positivas",
             "Um antifúngico azólico útil para uso cutâneo e vaginal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é um antiviral, é um antimicótico.",
+                "Não se estabelece seu uso oral sistêmico como o de outros azóis.",
+                "Não é uma sulfamida, é um antimicótico azólico.",
+                "É um antimicótico azólico útil para uso cutâneo e vaginal, sua classificação correta — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não é dessa classe de fármacos contra vírus.",
+                "Não se usa assim de forma sistêmica como outros da sua família.",
+                "Não é dessa família de antibióticos.",
+                "Essa aí! Serve na pele e também em uso vaginal."
+            ],
+            "gato": [
+                "Fijate: não é dessa classe de antivirais.",
+                "Dado curioso: não se usa assim de forma sistêmica.",
+                "Miau, não é dessa família de antibióticos.",
+                "Ronronado de aprovação! Uso cutâneo e vaginal: a classificação correta do miconazol."
+            ]
+        }
     },
     {
         "pergunta": "Voriconazol:",
@@ -27784,7 +28044,27 @@
             "Ao contrário do Fluconazol, não causa hepatotoxicidade",
             "Devido à sua alta toxicidade, só pode ser administrado topicamente.",
             "É um antifúngico azólico que inibe fortemente o CYP450 3A4."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O voriconazol não gera poros na membrana, esse é o mecanismo dos poliênicos.",
+                "É ao contrário: o voriconazol SIM gera hepatotoxicidade, compartilha esse risco com o fluconazol.",
+                "O voriconazol é um antimicótico sistêmico (oral/IV), não se limita à via tópica.",
+                "É um antimicótico azólico que inibe fortemente o CYP450 3A4, uma característica farmacocinética destacada — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é dos poliênicos, não desse fármaco.",
+                "Ao contrário, sim pode prejudicar o fígado, como sua prima.",
+                "Esse vai pela veia ou boca, não só pela pele.",
+                "Essa aí! Freia com força essa via enzimática compartilhada por muitos fármacos."
+            ],
+            "gato": [
+                "Fijate: isso é dos poliênicos.",
+                "Dado curioso: ao contrário, sim pode prejudicar o fígado.",
+                "Miau, esse vai pela veia ou boca, não só pela pele.",
+                "Ronronado de aprovação! Forte inibição do CYP3A4: a característica do voriconazol."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com onicomicose polimedicado em tratamento com itraconazol oral, dadas as suas características farmacocinéticas, quais controles devem ser realizados durante o tratamento?",
@@ -27794,7 +28074,27 @@
             "Medição frequente de albumina",
             "Verificação frequente de interações medicamentosas",
             "Medição frequente dos níveis de glicoproteína ácida alfa-1"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é essa a preocupação principal estabelecida com esse fármaco em particular.",
+                "Não é essa a preocupação principal estabelecida com esse fármaco.",
+                "O checagem frequente de interações farmacológicas é chave, dado que o itraconazol é um potente inibidor do CYP450 em um paciente polimedicado — é a resposta correta.",
+                "Não é essa a prática de monitoramento estabelecida para esse fármaco."
+            ],
+            "fantasma": [
+                "Essa não é a preocupação principal com esse fármaco.",
+                "Essa também não é a preocupação principal aqui.",
+                "Essa aí! Esse fármaco freia muitas outras drogas, é preciso vigiar as combinações.",
+                "Essa não é a prática estabelecida para esse fármaco."
+            ],
+            "gato": [
+                "Fijate: essa não é a preocupação principal aqui.",
+                "Dado curioso: essa também não é a preocupação principal.",
+                "Ronronado de aprovação! Interações farmacológicas: a vigilância chave com itraconazol em polimedicados.",
+                "Miau, essa não é a prática estabelecida aqui."
+            ]
+        }
     },
     {
         "pergunta": "Selecione o CORRETO em relação aos antifúngicos de polieno:",
@@ -27804,7 +28104,27 @@
             "Diminui a síntese de componentes da membrana",
             "É útil contra micoses sistêmicas endêmicas.",
             "Tem baixa avidez pela membrana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se destaca assim como fungicida especificamente em doses baixas; seu efeito depende de doses adequadas.",
+                "É ao contrário: os poliênicos se LIGAM ao ergosterol já existente, não diminuem sua síntese (isso é dos azóis).",
+                "É útil contra as micoses sistêmicas endêmicas, seu uso clássico estabelecido — é a resposta correta.",
+                "É ao contrário: os poliênicos têm ALTA avidez pela membrana (pelo ergosterol), não baixa."
+            ],
+            "fantasma": [
+                "Não é tão simples, depende de a dose ser adequada.",
+                "Ao contrário, se gruda ao ergosterol que já existe, não freia sua fabricação.",
+                "Essa aí! O clássico contra as micoses sistêmicas graves.",
+                "Ao contrário, se gruda forte à membrana, não fraco."
+            ],
+            "gato": [
+                "Fijate: não é tão simples, depende da dose.",
+                "Dado curioso: ao contrário, se gruda ao ergosterol existente.",
+                "Ronronado de aprovação! Micoses sistêmicas endêmicas: o uso clássico dos poliênicos.",
+                "Miau, ao contrário, se gruda forte à membrana."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual das seguintes interações é CORRETA para polienos:",
@@ -27814,7 +28134,27 @@
             "Nefrotoxicidade com aminoglicosídeos",
             "Nefrotoxicidade com Digoxina",
             "Hepatotoxicidade com heparina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é essa a interação clássica estabelecida dos poliênicos.",
+                "A nefrotoxicidade com os aminoglicosídeos é a interação clássica e estabelecida dos poliênicos (ambos nefrotóxicos) — é a resposta correta.",
+                "Não é essa a interação clássica estabelecida dos poliênicos.",
+                "Não é essa a interação clássica estabelecida dos poliênicos."
+            ],
+            "fantasma": [
+                "Essa não é a interação clássica dessa família.",
+                "Essa aí! Dois fármacos que prejudicam o rim juntos, a interação clássica.",
+                "Essa não é a interação clássica dessa família.",
+                "Essa não é a interação clássica dessa família."
+            ],
+            "gato": [
+                "Fijate: essa não é a interação clássica dessa família.",
+                "Ronronado de aprovação! Nefrotoxicidade com aminoglicosídeos: a interação clássica dos poliênicos.",
+                "Dado curioso: essa não é a interação clássica dessa família.",
+                "Miau, essa não é a interação clássica dessa família."
+            ]
+        }
     },
     {
         "pergunta": "A anfotericina causa eventos adversos frequentes, como:",
@@ -27824,7 +28164,27 @@
             "Acidose hiperclorêmica, anemia hipocrômica, febre e hipercalemia",
             "Acidose tubular renal, anemia hipocrômica, nefrotoxicidade e pneumonite intersticial",
             "Acidose tubular renal, nefrite intersticial, febre e hipercalemia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Acidose tubular renal, anemia normocítica normocrômica, febre e hipercalúria compõem o perfil clássico de efeitos adversos da anfotericina — é a resposta correta.",
+                "A anemia real é normocrômica (não hipocrômica), e o efeito sobre o potássio é HIPERcalúria (perda urinária), levando à hipocalemia, não hipercalemia.",
+                "O tipo de anemia está mal descrito, e a pneumonite intersticial não é característica desse fármaco.",
+                "Falta a anemia característica nessa combinação, e a nefrite intersticial não descreve com precisão o mecanismo renal direto desse fármaco."
+            ],
+            "fantasma": [
+                "Essa aí! O combo clássico: rim, sangue, febre e perda de potássio pela urina.",
+                "Esse tipo de anemia está errado, e o potássio vai para o outro lado.",
+                "Esse tipo de anemia está errado, e esse problema pulmonar não é desse fármaco.",
+                "Falta a anemia nessa combinação, e essa descrição renal não é tão precisa."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Acidose tubular + anemia normocrômica + febre + hipercalúria: o perfil clássico da anfotericina.",
+                "Fijate: esse tipo de anemia está errado, e o potássio vai ao contrário.",
+                "Dado curioso: esse tipo de anemia está errado, e esse problema pulmonar não é desse fármaco.",
+                "Miau, falta a anemia nessa combinação."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação da anfotericina B?",
@@ -27834,7 +28194,27 @@
             "Liga-se ao ergosterol, alterando a permeabilidade da membrana celular do fungo",
             "Inibe a síntese de proteínas ligando-se à subunidade 50S",
             "Inibe a replicação do DNA fúngico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A anfotericina B não inibe a síntese da parede celular, atua sobre a membrana.",
+                "Se liga ao ergosterol, alterando a permeabilidade da membrana celular do fungo, seu mecanismo característico — é a resposta correta.",
+                "Não inibe a síntese proteica nem se liga à subunidade 50S, isso é um mecanismo bacteriano não relacionado.",
+                "Não inibe a replicação do DNA fúngico, esse não é seu mecanismo."
+            ],
+            "fantasma": [
+                "Esse não é seu alvo, é a membrana, não a parede.",
+                "Essa aí! Se gruda no componente chave da membrana e a desestabiliza.",
+                "Isso é de outra família de antibióticos, não relacionada.",
+                "Isso não é o que esse fármaco faz."
+            ],
+            "gato": [
+                "Fijate: esse não é seu alvo, é a membrana.",
+                "Ronronado de aprovação! Ligação ao ergosterol: o mecanismo característico da anfotericina B.",
+                "Dado curioso: isso é de outra família não relacionada.",
+                "Miau, isso não é o que esse fármaco faz."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação da Anfotericina B?",
@@ -27844,7 +28224,27 @@
             "Inibe a produção de ergosterol da membrana fúngica",
             "Inibe a entrada de cálcio na membrana fúngica",
             "Estimula a destruição por mecanismos de fagocitose e autofagia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Produz poros na membrana do fungo, o resultado final de sua ligação ao ergosterol — é a resposta correta.",
+                "Não inibe a produção de ergosterol; isso é o mecanismo dos azóis. A anfotericina se liga ao ergosterol já existente.",
+                "Não inibe a entrada de cálcio, esse não é seu mecanismo.",
+                "Não atua estimulando mecanismos de fagocitose/autofagia, atua diretamente sobre a membrana fúngica."
+            ],
+            "fantasma": [
+                "Essa aí! Abre buracos na membrana do fungo, deixando sair seu conteúdo.",
+                "Isso é dos azóis, não desse fármaco.",
+                "Isso não é o que esse fármaco faz.",
+                "Não atua assim, é direto sobre a membrana."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Poros na membrana fúngica: o resultado do mecanismo da anfotericina B.",
+                "Fijate: isso é dos azóis.",
+                "Dado curioso: isso não é o que esse fármaco faz.",
+                "Miau, não atua assim, é direto sobre a membrana."
+            ]
+        }
     },
     {
         "pergunta": "Qual o principal efeito adverso associado ao uso da anfotericina B?",
