@@ -40445,7 +40445,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La clindamicina se usa para infecciones por Streptococo, dentro de su espectro gram positivo — es la respuesta correcta.",
+                    "La clindamicina no cubre gram negativos aerobios, fuera de su espectro característico.",
+                    "La E. coli es gram negativa, fuera del espectro de la clindamicina.",
+                    "La clindamicina no se administra exclusivamente por vía oral; también tiene formulación IV."
+                ],
+                "fantasma": [
+                    "¡Esta! Dentro de su terreno de bacterias positivas.",
+                    "No llega a estas bacterias, fuera de su terreno.",
+                    "Esta bacteria se le escapa, es negativa.",
+                    "No es solo por boca, también va por vena."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Streptococo: dentro del espectro gram positivo de la clindamicina.",
+                    "Fijate: no llega a estas bacterias, fuera de su terreno.",
+                    "Dato curioso: esta bacteria se le escapa, es negativa.",
+                    "Miau, no es solo por boca, también va por vena."
+                ]
+            }
         },
         {
             "numero": 862,
@@ -40472,7 +40492,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Se une a la proteína S5 de la subunidad 30S, interfiriendo con la elongación, su mecanismo característico — es la respuesta correcta.",
+                    "Es al revés: la espectinomicina actúa clásicamente sobre gram negativas (históricamente usada contra gonorrea), no exclusivamente positivas.",
+                    "Es al revés: se administra por vía IM (parenteral), no oral, y se elimina por vía renal.",
+                    "No es esta la característica clásicamente destacada; de hecho se ha usado en el embarazo en ciertos contextos."
+                ],
+                "fantasma": [
+                    "¡Esta! Se pega a esta proteína específica y frena la continuación de la fábrica de proteínas.",
+                    "Al revés, su uso clásico es contra bacterias negativas.",
+                    "Al revés, va por el músculo, no por boca, y sale por el riñón.",
+                    "Esa no es la característica destacada de este fármaco."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Proteína S5 en la 30S: el mecanismo característico de la espectinomicina.",
+                    "Fijate: al revés, su uso clásico es contra bacterias negativas.",
+                    "Dato curioso: al revés, va por el músculo, no por boca.",
+                    "Miau, esa no es la característica destacada aquí."
+                ]
+            }
         },
         {
             "numero": 863,
@@ -40499,7 +40539,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No todos inhiben la subunidad 30S; varios (clindamicina, macrólidos, cloranfenicol) actúan sobre la 50S.",
+                    "La clindamicina actúa sobre la subunidad 50S, su mecanismo característico — es la respuesta correcta.",
+                    "Es al revés: los aminoglucósidos actúan sobre la subunidad 30S, no la 50S.",
+                    "La colitis ulcerosa SÍ representa una precaución relevante con clindamicina, por el mayor riesgo/severidad de colitis por C. difficile en este contexto."
+                ],
+                "fantasma": [
+                    "No todos van a esa subunidad, varios van a la otra.",
+                    "¡Esta! Esta droga en particular va a la subunidad grande.",
+                    "Al revés, estos van a la subunidad chica, la 30S.",
+                    "Al revés, esta enfermedad sí es una precaución relevante con este fármaco."
+                ],
+                "gato": [
+                    "Fijate: no todos van a esa subunidad.",
+                    "¡Ronroneo de aprobación! Clindamicina en la 50S: la respuesta correcta.",
+                    "Dato curioso: al revés, estos van a la 30S.",
+                    "Miau, al revés, esta enfermedad sí es una precaución relevante."
+                ]
+            }
         },
         {
             "numero": 864,
@@ -40526,7 +40586,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Se reserva para gérmenes resistentes a otras drogas, su rol clínico establecido para preservar su eficacia — es la respuesta correcta.",
+                    "El linezolid no se une a la subunidad 30S, se une a la 50S.",
+                    "El linezolid no tiene gran actividad contra gram negativo; su espectro es principalmente gram positivo.",
+                    "El linezolid SÍ cubre SAMR y cepas resistentes similares, esa es justamente su utilidad clínica principal."
+                ],
+                "fantasma": [
+                    "¡Esta! Se guarda para las bacterias más difíciles de tratar.",
+                    "Se pega a la otra subunidad, la 50S, no esta.",
+                    "No es fuerte contra estas bacterias, su fuerte es otro.",
+                    "Al revés, sí cubre a estas bacterias resistentes, es su punto fuerte."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Reservado para resistentes: el rol clínico del linezolid.",
+                    "Fijate: se pega a la 50S, no a la 30S.",
+                    "Dato curioso: no es fuerte contra estas bacterias.",
+                    "Miau, al revés, sí cubre a estas bacterias resistentes."
+                ]
+            }
         },
         {
             "numero": 865,
@@ -40553,7 +40633,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Presenta actividad contra varias cepas gram positivas resistentes, su utilidad clínica principal — es la respuesta correcta.",
+                    "Es al revés: se une a la 50S, no a la 30S, y su mecanismo no es exactamente bloquear la fijación del aminoacil-ARNt (eso es más de las tetraciclinas).",
+                    "Es al revés: el linezolid INHIBE (no estimula) la MAO, y esa inhibición es la que genera el riesgo de síndrome serotoninérgico.",
+                    "No es este el efecto adverso característico destacado del linezolid en este contexto."
+                ],
+                "fantasma": [
+                    "¡Esta! Su punto fuerte contra estas bacterias resistentes.",
+                    "Al revés, es la otra subunidad, y ese mecanismo es de otra familia.",
+                    "Al revés, frena esa enzima, no la acelera.",
+                    "Ese no es el efecto destacado de este fármaco aquí."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Actividad contra cepas gram positivas resistentes: el punto fuerte del linezolid.",
+                    "Fijate: al revés, es la otra subunidad.",
+                    "Dato curioso: al revés, frena esa enzima, no la acelera.",
+                    "Miau, ese no es el efecto destacado aquí."
+                ]
+            }
         },
         {
             "numero": 866,
@@ -40580,7 +40680,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es útil para infecciones por Enterococo resistente (incluido VRE), uno de sus usos clínicos clave — es la respuesta correcta.",
+                    "No se usa para gérmenes comunes extrahospitalarios; se reserva para infecciones resistentes/serias.",
+                    "Es al revés: el linezolid tiene EXCELENTE biodisponibilidad oral, no baja, y se administra comúnmente por esa vía.",
+                    "No es esta una indicación establecida del linezolid; el micoplasma se trata con otros fármacos."
+                ],
+                "fantasma": [
+                    "¡Esta! Cubre a esta bacteria resistente clásica.",
+                    "No es para esto, se guarda para casos más serios.",
+                    "Al revés, se toma muy bien por boca.",
+                    "Esa infección no es tarea de este fármaco."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Enterococo resistente: el uso clínico clave del linezolid.",
+                    "Fijate: no es para esto, se guarda para casos serios.",
+                    "Dato curioso: al revés, se toma muy bien por boca.",
+                    "Miau, esa infección no es tarea de este fármaco."
+                ]
+            }
         },
         {
             "numero": 867,
@@ -40607,7 +40727,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El linezolid no es una tetraciclina, es un oxazolidinona.",
+                    "El linezolid no es una sulfamida.",
+                    "El linezolid no inhibe la pared bacteriana ni se usa para Pseudomonas; inhibe la síntesis proteica y no cubre gram negativos.",
+                    "Es un inhibidor de la síntesis proteica utilizado para infecciones por gram positivos, incluido SAMR, la descripción precisa del linezolid — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No es de esa familia, es un oxazolidinona.",
+                    "Tampoco es de esa familia.",
+                    "Ni el mecanismo ni la bacteria son correctos aquí.",
+                    "¡Esta! Frena las proteínas, y cubre a los positivos, incluida la bacteria resistente."
+                ],
+                "gato": [
+                    "Fijate: no es de esa familia.",
+                    "Dato curioso: tampoco es de esa familia.",
+                    "Miau, ni el mecanismo ni la bacteria son correctos aquí.",
+                    "¡Ronroneo de aprobación! Inhibidor proteico contra gram positivos, incluido SAMR: la descripción correcta del linezolid."
+                ]
+            }
         },
         {
             "numero": 868,
@@ -40634,7 +40774,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es activo contra estafilococos resistentes a la meticilina, su uso clínico distintivo — es la respuesta correcta.",
+                    "El linezolid es generalmente bacteriostático, no bactericida.",
+                    "El linezolid no se une a las PBP, ese es el mecanismo de los beta-lactámicos.",
+                    "Es al revés: el linezolid tiene una unión a proteínas relativamente BAJA, no alta."
+                ],
+                "fantasma": [
+                    "¡Esta! Cubre a esta bacteria resistente clásica.",
+                    "Frena más que mata, en general.",
+                    "Eso es de los beta-lactámicos, no de este fármaco.",
+                    "Al revés, se pega poco a las proteínas."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! SAMR: el uso distintivo del linezolid.",
+                    "Fijate: frena más que mata, en general.",
+                    "Dato curioso: eso es de los beta-lactámicos.",
+                    "Miau, al revés, se pega poco a las proteínas."
+                ]
+            }
         },
         {
             "numero": 869,
@@ -40661,7 +40821,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Como efecto adverso no produce pancitopenia Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Como efecto adverso no produce pancitopenia Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta: impide la iniciación y translocación en la subunidad 50S.",
+                    "Esta afirmación es correcta: es activo contra Listeria monocytogenes.",
+                    "El linezolid SÍ puede producir pancitopenia (especialmente con uso prolongado), un efecto adverso reconocido — es la afirmación INCORRECTA, respuesta correcta según el feedback del banco.",
+                    "Esta afirmación es correcta: tiene eliminación renal tanto de la forma activa como de metabolitos inactivos."
+                ],
+                "fantasma": [
+                    "Eso es verdad, frena esa etapa en esa subunidad.",
+                    "Eso también es verdad, cubre a esta bacteria en particular.",
+                    "¡Esta! Al revés, sí puede afectar la sangre de esta manera, sobre todo con uso prolongado.",
+                    "Eso también es verdad, sale por el riñón de las dos formas."
+                ],
+                "gato": [
+                    "Fijate: eso es verdad, frena esa etapa.",
+                    "Dato curioso: eso también es verdad, cubre esta bacteria.",
+                    "¡Ronroneo de aprobación! Sí puede producir pancitopenia: la incorrecta de la lista.",
+                    "Miau, eso también es verdad, sale por el riñón de las dos formas."
+                ]
+            }
         },
         {
             "numero": 870,
@@ -40688,7 +40868,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El meropenem es bactericida, no bacteriostático, rompiendo esta combinación.",
+                    "La levofloxacina es bactericida (concentración-dependiente), no bacteriostática, rompiendo esta combinación.",
+                    "Clindamicina, ácido fusídico y etambutol son clásicamente bacteriostáticos — es la respuesta correcta.",
+                    "Tanto la levofloxacina como la vancomicina son bactericidas, no bacteriostáticas."
+                ],
+                "fantasma": [
+                    "Este mata bacterias, no solo las frena, rompe la combinación.",
+                    "Esta también mata bacterias, no encaja en el grupo.",
+                    "¡Esta! Los tres frenan, no matan directamente.",
+                    "Estas dos también matan bacterias, no encajan aquí."
+                ],
+                "gato": [
+                    "Fijate: este mata bacterias, rompe la combinación.",
+                    "Dato curioso: esta también mata bacterias.",
+                    "¡Ronroneo de aprobación! Clindamicina + ácido fusídico + etambutol: el trío bacteriostático correcto.",
+                    "Miau, estas dos también matan bacterias."
+                ]
+            }
         },
         {
             "numero": 871,
@@ -40715,7 +40915,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "otros_inhibidores_sintesis_proteinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La sulfadiazina tópica no es la elección clásica para esta presentación específica.",
+                    "El ácido fusídico tópico es el tratamiento clásico para infecciones estafilocócicas cutáneas localizadas como esta foliculitis — es la respuesta correcta.",
+                    "El metronidazol no cubre Staphylococcus aureus (bacteria aerobia), fuera de su espectro anaerobio/antiparasitario.",
+                    "La vancomicina oral no se absorbe sistémicamente (solo sirve para efecto local intestinal); no es la elección para una infección de piel."
+                ],
+                "fantasma": [
+                    "Esta no es la elección clásica para este cuadro específico.",
+                    "¡Esta! El tratamiento clásico en crema para esta infección de piel localizada.",
+                    "Este no llega a esta bacteria, está fuera de su terreno.",
+                    "Esta no sirve así para una infección de piel, ni se absorbe para esto."
+                ],
+                "gato": [
+                    "Fijate: esta no es la elección clásica para este cuadro.",
+                    "¡Ronroneo de aprobación! Ácido fusídico tópico: el tratamiento clásico de esta foliculitis estafilocócica.",
+                    "Dato curioso: este no llega a esta bacteria.",
+                    "Miau, esta no sirve así para una infección de piel."
+                ]
+            }
         },
         {
             "numero": 872,
@@ -40742,7 +40962,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: el nifurtimox se administra por vía ORAL, igual que el benznidazol, no exclusivamente IV.",
+                    "El efecto adverso más común es digestivo, junto con mialgias y debilidad, el perfil clásico del nifurtimox — es la respuesta correcta.",
+                    "El nifurtimox SÍ es efectivo contra las formas amastigote del parásito, necesario para su efecto terapéutico.",
+                    "No está establecido que sea más efectivo que el benznidazol en Chagas crónico; en general se consideran opciones similares, con el benznidazol a menudo preferido por tolerancia."
+                ],
+                "fantasma": [
+                    "Al revés, este también se toma por boca, como su primo.",
+                    "¡Esta! El estómago y los músculos son quienes más sufren con este fármaco.",
+                    "Al revés, sí funciona contra esta forma del parásito.",
+                    "No hay evidencia de que sea mejor que su primo en esta fase crónica."
+                ],
+                "gato": [
+                    "Fijate: al revés, este también se toma por boca.",
+                    "¡Ronroneo de aprobación! Digestivo + mialgias + debilidad: el perfil de efectos adversos del nifurtimox.",
+                    "Dato curioso: al revés, sí funciona contra esta forma del parásito.",
+                    "Miau, no hay evidencia de que sea mejor que su primo aquí."
+                ]
+            }
         },
         {
             "numero": 873,
@@ -40769,7 +41009,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El nifurtimox, del grupo de los nitrofuranos, se usa clásicamente para el Chagas AGUDO — es la respuesta correcta.",
+                    "No es esta la indicación establecida del nifurtimox; la hidatidosis se trata con otros fármacos (albendazol).",
+                    "Aunque tiene cierto rol también en Chagas crónico, su indicación clásicamente más destacada es en la fase aguda.",
+                    "No es esta la indicación establecida del nifurtimox; la amebiasis se trata con metronidazol."
+                ],
+                "fantasma": [
+                    "¡Esta! Su uso clásico en la fase temprana de esta enfermedad.",
+                    "Esa enfermedad usa otro fármaco, no este.",
+                    "Tiene algo de rol ahí también, pero lo clásico es la fase temprana.",
+                    "Esa infección se trata con otro fármaco, el metronidazol."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Chagas agudo: el uso clásico del nifurtimox.",
+                    "Fijate: esa enfermedad usa otro fármaco.",
+                    "Dato curioso: tiene algo de rol ahí, pero lo clásico es la fase temprana.",
+                    "Miau, esa infección se trata con metronidazol."
+                ]
+            }
         },
         {
             "numero": 874,
@@ -40796,7 +41056,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No es una afirmación tan absoluta; su acción clásica está ligada a la concentración urinaria para su uso en ITU.",
+                    "La nitrofurantoína actúa mediante metabolitos que dañan el ADN bacteriano y puede causar neuritis como efecto adverso, ambas características bien establecidas — es la respuesta correcta.",
+                    "El aciclovir es un análogo de NUCLEÓSIDO (no nucleótido) y no se usa para citomegalovirus, ya que carece de buena actividad contra este virus.",
+                    "La lamivudina no incluye al citomegalovirus en su espectro; es un análogo usado para VIH/hepatitis B."
+                ],
+                "fantasma": [
+                    "No es tan absoluto así, depende de la concentración en la orina.",
+                    "¡Esta! Sus metabolitos dañan el ADN bacteriano, y puede afectar los nervios.",
+                    "Es de otro tipo de análogo, y no cubre a este virus en particular.",
+                    "Este fármaco no cubre a este virus en su espectro."
+                ],
+                "gato": [
+                    "Fijate: no es tan absoluto, depende de la concentración urinaria.",
+                    "¡Ronroneo de aprobación! Daño al ADN bacteriano + neuritis: el perfil real de la nitrofurantoína.",
+                    "Dato curioso: es de otro tipo de análogo, y no cubre este virus.",
+                    "Miau, este fármaco no cubre este virus en su espectro."
+                ]
+            }
         },
         {
             "numero": 875,
@@ -40823,7 +41103,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El metronidazol no está indicado para la enfermedad de Chagas (Trypanosoma cruzi).",
+                    "La suramina se usa para la tripanosomiasis africana (T. brucei), no para el Chagas (tripanosomiasis americana).",
+                    "El estibogluconato de sodio se usa para la leishmaniasis, no para el Chagas.",
+                    "El nifurtimox es el tratamiento adecuado para la enfermedad de Chagas entre las opciones dadas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Este no está indicado para esta enfermedad en particular.",
+                    "Esta es para otra enfermedad parecida pero distinta, en África.",
+                    "Este es para otra enfermedad parasitaria distinta.",
+                    "¡Esta! El tratamiento correcto entre las opciones para esta enfermedad."
+                ],
+                "gato": [
+                    "Fijate: este no está indicado para esta enfermedad.",
+                    "Dato curioso: esta es para otra enfermedad parecida, en África.",
+                    "Miau, este es para otra enfermedad parasitaria distinta.",
+                    "¡Ronroneo de aprobación! Nifurtimox: el tratamiento correcto para el Chagas entre estas opciones."
+                ]
+            }
         },
         {
             "numero": 876,
@@ -40850,7 +41150,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Náuseas, vómitos y dolor abdominal SÍ son efectos adversos reales y establecidos del nifurtimox.",
+                    "El aumento de peso NO es un efecto adverso establecido del nifurtimox; de hecho, los síntomas digestivos tenderían más a causar pérdida de peso — es la excepción, respuesta correcta.",
+                    "La neuropatía periférica SÍ es un efecto adverso real del nifurtimox, coherente con su mecanismo de daño oxidativo.",
+                    "Vértigos, mialgia e insomnio SÍ son efectos adversos reales y establecidos del nifurtimox."
+                ],
+                "fantasma": [
+                    "Esto sí puede pasar con este fármaco.",
+                    "¡Esta! Esto no encaja, si algo pasa es lo contrario, bajar de peso.",
+                    "Esto también puede pasar, coherente con su daño a los nervios.",
+                    "Esto también puede pasar con este fármaco."
+                ],
+                "gato": [
+                    "Fijate: esto sí puede pasar con este fármaco.",
+                    "¡Ronroneo de aprobación! Aumento de peso: lo que no encaja, la excepción correcta.",
+                    "Dato curioso: esto también puede pasar, coherente con el daño a nervios.",
+                    "Miau, esto también puede pasar con este fármaco."
+                ]
+            }
         },
         {
             "numero": 877,
@@ -40877,7 +41197,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los nitroimidazoles no son exclusivamente antiparasitarios; también tienen actividad antibacteriana (anaerobios).",
+                    "Los nitrotiazoles son exclusivamente antiparasitarios, una clasificación real dentro de los nitrocompuestos — es la respuesta correcta.",
+                    "Los nitrofuranos no son exclusivamente antibacterianos; el nifurtimox (un nitrofurano) es antiparasitario.",
+                    "Los nitrofuranos no son exclusivamente antiparasitarios; la nitrofurantoína (un nitrofurano) es antibacteriana."
+                ],
+                "fantasma": [
+                    "Estos también cubren bacterias, no son solo para parásitos.",
+                    "¡Esta! Esta familia sí es solo para parásitos.",
+                    "Estos no son solo antibacterianos, hay uno antiparasitario en esta familia.",
+                    "Estos no son solo antiparasitarios, hay uno antibacteriano en esta familia."
+                ],
+                "gato": [
+                    "Fijate: estos también cubren bacterias.",
+                    "¡Ronroneo de aprobación! Nitrotiazoles: exclusivamente antiparasitarios, la clasificación correcta.",
+                    "Dato curioso: estos no son solo antibacterianos.",
+                    "Miau, estos no son solo antiparasitarios."
+                ]
+            }
         },
         {
             "numero": 878,
@@ -40904,7 +41244,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Todos los nitrocompuestos deben activarse (reducirse) en la célula blanco para generar su efecto tóxico, una característica compartida de clase — es la respuesta correcta.",
+                    "SÍ existe un nitrocompuesto que actúa sobre bacterias aerobias: la nitrofurantoína, usada en ITU por gérmenes aerobios.",
+                    "Es al revés: el potencial redox más BAJO (no más alto) en anaerobios es lo que favorece la reducción del grupo nitro en esos ambientes.",
+                    "Es al revés: el metronidazol tiene EXCELENTE biodisponibilidad oral; la vía IV no se prefiere por baja absorción oral."
+                ],
+                "fantasma": [
+                    "¡Esta! Todos necesitan un paso de activación dentro de la célula blanco.",
+                    "Al revés, sí hay uno que funciona en bacterias con oxígeno.",
+                    "Al revés, es más bajo ese potencial en los sin oxígeno, no más alto.",
+                    "Al revés, este fármaco se absorbe muy bien por boca."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Activación necesaria en la célula blanco: la característica compartida de los nitrocompuestos.",
+                    "Fijate: al revés, sí hay uno que funciona con oxígeno.",
+                    "Dato curioso: al revés, es más bajo ese potencial en anaerobios.",
+                    "Miau, al revés, este fármaco se absorbe muy bien por boca."
+                ]
+            }
         },
         {
             "numero": 879,
@@ -40931,7 +41291,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El Ancylostoma (un helminto) y la Treponema pallidum no están cubiertos por los nitroimidazoles.",
+                    "Giardia, entamoeba, tricomonas vaginalis y anaerobios conforman el espectro real de los nitroimidazoles — es la respuesta correcta.",
+                    "La parte de 'aerobios' es incorrecta; los nitroimidazoles cubren anaerobios, no aerobios.",
+                    "Los nitroimidazoles SÍ presentan espectro bacteriano (anaerobio), contrario a esta afirmación."
+                ],
+                "fantasma": [
+                    "Ni el gusano ni esta bacteria de la sífilis están en este espectro.",
+                    "¡Esta! El combo real: estos parásitos y las bacterias sin oxígeno.",
+                    "Esa parte final está mal, es sin oxígeno, no con oxígeno.",
+                    "Al revés, sí tienen espectro bacteriano real."
+                ],
+                "gato": [
+                    "Fijate: ni el gusano ni esa bacteria están en este espectro.",
+                    "¡Ronroneo de aprobación! Giardia + entamoeba + tricomonas + anaerobios: el espectro real de los nitroimidazoles.",
+                    "Dato curioso: esa parte final está mal, es sin oxígeno.",
+                    "Miau, al revés, sí tienen espectro bacteriano real."
+                ]
+            }
         },
         {
             "numero": 880,
@@ -40958,7 +41338,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La reducción del grupo 5-nitro SÍ es el paso de activación inicial, un mecanismo real de los nitroimidazoles.",
+                    "El daño oxidativo del ADN SÍ es una consecuencia mecanística real de estos fármacos.",
+                    "La ruptura y alteración de moléculas SÍ describe el daño resultante real de estos fármacos.",
+                    "Aumentar la concentración del fármaco en el sitio blanco no es un mecanismo de acción en sí mismo, sino un concepto farmacocinético distinto — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Eso sí es el primer paso real de activación.",
+                    "Eso también es una consecuencia real de estos fármacos.",
+                    "Eso también describe bien el daño real que causan.",
+                    "¡Esta! Eso no es un mecanismo de acción, es otra cosa completamente distinta."
+                ],
+                "gato": [
+                    "Fijate: eso sí es el primer paso real de activación.",
+                    "Dato curioso: eso también es una consecuencia real.",
+                    "Miau, eso también describe bien el daño real.",
+                    "¡Ronroneo de aprobación! No es un mecanismo de acción real: la respuesta correcta, la que no encaja."
+                ]
+            }
         },
         {
             "numero": 881,
