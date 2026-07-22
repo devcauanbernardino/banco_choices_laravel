@@ -19835,7 +19835,27 @@
             "A biodisponibilidade da amoxicilina é alterada pelos alimentos",
             "Eles cobrem klebsiella e pseudomonas",
             "Eles não são suscetíveis a beta lactamases"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A biodisponibilidade da ampicilina SIM se altera (diminui) com os alimentos, diferente da amoxicilina — é a resposta correta.",
+                "A biodisponibilidade da amoxicilina, diferente da ampicilina, NÃO se altera significativamente com os alimentos.",
+                "As aminopenicilinas não cobrem de forma confiável Klebsiella nem Pseudomonas, esse é terreno das ureidopenicilinas como a piperacilina.",
+                "As aminopenicilinas SIM são suscetíveis às beta-lactamases, por isso se combinam com clavulanato/sulbactam."
+            ],
+            "fantasma": [
+                "Essa aí! A comida sim faz baixar a absorção desse fármaco.",
+                "Nessa, ao contrário da sua prima, a comida não afeta tanto.",
+                "Isso é terreno de outro fármaco, a piperacilina.",
+                "Ao contrário, sim são vulneráveis a essas enzimas."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Comida que baixa a absorção: a marca distintiva da ampicilina.",
+                "Fijate: nessa a comida não afeta tanto.",
+                "Dado curioso: isso é terreno da piperacilina.",
+                "Miau, ao contrário, sim são vulneráveis a essas enzimas."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às aminopenicilinas?",
@@ -19845,7 +19865,27 @@
             "O t1/2 das aminopenicilinas é longo, cerca de 16 horas.",
             "Eles não estão bem distribuídos nos tecidos e fluidos.",
             "Com meninges inflamadas não atingem níveis terapêuticos no LCR."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A absorção oral é boa para a ampicilina e ainda melhor para a amoxicilina, coerente com o já estabelecido sobre essa família — é a resposta correta.",
+                "A meia-vida das aminopenicilinas é curta (aproximadamente 1-1,5 horas), não de 16 horas.",
+                "As aminopenicilinas se distribuem bem em tecidos e fluidos corporais.",
+                "Com as meninges inflamadas, a permeabilidade aumenta e SIM podem ser alcançados níveis terapêuticos no líquor (por isso se usa ampicilina em meningite por Listeria)."
+            ],
+            "fantasma": [
+                "Essa aí! As duas se absorvem bem por boca, uma melhor que a outra.",
+                "Dura muito menos tempo no corpo do que isso.",
+                "Ao contrário, chegam bem aos tecidos e líquidos.",
+                "Ao contrário, com a inflamação sim entra bem no líquido cefalorraquidiano."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Boa absorção oral para ambas, melhor para a amoxicilina.",
+                "Fijate: dura muito menos tempo do que isso.",
+                "Dado curioso: ao contrário, chegam bem aos tecidos.",
+                "Miau, ao contrário, com a inflamação sim entra bem no líquor."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às penicilinas antiestafilocócicas, marque INCORRETO?",
@@ -19856,7 +19896,27 @@
             "Oxacilina e dicloxacilina podem ser administradas por via oral",
             "Os isoxazóis são hepatotóxicos e podem causar RI devido à nefrite intersticial.",
             "Eles são úteis apenas para S. Aureus penicilinase positivo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A meticilina é ácido lábil, por isso requer via parenteral e não oral — afirmação correta.",
+                "A oxacilina e a dicloxacilina sim podem ser dadas por via oral, diferente da meticilina — afirmação correta.",
+                "As isoxazólicas (oxacilina, dicloxacilina, nafcilina) sim são hepatotóxicas e podem produzir nefrite intersticial — afirmação correta.",
+                "Essas penicilinas não são úteis SOMENTE para S. aureus penicilinase positivo; também mantêm atividade contra cepas sensíveis — é a afirmação INCORRETA, resposta correta segundo o feedback do banco."
+            ],
+            "fantasma": [
+                "Isso é verdade, por isso precisa ir pela veia ou pelo músculo.",
+                "Isso é verdade, essas sim se tomam por boca.",
+                "Isso é verdade, o fígado e o rim podem sofrer com essas.",
+                "Essa aí! Não é só para essa cepa específica, cobrem mais que isso."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, por isso precisa de via parenteral.",
+                "Dado curioso: isso também é verdade, essas sim se tomam por boca.",
+                "Miau, isso também é verdade, fígado e rim podem sofrer.",
+                "Ronronado de aprovação! Não é só para essa cepa, a incorreta da lista."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação da Ampicilina?",
@@ -19866,7 +19926,27 @@
             "Inibe a topoisomerase II.",
             "Inibe a síntese da parede bacteriana.",
             "Inibe a síntese de DNA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ampicilina não atua sobre a síntese proteica, esse é o mecanismo de outros antibióticos (aminoglicosídeos, macrolídeos).",
+                "A ampicilina não inibe a topoisomerase II, esse não é seu alvo.",
+                "A ampicilina inibe a síntese da parede bacteriana, o mecanismo clássico dos beta-lactâmicos — é a resposta correta.",
+                "A ampicilina não inibe a síntese de DNA, esse não é seu mecanismo."
+            ],
+            "fantasma": [
+                "Isso é de outros antibióticos, não desse fármaco.",
+                "Esse não é o alvo desse fármaco.",
+                "Essa aí! Freia a construção da parede bacteriana.",
+                "Isso também não é o que esse fármaco freia."
+            ],
+            "gato": [
+                "Fijate: isso é de outros antibióticos.",
+                "Dado curioso: esse não é o alvo desse fármaco.",
+                "Ronronado de aprovação! Parede bacteriana bloqueada: o mecanismo clássico da ampicilina.",
+                "Miau, isso também não é o que esse fármaco freia."
+            ]
+        }
     },
     {
         "pergunta": "Se Ampicilina e Piperacilina forem usadas em combinação para infecções por P. aeruginosa, pode ocorrer antagonismo. A explicação mais provável é essa?",
@@ -19876,7 +19956,27 @@
             "A piperacilina bloqueia a ligação da ampicilina às proteínas de ligação à penicilina.",
             "A ampicilina induz a produção de β-lactamases.",
             "As enzimas autolíticas são inibidas pela piperacilina."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ampicilina não é bacteriostática, é bactericida, como o resto das penicilinas.",
+                "Não existe esse mecanismo específico de bloqueio de ligação a PBP entre esses dois fármacos.",
+                "A ampicilina pode induzir a produção de beta-lactamases cromossômicas em certos gram-negativos, que depois destroem a piperacilina co-administrada — é a resposta correta.",
+                "Os beta-lactâmicos em geral PROMOVEM, não inibem, a atividade das enzimas autolíticas, contribuindo para seu efeito bactericida."
+            ],
+            "fantasma": [
+                "Ao contrário, essa mata bactérias, não só as freia.",
+                "Esse mecanismo de bloqueio não existe entre esses dois.",
+                "Essa aí! Uma induz as enzimas que destroem a outra.",
+                "Ao contrário, esses fármacos ativam essas enzimas, não as freiam."
+            ],
+            "gato": [
+                "Fijate: ao contrário, essa mata bactérias.",
+                "Dado curioso: esse mecanismo de bloqueio não existe entre esses dois.",
+                "Ronronado de aprovação! Indução de beta-lactamases: a explicação clássica desse antagonismo.",
+                "Miau, ao contrário, esses fármacos ativam essas enzimas."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à amoxicilina?",
@@ -19886,7 +19986,27 @@
             "Tem alto UP",
             "Pode causar diarreia associada a antibióticos",
             "Não é combinado com ácido clavulânico devido ao risco de convulsões."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A amoxicilina se administra principalmente por via oral, não costuma ser dada IV (esse é mais o terreno da ampicilina).",
+                "As aminopenicilinas têm, em geral, baixa ligação a proteínas plasmáticas, não alta.",
+                "A amoxicilina pode gerar diarreia associada a antibióticos, um efeito adverso geral dos beta-lactâmicos por disbacteriose — é a resposta correta.",
+                "A amoxicilina SIM se combina amplamente com ácido clavulânico (por exemplo, Augmentin); essa combinação não se evita por risco de convulsões."
+            ],
+            "fantasma": [
+                "Essa se toma por boca, não costuma ir pela veia.",
+                "Ao contrário, se liga pouco às proteínas do plasma.",
+                "Essa aí! Pode alterar a flora intestinal e dar diarreia.",
+                "Ao contrário, essa combinação é uma das mais receitadas que existem."
+            ],
+            "gato": [
+                "Fijate: essa se toma por boca, não vai pela veia.",
+                "Dado curioso: ao contrário, se liga pouco às proteínas.",
+                "Ronronado de aprovação! Diarreia por disbacteriose: efeito adverso geral dos beta-lactâmicos, incluindo a amoxicilina.",
+                "Miau, ao contrário, essa combinação é uma das mais receitadas."
+            ]
+        }
     },
     {
         "pergunta": "Entre os antibióticos beta-lactâmicos?",
@@ -19896,7 +20016,27 @@
             "Pseudomonas A é resistente à carbenicilina",
             "A penicilina G não compete com os ácidos orgânicos pelo sistema de secreção no túbulo proximal.",
             "A ampicilina é instável em ambiente ácido e, portanto, não é útil para consumo oral."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A amoxicilina é ácido resistente (permite uso oral) e sensível a beta-lactamase (pode ser destruída por essa enzima) — é a resposta correta.",
+                "A Pseudomonas não é resistente à carbenicilina; na verdade, a carbenicilina é uma penicilina antipseudomonas desenvolvida especificamente para cobri-la.",
+                "A penicilina G SIM compete com ácidos orgânicos (como o probenecid) pelo sistema de secreção tubular proximal, a base do uso clássico do probenecid para prolongar sua meia-vida.",
+                "A ampicilina SIM é útil por via oral, é estável em meio ácido (embora se absorva um pouco pior que a amoxicilina)."
+            ],
+            "fantasma": [
+                "Essa aí! Aguenta o ácido gástrico, mas uma enzima bacteriana sim pode destruí-la.",
+                "Ao contrário, essa bactéria foi o alvo específico desse fármaco.",
+                "Ao contrário, sim compete por esse sistema de transporte renal.",
+                "Ao contrário, essa sim serve por boca, embora não tão bem quanto sua prima."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Ácido resistente mas sensível a beta-lactamase: a descrição precisa da amoxicilina.",
+                "Fijate: ao contrário, essa bactéria foi o alvo desse fármaco.",
+                "Dado curioso: ao contrário, sim compete por esse sistema de transporte.",
+                "Miau, ao contrário, essa sim serve por boca."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir NÃO é um EA de betalactâmicos?",
@@ -19906,7 +20046,27 @@
             "Efeito dissulfiram",
             "Diarréia por C. Difficile",
             "Ototoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A candidíase por disbacteriose SIM é um efeito adverso reconhecido dos beta-lactâmicos.",
+                "O efeito dissulfiram SIM pode ocorrer com certas cefalosporinas (com cadeia lateral de metiltiotetrazol), um efeito adverso reconhecido.",
+                "As diarreias por C. difficile SIM são um efeito adverso reconhecido, pela disrupção da flora normal.",
+                "A ototoxicidade é característica dos aminoglicosídeos, não dos beta-lactâmicos — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse sim pode acontecer, pela flora alterada.",
+                "Esse também pode acontecer com algumas cefalosporinas específicas.",
+                "Esse também pode acontecer, pela mesma alteração de flora.",
+                "Essa aí! O ouvido é coisa dos aminoglicosídeos, não dessa família."
+            ],
+            "gato": [
+                "Fijate: esse sim pode acontecer, pela flora alterada.",
+                "Dado curioso: esse também pode acontecer com algumas cefalosporinas.",
+                "Miau, esse também pode acontecer, mesma causa.",
+                "Ronronado de aprovação! Ototoxicidade: coisa de aminoglicosídeos, não de beta-lactâmicos."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos β-lactâmicos, selecione o INCORRETO?",
@@ -19917,7 +20077,27 @@
             "As penicilinas não são mais utilizadas devido à hipersensibilidade.",
             "Eles não são úteis contra pseudomonas",
             "Os monobactams fazem parte deles"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os beta-lactâmicos SIM inibem o crescimento e reparo da parede bacteriana — afirmação correta.",
+                "As penicilinas CONTINUAM sendo usadas amplamente apesar do risco de hipersensibilidade, que é manejado (não que impede seu uso) — é a afirmação INCORRETA, resposta correta segundo o feedback do banco.",
+                "Muitos beta-lactâmicos clássicos não são úteis contra pseudomonas — afirmação correta (embora existam exceções antipseudomonas específicas).",
+                "Os monobactâmicos (como o aztreonam) sim fazem parte dos beta-lactâmicos — afirmação correta."
+            ],
+            "fantasma": [
+                "Isso é verdade, freiam a construção da parede.",
+                "Essa aí! Continuam sendo muito usadas, o risco se maneja, não se evita totalmente.",
+                "Isso é verdade em geral para muitas dessa família.",
+                "Isso também é verdade, esse fármaco sim pertence à família."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, freiam a parede bacteriana.",
+                "Ronronado de aprovação! Continuam sendo usadas apesar da alergia, a incorreta da lista.",
+                "Dado curioso: isso é verdade em geral para essa família.",
+                "Miau, isso também é verdade, esse sim pertence à família."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes β-lactâmicos é a opção mais apropriada para cobertura de germes Gram-negativos em uma pessoa com histórico de alergia grave à penicilina?",
@@ -19927,7 +20107,27 @@
             "Aztreonam.",
             "Ampicilina.",
             "Ceftarolina."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O cefaclor é uma cefalosporina com risco de reatividade cruzada relevante em alergia grave à penicilina.",
+                "O aztreonam (monobactâmico) não tem reatividade cruzada com as penicilinas por sua estrutura monocíclica, sendo seguro em alergia grave à penicilina e com boa cobertura gram-negativa — é a resposta correta.",
+                "A ampicilina é ela mesma uma penicilina, absolutamente contraindicada nesse contexto.",
+                "A ceftarolina é uma cefalosporina com o mesmo risco de reatividade cruzada que outras da sua família."
+            ],
+            "fantasma": [
+                "Esse compartilha certo risco de alergia cruzada.",
+                "Essa aí! Estrutura diferente, sem esse risco de alergia cruzada, e cobre bem os gram-negativos.",
+                "Esse é diretamente uma penicilina, proibido aqui.",
+                "Esse também compartilha esse risco de alergia cruzada."
+            ],
+            "gato": [
+                "Fijate: esse compartilha certo risco de alergia cruzada.",
+                "Ronronado de aprovação! Aztreonam: sem reatividade cruzada com penicilinas, a opção segura aqui.",
+                "Dado curioso: esse é diretamente uma penicilina, proibido aqui.",
+                "Miau, esse também compartilha esse risco de alergia cruzada."
+            ]
+        }
     },
     {
         "pergunta": "Um beta-lactâmico que não pode ser administrado por via oral é?",
@@ -19937,7 +20137,27 @@
             "Cefotaxima",
             "Cefaclor",
             "Cefadroxila"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cefalexina se administra por via oral, é de primeira geração.",
+                "A cefotaxima é um betalactâmico disponível unicamente por via parenteral, sem formulação oral — é a resposta correta.",
+                "O cefaclor se administra por via oral, é de segunda geração.",
+                "O cefadroxil se administra por via oral, é de primeira geração."
+            ],
+            "fantasma": [
+                "Esse sim se toma por boca.",
+                "Essa aí! Só existe para dar pela veia ou pelo músculo.",
+                "Esse também se toma por boca.",
+                "Esse também se toma por boca."
+            ],
+            "gato": [
+                "Fijate: esse sim se toma por boca.",
+                "Ronronado de aprovação! Cefotaxima: só via parenteral, sem versão oral.",
+                "Dado curioso: esse também se toma por boca.",
+                "Miau, esse também se toma por boca."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente consulta devido a uma infecção de pele não complicada. Você suspeita de Staphylococcus Aureus sensível à meticilina. Qual dos seguintes antibacterianos você prescreveria por via oral?",
@@ -19947,7 +20167,27 @@
             "Piperacilina.",
             "Ceftriaxona.",
             "Cefalexina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A vancomicina é tipicamente IV, se reserva para SARM/infecções graves, não a primeira escolha oral para esse caso simples.",
+                "A piperacilina é um antipseudomonas IV de amplo espectro, um excesso desnecessário para essa infecção simples.",
+                "A ceftriaxona é de administração IV/IM, não oral, e também não é necessária para esse quadro simples.",
+                "A cefalexina, cefalosporina oral de primeira geração, é a escolha clássica para infecção de pele não complicada por MSSA — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa se usa pela veia, se guarda para casos mais sérios.",
+                "Esse é um canhão antipseudomonas, de mais para esse caso.",
+                "Essa vai pela veia, também não é necessária para esse quadro simples.",
+                "Essa aí! A clássica por boca para uma infecção de pele simples como essa."
+            ],
+            "gato": [
+                "Fijate: essa se usa pela veia, se guarda para casos graves.",
+                "Dado curioso: esse é um canhão de mais para esse caso.",
+                "Miau, essa vai pela veia, também não é necessária aqui.",
+                "Ronronado de aprovação! Cefalexina oral: a escolha clássica para essa infecção de pele simples."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes betalactâmicos é útil para infecções por Pseudomona aeruginosa?",
@@ -19957,7 +20197,27 @@
             "Ticarcilina",
             "Ceftarolina",
             "Ceftriaxona"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ampicilina não cobre Pseudomonas, é uma aminopenicilina sem esse espectro.",
+                "A ticarcilina, penicilina antipseudomonas (carboxipenicilina), é útil para infecções por Pseudomonas aeruginosa — é a resposta correta.",
+                "A ceftarolina não tem cobertura confiável sobre Pseudomonas, uma limitação reconhecida desse fármaco.",
+                "A ceftriaxona não cobre Pseudomonas; essa cobertura é mais própria de ceftazidima/cefepima, não de ceftriaxona."
+            ],
+            "fantasma": [
+                "Essa não cobre essa bactéria de jeito nenhum.",
+                "Essa aí! Desenhada justamente para essa bactéria gram-negativa difícil.",
+                "Essa tem um buraco justo nessa cobertura.",
+                "Essa não cobre essa bactéria, é terreno de outras cefalosporinas."
+            ],
+            "gato": [
+                "Fijate: essa não cobre essa bactéria de jeito nenhum.",
+                "Ronronado de aprovação! Ticarcilina: desenhada especificamente para cobrir Pseudomonas.",
+                "Dado curioso: essa tem um buraco justo nessa cobertura.",
+                "Miau, essa não cobre essa bactéria, é terreno de outras cefalosporinas."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes cefalosporinas de 3ª geração é administrada por via oral?",
@@ -19967,7 +20227,27 @@
             "Ceftazidima",
             "Cefixima",
             "Ceftriaxona"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cefotaxima é de administração exclusivamente parenteral, sem forma oral.",
+                "A ceftazidima é de administração exclusivamente parenteral, sem forma oral.",
+                "A cefixima é a cefalosporina de terceira geração com administração oral — é a resposta correta.",
+                "A ceftriaxona é de administração exclusivamente parenteral, sem forma oral."
+            ],
+            "fantasma": [
+                "Essa só vai pela veia ou músculo.",
+                "Essa também só vai pela veia ou músculo.",
+                "Essa aí! A única de terceira geração que se toma por boca.",
+                "Essa também só vai pela veia ou músculo."
+            ],
+            "gato": [
+                "Fijate: essa só vai pela veia ou músculo.",
+                "Dado curioso: essa também só vai pela veia ou músculo.",
+                "Ronronado de aprovação! Cefixima: a terceira geração que sim se toma por boca.",
+                "Miau, essa também só vai pela veia ou músculo."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes anti-infecciosos atravessa melhor a barreira hematoencefálica?",
@@ -19977,7 +20257,27 @@
             "Ceftriaxona",
             "Vancomicina",
             "Gentamicina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A anfotericina B tem, classicamente, pouca penetração no sistema nervoso central, às vezes exigindo administração intratecal em infecções fúngicas do SNC.",
+                "A ceftriaxona atravessa muito bem a barreira hematoencefálica, especialmente com meninges inflamadas, sendo de primeira linha em meningite bacteriana — é a resposta correta.",
+                "A vancomicina tem penetração variável/limitada no SNC, não sendo a melhor opção nesse sentido.",
+                "Os aminoglicosídeos, incluindo a gentamicina, têm classicamente pouca penetração no sistema nervoso central."
+            ],
+            "fantasma": [
+                "Esse quase não entra bem no cérebro, às vezes precisa ser colocado direto ali.",
+                "Essa aí! Entra muito bem no cérebro, principalmente com as meninges inflamadas.",
+                "Essa entra de forma limitada, não é a melhor nisso.",
+                "Esse quase não entra no cérebro, típico dessa família."
+            ],
+            "gato": [
+                "Fijate: esse quase não entra bem no cérebro.",
+                "Ronronado de aprovação! Ceftriaxona: a melhor para atravessar a barreira hematoencefálica.",
+                "Dado curioso: essa entra de forma limitada.",
+                "Miau, esse quase não entra no cérebro, típico dessa família."
+            ]
+        }
     },
     {
         "pergunta": "Num paciente com miastenia gravis, tendo em conta os efeitos adversos, qual dos seguintes anti-infecciosos seria mais recomendado?",
@@ -19987,7 +20287,27 @@
             "Clindamicina",
             "Gentamicina",
             "Colistina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ceftriaxona (cefalosporina) não compartilha o risco de bloqueio neuromuscular das outras opções, sendo a mais recomendável em miastenia gravis — é a resposta correta.",
+                "A clindamicina pode ter propriedades de bloqueio neuromuscular, um risco relevante em miastenia gravis.",
+                "A gentamicina (aminoglicosídeo) tem um reconhecido efeito de bloqueio neuromuscular, classicamente cautelosa em miastenia gravis.",
+                "A colistina (polimixina) também tem potencial de bloqueio neuromuscular, um risco relevante em miastenia gravis."
+            ],
+            "fantasma": [
+                "Essa aí! Não tem esse risco de bloquear os nervos e músculos.",
+                "Esse pode somar risco de bloqueio neuromuscular aqui.",
+                "Esse é classicamente arriscado para bloquear os nervos e músculos.",
+                "Esse também tem esse risco de bloqueio neuromuscular."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Ceftriaxona: sem risco de bloqueio neuromuscular, a mais segura aqui.",
+                "Fijate: esse pode somar esse risco nesse paciente.",
+                "Dado curioso: esse é classicamente arriscado nesse contexto.",
+                "Miau, esse também tem esse risco de bloqueio neuromuscular."
+            ]
+        }
     },
     {
         "pergunta": "Qual é a principal diferença entre cefaclor e ceftriaxona?",
@@ -19997,7 +20317,27 @@
             "O cefaclor pode ser administrado por via oral e a ceftriaxona não.",
             "Cefaclor é de quarta geração e ceftriaxona não é",
             "O cefaclor sofre metabolismo hepático e a ceftriaxona não."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ceftriaxona tem uma meia-vida mais LONGA que o cefaclor (permite dose única diária), não mais curta.",
+                "O cefaclor pode ser administrado por via oral, enquanto a ceftriaxona não tem forma oral — é a resposta correta.",
+                "O cefaclor é de segunda geração, não de quarta.",
+                "Não é o metabolismo hepático o que principalmente distingue esses dois; ambos se eliminam predominantemente por via renal (a ceftriaxona com um componente biliar adicional)."
+            ],
+            "fantasma": [
+                "Ao contrário, essa dura mais tempo no corpo, não menos.",
+                "Essa aí! Um se toma por boca, o outro vai pela veia ou músculo.",
+                "Esse é de segunda geração, não de quarta.",
+                "Não é isso que mais os distingue principalmente."
+            ],
+            "gato": [
+                "Fijate: ao contrário, essa dura mais tempo no corpo.",
+                "Ronronado de aprovação! Via oral vs. parenteral: a diferença chave entre cefaclor e ceftriaxona.",
+                "Dado curioso: esse é de segunda geração, não de quarta.",
+                "Miau, não é isso que mais os distingue."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às cefalosporinas, qual das afirmações a seguir está CORRETA?",
@@ -20007,7 +20347,27 @@
             "A partir da terceira geração a única via de administração é a parenteral.",
             "A primeira e a segunda geração são caracterizadas pela sua atividade exclusiva sobre cocos negativos.",
             "Tanto a quarta quanto a quinta gerações abrangem Staphylococcus aureus resistente à meticilina."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As cefalosporinas de primeira e segunda geração se caracterizam por sua grande atividade sobre cocos gram-positivos — é a resposta correta.",
+                "A partir da terceira geração existem formas orais, como a cefixima, não exclusivamente parenteral.",
+                "É ao contrário: a primeira e segunda geração se caracterizam por sua atividade sobre cocos gram-POSITIVOS, não negativos.",
+                "Só a quinta geração (não a quarta) cobre estafilococo aureus meticilino resistente; a cefepima (quarta) não cobre."
+            ],
+            "fantasma": [
+                "Essa aí! As primeiras gerações são fortes contra os cocos positivos.",
+                "Há exceções orais a partir dessa geração, como a cefixima.",
+                "Ao contrário, é sobre os positivos que são fortes, não os negativos.",
+                "Só uma das duas, não as duas gerações cobrem essa bactéria resistente."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Primeira e segunda geração: fortes contra cocos positivos.",
+                "Fijate: há exceções orais a partir dessa geração.",
+                "Dado curioso: ao contrário, é sobre os positivos que são fortes.",
+                "Miau, só uma das duas cobre essa bactéria resistente."
+            ]
+        }
     },
     {
         "pergunta": "Entre as cefalosporinas de terceira geração:",
@@ -20017,7 +20377,27 @@
             "Cefoperazona não necessita de ajuste de dose em caso de doença hepática",
             "Ceftriaxona tem eliminação renal e biliar",
             "Não estão associados a nefrite intersticial ou necrose tubular aguda."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ceftazidima não cobre de forma confiável Acinetobacter multirresistente, um germe notoriamente resistente que costuma exigir carbapenêmicos.",
+                "A cefoperazona SIM precisa de ajuste de dose em doença hepática, por sua importante eliminação biliar.",
+                "A ceftriaxona tem eliminação tanto renal quanto biliar, uma característica farmacocinética distintiva entre as cefalosporinas — é a resposta correta.",
+                "As cefalosporinas SIM podem se associar a nefrite intersticial e necrose tubular aguda, um efeito de classe reconhecido."
+            ],
+            "fantasma": [
+                "Essa não cobre bem essa bactéria tão resistente.",
+                "Ao contrário, essa sim precisa se ajustar no fígado doente.",
+                "Essa aí! Vai tanto pelo rim quanto pela bile, algo particular desse fármaco.",
+                "Ao contrário, sim podem prejudicar o rim dessa forma."
+            ],
+            "gato": [
+                "Fijate: essa não cobre bem essa bactéria tão resistente.",
+                "Dado curioso: ao contrário, essa sim precisa se ajustar no fígado doente.",
+                "Ronronado de aprovação! Eliminação renal e biliar: a marca particular da ceftriaxona.",
+                "Miau, ao contrário, sim podem prejudicar o rim dessa forma."
+            ]
+        }
     },
     {
         "pergunta": "Entre as cefalosporinas de terceira geração:",
@@ -20027,7 +20407,27 @@
             "A ceftriaxona é eliminada apenas por via renal.",
             "Cefoperazona não necessita de ajuste de dose em caso de doença hepática",
             "Estão associados à nefrite intersticial e à necrose tubular aguda."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ceftriaxona não cobre de forma confiável Acinetobacter multirresistente, um germe notoriamente resistente.",
+                "A ceftriaxona tem eliminação renal E biliar, não unicamente renal.",
+                "A cefoperazona SIM precisa de ajuste de dose em doença hepática, por sua importante eliminação biliar.",
+                "As cefalosporinas de terceira geração se associam a nefrite intersticial e necrose tubular aguda, um efeito de classe reconhecido — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa não cobre bem essa bactéria tão resistente.",
+                "Ao contrário, também vai pela bile, não só pelo rim.",
+                "Ao contrário, essa sim precisa se ajustar no fígado doente.",
+                "Essa aí! O rim pode sofrer dano com essa família de fármacos."
+            ],
+            "gato": [
+                "Fijate: essa não cobre bem essa bactéria tão resistente.",
+                "Dado curioso: ao contrário, também vai pela bile.",
+                "Miau, ao contrário, essa sim precisa se ajustar no fígado doente.",
+                "Ronronado de aprovação! Nefrite intersticial e necrose tubular: efeito de classe real das cefalosporinas."
+            ]
+        }
     },
     {
         "pergunta": "Entre as cefalosporinas:",
