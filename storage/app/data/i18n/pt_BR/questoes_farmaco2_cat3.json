@@ -21038,7 +21038,27 @@
             "Doxiciclina",
             "Cloranfenicol",
             "Trimetoprima/sulfametoxazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ceftriaxona, no contexto deste banco, é considerada a opção relativamente mais segura entre as quatro para o recém-nascido, com as precauções específicas já conhecidas (hiperbilirrubinemia, coadministração com cálcio) — é a resposta correta.",
+                "A doxiciclina se evita classicamente nessa população por seu efeito sobre dentes e ossos em desenvolvimento.",
+                "O cloranfenicol está classicamente contraindicado no recém-nascido pelo risco da síndrome do bebê cinzento.",
+                "O trimetoprima/sulfametoxazol está classicamente contraindicado no recém-nascido pelo risco de kernicterus."
+            ],
+            "fantasma": [
+                "Essa aí! A mais administrável das quatro para o bebê recém-nascido.",
+                "Essa se evita por prejudicar dentes e ossos em desenvolvimento.",
+                "Esse tem uma síndrome clássica grave associada a essa idade.",
+                "Esse tem um risco clássico de icterícia grave nessa idade."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Ceftriaxona: a opção relativamente mais administrável para o recém-nascido.",
+                "Fijate: essa se evita por prejudicar dentes e ossos em desenvolvimento.",
+                "Dado curioso: esse tem uma síndrome clássica grave nessa idade.",
+                "Miau, esse tem um risco clássico de icterícia grave nessa idade."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual dos seguintes atinge concentrações úteis no LCR:",
@@ -21048,7 +21068,27 @@
             "Ceftriaxona",
             "Cefixima",
             "Cefaclor"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cefalexina (primeira geração oral) não se destaca por sua penetração no líquor.",
+                "A ceftriaxona alcança concentrações úteis no líquor, sendo de primeira linha em meningite bacteriana — é a resposta correta.",
+                "A cefixima (terceira geração oral) não se destaca por sua penetração no líquor.",
+                "O cefaclor (segunda geração oral) não se destaca por sua penetração no líquor."
+            ],
+            "fantasma": [
+                "Essa não se destaca por entrar no cérebro.",
+                "Essa aí! Entra muito bem no líquido que envolve o cérebro.",
+                "Essa também não se destaca por isso.",
+                "Esse também não se destaca por isso."
+            ],
+            "gato": [
+                "Fijate: essa não se destaca por entrar no cérebro.",
+                "Ronronado de aprovação! Ceftriaxona: a que melhor alcança o líquor entre as cefalosporinas.",
+                "Dado curioso: essa também não se destaca por isso.",
+                "Miau, esse também não se destaca por isso."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação dos Carbapenêmicos?",
@@ -21058,7 +21098,27 @@
             "Eles inibem a síntese de DNA.",
             "Eles inibem a síntese da parede bacteriana.",
             "Eles atuam na síntese de proteínas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os carbapenêmicos não inibem a topoisomerase II, esse não é seu alvo.",
+                "Os carbapenêmicos não inibem a síntese de DNA, esse não é seu mecanismo.",
+                "Os carbapenêmicos inibem a síntese da parede bacteriana, o mecanismo beta-lactâmico clássico — é a resposta correta.",
+                "Os carbapenêmicos não atuam sobre a síntese proteica, esse é o mecanismo de outros antibióticos."
+            ],
+            "fantasma": [
+                "Esse não é o alvo desses fármacos.",
+                "Esse também não é o mecanismo desses fármacos.",
+                "Essa aí! Freiam a construção da parede bacteriana.",
+                "Isso é de outros antibióticos, não desses."
+            ],
+            "gato": [
+                "Fijate: esse não é o alvo desses fármacos.",
+                "Dado curioso: esse também não é o mecanismo desses fármacos.",
+                "Ronronado de aprovação! Parede bacteriana bloqueada: o mecanismo dos carbapenêmicos.",
+                "Miau, isso é de outros antibióticos."
+            ]
+        }
     },
     {
         "pergunta": "Por favor indique a opção CORRETA?",
@@ -21068,7 +21128,27 @@
             "O imipenem e o meropenem são administrados por via intravenosa e diferem entre si porque o primeiro produz convulsões como efeito adverso.",
             "Os beta-lactâmicos inibem a síntese da parede bacteriana e as beta-lactamases participam aumentando a sensibilidade a eles.",
             "O ácido clavulânico estimula a síntese de beta-lactamases."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cefalexina, cefalosporina de primeira geração, NÃO cobre enterococo, um vazio clássico de toda a família de cefalosporinas.",
+                "O imipenem e o meropenem se administram por via IV e se distinguem porque o primeiro tem maior risco de convulsões — é a resposta correta.",
+                "É ao contrário: as beta-lactamases DIMINUEM, não aumentam, a sensibilidade aos beta-lactâmicos, ao destruir o anel beta-lactâmico.",
+                "O ácido clavulânico INIBE, não estimula, a síntese/atividade das beta-lactamases."
+            ],
+            "fantasma": [
+                "Essa bactéria escapa dessa família inteira de cefalosporinas.",
+                "Essa aí! As duas vão pela veia, mas uma dá mais convulsões que a outra.",
+                "Ao contrário, essas enzimas baixam a sensibilidade, não sobem.",
+                "Ao contrário, esse fármaco freia essas enzimas, não as estimula."
+            ],
+            "gato": [
+                "Fijate: essa bactéria escapa de toda a família de cefalosporinas.",
+                "Ronronado de aprovação! Imipenem com mais convulsões que meropenem: a diferença chave entre esses dois.",
+                "Dado curioso: ao contrário, essas enzimas baixam a sensibilidade.",
+                "Miau, ao contrário, esse fármaco freia essas enzimas."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos carbapenêmicos?",
@@ -21078,7 +21158,27 @@
             "Meropenem deve ser administrado juntamente com cilastatina para evitar degradação pelas dipeptidases renais.",
             "Ambos os medicamentos devem ser administrados com cilastatina",
             "Nenhum dos medicamentos deve ser administrado com cilastatina."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O imipenem se administra junto com cilastatina para evitar sua degradação por dipeptidases renais — é a resposta correta.",
+                "O meropenem NÃO precisa de cilastatina, é mais resistente a essa degradação enzimática que o imipenem.",
+                "Não ambas as drogas precisam de cilastatina; só o imipenem a requer.",
+                "O imipenem SIM deve ser administrado com cilastatina."
+            ],
+            "fantasma": [
+                "Essa aí! Precisa da sua parceira para não ser destruído por uma enzima renal.",
+                "A esse não faz falta essa companhia, resiste melhor a essa enzima.",
+                "Não são as duas, só uma delas a precisa.",
+                "Ao contrário, esse sim precisa dessa companhia."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Imipenem + cilastatina: a dupla clássica contra a degradação renal.",
+                "Fijate: a esse não faz falta essa companhia.",
+                "Dado curioso: não são as duas, só uma a precisa.",
+                "Miau, ao contrário, esse sim precisa dessa companhia."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos carbapenêmicos, selecione o CORRETO?",
@@ -21088,7 +21188,27 @@
             "São hidrolisados ​​pelas dipeptidases renais",
             "Eles não são úteis em infecções polimicrobianas",
             "Compete pela secreção de ácidos orgânicos ao nível renal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os carbapenêmicos SIM são ativos contra pseudomonas e acinetobacter, parte de seu amplo espectro.",
+                "São hidrolisados por dipeptidases renais (relevante especialmente para o imipenem, daí a necessidade de cilastatina) — é a resposta correta.",
+                "Os carbapenêmicos SIM são úteis em infecções polimicrobianas, graças ao seu amplo espectro (gram+, gram-, anaeróbios).",
+                "Não é essa a característica definidora dos carbapenêmicos; esse mecanismo é mais próprio da penicilina G com o probenecid."
+            ],
+            "fantasma": [
+                "Ao contrário, sim cobrem essas bactérias difíceis.",
+                "Essa aí! Uma enzima renal pode destruí-los, daí a necessidade de proteção.",
+                "Ao contrário, são muito úteis quando há várias bactérias misturadas.",
+                "Essa não é a característica desses, é de outro fármaco."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim cobrem essas bactérias difíceis.",
+                "Ronronado de aprovação! Hidrólise por dipeptidases renais: a razão por trás da cilastatina.",
+                "Dado curioso: ao contrário, são muito úteis com várias bactérias misturadas.",
+                "Miau, essa característica é de outro fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a resposta CORRETA em relação aos carbapenêmicos?",
@@ -21098,7 +21218,27 @@
             "Devem ser administrados em associação com cilastatina",
             "Seu espectro inclui GRAM -, GRAM + e anaeróbios",
             "Dipeptidase aumenta a degradação do Meropenem"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O espectro dos carbapenêmicos não se limita a gram-negativos e positivos, também inclui anaeróbios.",
+                "Não é correto como regra geral para todos os carbapenêmicos; só o imipenem precisa de cilastatina.",
+                "Seu espectro inclui gram-negativos, gram-positivos e anaeróbios, o amplo espectro característico dos carbapenêmicos — é a resposta correta.",
+                "É ao contrário: a dipeptidase degrada o imipenem, não o meropenem (mais resistente a essa enzima)."
+            ],
+            "fantasma": [
+                "Cobrem mais que isso, também as bactérias sem oxigênio.",
+                "Isso não é assim para todos, só um deles a precisa.",
+                "Essa aí! O combo completo: positivas, negativas e sem oxigênio.",
+                "Ao contrário, essa enzima ataca outro membro da família."
+            ],
+            "gato": [
+                "Fijate: cobrem mais que isso, também anaeróbios.",
+                "Dado curioso: isso não é assim para todos, só um a precisa.",
+                "Ronronado de aprovação! Gram+, gram- e anaeróbios: o espectro completo dos carbapenêmicos.",
+                "Miau, ao contrário, essa enzima ataca outro membro da família."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos carbapenêmicos, selecione o INCORRETO?",
@@ -21109,7 +21249,27 @@
             "Não devem ser combinados com cilastatina devido ao risco de RI.",
             "Eles têm eliminação renal e biliar",
             "Eles podem causar convulsões"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os carbapenêmicos SIM têm o espectro mais amplo entre os beta-lactâmicos — afirmação correta.",
+                "A cilastatina PROTEGE o imipenem da degradação renal (e de um metabólito nefrotóxico); não há risco de insuficiência renal por essa associação — é a afirmação INCORRETA, resposta correta segundo o feedback do banco.",
+                "Os carbapenêmicos SIM têm eliminação renal e biliar — afirmação correta.",
+                "Os carbapenêmicos SIM podem gerar convulsões, especialmente o imipenem — afirmação correta."
+            ],
+            "fantasma": [
+                "Isso é verdade, são os de espectro mais amplo da sua família.",
+                "Essa aí! Essa parceira protege, não prejudica o rim.",
+                "Isso também é verdade, vão por dois caminhos diferentes.",
+                "Isso também é verdade, principalmente com um deles."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, são os de espectro mais amplo.",
+                "Ronronado de aprovação! A cilastatina protege, não prejudica: a incorreta da lista.",
+                "Dado curioso: isso também é verdade, duas vias de saída.",
+                "Miau, isso também é verdade, principalmente com um deles."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com história de epilepsia em tratamento com carbamazepina e escitalopram. Ele necessitou de tratamento com antibiótico carbapenêmico para pneumonia e durante o tratamento teve convulsões. Qual dos seguintes medicamentos poderia ter causado a condição do paciente?",
@@ -21119,7 +21279,27 @@
             "Carbamazepina.",
             "Imipenem.",
             "Meropenem."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O escitalopram não é o fármaco com maior risco convulsivo entre as opções relevantes desse quadro.",
+                "A carbamazepina é um antiepiléptico, não causaria convulsões por si mesma nesse contexto.",
+                "O imipenem tem o maior risco de convulsões entre os carbapenêmicos, especialmente relevante em pacientes com antecedente de epilepsia — é a resposta correta.",
+                "O meropenem tem um risco de convulsões consideravelmente menor que o imipenem."
+            ],
+            "fantasma": [
+                "Esse não é o que mais pesa no risco convulsivo aqui.",
+                "Esse freia as convulsões, não as causa.",
+                "Essa aí! O carbapenêmico com mais fama de dar convulsões, principalmente em quem já tem epilepsia.",
+                "Esse tem bem menos esse risco que seu primo."
+            ],
+            "gato": [
+                "Fijate: esse não é o que mais pesa no risco convulsivo.",
+                "Dado curioso: esse freia as convulsões, não as causa.",
+                "Ronronado de aprovação! Imipenem: o carbapenêmico com mais risco convulsivo, chave nesse paciente epiléptico.",
+                "Miau, esse tem bem menos esse risco."
+            ]
+        }
     },
     {
         "pergunta": "Em paciente com histórico de convulsões, em caso de infecção por gram-negativos, o antibiótico de escolha?",
@@ -21129,7 +21309,27 @@
             "Meropenem.",
             "Levofloxacina.",
             "Ciprofloxacina."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O imipenem tem maior risco convulsivo, se preferiria evitar nesse paciente com antecedente de convulsões.",
+                "O meropenem, com menor risco convulsivo que o imipenem, é preferível em um paciente com antecedentes de convulsões — é a resposta correta.",
+                "A levofloxacina, como o resto das quinolonas, também tem risco de convulsões.",
+                "A ciprofloxacina, como o resto das quinolonas, também tem risco de convulsões."
+            ],
+            "fantasma": [
+                "Esse tem mais risco de convulsão, melhor evitá-lo aqui.",
+                "Essa aí! Menos risco convulsivo, a escolha mais prudente nesse paciente.",
+                "Essa também pode dar convulsões, como toda sua família.",
+                "Essa também pode dar convulsões, como toda sua família."
+            ],
+            "gato": [
+                "Fijate: esse tem mais risco de convulsão, melhor evitá-lo aqui.",
+                "Ronronado de aprovação! Meropenem: menor risco convulsivo, a opção mais prudente nesse paciente.",
+                "Dado curioso: essa também pode dar convulsões.",
+                "Miau, essa também pode dar convulsões."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação do Meropenem?",
@@ -21139,7 +21339,27 @@
             "Inibe a topoisomerase II.",
             "Inibe a síntese de DNA.",
             "Atua na síntese de proteínas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O meropenem inibe a síntese da parede bacteriana, o mecanismo beta-lactâmico clássico — é a resposta correta.",
+                "O meropenem não inibe a topoisomerase II, esse não é seu alvo.",
+                "O meropenem não inibe a síntese de DNA, esse não é seu mecanismo.",
+                "O meropenem não atua sobre a síntese proteica, esse é o mecanismo de outros antibióticos."
+            ],
+            "fantasma": [
+                "Essa aí! Freia a construção da parede bacteriana.",
+                "Esse não é o alvo desse fármaco.",
+                "Esse também não é o mecanismo desse fármaco.",
+                "Isso é de outros antibióticos, não desse."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Parede bacteriana bloqueada: o mecanismo do meropenem.",
+                "Fijate: esse não é o alvo desse fármaco.",
+                "Dado curioso: esse também não é o mecanismo desse fármaco.",
+                "Miau, isso é de outros antibióticos."
+            ]
+        }
     },
     {
         "pergunta": "Marque a resposta CORRETA em relação ao uso do Meropenem?",
@@ -21149,7 +21369,27 @@
             "Por via oral, é uma boa cobertura para infecções por E. coli.",
             "A insuficiência renal é uma contraindicação devido ao risco de hipercalemia.",
             "É combinado com Cilastatina para reduzir a toxicidade renal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O meropenem se utiliza para infecções por germes multirresistentes intra-hospitalares, seu uso clássico — é a resposta correta.",
+                "O meropenem não tem forma oral, é de administração exclusivamente parenteral.",
+                "A insuficiência renal não é contraindicação por hipercalemia; requer ajuste de dose por sua via de eliminação, não por esse mecanismo.",
+                "O meropenem NÃO se combina com cilastatina (diferente do imipenem), não a precisa por ser mais resistente à degradação renal."
+            ],
+            "fantasma": [
+                "Essa aí! Se guarda para as infecções intra-hospitalares mais difíceis.",
+                "Esse não se toma por boca, só vai pela veia.",
+                "Essa não é a razão da precaução no rim.",
+                "Esse não precisa dessa parceira, diferente do seu primo."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Infecções multirresistentes intra-hospitalares: o uso clássico do meropenem.",
+                "Fijate: esse não se toma por boca, só vai pela veia.",
+                "Dado curioso: essa não é a razão da precaução renal.",
+                "Miau, esse não precisa dessa parceira, diferente do seu primo."
+            ]
+        }
     },
     {
         "pergunta": "Em um paciente hospitalizado que recebeu prescrição de Meropenem, em que germes você pensa? Selecione um:",
@@ -21159,7 +21399,27 @@
             "Pseudomonas multirresistentes, Acinetobacter, Klebsiella.",
             "E. Coli, Acinetobacter, Clostridium, Klebsiella, Proteus, MRSA, Anaeróbios.",
             "E. Coli, MRSA, Clostridium, Klebsiella, Proteus."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O MRSA não é cobertura clássica dos carbapenêmicos; para essa bactéria são necessários outros fármacos (vancomicina, linezolida, ceftarolina).",
+                "Pseudomona, Acinetobacter e Klebsiella multirresistente são os germes classicamente cobertos pelo meropenem no contexto hospitalar — é a resposta correta.",
+                "O MRSA não é cobertura dos carbapenêmicos, e essa lista é ampla/imprecisa demais comparada com a opção correta.",
+                "O MRSA não é cobertura dos carbapenêmicos; além disso, faltam germes-chave como Pseudomona e Acinetobacter nessa lista."
+            ],
+            "fantasma": [
+                "Essa bactéria precisa de outro fármaco, não desse.",
+                "Essa aí! As bactérias resistentes clássicas que motivam usar esse fármaco.",
+                "Essa bactéria não se encaixa aqui, e a lista fica curta nas importantes.",
+                "Essa bactéria não se encaixa aqui, e faltam as mais importantes nessa lista."
+            ],
+            "gato": [
+                "Fijate: essa bactéria precisa de outro fármaco.",
+                "Ronronado de aprovação! Pseudomona + Acinetobacter + Klebsiella MDR: os germes clássicos do meropenem.",
+                "Dado curioso: essa bactéria não se encaixa aqui, e faltam as importantes.",
+                "Miau, essa bactéria não se encaixa aqui, e faltam as importantes."
+            ]
+        }
     },
     {
         "pergunta": "Meropenem, selecione o CORRETO?",
@@ -21169,7 +21429,27 @@
             "Deve ser combinado com cilastatina, assim como os carbapenêmicos.",
             "Tem meia-vida mais longa que o doripenem.",
             "Tem um espectro semelhante ao imipenem, mas menos contra cocos Gram +."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O alto risco de convulsões é mais característico do imipenem, não do meropenem.",
+                "O meropenem NÃO precisa se associar à cilastatina, diferente do imipenem.",
+                "Não é essa a característica distintiva destacada entre meropenem e doripenem neste banco.",
+                "O meropenem tem espectro similar ao imipenem, mas com menor cobertura sobre cocos gram-positivos, uma distinção reconhecida — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse risco é mais típico do seu primo, não desse.",
+                "A esse não faz falta essa parceira, diferente do outro.",
+                "Essa não é a diferença que se destaca aqui.",
+                "Essa aí! Parecido com seu primo, mas um pouco mais fraco contra os positivos."
+            ],
+            "gato": [
+                "Fijate: esse risco é mais típico do seu primo.",
+                "Dado curioso: a esse não faz falta essa parceira.",
+                "Miau, essa não é a diferença que se destaca aqui.",
+                "Ronronado de aprovação! Espectro similar ao imipenem, mas menos forte contra positivos: a marca do meropenem."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir apresenta maior risco de convulsões como efeito adverso?",
@@ -21179,7 +21459,27 @@
             "Meropeném",
             "Doripeném",
             "Ertapenem"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O imipenem apresenta o maior risco de convulsões entre os carbapenêmicos, seu traço distintivo mais citado — é a resposta correta.",
+                "O meropenem tem um risco convulsivo consideravelmente menor que o imipenem.",
+                "O doripenem tem um perfil de risco convulsivo similar ao meropenem, menor que o imipenem.",
+                "O ertapenem tem um risco convulsivo menor que o imipenem."
+            ],
+            "fantasma": [
+                "Essa aí! O mais associado a esse efeito adverso entre seus primos.",
+                "Esse tem bem menos esse risco.",
+                "Esse também tem menos esse risco, parecido com seu primo meropenem.",
+                "Esse também tem menos esse risco que o primeiro."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Imipenem: o carbapenêmico com mais risco convulsivo de todos.",
+                "Fijate: esse tem bem menos esse risco.",
+                "Dado curioso: esse também tem menos esse risco.",
+                "Miau, esse também tem menos esse risco."
+            ]
+        }
     },
     {
         "pergunta": "Imipeném?",
@@ -21189,7 +21489,27 @@
             "É degradado por uma dipeptidase",
             "A enzima está localizada no túbulo distal",
             "A enzima está localizada no glomérulo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O imipenem SIM é degradado por uma enzima, daí a necessidade de cilastatina.",
+                "O imipenem é degradado por uma dipeptidase renal, o motivo de sua combinação com cilastatina — é a resposta correta.",
+                "A enzima se encontra no túbulo proximal, não no distal.",
+                "A enzima se encontra no túbulo proximal, não no glomérulo."
+            ],
+            "fantasma": [
+                "Ao contrário, sim o destrói uma enzima.",
+                "Essa aí! Uma enzima renal específica o degrada, daí a necessidade de companhia.",
+                "Está em outra parte do rim, não ali.",
+                "Está em outra parte do rim, não ali."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim o destrói uma enzima.",
+                "Ronronado de aprovação! Dipeptidase renal: a enzima que degrada o imipenem.",
+                "Dado curioso: está em outra parte do rim.",
+                "Miau, está em outra parte do rim."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação do ertapenem?",
@@ -21199,7 +21519,27 @@
             "Inibe a síntese de DNA.",
             "Inibe a síntese da parede bacteriana.",
             "Atua na síntese de proteínas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ertapenem não inibe a topoisomerase II, esse não é seu alvo.",
+                "O ertapenem não inibe a síntese de DNA, esse não é seu mecanismo.",
+                "O ertapenem inibe a síntese da parede bacteriana, o mecanismo beta-lactâmico clássico — é a resposta correta.",
+                "O ertapenem não atua sobre a síntese proteica, esse é o mecanismo de outros antibióticos."
+            ],
+            "fantasma": [
+                "Esse não é o alvo desse fármaco.",
+                "Esse também não é o mecanismo desse fármaco.",
+                "Essa aí! Freia a construção da parede bacteriana.",
+                "Isso é de outros antibióticos, não desse."
+            ],
+            "gato": [
+                "Fijate: esse não é o alvo desse fármaco.",
+                "Dado curioso: esse também não é o mecanismo desse fármaco.",
+                "Ronronado de aprovação! Parede bacteriana bloqueada: o mecanismo do ertapenem.",
+                "Miau, isso é de outros antibióticos."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao Ertapenem…?",
@@ -21209,7 +21549,27 @@
             "Eles inibem a síntese de ácidos nucléicos",
             "Eles inibem a síntese da parede",
             "Eles inibem a síntese de ergosterol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ertapenem não atua sobre a síntese de proteínas, esse é o mecanismo de outros antibióticos.",
+                "O ertapenem não inibe a síntese de ácidos nucleicos, esse não é seu mecanismo.",
+                "O ertapenem inibe a síntese de parede, o mecanismo beta-lactâmico clássico — é a resposta correta.",
+                "O ertapenem não inibe a síntese de ergosterol, esse é um alvo de antifúngicos, não de antibióticos."
+            ],
+            "fantasma": [
+                "Isso é de outros antibióticos, não desse.",
+                "Esse também não é o mecanismo desse fármaco.",
+                "Essa aí! Freia a construção da parede bacteriana.",
+                "Isso é dos antifúngicos, não de um antibiótico como esse."
+            ],
+            "gato": [
+                "Fijate: isso é de outros antibióticos.",
+                "Dado curioso: esse também não é o mecanismo desse fármaco.",
+                "Ronronado de aprovação! Parede bacteriana bloqueada: o mecanismo do ertapenem.",
+                "Miau, isso é dos antifúngicos, não desse antibiótico."
+            ]
+        }
     },
     {
         "pergunta": "O mecanismo de ação do Ertapenem?",
@@ -21219,7 +21579,27 @@
             "Inibe a síntese de DNA",
             "Inibe a síntese da parede",
             "Interage com receptores específicos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ertapenem não atua sobre a síntese proteica, esse é o mecanismo de outros antibióticos.",
+                "O ertapenem não inibe a síntese de DNA, esse não é seu mecanismo.",
+                "O ertapenem inibe a síntese da parede, o mecanismo beta-lactâmico clássico — é a resposta correta.",
+                "O ertapenem não interage com receptores específicos como mecanismo antibacteriano."
+            ],
+            "fantasma": [
+                "Isso é de outros antibióticos, não desse.",
+                "Esse também não é o mecanismo desse fármaco.",
+                "Essa aí! Freia a construção da parede bacteriana.",
+                "Esse não é o mecanismo desse antibiótico."
+            ],
+            "gato": [
+                "Fijate: isso é de outros antibióticos.",
+                "Dado curioso: esse também não é o mecanismo desse fármaco.",
+                "Ronronado de aprovação! Parede bloqueada: o mecanismo do ertapenem.",
+                "Miau, esse não é o mecanismo desse antibiótico."
+            ]
+        }
     },
     {
         "pergunta": "Ertapenem?",
@@ -21229,7 +21609,27 @@
             "Atua na síntese de proteínas",
             "Faz parte do grupo Carbapenem",
             "Não atua no Gram –"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ertapenem não pertence aos antibióticos imidazólicos (essa classe é a do metronidazol).",
+                "O ertapenem não atua sobre a síntese de proteínas, esse é o mecanismo de outros antibióticos.",
+                "O ertapenem faz parte do grupo dos carbapenêmicos — é a resposta correta.",
+                "O ertapenem SIM atua sobre gram-negativos, embora (diferente do imipenem/meropenem) não cubra Pseudomonas nem Acinetobacter."
+            ],
+            "fantasma": [
+                "Não é dessa família, essa é do metronidazol.",
+                "Isso é de outros antibióticos, não desse.",
+                "Essa aí! É um membro dessa família de beta-lactâmicos.",
+                "Ao contrário, sim atua sobre essas bactérias, embora com algumas exceções."
+            ],
+            "gato": [
+                "Fijate: não é dessa família, essa é do metronidazol.",
+                "Dado curioso: isso é de outros antibióticos.",
+                "Ronronado de aprovação! Carbapenêmico: a família real do ertapenem.",
+                "Miau, ao contrário, sim atua sobre essas bactérias, com algumas exceções."
+            ]
+        }
     },
     {
         "pergunta": "Ertapenem?",
