@@ -31861,7 +31861,27 @@
             "Aumenta o risco de toxicidade de outros medicamentos devido à inibição enzimática ao nível do CYP450 que causa",
             "Aumenta muito o risco de mielotoxicidade",
             "Aumenta o risco de nefrotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: os inibidores de protease como o atazanavir são INIBIDORES (não indutores) do CYP450.",
+                "Aumenta o risco de toxicidade de outros fármacos pela inibição enzimática do CYP450, a preocupação chave em um paciente polimedicado — é a resposta correta.",
+                "Não é essa a preocupação principal estabelecida para o atazanavir.",
+                "Não é essa a preocupação principal estabelecida para o atazanavir."
+            ],
+            "fantasma": [
+                "Ao contrário, esse fármaco freia essa via, não a acelera.",
+                "Essa aí! Freia tanto essa via que outros fármacos se acumulam e ficam tóxicos.",
+                "Essa não é a preocupação principal aqui.",
+                "Essa não é a preocupação principal aqui."
+            ],
+            "gato": [
+                "Fijate: ao contrário, esse fármaco freia essa via.",
+                "Ronronado de aprovação! Inibição do CYP450: o risco chave do atazanavir em polimedicados.",
+                "Dado curioso: essa não é a preocupação principal aqui.",
+                "Miau, essa não é a preocupação principal aqui."
+            ]
+        }
     },
     {
         "pergunta": "O que é ritonavir e quais cuidados devem ser tomados ao seu uso?",
@@ -31871,7 +31891,27 @@
             "Inibidor de protease produz hipertrigliceridemia e hipercolesterolemia e resistência à insulina",
             "Inibidor da transcriptase reversa e indutor do CYP3 A4",
             "Inibidor de entrada do HIV, liga-se à gp41, essencial para a fusão"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ritonavir não é um inibidor de integrase; além disso, sobe (não baixa) o colesterol e os triglicerídeos.",
+                "É um inibidor de protease que produz hipertrigliceridemia, hipercolesterolemia e resistência à insulina, seu perfil metabólico bem estabelecido — é a resposta correta.",
+                "É ao contrário: o ritonavir é um inibidor de PROTEASE (não de transcriptase reversa), e é um potente INIBIDOR (não indutor) do CYP3A4.",
+                "Não é esse o mecanismo do ritonavir; isso descreve os inibidores de fusão (como enfuvirtida)."
+            ],
+            "fantasma": [
+                "Não é dessa família, e sobe esses valores, não os baixa.",
+                "Essa aí! Sobe gorduras no sangue e baixa a sensibilidade à insulina, seu perfil característico.",
+                "Ao contrário, é de outra família, e freia essa via, não a acelera.",
+                "Isso é de outro fármaco, um que se gruda em outra proteína viral."
+            ],
+            "gato": [
+                "Fijate: não é dessa família, e sobe esses valores.",
+                "Ronronado de aprovação! Hipertrigliceridemia + hipercolesterolemia + resistência à insulina: o perfil do ritonavir.",
+                "Dado curioso: ao contrário, é de outra família, e freia essa via.",
+                "Miau, isso é de outro fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a opção CORRETA em relação ao cidofovir:",
@@ -31881,7 +31921,27 @@
             "Cruza BHE",
             "Produz desaceleração e término do alongamento",
             "Não aumenta as transaminases"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não se recomenda combinar com outros nefrotóxicos, dado seu próprio risco renal significativo.",
+                "Não está estabelecida essa boa penetração no SNC como característica destacada do cidofovir.",
+                "Produz lentidão e terminação da elongação, seu mecanismo característico como análogo de nucleotídeo — é a resposta correta.",
+                "Não está estabelecido que não afete as transaminases; sua preocupação principal é mais renal."
+            ],
+            "fantasma": [
+                "Ao contrário, melhor evitar juntar com outros que prejudicam o rim.",
+                "Essa não é a característica destacada desse fármaco.",
+                "Essa aí! Freia e corta a cadeia que está se construindo.",
+                "Isso não está estabelecido assim; sua preocupação é mais o rim."
+            ],
+            "gato": [
+                "Fijate: ao contrário, melhor evitar combiná-lo com outros nefrotóxicos.",
+                "Dado curioso: essa não é a característica destacada aqui.",
+                "Ronronado de aprovação! Terminação da elongação: o mecanismo característico do cidofovir.",
+                "Miau, isso não está estabelecido assim."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a opção CORRETA em relação ao tenofovir:",
@@ -31891,7 +31951,27 @@
             "Ele tem um BD oral muito bom",
             "Diminui com alimentos gordurosos",
             "Requer apenas duas etapas de fosforilação"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: o tenofovir SIM é uma pró-droga (do tenofovir disoproxil fumarato).",
+                "É ao contrário: tem biodisponibilidade oral relativamente BAIXA (~25-40%), não muito boa.",
+                "É ao contrário: AUMENTA (não diminui) com refeições gordurosas.",
+                "Só requer dois passos de fosforilação, por ser um análogo NUCLEOTÍDICO (já traz um fosfato incorporado) — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, sim precisa se transformar primeiro.",
+                "Ao contrário, não se absorve tão bem por boca.",
+                "Ao contrário, a gordura na comida ajuda a absorver melhor.",
+                "Essa aí! Já vem com um fosfato de fábrica, por isso precisa de menos passos."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim precisa se transformar primeiro.",
+                "Dado curioso: ao contrário, não se absorve tão bem por boca.",
+                "Miau, ao contrário, a gordura ajuda a absorver.",
+                "Ronronado de aprovação! Só duas fosforilações: a característica do análogo nucleotídico tenofovir."
+            ]
+        }
     },
     {
         "pergunta": "Quais dos seguintes são efeitos adversos típicos do tenofovir?",
@@ -31901,7 +31981,27 @@
             "Nefrotoxicidade e hepatotoxicidade",
             "Toxicidade da medula óssea e hepatotoxicidade",
             "Toxicidade da medula óssea e prolongamento do intervalo QT"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Nefrotoxicidade e perda de massa óssea são os efeitos adversos típicos do tenofovir, bem estabelecidos — é a resposta correta.",
+                "A hepatotoxicidade não é o par característico do tenofovir; é a perda óssea, junto com a nefrotoxicidade.",
+                "A toxicidade medular é mais da zidovudina, não do tenofovir.",
+                "A prolongação do QT não está estabelecida como efeito característico do tenofovir."
+            ],
+            "fantasma": [
+                "Essa aí! O rim e o osso são os pontos fracos desse fármaco.",
+                "Isso não é o par característico desse fármaco.",
+                "Isso é mais da zidovudina, não desse fármaco.",
+                "Isso não está estabelecido para esse fármaco."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Nefrotoxicidade + perda óssea: o combo típico do tenofovir.",
+                "Fijate: isso não é o par característico aqui.",
+                "Dado curioso: isso é mais da zidovudina.",
+                "Miau, isso não está estabelecido para esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Indique a resposta CORRETA em relação ao Tenofovir:",
@@ -31911,7 +32011,27 @@
             "É um inibidor nucleotídico da transcriptase reversa que tem como principal reação adversa a nefropatia tubular e a diminuição da densidade mineral óssea.",
             "É um inibidor nucleosídeo da transcriptase reversa cujas reações adversas características são: erupção cutânea, tontura, dificuldade de concentração, disforia, sonhos vívidos, insônia, pesadelos e episódios de psicose.",
             "É um inibidor da integrase cujas reações adversas características são: erupção cutânea, tontura, dificuldade de concentração, disforia, sonhos vívidos, insônia, pesadelos e episódios de psicose"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tenofovir não é um inibidor de proteases; é um inibidor nucleotídico da transcriptase reversa.",
+                "É um inibidor nucleotídico da transcriptase reversa cuja reação adversa principal é a nefropatia tubular e a diminuição da densidade óssea — é a resposta correta.",
+                "Esse perfil de efeitos adversos (sonhos vívidos, psicose) é do efavirenz, não do tenofovir; além disso, o tenofovir é nucleotídico, não nucleosídico.",
+                "O tenofovir não é um inibidor de integrase, e esse perfil de efeitos adversos também não lhe corresponde."
+            ],
+            "fantasma": [
+                "Não é dessa família esse fármaco.",
+                "Essa aí! Rim e ossos, o combo característico desse fármaco.",
+                "Esse perfil é de outro fármaco, o efavirenz, e a família também está errada.",
+                "Nem a família nem o perfil de efeitos são corretos aqui."
+            ],
+            "gato": [
+                "Fijate: não é dessa família esse fármaco.",
+                "Ronronado de aprovação! Nefropatia tubular + densidade óssea: o perfil correto do tenofovir.",
+                "Dado curioso: esse perfil é do efavirenz, e a família está errada.",
+                "Miau, nem a família nem o perfil são corretos aqui."
+            ]
+        }
     },
     {
         "pergunta": "Um efeito adverso altamente característico do Tenofovir é:",
@@ -31921,7 +32041,27 @@
             "Reações de hipersensibilidade graves",
             "Reações psiquiátricas",
             "toxicidade medular"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefropatia tubular é o efeito adverso altamente característico do tenofovir — é a resposta correta.",
+                "As reações graves de hipersensibilidade são mais características do abacavir, não do tenofovir.",
+                "As reações psiquiátricas são mais características do efavirenz, não do tenofovir.",
+                "A toxicidade medular é mais característica da zidovudina, não do tenofovir."
+            ],
+            "fantasma": [
+                "Essa aí! O rim é o ponto fraco clássico desse fármaco.",
+                "Isso é mais do abacavir, não desse fármaco.",
+                "Isso é mais do efavirenz, não desse fármaco.",
+                "Isso é mais da zidovudina, não desse fármaco."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Nefropatia tubular: o efeito altamente característico do tenofovir.",
+                "Fijate: isso é mais do abacavir.",
+                "Dado curioso: isso é mais do efavirenz.",
+                "Miau, isso é mais da zidovudina."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos inibidores de RT não nucleosídeos, selecione INCORRETO:",
@@ -31932,7 +32072,27 @@
             "O efavirenz aumenta com alimentos gordurosos",
             "Nevirapina aumenta com alimentos açucarados",
             "A delavirdina tem metabolismo hepático"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: a delavirdina sim diminui com antiácidos e alimentos.",
+                "Essa afirmação é correta: o efavirenz sim aumenta com refeições gordurosas.",
+                "Não está estabelecida essa interação específica com refeições açucaradas para a nevirapina — é a afirmação INCORRETA, resposta correta segundo o feedback do banco.",
+                "Essa afirmação é correta: a delavirdina sim tem metabolismo hepático."
+            ],
+            "fantasma": [
+                "Isso é verdade, baixa sua absorção com isso.",
+                "Isso também é verdade, sobe sua absorção com isso.",
+                "Essa aí! Essa relação com o doce não está estabelecida para esse fármaco.",
+                "Isso também é verdade, passa pelo fígado."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, baixa sua absorção com isso.",
+                "Dado curioso: isso também é verdade, sobe com isso.",
+                "Ronronado de aprovação! Sem essa relação com o doce: a incorreta da lista.",
+                "Miau, isso também é verdade, passa pelo fígado."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é um efeito adverso característico da Emtricitabina?",
@@ -31942,7 +32102,27 @@
             "Hiperpigmentação das palmas das mãos e plantas dos pés",
             "Encefalopatia desmielinizante",
             "Mielotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cardiotoxicidade não é um efeito adverso característico da emtricitabina.",
+                "A hiperpigmentação de palmas e plantas é o efeito adverso característico e distintivo da emtricitabina — é a resposta correta.",
+                "A encefalopatia desmielinizante não é um efeito adverso característico da emtricitabina.",
+                "A mielotoxicidade é mais da zidovudina, não da emtricitabina."
+            ],
+            "fantasma": [
+                "Isso não é o característico desse fármaco.",
+                "Essa aí! As mãos e os pés podem escurecer com esse fármaco.",
+                "Isso não é o característico desse fármaco.",
+                "Isso é mais da zidovudina, não desse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico desse fármaco.",
+                "Ronronado de aprovação! Hiperpigmentação de palmas e plantas: a marca distintiva da emtricitabina.",
+                "Dado curioso: isso não é o característico desse fármaco.",
+                "Miau, isso é mais da zidovudina."
+            ]
+        }
     },
     {
         "pergunta": "Indique a resposta CORRETA em relação às reações adversas características da Zidovudina:",
@@ -31952,7 +32132,27 @@
             "Nefropatia tubular, cistite hemorrágica",
             "Hepatotoxicidade, ototoxicidade, nefrotoxicidade",
             "Resistência à insulina, delírios e alucinações"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Mielossupressão, acidose lática, neurotoxicidade, miopatia, pancreatite e lipodistrofia compõem o perfil estabelecido da zidovudina — é a resposta correta.",
+                "Não são esses os efeitos característicos da zidovudina; são mais de outros fármacos (tenofovir/ciclofosfamida).",
+                "Não são esses os efeitos característicos da zidovudina.",
+                "Não são esses os efeitos característicos da zidovudina; são mais de inibidores de protease/efavirenz."
+            ],
+            "fantasma": [
+                "Essa aí! O combo completo e real desse fármaco.",
+                "Isso é de outros fármacos, não desse.",
+                "Isso não é o característico desse fármaco.",
+                "Isso é de outros fármacos, não desse."
+            ],
+            "gato": [
+                "Ronronado de aprovação! O perfil completo estabelecido da zidovudina.",
+                "Fijate: isso é de outros fármacos.",
+                "Dado curioso: isso não é o característico desse fármaco.",
+                "Miau, isso é de outros fármacos."
+            ]
+        }
     },
     {
         "pergunta": "Paciente em tratamento com Furosemida e aciclovir intravenoso, que efeito adverso pode ocorrer?",
@@ -31962,7 +32162,27 @@
             "Hipercalemia",
             "Hepatotoxicidade",
             "Hiperuricemia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade é o risco relevante dessa combinação, já que a desidratação pelo diurético pode agravar a cristalização renal do aciclovir — é a resposta correta.",
+                "Não está estabelecida a hipercalemia com essa combinação; o furosemida na verdade tende a baixar o potássio.",
+                "Não é essa a preocupação estabelecida com essa combinação.",
+                "Não é essa a preocupação principal estabelecida com essa combinação."
+            ],
+            "fantasma": [
+                "Essa aí! Se o paciente desidratar, o rim sofre mais com esse antiviral.",
+                "Ao contrário, esse diurético tende a baixar o potássio, não a subir.",
+                "Essa não é a preocupação com essa combinação.",
+                "Essa não é a preocupação principal aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Nefrotoxicidade: o risco relevante dessa combinação diurético-aciclovir.",
+                "Fijate: ao contrário, esse diurético baixa o potássio.",
+                "Dado curioso: essa não é a preocupação com essa combinação.",
+                "Miau, essa não é a preocupação principal aqui."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao Aciclovir, indique a opção correta:",
@@ -31972,7 +32192,27 @@
             "O aciclovir depende de enzimas virais para toda a sua fosforilação.",
             "A fosforilação do Aciclovir depende de enzimas da célula hospedeira, o que pode significar danos às células não infectadas.",
             "A sua boa biodisponibilidade oral explica a sua extensa distribuição nos tecidos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Se o considera um fármaco de categoria B na gravidez, um dado de segurança reconhecido — é a resposta correta.",
+                "Não é verdade que dependa de enzimas virais para TODAS as suas fosforilações; só o primeiro passo depende da enzima viral.",
+                "É ao contrário: é justamente essa dependência da enzima VIRAL no primeiro passo o que lhe dá seletividade, protegendo (não prejudicando) as células não infectadas.",
+                "É ao contrário: tem uma biodisponibilidade oral mais bem modesta, não tão boa para explicar por si só sua distribuição."
+            ],
+            "fantasma": [
+                "Essa aí! Essa é sua categoria de segurança na gravidez.",
+                "Não é assim, só o primeiro passo depende dessa enzima viral.",
+                "Ao contrário, essa dependência é o que o torna seletivo e mais seguro para as células saudáveis.",
+                "Ao contrário, não se absorve tão bem por boca."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Categoria B: a classificação de segurança na gravidez do aciclovir.",
+                "Fijate: não é assim, só o primeiro passo depende dessa enzima.",
+                "Dado curioso: ao contrário, essa dependência o torna seletivo e seguro.",
+                "Miau, ao contrário, não se absorve tão bem por boca."
+            ]
+        }
     },
     {
         "pergunta": "Mencione a resposta CORRETA sobre o aciclovir:",
@@ -31982,7 +32222,27 @@
             "Atua inibindo a DNA polimerase viral; não deve ser administrado por via intravenosa devido ao risco de causar convulsões.",
             "Atua inibindo a transcriptase reversa e suas reações adversas características são: neurotoxicidade e nefrotoxicidade.",
             "É indicado para o tratamento de episódios e manejo de recorrência de HS-1 genital e gengivoestomatite exclusivamente por via parenteral."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Atua inibindo a DNA polimerase viral, com neurotoxicidade e nefrotoxicidade como reações adversas características, a descrição correta — é a resposta correta.",
+                "Não está estabelecida essa restrição para a via intravenosa; na verdade se usa muito por essa via em infecções graves.",
+                "É ao contrário: atua inibindo a DNA polimerase viral, não a transcriptase reversa (isso é de outros antivirais).",
+                "É ao contrário: SIM está disponível por via oral (e tópica), não exclusivamente parenteral."
+            ],
+            "fantasma": [
+                "Essa aí! Freia a fábrica de DNA do vírus, com esses dois riscos característicos.",
+                "Ao contrário, se usa muito por essa via em casos graves.",
+                "Isso é de outros antivirais, não desse fármaco.",
+                "Ao contrário, também existe em comprimido e creme."
+            ],
+            "gato": [
+                "Ronronado de aprovação! DNA polimerase viral bloqueada, com neuro/nefrotoxicidade: a descrição correta do aciclovir.",
+                "Fijate: ao contrário, se usa muito por essa via em casos graves.",
+                "Dado curioso: isso é de outros antivirais.",
+                "Miau, ao contrário, também existe em comprimido e creme."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é um efeito adverso característico do aciclovir intravenoso?",
@@ -31992,7 +32252,27 @@
             "Insuficiência renal aguda",
             "Prolongamento do intervalo QT",
             "Pneumonite intersticial"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A hepatotoxicidade não é a característica estabelecida do aciclovir IV.",
+                "A insuficiência renal aguda é o efeito adverso característico do aciclovir por via intravenosa, por cristalização renal — é a resposta correta.",
+                "A prolongação do QT não está estabelecida como efeito característico do aciclovir.",
+                "A pneumonite intersticial é mais da nitrofurantoína, não do aciclovir."
+            ],
+            "fantasma": [
+                "Isso não é o característico desse fármaco.",
+                "Essa aí! O rim pode sofrer com a forma intravenosa desse fármaco.",
+                "Isso não está estabelecido para esse fármaco.",
+                "Isso é mais da nitrofurantoína, não desse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico desse fármaco.",
+                "Ronronado de aprovação! Insuficiência renal aguda: o efeito característico do aciclovir IV.",
+                "Dado curioso: isso não está estabelecido para esse fármaco.",
+                "Miau, isso é mais da nitrofurantoína."
+            ]
+        }
     },
     {
         "pergunta": "Qual medicamento eu suspeito em pacientes com nefrotoxicidade?",
@@ -32002,7 +32282,27 @@
             "Azitromicina_x000B_Paracetamol_x000B_Metronidazol",
             "nan",
             "nan"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O aciclovir é o fármaco suspeito diante de nefrotoxicidade, coerente com seu risco renal bem estabelecido, especialmente por via IV — é a resposta correta.",
+                "Essa opção combina vários fármacos de forma pouco clara na fonte original, sem corresponder à resposta correta.",
+                "Essa opção não corresponde a um fármaco real nessa pergunta (dado corrompido na fonte original).",
+                "Essa opção não corresponde a um fármaco real nessa pergunta (dado corrompido na fonte original)."
+            ],
+            "fantasma": [
+                "Essa aí! O suspeito clássico quando o rim sofre, principalmente pela veia.",
+                "Essa opção está mal montada no original, não é a resposta.",
+                "Essa opção nem sequer é um fármaco real aqui.",
+                "Essa opção nem sequer é um fármaco real aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Aciclovir: o suspeito clássico diante de nefrotoxicidade.",
+                "Fijate: essa opção está mal montada no original.",
+                "Dado curioso: essa opção nem sequer é um fármaco real.",
+                "Miau, essa opção nem sequer é um fármaco real."
+            ]
+        }
     },
     {
         "pergunta": "Indique o CORRETO em relação ao aciclovir:",
@@ -32012,7 +32312,27 @@
             "Pode ser administrado por via retal",
             "Não hidrolisa em ID",
             "Não produz neurotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: tem uma biodisponibilidade oral mais bem modesta, não excelente.",
+                "Não está estabelecida a via retal como uma via habitual de administração para esse fármaco neste banco.",
+                "Não se hidrolisa no intestino delgado, mantendo-se estável durante a absorção oral — é a resposta correta.",
+                "É ao contrário: SIM pode produzir neurotoxicidade, especialmente por via IV."
+            ],
+            "fantasma": [
+                "Ao contrário, não se absorve tão bem por boca.",
+                "Essa via não está estabelecida para esse fármaco aqui.",
+                "Essa aí! Não se quebra no intestino antes de se absorver.",
+                "Ao contrário, sim pode afetar os nervos, principalmente pela veia."
+            ],
+            "gato": [
+                "Fijate: ao contrário, não se absorve tão bem por boca.",
+                "Dado curioso: essa via não está estabelecida aqui.",
+                "Ronronado de aprovação! Sem hidrólise intestinal: a característica correta do aciclovir.",
+                "Miau, ao contrário, sim pode afetar os nervos."
+            ]
+        }
     },
     {
         "pergunta": "É Aciclovir?",
@@ -32022,7 +32342,27 @@
             "Toxicidade muito alta na medula óssea",
             "Um antiviral útil para hepatite C",
             "Útil para citomegalovírus"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Útil para o herpes zóster, sua indicação clássica e bem estabelecida — é a resposta correta.",
+                "Não está estabelecida essa alta toxicidade medular para o aciclovir; isso é mais da zidovudina.",
+                "Não tem atividade contra o vírus da hepatite C, uma família viral completamente diferente.",
+                "É ao contrário: o aciclovir tem atividade FRACA/não confiável contra o citomegalovírus, uma limitação reconhecida do seu espectro."
+            ],
+            "fantasma": [
+                "Essa aí! Sua indicação clássica contra esse vírus em particular.",
+                "Isso é mais da zidovudina, não desse fármaco.",
+                "Esse vírus é de outra família completamente diferente.",
+                "Ao contrário, não cobre bem esse outro vírus em particular."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Herpes zóster: a indicação clássica do aciclovir.",
+                "Fijate: isso é mais da zidovudina.",
+                "Dado curioso: esse vírus é de outra família diferente.",
+                "Miau, ao contrário, não cobre bem esse outro vírus."
+            ]
+        }
     },
     {
         "pergunta": "Mencione a resposta CORRETA sobre o Aciclovir:",
@@ -32032,7 +32372,27 @@
             "O citomegalovírus está dentro do seu espectro",
             "Devido à sua baixa biodisponibilidade oral, só pode ser administrado por via intravenosa.",
             "A administração intravenosa pode causar nefrotoxicidade."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não está estabelecida a toxicidade medular como efeito característico do aciclovir.",
+                "É ao contrário: o citomegalovírus NÃO está confiavelmente dentro do seu espectro, uma limitação reconhecida.",
+                "É ao contrário: SIM tem forma oral disponível, não se limita à via IV.",
+                "Por via intravenosa pode gerar nefrotoxicidade, seu risco característico bem estabelecido — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso não está estabelecido com esse fármaco.",
+                "Ao contrário, esse vírus escapa, não está bem coberto.",
+                "Ao contrário, também existe em comprimido.",
+                "Essa aí! O rim pode sofrer com a forma intravenosa desse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso não está estabelecido com esse fármaco.",
+                "Dado curioso: ao contrário, esse vírus escapa.",
+                "Miau, ao contrário, também existe em comprimido.",
+                "Ronronado de aprovação! Nefrotoxicidade por via IV: o risco característico do aciclovir."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos você usaria em um paciente com Herpes Zoster?",
@@ -32042,7 +32402,27 @@
             "Aciclovir",
             "Ritonavir",
             "Ribavirina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O sofosbuvir é para hepatite C, não para herpes zóster.",
+                "O aciclovir é o fármaco indicado para o herpes zóster — é a resposta correta.",
+                "O ritonavir é um inibidor de protease do HIV, não indicado para herpes zóster.",
+                "A ribavirina não é o tratamento estabelecido para herpes zóster."
+            ],
+            "fantasma": [
+                "Esse é para outro vírus completamente diferente.",
+                "Essa aí! O indicado clássico contra essa infecção viral.",
+                "Esse é para outro vírus completamente diferente.",
+                "Essa não é o tratamento estabelecido para essa infecção."
+            ],
+            "gato": [
+                "Fijate: esse é para outro vírus completamente diferente.",
+                "Ronronado de aprovação! Aciclovir: o indicado clássico para o herpes zóster.",
+                "Dado curioso: esse é para outro vírus diferente.",
+                "Miau, essa não é o tratamento estabelecido aqui."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o principal mecanismo de ação do aciclovir?",
@@ -32052,7 +32432,27 @@
             "Inibição da síntese de DNA viral pela inibição da DNA polimerase viral",
             "Inibição da protease viral",
             "Inibição da entrada do vírus na célula"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o mecanismo do aciclovir; isso é dos antirretrovirais NRTI.",
+                "Inibição da síntese de DNA viral mediante a inibição da DNA polimerase viral, seu mecanismo característico — é a resposta correta.",
+                "Não é esse o mecanismo do aciclovir; isso é dos inibidores de protease do HIV.",
+                "Não é esse o mecanismo do aciclovir; isso é dos inibidores de fusão/entrada."
+            ],
+            "fantasma": [
+                "Isso é de outros antivirais para o HIV, não desse fármaco.",
+                "Essa aí! Freia a fábrica de DNA do vírus do herpes.",
+                "Isso é de outro tipo de antiviral, não desse.",
+                "Isso é de outro mecanismo antiviral, não desse."
+            ],
+            "gato": [
+                "Fijate: isso é de outros antivirais para o HIV.",
+                "Ronronado de aprovação! DNA polimerase viral bloqueada: o mecanismo do aciclovir.",
+                "Dado curioso: isso é de outro tipo de antiviral.",
+                "Miau, isso é de outro mecanismo antiviral."
+            ]
+        }
     },
     {
         "pergunta": "Qual é a principal indicação terapêutica do aciclovir?",
