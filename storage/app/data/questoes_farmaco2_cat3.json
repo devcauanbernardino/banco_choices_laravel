@@ -42325,7 +42325,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No es un nitrofurano ni se usa para hidatidosis; ambos datos son incorrectos para este fármaco.",
+                    "No es un nitrofurano; ese grupo corresponde al nifurtimox, no al benznidazol.",
+                    "El benznidazol es un nitroimidazol utilizado clásicamente para el Chagas crónico — es la respuesta correcta.",
+                    "No es un nitrofurano ni se usa para amebiasis; ambos datos corresponden a otro contexto."
+                ],
+                "fantasma": [
+                    "Ni la familia ni la enfermedad son correctas aquí.",
+                    "No es de esa familia, esa es la de su primo el nifurtimox.",
+                    "¡Esta! Su familia real, usada clásicamente en la fase crónica de esta enfermedad.",
+                    "Ni la familia ni la enfermedad son correctas aquí."
+                ],
+                "gato": [
+                    "Fijate: ni la familia ni la enfermedad son correctas.",
+                    "Dato curioso: no es de esa familia, esa es de su primo.",
+                    "¡Ronroneo de aprobación! Nitroimidazol para Chagas crónico: la clasificación real del benznidazol.",
+                    "Miau, ni la familia ni la enfermedad son correctas aquí."
+                ]
+            }
         },
         {
             "numero": 902,
@@ -42352,7 +42372,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El benznidazol no es un nitrofurano, es un nitroimidazol.",
+                    "No hay una comparación establecida de menos efectos adversos frente al metronidazol para este fármaco.",
+                    "El benznidazol se administra por vía ORAL, no únicamente intravenosa.",
+                    "En su espectro incluye al Trypanosoma cruzi, el parásito causante del Chagas — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No es de esa familia, es de otra.",
+                    "Esa comparación no está establecida para este fármaco.",
+                    "Al revés, se toma por boca, no solo por vena.",
+                    "¡Esta! El parásito que causa la enfermedad que trata este fármaco."
+                ],
+                "gato": [
+                    "Fijate: no es de esa familia.",
+                    "Dato curioso: esa comparación no está establecida aquí.",
+                    "Miau, al revés, se toma por boca.",
+                    "¡Ronroneo de aprobación! Trypanosoma cruzi: el parásito dentro del espectro del benznidazol."
+                ]
+            }
         },
         {
             "numero": 903,
@@ -42379,7 +42419,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El albendazol no es un antimicótico azólico; es un antihelmíntico de otra familia.",
+                    "El albendazol no es un antimicótico azólico ni se limita a Aspergillus.",
+                    "El albendazol no es un antichagásico; esa tarea es del nifurtimox/benznidazol.",
+                    "Es un antihelmíntico perteneciente al grupo de los benzimidazoles, su clasificación correcta — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No es de esa familia de antifúngicos.",
+                    "Tampoco es de esa familia ni se limita así.",
+                    "Esa tarea es de otro fármaco distinto.",
+                    "¡Esta! Su familia real, la de los antihelmínticos benzimidazólicos."
+                ],
+                "gato": [
+                    "Fijate: no es de esa familia de antifúngicos.",
+                    "Dato curioso: tampoco es de esa familia.",
+                    "Miau, esa tarea es de otro fármaco.",
+                    "¡Ronroneo de aprobación! Benzimidazol: la familia real del albendazol."
+                ]
+            }
         },
         {
             "numero": 904,
@@ -42406,7 +42466,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El nifurtimox/benznidazol es la combinación clásica para combatir al Trypanosoma cruzi, sospechado por el antecedente de la vinchuca y el signo de Romaña — es la respuesta correcta.",
+                    "La ampicilina no está indicada para esta infección parasitaria.",
+                    "El metronidazol no cubre al Trypanosoma cruzi, fuera de su espectro establecido.",
+                    "El tinidazol, similar al metronidazol, tampoco cubre al Trypanosoma cruzi."
+                ],
+                "fantasma": [
+                    "¡Esta! El combo clásico contra el parásito de esta enfermedad, sospechada por el insecto y el signo característico.",
+                    "Este no sirve para esta infección parasitaria.",
+                    "Este parásito se le escapa a este fármaco.",
+                    "Este tampoco cubre a este parásito en particular."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Nifurtimox/benznidazol: la combinación clásica contra el Chagas agudo, sospechado por la vinchuca.",
+                    "Fijate: este no sirve para esta infección parasitaria.",
+                    "Dato curioso: este parásito se le escapa a este fármaco.",
+                    "Miau, este tampoco cubre a este parásito."
+                ]
+            }
         },
         {
             "numero": 905,
@@ -42433,7 +42513,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Produce desorganización y desaparición de los microtúbulos en el parásito, el mecanismo clásico de los benzimidazoles como el mebendazol — es la respuesta correcta.",
+                    "No es este el mecanismo del mebendazol; eso es más propio del metronidazol/nitrocompuestos.",
+                    "No es este el mecanismo del mebendazol; esa descripción no corresponde a los benzimidazoles.",
+                    "No es este el mecanismo del mebendazol; esa descripción es más propia de la ivermectina."
+                ],
+                "fantasma": [
+                    "¡Esta! Los microtúbulos del parásito se desarman con este fármaco.",
+                    "Eso es más del metronidazol, no de este fármaco.",
+                    "Esa no es la descripción de este fármaco.",
+                    "Esa descripción es más de la ivermectina, no de este fármaco."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Desorganización de microtúbulos: el mecanismo clásico del mebendazol.",
+                    "Fijate: eso es más del metronidazol.",
+                    "Dato curioso: esa no es la descripción de este fármaco.",
+                    "Miau, esa descripción es más de la ivermectina."
+                ]
+            }
         },
         {
             "numero": 906,
@@ -42460,7 +42560,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No es este el mecanismo del mebendazol; eso no está establecido para este fármaco.",
+                    "No es este el mecanismo del mebendazol; eso es propio del metronidazol/anaerobiosis.",
+                    "Inhibe la polimerización de los microtúbulos al unirse a la β-tubulina, el mecanismo preciso del mebendazol — es la respuesta correcta.",
+                    "No es este el mecanismo del mebendazol; no está establecido como parálisis tónica."
+                ],
+                "fantasma": [
+                    "Eso no es lo que hace este fármaco.",
+                    "Eso es del metronidazol, no de este fármaco.",
+                    "¡Esta! Se pega a esta proteína y desarma la estructura interna del parásito.",
+                    "Eso no está establecido para este fármaco."
+                ],
+                "gato": [
+                    "Fijate: eso no es lo que hace este fármaco.",
+                    "Dato curioso: eso es del metronidazol.",
+                    "¡Ronroneo de aprobación! Unión a la β-tubulina: el mecanismo preciso del mebendazol.",
+                    "Miau, eso no está establecido para este fármaco."
+                ]
+            }
         },
         {
             "numero": 907,
@@ -42487,7 +42607,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ivermectina no es un antiviral; es un antiparasitario.",
+                    "La ivermectina no es un antibacteriano de las polimixinas.",
+                    "Es un antihelmíntico que también puede utilizarse para el tratamiento de la sarna (Sarcoptes scabiei), un uso adicional bien establecido — es la respuesta correcta.",
+                    "La ivermectina no es un antimicótico."
+                ],
+                "fantasma": [
+                    "No es de esa clase de fármacos.",
+                    "Tampoco es de esa familia de antibióticos.",
+                    "¡Esta! Sirve para gusanos y también para este ácaro particular.",
+                    "No es de esa clase de fármacos antifúngicos."
+                ],
+                "gato": [
+                    "Fijate: no es de esa clase de fármacos.",
+                    "Dato curioso: tampoco es de esa familia de antibióticos.",
+                    "¡Ronroneo de aprobación! Sarcoptes scabiei: el uso adicional bien establecido de la ivermectina.",
+                    "Miau, no es de esa clase de antifúngicos."
+                ]
+            }
         },
         {
             "numero": 908,
@@ -42514,7 +42654,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La vancomicina no está indicada para esta infección.",
+                    "El aztreonam no tiene actividad contra esta bacteria espiralada.",
+                    "La ceftriaxona es una alternativa reconocida para esta infección entre las opciones dadas — es la respuesta correcta.",
+                    "La cefalexina no está indicada para esta infección específica."
+                ],
+                "fantasma": [
+                    "Este no está indicado para esta infección.",
+                    "Este no cubre a esta bacteria en particular.",
+                    "¡Esta! La alternativa reconocida entre las opciones para esta infección.",
+                    "Esta no está indicada para esta infección específica."
+                ],
+                "gato": [
+                    "Fijate: este no está indicado para esta infección.",
+                    "Dato curioso: este no cubre a esta bacteria.",
+                    "¡Ronroneo de aprobación! Ceftriaxona: la alternativa reconocida entre las opciones dadas.",
+                    "Miau, esta no está indicada para esta infección."
+                ]
+            }
         },
         {
             "numero": 909,
@@ -42541,7 +42701,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El nifurtimox no cubre este parásito intestinal; es para Chagas.",
+                    "La doxiciclina es un antibiótico, no un antihelmíntico; no cubre este parásito.",
+                    "El metronidazol no cubre helmintos; su espectro es anaerobio/protozoario.",
+                    "El albendazol es el antihelmíntico de elección para esta parasitosis intestinal por oxiuros — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Este es para otra enfermedad parasitaria distinta.",
+                    "Este es un antibiótico, no sirve para este gusano.",
+                    "Este no llega a los gusanos, es de otro terreno.",
+                    "¡Esta! El antihelmíntico clásico contra este gusano intestinal."
+                ],
+                "gato": [
+                    "Fijate: este es para otra enfermedad parasitaria.",
+                    "Dato curioso: este es un antibiótico, no sirve para gusanos.",
+                    "Miau, este no llega a los gusanos.",
+                    "¡Ronroneo de aprobación! Albendazol: el antihelmíntico de elección contra los oxiuros."
+                ]
+            }
         },
         {
             "numero": 910,
@@ -42568,7 +42748,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Mebendazol, con malestar abdominal, diarrea y flatulencia como efectos adversos, es el tratamiento y perfil correcto para esta oxiuriasis — es la respuesta correcta.",
+                    "El metronidazol no es el tratamiento indicado para este gusano; tampoco coinciden estos efectos adversos con él.",
+                    "La hidroxicloroquina no está indicada para esta parasitosis intestinal.",
+                    "La pirimetamina no está indicada para esta parasitosis intestinal; se usa más para toxoplasmosis."
+                ],
+                "fantasma": [
+                    "¡Esta! El tratamiento correcto, con sus efectos adversos digestivos leves reales.",
+                    "Este no es el tratamiento indicado, ni esos son sus efectos.",
+                    "Este fármaco no es para esta parasitosis.",
+                    "Este fármaco es para otra infección distinta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Mebendazol con sus efectos digestivos leves: la combinación correcta.",
+                    "Fijate: este no es el tratamiento indicado.",
+                    "Dato curioso: este fármaco no es para esta parasitosis.",
+                    "Miau, este fármaco es para otra infección."
+                ]
+            }
         },
         {
             "numero": 911,
@@ -42595,7 +42795,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El metronidazol no cubre helmintos como el Echinococcus.",
+                    "El albendazol es de primera elección para la hidatidosis hepática por Echinococcus granulosus, un uso clásico bien establecido — es la respuesta correcta.",
+                    "El benznidazol se usa para el Chagas, no para la hidatidosis.",
+                    "La sulfadiazina se usa más para toxoplasmosis, no para hidatidosis."
+                ],
+                "fantasma": [
+                    "Este no cubre a este tipo de parásito.",
+                    "¡Esta! La elección clásica contra este quiste parasitario del hígado.",
+                    "Este es para otra enfermedad parasitaria distinta.",
+                    "Esta se usa para otra infección parasitaria distinta."
+                ],
+                "gato": [
+                    "Fijate: este no cubre a este tipo de parásito.",
+                    "¡Ronroneo de aprobación! Albendazol: la primera elección contra la hidatidosis hepática.",
+                    "Dato curioso: este es para otra enfermedad parasitaria.",
+                    "Miau, esta se usa para otra infección parasitaria."
+                ]
+            }
         },
         {
             "numero": 912,
@@ -42622,7 +42842,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ciprofloxacina no cubre a este protozoario.",
+                    "El albendazol no es el fármaco clásicamente destacado para esta infección específica en este banco.",
+                    "El aztreonam no cubre a este protozoario; su terreno son bacterias gram negativas.",
+                    "El metronidazol cubre a la Giardia lamblia, dentro de su espectro protozoario establecido — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Este no llega a este parásito.",
+                    "Este no es el destacado clásicamente para esta infección aquí.",
+                    "Este no cubre a este parásito, es de otro terreno.",
+                    "¡Esta! Este parásito está dentro de su terreno clásico."
+                ],
+                "gato": [
+                    "Fijate: este no llega a este parásito.",
+                    "Dato curioso: este no es el destacado clásicamente aquí.",
+                    "Miau, este no cubre a este parásito.",
+                    "¡Ronroneo de aprobación! Giardia lamblia: dentro del espectro clásico del metronidazol."
+                ]
+            }
         },
         {
             "numero": 913,
@@ -42649,7 +42889,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antiparasitarios",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La pirimetamina es el agente clásico de elección ante la sospecha de absceso cerebral por Toxoplasma gondii, especialmente en el paciente inmunocomprometido — es la respuesta correcta.",
+                    "El praziquantel se usa para trematodos/cestodos, no para toxoplasmosis.",
+                    "La niclosamida se usa para tenias (cestodos), no para toxoplasmosis.",
+                    "La ivermectina no cubre a este protozoario; su terreno son helmintos/ectoparásitos."
+                ],
+                "fantasma": [
+                    "¡Esta! La elección clásica ante esta sospecha en el paciente inmunodeprimido.",
+                    "Este es para otro tipo de parásito, no este.",
+                    "Esta es para otro tipo de parásito, un gusano plano.",
+                    "Esta no cubre a este parásito en particular."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Pirimetamina: la elección clásica ante sospecha de toxoplasmosis cerebral.",
+                    "Fijate: este es para otro tipo de parásito.",
+                    "Dato curioso: esta es para otro tipo de parásito.",
+                    "Miau, esta no cubre a este parásito."
+                ]
+            }
         },
         {
             "numero": 914,
@@ -42676,7 +42936,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "C",
             "origem_seccion": "antimicoticos",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Griseofulvina no se concentra muy bien en piel Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es C: Griseofulvina no se concentra muy bien en piel Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "Esta afirmación es correcta: las tetraciclinas sí poseen un amplio espectro.",
+                    "Esta afirmación es correcta: el cloranfenicol sí genera aplasia medular de forma idiosincrásica (distinta de la supresión medular dosis-dependiente).",
+                    "La griseofulvina SÍ se concentra bien en la piel (justamente por eso se usa para infecciones por dermatofitos) — es la afirmación INCORRECTA, respuesta correcta según el feedback del banco.",
+                    "Esta afirmación es correcta: el fluconazol sí atraviesa bien la barrera hematoencefálica."
+                ],
+                "fantasma": [
+                    "Eso es verdad, cubren muchísimo esta familia.",
+                    "Eso también es verdad, puede pasar de forma impredecible con este fármaco.",
+                    "¡Esta! Al revés, se concentra muy bien justo donde se necesita para esta infección.",
+                    "Eso también es verdad, entra muy bien al cerebro este fármaco."
+                ],
+                "gato": [
+                    "Fijate: eso es verdad, cubren muchísimo esta familia.",
+                    "Dato curioso: eso también es verdad, puede pasar de forma impredecible.",
+                    "¡Ronroneo de aprobación! Sí se concentra bien en la piel: la incorrecta de la lista.",
+                    "Miau, eso también es verdad, entra muy bien al cerebro."
+                ]
+            }
         },
         {
             "numero": 915,
@@ -42703,7 +42983,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antimicoticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Inhiben la síntesis de ergosterol al bloquear la enzima 14-alfa-desmetilasa, el mecanismo característico de los azoles — es la respuesta correcta.",
+                    "Los azoles no alteran la síntesis de proteínas ni se unen a la subunidad 30S, ese es un mecanismo antibacteriano no relacionado.",
+                    "Los azoles no inhiben la síntesis de ADN en los hongos, ese no es su mecanismo.",
+                    "No es este el mecanismo de los azoles; no bloquean directamente la síntesis de ácidos grasos."
+                ],
+                "fantasma": [
+                    "¡Esta! Frenan la fabricación del componente clave de la membrana del hongo.",
+                    "Eso es de otra familia de antibióticos, no relacionada.",
+                    "Eso no es lo que frenan estos fármacos.",
+                    "Eso no es lo que hacen estos fármacos."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Bloqueo de la 14-alfa-desmetilasa: el mecanismo característico de los azoles.",
+                    "Fijate: eso es de otra familia no relacionada.",
+                    "Dato curioso: eso no es lo que frenan estos fármacos.",
+                    "Miau, eso no es lo que hacen estos fármacos."
+                ]
+            }
         },
         {
             "numero": 916,
@@ -42730,7 +43030,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antimicoticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La nefrotoxicidad no es el efecto adverso característico establecido de los azoles.",
+                    "La hepatotoxicidad es un efecto adverso común y bien establecido de los azoles — es la respuesta correcta.",
+                    "La fotosensibilidad no es característica de los azoles.",
+                    "La anemia aplásica no es característica de los azoles; es más del cloranfenicol."
+                ],
+                "fantasma": [
+                    "Eso no es lo característico de esta familia.",
+                    "¡Esta! El hígado es el órgano que más sufre con esta familia.",
+                    "Eso no es lo característico de esta familia.",
+                    "Eso es más del cloranfenicol, no de esta familia."
+                ],
+                "gato": [
+                    "Fijate: eso no es lo característico de esta familia.",
+                    "¡Ronroneo de aprobación! Hepatotoxicidad: el efecto adverso común y clásico de los azoles.",
+                    "Dato curioso: eso no es lo característico de esta familia.",
+                    "Miau, eso es más del cloranfenicol."
+                ]
+            }
         },
         {
             "numero": 917,
@@ -42757,7 +43077,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antimicoticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El clotrimazol es principalmente de uso tópico, no para infecciones sistémicas.",
+                    "El fluconazol es el azólico de elección para infecciones fúngicas sistémicas en inmunocomprometidos, gracias a su buena biodisponibilidad y penetración tisular — es la respuesta correcta.",
+                    "El ketoconazol ha caído en desuso para uso sistémico por su mayor hepatotoxicidad e interacciones vía CYP450.",
+                    "La terbinafina no es un azol (es una alilamina) y se usa más para dermatofitos, no infecciones sistémicas en este contexto."
+                ],
+                "fantasma": [
+                    "Este es más para uso en la piel, no para infecciones internas serias.",
+                    "¡Esta! La elección clásica para infecciones internas serias en pacientes con defensas bajas.",
+                    "Este quedó de lado por dañar más el hígado y tener más interacciones.",
+                    "Este no es de esta familia, y se usa más para hongos de la piel."
+                ],
+                "gato": [
+                    "Fijate: este es más para uso en la piel.",
+                    "¡Ronroneo de aprobación! Fluconazol: la elección clásica para infecciones fúngicas sistémicas en inmunocomprometidos.",
+                    "Dato curioso: este quedó de lado por su mayor toxicidad.",
+                    "Miau, este no es de esta familia."
+                ]
+            }
         },
         {
             "numero": 918,
@@ -42784,7 +43124,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "antimicoticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefalexina no está establecida con hepatotoxicidad relevante como característica.",
+                    "El fluconazol (como los azoles en general) puede elevar las transaminasas con mayor frecuencia, relevante en un paciente con hepatitis activa — es la respuesta correcta.",
+                    "La vancomicina no tiene la hepatotoxicidad como su efecto adverso característico; son más el riñón y el oído.",
+                    "La gentamicina no tiene la hepatotoxicidad como su efecto adverso característico; son más el riñón y el oído."
+                ],
+                "fantasma": [
+                    "Este no tiene esa preocupación destacada.",
+                    "¡Esta! El hígado es el punto débil de esta familia de fármacos.",
+                    "A esta le preocupan más otros órganos, no el hígado.",
+                    "A esta le preocupan más otros órganos, no el hígado."
+                ],
+                "gato": [
+                    "Fijate: este no tiene esa preocupación destacada.",
+                    "¡Ronroneo de aprobación! Fluconazol y elevación de transaminasas: la preocupación relevante en hepatitis activa.",
+                    "Dato curioso: a esta le preocupan más otros órganos.",
+                    "Miau, a esta le preocupan más otros órganos."
+                ]
+            }
         },
         {
             "numero": 919,
@@ -42811,7 +43171,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "antimicoticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El itraconazol tiene una penetración al SNC notablemente pobre, una limitación reconocida.",
+                    "El voriconazol tiene cierta penetración al SNC, pero no es el clásicamente destacado para esta indicación específica en este banco.",
+                    "El fluconazol tiene excelente penetración al SNC, siendo la elección clásica para la meningitis por criptococo — es la respuesta correcta.",
+                    "El posaconazol no es el destacado clásicamente para esta indicación específica."
+                ],
+                "fantasma": [
+                    "Este entra mal al cerebro, una limitación conocida.",
+                    "Este entra algo, pero no es el destacado clásicamente para esto.",
+                    "¡Esta! Entra muy bien al cerebro, la elección clásica para esta infección grave.",
+                    "Este no es el destacado clásicamente para esta indicación."
+                ],
+                "gato": [
+                    "Fijate: este entra mal al cerebro.",
+                    "Dato curioso: este entra algo, pero no es el destacado aquí.",
+                    "¡Ronroneo de aprobación! Fluconazol: la elección clásica para la meningitis por criptococo, por su buena penetración al SNC.",
+                    "Miau, este no es el destacado clásicamente aquí."
+                ]
+            }
         },
         {
             "numero": 920,
@@ -42838,7 +43218,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "antimicoticos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Son potentes inhibidores del CYP450, por lo que pueden interactuar con el metabolismo de muchos fármacos, una característica de clase bien establecida — es la respuesta correcta.",
+                    "Los azoles no se limitan a la vía EV lenta; muchos se administran por vía oral sin problema.",
+                    "La nefrotoxicidad no es un efecto adverso típico establecido de los azoles (sí lo son hepatotoxicidad y QT); esta combinación no es del todo precisa.",
+                    "Los azoles afectan la síntesis de ERGOSTEROL (un componente fúngico), no de ácidos micólicos (un componente micobacteriano); además, suelen ser fungistáticos más que fungicidas."
+                ],
+                "fantasma": [
+                    "¡Esta! Frenan una vía enzimática compartida por muchísimos otros fármacos.",
+                    "Al revés, muchos se toman por boca sin problema.",
+                    "Esa combinación no es del todo precisa para esta familia.",
+                    "Confunde el hongo con la micobacteria, y también el efecto bactericida/fungicida."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Inhibición del CYP450: la característica de clase clave de los azoles.",
+                    "Fijate: al revés, muchos se toman por boca sin problema.",
+                    "Dato curioso: esa combinación no es del todo precisa aquí.",
+                    "Miau, confunde el hongo con la micobacteria."
+                ]
+            }
         },
         {
             "numero": 921,

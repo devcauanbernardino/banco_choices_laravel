@@ -27053,7 +27053,27 @@
             "Antiprotozoário do grupo dos nitrofuranos usado para chagas agudas",
             "Antiprotozoário do grupo dos nitroimidazol usado para chagas crônicas",
             "Um antiprotozoário do grupo dos nitrofuranos usado para infecções por amebíase"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é um nitrofurano nem se usa para hidatidose; ambos os dados estão incorretos para esse fármaco.",
+                "Não é um nitrofurano; esse grupo corresponde ao nifurtimox, não ao benznidazol.",
+                "O benznidazol é um nitroimidazol utilizado classicamente para o Chagas crônico — é a resposta correta.",
+                "Não é um nitrofurano nem se usa para amebíase; ambos os dados correspondem a outro contexto."
+            ],
+            "fantasma": [
+                "Nem a família nem a doença estão corretas aqui.",
+                "Não é dessa família, essa é a do seu primo o nifurtimox.",
+                "Essa aí! Sua família real, usada classicamente na fase crônica dessa doença.",
+                "Nem a família nem a doença estão corretas aqui."
+            ],
+            "gato": [
+                "Fijate: nem a família nem a doença estão corretas.",
+                "Dado curioso: não é dessa família, essa é do seu primo.",
+                "Ronronado de aprovação! Nitroimidazol para Chagas crônico: a classificação real do benznidazol.",
+                "Miau, nem a família nem a doença estão corretas aqui."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção CORRETA em relação ao Benznidazol:",
@@ -27063,7 +27083,27 @@
             "Tem menos efeitos adversos que o metronidazol",
             "É administrado apenas por via intravenosa",
             "Seu espectro inclui Trypanosoma cruzi"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O benznidazol não é um nitrofurano, é um nitroimidazol.",
+                "Não há uma comparação estabelecida de menos efeitos adversos frente ao metronidazol para esse fármaco.",
+                "O benznidazol se administra por via ORAL, não unicamente intravenosa.",
+                "Em seu espectro inclui o Trypanosoma cruzi, o parasita causador do Chagas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não é dessa família, é de outra.",
+                "Essa comparação não está estabelecida para esse fármaco.",
+                "Ao contrário, se toma por boca, não só pela veia.",
+                "Essa aí! O parasita que causa a doença que esse fármaco trata."
+            ],
+            "gato": [
+                "Fijate: não é dessa família.",
+                "Dado curioso: essa comparação não está estabelecida aqui.",
+                "Miau, ao contrário, se toma por boca.",
+                "Ronronado de aprovação! Trypanosoma cruzi: o parasita dentro do espectro do benznidazol."
+            ]
+        }
     },
     {
         "pergunta": "Selecione o CORRETO em relação ao Albendazol:",
@@ -27073,7 +27113,27 @@
             "É um antifúngico azólico utilizado apenas para Aspergillus devido à sua toxicidade renal.",
             "É um agente antichagásico útil no tratamento da Chagas Aguda.",
             "É um anti-helmíntico pertencente ao grupo dos Benzimidazóis."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O albendazol não é um antifúngico azólico; é um anti-helmíntico de outra família.",
+                "O albendazol não é um antifúngico azólico nem se limita ao Aspergillus.",
+                "O albendazol não é um anti-chagásico; essa tarefa é do nifurtimox/benznidazol.",
+                "É um anti-helmíntico pertencente ao grupo dos benzimidazóis, sua classificação correta — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não é dessa família de antifúngicos.",
+                "Também não é dessa família nem se limita assim.",
+                "Essa tarefa é de outro fármaco diferente.",
+                "Essa aí! Sua família real, a dos anti-helmínticos benzimidazólicos."
+            ],
+            "gato": [
+                "Fijate: não é dessa família de antifúngicos.",
+                "Dado curioso: também não é dessa família.",
+                "Miau, essa tarefa é de outro fármaco.",
+                "Ronronado de aprovação! Benzimidazol: a família real do albendazol."
+            ]
+        }
     },
     {
         "pergunta": "Paciente de 38 anos apresenta edema bipalpebral e adenopatia retroauricular de início noturno. Ele diz que encontrou uma vinchuca em sua casa. Assim que o diagnóstico for confirmado, o tratamento começa. Selecione qual medicamento posso usar para combater o parasita:",
@@ -27083,7 +27143,27 @@
             "Ampicilina",
             "Metronidazol",
             "Tinidazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O nifurtimox/benznidazol é a combinação clássica para combater o Trypanosoma cruzi, suspeitado pelo antecedente do inseto e o sinal de Romaña — é a resposta correta.",
+                "A ampicilina não está indicada para essa infecção parasitária.",
+                "O metronidazol não cobre o Trypanosoma cruzi, fora do seu espectro estabelecido.",
+                "O tinidazol, similar ao metronidazol, também não cobre o Trypanosoma cruzi."
+            ],
+            "fantasma": [
+                "Essa aí! O combo clássico contra o parasita dessa doença, suspeitada pelo inseto e o sinal característico.",
+                "Essa não serve para essa infecção parasitária.",
+                "Esse parasita escapa desse fármaco.",
+                "Esse também não cobre esse parasita em particular."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Nifurtimox/benznidazol: a combinação clássica contra o Chagas agudo, suspeitado pelo inseto.",
+                "Fijate: essa não serve para essa infecção parasitária.",
+                "Dado curioso: esse parasita escapa desse fármaco.",
+                "Miau, esse também não cobre esse parasita."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes mecanismos de ação pertence ao mebendazol?",
@@ -27093,7 +27173,27 @@
             "Gera radicais livres que destroem o parasita",
             "Gera contração tetânica do parasita",
             "Gera hiperpolarização com paralisia flácida do parasita"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Produz desorganização e desaparecimento dos microtúbulos no parasita, o mecanismo clássico dos benzimidazóis como o mebendazol — é a resposta correta.",
+                "Não é esse o mecanismo do mebendazol; isso é mais próprio do metronidazol/nitrocompostos.",
+                "Não é esse o mecanismo do mebendazol; essa descrição não corresponde aos benzimidazóis.",
+                "Não é esse o mecanismo do mebendazol; essa descrição é mais própria da ivermectina."
+            ],
+            "fantasma": [
+                "Essa aí! Os microtúbulos do parasita se desmontam com esse fármaco.",
+                "Isso é mais do metronidazol, não desse fármaco.",
+                "Essa não é a descrição desse fármaco.",
+                "Essa descrição é mais da ivermectina, não desse fármaco."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Desorganização de microtúbulos: o mecanismo clássico do mebendazol.",
+                "Fijate: isso é mais do metronidazol.",
+                "Dado curioso: essa não é a descrição desse fármaco.",
+                "Miau, essa descrição é mais da ivermectina."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação do mebendazol?",
@@ -27103,7 +27203,27 @@
             "Gera danos ao desestabilizar a estrutura helicoidal do DNA na anaerobiose",
             "Inibe a polimerização dos microtúbulos ligando-se à β-tubulina",
             "Induz paralisia tônica dos músculos do parasita"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o mecanismo do mebendazol; isso não está estabelecido para esse fármaco.",
+                "Não é esse o mecanismo do mebendazol; isso é próprio do metronidazol/anaerobiose.",
+                "Inibe a polimerização dos microtúbulos ao se ligar à β-tubulina, o mecanismo preciso do mebendazol — é a resposta correta.",
+                "Não é esse o mecanismo do mebendazol; não está estabelecido como paralisia tônica."
+            ],
+            "fantasma": [
+                "Isso não é o que esse fármaco faz.",
+                "Isso é do metronidazol, não desse fármaco.",
+                "Essa aí! Se gruda nessa proteína e desmonta a estrutura interna do parasita.",
+                "Isso não está estabelecido para esse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso não é o que esse fármaco faz.",
+                "Dado curioso: isso é do metronidazol.",
+                "Ronronado de aprovação! Ligação à β-tubulina: o mecanismo preciso do mebendazol.",
+                "Miau, isso não está estabelecido para esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Ivermectina?",
@@ -27113,7 +27233,27 @@
             "É um antibacteriano da família das polimixinas que pode ser utilizado no tratamento de parasitoses hepáticas.",
             "É um anti-helmíntico que também pode ser usado no tratamento de Sarcoptes scabiei.",
             "É um antifúngico que inibe a formação da membrana plasmática do fungo."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ivermectina não é um antiviral; é um antiparasitário.",
+                "A ivermectina não é um antibacteriano das polimixinas.",
+                "É um anti-helmíntico que também pode ser utilizado para o tratamento da sarna (Sarcoptes scabiei), um uso adicional bem estabelecido — é a resposta correta.",
+                "A ivermectina não é um antifúngico."
+            ],
+            "fantasma": [
+                "Não é dessa classe de fármacos.",
+                "Também não é dessa família de antibióticos.",
+                "Essa aí! Serve para vermes e também para esse ácaro específico.",
+                "Não é dessa classe de fármacos antifúngicos."
+            ],
+            "gato": [
+                "Fijate: não é dessa classe de fármacos.",
+                "Dado curioso: também não é dessa família de antibióticos.",
+                "Ronronado de aprovação! Sarcoptes scabiei: o uso adicional bem estabelecido da ivermectina.",
+                "Miau, não é dessa classe de antifúngicos."
+            ]
+        }
     },
     {
         "pergunta": "Um medicamento de escolha para o tratamento da infecção por Treponema pallidum em dose única é?",
@@ -27123,7 +27263,27 @@
             "Aztreonam",
             "Ceftriaxona",
             "Cefalexina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A vancomicina não está indicada para essa infecção.",
+                "O aztreonam não tem atividade contra essa bactéria espiralada.",
+                "A ceftriaxona é uma alternativa reconhecida para essa infecção entre as opções dadas — é a resposta correta.",
+                "A cefalexina não está indicada para essa infecção específica."
+            ],
+            "fantasma": [
+                "Essa não está indicada para essa infecção.",
+                "Esse não cobre essa bactéria em particular.",
+                "Essa aí! A alternativa reconhecida entre as opções para essa infecção.",
+                "Essa não está indicada para essa infecção específica."
+            ],
+            "gato": [
+                "Fijate: essa não está indicada para essa infecção.",
+                "Dado curioso: esse não cobre essa bactéria.",
+                "Ronronado de aprovação! Ceftriaxona: a alternativa reconhecida entre as opções dadas.",
+                "Miau, essa não está indicada para essa infecção."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes antibióticos você escolheria para tratar a parasitose intestinal causada por Enterobius vermicularis (oxiúros)?",
@@ -27133,7 +27293,27 @@
             "Doxiciclina",
             "Metronidazol",
             "Albendazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O nifurtimox não cobre esse parasita intestinal; é para Chagas.",
+                "A doxiciclina é um antibiótico, não um anti-helmíntico; não cobre esse parasita.",
+                "O metronidazol não cobre helmintos; seu espectro é anaeróbio/protozoário.",
+                "O albendazol é o anti-helmíntico de escolha para essa parasitose intestinal por oxiúros — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse é para outra doença parasitária diferente.",
+                "Esse é um antibiótico, não serve para esse verme.",
+                "Esse não chega aos vermes, é de outro terreno.",
+                "Essa aí! O anti-helmíntico clássico contra esse verme intestinal."
+            ],
+            "gato": [
+                "Fijate: esse é para outra doença parasitária.",
+                "Dado curioso: esse é um antibiótico, não serve para vermes.",
+                "Miau, esse não chega aos vermes.",
+                "Ronronado de aprovação! Albendazol: o anti-helmíntico de escolha contra os oxiúros."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com infecção por Enterobius vermicularis (oxiuríase) é indicado para tratamento antiparasitário. Você deve avisá-lo sobre os efeitos adversos. Qual tratamento foi prescrito para o paciente e quais poderiam ser os potenciais efeitos adversos?",
@@ -27143,7 +27323,27 @@
             "Metronidazol: náuseas, vômitos e convulsões",
             "Hidroxicloroquina; dor de cabeça, visão turva, mialgia",
             "Pirimetamina; vertigem, febre, pigmentação da pele"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Mebendazol, com mal-estar abdominal, diarreia e flatulência como efeitos adversos, é o tratamento e perfil correto para essa oxiuríase — é a resposta correta.",
+                "O metronidazol não é o tratamento indicado para esse verme; também não coincidem esses efeitos adversos com ele.",
+                "A hidroxicloroquina não está indicada para essa parasitose intestinal.",
+                "A pirimetamina não está indicada para essa parasitose intestinal; se usa mais para toxoplasmose."
+            ],
+            "fantasma": [
+                "Essa aí! O tratamento correto, com seus efeitos adversos digestivos leves reais.",
+                "Esse não é o tratamento indicado, nem esses são seus efeitos.",
+                "Esse fármaco não é para essa parasitose.",
+                "Esse fármaco é para outra infecção diferente."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Mebendazol com seus efeitos digestivos leves: a combinação correta.",
+                "Fijate: esse não é o tratamento indicado.",
+                "Dado curioso: esse fármaco não é para essa parasitose.",
+                "Miau, esse fármaco é para outra infecção."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes antiparasitários é a primeira escolha para o tratamento da doença hidática hepática causada por Echinococcus granulosus?",
@@ -27153,7 +27353,27 @@
             "Albendazol",
             "Benznidazol",
             "Sulfadiazina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metronidazol não cobre helmintos como o Echinococcus.",
+                "O albendazol é de primeira escolha para a hidatidose hepática por Echinococcus granulosus, um uso clássico bem estabelecido — é a resposta correta.",
+                "O benznidazol se usa para o Chagas, não para a hidatidose.",
+                "A sulfadiazina se usa mais para toxoplasmose, não para hidatidose."
+            ],
+            "fantasma": [
+                "Esse não cobre esse tipo de parasita.",
+                "Essa aí! A escolha clássica contra esse cisto parasitário do fígado.",
+                "Esse é para outra doença parasitária diferente.",
+                "Essa se usa para outra infecção parasitária diferente."
+            ],
+            "gato": [
+                "Fijate: esse não cobre esse tipo de parasita.",
+                "Ronronado de aprovação! Albendazol: a primeira escolha contra a hidatidose hepática.",
+                "Dado curioso: esse é para outra doença parasitária.",
+                "Miau, essa se usa para outra infecção parasitária."
+            ]
+        }
     },
     {
         "pergunta": "Se precisar de um anti-infeccioso que cubra Giardia lamblia, você pode usar:",
@@ -27163,7 +27383,27 @@
             "Albendazol",
             "Aztreonam",
             "Metronidazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ciprofloxacina não cobre esse protozoário.",
+                "O albendazol não é o fármaco classicamente destacado para essa infecção específica neste banco.",
+                "O aztreonam não cobre esse protozoário; seu terreno são bactérias gram-negativas.",
+                "O metronidazol cobre a Giardia lamblia, dentro do seu espectro protozoário estabelecido — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não chega a esse parasita.",
+                "Esse não é o destacado classicamente para essa infecção aqui.",
+                "Esse não cobre esse parasita, é de outro terreno.",
+                "Essa aí! Esse parasita está dentro do seu terreno clássico."
+            ],
+            "gato": [
+                "Fijate: esse não chega a esse parasita.",
+                "Dado curioso: esse não é o destacado classicamente aqui.",
+                "Miau, esse não cobre esse parasita.",
+                "Ronronado de aprovação! Giardia lamblia: dentro do espectro clássico do metronidazol."
+            ]
+        }
     },
     {
         "pergunta": "Paciente de 42 anos com síndrome mielodisplásica chega ao pronto-socorro devido a dores de cabeça e alteração do estado mental. É solicitada tomografia computadorizada que mostra lesão anular reforçada com contraste. O médico decide iniciar o tratamento empírico por suspeitar que esta imagem corresponda a um abscesso por Toxoplasma gondii. Que agente antimicrobiano você prescreveria para esse paciente?",
@@ -27173,7 +27413,27 @@
             "Praziquantel",
             "Niclosamida",
             "Ivermectina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A pirimetamina é o agente clássico de escolha diante da suspeita de abscesso cerebral por Toxoplasma gondii, especialmente no paciente imunocomprometido — é a resposta correta.",
+                "O praziquantel se usa para trematódeos/cestódeos, não para toxoplasmose.",
+                "A niclosamida se usa para tênias (cestódeos), não para toxoplasmose.",
+                "A ivermectina não cobre esse protozoário; seu terreno são helmintos/ectoparasitas."
+            ],
+            "fantasma": [
+                "Essa aí! A escolha clássica diante dessa suspeita no paciente imunodeprimido.",
+                "Esse é para outro tipo de parasita, não esse.",
+                "Essa é para outro tipo de parasita, um verme achatado.",
+                "Essa não cobre esse parasita em particular."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Pirimetamina: a escolha clássica diante de suspeita de toxoplasmose cerebral.",
+                "Fijate: esse é para outro tipo de parasita.",
+                "Dado curioso: essa é para outro tipo de parasita.",
+                "Miau, essa não cobre esse parasita."
+            ]
+        }
     },
     {
         "pergunta": "Indique a opção INCORRETA:",
@@ -27184,7 +27444,27 @@
             "O cloranfenicol gera aplasia medular de maneira idiossincrática",
             "A griseofulvina não se concentra muito bem na pele",
             "Fluconazol atravessa a barreira hematoencefálica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: as tetraciclinas sim possuem um amplo espectro.",
+                "Essa afirmação é correta: o cloranfenicol sim gera aplasia medular de forma idiossincrática (diferente da supressão medular dose-dependente).",
+                "A griseofulvina SIM se concentra bem na pele (justamente por isso se usa para infecções por dermatófitos) — é a afirmação INCORRETA, resposta correta segundo o feedback do banco.",
+                "Essa afirmação é correta: o fluconazol sim atravessa bem a barreira hematoencefálica."
+            ],
+            "fantasma": [
+                "Isso é verdade, cobrem muitíssimo essa família.",
+                "Isso também é verdade, pode acontecer de forma imprevisível com esse fármaco.",
+                "Essa aí! Ao contrário, se concentra muito bem justo onde é preciso para essa infecção.",
+                "Isso também é verdade, entra muito bem no cérebro esse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, cobrem muitíssimo essa família.",
+                "Dado curioso: isso também é verdade, pode acontecer de forma imprevisível.",
+                "Ronronado de aprovação! Sim se concentra bem na pele: a incorreta da lista.",
+                "Miau, isso também é verdade, entra muito bem no cérebro."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o principal mecanismo de ação dos azóis?",
@@ -27194,7 +27474,27 @@
             "Eles alteram a síntese protéica ligando-se à subunidade 30S",
             "Eles inibem a síntese de DNA em fungos",
             "Eles destroem a membrana celular, bloqueando a síntese de ácidos graxos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Inibem a síntese de ergosterol ao bloquear a enzima 14-alfa-desmetilase, o mecanismo característico dos azóis — é a resposta correta.",
+                "Os azóis não alteram a síntese de proteínas nem se ligam à subunidade 30S, esse é um mecanismo antibacteriano não relacionado.",
+                "Os azóis não inibem a síntese de DNA nos fungos, esse não é seu mecanismo.",
+                "Não é esse o mecanismo dos azóis; não bloqueiam diretamente a síntese de ácidos graxos."
+            ],
+            "fantasma": [
+                "Essa aí! Freiam a fabricação do componente chave da membrana do fungo.",
+                "Isso é de outra família de antibióticos, não relacionada.",
+                "Isso não é o que esses fármacos freiam.",
+                "Isso não é o que esses fármacos fazem."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Bloqueio da 14-alfa-desmetilase: o mecanismo característico dos azóis.",
+                "Fijate: isso é de outra família não relacionada.",
+                "Dado curioso: isso não é o que esses fármacos freiam.",
+                "Miau, isso não é o que esses fármacos fazem."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é um efeito adverso comum associado aos azóis?",
@@ -27204,7 +27504,27 @@
             "Hepatotoxicidade",
             "Fotossensibilidade",
             "anemia aplástica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade não é o efeito adverso característico estabelecido dos azóis.",
+                "A hepatotoxicidade é um efeito adverso comum e bem estabelecido dos azóis — é a resposta correta.",
+                "A fotossensibilidade não é característica dos azóis.",
+                "A anemia aplástica não é característica dos azóis; é mais do cloranfenicol."
+            ],
+            "fantasma": [
+                "Isso não é o característico dessa família.",
+                "Essa aí! O fígado é o órgão que mais sofre com essa família.",
+                "Isso não é o característico dessa família.",
+                "Isso é mais do cloranfenicol, não dessa família."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico dessa família.",
+                "Ronronado de aprovação! Hepatotoxicidade: o efeito adverso comum e clássico dos azóis.",
+                "Dado curioso: isso não é o característico dessa família.",
+                "Miau, isso é mais do cloranfenicol."
+            ]
+        }
     },
     {
         "pergunta": "Qual medicamento azólico é o tratamento de escolha para infecções fúngicas sistêmicas em pacientes imunocomprometidos?",
@@ -27214,7 +27534,27 @@
             "Fluconazol",
             "Cetoconazol",
             "Terbinafina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O clotrimazol é principalmente de uso tópico, não para infecções sistêmicas.",
+                "O fluconazol é o azólico de escolha para infecções fúngicas sistêmicas em imunocomprometidos, graças à sua boa biodisponibilidade e penetração tecidual — é a resposta correta.",
+                "O cetoconazol caiu em desuso para uso sistêmico por sua maior hepatotoxicidade e interações via CYP450.",
+                "A terbinafina não é um azol (é uma alilamina) e se usa mais para dermatófitos, não infecções sistêmicas nesse contexto."
+            ],
+            "fantasma": [
+                "Esse é mais para uso na pele, não para infecções internas sérias.",
+                "Essa aí! A escolha clássica para infecções internas sérias em pacientes com defesas baixas.",
+                "Esse ficou de lado por prejudicar mais o fígado e ter mais interações.",
+                "Essa não é dessa família, e se usa mais para fungos de pele."
+            ],
+            "gato": [
+                "Fijate: esse é mais para uso na pele.",
+                "Ronronado de aprovação! Fluconazol: a escolha clássica para infecções fúngicas sistêmicas em imunocomprometidos.",
+                "Dado curioso: esse ficou de lado por sua maior toxicidade.",
+                "Miau, essa não é dessa família."
+            ]
+        }
     },
     {
         "pergunta": "Em um paciente com hepatite ativa, qual dos seguintes medicamentos anti-infecciosos pode aumentar com mais frequência os valores de transaminases?",
@@ -27224,7 +27564,27 @@
             "Fluconazol",
             "Vancomicina",
             "Gentamicina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cefalexina não está estabelecida com hepatotoxicidade relevante como característica.",
+                "O fluconazol (como os azóis em geral) pode elevar as transaminases com maior frequência, relevante em um paciente com hepatite ativa — é a resposta correta.",
+                "A vancomicina não tem a hepatotoxicidade como seu efeito adverso característico; são mais o rim e o ouvido.",
+                "A gentamicina não tem a hepatotoxicidade como seu efeito adverso característico; são mais o rim e o ouvido."
+            ],
+            "fantasma": [
+                "Esse não tem essa preocupação destacada.",
+                "Essa aí! O fígado é o ponto fraco dessa família de fármacos.",
+                "Essa se preocupa mais com outros órgãos, não o fígado.",
+                "Essa se preocupa mais com outros órgãos, não o fígado."
+            ],
+            "gato": [
+                "Fijate: esse não tem essa preocupação destacada.",
+                "Ronronado de aprovação! Fluconazol e elevação de transaminases: a preocupação relevante em hepatite ativa.",
+                "Dado curioso: essa se preocupa mais com outros órgãos.",
+                "Miau, essa se preocupa mais com outros órgãos."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes azóis tem melhor penetração no sistema nervoso central (SNC) e é utilizado no tratamento da meningite criptocócica?",
@@ -27234,7 +27594,27 @@
             "Voriconazol",
             "Fluconazol",
             "Posaconazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O itraconazol tem uma penetração no SNC notavelmente pobre, uma limitação reconhecida.",
+                "O voriconazol tem certa penetração no SNC, mas não é o classicamente destacado para essa indicação específica neste banco.",
+                "O fluconazol tem excelente penetração no SNC, sendo a escolha clássica para a meningite por criptococo — é a resposta correta.",
+                "O posaconazol não é o destacado classicamente para essa indicação específica."
+            ],
+            "fantasma": [
+                "Esse entra mal no cérebro, uma limitação conhecida.",
+                "Esse entra algo, mas não é o destacado classicamente para isso.",
+                "Essa aí! Entra muito bem no cérebro, a escolha clássica para essa infecção grave.",
+                "Esse não é o destacado classicamente para essa indicação."
+            ],
+            "gato": [
+                "Fijate: esse entra mal no cérebro.",
+                "Dado curioso: esse entra algo, mas não é o destacado aqui.",
+                "Ronronado de aprovação! Fluconazol: a escolha clássica para a meningite por criptococo, por sua boa penetração no SNC.",
+                "Miau, esse não é o destacado classicamente aqui."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos azóis, marque a opção correta:",
@@ -27244,7 +27624,27 @@
             "São medicamentos que só podem ser administrados lentamente por via intravenosa para evitar reações graves de hipersensibilidade.",
             "Como parte de seus efeitos adversos típicos, podem causar hepatotoxicidade, prolongamento do intervalo QT e nefrotoxicidade.",
             "São medicamentos fungicidas que atuam inibindo a 14 alfa demetilase, alterando a síntese dos ácidos micólicos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "São potentes inibidores do CYP450, por isso podem interagir com o metabolismo de muitos fármacos, uma característica de classe bem estabelecida — é a resposta correta.",
+                "Os azóis não se limitam à via EV lenta; muitos se administram por via oral sem problema.",
+                "A nefrotoxicidade não é um efeito adverso típico estabelecido dos azóis (sim o são hepatotoxicidade e QT); essa combinação não é totalmente precisa.",
+                "Os azóis afetam a síntese de ERGOSTEROL (um componente fúngico), não de ácidos micólicos (um componente micobacteriano); além disso, costumam ser fungistáticos mais que fungicidas."
+            ],
+            "fantasma": [
+                "Essa aí! Freiam uma via enzimática compartilhada por muitíssimos outros fármacos.",
+                "Ao contrário, muitos se tomam por boca sem problema.",
+                "Essa combinação não é totalmente precisa para essa família.",
+                "Confunde o fungo com a micobactéria, e também o efeito bactericida/fungicida."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Inibição do CYP450: a característica de classe chave dos azóis.",
+                "Fijate: ao contrário, muitos se tomam por boca sem problema.",
+                "Dado curioso: essa combinação não é totalmente precisa aqui.",
+                "Miau, confunde o fungo com a micobactéria."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes azóis diminui a concentração plasmática se administrado simultaneamente com antiácidos?",
