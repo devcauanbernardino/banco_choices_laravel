@@ -21639,7 +21639,27 @@
             "Uso oral de ação prolongada",
             "Aumenta o limiar convulsivo",
             "Interfere na síntese de proteínas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ertapenem tem categoria B de uso na gravidez, aceito com essa classificação de risco — é a resposta correta.",
+                "O ertapenem não se usa por via oral, é de administração parenteral (embora com meia-vida mais longa que outros carbapenêmicos, não é uma apresentação oral).",
+                "Os carbapenêmicos, se algo, podem BAIXAR o limiar convulsivo (especialmente o imipenem), não aumentá-lo.",
+                "O ertapenem não interfere na síntese proteica, seu mecanismo é a inibição da síntese de parede bacteriana."
+            ],
+            "fantasma": [
+                "Essa aí! Classificado com essa categoria de risco na gravidez.",
+                "Esse não se toma por boca, só vai pela veia ou músculo.",
+                "Ao contrário, se algo fazem é baixar esse limiar, não subi-lo.",
+                "Esse não é seu mecanismo, freia a parede bacteriana."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Categoria B na gravidez: a classificação do ertapenem.",
+                "Fijate: esse não se toma por boca, só vai pela veia ou músculo.",
+                "Dado curioso: ao contrário, baixam esse limiar, não o sobem.",
+                "Miau, esse não é seu mecanismo, freia a parede bacteriana."
+            ]
+        }
     },
     {
         "pergunta": "Os efeitos adversos dos monobactâmicos incluem EXCETO?",
@@ -21650,7 +21670,27 @@
             "Hepatotoxicidade",
             "Uretrite",
             "Vaginite"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade SIM é um efeito adverso reconhecido dos monobactâmicos.",
+                "A hepatotoxicidade SIM é um efeito adverso reconhecido dos monobactâmicos.",
+                "A uretrite não é um efeito adverso descrito dos monobactâmicos — é a exceção, resposta correta segundo o feedback do banco.",
+                "A vaginite SIM é um efeito adverso reconhecido (por alteração da flora normal), semelhante a outros antibióticos."
+            ],
+            "fantasma": [
+                "Esse sim pode acontecer com esses fármacos.",
+                "Esse também pode acontecer com esses fármacos.",
+                "Essa aí! Essa não está na lista real de efeitos desse fármaco.",
+                "Essa também pode acontecer, pela flora alterada."
+            ],
+            "gato": [
+                "Fijate: esse sim pode acontecer com esses fármacos.",
+                "Dado curioso: esse também pode acontecer com esses fármacos.",
+                "Ronronado de aprovação! Uretrite: a que não está na lista real, a exceção correta.",
+                "Miau, essa também pode acontecer, pela flora alterada."
+            ]
+        }
     },
     {
         "pergunta": "Em qual paciente a aplicação de monobactâmicos é útil?",
@@ -21660,7 +21700,27 @@
             "DPOC exacerbada por infecção por MSSA",
             "FC colonizada por pseudomonas",
             "Eles não são úteis em infecções respiratórias"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A bronquite crônica não é o contexto clássico onde se destaca o uso de monobactâmicos.",
+                "A DPOC reagudizada por MSSA não se encaixa, já que os monobactâmicos não cobrem gram-positivos como o estafilococo.",
+                "A fibrose cística colonizada por pseudomonas é um contexto clássico de uso do aztreonam, graças à sua cobertura gram-negativa (inclusive inalado, aprovado especificamente para isso) — é a resposta correta.",
+                "Os monobactâmicos SIM são úteis em infecções respiratórias, no contexto adequado."
+            ],
+            "fantasma": [
+                "Esse não é o contexto clássico desse fármaco.",
+                "Essa bactéria escapa desse fármaco, que não cobre gram-positivos.",
+                "Essa aí! Justo a bactéria gram-negativa que esse fármaco cobre bem.",
+                "Ao contrário, sim são úteis no contexto adequado."
+            ],
+            "gato": [
+                "Fijate: esse não é o contexto clássico desse fármaco.",
+                "Dado curioso: essa bactéria escapa, não cobre gram-positivos.",
+                "Ronronado de aprovação! Fibrose cística com Pseudomonas: o contexto clássico do aztreonam.",
+                "Miau, ao contrário, sim são úteis no contexto adequado."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos inibidores de beta-lactamase?",
@@ -21670,7 +21730,27 @@
             "Eles expandem o espectro de beta-lactâmicos",
             "Eles têm atividade bactericida",
             "Eles estão associados às aminopenicilinas."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os inibidores de beta-lactamases não têm atividade bacteriostática própria significativa.",
+                "Os inibidores de beta-lactamases ampliam o espectro dos beta-lactâmicos, protegendo-os da degradação enzimática — é a resposta correta.",
+                "Os inibidores de beta-lactamases não têm atividade bactericida própria significativa.",
+                "Não se associam unicamente a aminopenicilinas; o tazobactam, por exemplo, se associa à piperacilina (uma ureidopenicilina)."
+            ],
+            "fantasma": [
+                "Não têm essa atividade própria importante.",
+                "Essa aí! Protegem o beta-lactâmico e assim ampliam o que ele pode cobrir.",
+                "Também não têm essa atividade própria importante.",
+                "Não é só com essas, há outro que vai com uma prima diferente."
+            ],
+            "gato": [
+                "Fijate: não têm essa atividade própria importante.",
+                "Ronronado de aprovação! Ampliar o espectro protegendo o beta-lactâmico: a função real desses inibidores.",
+                "Dado curioso: também não têm essa atividade própria.",
+                "Miau, não é só com essas, há outro que vai com uma prima diferente."
+            ]
+        }
     },
     {
         "pergunta": "Em relação às β-lactamases, selecione a CORRETA?",
@@ -21680,7 +21760,27 @@
             "Eles podem ser de base plasmidial ou cromossômica.",
             "Eles nunca podem ser indutíveis",
             "Eles não podem ser transmitidos entre espécies"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Nem todas as bactérias suscetíveis a beta-lactâmicos têm beta-lactamases; a suscetibilidade implica justamente que o fármaco continua funcionando.",
+                "As beta-lactamases podem ser de base plasmidial (transmissível) ou cromossômica (intrínseca) — é a resposta correta.",
+                "SIM podem ser induzíveis; algumas beta-lactamases cromossômicas se induzem justamente pela exposição ao beta-lactâmico.",
+                "SIM podem ser transmitidas entre espécies, especialmente as de base plasmidial, via transferência horizontal de genes."
+            ],
+            "fantasma": [
+                "Nem todas as que respondem ao fármaco têm essa enzima.",
+                "Essa aí! Podem vir de um plasmídeo que passa entre bactérias ou do seu próprio cromossomo.",
+                "Ao contrário, sim podem se ativar pela exposição ao fármaco.",
+                "Ao contrário, sim podem passar de uma bactéria para outra espécie."
+            ],
+            "gato": [
+                "Fijate: nem todas as que respondem ao fármaco têm essa enzima.",
+                "Ronronado de aprovação! Plasmídeo ou cromossomo: as duas origens possíveis das beta-lactamases.",
+                "Dado curioso: ao contrário, sim podem se ativar pela exposição.",
+                "Miau, ao contrário, sim podem passar entre espécies."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes inibidores da beta-lactamase é usado junto com a cefalosporina: Ceftazidima?",
@@ -21690,7 +21790,27 @@
             "Sulbactam",
             "Ácido Clavulânico",
             "Tazobactam"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O avibactam é o inibidor combinado especificamente com a ceftazidima (ceftazidima-avibactam), uma combinação bem estabelecida — é a resposta correta.",
+                "O sulbactam se associa classicamente à ampicilina, não à ceftazidima.",
+                "O ácido clavulânico se associa classicamente a amoxicilina/ticarcilina, não à ceftazidima.",
+                "O tazobactam se associa classicamente à piperacilina, não à ceftazidima."
+            ],
+            "fantasma": [
+                "Essa aí! A parceira específica dessa cefalosporina em particular.",
+                "Esse vai com outra prima, a ampicilina.",
+                "Esse vai com outras primas, amoxicilina ou ticarcilina.",
+                "Esse vai com outra prima, a piperacilina."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Ceftazidima-avibactam: a parceira específica e bem estabelecida.",
+                "Fijate: esse vai com outra prima, a ampicilina.",
+                "Dado curioso: esse vai com outras primas diferentes.",
+                "Miau, esse vai com outra prima, a piperacilina."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos inibidores de β-lactamases, selecione o CORRETO?",
@@ -21700,7 +21820,27 @@
             "Eles têm seu próprio espectro antibacteriano",
             "O tazobactam está associado à piperacilina, mas não aumenta a atividade contra pseudomonas",
             "Eles se ligam tanto à β-lactama quanto à β-lactamase."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ácido clavulânico se associa classicamente a amoxicilina (ou ticarcilina), não a ampicilina.",
+                "Os inibidores de beta-lactamases não têm espectro antibacteriano próprio significativo.",
+                "O tazobactam se associa à piperacilina, mas não aumenta a atividade antipseudomonas dessa última (que a piperacilina já possui por conta própria) — é a resposta correta.",
+                "Se ligam à beta-lactamase (a enzima), não ao beta-lactâmico em si."
+            ],
+            "fantasma": [
+                "Essa vai com outra prima, não com essa.",
+                "Não têm esse poder próprio contra bactérias.",
+                "Essa aí! Se junta com essa, mas não soma pontaria contra essa bactéria que ela já cobre por conta própria.",
+                "Se ligam à enzima, não ao fármaco parceiro."
+            ],
+            "gato": [
+                "Fijate: essa vai com outra prima, não com essa.",
+                "Dado curioso: não têm esse poder próprio contra bactérias.",
+                "Ronronado de aprovação! Tazobactam protege, não potencializa a cobertura antipseudomonas já própria da piperacilina.",
+                "Miau, se ligam à enzima, não ao fármaco parceiro."
+            ]
+        }
     },
     {
         "pergunta": "Ácido clavulânico?",
@@ -21710,7 +21850,27 @@
             "Atua na síntese de proteínas.",
             "Não é combinado com outras penicilinas.",
             "Inibe beta-lactamases."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é essa a característica destacada do ácido clavulânico.",
+                "O ácido clavulânico não atua sobre a síntese proteica, esse não é seu mecanismo.",
+                "O ácido clavulânico SIM se combina com outras penicilinas (como amoxicilina/ticarcilina), essa é justamente sua função.",
+                "O ácido clavulânico inibe as beta-lactamases, seu mecanismo característico — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa não é a característica destacada desse fármaco.",
+                "Esse não é seu mecanismo de jeito nenhum.",
+                "Ao contrário, sim se combina, justamente para isso serve.",
+                "Essa aí! Freia a enzima que destruiria seu parceiro."
+            ],
+            "gato": [
+                "Fijate: essa não é a característica destacada desse fármaco.",
+                "Dado curioso: esse não é seu mecanismo de jeito nenhum.",
+                "Miau, ao contrário, sim se combina, para isso serve.",
+                "Ronronado de aprovação! Inibição de beta-lactamases: o mecanismo característico do ácido clavulânico."
+            ]
+        }
     },
     {
         "pergunta": "Ácido clavulânico?",
@@ -21720,7 +21880,27 @@
             "Não combinado com outras penicilinas",
             "Inibe β-lactamases",
             "Tem metabolismo renal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O ácido clavulânico não atua sobre a síntese proteica, esse não é seu mecanismo.",
+                "O ácido clavulânico SIM se combina com outras penicilinas, essa é justamente sua função.",
+                "O ácido clavulânico inibe as beta-lactamases, seu mecanismo característico — é a resposta correta.",
+                "Não é essa a característica destacada do ácido clavulânico."
+            ],
+            "fantasma": [
+                "Esse não é seu mecanismo de jeito nenhum.",
+                "Ao contrário, sim se combina, justamente para isso serve.",
+                "Essa aí! Freia a enzima que destruiria seu parceiro.",
+                "Essa não é a característica destacada desse fármaco."
+            ],
+            "gato": [
+                "Fijate: esse não é seu mecanismo de jeito nenhum.",
+                "Dado curioso: ao contrário, sim se combina, para isso serve.",
+                "Ronronado de aprovação! Inibição de beta-lactamases: o mecanismo característico do ácido clavulânico.",
+                "Miau, essa não é a característica destacada desse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Sulbactam?",
@@ -21730,7 +21910,27 @@
             "Inibe beta-lactamases.",
             "Possui metabolismo renal.",
             "Não combinado com outras penicilinas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O sulbactam não atua sobre a síntese proteica, esse não é seu mecanismo.",
+                "O sulbactam inibe as beta-lactamases, seu mecanismo característico (classicamente associado à ampicilina) — é a resposta correta.",
+                "Não é essa a característica destacada do sulbactam.",
+                "O sulbactam SIM se combina com outras penicilinas (classicamente com ampicilina), essa é justamente sua função."
+            ],
+            "fantasma": [
+                "Esse não é seu mecanismo de jeito nenhum.",
+                "Essa aí! Freia a enzima que destruiria sua parceira, a ampicilina.",
+                "Essa não é a característica destacada desse fármaco.",
+                "Ao contrário, sim se combina, justamente para isso serve."
+            ],
+            "gato": [
+                "Fijate: esse não é seu mecanismo de jeito nenhum.",
+                "Ronronado de aprovação! Inibição de beta-lactamases: o mecanismo do sulbactam, clássico junto à ampicilina.",
+                "Dado curioso: essa não é a característica destacada desse fármaco.",
+                "Miau, ao contrário, sim se combina, para isso serve."
+            ]
+        }
     },
     {
         "pergunta": "Tazobactam:",
@@ -21740,7 +21940,27 @@
             "Atua na síntese de proteínas",
             "Tem metabolismo renal",
             "Não combinado com outras penicilinas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tazobactam inibe as beta-lactamases, seu mecanismo característico (classicamente associado à piperacilina) — é a resposta correta.",
+                "O tazobactam não atua sobre a síntese proteica, esse não é seu mecanismo.",
+                "Não é essa a característica destacada do tazobactam.",
+                "O tazobactam SIM se combina com outras penicilinas (classicamente com piperacilina), essa é justamente sua função."
+            ],
+            "fantasma": [
+                "Essa aí! Freia a enzima que destruiria sua parceira, a piperacilina.",
+                "Esse não é seu mecanismo de jeito nenhum.",
+                "Essa não é a característica destacada desse fármaco.",
+                "Ao contrário, sim se combina, justamente para isso serve."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Inibição de beta-lactamases: o mecanismo do tazobactam, clássico junto à piperacilina.",
+                "Fijate: esse não é seu mecanismo de jeito nenhum.",
+                "Dado curioso: essa não é a característica destacada desse fármaco.",
+                "Miau, ao contrário, sim se combina, para isso serve."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao tazobactam:",
@@ -21750,7 +21970,27 @@
             "Deve estar associado a um glicopeptídeo para inibir a resistência a estes",
             "Bloqueia a ação das beta-lactamases de forma irreversível",
             "Liga-se reversivelmente às beta-lactamases"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tazobactam não tem atividade antibiótica própria relevante; sua função é proteger o beta-lactâmico parceiro.",
+                "Não existe essa associação obrigatória com um glicopeptídeo; o tazobactam se associa classicamente à piperacilina, um beta-lactâmico.",
+                "O tazobactam bloqueia de forma irreversível ('suicida') a ação das beta-lactamases, seu mecanismo característico — é a resposta correta.",
+                "É ao contrário: o tazobactam se liga de forma IRREVERSÍVEL, não reversível, às beta-lactamases."
+            ],
+            "fantasma": [
+                "Esse não ataca bactérias por conta própria, seu trabalho é proteger seu parceiro.",
+                "Não existe essa combinação obrigatória com esse outro tipo de fármaco.",
+                "Essa aí! Se gruda na enzima para sempre, sem soltar.",
+                "Ao contrário, a ligação é para sempre, não solta."
+            ],
+            "gato": [
+                "Fijate: esse não ataca bactérias por conta própria.",
+                "Dado curioso: não existe essa combinação obrigatória.",
+                "Ronronado de aprovação! Ligação irreversível à beta-lactamase: o mecanismo característico do tazobactam.",
+                "Miau, ao contrário, a ligação é para sempre, não solta."
+            ]
+        }
     },
     {
         "pergunta": "O tazobactam atua?",
@@ -21760,7 +22000,27 @@
             "Inibição de proteínas de ligação à penicilina (PBPs)",
             "Inibição da enzima beta-lactamase",
             "Inibição da formação de ergosterol na membrana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tazobactam não inibe a DNA topoisomerase IV, esse é o mecanismo das quinolonas.",
+                "O tazobactam não inibe as PBP, esse é o mecanismo do beta-lactâmico parceiro, não do inibidor em si.",
+                "O tazobactam atua inibindo a enzima beta-lactamase, seu mecanismo característico — é a resposta correta.",
+                "O tazobactam não inibe a formação de ergosterol, esse é um mecanismo antifúngico, não relacionado a esse fármaco."
+            ],
+            "fantasma": [
+                "Isso é das quinolonas, não desse fármaco.",
+                "Isso é do parceiro beta-lactâmico, não desse inibidor.",
+                "Essa aí! Freia diretamente a enzima destruidora.",
+                "Isso é dos antifúngicos, não desse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso é das quinolonas.",
+                "Dado curioso: isso é do parceiro beta-lactâmico, não do inibidor.",
+                "Ronronado de aprovação! Inibição direta da beta-lactamase: o mecanismo do tazobactam.",
+                "Miau, isso é dos antifúngicos."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação da fosfomicina?",
@@ -21770,7 +22030,27 @@
             "Inibe UDP N acetilglucosamina 3-enolpiruviltrasferase",
             "Inibe a ADP glicosilase",
             "Inibe a síntese de proteínas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A fosfomicina não atua inibindo a mureína de forma geral; seu mecanismo é mais específico.",
+                "A fosfomicina inibe a UDP N-acetilglicosamina 3-enolpiruviltransferase (MurA), uma etapa precoce da síntese de parede bacteriana — é a resposta correta.",
+                "A fosfomicina não inibe nenhuma 'ADP glicosilase', essa não é uma enzima alvo real desse fármaco.",
+                "A fosfomicina não inibe a síntese de proteínas, seu alvo é a síntese de parede bacteriana."
+            ],
+            "fantasma": [
+                "Não é tão geral assim o alvo desse fármaco.",
+                "Essa aí! Freia uma enzima específica, bem cedo na fabricação da parede.",
+                "Essa enzima nem sequer é um alvo real desse fármaco.",
+                "Isso não é o que freia esse fármaco."
+            ],
+            "gato": [
+                "Fijate: não é tão geral assim o alvo desse fármaco.",
+                "Ronronado de aprovação! MurA bloqueada: o mecanismo preciso da fosfomicina.",
+                "Dado curioso: essa enzima nem sequer é um alvo real.",
+                "Miau, isso não é o que freia esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a opção CORRETA em relação à teicoplanina?",
@@ -21780,7 +22060,27 @@
             "Suas vias habituais de administração são oral e intravenosa.",
             "Abrange principalmente germes gram-positivos e negativos resistentes.",
             "Pode ser administrado por via intramuscular."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A teicoplanina SIM é útil contra certas bactérias anaeróbias gram-positivas.",
+                "As vias habituais da teicoplanina não incluem a oral (para uso sistêmico); é de administração parenteral.",
+                "A teicoplanina (glicopeptídeo) cobre germes gram-POSITIVOS resistentes, não gram-negativos, dada sua estrutura.",
+                "A teicoplanina pode ser administrada por via intramuscular, diferente da vancomicina — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, sim funciona contra algumas dessas bactérias sem oxigênio.",
+                "Essa não se toma por boca para efeito sistêmico, vai pela veia ou músculo.",
+                "Cobre os positivos resistentes, não os negativos.",
+                "Essa aí! Pode ir direto no músculo, diferente de sua prima a vancomicina."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim funciona contra algumas dessas bactérias.",
+                "Dado curioso: essa não se toma por boca para efeito sistêmico.",
+                "Miau, cobre os positivos resistentes, não os negativos.",
+                "Ronronado de aprovação! Via intramuscular: a vantagem distintiva da teicoplanina sobre a vancomicina."
+            ]
+        }
     },
     {
         "pergunta": "Teicoplanina?",
@@ -21790,7 +22090,27 @@
             "Pode ser administrado por via intramuscular",
             "É biotransformado no fígado,",
             "É contra-indicado em doenças renais"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A síndrome do pescoço vermelho é mais característica da vancomicina; a teicoplanina tem menos risco disso.",
+                "A teicoplanina pode ser administrada por via intramuscular, diferente da vancomicina — é a resposta correta.",
+                "Os glicopeptídeos (incluindo a teicoplanina) se eliminam principalmente por via renal, não se biotransformam de forma relevante no fígado.",
+                "A teicoplanina não está contraindicada em doença renal; requer ajuste de dose, não evitá-la por completo."
+            ],
+            "fantasma": [
+                "Isso é mais típico de sua prima a vancomicina.",
+                "Essa aí! Pode ir direto no músculo, diferente da vancomicina.",
+                "Vai pelo rim, não se transforma tanto no fígado.",
+                "Não está proibida ali, só precisa ajustar a dose."
+            ],
+            "gato": [
+                "Fijate: isso é mais típico de sua prima a vancomicina.",
+                "Ronronado de aprovação! Via intramuscular: a vantagem da teicoplanina.",
+                "Dado curioso: vai pelo rim, não se transforma tanto no fígado.",
+                "Miau, não está proibida ali, só precisa ajustar a dose."
+            ]
+        }
     },
     {
         "pergunta": "Quanto à ação farmacológica dos antibióticos glicopeptídicos?",
@@ -21800,7 +22120,27 @@
             "Seu mecanismo de ação inclui a inibição da síntese de DNA bacteriano.",
             "A droga deve entrar no núcleo para atingir seu local de ação",
             "Possui ação bactericida tempo-dependente."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os glicopeptídeos não se indicam para infecções respiratórias altas comuns; se reservam para infecções graves por gram-positivos.",
+                "Os glicopeptídeos não inibem a síntese de DNA bacteriano, seu mecanismo é sobre a parede celular.",
+                "As bactérias não têm núcleo (são procariontes); o fármaco atua no nível da parede celular, sem precisar entrar em nenhum núcleo.",
+                "Os glicopeptídeos têm ação bactericida tempo-dependente, a descrição farmacodinâmica clássica — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não são para isso, se guardam para infecções mais graves.",
+                "Esse não é seu mecanismo, atuam sobre a parede.",
+                "As bactérias nem têm essa estrutura.",
+                "Essa aí! Mata bactérias conforme o tempo que fica presente, não conforme a dose de pico."
+            ],
+            "gato": [
+                "Fijate: não são para isso, se guardam para infecções graves.",
+                "Dado curioso: esse não é seu mecanismo, atuam sobre a parede.",
+                "Miau, as bactérias nem têm essa estrutura.",
+                "Ronronado de aprovação! Bactericida tempo-dependente: a descrição clássica dos glicopeptídeos."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos glicopeptídeos, selecione o CORRETO?",
@@ -21810,7 +22150,27 @@
             "Eles não aumentam a ototoxicidade dos aminoglicosídeos",
             "Telavancina pode ser usada para pneumonia bacteriana associada à VM",
             "Teicoplanina é usada por via oral"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: a síndrome do pescoço vermelho é produzida em maior medida pela vancomicina, não pela teicoplanina.",
+                "Os glicopeptídeos SIM podem potencializar a ototoxicidade dos aminoglicosídeos ao se combinarem, uma interação reconhecida.",
+                "A telavancina pode ser utilizada para pneumonia bacteriana associada a ventilação mecânica, uma indicação estabelecida desse lipoglicopeptídeo — é a resposta correta.",
+                "A teicoplanina não se utiliza por VO para efeito sistêmico, é de administração parenteral."
+            ],
+            "fantasma": [
+                "Ao contrário, é a vancomicina a mais associada a isso.",
+                "Ao contrário, sim podem somar esse dano ao ouvido se combinados.",
+                "Essa aí! Aprovada especificamente para essa pneumonia grave com respirador.",
+                "Essa não se toma por boca para efeito sistêmico."
+            ],
+            "gato": [
+                "Fijate: ao contrário, é a vancomicina a mais associada a isso.",
+                "Dado curioso: ao contrário, sim podem somar esse dano ao ouvido.",
+                "Ronronado de aprovação! Telavancina: aprovada para pneumonia associada a ventilação mecânica.",
+                "Miau, essa não se toma por boca para efeito sistêmico."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a opção INCORRETA em relação à vancomicina?",
@@ -21821,7 +22181,27 @@
             "Pode ser administrado por via oral para o tratamento da colite pseudomembranosa por C. difficile.",
             "Produz oto e nefrotoxicidade",
             "Como todos os beta-lactâmicos, pode ocorrer em associação com inibidores da beta-lactamase."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O mecanismo da vancomicina SIM inclui se ligar ao nucleotídeo de Park, impedindo seu transporte para o exterior — afirmação correta.",
+                "A vancomicina SIM pode ser dada por via oral especificamente para a colite pseudomembranosa por C. difficile — afirmação correta.",
+                "A vancomicina SIM produz oto e nefrotoxicidade — afirmação correta.",
+                "A vancomicina NÃO é um beta-lactâmico, é um glicopeptídeo; não faz sentido associá-la a inibidores de beta-lactamase — é a afirmação INCORRETA, resposta correta segundo o feedback do banco."
+            ],
+            "fantasma": [
+                "Isso é verdade, freia o transporte desse precursor da parede.",
+                "Isso também é verdade, por boca serve especificamente para essa infecção intestinal.",
+                "Isso também é verdade, o ouvido e o rim podem sofrer.",
+                "Essa aí! Nem sequer é um beta-lactâmico, não faz sentido essa combinação."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, freia o transporte desse precursor.",
+                "Dado curioso: isso também é verdade, por boca serve para essa infecção.",
+                "Miau, isso também é verdade, ouvido e rim podem sofrer.",
+                "Ronronado de aprovação! Não é um beta-lactâmico: a incorreta da lista."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a opção CORRETA em relação à vancomicina?",
@@ -21831,7 +22211,27 @@
             "Não é útil contra bactérias anaeróbicas.",
             "Abrange principalmente germes gram-positivos e negativos resistentes.",
             "Gera nefrotoxicidade e vermelhidão no pescoço como efeito adverso típico."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As vias habituais da vancomicina para uso sistêmico não incluem a oral; a via oral se reserva para efeito local intestinal (C. difficile).",
+                "A vancomicina SIM é útil contra certas bactérias anaeróbias gram-positivas (como o C. difficile).",
+                "A vancomicina (glicopeptídeo) cobre germes gram-POSITIVOS resistentes, não gram-negativos.",
+                "A vancomicina gera como efeito adverso típico nefrotoxicidade e a síndrome do pescoço vermelho — é a resposta correta."
+            ],
+            "fantasma": [
+                "Por boca é só para o efeito local no intestino, não para o sistêmico.",
+                "Ao contrário, sim funciona contra essa bactéria intestinal sem oxigênio.",
+                "Cobre os positivos resistentes, não os negativos.",
+                "Essa aí! Rim e pescoço vermelho, o combo clássico de efeitos adversos desse fármaco."
+            ],
+            "gato": [
+                "Fijate: por boca é só para o efeito local no intestino.",
+                "Dado curioso: ao contrário, sim funciona contra essa bactéria intestinal.",
+                "Miau, cobre os positivos resistentes, não os negativos.",
+                "Ronronado de aprovação! Nefrotoxicidade + pescoço vermelho: o combo clássico da vancomicina."
+            ]
+        }
     },
     {
         "pergunta": "Marque a opção INCORRETA referente à Vancomicina?",
