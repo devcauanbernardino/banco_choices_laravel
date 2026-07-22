@@ -30059,7 +30059,27 @@
             "Hepatotoxicidade, síndrome semelhante à gripe, coloração avermelhada da urina",
             "Hepatotoxicidade, neurite óptica e hiperuricemia",
             "Nefrotoxicidade, hepatotoxicidade e anemia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A prolongação do QT e a fibrose pulmonar não são efeitos adversos característicos da rifampicina.",
+                "Hepatotoxicidade, síndrome pseudogripal e coloração avermelhada da urina são os efeitos adversos característicos e distintivos da rifampicina — é a resposta correta.",
+                "A neurite óptica e a hiperuricemia são do etambutol/pirazinamida, não da rifampicina.",
+                "A nefrotoxicidade e a anemia não são as características distintivas da rifampicina."
+            ],
+            "fantasma": [
+                "Isso não é o característico dessa droga.",
+                "Essa aí! O trio distintivo e clássico dessa droga em particular.",
+                "Isso é de outras drogas, não dessa.",
+                "Isso não é o característico dessa droga."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico dessa droga.",
+                "Ronronado de aprovação! Hepatotoxicidade + síndrome pseudogripal + coloração da urina: o trio distintivo da rifampicina.",
+                "Dado curioso: isso é de outras drogas.",
+                "Miau, isso não é o característico dessa droga."
+            ]
+        }
     },
     {
         "pergunta": "Um homem de 35 anos, ex-viciado em heroína, vem recebendo tratamento de manutenção com metadona há 13 meses. Ele teve um teste cutâneo positivo para tuberculose (PPD) há 2 semanas e uma radiografia de tórax mostrou evidência de infecção no lobo superior. Foi iniciado tratamento padrão com quatro drogas antimicobacterianas. O paciente chegou à enfermaria com “sintomas de abstinência”. Qual dos seguintes medicamentos antimicobacterianos é a causa provável desta reação aguda de abstinência?",
@@ -30069,7 +30089,27 @@
             "Isoniazida",
             "Pirazinamida",
             "Rifampicina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O etambutol não tem essa interação estabelecida com a metadona.",
+                "A isoniazida não tem essa interação estabelecida com a metadona.",
+                "A pirazinamida não tem essa interação estabelecida com a metadona.",
+                "A rifampicina, ao induzir o CYP450, acelera o metabolismo da metadona, baixando seus níveis e precipitando essa síndrome de abstinência — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não tem essa interação com a metadona.",
+                "Essa não tem essa interação com a metadona.",
+                "Essa não tem essa interação com a metadona.",
+                "Essa aí! Acelera tanto o metabolismo da metadona que seus níveis caem e aparece a abstinência."
+            ],
+            "gato": [
+                "Fijate: esse não tem essa interação com a metadona.",
+                "Dado curioso: essa não tem essa interação.",
+                "Miau, essa não tem essa interação.",
+                "Ronronado de aprovação! Rifampicina acelerando o metabolismo da metadona: a causa dessa abstinência."
+            ]
+        }
     },
     {
         "pergunta": "Selecione o CORRETO em relação à rifampicina:",
@@ -30079,7 +30119,27 @@
             "Não pode ser administrado topicamente",
             "Pertence à categoria C de risco fetal",
             "Não causa hepatotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é essa a coloração estabelecida; a cor característica é avermelhada-alaranjada, não como refrigerante de cola.",
+                "Não está estabelecida essa limitação para a via tópica nesse contexto.",
+                "Pertence à categoria C de risco fetal, um dado de segurança reconhecido — é a resposta correta.",
+                "É ao contrário: SIM gera hepatotoxicidade, um efeito adverso bem estabelecido."
+            ],
+            "fantasma": [
+                "Não é essa a cor, é mais avermelhada-alaranjada.",
+                "Essa limitação não está estabelecida aqui.",
+                "Essa aí! Essa é sua categoria de risco durante a gravidez.",
+                "Ao contrário, sim pode prejudicar o fígado."
+            ],
+            "gato": [
+                "Fijate: não é essa a cor, é avermelhada-alaranjada.",
+                "Dado curioso: essa limitação não está estabelecida.",
+                "Ronronado de aprovação! Categoria C: o risco fetal reconhecido da rifampicina.",
+                "Miau, ao contrário, sim pode prejudicar o fígado."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a opção INCORRETA em relação à rifampicina:",
@@ -30090,7 +30150,27 @@
             "O metabolismo é por desacetilação hepática",
             "A eliminação é via bile",
             "Mutação do gene rpoB produz resistência"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: a síndrome pseudogripal se caracteriza por náuseas, vômitos, febre, cefaleias, entre outros.",
+                "O metabolismo da rifampicina é por desacetilação hepática — segundo o critério deste banco, essa é a afirmação INCORRETA marcada como resposta.",
+                "Essa afirmação é correta: a eliminação é por via biliar.",
+                "Essa afirmação é correta: a mutação do gene rpoB produz resistência à rifampicina."
+            ],
+            "fantasma": [
+                "Isso é verdade, esse é o quadro clássico dessa síndrome.",
+                "Segundo o banco, essa é a marcada como incorreta nessa questão.",
+                "Isso também é verdade, vai pela bile.",
+                "Isso também é verdade, essa mutação gera resistência."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, esse é o quadro clássico.",
+                "Ronronado de aprovação! Segundo o critério deste banco, a marcada como incorreta nessa questão.",
+                "Dado curioso: isso também é verdade, vai pela bile.",
+                "Miau, isso também é verdade, essa mutação gera resistência."
+            ]
+        }
     },
     {
         "pergunta": "A rifampicina é um medicamento de primeira linha para o tratamento da tuberculose que produz autoindução da enzima CYP450...",
@@ -30100,7 +30180,27 @@
             "Aumento da concentração plasmática de fluconazol, nelfinavir e indinavir",
             "Produzindo um aumento na varfarina, cotrimoxazol e atovaquona",
             "Diminuindo a concentração de nevirapina, prednisolona e quinidina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: ao induzir o CYP450, a rifampicina DIMINUI (não aumenta) os níveis de anticoncepcionais orais.",
+                "É ao contrário: a indução DIMINUI (não aumenta) os níveis desses fármacos metabolizados por essa via.",
+                "É ao contrário: a indução DIMINUI (não aumenta) os níveis de varfarina e outros substratos do CYP450.",
+                "Diminuindo a concentração de nevirapina, prednisolona e quinidina, coerente com seu efeito indutor do CYP450 — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, os baixa, não os sobe.",
+                "Ao contrário, os baixa, não os sobe.",
+                "Ao contrário, a baixa, não a sobe.",
+                "Essa aí! Acelera tanto o metabolismo desses fármacos que seus níveis caem."
+            ],
+            "gato": [
+                "Fijate: ao contrário, os baixa, não os sobe.",
+                "Dado curioso: ao contrário, os baixa, não os sobe.",
+                "Miau, ao contrário, a baixa, não a sobe.",
+                "Ronronado de aprovação! Diminuição de níveis por indução: o efeito real da rifampicina sobre esses fármacos."
+            ]
+        }
     },
     {
         "pergunta": "A administração de rifampicina é por via oral:",
@@ -30110,7 +30210,27 @@
             "Com baixa absorção se administrado com alimentos",
             "Atingindo uma concentração máxima em 5 horas",
             "Após a absorção, liga-se às proteínas com 85%"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: tem uma biodisponibilidade ALTA (não de 30%) quando tomada corretamente em jejum.",
+                "Com baixa absorção se administrada com alimentos, coerente com a recomendação de tomá-la em jejum — é a resposta correta.",
+                "Não está estabelecido esse valor específico de tempo até a concentração máxima neste banco.",
+                "Não é esse o valor de ligação a proteínas destacado como a característica correta aqui."
+            ],
+            "fantasma": [
+                "Ao contrário, se absorve muito bem se tomada em jejum.",
+                "Essa aí! A comida baixa sua absorção, por isso se recomenda em jejum.",
+                "Esse dado específico não é o destacado aqui.",
+                "Esse dado não é o destacado como correto aqui."
+            ],
+            "gato": [
+                "Fijate: ao contrário, se absorve muito bem em jejum.",
+                "Ronronado de aprovação! Baixa absorção com alimentos: a razão de tomá-la em jejum.",
+                "Dado curioso: esse dado específico não é o destacado aqui.",
+                "Miau, esse dado não é o destacado como correto aqui."
+            ]
+        }
     },
     {
         "pergunta": "No caso de infecção por Mycobacterium tuberculosis, juntamente com outros medicamentos antituberculose, a rifampicina é administrada:",
@@ -30120,7 +30240,27 @@
             "Inibe o crescimento pela supressão da RNA polimerase de bacilos dependente de DNA",
             "É eficaz apenas em lesões cavitárias",
             "É bactericida contra bacilos intracelulares na fase de rápido crescimento."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: a rifampicina é BACTERICIDA (não bacteriostática), inclusive contra formas intracelulares/de crescimento lento.",
+                "Inibe o crescimento por supressão da RNA polimerase dependente de DNA dos bacilos, seu mecanismo característico — é a resposta correta.",
+                "Não está estabelecida essa limitação exclusiva a lesões cavitárias.",
+                "É incompleto: sua característica distintiva é também cobrir bacilos de crescimento LENTO/persistentes, não só os de crescimento rápido."
+            ],
+            "fantasma": [
+                "Ao contrário, mata, não só freia, mesmo os que estão dentro da célula.",
+                "Essa aí! Freia a fabricação de RNA do bacilo, seu mecanismo característico.",
+                "Essa limitação não está estabelecida assim.",
+                "Falta algo, também cobre os bacilos mais lentos/adormecidos."
+            ],
+            "gato": [
+                "Fijate: ao contrário, mata, não só freia.",
+                "Ronronado de aprovação! Supressão da RNA polimerase bacteriana: o mecanismo característico da rifampicina.",
+                "Dado curioso: essa limitação não está estabelecida assim.",
+                "Miau, falta algo, também cobre os mais lentos."
+            ]
+        }
     },
     {
         "pergunta": "Etambutol:",
@@ -30130,7 +30270,27 @@
             "Sua administração é apenas intravenosa devido à sua baixa biodisponibilidade oral.",
             "Apresenta neurite óptica como efeito adverso típico",
             "Apresenta dois tipos de metabolizadores, lentos e rápidos, que influenciam na toxicidade do medicamento."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O etambutol não é altamente hepatotóxico; sua preocupação é sobre a visão.",
+                "É ao contrário: o etambutol se administra por via ORAL, com boa biodisponibilidade, não unicamente IV.",
+                "Apresenta neurite óptica como efeito adverso típico, sua característica distintiva — é a resposta correta.",
+                "Os metabolizadores lentos/rápidos são característica da isoniazida, não do etambutol."
+            ],
+            "fantasma": [
+                "Esse não prejudica tanto o fígado, seu problema é outro.",
+                "Ao contrário, se toma por boca, se absorve bem.",
+                "Essa aí! O olho é o ponto fraco clássico desse fármaco.",
+                "Isso é da isoniazida, não desse fármaco."
+            ],
+            "gato": [
+                "Fijate: esse não prejudica tanto o fígado.",
+                "Dado curioso: ao contrário, se toma por boca.",
+                "Ronronado de aprovação! Neurite óptica: a característica distintiva do etambutol.",
+                "Miau, isso é da isoniazida."
+            ]
+        }
     },
     {
         "pergunta": "Um homem de 35 anos com teste cutâneo de tuberculose positivo iniciou terapia antimicobacteriana padrão com quatro medicamentos. Chegou ao pronto-socorro devido a alterações de campo visual. Qual dos seguintes medicamentos antimicobacterianos provavelmente causou a condição do paciente?",
@@ -30140,7 +30300,27 @@
             "Isoniazida",
             "Etambutol",
             "Rifampicina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A pirazinamida não está estabelecida com esse efeito sobre o campo visual.",
+                "A isoniazida não está estabelecida com esse efeito sobre o campo visual.",
+                "O etambutol é o suspeito clássico diante de alterações do campo visual, por seu risco de neurite óptica — é a resposta correta.",
+                "A rifampicina não está estabelecida com esse efeito sobre o campo visual."
+            ],
+            "fantasma": [
+                "Essa droga não tem essa associação com a visão.",
+                "Essa droga não tem essa associação com a visão.",
+                "Essa aí! O suspeito clássico quando aparecem problemas de visão com esse tratamento.",
+                "Essa droga não tem essa associação com a visão."
+            ],
+            "gato": [
+                "Fijate: essa droga não tem essa associação.",
+                "Dado curioso: essa droga não tem essa associação.",
+                "Ronronado de aprovação! Etambutol: o suspeito clássico diante de alterações visuais.",
+                "Miau, essa droga não tem essa associação."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é um efeito adverso característico do etambutol?",
@@ -30150,7 +30330,27 @@
             "Hepatotoxicidade",
             "Descoloração avermelhada das secreções",
             "Nefrotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A neurite óptica é o efeito adverso característico do etambutol — é a resposta correta.",
+                "A hepatotoxicidade não é a característica distintiva do etambutol.",
+                "A coloração avermelhada das secreções é da rifampicina, não do etambutol.",
+                "A nefrotoxicidade não é a característica distintiva do etambutol."
+            ],
+            "fantasma": [
+                "Essa aí! O olho é o ponto fraco clássico desse fármaco.",
+                "Isso não é o característico desse fármaco.",
+                "Isso é da rifampicina, não desse fármaco.",
+                "Isso não é o característico desse fármaco."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Neurite óptica: o efeito adverso característico do etambutol.",
+                "Fijate: isso não é o característico desse fármaco.",
+                "Dado curioso: isso é da rifampicina.",
+                "Miau, isso não é o característico desse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Ao me deparar com um paciente com neurite óptica, no contexto do tratamento da tuberculose, de qual medicamento devo suspeitar?",
@@ -30160,7 +30360,27 @@
             "Pirazinamida",
             "Etambutol",
             "Isoniazida"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A cicloserina não está estabelecida com esse efeito ocular característico.",
+                "A pirazinamida não está estabelecida com esse efeito ocular; sua marca é hepatotoxicidade/hiperuricemia.",
+                "O etambutol é o suspeito clássico diante de uma neurite óptica nesse contexto — é a resposta correta.",
+                "A isoniazida não está estabelecida com esse efeito ocular; sua marca é a neuropatia periférica."
+            ],
+            "fantasma": [
+                "Essa droga não tem essa associação com os olhos.",
+                "Essa droga não tem essa associação com os olhos, sua marca é outra.",
+                "Essa aí! O suspeito clássico quando aparece esse problema no olho.",
+                "Essa droga afeta mais os nervos periféricos, não o olho."
+            ],
+            "gato": [
+                "Fijate: essa droga não tem essa associação com os olhos.",
+                "Dado curioso: essa droga tem outra marca característica.",
+                "Ronronado de aprovação! Etambutol: o suspeito clássico diante de neurite óptica.",
+                "Miau, essa droga afeta mais os nervos periféricos."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes cuidados deve ser tomado em um paciente em uso de Isoniazida?",
@@ -30170,7 +30390,27 @@
             "Administrar ácido fólico",
             "Administrar altas doses de vitamina C",
             "Administrar anti-histamínicos para evitar alergias graves"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Administrar vitamina B6 (piridoxina) é a precaução estabelecida para prevenir a neuropatia por isoniazida — é a resposta correta.",
+                "Não é o ácido fólico a precaução estabelecida nesse contexto.",
+                "Não estão estabelecidas altas doses de vitamina C como precaução com esse fármaco.",
+                "Não é essa a precaução característica estabelecida para esse fármaco."
+            ],
+            "fantasma": [
+                "Essa aí! Essa vitamina protege os nervos desse fármaco.",
+                "Essa não é a precaução estabelecida aqui.",
+                "Essa não está estabelecida como precaução com esse fármaco.",
+                "Essa não é a precaução característica estabelecida aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Piridoxina (B6): a precaução estabelecida com a isoniazida.",
+                "Fijate: essa não é a precaução estabelecida aqui.",
+                "Dado curioso: essa não está estabelecida com esse fármaco.",
+                "Miau, essa não é a precaução característica aqui."
+            ]
+        }
     },
     {
         "pergunta": "Isoniazida:",
@@ -30180,7 +30420,27 @@
             "É eliminado por filtração glomerular sem ser metabolizado.",
             "Entre seus efeitos adversos típicos está a hiperuricemia.",
             "É um antibiótico bactericida antituberculose para bacilos de crescimento rápido."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: é bactericida (não bacteriostática) contra bacilos em crescimento rápido.",
+                "É ao contrário: sofre metabolismo hepático significativo (acetilação), não se elimina sem metabolizar.",
+                "A hiperuricemia não é um efeito adverso típico da isoniazida; é mais de pirazinamida/etambutol.",
+                "É um antibiótico bactericida antituberculoso para bacilos em crescimento rápido, sua característica farmacodinâmica correta — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, mata, não só freia, essas bactérias rápidas.",
+                "Ao contrário, sim passa pelo fígado antes de sair.",
+                "Isso não é o característico desse fármaco.",
+                "Essa aí! Mata as bactérias que se dividem rápido."
+            ],
+            "gato": [
+                "Fijate: ao contrário, mata, não só freia.",
+                "Dado curioso: ao contrário, sim passa pelo fígado.",
+                "Miau, isso não é o característico desse fármaco.",
+                "Ronronado de aprovação! Bactericida contra bacilos de crescimento rápido: a característica da isoniazida."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à neuropatia isoniazida:",
@@ -30190,7 +30450,27 @@
             "É mais comum quando usada em conjunto com a rifampicina devido ao efeito inibitório enzimático desta última.",
             "Juntamente com a pirazinamida, são contraindicados em pacientes com neuropatia.",
             "Afeta principalmente o nervo óptico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Se previne suplementando com piridoxina (vitamina B6), a medida estabelecida — é a resposta correta.",
+                "É ao contrário: a rifampicina é INDUTORA (não inibidora) enzimática, e essa não é a razão estabelecida de maior frequência dessa neuropatia.",
+                "Não está estabelecida essa contraindicação absoluta em pacientes com neuropatia prévia; se maneja com suplementação de B6.",
+                "É ao contrário: afeta fundamentalmente os nervos PERIFÉRICOS, não o nervo óptico (isso é do etambutol)."
+            ],
+            "fantasma": [
+                "Essa aí! Essa vitamina protege os nervos desse efeito.",
+                "Ao contrário, essa droga acelera, não freia essa via, e essa não é a razão.",
+                "Não está tão proibido assim, se maneja com a vitamina.",
+                "Ao contrário, afeta os nervos de todo o corpo, não o do olho."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Piridoxina (B6): a medida de prevenção estabelecida.",
+                "Fijate: ao contrário, essa droga acelera essa via.",
+                "Dado curioso: não está tão proibido, se maneja com a vitamina.",
+                "Miau, ao contrário, afeta os nervos periféricos, não o óptico."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à isoniazida, marque a opção INCORRETA:",
@@ -30201,7 +30481,27 @@
             "Sua absorção aumenta com a alimentação",
             "Existem metabolizadores rápidos e lentos",
             "Devo administrar vitamina B6 devido ao risco de polineuropatia periférica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: a isoniazida é uma pró-droga.",
+                "É ao contrário: sua absorção DIMINUI com os alimentos (especialmente ricos em carboidratos), não aumenta — é a afirmação INCORRETA, resposta correta segundo o feedback do banco.",
+                "Essa afirmação é correta: existem metabolizadores rápidos e lentos (polimorfismo de acetilação).",
+                "Essa afirmação é correta: é preciso administrar vitamina B6 pelo risco de polineuropatia periférica."
+            ],
+            "fantasma": [
+                "Isso é verdade, precisa se ativar primeiro.",
+                "Essa aí! Ao contrário, a comida baixa sua absorção, não a sobe.",
+                "Isso também é verdade, há gente que a processa diferente.",
+                "Isso também é verdade, é preciso cuidar dos nervos com essa vitamina."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, precisa se ativar primeiro.",
+                "Ronronado de aprovação! A comida baixa a absorção, não a sobe: a incorreta da lista.",
+                "Dado curioso: isso também é verdade, há metabolizadores diferentes.",
+                "Miau, isso também é verdade, é preciso cuidar dos nervos."
+            ]
+        }
     },
     {
         "pergunta": "Com qual dos seguintes anti-infecciosos é necessário suplementar piridoxina para reduzir hematoma e neurotoxicidade?",
@@ -30211,7 +30511,27 @@
             "Isoniazida",
             "Etambutol",
             "Ciprofloxacina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O linezolida não tem essa necessidade estabelecida de suplementação com piridoxina.",
+                "A isoniazida requer suplementação com piridoxina para reduzir sua neurotoxicidade (e possível hematotoxicidade relacionada) — é a resposta correta.",
+                "O etambutol não tem essa necessidade estabelecida de suplementação com piridoxina.",
+                "A ciprofloxacina não tem essa necessidade estabelecida de suplementação com piridoxina."
+            ],
+            "fantasma": [
+                "Esse não precisa dessa vitamina de forma particular.",
+                "Essa aí! Precisa dessa vitamina para proteger nervos e sangue.",
+                "Esse não precisa dessa vitamina de forma particular.",
+                "Essa não precisa dessa vitamina de forma particular."
+            ],
+            "gato": [
+                "Fijate: esse não precisa dessa vitamina em particular.",
+                "Ronronado de aprovação! Isoniazida e piridoxina: a suplementação estabelecida contra a neuro/hematotoxicidade.",
+                "Dado curioso: esse não precisa dessa vitamina em particular.",
+                "Miau, essa não precisa dessa vitamina em particular."
+            ]
+        }
     },
     {
         "pergunta": "Isoniazida:",
@@ -30221,7 +30541,27 @@
             "É bactericida para micobactérias",
             "Liga-se às proteínas plasmáticas em alta concentração",
             "95% da droga é eliminada por excreção renal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: é bactericida (não bacteriostática) para micobactérias.",
+                "Embora também seja verdade que é bactericida, não é o dado específico e quantitativo destacado nessa pergunta.",
+                "É ao contrário: tem BAIXA ligação a proteínas plasmáticas, não alta.",
+                "95% da droga se elimina por excreção renal, o dado farmacocinético específico destacado aqui — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, mata, não só freia.",
+                "Isso também é certo, mas não é o dado preciso buscado aqui.",
+                "Ao contrário, se gruda pouco às proteínas.",
+                "Essa aí! A grande maioria sai pelo rim."
+            ],
+            "gato": [
+                "Fijate: ao contrário, mata, não só freia.",
+                "Dado curioso: isso também é certo, mas não é o dado buscado aqui.",
+                "Miau, ao contrário, se gruda pouco às proteínas.",
+                "Ronronado de aprovação! 95% por excreção renal: o dado farmacocinético específico da isoniazida."
+            ]
+        }
     },
     {
         "pergunta": "Isoniazida:",
@@ -30231,7 +30571,27 @@
             "É um bactericida antituberculose para bacilos em repouso.",
             "Tem sua própria atividade antibacteriana",
             "É um bactericida antituberculose para bacilos rápidos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: é bactericida (não bacteriostática) para bacilos de crescimento rápido.",
+                "É ao contrário: sua atividade é contra bacilos de crescimento RÁPIDO, não em repouso (isso é mais próprio da rifampicina).",
+                "É ao contrário: NÃO tem atividade antibacteriana própria; é uma pró-droga que precisa se ativar primeiro.",
+                "É bactericida antituberculoso para bacilos de crescimento rápido, sua característica correta — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, mata, não só freia.",
+                "Ao contrário, ataca os que se dividem rápido, não os adormecidos.",
+                "Ao contrário, precisa se ativar primeiro, não tem poder sozinha.",
+                "Essa aí! Mata as bactérias que se dividem rápido."
+            ],
+            "gato": [
+                "Fijate: ao contrário, mata, não só freia.",
+                "Dado curioso: ao contrário, ataca os que se dividem rápido.",
+                "Miau, ao contrário, precisa se ativar primeiro.",
+                "Ronronado de aprovação! Bactericida contra bacilos de crescimento rápido: a característica da isoniazida."
+            ]
+        }
     },
     {
         "pergunta": "Isoniazida:",
@@ -30241,7 +30601,27 @@
             "Inibe a síntese de proteínas ligando-se à subunidade ribossômica 30s das micobactérias",
             "Está associado à piridoxina para reduzir o risco de neuropatia",
             "Deve ser monitorado com controle mensal da acuidade visual para induzir neurite óptica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: tem excelente penetração no SNC, cruzando bem a barreira hematoencefálica, não restrita ao LEC.",
+                "Não é esse o mecanismo da isoniazida; não se liga à subunidade 30S nem afeta a síntese proteica.",
+                "Se associa à piridoxina para reduzir o risco de neuropatia, a medida estabelecida — é a resposta correta.",
+                "É ao contrário: esse monitoramento de acuidade visual é do etambutol, não da isoniazida."
+            ],
+            "fantasma": [
+                "Ao contrário, entra muito bem no cérebro.",
+                "Esse não é o mecanismo desse fármaco.",
+                "Essa aí! Essa vitamina a acompanha para proteger os nervos.",
+                "Esse controle é de outro fármaco, o etambutol."
+            ],
+            "gato": [
+                "Fijate: ao contrário, entra muito bem no cérebro.",
+                "Dado curioso: esse não é o mecanismo desse fármaco.",
+                "Ronronado de aprovação! Piridoxina junto à isoniazida: a medida estabelecida contra a neuropatia.",
+                "Miau, esse controle é do etambutol."
+            ]
+        }
     },
     {
         "pergunta": "Isoniazida:",
@@ -30251,7 +30631,27 @@
             "É um antibiótico bacteriostático antituberculose para bacilos de crescimento rápido.",
             "Entre seus efeitos adversos típicos está a nefrotoxicidade.",
             "É eliminado por filtração glomerular sem ser metabolizado."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Apresenta dois tipos de metabolizadores, lentos e rápidos, que influenciam sua toxicidade, o polimorfismo de acetilação bem estabelecido — é a resposta correta.",
+                "É ao contrário: é bactericida (não bacteriostática) para bacilos de crescimento rápido.",
+                "A nefrotoxicidade não é um efeito adverso típico da isoniazida.",
+                "É ao contrário: sofre metabolismo hepático significativo (acetilação), não se elimina sem metabolizar."
+            ],
+            "fantasma": [
+                "Essa aí! Tem gente que a processa rápido e gente que a processa devagar, e isso muda o risco.",
+                "Ao contrário, mata, não só freia.",
+                "Isso não é o característico desse fármaco.",
+                "Ao contrário, sim passa pelo fígado antes de sair."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Metabolizadores rápidos e lentos: o polimorfismo real da isoniazida.",
+                "Fijate: ao contrário, mata, não só freia.",
+                "Dado curioso: isso não é o característico desse fármaco.",
+                "Miau, ao contrário, sim passa pelo fígado."
+            ]
+        }
     },
     {
         "pergunta": "Assinale a opção CORRETA em relação à isoniazida:",
