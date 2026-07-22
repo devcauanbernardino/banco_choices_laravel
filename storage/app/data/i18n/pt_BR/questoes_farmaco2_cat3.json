@@ -26452,7 +26452,27 @@
             "Eles estão mal distribuídos nos fluidos corporais",
             "Não possui metabólitos ativos",
             "A excreção de metronidazol e tinidazol é urinária e fecal."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: o metronidazol tem uma excelente biodisponibilidade oral, não ruim.",
+                "É ao contrário: se distribuem bem nos líquidos corporais, com boa penetração tecidual.",
+                "SIM têm metabólitos ativos (como o hidroximetronidazol), que conservam certa atividade.",
+                "A excreção do metronidazol e tinidazol é tanto urinária quanto fecal, uma característica farmacocinética estabelecida — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, se absorve muito bem por boca.",
+                "Ao contrário, se distribuem bem pelo corpo.",
+                "Ao contrário, sim têm um metabólito que continua ativo.",
+                "Essa aí! Sai tanto pela urina quanto pelas fezes."
+            ],
+            "gato": [
+                "Fijate: ao contrário, se absorve muito bem por boca.",
+                "Dado curioso: ao contrário, se distribuem bem pelo corpo.",
+                "Miau, ao contrário, sim têm um metabólito ativo.",
+                "Ronronado de aprovação! Eliminação urinária e fecal: a via real do metronidazol/tinidazol."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos nitroimidazóis:",
@@ -26462,7 +26482,27 @@
             "Metronidazol é usado contra infecções causadas por protozoários e bactérias aeróbias.",
             "O Nifurtimox é um derivado do metronidazol envolvido no tratamento da doença de Chagas.",
             "Um dos efeitos adversos do metronidazol é a neuropatia periférica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: o benznidazol se ativa dentro da célula (intracelularmente), não no meio extracelular.",
+                "É ao contrário: o metronidazol se usa contra bactérias ANAERÓBIAS, não aeróbias.",
+                "O nifurtimox não é um derivado do metronidazol; são de classes químicas diferentes (nitrofurano vs. nitroimidazol).",
+                "A neuropatia periférica é um efeito adverso reconhecido do metronidazol, especialmente com uso prolongado — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, se ativa dentro da célula, não fora.",
+                "Ao contrário, é contra bactérias sem oxigênio, não com oxigênio.",
+                "Não estão relacionados assim, são de famílias químicas diferentes.",
+                "Essa aí! Os nervos podem sofrer com o uso prolongado desse fármaco."
+            ],
+            "gato": [
+                "Fijate: ao contrário, se ativa dentro da célula.",
+                "Dado curioso: ao contrário, é contra bactérias sem oxigênio.",
+                "Miau, não estão relacionados assim, são famílias diferentes.",
+                "Ronronado de aprovação! Neuropatia periférica: efeito adverso reconhecido do metronidazol."
+            ]
+        }
     },
     {
         "pergunta": "Quais são os efeitos adversos mais comuns dos nitrofuranos?",
@@ -26472,7 +26512,27 @@
             "Náusea, neutropenia, nistagmo",
             "Nistagmo, neutrofilia, neuropatias",
             "Náusea, neutrofilia, neuropatias"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Náuseas, vômitos, neuropatias e neutropenia compõem o perfil real de efeitos adversos dos nitrofuranos — é a resposta correta.",
+                "O nistagmo não é um efeito adverso estabelecido dessa família.",
+                "É ao contrário: é neutroPENIA (diminuição), não neutrofilia (aumento), o que pode ocorrer; e o nistagmo também não é estabelecido.",
+                "É ao contrário: é neutroPENIA, não neutrofilia, o efeito hematológico estabelecido."
+            ],
+            "fantasma": [
+                "Essa aí! O combo real: estômago revirado, nervos e um pouco de sangue.",
+                "Isso não está na lista real de efeitos dessa família.",
+                "Ao contrário, é para baixo essa célula, não para cima; e isso também não se encaixa.",
+                "Ao contrário, é para baixo essa célula, não para cima."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Náuseas + neuropatias + neutropenia: o combo real dos nitrofuranos.",
+                "Fijate: isso não está na lista real dessa família.",
+                "Dado curioso: ao contrário, é para baixo essa célula.",
+                "Miau, ao contrário, é para baixo essa célula, não para cima."
+            ]
+        }
     },
     {
         "pergunta": "Selecione a opção INCORRETA em relação à nitrofurantoína:",
@@ -26483,7 +26543,27 @@
             "Inibe enzimas bacterianas",
             "Gera danos ao DNA",
             "Não atravessa a placenta"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: pode ser chamado de antisséptico urinário.",
+                "Essa afirmação é correta: inibe enzimas bacterianas mediante seus metabólitos reativos.",
+                "Essa afirmação é correta: gera dano no DNA bacteriano.",
+                "A nitrofurantoína SIM atravessa a placenta, uma consideração clínica relevante — é a afirmação INCORRETA, resposta correta segundo o feedback do banco."
+            ],
+            "fantasma": [
+                "Isso é verdade, se chama assim por se concentrar na urina.",
+                "Isso também é verdade, seus metabólitos freiam enzimas bacterianas.",
+                "Isso também é verdade, danifica o DNA da bactéria.",
+                "Essa aí! Ao contrário, sim atravessa a placenta, algo a se considerar."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, se concentra na urina.",
+                "Dado curioso: isso também é verdade, freia enzimas bacterianas.",
+                "Miau, isso também é verdade, danifica o DNA bacteriano.",
+                "Ronronado de aprovação! Sim atravessa a placenta: a incorreta da lista."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à nitrofurantoína, selecione o efeito adverso que ela pode causar:",
@@ -26493,7 +26573,27 @@
             "Fibrose pulmonar",
             "tromboembolismo pulmonar",
             "Eosinopenia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A bronquite crônica não é o efeito adverso característico estabelecido da nitrofurantoína.",
+                "A fibrose pulmonar é um efeito adverso clássico e bem estabelecido do uso prolongado de nitrofurantoína — é a resposta correta.",
+                "O tromboembolismo pulmonar não é um efeito adverso estabelecido desse fármaco.",
+                "É ao contrário: se associa mais à EOSINOFILIA (aumento), não à eosinopenia, no contexto de reações pulmonares."
+            ],
+            "fantasma": [
+                "Isso não é o característico estabelecido desse fármaco.",
+                "Essa aí! O pulmão pode acabar danificado com o uso prolongado desse fármaco.",
+                "Isso não está estabelecido com esse fármaco.",
+                "Ao contrário, sobe essa célula, não desce, nesse contexto."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico desse fármaco.",
+                "Ronronado de aprovação! Fibrose pulmonar: o efeito adverso clássico da nitrofurantoína.",
+                "Dado curioso: isso não está estabelecido com esse fármaco.",
+                "Miau, ao contrário, sobe essa célula nesse contexto."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é um efeito adverso da nitrofurantoína?",
@@ -26503,7 +26603,27 @@
             "Hipercalemia",
             "Prolongamento do intervalo QT",
             "Pneumonite intersticial"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade não é o efeito adverso característico estabelecido da nitrofurantoína.",
+                "A hipercalemia não é um efeito adverso estabelecido desse fármaco.",
+                "A prolongação do QT não é um efeito adverso estabelecido desse fármaco.",
+                "A pneumonite intersticial é um efeito adverso pulmonar reconhecido da nitrofurantoína, relacionado à sua toxicidade pulmonar clássica — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso não é o característico desse fármaco.",
+                "Isso não está estabelecido com esse fármaco.",
+                "Isso não está estabelecido com esse fármaco.",
+                "Essa aí! O pulmão pode inflamar com esse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico desse fármaco.",
+                "Dado curioso: isso não está estabelecido aqui.",
+                "Miau, isso não está estabelecido aqui.",
+                "Ronronado de aprovação! Pneumonite intersticial: o efeito pulmonar reconhecido da nitrofurantoína."
+            ]
+        }
     },
     {
         "pergunta": "Marque a opção CORRETA em relação aos efeitos adversos característicos dos seguintes medicamentos:",
@@ -26513,7 +26633,27 @@
             "Mebendazol: náusea, neutropenia e nefrotoxicidade",
             "Metronidazol: náuseas e vômitos, neuropatia periférica e convulsões",
             "Mebendazol: parestesia, neutropenia e hepatotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade e ototoxicidade não são efeitos adversos característicos do metronidazol.",
+                "A neutropenia e nefrotoxicidade não são os efeitos adversos característicos estabelecidos do mebendazol.",
+                "Náuseas e vômitos, neuropatia periférica e convulsões são os efeitos adversos característicos do metronidazol — é a resposta correta.",
+                "A parestesia e neutropenia não são a combinação característica estabelecida para o mebendazol nesse contexto."
+            ],
+            "fantasma": [
+                "Isso não é o característico desse fármaco.",
+                "Essa combinação não é a estabelecida para esse outro fármaco.",
+                "Essa aí! Estômago, nervos e às vezes convulsões, o combo real desse fármaco.",
+                "Essa combinação não é a estabelecida para esse fármaco aqui."
+            ],
+            "gato": [
+                "Fijate: isso não é o característico desse fármaco.",
+                "Dado curioso: essa combinação não é a estabelecida para esse outro fármaco.",
+                "Ronronado de aprovação! Náuseas + neuropatia + convulsões: o perfil real do metronidazol.",
+                "Miau, essa combinação não é a estabelecida aqui."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com diagnóstico de diarreia crônica secundária a Entamoeba histolytica para a qual foi iniciado tratamento farmacológico. Com qual dos seguintes medicamentos você espera iniciar o tratamento e quais são os potenciais efeitos adversos que ele pode apresentar?",
@@ -26523,7 +26663,27 @@
             "Albendazol, náusea, neutropenia e nefrotoxicidade",
             "Metronidazol, náuseas e vômitos, neutropenia e convulsões",
             "Mebendazol, parestesias, neutropenia e hepatotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metronidazol está correto, mas a nefrotoxicidade e ototoxicidade não são seus efeitos adversos característicos.",
+                "O albendazol não é o tratamento de primeira linha estabelecido para essa infecção protozoária.",
+                "Metronidazol, com náuseas e vômitos, neutropenia e convulsões, é o tratamento e perfil de efeitos adversos correto para essa amebíase — é a resposta correta.",
+                "O mebendazol é um anti-helmíntico, não o tratamento indicado para essa infecção por um protozoário."
+            ],
+            "fantasma": [
+                "O fármaco está correto, mas esses efeitos adversos não são os seus.",
+                "Esse não é o tratamento de primeira linha para essa infecção.",
+                "Essa aí! O fármaco correto, com seu perfil real de efeitos adversos.",
+                "Esse é para vermes, não para esse parasita de uma só célula."
+            ],
+            "gato": [
+                "Fijate: o fármaco está correto, mas esses efeitos adversos não são os seus.",
+                "Dado curioso: esse não é o tratamento de primeira linha aqui.",
+                "Ronronado de aprovação! Metronidazol com seu perfil real de efeitos adversos: a combinação correta.",
+                "Miau, esse é para vermes, não para esse parasita."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes germes está dentro do espectro do Metronidazol?",
@@ -26533,7 +26693,27 @@
             "Trichomonas vaginalis",
             "Trypanosoma cruzi",
             "Pneumocystis jiroveci"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O Mycoplasma pneumoniae carece de parede celular e não está coberto pelo metronidazol.",
+                "A Trichomonas vaginalis está dentro do espectro clássico do metronidazol — é a resposta correta.",
+                "O Trypanosoma cruzi é terreno do nifurtimox/benznidazol, não do metronidazol.",
+                "O Pneumocystis jiroveci requer TMP/SMX, não está coberto pelo metronidazol."
+            ],
+            "fantasma": [
+                "Essa bactéria não tem parede, escapa desse fármaco.",
+                "Essa aí! Dentro do terreno clássico desse fármaco.",
+                "Esse parasita é tarefa de outro fármaco diferente.",
+                "Esse fungo/parasita precisa de outro fármaco diferente."
+            ],
+            "gato": [
+                "Fijate: essa bactéria não tem parede, escapa dele.",
+                "Ronronado de aprovação! Trichomonas vaginalis: dentro do espectro clássico do metronidazol.",
+                "Dado curioso: esse parasita é tarefa de outro fármaco.",
+                "Miau, esse precisa de outro fármaco diferente."
+            ]
+        }
     },
     {
         "pergunta": "O metronidazol pode agir apenas sobre os germes?",
@@ -26543,7 +26723,27 @@
             "Que não geram plasmídeos como mecanismo de resistência",
             "Eles têm uma camada externa com porinas",
             "Na anaerobiose"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não tem relação com a capacidade de gerar beta-lactamases, um conceito de outra família de fármacos.",
+                "Não tem relação com a geração de plasmídeos como mecanismo de resistência nesse contexto.",
+                "Não tem relação com a presença de porinas, uma característica estrutural de gram-negativos não relevante aqui.",
+                "O metronidazol só pode atuar em anaerobiose, já que sua ativação requer esse ambiente de baixo potencial redox — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso não tem relação com esse fármaco em particular.",
+                "Isso também não tem relação com esse fármaco.",
+                "Essa estrutura não é relevante para esse mecanismo.",
+                "Essa aí! Só funciona onde não há oxigênio."
+            ],
+            "gato": [
+                "Fijate: isso não tem relação com esse fármaco.",
+                "Dado curioso: isso também não tem relação aqui.",
+                "Miau, essa estrutura não é relevante para esse mecanismo.",
+                "Ronronado de aprovação! Anaerobiose: a condição necessária para a ação do metronidazol."
+            ]
+        }
     },
     {
         "pergunta": "Assinale a opção CORRETA quanto ao mecanismo de ação do metronidazol:",
@@ -26553,7 +26753,27 @@
             "Gera inibição da topoisomerase bacteriana",
             "Gera danos ao desestabilizar a estrutura helicoidal do DNA na anaerobiose",
             "Gera inibição da translocação de nucleotídeos Park"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o mecanismo do metronidazol; isso é mais próprio dos anti-helmínticos benzimidazólicos.",
+                "Não é esse o mecanismo do metronidazol; isso é próprio das quinolonas.",
+                "Gera dano ao desestabilizar a estrutura helicoidal do DNA em anaerobiose, o mecanismo característico do metronidazol — é a resposta correta.",
+                "Não é esse o mecanismo do metronidazol; isso é próprio da vancomicina."
+            ],
+            "fantasma": [
+                "Isso é mais dos anti-helmínticos, não desse fármaco.",
+                "Isso é das quinolonas, não desse fármaco.",
+                "Essa aí! Danifica a dupla hélice do DNA, mas só onde não há oxigênio.",
+                "Isso é da vancomicina, não desse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso é mais dos anti-helmínticos.",
+                "Dado curioso: isso é das quinolonas.",
+                "Ronronado de aprovação! Dano ao DNA em anaerobiose: o mecanismo característico do metronidazol.",
+                "Miau, isso é da vancomicina."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao metronidazol, indique a opção correta:",
@@ -26563,7 +26783,27 @@
             "Os efeitos adversos incluem convulsões",
             "Não utilizado no tratamento da amebíase",
             "Atua através da modificação da estrutura do DNA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metronidazol SIM inclui Clostridium difficile no seu espectro; na verdade é um tratamento clássico dessa infecção.",
+                "Entre seus efeitos adversos SIM se incluem as convulsões, especialmente com uso prolongado ou doses altas — é a resposta correta.",
+                "O metronidazol SIM se utiliza no tratamento de amebíase, é seu tratamento de primeira linha.",
+                "Essa descrição do mecanismo também é aceitável em termos gerais, mas a afirmação destacada nessa pergunta é outra."
+            ],
+            "fantasma": [
+                "Ao contrário, sim cobre essa bactéria.",
+                "Essa aí! Pode acontecer em doses altas ou uso prolongado.",
+                "Ao contrário, sim se usa para essa infecção, é de primeira linha.",
+                "Isso também é verdade em geral, mas a resposta buscada é outra."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim cobre essa bactéria.",
+                "Ronronado de aprovação! Convulsões: efeito adverso real do metronidazol.",
+                "Dado curioso: ao contrário, sim se usa para essa infecção.",
+                "Miau, isso também é verdade, mas a resposta buscada é outra."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o espectro do metronidazol?",
@@ -26573,7 +26813,27 @@
             "Aeróbios Gram positivos e negativos e anaeróbios facultativos, Giardia, Amoeba, Trichomonas",
             "Anaeróbios, giárdia, amebas e trichomonas",
             "Enterobacteriaceae, Giardia, Amebas, Trichomonas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não cobre essas bactérias aeróbias; estão fora do seu espectro anaeróbio.",
+                "É ao contrário: não cobre aeróbios, só anaeróbios (facultativos incluídos em certas condições), e protozoários.",
+                "Anaeróbios, giárdias, amebas e tricomonas é o espectro real do metronidazol — é a resposta correta.",
+                "Essas são bactérias aeróbias, fora do espectro do metronidazol."
+            ],
+            "fantasma": [
+                "Essas bactérias com oxigênio escapam desse fármaco.",
+                "Ao contrário, não cobre bactérias com oxigênio.",
+                "Essa aí! Sem oxigênio mais esses três parasitas, seu terreno real.",
+                "Essas bactérias com oxigênio estão fora do seu alcance."
+            ],
+            "gato": [
+                "Fijate: essas bactérias com oxigênio escapam.",
+                "Dado curioso: ao contrário, não cobre bactérias com oxigênio.",
+                "Ronronado de aprovação! Anaeróbios + giárdias + amebas + tricomonas: o espectro real do metronidazol.",
+                "Miau, essas bactérias com oxigênio estão fora do seu alcance."
+            ]
+        }
     },
     {
         "pergunta": "O metronidazol NÃO é eficaz no tratamento de?",
@@ -26583,7 +26843,27 @@
             "Infecções por Pneumocystis jiroveci",
             "Infecções por Bacteroides fragilis",
             "Amebíase"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metronidazol SIM é eficaz contra a colite pseudomembranosa (por C. difficile).",
+                "O metronidazol NÃO é eficaz contra Pneumocystis jiroveci, que requer TMP/SMX — é a resposta correta.",
+                "O metronidazol SIM é eficaz contra Bacteroides fragilis, um anaeróbio clássico dentro do seu espectro.",
+                "O metronidazol SIM é eficaz contra a amebíase, é seu tratamento de primeira linha."
+            ],
+            "fantasma": [
+                "Ao contrário, sim funciona contra essa infecção.",
+                "Essa aí! Esse precisa de outro fármaco, não desse.",
+                "Ao contrário, sim cobre essa bactéria clássica sem oxigênio.",
+                "Ao contrário, sim funciona contra essa infecção parasitária."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim funciona contra essa infecção.",
+                "Ronronado de aprovação! Pneumocystis jiroveci: a exceção onde o metronidazol não serve.",
+                "Dado curioso: ao contrário, sim cobre essa bactéria.",
+                "Miau, ao contrário, sim funciona contra essa infecção parasitária."
+            ]
+        }
     },
     {
         "pergunta": "Mulher de 54 anos com suspeita de infecção por Clostridium difficile, qual seria o tratamento inicial?",
@@ -26593,7 +26873,27 @@
             "Clindamicina",
             "Ciprofloxacina",
             "Metronidazol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A neomicina não é o tratamento inicial estabelecido para essa infecção.",
+                "A clindamicina é, na verdade, um fator de risco clássico para essa infecção, não seu tratamento.",
+                "A ciprofloxacina também é um fator de risco reconhecido para essa infecção, não seu tratamento.",
+                "O metronidazol é o tratamento inicial clássico para a infecção por C. difficile — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não é o tratamento inicial estabelecido aqui.",
+                "Esse é mais um fator de risco dessa infecção, não sua cura.",
+                "Essa também é um fator de risco, não o tratamento.",
+                "Essa aí! O tratamento inicial clássico contra essa bactéria intestinal."
+            ],
+            "gato": [
+                "Fijate: esse não é o tratamento inicial estabelecido.",
+                "Dado curioso: esse é mais um fator de risco, não a cura.",
+                "Miau, essa também é um fator de risco, não o tratamento.",
+                "Ronronado de aprovação! Metronidazol: o tratamento inicial clássico para C. difficile."
+            ]
+        }
     },
     {
         "pergunta": "Metronidazol?",
@@ -26603,7 +26903,27 @@
             "É apenas antibacteriano contra germes aeróbicos",
             "É antibacteriano e antiparasitário",
             "Atua em Gram negativos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metronidazol não atua inibindo a síntese de parede bacteriana, seu mecanismo é sobre o DNA.",
+                "Não é só antibacteriano, nem se limita a germes aeróbios; seu espectro é anaeróbio e antiparasitário.",
+                "É antibacteriano (anaeróbios) e antiparasitário (protozoários), seu duplo espectro característico — é a resposta correta.",
+                "Não é essa a descrição completa; atua sobre anaeróbios (gram+ e gram-) e também protozoários, não só gram-negativos."
+            ],
+            "fantasma": [
+                "Esse não é seu mecanismo, atua sobre o DNA.",
+                "Não é tão limitado, e também não é sobre bactérias com oxigênio.",
+                "Essa aí! Cobre bactérias sem oxigênio e também parasitas.",
+                "Essa descrição fica curta, cobre mais que isso."
+            ],
+            "gato": [
+                "Fijate: esse não é seu mecanismo, atua sobre o DNA.",
+                "Dado curioso: não é tão limitado, nem sobre bactérias com oxigênio.",
+                "Ronronado de aprovação! Antibacteriano e antiparasitário: o duplo espectro característico do metronidazol.",
+                "Miau, essa descrição fica curta."
+            ]
+        }
     },
     {
         "pergunta": "Metronidazol?",
@@ -26613,7 +26933,27 @@
             "É utilizado no tratamento de T. cruzi",
             "Sua ação aumenta com maior quantidade de oxigênio",
             "Sua ação é apenas contra parasitas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Precisa de uma ativação intracelular (redução do grupo nitro) para gerar seu efeito tóxico — é a resposta correta.",
+                "Não se utiliza no tratamento de T. cruzi; isso é terreno do nifurtimox/benznidazol.",
+                "É ao contrário: sua ação aumenta com MENOS oxigênio (ambiente anaeróbio), não com mais oxigênio.",
+                "Sua ação não é unicamente contra parasitas; também é antibacteriano contra anaeróbios."
+            ],
+            "fantasma": [
+                "Essa aí! Precisa se ativar primeiro dentro da célula.",
+                "Essa doença usa outro fármaco, não esse.",
+                "Ao contrário, funciona melhor com menos oxigênio, não mais.",
+                "Não é só contra parasitas, também contra bactérias sem oxigênio."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Ativação intracelular: o passo necessário do metronidazol.",
+                "Fijate: essa doença usa outro fármaco.",
+                "Dado curioso: ao contrário, funciona melhor com menos oxigênio.",
+                "Miau, não é só contra parasitas."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o espectro do metronidazol?",
@@ -26623,7 +26963,27 @@
             "Aeróbios Gram positivos e negativos e anaeróbios facultativos, Giardia, Amoeba, Trichomonas",
             "E. coli, Proteus, Clostridium, Amebas, Trichomonas",
             "Enterobacteriaceae, Giardia, Amebas, Trichomonas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Anaeróbios, giárdias, amebas e tricomonas é o espectro real do metronidazol — é a resposta correta.",
+                "É ao contrário: não cobre aeróbios, só anaeróbios e protozoários.",
+                "Não cobre essas bactérias aeróbias; estão fora do seu espectro anaeróbio.",
+                "Essas são bactérias aeróbias, fora do espectro do metronidazol."
+            ],
+            "fantasma": [
+                "Essa aí! Sem oxigênio mais esses três parasitas, seu terreno real.",
+                "Ao contrário, não cobre bactérias com oxigênio.",
+                "Essas bactérias com oxigênio escapam desse fármaco.",
+                "Essas bactérias com oxigênio estão fora do seu alcance."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Anaeróbios + giárdias + amebas + tricomonas: o espectro real do metronidazol.",
+                "Fijate: ao contrário, não cobre bactérias com oxigênio.",
+                "Dado curioso: essas bactérias com oxigênio escapam.",
+                "Miau, essas bactérias com oxigênio estão fora do seu alcance."
+            ]
+        }
     },
     {
         "pergunta": "O metronidazol é eficaz no tratamento de?",
@@ -26633,7 +26993,27 @@
             "Infecções por MRSA",
             "Amebíase",
             "Mycoplasma pneumoniae"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metronidazol NÃO é eficaz contra Pneumocystis jiroveci; isso requer TMP/SMX.",
+                "O metronidazol não cobre MRSA, um microrganismo gram-positivo aeróbio fora do seu espectro.",
+                "A amebíase é tratada eficazmente com metronidazol, seu tratamento de primeira linha — é a resposta correta.",
+                "O metronidazol não cobre Mycoplasma pneumoniae, que carece de parede celular."
+            ],
+            "fantasma": [
+                "Esse precisa de outro fármaco, não desse.",
+                "Essa bactéria com oxigênio escapa desse fármaco.",
+                "Essa aí! Seu tratamento de primeira linha contra esse parasita.",
+                "Essa bactéria sem parede escapa desse fármaco."
+            ],
+            "gato": [
+                "Fijate: esse precisa de outro fármaco.",
+                "Dado curioso: essa bactéria escapa desse fármaco.",
+                "Ronronado de aprovação! Amebíase: o tratamento de primeira linha do metronidazol.",
+                "Miau, essa bactéria sem parede escapa."
+            ]
+        }
     },
     {
         "pergunta": "Indique a resposta CORRETA quanto ao mecanismo de ação do metronidazol:",
@@ -26643,7 +27023,27 @@
             "Na anaerobiose gera radicais livres e grupos reativos derivados do oxigênio que danificam o DNA.",
             "Inibe a lanosterol 14-α-desmetilase",
             "Inibe a polimerização dos microtúbulos no momento da divisão bacteriana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O metronidazol não inibe a di-hidrofolato redutase, esse é o mecanismo do trimetoprima.",
+                "Em anaerobiose gera radicais livres e grupos reativos derivados do oxigênio que danificam o DNA, o mecanismo característico do metronidazol — é a resposta correta.",
+                "O metronidazol não inibe a lanosterol 14-α-desmetilase, esse é um mecanismo antifúngico (azóis).",
+                "O metronidazol não inibe a polimerização de microtúbulos, esse é o mecanismo dos anti-helmínticos benzimidazólicos."
+            ],
+            "fantasma": [
+                "Isso é do trimetoprima, não desse fármaco.",
+                "Essa aí! Gera substâncias reativas que danificam o DNA, mas só sem oxigênio.",
+                "Isso é dos antifúngicos, não desse fármaco.",
+                "Isso é dos anti-helmínticos, não desse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso é do trimetoprima.",
+                "Ronronado de aprovação! Radicais livres danificando o DNA em anaerobiose: o mecanismo do metronidazol.",
+                "Dado curioso: isso é dos antifúngicos.",
+                "Miau, isso é dos anti-helmínticos."
+            ]
+        }
     },
     {
         "pergunta": "O que é Benznidazol?",
