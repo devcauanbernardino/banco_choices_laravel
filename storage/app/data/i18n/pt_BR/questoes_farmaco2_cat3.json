@@ -14431,7 +14431,27 @@
             "Tosse",
             "Broncoconstrição",
             "Aumento do risco de pneumonia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A dispneia em classe funcional IV é uma descrição clínica de insuficiência cardíaca, não o efeito adverso respiratório direto dos betabloqueadores.",
+                "A tosse é o efeito adverso característico dos IECA, não dos betabloqueadores.",
+                "A broncoconstrição, pelo bloqueio de receptores beta2 nos não seletivos, é o principal efeito adverso respiratório dos betabloqueadores — é a resposta correta.",
+                "O aumento do risco de pneumonia não é um efeito adverso direto característico dos betabloqueadores."
+            ],
+            "fantasma": [
+                "Isso é uma descrição clínica, não o efeito adverso direto desses fármacos.",
+                "Essa tosse é do IECA, não dos betabloqueadores.",
+                "Essa aí! Bloquear o beta2 aperta os brônquios, principalmente nos não seletivos.",
+                "Isso não tem relação direta com esses fármacos."
+            ],
+            "gato": [
+                "Fijate: isso é uma descrição clínica, não o efeito direto.",
+                "Dado curioso: essa tosse é do IECA, não dos betabloqueadores.",
+                "Ronronado de aprovação! Broncoconstrição: o efeito respiratório clássico dos betabloqueadores não seletivos.",
+                "Miau, isso não tem relação direta com esses fármacos."
+            ]
+        }
     },
     {
         "pergunta": "Qual antiarrítmico atua bloqueando principalmente os canais de sódio e reduzindo a velocidade de condução no tecido cardíaco?",
@@ -14441,7 +14461,27 @@
             "Flecainida",
             "Digoxina",
             "Atenolol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A amiodarona atua principalmente bloqueando canais de potássio, não de sódio.",
+                "A flecainida, um antiarrítmico classe IC, bloqueia principalmente canais de sódio, reduzindo marcadamente a velocidade de condução cardíaca — é a resposta correta.",
+                "A digoxina não bloqueia canais de sódio, atua inibindo a bomba Na+/K+-ATPase.",
+                "O atenolol é um betabloqueador, não atua sobre canais de sódio."
+            ],
+            "fantasma": [
+                "Essa bloqueia potássio, não sódio.",
+                "Essa aí! Sódio bloqueado com força, a condução fica lenta.",
+                "Essa bloqueia uma bomba, não um canal de sódio.",
+                "Esse bloqueia receptores beta, não canais de sódio."
+            ],
+            "gato": [
+                "Fijate: amiodarona bloqueia potássio, não sódio.",
+                "Ronronado de aprovação! Flecainida: bloqueio forte de sódio, condução lenta, classe IC em sua máxima expressão.",
+                "Dado curioso: digoxina freia uma bomba, não um canal de sódio.",
+                "Miau, atenolol bloqueia receptores beta, não canais de sódio."
+            ]
+        }
     },
     {
         "pergunta": "Qual antiarrítmico bloqueia os canais de sódio e é utilizado no tratamento da taquicardia ventricular?",
@@ -14451,7 +14491,27 @@
             "Adenosina",
             "Diltiazem",
             "Sotalol"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A lidocaína bloqueia canais de sódio e é usada no tratamento da taquicardia ventricular — é a resposta correta.",
+                "A adenosina atua no nó AV, é usada na taquicardia supraventricular, não bloqueia canais de sódio.",
+                "O diltiazem é um bloqueador de cálcio, atua no nó AV, não bloqueia canais de sódio.",
+                "O sotalol é um antiarrítmico classe III (bloqueador de canais de potássio, com efeito betabloqueador adicional), não bloqueia canais de sódio como mecanismo principal."
+            ],
+            "fantasma": [
+                "Essa aí! Bloqueia sódio e trata a taquicardia ventricular, combo perfeito.",
+                "Essa freia o nó AV, outro mecanismo, outra arritmia.",
+                "Esse também freia o nó AV, não bloqueia sódio.",
+                "Esse bloqueia potássio, não sódio, outra família."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Lidocaína: sódio bloqueado, taquicardia ventricular tratada.",
+                "Fijate: adenosina atua no nó AV, não em canais de sódio.",
+                "Dado curioso: diltiazem também freia o nó AV, canal de cálcio.",
+                "Miau, sotalol bloqueia potássio, classe III."
+            ]
+        }
     },
     {
         "pergunta": "Que outros efeitos a atorvastatina tem sobre os lipídios do sangue além da redução do colesterol LDL?",
@@ -14461,7 +14521,27 @@
             "Redução do colesterol HDL",
             "Redução acentuada de triglicerídeos",
             "Redução leve nos triglicerídeos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As estatinas não produzem um aumento marcado do HDL, esse efeito é bem modesto.",
+                "As estatinas não reduzem o HDL, tendem a aumentá-lo levemente, não a diminuir.",
+                "As estatinas não produzem uma redução marcada dos triglicerídeos, esse efeito mais potente é próprio dos fibratos.",
+                "A atorvastatina, além de reduzir o LDL, produz uma redução leve dos triglicerídeos — é a resposta correta."
+            ],
+            "fantasma": [
+                "O HDL não sobe tanto com essas, não é tão marcado.",
+                "É o contrário, tende a subir um pouco o HDL, não a baixar.",
+                "Isso é mais território dos fibratos, mais potentes com os triglicerídeos.",
+                "Essa aí! Um empurrão suave nos triglicerídeos, nada espetacular."
+            ],
+            "gato": [
+                "Fijate: o HDL não sobe tanto com as estatinas.",
+                "Dado curioso: é o contrário, sobe um pouco, não baixa.",
+                "Miau, isso é território dos fibratos, não das estatinas.",
+                "Ronronado de aprovação! Redução leve dos triglicerídeos: o efeito extra e modesto da atorvastatina."
+            ]
+        }
     },
     {
         "pergunta": "Por que a dose de lidocaína deve ser reduzida em pacientes idosos, com insuficiência cardíaca ou hepática?",
@@ -14471,7 +14551,27 @@
             "Devido ao seu metabolismo dependente do fluxo que diminui nesses pacientes",
             "Devido aos seus metabólitos ativos que aumentam nesses pacientes",
             "Devido à sua longa meia-vida que aumenta nesses pacientes"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A biodisponibilidade oral não é o motivo, já que a lidocaína nem é usada por via oral devido ao alto metabolismo de primeira passagem.",
+                "O metabolismo da lidocaína é fluxo-dependente: na insuficiência cardíaca, na insuficiência hepática ou no envelhecimento, o fluxo sanguíneo hepático diminui, reduzindo seu clearance e aumentando o risco de toxicidade se a dose não for ajustada — é a resposta correta.",
+                "Os metabólitos ativos não são o motivo principal desse ajuste de dose.",
+                "A meia-vida da lidocaína é curta, não longa; esse não é o motivo do ajuste."
+            ],
+            "fantasma": [
+                "A biodisponibilidade não é o problema, nem é tomada por boca.",
+                "Essa aí! Menos fluxo pro fígado, menos lidocaína eliminada, mais risco de toxicidade.",
+                "Os metabólitos ativos não são a razão aqui.",
+                "Sua meia-vida é curta, não longa, então não é isso."
+            ],
+            "gato": [
+                "Fijate: a biodisponibilidade oral nem entra na equação, é de uso IV.",
+                "Ronronado de aprovação! Menos fluxo hepático, menos clearance, dose pela metade.",
+                "Dado curioso: os metabólitos ativos não são o motivo do ajuste.",
+                "Miau, a meia-vida é curta, não longa."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com edema pulmonar agudo em consequência de insuficiência cardíaca descompensada. Por favor indique a opção correta:",
@@ -14481,7 +14581,27 @@
             "A furosemida deve ser administrada por via intravenosa para aumentar a capacitância venosa e diminuir a pressão diástole final.",
             "A hidroclorotiazida intravenosa deve ser administrada para aumentar a capacitância venosa e diminuir a pressão no final da diástole.",
             "A espironolactona intravenosa deve ser administrada para aumentar a capacitância venosa e diminuir a pressão no final da diástole."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A furosemida não atua aumentando a perda de cálcio urinário pra melhorar a contratilidade, esse não é seu mecanismo terapêutico nesse contexto agudo.",
+                "A furosemida intravenosa, além do seu efeito diurético, produz venodilatação aguda, aumentando a capacitância venosa e diminuindo rapidamente a pressão de fim de diástole, melhorando o edema agudo de pulmão — é a resposta correta.",
+                "A hidroclorotiazida não é administrada por via intravenosa nem é de escolha no edema agudo de pulmão.",
+                "A espironolactona não é administrada por via intravenosa nem é o tratamento de escolha no edema agudo de pulmão."
+            ],
+            "fantasma": [
+                "Isso não é o que esse fármaco faz nessa urgência.",
+                "Essa aí! Além de fazer urinar, esse fármaco afrouxa as veias de entrada, baixando a pressão rápido.",
+                "Essa nem é dada pela veia nem é a indicada aqui.",
+                "Essa também não é dada pela veia nem é a indicada nessa urgência."
+            ],
+            "gato": [
+                "Fijate: isso não é o que esse fármaco faz nessa urgência.",
+                "Ronronado de aprovação! Furosemida IV: venodilatação rápida, menos pressão de fim de diástole, alívio do edema agudo.",
+                "Dado curioso: essa não é dada pela veia nesse contexto.",
+                "Miau, essa também não é a indicada nessa urgência."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente em tratamento com carvedilol, enalapril, indapamida, miconazol, alprazolam e atorvastatina inicia tratamento antibiótico oral com fluconazol para sua onicomicose. Alguns dias depois, você sente dores musculares intensas e insuficiência renal. Qual é a causa desta condição?",
@@ -14491,7 +14611,27 @@
             "Rabdomiólise devido à interação entre fluconazol e alprazolam porque o fluconazol é um potente inibidor do CYP2C9",
             "Rabdomiólise devido à interação entre fluconazol e atorvastatina porque o fluconazol é um potente inibidor do CYP3A4",
             "Rabdomiólise devido à interação entre fluconazol e atorvastatina porque o fluconazol é um potente indutor do CYP3A4"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O fluconazol não tem essa interação perigosa específica com o carvedilol via CYP2C9 que explique esse quadro.",
+                "O fluconazol não tem essa interação perigosa específica com o alprazolam que cause rabdomiólise, e o mecanismo enzimático descrito também não está correto.",
+                "O fluconazol, um potente inibidor do CYP3A4, eleva significativamente os níveis de atorvastatina (metabolizada por essa via), gerando rabdomiólise e insuficiência renal secundária — é a resposta correta.",
+                "O fluconazol é inibidor, não indutor, do CYP3A4; essa afirmação inverte seu efeito real."
+            ],
+            "fantasma": [
+                "Essa combinação não explica o quadro descrito.",
+                "Essa também não explica a dor muscular tão severa.",
+                "Essa aí! O fluconazol freia a enzima que degrada a atorvastatina, e o músculo paga o preço.",
+                "É o contrário: freia a enzima, não acelera."
+            ],
+            "gato": [
+                "Fijate: essa combinação não explica o quadro descrito.",
+                "Dado curioso: essa também não explica a dor muscular tão severa.",
+                "Ronronado de aprovação! Fluconazol + atorvastatina via CYP3A4: a combinação que explica a rabdomiólise.",
+                "Miau, é o contrário, o fluconazol inibe, não induz, essa enzima."
+            ]
+        }
     },
     {
         "pergunta": "Quanto ao mecanismo de ação da difenilhidantoína, responda a opção correta:",
@@ -14501,7 +14641,27 @@
             "Bloqueia canais de sódio",
             "Aumenta o tempo de abertura do canal de cloreto do receptor GABA",
             "Bloqueia o receptor de glutamato"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A difenilhidantoína não atua bloqueando canais de cálcio, esse não é seu mecanismo principal.",
+                "A difenilhidantoína (fenitoína) atua bloqueando canais de sódio de forma uso-dependente, estabilizando a membrana neuronal — é a resposta correta.",
+                "Aumentar o tempo de abertura do canal de cloro do receptor GABA é o mecanismo dos barbitúricos, não da fenitoína.",
+                "A fenitoína não atua bloqueando o receptor de glutamato, esse não é seu mecanismo."
+            ],
+            "fantasma": [
+                "Não mexe com o cálcio, outro canal é seu alvo.",
+                "Essa aí! Sódio bloqueado, membrana neuronal estabilizada.",
+                "Isso é coisa dos barbitúricos, não da fenitoína.",
+                "O glutamato não é seu alvo."
+            ],
+            "gato": [
+                "Fijate: o cálcio não é a praia dela.",
+                "Ronronado de aprovação! Bloqueio de sódio uso-dependente, mecanismo clássico da fenitoína.",
+                "Dado curioso: isso descreve os barbitúricos, não a fenitoína.",
+                "Miau, o glutamato fica fora dessa história."
+            ]
+        }
     },
     {
         "pergunta": "Um paciente com fibrose pulmonar e pigmentação da pele é internado no hospital. Que droga ele poderia estar recebendo?",
@@ -14511,7 +14671,27 @@
             "Amiodarona",
             "Propafenona",
             "Mexiletina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O diltiazem não se associa nem a fibrose pulmonar nem a pigmentação cutânea.",
+                "A amiodarona é o antiarrítmico que combina ambos os efeitos característicos: fibrose pulmonar e coloração cinza-azulada da pele — é a resposta correta.",
+                "A propafenona não se associa a fibrose pulmonar nem a pigmentação cutânea.",
+                "A mexiletina não se associa a fibrose pulmonar nem a pigmentação cutânea."
+            ],
+            "fantasma": [
+                "Esse não tem nenhum desses dois efeitos.",
+                "Essa aí! Amiodarona é a única que junta pulmão danificado e pele descolorida.",
+                "Essa também não tem esses efeitos combinados.",
+                "Essa também não se associa a esse quadro tão particular."
+            ],
+            "gato": [
+                "Fijate: esse não tem nenhum desses efeitos.",
+                "Ronronado de aprovação! Amiodarona: a única com o combo fibrose pulmonar + pele cinza-azulada.",
+                "Dado curioso: essa também não tem esses efeitos.",
+                "Miau, essa também não se associa a esse quadro."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes afirmações está correta em relação à nitroglicerina?",
@@ -14521,7 +14701,27 @@
             "É administrado em emergência hipertensiva e pode produzir caracteristicamente tosse, edema de membros inferiores, rubor facial e alcalose metabólica.",
             "Devido aos seus efeitos na capacitância venosa, pode ser utilizado no infarto agudo do miocárdio e na insuficiência cardíaca congestiva aguda.",
             "Seu mecanismo de ação envolve a produção de óxido nítrico, bloqueando os canais de cálcio."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa combinação de efeitos adversos não é a mais representativa nem precisa pra descrever a nitroglicerina em infusão.",
+                "Essa descrição não corresponde à nitroglicerina, mistura efeitos de outras classes de fármacos.",
+                "Pelo seu efeito sobre a capacitância venosa (venodilatação, redução da pré-carga), a nitroglicerina pode ser usada tanto no infarto agudo do miocárdio quanto na insuficiência cardíaca congestiva aguda — é a resposta correta.",
+                "O mecanismo da nitroglicerina envolve a liberação de óxido nítrico que ativa a guanilato ciclase, aumentando o GMPc, não um bloqueio direto de canais de cálcio."
+            ],
+            "fantasma": [
+                "Essa mistura de efeitos não encaixa bem com a nitroglicerina.",
+                "Essa descrição é de outra família de fármacos, não da nitroglicerina.",
+                "Essa aí! Baixar a pré-carga por venodilatação é justamente o que ajuda no infarto e na insuficiência aguda.",
+                "O mecanismo real é via GMPc, não bloqueio de canais de cálcio."
+            ],
+            "gato": [
+                "Fijate: essa combinação não descreve bem a nitroglicerina.",
+                "Dado curioso: essa descrição pertence a outra família de fármacos.",
+                "Ronronado de aprovação! Venodilatação, menos pré-carga: a nitroglicerina brilha no infarto e na insuficiência aguda.",
+                "Miau, o mecanismo é via GMPc, não bloqueio de cálcio."
+            ]
+        }
     },
     {
         "pergunta": "Paciente jovem foi internado em enfermaria com crise hipertensiva BP 220/140, recebeu solução de nitroprussiato. O controle às 72 horas mostra-o mais cansado e enjoado. A causa mais provável destes sintomas é:",
@@ -14531,7 +14731,27 @@
             "Atividade inotrópica negativa do nitroprussiato",
             "Insuficiência renal devido ao nitroprussiato",
             "Produção de hidroxicobalamina por nitroprussiato"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A produção acumulada de tiocianatos pelo metabolismo do nitroprussiato, após 72 horas de infusão, explica a fadiga e as náuseas descritas — é a resposta correta.",
+                "O nitroprussiato não tem atividade inotrópica negativa relevante, seu efeito é vasodilatador, não depressor da contratilidade.",
+                "A insuficiência renal não é a causa direta desses sintomas nesse prazo tão curto.",
+                "O nitroprussiato não produz hidroxocobalamina; pelo contrário, a hidroxocobalamina é o antídoto administrado pra tratar sua toxicidade por cianeto."
+            ],
+            "fantasma": [
+                "Essa aí! Às 72 horas, o cianeto acumulado começa a cobrar seu preço.",
+                "Esse fármaco não tira a força do coração, ele dilata.",
+                "O rim não falha tão rápido por essa causa.",
+                "Ao contrário, esse composto é o antídoto, não algo que o nitroprussiato produza."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Tiocianatos acumulados às 72h: a explicação clássica desse quadro com nitroprussiato.",
+                "Fijate: esse fármaco não mexe na força do coração.",
+                "Dado curioso: o rim não falha tão rápido por essa causa.",
+                "Miau, a hidroxocobalamina é o antídoto, não algo que esse fármaco gere."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à Digoxina:",
@@ -14541,7 +14761,27 @@
             "Digoxina é usada para controlar o ritmo em pacientes com fibrilação atrial",
             "A digoxina aumenta a velocidade de condução no nó AV",
             "Níveis séricos úteis de digoxina de 1 a 2 ng/ml são desejáveis ​​para o tratamento da fibrilação atrial."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A digoxina não bloqueia canais de cálcio voltagem-dependentes, seu mecanismo é a inibição da bomba Na+/K+-ATPase.",
+                "A digoxina é usada pro controle da frequência ventricular em pacientes com fibrilação atrial, aproveitando seu efeito vagotônico sobre o nó AV — é a resposta correta.",
+                "A digoxina diminui, não aumenta, a velocidade de condução a nível do nó AV.",
+                "Os níveis séricos atualmente considerados desejáveis de digoxina são mais baixos que 1-2 ng/ml (mais próximos de 0,5-1 ng/ml), dado o maior risco de mortalidade com níveis mais altos."
+            ],
+            "fantasma": [
+                "Não bloqueia esse canal, freia uma bomba na membrana.",
+                "Essa aí! Freia o nó AV, controlando a frequência nessa arritmia.",
+                "É o contrário, retarda, não acelera.",
+                "Essa faixa tão alta já não é considerada a ideal hoje em dia."
+            ],
+            "gato": [
+                "Fijate: não bloqueia esse canal, freia a bomba Na/K-ATPase.",
+                "Ronronado de aprovação! Digoxina: controle de frequência na fibrilação atrial via freio vagal do nó AV.",
+                "Dado curioso: é o contrário, retarda a condução, não acelera.",
+                "Miau, essa faixa já não é considerada o objetivo ideal atualmente."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é uma interação farmacocinética característica dos inibidores de protease?",
@@ -14551,7 +14791,27 @@
             "Interação com medicamentos antienxaqueca como a ergotamina, devido ao risco de ergotismo, devido a um aumento significativo nos níveis de derivados do ergot devido à inibição do CYP3A4",
             "Interação com metformina, aumentando o risco de síndrome metabólica",
             "Interação com carbamazepina devido à diminuição dos níveis séricos do anticonvulsivante com risco de diminuição da eficácia terapêutica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os inibidores de protease inibem (não induzem) o CYP3A4, então o mecanismo descrito pra essa interação está incorreto.",
+                "Os inibidores de protease, ao inibir potentemente o CYP3A4, elevam significativamente os níveis de derivados do ergot como a ergotamina, com risco de ergotismo (vasoespasmo/isquemia) — é a resposta correta.",
+                "Não há uma interação característica estabelecida entre inibidores de protease e metformina desse tipo.",
+                "Os inibidores de protease tendem a aumentar, não a diminuir, os níveis de fármacos metabolizados por CYP3A4 como a carbamazepina, por serem inibidores enzimáticos."
+            ],
+            "fantasma": [
+                "É o contrário, esses fármacos freiam essa enzima, não aceleram.",
+                "Essa aí! Frear essa enzima dispara os níveis do ergot, e aí vem o ergotismo.",
+                "Isso não é uma interação característica desses fármacos.",
+                "É o contrário, tendem a subir esses níveis, não a baixar."
+            ],
+            "gato": [
+                "Fijate: é o contrário, esses fármacos inibem, não induzem essa enzima.",
+                "Ronronado de aprovação! CYP3A4 freado, ergotamina disparada: o risco clássico de ergotismo.",
+                "Dado curioso: isso não é uma interação característica estabelecida.",
+                "Miau, é o contrário, tendem a subir esses níveis."
+            ]
+        }
     },
     {
         "pergunta": "Quais dos seguintes efeitos farmacológicos, além dos efeitos hipolipemiantes, as estatinas apresentam?",
@@ -14561,7 +14821,27 @@
             "efeito pleiotrópico",
             "Efeito inotrópico positivo",
             "Efeito natriurético"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As estatinas não têm um efeito cronotrópico negativo estabelecido; esse não é seu efeito adicional característico. Corrige-se o gabarito original, que marcava essa opção.",
+                "O efeito pleiotrópico (anti-inflamatório, estabilizador de placa, melhora endotelial) é o efeito adicional bem estabelecido das estatinas além da sua ação hipolipemiante — é a resposta correta.",
+                "As estatinas não têm efeito inotrópico positivo, esse não é seu mecanismo.",
+                "As estatinas não têm um efeito natriurético característico estabelecido."
+            ],
+            "fantasma": [
+                "Isso não está estabelecido pras estatinas, nem aqui nem em lugar nenhum.",
+                "Essa aí! Além do colesterol, as estatinas cuidam do vaso por outros caminhos, o famoso efeito extra.",
+                "Isso não é o que as estatinas fazem.",
+                "Isso também não é um efeito característico desses fármacos."
+            ],
+            "gato": [
+                "Fijate: isso não está estabelecido pras estatinas em lugar nenhum.",
+                "Ronronado de aprovação! Efeito pleiotrópico: o verdadeiro efeito extra das estatinas, já visto várias vezes neste banco.",
+                "Dado curioso: isso não é o que as estatinas fazem.",
+                "Miau, isso também não é um efeito característico desses fármacos."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação do Carvedilol?",
@@ -14571,7 +14851,27 @@
             "Bloqueio não seletivo dos receptores beta-1 e alfa adrenérgicos",
             "Diminuição da liberação de catecolaminas por agonismo alfa-2 pré-sináptico",
             "Bloqueio seletivo do receptor beta-1 adrenérgico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O carvedilol bloqueia receptores alfa-1 e beta de forma não seletiva (beta1 e beta2) — é a resposta correta.",
+                "O bloqueio beta do carvedilol não é seletivo beta-1, é não seletivo; e seu bloqueio alfa é seletivo alfa-1, não não seletivo.",
+                "A diminuição de catecolaminas por agonismo alfa-2 pré-sináptico é o mecanismo da clonidina, não do carvedilol.",
+                "O carvedilol não é beta-1 seletivo, é não seletivo (bloqueia beta1 e beta2)."
+            ],
+            "fantasma": [
+                "Essa aí! Alfa1 e beta sem distinção, o combo completo do carvedilol.",
+                "Errou as seletividades: ao contrário nos dois casos.",
+                "Esse mecanismo é da clonidina, não desse fármaco.",
+                "Não é seletivo, bloqueia as duas variantes de beta."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Alfa1 + beta não seletivo: o mecanismo completo do carvedilol.",
+                "Fijate: inverteu as seletividades em ambos os casos.",
+                "Dado curioso: esse mecanismo é da clonidina.",
+                "Miau, não é seletivo, bloqueia ambas as variantes de beta."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o principal mecanismo de ação do atenolol na doença coronariana?",
@@ -14581,7 +14881,27 @@
             "Melhora a frequência cardíaca",
             "Diminui a demanda de oxigênio do coração",
             "Reduz a vasoconstrição coronariana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A diminuição da contratilidade é parte do mecanismo, mas o objetivo terapêutico central é a redução da demanda de oxigênio.",
+                "O atenolol não melhora a frequência cardíaca no sentido de aumentá-la, ele diminui.",
+                "O atenolol diminui a demanda de oxigênio do coração, ao reduzir a frequência cardíaca e a contratilidade, sendo esse o mecanismo antianginoso central — é a resposta correta.",
+                "O atenolol não diminui a vasoconstrição coronariana como mecanismo principal, esse não é seu efeito característico."
+            ],
+            "fantasma": [
+                "Isso é parte do mecanismo, mas não é o objetivo central buscado.",
+                "Não melhora no sentido de subir, ele baixa.",
+                "Essa aí! Menos demanda de oxigênio, o verdadeiro objetivo por trás de tudo isso.",
+                "Isso não é o que esse fármaco faz principalmente."
+            ],
+            "gato": [
+                "Fijate: isso é parte do mecanismo, mas não o objetivo central.",
+                "Dado curioso: não melhora, baixa.",
+                "Ronronado de aprovação! Menos demanda de oxigênio: o objetivo central por trás do uso do atenolol na angina.",
+                "Miau, isso não é o que esse fármaco faz principalmente."
+            ]
+        }
     },
     {
         "pergunta": "Qual é a contraindicação absoluta para betabloqueadores?",
@@ -14591,7 +14911,27 @@
             "Diabetes mellitus",
             "Insuficiência cardíaca",
             "Enfisema pulmonar"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A asma brônquica severa é uma contraindicação absoluta dos betabloqueadores, pelo risco de broncoespasmo grave — é a resposta correta.",
+                "O diabetes mellitus não é uma contraindicação absoluta, exige cautela pelo risco de mascarar hipoglicemias.",
+                "A insuficiência cardíaca compensada é na verdade uma indicação dos betabloqueadores; só a descompensada é contraindicação.",
+                "O enfisema pulmonar, assim como a asma leve/moderada, exige cautela, mas os cardiosseletivos podem ser usados em muitos casos, não sendo uma contraindicação tão absoluta quanto a asma severa."
+            ],
+            "fantasma": [
+                "Essa aí! Asma grave e betabloqueador não seletivo é uma combinação perigosa.",
+                "Esse pede cuidado, não é um não redondo.",
+                "Essa compensada na verdade se beneficia, só a descompensada é problema.",
+                "Esse pede cuidado, mas não é tão absoluto quanto a asma grave."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Asma brônquica severa: a contraindicação absoluta clássica dos betabloqueadores.",
+                "Fijate: esse pede cautela, não é absoluta.",
+                "Dado curioso: a compensada se beneficia, só a descompensada é problema.",
+                "Miau, esse pede cuidado, mas não é tão absoluto quanto a asma grave."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o anticoagulante oral que atua inibindo especificamente o fator II?",
@@ -14601,7 +14941,27 @@
             "Dabigatrana",
             "Rivaroxabana",
             "Apixabana"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O acenocumarol não inibe especificamente o fator II, atua sobre múltiplos fatores K-dependentes (II, VII, IX, X) via inibição da vitamina K epóxido redutase.",
+                "O dabigatrana é um inibidor direto e específico do fator II (trombina) — é a resposta correta.",
+                "O rivaroxabana inibe especificamente o fator Xa, não o fator II.",
+                "O apixabana inibe especificamente o fator Xa, não o fator II."
+            ],
+            "fantasma": [
+                "Esse mexe em vários fatores ao mesmo tempo, não só o II.",
+                "Essa aí! Ataca a trombina (fator II) de forma direta e específica.",
+                "Esse ataca o fator Xa, não o II.",
+                "Esse também ataca o fator Xa, não o II."
+            ],
+            "gato": [
+                "Fijate: esse mexe em vários fatores, não só o II.",
+                "Ronronado de aprovação! Dabigatrana: inibição direta e específica do fator II (trombina).",
+                "Dado curioso: esse ataca o fator Xa, não o II.",
+                "Miau, esse também ataca o fator Xa, não o II."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes anticoagulantes é controlado pelo INR?",
@@ -14611,7 +14971,27 @@
             "Dabigatrana",
             "Rivaroxabana",
             "Enoxaparina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A varfarina, uma antagonista da vitamina K, é controlada com o RNI, sendo o parâmetro clássico de monitoramento dessa família — é a resposta correta.",
+                "O dabigatrana não é controlado de rotina com o RNI, dada sua farmacocinética previsível.",
+                "O rivaroxabana não é controlado de rotina com o RNI, esse parâmetro não corresponde ao seu mecanismo.",
+                "A enoxaparina não é controlada com o RNI, é controlada (quando necessário) com o fator anti-Xa."
+            ],
+            "fantasma": [
+                "Essa aí! O RNI é o controle clássico dessa família de anticoagulantes.",
+                "Esse não precisa desse controle de rotina.",
+                "Esse também não é controlado com esse valor.",
+                "Essa é controlada com outro parâmetro diferente."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Varfarina: o RNI é seu controle clássico e indispensável.",
+                "Fijate: esse não precisa desse controle de rotina.",
+                "Dado curioso: esse também não usa esse parâmetro.",
+                "Miau, essa é controlada com o anti-Xa, não com o RNI."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o antídoto específico para reverter os efeitos anticoagulantes da Rivaroxabana?",
@@ -14621,7 +15001,27 @@
             "Protamina",
             "Idarucizumabe",
             "Andexanet alfa"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A vitamina K é o antídoto da varfarina, não do rivaroxabana.",
+                "A protamina é o antídoto da heparina, não do rivaroxabana.",
+                "O idarucizumabe é o antídoto específico do dabigatrana, não do rivaroxabana.",
+                "O andexanet alfa é o antídoto específico dos inibidores do fator Xa, como o rivaroxabana — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa vitamina é pra outro anticoagulante, não pra esse.",
+                "Esse antídoto é pra heparina, não pro rivaroxabana.",
+                "Esse antídoto é específico de outro fármaco.",
+                "Essa aí! O antídoto feito sob medida pros que bloqueiam o fator Xa."
+            ],
+            "gato": [
+                "Fijate: essa vitamina é pra outro anticoagulante.",
+                "Dado curioso: esse antídoto é pra heparina.",
+                "Miau, esse antídoto é específico do dabigatrana.",
+                "Ronronado de aprovação! Andexanet alfa: o antídoto sob medida dos inibidores do fator Xa como o rivaroxabana."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos é eliminado 80% pelos rins?",
