@@ -31985,7 +31985,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefoperazona SÍ necesita ajuste de dosis en enfermedad hepática, por su importante eliminación biliar.",
+                    "La cefalotina es eficaz para la profilaxis y tratamiento de la endocarditis estafilocócica, un uso clásico de esta cefalosporina de primera generación — es la respuesta correcta.",
+                    "Las cefalosporinas de primera generación SÍ son útiles para profilaxis prequirúrgica (como la cefazolina), penetrando adecuadamente en tejidos.",
+                    "Las cefalosporinas SÍ pueden asociarse a nefritis intersticial y necrosis tubular aguda, un efecto de clase reconocido."
+                ],
+                "fantasma": [
+                    "Al revés, esta sí necesita ajustarse en hígado enfermo.",
+                    "¡Esta! Clásica contra el estafilococo, incluida esta infección grave del corazón.",
+                    "Al revés, sí sirven para prevenir infecciones antes de una cirugía.",
+                    "Al revés, sí pueden dañar el riñón de esta manera."
+                ],
+                "gato": [
+                    "Fijate: al revés, esta sí necesita ajustarse en hígado enfermo.",
+                    "¡Ronroneo de aprobación! Endocarditis estafilocócica: uso clásico de la cefalotina.",
+                    "Dato curioso: al revés, sí sirven para prevenir infecciones antes de cirugía.",
+                    "Miau, al revés, sí pueden dañar el riñón de esta manera."
+                ]
+            }
         },
         {
             "numero": 682,
@@ -32012,7 +32032,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ceftazidima es de administración exclusivamente parenteral, no oral.",
+                    "La ceftriaxona es de administración exclusivamente parenteral, no oral.",
+                    "La cefalexina y el cefaclor son las cefalosporinas orales entre las opciones — es la respuesta correcta.",
+                    "Tanto la ceftriaxona como la ceftazidima son de administración exclusivamente parenteral."
+                ],
+                "fantasma": [
+                    "Esta segunda va solo por vena o músculo.",
+                    "Esta segunda va solo por vena o músculo.",
+                    "¡Esta! Las dos se toman por boca sin problema.",
+                    "Las dos de esta opción solo van por vena o músculo."
+                ],
+                "gato": [
+                    "Fijate: esta segunda va solo por vena o músculo.",
+                    "Dato curioso: esta segunda va solo por vena o músculo.",
+                    "¡Ronroneo de aprobación! Cefalexina y cefaclor: las orales de la lista.",
+                    "Miau, las dos de esta opción solo van por vena o músculo."
+                ]
+            }
         },
         {
             "numero": 683,
@@ -32039,7 +32079,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefepima (cuarta generación) no cubre SAMR.",
+                    "La cefalotina (primera generación) no cubre SAMR.",
+                    "La ceftarolina, cefalosporina de quinta generación, cubre el SAMR — es la respuesta correcta.",
+                    "SÍ puede usarse una cefalosporina (la ceftarolina) contra el SAMR."
+                ],
+                "fantasma": [
+                    "Esta no cubre a esta bacteria resistente.",
+                    "Esta tampoco cubre a esta bacteria resistente.",
+                    "¡Esta! La única de su familia que sí cubre esta bacteria resistente.",
+                    "Sí hay una opción de esta familia que funciona."
+                ],
+                "gato": [
+                    "Fijate: esta no cubre a esta bacteria resistente.",
+                    "Dato curioso: esta tampoco cubre a esta bacteria resistente.",
+                    "¡Ronroneo de aprobación! Ceftarolina: la cefalosporina que sí cubre el SAMR.",
+                    "Miau, sí hay una opción de esta familia que funciona."
+                ]
+            }
         },
         {
             "numero": 684,
@@ -32066,7 +32126,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La piperacilina/tazobactam no tiene cobertura confiable sobre SAMR.",
+                    "La ceftarolina (quinta generación) cubre el SAMR — es la respuesta correcta.",
+                    "El imipenem (carbapenémico) no tiene cobertura confiable sobre SAMR.",
+                    "La cefepima (cuarta generación) no cubre SAMR."
+                ],
+                "fantasma": [
+                    "Esta no cubre a esta bacteria resistente.",
+                    "¡Esta! La quinta generación que sí llega a cubrir esta bacteria resistente.",
+                    "Este tampoco cubre a esta bacteria resistente.",
+                    "Esta tampoco cubre a esta bacteria resistente."
+                ],
+                "gato": [
+                    "Fijate: esta no cubre a esta bacteria resistente.",
+                    "¡Ronroneo de aprobación! Ceftarolina: la única acá que cubre el SAMR.",
+                    "Dato curioso: este tampoco cubre a esta bacteria resistente.",
+                    "Miau, esta tampoco cubre a esta bacteria resistente."
+                ]
+            }
         },
         {
             "numero": 685,
@@ -32093,7 +32173,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefalexina, cefalosporina oral de primera generación, es útil para infecciones por SAMS — es la respuesta correcta.",
+                    "La cefotaxima es de administración parenteral, no oral.",
+                    "La cefepima es de administración parenteral, no oral.",
+                    "La ceftarolina es de administración parenteral, no oral (y se reserva para SAMR, no SAMS)."
+                ],
+                "fantasma": [
+                    "¡Esta! La clásica por boca contra este estafilococo sensible.",
+                    "Esta va por vena o músculo, no por boca.",
+                    "Esta va por vena o músculo, no por boca.",
+                    "Esta va por vena o músculo, y además se guarda para el resistente."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Cefalexina oral: la elección clásica para SAMS.",
+                    "Fijate: esta va por vena o músculo, no por boca.",
+                    "Dato curioso: esta va por vena o músculo, no por boca.",
+                    "Miau, esta va por vena o músculo, y se guarda para el resistente."
+                ]
+            }
         },
         {
             "numero": 686,
@@ -32120,7 +32220,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ceftazidima es eficaz para el tratamiento de infecciones por Pseudomonas, una característica distintiva de esta cefalosporina de tercera generación — es la respuesta correcta.",
+                    "Las cefalosporinas SÍ pueden asociarse a nefritis intersticial y necrosis tubular aguda.",
+                    "La ceftriaxona tiene eliminación renal Y biliar, no exclusivamente renal.",
+                    "La cefoperazona SÍ necesita ajuste de dosis en enfermedad hepática."
+                ],
+                "fantasma": [
+                    "¡Esta! Diseñada justo para cubrir esta bacteria difícil.",
+                    "Al revés, sí pueden dañar el riñón de esta manera.",
+                    "También se va por la bilis, no solo por el riñón.",
+                    "Al revés, esta sí necesita ajustarse en hígado enfermo."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Ceftazidima: la tercera generación con cobertura de Pseudomonas.",
+                    "Fijate: al revés, sí pueden dañar el riñón de esta manera.",
+                    "Dato curioso: también se va por la bilis.",
+                    "Miau, al revés, esta sí necesita ajustarse en hígado enfermo."
+                ]
+            }
         },
         {
             "numero": 687,
@@ -32147,7 +32267,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefalexina se administra por vía oral.",
+                    "El cefaclor se administra por vía oral.",
+                    "La cefoperazona es de administración exclusivamente parenteral, sin forma oral — es la respuesta correcta.",
+                    "La cefuroxima cuenta con una presentación oral (cefuroxima axetilo)."
+                ],
+                "fantasma": [
+                    "Esta sí se toma por boca.",
+                    "Este también se toma por boca.",
+                    "¡Esta! Solo existe para dar por vena o músculo.",
+                    "Esta también tiene versión para tomar por boca."
+                ],
+                "gato": [
+                    "Fijate: esta sí se toma por boca.",
+                    "Dato curioso: este también se toma por boca.",
+                    "¡Ronroneo de aprobación! Cefoperazona: solo vía parenteral, sin versión oral.",
+                    "Miau, esta también tiene versión oral."
+                ]
+            }
         },
         {
             "numero": 688,
@@ -32174,7 +32314,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefotaxima, a diferencia de la ceftazidima/cefoperazona, no tiene cobertura confiable de Pseudomonas dentro de la tercera generación.",
+                    "El cefadroxilo (primera generación oral) no tiene efecto antipseudomonas.",
+                    "La cefoperazona posee efecto antipseudomonas, junto con la ceftazidima, dentro de la tercera generación — es la respuesta correcta.",
+                    "La cefixima (tercera generación oral) no tiene efecto antipseudomonas."
+                ],
+                "fantasma": [
+                    "Esta no cubre a esta bacteria en particular, pese a ser de la misma generación.",
+                    "Esta tampoco cubre a esta bacteria difícil.",
+                    "¡Esta! Una de las pocas de su generación con puntería sobre esta bacteria.",
+                    "Esta tampoco cubre a esta bacteria difícil."
+                ],
+                "gato": [
+                    "Fijate: esta no cubre a esta bacteria, pese a ser de la misma generación.",
+                    "Dato curioso: esta tampoco cubre a esta bacteria difícil.",
+                    "¡Ronroneo de aprobación! Cefoperazona: una de las pocas terceras generaciones con cobertura antipseudomonas.",
+                    "Miau, esta tampoco cubre a esta bacteria difícil."
+                ]
+            }
         },
         {
             "numero": 689,
@@ -32201,7 +32361,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: las de primera generación son más activas sobre cocos gram positivos, no gram negativos.",
+                    "Es al revés: a medida que suben de generación, generalmente ganan más efecto sobre gram negativos (a costa de algo de actividad sobre gram positivos).",
+                    "La ceftarolina SÍ es activa contra el SAMR, siendo su característica distintiva.",
+                    "A partir de la tercera generación, comienza a aparecer espectro contra pseudomonas (en agentes como ceftazidima/cefoperazona) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Al revés, son fuertes contra los positivos, no los negativos.",
+                    "Al revés, ganan terreno en los negativos a medida que suben.",
+                    "Al revés, esta sí cubre a esta bacteria resistente.",
+                    "¡Esta! Desde esta generación en adelante empieza a aparecer cobertura contra esta bacteria difícil."
+                ],
+                "gato": [
+                    "Fijate: al revés, son fuertes contra los positivos.",
+                    "Dato curioso: al revés, ganan terreno en los negativos.",
+                    "Miau, al revés, esta sí cubre a esta bacteria resistente.",
+                    "¡Ronroneo de aprobación! Tercera generación en adelante: donde empieza a aparecer la cobertura antipseudomonas."
+                ]
+            }
         },
         {
             "numero": 690,
@@ -32228,7 +32408,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ceftriaxona tiene eliminación renal y biliar, una característica distintiva entre las cefalosporinas — es la respuesta correcta.",
+                    "La cefotaxima se elimina principalmente por vía renal.",
+                    "La cefixima se elimina principalmente por vía renal.",
+                    "La cefuroxima se elimina principalmente por vía renal."
+                ],
+                "fantasma": [
+                    "¡Esta! Se va tanto por el riñón como por la bilis.",
+                    "Esta se va principalmente por el riñón.",
+                    "Esta se va principalmente por el riñón.",
+                    "Esta se va principalmente por el riñón."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Eliminación renal y biliar: la marca de la ceftriaxona.",
+                    "Fijate: esta se va principalmente por el riñón.",
+                    "Dato curioso: esta se va principalmente por el riñón.",
+                    "Miau, esta se va principalmente por el riñón."
+                ]
+            }
         },
         {
             "numero": 691,
@@ -32255,7 +32455,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ceftriaxona no se caracteriza por un metabolito activo relevante.",
+                    "La cefepima no se caracteriza por un metabolito activo relevante.",
+                    "La cefuroxima axetilo es un profármaco hidrolizado en el intestino, distinto de tener un metabolito activo post-absorción.",
+                    "La cefalotina y la cefotaxima presentan metabolitos activos (desacetilados), una característica farmacocinética compartida — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta no tiene esa característica de metabolito activo.",
+                    "Esta tampoco tiene esa característica particular.",
+                    "Eso es distinto, es un profármaco que se activa en el intestino, no un metabolito activo después.",
+                    "¡Esta! Las dos generan un metabolito que sigue activo."
+                ],
+                "gato": [
+                    "Fijate: esta no tiene esa característica particular.",
+                    "Dato curioso: esta tampoco tiene esa característica particular.",
+                    "Miau, eso es distinto, es un profármaco, no un metabolito activo.",
+                    "¡Ronroneo de aprobación! Metabolito activo compartido: la característica de cefalotina y cefotaxima."
+                ]
+            }
         },
         {
             "numero": 692,
@@ -32282,7 +32502,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Es al revés: la cefoxitina tiene MENOR susceptibilidad a las beta-lactamasas que la cefalexina, no mayor.",
+                    "Todas las cefalosporinas se excretan por vía renal, excepto la ceftriaxona y la cefoperazona (que tienen eliminación biliar relevante) — es la respuesta correcta.",
+                    "Es al revés: la mayoría se excreta por vía renal, y son la ceftriaxona y la cefoperazona las excepciones con eliminación biliar relevante.",
+                    "Es al revés: la cefoxitina presenta MENOR susceptibilidad a las beta-lactamasas que la cefazolina (aunque sí es eficaz contra Bacteroides fragilis)."
+                ],
+                "fantasma": [
+                    "Al revés, esta resiste mejor a esas enzimas que su prima.",
+                    "¡Esta! Casi todas van por el riñón, salvo estas dos excepciones biliares.",
+                    "Al revés, la mayoría va por el riñón, estas dos son la excepción.",
+                    "Al revés, esta resiste mejor a esas enzimas, aunque sí cubre a esta bacteria."
+                ],
+                "gato": [
+                    "Fijate: al revés, esta resiste mejor a esas enzimas.",
+                    "¡Ronroneo de aprobación! Ceftriaxona y cefoperazona: las excepciones biliares entre las cefalosporinas.",
+                    "Dato curioso: al revés, la mayoría va por el riñón.",
+                    "Miau, al revés, esta resiste mejor a esas enzimas."
+                ]
+            }
         },
         {
             "numero": 693,
@@ -32309,7 +32549,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El cefepima puede utilizarse para el tratamiento de meningitis, gracias a su buena penetración al SNC — es la respuesta correcta.",
+                    "La cefalexina SÍ tiene administración por vía oral, es su característica distintiva.",
+                    "La ceftriaxona NO se puede administrar por vía oral, solo por vía parenteral.",
+                    "La cefoperazona no es de elección para meningitis; su penetración al SNC no es la característica destacada de este fármaco."
+                ],
+                "fantasma": [
+                    "¡Esta! Entra bien al cerebro, útil contra esta infección grave.",
+                    "Al revés, esta sí se toma por boca.",
+                    "Al revés, esta no se toma por boca, solo va por vena o músculo.",
+                    "Esta no es la elegida para esta infección del cerebro."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Cefepima: útil en meningitis por su buena penetración al SNC.",
+                    "Fijate: al revés, esta sí se toma por boca.",
+                    "Dato curioso: al revés, esta no se toma por boca.",
+                    "Miau, esta no es la elegida para esta infección del cerebro."
+                ]
+            }
         },
         {
             "numero": 694,
@@ -32336,7 +32596,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefalexina se administra por vía oral, su característica distintiva — es la respuesta correcta.",
+                    "Las cefalosporinas, incluida la cefalexina, SÍ pueden asociarse a problemas renales como la nefritis intersticial.",
+                    "La cefalexina no actúa sobre bacterias atípicas; estas carecen de pared celular, el blanco de los beta-lactámicos.",
+                    "La cefalexina (primera generación) no tiene cobertura confiable sobre anaerobios."
+                ],
+                "fantasma": [
+                    "¡Esta! Se toma por boca, su sello distintivo.",
+                    "Al revés, sí puede haber problemas en el riñón con esta familia.",
+                    "No llega a esas bacterias sin pared celular.",
+                    "No cubre bien a estas bacterias sin oxígeno."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Vía oral: la característica distintiva de la cefalexina.",
+                    "Fijate: al revés, sí puede haber problemas renales con esta familia.",
+                    "Dato curioso: no llega a bacterias sin pared celular.",
+                    "Miau, no cubre bien a las bacterias sin oxígeno."
+                ]
+            }
         },
         {
             "numero": 695,
@@ -32363,7 +32643,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefalexina pertenece a la primera generación, no a la segunda.",
+                    "La cefalexina tiene mayor efecto sobre las bacterias gram positivas, coherente con las cefalosporinas de primera generación — es la respuesta correcta.",
+                    "La cefalexina (primera generación) no tiene actividad contra Pseudomonas.",
+                    "La cefalexina no se utiliza para infecciones por anaerobios."
+                ],
+                "fantasma": [
+                    "Es de la primera generación, no de la segunda.",
+                    "¡Esta! Fuerte contra las bacterias positivas, la marca de la primera generación.",
+                    "No llega a cubrir a esta bacteria difícil.",
+                    "No es la elección para estas bacterias sin oxígeno."
+                ],
+                "gato": [
+                    "Fijate: es de la primera generación, no de la segunda.",
+                    "¡Ronroneo de aprobación! Gram positivos: el fuerte de la cefalexina, típico de la primera generación.",
+                    "Dato curioso: no llega a cubrir a esta bacteria difícil.",
+                    "Miau, no es la elección para bacterias sin oxígeno."
+                ]
+            }
         },
         {
             "numero": 696,
@@ -32390,7 +32690,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ceftriaxona no pertenece a los aminoglucósidos, es una cefalosporina (beta-lactámico).",
+                    "La ceftriaxona inhibe la síntesis de la pared bacteriana, el mecanismo general de los beta-lactámicos — es la respuesta correcta.",
+                    "La ceftriaxona no interactúa con el ARN mensajero, ese no es su mecanismo.",
+                    "La ceftriaxona no pertenece a los antibióticos imidazólicos, es una cefalosporina."
+                ],
+                "fantasma": [
+                    "No es de esa familia, es un beta-lactámico.",
+                    "¡Esta! Frena la construcción de la pared bacteriana.",
+                    "Ese no es su mecanismo en absoluto.",
+                    "No es de esa familia tampoco, es una cefalosporina."
+                ],
+                "gato": [
+                    "Fijate: no es de esa familia, es un beta-lactámico.",
+                    "¡Ronroneo de aprobación! Pared bacteriana bloqueada: el mecanismo de la ceftriaxona.",
+                    "Dato curioso: ese no es su mecanismo en absoluto.",
+                    "Miau, no es de esa familia tampoco."
+                ]
+            }
         },
         {
             "numero": 697,
@@ -32417,7 +32737,27 @@
             "nota": "Selecionar opção INCORRETA",
             "resposta_correta": "D",
             "origem_seccion": "cefalosporinas",
-            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Solo se administra por vía oral Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía."
+            "feedback": "En esta consigna debías señalar la opción INCORRECTA. Esa es D: Solo se administra por vía oral Las demás alternativas son válidas respecto del tema planteado; revisá el enunciado y contrastá conceptos con tu bibliografía.",
+            "explicacoes": {
+                "robo": [
+                    "La ceftriaxona SÍ tiene una vida media más larga que la mayoría de las demás cefalosporinas — afirmación correcta.",
+                    "La ceftriaxona SÍ se elimina por vía biliar (junto con la renal) — afirmación correcta.",
+                    "La ceftriaxona SÍ alcanza concentraciones útiles en el LCR — afirmación correcta.",
+                    "La ceftriaxona NO se administra solo por vía oral; de hecho, no tiene forma oral, solo parenteral — es la afirmación INCORRECTA, respuesta correcta según el feedback del banco."
+                ],
+                "fantasma": [
+                    "Eso es verdad, dura más tiempo en el cuerpo que otras.",
+                    "Eso también es verdad, se va también por la bilis.",
+                    "Eso también es verdad, llega bien al líquido cefalorraquídeo.",
+                    "¡Esta! Ni siquiera tiene versión oral, solo va por vena o músculo."
+                ],
+                "gato": [
+                    "Fijate: eso es verdad, dura más tiempo que otras.",
+                    "Dato curioso: eso también es verdad, se va por la bilis también.",
+                    "Miau, eso también es verdad, llega bien al LCR.",
+                    "¡Ronroneo de aprobación! Sin versión oral: la incorrecta de la lista."
+                ]
+            }
         },
         {
             "numero": 698,
@@ -32444,7 +32784,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ceftriaxona, en el contexto de este banco, es considerada la opción relativamente más segura entre las cuatro para el recién nacido, aunque en la práctica real deben tenerse en cuenta precauciones específicas (hiperbilirrubinemia, coadministración con calcio) — es la respuesta correcta según el criterio de este banco.",
+                    "La doxiciclina se evita clásicamente en esta población por su efecto sobre dientes y huesos en desarrollo.",
+                    "El cloranfenicol está clásicamente contraindicado en el recién nacido por el riesgo del síndrome del bebé gris, debido a la inmadurez de su glucuronidación.",
+                    "El trimetoprima/sulfametoxazol está clásicamente contraindicado en el recién nacido por el riesgo de kernicterus (desplazamiento de bilirrubina)."
+                ],
+                "fantasma": [
+                    "¡Esta! La más manejable de las cuatro para el bebé recién nacido, con sus cuidados particulares.",
+                    "Esta se evita por dañar dientes y huesos en desarrollo.",
+                    "Este tiene un síndrome clásico grave asociado a esta edad.",
+                    "Este tiene un riesgo clásico de ictericia grave en esta edad."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Ceftriaxona: la opción relativamente más manejable entre las cuatro para el recién nacido.",
+                    "Fijate: esta se evita por dañar dientes y huesos en desarrollo.",
+                    "Dato curioso: este tiene un síndrome clásico grave en esta edad.",
+                    "Miau, este tiene un riesgo clásico de ictericia grave en esta edad."
+                ]
+            }
         },
         {
             "numero": 699,
@@ -32471,7 +32831,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La cefazolina no tiene actividad antifúngica, no se usa para Cándida.",
+                    "La cefazolina se usa para infecciones de piel y partes blandas, un uso clásico de esta cefalosporina de primera generación — es la respuesta correcta.",
+                    "La cefazolina no trata infecciones por C. difficile (y de hecho puede predisponer a esta al alterar la flora).",
+                    "La cefazolina no es el fármaco de elección para sífilis; ese es el terreno de la penicilina."
+                ],
+                "fantasma": [
+                    "Esta no tiene efecto contra hongos.",
+                    "¡Esta! Clásica para infecciones de piel y tejidos blandos.",
+                    "Esta no trata esta infección; de hecho, puede favorecerla.",
+                    "Esta no es la elección para esta infección; eso es cosa de la penicilina."
+                ],
+                "gato": [
+                    "Fijate: esta no tiene efecto contra hongos.",
+                    "¡Ronroneo de aprobación! Piel y partes blandas: el uso clásico de la cefazolina.",
+                    "Dato curioso: esta no trata esta infección, puede favorecerla.",
+                    "Miau, esta no es la elección para esta infección."
+                ]
+            }
         },
         {
             "numero": 700,
@@ -32498,7 +32878,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "cefalosporinas",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La doxiciclina se evita clásicamente en esta población por su efecto sobre dientes y huesos en desarrollo.",
+                    "La ceftriaxona, en el contexto de este banco, es considerada la opción relativamente más segura entre las cuatro para el recién nacido, con las precauciones específicas ya mencionadas (hiperbilirrubinemia, calcio) — es la respuesta correcta.",
+                    "La levofloxacina se evita en esta población por preocupaciones sobre el cartílago en desarrollo, similar a otras quinolonas.",
+                    "El trimetoprima/sulfametoxazol está clásicamente contraindicado en el recién nacido por el riesgo de kernicterus."
+                ],
+                "fantasma": [
+                    "Esta se evita por dañar dientes y huesos en desarrollo.",
+                    "¡Esta! La más manejable de las cuatro para el bebé recién nacido.",
+                    "Esta se evita por el cartílago en desarrollo, como el resto de su familia.",
+                    "Este tiene un riesgo clásico de ictericia grave en esta edad."
+                ],
+                "gato": [
+                    "Fijate: esta se evita por dañar dientes y huesos.",
+                    "¡Ronroneo de aprobación! Ceftriaxona: la opción relativamente más manejable para el recién nacido.",
+                    "Dato curioso: esta se evita por el cartílago en desarrollo.",
+                    "Miau, este tiene un riesgo clásico de ictericia grave en esta edad."
+                ]
+            }
         },
         {
             "numero": 701,
