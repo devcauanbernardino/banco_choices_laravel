@@ -32462,7 +32462,27 @@
             "Tratamento de infecções por herpes simples e herpes zoster",
             "Tratamento de infecções por HIV",
             "Tratamento de infecções pelo vírus da hepatite C"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O aciclovir não tem atividade contra a influenza, um vírus de uma família diferente.",
+                "O tratamento de infecções por herpes simples e herpes zóster é a indicação terapêutica principal do aciclovir — é a resposta correta.",
+                "O aciclovir não tem atividade contra o HIV.",
+                "O aciclovir não tem atividade contra o vírus da hepatite C."
+            ],
+            "fantasma": [
+                "Não cobre esse vírus, é de outra família.",
+                "Essa aí! Sua indicação clássica e principal contra esses dois vírus do herpes.",
+                "Não cobre esse vírus de jeito nenhum.",
+                "Não cobre esse vírus de jeito nenhum."
+            ],
+            "gato": [
+                "Fijate: não cobre esse vírus, é de outra família.",
+                "Ronronado de aprovação! Herpes simples e zóster: a indicação principal do aciclovir.",
+                "Dado curioso: não cobre esse vírus de jeito nenhum.",
+                "Miau, não cobre esse vírus de jeito nenhum."
+            ]
+        }
     },
     {
         "pergunta": "Qual medicamento antiviral é adequado para o tratamento de infecções por CMV (citomegalovírus) resistentes ao ganciclovir?",
@@ -32472,7 +32492,27 @@
             "Oseltamivir",
             "Foscarnet",
             "Zidovudina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O aciclovir não tem atividade confiável contra o CMV, e menos ainda em cepas resistentes.",
+                "O oseltamivir é para influenza, não para CMV.",
+                "O foscarnet é o antiviral clássico de escolha para CMV resistente a ganciclovir — é a resposta correta.",
+                "A zidovudina é um antirretroviral para HIV, não tem atividade contra CMV."
+            ],
+            "fantasma": [
+                "Esse não cobre bem esse vírus, e menos na cepa resistente.",
+                "Esse é para a gripe, não para esse vírus.",
+                "Essa aí! A alternativa clássica quando o tratamento habitual já não funciona.",
+                "Essa é para outro vírus completamente diferente."
+            ],
+            "gato": [
+                "Fijate: esse não cobre bem esse vírus.",
+                "Dado curioso: esse é para a gripe.",
+                "Ronronado de aprovação! Foscarnet: a alternativa clássica para CMV resistente a ganciclovir.",
+                "Miau, essa é para outro vírus diferente."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o principal efeito adverso do foscarnet?",
@@ -32482,7 +32522,27 @@
             "Hepatotoxicidade",
             "Toxicidade cardiovascular",
             "Neuropatia periférica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade é o principal efeito adverso do foscarnet, bem estabelecido — é a resposta correta.",
+                "A hepatotoxicidade não é a característica destacada do foscarnet.",
+                "Não está estabelecida a toxicidade cardiovascular como efeito principal do foscarnet.",
+                "Não está estabelecida a neuropatia periférica como efeito principal do foscarnet."
+            ],
+            "fantasma": [
+                "Essa aí! O rim é o ponto fraco clássico desse fármaco.",
+                "Isso não é o destacado desse fármaco.",
+                "Isso não está estabelecido com esse fármaco.",
+                "Isso não está estabelecido com esse fármaco."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Nefrotoxicidade: o efeito adverso principal do foscarnet.",
+                "Fijate: isso não é o destacado desse fármaco.",
+                "Dado curioso: isso não está estabelecido com esse fármaco.",
+                "Miau, isso não está estabelecido com esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o principal uso clínico do foscarnet?",
@@ -32492,7 +32552,27 @@
             "Tratamento do HIV resistente",
             "Tratamento de infecções por citomegalovírus resistentes a outros antivirais",
             "Tratamento da gripe A"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não está estabelecido esse uso para a hepatite B com o foscarnet.",
+                "Não é esse o uso clínico principal estabelecido do foscarnet.",
+                "O tratamento de infecções por citomegalovírus resistentes a outros antivirais é o uso clínico principal do foscarnet — é a resposta correta.",
+                "Não está estabelecido esse uso para a gripe A com o foscarnet."
+            ],
+            "fantasma": [
+                "Isso não está estabelecido para esse fármaco.",
+                "Esse não é o uso principal desse fármaco.",
+                "Essa aí! O uso clássico quando outros antivirais já não funcionam contra esse vírus.",
+                "Isso não está estabelecido para esse fármaco."
+            ],
+            "gato": [
+                "Fijate: isso não está estabelecido para esse fármaco.",
+                "Dado curioso: esse não é o uso principal desse fármaco.",
+                "Ronronado de aprovação! CMV resistente a outros antivirais: o uso principal do foscarnet.",
+                "Miau, isso não está estabelecido para esse fármaco."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação do foscarnet?",
@@ -32502,7 +32582,27 @@
             "Inibição direta da DNA polimerase viral sem necessidade de ativação por quinases virais",
             "Inibição da protease viral",
             "Inibição da fusão da membrana viral com a célula hospedeira"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o mecanismo do foscarnet; isso é dos antirretrovirais NRTI.",
+                "Inibição direta da DNA polimerase viral sem precisar de ativação por cinases virais, a característica distintiva do foscarnet — é a resposta correta.",
+                "Não é esse o mecanismo do foscarnet; isso é dos inibidores de protease.",
+                "Não é esse o mecanismo do foscarnet; isso é dos inibidores de fusão."
+            ],
+            "fantasma": [
+                "Isso é de outros antivirais para o HIV, não desse fármaco.",
+                "Essa aí! Não precisa se ativar primeiro, ataca diretamente a enzima viral.",
+                "Isso é de outro tipo de antiviral, não desse.",
+                "Isso é de outro mecanismo antiviral, não desse."
+            ],
+            "gato": [
+                "Fijate: isso é de outros antivirais para o HIV.",
+                "Ronronado de aprovação! Inibição direta sem ativação prévia: a característica distintiva do foscarnet.",
+                "Dado curioso: isso é de outro tipo de antiviral.",
+                "Miau, isso é de outro mecanismo antiviral."
+            ]
+        }
     },
     {
         "pergunta": "Indique o ERRADO em relação ao foscarnet:",
@@ -32513,7 +32613,27 @@
             "Pode ser usado em CMV resistente ao ganciclovir",
             "IV nunca pode ser dado",
             "Produz nefrotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: é um análogo do pirofosfato que inibe esse sítio de ação.",
+                "Essa afirmação é correta: pode ser usado em CMV resistente a ganciclovir.",
+                "O foscarnet SIM se administra por via intravenosa, é sua via padrão — é a afirmação INCORRETA, resposta correta segundo o feedback do banco.",
+                "Essa afirmação é correta: produz nefrotoxicidade."
+            ],
+            "fantasma": [
+                "Isso é verdade, imita essa molécula e bloqueia seu lugar de ação.",
+                "Isso também é verdade, serve para essa situação de resistência.",
+                "Essa aí! Ao contrário, essa é justamente sua via habitual de administração.",
+                "Isso também é verdade, pode prejudicar o rim."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, imita essa molécula.",
+                "Dado curioso: isso também é verdade, serve para essa resistência.",
+                "Ronronado de aprovação! Sim se dá por via IV, é sua via padrão: a incorreta da lista.",
+                "Miau, isso também é verdade, pode prejudicar o rim."
+            ]
+        }
     },
     {
         "pergunta": "Selecione o CORRETO em relação ao foscarnet:",
@@ -32523,7 +32643,27 @@
             "Incorporado ao tecido ósseo",
             "Tem metabolismo renal",
             "Gera hiperMg"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: SIM é ativo contra o DNA, esse é justamente seu alvo.",
+                "Se incorpora ao tecido ósseo, uma característica farmacocinética reconhecida do foscarnet — é a resposta correta.",
+                "É ao contrário: se elimina renal SEM metabolizar, não tem metabolismo renal como tal.",
+                "É ao contrário: se associa mais à HIPOmagnesemia (por quelação), não à hipermagnesemia."
+            ],
+            "fantasma": [
+                "Ao contrário, sim ataca justo essa molécula.",
+                "Essa aí! Fica grudado no osso, como os bifosfonatos.",
+                "Ao contrário, sai sem alterações pelo rim.",
+                "Ao contrário, baixa mais esse mineral, não o sobe."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim ataca essa molécula.",
+                "Ronronado de aprovação! Incorporação ao osso: a característica farmacocinética do foscarnet.",
+                "Dado curioso: ao contrário, sai sem alterações pelo rim.",
+                "Miau, ao contrário, baixa mais esse mineral."
+            ]
+        }
     },
     {
         "pergunta": "Mencione a resposta CORRETA sobre o Ganciclovir:",
@@ -32533,7 +32673,27 @@
             "Tem efeitos anticolinérgicos e pode causar ressecamento das mucosas, midríase, retenção urinária e psicose tóxica.",
             "Possui atividade contra todos os vírus do herpes, mas principalmente contra o citomegalovírus e suas reações adversas características são mielossupressão e neurotoxicidade.",
             "Atua inibindo a transcriptase reversa e suas reações adversas características são: neurotoxicidade e nefrotoxicidade."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o mecanismo do ganciclovir; esse alvo é de outro tipo de antiviral (para influenza).",
+                "Não estão estabelecidos esses efeitos anticolinérgicos para o ganciclovir; isso é de outra classe de fármacos.",
+                "Apresenta atividade contra os vírus herpéticos, principalmente citomegalovírus, com mielossupressão e neurotoxicidade como reações adversas características — é a resposta correta.",
+                "Não é esse o mecanismo do ganciclovir; isso é dos antirretrovirais NRTI."
+            ],
+            "fantasma": [
+                "Esse alvo é de outro antiviral, para outro vírus.",
+                "Esses efeitos não estão estabelecidos para esse fármaco.",
+                "Essa aí! Cobre bem os herpéticos, principalmente esse vírus, com esses dois riscos característicos.",
+                "Isso é de outros antivirais, não desse."
+            ],
+            "gato": [
+                "Fijate: esse alvo é de outro antiviral.",
+                "Dado curioso: esses efeitos não estão estabelecidos aqui.",
+                "Ronronado de aprovação! CMV + mielossupressão/neurotoxicidade: o perfil correto do ganciclovir.",
+                "Miau, isso é de outros antivirais."
+            ]
+        }
     },
     {
         "pergunta": "Indique o CORRETO em relação ao ganciclovir:",
@@ -32543,7 +32703,27 @@
             "Tem metabolismo hepático",
             "Não é eliminado pelos rins",
             "Pode causar mielossupressão"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "É ao contrário: SIM atua contra o CMV, é seu alvo principal.",
+                "É ao contrário: NÃO tem metabolismo hepático relevante; se elimina renal.",
+                "É ao contrário: SIM se elimina por via renal.",
+                "Pode produzir mielossupressão, seu efeito adverso característico bem estabelecido — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, sim ataca justo esse vírus.",
+                "Ao contrário, não passa muito pelo fígado.",
+                "Ao contrário, sim sai pelo rim.",
+                "Essa aí! A medula óssea sofre com esse fármaco."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim ataca esse vírus.",
+                "Dado curioso: ao contrário, não passa muito pelo fígado.",
+                "Miau, ao contrário, sim sai pelo rim.",
+                "Ronronado de aprovação! Mielossupressão: o efeito adverso característico do ganciclovir."
+            ]
+        }
     },
     {
         "pergunta": "Indique o INCORRETO em relação ao valganciclovir:",
@@ -32554,7 +32734,27 @@
             "Pode causar distúrbios oculares",
             "É seguro para a gravidez",
             "Aumenta a toxicidade hematológica da zidovudina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Essa afirmação é correta: o valganciclovir sim é uma pró-droga.",
+                "Essa afirmação é correta: sim pode produzir alterações oculares.",
+                "O valganciclovir NÃO é considerado seguro para a gravidez, dado seu potencial genotóxico/teratogênico — é a afirmação INCORRETA, resposta correta segundo o feedback do banco.",
+                "Essa afirmação é correta: sim aumenta a toxicidade hematológica da zidovudina, ambos mielossupressores."
+            ],
+            "fantasma": [
+                "Isso é verdade, se ativa depois de tomada.",
+                "Isso também é verdade, pode afetar os olhos.",
+                "Essa aí! Ao contrário, não é segura na gravidez pelo seu risco genético.",
+                "Isso também é verdade, somam o dano à medula juntos."
+            ],
+            "gato": [
+                "Fijate: isso é verdade, se ativa depois.",
+                "Dado curioso: isso também é verdade, pode afetar os olhos.",
+                "Ronronado de aprovação! Não é segura na gravidez: a incorreta da lista.",
+                "Miau, isso também é verdade, somam o dano à medula."
+            ]
+        }
     },
     {
         "pergunta": "Indique o CORRETO em relação ao ganciclovir:",
@@ -32564,7 +32764,27 @@
             "É metabolizado no fígado",
             "Distribui-se mal em líquidos",
             "Somente em cápsulas é administrado por via oral"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O probenecid aumenta a meia-vida do ganciclovir, ao competir pela secreção tubular renal — é a resposta correta.",
+                "É ao contrário: não tem metabolismo hepático relevante, se elimina renal.",
+                "É ao contrário: se distribui bem nos líquidos corporais.",
+                "Não é essa a característica destacada; sua biodisponibilidade oral é em geral pobre (por isso existe o valganciclovir)."
+            ],
+            "fantasma": [
+                "Essa aí! Esse outro fármaco compete pela saída renal e faz durar mais.",
+                "Ao contrário, não passa muito pelo fígado.",
+                "Ao contrário, se distribui bem pelo corpo.",
+                "Essa não é a característica destacada aqui."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Probenecid alongando sua meia-vida: a interação característica do ganciclovir.",
+                "Fijate: ao contrário, não passa muito pelo fígado.",
+                "Dado curioso: ao contrário, se distribui bem pelo corpo.",
+                "Miau, essa não é a característica destacada aqui."
+            ]
+        }
     },
     {
         "pergunta": "Indique o CORRETO em relação aos antivirais contra vírus de DNA:",
@@ -32574,7 +32794,27 @@
             "Valganciclovir é ativo apenas contra CMV",
             "O espectro do aciclovir inclui influenza",
             "Não existem medicamentos contra o VZV"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o termo convencionalmente reservado para o aciclovir neste banco (sim para o valaciclovir/valganciclovir).",
+                "O valganciclovir é ativo quase exclusivamente contra o CMV, sua indicação principal estabelecida — é a resposta correta.",
+                "O aciclovir não tem atividade contra a influenza, um vírus de outra família.",
+                "É ao contrário: SIM existem fármacos contra o VVZ, como o próprio aciclovir."
+            ],
+            "fantasma": [
+                "Esse termo se usa mais para outro fármaco relacionado.",
+                "Essa aí! Sua indicação quase exclusiva é contra esse vírus em particular.",
+                "Não cobre esse vírus, é de outra família.",
+                "Ao contrário, sim há fármacos contra esse vírus, esse mesmo entre eles."
+            ],
+            "gato": [
+                "Fijate: esse termo se usa mais para outro fármaco.",
+                "Ronronado de aprovação! CMV: a indicação quase exclusiva do valganciclovir.",
+                "Dado curioso: não cobre esse vírus, é de outra família.",
+                "Miau, ao contrário, sim há fármacos contra esse vírus."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos você usaria em um paciente com Herpes Zoster?",
@@ -32584,7 +32824,27 @@
             "Aciclovir",
             "Ritonavir",
             "Ribavirina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O sofosbuvir é para hepatite C, não para herpes zóster.",
+                "O aciclovir é o fármaco indicado para o herpes zóster — é a resposta correta.",
+                "O ritonavir é um inibidor de protease do HIV, não indicado para herpes zóster.",
+                "A ribavirina não é o tratamento estabelecido para herpes zóster."
+            ],
+            "fantasma": [
+                "Esse é para outro vírus completamente diferente.",
+                "Essa aí! O indicado clássico contra essa infecção viral.",
+                "Esse é para outro vírus completamente diferente.",
+                "Essa não é o tratamento estabelecido para essa infecção."
+            ],
+            "gato": [
+                "Fijate: esse é para outro vírus completamente diferente.",
+                "Ronronado de aprovação! Aciclovir: o indicado clássico para o herpes zóster.",
+                "Dado curioso: esse é para outro vírus diferente.",
+                "Miau, essa não é o tratamento estabelecido aqui."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao aciclovir, indique a opção correta:",
@@ -32594,7 +32854,27 @@
             "O aciclovir depende de enzimas virais para toda a sua fosforilação.",
             "A fosforilação do Aciclovir depende de enzimas da célula hospedeira, o que pode significar danos às células não infectadas.",
             "A sua boa biodisponibilidade oral explica a sua extensa distribuição nos tecidos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Se o considera um fármaco de categoria B na gravidez, um dado de segurança reconhecido — é a resposta correta.",
+                "Não é verdade que dependa de enzimas virais para TODAS as suas fosforilações; só o primeiro passo depende da enzima viral.",
+                "É ao contrário: é justamente essa dependência da enzima VIRAL no primeiro passo o que lhe dá seletividade, protegendo (não prejudicando) as células não infectadas.",
+                "É ao contrário: tem uma biodisponibilidade oral mais bem modesta, não tão boa para explicar por si só sua distribuição."
+            ],
+            "fantasma": [
+                "Essa aí! Essa é sua categoria de segurança na gravidez.",
+                "Não é assim, só o primeiro passo depende dessa enzima viral.",
+                "Ao contrário, essa dependência é o que o torna seletivo e mais seguro para as células saudáveis.",
+                "Ao contrário, não se absorve tão bem por boca."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Categoria B: a classificação de segurança na gravidez do aciclovir.",
+                "Fijate: não é assim, só o primeiro passo depende dessa enzima.",
+                "Dado curioso: ao contrário, essa dependência o torna seletivo e seguro.",
+                "Miau, ao contrário, não se absorve tão bem por boca."
+            ]
+        }
     },
     {
         "pergunta": "Deve-se usar aciclovir?",
@@ -32604,7 +32884,27 @@
             "Na mononucleose por EBV",
             "Profilaxia HSV2 no último mês de gravidez",
             "HSV1 em infecção primária, sem recorrência"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não está indicado em TODO paciente com varicela; se reserva para casos de maior risco (imunocomprometidos, adultos, formas graves).",
+                "Não está estabelecido um benefício clínico claro do aciclovir na mononucleose por EBV.",
+                "A profilaxia no último mês de gravidez diante de HSV2 é um uso reconhecido do aciclovir, para reduzir o risco de transmissão neonatal — é a resposta correta.",
+                "É ao contrário: SIM se usa tanto na primoinfecção quanto nas recorrências do HSV1, não se limita à primeira vez."
+            ],
+            "fantasma": [
+                "Não é para todos os casos, se reserva para os de mais risco.",
+                "Não há um benefício claro estabelecido nessa outra infecção viral.",
+                "Essa aí! Se usa para proteger o bebê no último trecho da gravidez diante desse vírus.",
+                "Ao contrário, serve tanto a primeira vez quanto nas vezes que se repete."
+            ],
+            "gato": [
+                "Fijate: não é para todos os casos, se reserva para mais risco.",
+                "Dado curioso: não há benefício claro nessa outra infecção.",
+                "Ronronado de aprovação! Profilaxia no último mês de gravidez diante de HSV2: o uso reconhecido do aciclovir.",
+                "Miau, ao contrário, serve tanto a primeira vez quanto nas recaídas."
+            ]
+        }
     },
     {
         "pergunta": "Em relação ao ganciclovir indique a opção correta:",
@@ -32614,7 +32914,27 @@
             "Requer a presença de timidina quinase para ser fosforilada",
             "Não causa depressão da medula óssea",
             "Alta biodisponibilidade oral"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é essa a descrição precisa estabelecida; o ganciclovir é um análogo estruturalmente similar, mas o ponto chave aqui é outro.",
+                "Requer da presença da timidinaquinase para se fosforilar, seu mecanismo de ativação característico — é a resposta correta.",
+                "É ao contrário: SIM produz depressão de medula óssea, seu efeito adverso característico.",
+                "É ao contrário: tem BAIXA biodisponibilidade oral, por isso existe o valganciclovir como alternativa."
+            ],
+            "fantasma": [
+                "Essa não é a descrição precisa buscada aqui.",
+                "Essa aí! Precisa dessa enzima viral para se ativar primeiro.",
+                "Ao contrário, sim pode prejudicar a medula óssea.",
+                "Ao contrário, se absorve mal por boca."
+            ],
+            "gato": [
+                "Fijate: essa não é a descrição precisa buscada aqui.",
+                "Ronronado de aprovação! Timidinaquinase necessária para se ativar: o mecanismo do ganciclovir.",
+                "Dado curioso: ao contrário, sim pode prejudicar a medula óssea.",
+                "Miau, ao contrário, se absorve mal por boca."
+            ]
+        }
     },
     {
         "pergunta": "Indique qual dos seguintes medicamentos é um antiviral análogo de nucleosídeo:",
@@ -32624,7 +32944,27 @@
             "Valganciclovir",
             "Cidofovir",
             "Rimantadina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O foscarnet é um análogo do PIROFOSFATO, não um análogo nucleosídeo.",
+                "O valganciclovir (pró-droga do ganciclovir, um análogo de guanosina) é um antiviral análogo nucleosídeo — é a resposta correta.",
+                "O cidofovir é um análogo NUCLEOTÍDICO (já com o fosfonato incorporado), não nucleosídeo.",
+                "A rimantadina é um bloqueador do canal M2 para influenza, não um análogo nucleosídeo."
+            ],
+            "fantasma": [
+                "Esse é de outra família, a dos análogos de pirofosfato.",
+                "Essa aí! Análogo de guanosina, dentro da família dos nucleosídeos.",
+                "Esse já vem com o fosfato de fábrica, é nucleotídico, não nucleosídeo.",
+                "Essa é de outra família completamente diferente, para outro vírus."
+            ],
+            "gato": [
+                "Fijate: esse é de outra família, a de pirofosfato.",
+                "Ronronado de aprovação! Valganciclovir: o análogo nucleosídeo desse grupo.",
+                "Dado curioso: esse já vem com o fosfato de fábrica.",
+                "Miau, essa é de outra família completamente diferente."
+            ]
+        }
     },
     {
         "pergunta": "Entre os efeitos adversos dos antivirais de DNA, NÃO encontramos:",
@@ -32634,7 +32974,27 @@
             "Mioclonia",
             "Convulsões",
             "Neurite óptica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A neurotoxicidade SIM é um efeito adverso reconhecido dos antivirais DNA.",
+                "As mioclonias SIM fazem parte do espectro de neurotoxicidade desses antivirais.",
+                "As convulsões SIM fazem parte do espectro de neurotoxicidade desses antivirais.",
+                "A neurite óptica não está estabelecida como efeito adverso dos antivirais DNA; é mais do etambutol — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse sim pode acontecer com essa família.",
+                "Isso também pode acontecer, parte do mesmo espectro neurológico.",
+                "Isso também pode acontecer, parte do mesmo espectro neurológico.",
+                "Essa aí! Essa não está na lista real de efeitos dessa família, é de outro fármaco."
+            ],
+            "gato": [
+                "Fijate: esse sim pode acontecer com essa família.",
+                "Dado curioso: isso também pode acontecer, mesmo espectro.",
+                "Miau, isso também pode acontecer, mesmo espectro.",
+                "Ronronado de aprovação! Neurite óptica: a que não está na lista real, a exceção correta."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual é um análogo da citidina:",
@@ -32644,7 +33004,27 @@
             "Adefovir",
             "Cidofovir",
             "Cidadenet"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "O tenofovir é um análogo de adenina, não de citidina.",
+                "O adefovir também é um análogo de adenina, não de citidina.",
+                "O cidofovir é o análogo de citidina entre essas opções, sua classificação correta — é a resposta correta.",
+                "Esse nome não corresponde a um fármaco antiviral real estabelecido."
+            ],
+            "fantasma": [
+                "Esse é de outra base, a adenina.",
+                "Esse também é de outra base, a adenina.",
+                "Essa aí! O análogo dessa base específica entre as opções.",
+                "Esse nome nem sequer é um fármaco real."
+            ],
+            "gato": [
+                "Fijate: esse é de outra base, a adenina.",
+                "Dado curioso: esse também é de outra base.",
+                "Ronronado de aprovação! Cidofovir: o análogo de citidina correto.",
+                "Miau, esse nome nem sequer é um fármaco real."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual medicamento não é ativo contra a gripe:",
@@ -32654,7 +33034,27 @@
             "Rimantadina",
             "Oseltamivir",
             "Ritonavir"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A amantadina SIM é ativa contra a influenza (bloqueadora do canal M2).",
+                "A rimantadina SIM é ativa contra a influenza, da mesma família da amantadina.",
+                "O oseltamivir SIM é ativo contra a influenza, um inibidor da neuraminidase.",
+                "O ritonavir não tem atividade contra a influenza; é um inibidor de protease do HIV — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse sim cobre esse vírus respiratório.",
+                "Essa também sim cobre esse vírus, da mesma família.",
+                "Esse também sim cobre esse vírus, por outro mecanismo.",
+                "Essa aí! Esse fármaco é para outro vírus completamente diferente."
+            ],
+            "gato": [
+                "Fijate: esse sim cobre esse vírus.",
+                "Dado curioso: essa também sim cobre esse vírus.",
+                "Miau, esse também sim cobre esse vírus.",
+                "Ronronado de aprovação! Ritonavir: para o HIV, não para a influenza."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual medicamento pode ser administrado por inalação:",
