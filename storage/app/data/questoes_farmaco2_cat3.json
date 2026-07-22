@@ -36685,7 +36685,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La neurotoxicidad es un término más amplio; el efecto específico y clásicamente destacado en esta lista es otro.",
+                    "La hepatotoxicidad no es un efecto adverso característico de los aminoglucósidos.",
+                    "La nefrotoxicidad es uno de los principales efectos adversos de los aminoglucósidos, junto con la ototoxicidad — es la respuesta correcta.",
+                    "La mielotoxicidad no es un efecto adverso característico de los aminoglucósidos."
+                ],
+                "fantasma": [
+                    "Ese término es más amplio, el destacado en esta familia es más específico.",
+                    "Ese no es un efecto característico de esta familia.",
+                    "¡Esta! Uno de los dos puntos débiles clásicos de estos fármacos.",
+                    "Ese no es un efecto característico de esta familia."
+                ],
+                "gato": [
+                    "Fijate: ese término es más amplio que el destacado aquí.",
+                    "Dato curioso: ese no es un efecto característico de esta familia.",
+                    "¡Ronroneo de aprobación! Nefrotoxicidad: uno de los dos efectos adversos clásicos de los aminoglucósidos.",
+                    "Miau, ese no es un efecto característico de esta familia."
+                ]
+            }
         },
         {
             "numero": 782,
@@ -36712,7 +36732,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las enterobacterias SÍ están dentro del espectro de los aminoglucósidos.",
+                    "La Pseudomonas aeruginosa SÍ está dentro del espectro de varios aminoglucósidos.",
+                    "El Mycobacterium tuberculosis SÍ está cubierto (por la estreptomicina, específicamente).",
+                    "El Clostridium difficile es anaerobio, y los aminoglucósidos NO cubren anaerobios (por su mecanismo de ingreso oxígeno-dependiente) — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Esta sí está en el radar de esta familia.",
+                    "Esta también sí está en el radar de esta familia.",
+                    "Esta sí está cubierta, por un miembro específico de la familia.",
+                    "¡Esta! Sin oxígeno, esta familia no puede ni entrar a la célula."
+                ],
+                "gato": [
+                    "Fijate: esta sí está en el radar de esta familia.",
+                    "Dato curioso: esta también sí está en el radar.",
+                    "Miau, esta sí está cubierta por un miembro específico.",
+                    "¡Ronroneo de aprobación! Clostridium difficile (anaerobio): el que se le escapa a los aminoglucósidos."
+                ]
+            }
         },
         {
             "numero": 783,
@@ -36739,7 +36779,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "El ingreso de los aminoglucósidos SÍ depende de energía (gradiente electroquímico oxígeno-dependiente), no es independiente de ella.",
+                    "No es favorecido por cationes divalentes; de hecho, estos pueden competir/interferir con el transporte, no facilitarlo.",
+                    "No es el pH básico lo que favorece su ingreso a la célula bacteriana.",
+                    "Se unen al ribosoma 30S, inhibiendo la iniciación y elongación de la síntesis proteica, el mecanismo característico — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Al revés, sí necesitan energía para entrar.",
+                    "Al revés, estos iones más bien interfieren, no ayudan.",
+                    "Eso no es lo que favorece su entrada.",
+                    "¡Esta! Se pegan a esa subunidad y frenan el arranque y la continuación de la fábrica de proteínas."
+                ],
+                "gato": [
+                    "Fijate: al revés, sí necesitan energía para entrar.",
+                    "Dato curioso: al revés, estos iones interfieren, no ayudan.",
+                    "Miau, eso no es lo que favorece su entrada.",
+                    "¡Ronroneo de aprobación! Unión al 30S bloqueando inicio y elongación: el mecanismo de los aminoglucósidos."
+                ]
+            }
         },
         {
             "numero": 784,
@@ -36766,7 +36826,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La espectinomicina no es el fármaco destacado con este efecto en este contexto.",
+                    "Las tetraciclinas no son el fármaco destacado con este efecto en este contexto.",
+                    "La ampicilina no es el fármaco destacado con este efecto en este contexto.",
+                    "Los aminoglucósidos presentan un efecto post-antibiótico significativo, base de su estrategia de monodosis diaria — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Este no es el destacado por este efecto aquí.",
+                    "Estas no son las destacadas por este efecto aquí.",
+                    "Esta no es la destacada por este efecto aquí.",
+                    "¡Esta! El efecto sigue un rato después de suspendido el fármaco, la base de su monodosis."
+                ],
+                "gato": [
+                    "Fijate: este no es el destacado por este efecto.",
+                    "Dato curioso: estas no son las destacadas por este efecto.",
+                    "Miau, esta no es la destacada por este efecto.",
+                    "¡Ronroneo de aprobación! Efecto post-antibiótico: la firma de los aminoglucósidos."
+                ]
+            }
         },
         {
             "numero": 785,
@@ -36791,9 +36871,29 @@
             ],
             "tipo": "multipla_escolha",
             "nota": null,
-            "resposta_correta": "A",
+            "resposta_correta": "B",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La alteración del sitio ribosomal es un mecanismo real pero secundario/menos común (más relevante para resistencia específica a estreptomicina).",
+                    "La modificación enzimática del antibiótico (por acetilasas, fosforilasas o adenilasas) es el mecanismo PRINCIPAL de resistencia bacteriana a aminoglucósidos — es la respuesta correcta.",
+                    "El aumento de la permeabilidad de la membrana no generaría resistencia; al contrario, facilitaría el ingreso del fármaco.",
+                    "No existe un mecanismo establecido de destrucción del fármaco mediante peroxidasas bacterianas."
+                ],
+                "fantasma": [
+                    "Este mecanismo existe, pero es menos frecuente que el principal.",
+                    "¡Esta! Enzimas bacterianas que modifican químicamente al fármaco, el mecanismo más común de resistencia.",
+                    "Al revés, eso ayudaría a que el fármaco entre, no a resistirlo.",
+                    "Esa enzima ni siquiera es un mecanismo real descripto."
+                ],
+                "gato": [
+                    "Fijate: este mecanismo existe, pero es menos frecuente.",
+                    "¡Ronroneo de aprobación! Modificación enzimática: el mecanismo principal y más común de resistencia a aminoglucósidos.",
+                    "Dato curioso: al revés, eso ayudaría a que el fármaco entre.",
+                    "Miau, esa enzima ni siquiera es un mecanismo real."
+                ]
+            }
         },
         {
             "numero": 786,
@@ -36820,7 +36920,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La anemia aplásica no es el efecto adverso característico de los aminoglucósidos; se asocia más al cloranfenicol.",
+                    "La nefrotoxicidad y la ototoxicidad son los efectos adversos más característicos del uso prolongado de aminoglucósidos — es la respuesta correcta.",
+                    "La fotosensibilidad no es característica de los aminoglucósidos; es más propia de tetraciclinas/quinolonas.",
+                    "La hepatotoxicidad no es un efecto adverso característico de los aminoglucósidos."
+                ],
+                "fantasma": [
+                    "Eso es más del cloranfenicol, no de esta familia.",
+                    "¡Esta! Riñón y oído, el combo clásico con el uso prolongado.",
+                    "Eso es más de otras familias, no de esta.",
+                    "Eso no es lo característico de esta familia."
+                ],
+                "gato": [
+                    "Fijate: eso es más del cloranfenicol.",
+                    "¡Ronroneo de aprobación! Nefro y ototoxicidad: el combo clásico del uso prolongado de aminoglucósidos.",
+                    "Dato curioso: eso es más de otras familias.",
+                    "Miau, eso no es lo característico de esta familia."
+                ]
+            }
         },
         {
             "numero": 787,
@@ -36847,7 +36967,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las bombas de eflujo no son la razón relevante aquí; el problema es de entrada, no de salida del fármaco.",
+                    "Su transporte al interior de la célula depende de un gradiente electroquímico oxígeno-dependiente, ausente en anaerobios — es la respuesta correcta.",
+                    "Los aminoglucósidos no inhiben la síntesis de ácidos nucleicos; su blanco es la síntesis proteica.",
+                    "No es esta la razón universal; el problema de fondo es el ingreso oxígeno-dependiente, no enzimas inactivadoras específicas de los anaerobios."
+                ],
+                "fantasma": [
+                    "Eso no es lo relevante, el problema es de entrada, no de salida.",
+                    "¡Esta! Sin oxígeno, no se genera la energía que necesitan para entrar.",
+                    "Eso no es lo que frenan estos fármacos.",
+                    "Esa no es la razón de fondo aquí."
+                ],
+                "gato": [
+                    "Fijate: eso no es lo relevante, el problema es de entrada.",
+                    "¡Ronroneo de aprobación! Sin oxígeno, sin gradiente, sin entrada: la razón real de la resistencia intrínseca de los anaerobios.",
+                    "Dato curioso: eso no es lo que frenan estos fármacos.",
+                    "Miau, esa no es la razón de fondo aquí."
+                ]
+            }
         },
         {
             "numero": 788,
@@ -36874,7 +37014,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No mejora la absorción gastrointestinal; los aminoglucósidos ni se dan por esa vía para efecto sistémico.",
+                    "No es para prevenir efectos adversos propios; la razón es otra, relacionada con el acceso a la célula bacteriana.",
+                    "Los beta-lactámicos alteran la pared bacteriana, facilitando la entrada de los aminoglucósidos, la base de esta sinergia clásica — es la respuesta correcta.",
+                    "No es para reducir la nefrotoxicidad; algunas combinaciones incluso pueden aumentar riesgos renales."
+                ],
+                "fantasma": [
+                    "Eso no aplica, ni se usan por boca para esto.",
+                    "No es por eso, la razón real es otra.",
+                    "¡Esta! Uno rompe la puerta, el otro entra mejor gracias a eso.",
+                    "No es para bajar ese riesgo, a veces hasta lo sube."
+                ],
+                "gato": [
+                    "Fijate: eso no aplica, ni se usan por boca para esto.",
+                    "Dato curioso: no es por eso, la razón real es otra.",
+                    "¡Ronroneo de aprobación! Beta-lactámico rompe la pared, aminoglucósido entra mejor: la sinergia clásica.",
+                    "Miau, no es para bajar ese riesgo."
+                ]
+            }
         },
         {
             "numero": 789,
@@ -36901,7 +37061,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No es este el espectro característico de la amikacina.",
+                    "No es tan amplio; su espectro característico se limita a los gram negativos.",
+                    "Los aminoglucósidos, incluida la amikacina, NO cubren anaerobios, por su mecanismo de ingreso oxígeno-dependiente.",
+                    "Gram negativos aerobios es el espectro característico de la amikacina — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Ese no es el espectro característico de esta droga.",
+                    "No es tan amplio como eso.",
+                    "No llega a estas bacterias sin oxígeno, les falta la entrada que necesitan.",
+                    "¡Esta! Los negativos que respiran oxígeno, el terreno clásico de esta droga."
+                ],
+                "gato": [
+                    "Fijate: ese no es el espectro característico de esta droga.",
+                    "Dato curioso: no es tan amplio como eso.",
+                    "Miau, no llega a estas bacterias sin oxígeno.",
+                    "¡Ronroneo de aprobación! Gram negativos aerobios: el espectro característico de la amikacina."
+                ]
+            }
         },
         {
             "numero": 790,
@@ -36928,7 +37108,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La monodosis diaria de amikacina permite menor toxicidad renal y auditiva, una ventaja establecida — es la respuesta correcta.",
+                    "No mejora la tolerancia gastrointestinal; no es relevante para un fármaco que ni se da por boca en tratamiento sistémico.",
+                    "No permite administración oral en tratamientos crónicos; la amikacina se administra de forma parenteral.",
+                    "No es la hepatotoxicidad lo relevante aquí; esta droga no tiene esa toxicidad característica."
+                ],
+                "fantasma": [
+                    "¡Esta! Una sola dosis grande al día cuida más al riñón y al oído.",
+                    "Eso no es relevante para un fármaco que no se toma por boca.",
+                    "No se toma por boca para esto, sigue siendo parenteral.",
+                    "Eso no es lo que preocupa con esta droga."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Menor toxicidad renal y auditiva: la ventaja de la monodosis de amikacina.",
+                    "Fijate: eso no es relevante para un fármaco que no se toma por boca.",
+                    "Dato curioso: no se toma por boca para esto.",
+                    "Miau, eso no es lo que preocupa con esta droga."
+                ]
+            }
         },
         {
             "numero": 791,
@@ -36955,7 +37155,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La tobramicina causa una mala lectura del código en la plantilla de ARNm, el mecanismo característico de los aminoglucósidos — es la respuesta correcta.",
+                    "No inhibe la peptidil transferasa, ese es el mecanismo del cloranfenicol.",
+                    "No es bacteriostática, es bactericida.",
+                    "No se une a la subunidad 50S, se une a la 30S."
+                ],
+                "fantasma": [
+                    "¡Esta! Hace que el ribosoma lea mal el mensaje.",
+                    "Eso es del cloranfenicol, no de esta droga.",
+                    "Al revés, mata bacterias, no solo las frena.",
+                    "Se pega a la otra subunidad, la 30S, no esta."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Mala lectura del ARNm: el mecanismo de la tobramicina.",
+                    "Fijate: eso es del cloranfenicol.",
+                    "Dato curioso: al revés, mata bacterias, no solo las frena.",
+                    "Miau, se pega a la 30S, no a esta."
+                ]
+            }
         },
         {
             "numero": 792,
@@ -36982,7 +37202,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No inhibe la peptidil transferasa, ese es el mecanismo del cloranfenicol.",
+                    "No se une a la subunidad 50S, se une a la 30S.",
+                    "La gentamicina causa una mala lectura del código en la plantilla de ARNm, el mecanismo característico de los aminoglucósidos — es la respuesta correcta.",
+                    "No es bacteriostática, es bactericida."
+                ],
+                "fantasma": [
+                    "Eso es del cloranfenicol, no de esta droga.",
+                    "Se pega a la otra subunidad, la 30S, no esta.",
+                    "¡Esta! Hace que el ribosoma lea mal el mensaje.",
+                    "Al revés, mata bacterias, no solo las frena."
+                ],
+                "gato": [
+                    "Fijate: eso es del cloranfenicol.",
+                    "Dato curioso: se pega a la 30S, no a esta.",
+                    "¡Ronroneo de aprobación! Mala lectura del ARNm: el mecanismo de la gentamicina.",
+                    "Miau, al revés, mata bacterias, no solo las frena."
+                ]
+            }
         },
         {
             "numero": 793,
@@ -37009,7 +37249,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Los aminoglucósidos, incluida la gentamicina, NO cubren anaerobios.",
+                    "No es este el espectro típico de la gentamicina.",
+                    "Cubrir micobacterias es más propio de la estreptomicina, no el espectro típico general de la gentamicina.",
+                    "Gram negativos aerobios es el espectro típico de la gentamicina — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "No llega a los que no respiran oxígeno, ni siquiera esta droga.",
+                    "Ese no es el fuerte típico de esta droga.",
+                    "Eso es más de su prima estreptomicina.",
+                    "¡Esta! Los negativos que respiran oxígeno, el terreno clásico de esta droga."
+                ],
+                "gato": [
+                    "Fijate: no llega a los que no respiran oxígeno.",
+                    "Dato curioso: ese no es el fuerte típico de esta droga.",
+                    "Miau, eso es más de su prima estreptomicina.",
+                    "¡Ronroneo de aprobación! Gram negativos aerobios: el espectro típico de la gentamicina."
+                ]
+            }
         },
         {
             "numero": 794,
@@ -37036,7 +37296,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "Las deformidades óseas no son el riesgo fetal establecido de la gentamicina.",
+                    "La pérdida auditiva es el riesgo fetal establecido de la gentamicina, ya que atraviesa la placenta y puede causar ototoxicidad en el feto — es la respuesta correcta.",
+                    "La teratogénesis, en términos tan generales, no describe con precisión el riesgo específico y bien establecido de este fármaco.",
+                    "La ceguera no es el riesgo fetal establecido de la gentamicina."
+                ],
+                "fantasma": [
+                    "Ese no es el riesgo establecido para el bebé con este fármaco.",
+                    "¡Esta! Cruza la placenta y puede dañar el oído del bebé en formación.",
+                    "Ese término tan general no describe el riesgo preciso de este fármaco.",
+                    "Ese no es el riesgo establecido para el bebé con este fármaco."
+                ],
+                "gato": [
+                    "Fijate: ese no es el riesgo establecido para el bebé.",
+                    "¡Ronroneo de aprobación! Pérdida auditiva fetal: el riesgo clásico de la gentamicina en el embarazo.",
+                    "Dato curioso: ese término tan general no describe el riesgo preciso.",
+                    "Miau, ese no es el riesgo establecido para el bebé."
+                ]
+            }
         },
         {
             "numero": 795,
@@ -37063,7 +37343,27 @@
             "nota": null,
             "resposta_correta": "B",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La formación de poros en la pared no es el mecanismo de la gentamicina; eso es más propio de otros antibióticos.",
+                    "La lectura errónea del código genético es lo que genera el efecto bactericida de la gentamicina, produciendo proteínas anómalas tóxicas para la bacteria — es la respuesta correcta.",
+                    "La inhibición de la exteriorización del nucleótido de Park es el mecanismo de la vancomicina, no de la gentamicina.",
+                    "No es esta la descripción del mecanismo bactericida clásicamente establecido para la gentamicina en este banco."
+                ],
+                "fantasma": [
+                    "Eso no es lo que hace este fármaco, es de otra familia.",
+                    "¡Esta! Proteínas defectuosas por mala lectura, eso es lo que mata a la bacteria.",
+                    "Eso es de la vancomicina, no de este fármaco.",
+                    "Eso no es lo destacado como mecanismo bactericida acá."
+                ],
+                "gato": [
+                    "Fijate: eso no es lo que hace este fármaco.",
+                    "¡Ronroneo de aprobación! Mala lectura del código genético: lo que le da a la gentamicina su efecto bactericida.",
+                    "Dato curioso: eso es de la vancomicina.",
+                    "Miau, eso no es lo destacado como mecanismo bactericida aquí."
+                ]
+            }
         },
         {
             "numero": 796,
@@ -37090,7 +37390,27 @@
             "nota": null,
             "resposta_correta": "A",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La nefrotoxicidad se potencia con la combinación de un derivado del platino (como el cisplatino) y gentamicina, ambos nefrotóxicos — es la respuesta correcta.",
+                    "La hepatotoxicidad no es el riesgo destacado de esta combinación.",
+                    "La mucositis digestiva no es específicamente potenciada por esta combinación en particular.",
+                    "La fibrosis pulmonar es más característica de la bleomicina, no de esta combinación."
+                ],
+                "fantasma": [
+                    "¡Esta! Dos fármacos que dañan el riñón juntos, el riesgo se suma.",
+                    "Ese no es el riesgo destacado de esta combinación.",
+                    "Eso no está especialmente potenciado por esta combinación.",
+                    "Eso es más de la bleomicina, no de esta combinación."
+                ],
+                "gato": [
+                    "¡Ronroneo de aprobación! Nefrotoxicidad sumada: platino + gentamicina, ambos dañan el riñón.",
+                    "Fijate: ese no es el riesgo destacado de esta combinación.",
+                    "Dato curioso: eso no está especialmente potenciado aquí.",
+                    "Miau, eso es más de la bleomicina."
+                ]
+            }
         },
         {
             "numero": 797,
@@ -37117,7 +37437,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La gentamicina no pertenece a los macrólidos.",
+                    "La gentamicina no pertenece a las cefalosporinas.",
+                    "La gentamicina pertenece al grupo de los aminoglucósidos — es la respuesta correcta.",
+                    "La gentamicina no pertenece a las tetraciclinas."
+                ],
+                "fantasma": [
+                    "No es de esa familia.",
+                    "No es de esa familia tampoco.",
+                    "¡Esta! Su familia real, la de los aminoglucósidos.",
+                    "No es de esa familia tampoco."
+                ],
+                "gato": [
+                    "Fijate: no es de esa familia.",
+                    "Dato curioso: no es de esa familia tampoco.",
+                    "¡Ronroneo de aprobación! Aminoglucósidos: la familia real de la gentamicina.",
+                    "Miau, no es de esa familia tampoco."
+                ]
+            }
         },
         {
             "numero": 798,
@@ -37144,7 +37484,27 @@
             "nota": null,
             "resposta_correta": "D",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "No es bacteriostática, es bactericida.",
+                    "No inhibe la peptidil transferasa, ese es el mecanismo del cloranfenicol.",
+                    "No se une a la subunidad 50S, se une a la 30S.",
+                    "La amikacina causa una mala lectura del código en la plantilla de ARNm, el mecanismo característico de los aminoglucósidos — es la respuesta correcta."
+                ],
+                "fantasma": [
+                    "Al revés, mata bacterias, no solo las frena.",
+                    "Eso es del cloranfenicol, no de esta droga.",
+                    "Se pega a la otra subunidad, la 30S, no esta.",
+                    "¡Esta! Hace que el ribosoma lea mal el mensaje."
+                ],
+                "gato": [
+                    "Fijate: al revés, mata bacterias, no solo las frena.",
+                    "Dato curioso: eso es del cloranfenicol.",
+                    "Miau, se pega a la 30S, no a esta.",
+                    "¡Ronroneo de aprobación! Mala lectura del ARNm: el mecanismo de la amikacina."
+                ]
+            }
         },
         {
             "numero": 799,
@@ -37171,7 +37531,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La ciprofloxacina, aunque predominantemente gram negativa, conserva algo de actividad gram positiva.",
+                    "La cefepima tiene amplio espectro incluyendo gram positivos y negativos, no exclusivamente gram negativos.",
+                    "La amikacina tiene espectro exclusivo de gram negativos aerobios, sin cobertura gram positiva ni anaeróbica — es la respuesta correcta.",
+                    "La piperacilina cubre gram positivos y gram negativos extendidos, no exclusivamente gram negativos."
+                ],
+                "fantasma": [
+                    "Esta cubre algo de positivos también, no es tan exclusiva.",
+                    "Esta cubre ambos tipos, no es tan exclusiva.",
+                    "¡Esta! Solo los negativos que respiran oxígeno, nada más.",
+                    "Esta también cubre positivos, no es tan exclusiva."
+                ],
+                "gato": [
+                    "Fijate: esta cubre algo de positivos también.",
+                    "Dato curioso: esta cubre ambos tipos, no es tan exclusiva.",
+                    "¡Ronroneo de aprobación! Solo gram negativos aerobios: la exclusividad de la amikacina.",
+                    "Miau, esta también cubre positivos."
+                ]
+            }
         },
         {
             "numero": 800,
@@ -37198,7 +37578,27 @@
             "nota": null,
             "resposta_correta": "C",
             "origem_seccion": "aminoglucosidos",
-            "feedback": ""
+            "feedback": "",
+            "explicacoes": {
+                "robo": [
+                    "La vancomicina tiene cierto efecto post-antibiótico, pero no se dosifica bajo esta lógica de monodosis clásica de los aminoglucósidos.",
+                    "La tetraciclina no es la destacada con este efecto en este banco.",
+                    "La amikacina presenta efecto post-antibiótico, la base de su estrategia de dosis diaria — es la respuesta correcta.",
+                    "El aztreonam no es el destacado con esta estrategia de dosificación en este banco."
+                ],
+                "fantasma": [
+                    "Esta tiene algo de ese efecto, pero no se dosifica así clásicamente.",
+                    "Esta no es la destacada por este efecto aquí.",
+                    "¡Esta! El efecto sigue un rato después de suspendido, la base de su dosis única diaria.",
+                    "Este no es el destacado con esta estrategia aquí."
+                ],
+                "gato": [
+                    "Fijate: esta tiene algo de ese efecto, pero no se dosifica así clásicamente.",
+                    "Dato curioso: esta no es la destacada por este efecto.",
+                    "¡Ronroneo de aprobación! Efecto post-antibiótico: la base de la monodosis diaria de amikacina.",
+                    "Miau, este no es el destacado con esta estrategia."
+                ]
+            }
         },
         {
             "numero": 801,

@@ -23448,7 +23448,27 @@
             "Hepatotoxicidade",
             "Nefrotoxicidade",
             "Mielotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A neurotoxicidade é um termo mais amplo; o efeito específico e classicamente destacado nesta lista é outro.",
+                "A hepatotoxicidade não é um efeito adverso característico dos aminoglicosídeos.",
+                "A nefrotoxicidade é um dos principais efeitos adversos dos aminoglicosídeos, junto com a ototoxicidade — é a resposta correta.",
+                "A mielotoxicidade não é um efeito adverso característico dos aminoglicosídeos."
+            ],
+            "fantasma": [
+                "Esse termo é mais amplo, o destacado nessa família é mais específico.",
+                "Esse não é um efeito característico dessa família.",
+                "Essa aí! Um dos dois pontos fracos clássicos desses fármacos.",
+                "Esse não é um efeito característico dessa família."
+            ],
+            "gato": [
+                "Fijate: esse termo é mais amplo que o destacado aqui.",
+                "Dado curioso: esse não é um efeito característico dessa família.",
+                "Ronronado de aprovação! Nefrotoxicidade: um dos dois efeitos adversos clássicos dos aminoglicosídeos.",
+                "Miau, esse não é um efeito característico dessa família."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir NÃO corresponde ao espectro dos aminoglicosídeos?",
@@ -23458,7 +23478,27 @@
             "Pseudomonas aeruginosa",
             "Mycobacterium tuberculose",
             "Clostridium difficile"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As enterobactérias SIM estão dentro do espectro dos aminoglicosídeos.",
+                "A Pseudomonas aeruginosa SIM está dentro do espectro de vários aminoglicosídeos.",
+                "O Mycobacterium tuberculosis SIM está coberto (pela estreptomicina, especificamente).",
+                "O Clostridium difficile é anaeróbio, e os aminoglicosídeos NÃO cobrem anaeróbios (por seu mecanismo de entrada oxigênio-dependente) — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa sim está no radar dessa família.",
+                "Essa também sim está no radar dessa família.",
+                "Essa sim está coberta, por um membro específico da família.",
+                "Essa aí! Sem oxigênio, essa família nem consegue entrar na célula."
+            ],
+            "gato": [
+                "Fijate: essa sim está no radar dessa família.",
+                "Dado curioso: essa também sim está no radar.",
+                "Miau, essa sim está coberta por um membro específico.",
+                "Ronronado de aprovação! Clostridium difficile (anaeróbio): o que escapa dos aminoglicosídeos."
+            ]
+        }
     },
     {
         "pergunta": "Qual das seguintes opções corresponde ao mecanismo de ação dos aminoglicosídeos?",
@@ -23468,7 +23508,27 @@
             "Entrada favorecida por cátions divalentes",
             "Renda favorecida pelo pH básico",
             "Ligação ao ribossomo 30S, inibindo o início e o alongamento da síntese protéica"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A entrada dos aminoglicosídeos SIM depende de energia (gradiente eletroquímico oxigênio-dependente), não é independente dela.",
+                "Não é favorecida por cátions divalentes; na verdade, esses podem competir/interferir com o transporte, não facilitá-lo.",
+                "Não é o pH básico que favorece sua entrada na célula bacteriana.",
+                "Se ligam ao ribossomo 30S, inibindo a iniciação e elongação da síntese proteica, o mecanismo característico — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, sim precisam de energia para entrar.",
+                "Ao contrário, esses íons mais interferem do que ajudam.",
+                "Isso não é o que favorece sua entrada.",
+                "Essa aí! Se grudam nessa subunidade e freiam o início e a continuação da fábrica de proteínas."
+            ],
+            "gato": [
+                "Fijate: ao contrário, sim precisam de energia para entrar.",
+                "Dado curioso: ao contrário, esses íons interferem, não ajudam.",
+                "Miau, isso não é o que favorece sua entrada.",
+                "Ronronado de aprovação! Ligação ao 30S bloqueando início e elongação: o mecanismo dos aminoglicosídeos."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual medicamento tem efeito pós-antibiótico:",
@@ -23478,7 +23538,27 @@
             "Tetraciclinas",
             "Ampicilina",
             "Aminoglicosídeos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A espectinomicina não é o fármaco destacado com esse efeito nesse contexto.",
+                "As tetraciclinas não são o fármaco destacado com esse efeito nesse contexto.",
+                "A ampicilina não é o fármaco destacado com esse efeito nesse contexto.",
+                "Os aminoglicosídeos apresentam um efeito pós-antibiótico significativo, base de sua estratégia de monodose diária — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não é o destacado por esse efeito aqui.",
+                "Essas não são as destacadas por esse efeito aqui.",
+                "Essa não é a destacada por esse efeito aqui.",
+                "Essa aí! O efeito continua um tempo depois de suspenso o fármaco, a base da sua monodose."
+            ],
+            "gato": [
+                "Fijate: esse não é o destacado por esse efeito.",
+                "Dado curioso: essas não são as destacadas por esse efeito.",
+                "Miau, essa não é a destacada por esse efeito.",
+                "Ronronado de aprovação! Efeito pós-antibiótico: a assinatura dos aminoglicosídeos."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o principal mecanismo de resistência bacteriana aos aminoglicosídeos?",
@@ -23488,7 +23568,27 @@
             "Modificação enzimática do antibiótico por acetilases, fosforilases ou adenilases",
             "Aumento da permeabilidade da membrana celular",
             "Destruição da droga por peroxidases bacterianas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A alteração do sítio ribossomal é um mecanismo real, mas secundário/menos comum (mais relevante para resistência específica à estreptomicina).",
+                "A modificação enzimática do antibiótico (por acetilases, fosforilases ou adenilases) é o mecanismo PRINCIPAL de resistência bacteriana a aminoglicosídeos — é a resposta correta.",
+                "O aumento da permeabilidade da membrana não geraria resistência; ao contrário, facilitaria a entrada do fármaco.",
+                "Não existe um mecanismo estabelecido de destruição do fármaco mediante peroxidases bacterianas."
+            ],
+            "fantasma": [
+                "Esse mecanismo existe, mas é menos frequente que o principal.",
+                "Essa aí! Enzimas bacterianas que modificam quimicamente o fármaco, o mecanismo mais comum de resistência.",
+                "Ao contrário, isso ajudaria o fármaco a entrar, não a resistir a ele.",
+                "Essa enzima nem sequer é um mecanismo real descrito."
+            ],
+            "gato": [
+                "Fijate: esse mecanismo existe, mas é menos frequente.",
+                "Ronronado de aprovação! Modificação enzimática: o mecanismo principal e mais comum de resistência a aminoglicosídeos.",
+                "Dado curioso: ao contrário, isso ajudaria o fármaco a entrar.",
+                "Miau, essa enzima nem sequer é um mecanismo real."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o efeito adverso mais característico associado ao uso prolongado de aminoglicosídeos?",
@@ -23498,7 +23598,27 @@
             "Nefrotoxicidade e ototoxicidade",
             "Fotossensibilidade",
             "Hepatotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A anemia aplástica não é o efeito adverso característico dos aminoglicosídeos; se associa mais ao cloranfenicol.",
+                "A nefrotoxicidade e a ototoxicidade são os efeitos adversos mais característicos do uso prolongado de aminoglicosídeos — é a resposta correta.",
+                "A fotossensibilidade não é característica dos aminoglicosídeos; é mais própria de tetraciclinas/quinolonas.",
+                "A hepatotoxicidade não é um efeito adverso característico dos aminoglicosídeos."
+            ],
+            "fantasma": [
+                "Isso é mais do cloranfenicol, não dessa família.",
+                "Essa aí! Rim e ouvido, o combo clássico com o uso prolongado.",
+                "Isso é mais de outras famílias, não dessa.",
+                "Isso não é o característico dessa família."
+            ],
+            "gato": [
+                "Fijate: isso é mais do cloranfenicol.",
+                "Ronronado de aprovação! Nefro e ototoxicidade: o combo clássico do uso prolongado de aminoglicosídeos.",
+                "Dado curioso: isso é mais de outras famílias.",
+                "Miau, isso não é o característico dessa família."
+            ]
+        }
     },
     {
         "pergunta": "Por que os aminoglicosídeos não são eficazes contra bactérias anaeróbicas?",
@@ -23508,7 +23628,27 @@
             "Porque o seu transporte para a célula bacteriana depende de um gradiente eletroquímico que não é gerado na ausência de oxigênio.",
             "Porque inibem a síntese de ácidos nucléicos, o que não ocorre em anaeróbios",
             "Porque as bactérias anaeróbicas produzem enzimas que inativam o antibiótico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As bombas de efluxo não são a razão relevante aqui; o problema é de entrada, não de saída do fármaco.",
+                "Seu transporte para o interior da célula depende de um gradiente eletroquímico oxigênio-dependente, ausente em anaeróbios — é a resposta correta.",
+                "Os aminoglicosídeos não inibem a síntese de ácidos nucleicos; seu alvo é a síntese proteica.",
+                "Não é essa a razão universal; o problema de fundo é a entrada oxigênio-dependente, não enzimas inativadoras específicas dos anaeróbios."
+            ],
+            "fantasma": [
+                "Isso não é o relevante, o problema é de entrada, não de saída.",
+                "Essa aí! Sem oxigênio, não se gera a energia que precisam para entrar.",
+                "Isso não é o que esses fármacos freiam.",
+                "Essa não é a razão de fundo aqui."
+            ],
+            "gato": [
+                "Fijate: isso não é o relevante, o problema é de entrada.",
+                "Ronronado de aprovação! Sem oxigênio, sem gradiente, sem entrada: a razão real da resistência intrínseca dos anaeróbios.",
+                "Dado curioso: isso não é o que esses fármacos freiam.",
+                "Miau, essa não é a razão de fundo aqui."
+            ]
+        }
     },
     {
         "pergunta": "Por que os aminoglicosídeos são frequentemente administrados em combinação com antibióticos betalactâmicos?",
@@ -23518,7 +23658,27 @@
             "Para prevenir efeitos adversos comuns dos aminoglicosídeos",
             "Porque os beta-lactâmicos alteram a parede celular bacteriana, facilitando a entrada de aminoglicosídeos",
             "Para reduzir o risco de nefrotoxicidade em tratamentos de longo prazo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não melhora a absorção gastrointestinal; os aminoglicosídeos nem se dão por essa via para efeito sistêmico.",
+                "Não é para prevenir efeitos adversos próprios; a razão é outra, relacionada ao acesso à célula bacteriana.",
+                "Os beta-lactâmicos alteram a parede bacteriana, facilitando a entrada dos aminoglicosídeos, a base dessa sinergia clássica — é a resposta correta.",
+                "Não é para reduzir a nefrotoxicidade; algumas combinações podem até aumentar riscos renais."
+            ],
+            "fantasma": [
+                "Isso não se aplica, nem se usam por boca para isso.",
+                "Não é por isso, a razão real é outra.",
+                "Essa aí! Um quebra a porta, o outro entra melhor graças a isso.",
+                "Não é para baixar esse risco, às vezes até o sobe."
+            ],
+            "gato": [
+                "Fijate: isso não se aplica, nem se usam por boca para isso.",
+                "Dado curioso: não é por isso, a razão real é outra.",
+                "Ronronado de aprovação! Beta-lactâmico quebra a parede, aminoglicosídeo entra melhor: a sinergia clássica.",
+                "Miau, não é para baixar esse risco."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o espectro característico da amicacina?",
@@ -23528,7 +23688,27 @@
             "Aeróbios Gram positivos e negativos",
             "Aeróbios Gram positivos e negativos e anaeróbios Gram positivos",
             "Gram negativo aeróbico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é esse o espectro característico da amicacina.",
+                "Não é tão amplo; seu espectro característico se limita aos gram-negativos.",
+                "Os aminoglicosídeos, incluindo a amicacina, NÃO cobrem anaeróbios, por seu mecanismo de entrada oxigênio-dependente.",
+                "Gram-negativos aeróbios é o espectro característico da amicacina — é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse não é o espectro característico dessa droga.",
+                "Não é tão amplo assim.",
+                "Não chega a essas bactérias sem oxigênio, falta a entrada que precisam.",
+                "Essa aí! Os negativos que respiram oxigênio, o terreno clássico dessa droga."
+            ],
+            "gato": [
+                "Fijate: esse não é o espectro característico dessa droga.",
+                "Dado curioso: não é tão amplo assim.",
+                "Miau, não chega a essas bactérias sem oxigênio.",
+                "Ronronado de aprovação! Gram-negativos aeróbios: o espectro característico da amicacina."
+            ]
+        }
     },
     {
         "pergunta": "A utilização da dose única diária de amicacina permite:",
@@ -23538,7 +23718,27 @@
             "Melhorar a tolerância gastrointestinal",
             "Administração oral em tratamentos crônicos",
             "Menos hepatotoxicidade"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A monodose diária de amicacina permite menor toxicidade renal e auditiva, uma vantagem estabelecida — é a resposta correta.",
+                "Não melhora a tolerância gastrointestinal; não é relevante para um fármaco que nem se dá por boca em tratamento sistêmico.",
+                "Não permite administração oral em tratamentos crônicos; a amicacina se administra de forma parenteral.",
+                "Não é a hepatotoxicidade o relevante aqui; essa droga não tem essa toxicidade característica."
+            ],
+            "fantasma": [
+                "Essa aí! Uma dose única grande por dia cuida mais do rim e do ouvido.",
+                "Isso não é relevante para um fármaco que não se toma por boca.",
+                "Não se toma por boca para isso, continua parenteral.",
+                "Isso não é o que preocupa com essa droga."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Menor toxicidade renal e auditiva: a vantagem da monodose de amicacina.",
+                "Fijate: isso não é relevante para um fármaco que não se toma por boca.",
+                "Dado curioso: não se toma por boca para isso.",
+                "Miau, isso não é o que preocupa com essa droga."
+            ]
+        }
     },
     {
         "pergunta": "Tobramicina:",
@@ -23548,7 +23748,27 @@
             "Inibe a peptidil transferase",
             "É bacteriostático",
             "Liga-se à subunidade ribossômica 50S"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A tobramicina causa uma leitura errada do código na fita de RNAm, o mecanismo característico dos aminoglicosídeos — é a resposta correta.",
+                "Não inibe a peptidil transferase, esse é o mecanismo do cloranfenicol.",
+                "Não é bacteriostática, é bactericida.",
+                "Não se liga à subunidade 50S, se liga à 30S."
+            ],
+            "fantasma": [
+                "Essa aí! Faz o ribossomo ler errado a mensagem.",
+                "Isso é do cloranfenicol, não dessa droga.",
+                "Ao contrário, mata bactérias, não só as freia.",
+                "Se liga à outra subunidade, a 30S, não essa."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Leitura errada do RNAm: o mecanismo da tobramicina.",
+                "Fijate: isso é do cloranfenicol.",
+                "Dado curioso: ao contrário, mata bactérias, não só as freia.",
+                "Miau, se liga à 30S, não a essa."
+            ]
+        }
     },
     {
         "pergunta": "Gentamicina:",
@@ -23558,7 +23778,27 @@
             "Liga-se à subunidade ribossômica 50S",
             "Causa leitura incorreta do código no modelo de mRNA",
             "É bacteriostático"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não inibe a peptidil transferase, esse é o mecanismo do cloranfenicol.",
+                "Não se liga à subunidade 50S, se liga à 30S.",
+                "A gentamicina causa uma leitura errada do código na fita de RNAm, o mecanismo característico dos aminoglicosídeos — é a resposta correta.",
+                "Não é bacteriostática, é bactericida."
+            ],
+            "fantasma": [
+                "Isso é do cloranfenicol, não dessa droga.",
+                "Se liga à outra subunidade, a 30S, não essa.",
+                "Essa aí! Faz o ribossomo ler errado a mensagem.",
+                "Ao contrário, mata bactérias, não só as freia."
+            ],
+            "gato": [
+                "Fijate: isso é do cloranfenicol.",
+                "Dado curioso: se liga à 30S, não a essa.",
+                "Ronronado de aprovação! Leitura errada do RNAm: o mecanismo da gentamicina.",
+                "Miau, ao contrário, mata bactérias, não só as freia."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o espectro típico da gentamicina?",
@@ -23568,7 +23808,27 @@
             "Gram positivo aeróbico",
             "Gram positivo e micobactérias",
             "Gram negativo aeróbico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Os aminoglicosídeos, incluindo a gentamicina, NÃO cobrem anaeróbios.",
+                "Não é esse o espectro típico da gentamicina.",
+                "Cobrir micobactérias é mais próprio da estreptomicina, não o espectro típico geral da gentamicina.",
+                "Gram-negativos aeróbios é o espectro típico da gentamicina — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não chega aos que não respiram oxigênio, nem essa droga.",
+                "Esse não é o forte típico dessa droga.",
+                "Isso é mais da sua prima estreptomicina.",
+                "Essa aí! Os negativos que respiram oxigênio, o terreno clássico dessa droga."
+            ],
+            "gato": [
+                "Fijate: não chega aos que não respiram oxigênio.",
+                "Dado curioso: esse não é o forte típico dessa droga.",
+                "Miau, isso é mais da sua prima estreptomicina.",
+                "Ronronado de aprovação! Gram-negativos aeróbios: o espectro típico da gentamicina."
+            ]
+        }
     },
     {
         "pergunta": "Uma sonda vesical com cateter de Foley foi realizada em uma gestante no hospital. O paciente desenvolveu infecção do trato urinário por Pseudomonas aeruginosa e foi tratado com gentamicina. Qual dos seguintes efeitos adversos do tratamento com gentamicina constituiu um risco para o feto?",
@@ -23578,7 +23838,27 @@
             "perda auditiva",
             "Teratogênese",
             "Cegueira"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "As deformidades ósseas não são o risco fetal estabelecido da gentamicina.",
+                "A perda auditiva é o risco fetal estabelecido da gentamicina, já que atravessa a placenta e pode causar ototoxicidade no feto — é a resposta correta.",
+                "A teratogênese, em termos tão gerais, não descreve com precisão o risco específico e bem estabelecido desse fármaco.",
+                "A cegueira não é o risco fetal estabelecido da gentamicina."
+            ],
+            "fantasma": [
+                "Esse não é o risco estabelecido para o bebê com esse fármaco.",
+                "Essa aí! Atravessa a placenta e pode prejudicar o ouvido do bebê em formação.",
+                "Esse termo tão geral não descreve o risco preciso desse fármaco.",
+                "Esse não é o risco estabelecido para o bebê com esse fármaco."
+            ],
+            "gato": [
+                "Fijate: esse não é o risco estabelecido para o bebê.",
+                "Ronronado de aprovação! Perda auditiva fetal: o risco clássico da gentamicina na gravidez.",
+                "Dado curioso: esse termo tão geral não descreve o risco preciso.",
+                "Miau, esse não é o risco estabelecido para o bebê."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes efeitos da gentamicina gera seu efeito bactericida?",
@@ -23588,7 +23868,27 @@
             "Leitura errada do código genético",
             "Inibição da externalização de nucleotídeos de Park",
             "Inibição da translocação no nível da translocação"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A formação de poros na parede não é o mecanismo da gentamicina; isso é mais próprio de outros antibióticos.",
+                "A leitura errônea do código genético é o que gera o efeito bactericida da gentamicina, produzindo proteínas anômalas tóxicas para a bactéria — é a resposta correta.",
+                "A inibição da exteriorização do nucleotídeo de Park é o mecanismo da vancomicina, não da gentamicina.",
+                "Não é essa a descrição do mecanismo bactericida classicamente estabelecido para a gentamicina neste banco."
+            ],
+            "fantasma": [
+                "Isso não é o que esse fármaco faz, é de outra família.",
+                "Essa aí! Proteínas defeituosas por leitura errada, isso é o que mata a bactéria.",
+                "Isso é da vancomicina, não desse fármaco.",
+                "Isso não é o destacado como mecanismo bactericida aqui."
+            ],
+            "gato": [
+                "Fijate: isso não é o que esse fármaco faz.",
+                "Ronronado de aprovação! Leitura errada do código genético: o que dá à gentamicina seu efeito bactericida.",
+                "Dado curioso: isso é da vancomicina.",
+                "Miau, isso não é o destacado como mecanismo bactericida aqui."
+            ]
+        }
     },
     {
         "pergunta": "Paciente com câncer em tratamento com derivado de platina e gentamicina, que efeito adverso pode ocorrer?",
@@ -23598,7 +23898,27 @@
             "Hepatotoxicidade",
             "Mucosite digestiva",
             "Fibrose pulmonar"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A nefrotoxicidade se potencializa com a combinação de um derivado da platina (como o cisplatino) e gentamicina, ambos nefrotóxicos — é a resposta correta.",
+                "A hepatotoxicidade não é o risco destacado dessa combinação.",
+                "A mucosite digestiva não é especificamente potencializada por essa combinação em particular.",
+                "A fibrose pulmonar é mais característica da bleomicina, não dessa combinação."
+            ],
+            "fantasma": [
+                "Essa aí! Dois fármacos que prejudicam o rim juntos, o risco se soma.",
+                "Esse não é o risco destacado dessa combinação.",
+                "Isso não está especialmente potencializado por essa combinação.",
+                "Isso é mais da bleomicina, não dessa combinação."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Nefrotoxicidade somada: platina + gentamicina, ambos prejudicam o rim.",
+                "Fijate: esse não é o risco destacado dessa combinação.",
+                "Dado curioso: isso não está especialmente potencializado aqui.",
+                "Miau, isso é mais da bleomicina."
+            ]
+        }
     },
     {
         "pergunta": "A que grupo de medicamentos pertence a gentamicina?",
@@ -23608,7 +23928,27 @@
             "Cefalosporinas",
             "Aminoglicosídeos",
             "Tetraciclinas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A gentamicina não pertence aos macrolídeos.",
+                "A gentamicina não pertence às cefalosporinas.",
+                "A gentamicina pertence ao grupo dos aminoglicosídeos — é a resposta correta.",
+                "A gentamicina não pertence às tetraciclinas."
+            ],
+            "fantasma": [
+                "Não é dessa família.",
+                "Não é dessa família também.",
+                "Essa aí! Sua família real, a dos aminoglicosídeos.",
+                "Não é dessa família também."
+            ],
+            "gato": [
+                "Fijate: não é dessa família.",
+                "Dado curioso: não é dessa família também.",
+                "Ronronado de aprovação! Aminoglicosídeos: a família real da gentamicina.",
+                "Miau, não é dessa família também."
+            ]
+        }
     },
     {
         "pergunta": "Amicacina:",
@@ -23618,7 +23958,27 @@
             "Inibe a peptidil transferase",
             "Liga-se à subunidade ribossômica 50S",
             "Causa leitura incorreta do código no modelo de mRNA"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "Não é bacteriostática, é bactericida.",
+                "Não inibe a peptidil transferase, esse é o mecanismo do cloranfenicol.",
+                "Não se liga à subunidade 50S, se liga à 30S.",
+                "A amicacina causa uma leitura errada do código na fita de RNAm, o mecanismo característico dos aminoglicosídeos — é a resposta correta."
+            ],
+            "fantasma": [
+                "Ao contrário, mata bactérias, não só as freia.",
+                "Isso é do cloranfenicol, não dessa droga.",
+                "Se liga à outra subunidade, a 30S, não essa.",
+                "Essa aí! Faz o ribossomo ler errado a mensagem."
+            ],
+            "gato": [
+                "Fijate: ao contrário, mata bactérias, não só as freia.",
+                "Dado curioso: isso é do cloranfenicol.",
+                "Miau, se liga à 30S, não a essa.",
+                "Ronronado de aprovação! Leitura errada do RNAm: o mecanismo da amicacina."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes antibacterianos possui apenas aeróbios Gram negativos dentro de seu espectro característico?",
@@ -23628,7 +23988,27 @@
             "Cefepima",
             "Amicacina",
             "Piperacilina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A ciprofloxacina, embora predominantemente gram-negativa, mantém alguma atividade gram-positiva.",
+                "A cefepima tem amplo espectro incluindo gram-positivos e negativos, não exclusivamente gram-negativos.",
+                "A amicacina tem espectro exclusivo de gram-negativos aeróbios, sem cobertura gram-positiva nem anaeróbica — é a resposta correta.",
+                "A piperacilina cobre gram-positivos e gram-negativos estendidos, não exclusivamente gram-negativos."
+            ],
+            "fantasma": [
+                "Essa cobre algo de positivos também, não é tão exclusiva.",
+                "Essa cobre ambos os tipos, não é tão exclusiva.",
+                "Essa aí! Só os negativos que respiram oxigênio, nada mais.",
+                "Essa também cobre positivos, não é tão exclusiva."
+            ],
+            "gato": [
+                "Fijate: essa cobre algo de positivos também.",
+                "Dado curioso: essa cobre ambos os tipos, não é tão exclusiva.",
+                "Ronronado de aprovação! Só gram-negativos aeróbios: a exclusividade da amicacina.",
+                "Miau, essa também cobre positivos."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes antibióticos tem um efeito pós-antibiótico que permite uma dose diária?",
@@ -23638,7 +24018,27 @@
             "Tetraciclina",
             "Amicacina",
             "Aztreonam"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A vancomicina tem certo efeito pós-antibiótico, mas não se dosa sob essa lógica de monodose clássica dos aminoglicosídeos.",
+                "A tetraciclina não é a destacada com esse efeito neste banco.",
+                "A amicacina apresenta efeito pós-antibiótico, a base de sua estratégia de dose diária — é a resposta correta.",
+                "O aztreonam não é o destacado com essa estratégia de dosagem neste banco."
+            ],
+            "fantasma": [
+                "Essa tem algo desse efeito, mas não se dosa assim classicamente.",
+                "Essa não é a destacada por esse efeito aqui.",
+                "Essa aí! O efeito continua um tempo depois de suspenso, a base da sua dose única diária.",
+                "Esse não é o destacado com essa estratégia aqui."
+            ],
+            "gato": [
+                "Fijate: essa tem algo desse efeito, mas não se dosa assim classicamente.",
+                "Dado curioso: essa não é a destacada por esse efeito.",
+                "Ronronado de aprovação! Efeito pós-antibiótico: a base da monodose diária de amicacina.",
+                "Miau, esse não é o destacado com essa estratégia."
+            ]
+        }
     },
     {
         "pergunta": "Tetraciclinas?",
