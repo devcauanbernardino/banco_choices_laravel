@@ -58305,7 +58305,27 @@
             "Mosaprida, devido à sua ação procinética dada pelo seu agonismo dos receptores 5-HT3 no trato gastrointestinal",
             "Metoclopramida, devido à sua ação procinética e antiemética devido ao antagonismo dos receptores D2\/agonismo 5-HT4 no trato gastrointestinal e antagonismo dos receptores 5-HT3\/D2 na zona quimiorreceptora de gatilho, respectivamente.",
             "Eritromicina, devido à sua ação pró-cinética dada pelo agonismo dos receptores 5-HT4 na zona de gatilho quimiorreceptora"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A domperidona não age via antagonismo 5HT4 no trato GI; seu mecanismo real é antagonismo D2 tanto perifericamente quanto na zona gatilho (com mínima passagem central).",
+                "B) A mosaprida age via agonismo 5HT4 (não 5HT3) para seu efeito procinético; a descrição dessa opção está incorreta.",
+                "C) A metoclopramida, pelo seu duplo mecanismo (antagonismo D2 + agonismo 5HT4 no trato GI para o efeito procinético; antagonismo 5HT3 + D2 na zona gatilho para o efeito antiemético), é a opção mais adequada e corretamente descrita para a gastroparesia diabética — é a resposta correta.",
+                "D) A eritromicina age como procinética via agonismo de receptores de motilina, não via 5HT4 na zona gatilho; a descrição dessa opção está incorreta."
+            ],
+            "fantasma": [
+                "Essa droga não funciona assim; seu mecanismo real é outro.",
+                "Essa droga usa outro receptor diferente para se mover, não esse.",
+                "Essa aí! O combo completo e corretamente descrito para esse quadro de estômago lento.",
+                "Essa droga usa outro receptor diferente, não esse, para se mover."
+            ],
+            "gato": [
+                "Miau, essa droga não funciona assim.",
+                "Fijate: essa droga usa outro receptor para se mover.",
+                "Ronronado de aprovação! O combo completo, a melhor descrição para esse quadro.",
+                "Dado curioso: essa droga usa outro receptor, não esse."
+            ]
+        }
     },
     {
         "pergunta": "NÃO atravessa a BBB, por isso é seguro para uso em vômitos causados ​​pelo uso de levodopa.",
@@ -58315,7 +58335,27 @@
             "Apresenta alguns efeitos adversos como extrapiramidalismo e hiperprolactinemia devido ao bloqueio dos receptores D2.",
             "nan",
             "nan"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Esse texto corresponde, na fonte original, à descrição de um fármaco (provavelmente domperidona, dado o enunciado sobre \"não atravessa a BBB\" deslocado para a pergunta) que combina bloqueio D2 com outros efeitos serotoninérgicos; dado com formatação deslocada na fonte, apresentado aqui de forma orientativa.",
+                "B) Efeitos adversos como extrapiramidalismo e hiperprolactinemia por bloqueio D2 são reais e bem documentados em fármacos com esse mecanismo (como metoclopramida, e em menor grau domperidona a nível hipofisário) — é a resposta correta segundo a fonte.",
+                "C) Essa opção aparece como dado faltante\/corrompido na fonte original (\"nan\"), sem conteúdo avaliável.",
+                "D) Essa opção aparece como dado faltante\/corrompido na fonte original (\"nan\"), sem conteúdo avaliável."
+            ],
+            "fantasma": [
+                "Esse texto está deslocado na fonte original, descreve um mecanismo misto.",
+                "Essa aí! Movimentos estranhos e um hormônio alto, por bloquear esse receptor — a marcada na fonte.",
+                "Esse dado faltou na fonte original, não dá para avaliar.",
+                "Esse dado faltou na fonte original, não dá para avaliar."
+            ],
+            "gato": [
+                "Esse texto está deslocado na fonte, descreve um mecanismo misto.",
+                "Movimentos estranhos e um hormônio alto, a resposta marcada na fonte.",
+                "Dado curioso: faltou esse dado na fonte original.",
+                "Dado curioso: faltou esse dado na fonte original."
+            ]
+        }
     },
     {
         "pergunta": "Como devo proceder se receber um paciente em tratamento com metoclopramida que apresenta tremor e galactorreia? E) Substituir a metoclopramida por outro antiemético dopaminérgico",
@@ -58325,7 +58365,27 @@
             "Aumentar a dose de metoclopramida para melhorar os sintomas",
             "C) Continuar a medicação e adicionar bromocriptina cronicamente",
             "D) Indicar propranolol para tremor e manter metoclopramida"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Diante de tremor e galactorreia (sinais de bloqueio D2\/hiperprolactinemia) pela metoclopramida, o correto é suspender o tratamento, já que continuar expõe o paciente a mais efeitos adversos — é a resposta correta.",
+                "B) Aumentar a dose pioraria os sintomas de bloqueio dopaminérgico, não os melhoraria.",
+                "C) Continuar a medicação e adicionar bromocriptina cronicamente não é o manejo correto; o indicado é suspender a causa, não tratar os sintomas mantendo o fármaco causador.",
+                "D) Manter a metoclopramida enquanto se trata o tremor com propranolol não aborda a causa real (o bloqueio D2 contínuo)."
+            ],
+            "fantasma": [
+                "Essa aí! Parar a droga que causa o problema, a conduta correta.",
+                "Subir a dose pioraria tudo, não melhoraria nada.",
+                "Continuar com a droga e remendar com outra não é o correto.",
+                "Continuar com a droga causadora enquanto trata o sintoma não resolve o problema real."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Suspender a causa, a conduta correta diante disso.",
+                "Miau, subir a dose pioraria tudo.",
+                "Fijate: continuar com a droga e remendar não é o correto.",
+                "Dado curioso: continuar com a causa não resolve nada de raiz."
+            ]
+        }
     },
     {
         "pergunta": "Em qual das seguintes situações você usaria a metoclopramida como tratamento antiemético?",
@@ -58335,7 +58395,27 @@
             "Paciente de 28 anos, no primeiro trimestre de gestação, que apresenta hiperêmese gravídica, com 10 a 15 vômitos diários e desidratação moderada ao exame físico.",
             "Paciente de 44 anos, que apresentou vômitos nas últimas 24 horas",
             "Paciente de 66 anos que vomitou três vezes por intoxicação alimentar e tem histórico de insuficiência renal crônica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Uma criança de 4 anos com sintomas leves de diarreia\/vômitos não justifica o uso de metoclopramida, que tem maior risco de efeitos extrapiramidais na infância.",
+                "B) A hiperêmese gravídica no primeiro trimestre, com desidratação moderada, é uma indicação clássica e segura da metoclopramida na gravidez — é a resposta correta.",
+                "C) Um episódio inespecífico de vômitos num adulto de 44 anos não representa um quadro tão claramente indicado para esse fármaco específico.",
+                "D) Um idoso com insuficiência renal crônica tem maior risco de efeitos extrapiramidais, por isso não seria a primeira escolha ideal nesse contexto."
+            ],
+            "fantasma": [
+                "Essa criança não precisa de algo tão forte para sintomas leves.",
+                "Essa aí! Gravidez com vômitos severos, a indicação clássica e segura dessa droga.",
+                "Esse quadro é muito inespecífico para justificar essa droga em particular.",
+                "Esse paciente idoso com o rim danificado tem mais risco com essa droga."
+            ],
+            "gato": [
+                "Miau, essa criança não precisa de algo tão forte.",
+                "Ronronado de aprovação! A gravidez com vômitos severos, a indicação de manual.",
+                "Fijate: esse quadro é muito inespecífico.",
+                "Dado curioso: esse paciente idoso tem mais risco com essa droga."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à farmacodinâmica da metoclopramida:",
@@ -58345,7 +58425,27 @@
             "Exerce seu efeito através do antagonismo 5HT-4 e do agonismo D2.",
             "Exerce seu efeito através do antagonismo D2 e ​​do agonismo 5HT-4",
             "Exerce seu efeito através do antagonismo M3 e do antagonismo D2."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A metoclopramida não exerce seu efeito apenas por antagonismo 5HT3; seu mecanismo procinético principal é diferente.",
+                "B) A metoclopramida não é agonista D2; ao contrário, é antagonista D2, e não antagoniza 5HT4, mas o estimula (agonismo).",
+                "C) A metoclopramida exerce seu efeito por antagonismo D2 e agonismo 5HT4, seu mecanismo procinético característico — é a resposta correta.",
+                "D) A metoclopramida não age antagonizando receptores M3 como mecanismo principal."
+            ],
+            "fantasma": [
+                "Não é só esse mecanismo dessa droga.",
+                "É ao contrário nos dois casos: bloqueia um e estimula o outro.",
+                "Essa aí! Bloqueia um e estimula o outro, o combo real dessa droga.",
+                "Não é esse receptor que essa droga bloqueia principalmente."
+            ],
+            "gato": [
+                "Miau, não é só esse mecanismo.",
+                "Fijate: é ao contrário nos dois casos.",
+                "Ronronado de aprovação! Bloqueia um, estimula o outro, o mecanismo real.",
+                "Dado curioso: não é esse receptor o principal aqui."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir se liga aos receptores de serotonina?",
@@ -58355,7 +58455,27 @@
             "Cisaprida",
             "Ondansetrona",
             "Estão todos corretos"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A metoclopramida SE LIGA SIM a receptores de serotonina (5HT3\/5HT4), entre outros mecanismos.",
+                "B) A cisaprida SE LIGA SIM a receptores de serotonina (agonista 5HT4).",
+                "C) A ondansetrona SE LIGA SIM a receptores de serotonina (antagonista 5HT3).",
+                "D) As três opções anteriores se ligam efetivamente a receptores de serotonina, sendo todas corretas — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa também se gruda nesse tipo de receptor.",
+                "Essa também se gruda nesse tipo de receptor.",
+                "Essa também se gruda nesse tipo de receptor.",
+                "Essa aí! As três tocam a serotonina de alguma forma, todas corretas."
+            ],
+            "gato": [
+                "Miau, essa também toca esse receptor.",
+                "Fijate: essa também toca.",
+                "Dado curioso: essa também toca.",
+                "Ronronado de aprovação! As três tocam a serotonina, combo completo correto."
+            ]
+        }
     },
     {
         "pergunta": "A trimebutina tem utilidade terapêutica dada a sua ação farmacológica?",
@@ -58365,7 +58485,27 @@
             "Antiemético",
             "Antiespasmódico não colinérgico",
             "Antiespasmódico bloqueador muscarínico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A trimebutina não age como antiácido nem bloqueadora H2.",
+                "B) A trimebutina não é usada principalmente como antiemética.",
+                "C) A trimebutina é um antiespasmódico NÃO colinérgico (age via receptores opioides\/encefalinérgicos), diferente de outros antiespasmódicos anticolinérgicos — é a resposta correta.",
+                "D) A trimebutina não bloqueia receptores muscarínicos; esse é o mecanismo de outros antiespasmódicos como a hioscina."
+            ],
+            "fantasma": [
+                "Não é um antiácido essa droga.",
+                "Não é essa sua função principal.",
+                "Essa aí! Acalma o espasmo sem usar o caminho colinérgico clássico.",
+                "Não bloqueia esse receptor essa droga; outras sim o fazem."
+            ],
+            "gato": [
+                "Miau, não é um antiácido essa droga.",
+                "Fijate: não é essa sua função.",
+                "Ronronado de aprovação! Acalma o espasmo por outro caminho, não o colinérgico.",
+                "Dado curioso: não bloqueia esse receptor; outra droga sim."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos seria usado para tratar a cólica associada à síndrome do intestino irritável (SII) em uma mulher de 53 anos?",
@@ -58375,7 +58515,27 @@
             "Trimebutina",
             "Cinitaprida",
             "Famotidina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) O bismuto não é um antiespasmódico útil para a dor de cólica do SII.",
+                "B) A trimebutina, antiespasmódico não colinérgico, é adequada para a dor de cólica do SII — é a resposta correta entre essas opções.",
+                "C) O cinitaprida é um procinético (agonista 5HT4), não um antiespasmódico para a dor de cólica.",
+                "D) A famotidina é um antagonista H2, sem utilidade para a dor de cólica do SII."
+            ],
+            "fantasma": [
+                "Essa não acalma esse tipo de dor.",
+                "Essa aí! Trimebutina, acalma o espasmo do intestino irritado.",
+                "Esse move o intestino, não acalma a dor dessa forma.",
+                "Essa é para o ácido do estômago, não para isso."
+            ],
+            "gato": [
+                "Miau, essa não acalma essa dor.",
+                "Ronronado de aprovação! Trimebutina, a calmante do intestino irritado.",
+                "Fijate: esse move o intestino, não acalma a dor.",
+                "Dado curioso: essa é para o ácido, não para isso."
+            ]
+        }
     },
     {
         "pergunta": "Num paciente tratado com trimebutina, qual dos seguintes efeitos adversos você espera encontrar com mais frequência?",
@@ -58385,7 +58545,27 @@
             "Hipercalemia",
             "Constipação",
             "Insônia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) O prolongamento do QT não é o efeito adverso mais frequente da trimebutina.",
+                "B) A hipercalemia não é um efeito adverso característico da trimebutina.",
+                "C) A constipação é o efeito adverso mais frequente esperado com a trimebutina, coerente com sua ação sobre receptores opioides — é a resposta correta.",
+                "D) A insônia não é um efeito adverso característico da trimebutina."
+            ],
+            "fantasma": [
+                "Isso não é o mais frequente com essa droga.",
+                "Isso não é típico dessa droga.",
+                "Essa aí! O intestino trava, coerente com como age essa droga.",
+                "Isso não é típico dessa droga."
+            ],
+            "gato": [
+                "Miau, isso não é o mais frequente.",
+                "Fijate: isso não é típico aqui.",
+                "Ronronado de aprovação! Constipação, coerente com o mecanismo dessa droga.",
+                "Dado curioso: isso não é típico dessa droga."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos seria usado para tratar a cólica associada à síndrome do intestino irritável (SII) em uma mulher de 53 anos?",
@@ -58395,7 +58575,27 @@
             "Famotidina",
             "Mosaprida",
             "Domperidona"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) O N-butilbrometo de hioscina, um antiespasmódico anticolinérgico, é adequado para a dor de cólica do SII — é a resposta correta entre essas opções.",
+                "B) A famotidina é um antagonista H2, sem utilidade para a dor de cólica do SII.",
+                "C) A mosaprida é um procinético (agonista 5HT4), não um antiespasmódico para a dor de cólica.",
+                "D) A domperidona é um antiemético\/procinético, não um antiespasmódico para a dor de cólica."
+            ],
+            "fantasma": [
+                "Essa aí! Bloqueia o receptor muscarínico, acalmando o espasmo intestinal.",
+                "Essa é para o ácido do estômago, não para isso.",
+                "Essa move o intestino, não acalma a dor dessa forma.",
+                "Essa ajuda com náuseas\/movimento, não com a dor de cólica."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Bloqueio muscarínico, acalmando o espasmo.",
+                "Miau, essa é para o ácido, não para isso.",
+                "Fijate: essa move o intestino, não acalma a dor.",
+                "Dado curioso: essa é mais de náuseas\/movimento."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes medicamentos seria melhor para usar no tratamento da síndrome do intestino irritável (SII) com cólicas e diarreia?",
@@ -58405,7 +58605,27 @@
             "Mosaprida",
             "Ranitidina",
             "Butilbrometo de hioscina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A domperidona é procinética, o que poderia piorar a diarreia em vez de ajudar.",
+                "B) A mosaprida é procinética, o que poderia piorar a diarreia em vez de ajudar.",
+                "C) A ranitidina, um antagonista H2, não tem utilidade específica para a dor de cólica nem a diarreia do SII.",
+                "D) O butilbrometo de hioscina, antiespasmódico anticolinérgico, ajuda tanto com a dor de cólica quanto com o retardo do trânsito na diarreia do SII — é a resposta correta."
+            ],
+            "fantasma": [
+                "Essa move mais o intestino, pioraria a diarreia.",
+                "Essa também move mais o intestino, não ajuda aqui.",
+                "Essa é para o ácido, não serve para isso.",
+                "Essa aí! Acalma o espasmo e freia um pouco o trânsito, útil para a dor e a diarreia juntas."
+            ],
+            "gato": [
+                "Miau, essa move mais o intestino.",
+                "Fijate: essa também move mais, não ajuda aqui.",
+                "Dado curioso: essa é para o ácido, não para isso.",
+                "Ronronado de aprovação! Acalma o espasmo e freia o trânsito, o combo ideal aqui."
+            ]
+        }
     },
     {
         "pergunta": "Dos seguintes, qual é um agonista do receptor 5HT-4 usado como pró-cinético?",
@@ -58415,7 +58635,27 @@
             "Domperidona",
             "Ondansetrona",
             "Trimebutina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A prucaloprida é o agonista do receptor 5HT4 usado como procinético entre essas opções — é a resposta correta.",
+                "B) A domperidona age por antagonismo D2, não por agonismo 5HT4.",
+                "C) A ondansetrona é antagonista 5HT3, não agonista 5HT4.",
+                "D) A trimebutina age via receptores opioides, não por agonismo 5HT4."
+            ],
+            "fantasma": [
+                "Essa aí! Estimula esse receptor específico, a procinética de manual.",
+                "Essa bloqueia outro receptor diferente.",
+                "Essa bloqueia outro receptor de serotonina diferente.",
+                "Essa usa outro caminho completamente diferente."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Esse receptor estimulado, a procinética real.",
+                "Miau, essa bloqueia outro receptor.",
+                "Fijate: essa bloqueia outro receptor diferente.",
+                "Dado curioso: essa usa outro caminho completamente diferente."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes é usado como pró-cinético?",
@@ -58425,7 +58665,27 @@
             "Bisacodil",
             "Mosaprida",
             "Propinox"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A trimebutina é um antiespasmódico não colinérgico, não um procinético clássico.",
+                "B) O bisacodil é um laxante estimulante, não um procinético nesse sentido farmacológico específico.",
+                "C) A mosaprida, agonista 5HT4, é usada como procinética — é a resposta correta.",
+                "D) O propinox é um antiespasmódico anticolinérgico, não um procinético."
+            ],
+            "fantasma": [
+                "Essa acalma o espasmo, não move o intestino dessa forma.",
+                "Esse é laxante, não procinético nesse sentido.",
+                "Essa aí! Mosaprida, a procinética dessa lista.",
+                "Esse acalma o espasmo, não é procinético."
+            ],
+            "gato": [
+                "Miau, essa acalma o espasmo, não move assim.",
+                "Fijate: esse é laxante, não procinético.",
+                "Ronronado de aprovação! Mosaprida, a procinética real aqui.",
+                "Dado curioso: esse acalma, não move o intestino."
+            ]
+        }
     },
     {
         "pergunta": "Em relação à domperidona (marque a opção INCORRETA):",
@@ -58436,7 +58696,27 @@
             "NÃO atravessa a BBB, por isso é seguro para vômitos causados ​​pelo uso de levodopa.",
             "Em alguns casos, acatisias, discinesias e tremores podem ser observados nos pacientes que o tomam.",
             "Pode apresentar como efeito adverso a hiperprolactinemia, devido ao bloqueio ao nível hipofisário."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) É correto que a domperidona é um importante antiemético e um procinético fraco; essa afirmação é VERDADEIRA, por isso não é a opção a marcar.",
+                "B) É correto que não atravessa a BBB, sendo segura para vômitos por levodopa; essa afirmação é VERDADEIRA, por isso não é a opção a marcar.",
+                "C) Essa afirmação é FALSA: justamente porque a domperidona NÃO atravessa significativamente a BBB, ela não deveria produzir acatisias\/discinesias\/tremores centrais como a metoclopramida — por isso é a opção INCORRETA que deveria ser assinalada, é a resposta correta.",
+                "D) É correto que pode causar hiperprolactinemia por bloqueio D2 a nível hipofisário (fora da BBB estrita); essa afirmação é VERDADEIRA, por isso não é a opção a marcar."
+            ],
+            "fantasma": [
+                "Isso é certo, não marca.",
+                "Isso também é certo.",
+                "Essa aí! Como não cruza para o cérebro, não deveria dar esses movimentos estranhos — a mentira aqui.",
+                "Isso também é certo, a hipófise fica fora dessa barreira."
+            ],
+            "gato": [
+                "Miau, essa é certa.",
+                "Fijate: essa também está correta.",
+                "Ronronado de aprovação! Não deveria dar esses movimentos se não cruza para o cérebro, essa é a mentira.",
+                "Dado curioso: essa também é verdadeira, a hipófise é uma exceção."
+            ]
+        }
     },
     {
         "pergunta": "Um medicamento útil para o tratamento de úlceras gástricas, não é?",
@@ -58446,7 +58726,27 @@
             "Sucralfato",
             "Domperidona",
             "Bisacodil"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A cisaprida é uma procinética, não o tratamento característico para úlceras gástricas.",
+                "B) O sucralfato é um agente citoprotetor útil no tratamento de úlceras gástricas — é a resposta correta.",
+                "C) A domperidona é um antiemético\/procinético, não um tratamento para úlceras.",
+                "D) O bisacodil é um laxante, sem relação com o tratamento de úlceras."
+            ],
+            "fantasma": [
+                "Essa move o intestino, não trata a úlcera.",
+                "Essa aí! Sucralfato, protege a úlcera diretamente.",
+                "Essa é para náuseas, não para a úlcera.",
+                "Esse é laxante, não tem a ver com isso."
+            ],
+            "gato": [
+                "Miau, essa move o intestino, não trata a úlcera.",
+                "Ronronado de aprovação! Sucralfato, o protetor direto da úlcera.",
+                "Fijate: essa é para náuseas.",
+                "Dado curioso: esse é laxante, não tem a ver."
+            ]
+        }
     },
     {
         "pergunta": "Um efeito adverso característico dos agonistas 5-HT4 é?",
@@ -58456,7 +58756,27 @@
             "Nefrotoxicidade",
             "Hepatotoxicidade",
             "diarréia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A prisão de ventre não é o efeito adverso característico dos agonistas 5HT4; seria mais o oposto.",
+                "B) A nefrotoxicidade não é o efeito adverso característico dos agonistas 5HT4.",
+                "C) A hepatotoxicidade não é o efeito adverso característico dos agonistas 5HT4.",
+                "D) A diarreia é o efeito adverso característico dos agonistas 5HT4, consequência lógica do seu efeito procinético — é a resposta correta."
+            ],
+            "fantasma": [
+                "Seria mais o contrário com essas drogas.",
+                "Isso não é típico dessas drogas.",
+                "Isso não é típico dessas drogas.",
+                "Essa aí! Movimento intestinal demais, a consequência lógica."
+            ],
+            "gato": [
+                "Miau, seria mais o contrário.",
+                "Fijate: isso não é típico aqui.",
+                "Dado curioso: isso não é típico aqui.",
+                "Ronronado de aprovação! Movimento demais, a consequência lógica dessa classe."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos agonistas 5HT4:",
@@ -58466,7 +58786,27 @@
             "A cisaprida é um medicamento seguro e não apresenta efeitos adversos significativos.",
             "Não está associado ao aparecimento de arritmias e torsade de pointes",
             "Tegaserode, apesar de apresentar menos efeitos adversos cardiovasculares, deve ser usado com cautela"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Nem todos os agonistas 5HT4 são necessariamente antagonistas D2 como característica definidora da classe; essa não é uma generalização correta.",
+                "B) A cisaprida é, ao contrário, tristemente famosa pelo seu risco de prolongamento do QT e arritmias, não um fármaco sem efeitos adversos importantes.",
+                "C) Os agonistas 5HT4 como a cisaprida SIM se associaram a arritmias e torsade de pointes, um risco real e bem documentado.",
+                "D) O tegaserode, apesar de ter menos efeitos cardiovasculares que a cisaprida, deve ser usado com cautela pelos riscos cardiovasculares residuais documentados — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não é uma regra geral para toda essa classe de drogas.",
+                "É ao contrário, essa droga é famosa por dar problemas sérios de coração.",
+                "Sim se viu esse risco com essas drogas.",
+                "Essa aí! Menos risco que a outra, mas mesmo assim precisa de cuidado."
+            ],
+            "gato": [
+                "Miau, não é uma regra geral para toda a classe.",
+                "Fijate: é ao contrário, essa droga dá problemas sérios de coração.",
+                "Dado curioso: sim se viu esse risco.",
+                "Ronronado de aprovação! Menos risco, mas cuidado mesmo assim, a conclusão real."
+            ]
+        }
     },
     {
         "pergunta": "O agonismo 5HT4 gera exceto?",
@@ -58477,7 +58817,27 @@
             "borborigmo",
             "fezes moles",
             "Constipação"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A dor abdominal PODE SIM se associar ao aumento de motilidade por agonismo 5HT4; essa opção não é a buscada.",
+                "B) Os borborigmos (ruídos intestinais) PODEM SIM se associar ao aumento de motilidade por agonismo 5HT4; essa opção não é a buscada.",
+                "C) As fezes moles SÃO SIM consequência esperável do aumento de motilidade por agonismo 5HT4; essa opção não é a buscada.",
+                "D) A constipação NÃO é consequência do agonismo 5HT4 (que é procinético, não o contrário) — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso sim pode acontecer com mais movimento intestinal.",
+                "Isso também pode acontecer com mais movimento.",
+                "Isso também é esperável com mais movimento.",
+                "Essa aí! Isso é o contrário do que essa via faz, não encaixa."
+            ],
+            "gato": [
+                "Miau, isso sim pode acontecer aqui.",
+                "Fijate: isso também pode acontecer.",
+                "Dado curioso: isso também é esperável.",
+                "Ronronado de aprovação! O contrário do que essa via faz, a exceção real."
+            ]
+        }
     },
     {
         "pergunta": "Em relação aos medicamentos para o aparelho digestivo, marque a opção INCORRETA.",
@@ -58488,7 +58848,27 @@
             "A lactulose, além de ser um laxante osmótico, diminui a formação de NH3+ e aumenta sua utilização pelas bactérias intestinais.",
             "A loperamida é um laxante que estimula a mucosa do cólon.",
             "O sucralfato é um agente citoprotetor que cria uma barreira física nas úlceras, facilitando a cicatrização"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) É correto que a metoclopramida bloqueia D2, é agonista 5HT4 e bloqueia 5HT3, com ação antiemética; essa afirmação é VERDADEIRA, por isso não é a opção a marcar.",
+                "B) É correto que a lactulose, além de laxante osmótico, diminui a formação de NH3 e aumenta sua utilização bacteriana (uso na encefalopatia hepática); essa afirmação é VERDADEIRA, por isso não é a opção a marcar.",
+                "C) Essa afirmação é FALSA: a loperamida é um ANTIDIARREICO (agonista opioide mu), não um laxante estimulante — por isso é a opção INCORRETA que deveria ser assinalada, é a resposta correta.",
+                "D) É correto que o sucralfato é citoprotetor, formando uma barreira física nas úlceras; essa afirmação é VERDADEIRA, por isso não é a opção a marcar."
+            ],
+            "fantasma": [
+                "Isso é certo, não marca.",
+                "Isso também é certo, útil até para o fígado.",
+                "Essa aí! É ao contrário, essa droga freia a diarreia, não a causa — a mentira aqui.",
+                "Isso também é certo."
+            ],
+            "gato": [
+                "Miau, essa é certa.",
+                "Fijate: essa também está correta, até serve para o fígado.",
+                "Ronronado de aprovação! É ao contrário, essa freia a diarreia, essa é a mentira.",
+                "Dado curioso: essa também é verdadeira."
+            ]
+        }
     },
     {
         "pergunta": "Selecione qual medicamento antiemético não atravessa a BBB",
@@ -58498,7 +58878,27 @@
             "Metoclopramida",
             "Cisaprida",
             "Ondansetrona"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A domperidona não atravessa significativamente a barreira hematoencefálica, o que explica seu baixo risco de efeitos extrapiramidais — é a resposta correta.",
+                "B) A metoclopramida ATRAVESSA SIM a BBB, o que explica seu risco de efeitos extrapiramidais.",
+                "C) A cisaprida tem passagem central relevante, sem ser a opção que melhor evita a BBB nesse contexto.",
+                "D) A ondansetrona age também a nível central (zona gatilho) para seu efeito antiemético, cruzando a BBB."
+            ],
+            "fantasma": [
+                "Essa aí! Não chega ao cérebro, por isso é mais segura nesse sentido.",
+                "Essa sim chega ao cérebro, por isso dá esses movimentos estranhos.",
+                "Essa também chega bastante ao cérebro.",
+                "Essa também precisa chegar ao cérebro para funcionar."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Não cruza para o cérebro, a mais segura nesse sentido.",
+                "Miau, essa sim cruza para o cérebro.",
+                "Fijate: essa também cruza bastante.",
+                "Dado curioso: essa também precisa cruzar para agir."
+            ]
+        }
     },
     {
         "pergunta": "Indique qual dos seguintes é um efeito adverso periférico da trimebutina:",
