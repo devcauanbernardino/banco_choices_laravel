@@ -49288,7 +49288,27 @@
             "Alterne a medicação para Paroxetina",
             "Alterne a medicação para amitriptilina",
             "Alterne a medicação para fluoxetina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A imipramina, um tricíclico, não é a escolha lógica para alternar entre ISRS antes de suspender.",
+                "B) A paroxetina tem meia-vida curta, má escolha para servir de \"ponte\" antes de suspender.",
+                "C) A amitriptilina, um tricíclico, não é a escolha lógica para alternar entre ISRS antes de suspender.",
+                "D) A fluoxetina, por sua meia-vida longa (e metabólito ativo de meia-vida ainda maior), permite uma auto-redução gradual e minimiza o risco de síndrome de descontinuação — é a resposta correta."
+            ],
+            "fantasma": [
+                "Imipramina não faz sentido para essa troca.",
+                "Paroxetina é de vida curta, má escolha de ponte.",
+                "Amitriptilina também não faz sentido aqui.",
+                "Essa aí! Fluoxetina, a meia-vida longa que suaviza a saída."
+            ],
+            "gato": [
+                "Miau, essa não faz sentido para essa troca.",
+                "Fijate: paroxetina é de vida curta, má ideia.",
+                "Dado curioso: essa também não faz sentido aqui.",
+                "Ronronado de aprovação! Fluoxetina, a saída suave graças à sua vida longa."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes inibidores seletivos da recaptação da serotonina produz a menor inibição do CYP 2D6?",
@@ -49298,7 +49318,27 @@
             "Paroxetina",
             "Fluvoxamina",
             "Escitalopram"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A fluoxetina é, ao contrário, uma das que mais inibe o CYP2D6.",
+                "B) A paroxetina é, ao contrário, uma das que mais inibe o CYP2D6.",
+                "C) A fluvoxamina inibe fortemente outras enzimas (CYP1A2\/3A4), embora não seja a resposta buscada aqui sobre o CYP2D6 especificamente.",
+                "D) O escitalopram tem inibição mínima do CYP2D6, sendo uma das opções mais seguras em interações — é a resposta correta."
+            ],
+            "fantasma": [
+                "Fluoxetina é uma das que mais inibe essa enzima.",
+                "Paroxetina também é uma das que mais inibe.",
+                "Fluvoxamina se mete com outras enzimas, não é a resposta aqui.",
+                "Essa aí! Escitalopram, inibição mínima dessa enzima."
+            ],
+            "gato": [
+                "Miau, essa inibe bastante essa enzima.",
+                "Fijate: essa também inibe bastante.",
+                "Dado curioso: essa se mete com outras enzimas, não com essa.",
+                "Ronronado de aprovação! Escitalopram, quase não toca essa enzima."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes inibidores seletivos da recaptação da serotonina produz a maior inibição do CYP 2D6?",
@@ -49308,7 +49348,27 @@
             "Sertralina",
             "Fluoxetina",
             "Escitalopram"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) O citalopram tem inibição mínima do CYP2D6.",
+                "B) A sertralina tem efeito inibidor intermediário sobre o CYP2D6, menor que o da fluoxetina.",
+                "C) A fluoxetina é uma das que mais inibe o CYP2D6 entre os ISRS — é a resposta correta.",
+                "D) O escitalopram tem inibição mínima do CYP2D6."
+            ],
+            "fantasma": [
+                "Citalopram quase não toca essa enzima.",
+                "Sertralina toca um pouco, menos que a fluoxetina.",
+                "Essa aí! Fluoxetina, uma das que mais inibe essa enzima.",
+                "Escitalopram também não toca muito."
+            ],
+            "gato": [
+                "Miau, essa quase não toca essa enzima.",
+                "Fijate: essa toca um pouco, mas menos.",
+                "Ronronado de aprovação! Fluoxetina, a campeã em inibir essa enzima.",
+                "Dado curioso: essa também não toca muito."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes inibidores seletivos da recaptação da serotonina tem a meia-vida mais longa?",
@@ -49318,7 +49378,27 @@
             "Fluoxetina",
             "Fluvoxamina",
             "Citalopram"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A paroxetina tem, ao contrário, uma das meias-vidas mais curtas do grupo.",
+                "B) A fluoxetina tem a meia-vida mais longa entre os ISRS (mais seu metabólito ativo de meia-vida ainda maior) — é a resposta correta.",
+                "C) A fluvoxamina tem meia-vida curta, menor que a da fluoxetina.",
+                "D) O citalopram tem meia-vida intermediária-longa, menor que a da fluoxetina."
+            ],
+            "fantasma": [
+                "Paroxetina é, ao contrário, uma das mais curtas do grupo.",
+                "Essa aí! Fluoxetina, a campeã da meia-vida longa.",
+                "Fluvoxamina dura menos que a fluoxetina.",
+                "Citalopram também dura menos que a fluoxetina."
+            ],
+            "gato": [
+                "Miau, essa é uma das mais curtas do grupo.",
+                "Ronronado de aprovação! Fluoxetina, a mais longa de todas.",
+                "Fijate: essa dura menos que a fluoxetina.",
+                "Dado curioso: essa também dura menos."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes inibidores seletivos da recaptação da serotonina tem a meia-vida mais curta e, portanto, o maior risco de síndrome de abstinência quando o paciente esquece uma dose?",
@@ -49328,7 +49408,27 @@
             "Paroxetina",
             "Sertralina",
             "Escitalopram"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A fluoxetina tem, ao contrário, a meia-vida mais longa do grupo, com menor risco de abstinência.",
+                "B) A paroxetina tem a meia-vida mais curta entre os ISRS, o que a torna de maior risco de síndrome de abstinência — é a resposta correta.",
+                "C) A sertralina tem meia-vida intermediária, maior que a da paroxetina.",
+                "D) O escitalopram tem meia-vida intermediária-longa, maior que a da paroxetina."
+            ],
+            "fantasma": [
+                "Fluoxetina é, ao contrário, a de vida mais longa, menos risco de abstinência.",
+                "Essa aí! Paroxetina, a mais curta, maior risco de abstinência.",
+                "Sertralina dura mais que a paroxetina.",
+                "Escitalopram também dura mais que a paroxetina."
+            ],
+            "gato": [
+                "Miau, essa é a de vida mais longa, não a de maior risco.",
+                "Ronronado de aprovação! Paroxetina, a curta com mais risco de abstinência.",
+                "Fijate: essa dura mais que a paroxetina.",
+                "Dado curioso: essa também dura mais."
+            ]
+        }
     },
     {
         "pergunta": "Quando um paciente apresenta intoxicação por inibidor de recaptação de serotonina, é comum encontrar?",
@@ -49338,7 +49438,27 @@
             "Tremores",
             "Bradicardia",
             "Aumento das secreções mucosas"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A icterícia não é um achado típico da intoxicação por ISRS.",
+                "B) Os tremores são um achado típico da toxicidade serotoninérgica, junto com hiperreflexia e agitação — é a resposta correta.",
+                "C) A intoxicação serotoninérgica cursa com taquicardia, não com bradicardia.",
+                "D) O aumento de secreções mucosas não é um achado característico dessa intoxicação."
+            ],
+            "fantasma": [
+                "A pele amarela não é disso.",
+                "Essa aí! Os tremores, o achado clássico do excesso de serotonina.",
+                "É taquicardia, não bradicardia, com excesso de serotonina.",
+                "Isso não é o típico dessa intoxicação."
+            ],
+            "gato": [
+                "Miau, isso não é disso.",
+                "Ronronado de aprovação! Os tremores, a marca do excesso serotoninérgico.",
+                "Fijate: é taquicardia, não bradicardia.",
+                "Dado curioso: isso não é típico dessa intoxicação."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes efeitos adversos é induzido com alta frequência pelos inibidores da recaptação da serotonina?",
@@ -49348,7 +49468,27 @@
             "Rigidez",
             "Sedação",
             "Diarréia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A agranulocitose não é um efeito adverso característico dos ISRS (sim da clozapina, por exemplo).",
+                "B) A rigidez motora não é um efeito adverso característico dos ISRS.",
+                "C) A sedação não é o efeito adverso mais frequente dos ISRS como classe (varia conforme a droga).",
+                "D) A diarreia, junto com outros distúrbios gastrointestinais, é um dos efeitos adversos mais frequentes dos ISRS — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso não é dessa classe de droga.",
+                "A rigidez não é o típico desses.",
+                "A sedação não é o efeito estrela dessa classe.",
+                "Essa aí! A diarreia, das mais frequentes com essas drogas."
+            ],
+            "gato": [
+                "Miau, isso não é dessa classe.",
+                "Fijate: a rigidez não é o típico aqui.",
+                "Dado curioso: a sedação não é o forte dessa classe.",
+                "Ronronado de aprovação! Diarreia, o efeito digestivo mais comum."
+            ]
+        }
     },
     {
         "pergunta": "Os inibidores seletivos da recaptação da serotonina foram associados ao desenvolvimento de hiponatremia?",
@@ -49358,7 +49498,27 @@
             "Aumento excessivo da transpiração",
             "Aumento da expressão de aquaporinas",
             "Síndrome de secreção inapropriada de hormônio antidiurético"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Não há um efeito direto bem estabelecido sobre o néfron como causa dessa hiponatremia.",
+                "B) O aumento excessivo de transpiração não é o mecanismo aceito dessa hiponatremia.",
+                "C) Não é por aumento de expressão de aquaporinas, e sim por um mecanismo hormonal.",
+                "D) Os ISRS se associam à síndrome de secreção inapropriada de hormônio antidiurético (SIADH), especialmente em idosos — é a resposta correta."
+            ],
+            "fantasma": [
+                "Não há um efeito direto sobre o rim bem estabelecido aqui.",
+                "Não é por suar demais.",
+                "Não é por mais canais de água, é outra coisa.",
+                "Essa aí! O SIADH, o mecanismo clássico dessa hiponatremia."
+            ],
+            "gato": [
+                "Miau, não é diretamente sobre o rim.",
+                "Fijate: não é por transpirar demais.",
+                "Dado curioso: não são os canais de água.",
+                "Ronronado de aprovação! SIADH, o hormônio antidiurético a mais."
+            ]
+        }
     },
     {
         "pergunta": "A indicação de inibidores seletivos de serotonina para o tratamento do Transtorno Obsessivo Compulsivo é devido à inibição do recaptador ao nível da via serotoninérgica que vai dos núcleos da rafe até?",
@@ -49368,7 +49528,27 @@
             "O córtex pré-frontal",
             "O hipotálamo",
             "A medula espinhal"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Os gânglios da base se relacionam mais com efeitos motores\/EPS, não com o circuito específico do TOC.",
+                "B) A via serotoninérgica do núcleo da rafe até o córtex pré-frontal é a relevante para o efeito no Transtorno Obsessivo Compulsivo — é a resposta correta.",
+                "C) O hipotálamo não é a estrutura chave desse circuito específico.",
+                "D) A medula espinhal não é a estrutura chave desse circuito específico."
+            ],
+            "fantasma": [
+                "Isso é mais do lado motor, não do circuito do TOC.",
+                "Essa aí! O córtex pré-frontal, a conexão chave para o TOC.",
+                "Isso não é a estrutura chave aqui.",
+                "Isso também não é a estrutura chave aqui."
+            ],
+            "gato": [
+                "Miau, isso é mais do lado motor.",
+                "Ronronado de aprovação! Córtex pré-frontal, a peça chave do TOC.",
+                "Fijate: isso não é o importante aqui.",
+                "Dado curioso: isso também não é o importante aqui."
+            ]
+        }
     },
     {
         "pergunta": "A síndrome de descontinuação devido a inibidores seletivos da recaptação de serotonina é caracterizada por?",
@@ -49378,7 +49558,27 @@
             "Início dos sintomas dias após a descontinuação",
             "Maior intensidade dos sintomas em tratamentos de maior duração",
             "Maior intensidade dos sintomas em tratamento de menor duração"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A síndrome de descontinuação não começa em horas; demora mais para se manifestar.",
+                "B) Os sintomas começam tipicamente dias após a suspensão do medicamento, quando seus níveis caem o suficiente — é a resposta correta.",
+                "C) Não está estabelecido que tratamentos mais longos gerem maior intensidade de sintomas.",
+                "D) Não está estabelecido que tratamentos mais curtos gerem maior intensidade de sintomas."
+            ],
+            "fantasma": [
+                "Não é tão rápido, não começa em horas.",
+                "Essa aí! Começa dias depois, quando o nível da droga já caiu.",
+                "Isso não está comprovado assim.",
+                "Isso também não está comprovado assim."
+            ],
+            "gato": [
+                "Miau, não é tão rápido quanto parece.",
+                "Ronronado de aprovação! Dias depois, esse é o padrão real.",
+                "Fijate: isso não é um fato estabelecido.",
+                "Dado curioso: isso também não é um fato estabelecido."
+            ]
+        }
     },
     {
         "pergunta": "Um inibidor da recaptação da serotonina com meia-vida mais longa, não é?",
@@ -49388,7 +49588,27 @@
             "Fluoxetina",
             "Fluvoxamina",
             "Citalopram"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A paroxetina tem, ao contrário, meia-vida curta.",
+                "B) A fluoxetina tem a meia-vida mais longa entre os ISRS — é a resposta correta.",
+                "C) A fluvoxamina tem meia-vida curta, menor que a da fluoxetina.",
+                "D) O citalopram tem meia-vida intermediária-longa, menor que a da fluoxetina."
+            ],
+            "fantasma": [
+                "Paroxetina é, ao contrário, de vida curta.",
+                "Essa aí! Fluoxetina, a de vida mais longa.",
+                "Fluvoxamina dura menos.",
+                "Citalopram também dura menos."
+            ],
+            "gato": [
+                "Miau, essa é de vida curta.",
+                "Ronronado de aprovação! Fluoxetina, a de vida mais longa.",
+                "Fijate: essa dura menos.",
+                "Dado curioso: essa também dura menos."
+            ]
+        }
     },
     {
         "pergunta": "Qual dos seguintes ISRS tem a meia-vida mais curta e, portanto, o maior risco de síndrome de abstinência quando a pessoa esquece uma dose?",
@@ -49398,7 +49618,27 @@
             "Paroxetina",
             "Sertralina",
             "Escitalopram"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A fluoxetina tem, ao contrário, a meia-vida mais longa, menor risco de abstinência.",
+                "B) A paroxetina tem a meia-vida mais curta entre os ISRS, maior risco de síndrome de abstinência — é a resposta correta.",
+                "C) A sertralina tem meia-vida intermediária, maior que a da paroxetina.",
+                "D) O escitalopram tem meia-vida intermediária-longa, maior que a da paroxetina."
+            ],
+            "fantasma": [
+                "Fluoxetina é a de vida mais longa, não a de mais risco.",
+                "Essa aí! Paroxetina, a curta com maior risco de abstinência.",
+                "Sertralina dura mais que a paroxetina.",
+                "Escitalopram também dura mais."
+            ],
+            "gato": [
+                "Miau, essa é a de vida mais longa.",
+                "Ronronado de aprovação! Paroxetina, a curta com mais risco.",
+                "Fijate: essa dura mais que a paroxetina.",
+                "Dado curioso: essa também dura mais."
+            ]
+        }
     },
     {
         "pergunta": "Marque CORRETO em relação aos ISRSs?",
@@ -49408,7 +49648,27 @@
             "A fluoxetina tem o menor efeito inibitório no CYP 2D6",
             "A sertralina tem meia-vida intermediária de aproximadamente 25 horas.",
             "São medicamentos com baixo índice terapêutico"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Os ISRS têm, ao contrário, alta ligação a proteínas plasmáticas em geral.",
+                "B) A fluoxetina é, ao contrário, uma das que MAIS inibe o CYP2D6, não das que menos.",
+                "C) A sertralina tem meia-vida intermediária de aproximadamente 25 horas — é a resposta correta.",
+                "D) Os ISRS têm, ao contrário, um ALTO índice terapêutico, uma de suas principais vantagens frente a tricíclicos\/IMAO."
+            ],
+            "fantasma": [
+                "É ao contrário, se ligam bastante às proteínas.",
+                "É ao contrário, essa inibe bastante essa enzima.",
+                "Essa aí! Sertralina, umas 25 horas de meia-vida.",
+                "É ao contrário, têm índice terapêutico alto."
+            ],
+            "gato": [
+                "Miau, é ao contrário com as proteínas.",
+                "Fijate: é ao contrário com essa enzima.",
+                "Ronronado de aprovação! Sertralina, 25 horas mais ou menos.",
+                "Dado curioso: é ao contrário com o índice terapêutico."
+            ]
+        }
     },
     {
         "pergunta": "Qual das alternativas a seguir é um efeito colateral comum dos ISRSs?",
@@ -49418,7 +49678,27 @@
             "hipotensão arterial",
             "disfunção sexual",
             "Xerostomia"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A hepatotoxicidade não é um efeito adverso frequente característico dos ISRS.",
+                "B) Os ISRS não se caracterizam por causar hipotensão arterial.",
+                "C) A disfunção sexual é um efeito adverso frequente e bem conhecido dos ISRS como classe — é a resposta correta.",
+                "D) A xerostomia (boca seca) é mais própria de drogas com efeito anticolinérgico (tricíclicos), não característica dos ISRS."
+            ],
+            "fantasma": [
+                "Isso não é o típico dessas drogas.",
+                "Essas drogas não costumam baixar a pressão.",
+                "Essa aí! A vida sexual, o efeito adverso mais conhecido dessa classe.",
+                "Isso é mais das drogas anticolinérgicas."
+            ],
+            "gato": [
+                "Miau, isso não é o típico aqui.",
+                "Fijate: não costumam baixar a pressão.",
+                "Ronronado de aprovação! A vida sexual, o clássico dessa classe.",
+                "Dado curioso: isso é mais das anticolinérgicas."
+            ]
+        }
     },
     {
         "pergunta": "ISRS (inibidores seletivos da recaptação da serotonina)?",
@@ -49428,7 +49708,27 @@
             "Eles são menos eficazes que os antidepressivos tricíclicos",
             "Quando combinado com outros medicamentos que aumentam a neurotransmissão da serotonina, aumenta o risco de produzir síndrome colinérgica.",
             "Eles podem produzir sintomas extrapiramidais ao estimular o receptor 5HT2A nos núcleos basais, que inibe a neurotransmissão dopaminérgica."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Os ISRS, diferente dos tricíclicos, NÃO bloqueiam de forma característica os receptores α1, M1, H1.",
+                "B) Os ISRS não são menos eficazes que os tricíclicos; têm eficácia semelhante com melhor perfil de segurança.",
+                "C) O risco real ao combinar com outras drogas serotoninérgicas é a síndrome SEROTONINÉRGICA, não colinérgica.",
+                "D) Os ISRS podem produzir sintomas extrapiramidais ao estimular o receptor 5HT2A nos núcleos da base, que inibe indiretamente a neurotransmissão dopaminérgica — é a resposta correta."
+            ],
+            "fantasma": [
+                "Isso é dos tricíclicos, não dessa classe.",
+                "Não são menos eficazes, são igual de bons.",
+                "É serotoninérgica, não colinérgica, a síndrome de risco.",
+                "Essa aí! Podem dar sintomas extrapiramidais por um caminho indireto via serotonina."
+            ],
+            "gato": [
+                "Miau, isso é dos tricíclicos.",
+                "Fijate: não são menos eficazes.",
+                "Dado curioso: é serotonina, não colina, a síndrome de risco.",
+                "Ronronado de aprovação! O caminho indireto até os sintomas extrapiramidais."
+            ]
+        }
     },
     {
         "pergunta": "Selecione o CORRETO em relação aos ISRSs?",
@@ -49438,7 +49738,27 @@
             "A fluoxetina tem pouco risco de interações",
             "Escitalopram não inibe o CYP2D6",
             "Citalopram inibe CYP2D6"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A paroxetina tem, ao contrário, meia-vida curta.",
+                "B) A fluoxetina tem, ao contrário, alto risco de interações por sua forte inibição enzimática.",
+                "C) O escitalopram não inibe de forma relevante o CYP2D6, uma de suas principais vantagens — é a resposta correta.",
+                "D) O citalopram também não inibe de forma relevante o CYP2D6 (similar ao seu enantiômero ativo, o escitalopram)."
+            ],
+            "fantasma": [
+                "Essa é, ao contrário, de vida curta.",
+                "Essa é, ao contrário, de alto risco de interações.",
+                "Essa aí! Escitalopram, quase não toca essa enzima.",
+                "Esse também não toca muito essa enzima."
+            ],
+            "gato": [
+                "Miau, essa é de vida curta.",
+                "Fijate: essa tem alto risco de interações.",
+                "Ronronado de aprovação! Escitalopram, tranquilo com essa enzima.",
+                "Dado curioso: esse também não toca muito."
+            ]
+        }
     },
     {
         "pergunta": "REBOXETINA é?",
@@ -49448,7 +49768,27 @@
             "Um antidepressivo que atua inibindo a monoamina oxidase",
             "Um antidepressivo tricíclico de amina terciária",
             "Um antidepressivo duplo"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A reboxetina é um antidepressivo inibidor seletivo da recaptação de noradrenalina (NRI) — é a resposta correta.",
+                "B) A reboxetina não age inibindo a monoamina oxidase; esse é o mecanismo dos IMAO.",
+                "C) A reboxetina não é um tricíclico de amina terciária.",
+                "D) A reboxetina não é um antidepressivo duplo; é seletiva de noradrenalina."
+            ],
+            "fantasma": [
+                "Essa aí! Seletiva de noradrenalina, a marca dessa droga.",
+                "Isso é dos IMAO, não dessa droga.",
+                "Não é um tricíclico essa droga.",
+                "Não é dupla, é seletiva de uma única amina."
+            ],
+            "gato": [
+                "Ronronado de aprovação! Só noradrenalina, a especialidade dessa droga.",
+                "Miau, isso é dos IMAO.",
+                "Fijate: não é um tricíclico.",
+                "Dado curioso: não é dupla, é de uma única amina."
+            ]
+        }
     },
     {
         "pergunta": "Qual é o mecanismo de ação da bupropiona?",
@@ -49458,7 +49798,27 @@
             "Antagoniza o receptor α2 adrenérgico",
             "Inibe a recaptação de norepinefrina e dopamina",
             "Inibe a recaptação de serotonina"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) A bupropiona não inibe a recaptação de serotonina como mecanismo principal.",
+                "B) A bupropiona não antagoniza receptores adrenérgicos α2 como mecanismo principal.",
+                "C) A bupropiona inibe a recaptação de noradrenalina e dopamina (NDRI), seu mecanismo característico — é a resposta correta.",
+                "D) A bupropiona não age principalmente sobre a serotonina."
+            ],
+            "fantasma": [
+                "Não é a serotonina o que bloqueia principalmente.",
+                "Não antagoniza esse receptor como mecanismo principal.",
+                "Essa aí! Noradrenalina e dopamina, o combo dessa droga.",
+                "Não é a serotonina o foco principal aqui."
+            ],
+            "gato": [
+                "Miau, não é a serotonina o principal.",
+                "Fijate: não é esse o mecanismo principal.",
+                "Ronronado de aprovação! Noradrenalina e dopamina, a assinatura dessa droga.",
+                "Dado curioso: não é a serotonina o foco."
+            ]
+        }
     },
     {
         "pergunta": "Indique o ERRADO em relação à BUPROPION?",
@@ -49469,7 +49829,27 @@
             "É útil no tratamento da cessação do tabagismo",
             "Diminui o limiar convulsivo",
             "Pode causar sedação, disfunção sexual e efeitos adversos colinérgicos."
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) É correto que inibe a recaptação de noradrenalina e dopamina com esses efeitos no locus coeruleus e núcleo accumbens; essa afirmação é VERDADEIRA, por isso não é a opção a marcar.",
+                "B) É correto que é útil para a cessação do tabagismo; essa afirmação é VERDADEIRA, por isso não é a opção a marcar.",
+                "C) É correto que diminui o limiar convulsivo; essa afirmação é VERDADEIRA, por isso não é a opção a marcar.",
+                "D) Essa afirmação é FALSA: a bupropiona se caracteriza por INSÔNIA (não sedação) e NÃO produz disfunção sexual nem efeitos colinérgicos — por isso é a opção INCORRETA que deveria ser assinalada, é a resposta correta."
+            ],
+            "fantasma": [
+                "Esse mecanismo é real, não marca.",
+                "Serve para parar de fumar, certo também.",
+                "Baixa o limiar convulsivo, certo também.",
+                "Essa aí! Dá insônia, não sono, e não afeta a vida sexual — a mentira aqui."
+            ],
+            "gato": [
+                "Miau, esse mecanismo é verdade.",
+                "Fijate: isso também é verdade.",
+                "Dado curioso: isso também é verdade.",
+                "Ronronado de aprovação! Insônia, não sedação, e sem tocar a vida sexual — a mentira."
+            ]
+        }
     },
     {
         "pergunta": "Pelas suas propriedades farmacológicas, é recomendada a prescrição de bupropiona?",
@@ -49479,7 +49859,27 @@
             "De forma indistinta de manhã ou à noite",
             "Em uma foto matinal",
             "Em mais de um tiro"
-        ]
+        ],
+        "explicacoes": {
+            "robo": [
+                "A) Tomar à noite seria contraproducente, dado seu perfil ativador\/insone.",
+                "B) Não é indiferente; o horário importa por seu efeito ativador.",
+                "C) Recomenda-se tomar pela manhã, dado seu perfil ativador e o risco de insônia se tomado à noite — é a resposta correta.",
+                "D) Não se recomenda dividir em mais de uma dose noturna pelo mesmo motivo da insônia."
+            ],
+            "fantasma": [
+                "À noite seria má ideia, pela insônia.",
+                "O horário sim importa, não é indiferente.",
+                "Essa aí! Pela manhã, para evitar a insônia noturna.",
+                "Várias doses à noite também não faria sentido."
+            ],
+            "gato": [
+                "Miau, à noite seria má ideia.",
+                "Fijate: o horário sim importa aqui.",
+                "Ronronado de aprovação! Pela manhã, a hora certa.",
+                "Dado curioso: à noite de qualquer forma seria má ideia."
+            ]
+        }
     },
     {
         "pergunta": "Um dos efeitos adversos mais frequentes associados ao uso da bupropiona é?",
